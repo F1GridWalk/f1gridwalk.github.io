@@ -310,6 +310,39 @@ a:hover{color:var(--ink-2)}
   .dash-main .hero-art{order:-1}
   .dash-main .hero-art .plate{max-width:150px}
 }
+
+/* rich band */
+.band{padding-block:8px 24px}
+.band-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 14px;margin-bottom:12px}
+.band-head h2{margin:0;font-size:20px;font-weight:700}
+.teamgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:22px}
+.tcard{display:flex;flex-direction:column;gap:6px;text-align:left;background:var(--surface);border:1px solid transparent;border-radius:18px;padding:12px 14px 14px;font:inherit;color:var(--ink);cursor:pointer;position:relative;overflow:hidden}
+.tcard:hover{border-color:var(--ink-2)}
+.tcard[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.tcard .car{height:58px;margin:0 -4px}
+.tcard .car svg{width:100%;height:100%;display:block}
+.tcard .nm{font-size:15px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.tcard .nm small{font-size:11px;color:var(--muted);font-weight:400}
+.tcard .dr{font-size:12px;color:var(--ink-2)}
+.tcard .row2{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line-soft);padding-top:6px;font-variant-numeric:tabular-nums}
+.tcard .row2 b{color:var(--ink);font-size:13px}
+.tcard .stripe{position:absolute;left:0;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--t1) 0 70%,var(--t2) 70%)}
+.band3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.wrow{display:grid;grid-template-columns:110px minmax(0,1fr) 26px;gap:10px;align-items:center;padding:6px 0;font-size:13px;border-bottom:1px solid var(--line-soft)}
+.wrow .bar{height:12px;border-radius:6px;background:var(--line-soft);overflow:hidden}
+.wrow .bar i{display:block;height:100%;border-radius:6px}
+.wrow b{text-align:right;font-variant-numeric:tabular-nums}
+.topics{list-style:none;margin:0;padding:0;counter-reset:t}
+.topics li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line-soft);font-size:13.5px;counter-increment:t}
+.topics li:before{content:counter(t);font-weight:700;color:var(--muted);font-size:15px}
+.topics li b{font-weight:700;line-height:1.5}
+.topics li span{font-size:12px;color:var(--muted);white-space:nowrap}
+.srow2{display:grid;grid-template-columns:minmax(0,1fr) 90px 22px;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line-soft);font-size:12.5px}
+.srow2 .bar{height:6px;border-radius:3px;background:var(--line-soft)}.srow2 .bar i{display:block;height:6px;border-radius:3px;background:var(--c)}
+.srow2 b{text-align:right}
+.thumb .car-in{position:absolute;inset:14px 12px 30px 12px;display:flex;align-items:center}
+.thumb .car-in svg{width:100%;height:auto;max-height:100%}
+.mini-art .car-mini{width:100%}
 /* copy link */
 .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .copybtn{min-height:40px;padding:0 16px;border-radius:20px;border:1px solid var(--moss);background:var(--moss);color:var(--on-moss);font:inherit;font-size:13px;font-weight:500;cursor:pointer}
@@ -346,7 +379,7 @@ a:hover{color:var(--ink-2)}
 .teamtag{display:inline-flex;align-items:center;gap:7px;min-height:32px;padding:0 12px 0 8px;border-radius:16px;border:1px solid var(--chip-line);background:var(--paper);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:500;cursor:pointer}
 .teamtag:hover{border-color:var(--ink-2)}
 .teamtag[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.tdot{width:14px;height:14px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--t1) 0 50%,var(--t2) 50% 100%);box-shadow:0 0 0 1px var(--line)}
+.tdot{display:inline-block;vertical-align:-2px;width:14px;height:14px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--t1) 0 50%,var(--t2) 50% 100%);box-shadow:0 0 0 1px var(--line)}
 .teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;padding-top:28px;align-items:start}
 .team{background:var(--surface);border-radius:26px;overflow:hidden;scroll-margin-top:16px}
 .team-band{height:10px;background:linear-gradient(90deg,var(--t1) 0 70%,var(--t2) 70% 100%)}
@@ -475,6 +508,16 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </section>
     </div>
   </div>
+
+  <section class="wrap band" id="teams-band" aria-label="チームとシーズンのデータ" hidden>
+    <div class="band-head"><h2>チーム勢力図</h2><span class="count">2026年 · 全11チーム · 押すとそのチームの記事に絞り込み</span></div>
+    <div class="teamgrid" id="teamgrid"></div>
+    <div class="band3">
+      <div class="dbox"><div class="band-head"><h2>今季の優勝回数</h2><span class="count" id="wins-note"></span></div><div id="wins"></div></div>
+      <div class="dbox"><div class="band-head"><h2>話題ランキング</h2><span class="count">直近7日 · 報じた媒体の数</span></div><ol class="topics" id="topics"></ol></div>
+      <div class="dbox"><div class="band-head"><h2>世界の媒体</h2><span class="count">記事数 · 無料で全文が読める媒体のみ</span></div><div id="sources"></div></div>
+    </div>
+  </section>
 
   <section class="info" aria-label="このサイトについて">
     <div class="wrap">
@@ -691,6 +734,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var d = mk('div','draw'); d.appendChild(circuitSvg(c, false)); th.appendChild(d);
       var cn = mk('div','cname'); cn.appendChild(mk('b', null, c.name)); if (c.gp && c.gp !== c.name) cn.appendChild(document.createTextNode(' · ' + c.gp));
       th.appendChild(cn);
+    } else if (a.teams && a.teams.length && state.teams[a.teams[0]]){
+      var ci = mk('div','car-in'); ci.appendChild(carSvg(a.teams[0])); th.appendChild(ci);
+      var cn2 = mk('div','cname'); cn2.appendChild(mk('b', null, state.teams[a.teams[0]].name)); cn2.appendChild(document.createTextNode(' · ' + (a.cat || ''))); th.appendChild(cn2);
     } else {
       th.appendChild(mk('span','catword', a.cat || 'NEWS'));
     }
@@ -870,7 +916,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var row = mk('div','mini');
     row.setAttribute('data-c', colorOf(a.source));
     var ar = extLink(a.url, null, 'mini-art'); ar.setAttribute('aria-hidden','true'); ar.tabIndex = -1;
-    if (c) ar.appendChild(circuitSvg(c, false)); else ar.appendChild(mk('span','catword', a.cat || 'NEWS'));
+    if (c) ar.appendChild(circuitSvg(c, false)); else if (a.teams && a.teams.length && state.teams[a.teams[0]]){ var cs2 = carSvg(a.teams[0]); cs2.setAttribute('class','car-mini'); ar.appendChild(cs2); } else ar.appendChild(mk('span','catword', a.cat || 'NEWS'));
     row.appendChild(ar);
     var body = mk('div');
     var h = mk('h4'); h.appendChild(extLink(a.url, a.title)); body.appendChild(h);
@@ -903,6 +949,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
     el('view-list').setAttribute('aria-pressed', String(state.view === 'list'));
     if (d.updatedAt) el('updated').textContent = (state.fromSnapshot ? '保存済みの記事 ' : '最終更新 ') + jst(d.updatedAt, true);
+    renderBand();
   }
 
   el('view-latest').addEventListener('click', function(){ state.view = 'latest'; renderAll(); });
@@ -932,6 +979,88 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   el('copy-site').addEventListener('click', function(){ copyText('F1 Grid Walk — 世界のF1ニュースを日本語で\n' + SITE_URL, el('copy-site'), 'このサイトのリンクをコピー'); });
 
+
+  function carSvg(key){
+    var t = state.teams[key] || { c1:'#555', c2:'#999' };
+    var s = sv('svg', { viewBox:'0 0 240 72', 'aria-hidden':'true' });
+    function p(d, fill){ s.appendChild(sv('path', { d:d, fill:fill })); }
+    p('M6 10h26v6H6z', t.c1); p('M12 16h6v26h-6z', t.c1);
+    p('M20 46L40 37L88 34L108 24L132 22L152 30L206 37L234 45L234 51L20 51Z', t.c1);
+    p('M42 37L62 19L100 26L108 24L106 33L88 34Z', t.c1);
+    p('M70 41H196V45H70Z', t.c2);
+    p('M56 34H84L80 38H58Z', t.c2);
+    p('M206 49H238V54H206Z', t.c2);
+    s.appendChild(sv('path', { d:'M116 25Q128 11 144 22', fill:'none', stroke:'#1F2420', 'stroke-width':'3', 'stroke-linecap':'round' }));
+    [[48,52,14],[198,53,13]].forEach(function(w){
+      s.appendChild(sv('circle', { cx:w[0], cy:w[1], r:w[2], fill:'#1F2420' }));
+      s.appendChild(sv('circle', { cx:w[0], cy:w[1], r:w[2] * .35, fill:'#8A877E' }));
+    });
+    return s;
+  }
+  function renderBand(){
+    if (!state.teamOrder.length) return;
+    el('teams-band').hidden = false;
+    var all = state.all || [], cnt = {}, cpts = {};
+    all.forEach(function(a){ (a.teams || []).forEach(function(k){ cnt[k] = (cnt[k] || 0) + 1; }); });
+    ((state.season || {}).constructors || []).forEach(function(c){ cpts[c.team] = c; });
+    var g = el('teamgrid'); g.textContent = '';
+    var order = state.teamOrder.slice().sort(function(a, b){ return ((cpts[a] || {}).pos || 99) - ((cpts[b] || {}).pos || 99); });
+    order.forEach(function(k){
+      var t = state.teams[k], b = mk('button','tcard'); b.type = 'button';
+      b.style.setProperty('--t1', t.c1); b.style.setProperty('--t2', t.c2);
+      b.setAttribute('aria-pressed', String(state.team === k));
+      b.appendChild(mk('span','stripe'));
+      var car = mk('div','car'); car.appendChild(carSvg(k)); b.appendChild(car);
+      var nm = mk('div','nm'); nm.appendChild(document.createTextNode(t.name)); nm.appendChild(mk('small', null, t.en)); b.appendChild(nm);
+      b.appendChild(mk('div','dr', t.drivers.join('・') + ' · PU ' + t.pu));
+      var r2 = mk('div','row2');
+      var l = mk('span'); l.appendChild(document.createTextNode(cpts[k] ? cpts[k].pos + '位 ' : '')); l.appendChild(mk('b', null, cpts[k] ? cpts[k].pts + '点' : '6位以下'));
+      r2.appendChild(l); r2.appendChild(mk('span', null, '今週の記事 ' + (cnt[k] || 0) + '本'));
+      b.appendChild(r2);
+      b.addEventListener('click', function(){ state.team = state.team === k ? 'all' : k; renderAll(); var n = el('news'); if (n) n.scrollIntoView({ behavior:'smooth', block:'start' }); });
+      g.appendChild(b);
+    });
+    // wins
+    var s = state.season || {}, w = {}, teamOf = {};
+    (s.drivers || []).forEach(function(d){ teamOf[d.name] = d.team; });
+    (s.calendar || []).forEach(function(r){ if (r.winner) w[r.winner] = (w[r.winner] || 0) + 1; });
+    var ws = Object.keys(w).sort(function(a, b){ return w[b] - w[a]; }), max = ws.length ? w[ws[0]] : 1, total = 0;
+    var wb = el('wins'); wb.textContent = '';
+    ws.forEach(function(n){
+      total += w[n];
+      var tm = state.teams[teamOf[n]] || {};
+      var row = mk('div','wrow');
+      var nm = mk('span'); var dt = mk('span','tdot'); dt.style.setProperty('--t1', tm.c1 || '#888'); dt.style.setProperty('--t2', tm.c2 || '#ccc'); nm.appendChild(dt); nm.appendChild(document.createTextNode(' ' + n)); row.appendChild(nm);
+      var bar = mk('span','bar'); var i = mk('i'); i.style.width = (w[n] / max * 100) + '%'; i.style.background = tm.c1 || 'var(--ink)'; bar.appendChild(i); row.appendChild(bar);
+      row.appendChild(mk('b', null, String(w[n])));
+      wb.appendChild(row);
+    });
+    el('wins-note').textContent = total + '戦終了 · ' + ws.length + '人が優勝';
+    // topics
+    var tg = {}, weekAgo = Date.now() - 7 * 864e5;
+    all.forEach(function(a){ if (!a.topic || new Date(a.published).getTime() < weekAgo) return; (tg[a.topic] = tg[a.topic] || { src:{}, items:[] }); tg[a.topic].src[a.source] = 1; tg[a.topic].items.push(a); });
+    var tk = Object.keys(tg).map(function(k){ return { k:k, n:Object.keys(tg[k].src).length, items:tg[k].items }; }).sort(function(a, b){ return b.n - a.n || b.items.length - a.items.length; }).slice(0, 6);
+    var ol = el('topics'); ol.textContent = '';
+    var infos = (state.data || {}).topics || {};
+    tk.forEach(function(x){
+      var li = mk('li');
+      li.appendChild(mk('b', null, (infos[x.k] && infos[x.k].title) || x.items[0].title));
+      li.appendChild(mk('span', null, x.n + '媒体'));
+      ol.appendChild(li);
+    });
+    // sources
+    var sc = {}, sl = {};
+    all.forEach(function(a){ sc[a.source] = (sc[a.source] || 0) + 1; sl[a.source] = a.lang; });
+    var sk = Object.keys(sc).sort(function(a, b){ return sc[b] - sc[a]; }), smax = sk.length ? sc[sk[0]] : 1;
+    var sb = el('sources'); sb.textContent = '';
+    sk.forEach(function(k){
+      var row = mk('div','srow2'); row.setAttribute('data-c', colorOf(k));
+      var n = mk('span'); n.appendChild(badge(k)); n.appendChild(mk('span','tl-lang', ' ' + langCode(sl[k]))); row.appendChild(n);
+      var bar = mk('span','bar'); var i = mk('i'); i.style.width = (sc[k] / smax * 100) + '%'; bar.appendChild(i); row.appendChild(bar);
+      row.appendChild(mk('b', null, String(sc[k])));
+      sb.appendChild(row);
+    });
+  }
   /* ---------- race week, standings, calendar ---------- */
   function fmtJST(iso, opts){
     try { return new Intl.DateTimeFormat('ja-JP', Object.assign({ timeZone:'Asia/Tokyo' }, opts)).format(new Date(iso)); } catch(e){ return ''; }
