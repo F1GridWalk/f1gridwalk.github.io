@@ -467,6 +467,119 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .num-t b small{font-size:12px;font-weight:500;color:var(--muted)}
 .num-t span{font-size:11.5px;color:var(--ink-2);line-height:1.5}
 .num-t .tdot{width:11px;height:11px;align-self:center}
+
+/* ===== phone: dense layout ===== */
+@media (max-width:600px){
+  body{font-size:14px}
+  .top .wrap{padding-block:10px;gap:8px;flex-wrap:nowrap}
+  .brand{gap:8px}.brand svg{width:34px;height:34px}.brand-name{font-size:20px}.brand-f1{font-size:9px}
+  .top-right{align-items:flex-end;gap:4px}
+  .copybtn{min-height:30px;padding:0 10px;font-size:11px}
+  .status{font-size:10.5px;gap:6px}
+  .jump .wrap{flex-wrap:nowrap;overflow-x:auto;gap:16px;padding-block:4px;font-size:12.5px;scrollbar-width:none}
+  .jump .wrap::-webkit-scrollbar{display:none}
+  .jump a{white-space:nowrap}
+  .wrap.dash{gap:10px;padding-block:10px 28px}
+  .dash-side{display:contents}
+  #raceweek{order:0}.dash-main{order:1}.dash-side>section:not(#raceweek){order:2}
+  .dbox{padding:12px 12px 10px;border-radius:16px}
+  .dash-main{gap:10px}
+  /* race week */
+  .dash-side .wk-title{font-size:17px}
+  .dash-side .wk-count .num{font-size:24px}
+  .dash-side .wk-note{display:none}
+  .dash-side .sessions{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+  .dash-side .sessions li{padding:5px 5px;font-size:10px;border-radius:9px}
+  .dash-side .sessions li b{font-size:10.5px}
+  .dash-side .sessions li .st{font-size:9.5px}
+  /* hero */
+  .hero.dbox{padding:12px}
+  .dash-main .hero-art{display:none}
+  .hero-in{grid-template-columns:1fr}
+  .dash-main .hero h1{font-size:18px;line-height:1.45}
+  .dash-main .hero-sum{font-size:12.5px;line-height:1.7}
+  .dash-main .hero-text{gap:8px}
+  .chips{font-size:11px;gap:6px}.chip-feature{padding:2px 10px}
+  .trend-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 10px}
+  .trend-list li{display:flex;flex-direction:column;gap:1px;padding:6px 0;font-size:11.5px}
+  .trend-list .srcbadge{font-size:10px}
+  .trend-list .tl-lang{display:none}
+  .tl-title{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;line-height:1.45}
+  .hero .teamtags{display:none}
+  /* geek boxes */
+  .geek{grid-template-columns:1fr;gap:10px}
+  .geek .band-head h2{font-size:15px}
+  .grow{grid-template-columns:minmax(0,1fr);padding:8px 0}
+  .grow .mini-art{display:none}
+  .grow h4{font-size:13px;line-height:1.5}
+  .grow p{font-size:11.5px;line-height:1.6;-webkit-line-clamp:2;margin-bottom:3px}
+  .grow .card-meta{font-size:10.5px;gap:3px 8px}
+  .gnote{font-size:10.5px}
+  /* toolbar */
+  .dash-main .toolbar{gap:8px;padding-bottom:8px}
+  .dash-main .toolbar h2{font-size:17px}
+  .toolbar-row{gap:8px;align-items:center}
+  .seg{padding:2px}.seg button{min-height:30px;padding:0 10px;font-size:12px}
+  .dash-main .filters,.dash-main #teamfilter{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  .dash-main .filters::-webkit-scrollbar,.dash-main #teamfilter::-webkit-scrollbar{display:none}
+  .dash-main .filters button{min-height:30px;padding:0 10px;font-size:11.5px;white-space:nowrap;flex-shrink:0}
+  .dash-main #teamfilter .teamtag{min-height:26px;font-size:11px;white-space:nowrap;flex-shrink:0}
+  /* news: 3 columns */
+  .dash-main .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 8px;padding-top:10px}
+  .dash-main .card{gap:4px}
+  .dash-main .card .thumb{aspect-ratio:4/3;border-radius:10px}
+  .dash-main .card .thumb .draw{inset:6px 6px 6px 6px}
+  .dash-main .card .thumb .cname,.dash-main .card .thumb .srcbadge{display:none}
+  .dash-main .card .thumb .code{font-size:10px;right:6px;top:5px}
+  .dash-main .card .catword{font-size:13px}
+  .dash-main .card .card-meta{font-size:9.5px;gap:1px 5px;line-height:1.4}
+  .dash-main .card .card-meta .rg{display:none}
+  .dash-main .card .card-meta .srcbadge{font-size:9.5px;gap:4px;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%}
+  .dash-main .card .card-meta .srcbadge::before{width:6px;height:6px}
+  .dash-main .card .kind{font-size:8.5px;line-height:14px;padding:0 4px}
+  .dash-main .card h3{font-size:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+  .dash-main .card p,.dash-main .card .teamtags,.dash-main .card .card-foot{display:none}
+  /* source view: 2 columns of compact rows */
+  .dash-main .groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .dash-main .group{padding:0 8px 4px}
+  .dash-main .group-head h3{font-size:13px}
+  .dash-main .group-head span{font-size:10px}
+  .dash-main .mini{grid-template-columns:minmax(0,1fr);padding:6px 0}
+  .dash-main .mini-art{display:none}
+  .dash-main .mini h4{font-size:11.5px;line-height:1.45}
+  .dash-main .mini .card-meta{font-size:9.5px;gap:2px 6px}
+  /* team view */
+  .teams{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-top:10px}
+  .team{border-radius:14px}.team-in{padding:10px 10px 6px}
+  .team-head h3{font-size:15px}.team-head .en,.team-facts{display:none}
+  /* standings & numbers & calendar */
+  .dash-side .srow{padding:4px 0;font-size:12px}
+  .nums{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .num-t{padding:6px 7px}
+  .num-t b{font-size:17px;gap:3px}.num-t b small{font-size:10px}
+  .num-t span{font-size:10px;line-height:1.4}
+  .dash-side .cal{max-height:240px}
+  /* team band: 3 columns */
+  .band{padding-block:0 16px}
+  .band-head h2{font-size:16px}
+  .teamgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:12px}
+  .tcard{padding:8px 8px 7px;border-radius:12px;gap:3px}
+  .tcard .nm{font-size:12px;flex-direction:column;gap:0}
+  .tcard .nm small{display:none}
+  .tcard .dr{display:none}
+  .tcard .row2{flex-direction:column;font-size:10px;padding-top:3px}
+  .tcard .row2 b{font-size:11px}
+  .band3{grid-template-columns:1fr;gap:10px}
+  .wrow{grid-template-columns:96px minmax(0,1fr) 20px;padding:4px 0;font-size:12px}
+  .topics li{padding:6px 0;font-size:12px}
+  .srow2{padding:4px 0;font-size:11.5px}
+  .info .wrap{padding-block:28px;gap:10px}
+  .panel{padding:14px;border-radius:16px;gap:8px}
+  .panel h2{font-size:15px}.panel p{font-size:12px;line-height:1.75}
+  #bars{gap:5px !important}.bar{grid-template-columns:72px minmax(0,1fr) 18px;font-size:11.5px;gap:8px}
+  footer .wrap{padding-block:22px;gap:14px;font-size:11.5px}
+  .foot-brand svg{width:56px;height:56px}.foot-brand strong{font-size:17px}
+}
 </style>
 
 <header class="top">
@@ -797,7 +910,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var meta = mk('div','card-meta');
     var kc = kindChip(a); if (kc) meta.appendChild(kc);
     meta.appendChild(badge(a.source));
-    meta.appendChild(mk('span', null, a.region));
+    meta.appendChild(mk('span', 'rg', a.region));
     meta.appendChild(timeEl(a.published));
     it.appendChild(meta);
     var h = mk('h3'); h.appendChild(extLink(a.url, a.title)); it.appendChild(h);
