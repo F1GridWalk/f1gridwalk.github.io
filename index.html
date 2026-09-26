@@ -507,13 +507,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .tl-title{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;line-height:1.45}
   .hero .teamtags{display:none}
   /* geek boxes */
-  .geek{grid-template-columns:1fr;gap:10px}
+  .geek{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .geek .dbox{padding:10px 9px 8px}
+  .geek .band-head{flex-direction:column;gap:0}
+  .geek .band-head .count{font-size:9.5px}
   .geek .band-head h2{font-size:15px}
   .grow{grid-template-columns:minmax(0,1fr);padding:8px 0}
   .grow .mini-art{display:none}
-  .grow h4{font-size:13px;line-height:1.5}
-  .grow p{font-size:11.5px;line-height:1.6;-webkit-line-clamp:2;margin-bottom:3px}
-  .grow .card-meta{font-size:10.5px;gap:3px 8px}
+  .grow{padding:7px 0}
+  .grow h4{font-size:12.5px;line-height:1.45}
+  .grow p{font-size:11px;line-height:1.55;-webkit-line-clamp:2;margin-bottom:3px}
+  .grow .card-meta{font-size:9.5px;gap:2px 6px}
+  .grow .card-meta>span:not(.kind):not(.srcbadge){display:none}
+  .grow .kind{font-size:8.5px;line-height:14px;padding:0 4px}
   .gnote{font-size:10.5px}
   /* toolbar */
   .dash-main .toolbar{gap:8px;padding-bottom:8px}
@@ -524,21 +530,26 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .dash-main .filters::-webkit-scrollbar,.dash-main #teamfilter::-webkit-scrollbar{display:none}
   .dash-main .filters button{min-height:30px;padding:0 10px;font-size:11.5px;white-space:nowrap;flex-shrink:0}
   .dash-main #teamfilter .teamtag{min-height:26px;font-size:11px;white-space:nowrap;flex-shrink:0}
-  /* news: 3 columns */
-  .dash-main .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 8px;padding-top:10px}
-  .dash-main .card{gap:4px}
-  .dash-main .card .thumb{aspect-ratio:4/3;border-radius:10px}
-  .dash-main .card .thumb .draw{inset:6px 6px 6px 6px}
-  .dash-main .card .thumb .cname,.dash-main .card .thumb .srcbadge{display:none}
-  .dash-main .card .thumb .code{font-size:10px;right:6px;top:5px}
-  .dash-main .card .catword{font-size:13px}
-  .dash-main .card .card-meta{font-size:9.5px;gap:1px 5px;line-height:1.4}
+  /* news: newspaper, 2 columns, text first */
+  .dash-main .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0;padding-top:4px}
+  .dash-main .card{gap:3px;padding:9px 0 10px;border-bottom:1px solid var(--line);min-width:0}
+  .dash-main .card:nth-child(2n+2){padding-right:9px}
+  .dash-main .card:nth-child(2n+3){padding-left:9px;border-left:1px solid var(--line)}
+  .dash-main .card:first-child{grid-column:1 / -1;border-bottom:2px solid var(--ink);padding-bottom:12px}
+  .dash-main .card .thumb{display:none}
+  .dash-main .card .card-meta{font-size:10px;gap:1px 6px;line-height:1.5;align-items:center}
   .dash-main .card .card-meta .rg{display:none}
-  .dash-main .card .card-meta .srcbadge{font-size:9.5px;gap:4px;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%}
+  .dash-main .card .card-meta .srcbadge{font-size:10px;gap:4px;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%}
   .dash-main .card .card-meta .srcbadge::before{width:6px;height:6px}
-  .dash-main .card .kind{font-size:8.5px;line-height:14px;padding:0 4px}
-  .dash-main .card h3{font-size:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
-  .dash-main .card p,.dash-main .card .teamtags,.dash-main .card .card-foot{display:none}
+  .dash-main .card .kind{font-size:9px;line-height:15px;padding:0 5px}
+  .dash-main .card h3{font-size:13.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .dash-main .card:first-child h3{font-size:17px;-webkit-line-clamp:3}
+  .dash-main .card p{font-size:11.5px;line-height:1.6;-webkit-line-clamp:3;color:var(--ink-2)}
+  .dash-main .card:first-child p{font-size:12.5px;-webkit-line-clamp:3}
+  .dash-main .card .teamtags{gap:2px 8px}
+  .dash-main .card .teamtag{min-height:0;padding:0;border:0;background:transparent;font-size:10px;gap:4px;color:var(--muted)}
+  .dash-main .card .teamtag .tdot{width:14px;height:8px;border-radius:2px}
+  .dash-main .card .card-foot{display:none}
   /* source view: 2 columns of compact rows */
   .dash-main .groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .dash-main .group{padding:0 8px 4px}
