@@ -776,6 +776,116 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .wrap.dash .nrow h4{font-size:13.5px}
   .wrap.dash .nrow p{font-size:12px;-webkit-line-clamp:2}
 }
+/* ===== desktop: minimal black & white newspaper ===== */
+@media (min-width:1001px){
+  :root{
+    --paper:#FFFFFF; --surface:#FFFFFF; --tint:#FFFFFF; --line:#111111; --line-soft:#E4E4E4;
+    --ink:#111111; --ink-2:#2B2B2B; --muted:#6B6B6B; --moss:#111111; --moss-ink:#111111; --moss-soft:#FFFFFF; --on-moss:#FFFFFF;
+    --clay:#111111; --chip-line:#BDBDBD; --hair:#E4E4E4; --accent:#C8102E; --on-accent:#FFFFFF; --hl:#6A2BB8;
+    --s1:var(--ink);--s2:var(--ink);--s3:var(--ink);--s4:var(--ink);--s5:var(--ink);--s6:var(--ink);--s7:var(--ink);--s8:var(--ink);
+    --s1s:var(--paper);--s2s:var(--paper);--s3s:var(--paper);--s4s:var(--paper);--s5s:var(--paper);--s6s:var(--paper);--s7s:var(--paper);--s8s:var(--paper);
+  }
+}
+@media (min-width:1001px) and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E0E0E; --surface:#0E0E0E; --tint:#0E0E0E; --line:#EDEDED; --line-soft:#2A2A2A;
+    --ink:#EDEDED; --ink-2:#D4D4D4; --muted:#9A9A9A; --moss:#EDEDED; --moss-ink:#EDEDED; --moss-soft:#0E0E0E; --on-moss:#0E0E0E;
+    --clay:#EDEDED; --chip-line:#4A4A4A; --hair:#2A2A2A; --accent:#B80F29; --on-accent:#FFFFFF; --hl:#B891FF;
+    --s1:var(--ink);--s2:var(--ink);--s3:var(--ink);--s4:var(--ink);--s5:var(--ink);--s6:var(--ink);--s7:var(--ink);--s8:var(--ink);
+    --s1s:var(--paper);--s2s:var(--paper);--s3s:var(--paper);--s4s:var(--paper);--s5s:var(--paper);--s6s:var(--paper);--s7s:var(--paper);--s8s:var(--paper);
+  }
+}
+@media (min-width:1001px){
+  :root[data-theme="dark"]{
+    --paper:#0E0E0E; --surface:#0E0E0E; --tint:#0E0E0E; --line:#EDEDED; --line-soft:#2A2A2A;
+    --ink:#EDEDED; --ink-2:#D4D4D4; --muted:#9A9A9A; --moss:#EDEDED; --moss-ink:#EDEDED; --moss-soft:#0E0E0E; --on-moss:#0E0E0E;
+    --clay:#EDEDED; --chip-line:#4A4A4A; --hair:#2A2A2A; --accent:#B80F29; --on-accent:#FFFFFF; --hl:#B891FF;
+    --s1:var(--ink);--s2:var(--ink);--s3:var(--ink);--s4:var(--ink);--s5:var(--ink);--s6:var(--ink);--s7:var(--ink);--s8:var(--ink);
+    --s1s:var(--paper);--s2s:var(--paper);--s3s:var(--paper);--s4s:var(--paper);--s5s:var(--paper);--s6s:var(--paper);--s7s:var(--paper);--s8s:var(--paper);
+  }
+  body{background:var(--paper)}
+  .top{border-bottom:3px double var(--ink)}
+  .top .wrap,.jump .wrap{max-width:1500px}
+  .jump{border-bottom:1px solid var(--ink);background:var(--paper)}
+  .wrap.dash{max-width:1500px;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:0;padding-block:0 56px}
+  .dbox,.wrap.dash .hero.dbox{background:transparent;border-radius:0;padding:0}
+  /* next race lives in the header, right of the logo */
+  .top .wrap{flex-wrap:nowrap}
+  .top-race:not([hidden]){display:flex;align-items:baseline;gap:10px;margin-right:auto;margin-left:26px;padding-left:18px;border-left:1px solid var(--chip-line);font-size:12.5px;color:var(--ink-2);white-space:nowrap;min-width:0;overflow:hidden}
+  .top-race .tr-round{font-size:10.5px;padding:1px 7px;background:var(--ink);color:var(--paper);font-weight:700;align-self:center}
+  .top-race .tr-gp{font-weight:700;color:var(--ink)}
+  .top-race .tr-count b{font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .top-race .tr-next{color:var(--muted);font-size:11.5px}
+  .wrap.dash #raceweek{display:none !important}
+  .wrap.dash .databar{grid-column:1 / -1 !important;justify-content:flex-end}
+  /* race strip: one ruled line */
+  .wrap.dash #raceweek{grid-column:1 / 3;padding:8px 0;border-bottom:1px solid var(--ink);border-radius:0}
+  .databar{grid-column:3;padding:8px 0;border-bottom:1px solid var(--ink);align-self:stretch;align-items:center}
+  .databar button{border-radius:0;border:0;background:transparent;color:var(--ink-2);padding:0 0 0 14px;min-height:0;font-size:12px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--chip-line)}
+  .databar button[aria-pressed="true"]{background:transparent;color:var(--ink);font-weight:700;text-decoration-color:var(--ink)}
+  .wrap.dash #raceweek .wk-eyebrow b{border-radius:0;background:var(--ink);color:var(--paper)}
+  .wrap.dash #raceweek .sessions li{border-radius:0;border:0;border-left:1px solid var(--chip-line);padding:0 0 0 10px;background:transparent}
+  .wrap.dash #raceweek .sessions li.next{border-left:2px solid var(--ink)}
+  .wrap.dash #sec-standings,.wrap.dash #numbers,.wrap.dash #sec-calendar{padding:14px 18px 14px 0;border-bottom:1px solid var(--ink)}
+  .num-t,.stand-tabs,.rd,.stand-tabs button{border-radius:0}
+  /* THIS WEEK: full-width, white, only the headline carries colour */
+  .wrap.dash .dash-main > .hero{grid-column:1 / -1;grid-row:3;margin:0;padding:24px 0 22px;background:transparent;border-bottom:1px solid var(--ink)}
+  .wrap.dash .hero #hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);column-gap:40px;row-gap:12px;align-items:start}
+  .wrap.dash .hero #hero > *{grid-column:1}
+  .wrap.dash .hero #hero > .trend-list{grid-column:2;grid-row:1 / span 5;grid-template-columns:minmax(0,1fr);margin:0;border-top:3px solid var(--ink)}
+  .wrap.dash .hero .chip-feature{border-radius:0;background:var(--ink);color:var(--paper);font-weight:700;letter-spacing:.12em;padding:3px 10px}
+  .wrap.dash .dash-main .hero h1{font-size:50px;font-weight:700;line-height:1.2;letter-spacing:-.015em;color:var(--hl);text-wrap:balance;-webkit-text-stroke:.9px currentColor;paint-order:stroke fill}
+  .wrap.dash .dash-main .hero h1 a{color:var(--hl);text-decoration:none}
+  .wrap.dash .dash-main .hero h1 a:hover{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+  .wrap.dash .dash-main .hero-sum{font-size:15px;line-height:1.85;color:var(--ink-2)}
+  .wrap.dash .trend-read .read{font-size:14px;color:var(--hl);text-decoration:underline;text-underline-offset:4px}
+  .wrap.dash .hero .trend-list li{border-top:1px solid var(--hair);padding:8px 0;font-size:13px}
+  .wrap.dash .hero .trend-list li:first-child{border-top:0}
+  /* three columns under the band */
+  .wrap.dash .dash-main > #news{grid-column:1;grid-row:4;padding:22px 26px 0 0}
+  .wrap.dash .dash-main > .geek:not([hidden]){grid-column:2;grid-row:4;position:static;height:auto;display:block;padding:22px 22px 0;border-left:1px solid var(--ink);align-self:stretch}
+  .wrap.dash .geek .dbox{overflow:visible;flex:none;margin-bottom:30px}
+  .wrap.dash .geek .band-head{position:static;margin:0 0 4px;padding:6px 0 0;background:transparent}
+  .gossip{background:transparent}
+  .wrap.dash .dash-main > .notebox:not([hidden]){grid-column:3;grid-row:4;position:static;height:auto;overflow:visible;padding:22px 0 0 22px;border-left:1px solid var(--ink);align-self:stretch}
+  /* section heads */
+  .band-head{border-top:3px solid var(--ink);padding-top:6px;margin-bottom:6px}
+  .band-head h2,.wrap.dash .dash-main .toolbar h2{font-size:13px !important;letter-spacing:.16em;font-weight:700}
+  .band-head .count{font-size:11px}
+  .gnote{border-top:1px solid var(--hair)}
+  /* news toolbar */
+  .wrap.dash .dash-main .toolbar{border-top:3px solid var(--ink);padding-top:6px;border-bottom:1px solid var(--ink)}
+  .seg{border-radius:0;border:1px solid var(--ink);padding:0;background:transparent}
+  .seg button{border-radius:0;min-height:28px;font-size:12px}
+  .finder input{border-radius:0;border:1px solid var(--chip-line);min-height:34px;font-size:13px;background-color:var(--paper)}
+  .wrap.dash .kinds button,.wrap.dash .dash-main .filters button{border-radius:0;border:0;border-bottom:1px solid transparent;padding:0 2px;min-height:24px;margin-right:10px;background:transparent;color:var(--ink-2)}
+  .wrap.dash .kinds button[aria-pressed="true"],.wrap.dash .dash-main .filters button[aria-pressed="true"]{background:transparent;color:var(--ink);border-bottom:2px solid var(--ink)}
+  .kinds button.k-rumor,.kinds button.k-fan{border-style:solid}
+  .wrap.dash .dash-main #teamfilter .teamtag{border:0;background:transparent;padding:0;margin-right:8px;min-height:22px}
+  .wrap.dash .dash-main #teamfilter .teamtag[aria-pressed="true"]{color:var(--ink);font-weight:700;background:transparent;text-decoration:underline}
+  /* news list: a lead story, then a dense two-column run */
+  .wrap.dash .dash-main .card{border-bottom:1px solid var(--hair)}
+  .wrap.dash .dash-main .card h3 a:hover,.wrap.dash .grow h4 a:hover,.wrap.dash .nrow h4 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+  .wrap.dash .dash-main .card:first-child{grid-column:1 / -1;padding:14px 0 16px;border-bottom:2px solid var(--ink)}
+  .wrap.dash .dash-main .card:first-child h3{font-size:24px;line-height:1.4}
+  .wrap.dash .dash-main .card:first-child p{font-size:14px;-webkit-line-clamp:4}
+  .wrap.dash .dash-main .card h3{font-size:15.5px}
+  .srcbadge::before{width:6px;height:6px;border-radius:0}
+  .kind{border-radius:0}.kind.tech{background:var(--ink);color:var(--paper)}
+  .fee{border-radius:0}.fee.paid{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .nrow .price{color:var(--ink)}
+  .plat-note,.plat-substack,.plat-blog,:root:not([data-theme="light"]) .plat-note,:root:not([data-theme="light"]) .plat-substack{color:var(--ink)}
+  .note-colh{border-bottom:1px solid var(--ink)}
+  .copybtn{border-radius:0;background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .tdot{box-shadow:0 0 0 1px var(--chip-line)}
+  /* keep reading: section endings point to the next thing */
+  .more-link{display:inline-block;margin-top:10px;font-size:12.5px}
+  .wrap.dash .next-up{display:block;margin:18px 0 0;padding:12px 0;border-top:3px solid var(--ink);font-size:13px;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:.04em}
+  .wrap.dash .next-up span{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.14em;margin-bottom:2px}
+  .wrap.dash .next-up:hover{text-decoration:underline;text-underline-offset:4px}
+}
+.next-up{display:none}
+.top-race{display:none}
 </style>
 
 <header class="top">
@@ -784,6 +894,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg>
       <span class="brand-words"><span class="brand-f1">F1</span><span class="brand-name">Grid Walk</span></span>
     </a>
+    <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
     <div class="top-right">
     <button type="button" class="copybtn" id="copy-site">このサイトのリンクをコピー</button>
     <div class="status"><span class="dot" aria-hidden="true"></span><span><span class="txt-long">1日4回更新 · </span><span id="updated">読み込み中…</span></span></div>
@@ -845,6 +956,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <section class="dbox gossip" id="gossip" aria-label="パドックウォーク">
           <div class="band-head"><h2>パドックウォーク</h2><span class="count">うわさ · ファンの声 · 未確認の話を含みます</span></div>
           <div id="gossip-list"></div>
+          <a class="next-up" href="#notes"><span>次は</span>個人の分析 →</a>
           <p class="gnote">報道で出たうわさや、F1情報通などの掲示板まとめで話題になっていることを、こちらで短く要約したものです。事実として確認された情報ではありません。</p>
         </section>
       </div>
@@ -878,6 +990,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           <div class="teamtags" role="group" aria-label="チームで絞り込む" id="teamfilter"></div>
         </div>
         <div id="feed"></div>
+        <a class="next-up" href="#tech"><span>次は</span>テクニカル深掘り・パドックウォーク →</a>
       </section>
     </div>
   </div>
@@ -1618,8 +1731,23 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     part(x.h, '時間'); if (!x.d) part(x.m, '分');
     return n;
   }
+  function renderTopRace(w){
+    var box = el('top-race'); if (!box || !w || !w.sessions || !w.sessions.length) return; box.textContent = '';
+    var now = Date.now(), race = w.sessions[w.sessions.length - 1], cur = null, next = null;
+    w.sessions.forEach(function(x){ var a = new Date(x.start).getTime(), b = new Date(x.end).getTime(); if (a <= now && now < b) cur = x; if (!next && a > now) next = x; });
+    box.appendChild(mk('b','tr-round','第' + w.round + '戦'));
+    box.appendChild(mk('span','tr-gp', w.gp));
+    var rs = new Date(race.start).getTime(), re = new Date(race.end).getTime();
+    if (now < rs){ var d = dur(rs - now), c = mk('span','tr-count'); c.appendChild(document.createTextNode('決勝まで ')); c.appendChild(mk('b', null, (d.d ? d.d + '日' : '') + d.h + '時間' + (d.d ? '' : d.m + '分'))); box.appendChild(c); }
+    else if (now < re) box.appendChild(mk('span','tr-count','決勝 開催中'));
+    else box.appendChild(mk('span','tr-count','決勝終了'));
+    var sx = cur || next;
+    if (sx && sx !== race) box.appendChild(mk('span','tr-next', (cur ? '開催中 ' : '次 ') + sx.name + ' ' + fmtJST(sx.start, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })));
+    box.hidden = false;
+  }
   function renderWeekend(){
     var s = state.season; if (!s || !s.weekend) return;
+    renderTopRace(s.weekend);
     var w = s.weekend, now = Date.now(), box = el('wk-main'); box.textContent = '';
     var c = state.circuits[w.circuit];
     var eb = mk('div','wk-eyebrow');
