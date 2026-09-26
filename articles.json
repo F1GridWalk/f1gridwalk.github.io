@@ -18,7 +18,8 @@
         "mercedes",
         "ferrari",
         "redbull"
-      ]
+      ],
+      "topic": "baku-qualifying"
     },
     {
       "id": "es-motorsport-parrilla-baku",
@@ -36,7 +37,8 @@
         "mercedes",
         "williams",
         "cadillac"
-      ]
+      ],
+      "topic": "baku-qualifying"
     },
     {
       "id": "it-f1it-mercedes-devastante",
@@ -54,7 +56,8 @@
         "mercedes",
         "ferrari",
         "mclaren"
-      ]
+      ],
+      "topic": "baku-qualifying"
     },
     {
       "id": "fr-nextgen-verstappen-desastre",
@@ -70,7 +73,8 @@
       "circuit": "baku",
       "teams": [
         "redbull"
-      ]
+      ],
+      "topic": "baku-qualifying"
     },
     {
       "id": "de-f1de-aston-honda-penalty",
@@ -86,7 +90,8 @@
       "circuit": "baku",
       "teams": [
         "astonmartin"
-      ]
+      ],
+      "topic": "baku-qualifying"
     },
     {
       "id": "pt-gp-bortoleto-17",
@@ -102,7 +107,8 @@
       "circuit": "baku",
       "teams": [
         "audi"
-      ]
+      ],
+      "topic": "baku-qualifying"
     },
     {
       "id": "en-therace-final-races-imola",
@@ -115,7 +121,8 @@
       "orig": "F1's latest plan for where to end its 2026 season",
       "url": "https://www.the-race.com/formula-1/whats-going-on-with-f1s-uncertain-final-2026-races/",
       "published": "2026-09-24T12:00:00+01:00",
-      "circuit": "imola"
+      "circuit": "imola",
+      "topic": "season-finale-venue"
     },
     {
       "id": "en-rn365-baku-track-repairs",
@@ -128,7 +135,8 @@
       "orig": "Baku track repairs made overnight after F1 drivers complain",
       "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain",
       "published": "2026-09-25T08:45:00+01:00",
-      "circuit": "baku"
+      "circuit": "baku",
+      "topic": "baku-track-repairs"
     },
     {
       "id": "en-rn365-mclaren-upgrade",
@@ -144,7 +152,8 @@
       "circuit": "baku",
       "teams": [
         "mclaren"
-      ]
+      ],
+      "topic": "mclaren-baku-upgrade"
     },
     {
       "id": "de-f1de-cadillac-hires",
@@ -159,7 +168,8 @@
       "published": "2026-09-25T07:40:00+02:00",
       "teams": [
         "cadillac"
-      ]
+      ],
+      "topic": "cadillac-technical-hires"
     },
     {
       "id": "de-f1de-chadwick-williams",
@@ -175,7 +185,8 @@
       "circuit": "portimao",
       "teams": [
         "williams"
-      ]
+      ],
+      "topic": "chadwick-williams-test"
     },
     {
       "id": "de-f1de-schumacher-94",
@@ -187,7 +198,14 @@
       "summary": "シューマッハが初めて王者になった1994年を追うドキュメンタリー。イモラの悲劇のあとの葛藤は丁寧に描く一方、シーズンの論争への踏み込みや、デイモン・ヒルらライバル側の視点が欠けていると指摘している。",
       "orig": "\"Schumacher '94\" im Check: Was die Netflix-Doku zeigt - und was ihr fehlt",
       "url": "https://www.formel1.de/news/news/2026-09-25/schumacher-94-im-check-was-die-netflix-doku-zeigt-und-was-ihr-fehlt",
-      "published": "2026-09-25T06:12:00+02:00"
+      "published": "2026-09-25T06:12:00+02:00",
+      "topic": "schumacher-94-documentary"
     }
-  ]
+  ],
+  "topics": {
+    "baku-qualifying": {
+      "title": "アゼルバイジャンGP予選、ラッセルが圧倒的なポール。首位アントネッリは16番手から",
+      "summary": "ラッセルが2番手に約0.8秒の差をつけてポールを獲得。ランキング首位のアントネッリはQ1でクラッシュして16番手、フェルスタッペンもエンジンの不調で8番手に沈んだ。各国メディアが、メルセデスの速さとグリッド降格の影響を報じている。"
+    }
+  }
 }
