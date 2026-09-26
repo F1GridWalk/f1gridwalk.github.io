@@ -957,6 +957,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .feed-more{display:none}
 @media (max-width:1000px){
   #feed .grid > .card.cut{display:none}
+  .trend-list > li.cut{display:none}
+  .feed-more.tl-more{margin:12px 0 4px;min-height:42px;font-size:13px}
   .feed-more{display:block;width:100%;margin:22px 0 6px;min-height:48px;border-radius:24px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
   .feed-more:active{background:var(--ink);color:var(--paper)}
 }
@@ -1254,8 +1256,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     rm.appendChild(mk('span', null, 'ほかの' + (t.n - 1) + '媒体の記事は下から'));
     box.appendChild(rm);
     var ul = mk('ul','trend-list');
-    t.items.slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); }).forEach(function(a){
+    var TL_FIRST = 4;
+    t.items.slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); }).forEach(function(a, i){
       var li = mk('li'); li.setAttribute('data-c', colorOf(a.source));
+      if (i >= TL_FIRST) li.classList.add('cut');
       li.appendChild(badge(a.source));
       li.appendChild(mk('span','tl-lang', langCode(a.lang)));
       var tt2 = extLink(a.url, a.title, 'tl-title');
@@ -1264,6 +1268,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       ul.appendChild(li);
     });
     box.appendChild(ul);
+    var tlCut = ul.querySelectorAll('li.cut').length;
+    if (tlCut){
+      var tm = mk('button','feed-more tl-more', 'ほかの媒体の記事をもっと見る（残り' + tlCut + '本）'); tm.type = 'button';
+      tm.addEventListener('click', function(){ [].forEach.call(ul.querySelectorAll('li.cut'), function(x){ x.classList.remove('cut'); }); tm.parentNode.removeChild(tm); });
+      box.appendChild(tm);
+    }
     var teams = {}; t.items.forEach(function(a){ (a.teams || []).forEach(function(k){ teams[k] = 1; }); });
     var tk = Object.keys(teams); if (tk.length){ var w = mk('div','teamtags'); tk.forEach(function(k){ var b = teamTag(k); if (b) w.appendChild(b); }); box.appendChild(w); }
   }
