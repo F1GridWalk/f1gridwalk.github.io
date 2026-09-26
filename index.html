@@ -481,6 +481,33 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .grow .card-meta{font-size:11.5px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;color:var(--muted)}
 .gossip{background:repeating-linear-gradient(135deg,var(--surface) 0 14px,var(--paper) 14px 15px)}
 .gnote{margin:8px 0 0;font-size:11.5px;line-height:1.7;color:var(--muted);border-top:1px dashed var(--chip-line);padding-top:8px}
+/* note: personal analysis */
+.note-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}
+.note-colh{display:flex;align-items:center;gap:8px;margin:4px 0 2px;padding-bottom:8px;border-bottom:2px solid var(--ink);font-size:13px;font-weight:700;color:var(--ink-2)}
+.fee{display:inline-flex;align-items:center;padding:0 7px;border-radius:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;line-height:18px;white-space:nowrap;border:1px solid var(--ink);color:var(--ink);background:transparent}
+.fee.paid{background:var(--clay);border-color:var(--clay);color:var(--surface)}
+.nrow{padding:11px 0;border-bottom:1px solid var(--line-soft)}
+.nrow:last-child{border-bottom:0}
+.nrow h4{margin:0 0 3px;font-size:14px;font-weight:700;line-height:1.55}
+.nrow h4 a{color:var(--ink);text-decoration:none}
+.nrow h4 a:hover{text-decoration:underline;text-underline-offset:4px}
+.nrow p{margin:0 0 5px;font-size:12.5px;line-height:1.7;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nrow .card-meta{font-size:11.5px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;color:var(--muted)}
+.nrow .author{font-weight:700;color:var(--ink-2)}
+.nrow .price{color:var(--clay);font-weight:700}
+@media (max-width:600px){
+  .notebox .band-head{flex-direction:column;gap:0}
+  .notebox .band-head .count{font-size:9.5px}
+  .notebox .band-head h2{font-size:15px}
+  .note-cols{grid-template-columns:1fr;gap:10px}
+  .note-colh{font-size:12px;gap:6px}
+  .nrow{padding:7px 0}
+  .nrow h4{font-size:12.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .nrow p{font-size:11px;line-height:1.55;-webkit-line-clamp:2;margin-bottom:3px}
+  .nrow .card-meta{font-size:9.5px;gap:2px 6px}
+  .nrow .card-meta .tm{display:none}
+  .fee{font-size:8.5px;line-height:14px;padding:0 4px}
+}
 /* numbers */
 .nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .num-t{border:1px solid var(--line);border-radius:14px;padding:9px 11px 8px;display:flex;flex-direction:column;gap:1px}
@@ -661,6 +688,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <a href="#news">ニュース</a>
     <a href="#tech">テック</a>
     <a href="#gossip">パドック</a>
+    <a href="#notes">note</a>
     <a href="#numbers">数字</a>
     <a href="#teams-band">チーム</a>
     <a href="#sources">媒体一覧</a>
@@ -704,6 +732,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           <p class="gnote">報道で出たうわさや、F1情報通などの掲示板まとめで話題になっていることを、こちらで短く要約したものです。事実として確認された情報ではありません。</p>
         </section>
       </div>
+      <section class="dbox notebox" id="notes" aria-label="noteの個人分析" hidden>
+        <div class="band-head"><h2>note｜個人の分析</h2><span class="count">ファンやライターがnoteに書いた考察 · 報道ではなく個人の見解です</span></div>
+        <div class="note-cols">
+          <div class="note-col"><h3 class="note-colh"><span class="fee free">無料</span>全文を無料で読める</h3><div id="notes-free"></div></div>
+          <div class="note-col"><h3 class="note-colh"><span class="fee paid">有料</span>一部だけ無料・続きは有料</h3><div id="notes-paid"></div></div>
+        </div>
+        <p class="gnote">要約はこちらで短くまとめたものです。有料の記事は、無料で公開されている部分だけをもとに要約しています。</p>
+      </section>
       <section id="news" aria-label="記事一覧">
         <div class="toolbar">
           <div class="toolbar-row">
@@ -846,7 +882,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   document.addEventListener('click', function(e){
     var link = e.target.closest && e.target.closest('a[href^="http"]');
     if (!link || !window.goatcounter || !window.goatcounter.count) return;
-    var art = (state.byUrl || {})[link.href];
+    var art = (state.byUrl || {})[link.href] || (state.noteByUrl || {})[link.href];
     if (!art) return;
     try { window.goatcounter.count({ path:'click/' + art.id, title:art.source + ' | ' + art.title, event:true }); } catch(err){}
   }, true);
@@ -1308,6 +1344,32 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var mw = mk('div','more-row'); more(mw, 'うわさを全部 →', 'rumor'); more(mw, '掲示板まとめを全部 →', 'fan'); gl.appendChild(mw);
     el('geek').hidden = !(tech.length || gos.length);
   }
+  function noteRow(n){
+    var row = mk('div','nrow');
+    var h = mk('h4'); h.appendChild(extLink(n.url, n.title)); row.appendChild(h);
+    row.appendChild(mk('p', null, n.summary));
+    var meta = mk('div','card-meta');
+    meta.appendChild(mk('span', 'fee ' + (n.paid ? 'paid' : 'free'), n.paid ? '有料' : '無料'));
+    meta.appendChild(mk('span','author', n.author));
+    if (n.cat) meta.appendChild(mk('span', null, n.cat));
+    meta.appendChild(timeEl(n.published));
+    if (n.paid && n.price) meta.appendChild(mk('span','price', n.price));
+    (n.teams || []).filter(function(k){ return state.teams[k]; }).forEach(function(k){ var tm = mk('span','tm'); tm.appendChild(teamSwatch(k)); tm.appendChild(document.createTextNode(' ' + state.teams[k].name)); meta.appendChild(tm); });
+    row.appendChild(meta);
+    return row;
+  }
+  function renderNotes(){
+    var list = ((state.notes || {}).notes || []).slice().sort(function(a, b){ return new Date(b.published) - new Date(a.published); });
+    var fr = list.filter(function(n){ return !n.paid; }).slice(0, 6), pd = list.filter(function(n){ return n.paid; }).slice(0, 6);
+    var fl = el('notes-free'), pl = el('notes-paid'); fl.textContent = ''; pl.textContent = '';
+    state.noteByUrl = {};
+    list.forEach(function(n){ state.noteByUrl[n.url] = { id:n.id, source:'note ' + n.author, title:n.title }; });
+    fr.forEach(function(n){ fl.appendChild(noteRow(n)); });
+    pd.forEach(function(n){ pl.appendChild(noteRow(n)); });
+    if (!fr.length) fl.appendChild(mk('p','empty','今は無料の記事がありません。'));
+    if (!pd.length) pl.appendChild(mk('p','empty','今は有料の記事がありません。'));
+    el('notes').hidden = !list.length;
+  }
   function renderNumbers(){
     var s = state.season; if (!s || !s.calendar) return;
     var teamOf = {}; (s.drivers || []).forEach(function(d){ teamOf[d.name] = d.team; });
@@ -1558,6 +1620,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     state.data = res[0];
     renderAll();
     renderSeason();
+    getJSON('notes.json').catch(function(){ var sn = JSON.parse(el('snapshot').textContent); return sn.notes || null; }).then(function(n){ state.notes = n; renderNotes(); }).catch(function(){});
   }).catch(function(){
     el('updated').textContent = '記事を読み込めませんでした';
     el('hero-title').textContent = '記事を読み込めませんでした。少し時間をおいて、ページを再読み込みしてください。';
