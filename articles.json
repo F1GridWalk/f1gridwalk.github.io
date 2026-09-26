@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T19:30:00+09:00",
+  "updatedAt": "2026-09-26T19:50:00+09:00",
   "topics": {
     "baku-qualifying": {
       "title": "アゼルバイジャンGP予選、ラッセルが圧倒的なポール。首位アントネッリは16番手から",
@@ -10,11 +10,28 @@
       "summary": "アウディがフロアや前後ウイングを含む14項目の大型パッケージを投入し、マクラーレンは直線スピード改善を狙うサイドポッドとフロア、ウィリアムズは軽量シャシーを持ち込んだ。一方、メルセデスとフェラーリはアップデートなしで臨んでいる。"
     },
     "horner-ferrari": {
-      "title": "ホーナー、F1復帰なら「フェラーリだけ」。代表就任のうわさに火",
-      "summary": "元レッドブル代表のホーナーが英タイムズ紙に、株式を持たずに引き受けるならフェラーリだけだと語り、イタリアや日本のファンの間で話題に。実績を評価する声と、フェラーリの組織と合うのかを疑う声が分かれている。"
+      "title": "ホーナー、F1復帰なら「フェラーリだけ」。代表就任のうわさに各国が反応",
+      "summary": "元レッドブル代表のホーナーが英タイムズ紙に、株式を持たずに引き受けるならフェラーリだけだと語った。バスール代表の去就をめぐる報道とも重なり、日本、ドイツ、イタリアのメディアや掲示板で話題に。いずれも本人の発言と報道にもとづく未確認の話。"
     }
   },
   "articles": [
+    {
+      "id": "ja-f1gate-horner-ferrari",
+      "kind": "rumor",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1-Gate.com",
+      "cat": "うわさ",
+      "title": "ホーナー、フェラーリ代表就任に意欲「唯一の例外、夢のチーム」",
+      "summary": "ホーナーは本格復帰にあたって経営への出資を条件にしてきたが、フェラーリだけは例外だと語った。2025年7月にレッドブルを離れたホーナーは2026年春から復帰が可能。フェラーリが2026年限りでバスール代表の後任を検討しているという報道とも重なり、注目を集めている。",
+      "orig": "クリスチャン・ホーナー フェラーリF1代表就任に意欲「唯一の例外。夢のチーム」",
+      "url": "https://f1-gate.com/ferrari/f1_97231.html",
+      "published": "2026-09-26T12:05:00+09:00",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "horner-ferrari"
+    },
     {
       "id": "ja-f1jouhou-audi-vcarb-slump",
       "kind": "fan",
@@ -111,6 +128,23 @@
       "kind": "news"
     },
     {
+      "id": "nl-f1maximaal-horner-memoir",
+      "kind": "rumor",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "F1Maximaal",
+      "cat": "うわさ",
+      "title": "ホーナーの回顧録、マルコとの確執を暴露。「当初フェルスタッペン獲得に反対したのはマルコ」",
+      "summary": "英タイムズ紙が報じた未刊行の回顧録の抜粋で、ホーナーは、マルコが当初フェルスタッペンの獲得に否定的だったと主張し、“フェルスタッペンを見出した人物”という評価に異を唱えた。2022年のマテシッツ氏の死去後に二人の主導権争いが激しくなったとも書いているという。",
+      "orig": "Horner hangt vuile was over Marko en Verstappen buiten: \"Deze jongen hebben we niet nodig\"",
+      "url": "https://www.f1maximaal.nl/formule-1/horner-hangt-vuile-was-over-marko-en-verstappen-buiten-deze-jongen-hebben-we-niet-nodig",
+      "published": "2026-09-25T21:37:00+02:00",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "horner-memoir"
+    },
+    {
       "id": "fr-nextgen-verstappen-desastre",
       "lang": "fr",
       "region": "フランス",
@@ -127,6 +161,24 @@
       ],
       "topic": "baku-qualifying",
       "kind": "news"
+    },
+    {
+      "id": "nl-f1maximaal-windsor-redbull-silence",
+      "kind": "rumor",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "F1Maximaal",
+      "cat": "うわさ",
+      "title": "「無線は死んだような沈黙」ウィンザーが指摘するレッドブルとフェルスタッペンの冷戦",
+      "summary": "解説者ピーター・ウィンザーは、予選後にフェルスタッペンとランビアーゼ、メキースの間で無線のやり取りがほとんどなかったと指摘。ふだんなら代表が前向きな言葉をかける場面での沈黙は、チーム内の緊張の表れだと見ている。1周0.5秒を失ったPUの不調への不満が背景にあるとの見方だ。",
+      "orig": "Windsor wijst op Koude Oorlog bij Red Bull en Verstappen: 'Een doodse stilte'",
+      "url": "https://www.f1maximaal.nl/opinie/windsor-wijst-op-koude-oorlog-bij-red-bull-en-verstappen-een-doodse-stilte",
+      "published": "2026-09-25T20:33:00+02:00",
+      "circuit": "baku",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "redbull-verstappen-tension"
     },
     {
       "id": "it-f1it-mercedes-devastante",
@@ -147,6 +199,23 @@
       ],
       "topic": "baku-qualifying",
       "kind": "news"
+    },
+    {
+      "id": "de-f1insider-horner-ferrari",
+      "kind": "rumor",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider",
+      "cat": "うわさ",
+      "title": "ホーナー、フェラーリ復帰に本気？「F1最大のブランド、夢だ」",
+      "summary": "英タイムズ紙のインタビューで、ホーナーはフェラーリを「F1最大のブランド」「眠れる巨人」と呼び、フェラーリなら株式を持たない雇われの立場でも受けると示唆した。フェラーリはドライバーズタイトルが2007年、コンストラクターズが2008年を最後に遠ざかっている。",
+      "orig": "Ferrari als Horner-Comeback? Jetzt wird er deutlich",
+      "url": "https://f1-insider.com/formel-1-ferrari-horner-comeback-82345/",
+      "published": "2026-09-25T17:03:00+02:00",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "horner-ferrari"
     },
     {
       "id": "it-f1it-horner-ferrari",
@@ -366,6 +435,23 @@
       "url": "https://f1jouhou2.com/blog-entry-31561.html",
       "published": "2026-09-24T12:00:00+09:00",
       "topic": "next-engine-v8"
+    },
+    {
+      "id": "de-f1insider-leclerc-manager",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider",
+      "cat": "ドライバー",
+      "title": "ルクレール、引退後は「100％」ドライバーのマネージャーに",
+      "summary": "フェラーリのルクレールが、F1を退いた後はドライバーのマネジメントの仕事をしたいと明かした。すでにマネージャーのニコラ・トッドとも話しているという。ただし今は「200％レースに集中している」と強調している。",
+      "orig": "Leclerc spricht offen über seine Zukunftspläne in der Formel 1",
+      "url": "https://f1-insider.com/formel-1-leclerc-spricht-ueber-seine-zukunft-82214/",
+      "published": "2026-09-22T10:41:00+02:00",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "leclerc-future-manager"
     }
   ]
 }
