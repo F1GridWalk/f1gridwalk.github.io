@@ -343,6 +343,19 @@ a:hover{color:var(--ink-2)}
 .topics li:before{content:counter(t);font-weight:700;color:var(--muted);font-size:15px}
 .topics li b{font-weight:700;line-height:1.5}
 .topics li span{font-size:12px;color:var(--muted);white-space:nowrap}
+.topics>li{grid-template-columns:26px minmax(0,1fr)}
+.topics details{min-width:0}
+.topics summary{list-style:none;cursor:pointer;display:flex;gap:8px;align-items:baseline;justify-content:space-between}
+.topics summary::-webkit-details-marker{display:none}
+.topics summary:hover b{text-decoration:underline;text-underline-offset:3px}
+.topics details[open] summary span{color:var(--ink)}
+.topics .tlinks{list-style:none;margin:6px 0 2px;padding:0}
+.topics .tlinks li{display:flex;gap:6px;align-items:baseline;padding:4px 0;border:0;font-size:12.5px;line-height:1.5}
+.topics .tlinks li:before{content:none}
+.topics .tlinks li{counter-increment:none;flex-direction:column;gap:1px}
+.topics .tlinks .srcbadge{flex-shrink:0}
+.topics .tlinks a{color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--chip-line);text-underline-offset:3px}
+.topics .tlinks a:hover{color:var(--ink);text-decoration-color:currentColor}
 .srow2{display:grid;grid-template-columns:minmax(0,1fr) 90px 22px;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line-soft);font-size:12.5px}
 .srow2 .bar{height:6px;border-radius:3px;background:var(--line-soft)}.srow2 .bar i{display:block;height:6px;border-radius:3px;background:var(--c)}
 .srow2 b{text-align:right}
@@ -1369,8 +1382,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var infos = (state.data || {}).topics || {};
     tk.forEach(function(x){
       var li = mk('li');
-      li.appendChild(mk('b', null, (infos[x.k] && infos[x.k].title) || x.items[0].title));
-      li.appendChild(mk('span', null, x.n + '媒体'));
+      var dt = mk('details'); var sm = mk('summary');
+      sm.appendChild(mk('b', null, (infos[x.k] && infos[x.k].title) || x.items[0].title));
+      sm.appendChild(mk('span', null, x.n + '媒体 ▾'));
+      dt.appendChild(sm);
+      var ul = mk('ul','tlinks');
+      x.items.slice().sort(function(a, b){ return new Date(b.published) - new Date(a.published); }).forEach(function(a){
+        var it = mk('li'); it.setAttribute('data-c', colorOf(a.source));
+        it.appendChild(badge(a.source));
+        it.appendChild(extLink(a.url, a.title));
+        ul.appendChild(it);
+      });
+      dt.appendChild(ul);
+      li.appendChild(dt);
       ol.appendChild(li);
     });
     // sources
