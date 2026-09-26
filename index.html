@@ -319,8 +319,10 @@ a:hover{color:var(--ink-2)}
 .tcard{display:flex;flex-direction:column;gap:6px;text-align:left;background:var(--surface);border:1px solid transparent;border-radius:18px;padding:12px 14px 14px;font:inherit;color:var(--ink);cursor:pointer;position:relative;overflow:hidden}
 .tcard:hover{border-color:var(--ink-2)}
 .tcard[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
-.tcard .car{height:58px;margin:0 -4px}
-.tcard .car svg{width:100%;height:100%;display:block}
+.tsw{display:flex;border-radius:10px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.tsw i{display:block}
+.tsw i:first-child{flex:7}.tsw i:last-child{flex:3}
+.tcard .tsw{height:34px;margin-bottom:4px}
 .tcard .nm{font-size:15px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline;gap:6px}
 .tcard .nm small{font-size:11px;color:var(--muted);font-weight:400}
 .tcard .dr{font-size:12px;color:var(--ink-2)}
@@ -340,9 +342,10 @@ a:hover{color:var(--ink-2)}
 .srow2{display:grid;grid-template-columns:minmax(0,1fr) 90px 22px;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line-soft);font-size:12.5px}
 .srow2 .bar{height:6px;border-radius:3px;background:var(--line-soft)}.srow2 .bar i{display:block;height:6px;border-radius:3px;background:var(--c)}
 .srow2 b{text-align:right}
-.thumb .car-in{position:absolute;inset:14px 12px 30px 12px;display:flex;align-items:center}
-.thumb .car-in svg{width:100%;height:auto;max-height:100%}
-.mini-art .car-mini{width:100%}
+.thumb .tsw-in{position:absolute;inset:40px 18px 34px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.thumb .tsw-in .tsw{flex:1;max-height:30px;border-radius:8px}
+.mini-art.has-tsw{flex-direction:column;align-items:stretch;gap:3px}
+.mini-art .tsw{width:100%;flex:1;min-height:0;border-radius:6px}
 /* copy link */
 .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .copybtn{min-height:40px;padding:0 16px;border-radius:20px;border:1px solid var(--moss);background:var(--moss);color:var(--on-moss);font:inherit;font-size:13px;font-weight:500;cursor:pointer}
@@ -443,10 +446,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .seg button{padding:0 14px}
 }
 
-/* car (top view) */
-.cf{fill:#1F2420}.cl{stroke:#1F2420}
-@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cf{fill:#62685C} :root:not([data-theme="light"]) .cl{stroke:#62685C} :root:not([data-theme="light"]) .cb{stroke:#4A5046;stroke-width:1} }
-:root[data-theme="dark"] .cf{fill:#62685C} :root[data-theme="dark"] .cl{stroke:#62685C} :root[data-theme="dark"] .cb{stroke:#4A5046;stroke-width:1}
 /* kind labels */
 .kind{display:inline-flex;align-items:center;padding:0 7px;border-radius:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;line-height:18px;border:1px solid var(--ink);color:var(--ink);white-space:nowrap;background:transparent}
 .kind.tech{background:var(--ink);color:var(--paper)}
@@ -495,7 +494,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <a href="#calendar">カレンダー</a>
     <a href="#news">ニュース</a>
     <a href="#tech">テック</a>
-    <a href="#gossip">うわさ</a>
+    <a href="#gossip">パドック</a>
     <a href="#numbers">数字</a>
   </div>
 </nav>
@@ -531,8 +530,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           <div class="band-head"><h2>テクニカル深掘り</h2><span class="count">アップデート · 空力 · PU</span></div>
           <div id="tech-list"></div>
         </section>
-        <section class="dbox gossip" id="gossip" aria-label="うわさとファンの声">
-          <div class="band-head"><h2>うわさ・パドック雑談</h2><span class="count">未確認の話を含みます</span></div>
+        <section class="dbox gossip" id="gossip" aria-label="パドックウォーク">
+          <div class="band-head"><h2>パドックウォーク</h2><span class="count">うわさ · ファンの声 · 未確認の話を含みます</span></div>
           <div id="gossip-list"></div>
           <p class="gnote">報道で出たうわさや、F1情報通などの掲示板まとめで話題になっていることを、こちらで短く要約したものです。事実として確認された情報ではありません。</p>
         </section>
@@ -577,7 +576,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </div>
       <div class="panel outline">
         <h2>翻訳について</h2>
-        <p>載せているのは、登録や購読をしなくても無料で全文を読める記事だけです。「うわさ」「掲示板まとめ」の印が付いたものは未確認の話題で、確定した情報ではありません。見出しは日本語に訳し、概要は各記事の要点を短くまとめたものです。本文は、書いた人の媒体でどうぞ。すべての記事に原題と原文へのリンクを添えています。コース図は記事に関係するサーキットのレイアウトです。</p>
+        <p>載せているのは、登録や購読をしなくても無料で全文を読める記事だけです。「パドックウォーク」の欄と「未確認」「掲示板まとめ」の印が付いた記事は未確認の話題で、確定した情報ではありません。見出しは日本語に訳し、概要は各記事の要点を短くまとめたものです。本文は、書いた人の媒体でどうぞ。すべての記事に原題と原文へのリンクを添えています。コース図は記事に関係するサーキットのレイアウトです。</p>
       </div>
       <div class="panel moss">
         <h2>朝と夕方、世界のグリッドをひと歩き。</h2>
@@ -787,8 +786,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var cn = mk('div','cname'); cn.appendChild(mk('b', null, c.name)); if (c.gp && c.gp !== c.name) cn.appendChild(document.createTextNode(' · ' + c.gp));
       th.appendChild(cn);
     } else if (a.teams && a.teams.length && state.teams[a.teams[0]]){
-      var ci = mk('div','car-in'); ci.appendChild(carSvg(a.teams[0])); th.appendChild(ci);
-      var cn2 = mk('div','cname'); cn2.appendChild(mk('b', null, state.teams[a.teams[0]].name)); cn2.appendChild(document.createTextNode(' · ' + (a.cat || ''))); th.appendChild(cn2);
+      var tks = a.teams.filter(function(k){ return state.teams[k]; }).slice(0, 3);
+      var ci = mk('div','tsw-in'); tks.forEach(function(k){ ci.appendChild(teamSwatch(k)); }); th.appendChild(ci);
+      var cn2 = mk('div','cname'); cn2.appendChild(mk('b', null, tks.map(function(k){ return state.teams[k].name; }).join('・'))); th.appendChild(cn2);
     } else {
       th.appendChild(mk('span','catword', a.cat || 'NEWS'));
     }
@@ -970,7 +970,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var row = mk('div','mini');
     row.setAttribute('data-c', colorOf(a.source));
     var ar = extLink(a.url, null, 'mini-art'); ar.setAttribute('aria-hidden','true'); ar.tabIndex = -1;
-    if (c) ar.appendChild(circuitSvg(c, false)); else if (a.teams && a.teams.length && state.teams[a.teams[0]]){ var cs2 = carSvg(a.teams[0]); cs2.setAttribute('class','car-mini'); ar.appendChild(cs2); } else ar.appendChild(mk('span','catword', a.cat || 'NEWS'));
+    if (c) ar.appendChild(circuitSvg(c, false)); else if (a.teams && a.teams.length && state.teams[a.teams[0]]){ a.teams.filter(function(k){ return state.teams[k]; }).slice(0, 3).forEach(function(k){ ar.appendChild(teamSwatch(k)); }); ar.classList.add('has-tsw'); } else ar.appendChild(mk('span','catword', a.cat || 'NEWS'));
     row.appendChild(ar);
     var body = mk('div');
     var h = mk('h4'); h.appendChild(extLink(a.url, a.title)); body.appendChild(h);
@@ -1036,33 +1036,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   el('copy-site').addEventListener('click', function(){ copyText('F1 Grid Walk — 世界のF1ニュースを日本語で\n' + SITE_URL, el('copy-site'), 'このサイトのリンクをコピー'); });
 
 
-  function carSvg(key){
-    // top view, nose to the right: tyres, wings, body in team colour, centre stripe, cockpit + helmet
-    var t = state.teams[key] || { c1:'#777', c2:'#bbb' };
-    var s = sv('svg', { viewBox:'0 0 200 80', 'aria-hidden':'true' });
-    function p(d, fill, cls){ var e = sv('path', { d:d }); if (fill) e.setAttribute('fill', fill); if (cls) e.setAttribute('class', cls); s.appendChild(e); }
-    function l(x1, y1, x2, y2){ s.appendChild(sv('line', { x1:x1, y1:y1, x2:x2, y2:y2, 'class':'cl', 'stroke-width':2.4, 'stroke-linecap':'round' })); }
-    l(40,18,60,33); l(44,18,66,31); l(40,62,60,47); l(44,62,66,49);
-    l(146,20,150,36); l(152,20,160,37); l(146,60,150,44); l(152,60,160,43);
-    p('M24 3h30a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z', null, 'cf');
-    p('M24 59h30a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4V63a4 4 0 0 1 4-4z', null, 'cf');
-    p('M140 7h22a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4H140a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4z', null, 'cf');
-    p('M140 58h22a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4H140a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4z', null, 'cf');
-    p('M3 14h14v52H3z', t.c1, 'cb');
-    p('M180 6h8l8 4v60l-8 4h-8z', t.c1, 'cb');
-    p('M17 34C30 32 44 31 56 30C62 18 74 16 92 18C106 20 118 26 130 32L184 37.5C189 38 190 39 190 40C190 41 189 42 184 42.5L130 48C118 54 106 60 92 62C74 64 62 62 56 50C44 49 30 48 17 46Z', t.c1, 'cb');
-    p('M17 38.3H186V41.7H17Z', t.c2);
-    s.appendChild(sv('ellipse', { cx:104, cy:40, rx:12, ry:6.5, 'class':'cf' }));
-    s.appendChild(sv('circle', { cx:101, cy:40, r:4.2, fill:t.c2 }));
-    return s;
+  function teamSwatch(key){
+    var t = state.teams[key] || { c1:'#888', c2:'#ccc' };
+    var w = mk('span','tsw'); w.setAttribute('aria-hidden','true'); w.title = t.name || '';
+    var a = mk('i'), b = mk('i'); a.style.background = t.c1; b.style.background = t.c2;
+    w.appendChild(a); w.appendChild(b); return w;
   }
-  var KIND = { tech:'TECH', rumor:'うわさ · 未確認', fan:'掲示板まとめ · 未確認' };
+  var KIND = { tech:'TECH', rumor:'未確認', fan:'掲示板まとめ' };
   function kindChip(a){ return (a.kind && KIND[a.kind]) ? mk('span', 'kind ' + a.kind, KIND[a.kind]) : null; }
   function geekRow(a){
     var c = a.circuit && state.circuits[a.circuit];
     var row = mk('div','grow'); row.setAttribute('data-c', colorOf(a.source));
     var ar = extLink(a.url, null, 'mini-art'); ar.setAttribute('aria-hidden','true'); ar.tabIndex = -1;
-    if (a.teams && a.teams.length && state.teams[a.teams[0]]){ var cs = carSvg(a.teams[0]); cs.setAttribute('class','car-mini'); ar.appendChild(cs); }
+    if (a.teams && a.teams.length && state.teams[a.teams[0]]){ a.teams.filter(function(k){ return state.teams[k]; }).slice(0, 3).forEach(function(k){ ar.appendChild(teamSwatch(k)); }); ar.classList.add('has-tsw'); }
     else if (c) ar.appendChild(circuitSvg(c, false));
     else ar.appendChild(mk('span','catword', a.cat || 'NEWS'));
     row.appendChild(ar);
@@ -1086,7 +1072,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     tech.forEach(function(a){ tl.appendChild(geekRow(a)); });
     gos.forEach(function(a){ gl.appendChild(geekRow(a)); });
     if (!tech.length) tl.appendChild(mk('p','empty','今はテクニカル記事がありません。'));
-    if (!gos.length) gl.appendChild(mk('p','empty','今は話題になっているうわさはありません。'));
+    if (!gos.length) gl.appendChild(mk('p','empty','今はパドックの話題はありません。'));
     el('geek').hidden = !(tech.length || gos.length);
   }
   function renderNumbers(){
@@ -1130,8 +1116,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var t = state.teams[k], b = mk('button','tcard'); b.type = 'button';
       b.style.setProperty('--t1', t.c1); b.style.setProperty('--t2', t.c2);
       b.setAttribute('aria-pressed', String(state.team === k));
-      b.appendChild(mk('span','stripe'));
-      var car = mk('div','car'); car.appendChild(carSvg(k)); b.appendChild(car);
+      b.appendChild(teamSwatch(k));
       var nm = mk('div','nm'); nm.appendChild(document.createTextNode(t.name)); nm.appendChild(mk('small', null, t.en)); b.appendChild(nm);
       b.appendChild(mk('div','dr', t.drivers.join('・') + ' · PU ' + t.pu));
       var r2 = mk('div','row2');
