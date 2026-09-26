@@ -297,20 +297,6 @@ a:hover{color:var(--ink-2)}
 .dash-main .hero-sum.trend-sum{display:block;-webkit-line-clamp:unset;overflow:visible}
 .trend-read{gap:4px 14px;font-size:12.5px}
 .trend-read .read{font-weight:700}
-/* desktop: sidebar sits beside the top block only; personal analysis and news use the full width */
-@media (min-width:1001px){
-  .wrap.dash{grid-template-columns:330px minmax(0,1fr);grid-template-rows:auto 1fr auto auto}
-  .dash-side{grid-column:1;grid-row:1 / span 2}
-  .dash-main{display:contents}
-  .dash-main > .hero{grid-column:2;grid-row:1}
-  .dash-main > .geek{grid-column:2;grid-row:2}
-  .dash-main > .notebox{grid-column:1 / -1;grid-row:3}
-  .dash-main > #news{grid-column:1 / -1;grid-row:4}
-  .dash-main .grid{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
-  .dash-main .card .thumb{aspect-ratio:16/7}
-  .notebox #notes-free{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .notebox .note-cols{grid-template-columns:minmax(0,3fr) minmax(0,1fr)}
-}
 .trend-list{list-style:none;margin:2px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 18px}
 .trend-list li{display:grid;grid-template-columns:auto 26px minmax(0,1fr);gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line-soft);font-size:13px}
 .trend-list .srcbadge{font-size:12px;white-space:nowrap}
@@ -692,6 +678,104 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .kinds button{min-height:30px;padding:0 10px;font-size:11.5px;white-space:nowrap;flex-shrink:0}
   .active-bar{font-size:11px;padding-top:8px}
 }
+/* ===== desktop (>=1001px): news first, data on demand, side columns scroll ===== */
+.databar{display:none}
+@media (max-width:1000px){
+  #tech-list .grow:nth-child(n+6),#gossip-list .grow:nth-child(n+7){display:none}
+  #notes-free .nrow:nth-child(n+9),#notes-paid .nrow:nth-child(n+7){display:none}
+}
+@media (min-width:1001px){
+  .wrap.dash{max-width:1760px;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr) minmax(0,.8fr);grid-template-rows:auto auto auto 1fr;gap:12px 16px;padding-block:10px 40px;align-items:start}
+  .wrap.dash .dash-side,.wrap.dash .dash-main{display:contents}
+  /* thin race strip */
+  .wrap.dash #raceweek{grid-column:1 / 3;grid-row:1;padding:7px 14px;border-radius:14px;align-self:stretch;display:flex;align-items:center}
+  .wrap.dash #raceweek[hidden]{display:none}
+  .wrap.dash #raceweek .wk-main{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:6px 14px;padding:0;background:transparent;border-radius:0;min-width:0;width:100%}
+  .wrap.dash #raceweek .wk-eyebrow{flex-wrap:nowrap;gap:8px;font-size:11.5px;white-space:nowrap}
+  .wrap.dash #raceweek .wk-eyebrow b{padding:2px 9px;font-size:11px}
+  .wrap.dash #raceweek .wk-main > div:not(.wk-eyebrow):not(.wk-map){display:flex;align-items:baseline;gap:10px;flex-shrink:0;white-space:nowrap}
+  .wrap.dash #raceweek .wk-eyebrow{flex-shrink:0}
+  .wrap.dash #raceweek .wk-eyebrow span{display:none}
+  @media (max-width:1250px){ .wrap.dash #raceweek .sessions li:last-child:not(.next):not(.now){display:none} .wrap.dash #raceweek .wk-count .lbl{display:none} }
+  .wrap.dash #raceweek .sessions li{flex-shrink:0}
+  @media (max-width:1250px){ .databar{gap:4px} .databar button{min-height:28px;padding:0 9px;font-size:11.5px} }
+  .wrap.dash .trend-list .tl-lang{display:none}
+  .wrap.dash #raceweek .wk-title{font-size:14.5px;line-height:1.3}
+  .wrap.dash #raceweek .wk-count{padding:0;gap:4px;flex-wrap:nowrap}
+  .wrap.dash #raceweek .wk-count .lbl{font-size:12px}
+  .wrap.dash #raceweek .wk-count .num{font-size:17px}
+  .wrap.dash #raceweek .wk-count .num small{font-size:11px;margin:0 4px 0 1px}
+  .wrap.dash #raceweek .wk-when,.wrap.dash #raceweek .wk-note,.wrap.dash #raceweek .wk-map{display:none}
+  .wrap.dash #raceweek .sessions{display:flex;flex-wrap:nowrap;gap:5px;margin:0 0 0 auto;overflow:hidden;min-width:0;flex:0 1 auto;justify-content:flex-end}
+  .wrap.dash #raceweek .sessions li{flex-direction:row;align-items:baseline;gap:5px;padding:2px 8px;border-radius:8px;font-size:10.5px;white-space:nowrap}
+  .wrap.dash #raceweek .sessions li b{font-size:10.5px}
+  .wrap.dash #raceweek .sessions li .st{display:none}
+  .wrap.dash #raceweek .sessions li{display:none}
+  .wrap.dash #raceweek .sessions li.now,.wrap.dash #raceweek .sessions li.next,.wrap.dash #raceweek .sessions li:last-child{display:flex}
+  .wrap.dash #raceweek .sessions li.now .st,.wrap.dash #raceweek .sessions li.next .st{display:inline}
+  .top .wrap{padding-block:10px}
+  .brand svg{width:40px;height:40px}.brand-name{font-size:22px}.brand-f1{font-size:9px}
+  .jump .wrap{padding-block:4px;font-size:13px}
+  /* data buttons */
+  .databar{display:flex;grid-column:3;grid-row:1;flex-wrap:wrap;gap:6px;align-self:center;justify-content:flex-end}
+  .databar button{min-height:32px;padding:0 12px;border-radius:16px;border:1px solid var(--chip-line);background:var(--surface);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:500;cursor:pointer}
+  .databar button:hover{border-color:var(--ink-2)}
+  .databar button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  /* data panels: hidden until asked for */
+  .wrap.dash #sec-standings{grid-column:1;grid-row:2}
+  .wrap.dash #numbers{grid-column:2;grid-row:2}
+  .wrap.dash #sec-calendar{grid-column:3;grid-row:2}
+  .wrap.dash #sec-standings,.wrap.dash #numbers,.wrap.dash #sec-calendar{display:none}
+  body.open-standings .wrap.dash #sec-standings,body.open-numbers .wrap.dash #numbers,body.open-calendar .wrap.dash #sec-calendar{display:block}
+  #teams-band{display:none}
+  body.open-teams #teams-band{display:block}
+  .wrap.dash #sec-standings .stand,.wrap.dash #sec-calendar .cal-head{padding:0}
+  .wrap.dash #sec-calendar .cal{max-height:360px}
+  /* main column: this week + news */
+  .wrap.dash .dash-main > .hero{grid-column:1;grid-row:3}
+  .wrap.dash .dash-main > #news{grid-column:1;grid-row:4}
+  .wrap.dash .hero.dbox{padding:14px 18px}
+  .wrap.dash .hero-in{grid-template-columns:1fr}
+  .wrap.dash .dash-main .hero-art{display:none}
+  .wrap.dash .dash-main .hero h1{font-size:21px;line-height:1.45}
+  .wrap.dash .dash-main .hero-sum{font-size:13.5px;line-height:1.75}
+  .wrap.dash .hero .teamtags{display:none}
+  .wrap.dash .trend-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}
+  .wrap.dash .trend-list li{display:flex;flex-direction:column;gap:1px;padding:6px 0;font-size:12.5px}
+  .wrap.dash .dash-main .toolbar{gap:8px;padding-bottom:10px}
+  .wrap.dash .dash-main .toolbar h2{font-size:19px}
+  .wrap.dash .dash-main .filters button,.wrap.dash .kinds button{min-height:30px;padding:0 10px;font-size:12px}
+  .wrap.dash .dash-main #teamfilter .teamtag{min-height:26px;font-size:11.5px}
+  /* news: text only, two columns, dense */
+  .wrap.dash .dash-main .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;padding-top:4px}
+  .wrap.dash .dash-main .card{gap:3px;padding:10px 0 11px;border-bottom:1px solid var(--line);min-width:0}
+  .wrap.dash .dash-main .card .thumb{display:none}
+  .wrap.dash .dash-main .card .card-meta{font-size:11px;gap:2px 8px;align-items:center}
+  .wrap.dash .dash-main .card h3{font-size:15px;line-height:1.5}
+  .wrap.dash .dash-main .card p{font-size:12.5px;line-height:1.7;-webkit-line-clamp:3}
+  .wrap.dash .dash-main .card .orig{display:-webkit-box;font-size:11px;-webkit-line-clamp:1}
+  .wrap.dash .dash-main .card .teamtags{gap:2px 10px}
+  .wrap.dash .dash-main .card .teamtag{min-height:0;padding:0;border:0;background:transparent;font-size:11px;gap:4px;color:var(--muted)}
+  .wrap.dash .dash-main .card .card-foot{display:none}
+  .wrap.dash .dash-main .groups{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wrap.dash .dash-main .mini-art{display:none}
+  .wrap.dash .dash-main .mini{grid-template-columns:minmax(0,1fr)}
+  /* side columns: tech + paddock, personal analysis; each scrolls on its own */
+  .wrap.dash .dash-main > .geek:not([hidden]){grid-column:2;grid-row:3 / 5;display:flex;flex-direction:column;gap:12px;position:sticky;top:52px;height:calc(100vh - 64px);align-self:start}
+  .wrap.dash .geek .dbox{flex:1 1 0;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+  .wrap.dash .geek .band-head{position:sticky;top:-18px;z-index:1;background:inherit;margin:-18px -18px 6px;padding:14px 18px 8px}
+  .wrap.dash .geek .gossip .band-head{background:var(--surface)}
+  .wrap.dash .grow{grid-template-columns:minmax(0,1fr);padding:9px 0}
+  .wrap.dash .grow .mini-art{display:none}
+  .wrap.dash .grow h4{font-size:13.5px}
+  .wrap.dash .grow p{font-size:12px;-webkit-line-clamp:2}
+  .wrap.dash .dash-main > .notebox:not([hidden]){grid-column:3;grid-row:3 / 5;position:sticky;top:52px;height:calc(100vh - 64px);overflow-y:auto;overscroll-behavior:contain;align-self:start}
+  .wrap.dash .notebox .band-head{flex-direction:column;gap:0}
+  .wrap.dash .notebox .note-cols{grid-template-columns:minmax(0,1fr);gap:14px}
+  .wrap.dash .notebox #notes-free{display:block}
+  .wrap.dash .nrow h4{font-size:13.5px}
+  .wrap.dash .nrow p{font-size:12px;-webkit-line-clamp:2}
+}
 </style>
 
 <header class="top">
@@ -724,15 +808,21 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 <main id="top">
   <div class="wrap dash">
     <aside class="dash-side" aria-label="レース情報">
+      <div class="databar" role="group" aria-label="データを開く">
+        <button type="button" data-panel="standings" aria-pressed="false">ランキング</button>
+        <button type="button" data-panel="numbers" aria-pressed="false">数字</button>
+        <button type="button" data-panel="calendar" aria-pressed="false">カレンダー</button>
+        <button type="button" data-panel="teams" aria-pressed="false">チーム・話題・媒体</button>
+      </div>
       <section class="dbox" id="raceweek" aria-label="今週のグランプリ" hidden>
         <div class="wk-main" id="wk-main"></div>
       </section>
-      <section class="dbox"><div class="stand" id="standings"></div></section>
+      <section class="dbox" id="sec-standings"><div class="stand" id="standings"></div></section>
       <section class="dbox" id="numbers" aria-label="数字で見る今季" hidden>
         <div class="band-head"><h2 style="font-size:16px">数字で見る2026</h2><span class="count" id="num-note"></span></div>
         <div class="nums" id="nums"></div>
       </section>
-      <section class="dbox">
+      <section class="dbox" id="sec-calendar">
         <div class="cal-head"><h2>次のレース</h2><span class="count" id="cal-note"></span></div>
         <div class="cal" id="calendar"></div>
       </section>
@@ -1364,8 +1454,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   function renderGeek(){
     var all = state.all || [];
-    var tech = all.filter(function(a){ return a.kind === 'tech'; }).slice(0, 5);
-    var gos = all.filter(function(a){ return a.kind === 'rumor' || a.kind === 'fan'; }).slice(0, 6);
+    var tech = all.filter(function(a){ return a.kind === 'tech'; }).slice(0, 40);
+    var gos = all.filter(function(a){ return a.kind === 'rumor' || a.kind === 'fan'; }).slice(0, 40);
     var tl = el('tech-list'), gl = el('gossip-list'); tl.textContent = ''; gl.textContent = '';
     tech.forEach(function(a){ tl.appendChild(geekRow(a)); });
     gos.forEach(function(a){ gl.appendChild(geekRow(a)); });
@@ -1397,7 +1487,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   function renderNotes(){
     var list = ((state.notes || {}).notes || []).slice().sort(function(a, b){ return new Date(b.published) - new Date(a.published); });
-    var fr = list.filter(function(n){ return !n.paid; }).slice(0, 8), pd = list.filter(function(n){ return n.paid; }).slice(0, 6);
+    var fr = list.filter(function(n){ return !n.paid; }).slice(0, 50), pd = list.filter(function(n){ return n.paid; }).slice(0, 30);
     var fl = el('notes-free'), pl = el('notes-paid'); fl.textContent = ''; pl.textContent = '';
     state.noteByUrl = {};
     list.forEach(function(n){ state.noteByUrl[n.url] = { id:n.id, source:(n.platform || 'note') + ' ' + n.author, title:n.title }; });
@@ -1639,6 +1729,22 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     state.teamOrder.forEach(function(k){ var b = teamTag(k, counts[k] || 0); if (b) box.appendChild(b); });
   }
 
+  var PANEL_OF = { '#standings':'standings', '#numbers':'numbers', '#calendar':'calendar', '#teams-band':'teams', '#sources':'teams' };
+  var wide = window.matchMedia ? window.matchMedia('(min-width:1001px)') : { matches:false };
+  function setPanel(k, on){
+    document.body.classList.toggle('open-' + k, on);
+    var b = document.querySelector('.databar [data-panel="' + k + '"]'); if (b) b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.databar [data-panel]'), function(b){
+    b.addEventListener('click', function(){
+      var k = b.getAttribute('data-panel'), on = !document.body.classList.contains('open-' + k);
+      setPanel(k, on);
+      if (on && k === 'teams'){ var t = el('teams-band'); if (t) t.scrollIntoView({ behavior:'smooth', block:'start' }); }
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.jump a'), function(a){
+    a.addEventListener('click', function(){ var k = PANEL_OF[a.getAttribute('href')]; if (k && wide.matches) setPanel(k, true); });
+  });
   function getJSON(u){ return fetch(u, { cache:'no-store' }).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }); }
   Promise.all([
     getJSON('articles.json'),
