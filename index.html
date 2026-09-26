@@ -56,7 +56,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:
 a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{color:var(--ink-2)}
 :focus-visible{outline:2px solid var(--clay);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1320px;margin:0 auto;padding-inline:clamp(16px,5vw,72px)}
+.wrap{max-width:1680px;margin:0 auto;padding-inline:clamp(16px,5vw,72px)}
 
 /* header */
 .top{border-bottom:1px solid var(--line)}
@@ -224,6 +224,76 @@ a:hover{color:var(--ink-2)}
   .srow{grid-template-columns:22px 14px minmax(0,1fr) 38px}
   .srow .b{display:none}
 }
+
+/* dashboard layout */
+.wrap.dash{max-width:1680px;display:grid;grid-template-columns:330px minmax(0,1fr);gap:20px;padding-block:18px 48px;align-items:start}
+.dash-side,.dash-main{display:flex;flex-direction:column;gap:16px;min-width:0}
+.dbox{background:var(--surface);border-radius:22px;padding:18px 18px 16px;scroll-margin-top:16px}
+.dash-side .wk-main{display:flex;flex-direction:column;gap:6px;padding:0;background:transparent;border-radius:0}
+.dash-side .wk-map{display:none}
+.dash-side .wk-title{font-size:21px}
+.dash-side .wk-count{padding:4px 0 0}
+.dash-side .wk-count .num{font-size:32px}
+.dash-side .wk-when{font-size:12.5px}
+.dash-side .wk-note{font-size:12px}
+.dash-side .sessions{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:8px}
+.dash-side .sessions li{padding:7px 9px;border-radius:12px;font-size:11.5px}
+.dash-side .sessions li b{font-size:12px}
+.dash-side .sessions li .st{font-size:11px}
+.dash-side .stand{padding:0;background:transparent;border-radius:0}
+.dash-side .stand h2{font-size:16px}
+.dash-side .srow{grid-template-columns:20px 12px minmax(0,1fr) 64px 34px;gap:8px;padding:6px 0;font-size:13px}
+.dash-side .srow .n small{display:none}
+.dash-side .cal-head{padding-top:0}
+.dash-side .cal-head h2{font-size:16px}
+.dash-side .cal{display:flex;flex-direction:column;gap:0;overflow-y:auto;overflow-x:hidden;max-height:320px;padding:6px 0 0;scroll-snap-type:none}
+.dash-side .rd{display:grid;grid-template-columns:40px 40px minmax(0,1fr) auto;align-items:center;gap:8px;padding:7px 4px;border-radius:0;background:transparent;border:0;border-bottom:1px solid var(--line-soft);font-size:12px}
+.dash-side .rd .mp{height:30px;padding:0}
+.dash-side .rd .g{font-size:13px}
+.dash-side .rd .w,.dash-side .rd .d{grid-column:4;grid-row:1;text-align:right;white-space:nowrap}
+.dash-side .rd .d{color:var(--muted)}
+.dash-side .rd:has(.w) .d{display:none}
+.dash-side .rd .flag{display:none}
+.dash-side .rd.now .flag,.dash-side .rd.off .flag{display:inline-block;grid-column:4;grid-row:1;justify-self:end}
+.dash-side .rd.now .d{display:none}
+.dash-side .rd.now{background:var(--paper)}
+.hero.dbox{padding:22px 24px}
+.hero-in{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:24px;align-items:center}
+.dash-main .hero h1{font-size:clamp(22px,2.3vw,30px)}
+.dash-main .hero-sum{font-size:15px;line-height:1.85}
+.dash-main .hero-art .plate{max-width:190px;padding:12%}
+.dash-main .hero-art .circuit-label b{font-size:14px}
+.dash-main .toolbar{padding-bottom:14px}
+.dash-main .groups{grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;padding-top:16px}
+.dash-main .group{padding:0 16px 6px;border-top-width:5px}
+.dash-main .group-head{padding:14px 0 8px}
+.dash-main .group-head h3{font-size:17px}
+.dash-main .mini{grid-template-columns:44px minmax(0,1fr);gap:10px;padding:10px 0}
+.dash-main .mini-art{width:44px;height:44px;border-radius:12px;padding:6px}
+.dash-main .mini h4{font-size:14px}
+.dash-main .legend{padding-top:14px}
+
+.dash-main .hero-in .orig{display:none}
+.dash-main .hero-sum{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dash-main .hero-text{gap:12px}
+.hero.dbox{padding:18px 22px}
+.dash-main .hero h1{font-size:clamp(20px,2vw,26px);line-height:1.45}
+.dash-main .hero-art .plate{max-width:150px}
+.dash-main .toolbar{gap:10px}
+.dash-main .toolbar h2{font-size:21px}
+.dash-main .filters button{min-height:34px;padding:0 12px;font-size:12.5px}
+.dash-main .teamtag{min-height:28px;font-size:12px}
+.dash-main .legend{display:none}
+.dash-main .groups{padding-top:14px}
+@media (max-width:1000px){
+  .wrap.dash{grid-template-columns:1fr}
+  .dash-main{order:1}.dash-side{order:2}
+}
+@media (max-width:600px){
+  .hero-in{grid-template-columns:1fr}
+  .dash-main .hero-art{order:-1}
+  .dash-main .hero-art .plate{max-width:150px}
+}
 /* copy link */
 .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .copybtn{min-height:40px;padding:0 16px;border-radius:20px;border:1px solid var(--moss);background:var(--moss);color:var(--on-moss);font:inherit;font-size:13px;font-weight:500;cursor:pointer}
@@ -347,53 +417,48 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </nav>
 
 <main id="top">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="wrap">
-      <div class="hero-text" id="hero">
-        <div class="chips"><span class="chip-feature">今日の一本</span></div>
-        <h1 id="hero-title">世界のF1ニュースを読み込んでいます</h1>
-      </div>
-      <div class="hero-art" id="hero-art"><div class="plate"></div></div>
-    </div>
-  </section>
-
-  <section class="weekend" id="raceweek" aria-label="今週のグランプリとランキング" hidden>
-    <div class="wrap">
-      <div class="wk">
+  <div class="wrap dash">
+    <aside class="dash-side" aria-label="レース情報">
+      <section class="dbox" id="raceweek" aria-label="今週のグランプリ" hidden>
         <div class="wk-main" id="wk-main"></div>
-        <div class="wk-side">
-          <div class="stand" id="standings"></div>
-        </div>
-      </div>
-      <div class="cal-head">
-        <h2>2026年のカレンダー</h2>
-        <span class="count" id="cal-note"></span>
-      </div>
-      <div class="cal" id="calendar"></div>
-    </div>
-  </section>
-
-  <section id="news" aria-label="記事一覧">
-    <div class="wrap">
-      <div class="toolbar">
-        <div class="toolbar-row">
-          <div>
-            <h2>世界のF1ニュース</h2>
-            <span class="count" id="count"></span>
+      </section>
+      <section class="dbox"><div class="stand" id="standings"></div></section>
+      <section class="dbox">
+        <div class="cal-head"><h2>次のレース</h2><span class="count" id="cal-note"></span></div>
+        <div class="cal" id="calendar"></div>
+      </section>
+    </aside>
+    <div class="dash-main">
+      <section class="hero dbox" aria-labelledby="hero-title">
+        <div class="hero-in">
+          <div class="hero-text" id="hero">
+            <div class="chips"><span class="chip-feature">今日の一本</span></div>
+            <h1 id="hero-title">世界のF1ニュースを読み込んでいます</h1>
           </div>
-          <div class="seg" role="group" aria-label="並べ方">
-            <button type="button" id="view-list" aria-pressed="true">一覧</button>
-            <button type="button" id="view-source" aria-pressed="false">媒体別</button>
-            <button type="button" id="view-team" aria-pressed="false">チーム別</button>
-            <button type="button" id="view-latest" aria-pressed="false">新着順</button>
-          </div>
+          <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
-        <div class="filters" role="group" aria-label="原文の言語で絞り込む" id="filters"></div>
-        <div class="teamtags" role="group" aria-label="チームで絞り込む" id="teamfilter"></div>
-      </div>
-      <div id="feed"></div>
+      </section>
+      <section id="news" aria-label="記事一覧">
+        <div class="toolbar">
+          <div class="toolbar-row">
+            <div>
+              <h2>世界のF1ニュース</h2>
+              <span class="count" id="count"></span>
+            </div>
+            <div class="seg" role="group" aria-label="並べ方">
+              <button type="button" id="view-source" aria-pressed="true">媒体別</button>
+              <button type="button" id="view-list" aria-pressed="false">新着順</button>
+              <button type="button" id="view-team" aria-pressed="false">チーム別</button>
+              <button type="button" id="view-latest" aria-pressed="false">カード</button>
+            </div>
+          </div>
+          <div class="filters" role="group" aria-label="原文の言語で絞り込む" id="filters"></div>
+          <div class="teamtags" role="group" aria-label="チームで絞り込む" id="teamfilter"></div>
+        </div>
+        <div id="feed"></div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <section class="info" aria-label="このサイトについて">
     <div class="wrap">
@@ -436,7 +501,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   };
   var ORDER = ['en','it','de','es','fr','pt','nl','pl','fi','sv','da','hu','zh','ko'];
   var NS = 'http://www.w3.org/2000/svg';
-  var state = { lang:'all', team:'all', view:'list', data:null, circuits:{}, teams:{}, teamOrder:[], season:null, standTab:'d' };
+  var state = { lang:'all', team:'all', view:'source', data:null, circuits:{}, teams:{}, teamOrder:[], season:null, standTab:'d' };
   function teamTag(key, count){
     var t = state.teams[key]; if (!t) return null;
     var b = mk('button','teamtag'); b.type = 'button';
@@ -705,7 +770,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         groups[a.source].push(a);
       });
       order.sort(function(x, y){ return groups[y].length - groups[x].length; });
-      el('count').textContent = order.length + '媒体 · ' + shown.length + '本の記事 · 各媒体のピックアップ付き';
+      el('count').textContent = order.length + '媒体 · ' + shown.length + '本の記事 · 記事の多い媒体から順に';
       var legend = mk('nav','legend'); legend.setAttribute('aria-label','媒体へ移動');
       order.forEach(function(src){
         var l = mk('a'); l.href = '#' + slug(src);
@@ -727,20 +792,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         head.appendChild(mk('h3', null, src));
         head.appendChild(mk('span', null, langName(first.lang) + ' · ' + first.region + ' · ' + groups[src].length + '本'));
         sec.appendChild(head);
-        var pk = mk('article','pick');
-        pk.appendChild(mk('span','pick-label','ピックアップ'));
-        pk.appendChild(thumbFor(pick, false));
-        var ph = mk('h4'); ph.appendChild(extLink(pick.url, pick.title)); pk.appendChild(ph);
-        pk.appendChild(mk('p', null, pick.summary));
-        var pm = mk('div','card-meta');
-        pm.appendChild(mk('span', null, pick.cat || ''));
-        pm.appendChild(timeEl(pick.published));
-        pm.appendChild(extLink(pick.url, '原文へ ↗'));
-        pk.appendChild(pm);
-        var pt = tagsFor(pick); if (pt) pk.appendChild(pt);
-        sec.appendChild(pk);
-        if (items.length) sec.appendChild(mk('div','more','ほかの記事'));
-        items.forEach(function(a){ sec.appendChild(miniRow(a, false)); });
+        groups[src].forEach(function(a){ sec.appendChild(miniRow(a, false)); });
+
         wrapG.appendChild(sec);
       });
       feed.appendChild(wrapG);
@@ -919,7 +972,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
     el('cal-note').textContent = done + '戦終了 · 残り' + left + '戦（中止2戦）';
     var nowEl = box.querySelector('.rd.now');
-    if (nowEl){ box.scrollLeft = Math.max(0, nowEl.offsetLeft - box.offsetLeft - 24); }
+    if (nowEl){ box.scrollTop = Math.max(0, nowEl.offsetTop - box.offsetTop - 8); }
   }
   function renderSeason(){
     if (!state.season) return;
