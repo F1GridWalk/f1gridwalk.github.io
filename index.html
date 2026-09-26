@@ -1299,7 +1299,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     rm.appendChild(mk('span', null, 'ほかの' + (t.n - 1) + '媒体の記事は下から'));
     box.appendChild(rm);
     var ul = mk('ul','trend-list');
-    var TL_FIRST = wide.matches ? 6 : 4;
+    var TL_FIRST = 3;
     t.items.slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); }).forEach(function(a, i){
       var li = mk('li'); li.setAttribute('data-c', colorOf(a.source));
       if (i >= TL_FIRST) li.classList.add('cut');
