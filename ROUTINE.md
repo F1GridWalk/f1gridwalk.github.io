@@ -19,7 +19,7 @@ Find F1 news published since the previous run (compare the current time in Asia/
 - Portuguese: grandepremio.com/br/f1, ge.globo/motor/formula-1
 - Dutch: racingnews365.nl, gpblog.com/nl, f1maximaal.nl, nos.nl/sport
 - Japanese news: f1-gate.com, as-web.jp, topnews.jp, formula1-data.com, jp.motorsport.com
-- Japanese fan-forum digests (2ch/5ch matome): f1jouhou2.com (「F1情報通」). Once a day also WebSearch "F1 5ch まとめ" for other ACTIVE matome blogs (skip posts older than 7 days). Use these for kind "fan" only.
+- Japanese fan-forum digests (2ch/5ch matome): f1jouhou2.com (「F1情報通」) and f1are.com (「F1のアレ」, source name "F1のアレ", region 日本; posts are at https://f1are.com/blog-entry-NNNN.html, newest first on the top page). When both cover the same story, pick the one with the more substantive post (never two digests of the same story from the same site). Once a day also WebSearch "F1 5ch まとめ" for other ACTIVE matome blogs (skip posts older than 7 days). Use these for kind "fan" only.
 - Reddit, X (Twitter) and YouTube cannot be used; do not use them.
 - Posts by individuals (note.com, *.substack.com, personal blogs) go ONLY into notes.json, never into articles.json.
 - Other languages are welcome when free.
