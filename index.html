@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>F1 Grid Walk</title>
+<meta name="description" content="世界のF1ニュースを、日本語で。各国の記事の見出しを翻訳し、短い概要と原文へのリンクを朝と夕方にお届けします。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+:root{
+  --paper:#F3EFE6; --surface:#FBF9F4; --tint:#E6E0D1; --line:#DDD5C5; --line-soft:#ECE6D8;
+  --ink:#1F2420; --ink-2:#3A3E37; --muted:#5B5F57;
+  --moss:#1F2420; --moss-ink:#000000; --moss-soft:#E9E5DB; --on-moss:#FBF9F4;
+  --clay:#9E4E2B; --chip-line:#CFC6B3;
+  /* one colour per outlet: line colour + soft ground */
+  --s1:#6B5B3E; --s1s:#EDE6D6; --s2:#A24F2B; --s2s:#F3E1D6; --s3:#283C73; --s3s:#DDE2F0;
+  --s4:#7A3E6E; --s4s:#EFDFEB; --s5:#86650F; --s5s:#F2E8CC; --s6:#1F66A0; --s6s:#DCEAF6;
+  --s7:#A33A4B; --s7s:#F4DDE0; --s8:#4A5260; --s8s:#E3E6EA;
+  --serif:'IBM Plex Sans JP','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,sans-serif;
+  --sans:'IBM Plex Sans JP','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,sans-serif;
+  --latin:'IBM Plex Sans JP','Helvetica Neue',Arial,sans-serif;
+  --logo:'Fraunces',Georgia,'Times New Roman',serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#191C18; --surface:#222620; --tint:#2A2F28; --line:#353A32; --line-soft:#2E332C;
+    --ink:#ECE7DC; --ink-2:#D3CEC2; --muted:#A5A99C;
+    --moss:#ECE7DC; --moss-ink:#FFFFFF; --moss-soft:#2E332C; --on-moss:#191C18;
+    --clay:#E09A76; --chip-line:#454B41;
+    --s1:#CDB892; --s1s:#2F2A20; --s2:#E39C78; --s2s:#3A2A21; --s3:#93AEE0; --s3s:#1F2A3C;
+    --s4:#D29BC6; --s4s:#35243A; --s5:#D9B75E; --s5s:#372F18; --s6:#86B8E6; --s6s:#1C2A38;
+    --s7:#EC98A6; --s7s:#3A2227; --s8:#AEB6C4; --s8s:#272B31;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#191C18; --surface:#222620; --tint:#2A2F28; --line:#353A32; --line-soft:#2E332C;
+  --ink:#ECE7DC; --ink-2:#D3CEC2; --muted:#A5A99C;
+  --moss:#ECE7DC; --moss-ink:#FFFFFF; --moss-soft:#2E332C; --on-moss:#191C18;
+  --clay:#E09A76; --chip-line:#454B41;
+  --s1:#CDB892; --s1s:#2F2A20; --s2:#E39C78; --s2s:#3A2A21; --s3:#93AEE0; --s3s:#1F2A3C;
+  --s4:#D29BC6; --s4s:#35243A; --s5:#D9B75E; --s5s:#372F18; --s6:#86B8E6; --s6s:#1C2A38;
+  --s7:#EC98A6; --s7s:#3A2227; --s8:#AEB6C4; --s8s:#272B31;
+}
+*{box-sizing:border-box}
+[data-c="1"]{--c:var(--s1);--cs:var(--s1s)} [data-c="2"]{--c:var(--s2);--cs:var(--s2s)}
+[data-c="3"]{--c:var(--s3);--cs:var(--s3s)} [data-c="4"]{--c:var(--s4);--cs:var(--s4s)}
+[data-c="5"]{--c:var(--s5);--cs:var(--s5s)} [data-c="6"]{--c:var(--s6);--cs:var(--s6s)}
+[data-c="7"]{--c:var(--s7);--cs:var(--s7s)} [data-c="8"]{--c:var(--s8);--cs:var(--s8s)}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--ink-2)}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:clamp(16px,5vw,72px)}
+
+/* header */
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand:hover{color:var(--ink)}
+.brand svg{width:54px;height:54px;flex-shrink:0}
+.brand-words{display:flex;flex-direction:column;gap:3px}
+.brand-f1{font-weight:700;font-size:11px;letter-spacing:.4em;color:var(--clay)}
+.brand-name{font-family:var(--logo);font-weight:600;font-size:28px;line-height:1}
+.status{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.status .dot{width:8px;height:8px;border-radius:50%;background:var(--moss)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:center;padding-block:56px 64px}
+.hero-text{display:flex;flex-direction:column;gap:20px}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;font-weight:500}
+.chip-feature{padding:5px 14px;border-radius:999px;background:var(--moss-soft);color:var(--moss-ink)}
+.chip-cat{color:var(--muted)}
+.chip-lang{font-family:var(--latin);color:var(--clay);font-weight:400}
+.hero h1{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.8vw,44px);line-height:1.5;letter-spacing:0;text-wrap:balance}
+.hero h1 a{color:var(--ink);text-decoration:none}
+.hero h1 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.hero-sum{margin:0;font-size:17px;line-height:1.95;color:var(--ink-2);max-width:40em}
+.orig{margin:0;font-family:var(--latin);font-size:14px;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.read{display:inline-flex;align-items:center;gap:6px;font-weight:500}
+.hero-art{display:flex;flex-direction:column;align-items:center;gap:14px}
+.hero-art .plate{width:100%;max-width:460px;aspect-ratio:6/5;border-radius:48% 52% 46% 54% / 55% 47% 53% 45%;background:var(--tint);display:flex;align-items:center;justify-content:center;padding:9%}
+.hero-art svg{width:100%;height:100%}
+.circuit-label{display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.circuit-label b{font-family:var(--serif);font-weight:700;font-size:17px}
+.circuit-label span{font-size:12px;color:var(--muted);letter-spacing:.08em}
+
+/* circuit drawing */
+.trk{fill:none;stroke:var(--c,var(--moss));stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.trk-under{fill:none;stroke:var(--paper);stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;opacity:.7}
+.trk-start{fill:var(--ink)}
+.hero-art .plate{background:var(--cs,var(--tint))}
+.srcbadge{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--c,var(--ink-2))}
+.srcbadge::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--c,var(--moss));flex-shrink:0}
+
+/* toolbar */
+.toolbar{display:flex;flex-direction:column;gap:16px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.toolbar-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
+.toolbar h2{margin:0;font-family:var(--serif);font-weight:700;font-size:26px}
+.toolbar .count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.seg{display:inline-flex;padding:4px;border-radius:26px;background:var(--surface);border:1px solid var(--line)}
+.seg button{min-height:40px;padding:0 18px;border-radius:20px;border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:14px;font-weight:500;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--moss);color:var(--on-moss)}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--chip-line);background:transparent;color:var(--ink-2);font:inherit;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.filters button .n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.filters button[aria-pressed="true"] .n{color:var(--paper);opacity:.7}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px 24px;padding-top:28px}
+.card{display:flex;flex-direction:column;gap:14px;min-width:0}
+.thumb{position:relative;display:block;aspect-ratio:16/10;border-radius:22px;background:var(--cs,var(--surface));overflow:hidden;text-decoration:none;color:var(--ink)}
+.thumb:hover{color:var(--ink)}
+.thumb .draw{position:absolute;inset:14px 18px 40px 18px}
+.thumb .draw svg{width:100%;height:100%;display:block}
+.thumb .code{position:absolute;right:14px;top:10px;font-family:var(--latin);font-size:22px;line-height:1;color:var(--c,var(--moss))}
+.thumb .cname{position:absolute;left:16px;right:16px;bottom:12px;font-size:12px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.thumb .cname b{font-weight:700;color:var(--ink)}
+.thumb .srcbadge{position:absolute;left:14px;top:10px;font-size:12px}
+.thumb.nocircuit{display:flex;align-items:center;justify-content:center}
+.catword{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--c,var(--moss));letter-spacing:.06em}
+.card-meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card-meta .src{font-weight:500;color:var(--ink-2)}
+.card h3{margin:0;font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.6;text-wrap:pretty}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.card p{margin:0;font-size:14px;line-height:1.85;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.card .orig{font-size:12.5px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;margin-top:auto}
+.cat{padding:3px 12px;border-radius:999px;border:1px solid var(--chip-line);color:var(--ink-2);font-size:12px;white-space:nowrap}
+
+/* by source */
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:24px;font-size:13px}
+.legend a{text-decoration:none}
+.legend a:hover .srcbadge{text-decoration:underline;text-underline-offset:4px}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:24px;padding-top:24px;align-items:start}
+.group{background:var(--surface);border-radius:26px;padding:0 22px 8px;overflow:hidden;border-top:6px solid var(--c,var(--moss));scroll-margin-top:16px}
+.group-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:18px 0 14px}
+.group-head h3{margin:0;font-family:var(--latin);font-weight:600;font-size:22px;line-height:1.2;color:var(--c,var(--ink))}
+.group-head span{font-size:12px;color:var(--muted);white-space:nowrap}
+.pick{display:flex;flex-direction:column;gap:10px;padding-bottom:16px;border-bottom:1px solid var(--line-soft)}
+.pick .thumb{aspect-ratio:16/9}
+.pick-label{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.14em;padding:3px 10px;border-radius:999px;background:var(--c,var(--moss));color:var(--surface)}
+.pick h4{margin:0;font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.55}
+.pick h4 a{color:var(--ink);text-decoration:none}
+.pick h4 a:hover{text-decoration:underline;text-underline-offset:5px}
+.pick p{margin:0;font-size:14px;line-height:1.85;color:var(--ink-2)}
+/* jump nav */
+.jump{border-bottom:1px solid var(--line)}
+.jump .wrap{display:flex;gap:4px 22px;flex-wrap:wrap;padding-block:10px;font-size:14px;font-weight:500}
+.jump a{color:var(--ink-2);text-decoration:none;padding:6px 0}
+.jump a:hover{color:var(--moss)}
+/* race week */
+.weekend{padding-block:8px 56px}
+.wk{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;align-items:start}
+.wk-main{background:var(--surface);border-radius:28px;padding:28px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:8px 28px;scroll-margin-top:16px}
+.wk-eyebrow{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:13px;color:var(--muted)}
+.wk-eyebrow b{padding:4px 12px;border-radius:999px;background:var(--moss);color:var(--on-moss);font-size:12px}
+.wk-title{margin:0;font-size:28px;font-weight:700;line-height:1.35}
+.wk-count{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;padding:10px 0 4px}
+.wk-count .lbl{font-size:14px;color:var(--ink-2)}
+.wk-count .num{font-size:44px;font-weight:700;line-height:1.1;color:var(--moss);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.wk-count .num small{font-size:18px;font-weight:500;margin:0 6px 0 2px;color:var(--ink-2)}
+.wk-when{margin:0;font-size:14px;color:var(--ink-2)}
+.wk-note{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.wk-map{grid-column:2;grid-row:2 / span 4;background:var(--tint);border-radius:40% 60% 52% 48% / 50% 44% 56% 50%;aspect-ratio:1;padding:16%;align-self:center}
+.wk-map svg{width:100%;height:100%;display:block}
+.sessions{grid-column:1 / -1;list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.sessions li{border:1px solid var(--line);border-radius:16px;padding:10px 14px;display:flex;flex-direction:column;gap:2px;font-size:13px}
+.sessions li b{font-size:14px}
+.sessions li .t{color:var(--ink-2);font-variant-numeric:tabular-nums}
+.sessions li .st{font-size:12px;color:var(--muted)}
+.sessions li.now{border-color:var(--clay);background:var(--cs,transparent)}
+.sessions li.now .st{color:var(--clay);font-weight:700}
+.sessions li.next{border-color:var(--moss)}
+.sessions li.next .st{color:var(--moss);font-weight:700}
+.sessions li.done{opacity:.72}
+.stand{background:var(--surface);border-radius:28px;padding:24px 26px;scroll-margin-top:16px}
+.stand h2{margin:0;font-size:19px;font-weight:700}
+.stand .sub{font-size:12px;color:var(--muted)}
+.stand-tabs{display:inline-flex;gap:4px;margin:14px 0 6px;padding:3px;border-radius:20px;border:1px solid var(--line)}
+.stand-tabs button{min-height:34px;padding:0 14px;border-radius:17px;border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:13px;font-weight:500;cursor:pointer}
+.stand-tabs button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.srow{display:grid;grid-template-columns:22px 14px minmax(0,1fr) minmax(0,90px) 38px;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line-soft);font-size:14px}
+.srow:last-child{border-bottom:0}
+.srow .p{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.srow .n{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.srow .n small{font-weight:400;color:var(--muted);font-size:12px;margin-left:6px}
+.srow .b{height:6px;border-radius:3px;background:var(--line-soft)}
+.srow .b i{display:block;height:6px;border-radius:3px;background:var(--t1,var(--moss))}
+.srow .v{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.srow.lead .p{color:var(--clay)}
+.cal-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;padding-top:40px}
+.cal-head h2{margin:0;font-size:22px;font-weight:700}
+.cal{display:grid;grid-auto-flow:column;grid-auto-columns:150px;gap:12px;overflow-x:auto;padding:16px 2px 12px;scroll-snap-type:x proximity;scroll-margin-top:16px}
+.rd{scroll-snap-align:start;border-radius:20px;background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:4px;font-size:12.5px;border:1px solid transparent}
+.rd .rn{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.rd .mp{height:64px;padding:6px 10px}
+.rd .mp svg{width:100%;height:100%;display:block}
+.rd .g{font-weight:700;font-size:13.5px;color:var(--ink)}
+.rd .d{color:var(--muted);font-variant-numeric:tabular-nums}
+.rd .w{color:var(--ink-2)}
+.rd .w b{color:var(--ink)}
+.rd.now{border-color:var(--clay);background:var(--paper)}
+.rd.now .rn{color:var(--clay)}
+.rd.off{opacity:.55}
+.rd .flag{align-self:flex-start;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--moss-soft);color:var(--moss-ink)}
+.rd.now .flag{background:var(--clay);color:var(--surface)}
+@media (max-width:900px){
+  .wk{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .wk-main{grid-template-columns:1fr;padding:22px}
+  .wk-map{grid-column:1;grid-row:auto;width:62%;justify-self:center}
+  .wk-count .num{font-size:36px}
+  .sessions{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .srow{grid-template-columns:22px 14px minmax(0,1fr) 38px}
+  .srow .b{display:none}
+}
+/* copy link */
+.top-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.copybtn{min-height:40px;padding:0 16px;border-radius:20px;border:1px solid var(--moss);background:var(--moss);color:var(--on-moss);font:inherit;font-size:13px;font-weight:500;cursor:pointer}
+.copybtn.small{min-height:30px;padding:0 10px;border-radius:15px;background:transparent;color:var(--moss);font-size:12px}
+.copybtn.done{background:var(--moss-soft);color:var(--moss-ink);border-color:var(--moss-soft)}
+.copy-fallback{width:100%;max-width:360px;font:inherit;font-size:12px;padding:6px 10px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.site-url{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px}
+.site-url code{font-family:inherit;padding:4px 10px;border-radius:8px;background:var(--surface);color:var(--ink);user-select:all;overflow-wrap:anywhere}
+@media (max-width:600px){ .top-right{align-items:flex-start} }
+/* plain list */
+.list{padding-top:12px}
+.day{margin:24px 0 4px;font-size:14px;font-weight:700;color:var(--ink-2);padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.li{display:grid;grid-template-columns:52px 172px minmax(0,1fr) auto;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.li-time{font-size:14px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;padding-top:2px}
+.li-src{display:flex;flex-direction:column;gap:2px;font-size:13px;min-width:0;padding-top:2px}
+.li-src .srcbadge{overflow-wrap:anywhere}
+.li-src span.sub{color:var(--muted);font-size:12px}
+.li-main{min-width:0;display:flex;flex-direction:column;gap:4px}
+.li-main h3{margin:0;font-size:17px;font-weight:700;line-height:1.6}
+.li-main h3 a{color:var(--ink);text-decoration:none}
+.li-main h3 a:hover{text-decoration:underline;text-underline-offset:4px}
+.li-main p{margin:0;font-size:14px;line-height:1.75;color:var(--ink-2)}
+.li-main .teamtags{padding-top:4px}
+.li-go{font-size:13px;white-space:nowrap;padding-top:3px}
+@media (max-width:700px){
+  .li{grid-template-columns:44px minmax(0,1fr);gap:4px 12px}
+  .li-src{grid-column:2;flex-direction:row;flex-wrap:wrap;gap:4px 10px;padding-top:0}
+  .li-main{grid-column:2}
+  .li-go{grid-column:2}
+  .li-time{grid-row:1 / span 2}
+}
+/* teams */
+.teamtags{display:flex;flex-wrap:wrap;gap:6px}
+.teamtag{display:inline-flex;align-items:center;gap:7px;min-height:32px;padding:0 12px 0 8px;border-radius:16px;border:1px solid var(--chip-line);background:var(--paper);color:var(--ink-2);font:inherit;font-size:12.5px;font-weight:500;cursor:pointer}
+.teamtag:hover{border-color:var(--ink-2)}
+.teamtag[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tdot{width:14px;height:14px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--t1) 0 50%,var(--t2) 50% 100%);box-shadow:0 0 0 1px var(--line)}
+.teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;padding-top:28px;align-items:start}
+.team{background:var(--surface);border-radius:26px;overflow:hidden;scroll-margin-top:16px}
+.team-band{height:10px;background:linear-gradient(90deg,var(--t1) 0 70%,var(--t2) 70% 100%)}
+.team-in{padding:18px 22px 12px}
+.team-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.team-head h3{margin:0;font-family:var(--serif);font-weight:700;font-size:22px}
+.team-head .en{font-family:var(--latin);font-size:14px;color:var(--muted)}
+.team-facts{display:flex;flex-wrap:wrap;gap:4px 14px;padding:8px 0 12px;font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--line-soft)}
+.team-facts b{color:var(--ink-2);font-weight:500}
+.team .none{margin:0;padding:14px 0 8px;font-size:13px;color:var(--muted)}
+.team-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding-top:14px;font-size:13px;color:var(--muted)}
+.clear{min-height:32px;padding:0 12px;border-radius:16px;border:1px solid var(--chip-line);background:transparent;color:var(--ink-2);font:inherit;font-size:12.5px;cursor:pointer}
+.more{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);padding-top:14px}
+.mini{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--line-soft);align-items:start}
+.mini:last-child{border-bottom:0}
+.mini-art{width:64px;height:64px;border-radius:16px;background:var(--cs,var(--paper));display:flex;align-items:center;justify-content:center;padding:8px;text-decoration:none}
+.mini-art svg{width:100%;height:100%}
+.mini-art .catword{font-size:12px;letter-spacing:.04em;text-align:center;line-height:1.3}
+.mini h4{margin:0 0 4px;font-family:var(--serif);font-weight:700;font-size:15.5px;line-height:1.55}
+.mini h4 a{color:var(--ink);text-decoration:none}
+.mini h4 a:hover{text-decoration:underline;text-underline-offset:4px}
+.mini .card-meta{font-size:12px}
+.empty{padding:40px 0;color:var(--muted)}
+
+/* info */
+.info .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;padding-block:72px 72px}
+.panel{background:var(--surface);border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.panel.outline{background:transparent;border:1px solid var(--line)}
+.panel h2{margin:0;font-family:var(--serif);font-weight:700;font-size:19px}
+.panel p{margin:0;font-size:14px;line-height:1.9;color:var(--ink-2)}
+.bar{display:grid;grid-template-columns:92px minmax(0,1fr) 22px;gap:12px;align-items:center;font-size:13px}
+.bar-track{height:6px;border-radius:3px;background:var(--line-soft)}
+.bar-fill{height:6px;border-radius:3px;background:var(--moss)}
+.bar .num{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.panel.moss{background:var(--moss)}
+.panel.moss h2,.panel.moss p{color:var(--on-moss)}
+
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-block:40px;font-size:13px;color:var(--muted)}
+.foot-brand{display:flex;align-items:center;gap:16px}
+.foot-brand svg{width:96px;height:96px;flex-shrink:0}
+.foot-brand strong{display:block;font-family:var(--logo);font-weight:600;font-size:21px;color:var(--ink)}
+.foot-note{max-width:40em;margin:0;line-height:1.8}
+
+.stamp-ring{fill:none;stroke:var(--moss)}
+.stamp-text{fill:var(--moss);font-family:var(--sans);font-weight:700}
+.mark-line{fill:none;stroke:var(--ink);stroke-linecap:round;stroke-linejoin:round}
+.leaf{fill:var(--clay)}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:32px 44px}
+  .hero-art{order:-1}
+  .hero-art .plate{max-width:340px}
+}
+@media (max-width:600px){
+  .grid{grid-template-columns:1fr;gap:32px}
+  .groups{grid-template-columns:1fr}
+  .filters{gap:6px}
+  .filters button{padding:0 13px;font-size:13px}
+  .status .txt-long{display:none}
+  .seg button{padding:0 14px}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="F1 Grid Walk ホーム">
+      <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg>
+      <span class="brand-words"><span class="brand-f1">F1</span><span class="brand-name">Grid Walk</span></span>
+    </a>
+    <div class="top-right">
+    <button type="button" class="copybtn" id="copy-site">このサイトのリンクをコピー</button>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span><span class="txt-long">朝と夕方の1日2回更新 · </span><span id="updated">読み込み中…</span></span></div>
+    </div>
+  </div>
+</header>
+<nav class="jump" aria-label="ページ内の移動">
+  <div class="wrap">
+    <a href="#raceweek">今週のグランプリ</a>
+    <a href="#standings">ランキング</a>
+    <a href="#calendar">カレンダー</a>
+    <a href="#news">ニュース</a>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-text" id="hero">
+        <div class="chips"><span class="chip-feature">今日の一本</span></div>
+        <h1 id="hero-title">世界のF1ニュースを読み込んでいます</h1>
+      </div>
+      <div class="hero-art" id="hero-art"><div class="plate"></div></div>
+    </div>
+  </section>
+
+  <section class="weekend" id="raceweek" aria-label="今週のグランプリとランキング" hidden>
+    <div class="wrap">
+      <div class="wk">
+        <div class="wk-main" id="wk-main"></div>
+        <div class="wk-side">
+          <div class="stand" id="standings"></div>
+        </div>
+      </div>
+      <div class="cal-head">
+        <h2>2026年のカレンダー</h2>
+        <span class="count" id="cal-note"></span>
+      </div>
+      <div class="cal" id="calendar"></div>
+    </div>
+  </section>
+
+  <section id="news" aria-label="記事一覧">
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="toolbar-row">
+          <div>
+            <h2>世界のF1ニュース</h2>
+            <span class="count" id="count"></span>
+          </div>
+          <div class="seg" role="group" aria-label="並べ方">
+            <button type="button" id="view-list" aria-pressed="true">一覧</button>
+            <button type="button" id="view-source" aria-pressed="false">媒体別</button>
+            <button type="button" id="view-team" aria-pressed="false">チーム別</button>
+            <button type="button" id="view-latest" aria-pressed="false">新着順</button>
+          </div>
+        </div>
+        <div class="filters" role="group" aria-label="原文の言語で絞り込む" id="filters"></div>
+        <div class="teamtags" role="group" aria-label="チームで絞り込む" id="teamfilter"></div>
+      </div>
+      <div id="feed"></div>
+    </div>
+  </section>
+
+  <section class="info" aria-label="このサイトについて">
+    <div class="wrap">
+      <div class="panel">
+        <h2>今日の原文の言語</h2>
+        <div id="bars" style="display:flex;flex-direction:column;gap:12px"></div>
+      </div>
+      <div class="panel outline">
+        <h2>翻訳について</h2>
+        <p>載せているのは、登録や購読をしなくても無料で全文を読める記事だけです。見出しは日本語に訳し、概要は各記事の要点を短くまとめたものです。本文は、書いた人の媒体でどうぞ。すべての記事に原題と原文へのリンクを添えています。コース図は記事に関係するサーキットのレイアウトです。</p>
+      </div>
+      <div class="panel moss">
+        <h2>朝と夕方、世界のグリッドをひと歩き。</h2>
+        <p>朝7時ごろには夜のうちにヨーロッパで出た記事を、夕方7時ごろには日中の記事をまとめて更新します。時刻はすべて日本時間です。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">
+      <svg viewBox="0 0 240 240" role="img" aria-label="F1 Grid Walk ロゴ"><defs><path id="ring" d="M120 120m-88 0a88 88 0 1 1 176 0a88 88 0 1 1 -176 0"></path></defs><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="3"></circle><circle class="stamp-ring" cx="120" cy="120" r="70" stroke-width="2"></circle><text class="stamp-text" font-size="15"><textPath href="#ring" textLength="548" lengthAdjust="spacing">F1 GRID WALK · WORLD F1 NEWS IN JAPANESE · </textPath></text><g transform="translate(88 88)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="3.6"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="3.6"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg>
+      <div><strong>F1 Grid Walk</strong>世界のF1を、日本語で。</div>
+    </div>
+    <div class="site-url"><span>このサイトのアドレス</span><code id="site-url-text">https://farpaz1888.github.io/gridwalk/</code></div>
+    <p class="foot-note">記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。チーム名に添えた色はサイト独自の配色で、各チームのロゴやデザインではありません。コース図のデータ: bacinger/f1-circuits（MIT License）。</p>
+  </div>
+</footer>
+
+<script type="application/json" id="snapshot">{"articles":{"updatedAt":"2026-09-26T06:30:00+09:00","articles":[{"id":"nl-rn365-russell-baku-pole","featured":true,"lang":"nl","region":"オランダ","source":"RacingNews365 NL","cat":"予選","title":"ラッセルがバクーで他を圧倒。2番手に0.8秒差のポールポジション","summary":"アゼルバイジャンGP予選で、メルセデスのラッセルが2番手ルクレールに約0.8秒の差をつけてポールを獲得。長いストレートでのエネルギー管理と、パワーユニットの使い方が決め手になったと分析している。フェルスタッペンはエンジンの不調で8番手。","orig":"Zo blies Russell de voltallige F1-concurrentie weg in Baku","url":"https://racingnews365.nl/zo-blies-russell-de-voltallige-f1-concurrentie-weg-in-baku","published":"2026-09-25T22:00:00+02:00","circuit":"baku","teams":["mercedes","ferrari","redbull"]},{"id":"es-motorsport-parrilla-baku","lang":"es","region":"スペイン","source":"Motorsport.com España","cat":"決勝","title":"ペナルティ適用後のバクー決勝グリッド。ランキング首位のアントネッリは16番手から","summary":"ポールはラッセル、2番手ルクレール、3番手ピアストリ。サインツは黄旗区間での減速不足で5グリッド、ペレスはピアストリの走行妨害で3グリッドの降格。首位アントネッリはQ1でクラッシュし後方からの追い上げになる。","orig":"Parrilla de la F1 en Bakú tras las sanciones (filas y posiciones): el líder, 16º","url":"https://es.motorsport.com/f1/news/parrilla-salida-baku-2026-azerbaiyan-carrera/10858867/","published":"2026-09-26T00:30:00+02:00","circuit":"baku","teams":["mercedes","williams","cadillac"]},{"id":"it-f1it-mercedes-devastante","lang":"it","region":"イタリア","source":"Formula1.it","cat":"分析","title":"メルセデスの圧倒的な速さ。フェラーリとマクラーレンを黙らせたデータ","summary":"ラッセルは2位と3位に0.8秒差をつけてポールを獲得した。しかも使い込んだタイヤと寿命間近のパワーユニットでの記録で、決勝ではさらに差が開くかもしれないと警戒を促している。","orig":"Mercedes devastante: il dato disarma Ferrari e McLaren","url":"https://www.formula1.it/news/32825/1/mercedes-devastante-il-dato-disarma-ferrari-e-mclaren","published":"2026-09-25T20:00:00+02:00","circuit":"baku","teams":["mercedes","ferrari","mclaren"]},{"id":"fr-nextgen-verstappen-desastre","lang":"fr","region":"フランス","source":"Nextgen-Auto","cat":"ドライバー","title":"「完全な大惨事」フェルスタッペン、Q3を台無しにしたエンジントラブルを明かす","summary":"FP3では最速だったフェルスタッペン。予選はQ1から内燃エンジンの不調が続いて次第に悪化し、チームメイトのアジャーより1周0.5秒ほど遅れて8番手に終わった。","orig":"« Un désastre complet » : Verstappen révèle le problème moteur qui a ruiné sa Q3","url":"https://motorsport.nextgen-auto.com/fr/formule-1/un-desastre-complet-verstappen-revele-le-probleme-moteur-qui-a-ruine-sa-q3,211750.html","published":"2026-09-25T20:47:00+02:00","circuit":"baku","teams":["redbull"]},{"id":"de-f1de-aston-honda-penalty","lang":"de","region":"ドイツ","source":"Formel1.de","cat":"チーム","title":"アストンマーティンの2台、ホンダの新パーツを投入して最後尾スタートへ","summary":"アロンソとストロールは、ホンダ製パワーユニットの新しい部品を入れて年間の使用上限を超え、大きなグリッド降格を受けた。チーム代表クラックは「最も競争力が低いと見込むレースで使う」と、狙って選んだ判断だと説明している。","orig":"Baku: Fernando Alonso und Stroll müssen ans Ende der Startaufstellung","url":"https://www.formel1.de/news/news/2026-09-24/baku-fernando-alonso-und-stroll-muessen-ans-ende-der-startaufstellung","published":"2026-09-24T19:00:00+02:00","circuit":"baku","teams":["astonmartin"]},{"id":"pt-gp-bortoleto-17","lang":"pt","region":"ブラジル","source":"Grande Prêmio","cat":"分析","title":"ボルトレートは17番手スタート。ロングランが示すアウディの挽回の見込み","summary":"Q1で敗退したボルトレート。決勝を想定した走行データでは、アウディは7番目に速いチームで、メルセデスとは1周約1.2秒差。トップ10を争うには1秒以上の改善が必要だとしている。","orig":"Bortoleto larga em 17º: o que ritmo de corrida indica para recuperação da Audi em Baku","url":"https://grandepremio.com/br/f1/bortoleto-larga-em-17o-o-que-ritmo-de-corrida-indica-para-recuperacao-da-audi-em-baku/","published":"2026-09-25T18:00:00-03:00","circuit":"baku","teams":["audi"]},{"id":"en-therace-final-races-imola","lang":"en","region":"イギリス","source":"The Race","cat":"カレンダー","title":"2026年シーズンの最終戦はどこで？ F1はイモラを予備会場として準備","summary":"中東情勢でバーレーンとサウジアラビアが中止になった今季。カタールとアブダビの開催を目指しつつ、イモラを代わりの会場として準備している。最終判断は、輸送の手配が間に合う10月中旬になる見込み。","orig":"F1's latest plan for where to end its 2026 season","url":"https://www.the-race.com/formula-1/whats-going-on-with-f1s-uncertain-final-2026-races/","published":"2026-09-24T12:00:00+01:00","circuit":"imola"},{"id":"en-rn365-baku-track-repairs","lang":"en","region":"イギリス","source":"RacingNews365","cat":"サーキット","title":"ドライバーの指摘を受け、バクーの路面を夜のうちに補修","summary":"木曜の走行で、暑さのためにターン7の路面の表層が剥がれかけていた。FP2後のブリーフィングでドライバーが問題を指摘し、夜間に補修。金曜朝のF2スプリントは問題なく行われた。","orig":"Baku track repairs made overnight after F1 drivers complain","url":"https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain","published":"2026-09-25T08:45:00+01:00","circuit":"baku"},{"id":"en-rn365-mclaren-upgrade","lang":"en","region":"イギリス","source":"RacingNews365","cat":"テクニカル","title":"マクラーレン、最大の弱点に狙いを定めた大胆なアップデート","summary":"サイドポッドを作り直し、ラジエーターなどへ空気を送るダクトの配置を変更。冷却性能を保ったまま空気抵抗を減らし、MCL40が苦しんできた直線スピードの不足を補う狙い。","orig":"Radical McLaren upgrade targets its biggest weakness","url":"https://racingnews365.com/radical-mclaren-upgrade-targets-its-biggest-weakness","published":"2026-09-25T07:10:00+01:00","circuit":"baku","teams":["mclaren"]},{"id":"de-f1de-cadillac-hires","lang":"de","region":"ドイツ","source":"Formel1.de","cat":"チーム","title":"キャデラック、技術陣を強化。経験豊富なエンジニア3人を獲得","summary":"レッドブルでチーフデザイナーを務めたクレイグ・スキナーらが加入する。チーム代表ブドコウスキーは「技術面での決定的な一歩」とコメント。前所属チームとの契約の関係で、合流は数か月後になる見込み。","orig":"Führungsebene verstärkt: Cadillac gibt drei wichtige Verpflichtungen bekannt","url":"https://www.formel1.de/news/news/2026-09-25/fuehrungsebene-verstaerkt-cadillac-gibt-drei-wichtige-verpflichtungen-bekannt","published":"2026-09-25T07:40:00+02:00","teams":["cadillac"]},{"id":"de-f1de-chadwick-williams","lang":"de","region":"ドイツ","source":"Formel1.de","cat":"ドライバー","title":"「人生で最高の日」ジェイミー・チャドウィックがウィリアムズのF1マシンをテスト","summary":"Wシリーズで3度王者になったチャドウィックが、ポルトガルのポルティマオでウィリアムズFW47を32周走行した。チーム代表ヴァウルズも、彼女のフィードバックを高く評価している。","orig":"\"Bester Tag meines Lebens\": Jamie Chadwick testet Williams-F1-Auto","url":"https://www.formel1.de/news/news/2026-09-24/bester-tag-meines-lebens-jamie-chadwick-testet-williams-f1-auto","published":"2026-09-24T20:44:00+02:00","circuit":"portimao","teams":["williams"]},{"id":"de-f1de-schumacher-94","lang":"de","region":"ドイツ","source":"Formel1.de","cat":"カルチャー","title":"Netflix『Schumacher '94』を検証。描いたものと、足りないもの","summary":"シューマッハが初めて王者になった1994年を追うドキュメンタリー。イモラの悲劇のあとの葛藤は丁寧に描く一方、シーズンの論争への踏み込みや、デイモン・ヒルらライバル側の視点が欠けていると指摘している。","orig":"\"Schumacher '94\" im Check: Was die Netflix-Doku zeigt - und was ihr fehlt","url":"https://www.formel1.de/news/news/2026-09-25/schumacher-94-im-check-was-die-netflix-doku-zeigt-und-was-ihr-fehlt","published":"2026-09-25T06:12:00+02:00"}]},"circuits":{"credit":"Circuit layouts: bacinger/f1-circuits (MIT License)","circuits":{"baku":{"name":"バクー市街地コース","gp":"アゼルバイジャンGP","path":"M87.8 34.0 L94.4 31.1 L94.7 30.9 L95.0 30.4 L95.0 30.1 L94.9 29.5 L93.5 26.0 L91.3 21.6 L89.4 17.4 L89.1 17.2 L88.7 17.1 L82.4 19.6 L74.7 22.6 L64.2 27.3 L55.1 31.5 L54.5 32.1 L54.5 33.0 L57.5 40.7 L57.5 41.3 L57.1 41.8 L51.9 44.2 L49.0 45.8 L45.0 48.3 L44.8 48.7 L44.9 49.1 L45.6 50.6 L45.5 51.0 L45.2 51.3 L43.7 52.6 L34.8 59.6 L33.2 60.9 L32.6 61.4 L32.0 61.3 L31.4 60.8 L29.1 53.8 L28.8 53.5 L28.3 53.4 L27.8 53.4 L26.9 52.9 L26.4 52.7 L25.8 52.8 L25.3 52.8 L24.7 52.6 L24.5 52.1 L23.9 50.5 L23.7 50.2 L23.4 50.0 L22.8 49.9 L19.1 51.2 L13.0 54.2 L9.1 56.6 L8.3 57.2 L7.7 58.0 L7.1 59.2 L5.1 65.8 L5.0 66.7 L5.6 75.9 L5.8 76.5 L6.3 77.0 L14.5 81.3 L16.7 82.3 L18.0 82.8 L18.7 82.9 L19.5 82.8 L20.1 82.4 L20.5 81.9 L22.9 77.4 L23.5 76.3 L24.1 75.5 L31.1 69.1 L31.7 68.3 L32.0 67.5 L32.6 63.3 L32.9 62.5 L33.4 61.7 L34.0 61.2 L44.1 53.4 L45.5 52.5 L47.0 51.6 L48.4 50.9 L53.0 49.0 L57.0 47.2 L66.9 42.9 L70.9 41.1 L81.1 36.8 L87.8 34.0Z","start":[87.8,34.0]},"suzuka":{"name":"鈴鹿サーキット","gp":"日本GP","path":"M81.9 51.6 L87.4 58.3 L93.9 66.3 L94.5 67.1 L94.8 68.0 L95.0 68.8 L95.0 69.6 L94.9 70.2 L94.1 72.5 L93.8 73.1 L93.2 73.6 L92.8 73.8 L92.0 74.0 L91.3 74.0 L90.5 73.7 L89.8 73.2 L89.0 72.0 L85.2 66.1 L84.5 65.5 L83.8 65.3 L82.9 65.2 L80.9 65.1 L79.9 64.9 L79.2 64.4 L78.7 63.7 L78.4 63.1 L77.5 59.7 L77.2 58.8 L76.6 58.1 L75.9 57.6 L75.0 57.2 L74.1 57.0 L71.8 57.0 L70.8 56.8 L70.0 56.4 L69.3 55.8 L68.7 55.0 L68.4 54.2 L68.2 53.4 L68.2 52.7 L68.4 52.0 L69.5 48.9 L69.7 48.3 L69.7 47.5 L69.6 46.9 L69.3 46.2 L68.8 45.5 L68.0 44.9 L67.0 44.3 L65.7 43.7 L64.7 43.3 L63.9 43.0 L62.7 42.9 L61.4 42.8 L60.4 42.9 L59.6 43.1 L58.9 43.4 L57.8 43.8 L56.7 44.5 L55.4 45.5 L54.4 46.6 L50.2 51.7 L50.0 52.0 L49.3 52.2 L43.1 52.7 L42.7 52.7 L42.3 52.4 L42.2 51.9 L42.1 51.5 L41.1 47.6 L39.9 40.4 L39.6 39.1 L39.6 38.4 L39.7 37.7 L39.8 37.0 L40.1 36.2 L40.4 35.5 L41.4 33.2 L41.5 32.8 L41.4 32.5 L41.2 32.2 L40.9 32.0 L40.5 31.9 L40.2 31.9 L39.8 32.2 L39.4 32.7 L38.0 35.2 L36.8 37.1 L36.0 38.2 L35.4 38.9 L34.8 39.4 L33.9 40.2 L32.9 40.7 L31.9 41.0 L30.1 41.3 L28.3 41.3 L27.1 41.2 L25.5 40.9 L23.8 40.4 L22.0 39.7 L20.8 39.2 L19.7 38.6 L18.8 37.8 L17.7 36.9 L16.7 35.8 L16.0 34.7 L15.4 33.6 L13.8 29.5 L13.0 27.7 L12.6 27.0 L12.0 26.5 L11.3 26.1 L10.4 26.0 L9.3 26.0 L8.3 26.1 L7.4 26.4 L6.4 26.7 L5.6 27.3 L5.2 28.1 L5.0 28.8 L5.1 29.7 L5.3 30.4 L5.6 31.1 L6.1 31.7 L7.1 32.6 L8.4 33.7 L9.7 34.8 L11.3 36.0 L13.1 37.3 L15.0 38.5 L17.1 39.5 L19.0 40.4 L20.9 41.2 L24.0 42.2 L27.5 43.6 L31.6 45.0 L35.8 46.3 L38.6 47.3 L42.3 48.8 L43.2 49.0 L44.0 49.0 L44.9 48.8 L45.8 48.6 L47.3 48.0 L48.8 47.3 L50.0 46.5 L51.2 45.5 L53.6 43.4 L56.7 40.4 L57.6 39.6 L58.3 39.2 L58.8 38.8 L59.3 38.6 L59.5 38.6 L59.8 38.7 L60.5 39.3 L61.0 39.8 L61.4 39.9 L61.8 39.8 L62.3 39.5 L63.1 38.8 L63.9 38.2 L64.9 37.8 L66.1 37.7 L67.2 37.7 L68.4 38.0 L69.5 38.4 L70.5 38.9 L71.7 39.7 L72.9 40.8 L74.0 42.0 L81.9 51.6Z","start":[81.9,51.6]},"monza":{"name":"モンツァ","gp":"イタリアGP","path":"M25.6 62.2 L27.1 44.4 L27.8 36.9 L27.9 36.6 L28.1 36.4 L28.4 36.4 L28.7 36.4 L29.0 36.4 L29.3 36.4 L29.5 36.3 L29.6 36.1 L29.7 35.9 L29.7 35.6 L28.6 31.6 L28.5 30.5 L28.4 29.5 L28.5 28.4 L28.9 23.1 L29.0 22.2 L29.2 21.4 L29.5 20.5 L29.9 19.6 L30.3 18.7 L31.0 17.7 L31.6 16.8 L32.5 15.9 L33.5 15.0 L34.6 14.2 L35.8 13.5 L37.1 12.9 L38.4 12.4 L39.9 12.0 L41.5 11.7 L43.2 11.6 L49.7 11.0 L57.8 10.5 L58.2 10.5 L58.5 10.4 L58.7 10.2 L59.0 9.2 L59.1 9.0 L59.3 8.8 L59.6 8.7 L60.7 8.5 L61.9 8.2 L63.5 7.7 L71.0 5.2 L71.7 5.0 L72.3 5.0 L72.9 5.1 L73.3 5.3 L73.7 5.5 L74.1 5.8 L74.6 6.3 L74.8 6.7 L75.0 7.2 L75.1 7.8 L75.5 11.3 L76.1 17.4 L76.1 18.0 L76.0 18.3 L75.8 18.6 L75.6 18.9 L75.1 19.2 L70.2 21.8 L66.2 24.1 L63.7 25.4 L62.5 26.1 L61.2 27.1 L60.2 27.8 L59.3 28.6 L55.0 32.3 L51.9 35.1 L45.4 40.8 L41.4 44.3 L40.9 44.8 L40.7 45.2 L40.6 45.5 L40.6 46.0 L40.8 46.9 L40.8 47.4 L40.8 48.1 L40.8 48.5 L40.6 49.0 L40.4 49.6 L40.0 50.2 L39.5 50.8 L38.9 51.3 L38.4 51.6 L38.2 51.9 L38.0 52.3 L37.8 53.0 L37.4 56.3 L37.0 59.8 L33.7 91.2 L33.6 92.3 L33.5 92.9 L33.2 93.4 L32.8 93.8 L32.4 94.2 L31.8 94.6 L31.2 94.9 L30.4 95.0 L29.8 95.0 L29.2 94.8 L28.5 94.6 L27.8 94.3 L27.3 93.9 L26.8 93.5 L26.1 92.7 L25.6 92.1 L25.2 91.4 L24.9 90.6 L24.6 89.6 L24.3 88.7 L24.2 87.9 L24.1 86.7 L24.0 85.5 L24.0 84.3 L24.0 82.0 L23.9 80.0 L24.0 77.9 L24.2 75.0 L25.2 66.0 L25.6 62.2Z","start":[25.6,62.2]},"imola":{"name":"イモラ","gp":"イモラ","path":"M62.1 32.2 L60.5 32.2 L50.5 30.0 L47.0 29.6 L44.9 29.6 L34.5 30.5 L29.4 31.8 L28.8 32.2 L28.5 32.6 L28.4 32.9 L28.0 34.5 L27.8 35.0 L27.1 35.5 L22.4 37.9 L21.7 38.7 L14.1 57.4 L14.1 57.9 L14.1 58.5 L14.9 61.5 L14.9 61.9 L14.6 62.5 L14.3 62.9 L5.4 70.5 L5.1 71.0 L5.0 71.5 L5.1 72.1 L5.4 72.7 L5.9 73.1 L6.4 73.3 L7.1 73.2 L21.6 71.4 L23.2 71.3 L25.6 71.4 L27.4 71.6 L29.8 72.1 L32.3 72.6 L33.5 72.8 L34.4 72.6 L35.0 72.3 L35.8 71.6 L36.6 70.1 L37.8 67.1 L38.1 65.8 L38.1 64.2 L37.9 62.7 L36.1 54.4 L36.2 53.8 L36.4 53.2 L37.4 51.6 L38.8 49.5 L39.2 49.3 L39.7 49.3 L40.1 49.4 L42.1 50.2 L42.7 50.3 L63.5 50.2 L63.8 50.3 L64.0 50.9 L64.2 51.5 L64.5 51.6 L64.9 51.6 L73.2 48.2 L74.3 47.6 L77.7 45.2 L79.7 43.4 L81.7 41.5 L86.3 36.8 L87.3 36.2 L88.3 35.7 L94.5 32.9 L94.9 32.5 L95.0 31.8 L94.9 31.2 L93.0 27.3 L92.6 26.9 L92.1 26.8 L91.5 26.7 L90.9 26.9 L82.7 30.0 L79.7 31.1 L78.1 31.7 L76.7 32.0 L75.8 32.2 L62.1 32.2Z","start":[62.1,32.2]},"spa":{"name":"スパ・フランコルシャン","gp":"ベルギーGP","path":"M39.0 14.5 L34.0 5.9 L34.0 5.5 L34.2 5.2 L34.7 5.0 L35.2 5.1 L36.8 6.0 L40.8 7.9 L42.7 9.0 L44.6 10.5 L46.4 12.0 L47.8 13.5 L55.4 22.5 L55.9 23.0 L56.8 23.6 L58.5 24.7 L59.2 25.4 L59.8 26.3 L60.2 27.2 L60.4 28.2 L60.6 30.0 L60.8 30.6 L61.0 31.2 L61.4 32.0 L65.1 38.0 L67.5 41.8 L68.2 43.2 L68.6 44.2 L69.1 45.9 L72.1 56.4 L76.6 72.2 L77.7 76.0 L77.8 76.6 L77.7 77.3 L77.3 77.8 L76.8 78.3 L76.1 78.6 L75.7 79.0 L75.4 79.5 L75.2 80.2 L75.2 80.9 L76.1 85.0 L76.1 85.7 L76.0 86.3 L75.5 87.0 L74.9 87.5 L64.5 94.7 L63.8 95.0 L63.1 95.0 L62.4 94.8 L61.9 94.4 L61.5 93.8 L61.3 93.2 L61.3 92.6 L61.5 92.0 L61.8 91.3 L62.4 90.9 L66.9 88.1 L67.4 87.6 L67.7 87.1 L67.8 86.5 L67.8 85.8 L65.9 80.2 L65.3 78.0 L63.9 71.0 L63.3 67.0 L63.1 66.3 L62.8 65.6 L62.4 65.0 L61.7 64.3 L61.0 63.8 L60.2 63.5 L59.3 63.4 L56.6 63.2 L55.6 63.3 L54.6 63.6 L53.6 64.0 L52.9 64.5 L51.9 65.4 L51.4 66.2 L50.7 67.4 L48.1 73.9 L45.8 79.6 L45.3 80.5 L44.7 81.1 L43.9 81.6 L43.1 81.8 L42.4 81.8 L41.6 81.7 L41.0 81.4 L39.9 80.7 L39.2 80.4 L38.4 80.3 L37.6 80.4 L36.8 80.6 L36.1 81.1 L35.7 81.6 L35.2 82.3 L31.0 88.9 L30.5 89.3 L30.0 89.6 L29.4 89.7 L28.7 89.7 L28.1 89.4 L25.3 87.3 L23.6 86.1 L23.2 85.6 L22.7 84.9 L22.5 84.2 L22.3 83.5 L22.2 82.7 L22.4 81.8 L22.7 81.0 L23.0 79.9 L23.6 78.4 L24.6 76.6 L25.7 75.1 L27.3 73.2 L30.1 70.6 L31.7 69.3 L33.1 68.5 L40.1 64.8 L41.1 64.2 L42.1 63.4 L43.0 62.6 L43.8 61.7 L44.5 60.7 L45.4 58.9 L46.2 57.2 L48.0 53.3 L48.3 52.5 L48.5 51.6 L48.5 50.4 L48.3 49.4 L47.3 46.7 L46.1 43.8 L44.8 40.1 L44.4 38.7 L44.1 37.1 L43.9 35.6 L43.8 34.3 L43.4 28.4 L43.4 28.0 L43.7 27.7 L44.0 27.6 L44.7 27.7 L45.3 27.7 L45.7 27.6 L46.0 27.3 L46.1 26.9 L45.9 26.4 L43.7 22.8 L39.0 14.5Z","start":[39.0,14.5]},"silverstone":{"name":"シルバーストン","gp":"イギリスGP","path":"M55.1 5.9 L64.9 5.0 L66.6 5.1 L68.0 5.5 L68.9 6.1 L69.9 7.3 L70.5 8.7 L71.1 10.4 L71.8 13.4 L72.6 16.3 L73.0 19.5 L73.2 21.5 L73.5 26.3 L73.6 30.5 L73.8 32.1 L74.4 33.6 L75.5 35.8 L76.0 37.0 L76.0 37.9 L75.8 38.9 L74.1 43.3 L74.0 45.1 L74.3 46.3 L74.9 47.4 L76.5 49.7 L76.9 50.7 L76.9 52.0 L76.7 53.1 L75.7 54.3 L74.4 55.3 L72.7 56.3 L71.3 57.1 L70.3 58.0 L69.2 59.8 L67.1 63.9 L55.2 85.8 L51.3 91.9 L50.1 93.4 L49.3 94.2 L48.2 94.7 L47.1 95.0 L46.1 94.9 L45.0 94.7 L44.1 94.3 L43.3 93.6 L42.6 92.5 L42.4 92.1 L41.3 89.8 L40.1 87.8 L38.8 86.1 L38.0 85.0 L37.0 83.9 L35.3 82.2 L31.4 77.6 L31.0 77.3 L30.5 77.3 L30.0 77.5 L28.4 79.0 L27.8 79.2 L27.3 79.1 L26.8 78.9 L26.1 78.3 L25.4 77.6 L24.6 76.4 L23.9 75.2 L23.5 73.9 L23.1 72.5 L23.1 71.9 L23.2 71.3 L23.5 70.8 L24.2 69.6 L36.0 54.3 L38.6 50.9 L39.1 50.3 L40.1 49.6 L41.3 49.4 L42.2 49.3 L43.5 49.4 L47.1 50.0 L48.3 50.1 L49.5 50.2 L50.9 50.0 L52.2 49.7 L53.3 49.0 L60.8 43.1 L61.3 42.8 L61.9 42.5 L62.5 42.4 L63.0 42.6 L63.4 43.0 L63.7 43.4 L64.9 47.9 L65.3 48.5 L65.8 48.9 L66.5 48.9 L67.1 48.6 L67.6 48.0 L67.8 47.5 L68.4 46.0 L68.8 44.8 L69.1 43.6 L69.3 42.4 L69.4 41.1 L69.3 39.8 L69.0 39.3 L68.4 38.5 L44.2 16.4 L43.5 16.0 L42.6 15.5 L41.5 15.4 L40.3 15.5 L39.1 16.1 L38.7 16.6 L38.4 17.4 L37.9 21.4 L37.6 22.2 L37.0 22.9 L36.1 23.3 L35.2 23.5 L34.1 23.2 L33.3 22.7 L32.8 22.1 L32.5 21.3 L32.4 20.6 L32.6 19.7 L33.2 18.4 L36.3 12.2 L37.3 11.0 L38.3 10.0 L39.7 8.8 L40.8 8.0 L42.3 7.4 L43.5 7.0 L46.2 6.7 L55.1 5.9Z","start":[55.1,5.9]},"monaco":{"name":"モナコ市街地コース","gp":"モナコGP","path":"M60.4 22.6 L60.3 21.7 L60.5 20.8 L61.0 19.7 L61.5 18.9 L63.1 16.9 L71.1 6.0 L71.6 5.2 L72.5 5.0 L73.5 5.3 L74.2 5.9 L74.7 6.8 L74.8 7.8 L74.8 8.6 L74.9 9.3 L75.3 10.1 L75.8 10.8 L76.7 12.0 L77.3 13.2 L77.5 13.8 L77.8 14.2 L78.3 14.4 L78.9 14.2 L79.3 13.8 L79.4 13.2 L79.1 12.6 L78.4 12.1 L76.4 9.5 L76.1 8.8 L76.0 8.2 L76.2 7.7 L76.4 7.3 L77.4 6.8 L78.9 6.4 L79.8 6.1 L80.6 5.8 L81.8 5.3 L83.1 5.2 L83.7 5.6 L84.0 6.6 L83.7 12.8 L82.8 19.1 L81.8 23.1 L80.7 25.9 L78.9 29.2 L76.7 32.0 L73.6 35.4 L69.1 38.1 L66.5 39.4 L61.3 41.8 L57.9 43.0 L52.8 44.2 L49.5 44.7 L47.8 45.1 L47.5 45.6 L47.5 46.0 L47.4 46.5 L47.1 47.0 L46.4 47.3 L45.4 47.4 L44.2 46.8 L43.6 46.8 L34.4 48.0 L29.8 48.6 L25.7 49.3 L24.5 49.4 L23.7 49.6 L23.2 50.2 L22.3 51.9 L21.5 53.6 L21.0 55.2 L20.7 56.4 L20.4 58.5 L20.4 62.1 L20.4 62.9 L20.7 63.6 L21.2 64.1 L22.4 65.0 L23.1 65.7 L23.5 66.5 L23.6 67.6 L24.9 75.1 L25.2 76.4 L25.4 76.9 L25.3 77.4 L25.0 77.9 L24.3 78.4 L23.5 78.8 L23.3 79.3 L23.5 80.4 L24.3 82.8 L25.1 84.7 L25.9 86.1 L27.2 88.0 L28.9 89.7 L30.1 90.4 L31.5 91.1 L32.2 91.4 L32.5 91.8 L32.9 93.0 L32.8 93.6 L32.1 94.0 L29.4 94.7 L27.8 95.0 L26.8 95.0 L25.9 94.9 L25.3 94.4 L25.0 94.1 L25.0 93.2 L24.8 92.6 L24.5 91.7 L23.0 89.8 L21.8 88.0 L21.0 86.6 L20.0 84.0 L17.9 76.7 L17.3 74.4 L16.9 71.8 L16.4 68.2 L16.0 63.4 L16.0 60.3 L16.2 57.9 L16.4 55.5 L16.9 53.8 L17.4 52.2 L17.6 51.3 L17.8 50.4 L17.7 49.2 L17.7 48.4 L17.9 47.9 L18.6 47.6 L20.2 47.2 L21.6 47.2 L23.5 46.9 L26.2 46.6 L28.6 46.2 L34.6 44.4 L38.0 43.5 L41.1 43.0 L43.2 42.8 L44.9 42.2 L49.7 39.9 L51.8 39.1 L54.8 38.4 L57.4 38.0 L59.8 37.6 L61.2 37.1 L62.9 36.1 L64.3 34.6 L65.1 33.3 L65.5 31.9 L65.5 30.5 L65.2 29.2 L64.7 27.8 L64.0 26.4 L62.9 25.6 L61.9 24.6 L61.4 24.1 L60.9 23.7 L60.4 22.6Z","start":[60.4,22.6]},"zandvoort":{"name":"ザントフォールト","gp":"オランダGP","path":"M16.0 46.7 L26.1 22.3 L29.9 13.4 L30.8 12.4 L32.0 11.8 L33.2 11.6 L34.4 11.9 L35.5 12.7 L36.3 13.6 L36.7 14.8 L36.8 16.1 L35.7 18.7 L32.5 26.5 L31.4 30.1 L31.0 33.9 L31.2 37.5 L30.9 38.9 L30.1 39.9 L28.5 41.1 L26.9 41.8 L22.2 43.6 L21.0 44.5 L20.7 45.9 L20.6 47.1 L21.1 48.3 L22.0 49.2 L23.1 49.6 L24.9 49.6 L33.4 46.9 L37.4 46.1 L40.8 46.0 L43.8 46.3 L46.7 46.7 L48.8 47.4 L52.1 48.1 L55.2 48.3 L57.4 47.9 L60.0 47.2 L63.2 45.6 L66.9 43.2 L69.4 42.0 L71.7 41.3 L74.6 41.0 L77.0 41.1 L86.7 41.6 L88.9 42.2 L91.0 43.2 L92.5 44.5 L93.4 45.8 L94.4 47.4 L94.8 49.1 L95.0 51.0 L94.8 52.9 L94.3 54.7 L93.1 56.8 L88.6 62.9 L87.0 65.6 L83.3 73.7 L81.5 74.3 L79.3 74.5 L77.1 74.4 L74.6 74.0 L72.1 73.1 L69.3 71.8 L66.5 69.8 L64.8 68.0 L64.5 66.8 L64.8 65.6 L65.9 64.1 L67.4 63.1 L69.6 62.3 L73.4 61.7 L77.0 60.8 L80.4 59.5 L82.2 58.2 L82.9 56.6 L83.0 54.9 L82.4 53.3 L80.9 51.7 L79.5 51.2 L72.3 50.4 L65.1 50.4 L57.4 51.3 L50.9 52.9 L46.8 54.2 L42.4 55.9 L38.2 57.7 L34.7 59.7 L33.4 60.3 L32.5 60.1 L31.7 58.9 L30.8 57.2 L29.5 56.4 L27.9 56.4 L26.4 57.1 L25.6 58.2 L25.2 59.4 L25.6 61.9 L29.0 82.2 L29.1 83.6 L28.7 85.0 L28.1 86.1 L27.5 86.9 L26.0 87.9 L24.5 88.2 L17.8 88.4 L16.4 88.3 L14.4 88.0 L12.4 87.3 L10.7 86.5 L8.4 84.8 L7.0 82.8 L6.0 81.1 L5.2 78.9 L5.0 76.9 L5.2 73.6 L5.8 71.3 L15.5 47.9 L16.0 46.7Z","start":[16.0,46.7]},"austin":{"name":"サーキット・オブ・ジ・アメリカズ","gp":"アメリカGP","path":"M23.1 66.3 L31.2 72.8 L33.4 74.4 L35.2 75.4 L35.8 75.7 L36.1 75.8 L36.3 75.7 L36.6 75.6 L36.8 75.3 L36.8 75.1 L36.8 74.8 L35.0 69.7 L34.3 67.4 L34.1 66.7 L34.1 66.0 L34.1 65.3 L34.3 64.6 L34.5 63.8 L34.9 63.1 L35.3 62.4 L35.9 61.8 L36.6 61.3 L37.4 60.7 L42.2 57.8 L44.1 56.6 L44.5 56.2 L44.9 55.7 L45.2 55.3 L45.4 54.7 L45.6 54.2 L46.1 52.8 L46.5 52.3 L46.9 51.8 L47.5 51.4 L47.9 51.2 L49.0 50.8 L49.9 50.3 L50.4 49.9 L50.7 49.6 L51.0 49.0 L51.1 48.4 L51.3 47.4 L51.4 46.7 L51.5 45.9 L51.8 45.4 L52.0 44.9 L52.4 44.4 L52.8 43.9 L53.4 43.4 L54.1 42.9 L54.8 42.5 L55.6 42.1 L56.2 42.0 L56.8 42.0 L57.2 42.0 L58.0 42.2 L62.6 44.3 L63.1 44.5 L63.6 44.5 L63.9 44.4 L64.8 43.8 L65.9 42.9 L66.7 42.1 L67.5 41.1 L68.1 40.4 L68.6 39.9 L69.2 39.7 L69.7 39.6 L70.3 39.6 L71.0 39.8 L71.6 40.1 L72.0 40.5 L72.3 40.9 L72.5 41.2 L72.8 41.7 L73.1 42.0 L73.5 42.2 L73.9 42.2 L82.3 40.3 L82.8 40.2 L83.1 40.0 L83.4 39.7 L88.3 33.8 L92.6 28.6 L94.3 26.4 L94.9 25.2 L95.0 24.9 L94.9 24.6 L94.7 24.5 L94.5 24.3 L94.2 24.2 L93.9 24.2 L93.5 24.3 L84.5 27.2 L78.2 29.0 L71.3 30.6 L63.1 32.3 L57.9 33.1 L53.2 33.8 L39.1 35.4 L37.6 35.7 L37.4 35.8 L37.3 36.0 L37.3 36.3 L37.5 36.5 L38.4 37.6 L41.6 42.0 L43.0 44.2 L43.1 44.6 L43.0 45.1 L42.8 45.4 L42.5 45.7 L42.2 45.7 L41.6 45.8 L39.0 45.6 L38.7 45.5 L38.5 45.3 L38.3 45.0 L38.1 44.6 L37.5 43.2 L37.3 42.6 L37.0 42.1 L35.2 40.4 L35.0 40.2 L34.7 40.0 L34.4 40.0 L32.7 39.8 L32.4 39.8 L32.2 40.0 L32.0 40.2 L31.9 40.5 L32.0 40.9 L35.2 46.5 L36.6 49.0 L36.7 49.6 L36.6 50.3 L36.5 50.8 L36.4 51.4 L36.0 52.4 L35.5 53.5 L35.2 53.9 L34.6 54.3 L34.0 54.7 L31.3 55.9 L30.8 56.0 L30.3 56.0 L29.3 56.0 L28.3 55.8 L27.5 55.5 L26.5 55.1 L25.6 54.6 L25.0 54.2 L24.6 53.5 L21.6 49.2 L19.2 46.2 L18.9 45.9 L18.5 45.8 L18.0 45.7 L17.6 45.7 L17.0 45.9 L16.3 46.1 L15.7 46.3 L5.9 50.6 L5.3 51.0 L5.1 51.4 L5.0 51.8 L5.1 52.1 L5.3 52.3 L5.6 52.6 L10.8 56.7 L23.1 66.3Z","start":[23.1,66.3]},"miami":{"name":"マイアミ","gp":"マイアミGP","path":"M49.4 42.1 L61.7 49.8 L61.9 50.3 L61.8 50.9 L61.5 51.6 L58.8 53.5 L58.0 54.4 L57.8 56.0 L58.0 57.7 L57.8 59.7 L57.1 61.1 L54.8 63.0 L52.1 63.9 L50.3 64.3 L47.7 64.3 L45.7 64.0 L43.3 62.9 L31.2 55.7 L29.5 54.6 L28.6 54.5 L27.6 54.4 L26.6 54.5 L25.3 54.9 L24.2 55.5 L23.1 56.4 L21.9 57.2 L20.4 57.5 L19.0 57.3 L17.6 56.6 L16.2 55.4 L14.9 54.1 L13.5 53.4 L12.0 53.1 L10.3 53.5 L8.7 54.0 L7.3 54.6 L6.3 55.5 L5.4 57.0 L5.0 58.6 L5.0 59.9 L5.3 60.8 L5.8 61.4 L6.8 62.0 L8.0 62.0 L9.5 61.7 L11.1 61.7 L14.5 62.4 L20.7 63.6 L27.2 63.5 L37.0 63.0 L39.7 63.9 L43.1 65.1 L45.8 66.1 L49.4 67.2 L53.2 67.8 L57.0 67.9 L60.9 67.2 L64.6 66.0 L72.9 62.9 L77.7 61.1 L80.0 60.1 L86.0 56.9 L89.2 54.8 L89.8 54.0 L89.6 53.3 L89.0 52.7 L87.6 51.8 L86.5 51.0 L86.0 49.9 L85.9 48.8 L86.2 47.3 L87.0 46.6 L87.9 46.2 L90.7 46.3 L92.0 46.2 L92.6 45.8 L93.6 44.9 L95.0 42.3 L94.9 41.7 L94.2 41.5 L93.6 41.0 L93.6 40.0 L94.7 36.4 L94.6 35.7 L94.1 35.3 L91.2 35.1 L49.9 33.6 L16.9 32.1 L15.9 32.4 L15.7 33.1 L16.0 34.1 L17.2 35.1 L19.0 36.4 L20.9 37.5 L22.4 37.9 L23.8 37.7 L25.5 37.1 L29.4 35.3 L31.6 34.7 L34.3 34.5 L36.9 34.8 L39.5 35.9 L49.4 42.1Z","start":[49.4,42.1]},"lasvegas":{"name":"ラスベガス市街地コース","gp":"ラスベガスGP","path":"M72.5 84.9 L75.0 82.1 L75.5 81.5 L75.9 80.8 L76.0 80.0 L75.7 79.3 L75.2 78.9 L74.2 78.5 L73.3 78.4 L72.4 78.4 L71.6 78.7 L69.8 79.8 L68.2 81.4 L67.5 81.8 L66.1 82.2 L65.4 82.1 L64.0 81.7 L63.2 81.3 L62.5 80.7 L61.4 79.1 L60.9 77.8 L60.6 38.2 L60.8 37.6 L61.3 37.3 L69.4 37.5 L71.9 37.5 L73.2 37.2 L73.7 36.7 L75.1 35.3 L75.8 34.4 L76.3 33.4 L76.6 32.6 L76.8 31.4 L77.0 30.1 L76.9 29.3 L76.5 29.0 L75.3 28.9 L74.9 28.6 L74.5 28.1 L74.4 27.2 L74.5 26.6 L75.6 24.6 L75.8 24.1 L76.3 23.2 L76.1 22.3 L75.2 21.6 L73.5 21.4 L60.5 21.1 L55.8 20.4 L54.2 19.7 L52.5 17.9 L51.0 14.9 L48.7 9.5 L47.2 8.0 L45.7 6.9 L44.1 6.3 L41.7 5.6 L39.0 5.0 L38.6 5.1 L38.2 5.4 L37.9 6.3 L37.7 7.0 L34.8 12.5 L33.0 15.8 L32.1 17.5 L31.2 19.1 L29.5 22.0 L27.8 25.8 L26.9 28.7 L26.0 32.0 L25.3 34.4 L24.8 36.8 L24.4 39.2 L24.0 42.7 L23.9 44.8 L23.8 47.2 L23.8 53.8 L23.9 57.6 L23.9 60.5 L23.3 75.5 L23.2 83.2 L23.2 87.1 L23.0 91.7 L23.3 92.1 L23.6 92.2 L24.5 92.2 L25.1 92.4 L26.5 93.8 L27.8 94.5 L29.4 94.8 L36.6 95.0 L45.9 94.9 L53.6 94.9 L57.4 94.9 L60.4 94.5 L63.7 93.8 L64.5 93.5 L65.2 93.0 L65.7 92.5 L72.5 84.9Z","start":[72.5,84.9]},"mexico":{"name":"エルマノス・ロドリゲス","gp":"メキシコシティGP","path":"M21.4 18.8 L43.8 21.9 L51.0 22.8 L58.6 23.5 L62.3 24.0 L71.8 25.3 L88.3 27.8 L91.7 28.5 L92.3 28.7 L92.6 29.0 L92.8 29.4 L92.8 29.8 L92.2 33.9 L92.3 34.2 L92.5 34.6 L94.2 35.5 L94.7 35.8 L95.0 36.2 L95.0 36.6 L94.7 39.1 L94.1 41.4 L93.3 43.6 L92.3 45.6 L84.7 58.5 L75.6 72.8 L75.0 73.8 L74.9 74.4 L75.1 74.9 L75.3 75.2 L78.0 76.9 L78.3 77.2 L78.3 77.6 L78.2 77.9 L77.7 78.4 L72.6 82.2 L72.1 82.4 L71.7 82.5 L71.3 82.4 L70.4 81.8 L70.2 81.4 L70.2 80.6 L72.5 62.5 L72.5 61.9 L72.3 61.4 L71.9 61.0 L71.4 60.6 L68.7 58.9 L67.7 58.0 L67.1 57.4 L66.5 56.3 L65.9 54.7 L65.3 53.7 L64.6 53.0 L63.8 52.5 L62.8 52.1 L54.4 50.8 L53.5 50.5 L52.9 50.0 L52.6 49.7 L52.4 49.2 L51.3 45.9 L51.0 45.2 L50.4 44.6 L49.1 43.8 L42.9 40.4 L41.1 39.7 L38.5 39.1 L17.7 36.0 L17.3 35.9 L17.1 35.6 L16.9 35.2 L16.8 34.6 L16.5 29.3 L16.1 25.6 L15.9 25.2 L15.6 24.9 L15.2 24.7 L14.6 24.8 L14.1 25.3 L13.3 26.4 L12.9 26.7 L12.4 26.9 L11.8 26.9 L11.2 26.6 L10.4 26.2 L9.6 26.0 L6.1 25.6 L5.5 25.4 L5.3 25.2 L5.0 24.8 L5.0 24.3 L5.2 23.3 L5.7 22.0 L6.4 20.9 L7.4 19.5 L8.5 18.6 L9.9 17.9 L11.2 17.5 L12.5 17.5 L14.4 17.7 L21.4 18.8Z","start":[21.4,18.8]},"interlagos":{"name":"インテルラゴス","gp":"サンパウロGP","path":"M27.1 69.6 L32.1 89.1 L32.7 91.1 L33.2 92.3 L34.4 94.1 L35.0 94.6 L35.9 95.0 L36.8 95.0 L37.8 94.8 L38.3 94.5 L39.8 93.1 L41.4 91.4 L42.0 90.9 L42.8 90.7 L43.6 90.6 L44.7 91.0 L47.2 92.5 L49.1 93.3 L50.5 93.7 L51.9 93.8 L53.1 93.9 L54.8 93.7 L56.2 93.4 L57.9 92.8 L59.4 91.9 L61.0 90.7 L62.2 89.3 L63.2 87.9 L64.0 86.6 L64.6 85.1 L67.0 77.2 L68.0 73.3 L69.7 66.5 L71.8 57.9 L75.5 43.8 L76.9 38.7 L77.8 35.1 L78.3 33.5 L78.4 32.4 L78.3 31.4 L78.1 30.8 L77.5 30.0 L76.6 29.3 L75.5 28.8 L73.8 28.5 L69.0 27.6 L67.1 27.3 L66.0 27.4 L64.5 27.6 L63.2 28.0 L62.0 28.7 L60.8 29.4 L59.7 30.3 L58.6 31.6 L57.1 33.5 L52.2 40.1 L49.3 44.2 L46.8 47.7 L44.2 51.2 L42.7 53.2 L41.6 54.6 L40.9 55.5 L40.0 56.0 L38.8 56.4 L37.5 56.6 L35.5 56.6 L34.2 56.3 L33.1 56.0 L32.2 55.6 L30.6 54.7 L29.8 54.0 L29.2 53.3 L28.7 52.3 L28.3 50.9 L27.8 48.8 L27.4 47.0 L26.9 43.5 L26.8 42.1 L26.8 40.7 L27.1 39.6 L27.7 39.0 L28.1 38.8 L28.6 38.6 L29.2 38.6 L29.9 38.7 L30.6 39.0 L32.6 40.5 L33.4 41.0 L34.0 41.2 L34.6 41.4 L35.2 41.4 L35.9 41.3 L36.8 41.0 L37.9 40.1 L38.5 39.2 L38.8 38.2 L38.9 37.4 L38.7 36.4 L38.4 35.7 L37.5 34.4 L36.8 33.7 L34.1 31.0 L32.7 29.5 L31.8 28.0 L31.1 26.1 L30.5 23.8 L30.3 22.4 L30.2 21.1 L30.2 20.0 L30.7 19.3 L31.0 18.9 L31.5 18.7 L32.0 18.6 L32.6 18.7 L33.3 19.0 L36.5 22.7 L39.4 25.8 L39.9 26.2 L40.9 27.0 L41.9 27.4 L42.7 27.6 L43.7 27.8 L44.6 27.9 L45.7 27.9 L47.3 27.7 L48.6 27.3 L49.9 26.5 L51.3 25.4 L52.1 24.4 L52.9 23.3 L55.1 19.8 L57.5 15.8 L60.2 11.4 L60.4 10.9 L60.4 10.3 L60.2 9.7 L59.9 9.0 L59.3 8.5 L57.9 7.7 L55.8 7.0 L51.6 5.4 L50.8 5.2 L49.7 5.0 L47.6 5.2 L45.8 5.5 L41.7 6.4 L40.4 6.9 L37.7 8.0 L36.4 8.6 L33.2 10.3 L32.0 11.1 L30.9 12.1 L29.8 13.1 L28.9 14.1 L28.2 15.3 L27.4 16.9 L26.9 18.6 L26.0 21.9 L25.0 26.2 L24.3 30.2 L23.2 34.5 L22.5 37.7 L21.8 40.0 L21.6 41.6 L21.6 43.8 L21.7 46.4 L22.0 48.4 L22.5 50.7 L23.3 54.0 L25.8 64.4 L27.1 69.6Z","start":[27.1,69.6]},"lusail":{"name":"ルサイル","gp":"カタールGP","path":"M25.3 59.5 L15.8 42.2 L12.1 35.5 L11.9 34.2 L12.0 32.9 L12.5 31.9 L13.3 31.2 L14.4 30.5 L15.7 30.3 L16.9 30.5 L26.3 36.3 L27.2 36.5 L28.4 36.6 L29.8 36.2 L30.9 35.1 L31.5 34.0 L31.7 32.9 L31.5 24.7 L31.6 23.5 L31.9 22.6 L32.4 21.7 L33.0 20.9 L46.5 6.0 L47.2 5.4 L48.3 5.1 L49.4 5.0 L50.6 5.3 L51.4 5.8 L55.4 9.6 L55.9 10.4 L56.1 11.5 L56.0 12.5 L55.8 13.4 L55.2 14.3 L46.5 23.9 L46.1 24.6 L46.1 25.3 L46.3 26.0 L46.7 26.5 L47.3 26.9 L48.2 27.0 L48.8 26.8 L49.6 26.5 L64.8 20.4 L65.8 20.3 L67.0 20.4 L68.1 20.9 L68.9 21.7 L69.4 22.7 L69.6 23.8 L69.6 24.7 L69.3 25.5 L68.6 26.5 L68.1 27.0 L66.9 28.0 L65.6 29.5 L64.5 31.0 L63.6 32.6 L62.9 34.5 L62.4 35.8 L62.0 38.1 L61.6 39.1 L61.0 39.9 L60.3 40.4 L59.3 40.9 L50.7 43.0 L49.9 43.4 L49.3 43.9 L49.0 44.8 L48.8 45.6 L49.0 46.9 L49.9 48.1 L51.6 49.7 L54.0 51.6 L56.6 53.1 L59.3 54.0 L61.9 54.6 L64.5 54.8 L67.3 54.6 L80.3 53.1 L81.5 53.4 L82.8 54.0 L83.9 54.8 L84.9 56.2 L87.9 61.8 L88.1 62.7 L88.1 63.6 L88.0 64.5 L87.4 65.7 L82.7 73.2 L82.1 73.8 L81.2 74.2 L80.3 74.4 L79.1 74.4 L64.2 71.4 L63.2 71.4 L62.1 71.7 L61.2 72.3 L60.6 73.1 L50.3 93.2 L49.4 94.2 L48.5 94.8 L47.1 95.0 L46.1 94.9 L45.1 94.5 L44.0 93.6 L25.3 59.5Z","start":[25.3,59.5]},"yasmarina":{"name":"ヤス・マリーナ","gp":"アブダビGP","path":"M49.5 55.4 L62.0 53.7 L62.7 53.5 L63.2 53.0 L63.5 52.3 L63.6 51.6 L63.4 50.8 L61.4 42.3 L61.0 41.4 L60.6 40.7 L59.8 40.0 L59.1 39.7 L55.6 38.6 L54.4 38.0 L53.5 37.4 L52.7 36.7 L52.1 36.0 L51.7 35.4 L51.1 34.1 L50.9 33.1 L50.9 32.0 L51.1 30.8 L51.5 29.4 L52.4 26.0 L52.7 23.5 L52.8 21.7 L52.6 20.2 L51.6 12.3 L51.0 7.2 L50.9 6.7 L50.7 6.2 L50.4 5.7 L49.7 5.2 L49.3 5.0 L48.9 5.0 L48.5 5.1 L48.0 5.2 L47.7 5.6 L47.5 5.9 L47.2 6.4 L46.4 8.8 L45.7 12.1 L39.4 30.8 L37.0 38.0 L35.6 42.0 L34.6 45.2 L33.6 49.0 L31.3 56.2 L29.2 62.6 L28.9 63.3 L28.9 63.7 L28.9 64.0 L29.2 64.3 L29.7 64.3 L31.7 64.0 L32.2 64.0 L32.5 64.5 L33.6 68.8 L33.9 69.6 L34.6 71.4 L35.2 72.6 L36.6 74.7 L38.2 76.5 L40.2 78.3 L48.8 85.0 L50.7 86.6 L52.2 87.7 L54.3 89.0 L56.0 90.0 L58.9 91.4 L61.4 92.5 L65.3 94.3 L66.9 95.0 L67.9 95.0 L68.8 94.8 L69.7 94.3 L70.2 93.8 L70.5 93.4 L70.8 92.7 L71.0 92.1 L71.1 91.4 L71.0 90.5 L70.8 89.7 L70.6 89.0 L70.1 88.4 L69.5 87.8 L68.8 87.3 L68.0 87.0 L66.9 86.8 L57.9 86.1 L56.8 86.0 L56.3 85.9 L55.8 85.7 L51.0 82.7 L50.5 82.3 L50.2 81.9 L49.9 81.0 L48.7 75.7 L48.8 75.3 L49.1 75.0 L49.5 74.9 L53.5 74.3 L53.9 74.1 L54.2 74.0 L54.6 73.7 L54.9 73.1 L54.9 72.3 L55.0 68.7 L54.7 68.1 L54.3 67.7 L53.8 67.5 L53.0 67.3 L52.4 67.2 L51.5 67.2 L50.6 67.3 L42.3 68.6 L41.6 68.6 L40.7 68.6 L39.8 68.4 L39.2 68.2 L38.7 67.8 L38.3 67.4 L36.0 63.2 L34.8 61.3 L34.6 60.8 L34.4 60.0 L34.4 59.4 L34.4 58.6 L34.5 58.1 L34.8 57.7 L35.2 57.5 L36.0 57.3 L49.5 55.4Z","start":[49.5,55.4]},"jeddah":{"name":"ジェッダ市街地コース","gp":"サウジアラビアGP","path":"M54.6 74.3 L50.0 60.9 L49.8 60.6 L49.5 60.6 L48.5 60.9 L48.2 60.9 L48.0 60.7 L47.8 60.5 L47.7 60.1 L47.8 59.1 L48.6 56.7 L48.7 56.3 L48.7 55.6 L48.4 53.7 L47.4 47.7 L47.3 46.4 L47.1 46.0 L46.0 45.6 L45.5 45.3 L45.1 44.9 L44.6 44.1 L44.3 43.2 L44.2 42.2 L44.4 41.4 L44.6 40.9 L45.3 39.8 L45.6 39.2 L45.7 38.6 L45.7 37.6 L45.3 35.9 L44.8 35.2 L44.5 35.0 L43.8 34.5 L43.5 34.2 L43.2 33.9 L43.0 33.2 L43.1 30.0 L43.2 29.3 L43.8 28.5 L44.4 28.1 L45.6 27.6 L46.0 27.4 L46.4 26.7 L46.7 25.3 L46.9 24.2 L47.4 22.6 L47.8 21.7 L48.0 20.0 L48.1 18.9 L48.1 17.7 L47.9 12.8 L47.5 6.5 L47.4 6.1 L47.0 5.6 L46.5 5.3 L45.8 5.0 L45.1 5.1 L44.6 5.4 L44.1 5.7 L43.7 6.5 L43.5 7.5 L43.6 8.4 L43.8 9.2 L44.9 11.1 L45.4 12.0 L45.9 13.3 L46.1 14.1 L46.2 15.2 L46.2 16.1 L46.1 17.1 L45.7 18.2 L45.3 19.1 L44.7 20.3 L44.3 21.3 L44.1 22.5 L44.1 23.3 L44.1 23.9 L43.9 24.3 L43.5 24.7 L43.0 25.0 L41.9 25.4 L41.1 26.0 L40.7 26.6 L40.6 27.1 L40.4 28.2 L40.4 29.3 L40.4 30.1 L40.5 31.0 L40.6 32.0 L41.0 33.1 L42.0 35.3 L42.7 37.0 L43.0 38.4 L43.2 39.7 L43.2 40.9 L43.1 41.6 L43.1 43.2 L43.2 43.7 L43.3 44.4 L43.7 45.7 L44.1 46.6 L44.6 47.5 L45.5 48.8 L46.1 49.9 L46.5 51.0 L47.0 52.6 L47.1 53.8 L47.2 55.2 L47.1 56.5 L47.0 57.6 L46.7 59.2 L46.6 59.7 L46.4 60.2 L46.4 60.6 L46.6 61.1 L46.9 61.6 L47.3 61.9 L48.1 62.6 L48.5 63.1 L48.9 63.8 L49.5 66.5 L49.5 67.2 L49.3 67.9 L48.7 69.0 L46.9 72.6 L46.4 73.7 L46.1 74.9 L45.9 75.8 L45.9 76.6 L46.0 78.5 L46.5 80.4 L46.8 81.5 L47.2 82.6 L47.6 83.9 L48.2 85.4 L49.1 87.1 L49.8 88.0 L50.6 89.1 L51.7 90.4 L53.2 91.7 L54.6 92.6 L57.5 94.7 L58.3 95.0 L58.9 94.9 L59.3 94.6 L59.6 94.0 L59.6 93.5 L58.8 90.1 L57.4 83.0 L56.6 80.3 L55.9 78.1 L54.6 74.3Z","start":[54.6,74.3]},"bahrain":{"name":"バーレーン・インターナショナル","gp":"バーレーンGP","path":"M21.6 47.7 L22.3 22.4 L23.0 5.9 L23.3 5.1 L23.9 5.0 L24.6 5.2 L25.2 5.6 L28.6 9.0 L29.5 9.4 L30.5 9.3 L36.5 7.4 L37.9 7.2 L39.2 7.3 L78.1 14.9 L79.5 15.3 L80.2 16.0 L80.4 16.9 L80.2 17.8 L79.8 18.9 L78.9 19.9 L78.0 20.7 L76.6 21.7 L71.9 25.2 L68.2 29.2 L67.2 30.1 L66.5 31.4 L64.8 35.2 L64.2 36.0 L63.3 36.6 L62.5 37.1 L61.0 37.2 L56.8 36.5 L55.6 36.5 L54.4 36.8 L53.5 37.3 L52.3 38.4 L43.6 49.3 L42.8 50.1 L41.6 50.3 L40.8 49.7 L40.6 48.5 L40.6 46.7 L42.7 34.3 L43.9 26.5 L44.1 25.0 L43.8 23.6 L43.5 22.5 L42.9 21.5 L39.4 18.4 L38.9 18.2 L38.3 18.3 L38.0 18.9 L36.7 28.5 L36.4 34.9 L35.8 46.4 L35.3 58.4 L34.9 69.3 L35.1 71.1 L35.8 72.2 L36.9 72.8 L38.4 73.1 L40.0 73.0 L42.0 72.6 L44.1 71.6 L45.8 70.4 L47.5 68.7 L48.5 67.0 L50.4 62.0 L51.5 60.0 L52.5 58.7 L53.8 57.6 L55.4 56.7 L57.6 56.1 L60.1 56.1 L61.8 56.5 L64.1 57.6 L70.2 60.6 L71.4 61.5 L72.5 62.5 L73.0 63.5 L73.7 64.6 L73.7 65.6 L73.1 66.6 L72.1 67.7 L70.6 68.8 L24.6 94.5 L23.8 95.0 L22.4 95.0 L21.9 94.4 L19.8 90.1 L19.6 88.4 L19.7 85.1 L20.3 67.3 L21.6 47.7Z","start":[21.6,47.7]},"shanghai":{"name":"上海インターナショナル","gp":"中国GP","path":"M28.9 81.2 L22.1 82.9 L20.9 83.0 L19.4 83.0 L18.0 82.6 L17.1 82.2 L15.9 81.4 L15.1 80.7 L14.4 79.8 L13.9 78.8 L13.5 77.7 L13.5 76.6 L13.5 75.3 L13.7 74.4 L14.0 73.4 L14.5 72.6 L15.2 71.9 L16.9 71.2 L18.4 71.2 L19.6 71.7 L20.1 72.2 L20.5 72.8 L20.5 73.6 L20.2 74.7 L19.7 76.5 L19.6 77.2 L19.9 77.9 L20.6 78.7 L21.8 79.2 L23.1 78.9 L23.8 78.4 L24.3 77.7 L24.7 76.9 L25.1 75.9 L25.4 74.7 L25.4 73.4 L25.2 72.3 L24.6 71.0 L24.1 70.3 L22.8 68.6 L19.1 64.7 L16.3 61.1 L14.0 58.6 L11.1 55.3 L10.2 53.8 L9.8 52.6 L6.8 43.9 L5.9 41.3 L5.0 38.7 L5.0 38.0 L5.4 37.5 L6.1 37.2 L7.4 37.4 L8.7 38.3 L9.8 39.2 L10.9 40.4 L12.5 42.0 L13.9 44.0 L16.3 48.2 L19.5 53.9 L20.5 55.5 L21.6 56.7 L22.7 57.8 L24.1 58.6 L25.5 59.1 L27.0 59.4 L28.7 59.4 L30.3 59.1 L31.8 58.6 L33.2 57.6 L34.7 56.5 L35.8 55.2 L37.0 52.6 L38.8 48.7 L39.6 47.5 L40.4 46.7 L41.5 46.1 L43.0 45.4 L44.4 45.3 L45.7 45.4 L46.8 45.8 L47.8 46.5 L48.5 47.1 L49.1 47.7 L52.2 53.7 L52.9 54.5 L53.8 54.8 L54.7 54.6 L55.5 54.3 L58.5 50.2 L58.9 49.4 L58.9 48.7 L58.7 48.0 L51.2 35.3 L46.5 27.7 L41.4 19.2 L40.7 19.0 L40.0 19.2 L39.4 19.8 L38.6 20.7 L37.8 21.6 L37.1 22.1 L36.3 22.3 L35.4 22.2 L34.4 21.4 L33.4 20.2 L32.8 19.2 L32.5 18.3 L32.3 17.0 L32.4 15.8 L32.6 14.7 L33.0 13.6 L34.0 12.3 L34.9 11.5 L36.3 11.0 L37.7 10.7 L38.8 10.5 L40.2 10.6 L41.9 11.0 L43.1 11.5 L44.3 12.2 L45.9 13.7 L47.4 15.8 L63.1 39.8 L72.9 54.6 L77.9 62.3 L82.4 69.3 L88.3 78.1 L94.6 87.3 L95.0 88.1 L95.0 88.9 L94.4 89.5 L93.6 89.4 L91.8 88.5 L90.7 87.8 L89.6 87.0 L77.5 70.4 L77.0 70.1 L76.0 70.0 L60.8 73.6 L28.9 81.2Z","start":[28.9,81.2]},"melbourne":{"name":"アルバート・パーク","gp":"オーストラリアGP","path":"M42.3 71.4 L37.8 67.0 L31.1 60.1 L30.7 59.7 L30.5 59.2 L30.5 58.9 L30.6 58.7 L30.9 58.1 L31.3 57.5 L31.5 56.6 L31.6 55.6 L31.6 54.8 L31.4 53.3 L31.1 52.5 L30.7 51.7 L30.1 51.1 L28.9 49.9 L27.5 48.6 L25.5 46.6 L23.1 44.0 L22.1 43.0 L19.5 39.7 L18.2 38.0 L16.9 35.9 L14.3 31.4 L13.7 30.1 L13.3 29.2 L13.3 28.7 L13.5 28.3 L14.1 28.0 L15.9 27.7 L19.3 27.0 L19.7 26.9 L20.0 26.7 L20.1 26.5 L20.4 25.7 L20.4 24.9 L20.2 18.2 L20.1 15.8 L20.2 15.6 L20.9 14.7 L21.6 14.2 L26.7 10.5 L27.8 9.9 L33.1 7.7 L35.1 7.0 L36.9 5.9 L38.2 5.1 L38.8 5.0 L39.3 5.0 L39.8 5.3 L40.4 6.0 L41.1 6.6 L42.1 7.3 L43.3 7.8 L44.9 8.0 L46.4 8.0 L47.6 8.2 L49.0 8.7 L50.2 9.3 L51.6 10.3 L52.5 11.1 L53.4 12.3 L54.3 13.7 L54.7 15.2 L55.0 16.4 L55.2 17.4 L56.4 24.1 L56.4 24.9 L56.3 26.0 L56.0 27.0 L55.6 27.9 L54.9 28.9 L54.2 29.6 L53.5 30.6 L53.2 31.3 L52.9 32.1 L52.7 32.9 L51.3 40.4 L51.2 41.3 L51.1 42.3 L51.1 43.3 L51.2 45.1 L51.4 46.5 L51.8 48.1 L52.2 49.6 L52.8 50.9 L53.5 52.2 L54.5 53.8 L55.2 54.9 L56.6 56.4 L61.3 60.5 L62.0 61.1 L62.7 61.5 L63.2 61.7 L64.2 62.0 L65.2 62.1 L66.3 62.0 L67.4 62.0 L68.4 62.0 L69.2 62.0 L70.0 62.2 L70.7 62.6 L71.2 62.8 L72.1 63.6 L77.2 68.0 L79.2 69.6 L80.1 70.7 L80.8 71.6 L81.6 72.8 L82.3 74.5 L83.1 76.8 L85.1 83.8 L86.3 88.3 L86.6 89.6 L86.7 90.2 L86.7 90.6 L86.4 90.7 L85.4 91.1 L80.9 93.0 L76.1 94.8 L75.8 94.9 L75.2 95.0 L74.5 94.9 L73.7 94.6 L73.0 94.1 L72.5 93.7 L72.1 93.1 L69.3 87.9 L67.6 85.2 L67.4 84.8 L67.1 84.6 L66.9 84.5 L66.5 84.5 L66.2 84.6 L63.2 88.1 L62.7 88.5 L62.3 88.8 L61.7 89.0 L61.2 89.1 L60.7 89.1 L60.2 89.0 L59.4 88.7 L58.9 88.3 L58.7 88.1 L42.3 71.4Z","start":[42.3,71.4]},"montreal":{"name":"ジル・ヴィルヌーヴ","gp":"カナダGP","path":"M59.9 70.2 L61.0 75.3 L61.8 79.1 L62.3 81.9 L62.3 84.2 L61.6 90.4 L61.7 91.2 L62.2 91.6 L64.1 92.4 L64.4 92.7 L64.6 93.3 L64.6 93.8 L64.3 94.3 L63.8 94.8 L63.2 95.0 L62.3 95.0 L61.4 94.8 L59.3 94.2 L57.8 93.7 L56.4 92.9 L55.0 92.0 L51.9 89.4 L50.1 87.7 L49.8 87.1 L49.7 86.7 L49.7 86.2 L50.0 85.3 L50.1 84.6 L50.1 84.1 L49.8 83.7 L46.3 79.4 L45.7 78.9 L44.5 78.0 L43.8 77.5 L43.0 76.4 L42.6 75.3 L42.3 74.2 L42.2 73.3 L42.2 66.6 L42.2 66.0 L41.9 65.5 L41.5 65.2 L40.8 65.0 L39.7 65.3 L39.1 65.3 L38.4 65.1 L37.8 64.8 L37.4 64.3 L37.0 63.8 L36.8 63.4 L36.4 62.4 L36.2 61.3 L35.8 59.8 L35.8 58.6 L35.4 53.5 L35.4 50.7 L35.5 48.5 L35.7 46.0 L35.9 44.1 L36.2 42.5 L38.0 35.2 L38.3 34.5 L38.8 34.3 L39.2 34.2 L39.9 34.1 L40.4 33.9 L40.9 33.6 L41.4 33.1 L41.9 32.4 L42.2 31.5 L44.0 24.2 L44.7 20.2 L45.0 17.5 L45.1 14.6 L45.1 13.7 L45.0 12.7 L43.6 6.2 L43.6 5.8 L43.6 5.4 L43.9 5.1 L44.5 5.0 L44.9 5.1 L45.1 5.4 L45.2 5.7 L45.4 7.1 L45.6 9.3 L45.7 10.1 L46.0 10.9 L46.9 12.8 L47.8 14.5 L52.0 25.6 L52.5 27.0 L58.9 57.3 L59.1 58.5 L59.1 58.9 L58.8 59.3 L58.3 59.5 L57.9 59.8 L57.8 60.1 L57.8 60.6 L59.0 65.9 L59.9 70.2Z","start":[59.9,70.2]},"redbullring":{"name":"レッドブル・リンク","gp":"オーストリアGP","path":"M65.0 72.5 L58.8 74.1 L43.4 78.3 L42.4 78.4 L41.7 77.8 L40.5 75.5 L36.7 70.4 L32.6 64.6 L29.4 59.4 L26.5 54.4 L21.7 43.9 L20.4 41.2 L18.4 37.9 L15.2 34.1 L10.1 28.9 L5.3 24.1 L5.0 23.5 L5.0 22.8 L5.6 22.4 L6.8 22.2 L10.8 21.8 L14.7 21.6 L18.7 21.6 L22.6 22.0 L27.0 22.7 L40.7 25.4 L46.9 26.2 L60.4 26.8 L61.5 27.1 L62.2 27.9 L62.4 28.7 L62.4 29.6 L62.0 30.4 L60.7 32.4 L59.6 33.6 L57.6 35.4 L55.5 36.5 L52.9 37.4 L50.0 37.9 L47.1 37.7 L35.6 35.8 L34.1 36.0 L32.8 36.5 L31.7 37.2 L30.8 38.2 L30.2 39.4 L29.8 40.8 L29.8 42.0 L30.0 43.3 L30.3 44.3 L35.9 54.0 L36.8 55.0 L38.3 55.9 L40.0 56.3 L41.6 56.2 L43.4 55.4 L44.4 54.6 L45.5 53.2 L46.5 51.9 L47.6 50.8 L49.0 49.9 L50.5 49.0 L52.7 48.2 L54.9 47.7 L72.7 47.3 L86.4 47.0 L87.8 47.0 L89.2 47.5 L90.4 48.4 L91.3 49.5 L92.0 51.1 L94.8 60.5 L95.0 61.4 L94.8 62.0 L94.5 62.5 L93.4 63.4 L92.0 64.2 L90.1 65.2 L88.0 66.1 L85.5 66.9 L65.0 72.5Z","start":[65.0,72.5]},"hungaroring":{"name":"ハンガロリンク","gp":"ハンガリーGP","path":"M30.1 72.8 L15.2 60.9 L10.9 57.5 L10.5 56.9 L10.2 56.2 L10.3 55.5 L10.6 54.9 L11.0 54.5 L11.6 54.2 L12.4 54.1 L13.6 54.1 L17.0 54.2 L19.3 54.6 L21.4 55.2 L23.6 56.0 L25.2 57.0 L26.5 57.8 L38.5 67.4 L39.4 67.9 L40.3 68.1 L41.1 68.1 L41.8 67.8 L42.6 67.6 L43.2 67.1 L43.7 66.6 L44.0 66.1 L44.3 65.3 L44.4 64.4 L44.4 63.8 L44.1 63.1 L43.9 62.4 L40.4 56.5 L40.1 55.4 L40.0 54.5 L40.2 53.8 L40.5 52.9 L40.8 52.0 L44.6 44.4 L51.4 30.6 L52.6 28.5 L54.0 26.6 L55.8 24.5 L56.2 23.9 L56.4 23.3 L56.5 22.7 L56.3 21.9 L53.2 10.2 L53.1 9.4 L53.2 8.5 L53.5 7.6 L53.8 6.8 L54.5 6.2 L55.3 5.6 L56.1 5.2 L56.9 5.0 L58.0 5.0 L58.9 5.3 L60.1 5.8 L61.5 6.6 L62.4 7.3 L63.6 8.1 L64.7 9.0 L66.2 10.6 L72.6 17.4 L72.9 18.1 L73.0 18.6 L72.9 19.2 L72.6 19.6 L72.1 20.1 L71.6 20.6 L71.5 20.9 L71.5 21.6 L71.7 22.4 L74.0 31.1 L74.5 32.3 L74.8 32.7 L75.2 33.2 L75.7 33.6 L76.3 33.8 L77.4 34.0 L82.2 34.7 L83.2 35.1 L83.8 35.5 L84.3 35.9 L84.8 36.7 L84.9 37.3 L85.1 38.1 L85.1 39.0 L85.0 39.9 L83.8 48.3 L83.8 49.7 L83.9 50.7 L84.1 51.6 L84.5 52.6 L89.2 60.1 L89.6 61.2 L89.7 62.0 L89.8 62.7 L89.7 63.5 L89.5 64.3 L89.2 65.0 L88.6 65.7 L80.6 74.7 L73.4 83.0 L71.0 85.7 L70.4 86.0 L69.9 86.1 L69.3 86.0 L68.9 85.8 L68.4 85.4 L63.5 79.8 L62.7 79.0 L59.0 76.0 L58.4 75.7 L57.7 75.4 L56.9 75.3 L56.2 75.3 L55.3 75.8 L54.7 76.4 L54.3 77.1 L54.1 77.6 L54.0 78.4 L54.1 79.2 L54.5 79.9 L54.9 80.5 L62.2 86.4 L63.6 87.7 L64.0 88.3 L64.3 89.3 L64.4 90.4 L64.3 91.4 L64.0 92.2 L63.6 93.1 L63.0 93.8 L61.9 94.4 L60.9 94.8 L59.7 95.0 L58.5 94.8 L57.4 94.4 L56.4 93.7 L30.1 72.8Z","start":[30.1,72.8]},"barcelona":{"name":"バルセロナ＝カタルーニャ","gp":"バルセロナGP","path":"M71.2 45.2 L61.6 60.3 L56.4 68.8 L50.9 77.4 L45.2 86.6 L43.2 89.8 L42.6 90.5 L42.0 90.9 L41.5 91.2 L40.7 91.3 L39.9 91.2 L39.3 91.1 L38.7 90.8 L36.8 89.5 L36.1 89.2 L35.0 89.0 L34.1 89.0 L32.8 89.3 L32.1 89.7 L26.6 93.8 L25.8 94.2 L25.0 94.5 L24.0 94.8 L23.0 95.0 L22.1 95.0 L21.2 94.9 L20.1 94.8 L19.1 94.5 L17.8 93.9 L17.2 93.4 L16.6 92.9 L16.1 92.4 L14.7 90.6 L14.0 89.1 L13.5 87.6 L13.4 86.4 L13.2 85.1 L13.3 83.7 L13.5 82.2 L14.1 79.9 L14.7 77.9 L15.4 76.4 L16.2 75.3 L25.7 60.1 L26.3 59.6 L27.1 59.1 L28.6 58.7 L29.5 58.9 L30.3 59.1 L31.1 59.6 L32.1 60.4 L32.8 61.1 L33.5 62.6 L33.8 63.8 L33.9 65.6 L33.8 66.7 L33.6 67.9 L33.0 69.1 L32.1 70.9 L25.2 81.7 L25.0 82.4 L25.0 83.1 L25.1 83.8 L25.5 84.4 L25.8 84.8 L26.4 85.2 L27.0 85.4 L27.6 85.5 L28.4 85.4 L28.9 85.2 L39.2 80.5 L40.7 79.6 L42.1 78.5 L43.6 77.1 L44.6 75.9 L48.7 69.4 L49.2 68.4 L49.4 67.8 L49.2 66.7 L48.7 65.7 L47.8 65.0 L45.9 63.9 L44.9 63.0 L44.4 62.4 L43.8 61.6 L43.5 61.0 L40.9 54.8 L37.9 47.8 L37.7 46.6 L37.7 45.4 L37.8 44.5 L38.0 43.6 L38.6 42.5 L39.0 41.8 L40.0 40.7 L40.9 40.0 L74.0 23.0 L75.2 22.4 L75.8 21.7 L76.1 21.1 L76.2 20.4 L75.9 19.5 L75.5 18.9 L75.0 18.3 L74.2 17.7 L72.8 17.1 L72.0 16.9 L70.9 16.8 L69.9 16.7 L68.9 16.8 L67.9 17.0 L66.4 17.8 L65.4 18.3 L64.0 19.6 L62.6 20.6 L61.6 21.0 L60.1 21.1 L59.2 20.9 L58.1 20.4 L57.3 19.7 L56.8 18.9 L56.3 17.9 L56.2 16.9 L56.2 16.4 L56.5 15.0 L57.0 14.1 L57.8 13.3 L65.7 6.8 L66.5 6.1 L67.4 5.5 L68.3 5.2 L69.6 5.0 L70.8 5.0 L71.9 5.2 L72.8 5.6 L74.7 6.8 L76.8 8.1 L78.6 9.4 L79.7 10.1 L83.7 12.5 L84.6 13.2 L85.2 13.8 L85.7 14.6 L86.2 15.4 L86.5 16.5 L86.7 17.6 L86.8 19.1 L86.5 20.5 L85.5 22.6 L71.2 45.2Z","start":[71.2,45.2]},"madring":{"name":"マドリング","gp":"スペインGP","path":"M57.4 90.0 L48.2 91.7 L47.6 92.0 L47.5 94.1 L47.3 94.5 L45.8 94.7 L44.0 95.0 L42.5 94.9 L40.6 94.1 L39.3 92.8 L32.2 81.5 L28.3 75.5 L27.2 73.1 L26.5 71.5 L26.2 70.5 L25.4 67.5 L25.0 64.3 L25.1 61.8 L25.4 59.2 L26.4 56.7 L27.3 55.2 L27.6 54.7 L27.6 54.3 L27.1 54.0 L26.7 53.6 L26.8 53.0 L27.1 52.5 L27.3 51.9 L27.2 50.7 L26.6 48.5 L26.0 46.9 L25.2 45.7 L24.6 44.8 L24.2 43.7 L23.3 39.9 L22.7 38.4 L22.1 37.7 L22.1 37.2 L22.6 36.8 L23.6 36.1 L24.1 35.2 L24.1 34.4 L23.8 33.3 L22.2 30.5 L22.1 29.7 L22.1 24.4 L22.2 22.4 L22.8 21.5 L24.2 20.5 L25.7 19.2 L26.2 18.1 L26.2 16.7 L26.0 15.8 L24.2 11.4 L24.0 10.0 L24.1 8.5 L24.8 7.1 L25.8 6.0 L27.2 5.2 L28.8 5.0 L30.5 5.1 L32.2 5.9 L33.8 7.4 L34.8 9.0 L35.1 10.9 L34.9 12.7 L34.3 14.5 L33.3 16.3 L32.7 17.1 L27.7 23.4 L25.2 27.2 L25.0 27.9 L25.2 28.8 L26.2 29.8 L29.8 32.4 L31.3 33.6 L31.9 34.7 L32.2 35.8 L32.2 41.3 L32.4 42.3 L33.0 43.6 L33.9 44.9 L34.8 45.9 L36.0 46.6 L37.5 47.1 L44.2 47.1 L45.4 46.6 L46.6 45.9 L47.2 45.8 L47.7 46.2 L49.5 49.0 L51.8 53.0 L52.2 54.0 L52.8 54.8 L53.9 55.5 L54.9 55.7 L58.9 55.2 L60.8 55.2 L62.7 55.9 L64.0 57.1 L64.6 58.3 L66.8 70.6 L67.0 72.1 L67.3 72.8 L68.1 72.9 L69.2 72.0 L69.9 71.9 L74.6 71.3 L75.0 71.7 L76.0 74.8 L76.9 78.9 L77.8 84.2 L77.9 85.6 L77.2 86.5 L76.0 86.8 L57.4 90.0Z","start":[57.4,90.0]},"singapore":{"name":"マリーナベイ市街地コース","gp":"シンガポールGP","path":"M93.0 43.0 L94.8 56.7 L95.0 58.5 L94.8 59.4 L94.3 60.1 L92.1 63.5 L91.7 64.1 L91.3 64.3 L90.8 64.3 L89.6 64.3 L83.9 64.0 L75.3 63.0 L74.2 62.7 L73.5 62.3 L72.9 61.7 L72.5 60.5 L72.4 59.4 L72.5 58.7 L72.2 58.3 L71.0 58.2 L69.8 58.2 L63.4 57.8 L45.4 56.9 L43.2 56.6 L41.7 56.2 L40.1 55.4 L33.7 49.8 L31.0 47.5 L30.6 47.1 L29.9 47.0 L29.1 47.2 L28.5 47.6 L28.1 48.0 L26.9 51.5 L26.3 54.1 L24.8 62.1 L21.7 78.1 L21.5 78.4 L21.2 78.7 L20.8 79.0 L20.3 79.2 L19.7 79.1 L19.4 79.0 L18.6 78.1 L17.9 77.1 L17.4 75.9 L16.8 75.3 L14.0 73.1 L12.6 71.8 L11.8 71.0 L11.2 70.2 L10.7 68.4 L10.8 67.5 L10.9 66.9 L11.3 66.1 L11.1 65.7 L10.4 65.4 L9.1 65.0 L8.0 64.3 L6.6 63.3 L5.6 62.4 L5.2 61.6 L5.0 60.5 L5.0 59.6 L6.1 57.8 L10.4 50.1 L15.9 40.2 L16.9 38.4 L17.8 37.5 L18.1 37.2 L19.4 37.0 L20.5 37.6 L21.9 38.6 L27.7 44.7 L28.2 45.0 L28.7 44.9 L29.1 44.1 L31.3 39.6 L34.4 34.5 L34.9 33.6 L35.5 33.4 L36.5 33.9 L37.0 34.2 L53.3 43.6 L55.9 44.6 L57.7 45.0 L80.6 46.3 L81.5 46.1 L82.7 45.6 L83.6 44.9 L84.2 43.8 L84.4 42.7 L84.2 40.2 L83.6 36.8 L81.6 31.3 L81.0 30.1 L80.7 29.2 L80.5 28.0 L80.5 26.4 L80.8 23.0 L81.4 21.7 L82.2 20.9 L82.9 20.8 L83.5 21.0 L84.1 21.8 L84.5 22.3 L84.9 22.7 L85.5 23.3 L86.9 24.0 L88.2 24.3 L89.7 24.2 L90.5 24.5 L90.9 25.0 L91.1 25.9 L91.7 33.5 L93.0 43.0Z","start":[93.0,43.0]},"portimao":{"name":"ポルティマオ","gp":"ポルティマオ","path":"M32.1 42.8 L25.2 19.0 L23.6 13.4 L23.6 12.7 L24.0 12.0 L24.7 11.3 L25.6 10.7 L30.0 7.4 L33.0 5.3 L34.1 5.0 L34.9 5.1 L44.7 7.5 L45.3 7.9 L45.5 8.5 L45.6 9.0 L45.4 9.6 L44.8 10.2 L39.2 13.5 L38.3 14.2 L37.6 15.3 L37.4 15.9 L37.1 16.9 L37.2 18.6 L48.0 56.2 L48.6 57.9 L49.3 58.5 L50.0 58.5 L50.8 58.1 L51.2 57.4 L51.3 56.0 L52.5 44.9 L52.7 42.7 L52.4 40.2 L51.8 38.4 L51.1 36.8 L45.7 26.4 L45.4 25.3 L45.5 24.0 L45.9 22.9 L46.9 21.6 L51.1 16.6 L51.7 16.4 L52.4 16.2 L53.4 16.4 L54.3 17.0 L54.7 17.8 L58.0 40.5 L58.2 41.6 L58.8 42.8 L59.3 43.8 L60.4 45.1 L62.1 46.3 L73.2 52.0 L74.2 52.9 L75.3 54.4 L76.3 57.0 L76.4 58.1 L76.2 59.0 L75.9 59.6 L75.2 60.2 L63.2 63.8 L62.5 64.3 L61.4 65.2 L60.2 66.5 L59.3 68.1 L58.9 69.9 L57.5 79.4 L57.6 80.3 L58.1 81.0 L58.9 81.8 L60.0 81.9 L60.9 81.7 L61.4 81.4 L68.8 72.4 L69.8 71.9 L71.0 71.6 L72.4 72.0 L73.6 73.0 L74.5 74.2 L74.8 75.1 L75.2 76.8 L75.1 77.8 L74.9 78.9 L74.4 80.1 L72.9 82.2 L65.4 91.2 L63.8 92.5 L62.3 93.5 L61.2 94.0 L59.4 94.7 L57.7 95.0 L55.6 95.0 L53.9 94.7 L52.2 94.3 L50.6 93.5 L48.9 92.6 L47.6 91.2 L46.4 89.9 L45.2 88.1 L32.3 43.5 L32.1 42.8Z","start":[32.1,42.8]},"mugello":{"name":"ムジェロ","gp":"ムジェロ","path":"M49.7 48.6 L52.0 43.3 L54.2 38.9 L58.6 31.3 L62.2 25.1 L65.3 18.2 L69.5 7.4 L70.1 6.4 L70.8 5.7 L71.5 5.2 L72.9 5.0 L74.2 5.2 L75.1 5.8 L75.9 6.7 L76.4 7.7 L76.4 9.8 L76.1 12.0 L75.0 18.0 L75.0 18.8 L75.1 19.5 L75.5 20.3 L76.2 20.9 L77.9 21.9 L80.6 23.7 L81.3 24.6 L81.6 25.7 L81.7 26.6 L81.7 27.6 L81.3 28.6 L80.7 29.8 L68.4 48.4 L68.2 49.2 L68.1 49.8 L68.1 50.4 L68.2 51.0 L68.6 52.0 L69.9 54.7 L70.1 55.6 L70.1 56.4 L70.0 57.2 L69.7 58.0 L69.4 58.6 L68.4 59.9 L56.8 74.1 L56.3 74.5 L55.6 75.0 L54.9 75.3 L54.3 75.5 L53.7 75.5 L47.5 75.5 L46.7 75.6 L45.3 76.1 L44.3 76.8 L43.5 77.5 L42.8 78.4 L42.2 79.5 L41.7 80.6 L38.9 88.5 L38.5 89.7 L38.0 90.9 L37.2 92.1 L36.5 93.0 L35.5 93.8 L34.5 94.4 L33.1 94.8 L31.9 95.0 L30.5 94.9 L28.8 94.5 L27.9 94.3 L27.0 94.0 L21.6 91.1 L20.6 90.5 L19.7 89.5 L19.1 88.6 L18.5 87.4 L18.3 86.0 L18.3 84.9 L18.5 82.9 L21.8 65.6 L22.0 64.9 L22.5 64.1 L23.3 63.5 L24.0 63.1 L25.2 62.9 L29.3 62.9 L30.1 62.7 L30.8 62.4 L31.6 61.9 L32.4 60.8 L32.9 59.5 L38.8 39.1 L39.1 38.1 L39.8 37.1 L40.6 36.3 L41.5 35.8 L42.5 35.5 L43.5 35.5 L44.7 35.8 L45.9 36.5 L46.7 37.5 L47.0 38.5 L47.3 39.8 L47.1 41.0 L46.5 42.5 L44.9 45.1 L41.2 49.6 L40.9 50.3 L40.7 51.0 L40.6 52.0 L40.6 56.3 L40.4 57.1 L39.6 58.3 L23.6 79.9 L23.3 80.7 L22.9 81.7 L22.8 82.5 L22.8 84.1 L23.0 85.1 L23.8 86.3 L24.7 87.2 L26.1 88.0 L27.2 88.1 L28.8 87.9 L30.3 87.4 L31.6 86.5 L32.9 85.2 L34.2 83.1 L39.0 72.5 L49.7 48.6Z","start":[49.7,48.6]},"nurburgring":{"name":"ニュルブルクリンク","gp":"ニュルブルクリンク","path":"M73.3 19.2 L56.9 35.9 L53.5 39.2 L51.9 40.5 L50.3 41.7 L46.8 44.1 L46.0 44.2 L45.6 43.9 L45.3 43.4 L45.5 42.5 L46.0 40.6 L46.7 39.0 L48.3 36.2 L48.4 35.5 L48.4 34.7 L48.1 33.7 L47.5 32.9 L46.8 32.3 L46.0 31.9 L45.1 31.7 L44.5 31.7 L40.8 32.3 L39.1 32.8 L37.5 33.3 L36.4 33.9 L35.8 34.5 L35.6 35.1 L35.5 36.0 L35.7 36.8 L36.5 37.5 L37.5 37.8 L39.3 37.7 L40.3 37.8 L40.8 38.0 L41.4 38.7 L41.5 39.4 L41.4 41.2 L41.0 43.9 L40.3 48.3 L39.9 50.5 L39.5 52.4 L39.2 53.7 L37.7 58.1 L36.4 62.4 L35.9 63.7 L35.9 64.4 L35.8 65.0 L36.0 65.9 L36.3 66.6 L36.7 67.3 L37.4 67.9 L37.9 68.2 L39.8 69.2 L42.2 70.2 L42.9 70.7 L43.3 71.3 L43.4 71.9 L43.5 72.5 L43.4 72.8 L43.2 73.6 L42.4 74.4 L39.5 75.9 L35.6 78.1 L33.7 79.3 L31.9 80.7 L29.0 83.3 L27.5 84.8 L26.1 86.5 L24.7 88.3 L23.5 90.1 L21.2 94.0 L20.5 94.7 L19.7 95.0 L19.0 95.0 L18.2 94.8 L17.5 94.3 L17.1 93.6 L16.9 92.8 L16.9 92.1 L17.2 91.3 L18.4 90.1 L28.1 80.5 L29.2 79.3 L29.6 78.7 L30.0 77.8 L30.3 76.7 L30.4 75.3 L30.1 74.0 L29.5 72.0 L29.3 71.0 L29.3 69.3 L29.6 67.9 L33.9 54.7 L35.7 48.9 L36.3 46.6 L36.2 45.9 L35.8 45.0 L35.4 44.6 L35.0 44.4 L27.7 41.2 L26.9 40.5 L26.4 39.7 L26.2 38.9 L26.1 37.7 L26.3 36.9 L26.7 36.1 L27.7 34.8 L33.9 27.3 L40.0 19.8 L40.7 19.3 L41.5 18.7 L42.7 18.1 L47.1 16.9 L66.6 11.8 L66.8 11.5 L66.9 11.1 L66.7 10.5 L66.5 9.8 L66.7 9.2 L67.5 8.7 L70.8 7.2 L72.9 6.6 L79.9 5.0 L81.0 5.0 L81.9 5.5 L82.6 6.2 L82.9 6.9 L83.1 7.6 L83.1 8.6 L82.8 9.5 L73.4 19.1 L73.4 19.1 L73.3 19.2Z","start":[73.3,19.2]},"hockenheim":{"name":"ホッケンハイム","gp":"ホッケンハイム","path":"M12.3 63.4 L8.7 55.9 L5.1 49.2 L5.0 48.7 L5.2 48.2 L6.8 44.5 L7.5 42.8 L8.4 41.3 L9.2 40.0 L10.1 38.9 L11.7 37.0 L15.2 33.4 L26.1 22.0 L26.5 21.8 L27.1 21.7 L27.6 22.0 L28.1 22.4 L28.7 23.4 L29.2 24.5 L29.2 25.6 L29.2 27.0 L29.3 27.7 L29.5 28.3 L29.9 29.2 L30.4 29.9 L31.3 30.5 L33.9 32.1 L36.6 33.6 L39.4 35.1 L42.1 36.3 L44.1 37.2 L46.6 38.0 L49.1 38.7 L51.3 39.2 L54.2 39.8 L56.2 40.0 L58.6 40.2 L60.5 40.2 L63.1 40.1 L65.6 39.9 L68.1 39.4 L70.9 38.6 L76.2 36.8 L93.6 30.3 L94.1 30.2 L94.6 30.3 L94.9 30.7 L95.0 31.1 L94.9 31.5 L94.5 31.8 L87.9 36.2 L74.0 45.4 L73.0 45.8 L71.9 45.9 L56.6 44.0 L55.9 44.0 L55.5 44.3 L55.2 45.2 L55.1 46.5 L55.3 48.3 L55.7 49.7 L56.4 51.0 L57.3 52.2 L57.6 52.8 L57.8 53.6 L57.8 54.2 L57.6 54.9 L57.1 55.8 L56.6 56.6 L55.9 57.3 L54.5 58.4 L47.2 63.3 L38.4 69.0 L37.6 69.4 L36.7 69.7 L35.9 69.8 L35.0 69.7 L34.3 69.5 L33.5 69.2 L32.7 68.7 L31.9 68.0 L31.0 66.8 L23.1 57.5 L22.5 57.0 L21.9 56.7 L21.1 56.6 L20.4 56.7 L19.8 57.0 L19.3 57.5 L18.9 58.1 L18.7 58.7 L18.7 59.5 L18.8 60.3 L20.1 64.2 L20.4 64.9 L20.9 65.6 L21.6 66.1 L22.3 66.5 L23.9 67.1 L24.7 67.5 L25.3 68.1 L25.9 68.9 L27.9 71.7 L28.3 72.5 L28.4 73.0 L28.3 73.6 L28.2 74.2 L27.7 74.8 L26.9 75.5 L24.0 77.6 L22.9 78.1 L22.3 78.3 L21.5 78.3 L20.6 78.1 L19.8 77.6 L19.0 76.8 L18.4 75.9 L17.8 74.8 L12.3 63.4Z","start":[12.3,63.4]},"paulricard":{"name":"ポール・リカール","gp":"ポール・リカール","path":"M52.2 54.0 L62.7 61.9 L68.0 66.1 L68.3 66.2 L68.6 66.2 L68.9 66.0 L69.0 65.8 L69.1 65.5 L69.2 62.7 L69.3 62.1 L69.4 61.8 L69.6 61.5 L70.0 61.0 L70.5 60.6 L71.1 60.3 L71.7 60.1 L72.3 60.1 L73.1 60.1 L73.7 60.3 L74.2 60.7 L74.7 61.1 L75.5 62.0 L76.3 62.7 L77.3 63.4 L78.3 64.0 L79.2 64.4 L80.3 64.7 L81.3 65.0 L82.5 65.1 L83.7 65.1 L84.7 64.9 L85.6 64.7 L86.6 64.4 L87.6 64.0 L88.4 63.5 L88.9 63.2 L89.4 63.0 L89.8 62.9 L90.2 62.8 L90.7 62.9 L91.1 63.2 L91.5 63.5 L91.8 63.9 L91.9 64.2 L92.0 64.6 L92.1 65.2 L92.1 65.9 L92.0 66.4 L91.8 66.9 L91.5 67.4 L91.3 67.8 L89.3 70.4 L88.6 71.4 L88.0 72.4 L87.3 73.6 L87.0 74.3 L86.9 74.7 L86.8 75.1 L86.9 75.5 L87.0 75.9 L87.2 76.3 L87.6 76.7 L88.1 77.1 L88.7 77.5 L89.3 77.8 L90.0 78.0 L90.6 78.1 L91.1 78.1 L91.8 77.9 L92.3 77.7 L92.9 77.5 L93.3 77.2 L93.7 76.9 L94.0 76.5 L94.3 76.1 L94.6 75.6 L94.8 75.2 L94.9 74.7 L95.0 74.2 L95.0 73.8 L95.0 64.2 L95.0 63.6 L94.9 63.1 L94.8 62.6 L94.6 62.0 L94.4 61.3 L94.1 60.8 L93.8 60.3 L93.3 59.8 L92.8 59.2 L92.2 58.8 L91.7 58.4 L91.3 58.2 L90.8 58.0 L87.0 56.5 L82.6 54.8 L78.3 53.2 L73.2 51.3 L68.6 49.6 L68.1 49.4 L67.6 49.1 L63.7 46.4 L63.1 46.0 L62.7 45.6 L61.6 43.9 L61.3 43.7 L60.9 43.4 L60.5 43.3 L60.2 43.3 L59.9 43.5 L59.6 43.7 L58.1 45.1 L57.8 45.3 L57.5 45.4 L57.1 45.3 L53.0 43.8 L39.8 38.9 L34.5 36.9 L18.7 31.0 L15.0 29.6 L14.7 29.4 L14.4 29.1 L14.2 28.9 L14.0 28.6 L13.8 28.3 L13.7 27.9 L12.8 26.0 L12.6 25.6 L12.4 25.1 L12.0 24.7 L11.7 24.2 L11.3 23.8 L10.7 23.2 L10.1 22.7 L9.5 22.4 L8.9 22.1 L8.3 21.9 L7.9 21.9 L7.5 22.0 L7.1 22.1 L6.7 22.3 L6.4 22.6 L6.2 22.8 L6.1 23.1 L5.1 26.0 L5.0 26.4 L5.0 26.6 L5.1 26.9 L5.3 27.0 L5.6 27.1 L6.1 27.1 L8.1 26.8 L8.6 26.8 L9.2 26.9 L9.7 27.1 L10.0 27.3 L10.3 27.6 L10.5 27.9 L10.6 28.3 L10.7 28.6 L10.7 28.9 L10.7 29.3 L10.5 30.4 L10.5 30.7 L10.6 31.0 L10.7 31.3 L10.9 31.5 L11.3 31.8 L13.6 33.1 L15.4 34.2 L17.1 34.9 L18.5 35.5 L19.3 35.9 L20.1 36.3 L21.0 36.9 L22.1 37.7 L23.6 38.9 L24.8 39.8 L25.6 40.5 L26.6 41.6 L27.0 41.9 L27.7 42.3 L29.9 43.5 L30.6 43.8 L31.1 43.8 L31.6 43.8 L32.1 43.6 L32.6 43.3 L32.9 43.0 L33.2 42.5 L33.5 42.2 L33.9 41.9 L34.3 41.7 L34.7 41.7 L35.2 41.7 L35.8 41.7 L36.3 41.9 L36.6 42.1 L38.9 43.8 L41.8 46.1 L45.2 48.6 L48.5 51.1 L52.2 54.0Z","start":[52.2,54.0]},"istanbul":{"name":"イスタンブール・パーク","gp":"イスタンブール","path":"M36.7 84.6 L50.6 81.5 L51.7 81.0 L52.2 80.0 L52.1 79.2 L51.2 75.4 L50.6 73.5 L50.6 72.0 L51.0 69.9 L52.3 67.7 L54.3 65.7 L58.5 63.2 L61.0 62.2 L64.0 61.2 L69.5 60.2 L73.0 60.0 L75.0 60.0 L77.8 60.4 L79.0 60.2 L80.3 59.6 L81.6 58.4 L82.2 56.9 L82.5 55.4 L81.9 50.9 L82.1 49.9 L82.7 49.3 L83.7 49.3 L86.7 49.7 L89.3 49.7 L90.7 49.3 L91.3 48.6 L91.5 47.7 L90.8 43.7 L90.3 42.8 L89.4 42.1 L66.7 30.6 L65.3 29.5 L64.8 28.5 L64.8 27.5 L65.1 26.6 L65.7 25.9 L67.6 24.8 L69.3 24.4 L70.7 24.3 L77.6 25.5 L83.3 26.9 L86.2 27.7 L87.6 28.0 L88.5 27.8 L93.0 25.3 L93.6 24.5 L95.0 20.2 L95.0 19.1 L94.6 18.1 L92.8 15.2 L91.3 13.4 L88.9 11.1 L87.9 10.6 L86.2 10.5 L84.0 10.8 L55.3 19.3 L53.6 20.2 L53.1 21.0 L53.2 22.0 L54.2 23.6 L54.9 25.1 L54.9 26.7 L45.8 55.0 L44.6 56.5 L42.9 58.1 L5.8 78.2 L5.2 78.9 L5.0 79.9 L5.2 80.8 L5.9 81.8 L6.8 82.1 L9.2 81.9 L9.9 82.2 L10.2 82.7 L10.2 83.9 L9.5 88.2 L9.6 89.0 L10.1 89.5 L11.0 89.5 L36.7 84.6Z","start":[36.7,84.6]},"sepang":{"name":"セパン","gp":"セパン","path":"M31.4 53.0 L8.1 54.9 L7.0 54.8 L6.1 54.4 L5.4 53.7 L5.0 52.7 L5.0 51.6 L5.4 50.5 L6.3 49.7 L7.5 49.3 L8.9 49.6 L11.6 50.5 L12.5 50.4 L13.2 49.6 L13.5 48.7 L13.2 47.5 L12.4 46.3 L10.6 44.1 L9.9 42.8 L9.4 41.2 L9.1 39.5 L9.1 37.7 L9.6 33.2 L10.3 31.1 L11.4 28.9 L12.5 27.6 L14.2 26.0 L16.0 24.8 L17.9 24.1 L28.6 20.6 L36.5 17.5 L41.9 15.2 L45.3 13.6 L46.5 13.1 L47.4 13.2 L48.2 13.6 L48.4 14.6 L49.9 22.9 L50.8 27.1 L52.1 32.3 L53.0 34.3 L54.1 35.7 L55.9 37.2 L57.6 38.1 L59.4 38.5 L61.1 38.6 L63.1 38.3 L65.1 37.5 L66.5 36.5 L69.3 33.5 L70.7 32.7 L72.9 31.9 L74.7 31.9 L76.5 32.1 L78.0 32.7 L79.3 33.8 L94.9 51.6 L95.0 52.5 L94.6 53.5 L92.0 59.5 L91.2 60.0 L90.2 60.2 L76.0 61.1 L62.6 62.6 L55.2 63.8 L54.5 64.4 L54.3 65.4 L54.9 66.4 L60.1 69.3 L61.3 70.5 L62.1 72.2 L62.5 73.9 L62.4 76.5 L62.1 78.6 L61.6 80.7 L60.4 83.3 L58.5 86.1 L57.5 86.7 L56.5 86.9 L55.4 86.7 L54.5 86.1 L38.1 72.6 L37.0 72.2 L35.5 72.1 L33.9 72.5 L27.9 75.5 L26.3 76.0 L24.4 76.3 L22.8 76.3 L19.7 75.7 L17.6 74.9 L16.2 73.8 L14.3 71.4 L13.7 69.5 L13.6 68.4 L14.4 67.2 L16.0 66.5 L81.0 54.6 L81.9 53.8 L82.6 52.2 L82.2 50.9 L81.0 49.6 L79.1 49.3 L31.4 53.0Z","start":[31.4,53.0]},"kyalami":{"name":"キャラミ","gp":"キャラミ","path":"M64.0 62.8 L74.2 51.4 L75.5 50.4 L92.7 39.2 L94.7 37.6 L95.0 36.8 L94.8 35.8 L94.1 35.2 L93.7 34.9 L87.6 33.7 L86.7 33.2 L85.9 32.5 L83.7 28.3 L82.4 27.2 L78.9 25.1 L78.2 24.9 L77.3 25.1 L76.7 25.6 L71.8 32.5 L60.2 48.5 L59.0 49.6 L57.5 50.5 L55.7 51.1 L54.1 51.3 L52.5 51.0 L50.8 50.5 L49.6 49.6 L48.5 48.6 L41.8 39.2 L41.1 38.7 L40.2 38.4 L39.1 38.4 L38.1 38.8 L37.4 39.5 L29.5 50.5 L29.1 51.3 L28.9 52.2 L28.9 53.2 L29.0 54.1 L29.3 54.9 L30.3 56.5 L30.6 57.5 L30.6 58.5 L30.5 59.5 L30.2 60.5 L29.7 61.5 L29.1 62.4 L28.5 63.0 L27.3 63.9 L26.6 64.2 L18.6 67.4 L17.7 67.5 L12.9 68.0 L6.1 70.1 L5.3 70.7 L5.0 71.5 L5.0 72.4 L5.6 73.3 L8.1 74.7 L9.6 75.1 L10.8 74.9 L28.4 67.0 L29.8 66.2 L31.3 64.9 L32.5 63.3 L33.4 61.4 L33.8 59.8 L34.6 53.6 L35.3 51.0 L37.2 46.7 L38.2 46.1 L39.4 46.2 L40.5 47.1 L41.9 50.1 L43.2 52.1 L44.6 53.6 L47.2 55.8 L49.7 57.6 L50.0 58.4 L50.1 59.3 L51.4 72.9 L51.8 73.8 L52.7 74.1 L53.6 74.0 L54.7 73.0 L64.0 62.8Z","start":[64.0,62.8]}}},"teams":{"season":2026,"note":"チームカラーはサイト独自の配色で、各チームの公式ロゴやデザインではありません。","teams":{"mercedes":{"name":"メルセデス","en":"Mercedes","c1":"#00A19C","c2":"#B9BEC2","pu":"メルセデス","drivers":["ラッセル","アントネッリ"]},"ferrari":{"name":"フェラーリ","en":"Ferrari","c1":"#D40000","c2":"#F2C200","pu":"フェラーリ","drivers":["ルクレール","ハミルトン"]},"mclaren":{"name":"マクラーレン","en":"McLaren","c1":"#F07800","c2":"#2A2A2A","pu":"メルセデス","drivers":["ノリス","ピアストリ"]},"redbull":{"name":"レッドブル","en":"Red Bull","c1":"#1E2F6E","c2":"#E0141E","pu":"レッドブル・フォード","drivers":["フェルスタッペン","アジャー"]},"astonmartin":{"name":"アストンマーティン","en":"Aston Martin","c1":"#00665E","c2":"#C4D600","pu":"ホンダ","drivers":["アロンソ","ストロール"]},"alpine":{"name":"アルピーヌ","en":"Alpine","c1":"#0072BC","c2":"#F07EB0","pu":"メルセデス","drivers":["ガスリー","コラピント"]},"williams":{"name":"ウィリアムズ","en":"Williams","c1":"#0096D6","c2":"#0B1E3F","pu":"メルセデス","drivers":["アルボン","サインツ"]},"racingbulls":{"name":"レーシングブルズ","en":"Racing Bulls","c1":"#2D4FD6","c2":"#C9CCD1","pu":"レッドブル・フォード","drivers":["ローソン","リンドブラッド"]},"haas":{"name":"ハース","en":"Haas","c1":"#9A9EA2","c2":"#E0102B","pu":"フェラーリ","drivers":["オコン","ベアマン"]},"audi":{"name":"アウディ","en":"Audi","c1":"#6E7378","c2":"#E2062B","pu":"アウディ","drivers":["ヒュルケンベルグ","ボルトレート"]},"cadillac":{"name":"キャデラック","en":"Cadillac","c1":"#1B1B1B","c2":"#B8A06A","pu":"フェラーリ","drivers":["ペレス","ボッタス"]}},"order":["mercedes","ferrari","mclaren","redbull","alpine","astonmartin","williams","racingbulls","haas","audi","cadillac"]},"season":{"updatedAt":"2026-09-26T18:20:00+09:00","season":2026,"standingsAfter":{"round":14,"gp":"スペインGP（マドリード）"},"drivers":[{"pos":1,"name":"アントネッリ","team":"mercedes","pts":292},{"pos":2,"name":"ラッセル","team":"mercedes","pts":211},{"pos":3,"name":"ハミルトン","team":"ferrari","pts":191},{"pos":4,"name":"ノリス","team":"mclaren","pts":186},{"pos":5,"name":"ルクレール","team":"ferrari","pts":167},{"pos":6,"name":"フェルスタッペン","team":"redbull","pts":145},{"pos":7,"name":"ピアストリ","team":"mclaren","pts":120},{"pos":8,"name":"アジャー","team":"redbull","pts":71},{"pos":9,"name":"ローソン","team":"racingbulls","pts":59},{"pos":10,"name":"ガスリー","team":"alpine","pts":41}],"constructors":[{"pos":1,"team":"mercedes","pts":503},{"pos":2,"team":"ferrari","pts":358},{"pos":3,"team":"mclaren","pts":306},{"pos":4,"team":"redbull","pts":230},{"pos":5,"team":"racingbulls","pts":77}],"weekend":{"round":15,"gp":"アゼルバイジャンGP","circuit":"baku","laps":51,"lengthKm":6.003,"note":"今年は国の追悼の日を避けるため、決勝が土曜日に行われます。","sessions":[{"name":"フリー走行1","start":"2026-09-24T08:30:00Z","end":"2026-09-24T09:30:00Z"},{"name":"フリー走行2","start":"2026-09-24T12:00:00Z","end":"2026-09-24T13:00:00Z"},{"name":"フリー走行3","start":"2026-09-25T08:30:00Z","end":"2026-09-25T09:30:00Z"},{"name":"予選","start":"2026-09-25T12:00:00Z","end":"2026-09-25T13:00:00Z","result":"ポール: ラッセル"},{"name":"決勝","start":"2026-09-26T11:00:00Z","end":"2026-09-26T13:00:00Z"}]},"calendar":[{"round":1,"gp":"オーストラリアGP","circuit":"melbourne","date":"2026-03-08","winner":"ラッセル"},{"round":2,"gp":"中国GP","circuit":"shanghai","date":"2026-03-15","winner":"アントネッリ"},{"round":3,"gp":"日本GP","circuit":"suzuka","date":"2026-03-29","winner":"アントネッリ"},{"round":null,"gp":"バーレーンGP","circuit":"bahrain","date":null,"cancelled":true},{"round":null,"gp":"サウジアラビアGP","circuit":"jeddah","date":null,"cancelled":true},{"round":4,"gp":"マイアミGP","circuit":"miami","date":"2026-05-03","winner":"アントネッリ"},{"round":5,"gp":"カナダGP","circuit":"montreal","date":"2026-05-24","winner":"アントネッリ"},{"round":6,"gp":"モナコGP","circuit":"monaco","date":"2026-06-07","winner":"アントネッリ"},{"round":7,"gp":"バルセロナGP","circuit":"barcelona","date":"2026-06-14","winner":"ハミルトン"},{"round":8,"gp":"オーストリアGP","circuit":"redbullring","date":"2026-06-28","winner":"ラッセル"},{"round":9,"gp":"イギリスGP","circuit":"silverstone","date":"2026-07-05","winner":"ルクレール"},{"round":10,"gp":"ベルギーGP","circuit":"spa","date":"2026-07-19","winner":"アントネッリ"},{"round":11,"gp":"ハンガリーGP","circuit":"hungaroring","date":"2026-07-26","winner":"ノリス"},{"round":12,"gp":"オランダGP","circuit":"zandvoort","date":"2026-08-23","winner":"ノリス"},{"round":13,"gp":"イタリアGP","circuit":"monza","date":"2026-09-06","winner":"アントネッリ"},{"round":14,"gp":"スペインGP","circuit":"madring","date":"2026-09-13","winner":"アントネッリ"},{"round":15,"gp":"アゼルバイジャンGP","circuit":"baku","date":"2026-09-26"},{"round":16,"gp":"シンガポールGP","circuit":"singapore","date":"2026-10-11"},{"round":17,"gp":"アメリカGP","circuit":"austin","date":"2026-10-25"},{"round":18,"gp":"メキシコシティGP","circuit":"mexico","date":"2026-11-01"},{"round":19,"gp":"サンパウロGP","circuit":"interlagos","date":"2026-11-08"},{"round":20,"gp":"ラスベガスGP","circuit":"lasvegas","date":"2026-11-21"},{"round":21,"gp":"カタールGP","circuit":"lusail","date":"2026-11-29","tbc":"開催判断は10月中旬"},{"round":22,"gp":"アブダビGP","circuit":"yasmarina","date":"2026-12-06","tbc":"開催判断は10月中旬"}]}}</script>
+<script>
+(function(){
+  var LANG = {
+    en:{code:'EN',name:'English'}, it:{code:'IT',name:'Italiano'}, de:{code:'DE',name:'Deutsch'},
+    es:{code:'ES',name:'Español'}, fr:{code:'FR',name:'Français'}, pt:{code:'PT',name:'Português'},
+    nl:{code:'NL',name:'Nederlands'}, pl:{code:'PL',name:'Polski'}, fi:{code:'FI',name:'Suomi'},
+    sv:{code:'SV',name:'Svenska'}, da:{code:'DA',name:'Dansk'}, hu:{code:'HU',name:'Magyar'},
+    zh:{code:'ZH',name:'中文'}, ko:{code:'KO',name:'한국어'}, ja:{code:'JA',name:'日本語'}
+  };
+  var ORDER = ['en','it','de','es','fr','pt','nl','pl','fi','sv','da','hu','zh','ko'];
+  var NS = 'http://www.w3.org/2000/svg';
+  var state = { lang:'all', team:'all', view:'list', data:null, circuits:{}, teams:{}, teamOrder:[], season:null, standTab:'d' };
+  function teamTag(key, count){
+    var t = state.teams[key]; if (!t) return null;
+    var b = mk('button','teamtag'); b.type = 'button';
+    b.setAttribute('aria-pressed', String(state.team === key));
+    var dot = mk('span','tdot'); dot.style.setProperty('--t1', t.c1); dot.style.setProperty('--t2', t.c2);
+    b.appendChild(dot);
+    b.appendChild(document.createTextNode(t.name + (count != null ? ' ' + count : '')));
+    b.title = t.name + 'の記事だけを表示';
+    b.addEventListener('click', function(){ state.team = state.team === key ? 'all' : key; renderAll(); });
+    return b;
+  }
+  function tagsFor(a){
+    var ks = (a.teams || []).filter(function(k){ return state.teams[k]; });
+    if (!ks.length) return null;
+    var w = mk('div','teamtags');
+    ks.forEach(function(k){ w.appendChild(teamTag(k)); });
+    return w;
+  }
+  var SRC_COLOR = {
+    'RacingNews365':3, 'RacingNews365 NL':6, 'The Race':8, 'Formel1.de':5, 'Formula1.it':7,
+    'Motorsport.com España':2, 'Nextgen-Auto':4, 'Grande Prêmio':1
+  };
+  function colorOf(src){
+    if (SRC_COLOR[src]) return SRC_COLOR[src];
+    var h = 0; for (var i = 0; i < src.length; i++) h = (h * 31 + src.charCodeAt(i)) >>> 0;
+    return (h % 8) + 1;
+  }
+  function unq(s){ return String(s || '').replace(/^["“„«»\s]+|["”«»\s]+$/g, ''); }
+  function slug(src){ return 'src-' + src.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+  function badge(src){ var b = mk('span','srcbadge', src); b.setAttribute('data-c', colorOf(src)); return b; }
+  var el = function(id){ return document.getElementById(id); };
+
+  function mk(tag, cls, text){
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function sv(tag, attrs){
+    var n = document.createElementNS(NS, tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  function jst(iso, withTime){
+    try{
+      var o = { timeZone:'Asia/Tokyo', month:'numeric', day:'numeric' };
+      if (withTime){ o.hour = '2-digit'; o.minute = '2-digit'; o.hour12 = false; }
+      return new Intl.DateTimeFormat('ja-JP', o).format(new Date(iso));
+    }catch(e){ return ''; }
+  }
+  function ago(iso){
+    var d = (Date.now() - new Date(iso).getTime()) / 60000;
+    if (isNaN(d)) return '';
+    if (d < 60) return Math.max(1, Math.round(d)) + '分前';
+    if (d < 60*24) return Math.round(d/60) + '時間前';
+    if (d < 60*24*7) return Math.round(d/1440) + '日前';
+    return jst(iso, false);
+  }
+  function langName(k){ return (LANG[k] && LANG[k].name) || String(k).toUpperCase(); }
+  function langCode(k){ return (LANG[k] && LANG[k].code) || String(k).toUpperCase(); }
+  function extLink(url, text, cls){
+    var a = mk('a', cls, text);
+    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    return a;
+  }
+  function timeEl(iso){
+    var t = mk('time', null, ago(iso)); t.dateTime = iso; t.title = jst(iso, true) + '（日本時間）';
+    return t;
+  }
+  function circuitSvg(c, big){
+    var s = sv('svg', { viewBox:'0 0 100 100', preserveAspectRatio:'xMidYMid meet' });
+    s.appendChild(sv('path', { 'class':'trk-under', d:c.path, 'stroke-width': big ? 9 : 7 }));
+    s.appendChild(sv('path', { 'class':'trk', d:c.path, 'stroke-width': big ? 3.2 : 2.4 }));
+    s.appendChild(sv('circle', { 'class':'trk-start', cx:c.start[0], cy:c.start[1], r: big ? 2.6 : 3.4 }));
+    return s;
+  }
+
+  function renderHero(a){
+    var ha = el('hero-art'); ha.textContent = '';
+    ha.setAttribute('data-c', colorOf(a.source));
+    var c = a.circuit && state.circuits[a.circuit];
+    var plate = mk('div','plate');
+    if (c){
+      var s = circuitSvg(c, true);
+      s.setAttribute('role','img'); s.setAttribute('aria-label', c.name + 'のコース図');
+      plate.appendChild(s);
+      ha.appendChild(plate);
+      var lab = mk('div','circuit-label');
+      lab.appendChild(mk('b', null, c.name));
+      lab.appendChild(mk('span', null, c.gp));
+      ha.appendChild(lab);
+    } else {
+      plate.appendChild(mk('span','catword', a.cat || 'NEWS'));
+      ha.appendChild(plate);
+    }
+    var box = el('hero'); box.textContent = '';
+    var chips = mk('div','chips');
+    chips.appendChild(mk('span','chip-feature','今日の一本'));
+    if (a.cat) chips.appendChild(mk('span','chip-cat', a.cat));
+    chips.appendChild(mk('span','chip-lang', langName(a.lang) + ' → 日本語'));
+    box.appendChild(chips);
+    var h1 = mk('h1'); h1.id = 'hero-title';
+    h1.appendChild(extLink(a.url, a.title));
+    box.appendChild(h1);
+    box.appendChild(mk('p','hero-sum', a.summary));
+    box.appendChild(mk('p','orig','原題 — “' + unq(a.orig) + '”'));
+    var meta = mk('div','meta');
+    meta.appendChild(badge(a.source));
+    meta.appendChild(mk('span', null, a.region + '発'));
+    meta.appendChild(timeEl(a.published));
+    var r = extLink(a.url, '原文を読む ↗', 'read');
+    meta.appendChild(r);
+    box.appendChild(meta);
+    var ht = tagsFor(a); if (ht) box.appendChild(ht);
+  }
+
+  function thumbFor(a, withBadge){
+    var c = a.circuit && state.circuits[a.circuit];
+    var th = extLink(a.url, null, 'thumb' + (c ? '' : ' nocircuit'));
+    th.setAttribute('aria-hidden','true'); th.tabIndex = -1;
+    if (c){
+      var d = mk('div','draw'); d.appendChild(circuitSvg(c, false)); th.appendChild(d);
+      var cn = mk('div','cname'); cn.appendChild(mk('b', null, c.name)); if (c.gp && c.gp !== c.name) cn.appendChild(document.createTextNode(' · ' + c.gp));
+      th.appendChild(cn);
+    } else {
+      th.appendChild(mk('span','catword', a.cat || 'NEWS'));
+    }
+    if (withBadge) th.appendChild(badge(a.source));
+    th.appendChild(mk('span','code', langCode(a.lang)));
+    return th;
+  }
+  function card(a){
+    var it = mk('article','card');
+    it.setAttribute('data-c', colorOf(a.source));
+    it.appendChild(thumbFor(a, false));
+    var meta = mk('div','card-meta');
+    meta.appendChild(badge(a.source));
+    meta.appendChild(mk('span', null, a.region));
+    meta.appendChild(timeEl(a.published));
+    it.appendChild(meta);
+    var h = mk('h3'); h.appendChild(extLink(a.url, a.title)); it.appendChild(h);
+    it.appendChild(mk('p', null, a.summary));
+    it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
+    var tt = tagsFor(a); if (tt) it.appendChild(tt);
+    var foot = mk('div','card-foot');
+    foot.appendChild(mk('span','cat', a.cat || 'ニュース'));
+    foot.appendChild(extLink(a.url, '原文へ ↗'));
+    it.appendChild(foot);
+    return it;
+  }
+
+  function renderFilters(list){
+    var counts = {};
+    list.forEach(function(a){ counts[a.lang] = (counts[a.lang]||0) + 1; });
+    var keys = ORDER.filter(function(k){ return counts[k]; })
+      .concat(Object.keys(counts).filter(function(k){ return ORDER.indexOf(k) < 0; }));
+    var f = el('filters'); f.textContent = '';
+    [['all','すべて',list.length]].concat(keys.map(function(k){ return [k, langName(k), counts[k]]; }))
+      .forEach(function(x){
+        var b = mk('button'); b.type = 'button';
+        b.setAttribute('aria-pressed', String(state.lang === x[0]));
+        b.appendChild(document.createTextNode(x[1]));
+        b.appendChild(mk('span','n', String(x[2])));
+        b.addEventListener('click', function(){ state.lang = x[0]; renderAll(); });
+        f.appendChild(b);
+      });
+    var bars = el('bars'); bars.textContent = '';
+    var max = 0; keys.forEach(function(k){ if (counts[k] > max) max = counts[k]; });
+    keys.forEach(function(k){
+      var row = mk('div','bar');
+      row.appendChild(mk('span', null, langName(k)));
+      var tr = mk('div','bar-track'); var fi = mk('div','bar-fill');
+      fi.style.width = Math.round(counts[k]/max*100) + '%';
+      tr.appendChild(fi); row.appendChild(tr);
+      row.appendChild(mk('span','num', String(counts[k])));
+      bars.appendChild(row);
+    });
+  }
+
+  function renderFeed(list){
+    var shown = state.lang === 'all' ? list : list.filter(function(a){ return a.lang === state.lang; });
+    if (state.team !== 'all') shown = shown.filter(function(a){ return (a.teams || []).indexOf(state.team) >= 0; });
+    var feed = el('feed'); feed.textContent = '';
+    if (state.team !== 'all' && state.teams[state.team]){
+      var bar = mk('div','team-bar');
+      bar.appendChild(mk('span', null, state.teams[state.team].name + 'の記事を表示しています'));
+      var cl = mk('button','clear','すべてのチームに戻す'); cl.type = 'button';
+      cl.addEventListener('click', function(){ state.team = 'all'; renderAll(); });
+      bar.appendChild(cl);
+      feed.appendChild(bar);
+    }
+    if (state.view === 'team'){
+      var byTeam = {};
+      var pool = state.lang === 'all' ? state.all : state.all.filter(function(a){ return a.lang === state.lang; });
+      pool.forEach(function(a){ (a.teams || []).forEach(function(k){ (byTeam[k] = byTeam[k] || []).push(a); }); });
+      var keys = state.teamOrder.filter(function(k){ return state.team === 'all' || k === state.team; });
+      keys.sort(function(x, y){ return (byTeam[y] || []).length - (byTeam[x] || []).length; });
+      el('count').textContent = keys.length + 'チーム · 記事のあるチームから順に';
+      var tg = mk('div','teams');
+      keys.forEach(function(k){
+        var t = state.teams[k], items = byTeam[k] || [];
+        var sec = mk('section','team'); sec.id = 'team-' + k;
+        sec.style.setProperty('--t1', t.c1); sec.style.setProperty('--t2', t.c2);
+        sec.appendChild(mk('div','team-band'));
+        var inner = mk('div','team-in');
+        var head = mk('div','team-head');
+        head.appendChild(mk('h3', null, t.name));
+        head.appendChild(mk('span','en', t.en));
+        inner.appendChild(head);
+        var facts = mk('div','team-facts');
+        var f1 = mk('span'); f1.appendChild(document.createTextNode('ドライバー ')); f1.appendChild(mk('b', null, t.drivers.join('・'))); facts.appendChild(f1);
+        var f2 = mk('span'); f2.appendChild(document.createTextNode('PU ')); f2.appendChild(mk('b', null, t.pu)); facts.appendChild(f2);
+        var f3 = mk('span'); f3.appendChild(document.createTextNode('記事 ')); f3.appendChild(mk('b', null, items.length + '本')); facts.appendChild(f3);
+        inner.appendChild(facts);
+        if (!items.length) inner.appendChild(mk('p','none','今はこのチームの記事はありません。'));
+        items.forEach(function(a){ inner.appendChild(miniRow(a, true)); });
+        sec.appendChild(inner);
+        tg.appendChild(sec);
+      });
+      feed.appendChild(tg);
+      return;
+    }
+    if (state.view === 'list'){
+      var pool2 = state.lang === 'all' ? state.all : state.all.filter(function(a){ return a.lang === state.lang; });
+      if (state.team !== 'all') pool2 = pool2.filter(function(a){ return (a.teams || []).indexOf(state.team) >= 0; });
+      if (!pool2.length){ el('count').textContent = ''; feed.appendChild(mk('p','empty','この条件の記事は、今はまだありません。')); return; }
+      el('count').textContent = pool2.length + '本の記事 · 新しい順（日本時間）';
+      var lst = mk('div','list'); var lastDay = '';
+      pool2.forEach(function(a){
+        var dayLabel = '';
+        try { dayLabel = new Intl.DateTimeFormat('ja-JP', { timeZone:'Asia/Tokyo', month:'long', day:'numeric', weekday:'short' }).format(new Date(a.published)); } catch(e){}
+        if (dayLabel !== lastDay){ lst.appendChild(mk('h3','day', dayLabel)); lastDay = dayLabel; }
+        var row = mk('article','li'); row.setAttribute('data-c', colorOf(a.source));
+        var hm = '';
+        try { hm = new Intl.DateTimeFormat('ja-JP', { timeZone:'Asia/Tokyo', hour:'2-digit', minute:'2-digit', hour12:false }).format(new Date(a.published)); } catch(e){}
+        var t = mk('time','li-time', hm); t.dateTime = a.published; row.appendChild(t);
+        var src = mk('div','li-src');
+        src.appendChild(badge(a.source));
+        var c = a.circuit && state.circuits[a.circuit];
+        src.appendChild(mk('span','sub', langName(a.lang) + ' · ' + (a.cat || '') + (c ? ' · ' + c.gp : '')));
+        row.appendChild(src);
+        var main = mk('div','li-main');
+        var h = mk('h3'); h.appendChild(extLink(a.url, a.title)); main.appendChild(h);
+        main.appendChild(mk('p', null, a.summary));
+        var tt = tagsFor(a); if (tt) main.appendChild(tt);
+        row.appendChild(main);
+        var go = mk('div','li-go'); go.style.display = 'flex'; go.style.flexDirection = 'column'; go.style.alignItems = 'flex-end'; go.style.gap = '8px';
+        go.appendChild(extLink(a.url, '原文 ↗'));
+        go.appendChild(copyButton(a.title + '\n' + a.url, 'リンクをコピー', true));
+        row.appendChild(go);
+        lst.appendChild(row);
+      });
+      feed.appendChild(lst);
+      return;
+    }
+    if (!shown.length){ el('count').textContent = ''; feed.appendChild(mk('p','empty','この条件の記事は、今はまだありません。')); return; }
+    if (state.view === 'latest'){
+      el('count').textContent = shown.length + '本の記事 · 新しい順';
+      var g = mk('div','grid');
+      shown.forEach(function(a){ g.appendChild(card(a)); });
+      feed.appendChild(g);
+    } else {
+      var groups = {}, order = [];
+      shown.forEach(function(a){
+        if (!groups[a.source]){ groups[a.source] = []; order.push(a.source); }
+        groups[a.source].push(a);
+      });
+      order.sort(function(x, y){ return groups[y].length - groups[x].length; });
+      el('count').textContent = order.length + '媒体 · ' + shown.length + '本の記事 · 各媒体のピックアップ付き';
+      var legend = mk('nav','legend'); legend.setAttribute('aria-label','媒体へ移動');
+      order.forEach(function(src){
+        var l = mk('a'); l.href = '#' + slug(src);
+        l.appendChild(badge(src));
+        l.appendChild(mk('span', null, ' ' + groups[src].length));
+        l.addEventListener('click', function(e){ var t = el(slug(src)); if (t){ e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); } });
+        legend.appendChild(l);
+      });
+      feed.appendChild(legend);
+      var wrapG = mk('div','groups');
+      order.forEach(function(src){
+        var items = groups[src].slice(), first = items[0];
+        var pi = 0;
+        for (var i = 0; i < items.length; i++){ if (items[i].pick){ pi = i; break; } }
+        var pick = items.splice(pi, 1)[0];
+        var sec = mk('section','group'); sec.id = slug(src);
+        sec.setAttribute('data-c', colorOf(src));
+        var head = mk('div','group-head');
+        head.appendChild(mk('h3', null, src));
+        head.appendChild(mk('span', null, langName(first.lang) + ' · ' + first.region + ' · ' + groups[src].length + '本'));
+        sec.appendChild(head);
+        var pk = mk('article','pick');
+        pk.appendChild(mk('span','pick-label','ピックアップ'));
+        pk.appendChild(thumbFor(pick, false));
+        var ph = mk('h4'); ph.appendChild(extLink(pick.url, pick.title)); pk.appendChild(ph);
+        pk.appendChild(mk('p', null, pick.summary));
+        var pm = mk('div','card-meta');
+        pm.appendChild(mk('span', null, pick.cat || ''));
+        pm.appendChild(timeEl(pick.published));
+        pm.appendChild(extLink(pick.url, '原文へ ↗'));
+        pk.appendChild(pm);
+        var pt = tagsFor(pick); if (pt) pk.appendChild(pt);
+        sec.appendChild(pk);
+        if (items.length) sec.appendChild(mk('div','more','ほかの記事'));
+        items.forEach(function(a){ sec.appendChild(miniRow(a, false)); });
+        wrapG.appendChild(sec);
+      });
+      feed.appendChild(wrapG);
+    }
+  }
+
+  function miniRow(a, withSource){
+    var c = a.circuit && state.circuits[a.circuit];
+    var row = mk('div','mini');
+    row.setAttribute('data-c', colorOf(a.source));
+    var ar = extLink(a.url, null, 'mini-art'); ar.setAttribute('aria-hidden','true'); ar.tabIndex = -1;
+    if (c) ar.appendChild(circuitSvg(c, false)); else ar.appendChild(mk('span','catword', a.cat || 'NEWS'));
+    row.appendChild(ar);
+    var body = mk('div');
+    var h = mk('h4'); h.appendChild(extLink(a.url, a.title)); body.appendChild(h);
+    var meta = mk('div','card-meta');
+    if (withSource) meta.appendChild(badge(a.source));
+    if (c) meta.appendChild(mk('span', null, c.gp));
+    meta.appendChild(mk('span', null, a.cat || ''));
+    meta.appendChild(timeEl(a.published));
+    body.appendChild(meta);
+    row.appendChild(body);
+    return row;
+  }
+
+  function renderAll(){
+    var d = state.data; if (!d) return;
+    var all = (d.articles || []).slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); });
+    var hero = all.filter(function(a){ return a.featured; })[0] || all[0];
+    var rest = all.filter(function(a){ return a !== hero; });
+    state.all = all;
+    if (hero) renderHero(hero);
+    renderFilters(rest);
+    renderTeamFilter(all);
+    renderFeed(rest);
+    el('view-latest').setAttribute('aria-pressed', String(state.view === 'latest'));
+    el('view-source').setAttribute('aria-pressed', String(state.view === 'source'));
+    el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
+    el('view-list').setAttribute('aria-pressed', String(state.view === 'list'));
+    if (d.updatedAt) el('updated').textContent = (state.fromSnapshot ? '保存済みの記事 ' : '最終更新 ') + jst(d.updatedAt, true);
+  }
+
+  el('view-latest').addEventListener('click', function(){ state.view = 'latest'; renderAll(); });
+  el('view-source').addEventListener('click', function(){ state.view = 'source'; renderAll(); });
+  el('view-team').addEventListener('click', function(){ state.view = 'team'; renderAll(); });
+  el('view-list').addEventListener('click', function(){ state.view = 'list'; renderAll(); });
+
+  var SITE_URL = 'https://farpaz1888.github.io/gridwalk/';
+  function copyText(text, btn, label){
+    function done(){ btn.textContent = 'コピーしました'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = label; btn.classList.remove('done'); }, 2000); }
+    function fallback(){
+      var next = btn.nextElementSibling;
+      if (next && next.classList.contains('copy-fallback')){ next.select(); return; }
+      var inp = mk('input','copy-fallback'); inp.readOnly = true; inp.value = text; inp.setAttribute('aria-label','コピーするテキスト');
+      btn.insertAdjacentElement('afterend', inp); inp.focus(); inp.select();
+      btn.textContent = '下の文字を長押し（選択）してコピー';
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done, fallback); }
+      else fallback();
+    } catch(e){ fallback(); }
+  }
+  function copyButton(text, label, small){
+    var b = mk('button','copybtn' + (small ? ' small' : ''), label); b.type = 'button';
+    b.addEventListener('click', function(){ copyText(text, b, label); });
+    return b;
+  }
+  el('copy-site').addEventListener('click', function(){ copyText('F1 Grid Walk — 世界のF1ニュースを日本語で\n' + SITE_URL, el('copy-site'), 'このサイトのリンクをコピー'); });
+
+  /* ---------- race week, standings, calendar ---------- */
+  function fmtJST(iso, opts){
+    try { return new Intl.DateTimeFormat('ja-JP', Object.assign({ timeZone:'Asia/Tokyo' }, opts)).format(new Date(iso)); } catch(e){ return ''; }
+  }
+  function dur(ms){
+    var m = Math.max(0, Math.floor(ms / 60000)), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
+    return { d:d, h:h, m:mm };
+  }
+  function countNode(ms){
+    var x = dur(ms), n = mk('span','num');
+    function part(v, u){ n.appendChild(document.createTextNode(String(v))); n.appendChild(mk('small', null, u)); }
+    if (x.d) part(x.d, '日');
+    part(x.h, '時間'); if (!x.d) part(x.m, '分');
+    return n;
+  }
+  function renderWeekend(){
+    var s = state.season; if (!s || !s.weekend) return;
+    var w = s.weekend, now = Date.now(), box = el('wk-main'); box.textContent = '';
+    var c = state.circuits[w.circuit];
+    var eb = mk('div','wk-eyebrow');
+    eb.appendChild(mk('b', null, '第' + w.round + '戦'));
+    if (c) eb.appendChild(mk('span', null, c.name));
+    if (w.laps) eb.appendChild(mk('span', null, w.laps + '周' + (w.lengthKm ? ' · 1周 ' + w.lengthKm + 'km' : '')));
+    box.appendChild(eb);
+    var left = mk('div');
+    left.appendChild(mk('h2','wk-title', w.gp));
+    var race = w.sessions[w.sessions.length - 1];
+    var cur = null, next = null;
+    w.sessions.forEach(function(x){
+      var a = new Date(x.start).getTime(), b = new Date(x.end).getTime();
+      if (a <= now && now < b) cur = x;
+      if (!next && a > now) next = x;
+    });
+    var cnt = mk('div','wk-count');
+    var rs = new Date(race.start).getTime(), re = new Date(race.end).getTime();
+    if (now < rs){ cnt.appendChild(mk('span','lbl','決勝スタートまで')); cnt.appendChild(countNode(rs - now)); }
+    else if (now < re){ cnt.appendChild(mk('span','num','決勝 開催中')); }
+    else { cnt.appendChild(mk('span','lbl','決勝は終了しました。結果は次の更新でお届けします。')); }
+    left.appendChild(cnt);
+    left.appendChild(mk('p','wk-when', '決勝 ' + fmtJST(race.start, { month:'long', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false }) + ' スタート（日本時間）'));
+    if (w.note) left.appendChild(mk('p','wk-note', w.note));
+    box.appendChild(left);
+    var mp = mk('div','wk-map');
+    if (c){ var sg = circuitSvg(c, true); sg.setAttribute('role','img'); sg.setAttribute('aria-label', c.name + 'のコース図'); mp.appendChild(sg); }
+    box.appendChild(mp);
+    var ul = mk('ul','sessions');
+    w.sessions.forEach(function(x){
+      var a = new Date(x.start).getTime(), b = new Date(x.end).getTime();
+      var li = mk('li', b <= now ? 'done' : (x === cur ? 'now' : (x === next ? 'next' : '')));
+      li.appendChild(mk('b', null, x.name));
+      li.appendChild(mk('span','t', fmtJST(x.start, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })));
+      var st = b <= now ? ('終了' + (x.result ? ' · ' + x.result : '')) : (x === cur ? 'いま開催中' : (function(){ var d = dur(a - now); return 'あと ' + (d.d ? d.d + '日' : '') + d.h + '時間' + (d.d ? '' : d.m + '分'); })());
+      li.appendChild(mk('span','st', st));
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+  function renderStandings(){
+    var s = state.season; if (!s) return;
+    var box = el('standings'); box.textContent = '';
+    box.appendChild(mk('h2', null, 'ランキング'));
+    if (s.standingsAfter) box.appendChild(mk('div','sub', '第' + s.standingsAfter.round + '戦 ' + s.standingsAfter.gp + ' 終了時点'));
+    var tabs = mk('div','stand-tabs'); tabs.setAttribute('role','group'); tabs.setAttribute('aria-label','ランキングの種類');
+    [['d','ドライバー'],['c','チーム']].forEach(function(t){
+      var b = mk('button', null, t[1]); b.type = 'button';
+      b.setAttribute('aria-pressed', String(state.standTab === t[0]));
+      b.addEventListener('click', function(){ state.standTab = t[0]; renderStandings(); });
+      tabs.appendChild(b);
+    });
+    box.appendChild(tabs);
+    var rows = state.standTab === 'c' ? (s.constructors || []) : (s.drivers || []);
+    var max = rows.length ? rows[0].pts : 1;
+    rows.forEach(function(r){
+      var tm = state.teams[r.team] || {};
+      var row = mk('div','srow' + (r.pos === 1 ? ' lead' : ''));
+      row.style.setProperty('--t1', tm.c1 || 'var(--moss)'); row.style.setProperty('--t2', tm.c2 || 'var(--line)');
+      row.appendChild(mk('span','p', String(r.pos)));
+      row.appendChild(mk('span','tdot'));
+      var n = mk('span','n', state.standTab === 'c' ? (tm.name || r.team) : r.name);
+      if (state.standTab !== 'c' && tm.name) n.appendChild(mk('small', null, tm.name));
+      row.appendChild(n);
+      var bar = mk('span','b'); var fill = mk('i'); fill.style.width = Math.round(r.pts / max * 100) + '%'; bar.appendChild(fill); row.appendChild(bar);
+      row.appendChild(mk('span','v', String(r.pts)));
+      box.appendChild(row);
+    });
+    if (state.standTab === 'c' && rows.length < 11) box.appendChild(mk('div','sub', '上位' + rows.length + 'チームを表示しています。'));
+  }
+  function renderCalendar(){
+    var s = state.season; if (!s || !s.calendar) return;
+    var box = el('calendar'); box.textContent = '';
+    var cur = s.weekend ? s.weekend.round : null, done = 0, left = 0;
+    s.calendar.forEach(function(r){
+      var isNow = r.round === cur && !r.winner;
+      var d = mk('div','rd' + (r.cancelled ? ' off' : '') + (isNow ? ' now' : ''));
+      d.appendChild(mk('span','rn', r.round ? 'Rd.' + r.round : '—'));
+      var c = state.circuits[r.circuit];
+      var mp = mk('div','mp'); if (c) mp.appendChild(circuitSvg(c, false)); d.appendChild(mp);
+      d.appendChild(mk('span','g', r.gp));
+      if (r.cancelled){ d.appendChild(mk('span','flag','中止')); }
+      else {
+        d.appendChild(mk('span','d', fmtJST(r.date + 'T12:00:00Z', { month:'numeric', day:'numeric', weekday:'short' })));
+        if (r.winner){ var w = mk('span','w'); w.appendChild(document.createTextNode('優勝 ')); w.appendChild(mk('b', null, r.winner)); d.appendChild(w); done++; }
+        else if (isNow){ d.appendChild(mk('span','flag','今週')); left++; }
+        else { d.appendChild(mk('span','flag', r.tbc ? r.tbc : '予定')); left++; }
+      }
+      box.appendChild(d);
+    });
+    el('cal-note').textContent = done + '戦終了 · 残り' + left + '戦（中止2戦）';
+    var nowEl = box.querySelector('.rd.now');
+    if (nowEl){ box.scrollLeft = Math.max(0, nowEl.offsetLeft - box.offsetLeft - 24); }
+  }
+  function renderSeason(){
+    if (!state.season) return;
+    el('raceweek').hidden = false;
+    renderWeekend(); renderStandings(); renderCalendar();
+  }
+  setInterval(function(){ if (state.season) renderWeekend(); }, 30000);
+
+  function renderTeamFilter(all){
+    var box = el('teamfilter'); box.textContent = '';
+    if (!state.teamOrder.length) return;
+    var counts = {};
+    all.forEach(function(a){ (a.teams || []).forEach(function(k){ counts[k] = (counts[k] || 0) + 1; }); });
+    state.teamOrder.forEach(function(k){ var b = teamTag(k, counts[k] || 0); if (b) box.appendChild(b); });
+  }
+
+  function getJSON(u){ return fetch(u, { cache:'no-store' }).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }); }
+  Promise.all([
+    getJSON('articles.json'),
+    getJSON('circuits.json').catch(function(){ return { circuits:{} }; }),
+    getJSON('teams.json').catch(function(){ return { teams:{}, order:[] }; }),
+    getJSON('season.json').catch(function(){ var s = JSON.parse(el('snapshot').textContent); return s.season || null; })
+  ]).catch(function(){
+    var s = JSON.parse(el('snapshot').textContent);
+    state.fromSnapshot = true;
+    return [s.articles, s.circuits, s.teams, s.season || null];
+  }).then(function(res){
+    state.circuits = res[1].circuits || {};
+    state.teams = res[2].teams || {};
+    state.teamOrder = (res[2].order || Object.keys(state.teams)).filter(function(k){ return state.teams[k]; });
+    state.season = res[3] || null;
+    state.data = res[0];
+    renderAll();
+    renderSeason();
+  }).catch(function(){
+    el('updated').textContent = '記事を読み込めませんでした';
+    el('hero-title').textContent = '記事を読み込めませんでした。少し時間をおいて、ページを再読み込みしてください。';
+  });
+})();
+</script>
+
+</body>
+</html>

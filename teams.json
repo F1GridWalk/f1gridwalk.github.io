@@ -1,0 +1,18 @@
+{
+  "season": 2026,
+  "note": "チームカラーはサイト独自の配色で、各チームの公式ロゴやデザインではありません。",
+  "teams": {
+    "mercedes":    { "name": "メルセデス",       "en": "Mercedes",      "c1": "#00A19C", "c2": "#B9BEC2", "pu": "メルセデス",         "drivers": ["ラッセル", "アントネッリ"] },
+    "ferrari":     { "name": "フェラーリ",       "en": "Ferrari",       "c1": "#D40000", "c2": "#F2C200", "pu": "フェラーリ",         "drivers": ["ルクレール", "ハミルトン"] },
+    "mclaren":     { "name": "マクラーレン",     "en": "McLaren",       "c1": "#F07800", "c2": "#2A2A2A", "pu": "メルセデス",         "drivers": ["ノリス", "ピアストリ"] },
+    "redbull":     { "name": "レッドブル",       "en": "Red Bull",      "c1": "#1E2F6E", "c2": "#E0141E", "pu": "レッドブル・フォード", "drivers": ["フェルスタッペン", "アジャー"] },
+    "astonmartin": { "name": "アストンマーティン", "en": "Aston Martin",  "c1": "#00665E", "c2": "#C4D600", "pu": "ホンダ",             "drivers": ["アロンソ", "ストロール"] },
+    "alpine":      { "name": "アルピーヌ",       "en": "Alpine",        "c1": "#0072BC", "c2": "#F07EB0", "pu": "メルセデス",         "drivers": ["ガスリー", "コラピント"] },
+    "williams":    { "name": "ウィリアムズ",     "en": "Williams",      "c1": "#0096D6", "c2": "#0B1E3F", "pu": "メルセデス",         "drivers": ["アルボン", "サインツ"] },
+    "racingbulls": { "name": "レーシングブルズ", "en": "Racing Bulls",  "c1": "#2D4FD6", "c2": "#C9CCD1", "pu": "レッドブル・フォード", "drivers": ["ローソン", "リンドブラッド"] },
+    "haas":        { "name": "ハース",           "en": "Haas",          "c1": "#9A9EA2", "c2": "#E0102B", "pu": "フェラーリ",         "drivers": ["オコン", "ベアマン"] },
+    "audi":        { "name": "アウディ",         "en": "Audi",          "c1": "#6E7378", "c2": "#E2062B", "pu": "アウディ",           "drivers": ["ヒュルケンベルグ", "ボルトレート"] },
+    "cadillac":    { "name": "キャデラック",     "en": "Cadillac",      "c1": "#1B1B1B", "c2": "#B8A06A", "pu": "フェラーリ",         "drivers": ["ペレス", "ボッタス"] }
+  },
+  "order": ["mercedes", "ferrari", "mclaren", "redbull", "alpine", "astonmartin", "williams", "racingbulls", "haas", "audi", "cadillac"]
+}

@@ -1,0 +1,65 @@
+{
+  "updatedAt": "2026-09-26T18:20:00+09:00",
+  "season": 2026,
+  "standingsAfter": { "round": 14, "gp": "スペインGP（マドリード）" },
+  "drivers": [
+    { "pos": 1,  "name": "アントネッリ",     "team": "mercedes",    "pts": 292 },
+    { "pos": 2,  "name": "ラッセル",         "team": "mercedes",    "pts": 211 },
+    { "pos": 3,  "name": "ハミルトン",       "team": "ferrari",     "pts": 191 },
+    { "pos": 4,  "name": "ノリス",           "team": "mclaren",     "pts": 186 },
+    { "pos": 5,  "name": "ルクレール",       "team": "ferrari",     "pts": 167 },
+    { "pos": 6,  "name": "フェルスタッペン", "team": "redbull",     "pts": 145 },
+    { "pos": 7,  "name": "ピアストリ",       "team": "mclaren",     "pts": 120 },
+    { "pos": 8,  "name": "アジャー",         "team": "redbull",     "pts": 71 },
+    { "pos": 9,  "name": "ローソン",         "team": "racingbulls", "pts": 59 },
+    { "pos": 10, "name": "ガスリー",         "team": "alpine",      "pts": 41 }
+  ],
+  "constructors": [
+    { "pos": 1, "team": "mercedes",    "pts": 503 },
+    { "pos": 2, "team": "ferrari",     "pts": 358 },
+    { "pos": 3, "team": "mclaren",     "pts": 306 },
+    { "pos": 4, "team": "redbull",     "pts": 230 },
+    { "pos": 5, "team": "racingbulls", "pts": 77 }
+  ],
+  "weekend": {
+    "round": 15,
+    "gp": "アゼルバイジャンGP",
+    "circuit": "baku",
+    "laps": 51,
+    "lengthKm": 6.003,
+    "note": "今年は国の追悼の日を避けるため、決勝が土曜日に行われます。",
+    "sessions": [
+      { "name": "フリー走行1", "start": "2026-09-24T08:30:00Z", "end": "2026-09-24T09:30:00Z" },
+      { "name": "フリー走行2", "start": "2026-09-24T12:00:00Z", "end": "2026-09-24T13:00:00Z" },
+      { "name": "フリー走行3", "start": "2026-09-25T08:30:00Z", "end": "2026-09-25T09:30:00Z" },
+      { "name": "予選",        "start": "2026-09-25T12:00:00Z", "end": "2026-09-25T13:00:00Z", "result": "ポール: ラッセル" },
+      { "name": "決勝",        "start": "2026-09-26T11:00:00Z", "end": "2026-09-26T13:00:00Z" }
+    ]
+  },
+  "calendar": [
+    { "round": 1,  "gp": "オーストラリアGP",   "circuit": "melbourne",   "date": "2026-03-08", "winner": "ラッセル" },
+    { "round": 2,  "gp": "中国GP",             "circuit": "shanghai",    "date": "2026-03-15", "winner": "アントネッリ" },
+    { "round": 3,  "gp": "日本GP",             "circuit": "suzuka",      "date": "2026-03-29", "winner": "アントネッリ" },
+    { "round": null, "gp": "バーレーンGP",     "circuit": "bahrain",     "date": null,         "cancelled": true },
+    { "round": null, "gp": "サウジアラビアGP", "circuit": "jeddah",      "date": null,         "cancelled": true },
+    { "round": 4,  "gp": "マイアミGP",         "circuit": "miami",       "date": "2026-05-03", "winner": "アントネッリ" },
+    { "round": 5,  "gp": "カナダGP",           "circuit": "montreal",    "date": "2026-05-24", "winner": "アントネッリ" },
+    { "round": 6,  "gp": "モナコGP",           "circuit": "monaco",      "date": "2026-06-07", "winner": "アントネッリ" },
+    { "round": 7,  "gp": "バルセロナGP",       "circuit": "barcelona",   "date": "2026-06-14", "winner": "ハミルトン" },
+    { "round": 8,  "gp": "オーストリアGP",     "circuit": "redbullring", "date": "2026-06-28", "winner": "ラッセル" },
+    { "round": 9,  "gp": "イギリスGP",         "circuit": "silverstone", "date": "2026-07-05", "winner": "ルクレール" },
+    { "round": 10, "gp": "ベルギーGP",         "circuit": "spa",         "date": "2026-07-19", "winner": "アントネッリ" },
+    { "round": 11, "gp": "ハンガリーGP",       "circuit": "hungaroring", "date": "2026-07-26", "winner": "ノリス" },
+    { "round": 12, "gp": "オランダGP",         "circuit": "zandvoort",   "date": "2026-08-23", "winner": "ノリス" },
+    { "round": 13, "gp": "イタリアGP",         "circuit": "monza",       "date": "2026-09-06", "winner": "アントネッリ" },
+    { "round": 14, "gp": "スペインGP",         "circuit": "madring",     "date": "2026-09-13", "winner": "アントネッリ" },
+    { "round": 15, "gp": "アゼルバイジャンGP", "circuit": "baku",        "date": "2026-09-26" },
+    { "round": 16, "gp": "シンガポールGP",     "circuit": "singapore",   "date": "2026-10-11" },
+    { "round": 17, "gp": "アメリカGP",         "circuit": "austin",      "date": "2026-10-25" },
+    { "round": 18, "gp": "メキシコシティGP",   "circuit": "mexico",      "date": "2026-11-01" },
+    { "round": 19, "gp": "サンパウロGP",       "circuit": "interlagos",  "date": "2026-11-08" },
+    { "round": 20, "gp": "ラスベガスGP",       "circuit": "lasvegas",    "date": "2026-11-21" },
+    { "round": 21, "gp": "カタールGP",         "circuit": "lusail",      "date": "2026-11-29", "tbc": "開催判断は10月中旬" },
+    { "round": 22, "gp": "アブダビGP",         "circuit": "yasmarina",   "date": "2026-12-06", "tbc": "開催判断は10月中旬" }
+  ]
+}
