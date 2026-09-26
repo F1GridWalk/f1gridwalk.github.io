@@ -939,11 +939,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 /* this week: outlet names small, headlines lead */
 @media (min-width:1001px){
   .wrap.dash .hero .trend-list li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:8px;row-gap:3px;align-items:center;padding:10px 0}
-  .wrap.dash .hero .trend-list .srcbadge{font-size:10.5px;font-weight:600;gap:5px;white-space:nowrap}
-  .wrap.dash .hero .trend-list .srcbadge::before{width:12px;height:8px}
-  .wrap.dash .hero .trend-list .tl-lang{display:inline;font-size:9.5px;letter-spacing:.06em}
+  .wrap.dash .hero .trend-list .srcbadge{font-size:9.5px;font-weight:500;gap:4px;white-space:nowrap;opacity:.9}
+  .wrap.dash .hero .trend-list .srcbadge::before{width:10px;height:7px}
+  .wrap.dash .hero .trend-list .tl-lang{display:inline;font-size:8.5px;letter-spacing:.06em}
   .wrap.dash .hero .trend-list .tl-title{grid-column:1 / -1;font-size:15px;font-weight:600;line-height:1.6}
-  .wrap.dash .trend-read .read{font-size:12.5px}
+  .wrap.dash .trend-read .read{font-size:11.5px}
+  /* summaries: show them in full */
+  .wrap.dash .dash-main .card p,.wrap.dash .dash-main .card:first-child p,.wrap.dash .grow p,.wrap.dash .nrow p{display:block;-webkit-line-clamp:unset;overflow:visible}
+  .wrap.dash .dash-main .card p{font-size:13.5px;line-height:1.85}
+  .wrap.dash .dash-main .hero-sum.trend-sum{max-width:56em}
   .wrap.dash .trend-read{font-size:12px}
 }
 
