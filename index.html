@@ -742,7 +742,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <div><strong>F1 Grid Walk</strong>世界のF1を、日本語で。</div>
     </div>
     <div class="site-url"><span>このサイトのアドレス</span><code id="site-url-text">https://claude.ai/artifact/VSMwahYUuycNEE7BudvFJT</code></div>
-    <p class="foot-note">記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。チーム名に添えた色はサイト独自の配色で、各チームのロゴやデザインではありません。コース図のデータ: bacinger/f1-circuits（MIT License）。</p>
+    <p class="foot-note">記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。チーム名に添えた色はサイト独自の配色で、各チームのロゴやデザインではありません。アクセス数は公開サイトでのみ、Cookieを使わないGoatCounterで数えています。コース図のデータ: bacinger/f1-circuits（MIT License）。</p>
   </div>
 </footer>
 
@@ -819,6 +819,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   function langName(k){ return (LANG[k] && LANG[k].name) || String(k).toUpperCase(); }
   function langCode(k){ return (LANG[k] && LANG[k].code) || String(k).toUpperCase(); }
+  /* click counting (GoatCounter, public site only; no cookies) */
+  document.addEventListener('click', function(e){
+    var link = e.target.closest && e.target.closest('a[href^="http"]');
+    if (!link || !window.goatcounter || !window.goatcounter.count) return;
+    var art = (state.byUrl || {})[link.href];
+    if (!art) return;
+    try { window.goatcounter.count({ path:'click/' + art.id, title:art.source + ' | ' + art.title, event:true }); } catch(err){}
+  }, true);
   function extLink(url, text, cls){
     var a = mk('a', cls, text);
     a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
@@ -1180,6 +1188,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var d = state.data; if (!d) return;
     var all = (d.articles || []).slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); });
     state.all = all;
+    state.byUrl = {}; all.forEach(function(a){ state.byUrl[a.url] = a; });
     var tr = trending(all), rest;
     if (tr){ renderTrending(tr); rest = all; }
     else {
@@ -1516,5 +1525,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 })();
 </script>
 
+<script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
