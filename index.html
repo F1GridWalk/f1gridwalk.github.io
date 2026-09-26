@@ -483,6 +483,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .gnote{margin:8px 0 0;font-size:11.5px;line-height:1.7;color:var(--muted);border-top:1px dashed var(--chip-line);padding-top:8px}
 /* note: personal analysis */
 .note-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}
+@media (min-width:1100px){ .note-cols{grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:0 26px} #notes-free{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px} #notes-free .nrow:nth-last-child(-n+2):nth-child(odd),#notes-free .nrow:last-child{border-bottom:0} }
 .note-colh{display:flex;align-items:center;gap:8px;margin:4px 0 2px;padding-bottom:8px;border-bottom:2px solid var(--ink);font-size:13px;font-weight:700;color:var(--ink-2)}
 .fee{display:inline-flex;align-items:center;padding:0 7px;border-radius:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;line-height:18px;white-space:nowrap;border:1px solid var(--ink);color:var(--ink);background:transparent}
 .fee.paid{background:var(--clay);border-color:var(--clay);color:var(--surface)}
@@ -495,6 +496,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .nrow .card-meta{font-size:11.5px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;color:var(--muted)}
 .nrow .author{font-weight:700;color:var(--ink-2)}
 .nrow .price{color:var(--clay);font-weight:700}
+.nrow .norig{margin:-1px 0 4px;font-family:var(--latin);font-size:12px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.plat{font-size:10.5px;font-weight:700;letter-spacing:.02em;color:var(--ink-2)}
+.plat::before{content:"";display:inline-block;width:7px;height:7px;border-radius:2px;margin-right:4px;vertical-align:0;background:currentColor}
+.plat-note{color:#1E8F7E}.plat-substack{color:#C8561E}.plat-blog{color:var(--ink-2)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .plat-note{color:#5FD0BD} :root:not([data-theme="light"]) .plat-substack{color:#F09058} }
+:root[data-theme="dark"] .plat-note{color:#5FD0BD} :root[data-theme="dark"] .plat-substack{color:#F09058}
 @media (max-width:600px){
   .notebox .band-head{flex-direction:column;gap:0}
   .notebox .band-head .count{font-size:9.5px}
@@ -506,6 +513,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .nrow p{font-size:11px;line-height:1.55;-webkit-line-clamp:2;margin-bottom:3px}
   .nrow .card-meta{font-size:9.5px;gap:2px 6px}
   .nrow .card-meta .tm{display:none}
+  .nrow .norig{font-size:10.5px}
+  .plat{font-size:9px}
   .fee{font-size:8.5px;line-height:14px;padding:0 4px}
 }
 /* numbers */
@@ -688,7 +697,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <a href="#news">ニュース</a>
     <a href="#tech">テック</a>
     <a href="#gossip">パドック</a>
-    <a href="#notes">note</a>
+    <a href="#notes">個人分析</a>
     <a href="#numbers">数字</a>
     <a href="#teams-band">チーム</a>
     <a href="#sources">媒体一覧</a>
@@ -732,13 +741,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           <p class="gnote">報道で出たうわさや、F1情報通などの掲示板まとめで話題になっていることを、こちらで短く要約したものです。事実として確認された情報ではありません。</p>
         </section>
       </div>
-      <section class="dbox notebox" id="notes" aria-label="noteの個人分析" hidden>
-        <div class="band-head"><h2>note｜個人の分析</h2><span class="count">ファンやライターがnoteに書いた考察 · 報道ではなく個人の見解です</span></div>
+      <section class="dbox notebox" id="notes" aria-label="個人の分析" hidden>
+        <div class="band-head"><h2>個人の分析</h2><span class="count">note · Substack · 個人ブログから · 報道ではなく個人の見解です</span></div>
         <div class="note-cols">
           <div class="note-col"><h3 class="note-colh"><span class="fee free">無料</span>全文を無料で読める</h3><div id="notes-free"></div></div>
           <div class="note-col"><h3 class="note-colh"><span class="fee paid">有料</span>一部だけ無料・続きは有料</h3><div id="notes-paid"></div></div>
         </div>
-        <p class="gnote">要約はこちらで短くまとめたものです。有料の記事は、無料で公開されている部分だけをもとに要約しています。</p>
+        <p class="gnote">要約はこちらで短くまとめたものです。英語の記事は見出しを日本語に訳し、原題を添えています。有料の記事は、無料で公開されている部分だけをもとに要約しています。</p>
       </section>
       <section id="news" aria-label="記事一覧">
         <div class="toolbar">
@@ -784,7 +793,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </div>
       <div class="panel outline">
         <h2>翻訳について</h2>
-        <p>ニュース欄に載せているのは、登録や購読をしなくても無料で全文を読める記事だけです。noteの欄だけは有料の記事も載せていて、「有料」の印を付け、無料で読める部分だけをもとに要約しています。「パドックウォーク」の欄と「未確認」「掲示板まとめ」の印が付いた記事は未確認の話題で、確定した情報ではありません。見出しは日本語に訳し、概要は各記事の要点を短くまとめたものです。本文は、書いた人の媒体でどうぞ。すべての記事に原題と原文へのリンクを添えています。コース図は記事に関係するサーキットのレイアウトです。</p>
+        <p>ニュース欄に載せているのは、登録や購読をしなくても無料で全文を読める記事だけです。「個人の分析」の欄だけは有料の記事も載せていて、「有料」の印を付け、無料で読める部分だけをもとに要約しています。「パドックウォーク」の欄と「未確認」「掲示板まとめ」の印が付いた記事は未確認の話題で、確定した情報ではありません。見出しは日本語に訳し、概要は各記事の要点を短くまとめたものです。本文は、書いた人の媒体でどうぞ。すべての記事に原題と原文へのリンクを添えています。コース図は記事に関係するサーキットのレイアウトです。</p>
       </div>
       <div class="panel moss">
         <h2>1日4回、世界のグリッドをひと歩き。</h2>
@@ -1344,13 +1353,18 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var mw = mk('div','more-row'); more(mw, 'うわさを全部 →', 'rumor'); more(mw, '掲示板まとめを全部 →', 'fan'); gl.appendChild(mw);
     el('geek').hidden = !(tech.length || gos.length);
   }
+  var PLAT = { note:'note', substack:'Substack', blog:'ブログ' };
   function noteRow(n){
     var row = mk('div','nrow');
     var h = mk('h4'); h.appendChild(extLink(n.url, n.title)); row.appendChild(h);
+    if (n.orig && n.orig !== n.title) row.appendChild(mk('div','norig', n.orig));
     row.appendChild(mk('p', null, n.summary));
     var meta = mk('div','card-meta');
     meta.appendChild(mk('span', 'fee ' + (n.paid ? 'paid' : 'free'), n.paid ? '有料' : '無料'));
-    meta.appendChild(mk('span','author', n.author));
+    var pf = n.platform || 'note';
+    meta.appendChild(mk('span', 'plat plat-' + pf, PLAT[pf] || pf));
+    meta.appendChild(mk('span','author', n.author + (n.site && n.site !== n.author ? '（' + n.site + '）' : '')));
+    if (n.lang && n.lang !== 'ja') meta.appendChild(mk('span', null, langCode(n.lang)));
     if (n.cat) meta.appendChild(mk('span', null, n.cat));
     meta.appendChild(timeEl(n.published));
     if (n.paid && n.price) meta.appendChild(mk('span','price', n.price));
@@ -1360,10 +1374,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   function renderNotes(){
     var list = ((state.notes || {}).notes || []).slice().sort(function(a, b){ return new Date(b.published) - new Date(a.published); });
-    var fr = list.filter(function(n){ return !n.paid; }).slice(0, 6), pd = list.filter(function(n){ return n.paid; }).slice(0, 6);
+    var fr = list.filter(function(n){ return !n.paid; }).slice(0, 8), pd = list.filter(function(n){ return n.paid; }).slice(0, 6);
     var fl = el('notes-free'), pl = el('notes-paid'); fl.textContent = ''; pl.textContent = '';
     state.noteByUrl = {};
-    list.forEach(function(n){ state.noteByUrl[n.url] = { id:n.id, source:'note ' + n.author, title:n.title }; });
+    list.forEach(function(n){ state.noteByUrl[n.url] = { id:n.id, source:(n.platform || 'note') + ' ' + n.author, title:n.title }; });
     fr.forEach(function(n){ fl.appendChild(noteRow(n)); });
     pd.forEach(function(n){ pl.appendChild(noteRow(n)); });
     if (!fr.length) fl.appendChild(mk('p','empty','今は無料の記事がありません。'));
