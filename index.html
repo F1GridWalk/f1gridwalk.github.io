@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>F1 Grid Walk｜世界のF1ニュースを日本語で</title>
 <meta name="description" content="世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語で。各国の記事の見出しを翻訳し、短い要約と原文へのリンクを1日4回お届けします。">
-<link rel="canonical" href="https://farpaz1888.github.io/gridwalk/">
+<link rel="canonical" href="https://f1gridwalk.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="F1 Grid Walk">
 <meta property="og:title" content="F1 Grid Walk｜世界のF1ニュースを日本語で">
 <meta property="og:description" content="世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語の見出しと要約で。1日4回更新。">
-<meta property="og:url" content="https://farpaz1888.github.io/gridwalk/">
+<meta property="og:url" content="https://f1gridwalk.github.io/">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 </head>
@@ -1281,7 +1281,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   el('view-team').addEventListener('click', function(){ state.view = 'team'; renderAll(); });
   el('view-list').addEventListener('click', function(){ state.view = 'list'; renderAll(); });
 
-  var SITE_URL = 'https://farpaz1888.github.io/gridwalk/';
+  var SITE_URL = 'https://f1gridwalk.github.io/';
   function copyText(text, btn, label){
     function done(){ btn.textContent = 'コピーしました'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = label; btn.classList.remove('done'); }, 2000); }
     function fallback(){
@@ -1304,7 +1304,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   if (SITE_URL.indexOf('github.io') < 0){
     var nb = mk('div','copy-note');
     nb.appendChild(document.createTextNode('これは作業用のコピーです。1日4回の自動更新は公開サイトに入ります → '));
-    var nl = extLink('https://farpaz1888.github.io/gridwalk/', '公開サイトを開く'); nb.appendChild(nl);
+    var nl = extLink('https://f1gridwalk.github.io/', '公開サイトを開く'); nb.appendChild(nl);
     document.body.insertBefore(nb, document.body.firstChild);
   }
   el('copy-site').addEventListener('click', function(){ copyText('F1 Grid Walk — 世界のF1ニュースを日本語で\n' + SITE_URL, el('copy-site'), 'このサイトのリンクをコピー'); });
