@@ -936,6 +936,17 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 :root[data-theme="dark"] .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)}
 @media (max-width:600px){ .dash-main .card .card-meta .srcbadge::before{width:11px;height:7px} }
 
+/* this week: outlet names small, headlines lead */
+@media (min-width:1001px){
+  .wrap.dash .hero .trend-list li{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:8px;row-gap:3px;align-items:center;padding:10px 0}
+  .wrap.dash .hero .trend-list .srcbadge{font-size:10.5px;font-weight:600;gap:5px;white-space:nowrap}
+  .wrap.dash .hero .trend-list .srcbadge::before{width:12px;height:8px}
+  .wrap.dash .hero .trend-list .tl-lang{display:inline;font-size:9.5px;letter-spacing:.06em}
+  .wrap.dash .hero .trend-list .tl-title{grid-column:1 / -1;font-size:15px;font-weight:600;line-height:1.6}
+  .wrap.dash .trend-read .read{font-size:12.5px}
+  .wrap.dash .trend-read{font-size:12px}
+}
+
 .next-up{display:none}
 .top-race{display:none}
 </style>
@@ -1105,8 +1116,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     b.setAttribute('aria-pressed', String(state.team === key));
     var dot = mk('span','tdot'); dot.style.setProperty('--t1', t.c1); dot.style.setProperty('--t2', t.c2); dot.style.setProperty('--t3', t.c3 || t.c2);
     b.appendChild(dot);
-    b.appendChild(document.createTextNode(t.name + (count != null ? ' ' + count : '')));
-    b.title = t.name + 'の記事だけを表示';
+    b.appendChild(document.createTextNode(t.en + (count != null ? ' ' + count : '')));
+    b.title = t.en + '（' + t.name + '）の記事だけを表示';
     b.addEventListener('click', function(){ state.team = state.team === key ? 'all' : key; renderAll(); });
     return b;
   }
@@ -1293,7 +1304,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     } else if (a.teams && a.teams.length && state.teams[a.teams[0]]){
       var tks = a.teams.filter(function(k){ return state.teams[k]; }).slice(0, 3);
       th.classList.add('nocircuit'); th.appendChild(mk('span','catword', a.cat || 'NEWS'));
-      var cn2 = mk('div','cname'); tks.forEach(function(k, i){ if (i) cn2.appendChild(document.createTextNode('　')); cn2.appendChild(teamSwatch(k)); cn2.appendChild(mk('b', null, state.teams[k].name)); }); th.appendChild(cn2);
+      var cn2 = mk('div','cname'); tks.forEach(function(k, i){ if (i) cn2.appendChild(document.createTextNode('　')); cn2.appendChild(teamSwatch(k)); cn2.appendChild(mk('b', null, state.teams[k].en)); }); th.appendChild(cn2);
     } else {
       th.appendChild(mk('span','catword', a.cat || 'NEWS'));
     }
@@ -1354,7 +1365,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var items = [];
     if (state.q) items.push(['「' + state.q + '」を含む', function(){ state.q = ''; el('q').value = ''; }]);
     if (state.kind !== 'all') items.push([(KIND_TABS.filter(function(t){ return t[0] === state.kind; })[0] || [0,''])[1], function(){ state.kind = 'all'; }]);
-    if (state.team !== 'all' && state.teams[state.team]) items.push([state.teams[state.team].name, function(){ state.team = 'all'; }]);
+    if (state.team !== 'all' && state.teams[state.team]) items.push([state.teams[state.team].en, function(){ state.team = 'all'; }]);
     if (state.src !== 'all') items.push([state.src, function(){ state.src = 'all'; }]);
     if (state.lang !== 'all') items.push([langName(state.lang), function(){ state.lang = 'all'; }]);
     if (!items.length) return null;
@@ -1418,7 +1429,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         sec.appendChild(mk('div','team-band'));
         var inner = mk('div','team-in');
         var head = mk('div','team-head');
-        head.appendChild(mk('h3', null, t.name));
+        head.appendChild(mk('h3', null, t.en));
         head.appendChild(mk('span','en', t.en));
         inner.appendChild(head);
         var facts = mk('div','team-facts');
@@ -1593,7 +1604,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
   function teamSwatch(key){
     var t = state.teams[key] || { c1:'#888', c2:'#ccc' };
-    var d = mk('span','tdot'); d.setAttribute('aria-hidden','true'); d.title = t.name || '';
+    var d = mk('span','tdot'); d.setAttribute('aria-hidden','true'); d.title = t.en || t.name || '';
     d.style.setProperty('--t1', t.c1); d.style.setProperty('--t2', t.c2); d.style.setProperty('--t3', t.c3 || t.c2);
     return d;
   }
@@ -1615,7 +1626,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     meta.appendChild(badge(a.source));
     meta.appendChild(mk('span', null, langCode(a.lang)));
     meta.appendChild(timeEl(a.published));
-    (a.teams || []).filter(function(k){ return state.teams[k]; }).forEach(function(k){ var tm = mk('span'); tm.appendChild(teamSwatch(k)); tm.appendChild(document.createTextNode(' ' + state.teams[k].name)); meta.appendChild(tm); });
+    (a.teams || []).filter(function(k){ return state.teams[k]; }).forEach(function(k){ var tm = mk('span'); tm.appendChild(teamSwatch(k)); tm.appendChild(document.createTextNode(' ' + state.teams[k].en)); meta.appendChild(tm); });
     body.appendChild(meta);
     row.appendChild(body);
     return row;
@@ -1649,7 +1660,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     if (n.cat) meta.appendChild(mk('span', null, n.cat));
     meta.appendChild(timeEl(n.published));
     if (n.paid && n.price) meta.appendChild(mk('span','price', n.price));
-    (n.teams || []).filter(function(k){ return state.teams[k]; }).forEach(function(k){ var tm = mk('span','tm'); tm.appendChild(teamSwatch(k)); tm.appendChild(document.createTextNode(' ' + state.teams[k].name)); meta.appendChild(tm); });
+    (n.teams || []).filter(function(k){ return state.teams[k]; }).forEach(function(k){ var tm = mk('span','tm'); tm.appendChild(teamSwatch(k)); tm.appendChild(document.createTextNode(' ' + state.teams[k].en)); meta.appendChild(tm); });
     row.appendChild(meta);
     return row;
   }
@@ -1683,7 +1694,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       t.appendChild(b); t.appendChild(mk('span', null, label)); box.appendChild(t);
     }
     var bestT = Object.keys(tw).sort(function(a, b){ return tw[b] - tw[a]; })[0];
-    if (bestT) tile(tw[bestT] + '/' + done, '勝', (state.teams[bestT] || {}).name + 'の勝率 ' + Math.round(tw[bestT] / done * 100) + '%', bestT);
+    if (bestT) tile(tw[bestT] + '/' + done, '勝', (state.teams[bestT] || {}).en + 'の勝率 ' + Math.round(tw[bestT] / done * 100) + '%', bestT);
     var bestD = Object.keys(dw).sort(function(a, b){ return dw[b] - dw[a]; })[0];
     if (bestD) tile(String(dw[bestD]), '勝', bestD + 'の今季の優勝', teamOf[bestD]);
     var dr = s.drivers || [];
@@ -1706,7 +1717,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var t = state.teams[k], b = mk('button','tcard'); b.type = 'button';
       b.style.setProperty('--t1', t.c1); b.style.setProperty('--t2', t.c2); b.style.setProperty('--t3', t.c3 || t.c2);
       b.setAttribute('aria-pressed', String(state.team === k));
-      var nm = mk('div','nm'); var nmL = mk('span'); nmL.appendChild(teamSwatch(k)); nmL.appendChild(document.createTextNode(' ' + t.name)); nm.appendChild(nmL); nm.appendChild(mk('small', null, t.en)); b.appendChild(nm);
+      var nm = mk('div','nm'); var nmL = mk('span'); nmL.appendChild(teamSwatch(k)); nmL.appendChild(document.createTextNode(' ' + t.en)); nm.appendChild(nmL); nm.appendChild(mk('small', null, t.name)); b.appendChild(nm);
       b.appendChild(mk('div','dr', t.drivers.join('・') + ' · PU ' + t.pu));
       var r2 = mk('div','row2');
       var l = mk('span'); l.appendChild(document.createTextNode(cpts[k] ? cpts[k].pos + '位 ' : '')); l.appendChild(mk('b', null, cpts[k] ? cpts[k].pts + '点' : '6位以下'));
@@ -1864,8 +1875,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       row.style.setProperty('--t1', tm.c1 || 'var(--moss)'); row.style.setProperty('--t2', tm.c2 || 'var(--line)'); row.style.setProperty('--t3', tm.c3 || tm.c2 || 'var(--line)');
       row.appendChild(mk('span','p', String(r.pos)));
       row.appendChild(mk('span','tdot'));
-      var n = mk('span','n', state.standTab === 'c' ? (tm.name || r.team) : r.name);
-      if (state.standTab !== 'c' && tm.name) n.appendChild(mk('small', null, tm.name));
+      var n = mk('span','n', state.standTab === 'c' ? (tm.en || r.team) : r.name);
+      if (state.standTab !== 'c' && tm.en) n.appendChild(mk('small', null, tm.en));
       row.appendChild(n);
       var bar = mk('span','b'); var fill = mk('i'); fill.style.width = Math.round(r.pts / max * 100) + '%'; bar.appendChild(fill); row.appendChild(bar);
       row.appendChild(mk('span','v', String(r.pts)));
