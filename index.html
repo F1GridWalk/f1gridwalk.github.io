@@ -294,6 +294,23 @@ a:hover{color:var(--ink-2)}
 .dash-main .legend{display:none}
 .dash-main .groups{padding-top:14px}
 
+.dash-main .hero-sum.trend-sum{display:block;-webkit-line-clamp:unset;overflow:visible}
+.trend-read{gap:4px 14px;font-size:12.5px}
+.trend-read .read{font-weight:700}
+/* desktop: sidebar sits beside the top block only; personal analysis and news use the full width */
+@media (min-width:1001px){
+  .wrap.dash{grid-template-columns:330px minmax(0,1fr);grid-template-rows:auto 1fr auto auto}
+  .dash-side{grid-column:1;grid-row:1 / span 2}
+  .dash-main{display:contents}
+  .dash-main > .hero{grid-column:2;grid-row:1}
+  .dash-main > .geek{grid-column:2;grid-row:2}
+  .dash-main > .notebox{grid-column:1 / -1;grid-row:3}
+  .dash-main > #news{grid-column:1 / -1;grid-row:4}
+  .dash-main .grid{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+  .dash-main .card .thumb{aspect-ratio:16/7}
+  .notebox #notes-free{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .notebox .note-cols{grid-template-columns:minmax(0,3fr) minmax(0,1fr)}
+}
 .trend-list{list-style:none;margin:2px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 18px}
 .trend-list li{display:grid;grid-template-columns:auto 26px minmax(0,1fr);gap:8px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line-soft);font-size:13px}
 .trend-list .srcbadge{font-size:12px;white-space:nowrap}
@@ -945,9 +962,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     chips.appendChild(mk('span','chip-feature','今週の注目'));
     chips.appendChild(mk('span','chip-cat','世界の' + t.n + '媒体が報道'));
     box.appendChild(chips);
-    var h1 = mk('h1', null, info.title || lead.title); h1.id = 'hero-title';
+    var pick = t.items.filter(function(a){ return a.featured; })[0] || t.items.filter(function(a){ return a.kind === 'news' || a.kind === 'tech'; }).sort(function(a,b){ return new Date(a.published) - new Date(b.published); })[0] || lead;
+    var h1 = mk('h1'); h1.id = 'hero-title';
+    h1.appendChild(extLink(pick.url, info.title || pick.title));
     box.appendChild(h1);
-    box.appendChild(mk('p','hero-sum', info.summary || lead.summary));
+    box.appendChild(mk('p','hero-sum trend-sum', info.summary || pick.summary));
+    var rm = mk('div','meta trend-read');
+    rm.appendChild(extLink(pick.url, pick.source + 'の記事を読む ↗', 'read'));
+    rm.appendChild(mk('span', null, 'ほかの' + (t.n - 1) + '媒体の記事は下から'));
+    box.appendChild(rm);
     var ul = mk('ul','trend-list');
     t.items.slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); }).forEach(function(a){
       var li = mk('li'); li.setAttribute('data-c', colorOf(a.source));
@@ -1551,7 +1574,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var s = state.season; if (!s) return;
     var box = el('standings'); box.textContent = '';
     box.appendChild(mk('h2', null, 'ランキング'));
-    if (s.standingsAfter) box.appendChild(mk('div','sub', '第' + s.standingsAfter.round + '戦 ' + s.standingsAfter.gp + ' 終了時点'));
+    if (s.standingsAfter){ var sa = s.standingsAfter; box.appendChild(mk('div','sub', (typeof sa === 'string') ? sa + ' 終了時点' : '第' + sa.round + '戦 ' + sa.gp + ' 終了時点')); }
     var tabs = mk('div','stand-tabs'); tabs.setAttribute('role','group'); tabs.setAttribute('aria-label','ランキングの種類');
     [['d','ドライバー'],['c','チーム']].forEach(function(t){
       var b = mk('button', null, t[1]); b.type = 'button';

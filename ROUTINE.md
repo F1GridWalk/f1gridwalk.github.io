@@ -54,7 +54,7 @@ Aim for 2–6 new posts per run, mixing platforms. New notes.json: {"updatedAt":
 ## 6. Season data (season.json)
 Keep its exact structure. Update only with facts confirmed by at least two independent sources (never forum digests, rumours or personal posts):
 - Finished session of weekend.sessions → add "result" (qualifying "ポール: <driver>", race "優勝: <driver>").
-- Race finished → "winner" on that calendar round; update "drivers" (top 10) and "constructors" with the new points; "standingsAfter" = that GP's Japanese name.
+- Race finished → "winner" on that calendar round; update "drivers" (top 10) and "constructors" with the new points; "standingsAfter" = {"round": <round number>, "gp": "<that GP's Japanese name>"} (an object, never a plain string).
 - After the weekend, replace "weekend" with the NEXT round on the calendar (round, gp, circuit, laps, lengthKm, optional note, sessions in UTC from the formula1.com "full timetable" article; sprint weekends list sprint sessions). If not published yet, try next run.
 - Cancelled / moved / newly added races: update the calendar (renumber rounds if needed).
 - Set "updatedAt" whenever you change it. Never guess points or times.
