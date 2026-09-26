@@ -953,14 +953,42 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .wrap.dash .trend-read{font-size:12px}
 }
 
-/* phones & tablets: latest news opens 15 at a time */
-.feed-more{display:none}
+/* "もっと見る": lists open a few at a time */
+.grid > .card.cut,.trend-list > li.cut{display:none}
+.feed-more{display:block;width:100%;margin:22px 0 6px;min-height:48px;border-radius:24px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.feed-more:hover{background:var(--ink);color:var(--paper)}
+.kindsec{display:none}
+@media (min-width:1001px){
+  .feed-more{width:auto;min-width:320px;margin:28px auto 4px;padding:0 32px}
+  .wrap.dash .dash-main > .geek:not([hidden]){display:none}
+  .wrap.dash .dash-main > .kindsec{display:block}
+  .wrap.dash .dash-main > .kindsec.empty{display:none}
+  .wrap.dash .dash-main > #sec-rumor{order:7}.wrap.dash .dash-main > #sec-fan{order:8}.wrap.dash .dash-main > #sec-tech{order:9}
+  .wrap.dash .dash-main > .notebox:not([hidden]){order:10}
+  .wrap.dash #kindfilter{display:none}
+  .wrap.dash .kgrid .card:first-child{grid-column:auto}
+  .wrap.dash .kgrid .card:first-child h3{font-size:16.5px}
+  .wrap.dash .kgrid .card:first-child p{font-size:13.5px}
+  .wrap.dash .dash-main > .kindsec{position:relative;padding:44px 0 52px;border-radius:0;box-shadow:0 0 0 100vmax var(--band);clip-path:inset(0 -100vmax);background:var(--band)}
+  .wrap.dash .dash-main > #sec-rumor{--band:var(--tint)}
+  .wrap.dash .dash-main > #sec-fan{--band:#E0D9C8}
+  .wrap.dash .dash-main > #sec-tech{--band:#D6CEBB}
+  .wrap.dash .kindsec .band-head h2{font-size:30px;display:flex;align-items:baseline;gap:14px}
+  .wrap.dash .kindsec .band-head h2::before{font-family:var(--logo);font-size:15px;font-weight:600;letter-spacing:.12em;color:var(--clay)}
+  .wrap.dash #sec-rumor .band-head h2::before{content:"02"}
+  .wrap.dash #sec-fan .band-head h2::before{content:"03"}
+  .wrap.dash #sec-tech .band-head h2::before{content:"04"}
+  .wrap.dash #notes .band-head h2::before{content:"05" !important}
+  .wrap.dash .kindsec .next-up{background:var(--ink);color:var(--paper)}
+  .wrap.dash #sec-tech .next-up{background:#1F2420;color:#ECE7DC}
+}
+@media (min-width:1001px) and (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .wrap.dash .dash-main > #sec-rumor{--band:#191C17}
+  :root:not([data-theme="light"]) .wrap.dash .dash-main > #sec-fan{--band:#151814}
+  :root:not([data-theme="light"]) .wrap.dash .dash-main > #sec-tech{--band:#111410}
+}
 @media (max-width:1000px){
-  #feed .grid > .card.cut{display:none}
-  .trend-list > li.cut{display:none}
   .feed-more.tl-more{margin:12px 0 4px;min-height:42px;font-size:13px}
-  .feed-more{display:block;width:100%;margin:22px 0 6px;min-height:48px;border-radius:24px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
-  .feed-more:active{background:var(--ink);color:var(--paper)}
 }
 
 .next-up{display:none}
@@ -1069,7 +1097,22 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           <div class="teamtags" role="group" aria-label="チームで絞り込む" id="teamfilter"></div>
         </div>
         <div id="feed"></div>
-        <a class="next-up" href="#tech"><span>次は</span>テクニカル深掘り・パドックウォーク →</a>
+        <a class="next-up" href="#sec-rumor"><span>次は</span>パドック（うわさ）→ 掲示板まとめ → テック</a>
+      </section>
+      <section class="dbox kindsec" id="sec-rumor" aria-label="パドック（うわさ）">
+        <div class="band-head"><h2>パドック（うわさ）</h2><span class="count">報道で出たうわさ・移籍や人事の話 · 未確認の話です</span></div>
+        <div id="rumor-grid"></div>
+        <a class="next-up" href="#sec-fan"><span>次は</span>掲示板まとめ →</a>
+      </section>
+      <section class="dbox kindsec" id="sec-fan" aria-label="掲示板まとめ">
+        <div class="band-head"><h2>掲示板まとめ</h2><span class="count">F1情報通など、ファンの掲示板で話題のこと · 未確認の話を含みます</span></div>
+        <div id="fan-grid"></div>
+        <a class="next-up" href="#sec-tech"><span>次は</span>テクニカル深掘り →</a>
+      </section>
+      <section class="dbox kindsec" id="sec-tech" aria-label="テクニカル深掘り">
+        <div class="band-head"><h2>テクニカル深掘り</h2><span class="count">アップデート · 空力 · PU</span></div>
+        <div id="tech-grid"></div>
+        <a class="next-up" href="#notes"><span>次は</span>個人の分析 →</a>
       </section>
     </div>
   </div>
@@ -1256,7 +1299,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     rm.appendChild(mk('span', null, 'ほかの' + (t.n - 1) + '媒体の記事は下から'));
     box.appendChild(rm);
     var ul = mk('ul','trend-list');
-    var TL_FIRST = 4;
+    var TL_FIRST = wide.matches ? 6 : 4;
     t.items.slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); }).forEach(function(a, i){
       var li = mk('li'); li.setAttribute('data-c', colorOf(a.source));
       if (i >= TL_FIRST) li.classList.add('cut');
@@ -1434,8 +1477,30 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
   }
 
+  // desktop: rumour / forum / tech each get their own chapter under the news
+  function withMore(parent, g, nodes, first, step){
+    nodes.forEach(function(n, i){ if (i >= first) n.classList.add('cut'); g.appendChild(n); });
+    parent.appendChild(g);
+    if (nodes.length <= first) return;
+    var mb = mk('button','feed-more'); mb.type = 'button';
+    var left = function(){ return [].filter.call(g.children, function(c){ return c.classList.contains('cut'); }); };
+    var lbl = function(){ mb.textContent = 'もっと見る（残り' + left().length + '本）'; };
+    lbl();
+    mb.addEventListener('click', function(){ left().slice(0, step).forEach(function(c){ c.classList.remove('cut'); }); if (!left().length) mb.parentNode.removeChild(mb); else lbl(); });
+    parent.appendChild(mb);
+  }
+  function renderKindSecs(all){
+    var base = all.filter(function(a){ return pass(a, 'kind'); });
+    [['rumor','rumor-grid'],['fan','fan-grid'],['tech','tech-grid']].forEach(function(x){
+      var box = el(x[1]); if (!box) return; box.textContent = '';
+      var items = base.filter(function(a){ return (a.kind || 'news') === x[0]; });
+      box.parentNode.classList.toggle('empty', !items.length);
+      withMore(box, mk('div','grid kgrid'), items.map(card), 6, 9);
+    });
+  }
   function renderFeed(list){
-    var shown = list.filter(function(a){ return pass(a); });
+    var deskSplit = wide.matches && state.kind === 'all';
+    var shown = list.filter(function(a){ return pass(a) && (!deskSplit || (a.kind || 'news') === 'news'); });
     var feed = el('feed'); feed.textContent = '';
     var ab = activeBar(); if (ab) feed.appendChild(ab);
     if (state.view === 'team'){
@@ -1504,12 +1569,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     }
     if (!shown.length){ el('count').textContent = ''; feed.appendChild(mk('p','empty','この条件の記事は、今はまだありません。')); return; }
     if (state.view === 'latest'){
-      el('count').textContent = shown.length + '本の記事 · 新しい順';
+      el('count').textContent = shown.length + (deskSplit ? '本のニュース · 新しい順 · うわさ・掲示板・テックは下の章に' : '本の記事 · 新しい順');
       var g = mk('div','grid');
       var lead = -1; for (var li = 0; li < shown.length; li++){ var kk = shown[li].kind || 'news'; if (kk === 'news' || kk === 'tech'){ lead = li; break; } }
       var ordered = lead > 0 ? [shown[lead]].concat(shown.slice(0, lead), shown.slice(lead + 1)) : shown;
       // phones & tablets: show 15 first, then "もっと見る" (desktop shows everything; .cut only hides below 1001px)
-      var PAGE = 15; if (!state.newsShown) state.newsShown = PAGE;
+      var PAGE = 15; if (!state.newsShown) state.newsShown = wide.matches ? 14 : PAGE;
       ordered.forEach(function(a, i){ var c = card(a); if (i >= state.newsShown) c.classList.add('cut'); g.appendChild(c); });
       feed.appendChild(g);
       if (ordered.length > state.newsShown){
@@ -1597,6 +1662,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     renderFilters(rest);
     renderTeamFilter(all);
     renderFeed(rest);
+    renderKindSecs(all);
     el('view-latest').setAttribute('aria-pressed', String(state.view === 'latest'));
     el('view-source').setAttribute('aria-pressed', String(state.view === 'source'));
     el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
@@ -1963,6 +2029,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
   var PANEL_OF = { '#standings':'standings', '#numbers':'numbers', '#calendar':'calendar', '#teams-band':'teams', '#sources':'teams' };
   var wide = window.matchMedia ? window.matchMedia('(min-width:1001px)') : { matches:false };
+  if (wide.addEventListener) wide.addEventListener('change', function(){ state.newsShown = 0; renderAll(); });
   function setPanel(k, on){
     document.body.classList.toggle('open-' + k, on);
     var b = document.querySelector('.databar [data-panel="' + k + '"]'); if (b) b.setAttribute('aria-pressed', on ? 'true' : 'false');
@@ -1975,7 +2042,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
   });
   Array.prototype.forEach.call(document.querySelectorAll('.jump a'), function(a){
-    a.addEventListener('click', function(){ var k = PANEL_OF[a.getAttribute('href')]; if (k && wide.matches) setPanel(k, true); });
+    a.addEventListener('click', function(e){
+      var h = a.getAttribute('href'), k = PANEL_OF[h]; if (k && wide.matches) setPanel(k, true);
+      var alt = { '#tech':'#sec-tech', '#gossip':'#sec-rumor' }[h];
+      if (alt && wide.matches){ var t = document.querySelector(alt); if (t && !t.classList.contains('empty')){ e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); } }
+    });
   });
   function getJSON(u){ return fetch(u, { cache:'no-store' }).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }); }
   Promise.all([
