@@ -991,6 +991,18 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .feed-more.tl-more{margin:12px 0 4px;min-height:42px;font-size:13px}
 }
 
+/* share menu (header) */
+.share{position:relative}
+.share-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:40;min-width:230px;padding:6px;border-radius:18px;background:var(--surface);border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.14);display:flex;flex-direction:column}
+.share-menu[hidden]{display:none}
+.share-menu a,.share-menu button{display:flex;align-items:baseline;gap:12px;padding:10px 14px;border-radius:12px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;text-decoration:none;cursor:pointer;text-align:left}
+.share-menu a:hover,.share-menu button:hover,.share-menu a:focus-visible,.share-menu button:focus-visible{background:var(--tint)}
+.share-menu b{min-width:78px;font-weight:700;white-space:nowrap}
+.share-menu span{color:var(--muted);font-size:12.5px;white-space:nowrap}
+.share-menu [data-share="copy"]{margin-top:4px;border-top:1px solid var(--line-soft);border-radius:0 0 12px 12px;padding-top:12px}
+@media (max-width:600px){ .share-menu{min-width:210px} .share-menu a,.share-menu button{padding:11px 12px} }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .share-menu{box-shadow:0 14px 40px rgba(0,0,0,.5)} }
+
 .next-up{display:none}
 .top-race{display:none}
 </style>
@@ -1003,7 +1015,18 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     </a>
     <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
     <div class="top-right">
-    <button type="button" class="copybtn" id="copy-site">このサイトのリンクをコピー</button>
+    <div class="share">
+      <button type="button" class="copybtn" id="share-btn" aria-haspopup="true" aria-expanded="false" aria-controls="share-menu">このサイトを共有 <span aria-hidden="true">▾</span></button>
+      <div class="share-menu" id="share-menu" role="menu" hidden>
+        <a role="menuitem" data-share="x" target="_blank" rel="noopener"><b>X</b><span>ポストする</span></a>
+        <a role="menuitem" data-share="line" target="_blank" rel="noopener"><b>LINE</b><span>友だちに送る</span></a>
+        <a role="menuitem" data-share="threads" target="_blank" rel="noopener"><b>Threads</b><span>投稿する</span></a>
+        <a role="menuitem" data-share="facebook" target="_blank" rel="noopener"><b>Facebook</b><span>シェアする</span></a>
+        <a role="menuitem" data-share="hatena" target="_blank" rel="noopener"><b>はてブ</b><span>ブックマークする</span></a>
+        <button type="button" role="menuitem" data-share="copy" id="copy-site"><b>リンク</b><span>コピーする</span></button>
+        <button type="button" role="menuitem" data-share="native" id="share-native" hidden><b>その他</b><span>ほかのアプリで送る</span></button>
+      </div>
+    </div>
     <div class="status"><span class="dot" aria-hidden="true"></span><span><span class="txt-long">1日4回更新 · </span><span id="updated">読み込み中…</span></span></div>
     </div>
   </div>
@@ -1703,7 +1726,45 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var nl = extLink('https://f1gridwalk.github.io/', '公開サイトを開く'); nb.appendChild(nl);
     document.body.insertBefore(nb, document.body.firstChild);
   }
-  el('copy-site').addEventListener('click', function(){ copyText('F1 Grid Walk — 世界のF1ニュースを日本語で\n' + SITE_URL, el('copy-site'), 'このサイトのリンクをコピー'); });
+  // share menu: X / LINE / Threads / Facebook / Hatena / copy / native share sheet
+  (function(){
+    var btn = el('share-btn'), menu = el('share-menu'); if (!btn || !menu) return;
+    function shareText(){
+      var h = el('hero-title'), t = h ? h.textContent.trim() : '';
+      return (t && t.indexOf('読み込んでいます') < 0 ? '今週の注目：' + t + ' | ' : '') + 'F1 Grid Walk — 世界のF1ニュースを日本語で';
+    }
+    function hrefFor(k){
+      var u = encodeURIComponent(SITE_URL), t = encodeURIComponent(shareText());
+      return {
+        x: 'https://x.com/intent/tweet?text=' + t + '&url=' + u,
+        line: 'https://social-plugins.line.me/lineit/share?url=' + u + '&text=' + t,
+        threads: 'https://www.threads.net/intent/post?text=' + encodeURIComponent(shareText() + ' ' + SITE_URL),
+        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + u,
+        hatena: 'https://b.hatena.ne.jp/add?mode=confirm&url=' + u + '&title=' + t
+      }[k];
+    }
+    function open(on){ menu.hidden = !on; btn.setAttribute('aria-expanded', on ? 'true' : 'false'); }
+    function track(k){ try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path:'share/' + k, title:'共有: ' + k, event:true }); } catch(e){} }
+    if (navigator.share) el('share-native').hidden = false;
+    btn.addEventListener('click', function(e){ e.stopPropagation(); open(menu.hidden); });
+    [].forEach.call(menu.querySelectorAll('a[data-share]'), function(a){
+      a.addEventListener('click', function(){ a.href = hrefFor(a.getAttribute('data-share')); track(a.getAttribute('data-share')); setTimeout(function(){ open(false); }, 0); });
+      a.href = hrefFor(a.getAttribute('data-share'));
+    });
+    var cp = el('copy-site'), cpLabel = cp.innerHTML;
+    cp.addEventListener('click', function(){
+      track('copy');
+      var done = function(){ cp.innerHTML = '<b>リンク</b><span>コピーしました</span>'; setTimeout(function(){ cp.innerHTML = cpLabel; open(false); }, 1200); };
+      try { navigator.clipboard.writeText(shareText() + '\n' + SITE_URL).then(done, function(){ window.prompt('このURLをコピーしてください', SITE_URL); }); }
+      catch(e){ window.prompt('このURLをコピーしてください', SITE_URL); }
+    });
+    el('share-native').addEventListener('click', function(){
+      track('native'); open(false);
+      navigator.share({ title:'F1 Grid Walk', text:shareText(), url:SITE_URL }).catch(function(){});
+    });
+    document.addEventListener('click', function(e){ if (!menu.hidden && !menu.contains(e.target)) open(false); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !menu.hidden){ open(false); btn.focus(); } });
+  })();
 
 
   function teamSwatch(key){
