@@ -1,6 +1,10 @@
 {
- "updatedAt": "2026-09-27T04:40:00+09:00",
+ "updatedAt": "2026-09-27T05:30:00+09:00",
  "topics": {
+  "honda-pu-struggle": {
+   "title": "バクーでホンダPUが限界露呈、アストンマーティン2台リタイア",
+   "summary": "長い直線が続くバクーで、アロンソとストロールのアストンマーティン・ホンダ勢がそろってリタイア。アロンソは直線での失速を訴え、ホンダの担当者も現行パッケージは既に限界に達していると認めた。"
+  },
   "baku-qualifying": {
    "title": "アゼルバイジャンGP予選、ラッセルが圧倒的なポール。首位アントネッリは16番手から",
    "summary": "ラッセルが2番手に約0.8秒の差をつけてポールを獲得。ランキング首位のアントネッリはQ1でクラッシュして16番手、フェルスタッペンもエンジンの不調で8番手に沈んだ。各国メディアが、メルセデスの速さとグリッド降格の影響を報じている。"
@@ -23,6 +27,152 @@
   }
  },
  "articles": [
+  {
+   "id": "en-planetf1-baku-tyre-problem",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "テクニカル",
+   "circuit": "baku",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "baku-tyre-strategy-problem",
+   "title": "バクーが露呈した戦略の限界。ソフトもミディアムも“持ちすぎる”タイヤが単調なレースを生んだ",
+   "summary": "セーフティカーがなければ単調なレースになっていたと分析。乾いた路面でグリップが低く、長い直線でタイヤが冷えるためソフトとミディアムの差がほとんど出ず、ドライバーのミス頼みの展開になったと指摘している。",
+   "orig": "How Azerbaijan GP exposed a problem F1 simply cannot fix",
+   "url": "https://www.planetf1.com/f1-data/f1-2026-azerbaijan-gp-safety-car-data",
+   "published": "2026-09-26T18:16:00+01:00"
+  },
+  {
+   "id": "ja-f1data-alonso-engine-issue",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "Formula1-Data",
+   "cat": "ドライバー",
+   "circuit": "baku",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "honda-pu-struggle",
+   "title": "抜いても直線で抜き返される…アロンソが訴えたエンジン不調、ホンダも限界認める",
+   "summary": "アロンソは決勝22周目でリタイアする前、直線で繰り返しボッタスに抜き返され、エンジンの不調を疑ったと語った。ストロールも含めアストンマーティン・ホンダの2台がそろってリタイアした。",
+   "orig": "何度抜いてもストレートで逆転…アロンソが疑ったエンジン問題、ホンダも「これ以上は望めない」と限界認める",
+   "url": "https://formula1-data.com/article/alonso-engine-issue-aston-honda-baku-2026",
+   "published": "2026-09-27T00:23:00+09:00"
+  },
+  {
+   "id": "en-motorsportweek-ocon-haas-points",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Motorsport Week",
+   "cat": "チーム",
+   "circuit": "baku",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-baku-points",
+   "title": "オコン「自分は一流だ」6月以来の入賞でハースが手にした自信",
+   "summary": "オコンが8位、チームメイトのベアマンも9位に入り、ハースは6月以来となるダブル入賞を果たした。オコンは自らの実力を強く主張し、今季ここまでの不振への鬱憤を晴らした。",
+   "orig": "Esteban Ocon makes bullish statement after Baku P8: 'I'm one of the best' in F1",
+   "url": "https://www.motorsportweek.com/2026/09/26/esteban-ocon-im-one-of-the-best-in-f1/",
+   "published": "2026-09-26T16:00:00+01:00"
+  },
+  {
+   "id": "en-f1com-verstappen-trying-everything",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "ドライバー",
+   "circuit": "baku",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "baku-race-result",
+   "title": "フェルスタッペン「できることは全部やった」0.1秒差の2位に悔しさ",
+   "summary": "8番手から追い上げて僅差の2位となったフェルスタッペン。ミディアムタイヤは思うようなグリップが得られず苦労したと振り返りつつ、最終盤の攻防では全力を尽くしたと語った。",
+   "orig": "'I was trying everything' – Verstappen gives verdict after missing out on Azerbaijan GP victory",
+   "url": "https://www.formula1.com/en/latest/article/i-was-trying-everything-verstappen-gives-verdict-after-missing-out-on-azerbaijan-gp-victory.6M9zlnYYDH8w4AnRIninDX",
+   "published": "2026-09-26T14:58:00+00:00"
+  },
+  {
+   "id": "ja-f1gate-honda-baku-struggle",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "circuit": "baku",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "honda-pu-struggle",
+   "title": "ホンダF1、バクーで限界を露呈「現状のパッケージではこれ以上は望めない」",
+   "summary": "アストンマーティンのアロンソとストロールが決勝でともにリタイアし、長い直線が続くバクーでパワーユニットの非力さが際立った。ホンダのトラックサイド責任者オリハラ氏は、現行パッケージでは限界だと認めた。",
+   "orig": "ホンダF1 バクーで厳しい現実「現状のパッケージではこれ以上は望めない」",
+   "url": "https://f1-gate.com/honda/f1_97257.html",
+   "published": "2026-09-26T23:46:00+09:00"
+  },
+  {
+   "id": "en-motorsportweek-antonelli-grandmother",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Motorsport Week",
+   "cat": "ドライバー",
+   "circuit": "baku",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "baku-race-result",
+   "title": "アントネッリ「まるで祖母の運転」。ダメージ抱えた16番手からの慎重な追い上げ",
+   "summary": "予選のクラッシュで左サイドを損傷したアントネッリは、決勝では無理をせず周囲のミスに助けられて5位まで上がったと明かした。自らの走りを「祖母のような運転」とユーモアを交えて振り返った。",
+   "orig": "Kimi Antonelli drops hilarious 'drove like my grandmother' assessment of Baku F1 fightback",
+   "url": "https://www.motorsportweek.com/2026/09/26/kimi-antonelli-drove-like-grandmother-in-baku/",
+   "published": "2026-09-26T15:30:00+01:00"
+  },
+  {
+   "id": "en-f1com-norris-colapinto-ban",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "ドライバー",
+   "circuit": "baku",
+   "teams": [
+    "mclaren",
+    "alpine"
+   ],
+   "topic": "colapinto-penalty",
+   "title": "ノリス、コラピントとの接触に激怒「F1に向いていないドライバーもいる」",
+   "summary": "セーフティカー再スタートでの接触でリタイアし、8戦続いた入賞記録を止められたノリス。速さを欠いた自らの走りも認めつつ、コラピントの走りを名指しで厳しく批判した。",
+   "orig": "'Some drivers shouldn't be in F1' – Norris reflects on Baku clash that led to DNF",
+   "url": "https://www.formula1.com/en/latest/article/some-drivers-shouldnt-be-in-f1-norris-reflects-on-baku-clash-that-led-to-dnf.76PWZBrhTQ5PMLrgvQFyPt",
+   "published": "2026-09-26T14:25:00+00:00"
+  },
+  {
+   "id": "ja-f1jouhou-norris-colapinto-ban",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "circuit": "baku",
+   "teams": [
+    "mclaren",
+    "alpine"
+   ],
+   "topic": "colapinto-penalty",
+   "title": "【掲示板】ノリス「コラピントは1レース出場停止にすべき」発言に反応",
+   "summary": "海外の投稿をもとに、ノリスがコラピントの出場停止を求めたと伝えるまとめ。掲示板では接触への批判が中心だが、5グリッド降格の処分では軽すぎるという声も出ている。",
+   "orig": "【ヤバ】マクラーレンのノリス、コラピントについて「1レース出場停止にすべき」とコメント【逃げてー】",
+   "url": "https://f1jouhou2.com/blog-entry-31577.html",
+   "published": "2026-09-26T21:00:00+09:00"
+  },
   {
    "id": "es-lat-motorsport-colapinto",
    "kind": "news",
