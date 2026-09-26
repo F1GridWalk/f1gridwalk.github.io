@@ -953,6 +953,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .wrap.dash .trend-read{font-size:12px}
 }
 
+/* phones & tablets: latest news opens 15 at a time */
+.feed-more{display:none}
+@media (max-width:1000px){
+  #feed .grid > .card.cut{display:none}
+  .feed-more{display:block;width:100%;margin:22px 0 6px;min-height:48px;border-radius:24px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+  .feed-more:active{background:var(--ink);color:var(--paper)}
+}
+
 .next-up{display:none}
 .top-race{display:none}
 </style>
@@ -1490,8 +1498,22 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var g = mk('div','grid');
       var lead = -1; for (var li = 0; li < shown.length; li++){ var kk = shown[li].kind || 'news'; if (kk === 'news' || kk === 'tech'){ lead = li; break; } }
       var ordered = lead > 0 ? [shown[lead]].concat(shown.slice(0, lead), shown.slice(lead + 1)) : shown;
-      ordered.forEach(function(a){ g.appendChild(card(a)); });
+      // phones & tablets: show 15 first, then "もっと見る" (desktop shows everything; .cut only hides below 1001px)
+      var PAGE = 15; if (!state.newsShown) state.newsShown = PAGE;
+      ordered.forEach(function(a, i){ var c = card(a); if (i >= state.newsShown) c.classList.add('cut'); g.appendChild(c); });
       feed.appendChild(g);
+      if (ordered.length > state.newsShown){
+        var mb = mk('button','feed-more'); mb.type = 'button';
+        var lbl = function(){ mb.textContent = 'もっと見る（残り' + g.querySelectorAll('.card.cut').length + '本）'; };
+        lbl();
+        mb.addEventListener('click', function(){
+          var cs = g.querySelectorAll('.card.cut');
+          for (var j = 0; j < cs.length && j < PAGE; j++) cs[j].classList.remove('cut');
+          state.newsShown += PAGE;
+          if (!g.querySelector('.card.cut')) mb.parentNode.removeChild(mb); else lbl();
+        });
+        feed.appendChild(mb);
+      }
     } else {
       var groups = {}, order = [];
       shown.forEach(function(a){
