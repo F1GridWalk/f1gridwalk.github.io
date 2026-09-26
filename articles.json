@@ -1,25 +1,55 @@
 {
-  "updatedAt": "2026-09-26T06:30:00+09:00",
+  "updatedAt": "2026-09-26T19:30:00+09:00",
+  "topics": {
+    "baku-qualifying": {
+      "title": "アゼルバイジャンGP予選、ラッセルが圧倒的なポール。首位アントネッリは16番手から",
+      "summary": "ラッセルが2番手に約0.8秒の差をつけてポールを獲得。ランキング首位のアントネッリはQ1でクラッシュして16番手、フェルスタッペンもエンジンの不調で8番手に沈んだ。各国メディアが、メルセデスの速さとグリッド降格の影響を報じている。"
+    },
+    "baku-upgrades": {
+      "title": "バクーに持ち込まれたアップデート。アウディは14項目の大改修、上位2強は新パーツなし",
+      "summary": "アウディがフロアや前後ウイングを含む14項目の大型パッケージを投入し、マクラーレンは直線スピード改善を狙うサイドポッドとフロア、ウィリアムズは軽量シャシーを持ち込んだ。一方、メルセデスとフェラーリはアップデートなしで臨んでいる。"
+    },
+    "horner-ferrari": {
+      "title": "ホーナー、F1復帰なら「フェラーリだけ」。代表就任のうわさに火",
+      "summary": "元レッドブル代表のホーナーが英タイムズ紙に、株式を持たずに引き受けるならフェラーリだけだと語り、イタリアや日本のファンの間で話題に。実績を評価する声と、フェラーリの組織と合うのかを疑う声が分かれている。"
+    }
+  },
   "articles": [
     {
-      "id": "nl-rn365-russell-baku-pole",
-      "featured": true,
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "RacingNews365 NL",
-      "cat": "予選",
-      "title": "ラッセルがバクーで他を圧倒。2番手に0.8秒差のポールポジション",
-      "summary": "アゼルバイジャンGP予選で、メルセデスのラッセルが2番手ルクレールに約0.8秒の差をつけてポールを獲得。長いストレートでのエネルギー管理と、パワーユニットの使い方が決め手になったと分析している。フェルスタッペンはエンジンの不調で8番手。",
-      "orig": "Zo blies Russell de voltallige F1-concurrentie weg in Baku",
-      "url": "https://racingnews365.nl/zo-blies-russell-de-voltallige-f1-concurrentie-weg-in-baku",
-      "published": "2026-09-25T22:00:00+02:00",
+      "id": "ja-f1jouhou-audi-vcarb-slump",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
+      "title": "アウディとレーシングブルズ、予選で急失速。掲示板の見立ては？",
+      "summary": "レーシングブルズのCTOティム・ゴスは「いつもの競争力がはっきり欠けていた」と認め、FP3から予選にかけてブレーキング時の安定性やセットアップを見直したと説明。アウディは風と黄旗で最後のアタックが乱れた。掲示板では、アウディはアップデートを一度に入れすぎて問題を切り分けにくいのでは、という見方が出ている。",
+      "orig": "アウディとVCARBがF1アゼルバイジャンGP予選で急に失速してるけどどうしたんだろうな",
+      "url": "https://f1jouhou2.com/blog-entry-31574.html",
+      "published": "2026-09-26T12:00:00+09:00",
       "circuit": "baku",
       "teams": [
-        "mercedes",
-        "ferrari",
-        "redbull"
+        "audi",
+        "racingbulls"
       ],
       "topic": "baku-qualifying"
+    },
+    {
+      "id": "ja-f1jouhou-horner-ferrari",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
+      "title": "ホーナー「株を持たずに引き受けるならフェラーリだけ」。掲示板は期待と不安が半々",
+      "summary": "英タイムズ紙の取材でホーナーが、フェラーリを「F1で最も重要なブランド」「眠れる巨人」と呼び、株式を持たなくても引き受けるのはフェラーリだけだと語った件のまとめ。掲示板では、レッドブルで6度のコンストラクターズタイトルを取った手腕への期待と、フェラーリの組織で本当に権限を持てるのかという疑問が分かれている。",
+      "orig": "クリスチャン・ホーナー「株式を保有しなくても仕事を引き受けるF1チームはフェラーリだけ」",
+      "url": "https://f1jouhou2.com/blog-entry-31571.html",
+      "published": "2026-09-26T10:00:00+09:00",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "horner-ferrari"
     },
     {
       "id": "es-motorsport-parrilla-baku",
@@ -38,7 +68,65 @@
         "williams",
         "cadillac"
       ],
-      "topic": "baku-qualifying"
+      "topic": "baku-qualifying",
+      "kind": "news"
+    },
+    {
+      "id": "pt-gp-bortoleto-17",
+      "lang": "pt",
+      "region": "ブラジル",
+      "source": "Grande Prêmio",
+      "cat": "分析",
+      "title": "ボルトレートは17番手スタート。ロングランが示すアウディの挽回の見込み",
+      "summary": "Q1で敗退したボルトレート。決勝を想定した走行データでは、アウディは7番目に速いチームで、メルセデスとは1周約1.2秒差。トップ10を争うには1秒以上の改善が必要だとしている。",
+      "orig": "Bortoleto larga em 17º: o que ritmo de corrida indica para recuperação da Audi em Baku",
+      "url": "https://grandepremio.com/br/f1/bortoleto-larga-em-17o-o-que-ritmo-de-corrida-indica-para-recuperacao-da-audi-em-baku/",
+      "published": "2026-09-25T18:00:00-03:00",
+      "circuit": "baku",
+      "teams": [
+        "audi"
+      ],
+      "topic": "baku-qualifying",
+      "kind": "news"
+    },
+    {
+      "id": "nl-rn365-russell-baku-pole",
+      "featured": true,
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "RacingNews365 NL",
+      "cat": "予選",
+      "title": "ラッセルがバクーで他を圧倒。2番手に0.8秒差のポールポジション",
+      "summary": "アゼルバイジャンGP予選で、メルセデスのラッセルが2番手ルクレールに約0.8秒の差をつけてポールを獲得。長いストレートでのエネルギー管理と、パワーユニットの使い方が決め手になったと分析している。フェルスタッペンはエンジンの不調で8番手。",
+      "orig": "Zo blies Russell de voltallige F1-concurrentie weg in Baku",
+      "url": "https://racingnews365.nl/zo-blies-russell-de-voltallige-f1-concurrentie-weg-in-baku",
+      "published": "2026-09-25T22:00:00+02:00",
+      "circuit": "baku",
+      "teams": [
+        "mercedes",
+        "ferrari",
+        "redbull"
+      ],
+      "topic": "baku-qualifying",
+      "kind": "news"
+    },
+    {
+      "id": "fr-nextgen-verstappen-desastre",
+      "lang": "fr",
+      "region": "フランス",
+      "source": "Nextgen-Auto",
+      "cat": "ドライバー",
+      "title": "「完全な大惨事」フェルスタッペン、Q3を台無しにしたエンジントラブルを明かす",
+      "summary": "FP3では最速だったフェルスタッペン。予選はQ1から内燃エンジンの不調が続いて次第に悪化し、チームメイトのアジャーより1周0.5秒ほど遅れて8番手に終わった。",
+      "orig": "« Un désastre complet » : Verstappen révèle le problème moteur qui a ruiné sa Q3",
+      "url": "https://motorsport.nextgen-auto.com/fr/formule-1/un-desastre-complet-verstappen-revele-le-probleme-moteur-qui-a-ruine-sa-q3,211750.html",
+      "published": "2026-09-25T20:47:00+02:00",
+      "circuit": "baku",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "baku-qualifying",
+      "kind": "news"
     },
     {
       "id": "it-f1it-mercedes-devastante",
@@ -57,72 +145,25 @@
         "ferrari",
         "mclaren"
       ],
-      "topic": "baku-qualifying"
+      "topic": "baku-qualifying",
+      "kind": "news"
     },
     {
-      "id": "fr-nextgen-verstappen-desastre",
-      "lang": "fr",
-      "region": "フランス",
-      "source": "Nextgen-Auto",
-      "cat": "ドライバー",
-      "title": "「完全な大惨事」フェルスタッペン、Q3を台無しにしたエンジントラブルを明かす",
-      "summary": "FP3では最速だったフェルスタッペン。予選はQ1から内燃エンジンの不調が続いて次第に悪化し、チームメイトのアジャーより1周0.5秒ほど遅れて8番手に終わった。",
-      "orig": "« Un désastre complet » : Verstappen révèle le problème moteur qui a ruiné sa Q3",
-      "url": "https://motorsport.nextgen-auto.com/fr/formule-1/un-desastre-complet-verstappen-revele-le-probleme-moteur-qui-a-ruine-sa-q3,211750.html",
-      "published": "2026-09-25T20:47:00+02:00",
-      "circuit": "baku",
+      "id": "it-f1it-horner-ferrari",
+      "kind": "rumor",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "うわさ",
+      "title": "ホーナーの夢はフェラーリ。名門復活の適任者なのか",
+      "summary": "F1に戻るならフェラーリだけ、というホーナーの発言を受けて、20年近く続くタイトルの空白を終わらせられるかを論じる。レッドブルを一から築いた実績と政治力は魅力だが、自分の裁量で動くスタイルがフェラーリの組織と衝突しかねないとも指摘している。",
+      "orig": "Horner sogna la Ferrari: è lui l'uomo giusto per la rinascita?",
+      "url": "https://www.formula1.it/news/32812/1/horner-sogna-la-ferrari-e-lui-l-uomo-giusto-per-la-rinascita",
+      "published": "2026-09-25T17:00:00+02:00",
       "teams": [
-        "redbull"
+        "ferrari"
       ],
-      "topic": "baku-qualifying"
-    },
-    {
-      "id": "de-f1de-aston-honda-penalty",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "チーム",
-      "title": "アストンマーティンの2台、ホンダの新パーツを投入して最後尾スタートへ",
-      "summary": "アロンソとストロールは、ホンダ製パワーユニットの新しい部品を入れて年間の使用上限を超え、大きなグリッド降格を受けた。チーム代表クラックは「最も競争力が低いと見込むレースで使う」と、狙って選んだ判断だと説明している。",
-      "orig": "Baku: Fernando Alonso und Stroll müssen ans Ende der Startaufstellung",
-      "url": "https://www.formel1.de/news/news/2026-09-24/baku-fernando-alonso-und-stroll-muessen-ans-ende-der-startaufstellung",
-      "published": "2026-09-24T19:00:00+02:00",
-      "circuit": "baku",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "baku-qualifying"
-    },
-    {
-      "id": "pt-gp-bortoleto-17",
-      "lang": "pt",
-      "region": "ブラジル",
-      "source": "Grande Prêmio",
-      "cat": "分析",
-      "title": "ボルトレートは17番手スタート。ロングランが示すアウディの挽回の見込み",
-      "summary": "Q1で敗退したボルトレート。決勝を想定した走行データでは、アウディは7番目に速いチームで、メルセデスとは1周約1.2秒差。トップ10を争うには1秒以上の改善が必要だとしている。",
-      "orig": "Bortoleto larga em 17º: o que ritmo de corrida indica para recuperação da Audi em Baku",
-      "url": "https://grandepremio.com/br/f1/bortoleto-larga-em-17o-o-que-ritmo-de-corrida-indica-para-recuperacao-da-audi-em-baku/",
-      "published": "2026-09-25T18:00:00-03:00",
-      "circuit": "baku",
-      "teams": [
-        "audi"
-      ],
-      "topic": "baku-qualifying"
-    },
-    {
-      "id": "en-therace-final-races-imola",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "カレンダー",
-      "title": "2026年シーズンの最終戦はどこで？ F1はイモラを予備会場として準備",
-      "summary": "中東情勢でバーレーンとサウジアラビアが中止になった今季。カタールとアブダビの開催を目指しつつ、イモラを代わりの会場として準備している。最終判断は、輸送の手配が間に合う10月中旬になる見込み。",
-      "orig": "F1's latest plan for where to end its 2026 season",
-      "url": "https://www.the-race.com/formula-1/whats-going-on-with-f1s-uncertain-final-2026-races/",
-      "published": "2026-09-24T12:00:00+01:00",
-      "circuit": "imola",
-      "topic": "season-finale-venue"
+      "topic": "horner-ferrari"
     },
     {
       "id": "en-rn365-baku-track-repairs",
@@ -136,7 +177,8 @@
       "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain",
       "published": "2026-09-25T08:45:00+01:00",
       "circuit": "baku",
-      "topic": "baku-track-repairs"
+      "topic": "baku-track-repairs",
+      "kind": "news"
     },
     {
       "id": "en-rn365-mclaren-upgrade",
@@ -153,7 +195,8 @@
       "teams": [
         "mclaren"
       ],
-      "topic": "mclaren-baku-upgrade"
+      "topic": "baku-upgrades",
+      "kind": "tech"
     },
     {
       "id": "de-f1de-cadillac-hires",
@@ -169,7 +212,39 @@
       "teams": [
         "cadillac"
       ],
-      "topic": "cadillac-technical-hires"
+      "topic": "cadillac-technical-hires",
+      "kind": "news"
+    },
+    {
+      "id": "de-f1de-schumacher-94",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Formel1.de",
+      "cat": "カルチャー",
+      "title": "Netflix『Schumacher '94』を検証。描いたものと、足りないもの",
+      "summary": "シューマッハが初めて王者になった1994年を追うドキュメンタリー。イモラの悲劇のあとの葛藤は丁寧に描く一方、シーズンの論争への踏み込みや、デイモン・ヒルらライバル側の視点が欠けていると指摘している。",
+      "orig": "\"Schumacher '94\" im Check: Was die Netflix-Doku zeigt - und was ihr fehlt",
+      "url": "https://www.formel1.de/news/news/2026-09-25/schumacher-94-im-check-was-die-netflix-doku-zeigt-und-was-ihr-fehlt",
+      "published": "2026-09-25T06:12:00+02:00",
+      "topic": "schumacher-94-documentary",
+      "kind": "news"
+    },
+    {
+      "id": "ja-f1jouhou-bwt-pink",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
+      "title": "アルピーヌを離れるBWT、次のチーム探しに苦戦。「ピンクにしたくない」が理由？",
+      "summary": "独Auto Motor und Sportの報道を紹介するまとめ。アルピーヌとの契約を終える水処理メーカーBWTが新しい提携先を探しているが、マシンをピンクに塗る条件がネックになっているという。掲示板では過去のピンクのマシンを懐かしむ声や、色の条件を緩めるべきだという意見で盛り上がっている。",
+      "orig": "アルピーヌと別れるBWTが新たなF1チーム探しに苦戦、どうやらどこもピンクにしたくないらしい",
+      "url": "https://f1jouhou2.com/blog-entry-31564.html",
+      "published": "2026-09-25T12:00:00+09:00",
+      "teams": [
+        "alpine"
+      ],
+      "topic": "bwt-new-team"
     },
     {
       "id": "de-f1de-chadwick-williams",
@@ -186,26 +261,111 @@
       "teams": [
         "williams"
       ],
-      "topic": "chadwick-williams-test"
+      "topic": "chadwick-williams-test",
+      "kind": "news"
     },
     {
-      "id": "de-f1de-schumacher-94",
+      "id": "de-f1de-aston-honda-penalty",
       "lang": "de",
       "region": "ドイツ",
       "source": "Formel1.de",
-      "cat": "カルチャー",
-      "title": "Netflix『Schumacher '94』を検証。描いたものと、足りないもの",
-      "summary": "シューマッハが初めて王者になった1994年を追うドキュメンタリー。イモラの悲劇のあとの葛藤は丁寧に描く一方、シーズンの論争への踏み込みや、デイモン・ヒルらライバル側の視点が欠けていると指摘している。",
-      "orig": "\"Schumacher '94\" im Check: Was die Netflix-Doku zeigt - und was ihr fehlt",
-      "url": "https://www.formel1.de/news/news/2026-09-25/schumacher-94-im-check-was-die-netflix-doku-zeigt-und-was-ihr-fehlt",
-      "published": "2026-09-25T06:12:00+02:00",
-      "topic": "schumacher-94-documentary"
+      "cat": "チーム",
+      "title": "アストンマーティンの2台、ホンダの新パーツを投入して最後尾スタートへ",
+      "summary": "アロンソとストロールは、ホンダ製パワーユニットの新しい部品を入れて年間の使用上限を超え、大きなグリッド降格を受けた。チーム代表クラックは「最も競争力が低いと見込むレースで使う」と、狙って選んだ判断だと説明している。",
+      "orig": "Baku: Fernando Alonso und Stroll müssen ans Ende der Startaufstellung",
+      "url": "https://www.formel1.de/news/news/2026-09-24/baku-fernando-alonso-und-stroll-muessen-ans-ende-der-startaufstellung",
+      "published": "2026-09-24T19:00:00+02:00",
+      "circuit": "baku",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "baku-qualifying",
+      "kind": "news"
+    },
+    {
+      "id": "en-pf1-audi-baku-tech",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "PlanetF1",
+      "cat": "テクニカル",
+      "title": "アウディの大型アップデートを解剖。フロアから前後ウイングまでほぼ全面刷新",
+      "summary": "2026年規則でダウンフォースの主役になったフロアを中心に、前後ウイングやリアコーナーまで作り直した。タイヤ後方の乱れた気流をディフューザーから遠ざけるのが狙いで、フロントウイングの翼端板を大きくして“アウトウォッシュ”を取り戻しつつ、床下へ送る空気を増やしている。新旧パーツを並べて走らせ、風洞やシミュレーションとの相関も確かめたという。",
+      "orig": "F1 Tech Analysis: Secrets behind massive Audi upgrade uncovered",
+      "url": "https://www.planetf1.com/features/f1-tech-analysis-audi-baku-azerbaijan-upgrade",
+      "published": "2026-09-24T15:18:00+00:00",
+      "circuit": "baku",
+      "teams": [
+        "audi"
+      ],
+      "topic": "baku-upgrades"
+    },
+    {
+      "id": "en-therace-williams-chassis",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "title": "ウィリアムズの“革新的”な軽量シャシー。ゲイリー・アンダーソンが抱く不安",
+      "summary": "ウィリアムズは新しい製法で作った軽いシャシーを投入し、バージボードのステー撤去やリアタイヤ付近の床下、ブレーキダクトも見直した。技術解説のアンダーソンは、苦しいチームに今必要なのは“革命”より堅実な改善で、軽量化だけではレーシングブルズなど中団との差は埋まらないと見ている。",
+      "orig": "What's worrying about upgraded Williams as Baku package appears",
+      "url": "https://www.the-race.com/formula-1/williams-f1-upgrade-baku-chassi-revolution-worrying/",
+      "published": "2026-09-24T12:00:00+01:00",
+      "circuit": "baku",
+      "teams": [
+        "williams"
+      ],
+      "topic": "baku-upgrades"
+    },
+    {
+      "id": "en-therace-final-races-imola",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "カレンダー",
+      "title": "2026年シーズンの最終戦はどこで？ F1はイモラを予備会場として準備",
+      "summary": "中東情勢でバーレーンとサウジアラビアが中止になった今季。カタールとアブダビの開催を目指しつつ、イモラを代わりの会場として準備している。最終判断は、輸送の手配が間に合う10月中旬になる見込み。",
+      "orig": "F1's latest plan for where to end its 2026 season",
+      "url": "https://www.the-race.com/formula-1/whats-going-on-with-f1s-uncertain-final-2026-races/",
+      "published": "2026-09-24T12:00:00+01:00",
+      "circuit": "imola",
+      "topic": "season-finale-venue",
+      "kind": "news"
+    },
+    {
+      "id": "en-f1com-baku-upgrades-list",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "Formula1.com",
+      "cat": "テクニカル",
+      "title": "バクー持ち込みの全チーム・アップデート一覧。メルセデスとフェラーリは新パーツなし",
+      "summary": "FIAに提出された資料のまとめ。アウディはフロントウイング、ノーズ、フロアなど14項目の大型パッケージ。マクラーレンはサイドポッド入口、エンジンカバー、フロア端、ディフューザー、レッドブルはフロア形状とサイドポッドを変更。上位のメルセデスとフェラーリは今回アップデートがない。",
+      "orig": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+      "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr",
+      "published": "2026-09-24T10:38:00+00:00",
+      "circuit": "baku",
+      "teams": [
+        "audi",
+        "mclaren",
+        "redbull"
+      ],
+      "topic": "baku-upgrades"
+    },
+    {
+      "id": "ja-f1jouhou-v8-engine",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
+      "title": "次期F1エンジンは3.0L V8ターボ＋ハイブリッドに？ 自然吸気は騒音で見送りとの報道",
+      "summary": "Motorsport.comの報道を紹介するまとめ。次世代のパワーユニットは3.0リッターV8ターボに簡素化したハイブリッドを組み合わせる方向で、市街地コースの騒音規制を理由に自然吸気は見送られたという。掲示板では「ターボでは昔の音は戻らない」という落胆や、市街地レースが増えすぎたせいだという声が目立つ。",
+      "orig": "次期F1エンジンは3.0リッターV8ターボ＋ハイブリッドになるらしいな...市街地での騒音問題でNA見送り",
+      "url": "https://f1jouhou2.com/blog-entry-31561.html",
+      "published": "2026-09-24T12:00:00+09:00",
+      "topic": "next-engine-v8"
     }
-  ],
-  "topics": {
-    "baku-qualifying": {
-      "title": "アゼルバイジャンGP予選、ラッセルが圧倒的なポール。首位アントネッリは16番手から",
-      "summary": "ラッセルが2番手に約0.8秒の差をつけてポールを獲得。ランキング首位のアントネッリはQ1でクラッシュして16番手、フェルスタッペンもエンジンの不調で8番手に沈んだ。各国メディアが、メルセデスの速さとグリッド降格の影響を報じている。"
-    }
-  }
+  ]
 }
