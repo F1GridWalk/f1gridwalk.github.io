@@ -315,6 +315,8 @@ a:hover{color:var(--ink-2)}
 @media (max-width:1000px){
   .wrap.dash{grid-template-columns:1fr}
   .dash-main{order:1}.dash-side{order:2}
+  /* same order as desktop: this week, then latest news, then tech / paddock / analysis */
+  .dash-main > .hero{order:0}.dash-main > #news{order:1}.dash-main > .geek{order:2}.dash-main > .notebox{order:3}
 }
 @media (max-width:600px){
   .hero-in{grid-template-columns:1fr}
