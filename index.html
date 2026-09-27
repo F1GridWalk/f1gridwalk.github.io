@@ -473,8 +473,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
 /* kind labels */
 .kind{display:inline-flex;align-items:center;padding:0 7px;border-radius:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;line-height:18px;border:1px solid var(--ink);color:var(--ink);white-space:nowrap;background:transparent}
-.kind.tech{background:var(--ink);color:var(--paper)}
+.kind{--k:var(--ink);border-color:var(--k);color:var(--k);background:color-mix(in srgb,var(--k) 9%,transparent)}
+.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.analysis{--k:#86650F}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}
 .kind.rumor,.kind.fan{border-style:dashed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.analysis{--k:#D9B85A}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}}
+:root[data-theme="dark"] .kind.primary{--k:#7FC48C}:root[data-theme="dark"] .kind.news{--k:#B6BCC8}:root[data-theme="dark"] .kind.tech{--k:#7DB6E0}:root[data-theme="dark"] .kind.analysis{--k:#D9B85A}:root[data-theme="dark"] .kind.rumor{--k:#E8946C}:root[data-theme="dark"] .kind.fan{--k:#C39AD9}
 /* geek boxes */
 .geek{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
 .geek .band-head{margin-bottom:4px}
@@ -1334,7 +1337,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       li.appendChild(badge(a.source));
       li.appendChild(mk('span','tl-lang', langCode(a.lang)));
       var tt2 = extLink(a.url, a.title, 'tl-title');
-      if (a.kind === 'rumor' || a.kind === 'fan'){ var kt = kindChip(a); kt.style.marginRight = '6px'; tt2.insertBefore(kt, tt2.firstChild); }
+      { var kt = kindChip(a); kt.style.marginRight = '6px'; tt2.insertBefore(kt, tt2.firstChild); }
       li.appendChild(tt2);
       ul.appendChild(li);
     });
@@ -1778,8 +1781,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     d.style.setProperty('--t1', t.c1); d.style.setProperty('--t2', t.c2); d.style.setProperty('--t3', t.c3 || t.c2);
     return d;
   }
-  var KIND = { tech:'TECH', rumor:'未確認', fan:'掲示板まとめ' };
-  function kindChip(a){ return (a.kind && KIND[a.kind]) ? mk('span', 'kind ' + a.kind, KIND[a.kind]) : null; }
+  // one short label on every item, so what kind of information it is shows at a glance
+  var KIND = { primary:'一次情報', news:'報道', tech:'技術', rumor:'噂', fan:'ファン投稿', analysis:'分析' };
+  var KIND_TIP = { primary:'F1・FIA・チームなど当事者の公式発表', news:'報道機関の記事', tech:'技術の解説・分析記事', rumor:'報道で出たうわさ・未確認の話', fan:'ファン掲示板で話題の投稿（未確認を含む）', analysis:'個人による分析・考察' };
+  var PRIMARY_SRC = /^(Formula1\.com|F1公式|FIA)(\s|$)/i;
+  function kindOf(a){ var k = a.kind || 'news'; if (k === 'news' && (a.primary || PRIMARY_SRC.test(a.source || ''))) return 'primary'; return KIND[k] ? k : 'news'; }
+  function kindChip(a){ var k = a === 'analysis' ? 'analysis' : kindOf(a); var c = mk('span', 'kind ' + k, KIND[k]); c.title = KIND_TIP[k]; return c; }
   function geekRow(a){
     var c = a.circuit && state.circuits[a.circuit];
     var row = mk('div','grow'); row.setAttribute('data-c', colorOf(a.source));
@@ -1822,6 +1829,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     if (n.orig && n.orig !== n.title) row.appendChild(mk('div','norig', n.orig));
     row.appendChild(mk('p', null, n.summary));
     var meta = mk('div','card-meta');
+    meta.appendChild(kindChip('analysis'));
     meta.appendChild(mk('span', 'fee ' + (n.paid ? 'paid' : 'free'), n.paid ? '有料' : '無料'));
     var pf = n.platform || 'note';
     meta.appendChild(mk('span', 'plat plat-' + pf, PLAT[pf] || pf));
