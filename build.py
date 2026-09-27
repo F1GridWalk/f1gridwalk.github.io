@@ -540,6 +540,16 @@ def build_lenses(arch, flag_map):
         lenses.append((pub, slug, L, url))
 
     lenses.sort(key=lambda x: x[0], reverse=True)
+    # link the newest lens from the top page (inside <!--pre:lens--> in index.html)
+    ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
+    blk = ''
+    if lenses:
+        p0, s0, L0, u0 = lenses[0]
+        blk = (f'<a class="lens-link" href="/lens/{e(s0)}/"><small>WORLD MEDIA LENS · {e(L0["gpLabel"])}</small>'
+               f'<b>{e(L0["title"])}</b><span>世界の記事を読み比べた特集。謎の答え合わせと投票も →</span></a>')
+    out = re.sub(r'(<!--pre:lens-->).*?(<!--/pre:lens-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
+    if out != src:
+        open(ip, 'w', encoding='utf-8').write(out)
     if not lenses:
         old = os.path.join(ROOT, 'lens', 'index.html')
         if os.path.exists(old):
