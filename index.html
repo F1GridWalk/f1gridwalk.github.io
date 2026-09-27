@@ -1783,8 +1783,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     it.appendChild(meta);
     var h = mk('h3'); h.appendChild(extLink(a.url, a.title)); it.appendChild(h);
     it.appendChild(mk('p', null, a.summary));
-    it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
-    if (/^[a-z0-9][a-z0-9-]*$/.test(a.id || '')){ var pl = mk('a','perma','詳細・共有 ›'); pl.href = '/news/' + a.id + '/'; it.appendChild(pl); }
+    if (a.orig) it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
+    if (!a.isNote && /^[a-z0-9][a-z0-9-]*$/.test(a.id || '')){ var pl = mk('a','perma','詳細・共有 ›'); pl.href = '/news/' + a.id + '/'; it.appendChild(pl); }
     var tt = tagsFor(a); if (tt) it.appendChild(tt);
     var foot = mk('div','card-foot');
     foot.appendChild(mk('span','cat', a.cat || 'ニュース'));
@@ -1819,7 +1819,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var box = el('kindfilter'); box.textContent = '';
     var pool = list.filter(function(a){ return pass(a, 'kind'); }), cnt = { all:pool.length };
     pool.forEach(function(a){ var k = a.kind || 'news'; cnt[k] = (cnt[k] || 0) + 1; });
-    cnt.analysis = noteList().length;
     KIND_TABS.forEach(function(t){
       if (t[0] !== 'all' && !cnt[t[0]] && state.kind !== t[0]) return;
       var b = mk('button', 'k-' + t[0]); b.type = 'button';
@@ -1901,16 +1900,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   function renderFeed(list){
     var deskSplit = false;
-    if (state.kind === 'analysis' && state.view !== 'team'){
-      var nf = el('feed'); nf.textContent = '';
-      var ab0 = activeBar(); if (ab0) nf.appendChild(ab0);
-      var nl = noteList();
-      el('count').textContent = nl.length + '本の個人分析 · note・Substack・個人ブログ · 報道ではなく個人の見解です';
-      if (!nl.length){ nf.appendChild(mk('p','empty','この条件の個人分析は、今はまだありません。')); return; }
-      var ng = mk('div','note-feed'); nl.forEach(function(n){ ng.appendChild(noteRow(n)); }); nf.appendChild(ng);
-      nf.appendChild(mk('p','gnote','要約はこちらで短くまとめたものです。有料の記事は、無料で公開されている部分だけをもとに要約しています。'));
-      return;
-    }
     var shown = list.filter(function(a){ return pass(a) && (!deskSplit || (a.kind || 'news') === 'news'); });
     var feed = el('feed'); feed.textContent = '';
     var ab = activeBar(); if (ab) feed.appendChild(ab);
@@ -2059,7 +2048,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
   function renderAll(){
     var d = state.data; if (!d) return;
-    var all = (d.articles || []).slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); });
+    var PLAT_JA = { note:'note', substack:'Substack', blog:'個人ブログ' };
+    var notesAsArts = ((state.notes || {}).notes || []).filter(function(n){ return !n.paid; }).map(function(n){
+      return { id:n.id, isNote:true, kind:'analysis', lang:n.lang || 'ja', source:n.author, region:PLAT_JA[n.platform || 'note'] || n.platform, cat:n.cat, circuit:n.circuit, teams:n.teams, title:n.title, summary:n.summary, orig:n.orig, url:n.url, published:n.published };
+    });
+    var all = (d.articles || []).concat(notesAsArts).slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); });
     state.all = all;
     state.srcRegion = {}; all.forEach(function(a){ if (a.region && !state.srcRegion[a.source]) state.srcRegion[a.source] = a.region; });
     state.byUrl = {}; all.forEach(function(a){ state.byUrl[a.url] = a; });
@@ -2079,7 +2072,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
     el('view-list').setAttribute('aria-pressed', String(state.view === 'list'));
     el('view-ja').setAttribute('aria-pressed', String(state.lang === 'ja'));
-    el('filters').hidden = state.kind === 'analysis';
     { var fnum = (state.kind !== 'all') + (state.lang !== 'all') + (state.team !== 'all') + (state.src !== 'all'); var fb = el('filt-n'); if (fb){ fb.hidden = !fnum; fb.textContent = fnum ? String(fnum) : ''; } }
     if (d.updatedAt){
       var up = el('updated'); up.textContent = '';
@@ -2179,7 +2171,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   // one short label on every item, so what kind of information it is shows at a glance
   var KIND = { primary:'一次情報', news:'報道', tech:'技術', rumor:'噂', fan:'ファン投稿', analysis:'分析' };
-  var KIND_TIP = { primary:'F1・FIA・チームなど当事者の公式発表', news:'報道機関の記事', tech:'技術の解説・分析記事', rumor:'報道で出たうわさ・未確認の話', fan:'ファン掲示板で話題の投稿（未確認を含む）', analysis:'個人による分析・考察' };
+  var KIND_TIP = { primary:'F1・FIA・チームなど当事者の公式発表', news:'報道機関の記事', tech:'技術の解説・分析記事', rumor:'報道で出たうわさ・未確認の話', fan:'ファン掲示板で話題の投稿（未確認を含む）', analysis:'個人による分析・考察（note・Substack・個人ブログ。報道ではなく個人の見解です）' };
   var PRIMARY_SRC = /^(Formula1\.com|F1公式|FIA)(\s|$)/i;
   function kindOf(a){ var k = a.kind || 'news'; if (k === 'news' && (a.primary || PRIMARY_SRC.test(a.source || ''))) return 'primary'; return KIND[k] ? k : 'news'; }
   function kindChip(a){ var k = a === 'analysis' ? 'analysis' : kindOf(a); var c = mk('span', 'kind ' + k, KIND[k]); c.title = KIND_TIP[k]; return c; }
