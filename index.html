@@ -2175,7 +2175,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     cp.addEventListener('click', function(){
       track('copy');
       var done = function(){ cp.innerHTML = '<b>リンク</b><span>コピーしました</span>'; setTimeout(function(){ cp.innerHTML = cpLabel; open(false); }, 1200); };
-      try { navigator.clipboard.writeText(shareText() + '\n' + SITE_URL).then(done, function(){ window.prompt('このURLをコピーしてください', SITE_URL); }); }
+      try { navigator.clipboard.writeText(SITE_URL).then(done, function(){ window.prompt('このURLをコピーしてください', SITE_URL); }); }
       catch(e){ window.prompt('このURLをコピーしてください', SITE_URL); }
     });
     el('share-native').addEventListener('click', function(){

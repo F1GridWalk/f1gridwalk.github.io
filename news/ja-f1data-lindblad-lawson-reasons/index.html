@@ -254,10 +254,10 @@ document.addEventListener('click',function(ev){
   var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
   try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}
 });
-var cp=document.getElementById('copy');
+var cp=document.getElementById('copy'),cu=(document.querySelector('link[rel=canonical]')||{}).href||location.href;
 if(cp) cp.addEventListener('click',function(){
   var done=function(){cp.textContent='コピーしました';setTimeout(function(){cp.textContent='リンクをコピー';},1400);};
-  try{navigator.clipboard.writeText(location.href).then(done,function(){window.prompt('このURLをコピーしてください',location.href);});}catch(e){window.prompt('このURLをコピーしてください',location.href);}
+  try{navigator.clipboard.writeText(cu).then(done,function(){window.prompt('このURLをコピーしてください',cu);});}catch(e){window.prompt('このURLをコピーしてください',cu);}
 });
 </script>
 </body>
