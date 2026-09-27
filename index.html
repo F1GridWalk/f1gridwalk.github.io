@@ -1688,7 +1688,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         }
       });
       var ax = mk('div','lens-axes'); ax.id = 'lens-axes';
-      var open0 = state.lensOpen != null ? state.lensOpen : wide.matches; ax.hidden = !open0;
+      var open0 = state.lensOpen != null ? state.lensOpen : false; ax.hidden = !open0;
       var axb = mk('button','axes-toggle'); axb.type = 'button';
       axb.setAttribute('aria-expanded', String(open0)); axb.setAttribute('aria-controls','lens-axes');
       axb.title = '主役・焦点・原因の説明・見出しの強調点で比べる';
