@@ -11,7 +11,7 @@ Page: `lens/<slug>.json` → `python3 build.py` → `lens/<slug>/index.html` (li
 ## 2. "Not seen in Japanese" stories (3)
 - Candidate = a concrete fact, quote or detail from a foreign article.
 - Search in Japanese for it (autosport web, F1-Gate, Formula1-Data, motorsport.com 日本版, TopNews, DAZN, Yahoo! ニュース). Keep only candidates with no Japanese article covering the same point. English big outlets are almost always translated; the good candidates usually come from non-English outlets.
-- Wording: always "日本語ではほぼ見かけない / 見当たらなかった（◯月◯日時点）", never "一切報じられていない".
+- Wording: titles and header images say "日本語では語られない3つの話" (owner's choice). The note under the stories always keeps the careful form "日本語で検索し、同じ内容の記事が見当たらなかった（◯月◯日時点）". Never "一切報じられていない".
 - Rumours and pundit opinions get kind "rumor" and are labelled as someone's view.
 
 ## 3. The mystery (1)
