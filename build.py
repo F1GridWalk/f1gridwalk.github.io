@@ -275,14 +275,10 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         media = [x for x in items if x.get('kind') != 'fan']
         n_media = len({x['source'] for x in media}) or n
         hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n_media}媒体が報道</span></div>')
-        steps = ['事実', '世界の記事'] + (['世界の見方'] if lens else [])
-        sid = {'事実': 'tw-facts', '世界の記事': 'tw-articles', '世界の見方': 'tw-lens'}
-        hero.append('<ol class="tw-steps" aria-label="この話題の読み方">' + ''.join(
-            f'<li><a href="#{sid[x]}"><b>{i + 1}</b>{x}</a></li>' for i, x in enumerate(steps)) + '</ol>')
         hero.append('<div class="tw-sec" id="tw-facts">'
                     f'<h1 id="hero-title">{ext(pick["url"], e(info.get("title") or pick["title"]))}</h1>'
                     f'<p class="hero-sum trend-sum">{e(info.get("summary") or pick.get("summary", ""))}</p>'
-                    f'<div class="meta trend-read">{ext(pick["url"], e(pick["source"]) + "の記事を読む ↗", "read")}<span>各媒体が何を重視したかは「世界の見方」で</span></div></div>')
+                    f'<div class="meta trend-read">{ext(pick["url"], e(pick["source"]) + "の記事を読む ↗", "read")}</div></div>')
         li = []
         for x in sorted(media, key=when, reverse=True)[:3]:
             k = kind_of(x)
@@ -298,8 +294,8 @@ def prerender_index(data, flag_of, flag_map_ref=None):
             li.append(f'<li data-c="{flag_of(x)}">' + top
                       + ext(x['url'], f'<span class="kind {k}" style="margin-right:6px">{KIND[k]}</span>' + e(x['title']), 'tl-title')
                       + angle + prov + '</li>')
-        hero.append(f'<section class="tw-sec" id="tw-articles"><h2 class="tw-h"><span class="tw-n">2</span>世界の記事<small>{n_media}媒体 · {len(media)}本</small></h2>'
-                    '<ul class="trend-list tw-list">' + ''.join(li) + '</ul></section>')
+        arts_block = (f'<section class="tw-sec" id="tw-articles"><h2 class="tw-h">世界の記事<small>{n_media}媒体 · {len(media)}本</small></h2>'
+                      '<ul class="trend-list tw-list">' + ''.join(li) + '</ul></section>')
         if lens:
             cols = []
             for gi, g in enumerate(lens['groups']):
@@ -321,8 +317,10 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                             + '</article>')
             one = (f'<div class="lens-one"><h3>世界の報道を一言で<span class="ai">AIによる横断分析</span></h3><p>{e(lens["oneline"])}</p></div>'
                    if lens.get('oneline') else '')
-            hero.append('<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h"><span class="tw-n">3</span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2>'
+            hero.append('<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2>'
+                        '<p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p>'
                         '<div class="lens-cols">' + ''.join(cols) + '</div>' + one + '</section>')
+        hero.append(arts_block)
     else:
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)
         if a:
