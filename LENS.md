@@ -31,7 +31,7 @@ Page: `lens/<slug>.json` → `python3 build.py` → `lens/<slug>/index.html` (li
 ## 6. Reserve columns (臨時号)
 Special issues on a news theme (not a race), written ahead and kept as drafts until the owner wants to run them.
 - Kept on the git branch `reserve` (not on `main`, so nothing reaches the site): `lens/<slug>.json` with `"draft": true` and `"gpLabel": "臨時号"`, plus the note manuscript and header image under `reserve/`. To publish, copy the JSON onto `main`. Even on `main`, a JSON with `"draft": true` is never built; `build.py` deletes any page left over from a draft.
-- Current reserves: `horner-ferrari-2026` (Horner / Ferrari), `honda-abroad-2026` (Aston Martin-Honda seen from abroad). Both were researched on 28 Sep 2026.
+- Published: `horner-ferrari-2026` (28 Sep 2026). Reserve: `honda-abroad-2026` — rejected by the owner on 28 Sep; to be rebuilt from scratch before use.
 - Before publishing a reserve, refresh it on the day:
   1. Search again for new articles on the theme (English and non-English). If something big happened (an announcement, a denial, new data), update the stories and the mystery, or drop the reserve.
   2. Re-run the Japanese check for all 3 stories. If a story is now covered in Japanese, replace it. Update the date in `unreported.note` and in the answer/caveat ("◯月◯日時点").
