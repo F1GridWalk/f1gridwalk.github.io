@@ -1,4 +1,4 @@
-TITLE = "海外から見たホンダ。日本語ではほぼ見かけない、アストンマーティン・ホンダの3つの話"
+TITLE = "海外から見たホンダ。日本語では語られない、アストンマーティン・ホンダの3つの話"
 TAGS = "#F1 #ホンダ #アストンマーティン #アロンソ #ストロール #モータースポーツ"
 L = "https://f1gridwalk.github.io/lens/honda-abroad-2026/"
 B = [
@@ -36,7 +36,7 @@ B = [
 ("url","https://www.f1oversteer.com/news/lance-stroll-just-set-18-year-f1-dnf-record-with-latest-aston-martin-retirement-at-azerbaijan-gp/"),
 ("p","・Motorsport.com España（スペイン）"),
 ("url","https://es.motorsport.com/f1/news/honda-niega-problemas-motor-denunciados-alonso-baku/10859541/"),
-("p","※「日本語ではほぼ見かけない」は、autosport web、F1-Gate、Formula1-Data、motorsport.com日本版、TopNewsなどを日本語で検索した範囲での話です（9月28日時点）。見落としがあれば、ぜひ教えてください。"),
+("p","※「日本語では語られない」は、autosport web、F1-Gate、Formula1-Data、motorsport.com日本版、TopNewsなどを日本語で検索した範囲での話です（9月28日時点）。見落としがあれば、ぜひ教えてください。"),
 ("h2","WORLD MEDIA LENSについて"),
 ("p","世界のF1ニュースを日本語で読めるサイト「F1 Grid Walk」の連載です。ふだんは1レースにつき1本、世界の記事を読み比べて、日本語ではあまり見かけない話を届けています。今回は、レースの合間の臨時号です。フォローしてもらえると励みになります。"),
 ("url","https://f1gridwalk.github.io/"),

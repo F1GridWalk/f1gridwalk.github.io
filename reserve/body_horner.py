@@ -1,4 +1,4 @@
-TITLE = "「フェラーリは夢」の裏側で。日本語ではほぼ見かけない、ホーナーをめぐる3つの話"
+TITLE = "「フェラーリは夢」の裏側で。日本語では語られない、ホーナーをめぐる3つの話"
 TAGS = "#F1 #ホーナー #フェラーリ #ヴァスール #レッドブル #モータースポーツ"
 L = "https://f1gridwalk.github.io/lens/horner-ferrari-2026/"
 B = [
@@ -34,7 +34,7 @@ B = [
 ("url","https://racingnews365.com/fred-vasseur-under-pressure-at-ferrari-the-christian-horner-rumours-explained"),
 ("p","・oe24（オーストリア）"),
 ("url","https://www.oe24.at/a/ferrari-frust-horner-soll-napoleon-vasseur-abloesen-900117704"),
-("p","※「日本語ではほぼ見かけない」は、autosport web、F1-Gate、Formula1-Data、motorsport.com日本版、TopNewsなどを日本語で検索した範囲での話です（9月28日時点）。見落としがあれば、ぜひ教えてください。"),
+("p","※「日本語では語られない」は、autosport web、F1-Gate、Formula1-Data、motorsport.com日本版、TopNewsなどを日本語で検索した範囲での話です（9月28日時点）。見落としがあれば、ぜひ教えてください。"),
 ("h2","WORLD MEDIA LENSについて"),
 ("p","世界のF1ニュースを日本語で読めるサイト「F1 Grid Walk」の連載です。ふだんは1レースにつき1本、世界の記事を読み比べて、日本語ではあまり見かけない話を届けています。今回は、レースの合間の臨時号です。フォローしてもらえると励みになります。"),
 ("url","https://f1gridwalk.github.io/"),
