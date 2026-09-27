@@ -315,11 +315,9 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                             + (f'<ul class="lens-pts">{pts}</ul>' if pts else '')
                             + (f'<details class="lens-src"><summary>記事を見る</summary><ul>{links}</ul></details>' if links else '')
                             + '</article>')
-            one = (f'<div class="lens-one"><h3>世界の報道を一言で<span class="ai">AIによる横断分析</span></h3><p>{e(lens["oneline"])}</p></div>'
-                   if lens.get('oneline') else '')
             hero.append('<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2>'
                         '<p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p>'
-                        '<div class="lens-cols">' + ''.join(cols) + '</div>' + one + '</section>')
+                        '<div class="lens-cols">' + ''.join(cols) + '</div></section>')
         hero.append(arts_block)
     else:
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)

@@ -49,7 +49,7 @@ a) Per-article "lens" — for every news/tech/rumor article of the topic (not "f
 (type: レポート = race/session report, 分析 = analysis of why, 談話 = built on quotes/reactions, 総括 = winners-and-losers / ratings / round-up, 論評 = opinion column, 速報 = short breaking item.)
 
 b) Topic-level "lens" inside topics["<slug>"]:
-"lens": {"oneline": "<世界の報道を一言で: 3–5 Japanese sentences, ~180–280 chars>", "groups": [ ... 3–6 groups ... ]}
+"lens": {"groups": [ ... 3–6 groups ... ]}  (no summary paragraph: the site shows only the group cards and the comparison table)
 Each group: {"scope": "country" | "outlet" | "wire" | "official" | "others", "region": "<country in Japanese, for country/outlet>", "provider": "<agency, for wire>", "label": "<e.g. 英国系メディア, ドイツ系メディア, GPblog, 国際通信, F1公式, そのほかの媒体>", "focus": "<焦点 shown big on the card, ≤16 chars>", "lead": "...", "cause": "...", "hook": "...", "points": ["<2–3 short bullets, ≤40 chars each>"], "ids": ["<article ids in this group>"], "agree": <optional: number of outlets in the group that share the focus>}.
 
 RULES (these are what make the feature trustworthy — follow them strictly):
@@ -60,7 +60,6 @@ RULES (these are what make the feature trustworthy — follow them strictly):
 - Fan-forum digests (kind "fan") are never in the lens; they appear in 「ファンの反応」 automatically.
 - Order groups by how much they contrast: first the 3 most different angles (these show as the big columns), then the rest.
 - Compare only 主役・焦点・原因の説明・見出しの強調点 — what each outlet chose as most newsworthy. NO scores, NO "favourable/unfavourable" or bias labels, no guessing at motives or nationalism. Describe, do not judge.
-- "oneline": first what all outlets agree on (the facts), then the main differences in what they emphasised, naming groups/outlets. Only claims you can point to in the articles; no numbers that are not in them.
 - Every id must exist in articles.json and belong to that topic. Update the lens when new articles of the topic arrive; delete a group's ids that were dropped; drop the whole lens when the topic stops being the feature and has fewer than 4 outlets.
 
 ## 5. Personal analysis (notes.json)
@@ -84,7 +83,7 @@ Keep its exact structure. Update only with facts confirmed by at least two indep
 - Set "updatedAt" whenever you change it. Never guess points or times.
 
 ## 7. Validate with python
-All files load as JSON; every article kind in {news, tech, rumor, fan}; all circuit/team keys valid; every article has a topic; every "topics" key is used by 2+ outlets; session times ISO 8601 UTC; exactly one featured article of kind news/tech; no note.com / substack.com / personal-blog URL in articles.json; every notes entry has the required fields (price when paid, orig when not Japanese). Lens: every topics[*].lens has a non-empty "oneline" and 1–6 groups; every group has scope in {country, outlet, wire, official, others}, label, focus, points (1–3) and ids that exist in articles.json with that topic; a "country" group has 2+ different outlets from that region; articles with "provider" are only in "wire" groups; no "fan" article is in any group; article "lens" objects have type in {レポート, 分析, 談話, 総括, 論評, 速報}.
+All files load as JSON; every article kind in {news, tech, rumor, fan}; all circuit/team keys valid; every article has a topic; every "topics" key is used by 2+ outlets; session times ISO 8601 UTC; exactly one featured article of kind news/tech; no note.com / substack.com / personal-blog URL in articles.json; every notes entry has the required fields (price when paid, orig when not Japanese). Lens: every topics[*].lens has 1–6 groups; every group has scope in {country, outlet, wire, official, others}, label, focus, points (1–3) and ids that exist in articles.json with that topic; a "country" group has 2+ different outlets from that region; articles with "provider" are only in "wire" groups; no "fan" article is in any group; article "lens" objects have type in {レポート, 分析, 談話, 総括, 論評, 速報}.
 
 ## 7b. Build the article pages (required, every run)
 Run `python3 build.py` in the clone root (standard library only, takes a second). It creates one page per article at news/<id>/index.html (these pages are permanent — never delete them), the list page news/index.html, news/archive.json and sitemap.xml, and it rewrites the marked blocks (<!--pre:…-->) in index.html with this week's story, the latest news and tech so the top page reads without JavaScript. Then check with python that news/<id>/index.html exists for EVERY article id in articles.json (the home page links to these pages, so a missing one is a broken link). Article ids must be lowercase letters, digits and hyphens only.
