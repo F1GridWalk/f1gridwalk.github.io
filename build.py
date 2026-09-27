@@ -532,6 +532,8 @@ def build_lenses(arch, flag_map):
             rows += (f'<li><span class="srcbadge" data-c="{cc}">{e(s["source"])}</span><span>{e(LANG.get(s.get("lang"), ""))}</span>{extra}'
                      f'<a class="t" href="{e(s["url"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/desk">{e(s["title"])} ↗</a></li>')
         B.append(f'<section class="lens-sec sdesk"><h2>SOURCE DESK</h2><p class="lens-lead">この記事のもとになった{len(desk)}本の記事（{n_src}媒体）。すべて原文に飛びます。</p><ul>{rows}</ul></section>')
+        if L.get('noteUrl'):
+            B.append(f'<p class="lens-note" style="margin-top:22px">この回の読みものはnoteでも公開しています → <a href="{e(L["noteUrl"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/note">noteで読む ↗</a></p>')
         B.append('<p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p>')
 
         title = f'{L["title"]}｜WORLD MEDIA LENS'

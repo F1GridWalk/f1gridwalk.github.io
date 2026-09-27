@@ -92,3 +92,6 @@ Change only articles.json, notes.json, season.json and the files written by buil
 
 ## 9. Finish
 If there are no new free articles, still push with only updatedAt changed. If anything fails, leave the site as it was rather than publishing broken data. End with a one-line summary: articles added (by kind, languages), personal-analysis posts added, candidates rejected as paywalled, current most-covered topic and outlet count, season.json changes, and the pushed commit hash. If the push failed, say so plainly with the exact error — never report success without a verified pushed commit.
+
+
+Never add posts by note.com/f1gridwalk to notes.json: it is this site's own note account, not independent analysis.
