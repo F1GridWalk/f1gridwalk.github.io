@@ -82,6 +82,11 @@ a:hover{color:var(--ink-2)}
 .brand-name{font-family:var(--logo);font-weight:600;font-size:28px;line-height:1}
 .status{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .status .dot{width:8px;height:8px;border-radius:50%;background:var(--moss)}
+.desk{display:flex;align-items:baseline;gap:10px;font-family:var(--latin);font-size:10.5px;letter-spacing:.14em;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.desk b{font-weight:700;color:var(--ink);letter-spacing:.22em}
+.desk .slots{letter-spacing:.06em}
+.desk .slots i{font-style:normal}
+.desk .slots i.next{color:var(--clay);font-weight:700}
 
 /* hero */
 .hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:center;padding-block:56px 64px}
@@ -467,7 +472,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .groups{grid-template-columns:1fr}
   .filters{gap:6px}
   .filters button{padding:0 13px;font-size:13px}
-  .status .txt-long{display:none}
+  .desk .slots{display:none}
   .seg button{padding:0 14px}
 }
 
@@ -546,6 +551,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .top-right{align-items:flex-end;gap:4px}
   .copybtn{min-height:30px;padding:0 10px;font-size:11px}
   .status{font-size:10.5px;gap:6px}
+  .desk{font-size:8.5px}
   .jump .wrap{flex-wrap:nowrap;overflow-x:auto;gap:16px;padding-block:4px;font-size:12.5px;scrollbar-width:none}
   .jump .wrap::-webkit-scrollbar{display:none}
   .jump a{white-space:nowrap}
@@ -1035,7 +1041,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <button type="button" role="menuitem" data-share="native" id="share-native" hidden><b>その他</b><span>ほかのアプリで送る</span></button>
       </div>
     </div>
-    <div class="status"><span class="dot" aria-hidden="true"></span><span><span class="txt-long">1日4回更新 · </span><span id="updated">読み込み中…</span></span></div>
+    <div class="desk" title="日本時間の0時・6時・12時・18時ごろに、世界の新しい記事をまとめて更新します"><b>WORLD F1 DESK</b><span class="slots" id="desk-slots" aria-label="更新時刻 日本時間 0時、6時、12時、18時"><i>00:00</i> / <i>06:00</i> / <i>12:00</i> / <i>18:00</i> JST</span></div>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span id="updated">読み込み中…</span></div>
     </div>
   </div>
 </header>
@@ -1709,6 +1716,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   el('view-list').addEventListener('click', function(){ state.view = 'list'; renderAll(); });
 
   var SITE_URL = 'https://f1gridwalk.github.io/';
+  (function(){
+    var box = document.getElementById('desk-slots'); if (!box) return;
+    var h = (new Date().getUTCHours() + 9) % 24, is = box.querySelectorAll('i');
+    var n = Math.floor(h / 6 + 1) % 4; if (is[n]){ is[n].className = 'next'; is[n].title = '次の更新'; }
+  })();
   function copyText(text, btn, label){
     function done(){ btn.textContent = 'コピーしました'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = label; btn.classList.remove('done'); }, 2000); }
     function fallback(){
