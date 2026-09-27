@@ -492,8 +492,7 @@ def build_lenses(arch, flag_map):
         B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/lens/">WORLD MEDIA LENS</a> › {e(L["gpLabel"])}</nav>')
         B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">WORLD MEDIA LENS · {e(L["gpLabel"])}</div>'
                  f'<h1>{L["titleHtml"]}</h1><p class="dek">{e(L["dek"])}</p><p class="date">{e(jst_text(pub))} 公開</p>'
-                 f'<div class="lens-stats"><div><b>{len(L["unreported"]["items"])}</b>日本語で見当たらない話</div>'
-                 f'<div><b>1</b>あなたが解く謎</div><div><b>{n_src}</b>媒体・{n_cty}か国</div></div></div>')
+                 '</div>')
         U = L['unreported']
         B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">1</span><h2>日本では見当たらなかった話</h2></div>'
                  f'<p class="lens-lead">{e(U.get("lead", "海外の記事にだけ書かれていた話です。"))}</p>')
