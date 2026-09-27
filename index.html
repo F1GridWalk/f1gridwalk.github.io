@@ -1178,6 +1178,35 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .tw-rows{grid-template-columns:1fr}
   .tw-rows a.t{font-size:13.5px}
 }
+
+/* ===== phone & tablet: race week as a slim strip ===== */
+.sessions .sn{display:none}
+@media (max-width:1000px){
+  #raceweek.dbox{padding:10px 12px 9px;border-radius:14px}
+  .dash-side #raceweek .wk-main{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:4px 8px}
+  #raceweek .wk-eyebrow{grid-column:1;grid-row:1;gap:0}
+  #raceweek .wk-eyebrow span{display:none}
+  #raceweek .wk-eyebrow b{font-size:10.5px;padding:2px 8px;letter-spacing:.02em}
+  #raceweek .wk-main>div:not(.wk-eyebrow):not(.wk-map){display:contents}
+  #raceweek .wk-title{grid-column:2;grid-row:1;font-size:14px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #raceweek .wk-count{grid-column:1 / -1;grid-row:2;display:flex;align-items:baseline;gap:8px;padding:0}
+  #raceweek .wk-count .lbl{font-size:11.5px;color:var(--muted)}
+  #raceweek .wk-count .num{font-size:20px;line-height:1.2;letter-spacing:0}
+  #raceweek .wk-count .num small{font-size:11px;margin:0 4px 0 1px}
+  #raceweek .wk-when,#raceweek .wk-note,#raceweek .wk-map{display:none}
+  .dash-side #raceweek .sessions{grid-column:1 / -1;display:flex;gap:4px;margin:2px -12px 0;padding:0 12px 1px;overflow-x:auto;scrollbar-width:none}
+  .dash-side #raceweek .sessions::-webkit-scrollbar{display:none}
+  .dash-side #raceweek .sessions li{flex:0 0 auto;flex-direction:row;align-items:baseline;gap:5px;padding:3px 9px;border-radius:999px;font-size:10.5px;border:1px solid var(--line);background:transparent}
+  .dash-side #raceweek .sessions li .ln{display:none}
+  .dash-side #raceweek .sessions li .sn{display:inline;font-size:10.5px}
+  .dash-side #raceweek .sessions li .t{font-size:10.5px;color:var(--ink-2)}
+  .dash-side #raceweek .sessions li .st{display:none}
+  .dash-side #raceweek .sessions li.next{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .dash-side #raceweek .sessions li.next .t{color:var(--paper)}
+  .dash-side #raceweek .sessions li.now{background:var(--clay);border-color:var(--clay);color:var(--surface)}
+  .dash-side #raceweek .sessions li.now .t{color:var(--surface)}
+  .dash-side #raceweek .sessions li.done{opacity:.45}
+}
 </style>
 
 <header class="top">
@@ -2310,7 +2339,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
     var cnt = mk('div','wk-count');
     var rs = new Date(race.start).getTime(), re = new Date(race.end).getTime();
-    if (now < rs){ cnt.appendChild(mk('span','lbl','決勝スタートまで')); cnt.appendChild(countNode(rs - now)); }
+    if (now < rs){ cnt.appendChild(mk('span','lbl','決勝まで')); cnt.appendChild(countNode(rs - now)); }
     else if (now < re){ cnt.appendChild(mk('span','num','決勝 開催中')); }
     else { cnt.appendChild(mk('span','lbl','決勝は終了しました。結果は次の更新でお届けします。')); }
     left.appendChild(cnt);
@@ -2324,7 +2353,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     w.sessions.forEach(function(x){
       var a = new Date(x.start).getTime(), b = new Date(x.end).getTime();
       var li = mk('li', b <= now ? 'done' : (x === cur ? 'now' : (x === next ? 'next' : '')));
-      li.appendChild(mk('b', null, x.name));
+      li.appendChild(mk('b', 'ln', x.name));
+      li.appendChild(mk('b', 'sn', ({'フリー走行1':'FP1','フリー走行2':'FP2','フリー走行3':'FP3','スプリント予選':'SQ','スプリント':'SPR'})[x.name] || x.name));
       li.appendChild(mk('span','t', fmtJST(x.start, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })));
       var st = b <= now ? ('終了' + (x.result ? ' · ' + x.result : '')) : (x === cur ? 'いま開催中' : (function(){ var d = dur(a - now); return 'あと ' + (d.d ? d.d + '日' : '') + d.h + '時間' + (d.d ? '' : d.m + '分'); })());
       li.appendChild(mk('span','st', st));
