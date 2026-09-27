@@ -148,6 +148,8 @@ a:hover{color:var(--ink-2)}
 .thumb.nocircuit{display:flex;align-items:center;justify-content:center}
 .catword{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--c,var(--moss));letter-spacing:.06em}
 .card-meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card .perma{align-self:flex-start;white-space:nowrap;font-size:11.5px !important;color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--muted);line-height:1.5}
+.card .perma:hover{color:var(--ink);border-bottom-style:solid}
 .card-meta .src{font-weight:500;color:var(--ink-2)}
 .card h3{margin:0;font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.6;text-wrap:pretty}
 .card h3 a{color:var(--ink);text-decoration:none}
@@ -1201,6 +1203,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <div><strong>F1 Grid Walk</strong>世界のF1を、日本語で。</div>
     </div>
     <div class="site-url"><span>このサイトのアドレス</span><code id="site-url-text">https://f1gridwalk.github.io/</code></div>
+    <p class="foot-archive"><a href="/news/">これまでのニュース一覧（すべての記事）→</a></p>
     <p class="foot-note">記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。チーム名に添えた色はサイト独自の配色で、各チームのロゴやデザインではありません。アクセス数は公開サイトでのみ、Cookieを使わないGoatCounterで数えています。コース図のデータ: bacinger/f1-circuits（MIT License）。</p>
   </div>
 </footer>
@@ -1441,6 +1444,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var h = mk('h3'); h.appendChild(extLink(a.url, a.title)); it.appendChild(h);
     it.appendChild(mk('p', null, a.summary));
     it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
+    if (/^[a-z0-9][a-z0-9-]*$/.test(a.id || '')){ var pl = mk('a','perma','詳細・共有 ›'); pl.href = '/news/' + a.id + '/'; it.appendChild(pl); }
     var tt = tagsFor(a); if (tt) it.appendChild(tt);
     var foot = mk('div','card-foot');
     foot.appendChild(mk('span','cat', a.cat || 'ニュース'));
