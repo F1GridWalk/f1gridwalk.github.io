@@ -216,6 +216,91 @@ def item_li(a, flag_of):
             f'<a class="t" href="/news/{e(a["id"])}/">{e(a["title"])}</a></li>')
 
 
+LANG_CODE = lambda k: (k or '').upper()
+
+
+def short_jst(a):
+    d = when(a).astimezone(JST)
+    return f'{d.month}/{d.day} {d.hour:02d}:{d.minute:02d}'
+
+
+def ext(url, text, cls=None):
+    c = f' class="{cls}"' if cls else ''
+    return f'<a{c} href="{e(url)}" target="_blank" rel="noopener noreferrer">{text}</a>'
+
+
+def static_card(a, flag_of):
+    k = kind_of(a)
+    return (f'<article class="card" data-c="{flag_of(a)}"><div class="card-meta">'
+            f'<span class="kind {k}" title="{e(KIND_TIP[k])}">{KIND[k]}</span>'
+            f'<span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span>'
+            f'<span class="rg">{e(a.get("region", ""))}</span>'
+            f'<time datetime="{e(a["published"])}">{short_jst(a)}</time></div>'
+            f'<h3>{ext(a["url"], e(a["title"]))}</h3><p>{e(a.get("summary", ""))}</p>'
+            f'<a class="perma" href="/news/{e(a["id"])}/">詳細・共有 ›</a></article>')
+
+
+def prerender_index(data, flag_of):
+    """Write this week's story, the latest news and the latest tech pieces straight into index.html,
+    so the top page can be read without JavaScript. The script replaces these blocks when it runs."""
+    arts = [a for a in data.get('articles', []) if ID_OK.match(a.get('id', ''))]
+    topics = data.get('topics') or {}
+    now = datetime.now(timezone.utc)
+    groups = {}
+    for a in arts:
+        if a.get('topic') and (now - when(a)).days < 7:
+            groups.setdefault(a['topic'], []).append(a)
+    best = None
+    for key, items in groups.items():
+        n = len({x['source'] for x in items})
+        newest = max(when(x) for x in items)
+        if n >= 2 and (best is None or n > best[1] or (n == best[1] and newest > best[2])):
+            best = (key, n, newest, items)
+    hero = []
+    if best:
+        key, n, _, items = best
+        info = topics.get(key, {})
+        lead = next((x for x in items if x.get('featured')), items[0])
+        nt = sorted([x for x in items if x.get('kind', 'news') in ('news', 'tech')], key=when)
+        pick = next((x for x in items if x.get('featured')), nt[0] if nt else lead)
+        hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n}媒体が報道</span></div>')
+        hero.append(f'<h1 id="hero-title">{ext(pick["url"], e(info.get("title") or pick["title"]))}</h1>')
+        hero.append(f'<p class="hero-sum trend-sum">{e(info.get("summary") or pick.get("summary", ""))}</p>')
+        hero.append(f'<div class="meta trend-read">{ext(pick["url"], e(pick["source"]) + "の記事を読む ↗", "read")}<span>ほかの{n - 1}媒体の記事は下から</span></div>')
+        li = []
+        for x in sorted(items, key=when, reverse=True)[:3]:
+            k = kind_of(x)
+            li.append(f'<li data-c="{flag_of(x)}"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>'
+                      f'<span class="tl-lang">{e(LANG_CODE(x.get("lang")))}</span>'
+                      + ext(x['url'], f'<span class="kind {k}" style="margin-right:6px">{KIND[k]}</span>' + e(x['title']), 'tl-title') + '</li>')
+        hero.append('<ul class="trend-list">' + ''.join(li) + '</ul>')
+    else:
+        a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)
+        if a:
+            hero.append('<div class="chips"><span class="chip-feature">今日の一本</span></div>')
+            hero.append(f'<h1 id="hero-title">{ext(a["url"], e(a["title"]))}</h1><p class="hero-sum">{e(a.get("summary", ""))}</p>')
+    news = sorted([a for a in arts if a.get('kind', 'news') == 'news'], key=when, reverse=True)[:10]
+    tech = sorted([a for a in arts if a.get('kind') == 'tech'], key=when, reverse=True)[:3]
+    feed = ('<div class="grid">' + ''.join(static_card(a, flag_of) for a in news) + '</div>'
+            '<p class="pre-more"><a href="/news/">すべてのニュースの一覧 →</a></p>') if news else ''
+    techh = ('<div class="grid kgrid">' + ''.join(static_card(a, flag_of) for a in tech) + '</div>') if tech else ''
+
+    p = os.path.join(ROOT, 'index.html')
+    src = open(p, encoding='utf-8').read()
+    out = src
+    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh)):
+        if not block:
+            continue
+        pat = re.compile(r'(<!--pre:' + name + r'-->).*?(<!--/pre:' + name + r'-->)', re.S)
+        if not pat.search(out):
+            print(f'build: marker pre:{name} not found in index.html, skipped')
+            continue
+        out = pat.sub(lambda m: m.group(1) + block + m.group(2), out, count=1)
+    if out != src:
+        with open(p, 'w', encoding='utf-8') as f:
+            f.write(out)
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -338,6 +423,8 @@ def main():
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
     sm.append('</urlset>')
     write('sitemap.xml', '\n'.join(sm) + '\n')
+
+    prerender_index(data, flag_of)
 
     arch['updatedAt'] = data.get('updatedAt', now)
     write('news/archive.json', json.dumps(arch, ensure_ascii=False, indent=1) + '\n')
