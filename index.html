@@ -1347,6 +1347,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
               <button type="button" id="view-list" aria-pressed="false">一覧</button>
               <button type="button" id="view-source" aria-pressed="false">媒体別</button>
               <button type="button" id="view-team" aria-pressed="false">チーム別</button>
+              <button type="button" id="view-ja" aria-pressed="false" title="日本の媒体の記事だけを表示">日本語のみ</button>
             </div>
           </div>
           <div class="finder">
@@ -2050,6 +2051,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     el('view-source').setAttribute('aria-pressed', String(state.view === 'source'));
     el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
     el('view-list').setAttribute('aria-pressed', String(state.view === 'list'));
+    el('view-ja').setAttribute('aria-pressed', String(state.lang === 'ja'));
     { var fnum = (state.kind !== 'all') + (state.lang !== 'all') + (state.team !== 'all') + (state.src !== 'all'); var fb = el('filt-n'); if (fb){ fb.hidden = !fnum; fb.textContent = fnum ? String(fnum) : ''; } }
     if (d.updatedAt){
       var up = el('updated'); up.textContent = '';
@@ -2065,6 +2067,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   el('view-source').addEventListener('click', function(){ state.view = 'source'; renderAll(); });
   el('view-team').addEventListener('click', function(){ state.view = 'team'; renderAll(); });
   el('view-list').addEventListener('click', function(){ state.view = 'list'; renderAll(); });
+  el('view-ja').addEventListener('click', function(){ state.lang = state.lang === 'ja' ? 'all' : 'ja'; renderAll(); });
 
   var SITE_URL = 'https://f1gridwalk.github.io/';
   (function(){
