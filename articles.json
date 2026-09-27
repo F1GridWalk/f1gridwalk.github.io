@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-27T12:20:00+09:00",
+ "updatedAt": "2026-09-27T17:20:00+09:00",
  "topics": {
   "honda-pu-struggle": {
    "title": "バクーでホンダPUが限界露呈、アストンマーティン2台リタイア",
@@ -19,7 +19,116 @@
   },
   "baku-race-result": {
    "title": "ラッセルがバクーで勝利、フェルスタッペンが0.196秒差まで迫る",
-   "summary": "ポールスタートのラッセルが、2度のセーフティカーが出た荒れたアゼルバイジャンGPを制した。8番グリッドから追い上げたフェルスタッペンは最後の長い直線で迫り、差はわずか0.196秒。ケガからの復帰戦のハジャーが3位に入り、レッドブルが2台表彰台に上った。再スタートでの同士討ちなどで7台がリタイアする中、予選でクラッシュしたアントネッリは16番手から5位まで挽回して首位を守り、ピアストリはロックアップで入賞圏外に落ちた。"
+   "summary": "ポールスタートのラッセルが、2度のセーフティカーが出た荒れたアゼルバイジャンGPを制した。8番グリッドから追い上げたフェルスタッペンは最後の長い直線で迫り、差はわずか0.196秒。ケガからの復帰戦のハジャーが3位に入り、レッドブルが2台表彰台に上った。再スタートでの同士討ちなどで7台がリタイアする中、予選でクラッシュしたアントネッリは16番手から5位まで挽回して首位を守り、ピアストリはロックアップで入賞圏外に落ちた。",
+   "lens": {
+    "oneline": "ラッセルが僅差でフェルスタッペンを抑えて勝ったという結果は、どの媒体でも一致している。違いが出たのは、何を見出しに選んだかだ。英国系ではラッセルのポール・トゥ・ウィンの完成度やレース全体の採点が中心となり、ドイツ系の3媒体はそろって「紙一重」「写真判定」とゴール寸前の攻防を強調した。フェルスタッペンを主役にしたGPblogは予選のパワーユニット不調でレッドブルが勝機を逃したと分析し、ロイター配信の記事はアントネッリとの66点差という選手権の文脈を重く扱っている。",
+    "groups": [
+     {
+      "scope": "country",
+      "region": "イギリス",
+      "label": "英国系メディア",
+      "focus": "ラッセルの完成度",
+      "agree": 3,
+      "lead": "ラッセル",
+      "cause": "ポールから主導権を握り、2度のSCも乗り切った",
+      "hook": "完勝と“勝者と敗者”の採点",
+      "points": [
+       "ポールから主導権を握ったポール・トゥ・ウィン",
+       "“勝者と敗者”形式でレース全体を採点",
+       "RacingNews365はフェルスタッペン、Motorsport Weekはアントネッリの談話を個別に掘り下げ"
+      ],
+      "ids": [
+       "en-autosport-baku-race-report",
+       "en-therace-baku-winners-losers",
+       "en-motorsport-baku-street-brawl",
+       "en-rn365-verstappen-not-enough",
+       "en-motorsportweek-antonelli-grandmother"
+      ]
+     },
+     {
+      "scope": "country",
+      "region": "ドイツ",
+      "label": "ドイツ系メディア",
+      "focus": "ゴール寸前の攻防",
+      "agree": 3,
+      "lead": "ラッセルとフェルスタッペン",
+      "cause": "終盤のSC明け、最後の直線での追撃",
+      "hook": "「紙一重」「写真判定」",
+      "points": [
+       "3媒体とも見出しで僅差の決着を強調",
+       "ボッタスのクラッシュ後のSCが接戦を生んだと説明"
+      ],
+      "ids": [
+       "de-mm-baku-bottas",
+       "de-sportschau-baku-race",
+       "de-f1insider-baku-photofinish"
+      ]
+     },
+     {
+      "scope": "outlet",
+      "region": "オランダ",
+      "label": "GPblog",
+      "focus": "レッドブルが逃した勝機",
+      "lead": "フェルスタッペン",
+      "cause": "予選Q3でのPU出力低下とバッテリー不足",
+      "hook": "今季最後の勝機を逃したのはチームの責任",
+      "points": [
+       "8番グリッドになった原因を予選のPU不調に求める",
+       "メルセデスのアップデート前の“最後の勝機”と位置づけ"
+      ],
+      "ids": [
+       "en-gpblog-redbull-last-chance"
+      ]
+     },
+     {
+      "scope": "wire",
+      "provider": "Reuters",
+      "label": "国際通信",
+      "focus": "結果と選手権",
+      "lead": "ラッセル",
+      "cause": "ポールから逃げ切り、2度のSCを耐えた",
+      "hook": "アントネッリは5位、差は66点",
+      "points": [
+       "ラッセルがポール・トゥ・ウィン",
+       "首位アントネッリとの差が15点縮まり66点に"
+      ],
+      "ids": [
+       "en-aljazeera-reuters-baku-race"
+      ]
+     },
+     {
+      "scope": "official",
+      "label": "F1公式",
+      "focus": "僅差の決着と本人の声",
+      "lead": "ラッセル／フェルスタッペン",
+      "cause": "SC明けの追撃を最後まで抑えた",
+      "hook": "ゴール線上での決着",
+      "points": [
+       "レースリポートは“ゴール線上”の僅差を強調",
+       "別記事でフェルスタッペン本人の振り返りを掲載"
+      ],
+      "ids": [
+       "en-f1com-baku-race",
+       "en-f1com-verstappen-trying-everything"
+      ]
+     },
+     {
+      "scope": "others",
+      "label": "そのほかの媒体",
+      "focus": "媒体ごとに異なる切り口",
+      "points": [
+       "A Bola（ポルトガル）：ラッセルの「支配」を見出しに",
+       "Motorsport.com France：フランス人ハジャーの表彰台も見出しに",
+       "Formula1-Data（日本）：7台リタイアと同士討ちの大荒れを強調"
+      ],
+      "ids": [
+       "pt-abola-baku-race-report",
+       "fr-motorsport-baku-race-report",
+       "ja-f1data-baku-race-digest"
+      ]
+     }
+    ]
+   }
   },
   "colapinto-penalty": {
    "title": "バクーの同士討ちでコラピントに処分、次戦で適用",
@@ -35,6 +144,32 @@
   }
  },
  "articles": [
+  {
+   "id": "en-gpblog-redbull-last-chance",
+   "kind": "news",
+   "lang": "en",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "分析",
+   "circuit": "baku",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "baku-race-result",
+   "title": "フェルスタッペンが逃した“今季最後の勝機”。原因はレッドブル側にあると指摘",
+   "summary": "オランダのGPblogによる分析記事。バクーで2位に終わったフェルスタッペンについて、予選Q3でパワーユニットの出力が大きく落ち、バッテリーも半分ほどしか充電されていなかったことが勝敗を分けたと指摘する。本来なら2番グリッドを狙えたとし、その位置からならラッセルに抜かれることはなかったとの見立てだ。メルセデスが次戦でアップデートを投入するため今季最後の勝機だった可能性があるとし、レッドブルの信頼性を大きな弱点と位置づけている。",
+   "orig": "Red Bull denied Verstappen his last chance at a win in 2026",
+   "url": "https://www.gpblog.com/en/analysis/red-bull-denied-verstappen-his-last-chance-at-a-win-in-2026",
+   "published": "2026-09-27T07:00:00+02:00",
+   "lens": {
+    "type": "分析",
+    "lead": "フェルスタッペン",
+    "focus": "勝機を逃した理由",
+    "cause": "予選Q3でのPU出力低下とバッテリー不足",
+    "hook": "チームのせいで逃した今季最後の勝機"
+   }
+  },
   {
    "id": "ja-f1jouhou-colapinto-apology",
    "kind": "fan",
@@ -219,7 +354,14 @@
    "summary": "Motorsport.comは混乱のバクーGPを総括。完勝のラッセルと復帰即表彰台のハジャーを勝者に挙げる一方、同士討ちで自滅したアルピーヌ勢や精彩を欠いたボッタス、ダブルリタイアのアストンマーティンを敗者とした。",
    "orig": "F1 Azerbaijan Grand Prix: Winners and losers from a street brawl",
    "url": "https://www.motorsport.com/f1/news/winners-losers-f1-azerbaijan-grand-prix-street-brawl/10859378/",
-   "published": "2026-09-26T17:00:00+01:00"
+   "published": "2026-09-26T17:00:00+01:00",
+   "lens": {
+    "type": "総括",
+    "lead": "各チーム",
+    "focus": "勝者と敗者の採点",
+    "cause": "荒れた市街地戦で明暗が分かれた",
+    "hook": "“市街戦”と呼んだ荒れ模様"
+   }
   },
   {
    "id": "de-mm-baku-bottas",
@@ -238,7 +380,14 @@
    "summary": "バクーでラッセルが優勝したものの、終盤のボッタスのクラッシュをきっかけにフィニッシュライン目前までフェルスタッペンとの攻防となり、きわどい勝利だったと伝えるドイツ誌のレースリポート。フェルスタッペンはあと一歩のところで大金星を逃した。リスタートではコラピントがガスリーに当たる事故があり、巻き込まれたノリスが厳しく批判したほか、アルピーヌのブリアトーレもコラピントを強くたしなめたという。",
    "orig": "Last-Minute-Bottas kostet Russell fast Formel-1-Sieg in Baku: Verstappen scheitert am Zielstrich",
    "url": "https://www.motorsport-magazin.com/formel1/news-300448-formel-1-spaetes-chaos-in-baku-russell-rettet-sieg-vor-verstappen/",
-   "published": "2026-09-26T17:48:00+02:00"
+   "published": "2026-09-26T17:48:00+02:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "終盤の攻防",
+    "cause": "ボッタスのクラッシュ後のSCで差が消えた",
+    "hook": "ボッタスが勝利を危うくした"
+   }
   },
   {
    "id": "en-therace-baku-winners-losers",
@@ -258,7 +407,14 @@
    "summary": "The RaceがアゼルバイジャンGPの勝者と敗者を選んだ。勝者はポールから優勝したラッセル、0.2秒差の2位に迫ったフェルスタッペン、負傷からの復帰戦で3位に入りレッドブルに2024年4月以来のダブル表彰台をもたらしたハジャー、中団争いを制して7位に入ったリンドブラッド、オコンとベアマンが久々にそろって入賞したハース。敗者には2台を巻き込んだコラピントと2台リタイアのアルピーヌ、マクラーレン、アストンマーティン、アウディなどが並んだ。",
    "orig": "Winners and losers from F1's 2026 Azerbaijan Grand Prix",
    "url": "https://www.the-race.com/formula-1/winners-and-losers-from-f1s-2026-azerbaijan-grand-prix/",
-   "published": "2026-09-26T16:38:00+01:00"
+   "published": "2026-09-26T16:38:00+01:00",
+   "lens": {
+    "type": "総括",
+    "lead": "ラッセル",
+    "focus": "勝者と敗者の採点",
+    "cause": "ポールからの完勝と中団の明暗",
+    "hook": "ラッセルの「キャリア最高の週末」"
+   }
   },
   {
    "id": "ja-f1gate-standings-baku",
@@ -330,7 +486,14 @@
    "summary": "ドイツの公共放送ARDのスポーツサイトによる決勝リポート。メルセデスのラッセルがレッドブルのフェルスタッペンとの接戦を制した。ランキング首位のアントネッリも後方から順位を上げている。",
    "orig": "Formel 1 in Aserbaidschan: Russell hauchdünn Sieger vor Verstappen in Baku",
    "url": "https://www.sportschau.de/motorsport/formel1/russell-hauchduenn-sieger-vor-verstappen-in-baku,bericht-formel-1-baku-rennen-100.html",
-   "published": "2026-09-26T17:11:00+02:00"
+   "published": "2026-09-26T17:11:00+02:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "僅差の勝利",
+    "cause": "フェルスタッペンの追撃を紙一重で抑えた",
+    "hook": "「紙一重」の勝利"
+   }
   },
   {
    "id": "en-motorsportweek-ocon-haas-points",
@@ -385,7 +548,14 @@
    "summary": "アゼルバイジャンGPで8番グリッドから追い上げたフェルスタッペンは、優勝したラッセルにわずかに届かず2位に終わった。序盤のミディアムタイヤではグリップ不足に苦しんだが、セーフティカー明けにソフトへ替えるとペースが一気に上がり、ラッセルとともに後続を大きく引き離したという。最終ラップにはラッセル側のブースト作動にわずかな遅れがあり好機も生まれたが、逆転には至らなかったと振り返った。今季はまだ未勝利が続いている。",
    "orig": "'I was trying everything' – Verstappen gives verdict after missing out on Azerbaijan GP victory",
    "url": "https://www.formula1.com/en/latest/article/i-was-trying-everything-verstappen-gives-verdict-after-missing-out-on-azerbaijan-gp-victory.6M9zlnYYDH8w4AnRIninDX",
-   "published": "2026-09-26T14:58:00+00:00"
+   "published": "2026-09-26T14:58:00+00:00",
+   "lens": {
+    "type": "談話",
+    "lead": "フェルスタッペン",
+    "focus": "あと一歩の2位",
+    "cause": "序盤のミディアムで苦戦、ソフトで盛り返す",
+    "hook": "本人の「すべてを試した」"
+   }
   },
   {
    "id": "ja-f1gate-honda-baku-struggle",
@@ -421,7 +591,39 @@
    "summary": "予選のクラッシュでフロア左側を損傷したアントネッリは、決勝ではリスクを避け「祖母のような運転」だったとユーモラスに振り返った。ダメージを抱える中で無理な攻めは避け、周囲のミスに助けられながら着実に順位を上げる戦略に切り替えたと説明している。16番グリッドから5位まで挽回し、次戦セパンを前に総合順位でチームメイトのラッセルに66点差をつけて選手権首位を守った。",
    "orig": "Kimi Antonelli drops hilarious 'drove like my grandmother' assessment of Baku F1 fightback",
    "url": "https://www.motorsportweek.com/2026/09/26/kimi-antonelli-drove-like-grandmother-in-baku/",
-   "published": "2026-09-26T15:30:00+01:00"
+   "published": "2026-09-26T15:30:00+01:00",
+   "lens": {
+    "type": "談話",
+    "lead": "アントネッリ",
+    "focus": "首位の守り方",
+    "cause": "損傷を抱えリスクを避けた走り",
+    "hook": "「祖母のような運転」発言"
+   }
+  },
+  {
+   "id": "en-rn365-verstappen-not-enough",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "circuit": "baku",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "baku-race-result",
+   "title": "フェルスタッペン「届かなかった」。8番手から追い上げ、0.196秒差の2位に悔しさ",
+   "summary": "RacingNews365は、8番グリッドから2位まで追い上げたフェルスタッペンの反応を伝えた。ボッタスのクラッシュ後のセーフティカー明けに一気に差を詰め、最終ラップにはラッセルがコーナー立ち上がりでブーストを失う場面もあったが、フィニッシュラインまでに前に出ることはできなかった。本人は「最後は近づいたが足りなかった」と振り返っている。表彰台は重ねながらも、今季まだ勝利がない状態が続いていることにも触れた。",
+   "orig": "Max Verstappen 'not enough' reaction after agonising Baku near-miss",
+   "url": "https://racingnews365.com/max-verstappen-not-enough-reaction-after-agonising-baku-near-miss",
+   "published": "2026-09-26T15:25:00+01:00",
+   "lens": {
+    "type": "談話",
+    "lead": "フェルスタッペン",
+    "focus": "あと一歩の2位",
+    "cause": "SC明けに迫るも最後の直線で届かず",
+    "hook": "本人の「足りなかった」"
+   }
   },
   {
    "id": "en-f1com-norris-colapinto-ban",
@@ -441,6 +643,33 @@
    "orig": "'Some drivers shouldn't be in F1' – Norris reflects on Baku clash that led to DNF",
    "url": "https://www.formula1.com/en/latest/article/some-drivers-shouldnt-be-in-f1-norris-reflects-on-baku-clash-that-led-to-dnf.76PWZBrhTQ5PMLrgvQFyPt",
    "published": "2026-09-26T14:25:00+00:00"
+  },
+  {
+   "id": "en-aljazeera-reuters-baku-race",
+   "kind": "news",
+   "lang": "en",
+   "region": "カタール",
+   "source": "Al Jazeera",
+   "provider": "Reuters",
+   "cat": "決勝",
+   "circuit": "baku",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "topic": "baku-race-result",
+   "title": "ラッセルが僅差でバクー制覇、首位アントネッリは5位で差は66点に",
+   "summary": "ロイター通信の配信記事で、カタールのアルジャジーラが掲載した。ポールからスタートしたラッセルがフェルスタッペンを0.196秒差で抑えて優勝し、選手権首位のチームメイト、アントネッリとの差を15点縮めて66点にしたと伝えている。2度のセーフティカーで楽な展開が生き残りをかけた戦いに変わったとし、手首のケガで3戦を欠場していたハジャーが復帰戦で3位に入ったことにも触れた。結果と選手権の行方を軸にした短いリポート。",
+   "orig": "Russell edges out Verstappen to win in Baku, Antonelli settles for fifth",
+   "url": "https://www.aljazeera.com/sports/2026/9/26/russell-edges-out-verstappen-to-win-in-baku-antonelli-settles-for-fifth",
+   "published": "2026-09-26T14:17:00+00:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "結果と選手権",
+    "cause": "ポールから逃げ切り、2度のSCを耐えた",
+    "hook": "アントネッリは5位、差は66点"
+   }
   },
   {
    "id": "ja-f1jouhou-baku-race",
@@ -497,7 +726,14 @@
    "summary": "アゼルバイジャンGP決勝は、ポールスタートのラッセルがフェルスタッペンを0.196秒差で抑えて優勝し、3位にはハジャーが入った。36周目のリスタートでコラピントがガスリーに当たってノリスも巻き込まれ、同じタイミングでリンドブラッドもローソンに追突するなど、2チームでチームメイト同士の接触が起きた。アストンマーティンの2台やボッタスを含め計7台がリタイアする荒れた展開の中、ハースはオコン8位、ベアマン9位でそろって入賞した。",
    "orig": "7台DNF、“2チーム同士討ち”の大波乱…ラッセルが0.196秒差でバクー制覇 / F1アゼルバイジャンGP 2026《決勝》結果と詳報",
    "url": "https://formula1-data.com/article/azerbaijan-race-digest-2026",
-   "published": "2026-09-26T22:32:00+09:00"
+   "published": "2026-09-26T22:32:00+09:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "レース全体",
+    "focus": "大荒れの展開",
+    "cause": "再スタートでの2組の同士討ち",
+    "hook": "7台リタイアと同士討ち"
+   }
   },
   {
    "id": "de-f1insider-baku-photofinish",
@@ -516,7 +752,14 @@
    "summary": "アゼルバイジャンGPはラッセルが制したが、2位フェルスタッペンとの差はわずか0.196秒という写真判定級の決着だった。8番グリッドから序盤に3番手まで浮上したフェルスタッペンは、終盤のセーフティカー明けに最後の長い直線でラッセルを追い詰めた。3位ハジャー、4位ルクレール。予選でクラッシュし16番手から出たアントネッリは5位まで挽回して選手権首位を守った。3番手を走っていたピアストリは終盤のロックアップで入賞圏外に落ちた。",
    "orig": "Baku-Wahnsinn! Fotofinish zwischen Verstappen und Russell",
    "url": "https://f1-insider.com/formel-1-baku-ergebnis-fotofinish-verstappen-82391/",
-   "published": "2026-09-26T15:01:00+02:00"
+   "published": "2026-09-26T15:01:00+02:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "フェルスタッペンとラッセル",
+    "focus": "写真判定級の決着",
+    "cause": "最後の長い直線での追撃",
+    "hook": "「バクーの狂気」と写真判定"
+   }
   },
   {
    "id": "pt-abola-baku-race-report",
@@ -535,7 +778,14 @@
    "summary": "ポルトガルのスポーツ紙アボラは、ラッセルがポールから逃げ切り今季3勝目・自身初のグランドスラムを達成したと報道。フェルスタッペンが0.196秒差まで迫り、復帰したハジャーが3位表彰台を獲得したと伝えた。",
    "orig": "GP Baku: Russell domina e vence corrida acidentada",
    "url": "https://www.abola.pt/noticias/gp-baku-russell-domina-e-vence-corrida-acidentada-2026092612571795034",
-   "published": "2026-09-26T13:57:00+01:00"
+   "published": "2026-09-26T13:57:00+01:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "支配的な勝利",
+    "cause": "ポールから逃げ切った",
+    "hook": "「ラッセルが支配」"
+   }
   },
   {
    "id": "en-f1com-baku-race",
@@ -555,7 +805,14 @@
    "summary": "荒れた展開となったアゼルバイジャンGPはメルセデスのラッセルが制し、今季3勝目を挙げた。最後はフェルスタッペンに約0.1秒差まで迫られる接戦で、3位にはハジャーが入りレッドブル勢が2台表彰台に上った。アルボンのミスとコラピントの多重クラッシュで2度のセーフティカーが出され、ノリスやガスリーらが姿を消した。16番グリッドのアントネッリは5位まで挽回し、序盤に表彰台圏を走ったピアストリはロックアップで14位に沈んだ。",
    "orig": "Russell narrowly holds off Verstappen to take victory over the line in chaotic Azerbaijan GP",
    "url": "https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0",
-   "published": "2026-09-26T13:54:00+01:00"
+   "published": "2026-09-26T13:54:00+01:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "僅差の勝利",
+    "cause": "終盤のSC明けの追撃を抑え切った",
+    "hook": "ゴール線上での僅差"
+   }
   },
   {
    "id": "ja-f1jouhou-norris-colapinto-ban",
@@ -575,6 +832,33 @@
    "orig": "【ヤバ】マクラーレンのノリス、コラピントについて「1レース出場停止にすべき」とコメント【逃げてー】",
    "url": "https://f1jouhou2.com/blog-entry-31577.html",
    "published": "2026-09-26T21:00:00+09:00"
+  },
+  {
+   "id": "en-autosport-baku-race-report",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Autosport",
+   "cat": "決勝",
+   "circuit": "baku",
+   "teams": [
+    "mercedes",
+    "redbull",
+    "alpine"
+   ],
+   "topic": "baku-race-result",
+   "title": "ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける",
+   "summary": "英オートスポーツの決勝リポート。金曜の予選で約0.8秒差のポールを奪ったラッセルが、決勝でもメルセデスの速さを示してポール・トゥ・ウィンを達成し、今季3勝目を挙げたと伝えた。2度のセーフティカーを乗り越え、最後はフェルスタッペンとのフィニッシュラインまでの加速勝負を制している。再スタートではコラピントがガスリーとノリスを巻き込む事故を起こした。ハジャーは復帰戦で3位、アントネッリは66点差の首位を保った。",
+   "orig": "F1 Azerbaijan GP: Russell fends off Verstappen for victory; Colapinto takes out Gasly and Norris",
+   "url": "https://www.autosport.com/f1/news/f1-azerbaijan-gp-russell-fends-off-verstappen-for-victory-colapinto-takes-out-gasly-and-norris/10859225/",
+   "published": "2026-09-26T12:00:00+01:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "完勝の中身",
+    "cause": "予選0.8秒差の速さと決勝ペースで主導権",
+    "hook": "ラッセルの勝利とコラピントの事故"
+   }
   },
   {
    "id": "en-therace-lindblad-lawson-noaction",
@@ -611,7 +895,14 @@
    "summary": "フランスのモータースポーツ・コムによる決勝リポート。ポールから走ったラッセルがフェルスタッペンの追い上げをわずか0.196秒差で振り切り、アゼルバイジャンGPを制した。復帰戦のハジャーが3位表彰台を獲得したことも伝えている。レースは30周目のアルボンのクラッシュと、36周目のコラピントが引き起こしたガスリー、ノリスを巻き込む多重クラッシュにより2度中断され、荒れた展開になったと振り返った。",
    "orig": "Russell résiste à Verstappen pour l'emporter à Bakou, Hadjar sur le podium !",
    "url": "https://fr.motorsport.com/f1/news/russell-resiste-verstappen-victoire-hadjar-podium-bakou/10859201/",
-   "published": "2026-09-26T12:54:00+02:00"
+   "published": "2026-09-26T12:54:00+02:00",
+   "lens": {
+    "type": "レポート",
+    "lead": "ラッセル",
+    "focus": "勝利とハジャーの表彰台",
+    "cause": "フェルスタッペンの追撃に耐えた",
+    "hook": "フランス人ハジャーの表彰台"
+   }
   },
   {
    "id": "de-ams-bortoleto-penalty",

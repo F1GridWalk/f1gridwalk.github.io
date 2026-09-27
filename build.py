@@ -35,7 +35,7 @@ LANG = {'en': '英語', 'it': 'イタリア語', 'de': 'ドイツ語', 'es': '�
         'pt': 'ポルトガル語', 'nl': 'オランダ語', 'pl': 'ポーランド語', 'fi': 'フィンランド語',
         'sv': 'スウェーデン語', 'da': 'デンマーク語', 'hu': 'ハンガリー語', 'zh': '中国語',
         'ko': '韓国語', 'ja': '日本語'}
-KEEP = ('id', 'kind', 'primary', 'lang', 'region', 'source', 'cat', 'circuit', 'teams', 'topic',
+KEEP = ('id', 'kind', 'primary', 'lang', 'region', 'source', 'provider', 'cat', 'circuit', 'teams', 'topic',
         'title', 'summary', 'orig', 'url', 'published')
 ID_OK = re.compile(r'^[a-z0-9][a-z0-9-]{0,120}$')
 
@@ -246,9 +246,10 @@ def static_card(a, flag_of):
             f'<a class="perma" href="/news/{e(a["id"])}/">詳細・共有 ›</a></article>')
 
 
-def prerender_index(data, flag_of):
+def prerender_index(data, flag_of, flag_map_ref=None):
     """Write this week's story, the latest news and the latest tech pieces straight into index.html,
     so the top page can be read without JavaScript. The script replaces these blocks when it runs."""
+    flag_map_ref = flag_map_ref or {}
     arts = [a for a in data.get('articles', []) if ID_OK.match(a.get('id', ''))]
     topics = data.get('topics') or {}
     now = datetime.now(timezone.utc)
@@ -266,20 +267,62 @@ def prerender_index(data, flag_of):
     if best:
         key, n, _, items = best
         info = topics.get(key, {})
+        lens = info.get('lens') if isinstance(info.get('lens'), dict) and info['lens'].get('groups') else None
+        by_id = {x['id']: x for x in arts}
         lead = next((x for x in items if x.get('featured')), items[0])
         nt = sorted([x for x in items if x.get('kind', 'news') in ('news', 'tech')], key=when)
         pick = next((x for x in items if x.get('featured')), nt[0] if nt else lead)
-        hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n}媒体が報道</span></div>')
-        hero.append(f'<h1 id="hero-title">{ext(pick["url"], e(info.get("title") or pick["title"]))}</h1>')
-        hero.append(f'<p class="hero-sum trend-sum">{e(info.get("summary") or pick.get("summary", ""))}</p>')
-        hero.append(f'<div class="meta trend-read">{ext(pick["url"], e(pick["source"]) + "の記事を読む ↗", "read")}<span>ほかの{n - 1}媒体の記事は下から</span></div>')
+        media = [x for x in items if x.get('kind') != 'fan']
+        n_media = len({x['source'] for x in media}) or n
+        hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n_media}媒体が報道</span></div>')
+        steps = ['事実', '世界の記事'] + (['世界の見方'] if lens else [])
+        sid = {'事実': 'tw-facts', '世界の記事': 'tw-articles', '世界の見方': 'tw-lens'}
+        hero.append('<ol class="tw-steps" aria-label="この話題の読み方">' + ''.join(
+            f'<li><a href="#{sid[x]}"><b>{i + 1}</b>{x}</a></li>' for i, x in enumerate(steps)) + '</ol>')
+        hero.append('<div class="tw-sec" id="tw-facts">'
+                    f'<h1 id="hero-title">{ext(pick["url"], e(info.get("title") or pick["title"]))}</h1>'
+                    f'<p class="hero-sum trend-sum">{e(info.get("summary") or pick.get("summary", ""))}</p>'
+                    f'<div class="meta trend-read">{ext(pick["url"], e(pick["source"]) + "の記事を読む ↗", "read")}<span>各媒体が何を重視したかは「世界の見方」で</span></div></div>')
         li = []
-        for x in sorted(items, key=when, reverse=True)[:3]:
+        for x in sorted(media, key=when, reverse=True)[:3]:
             k = kind_of(x)
-            li.append(f'<li data-c="{flag_of(x)}"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>'
-                      f'<span class="tl-lang">{e(LANG_CODE(x.get("lang")))}</span>'
-                      + ext(x['url'], f'<span class="kind {k}" style="margin-right:6px">{KIND[k]}</span>' + e(x['title']), 'tl-title') + '</li>')
-        hero.append('<ul class="trend-list">' + ''.join(li) + '</ul>')
+            lz = x.get('lens') or {}
+            top = (f'<div class="tl-top"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>'
+                   + (f'<span class="dot rgn">{e(x["region"])}</span>' if x.get('region') else '')
+                   + f'<span class="dot">{e(LANG.get(x.get("lang"), LANG_CODE(x.get("lang"))))}</span>'
+                   + (f'<span class="dot">{e(lz["type"])}</span>' if lz.get('type') else '') + '</div>')
+            angle = ''
+            if lz.get('lead') or lz.get('focus'):
+                angle = '<div class="tl-angle"><b>主要焦点</b>' + e('／'.join(v for v in (lz.get('lead'), lz.get('focus')) if v)) + '</div>'
+            prov = (f'<div class="tl-prov">掲載：<b>{e(x["source"])}</b>　記事提供：<b>{e(x["provider"])}</b></div>' if x.get('provider') else '')
+            li.append(f'<li data-c="{flag_of(x)}">' + top
+                      + ext(x['url'], f'<span class="kind {k}" style="margin-right:6px">{KIND[k]}</span>' + e(x['title']), 'tl-title')
+                      + angle + prov + '</li>')
+        hero.append(f'<section class="tw-sec" id="tw-articles"><h2 class="tw-h"><span class="tw-n">2</span>世界の記事<small>{n_media}媒体 · {len(media)}本</small></h2>'
+                    '<ul class="trend-list tw-list">' + ''.join(li) + '</ul></section>')
+        if lens:
+            cols = []
+            for gi, g in enumerate(lens['groups']):
+                scope = g.get('scope', 'others')
+                fc = flag_map_ref.get(g.get('region') or '', 'xx') if scope in ('country', 'outlet') else 'xx'
+                flag = (f'<span class="lens-flag" data-c="{fc}"></span>' if scope in ('country', 'outlet') else '<span class="lens-flag icon"></span>')
+                g_arts = [by_id[i] for i in g.get('ids') or [] if i in by_id]
+                n_src = len({x['source'] for x in g_arts})
+                small = (e(g.get('region')) if scope == 'outlet' and g.get('region') else
+                         e(g.get('provider', '')) + '配信' if scope == 'wire' and g.get('provider') else
+                         f'{n_src}媒体' if n_src > 1 else '')
+                pts = ''.join(f'<li>{e(p)}</li>' for p in (g.get('points') or [])[:3])
+                links = ''.join(f'<li data-c="{flag_of(x)}"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>{ext(x["url"], e(x["title"]))}</li>' for x in g_arts)
+                cols.append(f'<article class="lens-col{" cut" if gi >= 3 else ""}" data-c="{fc}"><div class="lens-who">{flag}{e(g.get("label", ""))}'
+                            + (f'<small>{small}</small>' if small else '') + '</div>'
+                            f'<p class="lens-focus"><small>焦点</small>{e(g.get("focus", ""))}</p>'
+                            + (f'<ul class="lens-pts">{pts}</ul>' if pts else '')
+                            + (f'<details class="lens-src"><summary>記事を見る</summary><ul>{links}</ul></details>' if links else '')
+                            + '</article>')
+            one = (f'<div class="lens-one"><h3>世界の報道を一言で<span class="ai">AIによる横断分析</span></h3><p>{e(lens["oneline"])}</p></div>'
+                   if lens.get('oneline') else '')
+            hero.append('<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h"><span class="tw-n">3</span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2>'
+                        '<div class="lens-cols">' + ''.join(cols) + '</div>' + one + '</section>')
     else:
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)
         if a:
@@ -346,6 +389,8 @@ def main():
                 f'<div class="meta"><span class="kind {k}" title="{e(KIND_TIP[k])}">{KIND[k]}</span>'
                 f'<span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span>'
                 f'<span>{e(a.get("region", ""))} · {e(lang)}</span>'
+                + (f'<span>掲載：{e(a["source"])}　記事提供：{e(a["provider"])}</span>' if a.get('provider') else '')
+                + 
                 f'<time datetime="{e(a["published"])}">{e(jst_text(d))}</time></div>',
                 f'<h1>{e(a["title"])}</h1>']
         if a.get('orig') and a['orig'] != a['title']:
@@ -430,7 +475,7 @@ def main():
     sm.append('</urlset>')
     write('sitemap.xml', '\n'.join(sm) + '\n')
 
-    prerender_index(data, flag_of)
+    prerender_index(data, flag_of, flag_map)
 
     arch['updatedAt'] = data.get('updatedAt', now)
     write('news/archive.json', json.dumps(arch, ensure_ascii=False, indent=1) + '\n')
