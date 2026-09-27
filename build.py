@@ -317,7 +317,6 @@ def prerender_index(data, flag_of, flag_map_ref=None):
             hero.append('<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2>'
                         '<p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p>'
                         '</section>')
-        hero.append(arts_block)
     else:
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)
         if a:

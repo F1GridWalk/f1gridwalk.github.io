@@ -1247,8 +1247,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の14媒体が報道</span></div>
 <div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0" target="_blank" rel="noopener noreferrer">ラッセルがバクーで勝利、フェルスタッペンが0.196秒差まで迫る</a></h1></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p></section>
-<section class="tw-sec" id="tw-articles"><h2 class="tw-h">世界の記事<small>14媒体 · 15本</small></h2><ul class="trend-list tw-list"><li data-c="nl"><div class="tl-top"><span class="srcbadge" data-c="nl">GPblog</span><span class="dot rgn">オランダ</span><span class="dot">英語</span><span class="dot">分析</span></div><a class="tl-title" href="https://www.gpblog.com/en/analysis/red-bull-denied-verstappen-his-last-chance-at-a-win-in-2026" target="_blank" rel="noopener noreferrer"><span class="kind news" style="margin-right:6px">報道</span>フェルスタッペンが逃した“今季最後の勝機”。原因はレッドブル側にあると指摘</a><div class="tl-angle"><b>主要焦点</b>フェルスタッペン／勝機を逃した理由</div></li><li data-c="gb"><div class="tl-top"><span class="srcbadge" data-c="gb">Motorsport.com</span><span class="dot rgn">イギリス</span><span class="dot">英語</span><span class="dot">総括</span></div><a class="tl-title" href="https://www.motorsport.com/f1/news/winners-losers-f1-azerbaijan-grand-prix-street-brawl/10859378/" target="_blank" rel="noopener noreferrer"><span class="kind news" style="margin-right:6px">報道</span>バクーの勝者と敗者。ペレスが会心の週末、ボッタスとアストンは総崩れ</a><div class="tl-angle"><b>主要焦点</b>各チーム／勝者と敗者の採点</div></li><li data-c="de"><div class="tl-top"><span class="srcbadge" data-c="de">Motorsport-Magazin</span><span class="dot rgn">ドイツ</span><span class="dot">ドイツ語</span><span class="dot">レポート</span></div><a class="tl-title" href="https://www.motorsport-magazin.com/formel1/news-300448-formel-1-spaetes-chaos-in-baku-russell-rettet-sieg-vor-verstappen/" target="_blank" rel="noopener noreferrer"><span class="kind news" style="margin-right:6px">報道</span>終盤のボッタスでラッセルの勝利が危うく。フェルスタッペンはゴールライン手前で届かず</a><div class="tl-angle"><b>主要焦点</b>ラッセル／終盤の攻防</div></li></ul></section><!--/pre:hero--></div>
+<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
       </section>
@@ -1571,13 +1570,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       ul.appendChild(li);
     });
     arts.appendChild(ul);
+    arts.hidden = true;
     var tlCut = ul.querySelectorAll('li.cut').length;
     if (tlCut){
       var tm = mk('button','feed-more tl-more', 'ほかの媒体の記事をもっと見る（残り' + tlCut + '本）'); tm.type = 'button';
       tm.addEventListener('click', function(){ [].forEach.call(ul.querySelectorAll('li.cut'), function(x){ x.classList.remove('cut'); }); tm.parentNode.removeChild(tm); });
       arts.appendChild(tm);
     }
-    box.appendChild(arts);
 
     /* 3. world media lens */
     if (lens){
@@ -1633,28 +1632,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       ax.appendChild(tb);
       ax.appendChild(mk('p','lens-note','国別の傾向は、同じ国の2媒体以上で切り口が共通するときだけまとめています。1媒体だけのときは媒体名で示し、通信社の配信記事は掲載した媒体の国ではなく「国際通信」として扱います。好意的・否定的といった点数づけはせず、何を中心に据えたかだけを比べています。媒体名を押すと元の記事が開きます。'));
       ls.appendChild(ax);
-      box.insertBefore(ls, arts);
-    }
-
-    /* 4. technical analysis */
-    if (techs.length){
-      stepNo++;
-      var ts = mk('section','tw-sec'); ts.id = 'tw-tech';
-      ts.appendChild(stepHead(stepNo, '技術分析', null, 'この週末のテクニカル記事'));
-      var tu = mk('ul','tw-rows'); techs.forEach(function(a){ tu.appendChild(twRow(a)); }); ts.appendChild(tu);
-      box.appendChild(ts);
-    }
-    /* 5. fans */
-    if (fans.length){
-      stepNo++;
-      var fs = mk('section','tw-sec'); fs.id = 'tw-fans';
-      fs.appendChild(stepHead(stepNo, 'ファンの反応', null, '掲示板まとめ · 未確認の話を含みます'));
-      var fu = mk('ul','tw-rows'); fans.forEach(function(a){ fu.appendChild(twRow(a)); }); fs.appendChild(fu);
-      box.appendChild(fs);
+      box.appendChild(ls);
     }
 
     var teams = {}; t.items.forEach(function(a){ (a.teams || []).forEach(function(k){ teams[k] = 1; }); });
-    var tk = Object.keys(teams); if (tk.length){ var w = mk('div','teamtags'); w.style.marginTop = '18px'; tk.forEach(function(k){ var b = teamTag(k); if (b) w.appendChild(b); }); box.appendChild(w); }
   }
 
   function renderHero(a){
