@@ -1259,6 +1259,27 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 /* One layout everywhere: the phone layout, centred in a 760px column on wide screens.
    (The old separate desktop layout was switched off by turning its media queries into "not all".) */
 .wrap,.wrap.dash,body .wrap{max-width:760px !important;padding-inline:clamp(16px,5vw,20px) !important;margin-inline:auto !important}
+/* Small phones: one article per row and larger text, so nothing is squeezed into two narrow columns */
+@media (max-width:520px){
+  .dash-main .grid{grid-template-columns:1fr}
+  .dash-main .card,.dash-main .card:nth-child(2n+2),.dash-main .card:nth-child(2n+3){padding:14px 0 15px;border-left:0}
+  .dash-main .card{gap:5px}
+  .dash-main .card .card-meta{font-size:11.5px;gap:2px 8px}
+  .dash-main .card .card-meta .srcbadge{font-size:11.5px;gap:5px}
+  .dash-main .card .card-meta .srcbadge::before{width:12px;height:8px}
+  .dash-main .card .kind{font-size:10.5px;line-height:18px;padding:0 6px}
+  .dash-main .card h3{font-size:16.5px;line-height:1.55;-webkit-line-clamp:3}
+  .dash-main .card:first-child h3{font-size:19px}
+  .dash-main .card p,.dash-main .card:first-child p{font-size:14px;line-height:1.75;-webkit-line-clamp:3}
+  .dash-main .card .teamtag{font-size:11.5px}
+  .dash-main .card .perma,.dash-main .card .note-dest{font-size:12.5px !important}
+  .tcard .row2 span,.nums .num-t span,.num-t b small{font-size:11.5px}
+  .sessions li b.sn,.sessions li span.t{font-size:11.5px}
+  .srow2 .tl-lang{font-size:11.5px}
+  .srow2 .srcbadge,#sources .srow2 b{font-size:12.5px}
+  #bars .bar span{font-size:12.5px}
+  footer .foot-note,footer .foot-brand div,.foot-archive a{font-size:12.5px}
+}
 </style>
 
 <header class="top">
