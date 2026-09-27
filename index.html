@@ -2661,6 +2661,25 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </script>
 
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+/* count opens from the home-screen icon and new home-screen installs (no personal data) */
+(function(){
+  function gc(path, title){
+    var n = 0;
+    (function tryCount(){
+      if (window.goatcounter && window.goatcounter.count){ try { window.goatcounter.count({ path:path, title:title, event:true }); } catch(e){} return; }
+      if (++n < 20) setTimeout(tryCount, 500);
+    })();
+  }
+  var fromIcon = /[?&]from=homescreen\b/.test(location.search);
+  var standalone = (window.matchMedia && (matchMedia('(display-mode: standalone)').matches || matchMedia('(display-mode: minimal-ui)').matches)) || window.navigator.standalone === true;
+  if (fromIcon || standalone){
+    gc('homescreen/open', 'ホーム画面のアイコンから開いた');
+    if (fromIcon && history.replaceState){ try { history.replaceState(null, '', location.pathname + location.hash); } catch(e){} }
+  }
+  window.addEventListener('appinstalled', function(){ gc('homescreen/installed', 'ホーム画面に追加された'); });
+})();
+</script>
 
 <script>
 (function(){
