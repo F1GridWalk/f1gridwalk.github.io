@@ -1109,7 +1109,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .lens-axes[hidden]{display:none}
 .axes{padding:0 14px 10px;font-size:12.5px}
 .axes-row{display:grid;grid-template-columns:200px repeat(4,minmax(0,1fr));gap:10px;padding:8px 0;border-top:1px solid var(--line-soft);align-items:start;line-height:1.6}
-.axes-row.head{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--muted);border-top:0}
+.axes-row.head{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--ink);border-top:0}
 .axes-row .gcell{display:flex;flex-direction:column;gap:3px;min-width:0}
 .axes-row .g{display:flex;align-items:center;flex-wrap:wrap;gap:2px 6px;font-weight:700;color:var(--ink)}
 .axes-row .g small{font-size:10.5px;font-weight:500;color:var(--muted)}
@@ -1174,7 +1174,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .axes-row{grid-template-columns:1fr;gap:2px}
   .axes-row.head{display:none}
   .axes-row.head+.axes-row{border-top:0}
-  .axes-row>span[data-k]::before{content:attr(data-k) "：";font-weight:700;color:var(--muted);font-size:11px}
+  .axes-row>span[data-k]::before{content:attr(data-k) "：";font-weight:800;color:var(--ink);font-size:12px}
   .tw-rows{grid-template-columns:1fr}
   .tw-rows a.t{font-size:13.5px}
 }
@@ -1342,6 +1342,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .about-pop a{color:#E8946C;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-pop a{color:#9E4E2B}}
 :root[data-theme="dark"] .about-pop a{color:#9E4E2B}
+
+.tw-lead b{font-weight:800;color:var(--ink)}
 </style>
 
 <header class="top">
@@ -1419,7 +1421,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の14媒体が報道</span></div>
 <div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0" target="_blank" rel="noopener noreferrer">ラッセルがバクーで勝利、フェルスタッペンが0.196秒差まで迫る</a></h1></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p></section><!--/pre:hero--></div>
+<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の<b>主役</b>・<b>焦点</b>・<b>原因の説明</b>・<b>見出しの強調点</b>を読み比べました。</p></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
         <!--pre:lens--><a class="lens-link" href="/lens/baku-2026/"><small>WORLD MEDIA LENS · 第15戦 アゼルバイジャンGP</small><b>バクーGP 日本語ではほぼ見かけない3つの話と「0.196秒差」の謎</b><span>世界の記事を読み比べた特集。謎の答え合わせと投票も →</span></a><!--/pre:lens-->
@@ -1758,7 +1760,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var ls = mk('section','tw-sec lens'); ls.id = 'tw-lens';
       var lh = stepHead(stepNo, '世界の見方', 'WORLD MEDIA LENS'); lh.classList.add('tw-h-lens'); lh.insertBefore(mk('span','tw-dot'), lh.firstChild);
       ls.appendChild(lh);
-      ls.appendChild(mk('p','tw-lead','このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。'));
+      var twl = mk('p','tw-lead'); twl.innerHTML = 'このニュースを、世界の媒体はどう伝えたか。各記事の<b>主役</b>・<b>焦点</b>・<b>原因の説明</b>・<b>見出しの強調点</b>を読み比べました。'; ls.appendChild(twl);
       var rows = [];
       lens.groups.forEach(function(g){
         if (g.scope === 'wire' || g.scope === 'official') return;
