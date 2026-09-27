@@ -1244,6 +1244,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .note-feed{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;padding-top:8px}
 .note-feed .nrow{border-bottom:1px solid var(--line)}
 @media (max-width:700px){ .note-feed{grid-template-columns:1fr} }
+
+/* "もっと見る" must not become the scroll anchor, or the page jumps to the end of the newly shown items */
+.feed-more,.lens-more,.more-link,.tl-more{overflow-anchor:none}
 </style>
 
 <header class="top">
@@ -1878,6 +1881,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
 
   // desktop: rumour / forum / tech each get their own chapter under the news
+  /* after "もっと見る": keep the reader where they were and put focus on the first new item, so the page doesn't jump to the bottom */
+  function revealAt(node){
+    if (!node) return;
+    var link = node.querySelector('h3 a, h4 a, a');
+    if (link && link.focus) { try { link.focus({ preventScroll:true }); } catch(e){} }
+    var r = node.getBoundingClientRect(), vh = window.innerHeight || 800;
+    if (r.top < 60 || r.top > vh - 120) window.scrollBy({ top: r.top - 90, behavior:'smooth' });
+  }
   function withMore(parent, g, nodes, first, step){
     nodes.forEach(function(n, i){ if (i >= first) n.classList.add('cut'); g.appendChild(n); });
     parent.appendChild(g);
@@ -1886,7 +1897,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var left = function(){ return [].filter.call(g.children, function(c){ return c.classList.contains('cut'); }); };
     var lbl = function(){ mb.textContent = 'もっと見る（残り' + left().length + '本）'; };
     lbl();
-    mb.addEventListener('click', function(){ left().slice(0, step).forEach(function(c){ c.classList.remove('cut'); }); if (!left().length) mb.parentNode.removeChild(mb); else lbl(); });
+    mb.addEventListener('click', function(){ var nx = left(); nx.slice(0, step).forEach(function(c){ c.classList.remove('cut'); }); revealAt(nx[0]); if (!left().length) mb.parentNode.removeChild(mb); else lbl(); });
     parent.appendChild(mb);
   }
   function renderKindSecs(all){
@@ -1982,8 +1993,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         var lbl = function(){ mb.textContent = 'もっと見る（残り' + g.querySelectorAll('.card.cut').length + '本）'; };
         lbl();
         mb.addEventListener('click', function(){
-          var cs = g.querySelectorAll('.card.cut');
+          var cs = g.querySelectorAll('.card.cut'), firstNew = cs[0];
           for (var j = 0; j < cs.length && j < PAGE; j++) cs[j].classList.remove('cut');
+          revealAt(firstNew);
           state.newsShown += PAGE;
           if (!g.querySelector('.card.cut')) mb.parentNode.removeChild(mb); else lbl();
         });
