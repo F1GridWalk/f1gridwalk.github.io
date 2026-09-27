@@ -425,7 +425,7 @@ def main():
                         + '<ul class="list">' + ''.join(item_li(x, flag_of) for x in others[:12]) + '</ul></section>')
         latest = [x for x in allarts if x['id'] != a['id'] and x.get('topic') != a.get('topic')][:6]
         if latest:
-            body.append('<section><h2>新着ニュース</h2><ul class="list">'
+            body.append('<section><h2>最新の記事</h2><ul class="list">'
                         + ''.join(item_li(x, flag_of) for x in latest)
                         + '</ul><p><a href="/">トップで全部見る →</a>　<a href="/news/">ニュース一覧 →</a></p></section>')
         crumbs_ld = json.dumps({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
