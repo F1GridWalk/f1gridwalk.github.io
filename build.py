@@ -163,6 +163,12 @@ def page(title, desc, canonical, body, extra_head='', og_type='article'):
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{e(canonical)}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Grid Walk">
+<meta name="application-name" content="Grid Walk">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="F1 Grid Walk">
 <meta property="og:title" content="{e(title)}">
