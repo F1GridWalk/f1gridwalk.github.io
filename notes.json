@@ -1,24 +1,22 @@
 {
-  "updatedAt": "2026-09-27T12:20:00+09:00",
+  "updatedAt": "2026-09-27T18:20:00+09:00",
   "notes": [
     {
-      "id": "substack-harrybenjamin-baku-review",
-      "platform": "substack",
-      "site": "Chequered Flag",
-      "lang": "en",
+      "id": "note-sentaroh-russell-win-analysis",
       "paid": false,
-      "cat": "決勝",
-      "author": "Harry Benjamin",
-      "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
-      "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
-      "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
-      "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
-      "published": "2026-09-26T19:10:00+01:00",
+      "cat": "分析",
+      "author": "仙太郎",
+      "title": "静寂の中の激走 ― バクーが証明した“新生ラッセル”の強さ",
+      "summary": "アゼルバイジャンGPで0.196秒差というきわどい勝利を収めたラッセルの強さを、精度の高さの証明として読み解く分析。序盤に築いた11秒差がセーフティカーで消え、ソフトタイヤに換えたフェルスタッペンが終盤に本物の脅威となる中、リスタート時のエネルギー配分やタイヤ温度、ミラー越しの駆け引きまで40周にわたる攻防を丁寧に追っている。",
+      "url": "https://note.com/sentaroh_f1/n/nab5735017229",
+      "published": "2026-09-27T17:08:00+09:00",
       "teams": [
         "mercedes",
         "redbull"
       ],
-      "circuit": "baku"
+      "circuit": "baku",
+      "platform": "note",
+      "lang": "ja"
     },
     {
       "id": "note-f1report-baku-race-analysis",
@@ -71,6 +69,25 @@
         "mercedes",
         "redbull"
       ]
+    },
+    {
+      "id": "substack-harrybenjamin-baku-review",
+      "platform": "substack",
+      "site": "Chequered Flag",
+      "lang": "en",
+      "paid": false,
+      "cat": "決勝",
+      "author": "Harry Benjamin",
+      "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
+      "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
+      "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
+      "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
+      "published": "2026-09-26T19:10:00+01:00",
+      "teams": [
+        "mercedes",
+        "redbull"
+      ],
+      "circuit": "baku"
     },
     {
       "id": "note-sentaroh-verstappen-engine",
@@ -191,6 +208,23 @@
       "circuit": "baku"
     },
     {
+      "id": "note-f1report-baku-upgrades",
+      "paid": false,
+      "cat": "テクニカル",
+      "author": "Formula1 Report (Yoshito)",
+      "title": "【分析】各チームがバクー向け空力を再構築。複数チームが大型アップデートを持ち込む、特にアウディは最大14項目【アゼルバイジャンGP】",
+      "summary": "バクーに持ち込まれたアップデートの一覧と狙いの整理。マクラーレンはサイドポッドからリアウイングまで8項目、アウディは車体全体で14項目。長い直線と低速コーナーの組み合わせで効率が問われると解説。",
+      "url": "https://note.com/formula1report/n/n1ef7687ac07a",
+      "published": "2026-09-24T16:21:00+09:00",
+      "teams": [
+        "mclaren",
+        "audi"
+      ],
+      "circuit": "baku",
+      "platform": "note",
+      "lang": "ja"
+    },
+    {
       "id": "substack-somersf1-mclaren-update-package",
       "platform": "substack",
       "site": "Somers F1",
@@ -207,23 +241,6 @@
         "mclaren"
       ],
       "circuit": "baku"
-    },
-    {
-      "id": "note-f1report-baku-upgrades",
-      "paid": false,
-      "cat": "テクニカル",
-      "author": "Formula1 Report (Yoshito)",
-      "title": "【分析】各チームがバクー向け空力を再構築。複数チームが大型アップデートを持ち込む、特にアウディは最大14項目【アゼルバイジャンGP】",
-      "summary": "バクーに持ち込まれたアップデートの一覧と狙いの整理。マクラーレンはサイドポッドからリアウイングまで8項目、アウディは車体全体で14項目。長い直線と低速コーナーの組み合わせで効率が問われると解説。",
-      "url": "https://note.com/formula1report/n/n1ef7687ac07a",
-      "published": "2026-09-24T16:21:00+09:00",
-      "teams": [
-        "mclaren",
-        "audi"
-      ],
-      "circuit": "baku",
-      "platform": "note",
-      "lang": "ja"
     },
     {
       "id": "substack-somerfield-baku-tech",
