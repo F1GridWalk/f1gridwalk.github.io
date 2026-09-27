@@ -1235,6 +1235,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .filt-rows.open{display:flex;flex-direction:column;gap:8px}
 }
 @media (max-width:600px){ .filt-toggle{min-height:30px;font-size:12px;padding:0 4px 0 12px} .filt-toggle .pm{width:21px;height:21px;font-size:13px} }
+
+/* ===== one feed: news, tech, paddock, forums and personal analysis in 新着ニュース ===== */
+#geek,#notes,.kindsec,.wrap.dash .dash-main > .kindsec,.wrap.dash .dash-main > .notebox:not([hidden]),.wrap.dash .dash-main > .geek:not([hidden]),#news .next-up{display:none !important}
+.wrap.dash #kindfilter{display:flex}
+.kinds button.k-analysis{border-color:var(--clay);color:var(--clay)}
+.kinds button.k-analysis[aria-pressed="true"]{background:var(--clay);color:var(--surface)}
+.note-feed{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;padding-top:8px}
+.note-feed .nrow{border-bottom:1px solid var(--line)}
+@media (max-width:700px){ .note-feed{grid-template-columns:1fr} }
 </style>
 
 <header class="top">
@@ -1784,7 +1793,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     return it;
   }
 
-  var KIND_TABS = [['all','すべて'],['news','ニュース'],['tech','テック'],['rumor','パドック（うわさ）'],['fan','掲示板まとめ']];
+  var KIND_TABS = [['all','すべて'],['news','ニュース'],['tech','テック'],['rumor','パドック（うわさ）'],['fan','掲示板まとめ'],['analysis','個人分析']];
+  function notePass(n){
+    if (state.lang !== 'all' && (n.lang || 'ja') !== state.lang) return false;
+    if (state.team !== 'all' && (n.teams || []).indexOf(state.team) < 0) return false;
+    if (state.q){ var hay = [n.title, n.summary, n.orig, n.author, n.site, n.cat].join(' ').toLowerCase(); var ws = state.q.toLowerCase().split(/[\s　]+/).filter(Boolean); for (var i = 0; i < ws.length; i++) if (hay.indexOf(ws[i]) < 0) return false; }
+    return true;
+  }
+  function noteList(){ return ((state.notes || {}).notes || []).filter(notePass).sort(function(a, b){ return new Date(b.published) - new Date(a.published); }); }
   function pass(a, skip){
     if (skip !== 'lang' && state.lang !== 'all' && a.lang !== state.lang) return false;
     if (skip !== 'team' && state.team !== 'all' && (a.teams || []).indexOf(state.team) < 0) return false;
@@ -1803,6 +1819,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var box = el('kindfilter'); box.textContent = '';
     var pool = list.filter(function(a){ return pass(a, 'kind'); }), cnt = { all:pool.length };
     pool.forEach(function(a){ var k = a.kind || 'news'; cnt[k] = (cnt[k] || 0) + 1; });
+    cnt.analysis = noteList().length;
     KIND_TABS.forEach(function(t){
       if (t[0] !== 'all' && !cnt[t[0]] && state.kind !== t[0]) return;
       var b = mk('button', 'k-' + t[0]); b.type = 'button';
@@ -1883,7 +1900,17 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
   }
   function renderFeed(list){
-    var deskSplit = wide.matches && state.kind === 'all';
+    var deskSplit = false;
+    if (state.kind === 'analysis' && state.view !== 'team'){
+      var nf = el('feed'); nf.textContent = '';
+      var ab0 = activeBar(); if (ab0) nf.appendChild(ab0);
+      var nl = noteList();
+      el('count').textContent = nl.length + '本の個人分析 · note・Substack・個人ブログ · 報道ではなく個人の見解です';
+      if (!nl.length){ nf.appendChild(mk('p','empty','この条件の個人分析は、今はまだありません。')); return; }
+      var ng = mk('div','note-feed'); nl.forEach(function(n){ ng.appendChild(noteRow(n)); }); nf.appendChild(ng);
+      nf.appendChild(mk('p','gnote','要約はこちらで短くまとめたものです。有料の記事は、無料で公開されている部分だけをもとに要約しています。'));
+      return;
+    }
     var shown = list.filter(function(a){ return pass(a) && (!deskSplit || (a.kind || 'news') === 'news'); });
     var feed = el('feed'); feed.textContent = '';
     var ab = activeBar(); if (ab) feed.appendChild(ab);
@@ -2052,6 +2079,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
     el('view-list').setAttribute('aria-pressed', String(state.view === 'list'));
     el('view-ja').setAttribute('aria-pressed', String(state.lang === 'ja'));
+    el('filters').hidden = state.kind === 'analysis';
     { var fnum = (state.kind !== 'all') + (state.lang !== 'all') + (state.team !== 'all') + (state.src !== 'all'); var fb = el('filt-n'); if (fb){ fb.hidden = !fnum; fb.textContent = fnum ? String(fnum) : ''; } }
     if (d.updatedAt){
       var up = el('updated'); up.textContent = '';
@@ -2485,6 +2513,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
   });
   Array.prototype.forEach.call(document.querySelectorAll('.jump a'), function(a){
+    var KJ = { '#tech':'tech', '#gossip':'rumor', '#notes':'analysis' }[a.getAttribute('href')];
+    if (KJ){ a.addEventListener('click', function(e){ e.preventDefault(); state.kind = KJ; state.view = 'latest'; renderAll(); goNews(); }); return; }
     a.addEventListener('click', function(e){
       var h = a.getAttribute('href'), k = PANEL_OF[h]; if (k && wide.matches) setPanel(k, true);
       var alt = { '#tech':'#sec-tech', '#gossip':'#sec-rumor' }[h];
@@ -2509,7 +2539,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     state.data = res[0];
     renderAll();
     renderSeason();
-    getJSON('notes.json').catch(function(){ var sn = JSON.parse(el('snapshot').textContent); return sn.notes || null; }).then(function(n){ state.notes = n; renderNotes(); }).catch(function(){});
+    getJSON('notes.json').catch(function(){ var sn = JSON.parse(el('snapshot').textContent); return sn.notes || null; }).then(function(n){ state.notes = n; renderNotes(); renderAll(); }).catch(function(){});
   }).catch(function(){
     el('updated').textContent = '記事を読み込めませんでした';
     el('hero-title').textContent = '記事を読み込めませんでした。少し時間をおいて、ページを再読み込みしてください。';
