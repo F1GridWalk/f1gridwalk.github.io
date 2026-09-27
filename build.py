@@ -344,6 +344,205 @@ def prerender_index(data, flag_of, flag_map_ref=None):
             f.write(out)
 
 
+# ---------------------------------------------------------------------------
+# WORLD MEDIA LENS: one long-form page per race, from lens/<slug>.json
+# ---------------------------------------------------------------------------
+LENS_CSS = '''
+.lens-hero{margin:18px 0 0;background:#1F2420;color:#F3EFE6;border-radius:22px;padding:24px 20px 26px;position:relative;overflow:hidden}
+.lens-hero::after{content:attr(data-big);position:absolute;right:-10px;bottom:-34px;font-family:Georgia,serif;font-size:128px;font-weight:700;color:rgba(255,255,255,.05);letter-spacing:-4px;pointer-events:none}
+.lens-ey{font-size:11px;font-weight:800;letter-spacing:.26em;color:#E8946C}
+.lens-hero h1{font-weight:900;font-size:clamp(24px,6.4vw,32px);line-height:1.45;margin:10px 0 12px;letter-spacing:.01em}
+.lens-hero h1 em{font-style:normal;color:#E8946C}
+.lens-hero .dek{margin:0 0 16px;font-size:14.5px;color:#D3CEC2}
+.lens-hero .date{font-size:12px;color:#A5A99C;margin:0 0 14px}
+.lens-stats{display:flex;gap:8px;flex-wrap:wrap;position:relative;z-index:1}
+.lens-stats div{border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:7px 12px;font-size:12px;color:#D3CEC2;line-height:1.35}
+.lens-stats b{display:block;font-size:21px;color:#fff;font-family:Georgia,serif}
+.lens-sec{margin:34px 0 0}
+.lens-sh{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.lens-sh .no{width:30px;height:30px;flex-shrink:0;border-radius:50%;background:#B0532C;color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.lens-sh h2{margin:0;font-size:20px;font-weight:900;line-height:1.4}
+.lens-lead{font-size:14px;color:var(--muted);margin:2px 0 16px}
+.uc{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:16px 18px 12px;margin-bottom:14px}
+.ucn{font-family:Georgia,serif;font-size:13px;font-weight:700;color:#B0532C;letter-spacing:.1em;margin-bottom:6px}
+.ucm{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.ucm b{display:block;font-size:14px;line-height:1.25}.ucm small{font-size:11.5px;color:var(--muted)}
+.bigflag{width:34px;height:23px;border-radius:4px;background:var(--flag,#999);box-shadow:0 0 0 1px rgba(0,0,0,.15);flex-shrink:0}
+.ucm .kind{margin-left:auto}
+.uc h3{font-size:19px;line-height:1.5;margin:0 0 8px;font-weight:900}
+.uc p{font-size:15px;color:var(--ink-2);margin:0 0 12px;line-height:1.85}
+.ucf{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:10px}
+.stamp{font-size:11px;font-weight:800;letter-spacing:.05em;color:#B0532C;border:2px solid #B0532C;border-radius:6px;padding:1px 8px;transform:rotate(-2deg);display:inline-block;background:color-mix(in srgb,#B0532C 8%,transparent)}
+.ucf a{font-size:13.5px;font-weight:700}
+.ucf .also{flex-basis:100%;font-size:12px;color:var(--muted)}
+.lens-note{font-size:12.5px;color:var(--muted);background:color-mix(in srgb,var(--line) 45%,transparent);border-radius:12px;padding:10px 13px;margin:4px 0 0}
+.quiz{background:#1F2420;color:#F3EFE6;border-radius:24px;padding:20px 16px 18px}
+.qk{font-size:11px;font-weight:800;letter-spacing:.3em;color:#E8946C}
+.quiz h3{font-weight:900;font-size:clamp(21px,5.6vw,26px);line-height:1.5;margin:6px 0 6px}
+.quiz .qd{font-size:14px;color:#D3CEC2;margin:0 0 14px}
+.ev{display:flex;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:12px;margin-bottom:9px}
+.evl{flex-shrink:0;min-width:34px;height:34px;padding:0 6px;border-radius:17px;background:#F3EFE6;color:#1F2420;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center}
+.ev h4{margin:0 0 4px;font-size:15.5px;line-height:1.55}
+.ev p{margin:0 0 6px;font-size:13.5px;color:#C9C4B8;line-height:1.7}
+.evs{display:flex;flex-wrap:wrap;gap:4px 12px}
+.evs a{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:#ECE7DC;text-decoration:none}
+.evs a::before{content:"";width:14px;height:9px;border-radius:2px;background:var(--flag,#999)}
+.evs a:hover{text-decoration:underline}
+.vote-q{margin:16px 0 8px;font-size:14px;font-weight:700;text-align:center}
+.vote{display:grid;gap:8px}
+.vote button{font:inherit;font-size:15px;font-weight:700;line-height:1.5;text-align:left;border:0;border-radius:14px;background:#B0532C;color:#fff;padding:12px 14px;cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.vote button b{font-family:Georgia,serif;font-size:18px;line-height:1.3}
+.vote button[aria-pressed="true"]{background:#F3EFE6;color:#1F2420;box-shadow:0 0 0 3px #E8946C inset}
+.vote button:disabled{cursor:default}
+.vote button:disabled:not([aria-pressed="true"]){opacity:.45}
+.vh{text-align:center;font-size:12.5px;color:#C9C4B8;margin-top:8px}
+.answer{margin-top:16px;background:var(--surface);border:2px solid var(--ink);border-radius:20px;padding:16px 16px 12px}
+.js .answer{display:none}
+.js .answer.open{display:block}
+.answer h4{margin:0 0 8px;font-size:16px}
+.answer h4 .tg{font-size:10.5px;font-weight:700;border:1px solid #86650F;color:#86650F;border-radius:5px;padding:0 6px;margin-left:6px;vertical-align:2px}
+.answer ol{margin:0 0 10px;padding-left:1.3em;font-size:15px;line-height:1.85}
+.answer ol li{margin-bottom:6px}
+.answer .caveat{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;margin:0}
+.sdesk h2{font-size:15px;letter-spacing:.24em;margin:0 0 4px}
+.sdesk .lens-lead{margin-bottom:8px}
+.sdesk ul{list-style:none;margin:0;padding:0}
+.sdesk li{display:flex;flex-wrap:wrap;align-items:center;gap:3px 10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.sdesk li a.t{flex-basis:100%;font-size:14.5px;font-weight:700;color:var(--ink);text-decoration:none;line-height:1.55}
+.sdesk li a.t:hover{text-decoration:underline}
+.sdesk li a.sum{margin-left:auto;font-size:12px;color:var(--muted)}
+.lens-list{list-style:none;margin:0;padding:0}
+.lens-list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.lens-list a{font-size:17px;font-weight:800;text-decoration:none}
+.lens-list small{display:block;color:var(--muted);font-size:12.5px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lens-hero,:root:not([data-theme="light"]) .quiz{background:#0F110E;border:1px solid #353A32}}
+'''
+
+LENS_JS = '''<script>
+document.documentElement.classList.add('js');
+(function(){
+  var q=document.getElementById('quiz'); if(!q) return;
+  var slug=q.getAttribute('data-slug'), ans=document.getElementById('answer'), bs=q.querySelectorAll('.vote button');
+  function pick(id, count){
+    [].forEach.call(bs,function(b){ b.disabled=true; b.setAttribute('aria-pressed', String(b.getAttribute('data-c')===id)); });
+    ans.classList.add('open'); var h=document.getElementById('vote-hint'); if(h) h.textContent='あなたの判定：'+id+'　↓ 証拠が示すこと';
+    if(count){ try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:'lens/'+slug+'/vote/'+id,title:'LENS投票 '+slug+' '+id,event:true}); }catch(e){}
+      try{ localStorage.setItem('lens-vote-'+slug,id); }catch(e){} }
+  }
+  [].forEach.call(bs,function(b){ b.addEventListener('click',function(){ pick(b.getAttribute('data-c'), true); ans.scrollIntoView({behavior:'smooth',block:'start'}); }); });
+  try{ var v=localStorage.getItem('lens-vote-'+slug); if(v) pick(v,false); }catch(e){}
+})();
+</script>'''
+
+
+def lens_src_link(s, flag_map, region_of, cls=''):
+    cc = flag_map.get(s.get('region') or region_of.get(s.get('source'), ''), 'xx')
+    c = f' class="{cls}"' if cls else ''
+    return (f'<a{c} data-c="{cc}" href="{e(s["url"])}" target="_blank" rel="noopener" '
+            f'data-track="click/lens/{e(s.get("source",""))}">{e(s["source"])}</a>')
+
+
+def build_lenses(arch, flag_map):
+    """Render lens/<slug>/index.html for every lens/<slug>.json, plus lens/index.html. Returns sitemap rows."""
+    d = os.path.join(ROOT, 'lens')
+    if not os.path.isdir(d):
+        return []
+    region_of = {}
+    for a in arch['articles'].values():
+        region_of.setdefault(a['source'], a.get('region'))
+    lenses = []
+    for fn in sorted(os.listdir(d)):
+        if not fn.endswith('.json'):
+            continue
+        L = load(os.path.join('lens', fn))
+        if not L or not L.get('slug') or not ID_OK.match(L['slug']):
+            continue
+        slug = L['slug']
+        url = f'{SITE}/lens/{slug}/'
+        # the source desk: every article on the topic we already carry, plus the extra sources used here
+        desk, seen = [], set()
+        topic_arts = sorted([a for a in arch['articles'].values() if a.get('topic') == L.get('topic') and a.get('kind') != 'fan'], key=when, reverse=True)
+        for a in topic_arts:
+            desk.append({'source': a['source'], 'region': a.get('region'), 'lang': a.get('lang'), 'title': a['title'], 'url': a['url'], 'page': f'/news/{a["id"]}/'})
+        for s in L.get('extraSources', []) + [it for it in L.get('unreported', {}).get('items', [])]:
+            desk.append({'source': s['source'], 'region': s.get('region'), 'lang': s.get('lang'), 'title': s.get('headline') or s.get('title'), 'url': s['url']})
+        for x in L.get('mystery', {}).get('evidence', []):
+            for s in x.get('sources', []):
+                if s.get('title'):
+                    desk.append({'source': s['source'], 'region': s.get('region'), 'lang': s.get('lang'), 'title': s['title'], 'url': s['url']})
+        out = []
+        for s in desk:
+            if s['url'] in seen:
+                continue
+            seen.add(s['url']); out.append(s)
+        desk = out
+        n_src = len({s['source'] for s in desk})
+        n_cty = len({(s.get('region') or region_of.get(s['source'])) for s in desk} - {None, ''})
+        pub = datetime.fromisoformat(L['published'])
+
+        B = []
+        B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/lens/">WORLD MEDIA LENS</a> › {e(L["gpLabel"])}</nav>')
+        B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">WORLD MEDIA LENS · {e(L["gpLabel"])}</div>'
+                 f'<h1>{L["titleHtml"]}</h1><p class="dek">{e(L["dek"])}</p><p class="date">{e(jst_text(pub))} 公開</p>'
+                 f'<div class="lens-stats"><div><b>{len(L["unreported"]["items"])}</b>日本語で見当たらない話</div>'
+                 f'<div><b>1</b>あなたが解く謎</div><div><b>{n_src}</b>媒体・{n_cty}か国</div></div></div>')
+        U = L['unreported']
+        B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">1</span><h2>日本では見当たらなかった話</h2></div>'
+                 f'<p class="lens-lead">{e(U.get("lead", "海外の記事にだけ書かれていた話です。"))}</p>')
+        for i, it in enumerate(U['items'], 1):
+            cc = flag_map.get(it.get('region', ''), 'xx')
+            k = it.get('kind', 'news')
+            also = ''
+            if it.get('also'):
+                also = '<span class="also">同じ話を伝えた媒体：' + '、'.join(lens_src_link(x, flag_map, region_of) for x in it['also']) + '</span>'
+            B.append(f'<article class="uc"><div class="ucn">NO.{i:02d}</div>'
+                     f'<div class="ucm"><span class="bigflag" data-c="{cc}"></span><div><b>{e(it["source"])}</b><small>{e(it.get("region", ""))} · {e(LANG.get(it.get("lang"), ""))}</small></div>'
+                     f'<span class="kind {k}" title="{e(KIND_TIP.get(k, ""))}">{KIND.get(k, "報道")}</span></div>'
+                     f'<h3>{e(it["headline"])}</h3><p>{e(it["body"])}</p>'
+                     f'<div class="ucf"><span class="stamp">日本語の記事 見当たらず</span>'
+                     f'<a href="{e(it["url"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/{i}">原文を読む（{e(it["source"])}）↗</a>{also}</div></article>')
+        B.append(f'<p class="lens-note">{e(U["note"])}</p></section>')
+
+        M = L['mystery']
+        ev = ''
+        for x in M['evidence']:
+            links = ''.join(lens_src_link(s, flag_map, region_of) for s in x['sources'])
+            ev += f'<div class="ev"><div class="evl">{e(x["label"])}</div><div><h4>{e(x["head"])}</h4><p>{e(x["body"])}</p><div class="evs">{links}</div></div></div>'
+        ch = ''.join(f'<button type="button" data-c="{e(c["id"])}" aria-pressed="false"><b>{e(c["id"])}</b><span>{e(c["text"])}</span></button>' for c in M['choices'])
+        A = M['answer']
+        B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">2</span><h2>' + e(M['title']) + '</h2></div>'
+                 f'<p class="lens-lead">{e(M["lead"])}</p>'
+                 f'<div class="quiz" id="quiz" data-slug="{e(slug)}"><div class="qk">WHO\'S RIGHT?</div><h3>{M["questionHtml"]}</h3><p class="qd">{e(M["setup"])}</p>'
+                 f'{ev}<p class="vote-q">あなたの判定は？</p><div class="vote">{ch}</div><p class="vh" id="vote-hint">選ぶと、証拠が示すことが表示されます</p></div>'
+                 f'<div class="answer" id="answer"><h4>{e(A["title"])}<span class="tg">分析</span></h4><ol>'
+                 + ''.join(f'<li>{e(p)}</li>' for p in A['points']) + f'</ol><p class="caveat">{e(A["caveat"])}</p></div></section>')
+
+        rows = ''
+        for s in desk:
+            cc = flag_map.get(s.get('region') or region_of.get(s['source'], ''), 'xx')
+            extra = f'<a class="sum" href="{e(s["page"])}">要約を読む</a>' if s.get('page') else ''
+            rows += (f'<li><span class="srcbadge" data-c="{cc}">{e(s["source"])}</span><span>{e(LANG.get(s.get("lang"), ""))}</span>{extra}'
+                     f'<a class="t" href="{e(s["url"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/desk">{e(s["title"])} ↗</a></li>')
+        B.append(f'<section class="lens-sec sdesk"><h2>SOURCE DESK</h2><p class="lens-lead">この記事のもとになった{len(desk)}本の記事（{n_src}媒体）。すべて原文に飛びます。</p><ul>{rows}</ul></section>')
+        B.append('<p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p>')
+
+        title = f'{L["title"]}｜WORLD MEDIA LENS'
+        head = f'<meta property="article:published_time" content="{e(L["published"])}">\n<style>{LENS_CSS}</style>\n'
+        write(f'lens/{slug}/index.html', page(title, L['dek'], url, '\n'.join(B) + LENS_JS, head))
+        lenses.append((pub, slug, L, url))
+
+    lenses.sort(key=lambda x: x[0], reverse=True)
+    items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD MEDIA LENS</nav><h1>WORLD MEDIA LENS</h1>'
+            '<p class="lead">1レースにつき1本。世界の媒体の記事を読み比べて、日本では見当たらなかった話と、見出しだけでは分からないことを日本語でまとめます。</p>'
+            f'<ul class="lens-list">{items}</ul>')
+    write('lens/index.html', page('WORLD MEDIA LENS｜F1 Grid Walk', '世界のF1報道を読み比べて、日本では見当たらなかった話をまとめる、1レース1本の記事。',
+                                  SITE + '/lens/', body, f'<style>{LENS_CSS}</style>\n', og_type='website'))
+    return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + \
+           [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in lenses]
+
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -463,6 +662,7 @@ def main():
     now = datetime.now(JST).isoformat(timespec='seconds')
     urls = [(SITE + '/', now, 'hourly', '1.0'), (SITE + '/news/', now, 'hourly', '0.8')]
     urls += [(f'{SITE}/news/{a["id"]}/', when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]
+    urls += [u for u in build_lenses(arch, flag_map) if u[1]]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lm, cf, pr in urls:
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
