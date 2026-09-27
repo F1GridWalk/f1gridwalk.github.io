@@ -1337,6 +1337,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .lens-link b{font-size:15px;line-height:1.5}
 .lens-link span{font-size:12.5px;color:#D3CEC2}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lens-link{background:#0F110E;border:1px solid #353A32}}
+
+.about-pop p + p{margin-top:10px}
+.about-pop a{color:#E8946C;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-pop a{color:#9E4E2B}}
+:root[data-theme="dark"] .about-pop a{color:#9E4E2B}
 </style>
 
 <header class="top">
@@ -1348,8 +1353,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </a>
     <div class="about-pop" id="about-pop" role="dialog" aria-label="F1 Grid Walk について" hidden>
       <button type="button" class="about-x" aria-label="閉じる">×</button>
-      <h2>1日4回、世界のグリッドをひと歩き。</h2>
+      <h2>世界のグリッドを、ひと歩き。</h2>
       <p>0時、6時、12時、18時ごろ（日本時間）の1日4回、世界中の新しい記事をまとめて更新します。予選や決勝が終わったあとの回では、結果と各国の反応を優先してお届けします。</p>
+      <p>レースのあとには、コラム「<a href="/lens/">WORLD MEDIA LENS</a>」も。世界の記事を読み比べて、日本語ではほぼ見かけない話と、見出しだけでは分からない“謎”を1レース1本でお届けします。</p>
     </div>
     </div>
     <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
