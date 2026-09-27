@@ -457,6 +457,14 @@ def build_lenses(arch, flag_map):
         L = load(os.path.join('lens', fn))
         if not L or not L.get('slug') or not ID_OK.match(L['slug']):
             continue
+        if L.get('draft'):
+            # drafts are not published: remove any page built earlier
+            old = os.path.join(ROOT, 'lens', L['slug'], 'index.html')
+            if os.path.exists(old):
+                os.remove(old)
+                try: os.rmdir(os.path.dirname(old))
+                except OSError: pass
+            continue
         slug = L['slug']
         url = f'{SITE}/lens/{slug}/'
         # the source desk: every article on the topic we already carry, plus the extra sources used here
@@ -532,6 +540,11 @@ def build_lenses(arch, flag_map):
         lenses.append((pub, slug, L, url))
 
     lenses.sort(key=lambda x: x[0], reverse=True)
+    if not lenses:
+        old = os.path.join(ROOT, 'lens', 'index.html')
+        if os.path.exists(old):
+            os.remove(old)
+        return []
     items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD MEDIA LENS</nav><h1>WORLD MEDIA LENS</h1>'
             '<p class="lead">1レースにつき1本。世界の媒体の記事を読み比べて、日本では見当たらなかった話と、見出しだけでは分からないことを日本語でまとめます。</p>'
