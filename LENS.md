@@ -20,10 +20,21 @@ Page: `lens/<slug>.json` → `python3 build.py` → `lens/<slug>/index.html` (li
 - Two or three choices. The answer box says what the evidence shows and what is still unconfirmed.
 
 ## 4. Write
-- `lens/<slug>.json` (copy `lens/baku-2026.json`): start with `"draft": true`, fill slug, topic, gpLabel, published, big, title, titleHtml, dek, unreported, mystery.
+- `lens/<slug>.json` (copy `lens/baku-2026.json`): start with `"draft": true`, fill slug, topic (or `topics`: a list, for columns that span several topics), gpLabel, published, big, title, titleHtml, dek, unreported, mystery.
 - `python3 build.py`, check the page on phone width, then remove `"draft"` when the owner says go.
 - note article: same 3 stories written for note (lighter tone, shorter), the mystery only as a teaser linking to the lens page for the answer and vote. Add `"noteUrl"` to the JSON once it is posted.
 
 ## 5. After publishing
 - X: poll post (no link), answer reply 24 h later with the lens link, note introduction post.
 - Next column: open with last race's vote result (GoatCounter events `lens/<slug>/vote/A|B`).
+
+## 6. Reserve columns (臨時号)
+Special issues on a news theme (not a race), written ahead and kept as drafts until the owner wants to run them.
+- Kept on the git branch `reserve` (not on `main`, so nothing reaches the site): `lens/<slug>.json` with `"draft": true` and `"gpLabel": "臨時号"`, plus the note manuscript and header image under `reserve/`. To publish, copy the JSON onto `main`. Even on `main`, a JSON with `"draft": true` is never built; `build.py` deletes any page left over from a draft.
+- Current reserves: `horner-ferrari-2026` (Horner / Ferrari), `honda-abroad-2026` (Aston Martin-Honda seen from abroad). Both were researched on 28 Sep 2026.
+- Before publishing a reserve, refresh it on the day:
+  1. Search again for new articles on the theme (English and non-English). If something big happened (an announcement, a denial, new data), update the stories and the mystery, or drop the reserve.
+  2. Re-run the Japanese check for all 3 stories. If a story is now covered in Japanese, replace it. Update the date in `unreported.note` and in the answer/caveat ("◯月◯日時点").
+  3. Re-open every original link (still online, same wording).
+  4. Fix time words that have gone stale (e.g. "10月22日発売予定" after the release, "今季ここまで17回" after the next race).
+  5. Set `published` to the real publish time, remove `"draft"`, run `python3 build.py`, check on phone width, and publish together with the note article (same steps as §4–5).

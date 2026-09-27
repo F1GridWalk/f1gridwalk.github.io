@@ -469,7 +469,7 @@ def build_lenses(arch, flag_map):
         url = f'{SITE}/lens/{slug}/'
         # the source desk: every article on the topic we already carry, plus the extra sources used here
         desk, seen = [], set()
-        topic_arts = sorted([a for a in arch['articles'].values() if a.get('topic') == L.get('topic') and a.get('kind') != 'fan'], key=when, reverse=True)
+        topic_arts = sorted([a for a in arch['articles'].values() if a.get('topic') in (L.get('topics') or [L.get('topic')]) and a.get('kind') != 'fan'], key=when, reverse=True)
         for a in topic_arts:
             desk.append({'source': a['source'], 'region': a.get('region'), 'lang': a.get('lang'), 'title': a['title'], 'url': a['url'], 'page': f'/news/{a["id"]}/'})
         for s in L.get('extraSources', []) + [it for it in L.get('unreported', {}).get('items', [])]:
