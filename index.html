@@ -1247,6 +1247,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
 /* "もっと見る" must not become the scroll anchor, or the page jumps to the end of the newly shown items */
 .feed-more,.lens-more,.more-link,.tl-more{overflow-anchor:none}
+
+/* personal analysis cards: say clearly who wrote it and where the link goes */
+.card .plat{font-size:12px;font-weight:700}
+.card .author{font-weight:700;color:var(--ink-2)}
+.card .note-dest{margin:0;font-size:12px !important;color:var(--muted) !important;-webkit-line-clamp:unset !important;display:block !important}
+.card .note-dest a{color:var(--ink-2);text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.kind.analysis{--k:#9E4E2B;border-color:var(--clay);color:var(--clay)}
+@media (max-width:600px){ .dash-main .card .card-meta .plat{font-size:10px} .dash-main .card .card-meta .author{font-size:10px} .card .note-dest{font-size:10.5px !important} }
 </style>
 
 <header class="top">
@@ -1780,13 +1788,20 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     it.appendChild(thumbFor(a, false));
     var meta = mk('div','card-meta');
     var kc = kindChip(a); if (kc) meta.appendChild(kc);
-    meta.appendChild(badge(a.source));
-    meta.appendChild(mk('span', 'rg', a.region));
+    if (a.isNote){
+      var pfl = { note:'note', substack:'Substack', blog:'個人ブログ' }[a.platform] || a.platform;
+      meta.appendChild(mk('span', 'plat plat-' + a.platform, a.platform === 'blog' && a.site ? a.site : pfl));
+      meta.appendChild(mk('span', 'author', a.author + (a.platform !== 'blog' && a.site && a.site !== a.author ? '（' + a.site + '）' : '')));
+    } else {
+      meta.appendChild(badge(a.source));
+      meta.appendChild(mk('span', 'rg', a.region));
+    }
     meta.appendChild(timeEl(a.published));
     it.appendChild(meta);
     var h = mk('h3'); h.appendChild(extLink(a.url, a.title)); it.appendChild(h);
     it.appendChild(mk('p', null, a.summary));
     if (a.orig) it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
+    if (a.isNote){ var host = ''; try { host = new URL(a.url).hostname.replace(/^www\./, ''); } catch(e){} var dst = mk('p','note-dest'); dst.appendChild(document.createTextNode('個人の見解です · リンク先 ')); dst.appendChild(extLink(a.url, host + ' ↗')); it.appendChild(dst); }
     if (!a.isNote && /^[a-z0-9][a-z0-9-]*$/.test(a.id || '')){ var pl = mk('a','perma','詳細・共有 ›'); pl.href = '/news/' + a.id + '/'; it.appendChild(pl); }
     var tt = tagsFor(a); if (tt) it.appendChild(tt);
     var foot = mk('div','card-foot');
@@ -2062,7 +2077,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var d = state.data; if (!d) return;
     var PLAT_JA = { note:'note', substack:'Substack', blog:'個人ブログ' };
     var notesAsArts = ((state.notes || {}).notes || []).filter(function(n){ return !n.paid; }).map(function(n){
-      return { id:n.id, isNote:true, kind:'analysis', lang:n.lang || 'ja', source:n.author, region:PLAT_JA[n.platform || 'note'] || n.platform, cat:n.cat, circuit:n.circuit, teams:n.teams, title:n.title, summary:n.summary, orig:n.orig, url:n.url, published:n.published };
+      return { id:n.id, isNote:true, platform:n.platform || 'note', site:n.site, author:n.author, kind:'analysis', lang:n.lang || 'ja', source:n.author, region:PLAT_JA[n.platform || 'note'] || n.platform, cat:n.cat, circuit:n.circuit, teams:n.teams, title:n.title, summary:n.summary, orig:n.orig, url:n.url, published:n.published };
     });
     var all = (d.articles || []).concat(notesAsArts).slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); });
     state.all = all;
@@ -2182,7 +2197,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     return d;
   }
   // one short label on every item, so what kind of information it is shows at a glance
-  var KIND = { primary:'一次情報', news:'報道', tech:'技術', rumor:'噂', fan:'ファン投稿', analysis:'分析' };
+  var KIND = { primary:'一次情報', news:'報道', tech:'技術', rumor:'噂', fan:'ファン投稿', analysis:'個人分析' };
   var KIND_TIP = { primary:'F1・FIA・チームなど当事者の公式発表', news:'報道機関の記事', tech:'技術の解説・分析記事', rumor:'報道で出たうわさ・未確認の話', fan:'ファン掲示板で話題の投稿（未確認を含む）', analysis:'個人による分析・考察（note・Substack・個人ブログ。報道ではなく個人の見解です）' };
   var PRIMARY_SRC = /^(Formula1\.com|F1公式|FIA)(\s|$)/i;
   function kindOf(a){ var k = a.kind || 'news'; if (k === 'news' && (a.primary || PRIMARY_SRC.test(a.source || ''))) return 'primary'; return KIND[k] ? k : 'news'; }
