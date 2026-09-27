@@ -1283,31 +1283,53 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 
 /* Small phones, second step: everything a little larger again (header excluded, it is sized to fit) */
 @media (max-width:520px){
-  .dash-main .card p,.dash-main .card:first-child p{font-size:15px !important;line-height:1.75}
-  .dash-main .card h3{font-size:17.5px !important}
-  .dash-main .card:first-child h3{font-size:20.5px !important}
-  .dash-main .card .card-meta,.dash-main .card .card-meta .srcbadge,.dash-main .card .card-meta time{font-size:12.5px !important}
-  .dash-main .card .card-meta .author,.dash-main .card .card-meta .plat{font-size:12px !important}
-  .dash-main .card .kind{font-size:11.5px !important;line-height:19px}
-  .dash-main .card .teamtag{font-size:12.5px !important}
-  .dash-main .card .perma,.dash-main .card .note-dest,.dash-main .card .note-dest a{font-size:13.5px !important}
+  .dash-main .card p,.dash-main .card:first-child p{font-size:16px !important;line-height:1.75}
+  .dash-main .card h3{font-size:18.5px !important}
+  .dash-main .card:first-child h3{font-size:21.5px !important}
+  .dash-main .card .card-meta,.dash-main .card .card-meta .srcbadge,.dash-main .card .card-meta time{font-size:14px !important}
+  .dash-main .card .card-meta .author,.dash-main .card .card-meta .plat{font-size:13.5px !important}
+  .dash-main .card .kind{font-size:12px !important;line-height:20px}
+  .dash-main .card .teamtag{font-size:13.5px !important}
+  .dash-main .card .perma,.dash-main .card .note-dest,.dash-main .card .note-dest a{font-size:14.5px !important}
   .sessions li b.sn,.sessions li span.t,.wk-eyebrow b{font-size:12px !important}
   .wk-title{font-size:15.5px !important}
-  .hero .chips span,.axes-toggle{font-size:12.5px !important}
-  .tw-lead{font-size:14px !important}
-  .tl-lang,.tcard .row2 span,.num-t span,.num-t b small,.nums .num-t span{font-size:12.5px !important}
-  .cal .rd span.rn,.cal .rd span.w,.cal .rd span.w b,.cal .rd span.d{font-size:13.5px !important}
+  .hero .chips span,.axes-toggle{font-size:13.5px !important}
+  .tw-lead{font-size:15px !important}
+  .tl-lang,.tcard .row2 span,.num-t span,.num-t b small,.nums .num-t span{font-size:13.5px !important}
+  .cal .rd span.rn,.cal .rd span.w,.cal .rd span.w b,.cal .rd span.d{font-size:14.5px !important}
   .cal .rd span.g{font-size:14.5px !important}
-  .stand .srow span,.stand .sub,#wins .wrow span,#wins .wrow b,details summary b,details summary span{font-size:13.5px !important}
-  .band-head .count,.panel p{font-size:13px !important}
-  .seg button,.filt-toggle span,.stand-tabs button{font-size:13.5px !important}
-  .tlinks li a{font-size:14px !important}
-  .tlinks .srcbadge,.srow2 b,.srow2 .srcbadge,#bars .bar span{font-size:13.5px !important}
-  .jump .wrap a{font-size:14px !important}
-  #count,.site-url span,.site-url code,#cal-note{font-size:14px !important}
-  footer .foot-note,footer .foot-brand div,.foot-archive a{font-size:13.5px !important}
+  .stand .srow span,.stand .sub,#wins .wrow span,#wins .wrow b,details summary b,details summary span{font-size:14.5px !important}
+  .band-head .count,.panel p{font-size:14px !important}
+  .seg button,.filt-toggle span,.stand-tabs button{font-size:14.5px !important}
+  .tlinks li a{font-size:15px !important}
+  .tlinks .srcbadge,.srow2 b,.srow2 .srcbadge,#bars .bar span{font-size:14.5px !important}
+  .jump .wrap a{font-size:15px !important}
+  #count,.site-url span,.site-url code,#cal-note{font-size:15px !important}
+  footer .foot-note,footer .foot-brand div,.foot-archive a{font-size:14.5px !important}
   #feed .feed-more{font-size:15px !important}
 }
+
+/* Small phones: header in two rows so nothing runs off the right edge
+   row 1 = logo + share button, row 2 = update times across the full width */
+@media (max-width:420px){
+  .top .wrap{flex-wrap:wrap !important;row-gap:6px;column-gap:10px;padding-block:10px 8px}
+  .top-right{display:contents}
+  .top .brand{order:1;flex:1 1 auto;min-width:0}
+  .top .share{order:2;flex:0 0 auto}
+  .top .status{order:3;flex:1 0 100%;justify-content:flex-start;font-size:12.5px !important;gap:6px;padding-top:6px;border-top:1px solid var(--line-soft);white-space:nowrap}
+  .top .status .dot{width:7px;height:7px}
+  .sh-long{display:none}
+  .top .copybtn{font-size:13.5px !important;min-height:34px;padding:0 14px}
+  .brand svg{width:38px !important;height:38px !important}
+  .brand-name{font-size:22px !important}
+  .brand-f1{font-size:10px !important}
+  .brand-desk{font-size:9px !important;letter-spacing:.16em}
+  .tw-h.tw-h-lens{white-space:nowrap;gap:8px}
+  .hero .axes-toggle{font-size:12.5px !important;padding:0 4px 0 10px;gap:5px}
+  .seg{display:flex;width:100%}
+  .seg button{flex:1 1 auto;padding:0 6px;white-space:nowrap;font-size:13.5px !important}
+}
+@media (max-width:360px){ .tw-h.tw-h-lens{flex-wrap:wrap;row-gap:8px} .hero .axes-toggle{margin-left:0} }
 </style>
 
 <header class="top">
@@ -1326,7 +1348,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
     <div class="top-right">
     <div class="share">
-      <button type="button" class="copybtn" id="share-btn" aria-haspopup="true" aria-expanded="false" aria-controls="share-menu">このサイトを共有 <span aria-hidden="true">▾</span></button>
+      <button type="button" class="copybtn" id="share-btn" aria-haspopup="true" aria-expanded="false" aria-controls="share-menu"><span class="sh-long">このサイトを</span>共有 <span aria-hidden="true">▾</span></button>
       <div class="share-menu" id="share-menu" role="menu" hidden>
         <a role="menuitem" data-share="x" target="_blank" rel="noopener"><b>X</b><span>ポストする</span></a>
         <a role="menuitem" data-share="line" target="_blank" rel="noopener"><b>LINE</b><span>友だちに送る</span></a>
