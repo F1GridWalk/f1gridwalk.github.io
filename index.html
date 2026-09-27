@@ -1587,6 +1587,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       ls.appendChild(mk('p','tw-lead','このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。'));
       var rows = [];
       lens.groups.forEach(function(g){
+        if (g.scope === 'wire' || g.scope === 'official') return;
         var gArts = (g.ids || []).map(function(id){ return byId[id]; }).filter(Boolean);
         if (g.scope === 'others'){
           gArts.forEach(function(a){
@@ -1630,7 +1631,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         tb.appendChild(r);
       });
       ax.appendChild(tb);
-      ax.appendChild(mk('p','lens-note','国別の傾向は、同じ国の2媒体以上で切り口が共通するときだけまとめています。1媒体だけのときは媒体名で示し、通信社の配信記事は掲載した媒体の国ではなく「国際通信」として扱います。好意的・否定的といった点数づけはせず、何を中心に据えたかだけを比べています。媒体名を押すと元の記事が開きます。'));
+      ax.appendChild(mk('p','lens-note','国別の傾向は、同じ国の2媒体以上で切り口が共通するときだけまとめています。1媒体だけのときは媒体名で示しています。通信社の配信記事とF1公式の記事は比較に含めていません。好意的・否定的といった点数づけはせず、何を中心に据えたかだけを比べています。媒体名を押すと元の記事が開きます。'));
       ls.appendChild(ax);
       box.appendChild(ls);
     }
