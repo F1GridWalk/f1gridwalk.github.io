@@ -502,11 +502,11 @@ def build_lenses(arch, flag_map):
             also = ''
             if it.get('also'):
                 also = '<span class="also">同じ話を伝えた媒体：' + '、'.join(lens_src_link(x, flag_map, region_of) for x in it['also']) + '</span>'
-            B.append(f'<article class="uc"><div class="ucn">NO.{i:02d}</div>'
+            B.append(f'<article class="uc">'
                      f'<div class="ucm"><span class="bigflag" data-c="{cc}"></span><div><b>{e(it["source"])}</b><small>{e(it.get("region", ""))} · {e(LANG.get(it.get("lang"), ""))}</small></div>'
                      f'<span class="kind {k}" title="{e(KIND_TIP.get(k, ""))}">{KIND.get(k, "報道")}</span></div>'
                      f'<h3>{e(it["headline"])}</h3><p>{e(it["body"])}</p>'
-                     f'<div class="ucf"><span class="stamp">日本語の記事 見当たらず</span>'
+                     f'<div class="ucf">'
                      f'<a href="{e(it["url"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/{i}">原文を読む（{e(it["source"])}）↗</a>{also}</div></article>')
         B.append(f'<p class="lens-note">{e(U["note"])}</p></section>')
 
