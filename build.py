@@ -309,7 +309,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                          f'{n_src}媒体' if n_src > 1 else '')
                 pts = ''.join(f'<li>{e(p)}</li>' for p in (g.get('points') or [])[:3])
                 links = ''.join(f'<li data-c="{flag_of(x)}"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>{ext(x["url"], e(x["title"]))}</li>' for x in g_arts)
-                cols.append(f'<article class="lens-col{" cut" if gi >= 3 else ""}" data-c="{fc}"><div class="lens-who">{flag}{e(g.get("label", ""))}'
+                cols.append(f'<article class="lens-col" data-c="{fc}"><div class="lens-who">{flag}{e(g.get("label", ""))}'
                             + (f'<small>{small}</small>' if small else '') + '</div>'
                             f'<p class="lens-focus"><small>焦点</small>{e(g.get("focus", ""))}</p>'
                             + (f'<ul class="lens-pts">{pts}</ul>' if pts else '')

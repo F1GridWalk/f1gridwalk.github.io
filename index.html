@@ -1058,7 +1058,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .tw-lead{margin:0 0 10px;font-size:12.5px;color:var(--muted);line-height:1.7}
 .tw-sec.lens{margin-top:8px}
 .tw-h.tw-h-lens{position:relative;border-top:0;margin-top:0;padding-top:30px}
-.tw-h.tw-h-lens::before{content:"";position:absolute;left:5px;top:0;bottom:calc(.7em + 6px);border-left:2px solid var(--clay)}
+.tw-h.tw-h-lens::before{content:"";position:absolute;left:5px;top:0;height:calc(30px + .7em - 6px);border-left:2px solid var(--clay)}
 .tw-dot{width:12px;height:12px;border-radius:50%;background:var(--clay);align-self:center;flex-shrink:0;margin-right:2px}
 /* world articles */
 .tw-list li{display:flex !important;flex-direction:column;align-items:flex-start !important;gap:4px !important;text-align:left}
@@ -1072,22 +1072,22 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .tw-list .tl-prov{align-self:flex-start;font-size:11px;color:var(--ink-2);padding:1px 8px;border-radius:6px;background:var(--tint);line-height:1.8}
 .tw-list .tl-prov b{font-weight:700}
 /* lens columns */
-.lens-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:10px}
-.lens-col{display:flex;flex-direction:column;gap:8px;min-width:0;padding:14px 16px 12px;border-radius:18px;background:var(--surface);border:1px solid var(--line-soft);border-top:4px solid var(--c,var(--ink))}
+.lens-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
+.lens-col{display:flex;flex-direction:column;gap:5px;min-width:0;padding:10px 13px 8px;border-radius:14px;background:var(--surface);border:1px solid var(--line-soft);border-top:3px solid var(--c,var(--ink))}
 .lens-col.cut{display:none}
-.lens-who{display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;font-size:14px;font-weight:700;color:var(--ink)}
-.lens-who small{font-size:11.5px;font-weight:500;color:var(--muted)}
-.lens-flag{width:20px;height:14px;border-radius:3px;flex-shrink:0;background:var(--flag,var(--c,var(--ink)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
-.lens-flag.icon{background:none;box-shadow:none;width:18px;height:18px;color:var(--c,var(--ink-2))}
-.lens-flag.icon svg{width:18px;height:18px;display:block}
+.lens-who{display:flex;align-items:center;flex-wrap:wrap;gap:3px 7px;font-size:12.5px;font-weight:700;color:var(--ink)}
+.lens-who small{font-size:10.5px;font-weight:500;color:var(--muted)}
+.lens-flag{width:16px;height:11px;border-radius:3px;flex-shrink:0;background:var(--flag,var(--c,var(--ink)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.lens-flag.icon{background:none;box-shadow:none;width:15px;height:15px;color:var(--c,var(--ink-2))}
+.lens-flag.icon svg{width:15px;height:15px;display:block}
 .lens-scope{font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:0 7px;border-radius:5px;line-height:18px;border:1px solid var(--chip-line);color:var(--ink-2)}
-.lens-focus{margin:2px 0 0;font-size:19px;font-weight:700;line-height:1.45;color:var(--ink)}
-.lens-focus small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--muted);margin-bottom:1px}
+.lens-focus{margin:0;font-size:15.5px;font-weight:700;line-height:1.45;color:var(--ink)}
+.lens-focus small{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin-right:6px;vertical-align:1px;font-family:var(--sans)}
 .lens-pts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px}
-.lens-pts li{position:relative;padding-left:14px;font-size:13px;line-height:1.65;color:var(--ink-2)}
-.lens-pts li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--c,var(--ink-2))}
-.lens-agree{font-size:11.5px;color:var(--muted)}
-.lens-src{margin-top:auto;border-top:1px solid var(--line-soft);padding-top:8px;font-size:12.5px}
+.lens-pts li{position:relative;padding-left:12px;font-size:12px;line-height:1.6;color:var(--ink-2)}
+.lens-pts li::before{content:"";position:absolute;left:1px;top:.7em;width:4px;height:4px;border-radius:50%;background:var(--c,var(--ink-2))}
+.lens-agree{font-size:10.5px;color:var(--muted)}
+.lens-src{margin-top:auto;border-top:1px solid var(--line-soft);padding-top:6px;font-size:11.5px}
 .lens-src summary{cursor:pointer;list-style:none;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;gap:8px}
 .lens-src summary::-webkit-details-marker{display:none}
 .lens-src summary::after{content:"→";transition:transform .15s}
@@ -1100,12 +1100,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .lens-more{margin:10px 0 0;min-height:36px;padding:0 16px;border-radius:18px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .lens-more:hover{background:var(--ink);color:var(--paper)}
 /* four yardsticks */
-.lens-axes{margin:12px 0 0;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.lens-axes summary{cursor:pointer;padding:10px 14px;font-size:13px;font-weight:700;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:10px}
-.lens-axes summary::-webkit-details-marker{display:none}
-.lens-axes summary span{font-weight:500;color:var(--muted);font-size:12px}
-.lens-axes summary::after{content:"＋";font-weight:700}
-.lens-axes[open] summary::after{content:"−"}
+.axes-toggle{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:0 5px 0 13px;border-radius:16px;border:1px solid var(--chip-line);background:var(--surface);color:var(--ink);font:inherit;font-size:12.5px;font-weight:700;letter-spacing:0;cursor:pointer;white-space:nowrap}
+.axes-toggle:hover{border-color:var(--ink)}
+.axes-toggle .pm{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:15px;font-weight:700;line-height:1}
+.axes-toggle[aria-expanded="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.axes-toggle[aria-expanded="true"] .pm{background:var(--paper);color:var(--ink)}
+.lens-axes{margin:4px 0 12px;padding-top:4px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.lens-axes[hidden]{display:none}
 .axes{padding:0 14px 10px;font-size:12.5px}
 .axes-row{display:grid;grid-template-columns:150px repeat(4,minmax(0,1fr));gap:10px;padding:8px 0;border-top:1px solid var(--line-soft);align-items:start;line-height:1.6}
 .axes-row.head{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--muted);border-top:0}
@@ -1128,9 +1129,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .wrap.dash .hero .tw-list .tl-title{font-size:15px}
   .wrap.dash .hero .tw-list .tl-top .srcbadge{font-size:11px;font-weight:700;opacity:1}
   .wrap.dash .hero .tw-list .tl-top .srcbadge::before{width:13px;height:9px}
-  .wrap.dash .dash-main .hero .lens-focus{font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:22px;line-height:1.4}
+  .wrap.dash .dash-main .hero .lens-focus{font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.4}
   .wrap.dash .hero .tw-h{font-size:21px;margin-top:34px;padding-top:22px}
   .wrap.dash .hero .tw-h.tw-h-lens{font-size:24px;margin-top:0;padding-top:34px}
+  .wrap.dash .hero .tw-h.tw-h-lens::before{height:calc(34px + .7em - 6px)}
 }
 @media (max-width:1000px){
   .trend-list.tw-list{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -1147,7 +1149,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .tw-h{font-size:15.5px;margin-top:18px;padding-top:12px}
   .tw-h.tw-h-lens{font-size:17px;margin-top:0;padding-top:24px}
   .tw-dot{width:10px;height:10px}
-  .tw-h.tw-h-lens::before{left:4px;bottom:calc(.7em + 5px)}
+  .tw-h.tw-h-lens::before{left:4px;height:calc(24px + .7em - 5px)}
+  .tw-h.tw-h-lens{flex-wrap:nowrap}
+  .tw-h.tw-h-lens .en{display:none}
   .tw-h .tw-n{width:20px;height:20px;font-size:11px}
   .tw-h .en{font-size:10.5px}
   .tw-list .tl-top{font-size:10px}
@@ -1155,12 +1159,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .tw-list .tl-angle{font-size:11px}
   .tw-list .tl-prov{font-size:10px;padding:0 6px}
   .lens-cols{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-12px;padding:2px 12px 8px;scrollbar-width:thin}
-  .lens-col,.lens-col.cut{flex:0 0 82%;scroll-snap-align:start;padding:12px 14px 10px;border-radius:16px}
-  .lens-focus{font-size:17px}
-  .lens-pts li{font-size:12.5px}
+  .lens-col,.lens-col.cut{flex:0 0 68%;scroll-snap-align:start;padding:9px 11px 7px;border-radius:12px}
+  .lens-focus{font-size:14.5px}
+  .lens-pts li{font-size:11.5px}
+  .axes-toggle{font-size:11px;min-height:28px;padding:0 4px 0 10px;gap:6px}
+  .axes-toggle .pm{width:19px;height:19px;font-size:13px}
   .axes{padding:0 12px 8px}
   .axes-row{grid-template-columns:1fr;gap:2px}
   .axes-row.head{display:none}
+  .axes-row.head+.axes-row{border-top:0}
   .axes-row>span[data-k]::before{content:attr(data-k) "：";font-weight:700;color:var(--muted);font-size:11px}
   .tw-rows{grid-template-columns:1fr}
   .tw-rows a.t{font-size:13.5px}
@@ -1234,7 +1241,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の14媒体が報道</span></div>
 <div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0" target="_blank" rel="noopener noreferrer">ラッセルがバクーで勝利、フェルスタッペンが0.196秒差まで迫る</a></h1><p class="hero-sum trend-sum">ポールスタートのラッセルが、2度のセーフティカーが出た荒れたアゼルバイジャンGPを制した。8番グリッドから追い上げたフェルスタッペンは最後の長い直線で迫り、差はわずか0.196秒。ケガからの復帰戦のハジャーが3位に入り、レッドブルが2台表彰台に上った。再スタートでの同士討ちなどで7台がリタイアする中、予選でクラッシュしたアントネッリは16番手から5位まで挽回して首位を守り、ピアストリはロックアップで入賞圏外に落ちた。</p><div class="meta trend-read"><a class="read" href="https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0" target="_blank" rel="noopener noreferrer">Formula1.comの記事を読む ↗</a></div></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p><div class="lens-cols"><article class="lens-col" data-c="gb"><div class="lens-who"><span class="lens-flag" data-c="gb"></span>英国系メディア<small>5媒体</small></div><p class="lens-focus"><small>焦点</small>ラッセルの完成度</p><ul class="lens-pts"><li>ポールから主導権を握ったポール・トゥ・ウィン</li><li>“勝者と敗者”形式でレース全体を採点</li><li>RacingNews365はフェルスタッペン、Motorsport Weekはアントネッリの談話を個別に掘り下げ</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="gb"><span class="srcbadge" data-c="gb">Autosport</span><a href="https://www.autosport.com/f1/news/f1-azerbaijan-gp-russell-fends-off-verstappen-for-victory-colapinto-takes-out-gasly-and-norris/10859225/" target="_blank" rel="noopener noreferrer">ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">The Race</span><a href="https://www.the-race.com/formula-1/winners-and-losers-from-f1s-2026-azerbaijan-grand-prix/" target="_blank" rel="noopener noreferrer">アゼルバイジャンGPの勝者と敗者。ラッセルは「キャリア最高の週末」、アルピーヌとマクラーレンは無得点</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">Motorsport.com</span><a href="https://www.motorsport.com/f1/news/winners-losers-f1-azerbaijan-grand-prix-street-brawl/10859378/" target="_blank" rel="noopener noreferrer">バクーの勝者と敗者。ペレスが会心の週末、ボッタスとアストンは総崩れ</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">RacingNews365</span><a href="https://racingnews365.com/max-verstappen-not-enough-reaction-after-agonising-baku-near-miss" target="_blank" rel="noopener noreferrer">フェルスタッペン「届かなかった」。8番手から追い上げ、0.196秒差の2位に悔しさ</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">Motorsport Week</span><a href="https://www.motorsportweek.com/2026/09/26/kimi-antonelli-drove-like-grandmother-in-baku/" target="_blank" rel="noopener noreferrer">アントネッリ「まるで祖母の運転」。ダメージ抱えた16番手からの慎重な追い上げ</a></li></ul></details></article><article class="lens-col" data-c="de"><div class="lens-who"><span class="lens-flag" data-c="de"></span>ドイツ系メディア<small>3媒体</small></div><p class="lens-focus"><small>焦点</small>ゴール寸前の攻防</p><ul class="lens-pts"><li>3媒体とも見出しで僅差の決着を強調</li><li>ボッタスのクラッシュ後のSCが接戦を生んだと説明</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="de"><span class="srcbadge" data-c="de">Motorsport-Magazin</span><a href="https://www.motorsport-magazin.com/formel1/news-300448-formel-1-spaetes-chaos-in-baku-russell-rettet-sieg-vor-verstappen/" target="_blank" rel="noopener noreferrer">終盤のボッタスでラッセルの勝利が危うく。フェルスタッペンはゴールライン手前で届かず</a></li><li data-c="de"><span class="srcbadge" data-c="de">Sportschau</span><a href="https://www.sportschau.de/motorsport/formel1/russell-hauchduenn-sieger-vor-verstappen-in-baku,bericht-formel-1-baku-rennen-100.html" target="_blank" rel="noopener noreferrer">ラッセル、紙一重でフェルスタッペンを抑えてバクーで勝利</a></li><li data-c="de"><span class="srcbadge" data-c="de">F1-Insider</span><a href="https://f1-insider.com/formel-1-baku-ergebnis-fotofinish-verstappen-82391/" target="_blank" rel="noopener noreferrer">バクーで写真判定級の決着。ラッセルが0.196秒差でフェルスタッペンを退ける</a></li></ul></details></article><article class="lens-col" data-c="nl"><div class="lens-who"><span class="lens-flag" data-c="nl"></span>GPblog<small>オランダ</small></div><p class="lens-focus"><small>焦点</small>レッドブルが逃した勝機</p><ul class="lens-pts"><li>8番グリッドになった原因を予選のPU不調に求める</li><li>メルセデスのアップデート前の“最後の勝機”と位置づけ</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="nl"><span class="srcbadge" data-c="nl">GPblog</span><a href="https://www.gpblog.com/en/analysis/red-bull-denied-verstappen-his-last-chance-at-a-win-in-2026" target="_blank" rel="noopener noreferrer">フェルスタッペンが逃した“今季最後の勝機”。原因はレッドブル側にあると指摘</a></li></ul></details></article><article class="lens-col cut" data-c="xx"><div class="lens-who"><span class="lens-flag icon"></span>国際通信<small>Reuters配信</small></div><p class="lens-focus"><small>焦点</small>結果と選手権</p><ul class="lens-pts"><li>ラッセルがポール・トゥ・ウィン</li><li>首位アントネッリとの差が15点縮まり66点に</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="qa"><span class="srcbadge" data-c="qa">Al Jazeera</span><a href="https://www.aljazeera.com/sports/2026/9/26/russell-edges-out-verstappen-to-win-in-baku-antonelli-settles-for-fifth" target="_blank" rel="noopener noreferrer">ラッセルが僅差でバクー制覇、首位アントネッリは5位で差は66点に</a></li></ul></details></article><article class="lens-col cut" data-c="xx"><div class="lens-who"><span class="lens-flag icon"></span>F1公式</div><p class="lens-focus"><small>焦点</small>僅差の決着と本人の声</p><ul class="lens-pts"><li>レースリポートは“ゴール線上”の僅差を強調</li><li>別記事でフェルスタッペン本人の振り返りを掲載</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="gb"><span class="srcbadge" data-c="gb">Formula1.com</span><a href="https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0" target="_blank" rel="noopener noreferrer">ラッセル、終盤の猛追をかわしてバクー制覇。フェルスタッペンは約0.1秒差の2位</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">Formula1.com</span><a href="https://www.formula1.com/en/latest/article/i-was-trying-everything-verstappen-gives-verdict-after-missing-out-on-azerbaijan-gp-victory.6M9zlnYYDH8w4AnRIninDX" target="_blank" rel="noopener noreferrer">フェルスタッペン「できることは全部やった」0.1秒差の2位に悔しさ</a></li></ul></details></article><article class="lens-col cut" data-c="xx"><div class="lens-who"><span class="lens-flag icon"></span>そのほかの媒体<small>3媒体</small></div><p class="lens-focus"><small>焦点</small>媒体ごとに異なる切り口</p><ul class="lens-pts"><li>A Bola（ポルトガル）：ラッセルの「支配」を見出しに</li><li>Motorsport.com France：フランス人ハジャーの表彰台も見出しに</li><li>Formula1-Data（日本）：7台リタイアと同士討ちの大荒れを強調</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="pt"><span class="srcbadge" data-c="pt">A Bola</span><a href="https://www.abola.pt/noticias/gp-baku-russell-domina-e-vence-corrida-acidentada-2026092612571795034" target="_blank" rel="noopener noreferrer">ラッセルが波乱のバクーを制覇。ポルトガル紙も圧倒的な強さを伝える</a></li><li data-c="fr"><span class="srcbadge" data-c="fr">Motorsport.com France</span><a href="https://fr.motorsport.com/f1/news/russell-resiste-verstappen-victoire-hadjar-podium-bakou/10859201/" target="_blank" rel="noopener noreferrer">0.196秒差でフェルスタッペンを退けラッセルがバクー制覇、ハジャーが復帰後初表彰台</a></li><li data-c="jp"><span class="srcbadge" data-c="jp">Formula1-Data</span><a href="https://formula1-data.com/article/azerbaijan-race-digest-2026" target="_blank" rel="noopener noreferrer">7台がリタイアした大荒れのバクー。ラッセルが0.196秒差で制す</a></li></ul></details></article></div></section>
+<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。</p><div class="lens-cols"><article class="lens-col" data-c="gb"><div class="lens-who"><span class="lens-flag" data-c="gb"></span>英国系メディア<small>5媒体</small></div><p class="lens-focus"><small>焦点</small>ラッセルの完成度</p><ul class="lens-pts"><li>ポールから主導権を握ったポール・トゥ・ウィン</li><li>“勝者と敗者”形式でレース全体を採点</li><li>RacingNews365はフェルスタッペン、Motorsport Weekはアントネッリの談話を個別に掘り下げ</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="gb"><span class="srcbadge" data-c="gb">Autosport</span><a href="https://www.autosport.com/f1/news/f1-azerbaijan-gp-russell-fends-off-verstappen-for-victory-colapinto-takes-out-gasly-and-norris/10859225/" target="_blank" rel="noopener noreferrer">ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">The Race</span><a href="https://www.the-race.com/formula-1/winners-and-losers-from-f1s-2026-azerbaijan-grand-prix/" target="_blank" rel="noopener noreferrer">アゼルバイジャンGPの勝者と敗者。ラッセルは「キャリア最高の週末」、アルピーヌとマクラーレンは無得点</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">Motorsport.com</span><a href="https://www.motorsport.com/f1/news/winners-losers-f1-azerbaijan-grand-prix-street-brawl/10859378/" target="_blank" rel="noopener noreferrer">バクーの勝者と敗者。ペレスが会心の週末、ボッタスとアストンは総崩れ</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">RacingNews365</span><a href="https://racingnews365.com/max-verstappen-not-enough-reaction-after-agonising-baku-near-miss" target="_blank" rel="noopener noreferrer">フェルスタッペン「届かなかった」。8番手から追い上げ、0.196秒差の2位に悔しさ</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">Motorsport Week</span><a href="https://www.motorsportweek.com/2026/09/26/kimi-antonelli-drove-like-grandmother-in-baku/" target="_blank" rel="noopener noreferrer">アントネッリ「まるで祖母の運転」。ダメージ抱えた16番手からの慎重な追い上げ</a></li></ul></details></article><article class="lens-col" data-c="de"><div class="lens-who"><span class="lens-flag" data-c="de"></span>ドイツ系メディア<small>3媒体</small></div><p class="lens-focus"><small>焦点</small>ゴール寸前の攻防</p><ul class="lens-pts"><li>3媒体とも見出しで僅差の決着を強調</li><li>ボッタスのクラッシュ後のSCが接戦を生んだと説明</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="de"><span class="srcbadge" data-c="de">Motorsport-Magazin</span><a href="https://www.motorsport-magazin.com/formel1/news-300448-formel-1-spaetes-chaos-in-baku-russell-rettet-sieg-vor-verstappen/" target="_blank" rel="noopener noreferrer">終盤のボッタスでラッセルの勝利が危うく。フェルスタッペンはゴールライン手前で届かず</a></li><li data-c="de"><span class="srcbadge" data-c="de">Sportschau</span><a href="https://www.sportschau.de/motorsport/formel1/russell-hauchduenn-sieger-vor-verstappen-in-baku,bericht-formel-1-baku-rennen-100.html" target="_blank" rel="noopener noreferrer">ラッセル、紙一重でフェルスタッペンを抑えてバクーで勝利</a></li><li data-c="de"><span class="srcbadge" data-c="de">F1-Insider</span><a href="https://f1-insider.com/formel-1-baku-ergebnis-fotofinish-verstappen-82391/" target="_blank" rel="noopener noreferrer">バクーで写真判定級の決着。ラッセルが0.196秒差でフェルスタッペンを退ける</a></li></ul></details></article><article class="lens-col" data-c="nl"><div class="lens-who"><span class="lens-flag" data-c="nl"></span>GPblog<small>オランダ</small></div><p class="lens-focus"><small>焦点</small>レッドブルが逃した勝機</p><ul class="lens-pts"><li>8番グリッドになった原因を予選のPU不調に求める</li><li>メルセデスのアップデート前の“最後の勝機”と位置づけ</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="nl"><span class="srcbadge" data-c="nl">GPblog</span><a href="https://www.gpblog.com/en/analysis/red-bull-denied-verstappen-his-last-chance-at-a-win-in-2026" target="_blank" rel="noopener noreferrer">フェルスタッペンが逃した“今季最後の勝機”。原因はレッドブル側にあると指摘</a></li></ul></details></article><article class="lens-col" data-c="xx"><div class="lens-who"><span class="lens-flag icon"></span>国際通信<small>Reuters配信</small></div><p class="lens-focus"><small>焦点</small>結果と選手権</p><ul class="lens-pts"><li>ラッセルがポール・トゥ・ウィン</li><li>首位アントネッリとの差が15点縮まり66点に</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="qa"><span class="srcbadge" data-c="qa">Al Jazeera</span><a href="https://www.aljazeera.com/sports/2026/9/26/russell-edges-out-verstappen-to-win-in-baku-antonelli-settles-for-fifth" target="_blank" rel="noopener noreferrer">ラッセルが僅差でバクー制覇、首位アントネッリは5位で差は66点に</a></li></ul></details></article><article class="lens-col" data-c="xx"><div class="lens-who"><span class="lens-flag icon"></span>F1公式</div><p class="lens-focus"><small>焦点</small>僅差の決着と本人の声</p><ul class="lens-pts"><li>レースリポートは“ゴール線上”の僅差を強調</li><li>別記事でフェルスタッペン本人の振り返りを掲載</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="gb"><span class="srcbadge" data-c="gb">Formula1.com</span><a href="https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0" target="_blank" rel="noopener noreferrer">ラッセル、終盤の猛追をかわしてバクー制覇。フェルスタッペンは約0.1秒差の2位</a></li><li data-c="gb"><span class="srcbadge" data-c="gb">Formula1.com</span><a href="https://www.formula1.com/en/latest/article/i-was-trying-everything-verstappen-gives-verdict-after-missing-out-on-azerbaijan-gp-victory.6M9zlnYYDH8w4AnRIninDX" target="_blank" rel="noopener noreferrer">フェルスタッペン「できることは全部やった」0.1秒差の2位に悔しさ</a></li></ul></details></article><article class="lens-col" data-c="xx"><div class="lens-who"><span class="lens-flag icon"></span>そのほかの媒体<small>3媒体</small></div><p class="lens-focus"><small>焦点</small>媒体ごとに異なる切り口</p><ul class="lens-pts"><li>A Bola（ポルトガル）：ラッセルの「支配」を見出しに</li><li>Motorsport.com France：フランス人ハジャーの表彰台も見出しに</li><li>Formula1-Data（日本）：7台リタイアと同士討ちの大荒れを強調</li></ul><details class="lens-src"><summary>記事を見る</summary><ul><li data-c="pt"><span class="srcbadge" data-c="pt">A Bola</span><a href="https://www.abola.pt/noticias/gp-baku-russell-domina-e-vence-corrida-acidentada-2026092612571795034" target="_blank" rel="noopener noreferrer">ラッセルが波乱のバクーを制覇。ポルトガル紙も圧倒的な強さを伝える</a></li><li data-c="fr"><span class="srcbadge" data-c="fr">Motorsport.com France</span><a href="https://fr.motorsport.com/f1/news/russell-resiste-verstappen-victoire-hadjar-podium-bakou/10859201/" target="_blank" rel="noopener noreferrer">0.196秒差でフェルスタッペンを退けラッセルがバクー制覇、ハジャーが復帰後初表彰台</a></li><li data-c="jp"><span class="srcbadge" data-c="jp">Formula1-Data</span><a href="https://formula1-data.com/article/azerbaijan-race-digest-2026" target="_blank" rel="noopener noreferrer">7台がリタイアした大荒れのバクー。ラッセルが0.196秒差で制す</a></li></ul></details></article></div></section>
 <section class="tw-sec" id="tw-articles"><h2 class="tw-h">世界の記事<small>14媒体 · 15本</small></h2><ul class="trend-list tw-list"><li data-c="nl"><div class="tl-top"><span class="srcbadge" data-c="nl">GPblog</span><span class="dot rgn">オランダ</span><span class="dot">英語</span><span class="dot">分析</span></div><a class="tl-title" href="https://www.gpblog.com/en/analysis/red-bull-denied-verstappen-his-last-chance-at-a-win-in-2026" target="_blank" rel="noopener noreferrer"><span class="kind news" style="margin-right:6px">報道</span>フェルスタッペンが逃した“今季最後の勝機”。原因はレッドブル側にあると指摘</a><div class="tl-angle"><b>主要焦点</b>フェルスタッペン／勝機を逃した理由</div></li><li data-c="gb"><div class="tl-top"><span class="srcbadge" data-c="gb">Motorsport.com</span><span class="dot rgn">イギリス</span><span class="dot">英語</span><span class="dot">総括</span></div><a class="tl-title" href="https://www.motorsport.com/f1/news/winners-losers-f1-azerbaijan-grand-prix-street-brawl/10859378/" target="_blank" rel="noopener noreferrer"><span class="kind news" style="margin-right:6px">報道</span>バクーの勝者と敗者。ペレスが会心の週末、ボッタスとアストンは総崩れ</a><div class="tl-angle"><b>主要焦点</b>各チーム／勝者と敗者の採点</div></li><li data-c="de"><div class="tl-top"><span class="srcbadge" data-c="de">Motorsport-Magazin</span><span class="dot rgn">ドイツ</span><span class="dot">ドイツ語</span><span class="dot">レポート</span></div><a class="tl-title" href="https://www.motorsport-magazin.com/formel1/news-300448-formel-1-spaetes-chaos-in-baku-russell-rettet-sieg-vor-verstappen/" target="_blank" rel="noopener noreferrer"><span class="kind news" style="margin-right:6px">報道</span>終盤のボッタスでラッセルの勝利が危うく。フェルスタッペンはゴールライン手前で届かず</a><div class="tl-angle"><b>主要焦点</b>ラッセル／終盤の攻防</div></li></ul></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
@@ -1578,7 +1585,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       ls.appendChild(lh);
       ls.appendChild(mk('p','tw-lead','このニュースを、世界の媒体はどう伝えたか。各記事の主役・焦点・原因の説明・見出しの強調点を読み比べました。'));
       var cols = mk('div','lens-cols');
-      var LENS_FIRST = 3;
+      var LENS_FIRST = 99;
       lens.groups.forEach(function(g, gi){
         var gArts = (g.ids || []).map(function(id){ return byId[id]; }).filter(Boolean);
         var srcs = {}; gArts.forEach(function(a){ srcs[a.source] = 1; });
@@ -1621,8 +1628,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       }
       var axGroups = lens.groups.filter(function(g){ return g.scope !== 'others' && (g.lead || g.cause || g.hook); });
       if (axGroups.length){
-        var ax = mk('details','lens-axes');
-        var axs = mk('summary', null, '4つの物差しで比べる'); axs.appendChild(mk('span', null, '主役・焦点・原因・見出しの強調点')); ax.appendChild(axs);
+        var ax = mk('div','lens-axes'); ax.id = 'lens-axes'; ax.hidden = true;
+        var axb = mk('button','axes-toggle'); axb.type = 'button';
+        axb.setAttribute('aria-expanded','false'); axb.setAttribute('aria-controls','lens-axes');
+        axb.title = '主役・焦点・原因の説明・見出しの強調点で比べる';
+        axb.appendChild(document.createTextNode('4つの物差しで比べる')); var axi = mk('span','pm','+'); axb.appendChild(axi);
+        axb.addEventListener('click', function(){ var open = ax.hidden; ax.hidden = !open; axb.setAttribute('aria-expanded', String(open)); axi.textContent = open ? '−' : '+'; });
+        lh.appendChild(axb);
         var tb = mk('div','axes');
         var hd = mk('div','axes-row head'); ['','主役','焦点','原因の説明','見出しの強調点'].forEach(function(x){ hd.appendChild(mk('span', null, x)); }); tb.appendChild(hd);
         axGroups.forEach(function(g){
@@ -1632,7 +1644,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           [['主役', g.lead], ['焦点', g.focus], ['原因の説明', g.cause], ['見出しの強調点', g.hook]].forEach(function(x){ var c2 = mk('span', null, x[1] || '—'); c2.setAttribute('data-k', x[0]); r.appendChild(c2); });
           tb.appendChild(r);
         });
-        ax.appendChild(tb); ls.appendChild(ax);
+        ax.appendChild(tb); ls.insertBefore(ax, cols);
       }
       ls.appendChild(mk('p','lens-note','国別の傾向は、同じ国の2媒体以上で切り口が共通するときだけまとめています。1媒体だけのときは媒体名で示し、通信社の配信記事は掲載した媒体の国ではなく「国際通信」として扱います。好意的・否定的といった点数づけはせず、何を中心に据えたかだけを比べています。'));
       box.insertBefore(ls, arts);
