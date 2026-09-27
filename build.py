@@ -558,9 +558,9 @@ def build_lenses(arch, flag_map):
         return []
     items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD MEDIA LENS</nav><h1>WORLD MEDIA LENS</h1>'
-            '<p class="lead">1レースにつき1本。世界の媒体の記事を読み比べて、日本では見当たらなかった話と、見出しだけでは分からないことを日本語でまとめます。</p>'
+            '<p class="lead">レースごとに1本。大きな話題のときは臨時号も。世界の媒体の記事を読み比べて、日本では見当たらなかった話と、見出しだけでは分からないことを日本語でまとめます。</p>'
             f'<ul class="lens-list">{items}</ul>')
-    write('lens/index.html', page('WORLD MEDIA LENS｜F1 Grid Walk', '世界のF1報道を読み比べて、日本では見当たらなかった話をまとめる、1レース1本の記事。',
+    write('lens/index.html', page('WORLD MEDIA LENS｜F1 Grid Walk', '世界のF1報道を読み比べて、日本では見当たらなかった話をまとめるコラム。レースごとに1本、ときどき臨時号。',
                                   SITE + '/lens/', body, f'<style>{LENS_CSS}</style>\n', og_type='website'))
     return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + \
            [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in lenses]
