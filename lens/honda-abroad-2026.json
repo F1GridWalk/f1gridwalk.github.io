@@ -7,181 +7,200 @@
  ],
  "gpLabel": "臨時号",
  "published": "2026-10-01T09:00:00+09:00",
- "big": "17",
- "title": "海外から見たホンダ 日本語では語られない5つの話と「遅いのは誰のせい？」の謎",
- "titleHtml": "海外から見たホンダ。日本語では語られない<em>5つの話</em>と、<em>「遅いのは誰のせい？」</em>の謎",
- "dek": "苦しいシーズンが続くアストンマーティン・ホンダ。日本ではホンダのコメントが毎戦伝えられるけれど、海外の記事には、また別の顔がある。アメリカ・スペイン・ブラジルなどの記事から、日本語では語られていない5つの話と、「遅さの原因」をめぐる食い違いを追いかけました。",
+ "big": "2",
+ "title": "海外から見たホンダ スペック2以降、日本語では語られない5つの話と「スペック2は失敗？」の謎",
+ "titleHtml": "海外から見たホンダ。スペック2以降、日本語では語られない<em>5つの話</em>と、<em>「スペック2は失敗？」</em>の謎",
+ "dek": "8月のオランダGPでデビューした、ホンダの新しいPU「スペック2」。海外には厳しい見出しが並ぶけれど、その中身は事実と合っているのか。見出しと原文、公式発表とデータを一つずつ突き合わせました。",
  "unreported": {
-  "lead": "海外の記事にだけ書かれていた話です。",
+  "lead": "海外の記事にだけ書かれていた話と、見出しの数字の中身です。",
   "note": "autosport web・F1-Gate・Formula1-Data・motorsport.com日本版・TopNewsなどを日本語で検索し、同じ内容の記事が見当たらなかった話です（9月28日時点）。見落としがあれば、元の記事とあわせてお知らせください。",
   "items": [
-   {
-    "source": "The Drive",
-    "region": "アメリカ",
-    "lang": "en",
-    "kind": "news",
-    "headline": "渡辺社長「振動の原因は100％PU側」。開幕後の会議は「とても深刻で、とても緊迫していた」",
-    "body": "アメリカの自動車メディアThe Driveのインタビューで、ホンダ・レーシングの渡辺康治社長が開幕直後の内幕を語った。マシンを揺らした振動について「発生源の責任は100％PU側にあると思う」と明言。ただし、振動が車体を通じて大きくなった分については、どちらの責任かの割合は言わなかった。オーストラリアGPのあとのアストンマーティンとの会議は「とても深刻で、とても緊迫していた」。短期間で人材を集めるのは「現実的にとても難しかった」とし、「大きな後悔とともに振り返っている」とも。当面の目標は「トップ10を争い、ポイントを取り始めること」。日本語の記事では「PUだけでは解決できない」という発言が伝えられていたが、この「100％」の言葉は見当たらなかった。",
-    "url": "https://www.thedrive.com/news/inside-hondas-shaky-return-to-f1-racing-boss-watanabe-talks-vibrations-tense-meetings-whats-next"
-   },
-   {
-    "source": "Autonocion",
-    "region": "スペイン",
-    "lang": "es",
-    "kind": "news",
-    "headline": "15戦で3点。アロンソの「最悪だった2015年」より悪い",
-    "body": "スペインのオートノシオンは「AMR26は、アロンソの最悪のマクラーレン・ホンダに似てきた」と書いた。アロンソのポイントで比べると、2015年は15戦を終えて11点。今年は3点（モナコ10位とオランダ9位）だけだ。イギリスのF1 Oversteerの集計では、チームの未完走も今季17回で、マクラーレン・ホンダの2015年（14回）と2017年（15回）をすでに超えた。オートノシオンが挙げる問題は「振動、バッテリー、ドライバビリティ、不安定な燃焼」。数字は各媒体の集計による。",
-    "url": "https://www.autonocion.com/motornocion/aston-martin-amr26-peor-mclaren-honda-alonso/",
-    "also": [
-     {
-      "source": "F1 Oversteer",
-      "region": "イギリス",
-      "url": "https://www.f1oversteer.com/news/lance-stroll-just-set-18-year-f1-dnf-record-with-latest-aston-martin-retirement-at-azerbaijan-gp/"
-     }
-    ]
-   },
    {
     "source": "motor.es",
     "region": "スペイン",
     "lang": "es",
     "kind": "tech",
-    "headline": "「F2より遅い」は本当？ スペインの専門サイトが待った",
-    "body": "バクーでは「アストンマーティンの最高速はF2より下」という話が世界中を駆けめぐり、スペインのOKDiarioは「アストンマーティンとホンダ、バクーで赤っ恥」と見出しに書いた。そこに待ったをかけたのが、スペインのmotor.es。F1とF2では速度を測った地点が違ううえ、2026年のF1はストレートの終わりで電気の出力が途切れる「クリッピング」が起きる。電気を使わないF2はそのまま加速を続けるので、そのまま比べるのは不公平だという。ただし結論は「ホンダが今季、笑いものすれすれなのは間違いない。でも、その理由は最高速の比較ではない」。",
+    "headline": "「F2より遅い」の比べ方。同じ場所では、フェラーリ勢もF2より下だった",
+    "body": "バクーの金曜、「アストンマーティンはF2の全車より遅い」という比較が世界中で広まり、日本でも報じられた。比べたのは、ゴールライン上の速度だ。スペインのmotor.esはFIAの計測データを使って反論した。2026年のF1は、長いストレートの終わりで電気の出力が途切れる（クリッピング）ため、ゴールライン付近では減速している。電気を使わないF2は、最後まで加速を続ける。実際、同じゴールラインで、フェラーリのハミルトン（314.1km/h）とフェラーリのPUを積むハースのベアマン（307.3km/h）も、F2でいちばん遅かったボヤ（316.4km/h）より下だった。ストレートの途中のスピードトラップでは、アストン（307〜309km/h）はボヤ（298km/h）より速い。ただしF1の先頭（ハジャーの339.6km/h）とは約30km/hの差があり、同媒体も「ホンダが今季、笑いものすれすれなのは間違いない。でも、その理由のひとつはF2との最高速の比較ではない」と結んでいる。F1はフリー走行2回目、F2は予選の数字。",
     "url": "https://www.motor.es/formula-1/aston-martin-lento-recta-f2-datos-baku-desmienten-memes-honda-2026116626.html"
    },
    {
-    "source": "Motorsport.com España",
-    "region": "スペイン",
-    "lang": "es",
+    "source": "The Drive",
+    "region": "アメリカ",
+    "lang": "en",
     "kind": "news",
-    "headline": "アロンソ「1.5秒失った」、ホンダ「データでは問題なし」。GPSまで調べると",
-    "body": "バクーの決勝、アロンソは「警告は何も出なかった。全部正常に動いていたのに、ストレートで1.5秒くらい失い始めた」と話し、リタイアした。これに対してホンダの折原伸太郎GMは、スペインのMotorsport.comに「今あるデータはすべて確認したが、今のところエンジンは問題ない」。そのうえで、エンジンの出力、エネルギーマネジメント、そして「もしかするとGPS」まで確認するという。ドライバーの体感と、データ。食い違ったままだ。日本語の記事で伝えられていたのはホンダの公式コメント（「現在我々が持つパッケージとしてこれ以上は望めない」）のほうで、この反論は見当たらなかった。",
-    "url": "https://es.motorsport.com/f1/news/honda-niega-problemas-motor-denunciados-alonso-baku/10859541/",
+    "headline": "「振動は100％PUの責任」。見出しにならなかった、渡辺社長の答えの続き",
+    "body": "アメリカのThe Driveのインタビューで、ホンダ・レーシングの渡辺康治社長は「振動は100％ホンダの問題か」と聞かれ、こう答えた。「振動の発生源は、もちろんエンジンです。でもその振動は車体を通って増幅され、振動のレベルがずっと高くなる。発生源についての責任は100％PUにあると思う。ただ、ホンダとアストンマーティンの責任の割合や内訳を言うのは控えたい」。海外の見出しは「100％」ばかりを取り上げたが、答えには「車体で増幅される」ことも含まれていた。開幕後の会議は「とても深刻で、とても緊迫していた」こと、短い期間で技術者を集めきれなかったことを「大きな後悔とともに振り返っている」ことも語っている。",
+    "url": "https://www.thedrive.com/news/inside-hondas-shaky-return-to-f1-racing-boss-watanabe-talks-vibrations-tense-meetings-whats-next"
+   },
+   {
+    "source": "AutoRacer",
+    "region": "イタリア",
+    "lang": "it",
+    "kind": "rumor",
+    "headline": "「ホンダは70馬力差」。その数字、1か月で何度も変わっていた",
+    "body": "9月1日、イタリアのAutoRacerは「ホンダのPUはメルセデスから約70馬力遅れ、1周あたり約1.2秒に相当する」と報じ、各国で引用された。根拠は「AutoRacerが得た情報」。同じ媒体の記事をさかのぼると、7月28日は「（トップとの差は）90馬力と言われている」「スペック2は35馬力、0.5秒ほどの向上」。8月20日は「向上は15馬力ほど、0.2秒」。9月1日は「オランダで約17馬力の向上」「メルセデスとの差は約70馬力」。ホンダは具体的な数字を出しておらず、FIAも性能の数値は公表していない。どの数字も、外から確かめる方法がないのが実情だ。",
+    "url": "https://autoracer.it/aston-martin-piano-newey-prende-forma-honda-lontana-70cv-power-unit/",
     "also": [
      {
-      "source": "RacingNews365",
-      "region": "イギリス",
-      "url": "https://racingnews365.com/fernando-alonso-and-honda-at-odds-over-healthy-engine-problem"
+      "source": "AutoRacer（7月28日）",
+      "region": "イタリア",
+      "url": "https://autoracer.it/aston-martin-amr26b-debutta-nuovo-motore-honda-ecco-quanto-puo-valere/"
      },
      {
-      "source": "Grande Prêmio",
-      "region": "ブラジル",
-      "url": "https://grandepremio.com/br/f1/honda-contradiz-alonso-e-garante-que-motor-usado-em-baku-esta-em-boas-condicoes/"
+      "source": "AutoRacer（8月20日）",
+      "region": "イタリア",
+      "url": "https://autoracer.it/aston-martin-aduo-honda-porta-circa-15-cv-alonso-aspetta-ancora/"
      }
     ]
    },
    {
-    "source": "Grande Prêmio",
-    "region": "ブラジル",
+    "source": "The Race",
+    "region": "イギリス",
     "lang": "en",
     "kind": "news",
-    "headline": "「ここで待つ気はない。無線を貸して」ストロール、マーシャルに迫る",
-    "body": "バクーの決勝序盤、マシンを止めたストロール。ブラジルのグランデ・プレミオ（英語版）によると、コース脇でマーシャルにこう迫った。「レースの終わりまでここで待つつもりはない。もう行く」「無線を貸して」。止まった理由は、本人いわく「水圧の問題があって、止めるように言われた」。リタイアそのものは日本でも報じられたが、このひと幕は見当たらなかった。",
-    "url": "https://grandepremio.com/en/f1/stroll-clashes-with-marshal-after-azerbaijan-gp-retirement-give-me-the-radio/"
+    "headline": "「ニューウェイが正しかった」？ 渡辺社長が認めたのは「全員そろうまで1年」",
+    "body": "3月、ニューウェイは「ホンダは元のチームの、推測だけど30％ほどで復帰した」と話した。6月、イギリスのF1 Oversteerは「ホンダ社長、ニューウェイが正しかったと認める」と見出しに書いた。ところが元になったThe Raceの記事で渡辺社長が話したのは、「一人のリーダーが戻るのに2か月かかることもあれば、3か月かかる人もいた。全員そろうまでに1年近くかかった」ということ。30％という数字を認めた発言は、どちらの記事にもない。The Raceは、F1を知らない技術者ばかりになったわけではなく、主要な技術者が戻るまで全力で動けない期間があった、と説明している。",
+    "url": "https://www.the-race.com/formula-1/the-inside-story-of-hondas-painful-start-with-aston-martin/",
+    "also": [
+     {
+      "source": "F1 Oversteer",
+      "region": "イギリス",
+      "url": "https://www.f1oversteer.com/news/honda-president-admits-adrian-newey-was-right-all-along-about-staffing-issues-before-2026-season/"
+     }
+    ]
+   },
+   {
+    "source": "GPKingdom",
+    "region": "イタリア",
+    "lang": "it",
+    "kind": "news",
+    "headline": "開発責任者の交代。ホンダは「計画的な移行」、イタリアでは「解任」「大混乱」",
+    "body": "9月14日、ホンダはF1のPU開発責任者を10月1日付で角田氏から深尾氏に交代すると発表し、「次世代への確実な技術継承を見据えた計画的な移行」と説明した。イタリアの見出しは違った。GPKingdomは「ホンダ大混乱、2026年エンジンの責任者が飛ぶ」と書き、本文では「解任」と表現。f1-news.euは「首が飛んだ。アストンマーティンの惨状の責任を取る」。Motorsport.comイタリア版は「衝撃のホンダ」とし、「オランダでデビューしたエンジンで目標に届かなかった」と書いた。交代の理由について、ホンダは「計画的な移行」以上のことは語っていない。",
+    "url": "https://gpkingdom.it/168405/f1-ultimora-aston-martin-caos-honda/",
+    "also": [
+     {
+      "source": "f1-news.eu",
+      "region": "イタリア",
+      "url": "https://www.f1-news.eu/news/f1-honda-salta-testa-capo-motorista-paga-disastro-aston-martin-47954"
+     },
+     {
+      "source": "Motorsport.com Italia",
+      "region": "イタリア",
+      "url": "https://it.motorsport.com/f1/news/f1-clamoroso-honda-fukao-nuovo-f1-project-leader-per-lanciare-un-motore-nuovo-piu-estremo-/10855728/"
+     }
+    ]
    }
   ]
  },
  "mystery": {
-  "title": "謎：アストンの遅さは、ホンダのPUのせい？",
-  "lead": "開幕前は「責任はホンダに」。春には「遅れの半分以上は車体」。そして秋、ホンダ自身が「これがPUの実力」。見方は季節ごとに揺れてきた。証拠を時系列で読んで、あなたの判定を。",
-  "questionHtml": "アストンの遅さは、<br>ホンダのPUのせい？",
-  "setup": "今季のアストンマーティン・ホンダは15戦で3点、コンストラクターズは11チーム中10位。遅さの原因は、どこにあるのか。",
+  "title": "謎：ホンダの新PU「スペック2」は、失敗だった？",
+  "lead": "オランダGPのあと、海外には「振り出しに戻った」の見出しが並んだ。でもホンダは「海外で言われるほどではない」。どちらが事実に近いのか。証拠を読んで、あなたの判定を。",
+  "questionHtml": "ホンダの新PU「スペック2」は、<br>失敗だった？",
+  "setup": "8月のオランダGPで、ホンダは今季ただ一度の大型アップデート「スペック2」を投入した。燃焼を速くするために副室とピストンの形を変え、摩擦も減らした。",
   "evidence": [
    {
-    "label": "3月",
-    "head": "開幕前、英メディア「責任はホンダに」",
-    "body": "3月、ニューウェイは「エンジン（内燃機関）の出力が足りないほど電気で補うことになり、直線で電気がほしい時にはバッテリーが空になる」と説明。英The Raceはこれを「車体には強気。責任はホンダに向けられた」と書いた。ただし同じ場で、ニューウェイは車体についても「5番目くらいかもしれない」と話している。",
+    "label": "8月",
+    "head": "スペイン「最初のエンジンでの改善を、全部失った」",
+    "body": "オランダGPのあと、スペインのMotorpasiónはアロンソの言葉を大きく伝えた。「この新しいエンジンで振り出しに戻ってしまった。今週末は期待した結果が出なかった」「最初のエンジンで良くしたドライバビリティやシフトチェンジが、今はない」。ただ、英語版の同じ発言は「少し振り出しに戻った」。アロンソはこのレースで9位に入って今季最高の結果を出し、「最適化するのに2〜3レースある」とも話していた。",
     "sources": [
      {
-      "source": "The Race",
-      "region": "イギリス",
-      "lang": "en",
-      "url": "https://www.the-race.com/formula-1/everything-we-learned-from-extraordinary-newey-honda-briefing/",
-      "title": "ニューウェイとホンダの異例の説明会で分かったこと"
-     }
-    ]
-   },
-   {
-    "label": "4月",
-    "head": "GPSデータ「遅れの半分以上は車体」",
-    "body": "4月の鈴鹿のあと、英BBCは「アストンマーティンの遅れの半分以上は車体が原因」と伝えた。他チームがGPSデータで見ている内容とも一致するという。日本でもautosport webが英メディアの分析として紹介している。",
-    "sources": [
-     {
-      "source": "Crash.net",
-      "region": "イギリス",
-      "lang": "en",
-      "url": "https://www.crash.net/f1/news/1092894/1/honda-only-responsible-half-aston-martins-f1-pace-deficit-fresh-report-claims",
-      "title": "ホンダの責任は遅れの半分だけ、との新たな報道"
+      "source": "Motorpasión",
+      "region": "スペイン",
+      "lang": "es",
+      "url": "https://www.motorpasion.com/formula1/fernando-alonso-senala-a-honda-hemos-vuelto-a-casilla-salida-nuevo-motor-no-ha-dado-resultado-que-esperabamos",
+      "title": "アロンソ、ホンダの改良について「最初のエンジンで良くしたものを全部失った」"
      },
-     {
-      "source": "Speedweek",
-      "region": "オーストリア",
-      "lang": "de",
-      "url": "https://www.speedweek.com/a/formel-1/krise-bei-aston-martin-honda-der-motor-ist-nicht-der-alleinschuldige",
-      "title": "アストンマーティン・ホンダの危機、悪いのはエンジンだけではない"
-     },
-     {
-      "source": "autosport web",
-      "region": "日本",
-      "lang": "ja",
-      "url": "https://www.as-web.jp/f1/1308108",
-      "title": "「問題の半分以上はシャシー」英メディアが分析するアストンマーティン・ホンダの不振"
-     }
-    ]
-   },
-   {
-    "label": "7月",
-    "head": "車体に16点のアップデート。「とても大きな一歩」",
-    "body": "ハンガリーGPで、アストンマーティンは車体に16点の新パーツを投入。ローレンス・ストロール会長は「とても大きな一歩を踏み出した。この先もまだまだ続く」と話した。",
-    "sources": [
      {
       "source": "PlanetF1",
       "region": "イギリス",
       "lang": "en",
-      "url": "https://www.planetf1.com/news/aston-martin-amr26-upgrade-lawrence-stroll",
-      "title": "ローレンス・ストロール、アップデートしたAMR26について語る"
+      "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-honda-engine-upgrade",
+      "title": "アロンソ、アストンの前進を歓迎。ホンダには「少し振り出しに戻った」"
      }
     ]
    },
    {
     "label": "8月",
-    "head": "FIA「ホンダのエンジンは4％以上遅れ」",
-    "body": "FIAは各メーカーのエンジン（内燃機関）の性能を比べ、最も良いメーカーから4％以上遅れているとして、ホンダに追加の開発の機会を与えた。ただし同じ区分には、フェラーリとアウディも入っている。",
+    "head": "ホンダ「失っている時間は、海外で言われるほどではない」",
+    "body": "ホンダの折原GMは日本のインタビューで、課題は「ブレーキング中のエンジンブレーキが、ラップごとに安定しないこと」と認めた。そのうえで「失っているタイムは、海外のメディアで言われているほど大きくはないと認識している」と話した。具体的な数字は出していない。",
     "sources": [
      {
-      "source": "FIA",
-      "region": "国際",
-      "lang": "en",
-      "url": "https://www.fia.com/news/fia-announces-aduo-results-following-first-and-second-review-periods-2026",
-      "title": "FIA、ADUO（追加開発の機会）の審査結果を発表"
+      "source": "autosport web",
+      "region": "日本",
+      "lang": "ja",
+      "url": "https://www.as-web.jp/f1/1346712",
+      "title": "“スペック2”PUも入賞に貢献。ドライバビリティによるロスは「海外で言われるほどではない」"
      }
     ]
    },
    {
     "label": "9月",
-    "head": "アロンソ「特に車体には満足。でも直線1本で1秒失う」",
-    "body": "バクーの予選後、アロンソは「ブレーキを遅らせて、コーナーを攻める自信があった。特に車体には満足している。でも最終セクターの直線1本で1秒失う」と話した。",
-    "sources": [
-     {
-      "source": "TheBestF1",
-      "region": "スペイン",
-      "lang": "es",
-      "url": "https://www.thebestf1.es/alonso-clasifica-19o-en-baku-perdemos-un-segundo-en-una-sola-recta/",
-      "title": "アロンソ予選19位「直線1本で1秒失う」"
-     }
-    ]
-   },
-   {
-    "label": "9月",
-    "head": "ホンダ自ら「これが私たちの現実」",
-    "body": "折原GMは「残念ながら、この結果は直線の長いサーキットでのPUの実力を反映している。これが私たちの現実だ」。",
+    "head": "ホンダ「3戦でドライバビリティを改善した」",
+    "body": "スペインGPのあと、折原GMは「オランダGPで投入したスペック2のドライバビリティを、この3戦で改善してきた。この問題が減ったので、これからは性能面に集中できる」とコメントした。",
     "sources": [
      {
       "source": "Honda Racing",
       "region": "日本",
       "lang": "en",
-      "url": "https://honda.racing/f1/post/f1-2026-rd15-qualifying",
-      "title": "2026年 第15戦 アゼルバイジャンGP 予選（ホンダ公式）"
+      "url": "https://honda.racing/f1/post/f1-2026-rd14-race",
+      "title": "2026年 第14戦 スペインGP 決勝（ホンダ公式）"
+     }
+    ]
+   },
+   {
+    "label": "信頼性",
+    "head": "スペック2以降のリタイア6回。PUが原因と確認されたものはない",
+    "body": "オランダからバクーまでの4戦で、アストンは6回リタイアした。チームやホンダの発表による原因は、車体の損傷（オランダのストロール、イタリアのアロンソ）、油圧（イタリアのストロール）、ブレーキと損傷（スペインのストロール）、水圧（バクーのストロール、どの系統かは未発表）、PUの不調の訴え（バクーのアロンソ。ホンダは「データ上は問題なし」）。ただし、イタリアでは予選でPU部品のデータに異常が見つかり、アロンソは部品を交換してピットスタートになっている。",
+    "sources": [
+     {
+      "source": "Honda Racing",
+      "region": "日本",
+      "lang": "en",
+      "url": "https://honda.racing/f1/post/f1-2026-rd13-race",
+      "title": "2026年 第13戦 イタリアGP 決勝（ホンダ公式）"
+     },
+     {
+      "source": "Formula1.com",
+      "region": "イギリス",
+      "lang": "en",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-azerbaijan-2026.7FI05LpHsKH1PaUiI8SyVF",
+      "title": "各チームのコメント：アゼルバイジャンGP決勝"
+     }
+    ]
+   },
+   {
+    "label": "速さ",
+    "head": "予選の差が大きく縮んだのは、スペック2の前",
+    "body": "アストンで速かった方の予選タイムと、ポールとの差を比べると、オーストリア〜ベルギーは5.4〜5.8％。車体を大きく新しくしたハンガリー（スペック2の前）で3.4％に縮んだ。スペック2を入れてからは、オランダ3.5％、イタリア4.1％、スペイン3.9％、バクー4.0％。直線の長いイタリアとバクーで差が大きい。",
+    "sources": [
+     {
+      "source": "Formula1.com",
+      "region": "イギリス",
+      "lang": "en",
+      "url": "https://www.formula1.com/en/results/2026/races/1291/hungary/qualifying",
+      "title": "2026年ハンガリーGP 予選結果（F1公式）"
+     },
+     {
+      "source": "Formula1.com",
+      "region": "イギリス",
+      "lang": "en",
+      "url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/qualifying",
+      "title": "2026年アゼルバイジャンGP 予選結果（F1公式）"
+     }
+    ]
+   },
+   {
+    "label": "今後",
+    "head": "ホンダ「今年はもう大きなアップデートはない」",
+    "body": "折原GMは9月、「今年はエンジンに大きなアップデートを入れる予定はない。来年の開幕戦に向けて、もう一段大きなステップを踏む」と話している。",
+    "sources": [
+     {
+      "source": "TopNews",
+      "region": "日本",
+      "lang": "ja",
+      "url": "https://topnews.jp/2026/09/10/news/f1/f1teams/astonmartinf1/255603.html",
+      "title": "ホンダ、今季の大型アップデート投入を否定"
      }
     ]
    }
@@ -189,32 +208,32 @@
   "choices": [
    {
     "id": "A",
-    "text": "開幕からずっと、ほぼPUのせい"
+    "text": "スペック2は失敗だった"
    },
    {
     "id": "B",
-    "text": "春は車体も大きな原因。今はPUの差が目立つ"
+    "text": "失敗とは言えない。でも速さの差はまだ大きい"
    }
   ],
   "answer": {
    "title": "証拠が示すこと",
    "points": [
-    "開幕前の「ホンダのせい」は、ニューウェイの説明と英メディアの見出しから広がった。でもニューウェイ自身、車体を「5番目くらい」と話していた。",
-    "4月のGPSデータの分析では、遅れの半分以上は車体が原因。この時点では「ホンダだけのせい」とは言えなかった。",
-    "7月、車体に大型アップデート。9月のバクーでは、アロンソが「特に車体には満足」と話すところまで来た。",
-    "一方でFIAの計測では、ホンダのエンジンは4％以上遅れ。バクーではホンダ自身が「これがPUの実力」と認めた。",
-    "証拠に近いのはB。春は車体の問題も大きかった。車体が良くなるにつれて、PUの差が目立つようになってきた。"
+    "「振り出しに戻った」は、スペック2のデビュー戦のあとの言葉。同じレースでアロンソは9位に入っていて、英語版では「少し」がついていた。",
+    "ドライバビリティが悪くなったことは、ホンダも認めている。そのうえで、3戦かけて改善したと説明している。",
+    "スペック2以降のリタイア6回のうち、PUが原因と確認されたものはない。ただし予選ではPU部品の異常も出ている。",
+    "予選の差が大きく縮んだのは、車体を新しくしたハンガリー。スペック2の前後では、はっきりとは縮んでいない。直線の長いコースでは、まだ差が大きい。",
+    "「失敗」と言い切れる証拠はない。でも「成功」と言えるほど速くもなっていない。扱いにくさは直りつつあり、レースで壊れることは減った。速さの差を埋めるのは、来年の開幕に持ち越し。これが、いまわかっている事実だ。"
    ],
-   "caveat": "バクーは直線が長く、PUの差がいちばん出やすいコースです。また、FIAの区分ではフェラーリとアウディもホンダと同じ「4％以上遅れ」に入っていて、エンジンの差だけで順位が決まるわけではありません。投票はこのサイトで数えて、次のWORLD MEDIA LENSで結果を紹介します。"
+   "caveat": "予選の差はコースの特徴や天候でも変わるので、スペック2だけの効果を切り分けることはできません。予選の差の数字は、F1公式サイトの予選結果から当サイトが計算しました。投票はこのサイトで数えて、次のWORLD MEDIA LENSで結果を紹介します。"
   }
  },
  "extraSources": [
   {
-   "source": "OKDiario",
-   "region": "スペイン",
-   "lang": "es",
-   "url": "https://okdiario.com/deportes/tragedia-aston-martin-honda-baku-fernando-alonso-stroll-abandonan-22-vueltas-20402455",
-   "title": "アストンマーティンとホンダ、バクーで赤っ恥。アロンソとストロールがそろってリタイア"
+   "source": "Honda Racing",
+   "region": "日本",
+   "lang": "ja",
+   "url": "https://honda.racing/ja/features/changes-to-the-f1-power-unit-development-structure",
+   "title": "F1パワーユニット開発体制の変更について（ホンダ公式）"
   }
  ]
 }
