@@ -1,10 +1,6 @@
 {
- "updatedAt": "2026-09-29T00:20:00+09:00",
+ "updatedAt": "2026-09-29T06:10:00+09:00",
  "topics": {
-  "honda-pu-struggle": {
-   "title": "バクーでホンダPUが限界露呈、アストンマーティン2台リタイア",
-   "summary": "長い直線が続くバクーで、ホンダがパワーユニットを供給するアストンマーティンは2台ともリタイアした。アロンソは22周目に止まる前、直線で何度もボッタスに抜き返されてエンジンの不調を疑ったと語っている。ホンダのトラックサイド責任者は、バクーはPUに厳しいコースだったと振り返り、現行パッケージでは「これ以上は望めない」と限界を認めた。2台は週末前に新しい部品を入れ、後方からのスタートとなっていた。"
-  },
   "horner-ferrari": {
    "title": "ホーナーのフェラーリ発言と後任探し、バスール進退うわさが交錯",
    "summary": "2025年7月にレッドブルを離れた元代表ホーナーが、フェラーリだけは出資なしでも復帰を検討する「唯一の例外」だと語ったと報じられ、後継含みの臆測が広がっている。F1のドメニカリCEOは「空想的な解決策は避けるべきだ」としてバスール代表の続投を支持し、ハミルトンも「イエス」と現体制への信頼を明言した。一方で会長エルカン氏が後継候補を打診しているとの報道もあり、真偽は定まっていない。"
@@ -120,9 +116,39 @@
   "russell-baku-season-reflection": {
    "title": "グランドスラムのラッセル、調子戻るもタイトル戦線にはなお距離",
    "summary": "バクーでキャリア初のグランドスラムを達成したラッセルが、今季序盤に自信を失いかけた時期を乗り越えて調子を取り戻しつつある。首位アントネッリとの差は81点から66点に縮まったが、残り7〜8戦でその差はなお大きく、本人も「夏休み以降の内容なら優勝争いができる」としつつ、順位を追わず目の前のレースに集中する姿勢を強調している。予選でクラッシュしたアントネッリも5位に挽回するなど崩れておらず、独メディアも逆転は容易ではないと分析している。"
+  },
+  "redbull-hold-station-tactics": {
+   "title": "レッドブル、ハジャーにフェルスタッペンを譲らせなかった理由",
+   "summary": "バクー決勝でペースの良かったハジャーが、苦しむチームメイトのフェルスタッペンを譲られなかった件について、レッドブルのメキース代表が説明した。セーフティカーが出た際の展開を最大化する狙いがあったとし、要求を退けられたハジャーが冷静に対応したことも称賛している。RacingNews365とPlanetF1がそれぞれ代表のコメントを伝えた。"
+  },
+  "cadillac-bottas-ai-malfunction": {
+   "title": "ボッタスのバクー・クラッシュ、AI制御システムの誤作動が原因に",
+   "summary": "キャデラックのボッタスがバクー決勝終盤の15コーナーでクラッシュした原因について、本人が車両のAI制御システムの誤作動を説明した。1コーナーでコース外に出た影響で位置情報を見失い、その後は前輪しか効かず後輪のブレーキとエネルギー回生がほぼ機能しない状態が続いたという。F1-GateとPlanetF1がそれぞれ本人のコメントを伝えている。"
+  },
+  "mclaren-baku-double-dnf-stella": {
+   "title": "マクラーレン無得点、ステラ代表は車の弱点が原因と説明",
+   "summary": "バクー決勝でピアストリが13位、ノリスがリタイアとなり、マクラーレンは無得点に終わった。ピアストリは2度目のセーフティカー明けの1コーナーでロックアップして順位を落とし、ノリスはコラピントとガスリーの接触に巻き込まれた。伊Motorsport.comと日F1-Gate.comはいずれも、ステラ代表が「責任はチームにある」とドライバー個人でなく直線速度や旋回性能といった車両側の弱点を原因に挙げたと伝えている。"
   }
  },
  "articles": [
+  {
+   "id": "en-gpfans-verstappen-penalty-standoff",
+   "kind": "news",
+   "lang": "en",
+   "region": "オランダ",
+   "source": "GPFans.com",
+   "cat": "テクニカル",
+   "teams": [
+    "redbull"
+   ],
+   "circuit": "baku",
+   "topic": "verstappen-penalty-looming",
+   "title": "フェルスタッペンの降格処分「いずれ来る」、レッドブルは「まだ分からない」",
+   "summary": "バクーで予選トラブルを受けて内燃機関やターボ、排気系などのパワーユニット部品を交換し2位に入ったフェルスタッペンは、「いずれかの時点で降格処分は避けられない」と語った。しかしレッドブルのメキース代表は、外したエンジンを再び使えるかどうかの分析次第だとして「まだはっきりしない」と一歩引いた見方を示した。部品プールの残数次第では今後のグリッド降格を回避できる可能性もあるという。GPFans.comが伝えた。",
+   "orig": "F1 champion Max Verstappen and Red Bull at odds over FIA penalty",
+   "url": "https://www.gpfans.com/en/f1-news/1090825/f1-max-verstappen-red-bull-laurent-mekies-at-odds-fia-grid-penalty-power-unit-engine-changes/",
+   "published": "2026-09-28T21:43:00+01:00"
+  },
   {
    "id": "en-gpblog-mercedes-2027-lineup",
    "kind": "news",
@@ -176,6 +202,24 @@
    "published": "2026-09-28T14:40:00+01:00"
   },
   {
+   "id": "en-autosport-redbull-baku-pace-explained",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Autosport",
+   "cat": "テクニカル",
+   "teams": [
+    "redbull"
+   ],
+   "circuit": "baku",
+   "topic": "redbull-baku-race-pace-analysis",
+   "title": "予選不振からなぜ決勝は速かったのか。レッドブルのバクー好走の中身",
+   "summary": "Autosportが、予選でトラブルを抱えながらも決勝で2位・3位と好走したレッドブルの要因を分析した。最強クラスとされるパワーユニットは扱える出力帯が「かなり狭い」とメキース代表が説明し、エネルギー配分の最適化が決め手になったという。予選でのフェルスタッペンのICEトラブルを解消して新しいパワーユニットに交換したことも大きく、レーシングブルズは最高速349.4km/hをマークした。フェルスタッペン自身は、次戦以降のメルセデスの大型アップデート前に訪れた今季最後の勝機だったとの見方を示したという。",
+   "orig": "What made Red Bull so fast in the Azerbaijan GP after Verstappen's qualifying issue",
+   "url": "https://www.autosport.com/f1/news/what-made-red-bull-so-fast-in-the-azerbaijan-gp-after-verstappens-qualifying-issue/10859823/",
+   "published": "2026-09-28T13:54:00+01:00"
+  },
+  {
    "id": "it-motorsport-domenicali-ferrari-horner",
    "kind": "news",
    "lang": "it",
@@ -191,6 +235,76 @@
    "orig": "F1 | Domenicali su Ferrari-Horner: 'Bisogna evitare soluzioni fantasiose che rischiano di portare fuori strada'",
    "url": "https://it.motorsport.com/f1/news/f1-domenicali-su-ferrari-horner-bisogna-evitare-soluzioni-fantasiose-che-rischiano-di-portare-fuori/10859821/",
    "published": "2026-09-28T14:28:00+02:00"
+  },
+  {
+   "id": "ja-f1gate-colapinto-bahrain-doubt",
+   "kind": "rumor",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "うわさ",
+   "teams": [
+    "alpine"
+   ],
+   "topic": "colapinto-bahrain-doubt",
+   "title": "コラピント、次戦バーレーンGP(マレーシア)出場に暗雲。代役候補も浮上",
+   "summary": "バクーでの多重事故を受けてアルピーヌのブリアトーレ代表がコラピントを公然と批判したことから、次戦バーレーンGP(マレーシア開催)で彼が出場を外される可能性が取り沙汰されているとF1-Gate.comが伝えた。正式な処分はまだ決まっていないとしつつ、代役候補としてアロン、マイニ、クビアト、ヴェスティらの名を挙げている。今季アルピーヌの68点のうち27点を稼ぐコラピントを外すのは得策ではないとの見方もあるという。",
+   "orig": "アルピーヌF1 コラピントをバーレーンGPで外す可能性は？ 代役候補は誰？",
+   "url": "https://f1-gate.com/alpine/f1_97301.html",
+   "published": "2026-09-28T21:04:00+09:00"
+  },
+  {
+   "id": "nl-gpblog-verstappen-2027-outlook",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "分析",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "verstappen-2027-title-outlook",
+   "title": "ベルガー氏「フェルスタッペンとレッドブルは2027年に再びタイトル争いに戻る」",
+   "summary": "元F1ドライバーのゲルハルト・ベルガー氏が、2030年までの契約延長を交わしたフェルスタッペンとレッドブルについて「来年には再びトップ争いに完全に加わっているはずだ」との見通しを示したとGPblogが伝えた。「マックスにはレッドブルが必要で、レッドブルにもマックスが必要。強い組み合わせだ」と契約延長を双方にとって望ましい結果だと評価している。現行規定下でのオーバーテイクがブレーキング勝負よりエネルギー管理に頼りがちな点には苦言も呈したという。",
+   "orig": "'Verstappen en Red Bull doen in 2027 weer volop mee om de wereldtitel'",
+   "url": "https://www.gpblog.com/nl/nieuws/verstappen-en-red-bull-doen-in-2027-weer-volop-mee-om-de-wereldtitel",
+   "published": "2026-09-28T13:48:00+02:00"
+  },
+  {
+   "id": "en-planetf1-bottas-brake-harvest-theory",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "テクニカル",
+   "teams": [
+    "cadillac"
+   ],
+   "circuit": "baku",
+   "topic": "cadillac-bottas-ai-malfunction",
+   "title": "ボッタスのクラッシュ理由をさらに詳述「後輪のブレーキと回生を失った感覚」",
+   "summary": "PlanetF1が、キャデラックのボッタスによるバクー終盤のクラッシュについてさらに詳しい説明を伝えた。1コーナーでロックアップしてコースを外れた影響で車両システムが位置を誤認し、ターン15への進入でブレーキを踏んだ際「前輪しか効かなかった」と説明。「後輪のブレーキとハーベスティングを失ったような感覚だった」とも述べ、走行距離のズレをきっかけに後輪の制動とエネルギー回生が機能しなくなったとの見立てを示している。",
+   "orig": "Valtteri Bottas theory emerges after Cadillac 'got a bit confused' in Azerbaijan GP DNF",
+   "url": "https://www.planetf1.com/news/valtteri-bottas-cadillac-fia-azerbaijan-grand-prix-2026-crash",
+   "published": "2026-09-28T12:32:00+01:00"
+  },
+  {
+   "id": "en-planetf1-redbull-hadjar-response",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "teams": [
+    "redbull"
+   ],
+   "circuit": "baku",
+   "topic": "redbull-hold-station-tactics",
+   "title": "レッドブル、ハジャーの追い抜き要求を退けた判断を正当化「非常に賢く走った証拠」",
+   "summary": "バクー決勝でチームメイトのフェルスタッペンを譲るよう求めたハジャーの要求を退けたことについて、レッドブルのメキース代表がPlanetF1に判断の正しさを説明した。「あの状況でどれだけ賢く走れているか、車内でどれだけ判断力が育っているかを示している」とハジャーの成熟ぶりを称賛した。手首のケガから復帰したばかりの起用への慎重さが裏付けられた形で、本人はコース上で「痛みなし」の万全な状態で3位表彰台を獲得したと結んでいる。",
+   "orig": "Red Bull responds to Hadjar team orders flashpoint in Baku",
+   "url": "https://www.planetf1.com/news/red-bull-isack-hadjar-team-orders-2026-azerbaijan-grand-prix",
+   "published": "2026-09-28T12:01:00+01:00"
   },
   {
    "id": "it-motorsport-perez-pu-gap-danger",
@@ -227,6 +341,24 @@
    "orig": "George Russell findet seine Form, aber reicht es noch für den Titel?",
    "url": "https://www.formel1.de/news/news/2026-09-28/george-russell-findet-seine-form-aber-reicht-es-noch-fuer-den-titel",
    "published": "2026-09-28T12:37:00+02:00"
+  },
+  {
+   "id": "ja-f1gate-fornaroli-haas-doubt",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "移籍",
+   "teams": [
+    "haas",
+    "mclaren"
+   ],
+   "topic": "fornaroli-haas-mclaren",
+   "title": "フォルナローリのハース入り後退か。マクラーレンは残留を想定",
+   "summary": "2027年にオコンの後任としてハースのシートを狙う候補の一人フォルナローリについて、マクラーレンのブラウンCEOが「素晴らしいドライバーで、長くうちにいてくれると思う」と述べ、リザーブドライバーとして残留する前提の発言をしたとF1-Gate.comが伝えた。ブラウン氏はフリー走行やシミュレーター業務ができるリザーブが必要だとし、フォルナローリがF1のレースシートを見つけない限りこの体制を続けるとした。ハースの小松代表は近く2027年の陣容を発表するとしている。",
+   "orig": "レオナルド・フォルナローリ ハースF1加入の可能性後退？ マクラーレンは残留を想定",
+   "url": "https://f1-gate.com/haas/f1_97297.html",
+   "published": "2026-09-28T19:37:00+09:00"
   },
   {
    "id": "ja-f1gate-norris-colapinto-apology",
@@ -299,6 +431,41 @@
    "published": "2026-09-28T09:50:00+01:00"
   },
   {
+   "id": "ja-f1gate-kvyat-alpine-simulator",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "alpine"
+   ],
+   "topic": "kvyat-alpine-simulator",
+   "title": "クビアト、アルピーヌにひっそり復帰。シミュレーター業務を担当",
+   "summary": "元レッドブル、トロロッソのF1ドライバーだったダニール・クビアトが、2026年にアルピーヌのシミュレータードライバーとしてひっそり復帰していたことが明らかになったとF1-Gate.comが伝えた。エンストンのファクトリーからマシン開発やレース週末のサポートを担い、日本GPやカナダGPでは週末中の調整にも関わったという。かつてのレッドブル・ジュニア後輩にあたるガスリーとも直接連絡を取り合い、フィードバックを共有していると紹介している。",
+   "orig": "ダニール・クビアト アルピーヌF1にひっそり復帰 シミュレーター業務を担当",
+   "url": "https://f1-gate.com/daniil-kvyat/f1_97294.html",
+   "published": "2026-09-28T17:21:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-mclaren-stella-accountability",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "mclaren"
+   ],
+   "circuit": "baku",
+   "topic": "mclaren-baku-double-dnf-stella",
+   "title": "マクラーレン無得点、ステラ代表「責任はチームにある」とドライバーをかばう",
+   "summary": "マクラーレンはバクー決勝でピアストリが13位、ノリスがリタイアとなり無得点に終わったとF1-Gate.comが伝えた。2番手を走っていたピアストリは2度目のセーフティカー明けの1コーナーでロックアップして順位を落とし、ノリスはコラピントとガスリーの接触に巻き込まれてリタイアしている。ステラ代表は「責任はチームにある。今日は2人のドライバーの仕事をあまりに難しくしてしまった」と述べ、ドライバー個人ではなく車両の弱点に原因を求めた。",
+   "orig": "マクラーレン F1アゼルバイジャンGPでノーポイント ステラ「責任はチームにある」",
+   "url": "https://f1-gate.com/mclaren/f1_97292.html",
+   "published": "2026-09-28T16:30:00+09:00"
+  },
+  {
    "id": "en-motorsport-mclaren-straight-line-weakness",
    "kind": "tech",
    "lang": "en",
@@ -368,6 +535,24 @@
    "published": "2026-09-28T08:27:00+02:00"
   },
   {
+   "id": "ja-f1gate-ocon-astonmartin-option",
+   "kind": "rumor",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "移籍",
+   "teams": [
+    "haas",
+    "astonmartin"
+   ],
+   "topic": "ocon-2027-options",
+   "title": "オコンのF1残留への道狭まる。アロンソ引退なら浮上するアストンマーティンの椅子",
+   "summary": "2027年に向けたオコンの選択肢が急速に狭まりつつあるとF1-Gate.comが伝えた。ハースを今季限りで離れる可能性が高まる中、多くのチームがすでに来季体制を固めており、残る現実的な道はアストンマーティンにほぼ絞られるという。英デイリー・エクスプレス紙によれば、45歳のアロンソが引退すればオコンはその後任の「現実的な候補」になるとされるが、アロンソが続投すれば道は閉ざされる。ハースの小松代表は月末までに決定する見通しを示している。",
+   "orig": "エステバン・オコン F1残留へ残された道 アロンソ引退ならアストンマーティン浮上",
+   "url": "https://f1-gate.com/esteban-ocon/f1_97285.html",
+   "published": "2026-09-28T12:35:00+09:00"
+  },
+  {
    "id": "ja-f1are-colapinto-no-penalty-points",
    "kind": "fan",
    "lang": "ja",
@@ -401,6 +586,24 @@
    "summary": "アゼルバイジャンGP終盤、ボッタスがクラッシュした際にバーチャルセーフティカーが導入されなかった件について、The Athleticの報道を基にしたFIA関係者の説明を紹介するまとめ記事。事故が起きたターン15は低速コーナーで、ハミルトンらはコーナーの頂点をショートカットして回避できたため、コース全体の減速ではなく黄旗2本による局所対応で十分と判断されたという。最終周には現場に係員や回収車がいなかったとも伝えられており、安全面を懸念する声が掲示板で上がっている。",
    "orig": "FIA、F1アゼルバイジャンGP終盤のボッタスのクラッシュ時にVSCを見送った理由を説明→",
    "url": "https://f1are.com/blog-entry-3935.html",
+   "published": "2026-09-28T12:00:00+09:00"
+  },
+  {
+   "id": "ja-f1are-lindblad-lawson-leniency-debate",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "teams": [
+    "racingbulls"
+   ],
+   "circuit": "baku",
+   "topic": "lindblad-lawson-clash",
+   "title": "【まとめ】チームメイト同士のインシデント、裁定はなぜ甘くなりがちなのかと疑問の声",
+   "summary": "リンドブラッドがローソンに追突した一件でスチュワードが「行き場がなかった」として無罰と判断したことについて、The Raceが「本人のブレーキングミスだ」と異論を唱えたと紹介するまとめ記事。掲示板ではベッテルとリカルドの接触やオコンの過去の一件も引き合いに、チームメイト同士のインシデントは裁定が甘くなりがちだとの指摘が相次いだ。チームは処分回避で得をする一方、被害を受けたドライバーには「死活問題」だとして、相手を問わず一貫した基準を求める声も出ている。",
+   "orig": "F1ではチームメイト同士のインシデントの裁定は甘い傾向だけどそれでいいのか？",
+   "url": "https://f1are.com/blog-entry-3934.html",
    "published": "2026-09-28T12:00:00+09:00"
   },
   {
@@ -1258,49 +1461,6 @@
    "published": "2026-09-26T12:00:00-03:00"
   },
   {
-   "id": "en-f1com-verstappen-trying-everything",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Formula1.com",
-   "cat": "ドライバー",
-   "circuit": "baku",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "baku-race-result",
-   "title": "フェルスタッペン「できることは全部やった」0.1秒差の2位に悔しさ",
-   "summary": "アゼルバイジャンGPで8番グリッドから追い上げたフェルスタッペンは、優勝したラッセルにわずかに届かず2位に終わった。序盤のミディアムタイヤではグリップ不足に苦しんだが、セーフティカー明けにソフトへ替えるとペースが一気に上がり、ラッセルとともに後続を大きく引き離したという。最終ラップにはラッセル側のブースト作動にわずかな遅れがあり好機も生まれたが、逆転には至らなかったと振り返った。今季はまだ未勝利が続いている。",
-   "orig": "'I was trying everything' – Verstappen gives verdict after missing out on Azerbaijan GP victory",
-   "url": "https://www.formula1.com/en/latest/article/i-was-trying-everything-verstappen-gives-verdict-after-missing-out-on-azerbaijan-gp-victory.6M9zlnYYDH8w4AnRIninDX",
-   "published": "2026-09-26T14:58:00+00:00",
-   "lens": {
-    "type": "談話",
-    "lead": "フェルスタッペン",
-    "focus": "あと一歩の2位",
-    "cause": "序盤のミディアムで苦戦、ソフトで盛り返す",
-    "hook": "本人の「すべてを試した」"
-   }
-  },
-  {
-   "id": "ja-f1gate-honda-baku-struggle",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "チーム",
-   "circuit": "baku",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-pu-struggle",
-   "title": "ホンダF1、バクーで限界を露呈「現状のパッケージではこれ以上は望めない」",
-   "summary": "アゼルバイジャンGP決勝で、ホンダがパワーユニットを供給するアストンマーティンはストロールが序盤に、アロンソが22周目にリタイアし、2台とも完走できなかった。ホンダのトラックサイド責任者は、長い直線が続くバクーはパワーユニットにとって厳しいコースだったと週末を振り返った。差を縮めるために手を尽くしたとしながらも、現行パッケージでは「これ以上は望めない」と限界を率直に認めており、ホンダ陣営が置かれた苦しい現状がうかがえる。",
-   "orig": "ホンダF1 バクーで厳しい現実「現状のパッケージではこれ以上は望めない」",
-   "url": "https://f1-gate.com/honda/f1_97257.html",
-   "published": "2026-09-26T23:46:00+09:00"
-  },
-  {
    "id": "en-motorsportweek-antonelli-grandmother",
    "kind": "news",
    "lang": "en",
@@ -1349,89 +1509,6 @@
     "cause": "SC明けに迫るも最後の直線で届かず",
     "hook": "本人の「足りなかった」"
    }
-  },
-  {
-   "id": "en-f1com-norris-colapinto-ban",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Formula1.com",
-   "cat": "ドライバー",
-   "circuit": "baku",
-   "teams": [
-    "mclaren",
-    "alpine"
-   ],
-   "topic": "colapinto-penalty",
-   "title": "ノリス、コラピントとの接触に激怒「F1に向いていないドライバーもいる」",
-   "summary": "アゼルバイジャンGPのセーフティカー明けのリスタートで、ターン1を曲がりきれなかったコラピントがチームメイトのガスリーに接触し、押し出されたガスリーがノリスに衝突、3台ともリタイアとなった。ノリスは直線で遅く自身のペースも苦しかったと認める一方、「F1にいるべきではない」ドライバーもいると不満をあらわにした。モナコ以来のリタイアで8戦連続入賞も途絶え、わずかに残っていたタイトルの望みはさらに遠のいた。",
-   "orig": "'Some drivers shouldn't be in F1' – Norris reflects on Baku clash that led to DNF",
-   "url": "https://www.formula1.com/en/latest/article/some-drivers-shouldnt-be-in-f1-norris-reflects-on-baku-clash-that-led-to-dnf.76PWZBrhTQ5PMLrgvQFyPt",
-   "published": "2026-09-26T14:25:00+00:00"
-  },
-  {
-   "id": "en-aljazeera-reuters-baku-race",
-   "kind": "news",
-   "lang": "en",
-   "region": "カタール",
-   "source": "Al Jazeera",
-   "provider": "Reuters",
-   "cat": "決勝",
-   "circuit": "baku",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "topic": "baku-race-result",
-   "title": "ラッセルが僅差でバクー制覇、首位アントネッリは5位で差は66点に",
-   "summary": "ロイター通信の配信記事で、カタールのアルジャジーラが掲載した。ポールからスタートしたラッセルがフェルスタッペンを0.196秒差で抑えて優勝し、選手権首位のチームメイト、アントネッリとの差を15点縮めて66点にしたと伝えている。2度のセーフティカーで楽な展開が生き残りをかけた戦いに変わったとし、手首のケガで3戦を欠場していたハジャーが復帰戦で3位に入ったことにも触れた。結果と選手権の行方を軸にした短いリポート。",
-   "orig": "Russell edges out Verstappen to win in Baku, Antonelli settles for fifth",
-   "url": "https://www.aljazeera.com/sports/2026/9/26/russell-edges-out-verstappen-to-win-in-baku-antonelli-settles-for-fifth",
-   "published": "2026-09-26T14:17:00+00:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "ラッセル",
-    "focus": "結果と選手権",
-    "cause": "ポールから逃げ切り、2度のSCを耐えた",
-    "hook": "アントネッリは5位、差は66点"
-   }
-  },
-  {
-   "id": "ja-f1jouhou-baku-race",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "circuit": "baku",
-   "teams": [
-    "mercedes",
-    "redbull",
-    "alpine"
-   ],
-   "topic": "baku-race-result",
-   "title": "【掲示板】バクー決勝、僅差の優勝争いと同士討ちに反応",
-   "summary": "アゼルバイジャンGP決勝の結果を受けた掲示板の反応をまとめた記事。ラッセルがフェルスタッペンを0.196秒差で抑えた優勝争いや、ケガからの復帰戦で3位に入ったハジャーの走りを評価する声が多い。コラピントが引き起こした多重クラッシュや、レーシングブルズのリンドブラッドがチームメイトのローソンに接触した同士討ちには厳しい意見が集まった。16番手から5位まで挽回したアントネッリについては、運に恵まれたとの見方と手腕を認める声に分かれている。",
-   "orig": "2026年 F1 第15戦 アゼルバイジャンGP 決勝結果“同士討ちとか僅差の優勝争いとか”",
-   "url": "https://f1jouhou2.com/blog-entry-31576.html",
-   "published": "2026-09-26T23:00:00+09:00"
-  },
-  {
-   "id": "it-motorsport-vasseur-horner-response",
-   "kind": "rumor",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorsport.com Italia",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "horner-ferrari",
-   "title": "ヴァスール「ホーナー氏はどこでも仕事を探している」うわさに苦言",
-   "summary": "ホーナーの英タイムズ紙でのインタビューを受け、フェラーリのヴァスール代表が「ホーナー氏はどこでも仕事を探している」と切り返した。うわさが続くことでチーム全体が落ち着いて仕事ができていないと認めつつ、自分の進退は自分の手の中にはないとも語った。イタリアメディアはこの応酬を、代表交代説がくすぶり続けるマラネロの緊張の高まりを示すものとして伝えている。",
-   "orig": "F1 | Vasseur: \"Horner cerca lavoro ovunque. Le voci non aiutano la Ferrari\"",
-   "url": "https://it.motorsport.com/f1/news/f1-vasseur-horner-cerca-lavoro-ovunque-le-voci-non-aiutano-la-ferrari/10859346/",
-   "published": "2026-09-26T15:56:00+02:00"
   },
   {
    "id": "ja-f1data-baku-race-digest",
@@ -1540,45 +1617,6 @@
    }
   },
   {
-   "id": "ja-f1jouhou-norris-colapinto-ban",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "circuit": "baku",
-   "teams": [
-    "mclaren",
-    "alpine"
-   ],
-   "topic": "colapinto-penalty",
-   "title": "【掲示板】ノリス「コラピントは1レース出場停止にすべき」発言に反応",
-   "summary": "アゼルバイジャンGPの再スタートでコラピントがチームメイトのガスリーに追突し、アルピーヌは2台がリタイア、巻き込まれたノリスもレースを終えた件を扱う掲示板まとめ。ノリスは映像をまだ見ていないとしつつ、こうした事故を起こしたドライバーは1レースの出場停止にすべきだと主張したと伝えている。コラピントは謝罪し、処分は次戦の5グリッド降格にとどまった。掲示板では厳しい反応や皮肉交じりの声が目立つ一方、単純なミスだとして擁護する意見も見られる。",
-   "orig": "【ヤバ】マクラーレンのノリス、コラピントについて「1レース出場停止にすべき」とコメント【逃げてー】",
-   "url": "https://f1jouhou2.com/blog-entry-31577.html",
-   "published": "2026-09-26T21:00:00+09:00"
-  },
-  {
-   "id": "en-crash-verstappen-defends-colapinto",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "ドライバー",
-   "circuit": "baku",
-   "teams": [
-    "alpine",
-    "mclaren",
-    "redbull"
-   ],
-   "topic": "colapinto-penalty",
-   "title": "フェルスタッペンとラッセルもノリスの出場停止要求は「行き過ぎ」",
-   "summary": "ノリスがコラピントへの出場停止を求めたことについて、レースを制したラッセルや2位のフェルスタッペンが「行き過ぎだ」と一線を画したとCrash.netが伝えた。ラッセルは出場停止は意図的で危険な行為に限るべきだと主張し、フェルスタッペンも本人が反省しているなら十分だと擁護した。3位のハジャーも、セーフティカー明けのバクーはタイヤと路面のコンディションが悪く、小さなミスが大事故につながりやすい特殊な状況だったと説明している。",
-   "orig": "Max Verstappen leads defence of Franco Colapinto after \"harsh\" race ban demand",
-   "url": "https://www.crash.net/f1/news/1105766/1/max-verstappen-leads-defence-franco-colapinto-after-harsh-race-ban-demand",
-   "published": "2026-09-26T12:00:00+01:00"
-  },
-  {
    "id": "en-autosport-baku-race-report",
    "kind": "news",
    "lang": "en",
@@ -1604,59 +1642,6 @@
     "cause": "予選0.8秒差の速さと決勝ペースで主導権",
     "hook": "ラッセルの勝利とコラピントの事故"
    }
-  },
-  {
-   "id": "en-therace-lindblad-lawson-noaction",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "分析",
-   "circuit": "baku",
-   "teams": [
-    "racingbulls"
-   ],
-   "topic": "lindblad-lawson-clash",
-   "title": "レーシングブルズ同士の接触はなぜお咎めなしだったのか。バクーのもう一つの激突を検証",
-   "summary": "コラピントの事故を受けた再スタートで、リンドブラッドがブレーキをロックさせてローソンのフロアを壊し、ローソンはリタイア、リンドブラッド本人は7位完走した。スチュワードは前方のガスリー・コラピント絡みの事故で生じたスペース不足による玉突きと判断し無罰としたが、The Raceは「リンドブラッドに寛大すぎる」と指摘。コラピントの事故はローソンらが十分に回避行動を取れないほど離れた位置で起きており、車の色(同一チーム)によって裁定が甘くなるべきではないと論じている。",
-   "orig": "Shock inaction over Baku's other F1 team-mate clash explained",
-   "url": "https://www.the-race.com/formula-1/shock-inaction-over-bakus-other-f1-team-mate-clash-explained/",
-   "published": "2026-09-26T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-vasseur-frustration-quotes",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "horner-ferrari",
-   "title": "バスール代表、後任うわさに疲弊「完全な平穏の中で仕事できていない」",
-   "summary": "フェラーリのバスール代表がThe Raceの取材に、ホーナー後任説を巡る質問が取材の半分を占め「1日25回の取材で25回この話に戻ってくる」と疲弊を吐露した。ホーナー本人については「仕事を探しているのはみんな知っている」と改めて一蹴しつつ、フェラーリを「世界最高の仕事」と称賛。完全な平穏の中で仕事ができていないとし、残り7戦は最後のコーナーまで戦い抜くと述べたという。",
-   "orig": "Mr Horner looking for a job - Vasseur laments Ferrari distractions",
-   "url": "https://www.the-race.com/formula-1/mr-horner-looking-for-a-job-vasseur-laments-ferrari-distractions/",
-   "published": "2026-09-26T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-norris-colapinto-ban",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "teams": [
-    "mclaren",
-    "alpine"
-   ],
-   "topic": "colapinto-penalty",
-   "title": "ノリス、コラピントに「最低1戦の出場停止」求めるも制度上は困難とThe Race指摘",
-   "summary": "アゼルバイジャンGPの再スタートでリタイアに追い込まれたノリスがThe Raceに「FIAはこの手の行為にもっと厳しくあるべきで、最低でも1戦の出場停止が妥当」と主張したと報じられた。当のコラピントは無線で即座に謝罪し「完全にコントロールを失った」とチームやガスリー、ノリスへの謝意を示したという。ただ出場停止には12カ月で12ポイントの累積が条件で、コラピントは現状4ポイントのため、今回の制度下では出場停止は現実的でないと記事は指摘している。",
-   "orig": "Norris wants F1 race ban for Colapinto",
-   "url": "https://www.the-race.com/formula-1/norris-wants-f1-race-ban-for-colapinto-azerbaijan-gp-clash/",
-   "published": "2026-09-26T12:00:00+01:00"
   },
   {
    "id": "fr-motorsport-baku-race-report",
