@@ -6,15 +6,40 @@
   "honda-alonso-engine-dispute"
  ],
  "gpLabel": "臨時号",
- "published": "2026-10-01T09:00:00+09:00",
+ "published": "2026-10-01T08:00:00+09:00",
  "big": "2",
- "title": "海外から見たホンダ スペック2以降、日本語では語られない5つの話と「スペック2は失敗？」の謎",
- "titleHtml": "海外から見たホンダ。スペック2以降、日本語では語られない<em>5つの話</em>と、<em>「スペック2は失敗？」</em>の謎",
- "dek": "8月のオランダGPでデビューした、ホンダの新しいPU「スペック2」。海外には厳しい見出しが並ぶけれど、その中身は事実と合っているのか。見出しと原文、公式発表とデータを一つずつ突き合わせました。",
+ "title": "ホンダ、今日から新体制 海外から見た、日本語では語られない5つの話と「スペック2は失敗？」の謎",
+ "titleHtml": "ホンダ、今日から新体制。海外から見た、日本語では語られない<em>5つの話</em>と、<em>「スペック2は失敗？」</em>の謎",
+ "dek": "10月1日、ホンダのF1パワーユニット開発は新しい責任者のもとで動き出す。8月にデビューした新PU「スペック2」以降、海外には厳しい見出しが並んだ。その中身は事実と合っているのか。見出しと原文、公式発表とデータを一つずつ突き合わせました。",
  "unreported": {
   "lead": "海外の記事にだけ書かれていた話と、見出しの数字の中身です。",
-  "note": "autosport web・F1-Gate・Formula1-Data・motorsport.com日本版・TopNewsなどを日本語で検索し、同じ内容の記事が見当たらなかった話です（9月28日時点）。見落としがあれば、元の記事とあわせてお知らせください。",
+  "note": "autosport web・F1-Gate・Formula1-Data・motorsport.com日本版・TopNewsなどを日本語で検索し、同じ内容の記事が見当たらなかった話です（9月29日時点）。見落としがあれば、元の記事とあわせてお知らせください。",
   "items": [
+   {
+    "source": "GPKingdom",
+    "region": "イタリア",
+    "lang": "it",
+    "kind": "news",
+    "headline": "今日から新体制。ホンダは「計画的な移行」、イタリアでは「解任」「首が飛んだ」",
+    "body": "ホンダのF1パワーユニット開発は、10月1日から新しい責任者に替わる。9月14日の発表によると、2023年から開発を率いてきた角田哲史氏から、副責任者でソフトウェア部門の責任者だった深尾洋一郎氏への交代で、理由は「次世代のエンジニアへの確実な技術継承を見据えた計画的な移行」。深尾氏は2002年に入社し、F1やMotoGP、量産ハイブリッドの制御システム開発に20年以上携わってきた。ところがイタリアの見出しは違った。GPKingdomは「ホンダ大混乱」とし、本文では「解任」と表現。f1-news.euは「首が飛んだ。アストンマーティンの惨状の責任を取る」と書いた。一方、イギリスのThe Raceなどは、ホンダの「計画的な移行」という説明に沿って伝えている。角田氏の次の役職は、どの言語の報道でも明らかになっていない。",
+    "url": "https://gpkingdom.it/168405/f1-ultimora-aston-martin-caos-honda/",
+    "also": [
+     {
+      "source": "f1-news.eu",
+      "region": "イタリア",
+      "url": "https://www.f1-news.eu/news/f1-honda-salta-testa-capo-motorista-paga-disastro-aston-martin-47954"
+     }
+    ]
+   },
+   {
+    "source": "Motorsport.com Italia",
+    "region": "イタリア",
+    "lang": "it",
+    "kind": "rumor",
+    "headline": "2027年は「シリンダーヘッドを完全に作り直す」？ イタリアで出た新エンジンのうわさ",
+    "body": "Motorsport.comイタリア版は、責任者の交代を「衝撃のホンダ」と報じたうえで、関係者の話（うわさ）として、2027年のエンジンは「シリンダーヘッドを完全に設計し直し、燃焼室により攻めた設計を取り入れ、供給される合成燃料の力をもっと引き出す」ことになると書いた。深尾氏には、HRCの中に眠る力を引き出し、ニューウェイやアストンマーティンの技術陣との関係をより深める役割も期待されている、という。ホンダは2027年について「開幕戦に向けて、もう一段大きなステップを踏む」と話しているが、エンジンの中身については明らかにしていない。この具体的な話は、日本語の記事では見当たらなかった。",
+    "url": "https://it.motorsport.com/f1/news/f1-clamoroso-honda-fukao-nuovo-f1-project-leader-per-lanciare-un-motore-nuovo-piu-estremo-/10855728/"
+   },
    {
     "source": "motor.es",
     "region": "スペイン",
@@ -51,43 +76,6 @@
       "source": "AutoRacer（8月20日）",
       "region": "イタリア",
       "url": "https://autoracer.it/aston-martin-aduo-honda-porta-circa-15-cv-alonso-aspetta-ancora/"
-     }
-    ]
-   },
-   {
-    "source": "The Race",
-    "region": "イギリス",
-    "lang": "en",
-    "kind": "news",
-    "headline": "「ニューウェイが正しかった」？ 渡辺社長が認めたのは「全員そろうまで1年」",
-    "body": "3月、ニューウェイは「ホンダは元のチームの、推測だけど30％ほどで復帰した」と話した。6月、イギリスのF1 Oversteerは「ホンダ社長、ニューウェイが正しかったと認める」と見出しに書いた。ところが元になったThe Raceの記事で渡辺社長が話したのは、「一人のリーダーが戻るのに2か月かかることもあれば、3か月かかる人もいた。全員そろうまでに1年近くかかった」ということ。30％という数字を認めた発言は、どちらの記事にもない。The Raceは、F1を知らない技術者ばかりになったわけではなく、主要な技術者が戻るまで全力で動けない期間があった、と説明している。",
-    "url": "https://www.the-race.com/formula-1/the-inside-story-of-hondas-painful-start-with-aston-martin/",
-    "also": [
-     {
-      "source": "F1 Oversteer",
-      "region": "イギリス",
-      "url": "https://www.f1oversteer.com/news/honda-president-admits-adrian-newey-was-right-all-along-about-staffing-issues-before-2026-season/"
-     }
-    ]
-   },
-   {
-    "source": "GPKingdom",
-    "region": "イタリア",
-    "lang": "it",
-    "kind": "news",
-    "headline": "開発責任者の交代。ホンダは「計画的な移行」、イタリアでは「解任」「大混乱」",
-    "body": "9月14日、ホンダはF1のPU開発責任者を10月1日付で角田氏から深尾氏に交代すると発表し、「次世代への確実な技術継承を見据えた計画的な移行」と説明した。イタリアの見出しは違った。GPKingdomは「ホンダ大混乱、2026年エンジンの責任者が飛ぶ」と書き、本文では「解任」と表現。f1-news.euは「首が飛んだ。アストンマーティンの惨状の責任を取る」。Motorsport.comイタリア版は「衝撃のホンダ」とし、「オランダでデビューしたエンジンで目標に届かなかった」と書いた。交代の理由について、ホンダは「計画的な移行」以上のことは語っていない。",
-    "url": "https://gpkingdom.it/168405/f1-ultimora-aston-martin-caos-honda/",
-    "also": [
-     {
-      "source": "f1-news.eu",
-      "region": "イタリア",
-      "url": "https://www.f1-news.eu/news/f1-honda-salta-testa-capo-motorista-paga-disastro-aston-martin-47954"
-     },
-     {
-      "source": "Motorsport.com Italia",
-      "region": "イタリア",
-      "url": "https://it.motorsport.com/f1/news/f1-clamoroso-honda-fukao-nuovo-f1-project-leader-per-lanciare-un-motore-nuovo-piu-estremo-/10855728/"
      }
     ]
    }
@@ -222,7 +210,7 @@
     "ドライバビリティが悪くなったことは、ホンダも認めている。そのうえで、3戦かけて改善したと説明している。",
     "スペック2以降のリタイア6回のうち、PUが原因と確認されたものはない。ただし予選ではPU部品の異常も出ている。",
     "予選の差が大きく縮んだのは、車体を新しくしたハンガリー。スペック2の前後では、はっきりとは縮んでいない。直線の長いコースでは、まだ差が大きい。",
-    "「失敗」と言い切れる証拠はない。でも「成功」と言えるほど速くもなっていない。扱いにくさは直りつつあり、レースで壊れることは減った。速さの差を埋めるのは、来年の開幕に持ち越し。これが、いまわかっている事実だ。"
+    "「失敗」と言い切れる証拠はない。でも「成功」と言えるほど速くもなっていない。扱いにくさは直りつつあり、レースで壊れることは減った。速さの差を埋めるのは、来年の開幕に持ち越し。その開発を今日から率いるのが、深尾氏だ。"
    ],
    "caveat": "予選の差はコースの特徴や天候でも変わるので、スペック2だけの効果を切り分けることはできません。予選の差の数字は、F1公式サイトの予選結果から当サイトが計算しました。投票はこのサイトで数えて、次のWORLD MEDIA LENSで結果を紹介します。"
   }
@@ -234,6 +222,20 @@
    "lang": "ja",
    "url": "https://honda.racing/ja/features/changes-to-the-f1-power-unit-development-structure",
    "title": "F1パワーユニット開発体制の変更について（ホンダ公式）"
+  },
+  {
+   "source": "Formula1-Data",
+   "region": "日本",
+   "lang": "ja",
+   "url": "https://formula1-data.com/article/honda-f1-pu-chief-fukao-transition-2026",
+   "title": "ホンダF1、PU開発責任者が深尾洋一郎氏へ交代（経歴）"
+  },
+  {
+   "source": "The Race",
+   "region": "イギリス",
+   "lang": "en",
+   "url": "https://www.the-race.com/formula-1/honda-makes-f1-project-leadership-change/",
+   "title": "ホンダ、F1プロジェクトの責任者を交代"
   }
  ]
 }
