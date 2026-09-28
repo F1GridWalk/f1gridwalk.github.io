@@ -1332,6 +1332,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .seg button{flex:1 1 auto;padding:0 6px;white-space:nowrap;font-size:13.5px !important}
 }
 @media (max-width:360px){ .tw-h.tw-h-lens{flex-wrap:wrap;row-gap:8px} .hero .axes-toggle{margin-left:0} }
+@media (max-width:400px){ .seg{padding:3px} .seg button{flex:1 1 auto;min-width:0;padding:0 4px;font-size:12.5px !important;letter-spacing:-.02em} }
+@media (max-width:340px){ .seg button{padding:0 3px;font-size:11px !important;letter-spacing:-.04em} }
 
 .lens-link{display:flex;flex-direction:column;gap:2px;margin:14px 0 0;padding:12px 16px;border-radius:16px;background:#1F2420;color:#F3EFE6;text-decoration:none}
 .lens-link:hover{color:#F3EFE6;opacity:.92}
@@ -1461,8 +1463,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
             </div>
             <div class="seg" role="group" aria-label="並べ方">
               <button type="button" id="view-latest" aria-pressed="true">新着</button>
-              <button type="button" id="view-source" aria-pressed="false">媒体別</button>
-              <button type="button" id="view-team" aria-pressed="false">チーム別</button>
+              <button type="button" id="view-tech" aria-pressed="false">テック</button>
+              <button type="button" id="view-rumor" aria-pressed="false">パドックの噂</button>
+              <button type="button" id="view-analysis" aria-pressed="false">個人分析</button>
               <button type="button" id="view-ja" aria-pressed="false" title="日本の媒体の記事だけを表示">日本語のみ</button>
             </div>
           </div>
@@ -2192,9 +2195,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     renderTeamFilter(all);
     renderFeed(rest);
     renderKindSecs(all);
-    el('view-latest').setAttribute('aria-pressed', String(state.view === 'latest'));
-    el('view-source').setAttribute('aria-pressed', String(state.view === 'source'));
-    el('view-team').setAttribute('aria-pressed', String(state.view === 'team'));
+    el('view-latest').setAttribute('aria-pressed', String(state.view === 'latest' && state.kind === 'all'));
+    ['tech','rumor','analysis'].forEach(function(k){ el('view-' + k).setAttribute('aria-pressed', String(state.view === 'latest' && state.kind === k)); });
     el('view-ja').setAttribute('aria-pressed', String(state.lang === 'ja'));
     { var fnum = (state.kind !== 'all') + (state.lang !== 'all') + (state.team !== 'all') + (state.src !== 'all'); var fb = el('filt-n'); if (fb){ fb.hidden = !fnum; fb.textContent = fnum ? String(fnum) : ''; } }
     if (d.updatedAt){
@@ -2207,9 +2209,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     renderGeek();
   }
 
-  el('view-latest').addEventListener('click', function(){ state.view = 'latest'; renderAll(); });
-  el('view-source').addEventListener('click', function(){ state.view = 'source'; renderAll(); });
-  el('view-team').addEventListener('click', function(){ state.view = 'team'; renderAll(); });
+  el('view-latest').addEventListener('click', function(){ state.view = 'latest'; state.kind = 'all'; renderAll(); });
+  ['tech','rumor','analysis'].forEach(function(k){ el('view-' + k).addEventListener('click', function(){ state.view = 'latest'; state.kind = state.kind === k ? 'all' : k; state.newsShown = 0; renderAll(); }); });
   el('view-ja').addEventListener('click', function(){ state.lang = state.lang === 'ja' ? 'all' : 'ja'; renderAll(); });
 
   var SITE_URL = 'https://f1gridwalk.github.io/';
