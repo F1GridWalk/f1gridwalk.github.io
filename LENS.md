@@ -4,7 +4,7 @@ Race weekends get three issues, one per day (owner's decision, 29 Sep 2026), eac
 - 金曜号 (practice): after FP2 — long runs, upgrades, what teams and drivers said, practice incidents. Slug `<gp>-2026-fri`, gpLabel e.g. "マレーシア・金曜".
 - 土曜号 (qualifying): after qualifying — the grid, surprises, penalties, quotes. Slug `<gp>-2026-sat`, gpLabel e.g. "マレーシア・予選".
 - 日曜号 (race): after the race — the main issue. Slug `<gp>-2026`, gpLabel e.g. "マレーシアGP".
-Friday and Saturday issues may have 2 stories instead of 3 when fewer good ones are confirmed. Each issue opens with the previous issue's vote result when the owner has shared it. Start each about one hour after the session ends (Japan time), show the owner a phone-width preview, and publish on the owner's OK, together with a note article. On sprint weekends, Saturday's issue covers the sprint and qualifying.
+Friday and Saturday issues may have 2 stories instead of 3 when fewer good ones are confirmed. Each issue opens with the previous issue's vote result when the owner has shared it. Start each about two hours after the session ends (Japan time), when quotes and non-English analysis are out, show the owner a phone-width preview, and publish on the owner's OK, together with a note article. On sprint weekends, Saturday's issue covers the sprint and qualifying.
 Page: `lens/<slug>.json` → `python3 build.py` → `lens/<slug>/index.html` (listed at /lens/, linked from the top page).
 
 ## 1. Collect (the session day)
