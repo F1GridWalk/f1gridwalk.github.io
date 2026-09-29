@@ -1,9 +1,21 @@
-# WORLD MEDIA LENS — how each race's column is made
+# WORLD MEDIA LENS — how the columns are made
 
-Race weekends get three issues, one per day (owner's decision, 29 Sep 2026), each with its own page and vote:
-- 金曜号 (practice): after FP2 — long runs, upgrades, what teams and drivers said, practice incidents. Slug `<gp>-2026-fri`, gpLabel e.g. "マレーシア・金曜".
-- 土曜号 (qualifying): after qualifying — the grid, surprises, penalties, quotes. Slug `<gp>-2026-sat`, gpLabel e.g. "マレーシア・予選".
-- 日曜号 (race): after the race — the main issue. Slug `<gp>-2026`, gpLabel e.g. "マレーシアGP".
+WORLD MEDIA LENS has two kinds of pages (owner's decision, 29 Sep 2026):
+- **コラム** (daily column): one every day, including race weekends, published automatically at about 07:00 JST by the scheduled task. A plain read — "こういう見方がある" — with no mystery and no vote. See §0.
+- **グランプリ特別号** (race-weekend specials): three per race weekend, with "not seen in Japanese" stories, a mystery and a vote. The owner always checks them before they go out. See below and §1–5.
+
+## 0. Daily column (コラム)
+- One story a day from the last 24–48 hours of foreign coverage (non-English outlets preferred): a quote, number or inside detail not reported in Japanese; a headline that does not match what was said; the same event seen very differently by different countries; or a thread over several days (A said → B answered → C…). Do not reuse a story from the last 14 days of columns (check `lens/*.json` with `"type": "column"`).
+- Same fact rules as below: open every source with WebFetch and use only what it says; translate quotes faithfully; never invent numbers, names or dates; rumours and opinions are "〜と報じた" / "〜の見方"; never mix an article's own narration with a person's quote; no bias for or against any team or maker; run the Japanese check (autosport web, F1-Gate, Formula1-Data, motorsport.com 日本版, TopNews) — if the core story is already reported in Japanese, pick another. If no story can be confirmed, publish nothing that day and say so.
+- Tone: easy to read, a little light, accurate. The first three lines say what is interesting. About 1,000–1,800 Japanese characters, 2–4 headings, quotes in 「」 with who said it and where. End with one question to the reader (block kind "ask"), e.g. 「あなたはどう見る？」.
+- File: `lens/<slug>.json` with `"type": "column"`, `"gpLabel": "コラム"`, slug like `<keyword>-<yyyymmdd>` (e.g. `domenicali-ferrari-20260929`), `published` (real publish time, +09:00), `big` (one short word or number shown faintly in the hero, e.g. "80" or "?"), `title`, `titleHtml` (title with one `<em>` highlight), `dek` (1–2 sentences), `topics` (related topic slugs from articles.json, may be empty), `body` (list of `["p"|"h2"|"quote"|"bold"|"ask", text]`), `note` (the careful Japanese-check sentence: "〇〇・〇〇などを日本語で検索し、同じ内容の記事が見当たらなかった話です（◯月◯日時点）"), `extraSources` (every source used: `{source, region (Japanese country name), lang, title (Japanese translation of the headline), url}`).
+- A column that could stand as a グランプリ特別号 story may also be reused there later.
+
+## Race weekends: グランプリ特別号
+Race weekends get three special issues, one per day, each with its own page and vote:
+- 金曜 (practice): after FP2 — long runs, upgrades, what teams and drivers said, practice incidents. Slug `<gp>-2026-fri`, gpLabel e.g. "マレーシアGP特別号・金曜".
+- 土曜 (qualifying): after qualifying — the grid, surprises, penalties, quotes. Slug `<gp>-2026-sat`, gpLabel e.g. "マレーシアGP特別号・予選".
+- 日曜 (race): after the race — the main issue. Slug `<gp>-2026`, gpLabel e.g. "マレーシアGP特別号・決勝".
 Friday and Saturday issues may have 2 stories instead of 3 when fewer good ones are confirmed. Each issue opens with the previous issue's vote result when the owner has shared it. Start each about two hours after the session ends (Japan time), when quotes and non-English analysis are out, show the owner a phone-width preview, and publish on the owner's OK, together with a note article. On sprint weekends, Friday's issue follows sprint qualifying and Saturday's covers the sprint and qualifying (start two hours after the last session of that day).
 Scheduling chain: the three start times are booked one weekend at a time, as in-session reminders (send_later). When the Sunday issue is done, book the next weekend's three starts from the new `weekend` in season.json (official timetable, Japan time, minute :07 or similar, not :00), and write this same chain instruction into the new Sunday reminder so it carries on to the end of the season. Tell the owner the three times. Races held in the Americas end in the Japanese night or early morning; keep the two-hour rule anyway. If a round is cancelled (e.g. Qatar/Abu Dhabi), skip it and book the next one.
 Page: `lens/<slug>.json` → `python3 build.py` → `lens/<slug>/index.html` (listed at /lens/, linked from the top page).
