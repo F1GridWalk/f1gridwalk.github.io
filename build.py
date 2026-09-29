@@ -411,6 +411,12 @@ LENS_CSS = '''
 .sdesk li a.t{flex-basis:100%;font-size:14.5px;font-weight:700;color:var(--ink);text-decoration:none;line-height:1.55}
 .sdesk li a.t:hover{text-decoration:underline}
 .sdesk li a.sum{margin-left:auto;font-size:12px;color:var(--muted)}
+.col-body{margin:26px 0 0;font-size:16.5px;line-height:1.95;color:var(--ink)}
+.col-body h2{font-size:21px;font-weight:900;line-height:1.5;margin:34px 0 10px;padding-left:12px;border-left:4px solid #B0532C}
+.col-body p{margin:0 0 16px}
+.col-body blockquote{margin:0 0 16px;padding:10px 16px;border-left:3px solid var(--line);background:color-mix(in srgb,var(--line) 30%,transparent);border-radius:0 12px 12px 0;color:var(--ink-2)}
+.col-body blockquote p{margin:0}
+.col-body .ask{font-weight:800;font-size:17.5px;margin-top:22px}
 .lens-list{list-style:none;margin:0;padding:0}
 .lens-list li{padding:14px 0;border-bottom:1px solid var(--line)}
 .lens-list a{font-size:17px;font-weight:800;text-decoration:none}
@@ -440,6 +446,42 @@ def lens_src_link(s, flag_map, region_of, cls=''):
     c = f' class="{cls}"' if cls else ''
     return (f'<a{c} data-c="{cc}" href="{e(s["url"])}" target="_blank" rel="noopener" '
             f'data-track="click/lens/{e(s.get("source",""))}">{e(s["source"])}</a>')
+
+
+def lens_issue_blocks(L, slug, flag_map, region_of):
+    B = []
+    U = L['unreported']
+    B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">1</span><h2>日本では見当たらなかった話</h2></div>'
+             f'<p class="lens-lead">{e(U.get("lead", "海外の記事にだけ書かれていた話です。"))}</p>')
+    for i, it in enumerate(U['items'], 1):
+        cc = flag_map.get(it.get('region', ''), 'xx')
+        k = it.get('kind', 'news')
+        also = ''
+        if it.get('also'):
+            also = '<span class="also">同じ話を伝えた媒体：' + '、'.join(lens_src_link(x, flag_map, region_of) for x in it['also']) + '</span>'
+        B.append(f'<article class="uc">'
+                 f'<div class="ucm"><span class="bigflag" data-c="{cc}"></span><div><b>{e(it["source"])}</b><small>{e(it.get("region", ""))} · {e(LANG.get(it.get("lang"), ""))}</small></div>'
+                 f'<span class="kind {k}" title="{e(KIND_TIP.get(k, ""))}">{KIND.get(k, "報道")}</span></div>'
+                 f'<h3>{e(it["headline"])}</h3><p>{e(it["body"])}</p>'
+                 f'<div class="ucf">'
+                 f'<a href="{e(it["url"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/{i}">原文を読む（{e(it["source"])}）↗</a>{also}</div></article>')
+    B.append(f'<p class="lens-note">{e(U["note"])}</p></section>')
+
+    M = L['mystery']
+    ev = ''
+    for x in M['evidence']:
+        links = ''.join(lens_src_link(s, flag_map, region_of) for s in x['sources'])
+        ev += f'<div class="ev"><div class="evl">{e(x["label"])}</div><div><h4>{e(x["head"])}</h4><p>{e(x["body"])}</p><div class="evs">{links}</div></div></div>'
+    ch = ''.join(f'<button type="button" data-c="{e(c["id"])}" aria-pressed="false"><b>{e(c["id"])}</b><span>{e(c["text"])}</span></button>' for c in M['choices'])
+    A = M['answer']
+    B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">2</span><h2>' + e(M['title']) + '</h2></div>'
+             f'<p class="lens-lead">{e(M["lead"])}</p>'
+             f'<div class="quiz" id="quiz" data-slug="{e(slug)}"><div class="qk">WHO\'S RIGHT?</div><h3>{M["questionHtml"]}</h3><p class="qd">{e(M["setup"])}</p>'
+             f'{ev}<p class="vote-q">あなたの判定は？</p><div class="vote">{ch}</div><p class="vh" id="vote-hint">選ぶと、証拠が示すことが表示されます</p></div>'
+             f'<div class="answer" id="answer"><h4>{e(A["title"])}<span class="tg">分析</span></h4><ol>'
+             + ''.join(f'<li>{e(p)}</li>' for p in A['points']) + f'</ol><p class="caveat">{e(A["caveat"])}</p></div></section>')
+
+    return B
 
 
 def build_lenses(arch, flag_map):
@@ -493,37 +535,21 @@ def build_lenses(arch, flag_map):
         B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">WORLD MEDIA LENS · {e(L["gpLabel"])}</div>'
                  f'<h1>{L["titleHtml"]}</h1><p class="dek">{e(L["dek"])}</p><p class="date">{e(jst_text(pub))} 公開</p>'
                  '</div>')
-        U = L['unreported']
-        B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">1</span><h2>日本では見当たらなかった話</h2></div>'
-                 f'<p class="lens-lead">{e(U.get("lead", "海外の記事にだけ書かれていた話です。"))}</p>')
-        for i, it in enumerate(U['items'], 1):
-            cc = flag_map.get(it.get('region', ''), 'xx')
-            k = it.get('kind', 'news')
-            also = ''
-            if it.get('also'):
-                also = '<span class="also">同じ話を伝えた媒体：' + '、'.join(lens_src_link(x, flag_map, region_of) for x in it['also']) + '</span>'
-            B.append(f'<article class="uc">'
-                     f'<div class="ucm"><span class="bigflag" data-c="{cc}"></span><div><b>{e(it["source"])}</b><small>{e(it.get("region", ""))} · {e(LANG.get(it.get("lang"), ""))}</small></div>'
-                     f'<span class="kind {k}" title="{e(KIND_TIP.get(k, ""))}">{KIND.get(k, "報道")}</span></div>'
-                     f'<h3>{e(it["headline"])}</h3><p>{e(it["body"])}</p>'
-                     f'<div class="ucf">'
-                     f'<a href="{e(it["url"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/{i}">原文を読む（{e(it["source"])}）↗</a>{also}</div></article>')
-        B.append(f'<p class="lens-note">{e(U["note"])}</p></section>')
-
-        M = L['mystery']
-        ev = ''
-        for x in M['evidence']:
-            links = ''.join(lens_src_link(s, flag_map, region_of) for s in x['sources'])
-            ev += f'<div class="ev"><div class="evl">{e(x["label"])}</div><div><h4>{e(x["head"])}</h4><p>{e(x["body"])}</p><div class="evs">{links}</div></div></div>'
-        ch = ''.join(f'<button type="button" data-c="{e(c["id"])}" aria-pressed="false"><b>{e(c["id"])}</b><span>{e(c["text"])}</span></button>' for c in M['choices'])
-        A = M['answer']
-        B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">2</span><h2>' + e(M['title']) + '</h2></div>'
-                 f'<p class="lens-lead">{e(M["lead"])}</p>'
-                 f'<div class="quiz" id="quiz" data-slug="{e(slug)}"><div class="qk">WHO\'S RIGHT?</div><h3>{M["questionHtml"]}</h3><p class="qd">{e(M["setup"])}</p>'
-                 f'{ev}<p class="vote-q">あなたの判定は？</p><div class="vote">{ch}</div><p class="vh" id="vote-hint">選ぶと、証拠が示すことが表示されます</p></div>'
-                 f'<div class="answer" id="answer"><h4>{e(A["title"])}<span class="tg">分析</span></h4><ol>'
-                 + ''.join(f'<li>{e(p)}</li>' for p in A['points']) + f'</ol><p class="caveat">{e(A["caveat"])}</p></div></section>')
-
+        if L.get('type') == 'column':
+            B.append('<div class="col-body">')
+            for blk in L['body']:
+                k, t = blk[0], blk[1]
+                if k == 'h2': B.append(f'<h2>{e(t)}</h2>')
+                elif k == 'quote': B.append(f'<blockquote><p>{e(t)}</p></blockquote>')
+                elif k == 'bold': B.append(f'<p><strong>{e(t)}</strong></p>')
+                elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
+                else: B.append(f'<p>{e(t)}</p>')
+            B.append('</div>')
+            if L.get('note'):
+                B.append(f'<p class="lens-note">{e(L["note"])}</p>')
+            L.setdefault('unreported', {'items': []}); L.setdefault('mystery', {'evidence': []})
+        else:
+            B.extend(lens_issue_blocks(L, slug, flag_map, region_of))
         rows = ''
         for s in desk:
             cc = flag_map.get(s.get('region') or region_of.get(s['source'], ''), 'xx')
@@ -547,7 +573,7 @@ def build_lenses(arch, flag_map):
     if lenses:
         p0, s0, L0, u0 = lenses[0]
         blk = (f'<a class="lens-link" href="/lens/{e(s0)}/"><small>WORLD MEDIA LENS · {e(L0["gpLabel"])}</small>'
-               f'<b>{e(L0["title"])}</b><span>世界の記事を読み比べた特集。謎の答え合わせと投票も →</span></a>')
+               f'<b>{e(L0["title"])}</b><span>{"世界の記事を読み比べたコラム →" if L0.get("type") == "column" else "世界の記事を読み比べた特集。謎の答え合わせと投票も →"}</span></a>')
     out = re.sub(r'(<!--pre:lens-->).*?(<!--/pre:lens-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
         open(ip, 'w', encoding='utf-8').write(out)
