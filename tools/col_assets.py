@@ -15,15 +15,21 @@ regions = []
 for s in L.get('extraSources', []):
     r = s.get('region')
     if r and r != '日本' and r not in regions: regions.append(r)
-TAGS = L.get('noteTags') or '#F1 #モータースポーツ'
+STD_TAGS = '#F1 #フォーミュラ1 #モータースポーツ #F1ニュース #海外F1 #F1好きと繋がりたい #F1GridWalk #WORLDMEDIALENS'
+_t = []
+for x in ((L.get('noteTags') or '') + ' ' + STD_TAGS).split():
+    if x.startswith('#') and x not in _t: _t.append(x)
+TAGS = ' '.join(_t)
 url = f'https://f1gridwalk.github.io/lens/{slug}/'
 B = [list(b) for b in L['body']]
 B.append(['p', '※ ' + L.get('note', '')])
 for s in L.get('extraSources', []):
     B.append(['p', f'出典：{s["source"]}（{s.get("region","")}）'])
     B.append(['url', s['url']])
-B.append(['p', 'このコラムはサイトでも読めます。毎日の海外F1ニュースも日本語でまとめています。'])
+B.append(['p', 'この記事はサイトでも読めます（投票もこちら）。'])
 B.append(['url', url])
+B.append(['p', '毎日の海外F1ニュースは、日本語でこちらにまとめています。'])
+B.append(['url', 'https://f1gridwalk.github.io/'])
 # plain text
 t = ['【タイトル】', TITLE, '', '【本文】（■＝大見出しにする行）', '']
 for k, x in B:
