@@ -11,6 +11,14 @@ WORLD MEDIA LENS has two kinds of pages (owner's decision, 29 Sep 2026):
 - File: `lens/<slug>.json` with `"type": "column"`, `"gpLabel": "コラム"`, slug like `<keyword>-<yyyymmdd>` (e.g. `domenicali-ferrari-20260929`), `published` (real publish time, +09:00), `big` (one short word or number shown faintly in the hero, e.g. "80" or "?"), `title`, `titleHtml` (title with one `<em>` highlight), `dek` (1–2 sentences), `topics` (related topic slugs from articles.json, may be empty), `body` (list of `["p"|"h2"|"quote"|"bold"|"ask", text]`), `note` (the careful Japanese-check sentence: "〇〇・〇〇などを日本語で検索し、同じ内容の記事が見当たらなかった話です（◯月◯日時点）"), `extraSources` (every source used: `{source, region (Japanese country name), lang, title (Japanese translation of the headline), url}`).
 - A column that could stand as a グランプリ特別号 story may also be reused there later.
 
+## 0b. Breaking column (速報コラム)
+Owner's decision, 30 Sep 2026: when big news breaks, a 速報コラム is drafted in addition to the 07:00 column, but it is published ONLY after the owner approves it.
+- A scheduled task checks at about 00:41, 12:41 and 18:41 JST (after the article updates). A candidate is: an official announcement (driver signing or exit, team principal change, calendar change, penalty or rule decision), a story covered by 5+ outlets in the last 12 hours, or a clear gap between what Japanese outlets report and what foreign outlets report (e.g. `ocon-future-20260930`: Japan carried "Ocon to Toyota WEC", GPblog wrote it was off the table).
+- Same format and fact rules as §0 (`"type": "column"`, `"gpLabel": "速報コラム"`, slug `<keyword>-<yyyymmdd>`), about 1,000–1,500 characters, and it must say clearly what is confirmed and what is only reported. Never reuse a story already in a published `lens/*.json`.
+- The draft goes to the `reserve` branch as `breaking/<slug>.json` with `"draft": true`, plus a phone-width preview and the note/X assets under `daily/<date>/`. Nothing goes to `main` before the owner's OK.
+- On OK: copy the JSON to `main` as `lens/<slug>.json`, remove `"draft"`, set `published` to the real time, `python3 build.py`, commit "Breaking column <slug>", push, confirm the Pages deploy (ROUTINE.md 8b). If the news has moved on since the draft, update it first and say so.
+- At most one 速報コラム per check; if nothing qualifies, do nothing.
+
 ## Race weekends: グランプリ特別号
 Race weekends get three special issues, one per day, each with its own page and vote:
 - 金曜 (practice): after FP2 — long runs, upgrades, what teams and drivers said, practice incidents. Slug `<gp>-2026-fri`, gpLabel e.g. "マレーシアGP特別号・金曜".
