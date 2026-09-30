@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-01T00:40:00+09:00",
+ "updatedAt": "2026-10-01T06:20:00+09:00",
  "topics": {
   "horner-ferrari": {
    "title": "ホーナーのフェラーリ発言と後任探し、バスール進退うわさが交錯",
@@ -18,8 +18,8 @@
    "summary": "バクー決勝後のインタビューで、フェラーリのルクレールが最新パワーユニット仕様ADUO2の搭載を明かし、隣にいた広報担当者を慌てさせた一幕が英伊仏日の各メディアで伝えられた。モンツァでのクラッシュ後に使用可否が注目されていた個体で、チームが公表を避けていた情報だったという。ルクレール自身は4位に終わったレースについて、レッドブルやマクラーレンの最近の進歩に速さで追いついていないと認めている。"
   },
   "cadillac-bottas-ai-malfunction": {
-   "title": "ボッタスのバクー・クラッシュ、AI制御システムの誤作動が原因に",
-   "summary": "キャデラックのボッタスがバクー決勝終盤の15コーナーでクラッシュした原因について、本人が車両のAI制御システムの誤作動を説明した。1コーナーでコース外に出た影響で位置情報を見失い、その後は前輪しか効かず後輪のブレーキとエネルギー回生がほぼ機能しない状態が続いたという。F1-GateとPlanetF1がそれぞれ本人のコメントを伝えている。"
+   "title": "ボッタスのバクー・クラッシュ、1コーナーのミスで制御が混乱か",
+   "summary": "キャデラックのボッタスがバクー終盤の15コーナーで起こしたクラッシュについて、本人が車両システムの混乱を説明した。1コーナーでコース外に出て余分に走った距離で位置の計算が狂い、スーパークリッピングが早く強く働いたうえ、後輪の回生が効かず前輪ブレーキしか使えなかったという。Motorsport-Totalはマクラーレン勢にも同様の現象があったと伝えている。"
   },
   "f1-qatar-abudhabi-decision": {
    "title": "カタール・アブダビ開催の是非、選手の間で見方が分かれる",
@@ -68,9 +68,135 @@
   "baku-post-race-penalties": {
    "title": "バクー決勝後の処分：ボルトレートが黄旗無視で10秒加算",
    "summary": "アゼルバイジャンGP決勝の再スタートで、ボルトレートは黄旗が振られる中でペレスを抜き、レース後に10秒加算を受けて13位から15位に降格した。エンジニアが無線で「セーフティカーではない」と伝えていたが、スチュワードは矛盾した情報があったと認めつつ、黄旗は独立した合図であり順守が必要だと判断した。入賞圏外だったためポイントへの影響はなかった。"
+  },
+  "lawson-2027-seat": {
+   "title": "レッドブル、ハジャー続投を確認　好走のローソンは来季の去就が焦点に",
+   "summary": "レッドブルのメキース代表は、手首骨折で3戦欠場したハジャーの2027年継続を「簡単な決断」と語った。代役を務めたローソンは3戦で14ポイントを挙げ評価を高めたが、判断の軸はハジャーの成長曲線だったという。ローソンの来季の居場所をめぐる見方が各メディアで出ている。"
+  },
+  "russell-baku-season-reflection": {
+   "title": "ラッセル、バクーの完勝を振り返り残り8戦で勝利を狙う",
+   "summary": "ラッセルはバクーでポール、優勝、ファステストラップ、全周回リードを達成した。新世代車への適応に努力を重ねた成果と語り、チームメイトのアントネッリに66ポイント差をつけられている状況でも、残り8戦は1戦ずつ勝利を狙う姿勢を示した。"
+  },
+  "pirelli-2027-tire-plan": {
+   "title": "ピレリ、2027年は摩耗の大きいタイヤで1ストップ減を狙う",
+   "summary": "ピレリが2027年用タイヤで、安定性よりデグラデーションの大きさを優先する方針だと伝えられた。2026年用の開発はミュールカー中心だったが、来季用は実際の2026年マシンで試せる点が違う。ファンの間では、結局1ストップに収束するのではという懐疑的な声も出ている。"
   }
  },
  "articles": [
+  {
+   "id": "ja-f1jouhou-toyota-driver-development",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "topic": "toyota-winning-driver-program",
+   "title": "トヨタ、F1で勝てるドライバーの発掘・育成に本腰か",
+   "summary": "トヨタのモータースポーツ責任者が、カート段階で年1000万〜2000万円かかる現状など入口の狭さを課題に挙げ、GRカートの拡充や才能の発掘に取り組む方針を語ったという記事をまとめた投稿。掲示板では期待の声と、国内育成でF1級が育つのかという懐疑的な見方が分かれた。",
+   "orig": "トヨタ、F1で勝てる人材を発見・育成に向けて本気で取り組んでいる模様",
+   "url": "https://f1jouhou2.com/blog-entry-31605.html",
+   "published": "2026-10-01T05:00:00+09:00"
+  },
+  {
+   "id": "ja-f1jouhou-pirelli-2027-one-stop",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "topic": "pirelli-2027-tire-plan",
+   "title": "2027年は1ストップが減る？ピレリが摩耗の大きいタイヤ導入へ",
+   "summary": "The Raceの報道を受け、ピレリが2027年用タイヤで安定性よりデグラデーションの大きさを狙うと伝えた投稿をまとめたもの。掲示板では「結局ドライバーが管理して1ストップになる」といった懐疑的な声や、戦略の多様化を求める意見が目立った。",
+   "orig": "2027年のF1は1ストップレースが減る？ピレリがデグラデーションの大きいタイヤを導入へ",
+   "url": "https://f1jouhou2.com/blog-entry-31603.html",
+   "published": "2026-09-30T23:00:00+09:00"
+  },
+  {
+   "id": "en-rn365-formula-e-faster-than-f1-wet",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "RacingNews365",
+   "cat": "カルチャー",
+   "topic": "formula-e-gen4-wet-claim",
+   "title": "フォーミュラE「大雨ならF1より速い」　Gen4のウェット用タイヤで主張",
+   "summary": "フォーミュラEのテストドライバー、ロシターが、新型Gen4は大雨のコンディションでF1より「快適に速い」と自信を示した。F1なら赤旗になる状況でも走れるウェット用タイヤが根拠で、約815馬力のマシンにはブリヂストンが供給する。",
+   "orig": "Formula E hand F1 bombshell claim: 'We will be faster'",
+   "url": "https://racingnews365.com/formula-e-hand-f1-bombshell-claim-we-will-be-faster",
+   "published": "2026-09-30T17:00:00+01:00"
+  },
+  {
+   "id": "en-rn365-hamilton-malaysia-two-reasons",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "RacingNews365",
+   "cat": "サーキット",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-sepang-return",
+   "title": "ハミルトン、マレーシア復帰を歓迎　良いレースと肉体的な試練を理由に",
+   "summary": "ハミルトンは、セパンは「良いレースができるサーキット」で、抜きどころのあるコースで開催すべきだと語った。高温多湿の中で56周を走れば体重が最大4kg落ちるとして、肉体面での厳しさも楽しみにしている。2014年に勝った思い出にも触れた。",
+   "orig": "Lewis Hamilton identifies two key reasons for F1 to race in Malaysia",
+   "url": "https://racingnews365.com/lewis-hamilton-identifies-two-key-reasons-for-f1-to-race-in-malaysia",
+   "published": "2026-09-30T18:20:00+01:00"
+  },
+  {
+   "id": "ja-f1gate-hadjar-2027-mekies-lawson",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull",
+    "racingbulls"
+   ],
+   "topic": "lawson-2027-seat",
+   "title": "レッドブル代表、ハジャー続投は「簡単な決断」　代役ローソンの好走でも揺らがず",
+   "summary": "レッドブルのメキース代表は、手首骨折で3戦欠場したハジャーの2027年継続について「非常に簡単な決断だった」と語った。代役のローソンは3戦で14ポイントを挙げたが、評価の軸はハジャーが示してきた成長曲線だったという。",
+   "orig": "レッドブル代表、ハジャーの2027年契約延長について語る",
+   "url": "https://f1-gate.com/liam-lawson/f1_97329.html",
+   "published": "2026-09-30T22:22:00+09:00"
+  },
+  {
+   "id": "de-motorsport-total-russell-dominant-weekend",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "baku",
+   "topic": "russell-baku-season-reflection",
+   "title": "ラッセル、バクーは「キャリアで最も支配的な週末」　この先は1戦ずつ勝利を狙う",
+   "summary": "ラッセルはバクーでポール、優勝、ファステストラップ、全周回リードを達成し、自身最も支配的な週末と振り返った。新世代車への適応に努力を重ねた成果と語る一方、チームメイトのアントネッリが66ポイント差でリードしており、残り8戦は勝利を積み重ねる考えだ。",
+   "orig": "George Russell: Was kommt nach dem \"dominantesten Wochenende\"?",
+   "url": "https://www.motorsport-total.com/formel-1/news/george-russell-was-kommt-nach-dem-dominantesten-wochenende-26093008",
+   "published": "2026-09-30T14:25:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-bottas-verbremser-ecu",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "テクニカル",
+   "teams": [
+    "cadillac"
+   ],
+   "circuit": "baku",
+   "topic": "cadillac-bottas-ai-malfunction",
+   "title": "ボッタスのクラッシュの謎、1コーナーのミスで制御が混乱か　過剰なスーパークリッピングが原因",
+   "summary": "ボッタスが1コーナーでロックアップしてコース外に出た際の余分な走行距離で、距離をもとに位置を把握する制御システムが混乱し、15コーナー手前で想定より早く強いスーパークリッピングが起きたと報じた。後輪側の回生が働かず前輪ブレーキしか効かなかったという。マクラーレン勢にも同様の現象があったとされる。",
+   "orig": "Technik-Rätsel gelöst: Ein Verbremser schaltete Bottas' Steuergerät aus",
+   "url": "https://www.motorsport-total.com/formel-1/news/technik-raetsel-geloest-ein-verbremser-schaltete-bottas-steuergeraet-aus-26093012",
+   "published": "2026-09-30T18:12:00+02:00"
+  },
   {
    "id": "en-therace-malaysia-driver-expectations",
    "kind": "news",
@@ -1323,130 +1449,6 @@
    "orig": "シャルル・ルクレール フェラーリF1最新PUをうっかり明かす 広報担当者も慌てる",
    "url": "https://f1-gate.com/charles-leclerc/f1_97291.html",
    "published": "2026-09-28T15:47:00+09:00"
-  },
-  {
-   "id": "ja-f1are-colapinto-no-penalty-points",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "teams": [
-    "alpine"
-   ],
-   "circuit": "baku",
-   "topic": "colapinto-penalty",
-   "title": "【まとめ】コラピントの同士討ち、なぜペナルティポイントがつかなかったのかと疑問の声",
-   "summary": "アゼルバイジャンGP再スタートでの多重事故を起こしたコラピントに、次戦5グリッド降格の処分は科されたもののペナルティポイントは加算されなかったことについて、掲示板で疑問視する声を紹介するまとめ記事。「出場停止は重すぎるが5グリッド降格は軽すぎる気がする」といった声のほか、今季は全体的にペナルティポイントの付与が少ない傾向にあり、危険なリスタートでの事故に対する基準として適切なのか疑問視する意見も出ている。",
-   "orig": "F1アゼルバイジャンGP決勝SC明けの事故でコラピントになぜペナルティポイントがつかないのかと疑問の声",
-   "url": "https://f1are.com/blog-entry-3936.html",
-   "published": "2026-09-28T12:00:00+09:00"
-  },
-  {
-   "id": "ja-f1are-lindblad-lawson-leniency-debate",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "teams": [
-    "racingbulls"
-   ],
-   "circuit": "baku",
-   "topic": "lindblad-lawson-clash",
-   "title": "【まとめ】チームメイト同士のインシデント、裁定はなぜ甘くなりがちなのかと疑問の声",
-   "summary": "リンドブラッドがローソンに追突した一件でスチュワードが「行き場がなかった」として無罰と判断したことについて、The Raceが「本人のブレーキングミスだ」と異論を唱えたと紹介するまとめ記事。掲示板ではベッテルとリカルドの接触やオコンの過去の一件も引き合いに、チームメイト同士のインシデントは裁定が甘くなりがちだとの指摘が相次いだ。チームは処分回避で得をする一方、被害を受けたドライバーには「死活問題」だとして、相手を問わず一貫した基準を求める声も出ている。",
-   "orig": "F1ではチームメイト同士のインシデントの裁定は甘い傾向だけどそれでいいのか？",
-   "url": "https://f1are.com/blog-entry-3934.html",
-   "published": "2026-09-28T12:00:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-bottas-ai-crash",
-   "kind": "tech",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "テクニカル",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-bottas-ai-malfunction",
-   "circuit": "baku",
-   "title": "ボッタスのバクー・クラッシュ、原因はAI制御システムの誤作動",
-   "summary": "キャデラックのボッタスが決勝終盤の15コーナーでクラッシュした原因について、車両のAI制御システムが誤作動したためだと明かした。序盤の1コーナーでコース外に出た影響でシステムが車両位置を見失い、その後は前輪ばかりが効いて後輪がほとんど利かないブレーキ配分の異常が約100メートルにわたり続いたと説明。本人は「かなり奇妙だった」と振り返っている。",
-   "orig": "バルテリ・ボッタス F1バクーのクラッシュ原因はAI誤作動「システムが混乱した」",
-   "url": "https://f1-gate.com/bottas/f1_97283.html",
-   "published": "2026-09-28T08:45:00+09:00"
-  },
-  {
-   "id": "ja-f1data-horner-vasseur-frustration",
-   "kind": "rumor",
-   "lang": "ja",
-   "region": "日本",
-   "source": "Formula1-Data",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "horner-ferrari",
-   "title": "バスール代表、フェラーリ後任騒動にいら立ち「ホーナー氏はどこでも仕事を探しているだけ」",
-   "summary": "アゼルバイジャンGPでルクレール4位、ハミルトン6位に終わったフェラーリのバスール代表が、自身の進退を巡る臆測にいら立ちを見せたとFormula1-Dataが伝えた。「十分に落ち着いた環境で仕事ができていない」とし、取材の半分近くが自身の去就に関する質問だと不満を漏らしたという。話題の中心である元レッドブル代表ホーナーについては「どこでも仕事を探しているのはみんな知っている」と切り返し、フェラーリで共に働けるかとの問いには「それは広報に聞いてくれ」とはぐらかしたと報じている。",
-   "orig": "「Mr.ホーナーは仕事を探している」――バスール代表、フェラーリでの自身の将来を巡る憶測に苛立ち",
-   "url": "https://formula1-data.com/article/horner-ferrari-dream-vasseur-frustration-2026",
-   "published": "2026-09-28T05:45:00+09:00"
-  },
-  {
-   "id": "fr-nextgenauto-leclerc-aduo2-secret",
-   "kind": "news",
-   "lang": "fr",
-   "region": "フランス",
-   "source": "Nextgen-Auto",
-   "cat": "テクニカル",
-   "teams": [
-    "ferrari"
-   ],
-   "circuit": "baku",
-   "topic": "leclerc-aduo2-secret",
-   "title": "ルクレール、仏メディアにも本音「メルセデスからもレッドブルからも遠かった」",
-   "summary": "フランスのネクストジェンオートは、ルクレールがバクー決勝後に最新パワーユニット「ADUO2」の搭載を認め、広報担当者を慌てさせた一幕を伝えた。本人は「メルセデスからもレッドブルからも遠く、マクラーレンにもやや及ばなかった」と競争力不足を率直に認め、ライバル陣営が最近のアップデートで大きく進歩したため早急な対応が必要だと語ったという。次戦オースティンに向けた改良も予定しているが、効果は未知数だとしている。",
-   "orig": "Leclerc en dit trop sur sa Ferrari, son attachée de presse panique",
-   "url": "https://motorsport.nextgen-auto.com/fr/formule-1/leclerc-en-dit-trop-sur-sa-ferrari-son-attachee-de-presse-panique,211819.html",
-   "published": "2026-09-27T19:23:00+02:00"
-  },
-  {
-   "id": "en-rn365-vasseur-succession-plan",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "horner-ferrari",
-   "title": "フェラーリ、バスール後任にコレッタ氏やダンブロジオ副代表の名。円満退任も模索か",
-   "summary": "フェラーリのバスール代表を巡る報道をRacingNews365がまとめた。パワーユニットの非力さで表彰台から遠ざかる中、会長のエルカン氏はル・マン部門を率いるコレッタ氏や副代表のダンブロジオ氏を後継候補として複数回打診しており、円満な形での早期退任シナリオも取り沙汰されているという。ホーナーの英タイムズ紙での発言が波紋を広げたものの、内部の反発が強く実現性は低いとの見方も紹介。ホーナー自身がナポリから発信した投稿がさらに憶測を呼んだとも伝えている。",
-   "orig": "Fred Vasseur under pressure at Ferrari - the Christian Horner rumours explained",
-   "url": "https://racingnews365.com/fred-vasseur-under-pressure-at-ferrari-the-christian-horner-rumours-explained",
-   "published": "2026-09-27T18:00:00+01:00"
-  },
-  {
-   "id": "en-rn365-alonso-honda-data-dispute",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "テクニカル",
-   "circuit": "baku",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-alonso-engine-dispute",
-   "title": "アロンソが訴えた出力低下、ホンダは「データ上は問題なし」と主張",
-   "summary": "アゼルバイジャンGP決勝でリタイアしたアロンソは、ボッタスと争う中で直線で約1.5秒もタイムを失ったとしてホンダ製パワーユニットの不調を訴えた。しかしホンダのトラックサイド責任者オリハラ氏はレース後にデータを確認した結果、「エンジンは問題ない」と主張し、両者の見解は食い違ったままだという。ホンダは金曜フリー走行2でオイル系統の異常信号を検知して部品を交換していたことも明らかにしており、原因究明は今後も続くとしている。",
-   "orig": "Fernando Alonso and Honda at odds over 'healthy' engine problem",
-   "url": "https://racingnews365.com/fernando-alonso-and-honda-at-odds-over-healthy-engine-problem",
-   "published": "2026-09-27T17:15:00+01:00"
   }
  ]
 }
