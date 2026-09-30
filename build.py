@@ -481,6 +481,18 @@ def lens_issue_blocks(L, slug, flag_map, region_of):
              f'<div class="answer" id="answer"><h4>{e(A["title"])}<span class="tg">分析</span></h4><ol>'
              + ''.join(f'<li>{e(p)}</li>' for p in A['points']) + f'</ol><p class="caveat">{e(A["caveat"])}</p></div></section>')
 
+    C = L.get('closing')
+    if C:
+        # optional wrap-up section after the mystery: {"title": ..., "body": [[kind, text], ...]}
+        B.append('<section class="lens-sec"><div class="lens-sh"><span class="no">3</span><h2>' + e(C['title']) + '</h2></div><div class="col-body">')
+        for k, t in C['body']:
+            if k == 'h2': B.append(f'<h2>{e(t)}</h2>')
+            elif k == 'quote': B.append(f'<blockquote><p>{e(t)}</p></blockquote>')
+            elif k == 'bold': B.append(f'<p><strong>{e(t)}</strong></p>')
+            elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
+            else: B.append(f'<p>{e(t)}</p>')
+        B.append('</div></section>')
+
     return B
 
 

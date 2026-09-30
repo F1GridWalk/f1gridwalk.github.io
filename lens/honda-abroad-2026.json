@@ -1,0 +1,275 @@
+{
+  "draft": true,
+  "slug": "honda-abroad-2026",
+  "topics": [
+    "honda-pu-struggle",
+    "honda-alonso-engine-dispute"
+  ],
+  "gpLabel": "臨時号",
+  "published": "2026-09-30T21:00:00+09:00",
+  "big": "70",
+  "title": "「ホンダは遅い」の数字は、どこまで本当？ 日本語では語られない3つの話と「遅いのは本当にエンジン？」の謎",
+  "titleHtml": "「ホンダは遅い」の数字は、どこまで本当？ 日本語では語られない<em>3つの話</em>と、<em>「遅いのは本当にエンジン？」</em>の謎",
+  "dek": "「F2より遅い」「メルセデスから70馬力遅れ」。今季、ホンダをめぐる数字は世界中を駆けめぐった。でも、その比べ方や出どころまでたどると、見え方は少し変わる。10月1日、ホンダのF1パワーユニット開発は新しい責任者のもとで動き出す。その前に、海外の記事を原文までたどって整理しました。",
+  "unreported": {
+    "lead": "海外の記事にだけ書かれていた話と、見出しの数字の中身です。",
+    "note": "autosport web・F1-Gate・Formula1-Data・motorsport.com日本版・TopNewsなどを日本語で検索し、同じ内容の記事が見当たらなかった話です（9月30日時点）。「F2より遅い」という比較と、AutoRacerの「70馬力」という数字そのものは日本語でも報じられています。見落としがあれば、元の記事とあわせてお知らせください。",
+    "items": [
+      {
+        "source": "motor.es",
+        "region": "スペイン",
+        "lang": "es",
+        "kind": "tech",
+        "headline": "「F2より遅い」の比べ方。同じ場所では、フェラーリ勢もF2より下だった",
+        "body": "バクーの金曜、「アストンマーティンはF2の全車より遅い」という比較が世界中で広まり、日本でも報じられた。比べたのは、ゴールライン上の速度だ。スペインのmotor.esは、FIAの計測データを使って反論した。2026年のF1は、長いストレートの終わりで電気の出力が途切れる（クリッピング）ため、ゴールライン付近では減速している。電気を使わないF2は、最後まで加速を続ける。実際、同じゴールラインでは、フェラーリのハミルトン（314.1km/h）も、フェラーリのPUを積むハースのベアマン（307.3km/h）も、F2のボヤ（316.4km/h）より遅かった。一方、ストレートの途中のスピードトラップでは、フリー走行2回目のアストン（ストロール309.3km/h、アロンソ307.6km/h）が、ボヤ（298km/h）を上回っている。ただしF1の先頭（ハジャーの339.6km/h）とは約30km/hの差がある。同媒体の結びはこうだ。「この日本のメーカーが今季、笑いものすれすれなのは間違いない。でも、その理由のひとつは、F2との最高速の比較ではない」。",
+        "url": "https://www.motor.es/formula-1/aston-martin-lento-recta-f2-datos-baku-desmienten-memes-honda-2026116626.html"
+      },
+      {
+        "source": "AutoRacer",
+        "region": "イタリア",
+        "lang": "it",
+        "kind": "rumor",
+        "headline": "「ホンダは70馬力差」。その数字、同じ媒体の中で何度も変わっていた",
+        "body": "9月1日、イタリアのAutoRacerは「ホンダのPUは、メルセデスからまだ約70馬力遅れている」「1周あたり約1.2秒に相当する」と報じ、各国で引用された。日本でも紹介されている。ところが、同じ媒体の記事をさかのぼると、数字は動いている。7月28日は、トップとの差を「90馬力と言われている」とし、新しいスペックには「35馬力、1周0.5秒ほど」の向上が見込まれると書いた。8月20日は、ADUO（遅れたメーカーへの救済の仕組み）で得たのは「約15馬力」で、期待の30馬力には届かなかったとした。9月1日は、オランダGPでの向上を「約17馬力」としている。ホンダは具体的な数字を出しておらず、FIAも馬力の数字は公表していない。どの数字も、外から確かめる方法がないのが実情だ。",
+        "url": "https://autoracer.it/aston-martin-piano-newey-prende-forma-honda-lontana-70cv-power-unit/",
+        "also": [
+          {
+            "source": "AutoRacer（7月28日）",
+            "region": "イタリア",
+            "url": "https://autoracer.it/aston-martin-amr26b-debutta-nuovo-motore-honda-ecco-quanto-puo-valere/"
+          },
+          {
+            "source": "AutoRacer（8月20日）",
+            "region": "イタリア",
+            "url": "https://autoracer.it/aston-martin-aduo-honda-porta-circa-15-cv-alonso-aspetta-ancora/"
+          }
+        ]
+      },
+      {
+        "source": "The Race",
+        "region": "イギリス",
+        "lang": "en",
+        "kind": "tech",
+        "headline": "振動の一因は、ニューウェイの「攻めすぎた」車体？",
+        "body": "元F1チームの技術者で解説者のゲイリー・アンダーソンは3月、英The Raceのコラムで、振動の問題について一つの可能性を挙げた。たとえば車体の中のバッテリーを収めるくぼみが「ほんの少し小さすぎて、振動を抑える取り付けを入れる余裕がない」としたら、という仮定の話だ。「限界を攻めすぎることもある」とも書いている。さらに、ホンダと仕事をした自身の経験から、「（問題の解決は）すべて表に出さずに行われた」「ホンダは、誰であれ公の場で礼を欠くことをとても嫌う」と振り返り、ニューウェイが公の場でホンダを批判するやり方に疑問を投げかけた。",
+        "url": "https://www.the-race.com/formula-1/gary-anderson-adrian-newey-forthright-criticism-risks-alienating-honda/"
+      }
+    ]
+  },
+  "mystery": {
+    "title": "謎：アストンが遅いのは、本当にエンジンだけのせい？",
+    "lead": "海外の見出しの多くは「ホンダのせい」。でも、車体の弱さを指摘する声も、春から出続けている。証拠を読んで、あなたの判定を。",
+    "questionHtml": "アストンの遅さは、<br>本当にエンジンだけのせい？",
+    "setup": "15戦で3点、コンストラクターズは11チーム中10位。8月には新しいエンジン「スペック2」も入った。それでも遅いのは、どこのせいなのか。",
+    "evidence": [
+      {
+        "label": "4月",
+        "head": "GPSデータ「遅れの半分以上は車体」",
+        "body": "4月の鈴鹿のあと、英BBCは「アストンマーティンの遅れの半分以上は車体が原因」と伝え、他チームがGPSデータで見ている内容とも一致するとした。日本でもautosport webが英メディアの分析として紹介している。",
+        "sources": [
+          {
+            "source": "Crash.net",
+            "region": "イギリス",
+            "lang": "en",
+            "url": "https://www.crash.net/f1/news/1092894/1/honda-only-responsible-half-aston-martins-f1-pace-deficit-fresh-report-claims",
+            "title": "ホンダの責任は遅れの半分だけ、との新たな報道"
+          },
+          {
+            "source": "autosport web",
+            "region": "日本",
+            "lang": "ja",
+            "url": "https://www.as-web.jp/f1/1308108",
+            "title": "「問題の半分以上はシャシー」英メディアが分析するアストンマーティン・ホンダの不振"
+          }
+        ]
+      },
+      {
+        "label": "4月",
+        "head": "チームも「高速コーナーが良くない。重量も制限に届いていない」",
+        "body": "英The Raceは、鈴鹿の予選でアストンのコーナーの速度が最速のマシンより最大約20km/h遅かったと分析した。チームのマイク・クラックも「高速コーナーは良くない。重量も制限に届いていない」と認めている。同誌は、遅れを車体とエンジンで半分ずつと仮定すると、それぞれ1周1.5〜1.7秒ほどになると見積もった。",
+        "sources": [
+          {
+            "source": "The Race",
+            "region": "イギリス",
+            "lang": "en",
+            "url": "https://www.the-race.com/formula-1/aston-martin-2026-f1-car-as-bad-as-honda-engine/",
+            "title": "アストンの車体は、ホンダのエンジンと同じくらい悪い"
+          }
+        ]
+      },
+      {
+        "label": "6月",
+        "head": "車体は重く、開発のスタートも遅かった",
+        "body": "The Raceの見積もりでは、アストンの車体は重量制限より10〜15kg重い。ニューウェイ自身も、2026年型の模型が風洞に入ったのは2025年の4月半ばだったと明かしている。",
+        "sources": [
+          {
+            "source": "The Race",
+            "region": "イギリス",
+            "lang": "en",
+            "url": "https://www.the-race.com/formula-1/what-we-learned-about-aston-martins-new-lighter-car-plans/",
+            "title": "アストンマーティン2026年型の問題の全容"
+          },
+          {
+            "source": "Autosport",
+            "region": "イギリス",
+            "lang": "en",
+            "url": "https://www.autosport.com/f1/news/aston-martin-f1-2026-late-car-design/10794966/",
+            "title": "ニューウェイ、2026年型の開発の遅れを語る"
+          }
+        ]
+      },
+      {
+        "label": "8月",
+        "head": "FIAの判定は「4％超」。ただし、スペック2の前の数字",
+        "body": "FIAは、ホンダのエンジン（内燃機関）を「4％を超える」区分と判定し、追加の開発機会を認めた。ただし判定の期間はハンガリーGPまでで、8月のスペック2より前。同じ区分には、フェラーリとアウディも入っている。スペック2以降の判定はまだ出ていない。",
+        "sources": [
+          {
+            "source": "FIA",
+            "region": "国際",
+            "lang": "en",
+            "url": "https://www.fia.com/news/fia-announces-aduo-results-following-first-and-second-review-periods-2026",
+            "title": "FIA、ADUO（追加開発の機会）の審査結果を発表"
+          }
+        ]
+      },
+      {
+        "label": "9月",
+        "head": "モンツァ。直線での遅れは本物",
+        "body": "ホンダは「私たちのパワーユニットは性能が足りていない」と認めた。The Raceの分析では、アロンソはレッドブルのPUを積むマシンに対し、1コーナーまでの直線だけで0.4秒失っていた。",
+        "sources": [
+          {
+            "source": "Honda Racing",
+            "region": "日本",
+            "lang": "en",
+            "url": "https://honda.racing/f1/post/f1-2026-rd13-race",
+            "title": "2026年 第13戦 イタリアGP 決勝（ホンダ公式）"
+          },
+          {
+            "source": "The Race",
+            "region": "イギリス",
+            "lang": "en",
+            "url": "https://www.the-race.com/formula-1/f1-teams-monza-italian-gp-early-energy-depoyment-patterns/",
+            "title": "モンツァで見えた各チームのエネルギーの使い方"
+          }
+        ]
+      },
+      {
+        "label": "9月",
+        "head": "でもタイム差は、3つのセクターにほぼ均等",
+        "body": "autosport webの分析によると、モンツァ予選で最速マシンとの差は、セクター1が1.166秒、セクター2が1.179秒、セクター3が1.153秒。「ストレートだけでなく、コーナーでも同じように遅かった」としている。",
+        "sources": [
+          {
+            "source": "autosport web",
+            "region": "日本",
+            "lang": "ja",
+            "url": "https://carview.yahoo.co.jp/news/detail/f89f7e1a066613b4c3ee029565ee862a1ceca818",
+            "title": "【アストンマーティン・ホンダの現在地】Bスペックカーによる改善では完全に不十分"
+          }
+        ]
+      },
+      {
+        "label": "9月",
+        "head": "ストロール「パワーも、ダウンフォースも足りない」",
+        "body": "バクーの予選後、ストロールは「ここではパワーに苦しんでいるけど、ダウンフォースも足りない。これが僕らのマシンで、運転は簡単じゃない」と話した。",
+        "sources": [
+          {
+            "source": "Honda Racing",
+            "region": "日本",
+            "lang": "en",
+            "url": "https://honda.racing/f1/post/f1-2026-rd15-qualifying",
+            "title": "2026年 第15戦 アゼルバイジャンGP 予選（ホンダ公式）"
+          }
+        ]
+      }
+    ],
+    "choices": [
+      {
+        "id": "A",
+        "text": "ほぼエンジンのせい"
+      },
+      {
+        "id": "B",
+        "text": "エンジンも車体も、どちらも大きい"
+      }
+    ],
+    "answer": {
+      "title": "証拠が示すこと",
+      "points": [
+        "直線での遅れは本物。ホンダ自身が「性能が足りていない」と認め、モンツァではアロンソが1コーナーまでで0.4秒失っていた。",
+        "でも「スペック2以降、エンジンだけでどれだけ遅いか」を測った公開データはない。FIAの「4％超」はスペック2より前の判定で、フェラーリやアウディも同じ区分だ。出回っている馬力の数字も、外からは確かめられない。",
+        "車体の問題も、春から指摘され続けている。GPSデータでは遅れの半分以上が車体。チームも「高速コーナーが良くない」「重い」と認め、開発のスタートも遅かった。",
+        "9月のモンツァでも、タイム差は直線だけでなく、3つのセクターにほぼ均等に出ていた。",
+        "証拠に近いのはB。エンジンが遅れているのは確か。でも「全部ホンダのせい」と言い切れる証拠はない。"
+      ],
+      "caveat": "9月30日時点の証拠による判定です。モンツァのセクター差は予選1周のデータで、コースの特徴にも左右されます。エンジンと車体の遅れを正確に切り分けたデータは、公開されていません。投票はこのサイトで数えて、次のWORLD MEDIA LENSで結果を紹介します。"
+    }
+  },
+  "extraSources": [
+    {
+      "source": "Honda Racing",
+      "region": "日本",
+      "lang": "ja",
+      "url": "https://honda.racing/ja/features/changes-to-the-f1-power-unit-development-structure",
+      "title": "F1パワーユニット開発体制の変更について（ホンダ公式）"
+    },
+    {
+      "source": "東京スポーツ",
+      "region": "日本",
+      "lang": "ja",
+      "url": "https://www.tokyo-sports.co.jp/articles/-/404995",
+      "title": "アロンソ、2027年末までアストンと契約延長"
+    },
+    {
+      "source": "autosport web",
+      "region": "日本",
+      "lang": "ja",
+      "url": "https://www.as-web.jp/f1/1357178",
+      "title": "アストンマーティン、アロンソとストロールの契約延長を発表"
+    },
+    {
+      "source": "AutoRacer",
+      "region": "イタリア",
+      "lang": "it",
+      "url": "https://autoracer.it/aston-martin-amr26b-debutta-nuovo-motore-honda-ecco-quanto-puo-valere/",
+      "title": "新しいホンダのエンジンはどれほどの価値か（7月28日）"
+    },
+    {
+      "source": "AutoRacer",
+      "region": "イタリア",
+      "lang": "it",
+      "url": "https://autoracer.it/aston-martin-aduo-honda-porta-circa-15-cv-alonso-aspetta-ancora/",
+      "title": "ADUOでホンダは約15馬力（8月20日）"
+    }
+  ],
+  "closing": {
+    "title": "10月1日、ホンダは新しい責任者で再出発",
+    "body": [
+      [
+        "p",
+        "10月1日、ホンダのF1パワーユニット開発の責任者（LPL）が交代します。角田哲史さんに代わって就任するのは、深尾洋一郎さん。2022年からアシスタントLPLを務め、ソフトウェア部門の責任者でもありました。2002年にホンダに入り、F1やMotoGPで制御システムの開発に携わってきた人です。"
+      ],
+      [
+        "p",
+        "ホンダの発表によると、狙いは開発をさらに加速することと、次の世代へ技術を確実に引き継ぐこと。2027年以降もルールの変更が見込まれるなか、早めに新しい体制に移って、競争力のあるパワーユニットを作る土台を固める、としています。"
+      ],
+      [
+        "p",
+        "同じ週、アストンマーティンはアロンソとストロールの契約延長を発表しました。東京スポーツによると、アロンソは2027年末までの契約で、ホンダについて「もう一度チャンスが与えられるべきだ」という趣旨の話をしています。一度目の挑戦はうまくいかなかったが、時間があれば良いエンジンを作ってきた会社だ、と。"
+      ],
+      [
+        "h2",
+        "ここまでを整理すると"
+      ],
+      [
+        "p",
+        "ホンダのエンジンが遅れているのは、ホンダ自身も認める事実です。でも、世界中で引用された「F2より遅い」は比べ方に問題があり、「70馬力差」は同じ媒体の中でも数字が動き、外からは確かめられません。そして、遅さの原因は車体の側にもあると、春から何度も指摘されてきました。"
+      ],
+      [
+        "p",
+        "新しい責任者のもとで、ホンダがどこまで差を縮められるのか。数字の見出しだけではなく、その出どころも一緒に見ていきたいところです。"
+      ]
+    ]
+  },
+  "eyeHtml": "「ホンダは遅い」の<br><em>数字</em>、どこまで本当？",
+  "eyeSub": "日本語では語られない3つの話と、10月1日の新体制"
+}
