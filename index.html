@@ -1341,6 +1341,16 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .lens-link b{font-size:15px;line-height:1.5}
 .lens-link span{font-size:12.5px;color:#D3CEC2}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lens-link{background:#0F110E;border:1px solid #353A32}}
+/* top: column first, 今週の注目 compact (owner's choice A, 30 Sep 2026) */
+.hero.dbox{display:flex;flex-direction:column}
+.hero .lens-link{order:-1;margin:0 0 14px;padding:18px 22px;gap:6px}
+.hero .lens-link b{font-size:clamp(18px,1.9vw,22px);line-height:1.5}
+.hero .lens-link span{font-size:13px}
+.dash-main .hero-in{grid-template-columns:1fr}
+.dash-main .hero-art{display:none}
+.dash-main .hero-text{gap:6px}
+.dash-main .hero h1{font-size:16px;line-height:1.5}
+.dash-main .hero-sum{font-size:13.5px;line-height:1.7;-webkit-line-clamp:1}
 
 .about-pop p + p{margin-top:10px}
 .about-pop a{color:#E8946C;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
