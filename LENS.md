@@ -12,12 +12,11 @@ WORLD MEDIA LENS has two kinds of pages (owner's decision, 29 Sep 2026):
 - A column that could stand as a グランプリ特別号 story may also be reused there later.
 
 ## 0b. Breaking column (速報コラム)
-Owner's decision, 30 Sep 2026: when big news breaks, a 速報コラム is drafted in addition to the 07:00 column, but it is published ONLY after the owner approves it.
-- A scheduled task checks at about 00:41, 12:41 and 18:41 JST (after the article updates). A candidate is: an official announcement (driver signing or exit, team principal change, calendar change, penalty or rule decision), a story covered by 5+ outlets in the last 12 hours, or a clear gap between what Japanese outlets report and what foreign outlets report (e.g. `ocon-future-20260930`: Japan carried "Ocon to Toyota WEC", GPblog wrote it was off the table).
-- Same format and fact rules as §0 (`"type": "column"`, `"gpLabel": "速報コラム"`, slug `<keyword>-<yyyymmdd>`), about 1,000–1,500 characters, and it must say clearly what is confirmed and what is only reported. Never reuse a story already in a published `lens/*.json`.
-- The draft goes to the `reserve` branch as `breaking/<slug>.json` with `"draft": true`, plus a phone-width preview and the note/X assets under `daily/<date>/`. Nothing goes to `main` before the owner's OK.
-- On OK: copy the JSON to `main` as `lens/<slug>.json`, remove `"draft"`, set `published` to the real time, `python3 build.py`, commit "Breaking column <slug>", push, confirm the Pages deploy (ROUTINE.md 8b). If the news has moved on since the draft, update it first and say so.
-- At most one 速報コラム per check; if nothing qualifies, do nothing.
+Owner's decision, 30 Sep 2026: when big news breaks, a 速報コラム is written and published automatically, without waiting for the owner, in addition to the 07:00 column.
+- A scheduled task checks at about 00:41, 07:41, 12:41 and 18:41 JST (after the article updates). Trigger: a topic in `articles.json` covered by 5 or more different outlets whose articles are from the last 12 hours, that is not already the subject of any published `lens/*.json` (check titles, bodies and `extraSources` URLs). If the topic already has a column, it may instead add a short dated update paragraph ("【9月30日追記】…") to that column when there is a real new fact.
+- Same format and fact rules as §0 (`"type": "column"`, `"gpLabel": "速報コラム"`, slug `<keyword>-<yyyymmdd>`), about 1,000–1,500 characters. Open every source with WebFetch; say clearly what is officially confirmed and what is only reported; never state a rumour as fact. Prefer a column that adds something not in Japanese coverage (a foreign quote, a denial, a gap between reports), e.g. `ocon-future-20260930`.
+- If the facts cannot be confirmed from at least two opened sources, publish nothing.
+- At most one 速報コラム per check and two per day. Publish on `main` (commit "Breaking column <slug>"), confirm the Pages deploy (ROUTINE.md 8b), then save the note/X assets to `reserve` under `daily/<date>/` exactly as in the daily column task.
 
 ## Race weekends: グランプリ特別号
 Race weekends get three special issues, one per day, each with its own page and vote:
