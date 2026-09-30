@@ -12,11 +12,7 @@ WORLD MEDIA LENS has two kinds of pages (owner's decision, 29 Sep 2026):
 - A column that could stand as a グランプリ特別号 story may also be reused there later.
 
 ## 0b. Breaking column (速報コラム)
-Owner's decision, 30 Sep 2026: when big news breaks, a 速報コラム is written and published automatically, without waiting for the owner, in addition to the 07:00 column.
-- A scheduled task checks at about 00:41, 07:41, 12:41 and 18:41 JST (after the article updates). Trigger: a topic in `articles.json` covered by 5 or more different outlets whose articles are from the last 12 hours, that is not already the subject of any published `lens/*.json` (check titles, bodies and `extraSources` URLs). If the topic already has a column, it may instead add a short dated update paragraph ("【9月30日追記】…") to that column when there is a real new fact.
-- Same format and fact rules as §0 (`"type": "column"`, `"gpLabel": "速報コラム"`, slug `<keyword>-<yyyymmdd>`), about 1,000–1,500 characters. Open every source with WebFetch; say clearly what is officially confirmed and what is only reported; never state a rumour as fact. Prefer a column that adds something not in Japanese coverage (a foreign quote, a denial, a gap between reports), e.g. `ocon-future-20260930`.
-- If the facts cannot be confirmed from at least two opened sources, publish nothing.
-- At most one 速報コラム per check and two per day. Publish on `main` (commit "Breaking column <slug>"), confirm the Pages deploy (ROUTINE.md 8b), then save the note/X assets to `reserve` under `daily/<date>/` exactly as in the daily column task.
+Owner's decision, 30 Sep 2026: no automatic breaking columns. A 速報コラム is written only when the owner asks for one on a specific story (e.g. `ocon-future-20260930`). Same format and fact rules as §0, show the owner a phone-width preview and the note/X assets, and publish on the owner's OK.
 
 ## Race weekends: グランプリ特別号
 Race weekends get three special issues, one per day, each with its own page and vote:
