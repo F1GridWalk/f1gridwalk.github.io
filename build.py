@@ -997,7 +997,11 @@ RULES_JS = '''<script>
   var cbs=[].slice.call(document.querySelectorAll('.rbx-grid button'));
   function setCat(c){ cat=c; cbs.forEach(function(x){ x.setAttribute('aria-pressed',String(x.getAttribute('data-c')===c)); }); run(); }
   cbs.forEach(function(b){ b.addEventListener('click',function(){ setCat(cat===b.getAttribute('data-c')?'all':b.getAttribute('data-c')); }); });
-  var clr=document.getElementById('rb-clear'); if(clr) clr.addEventListener('click',function(){ q.value=''; setCat('all'); q.focus(); });
+  /* 検索 button (and Enter): filter, close the keyboard, jump to the first result */
+  function go(){ run(); q.blur(); var vis=items.filter(function(d){ return !d.hidden; }), v=norm(q.value), f=vis.filter(function(d){ return d._n.indexOf(v)===0; })[0]||vis[0]; if(q.value&&f){ f.scrollIntoView({behavior:'smooth',block:'start'}); } }
+  var gb=document.getElementById('rb-go'); if(gb) gb.addEventListener('click',go);
+  q.addEventListener('keydown',function(ev){ if(ev.key==='Enter'){ ev.preventDefault(); go(); } });
+  q.addEventListener('search',run);
   [].forEach.call(document.querySelectorAll('.rb-none button'),function(b){ b.addEventListener('click',function(){ q.value=b.textContent; run(); }); });
   function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.tagName==='DETAILS'){ d.hidden=false; d.open=true; setTimeout(function(){d.scrollIntoView({block:'start'});},50);} }
   window.addEventListener('hashchange',openHash); openHash();
@@ -1139,7 +1143,7 @@ def rules_entry(where, on_page=False):
     hd = f'<div class="rbx-hd"><b>RULES</b><span class="mono">{n} ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p>'
     if on_page:
         return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><input id="rb-q" type="search" placeholder="例：降格、ハジャー" aria-label="用語とルールを検索" autocomplete="off">'
-                f'<button type="button" class="go" id="rb-clear">消す</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>')
+                f'<button type="button" class="go" id="rb-go">検索</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>')
     return (f'<div class="rbx">{hd}<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる">'
             f'<button type="submit" class="go" data-track="click/rules-entry/{where}">検索</button></form>'
             f'<a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/{where}/all">すべての用語を見る →</a></div>')
@@ -1167,7 +1171,7 @@ def build_rules():
             b += '<div class="rb-h">今季の実例・関連記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["u"])}">{e(x["t"])}</a></li>' for x in t['examples']) + '</ul>'
         if t.get('see'):
             b += '<div class="rb-h">あわせて読む</div><div class="rb-see">' + ''.join(f'<a href="#{e(s)}">{e(name.get(s, s))}</a>' for s in t['see']) + '</div>'
-        al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[\u3041-\u309f]+', x)][:4])
+        al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[\u3041-\u309f\u30fc]+', x)][:4])
         items.append(f'<details class="rb" id="{e(t["id"])}" data-c="{e(t["cat"])}" data-n="{e(t["term"] + " " + " ".join(t.get("aliases", [])))}" data-k="{e(keys)}">'
                      f'<summary><span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
