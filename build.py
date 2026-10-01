@@ -1100,9 +1100,9 @@ def rules_entry(where, on_page=False):
     n = len(RULES['terms'])
     hd = f'<div class="rbx-hd"><b>RULES</b><span class="mono">{n} ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語とルールを、言葉で引く辞典。</p>'
     if on_page:
-        return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><input id="rb-q" type="search" placeholder="例：降格、DRS" aria-label="用語とルールを検索" autocomplete="off">'
+        return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><input id="rb-q" type="search" placeholder="例：降格、ハジャー" aria-label="用語とルールを検索" autocomplete="off">'
                 f'<button type="button" class="go" id="rb-clear">消す</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>')
-    return (f'<div class="rbx">{hd}<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、DRS" aria-label="F1の用語・ルールを調べる">'
+    return (f'<div class="rbx">{hd}<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる">'
             f'<button type="submit" class="go" data-track="click/rules-entry/{where}">検索</button></form>'
             f'<a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/{where}/all">すべての用語を見る →</a></div>')
 
@@ -1116,7 +1116,8 @@ def build_rules():
     cats = ''.join(f'<button type="button" data-c="{e(c)}" aria-pressed="false">{e(c)}</button>' for c in R['cats'])
     items = []
     for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
-        keys = ' '.join([t['term']] + t.get('aliases', []) + [t['short']])
+        # search also hits names and words inside the explanation and this season's examples (e.g. a driver's name)
+        keys = ' '.join([t['term']] + t.get('aliases', []) + [t['short']] + t.get('body', []) + [x['t'] for x in t.get('examples', [])])
         b = ''.join(f'<p>{e(p)}</p>' for p in t['body'])
         if t.get('tool') == 'pu':
             opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
@@ -1133,7 +1134,7 @@ def build_rules():
                      f'<summary><span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(t["short"])}</span></summary><div class="rb-b">{b}</div></details>')
-    sugg = ''.join(f'<button type="button">{e(w)}</button>' for w in ['降格', 'DRS', 'デグ', '赤旗', 'ADUO'])
+    sugg = ''.join(f'<button type="button">{e(w)}</button>' for w in ['降格', 'DRS', 'ハジャー', '赤旗', 'ADUO'])
     body = ('<nav class="crumbs"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › ルールブック</nav><div class="dg">'
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'
             f'<h1>{e(R["title"])}</h1><p class="dg-dek">{e(R["dek"])}</p>'
