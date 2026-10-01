@@ -854,7 +854,7 @@ def build_deeps(arch, flag_map):
         B.append('<div class="dg-quick"><ol>' + ''.join(f'<li>{e(q)}</li>' for q in D.get('quick', [])) + '</ol></div>')
         B.append(deep_layer(2, '', '理由と背景'))
         for i, s in enumerate(D.get('sections', [])):
-            B.append(f'<div class="dg-sec" id="s{i + 1}"><h2><span class="n">{i + 1:02d}</span>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
+            B.append(f'<div class="dg-sec" id="s{i + 1}"><h2>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
         if D.get('deep'):
             heads = '・'.join(s['h'].split('：')[0] for s in D['deep'][:3])
             B.append(f'<details class="dg-deep" id="deep"><summary>{deep_layer(3, "", "データと記録")}'
