@@ -504,7 +504,7 @@ def site_entrance(arch, slug):
                  f'<small>{e(a["source"])}</small></li>' for a in xs)
     return ('<section class="gw-next"><p class="gw-k">F1 Grid Walk</p>'
             '<h2>世界のF1ニュースを、毎日日本語で</h2>'
-            '<p class="gw-lead">海外の記事の要約を、1日4回更新しています。いま届いているニュース：</p>'
+            '<p class="gw-lead">海外の記事の要約を、1日4回載せています。いま届いているニュース：</p>'
             f'<ul>{li}</ul>'
             f'<a class="gw-btn" href="/" data-track="click/lens/{e(slug)}/entrance-top">今日のF1ニュースを見る →</a>'
             f'<a class="gw-sub" href="/lens/" data-track="click/lens/{e(slug)}/entrance-lens">ほかのコラムを読む</a></section>')
