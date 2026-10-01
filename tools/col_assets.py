@@ -27,7 +27,7 @@ if L.get('note') and L.get('type') != 'column':
 # entrance to the site right after the column, before the sources (owner's request, 1 Oct 2026)
 B.append(['p', '━━━━━━━━━━'])
 B.append(['bold', 'F1 Grid Walk では、世界のF1ニュースを毎日日本語でまとめています。'])
-B.append(['p', '海外の記事の要約を、1日4回載せています。'])
+B.append(['p', '海外の記事の要約を、毎日載せています。'])
 B.append(['url', 'https://f1gridwalk.github.io/'])
 B.append(['p', 'ほかの海外記事も読みたい方は、F1 Grid Walkへ。' + ('（投票もこちら）' if L.get('mystery') else '')])  # fixed phrase (owner's decision, 1 Oct 2026)
 B.append(['url', url])
