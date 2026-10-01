@@ -12,6 +12,8 @@ layouts
   "band":     {"band": "オコンの行き先", "rows": [{"label":"日本","c":"jp","text":"「…」"}, ...]}
               or {"band": "...", "h1Html": "..."}                                    name/team in an orange band (C, E3)
   "versus":   {"left": {"who","sub","quote"}, "right": {"who","sub","quote"}}         two sides, VS in the middle (B)
+  "pillar":   {"label": "余談", "h1Html": "2 lines, <=11 chars each", "sub": "..."}  orange pillar on the left with a big vertical label.
+              ALWAYS use this for 余談 columns (owner's choice, 2 Oct 2026). label defaults to the tag / gpLabel.
 """
 import html
 
@@ -60,6 +62,11 @@ em{font-style:normal;color:#FFB089}
 .half.l .q{padding-right:40px}
 .vsb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:120px;height:120px;border-radius:50%;background:#1F2420;color:#FFF;font:900 52px Georgia,serif;display:flex;align-items:center;justify-content:center;border:6px solid #FFF}
 .vs .brand{color:#1F2420}
+/* pillar (余談) */
+.pl .pil{position:absolute;left:0;top:0;width:330px;height:100%;background:#E8946C;color:#1F2420;display:flex;align-items:center;justify-content:center}
+.pl .pil b{font-weight:900;font-size:150px;line-height:1.05;writing-mode:vertical-rl;white-space:nowrap}
+.pl h1{position:absolute;left:390px;right:56px;top:150px;margin:0;font-weight:900;font-size:86px;line-height:1.3}
+.pl .sub{position:absolute;left:390px;right:56px;top:420px;font-size:32px;font-weight:700;color:#D9D4C8}
 """
 
 # shrink any [data-fit] element until it fits its box and stays inside the frame
@@ -126,6 +133,11 @@ def render(L, flags_html, height=670, extra_css=''):
         if foot:
             inner += f'<div class="foot" data-fit style="right:auto;max-width:520px">{_t(foot)}</div>'
         cls = 'vs'
+    elif lay == 'pillar':
+        lab = E.get('label') or tag
+        inner = (f'<div class="pil"><b>{e(lab)}</b></div><h1 data-fit>{_t(E.get("h1Html") or L.get("eyeHtml") or e(L["title"]))}</h1>'
+                 + (f'<div class="sub fit" data-fit>{_t(E.get("sub") or L.get("eyeSub",""))}</div>' if (E.get("sub") or L.get("eyeSub")) else ''))
+        cls = 'pl'
     else:
         inner = (f'{tagd}<h1 data-fit>{_t(E.get("h1Html") or L.get("eyeHtml") or e(L["title"]))}</h1>'
                  + (f'<div class="sub fit" data-fit>{_t(E.get("sub") or L.get("eyeSub",""))}</div>') + foot_html)
