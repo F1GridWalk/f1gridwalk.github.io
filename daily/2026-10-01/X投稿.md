@@ -30,7 +30,7 @@ https://f1gridwalk.github.io/lens/ocon-villeneuve-20261001/
 
 ## ② ①への返信
 
-サイトでも読めます
+ほかの海外記事も読みたい方は、F1 Grid Walkへ。
 https://f1gridwalk.github.io/lens/honda-aduo2-20261001/
 
 ## ③ ②への返信
