@@ -23,6 +23,46 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<style>
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
 <meta property="article:published_time" content="2026-09-27T16:30:00+01:00">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "ニュース一覧", "item": "https://f1gridwalk.github.io/news/"}, {"@type": "ListItem", "position": 3, "name": "手首骨折のハジャー、決勝は痛みなし。メキース代表「フェルスタッペンと賢く戦った」", "item": "https://f1gridwalk.github.io/news/en-rn365-hadjar-health-update/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "手首骨折のハジャー、決勝は痛みなし。メキース代表「フェルスタッペンと賢く戦った」", "description": "手首の骨折で3戦を欠場していたハジャーについて、レッドブルのメキース代表はバクー決勝中は痛みがなかったと明らかにした。本人はレース後「少ししびれている」と述べたが、51周を走り切り3位表彰台を獲得。メキース代表はフェルスタッペンとの間で…", "datePublished": "2026-09-27T16:30:00+01:00", "dateModified": "2026-09-27T16:30:00+01:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=1"], "mainEntityOfPage": "https://f1gridwalk.github.io/news/en-rn365-hadjar-health-update/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "isBasedOn": {"@type": "NewsArticle", "url": "https://racingnews365.com/red-bull-provide-isack-hadjar-health-update-after-clever-max-verstappen-tactics", "headline": "Red Bull provide Isack Hadjar health update after 'clever' Max Verstappen tactics", "publisher": {"@type": "Organization", "name": "RacingNews365"}}}</script>
@@ -236,7 +276,7 @@ footer p{margin:6px 0}
 <div class="meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="xx">RacingNews365</span><span>イギリス · 英語</span><time datetime="2026-09-27T16:30:00+01:00">2026年9月28日(月) 00:30</time></div>
 <h1>手首骨折のハジャー、決勝は痛みなし。メキース代表「フェルスタッペンと賢く戦った」</h1>
 <p class="orig">原題：Red Bull provide Isack Hadjar health update after &#x27;clever&#x27; Max Verstappen tactics</p>
-<p class="summary">手首の骨折で3戦を欠場していたハジャーについて、レッドブルのメキース代表はバクー決勝中は痛みがなかったと明らかにした。本人はレース後「少ししびれている」と述べたが、51周を走り切り3位表彰台を獲得。メキース代表はフェルスタッペンとの間で「非常に賢く」レースを進め、タイヤ管理も規律正しかったと称賛し、2台の連携が好結果につながったと説明している。</p>
+<p class="summary">手首の骨折で3戦を欠場していたハジャーについて、レッドブルのメキース代表はバクー決勝中は痛みがなかったと明らかにした。本人はレース後「少ししびれている」と述べたが、51周を走り切り3位<a class="term" href="/deep/rules/#podium" data-term="podium">表彰台</a>を獲得。メキース代表はフェルスタッペンとの間で「非常に賢く」レースを進め、タイヤ管理も規律正しかったと称賛し、2台の連携が好結果につながったと説明している。</p>
 <a class="cta" href="https://racingnews365.com/red-bull-provide-isack-hadjar-health-update-after-clever-max-verstappen-tactics" target="_blank" rel="noopener" data-track="click/en-rn365-hadjar-health-update" data-title="RacingNews365 | 手首骨折のハジャー、決勝は痛みなし。メキース代表「フェルスタッペンと賢く戦った」">RacingNews365で元の記事を読む ↗ <small>（英語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は RacingNews365 に帰属します。</p>
 <div class="tags"><span>Red Bull</span><span>アゼルバイジャンGP</span><span>ドライバー</span></div>
@@ -244,6 +284,28 @@ footer p{margin:6px 0}
 </article>
 <section><h2>手首の骨折抱え復帰のハジャー、痛みなくバクーで3位表彰台</h2><p class="lead">手首の骨折でザンドフォールト、モンツァ、スペインGPを欠場していたハジャーが、バクーで復帰即3位表彰台を獲得した。レッドブルのメキース代表は決勝中は痛みがなかったと説明し、本人はレース後に手首が「少ししびれている」と明かしている。過去2度の表彰台は他車のトラブルに助けられたものだったのに対し、今回は純粋なペースでつかんだ「初めての本物の表彰台」だと本人は位置づけた。メキース代表はフェルスタッペンとの連携の巧みさも称賛している。</p><p class="lead">ほかに 1 本の記事があります。</p><ul class="list"><li><div class="m"><span class="kind primary">一次情報</span><span class="srcbadge" data-c="xx">Formula1.com</span><time datetime="2026-09-26T15:19:00Z">2026年9月27日(日) 00:19</time></div><a class="t" href="/news/en-f1com-hadjar-podium-return/">6週間ぶり復帰で「初めての本物の表彰台」。ハジャーが手首の違和感抱えつつ3位</a></li></ul></section>
 <section><h2>最新の記事</h2><ul class="list"><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T22:05:00+02:00">2026年10月2日(金) 05:05</time></div><a class="t" href="/news/nl-gpblog-hamilton-middle-east-races/">ハミルトン「中東の議論だけなぜ？」　アゼルバイジャンも状況は同じと指摘</a></li><li><div class="m"><span class="kind rumor">噂</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-01T20:45:00+02:00">2026年10月2日(金) 03:45</time></div><a class="t" href="/news/it-formula1-haas-camara-fornaroli/">ハース、オコン後任にカマラを望むと伊メディア　フォルナローリは見送りか</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T19:22:00+02:00">2026年10月2日(金) 02:22</time></div><a class="t" href="/news/de-motorsport-total-ocon-not-giving-up/">オコン「来季もグリッドに立ちたい」　ハース離脱後もF1残留を諦めず</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T19:01:00+02:00">2026年10月2日(金) 02:01</time></div><a class="t" href="/news/nl-gpblog-russell-upgrades-surprised/">ラッセル、ライバルのアップデート頻度に驚き「予算上限で同じ頻度は難しい」</a></li><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="xx">RacingNews365</span><time datetime="2026-10-01T17:00:00+01:00">2026年10月2日(金) 01:00</time></div><a class="t" href="/news/en-rn365-mercedes-w17-weakness-upgrade/">メルセデス、W17の弱点に対処する異例の大型アップデートをセパンに投入</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T17:24:00+02:00">2026年10月2日(金) 00:24</time></div><a class="t" href="/news/de-motorsport-total-malaysia-nine-years-later/">9年ぶりのマレーシアGP　2017年からF1はこう変わった</a></li></ul><p><a href="/">トップで全部見る →</a>　<a href="/news/">ニュース一覧 →</a></p></section>
+<script type="application/json" id="term-data">{"podium": ["表彰台", "決勝の上位3人がトロフィーを受ける、一段高い台。優勝チームの代表も上がる。"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>

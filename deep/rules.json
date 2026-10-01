@@ -8,7 +8,9 @@
   "ポイント",
   "レース運営",
   "マシンと空力",
-  "タイヤと作戦"
+  "タイヤと作戦",
+  "チームとビジネス",
+  "サーキットと歴史"
  ],
  "terms": [
   {
@@ -3854,6 +3856,3086 @@
      "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
     }
    ]
+  },
+  {
+   "id": "cost-cap",
+   "term": "コストキャップ（予算上限）",
+   "aliases": [
+    "コストキャップ",
+    "予算上限",
+    "バジェットキャップ",
+    "cost cap",
+    "budget cap"
+   ],
+   "words": [
+    "お金",
+    "予算",
+    "上限",
+    "使える金額",
+    "2億1500万ドル",
+    "超過"
+   ],
+   "short": "チームが1年に使えるお金の上限。2026年は2億1500万ドルで、対象外の費用もある。",
+   "body": [
+    "チームが1年間に使えるお金に、FIAが上限をつける決まり。お金のあるチームだけが有利にならないようにするための仕組みだ。2026年の上限は2億1500万ドル（物価の調整が入ることがある）。2023〜2025年は1億3500万ドルだったので、大きく上がった。レースが24戦を超える年は、1戦につき180万ドルが上乗せされる。",
+    "上がったのは、上限の対象になる費用が増えたからだ。F1公式は、増えた分を考えると全体ではほぼ同じ水準だと説明している。",
+    "対象外の費用もある。FIAの財務規則（D5.1.1）によると、ドライバーへの支払い、報酬が高い上位3人の社員の分、マーケティング、レース週末の移動費（ホテルや航空券など）、金融費用、法人税などは数えない。パワーユニットも、決められた最高価格までの分は上限の外で扱う。",
+    "上限を超えると、超えた割合で重さが変わる。財務規則では、2％未満の超過は軽い違反（マイナー・オーバースペンド）、2％以上は重大な違反（マテリアル・オーバースペンド）とされる。罰には、罰金、選手権ポイントの剥奪、空力テストの制限、翌年の上限の引き下げなどがある。"
+   ],
+   "rule": "財務規則 D4.1.2（上限額）、D5.1.1（対象外の費用）、D10.3（超過の区分）、D12.1.1（罰）",
+   "examples": [],
+   "see": [
+    "atr",
+    "pu-manufacturer",
+    "concorde-agreement",
+    "fia"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section D Financial - F1 Teams (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: What is the F1 cost cap and why has it gone up?",
+     "url": "https://www.formula1.com/en/latest/article/explained-what-is-the-f1-cost-cap-and-why-has-it-gone-up.2tYtDIe5SbE5utjThctBT3"
+    },
+    {
+     "name": "F1Technical",
+     "title": "The evolution of Formula One's Cost Cap",
+     "url": "https://www.f1technical.net/news/28125"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "atr",
+   "term": "空力テストの制限（ATR）",
+   "aliases": [
+    "ATR",
+    "空力テスト制限",
+    "風洞制限",
+    "Aerodynamic Testing Restrictions",
+    "風洞とCFDの制限"
+   ],
+   "words": [
+    "風洞",
+    "CFD",
+    "割り当て",
+    "成績順",
+    "順位",
+    "開発の量"
+   ],
+   "short": "風洞とCFDで使える量を、成績の悪いチームほど多くする制限。",
+   "body": [
+    "空力の開発に使う、風洞の走行回数とCFD（コンピューターで空気の流れを計算すること）の量に上限をつける決まり。成績のよいチームほど少なく、悪いチームほど多く使える。チームの差を縮めるために2021年に入った仕組みだ。",
+    "基準の100％は、期間ごとに風洞が320回の走行、CFDが2000件。順位が1つ下がるごとに5％増え、1つ上がるごとに5％減る。コンストラクターズ選手権の1位は70％、7位は100％、10位以下と新規参入のチームは115％になる。1年は6つの期間に分かれ、1つの期間は8〜10週間ほどだ。",
+    "どの順位を使うかは、年に2回切り替わる。前半の3期間は前年の最終順位、後半の3期間は、第3期間が終わった時点のその年の順位を使う。2026年の前半は2025年の最終順位が基準になり、チャンピオンのマクラーレンが70％（風洞224回、CFD1400件）、アルピーヌと新規参入のキャデラックが115％（風洞368回、CFD2300件）だった。"
+   ],
+   "rule": "運用規則（Section F）F4.6.1（上限と順位ごとの割合）、F4.1.4（6つの期間）",
+   "examples": [],
+   "see": [
+    "cost-cap",
+    "active-aero"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section F Operational (Issue 07, 2026-04-28)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_07_-_2026-04-28.pdf"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 2026 teams wind tunnel time",
+     "url": "https://racingnews365.com/f1-2026-teams-wind-tunnel-time"
+    },
+    {
+     "name": "The Race",
+     "title": "The aero restrictions each F1 team will face in 2026",
+     "url": "https://the-race.com/formula-1/the-aero-restrictions-each-f1-team-will-face-in-2026"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "concorde-agreement",
+   "term": "コンコルド協定",
+   "aliases": [
+    "コンコルド・アグリーメント",
+    "Concorde Agreement",
+    "コンコルド協約",
+    "コンコルド",
+    "こんこるどきょうてい"
+   ],
+   "words": [
+    "契約",
+    "FIA",
+    "FOM",
+    "チーム",
+    "賞金",
+    "2030年"
+   ],
+   "short": "FIA、F1の商業を担う会社、全チームが結ぶ契約。新しい協定は2026〜2030年。",
+   "body": [
+    "F1の運営について、FIA、F1の商業を担うFOM、チームが結ぶ契約。今回の新しい協定は9つ目とされ、2026年から2030年までの5年間続く。全11チームが参加している。",
+    "協定は2つの部分に分かれる。商業面は2025年3月に全チームが署名し、テレビ放映権などの収入と、チームへの賞金の分け方を決めた。統治面（ガバナンス）は2025年12月12日に合意され、FIAの役割やF1コミッションの投票の仕組み、チームがFIAに払う参戦料などを決めた。",
+    "統治面の合意では、規則の変更を通すために必要なチームの票が減ったと報じられた。通常の多数決は11チーム中6票から4票に、特別多数は8票から6票になった。参戦料も、前年のポイントで決まる方式から、コンストラクターズ順位に応じた方式に変わった。"
+   ],
+   "examples": [],
+   "see": [
+    "f1-commission",
+    "fia",
+    "f1-group",
+    "cost-cap"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "New F1 Concorde Agreement signed as FIA, Formula 1 and teams strike deal",
+     "url": "https://www.planetf1.com/news/f1-concorde-agreement-2026-concluded-as-governance-agreed-with-fia"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 and FIA agree new five-year governance Concorde Agreement",
+     "url": "https://www.motorsport.com/f1/news/f1-and-fia-agree-new-five-year-governance-concorde-agreement/10784445/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Two key changes in F1's Concorde governance agreement explained",
+     "url": "https://www.motorsport.com/f1/news/two-key-changes-in-f1s-concorde-governance-agreement-explained/10784461/"
+    },
+    {
+     "name": "F1Technical",
+     "title": "Formula One confirms 2026 Concorde Commercial Agreement signed by all teams",
+     "url": "https://www.f1technical.net/news/26456"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "super-licence",
+   "term": "スーパーライセンス",
+   "aliases": [
+    "スーパーライセンス",
+    "スーパーライセンスポイント",
+    "FIAスーパーライセンス",
+    "Super Licence",
+    "super license",
+    "ライセンスポイント"
+   ],
+   "words": [
+    "F1に出る資格",
+    "40点",
+    "ポイント",
+    "18歳",
+    "免許",
+    "FP1"
+   ],
+   "short": "F1に出るために必要な、FIAが出す特別な免許。過去の成績で40点以上が要る。",
+   "body": [
+    "F1のレースに出るには、FIAが出すスーパーライセンスが要る。下位のカテゴリー（FIA F2など）での成績が点数になり、直近3年間（または直近2年とその年）の合計が40点以上いる。点数は選手権ごとに、順位に応じて決まっている。",
+    "ほかにも条件がある。最初のF1の競技の時点で18歳以上であること（FIAが認めれば17歳の例外もある）、単座レースの選手権で2つのシーズンの80％以上に出ていること、国際スポーツ規則とF1のスポーティングレギュレーションについての試験に受かることなどだ。道筋によっては、条件を満たすF1マシンで、レースに近い速さで300km以上走ったことを、チームが示す必要もある。",
+    "金曜のフリー走行だけに出る場合は、「フリー走行専用のスーパーライセンス」でもよい。必要な点数が少なく、若手がF1のマシンに乗る機会に使われる。ルーキーの金曜走行（FP1）に出る選手も、スーパーライセンスかフリー走行専用のものを持つ。"
+   ],
+   "rule": "付則L（国際スポーツ規則）13.1（スーパーライセンス）、13.2（フリー走行専用）、スポーティングレギュレーション B1.7.3 f)",
+   "examples": [
+    {
+     "t": "コルトン・ハータが、FP1の追加走行でスーパーライセンスのポイントを得る道が取り沙汰された（未確認の情報）。",
+     "u": "/news/ja-f1jouhou-herta-cadillac-reserve/"
+    },
+    {
+     "t": "アウディのビノット代表は、F3で2位の18歳スレーターについて、2027年かそれ以前のF1入りを示唆した。スーパーライセンスに向けたFP1走行も計画されている。",
+     "u": "/news/it-formula1-slater-audi-binotto/"
+    }
+   ],
+   "see": [
+    "rookie-fp1",
+    "reserve-driver",
+    "fia"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "Appendix L to the International Sporting Code 2026 (2026-06-24)",
+     "url": "https://api.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1 Explained: How does the FIA Super Licence system work",
+     "url": "https://www.formula1.com/en/latest/article/f1-explained-how-does-the-fia-super-licence-system-work-and-what-does-sargeant.IXyLbO00195LXtCo3YIOU"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "reserve-driver",
+   "term": "リザーブドライバー",
+   "aliases": [
+    "リザーブ",
+    "控えドライバー",
+    "サードドライバー",
+    "テストドライバー",
+    "reserve driver",
+    "リザーブドライバー"
+   ],
+   "words": [
+    "代役",
+    "シミュレーター",
+    "控え",
+    "病欠",
+    "金曜走行",
+    "若手"
+   ],
+   "short": "レギュラーが走れないときの代役。ふだんはシミュレーターなどでチームを支える控えの選手。",
+   "body": [
+    "リザーブドライバーは、レギュラーのドライバーが病気やけがなどで走れないときの代役になる控えの選手。ふだんはシミュレーターでの作業やデータ分析で、マシンの開発とレギュラーの準備を支える。",
+    "金曜のフリー走行（FP1）で、レギュラーの代わりに走ることもある。各車で年に2回、F1の出走が2戦以内の選手を走らせる決まりがあり、リザーブや若手の選手がこの機会を使うことが多い。",
+    "レース週末にドライバーを替えるには、スチュワードの同意が要る。最初の車検が終わったあとの交代は、同意を得たうえで、決められた時刻までに行う。たとえばスプリントのない週末は、予選の開始前までだ。代役は、もとのドライバーに割り当てられたパワーユニットとタイヤを使う。"
+   ],
+   "rule": "スポーティングレギュレーション B1.7.2（交代の時期）、B1.7.4（代役が使うPUとタイヤ）",
+   "examples": [
+    {
+     "t": "マクラーレンのブラウンCEOは、フリー走行やシミュレーターをこなせるリザーブが必要だと述べ、フォルナローリは残留する前提だと話した。",
+     "u": "/news/ja-f1gate-fornaroli-haas-doubt/"
+    },
+    {
+     "t": "元F1ドライバーのクビアトが、アルピーヌでリザーブのアーロンらとシミュレーター業務を分けて担っていると報じられた。",
+     "u": "/news/en-therace-kvyat-alpine-role/"
+    }
+   ],
+   "see": [
+    "rookie-fp1",
+    "super-licence",
+    "testing-rules"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Williams confirm Browning as reserve driver for 2026 F1 season",
+     "url": "https://www.formula1.com/en/latest/article/williams-confirm-browning-as-reserve-driver-for-2026-f1-season.6qyk1ZpS8qVgkXMkPQc4Ue"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "testing-rules",
+   "term": "テストの決まり（シーズン前テスト、TPCなど）",
+   "aliases": [
+    "テスト",
+    "プレシーズンテスト",
+    "TPC",
+    "過去のマシンのテスト",
+    "Testing of Previous Cars",
+    "シェイクダウン"
+   ],
+   "words": [
+    "シーズン前",
+    "バルセロナ",
+    "バーレーン",
+    "ピレリテスト",
+    "走行制限",
+    "撮影日"
+   ],
+   "short": "レース週末の外で走れる日数や機会の決まり。シーズン前テストやTPCなど。",
+   "body": [
+    "F1では、レース週末の外でマシンを走らせる機会が、規則で細かく決められている。種類には、現行のマシンのテスト（TCC）、過去のマシンのテスト（TPC）のほか、宣伝のための撮影日などがある。",
+    "2026年のシーズン前は、新しい規則の年なので走れる日が多かった。1月26〜30日にバルセロナで非公開のシェイクダウンがあり、5日間のうち各チームは3日だけ走れた。2月にはバーレーンで3日間の公式テストが2回あった。合計9日で、前年より6日多い。",
+    "シーズン中に使える機会の1つがTPCで、以前のマシンを走らせる。2025年に初めて上限がついた。チームごとに年20日まで、選手権に出る現役ドライバーは4日・合計1000kmまでとされた。使えるのは、2年以上前のマシンだ。",
+    "タイヤのピレリが行うテストもある。年に最大40日で、その年のこの先にグランプリを開く予定のサーキットでは行えない。現役ドライバーが走ることが多く、その年のレースで使った仕様のまま、改良パーツなしでセッティングも固定したマシンを使う。得られたデータはチームで共有する。宣伝のための撮影日は、宣伝用タイヤで最大200kmまでだ。",
+    "2026年6月23日、世界モータースポーツ評議会（WMSC）が、2027年からシーズン前のテストを3日から4日に増やすことを承認した。"
+   ],
+   "rule": "スポーティングレギュレーション B11（B11.2 TCC、B11.3 TPC など）",
+   "examples": [
+    {
+     "t": "ピレリの2027年タイヤの開発で、フェラーリとレーシングブルズがイモラで合計400周のテストを行ったと伝えられた。",
+     "u": "/news/ja-f1gate-pirelli-2027-tire-degradation/"
+    }
+   ],
+   "see": [
+    "reserve-driver",
+    "rookie-fp1",
+    "tyre-compounds",
+    "wmsc"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: Why pre-season running is different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-pre-season-running-is-different-in-2026.7reu6xnBY0kF87Vucgt25s"
+    },
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: How the Barcelona Shakedown will work",
+     "url": "https://www.formula1.com/en/latest/article/explained-how-the-barcelona-shakedown-will-work.5oGVmo25OyEhyVR9RbiREo"
+    },
+    {
+     "name": "RaceFans",
+     "title": "F1 teams face first cap on testing of past cars from 2025",
+     "url": "https://www.racefans.net/2024/10/18/f1-teams-face-first-cap-on-testing-of-past-cars-from-2025/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "All you need to know about TPC tests in Formula 1",
+     "url": "https://www.motorsport.com/f1/news/all-you-need-to-know-about-tpc-tests-in-formula-1/10762349/"
+    },
+    {
+     "name": "McLaren",
+     "title": "What is a Pirelli tyre test",
+     "url": "https://www.mclaren.com/racing/formula-1/2026/what-is-a-pirelli-tyre-test/"
+    },
+    {
+     "name": "New Straits Times",
+     "title": "F1 to have extra test day from 2027, engine tweaks approved",
+     "url": "https://www.nst.com.my/amp/sports/motor-sports/2026/06/1470843/f1-have-extra-test-day-2027-engine-tweaks-approved"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "FIA's WMSC ratifies F1 regulatory changes for 2027 and 2028",
+     "url": "https://www.formula1.com/en/latest/article/fias-wmsc-ratifies-f1-regulatory-changes-for-2027-and-2028.ACyRcPvBKo8LRiOleCSJU"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "pu-manufacturer",
+   "term": "パワーユニットメーカー（PUメーカー）",
+   "aliases": [
+    "PUメーカー",
+    "エンジンメーカー",
+    "パワーユニットサプライヤー",
+    "エンジンサプライヤー",
+    "PU manufacturer",
+    "power unit supplier"
+   ],
+   "words": [
+    "エンジン供給",
+    "ホンダ",
+    "メルセデス",
+    "アウディ",
+    "5社",
+    "供給先"
+   ],
+   "short": "F1のパワーユニットを作ってチームに供給する会社。2026年は5社。",
+   "body": [
+    "パワーユニット（PU）を作り、自分のチームや他のチームに供給する会社。2026年は5社で、メルセデス、フェラーリ、ホンダ、レッドブル・フォード、アウディだ。このうちアウディは2026年にF1へ初めて加わり、レッドブルも自社のPU（フォードが協力）を使い始めた。",
+    "供給先は次のとおり。メルセデスは自社のほか、マクラーレン、ウィリアムズ、アルピーヌ。フェラーリは自社のほか、ハースとキャデラック。ホンダはアストンマーティン。レッドブル・フォードはレッドブルとレーシングブルズ。アウディは自社チームだけだ。",
+    "キャデラックは、2026〜2028年の3シーズンはフェラーリのPUを使う。GMが作る自社PUは2029年の参戦が目標で、FIAは2025年4月にGMをPUメーカーとして2029年から認めた。",
+    "お金の面では、チームのコストキャップとは別の扱いがある。チームが払うPUの代金は、決められた最高価格までコストキャップの外で数える。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレンのブラウンCEOは、自社でPUは作らず、2030年までメルセデス製を使い続ける方針を明言した。",
+     "u": "/news/de-motorsport-total-mclaren-2030-engine/"
+    },
+    {
+     "t": "ホンダは2回目のADUOを使い、改良型ターボをスペインGPでストロール車に、続くバクーでアロンソ車に載せていた。",
+     "u": "/news/en-therace-honda-aduo2-secret/"
+    }
+   ],
+   "see": [
+    "customer-team",
+    "aduo",
+    "cost-cap",
+    "ice",
+    "mgu-k"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "What engine every F1 team is using for 2026 rules",
+     "url": "https://www.the-race.com/formula-1/2026-f1-team-engines"
+    },
+    {
+     "name": "F1Technical",
+     "title": "What engines will F1 teams use during the 2026 season?",
+     "url": "https://www.f1technical.net/news/28116"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Cadillac F1 team: FIA approves General Motors as new Formula 1 engine supplier from 2029",
+     "url": "https://www.skysports.com/f1/news/12433/13354351/cadillac-f1-team-fia-approves-general-motors-as-new-formula-1-engine-supplier-from-2029"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Cadillac F1 chief issues updated General Motors F1 engine timeline",
+     "url": "https://www.planetf1.com/news/dan-towriss-cadillac-f1-engine-general-motors-2029"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section D Financial - F1 Teams (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "customer-team",
+   "term": "カスタマーチーム",
+   "aliases": [
+    "カスタマー",
+    "カスタマーチーム",
+    "供給を受けるチーム",
+    "customer team",
+    "PU供給先"
+   ],
+   "words": [
+    "エンジン供給",
+    "他社製",
+    "買う",
+    "自社製",
+    "PU供給",
+    "提携"
+   ],
+   "short": "自分ではパワーユニットを作らず、ほかのメーカーから供給を受けて走るチーム。",
+   "body": [
+    "パワーユニット（PU）を自分では作らず、別のメーカーから供給を受けるチーム。2026年は、メルセデスのPUを使うマクラーレン、ウィリアムズ、アルピーヌと、フェラーリのPUを使うハース、キャデラックが当てはまる。",
+    "供給は、メーカーとの契約で決まる。たとえばキャデラックは、フェラーリから2026〜2028年の3シーズンの供給を受け、GMが作る自社PUは2029年を目標にしている。",
+    "チームが払うPUの代金は、決められた最高価格までコストキャップの外で数える。PUの開発費は、供給するメーカー側が別の財務規則のもとで扱う。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレンのブラウンCEOは、自社でPUは作らずメルセデス製を使い続けると述べた。メルセデスとの契約は2030年まで続くという。",
+     "u": "/news/de-motorsport-total-mclaren-2030-engine/"
+    }
+   ],
+   "see": [
+    "pu-manufacturer",
+    "cost-cap"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "What engine every F1 team is using for 2026 rules",
+     "url": "https://www.the-race.com/formula-1/2026-f1-team-engines"
+    },
+    {
+     "name": "F1Technical",
+     "title": "What engines will F1 teams use during the 2026 season?",
+     "url": "https://www.f1technical.net/news/28116"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Cadillac F1 team: FIA approves General Motors as new Formula 1 engine supplier from 2029",
+     "url": "https://www.skysports.com/f1/news/12433/13354351/cadillac-f1-team-fia-approves-general-motors-as-new-formula-1-engine-supplier-from-2029"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section D Financial - F1 Teams (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "rookie-fp1",
+   "term": "ルーキーの金曜走行義務",
+   "aliases": [
+    "ルーキーFP1",
+    "ルーキー走行",
+    "ルーキーセッション",
+    "rookie FP1",
+    "若手のFP1走行",
+    "FP1ルーキー義務"
+   ],
+   "words": [
+    "金曜",
+    "フリー走行1回目",
+    "若手",
+    "2戦以内",
+    "各車2回",
+    "新人"
+   ],
+   "short": "各車、年2回、金曜のFP1にF1の出走が2戦以内の選手を走らせる義務。",
+   "body": [
+    "各チームは、2台それぞれについて、年に2回、F1での出走が2戦以内の選手を金曜の最初のフリー走行（FP1）で走らせなければならない。2台あるので、チーム全体では合計4回になる。",
+    "この義務は2022年に1台1回で始まり、2025年から2回に増えた。",
+    "手続きもある。どの車に乗せるかを、7日前までにFIAへ知らせる。走る選手は、スーパーライセンスかフリー走行専用のスーパーライセンスを持つ。使うパワーユニットとタイヤは、もとのドライバーに割り当てられたものだ。1回のセッションで使えるドライバーは2人までになる。",
+    "2026年は、ベルギーGPのFP1でアストンマーティンがアロンソの車にクロフォードを乗せた。クロフォードはそれが今季3回目のFP1走行だった。"
+   ],
+   "rule": "スポーティングレギュレーション B1.7.3 c)（各車年2回、7日前までの通知）、b)（1セッション2人まで）、e)（PUとタイヤ）、f)（スーパーライセンス）",
+   "examples": [
+    {
+     "t": "コルトン・ハータが、2026年と2027年に追加のFP1へ出て、スーパーライセンスのポイントを得る道が取り沙汰された（未確認の情報）。",
+     "u": "/news/ja-f1jouhou-herta-cadillac-reserve/"
+    },
+    {
+     "t": "アウディは、アカデミーのスレーターのスーパーライセンス獲得に向け、FP1走行を計画していると伝えられた。",
+     "u": "/news/it-formula1-slater-audi-binotto/"
+    }
+   ],
+   "see": [
+    "reserve-driver",
+    "super-licence",
+    "testing-rules"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Every FP1 rookie driver in the 2026 F1 season",
+     "url": "https://racingnews365.com/every-fp1-rookie-driver-in-the-2026-f1-season"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "How Rookie FP1 Sessions Have Evolved in 2025",
+     "url": "https://www.williamsf1.com/articles/4f9e5903-e936-41f5-9b1a-843d91ec407d/how-rookie-fp1-sessions-have-evolved-in-2025"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Fernando Alonso to miss Belgian Grand Prix FP1 as Aston Martin junior steps in",
+     "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-belgian-grand-prix-2026-fp1"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "team-principal",
+   "term": "チーム代表",
+   "aliases": [
+    "チーム代表",
+    "チームプリンシパル",
+    "代表",
+    "team principal",
+    "TP",
+    "監督"
+   ],
+   "words": [
+    "監督",
+    "ボス",
+    "チームのトップ",
+    "責任者",
+    "交代",
+    "最終判断"
+   ],
+   "short": "チームを率いて最終判断を下すトップ。人事、FIAなどとの交渉、対外的な顔も務める。",
+   "body": [
+    "チーム代表は、F1チームを率いるボスだ。チームを代表して話し、最終的な判断を下す。何百人もの社員の先頭に立ち、チームの方向を決め、採用や解雇を通じて、勝てるチームの文化を作る。",
+    "FIAやスチュワード、ほかのチームとの交渉も大きな役目で、ガレージにいるより会議の時間のほうが長いことも多い。ドライバーの獲得や、レース中の作戦のような大きな決断にも関わる。",
+    "技術の面は技術責任者、競技の面は競技担当などの専門家が支える。代表はそれをまとめる。出身はさまざまで、エンジニア、金融、戦略など、決まった道はない。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレンのステラ代表は、バクーでの無得点について「責任はチームにある」と述べ、ドライバーをかばった。",
+     "u": "/news/ja-f1gate-mclaren-stella-accountability/"
+    },
+    {
+     "t": "フェラーリのバスール代表は、後任のうわさに「ホーナー氏は仕事を探しているだけ」と反応した。",
+     "u": "/news/en-motorsport-vasseur-horner-response/"
+    }
+   ],
+   "see": [
+    "technical-director",
+    "race-engineer",
+    "cost-cap",
+    "fia"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: What does an F1 team principal actually do?",
+     "url": "https://www.formula1.com/en/latest/article/explained-what-does-an-f1-team-principal-actually-do.68kVjl2LsH8m9R5pEnMb3W"
+    },
+    {
+     "name": "Red Bull",
+     "title": "The people behind the F1 paddock",
+     "url": "https://www.redbull.com/gb-en/the-people-behind-the-f1-paddock"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "technical-director",
+   "term": "テクニカルディレクター（技術責任者）",
+   "aliases": [
+    "テクニカルディレクター",
+    "技術責任者",
+    "技術代表",
+    "technical director",
+    "テクニカル・ディレクター"
+   ],
+   "words": [
+    "設計責任者",
+    "マシン開発",
+    "技術のトップ",
+    "空力の責任者",
+    "チーフデザイナー"
+   ],
+   "short": "マシンが速く、安全で、規則に合うように、技術部門をまとめる責任者。",
+   "body": [
+    "技術部門の責任者。F1公式の説明では、マシンが「規則に合い、安全で、速く、壊れにくい」ようにするため、技術の人材と資源をまとめる役目だ。部門どうしで意見が分かれたときは、決断を下す。",
+    "昔は、技術責任者が自分の考えをすべての部品に反映させる形が多かった。今は1000人規模の組織でマシンを作るので、専門のスタッフに仕事を任せることが求められる。どの開発の方向に進むかは、データだけでなく、経験と勘に頼る部分も大きい。",
+    "形はチームによって違う。技術責任者が1人のところもあれば、車体とエンジンで別々に置いたところもある（2019年のルノーなど）。車のデザインの決定と、FIAの規則に合っているかの確認が、おもな仕事だ。",
+    "チーム代表が経営と全体を見るのに対し、技術責任者は車の設計と開発を受け持つ。"
+   ],
+   "examples": [
+    {
+     "t": "キャデラックは、アストンマーティンの副テクニカル代表だったブランダンを、空力部門のトップに迎えると発表した。",
+     "u": "/news/de-f1de-cadillac-hires/"
+    }
+   ],
+   "see": [
+    "team-principal",
+    "race-engineer"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "The insider's guide to... Technical Directors",
+     "url": "https://www.formula1.com/en/latest/article/the-insiders-guide-to-technical-directors.5JhKdiv5Obj6lET0h7cYY4"
+    },
+    {
+     "name": "Red Bull",
+     "title": "The people behind the F1 paddock",
+     "url": "https://www.redbull.com/gb-en/the-people-behind-the-f1-paddock"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "race-engineer",
+   "term": "レースエンジニア",
+   "aliases": [
+    "レースエンジニア",
+    "担当エンジニア",
+    "無線の相手",
+    "race engineer",
+    "ドライバー担当エンジニア"
+   ],
+   "words": [
+    "無線",
+    "ドライバーとの交信",
+    "セットアップ",
+    "作戦",
+    "ピットウォール",
+    "担当"
+   ],
+   "short": "ドライバーと最も近くで働き、無線で話しながら走りとセットアップを支えるエンジニア。",
+   "body": [
+    "ドライバーと最も近くで働くエンジニア。ドライバーと、ピットウォール、ガレージ、工場をつなぐ窓口で、レース中の無線の相手になる。各ドライバーを囲む少人数のチームの中心にいる。",
+    "仕事は、マシンのセットアップを決める相談、車のデータ（テレメトリー）を読んで走り方を伝えること、タイヤの状態やライバルの速さを見て判断を助けることなどだ。ほしい情報の量やタイミングはドライバーによって違うので、伝え方を相手に合わせる。",
+    "ピットストップやタイヤの作戦は、データを分析する戦略担当（ストラテジスト）が受け持つチームもある。その場合、レースエンジニアは、決まったことを分かりやすくドライバーに伝える役になる。"
+   ],
+   "examples": [],
+   "see": [
+    "team-principal",
+    "technical-director"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "How high-tech F1 has changed the race engineer role",
+     "url": "https://www.motorsport.com/f1/news/high-tech-f1-race-engineer-role/6687750/"
+    },
+    {
+     "name": "Red Bull",
+     "title": "The people behind the F1 paddock",
+     "url": "https://www.redbull.com/gb-en/the-people-behind-the-f1-paddock"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Inside the F1 driver's bubble: What does a race engineer actually do?",
+     "url": "https://core-ecs-origin-home.core-dns.watchliveformula1.com/en/latest/article/inside-the-f1-drivers-bubble-what-does-a-race-engineer-actually-do.QyLxjYSE3cy4ZEoZVSd7W"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "fia",
+   "term": "FIA（国際自動車連盟）",
+   "aliases": [
+    "FIA",
+    "国際自動車連盟",
+    "Fédération Internationale de l'Automobile",
+    "えふあいえー",
+    "F1の統括団体"
+   ],
+   "words": [
+    "統括",
+    "ルールを作る",
+    "スチュワード",
+    "会長",
+    "運営団体",
+    "パリ"
+   ],
+   "short": "F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。",
+   "body": [
+    "FIAは、F1世界選手権を統括する国際団体。世界の自動車クラブなどが加盟していて、2024年の時点で243団体、147か国が加わっている。始まりは1904年で、各国のクラブ代表がパリに集まった会合だ。F1の最初の世界選手権は1950年にFIAが作った。本部はパリで、ジュネーブなどにも事務所がある。",
+    "F1での役目は、ルールを作って運用する側だ。技術規則、スポーティング規則（競技の規則）、財務規則などを決める。レース運営と、スチュワードによる判定も、FIAの役割に入っている。F1の興行や放映権などの商業面は、FIAではなくフォーミュラ・ワン・グループが担う。",
+    "FIAの最高の意思決定機関は、世界モータースポーツ評議会（WMSC）。会長は、2025年12月に無投票で再選されたモハメド・ビン・スライエムで、任期は4年（2029年まで）だ。"
+   ],
+   "examples": [
+    {
+     "t": "マレーシアへの復帰にあたり、FIAが熱中症への警告を出し、ドライバーの冷却システムが義務になった。",
+     "u": "/news/de-formel1-sepang-heat-warning/"
+    }
+   ],
+   "see": [
+    "f1-group",
+    "wmsc",
+    "f1-commission",
+    "concorde-agreement",
+    "stewards"
+   ],
+   "src": [
+    {
+     "name": "F1Technical",
+     "title": "Formula One's governing body, the FIA celebrates its 120th anniversary",
+     "url": "https://f1technical.net/news/24821"
+    },
+    {
+     "name": "FIA",
+     "title": "About the FIA",
+     "url": "https://fia.com/es/about-fia"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Mohammed Ben Sulayem re-elected as FIA president on second four-year term",
+     "url": "https://www.skysports.com/f1/news/12433/13482506/mohammed-ben-sulayem-re-elected-as-fia-president-on-second-four-year-term-to-head-world-motorsport-to-2029"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "New F1 Concorde Agreement signed as FIA, Formula 1 and teams strike deal",
+     "url": "https://www.planetf1.com/news/f1-concorde-agreement-2026-concluded-as-governance-agreed-with-fia"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "autosport web",
+     "title": "FIA、会長の任期制限を撤廃か。現職ビン・スライエムの働きかけにより承認の見込み",
+     "url": "https://www.as-web.jp/f1/1320765"
+    },
+    {
+     "name": "FIA",
+     "title": "Writing the rules: how the FIA develops new regulations for Formula 1",
+     "url": "https://www.fia.com/news/writing-rules-how-fia-develops-new-regulations-formula-1"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "f1-group",
+   "term": "フォーミュラ・ワン・グループ（FOM、F1の商業面）",
+   "aliases": [
+    "F1グループ",
+    "FOM",
+    "フォーミュラ・ワン・マネジメント",
+    "Formula One Group",
+    "Formula One Management",
+    "リバティ・メディア"
+   ],
+   "words": [
+    "商業権",
+    "放映権",
+    "運営会社",
+    "リバティ",
+    "ドメニカリ",
+    "興行"
+   ],
+   "short": "F1の商業面（放映権や開催契約など）を握る会社グループ。持ち主はリバティ・メディア。",
+   "body": [
+    "F1の商業権を持つ会社グループ。FIAが規則と判定を担うのに対し、こちらは大会の興行を担う。持ち主は米国のリバティ・メディアだ。F1の最高経営責任者（CEO）はステファノ・ドメニカリで、2029年までの契約が延びている。",
+    "リバティ・メディアは2016年に、それまでの持ち主だった投資会社のCVCキャピタル・パートナーズから、F1の商業権を手に入れた。",
+    "FOM（フォーミュラ・ワン・マネジメント）の名前もよく出てくる。コンコルド協定では、FIA、全11チームと並ぶ当事者で、商業面の合意で収入の分け方やチームへの賞金を決める。F1コミッションでも、FIAとFOMは投票権を持つ。"
+   ],
+   "examples": [
+    {
+     "t": "F1のドメニカリCEOが、フェラーリの代表交代論に対し「空想的な解決策は避けるべきだ」と述べた。",
+     "u": "/news/it-motorsport-domenicali-ferrari-horner/"
+    }
+   ],
+   "see": [
+    "fia",
+    "concorde-agreement",
+    "f1-commission"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Who owns F1? All you need to know about Liberty Media",
+     "url": "https://www.planetf1.com/news/who-owns-f1-liberty-media"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Domenicali gets five-year contract extension as F1 CEO",
+     "url": "https://www.motorsport.com/f1/news/domenicali-gets-five-year-contract-extension-as-f1-ceo/10702417/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "New F1 Concorde Agreement signed as FIA, Formula 1 and teams strike deal",
+     "url": "https://www.planetf1.com/news/f1-concorde-agreement-2026-concluded-as-governance-agreed-with-fia"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Explained: How the FIA develops potential new F1 rules and regulations",
+     "url": "https://www.planetf1.com/news/how-fia-introduces-new-f1-rules"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "wmsc",
+   "term": "世界モータースポーツ評議会（WMSC）",
+   "aliases": [
+    "WMSC",
+    "世界モータースポーツ評議会",
+    "World Motor Sport Council",
+    "評議会",
+    "せかいもーたーすぽーつひょうぎかい"
+   ],
+   "words": [
+    "FIAの最高機関",
+    "規則の承認",
+    "批准",
+    "会議",
+    "評議会",
+    "2027年規則"
+   ],
+   "short": "FIAの最高の意思決定機関。F1の規則変更は、最後にここで承認される。",
+   "body": [
+    "FIAの中で最も高い意思決定の場。F1コミッションなどで話がまとまった規則変更が、最後にここで承認（批准）される。規則や安全の議題を扱い、少なくとも年に3回開かれる。安全のためにFIAがF1コミッションを通さず規則を変えるときも、WMSCが票を投じる。",
+    "2026年の例。6月10日に、FIA、FOM、チーム、PUメーカーが2027〜2028年の規則の変更案で合意した。エンジン（ICE）の出力を上げ、電気（MGU-K）の出力を下げて、エネルギー管理の負担を減らす方向だ。6月23日にマカオで開かれたWMSCが、これを承認した。",
+    "同じ会議で、2027年からシーズン前のテストを3日から4日に増やすことも承認された。理由には、今のマシンの複雑さが挙げられている。"
+   ],
+   "examples": [],
+   "see": [
+    "fia",
+    "f1-commission",
+    "technical-directive",
+    "testing-rules"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Explained: How the FIA develops potential new F1 rules and regulations",
+     "url": "https://www.planetf1.com/news/how-fia-introduces-new-f1-rules"
+    },
+    {
+     "name": "formula1.com",
+     "title": "FIA's WMSC ratifies F1 regulatory changes for 2027 and 2028",
+     "url": "https://www.formula1.com/en/latest/article/fias-wmsc-ratifies-f1-regulatory-changes-for-2027-and-2028.ACyRcPvBKo8LRiOleCSJU"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Agreement reached on proposed F1 regulatory changes for 2027 and 2028",
+     "url": "https://core-ecs-origin-home.core-dns.watchliveformula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb"
+    },
+    {
+     "name": "New Straits Times",
+     "title": "F1 to have extra test day from 2027, engine tweaks approved",
+     "url": "https://www.nst.com.my/amp/sports/motor-sports/2026/06/1470843/f1-have-extra-test-day-2027-engine-tweaks-approved"
+    },
+    {
+     "name": "FIA",
+     "title": "Writing the rules: how the FIA develops new regulations for Formula 1",
+     "url": "https://www.fia.com/news/writing-rules-how-fia-develops-new-regulations-formula-1"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "f1-commission",
+   "term": "F1コミッション",
+   "aliases": [
+    "F1コミッション",
+    "Formula 1 Commission",
+    "F1 Commission",
+    "F1委員会",
+    "エフワンコミッション"
+   ],
+   "words": [
+    "規則の投票",
+    "多数決",
+    "チームの票",
+    "規則変更",
+    "FIAとFOM",
+    "賛成票"
+   ],
+   "short": "FIA、FOM、チーム、PUメーカーが集まり、F1の規則変更の案に投票する会議。",
+   "body": [
+    "F1の規則を変える手続きの入り口にあたる会議。FIA、F1の商業面を担うFOM、チーム、PUメーカーの代表が参加する。FIAの説明では、まずここで案が出され、4つの諮問委員会（競技、技術、財務、PU）が文面を整える。その案をF1コミッションが承認し、最後に世界モータースポーツ評議会（WMSC）が承認する。",
+    "必要な票の数は、2025年12月に合意された新しいコンコルド協定（統治面）で変わった。チームの賛成票は、通常の多数決で11チーム中6票から4票に、特別多数で8票から6票に減ったと報じられた。FIAとFOMも、引き続き投票権を持つ。",
+    "安全のためなら、FIAはF1コミッションを通さずに技術規則や競技規則を変えられる。その場合も、諮問委員会に相談し、WMSCが票を投じる。"
+   ],
+   "examples": [],
+   "see": [
+    "wmsc",
+    "fia",
+    "f1-group",
+    "concorde-agreement",
+    "technical-directive"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "Writing the rules: how the FIA develops new regulations for Formula 1",
+     "url": "https://www.fia.com/news/writing-rules-how-fia-develops-new-regulations-formula-1"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Explained: How the FIA develops potential new F1 rules and regulations",
+     "url": "https://www.planetf1.com/news/how-fia-introduces-new-f1-rules"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Two key changes in F1's Concorde governance agreement explained",
+     "url": "https://www.motorsport.com/f1/news/two-key-changes-in-f1s-concorde-governance-agreement-explained/10784461/"
+    },
+    {
+     "name": "CGI",
+     "title": "Formula One governance agreement 2026",
+     "url": "https://cgi.org.uk/resources/blogs/2025/formula-one-governance-agreement-2026/"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "technical-directive",
+   "term": "技術指令（TD）",
+   "aliases": [
+    "TD",
+    "テクニカルディレクティブ",
+    "Technical Directive",
+    "技術指令",
+    "FIA doc",
+    "FIAドキュメント"
+   ],
+   "words": [
+    "規則の解釈",
+    "FIAからの通達",
+    "抜け道",
+    "禁止",
+    "明確化",
+    "技術規則"
+   ],
+   "short": "規則のあいまいな部分について、FIAが「こう解釈する」とチームに示す文書。",
+   "body": [
+    "FIAがチームに送る文書で、技術規則のあいまいな部分や、解釈が分かれる部分について、FIAの読み方を示す。一般には公開されない。新しい技術的な工夫についての考え方や、検査方法の変更も伝える。規則すれすれの工夫をしている相手がいる、というチームの指摘をきっかけに出ることもある。",
+    "2026年から、FIAはこの種の文書を「FIA doc」と呼んでいる。技術だけでなく競技の話も扱えるように、呼び方をそろえたためという。ただし、報道では今も「技術指令（TD）」と呼ばれることが多い。",
+    "2026年の例の1つは4月。日本GPのあと、メルセデスとレッドブルが予選で、MGU-Kを止める手順を使っていたことが明らかになった。止めると、タイミングラインの手前で出力を下げる決まり（ランプダウン）を避けられ、高い出力を長く保てた。この停止は、部品を壊さないための緊急用という本来の目的に限る、とFIAは指令で示した。",
+    "もう1つは、モントリオールで投入されたメルセデスのディフューザーだ。バルセロナGPのあとにFIAが指令を出し、オーストリアGPの週末からメルセデスとレーシングブルズが形を直した。"
+   ],
+   "examples": [],
+   "see": [
+    "fia",
+    "wmsc",
+    "f1-commission",
+    "mgu-k",
+    "floor-diffuser"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "What is a Technical Directive in F1?",
+     "url": "https://www.planetf1.com/features/what-is-a-technical-directive-in-f1"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA bans fresh Mercedes, Red Bull engine trick with new technical directive",
+     "url": "https://www.planetf1.com/news/fia-mercedes-red-bull-f1-2026-engine-qualifying-loophole"
+    },
+    {
+     "name": "Autosport",
+     "title": "Mercedes forced to tweak F1 diffuser after rival complaints",
+     "url": "https://www.autosport.com/f1/news/mercedes-forced-to-tweak-f1-diffuser-after-rival-complaints/10833319/"
+    },
+    {
+     "name": "Autosport",
+     "title": "How Ferrari and Red Bull triggered the FIA's rethink over Mercedes F1 diffuser",
+     "url": "https://www.autosport.com/f1/news/how-ferrari-and-red-bull-triggered-the-fias-rethink-over-mercedes-f1-diffuser/10833900/"
+    }
+   ],
+   "cat": "チームとビジネス",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "chicane",
+   "term": "シケイン",
+   "aliases": [
+    "シケイン",
+    "chicane",
+    "ヴァリアンテ",
+    "variante",
+    "しけいん"
+   ],
+   "words": [
+    "連続コーナー",
+    "切り返し",
+    "減速",
+    "モンツァ",
+    "左右に曲がる"
+   ],
+   "short": "左右に切り返す短い連続コーナー。車を減速させるために設けられる。",
+   "body": [
+    "右と左（または左と右）に続けて曲がる、短い連続コーナーのこと。F1の公式用語集は、ドライバーに難しさを与え、コースの必要な場所で車を減速させるための形だと説明している。",
+    "代表例はモンツァだ。1・2コーナーの「プリマ・ヴァリアンテ（最初のシケイン）」は1972年に加えられ、2000年に形が変えられた。以前は「ヴァリアンテ・デル・レッティフィーロ（直線のシケイン）」と呼ばれていた。4・5コーナーの「セコンダ・ヴァリアンテ（2つ目のシケイン）」は、コースの危険を減らすために1976年に作られた。近くの小川にちなんで「ロッジャ」とも呼ばれる。",
+    "シケインは向きが変わる連続コーナーだ。1つの急なコーナーである「ヘアピン」とは区別される。"
+   ],
+   "examples": [],
+   "see": [
+    "hairpin",
+    "kerb",
+    "apex",
+    "track-limits"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (A-E)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "EXPLAINED: How the Monza corners got their names",
+     "url": "https://www.mercedesamgf1.com/news/explained-how-the-monza-corners-got-their-names"
+    },
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: How every corner at Monza got its name",
+     "url": "https://formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "hairpin",
+   "term": "ヘアピン",
+   "aliases": [
+    "ヘアピン",
+    "hairpin",
+    "ヘアピンカーブ",
+    "フェアモント・ヘアピン",
+    "へあぴん"
+   ],
+   "words": [
+    "急なコーナー",
+    "強いブレーキ",
+    "低速",
+    "方向転換",
+    "モナコ"
+   ],
+   "short": "とても急なコーナー。手前で強くブレーキをかけて大きく減速する。",
+   "body": [
+    "とても急なコーナーのこと。ドライバーは手前で強くブレーキをかけて大きく減速し、鋭く向きを変える。F1の公式用語集はこう説明している。",
+    "有名な例は、モナコの「フェアモント・ヘアピン」（ターン6）だ。ウィリアムズの紹介記事は、F1の暦でいちばん遅いコーナーで、時速約30マイル（約48km/h）まで落ちると書いている。",
+    "向きが変わる連続コーナーである「シケイン」とは違い、ヘアピンは1つの大きな方向転換だ。"
+   ],
+   "examples": [],
+   "see": [
+    "chicane",
+    "apex",
+    "kerb"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (F-J)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "Everything you need to know about the Monaco Grand Prix",
+     "url": "https://www.williamsf1.com/articles/3df6b3f0-0c5d-4329-97a9-af69988d6041/everything-you-need-to-know-about-the-monaco-grand-prix"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "apex",
+   "term": "エイペックス（クリッピングポイント）",
+   "aliases": [
+    "エイペックス",
+    "エイペクス",
+    "クリッピングポイント",
+    "apex",
+    "clipping point",
+    "レイトエイペックス"
+   ],
+   "words": [
+    "コーナーの頂点",
+    "内側",
+    "走行ライン",
+    "アウト・イン・アウト",
+    "縁石"
+   ],
+   "short": "コーナーで車が内側のいちばん近くを通る点。走る線の目印になる。",
+   "body": [
+    "コーナーを走るとき、車が内側の縁石にできるだけ近づく点のこと。F1の公式用語集では、コーナーのおよそ真ん中であることが多いが、いつもそうとは限らないとされる。「クリッピングポイント」とも呼ばれる。",
+    "速く曲がる基本は、コースの外側から入り、エイペックスで内側に寄り、出口でまた外側へ出る走り方だ。大きな弧を描くほど、コーナーの中で速度を保ちやすい。",
+    "エイペックスを遅めにとる「レイトエイペックス」という走り方もある。曲がり始めを遅らせて、出口の速さを優先する。そのかわり、進入の速度は低くなる。",
+    "コーナーの点である「クリッピングポイント」と、パワーユニットの話である「スーパークリッピング」は、別の言葉だ。"
+   ],
+   "examples": [],
+   "see": [
+    "kerb",
+    "hairpin",
+    "chicane",
+    "track-limits",
+    "super-clipping"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (A-E)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "Traxion.gg",
+     "title": "The racing line explained",
+     "url": "https://traxion.gg/the-racing-line-explained/"
+    },
+    {
+     "name": "Wikipedia",
+     "title": "Racing line",
+     "url": "https://en.wikipedia.org/wiki/Racing_line"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "street-circuit",
+   "term": "ストリートサーキット（市街地コース）",
+   "aliases": [
+    "ストリートサーキット",
+    "市街地コース",
+    "市街地サーキット",
+    "street circuit",
+    "公道コース",
+    "市街地"
+   ],
+   "words": [
+    "公道",
+    "一般道",
+    "壁",
+    "ランオフ",
+    "モナコ",
+    "バクー"
+   ],
+   "short": "ふだんは公道の道路を閉鎖して作るコース。壁が近く、逃げ場が少ない。",
+   "body": [
+    "開催都市の道路の一部を閉鎖して、一時的なコースにしたもの。レース専用に造ったサーキットではない。ウィリアムズの解説記事は、都市が公道を閉鎖して臨時のレース場にすると説明している。",
+    "壁やバリアの間を走るので、細かい正確さが求められる。普通のサーキットにあるような、舗装や芝のランオフは取りにくい。路面は一般の道路なので白線や標示が多く、雨のときは滑りやすいとされる。",
+    "今季の暦では、モナコ（6月）、バクー（9月）、シンガポール（10月）、ラスベガス（11月）が代表的な市街地コースだ。メルボルンとマイアミも、ウィリアムズは2023年に市街地での開催として数えた。マドリードの「マドリング」は、公道の部分とそうでない部分を組み合わせたコースだとThe Raceは伝えた。マドリングでのF1は、9月13日に初めて開かれた（formula1.com）。"
+   ],
+   "examples": [
+    {
+     "t": "Motorsport.comは、バクーの市街地での巧さでキャデラックの力を引き出したペレスを「勝者」に選んだ",
+     "u": "/news/en-motorsport-baku-street-brawl/"
+    },
+    {
+     "t": "バクーでは暑さで浮いたターン7の路面を、ドライバーの指摘を受けて夜のうちに補修した",
+     "u": "/news/en-rn365-baku-track-repairs/"
+    }
+   ],
+   "see": [
+    "run-off",
+    "kerb",
+    "track-limits",
+    "grand-prix"
+   ],
+   "src": [
+    {
+     "name": "Williams Racing",
+     "title": "Explained: Why F1 has more street circuits than ever before",
+     "url": "https://www.williamsf1.com/articles/b0625f34-0ae6-4aec-a00a-34d327bce4b6/explained-why-f1-has-more-street-circuits-than-ever-before"
+    },
+    {
+     "name": "The Race",
+     "title": "Layout for Madrid F1 debut revealed",
+     "url": "https://www.the-race.com/formula-1/madrid-f1-circuit-layout-revealed/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "2026 F1 calendar: Full race schedule revealed",
+     "url": "https://www.crash.net/f1/news/1073119/1/2026-f1-calendar-full-race-schedule-revealed"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Race Results",
+     "url": "https://www.formula1.com/en/results/2026/races"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "kerb",
+   "term": "縁石",
+   "aliases": [
+    "縁石",
+    "えんせき",
+    "ケルブ",
+    "kerb",
+    "curb",
+    "ソーセージ縁石"
+   ],
+   "words": [
+    "コースの端",
+    "ライン取り",
+    "ソーセージ縁石",
+    "トラックリミット",
+    "段差"
+   ],
+   "short": "コーナーの縁に置かれた、色付きで盛り上がった縁取り。コースの端を示す。",
+   "body": [
+    "コーナーの縁に置かれた、盛り上がった縁取りのこと。F1の公式用語集によると、コースの端を分かりやすくする役目があり、種類はいくつかあって、多くは目立つ色に塗られている。",
+    "ドライバーは縁石を上手に使う。コーナーの内側の縁石にかすめるように寄ると、内側を回る短い線を走れる。出口の縁石を使ってラインを広げ、加速につなげることもある。乗り方を間違えると、マシンを傷める。",
+    "「ソーセージ縁石」と呼ばれる盛り上がりの大きい縁石は、コースの限界を示し、大きくはみ出す走りを防ぐために使われる。乗ると床板やサスペンションを傷めたり、スピンしたり、車が空中に飛んだりする恐れがあり、安全面の議論が起きたことがある。",
+    "どの縁石にどこまで乗れるかは、ドライバーがレース前のコース歩きで確かめる。コースの端の扱いは「トラックリミット」も見る。"
+   ],
+   "examples": [],
+   "see": [
+    "apex",
+    "track-limits",
+    "chicane",
+    "run-off",
+    "gravel-trap"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (K-O)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-k-o.6g2hrWHA2pyxbXoe8FT9Db"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What is kerb riding?",
+     "url": "https://www.gpfans.com/en/f1-news/1021751/f1-kerb-riding"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Sausage kerbs: Masi on the Peroni accident",
+     "url": "https://www.motorsport.com/f1/news/sausage-kerbs-masi-peroni-accident/4536647/"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "run-off",
+   "term": "ランオフエリア",
+   "aliases": [
+    "ランオフエリア",
+    "ランオフ",
+    "run-off",
+    "run-off area",
+    "逃げ場"
+   ],
+   "words": [
+    "コース外",
+    "逃げ場",
+    "アスファルト",
+    "グラベル",
+    "トラックリミット"
+   ],
+   "short": "コースの境界の外にある、ミスをした車が入れる場所。安全のための逃げ場。",
+   "body": [
+    "決められたコースの境界の外側にあり、ミスをしたドライバーが入ることのできる区域。F1の公式用語集の説明だ。コースを外れたときの逃げ場になる。",
+    "舗装（アスファルト）のものと、砂利（グラベル）のものがある。Motorsport Magazineによると、舗装はグリップがよく、ブレーキで速度を落とせるので、大きな事故が起きる可能性を減らせる。砂利で止まってリタイアすることなく、安全にコースへ戻れるのも利点だ。",
+    "ただ、舗装のランオフは、白線の外へ少しはみ出しても危険が小さいので、限界まで攻める走りを生み、取り締まりが難しくなった。そこでFIAは、一部のコーナーで縁石のすぐ外に砂利を戻している。市街地コースでは壁やバリアの間を走ることが多く、ランオフはあまり取れない。"
+   ],
+   "examples": [
+    {
+     "t": "バクーのFP1で、アントネッリが油圧トラブルのためターン7でランオフエリアに入った",
+     "u": "/news/en-rn365-baku-track-repairs/"
+    }
+   ],
+   "see": [
+    "gravel-trap",
+    "track-limits",
+    "kerb",
+    "street-circuit"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "Return of the gravel trap: why F1 is welcoming them back",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/return-of-the-gravel-trap-why-f1-is-welcoming-them-back"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "Explained: Why F1 has more street circuits than ever before",
+     "url": "https://www.williamsf1.com/articles/b0625f34-0ae6-4aec-a00a-34d327bce4b6/explained-why-f1-has-more-street-circuits-than-ever-before"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Baku track repairs made overnight after F1 drivers complain",
+     "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "gravel-trap",
+   "term": "グラベル",
+   "aliases": [
+    "グラベル",
+    "グラベルトラップ",
+    "gravel trap",
+    "gravel",
+    "砂利",
+    "じゃり"
+   ],
+   "words": [
+    "砂利",
+    "コース外",
+    "減速",
+    "ランオフ",
+    "動けなくなる"
+   ],
+   "short": "コーナーの外側などに敷かれた砂利。入った車を一気に減速させる。",
+   "body": [
+    "主にコーナーの外側にある、砂利を敷いた場所。コースを外れて入った車が、すばやく減速するように作られている。F1の公式用語集の説明だ。",
+    "砂利に入った車は動けなくなりやすい。ここが、舗装のランオフとの大きな違いだ。舗装なら、ドライバーはコースに戻ってレースを続けられる（Motorsport Magazine）。",
+    "近年は、一部のコーナーで砂利が戻ってきた。スパやイモラに続き、2024年にはオーストリアのターン9と10で、縁石のすぐ外に砂利の帯が置かれた。その先には広い舗装のランオフが残る。砂利でグリップを失う危険があるので、大きくはみ出す走りが減ると考えられている（Motorsport Magazine）。",
+    "当時のFIAのレースディレクターだったマシ氏は、どのサーキットにも同じ形を当てはめられるわけではなく、サーキットごとに合った形を探すと話していた。"
+   ],
+   "examples": [],
+   "see": [
+    "run-off",
+    "track-limits",
+    "kerb"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (F-J)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "Return of the gravel trap: why F1 is welcoming them back",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/return-of-the-gravel-trap-why-f1-is-welcoming-them-back"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Mugello gravel trap approach won't work everywhere - FIA",
+     "url": "https://au.motorsport.com/f1/news/mugello-gravel-trap-track-limits/4875696/"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "sector",
+   "term": "セクター",
+   "aliases": [
+    "セクター",
+    "sector",
+    "パープルセクター",
+    "紫セクター",
+    "ベストセクター",
+    "せくたー"
+   ],
+   "words": [
+    "1周を3分割",
+    "紫",
+    "緑",
+    "黄",
+    "タイミング画面",
+    "区間タイム"
+   ],
+   "short": "1周を3つに分けた区間。タイミング画面では紫・緑・黄で表される。",
+   "body": [
+    "F1の1周は、3つのセクターに分けられる（F1の公式用語集）。区間ごとにタイムが測られ、「第1セクター」「第2セクター」「第3セクター」と呼ぶ。",
+    "タイミング画面では、タイムの色で状態が分かる。紫は、その時点で全員の中でいちばん速いタイム。緑は、自分のそれまでのベストより速いタイム。黄は、自分のベストより遅いタイムだ。",
+    "色は、セクターのタイムにも、1周のタイムにも使われる。予選のアタックでは、第1セクターや第2セクターの色を見ると、そのラップが速くなりそうかを途中で知れる。",
+    "旗やライトパネルのためにコースを分けた「マーシャリングセクター」は別のものだ。規則では、FIAのライトパネルの間のコースの区間と決められている。"
+   ],
+   "examples": [
+    {
+     "t": "バクーで空力仕様が違うフェラーリ2台のうち、低ダウンフォースのルクレールが、第1セクターで0.177秒、最速ラップで0.386秒上回った",
+     "u": "/news/de-formel1-ferrari-sf26-downforce/"
+    },
+    {
+     "t": "解説者アルバース氏は、フェルスタッペンとラッセルの差は、中間セクターの短い直線でのバッテリーの使える量にあったと分析した",
+     "u": "/news/nl-gpblog-verstappen-corners-deficit/"
+    }
+   ],
+   "see": [
+    "fastest-lap",
+    "qualifying",
+    "yellow-flag",
+    "vsc"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "MultiViewer",
+     "title": "Understanding telemetry（タイミングの色の説明）",
+     "url": "https://multiviewer.app/docs/getting-started/understanding-telemetry"
+    },
+    {
+     "name": "TAG Heuer Magazine",
+     "title": "Formula 1: The Glossary (You'll want to know this)",
+     "url": "https://magazine.tagheuer.com/en/2025/05/06/formula-1-the-glossary-youll-want-to-know-this/"
+    },
+    {
+     "name": "FormulaOneHistory",
+     "title": "What Does Purple Sector Mean In F1? A Complete Guide",
+     "url": "https://www.formulaonehistory.com/purple-sector-in-f1/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "pit-lane",
+   "term": "ピットレーン",
+   "aliases": [
+    "ピットレーン",
+    "pit lane",
+    "pitlane",
+    "ピットロード",
+    "ピット"
+   ],
+   "words": [
+    "ガレージ",
+    "ピットボックス",
+    "制限速度",
+    "80km/h",
+    "ピット入口",
+    "ピット出口"
+   ],
+   "short": "ガレージにつながるコース脇の道。制限速度は原則80km/h。",
+   "body": [
+    "ピットボックスとガレージにつながる、コースの一部。F1の公式用語集の説明だ。規則では、「ピット入口の道」「ピットレーン」「ピット出口の道」に分けて決められている。",
+    "2026年の規則では、ピットレーンの制限速度は競技の間ずっと80km/hだ。ただし、安全のためにレースディレクターが変更できる。車を自分の力でバックさせることも禁じられている。",
+    "練習走行や予選で制限を超えると、1km/hあたり100ユーロ（最大1,000ユーロ）の罰金が科される。レース中は、スチュワードが5秒加算、10秒加算、ドライブスルー、ストップ＆ゴーのどれかを出せる。今季のハンガリーGPでは、80km/hの制限を0.1km/h超えた（80.1km/h）だけで、5秒加算になった例がある。"
+   ],
+   "rule": "スポーティングレギュレーション B1.6.3（ピット入口の道・ピットレーン・ピット出口の道での走行）",
+   "examples": [],
+   "see": [
+    "pit-lane-start",
+    "unsafe-release",
+    "parc-ferme",
+    "pit-window",
+    "time-penalty",
+    "drive-through",
+    "stop-go"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 05）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA reveals extent of Hamilton infringement after fourth penalty in three weekends",
+     "url": "https://www.planetf1.com/news/fia-lewis-hamilton-pit-lane-hungarian-grand-prix-2026-penalty"
+    },
+    {
+     "name": "F1Technical",
+     "title": "EXPLAINED: The 0.1 kph that cost Hamilton a shot at a podium finish",
+     "url": "https://www.f1technical.net/news/29068"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "refuelling",
+   "term": "レース中の給油",
+   "aliases": [
+    "給油",
+    "レース中の給油",
+    "給油禁止",
+    "refuelling",
+    "refueling",
+    "リフューエリング"
+   ],
+   "words": [
+    "給油禁止",
+    "2010年",
+    "燃料",
+    "ピットストップ",
+    "安全",
+    "費用"
+   ],
+   "short": "レース中にピットで燃料を足すこと。2010年から禁止されている。",
+   "body": [
+    "レース中にピットで燃料を足すことを指す。F1では1982年にブラバムが作戦として取り入れ、1984年に安全上の理由で禁止された。1994年に復活し、2010年からは再び禁止されている（Motorsport.com）。",
+    "禁止の理由として、Motorsport.comは安全と費用を挙げている。給油作業ではピットで事故が起きたことがあり、重い給油装置を世界中に運ぶ費用もかかった。禁止に合わせて、大きな燃料タンクを積めるよう、車の大きさの規則も変わった。",
+    "2026年の規則でも、禁止は続いている。燃料は、ピットレーンを出てコースの下見走行に向かってから、セッションの終わりの合図が出るまで、足すことも抜くこともできない。給油が認められるのは、チームのガレージの中だけだ。",
+    "復活の話は出ている。2026年7月、FIAのビン・スライエム会長は、給油の復活を検討していると話した。2031年の規則に向けた話し合いの中で出た案と伝えられ、会長は「検討しているところで、まだ何もしていない」とも述べている。"
+   ],
+   "rule": "スポーティングレギュレーション B5.1.4（燃料の追加・抜き取りの禁止）／B1.5.9（給油はガレージ内のみ）",
+   "examples": [],
+   "see": [
+    "sustainable-fuel",
+    "pit-lane",
+    "pit-window",
+    "parc-ferme"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 05）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Why was refuelling banned in F1?",
+     "url": "https://au.motorsport.com/f1/news/why-was-refuelling-banned-in-f1/10555081/"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "F1 in reverse again: V8s and refuelling set to come back from bans?",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-reverse-again-v8s-and-refuelling-set-to-come-back-from-bans/"
+    },
+    {
+     "name": "GPFans",
+     "title": "FIA confirms it is considering F1 refuelling return during races",
+     "url": "https://www.gpfans.com/en/f1-news/1087018/fia-considering-f1-refuelling-return-2031-regulations/"
+    },
+    {
+     "name": "GPblog",
+     "title": "FIA considers bringing refuelling back to F1: 'This is what we are studying right now'",
+     "url": "https://www.gpblog.com/en/news/fia-considers-bringing-refuelling-back-to-f1-this-is-what-we-are-studying-right-now"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "hybrid-era",
+   "term": "ハイブリッド時代",
+   "aliases": [
+    "ハイブリッド時代",
+    "ハイブリッドエラ",
+    "hybrid era",
+    "ターボハイブリッド時代",
+    "2014年規則"
+   ],
+   "words": [
+    "2014年",
+    "V6ターボ",
+    "電気",
+    "ERS",
+    "パワーユニット",
+    "MGU-H"
+   ],
+   "short": "2014年に始まった、ターボと電気を組み合わせたパワーユニットの時代。",
+   "body": [
+    "2014年、F1は1.6リッターのV6ターボに、ハイブリッド（電気）の技術を大きく取り入れた新しいパワーユニットを導入した。FIAは当時、技術規則の歴史でいちばん大きな変更だと説明した。",
+    "この規則の期間を、2014年から2025年までの12シーズンとして語る記事がある（Motorsport Magazine）。2026年からは規則が新しくなった。FIAによると、MGU-Hがなくなり、電気の出力は120kWから350kWへ大きく増え、燃料は完全に持続可能なものになる。",
+    "2026年のパワーユニットも、電気を使う。ただし、規則が大きく変わったので、2014年からの規則とは分けて語られる。Motorsport Magazineは、2026年に「F1は再びリセットされる」と書いた。",
+    "さらに先の規則として、2030年ごろに3.0リッターのV8ターボと100kWの電動モーターを組み合わせる案が報じられている。方向性では関係者の合意があるが、細部と時期は決まっていない（RacingNews365、2026年9月）。"
+   ],
+   "examples": [
+    {
+     "t": "F1は2030年から、3.0リッターV8ターボ＋電動100kWの新規則へ向かうと報じられた",
+     "u": "/news/en-rn365-f1-v8-return-2030/"
+    },
+    {
+     "t": "元メルセデスPU開発者のイリエン氏は、現行のハイブリッドPUは電気の割合が多すぎるというフェルスタッペンの批判に同意した",
+     "u": "/news/en-rn365-illien-pu-electric-debate/"
+    }
+   ],
+   "see": [
+    "mgu-k",
+    "mgu-h",
+    "energy-store",
+    "ice",
+    "sustainable-fuel",
+    "active-aero"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2014 F1 Power Unit Guide",
+     "url": "https://api.fia.com/news/2014-f1-power-unit-guide"
+    },
+    {
+     "name": "FIA",
+     "title": "A new era of competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "The long road to convergence: How F1 closed the gaps of the hybrid era",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/the-long-road-to-convergence-how-f1-closed-the-gaps-of-the-hybrid-era/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 takes step closer to V8 return as fresh engine details emerge",
+     "url": "https://racingnews365.com/f1-takes-step-closer-to-v8-return-as-fresh-engine-details-emerge"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "grand-slam",
+   "term": "グランドスラム",
+   "aliases": [
+    "グランドスラム",
+    "グランシェレム",
+    "グランシュレム",
+    "grand slam",
+    "grand chelem"
+   ],
+   "words": [
+    "ポール・トゥ・ウィン",
+    "全周回首位",
+    "ファステストラップ",
+    "完全勝利",
+    "ハットトリック"
+   ],
+   "short": "同じ週末に、ポール、全周回首位、ファステストラップ、優勝をそろえること。",
+   "body": [
+    "1つのレース週末に、予選でポールポジションを取り、ファステストラップを出し、決勝で全周回をトップで走って優勝すること。F1の公式用語集は、「グランシェレム」の項目で説明している。グランドスラムとも呼ぶ。",
+    "4つの条件をすべて満たす必要があるので、達成はまれだ。The Raceによると、今のF1ではタイヤ交換の義務や作戦があるため、独走していても、挑戦者より先にピットに入って1周でも先頭を譲ることがある。",
+    "ファステストラップのボーナス1点は、2025年から廃止された（formula1.com）。ただ、最速ラップの記録は今も残っていて、グランドスラムの条件にも数えられる。",
+    "今季はバクーで、ラッセルがキャリア初のグランドスラムを達成した。ポールから優勝し、51周すべてで先頭を走り、ファステストラップも出した（RacingNews365）。"
+   ],
+   "examples": [
+    {
+     "t": "ラッセルがバクーでキャリア初のグランドスラムを達成",
+     "u": "/news/en-motorsport-russell-lose-faith/"
+    },
+    {
+     "t": "バクーのグランドスラムで、ラッセルは首位アントネッリとの差を81点から66点に縮めた",
+     "u": "/news/de-formel1-russell-title-chase/"
+    }
+   ],
+   "see": [
+    "hat-trick",
+    "pole-position",
+    "fastest-lap",
+    "points-system",
+    "qualifying"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (F-J)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Find out which exclusive club Verstappen joined in Austria – and who is in it with him",
+     "url": "https://www.formula1.com/en/latest/article/find-out-which-exclusive-club-verstappen-joined-in-austria-and-who-is-in-it.5Hi0682uVTEz0PZFQRn5dx"
+    },
+    {
+     "name": "The Race",
+     "title": "The complexities that undermine Verstappen's latest F1 milestone",
+     "url": "https://the-race.com/formula-1/the-complexities-that-undermine-verstappens-latest-f1-milestone"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Fastest lap point to be scrapped in 2025 after latest FIA World Motor Sport Council",
+     "url": "https://www.formula1.com/en/latest/article/fastest-lap-point-to-be-scrapped-in-2025-after-latest-fia-world-motor-sport.4pUjDzWnGRN7KVWENLc1BY"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "George Russell fires rally cry after resilient Mercedes fightback",
+     "url": "https://racingnews365.com/george-russell-fires-rally-cry-after-resilient-mercedes-fightback"
+    },
+    {
+     "name": "TAG Heuer Magazine",
+     "title": "Formula 1: The Glossary (You'll want to know this)",
+     "url": "https://magazine.tagheuer.com/en/2025/05/06/formula-1-the-glossary-youll-want-to-know-this/"
+    },
+    {
+     "name": "Formel1.de",
+     "title": "George Russell findet seine Form: Aber reicht es noch für den Titel?",
+     "url": "https://www.formel1.de/news/news/2026-09-28/george-russell-findet-seine-form-aber-reicht-es-noch-fuer-den-titel"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "hat-trick",
+   "term": "ハットトリック",
+   "aliases": [
+    "ハットトリック",
+    "hat-trick",
+    "hat trick",
+    "ハットトリック達成",
+    "ポール・FL・優勝"
+   ],
+   "words": [
+    "ポール",
+    "優勝",
+    "ファステストラップ",
+    "同じ週末",
+    "3つ"
+   ],
+   "short": "同じレース週末に、ポール、ファステストラップ、優勝の3つを取ること。",
+   "body": [
+    "1つのレース週末に、ポールポジション、ファステストラップ、優勝の3つをすべて取ること。formula1.comの記事は、この3つがそろった週末をハットトリックとして数えている。F1の公式用語集に項目はなく、記事で使われる呼び方だ。",
+    "グランドスラムとの違いは、全周回で先頭にいる必要がない点だ。ポール、ファステストラップ、優勝は同じで、グランドスラムにはそこへ「全周回首位」が加わる（formula1.com）。ハットトリックのほうが、条件は1つ少ない。",
+    "ファステストラップのボーナス1点は、2025年からなくなった。それでも最速ラップは記録されている。ラッセルのバクーでの週末（ポール、優勝、最速ラップ、全周回首位）は、ハットトリックの条件も満たしている。"
+   ],
+   "examples": [
+    {
+     "t": "ラッセルのバクーでのグランドスラムは、ポール・優勝・ファステストラップを含むので、ハットトリックの条件も満たす",
+     "u": "/news/en-motorsport-russell-lose-faith/"
+    }
+   ],
+   "see": [
+    "grand-slam",
+    "pole-position",
+    "fastest-lap",
+    "points-system"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Hamilton's hat-tricks – Looking back on Lewis's most dominant weekends",
+     "url": "https://www.formula1.com/en/latest/article/hamiltons-hat-tricks-lewis-most-dominant-weekends.79gFfsJq2Fn3ga72loJMvy"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Find out which exclusive club Verstappen joined in Austria – and who is in it with him",
+     "url": "https://www.formula1.com/en/latest/article/find-out-which-exclusive-club-verstappen-joined-in-austria-and-who-is-in-it.5Hi0682uVTEz0PZFQRn5dx"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (F-J)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Fastest lap point to be scrapped in 2025 after latest FIA World Motor Sport Council",
+     "url": "https://www.formula1.com/en/latest/article/fastest-lap-point-to-be-scrapped-in-2025-after-latest-fia-world-motor-sport.4pUjDzWnGRN7KVWENLc1BY"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "George Russell fires rally cry after resilient Mercedes fightback",
+     "url": "https://racingnews365.com/george-russell-fires-rally-cry-after-resilient-mercedes-fightback"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "constructor",
+   "term": "コンストラクター",
+   "aliases": [
+    "コンストラクター",
+    "コンストラクターズ",
+    "constructor",
+    "コンストラクタ",
+    "チーム選手権"
+   ],
+   "words": [
+    "チーム",
+    "コンストラクターズ選手権",
+    "車体",
+    "マシンの製作",
+    "チーム順位"
+   ],
+   "short": "自分で車を設計・製作するF1チームの正式な呼び名。選手権の単位でもある。",
+   "body": [
+    "F1チームの正式な呼び名。F1の公式用語集によると、各チームは自分で車を設計して作ることになっていて、そのため世界コンストラクターズ選手権を争う。",
+    "コンストラクターズ選手権の点は、チームの2人のドライバーが取った点の合計だ（Honda）。今季は11チームで、たとえばバクー終了時点のメルセデスは538点。これは、アントネッリの302点とラッセルの236点の合計と同じだ（formula1.com）。",
+    "チームとエンジンのメーカーは、同じとは限らない。今季は5つのメーカーが、11チームにパワーユニットを供給している（The Race）。",
+    "順位は、F1の運営会社（FOM）からの収入の分配や、スポンサー集めにも大きく響く（Honda）。"
+   ],
+   "examples": [
+    {
+     "t": "第15戦バクー終了時点で、コンストラクターズ選手権はメルセデスが538点、2位フェラーリに160点差",
+     "u": "/news/ja-f1gate-standings-baku/"
+    },
+    {
+     "t": "レーシングブルズは、バクーで広げたコンストラクターズ選手権の差を、セパンでも守ることを狙う",
+     "u": "/news/it-formula1-racingbulls-sepang-preview/"
+    }
+   ],
+   "see": [
+    "points-system",
+    "championship-tiebreak",
+    "podium",
+    "grand-prix"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (A-E)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "Honda",
+     "title": "F1 Explained: Constructors' Championship",
+     "url": "https://global.honda/en/F1/features/f1-explained/07/"
+    },
+    {
+     "name": "The Race",
+     "title": "What engine every F1 team is using for 2026 rules",
+     "url": "https://the-race.com/formula-1/2026-f1-team-engines"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Drivers' Standings",
+     "url": "https://www.formula1.com/en/results/2026/drivers"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "podium",
+   "term": "表彰台",
+   "aliases": [
+    "表彰台",
+    "ひょうしょうだい",
+    "ポディウム",
+    "podium",
+    "表彰式",
+    "トップ3"
+   ],
+   "words": [
+    "上位3人",
+    "トロフィー",
+    "表彰式",
+    "国歌",
+    "優勝チーム代表"
+   ],
+   "short": "決勝の上位3人がトロフィーを受ける、一段高い台。優勝チームの代表も上がる。",
+   "body": [
+    "決勝のあとに、上位3人のドライバーがトロフィーを受け取る、一段高い台。F1の公式用語集の説明だ。4位以下のドライバーは、表彰台には上がらない。",
+    "FIAの2026年ベルギーGPの決勝後の手順書では、上位3人は「1・2・3」の札の前に車を止める。計量とインタビューのあとピレリのキャップをかぶり、3位、2位、優勝者の順に紹介されて表彰台に立つ。国歌も流れる。",
+    "トロフィーは、優勝ドライバー、優勝ドライバーへのFIAメダル、優勝したコンストラクターの代表、2位、3位の順で渡される。つまり、壇上でトロフィーを受けるのはドライバー3人と、優勝チームの代表だ。表彰式のあと、上位3人はテレビ用のエリアを経て、FIAの記者会見へ向かう。"
+   ],
+   "rule": "スポーティングレギュレーション B10.2（表彰式）",
+   "examples": [
+    {
+     "t": "手首のけがから復帰したハジャーがバクーで3位。「初めての本物の表彰台」と語った",
+     "u": "/news/en-f1com-hadjar-podium-return/"
+    },
+    {
+     "t": "セパンのバーレーンGPでは、表彰台でバーレーンの伝統のローズウォーターが使われる予定",
+     "u": "/news/de-motorsport-total-sepang-bahrain-flavour/"
+    }
+   ],
+   "see": [
+    "points-system",
+    "parc-ferme",
+    "chequered-flag",
+    "constructor"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Belgian Grand Prix – Post-Race Procedure",
+     "url": "https://www.fia.com/system/files/decision-document/2026_belgian_grand_prix_-_post-race_procedure.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "triple-header",
+   "term": "3連戦（トリプルヘッダー）",
+   "aliases": [
+    "3連戦",
+    "三連戦",
+    "トリプルヘッダー",
+    "triple-header",
+    "triple header",
+    "3週連続開催"
+   ],
+   "words": [
+    "3週連続",
+    "連続開催",
+    "移動",
+    "メカニック",
+    "日程"
+   ],
+   "short": "3週連続の週末にレースを開く日程。移動と準備の負担が大きい。",
+   "body": [
+    "3週連続の週末に、レースが開かれる日程のこと。The Raceは「連続する3つの週末に開かれる3戦」と説明している。F1で最初の3連戦は、2018年のフランス、オーストリア、イギリスだった。新型コロナの影響で日程が詰まった2020年には、3回組まれた。",
+    "2026年は、バクー（決勝は9月26日の土曜日）、セパン（10月2〜4日）、シンガポール（10月9〜11日）が3週連続だ。formula1.comは、これを「アゼルバイジャン、バーレーン（マレーシア開催）、シンガポールの3連戦」と呼んでいる。Crash.netの暦では、終盤にもオースティン、メキシコシティ、サンパウロと、ラスベガス、カタール、アブダビの3連戦が続く。",
+    "チームの負担は大きいとされる。部品の管理や、3週間以上も家を離れることが問題になり、特にメカニックの疲れが心配されてきた（The Race）。対策として、多くのチームは同じ装備を何セットも持ち、1つを使っている間に別のセットを次の開催地へ回す（Motorsport.com）。"
+   ],
+   "examples": [],
+   "see": [
+    "grand-prix"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Why triple-headers in F1 are here to stay",
+     "url": "https://the-race.com/formula-1/why-triple-headers-in-f1-are-here-to-stay/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1 FANTASY: Strategist Preview – Your guide to the Azerbaijan, Bahrain and Singapore triple header",
+     "url": "https://formula1.com/en/latest/article/f1-fantasy-strategist-preview-your-guide-to-the-azerbaijan-bahrain-and-singapore-triple-header.NwohuVqzxV2nIP8cnVqy2"
+    },
+    {
+     "name": "Crash.net",
+     "title": "2026 F1 calendar: Full race schedule revealed",
+     "url": "https://www.crash.net/f1/news/1073119/1/2026-f1-calendar-full-race-schedule-revealed"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "How teams are solving the logistical puzzle of F1's triple-headers",
+     "url": "https://www.motorsport.com/f1/news/how-teams-are-solving-the-logistical-puzzle-of-f1s-triple-headers/10624837/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Race Results",
+     "url": "https://www.formula1.com/en/results/2026/races"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "grand-prix",
+   "term": "グランプリ（GP）",
+   "aliases": [
+    "グランプリ",
+    "GP",
+    "grand prix",
+    "グランプリ（GP）",
+    "ぐらんぷり"
+   ],
+   "words": [
+    "決勝レース",
+    "レース名",
+    "開催地",
+    "305km",
+    "2時間"
+   ],
+   "short": "F1の1レースの正式な呼び名。フランス語で「大きな賞」の意味。",
+   "body": [
+    "F1のレースの正式な呼び方。もとはフランス語で「大きな賞」という意味だ（F1の公式用語集）。「GP」と略される。",
+    "距離は、305kmを超える最小の周回数と決められている。モナコだけは260kmだ。スタートから2時間が過ぎると、その周の次の周の終わりでレースが終わる。中断があった場合も、全体で3時間が上限だ。",
+    "今年のバーレーンGPは、バーレーンではなく、マレーシアのセパン（10月2〜4日）で開かれる。formula1.comは「マレーシアで開くバーレーンGP」と書いている。4月に予定されていたバーレーンGPとサウジアラビアGPは、中止になった（Crash.net）。"
+   ],
+   "rule": "スポーティングレギュレーション B2.5.2（レースの距離）／B2.5.3（レースの時間）",
+   "examples": [
+    {
+     "t": "今年のバーレーンGPは、バーレーンではなくマレーシアのセパンで開催される",
+     "u": "/news/en-rn365-sepang-five-things/"
+    }
+   ],
+   "see": [
+    "triple-header",
+    "sprint",
+    "qualifying",
+    "chequered-flag",
+    "race-start",
+    "points-system"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (F-J)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 05）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1 FANTASY: Strategist Preview – Your guide to the Azerbaijan, Bahrain and Singapore triple header",
+     "url": "https://formula1.com/en/latest/article/f1-fantasy-strategist-preview-your-guide-to-the-azerbaijan-bahrain-and-singapore-triple-header.NwohuVqzxV2nIP8cnVqy2"
+    },
+    {
+     "name": "Crash.net",
+     "title": "2026 F1 calendar: Full race schedule revealed",
+     "url": "https://www.crash.net/f1/news/1073119/1/2026-f1-calendar-full-race-schedule-revealed"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "Everything you need to know about the Monaco Grand Prix",
+     "url": "https://www.williamsf1.com/articles/3df6b3f0-0c5d-4329-97a9-af69988d6041/everything-you-need-to-know-about-the-monaco-grand-prix"
+    }
+   ],
+   "cat": "サーキットと歴史",
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "pit-stop",
+   "term": "ピットストップ",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ピットイン",
+    "ピット作業",
+    "タイヤ交換",
+    "pit stop",
+    "pitstop",
+    "ピット"
+   ],
+   "words": [
+    "タイヤ交換",
+    "ピットに入る",
+    "給油なし",
+    "止まっている時間",
+    "ピットクルー",
+    "1.80秒"
+   ],
+   "short": "レース中にピットレーンに入り、タイヤを交換する作業。給油は2010年から禁止されている。",
+   "body": [
+    "ピットストップは、レース中にコースからピットレーンに入り、自分のチームのピット位置に止まって作業を受けることだ。いちばん多い作業はタイヤの交換だ。給油は2010年から禁止されているので、燃料を足すための停止はない。",
+    "作業をするのは20人前後のチームだ。2023年の報道では、作業する人は最大22人で、止まっている時間はふつう2.5秒前後とされていた。2秒を切る作業もある。",
+    "2023年のカタールGPでは、マクラーレンがノリスの車の作業を1.80秒で終え、当時の最速記録になった。それまでの記録は、2019年ブラジルGPでレッドブルが出した1.82秒だった。この時間は車が止まっている間だけを数えたもので、ピットレーンを走る時間は入らない。",
+    "ピットに入る時期は、作戦の要だ。ドライのレースでは、種類の違うドライタイヤを2つ以上使う決まりがあるので、ふつうは最低1回は入る（→2種類のタイヤの使用義務）。タイヤの減り方を見て入る周を決め、相手より先に入るのがアンダーカット、遅く入るのがオーバーカットだ。セーフティカーのときは、ピットで失う時間が小さくなるので、入る車が増える。",
+    "ピットレーンの規則も多い。制限速度があり、守らないと罰になる（→ピットレーンの速度制限）。出口には赤と緑のライトがあり、緑のときだけ出られる。作業員や他の車を危険にさらす形で発進すると、アンセーフリリースになる。"
+   ],
+   "rule": "スポーティングレギュレーション B1.6.1〜B1.6.3",
+   "examples": [
+    {
+     "t": "バクー決勝で、フェルスタッペンは早めのタイヤ交換を求めたが却下された。その後のセーフティカーで「無料の」ピットストップができた。",
+     "u": "/news/nl-gpblog-verstappen-pit-lambiase/"
+    },
+    {
+     "t": "2026年は15戦中9戦で多くのドライバーが1ストップで走り切ったため、ピレリは2027年のタイヤで劣化を増やす方針だと報じられた。",
+     "u": "/news/ja-f1gate-pirelli-2027-tire-degradation/"
+    },
+    {
+     "t": "セパンは路面が粗くタイヤの摩耗が大きいため、1ストップ中心の流れから2〜3ストップに増える可能性があると報じられている。",
+     "u": "/news/en-therace-sepang-sandpaper-surface/"
+    }
+   ],
+   "see": [
+    "two-compound-rule",
+    "pit-window",
+    "undercut",
+    "overcut",
+    "unsafe-release",
+    "pit-lane-speed",
+    "double-stack",
+    "in-out-lap"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 05, 2026-02-27",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Gone in 1.9 seconds - the quest for the perfect pit stop",
+     "url": "https://www.formula1.com/en/latest/article/f1-quest-perfect-pit-stop.1lwNTV7z6MiEA2weCMsS8E"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "WATCH: McLaren set new F1 pit stop record with spectacularly quick tyre change in Qatar",
+     "url": "https://www.formula1.com/en/latest/article.watch-mclaren-set-new-f1-pit-stop-record-with-spectacularly-quick-tyre.5ZBn7RJxE9iTVmSGfeeVHm.html"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 v IndyCar v NASCAR: How do pit-stops compare in each of the three racing series?",
+     "url": "https://www.planetf1.com/features/f1-indycar-nascar-pit-stops-compared"
+    }
+   ]
+  },
+  {
+   "id": "pit-lane-speed",
+   "term": "ピットレーンの速度制限",
+   "cat": "レース運営",
+   "aliases": [
+    "ピット速度制限",
+    "ピットリミッター",
+    "ピットレーンの制限速度",
+    "80km/h",
+    "pit lane speed limit",
+    "スピード違反"
+   ],
+   "words": [
+    "制限速度",
+    "スピード違反",
+    "ピットでの速度",
+    "60km/h",
+    "5秒加算",
+    "モナコ"
+   ],
+   "short": "ピットレーンを走る速度の上限。基本は80km/hで、大会によって下げることがある。",
+   "body": [
+    "ピットレーンには作業員がいるので、制限速度がある。規則では、競技の間ずっと80km/hとされている。ただし、大会ごとのレースディレクターノートで、レースディレクターが変えることがある。",
+    "今季のモナコGPは60km/hだった。ピットレーンが狭くて混み合うためだ。オーストラリアGPは、開幕直前に60km/h案が報じられたが、FIAが80km/hのままと明らかにした。",
+    "制限速度が低いほど、ピットで失う時間は増える。2025年にFIAは、60km/hだった一部の会場を80km/hに上げる方針を示した。シンガポールでは、ピットレーンを通る時間が約6秒短くなると見込まれた。",
+    "速度は、ピットレーンに置いた計時ループと、車のトランスポンダーで測る。ループの間を通る時間から平均の速度を出す方式で、カメラやスピードガンではない。ほんの少し超えただけでも違反になる。今季のモナコGPのレースでは6件の違反が記録され、そのうち5件は60.1km/hだった。ただし、ガスリーの2件は、あとでループの間の距離が実際より長く記録されていたと分かり、罰が取り消された。",
+    "罰は、練習走行と予選なら、1km/h超えるごとに100ユーロ（上限1000ユーロ）の罰金。レースとスプリントでは、スチュワードが5秒加算、10秒加算、ドライブスルー、ストップ＆ゴーのどれかを科せる。実際は5秒加算が多い。速度違反で有利になろうとしたと疑われると、追加の罰もある。"
+   ],
+   "rule": "スポーティングレギュレーション B1.6.3",
+   "examples": [],
+   "see": [
+    "pit-stop",
+    "unsafe-release",
+    "time-penalty",
+    "drive-through",
+    "stop-go"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 05, 2026-02-27",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "Autosport",
+     "title": "Pierre Gasly's Monaco GP penalty rescinded: FIA stewards report in full",
+     "url": "https://www.autosport.com/f1/news/pierre-gaslys-monaco-gp-penalty-rescinded-fia-stewards-report-in-full/10829455/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Explained: Why are there pit lane speed limits in F1 and how are they measured?",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-are-there-pit-lane-speed-limits-in-f1-and-how-are-they-measured.jc4jiWVsfbRhb62QomSf0.jc4jiWVsfbRhb62QomSf0"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "All penalties and investigations from the 2026 Monaco GP revealed",
+     "url": "https://www.planetf1.com/news/every-monaco-gp-penalties-and-fia-investigation-revealed"
+    },
+    {
+     "name": "Speedcafe",
+     "title": "FIA clarify pit lane rule at Albert Park for the 2026 Australian Grand Prix",
+     "url": "https://us.speedcafe.com/f1-news-2026-fia-clarify-pit-lane-rule-speed-limit-albert-park-australian-grand-prix/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 to raise pitlane speed limit to reduce one stop races",
+     "url": "https://www.the-race.com/formula-1/f1-reduce-pitlane-speed-limit-some-races-explained/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "How faster pitlane speeds could spice up F1 Singapore GP",
+     "url": "https://www.motorsport.com/f1/news/how-faster-pitlane-speeds-could-spice-up-f1-singapore-gp/10763980/"
+    }
+   ]
+  },
+  {
+   "id": "double-stack",
+   "term": "ダブルスタック",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ダブルピット",
+    "2台同時ピット",
+    "double stack",
+    "double-stack",
+    "ダブルピットイン"
+   ],
+   "words": [
+    "2台同時にピットイン",
+    "同じチームの2台",
+    "順番待ち",
+    "セーフティカー",
+    "待たされる",
+    "ピット作業の渋滞"
+   ],
+   "short": "同じチームの2台が続けてピットに入り、1台目のあとに2台目が作業を受けること。",
+   "body": [
+    "ダブルスタックは、同じチームの2台が、続けてピットに入ることだ。1台目の作業が終わって出ていかないと、2台目はタイヤをつけてもらえない。2台目は、その間待つことになる。",
+    "ふつうは、2台が入る周をずらせる。でも、セーフティカー（SC）やVSCのときは、ピットで失う時間が小さいので、2台とも入りたくなる。そこでダブルスタックをする。",
+    "2台目が待たされすぎると順位を落とすので、2台の間隔が大事だ。2026年の中国GPでは、SCのとき、メルセデスのラッセルがピット入口の手前でアクセルを戻し、アントネッリとの間隔を1.5秒から4.7秒に広げて、うまく2台を入れた。",
+    "失敗すると損が大きい。2022年のカナダGPでは、マクラーレンがVSCのときに2台を入れた。1台目のリカルドの作業が4秒ほど遅れ、2台目のノリスはタイヤの取り違えもあって、ピットレーンで19秒以上を失い、最後尾の18位で戻った。",
+    "2026年は、オーストラリアGPのVSC（14周目）でメルセデスの2台が、オランダGPのVSC（55周目）でフェラーリの2台が、ダブルスタックをした。"
+   ],
+   "examples": [],
+   "see": [
+    "pit-stop",
+    "safety-car",
+    "vsc",
+    "undercut",
+    "pit-window"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "F1technical.net",
+     "title": "F1MATHS: How did Russell contribute to a perfect double stack pit stop at Shanghai?",
+     "url": "https://www.f1technical.net/news/28347"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 Australian Grand Prix: Mercedes pull off double-stack pit stop",
+     "url": "https://www.formula1.com/en/video/2026-australian-grand-prix-mercedes-pull-off-double-stack-pit-stop.1859070060304484943"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 Dutch Grand Prix: Ferrari double stack Hamilton and Leclerc pit stops",
+     "url": "https://www.formula1.com/en/video/2026-dutch-grand-prix-ferrari-double-stack-hamilton-and-leclerc-pit-stops.1874338156335686175"
+    },
+    {
+     "name": "The Race",
+     "title": "What went wrong in McLaren's double-stack Canadian GP stop",
+     "url": "https://www.the-race.com/formula-1/what-went-wrong-in-mclarens-double-stack-canadian-gp-stop/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Wolff explains Mercedes' 'proud' double-stack pit stop",
+     "url": "https://crash.net/f1/news/918151/1/wolff-explains-mercedes-proud-doublestack-pit-stop"
+    }
+   ]
+  },
+  {
+   "id": "in-out-lap",
+   "term": "インラップとアウトラップ",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "インラップ",
+    "アウトラップ",
+    "in lap",
+    "out lap",
+    "in-lap",
+    "out-lap"
+   ],
+   "words": [
+    "ピットに入る周",
+    "ピットから出た周",
+    "タイヤを温める",
+    "ウォームアップ",
+    "クールダウン",
+    "ピットアウト"
+   ],
+   "short": "ピットに入る直前の周がインラップ、ピットを出て最初の周がアウトラップ。",
+   "body": [
+    "インラップは、ピットに入る直前の1周。アウトラップは、ピットを出て最初に走る1周だ。レースでも予選でも使う言葉で、どちらも、タイムを狙うアタックの周とは役目が違う。",
+    "レースでは、インラップを全力で走ることが多い。どうせタイヤを替えるので、ピットで失う時間をここで少しでも取り戻そうとする。アウトラップも急いで走るが、新しいタイヤはまだ温まりきっていないので、グリップに気をつけながら走る。",
+    "新しいタイヤをうまく温められれば、相手のインラップ（古いタイヤ）より速く走れる。これが、先にピットに入って前に出るアンダーカットの形だ。タイヤが温まりにくいと、この作戦は効かない。",
+    "予選や練習では、アウトラップは、タイヤ、ブレーキ、エンジンを温めてアタックにつなげる周だ。アタックのあとのインラップは、急がずに走って部品を冷やす。",
+    "ピットを出た先で遅い車の後ろに入ると、アウトラップでタイムを失う。ピットを出たときに周りがどうなるかも、作戦で考えておく。"
+   ],
+   "examples": [],
+   "see": [
+    "pit-stop",
+    "undercut",
+    "overcut",
+    "pit-window",
+    "tyre-blankets",
+    "degradation"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What is an out lap?",
+     "url": "https://www.gpfans.com/en/f1-news/1020322/f1-what-is-an-out-lap-explained"
+    },
+    {
+     "name": "GPFans",
+     "title": "Pit stop strategy explained: How the undercut and overcut work in F1",
+     "url": "https://www.gpfans.com/en/f1-news/1016512/f1-undercut-overcut-explained/"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Undercut vs Overcut: The Real Strategy War in Modern F1",
+     "url": "https://www.grandprix247.com/formula-1-news/undercut-vs-overcut-the-real-strategy-war-in-formula-1"
+    }
+   ]
+  },
+  {
+   "id": "classification",
+   "term": "完走扱い（90%ルール）",
+   "cat": "レース運営",
+   "aliases": [
+    "クラシファイ",
+    "順位がつく",
+    "完走扱い",
+    "classified",
+    "NC",
+    "90%ルール"
+   ],
+   "words": [
+    "リタイアしても順位",
+    "規定周回",
+    "90%",
+    "順位なし",
+    "NC",
+    "走った周回数"
+   ],
+   "short": "勝者が走った周回数の90%以上を走れば、リタイアしても順位がつく決まり。",
+   "body": [
+    "決勝は、最後まで走り切らなくても、順位がつくことがある。規則では、勝者が走った周回数の90%（小数点以下は切り捨て）に届かなかった車は、順位がつかない。順位がつかないことを「NC（ノット・クラシファイド）」という。90%以上走っていれば、リタイアしても順位がつく。",
+    "順位は、走った周回数が多い順に決まる。同じ周回数なら、ゴールラインを通った順だ。そのため、周回遅れの車も、ゴールすれば順位がつく。",
+    "2026年のアゼルバイジャンGP（バクー）は51周だった。51周の90%は45.9周で、切り捨てると45周になる。ボッタスは49周を走り終えたあと、終盤にクラッシュして止まった。記録は「リタイア」だが、順位は16位になった。アルボン（29周）、アロンソ（20周）、ストロール（7周）などは、45周に届かず、順位がつかなかった。",
+    "順位がつけば、その順位がポイントなどの計算に使われる（→ポイントの付け方）。"
+   ],
+   "rule": "スポーティングレギュレーション B2.5.5",
+   "examples": [
+    {
+     "t": "ボッタスはバクー決勝の終盤、15コーナーでクラッシュした。本人は、制御システムの誤作動で後輪のブレーキがほとんど効かなかったと説明した。",
+     "u": "/news/ja-f1gate-bottas-ai-crash/"
+    }
+   ],
+   "see": [
+    "chequered-flag",
+    "points-system",
+    "lapped-car",
+    "short-race-points",
+    "disqualification"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 05, 2026-02-27",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Formula 1 Azerbaijan Grand Prix 2026 - Race Result",
+     "url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijann/race-result"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 Azerbaijan Grand Prix: Full race results",
+     "url": "https://www.crash.net/f1/results/1105720/1/f1-azerbaijan-grand-prix-full-race-results"
+    }
+   ]
+  },
+  {
+   "id": "lapped-car",
+   "term": "周回遅れ",
+   "cat": "レース運営",
+   "aliases": [
+    "ラップダウン",
+    "周回遅れの車",
+    "アンラップ",
+    "lapped car",
+    "lapped",
+    "unlap"
+   ],
+   "words": [
+    "トップに抜かれる",
+    "1周遅れ",
+    "ラップダウン",
+    "SC中の追い越し",
+    "アンラップ",
+    "青旗"
+   ],
+   "short": "トップに1周以上離された車。セーフティカー中は、決まった条件で1周を取り戻せる。",
+   "body": [
+    "周回遅れは、トップの車に1周以上の差をつけられた車のことだ。トップが追いついてきたときは、青旗で知らせ、道を譲らなければならない（→青旗）。レースの順位は、まず走った周回数が多い順で、同じ周回数ならゴールした順だ。そのため、周回遅れの車は、同じ周回の車より後ろの順位になる。",
+    "セーフティカー（SC）が出ている間は追い越しが禁止だが、周回遅れには例外がある。安全と判断されると、「LAPPED CARS MAY NOW OVERTAKE」というメッセージが、対象の車を示して送られる。対象の車は、先頭の集団とSCを追い越して隊列の後ろにつき、1周を取り戻す。これをアンラップという。",
+    "2021年のアブダビGPの混乱のあと、2022年からは、周回遅れの「一部」ではなく「全部」が追い越す決まりになった。2026年の条文は、アンラップできる車の条件を細かく決めている。SCが出たあと、ピット入口にある「SCライン1」を2回目に通った周の終わりに、コントロールラインを通った時点で周回遅れだった車だけが対象になる。",
+    "今季のイギリスGPでは、ウィリアムズのサインツが、対象ではないのにSCを追い越して1周を取り戻した。サインツはSCライン1を2回目に通ったときにピットに入ったため、その周の終わりにコントロールラインを通った時点では、一時的に周回遅れではなくなっていた。メッセージで示された車にも入っていなかった。スチュワードはチームの見落としとして、結果に1周を足す「ペナルティラップ」を科した。サインツは12位から17位になった。"
+   ],
+   "rule": "スポーティングレギュレーション B2.5.5、B5.13.4 c)",
+   "examples": [],
+   "see": [
+    "blue-flag",
+    "safety-car",
+    "vsc",
+    "classification",
+    "chequered-flag"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 05, 2026-02-27",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "'Penalty lap'? F1's weirdest penalty of 2026 explained",
+     "url": "https://www.the-race.com/formula-1/penalty-lap-f1s-weirdest-penalty-of-2026-explained/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Rare Sainz penalty for Safety Car infringement confirmed after British Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/rare-sainz-penalty-for-safety-car-infringement-confirmed-after-british-grand-prix.6rRSl9zKXfYsHSLIYxZRFd"
+    },
+    {
+     "name": "Autosport",
+     "title": "Carlos Sainz handed unprecedented penalty after F1 British GP",
+     "url": "https://www.autosport.com/f1/news/carlos-sainz-handed-unprecedented-penalty-after-f1-british-gp/10836835/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Safety Car F1: What are the rules? What happened in Abu Dhabi?",
+     "url": "https://crash.net/f1/news/1012241/1/safety-car-f1-rules-2023-explained-what-happened-abu-dhabi-and-monza"
+    }
+   ]
+  },
+  {
+   "id": "marshal",
+   "term": "マーシャル",
+   "cat": "レース運営",
+   "aliases": [
+    "コースマーシャル",
+    "マーシャル",
+    "コース係員",
+    "marshal",
+    "marshals",
+    "オフィシャル"
+   ],
+   "words": [
+    "コース係員",
+    "旗を振る人",
+    "コース上の作業",
+    "事故の対応",
+    "ボランティア",
+    "マーシャルポスト"
+   ],
+   "short": "コースの周りに配置され、旗を振り、止まった車を片付ける係員。",
+   "body": [
+    "マーシャルは、コースのまわりに配置される係員だ。コース脇のマーシャルポストに立ち、旗を振って、ドライバーに危険を知らせる（→黄旗）。事故の対応や、止まった車の片付けもする。",
+    "規則では、F1の車がコース上で止まったら、できるだけ早く片付けるのがマーシャルの務めだ。コース運営の責任者（クラーク・オブ・ザ・コース）は、レースコントロールにいて、すべてのマーシャルポストと無線でつながっていなければならない。",
+    "マーシャルは、作業のためにコースのそばや中に入ることがある。そのとき、車は黄旗やセーフティカーで減速させられる。旗を守らない運転は、スチュワードの審議の対象になる。"
+   ],
+   "rule": "スポーティングレギュレーション B1.5.2、B1.3.6",
+   "examples": [
+    {
+     "t": "バクー決勝で、マーシャルがセーフティカーのボードと黄旗を出した区間でペレスを抜いたボルトレートが、10秒加算を受けた。",
+     "u": "/news/de-motorsport-total-bortoleto-yellow-flags/"
+    }
+   ],
+   "see": [
+    "yellow-flag",
+    "double-yellow",
+    "safety-car",
+    "medical-car",
+    "red-flag"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 05, 2026-02-27",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    }
+   ]
+  },
+  {
+   "id": "medical-car",
+   "term": "メディカルカー",
+   "cat": "レース運営",
+   "aliases": [
+    "メディカルカー",
+    "medical car",
+    "FIAメディカルカー",
+    "救護車",
+    "医療車"
+   ],
+   "words": [
+    "事故の現場に行く車",
+    "医師",
+    "ドライバーの診察",
+    "決勝の1周目",
+    "ハロカッター",
+    "世界一速い救急車"
+   ],
+   "short": "事故のときに現場へ急行する、医師が乗ったFIAの車。決勝の1周目は集団の後ろを走る。",
+   "body": [
+    "メディカルカーは、事故のときにすぐ現場へ向かう、F1専用の救護車だ。運転するのはレーシングドライバーで、車にはFIAの医療担当者（メディカルデリゲート）と、開催地の医師が乗る。運転役のブルーノ・コレイアは、F1公式サイトの記事で「世界でいちばん速い救急車」と話している。",
+    "決勝の1周目は、集団の後ろについて走り、すぐ動けるようにしている。車には、蘇生用の器具、モニター、やけどの手当て用品、消火器、ハロを切る工具（ハロカッター）などを積んでいる。",
+    "規則では、FIAが大会ごとに、メディカルカーのドライバーを任命できる。事故のあと、衝撃を知らせるインパクト・ウォーニング・ライトが点灯すると、ドライバーは医療検査を受けるよう求められることがある。検査を求めることができるのは、レースディレクター、チーフ・メディカル・オフィサー、メディカルデリゲートだ。",
+    "2020年のバーレーンGPでグロージャンの車が炎上したとき、メディカルデリゲートのイアン・ロバーツ医師が対応した。ロバーツ医師は、この対応でFIA会長賞を受けた。"
+   ],
+   "rule": "スポーティングレギュレーション B1.2.1、B1.1.5",
+   "examples": [],
+   "see": [
+    "safety-car",
+    "marshal",
+    "red-flag",
+    "halo",
+    "crash-test"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 05, 2026-02-27",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "'It's the fastest ambulance in the world' – Inside the Medical Car's crucial role in F1",
+     "url": "https://www.formula1.com/en/latest/article/its-the-fastest-ambulance-in-the-world-inside-the-medical-car-crucial-role.548OzmvO88evpSjKseSxtt"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "F1 EXPLAINS: How, when and where is the F1 Medical Car deployed?",
+     "url": "https://www.formula1.com/en/latest/article/f1-explains-how-when-and-where-is-the-f1-medical-car-deployed.6ReaezgJvmiGqQmcubhxmc"
+    }
+   ]
+  },
+  {
+   "id": "tyre-blankets",
+   "term": "タイヤウォーマー",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "タイヤブランケット",
+    "ブランケット",
+    "タイヤウォーマー",
+    "tyre blankets",
+    "tyre warmers",
+    "tire warmers"
+   ],
+   "words": [
+    "タイヤを温める",
+    "電気の毛布",
+    "加熱時間",
+    "冷えたタイヤ",
+    "禁止案の延期",
+    "赤外線温度計"
+   ],
+   "short": "走る前にタイヤを温める電気の覆い。2026年も使えるが、温め方に決まりがある。",
+   "body": [
+    "タイヤウォーマー（ブランケット）は、タイヤに巻いて電気で温める覆いだ。冷えたタイヤは滑りやすいので、走り出す前に温めておく。そのおかげで、コースに出た直後から、タイヤの力を使いやすくなる。",
+    "2026年も使える。FIAが公開している、大会ごとのピレリの資料に、温め方の決まりが書かれている。タイヤを温めてよいのは、そのタイヤを使うセッションの前だけだ。温める温度の範囲ごとに、温めてよい時間（最大2時間）が決められている。温度は、ウォーマーの設定ではなく、タイヤ表面の実際の温度を赤外線の温度計で測って確かめる。",
+    "ドライ用のウォーマーをやめる案は、環境への配慮から出ていた。ただ、冷えたタイヤで走る危険を心配するドライバーの反対もあり、2024年に予定されていた禁止は2025年に延ばされ、2023年11月には、さらに時期を決めずに先送りされた。2026年のシーズンも、使用は続いている。",
+    "また2026年の技術規則では、走ること以外の方法で、ホイール全体やハブ、ブレーキの温度を上げる・下げる・保つ装置や手順は禁止とされた。それまでの条文に「冷やす」とホイール全体が加わり、冷やす工夫もできなくなった。タイヤを温める道具は、規則に決められた仕様のウォーマーだけが認められる。"
+   ],
+   "examples": [],
+   "see": [
+    "in-out-lap",
+    "tyre-compounds",
+    "full-wet",
+    "intermediate",
+    "pit-stop"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA / Pirelli",
+     "title": "2026 Australian Grand Prix - Event Notes - Pirelli Preview",
+     "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_event_notes_-_pirelli_preview.pdf"
+    },
+    {
+     "name": "FIA / Pirelli",
+     "title": "2026 Japanese Grand Prix - Competition Notes - Pirelli Preview",
+     "url": "https://www.fia.com/system/files/decision-document/2026_japanese_grand_prix_-_competition_notes_-_pirelli_preview.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 tightens 2026 rules to close off tyre cooling tricks",
+     "url": "https://www.the-race.com/formula-1/f1-adjusts-2026-rules-to-close-off-tyre-cooling-tricks"
+    },
+    {
+     "name": "Jalopnik",
+     "title": "Why Does F1 Use Tire Blankets?",
+     "url": "https://www.jalopnik.com/1912095/f1-tire-blankets-use-explained/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 decision made on tyre blanket ban",
+     "url": "https://racingnews365.com/f1-decision-made-on-tyre-blanket-ban"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 take action over future rule change following driver complaints",
+     "url": "https://www.gpfans.com/en/f1-news/1008480/tyre-blankets-f1-2025-rule-change-scrapped"
+    }
+   ]
+  },
+  {
+   "id": "front-wing",
+   "term": "フロントウイング",
+   "cat": "マシンと空力",
+   "aliases": [
+    "前翼",
+    "フロントウィング",
+    "front wing",
+    "FW",
+    "ノーズの翼"
+   ],
+   "words": [
+    "前の翼",
+    "可動フラップ",
+    "コーナーモード",
+    "ストレートモード",
+    "100mm狭い",
+    "ノーズ"
+   ],
+   "short": "車の最前部にある翼。2026年は100mm狭くなり、フラップが走りながら動く。",
+   "body": [
+    "フロントウイングは、車の最前部にある翼だ。最初に空気に当たる部品で、車の前側のダウンフォースと、後ろへ流れる空気の向きに関わる。",
+    "2026年規則で、形が大きく変わった。FIAによると、幅は2025年より100mm狭くなり、動くフラップは2枚になった。板の数が減ってシンプルになった一方、端板の周りは細かい形になった。車全体の幅も、2000mmから1900mmになった。",
+    "動くフラップは、走りながら2つの位置に切り替わる。コーナーでは角度を立てて下向きの力を出す「コーナーモード」、直線では寝かせて空気抵抗を減らす「ストレートモード」だ（→アクティブエアロ）。切り替えの指令はFIA共通のECUが出し、0.4秒以内に終わらなければならない。そのほかの角度の調整は、車が止まっているときに、道具でしかできない。",
+    "前の翼も動くのは、後ろの翼と合わせて車の姿勢を整え、安定させるためだとformula1.comは説明している。"
+   ],
+   "rule": "テクニカルレギュレーション C3.10、C3.10.10",
+   "examples": [
+    {
+     "t": "アウディはバクーで、形を改めたノーズとフロントウイングを含む大型アップデートを持ち込んだ。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    },
+    {
+     "t": "バクーでは、アウディが新しいフロントウイングを含む14項目のパッケージを投入した。",
+     "u": "/news/en-f1com-baku-upgrades-list/"
+    }
+   ],
+   "see": [
+    "active-aero",
+    "rear-wing",
+    "drs",
+    "floor-diffuser",
+    "dirty-air"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 17, 2026-04-28",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "A New Era of Competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    }
+   ]
+  },
+  {
+   "id": "rear-wing",
+   "term": "リアウイング",
+   "cat": "マシンと空力",
+   "aliases": [
+    "後ろの翼",
+    "リアウィング",
+    "リヤウイング",
+    "rear wing",
+    "RW"
+   ],
+   "words": [
+    "後ろの翼",
+    "空気抵抗",
+    "ダウンフォース",
+    "DRSの代わり",
+    "エンドプレート",
+    "ライト"
+   ],
+   "short": "車の後ろにある翼。2026年はフラップが走りながら動き、DRSはなくなった。",
+   "body": [
+    "リアウイングは、車の最後部にある翼だ。後輪を路面に押しつける力（ダウンフォース）を出す。翼を立てるほど力は大きくなるが、空気抵抗も増えて、直線の速度が落ちる。",
+    "2025年までは、追い抜きのときだけ上側のフラップを開くDRSがあった。2026年はDRSがなくなり、リアウイングは前翼とともにアクティブエアロで動く。動くのは「RWフラップ」で、コーナーモードとストレートモードの2つの位置に切り替わる。",
+    "ストレートモードでは角度が小さくなり、空気抵抗が減る。切り替えは0.4秒以内に終わらなければならない。DRSと違い、前の車との差に関係なく全車が使える。",
+    "2026年は、安全に関わる変更もあった。FIAによると、リアウイングの端の板（エンドプレート）のライトはFIAの認定品になり、これまでよりずっと明るく見やすくなった。コース上で止まった車の電気の装置（ERS）の状態を示す、車の側面のライトも新しく付いた。"
+   ],
+   "rule": "テクニカルレギュレーション C3.11、C3.11.6",
+   "examples": [
+    {
+     "t": "アウディはバクーで、フロアから前後ウイングまでほぼ全面を刷新する大型アップデートを持ち込んだ。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    }
+   ],
+   "see": [
+    "active-aero",
+    "front-wing",
+    "drs",
+    "overtake-mode"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 17, 2026-04-28",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "A New Era of Competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    }
+   ]
+  },
+  {
+   "id": "steering-wheel",
+   "term": "ステアリングのボタン",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ステアリングホイール",
+    "ハンドル",
+    "ステアリング",
+    "steering wheel",
+    "ボタン",
+    "スイッチ"
+   ],
+   "words": [
+    "ハンドルのボタン",
+    "ブーストボタン",
+    "ブレーキバランス",
+    "ディファレンシャル",
+    "ピットリミッター",
+    "画面"
+   ],
+   "short": "ハンドルにあるボタンやスイッチ。ドライバーは走りながら車の設定を変える。",
+   "body": [
+    "F1のステアリングは、車を曲げるだけでなく、設定を変える操作盤でもある。ボタン、スイッチ、ダイヤルがいくつもあり、ドライバーは走りながら操作する。2019年のメルセデスのステアリングは、ボタンとスイッチが合計25個あった。ステアリングはドライバーに合わせて作られ、ボタンの配置もドライバーの希望やコースで変わる。",
+    "ふだんの操作には、ブレーキの前後の配分（ブレーキバランス）、後輪の左右への力の伝え方（ディファレンシャル）、パワーユニットのモード、ピットレーンの速度リミッター、無線の音量、画面の切り替えなどがある。",
+    "2026年は、新しい仕組みのための操作が加わった。ブーストは、1周のうちどこでもボタンを押して、電気の力を使うものだ。アクティブエアロは、ドライバーが区間ごとに翼を開く。ブレーキをかけたりアクセルを戻したりすると、翼は自動で閉じる。",
+    "回生（充電）の多くは、選んだ設定にそってECUが自動で行う。ドライバーが自分でするのは、アクセルを戻して回生することだけだ。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでは、ボルトレートの追い越しの場面で、コース上のSC表示とステアリング上の表示・無線の情報が食い違っていた。",
+     "u": "/news/de-ams-bortoleto-penalty/"
+    }
+   ],
+   "see": [
+    "active-aero",
+    "overtake-mode",
+    "mgu-k",
+    "super-clipping",
+    "brake-by-wire"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "How many buttons and switches does an F1 steering wheel have and what do they do?",
+     "url": "https://www.mercedesamgf1.com/news/how-does-an-f1-steering-wheel-work"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: The key terms for Formula 1's new-for-2026 rules",
+     "url": "https://www.formula1.com/en/latest/article/f1-2026-regulations-explained-the-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+    },
+    {
+     "name": "The Race",
+     "title": "Boost, overtake mode, active aero - Key 2026 F1 terms explained",
+     "url": "https://www.the-race.com/formula-1/boost-overtake-mode-active-aero-recharge-key-2026-terms-explained"
+    }
+   ]
+  },
+  {
+   "id": "brake-by-wire",
+   "term": "ブレーキ・バイ・ワイヤ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ブレーキバイワイヤ",
+    "BBW",
+    "電子制御ブレーキ",
+    "brake-by-wire",
+    "brake by wire"
+   ],
+   "words": [
+    "後輪ブレーキ",
+    "回生ブレーキ",
+    "ペダルの感触",
+    "電子制御",
+    "MGU-K",
+    "油圧"
+   ],
+   "short": "ペダルの踏み込みを電子制御で伝えるブレーキ。F1では後輪に使い、回生と組み合わせる。",
+   "body": [
+    "ブレーキ・バイ・ワイヤは、ブレーキペダルの動きを、油圧で直接伝えるのではなく、電気の信号にしてブレーキを動かす仕組みだ。F1では2014年から後輪に使われている。前輪のブレーキは、これまでどおり油圧だけだ。",
+    "後輪では、ブレーキをかけると、パワーユニットのMGU-Kが電気をつくる（回生）。回生も車を止める力になるので、その強さが変わると、ブレーキの効き方が変わってしまう。そこで電子制御が、ペダルを踏んだ強さと回生の量を見て、後ろのブレーキに送る圧力を減らす。こうして、回生の量が変わっても、ドライバーが求めた強さで止まれるようにしている。",
+    "2026年は、MGU-Kの最大出力が120kWから350kWへ、約3倍になった。回生で止める力が大きくなったので、後輪ブレーキは小さくできる。ブレーキメーカーのブレンボは、後輪の部品が最大20%小さくなりうるとみている。それでも後輪には、パワーユニットの助けがなくても2500Nmのブレーキトルクを出せることが求められている。"
+   ],
+   "examples": [
+    {
+     "t": "バクーのボッタスは、ターン15でブレーキを踏んだとき、前輪ばかり効き、後輪がほとんど効かない状態が約100m続いたと説明した。",
+     "u": "/news/ja-f1gate-bottas-ai-crash/"
+    },
+    {
+     "t": "ボッタスは、後輪のブレーキと回生を失ったような感覚だったと話した。",
+     "u": "/news/en-planetf1-bottas-brake-harvest-theory/"
+    },
+    {
+     "t": "1コーナーのミスで制御システムが混乱し、後輪側の回生が働かなかった可能性があると報じられた。",
+     "u": "/news/de-motorsport-total-bottas-verbremser-ecu/"
+    }
+   ],
+   "see": [
+    "mgu-k",
+    "steering-wheel",
+    "super-clipping",
+    "energy-store"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "The challenge in revamping brake design for F1 2026",
+     "url": "https://www.autosport.com/f1/news/f1-2026-brake-design-challenge/10767315/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Technical analysis - brake-by-wire systems explained",
+     "url": "https://www.formula1.com/en/latest/article/technical-analysis-brake-by-wire-systems-explained.1XQiBCFqA6WYZwLmb3JLxi"
+    },
+    {
+     "name": "Brembo",
+     "title": "How 2026 rules will change F1",
+     "url": "https://www.brembo.com/en/motorsport/formula1/f1-rules-2026"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Extreme F1 2026 brake systems uncovered as first design details emerge",
+     "url": "https://www.planetf1.com/news/f1-news-extreme-2026-brake-systems-uncovered-first-design"
+    }
+   ]
+  },
+  {
+   "id": "crash-test",
+   "term": "クラッシュテスト",
+   "cat": "マシンと空力",
+   "aliases": [
+    "衝突試験",
+    "FIAクラッシュテスト",
+    "安全試験",
+    "crash test",
+    "クラッシュ試験"
+   ],
+   "words": [
+    "衝突試験",
+    "安全基準",
+    "合格",
+    "ロールフープ",
+    "前面衝突",
+    "車体の強度"
+   ],
+   "short": "車の構造が安全基準を満たすか確かめるFIAの衝突試験。通らないとレースに出られない。",
+   "body": [
+    "クラッシュテストは、車の構造が安全基準を満たしているかを確かめる、FIAの試験だ。FIAの技術担当者が立ち会い、決められた方法で行う。2012年からは、車はコースを走る前に、すべての試験に合格していなければならない。",
+    "技術規則の第13条（C13）は、試験の項目を定めている。コクピット部分（サバイバルセル）の前面衝突、ロールフープ（車体上部の骨組み）、サバイバルセルの強度、側面・前面・後面の衝撃を吸収する構造、ステアリングコラム、ヘッドレスト、ホイールリムなどだ。ぶつかったときに、構造がつぶれて衝撃を吸収し、ドライバーを守れるかを確かめる。",
+    "2026年規則では、基準が上がった。FIAは、ロールフープの荷重を16Gから20Gに、試験の荷重を141kNから167kNに上げたと説明している。前面の衝撃吸収構造は、2回目の衝撃で車体から外れないよう、2段階の構造になった。横からの衝撃への保護は、燃料タンクの側面で得られる保護の2倍以上になったという。",
+    "2026年規則の車は、各チームが改めて試験を通る必要があった。2025年12月には、フェラーリが合格したと報じられ、キャデラックも合格していたと伝えられた。"
+   ],
+   "rule": "テクニカルレギュレーション C13",
+   "examples": [],
+   "see": [
+    "halo",
+    "medical-car",
+    "minimum-weight"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "A New Era of Competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "What happens at an F1 crash test",
+     "url": "https://racingnews365.com/what-happens-at-an-f1-crash-test"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Ferrari passes major 2026 F1 obstacle",
+     "url": "https://racingnews365.com/ferrari-passes-major-2026-f1-obstacle"
+    },
+    {
+     "name": "Autosport",
+     "title": "Analysis: how Formula 1 crash tests work",
+     "url": "https://www.autosport.com/f1/news/111877/analysis-how-f1-crash-tests-work"
+    }
+   ]
+  },
+  {
+   "id": "halo",
+   "term": "ハロ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ハロー",
+    "halo",
+    "コクピット保護装置",
+    "ヘイロー",
+    "Halo"
+   ],
+   "words": [
+    "頭を守る",
+    "チタン製",
+    "2018年から",
+    "コクピットの保護",
+    "ハロカッター",
+    "グロージャンの事故"
+   ],
+   "short": "ドライバーの頭の上を囲むチタン製の骨組み。2018年から全車に付く安全装置。",
+   "body": [
+    "ハロは、コクピットの上でドライバーの頭を囲む、チタン製の骨組みだ。2018年から、F1の全車に付いている。前の1か所と、左右から伸びる2か所で、車体に固定する。重さは約7kgだ。",
+    "飛んでくる部品や、ほかの車のタイヤ、バリアなどから頭を守る。とても大きな力に耐えることが求められる。チームは自分で作れず、FIAが認めた会社の製品を使う。",
+    "ハロが役に立った例として、よく挙がるのが次の事故だ。2020年のバーレーンGPでは、グロージャンの車がバリアに突っ込み、ハロがバリアを押し上げて、頭を守った。2022年のイギリスGPでは、周冠宇の車がひっくり返って裏返しになったが、ハロのおかげもあって、本人は無傷で脱出した。",
+    "2026年の技術規則にも、ハロの領域（RV-HALO）が定められている。メディカルカーには、事故のときにハロを切るための工具（ハロカッター）が積まれている。"
+   ],
+   "examples": [],
+   "see": [
+    "crash-test",
+    "medical-car",
+    "minimum-weight"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 Halo: what is it and how does it work?",
+     "url": "https://racingnews365.com/f1-halo"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "'It's the fastest ambulance in the world' – Inside the Medical Car's crucial role in F1",
+     "url": "https://www.formula1.com/en/latest/article/its-the-fastest-ambulance-in-the-world-inside-the-medical-car-crucial-role.548OzmvO88evpSjKseSxtt"
+    }
+   ]
+  },
+  {
+   "id": "plank",
+   "term": "底板（プランク）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "プランク",
+    "スキッドブロック",
+    "底板",
+    "スキッド",
+    "plank",
+    "skid block"
+   ],
+   "words": [
+    "床下の板",
+    "摩耗",
+    "最低の厚さ",
+    "失格",
+    "火花",
+    "車高"
+   ],
+   "short": "床下に付ける板。すり減りすぎると失格で、下限の厚さは2026年に8mmになった。",
+   "body": [
+    "底板（プランク）は、車の床下に付ける板だ。車高を低くしすぎないための決まりで、路面とこすれると削れる。板に付けた金属の部品（スキッド）が路面に当たると、火花が出る。プランクは1994年に導入された。",
+    "規則では、新品のプランクの厚さは10mm（±0.2mm）にそろえる。レースのあとに、FIAが穴のまわりの厚さを測る。穴は3つで、直径は34mmだ。スキッドの材料は、チタン合金かステンレス鋼と決められている。",
+    "使うとすり減るので、最低の厚さが決まっている。2025年は9mm（削れてよいのは1mm）だった。2026年は8mmまで認められ、削れてよい量は2mmになった。",
+    "最低の厚さを下回ると、失格になる。2025年は、中国GPでハミルトンの車（後ろのスキッドで8.5〜8.6mm）、ラスベガスGPでノリスとピアストリの車が、9mmを下回って失格になった。車高を低くするほど速くなるが、そのぶん路面とこすれやすい。ラスベガスでは、マクラーレンが、練習が少なく、予想より強いポーパシングが出たためだと説明した。"
+   ],
+   "rule": "テクニカルレギュレーション C3.6.1、C3.6.3",
+   "examples": [],
+   "see": [
+    "floor-diffuser",
+    "ground-effect",
+    "porpoising",
+    "disqualification",
+    "minimum-weight"
+   ],
+   "checked": "2026-10-02",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "Norris & Piastri disqualified from Las Vegas GP over 0.1mm of plank wear",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/norris-piastri-disqualified-from-las-vegas-gp-over-0-1mm-of-plank-wear-verstappen-back-in-f1-title-hunt/"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What are the skid blocks and planks and why do F1 cars spark?",
+     "url": "https://www.gpfans.com/en/f1-news/1006401/f1-skid-blocks"
+    }
+   ]
   }
  ],
  "sources": [
@@ -4756,6 +7838,671 @@
    "name": "Gulf News",
    "title": "No more DRS, but more overtakes to mark 2026 F1 season",
    "url": "https://gulfnews.com/sport/motorsport/no-more-drs-but-more-overtakes-to-mark-2026-f1-season-1.500372852"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section D Financial - F1 Teams (Issue 07, 2026-06-25)",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+  },
+  {
+   "name": "formula1.com",
+   "title": "EXPLAINED: What is the F1 cost cap and why has it gone up?",
+   "url": "https://www.formula1.com/en/latest/article/explained-what-is-the-f1-cost-cap-and-why-has-it-gone-up.2tYtDIe5SbE5utjThctBT3"
+  },
+  {
+   "name": "F1Technical",
+   "title": "The evolution of Formula One's Cost Cap",
+   "url": "https://www.f1technical.net/news/28125"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section F Operational (Issue 07, 2026-04-28)",
+   "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_07_-_2026-04-28.pdf"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "F1 2026 teams wind tunnel time",
+   "url": "https://racingnews365.com/f1-2026-teams-wind-tunnel-time"
+  },
+  {
+   "name": "The Race",
+   "title": "The aero restrictions each F1 team will face in 2026",
+   "url": "https://the-race.com/formula-1/the-aero-restrictions-each-f1-team-will-face-in-2026"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "New F1 Concorde Agreement signed as FIA, Formula 1 and teams strike deal",
+   "url": "https://www.planetf1.com/news/f1-concorde-agreement-2026-concluded-as-governance-agreed-with-fia"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "F1 and FIA agree new five-year governance Concorde Agreement",
+   "url": "https://www.motorsport.com/f1/news/f1-and-fia-agree-new-five-year-governance-concorde-agreement/10784445/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Two key changes in F1's Concorde governance agreement explained",
+   "url": "https://www.motorsport.com/f1/news/two-key-changes-in-f1s-concorde-governance-agreement-explained/10784461/"
+  },
+  {
+   "name": "F1Technical",
+   "title": "Formula One confirms 2026 Concorde Commercial Agreement signed by all teams",
+   "url": "https://www.f1technical.net/news/26456"
+  },
+  {
+   "name": "FIA",
+   "title": "Appendix L to the International Sporting Code 2026 (2026-06-24)",
+   "url": "https://api.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf"
+  },
+  {
+   "name": "formula1.com",
+   "title": "F1 Explained: How does the FIA Super Licence system work",
+   "url": "https://www.formula1.com/en/latest/article/f1-explained-how-does-the-fia-super-licence-system-work-and-what-does-sargeant.IXyLbO00195LXtCo3YIOU"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Williams confirm Browning as reserve driver for 2026 F1 season",
+   "url": "https://www.formula1.com/en/latest/article/williams-confirm-browning-as-reserve-driver-for-2026-f1-season.6qyk1ZpS8qVgkXMkPQc4Ue"
+  },
+  {
+   "name": "formula1.com",
+   "title": "EXPLAINED: Why pre-season running is different in 2026",
+   "url": "https://www.formula1.com/en/latest/article/explained-why-pre-season-running-is-different-in-2026.7reu6xnBY0kF87Vucgt25s"
+  },
+  {
+   "name": "formula1.com",
+   "title": "EXPLAINED: How the Barcelona Shakedown will work",
+   "url": "https://www.formula1.com/en/latest/article/explained-how-the-barcelona-shakedown-will-work.5oGVmo25OyEhyVR9RbiREo"
+  },
+  {
+   "name": "RaceFans",
+   "title": "F1 teams face first cap on testing of past cars from 2025",
+   "url": "https://www.racefans.net/2024/10/18/f1-teams-face-first-cap-on-testing-of-past-cars-from-2025/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "All you need to know about TPC tests in Formula 1",
+   "url": "https://www.motorsport.com/f1/news/all-you-need-to-know-about-tpc-tests-in-formula-1/10762349/"
+  },
+  {
+   "name": "McLaren",
+   "title": "What is a Pirelli tyre test",
+   "url": "https://www.mclaren.com/racing/formula-1/2026/what-is-a-pirelli-tyre-test/"
+  },
+  {
+   "name": "New Straits Times",
+   "title": "F1 to have extra test day from 2027, engine tweaks approved",
+   "url": "https://www.nst.com.my/amp/sports/motor-sports/2026/06/1470843/f1-have-extra-test-day-2027-engine-tweaks-approved"
+  },
+  {
+   "name": "The Race",
+   "title": "What engine every F1 team is using for 2026 rules",
+   "url": "https://www.the-race.com/formula-1/2026-f1-team-engines"
+  },
+  {
+   "name": "F1Technical",
+   "title": "What engines will F1 teams use during the 2026 season?",
+   "url": "https://www.f1technical.net/news/28116"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "Cadillac F1 team: FIA approves General Motors as new Formula 1 engine supplier from 2029",
+   "url": "https://www.skysports.com/f1/news/12433/13354351/cadillac-f1-team-fia-approves-general-motors-as-new-formula-1-engine-supplier-from-2029"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Cadillac F1 chief issues updated General Motors F1 engine timeline",
+   "url": "https://www.planetf1.com/news/dan-towriss-cadillac-f1-engine-general-motors-2029"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "Every FP1 rookie driver in the 2026 F1 season",
+   "url": "https://racingnews365.com/every-fp1-rookie-driver-in-the-2026-f1-season"
+  },
+  {
+   "name": "Williams Racing",
+   "title": "How Rookie FP1 Sessions Have Evolved in 2025",
+   "url": "https://www.williamsf1.com/articles/4f9e5903-e936-41f5-9b1a-843d91ec407d/how-rookie-fp1-sessions-have-evolved-in-2025"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Fernando Alonso to miss Belgian Grand Prix FP1 as Aston Martin junior steps in",
+   "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-belgian-grand-prix-2026-fp1"
+  },
+  {
+   "name": "formula1.com",
+   "title": "EXPLAINED: What does an F1 team principal actually do?",
+   "url": "https://www.formula1.com/en/latest/article/explained-what-does-an-f1-team-principal-actually-do.68kVjl2LsH8m9R5pEnMb3W"
+  },
+  {
+   "name": "Red Bull",
+   "title": "The people behind the F1 paddock",
+   "url": "https://www.redbull.com/gb-en/the-people-behind-the-f1-paddock"
+  },
+  {
+   "name": "formula1.com",
+   "title": "The insider's guide to... Technical Directors",
+   "url": "https://www.formula1.com/en/latest/article/the-insiders-guide-to-technical-directors.5JhKdiv5Obj6lET0h7cYY4"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "How high-tech F1 has changed the race engineer role",
+   "url": "https://www.motorsport.com/f1/news/high-tech-f1-race-engineer-role/6687750/"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Inside the F1 driver's bubble: What does a race engineer actually do?",
+   "url": "https://core-ecs-origin-home.core-dns.watchliveformula1.com/en/latest/article/inside-the-f1-drivers-bubble-what-does-a-race-engineer-actually-do.QyLxjYSE3cy4ZEoZVSd7W"
+  },
+  {
+   "name": "F1Technical",
+   "title": "Formula One's governing body, the FIA celebrates its 120th anniversary",
+   "url": "https://f1technical.net/news/24821"
+  },
+  {
+   "name": "FIA",
+   "title": "About the FIA",
+   "url": "https://fia.com/es/about-fia"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "Mohammed Ben Sulayem re-elected as FIA president on second four-year term",
+   "url": "https://www.skysports.com/f1/news/12433/13482506/mohammed-ben-sulayem-re-elected-as-fia-president-on-second-four-year-term-to-head-world-motorsport-to-2029"
+  },
+  {
+   "name": "autosport web",
+   "title": "FIA、会長の任期制限を撤廃か。現職ビン・スライエムの働きかけにより承認の見込み",
+   "url": "https://www.as-web.jp/f1/1320765"
+  },
+  {
+   "name": "FIA",
+   "title": "Writing the rules: how the FIA develops new regulations for Formula 1",
+   "url": "https://www.fia.com/news/writing-rules-how-fia-develops-new-regulations-formula-1"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Who owns F1? All you need to know about Liberty Media",
+   "url": "https://www.planetf1.com/news/who-owns-f1-liberty-media"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Domenicali gets five-year contract extension as F1 CEO",
+   "url": "https://www.motorsport.com/f1/news/domenicali-gets-five-year-contract-extension-as-f1-ceo/10702417/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Explained: How the FIA develops potential new F1 rules and regulations",
+   "url": "https://www.planetf1.com/news/how-fia-introduces-new-f1-rules"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Agreement reached on proposed F1 regulatory changes for 2027 and 2028",
+   "url": "https://core-ecs-origin-home.core-dns.watchliveformula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb"
+  },
+  {
+   "name": "CGI",
+   "title": "Formula One governance agreement 2026",
+   "url": "https://cgi.org.uk/resources/blogs/2025/formula-one-governance-agreement-2026/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "What is a Technical Directive in F1?",
+   "url": "https://www.planetf1.com/features/what-is-a-technical-directive-in-f1"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "FIA bans fresh Mercedes, Red Bull engine trick with new technical directive",
+   "url": "https://www.planetf1.com/news/fia-mercedes-red-bull-f1-2026-engine-qualifying-loophole"
+  },
+  {
+   "name": "Autosport",
+   "title": "Mercedes forced to tweak F1 diffuser after rival complaints",
+   "url": "https://www.autosport.com/f1/news/mercedes-forced-to-tweak-f1-diffuser-after-rival-complaints/10833319/"
+  },
+  {
+   "name": "Autosport",
+   "title": "How Ferrari and Red Bull triggered the FIA's rethink over Mercedes F1 diffuser",
+   "url": "https://www.autosport.com/f1/news/how-ferrari-and-red-bull-triggered-the-fias-rethink-over-mercedes-f1-diffuser/10833900/"
+  },
+  {
+   "name": "formula1.com",
+   "title": "F1 Glossary (A-E)",
+   "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "EXPLAINED: How the Monza corners got their names",
+   "url": "https://www.mercedesamgf1.com/news/explained-how-the-monza-corners-got-their-names"
+  },
+  {
+   "name": "formula1.com",
+   "title": "EXPLAINED: How every corner at Monza got its name",
+   "url": "https://formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK"
+  },
+  {
+   "name": "formula1.com",
+   "title": "F1 Glossary (F-J)",
+   "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+  },
+  {
+   "name": "Williams Racing",
+   "title": "Everything you need to know about the Monaco Grand Prix",
+   "url": "https://www.williamsf1.com/articles/3df6b3f0-0c5d-4329-97a9-af69988d6041/everything-you-need-to-know-about-the-monaco-grand-prix"
+  },
+  {
+   "name": "Traxion.gg",
+   "title": "The racing line explained",
+   "url": "https://traxion.gg/the-racing-line-explained/"
+  },
+  {
+   "name": "Wikipedia",
+   "title": "Racing line",
+   "url": "https://en.wikipedia.org/wiki/Racing_line"
+  },
+  {
+   "name": "Williams Racing",
+   "title": "Explained: Why F1 has more street circuits than ever before",
+   "url": "https://www.williamsf1.com/articles/b0625f34-0ae6-4aec-a00a-34d327bce4b6/explained-why-f1-has-more-street-circuits-than-ever-before"
+  },
+  {
+   "name": "The Race",
+   "title": "Layout for Madrid F1 debut revealed",
+   "url": "https://www.the-race.com/formula-1/madrid-f1-circuit-layout-revealed/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "2026 F1 calendar: Full race schedule revealed",
+   "url": "https://www.crash.net/f1/news/1073119/1/2026-f1-calendar-full-race-schedule-revealed"
+  },
+  {
+   "name": "formula1.com",
+   "title": "2026 Race Results",
+   "url": "https://www.formula1.com/en/results/2026/races"
+  },
+  {
+   "name": "formula1.com",
+   "title": "F1 Glossary (K-O)",
+   "url": "https://www.formula1.com/en/latest/article/f1-glossary-k-o.6g2hrWHA2pyxbXoe8FT9Db"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1 Explained: What is kerb riding?",
+   "url": "https://www.gpfans.com/en/f1-news/1021751/f1-kerb-riding"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Sausage kerbs: Masi on the Peroni accident",
+   "url": "https://www.motorsport.com/f1/news/sausage-kerbs-masi-peroni-accident/4536647/"
+  },
+  {
+   "name": "formula1.com",
+   "title": "F1 Glossary (P-T)",
+   "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+  },
+  {
+   "name": "Motorsport Magazine",
+   "title": "Return of the gravel trap: why F1 is welcoming them back",
+   "url": "https://motorsportmagazine.com/articles/single-seaters/f1/return-of-the-gravel-trap-why-f1-is-welcoming-them-back"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "Baku track repairs made overnight after F1 drivers complain",
+   "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Mugello gravel trap approach won't work everywhere - FIA",
+   "url": "https://au.motorsport.com/f1/news/mugello-gravel-trap-track-limits/4875696/"
+  },
+  {
+   "name": "MultiViewer",
+   "title": "Understanding telemetry（タイミングの色の説明）",
+   "url": "https://multiviewer.app/docs/getting-started/understanding-telemetry"
+  },
+  {
+   "name": "TAG Heuer Magazine",
+   "title": "Formula 1: The Glossary (You'll want to know this)",
+   "url": "https://magazine.tagheuer.com/en/2025/05/06/formula-1-the-glossary-youll-want-to-know-this/"
+  },
+  {
+   "name": "FormulaOneHistory",
+   "title": "What Does Purple Sector Mean In F1? A Complete Guide",
+   "url": "https://www.formulaonehistory.com/purple-sector-in-f1/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "FIA reveals extent of Hamilton infringement after fourth penalty in three weekends",
+   "url": "https://www.planetf1.com/news/fia-lewis-hamilton-pit-lane-hungarian-grand-prix-2026-penalty"
+  },
+  {
+   "name": "F1Technical",
+   "title": "EXPLAINED: The 0.1 kph that cost Hamilton a shot at a podium finish",
+   "url": "https://www.f1technical.net/news/29068"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Why was refuelling banned in F1?",
+   "url": "https://au.motorsport.com/f1/news/why-was-refuelling-banned-in-f1/10555081/"
+  },
+  {
+   "name": "Motorsport Magazine",
+   "title": "F1 in reverse again: V8s and refuelling set to come back from bans?",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-reverse-again-v8s-and-refuelling-set-to-come-back-from-bans/"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA confirms it is considering F1 refuelling return during races",
+   "url": "https://www.gpfans.com/en/f1-news/1087018/fia-considering-f1-refuelling-return-2031-regulations/"
+  },
+  {
+   "name": "GPblog",
+   "title": "FIA considers bringing refuelling back to F1: 'This is what we are studying right now'",
+   "url": "https://www.gpblog.com/en/news/fia-considers-bringing-refuelling-back-to-f1-this-is-what-we-are-studying-right-now"
+  },
+  {
+   "name": "FIA",
+   "title": "2014 F1 Power Unit Guide",
+   "url": "https://api.fia.com/news/2014-f1-power-unit-guide"
+  },
+  {
+   "name": "Motorsport Magazine",
+   "title": "The long road to convergence: How F1 closed the gaps of the hybrid era",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/the-long-road-to-convergence-how-f1-closed-the-gaps-of-the-hybrid-era/"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "F1 takes step closer to V8 return as fresh engine details emerge",
+   "url": "https://racingnews365.com/f1-takes-step-closer-to-v8-return-as-fresh-engine-details-emerge"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Find out which exclusive club Verstappen joined in Austria – and who is in it with him",
+   "url": "https://www.formula1.com/en/latest/article/find-out-which-exclusive-club-verstappen-joined-in-austria-and-who-is-in-it.5Hi0682uVTEz0PZFQRn5dx"
+  },
+  {
+   "name": "The Race",
+   "title": "The complexities that undermine Verstappen's latest F1 milestone",
+   "url": "https://the-race.com/formula-1/the-complexities-that-undermine-verstappens-latest-f1-milestone"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "George Russell fires rally cry after resilient Mercedes fightback",
+   "url": "https://racingnews365.com/george-russell-fires-rally-cry-after-resilient-mercedes-fightback"
+  },
+  {
+   "name": "Formel1.de",
+   "title": "George Russell findet seine Form: Aber reicht es noch für den Titel?",
+   "url": "https://www.formel1.de/news/news/2026-09-28/george-russell-findet-seine-form-aber-reicht-es-noch-fuer-den-titel"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Hamilton's hat-tricks – Looking back on Lewis's most dominant weekends",
+   "url": "https://www.formula1.com/en/latest/article/hamiltons-hat-tricks-lewis-most-dominant-weekends.79gFfsJq2Fn3ga72loJMvy"
+  },
+  {
+   "name": "Honda",
+   "title": "F1 Explained: Constructors' Championship",
+   "url": "https://global.honda/en/F1/features/f1-explained/07/"
+  },
+  {
+   "name": "The Race",
+   "title": "What engine every F1 team is using for 2026 rules",
+   "url": "https://the-race.com/formula-1/2026-f1-team-engines"
+  },
+  {
+   "name": "formula1.com",
+   "title": "2026 Drivers' Standings",
+   "url": "https://www.formula1.com/en/results/2026/drivers"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Belgian Grand Prix – Post-Race Procedure",
+   "url": "https://www.fia.com/system/files/decision-document/2026_belgian_grand_prix_-_post-race_procedure.pdf"
+  },
+  {
+   "name": "The Race",
+   "title": "Why triple-headers in F1 are here to stay",
+   "url": "https://the-race.com/formula-1/why-triple-headers-in-f1-are-here-to-stay/"
+  },
+  {
+   "name": "formula1.com",
+   "title": "F1 FANTASY: Strategist Preview – Your guide to the Azerbaijan, Bahrain and Singapore triple header",
+   "url": "https://formula1.com/en/latest/article/f1-fantasy-strategist-preview-your-guide-to-the-azerbaijan-bahrain-and-singapore-triple-header.NwohuVqzxV2nIP8cnVqy2"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "How teams are solving the logistical puzzle of F1's triple-headers",
+   "url": "https://www.motorsport.com/f1/news/how-teams-are-solving-the-logistical-puzzle-of-f1s-triple-headers/10624837/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Gone in 1.9 seconds - the quest for the perfect pit stop",
+   "url": "https://www.formula1.com/en/latest/article/f1-quest-perfect-pit-stop.1lwNTV7z6MiEA2weCMsS8E"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "WATCH: McLaren set new F1 pit stop record with spectacularly quick tyre change in Qatar",
+   "url": "https://www.formula1.com/en/latest/article.watch-mclaren-set-new-f1-pit-stop-record-with-spectacularly-quick-tyre.5ZBn7RJxE9iTVmSGfeeVHm.html"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "F1 v IndyCar v NASCAR: How do pit-stops compare in each of the three racing series?",
+   "url": "https://www.planetf1.com/features/f1-indycar-nascar-pit-stops-compared"
+  },
+  {
+   "name": "Autosport",
+   "title": "Pierre Gasly's Monaco GP penalty rescinded: FIA stewards report in full",
+   "url": "https://www.autosport.com/f1/news/pierre-gaslys-monaco-gp-penalty-rescinded-fia-stewards-report-in-full/10829455/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Explained: Why are there pit lane speed limits in F1 and how are they measured?",
+   "url": "https://www.formula1.com/en/latest/article/explained-why-are-there-pit-lane-speed-limits-in-f1-and-how-are-they-measured.jc4jiWVsfbRhb62QomSf0.jc4jiWVsfbRhb62QomSf0"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "All penalties and investigations from the 2026 Monaco GP revealed",
+   "url": "https://www.planetf1.com/news/every-monaco-gp-penalties-and-fia-investigation-revealed"
+  },
+  {
+   "name": "Speedcafe",
+   "title": "FIA clarify pit lane rule at Albert Park for the 2026 Australian Grand Prix",
+   "url": "https://us.speedcafe.com/f1-news-2026-fia-clarify-pit-lane-rule-speed-limit-albert-park-australian-grand-prix/"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 to raise pitlane speed limit to reduce one stop races",
+   "url": "https://www.the-race.com/formula-1/f1-reduce-pitlane-speed-limit-some-races-explained/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "How faster pitlane speeds could spice up F1 Singapore GP",
+   "url": "https://www.motorsport.com/f1/news/how-faster-pitlane-speeds-could-spice-up-f1-singapore-gp/10763980/"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "F1MATHS: How did Russell contribute to a perfect double stack pit stop at Shanghai?",
+   "url": "https://www.f1technical.net/news/28347"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "2026 Australian Grand Prix: Mercedes pull off double-stack pit stop",
+   "url": "https://www.formula1.com/en/video/2026-australian-grand-prix-mercedes-pull-off-double-stack-pit-stop.1859070060304484943"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "2026 Dutch Grand Prix: Ferrari double stack Hamilton and Leclerc pit stops",
+   "url": "https://www.formula1.com/en/video/2026-dutch-grand-prix-ferrari-double-stack-hamilton-and-leclerc-pit-stops.1874338156335686175"
+  },
+  {
+   "name": "The Race",
+   "title": "What went wrong in McLaren's double-stack Canadian GP stop",
+   "url": "https://www.the-race.com/formula-1/what-went-wrong-in-mclarens-double-stack-canadian-gp-stop/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Wolff explains Mercedes' 'proud' double-stack pit stop",
+   "url": "https://crash.net/f1/news/918151/1/wolff-explains-mercedes-proud-doublestack-pit-stop"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1 Explained: What is an out lap?",
+   "url": "https://www.gpfans.com/en/f1-news/1020322/f1-what-is-an-out-lap-explained"
+  },
+  {
+   "name": "GPFans",
+   "title": "Pit stop strategy explained: How the undercut and overcut work in F1",
+   "url": "https://www.gpfans.com/en/f1-news/1016512/f1-undercut-overcut-explained/"
+  },
+  {
+   "name": "GrandPrix247",
+   "title": "Undercut vs Overcut: The Real Strategy War in Modern F1",
+   "url": "https://www.grandprix247.com/formula-1-news/undercut-vs-overcut-the-real-strategy-war-in-formula-1"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Formula 1 Azerbaijan Grand Prix 2026 - Race Result",
+   "url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijann/race-result"
+  },
+  {
+   "name": "Crash.net",
+   "title": "F1 Azerbaijan Grand Prix: Full race results",
+   "url": "https://www.crash.net/f1/results/1105720/1/f1-azerbaijan-grand-prix-full-race-results"
+  },
+  {
+   "name": "The Race",
+   "title": "'Penalty lap'? F1's weirdest penalty of 2026 explained",
+   "url": "https://www.the-race.com/formula-1/penalty-lap-f1s-weirdest-penalty-of-2026-explained/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Rare Sainz penalty for Safety Car infringement confirmed after British Grand Prix",
+   "url": "https://www.formula1.com/en/latest/article/rare-sainz-penalty-for-safety-car-infringement-confirmed-after-british-grand-prix.6rRSl9zKXfYsHSLIYxZRFd"
+  },
+  {
+   "name": "Autosport",
+   "title": "Carlos Sainz handed unprecedented penalty after F1 British GP",
+   "url": "https://www.autosport.com/f1/news/carlos-sainz-handed-unprecedented-penalty-after-f1-british-gp/10836835/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Safety Car F1: What are the rules? What happened in Abu Dhabi?",
+   "url": "https://crash.net/f1/news/1012241/1/safety-car-f1-rules-2023-explained-what-happened-abu-dhabi-and-monza"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "'It's the fastest ambulance in the world' – Inside the Medical Car's crucial role in F1",
+   "url": "https://www.formula1.com/en/latest/article/its-the-fastest-ambulance-in-the-world-inside-the-medical-car-crucial-role.548OzmvO88evpSjKseSxtt"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "F1 EXPLAINS: How, when and where is the F1 Medical Car deployed?",
+   "url": "https://www.formula1.com/en/latest/article/f1-explains-how-when-and-where-is-the-f1-medical-car-deployed.6ReaezgJvmiGqQmcubhxmc"
+  },
+  {
+   "name": "FIA / Pirelli",
+   "title": "2026 Australian Grand Prix - Event Notes - Pirelli Preview",
+   "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_event_notes_-_pirelli_preview.pdf"
+  },
+  {
+   "name": "FIA / Pirelli",
+   "title": "2026 Japanese Grand Prix - Competition Notes - Pirelli Preview",
+   "url": "https://www.fia.com/system/files/decision-document/2026_japanese_grand_prix_-_competition_notes_-_pirelli_preview.pdf"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 tightens 2026 rules to close off tyre cooling tricks",
+   "url": "https://www.the-race.com/formula-1/f1-adjusts-2026-rules-to-close-off-tyre-cooling-tricks"
+  },
+  {
+   "name": "Jalopnik",
+   "title": "Why Does F1 Use Tire Blankets?",
+   "url": "https://www.jalopnik.com/1912095/f1-tire-blankets-use-explained/"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "F1 decision made on tyre blanket ban",
+   "url": "https://racingnews365.com/f1-decision-made-on-tyre-blanket-ban"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1 take action over future rule change following driver complaints",
+   "url": "https://www.gpfans.com/en/f1-news/1008480/tyre-blankets-f1-2025-rule-change-scrapped"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section C (Technical) Issue 17, 2026-04-28",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "How many buttons and switches does an F1 steering wheel have and what do they do?",
+   "url": "https://www.mercedesamgf1.com/news/how-does-an-f1-steering-wheel-work"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "EXPLAINED: The key terms for Formula 1's new-for-2026 rules",
+   "url": "https://www.formula1.com/en/latest/article/f1-2026-regulations-explained-the-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+  },
+  {
+   "name": "The Race",
+   "title": "Boost, overtake mode, active aero - Key 2026 F1 terms explained",
+   "url": "https://www.the-race.com/formula-1/boost-overtake-mode-active-aero-recharge-key-2026-terms-explained"
+  },
+  {
+   "name": "Autosport",
+   "title": "The challenge in revamping brake design for F1 2026",
+   "url": "https://www.autosport.com/f1/news/f1-2026-brake-design-challenge/10767315/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Technical analysis - brake-by-wire systems explained",
+   "url": "https://www.formula1.com/en/latest/article/technical-analysis-brake-by-wire-systems-explained.1XQiBCFqA6WYZwLmb3JLxi"
+  },
+  {
+   "name": "Brembo",
+   "title": "How 2026 rules will change F1",
+   "url": "https://www.brembo.com/en/motorsport/formula1/f1-rules-2026"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Extreme F1 2026 brake systems uncovered as first design details emerge",
+   "url": "https://www.planetf1.com/news/f1-news-extreme-2026-brake-systems-uncovered-first-design"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "What happens at an F1 crash test",
+   "url": "https://racingnews365.com/what-happens-at-an-f1-crash-test"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "Ferrari passes major 2026 F1 obstacle",
+   "url": "https://racingnews365.com/ferrari-passes-major-2026-f1-obstacle"
+  },
+  {
+   "name": "Autosport",
+   "title": "Analysis: how Formula 1 crash tests work",
+   "url": "https://www.autosport.com/f1/news/111877/analysis-how-f1-crash-tests-work"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "F1 Halo: what is it and how does it work?",
+   "url": "https://racingnews365.com/f1-halo"
+  },
+  {
+   "name": "Motorsport Magazine",
+   "title": "Norris & Piastri disqualified from Las Vegas GP over 0.1mm of plank wear",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/norris-piastri-disqualified-from-las-vegas-gp-over-0-1mm-of-plank-wear-verstappen-back-in-f1-title-hunt/"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1 Explained: What are the skid blocks and planks and why do F1 cars spark?",
+   "url": "https://www.gpfans.com/en/f1-news/1006401/f1-skid-blocks"
   }
  ]
 }
