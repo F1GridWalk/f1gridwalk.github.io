@@ -206,7 +206,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 {body}
 </main>
 <footer><div class="wrap">
-  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。日本時間の0時・6時・12時・18時ごろに更新。</p>
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>
   <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
 </div></footer>
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -520,7 +520,7 @@ def site_entrance(arch, slug):
                  f'<small>{e(a["source"])}</small></li>' for a in xs)
     return ('<section class="gw-next"><p class="gw-k">F1 Grid Walk</p>'
             '<h2>世界のF1ニュースを、毎日日本語で</h2>'
-            '<p class="gw-lead">海外の記事の要約を、1日4回載せています。いま届いているニュース：</p>'
+            '<p class="gw-lead">海外の記事の要約を、毎日載せています。いま届いているニュース：</p>'
             f'<ul>{li}</ul>'
             f'<a class="gw-btn" href="/" data-track="click/lens/{e(slug)}/entrance-top">今日のF1ニュースを見る →</a>'
             f'<a class="gw-sub" href="/lens/" data-track="click/lens/{e(slug)}/entrance-lens">ほかのコラムを読む</a></section>')

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>F1 Grid Walk（F1グリッドウォーク）｜世界のF1ニュースを日本語で</title>
-<meta name="description" content="F1グリッドウォーク：世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語で。各国の記事の見出しを翻訳し、短い要約と原文へのリンクを1日4回お届けします。">
+<meta name="description" content="F1グリッドウォーク：世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語で。各国の記事の見出しを翻訳し、短い要約と原文へのリンクを毎日お届けします。">
 <link rel="canonical" href="https://f1gridwalk.github.io/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"F1 Grid Walk","alternateName":["F1グリッドウォーク","グリッドウォーク","F1 Grid Walk 世界のF1ニュースを日本語で"],"url":"https://f1gridwalk.github.io/","inLanguage":"ja"}</script>
 
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="F1 Grid Walk">
 <meta property="og:title" content="F1 Grid Walk（F1グリッドウォーク）｜世界のF1ニュースを日本語で">
-<meta property="og:description" content="世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語の見出しと要約で。1日4回更新。">
+<meta property="og:description" content="世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語の見出しと要約で。毎日更新。">
 <meta property="og:url" content="https://f1gridwalk.github.io/">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
@@ -1375,7 +1375,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="about-pop" id="about-pop" role="dialog" aria-label="F1 Grid Walk について" hidden>
       <button type="button" class="about-x" aria-label="閉じる">×</button>
       <h2>世界のグリッドを、ひと歩き。</h2>
-      <p>0時、6時、12時、18時ごろ（日本時間）の1日4回、世界中の新しい記事をまとめて更新します。予選や決勝が終わったあとの回では、結果と各国の反応を優先してお届けします。</p>
+      <p>世界中の新しい記事を、毎日まとめて更新しています。予選や決勝が終わったあとは、結果と各国の反応を優先してお届けします。</p>
       <p>レースのあとには、コラム「<a href="/lens/">WORLD MEDIA LENS</a>」も。世界の記事を読み比べて、日本語ではほぼ見かけない話と、見出しだけでは分からない“謎”を1レース1本でお届けします。</p>
     </div>
     </div>
@@ -1393,8 +1393,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <button type="button" role="menuitem" data-share="native" id="share-native" hidden><b>その他</b><span>ほかのアプリで送る</span></button>
       </div>
     </div>
-    <div class="desk" title="日本時間の0時・6時・12時・18時ごろに、世界の新しい記事をまとめて更新します"><b>WORLD F1 DESK</b><span class="slots" id="desk-slots" aria-label="更新時刻 日本時間 0時、6時、12時、18時"><i>00:00</i> / <i>06:00</i> / <i>12:00</i> / <i>18:00</i> JST</span></div>
-    <div class="status"><span class="dot" aria-hidden="true"></span><span class="st-slots" id="st-slots" title="更新時刻（日本時間）"><i>00</i>·<i>06</i>·<i>12</i>·<i>18</i> JST</span><span id="updated">読み込み中…</span></div>
+    <div class="desk"><b>WORLD F1 DESK</b></div>
+    <div class="status"><span class="dot" aria-hidden="true"></span><span id="updated">読み込み中…</span></div>
     </div>
   </div>
 </header>
@@ -2230,13 +2230,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   el('view-ja').addEventListener('click', function(){ state.lang = state.lang === 'ja' ? 'all' : 'ja'; renderAll(); });
 
   var SITE_URL = 'https://f1gridwalk.github.io/';
-  (function(){
-    var h = (new Date().getUTCHours() + 9) % 24, n = Math.floor(h / 6 + 1) % 4;
-    ['desk-slots','st-slots'].forEach(function(id){
-      var box = document.getElementById(id); if (!box) return;
-      var is = box.querySelectorAll('i'); if (is[n]){ is[n].className = 'next'; is[n].title = '次の更新'; }
-    });
-  })();
   function copyText(text, btn, label){
     function done(){ btn.textContent = 'コピーしました'; btn.classList.add('done'); setTimeout(function(){ btn.textContent = label; btn.classList.remove('done'); }, 2000); }
     function fallback(){
@@ -2258,7 +2251,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
   if (SITE_URL.indexOf('github.io') < 0){
     var nb = mk('div','copy-note');
-    nb.appendChild(document.createTextNode('これは作業用のコピーです。1日4回の自動更新は公開サイトに入ります → '));
+    nb.appendChild(document.createTextNode('これは作業用のコピーです。自動更新は公開サイトに入ります → '));
     var nl = extLink('https://f1gridwalk.github.io/', '公開サイトを開く'); nb.appendChild(nl);
     document.body.insertBefore(nb, document.body.firstChild);
   }
