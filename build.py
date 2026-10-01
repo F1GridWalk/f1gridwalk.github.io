@@ -597,6 +597,7 @@ def build_lenses(arch, flag_map):
             if slug in (D.get('lensRelated') or []):
                 B.append(deep_card(D, lead='なぜそうなった？を深く読む'))
                 break
+        B.append(rules_entry('lens'))
         rows = ''
         for s in desk:
             cc = flag_map.get(s.get('region') or region_of.get(s['source'], ''), 'xx')
@@ -620,7 +621,10 @@ def build_lenses(arch, flag_map):
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'WORLD MEDIA LENS', 'item': SITE + '/lens/'},
             {'@type': 'ListItem', 'position': 3, 'name': L['title'], 'item': url}]})
-        write(f'lens/{slug}/index.html', page(title, L['dek'], url, '\n'.join(B) + LENS_JS, head, og_image=ogi, og_size=(1280, 670)))
+        used = set()
+        body_html = link_terms_html('\n'.join(B), used)
+        head = MONO_FONT + head + f'<style>{RULES_ENTRY_CSS}{RULES_CSS if used else ""}</style>\n'
+        write(f'lens/{slug}/index.html', page(title, L['dek'], url, body_html + term_assets(used) + LENS_JS, head, og_image=ogi, og_size=(1280, 670)))
         lenses.append((pub, slug, L, url))
 
     lenses.sort(key=lambda x: x[0], reverse=True)
@@ -1072,6 +1076,26 @@ def link_terms(html_text, used):
     return html_text
 
 
+SKIP_TAGS = ('a', 'h1', 'h2', 'h3', 'button', 'script', 'style', 'summary', 'textarea', 'label', 'select', 'time', 'cite')
+
+
+def link_terms_html(html_text, used):
+    """Like link_terms, but for a finished HTML fragment: only touches text outside tags, links, headings and buttons."""
+    if not RULES:
+        return html_text
+    out, depth = [], 0
+    for part in re.split(r'(<[^>]+>)', html_text):
+        if part.startswith('<'):
+            m = re.match(r'<(/?)([a-zA-Z0-9]+)', part)
+            if m and m.group(2).lower() in SKIP_TAGS and not part.endswith('/>'):
+                depth += -1 if m.group(1) else 1
+                depth = max(depth, 0)
+            out.append(part)
+        else:
+            out.append(link_terms(part, used) if depth == 0 and part.strip() else part)
+    return ''.join(out)
+
+
 def term_assets(used):
     if not used or not RULES:
         return ''
@@ -1243,7 +1267,8 @@ def main():
         if k in ('rumor', 'fan'):
             body.append('<p class="warn">' + ('報道で出たうわさで、公式には確認されていない話です。' if k == 'rumor'
                         else 'ファン掲示板の話題をまとめた投稿です。未確認の話を含みます。') + '</p>')
-        body.append(f'<p class="summary">{e(a.get("summary", ""))}</p>')
+        nused = set()
+        body.append(f'<p class="summary">{link_terms(e(a.get("summary", "")), nused)}</p>')
         body.append(f'<a class="cta" href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}" '
                     f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む\u00a0↗'
                     + (f' <small>（{e(lang)}）</small>' if a.get('lang') != 'ja' else '') + '</a>')
@@ -1292,7 +1317,9 @@ def main():
                   'image': [OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                   'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'],
                                 'publisher': {'@type': 'Organization', 'name': a['source']}}}
-        head = ((f'<style>{DEEP_CSS}</style>\n' if dg else '') + f'<meta property="article:published_time" content="{e(a["published"])}">\n'
+        if nused:
+            body.append(term_assets(nused))
+        head = ((f'<style>{DEEP_CSS}</style>\n' if dg else '') + (f'<style>{RULES_CSS}</style>\n' if nused else '') + f'<meta property="article:published_time" content="{e(a["published"])}">\n'
                 f'<script type="application/ld+json">{crumbs_ld}</script>\n' + ld(art_ld))
         if write(f'news/{a["id"]}/index.html',
                  page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head)):

@@ -23,6 +23,46 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<style>
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
 <meta property="article:published_time" content="2026-09-26T12:00:00+01:00">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "ニュース一覧", "item": "https://f1gridwalk.github.io/news/"}, {"@type": "ListItem", "position": 3, "name": "ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける", "item": "https://f1gridwalk.github.io/news/en-autosport-baku-race-report/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける", "description": "英オートスポーツの決勝リポート。金曜の予選で約0.8秒差のポールを奪ったラッセルが、決勝でもメルセデスの速さを示してポール・トゥ・ウィンを達成し、今季3勝目を挙げたと伝えた。2度のセーフティカーを乗り越え、最後はフェルスタッペンとのフィ…", "datePublished": "2026-09-26T12:00:00+01:00", "dateModified": "2026-09-26T12:00:00+01:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=1"], "mainEntityOfPage": "https://f1gridwalk.github.io/news/en-autosport-baku-race-report/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "isBasedOn": {"@type": "NewsArticle", "url": "https://www.autosport.com/f1/news/f1-azerbaijan-gp-russell-fends-off-verstappen-for-victory-colapinto-takes-out-gasly-and-norris/10859225/", "headline": "F1 Azerbaijan GP: Russell fends off Verstappen for victory; Colapinto takes out Gasly and Norris", "publisher": {"@type": "Organization", "name": "Autosport"}}}</script>
@@ -236,7 +276,7 @@ footer p{margin:6px 0}
 <div class="meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="gb">Autosport</span><span>イギリス · 英語</span><time datetime="2026-09-26T12:00:00+01:00">2026年9月26日(土) 20:00</time></div>
 <h1>ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける</h1>
 <p class="orig">原題：F1 Azerbaijan GP: Russell fends off Verstappen for victory; Colapinto takes out Gasly and Norris</p>
-<p class="summary">英オートスポーツの決勝リポート。金曜の予選で約0.8秒差のポールを奪ったラッセルが、決勝でもメルセデスの速さを示してポール・トゥ・ウィンを達成し、今季3勝目を挙げたと伝えた。2度のセーフティカーを乗り越え、最後はフェルスタッペンとのフィニッシュラインまでの加速勝負を制している。再スタートではコラピントがガスリーとノリスを巻き込む事故を起こした。ハジャーは復帰戦で3位、アントネッリは66点差の首位を保った。</p>
+<p class="summary">英オートスポーツの決勝リポート。金曜の予選で約0.8秒差のポールを奪ったラッセルが、決勝でもメルセデスの速さを示してポール・トゥ・ウィンを達成し、今季3勝目を挙げたと伝えた。2度の<a class="term" href="/deep/rules/#safety-car" data-term="safety-car">セーフティカー</a>を乗り越え、最後はフェルスタッペンとのフィニッシュラインまでの加速勝負を制している。再スタートではコラピントがガスリーとノリスを巻き込む事故を起こした。ハジャーは復帰戦で3位、アントネッリは66点差の首位を保った。</p>
 <a class="cta" href="https://www.autosport.com/f1/news/f1-azerbaijan-gp-russell-fends-off-verstappen-for-victory-colapinto-takes-out-gasly-and-norris/10859225/" target="_blank" rel="noopener" data-track="click/en-autosport-baku-race-report" data-title="Autosport | ラッセルが圧巻のポール・トゥ・ウィン。2度のSCを越えてフェルスタッペンを退ける">Autosportで元の記事を読む ↗ <small>（英語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は Autosport に帰属します。</p>
 <div class="tags"><span>Mercedes</span><span>Red Bull</span><span>Alpine</span><span>アゼルバイジャンGP</span><span>決勝</span></div>
@@ -244,6 +284,28 @@ footer p{margin:6px 0}
 </article>
 <section><h2>ラッセルがバクーで勝利、フェルスタッペンが0.196秒差まで迫る</h2><p class="lead">ポールスタートのラッセルが、2度のセーフティカーが出た荒れたアゼルバイジャンGPを制した。8番グリッドから追い上げたフェルスタッペンは最後の長い直線で迫り、差はわずか0.196秒。ケガからの復帰戦のハジャーが3位に入り、レッドブルが2台表彰台に上った。再スタートでの同士討ちなどで7台がリタイアする中、予選でクラッシュしたアントネッリは16番手から5位まで挽回して首位を守り、ピアストリはロックアップで入賞圏外に落ちた。</p><p class="lead">ほかに 16 本の記事があります。</p><ul class="list"><li><div class="m"><span class="kind fan">ファン投稿</span><span class="srcbadge" data-c="jp">F1情報通</span><time datetime="2026-09-28T01:00:00+09:00">2026年9月28日(月) 01:00</time></div><a class="t" href="/news/ja-f1jouhou-russell-best-weekend/">【掲示板】ラッセル「キャリア最高の週末」発言に反応、影の薄さを惜しむ声も</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-09-27T07:00:00+02:00">2026年9月27日(日) 14:00</time></div><a class="t" href="/news/en-gpblog-redbull-last-chance/">フェルスタッペンが逃した“今季最後の勝機”。原因はレッドブル側にあると指摘</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="gb">Motorsport.com</span><time datetime="2026-09-26T17:00:00+01:00">2026年9月27日(日) 01:00</time></div><a class="t" href="/news/en-motorsport-baku-street-brawl/">バクーの勝者と敗者。ペレスが会心の週末、ボッタスとアストンは総崩れ</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Magazin</span><time datetime="2026-09-26T17:48:00+02:00">2026年9月27日(日) 00:48</time></div><a class="t" href="/news/de-mm-baku-bottas/">終盤のボッタスでラッセルの勝利が危うく。フェルスタッペンはゴールライン手前で届かず</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="xx">The Race</span><time datetime="2026-09-26T16:38:00+01:00">2026年9月27日(日) 00:38</time></div><a class="t" href="/news/en-therace-baku-winners-losers/">アゼルバイジャンGPの勝者と敗者。ラッセルは「キャリア最高の週末」、アルピーヌとマクラーレンは無得点</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Sportschau</span><time datetime="2026-09-26T17:11:00+02:00">2026年9月27日(日) 00:11</time></div><a class="t" href="/news/de-sportschau-baku-race/">ラッセル、紙一重でフェルスタッペンを抑えてバクーで勝利</a></li><li><div class="m"><span class="kind primary">一次情報</span><span class="srcbadge" data-c="xx">Formula1.com</span><time datetime="2026-09-26T14:58:00+00:00">2026年9月26日(土) 23:58</time></div><a class="t" href="/news/en-f1com-verstappen-trying-everything/">フェルスタッペン「できることは全部やった」0.1秒差の2位に悔しさ</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="gb">Motorsport Week</span><time datetime="2026-09-26T15:30:00+01:00">2026年9月26日(土) 23:30</time></div><a class="t" href="/news/en-motorsportweek-antonelli-grandmother/">アントネッリ「まるで祖母の運転」。ダメージ抱えた16番手からの慎重な追い上げ</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="xx">RacingNews365</span><time datetime="2026-09-26T15:25:00+01:00">2026年9月26日(土) 23:25</time></div><a class="t" href="/news/en-rn365-verstappen-not-enough/">フェルスタッペン「届かなかった」。8番手から追い上げ、0.196秒差の2位に悔しさ</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="qa">Al Jazeera</span><time datetime="2026-09-26T14:17:00+00:00">2026年9月26日(土) 23:17</time></div><a class="t" href="/news/en-aljazeera-reuters-baku-race/">ラッセルが僅差でバクー制覇、首位アントネッリは5位で差は66点に</a></li><li><div class="m"><span class="kind fan">ファン投稿</span><span class="srcbadge" data-c="jp">F1情報通</span><time datetime="2026-09-26T23:00:00+09:00">2026年9月26日(土) 23:00</time></div><a class="t" href="/news/ja-f1jouhou-baku-race/">【掲示板】バクー決勝、僅差の優勝争いと同士討ちに反応</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">Formula1-Data</span><time datetime="2026-09-26T22:32:00+09:00">2026年9月26日(土) 22:32</time></div><a class="t" href="/news/ja-f1data-baku-race-digest/">7台がリタイアした大荒れのバクー。ラッセルが0.196秒差で制す</a></li></ul></section>
 <section><h2>最新の記事</h2><ul class="list"><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="xx">RacingNews365</span><time datetime="2026-10-01T17:00:00+01:00">2026年10月2日(金) 01:00</time></div><a class="t" href="/news/en-rn365-mercedes-w17-weakness-upgrade/">メルセデス、W17の弱点に対処する異例の大型アップデートをセパンに投入</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T16:15:00+02:00">2026年10月1日(木) 23:15</time></div><a class="t" href="/news/nl-gpblog-bearman-haas-leader-role/">ベアマン、オコン離脱後のハースで「リーダー」の役割に意欲</a></li><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T15:46:00+02:00">2026年10月1日(木) 22:46</time></div><a class="t" href="/news/de-motorsport-total-audi-baku-update-straights/">アウディのバクー向け空力更新、真価はまだ見えず　ストレートの遅さが足かせに</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T15:35:00+02:00">2026年10月1日(木) 22:35</time></div><a class="t" href="/news/nl-gpblog-hadjar-grid-penalty-malaysia/">ハジャー、セパンで5グリッド降格の見通し　それでも「追い上げは可能」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T14:12:00+02:00">2026年10月1日(木) 21:12</time></div><a class="t" href="/news/de-motorsport-total-leclerc-sf26-parts/">ルクレール、フェラーリの新パーツに「大きな変化ではない」と期待を抑える</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-01T13:30:00+02:00">2026年10月1日(木) 20:30</time></div><a class="t" href="/news/it-formula1-norris-apologises-colapinto/">ノリスがコラピントに謝罪、一方のコラピントは「注意すべきだった」と反論</a></li></ul><p><a href="/">トップで全部見る →</a>　<a href="/news/">ニュース一覧 →</a></p></section>
+<script type="application/json" id="term-data">{"safety-car": ["セーフティカー", "コース上の危険を片付けるあいだ、隊列の先頭を走って全車の速さを抑える車。"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>
