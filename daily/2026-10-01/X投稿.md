@@ -20,3 +20,20 @@ https://f1gridwalk.github.io/lens/baku-tv-saturday-20261001/
 
 コラムはこちら
 https://f1gridwalk.github.io/lens/ocon-villeneuve-20261001/
+
+---
+# X投稿（2026-10-01 速報コラム：honda-aduo2-20261001、21:58公開）
+
+## ① noteからシェアするときに添える文
+
+英The Raceによると、ホンダは遅れたメーカー向けの救済（ADUO）を今季2回とも使っていました。2回目は新しいターボで、技術者は効果を「まだ小さな数字」と。noteにまとめました。 #F1jp #ホンダ
+
+## ② ①への返信
+
+サイトでも読めます
+https://f1gridwalk.github.io/lens/honda-aduo2-20261001/
+
+## ③ ②への返信
+
+毎日の海外F1ニュースは、日本語でこちらにまとめています。
+https://f1gridwalk.github.io/
