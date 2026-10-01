@@ -879,12 +879,12 @@ def build_deeps(arch, flag_map):
         others = [x for x in DEEPS if x is not D][:3]
         B.append('<div class="dg-end"><h2><span class="k">DEEP GRID</span>ほかの号</h2>'
                  + ''.join(deep_card(x, 'dg-card', '読む') for x in others)
-                 + ('<a class="dg-card" href="/deep/rules/"><small>DEEP GRID RULES</small><b>ルールブックで用語とルールを引く →</b></a>' if RULES else '')
+                 + rules_entry('deep-issue')
                  + '<a class="dg-card" href="/deep/"><small>DEEP GRID</small><b>すべての号を見る →</b></a></div>')
         B.append('</article>')
         B.append(term_assets(used))
 
-        head = f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}{RULES_CSS if used else ""}</style>\n'
+        head = f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}{RULES_ENTRY_CSS}{RULES_CSS if used else ""}</style>\n'
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': D['title'], 'description': D['dek'],
                     'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [OG_IMAGE],
                     'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER, 'articleSection': 'DEEP GRID',
@@ -918,11 +918,11 @@ def build_deeps(arch, flag_map):
             '<h1>DEEP GRID</h1>'
             '<p class="dg-dek">ニュースの続きを、ニュースより深く読む。なぜ起きたのか、技術的に何を意味するのか、過去と何が違うのか。'
             '入口は「3分でわかる」でやさしく、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p>'
-            + ('<a class="dg-card" href="/deep/rules/" style="margin:18px 0 6px"><small>DEEP GRID RULES</small><b>ルールブック：F1の用語とルールを、言葉を入れて引く →</b></a>' if RULES else '')
+            + rules_entry('deep-index')
             + f'<ul class="dg-list">{items}</ul></div>')
     write('deep/index.html', page('DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク',
                                   'F1のニュースの「なぜ」を深く読む、F1 Grid Walkの深掘り記事。パワーユニット、空力、タイヤ、規則、データ、歴史まで。',
-                                  SITE + '/deep/', body, f'<style>{DEEP_CSS}</style>\n', og_type='website'))
+                                  SITE + '/deep/', body, f'<style>{DEEP_CSS}{RULES_ENTRY_CSS}</style>\n', og_type='website'))
     return [(SITE + '/deep/', DEEPS[0].get('updated') or DEEPS[0]['published'], 'weekly', '0.8')] + rows
 
 
@@ -994,6 +994,7 @@ RULES_JS = '''<script>
   [].forEach.call(document.querySelectorAll('.rb-none button'),function(b){ b.addEventListener('click',function(){ q.value=b.textContent; run(); }); });
   function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.tagName==='DETAILS'){ d.hidden=false; d.open=true; setTimeout(function(){d.scrollIntoView({block:'start'});},50);} }
   window.addEventListener('hashchange',openHash); openHash();
+  try{ var p=new URLSearchParams(location.search).get('q'); if(p){ q.value=p; run(); } }catch(e){}
   /* grid penalty calculator */
   var t=document.getElementById('pu-tool');
   if(t){ var sels=[].slice.call(t.querySelectorAll('select')), out=document.getElementById('pu-out');
@@ -1066,6 +1067,33 @@ def term_assets(used):
 PU_TOOL = '''<div class="rb-tool" id="pu-tool"><div class="rb-h" style="margin-top:0">計算してみる：この週末に新しく入れた部品は？</div>
 {rows}<div class="rb-out" id="pu-out" aria-live="polite">降格なし</div>
 <p class="rb-checked">目安です。実際の降格はFIAが発表します。代役の使用分や、ほかの違反による降格は含みません。</p></div>'''
+
+
+RULES_ENTRY_CSS = '''
+.rbx{display:block;margin:18px 0 8px;padding:16px 16px 14px;border:1.5px solid var(--ink);border-radius:16px;background:var(--surface)}
+.rbx-k{display:flex;justify-content:space-between;gap:8px;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.26em;color:var(--clay)}
+.rbx-k span{font-family:var(--sans);letter-spacing:.06em;color:var(--muted);font-weight:500}
+.rbx h3{font-size:18px;line-height:1.5;margin:6px 0 2px}
+.rbx p{font-size:13.5px;line-height:1.7;color:var(--ink-2);margin:0 0 10px}
+.rbx form{display:flex;gap:8px}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 14px 11px 40px;border:1px solid var(--line);border-radius:999px;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 13px center no-repeat;color:var(--ink)}
+.rbx button{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--ink);color:var(--on-ink);cursor:pointer}
+.rbx-w{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;font-size:12.5px;color:var(--muted);align-items:center}
+.rbx-w a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:2px 11px;text-decoration:none;background:var(--paper);color:var(--ink)}
+'''
+
+
+def rules_entry(where):
+    """A search box that leads into the rulebook: obvious that you can look words up there."""
+    if not RULES:
+        return ''
+    words = ''.join(f'<a href="/deep/rules/?q={quote(w)}" data-track="click/rules-entry/{where}">{e(w)}</a>' for w in ['グリッド降格', 'DRS', 'デグ', '赤旗', 'ADUO'])
+    return ('<div class="rbx"><div class="rbx-k">DEEP GRID RULES<span>' + str(len(RULES['terms'])) + '語を収録</span></div>'
+            '<h3>F1の用語・ルールを調べる</h3>'
+            '<p>分からない言葉を入れると、意味とルールの中身、今季の実例がすぐ出ます。</p>'
+            f'<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、DRS" aria-label="F1の用語・ルールを調べる">'
+            f'<button type="submit" data-track="click/rules-entry/{where}">調べる</button></form>'
+            f'<div class="rbx-w">たとえば：{words}</div></div>')
 
 
 def build_rules():

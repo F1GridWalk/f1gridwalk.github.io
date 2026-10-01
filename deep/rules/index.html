@@ -375,6 +375,7 @@ footer p{margin:6px 0}
   [].forEach.call(document.querySelectorAll('.rb-none button'),function(b){ b.addEventListener('click',function(){ q.value=b.textContent; run(); }); });
   function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.tagName==='DETAILS'){ d.hidden=false; d.open=true; setTimeout(function(){d.scrollIntoView({block:'start'});},50);} }
   window.addEventListener('hashchange',openHash); openHash();
+  try{ var p=new URLSearchParams(location.search).get('q'); if(p){ q.value=p; run(); } }catch(e){}
   /* grid penalty calculator */
   var t=document.getElementById('pu-tool');
   if(t){ var sels=[].slice.call(t.querySelectorAll('select')), out=document.getElementById('pu-out');
