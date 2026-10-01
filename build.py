@@ -1030,8 +1030,21 @@ TERM_JS = '''<script>
 </script>'''
 
 
+PEOPLE = []  # deep/people.json: verified names and titles (shown in the rulebook search as 人物)
+
+
+def term_lookup():
+    """(text to find, anchor id, popover title, popover text) for every rulebook term and person."""
+    out = []
+    if RULES:
+        out += [(t['term'], t['id'], t['term'], t['short']) for t in RULES['terms']]
+    out += [(p['name'], 'person-' + p['id'], p['name'], f'{p["role"]}（{p["org"]}）') for p in PEOPLE]
+    return out
+
+
 def load_rules():
-    global RULES
+    global RULES, PEOPLE
+    PEOPLE = (load('deep/people.json', {}) or {}).get('people', [])
     R = load('deep/rules.json')
     if R and R.get('draft') and os.environ.get('PREVIEW_DRAFTS') != '1':
         old = os.path.join(ROOT, 'deep', 'rules', 'index.html')
@@ -1048,21 +1061,21 @@ def link_terms(html_text, used):
     """Underline the first appearance of each rulebook term in a paragraph (already HTML-escaped)."""
     if not RULES:
         return html_text
-    for t in RULES['terms']:
-        if t['id'] in used:
+    for word, tid, _, _ in term_lookup():
+        if tid in used:
             continue
-        w = e(t['term'])
+        w = e(word)
         i = html_text.find(w)
         if i >= 0:
-            html_text = html_text[:i] + f'<a class="term" href="/deep/rules/#{t["id"]}" data-term="{t["id"]}">{w}</a>' + html_text[i + len(w):]
-            used.add(t['id'])
+            html_text = html_text[:i] + f'<a class="term" href="/deep/rules/#{tid}" data-term="{tid}">{w}</a>' + html_text[i + len(w):]
+            used.add(tid)
     return html_text
 
 
 def term_assets(used):
     if not used or not RULES:
         return ''
-    data = {t['id']: [t['term'], t['short']] for t in RULES['terms'] if t['id'] in used}
+    data = {tid: [title, text] for _, tid, title, text in term_lookup() if tid in used}
     return ('<script type="application/json" id="term-data">' + json.dumps(data, ensure_ascii=False).replace('</', '<\\/') + '</script>' + TERM_JS)
 
 
@@ -1097,8 +1110,8 @@ def rules_entry(where, on_page=False):
     """The rulebook search box (plan 1: header, one line, search; no fixed categories)."""
     if not RULES:
         return ''
-    n = len(RULES['terms'])
-    hd = f'<div class="rbx-hd"><b>RULES</b><span class="mono">{n} ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語とルールを、言葉で引く辞典。</p>'
+    n = len(RULES['terms']) + len(PEOPLE)
+    hd = f'<div class="rbx-hd"><b>RULES</b><span class="mono">{n} ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p>'
     if on_page:
         return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><input id="rb-q" type="search" placeholder="例：降格、ハジャー" aria-label="用語とルールを検索" autocomplete="off">'
                 f'<button type="button" class="go" id="rb-clear">消す</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>')
@@ -1134,7 +1147,30 @@ def build_rules():
                      f'<summary><span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(t["short"])}</span></summary><div class="rb-b">{b}</div></details>')
-    sugg = ''.join(f'<button type="button">{e(w)}</button>' for w in ['降格', 'DRS', 'ハジャー', '赤旗', 'ADUO'])
+    titles = {}
+    for D in DEEPS:
+        titles[f'/deep/{D["slug"]}/'] = 'DEEP GRID ' + deep_no(D) + ' ' + D['title']
+    ldir = os.path.join(ROOT, 'lens')
+    for fn in os.listdir(ldir):
+        if fn.endswith('.json'):
+            L = load(os.path.join('lens', fn))
+            if L and L.get('slug') and not L.get('draft'):
+                titles[f'/lens/{L["slug"]}/'] = f'{L.get("gpLabel", "コラム")}：{L["title"]}'
+    for p in PEOPLE:
+        keys = ' '.join([p['name'], p.get('kana', ''), p.get('en', ''), p['role'], p['org'], p['short']] + p.get('aliases', []))
+        b = f'<div class="rb-h" style="margin-top:0">肩書き</div><span class="rb-rule">{e(p["role"])}（{e(p["org"])}）</span>'
+        app = [u for u in p.get('appears', []) if u in titles]
+        if app:
+            b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
+        if p.get('sources'):
+            b += '<div class="rb-h">出典（肩書きの確認）</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])}</a></li>' for x in p['sources']) + '</ul>'
+        b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
+        al = '・'.join([x for x in [p.get('en', '')] + p.get('aliases', []) if x][:3])
+        items.append(f'<details class="rb" id="person-{e(p["id"])}" data-c="人物" data-n="{e(p["name"] + " " + " ".join(p.get("aliases", [])))}" data-k="{e(keys)}">'
+                     f'<summary><span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
+                     + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
+                     f'<span class="rb-s">{e(p["short"])}</span></summary><div class="rb-b">{b}</div></details>')
+    sugg = ''.join(f'<button type="button">{e(w)}</button>' for w in ['降格', 'DRS', 'ハジャー', '折原', 'ADUO'])
     body = ('<nav class="crumbs"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › ルールブック</nav><div class="dg">'
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'
             f'<h1>{e(R["title"])}</h1><p class="dg-dek">{e(R["dek"])}</p>'
@@ -1149,6 +1185,9 @@ def build_rules():
         '@context': 'https://schema.org', '@type': 'DefinedTermSet', 'name': R['title'], 'description': R['dek'], 'url': url, 'inLanguage': 'ja',
         'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': t['term'], 'alternateName': t.get('aliases', [])[:4], 'description': t['short'],
                             'url': f'{url}#{t["id"]}'} for t in R['terms']]})
+    if PEOPLE:
+        head += ld({'@context': 'https://schema.org', '@graph': [{'@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
+                    'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': f'{url}#person-{p["id"]}'} for p in PEOPLE]})
     write('deep/rules/index.html', page(f'{R["title"]}｜F1の用語とルール辞典｜F1グリッドウォーク', R['dek'], url, body, head, og_type='website'))
     return [(url, R['checked'] + 'T09:00:00+09:00', 'weekly', '0.8')]
 
