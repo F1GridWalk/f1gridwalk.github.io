@@ -106,26 +106,22 @@ details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
 .dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
 .dg table.stack td+td{margin-top:6px}}
 
-.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--num:#9A7206;--hov:#F2C230;--hovt:#111311;border:3px solid var(--bd);background:var(--bg);color:var(--tx);margin:20px 0 10px}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--num:#F2C230}}
-:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--num:#F2C230}
+.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--line:#C9CBC6;background:var(--bg);color:var(--tx);border:2px solid var(--bd);border-radius:22px;overflow:hidden;margin:20px 0 10px;padding-bottom:14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}}
+:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}
 .rbx .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em}
-.rbx-big{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:10px 12px 8px;border-bottom:3px solid var(--bd);background:var(--hd);color:var(--hdt)}
-.rbx-big b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:40px;font-weight:700;line-height:.9;color:var(--hdt);letter-spacing:.02em}
-.rbx-big span{font-size:12.5px;font-weight:700;color:var(--hdt);text-align:right;line-height:1.4}
-.rbx form,.rbx .rbx-f{display:flex;margin:0;border-bottom:3px solid var(--bd)}
-.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 40px;border:0;border-radius:0;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 12px center no-repeat;color:var(--tx);outline:none}
+.rbx-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;background:var(--hd);color:var(--hdt)}
+.rbx-hd b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:18px;letter-spacing:.2em}
+.rbx-hd span{font-size:10.5px}
+.rbx p.rbx-lead{margin:12px 16px 0;font-size:14px;font-weight:700;line-height:1.6}
+.rbx form,.rbx .rbx-f{display:flex;gap:8px;margin:10px 12px 0}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 42px;border:2px solid var(--line);border-radius:999px;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx);outline:none}
 .rbx input::placeholder{color:var(--sub)}
-.rbx input:focus{box-shadow:inset 0 -3px 0 #F2C230}
-.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:0;padding:0 18px;background:var(--btn);color:var(--btnt);border-left:3px solid var(--bd);cursor:pointer}
-.rbx-grid{display:grid;grid-template-columns:repeat(3,1fr)}
-.rbx-grid a,.rbx-grid button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 10px 12px;font:inherit;font-weight:700;font-size:14.5px;color:var(--tx);background:transparent;border:0;border-right:3px solid var(--bd);border-bottom:3px solid var(--bd);border-radius:0;text-decoration:none;cursor:pointer;text-align:left}
-.rbx-grid>*:nth-child(3n){border-right:0}
-.rbx-grid span{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:11px;color:var(--num);letter-spacing:.06em}
-.rbx-grid a:hover,.rbx-grid button:hover,.rbx-grid button[aria-pressed="true"]{background:var(--hov);color:var(--hovt)}
-.rbx-grid a:hover span,.rbx-grid button:hover span,.rbx-grid button[aria-pressed="true"] span{color:var(--hovt)}
-.rbx-ft{display:flex;justify-content:space-between;gap:8px;font-size:10.5px;padding:6px 12px;color:var(--sub)}
-.rbx-ft a{color:var(--tx);font-weight:700}
+.rbx input:focus{border-color:#F2C230}
+.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--btn);color:var(--btnt);cursor:pointer}
+.rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
+.rbx-all:hover{text-decoration:underline}
+.rbx p.rbx-cnt{margin:10px 16px 0;font-size:11px;line-height:1.4;color:var(--sub)}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -332,7 +328,7 @@ footer p{margin:6px 0}
   <a class="toplink" href="/">最新ニュースを見る →</a>
 </div></header>
 <main class="wrap">
-<nav class="crumbs"><a href="/">トップ</a> › DEEP GRID</nav><div class="dg"><div class="dg-top"><div class="dg-label"><b>DEEP GRID</b><span>ニュースの、その奥へ。</span></div></div><h1>DEEP GRID</h1><p class="dg-dek">ニュースの続きを、ニュースより深く読む。なぜ起きたのか、技術的に何を意味するのか、過去と何が違うのか。入口は「3分でわかる」でやさしく、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p><div class="rbx"><div class="rbx-big"><b>RULES</b><span>F1の用語・ルール<br>言葉か分類で引く</span></div><form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="言葉を入れる（例：降格）" aria-label="F1の用語・ルールを調べる"><button type="submit" class="go" data-track="click/rules-entry/deep-index">検索</button></form><div class="rbx-grid"><a href="/deep/rules/?c=%E3%83%9A%E3%83%8A%E3%83%AB%E3%83%86%E3%82%A3" data-track="click/rules-entry/deep-index"><span>01</span>罰則</a><a href="/deep/rules/?c=%E3%83%91%E3%83%AF%E3%83%BC%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88" data-track="click/rules-entry/deep-index"><span>02</span>PU</a><a href="/deep/rules/?c=%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88" data-track="click/rules-entry/deep-index"><span>03</span>ポイント</a><a href="/deep/rules/?c=%E3%83%AC%E3%83%BC%E3%82%B9%E9%81%8B%E5%96%B6" data-track="click/rules-entry/deep-index"><span>04</span>運営</a><a href="/deep/rules/?c=%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%A8%E7%A9%BA%E5%8A%9B" data-track="click/rules-entry/deep-index"><span>05</span>空力</a><a href="/deep/rules/?c=%E3%82%BF%E3%82%A4%E3%83%A4%E3%81%A8%E4%BD%9C%E6%88%A6" data-track="click/rules-entry/deep-index"><span>06</span>作戦</a></div><div class="rbx-ft mono"><span>14 ENTRIES · REV. 2026-10-02</span><a href="/deep/rules/">ALL →</a></div></div><ul class="dg-list"><li><a href="/deep/sepang-unknown/"><small>DEEP GRID #01</small><b>なぜセパンは現代F1にとって「未知」なのか</b></a><p>F1がセパンで走るのは2017年以来、9年ぶり。2026年の新しい規則で作られた今のマシンは、どのチームもこのコースを一度も走ったことがない。</p></li></ul></div>
+<nav class="crumbs"><a href="/">トップ</a> › DEEP GRID</nav><div class="dg"><div class="dg-top"><div class="dg-label"><b>DEEP GRID</b><span>ニュースの、その奥へ。</span></div></div><h1>DEEP GRID</h1><p class="dg-dek">ニュースの続きを、ニュースより深く読む。なぜ起きたのか、技術的に何を意味するのか、過去と何が違うのか。入口は「3分でわかる」でやさしく、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">14 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語とルールを、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、DRS" aria-label="F1の用語・ルールを調べる"><button type="submit" class="go" data-track="click/rules-entry/deep-index">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-index/all">すべての用語を見る →</a></div><ul class="dg-list"><li><a href="/deep/sepang-unknown/"><small>DEEP GRID #01</small><b>なぜセパンは現代F1にとって「未知」なのか</b></a><p>F1がセパンで走るのは2017年以来、9年ぶり。2026年の新しい規則で作られた今のマシンは、どのチームもこのコースを一度も走ったことがない。</p></li></ul></div>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>
