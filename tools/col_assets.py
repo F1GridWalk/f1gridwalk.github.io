@@ -26,7 +26,7 @@ B.append(['p', '※ ' + L.get('note', '')])
 for s in L.get('extraSources', []):
     B.append(['p', f'出典：{s["source"]}（{s.get("region","")}）'])
     B.append(['url', s['url']])
-B.append(['p', 'この記事はサイトでも読めます（投票もこちら）。'])
+B.append(['p', 'この記事はサイトでも読めます（投票もこちら）。' if L.get('mystery') else 'この記事はサイトでも読めます。'])
 B.append(['url', url])
 B.append(['p', '毎日の海外F1ニュースは、日本語でこちらにまとめています。'])
 B.append(['url', 'https://f1gridwalk.github.io/'])
@@ -54,8 +54,20 @@ h = (tpl.replace('{{BIG}}', e(L.get('big', ''))).replace('{{EY}}', 'WORLD MEDIA 
         .replace('{{H1}}', h1).replace('{{SUB}}', e(L.get('eyeSub') or L.get('dek', '')[:40])).replace('{{FLAGS}}', flags))
 if len(e(TITLE)) > 34 and not L.get('eyeHtml'):
     h = h.replace('font-size:66px', 'font-size:52px')
+h2 = h.replace('height:670px', 'height:720px').replace('top:70px', 'top:88px')
+if L.get('eye'):
+    # new click-friendly layouts (owner's choice, 1 Oct 2026); see eye_layouts.py
+    import re, sys as _s
+    _s.path.insert(0, HERE)
+    import eye_layouts
+    fcss = '\n'.join(re.findall(r'^\[data-c=.*$', tpl, flags=re.M))
+    fl = ''.join(f'<i data-c="{FLAG.get(r,"xx")}"></i>' for r in regions[:4])
+    if not L['eye'].get('foot') and regions:
+        L['eye']['foot'] = '・'.join(regions[:4]) + 'の記事から'
+    h = eye_layouts.render(L, fl, 670, fcss)
+    h2 = eye_layouts.render(L, fl, 720, fcss)
 p1 = os.path.join(out, f'_eye_{P}.html'); open(p1, 'w', encoding='utf-8').write(h)
-p2 = os.path.join(out, f'_eyex_{P}.html'); open(p2, 'w', encoding='utf-8').write(h.replace('height:670px', 'height:720px').replace('top:70px', 'top:88px'))
+p2 = os.path.join(out, f'_eyex_{P}.html'); open(p2, 'w', encoding='utf-8').write(h2)
 js = f"""const {{ chromium }} = require('playwright');
 (async()=>{{const b=await chromium.launch();
 let p=await b.newPage({{viewport:{{width:1280,height:670}}}}); await p.goto('file://{p1}'); await p.waitForTimeout(400); await p.screenshot({{path:{json.dumps(os.path.join(out, f'note_{P}_見出し画像.png'))}}});
