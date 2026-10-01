@@ -43,6 +43,16 @@ ID_OK = re.compile(r'^[a-z0-9][a-z0-9-]{0,120}$')
 e = lambda s: html.escape(str(s if s is not None else ''), quote=True)
 
 
+# who publishes the summaries and columns (structured data for search engines)
+PUBLISHER = {'@type': 'Organization', 'name': 'F1 Grid Walk', 'alternateName': 'F1グリッドウォーク', 'url': SITE + '/',
+             'logo': {'@type': 'ImageObject', 'url': SITE + '/icon-512.png', 'width': 512, 'height': 512}}
+
+
+def ld(obj):
+    """One <script type="application/ld+json"> tag, safe inside HTML."""
+    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False).replace('</', '<\\/') + '</script>\n'
+
+
 def load(name, default=None):
     p = os.path.join(ROOT, name)
     if not os.path.exists(p):
@@ -592,6 +602,14 @@ def build_lenses(arch, flag_map):
         head = f'<meta property="article:published_time" content="{e(L["published"])}">\n<style>{LENS_CSS}</style>\n'
         ogp = os.path.join(ROOT, 'lens', slug, 'og.png')  # the column's own header image, when present
         ogi = f'{SITE}/lens/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
+        head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': L['title'], 'description': L['dek'],
+                    'datePublished': L['published'], 'dateModified': L.get('updated') or L['published'], 'inLanguage': 'ja',
+                    'image': [ogi or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                    'articleSection': 'WORLD MEDIA LENS'})
+        head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
+            {'@type': 'ListItem', 'position': 2, 'name': 'WORLD MEDIA LENS', 'item': SITE + '/lens/'},
+            {'@type': 'ListItem', 'position': 3, 'name': L['title'], 'item': url}]})
         write(f'lens/{slug}/index.html', page(title, L['dek'], url, '\n'.join(B) + LENS_JS, head, og_image=ogi, og_size=(1280, 670)))
         lenses.append((pub, slug, L, url))
 
@@ -711,8 +729,13 @@ def main():
             {'@type': 'ListItem', 'position': 2, 'name': 'ニュース一覧', 'item': SITE + '/news/'},
             {'@type': 'ListItem', 'position': 3, 'name': a['title'], 'item': url}]}, ensure_ascii=False)
         crumbs_ld = crumbs_ld.replace('</', '<\\/')
+        art_ld = {'@context': 'https://schema.org', '@type': 'NewsArticle', 'headline': a['title'], 'description': desc,
+                  'datePublished': a['published'], 'dateModified': a['published'], 'inLanguage': 'ja',
+                  'image': [OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                  'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'],
+                                'publisher': {'@type': 'Organization', 'name': a['source']}}}
         head = (f'<meta property="article:published_time" content="{e(a["published"])}">\n'
-                f'<script type="application/ld+json">{crumbs_ld}</script>\n')
+                f'<script type="application/ld+json">{crumbs_ld}</script>\n' + ld(art_ld))
         if write(f'news/{a["id"]}/index.html',
                  page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head)):
             changed += 1
@@ -747,6 +770,20 @@ def main():
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
     sm.append('</urlset>')
     write('sitemap.xml', '\n'.join(sm) + '\n')
+
+    # robots.txt: everything may be crawled; say where the sitemap is
+    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
+
+    # 404 page (GitHub Pages serves /404.html for any missing path)
+    nf = ['<div class="nf"><p class="nf-code">404</p><h1>ページが見つかりませんでした</h1>'
+          '<p class="lead">アドレスが間違っているか、ページが移動した可能性があります。</p>'
+          '<p class="nf-go"><a class="cta" href="/">トップへ戻る</a><a href="/news/">ニュース一覧 →</a><a href="/lens/">コラム →</a></p></div>']
+    if allarts:
+        nf.append('<section><h2>最新の記事</h2><ul class="list">' + ''.join(item_li(x, flag_of) for x in allarts[:6]) + '</ul></section>')
+    nf_html = page('ページが見つかりません｜F1グリッドウォーク', 'お探しのページは見つかりませんでした。', SITE + '/', '\n'.join(nf),
+                   '<meta name="robots" content="noindex">\n<style>.nf{padding:28px 0 8px}.nf-code{font:600 64px/1 Fraunces,serif;color:var(--clay);margin:0 0 6px}'
+                   '.nf-go{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:18px}.nf-go .cta{margin:0}</style>\n', og_type='website')
+    write('404.html', nf_html.replace(f'<link rel="canonical" href="{SITE}/">\n', ''))
 
     prerender_index(data, flag_of, flag_map)
 
