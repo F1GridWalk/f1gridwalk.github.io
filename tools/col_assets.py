@@ -22,7 +22,8 @@ for x in ((L.get('noteTags') or '') + ' ' + STD_TAGS).split():
 TAGS = ' '.join(_t)
 url = f'https://f1gridwalk.github.io/lens/{slug}/'
 B = [list(b) for b in L['body']]
-B.append(['p', '※ ' + L.get('note', '')])
+if L.get('note') and L.get('type') != 'column':
+    B.append(['p', '※ ' + L['note']])  # columns: no Japanese-check line (owner's decision, 1 Oct 2026)
 for s in L.get('extraSources', []):
     B.append(['p', f'出典：{s["source"]}（{s.get("region","")}）'])
     B.append(['url', s['url']])
