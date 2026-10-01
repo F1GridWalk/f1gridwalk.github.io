@@ -978,27 +978,48 @@ a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-u
 
 RULES_JS = '''<script>
 (function(){
-  function norm(s){ s=(s||'').normalize('NFKC').toLowerCase(); return s.replace(/[\\u30a1-\\u30f6]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0x60);}).replace(/[\\s・\\-ー]/g,''); }
+  function norm(s){
+    s=(s||'').normalize('NFKC').toLowerCase();
+    s=s.replace(/[ァ-ヶ]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0x60);});
+    s=s.replace(/ゔぁ/g,'ば').replace(/ゔぃ/g,'び').replace(/ゔぇ/g,'べ').replace(/ゔぉ/g,'ぼ').replace(/ゔ/g,'ぶ');
+    s=s.replace(/[ぁぃぅぇぉゃゅょゎ]/g,function(c){return String.fromCharCode(c.charCodeAt(0)+1);});
+    return s.replace(/[\\s・\\-ー=＝っ]/g,'');
+  }
+  function toks(raw){ return (raw||'').split(/[\\s　、,]+/).map(norm).filter(Boolean); }
+  function lev(a,b){ var m=a.length,n=b.length,p=[],i,j; for(j=0;j<=n;j++)p[j]=j; for(i=1;i<=m;i++){ var prev=p[0]; p[0]=i; for(j=1;j<=n;j++){ var tmp=p[j]; p[j]=Math.min(p[j]+1,p[j-1]+1,prev+(a[i-1]===b[j-1]?0:1)); prev=tmp; } } return p[n]; }
+  function near(q,name){ var best=lev(q,name),L=q.length,i; if(name.length>L){ for(i=0;i+L<=name.length;i++){ best=Math.min(best,lev(q,name.substr(i,L))); } } return best; }
   var q=document.getElementById('rb-q'); if(!q) return;
   var items=[].slice.call(document.querySelectorAll('details.rb')), cat='all';
-  var cnt=document.getElementById('rb-count'), none=document.getElementById('rb-none');
-  items.forEach(function(d){ d._k=norm(d.getAttribute('data-k')); d._n=norm(d.getAttribute('data-n')); });
+  var cnt=document.getElementById('rb-count'), none=document.getElementById('rb-none'), maybe=document.getElementById('rb-maybe');
+  var parent=items.length?items[0].parentNode:null, endMark=items.length?items[items.length-1].nextSibling:null;
+  items.forEach(function(d,i){ d._i=i; d._k=norm(d.getAttribute('data-k')); d._names=(d.getAttribute('data-names')||'').split('|').map(norm).filter(Boolean); d._n=d._names.join(' '); d._w=(d.getAttribute('data-w')||'').split('|').map(norm).filter(Boolean); });
+  function score(d,j){ var s=0; d._names.forEach(function(nm){ if(nm===j) s=Math.max(s,3); else if(nm.indexOf(j)===0) s=Math.max(s,2); else if(nm.indexOf(j)>=0) s=Math.max(s,1); }); if(!s) d._w.forEach(function(w){ if(w.indexOf(j)>=0||j.indexOf(w)>=0) s=0.5; }); return s; }
   function run(){
-    var v=norm(q.value), n=0;
+    var ts=toks(q.value), j=ts.join(''), n=0;
     items.forEach(function(d){
-      var ok=(cat==='all'||d.getAttribute('data-c')===cat)&&(!v||d._k.indexOf(v)>=0);
-      d.hidden=!ok; if(ok) n++;
+      var ok=(cat==='all'||d.getAttribute('data-c')===cat)&&ts.every(function(t){ return d._k.indexOf(t)>=0; });
+      d.hidden=!ok; if(ok) n++; d._s=ts.length?score(d,j):0;
     });
-    items.forEach(function(d){ if(!d.hidden) d.open = !!v && n<=2; });
-    cnt.textContent=(v||cat!=='all')?n+' / '+items.length+' ENTRIES':items.length+' ENTRIES';
+    var any=false;
+    if(!n&&ts.length>1){ any=true; items.forEach(function(d){ var ok=(cat==='all'||d.getAttribute('data-c')===cat)&&ts.some(function(t){ return d._k.indexOf(t)>=0; }); d.hidden=!ok; if(ok) n++; d._s=0; ts.forEach(function(t){ d._s=Math.max(d._s,score(d,t)); }); }); }
+    if(parent){ items.slice().sort(function(a,b){ return (a.hidden-b.hidden)||(b._s-a._s)||(a._i-b._i); }).forEach(function(d){ parent.insertBefore(d,endMark); }); }
+    items.forEach(function(d){ if(!d.hidden) d.open = ts.length>0 && (n<=2 || d._s===3); });
+    cnt.textContent=(ts.length||cat!=='all')?n+' / '+items.length+' ENTRIES'+(any&&n?' · どれかの言葉を含む':''):items.length+' ENTRIES';
     none.style.display=n?'none':'block';
+    if(!n&&maybe){
+      var thr=Math.max(1,Math.floor(j.length/3)), c=[];
+      items.forEach(function(d){ var b=99; d._names.forEach(function(nm){ b=Math.min(b,near(j,nm)); }); if(j&&b<=thr) c.push([b,d]); });
+      c.sort(function(x,y){ return x[0]-y[0]; });
+      maybe.innerHTML=''; c.slice(0,3).forEach(function(x){ var bt=document.createElement('button'); bt.type='button'; bt.textContent=x[1].getAttribute('data-t'); bt.addEventListener('click',function(){ q.value=bt.textContent; q.dispatchEvent(new Event('input')); go(); }); maybe.appendChild(bt); });
+      maybe.parentNode.style.display=c.length?'block':'none';
+    }
   }
   q.addEventListener('input',run);
   var cbs=[].slice.call(document.querySelectorAll('.rbx-grid button'));
   function setCat(c){ cat=c; cbs.forEach(function(x){ x.setAttribute('aria-pressed',String(x.getAttribute('data-c')===c)); }); run(); }
   cbs.forEach(function(b){ b.addEventListener('click',function(){ setCat(cat===b.getAttribute('data-c')?'all':b.getAttribute('data-c')); }); });
-  /* 検索 button (and Enter): filter, close the keyboard, jump to the first result */
-  function go(){ run(); q.blur(); var vis=items.filter(function(d){ return !d.hidden; }), v=norm(q.value), f=vis.filter(function(d){ return d._n.indexOf(v)===0; })[0]||vis[0]; if(q.value&&f){ f.scrollIntoView({behavior:'smooth',block:'start'}); } }
+  /* 検索 button (and Enter): filter, close the keyboard, jump to the best match */
+  function go(){ run(); q.blur(); var f=document.querySelector('details.rb:not([hidden])'); if(q.value&&f){ f.scrollIntoView({behavior:'smooth',block:'start'}); } }
   var gb=document.getElementById('rb-go'); if(gb) gb.addEventListener('click',go);
   q.addEventListener('keydown',function(ev){ if(ev.key==='Enter'){ ev.preventDefault(); go(); } });
   q.addEventListener('search',run);
@@ -1170,7 +1191,7 @@ def build_rules():
     items = []
     for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
         # search also hits names and words inside the explanation and this season's examples (e.g. a driver's name)
-        keys = ' '.join([t['term']] + t.get('aliases', []) + [t['short']] + t.get('body', []) + [x['t'] for x in t.get('examples', [])])
+        keys = ' '.join([t['term']] + t.get('aliases', []) + t.get('words', []) + [t['short']] + t.get('body', []) + [x['t'] for x in t.get('examples', [])])
         b = ''.join(f'<p>{e(p)}</p>' for p in t['body'])
         if t.get('tool') == 'pu':
             opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
@@ -1183,7 +1204,7 @@ def build_rules():
         if t.get('see'):
             b += '<div class="rb-h">あわせて読む</div><div class="rb-see">' + ''.join(f'<a href="#{e(s)}">{e(name.get(s, s))}</a>' for s in t['see']) + '</div>'
         al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[\u3041-\u309f\u30fc]+', x)][:4])
-        items.append(f'<details class="rb" id="{e(t["id"])}" data-c="{e(t["cat"])}" data-n="{e(t["term"] + " " + " ".join(t.get("aliases", [])))}" data-k="{e(keys)}">'
+        items.append(f'<details class="rb" id="{e(t["id"])}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}" data-k="{e(keys)}">'
                      f'<summary><span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(t["short"])}</span></summary><div class="rb-b">{b}</div></details>')
@@ -1197,7 +1218,7 @@ def build_rules():
             if L and L.get('slug') and not L.get('draft'):
                 titles[f'/lens/{L["slug"]}/'] = f'{L.get("gpLabel", "コラム")}：{L["title"]}'
     for p in PEOPLE:
-        keys = ' '.join([p['name'], p.get('kana', ''), p.get('en', ''), p['role'], p['org'], p['short']] + p.get('aliases', []))
+        keys = ' '.join([p['name'], p.get('kana', ''), p.get('en', ''), p['role'], p['org'], p['short']] + p.get('aliases', []) + p.get('words', []))
         b = f'<div class="rb-h" style="margin-top:0">肩書き</div><span class="rb-rule">{e(p["role"])}（{e(p["org"])}）</span>'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
@@ -1206,7 +1227,7 @@ def build_rules():
             b += '<div class="rb-h">出典（肩書きの確認）</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])}</a></li>' for x in p['sources']) + '</ul>'
         b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
         al = '・'.join([x for x in [p.get('en', '')] + p.get('aliases', []) if x][:3])
-        items.append(f'<details class="rb" id="person-{e(p["id"])}" data-c="人物" data-n="{e(p["name"] + " " + " ".join(p.get("aliases", [])))}" data-k="{e(keys)}">'
+        items.append(f'<details class="rb" id="person-{e(p["id"])}" data-c="人物" data-t="{e(p["name"])}" data-names="{e("|".join([p["name"], p.get("en", ""), p.get("kana", "")] + p.get("aliases", [])))}" data-k="{e(keys)}">'
                      f'<summary><span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(p["short"])}</span></summary><div class="rb-b">{b}</div></details>')
@@ -1215,7 +1236,7 @@ def build_rules():
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'
             f'<h1>{e(R["title"])}</h1><p class="dg-dek">{e(R["dek"])}</p>'
             + rules_entry('rules', on_page=True)
-            + f'<div class="rb-none" id="rb-none">見つかりませんでした。こんな言葉はどうですか：<br>{sugg}</div>'
+            + f'<div class="rb-none" id="rb-none">見つかりませんでした。<span style="display:none"><br>もしかして：<span id="rb-maybe"></span></span><br>こんな言葉はどうですか：<br>{sugg}</div>'
             + ''.join(items) +
             f'<p class="rb-checked" style="margin-top:18px">規則の中身は {e(R["checked"])} 時点で確認しています。FIAが規則を変えたときは、ここを直して日付を更新します。</p>'
             '<div class="dg-end"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src">'
