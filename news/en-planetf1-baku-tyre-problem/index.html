@@ -23,6 +23,46 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<style>
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
 <meta property="article:published_time" content="2026-09-26T18:16:00+01:00">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "ニュース一覧", "item": "https://f1gridwalk.github.io/news/"}, {"@type": "ListItem", "position": 3, "name": "バクーが露呈した戦略の限界。ソフトもミディアムも“持ちすぎる”タイヤが単調なレースを生んだ", "item": "https://f1gridwalk.github.io/news/en-planetf1-baku-tyre-problem/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "バクーが露呈した戦略の限界。ソフトもミディアムも“持ちすぎる”タイヤが単調なレースを生んだ", "description": "PlanetF1のデータ分析記事。乾いた路面でグリップが乏しく、長い直線でタイヤが冷えるバクーでは、ソフトとミディアムの差がほとんどなく戦略の妙味が失われていたと指摘。セーフティカーが出なければ単調なレースになっていたはずだとして、フェ…", "datePublished": "2026-09-26T18:16:00+01:00", "dateModified": "2026-09-26T18:16:00+01:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=1"], "mainEntityOfPage": "https://f1gridwalk.github.io/news/en-planetf1-baku-tyre-problem/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "isBasedOn": {"@type": "NewsArticle", "url": "https://www.planetf1.com/f1-data/f1-2026-azerbaijan-gp-safety-car-data", "headline": "How Azerbaijan GP exposed a problem F1 simply cannot fix", "publisher": {"@type": "Organization", "name": "PlanetF1"}}}</script>
@@ -236,13 +276,35 @@ footer p{margin:6px 0}
 <div class="meta"><span class="kind tech" title="技術の解説・分析記事">技術</span><span class="srcbadge" data-c="gb">PlanetF1</span><span>イギリス · 英語</span><time datetime="2026-09-26T18:16:00+01:00">2026年9月27日(日) 02:16</time></div>
 <h1>バクーが露呈した戦略の限界。ソフトもミディアムも“持ちすぎる”タイヤが単調なレースを生んだ</h1>
 <p class="orig">原題：How Azerbaijan GP exposed a problem F1 simply cannot fix</p>
-<p class="summary">PlanetF1のデータ分析記事。乾いた路面でグリップが乏しく、長い直線でタイヤが冷えるバクーでは、ソフトとミディアムの差がほとんどなく戦略の妙味が失われていたと指摘。セーフティカーが出なければ単調なレースになっていたはずだとして、フェルスタッペンとハジャーのスティントを比較しながら、9戦連続でセーフティカーや赤旗が出ている背景にある構造的な問題を論じている。</p>
+<p class="summary">PlanetF1のデータ分析記事。乾いた路面でグリップが乏しく、長い直線でタイヤが冷えるバクーでは、ソフトとミディアムの差がほとんどなく戦略の妙味が失われていたと指摘。<a class="term" href="/deep/rules/#safety-car" data-term="safety-car">セーフティカー</a>が出なければ単調なレースになっていたはずだとして、フェルスタッペンとハジャーのスティントを比較しながら、9戦連続でセーフティカーや<a class="term" href="/deep/rules/#red-flag" data-term="red-flag">赤旗</a>が出ている背景にある構造的な問題を論じている。</p>
 <a class="cta" href="https://www.planetf1.com/f1-data/f1-2026-azerbaijan-gp-safety-car-data" target="_blank" rel="noopener" data-track="click/en-planetf1-baku-tyre-problem" data-title="PlanetF1 | バクーが露呈した戦略の限界。ソフトもミディアムも“持ちすぎる”タイヤが単調なレースを生んだ">PlanetF1で元の記事を読む ↗ <small>（英語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は PlanetF1 に帰属します。</p>
 <div class="tags"><span>Red Bull</span><span>アゼルバイジャンGP</span><span>テクニカル</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E3%83%90%E3%82%AF%E3%83%BC%E3%81%8C%E9%9C%B2%E5%91%88%E3%81%97%E3%81%9F%E6%88%A6%E7%95%A5%E3%81%AE%E9%99%90%E7%95%8C%E3%80%82%E3%82%BD%E3%83%95%E3%83%88%E3%82%82%E3%83%9F%E3%83%87%E3%82%A3%E3%82%A2%E3%83%A0%E3%82%82%E2%80%9C%E6%8C%81%E3%81%A1%E3%81%99%E3%81%8E%E3%82%8B%E2%80%9D%E3%82%BF%E3%82%A4%E3%83%A4%E3%81%8C%E5%8D%98%E8%AA%BF%E3%81%AA%E3%83%AC%E3%83%BC%E3%82%B9%E3%82%92%E7%94%9F%E3%82%93%E3%81%A0%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/en-planetf1-baku-tyre-problem/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/en-planetf1-baku-tyre-problem/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/en-planetf1-baku-tyre-problem/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>
 </article>
 <section><h2>最新の記事</h2><ul class="list"><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="xx">RacingNews365</span><time datetime="2026-10-01T17:00:00+01:00">2026年10月2日(金) 01:00</time></div><a class="t" href="/news/en-rn365-mercedes-w17-weakness-upgrade/">メルセデス、W17の弱点に対処する異例の大型アップデートをセパンに投入</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T16:15:00+02:00">2026年10月1日(木) 23:15</time></div><a class="t" href="/news/nl-gpblog-bearman-haas-leader-role/">ベアマン、オコン離脱後のハースで「リーダー」の役割に意欲</a></li><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T15:46:00+02:00">2026年10月1日(木) 22:46</time></div><a class="t" href="/news/de-motorsport-total-audi-baku-update-straights/">アウディのバクー向け空力更新、真価はまだ見えず　ストレートの遅さが足かせに</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T15:35:00+02:00">2026年10月1日(木) 22:35</time></div><a class="t" href="/news/nl-gpblog-hadjar-grid-penalty-malaysia/">ハジャー、セパンで5グリッド降格の見通し　それでも「追い上げは可能」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T14:12:00+02:00">2026年10月1日(木) 21:12</time></div><a class="t" href="/news/de-motorsport-total-leclerc-sf26-parts/">ルクレール、フェラーリの新パーツに「大きな変化ではない」と期待を抑える</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-01T13:30:00+02:00">2026年10月1日(木) 20:30</time></div><a class="t" href="/news/it-formula1-norris-apologises-colapinto/">ノリスがコラピントに謝罪、一方のコラピントは「注意すべきだった」と反論</a></li></ul><p><a href="/">トップで全部見る →</a>　<a href="/news/">ニュース一覧 →</a></p></section>
+<script type="application/json" id="term-data">{"red-flag": ["赤旗", "事故や天候で走るのが危険なとき、レースや走行を止める合図。"], "safety-car": ["セーフティカー", "コース上の危険を片付けるあいだ、隊列の先頭を走って全車の速さを抑える車。"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>

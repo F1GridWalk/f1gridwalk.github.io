@@ -1,0 +1,195 @@
+{
+  "title": "DEEP GRID ルールブック",
+  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
+  "checked": "2026-10-02",
+  "cats": ["ペナルティ", "パワーユニット", "ポイント", "レース運営", "マシンと空力", "タイヤと作戦"],
+  "terms": [
+    {
+      "id": "grid-penalty", "term": "グリッド降格", "cat": "ペナルティ",
+      "aliases": ["グリッドペナルティ", "ぐりっどこうかく", "こうかく", "grid penalty", "降格"],
+      "short": "予選で決まったスタート位置から、決められた数だけ後ろに下げる罰。",
+      "body": [
+        "主な理由は2つ。パワーユニットの部品を1シーズンの上限より多く使ったとき（→パワーユニットの使用数）と、レース中の違反に対する罰をそのレースで消化できなかったときだ。",
+        "降格の合計が15を超えると、何グリッド分かに関係なく最後尾からのスタートになる。"
+      ],
+      "examples": [
+        {"t": "ハジャー、セパンで5グリッド降格（ローソンの代役出場分も使用数に算入）", "u": "/news/en-rn365-hadjar-grid-penalty-sepang/"},
+        {"t": "リンドブラッド、新品PU部品を投入してセパンは最後尾スタート", "u": "/news/en-therace-lindblad-back-of-grid-sepang/"},
+        {"t": "コラピント、リタイアで10秒加算を消化できず、次戦で5グリッド降格", "u": "/news/es-infobae-colapinto-penalty/"}
+      ],
+      "see": ["pu-allocation", "time-penalty"]
+    },
+    {
+      "id": "pu-allocation", "term": "パワーユニットの使用数", "cat": "パワーユニット",
+      "aliases": ["PU", "ピーユー", "エンジン交換", "使用基数", "power unit", "パワーユニット", "ICE", "MGU-K", "バッテリー"],
+      "short": "1人のドライバーが1シーズンに使えるパワーユニット部品の数の上限。超えるとグリッド降格。",
+      "body": [
+        "2026年の上限は、エンジン（ICE）4、ターボ4、電気モーター（MGU-K）3、バッテリー（ES）3、制御電子機器（CE）3。新しい規則への移行に合わせて、どの部品も1つずつ多く認められた（スポーティングレギュレーションB8.2.3。2028年まで据え置き）。",
+        "上限を超えると、その部品で初めて超えたときは10グリッド、同じ部品で2回目以降は1回ごとに5グリッドの降格。合計が15を超えると最後尾から。",
+        "ドライバーが交代した場合、代役が使った部品も、元のドライバーの数に含まれる（今季のハジャーの例）。"
+      ],
+      "tool": "pu",
+      "rule": "スポーティングレギュレーション B8.2.3",
+      "examples": [
+        {"t": "ハジャー、セパンで5グリッド降格（ローソンの代役出場分も算入）", "u": "/news/en-rn365-hadjar-grid-penalty-sepang/"}
+      ],
+      "see": ["grid-penalty", "aduo"]
+    },
+    {
+      "id": "time-penalty", "term": "タイム加算ペナルティ", "cat": "ペナルティ",
+      "aliases": ["5秒ペナルティ", "10秒ペナルティ", "タイムペナルティ", "time penalty", "5秒加算", "10秒加算"],
+      "short": "違反をした車のレースタイムに、5秒や10秒を足す罰。",
+      "body": [
+        "ピットストップのときに、その秒数だけ作業をせずに止まって消化する。消化しないままレースが終われば、レース後のタイムに加算される。",
+        "罰を受けた車がリタイアして消化できなかったときは、次のレースのグリッド降格に切り替えられることがある。"
+      ],
+      "examples": [
+        {"t": "コラピント、10秒加算をリタイアで消化できず、セパンで5グリッド降格", "u": "/news/es-infobae-colapinto-penalty/"}
+      ],
+      "see": ["grid-penalty"]
+    },
+    {
+      "id": "short-race-points", "term": "短縮レースのポイント", "cat": "ポイント",
+      "aliases": ["ハーフポイント", "はーふぽいんと", "赤旗終了", "ポイント", "half points"],
+      "short": "レースが最後まで行われずに終わったとき、先頭が走った距離に応じてポイントを減らす決まり。",
+      "body": [
+        "今の決まりでは、先頭が2周未満ならポイントなし。2周以上25%未満なら上位5人に6-4-3-2-1点、25〜50%なら上位9人に13-10-8-6-5-4-3-2-1点、50〜75%なら上位10人に19-14-12-9-8-6-5-3-2-1点。75%以上走れば通常どおり（優勝25点）。",
+        "昔は「75%に届かなければ半分」という決まりで、2009年のマレーシアGPは豪雨で31周で終わり、ポイントが半分になった。"
+      ],
+      "examples": [
+        {"t": "DEEP GRID #01 なぜセパンは現代F1にとって「未知」なのか（2009年の雨）", "u": "/deep/sepang-unknown/"}
+      ],
+      "see": ["red-flag"]
+    },
+    {
+      "id": "heat-hazard", "term": "ヒートハザード", "cat": "レース運営",
+      "aliases": ["高温警告", "熱中症", "冷却ベスト", "heat hazard", "ひーとはざーど"],
+      "short": "とても暑くなると予想されるレースで、FIAが出す高温警告。ドライバーを冷やす装置が義務になる。",
+      "body": [
+        "決勝中の「ヒートインデックス」（気温と湿度を合わせた体感の暑さ）が31.0℃を超えると予想されると宣言される。",
+        "各車は、冷たい液体をドライバーの服に流す冷却装置を、使える状態で積まなければならない。ドライバーがベストを着ない場合は、5kgの重りを足す。2023年のカタールGPで体調を崩すドライバーが相次いだことがきっかけ。"
+      ],
+      "rule": "スポーティングレギュレーション B1.5.10",
+      "examples": [
+        {"t": "マレーシア復帰のF1、FIAが熱中症への警告を発令", "u": "/news/de-formel1-sepang-heat-warning/"}
+      ],
+      "see": []
+    },
+    {
+      "id": "aduo", "term": "ADUO", "cat": "パワーユニット",
+      "aliases": ["エーディーユーオー", "救済制度", "救済", "ADUO2", "追加開発", "Additional Development and Upgrade Opportunities"],
+      "short": "2026年の新しいパワーユニットで出遅れたメーカーに、追加の開発とアップグレードの機会を与える仕組み。",
+      "body": [
+        "FIAが各メーカーのパワーユニットの性能差を測り、差が大きいメーカーほど多くの追加の機会が認められる。",
+        "使った回数や中身はチームから細かく公表されないことが多く、ニュースで後から分かることもある。"
+      ],
+      "examples": [
+        {"t": "ホンダ、第2のADUOをひそかに投入していた", "u": "/news/en-therace-honda-aduo2-secret/"},
+        {"t": "ルクレール、フェラーリ最新PU「ADUO2」使用をうっかり暴露", "u": "/news/en-rn365-leclerc-aduo2-secret/"},
+        {"t": "コラム：ホンダ、救済をひそかに2回使用", "u": "/lens/honda-aduo2-20261001/"}
+      ],
+      "see": ["pu-allocation"]
+    },
+    {
+      "id": "super-clipping", "term": "スーパークリッピング", "cat": "パワーユニット",
+      "aliases": ["クリッピング", "super clipping", "すーぱーくりっぴんぐ"],
+      "short": "アクセル全開のまま、電気モーターが発電に回ること。電気はたまるが、そのぶん最高速が落ちる。",
+      "body": [
+        "2026年のパワーユニットは電気の比重が大きく、長い直線では電気が足りなくなりやすい。そこで直線の終わりや速いコーナーで、後輪に行くはずの力の一部をMGU-Kで電気に変える。",
+        "全開のままなので翼は空気抵抗の少ない状態を保てるが、最高速は落ちる。どこで、どれだけクリッピングするかが、2026年の速さを分けるポイントの一つ。"
+      ],
+      "examples": [
+        {"t": "DEEP GRID #01 なぜセパンは現代F1にとって「未知」なのか", "u": "/deep/sepang-unknown/"}
+      ],
+      "see": ["active-aero", "overtake-mode"]
+    },
+    {
+      "id": "active-aero", "term": "アクティブエアロ", "cat": "マシンと空力",
+      "aliases": ["ストレートモード", "コーナーモード", "可動翼", "active aero", "あくてぃぶえあろ"],
+      "short": "走りながら翼の角度を変える仕組み。2026年から。",
+      "body": [
+        "直線では前後の翼を寝かせて空気抵抗を減らし（ストレートモード）、コーナーでは立てて車を路面に押さえつける力を得る（コーナーモード）。",
+        "2025年までは翼の角度は基本的に固定で、追い抜きのときだけ後ろの翼を開くDRSがあった。"
+      ],
+      "examples": [],
+      "see": ["overtake-mode", "super-clipping"]
+    },
+    {
+      "id": "overtake-mode", "term": "オーバーテイクモード", "cat": "マシンと空力",
+      "aliases": ["DRS", "ディーアールエス", "マニュアルオーバーライド", "manual override", "overtake mode", "追い抜き"],
+      "short": "2025年までのDRSに代わる、2026年の追い抜きの助け。前の車に近づいた車が、電気の力を多く使える。",
+      "body": [
+        "DRSは後ろの翼を開いて空気抵抗を減らす仕組みだった。2026年は空力ではなくパワーユニットを使い、決められた差まで前の車に近づいた車が、通常より多くの電気の力を使える。",
+        "どこで差を測り、どこから使えるかは、レースごとにFIAがチームに知らせる。"
+      ],
+      "examples": [],
+      "see": ["active-aero", "super-clipping"]
+    },
+    {
+      "id": "degradation", "term": "デグラデーション", "cat": "タイヤと作戦",
+      "aliases": ["デグ", "でぐ", "タイヤの劣化", "deg", "degradation", "摩耗"],
+      "short": "タイヤが走るうちに性能を落としていくこと。",
+      "body": [
+        "熱でゴムの表面が傷む「熱のデグ」と、路面にこすられて減る「摩耗」がある。デグが大きいとピットストップの回数が増え、作戦の幅が広がる。",
+        "粗い路面や高い気温はデグを大きくする。"
+      ],
+      "examples": [
+        {"t": "DEEP GRID #01 なぜセパンは現代F1にとって「未知」なのか（「紙やすり」の路面）", "u": "/deep/sepang-unknown/"}
+      ],
+      "see": ["undercut"]
+    },
+    {
+      "id": "undercut", "term": "アンダーカット", "cat": "タイヤと作戦",
+      "aliases": ["オーバーカット", "undercut", "overcut", "あんだーかっと"],
+      "short": "前の車より先にピットに入り、新しいタイヤの速さで前に出る作戦。",
+      "body": [
+        "新しいタイヤは古いタイヤより速いので、前の車がピットに入るまでの数周で差を縮め、相手のピットのあいだに前に出る。",
+        "反対に、あえて長く走り続けて前に出るのが「オーバーカット」。タイヤが温まりにくいコースや、古いタイヤでもペースが落ちにくいときに効く。"
+      ],
+      "examples": [],
+      "see": ["degradation"]
+    },
+    {
+      "id": "red-flag", "term": "赤旗", "cat": "レース運営",
+      "aliases": ["レッドフラッグ", "red flag", "中断", "あかはた"],
+      "short": "事故や天候で走るのが危険なとき、レースや走行を止める合図。",
+      "body": [
+        "赤旗が出ると、各車は速度を落としてピットレーンに戻る。中断中はタイヤの交換などが認められる。",
+        "再開できないまま終われば、走った距離に応じてポイントが決まる（→短縮レースのポイント）。"
+      ],
+      "examples": [],
+      "see": ["short-race-points", "safety-car"]
+    },
+    {
+      "id": "safety-car", "term": "セーフティカー", "cat": "レース運営",
+      "aliases": ["SC", "VSC", "バーチャルセーフティカー", "safety car", "せーふてぃかー"],
+      "short": "コース上の危険を片付けるあいだ、隊列の先頭を走って全車の速さを抑える車。",
+      "body": [
+        "セーフティカー（SC）が出ると、全車はその後ろに一列に並び、追い抜きはできない。差が詰まるので、レースの流れが大きく変わる。",
+        "実際の車を出さずに、全車に決められたペースまで落とさせるのが「バーチャルセーフティカー（VSC）」。"
+      ],
+      "examples": [],
+      "see": ["red-flag"]
+    },
+    {
+      "id": "parc-ferme", "term": "パルクフェルメ", "cat": "マシンと空力",
+      "aliases": ["parc ferme", "ぱるくふぇるめ", "車両保管"],
+      "short": "予選が始まってから決勝まで、マシンの設定を基本的に変えられない決まり。",
+      "body": [
+        "予選の時点で決勝の設定も決めなければならないので、雨の予報などが外れると、合わない設定のまま決勝を走ることになる。",
+        "部品の交換などで決まりを破ると、ピットレーンからのスタートになる。"
+      ],
+      "examples": [],
+      "see": []
+    }
+  ],
+  "sources": [
+    {"name": "RacingNews365", "title": "FIA confirm future F1 engine penalty rules after 2026 change", "url": "https://racingnews365.com/fia-confirm-future-f1-engine-penalty-rules-after-2026-change"},
+    {"name": "F1 Chronicle", "title": "F1 Power Units Explained: The Five Elements, Allocations And Grid Penalties", "url": "https://f1chronicle.substack.com/p/f1-power-units-explained-the-five"},
+    {"name": "The Race", "title": "How does F1's points system work?", "url": "https://www.the-race.com/formula-1/f1-points-system-explained-how-it-works/"},
+    {"name": "RacingNews365", "title": "FIA declares heat hazard as F1 prepares for gruelling physical test", "url": "https://racingnews365.com/fia-declares-heat-hazard-as-f1-prepares-for-gruelling-physical-test"},
+    {"name": "The Race", "title": "Super clipping: how it works and why it's controversial", "url": "https://www.the-race.com/formula-1/super-clipping-how-it-works-why-controversial-key-f1-2026/"},
+    {"name": "PlanetF1", "title": "Explained: How F1's new overtaking mode will work", "url": "https://www.planetf1.com/news/explained-how-f1-new-overtaking-mode-will-work"},
+    {"name": "Wikipedia", "title": "2009 Malaysian Grand Prix", "url": "https://en.wikipedia.org/wiki/2009_Malaysian_Grand_Prix"}
+  ]
+}

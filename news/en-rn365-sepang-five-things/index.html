@@ -23,6 +23,128 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<style>
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+</style>
+<style>
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
 <meta property="article:published_time" content="2026-09-30T19:10:00+01:00">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "ニュース一覧", "item": "https://f1gridwalk.github.io/news/"}, {"@type": "ListItem", "position": 3, "name": "マレーシアで行うバーレーンGP、セパンについて知っておきたい5つのこと", "item": "https://f1gridwalk.github.io/news/en-rn365-sepang-five-things/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "マレーシアで行うバーレーンGP、セパンについて知っておきたい5つのこと", "description": "セパンはティルケが一から設計した最初のF1サーキットで、現グリッドのうち10人が走行経験を持つ。モンスーン期の高温多湿とスコールが波乱を呼ぶ可能性があり、過去には赤旗中断のレースもあった。", "datePublished": "2026-09-30T19:10:00+01:00", "dateModified": "2026-09-30T19:10:00+01:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=1"], "mainEntityOfPage": "https://f1gridwalk.github.io/news/en-rn365-sepang-five-things/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "isBasedOn": {"@type": "NewsArticle", "url": "https://racingnews365.com/five-things-you-need-to-know-about-the-bahrain-grand-prix-in-malaysia", "headline": "Five things you need to know about the Bahrain Grand Prix in Malaysia", "publisher": {"@type": "Organization", "name": "RacingNews365"}}}</script>
@@ -236,14 +358,37 @@ footer p{margin:6px 0}
 <div class="meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="xx">RacingNews365</span><span>オランダ · 英語</span><time datetime="2026-09-30T19:10:00+01:00">2026年10月1日(木) 03:10</time></div>
 <h1>マレーシアで行うバーレーンGP、セパンについて知っておきたい5つのこと</h1>
 <p class="orig">原題：Five things you need to know about the Bahrain Grand Prix in Malaysia</p>
-<p class="summary">セパンはティルケが一から設計した最初のF1サーキットで、現グリッドのうち10人が走行経験を持つ。モンスーン期の高温多湿とスコールが波乱を呼ぶ可能性があり、過去には赤旗中断のレースもあった。</p>
+<p class="summary">セパンはティルケが一から設計した最初のF1サーキットで、現グリッドのうち10人が走行経験を持つ。モンスーン期の高温多湿とスコールが波乱を呼ぶ可能性があり、過去には<a class="term" href="/deep/rules/#red-flag" data-term="red-flag">赤旗</a>中断のレースもあった。</p>
 <a class="cta" href="https://racingnews365.com/five-things-you-need-to-know-about-the-bahrain-grand-prix-in-malaysia" target="_blank" rel="noopener" data-track="click/en-rn365-sepang-five-things" data-title="RacingNews365 | マレーシアで行うバーレーンGP、セパンについて知っておきたい5つのこと">RacingNews365で元の記事を読む ↗ <small>（英語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は RacingNews365 に帰属します。</p>
+<a class="dg-from" href="/deep/sepang-unknown/" data-track="click/deep/sepang-unknown/from"><small>DEEP GRID #01</small><b>なぜセパンは現代F1にとって「未知」なのか</b><span>この話を、もっと深く →</span></a>
 <div class="tags"><span>セパン</span><span>サーキット</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%E3%81%A7%E8%A1%8C%E3%81%86%E3%83%90%E3%83%BC%E3%83%AC%E3%83%BC%E3%83%B3GP%E3%80%81%E3%82%BB%E3%83%91%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%845%E3%81%A4%E3%81%AE%E3%81%93%E3%81%A8%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/en-rn365-sepang-five-things/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/en-rn365-sepang-five-things/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/en-rn365-sepang-five-things/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>
 </article>
 <section><h2>マレーシア開催のバーレーンGP、セパンとバーレーン色の両立</h2><p class="lead">今季のバーレーンGPは9年ぶりにセパンで行われ、現グリッドの約半数が走行経験を持つ。高温多湿とスコールが課題とされる一方、運営にはバーレーンから561人のスタッフが参加し、表彰台でのローズウォーターなど同国らしい演出も用意される。</p><p class="lead">ほかに 1 本の記事があります。</p><ul class="list"><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-09-30T15:36:00+02:00">2026年9月30日(水) 22:36</time></div><a class="t" href="/news/de-motorsport-total-sepang-bahrain-flavour/">ローズウォーターなど、マレーシア開催のF1にバーレーンらしさをどれだけ持ち込むか</a></li></ul></section>
 <section><h2>最新の記事</h2><ul class="list"><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="xx">RacingNews365</span><time datetime="2026-10-01T17:00:00+01:00">2026年10月2日(金) 01:00</time></div><a class="t" href="/news/en-rn365-mercedes-w17-weakness-upgrade/">メルセデス、W17の弱点に対処する異例の大型アップデートをセパンに投入</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T16:15:00+02:00">2026年10月1日(木) 23:15</time></div><a class="t" href="/news/nl-gpblog-bearman-haas-leader-role/">ベアマン、オコン離脱後のハースで「リーダー」の役割に意欲</a></li><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T15:46:00+02:00">2026年10月1日(木) 22:46</time></div><a class="t" href="/news/de-motorsport-total-audi-baku-update-straights/">アウディのバクー向け空力更新、真価はまだ見えず　ストレートの遅さが足かせに</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-01T15:35:00+02:00">2026年10月1日(木) 22:35</time></div><a class="t" href="/news/nl-gpblog-hadjar-grid-penalty-malaysia/">ハジャー、セパンで5グリッド降格の見通し　それでも「追い上げは可能」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="de">Motorsport-Total.com</span><time datetime="2026-10-01T14:12:00+02:00">2026年10月1日(木) 21:12</time></div><a class="t" href="/news/de-motorsport-total-leclerc-sf26-parts/">ルクレール、フェラーリの新パーツに「大きな変化ではない」と期待を抑える</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-01T13:30:00+02:00">2026年10月1日(木) 20:30</time></div><a class="t" href="/news/it-formula1-norris-apologises-colapinto/">ノリスがコラピントに謝罪、一方のコラピントは「注意すべきだった」と反論</a></li></ul><p><a href="/">トップで全部見る →</a>　<a href="/news/">ニュース一覧 →</a></p></section>
+<script type="application/json" id="term-data">{"red-flag": ["赤旗", "事故や天候で走るのが危険なとき、レースや走行を止める合図。"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>
