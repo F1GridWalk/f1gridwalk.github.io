@@ -3,9 +3,10 @@
 
 usage: python3 tools/post_kit.py daily/<date>
 Reads daily/<date>/X投稿.md and note_<slug>_コピー用.html (made by col_assets.py),
-writes daily/<date>/投稿セット_<slug>.html (images embedded, works as a single file).
+writes daily/<date>/投稿セット_<slug>.html (images shown as preview only) plus note用画像_<slug>.png and X用画像_<slug>.png;
+send all three to the owner (images inside an HTML file cannot be saved in the app).
 """
-import base64, glob, html, os, re, sys
+import base64, glob, html, os, re, shutil, sys
 
 d = sys.argv[1]
 e = html.escape
@@ -78,7 +79,7 @@ def step(label, inner, sub='', copy=True, cls='c'):
 
 def img_step(label, src, name):
     return (f'<div class="step"><div class="lbl">{label}</div><img src="{src}" alt="{e(name)}">'
-            f'<div class="tip">画像を長押し →「保存」</div></div>')
+            f'<div class="tip">保存は、一緒に届いた画像ファイル「{e(name)}」を開いて行ってください</div></div>')
 
 
 written = []
@@ -89,14 +90,17 @@ for notef in sorted(glob.glob(os.path.join(d, 'note_*_コピー用.html'))):
     tags = re.search(r'<div id="tags">(.*?)</div>', src, re.S).group(1)
     body = re.search(r'<div id="body">(.*)</div>\s*</div>\s*</div>\s*<script>', src, re.S).group(1)
     n[0] = 0
+    for a, b in ((f'note_{slug}_見出し画像.png', f'note用画像_{slug}.png'), (f'x_{slug}.png', f'X用画像_{slug}.png')):
+        if os.path.exists(os.path.join(d, a)):
+            shutil.copyfile(os.path.join(d, a), os.path.join(d, b))
     parts = [f'<h1>{e(slug)}</h1>', '<h2 class="note">note</h2>',
-             img_step('① 見出し画像', b64(os.path.join(d, f'note_{slug}_見出し画像.png')), 'note'),
+             img_step('① 見出し画像', b64(os.path.join(d, f'note_{slug}_見出し画像.png')), f'note用画像_{slug}.png'),
              step('② タイトル', title),
              step('③ 本文', body, '見出し付き', cls='c html'),
              step('④ ハッシュタグ', tags, '公開時に')]
     posts = x_posts(os.path.join(d, 'X投稿.md'), slug)
     if posts:
-        parts += ['<h2 class="x">X</h2>', img_step('① 画像', b64(os.path.join(d, f'x_{slug}.png')), 'x')]
+        parts += ['<h2 class="x">X</h2>', img_step('① 画像', b64(os.path.join(d, f'x_{slug}.png')), f'X用画像_{slug}.png')]
         names = ['② 投稿', '③ ②への返信', '④ 追い投稿', '⑤']
         for k, (label, text) in enumerate(posts):
             sub = '画像を付けて投稿' if k == 0 else ('自分の投稿に返信' if '返信' in label else label)
