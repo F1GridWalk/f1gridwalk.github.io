@@ -848,7 +848,7 @@ def build_deeps(arch, flag_map):
             B.append('<div class="dg-themes">' + ''.join(f'<span>{e(t)}</span>' for t in D['themes']) + '</div>')
         B.append('<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a>'
                  + ''.join(f'<a href="#s{i + 1}">{e(s["h"])}</a>' for i, s in enumerate(D.get('sections', [])))
-                 + ('<a href="#deep">データと背景</a>' if D.get('deep') else '') + '<a href="#sources">出典</a></nav>')
+                 + ('<a href="#deep">データと記録</a>' if D.get('deep') else '') + '<a href="#sources">出典</a></nav>')
         used = set()
         B.append(f'<div id="quick">{deep_layer(1, "", "先に結論")}</div>')
         B.append('<div class="dg-quick"><ol>' + ''.join(f'<li>{e(q)}</li>' for q in D.get('quick', [])) + '</ol></div>')
@@ -857,7 +857,7 @@ def build_deeps(arch, flag_map):
             B.append(f'<div class="dg-sec" id="s{i + 1}"><h2><span class="n">{i + 1:02d}</span>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
         if D.get('deep'):
             heads = '・'.join(s['h'].split('：')[0] for s in D['deep'][:3])
-            B.append(f'<details class="dg-deep" id="deep"><summary>{deep_layer(3, "", "データと背景")}'
+            B.append(f'<details class="dg-deep" id="deep"><summary>{deep_layer(3, "", "データと記録")}'
                      f'<span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">{e(heads)} ほか</span></span></span></summary>')
             for s in D['deep']:
                 B.append(f'<div class="dg-sec"><h2>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
