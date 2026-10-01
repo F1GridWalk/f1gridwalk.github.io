@@ -884,7 +884,7 @@ def build_deeps(arch, flag_map):
         B.append('</article>')
         B.append(term_assets(used))
 
-        head = f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}{RULES_ENTRY_CSS}{RULES_CSS if used else ""}</style>\n'
+        head = MONO_FONT + f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}{RULES_ENTRY_CSS}{RULES_CSS if used else ""}</style>\n'
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': D['title'], 'description': D['dek'],
                     'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [OG_IMAGE],
                     'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER, 'articleSection': 'DEEP GRID',
@@ -922,7 +922,7 @@ def build_deeps(arch, flag_map):
             + f'<ul class="dg-list">{items}</ul></div>')
     write('deep/index.html', page('DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク',
                                   'F1のニュースの「なぜ」を深く読む、F1 Grid Walkの深掘り記事。パワーユニット、空力、タイヤ、規則、データ、歴史まで。',
-                                  SITE + '/deep/', body, f'<style>{DEEP_CSS}{RULES_ENTRY_CSS}</style>\n', og_type='website'))
+                                  SITE + '/deep/', body, MONO_FONT + f'<style>{DEEP_CSS}{RULES_ENTRY_CSS}</style>\n', og_type='website'))
     return [(SITE + '/deep/', DEEPS[0].get('updated') or DEEPS[0]['published'], 'weekly', '0.8')] + rows
 
 
@@ -985,16 +985,18 @@ RULES_JS = '''<script>
       d.hidden=!ok; if(ok) n++;
     });
     items.forEach(function(d){ if(!d.hidden) d.open = !!v && n<=2; });
-    cnt.textContent=v||cat!=='all'?n+'件':'全'+items.length+'語';
+    cnt.textContent=(v||cat!=='all')?n+' / '+items.length+' ENTRIES':items.length+' ENTRIES';
     none.style.display=n?'none':'block';
   }
   q.addEventListener('input',run);
-  [].forEach.call(document.querySelectorAll('.rb-cats button'),function(b){ b.addEventListener('click',function(){
-    cat=b.getAttribute('data-c'); [].forEach.call(document.querySelectorAll('.rb-cats button'),function(x){x.setAttribute('aria-pressed',String(x===b));}); run(); }); });
+  var cbs=[].slice.call(document.querySelectorAll('.rbx-grid button'));
+  function setCat(c){ cat=c; cbs.forEach(function(x){ x.setAttribute('aria-pressed',String(x.getAttribute('data-c')===c)); }); run(); }
+  cbs.forEach(function(b){ b.addEventListener('click',function(){ setCat(cat===b.getAttribute('data-c')?'all':b.getAttribute('data-c')); }); });
+  var clr=document.getElementById('rb-clear'); if(clr) clr.addEventListener('click',function(){ q.value=''; setCat('all'); q.focus(); });
   [].forEach.call(document.querySelectorAll('.rb-none button'),function(b){ b.addEventListener('click',function(){ q.value=b.textContent; run(); }); });
   function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.tagName==='DETAILS'){ d.hidden=false; d.open=true; setTimeout(function(){d.scrollIntoView({block:'start'});},50);} }
   window.addEventListener('hashchange',openHash); openHash();
-  try{ var p=new URLSearchParams(location.search).get('q'); if(p){ q.value=p; run(); } }catch(e){}
+  try{ var sp=new URLSearchParams(location.search), p=sp.get('q'), c=sp.get('c'); if(p){ q.value=p; } if(c){ setCat(c); } else if(p){ run(); } }catch(e){}
   /* grid penalty calculator */
   var t=document.getElementById('pu-tool');
   if(t){ var sels=[].slice.call(t.querySelectorAll('select')), out=document.getElementById('pu-out');
@@ -1070,30 +1072,49 @@ PU_TOOL = '''<div class="rb-tool" id="pu-tool"><div class="rb-h" style="margin-t
 
 
 RULES_ENTRY_CSS = '''
-.rbx{display:block;margin:18px 0 8px;padding:16px 16px 14px;border:1.5px solid var(--ink);border-radius:16px;background:var(--surface)}
-.rbx-k{display:flex;justify-content:space-between;gap:8px;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.26em;color:var(--clay)}
-.rbx-k span{font-family:var(--sans);letter-spacing:.06em;color:var(--muted);font-weight:500}
-.rbx h3{font-size:18px;line-height:1.5;margin:6px 0 2px}
-.rbx p{font-size:13.5px;line-height:1.7;color:var(--ink-2);margin:0 0 10px}
-.rbx form{display:flex;gap:8px}
-.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 14px 11px 40px;border:1px solid var(--line);border-radius:999px;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 13px center no-repeat;color:var(--ink)}
-.rbx button{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--ink);color:var(--on-ink);cursor:pointer}
-.rbx-w{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;font-size:12.5px;color:var(--muted);align-items:center}
-.rbx-w a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:2px 11px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--num:#9A7206;--hov:#F2C230;--hovt:#111311;border:3px solid var(--bd);background:var(--bg);color:var(--tx);margin:20px 0 10px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--num:#F2C230}}
+:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--num:#F2C230}
+.rbx .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em}
+.rbx-big{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:10px 12px 8px;border-bottom:3px solid var(--bd);background:var(--hd);color:var(--hdt)}
+.rbx-big b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:40px;font-weight:700;line-height:.9;color:var(--hdt);letter-spacing:.02em}
+.rbx-big span{font-size:12.5px;font-weight:700;color:var(--hdt);text-align:right;line-height:1.4}
+.rbx form,.rbx .rbx-f{display:flex;margin:0;border-bottom:3px solid var(--bd)}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 40px;border:0;border-radius:0;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 12px center no-repeat;color:var(--tx);outline:none}
+.rbx input::placeholder{color:var(--sub)}
+.rbx input:focus{box-shadow:inset 0 -3px 0 #F2C230}
+.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:0;padding:0 18px;background:var(--btn);color:var(--btnt);border-left:3px solid var(--bd);cursor:pointer}
+.rbx-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.rbx-grid a,.rbx-grid button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 10px 12px;font:inherit;font-weight:700;font-size:14.5px;color:var(--tx);background:transparent;border:0;border-right:3px solid var(--bd);border-bottom:3px solid var(--bd);border-radius:0;text-decoration:none;cursor:pointer;text-align:left}
+.rbx-grid>*:nth-child(3n){border-right:0}
+.rbx-grid span{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:11px;color:var(--num);letter-spacing:.06em}
+.rbx-grid a:hover,.rbx-grid button:hover,.rbx-grid button[aria-pressed="true"]{background:var(--hov);color:var(--hovt)}
+.rbx-grid a:hover span,.rbx-grid button:hover span,.rbx-grid button[aria-pressed="true"] span{color:var(--hovt)}
+.rbx-ft{display:flex;justify-content:space-between;gap:8px;font-size:10.5px;padding:6px 12px;color:var(--sub)}
+.rbx-ft a{color:var(--tx);font-weight:700}
 '''
 
+RULE_CATS = [('罰則', 'ペナルティ'), ('PU', 'パワーユニット'), ('ポイント', 'ポイント'), ('運営', 'レース運営'), ('空力', 'マシンと空力'), ('作戦', 'タイヤと作戦')]
+MONO_FONT = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">\n'
 
-def rules_entry(where):
-    """A search box that leads into the rulebook: obvious that you can look words up there."""
+
+def rules_entry(where, on_page=False):
+    """The rulebook box (black with yellow rules): search + six categories. On the rulebook itself it filters in place."""
     if not RULES:
         return ''
-    words = ''.join(f'<a href="/deep/rules/?q={quote(w)}" data-track="click/rules-entry/{where}">{e(w)}</a>' for w in ['グリッド降格', 'DRS', 'デグ', '赤旗', 'ADUO'])
-    return ('<div class="rbx"><div class="rbx-k">DEEP GRID RULES<span>' + str(len(RULES['terms'])) + '語を収録</span></div>'
-            '<h3>F1の用語・ルールを調べる</h3>'
-            '<p>分からない言葉を入れると、意味とルールの中身、今季の実例がすぐ出ます。</p>'
-            f'<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、DRS" aria-label="F1の用語・ルールを調べる">'
-            f'<button type="submit" data-track="click/rules-entry/{where}">調べる</button></form>'
-            f'<div class="rbx-w">たとえば：{words}</div></div>')
+    n = len(RULES['terms'])
+    big = '<div class="rbx-big"><b>RULES</b><span>F1の用語・ルール<br>言葉か分類で引く</span></div>'
+    if on_page:
+        f = ('<div class="rbx-f" role="search"><input id="rb-q" type="search" placeholder="言葉を入れる（例：降格）" aria-label="用語とルールを検索" autocomplete="off">'
+             '<button type="button" class="go" id="rb-clear">消す</button></div>')
+        cells = ''.join(f'<button type="button" data-c="{e(full)}" aria-pressed="false"><span>{i + 1:02d}</span>{e(lab)}</button>' for i, (lab, full) in enumerate(RULE_CATS))
+        ft = f'<div class="rbx-ft mono"><span id="rb-count">{n} ENTRIES</span><span>REV. {e(RULES["checked"])}</span></div>'
+    else:
+        f = (f'<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="言葉を入れる（例：降格）" aria-label="F1の用語・ルールを調べる">'
+             f'<button type="submit" class="go" data-track="click/rules-entry/{where}">検索</button></form>')
+        cells = ''.join(f'<a href="/deep/rules/?c={quote(full)}" data-track="click/rules-entry/{where}"><span>{i + 1:02d}</span>{e(lab)}</a>' for i, (lab, full) in enumerate(RULE_CATS))
+        ft = f'<div class="rbx-ft mono"><span>{n} ENTRIES · REV. {e(RULES["checked"])}</span><a href="/deep/rules/">ALL →</a></div>'
+    return f'<div class="rbx">{big}{f}<div class="rbx-grid">{cells}</div>{ft}</div>'
 
 
 def build_rules():
@@ -1126,16 +1147,14 @@ def build_rules():
     body = ('<nav class="crumbs"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › ルールブック</nav><div class="dg">'
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'
             f'<h1>{e(R["title"])}</h1><p class="dg-dek">{e(R["dek"])}</p>'
-            '<div class="rb-search"><input id="rb-q" type="search" placeholder="言葉を入れる（例：降格、DRS、デグ）" aria-label="用語とルールを検索" autocomplete="off">'
-            f'<div class="rb-cats"><button type="button" data-c="all" aria-pressed="true">すべて</button>{cats}</div>'
-            f'<p class="rb-count" id="rb-count">全{len(R["terms"])}語</p></div>'
-            f'<div class="rb-none" id="rb-none">見つかりませんでした。こんな言葉はどうですか：<br>{sugg}</div>'
+            + rules_entry('rules', on_page=True)
+            + f'<div class="rb-none" id="rb-none">見つかりませんでした。こんな言葉はどうですか：<br>{sugg}</div>'
             + ''.join(items) +
             f'<p class="rb-checked" style="margin-top:18px">規則の中身は {e(R["checked"])} 時点で確認しています。FIAが規則を変えたときは、ここを直して日付を更新します。</p>'
             '<div class="dg-end"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src">'
             + ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["name"])}</a> <small>{e(s["title"])}</small></li>' for s in R.get('sources', []))
             + '</ol></div></div>' + RULES_JS)
-    head = f'<style>{DEEP_CSS}{RULES_CSS}</style>\n' + ld({
+    head = MONO_FONT + f'<style>{DEEP_CSS}{RULES_CSS}{RULES_ENTRY_CSS}</style>\n' + ld({
         '@context': 'https://schema.org', '@type': 'DefinedTermSet', 'name': R['title'], 'description': R['dek'], 'url': url, 'inLanguage': 'ja',
         'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': t['term'], 'alternateName': t.get('aliases', [])[:4], 'description': t['short'],
                             'url': f'{url}#{t["id"]}'} for t in R['terms']]})
