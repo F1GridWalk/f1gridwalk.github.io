@@ -810,7 +810,8 @@ def deep_blocks(blocks, used=None):
 
 def deep_layer(n, name, title):
     g = ''.join(f'<i class="{"on" if i < n else ""}"></i>' for i in range(3))
-    return f'<div class="dg-layer"><span class="g" aria-hidden="true">{g}</span>{e(name)} · <em>{e(title)}</em></div>'
+    lead = f'{e(name)} · ' if name else ''
+    return f'<div class="dg-layer"><span class="g" aria-hidden="true">{g}</span>{lead}<em>{e(title)}</em></div>'
 
 
 def build_deeps(arch, flag_map):
@@ -845,11 +846,11 @@ def build_deeps(arch, flag_map):
              + f'<span>本文 約{mins}分</span></p>']
         if D.get('themes'):
             B.append('<div class="dg-themes">' + ''.join(f'<span>{e(t)}</span>' for t in D['themes']) + '</div>')
-        B.append('<nav class="dg-toc" aria-label="目次"><a href="#quick">3分でわかる</a>'
+        B.append('<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a>'
                  + ''.join(f'<a href="#s{i + 1}">{e(s["h"])}</a>' for i, s in enumerate(D.get('sections', [])))
                  + ('<a href="#deep">さらに奥へ</a>' if D.get('deep') else '') + '<a href="#sources">出典</a></nav>')
         used = set()
-        B.append(f'<div id="quick">{deep_layer(1, "入口", "3分でわかる")}</div>')
+        B.append(f'<div id="quick">{deep_layer(1, "", "先に結論")}</div>')
         B.append('<div class="dg-quick"><ol>' + ''.join(f'<li>{e(q)}</li>' for q in D.get('quick', [])) + '</ol></div>')
         B.append(deep_layer(2, '中層', 'もっと深く読む'))
         for i, s in enumerate(D.get('sections', [])):
@@ -906,7 +907,7 @@ def build_deeps(arch, flag_map):
     if DEEPS:
         D = DEEPS[0]
         blk = (f'<a class="deep-link" href="/deep/{e(D["slug"])}/" data-track="click/top/deep"><small>DEEP GRID {deep_no(D)}<span>{DEEP_COPY}</span></small>'
-               f'<b>{e(D["title"])}</b><span>3分でわかる：{e(D["quick"][0] if D.get("quick") else D["dek"])}</span></a>')
+               f'<b>{e(D["title"])}</b><span>先に結論：{e(D["quick"][0] if D.get("quick") else D["dek"])}</span></a>')
     out = re.sub(r'(<!--pre:deep-->).*?(<!--/pre:deep-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
         open(ip, 'w', encoding='utf-8').write(out)
@@ -921,7 +922,7 @@ def build_deeps(arch, flag_map):
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID</b><span>{DEEP_COPY}</span></div></div>'
             '<h1>DEEP GRID</h1>'
             '<p class="dg-dek">ニュースの続きを、ニュースより深く読む。なぜ起きたのか、技術的に何を意味するのか、過去と何が違うのか。'
-            '入口は「3分でわかる」でやさしく、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p>'
+            'まず「先に結論」で要点をつかみ、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p>'
             + rules_entry('deep-index')
             + f'<ul class="dg-list">{items}</ul></div>')
     write('deep/index.html', page('DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク',
