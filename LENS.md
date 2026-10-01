@@ -17,7 +17,7 @@ WORLD MEDIA LENS has two kinds of pages (owner's decision, 29 Sep 2026):
 - A column that could stand as a グランプリ特別号 story may also be reused there later.
 
 ## 0b. Breaking column (速報コラム)
-Owner's decision, 30 Sep 2026: no automatic breaking columns. A 速報コラム is written only when the owner asks for one on a specific story (e.g. `ocon-future-20260930`). Same format and fact rules as §0, show the owner a phone-width preview and the note/X assets, and publish on the owner's OK.
+Owner's decision, 30 Sep 2026: no automatic breaking columns. A 速報コラム is written only when the owner asks for one on a specific story (e.g. `ocon-future-20260930`). Same format and fact rules as §0, show the owner a phone-width preview and the note/X assets, and publish on the owner's OK. Always offer 3–5 title options (each following the Title rule) with a copy button on each, so the owner can choose (owner's request, 1 Oct 2026); same for any other text the owner is asked to choose or paste.
 
 ## 0c. Japan vs abroad (臨時号・グランプリ特別号・速報コラム)
 Owner's decision, 30 Sep 2026: the daily column stays foreign-sources only (§0). In the issues the owner checks — 臨時号, グランプリ特別号 and 速報コラム written on request — Japanese outlets may be used as sources too, to show readers how the same story is told in Japan and abroad: "日本の〇〇（媒体名）はこう伝えた / 海外の〇〇（媒体名・国）はこう伝えた". Name every outlet. Never say which side is better or worse and never mock either side; lay the differences side by side (what was emphasised, what was left out, which quote was used, headline vs body) and let the reader decide. The "not seen in Japanese" stories still follow §2.
