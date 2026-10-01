@@ -10,6 +10,7 @@ Reads articles.json (plus teams.json, circuits.json) and writes:
 Run from the repository root:  python3 build.py
 Only the Python standard library is used.
 """
+import hashlib
 import html
 import json
 import os
@@ -154,7 +155,8 @@ footer p{margin:6px 0}
 '''
 
 
-def page(title, desc, canonical, body, extra_head='', og_type='article'):
+def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
+    og = og_image or OG_IMAGE
     return f'''<!doctype html>
 <html lang="ja">
 <head>
@@ -175,11 +177,11 @@ def page(title, desc, canonical, body, extra_head='', og_type='article'):
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{e(canonical)}">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="{OG_IMAGE}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="{og}">
+<meta property="og:image:width" content="{og_size[0] if og_image else 1200}">
+<meta property="og:image:height" content="{og_size[1] if og_image else 630}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{OG_IMAGE}">
+<meta name="twitter:image" content="{og}">
 {extra_head}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
@@ -348,6 +350,16 @@ def prerender_index(data, flag_of, flag_map_ref=None):
 # WORLD MEDIA LENS: one long-form page per race, from lens/<slug>.json
 # ---------------------------------------------------------------------------
 LENS_CSS = '''
+.gw-next{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--clay)}
+.gw-k{margin:0;font:700 12px/1 system-ui;letter-spacing:.2em;color:var(--clay);text-transform:uppercase}
+.gw-next h2{margin:8px 0 6px;font-size:21px;line-height:1.4}
+.gw-lead{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.gw-next ul{list-style:none;margin:0 0 16px;padding:0}
+.gw-next li{padding:9px 0;border-top:1px solid var(--line)}
+.gw-next li a{display:block;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.5}
+.gw-next li small{color:var(--muted);font-size:12px}
+.gw-btn{display:block;text-align:center;background:var(--ink);color:var(--on-ink);text-decoration:none;font-weight:700;font-size:16px;padding:14px 12px;border-radius:12px}
+.gw-sub{display:block;text-align:center;margin-top:10px;font-size:14px;color:var(--clay);font-weight:600}
 .lens-hero{margin:18px 0 0;background:#1F2420;color:#F3EFE6;border-radius:22px;padding:24px 20px 26px;position:relative;overflow:hidden}
 .lens-hero::after{content:attr(data-big);position:absolute;right:-10px;bottom:-34px;font-family:Georgia,serif;font-size:128px;font-weight:700;color:rgba(255,255,255,.05);letter-spacing:-4px;pointer-events:none}
 .lens-ey{font-size:11px;font-weight:800;letter-spacing:.26em;color:#E8946C}
@@ -484,6 +496,20 @@ def lens_issue_blocks(L, slug, flag_map, region_of):
     return B
 
 
+def site_entrance(arch, slug):
+    """Entrance to the rest of the site right after a column's body (owner's OK, 1 Oct 2026)."""
+    xs = sorted((a for a in arch['articles'].values() if a.get('kind') != 'fan'),
+                key=lambda a: a.get('published', ''), reverse=True)[:3]
+    li = ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/lens/{e(slug)}/entrance-news">{e(a["title"])}</a>'
+                 f'<small>{e(a["source"])}</small></li>' for a in xs)
+    return ('<section class="gw-next"><p class="gw-k">F1 Grid Walk</p>'
+            '<h2>世界のF1ニュースを、毎日日本語で</h2>'
+            '<p class="gw-lead">海外の記事の見出しと要約を、1日4回まとめています。いま届いているニュース：</p>'
+            f'<ul>{li}</ul>'
+            f'<a class="gw-btn" href="/" data-track="click/lens/{e(slug)}/entrance-top">今日のF1ニュースを見る →</a>'
+            f'<a class="gw-sub" href="/lens/" data-track="click/lens/{e(slug)}/entrance-lens">ほかのコラムを読む</a></section>')
+
+
 def build_lenses(arch, flag_map):
     """Render lens/<slug>/index.html for every lens/<slug>.json, plus lens/index.html. Returns sitemap rows."""
     d = os.path.join(ROOT, 'lens')
@@ -545,6 +571,7 @@ def build_lenses(arch, flag_map):
                 elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
                 else: B.append(f'<p>{e(t)}</p>')
             B.append('</div>')
+            B.append(site_entrance(arch, slug))
             if L.get('note'):
                 B.append(f'<p class="lens-note">{e(L["note"])}</p>')
             L.setdefault('unreported', {'items': []}); L.setdefault('mystery', {'evidence': []})
@@ -561,9 +588,11 @@ def build_lenses(arch, flag_map):
             B.append(f'<p class="lens-note" style="margin-top:22px">この回の読みものはnoteでも公開しています → <a href="{e(L["noteUrl"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/note">noteで読む ↗</a></p>')
         B.append('<p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p>')
 
-        title = f'{L["title"]}｜WORLD MEDIA LENS'
+        title = f'{L["title"]}｜F1グリッドウォーク'
         head = f'<meta property="article:published_time" content="{e(L["published"])}">\n<style>{LENS_CSS}</style>\n'
-        write(f'lens/{slug}/index.html', page(title, L['dek'], url, '\n'.join(B) + LENS_JS, head))
+        ogp = os.path.join(ROOT, 'lens', slug, 'og.png')  # the column's own header image, when present
+        ogi = f'{SITE}/lens/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
+        write(f'lens/{slug}/index.html', page(title, L['dek'], url, '\n'.join(B) + LENS_JS, head, og_image=ogi, og_size=(1280, 670)))
         lenses.append((pub, slug, L, url))
 
     lenses.sort(key=lambda x: x[0], reverse=True)
@@ -586,7 +615,7 @@ def build_lenses(arch, flag_map):
     body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD MEDIA LENS</nav><h1>WORLD MEDIA LENS</h1>'
             '<p class="lead">毎朝7時のコラムと、レース週末の金・土・日に出すグランプリ特別号。世界の媒体の記事を読み比べて、日本語ではあまり語られない話と、見出しだけでは分からないことを届けます。</p>'
             f'<ul class="lens-list">{items}</ul>')
-    write('lens/index.html', page('WORLD MEDIA LENS｜F1 Grid Walk', '世界のF1報道を読み比べて、日本では見当たらなかった話をまとめるコラム。毎朝のコラムと、レース週末のグランプリ特別号。',
+    write('lens/index.html', page('WORLD MEDIA LENS｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1報道を読み比べるコラム。毎朝のコラムと、レース週末のグランプリ特別号。',
                                   SITE + '/lens/', body, f'<style>{LENS_CSS}</style>\n', og_type='website'))
     return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + \
            [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in lenses]
@@ -685,7 +714,7 @@ def main():
         head = (f'<meta property="article:published_time" content="{e(a["published"])}">\n'
                 f'<script type="application/ld+json">{crumbs_ld}</script>\n')
         if write(f'news/{a["id"]}/index.html',
-                 page(f'{a["title"]}｜F1 Grid Walk', desc, url, '\n'.join(body), head)):
+                 page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head)):
             changed += 1
 
     # the list page: every article, newest first, grouped by day (JST)
@@ -705,7 +734,7 @@ def main():
            '<h1>ニュース一覧</h1>'
            f'<p class="lead">これまでに紹介した世界のF1ニュース {len(allarts)} 本。各国の記事の見出しを日本語にして、短い要約と原文へのリンクを付けています。新しい順。</p>'
            + ''.join(rows))
-    write('news/index.html', page('ニュース一覧｜F1 Grid Walk', '世界のF1ニュースを日本語の見出しと要約で。これまでに紹介した記事の一覧です。',
+    write('news/index.html', page('ニュース一覧｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1ニュースを日本語の見出しと要約で。これまでに紹介した記事の一覧です。',
                                   SITE + '/news/', lst, og_type='website'))
 
     # sitemap
