@@ -8,3 +8,15 @@
 
 コラムはこちら
 https://f1gridwalk.github.io/lens/baku-tv-saturday-20261001/
+
+---
+# X投稿（2026-10-01 速報コラム：ocon-villeneuve-20261001、16:04公開）
+
+## ① メイン投稿（画像：x_ocon-villeneuve-20261001.png を添付／本文にリンクなし）
+
+オランダのGPblogによると、元王者ヴィルヌーヴはバクー8位のオコンを「長いキャリアだったが、結果はほとんど残せなかった」と評しました。本人は「僕は最高のドライバーの一人」と反論。ハースは9月30日に離脱を正式発表しています。 #F1jp #オコン
+
+## ② ①への返信
+
+コラムはこちら
+https://f1gridwalk.github.io/lens/ocon-villeneuve-20261001/
