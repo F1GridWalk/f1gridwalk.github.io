@@ -32,12 +32,13 @@ B.append(['url', 'https://f1gridwalk.github.io/'])
 B.append(['p', 'このコラムはサイトでも読めます（投票もこちら）。' if L.get('mystery') else 'このコラムはサイトでも読めます。'])
 B.append(['url', url])
 B.append(['p', '━━━━━━━━━━'])
+# sources as linked names, not bare URL lines, so note makes cards only for the site (owner's request, 1 Oct 2026)
 for s in L.get('extraSources', []):
-    B.append(['p', f'出典：{s["source"]}（{s.get("region","")}）'])
-    B.append(['url', s['url']])
+    B.append(['src', (f'出典：{s["source"]}（{s.get("region","")}）', s['url'])])
 # plain text
 t = ['【タイトル】', TITLE, '', '【本文】（■＝大見出しにする行）', '']
 for k, x in B:
+    if k == 'src': t += [f'{x[0]} {x[1]}', '']; continue
     t += (['■ ' + x, ''] if k == 'h2' else ['【太字】' + x, ''] if k in ('bold', 'ask') else [x, ''])
 t += ['【ハッシュタグ】', TAGS, '']
 open(os.path.join(out, f'note_{P}_原稿.txt'), 'w', encoding='utf-8').write('\n'.join(t))
@@ -47,6 +48,7 @@ for k, x in B:
     elif k in ('bold', 'ask'): body.append(f'<p><strong>{e(x)}</strong></p>')
     elif k == 'quote': body.append(f'<blockquote><p>{e(x)}</p></blockquote>')
     elif k == 'url': body.append(f'<p><a href="{e(x)}">{e(x)}</a></p>')
+    elif k == 'src': body.append(f'<p><a href="{e(x[1])}">{e(x[0])}</a></p>')
     else: body.append(f'<p>{e(x)}</p>')
 ns = {'e': e, 'TITLE': TITLE, 'TAGS': TAGS, 'P': P, 'body': body}
 exec(open(os.path.join(HERE, 'note_page.part'), encoding='utf-8').read(), ns)
