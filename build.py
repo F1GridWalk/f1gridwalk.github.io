@@ -348,6 +348,16 @@ def prerender_index(data, flag_of, flag_map_ref=None):
 # WORLD MEDIA LENS: one long-form page per race, from lens/<slug>.json
 # ---------------------------------------------------------------------------
 LENS_CSS = '''
+.gw-next{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--clay)}
+.gw-k{margin:0;font:700 12px/1 system-ui;letter-spacing:.2em;color:var(--clay);text-transform:uppercase}
+.gw-next h2{margin:8px 0 6px;font-size:21px;line-height:1.4}
+.gw-lead{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.gw-next ul{list-style:none;margin:0 0 16px;padding:0}
+.gw-next li{padding:9px 0;border-top:1px solid var(--line)}
+.gw-next li a{display:block;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;line-height:1.5}
+.gw-next li small{color:var(--muted);font-size:12px}
+.gw-btn{display:block;text-align:center;background:var(--ink);color:var(--on-ink);text-decoration:none;font-weight:700;font-size:16px;padding:14px 12px;border-radius:12px}
+.gw-sub{display:block;text-align:center;margin-top:10px;font-size:14px;color:var(--clay);font-weight:600}
 .lens-hero{margin:18px 0 0;background:#1F2420;color:#F3EFE6;border-radius:22px;padding:24px 20px 26px;position:relative;overflow:hidden}
 .lens-hero::after{content:attr(data-big);position:absolute;right:-10px;bottom:-34px;font-family:Georgia,serif;font-size:128px;font-weight:700;color:rgba(255,255,255,.05);letter-spacing:-4px;pointer-events:none}
 .lens-ey{font-size:11px;font-weight:800;letter-spacing:.26em;color:#E8946C}
@@ -484,6 +494,20 @@ def lens_issue_blocks(L, slug, flag_map, region_of):
     return B
 
 
+def site_entrance(arch, slug):
+    """Entrance to the main site, right after a column's body (owner's request, 1 Oct 2026)."""
+    xs = sorted((a for a in arch['articles'].values() if a.get('kind') != 'fan'),
+                key=lambda a: a.get('published', ''), reverse=True)[:3]
+    li = ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/lens/{e(slug)}/entrance-news">{e(a["title"])}</a>'
+                 f'<small>{e(a["source"])}</small></li>' for a in xs)
+    return ('<section class="gw-next"><p class="gw-k">F1 Grid Walk</p>'
+            '<h2>世界のF1ニュースを、毎日日本語で</h2>'
+            '<p class="gw-lead">海外の記事の見出しと要約を、1日4回まとめています。いま届いているニュース：</p>'
+            f'<ul>{li}</ul>'
+            f'<a class="gw-btn" href="/" data-track="click/lens/{e(slug)}/entrance-top">今日のF1ニュースを見る →</a>'
+            f'<a class="gw-sub" href="/lens/" data-track="click/lens/{e(slug)}/entrance-lens">ほかのコラムを読む</a></section>')
+
+
 def build_lenses(arch, flag_map):
     """Render lens/<slug>/index.html for every lens/<slug>.json, plus lens/index.html. Returns sitemap rows."""
     d = os.path.join(ROOT, 'lens')
@@ -545,6 +569,7 @@ def build_lenses(arch, flag_map):
                 elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
                 else: B.append(f'<p>{e(t)}</p>')
             B.append('</div>')
+            B.append(site_entrance(arch, slug))
             if L.get('note'):
                 B.append(f'<p class="lens-note">{e(L["note"])}</p>')
             L.setdefault('unreported', {'items': []}); L.setdefault('mystery', {'evidence': []})
