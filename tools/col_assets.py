@@ -24,13 +24,17 @@ url = f'https://f1gridwalk.github.io/lens/{slug}/'
 B = [list(b) for b in L['body']]
 if L.get('note') and L.get('type') != 'column':
     B.append(['p', '※ ' + L['note']])  # columns: no Japanese-check line (owner's decision, 1 Oct 2026)
+# entrance to the site right after the column, before the sources (owner's request, 1 Oct 2026)
+B.append(['p', '━━━━━━━━━━'])
+B.append(['bold', 'F1 Grid Walk では、世界のF1ニュースを毎日日本語でまとめています。'])
+B.append(['p', '海外の記事の見出しと要約を、1日4回更新しています。'])
+B.append(['url', 'https://f1gridwalk.github.io/'])
+B.append(['p', 'このコラムはサイトでも読めます（投票もこちら）。' if L.get('mystery') else 'このコラムはサイトでも読めます。'])
+B.append(['url', url])
+B.append(['p', '━━━━━━━━━━'])
 for s in L.get('extraSources', []):
     B.append(['p', f'出典：{s["source"]}（{s.get("region","")}）'])
     B.append(['url', s['url']])
-B.append(['p', 'この記事はサイトでも読めます（投票もこちら）。' if L.get('mystery') else 'この記事はサイトでも読めます。'])
-B.append(['url', url])
-B.append(['p', '毎日の海外F1ニュースは、日本語でこちらにまとめています。'])
-B.append(['url', 'https://f1gridwalk.github.io/'])
 # plain text
 t = ['【タイトル】', TITLE, '', '【本文】（■＝大見出しにする行）', '']
 for k, x in B:
