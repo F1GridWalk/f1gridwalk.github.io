@@ -593,6 +593,10 @@ def build_lenses(arch, flag_map):
             L.setdefault('unreported', {'items': []}); L.setdefault('mystery', {'evidence': []})
         else:
             B.extend(lens_issue_blocks(L, slug, flag_map, region_of))
+        for D in DEEPS:
+            if slug in (D.get('lensRelated') or []):
+                B.append(deep_card(D, lead='なぜそうなった？を深く読む'))
+                break
         rows = ''
         for s in desk:
             cc = flag_map.get(s.get('region') or region_of.get(s['source'], ''), 'xx')
@@ -605,7 +609,7 @@ def build_lenses(arch, flag_map):
         B.append('<p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p>')
 
         title = f'{L["title"]}｜F1グリッドウォーク'
-        head = f'<meta property="article:published_time" content="{e(L["published"])}">\n<style>{LENS_CSS}</style>\n'
+        head = f'<meta property="article:published_time" content="{e(L["published"])}">\n<style>{LENS_CSS}{DEEP_CSS if any(slug in (D.get("lensRelated") or []) for D in DEEPS) else ""}</style>\n'
         ogp = os.path.join(ROOT, 'lens', slug, 'og.png')  # the column's own header image, when present
         ogi = f'{SITE}/lens/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': L['title'], 'description': L['dek'],
@@ -646,6 +650,279 @@ def build_lenses(arch, flag_map):
 
 
 
+# ---------------------------------------------------------------- DEEP GRID
+# deep/<slug>.json -> deep/<slug>/index.html, deep/index.html. "ニュースの、その奥へ。"
+DEEP_COPY = 'ニュースの、その奥へ。'
+DEEPS = []  # published issues, newest first (filled by load_deeps)
+
+DEEP_CSS = '''
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+'''
+
+
+def load_deeps():
+    """Read deep/*.json. Drafts are skipped (and any old page removed) unless PREVIEW_DRAFTS=1."""
+    global DEEPS
+    d = os.path.join(ROOT, 'deep')
+    out = []
+    if os.path.isdir(d):
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith('.json'):
+                continue
+            D = load(os.path.join('deep', fn))
+            if not D or not D.get('slug') or not ID_OK.match(D['slug']):
+                continue
+            if D.get('draft') and os.environ.get('PREVIEW_DRAFTS') != '1':
+                old = os.path.join(d, D['slug'], 'index.html')
+                if os.path.exists(old):
+                    os.remove(old)
+                    try: os.rmdir(os.path.dirname(old))
+                    except OSError: pass
+                continue
+            out.append(D)
+    out.sort(key=lambda D: D['published'], reverse=True)
+    DEEPS = out
+    return out
+
+
+def deep_no(D):
+    return f'#{int(D.get("no", 0)):02d}'
+
+
+def deep_for_article(a):
+    """The newest DEEP GRID issue that goes deeper into this news article (same circuit, team or topic)."""
+    for D in DEEPS:
+        if (D.get('circuit') and a.get('circuit') == D['circuit']) or \
+           (set(D.get('teams') or []) & set(a.get('teams') or [])) or \
+           (a.get('topic') and a['topic'] in (D.get('topics') or [])):
+            return D
+    return None
+
+
+def deep_card(D, cls='dg-from', lead='この話を、もっと深く'):
+    return (f'<a class="{cls}" href="/deep/{e(D["slug"])}/" data-track="click/deep/{e(D["slug"])}/from">'
+            f'<small>DEEP GRID {deep_no(D)}</small><b>{e(D["title"])}</b><span>{e(lead)} →</span></a>')
+
+
+def deep_blocks(blocks):
+    out = []
+    for b in blocks:
+        if 'p' in b:
+            out.append(f'<p>{e(b["p"])}</p>')
+        elif 'quote' in b:
+            out.append(f'<blockquote><p>「{e(b["quote"])}」</p><cite>— {e(b.get("who", ""))}</cite></blockquote>')
+        elif 'view' in b:
+            out.append(f'<div class="dg-view"><p>{e(b["view"])}</p></div>')
+        elif 'table' in b:
+            t = b['table']
+            hs = t.get('head', [])
+            longest = max(len(c) for r in t['rows'] for c in r[1:])
+            cls = 'stack' if len(hs) >= 3 and longest > 12 else ('short' if longest <= 12 else '')
+            head = ''.join(f'<th scope="col">{e(h)}</th>' for h in hs)
+            rows = ''.join('<tr>' + f'<th scope="row">{e(r[0])}</th>' + ''.join(f'<td data-h="{e(hs[j + 1] if j + 1 < len(hs) else "")}">{e(c)}</td>' for j, c in enumerate(r[1:])) + '</tr>' for r in t['rows'])
+            out.append(f'<div class="dg-tw"><table class="{cls}"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>'
+                       + (f'<p class="tnote">{e(t["note"])}</p>' if t.get('note') else ''))
+    return ''.join(out)
+
+
+def deep_layer(n, name, title):
+    g = ''.join(f'<i class="{"on" if i < n else ""}"></i>' for i in range(3))
+    return f'<div class="dg-layer"><span class="g" aria-hidden="true">{g}</span>{e(name)} · <em>{e(title)}</em></div>'
+
+
+def build_deeps(arch, flag_map):
+    """Render deep/<slug>/index.html for every issue in DEEPS, plus deep/index.html. Returns sitemap rows."""
+    region_of = {}
+    for a in arch['articles'].values():
+        region_of.setdefault(a['source'], a.get('region'))
+    flag_of = lambda a: flag_map.get(region_of.get(a['source']) or '', 'xx')
+    lens = {}
+    ld_ = os.path.join(ROOT, 'lens')
+    if os.path.isdir(ld_):
+        for fn in os.listdir(ld_):
+            if fn.endswith('.json'):
+                L = load(os.path.join('lens', fn))
+                if L and L.get('slug') and not L.get('draft'):
+                    lens[L['slug']] = L
+    rows = []
+    for D in DEEPS:
+        slug = D['slug']
+        url = f'{SITE}/deep/{slug}/'
+        pub = datetime.fromisoformat(D['published'])
+        upd = D.get('updated') or D['published']
+        text_len = len(''.join(D.get('quick', [])) + json.dumps(D.get('sections', []), ensure_ascii=False))
+        mins = max(3, round(text_len / 600))
+        B = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › {e(deep_no(D))}</nav>',
+             '<article class="dg">',
+             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>{e(deep_no(D))}</i></b><span>{DEEP_COPY}</span></div></div>',
+             f'<h1>{e(D["title"])}</h1>',
+             f'<p class="dg-dek">{e(D["dek"])}</p>',
+             f'<p class="dg-meta"><span>{e(jst_text(pub))} 公開</span>'
+             + (f'<span>{e(jst_text(datetime.fromisoformat(upd)))} 更新</span>' if D.get('updated') else '')
+             + f'<span>本文 約{mins}分</span></p>']
+        if D.get('themes'):
+            B.append('<div class="dg-themes">' + ''.join(f'<span>{e(t)}</span>' for t in D['themes']) + '</div>')
+        B.append('<nav class="dg-toc" aria-label="目次"><a href="#quick">3分でわかる</a>'
+                 + ''.join(f'<a href="#s{i + 1}">{e(s["h"])}</a>' for i, s in enumerate(D.get('sections', [])))
+                 + ('<a href="#deep">さらに奥へ</a>' if D.get('deep') else '') + '<a href="#sources">出典</a></nav>')
+        B.append(f'<div id="quick">{deep_layer(1, "入口", "3分でわかる")}</div>')
+        B.append('<div class="dg-quick"><ol>' + ''.join(f'<li>{e(q)}</li>' for q in D.get('quick', [])) + '</ol></div>')
+        B.append(deep_layer(2, '中層', 'もっと深く読む'))
+        for i, s in enumerate(D.get('sections', [])):
+            B.append(f'<div class="dg-sec" id="s{i + 1}"><h2><span class="n">{i + 1:02d}</span>{e(s["h"])}</h2>{deep_blocks(s["body"])}</div>')
+        if D.get('deep'):
+            heads = '・'.join(s['h'].split('：')[0] for s in D['deep'][:3])
+            B.append(f'<details class="dg-deep" id="deep"><summary>{deep_layer(3, "深部", "さらに奥へ")}'
+                     f'<span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">{e(heads)} ほか</span></span></span></summary>')
+            for s in D['deep']:
+                B.append(f'<div class="dg-sec"><h2>{e(s["h"])}</h2>{deep_blocks(s["body"])}</div>')
+            B.append('</details>')
+        if D.get('glossary'):
+            B.append('<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl>'
+                     + ''.join(f'<dt>{e(t)}</dt><dd>{e(d)}</dd>' for t, d in D['glossary']) + '</dl></div>')
+        B.append('<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src">'
+                 + ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener" data-track="click/deep/{e(slug)}/src">{e(s["name"])}</a> <small>{e(s["title"])}</small></li>' for s in D.get('sources', []))
+                 + '</ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>')
+        if D.get('history'):
+            B.append('<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist">'
+                     + ''.join(f'<li><time>{e(d)}</time>{e(t)}</li>' for d, t in D['history']) + '</ul></div>')
+        # links out: TODAY (newest news on the same circuit/teams/topics), WORLD MEDIA LENS, other issues
+        news = [a for a in sorted(arch['articles'].values(), key=when, reverse=True)
+                if a.get('kind') != 'fan' and deep_for_article(a) is D][:5]
+        if news:
+            B.append('<div class="dg-end"><h2><span class="k">TODAY</span>このテーマの最新ニュース</h2><ul class="list">'
+                     + ''.join(item_li(a, flag_of) for a in news) + '</ul></div>')
+        rel = [lens[s] for s in D.get('lensRelated', []) if s in lens]
+        if rel:
+            B.append('<div class="dg-end"><h2><span class="k">WORLD MEDIA LENS</span>世界はどう報じた？</h2>'
+                     + ''.join(f'<a class="dg-card" href="/lens/{e(L["slug"])}/"><small>WORLD MEDIA LENS · {e(L["gpLabel"])}</small><b>{e(L["title"])}</b></a>' for L in rel) + '</div>')
+        others = [x for x in DEEPS if x is not D][:3]
+        B.append('<div class="dg-end"><h2><span class="k">DEEP GRID</span>ほかの号</h2>'
+                 + ''.join(deep_card(x, 'dg-card', '読む') for x in others)
+                 + '<a class="dg-card" href="/deep/"><small>DEEP GRID</small><b>すべての号を見る →</b></a></div>')
+        B.append('</article>')
+
+        head = f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}</style>\n'
+        head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': D['title'], 'description': D['dek'],
+                    'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [OG_IMAGE],
+                    'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER, 'articleSection': 'DEEP GRID',
+                    'keywords': D.get('themes', [])})
+        head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
+            {'@type': 'ListItem', 'position': 2, 'name': 'DEEP GRID', 'item': SITE + '/deep/'},
+            {'@type': 'ListItem', 'position': 3, 'name': D['title'], 'item': url}]})
+        write(f'deep/{slug}/index.html', page(f'{D["title"]}｜DEEP GRID｜F1グリッドウォーク', D['dek'], url, '\n'.join(B), head))
+        rows.append((url, upd, None, '0.9'))
+
+    # top page slot (inside <!--pre:deep--> in index.html)
+    ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
+    blk = ''
+    if DEEPS:
+        D = DEEPS[0]
+        blk = (f'<a class="deep-link" href="/deep/{e(D["slug"])}/" data-track="click/top/deep"><small>DEEP GRID {deep_no(D)}<span>{DEEP_COPY}</span></small>'
+               f'<b>{e(D["title"])}</b><span>3分でわかる：{e(D["quick"][0] if D.get("quick") else D["dek"])}</span></a>')
+    out = re.sub(r'(<!--pre:deep-->).*?(<!--/pre:deep-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
+    if out != src:
+        open(ip, 'w', encoding='utf-8').write(out)
+    if not DEEPS:
+        old = os.path.join(ROOT, 'deep', 'index.html')
+        if os.path.exists(old):
+            os.remove(old)
+        return []
+    items = ''.join(f'<li><a href="/deep/{e(D["slug"])}/"><small>DEEP GRID {deep_no(D)}</small><b>{e(D["title"])}</b></a>'
+                    f'<p>{e(D["quick"][0] if D.get("quick") else D["dek"])}</p></li>' for D in DEEPS)
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › DEEP GRID</nav><div class="dg">'
+            f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID</b><span>{DEEP_COPY}</span></div></div>'
+            '<h1>DEEP GRID</h1>'
+            '<p class="dg-dek">ニュースの続きを、ニュースより深く読む。なぜ起きたのか、技術的に何を意味するのか、過去と何が違うのか。'
+            '入口は「3分でわかる」でやさしく、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p>'
+            f'<ul class="dg-list">{items}</ul></div>')
+    write('deep/index.html', page('DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク',
+                                  'F1のニュースの「なぜ」を深く読む、F1 Grid Walkの深掘り記事。パワーユニット、空力、タイヤ、規則、データ、歴史まで。',
+                                  SITE + '/deep/', body, f'<style>{DEEP_CSS}</style>\n', og_type='website'))
+    return [(SITE + '/deep/', DEEPS[0].get('updated') or DEEPS[0]['published'], 'weekly', '0.8')] + rows
+
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -653,6 +930,7 @@ def main():
     teams = (load('teams.json', {}) or {}).get('teams', {})
     circuits = (load('circuits.json', {}) or {}).get('circuits', {})
     arch = load('news/archive.json', {'articles': {}, 'topics': {}})
+    load_deeps()
 
     for a in data.get('articles', []):
         if not ID_OK.match(a.get('id', '')) or not a.get('url', '').startswith('http'):
@@ -699,6 +977,9 @@ def main():
                     f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む\u00a0↗'
                     + (f' <small>（{e(lang)}）</small>' if a.get('lang') != 'ja' else '') + '</a>')
         body.append(f'<p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は {e(a["source"])} に帰属します。</p>')
+        dg = deep_for_article(a)
+        if dg:
+            body.append(deep_card(dg))
         tags = []
         for tk in a.get('teams') or []:
             if tk in teams:
@@ -740,7 +1021,7 @@ def main():
                   'image': [OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                   'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'],
                                 'publisher': {'@type': 'Organization', 'name': a['source']}}}
-        head = (f'<meta property="article:published_time" content="{e(a["published"])}">\n'
+        head = ((f'<style>{DEEP_CSS}</style>\n' if dg else '') + f'<meta property="article:published_time" content="{e(a["published"])}">\n'
                 f'<script type="application/ld+json">{crumbs_ld}</script>\n' + ld(art_ld))
         if write(f'news/{a["id"]}/index.html',
                  page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head)):
@@ -771,6 +1052,7 @@ def main():
     urls = [(SITE + '/', now, 'hourly', '1.0'), (SITE + '/news/', now, 'hourly', '0.8')]
     urls += [(f'{SITE}/news/{a["id"]}/', when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]
     urls += [u for u in build_lenses(arch, flag_map) if u[1]]
+    urls += [u for u in build_deeps(arch, flag_map) if u[1]]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lm, cf, pr in urls:
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
