@@ -140,9 +140,9 @@ h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-wei
 .orig{font-size:13.5px;color:var(--muted);margin:0 0 20px}
 .summary{font-size:17px;line-height:1.95;margin:0 0 22px}
 .warn{font-size:13.5px;border:1px dashed var(--clay);color:var(--ink-2);padding:10px 14px;border-radius:10px;margin:0 0 22px}
-.cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 8px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
 .cta:hover{color:var(--on-ink);opacity:.9}
-.cta small{font-weight:500;opacity:.8;font-size:12.5px}
+.cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
 .credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
 .tags span{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
@@ -247,6 +247,12 @@ def ext(url, text, cls=None):
     return f'<a{c} href="{e(url)}" target="_blank" rel="noopener noreferrer">{text}</a>'
 
 
+def art(a, text, cls=None):
+    """Link an article title to our own summary page (the original is linked from there)."""
+    c = f' class="{cls}"' if cls else ''
+    return f'<a{c} href="/news/{e(a["id"])}/">{text}</a>'
+
+
 def static_card(a, flag_of):
     k = kind_of(a)
     return (f'<article class="card" data-c="{flag_of(a)}"><div class="card-meta">'
@@ -254,8 +260,8 @@ def static_card(a, flag_of):
             f'<span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span>'
             f'<span class="rg">{e(a.get("region", ""))}</span>'
             f'<time datetime="{e(a["published"])}">{short_jst(a)}</time></div>'
-            f'<h3>{ext(a["url"], e(a["title"]))}</h3><p>{e(a.get("summary", ""))}</p>'
-            f'<a class="perma" href="/news/{e(a["id"])}/">詳細・共有 ›</a></article>')
+            f'<h3>{art(a, e(a["title"]))}</h3><p>{e(a.get("summary", ""))}</p>'
+            f'<div class="card-foot"><span class="cat">{e(a.get("cat") or "ニュース")}</span>{ext(a["url"], "原文へ ↗")}</div></article>')
 
 
 def prerender_index(data, flag_of, flag_map_ref=None):
@@ -288,7 +294,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         n_media = len({x['source'] for x in media}) or n
         hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n_media}媒体が報道</span></div>')
         hero.append('<div class="tw-sec" id="tw-facts">'
-                    f'<h1 id="hero-title">{ext(pick["url"], e(info.get("title") or pick["title"]))}</h1>'
+                    f'<h1 id="hero-title">{art(pick, e(info.get("title") or pick["title"]))}</h1>'
                     '</div>')
         li = []
         for x in sorted(media, key=when, reverse=True)[:3]:
@@ -303,7 +309,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                 angle = '<div class="tl-angle"><b>主要焦点</b>' + e('／'.join(v for v in (lz.get('lead'), lz.get('focus')) if v)) + '</div>'
             prov = (f'<div class="tl-prov">掲載：<b>{e(x["source"])}</b>　記事提供：<b>{e(x["provider"])}</b></div>' if x.get('provider') else '')
             li.append(f'<li data-c="{flag_of(x)}">' + top
-                      + ext(x['url'], f'<span class="kind {k}" style="margin-right:6px">{KIND[k]}</span>' + e(x['title']), 'tl-title')
+                      + art(x, f'<span class="kind {k}" style="margin-right:6px">{KIND[k]}</span>' + e(x['title']), 'tl-title')
                       + angle + prov + '</li>')
         arts_block = (f'<section class="tw-sec" id="tw-articles"><h2 class="tw-h">世界の記事<small>{n_media}媒体 · {len(media)}本</small></h2>'
                       '<ul class="trend-list tw-list">' + ''.join(li) + '</ul></section>')
@@ -319,7 +325,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                          e(g.get('provider', '')) + '配信' if scope == 'wire' and g.get('provider') else
                          f'{n_src}媒体' if n_src > 1 else '')
                 pts = ''.join(f'<li>{e(p)}</li>' for p in (g.get('points') or [])[:3])
-                links = ''.join(f'<li data-c="{flag_of(x)}"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>{ext(x["url"], e(x["title"]))}</li>' for x in g_arts)
+                links = ''.join(f'<li data-c="{flag_of(x)}"><span class="srcbadge" data-c="{flag_of(x)}">{e(x["source"])}</span>{art(x, e(x["title"]))}</li>' for x in g_arts)
                 cols.append(f'<article class="lens-col" data-c="{fc}"><div class="lens-who">{flag}{e(g.get("label", ""))}'
                             + (f'<small>{small}</small>' if small else '') + '</div>'
                             f'<p class="lens-focus"><small>焦点</small>{e(g.get("focus", ""))}</p>'
@@ -333,7 +339,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)
         if a:
             hero.append('<div class="chips"><span class="chip-feature">今日の一本</span></div>')
-            hero.append(f'<h1 id="hero-title">{ext(a["url"], e(a["title"]))}</h1><p class="hero-sum">{e(a.get("summary", ""))}</p>')
+            hero.append(f'<h1 id="hero-title">{art(a, e(a["title"]))}</h1><p class="hero-sum">{e(a.get("summary", ""))}</p>')
     news = sorted([a for a in arts if a.get('kind', 'news') == 'news'], key=when, reverse=True)[:10]
     tech = sorted([a for a in arts if a.get('kind') == 'tech'], key=when, reverse=True)[:3]
     feed = ('<div class="grid">' + ''.join(static_card(a, flag_of) for a in news) + '</div>'
@@ -690,7 +696,7 @@ def main():
                         else 'ファン掲示板の話題をまとめた投稿です。未確認の話を含みます。') + '</p>')
         body.append(f'<p class="summary">{e(a.get("summary", ""))}</p>')
         body.append(f'<a class="cta" href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}" '
-                    f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む ↗'
+                    f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む\u00a0↗'
                     + (f' <small>（{e(lang)}）</small>' if a.get('lang') != 'ja' else '') + '</a>')
         body.append(f'<p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は {e(a["source"])} に帰属します。</p>')
         tags = []
