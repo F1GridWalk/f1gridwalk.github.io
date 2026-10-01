@@ -1005,7 +1005,7 @@ RULES_JS = '''<script>
   [].forEach.call(document.querySelectorAll('.rb-none button'),function(b){ b.addEventListener('click',function(){ q.value=b.textContent; run(); }); });
   function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.tagName==='DETAILS'){ d.hidden=false; d.open=true; setTimeout(function(){d.scrollIntoView({block:'start'});},50);} }
   window.addEventListener('hashchange',openHash); openHash();
-  try{ var sp=new URLSearchParams(location.search), p=sp.get('q'), c=sp.get('c'); if(p){ q.value=p; } if(c){ setCat(c); } else if(p){ run(); } }catch(e){}
+  try{ var sp=new URLSearchParams(location.search), p=sp.get('q'), c=sp.get('c'); if(p){ q.value=p; q.dispatchEvent(new Event('input')); } if(c){ setCat(c); } else if(p){ run(); } }catch(e){}
   /* grid penalty calculator */
   var t=document.getElementById('pu-tool');
   if(t){ var sels=[].slice.call(t.querySelectorAll('select')), out=document.getElementById('pu-out');
@@ -1125,6 +1125,11 @@ RULES_ENTRY_CSS = '''
 .rbx form,.rbx .rbx-f{display:flex;gap:8px;margin:10px 12px 0}
 .rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 42px;border:2px solid var(--line);border-radius:999px;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx);outline:none}
 .rbx input::placeholder{color:var(--sub)}
+.rbx-in{position:relative;flex:1;min-width:0;display:flex}
+.rbx-in input{padding-right:42px}
+.rbx input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}
+.rbx .rbx-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:50%;background:var(--sub);color:var(--inp);font:700 17px/30px sans-serif;text-align:center;padding:0;cursor:pointer}
+.rbx .rbx-x[hidden]{display:none}
 .rbx input:focus{border-color:#F2C230}
 .rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--btn);color:var(--btnt);cursor:pointer}
 .rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
@@ -1135,6 +1140,12 @@ RULES_ENTRY_CSS = '''
 MONO_FONT = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">\n'
 
 
+RBX_JS = ('<script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){'
+          'var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;'
+          'function s(){x.hidden=!i.value;}i.addEventListener("input",s);'
+          'x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script>')
+
+
 def rules_entry(where, on_page=False):
     """The rulebook search box (plan 1: header, one line, search; no fixed categories)."""
     if not RULES:
@@ -1142,11 +1153,11 @@ def rules_entry(where, on_page=False):
     n = len(RULES['terms']) + len(PEOPLE)
     hd = f'<div class="rbx-hd"><b>RULES</b><span class="mono">{n} ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p>'
     if on_page:
-        return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><input id="rb-q" type="search" placeholder="例：降格、ハジャー" aria-label="用語とルールを検索" autocomplete="off">'
-                f'<button type="button" class="go" id="rb-go">検索</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>')
-    return (f'<div class="rbx">{hd}<form action="/deep/rules/" method="get" role="search"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる">'
+        return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><span class="rbx-in"><input id="rb-q" type="search" placeholder="例：降格、ハジャー" aria-label="用語とルールを検索" autocomplete="off"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span>'
+                f'<button type="button" class="go" id="rb-go">検索</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>' + RBX_JS)
+    return (f'<div class="rbx">{hd}<form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span>'
             f'<button type="submit" class="go" data-track="click/rules-entry/{where}">検索</button></form>'
-            f'<a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/{where}/all">すべての用語を見る →</a></div>')
+            f'<a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/{where}/all">すべての用語を見る →</a></div>' + RBX_JS)
 
 
 def build_rules():
