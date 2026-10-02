@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-02T12:25:00+09:00",
+ "updatedAt": "2026-10-02T18:30:00+09:00",
  "topics": {
   "horner-ferrari": {
    "title": "ホーナーのフェラーリ発言と後任探し、バスール進退うわさが交錯",
@@ -39,22 +39,6 @@
       ]
      },
      {
-      "scope": "outlet",
-      "region": "英国",
-      "label": "The Race",
-      "focus": "異例の電話会見",
-      "lead": "フェラーリ",
-      "cause": "ホーナー発言後の憶測の広がり",
-      "hook": "バスール支持の公式表明",
-      "points": [
-       "広報責任者が公表の理由を説明",
-       "両首脳は自ら発言せず"
-      ],
-      "ids": [
-       "en-therace-ferrari-vasseur-press-call"
-      ]
-     },
-     {
       "scope": "others",
       "label": "そのほかの媒体",
       "focus": "媒体ごとに異なる切り口",
@@ -75,10 +59,6 @@
    "title": "バクーの同士討ちでコラピントに処分、次戦で適用",
    "summary": "アゼルバイジャンGPのセーフティカー明けの再スタートで、アルピーヌのコラピントが1コーナーでブレーキをロックさせてガスリーに追突、弾かれたガスリーがノリスに当たって3台がリタイアした。スチュワードはコラピントに主な責任があるとして次戦5グリッド降格の処分を科したが、ペナルティポイントは加算されず、処分の軽さを疑問視するファンの声も出ている。出場停止を求めていたノリスは後にSNSで「僕が間違っていた」と直接謝罪し和解、アルピーヌはコラピントとガスリー、ノリスへの誹謗中傷を相次いで非難する声明を出している。"
   },
-  "alonso-2027-extension": {
-   "title": "アロンソ、2027年もアストンマーティンでF1続行を発表",
-   "summary": "アストンマーティンは9月29日、フェルナンド・アロンソとランス・ストロールの2027年の契約延長を発表した。アロンソは引退を冗談めかした動画で「F1を引退する、でもまだ先」と語り、意欲を示した。出走記録はさらに伸びて24シーズン目となる。チームは2026年に苦戦しているが、ローレンス・ストロール会長は経験ある2人の継続が組織の安定につながるとしている。"
-  },
   "sepang-setup-unknowns": {
    "title": "データ不足のセパン、ピレリもマクラーレンも手探りで準備",
    "summary": "F1は2017年以来のセパンで開催を迎えるが、開催決定から約10週間で、ピレリは2017年のデータを基準にハード・ミディアム・ソフトを選んだ。マクラーレンは現行世代のデータ不足でシミュレーションの精度に不確実性があると認め、雨とタイヤ摩耗も変数とみる。メルセデスは大型改良を投入する。"
@@ -90,10 +70,6 @@
   "verstappen-baku-best-chance": {
    "title": "バクーはフェルスタッペンの今季最大の勝機だったのか、レッドブルの現在地",
    "summary": "フェルスタッペンはバクーを今季勝てる最高の機会だったと振り返り、ラッセルに0.196秒差の2位に終わったことを悔やんだ。レッドブルは新フロアなどを含む大型アップデートで車のバランスが改善したと評価する一方、タイヤ摩耗やPUの電気系統ではメルセデスに劣る課題が残る。勝利なしで終われば2015年以来となる。"
-  },
-  "baku-post-race-penalties": {
-   "title": "バクー決勝後の処分：ボルトレートが黄旗無視で10秒加算",
-   "summary": "アゼルバイジャンGP決勝の再スタートで、ボルトレートは黄旗が振られる中でペレスを抜き、レース後に10秒加算を受けて13位から15位に降格した。エンジニアが無線で「セーフティカーではない」と伝えていたが、スチュワードは矛盾した情報があったと認めつつ、黄旗は独立した合図であり順守が必要だと判断した。入賞圏外だったためポイントへの影響はなかった。"
   },
   "lawson-2027-seat": {
    "title": "レッドブル、ハジャー続投を確認　好走のローソンは来季の去就が焦点に",
@@ -130,9 +106,103 @@
   "alonso-surprise-hint": {
    "title": "アロンソ「数週間でサプライズ」発言",
    "summary": "アストンマーティン残留を決めたアロンソが、今後数週間のうちにサプライズがあると語った。不可能と言われることの限界を探りたいと述べ、WECやル・マン、インディ500、ダカールなどF1以外での挑戦歴にも触れたという。具体的な中身は明らかになっておらず、ファンの間ではインディ500などの参戦を予想する声が出ているが、いずれも憶測である。"
+  },
+  "sepang-fp1-verstappen": {
+   "title": "セパン初日FP1、フェルスタッペンが最速　アップデートのメルセデスはラッセル2番手",
+   "summary": "バーレーンGP（マレーシア開催）のFP1はフェルスタッペンが最速で、ラッセルが0.383秒差の2番手、ハジャーが3番手だった。大型アップデートを投入したメルセデスだが、アントネッリは5番手で1秒以上遅れ、無線ではタイヤ劣化の大きさも伝えられた。マクラーレンは11、12番手と苦戦し、路面温度は57℃に達する難しい条件だった。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-sepang-fp1-verstappen",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "sepang-fp1-verstappen",
+   "title": "セパン初日のFP1、フェルスタッペンが大型アップデートのメルセデスを抑えて最速",
+   "summary": "フェルスタッペンはFP1でラッセルのメルセデスに0.383秒差をつけて最速となり、3番手はハジャー、4番手はルクレールだった。路面温度は57℃に達し、グリップの低い難しい条件だったという。新パッケージを投入したメルセデスは無線でタイヤ劣化が他より大きいと伝え、マクラーレンの2台は11番手と12番手に沈んだ。",
+   "orig": "Verstappen beats upgraded Mercedes in Sepang practice one",
+   "url": "https://www.the-race.com/formula-1/bahrain-grand-prix-practice-one-2026/",
+   "published": "2026-10-02T12:00:00+01:00"
+  },
+  {
+   "id": "de-motorsport-total-sepang-fp1-verstappen",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "sepang-fp1-verstappen",
+   "title": "フェルスタッペンが圧倒的な最速、マレーシアでの初回走行を振り返る",
+   "summary": "セパンでのFP1はフェルスタッペンが1分37秒520で最速となり、ラッセルが0.383秒差の2番手、ハジャーが3番手だった。ポイントリーダーのアントネッリはアップデートがあっても5番手で、1秒以上遅れたことが目を引いた。チームは予選用ではなくレース想定のセットアップを優先したとされ、猛暑と高い湿度も話題になった。",
+   "orig": "Souveräne Bestzeit von Verstappen: So lief das erste Training in Malaysia",
+   "url": "https://www.motorsport-total.com/formel-1/news/souveraene-bestzeit-von-verstappen-so-lief-das-erste-training-in-malaysia-26100204",
+   "published": "2026-10-02T11:00:00+02:00"
+  },
+  {
+   "id": "it-formula1-sepang-seven-teams-updates",
+   "kind": "tech",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [
+    "mercedes",
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "mercedes-sepang-upgrade",
+   "title": "セパンで7チームがマシンを更新、メルセデスはW17の7か所を変更",
+   "summary": "セパンでは7チームが技術更新を申告し、マクラーレンはエンジンカバー、レッドブルはフロアボード、フェラーリはディフューザーのウィングレットなどを改めた。なかでもメルセデスはW17の7か所に手を入れた最大規模の内容で、狙いは局所的なダウンフォースと後方への気流の質の向上だとされる。ウィリアムズ、アストンマーティン、アウディ、キャデラックは更新なしだった。",
+   "orig": "Sette team aggiornano le monoposto a Sepang: Mercedes stravolge la W17",
+   "url": "https://www.formula1.it/news/32905/1/sette-team-aggiornano-le-monoposto-a-sepang-mercedes-stravolge-la-w17",
+   "published": "2026-10-02T12:00:00+02:00"
+  },
+  {
+   "id": "en-therace-vowles-cost-cap-two-tier",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "ビジネス",
+   "teams": [
+    "williams"
+   ],
+   "topic": "vowles-cost-cap-two-tier",
+   "title": "ボウルズ「予算上限がF1を二層構造にした」、上位4チームが得点の83％を獲得",
+   "summary": "ウィリアムズのボウルズ代表は、マレーシアでの会見で予算上限が競争の均衡ではなく格差を広げたと批判した。2021年以降、上位4チームが選手権ポイントの83％を得ており、従来の約70％から上昇したという。中団勢は今季の改良に投資すると来季以降の開発が犠牲になる構図にあり、同じ性能の車を作るにも約3割多く費用がかかると訴えた。",
+   "orig": "Cost cap creating 'two-tier' F1 - Vowles",
+   "url": "https://www.the-race.com/formula-1/cost-cap-creating-two-tier-f1/",
+   "published": "2026-10-02T11:00:00+01:00"
+  },
+  {
+   "id": "ja-f1are-sepang-reputation",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "topic": "sepang-bahrain-gp-in-malaysia",
+   "title": "バーレーンGP＠マレーシアの舞台セパンは評判がいいという話題",
+   "summary": "掲示板では、セパンについてベアマンが「リズムが重要な高速コース」、オコンが「クラシックなF1サーキット」と語ったと伝えるTopNewsの記事が紹介された。コース幅が広く追い抜きが見られそうだという期待や、暑さと湿度への備えを心配する声が出ていた。日本から近く、日本GPの時期に近い開催を歓迎する書き込みもあった。",
+   "orig": "F1バーレーンGP＠マレーシアの舞台「セパン・サーキット」は評判いいよな",
+   "url": "https://f1are.com/blog-entry-3947.html",
+   "published": "2026-10-02T12:00:00+09:00"
+  },
   {
    "id": "de-motorsport-total-hamilton-ferrari-media",
    "kind": "news",
@@ -1429,82 +1499,6 @@
    "published": "2026-09-30T00:00:00+09:00"
   },
   {
-   "id": "it-formula1-ocon-wec-hypothesis",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "移籍",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-toyota-wec-move",
-   "title": "オコン、F1を離れる可能性が浮上 ハースはカマラ獲得間近でトヨタのWEC案も",
-   "summary": "オコンは2027年に向けて「フリーエージェント」であることを明らかにし、ハースは後任にラファエル・カマラをほぼ固めつつあるとされる。空いている席で現実的なのはキャデラックだけだという。一方、トヨタとハースの技術提携を背景に、オコンがトヨタでWEC（世界耐久選手権）に転向する案も浮上しているが、本人は肯定も否定もしていない。バクーで2台入賞したハースは、雨と暑さが予想されるセパンでも好結果を狙う。",
-   "orig": "Ocon verso i saluti alla Formula 1: spunta l'ipotesi WEC",
-   "url": "https://www.formula1.it/news/32924/1/ocon-verso-i-saluti-alla-formula-1-spunta-l-ipotesi-wec-",
-   "published": "2026-09-29T16:45:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-bortoleto-yellow-flags",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "決勝",
-   "teams": [
-    "audi"
-   ],
-   "topic": "baku-post-race-penalties",
-   "title": "珍しい罰則：ボルトレート、バクーで意図的に黄旗を無視していた",
-   "summary": "アウディのガブリエウ・ボルトレートがアゼルバイジャンGPで、最初のリスタート時に黄旗を意図的に無視したとして決勝後10秒加算のペナルティを受けたとMotorsport-Total.comが伝えた。6コーナーと7コーナーの間でマーシャルがセーフティカーのボードと黄旗を掲示したが、レースコントロールはまだセーフティカーを出しておらず、彼は無線で確認した上でセルジオ・ペレスを抜いた。その数秒後にセーフティカーが導入された。スチュワードは情報が矛盾していたと認めつつ、振られる黄旗は独立した指示だと判断し、13位から15位に降格した。",
-   "orig": "Kuriose Strafe: Bortoleto ignorierte in Baku absichtlich gelbe Flaggen",
-   "url": "https://www.motorsport-total.com/formel-1/news/kuriose-strafe-bortoleto-ignorierte-in-baku-absichtlich-gelbe-flaggen-26092908",
-   "published": "2026-09-29T14:18:00+02:00"
-  },
-  {
-   "id": "en-therace-ferrari-vasseur-press-call",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "チーム",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "horner-ferrari",
-   "title": "フェラーリが異例の電話会見でバスール支持を表明、ホーナー発言を受け",
-   "summary": "フェラーリは異例の報道陣向け電話会見を開き、バスール代表への「全面的な信頼」を公に示した。きっかけは、元レッドブル代表ホーナーがタイムズ紙で、出資参加なしで加わるならフェラーリだけと語ったこと。バスールは進退への質問が続くことでチームの士気に響くと懸念を示し、広報責任者コンティは、憶測が収まらずマレーシア戦の話題を覆いかねないため公表に踏み切ったと説明した。エルカーンやビーニャ両首脳は自ら発言しなかった。",
-   "orig": "Ferrari backs Vasseur as F1 chief in unusual press call",
-   "url": "https://www.the-race.com/formula-1/ferrari-fred-vasseur-press-call-backing/",
-   "published": "2026-09-29T12:00:00+01:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "フェラーリ",
-    "focus": "異例の電話会見",
-    "cause": "ホーナー発言後の憶測の広がり",
-    "hook": "バスール支持の公式表明"
-   }
-  },
-  {
-   "id": "en-therace-anderson-williams-weight-saving",
-   "kind": "tech",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "baku",
-   "teams": [
-    "williams"
-   ],
-   "topic": "williams-fw48-carbon-secret",
-   "title": "ゲイリー・アンダーソン、ウィリアムズの軽量化アップグレードの真価を検証",
-   "summary": "元技術者のアンダーソンは、バクーで予選9番手（ペナルティ前）と3か月ぶりの入賞を果たしたウィリアムズの改良を、約20kgの軽量化と推定し、シーズン平均に対し約0.759%の性能向上に相当すると試算した。バクーでのチーム順位は年間の9番手から6番手へ上がったが、マイアミでも好調だったため、コースとの相性もあり得ると指摘。「年初に重すぎるべきではなかった」と述べ、Q3の常連と判断するには他サーキットでの検証が必要とした。",
-   "orig": "Gary Anderson: The true worth of Williams's weight-saving upgrade",
-   "url": "https://www.the-race.com/formula-1/gary-anderson-the-true-worth-of-williamss-weight-saving-upgrade/",
-   "published": "2026-09-29T12:00:00+01:00"
-  },
-  {
    "id": "en-therace-alonso-extends-2027",
    "kind": "news",
    "lang": "en",
@@ -1521,23 +1515,6 @@
    "url": "https://www.the-race.com/formula-1/alonso-extends-f1-career-into-2027/",
    "published": "2026-09-29T12:00:00+01:00",
    "featured": true
-  },
-  {
-   "id": "ja-f1gate-alonso-2027",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-2027-extension",
-   "title": "フェルナンド・アロンソが2027年もF1参戦「いつか引退する、でも今ではない」",
-   "summary": "アストンマーティンは9月29日、フェルナンド・アロンソとランス・ストロールが2027年もチームに残る契約延長を発表したとF1-Gate.comが伝えた。アロンソは「いつかF1を引退する。でも今ではない」とコメントし、2026年はアストンマーティンとホンダのPUの苦戦で去就が不透明だったが、まだ戦う意欲があると示した。以前には、高速コーナーがバッテリー充電の場になっているなど現行レギュレーションへの批判も口にしていた。2027年中には通算450戦を超える見込みで、24シーズン目のF1に挑む。",
-   "orig": "フェルナンド・アロンソが2027年もF1参戦「いつか引退する、でも今ではない」",
-   "url": "https://f1-gate.com/alonso/f1_97317.html",
-   "published": "2026-09-29T20:00:00+09:00"
   }
  ]
 }
