@@ -1,0 +1,628 @@
+{
+ "slug": "grid-penalty-why",
+ "no": 2,
+ "draft": true,
+ "title": "グリッド降格はなぜ起きる？",
+ "dek": "セパンでは、予選の順位どおりにはスタートしない人が少なくとも3人いる。ハジャーは5つ後ろへ、リンドブラッドは最後尾へ、コラピントもバクーの罰で5つ後ろへ。パワーユニットの部品の「年間の上限」と、消化できなかった罰の「持ち越し」。2つの仕組みを、順にほどいていく。",
+ "published": "2026-10-07T07:00:00+09:00",
+ "updated": "",
+ "themes": [
+  "ペナルティ",
+  "パワーユニット",
+  "規則"
+ ],
+ "circuit": "sepang",
+ "teams": [
+  "redbull",
+  "racingbulls",
+  "alpine",
+  "astonmartin",
+  "mercedes"
+ ],
+ "topics": [
+  "sepang-pu-grid-penalties",
+  "colapinto-penalty"
+ ],
+ "quick": [
+  "グリッド降格は、予選で決まったスタート位置から、決められた数だけ後ろに下げる罰。主な理由は、パワーユニットの部品を1年の上限より多く使ったときと、レース中の違反の罰をそのレースで消化できなかったときの2つだ。",
+  "2026年の上限は、エンジン（ICE）・ターボ・排気が4つ、MGU-K・電池（ES）・制御電子機器（CE）が3つ。新しい規則への移行に合わせて、どれも1つずつ多く認められた。FIAは、この数を2027年と2028年も変えないと確認した。",
+  "上限を超えると、その部品で初めてなら10グリッド、2回目からは5グリッドの降格。合計が15を超えると最後尾になる。ハジャーの車は代役のローソンの分も数えられ、全部の部品がすでに一度上限を超えているので5つ。リンドブラッドは今季まだPUの降格を受けていなかったが、5基目のPUで最後尾になる。",
+  "コラピントは、バクーで10秒加算の罰を受けたが、リタイアしたので消化できなかった。スチュワードはこれを、次に出るレースでの5グリッド降格に切り替えた。消化されないままの降格は、12か月たつと消える。",
+  "チームは、降格をどのレースで受けるかを選ぶことがある。アストンマーティンはバクーで2人そろって降格を受け、クラックは「いちばん競争力がないと予想されるところで入れようとする」と話した。メルセデスのラッセルは改良版のパワーユニットが来るまで待っている。答え合わせは、日曜のスターティンググリッドだ。"
+ ],
+ "sections": [
+  {
+   "h": "グリッド降格の2つの入口",
+   "body": [
+    {
+     "p": "グリッド降格は、予選の順位で決まったスタート位置から、何グリッドか後ろへ下げる罰だ。レースそのものの結果はいじらず、スタートの位置だけを変える。"
+    },
+    {
+     "p": "入口は大きく2つある。1つは、パワーユニット（PU）の部品を、1シーズンに使ってよい数より多く使ったとき。もう1つは、レース中の違反に対する罰を、そのレースの中で消化できなかったときだ。"
+    },
+    {
+     "p": "ほかに、予選中の違反にそのままグリッド降格が科されることもある。F1公式サイトと英The Raceによると、バクーではサインツが予選Q3で黄旗を守らなかったとして5グリッド降格を受けた。戒告がたまったときの降格もある（→戒告）。"
+    },
+    {
+     "p": "今週末のセパンでは、3人の降格が週末の前から分かっていた。レッドブルのハジャーが5グリッド、レーシングブルズのリンドブラッドが最後尾、アルピーヌのコラピントが5グリッド。ハジャーとリンドブラッドは1つ目の入口、コラピントは2つ目の入口からの降格だ。"
+    }
+   ]
+  },
+  {
+   "h": "部品には「1年の上限」がある",
+   "body": [
+    {
+     "p": "2026年のパワーユニットは、エンジン（ICE）、ターボチャージャー、MGU-K、電池（ES）、制御電子機器（CE）、排気の6つの部品でできている。部品ごとに、1人のドライバーが1シーズンに使える数が決まっている（→パワーユニットの使用数）。"
+    },
+    {
+     "p": "F1公式サイトによると、2026年はICEとターボと排気が4つまで、MGU-KとESとCEが3つまで。どれも、もともとの数に1つずつ「ボーナス」が足されている。英RacingNews365によると、FIAは新しいPU規則に合わせてスポーティングレギュレーションにB8.2.3を加え、罰なしで使える部品を1つずつ増やした。補機類（PU-ANC）も5つから6つになった。"
+    },
+    {
+     "p": "このボーナスは、当初は2026年だけの予定だった。2月のRacingNews365の解説は、2027年には元の数に戻るとしていた。しかし7月、FIAの広報担当はRacingNews365に、罰なしで使える部品の数は2027年と2028年も2026年と同じだと確認した。同紙によると、2027年からPUの力の配分がエンジン寄りの60対40に変わることが5月に決まり、開発の時間が短くなった。信頼性の問題が増え、PUメーカーに無理な負担がかかるおそれがあると理解されている、という。"
+    },
+    {
+     "p": "一度使った部品は、そのシーズンの間、ドライバーの「プール」に入る。F1公式サイトの説明では、プールの部品はレースごとに入れ替えても罰はない。バクーでは、予選でエンジンが不調になったフェルスタッペンが、ICE、ターボ、補機類、排気を新しくしたが、どれも上限の内側だった（英PlanetF1）。本人はこう話している。"
+    },
+    {
+     "quote": "うん、どこかの時点で、ペナルティは間違いなく必要になる。",
+     "who": "フェルスタッペン（レッドブル）"
+    },
+    {
+     "quote": "まだはっきりしない点があるなら、エンジンは替えなければならない。でも、プールにはもう1基使えるエンジンがある。",
+     "who": "フェルスタッペン（レッドブル）"
+    },
+    {
+     "p": "上限は「ドライバー」ごとに数えるが、ドライバーが代わっても数はリセットされない。ハジャーが手首のけがで3戦を欠場した間、代役のローソンが使った部品も、ハジャーの数に入った。ブラジルのGrande Prêmioは「ドライバーを代えても、使ってよい部品の数はリセットされない」と書いている。"
+    }
+   ]
+  },
+  {
+   "h": "10、5、そして最後尾",
+   "body": [
+    {
+     "p": "上限を超えたときの降格は、部品ごとに数える。F1公式サイトによると、ある部品で初めて上限を超えると10グリッド、同じことが2回目以降に起きると5グリッド。罰は、上限を超えた部品を初めて使った大会で科される。同じ大会で複数の部品を替えれば、降格は足し算になる。"
+    },
+    {
+     "p": "ハジャーの車（ローソンが乗った時期も含む）を追うと、この仕組みがよく見える。5月のマイアミでは、予選で失格になったあと、ESとCEを今季の上限を超えて新しくした（F1公式サイト、米RACER）。7月のベルギーでは、ICE、ターボ、排気の5つ目を入れ、30グリッドの降格で最後尾になった（PlanetF1）。どれも初めての超過なので、10グリッドずつの計算だ。9月のイタリアでは、代役のローソンがICE・ターボ・排気の6つ目と、MGU-Kの4つ目、補機類の7つ目を使った。2回目のICE・ターボ・排気は5グリッドずつ、初めてのMGU-Kと補機類は10グリッドずつで、合計35グリッドだった（F1公式サイト、GPFans）。"
+    },
+    {
+     "p": "こうして、マイアミのESとCE、ベルギーのICE・ターボ・排気、イタリアのMGU-Kと補機類で、すべての部品が一度は上限を超えた。規則のとおりなら、今のハジャーは、どの部品を替えても1つにつき5グリッドで済む段階にいる。セパンで具体的にどの部品を替えるかは、ここで挙げた報道には書かれていない。"
+    },
+    {
+     "p": "降格の合計が15を超えると、何グリッド分かに関係なく最後尾からのスタートになる。リンドブラッドは、RacingNews365によると「5基目のパワーユニット」がプールに加わる。今季はまだPUの降格を受けていなかったが、今回で最後尾になる。"
+    },
+    {
+     "p": "グリッドの並べ方にも手順がある。FIAの規則（B2.5.4）では、降格が15以下のドライバーには、まず「予選の順位＋降格の数」の仮の位置を割り当てる。次に、罰のないドライバーを予選の順に空いた場所へ入れ、そのあと罰を受けたドライバーを前に詰める。15を超えたドライバーは全員の後ろに並び、その中の順番は予選の順位で決まる。仮の位置が重なったときは、予選で遅かったドライバーがその位置を取り、速かったドライバーがすぐ前に並ぶ。"
+    },
+    {
+     "p": "ハジャーは、降格を受けても前に出られると見ている。"
+    },
+    {
+     "quote": "僕にとっては難しくなる。5グリッド降格を受けるはずだからね。でも、それでも、レースペースがあれば順位を上げられるコースだと思う。",
+     "who": "ハジャー（レッドブル）"
+    }
+   ]
+  },
+  {
+   "h": "消化できなかった罰は、次のレースへ",
+   "body": [
+    {
+     "p": "コラピントの降格は、部品とは関係がない。バクーの決勝36周目、セーフティカー明けの再スタートで、コラピントは1コーナーでチームメイトのガスリーにぶつかった。はじかれたガスリーはノリスに当たり、ガスリーとノリスはリタイアした。"
+    },
+    {
+     "p": "F1公式サイトが伝えたスチュワードの裁定文には、こうある。"
+    },
+    {
+     "quote": "衝突を起こしたことへの標準的な罰は、10秒のタイム加算だ。コラピントはレースをリタイアしており、タイム加算を消化できなかったため、スチュワードはこの罰を、このドライバーが次に出場するレースでの5グリッド降格に切り替えた。",
+     "who": "スチュワードの裁定（FIA）"
+    },
+    {
+     "p": "根拠として裁定文が挙げたのは、2026年F1規則のB1.9.6(e)だ。タイム加算ペナルティは、ふつうはピットストップのときに止まって消化する（→タイム加算ペナルティ）。リタイアするとその機会がなくなるので、次のレースのグリッドに持ち越される。"
+    },
+    {
+     "p": "持ち越しには期限もある。オランダのGPblogは2025年8月、消化されないグリッド降格は12か月で消えるようになると伝えた。それまでは、消化するまでいつまでも持ち越された。英The Raceによると、2024年のアブダビGPで同じように10秒加算を5グリッド降格に切り替えられたボッタスは、この変更で、2026年の開幕戦で降格を受けずに済んだ。"
+    }
+   ]
+  },
+  {
+   "h": "なぜ「わざと」降格を受けるのか",
+   "body": [
+    {
+     "p": "部品の交換は、壊れたときだけに起きるわけではない。上限を超えることがすでに確実なら、チームは、どのレースでまとめて降格を受けるかを選べる。"
+    },
+    {
+     "p": "アストンマーティンは、バクーでホンダの新しい部品を入れ、アロンソは25グリッド、ストロールは20グリッドの降格で、2人とも最後尾からのスタートになった。ドイツのFormel1.deによると、チーフ・トラックサイド・オフィサーのマイク・クラックはこう話した。"
+    },
+    {
+     "quote": "この件では、ずっとホンダと話し合ってきた。……そして、どこで入れるのがいちばん理にかなっているかを選ぶ。もちろん、いつも、いちばん競争力がないと予想されるところで入れようとする。",
+     "who": "マイク・クラック（アストンマーティン）"
+    },
+    {
+     "p": "メルセデスは、待つことを選んでいる。ラッセルはICE、ターボ、ES、CEの上限を使い切っているが、改良版のPU（→ADUO）が来るまで降格を先に延ばしている（RacingNews365）。"
+    },
+    {
+     "quote": "ペナルティは、ADUOのアップグレードと一緒に受けるのを待っている。そうしないと、もしモンツァで受けていたら、もう一度受けなければならない。だから、僕にとってはまったく意味がなかった。",
+     "who": "ラッセル（メルセデス）"
+    },
+    {
+     "p": "一方、チームメイトのアントネッリは、イタリアGPで降格を受けた。予選7番手から最後尾に下がり、19番グリッドから優勝した（F1公式サイト）。ドイツのSPEEDWEEKは、ラッセルの降格はセパンかオースティンが候補で、シンガポールはマレーシアやテキサスより抜きにくいからだと伝えている。"
+    },
+    {
+     "p": "ただし、降格には数字に出ない重さもある。クラックはバクーで、こうも話していた。"
+    },
+    {
+     "quote": "いちばんの問題は、人の要素だ。……モチベーションが下がってしまうからね。",
+     "who": "マイク・クラック（アストンマーティン）"
+    },
+    {
+     "view": "セパンには長い直線が2本あり、ハジャー自身も「レースペースがあれば上がれる」と話している。後ろから追い上げるには、比べれば向いているコースなのかもしれない。ただ、F1がセパンを走るのは2017年以来で、路面やタイヤがどう働くかはまだはっきりしない。後ろからの追い上げが本当に成り立つかは、日曜のレースを見るまで分からない。"
+    }
+   ]
+  }
+ ],
+ "deep": [
+  {
+   "h": "2026年に使える部品の数",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "部品",
+       "2026年の上限",
+       "内訳",
+       "2022年の上限"
+      ],
+      "rows": [
+       [
+        "ICE（内燃エンジン）",
+        "4",
+        "3＋ボーナス1",
+        "3"
+       ],
+       [
+        "ターボチャージャー",
+        "4",
+        "3＋ボーナス1",
+        "3"
+       ],
+       [
+        "MGU-K",
+        "3",
+        "2＋ボーナス1",
+        "3"
+       ],
+       [
+        "ES（エネルギーストア）",
+        "3",
+        "2＋ボーナス1",
+        "2"
+       ],
+       [
+        "CE（制御電子機器）",
+        "3",
+        "2＋ボーナス1",
+        "2"
+       ],
+       [
+        "排気",
+        "4",
+        "3＋ボーナス1",
+        "8（部品ごと）"
+       ],
+       [
+        "補機類（PU-ANC）",
+        "6",
+        "5＋1",
+        "—"
+       ],
+       [
+        "MGU-H",
+        "廃止",
+        "—",
+        "3"
+       ]
+      ],
+      "note": "出典：F1公式サイト（2026年の上限と内訳、2022年の上限）、RacingNews365（補機類の数、B8.2.3）。ボーナスの1つは、2027年と2028年も同じ数のまま続くとFIAが確認した（RacingNews365、2026年7月）。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "降格の数え方",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "場面",
+       "決まり"
+      ],
+      "rows": [
+       [
+        "ある部品で初めて上限を超えた",
+        "10グリッド降格"
+       ],
+       [
+        "同じ部品で2回目以降に超えた",
+        "1回ごとに5グリッド降格"
+       ],
+       [
+        "同じ大会で複数の部品を替えた",
+        "降格は足し算"
+       ],
+       [
+        "降格の合計が15を超えた",
+        "最後尾から。15を超えた人どうしは予選の順"
+       ],
+       [
+        "タイム加算を消化できずにリタイア",
+        "次に出るレースのグリッド降格に切り替えられることがある（B1.9.6(e)）"
+       ],
+       [
+        "降格が消化されないまま",
+        "12か月で消える"
+       ]
+      ],
+      "note": "出典：F1公式サイト、FIAの2026年スポーティングレギュレーション（第6版）、バクーのスチュワードの裁定（F1公式サイト、Autosport）、GPblog、The Race。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "ハジャーの車の今季",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "大会",
+       "乗った人",
+       "新しく入れた部品",
+       "降格"
+      ],
+      "rows": [
+       [
+        "マイアミGP（5月）",
+        "ハジャー",
+        "ESとCE（上限を超える数）",
+        "ピットレーンスタート（予選失格で、もともと最後尾）"
+       ],
+       [
+        "ベルギーGP（7月）",
+        "ハジャー",
+        "ICE・ターボ・排気の5つ目",
+        "10×3＝30グリッド → 最後尾"
+       ],
+       [
+        "イタリアGP（9月）",
+        "ローソン（代役）",
+        "ICE・ターボ・排気の6つ目、MGU-Kの4つ目、補機類の7つ目",
+        "5×3＋10×2＝35グリッド。予選後にリアウイングとサスペンションの設定も変え、ピットレーンスタート"
+       ],
+       [
+        "バーレーンGP（マレーシア開催、10月）",
+        "ハジャー",
+        "未発表",
+        "5グリッド"
+       ]
+      ],
+      "note": "出典：F1公式サイト・米RACER（マイアミ）、PlanetF1・Autosport（ベルギー）、F1公式サイト・GPFans（イタリア）、RacingNews365・GPblog・The Race（マレーシア）。ローソンが乗ったオランダとマドリードの交換は、ここでは確かめていない。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "今季の主なグリッド降格（確かめられたものだけ）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "大会",
+       "ドライバー",
+       "理由",
+       "降格"
+      ],
+      "rows": [
+       [
+        "ベルギーGP",
+        "ハジャー",
+        "ICE・ターボ・排気の5つ目",
+        "30グリッド → 最後尾"
+       ],
+       [
+        "イタリアGP",
+        "ローソン",
+        "ICE・ターボ・排気の6つ目、MGU-Kの4つ目、補機類の7つ目",
+        "35グリッド（リアウイングの交換などでピットレーンスタート）"
+       ],
+       [
+        "イタリアGP",
+        "アントネッリ",
+        "ICEの5つ目、CEの4つ目、ESの4つ目",
+        "30グリッド → 最後尾（19番手から優勝）"
+       ],
+       [
+        "イタリアGP",
+        "アルボン",
+        "ICEの5つ目、CEの4つ目",
+        "20グリッド → 最後尾"
+       ],
+       [
+        "アゼルバイジャンGP",
+        "アロンソ",
+        "ICE・ターボの5つ目、補機類の9つ目",
+        "25グリッド → 最後尾"
+       ],
+       [
+        "アゼルバイジャンGP",
+        "ストロール",
+        "ターボの6つ目、ESの7つ目、CEの6つ目、補機類の8つ目",
+        "20グリッド → 最後尾"
+       ],
+       [
+        "アゼルバイジャンGP",
+        "サインツ",
+        "予選Q3で黄旗を守らなかった",
+        "5グリッド"
+       ],
+       [
+        "バーレーンGP（マレーシア開催）",
+        "ハジャー",
+        "PU部品の交換（部品は未発表）",
+        "5グリッド"
+       ],
+       [
+        "バーレーンGP（マレーシア開催）",
+        "リンドブラッド",
+        "5基目のPU",
+        "最後尾"
+       ],
+       [
+        "バーレーンGP（マレーシア開催）",
+        "コラピント",
+        "バクーの衝突の10秒加算を消化できず",
+        "5グリッド"
+       ]
+      ],
+      "note": "出典：PlanetF1、F1公式サイト、GPFans、Formel1.de、The Race、RacingNews365。今季の全部の降格ではない。SPEEDWEEKによると、今季はノリス、アルボン、サインツ、ストロール、アロンソ、ローソン、ベアマンもPU部品の上限を超えている。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "規則：グリッドを並べる手順",
+   "body": [
+    {
+     "p": "FIAの2026年スポーティングレギュレーション（4月28日付の第6版）のB2.5.4では、決勝のグリッドは予選の結果から、次の順で作る。(1) 降格の合計が15以下のドライバーに「予選の順位＋降格の数」の仮の位置を割り当てる。(2) 罰のないドライバーを、予選の順に空いた位置へ入れる。(3) 仮の位置にいるドライバーを、空いた位置まで前に詰める。(4) 降格の合計が15を超えたドライバーは、ほかの全員の後ろ。その中の順番は予選の順位で決める。"
+    },
+    {
+     "p": "英The Raceによると、2026年の規則ではこのB2.5.4(b)(i)が書き換えられ、数えるのは過去12か月に科された降格だけになった。"
+    }
+   ]
+  },
+  {
+   "h": "ギアボックスの降格は？",
+   "body": [
+    {
+     "p": "かつては、ギアボックスにも使える数の上限があった。英Autosportによると、2022年からは、ギアボックスを「ケースとカセット」と「ドライブライン、ギアチェンジ、補機類」の2つに分け、22〜23戦のシーズンでそれぞれ4つまで。5つ目を使うと5グリッド降格だった。"
+    },
+    {
+     "p": "英TopGearによると、2025年にはこの上限がなくなり、ギアボックスの交換でグリッド降格を受けることはなくなった。英Sky Sportsのバーニー・コリンズは2025年の開幕前、2026年の規則には制限がまだ書かれているが、2024年12月から更新されていないと説明していた。2026年の規則でギアボックスの上限がどうなっているかは、ここで挙げた資料からは確かめられない。"
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "プール",
+   "そのシーズンに一度使ったPUの部品の集まり。上限の数の内側なら、レースごとに入れ替えても罰はない。"
+  ],
+  [
+   "補機類（PU-ANC）",
+   "パワーユニットの補助的な部品。2026年は6つまで使える。"
+  ],
+  [
+   "ボーナス",
+   "新しいPU規則への移行に合わせて、部品ごとに1つずつ多く認められた分。2028年まで続く。"
+  ],
+  [
+   "仮のグリッド位置",
+   "グリッドを並べるとき、降格が15以下のドライバーにまず割り当てる「予選の順位＋降格の数」の位置。"
+  ],
+  [
+   "消化",
+   "科された罰を実際に受けること。タイム加算ならピットで止まる、グリッド降格なら後ろからスタートする。"
+  ],
+  [
+   "戦略的な降格",
+   "上限を超えることが確実なとき、影響が小さそうなレースを選んで、部品をまとめて替えて降格を受けること。英語ではタクティカル・ペナルティと呼ばれることがある。"
+  ]
+ ],
+ "sources": [
+  {
+   "name": "RacingNews365",
+   "title": "FIA confirm future F1 engine penalty rules after 2026 change",
+   "url": "https://racingnews365.com/fia-confirm-future-f1-engine-penalty-rules-after-2026-change"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "F1 2026 engine rules and penalties explained",
+   "url": "https://racingnews365.com/f1-2026-engine-rules-and-penalties-explained"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "The beginner's guide to F1 power unit penalties",
+   "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-engine-and-gearbox-penalties.2TSy7BFgEvdNLojGLWS3F1"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "How many power unit components has each driver used in 2026 so far?",
+   "url": "https://www.formula1.com/en/latest/article/how-many-power-unit-components-has-each-driver-used-in-2026-so-far.6DLZYWn0uEpsB0409mFRTF"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "How do F1 engine penalties work?（2022年の上限）",
+   "url": "https://www.formula1.com/en/latest/article/how-do-f1-engine-penalties-work.7aLmj23MgHiv9Rin48ROrY"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "Isack Hadjar confirms Red Bull grid penalty upon F1's Malaysia return",
+   "url": "https://racingnews365.com/isack-hadjar-confirms-red-bull-grid-penalty-upon-f1s-malaysia-return"
+  },
+  {
+   "name": "Grande Prêmio",
+   "title": "Hadjar reveals five-place Sepang grid penalty as he lowers Red Bull expectations",
+   "url": "https://grandepremio.com/en/f1/hadjar-reveals-five-place-sepang-grid-penalty-as-he-lowers-red-bull-expectations/"
+  },
+  {
+   "name": "GPblog",
+   "title": "Hadjar confirms five-place grid penalty as Red Bull face Sepang challenge",
+   "url": "https://www.gpblog.com/en/news/hadjar-confirms-five-place-grid-penalty-as-red-bull-face-sepang-challenge"
+  },
+  {
+   "name": "The Race",
+   "title": "Three drivers facing grid penalties for F1's Malaysia return",
+   "url": "https://www.the-race.com/formula-1/three-drivers-facing-grid-penalties-for-f1-malaysia-return/"
+  },
+  {
+   "name": "The Race",
+   "title": "Lindblad gets back-of-the-grid penalty for F1's Malaysia return",
+   "url": "https://www.the-race.com/formula-1/arvid-lindblad-gets-back-of-the-grid-penalty-for-f1-malaysia-return/"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "Racing Bulls confirm Bahrain GP in Malaysia grid penalty",
+   "url": "https://racingnews365.com/racing-bulls-confirm-bahrain-gp-in-malaysia-grid-penalty"
+  },
+  {
+   "name": "SPEEDWEEK",
+   "title": "Penalties for the Bahrain GP in Malaysia: Three drivers affected, more on the horizon",
+   "url": "https://www.speedweek.com/en/a/formula-1/penalties-for-bahrain-gp-in-malaysia-three-drivers-affected-more-on-the-horizon"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Colapinto hit with five-place grid penalty for Bahrain GP in Malaysia after Baku collision",
+   "url": "https://www.formula1.com/en/latest/article/colapinto-hit-with-five-place-grid-penalty-for-bahrain-gp-in-malaysia-after-baku-collision.3gWVfzDMMr5hReiwTt1fPD"
+  },
+  {
+   "name": "Autosport",
+   "title": "Franco Colapinto penalty revealed for causing Baku F1 pile-up",
+   "url": "https://www.autosport.com/f1/news/franco-colapinto-penalty-revealed-for-causing-baku-f1-pile-up/10859374/"
+  },
+  {
+   "name": "The Race",
+   "title": "What we learned on the first day of F1's Malaysia return（サインツの5グリッド降格）",
+   "url": "https://www.the-race.com/formula-1/what-we-learned-on-the-first-day-of-f1s-malaysia-return/"
+  },
+  {
+   "name": "GPblog",
+   "title": "Formula 1 grid penalties overhauled as FIA introduces major changes",
+   "url": "https://www.gpblog.com/en/news/formula-1-grid-penalties-overhauled-as-fia-introduces-major-changes"
+  },
+  {
+   "name": "The Race",
+   "title": "Why F1 has cancelled the first grid penalty of 2026",
+   "url": "https://www.the-race.com/formula-1/f1-2026-first-grid-penalty-australian-gp-valtteri-bottas-vanished"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section B Sporting（第6版、2026年4月28日。statsf1.comの写しで確認）",
+   "url": "https://www.statsf1.com/reglement/sportif.pdf"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Max Verstappen facing 'definite' grid penalty after ICE issue in Baku",
+   "url": "https://www.planetf1.com/news/max-verstappen-engine-penalty-red-bull-ice-failure-azerbaijan-gp"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "FIA confirms Isack Hadjar penalty for Belgian Grand Prix",
+   "url": "https://www.planetf1.com/news/fia-isack-hadjar-belgian-grand-prix-2026-penalty"
+  },
+  {
+   "name": "Autosport",
+   "title": "Hadjar set for Belgian GP grid penalty after F1 engine change",
+   "url": "https://www.autosport.com/f1/news/hadjar-set-for-belgian-gp-grid-penalty-after-f1-engine-change/10839441/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Lawson to start from the back of the grid at Monza after engine penalty",
+   "url": "https://formula1.com/en/latest/article/lawson-to-start-from-the-back-of-the-grid-at-monza-after-engine-penalty.5A1HcmohGNdd5rcuxNmU7U"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA confirm 35-place grid penalty for Red Bull F1 star at Italian Grand Prix",
+   "url": "https://www.gpfans.com/en/f1-news/1089902/fia-confirm-35-place-grid-penalty-for-red-bull-f1-star-at-italian-grand-prix/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Antonelli beats Russell to Italian Grand Prix win with stunning comeback drive",
+   "url": "https://formula1.com/en/latest/article/antonelli-beats-russell-to-italian-grand-prix-win-with-stunning-comeback-drive.15WtFEBT5JEe4drdeO88t2"
+  },
+  {
+   "name": "Formel1.de",
+   "title": "Baku: Fernando Alonso und Stroll müssen ans Ende der Startaufstellung",
+   "url": "https://www.formel1.de/news/news/2026-09-24/baku-fernando-alonso-und-stroll-muessen-ans-ende-der-startaufstellung"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "George Russell reveals reason behind wait for Mercedes F1 engine penalty",
+   "url": "https://racingnews365.com/george-russell-reveals-reason-behind-wait-for-mercedes-f1-engine-penalty"
+  },
+  {
+   "name": "Crash.net",
+   "title": "The reason George Russell and Mercedes are delaying his F1 engine penalty",
+   "url": "https://www.crash.net/f1/news/1104120/1/reason-george-russell-and-mercedes-are-delaying-his-f1-engine-penalty"
+  },
+  {
+   "name": "Autosport",
+   "title": "How new F1 gearbox rule reduces Jeddah crash grid penalty jeopardy",
+   "url": "https://www.autosport.com/f1/news/how-new-f1-gearbox-rule-reduces-jeddah-crash-grid-penalty-jeopardy/9275325/"
+  },
+  {
+   "name": "TopGear",
+   "title": "Here are all the key F1 rule changes for 2025",
+   "url": "https://www.topgear.com/car-news/formula-one/here-are-all-key-f1-rule-changes-2025"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "F1 rules changes 2025: explaining what's new ahead of Australian Grand Prix",
+   "url": "https://www.skysports.com/f1/news/12433/13327209/f1-rules-changes-2025-explaining-whats-new-whats-changed-ahead-of-australian-grand-prix"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Hadjar disqualified from Miami Grand Prix Qualifying",
+   "url": "https://www.formula1.com/en/latest/article/hadjar-disqualified-from-miami-grand-prix-qualifying.6ANxlH2BpIvVgSPfzkW3RL/"
+  },
+  {
+   "name": "RACER",
+   "title": "Red Bull admits mistake as Hadjar's car deemed illegal post-qualifying",
+   "url": "https://racer.com/2026/05/03/red-bull-admits-mistake-as-hadjar-s-car-deemed-illegal-post-qualifying"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Hadjar to make racing return with Red Bull at Azerbaijan GP",
+   "url": "https://www.formula1.com/en/latest/article/hadjar-to-make-racing-return-with-red-bull-at-azerbaijan-gp.1ddPnUSDEze0V9MCiQ9d2U"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Albon joins Antonelli with heavy grid drop for Italian Grand Prix",
+   "url": "https://formula1.com/en/latest/article/albon-joins-antonelli-with-heavy-grid-drop-for-italian-grand-prix.1qBmyUa5kxPfClqd8ibZ5Q"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "OFFICIAL GRID: Who starts where for the Italian Grand Prix 2026",
+   "url": "https://formula1.com/en/latest/article/official-grid-who-starts-where-for-the-italian-grand-prix-2026.18oNflCZ6vMKCASJEMERzi"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Sainz hit with five-place grid penalty for Azerbaijan GP after yellow flag breach in Qualifying",
+   "url": "https://www.formula1.com/en/latest/article/sainz-hit-with-five-place-grid-penalty-for-azerbaijan-gp-after-yellow-flag-breach-in-qualifying.1gS7cC7mRmvBvIrJGRH6Bb"
+  }
+ ],
+ "history": [
+  [
+   "2026-10-02",
+   "下書き。確認係が事実を確かめて修正。決勝後に答え合わせを追記"
+  ]
+ ],
+ "lensRelated": []
+}
