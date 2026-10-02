@@ -11,6 +11,7 @@ TODAY（ニュースの要約）＝何が起きた？／WORLD MEDIA LENS（コ�
 
 ## 2. 頻度と公開
 - 週1本が基本（レースのない週の水曜ごろ）。レース週末は、その週の話題に合わせて臨機応変。
+- 下書きをオーナーに見せるときは、スマホ幅（430px）のPDFにして送る（「データと記録」は開いた状態。10/2オーナーの決定：「ブランチ」は見られないので、PDFがいちばんちょうどいい）。
 - **公開は必ずオーナーのOKのあと。** 流れ：作業用ブランチ `preview-deep-<slug>` → `PREVIEW_DRAFTS=1 python3 build.py` → スマホ幅（390px）で明るい表示とダークテーマを撮って見せる → OK → `"draft": true` を外し、`published` を実際の公開時刻（+09:00）にする → `python3 build.py` → main にコミット・push → GitHub Actions の反映を確認。
 - コミットの名義は `Claude` / `noreply@anthropic.com`。`rm -rf __pycache__` を忘れない。
 
