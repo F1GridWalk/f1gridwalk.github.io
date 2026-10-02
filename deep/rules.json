@@ -13827,6 +13827,2594 @@
     }
    ],
    "checked": "2026-10-02"
+  },
+  {
+   "id": "rain-hazard",
+   "term": "雨の宣言（レインハザード）",
+   "cat": "レース運営",
+   "aliases": [
+    "レインハザード",
+    "レイン・ハザード",
+    "Rain Hazard",
+    "れいんはざーど"
+   ],
+   "words": [
+    "雨の予報",
+    "降水確率40%",
+    "車高の変更",
+    "前翼の設定",
+    "パルクフェルメ",
+    "底板の保護"
+   ],
+   "short": "雨が降りそうなとき、レースディレクターが出す宣言。予選後でも車高などを直せる。",
+   "body": [
+    "レインハザードは、2026年に入った新しい決まりだ。公式の天気予報で、スプリントやレースのどこかで雨の確率が40％を超えるとき、またはレースディレクターが自分の判断で決めたときに出せる。レースについては予選の2時間前まで、スプリントについてはスプリント予選の2時間前までに出す。出したあとは、そのスプリントやレースの終わりの合図まで続く。",
+    "予選のあとは、マシンはパルクフェルメに入り、ふつうは作業ができない。レインハザードの間は、FIAの別の文書に決められた作業だけが許される。The Raceによると、その中身は2つだ。前翼のアクティブエアロの2つの状態の設定を変えること（コーナーモードでダウンフォースを出しすぎないようにできる）と、車高を上げて底板（プランク）がすり減る余裕を増やすことだ。乾いた路面向けの設定で予選を走ったあとに雨になっても、底板を傷めにくくするための決まりだ。",
+    "2026年は、5月のマイアミGPで初めて宣言され、カナダGPでも宣言された。どちらも、レース中に雨の確率が40％を超えるという予報が理由だった。走っている最中の路面の状態に合わせて出す「低グリップ宣言」とは別で、レインハザードは降る前の備えにあたる。The Raceは、最初の9戦で様子を見て、オーストリアGP以降は、決められた晴れ用と雨用の設定を切り替えるだけの、もっと簡単な方式にする案もあると報じた。"
+   ],
+   "rule": "スポーティングレギュレーション B1.5.11",
+   "examples": [
+    {
+     "t": "セパンの週末は3日間とも降水確率90％前後と紹介された。レインハザードの目安の40％を大きく上回る予報だった。",
+     "u": "/news/ja-f1are-sepang-weather-forecast/"
+    }
+   ],
+   "see": [
+    "wet-race-declared",
+    "parc-ferme",
+    "plank",
+    "active-aero",
+    "ride-height",
+    "heat-hazard",
+    "lightning"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 06) B1.5.11",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Miami Grand Prix - Rain Hazard Declaration",
+     "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_rain_hazard_declaration.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 declares Miami GP 'Rain Hazard' - new rule explained",
+     "url": "https://www.the-race.com/formula-1/f1s-new-rain-hazard-rule-explained/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "FIA declare Canadian Grand Prix rain hazard",
+     "url": "https://racingnews365.com/fia-declare-canadian-grand-prix-rain-hazard"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "wet-race-declared",
+   "term": "ウェット宣言",
+   "cat": "レース運営",
+   "aliases": [
+    "ウェット宣言",
+    "ウェットレース",
+    "Declared wet",
+    "低グリップ宣言",
+    "Low Grip Conditions",
+    "うぇっとせんげん"
+   ],
+   "words": [
+    "コースが濡れた",
+    "雨用タイヤ",
+    "低グリップ",
+    "ウェットコンディション",
+    "107％ルールの例外",
+    "ブーストの禁止"
+   ],
+   "short": "コースが濡れたとレースディレクターが認めること。2026年は別に「低グリップ宣言」もある。",
+   "body": [
+    "F1では、路面が濡れているかどうかを、レースディレクターが宣言する。2026年の規則では、予選（スプリント予選も）の107％ルールは「レースディレクターがウェットと宣言したときは使わない」とあり、宣言の有無で扱いが変わる。",
+    "古い例では、2024年のカナダGPの金曜（フリー走行2回目）に、ウェット宣言の前にインターミディエイトで出ていったフェラーリのルクレールの車について、チームに5000ユーロの罰金が出た。当時（2024年）の規則の第30.5条lは、インターミディエイトとウェットタイヤは「ウェットと宣言されたあと」にだけ使えると定めていた。これは2024年の規則の話だ。",
+    "2026年は、これとは別に「低グリップ宣言（Low Grip Conditions）」がある。レースディレクターがいつでも自分の判断で出せて、全チームに知らされる。元に戻す「通常グリップ宣言」もある。低グリップの間は、ブーストモードが使えない。アクティブエアロは、フルでは動かさず、一部だけにできる（前翼は空気抵抗の小さいストレートモード、後翼はダウンフォースの大きいコーナーモードのまま）。",
+    "雨の決まりは、2026年5月のマイアミGPの前にも見直された。FIAによると、雨のときは電気（ERS）の最大出力を下げてトルクを抑え、インターミディエイト用タイヤウォーマーの温度を上げ、後ろのライトを見やすく簡単にした。"
+   ],
+   "rule": "スポーティングレギュレーション B1.5.12（低グリップ宣言）、B2.4.3b.i（107％の例外）",
+   "examples": [
+    {
+     "t": "セパンの週末は、土曜に雷雨の予報も出て、ウェットコンディションの可能性が話題になった。",
+     "u": "/news/ja-f1are-sepang-weather-forecast/"
+    }
+   ],
+   "see": [
+    "rain-hazard",
+    "intermediate",
+    "full-wet",
+    "two-compound-rule",
+    "107-rule",
+    "active-aero",
+    "overtake-mode",
+    "tyre-blankets"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 06) B1.5.12, B2.4.3b.i",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2024 Canadian Grand Prix - Infringement - Car 16 - Tyre Usage",
+     "url": "https://fia.com/sites/default/files/decision-document/2024%20Canadian%20Grand%20Prix%20-%20Infringement%20-%20Car%2016%20-%20Tyre%20Usage.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "Refinements to the 2026 FIA Formula 1 regulations agreed by all stakeholders",
+     "url": "https://www.fia.com/news/refinements-2026-fia-formula-1-regulations-agreed-all-stakeholders"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Practice session changes and wet-weather controls revealed in new FIA documents",
+     "url": "https://www.planetf1.com/news/fia-world-motor-sport-council-meeting-decemeber-2025-rule-changes"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 grid in trepidation over wet Miami GP chance",
+     "url": "https://www.the-race.com/formula-1/wet-miami-gp-f1-grid-expectations/"
+    },
+    {
+     "name": "F1i",
+     "title": "Boost banned in the wet as FIA refines 2026 F1 regulations",
+     "url": "https://f1i.com/news/563387-boost-banned-in-the-wet-as-fia-refines-2026-f1-regulations.html"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "track-temperature",
+   "term": "路面温度",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "トラックテンプ",
+    "Track temperature",
+    "Track temp",
+    "アスファルト温度",
+    "ろめんおんど"
+   ],
+   "words": [
+    "路面の熱さ",
+    "気温との違い",
+    "タイヤの温度",
+    "作動温度の幅",
+    "暑いコース",
+    "寒いコース"
+   ],
+   "short": "アスファルトそのものの温度。タイヤの状態を大きく左右し、気温とは別に見る。",
+   "body": [
+    "路面温度は、コースのアスファルトの温度だ。気温とは別に見る。メルセデスの解説では、路面温度はタイヤの熱を決め、気温はおもにブレーキ、冷却、パワーユニットに響く。暑い日は、ラジエーターに風を入れるために、カウルの開口部を広げることもある。",
+    "F1のタイヤは、よく働く温度の幅がとても狭い。低すぎるとグリップが足りず、高すぎると性能が落ちて減りも早くなる。数度外れるだけで、ラップタイムは0.1秒単位で変わるという。前のタイヤと後ろのタイヤで温度が違うと、車のバランスも変わるので、チームはセットアップで合わせる。",
+    "路面が冷たいと、タイヤが温まらずグレイニングが出やすい。ピレリのチーフエンジニアのシモーネ・ベッラは、グレイニングは路面温度が低いときに起きると説明している。逆に暑いと、デグラデーションが大きくなる。2026年のバルセロナ・カタルーニャGPでは、金曜に路面温度が52℃に達し、ベッラは、路面の荒さやコースの負荷に加えて、路面温度の高さと、熱によるタイヤの性能低下を挙げた。"
+   ],
+   "examples": [
+    {
+     "t": "セパンは高温多湿で、ピレリはタイヤへの負荷を5段階中4と評価した。",
+     "u": "/news/en-therace-malaysia-driver-expectations/"
+    }
+   ],
+   "see": [
+    "degradation",
+    "graining",
+    "blistering",
+    "tyre-warm-up",
+    "track-evolution",
+    "heat-hazard",
+    "tyre-blankets"
+   ],
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Insight: Temperature talk",
+     "url": "https://www.mercedesamgf1.com/news/insight-temperature-talk"
+    },
+    {
+     "name": "Pirelli",
+     "title": "It's graining, men",
+     "url": "https://pirelli.com/global/en-ww/race/racingspot/formula-1/it-s-graining-men--124082"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 drivers' 2026 Barcelona GP nightmare: huge balloon tyres",
+     "url": "https://www.the-race.com/formula-1/f1-drivers-2026-barcelona-gp-nightmare-huge-balloon-tyres/"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "lightning",
+   "term": "雷と走行中止の判断",
+   "cat": "レース運営",
+   "aliases": [
+    "雷",
+    "ライトニング",
+    "Lightning",
+    "雷雨",
+    "30/30ルール",
+    "かみなり"
+   ],
+   "words": [
+    "雷雨で中断",
+    "医療ヘリ",
+    "赤旗",
+    "スタート時間の変更",
+    "雷で延期",
+    "30分ルール"
+   ],
+   "short": "雷が近いと、レースを止めたり開始を早めたりする。医療ヘリが飛べなくなるからだ。",
+   "body": [
+    "F1のレースは、緊急のときに医療ヘリコプターが飛べる状態でないと、続けられない。モータースポーツ・マガジンによると、FIAの規則で、ヘリが待機し、決められた病院へ飛べることが求められ、天候でヘリが安全に飛べないときは、レースを止めるか始めないことになる。",
+    "アメリカの3大会（マイアミ、オースティン、ラスベガス）では、現地の安全の決まりも関わる。モータースポーツ・マガジンは、稲妻から雷鳴までが30秒以下なら屋外の活動を止め、最後の稲妻や雷鳴から30分たつまで再開しない「30/30」の考え方を紹介した。止めるときは赤旗が出て、全車がピットレーンに戻る。モータースポーツ・コムによると、中断の間は、決められた範囲の作業をガレージでできるが、再開を遅らせてはいけない。",
+    "誰が決めるかは、報道で説明が違う。モータースポーツ・コムは、再開のタイミングはレースディレクターが決め、スチュワードにも権限があると書いた。モータースポーツ・マガジンは、現地の安全基準によって主催者が止めることになり、F1はそれを覆せないと書いた。2026年のマイアミGPでは、雷雨の予報を受けて、FIA、F1（FOM）、主催者が決勝の開始を3時間早め、現地13時にした。"
+   ],
+   "examples": [
+    {
+     "t": "セパンの週末は、土曜に雷雨の予報が出ていると紹介された。",
+     "u": "/news/ja-f1are-sepang-weather-forecast/"
+    }
+   ],
+   "see": [
+    "red-flag",
+    "race-control",
+    "stewards",
+    "medical-car",
+    "marshal",
+    "rain-hazard"
+   ],
+   "src": [
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Why lightning - not just rain - could stop the Miami Grand Prix",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/why-lightning-not-just-rain-could-stop-the-miami-grand-prix/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "The law that would cancel the Miami F1 Grand Prix if the predictions come true",
+     "url": "https://www.motorsport.com/f1/news/the-law-that-would-cancel-the-miami-f1-grand-prix-if-the-predictions-come-true/10816519/"
+    },
+    {
+     "name": "The Race",
+     "title": "Miami Grand Prix start time changed amid storm threat",
+     "url": "https://www.the-race.com/formula-1/miami-grand-prix-start-time-changed-amid-storm-threat/"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Miami GP start time for Sunday's race moved earlier amid threat of thunderstorms in Florida",
+     "url": "https://www.skysports.com/f1/news/12040/13539234/miami-gp-start-time-for-sundays-race-moved-earlier-amid-threat-of-thunderstorms-in-florida"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "telemetry",
+   "term": "テレメトリー",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "テレメトリ",
+    "Telemetry",
+    "走行データ",
+    "てれめとりー"
+   ],
+   "words": [
+    "センサーのデータ",
+    "リアルタイムのデータ",
+    "ピットウォールの画面",
+    "データ解析",
+    "車のデータ"
+   ],
+   "short": "走行中のマシンから送られるデータ。ピットとファクトリーが見て、作戦や不具合の発見に使う。",
+   "body": [
+    "テレメトリーは、走っている車のデータを、リアルタイムでチームが受け取る仕組みだ。F1公式の用語集では「走行中の車の性能を分析できるリアルタイムのデータ」とされる。アストンマーティンは、車に250以上のセンサーがあると説明している。ウィリアムズによると、1周で、タイヤの空気圧、ブレーキの温度、空力の荷重、ドライバーの操作などの大量のデータが生まれる。",
+    "データは、ピットウォールと、チームの本拠地の両方で見られる。フェラーリのピットウォールでは、各自が好きな画面を組み、テレメトリー、GPSデータ、他チームの無線、天気レーダーなどを見る。オートスポーツによると、燃料の量や温度、タイヤの減りなどもここで確かめて、作戦に使う。",
+    "データを読む専門の担当もいる（→データエンジニア）。データが言うことと、ドライバーの感覚が合わないこともある。2026年のバクーでは、アロンソが直線で出力が落ちたと訴えたが、ホンダはデータを見て「エンジンは問題ない」と述べ、見方が分かれた。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでアロンソが出力低下を訴えたが、ホンダは「データ上は問題ない」とした。",
+     "u": "/news/en-rn365-alonso-honda-data-dispute/"
+    }
+   ],
+   "see": [
+    "data-engineer",
+    "race-engineer",
+    "simulator",
+    "pit-board",
+    "control-electronics"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "Aston Martin F1",
+     "title": "So you want to be an F1 data engineer",
+     "url": "https://www.astonmartinf1.com/en-GB/news/feature/so-you-want-to-be-an-f1-data-engineer"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "How F1 data jobs bring insights to the track",
+     "url": "https://careers.williamsf1.com/blog/2025-10/how-f1-data-jobs-bring-insights-to-the-track"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "The insider's guide to... The Pit Wall",
+     "url": "https://www.formula1.com/en/latest/article/the-insiders-guide-to-the-pit-wall.CFwHwjTcLNO5Gf4B3Dy4o"
+    },
+    {
+     "name": "Autosport",
+     "title": "Everything you need to know about the pitwall in F1",
+     "url": "https://www.autosport.com/f1/news/everything-you-need-to-know-about-the-pitwall-in-f1-who-sits-there-and-what-does-it-do/10588720/"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "data-engineer",
+   "term": "データエンジニア（パフォーマンスエンジニア）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "データエンジニア",
+    "パフォーマンスエンジニア",
+    "Data engineer",
+    "Performance engineer",
+    "データ解析担当"
+   ],
+   "words": [
+    "データを読む人",
+    "データ解析",
+    "セットアップの分析",
+    "レースエンジニアの補佐",
+    "ミッションコントロール"
+   ],
+   "short": "車のデータを集めて分析し、セットアップや作戦の判断を助ける技術者。",
+   "body": [
+    "名前や仕事の分け方はチームで違うが、どちらも、車から出る大量のデータを読み解く役だ。データエンジニアは、センサーのデータの流れを整え、見やすい道具を作る。アストンマーティンの例では、データを図にする道具を作り、走行中は「ミッションコントロール」でその道具を見守って、エンジニアの求めに応える。ウィリアムズでは、レース現場だけでなく、製造などの部署も同じデータを使えるようにする仕組みも作る。",
+    "パフォーマンスエンジニアは、データを分析して、決めるための材料をレースエンジニアに示す。ハースのパフォーマンスエンジニアの説明では、レースエンジニアとセットアップを相談し、シミュレーションを分析し、報告書をまとめ、使う車が規則の範囲に収まっているかも確かめる。方向を決めるのはレースエンジニアで、パフォーマンスエンジニアは、その判断をしやすくするために情報を整理する。"
+   ],
+   "see": [
+    "telemetry",
+    "race-engineer",
+    "simulator",
+    "technical-director"
+   ],
+   "src": [
+    {
+     "name": "Aston Martin F1",
+     "title": "So you want to be an F1 data engineer",
+     "url": "https://www.astonmartinf1.com/en-GB/news/feature/so-you-want-to-be-an-f1-data-engineer"
+    },
+    {
+     "name": "Haas F1 Team",
+     "title": "Staff spotlight: Daniela Klausser, Performance Engineer",
+     "url": "https://haasf1team.com/news/staff-spotlight-daniela-klausser-performance-engineer"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "How F1 data jobs bring insights to the track",
+     "url": "https://careers.williamsf1.com/blog/2025-10/how-f1-data-jobs-bring-insights-to-the-track"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "wind-tunnel",
+   "term": "風洞",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ウインドトンネル",
+    "ウィンドトンネル",
+    "Wind tunnel",
+    "風洞実験",
+    "ふうどう"
+   ],
+   "words": [
+    "空力テスト",
+    "縮小模型",
+    "ダウンフォースの測定",
+    "ローリングロード",
+    "風洞の走行回数",
+    "空気の流れ"
+   ],
+   "short": "縮小した模型に風を当て、空気の力を測る設備。空力開発の中心だ。",
+   "body": [
+    "風洞は、動かない模型に風を当てて、ダウンフォースや空気抵抗を測る設備だ。F1では、模型は実車の60％の大きさ、風の速さは秒速50m（時速180km）に制限されている。テストでは、車高、ハンドルの角度、翼の角度、車の向き（ヨー）などを自動で変えて、コーナーを走る状態を再現する。模型に付けた多数の圧力の測定点から、空気の流れを調べる。",
+    "使える量には上限がある（→空力テストの制限（ATR））。2026年の前半は、基準（7位）が風洞320回で、選手権1位のマクラーレンが224回（70％）、最も多いアルピーヌとキャデラックが368回（115％）だった。2026年の新規則に向けては、2023年12月1日から2024年末まで、2026年型の形での風洞やCFDの作業が禁止された。",
+    "風洞のデータは、そのまま信じるわけではない。F1公式の技術解説で、ロブ・スメドレー氏は「どのチームの風洞も、100％は合っていない」と述べている。CFDや、実際に走ったデータと合わせて、ずれを確かめる（→相関）。"
+   ],
+   "examples": [
+    {
+     "t": "アウディはバクーで新旧の空力パッケージを金曜に走らせ、センサーのデータを風洞やシミュレーションと照らし合わせたと伝えられた。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    }
+   ],
+   "see": [
+    "atr",
+    "cfd",
+    "correlation",
+    "downforce",
+    "drag",
+    "upgrade"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: How F1 uses windtunnels, and how it'll change",
+     "url": "https://the-race.com/formula-1/gary-anderson-how-f1-uses-windtunnels-and-how-itll-change/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 2026 teams' wind tunnel time (ATR)",
+     "url": "https://racingnews365.com/f1-2026-teams-wind-tunnel-time"
+    },
+    {
+     "name": "The Race",
+     "title": "How F1's aero development ban for 2026 cars will work",
+     "url": "https://www.the-race.com/formula-1/how-f1s-aero-development-ban-for-2026-cars-will-work/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "FIA formalises ban on 2026 F1 aero testing",
+     "url": "https://www.motorsport.com/f1/news/fia-formalises-ban-on-2026-f1-aero-testing/10555905/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Testing explained: Rob Smedley on correlation, aero rakes and flow-vis paint",
+     "url": "https://www.formula1.com/en/latest/article.testing-explained-rob-smedley-on-correlation-aero-rakes-and-flow-vis-paint.5UTaH1q9iuQcXVjZXui3Fz.html"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "cfd",
+   "term": "CFD",
+   "cat": "マシンと空力",
+   "aliases": [
+    "シーエフディー",
+    "CFD",
+    "数値流体力学",
+    "Computational Fluid Dynamics",
+    "空力シミュレーション"
+   ],
+   "words": [
+    "空気の流れの計算",
+    "コンピューターシミュレーション",
+    "風洞との違い",
+    "空力開発",
+    "計算の回数"
+   ],
+   "short": "コンピューターで空気の流れを計算するシミュレーション。風洞とあわせて使う。",
+   "body": [
+    "CFDは、コンピューターで空気の流れを計算し、車の空力を予想する方法だ。テキサス大学の解説では、まだ実物を作る前の、考えの段階から形を試せるのが強みだとされる。風洞を置き換えるものではなく、補うものだ。フェラーリの技術者は「比べる基準が必要で、風洞はなくならない」と話している。",
+    "使える量には上限がある（→空力テストの制限（ATR））。CFDは「件数」で数え、基準（7位）の100％は期間ごとに2000件だ。2026年の前半は、選手権1位のマクラーレンが1400件（70％）、最も多いアルピーヌとキャデラックが2300件（115％）だった。2026年の新規則に向けては、風洞と同じく、2023年12月1日から2024年末まで、2026年型の形での計算が禁止された。",
+    "計算が実際の走行とずれると、開発が空回りする（→相関）。そのため、CFD、風洞、走行データを突き合わせて使う。"
+   ],
+   "see": [
+    "atr",
+    "wind-tunnel",
+    "correlation",
+    "downforce",
+    "upgrade",
+    "simulator"
+   ],
+   "src": [
+    {
+     "name": "Texas Engineering",
+     "title": "F1 Engineering And Computational Fluid Dynamics Explained",
+     "url": "https://cockrell.utexas.edu/news/archive/7432-formula1cfd"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 2026 teams' wind tunnel time (ATR)",
+     "url": "https://racingnews365.com/f1-2026-teams-wind-tunnel-time"
+    },
+    {
+     "name": "The Race",
+     "title": "The aero restrictions each F1 team will face in 2026",
+     "url": "https://www.the-race.com/formula-1/the-aero-restrictions-each-f1-team-will-face-in-2026/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "FIA formalises ban on 2026 F1 aero testing",
+     "url": "https://www.motorsport.com/f1/news/fia-formalises-ban-on-2026-f1-aero-testing/10555905/"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "upgrade",
+   "term": "アップグレード",
+   "cat": "マシンと空力",
+   "aliases": [
+    "アップデート",
+    "Upgrade",
+    "Update",
+    "改良パーツ",
+    "あっぷぐれーど"
+   ],
+   "words": [
+    "新パーツ",
+    "改良",
+    "空力パッケージ",
+    "フロアの新型",
+    "持ち込み",
+    "マシンの改良"
+   ],
+   "short": "シーズン中にマシンへ足す新しい部品。空力パーツが多く、持ち込む大会が報じられる。",
+   "body": [
+    "アップグレード（アップデート）は、すでに走っているマシンに、新しい部品や形を加えることだ。フロア、サイドポッド、エンジンカバー、ディフューザー、ウイングなど、空力に関わる部品が多い。まとめて「パッケージ」として投入することもある。",
+    "時期も量もチームで違う。2026年のアゼルバイジャンGP（バクー）では、アウディが新しい前翼とノーズ、フロアなど14の部品を持ち込み、マクラーレンとレッドブルも空力の部品を変えた。一方、メルセデスとフェラーリは新しい部品を出さなかった。",
+    "新しい部品が、期待どおりに速くなるとは限らない。風洞やCFDの予想と、走ったデータが合わないことがあるからだ（→相関）。開発に使える風洞とCFDの量は、順位に応じた上限がある（→空力テストの制限（ATR））。パワーユニットの改良は別の仕組みで決まる（→開発の凍結、ADUO）。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでは、アウディが14の部品の大型パッケージを持ち込み、メルセデスとフェラーリは新パーツなしだった。",
+     "u": "/news/en-f1com-baku-upgrades-list/"
+    },
+    {
+     "t": "アウディのバクー向けアップデートは、新しいフロアを軸に、前翼やディフューザーまで変えた。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    }
+   ],
+   "see": [
+    "wind-tunnel",
+    "cfd",
+    "correlation",
+    "atr",
+    "floor-diffuser",
+    "sidepod",
+    "development-freeze",
+    "aduo"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 2026 teams' wind tunnel time (ATR)",
+     "url": "https://racingnews365.com/f1-2026-teams-wind-tunnel-time"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "development-freeze",
+   "term": "開発の凍結（ホモロゲーション）",
+   "cat": "パワーユニット",
+   "aliases": [
+    "ホモロゲーション",
+    "エンジン開発凍結",
+    "Homologation",
+    "Engine freeze",
+    "PU凍結",
+    "ほもろげーしょん"
+   ],
+   "words": [
+    "パワーユニットの設計固定",
+    "改良の禁止",
+    "封印",
+    "基準ユニット",
+    "信頼性の修正",
+    "書類の提出"
+   ],
+   "short": "パワーユニットの設計をある日付で固定し、その後の大きな改良を禁じる決まり。",
+   "body": [
+    "ホモロゲーションは、FIAが「部品が規則に合っている」と認めることだ。2026年のパワーユニットは、メーカーが3月1日の前（2月末）までに、設計の書類（ホモロゲーション・ドシエ）を出した。FIAは14日以内に承認する決まりで、メーカーは4月1日までに、書類どおりの部品でできた基準のユニットをFIAに出した。この基準ユニットは2030年末までFIAが持ち、走るエンジンが規則に合っているかを調べる基準になる。",
+    "承認後は、設計が「凍結」される。メインのエンジン本体は、ホモロゲーションの日から固定され、性能のための変更ができるのはADUOを認められたメーカーだけだ。例外として、信頼性、安全、コスト、部品の供給の問題を直す変更は、FIAの承認を得れば認められる。配線、ウェイストゲートやターボの位置などの小さな変更も許される。",
+    "ADUO（追加の開発と改良の機会）は、この凍結の例外にあたる。最も強いメーカーとの性能の差が大きいほど、追加で改良できる回数が増える。1年を6戦ずつの4つの期間に分けて性能を比べ、認められた改良は、決められた期間の最初のレースから入れる。"
+   ],
+   "examples": [
+    {
+     "t": "ホンダは2回目のADUO枠を使い、改良したターボをスペインGPとバクーで投入していた。",
+     "u": "/news/en-therace-honda-aduo2-secret/"
+    }
+   ],
+   "see": [
+    "aduo",
+    "pu-manufacturer",
+    "pu-allocation",
+    "technical-directive",
+    "cost-cap",
+    "upgrade"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "F1 2026 power unit homologation deadline explained as March 1 arrives",
+     "url": "https://www.planetf1.com/news/f1-2026-power-unit-homologation-rules-march-1-deadline"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Explained: F1's complex power unit upgrade system",
+     "url": "https://www.planetf1.com/news/explained-f1-complex-power-unit-upgrade-system"
+    },
+    {
+     "name": "Race Engine Technology",
+     "title": "Why F1 engineers are dreading the 28th of February",
+     "url": "https://www.raceenginetechnology.com/Suppliers/why-f1-engineers-are-dreading-the-28th-of-february"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "correlation",
+   "term": "相関（コリレーション）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "コリレーション",
+    "Correlation",
+    "相関",
+    "シミュレーションと実走の一致",
+    "そうかん"
+   ],
+   "words": [
+    "風洞と実車の差",
+    "データの一致",
+    "シミュレーションのずれ",
+    "予想と実際",
+    "相関の問題",
+    "開発の迷走"
+   ],
+   "short": "風洞やCFDの予想と、実際の走行データがどれだけ合っているか。",
+   "body": [
+    "相関は、シミュレーションの結果と、実際に車から測ったデータが合っているかどうかだ。F1公式の技術解説で、ロブ・スメドレー氏は「車で測ったデータを、シミュレーターのデータに合わせようとする作業」と説明している。うまく合えば、風洞やCFDで試した改良を、安心して実車に使える。「100％合う風洞はない」とも述べている。",
+    "ずれが大きいと、風洞で良かった部品が、実際には速くならず、開発の方向を誤ることがある。PlanetF1は、レッドブルが地面効果の時代、とくに2024年に相関で苦労し、RB20の開発が最初は間違った方向に進んだと伝えた。同チームの技術幹部ピエール・ワシェは、2026年は新規則で「得られるデータが大きく、リスクは小さい。リスクがないわけではない」と話した。",
+    "そのため、チームは、実車で測ったデータとシミュレーションを何度も突き合わせて、ずれの原因を探す。新しい部品を試す金曜の練習走行は、そのための大事な機会になる。"
+   ],
+   "examples": [
+    {
+     "t": "アウディはバクーで、新旧のパッケージを金曜に走らせ、データを風洞やシミュレーションと照合した。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    },
+    {
+     "t": "マクラーレンは、セパンの路面のデータが足りず、シミュレーションの精度に不確実性が残ると話した。",
+     "u": "/news/it-formula1-mclaren-sepang-simulation/"
+    }
+   ],
+   "see": [
+    "wind-tunnel",
+    "cfd",
+    "upgrade",
+    "simulator",
+    "atr",
+    "ground-effect"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "Testing explained: Rob Smedley on correlation, aero rakes and flow-vis paint",
+     "url": "https://www.formula1.com/en/latest/article.testing-explained-rob-smedley-on-correlation-aero-rakes-and-flow-vis-paint.5UTaH1q9iuQcXVjZXui3Fz.html"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Pierre Waché plays down Red Bull F1 2026 correlation concerns",
+     "url": "https://www.planetf1.com/news/f1-2026-red-bull-correlation-issues-pierre-wache-wind-tunnel"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "pit-crew",
+   "term": "ピットクルー",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ピットクルー",
+    "Pit crew",
+    "ピット作業員",
+    "メカニック（ピット作業）",
+    "ぴっとくるー"
+   ],
+   "words": [
+    "ピット作業の人たち",
+    "タイヤ交換の担当",
+    "ジャッキ係",
+    "ホイールガン",
+    "チーム内の役割",
+    "ピットストップの人数"
+   ],
+   "short": "ピットストップで車を触る作業チーム。20人前後で、タイヤ交換などを2秒前後で終える。",
+   "body": [
+    "ピットクルーは、ピットストップの作業をするチームだ。人数はチームで違い、F1公式は「10チームに聞けば10通りの答えが返る」と書く。メルセデスの説明では最大22人で、タイヤ担当が12人（1輪に3人）、ジャッキ担当が前後で2人、予備のジャッキ係が2人、車を安定させる人が2人、前翼を調整する人が2人、全体を見る人が2人だ。",
+    "1輪の3人は、ホイールガンでナットを緩めて締める人、古いタイヤを外す人、新しいタイヤをはめる人に分かれる。全体を見る人が、準備ができたら緑の信号を出す。F1公式によると、多くのクルーは複数の役を練習していて、別の位置にも入れる。",
+    "メルセデスの内訳では、車を上げてナットを外すまでが約0.4秒、4本のタイヤの交換が約1秒、ナットを締めるのが約0.3秒、車を降ろすのが0.1秒未満、緑の信号へのドライバーの反応が約0.3秒だ。モータースポーツ・コムによると、車を止める位置が20〜30cmずれるだけで、0.6〜1秒遅くなることがある。"
+   ],
+   "see": [
+    "pit-stop",
+    "wheel-nut",
+    "jack",
+    "pit-lights",
+    "nose-change",
+    "unsafe-release",
+    "double-stack"
+   ],
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Box box: pit stop explained",
+     "url": "https://mercedesamgf1.com/news/box-box-pitstop-explained"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Anatomy of a pit stop: How do F1 teams service their cars in less than two seconds?",
+     "url": "https://www.formula1.com/en/latest/article/anatomy-of-a-pit-stop-how-do-f1-teams-service-their-cars-in-less-than-two.5p9LNdd8XJdvP4mRsXoGsB"
+    },
+    {
+     "name": "DHL",
+     "title": "Explained: This is how a Formula One pit stop works",
+     "url": "https://inmotion.dhl/en/formula-1/article/explained-this-is-how-a-formula-one-pit-stop-works"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Insider's guide: Why are F1 pit stops so fast?",
+     "url": "https://www.motorsport.com/f1/news/insiders-guide-why-are-f1-pit-stops-so-fast/6816459"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "wheel-nut",
+   "term": "ホイールナット",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ホイールナット",
+    "Wheel nut",
+    "ホイールガン",
+    "Wheel gun",
+    "ナット",
+    "ほいーるなっと"
+   ],
+   "words": [
+    "タイヤを留めるナット",
+    "ホイールガン",
+    "ナットが締まった合図",
+    "ナットの外れ",
+    "ホイールが外れる",
+    "ピット作業の安全"
+   ],
+   "short": "タイヤをホイールに固定するナット。ホイールガンで外し、締める。",
+   "body": [
+    "ホイールナットは、車輪を車に固定する部品だ。いまのF1では、ナットはホイールと一体になっていて、なくしにくい作りになっている。モータースポーツ・コムによると、ホイールガンは毎分1万回転を超え、緩めると締めるを自動で切り替える。F1公式によると、後輪のナットはくぼみの中にあるため、後ろの作業員は車が止まってから作業を始める。前輪の作業員は、車が近づくときから構えている。",
+    "ナットの締め忘れは危険だ。2020年のオーストリアGPでは、ライコネンの車輪がセーフティカー後の再スタートで外れ、リタイアした。2013年のドイツGPでは、ウェバーの外れた車輪がカメラマンに当たり、肩や肋骨を折る大けがをさせた。",
+    "FIAは2021年のベルギーGPから、ピットストップの安全の決まりを入れた。ホイールガンから「ナットを締め終えた」という信号が出る前に、ジャッキを降ろすボタンを押してはいけない。ボタンはその信号を見てから押す。人の反応の差で、ピットストップの速さの差が決まる形は残しつつ、安全の仕組みは保つのがねらいだとされた。"
+   ],
+   "see": [
+    "pit-crew",
+    "jack",
+    "pit-lights",
+    "unsafe-release",
+    "pit-stop"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "Anatomy of a pit stop: How do F1 teams service their cars in less than two seconds?",
+     "url": "https://www.formula1.com/en/latest/article/anatomy-of-a-pit-stop-how-do-f1-teams-service-their-cars-in-less-than-two.5p9LNdd8XJdvP4mRsXoGsB"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Insider's guide: Why are F1 pit stops so fast?",
+     "url": "https://www.motorsport.com/f1/news/insiders-guide-why-are-f1-pit-stops-so-fast/6816459"
+    },
+    {
+     "name": "The Race",
+     "title": "New F1 pitstop rules changed and delayed",
+     "url": "https://www.the-race.com/formula-1/new-formula-1-pitstop-rules-changed-and-delayed/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 new pitstop rule from Belgian GP",
+     "url": "https://www.motorsport.com/all/news/f1-new-pitstop-rule-belgian-gp/6655015/"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "jack",
+   "term": "ジャッキ",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ジャッキ",
+    "Jack",
+    "フロントジャッキ",
+    "リアジャッキ",
+    "じゃっき"
+   ],
+   "words": [
+    "車を持ち上げる道具",
+    "ピット作業の道具",
+    "ジャッキ係",
+    "ジャッキ操作",
+    "車を降ろす"
+   ],
+   "short": "ピットストップで車を持ち上げる道具。前と後ろに1人ずつ付く。",
+   "body": [
+    "ジャッキは、タイヤ交換のために車を持ち上げる道具だ。車の前と後ろに1つずつ使い、それぞれに担当の作業員が付く。メルセデスの説明では、予備のジャッキ係も2人控える。ジャッキは、車を上げるときと、降ろして出発させるときの両方で、時間を左右する。",
+    "前のジャッキは、高価で精密な道具だ。モータースポーツ・コムは、自動で降りる仕組みや、向きを変えられる仕組みがあり、1台およそ25万ポンドで、予備を含めて少なくとも2台が必要だと伝えた。メルセデスの内訳では、車を上げてナットを外すまでが約0.4秒、降ろすのが0.1秒未満だ。",
+    "モータースポーツ・コムによると、前の部分が壊れて前のジャッキが使えないときは、横から上げるジャッキが使われる（→ノーズ交換）。安全のため、ナットの締め終わりの信号が出る前に、ジャッキを降ろすボタンは押せない（→ホイールナット）。"
+   ],
+   "see": [
+    "pit-crew",
+    "wheel-nut",
+    "pit-lights",
+    "nose-change",
+    "pit-stop"
+   ],
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Box box: pit stop explained",
+     "url": "https://mercedesamgf1.com/news/box-box-pitstop-explained"
+    },
+    {
+     "name": "DHL",
+     "title": "Explained: This is how a Formula One pit stop works",
+     "url": "https://inmotion.dhl/en/formula-1/article/explained-this-is-how-a-formula-one-pit-stop-works"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Insider's guide: Why are F1 pit stops so fast?",
+     "url": "https://www.motorsport.com/f1/news/insiders-guide-why-are-f1-pit-stops-so-fast/6816459"
+    },
+    {
+     "name": "The Race",
+     "title": "New F1 pitstop rules changed and delayed",
+     "url": "https://www.the-race.com/formula-1/new-formula-1-pitstop-rules-changed-and-delayed/"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "pit-lights",
+   "term": "ピットの信号（ロリポップから信号機へ）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ロリポップ",
+    "ロリポップマン",
+    "ピットの信号機",
+    "Lollipop",
+    "Pit lights",
+    "リリースライト"
+   ],
+   "words": [
+    "発進の合図",
+    "緑の信号",
+    "ピットストップの合図",
+    "棒の看板",
+    "信号機式",
+    "出してよい合図"
+   ],
+   "short": "ピットストップで車を出してよい合図。棒の看板から、信号機に変わった。",
+   "body": [
+    "昔のピットストップでは、棒の先に看板をつけた「ロリポップ」を持つ人が、ドライバーを誘導した。いまは、車の前に付けた信号機（ガントリー）が、出てよいかどうかを示す。F1公式は「古いロリポップは信号機に置き換わった」と書く。",
+    "信号機が緑になるのは、準備がそろったときだけだ。DHLの説明では、4つの車輪の担当と、前後のジャッキの担当が、すべて「問題なし」のボタンを押したときに、緑にできる。メルセデスは、緑は「ホイールが固定され、ピットレーンに車がいない」という合図だと説明する。最後に車を出すのは、作業全体を見る担当だ。",
+    "信号機にも失敗はあった。2008年のシンガポールGPでは、フェラーリのマッサが、給油のホースが付いたまま発進し、危険なリリースとしてドライブスルーペナルティを受けて13位になった。フェラーリは同年の最後の3戦で、ロリポップに戻した。当時は給油があった時代で、給油は2010年から禁止されている。"
+   ],
+   "see": [
+    "pit-stop",
+    "pit-crew",
+    "unsafe-release",
+    "wheel-nut",
+    "jack",
+    "pit-lane"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "Anatomy of a pit stop: How do F1 teams service their cars in less than two seconds?",
+     "url": "https://www.formula1.com/en/latest/article/anatomy-of-a-pit-stop-how-do-f1-teams-service-their-cars-in-less-than-two.5p9LNdd8XJdvP4mRsXoGsB"
+    },
+    {
+     "name": "DHL",
+     "title": "Explained: This is how a Formula One pit stop works",
+     "url": "https://inmotion.dhl/en/formula-1/article/explained-this-is-how-a-formula-one-pit-stop-works"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Box box: pit stop explained",
+     "url": "https://mercedesamgf1.com/news/box-box-pitstop-explained"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Ferrari abandon 'traffic lights' pit-stop system",
+     "url": "https://www.crash.net/f1/news/63815/1/ferrari-ditch-traffic-lights-pit-stop-system"
+    },
+    {
+     "name": "The Race",
+     "title": "'Crashgate' cost Ferrari that F1 title. So did a familiar fault",
+     "url": "https://www.the-race.com/formula-1/crashgate-cost-ferrari-that-f1-title-so-did-a-familiar-fault/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Why was refuelling banned in F1? History of refuelling and previous accidents",
+     "url": "https://www.motorsport.com/f1/news/why-was-refuelling-banned-in-f1/10555079/"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "pit-board",
+   "term": "ピットボード",
+   "cat": "レース運営",
+   "aliases": [
+    "ピットボード",
+    "サインボード",
+    "Pit board",
+    "ピットウォールのボード",
+    "ぴっとぼーど"
+   ],
+   "words": [
+    "ドライバーに見せる板",
+    "ピットウォールの板",
+    "順位とタイム差",
+    "無線の予備",
+    "サイン",
+    "ボードでの連絡"
+   ],
+   "short": "ピットウォールからドライバーに見せる板。順位や前後との差を知らせる。",
+   "body": [
+    "ピットボードは、チームがピットウォールから出して、走っているドライバーに情報を見せる板だ。F1公式の用語集では「ピットウォールからチームが差し出して、ドライバーに情報を見せる板」とされる。ピットウォールには、メインストレートに向けた小さな開口部があり、そこから板を出す。",
+    "板には、順位、前後の車との差、残りの周回数、タイヤ交換の合図などを書く。文字や数字は差し替えられる作りで、時速300km以上で通り過ぎても、ひと目で読めるようにしてある。ペナルティの知らせや、作戦の指示を出すこともある。",
+    "いまは無線で話せるが、無線が途切れることがあるので、板は予備の連絡手段として残っている。2022年のカナダGPでは、フェルスタッペンの無線がつながらなくなったことがあった。オートスポーツは、無線に問題があるときや、ドライバーが前の連絡を聞き逃したときのために使われると書いている。"
+   ],
+   "see": [
+    "race-engineer",
+    "box-box",
+    "plan-b",
+    "race-control",
+    "telemetry"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "Autosport",
+     "title": "Everything you need to know about the pitwall in F1",
+     "url": "https://www.autosport.com/f1/news/everything-you-need-to-know-about-the-pitwall-in-f1-who-sits-there-and-what-does-it-do/10588720/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "This is why radios haven't fully replaced pit boards in F1",
+     "url": "https://www.motorsport.com/f1/news/this-is-why-radios-havent-fully-replaced-pit-boards-in-f1/10767599/"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "shakedown",
+   "term": "シェイクダウン",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "シェイクダウン",
+    "Shakedown",
+    "フィルミングデー",
+    "Filming day",
+    "初走行",
+    "しぇいくだうん"
+   ],
+   "words": [
+    "新車の初走行",
+    "動作確認",
+    "撮影日",
+    "バルセロナのシェイクダウン",
+    "非公開テスト",
+    "走行距離の制限"
+   ],
+   "short": "新車を初めて走らせ、動作を確かめる走行。2026年はバルセロナで非公開に行われた。",
+   "body": [
+    "シェイクダウンは、チームが新しい車を初めて走らせる、最初のコース走行だ。F1公式の用語集では「チームが新しい車を初めて走らせるための、前段階の走行」とされる。モータースポーツ・マガジンによると、パワーユニット、油圧、電子系、冷却、ギアボックス、センサーが正しく動くかを調べるもので、速さを競うものではない。",
+    "宣伝用の「撮影日（フィルミングデー）」を使うこともできる。各チームは1年に2日までで、1日に走れるのは最大200km、ピレリの撮影用の専用タイヤを使う。モータースポーツ・マガジンによると、それまで100kmだった上限が、2024年から2倍の200kmになった。",
+    "2026年は新規則の年なので、1月26〜30日にバルセロナで、非公開のシェイクダウンが開かれた。5日間のうち、各チームが走れるのは3日で、車が1周走ったらその日が使われたことになる。取材は入れなかった。このバルセロナでは、キャデラックとマクラーレンが、正式なカラーリングとは別のテスト用の塗装で走った。その後、バーレーンで3日間の公式テストが2回あった（2月11〜13日、18〜20日）。"
+   ],
+   "see": [
+    "testing-rules",
+    "car-launch",
+    "livery",
+    "simulator",
+    "free-practice"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why pre-season running is different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-pre-season-running-is-different-in-2026.7reu6xnBY0kF87Vucgt25s"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "What happens during an F1 shakedown or filming day?",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/what-happens-during-an-f1-shakedown-or-filming-day"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Why do F1 teams use special liveries at testing?",
+     "url": "https://www.formula1.com/en/latest/article/what-are-testing-liveries-and-why-do-f1-teams-use-them.70d5AeZLjE85r2cT77R0BD"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "car-launch",
+   "term": "新車発表",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "カーローンチ",
+    "ローンチ",
+    "Car launch",
+    "新車お披露目",
+    "リバリーリビール",
+    "しんしゃはっぴょう"
+   ],
+   "words": [
+    "新車のお披露目",
+    "ローンチイベント",
+    "カラーリング発表",
+    "ショーカー",
+    "発表日",
+    "新シーズンの車"
+   ],
+   "short": "チームが新しい車やカラーリングを発表すること。実車とは限らない。",
+   "body": [
+    "新車発表（カーローンチ）は、チームがシーズン前に新しい車を見せるイベントだ。F1公式は「覆いを外して、シーズンの目標を示すこと」と説明する。F1では毎年、全チームが新しい車を作る。2026年は、規則が大きく変わったので、車もパワーユニットも新しくなった。",
+    "ただ、見せるものが実車とは限らない。古いシャシーに新しい塗装をしただけの「リバリー発表」や、CG画像のこともある。チームには、設計を最後まで進める時間を稼ぐ、新しい工夫を隠す、一つの車で何度も宣伝の機会を作る、などの理由がある。本物の発表でも、見せたくない後ろのサスペンションやディフューザーは隠されることがある。",
+    "2026年は、1月15日にレッドブルとレーシングブルズがデトロイトで発表したのが最初だった。1月19日のハースは、ショーカーではなく実際の2026年型の画像を出した最初のチームになった。メルセデスは、1月22日のCG画像と、2月2日の本格的な発表の2回に分けた。2月3日のウィリアムズは塗装の発表だけで、実車はバーレーンのテストで初めて見せた。2月8日にキャデラックがスーパーボウルのテレビ広告で塗装を発表し、2月9日にマクラーレンとアストンマーティンが続いた。"
+   ],
+   "see": [
+    "livery",
+    "shakedown",
+    "testing-rules",
+    "sponsor"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "The beginner's guide to F1 car launches",
+     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-car-launches.5njwLoM1KId9QBthP9PAOH"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "F1 launches: all 2026 cars and liveries revealed and schedule",
+     "url": "https://www.skysports.com/f1/news/12433/13481787/f1-launches-all-2026-cars-and-liveries-revealed-and-schedule-ahead-of-new-season-featuring-revised-regulations"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "F1 2026 car launches: all the liveries revealed",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-car-launches-dates-and-news"
+    },
+    {
+     "name": "Silverstone",
+     "title": "F1 car launches 2026: every team's livery reveal date",
+     "url": "https://www.silverstone.co.uk/news/f1-car-launches-2026-every-teams-livery-reveal-date"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "livery",
+   "term": "カラーリング（リバリー）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "リバリー",
+    "Livery",
+    "カラーリング",
+    "塗装",
+    "マシンの色",
+    "からーりんぐ"
+   ],
+   "words": [
+    "マシンの色",
+    "デザイン",
+    "スポンサーロゴ",
+    "特別カラー",
+    "カーボン地のまま",
+    "塗装の割合"
+   ],
+   "short": "マシンの色とデザイン。チームの顔であり、スポンサーにとっても大事な場所。",
+   "body": [
+    "カラーリング（リバリー）は、車の色、模様、スポンサーのロゴを合わせた見た目のことだ。F1公式は「チームの顔であり、スポンサーにとって価値があり、車の性能にも影響しうる」と説明する。シーズン中に、特別な塗装を使うチームもある。",
+    "2026年からは、塗装の割合に決まりができた。横と上から見て、車の表面の55％以上を、塗装かステッカーで覆わなければならない。むき出しのカーボンでは足りない。2025年11月14日のF1コミッションで承認され、FIAは「車どうしの見た目の違いを増やすため」と説明している。The Raceによると、軽くするためにカーボンをむき出しにするチームが増え、地味な塗装への批判があった。",
+    "シーズン前のテストでは、正式な塗装とは別の「テスト用リバリー」を使うこともある。空力の工夫を隠す、正式なデザインが決まっていない、といった理由からだ。2026年のバルセロナでは、キャデラックが、光沢と艶消しの幾何学模様の単色のデザインで走り、2月8日に正式な塗装を発表した。"
+   ],
+   "examples": [
+    {
+     "t": "アルピーヌとの契約が終わるBWTは、鮮やかなピンクの塗装を各チームが敬遠し、次の提携先探しが難航していると伝えられた。",
+     "u": "/news/ja-f1jouhou-bwt-pink/"
+    }
+   ],
+   "see": [
+    "car-launch",
+    "shakedown",
+    "sponsor",
+    "title-sponsor",
+    "minimum-weight"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 EXPLAINS: How car liveries are designed and why they affect performance",
+     "url": "https://www.formula1.com/en/latest/article/f1-explains-how-car-liveries-are-designed-and-why-they-affect-performance.14fuKT2tsl0GLLJM9V1GdS"
+    },
+    {
+     "name": "FIA",
+     "title": "Formula 1 Commission meeting 14.11.2025 - Media statement",
+     "url": "https://www.fia.com/news/formula-1-commission-meeting-14112025-media-statement"
+    },
+    {
+     "name": "The Race",
+     "title": "New F1 livery rules to be introduced for 2026",
+     "url": "https://www.the-race.com/formula-1/new-f1-livery-rules-to-be-introduced-for-2026/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Why do F1 teams use special liveries at testing?",
+     "url": "https://www.formula1.com/en/latest/article/what-are-testing-liveries-and-why-do-f1-teams-use-them.70d5AeZLjE85r2cT77R0BD"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "nose-change",
+   "term": "ノーズ交換",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ノーズ交換",
+    "前翼交換",
+    "フロントウイング交換",
+    "Nose change",
+    "Front wing change",
+    "のーずこうかん"
+   ],
+   "words": [
+    "前翼の交換",
+    "壊れた前翼",
+    "ピットでの修理",
+    "接触後のピット",
+    "ノーズ",
+    "ピットストップの長時間化"
+   ],
+   "short": "壊れたノーズと前翼を、ピットストップで新しいものに替えること。ふつうのタイヤ交換より長くかかる。",
+   "body": [
+    "ノーズ交換は、接触などで壊れた前翼やノーズを、ピットストップで新しいものに替える作業だ。前翼が壊れると、空力が乱れてラップタイムが落ちる。2021年のエミリア・ロマーニャGP（イモラ）では、メルセデスのアンドリュー・ショブリンが、ハミルトンの前翼の損傷で、最初は1周あたり約0.6秒遅くなったと説明した。",
+    "交換にかかる時間について、モータースポーツ・コムは「10〜15秒ほど」と書いている（1つの解説記事による目安）。ふつうのタイヤ交換は2秒前後なので、それよりずっと長い。前の部分が壊れていると前のジャッキが使えないことがあり、その場合は横から上げるジャッキを使う（→ジャッキ）。",
+    "交換のために長く止まるか、壊れた前翼のまま遅く走り続けるかは、チームの判断になる。赤旗の間は車の損傷を直してよいので、そのときに新しい前翼を付けた例がある。2021年のイモラのハミルトンも、赤旗の間に前翼を替えた（→赤旗）。"
+   ],
+   "see": [
+    "pit-stop",
+    "pit-crew",
+    "jack",
+    "front-wing",
+    "safety-car",
+    "red-flag"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "Insider's guide: Why are F1 pit stops so fast?",
+     "url": "https://www.motorsport.com/f1/news/insiders-guide-why-are-f1-pit-stops-so-fast/6816459"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Front-wing damage cost Hamilton six tenths a lap",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-imola-performance-loss"
+    }
+   ],
+   "checked": "2026-10-02",
+   "examples": []
+  },
+  {
+   "id": "lap-count",
+   "term": "周回数（決勝の周回数の決め方）",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "ラップ数",
+    "レース周回数",
+    "決勝周回数",
+    "laps",
+    "race distance",
+    "しゅうかいすう"
+   ],
+   "words": [
+    "何周走るか",
+    "レース距離",
+    "305km",
+    "周回数の決め方",
+    "2時間ルール",
+    "モナコの260km"
+   ],
+   "short": "決勝の周回数は、距離が305kmを超える最も少ない周回数で決まる。モナコだけ260km。",
+   "body": [
+    "決勝の周回数は、1周の長さから決まる。規則では、走る距離が305kmを超える最も少ない周回数にする。モナコだけは例外で、260kmを超える最も少ない周回数だ。1周が短いコースほど周回数は多くなる。",
+    "F1公式サイトの数字で見ると、メキシコシティは1周4.304kmで71周、合計305.354km。70周だと301kmほどで305kmに届かないので、71周になる。ベルギーのスパは1周7.004kmで44周（308.054km）、モナコは1周3.337kmで78周（260.286km）だ。",
+    "時間にも上限がある。決勝はスタートの合図から2時間以内に終わる。赤旗などで中断した場合は、中断した時間ぶん延びるが、全部で3時間までだ。2時間が過ぎると、決められた周回数に届かなくてもレースは終わり、そのときの順位で結果が決まる。",
+    "フォーメーションラップをセーフティカーの後ろで始めたときは、決勝の周回数が「セーフティカーが走った周回数から1を引いた数」だけ減る（規則B2.5.2a）。スプリントも同じ考え方で、100kmを超える最も少ない周回数になる。"
+   ],
+   "rule": "B2.5.2、B2.5.3（決勝）、B2.3.2（スプリント）",
+   "examples": [],
+   "see": [
+    "circuit-length",
+    "sprint",
+    "classification",
+    "red-flag",
+    "chequered-flag"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Mexico City Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/mexico"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Belgian Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/belgium"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Monaco Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/monaco"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "circuit-length",
+   "term": "コース長",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "コースの長さ",
+    "1周の距離",
+    "サーキット全長",
+    "track length",
+    "circuit length",
+    "こーすちょう"
+   ],
+   "words": [
+    "1周の長さ",
+    "最長コース",
+    "最短コース",
+    "スパとモナコ",
+    "1周何km",
+    "コースの全長"
+   ],
+   "short": "サーキット1周の長さ。モナコの3.3kmからスパの7.0kmまで、F1の会場でも大きく違う。",
+   "body": [
+    "コース長は、スタート／フィニッシュのラインから1周してラインに戻るまでの距離だ。F1公式サイトによると、今季いちばん短いのはモナコの3.337km。いちばん長いのはスパの7.004kmで、2倍以上の差がある。",
+    "ほかの会場は、メキシコシティが4.304km、モンツァが5.793km、ラスベガスが6.201kmだ（F1公式サイトの各レースページ）。同じ決勝でも、コース長によって周回数が変わる。モナコは78周で合計260.286km、スパは44周で308.054kmだ（周回数の決め方は「周回数」の項目を見る）。",
+    "1周の長さが違えば、1周のタイムも違う。F1公式サイトのコースレコードは、モナコが1分12秒909（2021年）、スパが1分44秒701（2024年）だ。",
+    "コースの形が変わると、数字も変わる。シンガポールは2023年にレイアウトを変え、コーナーが23から19に減った（F1公式サイト）。数字は大会ごとのF1公式の値を使うのがよい。"
+   ],
+   "examples": [],
+   "see": [
+    "lap-count",
+    "sector",
+    "street-circuit",
+    "pit-loss"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Monaco Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/monaco"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Belgian Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/belgium"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Mexico City Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/mexico"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Italian Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/italy"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Las Vegas Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/las-vegas"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Singapore Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/singapore"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Monaco Grand Prix circuit guide",
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-monaco.vFsmfGHr6RWyLFtxi58wi"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "overtaking-friendly",
+   "term": "追い抜きやすいコース・しにくいコース",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "オーバーテイクしやすいコース",
+    "追い抜きにくい",
+    "overtaking",
+    "オーバーテイク数",
+    "おいぬき"
+   ],
+   "words": [
+    "追い抜きの数",
+    "抜けないコース",
+    "抜きやすいコース",
+    "オーバーテイク回数",
+    "モナコは抜けない",
+    "追い抜きポイント"
+   ],
+   "short": "追い抜きの起きやすさはコースで大きく違う。長い直線と強いブレーキングがあるコースは抜きやすい。",
+   "body": [
+    "追い抜きは、長い直線のあとに強いブレーキングがあるコースで起きやすい。たとえばモンツァの第1シケインは、時速約350kmから約70kmまで落とす場所で、F1公式サイトは追い抜きの名所と紹介している。反対に、モナコは壁にはさまれた狭い道で、追い抜きがとても難しいと説明されている。",
+    "F1公式サイトの事前資料にある「前年に成立した追い抜き」の数は、2025年のモナコが4回、モンツァが47回、オーストリアが81回だった。コースによって20倍ほどの差が出ることがある。数え方は集計元によって違う。Autosportの説明では、1周目の動きは数えず、その周のラインまで順位を保った、周回遅れでない、コース上での追い抜きだけを数える。",
+    "2026年のデータもある。第14戦のマドリード（マドリング）では、追い抜きが4回にとどまった。GPblogは、F1のレース集計をもとに、これが今季の14戦で最少だったと伝えた（2026年9月14日の記事）。PlanetF1も、マドリングの追い抜きは4回だったと伝えている。",
+    "追い抜きの数は、天気、セーフティカー、タイヤ戦略でも変わる。2026年はDRSがなく、代わりにオーバーテイクモードがあるので、コースの形による差がどう出るかは、シーズンを通して見ていく必要がある。"
+   ],
+   "examples": [
+    {
+     "t": "ハミルトンが、追い抜きの少ないサーキット設計に不満を述べた（マドリングの追い抜きは4回）",
+     "u": "/news/en-planetf1-hamilton-circuit-rant/"
+    }
+   ],
+   "see": [
+    "overtake-mode",
+    "drs",
+    "dirty-air",
+    "slipstream",
+    "dive-bomb",
+    "low-speed-circuit"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Italian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-italian-grand-prix.3R2slU8oSHdeOc5lidJDGy"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Monaco Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-monaco-grand-prix.1dphiN7qz6fiI4sm4MaC4V"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Austrian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-austrian-grand-prix.5c3It3dAheBaaNuzedrXPx"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Monaco Grand Prix circuit guide",
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-monaco.vFsmfGHr6RWyLFtxi58wi"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Italian Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/italy"
+    },
+    {
+     "name": "Autosport",
+     "title": "Overtaking records in F1",
+     "url": "https://www.autosport.com/f1/news/overtaking-records-in-f1/6438038/"
+    },
+    {
+     "name": "GPblog",
+     "title": "Damning Madring stat exposes Madrid GP's major racing failure (2026-09-14)",
+     "url": "https://www.gpblog.com/en/general/damning-madring-stat-exposes-madrid-gps-major-racing-failure"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Lewis Hamilton F1 tracks rant",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-f1-tracks-rant"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "high-speed-circuit",
+   "term": "高速コース",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "ハイスピードサーキット",
+    "高速サーキット",
+    "high-speed circuit",
+    "fast circuit",
+    "こうそくこーす"
+   ],
+   "words": [
+    "モンツァ",
+    "スパ",
+    "シルバーストン",
+    "全開区間",
+    "低ダウンフォース",
+    "最高速が出るコース"
+   ],
+   "short": "平均速度が高く、アクセル全開の区間が長いコース。モンツァやシルバーストンが代表的だ。",
+   "body": [
+    "高速コースは、長い直線と、速度を落とさずに曲がる高速コーナーが多いコースだ。F1公式サイトによると、モンツァは1周の約80%でアクセル全開になる。シルバーストンは、コプス、マゴッツ、ベケッツの連続する高速コーナーで、ふつうのF1ではあまりない横Gが体にかかるという。",
+    "ラスベガスもこの仲間だ。F1公式サイトは、ラスベガスの平均速度をモンツァと同じくらいだと紹介している。モンツァは曲がる場所が少ないので、ほかの会場よりダウンフォースを減らした仕様で走ると、F1公式サイトは説明している。",
+    "2026年は、高速コースの見え方が変わった。長い直線は、電気をためる場所にもなるからだ。PlanetF1の分析（2026年9月）では、モンツァの予選の最高速は、2026年の最高がラッセルの時速341km、2025年は354.7kmで、決勝でも365kmから351kmに下がった。",
+    "FIAは、予選で1周にためてよい電気の量を、コースごとに決めている。The Race（2026年5月）によると、いちばん少ないのがモンツァの5MJで、モナコ、ハンガリー、シンガポールは9MJだ。RACERによると、モンツァはスーパークリッピング（直線の終わりで電気をためる走り）を減らすため、今までで最も低い上限が決められた。"
+   ],
+   "examples": [],
+   "see": [
+    "low-speed-circuit",
+    "downforce",
+    "drag",
+    "super-clipping",
+    "energy-management",
+    "speed-trap"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Italian Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/italy"
+    },
+    {
+     "name": "formula1.com",
+     "title": "CIRCUIT GUIDE: Silverstone 2026",
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-silverstone-2026.5Sl0O8g393enBWVIkjRzOr"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What makes the Formula 1 Las Vegas Grand Prix special",
+     "url": "https://www.formula1.com/en/latest/article/what-makes-the-las-vegas-grand-prix-special-and-why-you-should-see-it.7EKzEf0h1QWqvLFrEsdJVC"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Italian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-italian-grand-prix.3R2slU8oSHdeOc5lidJDGy"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Why Monza is no longer the Temple of Speed under F1's 2026 rules",
+     "url": "https://www.planetf1.com/f1-data/2026-f1-rules-monza-temple-of-speed"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's new energy rankings for qualifying revealed",
+     "url": "https://www.the-race.com/formula-1/f1s-new-energy-rankings-for-qualifying-revealed/"
+    },
+    {
+     "name": "RACER",
+     "title": "Prepare for a very different F1 race at Monza (2026-09-03)",
+     "url": "https://racer.com/2026/09/03/prepare-for-a-very-different-f1-race-at-monza"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "low-speed-circuit",
+   "term": "低速コース",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "ロースピードサーキット",
+    "低速サーキット",
+    "low-speed circuit",
+    "slow circuit",
+    "ていそくこーす"
+   ],
+   "words": [
+    "モナコ",
+    "シンガポール",
+    "ハンガロリンク",
+    "スローコーナー",
+    "狭いコース",
+    "トラクション重視"
+   ],
+   "short": "直線が短く、低速コーナーが多いコース。モナコやシンガポールが代表的で、速さより正確さが問われる。",
+   "body": [
+    "低速コースは、長い直線が少なく、遅いコーナーとブレーキングが続くコースだ。F1公式サイトのコースガイドによると、モナコは道幅が狭く、直線らしい直線がほとんどないため、最高速はあまり意味を持たない。元ドライバーのパーマーは「F1の車で走ると狂気のように感じる」と話している。",
+    "シンガポールもその一つだ。ピレリは2022年に、遅いコーナーが多く、リアタイヤのトラクションをうまく使うことが大事だと説明した。F1公式サイトは、荒れた路面と高い湿度のため、体への負担が大きいコースだと紹介している。ドライバーは、レースで体重が最大3kg減ることもある。",
+    "2026年の予選では、1周にためてよい電気の量の上限が、コースごとに決められている。The Race（2026年5月）によると、モナコ、ハンガリー、シンガポールが9MJで、モンツァの5MJより多い。",
+    "モナコは追い抜きがとても少ない。F1公式サイトの数字では、2025年の追い抜きは4回だった。コースガイドによると、直近12戦のうち10戦が最前列からの優勝で、予選の順位が大事になる。"
+   ],
+   "examples": [],
+   "see": [
+    "high-speed-circuit",
+    "street-circuit",
+    "hairpin",
+    "chicane",
+    "overtaking-friendly",
+    "traction"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "2026 Monaco Grand Prix circuit guide",
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-monaco.vFsmfGHr6RWyLFtxi58wi"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Monaco Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-monaco-grand-prix.1dphiN7qz6fiI4sm4MaC4V"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Singapore Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/singapore"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Pirelli warns F1 drivers ahead of Singapore GP (2022)",
+     "url": "https://racingnews365.com/pirelli-warns-f1-drivers-ahead-of-singapore-gp"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's new energy rankings for qualifying revealed",
+     "url": "https://www.the-race.com/formula-1/f1s-new-energy-rankings-for-qualifying-revealed/"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "altitude",
+   "term": "標高（メキシコシティ等）",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "高地",
+    "高地サーキット",
+    "エルマノス・ロドリゲス",
+    "altitude",
+    "thin air",
+    "ひょうこう"
+   ],
+   "words": [
+    "メキシコの高地",
+    "空気が薄い",
+    "標高2200m",
+    "高地でのF1",
+    "空気密度",
+    "メキシコシティGP"
+   ],
+   "short": "サーキットのある土地の高さ。メキシコシティは2,200m超と、F1でいちばん高く、空気が薄い。",
+   "body": [
+    "標高が高いと、空気が薄くなる。F1公式サイトによると、メキシコシティのエルマノス・ロドリゲス・サーキットは海抜2,200m以上で、カレンダーでいちばん高い。同じ記事（2021年）は、次に高いサンパウロのインテルラゴスを約800mとしている。",
+    "空気が薄いと、車はいくつか影響を受ける。F1公式サイトの2018年の記事は、酸素が海面の78%ほどしかなく、内燃エンジンの出力が下がり、ブレーキも冷やしにくくなると説明した（2018年時点の説明）。f1technical.netも、ダウンフォースが減り、エンジンとブレーキの冷却が難しくなると伝えている。",
+    "空気が薄い分、空気抵抗も小さくなるので、直線は速くなる。モータースポーツ・マガジン（2025年10月）は、2024年のシーズン最高速、時速362.5kmがメキシコシティで記録されたと伝えた。",
+    "今季のメキシコシティGPは10月30日〜11月1日の予定で、決勝は71周（F1公式サイト）。新しいパワーユニットとアクティブエアロの車が高地を走るのは、今季が初めてになる（2026年10月2日時点）。"
+   ],
+   "examples": [],
+   "see": [
+    "downforce",
+    "drag",
+    "cooling",
+    "ice",
+    "turbo",
+    "speed-trap"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Mexico City Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/mexico"
+    },
+    {
+     "name": "formula1.com",
+     "title": "WATCH: How does Mexico City's high altitude affect an F1 car (2021)",
+     "url": "https://www.formula1.com/en/latest/article/watch-how-does-mexico-citys-high-altitude-affect-an-f1-car.2viU1hO6pXOPslHbNqjyim"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Mexico preview: the stats and info you need to know (2018)",
+     "url": "https://www.formula1.com/en/latest/article/mexico-preview-the-stats-and-info-you-need-to-know.5T3MUg4m1qwaaOsQuGYMK2"
+    },
+    {
+     "name": "f1technical.net",
+     "title": "Cooling requirement: How did teams optimize their cars for the Mexico City Grand Prix?",
+     "url": "https://www.f1technical.net/news/27928"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "What are the fastest speeds recorded at every F1 circuit?",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/what-are-the-fastest-speeds-recorded-at-every-f1-circuit/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 2026 grand prix race start times",
+     "url": "https://www.the-race.com/formula-1/what-time-is-f1-this-weekend-2026-grand-prix-start-times/"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "surface-abrasiveness",
+   "term": "路面の粗さ",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "アブレッシブ",
+    "路面の摩耗度",
+    "アスファルトの粗さ",
+    "abrasiveness",
+    "track surface",
+    "ろめんのあらさ"
+   ],
+   "words": [
+    "紙やすりのような路面",
+    "タイヤ摩耗が大きい路面",
+    "荒れた路面",
+    "なめらかな路面",
+    "セパンの路面",
+    "タイヤへの負荷"
+   ],
+   "short": "路面がタイヤをどれだけ削るかの度合い。粗い路面ほどタイヤが傷みやすく、戦略にも響く。",
+   "body": [
+    "アスファルトの粗さは、タイヤの減り方に直結する。粗い路面はタイヤを削りやすく、摩擦で熱も出やすい。ピレリは大会の前に路面を分析し、持ち込むタイヤの種類を選ぶ。",
+    "今週のセパンが分かりやすい例だ。ピアストリは路面を「紙やすりのよう」と表現した。The Race（2026年10月1日）によると、ピレリの路面分析で、粗さは今季のコースでいちばん高く、バルセロナを上回った。粗い路面は、タイヤのグリップが減り、滑りと過熱が増えるという。RacingNews365は、セパンの路面は2017年にF1が最後に来てから再舗装されていないと伝えている（The Raceは、一部は2023年に敷き直されたと書いている。「再舗装」の項目を見る）。",
+    "ピレリは、セパンのタイヤにC2、C3、C4を選んだ。バクーやシンガポールのC3、C4、C5より一段階硬い組み合わせだ（RacingNews365）。暑さも重なって、直近の1ストップ中心のレースから、2〜3ストップに増えるかもしれないとThe Raceは伝えた。",
+    "路面は工事でも変わる。再舗装のあとは滑らかになることが多い。一方で、今季のバクーのように、暑さで表層がゆるみ、補修が必要になることもある（RacingNews365）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンの路面は「紙やすり」のようで、ピレリの分析で今季最も粗いとされた",
+     "u": "/news/en-therace-sepang-sandpaper-surface/"
+    },
+    {
+     "t": "ピレリはセパンで2017年のデータを頼りに、1段階硬いタイヤを選んだ",
+     "u": "/news/en-gpblog-pirelli-sepang-2017-data/"
+    }
+   ],
+   "see": [
+    "degradation",
+    "graining",
+    "resurfacing",
+    "track-evolution",
+    "tyre-compounds",
+    "tyre-allocation"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "The major unknown as F1 braces for sandpaper-rough Sepang track (2026-10-01)",
+     "url": "https://www.the-race.com/formula-1/the-major-unknown-as-f1-braces-for-sandpaper-rough-sepang-track/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Pirelli make key decision ahead of Malaysia F1 return",
+     "url": "https://racingnews365.com/pirelli-make-key-decision-ahead-of-malaysia-f1-return"
+    },
+    {
+     "name": "The Race",
+     "title": "Chaotic racing: what F1 drivers expect from Malaysia return",
+     "url": "https://www.the-race.com/formula-1/chaotic-racing-what-f1-drivers-expect-from-malaysia-return/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Baku track repairs made overnight after F1 drivers complain",
+     "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "resurfacing",
+   "term": "再舗装",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "路面の張り替え",
+    "アスファルトの敷き直し",
+    "リサーフェス",
+    "resurfacing",
+    "repave",
+    "さいほそう"
+   ],
+   "words": [
+    "新しい路面",
+    "路面の補修",
+    "路面の張り替え",
+    "グリップが変わる",
+    "バンプ",
+    "路面工事"
+   ],
+   "short": "サーキットのアスファルトを新しく敷き直すこと。グリップやタイヤの減り方が変わる。",
+   "body": [
+    "再舗装は、古くなったアスファルトを新しく敷き直す工事だ。新しい路面は滑らかになりやすく、タイムが縮むと期待される。シルバーストンでは2018年、全面の敷き直しのあと、運営側が1周で約1秒速くなると見込んだ（Motorsport.com）。",
+    "ただし、結果はやってみないと分からない。F1公式サイトによると、2019年のイギリスGPの前にシルバーストンが路面を全面で敷き直したとき、チームは新しい路面でタイヤがどう働くか分からないと話した。f1technical.netのF1MATHSは、2025年に追い抜きが減った理由の一つに再舗装を挙げた。新しい路面は走行ライン以外のグリップが低く、鈴鹿では追い抜きが前年の48回から15回に減ったという。",
+    "今季の例もある。バクーでは、暑さで表層がゆるんだターン7の路面が、ドライバーの指摘を受けて夜のうちに補修された。ターン2〜4や19でも、事前に補修があったという（RacingNews365）。",
+    "セパンについては、報道で説明が分かれる。RacingNews365は、2017年にF1が最後に来てから路面は再舗装されていないと伝えた。The Race（2026年10月1日）は、ターン7〜12が2023年に敷き直されたが、最初のコーナー群などには古い路面が残っていると書いている。"
+   ],
+   "examples": [
+    {
+     "t": "暑さで浮いたバクーのターン7の路面が、夜のうちに補修された",
+     "u": "/news/en-rn365-baku-track-repairs/"
+    }
+   ],
+   "see": [
+    "surface-abrasiveness",
+    "track-evolution",
+    "street-circuit",
+    "degradation"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "Silverstone expects one-second lap time gain from new surface",
+     "url": "https://www.motorsport.com/f1/news/silverstone-one-second-lap-time-new-surface-1020476/1399057/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Re-laid surface brings unknown factor to Silverstone weekend (2019)",
+     "url": "https://www.formula1.com/en/latest/article.re-laid-surface-brings-unknown-factor-to-silverstone-weekend.28wPQFNnViY78S1PZarW9j.html"
+    },
+    {
+     "name": "f1technical.net",
+     "title": "F1MATHS: How many overtakes did the 2025 F1 races produce?",
+     "url": "https://www.f1technical.net/news/28118"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Baku track repairs made overnight after F1 drivers complain",
+     "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Pirelli make key decision ahead of Malaysia F1 return",
+     "url": "https://racingnews365.com/pirelli-make-key-decision-ahead-of-malaysia-f1-return"
+    },
+    {
+     "name": "The Race",
+     "title": "The major unknown as F1 braces for sandpaper-rough Sepang track",
+     "url": "https://www.the-race.com/formula-1/the-major-unknown-as-f1-braces-for-sandpaper-rough-sepang-track/"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "anticlockwise",
+   "term": "反時計回りのコース",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "左回りのコース",
+    "逆回り",
+    "anti-clockwise",
+    "counter-clockwise",
+    "anticlockwise",
+    "はんとけいまわり"
+   ],
+   "words": [
+    "左回り",
+    "インテルラゴス",
+    "首の負担",
+    "シンガポール",
+    "COTA",
+    "反時計回り"
+   ],
+   "short": "コースを反時計回りに走る会場。左コーナーが多く、首の負担がふだんと違うと言われる。",
+   "body": [
+    "反時計回りのコースは、F1では少数派だ。レッドブルの公式サイトで、アルボンはブラジルのインテルラゴスを「数少ない反時計回りのコースで、ドライバーには厳しい。体、特に首は時計回りのコースに慣れている」と話している。",
+    "メルセデスの公式サイトによると、2025年のカレンダーで全体が反時計回りだったのは9会場だ。COTA（アメリカ）のほか、ジェッダ、マイアミ、イモラ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナ（アブダビ）が挙げられている。",
+    "この一覧と今季のカレンダー（F1公式サイト）を見比べると、2026年に開催されるのはCOTA、マイアミ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナの7会場だ。ジェッダとイモラは、今季のカレンダーにない。今季から加わったマドリード（マドリング）とセパンは、この一覧に入っていないので、ここでは数えていない。",
+    "首の負担については、ドライバーの話として語られることが多い。ただし、この負担の大きさを数字で示した公式の資料は確認できなかった。"
+   ],
+   "examples": [],
+   "see": [
+    "street-circuit",
+    "night-race",
+    "altitude"
+   ],
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "United States Grand Prix 2026 (COTA)",
+     "url": "https://www.mercedesamgf1.com/races/united-states-grand-prix-2026"
+    },
+    {
+     "name": "Red Bull Racing",
+     "title": "Circuit scout: Interlagos",
+     "url": "https://redbullracing.com/int-en/circuit-scout-interlagos"
+    },
+    {
+     "name": "formula1.com",
+     "title": "The 2026 F1 calendar",
+     "url": "https://www.formula1.com/en/racing/2026"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "2026 F1 Schedule",
+     "url": "https://www.mercedesamgf1.com/seasons/2026"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "night-race",
+   "term": "ナイトレース",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "夜のレース",
+    "ナイトGP",
+    "night race",
+    "under the lights",
+    "ないとれーす"
+   ],
+   "words": [
+    "夜に行うレース",
+    "照明の下",
+    "シンガポールGP",
+    "ラスベガスGP",
+    "アブダビのたそがれ",
+    "夜のグランプリ"
+   ],
+   "short": "コースを照明で照らし、夜に走るレース。シンガポールが2008年にF1初のナイトレースとして始めた。",
+   "body": [
+    "ナイトレースは、サーキットを照明で照らして、日が落ちてから走るレースだ。F1公式サイトによると、シンガポールが2008年に開いたレースが、F1で初めての夜のレースだった。",
+    "今季の例は、シンガポールとラスベガスだ。シンガポールGPの決勝は現地時間の20時スタート（10月11日、F1公式サイト）。ラスベガスは土曜の20時スタートで、街の通りを照明の下で走る（F1公式サイト）。アブダビは、日没前にスタートして暗くなってからゴールする。メルセデスは、これも夜のレースと位置づけている。",
+    "夜だから涼しいとは限らない。シンガポールは高温多湿で、ドライバーはレースで体重が最大3kg減ることもあるとF1公式サイトは伝えている。",
+    "今週のセパン（バーレーンGPを開催）は、夜のレースではない。バーレーンGPはふだん夜に行われるが、セパンでは現地時間の15時にスタートする（2026年8月のGPFansとCrashの報道）。レースの時間は、大会ごとに変わることがある。"
+   ],
+   "examples": [],
+   "see": [
+    "street-circuit",
+    "heat-hazard",
+    "anticlockwise"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Singapore Grand Prix 2026 - F1 Race",
+     "url": "https://www.formula1.com/en/racing/2026/singapore"
+    },
+    {
+     "name": "formula1.com",
+     "title": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - full timetable",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-singapore-airlines-singapore-grand-prix-2026.1OXwlTH5jrpTiZX2Dvg7qE"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What makes the Formula 1 Las Vegas Grand Prix special",
+     "url": "https://www.formula1.com/en/latest/article/what-makes-the-las-vegas-grand-prix-special-and-why-you-should-see-it.7EKzEf0h1QWqvLFrEsdJVC"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Abu Dhabi Grand Prix 2026",
+     "url": "https://www.mercedesamgf1.com/races/abu-dhabi-grand-prix-2026"
+    },
+    {
+     "name": "GPFans",
+     "title": "FIA announce update to F1 race start times for rest of 2026 season",
+     "url": "https://www.gpfans.com/en/f1-news/1088727/fia-announce-update-f1-race-start-times-2026-season-bahrain-malaysia/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Sepang F1 start time confusion cleared as FIA releases new update (2026-08-05)",
+     "url": "https://crash.net/f1/news/1102092/1/sepang-f1-start-time-confusion-cleared-fia-releases-new-update"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "sprint-venue",
+   "term": "スプリント開催地",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "スプリント開催会場",
+    "スプリントウィークエンド",
+    "sprint venue",
+    "sprint calendar",
+    "すぷりんとかいさいち"
+   ],
+   "words": [
+    "スプリントのある大会",
+    "2026年のスプリント",
+    "スプリント6戦",
+    "スプリントカレンダー",
+    "シンガポールスプリント",
+    "どこでスプリント"
+   ],
+   "short": "スプリント（短いレース）を行う大会。2026年は上海、マイアミ、モントリオールなど6つ。",
+   "body": [
+    "スプリントは、全部のグランプリで行うわけではない。F1とFIAが、毎年、スプリントを行う大会を決めて発表する。2026年は6大会で、F1公式サイトの発表では、上海（3月）、マイアミ（5月）、モントリオール（5月）、シルバーストン（7月）、ザントフォールト（8月）、シンガポール（10月）だ。",
+    "モントリオール、ザントフォールト、シンガポールは、初めてスプリントを行う。シルバーストンは、最初のスプリントを行った2021年以来の開催だ。上海とマイアミは3年連続になる。今季の残りのスプリントは、10月9〜11日のシンガポールだけだ（2026年10月2日時点）。今週のセパンは、スプリントではない。",
+    "スプリントの週末は、金曜にスプリント予選、土曜にスプリントと予選、日曜に決勝の順で進む。スプリントの距離は、100kmを超える最も少ない周回数だ（規則B2.3.2）。",
+    "タイヤの割り当ても変わる。スプリントの週末は、ドライタイヤが12セットで、ふだんの13セットより1セット少ない（F1公式サイト）。"
+   ],
+   "rule": "B2.3.2（スプリントの距離）",
+   "examples": [],
+   "see": [
+    "sprint",
+    "sprint-qualifying",
+    "race-weekend-format",
+    "calendar",
+    "tyre-allocation",
+    "points-system"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Formula 1 and FIA announce 2026 Sprint Calendar",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA and Formula 1 announce 2026 Sprint Calendar",
+     "url": "https://www.fia.com/news/fia-and-formula-1-announce-2026-sprint-calendar"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 07)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What tyres will the teams and drivers have for the 2026 Chinese Grand Prix?",
+     "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-chinese-grand-prix.3XkKc3AWcBACR36IhWpKOS"
+    },
+    {
+     "name": "formula1.com",
+     "title": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - full timetable",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-singapore-airlines-singapore-grand-prix-2026.1OXwlTH5jrpTiZX2Dvg7qE"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "pit-loss",
+   "term": "ピットロス（ピットで失う時間）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ピットレーンタイムロス",
+    "ピットストップ・タイムロス",
+    "pit loss",
+    "pit time loss",
+    "pit stop time loss",
+    "ぴっとろす"
+   ],
+   "words": [
+    "ピットで失う時間",
+    "ピットインのコスト",
+    "1ストップと2ストップ",
+    "ピットレーンの長さ",
+    "タダ同然のピット",
+    "セーフティカーでのピット"
+   ],
+   "short": "ピットに入ると、走り続けた場合より失う時間。コースごとに約20〜30秒と差があり、戦略を左右する。",
+   "body": [
+    "ピットロスは、ピットインで失うタイムのことだ。ピットレーンを通る時間と、タイヤ交換で止まっている時間の合計から、そのまま走り続けた場合を引いて考える。F1公式サイトの事前資料には、コースごとの数字が出ている。",
+    "F1公式サイトの2026年の事前資料では、モナコが19.92秒（6月）、オーストリアが20.02秒（6月。どちらも2.5秒の停止を含む）、モンツァが24.14秒（9月）だった。シンガポールは2025年10月の資料で29.1秒だ。差が出る主な理由は、ピットレーンの長さと速度制限である。メルセデスによると、シンガポールはモナコと並んで制限が時速60kmで、ピットレーンは400mより長い。",
+    "ピットロスは戦略に直結する。ピレリのイゾラは2025年4月、戦略は「タイヤの劣化と性能」「追い抜きやすさ」「ピットで失う時間」の3つで決まると説明した。ピットロスが小さいほど、ストップ回数を増やしやすい。The Race（2025年5月）によると、時速60kmのシンガポールを80kmにすれば、ピットで失う時間は約29秒から22〜23秒ほどになる計算だ。",
+    "セーフティカー中は、ほかの車も遅く走るので、ピットで失う時間が小さくなる。そのため、セーフティカー中のピットストップは「無料の」ピットストップと呼ばれることがある。今季のバクーでは、これを生かしたレッドブルの判断が話題になった。"
+   ],
+   "examples": [
+    {
+     "t": "バクーで、フェルスタッペンの早めのピット希望を見送り、セーフティカー中の「無料の」ピットストップを生かしたレッドブルの判断",
+     "u": "/news/nl-gpblog-verstappen-pit-lambiase/"
+    }
+   ],
+   "see": [
+    "pit-stop",
+    "pit-lane",
+    "pit-lane-speed",
+    "undercut",
+    "safety-car",
+    "pit-window",
+    "two-compound-rule"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Monaco Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-monaco-grand-prix.1dphiN7qz6fiI4sm4MaC4V"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Austrian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-austrian-grand-prix.5c3It3dAheBaaNuzedrXPx"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Italian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-italian-grand-prix.3R2slU8oSHdeOc5lidJDGy"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2025 Singapore Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-singapore.468A8YSelm8nsKywLuGTf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 to raise pitlane speed limit to reduce one-stop races",
+     "url": "https://www.the-race.com/formula-1/f1-reduce-pitlane-speed-limit-some-races-explained/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 boring races strategy problem: one-stop, Pirelli, pitlane limit (2025-04-26)",
+     "url": "https://the-race.com/formula-1/f1-boring-races-strategy-problem-one-stop-pirelli-pitlane-limit"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Singapore Grand Prix 2026",
+     "url": "https://www.mercedesamgf1.com/races/singapore-grand-prix-2026"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "fuel-saving",
+   "term": "燃料セーブ（2026年の燃料の考え方）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "燃費走行",
+    "フューエルセーブ",
+    "燃料節約",
+    "fuel saving",
+    "fuel management",
+    "ねんりょうせーぶ"
+   ],
+   "words": [
+    "燃料を節約する走り",
+    "レース中の給油禁止",
+    "エネルギー流量",
+    "3000MJ",
+    "リフト＆コースト",
+    "燃料よりバッテリー"
+   ],
+   "short": "燃料を節約して走ること。2026年は燃料の量より、エネルギーのやりくりが話題の中心になった。",
+   "body": [
+    "F1はレース中の給油ができない。規則では、グリッドへ向かう周回（レコノサンスラップ）のためにピットレーンを出たあとは、燃料を足したり抜いたりしてはいけない。だから車は、決勝に必要な燃料を最初から積んで走る。燃料を節約する走りは、昔からリフト＆コースト（早めにアクセルを戻す走り）などで行われてきた。",
+    "燃料の決まりも変わった。F1公式サイトによると、2014年の導入時は、1台が決勝で使える燃料は100kgまで、燃料の流れの上限は1時間あたり100kgだった（2019年に決勝の上限は110kgに増えた。Autosport）。2026年は流れを重さではなくエネルギーで決め、上限は1時間あたり3000MJになった（PlanetF1）。燃料は持続可能燃料を使う。",
+    "2026年は、エンジンと電気の力がほぼ半々になった。GPFansは、電池の管理が燃料の節約と同じか、それ以上に大事になると説明している。F1公式サイトも、リフト＆コーストを電気をためる方法の一つとして紹介している。",
+    "なお、2026年に決勝で積める燃料の総量の決まりは、規則の原文で確かめられなかったので、ここでは書いていない。燃料をどれだけ節約するかは、チームごとの走らせ方によるため、一律には言えない。"
+   ],
+   "rule": "B5.1.4（燃料の追加・抜き取りの禁止）",
+   "examples": [],
+   "see": [
+    "lift-and-coast",
+    "fuel-flow",
+    "sustainable-fuel",
+    "refuelling",
+    "energy-management"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 07)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "A racing revolution: understanding 2014's technical regulations",
+     "url": "https://www.formula1.com/en/latest/article/a-racing-revolution-understanding-2014s-technical-regulations.1bTbN3OAEksY00PVE62KvC"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Explained: the 2026 engine regulations",
+     "url": "https://www.planetf1.com/features/explained-2026-formula-1-engine-regulations"
+    },
+    {
+     "name": "The Race",
+     "title": "The limitations F1 will impose on new 2026 fuels and why",
+     "url": "https://the-race.com/formula-1/the-limitations-f1-will-impose-on-new-2026-fuels-and-why/"
+    },
+    {
+     "name": "Autosport",
+     "title": "How much fuel does a Formula 1 car use? (2021)",
+     "url": "https://www.autosport.com/f1/news/how-much-fuel-does-a-formula-1-car-use-f1-nascar-more-compared-4980266/4980266/?nrt=54"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 2026 Regulations: What is lift and coast?",
+     "url": "https://www.gpfans.com/en/f1-news/1076225/f1-lift-and-coast/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: the new key terms for Formula 1's new-for-2026 rules",
+     "url": "https://www.formula1.com/en/latest/article/explained-the-new-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "tyre-allocation",
+   "term": "タイヤの割り当て（1週末のセット数）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "タイヤのセット数",
+    "ドライタイヤ13セット",
+    "タイヤ配分",
+    "tyre allocation",
+    "tire allocation",
+    "たいやのわりあて"
+   ],
+   "words": [
+    "何セット使えるか",
+    "13セット",
+    "スプリントは12セット",
+    "新品タイヤの数",
+    "タイヤの本数",
+    "ピレリの割り当て"
+   ],
+   "short": "1週末にドライバー1人が使えるタイヤのセット数。通常はドライ13セット、スプリント週末は12セット。",
+   "body": [
+    "F1では、週末に使えるタイヤの数が決まっている。F1公式サイトによると、通常の週末は、ドライバー1人にドライタイヤが13セット。今季のオーストラリアGPでは、ハード（C3）2セット、ミディアム（C4）3セット、ソフト（C5）8セットだった。",
+    "スプリントの週末は、ドライが12セットに減る。中国とオランダの例では、ハード2、ミディアム4、ソフト6で、ハードがC2、ミディアムがC3、ソフトがC4だった。同じ資料では、雨用はインターミディエイトが6セット、フルウェットが3セットだ。スプリントの分だけ走る機会が増えるのに、ドライのセットは1つ少なくなる。",
+    "どの3種類を持ち込むかは、ピレリが会場ごとに決める。今週のセパンはC2、C3、C4で、バクーやシンガポールはC3、C4、C5のいちばん柔らかい3種類だ（RacingNews365）。チームは限られたセットを、練習・予選・決勝にどう振り分けるかを考える。",
+    "モナコでは2025年、タイヤを3セット以上使う義務（2回以上のピットストップ）があり、フルウェットが1セット追加された。しかし、この決まりは2026年の規則からなくなった（PlanetF1、2026年2月）。ドライの決勝では2種類以上のコンパウンドを使う義務がある（「2種類のタイヤの使用義務」を見る）。"
+   ],
+   "examples": [],
+   "see": [
+    "tyre-compounds",
+    "two-compound-rule",
+    "pirelli",
+    "sprint-venue",
+    "intermediate",
+    "full-wet"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "What tyres will the teams and drivers have for the 2026 Australian Grand Prix?",
+     "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-australian-grand.4Uli9fb5X7hNAhkxzikv5B"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What tyres will the teams and drivers have for the 2026 Chinese Grand Prix?",
+     "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-chinese-grand-prix.3XkKc3AWcBACR36IhWpKOS"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What tyres will the teams and drivers have for the 2026 Dutch Grand Prix?",
+     "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-dutch-grand-prix.402ufleb78rXrqaispof9U"
+    },
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: What is the new two-stop rule for the Monaco Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/explained-what-is-the-new-two-stop-rule-for-the-monaco-grand-prix-and-how.1qropbdmR05S3BqgYsHtpE"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Pirelli make key decision ahead of Malaysia F1 return",
+     "url": "https://racingnews365.com/pirelli-make-key-decision-ahead-of-malaysia-f1-return"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 07), Article B6 Tyre limitations",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Monaco Grand Prix drops controversial two-stop rule for 2026 season (2026-02-28)",
+     "url": "https://www.planetf1.com/news/monaco-grand-prix-two-stop-rule-scrapped-2026-fia"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "pirelli",
+   "term": "ピレリ（唯一のタイヤ供給）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "Pirelli",
+    "タイヤサプライヤー",
+    "ワンメイクタイヤ",
+    "single tyre supplier",
+    "ぴれり"
+   ],
+   "words": [
+    "タイヤ供給",
+    "ワンメイク",
+    "タイヤメーカー",
+    "ピレリとの契約",
+    "2028年まで",
+    "F2・F3のタイヤ"
+   ],
+   "short": "2011年からF1にタイヤを独占供給する会社。FIAは2026年6月、契約を2028年まで延ばした。",
+   "body": [
+    "ピレリはイタリアのタイヤメーカーで、2011年から、F1のただ一つのタイヤ供給元だ。FIAの発表によると、ピレリは1950年の最初のレースからF1にかかわっている。F2とF3のタイヤも、ピレリが供給する。",
+    "契約は、2025〜2027年の3年だった。FIAは2026年6月11日、この契約にあった選択権を使い、2028年まで延ばすと発表した（2026年10月2日時点）。",
+    "2026年のタイヤは、新しい車に合わせて小さくなった。ピレリによると、トレッド幅は前が25mm、後ろが30mm細くなり、外径は前が15mm、後ろが10mm小さい。ホイールの大きさは18インチのままだ。コンパウンドは、C1（硬い）からC5（柔らかい）の5種類で、各コンパウンドの差を広げ、戦略を多様にする狙いがある。",
+    "2027年のタイヤについて、The Race（2026年9月28日）は、ピレリが劣化を増やす方向で開発していると伝えた。今季の15戦中9戦で、多くの車が1ストップで走り切ったためだ。ピレリは、実際の2026年型の車を使ったテストを進めている。"
+   ],
+   "examples": [
+    {
+     "t": "ピレリが、2027年のタイヤは1ストップに偏りすぎないよう劣化を増やす方針だと伝えられた",
+     "u": "/news/ja-f1gate-pirelli-2027-tire-degradation/"
+    }
+   ],
+   "see": [
+    "tyre-compounds",
+    "tyre-allocation",
+    "tyre-war",
+    "wheels-18inch",
+    "degradation",
+    "fia"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "FIA extends with Pirelli as Formula 1's single tyre supplier until 2028",
+     "url": "https://www.fia.com/news/fia-extends-pirelli-formula-1s-single-tyre-supplier-until-2028"
+    },
+    {
+     "name": "Pirelli",
+     "title": "Pirelli reveals 2026 F1 tyres: a fresh logo design and new compounds",
+     "url": "https://press.pirelli.com/pirelli-reveals-2026-f1-tyres-a-fresh-logo-design-and-new-compounds/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's plan for higher-degradation tyres in 2027",
+     "url": "https://www.the-race.com/formula-1/f1-plan-higher-degradation-tyres-2027-pirelli/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Formula 1 set to drop major 2026 regulation change after U-turn (18-inch wheels, 2024)",
+     "url": "https://www.planetf1.com/news/f1-2026-16-inch-tyres-u-turn"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "start-line",
+   "term": "スタートラインとコントロールライン",
+   "cat": "レース運営",
+   "aliases": [
+    "スタートライン",
+    "コントロールライン",
+    "フィニッシュライン",
+    "the Line",
+    "start line",
+    "control line"
+   ],
+   "words": [
+    "スタート位置",
+    "グリッドの枠",
+    "ポールの位置",
+    "ラインを越える",
+    "周回の数え方",
+    "ポールからターン1まで"
+   ],
+   "short": "周回とゴールの判定に使う線と、グリッドの枠の関係。前輪が枠の線を越えると罰を受ける。",
+   "body": [
+    "F1の規則には「ライン（the Line）」という言葉が出てくる。周回を数えたり、順位を決めたりするときに越える線だ。順位は、走り切った周回数が多い順で、同じ周回数ならラインを越えた順に決まる（規則B2.5.5b）。",
+    "スタートのグリッドは、ラインの手前に2台ずつ互い違いに並べる。列と列の間は16mだ（規則B5.1.2）。1台ずつ枠があり、スタートの合図のとき、前輪のタイヤが地面にふれる部分が枠の線の外に出ていると、罰を受ける。ハミルトンやノリスは、枠の線を見やすくする目印のテープを車やコース脇につけている（The Race）。",
+    "今週のセパンで、グリッドの塗り直しが起きた。ポールの位置が、ふだんの右側ではなく左側に描かれ、しかもスタートラインより前に出ていた。水曜にチームのトラックウォークとFIAの検査で見つかり、木曜に直された。直したあとも、ポールの枠がFIAの決める「ラインから最低1m」の距離にわずかに足りなかったので、スタートラインを少し前に引き直した（The Race、2026年10月）。",
+    "スタートラインからターン1のブレーキングポイントまでの距離は、会場で違う。F1公式サイトの事前資料では、2026年のモンツァが476m、オーストリアが243m、モナコが142mだ。コースによって大きく違う。"
+   ],
+   "rule": "B5.1.2（グリッド）、B2.5.5b（同じ周回数ならラインを越えた順）",
+   "examples": [
+    {
+     "t": "セパンで、ポールの枠が左側に描かれ、スタートラインも前に出ていたため、直前に塗り直された",
+     "u": "/news/en-therace-sepang-grid-repaint/"
+    }
+   ],
+   "see": [
+    "race-start",
+    "pole-position",
+    "formation-lap",
+    "classification",
+    "chequered-flag"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section B Sporting (Issue 07)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "Last-minute fix made to F1's Sepang starting grid",
+     "url": "https://www.the-race.com/formula-1/last-minute-fix-made-to-f1s-sepang-starting-grid/"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Hamilton and Norris are using tape on F1 starting grids",
+     "url": "https://www.the-race.com/formula-1/two-very-different-solutions-to-a-very-modern-problem-in-f1"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Italian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-italian-grand-prix.3R2slU8oSHdeOc5lidJDGy"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Austrian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-austrian-grand-prix.5c3It3dAheBaaNuzedrXPx"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Monaco Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-monaco-grand-prix.1dphiN7qz6fiI4sm4MaC4V"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "speed-trap",
+   "term": "スピードトラップ（最高速）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "スピードトラップ",
+    "最高速",
+    "トップスピード",
+    "speed trap",
+    "top speed",
+    "すぴーどとらっぷ"
+   ],
+   "words": [
+    "最高速の測定",
+    "トラップ地点の速度",
+    "最高速ランキング",
+    "直線の速さ",
+    "時速何km",
+    "最高速の記録"
+   ],
+   "short": "コースの1地点で車の速度を測る装置と、その数字。レースの最高速そのものではない。",
+   "body": [
+    "スピードトラップは、コース上の決まった1か所で、車の速度を測る装置だ。F1公式サイトの用語集は「コースの決まった地点に置いた速度測定の装置」と説明している。RacingNews365によると、レーダーで測り、ふつうはいちばん長い直線の速い場所に置く。位置は会場や年によって変わる。",
+    "FIAは、決勝のあと「最高速度」の資料を公開する。2026年のベルギーGPの資料では、スピードトラップのほかに、ゴールライン、第1中間計測、第2中間計測の4地点の速度が載っている。スピードトラップの1位はローソンの時速323.1km。第1中間計測では、アルボンが344.9kmで、トラップより速い値が出た。",
+    "つまり、スピードトラップの数字は、その地点の速さであって、その週末で出た最高の速さとは限らない。前の車の後ろにつく「スリップストリーム」でも、数字は上がる。チームは、同じ地点の数字をほかの車と比べて、直線の速さを見る。",
+    "2026年は、長い直線ほど最高速が伸びにくい。直線が電気をためる場所になるからだ（PlanetF1、2026年9月）。バクーでは、スピードトラップの最高はローソンの時速349.4kmだった（Autosport）。マクラーレンは、直線の最高速でメルセデスより最大で時速10kmほど遅かったと、Autosportが伝えている。シーズン初めに選んだ短めのギア比が原因の一つだという。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレンがバクーの直線でメルセデスに最大時速10km劣った理由（ギア比と空力）",
+     "u": "/news/en-motorsport-mclaren-straight-line-weakness/"
+    }
+   ],
+   "see": [
+    "slipstream",
+    "drag",
+    "downforce",
+    "super-clipping",
+    "active-aero",
+    "high-speed-circuit"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "What is a speed trap in F1?",
+     "url": "https://racingnews365.com/speed-trap-f1"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Belgian Grand Prix - Race Maximum Speeds",
+     "url": "https://api.fia.com/sites/default/files/2026_10_bel_f1_r0_timing_racemaximumspeeds_v01.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Why Monza is no longer the Temple of Speed under F1's 2026 rules",
+     "url": "https://www.planetf1.com/f1-data/2026-f1-rules-monza-temple-of-speed"
+    },
+    {
+     "name": "Autosport",
+     "title": "What made Red Bull so fast in the Azerbaijan GP",
+     "url": "https://www.autosport.com/f1/news/what-made-red-bull-so-fast-in-the-azerbaijan-gp-after-verstappens-qualifying-issue/10859823/"
+    },
+    {
+     "name": "Autosport",
+     "title": "Why McLaren was so much slower than Mercedes on Baku's straights",
+     "url": "https://www.autosport.com/f1/news/why-mclaren-was-so-much-slower-than-mercedes-on-bakus-straights/10859723/"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "purple-sector",
+   "term": "紫・緑・黄のタイム表示",
+   "cat": "レース運営",
+   "aliases": [
+    "パープルセクター",
+    "紫セクター",
+    "グリーンセクター",
+    "タイミング画面の色",
+    "purple sector",
+    "timing colours"
+   ],
+   "words": [
+    "紫は何の色",
+    "緑のタイム",
+    "黄色のタイム",
+    "ミニセクター",
+    "ベストタイムの色",
+    "タイミングモニター"
+   ],
+   "short": "タイミング画面の色。紫は全員でいちばん速く、緑は自己ベスト更新、黄は自己ベストより遅い。",
+   "body": [
+    "タイミング画面や中継のグラフィックでは、タイムを3つの色で表す。F1公式サイトの用語集によると、紫は全員の中でいちばん速いタイム、緑はそのドライバーの自己ベスト、それ以外の遅いタイムは黄で表す。",
+    "色は、3つのセクターのタイムにも、1周のタイムにも使う。TAG Heuerのまとめは、紫を「セクターでも1周でも、これまででいちばん速いタイム」と説明している。レースで出た紫の周回は、そのときのファステストラップだ。ただし、2025年からファステストラップのボーナス1点はなくなった（FIA世界モータースポーツ評議会が2024年10月に決定）。",
+    "アプリやタイミングのソフトでは、セクターをさらに細かく分けた「ミニセクター」を小さな四角で表すものがある。四角の色も、紫・緑・黄の意味は同じだ。予選のアタック中は、途中の色を見れば、そのラップが速くなりそうかが分かる。",
+    "注意したいのは、紫は「その時点」の最速だということ。あとで誰かが速いタイムを出すと、前の紫は塗り替えられる。黄色は黄旗とは別のもので、ただタイムが自己ベストより遅いという意味だ（黄旗は別の項目を見る）。"
+   ],
+   "examples": [],
+   "see": [
+    "sector",
+    "fastest-lap",
+    "qualifying",
+    "yellow-flag",
+    "lap-time-deleted",
+    "gap-interval"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "TAG Heuer Magazine",
+     "title": "Formula 1: The Glossary (You'll want to know this)",
+     "url": "https://magazine.tagheuer.com/en/2025/05/06/formula-1-the-glossary-youll-want-to-know-this/"
+    },
+    {
+     "name": "MultiViewer",
+     "title": "Understanding telemetry",
+     "url": "https://multiviewer.app/docs/getting-started/understanding-telemetry"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Fastest lap point to be scrapped in 2025 after latest FIA World Motor Sport Council",
+     "url": "https://www.formula1.com/en/latest/article/fastest-lap-point-to-be-scrapped-in-2025-after-latest-fia-world-motor-sport.4pUjDzWnGRN7KVWENLc1BY"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "gap-interval",
+   "term": "タイム差（ギャップとインターバル）",
+   "cat": "レース運営",
+   "aliases": [
+    "ギャップ",
+    "インターバル",
+    "gap",
+    "interval",
+    "リーダーとの差",
+    "前の車との差"
+   ],
+   "words": [
+    "トップとの差",
+    "前の車との差",
+    "秒差",
+    "1秒以内",
+    "gap to leader",
+    "インターバルの意味"
+   ],
+   "short": "ギャップはトップとのタイム差、インターバルは前を走る車とのタイム差。どちらも秒で表す。",
+   "body": [
+    "レース中継の画面には、2種類のタイム差が出る。「ギャップ」は、先頭の車と、その車とのタイム差。「インターバル」は、すぐ前を走る車とのタイム差だ。たとえば、5番手の車のインターバルは、4番手との差を示す。",
+    "タイム差は、車に積んだ発信器（トランスポンダー）の信号を、コース上の受信機が受けて計算する（RacingNews365）。練習走行や予選では、リーダーの代わりに、その時点のいちばん速い人との差や、次に速い人との差が出る（MultiViewer）。",
+    "2026年は、インターバルの数字がいっそう大事になった。F1公式サイトによると、オーバーテイクモードは、検知地点で前の車と1秒以内にいるときに使える。2026年はDRSの代わりに、このモードとアクティブエアロがある。つまり、インターバルが1秒以内かどうかが、追い抜きの助けになるかどうかを左右する。",
+    "数字は変わり続ける。ピットストップやセーフティカーで、一気に縮んだり、広がったりもする。最後は0.196秒差だったバクーのように、差が小さいと結果を分ける。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでは、ラッセルがフェルスタッペンを0.196秒差で抑えて優勝した",
+     "u": "/news/ja-f1data-baku-race-digest/"
+    }
+   ],
+   "see": [
+    "overtake-mode",
+    "slipstream",
+    "dirty-air",
+    "undercut",
+    "safety-car",
+    "race-pace"
+   ],
+   "src": [
+    {
+     "name": "RacingNews365",
+     "title": "What does interval mean in F1?",
+     "url": "https://racingnews365.com/what-does-interval-mean-in-f1"
+    },
+    {
+     "name": "TAG Heuer Magazine",
+     "title": "Formula 1: The Glossary (You'll want to know this)",
+     "url": "https://magazine.tagheuer.com/en/2025/05/06/formula-1-the-glossary-youll-want-to-know-this/"
+    },
+    {
+     "name": "MultiViewer",
+     "title": "Understanding telemetry",
+     "url": "https://multiviewer.app/docs/getting-started/understanding-telemetry"
+    },
+    {
+     "name": "formula1.com",
+     "title": "EXPLAINED: the new key terms for Formula 1's new-for-2026 rules",
+     "url": "https://www.formula1.com/en/latest/article/explained-the-new-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+    }
+   ],
+   "checked": "2026-10-02"
+  },
+  {
+   "id": "race-pace",
+   "term": "レースペース",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "決勝ペース",
+    "レースの速さ",
+    "race pace",
+    "long-run pace",
+    "れーすぺーす"
+   ],
+   "words": [
+    "決勝での速さ",
+    "予選との違い",
+    "ロングランの速さ",
+    "タイヤを持たせる速さ",
+    "予選は速いが決勝は遅い",
+    "ペースの比較"
+   ],
+   "short": "決勝で走り続けたときの速さ。1周だけの速さの予選ペースとは別に考える。",
+   "body": [
+    "レースペースは、決勝で何周も走り続けたときの、1周あたりの速さのことだ。1周だけ速く走る予選のペースとは別に考える。車の速さは、タイヤの減り方、燃料の重さ、前の車の影響などで、予選とレースでは変わるからだ。",
+    "マクラーレンのザイドル代表（当時）は2022年、予選に強く決勝で苦しむ理由をこう説明した。新品タイヤのグリップが、予選では車の弱点をかくすが、レース距離では、ダウンフォース不足がタイヤの摩耗につながる（Autosport）。つまり、予選の順位がそのままレースの強さとは限らない。",
+    "2026年は、電気の使い方も大きな要素だ。The Raceは、ベルギーGPの金曜のロングラン分析で、エネルギーの使い方がチームごとに違うことが速さに影響すると指摘した。同じ記事で、フェラーリのバスール代表は、レ・コーム手前では一部のライバルより時速20km遅く、最後の直線では20km速かったと話した。",
+    "チームは、金曜のロングランでレースペースを探る。ただし、数字をそのまま決勝の力とは言えない。バクーでは、フェルスタッペンが予選でエンジンの問題を抱えて8番手だったが、決勝ではフェルスタッペンが2位、ハジャーが3位に入った。レッドブルのメキース代表は、パワーユニットを生かせる範囲は狭く、エネルギーの使い方を合わせることが大事だったと話した（Autosport）。"
+   ],
+   "examples": [
+    {
+     "t": "予選で苦しんだレッドブルが、バクーの決勝では2位・3位に入った",
+     "u": "/news/en-autosport-redbull-baku-pace-explained/"
+    },
+    {
+     "t": "マクラーレンは、セパンは路面などで、シミュレーションの精度に不確実性が残ると語った",
+     "u": "/news/it-formula1-mclaren-sepang-simulation/"
+    }
+   ],
+   "see": [
+    "long-run",
+    "quali-sim",
+    "degradation",
+    "energy-management",
+    "tyre-cliff",
+    "plan-b"
+   ],
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "McLaren explains gaps between F1 qualifying and race pace",
+     "url": "https://autosport.com/all/news/mclaren-explains-gaps-between-qualifying-and-race-pace/10350881/"
+    },
+    {
+     "name": "The Race",
+     "title": "Belgian Grand Prix F1 long-run Friday practice analysis",
+     "url": "https://www.the-race.com/formula-1/belgian-grand-prix-f1-long-run-friday-practice-analysis/"
+    },
+    {
+     "name": "Autosport",
+     "title": "What made Red Bull so fast in the Azerbaijan GP after Verstappen's qualifying issue",
+     "url": "https://www.autosport.com/f1/news/what-made-red-bull-so-fast-in-the-azerbaijan-gp-after-verstappens-qualifying-issue/10859823/"
+    }
+   ],
+   "checked": "2026-10-02"
   }
  ],
  "sources": [
@@ -16989,6 +19577,511 @@
    "name": "formula1.com",
    "title": "Formula 1 reveals calendar for 2026 season",
    "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Miami Grand Prix - Rain Hazard Declaration",
+   "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_rain_hazard_declaration.pdf"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "FIA declare Canadian Grand Prix rain hazard",
+   "url": "https://racingnews365.com/fia-declare-canadian-grand-prix-rain-hazard"
+  },
+  {
+   "name": "FIA",
+   "title": "2024 Canadian Grand Prix - Infringement - Car 16 - Tyre Usage",
+   "url": "https://fia.com/sites/default/files/decision-document/2024%20Canadian%20Grand%20Prix%20-%20Infringement%20-%20Car%2016%20-%20Tyre%20Usage.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "Refinements to the 2026 FIA Formula 1 regulations agreed by all stakeholders",
+   "url": "https://www.fia.com/news/refinements-2026-fia-formula-1-regulations-agreed-all-stakeholders"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 grid in trepidation over wet Miami GP chance",
+   "url": "https://www.the-race.com/formula-1/wet-miami-gp-f1-grid-expectations/"
+  },
+  {
+   "name": "F1i",
+   "title": "Boost banned in the wet as FIA refines 2026 F1 regulations",
+   "url": "https://f1i.com/news/563387-boost-banned-in-the-wet-as-fia-refines-2026-f1-regulations.html"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "Insight: Temperature talk",
+   "url": "https://www.mercedesamgf1.com/news/insight-temperature-talk"
+  },
+  {
+   "name": "Pirelli",
+   "title": "It's graining, men",
+   "url": "https://pirelli.com/global/en-ww/race/racingspot/formula-1/it-s-graining-men--124082"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 drivers' 2026 Barcelona GP nightmare: huge balloon tyres",
+   "url": "https://www.the-race.com/formula-1/f1-drivers-2026-barcelona-gp-nightmare-huge-balloon-tyres/"
+  },
+  {
+   "name": "Motor Sport Magazine",
+   "title": "Why lightning - not just rain - could stop the Miami Grand Prix",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/why-lightning-not-just-rain-could-stop-the-miami-grand-prix/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "The law that would cancel the Miami F1 Grand Prix if the predictions come true",
+   "url": "https://www.motorsport.com/f1/news/the-law-that-would-cancel-the-miami-f1-grand-prix-if-the-predictions-come-true/10816519/"
+  },
+  {
+   "name": "The Race",
+   "title": "Miami Grand Prix start time changed amid storm threat",
+   "url": "https://www.the-race.com/formula-1/miami-grand-prix-start-time-changed-amid-storm-threat/"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "Miami GP start time for Sunday's race moved earlier amid threat of thunderstorms in Florida",
+   "url": "https://www.skysports.com/f1/news/12040/13539234/miami-gp-start-time-for-sundays-race-moved-earlier-amid-threat-of-thunderstorms-in-florida"
+  },
+  {
+   "name": "Aston Martin F1",
+   "title": "So you want to be an F1 data engineer",
+   "url": "https://www.astonmartinf1.com/en-GB/news/feature/so-you-want-to-be-an-f1-data-engineer"
+  },
+  {
+   "name": "Williams Racing",
+   "title": "How F1 data jobs bring insights to the track",
+   "url": "https://careers.williamsf1.com/blog/2025-10/how-f1-data-jobs-bring-insights-to-the-track"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "The insider's guide to... The Pit Wall",
+   "url": "https://www.formula1.com/en/latest/article/the-insiders-guide-to-the-pit-wall.CFwHwjTcLNO5Gf4B3Dy4o"
+  },
+  {
+   "name": "Autosport",
+   "title": "Everything you need to know about the pitwall in F1",
+   "url": "https://www.autosport.com/f1/news/everything-you-need-to-know-about-the-pitwall-in-f1-who-sits-there-and-what-does-it-do/10588720/"
+  },
+  {
+   "name": "Haas F1 Team",
+   "title": "Staff spotlight: Daniela Klausser, Performance Engineer",
+   "url": "https://haasf1team.com/news/staff-spotlight-daniela-klausser-performance-engineer"
+  },
+  {
+   "name": "The Race",
+   "title": "Gary Anderson: How F1 uses windtunnels, and how it'll change",
+   "url": "https://the-race.com/formula-1/gary-anderson-how-f1-uses-windtunnels-and-how-itll-change/"
+  },
+  {
+   "name": "The Race",
+   "title": "How F1's aero development ban for 2026 cars will work",
+   "url": "https://www.the-race.com/formula-1/how-f1s-aero-development-ban-for-2026-cars-will-work/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "FIA formalises ban on 2026 F1 aero testing",
+   "url": "https://www.motorsport.com/f1/news/fia-formalises-ban-on-2026-f1-aero-testing/10555905/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Testing explained: Rob Smedley on correlation, aero rakes and flow-vis paint",
+   "url": "https://www.formula1.com/en/latest/article.testing-explained-rob-smedley-on-correlation-aero-rakes-and-flow-vis-paint.5UTaH1q9iuQcXVjZXui3Fz.html"
+  },
+  {
+   "name": "Texas Engineering",
+   "title": "F1 Engineering And Computational Fluid Dynamics Explained",
+   "url": "https://cockrell.utexas.edu/news/archive/7432-formula1cfd"
+  },
+  {
+   "name": "The Race",
+   "title": "The aero restrictions each F1 team will face in 2026",
+   "url": "https://www.the-race.com/formula-1/the-aero-restrictions-each-f1-team-will-face-in-2026/"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+   "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "F1 2026 power unit homologation deadline explained as March 1 arrives",
+   "url": "https://www.planetf1.com/news/f1-2026-power-unit-homologation-rules-march-1-deadline"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Explained: F1's complex power unit upgrade system",
+   "url": "https://www.planetf1.com/news/explained-f1-complex-power-unit-upgrade-system"
+  },
+  {
+   "name": "Race Engine Technology",
+   "title": "Why F1 engineers are dreading the 28th of February",
+   "url": "https://www.raceenginetechnology.com/Suppliers/why-f1-engineers-are-dreading-the-28th-of-february"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Pierre Waché plays down Red Bull F1 2026 correlation concerns",
+   "url": "https://www.planetf1.com/news/f1-2026-red-bull-correlation-issues-pierre-wache-wind-tunnel"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Anatomy of a pit stop: How do F1 teams service their cars in less than two seconds?",
+   "url": "https://www.formula1.com/en/latest/article/anatomy-of-a-pit-stop-how-do-f1-teams-service-their-cars-in-less-than-two.5p9LNdd8XJdvP4mRsXoGsB"
+  },
+  {
+   "name": "DHL",
+   "title": "Explained: This is how a Formula One pit stop works",
+   "url": "https://inmotion.dhl/en/formula-1/article/explained-this-is-how-a-formula-one-pit-stop-works"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Insider's guide: Why are F1 pit stops so fast?",
+   "url": "https://www.motorsport.com/f1/news/insiders-guide-why-are-f1-pit-stops-so-fast/6816459"
+  },
+  {
+   "name": "The Race",
+   "title": "New F1 pitstop rules changed and delayed",
+   "url": "https://www.the-race.com/formula-1/new-formula-1-pitstop-rules-changed-and-delayed/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "F1 new pitstop rule from Belgian GP",
+   "url": "https://www.motorsport.com/all/news/f1-new-pitstop-rule-belgian-gp/6655015/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Ferrari abandon 'traffic lights' pit-stop system",
+   "url": "https://www.crash.net/f1/news/63815/1/ferrari-ditch-traffic-lights-pit-stop-system"
+  },
+  {
+   "name": "The Race",
+   "title": "'Crashgate' cost Ferrari that F1 title. So did a familiar fault",
+   "url": "https://www.the-race.com/formula-1/crashgate-cost-ferrari-that-f1-title-so-did-a-familiar-fault/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "This is why radios haven't fully replaced pit boards in F1",
+   "url": "https://www.motorsport.com/f1/news/this-is-why-radios-havent-fully-replaced-pit-boards-in-f1/10767599/"
+  },
+  {
+   "name": "Motor Sport Magazine",
+   "title": "What happens during an F1 shakedown or filming day?",
+   "url": "https://motorsportmagazine.com/articles/single-seaters/f1/what-happens-during-an-f1-shakedown-or-filming-day"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Why do F1 teams use special liveries at testing?",
+   "url": "https://www.formula1.com/en/latest/article/what-are-testing-liveries-and-why-do-f1-teams-use-them.70d5AeZLjE85r2cT77R0BD"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "The beginner's guide to F1 car launches",
+   "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-car-launches.5njwLoM1KId9QBthP9PAOH"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "F1 launches: all 2026 cars and liveries revealed and schedule",
+   "url": "https://www.skysports.com/f1/news/12433/13481787/f1-launches-all-2026-cars-and-liveries-revealed-and-schedule-ahead-of-new-season-featuring-revised-regulations"
+  },
+  {
+   "name": "Motor Sport Magazine",
+   "title": "F1 2026 car launches: all the liveries revealed",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/2020-f1-car-launches-dates-and-news"
+  },
+  {
+   "name": "Silverstone",
+   "title": "F1 car launches 2026: every team's livery reveal date",
+   "url": "https://www.silverstone.co.uk/news/f1-car-launches-2026-every-teams-livery-reveal-date"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "F1 EXPLAINS: How car liveries are designed and why they affect performance",
+   "url": "https://www.formula1.com/en/latest/article/f1-explains-how-car-liveries-are-designed-and-why-they-affect-performance.14fuKT2tsl0GLLJM9V1GdS"
+  },
+  {
+   "name": "FIA",
+   "title": "Formula 1 Commission meeting 14.11.2025 - Media statement",
+   "url": "https://www.fia.com/news/formula-1-commission-meeting-14112025-media-statement"
+  },
+  {
+   "name": "The Race",
+   "title": "New F1 livery rules to be introduced for 2026",
+   "url": "https://www.the-race.com/formula-1/new-f1-livery-rules-to-be-introduced-for-2026/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Front-wing damage cost Hamilton six tenths a lap",
+   "url": "https://www.planetf1.com/news/lewis-hamilton-imola-performance-loss"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Mexico City Grand Prix 2026 - F1 Race",
+   "url": "https://www.formula1.com/en/racing/2026/mexico"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Belgian Grand Prix 2026 - F1 Race",
+   "url": "https://www.formula1.com/en/racing/2026/belgium"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Monaco Grand Prix 2026 - F1 Race",
+   "url": "https://www.formula1.com/en/racing/2026/monaco"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Italian Grand Prix 2026 - F1 Race",
+   "url": "https://www.formula1.com/en/racing/2026/italy"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Las Vegas Grand Prix 2026 - F1 Race",
+   "url": "https://www.formula1.com/en/racing/2026/las-vegas"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Singapore Grand Prix 2026 - F1 Race",
+   "url": "https://www.formula1.com/en/racing/2026/singapore"
+  },
+  {
+   "name": "formula1.com",
+   "title": "2026 Monaco Grand Prix circuit guide",
+   "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-monaco.vFsmfGHr6RWyLFtxi58wi"
+  },
+  {
+   "name": "formula1.com",
+   "title": "NEED TO KNOW: 2026 Italian Grand Prix",
+   "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-italian-grand-prix.3R2slU8oSHdeOc5lidJDGy"
+  },
+  {
+   "name": "formula1.com",
+   "title": "NEED TO KNOW: 2026 Monaco Grand Prix",
+   "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-monaco-grand-prix.1dphiN7qz6fiI4sm4MaC4V"
+  },
+  {
+   "name": "formula1.com",
+   "title": "NEED TO KNOW: 2026 Austrian Grand Prix",
+   "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-austrian-grand-prix.5c3It3dAheBaaNuzedrXPx"
+  },
+  {
+   "name": "Autosport",
+   "title": "Overtaking records in F1",
+   "url": "https://www.autosport.com/f1/news/overtaking-records-in-f1/6438038/"
+  },
+  {
+   "name": "GPblog",
+   "title": "Damning Madring stat exposes Madrid GP's major racing failure (2026-09-14)",
+   "url": "https://www.gpblog.com/en/general/damning-madring-stat-exposes-madrid-gps-major-racing-failure"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Lewis Hamilton F1 tracks rant",
+   "url": "https://www.planetf1.com/news/lewis-hamilton-f1-tracks-rant"
+  },
+  {
+   "name": "formula1.com",
+   "title": "CIRCUIT GUIDE: Silverstone 2026",
+   "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-silverstone-2026.5Sl0O8g393enBWVIkjRzOr"
+  },
+  {
+   "name": "formula1.com",
+   "title": "What makes the Formula 1 Las Vegas Grand Prix special",
+   "url": "https://www.formula1.com/en/latest/article/what-makes-the-las-vegas-grand-prix-special-and-why-you-should-see-it.7EKzEf0h1QWqvLFrEsdJVC"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Why Monza is no longer the Temple of Speed under F1's 2026 rules",
+   "url": "https://www.planetf1.com/f1-data/2026-f1-rules-monza-temple-of-speed"
+  },
+  {
+   "name": "The Race",
+   "title": "F1's new energy rankings for qualifying revealed",
+   "url": "https://www.the-race.com/formula-1/f1s-new-energy-rankings-for-qualifying-revealed/"
+  },
+  {
+   "name": "RACER",
+   "title": "Prepare for a very different F1 race at Monza (2026-09-03)",
+   "url": "https://racer.com/2026/09/03/prepare-for-a-very-different-f1-race-at-monza"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "Pirelli warns F1 drivers ahead of Singapore GP (2022)",
+   "url": "https://racingnews365.com/pirelli-warns-f1-drivers-ahead-of-singapore-gp"
+  },
+  {
+   "name": "formula1.com",
+   "title": "WATCH: How does Mexico City's high altitude affect an F1 car (2021)",
+   "url": "https://www.formula1.com/en/latest/article/watch-how-does-mexico-citys-high-altitude-affect-an-f1-car.2viU1hO6pXOPslHbNqjyim"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Mexico preview: the stats and info you need to know (2018)",
+   "url": "https://www.formula1.com/en/latest/article/mexico-preview-the-stats-and-info-you-need-to-know.5T3MUg4m1qwaaOsQuGYMK2"
+  },
+  {
+   "name": "f1technical.net",
+   "title": "Cooling requirement: How did teams optimize their cars for the Mexico City Grand Prix?",
+   "url": "https://www.f1technical.net/news/27928"
+  },
+  {
+   "name": "Motorsport Magazine",
+   "title": "What are the fastest speeds recorded at every F1 circuit?",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/what-are-the-fastest-speeds-recorded-at-every-f1-circuit/"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 2026 grand prix race start times",
+   "url": "https://www.the-race.com/formula-1/what-time-is-f1-this-weekend-2026-grand-prix-start-times/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Silverstone expects one-second lap time gain from new surface",
+   "url": "https://www.motorsport.com/f1/news/silverstone-one-second-lap-time-new-surface-1020476/1399057/"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Re-laid surface brings unknown factor to Silverstone weekend (2019)",
+   "url": "https://www.formula1.com/en/latest/article.re-laid-surface-brings-unknown-factor-to-silverstone-weekend.28wPQFNnViY78S1PZarW9j.html"
+  },
+  {
+   "name": "f1technical.net",
+   "title": "F1MATHS: How many overtakes did the 2025 F1 races produce?",
+   "url": "https://www.f1technical.net/news/28118"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "United States Grand Prix 2026 (COTA)",
+   "url": "https://www.mercedesamgf1.com/races/united-states-grand-prix-2026"
+  },
+  {
+   "name": "Red Bull Racing",
+   "title": "Circuit scout: Interlagos",
+   "url": "https://redbullracing.com/int-en/circuit-scout-interlagos"
+  },
+  {
+   "name": "formula1.com",
+   "title": "The 2026 F1 calendar",
+   "url": "https://www.formula1.com/en/racing/2026"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "2026 F1 Schedule",
+   "url": "https://www.mercedesamgf1.com/seasons/2026"
+  },
+  {
+   "name": "formula1.com",
+   "title": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026 - full timetable",
+   "url": "https://www.formula1.com/en/latest/article/formula-1-singapore-airlines-singapore-grand-prix-2026.1OXwlTH5jrpTiZX2Dvg7qE"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "Abu Dhabi Grand Prix 2026",
+   "url": "https://www.mercedesamgf1.com/races/abu-dhabi-grand-prix-2026"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA announce update to F1 race start times for rest of 2026 season",
+   "url": "https://www.gpfans.com/en/f1-news/1088727/fia-announce-update-f1-race-start-times-2026-season-bahrain-malaysia/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Sepang F1 start time confusion cleared as FIA releases new update (2026-08-05)",
+   "url": "https://crash.net/f1/news/1102092/1/sepang-f1-start-time-confusion-cleared-fia-releases-new-update"
+  },
+  {
+   "name": "formula1.com",
+   "title": "Formula 1 and FIA announce 2026 Sprint Calendar",
+   "url": "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY"
+  },
+  {
+   "name": "FIA",
+   "title": "FIA and Formula 1 announce 2026 Sprint Calendar",
+   "url": "https://www.fia.com/news/fia-and-formula-1-announce-2026-sprint-calendar"
+  },
+  {
+   "name": "formula1.com",
+   "title": "What tyres will the teams and drivers have for the 2026 Chinese Grand Prix?",
+   "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-chinese-grand-prix.3XkKc3AWcBACR36IhWpKOS"
+  },
+  {
+   "name": "formula1.com",
+   "title": "NEED TO KNOW: 2025 Singapore Grand Prix",
+   "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-singapore.468A8YSelm8nsKywLuGTf"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 boring races strategy problem: one-stop, Pirelli, pitlane limit (2025-04-26)",
+   "url": "https://the-race.com/formula-1/f1-boring-races-strategy-problem-one-stop-pirelli-pitlane-limit"
+  },
+  {
+   "name": "Mercedes-AMG F1",
+   "title": "Singapore Grand Prix 2026",
+   "url": "https://www.mercedesamgf1.com/races/singapore-grand-prix-2026"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Explained: the 2026 engine regulations",
+   "url": "https://www.planetf1.com/features/explained-2026-formula-1-engine-regulations"
+  },
+  {
+   "name": "Autosport",
+   "title": "How much fuel does a Formula 1 car use? (2021)",
+   "url": "https://www.autosport.com/f1/news/how-much-fuel-does-a-formula-1-car-use-f1-nascar-more-compared-4980266/4980266/?nrt=54"
+  },
+  {
+   "name": "formula1.com",
+   "title": "What tyres will the teams and drivers have for the 2026 Australian Grand Prix?",
+   "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-australian-grand.4Uli9fb5X7hNAhkxzikv5B"
+  },
+  {
+   "name": "FIA",
+   "title": "FIA extends with Pirelli as Formula 1's single tyre supplier until 2028",
+   "url": "https://www.fia.com/news/fia-extends-pirelli-formula-1s-single-tyre-supplier-until-2028"
+  },
+  {
+   "name": "The Race",
+   "title": "F1's plan for higher-degradation tyres in 2027",
+   "url": "https://www.the-race.com/formula-1/f1-plan-higher-degradation-tyres-2027-pirelli/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Formula 1 set to drop major 2026 regulation change after U-turn (18-inch wheels, 2024)",
+   "url": "https://www.planetf1.com/news/f1-2026-16-inch-tyres-u-turn"
+  },
+  {
+   "name": "The Race",
+   "title": "Why Hamilton and Norris are using tape on F1 starting grids",
+   "url": "https://www.the-race.com/formula-1/two-very-different-solutions-to-a-very-modern-problem-in-f1"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "What is a speed trap in F1?",
+   "url": "https://racingnews365.com/speed-trap-f1"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Belgian Grand Prix - Race Maximum Speeds",
+   "url": "https://api.fia.com/sites/default/files/2026_10_bel_f1_r0_timing_racemaximumspeeds_v01.pdf"
+  },
+  {
+   "name": "Autosport",
+   "title": "What made Red Bull so fast in the Azerbaijan GP",
+   "url": "https://www.autosport.com/f1/news/what-made-red-bull-so-fast-in-the-azerbaijan-gp-after-verstappens-qualifying-issue/10859823/"
+  },
+  {
+   "name": "Autosport",
+   "title": "Why McLaren was so much slower than Mercedes on Baku's straights",
+   "url": "https://www.autosport.com/f1/news/why-mclaren-was-so-much-slower-than-mercedes-on-bakus-straights/10859723/"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "What does interval mean in F1?",
+   "url": "https://racingnews365.com/what-does-interval-mean-in-f1"
+  },
+  {
+   "name": "Autosport",
+   "title": "McLaren explains gaps between F1 qualifying and race pace",
+   "url": "https://autosport.com/all/news/mclaren-explains-gaps-between-qualifying-and-race-pace/10350881/"
   }
  ]
 }
