@@ -3892,7 +3892,7 @@
    "body": [
     "チームが1年間に使えるお金に、FIAが上限をつける決まり。お金のあるチームだけが有利にならないようにするための仕組みだ。2026年の上限は2億1500万ドル（物価の調整が入ることがある）。2023〜2025年は1億3500万ドルだったので、大きく上がった。レースが24戦を超える年は、1戦につき180万ドルが上乗せされる。",
     "上がったのは、上限の対象になる費用が増えたからだ。F1公式は、増えた分を考えると全体ではほぼ同じ水準だと説明している。",
-    "対象外の費用もある。FIAの財務規則（D5.1.1）によると、ドライバーへの支払い、報酬が高い上位3人の社員の分、マーケティング、レース週末の移動費（ホテルや航空券など）、金融費用、法人税などは数えない。パワーユニットも、決められた最高価格までの分は上限の外で扱う。",
+    "対象外の費用もある。FIAの財務規則（D5.1.1）によると、ドライバーへの支払い、報酬が高い上位3人の社員の分、マーケティング、レース週末の移動費（ホテルや航空券など）、金融費用、法人税などは数えない。チームが買うパワーユニットの代金も、この上限には数えない（パワーユニットには別のコスト上限がある）。",
     "上限を超えると、超えた割合で重さが変わる。財務規則では、2％未満の超過は軽い違反（マイナー・オーバースペンド）、2％以上は重大な違反（マテリアル・オーバースペンド）とされる。罰には、罰金、選手権ポイントの剥奪、空力テストの制限、翌年の上限の引き下げなどがある。"
    ],
    "rule": "財務規則 D4.1.2（上限額）、D5.1.1（対象外の費用）、D10.3（超過の区分）、D12.1.1（罰）",
@@ -3901,7 +3901,8 @@
     "atr",
     "pu-manufacturer",
     "concorde-agreement",
-    "fia"
+    "fia",
+    "pu-cost-cap"
    ],
    "src": [
     {
@@ -3921,7 +3922,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-10-03"
   },
   {
    "id": "atr",
@@ -20408,6 +20409,1929 @@
      "url": "https://www.gpfans.com/en/f1-news/1089840/f1-explained-what-are-aero-rakes/"
     }
    ]
+  },
+  {
+   "id": "causing-collision",
+   "term": "衝突を起こした（コリジョンの責任）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "コリジョン",
+    "接触の責任",
+    "causing a collision",
+    "衝突の原因",
+    "接触事故"
+   ],
+   "words": [
+    "接触",
+    "同士討ち",
+    "主な責任",
+    "10秒加算",
+    "お咎めなし",
+    "レーシングインシデント"
+   ],
+   "short": "接触で主な責任があるとされた車への罰。目安は10秒加算で、軽い接触は無罰もある。",
+   "body": [
+    "スチュワードは、接触が起きると、まず誰に責任があるかを調べる。規則では、ドライバーに「全面的、または主な責任がある」ことがはっきりしない限り、罰は科さない。責任があいまいなら、無罰になる。",
+    "FIAの2026年のペナルティ・ガイドラインでは、衝突を起こしたときの基準は、決勝やスプリントで10秒加算だ。事情があれば5秒、重いときはドライブスルーか10秒のストップ＆ゴーになる。予選や練習では、戒告かグリッド降格が目安だ。触れた程度の軽い接触なら、罰なしもありうる。",
+    "わざとや無謀と見なされた衝突は、別の扱いだ。決勝では、10秒のストップ＆ゴーか、30秒を超える時間加算が目安になる。予選や練習では、10グリッド以上の降格だ。2026年の更新では、とくに極端な場合に失格や次戦の出場停止も選べるようになった。ペナルティポイントは、2026年は危険・無謀・明らかに故意の行為などに絞られている（→ペナルティポイント）。",
+    "レース中に出た時間加算は、リタイアすると消化できない。ガイドラインは、5秒の罰が1つだけなら、次戦のグリッド降格には切り替えないとしている。一方、今季のバクーでは、再スタートで衝突を起こしたコラピントに10秒加算が出たが、リタイアしたため、次戦セパンの5グリッド降格になった。スチュワードは、遅いブレーキングでコーナーを曲がりきれない速度のまま内側に入ったとして、主な責任があると判断した。本人もミスを認めている。同じ再スタートの1コーナーで起きた、チームメイト同士の別の接触は、玉突きで余地が少なく、主な責任があるとは言えないとして無罰だった。"
+   ],
+   "rule": "スポーティングレギュレーション B1.9.3／国際スポーティングコード 付則L 第IV章 第2条 d）",
+   "examples": [
+    {
+     "t": "バクーの再スタートでの衝突に、10秒加算（リタイアのため次戦の5グリッド降格に変更）",
+     "u": "/news/es-infobae-colapinto-penalty/"
+    },
+    {
+     "t": "同じ再スタートの1コーナーでの別の接触は、玉突きで余地が少なかったとして無罰",
+     "u": "/news/en-planetf1-lindblad-explained/"
+    }
+   ],
+   "see": [
+    "time-penalty",
+    "grid-penalty",
+    "penalty-points",
+    "stewards",
+    "safety-car-restart",
+    "dive-bomb",
+    "overtaking-guidelines",
+    "dangerous-driving"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "RaceFans",
+     "title": "New penalty guidance allows disqualification for 'very extreme' collisions",
+     "url": "https://www.racefans.net/2026/03/06/new-penalty-guidance-allows-disqualification-for-very-extreme-collisions/"
+    },
+    {
+     "name": "RaceFans",
+     "title": "Colapinto handed five-place grid drop for crash which took out team mate and Norris",
+     "url": "https://www.racefans.net/2026/09/26/colapinto-handed-five-place-grid-drop-for-crash-which-took-out-team-mate-and-norris/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA driving standards guidelines F1 2026: penalty points",
+     "url": "https://www.planetf1.com/news/fia-driving-standards-guidelines-f1-2026-penalty-points"
+    },
+    {
+     "name": "Autosport",
+     "title": "Franco Colapinto penalty revealed for causing Baku F1 pile-up",
+     "url": "https://www.autosport.com/f1/news/franco-colapinto-penalty-revealed-for-causing-baku-f1-pile-up/10859374/"
+    },
+    {
+     "name": "The Race",
+     "title": "Shock inaction over Baku's other F1 team-mate clash explained",
+     "url": "https://www.the-race.com/formula-1/shock-inaction-over-bakus-other-f1-team-mate-clash-explained/"
+    }
+   ]
+  },
+  {
+   "id": "impeding",
+   "term": "予選での走行妨害（インピーディング）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "インピーディング",
+    "走行妨害",
+    "impeding",
+    "unnecessarily impeded",
+    "アタックの邪魔",
+    "妨害"
+   ],
+   "words": [
+    "アタックの邪魔",
+    "ゆっくり走る",
+    "レーシングライン",
+    "3グリッド降格",
+    "予選のペナルティ",
+    "邪魔をされた"
+   ],
+   "short": "予選で、他の車を不必要に邪魔する違反。目安は3グリッド降格。",
+   "body": [
+    "予選やスプリント予選では、全員が1周のタイムを争う。そのため、ほかの車を不必要に邪魔したり、コース上で必要もなく止まったりしてはいけない。スチュワードがそう判断すれば、その周のタイムの抹消か、グリッド降格が科される。",
+    "FIAのガイドラインでは、予選で他の車を邪魔したときの目安は3グリッド降格だ。練習走行なら警告になる。危険な邪魔や、はっきりした意図があるときは、5グリッド降格が目安になる。",
+    "スチュワードが見るのは、その邪魔が「不必要」だったかどうかだ。たとえば、走行ラインの上で速度を落とし、後ろのアタック中の車によけさせた場合だ。今季のハンガリーGPの予選では、アタックを終えてレーシングライン上を遅い速度で走っていた車が、後ろのアタック中の車に避けさせたとして、3グリッド降格になった。スチュワードは、チームの無線がドライバーに届くのが遅かった事情にも触れたうえで、不必要な妨害と判断した。",
+    "「不必要にゆっくり走る」ことは、別の違反として扱われる。ガイドラインでは、予選の目安は戒告かグリッド降格だ（→危険な運転）。"
+   ],
+   "rule": "スポーティングレギュレーション B4.1.1、B1.9.4",
+   "examples": [],
+   "see": [
+    "qualifying",
+    "sprint-qualifying",
+    "lap-time-deleted",
+    "grid-penalty",
+    "in-out-lap",
+    "dangerous-driving",
+    "tow"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "Racer",
+     "title": "Hamilton demoted from front row for impeding Piastri",
+     "url": "https://racer.com/2026/07/25/hamilton-demoted-from-front-row-for-impeding-piastri"
+    },
+    {
+     "name": "The Race",
+     "title": "All you need to know about a big F1 penalty guidelines reveal",
+     "url": "https://www.the-race.com/formula-1/big-f1-penalty-guidelines-reveal-all-you-need-to-know/"
+    }
+   ]
+  },
+  {
+   "id": "false-start",
+   "term": "フライングスタート（ジャンプスタート）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "フライング",
+    "ジャンプスタート",
+    "フォルススタート",
+    "false start",
+    "jump start",
+    "動き出しが早い"
+   ],
+   "words": [
+    "スタートの合図前に動く",
+    "5秒加算",
+    "グリッドの枠",
+    "ライトが消える前",
+    "タイヤの回転",
+    "スタート違反"
+   ],
+   "short": "スタートの合図より前に車が動くこと。目安は5秒か10秒の加算。重いとドライブスルーなど。",
+   "body": [
+    "スタンディングスタートでは、赤いライトが5組点き、全部が消えた瞬間が合図だ。それより前に車が動くと、フォルススタート（フライング）になる。2026年のスチュワードの判断では、3つ目の赤いライトが点いてから合図が出るまでの間に動くと違反になる。少しでも動けば違反だ。",
+    "動いたかどうかは、車載映像や計時データなどで調べる。今季のイギリスGPでは、ハミルトンの車で、タイヤの黄色いピレリの文字が、ライトが消える前に上へ前へと回っているのが車載映像で確認された。スチュワードは「この間の動きは、どれもフォルススタートになる」として、5秒加算を科した。動きはわずかだったが、規則は動きの大きさを問わない。",
+    "罰は、5秒加算、10秒加算、ドライブスルー、ストップ＆ゴーのどれかだ。FIAのガイドラインでは、動いた大きさに応じて選ぶ。",
+    "2026年は、赤いライトの前に、グリッド上のパネルが5秒間青く点滅する「プレスタート」の合図が加わった（→スタート手順）。ターボを回す時間をとるための仕組みで、合図の前に動いてはいけない決まりは同じだ。"
+   ],
+   "rule": "スポーティングレギュレーション B5.11.1",
+   "examples": [],
+   "see": [
+    "race-start",
+    "formation-lap",
+    "time-penalty",
+    "drive-through",
+    "stop-go",
+    "pit-lane-start",
+    "grid-penalty"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Lewis Hamilton British Grand Prix 2026 penalty",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-british-grand-prix-2026-penalty"
+    },
+    {
+     "name": "F1 Technical",
+     "title": "Why was Hamilton penalized for his start infringement?",
+     "url": "https://www.f1technical.net/news/28889"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why race starts will be different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-race-starts-will-be-different-in-2026.7ADR4zkfl299T7i3ZYVTYK"
+    }
+   ]
+  },
+  {
+   "id": "fine",
+   "term": "罰金",
+   "cat": "ペナルティ",
+   "aliases": [
+    "罰金",
+    "ファイン",
+    "fine",
+    "制裁金",
+    "チームへの罰金"
+   ],
+   "words": [
+    "お金の罰",
+    "チームの罰金",
+    "ピット速度違反",
+    "1km/hで100ユーロ",
+    "罰金の上限",
+    "罰金の額"
+   ],
+   "short": "お金で払う罰。順位は変わらない。ドライバーやチームに科され、一部が猶予になることもある。",
+   "body": [
+    "罰金は、順位やタイムを変えずに、お金を払わせる罰だ。ドライバー個人に科すものと、チーム（競技者）に科すものがある。FIAのガイドラインには、戒告や罰金のときは、スチュワードはペナルティポイントをつけられない、と書かれている。",
+    "金額が規則で決まっている例が、ピットレーンの速度違反だ。練習走行、予選、スプリント予選で制限速度を超えると、1km/hにつき100ユーロ、最大1000ユーロの罰金になる。決勝やスプリントでは、罰金ではなく時間加算などになる（→ピットレーンの速度制限）。",
+    "ほかにも、罰金になる場面がある。危険な状態でピットから放した車は、決勝ではストップ＆ゴーが科されるが、リタイアして消化できないときは、チームの罰金になる（→アンセーフリリース）。ガイドラインには、ドライバーの安全装備の違反は最大4万ユーロ（2回目は最大5万ユーロ、3回目は最大6万ユーロ）、車検の自己申告で故意にうその申告をしたときは、チームに最大10万ユーロ、などの目安がある。",
+    "国際スポーティングコードの違反にも罰金がある。ガイドラインは、FIAの名誉や利益を損なう言動は最大5000ユーロ、暴力や憎悪をあおる発言や、許可のない政治的・宗教的な主張は最大2万ユーロ、としている。罰金の一部は、執行猶予付きにできる（→執行猶予付きの罰）。"
+   ],
+   "rule": "スポーティングレギュレーション B1.6.3 a) i）",
+   "examples": [],
+   "see": [
+    "pit-lane-speed",
+    "unsafe-release",
+    "suspended-penalty",
+    "reprimand",
+    "penalty-points",
+    "stewards",
+    "scrutineering"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Kimi Antonelli's F1 2026 penalties and punishments in full",
+     "url": "https://www.planetf1.com/features/kimi-antonelli-f1-2026-penalties-full-list"
+    }
+   ]
+  },
+  {
+   "id": "lasting-advantage",
+   "term": "コース外で得た利益（ゲイン・アドバンテージ）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "ゲイン・アドバンテージ",
+    "ラスティング・アドバンテージ",
+    "lasting advantage",
+    "コース外走行",
+    "利益を返す"
+   ],
+   "words": [
+    "コースを出る",
+    "順位を返す",
+    "得をした",
+    "ショートカット",
+    "10秒加算",
+    "利益を返す"
+   ],
+   "short": "コースを出て、他の車に対して時間や順位で得をすること。得たぶんは返すか、罰になる。",
+   "body": [
+    "ドライバーは、いつもコースを使うよう努めなければならない。コースを出る（車のどの部分もコースに触れていない）のは、正当な理由がなければ認められない。コースに戻れるのは、安全で、「持続的な利益（lasting advantage）を得ない」ときだけだ。白線はコースの一部だが、縁石は含まれない。",
+    "ガイドラインでは、「利益」とは、時間か順位、または順位を守ることで、他の車に対して有利になることだ。決勝では、10秒加算が基準で、事情があれば5秒、重ければドライブスルーまでになる。予選では、そのタイムの抹消か、最大3グリッド降格が目安だ。",
+    "規則には、レースディレクターの裁量で、得た利益をすべて返す機会を与えることができる、と書かれている。たとえば、コースを出て抜いた相手に、順位を返す場合だ。",
+    "コースに戻るときは、安全であることと、利益を得ないことの両方が条件だ。コースの外に出たことを見るトラックリミットとは、この点で結びつく（→トラックリミット）。"
+   ],
+   "rule": "スポーティングレギュレーション B1.8.6／国際スポーティングコード 付則L 第IV章 第2条 c）",
+   "examples": [],
+   "see": [
+    "track-limits",
+    "time-penalty",
+    "lap-time-deleted",
+    "run-off",
+    "kerb",
+    "stewards",
+    "dangerous-driving"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    }
+   ]
+  },
+  {
+   "id": "sc-infringement",
+   "term": "セーフティカー中の違反（追い越し・間隔）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "SC中の違反",
+    "セーフティカー違反",
+    "safety car infringement",
+    "デルタタイム違反",
+    "SCの後ろの追い越し",
+    "車間を空けすぎ"
+   ],
+   "words": [
+    "SC中の追い越し",
+    "間隔を空けすぎ",
+    "最低タイム",
+    "順位を返す",
+    "10車身",
+    "SCライン"
+   ],
+   "short": "SC中に追い越す、速く走りすぎる、間隔を空けすぎるなどの違反。順位を返せば不問のことも。",
+   "body": [
+    "セーフティカー（SC）が出ている間、全車は速度を落とす。マーシャルセクターごとに、FIAのシステムが決めた最低タイムより遅いタイムで、少なくとも一度は走らなければならない。追い越しも、決められた例外を除いて禁止だ。",
+    "追い越しが認められる例外は4つ。ピットに入るとき、最初のSCラインに着いたあと、コース上に残る車を抜くこと。ピットから出るとき、2つ目のSCラインに着く前に、コース上の車を抜くこと。ピットレーン内にいる車同士。そして、明らかなトラブルで遅くなった車を抜くことだ。",
+    "ガイドラインの罰の目安は、追い越した相手の数で重くなる。1台なら10秒加算、2台ならドライブスルー、3台以上は10秒のストップ＆ゴーだ。SCそのものを追い越すと、10秒のストップ＆ゴーになる。どちらも、順位を返せば、それ以上の処分はなしとされる。最低タイムを守れなかったときは、守れなかったセクターが多いほど重くなる。",
+    "前の車との間を空けすぎるのも、違反になりうる。2026年のモナコGPでは、SCの後ろで「10車身より大きく空けた」と調べられた車があった。スチュワードは、2025年のカナダGPの例をあげ、タイヤやPUの準備のための余裕を認めて、お咎めなしとした。2026年版のガイドラインは、この間隔を「許される最大の間隔」と書き、ペナルティポイントは安全に大きく関わるときだけとした。"
+   ],
+   "rule": "スポーティングレギュレーション B5.13.2",
+   "examples": [],
+   "see": [
+    "safety-car",
+    "vsc",
+    "safety-car-restart",
+    "pit-lane",
+    "yellow-flag",
+    "race-control",
+    "stewards",
+    "time-penalty"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "RaceFans",
+     "title": "New penalty guidance allows disqualification for 'very extreme' collisions",
+     "url": "https://www.racefans.net/2026/03/06/new-penalty-guidance-allows-disqualification-for-very-extreme-collisions/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Monaco Grand Prix, Document 84: Decision, Car 6, alleged safety car infringement",
+     "url": "https://www.fia.com/system/files/decision-document/2026_monaco_grand_prix_-_decision_-_car_6_-_alleged_safety_car_infringement.pdf"
+    }
+   ]
+  },
+  {
+   "id": "dangerous-driving",
+   "term": "危険な運転（不規則な動き）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "危険な運転",
+    "不規則な運転",
+    "erratic driving",
+    "potentially dangerous",
+    "ふらつく走り",
+    "不必要にゆっくり走る"
+   ],
+   "words": [
+    "ふらつく",
+    "急ブレーキ",
+    "急な進路変更",
+    "危険な走り",
+    "ゆっくり走る",
+    "戒告"
+   ],
+   "short": "不必要に遅い、ふらつく、ほかの人を危険にさらす走り方の禁止。戒告から10秒加算が目安。",
+   "body": [
+    "規則は、F1カーを「不必要に遅く、不規則に、またはほかのドライバーや人にとって危険と見なされるやり方で」走らせてはならないと定めている。練習、予選、スプリント、決勝のすべてに当てはまる。",
+    "ガイドラインでは、ほかの車に回避行動や急な進路変更をさせた場合などが危険な例だ。今季のバルセロナGPのフリー走行3回目では、前の車の前でブレーキを踏んで抜かせなかった走りが「不規則な運転」とされ、戒告になった。ドライバーは、いらだちからの行動だったと認めて謝った。",
+    "罰の目安は、決勝やスプリントなら10秒加算だ。事情があれば5秒、重いときはドライブスルーや10秒のストップ＆ゴーになる。予選や練習は、戒告かグリッド降格だ。",
+    "ペナルティポイントは、2026年のガイドライン更新で、危険・無謀・明らかに故意の行為などに絞られた。以前は、不規則な運転にもポイントがつくことがあった（→ペナルティポイント）。"
+   ],
+   "rule": "スポーティングレギュレーション B1.8.5／国際スポーティングコード 付則L 第IV章 第2条 e）",
+   "examples": [],
+   "see": [
+    "penalty-points",
+    "reprimand",
+    "time-penalty",
+    "defending",
+    "impeding",
+    "causing-collision",
+    "sc-infringement"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA driving standards guidelines F1 2026: penalty points",
+     "url": "https://www.planetf1.com/news/fia-driving-standards-guidelines-f1-2026-penalty-points"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Kimi Antonelli receives verdict after Barcelona FP3 'erratic driving' investigation",
+     "url": "https://www.planetf1.com/news/kimi-antonelli-erratic-driving-verdict-fia-investigation-barcelona-fp3"
+    }
+   ]
+  },
+  {
+   "id": "suspended-penalty",
+   "term": "執行猶予付きの罰",
+   "cat": "ペナルティ",
+   "aliases": [
+    "執行猶予",
+    "サスペンデッド",
+    "suspended penalty",
+    "suspended fine",
+    "猶予付き罰金"
+   ],
+   "words": [
+    "猶予",
+    "罰の保留",
+    "再発したら",
+    "12か月",
+    "一部猶予",
+    "罰金の猶予"
+   ],
+   "short": "罰を、すぐには科さずに保留すること。期間内に同じ違反があると、保留した分も科される。",
+   "body": [
+    "執行猶予付きの罰は、決めた罰をすぐには実行せず、一定の期間、保留にするものだ。その間に違反がなければ、罰は実行されない。ガイドラインには、安全装備の違反が2回目になると、前に猶予された分も実行される、という例がある。",
+    "ガイドラインでは、罰金の一部を猶予にする例がある。また、2年のあいだの最初の違反なら、事情を考えて罰を軽くしてよいとし、その方法として、全部を執行猶予にすること、まれに正式な警告にとどめることを挙げている。",
+    "2022年のオーストリアGPでは、ベッテルが、金曜のドライバーズブリーフィングを無断で退席したとして、2万5000ユーロの罰金を科された。ただし、シーズンの終わりまで猶予付きで、期間内に別の違反をしなければ払わなくてよかった。",
+    "2026年のベルギーGPでは、ピットストップで整備士が車の進路に入った件で、フェラーリに3万ユーロの罰金が科された。うち1万ユーロは12か月の猶予付きで、同様の違反をしないことが条件になった。スチュワードは、ドライバーに責任はなく、時間の罰は必要ないとした（→アンセーフリリース）。"
+   ],
+   "examples": [],
+   "see": [
+    "fine",
+    "reprimand",
+    "stewards",
+    "unsafe-release",
+    "penalty-points"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "Vettel handed suspended €25k fine for early F1 meeting exit",
+     "url": "https://the-race.com/formula-1/vettel-handed-suspended-e25k-fine-for-early-f1-meeting-exit/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Why FIA penalised Ferrari, not Lewis Hamilton, at Belgian Grand Prix",
+     "url": "https://www.planetf1.com/news/fia-explains-lewis-hamilton-verdict-belgian-grand-prix"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Hamilton penalty for unsafe pit release in Belgian Grand Prix confirmed",
+     "url": "https://www.formula1.com/en/latest/article/hamilton-penalty-for-unsafe-pit-release-in-belgian-grand-prix-confirmed.p8ItnzotleVFVAU50e08T"
+    }
+   ]
+  },
+  {
+   "id": "fia-documents",
+   "term": "FIAの公式文書（裁定書・ドキュメント）",
+   "cat": "レース運営",
+   "aliases": [
+    "FIAドキュメント",
+    "裁定書",
+    "スチュワードの裁定",
+    "FIA doc",
+    "ドキュメント番号",
+    "decision document"
+   ],
+   "words": [
+    "裁定の書類",
+    "FIAのPDF",
+    "ドキュメント何番",
+    "競技規則",
+    "ペナルティ・ガイドライン",
+    "イベントノート"
+   ],
+   "short": "FIAが出す規則、ガイドライン、裁定の書類。罰の理由は、裁定書で読める。",
+   "body": [
+    "FIAの文書は、大きく3種類ある。1つ目は規則そのものだ。F1の規則はセクションに分かれ、競技の決まりがセクションB（スポーティング）、技術の決まりがセクションC、お金の決まりがセクションD（財務）にある。直すたびに版（Issue）が出て、競技規則は2026年6月25日付が第7版だ。",
+    "2つ目は、規則ではない文書だ。FIAは2025年から、ペナルティ・ガイドラインとドライビング・スタンダード・ガイドラインを公表している。2026年版は3月6日に出た。FIAは、どちらにも規則としての効力はないと説明している。",
+    "3つ目は、大会ごとに出る文書だ。スチュワードの裁定書は、FIAのサイトに載る。各文書には番号がつく。たとえば、2026年のモナコGPでSCの後ろの間隔を調べた件の裁定書は「ドキュメント84」だ。文書には、調べた事実、使った条文、裁定、その理由、スチュワードの署名が書かれ、上訴できることの案内も付く。",
+    "ほかに、大会ごとの決まりを示すレースディレクターのノート（競技ノート）や、車の自己申告、パルクフェルメ、夜間作業禁止などに関する書類も、大会ごとに公開される。"
+   ],
+   "examples": [
+    {
+     "t": "バクー決勝後の審議3件に裁定（警告2件と10秒加算）が出て、正式結果が確定した",
+     "u": "/news/ja-f1data-baku-stewards-verdict/"
+    }
+   ],
+   "see": [
+    "stewards",
+    "technical-directive",
+    "race-control",
+    "under-investigation",
+    "fia",
+    "overtaking-guidelines",
+    "right-of-review"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section D (Financial, F1 Teams) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "Updated FIA Formula One World Championship stewards guidelines: driving standards and penalties",
+     "url": "https://www.fia.com/news/updated-fia-formula-one-world-championship-stewards-guidelines-driving-standards-penalties"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA adds further transparency: publication of stewards guidelines (FIA Formula One World Championship)",
+     "url": "https://www.fia.com/news/fia-adds-further-transparency-fia-formula-one-world-championship-publication-stewards"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Monaco Grand Prix, Document 84: Decision, Car 6, alleged safety car infringement",
+     "url": "https://www.fia.com/system/files/decision-document/2026_monaco_grand_prix_-_decision_-_car_6_-_alleged_safety_car_infringement.pdf"
+    }
+   ]
+  },
+  {
+   "id": "scrutineering",
+   "term": "車検（スクルーティニアリング）",
+   "cat": "レース運営",
+   "aliases": [
+    "車検",
+    "スクルーティニアリング",
+    "scrutineering",
+    "技術チェック",
+    "テクニカルデリゲート",
+    "自己申告"
+   ],
+   "words": [
+    "規則に合っているかの検査",
+    "レース後の検査",
+    "底板の検査",
+    "技術代表",
+    "自己申告書",
+    "失格につながる"
+   ],
+   "short": "車が技術規則に合っているかをFIAが調べる検査。大会の最初と、走ったあとにも行う。",
+   "body": [
+    "車検は、FIAの技術担当者が、車が技術規則に合っているかを調べる検査だ。大会の最初の車検は、FP1の4時間前に始まる。チームは、FP1の2時間前までに、車が規則に合っていることを示す申告書を出す。FIAのテクニカルデリゲート（技術代表）が、申告に不足がないと確認するまで、その車は走れない。",
+    "申告は、まずチームが自分で責任を持つ。FIAのガイドラインでは、車検の自己申告に故意のうそがあったときは、チームに最大10万ユーロの罰金が目安だ。",
+    "走ったあとにも検査がある。決勝後に、FIAのテクニカルデリゲートが選んだ車の、フロアや底板（プランク）の厚さを測るのが代表例だ。FIAは、車のどの部分も、いつでも検査されうると説明している。2023年のアメリカGPでは、決勝後の検査で、2台の底板が規則の摩耗の許容を超えているとわかり、失格になった。重さを測る手順は別だ（→計量）。",
+    "違反が見つかったときの罰は、場面で決まる。ガイドラインでは、技術的な違反は、決勝なら決勝結果からの失格、予選なら予選結果からの失格が目安だ。練習走行では、チームの罰金かグリッド降格になる（→失格）。"
+   ],
+   "rule": "スポーティングレギュレーション B3.1.1、B3.1.2、B3.1.3",
+   "examples": [],
+   "see": [
+    "weighbridge",
+    "parc-ferme",
+    "disqualification",
+    "minimum-weight",
+    "plank",
+    "technical-directive",
+    "fia"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why Hamilton and Leclerc were disqualified from the United States GP",
+     "url": "https://www.formula1.com/en/latest/article.explained-why-hamilton-and-leclerc-were-disqualified-from-the-united-states.35mNgpUwUVjJiePtPjEWWQ.html"
+    },
+    {
+     "name": "PitDebrief",
+     "title": "Brundle reveals FIA's F1 plank legality checks are not random",
+     "url": "https://www.pitdebrief.com/?p=5182"
+    }
+   ]
+  },
+  {
+   "id": "weighbridge",
+   "term": "計量（ウェイブリッジ）",
+   "cat": "レース運営",
+   "aliases": [
+    "ウェイブリッジ",
+    "計量",
+    "weighbridge",
+    "車重の測定",
+    "重さの検査",
+    "scales"
+   ],
+   "words": [
+    "車の重さを測る",
+    "予選後の計量",
+    "最低重量",
+    "燃料を抜く",
+    "計量に呼ばれる",
+    "重量違反"
+   ],
+   "short": "予選や決勝のあとに、車の重さを測る手順。最低重量に足りないと失格になる。",
+   "body": [
+    "計量は、車が最低重量を守っているかを、FIAの秤で測る手順だ。予選などのセッションが終わると、合図でドライバーはFIAのガレージに直行し、エンジンを止める。決勝のあとは、順位がついた車のどれでも、計量されることがある。",
+    "計量の対象になったあと、車に何かを足したり外したりしてはいけない。測るときの重さは、最低重量（2026年は768kg）を下回ってはならず、足りないぶんはバラストで補う（→最低重量、バラスト）。",
+    "軽すぎると、その結果から失格になる。2024年のベルギーGPでは、決勝後、規則に沿って燃料を抜いて測り直すと、ラッセルの車が最低重量の798kgより1.5kg軽かった。優勝は取り消された。",
+    "計量の手順にも罰がある。ガイドラインでは、呼ばれたのに止まらなかったとき、車に手をつけていなければ戒告だ。車を戻さなかったり、手を加えたりしたときは、チームの罰金かグリッド降格が目安になる。規則では、計量の決まりに違反すると、スチュワードはグリッド降格や、そのセッションからの失格を科せる。"
+   ],
+   "rule": "スポーティングレギュレーション B3.2.1、B3.2.2、B3.2.3、B3.2.4、B3.2.5",
+   "examples": [],
+   "see": [
+    "minimum-weight",
+    "ballast",
+    "scrutineering",
+    "disqualification",
+    "parc-ferme",
+    "plank"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why Russell was stripped of Belgian GP victory",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-russell-was-stripped-of-belgian-gp-victory-the-rule-that-was.cEuTYfqsXAniVUbSQh4jL"
+    },
+    {
+     "name": "F1 Technical",
+     "title": "F1MATHS: How have the F1 weight limit evolved over the years?",
+     "url": "https://www.f1technical.net/news/28346"
+    }
+   ]
+  },
+  {
+   "id": "cost-cap-breach",
+   "term": "コストキャップ違反の罰（2021年レッドブルの例など）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "予算上限違反",
+    "コストキャップ違反",
+    "cost cap breach",
+    "オーバースペンド",
+    "ABA（合意）",
+    "予算オーバー"
+   ],
+   "words": [
+    "予算オーバー",
+    "上限超過",
+    "手続き違反",
+    "罰金とテスト制限",
+    "合意",
+    "マイナー・オーバースペンド"
+   ],
+   "short": "予算上限を守らなかったときの罰。2021年のレッドブルは罰金700万ドルと空力テストの10%削減だった。",
+   "body": [
+    "コストキャップ（→コストキャップ）を守らないと、FIAの財務規則で罰が科される。違反は、書類や手続きの違反（手続き違反）、上限を超えた違反（超過）などに分けられる。超過は、2026年の規則では、上限を2%未満超えると「軽い超過（マイナー・オーバースペンド）」、2%以上だと「重大な超過（マテリアル・オーバースペンド）」だ。2021年度の審査のときの境目は5%だった。",
+    "罰は、罰金、公開の戒告、選手権ポイントの剥奪、競技の一部の出場停止、空力テストなどの制限、翌年の上限の引き下げなどだ。重大な超過には、コンストラクターズのポイント剥奪が必ず加わり、レースを含む大会の出場停止や、選手権からの除外も選べる。額や重さは、ケースごとに決まる。",
+    "実例が、2021年度の審査だ。FIAは2022年10月、レッドブルを「手続き違反と軽い超過」、アストンマーティンを「手続き違反」と発表した。レッドブルは、FIAと合意書（ABA）を結んだ。合意書では、上限を約186万ポンド（1.6%）超えたとされ、税額控除の扱いを正せば約0.37%だったとも書かれている。罰は、罰金700万ドルと、風洞とCFDの制限の10%削減（70%から63%）だった（→空力テストの制限（ATR））。FIAは、悪意や不正の主張も証拠もないと述べた。アストンマーティンは45万ドルの罰金と報じられた。",
+    "2024年度の審査は2025年に終わり、10チームのうち9チームは問題なしだった。アストンマーティンは手続き上の非常に軽い違反とされ、FIAと2025年9月29日に合意して決着した。FIAは、予測できない事情が原因と説明している。"
+   ],
+   "rule": "財務規則 D10.1.1（手続き違反）、D10.3.1・D10.3.3（超過の区分）、D12.1.1（罰）",
+   "examples": [],
+   "see": [
+    "cost-cap",
+    "atr",
+    "fia",
+    "fine",
+    "constructors-championship"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section D (Financial, F1 Teams) Issue 07, 2026-06-25",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Red Bull enter Agreement with FIA over breach of 2021 Financial Regulations",
+     "url": "https://www.formula1.com/en/latest/article/red-bull-enter-agreement-with-fia-over-breach-of-2021-financial-regulations.2ccVAHxnUpChqHSIDGMXmg"
+    },
+    {
+     "name": "Autosport",
+     "title": "FIA hands Red Bull $7m fine, aero testing reduction for cost cap breach",
+     "url": "https://autosport.com/all/news/fia-hands-red-bull-7m-fine-aero-testing-reduction-for-cost-cap-breach/10391599/"
+    },
+    {
+     "name": "Sports Illustrated",
+     "title": "Red Bull, FIA Agreement Details Released After F1 Cost Cap Breach",
+     "url": "https://www.si.com/formula1/2022/10/28/red-bull-fia-agreement-details-released-after-f1-cost-cap-breach"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA completes review under the 2021 FIA Formula 1 Financial Regulations",
+     "url": "https://admin.fia.com/news/fia-completes-review-under-2021-fia-formula-1-financial-regulations"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA completes its review of compliance with the 2024 FIA Formula 1 Financial Regulations",
+     "url": "https://www.fia.com/news/fia-completes-its-review-compliance-2024-fia-formula-1-financial-regulations"
+    }
+   ]
+  },
+  {
+   "id": "points-finish",
+   "term": "入賞（ポイント圏内）",
+   "cat": "ポイント",
+   "aliases": [
+    "入賞",
+    "ポイント圏内",
+    "ポイントフィニッシュ",
+    "points finish",
+    "ポイント獲得",
+    "にゅうしょう"
+   ],
+   "words": [
+    "ポイント圏外",
+    "10位以内",
+    "無得点",
+    "ポイントが入る順位",
+    "8位以内",
+    "初ポイント"
+   ],
+   "short": "決勝で10位以内に入ってポイントをもらうこと。スプリントは8位以内。",
+   "body": [
+    "入賞は、ポイントがもらえる順位でゴールすることだ。決勝は10位まで、スプリントは8位までが入賞になる。ポイントが入る位置にいることを「ポイント圏内」、届かないことを「ポイント圏外」と呼ぶ。",
+    "決勝のポイントは、順位がついた車に、その順位で出る。順位がつくのは、勝者の周回数の90%以上を走った車だ。レース後に失格になると、その車の結果は消えて、順位もポイントもなくなる。",
+    "ファステストラップのボーナス1点は2025年になくなった。そのため、11位以下の車がポイントを取る方法は今はない。入賞したドライバーのポイントは、本人の選手権にも、チームのコンストラクターズ選手権にも加わる。今季のバクーでは、ハースの2台がそろって入賞した。"
+   ],
+   "examples": [
+    {
+     "t": "バクー：オコンが8位に入り、ベアマンとともにハースにダブル入賞をもたらした。",
+     "u": "/news/en-motorsportweek-ocon-haas-points/"
+    },
+    {
+     "t": "バクー：アルピーヌとマクラーレンは、2台ともポイントを取れなかった。",
+     "u": "/news/en-therace-baku-winners-losers/"
+    }
+   ],
+   "see": [
+    "points-system",
+    "classification",
+    "disqualification",
+    "sprint",
+    "fastest-lap"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Explained: F1's points system and how drivers earned points in the past",
+     "url": "https://www.planetf1.com/news/explained-f1-points-system-and-how-drivers-earned-points-in-the-past"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026年6月25日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    }
+   ]
+  },
+  {
+   "id": "dropped-scores",
+   "term": "有効得点制（ベスト○戦）",
+   "cat": "ポイント",
+   "aliases": [
+    "ドロップスコア",
+    "dropped scores",
+    "ベスト11戦",
+    "best results",
+    "有効ポイント制",
+    "ゆうこうとくてんせい"
+   ],
+   "words": [
+    "捨てレース",
+    "悪かった結果を外す",
+    "上位の何戦だけ数える",
+    "昔のポイント",
+    "故障の結果を数えない"
+   ],
+   "short": "1年の結果のうち、点が高い何戦かだけを数える、昔の年間順位の決まり。",
+   "body": [
+    "有効得点制は、全レースの合計ではなく、点が高かった何戦かだけを数えて年間の順位を決める方法だ。故障やアクシデントで取れなかったレースを、点数から外せる。英語では「ドロップスコア」と呼ぶ。",
+    "世界選手権が始まった1950年は、7戦のうち、上位4戦だけが数えられた。1967年からは、シーズンを前半と後半に分けて、それぞれで悪い結果を外す方式になった。1980年代には、年間のベスト11戦だけを数える方式になり、1990年まで続いた。",
+    "この決まりで結果が変わった例が、1988年だ。全戦の合計は、プロストが105点、セナが94点だった。ところが、ベスト11戦で数えると、セナが90点、プロストが87点になり、セナがチャンピオンになった。",
+    "1991年にこの決まりはなくなり、全戦の合計で決めるようになった。車の信頼性が上がって、ポイントを外す必要が薄れたことと、終盤の順位が分かりにくくなることが理由とされる。2026年も、全レースのポイントを足していく。"
+   ],
+   "examples": [],
+   "see": [
+    "points-history",
+    "points-system",
+    "championship-tiebreak",
+    "world-champion"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "The Race",
+     "title": "What happened last time F1 used dropped scores?",
+     "url": "https://the-race.com/formula-1/what-happened-last-time-f1-used-dropped-scores/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1's ridiculous rule that could've made the 2025 title fight fairer",
+     "url": "https://www.motorsport.com/f1/news/f1s-ridiculous-rule-that-couldve-made-the-2025-title-fight-fairer/10755858/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Explained: F1's points system and how drivers earned points in the past",
+     "url": "https://www.planetf1.com/news/explained-f1-points-system-and-how-drivers-earned-points-in-the-past"
+    },
+    {
+     "name": "RaceFans",
+     "title": "F1 points system: dropped scores history",
+     "url": "https://www.racefans.net/?p=457116"
+    }
+   ]
+  },
+  {
+   "id": "qualifying-tiebreak",
+   "term": "予選で同じタイムのとき",
+   "cat": "ポイント",
+   "aliases": [
+    "同タイム",
+    "同じタイム",
+    "identical lap times",
+    "デッドヒート",
+    "dead heat",
+    "おなじたいむ"
+   ],
+   "words": [
+    "予選の同タイム",
+    "先に出したほうが上",
+    "ポールが並んだ",
+    "タイムが同じ",
+    "先にタイムを出した"
+   ],
+   "short": "同じタイムなら、そのタイムを先に出したドライバーが上の順位になる。",
+   "body": [
+    "予選で2人以上のドライバーがまったく同じタイムを出したら、そのタイムを先に出したほうが上の順位になる。Q1・Q2・Q3のどれでも同じ決まりで、スプリント予選にも同じ決まりがある。タイムは1000分の1秒まで測るので、同じになることはめったにない。",
+    "1997年のヨーロッパGP（ヘレス）では、ジャック・ビルヌーブ、ミハエル・シューマッハー、ハインツ・ハラルド・フレンツェンの3人が、予選で1分21秒072の同じタイムを出した。先に出したビルヌーブがポールポジションになった。",
+    "2024年のカナダGPでは、ラッセルとフェルスタッペンが、Q3で1分12秒000の同じタイムを出した。先に出したラッセルがポールになった。ピレリの解説では、1000分の1秒まで測るようになってからの同タイムは、これが2回目とされた。"
+   ],
+   "rule": "スポーティングレギュレーション B2.4.3 a) iv)（スプリント予選は B2.2.3 a) iv)）",
+   "examples": [],
+   "see": [
+    "qualifying",
+    "pole-position",
+    "sprint-qualifying",
+    "grid-penalty"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026年6月25日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "Pirelli",
+     "title": "History (almost) repeats itself in Montreal",
+     "url": "https://pirelli.com/global/en-ww/race/racingspot/formula-1/history-almost-repeats-itself-in-montreal-133089"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Canadian GP: Insane dead heat thriller sees Russell and Verstappen make F1 history",
+     "url": "https://www.planetf1.com/news/canadian-grand-prix-2024-qualifying-report"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "58 – 1997 European GP",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/58-1997-european-gp"
+    },
+    {
+     "name": "autosport web",
+     "title": "【F1第9戦予選の要点】メルセデスの復調は本物か。27年ぶりに同タイムで決したポールポジション争い",
+     "url": "https://www.as-web.jp/f1/1089354"
+    }
+   ]
+  },
+  {
+   "id": "no-qualifying-grid",
+   "term": "予選ができなかったときのグリッドの決め方",
+   "cat": "ポイント",
+   "aliases": [
+    "予選中止",
+    "予選キャンセル",
+    "予選なし",
+    "qualifying cancelled",
+    "grid by championship order",
+    "よせんができなかったとき"
+   ],
+   "words": [
+    "予選が中止",
+    "嵐",
+    "台風",
+    "ドライバーズ選手権の順位",
+    "グリッド",
+    "予選が開けない"
+   ],
+   "short": "予選ができないときは、ドライバーズ選手権の順位で決勝のグリッドを決める。",
+   "body": [
+    "嵐や事故などで、予選を行えないことがある。規則では、予選が開催されず、スチュワードも「行えない」と認めたときは、決勝のグリッドをドライバーズ選手権の順位で決める。ポイントが多いドライバーほど、前に並ぶ。",
+    "ふだんのグリッドは、予選の結果をもとにつくる。この決まりは、そのつくり方が使えないときの代わりの方法だ。雨が心配された2023年のベルギーGPの週末には、FIAが「予選を行えないときは、選手権の順位でグリッドを決める」と説明していた。",
+    "決勝のスタート位置は、予選（または選手権順位）で決まった順番に、グリッド降格などの罰を反映して最終的に決まる。罰のしくみは、別の項目で説明している。"
+   ],
+   "rule": "スポーティングレギュレーション B2.5.4 a)",
+   "examples": [],
+   "see": [
+    "qualifying",
+    "grid-penalty",
+    "pole-position",
+    "rain-hazard"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026年6月25日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Explained: the possible scenarios if rain disrupts F1 Belgian GP weekend",
+     "url": "https://www.motorsport.com/f1/news/explained-the-possible-scenarios-if-rain-disrupts-f1-belgian-gp-weekend/10501096/"
+    }
+   ]
+  },
+  {
+   "id": "replacement-driver-points",
+   "term": "代役ドライバーのポイント",
+   "cat": "ポイント",
+   "aliases": [
+    "代役のポイント",
+    "スーパーサブ",
+    "replacement driver",
+    "substitute driver",
+    "代役ドライバー",
+    "だいやくのぽいんと"
+   ],
+   "words": [
+    "代役",
+    "欠場",
+    "病気",
+    "負傷",
+    "チームのポイント",
+    "ドライバーズ選手権"
+   ],
+   "short": "代役の得点は、本人の選手権と、そのとき乗ったチームの得点になる。",
+   "body": [
+    "1つのチームは、1年のうちに最大4人のドライバーを決勝に出せる。新しく乗ったドライバーも、選手権のポイントを取れる。代役だからポイントが入らない、ということはない。",
+    "ポイントは2か所に入る。ドライバーズ選手権では、代役本人の得点になる。コンストラクターズ選手権では、そのとき乗ったチームの得点になる。2024年のサウジアラビアGPでは、サインツが出られず、フェラーリはベアマンを代役にした。ベアマンは7位に入り、6点は本人の得点にも、フェラーリのチーム得点にもなった。",
+    "代役が使うパワーユニットとタイヤは、もとのドライバーに割り当てられたものだ。そのため、代役が使った分も、もとのドライバーの使用数に数えられる。今季は、ハジャーが手首の負傷でオランダ、イタリア、スペインの3戦を休み、ローソンが代役でレッドブルに乗った。ローソンは3戦で14点を挙げた。"
+   ],
+   "rule": "スポーティングレギュレーション B1.7.1（4人まで・新しいドライバーも得点できる）、B1.7.4（代役が使うPUとタイヤ）",
+   "examples": [
+    {
+     "t": "ハジャーの負傷欠場中、代役のローソンが3戦で14ポイントを挙げた。",
+     "u": "/news/ja-f1gate-hadjar-2027-mekies-lawson/"
+    },
+    {
+     "t": "ハジャーのセパンの5グリッド降格には、ローソンが代役で使ったPUの分も数えられた。",
+     "u": "/news/en-rn365-hadjar-grid-penalty-sepang/"
+    }
+   ],
+   "see": [
+    "reserve-driver",
+    "points-system",
+    "constructors-championship",
+    "pu-allocation"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026年6月25日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Red Bull confirm Hadjar to miss Dutch Grand Prix as Lawson steps up and Tsunoda returns",
+     "url": "https://www.formula1.com/en/latest/article/red-bull-confirm-hadjar-to-miss-dutch-grand-prix-as-lawson-steps-up-and-tsunoda-returns.3D3k7oc9dUwwEBZC7upjR1.3D3k7oc9dUwwEBZC7upjR1"
+    },
+    {
+     "name": "Frontstretch",
+     "title": "Oliver Bearman impresses, scores points in F1 debut",
+     "url": "https://frontstretch.com/2024/03/09/oliver-bearman-impresses-scores-points-in-f1-debut"
+    },
+    {
+     "name": "formula1.com",
+     "title": "INSIGHT: How Ferrari super-sub Bearman made his mark on and off the track in Saudi Arabia",
+     "url": "https://www.formula1.com/en/latest/article/insight-how-ferrari-super-sub-bearman-made-his-mark-on-and-off-the-track-in.447K7Af2a2rbARMwoVmmdz"
+    },
+    {
+     "name": "The Race",
+     "title": "Hadjar cleared to return for Azerbaijan GP",
+     "url": "https://www.the-race.com/formula-1/isack-hadjar-cleared-to-return-f1-azerbaijan-gp/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Red Bull confirms Isack Hadjar return ahead of Azerbaijan GP",
+     "url": "https://www.planetf1.com/news/isack-hadjar-red-bull-return-azerbaijan-gp"
+    }
+   ]
+  },
+  {
+   "id": "driver-steward",
+   "term": "ドライバースチュワード（元ドライバーの審査委員）",
+   "cat": "レース運営",
+   "aliases": [
+    "ドライバースチュワード",
+    "ドライバー・スチュワード",
+    "driver steward",
+    "元ドライバーのスチュワード",
+    "ex-driver steward",
+    "どらいばーすちゅわーど"
+   ],
+   "words": [
+    "元F1ドライバー",
+    "審議",
+    "スチュワードの顔ぶれ",
+    "毎戦入れ替わる",
+    "常勤",
+    "審判団"
+   ],
+   "short": "スチュワード4人のうち1人が務める、元F1ドライバーの審査員。",
+   "body": [
+    "グランプリの審判団（スチュワード）は、ふつう1つの週末で4人だ。2010年から、そのうち1人は元F1ドライバーが務めている。これがドライバースチュワードで、ほかの3人は、法律家や競技運営の専門家などが多い。",
+    "役目は、事故や違反を調べて罰を決める作業に、ドライバーとしての経験を持ち込むことだ。名前は、レースごとに入れ替わる。今季のオーストラリアGPでも、元F1ドライバーが1人、4人の中に入っていた。",
+    "この役は、人選が話題になりやすい。2025年1月、ジョニー・ハーバートはスチュワードの職を離れた。解説者の仕事との利益相反が理由とされた。同じ年のカナダGPでは、別の元ドライバーが、許可のない発言を理由に1戦だけ外れた。2025年10月には、カルロス・サインツが、毎戦同じ元ドライバーが務める常勤の役をつくるよう求めた。"
+   ],
+   "rule": "スポーティングレギュレーション B1.3.1（FIA任命のスチュワードの人数）",
+   "examples": [],
+   "see": [
+    "stewards",
+    "race-control",
+    "penalty-points",
+    "time-penalty"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026年6月25日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "GPfans",
+     "title": "Who are the FIA stewards at the F1 Australian Grand Prix?",
+     "url": "https://www.gpfans.com/en/f1-news/1077719/f1-2026-australian-grand-prix-fia-stewards/"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Johnny Herbert: Former F1 driver to no longer be on stewards' panels at Grands Prix from 2025 season",
+     "url": "https://www.skysports.com/f1/news/13298836/johnny-herbert-former-f1-driver-to-no-longer-be-on-stewards-panels-at-grands-prix-from-2025-season"
+    },
+    {
+     "name": "Autosport",
+     "title": "High profile F1 steward axed for Canadian Grand Prix",
+     "url": "https://www.autosport.com/f1/news/high-profile-f1-steward-axed-for-canadian-grand-prix/10732477/"
+    },
+    {
+     "name": "GRANDPRIX.COM",
+     "title": "Sainz calls for permanent ex-driver steward in F1（2025年10月16日）",
+     "url": "https://www.grandprix.com/news/sainz-calls-for-permanent-ex-driver-steward-in-f1.html"
+    },
+    {
+     "name": "24h-lemans.com",
+     "title": "Former winners of the 24 Hours of Le Mans... and F1 driver stewards",
+     "url": "https://www.24h-lemans.com/en/news/former-winners-of-the-24-hours-of-le-mans-and-f1-driver-stewards-13214"
+    },
+    {
+     "name": "autosport web",
+     "title": "FIA、F1スチュワードのジョニー・ハーバートを解任。解説者の職務と利益相反",
+     "url": "https://www.as-web.jp/f1/1175523"
+    },
+    {
+     "name": "Autosport",
+     "title": "Ex-drivers to stay in stewards panel",
+     "url": "https://www.autosport.com/f1/news/88683/exdrivers-to-stay-in-stewards-panel"
+    },
+    {
+     "name": "FIA",
+     "title": "The voice of experience",
+     "url": "https://www.fia.com/news/voice-experience"
+    }
+   ]
+  },
+  {
+   "id": "fuel-sample",
+   "term": "燃料サンプル（燃料の検査）",
+   "cat": "レース運営",
+   "aliases": [
+    "燃料検査",
+    "燃料サンプル",
+    "fuel sample",
+    "fuel sampling",
+    "燃料のサンプリング",
+    "ねんりょうさんぷる"
+   ],
+   "words": [
+    "レース後の検査",
+    "車検",
+    "燃料の指紋",
+    "承認された燃料",
+    "1リットル",
+    "失格"
+   ],
+   "short": "FIAが車から燃料を少し抜き取り、承認済みの燃料と同じか調べる検査。",
+   "body": [
+    "F1の燃料は、チームが事前にFIAの承認を受けたものしか使えない。レースの週末には、FIAの技術委員が、何台かの車から燃料を少し抜き取る。それを調べて、承認された燃料と同じかどうかを確かめる。",
+    "2026年の日本GPとオーストリアGPの公式文書では、どちらも決勝の前に3台、決勝のあとに1台から燃料を取っていた。結果は、どの燃料も事前に承認されたものと同じで、密度の変化も許される範囲だった。F1公式サイトによると、検査では燃料の「指紋」を、登録済みの基準と照らし合わせる。2026年は燃料が先進持続可能燃料になり、承認の手続きも複雑になった。",
+    "サンプルが取れないだけでも、失格になることがある。2021年のハンガリーGPでは、2位に入ったベッテル（アストンマーティン）が失格になった。当時の規則は、いつでも1リットルを抜けるようにしておくことを求めていたが、何度やっても0.3リットルしか抜けなかった。繰り上がって、ハミルトンが2位になった。"
+   ],
+   "rule": "テクニカルレギュレーション C16.5（レース会場での燃料サンプリングと検査）",
+   "examples": [],
+   "see": [
+    "sustainable-fuel",
+    "disqualification",
+    "fuel-flow",
+    "parc-ferme"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Japanese Grand Prix – Race Scrutineering",
+     "url": "https://www.fia.com/system/files/decision-document/2026_japanese_grand_prix_-_race_scrutineering.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Austrian Grand Prix – Race Scrutineering",
+     "url": "https://www.fia.com/system/files/decision-document/2026_austrian_grand_prix_-_race_scrutineering.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section C Technical（Issue 17、2026年4月28日。C16.5の見出し）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's Advanced Sustainable Fuels",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-advanced.4h53Szn4Z3VsD6rGcR3LtU.4h53Szn4Z3VsD6rGcR3LtU"
+    },
+    {
+     "name": "The Race",
+     "title": "Mercedes F1 2026 fuel approved: Why it took so long",
+     "url": "https://www.the-race.com/formula-1/mercedes-f1-2026-fuel-approved-why-it-took-so-long/"
+    },
+    {
+     "name": "f1technical.net",
+     "title": "Vettel disqualified from the Hungarian Grand Prix for fuel sample issue",
+     "url": "https://f1technical.net/news/23372"
+    },
+    {
+     "name": "autosport web",
+     "title": "2位フィニッシュのベッテル、技術規則違反で失格の裁定。確定ならハミルトン以下の順位が繰り上がりへ／F1第11戦",
+     "url": "https://www.as-web.jp/f1/724160"
+    },
+    {
+     "name": "GRANDPRIX.COM",
+     "title": "Vettel disqualified from second place",
+     "url": "https://www.grandprix.com/news/vettel-disqualified-from-second-place.html"
+    }
+   ]
+  },
+  {
+   "id": "team-manager",
+   "term": "チームマネージャー（スポーティングディレクター）",
+   "cat": "レース運営",
+   "aliases": [
+    "チームマネージャー",
+    "スポーティングディレクター",
+    "team manager",
+    "sporting director",
+    "競技担当",
+    "ちーむまねーじゃー"
+   ],
+   "words": [
+    "FIAとの窓口",
+    "公式会議",
+    "スチュワードに呼ばれたとき",
+    "競技規則の担当",
+    "ロジスティクス",
+    "付き添い"
+   ],
+   "short": "レースウィークの進行と競技規則を受け持つ、チームの現場の窓口役。",
+   "body": [
+    "チームマネージャーは、チームの競技規則（スポーティングレギュレーション）の担当で、レースウィークの運営を受け持つ。チームによっては、同じような役目の人を「スポーティングディレクター」と呼ぶ。チーム代表が全体を率いるのに対し、規則を守りながらチームを動かす現場の役だ。",
+    "規則では、レースディレクターが開く公式の会議に、全チームのチームマネージャーが出なければならない。FIAとの連絡や、規則の解釈の確認も大事な仕事だ。",
+    "スチュワードに呼ばれたドライバーに付き添い、チームの言い分を説明するのも役目になる。元アルファタウリのチームマネージャーは、この場面を「正当な理由があれば、守る手助けをする」と説明している。ほかに、機材と人の移動、ホテル、作業禁止の時間（カーフュー）の管理など、遠征の段取りも受け持つ。"
+   ],
+   "rule": "スポーティングレギュレーション B1.4（公式会議にチームマネージャーが出席する）",
+   "examples": [],
+   "see": [
+    "team-principal",
+    "race-control",
+    "stewards",
+    "technical-director"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026年6月25日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "My job in F1: The team manager",
+     "url": "https://au.motorsport.com/f1/news/my-job-in-f1-team-manager/4796990/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "What does it take to be an F1 sporting director?（2023年4月21日）",
+     "url": "https://racingnews365.com/what-does-it-take-to-be-an-f1-sporting-director"
+    },
+    {
+     "name": "Sidepodcast",
+     "title": "Ron Meadows",
+     "url": "https://sidepodcast.com/f1-employee/ron-meadows"
+    }
+   ]
+  },
+  {
+   "id": "compression-ratio",
+   "term": "圧縮比（16:1の上限と測り方）",
+   "aliases": [
+    "圧縮比",
+    "Compression Ratio",
+    "コンプレッションレシオ",
+    "CR",
+    "あっしゅくひ"
+   ],
+   "words": [
+    "16:1",
+    "18:1",
+    "熱膨張",
+    "130度",
+    "ホット測定",
+    "抜け穴"
+   ],
+   "short": "ピストンが空気を縮める度合い。2026年は16:1が上限で、熱いときも測る。",
+   "body": [
+    "圧縮比は、ピストンが下にあるときのシリンダー内の容積を、上にあるときの容積で割った数。大きいほど空気と燃料を強く縮めて燃やせるので、エンジンの効率や力を上げやすい。F1の上限は、2025年までの18:1から、2026年は16:1に下がった。",
+    "問題になったのは測り方だ。もともと検査は、エンジンが冷えた（周囲の温度の）状態でしか行わなかった。冷えているときは16:1に収まっていても、走って熱くなると部品が膨らんで比が上がる作りにできるのではないか、という疑いが2026年の開幕前に広がった。アウディ、ホンダ、フェラーリがFIAに説明を求め、疑いは主にメルセデスのPUに向いた（レッドブルのPUにも疑いの目が向けられた）。レッドブルのPU部門のベン・ホジキンソンは、規則が許すぎりぎりまで攻めたと認めつつ、合法だと述べた。メルセデスのトト・ウォルフ代表は、この問題を「コップの中の嵐」と呼んだ。",
+    "決着は2026年2月28日。FIAの世界モータースポーツ評議会（WMSC）が電子投票で規則の修正を全会一致で承認し、PUメーカーも全会一致で同意した。内容は、2026年6月1日から12月31日までは冷えた状態と熱い状態の両方で測り、2027年からは運転時の温度（130度）でだけ測る、というもの。FIAの最初の案は8月1日からだったが、話し合いで6月1日に前倒しされ、最初に当てはまるレースはモナコGPだった。",
+    "どれだけ得になるかの見積もりは割れた。メルセデスのウォルフ代表は、2〜3馬力ほどの差にすぎないと話した。一方、1周で0.3秒ほどの得になるという見積もりも報じられた。"
+   ],
+   "examples": [],
+   "see": [
+    "ice",
+    "wmsc",
+    "pu-manufacturer",
+    "fia",
+    "fuel-flow"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "FIA Statement – Amendments to 2026 F1 Regulations",
+     "url": "https://www.fia.com/news/fia-statement-amendments-2026-f1-regulations"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA closes compression ratio loophole with F1 2026 rule change",
+     "url": "https://www.planetf1.com/news/fia-compression-ratio-rule-change-f1-2026-mercedes"
+    },
+    {
+     "name": "Racer",
+     "title": "Vote set for proposed change to F1 compression ratio tests",
+     "url": "https://racer.com/2026/02/18/vote-set-for-proposed-change-to-f1-compression-ratio-tests"
+    },
+    {
+     "name": "Crash.net",
+     "title": "FIA makes final ruling on Mercedes F1 engine controversy",
+     "url": "https://www.crash.net/f1/news/1090578/1/fia-makes-final-ruling-mercedes-f1-engine-controversy"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Mercedes F1 engine loophole trick banned at Monaco GP: What impact will it have?",
+     "url": "https://www.crash.net/f1/feature/1096276/1/mercedes-faces-f1-engine-loophole-ban-monaco-gp-what-impact-will-it-have"
+    },
+    {
+     "name": "Flashscore",
+     "title": "FIA and F1 engine manufacturers reach compromise to close off controversial loophole",
+     "url": "https://www.flashscore.com/news/motorsport-formula-1-fia-and-f1-engine-manufacturers-reach-compromise-to-close-off-controversial-loophole/hxUn3wso"
+    },
+    {
+     "name": "Sports Illustrated",
+     "title": "Red Bull on 'the very limit' of F1 engine rules as winter storm declared 'noise'",
+     "url": "https://www.si.com/onsi/f1/news/red-bull-on-the-very-limit-of-f1-engine-rules-as-winter-storm-declared-noise"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "engine-modes",
+   "term": "エンジンモード（予選と決勝で同じにする決まり）",
+   "aliases": [
+    "エンジンモード",
+    "ICEモード",
+    "パーティーモード",
+    "Party Mode",
+    "Single ICE Mode",
+    "予選モード"
+   ],
+   "words": [
+    "予選用の高出力",
+    "パーティーモード禁止",
+    "同じモードで走る",
+    "2020年モンツァ",
+    "技術指令"
+   ],
+   "short": "予選と決勝で同じエンジン設定で走る決まり。予選だけの高出力モードは2020年に禁止。",
+   "body": [
+    "エンジンモードは、エンジン（ICE）の出力や燃やし方の設定のこと。以前は、予選で短い時間だけ特別に強い設定にするチームがあり、「パーティーモード」と呼ばれた。",
+    "FIAは2020年に、これを禁じた。技術指令で「予選と決勝のあいだ、PUは1つのモードで走る」と決め、イタリアGP（モンツァ）から実施した。当初はベルギーGPからの予定だったが、チームの求めで延期された。理由は、モードが多く複雑で、PU関連の規則が守られているかをFIAが監視するのがとても難しいからだと説明された。例外として、フォーメーションラップ、インラップ・アウトラップ、セーフティカー中、トップより大きく遅い周回などでは、別のモードを使ってよかった。",
+    "この考え方は2026年の技術規則にも「シングルICEモード」（C5.23）の条として入っている。予選だけ得をする設定を認めない、という方針は続いている。",
+    "2026年4月には、予選でだけ効く別のやり方にもFIAが動いた。予選では、計時ラインに近づくとき、電気の出力を1秒あたり50kWずつ下げる決まりがある。この下げ幅を避けるためにMGU-Kの緊急停止機能が使われたと報じられ（メルセデスとレッドブル）、FIAは、その機能は本来の目的だけに使うよう、チームに文書で伝えた。"
+   ],
+   "rule": "テクニカルレギュレーション C5.23（シングルICEモード）",
+   "examples": [],
+   "see": [
+    "ice",
+    "ers",
+    "technical-directive",
+    "qualifying",
+    "deployment",
+    "boost-recharge"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1's 'Party mode' ban – What are the changes to engine modes and why do they matter?",
+     "url": "https://www.formula1.com/en/latest/article/qualifying-engine-modes-why-would-an-fia-rule-change-be-significant.OI3cSGqWS6mONcBHUFncL"
+    },
+    {
+     "name": "Motorsport Week",
+     "title": "FIA delays qualifying engine mode ban until Italian GP（2020年8月21日）",
+     "url": "https://motorsportweek.com/2020/08/21/fia-delays-qualifying-engine-mode-ban-until-italian-gp/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 engine mode clampdown targets reliability fix claims",
+     "url": "https://www.motorsport.com/all/news/f1-mode-clampdown-targets-reliability-fix-claims/4862813/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C Technical（目次のC5.23 Single ICE Mode）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_14_-_2025-10-16.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA bans fresh Mercedes, Red Bull engine trick with new technical directive",
+     "url": "https://www.planetf1.com/news/fia-mercedes-red-bull-f1-2026-engine-qualifying-loophole"
+    },
+    {
+     "name": "Crash.net",
+     "title": "FIA clamps down on Mercedes and Red Bull engine trickery",
+     "url": "https://www.crash.net/f1/news/1092998/1/fia-clamps-down-mercedes-and-red-bull-engine-trickery"
+    },
+    {
+     "name": "GPblog",
+     "title": "More details about ban of qualification mode; overtake button remains allowed",
+     "url": "https://www.gpblog.com/en/news/66225/more-details-about-ban-of-qualification-mode-overtake-button-remains-allowed.html"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C Technical Issue 17（2026年4月28日、目次のC5.23 Single ICE Mode）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "oil-burning",
+   "term": "オイル燃焼の禁止",
+   "aliases": [
+    "オイルバーン",
+    "オイル燃焼",
+    "オイル消費量",
+    "Oil Burn",
+    "Oil Burning"
+   ],
+   "words": [
+    "オイルを燃やす",
+    "0.3L/100km",
+    "潤滑油",
+    "オイルタンク",
+    "オイル消費の上限"
+   ],
+   "short": "エンジンオイルを燃やして力を足すことを禁じる決まり。消費量に上限がある。",
+   "body": [
+    "エンジンオイルは、本来、部品をなめらかに動かす（潤滑する）ためのもの。ところがオイルは少しなら燃やせるため、ターボハイブリッドの時代に、燃やして出力を足すチームが出た。FIAのニコラス・トンバジスは、燃やしてよいのは燃料だけで、オイルは潤滑剤でなければならない、と説明している。",
+    "FIAは2018年に、100kmあたり0.6リットルという消費量の上限をつくった。メインとサブのオイルタンクには、公認のセンサーを付ける。2019年には、予選中にオイルを足したり、補助タンクから移したりすることを禁じた。2020年には上限を半分の0.3リットルに下げた。消費量は、周回数の何倍かで決まる距離で計算するので、特定の場面にだけ集中して燃やすことはできない。",
+    "2026年向けにつくられたFIAのPU規則（2023年版）にも、通常の運転でオイルの消費は100kmあたり0.30リットルを超えてはならない、と書かれている。2026年は燃料が持続可能燃料に変わったが（→持続可能燃料）、オイルは潤滑のためだけに使うものだ、という点は変わらない。"
+   ],
+   "examples": [],
+   "see": [
+    "ice",
+    "sustainable-fuel",
+    "fuel-flow",
+    "fuel-cell"
+   ],
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "FIA assures Formula 1 teams new oil burn rules will do the job",
+     "url": "https://www.autosport.com/f1/news/fia-assures-formula-1-teams-new-oil-burn-rules-will-do-the-job-5321003/5321003/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "FIA confirms even stricter oil burn clampdown for 2020",
+     "url": "https://au.motorsport.com/f1/news/fia-stricter-oil-burn-clampdown-2020/4358586/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Power Unit Technical Regulations Issue 3（2023年6月20日、5.3.11）",
+     "url": "https://www.fia.com/sites/default/files/fia_2026_formula_1_technical_regulations_pu_-_issue_3_-_2023-06-20.pdf"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "deployment",
+   "term": "ディプロイメント（電気の力を出すこと）",
+   "aliases": [
+    "ディプロイメント",
+    "デプロイ",
+    "Deployment",
+    "電力の展開",
+    "電気を使う"
+   ],
+   "words": [
+    "電気の出し方",
+    "MGU-K",
+    "350kW",
+    "出力が絞られる",
+    "電気をいつ使うか"
+   ],
+   "short": "ためた電気をMGU-Kで後輪の力にすること。最大350kWだが、速くなると絞られる。",
+   "body": [
+    "ディプロイメントは、電池（エネルギーストア）にためた電気を、MGU-Kで後輪を押す力に変えて使うこと。「展開する」という意味の英語で、報道でよく使われる呼び方だ。電気をためるほうは「リチャージ」と呼ぶ（→ブーストとリチャージ）。",
+    "MGU-Kの出力は、2025年までの最大120kWから、2026年は350kWになった。ただし、いつも全力で出せるわけではない。電池から1周で出し入れできる量には上限がある。出力は約300km/hから下がり始め、約345km/hでゼロになる。また、出力が急に切れて車が減速しないよう、1秒あたりに下げてよい量にも上限がある。The Raceの解説では、パワーが限られるコースでは50kW、そのほかは100kWだ。",
+    "2026年5月のマイアミGPから、決勝の出力は、コーナーの出口からブレーキングまでの加速区間で350kW、それ以外の場所では250kWまでになった。ブーストで足せる力は、最大で+150kWまでだ。",
+    "2027年は、通常時のMGU-Kの最大が300kWに下がる予定だ（オーバーテイクモードの間は350kW）。そのぶん内燃エンジンの出力が420kWに上がる。電気をどこで使うかは、2026年のラップのつくり方の中心になっている（→エネルギーマネジメント）。"
+   ],
+   "examples": [
+    {
+     "t": "レッドブルのメキース代表は、現行PUは電気出力の使える帯域が非常に狭く、配分の最適化が難しいと述べた。",
+     "u": "/news/en-rn365-redbull-narrow-window/"
+    },
+    {
+     "t": "セパンでは、直線の終わりでMGU-Kの出力が100〜300mかけて徐々に落ちる見通しと報じられた。",
+     "u": "/news/it-formula1-sepang-brakes-energy/"
+    }
+   ],
+   "see": [
+    "mgu-k",
+    "energy-store",
+    "boost-recharge",
+    "clipping",
+    "energy-management",
+    "overtake-mode",
+    "fuel-flow"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "What's fact and fiction in F1's 2026 engine anxieties",
+     "url": "https://www.the-race.com/formula-1/f1-2026-engine-rules-fact-and-fiction/"
+    },
+    {
+     "name": "The Race",
+     "title": "Boost, overtake mode, active aero - Key 2026 F1 terms explained",
+     "url": "https://www.the-race.com/formula-1/boost-overtake-mode-active-aero-recharge-key-2026-terms-explained"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "2026 F1 mid-season rule changes: what's been agreed and why",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/2026-f1-mid-season-rules-changes-whats-been-agreed-and-why/"
+    },
+    {
+     "name": "Honda",
+     "title": "2026 F1 Explained: Regulations",
+     "url": "https://global.honda/en/F1/features/f1-explained/regulations/"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "F1 2027 engine regulations: how and why the power unit rules are changing",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-2027-engine-regulations-how-and-why-the-power-unit-rules-are-changing/"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "clipping",
+   "term": "クリッピング（直線の終わりで電気が切れる）",
+   "aliases": [
+    "クリッピング",
+    "Clipping",
+    "パワークリッピング",
+    "くりっぴんぐ"
+   ],
+   "words": [
+    "直線の終わりで失速",
+    "電気が足りない",
+    "最高速が伸びない",
+    "スーパークリッピングとの違い",
+    "電池切れ"
+   ],
+   "short": "直線の途中で電気が尽き、MGU-Kの助けがなくなって加速が鈍ること。",
+   "body": [
+    "クリッピングは、直線の終わりまで電気がもたず、MGU-Kの助けがなくなって加速が鈍ること。2026年のPUは、エンジンと電気がほぼ半々の力を出す。電気がなくなると、その分の力を失うので、とくに長い直線で起きやすい。",
+    "似た言葉に「スーパークリッピング」（→）がある。こちらは、全開のまま、わざとMGU-Kに発電させて電池にためる方法だ。電気をためる代わりに最高速を捨てる。クリッピングは電気が足りなくて起きる結果、スーパークリッピングは電気をためるための手段、と分けて考えるとよい。",
+    "速度の落ち方は大きい。ランド・ノリスは鈴鹿で、直線で速度が50〜60km/h落ちるのを見ると「魂が痛む」と話した。",
+    "FIAは2026年5月のマイアミGPから、スーパークリッピングの最大出力を250kWから350kWに上げた（予選と決勝の両方）。短い時間でたくさんためられるようにして、ためるために長く速度を落とす走りを減らすねらいで、予選の1周でためてよい量も8MJから7MJに下げた。スーパークリッピングの時間は、1周で2〜4秒ほどが目安とされる。"
+   ],
+   "examples": [
+    {
+     "t": "バクー予選でラッセルは、長い直線でのエネルギー管理を最適化し、いわゆるクリッピングを抑えたことが差を生んだと分析された。",
+     "u": "/news/nl-rn365-russell-baku-pole/"
+    },
+    {
+     "t": "アロンソは、セパンの中間セクターでバッテリーを使うと、続く直線で充電が足りなくなると説明した。",
+     "u": "/news/es-motorsport-sepang-driver-expectations/"
+    },
+    {
+     "t": "ボッタスのバクーでのクラッシュは、走行距離の誤認でスーパークリッピングが早く強く働いたためと報じられた。",
+     "u": "/news/de-motorsport-total-bottas-verbremser-ecu/"
+    }
+   ],
+   "see": [
+    "super-clipping",
+    "deployment",
+    "energy-management",
+    "harvesting",
+    "mgu-k",
+    "boost-recharge",
+    "energy-store"
+   ],
+   "src": [
+    {
+     "name": "Racer",
+     "title": "What is clipping and super clipping?",
+     "url": "https://racer.com/racerpedia/series-guides/formula-1/what-is-clipping-and-super-clipping"
+    },
+    {
+     "name": "The Race",
+     "title": "How urgent F1 2026 rule changes will actually work",
+     "url": "https://www.the-race.com/formula-1/how-urgent-f1-2026-rule-changes-will-actually-work/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: The key terms for Formula 1's new-for-2026 rules",
+     "url": "https://www.formula1.com/en/latest/article/f1-2026-regulations-explained-the-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Lando Norris says 2026 F1 power units 'hurt the soul' as Suzuka speeds fall",
+     "url": "https://www.planetf1.com/news/lando-norris-suzuka-criticism-2026-f1-power-unit-hurts-the-soul"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "2026 F1 mid-season rule changes: what's been agreed and why",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/2026-f1-mid-season-rules-changes-whats-been-agreed-and-why/"
+    },
+    {
+     "name": "Honda",
+     "title": "2026 F1 Explained: Regulations",
+     "url": "https://global.honda/en/F1/features/f1-explained/regulations/"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "boost-recharge",
+   "term": "ブーストとリチャージ（2026年の電気の使い方の名前）",
+   "aliases": [
+    "ブースト",
+    "リチャージ",
+    "Boost",
+    "Recharge",
+    "ブーストボタン",
+    "Boost Button"
+   ],
+   "words": [
+    "ステアリングのボタン",
+    "電池の使い方",
+    "電気をためる",
+    "2026年の新しい用語",
+    "マニュアルオーバーライド"
+   ],
+   "short": "電気の力を使う「ブースト」と、電池にためる「リチャージ」。FIAとF1が2026年に使うと決めた呼び名。",
+   "body": [
+    "ブーストは、ためた電気の力を、好きな場所で使うこと。ドライバーがステアリングのボタンを押すと、PUの出力設定が、最大出力か、チームが決めた設定に切り替わる。小さく何度かに分けて使っても、攻めや守りで大きく一度に使ってもよい。",
+    "リチャージは、電池に電気をためること。ブレーキをかけるとき、アクセルを一部だけ踏むとき、アクセルを早めに戻すとき、直線の終わりのスーパークリッピングの4つの場面で行う。ほとんどはECUが自動でやり、ドライバーが自分で行うのは、アクセルを早めに戻すリフト＆コーストだけだ。",
+    "オーバーテイクモードは、これとは別の仕組みだ。前の車との差が1秒以内で計測点を通ると、次の周に+0.5MJぶんの電気を使える。2025年までのDRSの代わりで、名前は当初「マニュアル・オーバーライド・モード（MOM）」だった。",
+    "決勝では、2026年5月のマイアミGPから、ブーストで足せる力が最大+150kWに決まった（→ディプロイメント）。セパンでは、リチャージ（回生）の量の上限が、予選7.5MJ、決勝8.5〜9.0MJと報じられている。"
+   ],
+   "examples": [
+    {
+     "t": "セパンのリチャージ（回生）の上限は予選7.5MJ、決勝8.5〜9.0MJで、直線の終わりではMGU-Kの出力が徐々に落ちる見通しと報じられた。",
+     "u": "/news/it-formula1-sepang-brakes-energy/"
+    }
+   ],
+   "see": [
+    "overtake-mode",
+    "harvesting",
+    "super-clipping",
+    "steering-wheel",
+    "deployment",
+    "energy-management",
+    "lift-and-coast",
+    "clipping"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Boost, overtake mode, active aero - Key 2026 F1 terms explained",
+     "url": "https://www.the-race.com/formula-1/boost-overtake-mode-active-aero-recharge-key-2026-terms-explained"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: The key terms for Formula 1's new-for-2026 rules",
+     "url": "https://www.formula1.com/en/latest/article/f1-2026-regulations-explained-the-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+    },
+    {
+     "name": "McLaren",
+     "title": "Introducing new F1 terminology",
+     "url": "https://www.mclaren.com/racing/formula-1/2026/introducing-new-f1-terminology/"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "2026 F1 mid-season rule changes: what's been agreed and why",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/2026-f1-mid-season-rules-changes-whats-been-agreed-and-why/"
+    },
+    {
+     "name": "Honda",
+     "title": "2026 F1 Explained: Regulations",
+     "url": "https://global.honda/en/F1/features/f1-explained/regulations/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 and FIA unveil new renders and terminology for 2026",
+     "url": "https://www.motorsport.com/f1/news/f1-and-fia-unveil-new-renders-and-terminology-for-2026/10785237/"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "pu-dyno",
+   "term": "ダイナモとテスト台の制限",
+   "aliases": [
+    "ダイナモ",
+    "ダイノ",
+    "Dyno",
+    "エンジンダイナモ",
+    "台上試験",
+    "テストベンチ"
+   ],
+   "words": [
+    "エンジンのベンチテスト",
+    "テスト台の数",
+    "開発費の抑制",
+    "ERSテスト台",
+    "開発の制限"
+   ],
+   "short": "エンジンを台の上で回して試す設備。2026年規則はメーカーが使える台の数を制限する。",
+   "body": [
+    "ダイナモ（ダイナモメーター）は、エンジンを車に載せず、台の上で回して、出力や耐久性を測る設備。PUメーカーは、新しい設計を、サーキットで走らせる前にここで試す。",
+    "2026年のPU規則では、費用を抑えるため、メーカーが使えるテスト台の数に上限がつく（FIAの規則F5.1.9）。1つの気筒だけを試す台が3、PU全体を試す台が3、パワートレイン（PUと駆動系）用が1、車ごと試す台が1、電気の部分（ERS）の台が2、エネルギーストア（電池）の台が1だ。この上限は、2022年にFIAが承認した2026年のPU規則から続いている。",
+    "台を使える時間にも、年ごとの上限が決められている。メーカーは、決められた数と時間のなかで開発を進めなければならない。",
+    "ねらいは開発費を抑えること。PUには、チームのコストキャップとは別に、PU専用の予算の上限もある（→パワーユニットのコスト上限）。"
+   ],
+   "examples": [],
+   "see": [
+    "pu-cost-cap",
+    "pu-manufacturer",
+    "aduo",
+    "development-freeze",
+    "testing-rules",
+    "wind-tunnel"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Power Unit Regulations（FIAの規則文書。2022年の承認時）",
+     "url": "https://fia.com/file/186874/download"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "F1 agrees on 2026 power unit regulations: no more MGU-H",
+     "url": "https://www.f1technical.net/news/23930"
+    },
+    {
+     "name": "PMW Magazine",
+     "title": "FIA signs off 2026 F1 PU rules with MGU-H dropped and tight constraints on ICE design",
+     "url": "https://www.pmw-magazine.com/news/race-series-news/fia-signs-off-2026-f1-pu-rules-with-mgu-h-dropped-and-tight-constraints-on-ice-design.html"
+    },
+    {
+     "name": "The Race",
+     "title": "2026 F1 engine rules approval clears way for Porsche and Audi",
+     "url": "https://www.the-race.com/formula-1/2026-f1-engines-rules-approval-clears-way-for-porsche-and-audi.md"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section F Operational Issue 09（2026年6月25日、F5.1.9）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_09_-_2026-06-25.pdf"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "pu-cost-cap",
+   "term": "パワーユニットのコスト上限（PUメーカーの予算上限）",
+   "aliases": [
+    "PUコストキャップ",
+    "エンジンコストキャップ",
+    "PU cost cap",
+    "PU予算上限",
+    "エンジンの予算上限"
+   ],
+   "words": [
+    "メーカーの予算上限",
+    "1億9000万ドル",
+    "設備投資の上限",
+    "新規メーカー",
+    "開発費の抑制"
+   ],
+   "short": "PUメーカーが開発と製造に使える金額の上限。2026年は1億9000万ドル。",
+   "body": [
+    "PUメーカーには、チームのコストキャップ（→）とは別に、PU専用の予算の上限がある。始まったのは2023年で、2023〜2025年は年9500万ドル（物価の調整つき）だった。対象は、エンジンの開発の費用と、2026年からはサーキットで走るエンジンの製造、供給、サポートの費用だ。",
+    "2026年は1億9000万ドル。2022年のFIAの発表では、2026年から1億3000万ドルとされていた。その後、別にあった設備投資の上限をなくしたことで、1億9000万ドルに引き上げられた（F1公式サイト）。",
+    "新しくPUづくりに参入するメーカーには、特例がある。参入前の3年間は、上限が9500万ドルから1億4850万ドルに上がる。2023〜2025年には、新規のメーカーに年1000万ドル（2025年は500万ドル）の上乗せもあった。",
+    "チームがPUを買う費用は、チームのコストキャップの対象外で、PU側の別の上限のもとで扱われる（→コストキャップ）。信頼性のための変更に使う費用も、条件を満たせばPUの上限の外に出せる。出遅れたメーカーを助けるADUO（→）では、性能の差が大きいほど、追加で使える開発の機会が増える。"
+   ],
+   "examples": [],
+   "see": [
+    "cost-cap",
+    "pu-manufacturer",
+    "aduo",
+    "pu-dyno",
+    "customer-team"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: What is the F1 cost cap and why has it gone up?",
+     "url": "https://www.formula1.com/en/latest/article/explained-what-is-the-f1-cost-cap-and-why-has-it-gone-up.2tYtDIe5SbE5utjThctBT3"
+    },
+    {
+     "name": "RaceFans",
+     "title": "FIA approves 2026 F1 power unit regulations（PU予算上限は2023〜25年9500万ドル、2026年から1億3000万ドル）",
+     "url": "https://www.racefans.net/?p=486072"
+    },
+    {
+     "name": "Sportcal",
+     "title": "F1's 2026 engine regulations approved, way cleared for Porsche and Audi entry",
+     "url": "https://www.sportcal.com/event/f1s-2026-engine-regulations-approved-way-cleared-for-porsche-and-audi-entry/"
+    },
+    {
+     "name": "The Race",
+     "title": "2026 F1 engine rules approval clears way for Porsche and Audi",
+     "url": "https://www.the-race.com/formula-1/2026-f1-engines-rules-approval-clears-way-for-porsche-and-audi.md"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "What is Formula 1's cost cap? What it covers, penalties and more",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/what-is-the-f1-cost-cap/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Red Bull boss calls for 'gloves-off' F1 2026 engine fight（PU予算上限は2026年に1億9000万ドル）",
+     "url": "https://www.planetf1.com/news/f1-2026-engine-rules-red-bull-homologation-limits"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "pu-stockpiling",
+   "term": "PU部品の先行投入（降格のタイミング選び）",
+   "aliases": [
+    "先行投入",
+    "部品の先取り",
+    "ペナルティの消化",
+    "プール",
+    "Component Pool"
+   ],
+   "words": [
+    "降格を先に消化",
+    "新品パーツ",
+    "部品のプール",
+    "まとめて交換",
+    "降格のタイミング"
+   ],
+   "short": "上限を超える新品PU部品を、降格の痛みが小さいレースで先に入れる考え方。",
+   "body": [
+    "PU部品には、1人のドライバーが1シーズンに使える数の上限がある（→パワーユニットの使用数）。上限を超えて新しい部品を使うとグリッド降格になるが、いつ使うかはチームが選べる。そのため、降格の痛みが小さいレースを選んで消化することがある。",
+    "新しい部品を一度入れると、それはそのドライバーのその年の「プール」に入る。プールの部品は、レースごとに入れ替えても罰を受けない。同じ部品を2つ以上入れた場合、あとのレースで罰なしに使えるのは、最後に付けた1つだけだ。部品は、公式セッションで車がピットレーンを出た時点で「使った」ことになる。",
+    "今季の例。バクーでアストンマーティンの2台は、ホンダの新しい部品を入れ、降格の合計が15を超えて最後尾スタートになった。マイク・クラック代表は、あえて厳しいコースを選んで消化したと説明している。同じバクーで、フェラーリはシャルル・ルクレールの降格を後のレースに回したと報じられた。マックス・フェルスタッペンは年間の上限の中で部品を替えたので降格はなく、本人は降格がいつか来ると話した。",
+    "セパンでは、アイザック・ハジャーが5グリッド降格、アービッド・リンドブラッドがPUの新しい部品を複数入れて最後尾スタートになる。降格の合計が15を超えると、何グリッド分かに関係なく最後尾からになる（→グリッド降格）。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでアストンマーティンの2台が、ホンダの新しい部品を入れて最後尾スタートになった。",
+     "u": "/news/de-f1de-aston-honda-penalty/"
+    },
+    {
+     "t": "フェルスタッペンは、降格はいずれ避けられないと話し、レッドブルは外した部品が使えるかの分析次第だとした。",
+     "u": "/news/en-gpfans-verstappen-penalty-standoff/"
+    },
+    {
+     "t": "セパンでは、リンドブラッドが新しいPU部品を複数入れて最後尾スタートになる。",
+     "u": "/news/en-therace-lindblad-back-of-grid-sepang/"
+    }
+   ],
+   "see": [
+    "pu-allocation",
+    "grid-penalty",
+    "aduo",
+    "parc-ferme",
+    "pu-manufacturer"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "The beginner's guide to F1 power unit penalties",
+     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-engine-and-gearbox-penalties.2TSy7BFgEvdNLojGLWS3F1"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Alonso and Stroll hit with grid penalties at Azerbaijan Grand Prix after taking new engine components",
+     "url": "https://www.formula1.com/en/latest/article/alonso-and-stroll-set-for-grid-penalties-at-azerbaijan-gp-after-taking-new-engine-components.2uOl7HZHamxmaUqjOxejAF.2uOl7HZHamxmaUqjOxejAF"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Max Verstappen faces engine penalty after Baku F1 qualifying problems",
+     "url": "https://www.crash.net/f1/news/1105512/1/max-verstappen-faces-engine-penalty-after-baku-f1-qualifying-problems"
+    },
+    {
+     "name": "GPFans",
+     "title": "Max Verstappen confirms grid penalty coming after Baku breakage",
+     "url": "https://www.gpfans.com/en/f1-news/1090729/max-verstappen-confirms-grid-penalty-coming-after-baku-breakage/"
+    }
+   ],
+   "cat": "パワーユニット",
+   "checked": "2026-10-03"
   }
  ],
  "sources": [
