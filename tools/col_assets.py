@@ -41,7 +41,7 @@ B.append(['url', url])
 B.append(['p', '━━━━━━━━━━'])
 # sources as linked names, not bare URL lines, so note makes cards only for the site (owner's request, 1 Oct 2026)
 for s in L.get('extraSources', []):
-    B.append(['src', (f'出典：{s["source"]}（{s.get("region","")}）', s['url'])])
+    B.append(['src', (f'出典：{s["source"]}' + (f'（{s["region"]}）' if s.get("region") else ''), s['url'])])
 # plain text
 t = ['【タイトル】', TITLE, '', '【本文】（■＝大見出しにする行）', '']
 for k, x in B:
