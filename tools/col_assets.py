@@ -22,6 +22,13 @@ for x in ((L.get('noteTags') or '') + ' ' + STD_TAGS).split():
 TAGS = ' '.join(_t)
 url = f'https://f1gridwalk.github.io/lens/{slug}/'
 B = [list(b) for b in L['body']]
+# entrance near the top as well (owner's decision, 2 Oct 2026): right after the first paragraph, one line to the site with UTM
+_top = L.get('siteUrl') or url
+_camp = L.get('utmCampaign') or (_top.rstrip('/').split('/')[-1])
+_lead = L.get('topLead') or ('全文と表は F1 Grid Walk で' if '/deep/' in _top else '全文は F1 Grid Walk で')
+_topurl = _top + ('&' if '?' in _top else '?') + f'utm_source=note&utm_campaign={_camp}'
+_i = next((n for n, b in enumerate(B) if b[0] == 'p'), -1)
+B.insert(_i + 1, ['link', (_lead + ' → ', _topurl)])
 if L.get('note') and L.get('type') != 'column':
     B.append(['p', '※ ' + L['note']])  # columns: no Japanese-check line (owner's decision, 1 Oct 2026)
 # entrance to the site right after the column, before the sources (owner's request, 1 Oct 2026)
@@ -39,6 +46,7 @@ for s in L.get('extraSources', []):
 t = ['【タイトル】', TITLE, '', '【本文】（■＝大見出しにする行）', '']
 for k, x in B:
     if k == 'src': t += [f'{x[0]} {x[1]}', '']; continue
+    if k == 'link': t += [f'{x[0]}{x[1]}', '']; continue
     t += (['■ ' + x, ''] if k == 'h2' else ['【太字】' + x, ''] if k in ('bold', 'ask') else [x, ''])
 t += ['【ハッシュタグ】', TAGS, '']
 open(os.path.join(out, f'note_{P}_原稿.txt'), 'w', encoding='utf-8').write('\n'.join(t))
@@ -49,6 +57,7 @@ for k, x in B:
     elif k == 'quote': body.append(f'<blockquote><p>{e(x)}</p></blockquote>')
     elif k == 'url': body.append(f'<p><a href="{e(x)}">{e(x)}</a></p>')
     elif k == 'src': body.append(f'<p><a href="{e(x[1])}">{e(x[0])}</a></p>')
+    elif k == 'link': body.append(f'<p>{e(x[0])}<a href="{e(x[1])}">{e(x[1])}</a></p>')
     else: body.append(f'<p>{e(x)}</p>')
 ns = {'e': e, 'TITLE': TITLE, 'TAGS': TAGS, 'P': P, 'body': body}
 exec(open(os.path.join(HERE, 'note_page.part'), encoding='utf-8').read(), ns)
