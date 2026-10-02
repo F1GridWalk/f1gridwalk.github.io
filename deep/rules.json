@@ -183,8 +183,8 @@
    ],
    "short": "とても暑くなると予想されるレースで、FIAが出す高温警告。ドライバーを冷やす装置が義務になる。",
    "body": [
-    "決勝中の「ヒートインデックス」（気温と湿度を合わせた体感の暑さ）が31.0℃を超えると予想されると宣言される。",
-    "各車は、冷たい液体をドライバーの服に流す冷却装置を、使える状態で積まなければならない。ドライバーがベストを着ない場合は、5kgの重りを足す。2023年のカタールGPで体調を崩すドライバーが相次いだことがきっかけ。"
+    "決勝やスプリントの間の「ヒートインデックス」（気温と湿度を合わせた体感の暑さ）が31.0℃を超えると予想されるときなどに、開始の24時間前までに宣言されることがある。",
+    "各車は、冷たい液体をドライバーの服に流す冷却装置を、使える状態で積まなければならない。宣言が出ると、ベストを使うかどうかに関係なく、全車の最低重量が5kg増える。ドライバーがベストを着けない場合は、装備の重さの差を補うため、コクピットに0.5kgの重りを積む。2023年のカタールGPで体調を崩すドライバーが相次いだことがきっかけ。"
    ],
    "rule": "スポーティングレギュレーション B1.5.10",
    "examples": [
@@ -193,7 +193,20 @@
      "u": "/news/de-formel1-sepang-heat-warning/"
     }
    ],
-   "see": []
+   "see": [],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Crash.net",
+     "title": "F1's Heat Hazard rules: Why drivers are rejecting cooling vests",
+     "url": "https://www.crash.net/f1/news/1099312/1/f1s-heat-hazard-rules-why-drivers-are-rejecting-cooling-vests"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA declares Austrian GP heat hazard as temperatures near 40°C",
+     "url": "https://www.planetf1.com/news/austrian-gp-heat-hazard-fia-f1-cooling-rules-heatwave"
+    }
+   ]
   },
   {
    "id": "aduo",
@@ -6602,7 +6615,7 @@
     "リアウイングは、車の最後部にある翼だ。後輪を路面に押しつける力（ダウンフォース）を出す。翼を立てるほど力は大きくなるが、空気抵抗も増えて、直線の速度が落ちる。",
     "2025年までは、追い抜きのときだけ上側のフラップを開くDRSがあった。2026年はDRSがなくなり、リアウイングは前翼とともにアクティブエアロで動く。動くのは「RWフラップ」で、コーナーモードとストレートモードの2つの位置に切り替わる。",
     "ストレートモードでは角度が小さくなり、空気抵抗が減る。切り替えは0.4秒以内に終わらなければならない。DRSと違い、前の車との差に関係なく全車が使える。",
-    "2026年は、安全に関わる変更もあった。FIAによると、リアウイングの端の板（エンドプレート）のライトはFIAの認定品になり、これまでよりずっと明るく見やすくなった。コース上で止まった車の電気の装置（ERS）の状態を示す、車の側面のライトも新しく付いた。"
+    "2026年は、安全に関わる変更もあった。FIAによると、リアウイングの端の板（エンドプレート）のライトはFIAの認定品になり、これまでよりずっと明るく見やすくなった。ミラーには琥珀色の側面ライトが付き、車が止まったとき、またはコース上で時速20kmを下回ったときに点いて、横向きの車を後続車が見つけやすくする。FIAは、止まった車のERS（電気の装置）の状態を示す役目もあるとしている。"
    ],
    "rule": "テクニカルレギュレーション C3.11、C3.11.6",
    "examples": [
@@ -6615,9 +6628,10 @@
     "active-aero",
     "front-wing",
     "drs",
-    "overtake-mode"
+    "overtake-mode",
+    "mirrors"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-03",
    "src": [
     {
      "name": "FIA",
@@ -6638,6 +6652,11 @@
      "name": "Formula1.com",
      "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
      "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    },
+    {
+     "name": "The Race",
+     "title": "What new flashing rear lights on 2026 F1 cars mean",
+     "url": "https://www.the-race.com/formula-1/f1-2026-cars-what-flashing-rear-lights-mean/"
     }
    ]
   },
@@ -8237,14 +8256,15 @@
    "body": [
     "燃料流量の制限は、エンジンが1時間に使える燃料の量に上限をつける決まり。エンジンの力は燃やす燃料の量でほぼ決まるので、F1はこの上限で出力を抑えている。2014年から2025年までは重さで決めていて、上限は1時間あたり100kgだった。",
     "2026年は、重さではなくエネルギー量で決める。上限は1時間あたり3000MJ（メガジュール）。持続可能燃料は成分が一つに決まっておらず、同じ重さでも持っているエネルギーが違いうる。重さで決めたままだと燃料の違いが出力の差になるため、エネルギーでそろえた。FIAが2024年に公表した規則では、エンジンの回転数が10,500回転より低いときは、回転数に応じて上限が下がる。",
-    "守られているかは、全車に付く超音波式の流量計で調べる。2026年は、これまで1台に2つあった装置（チーム用とFIA用）が1つにまとまり、アレングラ社の製品に統一された。燃料ごとの重さあたりのエネルギー量は、サーキットに届く前に第三者の機関が認証し、エンジンのECUが、測った重さの流れをエネルギーの流れに換算する。流量計の温度を変えるための装置や仕組み、手順は、規則で禁止されている。",
+    "守られているかは、全車に付く超音波式の流量計で調べる。2026年は、これまで1台に2つあった装置（チーム用とFIA用）が1つにまとまり、アレングラ社の製品に統一された。測った重さの流れは、FIAが測った燃料のエネルギー量を使って、FIAの標準ECU（SECU）がエネルギーの流れに換算する。流量計の温度を変えるための装置や仕組み、手順は、規則で禁止されている。",
     "上限は今後上がる。2026年6月10日に合意され、6月23日にFIA世界モータースポーツ評議会が承認した変更で、燃料の流れは、2026年と比べて2027年に5%、2028年に13%増える。内燃エンジンの出力を、2026年の400kWから、2027年に420kW、2028年に450kWへ上げるための変更だ。"
    ],
    "see": [
     "sustainable-fuel",
     "ice",
     "mgu-k",
-    "energy-management"
+    "energy-management",
+    "standard-ecu"
    ],
    "src": [
     {
@@ -8294,7 +8314,7 @@
     }
    ],
    "examples": [],
-   "checked": "2026-10-02"
+   "checked": "2026-10-03"
   },
   {
    "id": "energy-management",
@@ -17830,6 +17850,2564 @@
    "cat": "サーキットと歴史",
    "checked": "2026-10-02",
    "examples": []
+  },
+  {
+   "id": "nose",
+   "term": "ノーズ（ノーズコーン）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ノーズコーン",
+    "nose",
+    "nose cone",
+    "フロント・インパクト・ストラクチャー",
+    "前面衝撃吸収構造",
+    "のーず"
+   ],
+   "words": [
+    "車の先頭",
+    "鼻先",
+    "前の衝撃吸収",
+    "ぶつかるとつぶれる部分",
+    "前翼の取り付け",
+    "クラッシュ構造"
+   ],
+   "short": "車の先頭にある出っぱり。前翼を支え、ぶつかったときにつぶれて衝撃を吸収する。",
+   "body": [
+    "ノーズは、車の一番前にある、先のとがった部分。ドライバーが乗る頑丈な部分（サバイバルセル）の前につながり、先端に前翼（フロントウイング）が付く。空気を前翼から車の下や横へ流す空力の部品であり、正面からぶつかったときに自分がつぶれて衝撃を吸収する安全の部品でもある。",
+    "2026年規則で、前の衝撃吸収構造が2段階になった。ノーズが最初の衝撃でつぶれて衝撃を吸収したあとも、構造の一部が車体につながったまま残る。最初の衝突のあとに続けてもう一度ぶつかる事故を想定した変更だと、formula1.comやレッドブルは説明している。",
+    "試験も厳しくなった。PlanetF1によると、横から押す静的な試験の基準が上がり、2回目の衝撃を想定した新しい試験が加わった。一方で最低重量は800kgから768kgに下がったため、強くしながら軽く作る工夫が要る。",
+    "形の面では、2026年は前翼を柱（パイロン）でノーズの下につなぐ形に戻るとMotorsport.techは解説している。2022〜2025年の規則では、前翼がノーズに直接つながり、ノーズと翼の下から車の底が見えるような見た目だった。ノーズの形は規則で決めた枠（C3.7.1）の中に収める必要がある。今季もアウディがバクーで、形を改めたノーズと前翼を投入するなど、手が入り続けている部分だ。"
+   ],
+   "rule": "C3.7.1（ノーズの形の枠）、C13.6（前面衝撃吸収構造の試験）",
+   "examples": [
+    {
+     "t": "アウディはバクーに、新しいフロアを軸に、形を改めたノーズや前後ウイングにまで手を入れた大型アップデートを持ち込んだ。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    }
+   ],
+   "see": [
+    "front-wing",
+    "survival-cell",
+    "crash-test",
+    "stepped-nose",
+    "nose-change",
+    "wing-flap",
+    "minimum-weight"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Why F1 2026 safety overhaul forces teams to rethink chassis and nose design",
+     "url": "https://www.planetf1.com/features/why-f1-2026-safety-overhaul-forces-teams-to-rethink-chassis-and-nose-design"
+    },
+    {
+     "name": "Red Bull Racing",
+     "title": "Bull's guide to the F1 2026 regulations: safety",
+     "url": "https://www.redbullracing.com/int-en/projects/bulls-guide-to-the-f1-2026-regulations/bulls-guide-the-f1-2026-regulations-safety"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "F1 2026 aero regulations in focus part 1: back to the future",
+     "url": "https://motorsport.tech/formula-1/f1-2026-aero-regulations-in-focus-part-1-back-to-the-future"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    }
+   ]
+  },
+  {
+   "id": "wing-flap",
+   "term": "ウイングのフラップ（メインプレーンとフラップ）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "フラップ",
+    "flap",
+    "メインプレーン",
+    "main plane",
+    "前翼フラップ",
+    "ふらっぷ"
+   ],
+   "words": [
+    "翼の可動部",
+    "翼の角度",
+    "前翼の後ろの板",
+    "コーナーモード",
+    "ストレートモード",
+    "翼の枚数"
+   ],
+   "short": "翼の後ろ側に並ぶ細長い板。角度で下向きの力と空気抵抗が変わる。2026年は走行中に動く。",
+   "body": [
+    "F1の翼（ウイング）は、前側の大きな板「メインプレーン」と、その後ろに並ぶ細長い板「フラップ」でできている。フラップを立てて角度を大きくするほど、車を路面に押しつける力（ダウンフォース）は増えるが、空気抵抗も増える。チームはサーキットに合わせて角度を決め、前と後ろの釣り合い（空力バランス）をとる。",
+    "2025年までは、走っている間にフラップが動くのは、後ろ翼のDRSだけだった。前翼は固定で、2022年に導入された規則では、前翼の翼片は最大4つだった（Motorsport.com）。2026年はDRSがなくなり、前翼も後ろ翼もフラップが動く（→アクティブエアロ）。",
+    "2026年の規則（C3.10.10）では、前翼は最大3つの翼片で、後ろ側の2枚（プライマリーとセカンダリー）が動く。位置は「コーナーモード」と「ストレートモード」の2つだけ。切り替えは0.4秒以内で、動く幅の上限はプライマリーが30mm、セカンダリーが60mmだ。ストレートモードにできるのは、車が止まっているときか、決められた区間（アクティベーションゾーン）の中だけだ。後ろ翼も最大3つの翼片で、DRSと違って前の車との差に関係なく全車が使える。",
+    "決まりのぎりぎりの動かし方も話題になる。中国GPでは、メルセデスの前翼がストレートモードとコーナーモードの途中の位置を経るように動き、フェラーリが疑問を示した。メルセデスは、翼を閉じるのに必要な油圧を見誤ったと説明した。FIAのトンバジス氏は、意図的ではなく利点もない機械的な不具合だったとして、スチュワードには持ち込まなかった。ただし規則は0.4秒以内に2つの位置のあいだを切り替えることを定めていて、同じ動きが繰り返されれば対応がありうると、The Raceは伝えている。",
+    "2025年は、翼のたわみ（フレックス）が争点だった。後ろ翼は、DRSを使わないときのすき間が9.4〜13mmと決まり、前翼のたわみ試験は、6月のスペインGPから許容が15mmから10mmに厳しくなった。走りながら前翼のフラップを動かせた例は、2009〜2010年にもある。角度は基準から±3度の範囲で、1周に2回までだった。追い抜きには役立たず、主にバランス調整に使われて、2011年にDRSの導入とともに終わった（The Race）。"
+   ],
+   "rule": "C3.10.10（前翼アジャスター）。翼片の数は C3.10.1、C3.11.1",
+   "examples": [],
+   "see": [
+    "front-wing",
+    "rear-wing",
+    "active-aero",
+    "straight-corner-mode",
+    "drs",
+    "endplate",
+    "downforce",
+    "drag"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "New era of competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "How F1's new rules era has impacted front wing philosophy",
+     "url": "https://au.motorsport.com/f1/news/f1-new-rules-front-wing-design/10422704/"
+    },
+    {
+     "name": "The Race",
+     "title": "Mysterious Mercedes front wing behaviour explained",
+     "url": "https://www.the-race.com/formula-1/mysterious-mercedes-front-wing-behaviour-explained-f1-2026"
+    },
+    {
+     "name": "The Race",
+     "title": "When F1 last had adjustable front wings - and why it didn't work",
+     "url": "https://www.the-race.com/formula-1/when-f1-last-had-adjustable-front-wings-and-why-it-didnt-work/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "FIA announces 2025 F1 rule tweaks after 'mini DRS' row",
+     "url": "https://crash.net/f1/news/1061585/1/fia-announces-2025-f1-rule-tweaks-after-mini-drs-row"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 teams set for tougher front wing flex rules as new tests introduced (TD018)",
+     "url": "https://www.planetf1.com/news/fia-td018-front-wing-flexibility-checks-2025-spanish-grand-prix"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Canadian Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "Grandprix.com",
+     "title": "FIA plays down Mercedes two-phase wing row",
+     "url": "https://www.grandprix.com/news/fia-plays-down-mercedes-two-phase-wing-row.html"
+    }
+   ]
+  },
+  {
+   "id": "venturi-tunnel",
+   "term": "ベンチュリトンネル（フロア下の通路）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ベンチュリトンネル",
+    "ベンチュリ",
+    "ベンチュリ・トンネル",
+    "Venturi tunnel",
+    "floor tunnel",
+    "床下トンネル"
+   ],
+   "words": [
+    "フロア下の通路",
+    "床下の空気の通り道",
+    "ダウンフォース",
+    "ベンチュリ効果",
+    "2022年規則",
+    "地面効果"
+   ],
+   "short": "車の床下を前から後ろへ通る、真ん中がせまい空気の通り道。2022〜25年型で、2026年は消えた。",
+   "body": [
+    "ベンチュリトンネルは、フロア（車の底）の下を前から後ろへ通る、空気の通り道。入口が広く、真ん中がせまく、出口でまた広がる形をしている。せまい所を空気が速く通ると圧力が下がり、車が路面に吸いつけられる。これがグラウンドエフェクトだ。2022年型の車は、中央の底板（プランク）の左右に大きなトンネルが1本ずつあった。",
+    "2022年の新規則でこの仕組みが復活した。トンネルの入口には最大4枚の小さなフェンスを置き、フロアの端にもウイングを付けて、横から空気が漏れないようにした（formula1.com）。ねらいは、前の車が出す乱れた空気（ダーティエア）に強くして、追い抜きやすくすることだった。ただ、速くなると車が路面に近づきすぎて上下に跳ねるポーパシングが出た。2023年には、フロアの端を15mm高くするなどの変更が入った。",
+    "2026年は、この形が変わった。FIAは、床を一部平らにして地面効果を減らすと説明している。formula1.comは、床下を切り抜いたベンチュリトンネルはなくなったと書き、Motorsport.comも、2022〜2025年型のトンネルはなくなって、1983〜2021年の平らな床に近い形に戻ったと説明する。The Raceは「底はほぼ平ら」と表現していて、報道の言い方には幅がある。",
+    "床で出す力が減るぶん、後ろのディフューザーで空気を広げて出す力の割合が大きくなる（Motorsport.com）。ダウンフォースも空気抵抗も、2025年型より大きく減るとFIAは説明している。車高の変化に対する敏感さも下がると、The Raceは伝えた。それでもフロアは今季、手が入る部分の一つだ。バクーではアウディ、マクラーレン、レッドブル、ウィリアムズが、セパンではメルセデスが、フロア周りを改めた。"
+   ],
+   "examples": [
+    {
+     "t": "アウディはバクーで、リアタイヤ後方の乱れた気流をディフューザーから遠ざけ、床下の吸い込みを安定させることを狙った。",
+     "u": "/news/en-pf1-audi-baku-tech/"
+    },
+    {
+     "t": "フェルスタッペンは、バクーで投入された新しいフロアとサイドポッドで速さと自信が増したと語った。",
+     "u": "/news/de-formel1-verstappen-baku-best-chance/"
+    }
+   ],
+   "see": [
+    "ground-effect",
+    "floor-diffuser",
+    "floor-edge",
+    "floor-fences",
+    "porpoising",
+    "ride-height",
+    "plank",
+    "downforce"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "New era of competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "What F1 2026's new terminology and technology all means",
+     "url": "https://www.motorsport.com/f1/news/what-f1-2026s-new-terminology-and-technology-all-means/10787904/"
+    },
+    {
+     "name": "The Race",
+     "title": "What's really going on with F1's under-fire 2026 rules",
+     "url": "https://www.the-race.com/formula-1/under-fire-f1-2026-rules-what-is-really-going-on/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "TECH TUESDAY: Why new floors should help enhance F1's wheel-to-wheel action in 2022",
+     "url": "https://www.formula1.com/en/latest/article.tech-tuesday-why-new-floors-should-help-enhance-f1s-wheel-to-wheel-action-in.6WEBVH3iEhZhBvgKxTYSij.html"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1's new floor rules for 2023 - do they damage Red Bull?",
+     "url": "https://crash.net/f1/news/1010029/1/f1-s-new-floor-rules-2023-do-they-damage-red-bull"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 2026 regulations: Explaining changes to aero, chassis and engine rules",
+     "url": "https://www.crash.net/f1/news/1050183/1/f1-2026-regulations-changes-aero-chassis-engine"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+     "name": "The Race",
+     "title": "The first clues from major Mercedes F1 upgrade in Malaysia",
+     "url": "https://www.the-race.com/formula-1/first-clues-major-mercedes-f1-upgrade-at-sepang/"
+    }
+   ]
+  },
+  {
+   "id": "floor-edge",
+   "term": "フロアエッジ（フロアの端）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "フロアエッジ",
+    "床の端",
+    "floor edge",
+    "フロアの縁",
+    "エッジウイング",
+    "edge wing"
+   ],
+   "words": [
+    "フロアの外側",
+    "床下の空気を閉じ込める",
+    "床端",
+    "後輪の前",
+    "フロアの縁",
+    "ダウンフォース"
+   ],
+   "short": "フロア（車の底）の左右の端。床下の空気が横へ漏れないようにし、後輪の前の流れを整える。",
+   "body": [
+    "フロアエッジは、フロア（車の底）の左右の端のこと。ここの形で、床下の空気を横に逃がさずに閉じ込めたり、後輪の手前で空気をどう流すかを決めたりする。小さな変更でも、床下の力に響く部分だ。",
+    "2022〜2025年は、フロアの端にウイングのような部品（エッジウイング）が付き、床下のトンネルを横から封じる役目をした（formula1.com）。この床はポーパシングの原因になり、2023年には、フロアの端を15mm高くする変更が入った。",
+    "2026年は、フロアの幅が100mm狭くなり、フロアは規則で「フロアフット」「フロアサイドウォール」など部品ごとに範囲が決められている（C3.5）。Motorsport.techは、後輪の前の外側の渦に空気をつなげるために、フロアの角に切れ込み（スロット）を入れる工夫が許されていると解説している。",
+    "今季はチームが、フロアの端をたびたび作り直している。マクラーレンはカナダで端の部品を改め、バクーで新しいフロアエッジを投入した。レーシングブルズはマイアミで、後ろ側のフロアエッジのスロットの形を変えた。アウディもマイアミで新しいフロアエッジとディフューザーを使い、メルセデスはセパンで、フロア前方の縁にあるベーンの形を変えた。"
+   ],
+   "examples": [
+    {
+     "t": "バクーのアップデート一覧には、マクラーレンが新しいフロアエッジとディフューザーを投入したと載った。",
+     "u": "/news/en-f1com-baku-upgrades-list/"
+    },
+    {
+     "t": "メルセデスはセパンで、バージボード周りやフロアの前の縁のベーン、サイドポッド、エンジンカバーの形を変えた。",
+     "u": "/news/en-therace-mercedes-upgrade-first-clues/"
+    }
+   ],
+   "see": [
+    "venturi-tunnel",
+    "floor-fences",
+    "floor-diffuser",
+    "porpoising",
+    "ground-effect",
+    "plank"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "TECH TUESDAY: Why new floors should help enhance F1's wheel-to-wheel action in 2022",
+     "url": "https://www.formula1.com/en/latest/article.tech-tuesday-why-new-floors-should-help-enhance-f1s-wheel-to-wheel-action-in.6WEBVH3iEhZhBvgKxTYSij.html"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1's new floor rules for 2023 - do they damage Red Bull?",
+     "url": "https://crash.net/f1/news/1010029/1/f1-s-new-floor-rules-2023-do-they-damage-red-bull"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "F1 2026 aero regulations in focus part 2: sidepods, diffuser and rear wing",
+     "url": "https://motorsport.tech/formula-1/f1-2026-aero-regulations-in-focus-part-2-sidepods-diffuser-and-rear-wing"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Miami Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Canadian Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "The first clues from major Mercedes F1 upgrade in Malaysia",
+     "url": "https://www.the-race.com/formula-1/first-clues-major-mercedes-f1-upgrade-at-sepang/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 2026 regulations: Explaining changes to aero, chassis and engine rules",
+     "url": "https://www.crash.net/f1/news/1050183/1/f1-2026-regulations-changes-aero-chassis-engine"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    }
+   ]
+  },
+  {
+   "id": "floor-fences",
+   "term": "フロアフェンス",
+   "cat": "マシンと空力",
+   "aliases": [
+    "フェンス",
+    "floor fence",
+    "フロアのフェンス",
+    "インレットフェンス",
+    "床のひれ",
+    "ふぇんす"
+   ],
+   "words": [
+    "フロアの縦の板",
+    "渦",
+    "床下の入口",
+    "空気の整流",
+    "フロア前方",
+    "フロアの仕切り"
+   ],
+   "short": "フロアに立つ小さな縦の板。空気の向きを整え、渦（うず）を作って床下の力を高める。",
+   "body": [
+    "フロアフェンスは、フロアの上に立つ、薄い縦の板。空気がフロアの外へ逃げないよう向きを整え、小さな渦を作る。渦は床下の空気を引き込んで速くする働きもあり、ダウンフォースを増やす。",
+    "2022年の規則では、床下のトンネルの入口に最大4枚のフェンスを置けた（formula1.com）。入口の空気を内側へ引き寄せ、渦で流れを速くする役目だ。2024年のラスベガスGPでは、レッドブルがトンネル入口の内側から2枚目のフェンスの上端を高くして、渦を強くした（The Race）。",
+    "2026年の規則でも、フロアフェンスは部品として定められていて、大きさの枠（長さ450mm、幅40mm、高さ200mm）の中に収める決まりだ（C3.5.9）。Motorsport.techは、ディフューザーの下にもフェンスが認められていると解説している。フロア全体は、2026年に一部が平らな形へ変わった（→ベンチュリトンネル）。今季も、フロア周りの部品はバクーやセパンで多くのチームが作り直している（→フロアエッジ）。"
+   ],
+   "rule": "C3.5.9（フロアフェンス）",
+   "examples": [],
+   "see": [
+    "venturi-tunnel",
+    "floor-edge",
+    "floor-diffuser",
+    "ground-effect",
+    "bargeboard"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "TECH TUESDAY: Why new floors should help enhance F1's wheel-to-wheel action in 2022",
+     "url": "https://www.formula1.com/en/latest/article.tech-tuesday-why-new-floors-should-help-enhance-f1s-wheel-to-wheel-action-in.6WEBVH3iEhZhBvgKxTYSij.html"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "F1 2026 aero regulations in focus part 2: sidepods, diffuser and rear wing",
+     "url": "https://motorsport.tech/formula-1/f1-2026-aero-regulations-in-focus-part-2-sidepods-diffuser-and-rear-wing"
+    },
+    {
+     "name": "The Race",
+     "title": "Big changes and 2025 trials - F1 teams' Vegas upgrades explained（2024年）",
+     "url": "https://www.the-race.com/formula-1/f1-upgrades-las-vegas-grand-prix-ferrari-floor/"
+    },
+    {
+     "name": "FIA",
+     "title": "New era of competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    }
+   ]
+  },
+  {
+   "id": "engine-cover",
+   "term": "エンジンカバー",
+   "cat": "マシンと空力",
+   "aliases": [
+    "エンジンカバー",
+    "engine cover",
+    "カバー",
+    "パワーユニットカバー",
+    "リアボディ",
+    "えんじんかばー"
+   ],
+   "words": [
+    "エンジンの上のカバー",
+    "車体の後ろ",
+    "冷却の出口",
+    "空気の通り道",
+    "リアボディ",
+    "パワーユニットのカバー"
+   ],
+   "short": "パワーユニットを上から覆う車体のカバー。熱を逃がす出口と、後ろへの空気の通り道になる。",
+   "body": [
+    "エンジンカバーは、ドライバーの後ろにある、パワーユニット（エンジンと電気の装置）を上から覆う車体のカバー。車の「背中」にあたる部分だ。中の熱を逃がす出口があり、外側の形は、後ろ翼やフロアの後ろへ流れる空気の通り道になる。",
+    "規則では、決められた枠の中に収めることになっている（C3.8.2）。2026年はパワーユニットが変わり、MGU-Hがなくなって電気の力が大きくなった（→冷却）。冷やす装置の置き方はチームごとに分かれていて、Motorsport.techは、ラジエーターをサイドポッドと、車の中央のダクトに振り分けられると解説している。",
+    "今季は、各チームがここを作り直している。マクラーレンは、カナダで冷却の出口を増やした一式を投入し、バクーではサイドポッドの入口とエンジンカバーを改めた。メルセデスはセパンで、サイドポッドとエンジンカバーの形を変えた。後輪の手前の断面積を減らすことが狙いだと、アンダーソン氏は読み解いている。マイアミではレッドブルとウィリアムズも、カバー周りを改めた。"
+   ],
+   "rule": "C3.8.2（エンジンカバー）",
+   "examples": [
+    {
+     "t": "バクーのアップデート一覧には、マクラーレンがサイドポッドの入口とエンジンカバーなどを一新したと載った。",
+     "u": "/news/en-f1com-baku-upgrades-list/"
+    },
+    {
+     "t": "セパンでは、マクラーレンがエンジンカバーを、メルセデスがW17の7か所を改めた。",
+     "u": "/news/it-formula1-sepang-seven-teams-updates/"
+    }
+   ],
+   "see": [
+    "sidepod",
+    "cooling",
+    "louvres",
+    "airbox",
+    "ice",
+    "rear-wing",
+    "shark-fin"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "F1 2026 aero regulations in focus part 2: sidepods, diffuser and rear wing",
+     "url": "https://motorsport.tech/formula-1/f1-2026-aero-regulations-in-focus-part-2-sidepods-diffuser-and-rear-wing"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Canadian Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Miami Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "The first clues from major Mercedes F1 upgrade in Malaysia",
+     "url": "https://www.the-race.com/formula-1/first-clues-major-mercedes-f1-upgrade-at-sepang/"
+    }
+   ]
+  },
+  {
+   "id": "airbox",
+   "term": "エアボックス（エアインテーク）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "エアボックス",
+    "air box",
+    "airbox",
+    "エアインテーク",
+    "air intake",
+    "吸気口"
+   ],
+   "words": [
+    "ドライバーの頭の上",
+    "エンジンの空気取り入れ口",
+    "ロールフープ",
+    "吸気",
+    "頭上の穴",
+    "ターボへの空気"
+   ],
+   "short": "ドライバーの頭の上にある、エンジンに空気を送る取り入れ口。ロールフープの上に付く。",
+   "body": [
+    "エアボックスは、ドライバーの頭の後ろ上にある、パワーユニットに空気を送る取り入れ口。ロールフープ（横転したときに頭を守る骨組み）の上に付く。走ると前から空気が入り、エンジンが燃料を燃やすのに必要な酸素を届ける。「エアインテーク」とも呼ばれる。",
+    "2016年のMotorsport.comの解説では、中央の口がターボの圧縮機へ、外側の口が補機の冷却器（ERSの冷却器やギアボックスのオイルの冷却器など）へ空気を送る設計があった。FIAはこの部分の使い方が行き過ぎたとして、2012年から規則を厳しくした。今の規則では、パワーユニットの吸気用のダクトは、エアフィルターまでを車体の部品として扱う（C3.1）。",
+    "2026年の大きな変更は、ロールフープの強さだ。ロールフープが耐える荷重は約23%増えたと、レッドブルとPlanetF1が伝えている。PlanetF1は、これまでに車を公開したチームのほとんどで、ロールフープとエアボックスが2025年より大きくなったと指摘する。ロールフープはエアボックスの土台でもある。"
+   ],
+   "rule": "C3.1（吸気ダクトは車体の部品）、C5.6（エンジンの吸気）、C13.3（ロールフープの試験）",
+   "examples": [],
+   "see": [
+    "halo",
+    "survival-cell",
+    "crash-test",
+    "engine-cover",
+    "cooling",
+    "turbo",
+    "shark-fin"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (A-E)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Tech analysis: F1 teams seeking gains in roll-hoop design（2016年）",
+     "url": "https://www.motorsport.com/f1/news/tech-analysis-f1-teams-seeking-gains-in-roll-hoop-design-679657/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Red Bull Racing",
+     "title": "Bull's guide to the F1 2026 regulations: safety",
+     "url": "https://www.redbullracing.com/int-en/projects/bulls-guide-to-the-f1-2026-regulations/bulls-guide-the-f1-2026-regulations-safety"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Why F1 2026 safety overhaul forces teams to rethink chassis and nose design",
+     "url": "https://www.planetf1.com/features/why-f1-2026-safety-overhaul-forces-teams-to-rethink-chassis-and-nose-design"
+    },
+    {
+     "name": "FIA",
+     "title": "New era of competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    }
+   ]
+  },
+  {
+   "id": "brake-ducts",
+   "term": "ブレーキダクト",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ブレーキダクト",
+    "brake duct",
+    "ブレーキ冷却ダクト",
+    "FBD",
+    "ブレーキドラム",
+    "ぶれーきだくと"
+   ],
+   "words": [
+    "ブレーキを冷やす",
+    "タイヤの熱",
+    "ホイールの中",
+    "空気取り入れ口",
+    "ブレーキ冷却",
+    "ホイールウェイク"
+   ],
+   "short": "ブレーキを冷やす空気の通り道。ホイールの内側にあり、タイヤの温度や空気の流れにも関わる。",
+   "body": [
+    "ブレーキダクトは、ブレーキを冷やす空気を取り込む筒で、ホイールのすぐ内側にある。F1のブレーキは最大で約1000℃になり、走行風で冷やす。ディスクとホイールの間の空気の流し方は、タイヤの温度にも関わる。",
+    "もう一つの役目が空力だ。ダクトの出口やまわりの小さな翼で、前輪のうしろの乱れた空気の流れを変えられる。そのため、規則でたびたび縛られてきた。2019年には、前のブレーキダクトを前へ伸ばせる範囲が、半径330mmから180mmに狭められた（f1technical.net）。2022〜2025年は、ホイールカバーが標準の部品だった（The Race）。",
+    "2026年は、ホイールカバーの形をチームが決められるようになったと、Motorsport.techとPlanetF1が伝えている。ホイールの内側のブレーキダクトの設計は、引き続き大事だとされる。",
+    "今季は、ブレーキに厳しいコースに合わせて、ダクトを替えるチームが多い。カナダでは、ウィリアムズが冷却を増やす新しい形を、レッドブルが大きな出口のダクトを用意した。キャデラックは、入口の縁の形を変えて空力の力も狙った。バクーでは、ウィリアムズやレーシングブルズが前のダクトを改めた。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでウィリアムズは、フロアや後部に加えて、ブレーキダクトなども見直した。",
+     "u": "/news/en-therace-williams-chassis/"
+    }
+   ],
+   "see": [
+    "brake-by-wire",
+    "brake-balance",
+    "outwash",
+    "tyre-warm-up",
+    "wheels-18inch",
+    "front-wing"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "How Mercedes and Red Bull have diverged on F1 brake duct ideas",
+     "url": "https://autosport.com/all/news/how-mercedes-and-red-bull-have-diverged-on-f1-brake-duct-ideas/6741111/"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "2019 Front Brake Ducts",
+     "url": "https://www.f1technical.net/features/21878"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: How F1's new wheel covers can challenge teams（2022年）",
+     "url": "https://the-race.com/formula-1/gary-anderson-how-f1s-new-wheel-covers-can-challenge-teams/"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "F1 2026 aero regulations in focus part 1: back to the future",
+     "url": "https://motorsport.tech/formula-1/f1-2026-aero-regulations-in-focus-part-1-back-to-the-future"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "How F1 2026 aero rules aim to beat dirty air — and where teams can still innovate",
+     "url": "https://www.planetf1.com/features/f1-2026-aero-rules-dirty-air-front-wing-floor"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Canadian Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    }
+   ]
+  },
+  {
+   "id": "mirrors",
+   "term": "バックミラー（ミラー）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "バックミラー",
+    "ミラー",
+    "サイドミラー",
+    "mirror",
+    "wing mirror",
+    "リアビューミラー"
+   ],
+   "words": [
+    "後ろを見る鏡",
+    "車の左右",
+    "運転席の横",
+    "後方視界",
+    "ミラーのライト",
+    "側面安全ライト"
+   ],
+   "short": "ドライバーが後ろを見る鏡。2026年から側面ライトが付き、形は空力にも使われる。",
+   "body": [
+    "ミラーは、ドライバーが後ろを見るための鏡で、コクピットの両脇に付く。後ろから来る車を確かめるのに使う。規則では、後方が見えることが決められている（C14.2）。",
+    "2026年は、ミラーに「側面の安全ライト」が付いた。左右に1つずつ、琥珀色（アンバー）のライトで、車が止まったとき、またはコース上で時速20kmを下回ったときに点灯する（formula1.com、The Race）。雨などで視界が悪いとき、スピンして横向きになった車に後続車が気づきやすくするためだと、FIAのトンバジス氏は説明している。FIAは、止まった車のERS（電気の装置）の状態を示す役目もあるとしている。ミラー本体は、このライトを包む形にする決まりだ（C3.7.5）。",
+    "ミラーは空力の部品でもある。マイアミでは、マクラーレンがサイドポッドの入口とあわせてミラーを改め、ウィリアムズはミラーの形を変えて、コクピット周りの流れを整えた。バクーではレッドブルが、ミラー一式とハロを変えたと、formula1.comは伝えている。",
+    "セパンのFP2では、ハミルトンの右ミラーが壊れていた。走行ラインに出てボルトレートを妨げたとして、ハミルトンは警告を受けた。ミラーの故障を知っていたのに、後ろから速い車が来ることを無線で伝えなかったとして、フェラーリは1万ユーロの罰金を受けた。"
+   ],
+   "rule": "C14.2（後方視界ミラー）、C14.7（側面安全ライト）、C3.7.5（ミラーの形）",
+   "examples": [
+    {
+     "t": "セパンFP2で、ハミルトンは右ミラーの損傷を訴えたが、スチュワードは警告とし、フェラーリに1万ユーロの罰金を科した。",
+     "u": "/news/en-rn365-hamilton-mirror-impeding/"
+    }
+   ],
+   "see": [
+    "halo",
+    "sidepod",
+    "rain-hazard",
+    "wet-race-declared",
+    "stewards"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: What do the new lights on F1 cars mean?",
+     "url": "https://www.formula1.com/en/latest/article/explained-what-do-the-new-lights-on-f1-cars-mean.2W9KyVqIpHgZAvKqJXxAEM"
+    },
+    {
+     "name": "The Race",
+     "title": "What new flashing rear lights on 2026 F1 cars mean",
+     "url": "https://www.the-race.com/formula-1/f1-2026-cars-what-flashing-rear-lights-mean/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "What are those flashing mirror lights on F1 2026 cars? FIA explains",
+     "url": "https://www.planetf1.com/news/fia-mirror-lights-f1-2026-explained"
+    },
+    {
+     "name": "Red Bull Racing",
+     "title": "Bull's guide to the F1 2026 regulations: safety",
+     "url": "https://www.redbullracing.com/int-en/projects/bulls-guide-to-the-f1-2026-regulations/bulls-guide-the-f1-2026-regulations-safety"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Miami Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+     "name": "RaceFans",
+     "title": "Ferrari fined €10,000 after Hamilton impedes Bortoleto in practice",
+     "url": "https://www.racefans.net/2026/10/02/ferrari-fined-e10000-after-hamilton-impedes-bortoleto-in-practice/"
+    },
+    {
+     "name": "FIA",
+     "title": "New era of competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    }
+   ]
+  },
+  {
+   "id": "skid-blocks",
+   "term": "スキッドブロック（底板の金属片）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "スキッドブロック",
+    "skid block",
+    "スキッド",
+    "skid",
+    "チタンスキッド",
+    "すきっどぶろっく"
+   ],
+   "words": [
+    "底板の金属",
+    "火花",
+    "プランク",
+    "車高の検査",
+    "路面とこすれる",
+    "失格"
+   ],
+   "short": "底板（プランク）に埋めた金属の片。路面にこすれて火花を出し、車高の検査の目印にもなる。",
+   "body": [
+    "スキッドブロックは、車の底の板（プランク）に埋め込まれた金属の片。路面にこすれると、火花が出る。プランクを削れから守り、レースのあとにプランクの厚さを測る穴のまわりにも付く。材料は、チタン合金かステンレス鋼だ。",
+    "2026年の規則では、プランクの厚さは新品で10mm（±0.2mm）で、穴が3つあり、直径は34mm。前の穴のまわりには金属のスキッドが必要で、中央と後ろの穴のまわりは付けても付けなくてもよい（C3.6.1、C3.6.3）。底板の摩耗による失格は、1994年のベルギーGPで、1着だったシューマッハーの車が受けた。底板の摩耗は1mmまでと決まっていたが、それを超えていたと見られ、ヒルが優勝に繰り上がった。",
+    "レースのあと、穴のまわりの厚さを測る。2025年は、10mmから1mmまで削れてよく、9mmを下回ると失格だった。2026年は、最低8mmまで認められ、削れてよい量が2mmになった（C3.6.1）。",
+    "2025年は、中国GPのフェラーリ、バーレーンGPのザウバー、ラスベガスGPのマクラーレンが、底板の摩耗で失格になった。ラスベガスでは、スチュワードが「失格にする以外の選択肢が規則になかった」という趣旨を述べている。2026年は、雨でストレートモードを使えない設定にすると、車高が約8mm変わって底板が削れやすいとThe Raceが報じた。対策として、FIAのトンバジス氏は、雨のときはアクティベーションゾーンをずっと短くするか、なくす方針を説明している。"
+   ],
+   "rule": "C3.6.1（プランクの厚さと摩耗）、C3.6.3（スキッド）",
+   "examples": [],
+   "see": [
+    "plank",
+    "ride-height",
+    "porpoising",
+    "disqualification",
+    "active-aero",
+    "floor-diffuser"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Norris & Piastri disqualified from Las Vegas GP over 0.1mm of plank wear",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/norris-piastri-disqualified-from-las-vegas-gp-over-0-1mm-of-plank-wear-verstappen-back-in-f1-title-hunt/"
+    },
+    {
+     "name": "The Race",
+     "title": "What's really going on with F1's under-fire 2026 rules",
+     "url": "https://www.the-race.com/formula-1/under-fire-f1-2026-rules-what-is-really-going-on/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 plans 2026 changes to solve a serious plank wear problem",
+     "url": "https://www.the-race.com/formula-1/f1-plans-2026-changes-to-solve-a-serious-plank-wear-problem"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Michael Schumacher disqualification makes F1 history to set up 30-year interval",
+     "url": "https://racingnews365.com/michael-schumacher-disqualification-makes-f1-history-to-set-up-30-year-interval-on-this-day"
+    },
+    {
+     "name": "Wikipedia",
+     "title": "1994 Belgian Grand Prix",
+     "url": "https://en.wikipedia.org/wiki/1994_Belgian_Grand_Prix"
+    }
+   ]
+  },
+  {
+   "id": "gurney-flap",
+   "term": "ガーニーフラップ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ガーニーフラップ",
+    "ガーニー",
+    "Gurney flap",
+    "gurney",
+    "ガーニー・フラップ",
+    "がーにーふらっぷ"
+   ],
+   "words": [
+    "翼の後ろの小さな立ち上がり",
+    "ウイングの縁",
+    "ダウンフォースを足す",
+    "10mm",
+    "リアウイングの上端",
+    "ダン・ガーニー"
+   ],
+   "short": "翼の後ろの縁に付ける、ごく小さな立ち上がり。少ない手間でダウンフォースを足せる。",
+   "body": [
+    "ガーニーフラップは、翼の後ろの縁（後縁）に付ける、直角に立つ細い板。高さは、翼の前後の長さ（翼弦）の1〜2%ほどしかない。翼の上と下の圧力の差を大きくして、ダウンフォースを足す。小さな部品なので、細かな調整に向く。",
+    "名前は、考えたドライバー兼チームオーナーのダン・ガーニーから来ている。1971年にフェニックスで試され、1972年のインディ500で実戦に出た。ボビー・アンサーのイーグルは、その年にインディの速度の記録を大きく更新したと伝えられる。F1でも、現在まで使われている。",
+    "2026年の規則では、前翼も後ろ翼も、後縁に高さ10mmまでのガーニーを付けてよい（C3.10.1、C3.11.1）。",
+    "2019年には、前翼のガーニーフラップが話題になった。予選と決勝のあいだにガーニーを付け替える手があるのではないかと疑われた。FIAはバーレーンGPで技術指令を出し、ガーニーを外して別の場所に付け替えることはパルクフェルメ規則の違反とみなすとした。付け替えた車は新しい仕様の前翼を使ったものとして、ピットレーンスタートになる。なお、FIAはオーストラリアGPで付け替えた車はなかったとみていた（Motorsport.com）。"
+   ],
+   "rule": "C3.10.1（前翼）、C3.11.1（後ろ翼）",
+   "examples": [],
+   "see": [
+    "front-wing",
+    "rear-wing",
+    "wing-flap",
+    "downforce",
+    "drag",
+    "parc-ferme",
+    "technical-directive"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations - Section C Technical（Issue 20, 2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Speedsport",
+     "title": "The Gurney Flap turns 50",
+     "url": "https://speedsport.com/premium/the-gurney-flap-turns-50"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "F1MATHS: Why do teams use gurney flaps on their cars?",
+     "url": "https://www.f1technical.net/news/25210"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "FIA moves to close off Gurney flap trick in F1（2019年）",
+     "url": "https://us.motorsport.com/f1/news/fia-moves-gurney-flap-trick/4362131/"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Great racing cars: 1972 AAR Eagle",
+     "url": "https://motorsportmagazine.com/articles/us-scene/indycar/great-racing-cars-1972-aar-eagle"
+    }
+   ]
+  },
+  {
+   "id": "louvres",
+   "term": "ルーバー（放熱用のすき間）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ルーバー",
+    "ルーヴル",
+    "louvre",
+    "louver",
+    "放熱スリット",
+    "冷却ルーバー"
+   ],
+   "words": [
+    "熱い空気の出口",
+    "冷却",
+    "ボディのすき間",
+    "スリット",
+    "エンジンカバーの穴",
+    "暑いレース"
+   ],
+   "short": "ボディに並べた細いすき間。中の熱い空気を逃がして冷やす。コースごとに数や大きさを替える。",
+   "body": [
+    "ルーバーは、エンジンカバーやサイドポッドの上に並べた、細長いすき間（スリット）。冷やす空気をよく通して、ラジエーターなどの熱を逃がす。多く開けるほどよく冷えるが、そのぶん空気の流れが乱れて抵抗が増える。",
+    "チームは、気温や標高に合わせて、数や大きさを替える。標高が約2,200mのメキシコシティは、空気の密度が海面より約2割少なく、冷却がとくに厳しい。2023年は、レッドブル、アルピーヌ、ウィリアムズなどが、大きなルーバーを用意した（Motorsport.com）。",
+    "今季も同じだ。マイアミではマクラーレンが、冷却の余裕を増やせるサイドポッドのルーバーを用意した。カナダではレッドブルが、雨の予報に合わせて、マイアミ用のルーバーの段を閉じた出口パネルを作り、アウディはより効率のよい冷却のための新しいルーバーを使った。バクーでは、マクラーレンとレッドブルがルーバーの配置を調整したと、formula1.comは伝えている。",
+    "2026年はパワーユニットの構成が変わり、冷やす装置の置き方がチームごとに分かれた。Motorsport.techは、ラジエーターをサイドポッドと車の中央に振り分けられることや、サイドポッドの上に冷却の入口を足す工夫が見られることを解説している（→冷却）。"
+   ],
+   "examples": [],
+   "see": [
+    "cooling",
+    "sidepod",
+    "engine-cover",
+    "heat-hazard",
+    "altitude"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "How F1 teams have adapted their cars for Mexico's cooling headache（2023年）",
+     "url": "https://www.motorsport.com/f1/news/how-f1-teams-have-adapted-their-cars-for-mexicos-cooling-headache/10538790/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Miami Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Canadian Grand Prix - Car presentation submissions",
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_car_presentation_submissions.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+     "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "F1 2026 aero regulations in focus part 2: sidepods, diffuser and rear wing",
+     "url": "https://motorsport.tech/formula-1/f1-2026-aero-regulations-in-focus-part-2-sidepods-diffuser-and-rear-wing"
+    }
+   ]
+  },
+  {
+   "id": "brakes",
+   "term": "ブレーキ（ディスクとキャリパー）",
+   "aliases": [
+    "ブレーキ",
+    "Brakes",
+    "ブレーキディスク",
+    "キャリパー",
+    "カーボンブレーキ",
+    "ブレンボ"
+   ],
+   "words": [
+    "ブレーキディスク",
+    "キャリパー",
+    "カーボンディスク",
+    "後輪ブレーキ",
+    "ブレンボ",
+    "回生ブレーキ"
+   ],
+   "short": "車輪の内側で円盤をはさんで止める装置。2026年は回生が増え、後輪ブレーキは小さくなる方向。",
+   "body": [
+    "ブレーキは、各車輪の内側にある。車輪と一緒に回る円盤（ディスク）を、パッドではさんで止める。はさむ部品がキャリパーで、油圧で動く。F1のディスクはカーボン製で、温度は1,000度以上になることもあり、冷たい空気を通す穴が1,000個以上あいている（メルセデス）。前と後ろは別々の油圧の系統で、ドライバーはコックピットの操作で前後の配分を変えられる（F1公式）。",
+    "2026年の規則で、ブレーキの決まりも変わった。ブレンボの説明では、前のブレーキの変化は後ろほど大きくなく、ディスク径が少し大きくなる程度だ。後ろのディスクは、最大直径が280mmのままで、最小が260mmと決まった。厚さの上限は32mmから34mmになり、冷却用の穴の最小径は3mmから2.5mmになった。キャリパーは、これまでピストンが6個までだったが、2〜8個、パッド4枚まで、取り付け点3か所まで認められる。",
+    "いちばん大きな変化は回生だ。MGU-Kの出力が120kWから350kWへ増え、後輪では、減速の大きな部分を回生が受け持つ。そのため後輪ブレーキは小さくなる方向で、ブレンボは最大20%小さくなる可能性があるとみた。ただし後輪は、パワーユニットの助けなしで、各輪2500Nm（ニュートンメートル）の制動トルクを出せなければならない。そのときのキャリパー圧は最大150bar、後ろの油圧はドライバーの踏む力の1.2倍までと決まっている（ブレンボ）。",
+    "今季の課題は、後輪ブレーキが冷えすぎることだった。ブレンボのアルモンド氏は、後輪のブレーキが「とても、とても、とても冷えている」と述べ、少なくともシーズンの序盤はテーマになると話した（The Race）。カーボンは温度が低すぎると摩擦が一定にならず、挙動が読みにくくなる。ブレンボのアルジェリ氏は、後輪ディスクに、直径も厚さも現行より非常に小さい極端な選択が見られると語った（PlanetF1）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンのブレーキ難易度は5段階中3。最も厳しいターン15では約189kgのペダル荷重と4.7Gがかかると伝えられた。",
+     "u": "/news/it-formula1-sepang-brakes-energy/"
+    },
+    {
+     "t": "バクーのボッタスは、後輪のブレーキと回生が効かなくなったような感覚だったと説明した。",
+     "u": "/news/en-planetf1-bottas-brake-harvest-theory/"
+    },
+    {
+     "t": "バクーのコラピントは、再スタートの1コーナーでブレーキをロックさせた。タイヤとブレーキが冷えていたと本人は説明した。",
+     "u": "/news/es-lat-motorsport-colapinto/"
+    }
+   ],
+   "see": [
+    "brake-by-wire",
+    "brake-balance",
+    "lock-up",
+    "mgu-k",
+    "harvesting",
+    "upright",
+    "wheels-18inch"
+   ],
+   "src": [
+    {
+     "name": "Brembo",
+     "title": "F1 rules 2026 (brake regulations)",
+     "url": "https://www.brembo.com/en/motorsport/formula1/f1-rules-2026"
+    },
+    {
+     "name": "The Race",
+     "title": "Another unforeseen headache set to be a theme of F1 2026",
+     "url": "https://www.the-race.com/formula-1/another-unforeseen-headache-set-to-be-a-theme-of-f1-2026"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Extreme F1 2026 brake systems uncovered as first design details emerge",
+     "url": "https://www.planetf1.com/news/f1-news-extreme-2026-brake-systems-uncovered-first-design"
+    },
+    {
+     "name": "Autosport",
+     "title": "F1 2026 brake design challenge",
+     "url": "https://www.autosport.com/f1/news/f1-2026-brake-design-challenge/10767315/"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Formula One brake systems explained",
+     "url": "https://www.mercedesamgf1.com/news/formula-one-brake-systems-explained"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Technical analysis: brake-by-wire systems explained",
+     "url": "https://www.formula1.com/en/latest/article/technical-analysis-brake-by-wire-systems-explained.1XQiBCFqA6WYZwLmb3JLxi"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "clutch",
+   "term": "クラッチ",
+   "aliases": [
+    "クラッチ",
+    "Clutch",
+    "クラッチパドル",
+    "スタートのクラッチ",
+    "発進",
+    "くらっち"
+   ],
+   "words": [
+    "クラッチパドル",
+    "発進",
+    "スタート",
+    "ターボラグ",
+    "回転数",
+    "ピット出口"
+   ],
+   "short": "エンジンと変速機をつなぐ・切る部品。F1ではスタートやピットで、パドルを使って操作する。",
+   "body": [
+    "クラッチは、エンジンの力を変速機（ギアボックス）につなげたり、切り離したりする部品。F1のクラッチはカーボン製の小さなもので、足で踏むペダルはない。ステアリングの裏にあるクラッチパドルで操作する。ドライバーが自分で使うのは、止まった状態から動き出すとき（レースのスタート）とピットだ（FlowRacers）。",
+    "スタートでは、ドライバーはエンジンの回転を上げて待ち、ターボが十分に回った状態でクラッチパドルを放して発進する。放すタイミングで、スタートの出来が大きく変わる。",
+    "2026年は、この操作が難しくなった。MGU-Hがなくなり、ターボを電気の力で先に回しておけなくなったからだ。ターボは排気の流れだけで回るので、回転を高く保つほど立ち上がりが早い（F1公式）。Motor Sport Magazineによると、バーレーンのテストの練習スタートでは13,000rpmを超える回転が記録され、止まったまま10秒以上回転を保つこともある。2025年は、9,000〜10,000rpmでフルブーストにできた。さらに規則で、止まった状態のスタートでは、時速50kmに届くまでMGU-Kを使えない。ノリスは、以前は電池を使ってターボの回り方をそろえていたと話した（The Race）。",
+    "FIAは、スタート前にグリッドのパネルを5秒間青く点滅させ、回転を上げる時間をつくった（F1公式）。8月にはFIAのトンバジス氏が、この5秒は決まった手順になっていて、この規則の期間中に変える理由はないと述べた（PlanetF1）。",
+    "今季はメルセデスのアントネッリが、カナダGPで形の違う新しいクラッチパドルを使った。本人は、スタートでの放し方を安定させるためと話した。チームはソフトウェアの改善も進めている（PitDebrief、PlanetF1）。"
+   ],
+   "examples": [],
+   "see": [
+    "race-start",
+    "gearbox",
+    "steering-wheel",
+    "mgu-h",
+    "mgu-k",
+    "traction",
+    "driveshaft"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "Do F1 Cars Have A Clutch?",
+     "url": "https://flowracers.com/blog/do-f1-cars-have-a-clutch/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why race starts will be different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-race-starts-will-be-different-in-2026.7ADR4zkfl299T7i3ZYVTYK"
+    },
+    {
+     "name": "The Race",
+     "title": "Why F1 race starts will be much more difficult in 2026",
+     "url": "https://www.the-race.com/formula-1/why-f1-race-starts-are-about-to-get-a-lot-less-predictable"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Why 2026 F1 race starts are a problem waiting to happen",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/why-2026-f1-race-starts-are-a-problem-waiting-to-happen/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1's five-second warning will remain despite FIA declaring safety issue resolved",
+     "url": "https://www.planetf1.com/news/f1-five-second-warning-remain-start-safety-issue"
+    },
+    {
+     "name": "PitDebrief",
+     "title": "Antonelli on new clutch paddle for 2026 F1 Canadian GP",
+     "url": "https://www.pitdebrief.com/?p=117769"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Kimi Antonelli reveals Mercedes upgrade to overcome starting issue",
+     "url": "https://www.planetf1.com/news/kimi-antonelli-reveals-mercedes-upgrade-to-overcome-starting-issue"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "pushrod-pullrod",
+   "term": "プッシュロッドとプルロッド",
+   "aliases": [
+    "プッシュロッド",
+    "プルロッド",
+    "Pushrod",
+    "Pullrod",
+    "ダブルプッシュロッド",
+    "ダブルプルロッド"
+   ],
+   "words": [
+    "サスペンションの形式",
+    "ロッカー",
+    "ダブルプッシュロッド",
+    "ダブルプルロッド",
+    "ばねの位置",
+    "前後の足回り"
+   ],
+   "short": "タイヤの上下の動きを、車体の中のばねへ伝える斜めの棒。付け方で2種類に分かれる。",
+   "body": [
+    "プッシュロッドとプルロッドは、タイヤの上下の動きを、車体の中のばねとダンパーに伝える棒だ。棒の先は、車体の中の「ロッカー」というてこの部品につながり、そこからばねとダンパーが動く（FlowRacers）。F1公式の用語集では、プッシュロッドは車体の上のほうのばねと、ホイールの下側をつなぐ斜めの棒。プルロッドは、ホイールの上側と、車体の低い位置のばねをつなぐ斜めの棒だ。",
+    "それぞれに良い点と悪い点がある。PlanetF1によると、プッシュロッドは整備や調整がしやすいが、重心が上がり、ディフューザーの働きの妨げになることがある。プルロッドは重さの配分が良く、空気の流れもきれいにしやすいが、作りも整備も難しい。",
+    "2022〜2025年は、前をプルロッドにするチームが多かった。床下へ空気をうまく流すためだった（Autosport）。2026年は、床下の空気に頼る度合いが減り、新しいフロントウイングとの組み合わせで有利不利が変わった。前も後ろもプッシュロッドにするチームが主流になった。プッシュロッドのほうが少し軽くできるという見方もある。",
+    "今季の各チームの選び方は、次のように報じられている。PlanetF1などによると、前後ともプッシュロッドは、メルセデス、レッドブル、フェラーリ、レーシングブルズ、ハース、アウディ、アストンマーティン。前後ともプルロッドは、アルピーヌとキャデラック。ウィリアムズは前がプルロッド、後ろがプッシュロッドで、唯一の組み合わせだと報じられている。",
+    "マクラーレンは、前をプルロッドからプッシュロッドに変えたと報じられた（Motorsport.com、The Race）。同チームの技術担当者は「どの前サスペンションが合うかは、新しいフロントウイングに何が合うかという空力の選択だ」と話している（PlanetF1）。"
+   ],
+   "examples": [],
+   "see": [
+    "suspension",
+    "wishbone",
+    "dampers",
+    "heave-spring",
+    "anti-dive",
+    "ground-effect",
+    "front-wing",
+    "ride-height"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (P-T)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "FlowRacers",
+     "title": "How F1 Suspension Works – The Ultimate Guide",
+     "url": "https://flowracers.com/blog/f1-suspension/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Push-rod vs Pull-rod: How F1 teams are shaping 2026 suspension strategies",
+     "url": "https://www.planetf1.com/f1-tech/push-rod-vs-pull-rod-how-f1-teams-are-shaping-2026-suspension-strategies"
+    },
+    {
+     "name": "Autosport",
+     "title": "Newey, extreme Aston, Red Bull, Mercedes: early technical trends of F1 2026",
+     "url": "https://www.autosport.com/f1/news/newey-extreme-aston-red-bull-mercedes-early-technical-trends-f1-2026/10794309/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "First Audi F1 design details spotted as early F1 2026 tech trend emerges",
+     "url": "https://www.planetf1.com/news/audi-f1-2026-design-details-ferrari-red-bull-shakedown"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "McLaren weighs in on F1 2026 suspension debate as Cadillac and Alpine break early trend",
+     "url": "https://www.planetf1.com/home-page/mclaren-mcl40-f1-2026-design-suspension"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Williams FW48 F1 2026 suspension",
+     "url": "https://www.planetf1.com/news/williams-fw48-f1-2026-suspension"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Key Adrian Newey design decision emerges as Aston Martin AMR26 hits track",
+     "url": "https://www.planetf1.com/news/adrian-newey-aston-martin-amr26-f1-2026-design-details"
+    },
+    {
+     "name": "auto motor und sport",
+     "title": "McLaren zeigt neuen MCL40",
+     "url": "https://www.auto-motor-und-sport.de/formel-1/mclaren-mcl40-f1-auto-praesentation-2026/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "McLaren reveals renders of new MCL40 F1 car",
+     "url": "https://www.motorsport.com/f1/news/mclaren-reveals-renders-of-new-mcl40-f1-car/10792792/"
+    },
+    {
+     "name": "The Race",
+     "title": "McLaren's 2026 upgrade strategy is very different to rivals'",
+     "url": "https://www.the-race.com/formula-1/mclaren-test-car-pretty-much-what-it-will-use-at-season-opener"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "wishbone",
+   "term": "ウィッシュボーン（サスペンションアーム）",
+   "aliases": [
+    "ウィッシュボーン",
+    "Wishbone",
+    "サスペンションアーム",
+    "ダブルウィッシュボーン",
+    "アッパーアーム",
+    "ロアアーム"
+   ],
+   "words": [
+    "サスペンションアーム",
+    "上下のアーム",
+    "アッパーアーム",
+    "ロアアーム",
+    "カーボンアーム",
+    "アップライト"
+   ],
+   "short": "車体とタイヤを支える部品をつなぐV字形のアーム。上下2本の組で、タイヤの動く向きを決める。",
+   "body": [
+    "ウィッシュボーンは、車体と、ホイールを支える部品（アップライト）をつなぐ、V字形のアーム。F1では上と下の2本が組になっていて、タイヤが上下に動くときの動く向きを決める。軽くて強いカーボンファイバー製で、空気が当たる場所にあるため、形が空力にも関わる（FlowRacers）。",
+    "F1公式は、アームとアップライトのつなぎ方が空力の一部としてますます大事になっていると書いた（2015年）。2022年の規則では、上のアームの取り付けをホイールの直径の内側におさめる決まりと、アームどうしの最小の角度を大きくする決まりが入り、メルセデスが使っていた幅の狭い形はできなくなった（F1公式）。",
+    "2026年は、アームの付け方がチームごとの違いになったと報じられている。F1Technicalは、フェラーリが前の上のアームを2025年よりかなり低くし、サイドポッドの入口の前の空気の邪魔を減らして、床の前へ流しやすくしたと伝えた。RACE TECHは、多くのチームが前の上のアームを下げたなか、レッドブルは逆に上げたと報じた。アストンマーティンの後ろのアームの位置は、ウィリアムズのボウルズ代表が「とても極端だ」と評した（PlanetF1）。"
+   ],
+   "examples": [],
+   "see": [
+    "suspension",
+    "upright",
+    "pushrod-pullrod",
+    "anti-dive",
+    "dampers",
+    "front-wing"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "How F1 Suspension Works – The Ultimate Guide",
+     "url": "https://flowracers.com/blog/f1-suspension/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Red Bull RB11 - New rear suspension uprights",
+     "url": "https://www.formula1.com/en/latest/article/red-bull-rb11-new-rear-suspension-uprights.5w3kwI0F2Qi7IfvscEaTZS"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "TECH TUESDAY: How 2022's suspension overhaul could shuffle the competitive order",
+     "url": "https://www.formula1.com/en/latest/article/tech-tuesday-how-2022s-suspension-overhaul-could-shuffle-the-competitive.4PoTMQ9jbaWotbTdd4bp8j"
+    },
+    {
+     "name": "F1Technical",
+     "title": "F1 TECH: How has Ferrari changed its front suspension for 2026?",
+     "url": "https://www.f1technical.net/news/28214"
+    },
+    {
+     "name": "RACE TECH",
+     "title": "Every F1 2026 major technical solution revealed so far",
+     "url": "https://www.raceteq.com/articles/2026/03/every-f1-2026-major-technical-solution-revealed-so-far"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "'Very extreme' – Adrian Newey's AMR26 suspension catches eye of rival F1 team boss",
+     "url": "https://www.planetf1.com/news/adrian-newey-aston-martin-amr26-suspension-extreme"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "dampers",
+   "term": "ダンパー（ショックアブソーバー）",
+   "aliases": [
+    "ダンパー",
+    "ショックアブソーバー",
+    "ショック",
+    "Damper",
+    "Shock absorber",
+    "だんぱー"
+   ],
+   "words": [
+    "ショックアブソーバー",
+    "減衰",
+    "ばねの揺れを抑える",
+    "ダンパーの設定",
+    "縁石",
+    "バウンシング"
+   ],
+   "short": "ばねの揺れをすばやくおさめる部品。油が流れる抵抗で、動きの速さに合わせて効く。",
+   "body": [
+    "ダンパーは、ばねの伸び縮みの動きに抵抗を加える部品だ。ばねだけでは、縁石を越えたあとも車が弾み続ける。ダンパーが、その揺れを早くおさめる。F1のダンパーは、ロッカーの動きで伸び縮みする筒で、中の油が細い通り道を流れる抵抗で働く。ゆっくりした動きには小さく、すばやい動きには大きく抵抗する（FlowRacers）。",
+    "2022年の規則では、サスペンションの硬さを決められるのは、ばねとダンパーだけになった。油圧でサスペンションを動かす装置は禁止され、サスペンションにつくイナーターも禁止された。速度や空力の変化に応じて車高を自動で変える仕組みも禁止された（The Race、F1公式）。",
+    "2026年は、床下で出すダウンフォースが減った。ラッセルは1月、新しい車で「ポーパシング（高速での上下の弾み）はない」と話した（PlanetF1）。The Raceは、ベンチュリトンネルのために硬い足回りが必要だった時代と違い、ラッセルが「背中がラクになった」と話したと伝えた。規則発表のころ、空力の専門家は、空力部品のうち2つを可動式にすれば、高速で車が沈みにくくなり、前のサスペンションを柔らかくできると予想していた（Motor Sport Magazine）。"
+   ],
+   "examples": [],
+   "see": [
+    "suspension",
+    "heave-spring",
+    "anti-roll-bar",
+    "ride-height",
+    "porpoising",
+    "setup",
+    "kerb"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "How F1 Suspension Works – The Ultimate Guide",
+     "url": "https://flowracers.com/blog/f1-suspension/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "TECH TUESDAY: How 2022's suspension overhaul could shuffle the competitive order",
+     "url": "https://www.formula1.com/en/latest/article/tech-tuesday-how-2022s-suspension-overhaul-could-shuffle-the-competitive.4PoTMQ9jbaWotbTdd4bp8j"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's 2022 car: What's changing in biggest ever rules overhaul",
+     "url": "https://the-race.com/formula-1/f1-2022-car-rule-changes-guide/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "George Russell hails end of Mercedes porpoising thanks to 2026 F1 rules",
+     "url": "https://www.planetf1.com/news/george-russell-mercedes-porpoising-w17-stop"
+    },
+    {
+     "name": "The Race",
+     "title": "What we've learned about what 2026 F1 cars are actually like",
+     "url": "https://www.the-race.com/formula-1/what-f1-2026-cars-are-actually-like-10-revelations/"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Why 2026 F1 rules are an aero headache – by an F1 aerodynamicist",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/why-2026-f1-rules-are-an-aerodynamic-headache-by-an-f1-aerodynamicist/"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "anti-roll-bar",
+   "term": "アンチロールバー（スタビライザー）",
+   "aliases": [
+    "アンチロールバー",
+    "スタビライザー",
+    "スタビ",
+    "ARB",
+    "Anti-roll bar",
+    "Sway bar"
+   ],
+   "words": [
+    "ロール",
+    "コーナーで傾く",
+    "左右をつなぐ棒",
+    "ロール剛性",
+    "三輪症状",
+    "スタビ"
+   ],
+   "short": "同じ車軸の左右の車輪をつなぐ棒。コーナーで車体が傾く動きを抑える。",
+   "body": [
+    "アンチロールバーは、前または後ろの車軸の左右の車輪をつなぐ棒だ。片方の車輪の上下の動きが、もう片方に伝わるようになっていて、左右が別々に動こうとすると、ねじれて抵抗する（FlowRacers）。コーナーでは、外側が沈み、内側が浮こうとする。そこで棒が働き、車体の傾き（ロール）を抑える。",
+    "左右が同じ向きに動くときは、棒はほとんど働かない。ブレーキで前がそろって沈む動きなどに逆らうのは、ヒーブスプリングの役目だ。車体の傾きにくさは、ロール剛性と呼ばれる。",
+    "2026年の例が、ウィリアムズの内側前輪の問題だ。コーナーで内側の前輪が軽くなり、接地が弱まる。サインツは、2025年は何とか抑えていたが、ダウンフォースが減った新規則で再び目立ったと話した（PlanetF1）。The Raceは、三輪症状（コーナーで車輪が1つ浮くこと）の原因の候補として、ロール剛性の高さや攻めた車高をあげた。アルボンはバクーで、普段より少し遅くブレーキを踏んだところ、内側前輪が浮く「三輪症状」が出て、突風も重なり壁に当たったと説明した。"
+   ],
+   "examples": [
+    {
+     "t": "アルボンは、バクーのクラッシュの原因を、内側前輪が浮く「三輪症状」と突風の重なりと説明した。",
+     "u": "/news/en-rn365-albon-three-wheel-crash/"
+    }
+   ],
+   "see": [
+    "suspension",
+    "heave-spring",
+    "dampers",
+    "understeer",
+    "oversteer",
+    "setup",
+    "ride-height"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "How F1 Suspension Works – The Ultimate Guide",
+     "url": "https://flowracers.com/blog/f1-suspension/"
+    },
+    {
+     "name": "The Race",
+     "title": "Yet another Williams car problem might be its most troubling",
+     "url": "https://the-race.com/formula-1/yet-another-williams-car-problem-might-be-its-most-troubling"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Carlos Sainz Williams car issue: Alex Albon inside front grip",
+     "url": "https://www.planetf1.com/news/carlos-sainz-williams-car-issue-alex-albon-inside-front-grip"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "heave-spring",
+   "term": "ヒーブスプリング（ヒーブエレメント、3本目のばね）",
+   "aliases": [
+    "ヒーブスプリング",
+    "ヒーブエレメント",
+    "サードスプリング",
+    "3本目のばね",
+    "Heave spring",
+    "Third element"
+   ],
+   "words": [
+    "サードエレメント",
+    "上下の動き",
+    "車高の安定",
+    "ヒーブ",
+    "ピッチング",
+    "3本目のばね"
+   ],
+   "short": "左右の車輪が同時に沈む動きに逆らう3本目のばね。車の姿勢と空力を安定させる。",
+   "body": [
+    "ふつうのばねは、車輪ごとに付く。それとは別に、同じ車軸の左右の車輪が同時に沈む動きだけに逆らうのが、ヒーブスプリング（ヒーブエレメント、サードエレメント）だ。「ヒーブ」は、車体がまとめて上下に動くこと。加速やブレーキで車体が前後に傾き過ぎるのを抑え、空力を安定させる（FlowRacers）。コーナーで左右が逆に動くときは、左右をつなぐアンチロールバーが働く。",
+    "ダウンフォースで沈む動きにも、この3本目のばねが働く。車高が変わると空力が変わるので、車高を保つ大事な部品になる。",
+    "規則では、2022年に油圧でサスペンションを動かす装置が全面的に禁止され、ヒーブスプリングは機械式になると、F1公式は解説した。サスペンションの硬さは、ばねとダンパーだけで決める決まりだった（The Race）。2026年は、床下の空気に頼る度合いが減り、規則発表のころは、車高の変化に敏感だった床の仕組み（フェンス）もなくなって、車高の変化に鈍感になると見られた（Motor Sport Magazine）。"
+   ],
+   "examples": [],
+   "see": [
+    "suspension",
+    "anti-roll-bar",
+    "dampers",
+    "ride-height",
+    "porpoising",
+    "ground-effect"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "How F1 Suspension Works – The Ultimate Guide",
+     "url": "https://flowracers.com/blog/f1-suspension/"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "TECH TUESDAY: How 2022's suspension overhaul could shuffle the competitive order",
+     "url": "https://www.formula1.com/en/latest/article/tech-tuesday-how-2022s-suspension-overhaul-could-shuffle-the-competitive.4PoTMQ9jbaWotbTdd4bp8j"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's 2022 car: What's changing in biggest ever rules overhaul",
+     "url": "https://the-race.com/formula-1/f1-2022-car-rule-changes-guide/"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Why 2026 F1 rules are an aero headache – by an F1 aerodynamicist",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/why-2026-f1-rules-are-an-aerodynamic-headache-by-an-f1-aerodynamicist/"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "upright",
+   "term": "アップライト（ハブキャリア）",
+   "aliases": [
+    "アップライト",
+    "ハブキャリア",
+    "Upright",
+    "Hub carrier",
+    "ナックル",
+    "あっぷらいと"
+   ],
+   "words": [
+    "ホイールを支える部品",
+    "ベアリング",
+    "ハブ",
+    "ウィッシュボーンの先",
+    "ブレーキダクト",
+    "ステアリングアーム"
+   ],
+   "short": "ウィッシュボーンの先にあり、ホイールを回す部品を支える。サスペンションとステアリングがつながる。",
+   "body": [
+    "アップライトは、ホイールのすぐ内側にあって、サスペンションとホイールをつなぐ部品だ。ホイールを回すハブとベアリングを収め、上下のウィッシュボーンと、ステアリングの動きを伝えるアームがつながる。",
+    "空気の流れにも関わる。ブレーキを冷やす風は、ブレーキダクトを通ってアップライトのほうから外へ出ていく。ダクトを大きくするほど冷却は増えるが、空力には不利になる（メルセデス）。F1公式は、アームとアップライトのつなぎ方が空力の一部としてますます大事になっていると書いた（2015年）。",
+    "2022年の規則で、サスペンションはホイールのハブに直接つける決まりになった（The Race）。2026年は、後輪ブレーキが冷えすぎる問題が出た。Autosportは、必要な冷却量がコースごとに大きく違うと伝えている。"
+   ],
+   "examples": [],
+   "see": [
+    "wishbone",
+    "suspension",
+    "brakes",
+    "pushrod-pullrod",
+    "driveshaft"
+   ],
+   "src": [
+    {
+     "name": "Wikipedia",
+     "title": "Steering knuckle",
+     "url": "https://en.wikipedia.org/wiki/Steering_knuckle"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Red Bull RB11 - New rear suspension uprights",
+     "url": "https://www.formula1.com/en/latest/article/red-bull-rb11-new-rear-suspension-uprights.5w3kwI0F2Qi7IfvscEaTZS"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "Formula One brake systems explained",
+     "url": "https://www.mercedesamgf1.com/news/formula-one-brake-systems-explained"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's 2022 car: What's changing in biggest ever rules overhaul",
+     "url": "https://the-race.com/formula-1/f1-2022-car-rule-changes-guide/"
+    },
+    {
+     "name": "The Race",
+     "title": "Another unforeseen headache set to be a theme of F1 2026",
+     "url": "https://www.the-race.com/formula-1/another-unforeseen-headache-set-to-be-a-theme-of-f1-2026"
+    },
+    {
+     "name": "Autosport",
+     "title": "F1 2026 brake design challenge",
+     "url": "https://www.autosport.com/f1/news/f1-2026-brake-design-challenge/10767315/"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "anti-dive",
+   "term": "アンチダイブとアンチスクワット",
+   "aliases": [
+    "アンチダイブ",
+    "アンチスクワット",
+    "Anti-dive",
+    "Anti-squat",
+    "ノーズダイブ",
+    "アンチダイヴ"
+   ],
+   "words": [
+    "ノーズダイブ",
+    "前が沈む",
+    "ブレーキングで沈む",
+    "サスペンションの幾何",
+    "キネマティクス",
+    "後ろが沈む"
+   ],
+   "short": "ブレーキで前が沈み、加速で後ろが沈む動きを、アームの角度で抑える設計。",
+   "body": [
+    "ブレーキをかけると、車の重さが前にかかり、前が沈む（ダイブ）。加速では後ろが沈む（スクワット）。サスペンションのアームの角度（ジオメトリ）で、この沈みを抑える設計が、前のアンチダイブと後ろのアンチスクワットだ。パーセントで表し、50%なら、ブレーキ時の力の向きが、地面と重心の中間の高さを通る（Formula 1 Dictionary）。",
+    "沈みを抑えると、車高が安定し、硬すぎるばねやダンパーが要らなくなる。一方で、ブレーキでの感覚が薄くなる、という指摘がある（ゲイリー・アンダーソン氏、The Race）。レッドブルのワシェ技術責任者は、マクラーレンの2025年車のアンチダイブを「とても高く、リスクのあるキネマティクス」と評し、部品にかかる力が増えると指摘した。",
+    "2026年も、前のサスペンションの付け方はチームごとの違いが大きい。Autosportによると、アストンマーティンは、前のウィッシュボーンの前側の脚の付け根をできるだけ高く、後ろ側の脚をできるだけ低くして、アンチダイブをさらに極端にした。The Raceのゲイリー・アンダーソン氏も、同車の上のアームの後ろ側の脚の付け根が、他のチームよりずっと低くて後ろにあると指摘している。"
+   ],
+   "examples": [],
+   "see": [
+    "suspension",
+    "wishbone",
+    "pushrod-pullrod",
+    "brake-balance",
+    "lock-up",
+    "ride-height",
+    "traction"
+   ],
+   "src": [
+    {
+     "name": "Formula 1 Dictionary",
+     "title": "Anti-Dive and Anti-Squat Suspension Geometry",
+     "url": "https://www.formula1-dictionary.net/f1-anti-dive-anti-squat-suspension-geometry/"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: why F1 anti-dive ranking looks alarming for Ferrari",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-anti-dive-ranking-looks-alarming-for-ferrari.md"
+    },
+    {
+     "name": "The Race",
+     "title": "McLaren 2025 car design / Red Bull front suspension",
+     "url": "https://www.the-race.com/formula-1/mclaren-2025-car-design-red-bull-front-suspension.md"
+    },
+    {
+     "name": "Autosport",
+     "title": "Newey, extreme Aston, Red Bull, Mercedes: early technical trends of F1 2026",
+     "url": "https://www.autosport.com/f1/news/newey-extreme-aston-red-bull-mercedes-early-technical-trends-f1-2026/10794309/"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson's in-depth analysis of 2026 Aston Martin F1 car",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-verdict-aston-martin-2026-f1-car-adrian-newey"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "power-steering",
+   "term": "パワーステアリング",
+   "aliases": [
+    "パワーステアリング",
+    "パワステ",
+    "PAS",
+    "Power steering",
+    "ステアリングラック",
+    "ぱわーすてありんぐ"
+   ],
+   "words": [
+    "ステアリングの重さ",
+    "油圧アシスト",
+    "ステアリングラック",
+    "操舵力",
+    "ハンドルの重さ",
+    "バルブ"
+   ],
+   "short": "ハンドルを切る力を油圧で助ける装置。電子制御は2002年から禁止され、バルブの仕組みで強さを決める。",
+   "body": [
+    "パワーステアリングは、ドライバーがステアリングを切る力を助ける装置。F1の車はダウンフォースが大きく、時速300kmを超えて走るため、人の力だけでは重すぎる。そこで、油圧で助ける仕組みが付いている（Moog）。",
+    "パワーステアリングの電子制御は、2002年にFIAが禁止した。そのためF1のものは、ばねや細い穴を組み合わせたバルブだけで、助ける強さと反応を決める（Moog）。ソフトウェアで変える仕組みではない。",
+    "2026年は、車が大きく変わった。ホイールベースは最大3,400mm（200mm短い）、幅は1,900mm（100mm狭い）、最低重量は768kgになり、ダウンフォースは約30%減った。タイヤも前が25mm、後ろが30mm細くなった（Crash.net、PlanetF1）。アントネッリは、方向転換や低速コーナーで「より機敏」と話している（The Race）。"
+   ],
+   "examples": [],
+   "see": [
+    "steering-wheel",
+    "suspension",
+    "downforce",
+    "understeer",
+    "oversteer",
+    "wheels-18inch",
+    "minimum-weight"
+   ],
+   "src": [
+    {
+     "name": "Moog",
+     "title": "F1 PAS Valve Case Study",
+     "url": "https://www.moog.com/content/dam/moog/literature/ICD/motorsport/F1_PAS_Valve_Case_Study.pdf"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 2026 regulations: Explaining changes to aero, chassis and engine rules",
+     "url": "https://www.crash.net/f1/news/1050183/1/f1-2026-regulations-changes-aero-chassis-engine"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 2026 uncovered: Next-gen cars, new tyres and radical rules explained",
+     "url": "https://www.planetf1.com/features/f1-2026-uncovered-next-gen-cars-new-tyres-and-radical-rules-explained"
+    },
+    {
+     "name": "The Race",
+     "title": "What we've learned about what 2026 F1 cars are actually like",
+     "url": "https://www.the-race.com/formula-1/what-f1-2026-cars-are-actually-like-10-revelations/"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "driveshaft",
+   "term": "ドライブシャフト",
+   "aliases": [
+    "ドライブシャフト",
+    "ハーフシャフト",
+    "駆動軸",
+    "Driveshaft",
+    "Half shaft",
+    "どらいぶしゃふと"
+   ],
+   "words": [
+    "駆動軸",
+    "後輪へ力を伝える",
+    "トルクセンサー",
+    "デフから後輪",
+    "カーボンシャフト",
+    "ハーフシャフト"
+   ],
+   "short": "デフから左右の後輪へ力を伝える軸。FIAは2026〜2030年用のトルクセンサーを標準供給部品とする方針を示した。",
+   "body": [
+    "ドライブシャフトは、ギアボックスとデフの力を、左右の後輪に伝える軸だ（ハーフシャフトとも呼ぶ）。デフとホイールをつなぐ、ただ1つの部品になる。デフとホイールの位置はサスペンションの動きで変わるので、軸の端には、角度の違いを許す継ぎ手がある。F1では、軽くて強いカーボン製が使われている（Formula 1 Dictionary）。",
+    "エンジンとMGU-Kの力は、ギアボックスとデフを通り、ドライブシャフトで後輪へ届く。",
+    "2026年の変化として、FIAは2023年の募集文書で、2026〜2030年のドライブシャフトのトルクセンサーを「規制用のセンサー」とし、標準供給部品（SSC）に指定した。供給するのはFIAが入札で選ぶ1社の予定で、チームは決められたとおりに取り付けて使い、手を加えてはならない。"
+   ],
+   "examples": [],
+   "see": [
+    "differential",
+    "gearbox",
+    "clutch",
+    "mgu-k",
+    "traction",
+    "upright",
+    "brakes"
+   ],
+   "src": [
+    {
+     "name": "Formula 1 Dictionary",
+     "title": "F1 transmission and drivetrain systems",
+     "url": "https://www.formula1-dictionary.net/f1-transmission-drivetrain-systems/"
+    },
+    {
+     "name": "FIA",
+     "title": "F1 Driveshaft Torque Sensor 2026-2030 Call for Expression of Interest",
+     "url": "https://www.fia.com/sites/default/files/f1_driveshaft_torque_sensor_2026-2030_call_for_expression_of_interest_final_14.06.2023.pdf"
+    }
+   ],
+   "cat": "マシンと空力",
+   "checked": "2026-10-03"
+  },
+  {
+   "id": "fuel-cell",
+   "term": "燃料タンク（燃料セル）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "燃料セル",
+    "フューエルセル",
+    "フューエルタンク",
+    "fuel cell",
+    "fuel tank",
+    "ブラダー（燃料袋）"
+   ],
+   "words": [
+    "燃料を入れる袋",
+    "ゴム製のタンク",
+    "タンクの安全",
+    "積める燃料",
+    "燃料流量計",
+    "給油"
+   ],
+   "short": "燃料を入れるゴム製の袋。ドライバーの後ろ、サバイバルセルの中に収まる。",
+   "body": [
+    "燃料タンク（燃料セル）は、車の燃料を入れておく容器だ。ドライバーの座席とエンジンのあいだにあり、サバイバルセル（カーボンの殻）の中に収まる。中身は金属の箱ではなく、2枚のゴムの層のあいだに丈夫な繊維の層を挟んだ袋（ブラダー）だ。製造会社のATLは、幅1インチ（約2.5cm）の帯で750kgを持ち上げられるほど強いと説明している（2009年の記事）。",
+    "燃料は、レース中に足せない（2010年から給油は禁止。→レース中の給油）。1台が決勝で使える燃料は、2019年から2025年まで110kgまでと決まっていた。エンジンが使える燃料の量は、2025年までは1時間あたり100kgと重さで決められていたが、2026年は重さではなくエネルギーで決め、上限は1時間あたり3000MJ（メガジュール）になった。燃料は持続可能燃料だ（→燃料流量の制限）。",
+    "燃料の流れを測る流量計は、燃料タンクの中に付く。1台に1つで、2026年はアレングラ社が供給し、少なくとも2030年まで同じ会社だと報じられた。",
+    "安全面でも、2026年は基準が上がった。FIAは、横からの衝撃への保護を高めたと説明している。新しい仕様は、コクピットのまわりの保護が良くなり、燃料タンクの側面が与えていた保護の2倍を超えるという。重さは増やさずに実現するとしている。タンクを囲むゴム袋（ブラダー）は、チームが自分で設計しなければならない部品に入っている（→リステッドパーツ）。"
+   ],
+   "examples": [],
+   "see": [
+    "survival-cell",
+    "crash-test",
+    "sustainable-fuel",
+    "fuel-flow",
+    "fuel-saving",
+    "refuelling",
+    "listed-parts"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Power Unit Technical Regulations (Issue 6, 2024-03-29)",
+     "url": "https://www.fia.com/sites/default/files/fia_2026_formula_1_technical_regulations_pu_-_issue_6_-_2024-03-29.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "A New Era of Competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "RaceTeq",
+     "title": "Fast-food technology in a 3cm box: F1 2026's fuel flow meters",
+     "url": "https://www.raceteq.com/articles/2026/03/f1-2026s-fuel-flow-meters"
+    },
+    {
+     "name": "Auto123",
+     "title": "F1 technical: fuel tanks explained",
+     "url": "https://www.auto123.com/en/news/f1-technical-fuel-tanks-explained/33352"
+    },
+    {
+     "name": "Autosport",
+     "title": "Formula 1 fuel limit to rise in 2019 to promote 'full power' racing",
+     "url": "https://www.autosport.com/f1/news/135465/thisissearch"
+    },
+    {
+     "name": "Las Motorsport",
+     "title": "F1 Car Fuel Capacity: How Much Can They Carry?",
+     "url": "https://las-motorsport.com/f1/blog/f1-car-fuel-capacity-how-much-can-they-carry/17178/"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Analysis – Things teams need to manufacture on their own",
+     "url": "https://www.f1technical.net/news/24388"
+    }
+   ]
+  },
+  {
+   "id": "exhaust",
+   "term": "エキゾースト（排気管）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "排気管",
+    "排気系",
+    "エギゾースト",
+    "テールパイプ",
+    "exhaust",
+    "マフラー"
+   ],
+   "words": [
+    "排気ガス",
+    "テールパイプ",
+    "排気の出口",
+    "エキゾーストウイング",
+    "排気系の交換",
+    "排気の吹き出し"
+   ],
+   "short": "エンジンの排気ガスを車の後ろへ出す管。出口の管は車体として決まりがある。",
+   "body": [
+    "エキゾーストは、エンジンが燃やしたあとの排気ガスを、車の外へ出す管だ。排気ガスはターボのタービンを回す力にも使われ、最後は車の後ろの出口（テールパイプ）から出る。2026年はMGU-Hがなくなったので、ターボは排気の力だけで回る。",
+    "規則では、エンジンから出るところの排気系はパワーユニットの部品として、出口のテールパイプは車体（ボディワーク）として扱われる。テールパイプは、最後の370mmで、中の断面が円形で直径が90〜130mmの一定の太さと決められている。さらに、最後の150mmは、1本の管と支えでできていなければならない。排気系は、1人のドライバーが1シーズンに使える部品でもあり、上限は4つ（うち1つは2026年の特例枠）だ（→パワーユニットの使用数）。",
+    "2026年のシーズンでは、この出口のまわりが空力の話題になった。規則はテールパイプの「支え」を認めていて、フェラーリがその近くに翼のような形を付け、車の後ろのダウンフォースを増やした。中国GPでハースが続き、マイアミGPでは、マクラーレン、メルセデス、レッドブル、ウィリアムズ、アルピーヌ、キャデラックの6チームも、それぞれの形を持ち込んだと報じられた。",
+    "FIAは、2027年にこれを禁止する。テールパイプのまわりに、ほかの部品を置けない領域（管より直径が20mm大きい円筒）をつくり、支えの規定もなくした。世界モータースポーツ評議会が2026年6月に承認したと報じられている。"
+   ],
+   "rule": "テクニカルレギュレーション C3.9.2（テールパイプ）",
+   "examples": [
+    {
+     "t": "バクー予選後、フェルスタッペン車は内燃機関、ターボ、補機、排気系の4部品を交換した。",
+     "u": "/news/en-planetf1-verstappen-engine-investigation/"
+    }
+   ],
+   "see": [
+    "pu-allocation",
+    "turbo",
+    "mgu-h",
+    "beam-wing",
+    "floor-diffuser",
+    "rear-wing",
+    "ice"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Power Unit Technical Regulations (Issue 6, 2024-03-29)",
+     "url": "https://www.fia.com/sites/default/files/fia_2026_formula_1_technical_regulations_pu_-_issue_6_-_2024-03-29.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA targets F1 exhaust wing ban",
+     "url": "https://www.the-race.com/formula-1/fia-targets-f1-exhaust-wing-ban-development-war-ferrari/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 bans Ferrari-pioneered exhaust wings for 2027",
+     "url": "https://the-race.com/formula-1/f1-bans-ferrari-pioneered-exhaust-wings-for-2027/"
+    },
+    {
+     "name": "Autosport",
+     "title": "FIA bans Ferrari-style exhaust wings in F1 2027",
+     "url": "https://www.autosport.com/f1/news/fia-bans-ferrari-style-exhaust-wings-in-f1-2027/10833621/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "FIA confirm future F1 engine penalty rules after 2026 change",
+     "url": "https://racingnews365.com/fia-confirm-future-f1-engine-penalty-rules-after-2026-change"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "How many power unit components has each driver used in 2026 so far?",
+     "url": "https://www.formula1.com/en/latest/article/how-many-power-unit-components-has-each-driver-used-in-2026-so-far.6DLZYWn0uEpsB0409mFRTF"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Who will race with fresh power unit components at the British Grand Prix?",
+     "url": "https://www.f1technical.net/news/28871"
+    }
+   ]
+  },
+  {
+   "id": "standard-ecu",
+   "term": "標準ECU（共通の電子制御ユニット）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "標準ECU",
+    "SECU",
+    "FIA標準ECU",
+    "共通ECU",
+    "Standard ECU",
+    "スタンダードECU"
+   ],
+   "words": [
+    "全車共通",
+    "電子制御",
+    "車の頭脳",
+    "アクティブエアロの制御",
+    "マクラーレン・アプライド",
+    "チームが作れない"
+   ],
+   "short": "全チームが同じものを使う、FIA指定の電子制御ユニット。2026年は、アクティブエアロの制御も担う。",
+   "body": [
+    "標準ECUは、全チームが同じものを使うと決められた電子制御ユニットだ。ECUは、車の各部の電子機器をつなぎ、データを集めて動かす小さなコンピューターで、車の頭脳にあたる。2008年から全車に載っていて、導入の目的は、トラクションコントロールなどの運転支援を使えなくすることと、チームの費用を抑えることだった。",
+    "供給するのはFIAが選んだ1社だけで、マクラーレン・アプライド（現在の社名はモーション・アプライド）が2008年から続けている。2022年6月、FIAの世界モータースポーツ評議会は、2026〜2030年の5シーズンの供給もこの会社に決めた。",
+    "2026年は、アクティブエアロの動きを、この標準ECUが指令する。前翼は決まった2つの位置のどちらかに切り替わり、切り替えにかかる時間は400ミリ秒以内と決められている。後ろ翼のフラップも、標準ECUだけが動かせる（→アクティブエアロ）。",
+    "燃料でも役目がある。燃料流量計が測った重さの流れを、FIAが測った燃料のエネルギー量で換算し、エネルギーの流れにするのは標準ECUの中だ（→燃料流量の制限）。パワーユニットの部品の「CE（制御電子機器）」とは別のもので、こちらはパワーユニットのメーカーが作る（→CE）。"
+   ],
+   "rule": "テクニカルレギュレーション C3.10.10・C3.11.6（標準ECUが動かすウイング）",
+   "examples": [],
+   "see": [
+    "active-aero",
+    "straight-corner-mode",
+    "fuel-flow",
+    "control-electronics",
+    "telemetry",
+    "listed-parts"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Power Unit Technical Regulations (Issue 6, 2024-03-29)",
+     "url": "https://www.fia.com/sites/default/files/fia_2026_formula_1_technical_regulations_pu_-_issue_6_-_2024-03-29.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA announces World Motor Sport Council decisions (2022-06-29)",
+     "url": "https://api.fia.com/news/fia-announces-world-motor-sport-council-decisions-26"
+    },
+    {
+     "name": "MIA",
+     "title": "McLaren Applied extends SECU contract with FIA until 2030",
+     "url": "https://the-mia.com/news/624190/McLaren-Applied-extends-SECU-contract-with-FIA-until-2030.htm"
+    },
+    {
+     "name": "Motion Applied",
+     "title": "Formula 1 standard ECU (Motion Applied)",
+     "url": "https://mclarenapplied.com/markets/formula_1"
+    },
+    {
+     "name": "Autosport",
+     "title": "The 2008 technical review",
+     "url": "https://www.autosport.com/general/news/the-2008-technical-review-5079412/5079412/"
+    }
+   ]
+  },
+  {
+   "id": "hans",
+   "term": "HANS（頭と首を守る装置）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ハンス",
+    "HANS",
+    "Head and Neck Support",
+    "ヘッドアンドネックサポート",
+    "頭部頸部保護",
+    "FHR"
+   ],
+   "words": [
+    "首を守る",
+    "カーボンの首輪",
+    "ヘルメットとつなぐ",
+    "2003年から義務",
+    "頭が前に振られる",
+    "むち打ち"
+   ],
+   "short": "ヘルメットと肩をひもでつなぎ、衝突で頭が前に振られるのを抑える。2003年から義務。",
+   "body": [
+    "HANSは、ドライバーの頭と首を守る装置だ。肩にのせるカーボンのU字の首輪を、シートベルトの下に固定し、ヘルメットの左右と2本のひも（テザー）でつなぐ。ふだんは頭を普通に動かせるが、衝突で頭が前へ振られると、ひもが頭を引き止め、首にかかる力を抑える。ヘルメットがステアリングに当たるのも防ぐ。",
+    "アメリカのロバート・ハバード博士らが1980年代に考えた装置で、F1では、2002年6月26日にFIAの世界モータースポーツ評議会が、2003年1月1日から義務にすると決めた。すでにアメリカのCART、IRL、NASCARで使われていた。いまも全ドライバーが着けている。",
+    "FIAの規格8858-2010（前方頭部拘束装置）が、試験の方法を定めている。装置本体、ひも、ヘルメット側の金具をそれぞれ試す。ひもには7kNの力をかける試験があり、伸びは40mm以内と決められている。救助のときに、ひもを5秒以内に切れることも求められる。座席には、シートベルトとHANS用の穴があけられる（→ドライバーの座席）。"
+   ],
+   "examples": [],
+   "see": [
+    "halo",
+    "crash-test",
+    "survival-cell",
+    "driver-seat",
+    "adr"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Crash.net",
+     "title": "HANS made compulsory for 2003",
+     "url": "https://crash.net/f1/news/42631/1/hans-made-compulsory-for-2003"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "The HANS device",
+     "url": "https://f1technical.net/features/3994"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Standard 8858-2010 Frontal Head Restraint (FHR) System",
+     "url": "https://api.fia.com/sites/default/files/8858-2010_frontal_head_restraint.pdf"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What is HANS device and how does it work?",
+     "url": "https://www.gpfans.com/en/f1-news/1010847/f1-hans-device/h"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "Are you sitting comfortably? The science of F1 seat fitting",
+     "url": "https://motorsport.tech/formula-1/f1-seat-fitting"
+    }
+   ]
+  },
+  {
+   "id": "driver-seat",
+   "term": "ドライバーの座席（シート合わせ）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "シート合わせ",
+    "シートフィッティング",
+    "ドライバーズシート",
+    "カーボンシート",
+    "seat fitting",
+    "ドライバーフィット"
+   ],
+   "words": [
+    "体の型",
+    "カーボンの座席",
+    "シートベルト",
+    "救出",
+    "シートを作る",
+    "運転姿勢"
+   ],
+   "short": "ドライバーの体の形に合わせて作るカーボン製の座席。毎年シーズン前に合わせる。",
+   "body": [
+    "F1のドライバーは、ふつうの椅子ではなく、自分の体の型に合わせて作った座席に座る。膨らむ発泡材の袋に座って、体の形と車体の内側の形をとり、それを3Dのデータにして型をつくる。座席はカーボンファイバー製で、重さは約3kgと紹介されている。シートベルトとHANS用の穴もあけられる。",
+    "全員が、毎シーズンの前に座席合わせをする。体が車に合っていないと、ペダルやステアリングの操作がしにくくなるからだ。2026年の技術規則では、サバイバルセルの章に、座席の取り付けと取り外し（C12.8）と、ドライバーの体の情報（C12.9）の項がある。なお、F1のレギュラーの座を意味する「シート」は別の項目だ（→シート（F1のレギュラーの座））。",
+    "座席は、救出のときにも関わる。FIAは2022年に、単座カテゴリー向けの「座席ごと取り出せる座席」の仕様を更新した。取り付けの誤りで、規則に合っていても座席を取り出せない例があったためだ。2022年の報道では、座席に4つの持ち上げ位置があり、救助隊が座席ごと運び出す手順が紹介された。"
+   ],
+   "examples": [],
+   "see": [
+    "seat",
+    "hans",
+    "halo",
+    "survival-cell",
+    "ballast",
+    "medical-car"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Motorsport.tech",
+     "title": "Are you sitting comfortably? The science of F1 seat fitting",
+     "url": "https://motorsport.tech/formula-1/f1-seat-fitting"
+    },
+    {
+     "name": "FIA",
+     "title": "Safety Department Note FIASDH-22-007 – Extractable seat specification",
+     "url": "https://FIA.com/sites/default/files/safety_department_note_fiasdh-22-007_-_extractable_seat_specification.pdf"
+    },
+    {
+     "name": "Carscoops",
+     "title": "This is how Formula 1 drivers are extracted following an accident",
+     "url": "https://www.carscoops.com/2022/10/this-is-how-formula-1-drivers-are-extracted-following-an-accident/"
+    },
+    {
+     "name": "Motorsport UK",
+     "title": "Single-seater Driver Extrication (2026-02-25)",
+     "url": "https://www.motorsportuk.org/single-seater-driver-extrication/"
+    }
+   ]
+  },
+  {
+   "id": "ballast",
+   "term": "バラスト（重り）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "バラスト",
+    "重り",
+    "おもり",
+    "ballast",
+    "ドライバーバラスト",
+    "ウェイト調整"
+   ],
+   "words": [
+    "最低重量に足りない",
+    "重り",
+    "ドライバーの体重差",
+    "重量配分",
+    "車重",
+    "失格"
+   ],
+   "short": "最低重量に足りないぶんを足す重り。ドライバーの体重の差を補う役目もある。",
+   "body": [
+    "バラストは、車に積む重りだ。最低重量（2026年は768kg）に足りないとき、そのぶんを足す。足りないまま測られると失格になる。2024年のベルギーGPで、メルセデスのラッセルが失格になった例がある。",
+    "もう一つの役目は、ドライバーの体重の差を補うことだ。ドライバー自身にも、ヘルメット、レーシングスーツ、靴を着けた状態で80kgという最低重量があり、足りないぶんは、車に重りを積んで補う。体の大きいドライバーが、重さで不利にならないための決まりだ。",
+    "ドライバー用でない重りは、置き場所を選んで車のバランスを整えられると説明されてきた。そのため、最低重量より軽く作っておいて、重りで調整するほうが有利と言われる。ただ、2026年は最低重量が800kgから768kgに32kg下がり、軽く作るのが難しい。開幕前には、チームがFIAに最低重量を上げるよう求めたと報じられたが、FIAは応じなかった。",
+    "規則では、バラストの決まりは技術規則の第4条（質量）にまとめられている。高温警告が出たときに最低重量が増える決まりもある（→ヒートハザード）。"
+   ],
+   "rule": "テクニカルレギュレーション C4（質量：最低重量、バラスト、ドライバーの基準重量）",
+   "examples": [
+    {
+     "t": "アストンマーティンは、バクーの軽量化で最低重量に近づいたと報じられた。",
+     "u": "/news/ja-f1gate-aston-no-more-big-upgrades/"
+    },
+    {
+     "t": "ウィリアムズがバクーで投入した軽量化パッケージを、アンダーソンは約20kgの軽量化と見積もった。",
+     "u": "/news/en-therace-anderson-williams-weight-saving/"
+    }
+   ],
+   "see": [
+    "minimum-weight",
+    "heat-hazard",
+    "driver-seat",
+    "survival-cell",
+    "upgrade"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "The beginner's guide to the 2026 Formula 1 regulations",
+     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-2026-regulations.6j0tS0hrHG2T01tpmK6XYz"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 2026 regulations: car weight",
+     "url": "https://www.gpfans.com/en/f1-news/1076076/f1-2026-regulations-car-weight"
+    },
+    {
+     "name": "Autosport",
+     "title": "How much does an F1 car weigh?",
+     "url": "https://www.autosport.com/f1/news/how-much-does-an-f1-car-weigh/10246442/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "The weights of every F1 car in 2026",
+     "url": "https://racingnews365.com/the-weights-of-every-f1-car-in-2026"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 cars need \"a diet\"",
+     "url": "https://www.motorsport.com/f1/news/fia-to-resist-f1-team-demand-over-minimum-weight-cars-need-a-diet/10792053/"
+    }
+   ]
+  },
+  {
+   "id": "wheel-tether",
+   "term": "ホイールテザー",
+   "cat": "マシンと空力",
+   "aliases": [
+    "テザー",
+    "ホイールテザー",
+    "wheel tether",
+    "ホイール固定ケーブル",
+    "ホイールの安全ひも",
+    "ザイロンのひも"
+   ],
+   "words": [
+    "ホイールが外れる",
+    "飛んでいくのを防ぐ",
+    "安全ケーブル",
+    "車輪を車体につなぐ",
+    "ザイロン",
+    "1輪に3本"
+   ],
+   "short": "事故でホイールが外れても飛んでいかないよう、車体とつなぐ丈夫なひも。1輪に3本。",
+   "body": [
+    "ホイールテザーは、ホイール（車輪）と車体をつなぐ、丈夫なひも（ケーブル）だ。事故でホイールがサスペンションから外れても、車体につながっていれば、コースの外やスタンドに飛んでいかない。ひもは、強い繊維（PBO、商品名ザイロン）でできていて、一方を車体に、もう一方をホイール側につなぐ。",
+    "数は、事故のたびに増えてきた。2010年に、2011年から1輪に2本を、別々の経路でつけることが決まった。2009年にF2で、外れたタイヤに当たったヘンリー・サーティーズが亡くなった事故や、2010年にホイールが外れる事故が続いたことが背景にある。その後、2018年に3本になったと報じられ、FIAの手引きも、F1は1輪に3本のテザーを使うとしている。",
+    "それでも、完全に防げるわけではない。2020年のベルギーGPでは、ジョビナッツィの車が事故を起こし、後輪が外れてコースに跳ね返り、ラッセルの車に当たった。タイヤがバリアに埋まったまま車が回転するなど、ひもに大きな力がかかると、持ちこたえられない場合があるという。2026年の技術規則にも、安全テザーの項（C14.4）が置かれている。",
+    "ひもは消耗する部品だ。FIAの手引き（レース全般向け）は、毎レース後に点検し、メーカーが決めた走行距離で交換するよう求めている。ホイールが外れる別の原因については、ホイールナットの項を参照（→ホイールナット）。"
+   ],
+   "examples": [],
+   "see": [
+    "wheel-nut",
+    "unsafe-release",
+    "pit-stop",
+    "crash-test",
+    "halo"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Double wheel tethers for 2011",
+     "url": "https://www.f1technical.net/news/15216"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 to increase wheel tethers",
+     "url": "https://crash.net/f1/news/161996/1/f1-to-increase-wheel-tethers"
+    },
+    {
+     "name": "Jalopnik",
+     "title": "Formula One's Wheel Tethers Don't Seem To Be Working",
+     "url": "https://www.jalopnik.com/formula-ones-wheel-tethers-dont-seem-to-be-working-1844896245/"
+    },
+    {
+     "name": "GPFans",
+     "title": "FIA to investigate 'concerning' Giovinazzi loose wheel",
+     "url": "https://www.gpfans.com/en/f1-news/56217/fia-to-investigate-concerning-giovinazzi-loose-wheel/"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Standard Guidelines – Safety Restraint Cables",
+     "url": "https://api.fia.com/sites/default/files/fia_standard_guidelines_restraint_cables_web_1.pdf"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Wheel rims and tethers",
+     "url": "https://f1technical.net/articles/64"
+    }
+   ]
+  },
+  {
+   "id": "adr",
+   "term": "事故データ記録装置（ADR）と高速度カメラ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ADR",
+    "事故データレコーダー",
+    "アクシデントデータレコーダー",
+    "Accident Data Recorder",
+    "ブラックボックス",
+    "高速度カメラ"
+   ],
+   "words": [
+    "衝撃の記録",
+    "Gの記録",
+    "事故調査",
+    "毎秒400コマ",
+    "耳のセンサー",
+    "ブラックボックス"
+   ],
+   "short": "事故の衝撃を記録する車載の装置と、ドライバーを毎秒400コマで撮る安全用カメラ。",
+   "body": [
+    "ADR（事故データ記録装置）は、車に積まれた、飛行機のブラックボックスのような装置だ。衝突のとき、車が受けた力や車の動きを記録する。ドライバーの耳には、耳の形に合わせて作った加速度センサーが入っていて、頭の動きも測る。",
+    "高速度カメラは、コクピットの中でドライバーのほうを向く、安全調査のためのカメラだ。毎秒400コマで撮る。F1には2016年に入り、大きさは幅12mm、高さ25mm、長さ約80mmと紹介された。映像はADRにつながり、ほかのデータと時間をそろえて記録される。中継には使われない。",
+    "大きな事故があると、FIAの安全部門が、この記録を使って原因を調べる。2020年のバーレーンGPのグロージャンの事故では、調査に6〜8週間かかると発表された。調べる対象は、車の骨組みだけでなく、ヘルメット、HANS、ハロ、サバイバルセルなどの安全装備まで広い。結果は、規則や装備の改良に生かされる。",
+    "FIAは、2026年にGPSアンテナの位置を見直し、感度を上げて、将来の「事故を防ぐ安全技術」に備えたと説明している。ADRと高速度カメラは、全チームが同じものを使う共通部品でもある（→リステッドパーツ）。"
+   ],
+   "examples": [],
+   "see": [
+    "hans",
+    "halo",
+    "crash-test",
+    "survival-cell",
+    "telemetry",
+    "onboard-camera",
+    "listed-parts"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "A New Era of Competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
+     "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "FIA",
+     "title": "F1 – Safety measures (2016-06-06)",
+     "url": "https://fia.com/news/f1-safety-measures"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Accident Investigation Process – 2020 Bahrain Grand Prix",
+     "url": "https://api.fia.com/news/fia-accident-investigation-process-2020-bahrain-grand-prix"
+    },
+    {
+     "name": "Jalopnik",
+     "title": "Every F1 car has a high-speed camera that is never used for broadcasts",
+     "url": "https://www.jalopnik.com/1989712/never-broadcasted-camera-on-formula-one-car/"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Analysis – Things teams need to manufacture on their own",
+     "url": "https://www.f1technical.net/news/24388"
+    }
+   ]
+  },
+  {
+   "id": "onboard-camera",
+   "term": "オンボードカメラ（T字カメラなど）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "Tカメラ",
+    "T-cam",
+    "オンボード",
+    "車載カメラ",
+    "onboard camera",
+    "オンボード映像"
+   ],
+   "words": [
+    "車載映像",
+    "ヘルメットの上のカメラ",
+    "ロールフープ",
+    "テレビ中継",
+    "リアカメラ",
+    "4K"
+   ],
+   "short": "中継用に車へ付けるカメラ。ドライバーの頭の上にある「T字カメラ」が有名。",
+   "body": [
+    "オンボードカメラは、車に取り付けて、ドライバーの目線や車の後ろの景色を中継に送るカメラだ。有名なのが、ドライバーの頭の上、ロールフープ（車体上部の骨組み）に付く「T字カメラ」で、前向きと後ろ向きの2つのカメラが入っている。F1自身が、英国のビギンヒルの本部で作っている。",
+    "取り付け位置は、時代とともに変わってきた。2018年にハロが付いて映像が隠れたため、2019年に、エンジンカバーのカメラを高い位置に移し、ミラーのカメラを運転席の前に移した。2024年のスペインGPからは、後ろ向きのカメラを、空気取り入れ口の上から、リアウイングの上に移した（追い抜きの映像を見やすくするため）。",
+    "2026年も、カメラは進化している。RaceTeqは、新しいアンテナ、軽いマグネシウム製のコネクター、4K対応のカメラ（中継は1080pのまま）、リアライトの中に組み込むカメラなどが入ると伝えた。技術規則には、カメラとカメラの収納部の項（C8.16）がある。",
+    "事故の調査用の高速度カメラは別のもので、中継には使われない（→事故データ記録装置（ADR）と高速度カメラ）。"
+   ],
+   "examples": [],
+   "see": [
+    "adr",
+    "halo",
+    "rear-wing",
+    "shark-fin",
+    "telemetry"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "RaceTeq",
+     "title": "10 things you didn't know about the F1 T-Cam",
+     "url": "https://www.raceteq.com/articles/2025/10/f1-t-cam"
+    },
+    {
+     "name": "Autosport",
+     "title": "F1 onboard camera positions to change in 2019 to avoid halo",
+     "url": "https://www.autosport.com/f1/news/138395/f1-to-change-onboard-camera-positions"
+    },
+    {
+     "name": "GPBlog",
+     "title": "New onboard camera arrives in Formula 1",
+     "url": "https://www.gpblog.com/en/news/new-camera-to-be-placed-on-f1-cars-from-spain.html"
+    }
+   ]
+  },
+  {
+   "id": "listed-parts",
+   "term": "リステッドパーツ（自分で設計する部品）と共通部品・譲渡できる部品",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "リステッドパーツ",
+    "LTC",
+    "Listed Team Components",
+    "共通部品",
+    "SSC",
+    "譲渡できる部品"
+   ],
+   "words": [
+    "自分で作る部品",
+    "買える部品",
+    "ギアボックスを買う",
+    "部品の売買",
+    "共通部品",
+    "ハースとフェラーリ"
+   ],
+   "short": "F1の部品は、自分で作る部品、全車共通の部品、他チームから買える部品などに分けられる。",
+   "body": [
+    "F1の部品は、規則で区分されている。いちばん大事なのが「リステッドパーツ（LTC）」で、チームが自分で設計し、つくらなければならない部品だ。サバイバルセル、前の衝撃吸収構造、空力部品、底板（プランク）、燃料ブラダー（燃料の袋）などが入る。他チームの部品を、写真や3Dスキャンで調べてまねすること（リバースエンジニアリング）は禁止されている。",
+    "「共通部品（SSC）」は、FIAが選んだ会社が、全チームに同じものを供給する。タイヤ、ホイールのカバー、ECU、ドライバーの無線、カメラ、事故データ記録装置などで、チームは中身を変えられない。「譲渡できる部品（TRC）」は、他チームや業者から買える部品で、ギアボックス、サスペンション、油圧の部品などだ。供給する側が同じものを自分でも使っていることが条件で、買った側が改造するのは認められる。",
+    "「オープンソース部品（OSC）」は、設計をFIAのサーバーで公開し、全チームが使えるようにした部品で、ブレーキ系、燃料のシステム、ステアリングなどが入る。2022年に始まった。2026年の技術規則では、この分類の章（C17）に、LTC、SSC、TRC、OSCのほか、自由供給部品（FSC）や指定仕様部品（DSC）という区分名も並ぶ。パワーユニットの部品は、別の章（C18）で同じように分けられていて、燃料流量計は、その標準供給部品にあたる。",
+    "今季の実例では、キャデラックとハースが、フェラーリのパワーユニットとギアボックスを買っている。ハースは、フェラーリが設計したサスペンションやステアリングも使う。一方、キャデラックは、ギアボックスのキャリアと前後のサスペンションを、自分で設計している。買える部品をどこまで買うかは、チームの考え方で分かれる。"
+   ],
+   "rule": "テクニカルレギュレーション C17（部品の分類）、C18（パワーユニット部品の分類）",
+   "examples": [
+    {
+     "t": "ウィリアムズは、新しいカーボンの製法でつくったシャシーを、バクーから投入した。",
+     "u": "/news/ja-f1gate-williams-carbon-secret/"
+    }
+   ],
+   "see": [
+    "customer-team",
+    "pu-manufacturer",
+    "survival-cell",
+    "gearbox",
+    "suspension",
+    "cost-cap",
+    "standard-ecu",
+    "fuel-cell"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C (Technical) Issue 20, 2026-08-05",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 2022's new parts categories explained",
+     "url": "https://the-race.com/formula-1/f1-2022s-new-parts-categories-explained/"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Analysis – Things teams need to manufacture on their own",
+     "url": "https://www.f1technical.net/news/24388"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "B teams explained: The strict FIA regulations Red Bull must abide by with rebrand plan",
+     "url": "https://www.planetf1.com/news/fia-regulations-f1-b-teams-explained"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Why Cadillac and Haas took different paths with Ferrari",
+     "url": "https://www.motorsport.com/f1/news/why-cadillac-haas-path-ferrari/10798285/"
+    },
+    {
+     "name": "The Race",
+     "title": "Seven things Cadillac F1 leaders have revealed",
+     "url": "https://www.the-race.com/formula-1/seven-things-cadillac-f1-leaders-have-revealed.md"
+    }
+   ]
+  },
+  {
+   "id": "flow-vis",
+   "term": "フロービズ（空気の流れを見る塗料）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "フロービズ",
+    "フロービス",
+    "flow-vis",
+    "フローヴィズ",
+    "flow vis paint",
+    "蛍光塗料"
+   ],
+   "words": [
+    "蛍光の塗料",
+    "空気の流れ",
+    "塗料の筋",
+    "パラフィン",
+    "流れのはがれ",
+    "テストで使う塗料"
+   ],
+   "short": "蛍光の粉と軽い油を混ぜた塗料。走ると流れて、空気の流れの跡が車体に残る。",
+   "body": [
+    "フロービズは、車体に塗る蛍光の塗料だ。蛍光の粉を、パラフィンなどの軽い油に混ぜてつくる。車が走ると、空気の流れで塗料が動き、流れの筋が残る。ガレージに戻ってから、その模様を写真に撮り、空気がはがれて乱れている場所がないかを調べる。",
+    "塗る場所は、フロントウイングやサイドポッドなど、確かめたい部品だ。新しい部品を試すときに多く使われ、主にシーズン前テストで見られる。2021年に風洞の使用が制限されてからは、実際に走って空気の流れを見られる方法として、価値が上がったと言われる（→空力テストの制限（ATR））。",
+    "2026年は、新しい規則の最初の年で、車の形がほぼ全面的に新しい。F1公式サイトは、2月のシーズン前テストの用語として、フロービズとエアロレーキを紹介した。PlanetF1も、風洞やシミュレーションだけでは写しきれない部分があるため、走って確かめるデータが重要だと伝えた（→エアロレーキ）。"
+   ],
+   "examples": [],
+   "see": [
+    "aero-rake",
+    "wind-tunnel",
+    "cfd",
+    "atr",
+    "correlation",
+    "testing-rules"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "From aero rakes to flow-vis: 5 key terms you need to know for F1 pre-season testing",
+     "url": "https://www.formula1.com/en/latest/article/from-aero-rakes-to-flow-vis-5-key-terms-you-need-to-know-for-f1-pre-season-testing.7gcryzPYiJAm1FqJGIrC9u"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 car testing: flow-vis paint and aero rakes",
+     "url": "https://www.motorsport.com/f1/news/f1-car-testing-flow-vis-paint-aero-rakes/10574632/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "What to watch out for at F1 2026 pre-season testing in Bahrain",
+     "url": "https://www.planetf1.com/features/f1-2026-pre-season-testing-what-to-watch-bahrain"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What is flow-vis paint and why is it crucial during pre-season testing?",
+     "url": "https://www.gpfans.com/en/f1-news/1013529/flow-vis-paint-f1"
+    }
+   ]
+  },
+  {
+   "id": "aero-rake",
+   "term": "エアロレーキ（センサーの格子）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "エアロレーキ",
+    "aero rake",
+    "ピトー管",
+    "空力レーキ",
+    "圧力センサーの格子",
+    "キールプローブ"
+   ],
+   "words": [
+    "金属の格子",
+    "圧力センサー",
+    "風洞との照合",
+    "空気の流れを測る",
+    "テストで付ける",
+    "車の前や後ろの金属"
+   ],
+   "short": "空気の圧力を測る細い管を並べた金属の格子。走りながら車の周りの流れを測る。",
+   "body": [
+    "エアロレーキは、空気の圧力や速さを測る細い管（ピトー管）を、たくさん並べた金属の格子だ。金属のフェンス（柵）のような形をしている。前翼や車輪のまわりなどに付けて、そこから出る空気の流れの形を調べる。車体の前下がりを意味する「レーキ」（→レーキ）とは別の言葉だ。",
+    "目的は、風洞やCFDで予想した空気の流れが、実際に走ったときも同じかを確かめることだ（→相関（コリレーション））。データはほぼリアルタイムで返ってくるので、チームはすぐ空力の調整を考えられる。GPFansによると、シーズン前テストのほか、練習走行でも使われる。",
+    "2026年は、新しい規則の最初の年だ。2月のバーレーンのテストでは、走れる時間が限られるなか、エアロレーキのデータで工場や風洞で設計した形を確かめられると伝えられた。F1公式サイトも、フロービズとあわせて、テストの用語として紹介している（→フロービズ）。"
+   ],
+   "examples": [],
+   "see": [
+    "flow-vis",
+    "wind-tunnel",
+    "cfd",
+    "correlation",
+    "rake",
+    "atr"
+   ],
+   "checked": "2026-10-03",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "From aero rakes to flow-vis: 5 key terms you need to know for F1 pre-season testing",
+     "url": "https://www.formula1.com/en/latest/article/from-aero-rakes-to-flow-vis-5-key-terms-you-need-to-know-for-f1-pre-season-testing.7gcryzPYiJAm1FqJGIrC9u"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 car testing: flow-vis paint and aero rakes",
+     "url": "https://www.motorsport.com/f1/news/f1-car-testing-flow-vis-paint-aero-rakes/10574632/"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Testing: What are aero rakes?",
+     "url": "https://www.gpfans.com/en/f1-news/1075825/f1-2026-testing-what-are-aero-rakes/"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What are aero rakes?",
+     "url": "https://www.gpfans.com/en/f1-news/1089840/f1-explained-what-are-aero-rakes/"
+    }
+   ]
   }
  ],
  "sources": [
