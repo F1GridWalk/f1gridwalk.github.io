@@ -23,6 +23,88 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<style>
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+</style>
 <meta property="article:published_time" content="2026-09-29T17:30:00+02:00">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "ニュース一覧", "item": "https://f1gridwalk.github.io/news/"}, {"@type": "ListItem", "position": 3, "name": "フェルスタッペン、現行F1マシンは「ほとんど何にも順応できない」と皮肉交じりに酷評", "item": "https://f1gridwalk.github.io/news/it-formula1-verstappen-cars-adapt-nothing/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "フェルスタッペン、現行F1マシンは「ほとんど何にも順応できない」と皮肉交じりに酷評", "description": "フェルスタッペンはポッドキャスト番組で、来年カレンダーに復帰するポルティマンのようなサーキットに現行マシンが合うかと問われ、「今のクルマは事実上何にも適応しない」と答えた。同紙はこの発言を外交辞令抜きの率直な意見と評し、低速コーナーで技…", "datePublished": "2026-09-29T17:30:00+02:00", "dateModified": "2026-09-29T17:30:00+02:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=1"], "mainEntityOfPage": "https://f1gridwalk.github.io/news/it-formula1-verstappen-cars-adapt-nothing/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "isBasedOn": {"@type": "NewsArticle", "url": "https://www.formula1.it/news/32928/1/verstappen-ironico-e-spietato-queste-auto-non-si-adattano-a-niente", "headline": "Verstappen ironico e spietato: «Queste auto non si adattano a niente»", "publisher": {"@type": "Organization", "name": "Formula1.it"}}}</script>
@@ -239,6 +321,7 @@ footer p{margin:6px 0}
 <p class="summary">フェルスタッペンはポッドキャスト番組で、来年カレンダーに復帰するポルティマンのようなサーキットに現行マシンが合うかと問われ、「今のクルマは事実上何にも適応しない」と答えた。同紙はこの発言を外交辞令抜きの率直な意見と評し、低速コーナーで技術や勇気があまり要らないというアロンソの批判と通じるものだと位置づけた。こうした一流ドライバーの声がファンの共感を呼び、規則の見直しやV8回帰論議に影響しうると論じている。</p>
 <a class="cta" href="https://www.formula1.it/news/32928/1/verstappen-ironico-e-spietato-queste-auto-non-si-adattano-a-niente" target="_blank" rel="noopener" data-track="click/it-formula1-verstappen-cars-adapt-nothing" data-title="Formula1.it | フェルスタッペン、現行F1マシンは「ほとんど何にも順応できない」と皮肉交じりに酷評">Formula1.itで元の記事を読む ↗ <small>（イタリア語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は Formula1.it に帰属します。</p>
+<a class="dg-from" href="/deep/grid-penalty-why/" data-track="click/deep/grid-penalty-why/from"><small>DEEP GRID #02</small><b>グリッド降格はなぜ起きる？</b><span>この話を、もっと深く →</span></a>
 <div class="tags"><span>Red Bull</span><span>ドライバー</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E3%83%95%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%83%E3%83%9A%E3%83%B3%E3%80%81%E7%8F%BE%E8%A1%8CF1%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%AF%E3%80%8C%E3%81%BB%E3%81%A8%E3%82%93%E3%81%A9%E4%BD%95%E3%81%AB%E3%82%82%E9%A0%86%E5%BF%9C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%80%8D%E3%81%A8%E7%9A%AE%E8%82%89%E4%BA%A4%E3%81%98%E3%82%8A%E3%81%AB%E9%85%B7%E8%A9%95%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/it-formula1-verstappen-cars-adapt-nothing/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/it-formula1-verstappen-cars-adapt-nothing/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/it-formula1-verstappen-cars-adapt-nothing/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>
 </article>
