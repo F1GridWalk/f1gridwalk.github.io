@@ -604,8 +604,10 @@ def build_lenses(arch, flag_map):
         pub = datetime.fromisoformat(L['published'])
 
         B = []
-        B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/lens/">WORLD GRID</a> › {e(L["gpLabel"])}</nav>')
-        B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">WORLD GRID · {e(L["gpLabel"])}</div>'
+        off = L.get('series') == 'offgrid'  # OFF GRID 余談 (owner, 3 Oct 2026): same page format, own corner
+        sec_name, sec_url = ('OFF GRID 余談', '/offgrid/') if off else ('WORLD GRID', '/lens/')
+        B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="{sec_url}">{sec_name}</a> › {e(L["gpLabel"])}</nav>')
+        B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">{sec_name} · {e(L["gpLabel"])}</div>'
                  f'<h1>{L["titleHtml"]}</h1><p class="dek">{e(L["dek"])}</p><p class="date">{e(jst_text(pub))} 公開</p>'
                  '</div>')
         if L.get('type') == 'column':
@@ -648,10 +650,10 @@ def build_lenses(arch, flag_map):
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': L['title'], 'description': L['dek'],
                     'datePublished': L['published'], 'dateModified': L.get('updated') or L['published'], 'inLanguage': 'ja',
                     'image': [ogi or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
-                    'articleSection': 'WORLD GRID'})
+                    'articleSection': sec_name})
         head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
-            {'@type': 'ListItem', 'position': 2, 'name': 'WORLD GRID', 'item': SITE + '/lens/'},
+            {'@type': 'ListItem', 'position': 2, 'name': sec_name, 'item': SITE + sec_url},
             {'@type': 'ListItem', 'position': 3, 'name': L['title'], 'item': url}]})
         used = set()
         body_html = link_terms_html('\n'.join(B), used)
@@ -660,6 +662,10 @@ def build_lenses(arch, flag_map):
         lenses.append((pub, slug, L, url))
 
     lenses.sort(key=lambda x: x[0], reverse=True)
+    all_rows = lenses
+    offs = [x for x in lenses if x[2].get('series') == 'offgrid']
+    lenses = [x for x in lenses if x[2].get('series') != 'offgrid']
+    off_rows = build_offgrid(offs)
     # link the newest lens from the top page (inside <!--pre:lens--> in index.html)
     ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
     blk = ''
@@ -675,15 +681,43 @@ def build_lenses(arch, flag_map):
         old = os.path.join(ROOT, 'lens', 'index.html')
         if os.path.exists(old):
             os.remove(old)
-        return []
+        return off_rows + [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in all_rows]
     items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD GRID</nav><h1>WORLD GRID</h1>'
             '<p class="lead">毎朝7時のコラムと、レース週末の金・土・日に出すグランプリ特別号。世界の媒体の記事を読み比べて、日本語ではあまり語られない話と、見出しだけでは分からないことを届けます。</p>'
             f'<ul class="lens-list">{items}</ul>')
     write('lens/index.html', page('WORLD GRID｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1報道を読み比べるコラム。毎朝のコラムと、レース週末のグランプリ特別号。',
                                   SITE + '/lens/', body, f'<style>{LENS_CSS}</style>\n', og_type='website'))
-    return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + \
-           [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in lenses]
+    return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + off_rows + \
+           [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in all_rows]
+
+
+OFFGRID_COPY = '本筋の外の、F1こぼれ話。'
+OFFGRID_CSS = '''
+.og-k{display:inline-block;margin:6px 0 0;padding:4px 12px;border-radius:8px;background:#2F6B66;color:#FFFFFF;font:700 12px/1.4 var(--logo);letter-spacing:.24em}
+.og-copy{margin:10px 0 4px;font-size:15px;color:var(--muted);font-weight:600}
+.og-empty{margin:22px 0 0;padding:22px 18px;border:1px dashed var(--line);border-radius:16px;background:var(--surface);color:var(--ink-2);font-size:15px;line-height:1.9}
+.og-empty a{color:var(--ink);font-weight:700}
+'''
+
+
+def build_offgrid(offs):
+    """offgrid/index.html: the list of OFF GRID 余談 columns (lens JSON with "series": "offgrid").
+    The corner exists before its first column, so the page shows a short "coming soon" note when empty."""
+    if offs:
+        items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in offs)
+        lst = f'<ul class="lens-list">{items}</ul>'
+    else:
+        lst = ('<p class="og-empty">最初の余談は、まもなくここに載ります。<br>それまでは <a href="/lens/">WORLD GRID</a> と '
+               '<a href="/deep/">DEEP GRID</a> のコラムをどうぞ。</p>')
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › OFF GRID 余談</nav>'
+            '<span class="og-k">OFF GRID</span><h1>OFF GRID 余談</h1>'
+            f'<p class="og-copy">{OFFGRID_COPY}</p>'
+            '<p class="lead">ニュースの本筋からは少し外れるけれど、知るとF1がもっと面白くなる話。サーキットの小さな出来事や、記事の片すみにあった一言を拾います。</p>'
+            + lst)
+    write('offgrid/index.html', page('OFF GRID 余談｜F1 Grid Walk（F1グリッドウォーク）', 'F1ニュースの本筋の外にある、こぼれ話のコラム。',
+                                     SITE + '/offgrid/', body, f'<style>{LENS_CSS}{OFFGRID_CSS}</style>\n', og_type='website'))
+    return [(SITE + '/offgrid/', offs[0][0].isoformat(timespec='seconds') if offs else None, 'weekly', '0.7')]
 
 
 
