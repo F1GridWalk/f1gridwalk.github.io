@@ -908,7 +908,7 @@ def build_deeps(arch, flag_map):
     if DEEPS:
         D = DEEPS[0]
         # no issue number on the top page (owner's request, 3 Oct 2026)
-        blk = (f'<a class="duo-row duo-deep" href="/deep/{e(D["slug"])}/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>なぜそうなった？</strong></span>'
+        blk = (f'<a class="duo-row duo-deep" href="/deep/{e(D["slug"])}/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span>'
                f'<b>{e(D["title"])}<i aria-hidden="true">→</i></b></a>')
     out = re.sub(r'(<!--pre:deep-->).*?(<!--/pre:deep-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
