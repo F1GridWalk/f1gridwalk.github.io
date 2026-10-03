@@ -1,6 +1,8 @@
-# WORLD MEDIA LENS — how the columns are made
+# WORLD GRID — how the columns are made
 
-WORLD MEDIA LENS has two kinds of pages (owner's decision, 29 Sep 2026):
+(Renamed from WORLD MEDIA LENS on 3 Oct 2026, owner's decision. URLs stay /lens/…. Write "WORLD GRID" in new columns, special issues, note and X posts; published texts and images are not changed.)
+
+WORLD GRID has two kinds of pages (owner's decision, 29 Sep 2026):
 - **コラム** (daily column): one every day, including race weekends, published automatically at about 07:00 JST by the scheduled task. A plain read — "こういう見方がある" — with no mystery and no vote. See §0.
 - **グランプリ特別号** (race-weekend specials): three per race weekend, with "not seen in Japanese" stories, a mystery and a vote. The owner always checks them before they go out. See below and §1–5.
 
