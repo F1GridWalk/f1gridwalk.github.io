@@ -1,6 +1,80 @@
 {
- "updatedAt": "2026-10-03T18:40:00+09:00",
+ "updatedAt": "2026-10-04T00:40:00+09:00",
  "notes": [
+  {
+   "id": "blog-albonnote-sepang-fp3-quali",
+   "platform": "blog",
+   "site": "アルボンノート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "予選",
+   "author": "アルボンさん",
+   "title": "F1 2026年シーズン第16戦バーレーン（マレーシア）GP FP3・予選 フェルスタッペン漸く浮上。",
+   "summary": "フェルスタッペンがQ3でセクター1と3の自己ベストを揃えて今季初ポールを獲り、ハミルトンが2番手に続いたと記録している。アントネッリはQ2のトラックリミット違反が響いたとみる。決勝はタイヤ戦略と天候が結果を左右するという見立て。",
+   "url": "https://albonnote.com/f1-2026%e5%b9%b4%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e7%ac%ac16%e6%88%a6%e3%83%90%e3%83%bc%e3%83%ac%e3%83%bc%e3%83%b3%ef%bc%88%e3%83%9e%e3%83%ac%e3%83%bc%e3%82%b7%e3%82%a2%ef%bc%89gp-fp3%e3%83%bb/",
+   "published": "2026-10-03T21:30:00+09:00",
+   "teams": [
+    "redbull",
+    "ferrari"
+   ],
+   "circuit": "sepang"
+  },
+  {
+   "id": "note-f1report-saturday-tyre-strategy",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "戦略",
+   "author": "Yoshito",
+   "title": "【土曜】予選＆決勝タイヤ戦略を徹底分析。なぜフェルスタッペンは速く、ハミルトンはSector3で失速したのか？メルセデス苦戦の要因とは【バーレーンGP】",
+   "summary": "フェルスタッペンはセクター3でピークを合わせたのに対し、ハミルトンはセクター2で強い一方、セクター3で失速したと分析する。メルセデスは更新後のセットアップが固まり切っていない印象が強いとの見立て。決勝はコース上のゴム乗りでソフトが主流になり、ハードを避けるチームが出るとみている。",
+   "url": "https://note.com/formula1report/n/na5aacca92c8d",
+   "published": "2026-10-03T21:00:00+09:00",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "mercedes"
+   ],
+   "circuit": "sepang"
+  },
+  {
+   "id": "note-f1report-qualifying-sepang-pole",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "予選",
+   "author": "Yoshito",
+   "title": "【予選】フェルスタッペンPP獲得、レッドブルが強さを発揮した予選。アストンマーティンは今季初2台揃ってQ2進出【バーレーンGP】",
+   "summary": "フェルスタッペンはセクター3の強さを軸に全セッションで優位を保ち、ポールを獲ったと整理する。アストンマーティンは今季初めて2台がQ2に進み、ラッセルはターン11でタイムを失ったという見立て。ソフトを決勝用に温存する動きにも触れている。",
+   "url": "https://note.com/formula1report/n/n629340d592f6",
+   "published": "2026-10-03T19:00:00+09:00",
+   "teams": [
+    "redbull",
+    "astonmartin",
+    "mercedes"
+   ],
+   "circuit": "sepang"
+  },
+  {
+   "id": "substack-gpexplained-cooling-cost-cap",
+   "platform": "substack",
+   "site": "GP Explained",
+   "lang": "en",
+   "paid": false,
+   "cat": "分析",
+   "author": "GP Explained",
+   "title": "ドライバー冷却システムは本当にコストキャップに含めるべきか？",
+   "orig": "Should F1's Driver Cooling System Really Count Towards the Cost Cap?",
+   "summary": "ラッセルが冷却ベストの強化を望む一方、メルセデスは開発費をコストキャップ内で車の性能と取り合う構図になっていると指摘する。安全関連費の扱いが曖昧な現行規則は性能投資に傾く誘因を生むとして、冷却システムを上限の対象外にするか共通供給にする案を提案している。",
+   "url": "https://gpexplained.substack.com/p/should-f1s-driver-cooling-system",
+   "published": "2026-10-03T15:10:58+09:00",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "sepang"
+  },
   {
    "id": "note-f1report-fp3-sepang-antonelli",
    "platform": "note",
@@ -21,18 +95,35 @@
    "circuit": "sepang"
   },
   {
-   "id": "substack-gpexplained-cooling-cost-cap",
-   "platform": "substack",
-   "site": "GP Explained",
-   "lang": "en",
+   "id": "note-f1report-friday-bahrain-degradation",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
    "paid": false,
    "cat": "分析",
-   "author": "GP Explained",
-   "title": "ドライバー冷却システムは本当にコストキャップに含めるべきか？",
-   "orig": "Should F1's Driver Cooling System Really Count Towards the Cost Cap?",
-   "summary": "ラッセルが冷却ベストの強化を望む一方、メルセデスは開発費をコストキャップ内で車の性能と取り合う構図になっていると指摘する。安全関連費の扱いが曖昧な現行規則は性能投資に傾く誘因を生むとして、冷却システムを上限の対象外にするか共通供給にする案を提案している。",
-   "url": "https://gpexplained.substack.com/p/should-f1s-driver-cooling-system",
-   "published": "2026-10-03T15:10:58+09:00",
+   "author": "Yoshito",
+   "title": "【金曜】メルセデスが語った苦戦、決勝のカギはデグラデーションをどこまで抑えられるか。ロングラン&シングルラップを徹底分析【バーレーンGP】",
+   "summary": "メルセデスは更新の効果が狙いの水準に届いていないとされ、課題は単独走行よりロングランでの劣化だとみる。ピレリの説明などから、劣化は1周0.2〜0.3秒に達し複数回のピットが必要になると分析した。レッドブル、マクラーレン、フェラーリを含む接戦で、劣化を抑えられるかが決勝のカギという見立て。",
+   "url": "https://note.com/formula1report/n/nf79d131f349b",
+   "published": "2026-10-02T21:00:00+09:00",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "sepang"
+  },
+  {
+   "id": "substack-somersf1-mercedes-w17-malaysia-changes",
+   "platform": "substack",
+   "site": "SomersF1",
+   "lang": "en",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "Matthew Somerfield",
+   "title": "メルセデス、マレーシアでW17に大幅な変更",
+   "orig": "Mercedes make massive changes to the W17 in Malaysia",
+   "summary": "メルセデスがマレーシアに持ち込んだ大型更新を、サイドポッド、エンジンカバー、フロア、ディフューザーの変更として整理した。タイヤが巻き上げる気流の影響の管理や、各部の空気の流れの最適化が狙いだという読み解き。",
+   "url": "https://somersf1.substack.com/p/mercedes-make-massive-changes-to",
+   "published": "2026-10-02T20:19:00+09:00",
    "teams": [
     "mercedes"
    ],
@@ -92,41 +183,6 @@
    "circuit": "sepang"
   },
   {
-   "id": "substack-somersf1-mercedes-w17-malaysia-changes",
-   "platform": "substack",
-   "site": "SomersF1",
-   "lang": "en",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Matthew Somerfield",
-   "title": "メルセデス、マレーシアでW17に大幅な変更",
-   "orig": "Mercedes make massive changes to the W17 in Malaysia",
-   "summary": "メルセデスがマレーシアに持ち込んだ大型更新を、サイドポッド、エンジンカバー、フロア、ディフューザーの変更として整理した。タイヤが巻き上げる気流の影響の管理や、各部の空気の流れの最適化が狙いだという読み解き。",
-   "url": "https://somersf1.substack.com/p/mercedes-make-massive-changes-to",
-   "published": "2026-10-02T20:19:00+09:00",
-   "teams": [
-    "mercedes"
-   ],
-   "circuit": "sepang"
-  },
-  {
-   "id": "note-f1report-friday-bahrain-degradation",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【金曜】メルセデスが語った苦戦、決勝のカギはデグラデーションをどこまで抑えられるか。ロングラン&シングルラップを徹底分析【バーレーンGP】",
-   "summary": "メルセデスは更新の効果が狙いの水準に届いていないとされ、課題は単独走行よりロングランでの劣化だとみる。ピレリの説明などから、劣化は1周0.2〜0.3秒に達し複数回のピットが必要になると分析した。レッドブル、マクラーレン、フェラーリを含む接戦で、劣化を抑えられるかが決勝のカギという見立て。",
-   "url": "https://note.com/formula1report/n/nf79d131f349b",
-   "published": "2026-10-02T21:00:00+09:00",
-   "teams": [
-    "mercedes"
-   ],
-   "circuit": "sepang"
-  },
-  {
    "id": "substack-somersf1-sepang-asphalt-tyre-wear",
    "platform": "substack",
    "site": "SomersF1",
@@ -139,20 +195,6 @@
    "summary": "F1が走ったことのない2023年の再舗装区間と、古く摩耗した路面が混在する点に注目。バーレーンに近い粗い路面のため、タイヤの摩耗と熱管理が大きな課題になり、路面の骨材が剥がれる恐れもあると指摘する。写真やMotoGPのデータだけでは予測しきれず、週末は読みにくいという見立て。",
    "url": "https://somersf1.substack.com/p/how-sepangs-asphalt-may-shape-tyre",
    "published": "2026-10-01T23:00:00+09:00",
-   "circuit": "sepang"
-  },
-  {
-   "id": "note-f1report-thursday-sepang-updates",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【木曜】アロンソのPUに異常なし。ストロールはADUO2投入の効果を語る、各チームのアップデート状況を徹底分析【バーレーンGP】",
-   "summary": "セパン初日の木曜会見をまとめ、アロンソの契約延長への思いやオコンの去就への姿勢、メルセデスなど各チームの空力アップデートの狙いを整理。高温多湿とにわか雨、タイヤ劣化が週末の鍵になるという見立て。",
-   "url": "https://note.com/formula1report/n/ndde19e18ff47",
-   "published": "2026-10-01T12:00:00+09:00",
    "circuit": "sepang"
   },
   {
@@ -171,6 +213,20 @@
    "circuit": "sepang"
   },
   {
+   "id": "note-f1report-thursday-sepang-updates",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Yoshito",
+   "title": "【木曜】アロンソのPUに異常なし。ストロールはADUO2投入の効果を語る、各チームのアップデート状況を徹底分析【バーレーンGP】",
+   "summary": "セパン初日の木曜会見をまとめ、アロンソの契約延長への思いやオコンの去就への姿勢、メルセデスなど各チームの空力アップデートの狙いを整理。高温多湿とにわか雨、タイヤ劣化が週末の鍵になるという見立て。",
+   "url": "https://note.com/formula1report/n/ndde19e18ff47",
+   "published": "2026-10-01T12:00:00+09:00",
+   "circuit": "sepang"
+  },
+  {
    "id": "note-f1report-sepang-weather-heat-hazard",
    "platform": "note",
    "site": "Formula1 Report",
@@ -183,20 +239,6 @@
    "url": "https://note.com/formula1report/n/n5fcd100c4b53",
    "published": "2026-10-01T09:00:00+09:00",
    "circuit": "sepang"
-  },
-  {
-   "id": "blog-f1lap-azerbaijan-race-pace",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Takumi",
-   "title": "2026年アゼルバイジャンGP レースペース分析",
-   "summary": "燃料や渋滞、オーバーテイクモードの影響を補正したレースペースの比較。ラッセルとフェルスタッペンがほぼ同等で最速、アントネッリとハジャーが約0.4秒差で続いたと分析。ソフトはミディアムより1周約0.3秒速かったという。",
-   "url": "https://f1-lap-time.com/?page_id=17508",
-   "published": "2026-09-27T12:00:00+09:00",
-   "circuit": "baku"
   },
   {
    "id": "note-f1report-sepang-battery-delivery",
@@ -314,23 +356,21 @@
    "circuit": "baku"
   },
   {
-   "id": "substack-oliverwilber-baku-recap",
-   "platform": "substack",
-   "site": "Wilber's Weekly Wire",
-   "lang": "en",
+   "id": "note-sentaroh-russell-win-analysis",
    "paid": false,
-   "cat": "決勝",
-   "author": "Oliver Wilber",
-   "title": "ラッセルはバクーで本当に「余裕の勝利」だったのか",
-   "orig": "F1 2026 Azerbaijan GP Recap and How George Russell \"Cruised\" His Way to a Win",
-   "summary": "高校生ライターのオリバー・ウィルバーが、ラッセルの優勝要因をクリーンな走り、平均より2.3秒速い最速ラップを含む安定したペース、ポールポジションによる展開の主導権、そしてフェルスタッペンを最後まで抑え切った防御力の4点に整理して分析する。見出しの「余裕の勝利」という表現は、実際には僅差の攻防だった結末と矛盾するとも指摘し、この安定した走りがアントネッリ相手のタイトル争いに生きるとの見立てを示している。",
-   "url": "https://oliverwilber.substack.com/p/f1-2026-azerbaijan-gp-recap-and-how",
-   "published": "2026-09-27T12:00:00-07:00",
+   "cat": "分析",
+   "author": "仙太郎",
+   "title": "静寂の中の激走 ― バクーが証明した“新生ラッセル”の強さ",
+   "summary": "アゼルバイジャンGPで0.196秒差というきわどい勝利を収めたラッセルの強さを、精度の高さの証明として読み解く分析。序盤に築いた11秒差がセーフティカーで消え、ソフトタイヤに換えたフェルスタッペンが終盤に本物の脅威となる中、リスタート時のエネルギー配分やタイヤ温度、ミラー越しの駆け引きまで40周にわたる攻防を丁寧に追っている。",
+   "url": "https://note.com/sentaroh_f1/n/nab5735017229",
+   "published": "2026-09-27T17:08:00+09:00",
    "teams": [
     "mercedes",
     "redbull"
    ],
-   "circuit": "baku"
+   "circuit": "baku",
+   "platform": "note",
+   "lang": "ja"
   },
   {
    "id": "substack-somersf1-audi-baku-update",
@@ -351,23 +391,6 @@
    "circuit": "baku"
   },
   {
-   "id": "note-sentaroh-russell-win-analysis",
-   "paid": false,
-   "cat": "分析",
-   "author": "仙太郎",
-   "title": "静寂の中の激走 ― バクーが証明した“新生ラッセル”の強さ",
-   "summary": "アゼルバイジャンGPで0.196秒差というきわどい勝利を収めたラッセルの強さを、精度の高さの証明として読み解く分析。序盤に築いた11秒差がセーフティカーで消え、ソフトタイヤに換えたフェルスタッペンが終盤に本物の脅威となる中、リスタート時のエネルギー配分やタイヤ温度、ミラー越しの駆け引きまで40周にわたる攻防を丁寧に追っている。",
-   "url": "https://note.com/sentaroh_f1/n/nab5735017229",
-   "published": "2026-09-27T17:08:00+09:00",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "circuit": "baku",
-   "platform": "note",
-   "lang": "ja"
-  },
-  {
    "id": "blog-f1laptime-baku-pace",
    "platform": "blog",
    "site": "F1ラップタイム研究室",
@@ -383,6 +406,39 @@
     "mercedes",
     "redbull"
    ],
+   "circuit": "baku"
+  },
+  {
+   "id": "substack-oliverwilber-baku-recap",
+   "platform": "substack",
+   "site": "Wilber's Weekly Wire",
+   "lang": "en",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Oliver Wilber",
+   "title": "ラッセルはバクーで本当に「余裕の勝利」だったのか",
+   "orig": "F1 2026 Azerbaijan GP Recap and How George Russell \"Cruised\" His Way to a Win",
+   "summary": "高校生ライターのオリバー・ウィルバーが、ラッセルの優勝要因をクリーンな走り、平均より2.3秒速い最速ラップを含む安定したペース、ポールポジションによる展開の主導権、そしてフェルスタッペンを最後まで抑え切った防御力の4点に整理して分析する。見出しの「余裕の勝利」という表現は、実際には僅差の攻防だった結末と矛盾するとも指摘し、この安定した走りがアントネッリ相手のタイトル争いに生きるとの見立てを示している。",
+   "url": "https://oliverwilber.substack.com/p/f1-2026-azerbaijan-gp-recap-and-how",
+   "published": "2026-09-27T12:00:00-07:00",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "circuit": "baku"
+  },
+  {
+   "id": "blog-f1lap-azerbaijan-race-pace",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Takumi",
+   "title": "2026年アゼルバイジャンGP レースペース分析",
+   "summary": "燃料や渋滞、オーバーテイクモードの影響を補正したレースペースの比較。ラッセルとフェルスタッペンがほぼ同等で最速、アントネッリとハジャーが約0.4秒差で続いたと分析。ソフトはミディアムより1周約0.3秒速かったという。",
+   "url": "https://f1-lap-time.com/?page_id=17508",
+   "published": "2026-09-27T12:00:00+09:00",
    "circuit": "baku"
   },
   {
@@ -405,25 +461,6 @@
    "circuit": "baku"
   },
   {
-   "id": "substack-harrybenjamin-baku-review",
-   "platform": "substack",
-   "site": "Chequered Flag",
-   "lang": "en",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Harry Benjamin",
-   "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
-   "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
-   "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
-   "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
-   "published": "2026-09-26T19:10:00+01:00",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "circuit": "baku"
-  },
-  {
    "id": "note-f1report-baku-race-analysis",
    "paid": false,
    "cat": "分析",
@@ -439,25 +476,6 @@
    "circuit": "baku",
    "platform": "note",
    "lang": "ja"
-  },
-  {
-   "id": "substack-f1iq-russell-points-clawback",
-   "platform": "substack",
-   "site": "F1 IQ",
-   "lang": "en",
-   "paid": false,
-   "cat": "分析",
-   "author": "Flip Jacobsen",
-   "title": "ラッセルが選手権で詰め寄れたのはわずかな差、アントネッリの被害軽減が光る",
-   "orig": "Russell Claws back a few points",
-   "summary": "F1 IQの筆者フリップ・ヤコブセンが、ポールから完勝したラッセルの選手権挽回幅が限定的だった理由を分析する。16番手スタートから5位に戻したアントネッリが「必要な時にきっちり抜いた」ことで最大25点差ではなく15点差の縮小にとどまったと指摘。さらにアルピーヌのコラピントが再スタートの1コーナーでチームメイトとノリスを巻き込み自滅した一件にも触れ、この単独ミスが中団のポイント争いを大きく揺さぶったと論じている。",
-   "url": "https://f1iq.substack.com/p/russell-claws-back-a-few-points",
-   "published": "2026-09-26T12:00:00-03:00",
-   "teams": [
-    "mercedes",
-    "alpine"
-   ],
-   "circuit": "baku"
   },
   {
    "id": "note-f1report-baku-race",
@@ -493,6 +511,25 @@
     "mercedes",
     "redbull"
    ]
+  },
+  {
+   "id": "substack-harrybenjamin-baku-review",
+   "platform": "substack",
+   "site": "Chequered Flag",
+   "lang": "en",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Harry Benjamin",
+   "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
+   "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
+   "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
+   "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
+   "published": "2026-09-26T19:10:00+01:00",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "circuit": "baku"
   },
   {
    "id": "note-yukazali-baku-qualifying",
@@ -543,6 +580,25 @@
    "circuit": "baku",
    "platform": "note",
    "lang": "ja"
+  },
+  {
+   "id": "substack-f1iq-russell-points-clawback",
+   "platform": "substack",
+   "site": "F1 IQ",
+   "lang": "en",
+   "paid": false,
+   "cat": "分析",
+   "author": "Flip Jacobsen",
+   "title": "ラッセルが選手権で詰め寄れたのはわずかな差、アントネッリの被害軽減が光る",
+   "orig": "Russell Claws back a few points",
+   "summary": "F1 IQの筆者フリップ・ヤコブセンが、ポールから完勝したラッセルの選手権挽回幅が限定的だった理由を分析する。16番手スタートから5位に戻したアントネッリが「必要な時にきっちり抜いた」ことで最大25点差ではなく15点差の縮小にとどまったと指摘。さらにアルピーヌのコラピントが再スタートの1コーナーでチームメイトとノリスを巻き込み自滅した一件にも触れ、この単独ミスが中団のポイント争いを大きく揺さぶったと論じている。",
+   "url": "https://f1iq.substack.com/p/russell-claws-back-a-few-points",
+   "published": "2026-09-26T12:00:00-03:00",
+   "teams": [
+    "mercedes",
+    "alpine"
+   ],
+   "circuit": "baku"
   },
   {
    "id": "blog-albonnote-baku-quali",
@@ -631,6 +687,23 @@
    "circuit": "baku"
   },
   {
+   "id": "note-f1report-baku-upgrades",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "Formula1 Report (Yoshito)",
+   "title": "【分析】各チームがバクー向け空力を再構築。複数チームが大型アップデートを持ち込む、特にアウディは最大14項目【アゼルバイジャンGP】",
+   "summary": "バクーに持ち込まれたアップデートの一覧と狙いの整理。マクラーレンはサイドポッドからリアウイングまで8項目、アウディは車体全体で14項目。長い直線と低速コーナーの組み合わせで効率が問われると解説。",
+   "url": "https://note.com/formula1report/n/n1ef7687ac07a",
+   "published": "2026-09-24T16:21:00+09:00",
+   "teams": [
+    "mclaren",
+    "audi"
+   ],
+   "circuit": "baku",
+   "platform": "note",
+   "lang": "ja"
+  },
+  {
    "id": "substack-gpexplained-week39-baku",
    "platform": "substack",
    "site": "GP Explained",
@@ -666,23 +739,6 @@
     "mclaren"
    ],
    "circuit": "baku"
-  },
-  {
-   "id": "note-f1report-baku-upgrades",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Formula1 Report (Yoshito)",
-   "title": "【分析】各チームがバクー向け空力を再構築。複数チームが大型アップデートを持ち込む、特にアウディは最大14項目【アゼルバイジャンGP】",
-   "summary": "バクーに持ち込まれたアップデートの一覧と狙いの整理。マクラーレンはサイドポッドからリアウイングまで8項目、アウディは車体全体で14項目。長い直線と低速コーナーの組み合わせで効率が問われると解説。",
-   "url": "https://note.com/formula1report/n/n1ef7687ac07a",
-   "published": "2026-09-24T16:21:00+09:00",
-   "teams": [
-    "mclaren",
-    "audi"
-   ],
-   "circuit": "baku",
-   "platform": "note",
-   "lang": "ja"
   },
   {
    "id": "substack-somerfield-baku-tech",
