@@ -1390,7 +1390,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .hero .chips{padding-left:22px}
 #tw-facts{position:relative;padding-left:22px}
 #tw-facts::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--ink)}
-.hero-text:has(#tw-lens) #tw-facts::after{content:"";position:absolute;left:4px;top:calc(.55em + 10px);bottom:-14px;border-left:2px solid var(--clay)}
+.hero-text:has(#tw-lens) #tw-facts::after{content:"";position:absolute;left:4px;top:calc(.55em + 10px);bottom:-14px;border-left:2px solid var(--ink)}
+/* line from 今週の注目 to 総評 in ink, not clay, so it does not clash with DEEP GRID (owner, 3 Oct 2026) */
+.tw-h.tw-h-lens::before{border-left-color:var(--ink) !important}.tw-h-lens .tw-dot{background:var(--ink) !important}
 #tw-lens .tw-lead,#tw-lens .lens-verdict{margin-left:22px}
 .lens-verdict{padding:0;overflow:hidden}
 .lv-btn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:12px 12px 12px 14px;font-size:14px;font-weight:800;color:var(--ink)}
