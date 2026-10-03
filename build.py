@@ -634,8 +634,8 @@ def build_lenses(arch, flag_map):
     if lenses:
         p0, s0, L0, u0 = lenses[0]
         # top page: LENS and DEEP GRID as two equal rows in one frame (owner's choice E, 3 Oct 2026)
-        blk = (f'<a class="duo-row duo-lens" href="/lens/{e(s0)}/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>世界はどう報じた？</strong></span>'
-               f'<b>{e(L0["title"])}<i aria-hidden="true">→</i></b></a>')
+        blk = (f'<a class="duo-row duo-lens" href="/lens/{e(s0)}/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>世界の記事を、読み比べる。</strong></span>'
+               f'<b>{e(L0["title"])}&#8288;<i aria-hidden="true">→</i></b></a>')
     out = re.sub(r'(<!--pre:lens-->).*?(<!--/pre:lens-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
         open(ip, 'w', encoding='utf-8').write(out)
@@ -909,7 +909,7 @@ def build_deeps(arch, flag_map):
         D = DEEPS[0]
         # no issue number on the top page (owner's request, 3 Oct 2026)
         blk = (f'<a class="duo-row duo-deep" href="/deep/{e(D["slug"])}/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span>'
-               f'<b>{e(D["title"])}<i aria-hidden="true">→</i></b></a>')
+               f'<b>{e(D["title"])}&#8288;<i aria-hidden="true">→</i></b></a>')
     out = re.sub(r'(<!--pre:deep-->).*?(<!--/pre:deep-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
         open(ip, 'w', encoding='utf-8').write(out)
