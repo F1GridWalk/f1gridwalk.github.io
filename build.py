@@ -1255,6 +1255,16 @@ def build_rules():
 
 
 
+
+def top_rules_slot():
+    """Top page: rulebook search box between 最新の記事 and ランキング (owner's request, 3 Oct 2026). Fills <!--pre:rules--> in index.html."""
+    ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
+    blk = ('<style>' + RULES_ENTRY_CSS + '</style>' + MONO_FONT + rules_entry('top')) if RULES else ''
+    out = re.sub(r'(<!--pre:rules-->).*?(<!--/pre:rules-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
+    if out != src:
+        open(ip, 'w', encoding='utf-8').write(out)
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -1390,6 +1400,7 @@ def main():
     urls += [u for u in build_lenses(arch, flag_map) if u[1]]
     urls += [u for u in build_deeps(arch, flag_map) if u[1]]
     urls += build_rules()
+    top_rules_slot()
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lm, cf, pr in urls:
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
