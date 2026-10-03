@@ -28,7 +28,7 @@ Avoid by default (usually paywalled or metered): Autosport Plus, The Athletic, a
 
 Aim for 5–10 new articles per run (more right after a session; fewer is fine on quiet days), from several languages, outlets and countries, covering a spread of teams. Across the day try to include technical deep dives, rumour / paddock-gossip pieces from different countries, and fan-forum digests (about 1 tech, 1–2 rumour and 1 fan item per run when available). Favour substantive stories over live tickers, TV-schedule posts, galleries, videos and bare results tables. Skip URLs already in articles.json. Several outlets' articles about the same big story are GOOD (that is how the most-covered story is measured), but never two articles from the same outlet about the same story.
 
-Race weekends (qualifying day to two days after the race): the site publishes a WORLD MEDIA LENS column after each race, which needs stories that Japanese outlets did not cover. So on these runs, include at least 3 articles per run from non-English, non-Japanese outlets (Italian, German, Spanish, Dutch, Portuguese/Brazilian, French), preferring post-session analysis, driver/team quotes and paddock detail over plain results.
+Race weekends (qualifying day to two days after the race): the site publishes a WORLD GRID (formerly WORLD MEDIA LENS) column after each race, which needs stories that Japanese outlets did not cover. So on these runs, include at least 3 articles per run from non-English, non-Japanese outlets (Italian, German, Spanish, Dutch, Portuguese/Brazilian, French), preferring post-session analysis, driver/team quotes and paddock detail over plain results.
 
 ## 3. Check every candidate
 Open it with WebFetch and check (a) the complete text is visible for free and (b) what it actually says. Reject if (a) is not clearly yes, if the fetch fails, returns only a teaser, or is a live blog. Summaries only from what the article says; never invent facts, numbers or quotes; leave out details that sources disagree on.
@@ -43,7 +43,7 @@ Topics: "topic" is a short English slug for the underlying story. Articles from 
 
 New articles.json: {"updatedAt": "<now, +09:00>", "topics": {...}, "articles": [new..., existing from the last 7 days...]}, max 80, newest first, never drop the featured one (but move "featured" to a newer, more important article when one exists); remove articles that went behind a paywall.
 
-## 4b. World media lens (「世界の見方 / WORLD MEDIA LENS」)
+## 4b. World media lens (「世界の見方」; the column brand is WORLD GRID since 3 Oct 2026)
 The page's feature 「今週の注目」 is the topic covered by the most different outlets in the last 7 days (ties: newest). For THAT topic (and, if time allows, any other topic with 4+ outlets) the page compares HOW the outlets covered it. Do this every run in which that topic has new articles or no "lens" yet.
 
 a) Per-article "lens" — for every news/tech/rumor article of the topic (not "fan"), from what you actually read in the article (re-open it with WebFetch if needed):
