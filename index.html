@@ -1429,6 +1429,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 /* ニュース first, outlined pill (owner's choice D, 3 Oct 2026) */
 .jump a.jump-news{color:var(--ink);background:transparent;border:2px solid var(--ink);font-weight:800;padding:1px 9px;border-radius:999px;letter-spacing:0}
 .jump a.jump-news:hover{color:var(--ink);opacity:.8}
+.jump a.jump-feat{color:#1F2420;background:#FFE066;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:0}
+.jump a.jump-feat:hover{color:#1F2420;opacity:.9}
+#hero{scroll-margin-top:64px}
+@media (min-width:521px){.jump a.jump-feat{padding:2px 8px !important}}
 @media (min-width:521px){.jump a.jump-news{padding:0 8px !important}}
 @media (max-width:520px){.jump a.jump-news{padding:1px 8px !important}}
 /* menu: smaller text; on wider screens every item is visible (two rows if needed) (owner's request, 3 Oct 2026) */
@@ -1496,6 +1500,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </header>
 <nav class="jump" aria-label="ページ内の移動">
   <div class="wrap">
+    <a href="#hero" class="jump-feat" data-track="click/nav/feature">今週の注目</a>
     <a href="#news" class="jump-news" data-track="click/nav/news">ニュース</a>
     <a href="/lens/" class="jump-col" data-track="click/nav/lens">WORLD GRID コラム</a>
     <a href="/deep/" class="jump-deep" data-track="click/nav/deep">DEEP GRID コラム</a>
