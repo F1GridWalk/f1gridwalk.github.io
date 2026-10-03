@@ -1414,6 +1414,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .top-rules{min-width:0}
 .top-rules .rbx{max-width:100%;box-sizing:border-box}
 .top-rules .rbx form,.top-rules .rbx-in{min-width:0}
+/* 今週の注目 → 総評: no line, one phrase instead (owner's choice 形2, 3 Oct 2026) */
+.hero-text:has(#tw-lens) #tw-facts::after,#tw-facts::before,.tw-h.tw-h-lens::before,.tw-h-lens .tw-dot{display:none !important}
+#tw-facts,.hero .chips{padding-left:0 !important}
+#tw-lens .lens-verdict,.hero .lens-verdict{margin-left:0 !important}
+.tw-h.tw-h-lens{padding-top:6px !important}
+.lv-link{margin:10px 0 0;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.tw-h-lens .lv-btn{border:2px solid var(--ink) !important}
 .jump a.jump-deep{color:#FFFFFF;background:#8E2F3B;font-weight:800;padding:5px 11px;border-radius:999px;letter-spacing:0}
 .jump a.jump-col:hover{color:#1F2420;opacity:.9}.jump a.jump-deep:hover{color:#FFFFFF;opacity:.9}
 /* ニュース first, outlined pill (owner's choice D, 3 Oct 2026) */
@@ -1885,6 +1892,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       stepNo++;
       var ls = mk('section','tw-sec lens'); ls.id = 'tw-lens';
       // the line from 今週の注目 ends at the 総評 button itself (owner's decision, 3 Oct 2026)
+      ls.appendChild(mk('p','lv-link','↓ このニュースを、世界はどう伝えた？'));
       var lh = mk('h2','tw-h tw-h-lens'); lh.appendChild(mk('span','tw-dot')); ls.appendChild(lh);
       // the 4-axis table (主役・焦点・原因の説明・見出しの強調点) was removed (owner's decision, 3 Oct 2026); only the 総評 guide is shown
       // 総評：読みたいことで選ぶなら (owner's choice 案3, 3 Oct 2026). Shown even when the table is closed.
