@@ -1374,6 +1374,17 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .duo-lens .duo-q small{color:#E8946C}}
 :root[data-theme="dark"] .duo-lens .duo-q small{color:#E8946C}
 @media (max-width:600px){.duo-row{padding:14px 15px 15px 14px}.duo-q{gap:8px}.duo-q small{font-size:10px;letter-spacing:.12em}.duo-q strong{font-size:11px;letter-spacing:0}.duo-row b{font-size:16px}}
+/* 世界の見方: 総評「読みたいことで選ぶなら」 (owner's choice 案3, 3 Oct 2026) */
+.lens-verdict{margin:12px 0 2px;padding:14px 16px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.lens-verdict .lv-h{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--clay)}
+.lens-verdict .lv-h::before{content:"";width:16px;height:3px;background:var(--clay);border-radius:2px}
+.lens-verdict ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:14px;line-height:1.7}
+.lens-verdict li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:12px}
+.lens-verdict li b{color:var(--ink)}
+.lens-verdict li a{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--chip-line);text-underline-offset:3px}
+.lens-verdict li a:hover{text-decoration-color:currentColor}
+.lens-verdict li small{display:block;font-size:12.5px;color:var(--muted)}
+@media (max-width:420px){.lens-verdict li{grid-template-columns:1fr;gap:0}}
 .jump a.jump-deep{color:var(--clay);font-weight:700;letter-spacing:.06em}
 .dash-main .hero-in{grid-template-columns:1fr}
 .dash-main .hero-art{display:none}
@@ -1864,6 +1875,24 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       ax.appendChild(tb);
       ax.appendChild(mk('p','lens-note','国別の傾向は、同じ国の2媒体以上で切り口が共通するときだけまとめています。1媒体だけのときは媒体名で示しています。通信社の配信記事とF1公式の記事は比較に含めていません。好意的・否定的といった点数づけはせず、何を中心に据えたかだけを比べています。媒体名を押すと元の記事が開きます。'));
       ls.appendChild(ax);
+      // 総評：読みたいことで選ぶなら (owner's choice 案3, 3 Oct 2026). Shown even when the table is closed.
+      var GD = (lens.guide || []).filter(function(x){ return x && x.want && (x.ids || []).some(function(id){ return byId[id]; }); });
+      if (GD.length){
+        var vb = mk('div','lens-verdict'); vb.appendChild(mk('div','lv-h','総評：読みたいことで選ぶなら'));
+        var ul2 = mk('ul');
+        GD.forEach(function(x){
+          var li2 = mk('li'); li2.appendChild(mk('b', null, x.want));
+          var sp = mk('span'); var seen2 = {};
+          (x.ids || []).map(function(id){ return byId[id]; }).filter(Boolean).forEach(function(a, n){
+            if (seen2[a.source]) return; seen2[a.source] = 1;
+            if (n) sp.appendChild(document.createTextNode('・'));
+            var lk = artLink(a, a.source); lk.title = a.title; sp.appendChild(lk);
+          });
+          if (x.note) sp.appendChild(mk('small', null, x.note));
+          li2.appendChild(sp); ul2.appendChild(li2);
+        });
+        vb.appendChild(ul2); ls.appendChild(vb);
+      }
       box.appendChild(ls);
     }
 
