@@ -604,8 +604,8 @@ def build_lenses(arch, flag_map):
         pub = datetime.fromisoformat(L['published'])
 
         B = []
-        off = L.get('series') == 'offgrid'  # OFF GRID 余談 (owner, 3 Oct 2026): same page format, own corner
-        sec_name, sec_url = ('OFF GRID 余談', '/offgrid/') if off else ('WORLD GRID', '/lens/')
+        off = L.get('series') == 'offgrid'  # OFF GRID (余談 columns; owner, 3 Oct 2026): same page format, own corner
+        sec_name, sec_url = ('OFF GRID', '/offgrid/') if off else ('WORLD GRID', '/lens/')
         B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="{sec_url}">{sec_name}</a> › {e(L["gpLabel"])}</nav>')
         B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">{sec_name} · {e(L["gpLabel"])}</div>'
                  f'<h1>{L["titleHtml"]}</h1><p class="dek">{e(L["dek"])}</p><p class="date">{e(jst_text(pub))} 公開</p>'
@@ -694,7 +694,7 @@ def build_lenses(arch, flag_map):
 
 OFFGRID_COPY = '本筋の外の、F1こぼれ話。'
 OFFGRID_CSS = '''
-.og-k{display:inline-block;margin:6px 0 0;padding:4px 12px;border-radius:8px;background:#2F6B66;color:#FFFFFF;font:700 12px/1.4 var(--logo);letter-spacing:.24em}
+.og-h{display:inline-block;margin:10px 0 0;padding:6px 16px;border-radius:10px;background:#2F6B66;color:#FFFFFF;letter-spacing:.06em}
 .og-copy{margin:10px 0 4px;font-size:15px;color:var(--muted);font-weight:600}
 .og-empty{margin:22px 0 0;padding:22px 18px;border:1px dashed var(--line);border-radius:16px;background:var(--surface);color:var(--ink-2);font-size:15px;line-height:1.9}
 .og-empty a{color:var(--ink);font-weight:700}
@@ -708,14 +708,14 @@ def build_offgrid(offs):
         items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in offs)
         lst = f'<ul class="lens-list">{items}</ul>'
     else:
-        lst = ('<p class="og-empty">最初の余談は、まもなくここに載ります。<br>それまでは <a href="/lens/">WORLD GRID</a> と '
+        lst = ('<p class="og-empty">最初のコラムは、まもなくここに載ります。<br>それまでは <a href="/lens/">WORLD GRID</a> と '
                '<a href="/deep/">DEEP GRID</a> のコラムをどうぞ。</p>')
-    body = ('<nav class="crumbs"><a href="/">トップ</a> › OFF GRID 余談</nav>'
-            '<span class="og-k">OFF GRID</span><h1>OFF GRID 余談</h1>'
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › OFF GRID</nav>'
+            '<h1 class="og-h">OFF GRID</h1>'
             f'<p class="og-copy">{OFFGRID_COPY}</p>'
             '<p class="lead">ニュースの本筋からは少し外れるけれど、知るとF1がもっと面白くなる話。サーキットの小さな出来事や、記事の片すみにあった一言を拾います。</p>'
             + lst)
-    write('offgrid/index.html', page('OFF GRID 余談｜F1 Grid Walk（F1グリッドウォーク）', 'F1ニュースの本筋の外にある、こぼれ話のコラム。',
+    write('offgrid/index.html', page('OFF GRID｜F1 Grid Walk（F1グリッドウォーク）', 'F1ニュースの本筋の外にある、こぼれ話のコラム。',
                                      SITE + '/offgrid/', body, f'<style>{LENS_CSS}{OFFGRID_CSS}</style>\n', og_type='website'))
     return [(SITE + '/offgrid/', offs[0][0].isoformat(timespec='seconds') if offs else None, 'weekly', '0.7')]
 
