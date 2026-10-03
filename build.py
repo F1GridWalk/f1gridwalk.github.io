@@ -375,6 +375,17 @@ LENS_CSS = '''
 .gw-next li small{color:var(--muted);font-size:12px}
 .gw-btn{display:block;text-align:center;background:var(--ink);color:var(--on-ink);text-decoration:none;font-weight:700;font-size:16px;padding:14px 12px;border-radius:12px}
 .gw-sub{display:block;text-align:center;margin-top:10px;font-size:14px;color:var(--clay);font-weight:600}
+.more-cols{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #E8946C}
+.mc-k{margin:0;font:800 12px/1 system-ui;letter-spacing:.2em;color:#C46A3E}
+.more-cols h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-cols ul{list-style:none;margin:0 0 16px;padding:0}
+.more-cols li{border-top:1px solid var(--line)}
+.more-cols li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-cols li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-cols li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-cols li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.mc-btn{display:block;text-align:center;background:#E8946C;color:#1F2420;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.mc-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
 .lens-hero{margin:18px 0 0;background:#1F2420;color:#F3EFE6;border-radius:22px;padding:24px 20px 26px;position:relative;overflow:hidden}
 .lens-hero::after{content:attr(data-big);position:absolute;right:-10px;bottom:-34px;font-family:Georgia,serif;font-size:128px;font-weight:700;color:rgba(255,255,255,.05);letter-spacing:-4px;pointer-events:none}
 .lens-ey{font-size:11px;font-weight:800;letter-spacing:.26em;color:#E8946C}
@@ -525,6 +536,20 @@ def site_entrance(arch, slug):
             f'<a class="gw-sub" href="/lens/" data-track="click/lens/{e(slug)}/entrance-lens">ほかのコラムを読む</a></section>')
 
 
+
+def more_columns(all_lens, slug, n=5):
+    """End of a WORLD GRID page: other columns first (owner's request, 3 Oct 2026); today's news only as a small link."""
+    others = [x for x in all_lens if x[1] != slug][:n]
+    if not others:
+        return ''
+    li = ''.join(f'<li><a href="/lens/{e(s2)}/" data-track="click/lens/{e(slug)}/more/{e(s2)}"><b>{e(L2["title"])}</b>'
+                 f'<small>{e(L2.get("gpLabel", "コラム"))} · {e(jst_text(p2))}</small></a></li>' for p2, s2, L2 in others)
+    return ('<section class="more-cols"><p class="mc-k">WORLD GRID</p><h2>ほかのコラムを読む</h2>'
+            f'<ul>{li}</ul>'
+            f'<a class="mc-btn" href="/lens/" data-track="click/lens/{e(slug)}/more-all">すべてのコラムを見る →</a>'
+            f'<a class="mc-sub" href="/" data-track="click/lens/{e(slug)}/entrance-top">今日のF1ニュースを見る</a></section>')
+
+
 def build_lenses(arch, flag_map):
     """Render lens/<slug>/index.html for every lens/<slug>.json, plus lens/index.html. Returns sitemap rows."""
     d = os.path.join(ROOT, 'lens')
@@ -534,6 +559,13 @@ def build_lenses(arch, flag_map):
     for a in arch['articles'].values():
         region_of.setdefault(a['source'], a.get('region'))
     lenses = []
+    all_lens = []  # (published, slug, L) of every published issue, newest first, for the "other columns" list
+    for fn in sorted(os.listdir(d)):
+        if fn.endswith('.json'):
+            L0 = load(os.path.join('lens', fn))
+            if L0 and L0.get('slug') and ID_OK.match(L0['slug']) and not L0.get('draft') and L0.get('published'):
+                all_lens.append((datetime.fromisoformat(L0['published']), L0['slug'], L0))
+    all_lens.sort(key=lambda x: x[0], reverse=True)
     for fn in sorted(os.listdir(d)):
         if not fn.endswith('.json'):
             continue
@@ -586,12 +618,13 @@ def build_lenses(arch, flag_map):
                 elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
                 else: B.append(f'<p>{e(t)}</p>')
             B.append('</div>')
-            B.append(site_entrance(arch, slug))
+            B.append(more_columns(all_lens, slug))
             if L.get('note'):
                 B.append(f'<p class="lens-note">{e(L["note"])}</p>')
             L.setdefault('unreported', {'items': []}); L.setdefault('mystery', {'evidence': []})
         else:
             B.extend(lens_issue_blocks(L, slug, flag_map, region_of))
+            B.append(more_columns(all_lens, slug))
         for D in DEEPS:
             if slug in (D.get('lensRelated') or []):
                 B.append(deep_card(D, lead='なぜそうなった？を深く読む'))
