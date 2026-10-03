@@ -1,27 +1,11 @@
 {
- "updatedAt": "2026-10-04T00:40:00+09:00",
+ "updatedAt": "2026-10-04T06:20:00+09:00",
  "topics": {
   "horner-ferrari": {
    "title": "ホーナーのフェラーリ発言と後任探し、バスール進退うわさが交錯",
    "summary": "2025年7月にレッドブルを離れた元代表ホーナーが、フェラーリだけは出資なしでも復帰を検討する「唯一の例外」だと語ったと報じられ、後継含みの臆測が広がった。F1のドメニカリCEOは「空想的な解決策は避けるべきだ」としてバスール代表の続投を支持し、ハミルトンも「イエス」と現体制への信頼を明言。会長エルカン氏が後継候補を打診しているとの報道もある中、フェラーリはオンライン会見でバスールとチームへの信頼は「変わっていない」と改めて公式に表明し、火消しを図った。",
    "lens": {
     "groups": [
-     {
-      "scope": "outlet",
-      "region": "イタリア",
-      "label": "Formula1.it",
-      "focus": "ホーナーの売り込み方",
-      "lead": "ホーナー",
-      "cause": "公の場での自己アピール",
-      "hook": "「無能な動き」と批判",
-      "points": [
-       "R・シューマッハの発言が軸",
-       "双方に関心なら別の進め方との見立て"
-      ],
-      "ids": [
-       "it-formula1-ralf-schumacher-horner-ferrari"
-      ]
-     },
      {
       "scope": "outlet",
       "region": "英国",
@@ -71,10 +55,6 @@
    "title": "セパンでPU部品交換による降格相次ぐ、ハジャーは5番手降格・リンドブラッドは最後尾",
    "summary": "レッドブルのハジャーはPU部品の使用数超過で5グリッド降格、レーシングブルズのリンドブラッドは新品部品の投入で最後尾スタートとなる。ローソンの代役出場分も使用数に数えられた。コラピントにもバクーの接触で5グリッド降格が科されており、セパンは序盤から並びが乱れそうだ。"
   },
-  "sepang-energy-management": {
-   "title": "セパンの鍵はエネルギー配分　ホンダは路面不明で懸念、制動は最大4.7G",
-   "summary": "2本の長いストレートを持つセパンでは電力の使い方が焦点になる。ホンダは路面グリップが不明で配分を読みにくいと懸念し、FP1・FP2のデータを重視する。回生上限は予選7.5MJ、決勝8.5〜9.0MJで、バクーよりは回生機会が多いと分析されている。"
-  },
   "honda-aduo2-reveal": {
    "title": "ホンダ、2回目のADUOを既に投入　ストロール車が先、アロンソは翌戦",
    "summary": "ホンダは改良型ターボを含む2回目のADUOを、スペインGPでストロール、バクーでアロンソの順に投入していた。狙いはターボラグの低減とブーストの立ち上がり改善で、オランダの初期仕様では挙動に課題があったという。渡辺社長はPU性能をまだ使い切れていないとの認識も示した。"
@@ -120,22 +100,6 @@
      },
      {
       "scope": "outlet",
-      "region": "スペイン",
-      "label": "Motorsport.com España",
-      "focus": "実走前の期待値",
-      "lead": "アントネッリ",
-      "cause": "0.3秒向上との情報",
-      "hook": "0.3秒と聞いたと明かす",
-      "points": [
-       "実走で確かめる必要があると慎重",
-       "バクーの走りを反省し攻める姿勢に戻す"
-      ],
-      "ids": [
-       "es-motorsport-antonelli-sepang-three-tenths"
-      ]
-     },
-     {
-      "scope": "outlet",
       "region": "イタリア",
       "label": "Formula1.it",
       "focus": "7チームの更新比較",
@@ -166,13 +130,6 @@
        "nl-gpblog-russell-upgrades-surprised"
       ],
       "note": "予算上限と更新の頻度"
-     },
-     {
-      "want": "ドライバーの期待",
-      "ids": [
-       "es-motorsport-antonelli-sepang-three-tenths"
-      ],
-      "note": "アントネッリ「0.3秒と聞いた」"
      },
      {
       "want": "他チームとの比較",
@@ -270,11 +227,13 @@
       "hook": "圧倒の速さと5つの結論",
       "points": [
        "PlanetF1（イギリス）：最終セクターの0.12秒を軸に",
-       "GPblog（オランダ）：アルボンの苦境など5点を整理"
+       "GPblog（オランダ）：アルボンの苦境など5点を整理",
+       "The Race（イギリス）：勝者と敗者の一覧で整理"
       ],
       "ids": [
        "en-planetf1-sepang-qualifying-report",
-       "nl-gpblog-sepang-vijf-conclusies"
+       "nl-gpblog-sepang-vijf-conclusies",
+       "en-therace-sepang-quali-winners-losers"
       ]
      }
     ],
@@ -312,9 +271,93 @@
   "norris-sepang-straightline": {
    "title": "ノリスだけに出るストレート速度不足、マクラーレンも原因をつかめず",
    "summary": "ノリスはバクーに続きセパンでもストレートでピアストリより遅く、1周で0.1〜0.2秒を失うとステラ代表は見積もる。原因はPU設定、シャシー、空気抵抗のいずれとも特定できていない。ノリス本人は「ただ遅いだけ」と語り、日曜の巻き返しには慎重ながら前向きだ。対策はシンガポールまで間に合わない。"
+  },
+  "russell-cooling-vest": {
+   "title": "ラッセルが冷却ベストへのFIA支援を要請、フェルスタッペンは皮肉で反論",
+   "summary": "ラッセルは暑いレース向けの冷却ベストについて、メルセデスは開発の資源を割けないとしてFIAに資金か共通開発を求めた。これに対しフェルスタッペンは「サウナに連れて行こうか」と述べ、暑さは鍛えて対応できると主張した。ベストは任意で、FIAは高温への警告を出しているが義務化はしていない。"
   }
  },
  "articles": [
+  {
+   "id": "de-motorsport-total-verstappen-russell-sauna",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "russell-cooling-vest",
+   "title": "「ラッセルをサウナに連れて行こうか」フェルスタッペンが冷却ベスト論に反論",
+   "summary": "ラッセルは暑いレースでの冷却ベストについてFIAの資金支援を求めたが、フェルスタッペンは「ジョージをサウナに連れて行くべきかも」と皮肉った。暑さへの対応は鍛えられる能力だとし、2017年の前回マレーシア時より自分はずっと鍛えられていると述べた。ラッセルは2024年シンガポールで体温が42度に達したと語っていた。FIAは高温への警告を出しているが、着用の義務化はしていない。",
+   "orig": "Racing wie in der Sauna? Max Verstappen kontert George Russell",
+   "url": "https://www.motorsport-total.com/formel-1/news/racing-wie-in-der-sauna-max-verstappen-kontert-george-russell-26100318",
+   "published": "2026-10-03T17:47:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-wolff-antonelli-q2-error",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "予選",
+   "circuit": "sepang",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "mercedes-sepang-quali-letdown",
+   "title": "ウォルフ代表、アントネッリのQ2ミスは「良くなかった」",
+   "summary": "アントネッリはQ2の6コーナーでトラックリミットを超え、1分35秒075のベストタイムが取り消された。このためQ3で使えるソフトタイヤは1セットだけになり、計測ラップは1回に限られた。ウォルフ代表は「良くなかった」と述べ、僅差の予選でタイヤを1セット失う痛さを指摘した。アントネッリは4番手だったが、他車の降格で決勝は3番手から出る。",
+   "orig": "Toto Wolff: Q2-Fehler von Kimi Antonelli war \"nicht gut\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/toto-wolff-q2-fehler-von-kimi-antonelli-war-nicht-gut-26100311",
+   "published": "2026-10-03T13:23:00+02:00"
+  },
+  {
+   "id": "en-therace-sepang-quali-winners-losers",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "予選",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "mercedes",
+    "haas",
+    "audi"
+   ],
+   "topic": "sepang-qualifying-verstappen-pole",
+   "title": "セパン予選の勝者と敗者：レッドブル復活、メルセデスは今季最悪の予選",
+   "summary": "The Raceは予選の勝者にフェルスタッペン、ハミルトン、アストンマーチン、ボルトレート、ボッタスを挙げた。フェルスタッペンは約0.3秒差で今季初ポールを奪い、ハミルトンは2番手でバルセロナ以来のフロントロウとなった。一方、メルセデスは大型改良を入れながら4番手と8番手で、ハンガリー以来の厳しい予選とされる。ハースは今季最悪の結果で、ウィリアムズのアルボンとアウディのヒュルケンベルグも敗者に入った。",
+   "orig": "Winners and losers from shock Malaysia F1 qualifying",
+   "url": "https://www.the-race.com/formula-1/winners-and-losers-from-shock-malaysia-f1-qualifying/",
+   "published": "2026-10-03T12:00:00+01:00",
+   "lens": {
+    "type": "総括",
+    "lead": "各チーム",
+    "focus": "勝者と敗者",
+    "cause": "レッドブル復調とメルセデスの失速",
+    "hook": "衝撃の予選の勝敗"
+   }
+  },
+  {
+   "id": "de-motorsport-total-domenicali-finale-imola",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "カレンダー",
+   "topic": "f1-finale-qatar-abudhabi",
+   "title": "F1代表が最終2戦はカタールとアブダビと明言、イモラは代替案のまま",
+   "summary": "ドメニカリF1代表は記者団に対し「カレンダーは確定で、最後の2戦はカタールとアブダビで行う」と述べた。ただしイモラは代替案として残り、仮設スタンドの設営も進んでいると同誌は伝える。開催が中止になれば会場料などで約1億ユーロの損失になりうるという。最終判断は9月末の予定から延期が重なり、10月中旬の見通しだという。",
+   "orig": "Formel-1-Boss bestätigt: Finale soll in Abu Dhabi und Katar stattfinden, aber ...",
+   "url": "https://www.motorsport-total.com/formel-1/news/formel-1-boss-bestaetigt-finale-soll-in-abu-dhabi-und-katar-stattfinden-aber-26100304",
+   "published": "2026-10-03T09:21:00+02:00"
+  },
   {
    "id": "en-rn365-redbull-hard-tyre-allocation",
    "kind": "tech",
@@ -1732,77 +1775,6 @@
     "cause": "内部を知らない外部の憶測",
     "hook": "報道は「何も分かっていない」"
    }
-  },
-  {
-   "id": "de-motorsport-total-verstappen-gt3-portimao",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "verstappen-gt3-portimao",
-   "title": "フェルスタッペン、今年中にGT3メルセデスで再びレースへ　ポルティマオ耐久戦に参戦",
-   "summary": "フェルスタッペンが、10月16〜17日にポルトガルのポルティマオで行われるGTワールドチャレンジ・ヨーロッパ耐久カップ最終戦にメルセデスAMG GT3で出場する。自身のフェルスタッペン・レーシングから、ルーラムらとともに走る。3時間レースは土曜夕方のため、日曜に休んでF1に備えられるという。同じ大会にはバレンティーノ・ロッシもBMWで出場する。",
-   "orig": "Max Verstappen fährt wieder Rennen im GT3-Mercedes - und zwar dieses Jahr!",
-   "url": "https://www.motorsport-total.com/formel-1/news/max-verstappen-faehrt-wieder-rennen-im-gt3-mercedes-und-zwar-dieses-jahr-26100110",
-   "published": "2026-10-01T11:34:00+02:00"
-  },
-  {
-   "id": "en-rn365-hadjar-grid-penalty-sepang",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "RacingNews365",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sepang-pu-grid-penalties",
-   "title": "ハジャー、セパンで5グリッド降格　ローソン代役出場分もPU使用数に算入",
-   "summary": "レッドブルのハジャーは、パワーユニット部品の使用数が上限を超え、マレーシアで5グリッド降格を受けると明らかにした。ローソンが代役出場した分も同じ枠に数えられ、すでに最初の10グリッド降格の段階を超えているという。9年ぶりのセパンでは、優勝経験のあるフェルスタッペンの知見が利点になるとも語った。",
-   "orig": "Isack Hadjar confirms Red Bull grid penalty upon F1's Malaysia return",
-   "url": "https://racingnews365.com/isack-hadjar-confirms-red-bull-grid-penalty-upon-f1s-malaysia-return",
-   "published": "2026-10-01T10:50:00+02:00"
-  },
-  {
-   "id": "it-formula1-sepang-brakes-energy",
-   "kind": "tech",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "sepang-energy-management",
-   "title": "セパンのブレーキとエネルギー回生を数字で読む　最大制動はターン15の4.7G",
-   "summary": "セパンのブレーキ難易度は5段階で3で、1周に6カ所計13.2秒の制動があり、最も厳しいターン15では約189kgのペダル荷重と4.7Gが掛かる。回生上限は予選7.5MJ、決勝8.5〜9.0MJで、バクーより回生機会が多く、直線終盤はMGU-Kの出力が100〜300mかけて徐々に落ちる見通しという。",
-   "orig": "GP Bahrain - Freni ed energia: Sepang sfida recupero e deployment",
-   "url": "https://www.formula1.it/news/32904/1/gp-bahrain-freni-ed-energia-sepang-sfida-recupero-e-deployment",
-   "published": "2026-10-01T10:45:00+02:00"
-  },
-  {
-   "id": "es-motorsport-honda-sepang-energy-worry",
-   "kind": "tech",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "sepang-energy-management",
-   "title": "セパンはホンダにこそ難所　2本の長いストレートでのエネルギー配分が課題",
-   "summary": "アストンマーティンのクラック氏は、シミュレーションの進歩で未知のコースでも金曜の終わりには各車が良いペースを得られると見る。一方ホンダの折原氏は、路面グリップが不明なまま2本の長い直線でどれだけ電力を使えるか見極めにくいと懸念を語り、FP1とFP2の実走データを重視する構えだ。",
-   "orig": "Por qué Sepang preocupa mucho más a Honda que a Aston Martin; Alonso, clave",
-   "url": "https://es.motorsport.com/f1/news/sepang-preocupa-mas-honda-que-aston-martin/10860451/",
-   "published": "2026-10-01T10:00:00+02:00"
   },
   {
    "id": "en-rn365-hamilton-vasseur-ten-times-worse",
