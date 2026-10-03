@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-03T06:30:00+09:00",
+ "updatedAt": "2026-10-03T12:20:00+09:00",
  "topics": {
   "horner-ferrari": {
    "title": "ホーナーのフェラーリ発言と後任探し、バスール進退うわさが交錯",
@@ -223,9 +223,150 @@
   "sepang-grid-repaint": {
    "title": "セパンのグリッド、ポールの位置が逆で直前に塗り直し",
    "summary": "セパンのポールポジションは、FIAの書類の誤りで本来と逆の左側に描かれていた。水曜のコースウォークでサーキット側が気づき、木曜に最初の枠を塗りつぶして各順位の枠を繰り上げ、スタートラインも移動した。ポールは伝統どおり右側に戻り、サーキットはF1開催に向けた検査を通過した。"
+  },
+  "sepang-slower-than-simulation": {
+   "title": "セパンのラップタイム、ピレリのシミュレーションより約4.5秒遅い",
+   "summary": "9年ぶりのセパンでは路面が非常に荒れやすく、FP2後にはFIAが破片を除去する作業を行った。ピレリのベラ主任エンジニアは、ラップタイムがシミュレーションより約4.5秒遅く、路面がセッション中にも変化していると説明した。パンクなど安全上の問題はなく、課題はグリップとタイヤ摩耗の管理だという。予選で速いチームが決勝で苦戦する可能性も指摘された。"
   }
  },
  "articles": [
+  {
+   "id": "ja-f1jouhou-aston-martin-sepang-understeer",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "aston-martin-sepang-understeer",
+   "title": "アストンマーチン、セパンの高速コーナーで強いアンダーステア　映像が話題に",
+   "summary": "セパンの高速コーナーで、アストンマーチンのマシンが大きなステアリング操作をしても曲がらない様子を捉えた映像が、ファンの間で話題になっている。コメント欄では「超アンダーステア」といった声が出たほか、ホンダ製パワーユニットを皮肉る書き込みや、ドライバーの苦労を推測する声もあった。同ブログは、今季のシルバーストンでも似た場面があったことに触れている。いずれも掲示板の反応を集めたもので、車の実際の原因は確認されていない。",
+   "orig": "【悲報】アストンマーチン、セパンでドアンダー　高速コーナーであり得ないステアリング操作",
+   "url": "https://f1jouhou2.com/blog-entry-31623.html",
+   "published": "2026-10-03T09:00:00+09:00"
+  },
+  {
+   "id": "it-formula1-sepang-fp2-race-pace-analysis",
+   "kind": "tech",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "sepang-friday-longruns",
+   "title": "FP2のレースペース分析、ミディアムで走れたのはレッドブルだけ　決勝はフェルスタッペンが主役に？",
+   "summary": "タイヤはC2がハード、C3がミディアム、C4がソフトで、ミディアムはチームによって性能にばらつきがあり、競争力があったのはレッドブルだけだった。フェルスタッペンはミディアムで13周を走り、ソフトを使ったラッセルと同等のペースを示した。アントネッリとルクレールはソフトの短い走行で速かったが、ピット作業は約22.5秒と見積もられ、長い走行はミディアムとハードが中心になる見通し。記事は日曜にフェルスタッペンが主役になりうると結んでいる。",
+   "orig": "GP Bahrain - Analisi passo gara PL2: Antonelli e Leclerc contro la minaccia Verstappen",
+   "url": "https://www.formula1.it/news/32991/1/gp-bahrain-analisi-passo-gara-pl2-antonelli-e-leclerc-contro-la-minaccia-verstappen",
+   "published": "2026-10-02T19:45:00+02:00"
+  },
+  {
+   "id": "en-rn365-leclerc-sepang-degradation-peril",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "leclerc-sepang-degradation-warning",
+   "title": "ルクレール、セパンのタイヤ劣化は週末を通して大きな課題と警告",
+   "summary": "ルクレール（フェラーリ）は、金曜の走行で高温と路面の影響によりタイヤの性能低下が速かったとして、決勝でも劣化が大きな焦点になると語った。グリップが多少向上しても状況が大きく改善するとは思わないという。同選手がセパンを走るのは2017年の練習走行1回と2016年のGP3以来で、9年ぶりにコースを覚え直す必要がある。それでもタイヤをうまく扱えればフェラーリにも力があるとの自信を示した。",
+   "orig": "Charles Leclerc highlights peril awaiting F1 drivers in Sepang",
+   "url": "https://racingnews365.com/charles-leclerc-highlights-peril-awaiting-f1-drivers-in-sepang",
+   "published": "2026-10-02T18:40:00+01:00"
+  },
+  {
+   "id": "de-motorsport-total-norris-online-hate-colapinto",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "teams": [
+    "mclaren",
+    "williams"
+   ],
+   "topic": "colapinto-penalty",
+   "title": "ノリス、ネット上の中傷を嘆き、コラピントへの謝罪の理由を説明",
+   "summary": "ノリス（マクラーレン）は、バクーでの接触を巡りコラピント（ウィリアムズ）の出場停止を求めた後、ファンから激しい批判を受けたと語った。公に謝罪したが、直接和解が必要だったのはコラピント本人だけだったという。二人は私的に話し合い、コラピントは自分の責任を認め、ノリスは自らの言い方が行き過ぎだったと認めた。ノリスは殺害予告まで出る状況に触れ、SNS側の責任を求めつつ、今後も率直に意見を言うと述べた。",
+   "orig": "Lando Norris beklagt Online-Hass und erklärt die Entschuldigung bei Colapinto",
+   "url": "https://www.motorsport-total.com/formel-1/news/lando-norris-beklagt-online-hass-und-erklaert-die-entschuldigung-bei-colapinto-26100222",
+   "published": "2026-10-02T18:42:00+02:00"
+  },
+  {
+   "id": "es-motorsport-sepang-changes-the-cards",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com España",
+   "cat": "分析",
+   "circuit": "sepang",
+   "topic": "sepang-resurfacing-dust-friday",
+   "title": "セパンがF1の勢力図を揺さぶる　削った路面の粉塵と最終コーナーの傾斜",
+   "summary": "再舗装部分を削る作業で出た粉塵が路面にかなり残り、削った区間は元の舗装とグリップの出方が違ったという。2022年に改修された最終コーナーは負のバンクがあり、ブレーキングが難しいと各選手が訴えた。各チームは予選用の調整よりレースセットアップを優先し、詳細な予選準備はFP3以降に回した。最もレースペースの手応えがあったのはフェルスタッペンだが、マクラーレン、メルセデス、フェラーリも僅差で、日曜までの路面変化が鍵とされる。",
+   "orig": "Sepang cambia las cartas sobre la mesa de la F1",
+   "url": "https://es.motorsport.com/f1/news/sepang-cambia-las-cartas-sobre-la-mesa-de-la-f1/10861033/",
+   "published": "2026-10-02T17:43:00+02:00"
+  },
+  {
+   "id": "it-formula1-mekies-friday-cautious",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "sepang-mekies-cautious",
+   "title": "レッドブルのメキース代表、金曜の好調でも「本命と見るのは早い」",
+   "summary": "レッドブルのメキース代表は、金曜に好調だったチームを本命とみなすことを避け、金曜の傾向は見ないようにしていると述べた。このコースでは過去にかなり苦しんだとし、フェラーリ、マクラーレン、メルセデスも同じ位置にいると見ている。セパンでは大きな劣化が予想されるため、予選より決勝で本当のレースペースを見つけられるかが鍵になると語った。",
+   "orig": "Mekies non si sbilancia: «Ferrari, McLaren, Mercedes e Red Bull sono tutte lì»",
+   "url": "https://www.formula1.it/news/32986/1/mekies-non-si-sbilancia-ferrari-mclaren-mercedes-e-red-bull-sono-tutte-li",
+   "published": "2026-10-02T17:05:00+02:00"
+  },
+  {
+   "id": "es-motorsport-sepang-4-5-seconds-slower",
+   "kind": "tech",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com España",
+   "cat": "分析",
+   "circuit": "sepang",
+   "topic": "sepang-slower-than-simulation",
+   "title": "なぜF1はセパンで予想より4.5秒も遅かったのか　荒れた路面と清掃車",
+   "summary": "セパンの路面はピアストリが「紙やすり」と評するほど研磨性が高く、FP2後にはFIAが清掃車で破片を取り除いた。ピレリのシミュレーションと比べ、ラップタイムは4.5秒遅かったという。同社のベラ主任エンジニアは、路面が走行中にも劣化し、現状では管理しきれないと説明した。ピレリはパンクなど安全上の問題はなく、課題はグリップ管理だと強調している。",
+   "orig": "¿Por qué la F1 fue 4,5 segundos más lenta de lo esperado en Sepang?",
+   "url": "https://es.motorsport.com/f1/news/por-que-formula1-4-segundos-medio-mas-lentos-esperado-sepang/10861109/",
+   "published": "2026-10-02T16:51:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-sepang-pole-wrong-side",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "サーキット",
+   "circuit": "sepang",
+   "topic": "sepang-grid-repaint",
+   "title": "FIAが土壇場で修正、セパンのポールポジションが逆側に描かれていた",
+   "summary": "セパンのポールポジションは、FIAの書類の誤りで本来と逆の左側に描かれていたと伝えた。サーキット側が水曜のコースウォークで気づき、木曜に最初のグリッドを黒く塗りつぶして、各順位の枠を1つずつ繰り上げた。スタートラインも移し、先頭の枠との最小1メートルの間隔を保った。ポールの位置は、セパンの伝統どおり右側に戻った。",
+   "orig": "FIA grijpt last minute in: pole position Sepang stond aan verkeerde kant van de baan",
+   "url": "https://www.gpblog.com/nl/nieuws/fia-grijpt-last-minute-in-pole-position-sepang-stond-aan-verkeerde-kant-van-de-baan",
+   "published": "2026-10-02T16:16:00+02:00"
+  },
   {
    "id": "en-rn365-piastri-mclaren-turn",
    "kind": "news",
@@ -245,6 +386,40 @@
    "published": "2026-10-02T15:00:00+01:00"
   },
   {
+   "id": "it-formula1-hamilton-impeding-fia",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari",
+    "audi"
+   ],
+   "topic": "hamilton-bortoleto-impeding",
+   "title": "ハミルトンの妨害にFIAが裁定　警告のみ、フェラーリには1万ユーロの罰金",
+   "summary": "FIAはFP2でボルトレートを妨げたハミルトンに警告を出し、フェラーリには1万ユーロの罰金を科した。両者の速度差は155〜160km/hあり、ハミルトンはターン9の進入で走行ラインに入ったとされる。スチュワードは「危険な妨害」とする見方も検討したが、ボルトレートが対応できた点やプッシュラップではなかった点を考慮した。同記事は、ハミルトンの妨害は今季繰り返されていると指摘している。",
+   "orig": "Hamilton ancora nei guai per impeding: la decisione della FIA",
+   "url": "https://www.formula1.it/news/32985/1/hamilton-ancora-nei-guai-per-impeding-la-decisione-della-fia",
+   "published": "2026-10-02T15:40:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-pirelli-sepang-4-5-seconds",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "sepang",
+   "topic": "sepang-slower-than-simulation",
+   "title": "ピレリ、セパンのラップタイムがシミュレーションより4秒以上遅いと驚き",
+   "summary": "9年ぶりのセパンでは、FP2の途中から路面が荒れて小石が出たため、除去作業が必要になった。ピレリのベラ主任エンジニアは「シミュレーションより4.5秒遅かった」と語り、路面がセッション中にも変化していくと説明した。ルクレールも「非常に難しく、極めて滑りやすい」と述べた。ピレリは、予選で速いチームが摩耗の厳しい決勝で苦戦する「驚き」が起こりうるとみている。",
+   "orig": "Pirelli überrascht: Rundenzeiten über vier Sekunden langsamer als in Simulation",
+   "url": "https://www.motorsport-total.com/formel-1/news/pirelli-ueberrascht-rundenzeiten-ueber-vier-sekunden-langsamer-als-in-simulation-26100218",
+   "published": "2026-10-02T15:35:00+02:00"
+  },
+  {
    "id": "it-formula1-sainz-williams-cold-shower",
    "kind": "news",
    "lang": "it",
@@ -260,6 +435,26 @@
    "orig": "Sainz e la doccia gelata Williams: «Pensavamo di essere pronti»",
    "url": "https://www.formula1.it/news/32987/1/sainz-e-la-doccia-gelata-williams-pensavamo-di-essere-pronti",
    "published": "2026-10-02T14:00:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-sepang-longruns-verstappen",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes",
+    "mclaren"
+   ],
+   "topic": "sepang-friday-longruns",
+   "title": "セパンのロングラン分析、フェルスタッペンが最速も本命とは言い切れず",
+   "summary": "FP2のロングランではフェルスタッペンが最速で、ラッセルが0.19秒差、ルクレールが0.32秒差、ノリスが0.43秒差で続いた。ソフトもミディアムもタイヤ劣化は1周約0.3秒と大きく、2ストップ作戦が有力になりそうだと伝えた。ハードを試したチームはなく、各チームは決勝用に新品を温存している。マクラーレンは第2セクターの高速コーナーで遅れ、セットアップの妥協が原因かと見ている。",
+   "orig": "Longruns: Max Verstappen Schnellster, aber auch Favorit in Malaysia?",
+   "url": "https://www.motorsport-total.com/formel-1/news/longruns-max-verstappen-schnellster-aber-auch-favorit-in-malaysia-26100215",
+   "published": "2026-10-02T13:21:00+02:00"
   },
   {
    "id": "en-rn365-lawson-sepang-tyres",
@@ -299,26 +494,6 @@
    "published": "2026-10-02T12:00:00+01:00"
   },
   {
-   "id": "de-motorsport-total-sepang-fp2-leclerc",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sepang-fp2-leclerc",
-   "title": "セパンFP2はルクレールが最速　フェルスタッペンは乗り味に不満、メルセデスは苦戦",
-   "summary": "ルクレールが1分37秒528でFP2最速となり、ハジャーとノリスが0.1秒前後の差で続いて、フェラーリ、レッドブル、マクラーレンが拮抗した。フェルスタッペンは無線で、また乗り味が悪く、運転席での座り方まで宝くじのようだと不満を述べた。更新を入れたメルセデスはラッセルが7番手、アントネッリが8番手で、ラッセルはタイヤの過熱が原因で夜の間に調整が必要だと語った。",
-   "orig": "Freitag Sepang: Leclerc Schnellster, Verstappen \"wie in der Lotterie\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/freitag-sepang-leclerc-schnellster-verstappen-wie-in-der-lotterie-26100211",
-   "published": "2026-10-02T12:16:00+02:00"
-  },
-  {
    "id": "en-therace-sepang-confusing-friday",
    "kind": "tech",
    "lang": "en",
@@ -340,44 +515,6 @@
    "featured": true
   },
   {
-   "id": "de-motorsport-total-sepang-longruns-verstappen",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "mclaren"
-   ],
-   "topic": "sepang-friday-longruns",
-   "title": "セパンのロングラン分析、フェルスタッペンが最速も本命とは言い切れず",
-   "summary": "FP2のロングランではフェルスタッペンが最速で、ラッセルが0.19秒差、ルクレールが0.32秒差、ノリスが0.43秒差で続いた。ソフトもミディアムもタイヤ劣化は1周約0.3秒と大きく、2ストップ作戦が有力になりそうだと伝えた。ハードを試したチームはなく、各チームは決勝用に新品を温存している。マクラーレンは第2セクターの高速コーナーで遅れ、セットアップの妥協が原因かと見ている。",
-   "orig": "Longruns: Max Verstappen Schnellster, aber auch Favorit in Malaysia?",
-   "url": "https://www.motorsport-total.com/formel-1/news/longruns-max-verstappen-schnellster-aber-auch-favorit-in-malaysia-26100215",
-   "published": "2026-10-02T13:21:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-wache-verstappen-no-soft-run",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sepang-friday-longruns",
-   "title": "ワシェ技術責任者、フェルスタッペンがFP2でソフトを使わなかった理由を説明",
-   "summary": "レッドブルのワシェ技術責任者は、フェルスタッペンがFP2でソフトタイヤを履かなかったのは、まだ走っていなかったミディアムのロングランを優先したためだと説明した。降雨の可能性があり、取り損ねるリスクを避けて早めにロングランへ切り替えたという。路面温度は60℃に達し、このタイプのマシンでは経験のない条件だとも語った。ハジャーはFP1が3番手、FP2が2番手で、ブレーキの問題を決勝前に解決したい考えだ。",
-   "orig": "Waché verklaart waarom Verstappen geen run op de zachte band reed in Maleisië",
-   "url": "https://www.gpblog.com/nl/nieuws/wache-verklaart-waarom-verstappen-geen-run-op-de-zachte-band-reed-in-maleisie",
-   "published": "2026-10-02T12:43:00+02:00"
-  },
-  {
    "id": "en-rn365-hamilton-mirror-impeding",
    "kind": "news",
    "lang": "en",
@@ -395,91 +532,6 @@
    "orig": "Lewis Hamilton learns fate over faulty Ferrari mirror that angered F1 rival",
    "url": "https://racingnews365.com/lewis-hamilton-learns-fate-over-faulty-ferrari-mirror-that-angered-f1-rival",
    "published": "2026-10-02T12:00:00+01:00"
-  },
-  {
-   "id": "it-formula1-hamilton-impeding-fia",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari",
-    "audi"
-   ],
-   "topic": "hamilton-bortoleto-impeding",
-   "title": "ハミルトンの妨害にFIAが裁定　警告のみ、フェラーリには1万ユーロの罰金",
-   "summary": "FIAはFP2でボルトレートを妨げたハミルトンに警告を出し、フェラーリには1万ユーロの罰金を科した。両者の速度差は155〜160km/hあり、ハミルトンはターン9の進入で走行ラインに入ったとされる。スチュワードは「危険な妨害」とする見方も検討したが、ボルトレートが対応できた点やプッシュラップではなかった点を考慮した。同記事は、ハミルトンの妨害は今季繰り返されていると指摘している。",
-   "orig": "Hamilton ancora nei guai per impeding: la decisione della FIA",
-   "url": "https://www.formula1.it/news/32985/1/hamilton-ancora-nei-guai-per-impeding-la-decisione-della-fia",
-   "published": "2026-10-02T15:40:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-sepang-pole-wrong-side",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "サーキット",
-   "circuit": "sepang",
-   "topic": "sepang-grid-repaint",
-   "title": "FIAが土壇場で修正、セパンのポールポジションが逆側に描かれていた",
-   "summary": "セパンのポールポジションは、FIAの書類の誤りで本来と逆の左側に描かれていたと伝えた。サーキット側が水曜のコースウォークで気づき、木曜に最初のグリッドを黒く塗りつぶして、各順位の枠を1つずつ繰り上げた。スタートラインも移し、先頭の枠との最小1メートルの間隔を保った。ポールの位置は、セパンの伝統どおり右側に戻った。",
-   "orig": "FIA grijpt last minute in: pole position Sepang stond aan verkeerde kant van de baan",
-   "url": "https://www.gpblog.com/nl/nieuws/fia-grijpt-last-minute-in-pole-position-sepang-stond-aan-verkeerde-kant-van-de-baan",
-   "published": "2026-10-02T16:16:00+02:00"
-  },
-  {
-   "id": "es-motorsport-honda-sepang-friday",
-   "kind": "tech",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-sepang-friday",
-   "title": "ホンダ、セパン初日は「シミュレーターより良好」　アロンソ14・15番手",
-   "summary": "アストンマーティンはセパン初日を終え、アロンソがFP1で14番手、FP2で15番手、ストロールは両セッションとも18番手だった。ホンダのオリハラ氏（HRCトラックサイド責任者）は、エネルギー管理を両セッション中に調整し、来場前のシミュレーターより良い結果が得られたと述べた。2日間の周回数は合計95周で、高温による冷却の課題とセットアップの修正を夜通しで進める。",
-   "orig": "Honda F1 se ve mejor en Sepang de lo que decía el simulador",
-   "url": "https://es.motorsport.com/f1/news/honda-conclusiones-viernes-sepang/10861064/",
-   "published": "2026-10-02T12:04:00+02:00"
-  },
-  {
-   "id": "it-formula1-mekies-friday-cautious",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sepang-mekies-cautious",
-   "title": "レッドブルのメキース代表、金曜の好調でも「本命と見るのは早い」",
-   "summary": "レッドブルのメキース代表は、金曜に好調だったチームを本命とみなすことを避け、金曜の傾向は見ないようにしていると述べた。このコースでは過去にかなり苦しんだとし、フェラーリ、マクラーレン、メルセデスも同じ位置にいると見ている。セパンでは大きな劣化が予想されるため、予選より決勝で本当のレースペースを見つけられるかが鍵になると語った。",
-   "orig": "Mekies non si sbilancia: «Ferrari, McLaren, Mercedes e Red Bull sono tutte lì»",
-   "url": "https://www.formula1.it/news/32986/1/mekies-non-si-sbilancia-ferrari-mclaren-mercedes-e-red-bull-sono-tutte-li",
-   "published": "2026-10-02T17:05:00+02:00"
-  },
-  {
-   "id": "ja-f1jouhou-sepang-final-corner-rule",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "circuit": "sepang",
-   "topic": "sepang-final-corner-rule",
-   "title": "FIA、セパン最終コーナーでブレーキをミスしてコーン右側を通ると強制ピットか　ファンの反応",
-   "summary": "F1情報通が取り上げたのは、セパンの最終コーナーでブレーキングをミスしてコーンの右側を通った場合、強制的にピットインさせるというFIAの運用が話題になったという件。コース幅はセパンが16〜25メートルで、鈴鹿の10〜16メートルより広いとの書き込みもあった。スレッドでは、1周目に自滅のペナルティが続出しかねない罠のようなルールだと面白がる声が多く、セパンのコース設計を評価する意見も見られたという。",
-   "orig": "FIA「F1バーレーンGP＠セパン最終コーナーのブレーキミスってコーンの右側を通ったら強制ピットインな？」",
-   "url": "https://f1jouhou2.com/blog-entry-31619.html",
-   "published": "2026-10-02T12:00:00+09:00"
   },
   {
    "id": "en-therace-sepang-fp1-verstappen",
@@ -501,7 +553,25 @@
    "published": "2026-10-02T12:00:00+01:00"
   },
   {
-   "id": "de-motorsport-total-sepang-fp1-verstappen",
+   "id": "nl-gpblog-wache-verstappen-no-soft-run",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "sepang-friday-longruns",
+   "title": "ワシェ技術責任者、フェルスタッペンがFP2でソフトを使わなかった理由を説明",
+   "summary": "レッドブルのワシェ技術責任者は、フェルスタッペンがFP2でソフトタイヤを履かなかったのは、まだ走っていなかったミディアムのロングランを優先したためだと説明した。降雨の可能性があり、取り損ねるリスクを避けて早めにロングランへ切り替えたという。路面温度は60℃に達し、このタイプのマシンでは経験のない条件だとも語った。ハジャーはFP1が3番手、FP2が2番手で、ブレーキの問題を決勝前に解決したい考えだ。",
+   "orig": "Waché verklaart waarom Verstappen geen run op de zachte band reed in Maleisië",
+   "url": "https://www.gpblog.com/nl/nieuws/wache-verklaart-waarom-verstappen-geen-run-op-de-zachte-band-reed-in-maleisie",
+   "published": "2026-10-02T12:43:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-sepang-fp2-leclerc",
    "kind": "news",
    "lang": "de",
    "region": "ドイツ",
@@ -509,15 +579,34 @@
    "cat": "分析",
    "circuit": "sepang",
    "teams": [
+    "ferrari",
     "redbull",
     "mercedes"
    ],
-   "topic": "sepang-fp1-verstappen",
-   "title": "フェルスタッペンが圧倒的な最速、マレーシアでの初回走行を振り返る",
-   "summary": "セパンでのFP1はフェルスタッペンが1分37秒520で最速となり、ラッセルが0.383秒差の2番手、ハジャーが3番手だった。ポイントリーダーのアントネッリはアップデートがあっても5番手で、1秒以上遅れたことが目を引いた。チームは予選用ではなくレース想定のセットアップを優先したとされ、猛暑と高い湿度も話題になった。",
-   "orig": "Souveräne Bestzeit von Verstappen: So lief das erste Training in Malaysia",
-   "url": "https://www.motorsport-total.com/formel-1/news/souveraene-bestzeit-von-verstappen-so-lief-das-erste-training-in-malaysia-26100204",
-   "published": "2026-10-02T11:00:00+02:00"
+   "topic": "sepang-fp2-leclerc",
+   "title": "セパンFP2はルクレールが最速　フェルスタッペンは乗り味に不満、メルセデスは苦戦",
+   "summary": "ルクレールが1分37秒528でFP2最速となり、ハジャーとノリスが0.1秒前後の差で続いて、フェラーリ、レッドブル、マクラーレンが拮抗した。フェルスタッペンは無線で、また乗り味が悪く、運転席での座り方まで宝くじのようだと不満を述べた。更新を入れたメルセデスはラッセルが7番手、アントネッリが8番手で、ラッセルはタイヤの過熱が原因で夜の間に調整が必要だと語った。",
+   "orig": "Freitag Sepang: Leclerc Schnellster, Verstappen \"wie in der Lotterie\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/freitag-sepang-leclerc-schnellster-verstappen-wie-in-der-lotterie-26100211",
+   "published": "2026-10-02T12:16:00+02:00"
+  },
+  {
+   "id": "es-motorsport-honda-sepang-friday",
+   "kind": "tech",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com España",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "honda-sepang-friday",
+   "title": "ホンダ、セパン初日は「シミュレーターより良好」　アロンソ14・15番手",
+   "summary": "アストンマーティンはセパン初日を終え、アロンソがFP1で14番手、FP2で15番手、ストロールは両セッションとも18番手だった。ホンダのオリハラ氏（HRCトラックサイド責任者）は、エネルギー管理を両セッション中に調整し、来場前のシミュレーターより良い結果が得られたと述べた。2日間の周回数は合計95周で、高温による冷却の課題とセットアップの修正を夜通しで進める。",
+   "orig": "Honda F1 se ve mejor en Sepang de lo que decía el simulador",
+   "url": "https://es.motorsport.com/f1/news/honda-conclusiones-viernes-sepang/10861064/",
+   "published": "2026-10-02T12:04:00+02:00"
   },
   {
    "id": "it-formula1-sepang-seven-teams-updates",
@@ -564,6 +653,59 @@
    "published": "2026-10-02T11:00:00+01:00"
   },
   {
+   "id": "de-motorsport-total-sepang-fp1-verstappen",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "sepang-fp1-verstappen",
+   "title": "フェルスタッペンが圧倒的な最速、マレーシアでの初回走行を振り返る",
+   "summary": "セパンでのFP1はフェルスタッペンが1分37秒520で最速となり、ラッセルが0.383秒差の2番手、ハジャーが3番手だった。ポイントリーダーのアントネッリはアップデートがあっても5番手で、1秒以上遅れたことが目を引いた。チームは予選用ではなくレース想定のセットアップを優先したとされ、猛暑と高い湿度も話題になった。",
+   "orig": "Souveräne Bestzeit von Verstappen: So lief das erste Training in Malaysia",
+   "url": "https://www.motorsport-total.com/formel-1/news/souveraene-bestzeit-von-verstappen-so-lief-das-erste-training-in-malaysia-26100204",
+   "published": "2026-10-02T11:00:00+02:00"
+  },
+  {
+   "id": "it-formula1-2027-macarena-wings-transition-time",
+   "kind": "tech",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "テクニカル",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "2027-active-wing-transition-time",
+   "title": "2027年規則の改訂案、可動ウイングの切り替え時間短縮で「マカレナ型」が不利に？",
+   "summary": "FIAは2027年技術規則の改訂案で、可動ウイングが故障した場合にコーナーモードへ戻る仕組みを必須とした。背景にはフェルスタッペンが経験したレッドブルの可動ウイングのトラブルがあるという。モード切り替えの所要時間は400ミリ秒から300ミリ秒に短縮される。回転式のウイングを使うフェラーリ、レッドブル、マクラーレンは、メルセデス型の方式より大きな動きが必要になり、設計の見直しを迫られる可能性があると記事は指摘する。",
+   "orig": "Regolamento 2027: le ali tipo «macarena» saranno penalizzate?",
+   "url": "https://www.formula1.it/news/32975/1/regolamento-2027-le-ali-tipo-macarena-saranno-penalizzate",
+   "published": "2026-10-02T08:15:00+02:00"
+  },
+  {
+   "id": "ja-f1jouhou-sepang-final-corner-rule",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "topic": "sepang-final-corner-rule",
+   "title": "FIA、セパン最終コーナーでブレーキをミスしてコーン右側を通ると強制ピットか　ファンの反応",
+   "summary": "F1情報通が取り上げたのは、セパンの最終コーナーでブレーキングをミスしてコーンの右側を通った場合、強制的にピットインさせるというFIAの運用が話題になったという件。コース幅はセパンが16〜25メートルで、鈴鹿の10〜16メートルより広いとの書き込みもあった。スレッドでは、1周目に自滅のペナルティが続出しかねない罠のようなルールだと面白がる声が多く、セパンのコース設計を評価する意見も見られたという。",
+   "orig": "FIA「F1バーレーンGP＠セパン最終コーナーのブレーキミスってコーンの右側を通ったら強制ピットインな？」",
+   "url": "https://f1jouhou2.com/blog-entry-31619.html",
+   "published": "2026-10-02T12:00:00+09:00"
+  },
+  {
    "id": "ja-f1are-sepang-reputation",
    "kind": "fan",
    "lang": "ja",
@@ -577,82 +719,6 @@
    "orig": "F1バーレーンGP＠マレーシアの舞台「セパン・サーキット」は評判いいよな",
    "url": "https://f1are.com/blog-entry-3947.html",
    "published": "2026-10-02T12:00:00+09:00"
-  },
-  {
-   "id": "de-motorsport-total-hamilton-ferrari-media",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "horner-ferrari",
-   "title": "ハミルトンとルクレール、バスール代表を擁護　フェラーリ批判の報道に反論",
-   "summary": "ハミルトンは、チーム内部を知らない者がフェラーリ批判を書いているとして「記事を書く人は何も分かっていない」と述べた。ルクレールもバスール代表の手腕と人心掌握を評価し、根拠のないうわさが減ればと語った。ハミルトンは同じミスでもフェラーリだと10倍悪く見られるとし、PUの直線速度は毎戦0.4〜0.6秒ほど不利だと話した。",
-   "orig": "Lewis Hamilton: Medien, die Ferrari kritisieren, haben 'keine Ahnung'",
-   "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-medien-die-ferrari-kritisieren-haben-keine-ahnung-26100111",
-   "published": "2026-10-01T11:42:00+02:00",
-   "lens": {
-    "type": "談話",
-    "lead": "ハミルトン",
-    "focus": "批判報道への反論",
-    "cause": "内部を知らない外部の憶測",
-    "hook": "報道は「何も分かっていない」"
-   }
-  },
-  {
-   "id": "de-motorsport-total-verstappen-gt3-portimao",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "verstappen-gt3-portimao",
-   "title": "フェルスタッペン、今年中にGT3メルセデスで再びレースへ　ポルティマオ耐久戦に参戦",
-   "summary": "フェルスタッペンが、10月16〜17日にポルトガルのポルティマオで行われるGTワールドチャレンジ・ヨーロッパ耐久カップ最終戦にメルセデスAMG GT3で出場する。自身のフェルスタッペン・レーシングから、ルーラムらとともに走る。3時間レースは土曜夕方のため、日曜に休んでF1に備えられるという。同じ大会にはバレンティーノ・ロッシもBMWで出場する。",
-   "orig": "Max Verstappen fährt wieder Rennen im GT3-Mercedes - und zwar dieses Jahr!",
-   "url": "https://www.motorsport-total.com/formel-1/news/max-verstappen-faehrt-wieder-rennen-im-gt3-mercedes-und-zwar-dieses-jahr-26100110",
-   "published": "2026-10-01T11:34:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-antonelli-below-limit",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "russell-baku-season-reflection",
-   "circuit": "baku",
-   "title": "アントネッリ、バクーでの5位を回顧「限界以下で走るのは好きではない」",
-   "summary": "アントネッリはバクーで予選Q1のクラッシュにより16番手から出発し、5位でフィニッシュした。決勝ではミスを避けるため意識的に攻め方を抑えたと明かし、「限界以下で走るのは好きではない」と話した。ただ、技術的なトラブルも重なった週末で、この経験は学びが多く、必要な場面でリスクを管理する走り方を理解できたと前向きに振り返っている。",
-   "orig": "Kimi Antonelli über Baku-Erfahrung: 'Ich mag es nicht, unter dem Limit zu fahren'",
-   "url": "https://www.motorsport-total.com/formel-1/news/kimi-antonelli-ueber-baku-erfahrung-ich-mag-es-nicht-unter-dem-limit-zu-fahren-26100113",
-   "published": "2026-10-01T12:47:00+02:00"
-  },
-  {
-   "id": "en-gpblog-verstappen-boycott-middle-east",
-   "kind": "news",
-   "lang": "en",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "middle-east-races-doubt",
-   "title": "フェルスタッペン、終盤の中東2戦欠場の可能性を否定せず　F1に難題",
-   "summary": "GPblogは、フェルスタッペンがカタールとアブダビの最終2戦への出場を確約していないと伝えた。地域情勢が続くなら他の場所で走るほうがよいとの考えを以前示しており、ドメニカリCEOにも懸念を伝えているという。両戦は数千万ドル規模の収入に関わるため、欠場すればF1にとって評判上も大きな打撃になると論じている。",
-   "orig": "Verstappen threatens F1 with a nightmare by not ruling out a boycott",
-   "url": "https://www.gpblog.com/en/analysis/verstappen-threatens-f1-with-a-nightmare-by-not-ruling-out-a-boycott",
-   "published": "2026-10-01T15:15:00+02:00"
   },
   {
    "id": "ja-f1jouhou-colapinto-norris-comment",
@@ -672,6 +738,42 @@
    "published": "2026-10-02T09:00:00+09:00"
   },
   {
+   "id": "nl-gpblog-hamilton-middle-east-races",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "カレンダー",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "middle-east-races-doubt",
+   "title": "ハミルトン「中東の議論だけなぜ？」　アゼルバイジャンも状況は同じと指摘",
+   "summary": "ハミルトンはカタールとアブダビの最終2戦が予定通り行われることを望み、イランと国境を接するアゼルバイジャンでは同様の議論が出ない点に疑問を呈した。フェルスタッペンは「適切な条件なら」出場するとし、ボイコットには踏み込まず、F1とFIAの判断を信頼すると述べた。",
+   "orig": "Hamilton verbaast zich over discussie Midden-Oosten: 'Ook in Azerbeidzjan'",
+   "url": "https://www.gpblog.com/nl/nieuws/hamilton-verbaast-zich-over-discussie-midden-oosten-ook-in-azerbeidzjan",
+   "published": "2026-10-01T22:05:00+02:00"
+  },
+  {
+   "id": "it-formula1-haas-camara-fornaroli",
+   "kind": "rumor",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "うわさ",
+   "teams": [
+    "haas",
+    "ferrari"
+   ],
+   "topic": "ocon-haas-exit-official",
+   "title": "ハース、オコン後任にカマラを望むと伊メディア　フォルナローリは見送りか",
+   "summary": "formula1.itは、ハースが来季のドライバーとしてフェラーリ育成のラファエル・カマラを望んでいると報じた。ポルティマオのテストで予選・決勝ペースとも最速だったという。マクラーレン支援のフォルナローリはウェットの条件で印象を残せず、候補から外れたと伝えている。いずれも未確認の報道である。",
+   "orig": "La Haas vuole Camara: perchè Fornaroli è stato scartato",
+   "url": "https://www.formula1.it/news/32967/1/la-haas-vuole-camara-perche-fornaroli-e-stato-scartato",
+   "published": "2026-10-01T20:45:00+02:00"
+  },
+  {
    "id": "de-motorsport-total-ocon-not-giving-up",
    "kind": "news",
    "lang": "de",
@@ -687,25 +789,6 @@
    "orig": "Ocon gibt nicht auf: 'Möchte nächstes Jahr in der Startaufstellung stehen'",
    "url": "https://www.motorsport-total.com/formel-1/news/ocon-gibt-nicht-auf-moechte-naechstes-jahr-in-der-startaufstellung-stehen-26100122",
    "published": "2026-10-01T19:22:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-malaysia-nine-years-later",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "カルチャー",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sepang-nine-years-later",
-   "title": "9年ぶりのマレーシアGP　2017年からF1はこう変わった",
-   "summary": "前回の2017年大会ではフェルスタッペンが20歳の誕生日を迎えて2勝目を挙げたが、今では4度の王者になっている。当時11歳でカートに乗っていたアントネッリは、現在選手権首位だ。ホイールが13インチから変わり、ヘイローも2018年に義務化されるなど、マシンも様変わりしたと振り返る。",
-   "orig": "Neun Jahre später: So anders war die Formel 1 beim letzten Malaysia-GP",
-   "url": "https://www.motorsport-total.com/formel-1/news/neun-jahre-spaeter-so-anders-war-die-formel-1-beim-letzten-malaysia-gp-26100121",
-   "published": "2026-10-01T17:24:00+02:00"
   },
   {
    "id": "nl-gpblog-russell-upgrades-surprised",
@@ -735,127 +818,6 @@
    }
   },
   {
-   "id": "nl-gpblog-hamilton-middle-east-races",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "カレンダー",
-   "teams": [
-    "ferrari",
-    "redbull"
-   ],
-   "topic": "middle-east-races-doubt",
-   "title": "ハミルトン「中東の議論だけなぜ？」　アゼルバイジャンも状況は同じと指摘",
-   "summary": "ハミルトンはカタールとアブダビの最終2戦が予定通り行われることを望み、イランと国境を接するアゼルバイジャンでは同様の議論が出ない点に疑問を呈した。フェルスタッペンは「適切な条件なら」出場するとし、ボイコットには踏み込まず、F1とFIAの判断を信頼すると述べた。",
-   "orig": "Hamilton verbaast zich over discussie Midden-Oosten: 'Ook in Azerbeidzjan'",
-   "url": "https://www.gpblog.com/nl/nieuws/hamilton-verbaast-zich-over-discussie-midden-oosten-ook-in-azerbeidzjan",
-   "published": "2026-10-01T22:05:00+02:00"
-  },
-  {
-   "id": "es-motorsport-stroll-honda-two-seconds",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com（スペイン）",
-   "cat": "チーム",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-aduo2-reveal",
-   "title": "ストロール「パワーユニットで2秒失っている」　アストンマーティンのホンダ苦戦を数値化",
-   "summary": "ストロールは、ホンダ製パワーユニットのせいでサーキットにより約2秒を失っていると初めて具体的に語った。バクーやモンツァのような高速コースでは打つ手が少なく、ブダペストが最も良いレースだったと振り返った。ホンダは2回目のADUOを使い、改良ターボを投入したと伝えられている。",
-   "orig": "Stroll afirma que el motor Honda hace al Aston Martin dos segundos más lento",
-   "url": "https://es.motorsport.com/f1/news/stroll-motor-honda-aston-martin-dos-segundos-mas-lento/10860692/",
-   "published": "2026-10-01T16:44:00+02:00"
-  },
-  {
-   "id": "es-motorsport-sepang-driver-expectations",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com（スペイン）",
-   "cat": "サーキット",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes",
-    "astonmartin"
-   ],
-   "topic": "sepang-setup-unknowns",
-   "title": "セパン復帰、ドライバーの期待と不安　路面の摩耗とバッテリー、午後のスコール",
-   "summary": "路面の摩耗が激しく、ラッセルはタイヤの過熱が重要な要素になり前走車に近づきにくくなると語った。アロンソは中間セクターでバッテリーを使うと、3本続く直線で充電が足りなくなると説明した。午後4時ごろのスコールが予想され、ピレリはC2〜C4を選んでいる。",
-   "orig": "Triste o sensacional: qué esperan los pilotos de F1 del regreso a Sepang",
-   "url": "https://es.motorsport.com/f1/news/triste-sensacional-que-esperan-pilotos-formula1-regreso-sepang/10860675/",
-   "published": "2026-10-01T17:04:00+02:00"
-  },
-  {
-   "id": "es-motorsport-alonso-surprises",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com（スペイン）",
-   "cat": "ドライバー",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-surprise-hint",
-   "title": "アロンソ「今後数週間でサプライズがある」　不可能と言われることに挑戦",
-   "summary": "アロンソは今後数週間のうちにサプライズがあると語り、不可能と言われることでも限界を探りたいと述べた。WECやル・マン、インディ500、ダカールに挑んできた経歴に触れ、F1以外でも走る意欲のある現役はフェルスタッペンくらいだとの見方を示した。サプライズの中身は明らかになっていない。",
-   "orig": "Alonso avisa: habrá sorpresas, quiero descubrir los límites de lo posible",
-   "url": "https://es.motorsport.com/f1/news/alonso-avisa-sorpresas-descubrir-limites-posible/10860619/",
-   "published": "2026-10-01T15:34:00+02:00"
-  },
-  {
-   "id": "it-formula1-haas-camara-fornaroli",
-   "kind": "rumor",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "うわさ",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "ocon-haas-exit-official",
-   "title": "ハース、オコン後任にカマラを望むと伊メディア　フォルナローリは見送りか",
-   "summary": "formula1.itは、ハースが来季のドライバーとしてフェラーリ育成のラファエル・カマラを望んでいると報じた。ポルティマオのテストで予選・決勝ペースとも最速だったという。マクラーレン支援のフォルナローリはウェットの条件で印象を残せず、候補から外れたと伝えている。いずれも未確認の報道である。",
-   "orig": "La Haas vuole Camara: perchè Fornaroli è stato scartato",
-   "url": "https://www.formula1.it/news/32967/1/la-haas-vuole-camara-perche-fornaroli-e-stato-scartato",
-   "published": "2026-10-01T20:45:00+02:00"
-  },
-  {
-   "id": "ja-f1jouhou-alonso-surprise",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-surprise-hint",
-   "title": "アロンソの「数週間でサプライズ」発言に憶測　インディ500やル・マンの声も",
-   "summary": "F1情報通が、アストンマーティン残留が決まったアロンソが「次の数週間でサプライズがある」と話した話題をまとめた。他のカテゴリーに挑戦することにも関心があるという発言が紹介され、読者からはインディ500やル・マン、ダカール、フォーミュラEなどを予想する声が出ている。いずれも憶測であり、未確認の話として受け取る必要がある。",
-   "orig": "アストンマーチン残留が決まったアロンソ「次の数週間でサプライズがある」",
-   "url": "https://f1jouhou2.com/blog-entry-31610.html",
-   "published": "2026-10-01T12:00:00+09:00"
-  },
-  {
-   "id": "en-therace-sepang-sandpaper-surface",
-   "kind": "tech",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "topic": "sepang-setup-unknowns",
-   "title": "F1は「紙やすり」のようなセパンの粗い路面に備える：最大の未知数はタイヤの摩耗",
-   "summary": "ピアストリが「紙やすり」と表現したセパンの路面は、ピレリの分析で今季最も粗い評価となりバルセロナを上回ったという。高温も重なり、直近の1ストップ中心のレースから2〜3ストップに増える可能性があると報じた。ラッセルは予選での挙動に不確定要素を残し、サインツは摩耗の大きいレースを歓迎している。",
-   "orig": "The major unknown as F1 braces for 'sandpaper' rough Sepang track",
-   "url": "https://www.the-race.com/formula-1/the-major-unknown-as-f1-braces-for-sandpaper-rough-sepang-track/",
-   "published": "2026-10-01T12:00:00+01:00"
-  },
-  {
    "id": "en-rn365-mercedes-w17-weakness-upgrade",
    "kind": "tech",
    "lang": "en",
@@ -879,6 +841,201 @@
     "cause": "低速でのダウンフォース不足",
     "hook": "異例の大型更新"
    }
+  },
+  {
+   "id": "de-motorsport-total-malaysia-nine-years-later",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "カルチャー",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "sepang-nine-years-later",
+   "title": "9年ぶりのマレーシアGP　2017年からF1はこう変わった",
+   "summary": "前回の2017年大会ではフェルスタッペンが20歳の誕生日を迎えて2勝目を挙げたが、今では4度の王者になっている。当時11歳でカートに乗っていたアントネッリは、現在選手権首位だ。ホイールが13インチから変わり、ヘイローも2018年に義務化されるなど、マシンも様変わりしたと振り返る。",
+   "orig": "Neun Jahre später: So anders war die Formel 1 beim letzten Malaysia-GP",
+   "url": "https://www.motorsport-total.com/formel-1/news/neun-jahre-spaeter-so-anders-war-die-formel-1-beim-letzten-malaysia-gp-26100121",
+   "published": "2026-10-01T17:24:00+02:00"
+  },
+  {
+   "id": "es-motorsport-sepang-driver-expectations",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com（スペイン）",
+   "cat": "サーキット",
+   "circuit": "sepang",
+   "teams": [
+    "mercedes",
+    "astonmartin"
+   ],
+   "topic": "sepang-setup-unknowns",
+   "title": "セパン復帰、ドライバーの期待と不安　路面の摩耗とバッテリー、午後のスコール",
+   "summary": "路面の摩耗が激しく、ラッセルはタイヤの過熱が重要な要素になり前走車に近づきにくくなると語った。アロンソは中間セクターでバッテリーを使うと、3本続く直線で充電が足りなくなると説明した。午後4時ごろのスコールが予想され、ピレリはC2〜C4を選んでいる。",
+   "orig": "Triste o sensacional: qué esperan los pilotos de F1 del regreso a Sepang",
+   "url": "https://es.motorsport.com/f1/news/triste-sensacional-que-esperan-pilotos-formula1-regreso-sepang/10860675/",
+   "published": "2026-10-01T17:04:00+02:00"
+  },
+  {
+   "id": "es-motorsport-stroll-honda-two-seconds",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com（スペイン）",
+   "cat": "チーム",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "honda-aduo2-reveal",
+   "title": "ストロール「パワーユニットで2秒失っている」　アストンマーティンのホンダ苦戦を数値化",
+   "summary": "ストロールは、ホンダ製パワーユニットのせいでサーキットにより約2秒を失っていると初めて具体的に語った。バクーやモンツァのような高速コースでは打つ手が少なく、ブダペストが最も良いレースだったと振り返った。ホンダは2回目のADUOを使い、改良ターボを投入したと伝えられている。",
+   "orig": "Stroll afirma que el motor Honda hace al Aston Martin dos segundos más lento",
+   "url": "https://es.motorsport.com/f1/news/stroll-motor-honda-aston-martin-dos-segundos-mas-lento/10860692/",
+   "published": "2026-10-01T16:44:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-bearman-haas-leader-role",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "haas"
+   ],
+   "topic": "bearman-haas-leader-2027",
+   "title": "ベアマン、オコン離脱後のハースで「リーダー」の役割に意欲",
+   "summary": "GPblogによると、ベアマンは2027年にF1での3年目を迎え、オコンが抜けたハースでチーム最古参の立場になる見通しだ。本人は走りの速さだけでなく、チーム内での働きかけや周囲の力を引き出す面でも成長したいと語った。来季のチームメートにはカマラが加わると伝えられている。",
+   "orig": "Bearman bevestigt nieuwe rol bij Haas na vertrek Ocon",
+   "url": "https://www.gpblog.com/nl/nieuws/bearman-bevestigt-nieuwe-rol-bij-haas-na-vertrek-ocon",
+   "published": "2026-10-01T16:15:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-audi-baku-update-straights",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "テクニカル",
+   "circuit": "baku",
+   "teams": [
+    "audi"
+   ],
+   "topic": "audi-baku-update-straights",
+   "title": "アウディのバクー向け空力更新、真価はまだ見えず　ストレートの遅さが足かせに",
+   "summary": "アウディR26はバクーで14点の空力更新を投入したが、ポイントには届かなかった。コーナーでは改善が見えた一方、全開区間が半分を超えるバクーではパワーユニットの弱さがストレートの遅さとして表れたという。ヒュルケンベルグはセパンに期待を示し、チームは旧仕様には戻さずセパンで更新の実力を測る方針だ。",
+   "orig": "Warum das Audi-Update in Baku noch nicht sein wahres Gesicht gezeigt hat",
+   "url": "https://www.motorsport-total.com/formel-1/news/warum-das-audi-update-in-baku-noch-nicht-sein-wahres-gesicht-gezeigt-hat-26100119",
+   "published": "2026-10-01T15:46:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-hadjar-grid-penalty-malaysia",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "sepang-pu-grid-penalties",
+   "title": "ハジャー、セパンで5グリッド降格の見通し　それでも「追い上げは可能」",
+   "summary": "GPblogは、レッドブルのハジャーがセパンで5グリッド降格を受ける見通しだと伝えた。理由は明言されていないが、パワーユニット部品の交換とみられる。ハジャーは先週のバクーで手首の負傷から復帰して3位に入っており、ペースがあれば追い上げられるコースだと語った。一方で、通常レイアウトのセパンではレッドブルの競争力は下がると見ている。",
+   "orig": "Red Bull dreigt gridstraf te incasseren na ingrijpende keuze in Maleisië",
+   "url": "https://www.gpblog.com/nl/breaking-news/red-bull-dreigt-gridstraf-te-incasseren-na-ingrijpende-keuze-in-maleisie",
+   "published": "2026-10-01T15:35:00+02:00"
+  },
+  {
+   "id": "es-motorsport-alonso-surprises",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com（スペイン）",
+   "cat": "ドライバー",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-surprise-hint",
+   "title": "アロンソ「今後数週間でサプライズがある」　不可能と言われることに挑戦",
+   "summary": "アロンソは今後数週間のうちにサプライズがあると語り、不可能と言われることでも限界を探りたいと述べた。WECやル・マン、インディ500、ダカールに挑んできた経歴に触れ、F1以外でも走る意欲のある現役はフェルスタッペンくらいだとの見方を示した。サプライズの中身は明らかになっていない。",
+   "orig": "Alonso avisa: habrá sorpresas, quiero descubrir los límites de lo posible",
+   "url": "https://es.motorsport.com/f1/news/alonso-avisa-sorpresas-descubrir-limites-posible/10860619/",
+   "published": "2026-10-01T15:34:00+02:00"
+  },
+  {
+   "id": "en-gpblog-verstappen-boycott-middle-east",
+   "kind": "news",
+   "lang": "en",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "middle-east-races-doubt",
+   "title": "フェルスタッペン、終盤の中東2戦欠場の可能性を否定せず　F1に難題",
+   "summary": "GPblogは、フェルスタッペンがカタールとアブダビの最終2戦への出場を確約していないと伝えた。地域情勢が続くなら他の場所で走るほうがよいとの考えを以前示しており、ドメニカリCEOにも懸念を伝えているという。両戦は数千万ドル規模の収入に関わるため、欠場すればF1にとって評判上も大きな打撃になると論じている。",
+   "orig": "Verstappen threatens F1 with a nightmare by not ruling out a boycott",
+   "url": "https://www.gpblog.com/en/analysis/verstappen-threatens-f1-with-a-nightmare-by-not-ruling-out-a-boycott",
+   "published": "2026-10-01T15:15:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-leclerc-sf26-parts",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-sepang-updates",
+   "title": "ルクレール、フェラーリの新パーツに「大きな変化ではない」と期待を抑える",
+   "summary": "ルクレールはセパンに持ち込むSF-26の新パーツについて、性能を一変させるものではないと語った。マクラーレンやレッドブルが小さな改良を積み重ねているのに対し、フェラーリは追いつけていないという。直近3戦のポイントはレッドブル74、マクラーレン41、フェラーリ40で、パワーユニット以外にもシャシーや空力の差があると認めた。",
+   "orig": "Neue Teile für den SF-26: Charles Leclerc dämpft Ferrari-Erwartungen",
+   "url": "https://www.motorsport-total.com/formel-1/news/neue-teile-fuer-den-sf-26-charles-leclerc-daempft-ferrari-erwartungen-26100117",
+   "published": "2026-10-01T14:12:00+02:00"
+  },
+  {
+   "id": "it-formula1-norris-apologises-colapinto",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "circuit": "baku",
+   "teams": [
+    "mclaren",
+    "alpine"
+   ],
+   "topic": "colapinto-penalty",
+   "title": "ノリスがコラピントに謝罪、一方のコラピントは「注意すべきだった」と反論",
+   "summary": "バクーでの接触後、ノリスが「コラピントのようなドライバーは出場禁止にすべき」と発言し、アルゼンチンのファンから激しい反発を受けた。ノリスは本人にだけ謝るつもりだったが騒ぎが大きくなり、公に謝罪したと説明。コラピントは謝罪を受け入れつつ、ドライバーは発言に注意すべきだと応じた。",
+   "orig": "Norris chiede scusa a Colapinto, ma lui accusa: «Doveva fare attenzione»",
+   "url": "https://www.formula1.it/news/32959/1/norris-chiede-scusa-a-colapinto-ma-lui-accusa-doveva-fare-attenzione",
+   "published": "2026-10-01T13:30:00+02:00"
+  },
+  {
+   "id": "en-therace-sepang-sandpaper-surface",
+   "kind": "tech",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "topic": "sepang-setup-unknowns",
+   "title": "F1は「紙やすり」のようなセパンの粗い路面に備える：最大の未知数はタイヤの摩耗",
+   "summary": "ピアストリが「紙やすり」と表現したセパンの路面は、ピレリの分析で今季最も粗い評価となりバルセロナを上回ったという。高温も重なり、直近の1ストップ中心のレースから2〜3ストップに増える可能性があると報じた。ラッセルは予選での挙動に不確定要素を残し、サインツは摩耗の大きいレースを歓迎している。",
+   "orig": "The major unknown as F1 braces for 'sandpaper' rough Sepang track",
+   "url": "https://www.the-race.com/formula-1/the-major-unknown-as-f1-braces-for-sandpaper-rough-sepang-track/",
+   "published": "2026-10-01T12:00:00+01:00"
   },
   {
    "id": "en-therace-mercedes-upgrade-first-clues",
@@ -934,115 +1091,6 @@
    "orig": "What we learned on the first day of F1's Malaysia return",
    "url": "https://www.the-race.com/formula-1/what-we-learned-on-the-first-day-of-f1s-malaysia-return/",
    "published": "2026-10-01T12:00:00+01:00"
-  },
-  {
-   "id": "de-motorsport-total-leclerc-sf26-parts",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-sepang-updates",
-   "title": "ルクレール、フェラーリの新パーツに「大きな変化ではない」と期待を抑える",
-   "summary": "ルクレールはセパンに持ち込むSF-26の新パーツについて、性能を一変させるものではないと語った。マクラーレンやレッドブルが小さな改良を積み重ねているのに対し、フェラーリは追いつけていないという。直近3戦のポイントはレッドブル74、マクラーレン41、フェラーリ40で、パワーユニット以外にもシャシーや空力の差があると認めた。",
-   "orig": "Neue Teile für den SF-26: Charles Leclerc dämpft Ferrari-Erwartungen",
-   "url": "https://www.motorsport-total.com/formel-1/news/neue-teile-fuer-den-sf-26-charles-leclerc-daempft-ferrari-erwartungen-26100117",
-   "published": "2026-10-01T14:12:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-audi-baku-update-straights",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "circuit": "baku",
-   "teams": [
-    "audi"
-   ],
-   "topic": "audi-baku-update-straights",
-   "title": "アウディのバクー向け空力更新、真価はまだ見えず　ストレートの遅さが足かせに",
-   "summary": "アウディR26はバクーで14点の空力更新を投入したが、ポイントには届かなかった。コーナーでは改善が見えた一方、全開区間が半分を超えるバクーではパワーユニットの弱さがストレートの遅さとして表れたという。ヒュルケンベルグはセパンに期待を示し、チームは旧仕様には戻さずセパンで更新の実力を測る方針だ。",
-   "orig": "Warum das Audi-Update in Baku noch nicht sein wahres Gesicht gezeigt hat",
-   "url": "https://www.motorsport-total.com/formel-1/news/warum-das-audi-update-in-baku-noch-nicht-sein-wahres-gesicht-gezeigt-hat-26100119",
-   "published": "2026-10-01T15:46:00+02:00"
-  },
-  {
-   "id": "it-formula1-norris-apologises-colapinto",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ドライバー",
-   "circuit": "baku",
-   "teams": [
-    "mclaren",
-    "alpine"
-   ],
-   "topic": "colapinto-penalty",
-   "title": "ノリスがコラピントに謝罪、一方のコラピントは「注意すべきだった」と反論",
-   "summary": "バクーでの接触後、ノリスが「コラピントのようなドライバーは出場禁止にすべき」と発言し、アルゼンチンのファンから激しい反発を受けた。ノリスは本人にだけ謝るつもりだったが騒ぎが大きくなり、公に謝罪したと説明。コラピントは謝罪を受け入れつつ、ドライバーは発言に注意すべきだと応じた。",
-   "orig": "Norris chiede scusa a Colapinto, ma lui accusa: «Doveva fare attenzione»",
-   "url": "https://www.formula1.it/news/32959/1/norris-chiede-scusa-a-colapinto-ma-lui-accusa-doveva-fare-attenzione",
-   "published": "2026-10-01T13:30:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-hadjar-grid-penalty-malaysia",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sepang-pu-grid-penalties",
-   "title": "ハジャー、セパンで5グリッド降格の見通し　それでも「追い上げは可能」",
-   "summary": "GPblogは、レッドブルのハジャーがセパンで5グリッド降格を受ける見通しだと伝えた。理由は明言されていないが、パワーユニット部品の交換とみられる。ハジャーは先週のバクーで手首の負傷から復帰して3位に入っており、ペースがあれば追い上げられるコースだと語った。一方で、通常レイアウトのセパンではレッドブルの競争力は下がると見ている。",
-   "orig": "Red Bull dreigt gridstraf te incasseren na ingrijpende keuze in Maleisië",
-   "url": "https://www.gpblog.com/nl/breaking-news/red-bull-dreigt-gridstraf-te-incasseren-na-ingrijpende-keuze-in-maleisie",
-   "published": "2026-10-01T15:35:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-bearman-haas-leader-role",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "haas"
-   ],
-   "topic": "bearman-haas-leader-2027",
-   "title": "ベアマン、オコン離脱後のハースで「リーダー」の役割に意欲",
-   "summary": "GPblogによると、ベアマンは2027年にF1での3年目を迎え、オコンが抜けたハースでチーム最古参の立場になる見通しだ。本人は走りの速さだけでなく、チーム内での働きかけや周囲の力を引き出す面でも成長したいと語った。来季のチームメートにはカマラが加わると伝えられている。",
-   "orig": "Bearman bevestigt nieuwe rol bij Haas na vertrek Ocon",
-   "url": "https://www.gpblog.com/nl/nieuws/bearman-bevestigt-nieuwe-rol-bij-haas-na-vertrek-ocon",
-   "published": "2026-10-01T16:15:00+02:00"
-  },
-  {
-   "id": "ja-f1are-alonso-retire-habit",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "circuit": "sepang",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-retire-habit",
-   "title": "アロンソの「自主リタイア」の話題が再燃、ファンの間で賛否",
-   "summary": "F1のアレが、アロンソがマクラーレン・ホンダ時代に機械的な問題がないのにレースを止めたことがあったと、バトンが語ったとされる話題をまとめた。ファンの反応は否定的な声が目立ち、現在のアストンマーティンでも同じことが起きるのかを気にする見方も出ている。いずれも未確認の話として受け取る必要がある。",
-   "orig": "アロンソの\"自主リタイア癖\"が話題に",
-   "url": "https://f1are.com/blog-entry-3945.html",
-   "published": "2026-10-01T12:00:00+09:00"
   },
   {
    "id": "en-therace-lindblad-back-of-grid-sepang",
@@ -1112,6 +1160,65 @@
    "orig": "Honda secretly introduced ADUO 2 F1 upgrade",
    "url": "https://www.the-race.com/formula-1/honda-secretly-introduced-aduo-2-f1-upgrade/",
    "published": "2026-10-01T12:00:00+01:00"
+  },
+  {
+   "id": "de-motorsport-total-antonelli-below-limit",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "russell-baku-season-reflection",
+   "circuit": "baku",
+   "title": "アントネッリ、バクーでの5位を回顧「限界以下で走るのは好きではない」",
+   "summary": "アントネッリはバクーで予選Q1のクラッシュにより16番手から出発し、5位でフィニッシュした。決勝ではミスを避けるため意識的に攻め方を抑えたと明かし、「限界以下で走るのは好きではない」と話した。ただ、技術的なトラブルも重なった週末で、この経験は学びが多く、必要な場面でリスクを管理する走り方を理解できたと前向きに振り返っている。",
+   "orig": "Kimi Antonelli über Baku-Erfahrung: 'Ich mag es nicht, unter dem Limit zu fahren'",
+   "url": "https://www.motorsport-total.com/formel-1/news/kimi-antonelli-ueber-baku-erfahrung-ich-mag-es-nicht-unter-dem-limit-zu-fahren-26100113",
+   "published": "2026-10-01T12:47:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-hamilton-ferrari-media",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "horner-ferrari",
+   "title": "ハミルトンとルクレール、バスール代表を擁護　フェラーリ批判の報道に反論",
+   "summary": "ハミルトンは、チーム内部を知らない者がフェラーリ批判を書いているとして「記事を書く人は何も分かっていない」と述べた。ルクレールもバスール代表の手腕と人心掌握を評価し、根拠のないうわさが減ればと語った。ハミルトンは同じミスでもフェラーリだと10倍悪く見られるとし、PUの直線速度は毎戦0.4〜0.6秒ほど不利だと話した。",
+   "orig": "Lewis Hamilton: Medien, die Ferrari kritisieren, haben 'keine Ahnung'",
+   "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-medien-die-ferrari-kritisieren-haben-keine-ahnung-26100111",
+   "published": "2026-10-01T11:42:00+02:00",
+   "lens": {
+    "type": "談話",
+    "lead": "ハミルトン",
+    "focus": "批判報道への反論",
+    "cause": "内部を知らない外部の憶測",
+    "hook": "報道は「何も分かっていない」"
+   }
+  },
+  {
+   "id": "de-motorsport-total-verstappen-gt3-portimao",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "verstappen-gt3-portimao",
+   "title": "フェルスタッペン、今年中にGT3メルセデスで再びレースへ　ポルティマオ耐久戦に参戦",
+   "summary": "フェルスタッペンが、10月16〜17日にポルトガルのポルティマオで行われるGTワールドチャレンジ・ヨーロッパ耐久カップ最終戦にメルセデスAMG GT3で出場する。自身のフェルスタッペン・レーシングから、ルーラムらとともに走る。3時間レースは土曜夕方のため、日曜に休んでF1に備えられるという。同じ大会にはバレンティーノ・ロッシもBMWで出場する。",
+   "orig": "Max Verstappen fährt wieder Rennen im GT3-Mercedes - und zwar dieses Jahr!",
+   "url": "https://www.motorsport-total.com/formel-1/news/max-verstappen-faehrt-wieder-rennen-im-gt3-mercedes-und-zwar-dieses-jahr-26100110",
+   "published": "2026-10-01T11:34:00+02:00"
   },
   {
    "id": "en-rn365-hadjar-grid-penalty-sepang",
@@ -1291,6 +1398,41 @@
    "orig": "Toto Wolff: Für Mercedes werden die Strategieentscheidungen jetzt schwieriger",
    "url": "https://www.motorsport-total.com/formel-1/news/toto-wolff-fuer-mercedes-werden-die-strategieentscheidungen-jetzt-schwieriger-26100104",
    "published": "2026-10-01T06:26:00+02:00"
+  },
+  {
+   "id": "ja-f1jouhou-alonso-surprise",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-surprise-hint",
+   "title": "アロンソの「数週間でサプライズ」発言に憶測　インディ500やル・マンの声も",
+   "summary": "F1情報通が、アストンマーティン残留が決まったアロンソが「次の数週間でサプライズがある」と話した話題をまとめた。他のカテゴリーに挑戦することにも関心があるという発言が紹介され、読者からはインディ500やル・マン、ダカール、フォーミュラEなどを予想する声が出ている。いずれも憶測であり、未確認の話として受け取る必要がある。",
+   "orig": "アストンマーチン残留が決まったアロンソ「次の数週間でサプライズがある」",
+   "url": "https://f1jouhou2.com/blog-entry-31610.html",
+   "published": "2026-10-01T12:00:00+09:00"
+  },
+  {
+   "id": "ja-f1are-alonso-retire-habit",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-retire-habit",
+   "title": "アロンソの「自主リタイア」の話題が再燃、ファンの間で賛否",
+   "summary": "F1のアレが、アロンソがマクラーレン・ホンダ時代に機械的な問題がないのにレースを止めたことがあったと、バトンが語ったとされる話題をまとめた。ファンの反応は否定的な声が目立ち、現在のアストンマーティンでも同じことが起きるのかを気にする見方も出ている。いずれも未確認の話として受け取る必要がある。",
+   "orig": "アロンソの\"自主リタイア癖\"が話題に",
+   "url": "https://f1are.com/blog-entry-3945.html",
+   "published": "2026-10-01T12:00:00+09:00"
   },
   {
    "id": "ja-f1jouhou-honda-aduo-untapped",
@@ -1538,144 +1680,6 @@
    "orig": "'Chaotic racing'? - What F1 drivers expect from Malaysia return",
    "url": "https://www.the-race.com/formula-1/chaotic-racing-what-f1-drivers-expect-from-malaysia-return/",
    "published": "2026-09-30T12:00:00+01:00"
-  },
-  {
-   "id": "en-rn365-ocon-haas-exit-future-doubt",
-   "kind": "news",
-   "lang": "en",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "移籍",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-haas-exit-official",
-   "title": "オコンがハース離脱を認める、2027年の席は残りわずかでF1の行方は不透明に",
-   "summary": "オコンは2026年末でハースを去ることを認め、2年間の在籍に幕を下ろす。ハースでは同僚ベアマンに得点で7対20と差をつけられ、最高位は2025年中国GPの5位にとどまった。2027年に空いている席は限られ、メルセデスもレーシングブルズも起用の意向はないとされる。ハースはF2首位のカマラを来季ベアマンの相棒に据える見通しで、オコンはリザーブ職などF1残留の道を探る構えだ。",
-   "orig": "Breaking: Esteban Ocon confirms Haas exit with F1 future in doubt",
-   "url": "https://racingnews365.com/esteban-ocon-confirms-haas-exit-with-f1-future-in-doubt",
-   "published": "2026-09-30T10:05:00+01:00"
-  },
-  {
-   "id": "en-therace-ocon-haas-exit-official",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "移籍",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-haas-exit-official",
-   "title": "オコン、ハース離脱が正式決定「F1キャリアの終わりではない」と再起を宣言",
-   "summary": "ハースは2026年限りでのオコンとの契約終了を正式に発表した。オコンは「F1キャリアの終わりでは決してない」と語り、2019年のようにリザーブ役を経て復帰する道が想定されると同メディアは伝える。後任にはフェラーリ育成のF2ポイントリーダー、ラファエル・カマラが有力視され、ハースは旧型車テスト計画で複数の候補を試していた。オコンは現在ドライバーズランキング16位で、ボルトレートの成績を含め評価が割れている。",
-   "orig": "Ocon vows he'll be back as Haas F1 exit official",
-   "url": "https://www.the-race.com/formula-1/esteban-ocon-set-for-f1-exit-as-haas-split-announced/",
-   "published": "2026-09-30T10:00:00+01:00"
-  },
-  {
-   "id": "ja-f1are-kvyat-alpine-sim",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "teams": [
-    "alpine"
-   ],
-   "topic": "kvyat-alpine-simulator",
-   "title": "クビアト、アルピーヌのシミュレータードライバーに　掲示板では驚きと関心",
-   "summary": "トップニュース掲載の記事を基にした投稿で、元F1ドライバーのクビアトがアルピーヌのシミュレータードライバーに就き、エンストンで他の担当者と開発業務を分担すると伝えた。掲示板では「今度はクビアトか」という驚きに加え、経験豊富な元F1ドライバーの起用を評価する声があった。",
-   "orig": "元F1ドライバーのクビアト、アルピーヌのシミュレータドライバーに",
-   "url": "https://f1are.com/blog-entry-3941.html",
-   "published": "2026-09-30T18:00:00+09:00"
-  },
-  {
-   "id": "de-motorsport-total-ocon-haas-exit",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "移籍",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-haas-exit-official",
-   "title": "オコン、ハースを年末で離脱「F1キャリアの終わりではない」と継続に意欲",
-   "summary": "30歳のオコンは2026年末でのハース離脱を正式に認め、F1でのキャリア継続への意欲を示した。ハースのコマツ代表は、2025年の加入以来の職業意識と献身に感謝し、規則刷新期のVF-26開発にも経験が生きたと評価している。2027年の各チームのラインナップはほぼ固まっており、オコンの次の行き先は限られると同サイトは指摘する。2016年のマノー時代から続くキャリアと、2021年ハンガリーGPでの唯一の優勝にも触れている。",
-   "orig": "Offiziell: Esteban Ocon verlässt Haas am Ende des Jahres",
-   "url": "https://www.motorsport-total.com/formel-1/news/offiziell-esteban-ocon-verlaesst-haas-am-ende-des-jahres-26093004",
-   "published": "2026-09-30T10:12:00+02:00"
-  },
-  {
-   "id": "en-rn365-antonelli-verstappen-advantages",
-   "kind": "news",
-   "lang": "en",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "topic": "antonelli-verstappen-racecraft",
-   "title": "アントネッリ、フェルスタッペンの状況判断とレース中の「読み」の鋭さに驚嘆",
-   "summary": "メルセデスのアントネッリは、アゼルバイジャンGPを前にした取材で、フェルスタッペンとの攻防を通じて感じた強みを語った。スペインGPではアントネッリがノリスへの追い抜きを見送った隙を突かれた例を挙げ、レース中の位置取りや隙を見つける視野の広さに感心したという。モナコでは練習で苦戦したレッドブルが予選で速さを見せた点にも触れ、「マックスは時に未知数なのが素晴らしい」と述べた。",
-   "orig": "Kimi Antonelli stunned by unique Max Verstappen advantages",
-   "url": "https://racingnews365.com/kimi-antonelli-stunned-by-unique-max-verstappen-advantages",
-   "published": "2026-09-30T09:00:00+01:00"
-  },
-  {
-   "id": "de-formel1-sepang-heat-warning",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Formel1.de",
-   "cat": "サーキット",
-   "circuit": "sepang",
-   "topic": "sepang-heat-warning",
-   "title": "マレーシア復帰のF1、FIAが熱中症への警告を発令　ドライバー冷却システムが義務に",
-   "summary": "FIAはセパンで行われるバーレーンGPに対し、気温と湿度を組み合わせた「ヒートインデックス」が31度を超える見込みとして高温警告を出した。規則により、ドライバー冷却システムの部品は決勝やスプリントのスタート時に車載されていなければならない。個人用の冷却ベストを着けないことは選べるが、その場合も他の部品は必須で、重量面の不公平を避けるためバラストなどが加算される。",
-   "orig": "Malaysia-Comeback der Formel 1: FIA spricht Hitzewarnung aus",
-   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-09-30/malaysia-comeback-der-formel-1-fia-spricht-hitzewarnung-aus",
-   "published": "2026-09-30T10:00:00+02:00"
-  },
-  {
-   "id": "es-motorsport-baku-verstappen-best-chance",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "ドライバー",
-   "circuit": "baku",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "verstappen-baku-best-chance",
-   "title": "バクーは本当にフェルスタッペンの今季最大の勝機だったのか",
-   "summary": "フェルスタッペンはバクーを「今年勝てる最高の機会だった」としつつ、自分たちで台無しにしたと振り返った。ラッセルとの差は0.196秒で、レッドブルは新フロアなどを投入した今季最後の大型アップデートで車のバランスが良くなったと評価する。一方でタイヤ摩耗やPUの電気系統ではメルセデスに劣り、勝利なしで終われば2015年以来となる。",
-   "orig": "¿Fue Bakú realmente la mejor oportunidad de Verstappen para ganar en la F1 2026?",
-   "url": "https://es.motorsport.com/f1/news/baku-mejor-oportunidad-verstappen-ganar-formula1-2026/10859898/",
-   "published": "2026-09-30T10:00:00+02:00"
-  },
-  {
-   "id": "es-motorsport-bortoleto-yellow-flags",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "決勝",
-   "circuit": "baku",
-   "teams": [
-    "audi"
-   ],
-   "topic": "baku-post-race-penalties",
-   "title": "ボルトレートの奇妙な処分、バクーで意図的に黄旗を無視",
-   "summary": "ボルトレートはバクー決勝の再スタート時、黄旗が振られる中でペレスを抜き、レース後に10秒加算を受けて13位から15位に降格した。エンジニアが無線で「セーフティカーではない」と伝えたのが背景だが、スチュワードは矛盾した情報があったと認めつつ、黄旗は独立した合図であり守る必要があると判断した。入賞圏外だったためポイントへの影響はない。",
-   "orig": "La curiosa sanción a Bortoleto: ignoró deliberadamente las banderas amarillas en Bakú",
-   "url": "https://es.motorsport.com/f1/news/bortoleto-ignoro-deliberadamente-banderas-amarillas-baku/10860100/",
-   "published": "2026-09-30T09:30:00+02:00"
   }
  ]
 }
