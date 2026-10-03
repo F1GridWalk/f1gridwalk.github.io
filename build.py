@@ -693,6 +693,19 @@ DEEP_COPY = 'ニュースの、その奥へ。'
 DEEPS = []  # published issues, newest first (filled by load_deeps)
 
 DEEP_CSS = '''
+.more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
+.md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
+.more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-deep ul{list-style:none;margin:0 0 16px;padding:0}
+.more-deep li{border-top:1px solid var(--line)}
+.more-deep li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-deep li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-deep li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-deep li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.md-btn{display:block;text-align:center;background:#8E2F3B;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.md-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .md-k{color:#D98C96}}
+:root[data-theme="dark"] .md-k{color:#D98C96}
 .dg{--dgw:700px}
 .dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
 .dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
@@ -895,6 +908,14 @@ def build_deeps(arch, flag_map):
             for s in D['deep']:
                 B.append(f'<div class="dg-sec"><h2>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
             B.append('</details>')
+        # other issues right after データと記録 (owner's request, 3 Oct 2026), like the WORLD GRID pages
+        oth = [x for x in DEEPS if x is not D][:5]
+        if oth:
+            B.append('<section class="more-deep"><p class="md-k">DEEP GRID</p><h2>ほかの号を読む</h2><ul>'
+                     + ''.join(f'<li><a href="/deep/{e(x["slug"])}/" data-track="click/deep/{e(slug)}/more/{e(x["slug"])}"><b>{e(x["title"])}</b>'
+                               f'<small>DEEP GRID {deep_no(x)} · {e(jst_text(datetime.fromisoformat(x["published"])))}</small></a></li>' for x in oth)
+                     + f'</ul><a class="md-btn" href="/deep/" data-track="click/deep/{e(slug)}/more-all">すべての号を見る →</a>'
+                     + f'<a class="md-sub" href="/" data-track="click/deep/{e(slug)}/more-top">今日のF1ニュースを見る</a></section>')
         if D.get('glossary'):
             B.append('<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl>'
                      + ''.join(f'<dt>{e(t)}</dt><dd>{e(d)}</dd>' for t, d in D['glossary']) + '</dl></div>')
@@ -914,11 +935,7 @@ def build_deeps(arch, flag_map):
         if rel:
             B.append('<div class="dg-end"><h2><span class="k">WORLD GRID</span>世界はどう報じた？</h2>'
                      + ''.join(f'<a class="dg-card" href="/lens/{e(L["slug"])}/"><small>WORLD GRID · {e(L["gpLabel"])}</small><b>{e(L["title"])}</b></a>' for L in rel) + '</div>')
-        others = [x for x in DEEPS if x is not D][:3]
-        B.append('<div class="dg-end"><h2><span class="k">DEEP GRID</span>ほかの号</h2>'
-                 + ''.join(deep_card(x, 'dg-card', '読む') for x in others)
-                 + rules_entry('deep-issue')
-                 + '<a class="dg-card" href="/deep/"><small>DEEP GRID</small><b>すべての号を見る →</b></a></div>')
+        B.append('<div class="dg-end">' + rules_entry('deep-issue') + '</div>')
         B.append('</article>')
         B.append(term_assets(used))
 
