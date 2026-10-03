@@ -1385,6 +1385,20 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .lens-verdict li a:hover{text-decoration-color:currentColor}
 .lens-verdict li small{display:block;font-size:12.5px;color:var(--muted)}
 @media (max-width:420px){.lens-verdict li{grid-template-columns:1fr;gap:0}}
+/* 今週の注目 → 世界の見方 as one line, 総評 behind a + button (owner's choice B, 3 Oct 2026) */
+.hero .chips{padding-left:22px}
+#tw-facts{position:relative;padding-left:22px}
+#tw-facts::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--ink)}
+.hero-text:has(#tw-lens) #tw-facts::after{content:"";position:absolute;left:4px;top:calc(.55em + 10px);bottom:-14px;border-left:2px solid var(--clay)}
+#tw-lens .tw-lead,#tw-lens .lens-verdict{margin-left:22px}
+.lens-verdict{padding:0;overflow:hidden}
+.lv-btn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:12px 12px 12px 14px;font-size:14px;font-weight:800;color:var(--ink)}
+.lv-btn:focus-visible{outline:2px solid var(--clay);outline-offset:-2px;border-radius:14px}
+.lv-btn small{display:block;font-size:12px;font-weight:500;color:var(--muted);margin-top:1px}
+.lv-btn .pm{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:16px;font-weight:700;flex-shrink:0}
+.lv-btn[aria-expanded="true"] .pm{background:var(--clay)}
+.lens-verdict ul{padding:2px 16px 14px}
+.lens-verdict ul[hidden]{display:none}
 .jump a.jump-deep{color:var(--clay);font-weight:700;letter-spacing:.06em}
 .dash-main .hero-in{grid-template-columns:1fr}
 .dash-main .hero-art{display:none}
@@ -1480,7 +1494,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の5媒体が報道</span></div>
 <div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="/news/es-motorsport-antonelli-sepang-three-tenths/">メルセデス、セパンで大型アップデート投入　1周0.3秒の向上を狙う</a></h1></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。読みたいことに合わせて、記事を選べます。</p></section><!--/pre:hero--></div>
+<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>このニュースを、世界はどう伝えた？</h2><p class="tw-lead">同じニュースでも、媒体ごとに伝え方が違います。</p></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
         <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/alonso-sepang-fire-20261003/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>海外の見方を、日本語で。</strong></span><b>「今はやめる時じゃない」アロンソ、初ポールの地セパンで語った本音&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/grid-penalty-why/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>グリッド降格はなぜ起きる？&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div>
@@ -1823,15 +1837,20 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     if (lens && (lens.guide || []).length){
       stepNo++;
       var ls = mk('section','tw-sec lens'); ls.id = 'tw-lens';
-      var lh = stepHead(stepNo, '世界の見方', 'WORLD MEDIA LENS'); lh.classList.add('tw-h-lens'); lh.insertBefore(mk('span','tw-dot'), lh.firstChild);
+      var lh = stepHead(stepNo, 'このニュースを、世界はどう伝えた？'); lh.classList.add('tw-h-lens'); lh.insertBefore(mk('span','tw-dot'), lh.firstChild);
       ls.appendChild(lh);
-      var twl = mk('p','tw-lead'); twl.textContent = 'このニュースを、世界の媒体はどう伝えたか。読みたいことに合わせて、記事を選べます。'; ls.appendChild(twl);
+      var twl = mk('p','tw-lead'); twl.textContent = '同じニュースでも、媒体ごとに伝え方が違います。'; ls.appendChild(twl);
       // the 4-axis table (主役・焦点・原因の説明・見出しの強調点) was removed (owner's decision, 3 Oct 2026); only the 総評 guide is shown
       // 総評：読みたいことで選ぶなら (owner's choice 案3, 3 Oct 2026). Shown even when the table is closed.
       var GD = (lens.guide || []).filter(function(x){ return x && x.want && (x.ids || []).some(function(id){ return byId[id]; }); });
       if (GD.length){
-        var vb = mk('div','lens-verdict'); vb.appendChild(mk('div','lv-h','総評：読みたいことで選ぶなら'));
-        var ul2 = mk('ul');
+        var vb = mk('div','lens-verdict');
+        var ul2 = mk('ul'); ul2.id = 'lens-guide'; ul2.hidden = true;
+        var vbt = mk('button','lv-btn'); vbt.type = 'button'; vbt.setAttribute('aria-expanded','false'); vbt.setAttribute('aria-controls','lens-guide');
+        var vbl = mk('span', null, '総評：読みたいことで選ぶ'); vbl.appendChild(mk('small', null, GD.length + 'つの切り口から、記事を選べます')); vbt.appendChild(vbl);
+        var vpm = mk('span','pm','+'); vbt.appendChild(vpm);
+        vbt.addEventListener('click', function(){ var op = ul2.hidden; ul2.hidden = !op; vbt.setAttribute('aria-expanded', String(op)); vpm.textContent = op ? '−' : '+'; });
+        vb.appendChild(vbt);
         GD.forEach(function(x){
           var li2 = mk('li'); li2.appendChild(mk('b', null, x.want));
           var sp = mk('span'); var seen2 = {};
