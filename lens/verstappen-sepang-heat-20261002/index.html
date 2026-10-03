@@ -110,6 +110,87 @@
 .lens-list a{font-size:17px;font-weight:800;text-decoration:none}
 .lens-list small{display:block;color:var(--muted);font-size:12.5px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lens-hero,:root:not([data-theme="light"]) .quiz{background:#0F110E;border:1px solid #353A32}}
+
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "フェルスタッペン、セパンで「どこへ行けばいいか全然分からなかった」", "description": "フェルスタッペンは、セパンで最後に優勝したドライバーです。ドイツのMotorsport-Total.comによると、木曜は暑さ対策を「下着が何枚か多めに」と冗談にしつつ、路面の粗さと、今季まだない1勝についても語りました。", "datePublished": "2026-10-02T06:41:00+09:00", "dateModified": "2026-10-02T06:41:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/lens/verstappen-sepang-heat-20261002/og.png?v=ae7f3437"], "mainEntityOfPage": "https://f1gridwalk.github.io/lens/verstappen-sepang-heat-20261002/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "WORLD MEDIA LENS"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "WORLD MEDIA LENS", "item": "https://f1gridwalk.github.io/lens/"}, {"@type": "ListItem", "position": 3, "name": "フェルスタッペン、セパンで「どこへ行けばいいか全然分からなかった」", "item": "https://f1gridwalk.github.io/lens/verstappen-sepang-heat-20261002/"}]}</script>
@@ -405,6 +486,7 @@ footer p{margin:6px 0}
 <p class="ask">9年ぶりのセパンで、最後の優勝者は今季初勝利に届くでしょうか。あなたはどう見ますか？</p>
 </div>
 <section class="gw-next"><p class="gw-k">F1 Grid Walk</p><h2>世界のF1ニュースを、毎日日本語で</h2><p class="gw-lead">海外の記事の要約を、毎日載せています。いま届いているニュース：</p><ul><li><a href="/news/it-formula1-mekies-friday-cautious/" data-track="click/lens/verstappen-sepang-heat-20261002/entrance-news">レッドブルのメキース代表、金曜の好調でも「本命と見るのは早い」</a><small>Formula1.it</small></li><li><a href="/news/nl-gpblog-sepang-pole-wrong-side/" data-track="click/lens/verstappen-sepang-heat-20261002/entrance-news">FIAが土壇場で修正、セパンのポールポジションが逆側に描かれていた</a><small>GPblog</small></li><li><a href="/news/it-formula1-hamilton-impeding-fia/" data-track="click/lens/verstappen-sepang-heat-20261002/entrance-news">ハミルトンの妨害にFIAが裁定　警告のみ、フェラーリには1万ユーロの罰金</a><small>Formula1.it</small></li></ul><a class="gw-btn" href="/" data-track="click/lens/verstappen-sepang-heat-20261002/entrance-top">今日のF1ニュースを見る →</a><a class="gw-sub" href="/lens/" data-track="click/lens/verstappen-sepang-heat-20261002/entrance-lens">ほかのコラムを読む</a></section>
+<a class="dg-from" href="/deep/heat-sepang/" data-track="click/deep/heat-sepang/from"><small>DEEP GRID #03</small><b>暑さは、ドライバーの体に何をするのか？</b><span>なぜそうなった？を深く読む →</span></a>
 <div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">410 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/lens">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/lens/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script>
 <section class="lens-sec sdesk"><h2>SOURCE DESK</h2><p class="lens-lead">この記事のもとになった2本の記事（1媒体）。すべて原文に飛びます。</p><ul><li><span class="srcbadge" data-c="de">Motorsport-Total.com</span><span>ドイツ語</span><a class="t" href="https://www.motorsport-total.com/formel-1/news/ein-paar-unterhosen-mehr-so-bereitet-sich-max-verstappen-auf-malaysia-vor-26100118" target="_blank" rel="noopener" data-track="click/lens/verstappen-sepang-heat-20261002/desk">「下着をあと何枚か」：フェルスタッペンはマレーシアにこう備える ↗</a></li><li><span class="srcbadge" data-c="de">Motorsport-Total.com</span><span>ドイツ語</span><a class="t" href="https://www.motorsport-total.com/formel-1/news/neun-jahre-spaeter-so-anders-war-die-formel-1-beim-letzten-malaysia-gp-26100121" target="_blank" rel="noopener" data-track="click/lens/verstappen-sepang-heat-20261002/desk">9年後：前回のマレーシアGPからF1はこう変わった ↗</a></li></ul></section>
 <p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p><script type="application/json" id="term-data">{"podium": ["表彰台", "決勝の上位3人がトロフィーを受ける、一段高い台。優勝チームの代表も上がる。"], "energy-management": ["エネルギーマネジメント", "電池の電気を、1周のどこでためて、どこで使うかのやりくり。2026年は速さを分ける大きな要素。"], "upgrade": ["アップグレード", "シーズン中にマシンへ足す新しい部品。空力パーツが多く、持ち込む大会が報じられる。"], "surface-abrasiveness": ["路面の粗さ", "路面がタイヤをどれだけ削るかの度合い。粗い路面ほどタイヤが傷みやすく、戦略にも響く。"], "person-max-verstappen": ["マックス・フェルスタッペン", "ドライバー（レッドブル）"]}</script><script>
