@@ -1356,6 +1356,24 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .deep-link b{font-size:clamp(17px,1.8vw,20px);line-height:1.5}
 .deep-link>span{font-size:13px;line-height:1.7;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .deep-link:hover b{text-decoration:underline;text-underline-offset:3px}
+/* top: WORLD MEDIA LENS and DEEP GRID as two equal rows in one frame (owner's choice E, 3 Oct 2026); subtitle small, on the right */
+.hero .duo{order:-1;display:grid;margin:0 0 16px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--surface)}
+.duo-row{display:flex;flex-direction:column;gap:6px;padding:16px 22px 17px 20px;color:var(--ink);text-decoration:none;border-left:6px solid}
+.duo-lens{border-left-color:#E8946C}
+.duo-deep{border-left-color:var(--ink)}
+.duo-row+.duo-row{border-top:3px double var(--ink)}
+.duo-row:hover{color:var(--ink)}
+.duo-row:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.duo-q{display:flex;justify-content:space-between;align-items:baseline;gap:12px;min-width:0}
+.duo-q small{font-size:11px;font-weight:800;letter-spacing:.2em;white-space:nowrap}
+.duo-lens .duo-q small{color:#C46A3E}
+.duo-deep .duo-q small{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:.24em;color:var(--clay)}
+.duo-q strong{font-size:12.5px;font-weight:500;color:var(--muted);letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.duo-row b{font-size:clamp(17px,1.8vw,20px);line-height:1.55;font-weight:700}
+.duo-row b i{font-style:normal;color:var(--muted);font-size:13px;margin-left:6px;font-weight:400}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .duo-lens .duo-q small{color:#E8946C}}
+:root[data-theme="dark"] .duo-lens .duo-q small{color:#E8946C}
+@media (max-width:600px){.duo-row{padding:14px 15px 15px 14px}.duo-q{gap:8px}.duo-q small{font-size:10px;letter-spacing:.12em}.duo-q strong{font-size:11px;letter-spacing:0}.duo-row b{font-size:16px}}
 .jump a.jump-deep{color:var(--clay);font-weight:700;letter-spacing:.06em}
 .dash-main .hero-in{grid-template-columns:1fr}
 .dash-main .hero-art{display:none}
@@ -1454,7 +1472,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 <section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の<b>主役</b>・<b>焦点</b>・<b>原因の説明</b>・<b>見出しの強調点</b>を読み比べました。</p></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
-        <!--pre:lens--><a class="lens-link" href="/lens/alonso-sepang-fire-20261003/"><small>WORLD MEDIA LENS · コラム</small><b>「今はやめる時じゃない」アロンソ、初ポールの地セパンで語った本音</b><span>世界の記事を読み比べたコラム →</span></a><!--/pre:lens--><!--pre:deep--><a class="deep-link" href="/deep/grid-penalty-why/" data-track="click/top/deep"><small>DEEP GRID #02<span>ニュースの、その奥へ。</span></small><b>グリッド降格はなぜ起きる？</b><span>先に結論：グリッド降格は、予選で決まったスタート位置から、決められた数だけ後ろに下げる罰。主な理由は、パワーユニットの部品を1年の上限より多く使ったときと、レース中の違反の罰をそのレースで消化できなかったときの2つだ。</span></a><!--/pre:deep-->
+        <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/alonso-sepang-fire-20261003/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>海外の見方を、日本語で。</strong></span><b>「今はやめる時じゃない」アロンソ、初ポールの地セパンで語った本音&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/grid-penalty-why/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>グリッド降格はなぜ起きる？&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div>
       </section>
       <div class="geek" id="geek" hidden>
         <section class="dbox" id="tech" aria-label="テクニカル深掘り">
