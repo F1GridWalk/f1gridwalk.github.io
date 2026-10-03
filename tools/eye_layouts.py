@@ -1,7 +1,7 @@
 """Header-image layouts for columns (owner's choice, 1 Oct 2026: big, high-contrast, click-friendly).
 
 Used by col_assets.py when the column JSON has an "eye" object. Every layout is 1280x670.
-Common optional keys: "tag" (small label, default from gpLabel), "foot" (one line at the bottom, <=30 chars).
+Common optional keys: "tag" (small label, default from gpLabel; plain "コラム" shows as "WORLD GRID · コラム"), "foot" (one line at the bottom, <=30 chars).
 Text values may contain <em> (orange highlight) and <br>. Everything else is escaped by the writer.
 
 layouts
@@ -97,6 +97,7 @@ def render(L, flags_html, height=670, extra_css=''):
     E = L['eye']
     lay = E.get('layout', 'headline')
     tag = E.get('tag') or ('速報コラム' if L.get('kind') == 'breaking' else L.get('gpLabel', 'コラム'))
+    if tag == 'コラム': tag = 'WORLD GRID · コラム'  # renamed from WORLD MEDIA LENS (owner, 3 Oct 2026)
     foot = E.get('foot')
     foot_html = f'<div class="foot" data-fit>{flags_html}{(" " + _t(foot)) if foot else ""}</div>' if (foot or flags_html) else ''
     brand = '<div class="brand">Grid Walk<small>WORLD F1 DESK</small></div>'
