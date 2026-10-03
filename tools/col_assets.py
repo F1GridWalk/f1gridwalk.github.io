@@ -15,7 +15,7 @@ regions = []
 for s in L.get('extraSources', []):
     r = s.get('region')
     if r and r != '日本' and r not in regions: regions.append(r)
-STD_TAGS = '#F1 #フォーミュラ1 #モータースポーツ #F1ニュース #海外F1 #F1好きと繋がりたい #F1GridWalk #WORLDMEDIALENS'
+STD_TAGS = '#F1 #フォーミュラ1 #モータースポーツ #F1ニュース #海外F1 #F1好きと繋がりたい #F1GridWalk #WORLDGRID'
 _t = []
 for x in ((L.get('noteTags') or '') + ' ' + STD_TAGS).split():
     if x.startswith('#') and x not in _t: _t.append(x)
@@ -66,7 +66,7 @@ open(os.path.join(out, f'note_{P}_コピー用.html'), 'w', encoding='utf-8').wr
 h1 = L.get('eyeHtml') or L.get('titleHtml') or e(TITLE)
 flags = ''.join(f'<span data-c="{FLAG.get(r,"xx")}"></span>' for r in regions[:4]) + (f'<b>{e("・".join(regions[:4]))}の記事から</b>' if regions else '')
 tpl = open(os.path.join(HERE, 'eye_template.html'), encoding='utf-8').read()
-h = (tpl.replace('{{BIG}}', e(L.get('big', ''))).replace('{{EY}}', 'WORLD MEDIA LENS · コラム')
+h = (tpl.replace('{{BIG}}', e(L.get('big', ''))).replace('{{EY}}', 'WORLD GRID · コラム')
         .replace('{{H1}}', h1).replace('{{SUB}}', e(L.get('eyeSub') or L.get('dek', '')[:40])).replace('{{FLAGS}}', flags))
 if len(e(TITLE)) > 34 and not L.get('eyeHtml'):
     h = h.replace('font-size:66px', 'font-size:52px')
