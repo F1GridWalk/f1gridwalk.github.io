@@ -313,7 +313,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                       + angle + prov + '</li>')
         arts_block = (f'<section class="tw-sec" id="tw-articles"><h2 class="tw-h">世界の記事<small>{n_media}媒体 · {len(media)}本</small></h2>'
                       '<ul class="trend-list tw-list">' + ''.join(li) + '</ul></section>')
-        if lens:
+        if lens and lens.get('guide'):  # 世界の見方 = only the 総評 guide (owner's decision, 3 Oct 2026)
             cols = []
             for gi, g in enumerate(lens['groups']):
                 scope = g.get('scope', 'others')
@@ -333,7 +333,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                             + (f'<details class="lens-src"><summary>記事を見る</summary><ul>{links}</ul></details>' if links else '')
                             + '</article>')
             hero.append('<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2>'
-                        '<p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の<b>主役</b>・<b>焦点</b>・<b>原因の説明</b>・<b>見出しの強調点</b>を読み比べました。</p>'
+                        '<p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。読みたいことに合わせて、記事を選べます。</p>'
                         '</section>')
     else:
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)

@@ -1480,7 +1480,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の5媒体が報道</span></div>
 <div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="/news/es-motorsport-antonelli-sepang-three-tenths/">メルセデス、セパンで大型アップデート投入　1周0.3秒の向上を狙う</a></h1></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。各記事の<b>主役</b>・<b>焦点</b>・<b>原因の説明</b>・<b>見出しの強調点</b>を読み比べました。</p></section><!--/pre:hero--></div>
+<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>世界の見方<span class="en">WORLD MEDIA LENS</span></h2><p class="tw-lead">このニュースを、世界の媒体はどう伝えたか。読みたいことに合わせて、記事を選べます。</p></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
         <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/alonso-sepang-fire-20261003/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>海外の見方を、日本語で。</strong></span><b>「今はやめる時じゃない」アロンソ、初ポールの地セパンで語った本音&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/grid-penalty-why/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>グリッド降格はなぜ起きる？&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div>
@@ -1819,62 +1819,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       arts.appendChild(tm);
     }
 
-    /* 3. world media lens */
-    if (lens){
+    /* 3. world media lens: only the 総評 guide (owner's decision, 3 Oct 2026) */
+    if (lens && (lens.guide || []).length){
       stepNo++;
       var ls = mk('section','tw-sec lens'); ls.id = 'tw-lens';
       var lh = stepHead(stepNo, '世界の見方', 'WORLD MEDIA LENS'); lh.classList.add('tw-h-lens'); lh.insertBefore(mk('span','tw-dot'), lh.firstChild);
       ls.appendChild(lh);
-      var twl = mk('p','tw-lead'); twl.innerHTML = 'このニュースを、世界の媒体はどう伝えたか。各記事の<b>主役</b>・<b>焦点</b>・<b>原因の説明</b>・<b>見出しの強調点</b>を読み比べました。'; ls.appendChild(twl);
-      var rows = [];
-      lens.groups.forEach(function(g){
-        if (g.scope === 'wire' || g.scope === 'official') return;
-        var gArts = (g.ids || []).map(function(id){ return byId[id]; }).filter(Boolean);
-        if (g.scope === 'others'){
-          gArts.forEach(function(a){
-            var z = a.lens || {};
-            rows.push({ flagOf:{ scope:'outlet', region:a.region }, label:a.source, sub:a.region, lead:z.lead, focus:z.focus, cause:z.cause, hook:z.hook, arts:[a] });
-          });
-        } else {
-          var srcs = {}; gArts.forEach(function(a){ srcs[a.source] = 1; }); var nSrc = Object.keys(srcs).length;
-          var sub = g.scope === 'outlet' ? g.region : g.scope === 'wire' && g.provider ? g.provider + '配信' : nSrc > 1 ? nSrc + '媒体' + (g.scope === 'country' && g.agree && nSrc > g.agree ? '（うち' + g.agree + '媒体で共通）' : '') : '';
-          rows.push({ flagOf:g, label:g.label, sub:sub, lead:g.lead, focus:g.focus, cause:g.cause, hook:g.hook, arts:gArts });
-        }
-      });
-      var ax = mk('div','lens-axes'); ax.id = 'lens-axes';
-      var open0 = state.lensOpen != null ? state.lensOpen : false; ax.hidden = !open0;
-      var axb = mk('button','axes-toggle'); axb.type = 'button';
-      axb.setAttribute('aria-expanded', String(open0)); axb.setAttribute('aria-controls','lens-axes');
-      axb.title = '主役・焦点・原因の説明・見出しの強調点で比べる';
-      axb.appendChild(document.createTextNode('4つの物差しで比べる')); var axi = mk('span','pm', open0 ? '−' : '+'); axb.appendChild(axi);
-      axb.addEventListener('click', function(){ var open = ax.hidden; ax.hidden = !open; state.lensOpen = open; axb.setAttribute('aria-expanded', String(open)); axi.textContent = open ? '−' : '+'; });
-      lh.appendChild(axb);
-      var tb = mk('div','axes');
-      var hd = mk('div','axes-row head'); ['媒体と出典','主役','焦点','原因の説明','見出しの強調点'].forEach(function(x){ hd.appendChild(mk('span', null, x)); }); tb.appendChild(hd);
-      rows.forEach(function(rw){
-        var r = mk('div','axes-row');
-        var fo = rw.flagOf;
-        r.setAttribute('data-c', (fo.scope === 'country' || fo.scope === 'outlet') ? (FLAG[fo.region] || 'xx') : 'xx');
-        var gc = mk('span','gcell');
-        var gn = mk('span','g'); gn.appendChild(lensFlag(fo)); gn.appendChild(document.createTextNode(rw.label || ''));
-        if (rw.sub) gn.appendChild(mk('small', null, rw.sub));
-        gc.appendChild(gn);
-        if (rw.arts.length){
-          var sl = mk('span','srcs'); var seen = {};
-          rw.arts.forEach(function(a){
-            var txt = a.source + (seen[a.source] && a.lens && a.lens.type ? '（' + a.lens.type + '）' : '');
-            seen[a.source] = 1;
-            var lk = artLink(a, txt); lk.title = a.title; sl.appendChild(lk);
-          });
-          gc.appendChild(sl);
-        }
-        r.appendChild(gc);
-        [['主役', rw.lead], ['焦点', rw.focus], ['原因の説明', rw.cause], ['見出しの強調点', rw.hook]].forEach(function(x){ var c2 = mk('span', null, x[1] || '—'); c2.setAttribute('data-k', x[0]); r.appendChild(c2); });
-        tb.appendChild(r);
-      });
-      ax.appendChild(tb);
-      ax.appendChild(mk('p','lens-note','国別の傾向は、同じ国の2媒体以上で切り口が共通するときだけまとめています。1媒体だけのときは媒体名で示しています。通信社の配信記事とF1公式の記事は比較に含めていません。好意的・否定的といった点数づけはせず、何を中心に据えたかだけを比べています。媒体名を押すと元の記事が開きます。'));
-      ls.appendChild(ax);
+      var twl = mk('p','tw-lead'); twl.textContent = 'このニュースを、世界の媒体はどう伝えたか。読みたいことに合わせて、記事を選べます。'; ls.appendChild(twl);
+      // the 4-axis table (主役・焦点・原因の説明・見出しの強調点) was removed (owner's decision, 3 Oct 2026); only the 総評 guide is shown
       // 総評：読みたいことで選ぶなら (owner's choice 案3, 3 Oct 2026). Shown even when the table is closed.
       var GD = (lens.guide || []).filter(function(x){ return x && x.want && (x.ids || []).some(function(id){ return byId[id]; }); });
       if (GD.length){
