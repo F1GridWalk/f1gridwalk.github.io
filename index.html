@@ -579,7 +579,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   .jump a{white-space:nowrap}
   .wrap.dash{gap:10px;padding-block:10px 28px}
   .dash-side{display:contents}
-  #raceweek{order:0}.dash-main{order:1}.dash-side>section:not(#raceweek){order:2}
+  /* race week (next GP + countdown) sits between 最新の記事 and the rulebook search (owner's request, 3 Oct 2026) */
+  .dash-main{order:1}#raceweek{order:2}.dash-side>section:not(#raceweek){order:3}
   .dbox{padding:12px 12px 10px;border-radius:16px}
   .dash-main{gap:10px}
   /* race week */
