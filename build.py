@@ -362,7 +362,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
 
 
 # ---------------------------------------------------------------------------
-# WORLD MEDIA LENS: one long-form page per race, from lens/<slug>.json
+# WORLD GRID: one long-form page per race, from lens/<slug>.json
 # ---------------------------------------------------------------------------
 LENS_CSS = '''
 .gw-next{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--clay)}
@@ -572,8 +572,8 @@ def build_lenses(arch, flag_map):
         pub = datetime.fromisoformat(L['published'])
 
         B = []
-        B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/lens/">WORLD MEDIA LENS</a> › {e(L["gpLabel"])}</nav>')
-        B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">WORLD MEDIA LENS · {e(L["gpLabel"])}</div>'
+        B.append(f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/lens/">WORLD GRID</a> › {e(L["gpLabel"])}</nav>')
+        B.append(f'<div class="lens-hero" data-big="{e(L.get("big", ""))}"><div class="lens-ey">WORLD GRID · {e(L["gpLabel"])}</div>'
                  f'<h1>{L["titleHtml"]}</h1><p class="dek">{e(L["dek"])}</p><p class="date">{e(jst_text(pub))} 公開</p>'
                  '</div>')
         if L.get('type') == 'column':
@@ -615,10 +615,10 @@ def build_lenses(arch, flag_map):
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': L['title'], 'description': L['dek'],
                     'datePublished': L['published'], 'dateModified': L.get('updated') or L['published'], 'inLanguage': 'ja',
                     'image': [ogi or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
-                    'articleSection': 'WORLD MEDIA LENS'})
+                    'articleSection': 'WORLD GRID'})
         head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
-            {'@type': 'ListItem', 'position': 2, 'name': 'WORLD MEDIA LENS', 'item': SITE + '/lens/'},
+            {'@type': 'ListItem', 'position': 2, 'name': 'WORLD GRID', 'item': SITE + '/lens/'},
             {'@type': 'ListItem', 'position': 3, 'name': L['title'], 'item': url}]})
         used = set()
         body_html = link_terms_html('\n'.join(B), used)
@@ -633,7 +633,7 @@ def build_lenses(arch, flag_map):
     if lenses:
         p0, s0, L0, u0 = lenses[0]
         # top page: LENS and DEEP GRID as two equal rows in one frame (owner's choice E, 3 Oct 2026)
-        blk = (f'<a class="duo-row duo-lens" href="/lens/{e(s0)}/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>世界の見方を、日本語で。</strong></span>'
+        blk = (f'<a class="duo-row duo-lens" href="/lens/{e(s0)}/" data-track="click/top/lens"><span class="duo-q"><small>WORLD GRID</small><strong>世界の見方を、日本語で。</strong></span>'
                f'<b>{e(L0["title"])}&#8288;<i aria-hidden="true">→</i></b></a>')
     out = re.sub(r'(<!--pre:lens-->).*?(<!--/pre:lens-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
@@ -644,10 +644,10 @@ def build_lenses(arch, flag_map):
             os.remove(old)
         return []
     items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
-    body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD MEDIA LENS</nav><h1>WORLD MEDIA LENS</h1>'
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD GRID</nav><h1>WORLD GRID</h1>'
             '<p class="lead">毎朝7時のコラムと、レース週末の金・土・日に出すグランプリ特別号。世界の媒体の記事を読み比べて、日本語ではあまり語られない話と、見出しだけでは分からないことを届けます。</p>'
             f'<ul class="lens-list">{items}</ul>')
-    write('lens/index.html', page('WORLD MEDIA LENS｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1報道を読み比べるコラム。毎朝のコラムと、レース週末のグランプリ特別号。',
+    write('lens/index.html', page('WORLD GRID｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1報道を読み比べるコラム。毎朝のコラムと、レース週末のグランプリ特別号。',
                                   SITE + '/lens/', body, f'<style>{LENS_CSS}</style>\n', og_type='website'))
     return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + \
            [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in lenses]
@@ -871,7 +871,7 @@ def build_deeps(arch, flag_map):
         if D.get('history'):
             B.append('<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist">'
                      + ''.join(f'<li><time>{e(d)}</time>{e(t)}</li>' for d, t in D['history']) + '</ul></div>')
-        # links out: TODAY (newest news on the same circuit/teams/topics), WORLD MEDIA LENS, other issues
+        # links out: TODAY (newest news on the same circuit/teams/topics), WORLD GRID, other issues
         news = [a for a in sorted(arch['articles'].values(), key=when, reverse=True)
                 if a.get('kind') != 'fan' and deep_for_article(a) is D][:5]
         if news:
@@ -879,8 +879,8 @@ def build_deeps(arch, flag_map):
                      + ''.join(item_li(a, flag_of) for a in news) + '</ul></div>')
         rel = [lens[s] for s in D.get('lensRelated', []) if s in lens]
         if rel:
-            B.append('<div class="dg-end"><h2><span class="k">WORLD MEDIA LENS</span>世界はどう報じた？</h2>'
-                     + ''.join(f'<a class="dg-card" href="/lens/{e(L["slug"])}/"><small>WORLD MEDIA LENS · {e(L["gpLabel"])}</small><b>{e(L["title"])}</b></a>' for L in rel) + '</div>')
+            B.append('<div class="dg-end"><h2><span class="k">WORLD GRID</span>世界はどう報じた？</h2>'
+                     + ''.join(f'<a class="dg-card" href="/lens/{e(L["slug"])}/"><small>WORLD GRID · {e(L["gpLabel"])}</small><b>{e(L["title"])}</b></a>' for L in rel) + '</div>')
         others = [x for x in DEEPS if x is not D][:3]
         B.append('<div class="dg-end"><h2><span class="k">DEEP GRID</span>ほかの号</h2>'
                  + ''.join(deep_card(x, 'dg-card', '読む') for x in others)
