@@ -898,7 +898,10 @@ def build_deeps(arch, flag_map):
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'DEEP GRID', 'item': SITE + '/deep/'},
             {'@type': 'ListItem', 'position': 3, 'name': D['title'], 'item': url}]})
-        write(f'deep/{slug}/index.html', page(f'{D["title"]}｜DEEP GRID｜F1グリッドウォーク', D['dek'], url, '\n'.join(B), head))
+        # the issue's own share image when deep/<slug>/og.png exists (1200x630, placed by the column desk); else the site image
+        ogp = os.path.join(ROOT, 'deep', slug, 'og.png')
+        ogi = f'{SITE}/deep/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
+        write(f'deep/{slug}/index.html', page(f'{D["title"]}｜DEEP GRID｜F1グリッドウォーク', D['dek'], url, '\n'.join(B), head, og_image=ogi, og_size=(1200, 630)))
         rows.append((url, upd, None, '0.9'))
 
     # top page slot (inside <!--pre:deep--> in index.html)
