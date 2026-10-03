@@ -1399,6 +1399,14 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .lv-btn[aria-expanded="true"] .pm{background:var(--clay)}
 .lens-verdict ul{padding:2px 16px 14px}
 .lens-verdict ul[hidden]{display:none}
+/* 総評 button sits on the line's end dot (owner's decision, 3 Oct 2026) */
+.tw-h.tw-h-lens{align-items:center;flex-wrap:nowrap;padding-top:24px !important}
+.tw-h.tw-h-lens::before{top:0 !important;height:calc(50% + 7px) !important}
+.tw-h-lens .lv-btn{flex:1 1 auto;min-width:0;padding:10px 12px 10px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface);font-size:15px}
+.tw-h-lens .lv-btn small{font-size:12px}
+.hero .lens-verdict{margin-left:22px;margin-top:8px}
+.hero .lens-verdict[hidden]{display:none}
+.hero .lens-verdict ul{padding:12px 16px 14px}
 .jump a.jump-deep{color:var(--clay);font-weight:700;letter-spacing:.06em}
 .dash-main .hero-in{grid-template-columns:1fr}
 .dash-main .hero-art{display:none}
@@ -1494,7 +1502,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の5媒体が報道</span></div>
 <div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="/news/es-motorsport-antonelli-sepang-three-tenths/">メルセデス、セパンで大型アップデート投入　1周0.3秒の向上を狙う</a></h1></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>このニュースを、世界はどう伝えた？</h2><p class="tw-lead">同じニュースでも、媒体ごとに伝え方が違います。</p></section><!--/pre:hero--></div>
+<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>総評：読みたいことで選ぶ</h2></section><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
         <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/alonso-sepang-fire-20261003/" data-track="click/top/lens"><span class="duo-q"><small>WORLD MEDIA LENS</small><strong>海外の見方を、日本語で。</strong></span><b>「今はやめる時じゃない」アロンソ、初ポールの地セパンで語った本音&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/grid-penalty-why/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>グリッド降格はなぜ起きる？&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div>
@@ -1837,20 +1845,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     if (lens && (lens.guide || []).length){
       stepNo++;
       var ls = mk('section','tw-sec lens'); ls.id = 'tw-lens';
-      var lh = stepHead(stepNo, 'このニュースを、世界はどう伝えた？'); lh.classList.add('tw-h-lens'); lh.insertBefore(mk('span','tw-dot'), lh.firstChild);
-      ls.appendChild(lh);
-      var twl = mk('p','tw-lead'); twl.textContent = '同じニュースでも、媒体ごとに伝え方が違います。'; ls.appendChild(twl);
+      // the line from 今週の注目 ends at the 総評 button itself (owner's decision, 3 Oct 2026)
+      var lh = mk('h2','tw-h tw-h-lens'); lh.appendChild(mk('span','tw-dot')); ls.appendChild(lh);
       // the 4-axis table (主役・焦点・原因の説明・見出しの強調点) was removed (owner's decision, 3 Oct 2026); only the 総評 guide is shown
       // 総評：読みたいことで選ぶなら (owner's choice 案3, 3 Oct 2026). Shown even when the table is closed.
       var GD = (lens.guide || []).filter(function(x){ return x && x.want && (x.ids || []).some(function(id){ return byId[id]; }); });
       if (GD.length){
-        var vb = mk('div','lens-verdict');
-        var ul2 = mk('ul'); ul2.id = 'lens-guide'; ul2.hidden = true;
+        var vb = mk('div','lens-verdict'); vb.id = 'lens-guide'; vb.hidden = true;
+        var ul2 = mk('ul');
         var vbt = mk('button','lv-btn'); vbt.type = 'button'; vbt.setAttribute('aria-expanded','false'); vbt.setAttribute('aria-controls','lens-guide');
         var vbl = mk('span', null, '総評：読みたいことで選ぶ'); vbl.appendChild(mk('small', null, GD.length + 'つの切り口から、記事を選べます')); vbt.appendChild(vbl);
         var vpm = mk('span','pm','+'); vbt.appendChild(vpm);
-        vbt.addEventListener('click', function(){ var op = ul2.hidden; ul2.hidden = !op; vbt.setAttribute('aria-expanded', String(op)); vpm.textContent = op ? '−' : '+'; });
-        vb.appendChild(vbt);
+        vbt.addEventListener('click', function(){ var op = vb.hidden; vb.hidden = !op; vbt.setAttribute('aria-expanded', String(op)); vpm.textContent = op ? '−' : '+'; });
+        lh.appendChild(vbt);
         GD.forEach(function(x){
           var li2 = mk('li'); li2.appendChild(mk('b', null, x.want));
           var sp = mk('span'); var seen2 = {};
