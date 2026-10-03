@@ -103,7 +103,7 @@ a:hover{color:var(--ink-2)}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:center;padding-block:56px 64px}
 .hero-text{display:flex;flex-direction:column;gap:20px}
 .chips{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;font-weight:500}
-.chip-feature{padding:5px 14px;border-radius:999px;background:var(--moss-soft);color:var(--moss-ink)}
+.chip-feature{padding:5px 14px;border-radius:999px;background:#FFE066;color:#1F2420;font-weight:800}
 .chip-cat{color:var(--muted)}
 .chip-lang{font-family:var(--latin);color:var(--clay);font-weight:400}
 .hero h1{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.8vw,44px);line-height:1.5;letter-spacing:0;text-wrap:balance}
@@ -1421,6 +1421,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .tw-h.tw-h-lens{padding-top:6px !important}
 .lv-link{margin:10px 0 0;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.02em}
 .tw-h-lens .lv-btn{border:2px solid var(--ink) !important}
+.tw-h-lens .lv-btn{background:#FFF6CC;color:#1F2420}.tw-h-lens .lv-btn small{color:#5B5F57}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tw-h-lens .lv-btn{background:#3A3420;color:var(--ink)}:root:not([data-theme="light"]) .tw-h-lens .lv-btn small{color:var(--muted)}}
+:root[data-theme="dark"] .tw-h-lens .lv-btn{background:#3A3420;color:var(--ink)}:root[data-theme="dark"] .tw-h-lens .lv-btn small{color:var(--muted)}
 .jump a.jump-deep{color:#FFFFFF;background:#8E2F3B;font-weight:800;padding:5px 11px;border-radius:999px;letter-spacing:0}
 .jump a.jump-col:hover{color:#1F2420;opacity:.9}.jump a.jump-deep:hover{color:#FFFFFF;opacity:.9}
 /* ニュース first, outlined pill (owner's choice D, 3 Oct 2026) */
