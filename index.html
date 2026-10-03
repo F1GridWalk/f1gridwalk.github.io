@@ -1414,6 +1414,17 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .top-rules .rbx form,.top-rules .rbx-in{min-width:0}
 .jump a.jump-deep{color:#FFFFFF;background:#8E2F3B;font-weight:800;padding:5px 11px;border-radius:999px;letter-spacing:0}
 .jump a.jump-col:hover{color:#1F2420;opacity:.9}.jump a.jump-deep:hover{color:#FFFFFF;opacity:.9}
+/* menu: smaller text; on wider screens every item is visible (two rows if needed) (owner's request, 3 Oct 2026) */
+@media (min-width:521px){
+  .jump .wrap{flex-wrap:wrap !important;overflow-x:visible !important;gap:6px 16px !important;font-size:12.5px !important;padding-block:8px !important}
+  .jump .wrap a{font-size:12.5px !important;padding:3px 0}
+  .jump a.jump-col,.jump a.jump-deep{padding:3px 9px !important}
+}
+@media (max-width:520px){
+  .jump .wrap a{font-size:13px !important}
+  .jump .wrap{gap:14px !important}
+  .jump a.jump-col,.jump a.jump-deep{padding:4px 9px !important}
+}
 .dash-main .hero-in{grid-template-columns:1fr}
 .dash-main .hero-art{display:none}
 .dash-main .hero-text{gap:6px}
