@@ -1,0 +1,19 @@
+<!doctype html><meta charset=utf-8><style>
+body{margin:0}.c{width:1280px;height:670px;position:relative;overflow:hidden;background:#1F2420;color:#fff;font-family:'Noto Sans CJK JP',sans-serif}
+em{font-style:normal;color:#FFB089}
+.pil{position:absolute;left:0;top:0;width:250px;height:670px;background:#E8946C;color:#1F2420;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.vt{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font:700 300px Georgia,serif;line-height:1}
+.r{position:absolute;left:290px;right:36px;top:24px;bottom:110px;display:flex;flex-direction:column;justify-content:center}
+.l{font-weight:900;white-space:nowrap;line-height:1.12;font-size:300px;letter-spacing:-.02em;display:inline-block}
+.l small{font-size:.35em;color:#fff;margin-left:.1em}
+.big{font-family:Georgia,serif;font-weight:700}
+.s{position:absolute;left:290px;right:260px;bottom:40px;font-size:32px;font-weight:700;color:#D9D4C8;white-space:nowrap}
+.br{position:absolute;right:36px;bottom:32px;font:700 26px Georgia,serif}.br small{display:block;font:700 10px 'Noto Sans CJK JP';letter-spacing:.24em;opacity:.7}
+</style><div class=c><div class=pil><b class=vt>WORLD GRID</b></div><div class=r><div class=l>F1ノリス</div><div class="l"><em>1〜2km/h</em></div></div><div class=s>最高速が足りない — 原因はまだ絞れず</div><div class=br>Grid Walk<small>WORLD F1 DESK</small></div></div>
+<script>
+function fitW(el,w){let f=parseFloat(getComputedStyle(el).fontSize);while(el.scrollWidth>w&&f>10){f-=2;el.style.fontSize=f+'px'}}
+const vt=document.querySelector('.vt');let f=300;while((vt.getBoundingClientRect().height>640||vt.getBoundingClientRect().width>240)&&f>20){f-=2;vt.style.fontSize=f+'px'}
+const r=document.querySelector('.r');const W=r.clientWidth;document.querySelectorAll('.l').forEach(el=>fitW(el,W));
+let n=0;while(r.scrollHeight>r.clientHeight&&n++<200)document.querySelectorAll('.l').forEach(el=>el.style.fontSize=(parseFloat(getComputedStyle(el).fontSize)-2)+'px');
+fitW(document.querySelector('.s'),document.querySelector('.s').clientWidth);
+</script>

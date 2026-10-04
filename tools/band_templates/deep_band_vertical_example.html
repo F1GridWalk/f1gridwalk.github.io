@@ -1,0 +1,23 @@
+<!doctype html><meta charset=utf-8><style>
+body{margin:0}.c{width:1280px;height:670px;position:relative;overflow:hidden;background:#F3EFE8;color:#1F2420;font-family:'Noto Sans CJK JP',sans-serif}
+em{font-style:normal;color:#A8532F}
+.pil{position:absolute;left:0;top:0;width:330px;height:670px;background:#1F2420;color:#E8946C;font-family:Georgia,serif;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:hidden}
+.st{width:300px;display:flex;flex-direction:column;align-items:center;margin:auto 0}
+.st .f{display:inline-block;white-space:nowrap;line-height:.95;font-size:300px}
+.st i{font-style:normal;color:#fff;border-top:6px solid #E8946C;margin-top:14px;padding-top:10px}
+.vt{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font-size:400px;line-height:1;margin-top:18px}
+.vn{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-style:normal;color:#fff;font-size:70px}
+.r{position:absolute;left:370px;right:40px;top:28px;bottom:90px;display:flex;flex-direction:column;justify-content:center}
+.l{font-weight:900;white-space:nowrap;line-height:1.12;font-size:300px;letter-spacing:-.02em;display:inline-block}
+.l br+*{}
+.big{font-family:Georgia,serif;font-weight:700;line-height:.9}.big small{font-size:.4em}
+.br{position:absolute;right:40px;bottom:30px;font:700 26px Georgia,serif}.br small{display:block;font:700 10px 'Noto Sans CJK JP';letter-spacing:.24em;opacity:.7}
+</style><div class=c><div class=pil><b class=vt>DEEP GRID</b><i class=vn>#05</i></div><div class=r><div class=l>F1 雨のタイヤの</div><div class="l"><em style="color:#2E9E3E">緑</em>と<em style="color:#1F6FC4">青</em></div></div><div class=br>Grid Walk<small>WORLD F1 DESK</small></div></div>
+<script>
+function fitW(el,w){let f=parseFloat(getComputedStyle(el).fontSize);while(el.scrollWidth>w&&f>10){f-=2;el.style.fontSize=f+'px'}}
+document.querySelectorAll('.st .f').forEach(el=>fitW(el,296));
+const st=document.querySelector('.st');if(st){let n=0;while(st.getBoundingClientRect().height>640&&n++<200)st.querySelectorAll('.f').forEach(el=>el.style.fontSize=(parseFloat(getComputedStyle(el).fontSize)-2)+'px')}
+const vt=document.querySelector('.vt');if(vt){let f=400;while((vt.getBoundingClientRect().height>560||vt.getBoundingClientRect().width>320)&&f>20){f-=2;vt.style.fontSize=f+'px'}}
+const r=document.querySelector('.r');const W=r.clientWidth;document.querySelectorAll('.l').forEach(el=>fitW(el,W));
+let n=0;while(r.scrollHeight>r.clientHeight&&n++<300)document.querySelectorAll('.l').forEach(el=>el.style.fontSize=(parseFloat(getComputedStyle(el).fontSize)-2)+'px');
+</script>
