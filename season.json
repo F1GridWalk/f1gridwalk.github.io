@@ -1,16 +1,16 @@
 {
- "updatedAt": "2026-10-03T18:40:00+09:00",
+ "updatedAt": "2026-10-04T20:45:00+09:00",
  "season": 2026,
  "standingsAfter": {
-  "round": 15,
-  "gp": "アゼルバイジャンGP"
+  "round": 16,
+  "gp": "バーレーンGP（マレーシア開催）"
  },
  "drivers": [
   {
    "pos": 1,
    "name": "アントネッリ",
    "team": "mercedes",
-   "pts": 302
+   "pts": 320
   },
   {
    "pos": 2,
@@ -22,43 +22,43 @@
    "pos": 3,
    "name": "ハミルトン",
    "team": "ferrari",
-   "pts": 199
+   "pts": 214
   },
   {
    "pos": 4,
-   "name": "ノリス",
-   "team": "mclaren",
-   "pts": 186
+   "name": "ルクレール",
+   "team": "ferrari",
+   "pts": 191
   },
   {
    "pos": 5,
-   "name": "ルクレール",
-   "team": "ferrari",
-   "pts": 179
+   "name": "ノリス",
+   "team": "mclaren",
+   "pts": 188
   },
   {
    "pos": 6,
    "name": "フェルスタッペン",
    "team": "redbull",
-   "pts": 163
+   "pts": 188
   },
   {
    "pos": 7,
    "name": "ピアストリ",
    "team": "mclaren",
-   "pts": 120
+   "pts": 128
   },
   {
    "pos": 8,
    "name": "ハジャー",
    "team": "redbull",
-   "pts": 86
+   "pts": 96
   },
   {
    "pos": 9,
    "name": "ローソン",
    "team": "racingbulls",
-   "pts": 59
+   "pts": 65
   },
   {
    "pos": 10,
@@ -71,27 +71,27 @@
   {
    "pos": 1,
    "team": "mercedes",
-   "pts": 538
+   "pts": 556
   },
   {
    "pos": 2,
    "team": "ferrari",
-   "pts": 378
+   "pts": 405
   },
   {
    "pos": 3,
    "team": "mclaren",
-   "pts": 306
+   "pts": 316
   },
   {
    "pos": 4,
    "team": "redbull",
-   "pts": 263
+   "pts": 298
   },
   {
    "pos": 5,
    "team": "racingbulls",
-   "pts": 83
+   "pts": 90
   },
   {
    "pos": 6,
@@ -116,7 +116,7 @@
   {
    "pos": 10,
    "team": "astonmartin",
-   "pts": 3
+   "pts": 7
   },
   {
    "pos": 11,
@@ -125,38 +125,37 @@
   }
  ],
  "weekend": {
-  "round": 16,
-  "gp": "バーレーンGP（マレーシア開催）",
-  "circuit": "sepang",
-  "laps": 56,
-  "lengthKm": 5.543,
-  "note": "今年のバーレーンGPは、マレーシアのセパン・サーキットで開催されます。",
+  "round": 17,
+  "gp": "シンガポールGP",
+  "circuit": "singapore",
+  "laps": 62,
+  "lengthKm": 4.927,
+  "note": "スプリント形式の週末です。",
   "sessions": [
    {
     "name": "フリー走行1",
-    "start": "2026-10-02T04:30:00Z",
-    "end": "2026-10-02T05:30:00Z"
+    "start": "2026-10-09T08:30:00Z",
+    "end": "2026-10-09T09:30:00Z"
    },
    {
-    "name": "フリー走行2",
-    "start": "2026-10-02T08:00:00Z",
-    "end": "2026-10-02T09:00:00Z"
+    "name": "スプリント予選",
+    "start": "2026-10-09T12:30:00Z",
+    "end": "2026-10-09T13:14:00Z"
    },
    {
-    "name": "フリー走行3",
-    "start": "2026-10-03T04:30:00Z",
-    "end": "2026-10-03T05:30:00Z"
+    "name": "スプリント",
+    "start": "2026-10-10T09:00:00Z",
+    "end": "2026-10-10T09:30:00Z"
    },
    {
     "name": "予選",
-    "start": "2026-10-03T08:00:00Z",
-    "end": "2026-10-03T09:00:00Z",
-    "result": "ポール: フェルスタッペン"
+    "start": "2026-10-10T13:00:00Z",
+    "end": "2026-10-10T14:00:00Z"
    },
    {
     "name": "決勝",
-    "start": "2026-10-04T07:00:00Z",
-    "end": "2026-10-04T09:00:00Z"
+    "start": "2026-10-11T12:00:00Z",
+    "end": "2026-10-11T14:00:00Z"
    }
   ]
  },
@@ -284,7 +283,8 @@
    "round": 16,
    "gp": "バーレーンGP（マレーシア開催）",
    "circuit": "sepang",
-   "date": "2026-10-04"
+   "date": "2026-10-04",
+   "winner": "フェルスタッペン"
   },
   {
    "round": 17,
