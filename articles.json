@@ -1,21 +1,9 @@
 {
- "updatedAt": "2026-10-05T00:25:00+09:00",
+ "updatedAt": "2026-10-05T06:25:00+09:00",
  "topics": {
-  "sepang-fp1-verstappen": {
-   "title": "セパン初日FP1、フェルスタッペンが最速　アップデートのメルセデスはラッセル2番手",
-   "summary": "バーレーンGP（マレーシア開催）のFP1はフェルスタッペンが最速で、ラッセルが0.383秒差の2番手、ハジャーが3番手だった。大型アップデートを投入したメルセデスだが、アントネッリは5番手で1秒以上遅れ、無線ではタイヤ劣化の大きさも伝えられた。マクラーレンは11、12番手と苦戦し、路面温度は57℃に達する難しい条件だった。"
-  },
-  "sepang-fp2-leclerc": {
-   "title": "セパンFP2はルクレールが最速、上位4チームが0.5秒以内の接戦",
-   "summary": "セパン2日目のFP2は、ルクレール（フェラーリ）が1分37秒528でトップに立ち、ハジャー（レッドブル）、ノリスが0.1秒前後の差で続いた。降雨予報に反してドライのまま行われ、フェラーリ、レッドブル、マクラーレンが拮抗した。一方、大型更新を投入したメルセデスはラッセルが7番手、アントネッリが8番手と伸びず、タイヤ過熱への対応が課題とされる。"
-  },
   "sepang-friday-longruns": {
    "title": "セパン金曜のロングラン分析、フェルスタッペン最速も劣化は1周0.3秒",
    "summary": "FP2のロングランではフェルスタッペンが最速で、ラッセル、ルクレール、ノリスの順に続いた。ソフトもミディアムも劣化は1周0.2〜0.3秒と大きく、2ストップ以上の作戦が有力視されている。レッドブルはFP2でソフトを使わず、雨のリスクを考えてミディアムのロングランを優先した。各チームはハードを温存し、日曜の戦略にはまだ不確定要素が多い。"
-  },
-  "hamilton-bortoleto-impeding": {
-   "title": "ハミルトンに走行妨害の警告、フェラーリには罰金1万ユーロ",
-   "summary": "FP2のターン9で、クールダウン周のハミルトンがボルトレートの走行を妨げたとして審議され、ハミルトンは警告にとどまった。右ミラーの損傷で後方が見えにくかったとされるが、スチュワードは故障を把握していたフェラーリが無線で警告すべきだったとして1万ユーロの罰金を科した。"
   },
   "sepang-slower-than-simulation": {
    "title": "セパンのラップタイム、ピレリのシミュレーションより約4.5秒遅い",
@@ -203,12 +191,14 @@
       "points": [
        "Il Post（イタリア）：約1年ぶりの勝利を見出しに",
        "GPblog（オランダ）：リスタートでの2台抜きを軸に",
-       "Le Blog Auto（フランス）：「狂ったレース」と選手権"
+       "Le Blog Auto（フランス）：「狂ったレース」と選手権",
+       "Grande Prêmio（ブラジル）：5つの教訓で総括"
       ],
       "ids": [
        "it-ilpost-verstappen-torna-vincere",
        "nl-gpblog-verstappen-eerste-zege-sepang",
-       "fr-leblogauto-sepang-course-folle"
+       "fr-leblogauto-sepang-course-folle",
+       "pt-grandepremio-cinco-licoes-malasia"
       ]
      }
     ],
@@ -251,9 +241,219 @@
   "ferrari-sepang-slicks-gamble": {
    "title": "フェラーリのスリック選択が外れ、ハミルトンは18番手から3位へ",
    "summary": "ウェットの路面でスリックタイヤを選んだフェラーリは、序盤に大きく順位を落とした。ハミルトンは3位、ルクレールは4位まで挽回し、フェラーリの5戦続いた表彰台なしは終わった。ハミルトンは判断を冗談めかして振り返り、ルクレールはペース不足への不満を口にした。"
+  },
+  "hadjar-sepang-slow": {
+   "title": "ハジャー、セパン決勝はフェルスタッペンに大きく遅れ「悲惨な週末」",
+   "summary": "レッドブルのハジャーはエンジン交換のペナルティで8番手からスタートし、5位でフィニッシュした。フェルスタッペンに対し1周あたり約0.9〜1秒遅く、本人はシャシーのグリップ不足が主因だと話した。最後のセーフティカー再開ではバッテリーの電力も減ったという。"
+  },
+  "alonso-sepang-points": {
+   "title": "アロンソがセパンで8位入賞、アストンマーティンの今季ベスト",
+   "summary": "アロンソは混走路面でスリックを選ぶ判断の誤りを、セーフティカーを生かして挽回し8位に入った。アストンマーティンの今季最高位で、本人は「フェラーリより速かった」と手応えを語った。一方でクラック代表は、毎戦ポイントを取れるペースはないとも述べている。"
   }
  },
  "articles": [
+  {
+   "id": "de-formel1-hadjar-sepang-slow",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-sepang-slow",
+   "title": "ハジャー「これは冗談だ」セパンでフェルスタッペンに1周約1秒遅れた理由",
+   "summary": "レッドブルのハジャーは予選3番手ながらペナルティで8番手スタートとなり、決勝は5位に終わった。フェルスタッペンと比べて1周あたり約1秒遅く、本人はシャシーのグリップ不足を原因に挙げ「冗談のようなクルマ」と表現した。最後のセーフティカー再開ではバッテリーの電力も失ったと話している。タイヤの摩耗も序盤並みに進んだと不満を述べた。",
+   "orig": "\"Es ist ein Witz\": Wieso war Isack Hadjar in Sepang so langsam?",
+   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-04/es-ist-ein-witz-wieso-war-isack-hadjar-in-sepang-so-langsam",
+   "published": "2026-10-04T18:12:00+02:00"
+  },
+  {
+   "id": "es-motorsport-hadjar-desastre",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com España",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-sepang-slow",
+   "title": "ハジャー、セパンの決勝を「悲惨」と振り返る　表彰台を逃し5位",
+   "summary": "レッドブルのハジャーは終盤まで表彰台圏にいたが5位でフィニッシュし、「クルマは運転しづらく、悲惨な週末だった」と語った。エンジン交換のペナルティで8番手からスタートし、最後の再開でバッテリー残量が減ったと説明する。フェルスタッペンに対する1周あたりの遅れは約0.88秒で、原因はエンジンよりシャシーだと見ている。",
+   "orig": "Hadjar lamenta una carrera \"desastrosa\" en Sepang con un Red Bull \"horrible\"",
+   "url": "https://es.motorsport.com/f1/news/declaraciones-hadjar-carrera-sepang-bahrein-2026/10862051/",
+   "published": "2026-10-04T17:28:00+02:00"
+  },
+  {
+   "id": "de-formel1-alonso-sepang-points",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-sepang-points",
+   "title": "アロンソがセパンで8位入賞、アストンマーティンの今季ベスト",
+   "summary": "アロンソは混走路面でスリックを選ぶ判断ミスがあったが、セーフティカーで巻き返して8位に入った。アストンマーティンの今季最高位で、終盤はチャンピオンのノリスの追撃を抑えた。アロンソは「フェラーリより速かった」と話し、クラック代表は「毎戦ポイントを取れるペースはない」と述べた。同日ラッセルのリタイアとノリスのミスも順位を押し上げた。",
+   "orig": "Eintagsfliege oder Trendwende? Fernando Alonso wieder in den Punkten",
+   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-04/eintagsfliege-oder-trendwende-fernando-alonso-wieder-in-den-punkten",
+   "published": "2026-10-04T19:06:00+02:00"
+  },
+  {
+   "id": "it-formula1it-alonso-sepang-points",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-sepang-points",
+   "title": "アロンソ「私のベストレースの一つ」セパンで8位、シンガポールに期待",
+   "summary": "アロンソはセパンで8位となり、アストンマーティンの今季最高の結果を持ち帰った。雨と晴れが交互に来てセーフティカーが2度入る難しいレースで、セーフティカー前にはハミルトンを抜いていたという。本人は「キャリア最高のレースだが8位では誰も覚えていない」と話し、シンガポールでさらに良い結果を期待している。今季は契約を更新したばかりである。",
+   "orig": "Alonso porta punti all'Aston Martin: «Una delle mie gare più belle»",
+   "url": "https://www.formula1.it/news/33044/1/alonso-porta-punti-all-aston-martin-una-delle-mie-gare-piu-belle",
+   "published": "2026-10-04T20:00:00+02:00"
+  },
+  {
+   "id": "es-motorsport-vasseur-defiende-neumaticos",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com España",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-sepang-slicks-gamble",
+   "title": "ヴァスール、フェラーリのタイヤ選択を擁護「確信があるなら両車で行くべき」",
+   "summary": "フェラーリのヴァスール代表は、ハミルトンとルクレールの両方をスリックで送り出した判断を擁護した。「ある選択肢が良いと確信するなら、両ドライバーを同じ方向に賭けるべきだ」と述べ、マクラーレンやレッドブルも同様に揃えたと指摘した。結果として2人は大きく遅れたが、ハミルトンは3位、ルクレールは4位まで挽回している。",
+   "orig": "Vasseur defiende la elección de neumáticos de Ferrari: \"Si estás convencido, debes hacerlo\"",
+   "url": "https://es.motorsport.com/f1/news/vasseur-defiende-eleccion-neumaticos-ferrari-sepang-2026/10862046/",
+   "published": "2026-10-04T17:00:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-ferrari-verklaart-blunder",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-sepang-slicks-gamble",
+   "title": "フェラーリが説明する「大失敗」の経緯、ハミルトンは「あのチームとはカジノに行かない」",
+   "summary": "フェラーリのヴァスール代表は、ハミルトンとルクレールをスリックでスタートさせた理由を説明した。路面がすぐ乾くと見込み、当時の情報では論理的に思えた判断で、グリッドの半数はスリック、半数はインターミディエイトを選んだという。ハミルトンはペースの良さを認めつつ、「あのメンバーとカジノには行かない」と冗談交じりに語った。",
+   "orig": "Ferrari verklaart gigantische blunder die Hamilton mogelijke zege kostte",
+   "url": "https://www.gpblog.com/nl/nieuws/ferrari-verklaart-gigantische-blunder-die-hamilton-mogelijke-zege-kostte",
+   "published": "2026-10-04T21:39:00+02:00"
+  },
+  {
+   "id": "es-motorsport-fia-software-explicado",
+   "kind": "tech",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Motorsport.com España",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "解説：FIAのソフトウェア不具合がセパンで複数車の加速を止めた仕組み",
+   "summary": "雨の際に出力を250kWに抑えるFIAのソフトウェアが、極端な低速域で誤作動したとされる。FIAのトンバジス技術部長は、遅い車が詰まって一部が完全に止まり、その後は出力を出せなくなったと説明した。FIAは特定区間の出力制限を外す修正を作り、約40分の中断中に各チームが導入した。このような低速域の条件では試験されていなかったという。",
+   "orig": "Explicado: por qué el software de la FIA dejó sin acelerador a varios F1 en Sepang",
+   "url": "https://es.motorsport.com/f1/news/explicado-software-dejo-sin-acelerador-varios-coches/10862017/",
+   "published": "2026-10-04T16:30:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-piloten-software-onacceptabel",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "ソフトウェア不具合にドライバーが声、ペレス「スポーツとして全く受け入れられない」",
+   "summary": "ウォームアップ中のソフトウェア不具合で、フェルスタッペンやハミルトンらの車が時速30km前後まで遅くなった。ハミルトンは一度止まってエンジンを切り再始動したと語り、ペレスは「全く受け入れられない」と批判した。FIAのトンバジス技術部長は「明らかにFIAのソフトウェアで、我々がもっと改善すべきだ」と責任を認めている。",
+   "orig": "Verstappen krijgt bijval na bizarre motorchaos: 'Totaal onacceptabel'",
+   "url": "https://www.gpblog.com/nl/nieuws/verstappen-krijgt-bijval-na-bizarre-motorchaos-totaal-onacceptabel",
+   "published": "2026-10-04T22:20:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-antonelli-kampioen-vroegst",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "分析",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-title-timeline",
+   "title": "アントネッリとメルセデス、タイトル決定は最短でどこか　アメリカGPが最初の機会",
+   "summary": "アントネッリはラッセルに84点差をつけ、メルセデスはフェラーリに151点差でコンストラクターズ首位に立つ。記事の計算では、2人とも最短の決定機会はオースティンのアメリカGPで、ドライバーズは126点以上の差が条件となる。カタールとアブダビが中止されイモラだけが代替になれば、レースなしでアントネッリの戴冠が決まる可能性にも触れている。",
+   "orig": "Wanneer kunnen Antonelli en Mercedes op zijn vroegst kampioen worden?",
+   "url": "https://www.gpblog.com/nl/nieuws/wanneer-kunnen-antonelli-en-mercedes-op-zijn-vroegst-kampioen-worden",
+   "published": "2026-10-04T19:29:00+02:00"
+  },
+  {
+   "id": "it-formula1it-racingbulls-sepang-punti",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "circuit": "sepang",
+   "teams": [
+    "racingbulls"
+   ],
+   "topic": "racingbulls-sepang-points",
+   "title": "荒れたセパンでもレーシングブルズは堅実、ローソンとリンドブラッドが揃って入賞",
+   "summary": "レーシングブルズはセパンでローソンとリンドブラッドが2台そろって入賞した。ローソンは「コンストラクターズ5位争いを続けている」と述べ、リンドブラッドはピットストップとセーフティカーが続いた一日を「素晴らしい結果」と振り返った。次戦はスプリント形式のシンガポールで、チームは引き続きポイント獲得を狙う。",
+   "orig": "Sepang caotica, ma la Racing Bulls non sbaglia: ancora a punti Lawson e Lindblad",
+   "url": "https://www.formula1.it/news/33049/1/sepang-caotica-ma-la-racing-bulls-non-sbaglia-ancora-a-punti-lawson-e-lindblad",
+   "published": "2026-10-04T20:20:00+02:00"
+  },
+  {
+   "id": "pt-grandepremio-cinco-licoes-malasia",
+   "kind": "news",
+   "lang": "pt",
+   "region": "ブラジル",
+   "source": "Grande Prêmio",
+   "cat": "分析",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "astonmartin"
+   ],
+   "topic": "sepang-race-verstappen-wins",
+   "title": "機械の反乱からアロンソの粘りまで、セパンのF1から学んだ5つのこと",
+   "summary": "ブラジルのGrande Prêmioは、セパンの決勝から5点を挙げた。複数車の出力喪失で約50分の中断が出たことと、フェルスタッペンが今季初勝利を挙げたことが柱である。フェラーリのスリック賭けの失敗、アロンソの8位入賞、サインツとの接触で入賞を逃したボルトレートも取り上げている。記事はフェラーリの失敗を繰り返される戦略ミスとも指摘する。",
+   "orig": "Da revolta das máquinas ao garoto Alonso: 5 coisas que aprendemos com a F1 na Malásia",
+   "url": "https://grandepremio.com/br/f1/da-revolta-das-maquinas-ao-garoto-alonso-5-coisas-que-aprendemos-com-a-f1-na-malasia/",
+   "published": "2026-10-04T12:00:00-03:00",
+   "lens": {
+    "type": "総括",
+    "lead": "各チーム",
+    "focus": "5つの教訓",
+    "cause": "機械の不具合とフェラーリの賭け",
+    "hook": "機械の反乱とアロンソ"
+   }
+  },
   {
    "id": "de-motorsport-total-bahrain-analyse-norris-audi",
    "kind": "news",
@@ -1610,212 +1810,6 @@
    "orig": "What we really learned from F1 2026's most confusing Friday",
    "url": "https://www.the-race.com/formula-1/what-we-really-learned-from-f1-2026-most-confusing-friday/",
    "published": "2026-10-02T12:00:00+01:00"
-  },
-  {
-   "id": "en-rn365-hamilton-mirror-impeding",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari",
-    "audi"
-   ],
-   "topic": "hamilton-bortoleto-impeding",
-   "title": "ハミルトンは走行妨害で警告、フェラーリはミラー損傷を伝えず罰金1万ユーロ",
-   "summary": "FP2のターン9で、ハミルトンはクールダウン周を時速80〜85km程度で走っていたところへ、時速約240kmのボルトレートが接近し、妨害として審議された。ハミルトン側は右ミラーが損傷して後方が見えにくかったと主張した。スチュワードは、ミラーの故障を把握していたフェラーリが後方の速い車を無線で知らせるべきだったとして、ハミルトンに警告、チームに1万ユーロの罰金を科した。",
-   "orig": "Lewis Hamilton learns fate over faulty Ferrari mirror that angered F1 rival",
-   "url": "https://racingnews365.com/lewis-hamilton-learns-fate-over-faulty-ferrari-mirror-that-angered-f1-rival",
-   "published": "2026-10-02T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-sepang-fp1-verstappen",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "分析",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sepang-fp1-verstappen",
-   "title": "セパン初日のFP1、フェルスタッペンが大型アップデートのメルセデスを抑えて最速",
-   "summary": "フェルスタッペンはFP1でラッセルのメルセデスに0.383秒差をつけて最速となり、3番手はハジャー、4番手はルクレールだった。路面温度は57℃に達し、グリップの低い難しい条件だったという。新パッケージを投入したメルセデスは無線でタイヤ劣化が他より大きいと伝え、マクラーレンの2台は11番手と12番手に沈んだ。",
-   "orig": "Verstappen beats upgraded Mercedes in Sepang practice one",
-   "url": "https://www.the-race.com/formula-1/bahrain-grand-prix-practice-one-2026/",
-   "published": "2026-10-02T12:00:00+01:00"
-  },
-  {
-   "id": "nl-gpblog-wache-verstappen-no-soft-run",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sepang-friday-longruns",
-   "title": "ワシェ技術責任者、フェルスタッペンがFP2でソフトを使わなかった理由を説明",
-   "summary": "レッドブルのワシェ技術責任者は、フェルスタッペンがFP2でソフトタイヤを履かなかったのは、まだ走っていなかったミディアムのロングランを優先したためだと説明した。降雨の可能性があり、取り損ねるリスクを避けて早めにロングランへ切り替えたという。路面温度は60℃に達し、このタイプのマシンでは経験のない条件だとも語った。ハジャーはFP1が3番手、FP2が2番手で、ブレーキの問題を決勝前に解決したい考えだ。",
-   "orig": "Waché verklaart waarom Verstappen geen run op de zachte band reed in Maleisië",
-   "url": "https://www.gpblog.com/nl/nieuws/wache-verklaart-waarom-verstappen-geen-run-op-de-zachte-band-reed-in-maleisie",
-   "published": "2026-10-02T12:43:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-sepang-fp2-leclerc",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sepang-fp2-leclerc",
-   "title": "セパンFP2はルクレールが最速　フェルスタッペンは乗り味に不満、メルセデスは苦戦",
-   "summary": "ルクレールが1分37秒528でFP2最速となり、ハジャーとノリスが0.1秒前後の差で続いて、フェラーリ、レッドブル、マクラーレンが拮抗した。フェルスタッペンは無線で、また乗り味が悪く、運転席での座り方まで宝くじのようだと不満を述べた。更新を入れたメルセデスはラッセルが7番手、アントネッリが8番手で、ラッセルはタイヤの過熱が原因で夜の間に調整が必要だと語った。",
-   "orig": "Freitag Sepang: Leclerc Schnellster, Verstappen \"wie in der Lotterie\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/freitag-sepang-leclerc-schnellster-verstappen-wie-in-der-lotterie-26100211",
-   "published": "2026-10-02T12:16:00+02:00"
-  },
-  {
-   "id": "es-motorsport-honda-sepang-friday",
-   "kind": "tech",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-sepang-friday",
-   "title": "ホンダ、セパン初日は「シミュレーターより良好」　アロンソ14・15番手",
-   "summary": "アストンマーティンはセパン初日を終え、アロンソがFP1で14番手、FP2で15番手、ストロールは両セッションとも18番手だった。ホンダのオリハラ氏（HRCトラックサイド責任者）は、エネルギー管理を両セッション中に調整し、来場前のシミュレーターより良い結果が得られたと述べた。2日間の周回数は合計95周で、高温による冷却の課題とセットアップの修正を夜通しで進める。",
-   "orig": "Honda F1 se ve mejor en Sepang de lo que decía el simulador",
-   "url": "https://es.motorsport.com/f1/news/honda-conclusiones-viernes-sepang/10861064/",
-   "published": "2026-10-02T12:04:00+02:00"
-  },
-  {
-   "id": "it-formula1-sepang-seven-teams-updates",
-   "kind": "tech",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes",
-    "ferrari",
-    "redbull"
-   ],
-   "topic": "mercedes-sepang-upgrade",
-   "title": "セパンで7チームがマシンを更新、メルセデスはW17の7か所を変更",
-   "summary": "セパンでは7チームが技術更新を申告し、マクラーレンはエンジンカバー、レッドブルはフロアボード、フェラーリはディフューザーのウィングレットなどを改めた。なかでもメルセデスはW17の7か所に手を入れた最大規模の内容で、狙いは局所的なダウンフォースと後方への気流の質の向上だとされる。ウィリアムズ、アストンマーティン、アウディ、キャデラックは更新なしだった。",
-   "orig": "Sette team aggiornano le monoposto a Sepang: Mercedes stravolge la W17",
-   "url": "https://www.formula1.it/news/32905/1/sette-team-aggiornano-le-monoposto-a-sepang-mercedes-stravolge-la-w17",
-   "published": "2026-10-02T12:00:00+02:00",
-   "lens": {
-    "type": "分析",
-    "lead": "各チーム",
-    "focus": "7チームの更新比較",
-    "cause": "局所的なダウンフォース改善",
-    "hook": "メルセデスが最大規模"
-   }
-  },
-  {
-   "id": "en-therace-vowles-cost-cap-two-tier",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "ビジネス",
-   "teams": [
-    "williams"
-   ],
-   "topic": "vowles-cost-cap-two-tier",
-   "title": "ボウルズ「予算上限がF1を二層構造にした」、上位4チームが得点の83％を獲得",
-   "summary": "ウィリアムズのボウルズ代表は、マレーシアでの会見で予算上限が競争の均衡ではなく格差を広げたと批判した。2021年以降、上位4チームが選手権ポイントの83％を得ており、従来の約70％から上昇したという。中団勢は今季の改良に投資すると来季以降の開発が犠牲になる構図にあり、同じ性能の車を作るにも約3割多く費用がかかると訴えた。",
-   "orig": "Cost cap creating 'two-tier' F1 - Vowles",
-   "url": "https://www.the-race.com/formula-1/cost-cap-creating-two-tier-f1/",
-   "published": "2026-10-02T11:00:00+01:00"
-  },
-  {
-   "id": "de-motorsport-total-sepang-fp1-verstappen",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sepang-fp1-verstappen",
-   "title": "フェルスタッペンが圧倒的な最速、マレーシアでの初回走行を振り返る",
-   "summary": "セパンでのFP1はフェルスタッペンが1分37秒520で最速となり、ラッセルが0.383秒差の2番手、ハジャーが3番手だった。ポイントリーダーのアントネッリはアップデートがあっても5番手で、1秒以上遅れたことが目を引いた。チームは予選用ではなくレース想定のセットアップを優先したとされ、猛暑と高い湿度も話題になった。",
-   "orig": "Souveräne Bestzeit von Verstappen: So lief das erste Training in Malaysia",
-   "url": "https://www.motorsport-total.com/formel-1/news/souveraene-bestzeit-von-verstappen-so-lief-das-erste-training-in-malaysia-26100204",
-   "published": "2026-10-02T11:00:00+02:00"
-  },
-  {
-   "id": "it-formula1-2027-macarena-wings-transition-time",
-   "kind": "tech",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "テクニカル",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mclaren"
-   ],
-   "topic": "2027-active-wing-transition-time",
-   "title": "2027年規則の改訂案、可動ウイングの切り替え時間短縮で「マカレナ型」が不利に？",
-   "summary": "FIAは2027年技術規則の改訂案で、可動ウイングが故障した場合にコーナーモードへ戻る仕組みを必須とした。背景にはフェルスタッペンが経験したレッドブルの可動ウイングのトラブルがあるという。モード切り替えの所要時間は400ミリ秒から300ミリ秒に短縮される。回転式のウイングを使うフェラーリ、レッドブル、マクラーレンは、メルセデス型の方式より大きな動きが必要になり、設計の見直しを迫られる可能性があると記事は指摘する。",
-   "orig": "Regolamento 2027: le ali tipo «macarena» saranno penalizzate?",
-   "url": "https://www.formula1.it/news/32975/1/regolamento-2027-le-ali-tipo-macarena-saranno-penalizzate",
-   "published": "2026-10-02T08:15:00+02:00"
-  },
-  {
-   "id": "ja-f1jouhou-sepang-final-corner-rule",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "circuit": "sepang",
-   "topic": "sepang-final-corner-rule",
-   "title": "FIA、セパン最終コーナーでブレーキをミスしてコーン右側を通ると強制ピットか　ファンの反応",
-   "summary": "F1情報通が取り上げたのは、セパンの最終コーナーでブレーキングをミスしてコーンの右側を通った場合、強制的にピットインさせるというFIAの運用が話題になったという件。コース幅はセパンが16〜25メートルで、鈴鹿の10〜16メートルより広いとの書き込みもあった。スレッドでは、1周目に自滅のペナルティが続出しかねない罠のようなルールだと面白がる声が多く、セパンのコース設計を評価する意見も見られたという。",
-   "orig": "FIA「F1バーレーンGP＠セパン最終コーナーのブレーキミスってコーンの右側を通ったら強制ピットインな？」",
-   "url": "https://f1jouhou2.com/blog-entry-31619.html",
-   "published": "2026-10-02T12:00:00+09:00"
-  },
-  {
-   "id": "ja-f1are-sepang-reputation",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "circuit": "sepang",
-   "topic": "sepang-bahrain-gp-in-malaysia",
-   "title": "バーレーンGP＠マレーシアの舞台セパンは評判がいいという話題",
-   "summary": "掲示板では、セパンについてベアマンが「リズムが重要な高速コース」、オコンが「クラシックなF1サーキット」と語ったと伝えるTopNewsの記事が紹介された。コース幅が広く追い抜きが見られそうだという期待や、暑さと湿度への備えを心配する声が出ていた。日本から近く、日本GPの時期に近い開催を歓迎する書き込みもあった。",
-   "orig": "F1バーレーンGP＠マレーシアの舞台「セパン・サーキット」は評判いいよな",
-   "url": "https://f1are.com/blog-entry-3947.html",
-   "published": "2026-10-02T12:00:00+09:00"
   }
  ]
 }
