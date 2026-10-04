@@ -4996,6 +4996,66 @@
    "orig": "中東でのF1レースの代替地は全部セパンでいいな",
    "url": "https://f1are.com/blog-entry-3952.html",
    "published": "2026-10-04T09:00:00+09:00"
+  },
+  "en-therace-sepang-start-abandoned": {
+   "id": "en-therace-sepang-start-abandoned",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "決勝",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "ferrari"
+   ],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "セパンの決勝スタート、フォーメーションラップで複数台が停止し中断",
+   "summary": "大雨で40分遅れたセパンの決勝は、フォーメーションラップ中に複数車両が止まり、スタート手続きが中断された。ハミルトンは「スロットルを踏んでも何も起きない」と無線で訴え、ポールのフェルスタッペンも不調を報告した。ハースのオコンやキャデラックのボッタスも止まり、メルセデス側はFIAが各チームに新しいソフトウェア設定を配布したと説明している。解説者のゲイリー・アンダーソンは、中断中に未検証のソフトを入れる是非に懸念を示した。",
+   "orig": "Malaysia F1 start attempt abandoned after multiple cars stop",
+   "url": "https://www.the-race.com/formula-1/malaysia-f1-start-attempt-abandoned-after-multiple-cars-stop/",
+   "published": "2026-10-04T16:50:00+09:00"
+  },
+  "en-motorsport-sepang-red-flag-chaos": {
+   "id": "en-motorsport-sepang-red-flag-chaos",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "Motorsport.com",
+   "cat": "決勝",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "audi",
+    "cadillac"
+   ],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "バーレーンGP（セパン開催）、パワーユニット不調で赤旗　2026年規則で初のウェット",
+   "summary": "雷雨でスタートが遅れたセパンの決勝は、フォーメーションラップで加速不良が相次ぎ赤旗となった。フェルスタッペンは一時的に出力が落ち、ハミルトンは隊列に抜かれながらゆっくり1周したという。ローソン、ボルトレート、ボッタスにも同様の症状が出た。レースコントロールは機械的故障ではなくソフトウェア関連と見ており、再開時の隊列は予選順位に戻すとしている。",
+   "orig": "F1 Bahrain GP in Malaysia descends into chaos as car trouble prompts red flag",
+   "url": "https://www.motorsport.com/f1/news/bahrain-f1-gp-descends-into-chaos-as-car-trouble-prompts-red-flag/10861801/",
+   "published": "2026-10-04T16:55:00+09:00"
+  },
+  "en-crash-sepang-start-delay-deluge": {
+   "id": "en-crash-sepang-start-delay-deluge",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "Crash.net",
+   "cat": "決勝",
+   "circuit": "sepang",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "audi"
+   ],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "セパンの豪雨でスタート遅延、隊列走行中の不具合で発進は見送りに",
+   "summary": "決勝開始の約40分前にセパンを激しい雨が襲い、スタートは遅れた。隊列走行は始まったものの、ハミルトンのフェラーリやボルトレートのアウディが止まり、赤旗で手続きが中止された。フェルスタッペンは出力低下の後に回復し、「新しいセルが次々に出てくるので大変だ」とスカイ・スポーツに語った。各チームにはPU不調に対処する新しいソフトが送られ、路面は急速に乾きつつあるという。",
+   "orig": "Start of the F1 Bahrain GP in Malaysia abandoned after several cars hit trouble following rain delays",
+   "url": "https://www.crash.net/f1/news/1106405/1/start-bahrain-gp-malaysia-delayed-after-heavy-deluge-hits",
+   "published": "2026-10-04T17:00:00+09:00"
   }
  },
  "topics": {
@@ -5186,7 +5246,11 @@
   "redbull-sepang-strength": {
    "title": "レッドブル、セパンで見せた新たな速さの理由",
    "summary": "セパン予選でフェルスタッペンが今季初ポールを獲得し、レッドブルの復調が注目を集めた。The RaceとMotorsport-Totalは、バクーで投入した大型改良（新フロアなど）が高中速コーナーの弱点を和らげたと伝える。フェルスタッペンは「ずっと運転しやすくなった」と話した。一方で、猛暑と荒れた路面という特殊条件の結果で、真の勢力図は次戦以降に見えるとの慎重な見方もある。"
+  },
+  "sepang-wet-start-pu-trouble": {
+   "title": "セパンの決勝スタート、豪雨とPU不調で赤旗・手続き中断",
+   "summary": "バーレーンGP（セパン開催）の決勝は、雷雨で約40分遅れた後、フォーメーションラップでフェルスタッペンやハミルトンらに加速不良が相次ぎ赤旗となった。各チームにはFIAから新しいソフトウェア設定が配られ、再開時のグリッドは予選順位に戻された。2026年規則で初のウェット走行となった。"
   }
  },
- "updatedAt": "2026-10-04T12:30:00+09:00"
+ "updatedAt": "2026-10-04T18:20:00+09:00"
 }
