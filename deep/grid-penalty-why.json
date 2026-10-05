@@ -156,6 +156,23 @@
      "view": "セパンには長い直線が2本あり、ハジャー自身も「レースペースがあれば上がれる」と話している。後ろから追い上げるには、比べれば向いているコースなのかもしれない。ただ、F1がセパンを走るのは2017年以来で、路面やタイヤがどう働くかはまだはっきりしない。後ろからの追い上げが本当に成り立つかは、日曜のレースを見るまで分からない。"
     }
    ]
+  },
+  {
+   "h": "決勝の答え合わせ：降格した3人はどこまで戻ったか",
+   "body": [
+    {
+     "p": "F1公式サイトのスターティンググリッドによると、セパンで降格が付いたのは、ハジャー、コラピント、リンドブラッドの3人だった。ハジャーは今季7基目のICEで5グリッド下がり、予選3番手から8番手に。コラピントはバクーの衝突の5グリッドに、5基目のICEの10グリッドが加わって21番手。リンドブラッドはICE・ターボ・排気の5つ目で30グリッド下がり、最後尾の22番手から出た。"
+    },
+    {
+     "p": "上限を使い切っているラッセルは、セパンでは降格を受けなかった。予選は8番手で、ハジャーが後ろに下がったぶん1つ上がり、7番手からスタートした。"
+    },
+    {
+     "p": "決勝は雨と、何台かのパワーユニットのソフトの不具合でスタートが大きく遅れ、湿った路面から乾いていく難しいレースになった。英Motorsport WeekとF1iの結果によると、ハジャーは8番手から5位、リンドブラッドは22番手から10位に入って1点を取り、コラピントは21番手から13位だった。ラッセルは終盤、パワーユニットのトラブルで止まった（英RaceFans）。"
+    },
+    {
+     "view": "F1 Grid Walkとしては、セパンは「後ろから追い上げられるコース」だったと見ています。降格した3人とも順位を大きく上げました。ただ、雨で作戦が大きく分かれたレースだったので、コースの性格だけで上がれたとは言い切れません。上限を使い切ったまま走るラッセルが、次に新しい部品を入れれば降格が付く。その時期を、メルセデスがどこに選ぶかが次の見どころです。"
+    }
+   ]
   }
  ],
  "deep": [
@@ -355,23 +372,23 @@
        [
         "バーレーンGP（マレーシア開催）",
         "ハジャー",
-        "PU部品の交換（部品は未発表）",
-        "5グリッド"
+        "ICEの7つ目",
+        "5グリッド（3番手→8番手。決勝5位）"
        ],
        [
         "バーレーンGP（マレーシア開催）",
         "リンドブラッド",
-        "5基目のPU",
-        "最後尾"
+        "ICE・ターボ・排気の5つ目",
+        "30グリッド → 最後尾（22番手から決勝10位）"
        ],
        [
         "バーレーンGP（マレーシア開催）",
         "コラピント",
-        "バクーの衝突の10秒加算を消化できず",
-        "5グリッド"
+        "バクーの衝突の5グリッド＋ICEの5つ目の10グリッド",
+        "15グリッド → 21番手（決勝13位）"
        ]
       ],
-      "note": "出典：PlanetF1、F1公式サイト、GPFans、Formel1.de、The Race、RacingNews365。今季の全部の降格ではない。SPEEDWEEKによると、今季はノリス、アルボン、サインツ、ストロール、アロンソ、ローソン、ベアマンもPU部品の上限を超えている。"
+      "note": "出典：F1公式サイト（セパンのグリッド）、Motorsport Week・F1i（セパンの結果）、PlanetF1、F1公式サイト、GPFans、Formel1.de、The Race、RacingNews365。今季の全部の降格ではない。SPEEDWEEKによると、今季はノリス、アルボン、サインツ、ストロール、アロンソ、ローソン、ベアマンもPU部品の上限を超えている。"
      }
     }
    ]
@@ -605,13 +622,38 @@
    "name": "Formula1.com",
    "title": "Sainz hit with five-place grid penalty for Azerbaijan GP after yellow flag breach in Qualifying",
    "url": "https://www.formula1.com/en/latest/article/sainz-hit-with-five-place-grid-penalty-for-azerbaijan-gp-after-yellow-flag-breach-in-qualifying.1gS7cC7mRmvBvIrJGRH6Bb"
+  },
+  {
+   "name": "Formula1.com",
+   "title": "Bahrain Grand Prix in Malaysia 2026 - Starting grid",
+   "url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/starting-grid"
+  },
+  {
+   "name": "Motorsport Week",
+   "title": "F1 2026 Bahrain Grand Prix in Malaysia race results",
+   "url": "https://www.motorsportweek.com/2026/10/04/f1-2026-bahrain-grand-prix-in-malaysia-race-results/"
+  },
+  {
+   "name": "F1i",
+   "title": "2026 Bahrain Grand Prix - Race results",
+   "url": "https://f1i.com/news/574407-2026-bahrain-grand-prix-race-results.html"
+  },
+  {
+   "name": "RaceFans",
+   "title": "Verstappen takes first win of 2026 in Malaysia after power unit faults delay start",
+   "url": "https://www.racefans.net/2026/10/04/verstappen-takes-first-win-of-2026-in-malaysia-after-power-unit-faults-delay-start/"
   }
  ],
  "history": [
   [
    "2026-10-02",
    "公開。決勝のあと、スターティンググリッドと結果の答え合わせを書き足します。"
+  ],
+  [
+   "2026-10-05",
+   "決勝の答え合わせを書き足しました（正式グリッドと、降格した3人の結果）。"
   ]
  ],
- "lensRelated": []
+ "lensRelated": [],
+ "updated": "2026-10-05T10:30:00+09:00"
 }
