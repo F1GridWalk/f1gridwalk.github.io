@@ -3,27 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク</title>
-<meta name="description" content="F1のニュースの「なぜ」を深く読む、F1 Grid Walkの深掘り記事。パワーユニット、空力、タイヤ、規則、データ、歴史まで。">
-<link rel="canonical" href="https://f1gridwalk.github.io/deep/">
+<title>昼のセパンから、夜のシンガポールへ｜DEEP GRID｜F1グリッドウォーク</title>
+<meta name="description" content="マレーシアとシンガポールは、時計の上では同じ時間だ。それでもF1は、セパンでは昼に走り、シンガポールでは夜に走る。チームはシンガポールで「ヨーロッパ時間」のまま暮らす。体内時計は1日にどれだけ動かせるのか。夜のレースへの、もう一つの準備をほどいていく。">
+<link rel="canonical" href="https://f1gridwalk.github.io/deep/body-clock-singapore/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="apple-mobile-web-app-title" content="Grid Walk">
 <meta name="application-name" content="Grid Walk">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="F1 Grid Walk">
-<meta property="og:title" content="DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク">
-<meta property="og:description" content="F1のニュースの「なぜ」を深く読む、F1 Grid Walkの深掘り記事。パワーユニット、空力、タイヤ、規則、データ、歴史まで。">
-<meta property="og:url" content="https://f1gridwalk.github.io/deep/">
+<meta property="og:title" content="昼のセパンから、夜のシンガポールへ｜DEEP GRID｜F1グリッドウォーク">
+<meta property="og:description" content="マレーシアとシンガポールは、時計の上では同じ時間だ。それでもF1は、セパンでは昼に走り、シンガポールでは夜に走る。チームはシンガポールで「ヨーロッパ時間」のまま暮らす。体内時計は1日にどれだけ動かせるのか。夜のレースへの、もう一つの準備をほどいていく。">
+<meta property="og:url" content="https://f1gridwalk.github.io/deep/body-clock-singapore/">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<meta property="og:image" content="https://f1gridwalk.github.io/deep/body-clock-singapore/og.png?v=8e0e8dfe">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<meta name="twitter:image" content="https://f1gridwalk.github.io/deep/body-clock-singapore/og.png?v=8e0e8dfe">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">
+<meta property="article:published_time" content="2026-10-05T11:33:00+09:00">
 <style>
 .more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
 .md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
@@ -140,7 +141,48 @@ details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
 .rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
 .rbx-all:hover{text-decoration:underline}
 .rbx p.rbx-cnt{margin:10px 16px 0;font-size:11px;line-height:1.4;color:var(--sub)}
+
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "昼のセパンから、夜のシンガポールへ", "description": "マレーシアとシンガポールは、時計の上では同じ時間だ。それでもF1は、セパンでは昼に走り、シンガポールでは夜に走る。チームはシンガポールで「ヨーロッパ時間」のまま暮らす。体内時計は1日にどれだけ動かせるのか。夜のレースへの、もう一つの準備をほどいていく。", "datePublished": "2026-10-05T11:33:00+09:00", "dateModified": "2026-10-05T11:33:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=1"], "mainEntityOfPage": "https://f1gridwalk.github.io/deep/body-clock-singapore/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "DEEP GRID", "keywords": ["体", "日程", "サーキット"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "DEEP GRID", "item": "https://f1gridwalk.github.io/deep/"}, {"@type": "ListItem", "position": 3, "name": "昼のセパンから、夜のシンガポールへ", "item": "https://f1gridwalk.github.io/deep/body-clock-singapore/"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
@@ -346,7 +388,56 @@ footer p{margin:6px 0}
   <a class="toplink" href="/">最新ニュースを見る →</a>
 </div></header>
 <main class="wrap">
-<nav class="crumbs"><a href="/">トップ</a> › DEEP GRID</nav><div class="dg"><div class="dg-top"><div class="dg-label"><b>DEEP GRID</b><span>ニュースの、その奥へ。</span></div></div><h1>DEEP GRID</h1><p class="dg-dek">ニュースの続きを、ニュースより深く読む。なぜ起きたのか、技術的に何を意味するのか、過去と何が違うのか。まず「先に結論」で要点をつかみ、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">410 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/deep-index">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-index/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script><ul class="dg-list"><li><a href="/deep/body-clock-singapore/"><small>DEEP GRID #06</small><b>昼のセパンから、夜のシンガポールへ</b></a><p>マレーシアとシンガポールは同じ時間帯（協定世界時＋8時間）。セパンの決勝は現地15時スタートの予定だったが、シンガポールの決勝は現地20時、予選は21時に始まる。</p></li><li><a href="/deep/wet-tyres-sepang/"><small>DEEP GRID #05</small><b>今季まだ、雨のレースがない</b></a><p>雨のタイヤは2種類。緑のインターミディエイト（浅い溝）と、青のフルウェット（深い溝）だ。溝で路面の水をかき出し、タイヤが水に浮くのを防ぐ。</p></li><li><a href="/deep/pit-stops-sepang/"><small>DEEP GRID #04</small><b>9年前は1回だった</b></a><p>予選はフェルスタッペンが1分35秒130で今季初のポール。2番手ハミルトンとの差は0.298秒。予選3番手のハジャーはパワーユニットの交換で5グリッド下がり、8番手から出る。</p></li><li><a href="/deep/heat-sepang/"><small>DEEP GRID #03</small><b>暑さは、ドライバーの体に何をするのか？</b></a><p>セパンは昔から、カレンダーでいちばん暑いレースの一つと語られてきた。今週末も気温31〜32℃、湿度70〜80%の予報で、FIAは今季3回目のヒートハザード（高温警告）を出した。</p></li><li><a href="/deep/grid-penalty-why/"><small>DEEP GRID #02</small><b>グリッド降格はなぜ起きる？</b></a><p>グリッド降格は、予選で決まったスタート位置から、決められた数だけ後ろに下げる罰。主な理由は、パワーユニットの部品を1年の上限より多く使ったときと、レース中の違反の罰をそのレースで消化できなかったときの2つだ。</p></li><li><a href="/deep/sepang-unknown/"><small>DEEP GRID #01</small><b>なぜセパンは現代F1にとって「未知」なのか</b></a><p>F1がセパンで走るのは2017年以来、9年ぶり。2026年の新しい規則で作られた今のマシンは、どのチームもこのコースを一度も走ったことがない。</p></li></ul></div>
+<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › #06</nav>
+<article class="dg">
+<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>#06</i></b><span>ニュースの、その奥へ。</span></div></div>
+<h1>昼のセパンから、夜のシンガポールへ</h1>
+<p class="dg-dek">マレーシアとシンガポールは、時計の上では同じ時間だ。それでもF1は、セパンでは昼に走り、シンガポールでは夜に走る。チームはシンガポールで「ヨーロッパ時間」のまま暮らす。体内時計は1日にどれだけ動かせるのか。夜のレースへの、もう一つの準備をほどいていく。</p>
+<p class="dg-meta"><span>2026年10月5日(月) 11:33 公開</span><span>本文 約4分</span></p>
+<div class="dg-themes"><span>体</span><span>日程</span><span>サーキット</span></div>
+<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a><a href="#s1">同じ時計の国で、昼から夜へ</a><a href="#s2">シンガポールは「ヨーロッパ時間」で暮らす</a><a href="#s3">体内時計は、1日にどれだけ動くか</a><a href="#s4">ドライバーそれぞれの工夫</a><a href="#s5">今年は、合わせる時間がもっと短い</a><a href="#deep">データと記録</a><a href="#sources">出典</a></nav>
+<div id="quick"><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span><em>先に結論</em></div></div>
+<div class="dg-quick"><ol><li>マレーシアとシンガポールは同じ時間帯（協定世界時＋8時間）。セパンの決勝は現地15時スタートの予定だったが、シンガポールの決勝は現地20時、予選は21時に始まる。</li><li>シンガポールでは、チームは「ヨーロッパ時間」のまま暮らすのが昔からのやり方だ。朝4〜5時に寝て、午後に起きる。ホテルは遮光カーテンが欠かせない。</li><li>体内時計は、すぐには動かない。米国睡眠医学会によると、時差1時間に体が慣れるには、およそ1日かかる。東へ向かう方が慣れにくい。</li><li>ロズベルグは現役時代、ハーバード大学の睡眠の専門家から「1日にずらすのは最大1時間半」「寝る2時間前から光を遮るメガネ」「朝に光を浴びる」と教わったという。</li><li>今年のシンガポールは初めてのスプリントの週末で、練習走行は1回だけ。金曜は16時半に練習、20時半にスプリント予選。体を夜に合わせる時間は、例年より短い。</li></ol></div>
+<div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><em>理由と背景</em></div>
+<div class="dg-sec" id="s1"><h2>同じ時計の国で、昼から夜へ</h2><p>マレーシアとシンガポールは、時計の上では同じ時間だ。どちらも協定世界時より8時間進んでいる。日本より1時間遅い。</p><p>それでも、F1の1日はまったく違う。オランダのGPblogによると、セパンの決勝は現地15時スタートの予定だった。F1公式サイトの日程では、シンガポールの決勝は現地20時、<a class="term" href="/deep/rules/#qualifying" data-term="qualifying">予選</a>は21時に始まる。走る時間は、5時間以上ずれることになる。</p><p>しかも、間は1週間しかない。ブラジルのGrande Prêmioは、マレーシアのあとに休みの週はないと書いている。英GPFansは8月の時点で、ドライバーはアゼルバイジャンGPのあとマレーシアの時間に体を合わせ、そのあとシンガポールでは、ほぼヨーロッパの時間に戻さなければならないと伝えていた。</p></div>
+<div class="dg-sec" id="s2"><h2>シンガポールは「ヨーロッパ時間」で暮らす</h2><p>シンガポールの夜のレースでは、チームは現地の時間に合わせない。ヨーロッパにいる時の体のリズムのまま過ごすのが、昔からのやり方だ。</p><p>F1公式サイトの2014年の記事で、当時メルセデスのロズベルグはこう話している。</p><blockquote><p>「朝5時に寝る。ちょうど日が昇るころに眠りについて、午後2時が起きる時間だ。」</p><cite>— ロズベルグ（2014年）</cite></blockquote><p>同じ記事で、当時マルシャのチーフエンジニアは「スタッフは全員、ずらした時間で働く。モーターホームもだ。食事のほとんどはサーキットでとるので、ホテルは本当に寝るだけの場所になる」と話した。ホテルには、夕方にチームがサーキットへ戻るまで部屋の掃除をしないよう頼むという。当時レッドブルのチームマネージャーだったジョナサン・ウィートリーは「ホテルの部屋のカーテンが十分に暗ければ大丈夫」と話している。</p><p>英RacingNews365によると、2024年、メルセデスのウォルフ代表は「夜にレースをする。だから朝4時に寝て、午後まで眠る」と説明した。シンガポールは中央ヨーロッパより6時間進んでいるのに、チームはヨーロッパの時間を守る。日の光をほとんど浴びられず「全員にとって大きな負担だ」という。メルセデスは、ヨーロッパの睡眠リズムを保つため、NASAの医師に睡眠の計画づくりを頼んだ。</p></div>
+<div class="dg-sec" id="s3"><h2>体内時計は、1日にどれだけ動くか</h2><p>体内時計は、急には動かない。米国睡眠医学会は「時差1時間ごとに、体が現地の時間に慣れるまで、およそ1日かかると見積もられている」と説明している。東へ向かう方が、西へ向かうより慣れにくいという。眠気、夜の不眠、疲れ、集中力の低下が、時差ぼけの主な症状だ。</p><p>英GPFansによると、元王者のロズベルグは今年、現役時代の時差対策をこう明かした。</p><blockquote><p>「現役のころ、時差ぼけにはやられっぱなしだった。だから本気で取り組んで、ハーバード大学の睡眠の教授と一緒にやった。時差ぼけをほぼゼロにする方法を教わった。コツは簡単だけど、とても規律が要る。1日にずらすのは最大1時間半。寝る2時間前から夜は光を遮るメガネをかけ、朝は光を浴びる。」</p><cite>— ロズベルグ</cite></blockquote><div class="dg-view"><p>F1 Grid Walkとしては、セパンの昼（15時の決勝）からシンガポールの夜（20時の決勝）までの5時間を、ロズベルグの「1日最大1時間半」でずらすと、3日あまり、日ごとに区切ると4日かかる計算になると見ています。決勝の翌日から始めて、金曜の走行にぎりぎり間に合うかどうか。夜のレースは、サーキットに着く前から始まっています。</p></div></div>
+<div class="dg-sec" id="s4"><h2>ドライバーそれぞれの工夫</h2><p>工夫は人それぞれだ。英GPFansによると、ラッセルは2022年、シンガポールで腕時計をドバイの時間に合わせていると明かした。</p><blockquote><p>「腕時計はドバイ時間にしている。気持ちの問題だけど、携帯を見て午前3時と出ていたら、寝る時間なのかどうか分からないから。」</p><cite>— ラッセル（2022年）</cite></blockquote><p>同じ年、メルセデスのマレーシアでの<a class="term" href="/deep/rules/#sponsor" data-term="sponsor">スポンサー</a>の催しは、現地15時開始にしてもらえた。ラッセルは「こういう小さなことに、大きな性能の差が隠れている」と話し、チーム全体のリズムを崩さない日程を歓迎している。</p></div>
+<div class="dg-sec" id="s5"><h2>今年は、合わせる時間がもっと短い</h2><p>今年のシンガポールには、もう一つ事情がある。シンガポールGPの主催者によると、2026年は初めての<a class="term" href="/deep/rules/#sprint" data-term="sprint">スプリント</a>の週末だ。練習走行は1回だけになる。</p><p>F1公式サイトの日程では、金曜は16時半から練習走行、20時半から<a class="term" href="/deep/rules/#sprint-qualifying" data-term="sprint-qualifying">スプリント予選</a>。土曜は17時からスプリント、21時から予選。日曜の決勝は20時に始まる（日本時間21時）。金曜の夕方から、いきなり本番が始まる。</p><p>マレーシアでは昼に合わせ、シンガポールでは夜に合わせる。同じ時計の国を続けて回る2週間は、時差のない「時差ぼけ」との戦いでもある。</p></div>
+<details class="dg-deep" id="deep"><summary><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><em>データと記録</em></div><span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">セパンとシンガポール、走る時間の比べ・シンガポールとヨーロッパの時差・時差に体を合わせる工夫 ほか</span></span></span></summary>
+<div class="dg-sec"><h2>セパンとシンガポール、走る時間の比べ</h2><div class="dg-tw"><table class="short"><thead><tr><th scope="col"></th><th scope="col">現地時間</th><th scope="col">日本時間</th></tr></thead><tbody><tr><th scope="row">セパン 決勝（10月4日）</th><td data-h="現地時間">15:00</td><td data-h="日本時間">16:00</td></tr><tr><th scope="row">シンガポール 練習走行（10月9日）</th><td data-h="現地時間">16:30</td><td data-h="日本時間">17:30</td></tr><tr><th scope="row">シンガポール スプリント予選（10月9日）</th><td data-h="現地時間">20:30</td><td data-h="日本時間">21:30</td></tr><tr><th scope="row">シンガポール スプリント（10月10日）</th><td data-h="現地時間">17:00</td><td data-h="日本時間">18:00</td></tr><tr><th scope="row">シンガポール 予選（10月10日）</th><td data-h="現地時間">21:00</td><td data-h="日本時間">22:00</td></tr><tr><th scope="row">シンガポール 決勝（10月11日）</th><td data-h="現地時間">20:00</td><td data-h="日本時間">21:00</td></tr></tbody></table></div><p class="tnote">出典：GPblog（セパンの決勝）、F1公式サイト・Grande Prêmio（シンガポールの日程）。マレーシアとシンガポールは同じ時間帯で、日本より1時間遅い。セパンの決勝は、雨とパワーユニットのソフトウェアの不具合で、予定より1時間40分近く遅れて始まった（RaceFans）。</p></div>
+<div class="dg-sec"><h2>シンガポールとヨーロッパの時差</h2><div class="dg-tw"><table class=""><thead><tr><th scope="col"></th><th scope="col">シンガポールとの差</th></tr></thead><tbody><tr><th scope="row">イギリス（夏時間）</th><td data-h="シンガポールとの差">7時間</td></tr><tr><th scope="row">中央ヨーロッパ（夏時間）</th><td data-h="シンガポールとの差">6時間</td></tr><tr><th scope="row">日本</th><td data-h="シンガポールとの差">シンガポールより1時間進んでいる</td></tr></tbody></table></div><p class="tnote">出典：GPFans（イギリスと7時間）、RacingNews365（中央ヨーロッパと6時間）。</p></div>
+<div class="dg-sec"><h2>時差に体を合わせる工夫</h2><div class="dg-tw"><table class=""><thead><tr><th scope="col">誰が</th><th scope="col">工夫</th></tr></thead><tbody><tr><th scope="row">ロズベルグ（現役時代）</th><td data-h="工夫">1日にずらすのは最大1時間半。寝る2時間前から光を遮るメガネ。朝に光を浴びる</td></tr><tr><th scope="row">ロズベルグ（2014年）</th><td data-h="工夫">朝5時に寝て、午後2時に起きる</td></tr><tr><th scope="row">チームのスタッフ（2014年）</th><td data-h="工夫">食事はサーキットで。ホテルは寝るだけ。掃除は夕方以降に</td></tr><tr><th scope="row">ラッセル（2022年）</th><td data-h="工夫">腕時計をドバイの時間に</td></tr><tr><th scope="row">メルセデス（2024年）</th><td data-h="工夫">NASAの医師が睡眠の計画をつくる</td></tr></tbody></table></div><p class="tnote">出典：GPFans、F1公式サイト（2014年）、RacingNews365（2024年）。</p></div>
+<div class="dg-sec"><h2>体内時計と時差の目安</h2><div class="dg-tw"><table class=""><thead><tr><th scope="col">項目</th><th scope="col">目安</th></tr></thead><tbody><tr><th scope="row">慣れるまでの日数</th><td data-h="目安">時差1時間につき、およそ1日</td></tr><tr><th scope="row">慣れにくい向き</th><td data-h="目安">東へ向かう方が慣れにくい</td></tr><tr><th scope="row">主な症状</th><td data-h="目安">昼の眠気、夜の不眠、疲れ、集中力の低下</td></tr><tr><th scope="row">光の使い方</th><td data-h="目安">東へ向かう前に朝の明るい光を浴びると、体内時計を早める助けになることがある</td></tr></tbody></table></div><p class="tnote">出典：米国睡眠医学会（Sleep Education）。</p></div>
+</details>
+<section class="more-deep"><p class="md-k">DEEP GRID</p><h2>ほかの号を読む</h2><ul><li><a href="/deep/wet-tyres-sepang/" data-track="click/deep/body-clock-singapore/more/wet-tyres-sepang"><b>今季まだ、雨のレースがない</b><small>DEEP GRID #05 · 2026年10月4日(日) 13:28</small></a></li><li><a href="/deep/pit-stops-sepang/" data-track="click/deep/body-clock-singapore/more/pit-stops-sepang"><b>9年前は1回だった</b><small>DEEP GRID #04 · 2026年10月3日(土) 18:50</small></a></li><li><a href="/deep/heat-sepang/" data-track="click/deep/body-clock-singapore/more/heat-sepang"><b>暑さは、ドライバーの体に何をするのか？</b><small>DEEP GRID #03 · 2026年10月3日(土) 11:20</small></a></li><li><a href="/deep/grid-penalty-why/" data-track="click/deep/body-clock-singapore/more/grid-penalty-why"><b>グリッド降格はなぜ起きる？</b><small>DEEP GRID #02 · 2026年10月2日(金) 13:58</small></a></li><li><a href="/deep/sepang-unknown/" data-track="click/deep/body-clock-singapore/more/sepang-unknown"><b>なぜセパンは現代F1にとって「未知」なのか</b><small>DEEP GRID #01 · 2026年10月2日(金) 02:11</small></a></li></ul><a class="md-btn" href="/deep/" data-track="click/deep/body-clock-singapore/more-all">すべての号を見る →</a><a class="md-sub" href="/" data-track="click/deep/body-clock-singapore/more-top">今日のF1ニュースを見る</a></section>
+<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl><dt>体内時計</dt><dd>体の中にある、だいたい24時間の周期のリズム。眠気や体温、ホルモンの出方を決める。</dd><dt>スプリント</dt><dd>土曜に行う短いレース。スプリントの週末は、練習走行が1回だけになる。</dd></dl></div>
+<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src"><li><a href="https://www.gpfans.com/en/f1-news/1088712/f1-2026-bahrain-grand-prix-malaysia-time-zone-sepang-circuit-sleep-struggle/" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">GPFans</a> <small>The odd quirk F1 drivers will face at Bahrain Grand Prix</small></li><li><a href="https://www.formula1.com/en/latest/article/under-the-lights-adapting-to-singapores-f1-night-world.5dXtG7X96FajqtsY6bk5hR" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">Formula1.com</a> <small>Under the lights: adapting to Singapore&#x27;s F1 night world (2014)</small></li><li><a href="https://racingnews365.com/unusual-mercedes-singapore-gp-strategy-revealed" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">RacingNews365</a> <small>Unusual Mercedes Singapore GP strategy revealed (2024)</small></li><li><a href="https://www.gpfans.com/en/f1-news/92571/george-russell-mercedes-singapore-grand-prix" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">GPFans</a> <small>Russell uncovers innovative plan to overcome F1&#x27;s hidden challenge (2022)</small></li><li><a href="https://sleepeducation.org/the-science-behind-jet-lag-and-tips-to-combat-symptoms/" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">Sleep Education（米国睡眠医学会）</a> <small>The science behind jet lag and tips to combat symptoms</small></li><li><a href="https://core-ecs-origin-livetiming.core-dns.watchliveformula1.com/en/latest/article/formula-1-singapore-airlines-singapore-grand-prix-2026.1OXwlTH5jrpTiZX2Dvg7qE" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">Formula1.com</a> <small>FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026</small></li><li><a href="https://grandepremio.com/en/f1/f1-heads-to-singapore-after-sepang-chaos-next-race-dates-and-sprint-schedule/" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">Grande Prêmio</a> <small>F1 heads to Singapore after Sepang chaos: next race dates and Sprint schedule</small></li><li><a href="https://singaporegp.sg/news/2025/formula-1-singapore-grand-prix-to-deliver-even-more-competitive-racing-in-2026-with-debut-of-f1-sprint/" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">Singapore GP</a> <small>Formula 1 Singapore Grand Prix to deliver even more competitive racing in 2026 with debut of F1 Sprint</small></li><li><a href="https://www.gpblog.com/en/news/sepang-forecast-worsens-as-f1-faces-75-rain-risk-and-a-heat-problem-for-2026-engines" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">GPblog</a> <small>Sepang forecast worsens as F1 faces 75% rain risk</small></li><li><a href="https://www.racefans.net/2026/10/04/verstappen-takes-first-win-of-2026-in-malaysia-after-power-unit-faults-delay-start/" target="_blank" rel="noopener" data-track="click/deep/body-clock-singapore/src">RaceFans</a> <small>Verstappen takes first win of 2026 in Malaysia after power unit faults delay start</small></li></ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>
+<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist"><li><time>2026-10-05</time>公開。シンガポールGPの週末のあと、実際の過ごし方で分かったことがあれば書き足します。</li></ul></div>
+<div class="dg-end"><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">410 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/deep-issue">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-issue/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script></div>
+</article>
+<script type="application/json" id="term-data">{"qualifying": ["予選", "決勝のスタート順を決めるセッション。Q1・Q2・Q3の3段階で、遅い車から落としていく。"], "sprint": ["スプリント", "土曜に行う約100km・約30分の短いレース。上位8人にポイントが出る。"], "sprint-qualifying": ["スプリント予選", "スプリントのスタート順を決める、金曜の短い予選。SQ1〜SQ3の3段階で行う。"], "sponsor": ["スポンサー", "チームにお金や技術を出し、車やウェアにロゴを載せて宣伝する企業。チームの大きな収入源だ。"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>
