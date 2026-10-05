@@ -1,10 +1,6 @@
 {
- "updatedAt": "2026-10-05T06:25:00+09:00",
+ "updatedAt": "2026-10-05T12:20:00+09:00",
  "topics": {
-  "sepang-friday-longruns": {
-   "title": "セパン金曜のロングラン分析、フェルスタッペン最速も劣化は1周0.3秒",
-   "summary": "FP2のロングランではフェルスタッペンが最速で、ラッセル、ルクレール、ノリスの順に続いた。ソフトもミディアムも劣化は1周0.2〜0.3秒と大きく、2ストップ以上の作戦が有力視されている。レッドブルはFP2でソフトを使わず、雨のリスクを考えてミディアムのロングランを優先した。各チームはハードを温存し、日曜の戦略にはまだ不確定要素が多い。"
-  },
   "sepang-slower-than-simulation": {
    "title": "セパンのラップタイム、ピレリのシミュレーションより約4.5秒遅い",
    "summary": "9年ぶりのセパンでは路面が非常に荒れやすく、FP2後にはFIAが破片を除去する作業を行った。ピレリのベラ主任エンジニアは、ラップタイムがシミュレーションより約4.5秒遅く、路面がセッション中にも変化していると説明した。パンクなど安全上の問題はなく、課題はグリップとタイヤ摩耗の管理だという。予選で速いチームが決勝で苦戦する可能性も指摘された。"
@@ -192,13 +188,15 @@
        "Il Post（イタリア）：約1年ぶりの勝利を見出しに",
        "GPblog（オランダ）：リスタートでの2台抜きを軸に",
        "Le Blog Auto（フランス）：「狂ったレース」と選手権",
-       "Grande Prêmio（ブラジル）：5つの教訓で総括"
+       "Grande Prêmio（ブラジル）：5つの教訓で総括",
+       "Formel1.de（ドイツ）：自社製PUでの初勝利の意味を見出しに"
       ],
       "ids": [
        "it-ilpost-verstappen-torna-vincere",
        "nl-gpblog-verstappen-eerste-zege-sepang",
        "fr-leblogauto-sepang-course-folle",
-       "pt-grandepremio-cinco-licoes-malasia"
+       "pt-grandepremio-cinco-licoes-malasia",
+       "de-formel1-verstappen-sieg-emotionen"
       ]
      }
     ],
@@ -252,6 +250,90 @@
   }
  },
  "articles": [
+  {
+   "id": "de-formel1-verstappen-sieg-emotionen",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "決勝",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "sepang-race-verstappen-wins",
+   "title": "フェルスタッペン、セパンで通算72勝目　レッドブル製PUでの初優勝に「特別な意味」",
+   "summary": "フェルスタッペンはポールから出て雨のスタートに苦しみ、メルセデス勢の後ろでセーフティカー再開を迎えたが、その後首位に立ち通算72勝目を挙げた。レッドブルにとっては自社製パワーユニットでの初優勝となった。本人は「チームの雰囲気はとても良い。みんなが力を合わせている」と語り、父ヨスもチームの粘りを誇ったと伝えられている。",
+   "orig": "Große Emotionen: Was Max Verstappens Sieg in Malaysia so besonders macht",
+   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-04/grosse-emotionen-was-max-verstappens-sieg-in-malaysia-so-besonders-macht",
+   "published": "2026-10-04T17:13:00+02:00",
+   "lens": {
+    "type": "談話",
+    "lead": "フェルスタッペン",
+    "focus": "自社製PUでの初勝利",
+    "cause": "SC再開後に首位へ立った",
+    "hook": "勝利の感情的な意味"
+   }
+  },
+  {
+   "id": "de-formel1-formationsrunde-software",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "フォーメーションラップの混乱：雨のセパンで各車が失速した理由",
+   "summary": "フォーメーションラップで複数の車が出力を失い、ハミルトン、オコン、ペレスらがほぼ停止状態まで減速した。FIAのトンバジス技術部長は、低回転・ウェット路面・エネルギー管理の特殊な組み合わせでソフトが「抜け出せないループ」に入ったと説明した。FIAは一部区間の出力制限を外す更新版を配布してレースを進めたが、ノリスはこの状況を「ひどい」と批判した。",
+   "orig": "Chaos in der Formationsrunde: Warum sind die Fahrer im Regen ausgerollt?",
+   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-04/chaos-in-der-formationsrunde-warum-sind-die-fahrer-im-regen-ausgerollt",
+   "published": "2026-10-04T16:41:00+02:00",
+   "lens": {
+    "type": "分析",
+    "lead": "FIA",
+    "focus": "ソフト不具合の仕組み",
+    "cause": "低速・雨・エネルギー管理の組合せ",
+    "hook": "なぜ各車が失速したか"
+   }
+  },
+  {
+   "id": "nl-gpblog-redbull-ergernis-hadjar",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-sepang-slow",
+   "title": "フェルスタッペン勝利の裏でレッドブルに不満、ハジャー「災難だった」",
+   "summary": "フェルスタッペンが優勝した一方、チームメイトのハジャーは表彰台を逃し、レース後に「災難だった」と振り返った。メルセデスとは1周あたり約1秒の差があり、「ずっと同じタイヤで走っているようだった」とグリップ不足も訴えた。最終的に3位をハミルトンに奪われており、レッドブルはシンガポールGPまでに原因を調べる方針だという。",
+   "orig": "Ergernis in Red Bull-kamp ondanks Verstappen-zege: 'Het was een ramp'",
+   "url": "https://www.gpblog.com/nl/nieuws/ergernis-in-red-bull-kamp-ondanks-verstappen-zege-het-was-een-ramp",
+   "published": "2026-10-04T17:06:00+02:00"
+  },
+  {
+   "id": "ja-f1are-hadjar-sepang-trash",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-sepang-slow",
+   "title": "ハジャー、セパン決勝ペースに不満「このレースはゴミ箱行き」　ファンの間で話題",
+   "summary": "F1のアレは、RaceFansの報道を元に、レッドブルのハジャーがセパン決勝で「とても遅かった」と振り返ったと紹介した。終盤はバッテリーの電力が足りず、ハミルトンやルクレールの直線の速さに対抗できなかったという。コメント欄では、フェルスタッペンとの1周あたり1秒前後の差を指摘する声や、経験の差とみる声が出ている。",
+   "orig": "レッドブルのハジャー、F1セパン決勝ペースに不満「僕はとても遅かった」「このレースはゴミ箱行き」",
+   "url": "https://f1are.com/blog-entry-3955.html",
+   "published": "2026-10-05T07:00:00+09:00"
+  },
   {
    "id": "de-formel1-hadjar-sepang-slow",
    "kind": "news",
@@ -1733,83 +1815,6 @@
    "orig": "Sainz e la doccia gelata Williams: «Pensavamo di essere pronti»",
    "url": "https://www.formula1.it/news/32987/1/sainz-e-la-doccia-gelata-williams-pensavamo-di-essere-pronti",
    "published": "2026-10-02T14:00:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-sepang-longruns-verstappen",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "mclaren"
-   ],
-   "topic": "sepang-friday-longruns",
-   "title": "セパンのロングラン分析、フェルスタッペンが最速も本命とは言い切れず",
-   "summary": "FP2のロングランではフェルスタッペンが最速で、ラッセルが0.19秒差、ルクレールが0.32秒差、ノリスが0.43秒差で続いた。ソフトもミディアムもタイヤ劣化は1周約0.3秒と大きく、2ストップ作戦が有力になりそうだと伝えた。ハードを試したチームはなく、各チームは決勝用に新品を温存している。マクラーレンは第2セクターの高速コーナーで遅れ、セットアップの妥協が原因かと見ている。",
-   "orig": "Longruns: Max Verstappen Schnellster, aber auch Favorit in Malaysia?",
-   "url": "https://www.motorsport-total.com/formel-1/news/longruns-max-verstappen-schnellster-aber-auch-favorit-in-malaysia-26100215",
-   "published": "2026-10-02T13:21:00+02:00"
-  },
-  {
-   "id": "en-rn365-lawson-sepang-tyres",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "racingbulls"
-   ],
-   "topic": "lawson-sepang-tyre-management",
-   "title": "ローソン、セパンはタイヤ管理が鍵　路面は数年間再舗装されず",
-   "summary": "ローソンは、セパンは走って楽しいがタイヤに非常に厳しいと語り、その理由として路面が数年間再舗装されていない点を挙げた。金曜は路面温度が約62℃、気温が約34℃に達し、タイヤの摩耗や小石の付着が大きく、3ストップ戦略の可能性も指摘されている。レーシングブルズは両セッションでトップ10に入り、ペルマネ代表は路面が想定より滑らかで、セットアップ調整が進んだと述べた。",
-   "orig": "Liam Lawson identifies crucial trick key to potential Bahrain GP success",
-   "url": "https://racingnews365.com/liam-lawson-identifies-crucial-trick-key-to-potential-bahrain-gp-success",
-   "published": "2026-10-02T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-sepang-fp2-leclerc",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "分析",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari",
-    "redbull"
-   ],
-   "topic": "sepang-fp2-leclerc",
-   "title": "セパン初日のFP2、ルクレールが最速　ハジャー2番手、雨は降らず",
-   "summary": "FP2はルクレール（フェラーリ）が1分37秒528でトップとなり、2番手にハジャー（+0.099秒）、3番手にノリス（+0.137秒）が続いた。降雨予報は90％だったがセッションはドライのままで、上位4チームが0.5秒以内に並んだ。レッドブルの両車は車体の跳ねを訴え、終盤にはボルトレートがマシントラブルで止まった。ハミルトンはボルトレートの走行を妨げた疑いで審議対象になった。",
-   "orig": "What happened in FP2 at F1 2026's Bahrain GP in Malaysia",
-   "url": "https://www.the-race.com/formula-1/what-happened-in-fp2-at-f1-2026s-bahrain-gp-in-malaysia/",
-   "published": "2026-10-02T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-sepang-confusing-friday",
-   "kind": "tech",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes",
-    "redbull",
-    "mclaren"
-   ],
-   "topic": "sepang-friday-longruns",
-   "title": "「最も分かりにくい金曜」セパン初日で見えたこと　ペースは事前予測より約4.5秒遅い",
-   "summary": "メルセデスの大型更新は予選シミュレーションがうまくいかず効果が見えない一方、レッドブルとマクラーレンが有力という以外は本命がはっきりしなかった。単独の最速はフェルスタッペンの1分37秒520で、ルクレールが0.008秒差、ラッセルは0.383秒差の4番手だった。路面は非常に荒れやすく、各チームは事前の予測より約4.5秒遅かった。タイヤ劣化はバルセロナ並みの1周0.2〜0.3秒で、最低2ストップ、3ストップ以上もありうるという。",
-   "orig": "What we really learned from F1 2026's most confusing Friday",
-   "url": "https://www.the-race.com/formula-1/what-we-really-learned-from-f1-2026-most-confusing-friday/",
-   "published": "2026-10-02T12:00:00+01:00"
   }
  ]
 }
