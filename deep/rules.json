@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-02",
+ "checked": "2026-10-06",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -22337,6 +22337,1324 @@
    ],
    "cat": "パワーユニット",
    "checked": "2026-10-03"
+  },
+  {
+   "id": "rolling-start",
+   "term": "ローリングスタート",
+   "cat": "レース運営",
+   "aliases": [
+    "ローリングスタート",
+    "Rolling start",
+    "セーフティカースタート",
+    "SCスタート",
+    "ろーりんぐすたーと"
+   ],
+   "words": [
+    "雨のスタート",
+    "セーフティカーの後ろからスタート",
+    "止まらずにスタート",
+    "大雨",
+    "隊列のまま始まる"
+   ],
+   "short": "車を止めずに、セーフティカーの後ろを走ったまま始めるスタート。大雨のときに使われる。",
+   "body": [
+    "ローリングスタートは、グリッドに止まらずに、セーフティカー（SC）の後ろを隊列で走ったまま始めるスタートだ。ふつうのスタンディングスタート（→）ができないほど路面が悪いときに使われる。どちらにするかはFIAのレースディレクターが決め、たまった水と視界が大きな判断材料になる（PlanetF1）。",
+    "雨のときは、まずSCの後ろでフォーメーションラップを走る。2017年からは、路面が良くなればそのままグリッドに戻って、スタンディングスタートをするのが基本になった。SCの後ろの周回はフォーメーションラップとして数えられ、そのぶんレースの周回数が減る（Motorsport.com）。2026年の規則では、SCの後ろでフォーメーションラップを始めた場合、決勝の周回数は「SCが走った周回数から1を引いた数」だけ減る（規則B2.5.2a）。",
+    "路面が良くならないときは、SCがピットに入り、そのままレースが始まる。2025年のベルギーGPでは、スタートを80分遅らせたあと、SCの後ろを4周走ってから始めた（PlanetF1）。"
+   ],
+   "rule": "スポーティングレギュレーション B5.10（SCの後ろのフォーメーションラップ）、B2.5.2a（周回数の減らし方）",
+   "examples": [
+    {
+     "t": "セパンでは、豪雨でスタートが遅れたあと、SCが先導するスタートの手順の途中で、複数の車が加速できなくなった。",
+     "u": "/news/en-racefans-sepang-software-issue/"
+    },
+    {
+     "t": "セパンでは、決勝の約40分前に激しい雨が降り、スタートが遅れた。",
+     "u": "/news/en-crash-sepang-start-delay-deluge/"
+    }
+   ],
+   "see": [
+    "safety-car",
+    "formation-lap",
+    "race-start",
+    "wet-race-declared",
+    "full-wet"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Standing start v rolling start as F1 forecast wet Dutch Grand Prix",
+     "url": "https://www.planetf1.com/news/standing-start-v-rolling-start-as-f1-forecast-wet-dutch-grand-prix"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Analysis: How F1's new wet standing starts will work",
+     "url": "https://www.motorsport.com/f1/news/analysis-how-f1-s-new-wet-standing-starts-will-work-882493/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 07（2026年6月25日。B2.5.2a、B5.4.1）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 06（2026年4月28日。目次のB5.9、B5.10、B5.13、B5.14）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "standing-start",
+   "term": "スタンディングスタート",
+   "cat": "レース運営",
+   "aliases": [
+    "スタンディングスタート",
+    "Standing start",
+    "静止スタート",
+    "グリッドスタート",
+    "すたんでぃんぐすたーと"
+   ],
+   "words": [
+    "止まった状態からのスタート",
+    "シグナルスタート",
+    "グリッドに並んでスタート",
+    "5つの赤いライト",
+    "ふつうのスタート"
+   ],
+   "short": "全車がグリッドに止まった状態から、赤いライトが消えた瞬間に一斉に走り出すスタート。F1のふつうの形。",
+   "body": [
+    "スタンディングスタートは、全車がグリッドの枠に止まった状態から、赤いライトが全部消えた瞬間に一斉に走り出すスタートだ。F1では、ふつうはこの形で決勝を始める。ライトや合図の流れは「スタート手順」で説明している。",
+    "止まった状態から走り出すので、ドライバーの腕と車の仕組みの差が大きく出る。2026年は、MGU-Hがなくなってターボが排気だけで回るようになり、発進の前にエンジンの回転を上げてターボを回しておく必要がある（F1公式）。ピアストリは、うまくいかないと「6つか7つ順位を落とすこともある」と話した（The Race）。",
+    "雨のときも、2017年からは、セーフティカーの後ろでフォーメーションラップを走ったあと、路面が良くなればグリッドに戻ってスタンディングスタートをするのが基本だ（Motorsport.com）。路面が悪すぎるときは、止まらずに始めるローリングスタート（→）になる。赤旗のあとの再開も、乾いた路面ではグリッドからのスタンディングスタートが基本だ（PlanetF1）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンでは、ポールのフェルスタッペンがスタートでアントネッリとラッセルに抜かれ、3番手に落ちた。",
+     "u": "/news/nl-gpblog-verstappen-eerste-zege-sepang/"
+    }
+   ],
+   "see": [
+    "race-start",
+    "false-start",
+    "start-line",
+    "clutch",
+    "formation-lap"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why race starts will be different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-race-starts-will-be-different-in-2026.7ADR4zkfl299T7i3ZYVTYK"
+    },
+    {
+     "name": "The Race",
+     "title": "McLaren wants fix for 'recipe for disaster' 2026 F1 starts",
+     "url": "https://www.the-race.com/formula-1/why-f1-2026-starts-are-a-recipe-for-disaster-and-how-to-fix-it"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Analysis: How F1's new wet standing starts will work",
+     "url": "https://www.motorsport.com/f1/news/analysis-how-f1-s-new-wet-standing-starts-will-work-882493/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Explained: What does a red flag mean and how does a race restart?",
+     "url": "https://www.planetf1.com/features/f1-red-flag-stoppage-rules-explained"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "aborted-start",
+   "term": "スタートの中止（やり直し）",
+   "cat": "レース運営",
+   "aliases": [
+    "スタート中止",
+    "アボーテッドスタート",
+    "Aborted start",
+    "スタートディレイ",
+    "Delayed start",
+    "エクストラ・フォーメーションラップ",
+    "すたーとのちゅうし"
+   ],
+   "words": [
+    "スタートのやり直し",
+    "もう1周",
+    "追加のフォーメーションラップ",
+    "スタートが遅れる",
+    "グリッドで止まった",
+    "仕切り直し"
+   ],
+   "short": "グリッドで問題が起きたとき、スタートを止めて、もう1周フォーメーションラップを走ってからやり直すこと。",
+   "body": [
+    "全車がグリッドに並んだあとに、動けない車や危ない状況が見つかると、レースディレクターはスタートを止める。2026年の規則では、グリッドの手順の途中でスタートを遅らせると決めたとき、スタートのライトにオレンジの光をつけ、「DELAYED START」の表示を出す（規則B5.4.1）。状況によっては、全車がもう1周フォーメーションラップを走ってから、もう一度並び直す（規則B5.9「追加のフォーメーションラップ」）。そのぶん、周回数が減ることもある。",
+    "やり直しの原因をつくったドライバーには、決まりがある。The Raceが引用した規則B5.9.4では、追加のフォーメーションラップの原因になったドライバーは、その周の終わりにピットレーンに入り、ピットレーンの出口からスタートしなければならない。今季のイタリアGPでは、2周目のルクレールの事故のあとの再スタートで、角田裕毅がいったん15番の枠に入りかけてから14番の枠に移り、車が少しピットウォール側に寄って止まった。レースディレクターはこの位置を問題とみて、追加のフォーメーションラップを決めた。スチュワードは、罰は「ピットに入らなかったこと」に対するもので、やり直しの原因をつくったこと自体ではないとし、角田は罰を受けず10位に入った（The Race）。",
+    "やり直しの合図に従わないと、罰がある。2024年のサンパウロGPでは、スタートが中止されたのにノリスやラッセルがグリッドを離れ、2人は罰金と戒告を受けた（F1technical.net）。2024年のオーストリアGPのスプリントでは、ターン1のカメラマンの位置が危ないとして中止され、2回目のフォーメーションラップを走った（PlanetF1）。"
+   ],
+   "rule": "スポーティングレギュレーション B5.4.1（DELAYED START）、B5.9（追加のフォーメーションラップ）、B5.9.4",
+   "examples": [
+    {
+     "t": "セパンでは、フォーメーションラップで複数の車が止まり、スタートの手続きが中断された。",
+     "u": "/news/en-therace-sepang-start-abandoned/"
+    },
+    {
+     "t": "セパンでは、SCが先導するスタートの手順の途中で複数の車が加速できなくなり、FIAが全チームに更新を配ったあと、グリッドは元の順番のまま、現地16時33分に仕切り直すことになった。",
+     "u": "/news/en-racefans-sepang-software-issue/"
+    },
+    {
+     "t": "アロンソは、セパンのフォーメーションラップで赤旗を出した判断に、なぜ自分のときは止めないのかと疑問を示した。",
+     "u": "/news/de-motorsport-total-alonso-red-flag/"
+    }
+   ],
+   "see": [
+    "formation-lap",
+    "race-start",
+    "pit-lane-start",
+    "red-flag",
+    "start-line"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 07（2026年6月25日。B2.5.2a、B5.4.1）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 06（2026年4月28日。目次のB5.9、B5.10、B5.13、B5.14）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Yuki Tsunoda was innocent in aborted Italian GP start",
+     "url": "https://www.the-race.com/formula-1/why-yuki-tsunoda-innocent-in-aborted-italian-gp-start/"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Russell and Norris fined, Tsunoda and Lawson escape penalty for aborted start",
+     "url": "https://www.f1technical.net/news/25777"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Fears over Monaco crash repeat triggered aborted Austrian Grand Prix Sprint start",
+     "url": "https://www.planetf1.com/news/fia-explains-austrian-grand-prix-sprint-start-abort"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "anti-stall",
+   "term": "アンチストール",
+   "cat": "マシンと空力",
+   "aliases": [
+    "アンチストール",
+    "Anti-stall",
+    "エンスト防止",
+    "ストール",
+    "あんちすとーる"
+   ],
+   "words": [
+    "エンスト",
+    "エンジンが止まる",
+    "スタートで動かない",
+    "スピンしたあと",
+    "クラッチが切れる"
+   ],
+   "short": "エンジンの回転が落ちすぎたとき、自動でクラッチを切ってエンストを防ぐ仕組み。働くと車はほとんど進まない。",
+   "body": [
+    "アンチストールは、エンジンが止まる（エンストする）のを防ぐ、車のコンピューターの仕組みだ。エンジンの回転が低くなりすぎると、自動でクラッチを切って、エンジンだけが回り続けるようにする。そのあとドライバーが、クラッチパドルで自分でつなぎ直す必要がある（FlowRacers）。",
+    "働く場面は、おもにスタートとスピンのあとだ。スタートでクラッチのつなぎ方を誤ると、アンチストールが入り、車はほとんど前に進まない。ただ、クラッチを切った状態を長く保つことはできず、ドライバーが対応しないとエンジンは止まってしまう。F1の車には自分でエンジンをかけ直す仕組みがないので、そのまま動けなくなる（FlowRacers）。",
+    "2026年は、アンチストールが話題になった。ターボの立ち上がりが遅く、回転の幅を外すとアンチストールに入りやすいからだ。The Raceのアンダーソン氏は、アンチストールに入らない力と、ホイールスピンを起こさない力の間の回転の幅にいることが大事だと書いた。2026年7月のハンガリーGPでは、ラッセルがスタートの直前に回転が上がりすぎ、抑えようとしてアクセルを10%未満まで戻した瞬間にライトが消えた。アンチストールが入り、6番手から最後尾近くまで落ち、そこから7位まで戻した。メルセデスのロード副代表が説明している（Crash.net）。"
+   ],
+   "examples": [],
+   "see": [
+    "clutch",
+    "race-start",
+    "standard-ecu",
+    "steering-wheel"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "What Is Anti-Stall On An F1 Car? How Does It Work?",
+     "url": "https://flowracers.com/blog/what-is-anti-stall-f1/"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: Why F1 2026 starts are much more complicated",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-2026-starts-much-more-complicated/"
+    },
+    {
+     "name": "The Race",
+     "title": "McLaren wants fix for 'recipe for disaster' 2026 F1 starts",
+     "url": "https://www.the-race.com/formula-1/why-f1-2026-starts-are-a-recipe-for-disaster-and-how-to-fix-it"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Mercedes sheds more light on George Russell's Hungary F1 start issue",
+     "url": "https://www.crash.net/f1/news/1101972/1/mercedes-sheds-more-light-george-russells-hungary-f1-start-issue"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "launch",
+   "term": "スタートの発進（クラッチとターボ）",
+   "cat": "レース運営",
+   "aliases": [
+    "発進",
+    "ローンチ",
+    "Launch",
+    "ゲットアウェイ",
+    "Getaway",
+    "蹴り出し",
+    "はっしん"
+   ],
+   "words": [
+    "スタートの出来",
+    "出遅れ",
+    "ホイールスピン",
+    "蹴り出し",
+    "スタートで順位を落とす",
+    "ターボを回す"
+   ],
+   "short": "ライトが消えた瞬間の走り出し。2026年はターボを回しておく準備が難しく、出来の差が大きい。",
+   "body": [
+    "スタートの発進は、赤いライトが消えた瞬間に、止まった車を走らせることだ。ドライバーはエンジンの回転を上げて待ち、ライトが消えたらクラッチパドルを放してつなぐ（→クラッチ）。つなぎ方が強すぎるとタイヤが空転（ホイールスピン）し、弱すぎるとエンジンの力が足りずに失速する。",
+    "2026年は、この発進が難しくなった。MGU-Hがなくなり、ターボは排気の力だけで回る。F1公式によると、ターボは毎分およそ10万回転で最大の力を出すので、発進の前にエンジンを回して、ターボを回しておく必要がある。The Raceのアンダーソン氏は、ライトが消えるときにアクセルを戻すのが早すぎるとターボが遅くなり、遅すぎるとホイールスピンになると書いた。シーズン前の時点の規則では、止まった状態からのスタートでは、時速50kmに届くまでMGU-Kの電気の力を使えなかった（The Race）。",
+    "そのため、出来の差が大きい。ピアストリは「うまくいかないと6つか7つ順位を落とすこともある」と話した。グリッドの後ろのほうの車は、ターボを回す時間が短くなる問題もある（The Race）。FIAは、赤いライトの前に、グリッドのパネルを5秒間青く点滅させる手順を入れた（F1公式）。4月には、極端に遅い発進を見つけてMGU-Kの力を自動で足す仕組みも決め、5月のマイアミGPから試した（FIA、→スタート手順）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンでは、ポールのフェルスタッペンがスタートでアントネッリとラッセルに抜かれ、3番手に落ちた。",
+     "u": "/news/nl-gpblog-verstappen-eerste-zege-sepang/"
+    }
+   ],
+   "see": [
+    "clutch",
+    "race-start",
+    "turbo",
+    "mgu-k",
+    "false-start"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why race starts will be different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-race-starts-will-be-different-in-2026.7ADR4zkfl299T7i3ZYVTYK"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: Why F1 2026 starts are much more complicated",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-2026-starts-much-more-complicated/"
+    },
+    {
+     "name": "The Race",
+     "title": "McLaren wants fix for 'recipe for disaster' 2026 F1 starts",
+     "url": "https://www.the-race.com/formula-1/why-f1-2026-starts-are-a-recipe-for-disaster-and-how-to-fix-it"
+    },
+    {
+     "name": "FIA",
+     "title": "Refinements to the 2026 FIA Formula 1 regulations agreed by all stakeholders",
+     "url": "https://www.fia.com/news/refinements-2026-fia-formula-1-regulations-agreed-all-stakeholders"
+    },
+    {
+     "name": "Crash.net",
+     "title": "FIA reveals why new F1 start boost safety measure won't give \"sporting advantage\"",
+     "url": "https://www.crash.net/f1/news/1093711/1/fia-reveals-why-new-f1-start-boost-safety-measure-wont-give-sporting-advantage"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "turbo-lag",
+   "term": "ターボラグ",
+   "cat": "パワーユニット",
+   "aliases": [
+    "ターボラグ",
+    "Turbo lag",
+    "ラグ",
+    "ブーストの遅れ",
+    "たーぼらぐ"
+   ],
+   "words": [
+    "アクセルの反応が遅い",
+    "ターボの遅れ",
+    "加速しない",
+    "MGU-Hがない",
+    "ブーストが立ち上がらない"
+   ],
+   "short": "アクセルを踏んでから、ターボが回って力が出るまでの遅れ。2026年はMGU-Hがなくなって大きな課題に。",
+   "body": [
+    "ターボラグは、アクセルを踏んでから、ターボが十分に回って力が出るまでの遅れだ。ターボは排気ガスの勢いで回るので、エンジンの回転が低いときや、アクセルを戻していたあとは、すぐには回らない。",
+    "2025年までは、ターボの軸につながったMGU-Hが、モーターとしてターボを回して遅れを消していた。2026年はMGU-Hがなくなり、ターボは排気ガスの力だけに頼る（F1公式）。とくにスタートで問題になり、ドライバーは発進の前にエンジンを回してターボを回しておく必要がある。The Raceのアンダーソン氏は、ターボの大きさにも悩みがあると書いた。小さいターボはスタートやモナコに向き、大きいターボはモンツァやバクーのような力の要るコースに向く。",
+    "メーカーは、ターボラグを小さくする改良を続けている。電気の力で補う方法もあるが、電気の量には限りがある（→ターボチャージャー）。"
+   ],
+   "examples": [
+    {
+     "t": "ホンダは、2回目のADUOの仕様でターボラグを減らすことを狙い、まずストロールの車に載せた。",
+     "u": "/news/es-motorsport-honda-aduo2-stroll-first/"
+    },
+    {
+     "t": "セパンのフォーメーションラップでは、アクセルを少ししか踏まずにターボの回転が落ちた状態から全開を求めると、バッテリーが尽きる「罠」があったと解説された。",
+     "u": "/news/de-motorsport-total-sepang-krimi/"
+    },
+    {
+     "t": "セパンの混乱では、雨の低速走行でブースト圧が下がってもMGU-Kが補えない状況が重なったと説明された。",
+     "u": "/news/en-therace-software-bug-explained/"
+    }
+   ],
+   "see": [
+    "turbo",
+    "mgu-h",
+    "race-start",
+    "clutch",
+    "energy-management"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: Why race starts will be different in 2026",
+     "url": "https://www.formula1.com/en/latest/article/explained-why-race-starts-will-be-different-in-2026.7ADR4zkfl299T7i3ZYVTYK"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: Why F1 2026 starts are much more complicated",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-2026-starts-much-more-complicated/"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "crossover-point",
+   "term": "クロスオーバー（タイヤを替える境目）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "クロスオーバー",
+    "クロスオーバーポイント",
+    "Crossover point",
+    "切り替えの目安",
+    "くろすおーばー"
+   ],
+   "words": [
+    "スリックかインターか",
+    "タイヤを替えるタイミング",
+    "雨用タイヤに替える",
+    "乾いてきた",
+    "ラップタイムの110%"
+   ],
+   "short": "雨用タイヤとスリックのどちらが速いかが入れ替わる境目。読み違えると大きく順位を落とす。",
+   "body": [
+    "クロスオーバーは、2種類のタイヤの速さが入れ替わる境目だ。雨が降り始めたり、路面が乾いてきたりすると、スリック（溝のないタイヤ）とインターミディエイトのどちらが速いかが変わる。チームは、その境目がいつ来るかを読んで、タイヤを替える。",
+    "目安の一つは、ラップタイムだ。ピレリの2020年の説明では、乾いた路面のラップタイムを100%として、110〜112%まで遅くなったら、インターミディエイトに替える頃合いだ。1分30秒のコースなら、1分40秒くらいになったときだ。インターミディエイトとフルウェットの間にも、同じような割合の目安がある（ピレリ）。",
+    "実際の判断は難しい。どこに、どれだけ水があるかの情報をチームが伝えるが、最後はドライバーがどのタイヤが良いかを判断する（ピレリ）。早く替えすぎても、遅すぎても時間を失う。"
+   ],
+   "examples": [
+    {
+     "t": "セパンの雨上がりのスタートでは、グリッドの半数がスリック、半数がインターミディエイトを選んだ。",
+     "u": "/news/nl-gpblog-ferrari-verklaart-blunder/"
+    },
+    {
+     "t": "ウェットの路面でスリックを選んだフェラーリは、2周でハミルトンとルクレールが最後尾へ下がった。",
+     "u": "/news/it-formula1it-hamilton-tormento/"
+    }
+   ],
+   "see": [
+    "intermediate",
+    "full-wet",
+    "pit-stop",
+    "tyre-warm-up",
+    "pit-loss"
+   ],
+   "src": [
+    {
+     "name": "Pirelli",
+     "title": "When it's time to change from slick to wet tyres in Formula 1",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/when-it-s-time-to-change-from-slick-to-wet-tyres-in-formula-1-52943/"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "drying-line",
+   "term": "乾いたライン（ドライライン）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ドライライン",
+    "Dry line",
+    "乾いたライン",
+    "レコードライン",
+    "どらいらいん"
+   ],
+   "words": [
+    "路面が乾く",
+    "走行ラインだけ乾く",
+    "スリックに替える",
+    "濡れた場所",
+    "雨上がり"
+   ],
+   "short": "雨上がりに、多くの車が走るラインだけが先に乾いてできる帯。スリックに替える目安になる。",
+   "body": [
+    "雨が上がると、コースは一度に乾くわけではない。多くの車が通る走行ラインから先に水がはけ、乾いた帯ができる。これを乾いたライン（ドライライン）と呼ぶ。乾いたラインが広がるほど、スリックで走れる場所が増え、雨用タイヤからスリックに替える時期が近づく（→クロスオーバー）。",
+    "ただ、雨のときは逆のこともある。乾いた路面で走行ラインに乗ったゴム（ラバー）は、濡れると滑りやすく、「氷の上を走っているよう」に感じることがあると、Driver61は説明している。そのためドライバーは、雨のときはコースの幅を広く使い、ふだんのラインを外れた場所のグリップも試しながら、速いラインを探す。",
+    "路面の性質でも乾き方は変わる。今季のセパンでは、粗い舗装の細かな穴に予想以上の水が残り、スリックの温度がなかなか上がらなかったと伝えられた（下の実例）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンでは、粗い舗装の細かな穴に想定以上の水が残り、スリックの温度が上がるまで時間がかかった。",
+     "u": "/news/de-formel1-slicks-intermediates-decision/"
+    }
+   ],
+   "see": [
+    "intermediate",
+    "track-evolution",
+    "tyre-warm-up",
+    "wet-race-declared"
+   ],
+   "src": [
+    {
+     "name": "Driver61",
+     "title": "Testing For Grip: How to Find the Fastest Lap in Wet Conditions",
+     "url": "https://driver61.com/uni/testing-for-grip-wet-conditions/"
+    },
+    {
+     "name": "Pirelli",
+     "title": "When it's time to change from slick to wet tyres in Formula 1",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/when-it-s-time-to-change-from-slick-to-wet-tyres-in-formula-1-52943/"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "aquaplaning",
+   "term": "アクアプレーニング",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "アクアプレーニング",
+    "ハイドロプレーニング",
+    "Aquaplaning",
+    "Hydroplaning",
+    "あくあぷれーにんぐ"
+   ],
+   "words": [
+    "水に浮く",
+    "たまった水",
+    "グリップがゼロ",
+    "雨でスピン",
+    "水たまり"
+   ],
+   "short": "タイヤが水の上に浮いて、路面にふれなくなり、グリップがまったくなくなること。",
+   "body": [
+    "アクアプレーニングは、タイヤが濡れた路面の水の上をすべって、路面にまったくふれなくなる状態だ。グリップがまったくなくなる（F1公式の用語集）ので、ハンドルもブレーキも効かない。ハイドロプレーニングとも呼ぶ。",
+    "雨用タイヤは、溝で水をかき出してこれを防ぐ。ピレリの2020年の説明では、時速300kmでインターミディエイト1本は毎秒35〜40リットルほど、フルウェットはその約2倍の水を逃がせる。スリックは水を路面に押しつけることはできても、なくすことはできないので、アクアプレーニングを起こしやすい（ピレリ）。",
+    "たまった水がタイヤの溝で逃がせる量より速く増えると、ドライバーは「乗っているだけ」になると、Motor Sport Magazineは書いた。とくに2022〜2025年の車は、車高がとても低く、アクアプレーニングを起こしやすかった（同誌）。2025年のオーストラリアGPでは、ルクレールがグリッドに向かう途中で水に乗り、比較的遅い速度で壁に当たった（同誌）。"
+   ],
+   "examples": [],
+   "see": [
+    "full-wet",
+    "intermediate",
+    "ride-height",
+    "wet-race-declared"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (A-E)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "Pirelli",
+     "title": "When it's time to change from slick to wet tyres in Formula 1",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/when-it-s-time-to-change-from-slick-to-wet-tyres-in-formula-1-52943/"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Why can't F1 cars race in heavy rain? The reasons we rarely see full wet tyres",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/why-cant-f1-cars-race-in-heavy-rain-the-reasons-we-rarely-see-full-wet-tyres"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "spray-visibility",
+   "term": "水しぶきと視界",
+   "cat": "レース運営",
+   "aliases": [
+    "水しぶき",
+    "スプレー",
+    "Spray",
+    "視界不良",
+    "ウォータースプレー",
+    "みずしぶき"
+   ],
+   "words": [
+    "前が見えない",
+    "雨で赤旗",
+    "水煙",
+    "ホイールカバー",
+    "雨のレースが止まる"
+   ],
+   "short": "雨の日に車が巻き上げる水しぶき。後ろの車は前が見えず、レースが止まる大きな理由になる。",
+   "body": [
+    "雨の日、F1の車は大量の水しぶきを巻き上げる。後ろの車からは前がほとんど見えなくなる。F1が大雨で走れない一番の理由は、この視界の悪さだ（Motor Sport Magazine）。",
+    "水しぶきは、タイヤだけでなく、床下からも出る。グラウンドエフェクトの車は、床下を速い空気が流れ、路面の水滴を車の後ろまで運んで上に吹き上げる。2025年のイギリスGPでは、ハジャーが前のアントネッリの車が見えずに追突した。フェラーリは2024年にタイヤを覆うカバーを試したが、思うような効果は出ず、試したベアマンは「振り出しに戻った」と話した（同誌）。",
+    "2026年は、車とタイヤが細くなり、床下の効果も弱まったので、水しぶきが減ると期待されている。一方で、ピアストリは「雨のときのミスの余裕はずっと小さい」と話している（同誌）。スタートを遅らせるか、赤旗で止めるかの判断では、たまった水と並んで視界が大きな材料になる（→ローリングスタート）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンを前に、ファン掲示板では、視界不良による赤旗のリスクを心配する声が出た（ファン投稿のまとめ）。",
+     "u": "/news/ja-f1are-sepang-weather-forecast/"
+    }
+   ],
+   "see": [
+    "full-wet",
+    "red-flag",
+    "ground-effect",
+    "floor-diffuser",
+    "wet-race-declared"
+   ],
+   "src": [
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Why can't F1 cars race in heavy rain? The reasons we rarely see full wet tyres",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/why-cant-f1-cars-race-in-heavy-rain-the-reasons-we-rarely-see-full-wet-tyres"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Standing start v rolling start as F1 forecast wet Dutch Grand Prix",
+     "url": "https://www.planetf1.com/news/standing-start-v-rolling-start-as-f1-forecast-wet-dutch-grand-prix"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "red-flag-tyre-change",
+   "term": "赤旗中のタイヤ交換と作業",
+   "cat": "レース運営",
+   "aliases": [
+    "赤旗中のタイヤ交換",
+    "赤旗中の修理",
+    "Red flag tyre change",
+    "無料のタイヤ交換",
+    "あかはたちゅうのたいやこうかん"
+   ],
+   "words": [
+    "赤旗でタイヤ交換",
+    "中断中の修理",
+    "ただでタイヤを替える",
+    "赤旗で得をする",
+    "中断の手順"
+   ],
+   "short": "赤旗でレースが止まっている間は、タイヤ交換や修理ができる。ピットで時間を失わずに替えられる。",
+   "body": [
+    "赤旗でレースが止まると、各車はピットレーンに戻って並ぶ。この間、チームは車に作業ができる。PlanetF1の2023年の解説では、全車がタイヤを新しくでき、ブレーキやラジエーターのダクトの調整、ピットストップと同じ範囲の前翼の調整、壊れたところの修理もできる。ヘッドレストやペダルの位置など、ドライバーの座り心地の調整もできる。",
+    "このため、赤旗は「無料のピットストップ」になりうる。2021年のイギリスGPでは、メルセデスが赤旗の間にハミルトンの壊れた車を大きく直し、ハミルトンはそのまま優勝した（PlanetF1）。逆に、赤旗の直前にピットに入った車は損をする。2024年のサンパウロGPでは、ポールから出たノリスが赤旗の直前にタイヤを替え、後ろの車は中断中に順位を失わずに替えられた。ノリスはこの決まりを「ばかげている」と批判した（Sky Sports）。",
+    "それでも決まりが続くのは、安全のためだ。事故のあとは車やタイヤに破片が付いているおそれがあり、セーフティカーの後ろで冷えたタイヤより、新しく温めたタイヤのほうが安全に再開できると、元アストンマーティンの戦略担当のコリンズ氏は説明している（Sky Sports）。中断の手順は、2026年の規則ではB5.14にまとめられている。"
+   ],
+   "rule": "スポーティングレギュレーション B5.14（中断の手順）",
+   "examples": [],
+   "see": [
+    "red-flag",
+    "pit-stop",
+    "two-compound-rule",
+    "parc-ferme",
+    "pit-lane"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Explained: What does a red flag mean and how does a race restart?",
+     "url": "https://www.planetf1.com/features/f1-red-flag-stoppage-rules-explained"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "F1 red flag tyre change rules explained: Lando Norris regulation complaints after Sao Paulo GP disappointment",
+     "url": "https://www.skysports.com/f1/news/12433/13248475/f1-red-flag-tyre-change-rules-explained-lando-norris-regulation-complaints-after-sao-paulo-gp-disappointment"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 06（2026年4月28日。目次のB5.9、B5.10、B5.13、B5.14）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "sc-pit-stop",
+   "term": "セーフティカー中のピットストップ",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "SC中のピット",
+    "セーフティカー中のピットイン",
+    "安いピットストップ",
+    "Cheap pit stop",
+    "Free pit stop",
+    "えすしーちゅうのぴっと"
+   ],
+   "words": [
+    "SCでピットに入る",
+    "安いピット",
+    "タダのピット",
+    "セーフティカーの好機",
+    "ピットのタイミング"
+   ],
+   "short": "SCが出て全体が遅くなっている間にピットに入ると、失う時間が小さくなる。作戦の大きな分かれ目。",
+   "body": [
+    "セーフティカー（SC）が出ると、コース上の全車はゆっくり走る。一方、ピットレーンの速度の制限はふだんと同じだ。そのため、SCの間にピットに入ると、ライバルに対して失う時間が小さくなる。FlowRacersの例では、ふだん20秒失うピットストップが、SCの間なら14秒以下ですむことがある。これを「安いピットストップ」と呼ぶ。",
+    "SCの間もピットには入れる。入れないのは、ピットレーンが閉鎖されたときだけだ（→ピットレーンの閉鎖）。バーチャルセーフティカー（VSC）の間も損は小さくなるが、SCほどではない。VSCの終わりは10〜15秒ほど前にしか知らされないので、タイミングも難しい（FlowRacers）。",
+    "ただし、判断は一瞬だ。SCが出たのを知るのがピット入口を過ぎたあとだと、その周には入れない。同じチームの2台が続けて入ると、2台目が待たされることもある（→ダブルスタック）。全員が入るなかであえてコースに残り、順位を取る作戦もある（→ステイアウト）。"
+   ],
+   "examples": [
+    {
+     "t": "バクーでは、フェルスタッペンが早めのピットを望んだが断られた。その後SCが出て、「無料の」ピットの好機を生かせた。",
+     "u": "/news/nl-gpblog-verstappen-pit-lambiase/"
+    },
+    {
+     "t": "ハミルトンは、バクーでSCが出たことをピット入口を過ぎてから伝えられ、不満を漏らした。",
+     "u": "/news/ja-f1are-hamilton-engineer-radio/"
+    },
+    {
+     "t": "セパンでスリックを選んで遅れたフェラーリとマクラーレンにとって、ボッタスの事故によるSCが挽回の助けになった。",
+     "u": "/news/de-formel1-slicks-intermediates-decision/"
+    }
+   ],
+   "see": [
+    "safety-car",
+    "pit-loss",
+    "double-stack",
+    "vsc",
+    "stay-out"
+   ],
+   "src": [
+    {
+     "name": "FlowRacers",
+     "title": "Can You Pit During Safety Car In F1? What About VSC?",
+     "url": "https://flowracers.com/blog/f1-pit-stop-safety-car/"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "sc-line",
+   "term": "セーフティカーライン",
+   "cat": "レース運営",
+   "aliases": [
+    "SCライン",
+    "セーフティカーライン",
+    "Safety Car line",
+    "SCライン1",
+    "SCライン2",
+    "えすしーらいん"
+   ],
+   "words": [
+    "ピット入口の線",
+    "ピット出口の線",
+    "SC中の追い越し",
+    "周回遅れの解消",
+    "SCの線"
+   ],
+   "short": "ピットの入口と出口の近くに引かれた2本の線。SCの間の追い越しや周回の数え方の基準になる。",
+   "body": [
+    "セーフティカー（SC）ラインは、ピットの入口と出口の近くのコースに引かれた線だ。1本目（SCライン1）はピットの入口側、2本目（SCライン2）はピットの出口側にある。SCの間は追い越しが禁止だが、この線を基準に例外が決まっている。",
+    "FIAの国際競技規則の付則Hでは、1本目の線は、ピットに入る車がセーフティカーを抜いてもよいとみなせる地点に引く。2本目の線は、ピットを出る車がコース上の車とほぼ同じ速さになる地点に引き、この線を越えたら追い越しはできない（motorsports-regulations.com）。F1の追い越しの例外も、この考え方に沿っている（→セーフティカー中の違反）。",
+    "線は、周回遅れの車の扱いにも使われる。2026年のF1の規則B5.13.4 c)は、周回遅れを解消できる車を、「1本目のSCラインを2回目に越えた周」の終わりの時点で周回遅れの車、と決めている。今季のイギリスGPでは、周回遅れだったサインツがSCの間にピットに入った。シルバーストンでは1本目のSCラインがピットの入口にあり、サインツはピットに入るときに、この線を「2回目」に越えた。このため、規則の基準の時点で周回遅れの車に当たらず、周回遅れを解消できる車ではなかった。それでも1周を取り戻してしまったため、スチュワードは「1周のペナルティ」でその1周を取り消し、サインツは12位から17位になった（The Race）。"
+   ],
+   "rule": "スポーティングレギュレーション B5.13（セーフティカー）、B5.13.4 c)（周回遅れの解消）",
+   "examples": [],
+   "see": [
+    "safety-car",
+    "sc-infringement",
+    "pit-lane",
+    "lapped-car",
+    "safety-car-restart"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "'Penalty lap'? F1's weirdest penalty of 2026 explained",
+     "url": "https://the-race.com/formula-1/penalty-lap-f1s-weirdest-penalty-of-2026-explained/"
+    },
+    {
+     "name": "motorsports-regulations.com",
+     "title": "Safety Car Line（国際モータースポーツ競技規則 付則H 2.10.2の解説）",
+     "url": "https://motorsports-regulations.com/en/?p=6956"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 06（2026年4月28日。目次のB5.9、B5.10、B5.13、B5.14）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "pit-lane-closed",
+   "term": "ピットレーンの閉鎖",
+   "cat": "レース運営",
+   "aliases": [
+    "ピットクローズ",
+    "ピットレーンクローズド",
+    "Pit lane closed",
+    "ピット入口の閉鎖",
+    "ぴっとれーんのへいさ"
+   ],
+   "words": [
+    "ピットに入れない",
+    "ピット閉鎖",
+    "赤いバツ印",
+    "ピット入口が閉まる",
+    "ストップ＆ゴー"
+   ],
+   "short": "安全のためにピットの入口を閉じること。閉じている間に入ると、重い罰を受ける。",
+   "body": [
+    "レースディレクターは、安全のために、ピットの入口を閉じることがある。2026年の規則にも、特別な事情があるときは、安全のためにピット入口を閉じるよう求めることができると書かれている（規則B1.6.4）。閉じている間にピットに入ってよいのは、どうしても必要で、はっきり分かる修理をするときだけだ。たとえば2020年のイタリアGPでは、コース脇で止まった車をピットレーンに押して運ぶために閉じられた（後述）。",
+    "閉鎖は、ライトパネルの点滅する赤いバツ印などで知らされる。チームのモニターでもピットレーンが赤く表示され、計時の画面にも「pitlane closed」と出る（The Race、2020年のFIAの説明）。",
+    "2020年のイタリアGPでは、マグヌッセンの車がパラボリカの近くで止まり、ピットレーンに押して運ぶためにピットが閉鎖された。閉鎖中にピットに入ったハミルトンとジョビナッツィは、10秒のストップ＆ゴーを受けた。当時のマシ・レースディレクターは、この罰に「融通の余地はない」と話した（The Race）。2008年には、SCが出るとピットを閉じる決まりがあったが、2009年になくなり、今はSCが出てもふだんはピットに入れる（FlowRacers）。"
+   ],
+   "examples": [],
+   "see": [
+    "safety-car",
+    "pit-lane",
+    "stop-go",
+    "race-control"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "FIA clarifies four points of contention over closed pitlane",
+     "url": "https://the-race.com/formula-1/fia-clarifies-four-points-of-contention-over-closed-pitlane/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 07（2026年6月25日。B1.6.4）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting Issue 04（2025年12月10日。ピット入口の閉鎖）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_04_-_2025-12-10_0.pdf"
+    },
+    {
+     "name": "FlowRacers",
+     "title": "Can You Pit During Safety Car In F1? What About VSC?",
+     "url": "https://flowracers.com/blog/f1-pit-stop-safety-car/"
+    }
+   ],
+   "checked": "2026-10-06",
+   "rule": "スポーティングレギュレーション B1.6.4（ピット入口の閉鎖）"
+  },
+  {
+   "id": "engine-braking",
+   "term": "エンジンブレーキ",
+   "cat": "パワーユニット",
+   "aliases": [
+    "エンジンブレーキ",
+    "Engine braking",
+    "エンブレ",
+    "えんじんぶれーき"
+   ],
+   "words": [
+    "アクセルを戻したときの減速",
+    "コーナーの入口で不安定",
+    "後輪のブレーキ",
+    "回生ブレーキ",
+    "減速の効き"
+   ],
+   "short": "アクセルを戻したとき、エンジンの抵抗で車が減速すること。後輪にかかるので、車のバランスに響く。",
+   "body": [
+    "エンジンブレーキは、アクセルを戻したときに、エンジンの抵抗で車が減速することだ。アクセルを閉じて回ると、シリンダーの中の圧縮などでエンジンは遅くなろうとする。その力が後輪にかかる（Formula1-Dictionary）。",
+    "後輪だけにかかるので、車のバランスを大きく変える。効きすぎると、アクセルを戻した瞬間に車が落ち着かなくなる。かつてはエンジンの制御で、減速のときの燃料の入れ方などを変えて効き方を細かく調整していたが、2008年に共通のECU（→標準ECU）が入ってから、そうした高度な仕組みは使えなくなった（同）。",
+    "2026年は、減速のときにMGU-Kが電気をためる量が大きくなった。The Raceによると、MGU-Kの回生の力は120kWから350kWに上がり、後輪の減速の多くを回生でまかなうようになった。そのぶん後ろのブレーキはあまり使われず、温度が下がりすぎる問題が出た。ブレンボのアルモンド最高執行責任者は「後輪のブレーキは、とても、とても、とても冷たくなっている」と話している。"
+   ],
+   "examples": [],
+   "see": [
+    "brake-balance",
+    "differential",
+    "harvesting",
+    "brake-by-wire",
+    "standard-ecu"
+   ],
+   "src": [
+    {
+     "name": "Formula1-Dictionary",
+     "title": "Engine Braking in F1: Effect on Car Balance",
+     "url": "https://www.formula1-dictionary.net/f1-engine-braking/"
+    },
+    {
+     "name": "The Race",
+     "title": "Another unforeseen headache set to be a theme of F1 2026",
+     "url": "https://www.the-race.com/formula-1/another-unforeseen-headache-set-to-be-a-theme-of-f1-2026"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "reliability",
+   "term": "信頼性（トラブルとリタイア）",
+   "cat": "パワーユニット",
+   "aliases": [
+    "信頼性",
+    "リライアビリティ",
+    "Reliability",
+    "マシントラブル",
+    "メカニカルトラブル",
+    "しんらいせい"
+   ],
+   "words": [
+    "壊れる",
+    "トラブルでリタイア",
+    "エンジンが壊れた",
+    "バッテリーの故障",
+    "完走できない"
+   ],
+   "short": "車が壊れずに走り切れるかどうか。速くても壊れればポイントは入らない。",
+   "body": [
+    "信頼性は、車が壊れずに走り切れるかどうかだ。どれだけ速くても、壊れてリタイアすればポイントは入らない（→DNF）。パワーユニット（PU）の部品は1シーズンに使える数に上限があり、壊れて新しい部品を入れると、グリッド降格を受けることもある（→パワーユニットの使用数）。",
+    "2026年は、新しいPUの規則で、信頼性が大きな問題になった。電気の力の割合が、エンジンとほぼ半分ずつまで増えたからだ（Motor Sport Magazine）。メルセデス製のPUでは、中国GPでマクラーレンの2台がスタートできず、カナダGPでは首位を走っていたラッセルが30周目にリタイアした。ウォルフ代表は「2戦に1度、車が大量のポイントを失っていては、選手権は争えない」と話した（同誌）。メルセデスのアリソン技術責任者は、問題は「電池の同じ広い範囲から起きている」と説明し、新しい部品を順に入れると話した（GPFans）。",
+    "他のチームの故障は、中団のチームにとって好機にもなる。アルピーヌのガスリーは「ほかの車のリタイアを利用している」と認めつつ、それが自分たちの遅れを隠していると話した（PlanetF1）。"
+   ],
+   "examples": [
+    {
+     "t": "メルセデスのラッセルは、セパンで残り5周でPU故障の疑いによりリタイアし、今季3度目のDNFになった。",
+     "u": "/news/en-rn365-wolff-massively-annoyed/"
+    },
+    {
+     "t": "バクーでは、アストンマーティンの2台がそろって完走できなかった。アロンソはエンジンの問題を訴えてリタイアした。",
+     "u": "/news/ja-f1data-alonso-engine-issue/"
+    },
+    {
+     "t": "元F1技術者のアンダーソンは、エンジンと電気の出力の割合を見直せば、信頼性と安全性は高まると主張した。",
+     "u": "/news/en-therace-anderson-malaysia-lucky/"
+    }
+   ],
+   "see": [
+    "dnf",
+    "pu-allocation",
+    "grid-penalty",
+    "energy-store",
+    "pu-stockpiling"
+   ],
+   "src": [
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Mercedes' Achilles heel is becoming too costly",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/mercedes-achilles-heel-is-becoming-too-costly/"
+    },
+    {
+     "name": "GPFans",
+     "title": "Mercedes find answers to 'painful' F1 failures",
+     "url": "https://www.gpfans.com/en/f1-news/1086385/f1-mercedes-power-unit-battery-failures-answers-james-allison-2026-mclaren/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Gasly: F1 2026 reliability chaos masks Alpine losses",
+     "url": "https://www.planetf1.com/news/pierre-gasly-f1-2026-reliability-chaos-alpine-performance-gap"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "grid-side",
+   "term": "グリッドのきれいな側・汚れた側",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "クリーンサイド",
+    "ダーティサイド",
+    "Clean side",
+    "Dirty side",
+    "イン側・アウト側",
+    "ぐりっどのきれいながわ"
+   ],
+   "words": [
+    "奇数グリッド",
+    "偶数グリッド",
+    "グリッドの左右",
+    "汚れた側からのスタート",
+    "ポールの位置"
+   ],
+   "short": "グリッドの左右のうち、走行ライン側はグリップが良く（きれいな側）、反対側は滑りやすい（汚れた側）。",
+   "body": [
+    "グリッドは2列に並ぶので、同じ列でも左右でスタートの条件が違う。ふだんの走行ラインの上にある側は、ゴムが乗ってグリップが良い「きれいな側」だ。反対側は、ほこりや小さなごみが残り、滑りやすい「汚れた側」になる。",
+    "差は小さくない。クビサは2010年の韓国GPで、練習スタートで「80mで20m以上の差」が出たと話し、汚れた側の8番手は11番手とほとんど同じだと嘆いた（Autosport）。2012年のアメリカGPでは、フェラーリがマッサの車のギアボックスの封印をわざと切って5グリッド降格にし、マッサとアロンソを、2人ともきれいな側に並ばせた。このときレッドブルのシミュレーションでは、汚れた側からだとターン1までにグリッド3列ぶんほど失うとされた（F1technical.net）。",
+    "ポールポジションをどちら側に置くかは、コースごとに決まっている。セパンでは右側が伝統の位置だ（RacingNews365）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンでは、ポールの枠がFIAの書類の誤りで本来と逆の左側に描かれ、木曜に右側に直された。",
+     "u": "/news/nl-gpblog-sepang-pole-wrong-side/"
+    }
+   ],
+   "see": [
+    "pole-position",
+    "start-line",
+    "track-evolution",
+    "race-start",
+    "grid-penalty"
+   ],
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "Kubica: Dirty side a huge disadvantage",
+     "url": "https://www.autosport.com/f1/news/87677/kubica-dirty-side-a-huge-disadvantage"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Ferrari breaks gearbox seal to get cars on clean side of grid",
+     "url": "https://www.f1technical.net/news/18019"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "FIA make late Sepang change after unusual circuit mistake",
+     "url": "https://racingnews365.com/fia-make-late-sepang-change-after-unusual-circuit-mistake"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "tyre-pressure",
+   "term": "タイヤの内圧",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "タイヤの空気圧",
+    "内圧",
+    "Tyre pressure",
+    "最低内圧",
+    "psi",
+    "たいやのないあつ"
+   ],
+   "words": [
+    "空気圧",
+    "ピレリの指定",
+    "タイヤの圧力",
+    "低い内圧",
+    "タイヤの破裂"
+   ],
+   "short": "タイヤの中の空気の圧力。ピレリが最低の値を決め、低くしすぎることは許されない。",
+   "body": [
+    "タイヤの内圧は、タイヤの中の空気の圧力だ。低くすると、路面にふれる面が広がってグリップが増える。ピレリの担当者は2021年、内圧を少し下げると性能が上がると認めている（Crash.net）。一方で、低すぎるとタイヤに大きな負担がかかり、壊れる危険が増える。",
+    "そこで、ピレリが大会ごとに、走り出すときの最低の内圧などを決める。2026年のイギリスGPでは、スリックの最低内圧は前28.0psi、後ろ26.0psiとされた。この値は、スポーティングレギュレーションB6.1.3 a)にもとづいて決められる（FIAが公開したピレリの事前資料）。",
+    "決まりは、事故のたびに厳しくなってきた。2013年のイギリスGPでタイヤの破損が相次いだあと、FIAは内圧や車輪の傾き（キャンバー）の基準を守るよう指示した（F1technical.net）。2021年のアゼルバイジャンGPでの破損のあとも、FIAは内圧と温度の検査を厳しくした（Crash.net）。"
+   ],
+   "rule": "スポーティングレギュレーション B6.1.3 a)（ピレリの指定）",
+   "examples": [],
+   "see": [
+    "tyre-blankets",
+    "pirelli",
+    "tyre-warm-up",
+    "scrutineering"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 British Grand Prix - Competition Notes - Pirelli Preview（B6.1.3 a）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_british_grand_prix_-_competition_notes_-_pirelli_preview.pdf"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Pirelli 'out-thought' by teams running lower than expected F1 tyre pressures",
+     "url": "https://crash.net/f1/news/980635/1/pirelli-outthought-teams-running-lower-expected-f1-tyre-pressures"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "FIA to ensure tyres are used to Pirelli specs",
+     "url": "https://www.f1technical.net/news/18561"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "curfew",
+   "term": "作業時間の制限（カーフュー）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "カーフュー",
+    "Curfew",
+    "夜間の作業禁止",
+    "制限時間",
+    "かーふゅー"
+   ],
+   "words": [
+    "夜の作業禁止",
+    "徹夜の作業",
+    "メカニックの休み",
+    "例外の回数",
+    "サーキットに入れない時間"
+   ],
+   "short": "週末の夜に、車の作業をするスタッフがサーキットにいてはいけない時間。チームごとに例外の回数がある。",
+   "body": [
+    "カーフューは、レースの週末の夜に、車の作業にかかわるスタッフがサーキットの中にいてはいけない時間だ。この間は、チームは車に手をふれる作業ができない（F1公式の用語集）。",
+    "時間は大会ごとにFIAが決める。2026年のマイアミGPでは、4月30日の18時から5月1日の8時までの14時間だった。オーストリアGPでは、FP1の前の夜の19時30分から翌朝9時30分までの14時間。日本GPの土曜の朝は、前の晩の20時から8時30分までの12時間半で、FP3が始まる3時間前に終わった（FIAの文書）。",
+    "決まった回数までなら、例外として作業ができる。2026年のFIAの文書では、マイアミGPとオーストリアGPのFP1の前の夜について「5回」、日本GPのFP3の前の夜について「4回」の例外が、チームごとに1シーズンで認められていると書かれている。今季のカナダGP（スプリントの週末）では、アルピーヌがガスリーの車の設定を変えるために、制限の時間中に作業し、今季1回目の例外を使った（F1technical.net）。"
+   ],
+   "examples": [],
+   "see": [
+    "parc-ferme",
+    "pit-lane-start",
+    "free-practice",
+    "sprint"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (A-E)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Miami Grand Prix - Curfew",
+     "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_curfew.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Austrian Grand Prix - Curfew",
+     "url": "https://www.fia.com/system/files/decision-document/2026_austrian_grand_prix_-_curfew.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Japanese Grand Prix - Curfew",
+     "url": "https://www.fia.com/system/files/decision-document/2026_japanese_grand_prix_-_curfew.pdf"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "Alpine uses first curfew exception of the season after late-night work on Gasly's car",
+     "url": "https://www.f1technical.net/news/28558"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "summer-shutdown",
+   "term": "夏休みの工場閉鎖",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "サマーシャットダウン",
+    "夏休み",
+    "Summer shutdown",
+    "シャットダウン期間",
+    "工場閉鎖",
+    "なつやすみのこうじょうへいさ"
+   ],
+   "words": [
+    "夏休み",
+    "開発の中断",
+    "工場が止まる",
+    "2週間の休み",
+    "風洞が使えない"
+   ],
+   "short": "夏に、チームが14日続けて車の設計・開発・製造を止める決まり。",
+   "body": [
+    "F1のチームは、夏に工場を閉める決まりがある。2026年の規則では、7月か8月の間に、14日続けて休まなければならない（規則F3.1.1a）。この間は、風洞やCFD（コンピューターでの空気の計算）を使えず、車の部品もつくれず、社員や外部の人が設計や開発をすることもできない（規則F3.1.2）。",
+    "12月にも、24日から9日間の閉鎖がある（規則F3.1.1b）。PUメーカーにも、同じように夏の14日間と12月の9日間の閉鎖があり、別の条文（F3.2）で決められている。",
+    "FIAは、作業の記録、建物の出入りの記録、設計や風洞のデータの確認、抜き打ちの確認などで、守られているかを調べる（GPFans）。2026年の夏の閉鎖は7月31日に始まった（同）。2021年の規則についてのRacingNews365の解説では、ひどく壊れた車の修理（FIAの承認が必要）などの例外が挙げられている。"
+   ],
+   "rule": "オペレーショナルレギュレーション F3.1（チーム）、F3.2（PUメーカー）",
+   "examples": [],
+   "see": [
+    "cost-cap",
+    "wind-tunnel",
+    "cfd",
+    "factory",
+    "calendar"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section F Operational Issue 09（2026年6月25日、F3.1、F3.2）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_09_-_2026-06-25.pdf"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 enters the summer break shutdown and this is how the FIA enforce it",
+     "url": "https://www.gpfans.com/en/f1-news/1088546/fia-f1-summer-break-shutdown-enforce-rules/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "What is not allowed during F1's summer shutdown",
+     "url": "https://racingnews365.com/what-is-not-allowed-during-f1s-summer-shutdown"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "team-radio",
+   "term": "チーム無線",
+   "cat": "レース運営",
+   "aliases": [
+    "チーム無線",
+    "チームラジオ",
+    "Team radio",
+    "無線",
+    "ラジオ",
+    "ちーむむせん"
+   ],
+   "words": [
+    "無線の指示",
+    "エンジニアとの会話",
+    "無線で謝る",
+    "無線が使えない",
+    "無線の制限"
+   ],
+   "short": "ドライバーとチームが走行中に話す無線。指示や情報のやりとりに使い、中継でも流れる。",
+   "body": [
+    "チーム無線は、走っているドライバーと、ピットのエンジニアが話すための無線だ。ピットに入る合図（→「ボックス」）、ライバルとの差、タイヤや電気の使い方、コースの状況などを伝える。ドライバーも、車の調子や不満を伝える。",
+    "無線で何を言ってよいかは、変わってきた。2016年のシーズン初め、FIAは「ドライバーは一人で、助けを受けずに運転しなければならない」という規則を厳しく当てはめ、運転を手助けする無線を制限した。当時のホワイティング・レースディレクターは、視聴者から「エンジニアの助けにうんざりしている」という声が多かったと話した（Autosport）。この制限は同じ年に見直され、ドイツGPから大きく緩められた。ただし、フォーメーションラップからスタートまでの無線の制限は残された（Autosport、F1technical.net）。",
+    "無線は、中継でも流れる。2016年に制限を緩めたとき、チームは商業権を持つ側に、無線を制限なく聞けるようにすることが求められた（Autosport）。"
+   ],
+   "examples": [
+    {
+     "t": "ローソンは、セパンの混乱でチーム無線が使えず、ピットボードを見て指示を読み取った。",
+     "u": "/news/de-formel1-lawson-radio-sepang/"
+    },
+    {
+     "t": "ボルトレートは、バクーで黄旗が振られるなか、無線で「SCではない」と伝えられてペレスを抜き、10秒加算を受けた。",
+     "u": "/news/de-ams-bortoleto-penalty/"
+    },
+    {
+     "t": "ハミルトンは、バクーでSCが出たことをピット入口を過ぎてから無線で伝えられ、「誰も見ていなかったのか」と不満を漏らした。",
+     "u": "/news/ja-f1are-hamilton-engineer-radio/"
+    }
+   ],
+   "see": [
+    "box-box",
+    "race-engineer",
+    "race-control",
+    "team-orders",
+    "pit-board"
+   ],
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "'Juicy content' in F1 team radio won't be lost with new rules - FIA",
+     "url": "https://www.autosport.com/f1/news/123316/juicy-f1-radio-messages-wont-be-lost"
+    },
+    {
+     "name": "Autosport",
+     "title": "Formula 1's radio restrictions to be lifted from German GP",
+     "url": "https://www.autosport.com/news/report.php/id/125502"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "F1 strategy group postpones halo, lifts radio limitations",
+     "url": "https://f1technical.net/news/20939"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "drinks-bottle",
+   "term": "ドリンクボトル",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ドリンクボトル",
+    "ドリンクシステム",
+    "Drinks bottle",
+    "給水",
+    "どりんくぼとる"
+   ],
+   "words": [
+    "水分補給",
+    "レース中に飲む",
+    "体重が減る",
+    "脱水",
+    "飲み物のボタン"
+   ],
+   "short": "レース中にドライバーが水分をとるための、車に積んだ飲み物の袋と管。",
+   "body": [
+    "F1の車には、走りながら水分をとるための仕組みがある。座席の後ろやノーズに、ふつう1.5リットルほどの、ビタミンやミネラルを混ぜた水の袋を積む。そこからヘルメットの中まで管が通り、ステアリングのボタンを押すとポンプが動いて、口元に飲み物が届く（GPFans）。",
+    "仕組みはチームで違う。ポンプは重さが増え、壊れることもあるので、ストローで吸う形を好むチームもある。メルセデスがその例だ（GPFans）。壊れると苦しい。ハミルトンは2022年のフランスGPで「ふだんは飲まないが、今年初めて飲もうとしたら何も出てこなかった」と話し、体重が約3kg減ったという（CNN）。",
+    "暑いレースでは、ドライバーは1レースで最大4kgの体重と、2リットルほどの水分を失うことがある（GPFans）。それでも、重さを減らすために積まないこともあった。2017年のスペインGPでは、ハミルトンが車を軽くするために飲み物を積まずに走った（The Drive）。"
+   ],
+   "examples": [],
+   "see": [
+    "heat-hazard",
+    "minimum-weight",
+    "ballast",
+    "steering-wheel"
+   ],
+   "src": [
+    {
+     "name": "GPFans",
+     "title": "F1 drinks system explained: How do drivers stay hydrated during races?",
+     "url": "https://www.gpfans.com/en/f1-news/1008931/f1-drinks-system/"
+    },
+    {
+     "name": "CNN（KVIA掲載）",
+     "title": "Lewis Hamilton says he lost around three kilos during French GP due to drinks bottle issue",
+     "url": "https://kvia.com/cnn-sports/2022/07/25/lewis-hamilton-says-he-lost-around-three-kilos-during-french-gp-due-to-drinks-bottle-issue/"
+    },
+    {
+     "name": "The Drive",
+     "title": "Lewis Hamilton, Mercedes F1 Ditch In-Car Drink Bottle To Save Weight",
+     "url": "https://www.thedrive.com/start-finish/10359/lewis-hamilton-mercedes-f1-ditch-in-car-drink-bottle-to-save-weight"
+    }
+   ],
+   "checked": "2026-10-06"
+  },
+  {
+   "id": "humidity",
+   "term": "湿度",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "湿度",
+    "Humidity",
+    "高温多湿",
+    "蒸し暑さ",
+    "しつど"
+   ],
+   "words": [
+    "蒸し暑い",
+    "汗が乾かない",
+    "体重が減る",
+    "シンガポールの暑さ",
+    "ヒートインデックス"
+   ],
+   "short": "空気の湿り気。高いと汗が乾かず、ドライバーの体への負担が大きくなる。",
+   "body": [
+    "湿度が高いと、汗が蒸発しにくく、体の熱が逃げない。同じ気温でも、乾いた暑さより体への負担がずっと大きい。シンガポールは湿度が90%近く、ドライバーは汗で2〜3kg、背の高い人は4kgほど体重が減る。心臓への負担も大きく、トレーナーは「ほかより10〜20%きつい」と話している（F1technical.net）。",
+    "FIAが高温の警告（→ヒートハザード）を出すかどうかは、気温と湿度を合わせた「ヒートインデックス」が31度を超える見込みかどうかで決まる（GPFans、2026年）。この警告が初めて出たのは2025年のシンガポールGPだった（South China Morning Post）。",
+    "湿度は車にも影響する。2003年、ルノーのタファン氏は、マレーシアを1年で最も厳しい暑さと湿度のコースとし、高い湿度はエンジンの出力にも影響すると話していた（Crash.net）。"
+   ],
+   "examples": [
+    {
+     "t": "FIAは、セパンのバーレーンGPについて、気温と湿度を合わせたヒートインデックスが31度を超える見込みとして高温警告を出した。",
+     "u": "/news/de-formel1-sepang-heat-warning/"
+    },
+    {
+     "t": "ハミルトンは、高温多湿のセパンで56周を走れば体重が最大4kg落ちると話した。",
+     "u": "/news/en-rn365-hamilton-malaysia-two-reasons/"
+    }
+   ],
+   "see": [
+    "heat-hazard",
+    "track-temperature",
+    "night-race",
+    "circuit-singapore",
+    "circuit-sepang"
+   ],
+   "src": [
+    {
+     "name": "F1technical.net",
+     "title": "What makes the Singapore Grand Prix one of the toughest races physically?",
+     "url": "https://f1technical.net/news/25545"
+    },
+    {
+     "name": "South China Morning Post",
+     "title": "F1 declares first official heat hazard as Singapore Grand Prix temperatures hit 31°C",
+     "url": "https://www.scmp.com/sport/formula-one-f1/article/3327703/f1-declares-first-official-heat-hazard-singapore-grand-prix-temperatures-hit-31degc"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Malaysia sets engines serious test",
+     "url": "https://crash.net/f1/news/45036/1/malaysia-sets-engines-serious-test"
+    },
+    {
+     "name": "GPFans",
+     "title": "FIA activates heat protocols ahead of scorching Austrian Grand Prix",
+     "url": "https://www.gpfans.com/us/f1-news/1086630/f1-fia-austrian-gp-heat-hazard-2026-cooling-system-rules/"
+    }
+   ],
+   "checked": "2026-10-06"
   }
  ],
  "sources": [
@@ -26004,6 +27322,236 @@
    "name": "Autosport",
    "title": "McLaren explains gaps between F1 qualifying and race pace",
    "url": "https://autosport.com/all/news/mclaren-explains-gaps-between-qualifying-and-race-pace/10350881/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Standing start v rolling start as F1 forecast wet Dutch Grand Prix",
+   "url": "https://www.planetf1.com/news/standing-start-v-rolling-start-as-f1-forecast-wet-dutch-grand-prix"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "Analysis: How F1's new wet standing starts will work",
+   "url": "https://www.motorsport.com/f1/news/analysis-how-f1-s-new-wet-standing-starts-will-work-882493/"
+  },
+  {
+   "name": "The Race",
+   "title": "McLaren wants fix for 'recipe for disaster' 2026 F1 starts",
+   "url": "https://www.the-race.com/formula-1/why-f1-2026-starts-are-a-recipe-for-disaster-and-how-to-fix-it"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Explained: What does a red flag mean and how does a race restart?",
+   "url": "https://www.planetf1.com/features/f1-red-flag-stoppage-rules-explained"
+  },
+  {
+   "name": "The Race",
+   "title": "Why Yuki Tsunoda was innocent in aborted Italian GP start",
+   "url": "https://www.the-race.com/formula-1/why-yuki-tsunoda-innocent-in-aborted-italian-gp-start/"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "Russell and Norris fined, Tsunoda and Lawson escape penalty for aborted start",
+   "url": "https://www.f1technical.net/news/25777"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Fears over Monaco crash repeat triggered aborted Austrian Grand Prix Sprint start",
+   "url": "https://www.planetf1.com/news/fia-explains-austrian-grand-prix-sprint-start-abort"
+  },
+  {
+   "name": "FlowRacers",
+   "title": "What Is Anti-Stall On An F1 Car? How Does It Work?",
+   "url": "https://flowracers.com/blog/what-is-anti-stall-f1/"
+  },
+  {
+   "name": "The Race",
+   "title": "Gary Anderson: Why F1 2026 starts are much more complicated",
+   "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-2026-starts-much-more-complicated/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Mercedes sheds more light on George Russell's Hungary F1 start issue",
+   "url": "https://www.crash.net/f1/news/1101972/1/mercedes-sheds-more-light-george-russells-hungary-f1-start-issue"
+  },
+  {
+   "name": "Crash.net",
+   "title": "FIA reveals why new F1 start boost safety measure won't give \"sporting advantage\"",
+   "url": "https://www.crash.net/f1/news/1093711/1/fia-reveals-why-new-f1-start-boost-safety-measure-wont-give-sporting-advantage"
+  },
+  {
+   "name": "Driver61",
+   "title": "Testing For Grip: How to Find the Fastest Lap in Wet Conditions",
+   "url": "https://driver61.com/uni/testing-for-grip-wet-conditions/"
+  },
+  {
+   "name": "Motor Sport Magazine",
+   "title": "Why can't F1 cars race in heavy rain? The reasons we rarely see full wet tyres",
+   "url": "https://motorsportmagazine.com/articles/single-seaters/f1/why-cant-f1-cars-race-in-heavy-rain-the-reasons-we-rarely-see-full-wet-tyres"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "F1 red flag tyre change rules explained: Lando Norris regulation complaints after Sao Paulo GP disappointment",
+   "url": "https://www.skysports.com/f1/news/12433/13248475/f1-red-flag-tyre-change-rules-explained-lando-norris-regulation-complaints-after-sao-paulo-gp-disappointment"
+  },
+  {
+   "name": "FlowRacers",
+   "title": "Can You Pit During Safety Car In F1? What About VSC?",
+   "url": "https://flowracers.com/blog/f1-pit-stop-safety-car/"
+  },
+  {
+   "name": "The Race",
+   "title": "'Penalty lap'? F1's weirdest penalty of 2026 explained",
+   "url": "https://the-race.com/formula-1/penalty-lap-f1s-weirdest-penalty-of-2026-explained/"
+  },
+  {
+   "name": "motorsports-regulations.com",
+   "title": "Safety Car Line（国際モータースポーツ競技規則 付則H 2.10.2の解説）",
+   "url": "https://motorsports-regulations.com/en/?p=6956"
+  },
+  {
+   "name": "The Race",
+   "title": "FIA clarifies four points of contention over closed pitlane",
+   "url": "https://the-race.com/formula-1/fia-clarifies-four-points-of-contention-over-closed-pitlane/"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section B Sporting Issue 04（2025年12月10日。ピット入口の閉鎖）",
+   "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_04_-_2025-12-10_0.pdf"
+  },
+  {
+   "name": "Formula1-Dictionary",
+   "title": "Engine Braking in F1: Effect on Car Balance",
+   "url": "https://www.formula1-dictionary.net/f1-engine-braking/"
+  },
+  {
+   "name": "Motor Sport Magazine",
+   "title": "Mercedes' Achilles heel is becoming too costly",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/mercedes-achilles-heel-is-becoming-too-costly/"
+  },
+  {
+   "name": "GPFans",
+   "title": "Mercedes find answers to 'painful' F1 failures",
+   "url": "https://www.gpfans.com/en/f1-news/1086385/f1-mercedes-power-unit-battery-failures-answers-james-allison-2026-mclaren/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Gasly: F1 2026 reliability chaos masks Alpine losses",
+   "url": "https://www.planetf1.com/news/pierre-gasly-f1-2026-reliability-chaos-alpine-performance-gap"
+  },
+  {
+   "name": "Autosport",
+   "title": "Kubica: Dirty side a huge disadvantage",
+   "url": "https://www.autosport.com/f1/news/87677/kubica-dirty-side-a-huge-disadvantage"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "Ferrari breaks gearbox seal to get cars on clean side of grid",
+   "url": "https://www.f1technical.net/news/18019"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "FIA make late Sepang change after unusual circuit mistake",
+   "url": "https://racingnews365.com/fia-make-late-sepang-change-after-unusual-circuit-mistake"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 British Grand Prix - Competition Notes - Pirelli Preview（B6.1.3 a）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_british_grand_prix_-_competition_notes_-_pirelli_preview.pdf"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Pirelli 'out-thought' by teams running lower than expected F1 tyre pressures",
+   "url": "https://crash.net/f1/news/980635/1/pirelli-outthought-teams-running-lower-expected-f1-tyre-pressures"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "FIA to ensure tyres are used to Pirelli specs",
+   "url": "https://www.f1technical.net/news/18561"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Miami Grand Prix - Curfew",
+   "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_curfew.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Austrian Grand Prix - Curfew",
+   "url": "https://www.fia.com/system/files/decision-document/2026_austrian_grand_prix_-_curfew.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Japanese Grand Prix - Curfew",
+   "url": "https://www.fia.com/system/files/decision-document/2026_japanese_grand_prix_-_curfew.pdf"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "Alpine uses first curfew exception of the season after late-night work on Gasly's car",
+   "url": "https://www.f1technical.net/news/28558"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section F Operational Issue 09（2026年6月25日、F3.1、F3.2）",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_09_-_2026-06-25.pdf"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1 enters the summer break shutdown and this is how the FIA enforce it",
+   "url": "https://www.gpfans.com/en/f1-news/1088546/fia-f1-summer-break-shutdown-enforce-rules/"
+  },
+  {
+   "name": "RacingNews365",
+   "title": "What is not allowed during F1's summer shutdown",
+   "url": "https://racingnews365.com/what-is-not-allowed-during-f1s-summer-shutdown"
+  },
+  {
+   "name": "Autosport",
+   "title": "'Juicy content' in F1 team radio won't be lost with new rules - FIA",
+   "url": "https://www.autosport.com/f1/news/123316/juicy-f1-radio-messages-wont-be-lost"
+  },
+  {
+   "name": "Autosport",
+   "title": "Formula 1's radio restrictions to be lifted from German GP",
+   "url": "https://www.autosport.com/news/report.php/id/125502"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "F1 strategy group postpones halo, lifts radio limitations",
+   "url": "https://f1technical.net/news/20939"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1 drinks system explained: How do drivers stay hydrated during races?",
+   "url": "https://www.gpfans.com/en/f1-news/1008931/f1-drinks-system/"
+  },
+  {
+   "name": "CNN（KVIA掲載）",
+   "title": "Lewis Hamilton says he lost around three kilos during French GP due to drinks bottle issue",
+   "url": "https://kvia.com/cnn-sports/2022/07/25/lewis-hamilton-says-he-lost-around-three-kilos-during-french-gp-due-to-drinks-bottle-issue/"
+  },
+  {
+   "name": "The Drive",
+   "title": "Lewis Hamilton, Mercedes F1 Ditch In-Car Drink Bottle To Save Weight",
+   "url": "https://www.thedrive.com/start-finish/10359/lewis-hamilton-mercedes-f1-ditch-in-car-drink-bottle-to-save-weight"
+  },
+  {
+   "name": "F1technical.net",
+   "title": "What makes the Singapore Grand Prix one of the toughest races physically?",
+   "url": "https://f1technical.net/news/25545"
+  },
+  {
+   "name": "South China Morning Post",
+   "title": "F1 declares first official heat hazard as Singapore Grand Prix temperatures hit 31°C",
+   "url": "https://www.scmp.com/sport/formula-one-f1/article/3327703/f1-declares-first-official-heat-hazard-singapore-grand-prix-temperatures-hit-31degc"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Malaysia sets engines serious test",
+   "url": "https://crash.net/f1/news/45036/1/malaysia-sets-engines-serious-test"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA activates heat protocols ahead of scorching Austrian Grand Prix",
+   "url": "https://www.gpfans.com/us/f1-news/1086630/f1-fia-austrian-gp-heat-hazard-2026-cooling-system-rules/"
   }
  ]
 }
