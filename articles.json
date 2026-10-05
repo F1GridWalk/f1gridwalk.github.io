@@ -1,112 +1,9 @@
 {
- "updatedAt": "2026-10-06T00:40:00+09:00",
+ "updatedAt": "2026-10-06T06:30:00+09:00",
  "topics": {
-  "sepang-qualifying-verstappen-pole": {
-   "title": "セパン予選でフェルスタッペンが今季初ポール、ハミルトン2番手",
-   "summary": "バーレーンGP（マレーシア開催）の予選で、フェルスタッペン（レッドブル）が今季初のポールを獲得し、ハミルトン（フェラーリ）が2番手に入った。ハジャーは3番手だがPU部品交換で5グリッド降格となり、アントネッリが繰り上がる。アロンソとサインツはQ2に進んだ。各媒体はレッドブルの復調と、降格によって大きく変わる決勝グリッドを伝えている。",
-   "lens": {
-    "groups": [
-     {
-      "scope": "outlet",
-      "region": "イギリス",
-      "label": "RacingNews365",
-      "focus": "ポール不在の終わり",
-      "lead": "フェルスタッペン",
-      "cause": "最終アタックで約1/10秒短縮",
-      "hook": "ポール干ばつに終止符",
-      "points": [
-       "最初のラップでも十分だったと伝える",
-       "F1のセパン予選は8年ぶり"
-      ],
-      "ids": [
-       "en-rn365-verstappen-sepang-pole-drought"
-      ]
-     },
-     {
-      "scope": "outlet",
-      "region": "イタリア",
-      "label": "Formula1.it",
-      "focus": "降格後のグリッド",
-      "lead": "フェルスタッペン",
-      "cause": "各ペナルティの適用",
-      "hook": "スーパーポールと2番手",
-      "points": [
-       "ハジャー5、コラピント15、リンドブラッド30グリッド降格",
-       "アントネッリはトラックリミットで取り消し"
-      ],
-      "ids": [
-       "it-formula1-qualifiche-verstappen-hamilton"
-      ]
-     },
-     {
-      "scope": "outlet",
-      "region": "スペイン",
-      "label": "Motorsport.com España",
-      "focus": "練習からの流れ",
-      "lead": "フェルスタッペン",
-      "cause": "練習の好調が予選で結実",
-      "hook": "今季16戦目で初ポール",
-      "points": [
-       "ハミルトンとの差は約0.3秒",
-       "アロンソ12番手、サインツ13番手"
-      ],
-      "ids": [
-       "es-motorsport-sepang-pole-verstappen-cronica"
-      ]
-     },
-     {
-      "scope": "others",
-      "label": "そのほかの媒体",
-      "focus": "媒体ごとに異なる切り口",
-      "lead": "各チーム",
-      "cause": "レッドブル復調と他勢の明暗",
-      "hook": "圧倒の速さと5つの結論",
-      "points": [
-       "PlanetF1（イギリス）：最終セクターの0.12秒を軸に",
-       "GPblog（オランダ）：アルボンの苦境など5点を整理",
-       "The Race（イギリス）：勝者と敗者の一覧で整理"
-      ],
-      "ids": [
-       "en-planetf1-sepang-qualifying-report",
-       "nl-gpblog-sepang-vijf-conclusies",
-       "en-therace-sepang-quali-winners-losers"
-      ]
-     }
-    ],
-    "guide": [
-     {
-      "want": "ポールの決め手",
-      "ids": [
-       "en-rn365-verstappen-sepang-pole-drought",
-       "en-planetf1-sepang-qualifying-report"
-      ],
-      "note": "最終アタックと最終セクターの伸び"
-     },
-     {
-      "want": "決勝グリッド",
-      "ids": [
-       "it-formula1-qualifiche-verstappen-hamilton"
-      ],
-      "note": "降格の一覧と繰り上がり"
-     },
-     {
-      "want": "チームの明暗",
-      "ids": [
-       "nl-gpblog-sepang-vijf-conclusies",
-       "es-motorsport-sepang-pole-verstappen-cronica"
-      ],
-      "note": "アルボンの苦境、スペイン勢の結果"
-     }
-    ]
-   }
-  },
   "mercedes-sepang-quali-letdown": {
    "title": "大型改良のメルセデスがセパン予選で失速、原因は空気抵抗と低速コーナー",
    "summary": "メルセデスは約0.3秒の向上を見込んで大型アップグレードをセパンに投入したが、予選は今季最も厳しい内容になった。ウォルフ代表は空気抵抗の大きさと低速コーナーで曲がらない挙動を挙げた。アントネッリはQ2のトラックリミット違反でタイヤ計画が狂った。以前の仕様には戻せないと伝えられる。"
-  },
-  "norris-sepang-straightline": {
-   "title": "ノリスだけに出るストレート速度不足、マクラーレンも原因をつかめず",
-   "summary": "ノリスはバクーに続きセパンでもストレートでピアストリより遅く、1周で0.1〜0.2秒を失うとステラ代表は見積もる。原因はPU設定、シャシー、空気抵抗のいずれとも特定できていない。ノリス本人は「ただ遅いだけ」と語り、日曜の巻き返しには慎重ながら前向きだ。対策はシンガポールまで間に合わない。"
   },
   "russell-cooling-vest": {
    "title": "ラッセルが冷却ベストへのFIA支援を要請、フェルスタッペンは皮肉で反論",
@@ -266,6 +163,161 @@
   }
  },
  "articles": [
+  {
+   "id": "de-motorsport-total-hamilton-pace-strategy",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "sepang",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-sepang-slicks-gamble",
+   "title": "ハミルトンの速さは本物か　フェラーリは正しい戦略なら勝てたのか",
+   "summary": "ウェットの発進でインターミディエイトではなくソフトを選んだフェラーリの判断で、ハミルトンは序盤に大きく順位を落とし、最終的に3位だった。記事によると、ドライ路面でのペースはフェルスタッペンが1周あたり約0.68秒上回り、アントネッリは約0.35秒速かったという。ヴァッサー代表は「インターミディエイトで始めるべきだった」と認め、ハミルトンは最後のセーフティカーが表彰台を助けたと語った。",
+   "orig": "Hamiltons Mega-Pace: Hätte Ferrari mit der richtigen Strategie sogar gewonnen?",
+   "url": "https://www.motorsport-total.com/formel-1/news/hamiltons-mega-pace-haette-ferrari-mit-der-richtigen-strategie-sogar-gewonnen-26100514",
+   "published": "2026-10-05T18:05:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-huelkenberg-slicks",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "sepang",
+   "teams": [
+    "audi"
+   ],
+   "topic": "ferrari-sepang-slicks-gamble",
+   "title": "スリックは「野心的すぎた」　ヒュルケンベルグの賭けはセパンで外れる",
+   "summary": "アウディのヒュルケンベルグはスリックでスタートに臨み、スタート前にインターミディエイトへ替えるためピットに入ったが、結果は11位でポイント圏外だった。本人は「スリックは正直、野心的すぎた」と語り、終盤のセーフティカーでは「ハンドルをかみたい気分だった」と悔しさをにじませた。同じ週末にアウディはピット作業の危険事案で罰金を科されており、チームメイトのボルトレートはサインツとの接触で18位だった。",
+   "orig": "Slicks waren \"zu ambitioniert\": Poker bei Nico Hülkenberg in Malaysia missglückt",
+   "url": "https://www.motorsport-total.com/formel-1/news/slicks-waren-zu-ambitioniert-poker-bei-nico-huelkenberg-in-malaysia-missglueckt-26100513",
+   "published": "2026-10-05T17:39:00+02:00"
+  },
+  {
+   "id": "en-rn365-perez-rental-gokart",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "sepang-wet-start-pu-trouble",
+   "title": "ペレス、フォーメーションラップの混乱に「レンタルカートのよう、受け入れられない」",
+   "summary": "マレーシア開催のレースで、パワーユニットのソフトウェア不具合により複数の車両がフォーメーションラップで大きく出力を失い、再びスタートが遅れた。キャデラックのペレスは「時間切れのレンタルカートに乗っているようだった」と述べ、競技として受け入れられないと強く批判した。本人は序盤にスリックからインターミディエイトへ替える判断で約30秒を稼いだが、セーフティカーで差は縮まった。",
+   "orig": "Sergio Perez airs stern criticism after 'rental go-kart' chaos: \"Unacceptable\"",
+   "url": "https://racingnews365.com/sergio-perez-airs-stern-criticism-after-rental-go-kart-chaos-unacceptable",
+   "published": "2026-10-05T19:10:00+01:00"
+  },
+  {
+   "id": "en-rn365-verstappen-schumacher-72",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "verstappen-72-wins-team-record",
+   "title": "フェルスタッペンがシューマッハに並ぶ　単一チームでの72勝、次はハミルトンの記録",
+   "summary": "フェルスタッペンはマレーシア開催のレースで通算72勝目をレッドブルで挙げ、フェラーリ時代のミハエル・シューマッハと同じ単一チームでの勝利数に並んだ。11シーズン連続で勝利を挙げたことも、シューマッハ、ハミルトンに続く記録だという。メルセデスでのハミルトンの84勝まであと13勝で、記事は新たな長期契約を結んだ今、抜く可能性が高いと見ている。",
+   "orig": "Verstappen equals Schumacher record with ultimate Hamilton score in sight",
+   "url": "https://racingnews365.com/verstappen-equals-schumacher-record-with-ultimate-hamilton-score-in-sight",
+   "published": "2026-10-05T09:00:00+01:00"
+  },
+  {
+   "id": "it-formula1it-mercedes-favours-antonelli",
+   "kind": "rumor",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "うわさ",
+   "circuit": "sepang",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "mercedes-antonelli-favouritism-claim",
+   "title": "英国から「メルセデスはアントネッリを優遇している」との声　ラッセルのPU故障を受けて",
+   "summary": "フォーミュラ・ワン・イタリアは、ラッセルがセパンで再びパワーユニットの故障に見舞われたことを受け、英国側で「メルセデスはアントネッリを優遇しているのではないか」という見方が出ていると伝えた。ブランドルが「トトは恐らくアントネッリを好んでいる」と話したとされ、モンツァでの部品交換の差も根拠に挙がる。チームは両ドライバーを公平に扱っていると説明しているが、これは未確認の見方である。",
+   "orig": "L'attacco dall'Inghilterra: la Mercedes favorirebbe Antonelli",
+   "url": "https://www.formula1.it/news/33073/1/l-attacco-dall-inghilterra-la-mercedes-favorirebbe-antonelli",
+   "published": "2026-10-05T12:00:00+02:00"
+  },
+  {
+   "id": "it-formula1it-leclerc-prodigio",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "leclerc-ambition-opinion",
+   "title": "ルクレール、野心を持たない天才　技術面の貢献を主張しない理由",
+   "summary": "フォーミュラ・ワン・イタリアのコラムは、ルクレールがセットアップやマシン開発に関われないという世間の見方は誤りだと論じた。ルクレールは細部への気配りが非常に細かく几帳面で、ハミルトンと同等の重みでフェラーリの開発に貢献しているという。それでも自分の功績を主張せず自己批判を好む姿勢を、コラムは「野心のない天才」と呼び、弱みとも強みとも受け取れるとした。",
+   "orig": "Leclerc, il prodigio senza ambizioni",
+   "url": "https://www.formula1.it/news/33071/1/leclerc-il-prodigio-senza-ambizioni",
+   "published": "2026-10-05T12:00:00+02:00"
+  },
+  {
+   "id": "en-therace-malaysia-lessons",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "sepang",
+   "topic": "sepang-lessons-learned",
+   "title": "F1のマレーシア復帰で分かった7つのこと　ソフトの不具合からレッドブル初勝利まで",
+   "summary": "ザ・レースは、9年ぶりのセパン開催から得られた教訓を7点にまとめた。雨天でのソフトウェア不具合についてFIAのトンバジス氏は「この特定の問題は二度と起きない」と説明した。メルセデスは期待した約0.3秒の向上どころか後退した可能性があり、シンガポールで旧仕様に戻すことも検討している。マクラーレンは勢力図で4番手に落ち、ステラ代表は他チームの開発の進みを認めた。",
+   "orig": "Everything we learned from F1's chaotic Malaysia return",
+   "url": "https://www.the-race.com/formula-1/everything-we-learned-from-f1-malaysia-return/",
+   "published": "2026-10-05T12:00:00+01:00"
+  },
+  {
+   "id": "en-therace-straw-driver-rankings",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "sepang",
+   "topic": "sepang-driver-rankings",
+   "title": "エド・ストローのドライバー採点　荒れたセパンでフェルスタッペンが首位、ハミルトンが続く",
+   "summary": "ザ・レースのエド・ストローは、雨、タイヤ選択、ソフトウェア不具合、セーフティカーが絡んだセパンのレースで、各ドライバーを採点した。優勝したフェルスタッペンを首位、3位のハミルトンを2番手に置いている。アロンソやローソンは限られた条件で成果を出した例として評価され、ボルトレートとルクレールはミスが目立ったとされる。",
+   "orig": "Edd Straw's 2026 Bahrain Grand Prix in Malaysia F1 driver rankings",
+   "url": "https://www.the-race.com/formula-1/edd-straws-2026-bahrain-grand-prix-in-malaysia-f1-driver-rankings/",
+   "published": "2026-10-05T12:00:00+01:00"
+  },
+  {
+   "id": "ja-f1are-norris-sc-near-miss",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "norris-sepang-sc-near-miss",
+   "title": "マクラーレンのノリス、セーフティカー中にピアストリへ接触しかける",
+   "summary": "F1のアレは、セーフティカー中にノリスがラッセルの停止車両に気付くのが遅れ、急減速してピアストリに当たりかけたという話題を、F1-Gate.comの記事を元にまとめた。ノリス本人は完全に不意を突かれたと話している。コメント欄では接触しなくて良かったという安堵の声のほか、過去のコラピント批判と絡めた皮肉や、再スタートの視界を巡る議論が出ているという。",
+   "orig": "マクラーレンのノリス、セーフティカー中にピアストリへ接触しかけたことを明かす",
+   "url": "https://f1are.com/blog-entry-3957.html",
+   "published": "2026-10-05T12:00:00+09:00"
+  },
   {
    "id": "en-rn365-bottas-cycles-singapore",
    "kind": "news",
@@ -1631,212 +1683,6 @@
    "orig": "The former weakness key to Red Bull's sudden supremacy",
    "url": "https://www.the-race.com/formula-1/key-weakness-red-bull-has-eradicated-malaysia-max-verstappen/",
    "published": "2026-10-03T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-mercedes-upgrade-letdown",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "mercedes-sepang-quali-letdown",
-   "title": "メルセデスのアップグレードが期待外れに、何が起きたのか",
-   "summary": "メルセデスは約0.3秒の向上を見込んで大型アップグレードを持ち込んだが、予選は今季最も厳しい内容になった。ウォルフ代表は車が「とても空気抵抗が大きい」うえ、ターン2などの低速コーナーで曲がらないと説明した。ラッセルは、バクーの時点でこの仕様を載せていたら悪くてもポールだったかもしれないと語っている。費用上限や部品の寿命の問題で、以前の仕様には戻せないという。",
-   "orig": "Mercedes' upgrade letdown - What we know",
-   "url": "https://www.the-race.com/formula-1/gone-backwards-mercedess-upgrade-letdown-explained/",
-   "published": "2026-10-03T12:00:00+01:00"
-  },
-  {
-   "id": "en-therace-mclaren-norris-straightline",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "norris-sepang-straightline",
-   "title": "マクラーレンが首をかしげる、ノリスだけに出るストレート速度の不足",
-   "summary": "ノリスはバクーに続き、チームメイトのピアストリよりストレートで遅いという問題を抱えたままセパンの予選に臨んだ。ステラ代表によれば、パワー制限区間での加速が鈍く、最高速で1〜2km/h、1周で0.1〜0.2秒ほどの差になる。原因はPUの設定、シャシー、空気抵抗のいずれともつかず、デプロイなら把握できるはずだとも語った。次の対策はシンガポールまで間に合わない。",
-   "orig": "McLaren puzzled by persistent Norris-only F1 car problem",
-   "url": "https://www.the-race.com/formula-1/mclaren-puzzled-by-persistent-lando-norris-only-f1-car-problem/",
-   "published": "2026-10-03T12:00:00+01:00"
-  },
-  {
-   "id": "es-motorsport-honda-aston-credit",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-aston-sepang-credit",
-   "title": "ホンダはアストンの今季最高の予選を自らの成果と主張、ストロールは異論",
-   "summary": "アストンマーティンは両車が初めてQ2に進み、ストロール12番手、アロンソ14番手と今季最高の予選になった。ホンダの折原伸太郎氏は、エネルギー管理とターボの扱いを改善した結果だと説明した。これに対しアロンソは車は変わっておらずサーキットの特性のおかげだと述べ、ストロールも直線が少なく曲がるコースが合っただけで、ストレートでは1秒以上足りないと語った。",
-   "orig": "Honda se atribuye la mejor clasificación del año de Aston; Stroll les contradice",
-   "url": "https://es.motorsport.com/f1/news/honda-merito-clasificacion-aston-martin/10861537/",
-   "published": "2026-10-03T12:23:00+02:00"
-  },
-  {
-   "id": "en-rn365-verstappen-sepang-pole-drought",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "予選",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "sepang-qualifying-verstappen-pole",
-   "title": "フェルスタッペンがセパンで今季初ポール、ハミルトンがフロントロウ",
-   "summary": "フェルスタッペン（レッドブル）が今季初のポールを獲得し、ハミルトン（フェラーリ）が2番手に入った。最終アタックで約1/10秒縮めたが、最初のラップでも十分だったと記事は伝える。ハジャーは3番手だがPU部品交換で5グリッド降格となり、アントネッリが繰り上がる。F1がセパンで予選を行うのは8年ぶりだった。",
-   "orig": "Max Verstappen ends F1 pole drought in Sepang showdown with Lewis Hamilton",
-   "url": "https://racingnews365.com/max-verstappen-ends-f1-pole-drought-in-sepang-showdown-with-lewis-hamilton",
-   "published": "2026-10-03T11:09:00+01:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "フェルスタッペン",
-    "focus": "ポール不在の終わり",
-    "cause": "最終アタックで約1/10秒短縮",
-    "hook": "ポール干ばつに終止符"
-   }
-  },
-  {
-   "id": "en-rn365-aston-martin-sepang-q2-shock",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "予選",
-   "circuit": "sepang",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "sepang-aston-martin-q2",
-   "title": "アストンマーティン、セパン予選で2台そろってQ2進出の番狂わせ",
-   "summary": "アストンマーティンはアロンソとストロールの2台がQ1を突破し、今季苦戦するチームとしては驚きの結果になった。Q1ではアロンソ14番手、ストロール15番手で、両者の差はわずか0.008秒だった。2台はQ1の敗退ラインを約0.25秒上回ってヒュルケンベルグのアウディをかわした。Q2ではアロンソがトップ10まで4/10秒に迫り、12番手で終えた。",
-   "orig": "Aston Martin cause major shock in Sepang qualifying",
-   "url": "https://racingnews365.com/aston-martin-cause-major-shock-in-sepang-qualifying",
-   "published": "2026-10-03T10:31:00+01:00"
-  },
-  {
-   "id": "nl-gpblog-sepang-vijf-conclusies",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "分析",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "williams",
-    "astonmartin"
-   ],
-   "topic": "sepang-qualifying-verstappen-pole",
-   "title": "セパン予選から導く5つの結論、アルボンの苦境とアントネッリの速さ",
-   "summary": "フェルスタッペンの今季初ポールは、数か月の上昇を続けてきたレッドブルでも本人すら予想しなかった結果だと記事は書く。アルボンはブレーキングのミスでQ1敗退となり、サインツとの予選対決は4勝12敗、「早く手を打たねば交代もあり得る」と指摘する。アストンマーティンは両車Q2進出、アントネッリはQ3の1回の走行でラッセルより0.2秒速かった。メルセデスの改良には疑問符が付く。",
-   "orig": "Vijf belangrijkste conclusies na de kwalificatie voor de Grand Prix in Maleisië",
-   "url": "https://www.gpblog.com/nl/analyse/vijf-belangrijkste-conclusies-na-de-kwalificatie-voor-de-grand-prix-in-maleisie",
-   "published": "2026-10-03T11:14:00+02:00",
-   "lens": {
-    "type": "総括",
-    "lead": "各チーム",
-    "focus": "予選から見える5点",
-    "cause": "レッドブル復調と他勢の明暗",
-    "hook": "アルボンの苦境"
-   }
-  },
-  {
-   "id": "it-formula1-qualifiche-verstappen-hamilton",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "予選",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "mercedes"
-   ],
-   "topic": "sepang-qualifying-verstappen-pole",
-   "title": "バーレーンGP予選、フェルスタッペンがスーパーポール　2番手ハミルトン",
-   "summary": "フェルスタッペンは予選の全セッションでトップに立ち、ポールを獲得した。2番手はハミルトンで、ハジャーが3番手だが5グリッド降格を受ける。アントネッリはターン6のトラックリミット違反でラップが取り消された。コラピントは15グリッド、リンドブラッドは30グリッドの降格が適用されると記事は整理している。ルクレールは5番手でハジャーの降格の恩恵を受ける。",
-   "orig": "GP Bahrain - Qualifiche: Super pole per Verstappen, secondo Hamilton",
-   "url": "https://www.formula1.it/news/32998/1/gp-bahrain-qualifiche-super-pole-per-verstappen-secondo-hamilton",
-   "published": "2026-10-03T11:10:00+02:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "フェルスタッペン",
-    "focus": "降格後のグリッド",
-    "cause": "各ペナルティの適用",
-    "hook": "スーパーポールと2番手"
-   }
-  },
-  {
-   "id": "es-motorsport-sepang-pole-verstappen-cronica",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "予選",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "astonmartin",
-    "williams"
-   ],
-   "topic": "sepang-qualifying-verstappen-pole",
-   "title": "フェルスタッペンがセパンでポール、今季初　アロンソとサインツはQ2へ",
-   "summary": "フェルスタッペンが今季16戦目にして初のポールを獲得し、2番手のハミルトンとの差は約0.3秒だった。練習走行で好調だった流れが予選で結実し、レッドブルは「誰もが再び戦いたくない車」に見えたと記事は表現する。スペイン勢ではアロンソとサインツがQ2に進み、アロンソは12番手、サインツは13番手で予選を終えた。",
-   "orig": "Bahrein F1 - Verstappen rompe la sequía con la pole en Sepang; Alonso y Sainz pasan a Q2",
-   "url": "https://es.motorsport.com/f1/news/cronica-resumen-resultados-clasificacion-sepang-bahrein-2026/10861345/",
-   "published": "2026-10-03T11:10:00+02:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "フェルスタッペン",
-    "focus": "練習からの流れ",
-    "cause": "練習の好調が予選で結実",
-    "hook": "今季16戦目で初ポール"
-   }
-  },
-  {
-   "id": "en-planetf1-sepang-qualifying-report",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "予選",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "sepang-qualifying-verstappen-pole",
-   "title": "バーレーンGP予選：フェルスタッペンが圧倒、ハミルトンがフロントロウに",
-   "summary": "フェルスタッペンはセパンの予選を圧倒し、ハミルトンが同じフロントロウに並んだ。最終セクターで最速を記録して0.12秒を上乗せしたことが、ポール獲得を決定づけたという。グリッドにはハジャー、コラピント、リンドブラッドの降格も絡み、並びは日曜に向けて大きく入れ替わる。Q2ではローソン、アロンソ、サインツらが敗退した。",
-   "orig": "Bahrain GP: Max Verstappen dominates; Lewis Hamilton makes front row",
-   "url": "https://www.planetf1.com/news/bahrain-grand-prix-2026-qualifying-report",
-   "published": "2026-10-03T10:05:00+01:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "フェルスタッペン",
-    "focus": "圧倒的な速さ",
-    "cause": "最終セクターで0.12秒上乗せ",
-    "hook": "圧倒とハミルトンの2番手"
-   }
   }
  ]
 }
