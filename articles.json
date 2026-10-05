@@ -1,10 +1,6 @@
 {
- "updatedAt": "2026-10-05T12:20:00+09:00",
+ "updatedAt": "2026-10-05T18:25:00+09:00",
  "topics": {
-  "sepang-slower-than-simulation": {
-   "title": "セパンのラップタイム、ピレリのシミュレーションより約4.5秒遅い",
-   "summary": "9年ぶりのセパンでは路面が非常に荒れやすく、FP2後にはFIAが破片を除去する作業を行った。ピレリのベラ主任エンジニアは、ラップタイムがシミュレーションより約4.5秒遅く、路面がセッション中にも変化していると説明した。パンクなど安全上の問題はなく、課題はグリップとタイヤ摩耗の管理だという。予選で速いチームが決勝で苦戦する可能性も指摘された。"
-  },
   "sepang-qualifying-verstappen-pole": {
    "title": "セパン予選でフェルスタッペンが今季初ポール、ハミルトン2番手",
    "summary": "バーレーンGP（マレーシア開催）の予選で、フェルスタッペン（レッドブル）が今季初のポールを獲得し、ハミルトン（フェラーリ）が2番手に入った。ハジャーは3番手だがPU部品交換で5グリッド降格となり、アントネッリが繰り上がる。アロンソとサインツはQ2に進んだ。各媒体はレッドブルの復調と、降格によって大きく変わる決勝グリッドを伝えている。",
@@ -247,9 +243,152 @@
   "alonso-sepang-points": {
    "title": "アロンソがセパンで8位入賞、アストンマーティンの今季ベスト",
    "summary": "アロンソは混走路面でスリックを選ぶ判断の誤りを、セーフティカーを生かして挽回し8位に入った。アストンマーティンの今季最高位で、本人は「フェラーリより速かった」と手応えを語った。一方でクラック代表は、毎戦ポイントを取れるペースはないとも述べている。"
+  },
+  "honda-hrc-leadership-change": {
+   "title": "ホンダ・レーシング、2027年1月に渡辺社長から安田副社長へトップ交代",
+   "summary": "HRCは渡辺康治社長兼CEOが2027年1月1日付で退任し、安田啓一副社長が後任になると発表した。交代を1月にしたのは2027年シーズンを新体制で迎えるためという。今季のホンダは信頼性面で苦戦しているが、ホンダ側は定期的な人事ローテーションの一環で経営体制を強化する狙いだと説明している。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-anderson-malaysia-lucky",
+   "kind": "tech",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "topic": "anderson-malaysia-chaos-pu-split",
+   "title": "アンダーソン「マレーシアの混乱がこの程度で済んだのは幸運」、PU規則の見直しを訴える",
+   "summary": "元F1技術者のアンダーソンは、フォーメーションラップで多くのマシンが止まった混乱を、ドライバーやチームの過失ではなく現行PU規則そのものの問題だと論じた。FIAが十分な検証なしに応急的な修正を施した点にも懸念を示している。解決策として、内燃機関と電動の出力比を現在の50対50から75対25程度に見直すことを提案し、ピーク性能は落ちても信頼性と安全性は高まると主張した。",
+   "orig": "Gary Anderson: F1 got lucky Malaysia chaos wasn't worse",
+   "url": "https://www.the-race.com/formula-1/gary-anderson-f1-got-lucky-malaysia-chaos-wasnt-worse/",
+   "published": "2026-10-05T10:00:00+01:00"
+  },
+  {
+   "id": "en-therace-honda-hrc-leadership",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "ビジネス",
+   "topic": "honda-hrc-leadership-change",
+   "teams": [
+    "astonmartin"
+   ],
+   "title": "ホンダ・レーシングの渡辺社長が2027年1月に退任、後任は安田副社長",
+   "summary": "ホンダ・レーシング（HRC）の渡辺康治社長兼CEOが2027年1月1日付で退任し、後任に安田啓一副社長が就く。今季のホンダは信頼性の問題など苦戦が続くが、ホンダは定期的な人事ローテーションで経営体制を強化するためと説明した。安田氏は人事畑の出身で、広報・マーケティング出身の渡辺氏とは経歴が対照的だと伝えられている。",
+   "orig": "Key figure in Honda's F1 return to be replaced in 2027",
+   "url": "https://www.the-race.com/formula-1/key-figure-in-hondas-f1-return-to-be-replaced-in-2027/",
+   "published": "2026-10-05T10:30:00+01:00"
+  },
+  {
+   "id": "en-rn365-honda-hrc-leadership",
+   "kind": "news",
+   "lang": "en",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "ビジネス",
+   "topic": "honda-hrc-leadership-change",
+   "teams": [
+    "astonmartin"
+   ],
+   "title": "ホンダ、HRCのトップ交代を発表　新体制で2027年シーズンに臨む",
+   "summary": "HRCは渡辺社長が退任し、安田副社長が2027年1月1日付で後任になると発表した。交代時期を通例の4月ではなく1月にしたのは、モータースポーツの季節性に合わせ、2027年シーズンを新体制で戦うためという。渡辺氏は自動車レースのHRC統合やアストンマーティンへのPU供給を成果に挙げ、安田氏は人への投資と組織強化で勝利を目指すと語った。",
+   "orig": "Honda deliver major team update as leadership change announced",
+   "url": "https://racingnews365.com/honda-deliver-major-team-update-as-leadership-change-announced",
+   "published": "2026-10-05T10:12:00+01:00"
+  },
+  {
+   "id": "en-rn365-lambiase-mclaren-timeline",
+   "kind": "news",
+   "lang": "en",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "移籍",
+   "topic": "lambiase-mclaren-timeline",
+   "teams": [
+    "mclaren",
+    "redbull"
+   ],
+   "title": "マクラーレンのブラウンCEO、ランビアーゼ加入は「来年中」と楽観",
+   "summary": "マクラーレンのブラウンCEOはスカイF1に対し、フェルスタッペンの担当エンジニアを務めてきたランビアーゼが2027年中にパパイヤ色の陣営に来ると楽観的な見方を示した。同氏は今年初めにマクラーレンと契約し、遅くとも2028年までの加入とされ、肩書は最高レーシング責任者と発表されている。一方、レッドブルのメキースは、実際には代表職に就く話だとの見方を示している。",
+   "orig": "McLaren set latest timeline for Gianpiero Lambiase arrival from Red Bull",
+   "url": "https://racingnews365.com/mclaren-set-latest-timeline-for-gianpiero-lambiase-arrival-from-red-bull",
+   "published": "2026-10-05T10:40:00+01:00"
+  },
+  {
+   "id": "it-formula1it-norris-reprimand",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "決勝",
+   "circuit": "sepang",
+   "topic": "norris-safety-car-reprimand",
+   "teams": [
+    "mclaren"
+   ],
+   "title": "ノリス、セーフティカー中の走行は戒告のみ　9位は維持",
+   "summary": "セパンの決勝でセーフティカー先導中に不規則な走行をしたとして審議されたノリス（マクラーレン）は、戒告のみで済み、ペナルティポイントや順位変更はなかった。スチュワードは前走車との車間をもっと慎重に取るべきだったと認め、低い太陽による視界の悪さは理由にならないとした。一方で素早い反応で接触を避けた点が考慮されたという。",
+   "orig": "Norris, la FIA lo grazia dopo il caos dietro la safety car in Malesia",
+   "url": "https://www.formula1.it/news/33059/1/norris-la-fia-lo-grazia-dopo-il-caos-dietro-la-safety-car-in-malesia",
+   "published": "2026-10-05T09:20:00+02:00"
+  },
+  {
+   "id": "it-formula1it-hamilton-tormento",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "circuit": "sepang",
+   "topic": "ferrari-sepang-slicks-gamble",
+   "teams": [
+    "ferrari"
+   ],
+   "title": "ハミルトン「学ぶべきことがある」、フェラーリは5戦ぶり表彰台も悔いの残る内容",
+   "summary": "2番手と4番手から出たフェラーリは、ウェットの路面でスリックを選ぶ判断が外れ、2周でハミルトンとルクレールが最後尾へ下がった。その後の追い上げとボッタスのリタイアによるセーフティカーも生かし、ハミルトンは3位でフェラーリに5戦ぶりの表彰台をもたらした。無線でピット作業と戦略を称えつつ、もっと取れたはずだと悔しさをにじませた。",
+   "orig": "Ferrari, il tormento di Hamilton: «Dobbiamo imparare, c'era di più sul tavolo per noi»",
+   "url": "https://www.formula1.it/news/33032/1/ferrari-il-tormento-di-hamilton-dobbiamo-imparare-c-era-di-piu-sul-tavolo-per-noi",
+   "published": "2026-10-05T07:30:00+02:00"
+  },
+  {
+   "id": "it-formula1it-mercedes-russell-engine",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "分析",
+   "circuit": "sepang",
+   "topic": "russell-sepang-dnf-title",
+   "teams": [
+    "mercedes"
+   ],
+   "title": "メルセデスの狙いはPUの耐久データ？　ラッセルのリタイアに続くペナルティ懸念",
+   "summary": "フォーミュラ1イットは、メルセデスがラッセルのマシンでPUの耐久性確認を優先したことが終盤のリタイアにつながったと論じた。ハンガリーから使われたPUは5〜6戦分を走破し、全24戦の約4分の1の耐久要件を果たしたという見方だ。選手権はアントネッリ320点、ラッセル236点で、ラッセルはシンガポールかオースティンでPU交換ペナルティを受ける可能性があると指摘している。",
+   "orig": "La Mercedes centra l'obiettivo e manda Russell al patibolo",
+   "url": "https://www.formula1.it/news/33053/1/la-mercedes-centra-l-obiettivo-e-manda-russell-al-patibolo",
+   "published": "2026-10-05T06:00:00+02:00"
+  },
+  {
+   "id": "ja-f1are-williams-decline",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "sepang",
+   "topic": "williams-sepang-decline",
+   "teams": [
+    "williams"
+   ],
+   "title": "ウィリアムズの凋落ぶりにファンが嘆き　かつての名門にセパンも厳しい結果",
+   "summary": "F1のアレは、RaceFansの記事を元に、セパン決勝でウィリアムズの2台がともに入賞を逃した件を取り上げた。アルボンはピット作業での行き違いで順位を落とし、その後ギアボックスのトラブルにも見舞われたと伝えられている。コメント欄では、20年以上続く低迷を振り返り、かつての名門の現状を惜しむ声が多く、批判的というより哀愁を帯びた雰囲気だ。",
+   "orig": "ウィリアムズほど落ちぶれた超名門F1チームも珍しい、かつては優勝候補の筆頭だったのに...",
+   "url": "https://f1are.com/blog-entry-3956.html",
+   "published": "2026-10-05T09:00:00+09:00"
+  },
   {
    "id": "de-formel1-verstappen-sieg-emotionen",
    "kind": "news",
@@ -1678,143 +1817,6 @@
    "orig": "Sepang cambia las cartas sobre la mesa de la F1",
    "url": "https://es.motorsport.com/f1/news/sepang-cambia-las-cartas-sobre-la-mesa-de-la-f1/10861033/",
    "published": "2026-10-02T17:43:00+02:00"
-  },
-  {
-   "id": "it-formula1-mekies-friday-cautious",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sepang-mekies-cautious",
-   "title": "レッドブルのメキース代表、金曜の好調でも「本命と見るのは早い」",
-   "summary": "レッドブルのメキース代表は、金曜に好調だったチームを本命とみなすことを避け、金曜の傾向は見ないようにしていると述べた。このコースでは過去にかなり苦しんだとし、フェラーリ、マクラーレン、メルセデスも同じ位置にいると見ている。セパンでは大きな劣化が予想されるため、予選より決勝で本当のレースペースを見つけられるかが鍵になると語った。",
-   "orig": "Mekies non si sbilancia: «Ferrari, McLaren, Mercedes e Red Bull sono tutte lì»",
-   "url": "https://www.formula1.it/news/32986/1/mekies-non-si-sbilancia-ferrari-mclaren-mercedes-e-red-bull-sono-tutte-li",
-   "published": "2026-10-02T17:05:00+02:00"
-  },
-  {
-   "id": "es-motorsport-sepang-4-5-seconds-slower",
-   "kind": "tech",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "分析",
-   "circuit": "sepang",
-   "topic": "sepang-slower-than-simulation",
-   "title": "なぜF1はセパンで予想より4.5秒も遅かったのか　荒れた路面と清掃車",
-   "summary": "セパンの路面はピアストリが「紙やすり」と評するほど研磨性が高く、FP2後にはFIAが清掃車で破片を取り除いた。ピレリのシミュレーションと比べ、ラップタイムは4.5秒遅かったという。同社のベラ主任エンジニアは、路面が走行中にも劣化し、現状では管理しきれないと説明した。ピレリはパンクなど安全上の問題はなく、課題はグリップ管理だと強調している。",
-   "orig": "¿Por qué la F1 fue 4,5 segundos más lenta de lo esperado en Sepang?",
-   "url": "https://es.motorsport.com/f1/news/por-que-formula1-4-segundos-medio-mas-lentos-esperado-sepang/10861109/",
-   "published": "2026-10-02T16:51:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-sepang-pole-wrong-side",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "サーキット",
-   "circuit": "sepang",
-   "topic": "sepang-grid-repaint",
-   "title": "FIAが土壇場で修正、セパンのポールポジションが逆側に描かれていた",
-   "summary": "セパンのポールポジションは、FIAの書類の誤りで本来と逆の左側に描かれていたと伝えた。サーキット側が水曜のコースウォークで気づき、木曜に最初のグリッドを黒く塗りつぶして、各順位の枠を1つずつ繰り上げた。スタートラインも移し、先頭の枠との最小1メートルの間隔を保った。ポールの位置は、セパンの伝統どおり右側に戻った。",
-   "orig": "FIA grijpt last minute in: pole position Sepang stond aan verkeerde kant van de baan",
-   "url": "https://www.gpblog.com/nl/nieuws/fia-grijpt-last-minute-in-pole-position-sepang-stond-aan-verkeerde-kant-van-de-baan",
-   "published": "2026-10-02T16:16:00+02:00"
-  },
-  {
-   "id": "en-rn365-piastri-mclaren-turn",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-mclaren-sepang-pecking-order",
-   "title": "ピアストリ「マクラーレンにも出番が来る」　セパンの勢力図は混戦",
-   "summary": "ピアストリは、上位4チームが接近しており「どこも順番に競争力を見せた」と語り、マクラーレンは「ほんの少し後ろ」だと認めた。FP1では2台とも11・12番手と苦しんだが、FP2ではノリスが3番手でルクレールとの差は0.137秒まで縮まった。ピアストリはFP2で6番手だった。予報された雨が降らなかったため、タイヤ戦略の判断が難しかったとも述べた。",
-   "orig": "Oscar Piastri hopeful McLaren 'takes its turn' in jumbled Sepang pecking order",
-   "url": "https://racingnews365.com/oscar-piastri-hopeful-mclaren-takes-its-turn-in-jumbled-sepang-pecking-order",
-   "published": "2026-10-02T15:00:00+01:00"
-  },
-  {
-   "id": "it-formula1-hamilton-impeding-fia",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari",
-    "audi"
-   ],
-   "topic": "hamilton-bortoleto-impeding",
-   "title": "ハミルトンの妨害にFIAが裁定　警告のみ、フェラーリには1万ユーロの罰金",
-   "summary": "FIAはFP2でボルトレートを妨げたハミルトンに警告を出し、フェラーリには1万ユーロの罰金を科した。両者の速度差は155〜160km/hあり、ハミルトンはターン9の進入で走行ラインに入ったとされる。スチュワードは「危険な妨害」とする見方も検討したが、ボルトレートが対応できた点やプッシュラップではなかった点を考慮した。同記事は、ハミルトンの妨害は今季繰り返されていると指摘している。",
-   "orig": "Hamilton ancora nei guai per impeding: la decisione della FIA",
-   "url": "https://www.formula1.it/news/32985/1/hamilton-ancora-nei-guai-per-impeding-la-decisione-della-fia",
-   "published": "2026-10-02T15:40:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-pirelli-sepang-4-5-seconds",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "sepang",
-   "topic": "sepang-slower-than-simulation",
-   "title": "ピレリ、セパンのラップタイムがシミュレーションより4秒以上遅いと驚き",
-   "summary": "9年ぶりのセパンでは、FP2の途中から路面が荒れて小石が出たため、除去作業が必要になった。ピレリのベラ主任エンジニアは「シミュレーションより4.5秒遅かった」と語り、路面がセッション中にも変化していくと説明した。ルクレールも「非常に難しく、極めて滑りやすい」と述べた。ピレリは、予選で速いチームが摩耗の厳しい決勝で苦戦する「驚き」が起こりうるとみている。",
-   "orig": "Pirelli überrascht: Rundenzeiten über vier Sekunden langsamer als in Simulation",
-   "url": "https://www.motorsport-total.com/formel-1/news/pirelli-ueberrascht-rundenzeiten-ueber-vier-sekunden-langsamer-als-in-simulation-26100218",
-   "published": "2026-10-02T15:35:00+02:00"
-  },
-  {
-   "id": "en-planetf1-red-bull-energy-harvesting-data",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "sepang-energy-management",
-   "title": "金曜データで見えたレッドブルの強み、エネルギー回生の少なさと長距離ペース",
-   "summary": "金曜のデータでは、レッドブルのRB22はターン12やターン5・6でフェラーリやメルセデスよりエネルギー回生が少なかった。FP2ではフェルスタッペンがミディアムで非常に長いスティントをこなし、ペースの強さも示した。ラッセルのロングランはフェルスタッペンより平均0.4秒遅く、ルクレールはソフトの長距離で次点のノリスより約0.4秒速かった。ただしセパンを走った経験のあるドライバーは22人中10人に限られ、予測は難しいと記事は述べる。",
-   "orig": "Max Verstappen clue as Red Bull data emerges at Bahrain Grand Prix",
-   "url": "https://www.planetf1.com/f1-data/max-verstappen-red-bull-malaysian-grand-prix-2026-data",
-   "published": "2026-10-02T14:19:00+01:00"
-  },
-  {
-   "id": "it-formula1-sainz-williams-cold-shower",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "teams": [
-    "williams"
-   ],
-   "topic": "sainz-williams-cold-shower",
-   "title": "サインツ「ウィリアムズには冷や水だった」　新規則で露呈した課題",
-   "summary": "サインツは2026年の開幕を、ウィリアムズにとって「冷や水」のような出来事だったと振り返った。2025年は表彰台を2回半（うち1回はスプリント）獲得して勢いに乗っていたが、新規則で「準備できていると思っていたが、チームはまだ遠いと分かった」と語る。今季は2歩後退したという認識で、まず失ったものを取り戻すことが2027年に向けた優先事項だとした。",
-   "orig": "Sainz e la doccia gelata Williams: «Pensavamo di essere pronti»",
-   "url": "https://www.formula1.it/news/32987/1/sainz-e-la-doccia-gelata-williams-pensavamo-di-essere-pronti",
-   "published": "2026-10-02T14:00:00+02:00"
   }
  ]
 }
