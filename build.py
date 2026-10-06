@@ -553,17 +553,69 @@ def lens_kind(L):
     return 'off' if L.get('series') == 'offgrid' else 'world'
 
 
-def more_columns(all_lens, slug, n=5):
-    """End of a WORLD GRID page: other columns first (owner's request, 3 Oct 2026); today's news only as a small link."""
-    others = [x for x in all_lens if x[1] != slug][:n]
+ALL_COLS = []  # every published column of the three corners, newest first (filled in build_lenses)
+
+
+def collect_columns(all_lens):
+    """WORLD GRID + OFF GRID (lens JSON) and DEEP GRID issues in one list, newest first (owner, 6 Oct 2026)."""
+    global ALL_COLS
+    out = []
+    for p, s_, L in all_lens:
+        out.append({'dt': p, 'kind': lens_kind(L), 'url': f'/lens/{s_}/', 'title': L['title'], 'sub': L.get('gpLabel', 'コラム'), 'no': ''})
+    for D in DEEPS:
+        out.append({'dt': datetime.fromisoformat(D['published']), 'kind': 'deep', 'url': f'/deep/{D["slug"]}/', 'title': D['title'], 'sub': '', 'no': deep_no(D)})
+    out.sort(key=lambda x: x['dt'], reverse=True)
+    ALL_COLS = out
+    return out
+
+
+def col_li(x, track):
+    sub = ' · '.join(v for v in (x['sub'], jst_text(x['dt'])) if v)
+    return (f'<li><a href="{e(x["url"])}" data-track="{e(track)}">{ctag(x["kind"], x["no"])}<b>{e(x["title"])}</b>'
+            f'<small>{e(sub)}</small></a></li>')
+
+
+def more_columns(cur_url, page='lens', n=8):
+    """End of every column page: the newest other columns of all three corners, with corner tags (owner, 6 Oct 2026)."""
+    others = [x for x in ALL_COLS if x['url'] != cur_url][:n]
     if not others:
         return ''
-    li = ''.join(f'<li><a href="/lens/{e(s2)}/" data-track="click/lens/{e(slug)}/more/{e(s2)}">{ctag(lens_kind(L2))}<b>{e(L2["title"])}</b>'
-                 f'<small>{e(L2.get("gpLabel", "コラム"))} · {e(jst_text(p2))}</small></a></li>' for p2, s2, L2 in others)
-    return ('<section class="more-cols"><p class="mc-k">WORLD GRID</p><h2>ほかのコラムを読む</h2>'
+    k = 'mc' if page == 'lens' else 'md'
+    sec = 'more-cols' if page == 'lens' else 'more-deep'
+    li = ''.join(col_li(x, f'click/{page}/more{x["url"]}') for x in others)
+    return (f'<section class="{sec}"><p class="{k}-k">COLUMNS</p><h2>ほかのコラムを読む</h2>'
             f'<ul>{li}</ul>'
-            f'<a class="mc-btn" href="/lens/" data-track="click/lens/{e(slug)}/more-all">すべてのコラムを見る →</a>'
-            f'<a class="mc-sub" href="/" data-track="click/lens/{e(slug)}/entrance-top">今日のF1ニュースを見る</a></section>')
+            f'<a class="{k}-btn" href="/columns/" data-track="click/{page}/more-all">すべてのコラムを見る →</a>'
+            f'<a class="{k}-sub" href="/" data-track="click/{page}/entrance-top">今日のF1ニュースを見る</a></section>')
+
+
+ALLCOL_CSS = """
+.col-legend{margin:6px 0 18px;font-size:13.5px;line-height:2.1;color:var(--ink-2)}
+.col-legend .ctag{margin:0 8px 0 0}
+.col-legend a{color:var(--ink);font-weight:700}
+.col-list{list-style:none;margin:0;padding:0}
+.col-list li{border-top:1px solid var(--line)}
+.col-list li a{display:block;padding:14px 0;color:var(--ink);text-decoration:none}
+.col-list li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.col-list li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.col-list li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+"""
+
+
+def build_all_columns():
+    """columns/index.html: every column of WORLD GRID, DEEP GRID and OFF GRID, newest first, with corner tags."""
+    if not ALL_COLS:
+        return []
+    items = ''.join(col_li(x, 'click/columns' + x['url']) for x in ALL_COLS)
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › すべてのコラム</nav><h1>すべてのコラム</h1>'
+            '<p class="lead">F1 Grid Walk のコラムを、新しい順にすべて並べています。</p>'
+            '<p class="col-legend">' + ctag('world') + '<span>世界の見方を、日本語で。 <a href="/lens/">一覧</a></span><br>'
+            + ctag('deep') + '<span>ニュースの、その奥へ。 <a href="/deep/">一覧</a></span><br>'
+            + ctag('off') + '<span>本筋の外の、F1こぼれ話。 <a href="/offgrid/">一覧</a></span></p>'
+            f'<ul class="col-list">{items}</ul>')
+    write('columns/index.html', page('すべてのコラム｜F1 Grid Walk（F1グリッドウォーク）', 'WORLD GRID・DEEP GRID・OFF GRID のコラムを新しい順にすべて。',
+                                     SITE + '/columns/', body, f'<style>{LENS_CSS}{ALLCOL_CSS}</style>\n', og_type='website'))
+    return [(SITE + '/columns/', ALL_COLS[0]['dt'].isoformat(timespec='seconds'), 'daily', '0.8')]
 
 
 def build_lenses(arch, flag_map):
@@ -582,6 +634,7 @@ def build_lenses(arch, flag_map):
             if L0 and L0.get('slug') and ID_OK.match(L0['slug']) and not L0.get('draft') and L0.get('published'):
                 all_lens.append((datetime.fromisoformat(L0['published']), L0['slug'], L0))
     all_lens.sort(key=lambda x: x[0], reverse=True)
+    collect_columns(all_lens)
     for fn in sorted(os.listdir(d)):
         if not fn.endswith('.json'):
             continue
@@ -636,13 +689,13 @@ def build_lenses(arch, flag_map):
                 elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
                 else: B.append(f'<p>{e(t)}</p>')
             B.append('</div>')
-            B.append(more_columns(all_lens, slug))
+            B.append(more_columns(f'/lens/{slug}/'))
             if L.get('note'):
                 B.append(f'<p class="lens-note">{e(L["note"])}</p>')
             L.setdefault('unreported', {'items': []}); L.setdefault('mystery', {'evidence': []})
         else:
             B.extend(lens_issue_blocks(L, slug, flag_map, region_of))
-            B.append(more_columns(all_lens, slug))
+            B.append(more_columns(f'/lens/{slug}/'))
         for D in DEEPS:
             if slug in (D.get('lensRelated') or []):
                 B.append(deep_card(D, lead='なぜそうなった？を深く読む'))
@@ -963,13 +1016,7 @@ def build_deeps(arch, flag_map):
                 B.append(f'<div class="dg-sec"><h2>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
             B.append('</details>')
         # other issues right after データと記録 (owner's request, 3 Oct 2026), like the WORLD GRID pages
-        oth = [x for x in DEEPS if x is not D][:5]
-        if oth:
-            B.append('<section class="more-deep"><p class="md-k">DEEP GRID</p><h2>ほかの号を読む</h2><ul>'
-                     + ''.join(f'<li><a href="/deep/{e(x["slug"])}/" data-track="click/deep/{e(slug)}/more/{e(x["slug"])}">{ctag("deep", deep_no(x))}<b>{e(x["title"])}</b>'
-                               f'<small>{e(jst_text(datetime.fromisoformat(x["published"])))}</small></a></li>' for x in oth)
-                     + f'</ul><a class="md-btn" href="/deep/" data-track="click/deep/{e(slug)}/more-all">すべての号を見る →</a>'
-                     + f'<a class="md-sub" href="/" data-track="click/deep/{e(slug)}/more-top">今日のF1ニュースを見る</a></section>')
+        B.append(more_columns(f'/deep/{slug}/', page='deep'))
         if D.get('glossary'):
             B.append('<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl>'
                      + ''.join(f'<dt>{e(t)}</dt><dd>{e(d)}</dd>' for t, d in D['glossary']) + '</dl></div>')
@@ -1506,6 +1553,7 @@ def main():
     urls += [(f'{SITE}/news/{a["id"]}/', when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]
     urls += [u for u in build_lenses(arch, flag_map) if u[1]]
     urls += [u for u in build_deeps(arch, flag_map) if u[1]]
+    urls += build_all_columns()
     urls += build_rules()
     top_rules_slot()
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
