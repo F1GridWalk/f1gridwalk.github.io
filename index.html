@@ -42,6 +42,15 @@
 }
 @media (min-width:521px){.src-more{display:none}}
 </style>
+<style>
+/* phone only: every menu item visible in two rows, without 「コラム」 (owner's choice B, 6 Oct 2026) */
+@media (max-width:520px){
+.jump .wrap{flex-wrap:wrap !important;overflow:visible !important;gap:7px !important;padding-block:8px !important}
+.jump .wrap a{font-size:12px !important;white-space:nowrap}
+.jump .jm-col{display:none}
+#hero{scroll-margin-top:100px !important}
+}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1520,9 +1529,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 <nav class="jump" aria-label="ページ内の移動">
   <div class="wrap">
     <a href="#news" class="jump-news" data-track="click/nav/news">ニュース</a>
-    <a href="/lens/" class="jump-col" data-track="click/nav/lens">WORLD GRID コラム</a>
-    <a href="/deep/" class="jump-deep" data-track="click/nav/deep">DEEP GRID コラム</a>
-    <a href="/offgrid/" class="jump-off" data-track="click/nav/offgrid">OFF GRID コラム</a>
+    <a href="/lens/" class="jump-col" data-track="click/nav/lens">WORLD GRID<span class="jm-col"> コラム</span></a>
+    <a href="/deep/" class="jump-deep" data-track="click/nav/deep">DEEP GRID<span class="jm-col"> コラム</span></a>
+    <a href="/offgrid/" class="jump-off" data-track="click/nav/offgrid">OFF GRID<span class="jm-col"> コラム</span></a>
     <a href="#hero" class="jump-feat" data-track="click/nav/feature">今週の注目</a>
   </div>
 </nav>
