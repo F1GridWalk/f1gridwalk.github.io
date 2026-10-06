@@ -935,6 +935,8 @@ def load_deeps():
 
 
 def deep_no(D):
+    if D.get('noLabel'):  # e.g. 前編 / 後編 for a two-part issue (owner's request, 6 Oct 2026)
+        return D['noLabel']
     return f'#{int(D.get("no", 0)):02d}'
 
 
