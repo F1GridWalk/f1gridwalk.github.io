@@ -798,9 +798,9 @@ details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
 .dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
 .dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
 .dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
-.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18}}
-:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18}
+.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF;--tW:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}}
+:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}
 .dg-fig figcaption{font-size:14.5px;font-weight:700;line-height:1.6;margin:0 0 8px}
 .dg-fig svg{display:block;width:100%;height:auto;max-width:640px;font-family:var(--sans)}
 .dg-fig .lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
@@ -809,6 +809,8 @@ details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
 .dg-fig .t{fill:var(--ink);font-size:12px}.dg-fig .ts{fill:var(--muted);font-size:10.5px}.dg-fig .tv{fill:var(--ink);font-size:12px;font-weight:700}
 .dg-fig .ax{stroke:var(--line);stroke-width:1}.dg-fig .mk{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
 .dg-fig .sg:hover rect,.dg-fig .br:hover rect{opacity:.8}
+.dg-fig .zs{display:grid;gap:8px;margin:8px 0 0;max-width:640px}
+.dg-fig .zs b{display:block;font-size:13px}.dg-fig .zs span{display:block;font-size:12.5px;line-height:1.65;color:var(--ink-2)}
 .dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
 .dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
 .dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
@@ -965,6 +967,18 @@ def deep_chart(c):
             lg = '<div class="lg">' + ''.join(f'<span><i style="background:var(--c{k})"></i>{e(TYRE[k][0])}</span>' for k in c['legend']) + '</div>'
         svg = f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c.get("title", ""))}">{"".join(g)}</svg>'
         return f'<figure class="dg-fig">{cap}{lg}{svg}{note}</figure>'
+    if c['kind'] == 'zones':
+        zs = c['zones']
+        zw = W / len(zs)
+        H = 40
+        for i, z in enumerate(zs):
+            x0 = i * zw
+            g.append(f'<rect x="{x0 + 1:.1f}" y="18" width="{zw - 2:.1f}" height="22" rx="4" fill="var(--c{z["c"]})"/>'
+                     f'<text x="{x0 + zw / 2:.1f}" y="33" text-anchor="middle" style="fill:var(--t{z["c"]});font-size:12px;font-weight:700">{e(z["label"])}</text>')
+        g.append(f'<text class="ts" x="0" y="11">{e(c.get("left", ""))}</text><text class="ts" x="{W}" y="11" text-anchor="end">{e(c.get("right", ""))}</text>')
+        svg = f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c.get("title", ""))}">{"".join(g)}</svg>'
+        cols = ''.join(f'<div><b>{e(z["label"])}</b><span>{e(z["sub"])}</span></div>' for z in zs)
+        return f'<figure class="dg-fig">{cap}{svg}<div class="zs" style="grid-template-columns:repeat({len(zs)},1fr)">{cols}</div>{note}</figure>'
     return ''
 
 

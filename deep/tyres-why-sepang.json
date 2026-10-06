@@ -1,0 +1,402 @@
+{
+  "slug": "tyres-why-sepang",
+  "no": 8,
+  "draft": true,
+  "title": "ミディアムは、なぜ嫌われたのか",
+  "dek": "金曜には「もろすぎる」と見られたソフトが、日曜は31周もった。ミディアムはドライバーに嫌われ、ハードは頑丈だったが目立たなかった。熱でタイヤが傷んだのか、それとも逆なのか。ピレリとドライバーの言葉、気温と路面温度の数字から、3種類のタイヤの「なぜ」をほどく。",
+  "published": "2026-10-06T18:00:00+09:00",
+  "themes": [
+    "タイヤ",
+    "天気",
+    "レース分析"
+  ],
+  "circuit": "sepang",
+  "teams": [],
+  "topics": [
+    "sepang-race-verstappen-wins"
+  ],
+  "quick": [
+    "決勝の日は、金曜よりずっと涼しかった。金曜のフリー走行2回目は気温38℃、路面54℃（ピレリ）。決勝の前は、雨のあとで路面およそ35℃、気温およそ25℃まで下がった（Grande Premio）。ピレリは、低い温度と湿った路面で「熱による劣化が減った」とまとめている。",
+    "ソフトが長く持ったのは、熱が出にくかったからだ。ピレリのベラは金曜、「ソフトはグリップが高いので滑りにくく、そのぶん熱が出にくい。だからミディアムより安定することがある」と話していた。日曜は気温も下がり、ソフトに都合のいい条件がそろった。",
+    "ミディアムは「熱でダメになった」わけではない。ピレリは決勝後、ミディアムもハードも「安定して、予測しやすい動き」だったが、グリップはソフトより低かったとしている。熱で傷んだという発言や分析は、見つからなかった。",
+    "それでも、ドライバーはミディアムを嫌った。ハミルトンは無線で「このタイヤはひどい」。ラッセルも「ミディアムで少し苦しんだ」。ただ、タイムではミディアムのハミルトンが、ソフトのハジャーとほぼ同じペースだった（GrandPrix.com）。足りなかったのは「速さ」より「攻めるためのグリップ」だった。",
+    "ハードは、熱に強いぶん「頑丈だが、グリップは控えめ」。ピレリは土曜、ハードは柔らかいタイヤより熱に強く、劣化が小さいと説明していた。ストロールは「とても頑丈」、ピアストリは「ハードでかなり良くなった」と話している。"
+  ],
+  "sections": [
+    {
+      "h": "金曜と日曜で、別のサーキットだった",
+      "body": [
+        {
+          "p": "タイヤの話は、温度から始まる。ピレリによると、金曜のフリー走行2回目は、気温38℃、路面温度54℃まで上がった。決勝の日は、スタート前の大雨で一気に冷えた。ブラジルのGrande Premioによると、スタートを待つ間に、路面はおよそ35℃、気温はおよそ25℃まで下がった。"
+        },
+        {
+          "chart": {
+            "kind": "hbar",
+            "title": "金曜と決勝前の温度（℃）",
+            "labelWidth": 128,
+            "rows": [
+              {
+                "label": "金曜FP2 路面",
+                "v": 54,
+                "c": "S",
+                "text": "54℃"
+              },
+              {
+                "label": "決勝前 路面",
+                "v": 35,
+                "c": "W",
+                "text": "約35℃"
+              },
+              {
+                "label": "金曜FP2 気温",
+                "v": 38,
+                "c": "S",
+                "text": "38℃"
+              },
+              {
+                "label": "決勝前 気温",
+                "v": 25,
+                "c": "W",
+                "text": "約25℃"
+              }
+            ],
+            "note": "出典：ピレリ（金曜）、Grande Premio（決勝前、雨でスタートを待っていた間）。決勝の間ずっと同じ温度だったわけではない。"
+          }
+        },
+        {
+          "p": "暑い金曜、タイヤは苦しんでいた。ピレリによると、フリー走行は「タイヤが滑ることと、路面の性質から生まれる、大きな熱による劣化」が目立った。ラッセルは「タイヤのオーバーヒートがかなりあって、アップデートで増やしたダウンフォースの効果が少し打ち消されてしまう」、メルセデスのショブリンも「バランスに苦しみ、タイヤのオーバーヒートもかなりあった」と話している（F1公式サイト）。"
+        },
+        {
+          "p": "とくにソフトは、もろく見えた。ピレリのモータースポーツ責任者によると、土曜の走行では、ソフトは最初の1周の全開アタックのあと、本当に速い周回をもう一度走ることができなかった。GrandPrix.comは、決勝のあとでこう書いている。「セパンの粗い路面には弱すぎるように見えたタイヤが、ずっと居心地のいい環境を手に入れた」。"
+        }
+      ]
+    },
+    {
+      "h": "タイヤが傷む、2つの道",
+      "body": [
+        {
+          "p": "タイヤには、いちばん性能が出る温度の範囲がある。ピレリはこれを「作動温度の窓（ワーキングレンジ）」と呼ぶ。窓より下で使うと性能を出し切れず、窓より上で使うと性能が落ちていく。傷み方も、冷たすぎる時と熱すぎる時で違う。"
+        },
+        {
+          "chart": {
+            "kind": "zones",
+            "title": "タイヤの温度と、傷み方",
+            "left": "冷たい",
+            "right": "熱い",
+            "zones": [
+              {
+                "label": "冷えすぎ",
+                "c": "W",
+                "sub": "グリップが出ず、表面がささくれる「グレイニング」が起きやすい。"
+              },
+              {
+                "label": "ちょうどいい",
+                "c": "I",
+                "sub": "作動温度の窓の中。グリップが出て、傷みも小さい。"
+              },
+              {
+                "label": "熱すぎ",
+                "c": "S",
+                "sub": "滑って表面が熱くなる（オーバーヒート）。熱でゴムが変わると、元に戻らない（熱による劣化）。"
+              }
+            ],
+            "note": "出典：ピレリの解説（グレイニングは2024年、オーバーヒートと熱による劣化はF1Technical経由、作動温度の窓は2017年）をもとにF1 Grid Walkが作った模式図。タイヤごとの正確な温度の範囲は公表されていない。"
+          }
+        },
+        {
+          "p": "ピレリの解説では、グレイニングは「路面温度が低い時や、タイヤが正しい作動温度の窓に入っていない時に、最も起きやすい」。もう一方のオーバーヒートは「タイヤの表面が路面の上で滑りすぎる」ことで生まれる。オーバーヒートは、走り方や天気が変われば元に戻る。これとは別の「熱による劣化」は、タイヤに加わるエネルギーが大きく、その熱でトレッド（路面に触れるゴム）の化学的な結びつきが変わってしまう状態で、元には戻らない。"
+        },
+        {
+          "p": "金曜のセパンは、右側の「熱すぎ」だった。日曜は、そこから一気に左へ動いた。この動きが、3種類のタイヤの明暗を分けた。"
+        }
+      ]
+    },
+    {
+      "h": "ソフトは、なぜ持ったのか",
+      "body": [
+        {
+          "p": "答えのヒントは、金曜にもう出ていた。ピレリのチーフエンジニアのシモーネ・ベラは、金曜の走行のあとでこう話している。"
+        },
+        {
+          "quote": "ソフトは、ときにミディアムより安定していた。グリップが高いので滑りが少なく、そのぶん熱が出にくいからだ。",
+          "who": "ベラ（ピレリ）"
+        },
+        {
+          "p": "つまり、ソフトの弱点は「熱」だった。グリップが高いぶん滑りにくいが、暑い金曜は路面が熱すぎて、それでも熱がたまった。日曜は気温も路面温度も下がり、レースの大半で路面は湿っていた。ピレリは決勝後、この条件が「タイヤの温度を抑え、熱による劣化を減らした」と説明している。"
+        },
+        {
+          "p": "チームの使い方も効いた。ピレリによると、ソフトが長いスティントを走れたのは、各チームが金曜に試した作動温度の窓に、ソフトを少しずつ入れていったからでもある。ピレリのモータースポーツ責任者は土曜の時点で、ソフトは最初の数周で少しずつ窓に入れれば、レースの距離でも十分安定すると話していた。"
+        },
+        {
+          "chart": {
+            "kind": "hbar",
+            "title": "1セットで走った最長の周回（上位10台）",
+            "labelWidth": 172,
+            "legend": [
+              "S",
+              "H",
+              "M"
+            ],
+            "rows": [
+              {
+                "label": "ソフト（ハミルトン）",
+                "v": 31,
+                "c": "S",
+                "text": "31周"
+              },
+              {
+                "label": "ハード（ノリス）",
+                "v": 25,
+                "c": "H",
+                "text": "25周"
+              },
+              {
+                "label": "ミディアム（アントネッリ）",
+                "v": 24,
+                "c": "M",
+                "text": "24周"
+              }
+            ],
+            "note": "F1 Grid WalkがRaceFansの止まった周回から数えた。セーフティカーの周を含む。ハミルトンの31周には、濡れた路面の序盤も含まれる。ノリスのタイヤはマクラーレンの発表から。"
+          }
+        },
+        {
+          "p": "結果、いちばん柔らかいソフトが、上位10台でいちばん長いスティントを記録した。ふだんは柔らかいタイヤほど早く傷むと考えられているので、逆の結果だ。"
+        }
+      ]
+    },
+    {
+      "h": "ミディアムは、なぜ嫌われたのか",
+      "body": [
+        {
+          "p": "ミディアムに乗ったドライバーの声は厳しい。F1公式サイトによると、ハミルトンはミディアムで走っていた時に、無線で「このタイヤはひどい」と伝えた。英The Raceは、ハミルトンが「嫌っていたミディアム」では前のハジャーを抜けなかったと書き、RaceFansも「ミディアムになってから、レッドブルを脅かすほど近づけなくなった」と伝えている。"
+        },
+        {
+          "p": "メルセデスのラッセルは「ミディアムに替えてから少し苦しんだ。ソフトになって、ずっと良くなった」。スタートからミディアムを選んだマクラーレンのノリスは「グリップが、期待していたほど全くなかった」と話した。ただしノリスの場合は、まだ濡れていた路面でドライタイヤを履いたことが大きい。"
+        },
+        {
+          "p": "では、ミディアムは熱で傷んだのか。少なくとも、そう説明した発言や分析は見つからなかった。ピレリの決勝後のまとめは逆で、ハードとミディアムは「安定して、予測しやすい動きだった。ただしグリップはソフトより低かった」としている。"
+        },
+        {
+          "p": "タイムを見ても、ミディアムが極端に遅かったわけではない。GrandPrix.comによると、ミディアムのハミルトンとソフトのハジャーは、35〜42周目の平均タイムがほぼ同じだった。"
+        },
+        {
+          "p": "手がかりは、冷えた路面でのタイヤの温まり方にある。ピレリのマリオ・イゾラは2021年のイモラで「路面温度が低いと、タイヤを温めるのが難しい。とくにミディアムとハード」と話している。フェラーリの戦略責任者イニャキ・ルエダも2020年のポルトガルGPで、低い気温と新しい舗装を前に、ミディアムとハードは「予選でも、スタートでも、ピットストップのあとでも、温まりにくいだろう」と考えていたと話している。"
+        },
+        {
+          "view": "F1 Grid Walkとしては、日曜のミディアムは「熱で傷んだ」のではなく、その逆で、涼しく湿った路面では温まりきらず、ドライバーが欲しいグリップが出なかったのだと見ています。タイムは保てても、前の車を抜くために攻めるとグリップが足りない。ハミルトンの「ひどい」は、その感覚だったのではないでしょうか。"
+        }
+      ]
+    },
+    {
+      "h": "ハードは、なぜ「普通」だったのか",
+      "body": [
+        {
+          "p": "ハードは、金曜には誰も使わなかった。ピレリは金曜の時点で「ハードはまだ分からない」としていた。土曜には、ハードは柔らかいタイヤより「熱に強く、劣化が小さい」と説明している。"
+        },
+        {
+          "p": "日曜、ハードを使ったドライバーの声は前向きだ。アストンマーティンのストロールは「ハードはとても頑丈に感じた。2セット目は、今思えばもっと攻められた」。マクラーレンのピアストリは「ハードでかなり良くなった。とくに2つ目のスティントでは、ルクレールに追いついていた」と話した（F1公式サイト）。"
+        },
+        {
+          "p": "ただ、ハードは決勝の主役にはならなかった。ピレリによると、グリップはソフトより低い。涼しい日曜は、ハードの「熱に強い」という長所が生きる場面が少なかった。"
+        },
+        {
+          "view": "F1 Grid Walkとしては、3種類のタイヤの評価は「金曜の暑さ」を前提にしていたと見ています。熱に弱いソフトは警戒され、熱に強いハードが本命とされた。ところが日曜は涼しくなり、熱の心配が小さくなった。そうなると、いちばんグリップの高いソフトが、いちばん得をしました。"
+        }
+      ]
+    }
+  ],
+  "deep": [
+    {
+      "h": "3種類のタイヤ、金曜と日曜",
+      "body": [
+        {
+          "table": {
+            "head": [
+              "",
+              "ソフト（C4）",
+              "ミディアム（C3）",
+              "ハード（C2）"
+            ],
+            "rows": [
+              [
+                "金曜・土曜の見え方",
+                "熱がたまりやすい。土曜は1周の全開アタックのあと速い周回が続かない",
+                "ソフトと似た速さと劣化。ソフトより不安定なことも",
+                "金曜は使われず、未知数。熱に強く劣化が小さい"
+              ],
+              [
+                "決勝のピレリの評価",
+                "特に競争力があり、とても長いスティントを可能にした",
+                "安定して予測しやすい。グリップはソフトより低い",
+                "安定して予測しやすい。グリップはソフトより低い"
+              ],
+              [
+                "ドライバーの声",
+                "ラッセル「ソフトになって、ずっと良くなった」",
+                "ハミルトン「このタイヤはひどい」",
+                "ストロール「とても頑丈」"
+              ],
+              [
+                "上位10台の最長スティント",
+                "31周（ハミルトン）",
+                "24周（アントネッリ）",
+                "25周（ノリス）"
+              ]
+            ],
+            "note": "出典：ピレリ（金曜・土曜・決勝の発表）、F1公式サイト（ドライバーの声、ハミルトンの無線）、RaceFans（止まった周回からF1 Grid Walkが数えた周回）。"
+          }
+        }
+      ]
+    },
+    {
+      "h": "セパンの温度",
+      "body": [
+        {
+          "table": {
+            "head": [
+              "",
+              "気温",
+              "路面温度"
+            ],
+            "rows": [
+              [
+                "金曜 フリー走行2回目",
+                "38℃",
+                "54℃"
+              ],
+              [
+                "土曜 フリー走行3回目",
+                "―",
+                "50℃台半ば"
+              ],
+              [
+                "日曜 決勝のスタート前",
+                "約25℃",
+                "約35℃"
+              ]
+            ],
+            "note": "出典：ピレリ（金曜）、The Race（土曜）、Grande Premio（日曜、雨でスタートを待っていた間）。"
+          }
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    [
+      "作動温度の窓（ワーキングレンジ）",
+      "タイヤがいちばん性能を出せる温度の範囲。下でも上でも性能が落ちる。"
+    ],
+    [
+      "グレイニング",
+      "タイヤの表面がささくれて、小さなゴムの粒ができる現象。路面が冷たい時や、タイヤが温まっていない時に起きやすい。"
+    ],
+    [
+      "オーバーヒート",
+      "タイヤが滑りすぎて、表面が熱くなりすぎること。"
+    ],
+    [
+      "熱による劣化（サーマルデグラデーション）",
+      "熱でゴムの性質が変わり、グリップが落ちていくこと。"
+    ]
+  ],
+  "sources": [
+    {
+      "name": "Pirelli",
+      "title": "Sepang debuts the Intermediates and crowns Verstappen",
+      "url": "https://press.pirelli.com/sepang-debuts-the-intermediates-and-crowns-verstappen/"
+    },
+    {
+      "name": "Pirelli",
+      "title": "Leclerc tops FP2 on a day of high tyre degradation",
+      "url": "https://press.pirelli.com/leclerc-tops-fp2-on-a-day-of-high-tyre-degradation"
+    },
+    {
+      "name": "Pirelli",
+      "title": "Verstappen on pole as Hard tyre looms large for Sunday",
+      "url": "https://press.pirelli.com/verstappen-on-pole-as-hard-tyre-looms-large-for-sunday/"
+    },
+    {
+      "name": "Grande Premio",
+      "title": "Verstappen ends win drought in chaotic Sepang race as Hamilton recovers to podium",
+      "url": "https://grandepremio.com/en/f1/verstappen-ends-win-drought-in-chaotic-sepang-race-as-hamilton-recovers-to-podium/"
+    },
+    {
+      "name": "GrandPrix.com",
+      "title": "Race Analysis - Verstappen makes his own luck at Sepang",
+      "url": "https://www.grandprix.com/races/bahrain-gp-2026-race-analysis.html"
+    },
+    {
+      "name": "Formula1.com",
+      "title": "What the teams said – race day in Bahrain 2026",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-bahrain-2026.4kwHL7ygJLqVlSMHhAj6ce"
+    },
+    {
+      "name": "Formula1.com",
+      "title": "What the teams said – Friday in Bahrain 2026",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-bahrain-2026.2x0uNJb99AWdDz6ezXbEDx"
+    },
+    {
+      "name": "Formula1.com",
+      "title": "Verstappen wins rain-hit Bahrain GP in Malaysia over Antonelli as Russell retires late on",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-wins-rain-hit-bahrain-gp-in-malaysia-over-antonelli-as-russell-retires-late-on.6qfpIHPch8mIVj2YgfHdCp"
+    },
+    {
+      "name": "The Race",
+      "title": "Verstappen dominates Malaysia F1 race after early chaos",
+      "url": "https://www.the-race.com/formula-1/verstappen-dominates-malaysia-f1-race-after-early-chaos/"
+    },
+    {
+      "name": "The Race",
+      "title": "Mercedes fights back in final Sepang F1 practice",
+      "url": "https://www.the-race.com/formula-1/mercedes-fights-back-in-final-sepang-f1-practice/"
+    },
+    {
+      "name": "RaceFans",
+      "title": "Verstappen takes first win of 2026 in Malaysia after power unit faults delay start",
+      "url": "https://www.racefans.net/2026/10/04/verstappen-takes-first-win-of-2026-in-malaysia-after-power-unit-faults-delay-start/"
+    },
+    {
+      "name": "RaceFans",
+      "title": "2026 Bahrain Grand Prix in Malaysia interactive data",
+      "url": "https://www.racefans.net/2026/10/04/2026-bahrain-grand-prix-in-malaysia-interactive-data-lap-charts-times-and-tyres/"
+    },
+    {
+      "name": "Pirelli",
+      "title": "It's graining, men!（2024年）",
+      "url": "https://pirelli.com/global/en-ww/race/racingspot/formula-1/it-s-graining-men--124082"
+    },
+    {
+      "name": "F1Technical",
+      "title": "Pirelli explains overheating and thermal degradation",
+      "url": "https://www.f1technical.net/news/26577"
+    },
+    {
+      "name": "Pirelli",
+      "title": "Seeing through the window（2017年）",
+      "url": "https://www.pirelli.com/global/en-ww/race/racingspot/seeing-through-the-window-50931/"
+    },
+    {
+      "name": "F1Technical",
+      "title": "Pirelli: Imola 2021（イゾラの発言）",
+      "url": "https://f1technical.net/news/23155"
+    },
+    {
+      "name": "Ferrari",
+      "title": "F1 Portuguese GP 2020 tech talk",
+      "url": "https://www.ferrari.com/en-BE/formula1/articles/f1-portuguese-gp-2020-tech-talk"
+    },
+    {
+      "name": "McLaren",
+      "title": "2026 Bahrain Grand Prix in Malaysia race report",
+      "url": "https://www.mclaren.com/racing/formula-1/2026/bahrain-grand-prix/race-report/"
+    }
+  ],
+  "history": [
+    [
+      "2026-10-06",
+      "公開。"
+    ]
+  ],
+  "lensRelated": []
+}
