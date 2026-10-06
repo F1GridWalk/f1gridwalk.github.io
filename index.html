@@ -26,6 +26,22 @@
 <meta property="og:image:alt" content="F1 Grid Walk — 世界のF1ニュースを、日本語で。">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<style>
+/* phone only: easier to read (owner's request, 6 Oct 2026) */
+@media (max-width:520px){
+#news .card h3{font-size:18.5px !important;line-height:1.5 !important;margin-top:6px !important}
+#news .card p{font-size:14.5px !important;line-height:1.75 !important;display:-webkit-box !important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#news .card .teamtags{font-size:12px !important}
+#numbers .nums{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+#teams-band .teamgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+#teams-band .wrow{grid-template-columns:156px minmax(0,1fr) 22px !important;column-gap:8px !important;font-size:12.5px !important}
+#teams-band .wrow>span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#sources .srow2>span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+#sources:not(.all) .srow2:nth-child(n+11){display:none}
+.src-more{display:block;width:100%;margin:12px 0 2px;padding:10px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:inherit;font-size:13.5px;font-weight:700;cursor:pointer}
+}
+@media (min-width:521px){.src-more{display:none}}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2575,6 +2591,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       row.addEventListener('click', go); row.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); go(); } });
       sb.appendChild(row);
     });
+    if (sk.length > 10) {
+      if (window.__srcAll) sb.classList.add('all'); else sb.classList.remove('all');
+      var mb = mk('button','src-more', window.__srcAll ? '閉じる' : 'すべての媒体を見る（' + sk.length + '）'); mb.type = 'button';
+      mb.addEventListener('click', function(ev){ ev.stopPropagation(); window.__srcAll = !window.__srcAll; sb.classList.toggle('all', window.__srcAll); mb.textContent = window.__srcAll ? '閉じる' : 'すべての媒体を見る（' + sk.length + '）'; });
+      sb.appendChild(mb);
+    }
   }
   /* ---------- race week, standings, calendar ---------- */
   function fmtJST(iso, opts){
