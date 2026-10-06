@@ -365,6 +365,10 @@ def prerender_index(data, flag_of, flag_map_ref=None):
 # WORLD GRID: one long-form page per race, from lens/<slug>.json
 # ---------------------------------------------------------------------------
 LENS_CSS = '''
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
 .gw-next{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--clay)}
 .gw-k{margin:0;font:700 12px/1 system-ui;letter-spacing:.2em;color:var(--clay);text-transform:uppercase}
 .gw-next h2{margin:8px 0 6px;font-size:21px;line-height:1.4}
@@ -457,7 +461,7 @@ LENS_CSS = '''
 .col-body .ask{font-weight:800;font-size:17.5px;margin-top:22px}
 .lens-list{list-style:none;margin:0;padding:0}
 .lens-list li{padding:14px 0;border-bottom:1px solid var(--line)}
-.lens-list a{font-size:17px;font-weight:800;text-decoration:none}
+.lens-list a{display:block;font-size:17px;font-weight:800;text-decoration:none}
 .lens-list small{display:block;color:var(--muted);font-size:12.5px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lens-hero,:root:not([data-theme="light"]) .quiz{background:#0F110E;border:1px solid #353A32}}
 '''
@@ -537,12 +541,24 @@ def site_entrance(arch, slug):
 
 
 
+COL_TAG = {'world': 'WORLD GRID', 'deep': 'DEEP GRID', 'off': 'OFF GRID'}
+
+
+def ctag(kind, no=''):
+    """Coloured corner tag for column lists (owner's request, 6 Oct 2026): WORLD GRID orange, DEEP GRID burgundy, OFF GRID teal."""
+    return f'<span class="ctag ctag-{kind}">{COL_TAG[kind]}</span>' + (f'<span class="ctag-no">{e(no)}</span>' if no else '')
+
+
+def lens_kind(L):
+    return 'off' if L.get('series') == 'offgrid' else 'world'
+
+
 def more_columns(all_lens, slug, n=5):
     """End of a WORLD GRID page: other columns first (owner's request, 3 Oct 2026); today's news only as a small link."""
     others = [x for x in all_lens if x[1] != slug][:n]
     if not others:
         return ''
-    li = ''.join(f'<li><a href="/lens/{e(s2)}/" data-track="click/lens/{e(slug)}/more/{e(s2)}"><b>{e(L2["title"])}</b>'
+    li = ''.join(f'<li><a href="/lens/{e(s2)}/" data-track="click/lens/{e(slug)}/more/{e(s2)}">{ctag(lens_kind(L2))}<b>{e(L2["title"])}</b>'
                  f'<small>{e(L2.get("gpLabel", "コラム"))} · {e(jst_text(p2))}</small></a></li>' for p2, s2, L2 in others)
     return ('<section class="more-cols"><p class="mc-k">WORLD GRID</p><h2>ほかのコラムを読む</h2>'
             f'<ul>{li}</ul>'
@@ -682,7 +698,7 @@ def build_lenses(arch, flag_map):
         if os.path.exists(old):
             os.remove(old)
         return off_rows + [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in all_rows]
-    items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
+    items = ''.join(f'<li>{ctag("world")}<a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in lenses)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD GRID</nav><h1>WORLD GRID</h1>'
             '<p class="lead">毎朝7時のコラムと、レース週末の金・土・日に出すグランプリ特別号。世界の媒体の記事を読み比べて、日本語ではあまり語られない話と、見出しだけでは分からないことを届けます。</p>'
             f'<ul class="lens-list">{items}</ul>')
@@ -705,7 +721,7 @@ def build_offgrid(offs):
     """offgrid/index.html: the list of OFF GRID 余談 columns (lens JSON with "series": "offgrid").
     The corner exists before its first column, so the page shows a short "coming soon" note when empty."""
     if offs:
-        items = ''.join(f'<li><a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in offs)
+        items = ''.join(f'<li>{ctag("off")}<a href="/lens/{e(s)}/">{e(L["title"])}</a><small>{e(L["gpLabel"])} · {e(jst_text(p))}</small></li>' for p, s, L, u in offs)
         lst = f'<ul class="lens-list">{items}</ul>'
     else:
         lst = ('<p class="og-empty">最初のコラムは、まもなくここに載ります。<br>それまでは <a href="/lens/">WORLD GRID</a> と '
@@ -727,6 +743,10 @@ DEEP_COPY = 'ニュースの、その奥へ。'
 DEEPS = []  # published issues, newest first (filled by load_deeps)
 
 DEEP_CSS = '''
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
 .more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
 .md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
 .more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
@@ -946,8 +966,8 @@ def build_deeps(arch, flag_map):
         oth = [x for x in DEEPS if x is not D][:5]
         if oth:
             B.append('<section class="more-deep"><p class="md-k">DEEP GRID</p><h2>ほかの号を読む</h2><ul>'
-                     + ''.join(f'<li><a href="/deep/{e(x["slug"])}/" data-track="click/deep/{e(slug)}/more/{e(x["slug"])}"><b>{e(x["title"])}</b>'
-                               f'<small>DEEP GRID {deep_no(x)} · {e(jst_text(datetime.fromisoformat(x["published"])))}</small></a></li>' for x in oth)
+                     + ''.join(f'<li><a href="/deep/{e(x["slug"])}/" data-track="click/deep/{e(slug)}/more/{e(x["slug"])}">{ctag("deep", deep_no(x))}<b>{e(x["title"])}</b>'
+                               f'<small>{e(jst_text(datetime.fromisoformat(x["published"])))}</small></a></li>' for x in oth)
                      + f'</ul><a class="md-btn" href="/deep/" data-track="click/deep/{e(slug)}/more-all">すべての号を見る →</a>'
                      + f'<a class="md-sub" href="/" data-track="click/deep/{e(slug)}/more-top">今日のF1ニュースを見る</a></section>')
         if D.get('glossary'):
@@ -1004,7 +1024,7 @@ def build_deeps(arch, flag_map):
         if os.path.exists(old):
             os.remove(old)
         return []
-    items = ''.join(f'<li><a href="/deep/{e(D["slug"])}/"><small>DEEP GRID {deep_no(D)}</small><b>{e(D["title"])}</b></a>'
+    items = ''.join(f'<li><a href="/deep/{e(D["slug"])}/">{ctag("deep", deep_no(D))}<b>{e(D["title"])}</b></a>'
                     f'<p>{e(D["quick"][0] if D.get("quick") else D["dek"])}</p></li>' for D in DEEPS)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › DEEP GRID</nav><div class="dg">'
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID</b><span>{DEEP_COPY}</span></div></div>'
