@@ -613,7 +613,7 @@ def build_all_columns():
             + ctag('deep') + '<span>ニュースの、その奥へ。 <a href="/deep/">一覧</a></span><br>'
             + ctag('off') + '<span>本筋の外の、F1こぼれ話。 <a href="/offgrid/">一覧</a></span></p>'
             f'<ul class="col-list">{items}</ul>')
-    write('columns/index.html', page('すべてのコラム｜F1 Grid Walk（F1グリッドウォーク）', 'WORLD GRID・DEEP GRID・OFF GRID のコラムを新しい順にすべて。',
+    write('columns/index.html', page('F1コラム一覧｜海外報道の読み比べ・深掘り解説・こぼれ話｜F1グリッドウォーク', 'F1グリッドウォークのコラムを新しい順にすべて。海外報道の読み比べ（WORLD GRID）、ニュースの深掘り解説（DEEP GRID）、こぼれ話（OFF GRID）。',
                                      SITE + '/columns/', body, f'<style>{LENS_CSS}{ALLCOL_CSS}</style>\n', og_type='website'))
     return [(SITE + '/columns/', ALL_COLS[0]['dt'].isoformat(timespec='seconds'), 'daily', '0.8')]
 
@@ -755,7 +755,7 @@ def build_lenses(arch, flag_map):
     body = ('<nav class="crumbs"><a href="/">トップ</a> › WORLD GRID</nav><h1>WORLD GRID</h1>'
             '<p class="lead">毎朝7時のコラムと、レース週末の金・土・日に出すグランプリ特別号。世界の媒体の記事を読み比べて、日本語ではあまり語られない話と、見出しだけでは分からないことを届けます。</p>'
             f'<ul class="lens-list">{items}</ul>')
-    write('lens/index.html', page('WORLD GRID｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1報道を読み比べるコラム。毎朝のコラムと、レース週末のグランプリ特別号。',
+    write('lens/index.html', page('海外F1報道を読み比べるコラム WORLD GRID｜F1グリッドウォーク', 'イタリア、ドイツ、オランダ、スペイン……世界のF1報道を日本語で読み比べるコラム。日本語ではあまり語られない話と、見出しだけでは分からないことを、毎朝のコラムとグランプリ特別号で。',
                                   SITE + '/lens/', body, f'<style>{LENS_CSS}</style>\n', og_type='website'))
     return [(SITE + '/lens/', lenses[0][0].isoformat(timespec='seconds') if lenses else None, 'weekly', '0.8')] + off_rows + \
            [(u, p.isoformat(timespec='seconds'), None, '0.9') for p, s, L, u in all_rows]
@@ -784,7 +784,7 @@ def build_offgrid(offs):
             f'<p class="og-copy">{OFFGRID_COPY}</p>'
             '<p class="lead">ニュースの本筋からは少し外れるけれど、知るとF1がもっと面白くなる話。サーキットの小さな出来事や、記事の片すみにあった一言を拾います。</p>'
             + lst)
-    write('offgrid/index.html', page('OFF GRID｜F1 Grid Walk（F1グリッドウォーク）', 'F1ニュースの本筋の外にある、こぼれ話のコラム。',
+    write('offgrid/index.html', page('F1のこぼれ話コラム OFF GRID｜F1グリッドウォーク', 'グリッドの塗り直し、ドライバーの雨講座、ほうきにまたがったマーシャル……F1ニュースの本筋の外にある、知ると面白いこぼれ話のコラム。',
                                      SITE + '/offgrid/', body, f'<style>{LENS_CSS}{OFFGRID_CSS}</style>\n', og_type='website'))
     return [(SITE + '/offgrid/', offs[0][0].isoformat(timespec='seconds') if offs else None, 'weekly', '0.7')]
 
@@ -1146,7 +1146,7 @@ def build_deeps(arch, flag_map):
         # the issue's own share image when deep/<slug>/og.png exists (1200x630, placed by the column desk); else the site image
         ogp = os.path.join(ROOT, 'deep', slug, 'og.png')
         ogi = f'{SITE}/deep/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
-        write(f'deep/{slug}/index.html', page(f'{D["title"]}｜DEEP GRID｜F1グリッドウォーク', D['dek'], url, '\n'.join(B), head, og_image=ogi, og_size=(1200, 630)))
+        write(f'deep/{slug}/index.html', page(f'{D["title"]}｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク', D['dek'], url, '\n'.join(B), head, og_image=ogi, og_size=(1200, 630)))
         rows.append((url, upd, None, '0.9'))
 
     # top page slot (inside <!--pre:deep--> in index.html)
@@ -1174,8 +1174,8 @@ def build_deeps(arch, flag_map):
             'まず「先に結論」で要点をつかみ、その先は奥へ行くほど深くなる、F1 Grid Walkの深掘り記事です。</p>'
             + rules_entry('deep-index')
             + f'<ul class="dg-list">{items}</ul></div>')
-    write('deep/index.html', page('DEEP GRID｜ニュースの、その奥へ。｜F1グリッドウォーク',
-                                  'F1のニュースの「なぜ」を深く読む、F1 Grid Walkの深掘り記事。パワーユニット、空力、タイヤ、規則、データ、歴史まで。',
+    write('deep/index.html', page('F1深掘り解説 DEEP GRID｜ニュースの「なぜ」を読む｜F1グリッドウォーク',
+                                  'グリッド降格はなぜ起きる？ 雨のタイヤはどう違う？ F1ニュースの「なぜ」を、先に結論、そのあと表と数字で深く読む解説記事。パワーユニット、空力、タイヤ、規則まで。',
                                   SITE + '/deep/', body, MONO_FONT + f'<style>{DEEP_CSS}{RULES_ENTRY_CSS}</style>\n', og_type='website'))
     return [(SITE + '/deep/', DEEPS[0].get('updated') or DEEPS[0]['published'], 'weekly', '0.8')] + rows
 
@@ -1498,7 +1498,8 @@ def build_rules():
     if PEOPLE:
         head += ld({'@context': 'https://schema.org', '@graph': [{'@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
                     'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': f'{url}#person-{p["id"]}'} for p in PEOPLE]})
-    write('deep/rules/index.html', page(f'{R["title"]}｜F1の用語とルール辞典｜F1グリッドウォーク', R['dek'], url, body, head, og_type='website'))
+    write('deep/rules/index.html', page('F1用語・ルール辞典 2026｜意味をやさしく解説｜F1グリッドウォーク',
+                                         f'グリッド降格、オーバーテイクモード、セーフティカー、タイヤの種類……F1の用語とルールの意味を、2026年の規則と今季の実例でやさしく解説。{len(R["terms"])}語と人物を、言葉を入れて検索できます。', url, body, head, og_type='website'))
     return [(url, R['checked'] + 'T09:00:00+09:00', 'weekly', '0.8')]
 
 
