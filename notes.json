@@ -1,6 +1,23 @@
 {
- "updatedAt": "2026-10-07T00:15:00+09:00",
+ "updatedAt": "2026-10-07T12:30:00+09:00",
  "notes": [
+  {
+   "id": "note-formula1report-aston-honda-singapore",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "チーム",
+   "author": "Yoshito",
+   "title": "アストンマーティン×ホンダ、セパンで得た知見をシンガポールへ。高温多湿と難しいエネルギー制御に挑む【シンガポールGP】",
+   "summary": "アストンマーティンとホンダが、セパンで得た知見をシンガポールGPへ生かそうとしている様子を整理した記事。スプリント形式のため初回の走行からのデータ収集が重要で、高温多湿の環境や難しいエネルギー制御が課題になるという。壁が近い市街地コースでのドライバーの信頼感づくりも焦点とされる。",
+   "url": "https://note.com/formula1report/n/naa36d71dfd14",
+   "published": "2026-10-06T23:06:00+09:00",
+   "teams": [
+    "astonmartin"
+   ],
+   "circuit": "singapore"
+  },
   {
    "id": "note-formula1report-f2f3-2027-calendar",
    "platform": "note",
@@ -13,6 +30,20 @@
    "summary": "FIAが発表した2027年のF2・F3カレンダーを整理した記事。F2は14戦で、イスタンブールとメキシコシティが新たに加わり、モントリオールが復帰する。F3は10戦で、モントリオール開催により初めて北米に進出し、両カテゴリーとも4大陸を回る。",
    "url": "https://note.com/formula1report/n/na5794436c33a",
    "published": "2026-10-06T03:32:00+09:00"
+  },
+  {
+   "id": "blog-f1laplab-sepang-racepace",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Takumi",
+   "title": "2026年マレーシアGP レースペース分析",
+   "summary": "タイヤの経過周回や劣化、周回遅れ処理の影響を除いてマレーシアGPのレースペースを比較した分析。フェルスタッペンが最速で、アントネッリが約0.2秒差、ルクレールとノリスが約0.4秒差、ラッセルが約0.5秒差と見積もる。中団ではアロンソが約1.5秒差で先頭という見立てだ。",
+   "url": "https://f1-lap-time.com/?page_id=17581",
+   "published": "2026-10-05T21:00:00+09:00",
+   "circuit": "sepang"
   },
   {
    "id": "note-formula1report-hrc-president-change",
@@ -827,39 +858,6 @@
     "redbull",
     "haas"
    ],
-   "circuit": "baku"
-  },
-  {
-   "id": "substack-somersf1-mclaren-update-package",
-   "platform": "substack",
-   "site": "Somers F1",
-   "lang": "en",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Matt Somerfield",
-   "title": "マクラーレン、バクーに大型アップデートを投入",
-   "orig": "McLaren introduce a substantial update package at the Azerbaijan Grand Prix",
-   "summary": "サイドポッド入口をアウディに似た形状へ刷新し、肩の部分も二重アンダーカットのような形にしてタイヤ後流を管理。エンジンカバーやディフューザーも改良し、冷却と空力の両立を図ったと解説している。",
-   "url": "https://somersf1.substack.com/p/mclaren-introduce-a-substantial-update",
-   "published": "2026-09-24T08:03:00+00:00",
-   "teams": [
-    "mclaren"
-   ],
-   "circuit": "baku"
-  },
-  {
-   "id": "substack-somerfield-baku-tech",
-   "platform": "substack",
-   "site": "Somers F1",
-   "lang": "en",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Matt Somerfield",
-   "title": "アゼルバイジャンGPの技術メモ。タイヤ、エネルギー規定、アクティブエアロ区間を整理",
-   "orig": "2026 Azerbaijan Grand Prix tech journal & document cache",
-   "summary": "テクニカルライターによるバクーの技術資料まとめ。C3〜C5のタイヤと指定空気圧、決勝で8.5MJ（オーバーテイクモード時9MJ）の回生上限、直線モードが使える2区間、SC確率60%などのデータを一覧にしている。",
-   "url": "https://somersf1.substack.com/p/2026-azerbaijan-grand-prix-tech-journal",
-   "published": "2026-09-23T12:00:00+01:00",
    "circuit": "baku"
   }
  ]
