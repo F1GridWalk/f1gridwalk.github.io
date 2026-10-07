@@ -43,7 +43,7 @@
    ],
    "role": "代表取締役社長",
    "org": "HRC（株式会社ホンダ・レーシング）",
-   "short": "ホンダのレース活動を担うHRCの社長。",
+   "short": "ホンダのレース活動を担うHRCの社長（2022年から）。2026年10月5日、2027年1月1日付での退任が発表された。後任は副社長の安田啓一。",
    "avoid": [],
    "sources": [
     {
@@ -55,12 +55,22 @@
      "name": "Honda 公式",
      "title": "ニュースリリース資料（2023年9月21日）",
      "url": "https://global.honda/content/dam/site/global-jp/news/cq_img/2023-new/09/4230921b_link.pdf"
+    },
+    {
+     "name": "Honda Racing 公式",
+     "title": "株式会社ホンダ・レーシング（HRC）役員人事に関するお知らせ（2026年10月5日）",
+     "url": "https://honda.racing/ja/features/executive-changes-2027"
+    },
+    {
+     "name": "autosport web",
+     "title": "ホンダ／HRC、2027年1月1日付で安田啓一氏が代表取締役社長に就任。渡辺康治氏は退任（2026年10月5日）",
+     "url": "https://www.as-web.jp/f1/1359380"
     }
    ],
    "appears": [
     "/lens/honda-aduo2-20261001/"
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-07"
   },
   {
    "id": "yoichiro-fukao",
@@ -2926,6 +2936,85 @@
    ],
    "appears": [],
    "checked": "2026-10-02"
+  },
+  {
+   "id": "keiichi-yasuda",
+   "name": "安田啓一",
+   "kana": "やすだ けいいち",
+   "en": "Keiichi Yasuda",
+   "aliases": [
+    "安田副社長",
+    "安田"
+   ],
+   "role": "代表取締役副社長（2027年1月1日付で代表取締役社長）",
+   "org": "HRC（株式会社ホンダ・レーシング）",
+   "short": "HRCの副社長。2026年10月5日、2027年1月1日付で渡辺康治の後任として社長に就くと発表された。1990年にホンダに入り、人事部門や海外の子会社を経て、2026年4月にHRCの副社長になった。",
+   "avoid": [
+    "「安田裕一」など、啓一以外の名前で書く（正しくは安田啓一）",
+    "2026年中に「HRC社長」と書く（就任は2027年1月1日付）"
+   ],
+   "words": [
+    "HRC",
+    "ホンダ",
+    "次期社長",
+    "渡辺康治の後任"
+   ],
+   "sources": [
+    {
+     "name": "Honda Racing 公式",
+     "title": "株式会社ホンダ・レーシング（HRC）役員人事に関するお知らせ（2026年10月5日）",
+     "url": "https://honda.racing/ja/features/executive-changes-2027"
+    },
+    {
+     "name": "autosport web",
+     "title": "ホンダ／HRC、2027年1月1日付で安田啓一氏が代表取締役社長に就任。渡辺康治氏は退任（2026年10月5日）",
+     "url": "https://www.as-web.jp/f1/1359380"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-07"
+  },
+  {
+   "id": "bradley-lord",
+   "name": "ブラッドリー・ロード",
+   "kana": "",
+   "en": "Bradley Lord",
+   "aliases": [
+    "ロード副代表",
+    "ロード",
+    "Lord"
+   ],
+   "role": "チーム副代表",
+   "org": "メルセデス",
+   "short": "メルセデスのチーム副代表。2026年3月20日に就任し、ウォルフ代表を直接支える。以前はコミュニケーション部門の責任者で、チームの公式代表も務めた。",
+   "avoid": [
+    "キャデラックの前代表グレアム・ロードン（Lowdon）と混同する"
+   ],
+   "words": [
+    "メルセデス",
+    "副代表",
+    "ウォルフの右腕",
+    "広報責任者"
+   ],
+   "sources": [
+    {
+     "name": "The Race",
+     "title": "Mercedes appoints new F1 deputy team boss（2026年3月20日）",
+     "url": "https://www.the-race.com/formula-1/mercedes-f1-2026-deputy-team-principal-bradley-lord/"
+    },
+    {
+     "name": "autosport web",
+     "title": "メルセデスが新たにチーム副代表を任命。長年のコミュニケーション部門責任者がウォルフ代表を支えるポジションに（2026年3月21日）",
+     "url": "https://www.as-web.jp/f1/1300269"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "George Russell facing 'double whammy' F1 penalty after 'gut-wrenching blow'（2026年10月6日、Mercedes Deputy Team Principal Bradley Lord）",
+     "url": "https://racingnews365.com/george-russell-facing-double-whammy-f1-penalty-after-gut-wrenching-blow"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-07"
   }
  ]
 }
