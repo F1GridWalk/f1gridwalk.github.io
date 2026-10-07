@@ -1,6 +1,21 @@
 {
- "updatedAt": "2026-10-07T12:30:00+09:00",
+ "updatedAt": "2026-10-07T18:30:00+09:00",
  "notes": [
+  {
+   "id": "note-sentaroh-mercedes-w17-floor",
+   "platform": "note",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "仙太郎",
+   "title": "メルセデスW17を惑わせた新型フロアは本当に失敗だったのか。バーレーンGPの不可解な低迷を読み解く",
+   "summary": "メルセデスの新型フロアは単純な失敗ではなく、問題の切り分けができないことこそ課題だという見立て。高速コーナーで良く低速で苦しんだ点や、スロットルで向きを変える挙動、セパンの粗い路面によるタイヤ温度の上昇を挙げる。データの豊富なシンガポールが本当の試金石になると論じている。",
+   "url": "https://note.com/sentaroh_f1/n/n24cfd9ccb35d",
+   "published": "2026-10-07T12:00:00+09:00",
+   "teams": [
+    "mercedes"
+   ]
+  },
   {
    "id": "note-formula1report-aston-honda-singapore",
    "platform": "note",
@@ -17,6 +32,21 @@
     "astonmartin"
    ],
    "circuit": "singapore"
+  },
+  {
+   "id": "note-sentaroh-redbull-sepang-return",
+   "platform": "note",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "仙太郎",
+   "title": "雨が隠した「本物の復活」――セパンで見えたレッドブルの現在地：バーレーンGP振り返り",
+   "summary": "セパンのレッドブルの強さは突然ではなく、雨や93分の中断に隠れていた復調が表に出たものだという分析。中高速コーナーと直線の両面で改善が進み、フェラーリはコーナー、マクラーレンは高速域の優位を失ったと整理する。フェルスタッペン自身は理由の理解が先だと慎重だった点にも触れている。",
+   "url": "https://note.com/sentaroh_f1/n/n162f6e910439",
+   "published": "2026-10-06T12:00:00+09:00",
+   "teams": [
+    "redbull"
+   ]
   },
   {
    "id": "note-formula1report-f2f3-2027-calendar",
@@ -490,21 +520,23 @@
    "circuit": "baku"
   },
   {
-   "id": "note-sentaroh-russell-win-analysis",
+   "id": "substack-oliverwilber-baku-recap",
+   "platform": "substack",
+   "site": "Wilber's Weekly Wire",
+   "lang": "en",
    "paid": false,
-   "cat": "分析",
-   "author": "仙太郎",
-   "title": "静寂の中の激走 ― バクーが証明した“新生ラッセル”の強さ",
-   "summary": "アゼルバイジャンGPで0.196秒差というきわどい勝利を収めたラッセルの強さを、精度の高さの証明として読み解く分析。序盤に築いた11秒差がセーフティカーで消え、ソフトタイヤに換えたフェルスタッペンが終盤に本物の脅威となる中、リスタート時のエネルギー配分やタイヤ温度、ミラー越しの駆け引きまで40周にわたる攻防を丁寧に追っている。",
-   "url": "https://note.com/sentaroh_f1/n/nab5735017229",
-   "published": "2026-09-27T17:08:00+09:00",
+   "cat": "決勝",
+   "author": "Oliver Wilber",
+   "title": "ラッセルはバクーで本当に「余裕の勝利」だったのか",
+   "orig": "F1 2026 Azerbaijan GP Recap and How George Russell \"Cruised\" His Way to a Win",
+   "summary": "高校生ライターのオリバー・ウィルバーが、ラッセルの優勝要因をクリーンな走り、平均より2.3秒速い最速ラップを含む安定したペース、ポールポジションによる展開の主導権、そしてフェルスタッペンを最後まで抑え切った防御力の4点に整理して分析する。見出しの「余裕の勝利」という表現は、実際には僅差の攻防だった結末と矛盾するとも指摘し、この安定した走りがアントネッリ相手のタイトル争いに生きるとの見立てを示している。",
+   "url": "https://oliverwilber.substack.com/p/f1-2026-azerbaijan-gp-recap-and-how",
+   "published": "2026-09-27T12:00:00-07:00",
    "teams": [
     "mercedes",
     "redbull"
    ],
-   "circuit": "baku",
-   "platform": "note",
-   "lang": "ja"
+   "circuit": "baku"
   },
   {
    "id": "substack-somersf1-audi-baku-update",
@@ -525,6 +557,23 @@
    "circuit": "baku"
   },
   {
+   "id": "note-sentaroh-russell-win-analysis",
+   "paid": false,
+   "cat": "分析",
+   "author": "仙太郎",
+   "title": "静寂の中の激走 ― バクーが証明した“新生ラッセル”の強さ",
+   "summary": "アゼルバイジャンGPで0.196秒差というきわどい勝利を収めたラッセルの強さを、精度の高さの証明として読み解く分析。序盤に築いた11秒差がセーフティカーで消え、ソフトタイヤに換えたフェルスタッペンが終盤に本物の脅威となる中、リスタート時のエネルギー配分やタイヤ温度、ミラー越しの駆け引きまで40周にわたる攻防を丁寧に追っている。",
+   "url": "https://note.com/sentaroh_f1/n/nab5735017229",
+   "published": "2026-09-27T17:08:00+09:00",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "circuit": "baku",
+   "platform": "note",
+   "lang": "ja"
+  },
+  {
    "id": "blog-f1laptime-baku-pace",
    "platform": "blog",
    "site": "F1ラップタイム研究室",
@@ -536,25 +585,6 @@
    "summary": "燃料の重さやタイヤの劣化、トラフィックを補正して、決勝の本当のペースを比べる分析。ラッセルとフェルスタッペンのペースは実質的に互角で、41〜50周目の平均差はわずか0.03秒だったとする。アントネッリとハジャーが約0.4秒差、ピアストリ0.6秒、ルクレール0.7秒と続く。C5タイヤはC4より1周約0.3秒速かったという見立ても示している。",
    "url": "https://f1-lap-time.com/?page_id=17508",
    "published": "2026-09-27T15:58:00+09:00",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "circuit": "baku"
-  },
-  {
-   "id": "substack-oliverwilber-baku-recap",
-   "platform": "substack",
-   "site": "Wilber's Weekly Wire",
-   "lang": "en",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Oliver Wilber",
-   "title": "ラッセルはバクーで本当に「余裕の勝利」だったのか",
-   "orig": "F1 2026 Azerbaijan GP Recap and How George Russell \"Cruised\" His Way to a Win",
-   "summary": "高校生ライターのオリバー・ウィルバーが、ラッセルの優勝要因をクリーンな走り、平均より2.3秒速い最速ラップを含む安定したペース、ポールポジションによる展開の主導権、そしてフェルスタッペンを最後まで抑え切った防御力の4点に整理して分析する。見出しの「余裕の勝利」という表現は、実際には僅差の攻防だった結末と矛盾するとも指摘し、この安定した走りがアントネッリ相手のタイトル争いに生きるとの見立てを示している。",
-   "url": "https://oliverwilber.substack.com/p/f1-2026-azerbaijan-gp-recap-and-how",
-   "published": "2026-09-27T12:00:00-07:00",
    "teams": [
     "mercedes",
     "redbull"
@@ -595,6 +625,25 @@
    "circuit": "baku"
   },
   {
+   "id": "substack-harrybenjamin-baku-review",
+   "platform": "substack",
+   "site": "Chequered Flag",
+   "lang": "en",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Harry Benjamin",
+   "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
+   "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
+   "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
+   "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
+   "published": "2026-09-26T19:10:00+01:00",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "circuit": "baku"
+  },
+  {
    "id": "note-f1report-baku-race-analysis",
    "paid": false,
    "cat": "分析",
@@ -611,6 +660,25 @@
    "platform": "note",
    "lang": "ja",
    "site": "Formula1 Report"
+  },
+  {
+   "id": "substack-f1iq-russell-points-clawback",
+   "platform": "substack",
+   "site": "F1 IQ",
+   "lang": "en",
+   "paid": false,
+   "cat": "分析",
+   "author": "Flip Jacobsen",
+   "title": "ラッセルが選手権で詰め寄れたのはわずかな差、アントネッリの被害軽減が光る",
+   "orig": "Russell Claws back a few points",
+   "summary": "F1 IQの筆者フリップ・ヤコブセンが、ポールから完勝したラッセルの選手権挽回幅が限定的だった理由を分析する。16番手スタートから5位に戻したアントネッリが「必要な時にきっちり抜いた」ことで最大25点差ではなく15点差の縮小にとどまったと指摘。さらにアルピーヌのコラピントが再スタートの1コーナーでチームメイトとノリスを巻き込み自滅した一件にも触れ、この単独ミスが中団のポイント争いを大きく揺さぶったと論じている。",
+   "url": "https://f1iq.substack.com/p/russell-claws-back-a-few-points",
+   "published": "2026-09-26T12:00:00-03:00",
+   "teams": [
+    "mercedes",
+    "alpine"
+   ],
+   "circuit": "baku"
   },
   {
    "id": "note-f1report-baku-race",
@@ -647,25 +715,6 @@
     "mercedes",
     "redbull"
    ]
-  },
-  {
-   "id": "substack-harrybenjamin-baku-review",
-   "platform": "substack",
-   "site": "Chequered Flag",
-   "lang": "en",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Harry Benjamin",
-   "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
-   "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
-   "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
-   "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
-   "published": "2026-09-26T19:10:00+01:00",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "circuit": "baku"
   },
   {
    "id": "note-yukazali-baku-qualifying",
@@ -716,25 +765,6 @@
    "circuit": "baku",
    "platform": "note",
    "lang": "ja"
-  },
-  {
-   "id": "substack-f1iq-russell-points-clawback",
-   "platform": "substack",
-   "site": "F1 IQ",
-   "lang": "en",
-   "paid": false,
-   "cat": "分析",
-   "author": "Flip Jacobsen",
-   "title": "ラッセルが選手権で詰め寄れたのはわずかな差、アントネッリの被害軽減が光る",
-   "orig": "Russell Claws back a few points",
-   "summary": "F1 IQの筆者フリップ・ヤコブセンが、ポールから完勝したラッセルの選手権挽回幅が限定的だった理由を分析する。16番手スタートから5位に戻したアントネッリが「必要な時にきっちり抜いた」ことで最大25点差ではなく15点差の縮小にとどまったと指摘。さらにアルピーヌのコラピントが再スタートの1コーナーでチームメイトとノリスを巻き込み自滅した一件にも触れ、この単独ミスが中団のポイント争いを大きく揺さぶったと論じている。",
-   "url": "https://f1iq.substack.com/p/russell-claws-back-a-few-points",
-   "published": "2026-09-26T12:00:00-03:00",
-   "teams": [
-    "mercedes",
-    "alpine"
-   ],
-   "circuit": "baku"
   },
   {
    "id": "blog-albonnote-baku-quali",
@@ -820,43 +850,6 @@
    "published": "2026-09-24T19:07:00+00:00",
    "teams": [
     "redbull"
-   ],
-   "circuit": "baku"
-  },
-  {
-   "id": "note-f1report-baku-upgrades",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Formula1 Report (Yoshito)",
-   "title": "【分析】各チームがバクー向け空力を再構築。複数チームが大型アップデートを持ち込む、特にアウディは最大14項目【アゼルバイジャンGP】",
-   "summary": "バクーに持ち込まれたアップデートの一覧と狙いの整理。マクラーレンはサイドポッドからリアウイングまで8項目、アウディは車体全体で14項目。長い直線と低速コーナーの組み合わせで効率が問われると解説。",
-   "url": "https://note.com/formula1report/n/n1ef7687ac07a",
-   "published": "2026-09-24T16:21:00+09:00",
-   "teams": [
-    "mclaren",
-    "audi"
-   ],
-   "circuit": "baku",
-   "platform": "note",
-   "lang": "ja",
-   "site": "Formula1 Report"
-  },
-  {
-   "id": "substack-gpexplained-week39-baku",
-   "platform": "substack",
-   "site": "GP Explained",
-   "lang": "en",
-   "paid": false,
-   "cat": "分析",
-   "author": "GP Explained",
-   "title": "F1週刊ニュース第39週：バクー、ドライバー移籍とレース距離短縮",
-   "orig": "Week 39 | Baku, Driver Moves and Shorter Races",
-   "summary": "F1ニュースレター「GP Explained」の週刊まとめ。ハジャーが負傷による3戦欠場を経てもレッドブル残留が決まったこと、オコンは今季限りでハースを去るとみられフェラーリ系列のカマラが有力な後任候補とされていること、さらに新パワーユニット規定に伴う燃料搭載量の制約を理由に2027年からレース距離を現行の305kmから約290kmへ短縮する方向で合意したことを伝えている。バクー週末の天候やタイヤ戦略、選手権順位の整理も加えている。",
-   "url": "https://gpexplained.substack.com/p/week-39-baku-driver-moves-and-shorter",
-   "published": "2026-09-24T12:00:00+00:00",
-   "teams": [
-    "redbull",
-    "haas"
    ],
    "circuit": "baku"
   }

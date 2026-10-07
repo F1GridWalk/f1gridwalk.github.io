@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-07T12:30:00+09:00",
+ "updatedAt": "2026-10-07T18:30:00+09:00",
  "topics": {
   "sepang-wet-start-pu-trouble": {
    "title": "セパンの決勝スタート、豪雨とPU不調で赤旗・手続き中断",
@@ -109,14 +109,6 @@
     ]
    }
   },
-  "russell-sepang-dnf-title": {
-   "title": "ラッセルが終盤リタイア、アントネッリとの差は84点に",
-   "summary": "セパンの決勝で3番手を走っていたラッセル（メルセデス）は、残り5周付近でPU故障の疑いによりリタイアし、今季3度目のDNFとなった。2位のアントネッリは320点に伸ばし、236点のラッセルとの差は84点に広がった。メルセデスのウォルフ代表は、DNFひとつで選手権は簡単にひっくり返るとして強い不満を示した。シーズンは残り7戦。"
-  },
-  "redbull-ford-first-win": {
-   "title": "レッドブル・フォード、自社製PUの1年目で初優勝",
-   "summary": "セパンでのフェルスタッペンの勝利は、2026年にデビューしたレッドブル・フォード・パワートレインズのPUにとって初の優勝となった。フェルスタッペンにとっては今季初、通算72勝目。スタートでメルセデス2台に先行されたが、インターミディエイトでの走りで首位を奪い返した。本人は自社製PUの1年目で勝てたことを印象的だと語り、チームの進歩をたたえた。"
-  },
   "ferrari-sepang-slicks-gamble": {
    "title": "フェラーリのスリック選択が外れ、ハミルトンは18番手から3位へ",
    "summary": "ウェットの路面でスリックタイヤを選んだフェラーリは、序盤に大きく順位を落とした。ハミルトンは3位、ルクレールは4位まで挽回し、フェラーリの5戦続いた表彰台なしは終わった。ハミルトンは判断を冗談めかして振り返り、ルクレールはペース不足への不満を口にした。"
@@ -156,9 +148,99 @@
   "russell-singapore-pu-penalty": {
    "title": "ラッセル、PU交換でシンガポールは大幅降格の見通し",
    "summary": "セパンでパワーユニットが壊れたラッセルは、交換すると年間4基の上限を超えるため、シンガポールGPで後方からのスタートが避けられない見通しだ。メルセデスは当初、新品部品を米国GPで投入する予定だった。副代表は機械的な故障と判断したが、原因はなお調査中で、追い抜きの難しいコースだけに影響が懸念されている。"
+  },
+  "alonso-dakar-lemans-rumour": {
+   "title": "アロンソ、ダカールやル・マン参戦の噂（未確認）",
+   "summary": "アロンソが今後数週間に「さらなるサプライズ」があると示唆したことを受け、2027年のダカール参戦やル・マン参戦をめぐる噂が出ている。スペイン紙の報道を引いた欧州メディアは、アストンマーティン名義のマシンとコ・ドライバーにマルク・コマの名を挙げた。いずれも正式発表はなく、未確認の話である。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-mercedes-old-new-parts-singapore",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "チーム",
+   "circuit": "singapore",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "mercedes-sepang-upgrade-failure",
+   "title": "メルセデス、シンガポールで新旧仕様を使い比べへ　アップグレードへの疑念で",
+   "orig": "Mercedes taking old parts to Singapore amid F1 upgrade doubts",
+   "summary": "ザ・レースは、メルセデスがシンガポールGPの週末に旧仕様と新アップグレードの空力パーツを比較走行させる方針だと伝えた。セパンでは0.3秒の向上を見込んだのに、実際は約0.5秒遅くなったという。ウォルフ代表は「結論を出すにはさらに証拠が必要」と述べた。フリー走行が1回だけのスプリント週末で、どこまで切り分けられるかが焦点になる。",
+   "url": "https://www.the-race.com/formula-1/mercedes-taking-old-parts-to-singapore-amid-f1-upgrade-doubts/",
+   "published": "2026-10-07T12:00:00+01:00"
+  },
+  {
+   "id": "it-formula1it-horner-severance",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ビジネス",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "horner-severance-figure",
+   "title": "ホーナー、レッドブル退任の際の支払額が判明　約3349万ポンドと伝える",
+   "orig": "Horner, svelata la cifra dell'addio alla Red Bull: ecco quanto ha incassato",
+   "summary": "フォーミュラ1イットは、英国の企業登記所に出された書類に基づき、ホーナー前代表がレッドブルから受け取った退任金を報じた。額は3349万4000ポンドで、解任前に働いた2025年分の報酬は444万1000ポンドだったという。今後の支払いを含めた総額は5000万ポンドを超えうるとされる。ホーナー氏は2025年7月に解任され、F1へ戻るなら出資者の立場を望むと語っている。",
+   "url": "https://www.formula1.it/news/33090/1/horner-svelata-la-cifra-dell-addio-alla-red-bull-ecco-quanto-ha-incassato-",
+   "published": "2026-10-07T10:00:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-audi-stake-independence",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ビジネス",
+   "teams": [
+    "audi"
+   ],
+   "topic": "audi-f1-independence-stake",
+   "title": "アウディCEO「F1プロジェクトは完全に独立」　外部の出資への関心は大きいと説明",
+   "orig": "\"Externes Interesse sehr groß\": Verkauft Audi Anteile am Formel-1-Team?",
+   "summary": "モータースポーツ・トータルは、アウディのデリナーCEOがF1チームの資金面について語った内容を報じた。同氏は計画がフォルクスワーゲングループやアウディ本体から完全に独立していると述べ、2030年より前の収支均衡を目標に掲げた。カタールの政府系ファンドが約3分の1を保有しており、売却の必要は今はないが外部の関心は大きいという。仮に株を売っても過半数はアウディが保つとした。",
+   "url": "https://www.motorsport-total.com/formel-1/news/externes-interesse-sehr-gross-verkauft-audi-anteile-am-formel-1-team-26100704",
+   "published": "2026-10-07T09:48:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-alonso-dakar-aston",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "うわさ",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-dakar-lemans-rumour",
+   "title": "アロンソが2027年ダカール参戦を計画か　アストンマーティン名義のマシンとスペイン紙が報道",
+   "orig": "Alonso plant nächsten Motorsport-Coup: Dakar-Comeback mit Aston Martin",
+   "summary": "モータースポーツ・トータルは、スペインのソイモトールとマルカの報道として、アロンソが2027年のダカールにアストンマーティンで出るという話を伝えた。プロドライブがダチア系のマシンを仕立てるとされ、コ・ドライバーはマルク・コマと報じられている。アロンソ本人は「今後数週間にさらなるサプライズがあるかもしれない」と述べたが、正式発表はまだない。",
+   "url": "https://www.motorsport-total.com/formel-1/news/alonso-plant-naechsten-motorsport-coup-dakar-comeback-mit-aston-martin-26100703",
+   "published": "2026-10-07T08:53:00+02:00"
+  },
+  {
+   "id": "ja-f1are-horner-redbull-pu-win",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-ford-first-win",
+   "title": "元代表ホーナー、レッドブル自社PUの初優勝を祝福　ファンの間で話題に",
+   "orig": "元レッドブル代表ホーナー、自らが推進したレッドブルの自社PU計画がF1初勝利を遂げたことを祝福",
+   "summary": "F1のアレは、元レッドブル代表のホーナー氏が、自らが進めた自社製パワーユニット計画の初優勝を祝ったという話題をまとめた。F1-Gate.comが伝えたインスタグラムの投稿で、「穴を掘るところから5年で優勝者に」という趣旨の言葉を添えたとされる。掲示板ではPU開発の速さを評価する声や、フェラーリ行きをめぐる憶測も出たが、いずれも未確認の話にとどまる。",
+   "url": "https://f1are.com/blog-entry-3962.html",
+   "published": "2026-10-07T12:00:00+09:00"
+  },
   {
    "id": "ja-f1are-leclerc-flight-drive",
    "kind": "fan",
@@ -305,24 +387,22 @@
    "published": "2026-10-06T16:30:00+02:00"
   },
   {
-   "id": "en-therace-weird-car-theory",
-   "kind": "tech",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "sepang",
+   "id": "it-formula1it-cadillac-singapore-bottas",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "circuit": "singapore",
    "teams": [
-    "mercedes",
-    "mclaren",
-    "redbull"
+    "cadillac"
    ],
-   "topic": "sepang-rough-asphalt-theory",
-   "title": "勢力図が崩れたセパン　荒れた路面で車が「妙な動き」をしたという説",
-   "orig": "The 'weird' car theory sparked by F1 pecking order surprises",
-   "summary": "ザ・レースは、セパンで勢力図が大きく変わった理由として路面の荒さを挙げる説を紹介した。マクラーレンのステラ代表は、荒れた路面で車が空力的に「妙な動き」をしたと語っている。極端な暑さも重なり、多くの車が最適な作動領域から外れたという見方だ。メルセデスとマクラーレンはここまで15戦で13勝を挙げていたが、今回はレッドブルが主導権を握った。",
-   "url": "https://www.the-race.com/formula-1/weird-car-theory-sparked-by-f1-pecking-order-surprises/",
-   "published": "2026-10-06T12:00:00+01:00"
+   "topic": "cadillac-singapore-hopes",
+   "title": "キャデラック、シンガポールに好機を見る　ただしボッタスは大型アップデート待ち",
+   "orig": "Cadillac, occasione Singapore ma Bottas parte ancora con un handicap",
+   "summary": "フォーミュラ1イットは、セパンで苦戦したキャデラックがシンガポールを好機とみていると伝えた。低速コーナーと強いブレーキングが多いコースは、マレーシアより車に合うとされる。ただし大型パッケージはペレスの車にのみ搭載済みで、ボッタスは米国ラウンドまで待つ。ブドコウスキー代表は適切なバランスと機械的なセットアップを探すと話し、ボッタスのバクーでの事故の調査も続いている。",
+   "url": "https://www.formula1.it/news/33083/1/cadillac-occasione-singapore-ma-bottas-parte-ancora-con-un-handicap",
+   "published": "2026-10-06T16:05:00+02:00"
   },
   {
    "id": "it-formula1it-russell-ultimo-singapore",
@@ -341,6 +421,44 @@
    "summary": "フォーミュラ1.itは、ラッセルがシンガポールGPで最後尾からスタートすると伝えた。セパンで壊れたパワーユニットを交換すると年間4基の上限を超えるためだ。メルセデスは当初、新品の部品を今月の米国GPで投入する予定だった。副代表は機械的な故障と判断したが、原因はなお調査中で、追い抜きの難しい市街地コースでの影響が懸念される。",
    "url": "https://www.formula1.it/news/33082/1/penalita-mercedes-disastro-russell-partira-ultimo-a-singapore",
    "published": "2026-10-06T13:10:00+02:00"
+  },
+  {
+   "id": "de-motorsport-total-antonelli-singapore-scenario",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "singapore",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-title-timeline",
+   "title": "アントネッリ、シンガポールで王座が決まる「ありえそうにないシナリオ」とは",
+   "orig": "Formel-1-Weltmeister in Singapur: Das unwahrscheinliche Szenario für Antonelli!",
+   "summary": "モータースポーツ・トータルは、アントネッリがシンガポールで王座を決める可能性を数字で検討した。現在はラッセルに84点、ハミルトンに106点の差をつけ、残りは6戦で獲得可能なのは150点という。カタールとアブダビが中東情勢で中止され代替開催もできない場合に限り、残戦が残ったまま決まりうるとし、1955年のファンジオの例を挙げた。通常ならオースティンが最速になる。",
+   "url": "https://www.motorsport-total.com/formel-1/news/formel-1-weltmeister-in-singapur-das-unwahrscheinliche-szenario-fuer-antonelli-26100608",
+   "published": "2026-10-06T13:09:00+02:00"
+  },
+  {
+   "id": "en-therace-weird-car-theory",
+   "kind": "tech",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "circuit": "sepang",
+   "teams": [
+    "mercedes",
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "sepang-rough-asphalt-theory",
+   "title": "勢力図が崩れたセパン　荒れた路面で車が「妙な動き」をしたという説",
+   "orig": "The 'weird' car theory sparked by F1 pecking order surprises",
+   "summary": "ザ・レースは、セパンで勢力図が大きく変わった理由として路面の荒さを挙げる説を紹介した。マクラーレンのステラ代表は、荒れた路面で車が空力的に「妙な動き」をしたと語っている。極端な暑さも重なり、多くの車が最適な作動領域から外れたという見方だ。メルセデスとマクラーレンはここまで15戦で13勝を挙げていたが、今回はレッドブルが主導権を握った。",
+   "url": "https://www.the-race.com/formula-1/weird-car-theory-sparked-by-f1-pecking-order-surprises/",
+   "published": "2026-10-06T12:00:00+01:00"
   },
   {
    "id": "en-therace-mercedes-upgrade-action",
@@ -1372,43 +1490,6 @@
    "published": "2026-10-04T14:30:00+02:00"
   },
   {
-   "id": "it-formula1it-pu-bug-fia",
-   "kind": "tech",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "テクニカル",
-   "circuit": "sepang",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "sepang-wet-start-pu-trouble",
-   "title": "セパンで車両を止めたPUのバグ、FIAが原因を説明、共通ソフトの不具合",
-   "summary": "フォーメーションラップで7台が動けなくなった原因は、共通ECUのソフトウェアの不具合だったとFIAが説明した。先頭のフェルスタッペンが大きく減速し、後続が通常想定されない低速まで落ちたことで回復不能の状態に入ったという。FIAは「FIAのソフトであり、より良くすべきだ」と認め、修正版を配布してグリッド上で導入させた。",
-   "orig": "Power Unit in tilt a Sepang: la FIA svela il bug che ha bloccato le monoposto",
-   "url": "https://www.formula1.it/news/33038/1/power-unit-in-tilt-a-sepang-la-fia-svela-il-bug-che-ha-bloccato-le-monoposto",
-   "published": "2026-10-04T14:25:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-points-after-sepang",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "russell-sepang-dnf-title",
-   "title": "アントネッリが首位独走、ラッセルのDNFで差は84点に",
-   "summary": "F1-Gate.comはセパン戦後のポイントランキングをまとめた。2位に入ったアントネッリは320点に伸ばし、リタイアで無得点に終わったラッセル（236点）との差は84点に広がった。3位は表彰台に上がったハミルトンの214点、4位はルクレールの191点で、ノリスとフェルスタッペンが188点で並ぶ。コンストラクターズはメルセデスが556点、フェラーリが405点となっている。",
-   "orig": "F1ポイントランキング：アントネッリ首位独走 ラッセル痛恨DNFで84点差",
-   "url": "https://f1-gate.com/result/227210.html",
-   "published": "2026-10-04T20:20:00+09:00"
-  },
-  {
    "id": "de-motorsport-total-sepang-krimi",
    "kind": "news",
    "lang": "de",
@@ -1434,42 +1515,6 @@
     "cause": "雨・技術的混乱・SCの重なり",
     "hook": "雨と技術混乱とSC"
    }
-  },
-  {
-   "id": "en-rn365-wolff-massively-annoyed",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "russell-sepang-dnf-title",
-   "title": "ウォルフ代表「とても腹立たしい」、ラッセルの今季3度目のDNFに危機感",
-   "summary": "メルセデスのウォルフ代表は、セパンの決勝をチーム代表として最悪の経験の一つと表現した。アントネッリは2位に入ったが、ラッセルは残り5周でPU故障の疑いによりリタイアし、今季3度目のDNFとなり、SCやVSCのタイミングも不運だったという。ウォルフ氏は、DNFが一つあれば選手権はすぐにひっくり返るとして「続けてはいけない」と語った。シーズンは残り7戦となっている。",
-   "orig": "Mercedes boss Toto Wolff 'massively annoyed': 'It can't continue'",
-   "url": "https://racingnews365.com/mercedes-boss-toto-wolff-massively-annoyed-it-cant-continue",
-   "published": "2026-10-04T13:05:00+02:00"
-  },
-  {
-   "id": "pt-grandepremio-verstappen-orgulho",
-   "kind": "news",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "Grande Prêmio",
-   "cat": "ドライバー",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-ford-first-win",
-   "title": "フェルスタッペン、今季初勝利に「チーム全員を誇りに思う」",
-   "summary": "ブラジルのGrande Prêmioは、セパンで今季初勝利を挙げたフェルスタッペンのコメントを伝えた。スタートでアントネッリとラッセルに抜かれたが、インターミディエイトでの第1スティント中に首位を奪い返し、アルボンのリタイアによる終盤のSC明けも抑えた。本人は今季の歩みと進歩を振り返り「全員を誇りに思う」と語り、自社製PUの1年目で挙げた初勝利も強調した。",
-   "orig": "Verstappen destaca “orgulho” da Red Bull e celebra “vitória incrível” em Sepang",
-   "url": "https://grandepremio.com/br/f1/verstappen-destaca-orgulho-da-red-bull-e-celebra-vitoria-incrivel-em-sepang/",
-   "published": "2026-10-04T07:57:00-03:00"
   },
   {
    "id": "es-motorpasion-sepang-gran-verguenza",
@@ -1525,24 +1570,6 @@
     "cause": "2度のSCとタイヤ選択",
     "hook": "今季初勝利とハミルトン反撃"
    }
-  },
-  {
-   "id": "en-rn365-redbull-ford-history",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "チーム",
-   "circuit": "sepang",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-ford-first-win",
-   "title": "レッドブル・フォードがデビューイヤーで初優勝、フェルスタッペン「信じられない」",
-   "summary": "フェルスタッペンのセパンでの勝利は、今季デビューしたレッドブル・フォード・パワートレインズにとって初の優勝となった。約100分の天候による遅れの後、スタートでメルセデス2台に先行されたが、インターミディエイトへのピットストップが決め手となり、アントネッリに2.307秒差でゴールした。通算72勝目。本人は「信じられない」と喜び、自社製PUの1年目で勝てたことをかなり印象的だと評した。",
-   "orig": "Max Verstappen and Red Bull-Ford make F1 history: 'Incredible!'",
-   "url": "https://racingnews365.com/max-verstappen-and-red-bull-ford-make-f1-history-incredible",
-   "published": "2026-10-04T12:39:00+02:00"
   },
   {
    "id": "fr-leblogauto-sepang-course-folle",
@@ -1623,45 +1650,6 @@
     "cause": "SC明けにメルセデス2台を攻略",
     "hook": "見事な走りと初勝利"
    }
-  },
-  {
-   "id": "en-racefans-sepang-software-issue",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RaceFans",
-   "cat": "決勝",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sepang-wet-start-pu-trouble",
-   "title": "セパンの決勝開始は約1時間半遅れ、豪雨に続き「ソフトウェアの問題」",
-   "summary": "セパンの決勝は豪雨で40分遅れた後、SC先導のスタート手順で複数の車が加速できなくなり、さらに遅れた。フェルスタッペンはターン13で加速しないと訴えた。メルセデスのブラッドリー・ロード副代表は、ソフトウェアの問題のようなものがあったかもしれないと説明。FIAは全チームにパラメーターの更新を配り、グリッドは元の順番のまま現地16時33分に仕切り直すことになった。",
-   "orig": "“Software issue” and downpour delay race start by an hour and a half",
-   "url": "https://www.racefans.net/2026/10/04/software-issue-and-downpour-delays-race-start-by-an-hour-and-a-half/",
-   "published": "2026-10-04T09:02:00+01:00"
-  },
-  {
-   "id": "en-crash-sepang-start-delay-deluge",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "Crash.net",
-   "cat": "決勝",
-   "circuit": "sepang",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "audi"
-   ],
-   "topic": "sepang-wet-start-pu-trouble",
-   "title": "セパンの豪雨でスタート遅延、隊列走行中の不具合で発進は見送りに",
-   "summary": "決勝開始の約40分前にセパンを激しい雨が襲い、スタートは遅れた。隊列走行は始まったものの、ハミルトンのフェラーリやボルトレートのアウディが止まり、赤旗で手続きが中止された。フェルスタッペンは出力低下の後に回復し、「新しいセルが次々に出てくるので大変だ」とスカイ・スポーツに語った。各チームにはPU不調に対処する新しいソフトが送られ、路面は急速に乾きつつあるという。",
-   "orig": "Start of the F1 Bahrain GP in Malaysia abandoned after several cars hit trouble following rain delays",
-   "url": "https://www.crash.net/f1/news/1106405/1/start-bahrain-gp-malaysia-delayed-after-heavy-deluge-hits",
-   "published": "2026-10-04T17:00:00+09:00"
   }
  ]
 }
