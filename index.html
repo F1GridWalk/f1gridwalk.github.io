@@ -85,6 +85,13 @@
 .jump{transition:transform .25s ease}
 .jump.jm-hide{transform:translateY(-100%)}}
 </style>
+<style>
+/* header share button: small ink pill "SHARE" (owner's choice C, 9 Oct 2026) */
+.top #share-btn{display:inline-flex !important;align-items:center;justify-content:center;gap:6px;min-height:28px !important;padding:0 12px 0 10px !important;border-radius:999px;background:var(--ink);color:var(--paper);border:0;font-family:inherit;font-size:10.5px !important;font-weight:800;letter-spacing:.16em;cursor:pointer}
+.top #share-btn:hover{opacity:.88}
+.top #share-btn .sh-ic{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.9}
+.top #share-btn .sh-ic circle{fill:currentColor;stroke:none}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1545,7 +1552,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
     <div class="top-right">
     <div class="share">
-      <button type="button" class="copybtn" id="share-btn" aria-haspopup="true" aria-expanded="false" aria-controls="share-menu"><span class="sh-long">このサイトを</span>共有 <span aria-hidden="true">▾</span></button>
+      <button type="button" class="copybtn" id="share-btn" aria-label="このサイトを共有" aria-haspopup="true" aria-expanded="false" aria-controls="share-menu"><svg class="sh-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8l7.4-4.3M8.3 13.2l7.4 4.3"/></svg><span aria-hidden="true">SHARE</span></button>
       <div class="share-menu" id="share-menu" role="menu" hidden>
         <a role="menuitem" data-share="x" target="_blank" rel="noopener"><b>X</b><span>ポストする</span></a>
         <a role="menuitem" data-share="line" target="_blank" rel="noopener"><b>LINE</b><span>友だちに送る</span></a>
