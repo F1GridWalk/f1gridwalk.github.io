@@ -51,6 +51,22 @@
 #hero{scroll-margin-top:100px !important}
 }
 </style>
+<style>
+/* first-visit line (owner's request, 8 Oct 2026) */
+.intro-wrap{padding-top:12px;padding-bottom:2px}
+.intro-line{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13.5px;color:var(--ink-2);font-weight:600}
+.intro-btn{font:inherit;font-size:12.5px;font-weight:700;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer}
+.intro-btn:hover{border-color:var(--ink)}
+/* phone only: fold the long info panels at the bottom (owner's request, 8 Oct 2026) */
+@media (max-width:520px){
+.intro-line{font-size:12.5px}
+.info .panel.fold>h2{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:0}
+.info .panel.fold>h2::after{content:"＋";font-size:16px;font-weight:700}
+.info .panel.fold.open>h2::after{content:"－"}
+.info .panel.fold.open>h2{margin-bottom:12px}
+.info .panel.fold:not(.open)>*:not(h2){display:none !important}
+}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1503,8 +1519,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="about-pop" id="about-pop" role="dialog" aria-label="F1 Grid Walk について" hidden>
       <button type="button" class="about-x" aria-label="閉じる">×</button>
       <h2>世界のグリッドを、ひと歩き。</h2>
-      <p>世界中の新しい記事を、毎日まとめて更新しています。予選や決勝が終わったあとは、結果と各国の反応を優先してお届けします。</p>
-      <p>レースのあとには、コラム「<a href="/lens/">WORLD GRID</a>」も。世界の記事を読み比べて、日本語ではほぼ見かけない話と、見出しだけでは分からない“謎”を1レース1本でお届けします。</p>
+      <p>世界中のF1の記事を、日本語の見出しと短い要約で毎日まとめています。どの記事も、原文へのリンク付きです。予選や決勝のあとは、結果と各国の反応を優先してお届けします。</p>
+      <p>コラムは3つ。<a href="/lens/">WORLD GRID</a>は世界の報道の読み比べ、<a href="/deep/">DEEP GRID</a>はニュースの「なぜ」の深掘り、<a href="/offgrid/">OFF GRID</a>は本筋の外のこぼれ話です。分からない言葉は<a href="/deep/rules/">ルールブック</a>で引けます。</p>
     </div>
     </div>
     <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
@@ -1537,6 +1553,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </nav>
 
 <main id="top">
+  <div class="wrap intro-wrap"><p class="intro-line"><span>世界のF1報道を、日本語で読み比べるサイトです。</span><button type="button" class="intro-btn" id="intro-btn">はじめての方へ</button></p></div>
   <div class="wrap dash">
     <aside class="dash-side" aria-label="レース情報">
       <div class="databar" role="group" aria-label="データを開く">
@@ -2837,6 +2854,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   var b = document.getElementById('filt-toggle'), rows = document.getElementById('filt-rows');
   if (!b || !rows) return;
   b.addEventListener('click', function(){ var open = !rows.classList.contains('open'); rows.classList.toggle('open', open); b.setAttribute('aria-expanded', String(open)); b.querySelector('.pm').textContent = open ? '−' : '+'; });
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('intro-btn'), brand=document.querySelector('a.brand');
+  if(b&&brand) b.addEventListener('click',function(e){ e.preventDefault(); e.stopPropagation(); brand.click(); try{ window.scrollTo({top:0,behavior:'smooth'}); }catch(_){} });
+  document.querySelectorAll('.info .panel').forEach(function(p){
+    p.classList.add('fold'); var h=p.querySelector('h2'); if(!h) return;
+    h.setAttribute('role','button'); h.tabIndex=0; h.setAttribute('aria-expanded','false');
+    var t=function(){ var o=p.classList.toggle('open'); h.setAttribute('aria-expanded', o?'true':'false'); };
+    h.addEventListener('click',function(){ if(window.matchMedia('(max-width:520px)').matches) t(); });
+    h.addEventListener('keydown',function(e){ if((e.key==='Enter'||e.key===' ')&&window.matchMedia('(max-width:520px)').matches){ e.preventDefault(); t(); } });
+  });
 })();
 </script>
 </body>
