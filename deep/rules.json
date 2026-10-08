@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-07",
+ "checked": "2026-10-09",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -48,12 +48,24 @@
     {
      "t": "コラピント、リタイアで10秒加算を消化できず、次戦で5グリッド降格",
      "u": "/news/es-infobae-colapinto-penalty/"
+    },
+    {
+     "t": "メルセデスはラッセルのPUを交換し、シンガポールGPの決勝は最後尾からのスタートが確定した。",
+     "u": "/news/pt-grandepremio-russell-engine-penalty/"
     }
    ],
    "see": [
     "pu-allocation",
     "time-penalty"
-   ]
+   ],
+   "src": [
+    {
+     "name": "RacingNews365",
+     "title": "George Russell to start Singapore GP from back of grid after fresh penalty（2026年10月6日、降格は決勝に適用しスプリントは対象外）",
+     "url": "https://racingnews365.com/george-russell-to-start-singapore-gp-from-back-of-grid-after-fresh-penalty"
+    }
+   ],
+   "checked": "2026-10-09"
   },
   {
    "id": "pu-allocation",
@@ -208,10 +220,14 @@
     {
      "t": "ラッセルは冷却ベストについて、予算上限の外の資金か、共通のベストの開発をFIAに求めた。着けないときは0.5kgのバラストが必要になる。",
      "u": "/news/es-motorsport-russell-cooling-vest/"
+    },
+    {
+     "t": "FIAは、シンガポールGPのスプリントと決勝にヒートハザードを宣言した。セパンに続いて2戦連続になる。",
+     "u": "/news/it-formula1it-singapore-heat-hazard/"
     }
    ],
    "see": [],
-   "checked": "2026-10-07",
+   "checked": "2026-10-09",
    "src": [
     {
      "name": "Crash.net",
@@ -227,6 +243,11 @@
      "name": "Formula1.com",
      "title": "EXPLAINED: What does the Austrian GP 'heat hazard' declaration mean",
      "url": "https://www.formula1.com/en/latest/article/explained-what-does-the-austrian-gp-heat-hazard-declaration-mean-and-how-are-the-drivers-affected.6gn3KIPTusK31IKGa5aoKQ"
+    },
+    {
+     "name": "AsiaOne",
+     "title": "2026 Singapore Grand Prix declared heat-hazard race as heat index forecast to exceed 31°C（2026年10月8日）",
+     "url": "https://www.asiaone.com/sports/2026-singapore-grand-prix-f1-fia-declares-heat-hazard"
     }
    ]
   },
@@ -3972,7 +3993,16 @@
     "上限を超えると、超えた割合で重さが変わる。財務規則では、2％未満の超過は軽い違反（マイナー・オーバースペンド）、2％以上は重大な違反（マテリアル・オーバースペンド）とされる。罰には、罰金、選手権ポイントの剥奪、空力テストの制限、翌年の上限の引き下げなどがある。"
    ],
    "rule": "財務規則 D4.1.2（上限額）、D5.1.1（対象外の費用）、D10.3（超過の区分）、D12.1.1（罰）",
-   "examples": [],
+   "examples": [
+    {
+     "t": "ウィリアムズのボウルズ代表は、下位のチームほど多く使えるようにする「追い上げ」の仕組みを提案した。11月のF1コミッションで話し合われる見通し。",
+     "u": "/news/en-therace-cost-cap-catchup/"
+    },
+    {
+     "t": "ボウルズは、予算上限が格差を広げたと批判した。2021年以降、上位4チームが選手権ポイントの83％を取っているという。",
+     "u": "/news/en-therace-vowles-cost-cap-two-tier/"
+    }
+   ],
    "see": [
     "atr",
     "pu-manufacturer",
@@ -3995,10 +4025,15 @@
      "name": "F1Technical",
      "title": "The evolution of Formula One's Cost Cap",
      "url": "https://www.f1technical.net/news/28125"
+    },
+    {
+     "name": "The Race",
+     "title": "What Williams' F1 cost cap fix is and when it could happen（2026年10月7日）",
+     "url": "https://www.the-race.com/formula-1/formula1-cost-cap-fix-f1-williams-2027-2028/"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-03"
+   "checked": "2026-10-09"
   },
   {
    "id": "atr",
@@ -9413,6 +9448,10 @@
     {
      "t": "セパンのストレートモードの区間は4か所と伝えられた。",
      "u": "/news/en-therace-malaysia-driver-expectations/"
+    },
+    {
+     "t": "シンガポールGPのストレートモードの区間は5か所。スタート／フィニッシュの直線や、ターン7へ向かう区間が含まれる。",
+     "u": "/news/ja-f1gate-singapore-active-aero/"
     }
    ],
    "see": [
@@ -9487,9 +9526,14 @@
      "name": "FIA",
      "title": "A New Era of Competition: FIA showcases future-focused Formula 1 regulations for 2026 and beyond",
      "url": "https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA makes key decision for Singapore Grand Prix（2026年10月7日、ストレートモード5区間）",
+     "url": "https://www.planetf1.com/news/fia-singapore-grand-prix-2026-active-aero"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-09"
   },
   {
    "id": "v10-era",
@@ -14583,6 +14627,10 @@
     {
      "t": "セパンでは7チームが車を更新した。メルセデスはW17の7か所を変え、いちばん大きな内容だった。",
      "u": "/news/it-formula1-sepang-seven-teams-updates/"
+    },
+    {
+     "t": "ハースはシンガポールに新しいパッケージを持ち込み、まずベアマンの車に付ける。オコンの車はオースティンからの見込み。",
+     "u": "/news/it-formula1it-haas-upgrade-singapore/"
     }
    ],
    "see": [
@@ -14605,9 +14653,19 @@
      "name": "RacingNews365",
      "title": "F1 2026 teams' wind tunnel time (ATR)",
      "url": "https://racingnews365.com/f1-2026-teams-wind-tunnel-time"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Haas Formula 1 Team target Singapore points as heat and energy management loom（2026年10月7日、ベアマン「このアップグレードは機能している」）",
+     "url": "https://www.grandprix247.com/formula-1-news/haas-formula-1-team-target-singapore-points-as-heat-and-energy-management-loom"
+    },
+    {
+     "name": "Coffee Corner Motorsport",
+     "title": "Singapore Grand Prix 2026 media day（ベアマン車に先に装着、オコンはオースティンの見込み）",
+     "url": "https://coffeecornermotorsport.com/singapore-grand-prix-2026-media-day/"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-10-09"
   },
   {
    "id": "development-freeze",
@@ -15983,6 +16041,10 @@
     {
      "t": "セパンの次は、スプリント形式のシンガポール。",
      "u": "/news/it-formula1it-racingbulls-sepang-punti/"
+    },
+    {
+     "t": "シンガポールはスプリントの週末なので、フリー走行は1回だけ。調整の時間が足りないという声が出た。",
+     "u": "/news/en-f1com-singapore-risk-perspective/"
     }
    ],
    "see": [
@@ -16020,7 +16082,7 @@
      "url": "https://www.formula1.com/en/latest/article/formula-1-singapore-airlines-singapore-grand-prix-2026.1OXwlTH5jrpTiZX2Dvg7qE"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-10-09"
   },
   {
    "id": "pit-loss",
@@ -17605,10 +17667,15 @@
      "name": "formula1.com",
      "title": "Do you remember... F1's first ever night race",
      "url": "https://www.formula1.com/en/latest/article/do-you-remember-f1s-first-ever-night-race.40aylFbXcPZSJRGiQv5Dgh"
+    },
+    {
+     "name": "AsiaOne",
+     "title": "2026 Singapore Grand Prix declared heat-hazard race as heat index forecast to exceed 31°C（2026年10月8日）",
+     "url": "https://www.asiaone.com/sports/2026-singapore-grand-prix-f1-fia-declares-heat-hazard"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-07",
+   "checked": "2026-10-09",
    "examples": [
     {
      "t": "アウディは、シンガポールGPで、東南アジアのプラナカン模様を入れた特別なカラーを使う。",
@@ -17617,6 +17684,14 @@
     {
      "t": "レーシングブルズの次戦は、スプリント形式のシンガポール。",
      "u": "/news/it-formula1it-racingbulls-sepang-punti/"
+    },
+    {
+     "t": "2026年のシンガポールGPはスプリントの週末で、練習走行は1回だけ。",
+     "u": "/news/en-f1com-singapore-risk-perspective/"
+    },
+    {
+     "t": "FIAは、シンガポールGPのスプリントと決勝に、2戦連続となるヒートハザードを宣言した。",
+     "u": "/news/it-formula1it-singapore-heat-hazard/"
     }
    ]
   },
@@ -24430,7 +24505,7 @@
     "2026年のF1では、全車が同じ電子制御ユニット（標準ECU）を積み、その中で動くソフトの一部は全車に共通だ。FIAのニコラス・トンバジス（シングルシーター部門ディレクター）は、このソフトを「FIAがチームと協力して開発した、全車に共通の標準のコード」と説明している。電気の力の出し方など、規則で決まった制限を守らせる役目がある（→標準ECU）。",
     "たとえば雨の走行では、電気の力の上限を250kWに抑える専用のエンジンモードが決められている。乾いた路面での上限は350kWだ。また今季は、チームがわざとMGU-Kを止める行為を防ぐため、60秒間の「緊急ロック」が入った。これが作動すると、エンジン（ICE）の力まで出なくなることがある（ザ・レース）。",
     "2026年10月4日のセパンの決勝（バーレーンGP・イン・マレーシア）では、雨のフォーメーションラップで複数台が力を失い、止まりかけた。FIAは、エンジン回転の低さ、滑りやすい路面、雨用のエネルギー設定、セパンの区間の設定が、前例のない形で重なったためと説明した。ザ・レースによると、とてもゆっくり走るうちにターボの過給圧が下がり、MGU-Kの助けも得られなかった。問題が起きたターン9は、250kWの制限がかかる区間の1つだった。",
-    "FIAは、問題の区間のエネルギー制限を外した修正版のソフトを全チームに配り、各チームはスタート前にPUへ入れた。トンバジスは、今季は雨の走行が少なく、ソフトを十分に試せなかったと認めた。そのうえで「この特定の問題が二度と起きないことは保証できる。だが、問題がまったく起きないとは保証できない」と話した。"
+    "FIAは、問題の区間のエネルギー制限を外した修正版のソフトを全チームに配り、各チームはスタート前にPUへ入れた。シンガポールGPで雨になった場合も、この暫定版を使う。そのうえで、米国GPで新しい雨天用のソフトを入れる（ザ・レース、2026年10月8日）。ザ・レースによると、FIAはこのソフトをベルギーとオランダのFP1でも試していたと説明した。トンバジスは、最初の版は「テストはしていた。ただ、あの特定の条件では試していなかった」と話し、「この特定の問題が二度と起きないことは保証できる。だが、問題がまったく起きないとは保証できない」とも述べた。"
    ],
    "examples": [
     {
@@ -24444,6 +24519,10 @@
     {
      "t": "トンバジスは、雨の日のソフトの不具合について「この特定の問題は二度と起きない」と説明した。",
      "u": "/news/en-therace-malaysia-lessons/"
+    },
+    {
+     "t": "FIAはセパンの不具合を受けて雨天用のソフトを改め、米国GPで新しい版を入れる。シンガポールで雨ならセパンの暫定版を使う。",
+     "u": "/news/en-therace-malaysia-software-fix/"
     }
    ],
    "see": [
@@ -24454,7 +24533,7 @@
     "control-electronics",
     "ers"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-10-09",
    "src": [
     {
      "name": "The Race",
@@ -24465,6 +24544,16 @@
      "name": "Sky Sports",
      "title": "FIA explain 'unprecedented' glitch that caused Bahrain GP in Malaysia start chaos on formation laps",
      "url": "https://www.skysports.com/f1/news/13594864/fia-explain-unprecedented-glitch-that-caused-bahrain-gp-in-malaysia-start-chaos-on-formation-laps"
+    },
+    {
+     "name": "The Race",
+     "title": "What's being changed after F1's Malaysia software bug debacle（2026年10月8日）",
+     "url": "https://www.the-race.com/formula-1/whats-being-changed-after-f1s-malaysia-software-bug-debacle/"
+    },
+    {
+     "name": "The Race",
+     "title": "Everything we learned from F1's Malaysia return（トンバジス「この特定の問題なら保証できる」）",
+     "url": "https://www.the-race.com/formula-1/everything-we-learned-from-f1-malaysia-return/"
     }
    ]
   },
@@ -24744,6 +24833,1488 @@
      "name": "autosport web",
      "title": "ピアストリのマネージャー、ウエーバーが、フェルスタッペンとの交代説を「ナンセンス」と一蹴",
      "url": "https://www.as-web.jp/f1/1334556"
+    }
+   ]
+  },
+  {
+   "id": "race-director",
+   "term": "レースディレクター",
+   "cat": "レース運営",
+   "aliases": [
+    "レース・ディレクター",
+    "race director",
+    "RD",
+    "競技長",
+    "れーすでぃれくたー"
+   ],
+   "words": [
+    "ルイ・マルケス",
+    "レースの進行",
+    "スタートの中止",
+    "赤旗の判断",
+    "セーフティカーを出す人"
+   ],
+   "short": "FIAが任命する、レースの進行を指揮する責任者。今季はルイ・マルケスが務める。",
+   "body": [
+    "レースディレクターは、グランプリの走行をとりしきるFIAの責任者だ。規則では、タイムテーブルの管理、車を止めさせること、走行の中断と再開、スタートの手順、セーフティカーの使用について、優先的な権限を持つ。コース責任者（クラーク・オブ・ザ・コース）は、レースディレクターの同意がなければ、これらを指示できない。走行中は、コース責任者やスチュワードの議長と、いつでも無線で話せる状態でいなければならない。FIAは、補佐役のデピュティ（副）レースディレクターを置くこともできる。",
+    "罰を決めるのは、レースディレクターではなくスチュワードだ。レースディレクターは、コース上の出来事や違反の疑いをスチュワードに報告する側にいる。一方で、高温の警告（ヒートハザード）は、予報の数字が基準を超えなくても、レースディレクターの判断だけで宣言できる。2026年10月のセパンでは、フォーメーションラップで出力を失う車が相次ぎ、スタートの手順が中止された。FIAは隊列を元の順番に戻して再開し、スタートは予定より1時間40分遅れた（Motorsport Week）。",
+    "今のレースディレクターは、ポルトガル出身のルイ・マルケスだ。F2とF3のレースディレクターから昇格し、2024年11月、ニールス・ヴィティヒが職を離れたのを受けて、ラスベガスGPから務めている。それ以前は、チャーリー・ホワイティングが1997年から務め、2019年3月にオーストラリアGP直前のメルボルンで急死した。後を継いだマイケル・マシは、2021年最終戦アブダビGPの判断が問題になり、2022年2月に交代した。2022年はヴィティヒとエドゥアルド・フレイタスが交代で担当し、その後はヴィティヒが1人で務めていた。"
+   ],
+   "rule": "スポーティングレギュレーション B1.2.1（副レースディレクター）、B1.3.3（権限）、B1.3.6（無線連絡）、B1.5.10（ヒートハザード）、B1.9.1（スチュワードへの報告）",
+   "examples": [
+    {
+     "t": "アロンソは、セパンのフォーメーションラップでの赤旗の判断に疑問を示し、FIAに説明を求めた。",
+     "u": "/news/de-motorsport-total-alonso-red-flag/"
+    },
+    {
+     "t": "アストンマーティンのクラックは、止まった車を元の位置に戻したFIAの判断について、手順を中止したのは正しかったと述べた。",
+     "u": "/news/es-motorsport-krack-alonso-fia/"
+    }
+   ],
+   "see": [
+    "race-control",
+    "stewards",
+    "safety-car",
+    "red-flag",
+    "aborted-start",
+    "heat-hazard",
+    "fia"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Niels Wittich: FIA confirms immediate departure of F1 race director with Rui Marques named replacement（2024年11月12日）",
+     "url": "https://www.skysports.com/f1/news/12433/13253161/f1-race-director-wittich-in-surprise-and-immediate-fia-exit"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Who is Rui Marques? The man in the hottest seat in Formula 1（2024年11月）",
+     "url": "https://www.grandprix247.com/formula-1-news/rui-marques-appointed-by-the-fia-as-formula-1-race-director-las-vegas-gp"
+    },
+    {
+     "name": "formula1.com",
+     "title": "FIA F1 Race Director Charlie Whiting passes away（2019年3月14日）",
+     "url": "https://www.formula1.com/en/latest/article.fia-f1-race-director-charlie-whiting-passes-away.3Su01LCNwgrPic2Ex8FBQP.html"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Who are Formula 1's new race directors?（2022年2月17日）",
+     "url": "https://racingnews365.com/who-are-formula-1s-new-race-directors"
+    },
+    {
+     "name": "Motorsport Week",
+     "title": "Why was a glitch allowed to break F1 in Sepang?（2026年10月7日）",
+     "url": "https://www.motorsportweek.com/2026/10/07/why-was-a-glitch-allowed-to-break-f1-in-sepang/"
+    }
+   ]
+  },
+  {
+   "id": "warning",
+   "term": "警告（ウォーニング）",
+   "cat": "ペナルティ",
+   "aliases": [
+    "ウォーニング",
+    "ワーニング",
+    "warning",
+    "注意処分",
+    "けいこく"
+   ],
+   "words": [
+    "戒告より軽い",
+    "罰の代わり",
+    "練習での走行妨害",
+    "トラックリミット",
+    "罰金と警告"
+   ],
+   "short": "スチュワードが、罰を科す代わりに出すことがある軽い処分。順位やタイムは変わらない。",
+   "body": [
+    "警告は、スチュワードが、罰を科す代わりに出すことがある処分だ。順位、タイム、グリッドは変わらない。F1公式の解説によると、ドライバーにもチームにも出すことがあり、よく使われるのは、トラックリミットを初めて越えたときなどだという。",
+    "似た処分に戒告（リプリマンド）がある。戒告は、スポーティングレギュレーションの罰の一覧に入っている。同じシーズンに戒告を5回（そのうち4回以上が走行上の違反）受けると、10グリッド降格になる。F1公式の解説も、1シーズンに4回までは戒告を受けても降格にならないと説明している。",
+    "今季の例。セパンのFP2で、ハミルトンは時速80〜85kmで走っていたところへ、時速約240kmのボルトレートが近づき、走行妨害として審議された。スチュワードは、ハミルトンの右のミラーが壊れていたことを認めたうえで、「練習走行での走行妨害の標準の罰は警告」として、ハミルトンに警告を出した。一方、フェラーリは、ミラーの故障を知りながら後ろの速い車をドライバーに伝えなかったとして、1万ユーロの罰金を受けた。オーストリアGPの予選Q1で「不必要にゆっくり走った」とされたハジャーも、警告を受けている。"
+   ],
+   "rule": "スポーティングレギュレーション B1.9.5 f)（戒告の回数と降格）",
+   "examples": [
+    {
+     "t": "ハミルトンはセパンFP2の走行妨害で警告のみ。フェラーリはミラー損傷を伝えなかったとして罰金1万ユーロ",
+     "u": "/news/en-rn365-hamilton-mirror-impeding/"
+    },
+    {
+     "t": "バクー決勝前の隊列周回の手順違反で、サインツとハジャーは戒告より軽い警告になった",
+     "u": "/news/en-planetf1-sainz-hadjar-warnings/"
+    },
+    {
+     "t": "バクー決勝後の審議で、ハジャーとサインツは酌量のうえ警告となり、表彰台と1ポイントを守った",
+     "u": "/news/ja-f1data-baku-stewards-verdict/"
+    }
+   ],
+   "see": [
+    "reprimand",
+    "stewards",
+    "impeding",
+    "fine",
+    "black-white-flag",
+    "track-limits",
+    "penalty-points"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "The beginner's guide to F1 penalties",
+     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-penalties.5lne3FfE8IXpGOagsmfq90"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA confirms double Lewis Hamilton, Ferrari punishment after Bahrain GP investigation（2026年10月2日）",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-fia-bahrain-grand-prix-malaysia-2026-penalty"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA confirms Isack Hadjar punishment after Austrian Grand Prix breach（2026年6月27日）",
+     "url": "https://www.planetf1.com/news/fia-isack-hadjar-austrian-grand-prix-2026-decision"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    }
+   ]
+  },
+  {
+   "id": "laps-led",
+   "term": "首位周回（ラップリーダー）",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "ラップリーダー",
+    "リードラップ",
+    "laps led",
+    "lap leader",
+    "首位周回数",
+    "しゅいしゅうかい"
+   ],
+   "words": [
+    "何周トップを走ったか",
+    "トップを走った周",
+    "1周首位",
+    "全周回首位",
+    "記録"
+   ],
+   "short": "ドライバーが何周トップを走ったかの記録。周を終えてラインを越えた時点の先頭で数える。",
+   "body": [
+    "首位周回は、ドライバーが何周トップを走ったかを数える記録だ。セパンの例のように、記録では、その周を終えてラインを越えた時点の公式の順位で先頭にいたドライバーに、その周の首位が付く。規則でも、順位は走り切った周回数と、コントロールライン（ライン）を越えた順で決まる。ピットストップの間に、実際には首位を失っていないのに、首位周回を1〜2周落とすこともある（The Race）。",
+    "2026年10月のセパンでは、珍しい「1周首位」が生まれた。ソフトの不具合でスタートが中止され、隊列は改めてのフォーメーションラップなしで再開された。グリッドに並んだとき、公式の周回はまだ2周目だった。セパンでは、ラインがスタートのグリッドより先にあるためだ。そこでピアストリ、ボルトレート、ストロール、ヒュルケンベルグ、ペレスの5人が、インターミディエイトに替えるためにピットに入った。5人はピットレーンでラインを越えて、ほかの車より先に3周目に入った。そのため、2周目の終わりの公式の順位はピアストリが先頭になり、記録上「1周首位」とされた。ストロールも、この時点の公式の順位では3位だった。ただし、これはそのときの実際の順位を表すものではなかった（Motorsport.com スペイン語版）。",
+    "全部の周回でトップを走ることは、グランドスラムの条件の一つだ。ポールポジションから勝ち、全周回首位で、ファステストラップも出す必要がある（The Race）。通算の首位周回では、2020年のエミリア・ロマーニャGPで、ハミルトンがミハエル・シューマッハ（5111周）に続く史上2人目の5000周超えを達成した（GPFans）。"
+   ],
+   "rule": "スポーティングレギュレーション B2.5.5 a)（周回数とラインを越えた順）",
+   "examples": [
+    {
+     "t": "セパンの公式記録で「1周首位」はピアストリ。ピットに入った5人が先に3周目に入ったため",
+     "u": "/news/es-motorsport-piastri-lidero-vuelta/"
+    }
+   ],
+   "see": [
+    "grand-slam",
+    "start-line",
+    "formation-lap",
+    "aborted-start",
+    "pole-to-win",
+    "hat-trick"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Motorsport.com（スペイン語版）",
+     "title": "Nadie se dio cuenta: Piastri lideró y Stroll estuvo en el podio en Sepang（2026年10月）",
+     "url": "https://es.motorsport.com/f1/news/piastri-lidero-stroll-podio-bahrein-sepang-2026/10862571/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "GPFans",
+     "title": "Hamilton hits 5,000 laps led milestone in F1（2020年11月2日）",
+     "url": "https://www.gpfans.com/en/f1-news/58787/hamilton-hits-5-000-laps-led-milestone-in-f1"
+    },
+    {
+     "name": "The Race",
+     "title": "The complexities that undermine Verstappen's latest F1 milestone（2021年7月10日）",
+     "url": "https://the-race.com/formula-1/the-complexities-that-undermine-verstappens-latest-f1-milestone"
+    }
+   ]
+  },
+  {
+   "id": "back-to-back-test",
+   "term": "新旧仕様の比較テスト（バック・トゥ・バック）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "バック・トゥ・バック",
+    "バックトゥバック",
+    "back-to-back",
+    "比較テスト",
+    "新旧比較"
+   ],
+   "words": [
+    "旧仕様に戻す",
+    "新しい部品の効果",
+    "2台で別の仕様",
+    "アップデートの検証",
+    "比較走行"
+   ],
+   "short": "新しい部品と古い部品を同じ週末に走らせ、本当に速くなったかを確かめる走り方。",
+   "body": [
+    "大きなアップデートを入れたあと、新しい仕様と古い仕様を並べて走らせ、違いを確かめることがある。これを「バック・トゥ・バック」の比較と呼ぶ。実際の走りで、違いを早めに確かめるためだ。2025年のバーレーンGPでは、フェラーリがFP1で、1台に新しいフロア、もう1台に古いフロアを付けて比べる予定だと伝えられた（PlanetF1）。",
+    "2026年の例。メルセデスはセパンに大型のアップデートを持ち込み、約0.3秒の向上を見込んだ。しかし、ウォルフ代表は、逆に最大0.5秒遅くなった可能性もあると話した（The Race）。そこでシンガポールでは、ラッセルがバクーまで使っていた古い仕様、アントネッリが新しい仕様で走る。言い出したのはラッセルで、セパンでPUが壊れ、PU交換で最後尾スタートになったため「迷う必要がない」と話した。アントネッリは、セパンは路面と温度のせいで例外的だったと見ている（Sky Sports）。",
+    "こうした比較には制約もある。シンガポールはスプリントの週末で、練習走行は1回だけだ。アントネッリは週末を通して新しい仕様で走ると決まっており、途中で古い仕様に替えることはできない（Sky Sports）。The Raceは、古い仕様に長く戻すと、物流などの面で手間が増えると伝えている。"
+   ],
+   "examples": [
+    {
+     "t": "混乱を招いたメルセデスのアップグレード、シンガポールで旧仕様との比較走行を検討",
+     "u": "/news/en-therace-mercedes-upgrade-action/"
+    },
+    {
+     "t": "メルセデスはシンガポールでラッセルだけ旧仕様、アントネッリは新パッケージを続ける",
+     "u": "/news/de-mst-mercedes-old-car-russell/"
+    },
+    {
+     "t": "シンガポールGP木曜の注目点。ラッセルの要望でメルセデスが旧仕様を使う",
+     "u": "/news/en-therace-singapore-day-one/"
+    }
+   ],
+   "see": [
+    "upgrade",
+    "correlation",
+    "free-practice",
+    "sprint",
+    "parc-ferme",
+    "wind-tunnel"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "The Race",
+     "title": "The action Mercedes can take over confusing F1 upgrade（2026年10月6日）",
+     "url": "https://www.the-race.com/formula-1/the-action-mercedes-can-take-over-confusing-f1-upgrade/"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Mercedes drivers George Russell, Kimi Antonelli to split car packages at Singapore GP after Sepang struggles with updates（2026年10月8日）",
+     "url": "https://www.skysports.com/f1/news/13596354/mercedes-drivers-george-russell-kimi-antonelli-to-split-car-packages-at-singapore-gp-after-sepang-struggles-with-updates"
+    },
+    {
+     "name": "Crash.net",
+     "title": "George Russell pushed for \"no-brainer\" divided Mercedes F1 car strategy（2026年10月8日）",
+     "url": "https://www.crash.net/f1/news/1106623/1/george-russell-pushed-no-brainer-divided-mercedes-f1-car-strategy"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Lewis Hamilton to lead critical Ferrari upgrade evaluation at Bahrain Grand Prix（2025年4月10日）",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-charles-leclerc-upgrade-test"
+    }
+   ]
+  },
+  {
+   "id": "cooling-vest",
+   "term": "冷却ベスト（ドライバー冷却システム）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "クーリングベスト",
+    "cooling vest",
+    "ドライバー冷却システム",
+    "Driver Cooling System",
+    "れいきゃくべすと"
+   ],
+   "words": [
+    "暑さ対策",
+    "冷たい液体",
+    "着ない選択",
+    "0.5kgの重り",
+    "予算上限の加算"
+   ],
+   "short": "冷やした液体を管に流して、ドライバーの体を冷やすベスト。着るかどうかは選べる。",
+   "body": [
+    "冷却ベストは、ドライバーが着るベストに細い管を通し、冷やした液体をポンプで流して体を冷やす仕組みだ（The Race）。2023年のカタールGPで、暑さと湿気で手当てが必要になるドライバーが出たことがきっかけで、FIAが導入した。",
+    "高温の警告（ヒートハザード）が出ると、冷却に使う液体などを除き、ドライバー冷却システムの部品は、すべての車に積まなければならない。ただし、ベストを着るかどうかはドライバーが選べる。2025年は、もともと気温が31℃を超える予報なら着用を義務にする予定だったが、狭いコクピットで管を収めにくいという声が多く、任意とされた。2026年の規則でも、着るかどうかは選べる。着ない場合は、装備の重さの差をなくすため、コクピットに0.5kgのバラストを積む。",
+    "弱点もある。冷える時間は20〜40分ほどで、そのあとは液体がぬるくなる（The Race、2026年）。ハジャーは「10分くらいでまた暖かくなる」と話している（Crash.net）。FIAは、レースの距離を通して使えるシステムを作ったチームに、予算上限を5万ドル上乗せし、快適さの問題も解決すればさらに7万5000ドルを足す。メルセデスはこの額では足りないと判断し、セパンではベストを使わなかった。ラッセルは、予算上限にお金を上乗せするか、外部の会社が全チーム向けにベストを作ることをFIAに求めた。"
+   ],
+   "rule": "スポーティングレギュレーション B1.5.10",
+   "examples": [
+    {
+     "t": "ラッセルとアントネッリは、暑いセパンで冷却ベストを使わずに走った。メルセデスは性能を優先した",
+     "u": "/news/de-motorsport-total-russell-no-cooling-vest/"
+    },
+    {
+     "t": "冷却ベストが任意のままの事情。冷却は20〜40分しかもたず、FIAは条件を満たすチームに予算上限の加算を設けた",
+     "u": "/news/en-therace-cooling-vest-dilemma/"
+    },
+    {
+     "t": "フェルスタッペンは「ジョージをサウナに連れて行くべきかも」と、ラッセルの冷却ベスト論に反論した",
+     "u": "/news/de-motorsport-total-verstappen-russell-sauna/"
+    }
+   ],
+   "see": [
+    "heat-hazard",
+    "ballast",
+    "cost-cap",
+    "dehydration",
+    "humidity",
+    "minimum-weight"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "What F1's first-ever 'heat hazard' race means（2025年10月2日）",
+     "url": "https://www.the-race.com/formula-1/f1-singapore-grand-prix-heat-hazard-cooling-vests/"
+    },
+    {
+     "name": "The Race",
+     "title": "What's really going on with F1's cooling vest dilemma（2026年10月8日）",
+     "url": "https://www.the-race.com/formula-1/whats-really-going-on-with-f1s-cooling-vest-dilemma/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1's Heat Hazard rules: Why drivers are rejecting cooling vests（2026年6月26日）",
+     "url": "https://www.crash.net/f1/news/1099312/1/f1s-heat-hazard-rules-why-drivers-are-rejecting-cooling-vests"
+    },
+    {
+     "name": "Autosport",
+     "title": "\"The FIA needs to step in\" - Russell's cooling vest comments explained（2026年10月）",
+     "url": "https://www.autosport.com/f1/news/whats-actually-going-on-with-george-russells-fia-cooling-vest-complaints/10861569/"
+    }
+   ]
+  },
+  {
+   "id": "cost-cap-exclusions",
+   "term": "コストキャップの対象外の費用",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "除外費用",
+    "Excluded Costs",
+    "対象外経費",
+    "予算上限の例外",
+    "たいしょうがいのひよう"
+   ],
+   "words": [
+    "ドライバーの年俸",
+    "上限に入らないお金",
+    "マーケティング費",
+    "移動費",
+    "上位3人の給料"
+   ],
+   "short": "予算上限の計算に入れない支出。ドライバー報酬、移動費、マーケティング費などがある。",
+   "body": [
+    "コストキャップ（予算上限）は、チームの支出をすべて数えるわけではない。FIAの財務規則は「除外費用」を細かく並べていて、これらは上限の計算に入らない。いくつかの項目にまとめて直接かかる費用も、除外される。",
+    "主な項目は次のとおり。ドライバーへの報酬（関係する移動や宿泊も含む）、報酬の上位3人、マーケティング、育成プログラム（アカデミー）の運営、歴史的な資産（ヘリテージ）に関わる費用、金融費用、法人税、人事・経理・法務の部門、建物などの費用。FIAのエントリー費、スーパーライセンスの費用、財務規則に違反して払った罰金や、ほかの規則の違反でFIAに科された罰金も入らない。レースやテストのためのホテル、飛行機、鉄道、陸上の移動、FIAの認可を受けた燃料、ケータリングも対象外だ。パワーユニットの代金は、決められた上限価格までが除外される。",
+    "上限なしに除外されるとは限らない。社員のボーナスは、固定給の合計の20%か、決められた上限額の低いほうまで。社員向けの催しは120万ドル、災害などに備える事業継続の費用は150万ドルが上限だ。ほかに、出産・育児の休暇中の給与、長期の病気休職者への給与、健康と安全、持続可能性の取り組みの費用も除外される。今季は、冷却ベストのために予算上限にお金を上乗せしてほしいという声が、ラッセルから出た（→冷却ベスト）。"
+   ],
+   "rule": "財務規則 D5.1.1、D5.1.2",
+   "examples": [
+    {
+     "t": "メルセデスのロード副代表が予算上限の見直しに言及。例外の対象はドライバー報酬など",
+     "u": "/news/de-motorsport-total-mercedes-cost-cap-rethink/"
+    },
+    {
+     "t": "ラッセルは冷却ベストについて、予算上限の外の資金か共通のベストの開発をFIAに求めた",
+     "u": "/news/es-motorsport-russell-cooling-vest/"
+    }
+   ],
+   "see": [
+    "cost-cap",
+    "cost-cap-breach",
+    "pu-cost-cap",
+    "entry-fee",
+    "super-licence",
+    "cooling-vest"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section D Financial - F1 Teams (Issue 07, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "Autosport",
+     "title": "\"The FIA needs to step in\" - Russell's cooling vest comments explained（2026年10月）",
+     "url": "https://www.autosport.com/f1/news/whats-actually-going-on-with-george-russells-fia-cooling-vest-complaints/10861569/"
+    }
+   ]
+  },
+  {
+   "id": "pu-mileage",
+   "term": "PUの走行距離（マイレージ）",
+   "cat": "パワーユニット",
+   "aliases": [
+    "マイレージ",
+    "走行距離",
+    "mileage",
+    "PUの寿命",
+    "エンジンの寿命",
+    "ぴーゆーのそうこうきょり"
+   ],
+   "words": [
+    "エンジンの使い回し",
+    "距離の少ないPU",
+    "新品のエンジン",
+    "部品の寿命",
+    "PUプール"
+   ],
+   "short": "PU部品ごとに積み重なる走行距離。使える数が少ないので、寿命を見て使い回す。",
+   "body": [
+    "パワーユニット（PU）の部品は、1人のドライバーが1シーズンに使える数が決まっている。2026年は、エンジン（ICE）とターボが4つ、MGU-K、バッテリー（ES）、制御電子機器（CE）が3つで、どれも1つは新しい規則に合わせた追加分だ。PUを供給して1年目のメーカーのチームには、さらに追加が認められる（formula1.com）。24戦を4つのエンジンでまかなうと、1つあたり約6大会分を走る計算になる。そのため、チームは部品ごとの走行距離（マイレージ）を管理している。",
+    "一度使った部品は、そのドライバーの「プール」に入り、大会ごとに付け替えても罰はない。そこで、距離の多い部品を金曜の練習や、パワーがそれほど効かないコースで使い、走行距離を節約する。逆に、全開区間の長いバクーのようなコースで新しい部品を入れることもある（The Race、2021年）。",
+    "今季の例。ラッセルはセパンでゴールの5周前に、PUの不調で車を止めてリタイアした。The Raceによると、ラッセルのPUは走行距離の面で限界に近く、ロード副代表も「距離の少ないPUも多くは残っていない」と話した。メルセデスは米国GPで新しい仕様のPUを入れる予定だったが、ラッセルはシンガポールで新しいPUを使うことになり、最後尾から出る。ラッセルは、残りの7戦が1つのエンジンの想定寿命を超えるため、シーズン中にもう1度降格を受けると見ている（Sky Sports）。"
+   ],
+   "examples": [
+    {
+     "t": "ラッセル、シンガポールと米国で二重のグリッド降格の恐れ。セパンのPU故障が響く",
+     "u": "/news/en-therace-russell-double-penalty-risk/"
+    },
+    {
+     "t": "壊れたラッセルのPUはハンガリーから使われ、5〜6戦分を走っていたという見方が伝えられた",
+     "u": "/news/it-formula1it-mercedes-russell-engine/"
+    },
+    {
+     "t": "メルセデスはラッセルのPUを交換。シンガポールGPは最後尾スタートが確定",
+     "u": "/news/pt-grandepremio-russell-engine-penalty/"
+    }
+   ],
+   "see": [
+    "pu-allocation",
+    "pu-stockpiling",
+    "grid-penalty",
+    "reliability",
+    "aduo",
+    "ice"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Russell at risk of 'double whammy' grid penalty（2026年10月5日）",
+     "url": "https://www.the-race.com/formula-1/george-russell-at-risk-of-double-whammy-grid-penalty/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "George Russell facing double whammy F1 penalty after gut-wrenching blow（2026年10月6日）",
+     "url": "https://racingnews365.com/george-russell-facing-double-whammy-f1-penalty-after-gut-wrenching-blow"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Mercedes drivers George Russell, Kimi Antonelli to split car packages at Singapore GP after Sepang struggles with updates（2026年10月8日）",
+     "url": "https://www.skysports.com/f1/news/13596354/mercedes-drivers-george-russell-kimi-antonelli-to-split-car-packages-at-singapore-gp-after-sepang-struggles-with-updates"
+    },
+    {
+     "name": "formula1.com",
+     "title": "How many power unit components has each driver used in 2026 so far?（2026年6月27日）",
+     "url": "https://www.formula1.com/en/latest/article/how-many-power-unit-components-has-each-driver-used-in-2026-so-far.6DLZYWn0uEpsB0409mFRTF"
+    },
+    {
+     "name": "formula1.com",
+     "title": "The beginner's guide to F1 power unit penalties",
+     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-engine-and-gearbox-penalties.2TSy7BFgEvdNLojGLWS3F1"
+    },
+    {
+     "name": "F1Technical.net",
+     "title": "F1MATHS: How many power unit components have drivers used so far this season?（2026年）",
+     "url": "https://www.f1technical.net/news/28433"
+    },
+    {
+     "name": "The Race",
+     "title": "Mercedes and Red Bull split engine strategies in Baku（2021年6月4日）",
+     "url": "https://the-race.com/formula-1/mercedes-and-red-bull-split-engine-strategies-in-baku/"
+    }
+   ]
+  },
+  {
+   "id": "operating-window",
+   "term": "タイヤの作動温度域（ウィンドウ）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "作動温度域",
+    "ウィンドウ",
+    "operating window",
+    "working range",
+    "ワーキングレンジ",
+    "さどうおんどいき"
+   ],
+   "words": [
+    "タイヤの温度",
+    "温まらない",
+    "熱すぎる",
+    "窓に入る",
+    "グリップが出る温度"
+   ],
+   "short": "タイヤがいちばんよく働く温度の幅。外れるとグリップが落ち、減りも変わる。",
+   "body": [
+    "タイヤには、いちばんよく働く温度の範囲がある。ピレリは、これを「ワーキングレンジ」と呼ぶ。2017年の解説では、その幅はコンパウンドごとにおよそ30℃で、高めの温度で働くものは100℃を超えるところに山があった。下回ると本来の性能が出ず、上回ると性能が落ちて、摩耗が深刻になることもある。",
+    "チームの仕事は、タイヤをすばやくこの範囲に入れ、熱くなりすぎたり冷えすぎたりしないように保つことだ。前のタイヤと後ろのタイヤを、同時にこの範囲に入れる必要もある。全チームが同じタイヤを使うので、差がつくのは、空力、車体、サスペンションなどのセットアップだ（ピレリ）。走行中のタイヤの温度は、およそ80〜120℃の間で上下するという（The Race、2021年）。",
+    "2026年の例。セパンでは、粗い路面と高い路面温度で、メルセデスのアップデートが期待どおりに働かなかった。ロード副代表は、新しい部品と路面温度、路面の状態が重なり、車がいつものよい状態になかったと説明した（The Race）。ラッセルも、セパンでは「いつもとかなり違うウィンドウで走っている」と話した（RacingNews365）。夜に走るシンガポールは路面温度が30〜35℃ほどで、formula1.comが伝えるピレリの見方では、タイヤは作動温度域の中で働き、オーバーヒートの心配はとくにない。"
+   ],
+   "examples": [
+    {
+     "t": "セパンでメルセデスのアップグレードが効かなかった理由。車が快適な領域に収まらなかったと副代表が説明",
+     "u": "/news/de-formel1-mercedes-upgrade-raetsel/"
+    },
+    {
+     "t": "荒れた路面と極端な暑さで、多くの車が最適な作動領域から外れたという見方",
+     "u": "/news/en-therace-weird-car-theory/"
+    }
+   ],
+   "see": [
+    "tyre-overheating",
+    "tyre-warm-up",
+    "track-temperature",
+    "tyre-blankets",
+    "graining",
+    "tyre-pressure",
+    "tyre-compounds"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Pirelli",
+     "title": "Seeing through the window（2017年）",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/seeing-through-the-window-50931/"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: How F1's tyre mess happened and how to fix it（2021年6月18日）",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-how-f1s-tyre-mess-happened-and-how-to-fix-it/"
+    },
+    {
+     "name": "The Race",
+     "title": "The action Mercedes can take over confusing F1 upgrade（2026年10月6日）",
+     "url": "https://www.the-race.com/formula-1/the-action-mercedes-can-take-over-confusing-f1-upgrade/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "George Russell voices weakened Mercedes upgrade fear after ominous signs（2026年10月2日）",
+     "url": "https://racingnews365.com/george-russell-voices-weakened-mercedes-upgrade-fear-after-ominous-signs"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: The most important facts, stats and trivia ahead of the 2026 Singapore Grand Prix（2026年10月7日）",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-singapore-grand-prix.2yF5JZuQTWUoUmbDH4niHv"
+    }
+   ]
+  },
+  {
+   "id": "tyre-overheating",
+   "term": "タイヤのオーバーヒート",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "オーバーヒート",
+    "タイヤの過熱",
+    "overheating",
+    "熱だれ",
+    "おーばーひーと"
+   ],
+   "words": [
+    "タイヤが熱すぎる",
+    "滑る",
+    "グリップがなくなる",
+    "前の車について行けない",
+    "熱のデグ"
+   ],
+   "short": "タイヤが作動温度域より熱くなりすぎること。グリップが落ち、劣化が早まる。",
+   "body": [
+    "タイヤのオーバーヒートは、タイヤの温度が、よく働く温度の幅（作動温度域）より上がりすぎることだ。ピレリは、この幅を超えると性能が落ち、摩耗が深刻になることもあると説明している。高い温度が長く続くと、ゴムが傷んで硬くなることもある（The Race）。",
+    "路面が粗いほど、タイヤのグリップが減り、滑りとオーバーヒートが増える（The Race）。アクセルを強く踏みすぎて後輪が空転すると、後ろのタイヤが100℃を超えることもある（The Race）。オーバーヒートは、前の車を追う場面にも響く。ラッセルは、タイヤが過熱すると、近くについて行ったり、抜き返しを狙ったりするのが難しくなるかもしれないと話している（The Race）。",
+    "2026年10月のセパンは、粗い路面と高い気温で、オーバーヒートが大きな課題になった。ラッセルは予選のアウトラップでもタイヤが過熱すると予想し、FP2のあとには「タイヤのオーバーヒートが多く、増やしたダウンフォースの効果が少し打ち消される」と話した（RacingNews365）。一方、夜に走るシンガポールは路面温度が30〜35℃ほどで、formula1.comが伝えるピレリの見方では、オーバーヒートの心配はとくにない。"
+   ],
+   "examples": [
+    {
+     "t": "セパンFP2。メルセデスは苦戦し、ラッセルはタイヤの過熱が原因で夜の間に調整が必要だと語った",
+     "u": "/news/de-motorsport-total-sepang-fp2-leclerc/"
+    },
+    {
+     "t": "路面の摩耗が激しいセパンで、ラッセルはタイヤの過熱が重要な要素になり、前の車に近づきにくくなると話した",
+     "u": "/news/es-motorsport-sepang-driver-expectations/"
+    },
+    {
+     "t": "粗い舗装によるタイヤの過熱が、メルセデスのアップグレードが効かなかった要因の一つとされた",
+     "u": "/news/de-formel1-mercedes-upgrade-raetsel/"
+    }
+   ],
+   "see": [
+    "operating-window",
+    "degradation",
+    "blistering",
+    "track-temperature",
+    "surface-abrasiveness",
+    "dirty-air",
+    "tyre-pressure"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Pirelli",
+     "title": "Seeing through the window（2017年）",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/seeing-through-the-window-50931/"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: How F1's tyre mess happened and how to fix it（2021年6月18日）",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-how-f1s-tyre-mess-happened-and-how-to-fix-it/"
+    },
+    {
+     "name": "The Race",
+     "title": "The major unknown as F1 braces for \"sandpaper\" rough Sepang track（2026年10月1日）",
+     "url": "https://www.the-race.com/formula-1/the-major-unknown-as-f1-braces-for-sandpaper-rough-sepang-track/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "George Russell voices weakened Mercedes upgrade fear after ominous signs（2026年10月2日）",
+     "url": "https://racingnews365.com/george-russell-voices-weakened-mercedes-upgrade-fear-after-ominous-signs"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: The most important facts, stats and trivia ahead of the 2026 Singapore Grand Prix（2026年10月7日）",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-singapore-grand-prix.2yF5JZuQTWUoUmbDH4niHv"
+    }
+   ]
+  },
+  {
+   "id": "g-force",
+   "term": "G（横G・前後G）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "G",
+    "ジー",
+    "横G",
+    "前後G",
+    "g-force",
+    "Gフォース"
+   ],
+   "words": [
+    "体にかかる力",
+    "首の負担",
+    "ブレーキの減速",
+    "コーナーの横の力",
+    "重力の何倍"
+   ],
+   "short": "加速、減速、曲がるときに体にかかる力を、重力の何倍かで表したもの。",
+   "body": [
+    "Gは、車が速さや向きを変えるときに、ドライバーの体にかかる力を、重力の何倍かで表したものだ。曲がるときに体を横に押す力を横G、ブレーキや加速で前後にかかる力を前後Gと呼ぶ。メルセデスの解説では、5Gなら、体重70kgのドライバーには約350kg分の力がかかる。",
+    "The Raceのゲイリー・アンダーソンは、F1のタイヤにはブレーキで約6G、横に約5Gがかかると書いている（2021年）。メルセデスによると、2024年のカレンダーで横Gがいちばん大きいのは、鈴鹿の1コーナーで、頂点で5Gを超える。スパのオー・ルージュや、シルバーストンのマゴッツ～ベケッツも最大5Gほどだ。車が大きく変わった2017年には、オーストラリアGPでハミルトンが6.5Gを記録した（formula1.com）。",
+    "いちばん大きな負担がかかるのは首だ。そのため、首を鍛えることはトレーニングの大事な部分で、重さを足した特別なヘルメットや、頭に付けた重りを使う（メルセデス）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンの最も厳しいブレーキングのターン15では、約189kgのペダル荷重と4.7Gがかかるとされた",
+     "u": "/news/it-formula1-sepang-brakes-energy/"
+    }
+   ],
+   "see": [
+    "downforce",
+    "brakes",
+    "hans",
+    "high-speed-circuit",
+    "dehydration",
+    "circuit-suzuka"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "G-Force and Formula One: Explained",
+     "url": "https://mercedesamgf1.com/news/g-force-and-formula-one-explained"
+    },
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: How F1's tyre mess happened and how to fix it（2021年6月18日）",
+     "url": "https://www.the-race.com/formula-1/gary-anderson-how-f1s-tyre-mess-happened-and-how-to-fix-it/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Video: Analysing 2017's massive rises in g-force（2017年3月31日）",
+     "url": "https://www.formula1.com/en/latest/article/video-analysing-2017s-massive-rises-in-g-force.vX8IhGjqmsaCoyy2uKKOi"
+    }
+   ]
+  },
+  {
+   "id": "dehydration",
+   "term": "レース中の脱水",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "脱水",
+    "脱水症状",
+    "dehydration",
+    "水分不足",
+    "だっすい"
+   ],
+   "words": [
+    "体重が減る",
+    "汗",
+    "水分補給",
+    "熱中症",
+    "シンガポールの暑さ",
+    "何キロやせる"
+   ],
+   "short": "暑さとレースの負担で汗をかき、体の水分が減ること。1レースで数kg減ることもある。",
+   "body": [
+    "F1のドライバーは、暑いコクピットで耐火スーツを着て、長い時間、強い力に耐える。そのため大量の汗をかき、体の水分が減る。水分が減ると、体だけでなく頭の働きにも響く。",
+    "とくに厳しいのがシンガポールだ。formula1.comは、2026年の大会前の記事で、シンガポールでは1レースで体重が最大3kgほど減ることがあると書いている。RacingNews365も、レースで3〜4kgの水分を失うことがあると伝えた。ラッセルは2024年のシンガポールGPのあと、熱疲労に苦しんだ（The Race）。",
+    "The Raceの記者が、気温31℃・湿度70%の部屋で45分間の模擬走行をした実験では、1.232リットルの水分と体重の約1.5%を失い、体温は38.9℃まで上がった。20分ほどで頭がぼんやりし始め、体より先に頭が疲れ始めたという。対策は、走りながら飲むドリンクボトルや、暑い大会での冷却ベストなどだ。"
+   ],
+   "examples": [
+    {
+     "t": "ハミルトンは、高温多湿のセパンで56周を走れば体重が最大4kg落ちると話した",
+     "u": "/news/en-rn365-hamilton-malaysia-two-reasons/"
+    },
+    {
+     "t": "ラッセルは2024年のシンガポールで体重が約4キロ減り、体温が危険な水準に達した経験を持つと伝えられた",
+     "u": "/news/de-motorsport-total-russell-no-cooling-vest/"
+    }
+   ],
+   "see": [
+    "drinks-bottle",
+    "humidity",
+    "heat-hazard",
+    "cooling-vest",
+    "circuit-singapore",
+    "night-race"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: The most important facts, stats and trivia ahead of the 2026 Singapore Grand Prix（2026年10月7日）",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-singapore-grand-prix.2yF5JZuQTWUoUmbDH4niHv"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "FIA declare Singapore heat hazard as drivers prepare for biggest test（2026年10月8日）",
+     "url": "https://racingnews365.com/fia-declare-singapore-heat-hazard-as-drivers-prepare-for-biggest-test"
+    },
+    {
+     "name": "The Race",
+     "title": "We simulate F1's 'heat hazard' Singapore GP conditions（2025年10月5日）",
+     "url": "https://www.the-race.com/formula-1/we-simulate-f1s-heat-hazard-singapore-gp-conditions/"
+    },
+    {
+     "name": "The Race",
+     "title": "What's really going on with F1's cooling vest dilemma（2026年10月8日）",
+     "url": "https://www.the-race.com/formula-1/whats-really-going-on-with-f1s-cooling-vest-dilemma/"
+    }
+   ]
+  },
+  {
+   "id": "push-to-pass",
+   "term": "プッシュ・トゥ・パス",
+   "cat": "パワーユニット",
+   "aliases": [
+    "プッシュトゥパス",
+    "Push to Pass",
+    "P2P",
+    "ぷっしゅとぅぱす"
+   ],
+   "words": [
+    "インディカー",
+    "追い抜きのボタン",
+    "パワーアップ",
+    "DRSの代わり",
+    "V8",
+    "ブースト"
+   ],
+   "short": "ボタンを押すと、決まった時間だけ出力が上がる追い抜き用の仕組み。インディカーのものが有名。",
+   "body": [
+    "プッシュ・トゥ・パスは、ドライバーがステアリングのボタンを押すと、決まった時間だけエンジンの出力が上がる仕組みだ。アメリカのインディカーの装置がよく知られている。インディカー公式によると、ターボの過給圧を上げて、およそ60馬力を足す。使えるのはロードコースと市街地コースのレースで、1レースで使える合計の時間と、1回に続けて使える長さに上限がある。",
+    "インディカーでは、スタートや再スタートの直後に使えない決まりがあった。2026年5月のインディアナポリスのロードコースのレースからは、スタートして第2のコントロールライン（オルタネート・スタート／フィニッシュライン）を越えたあとなら、再スタートを含めていつでも使えるようになった。再スタートラインの手前で追い抜いてはいけない決まりは残り、合計の時間や1回の長さの上限も変わっていない（インディカー公式）。",
+    "F1には今、この名前の装置はない。2026年のF1で近い役目をするのはオーバーテイクモードだ。前の車との差が1秒以内で計測点を通ったときだけ、次の周に電気の力を多く使える（→オーバーテイクモード）。インディカーのプッシュ・トゥ・パスは、前の車との差に関係なく、残りの時間の範囲で使える点が違う。ためた電気を好きな場所で使う2026年のF1の「ブースト」とも別の仕組みだ（→ブーストとリチャージ）。",
+    "フェルスタッペンはポッドキャスト番組（2026年9月末に報道）で、F1で1つ変えるならエンジンをV8に戻したいと話した。そのうえで「プッシュ・トゥ・パスのために小さな電池が要るなら、それでDRSも要らなくなるので構わない」と述べた（Crash.net、GPblog）。2030年ごろの新しいエンジン規則の話し合いでも、インディカー式のプッシュ・トゥ・パスが案に挙がっていると報じられたが、追い抜きの仕組みはまだ決まっていない（Motor16、2026年10月9日時点）。"
+   ],
+   "examples": [
+    {
+     "t": "フェルスタッペンは、1つ変えるなら今すぐV8に戻したいと語り、追い抜きにはプッシュ・トゥ・パスのような補助を推した。",
+     "u": "/news/de-mst-verstappen-v8-wish/"
+    },
+    {
+     "t": "2030年からのV8案では、DRSに代わる追い越しの助けとして、インディカー流のプッシュ・トゥ・パスが検討されていると報じられた。",
+     "u": "/news/en-rn365-f1-v8-return-2030/"
+    }
+   ],
+   "see": [
+    "overtake-mode",
+    "boost-recharge",
+    "drs",
+    "kers",
+    "v8-era",
+    "turbo"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "INDYCAR",
+     "title": "INDYCAR Expands Push to Pass Opportunities（2026年5月5日）",
+     "url": "https://www.indycar.com/news/2026/05/05-05-p2p"
+    },
+    {
+     "name": "Fox Sports",
+     "title": "What is INDYCAR's push-to-pass rule and explaining 2024 controversy",
+     "url": "https://www.foxsports.com/stories/motor/indycar-push-to-pass-rule-2024-controversy"
+    },
+    {
+     "name": "The Race",
+     "title": "Boost, overtake mode, active aero - Key 2026 F1 terms explained",
+     "url": "https://www.the-race.com/formula-1/boost-overtake-mode-active-aero-recharge-key-2026-terms-explained/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "How Max Verstappen would fix F1 and the changes he would make（2026年9月30日）",
+     "url": "https://www.crash.net/f1/news/1105908/1/how-max-verstappen-would-fix-f1-and-changes-he-would-make"
+    },
+    {
+     "name": "GPblog",
+     "title": "Max Verstappen has a clear solution to F1's issues: 'It fixes so many things'（2026年10月6日）",
+     "url": "https://www.gpblog.com/en/news/max-verstappen-has-a-clear-solution-to-f1s-issues-it-fixes-so-many-things"
+    },
+    {
+     "name": "Motor16",
+     "title": "FIA y fabricantes cierran el reglamento de motores F1 2030（2026年9月23日）",
+     "url": "https://www.motor16.com/las-ultimas-noticias/reglamento-motores-f1-2030/"
+    }
+   ]
+  },
+  {
+   "id": "gardening-leave",
+   "term": "ガーデニング休暇（ガーデニングリーブ）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "ガーデニングリーブ",
+    "ガーデンリーブ",
+    "gardening leave",
+    "garden leave",
+    "がーでにんぐきゅうか"
+   ],
+   "words": [
+    "移籍",
+    "待機期間",
+    "引き抜き",
+    "ライバルチームへの移籍",
+    "契約",
+    "いつから働ける"
+   ],
+   "short": "移籍が決まった人が、前の職場との契約の期間、働かずに待つこと。情報が漏れるのを防ぐ。",
+   "body": [
+    "ガーデニング休暇（ガーデンリーブ）は、イギリスの雇用で使われる言葉だ。辞めることが決まった人が、通知の期間に働かず、家で過ごす。そのあいだも給料は出て、雇用も続くので、ほかの会社では働けない（北アイルランドの労働関係機関LRA）。",
+    "F1では、技術者や幹部がライバルのチームへ移るときによく使われる。GPblogは、チームの大事な知識が競争相手に漏れるのを防ぐためだと説明している。ふつうの会社では数か月のことが多いが、F1では次の仕事を始めるまでに何年もかかることもあるという。",
+    "よく知られた例が、エイドリアン・ニューウェイだ。2024年5月にレッドブルのF1の仕事から離れ、ガーデニング休暇に入った。アストンマーティンに加わったのは2025年3月1日だった。",
+    "フェルスタッペンのレースエンジニア、ジャンピエロ・ランビアーゼも、移籍の時期が注目されている。2026年4月、マクラーレンはチーフ・レーシング・オフィサーとして「遅くとも2028年」に迎えると発表し、レッドブルは2028年に契約が切れたときに離れると説明した。GPblogは9月、ランビアーゼは2027年の初めにレッドブルを離れたあと、ガーデニング休暇に入るとみていた。マクラーレンのブラウンCEOは10月、「来年（2027年）のどこかで」加わってほしいと楽観的な見方を示した。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレンのブラウンCEOは、遅くとも2028年の加入とされるランビアーゼについて、2027年中に来ることに楽観的な見方を示した。",
+     "u": "/news/en-rn365-lambiase-mclaren-timeline/"
+    }
+   ],
+   "see": [
+    "driver-market",
+    "contract-option",
+    "technical-director",
+    "race-engineer",
+    "team-principal"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Labour Relations Agency（北アイルランド）",
+     "title": "Garden leave",
+     "url": "https://www.lra.org.uk/holidays-and-leave/other-types-leave/garden-leave"
+    },
+    {
+     "name": "GPblog",
+     "title": "The Lambiase saga shows how far Formula 1 has gone overboard（2026年9月19日）",
+     "url": "https://www.gpblog.com/en/features/the-lambiase-saga-shows-how-far-formula-1-has-gone-overboard"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Adrian Newey's gardening leave explained",
+     "url": "https://www.planetf1.com/news/adrian-newey-gardening-leave-red-bull-contract"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Newey Red Bull gardening leave date confirmed（アストンマーティン加入は2025年3月1日）",
+     "url": "https://racingnews365.com/newey-red-bull-gardening-leave-date-confirmed"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "GianPiero Lambiase to leave Red Bull as McLaren move confirmed for 2028 – round-up",
+     "url": "https://www.planetf1.com/news/gianpiero-lambiase-mclaren-move-red-bull-exit-2028"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "McLaren set latest timeline for Gianpiero Lambiase arrival from Red Bull（2026年10月5日）",
+     "url": "https://racingnews365.com/mclaren-set-latest-timeline-for-gianpiero-lambiase-arrival-from-red-bull"
+    },
+    {
+     "name": "McLaren 公式",
+     "title": "GianPiero Lambiase to join McLaren Mastercard Formula 1 Team as Chief Racing Officer（2026年4月9日）",
+     "url": "https://www.mclaren.com/racing/formula-1/2026/gianpiero-lambiase-joins-mclaren-mastercard-f1-team-chief-racing-officer/"
+    }
+   ]
+  },
+  {
+   "id": "macarena-wing",
+   "term": "マカレナウイング",
+   "cat": "マシンと空力",
+   "aliases": [
+    "マカレナ・ウイング",
+    "Macarena wing",
+    "回転式リアウイング",
+    "まかれなういんぐ",
+    "マカレナ"
+   ],
+   "words": [
+    "回転するウイング",
+    "フェラーリのリアウイング",
+    "可動ウイング",
+    "ストレートモード",
+    "アクティブエアロ"
+   ],
+   "short": "ストレートモードのとき、リアウイングのフラップが後ろへ大きく回転する方式の呼び名。",
+   "body": [
+    "2026年のアクティブエアロでは、決められた直線でウイングのフラップを動かし、空気抵抗を減らす（→ストレートモードとコーナーモード）。多くの方式はフラップを開いて寝かせるが、フェラーリはフラップを後ろへ回転させる方式を、シーズン前のバーレーンのテストで見せた。バスール代表が、1990年代半ばにはやったダンスにちなんで冗談で「マカレナ」と呼び、この名前が広まった（PlanetF1）。",
+    "フェラーリは3月の中国GPのFP1で短く使ったあと、その週末は外した。走った距離が足りないことと、動かす装置が1つしかない点への不安が理由だった（PlanetF1）。レッドブルも4月22日のシルバーストンでの走行で、似た考え方のウイングを使ったとみられている（GrandPrix.com）。7月のハンガリーGPでは、マクラーレンも自前の回転式をフリー走行で試し、実戦に使う見通しを示した（autosport web）。",
+    "レッドブルでは、フェルスタッペンの車でリアウイングのトラブルが2度起き、シュピールベルクとシルバーストンでクラッシュした。チームは、2つの原因は別だと説明した。FIAは、安全の決まりを満たしているかを確かめるため、フェラーリとレッドブルに連絡を取った。規則では、2つの位置の切り替えは0.4秒以内と決まっている（Motorsport.com）。",
+    "2026年10月初めには、FIAが示した2027年の技術規則で、2つのモードの切り替えにかけてよい時間が0.4秒から0.3秒に縮むと報じられた。故障したときにコーナーモードへ戻れるよう、対策を強めることも求められるという。回転式はほかの方式より動く量が大きいので、設計の見直しが必要になるかもしれないとの見方も伝えられた（Formula1.it、ScuderiaFans）。"
+   ],
+   "examples": [
+    {
+     "t": "2027年規則の改訂案で、可動ウイングの切り替え時間が400ミリ秒から300ミリ秒に縮み、回転式を使うフェラーリ、レッドブル、マクラーレンは設計の見直しを迫られる可能性があると伝えられた。",
+     "u": "/news/it-formula1-2027-macarena-wings-transition-time/"
+    }
+   ],
+   "see": [
+    "active-aero",
+    "straight-corner-mode",
+    "rear-wing",
+    "wing-flap",
+    "drag"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Ferrari delays debut of 'Macarena' wing after cautious Shanghai practice test（2026年3月17日）",
+     "url": "https://www.planetf1.com/news/ferrari-macarena-wing-explained-delayed-f1-2026-rear-wing-debut"
+    },
+    {
+     "name": "GrandPrix.com",
+     "title": "Ferrari 'Macarena' wing spreads as rivals bring Miami upgrades（2026年4月24日、レッドブルは4月22日のシルバーストンで同じ考え方の版を走らせたとみられる）",
+     "url": "https://www.grandprix.com/news/ferrari-macarena-wing-spreads-as-rivals-bring-miami-upgrades.html"
+    },
+    {
+     "name": "autosport web（carview!掲載）",
+     "title": "マクラーレン、回転式“マカレナ”リヤウイングの実戦投入にゴーサイン。ハンガリーでのテストで好感触（2026年8月3日）",
+     "url": "https://carview.yahoo.co.jp/news/detail/54c892795baecce80590309db54a0b237c15a9e7/?mode=top"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "FIA looking into Red Bull and Ferrari's rotating F1 wings after Max Verstappen's crashes",
+     "url": "https://www.motorsport.com/f1/news/fia-looking-into-red-bull-and-ferraris-rotating-f1-wings-after-max-verstappens-crashes/10837274/"
+    },
+    {
+     "name": "Scuderia Fans",
+     "title": "FIA's 2027 wing rule change could force Ferrari to rethink its movable-wing design（2026年10月2日）",
+     "url": "https://scuderiafans.com/fias-2027-wing-rule-change-could-force-ferrari-to-rethink-its-movable-wing-design/"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "Regolamento 2027, le ali tipo Macarena saranno penalizzate（2026年10月2日）",
+     "url": "https://www.formula1.it/news/32975/1/regolamento-2027-le-ali-tipo-macarena-saranno-penalizzate"
+    }
+   ]
+  },
+  {
+   "id": "africa-gp",
+   "term": "アフリカでのグランプリ",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "南アフリカGP",
+    "アフリカGP",
+    "South African Grand Prix",
+    "キャラミ",
+    "ルワンダGP",
+    "あふりかでのぐらんぷり"
+   ],
+   "words": [
+    "アフリカ",
+    "南アフリカ",
+    "モロッコ",
+    "ルワンダ",
+    "アフリカ復帰",
+    "1993年"
+   ],
+   "short": "F1の世界選手権はモロッコと南アフリカで開かれた。最後は1993年の南アフリカGP（キャラミ）。",
+   "body": [
+    "アフリカで開かれた世界選手権のレースは、モロッコと南アフリカだ。モロッコGPは1958年に1度だけ、カサブランカ近くのアイン・ディアブで開かれた。その年の最終戦で、2位に入ったホーソーンがチャンピオンを決めた。",
+    "南アフリカGPは、1962年にイーストロンドンで世界選手権のレースとして始まり、1967年からはヨハネスブルグ近くのキャラミで開かれた。1981年は、FISAとFOCAの対立のため、選手権に数えないレースになった。アパルトヘイト（人種隔離政策）のため1986〜1991年は開かれず、1992年と1993年に戻った。1993年はウィリアムズ・ルノーのプロストが勝ち、これがF1のアフリカでの最後のレースになっている。",
+    "F1はアフリカへの復帰を目指している。2024年12月、ルワンダのカガメ大統領は、首都キガリで開かれたFIAの総会で、グランプリの開催に名乗りを上げると発表した。2026年10月6日には、RacingNews365が、ルワンダでの開催で合意に達したと報じた。早ければ2030年に、キガリから約40kmのブゲセラ国際空港の近くに造る新しいサーキットで開き、設計は元F1ドライバーのアレクサンダー・ブルツの会社が担うという。ただし、F1の正式な発表はまだない（2026年10月9日時点）。"
+   ],
+   "examples": [
+    {
+     "t": "F1がルワンダでの開催で合意間近と報じられた。早ければ2030年で、ブゲセラ空港の近くに新しいサーキットを造るという（正式発表はまだ）。",
+     "u": "/news/de-motorsport-total-rwanda-gp-deal/"
+    }
+   ],
+   "see": [
+    "calendar",
+    "grand-prix",
+    "race-relocation",
+    "world-champion"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "RaceFans",
+     "title": "South African Grand Prix history（最後の開催は1993年のキャラミ、優勝プロスト）",
+     "url": "https://www.racefans.net/?p=33604"
+    },
+    {
+     "name": "Wikipedia",
+     "title": "South African Grand Prix",
+     "url": "https://en.wikipedia.org/wiki/South_African_Grand_Prix"
+    },
+    {
+     "name": "Formula One History",
+     "title": "Every Moroccan Grand Prix F1 Winner",
+     "url": "https://www.formulaonehistory.com/every-moroccan-grand-prix-f1-winner"
+    },
+    {
+     "name": "Ghanaian Times（BBCの報道を引用）",
+     "title": "Rwanda President Kagame announces F1 race bid（2024年12月16日）",
+     "url": "https://ghanaiantimes.com.gh/rwanda-president-kagame-announces-f1-race-bid/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "BREAKING: F1 to return to Africa for brand new grand prix（2026年10月6日）",
+     "url": "https://racingnews365.com/breaking-f1-to-return-to-africa-for-brand-new-grand-prix"
+    },
+    {
+     "name": "GPblog",
+     "title": "New African Grand Prix could get the green light for 2030（2026年10月6日）",
+     "url": "https://www.gpblog.com/en/rumors/new-african-grand-prix-could-get-the-green-light-for-2030"
+    }
+   ]
+  },
+  {
+   "id": "brake-wear",
+   "term": "ブレーキの摩耗と冷却",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ブレーキの温度",
+    "ブレーキ冷却",
+    "brake wear",
+    "brake cooling",
+    "ぶれーきのまもう"
+   ],
+   "words": [
+    "ブレーキが熱い",
+    "ブレーキ温度",
+    "ブレーキに厳しいコース",
+    "シンガポール",
+    "モントリオール",
+    "冷却穴"
+   ],
+   "short": "カーボンのブレーキは熱くなりすぎると早くいたむ。冷やす時間の短いコースほど厳しい。",
+   "body": [
+    "F1のブレーキは、カーボンのディスクとパッドでできている（→ブレーキ）。F1公式の解説によると、いちばんよく効くのはおよそ400〜800℃だ。1000℃ほどを超えると、金属がさびるのに似た反応で材料が急にいたむ。熱くなりすぎると、ブレーキが早くすり減ってしまう。",
+    "ブレーキは走行風で冷やす。ブレーキダクトを大きくしたり、ディスクの冷却穴を増やしたりすれば、よく冷える。ただし、ダクトを大きくすると空気の流れが乱れてタイムを失うので、チームは最後の手段と考えている（F1公式）。",
+    "厳しいのは、強いブレーキが続き、あいだに冷やす時間が少ないコースだ。F1公式は、シンガポールを、大きな減速が何度もあり、そのあいだに冷やす時間が短いコースと紹介している。2017年のシンガポールでは、フェラーリのディスクに約1400個の冷却穴があいていた。ブレンボは2023年、シンガポールのブレーキの厳しさを5段階の4とし、1周の制動区間は15か所、ターン14では時速289kmから90kmまで約2.3秒で減速すると説明した。モントリオールも、直線がブレーキを冷やしきるほど長くないので厳しい（F1公式、2019年）。",
+    "2026年は事情が少し変わった。後輪では減速の多くを回生（MGU-K）が受け持つので、後輪のブレーキはむしろ冷えすぎることが課題になっている（ザ・レース、→エネルギー回生）。"
+   ],
+   "examples": [
+    {
+     "t": "セパンのブレーキの厳しさは5段階で3。いちばん厳しいターン15では、約189kgのペダル荷重と4.7Gがかかる。",
+     "u": "/news/it-formula1-sepang-brakes-energy/"
+    }
+   ],
+   "see": [
+    "brakes",
+    "brake-ducts",
+    "brake-balance",
+    "harvesting",
+    "circuit-singapore",
+    "circuit-montreal"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "Tech Tuesday: Why the Circuit Gilles Villeneuve won't brake Red Bull（2019年）",
+     "url": "https://www.formula1.com/en/latest/article/tech-tuesday-why-the-circuit-gilles-villeneuve-wont-brake-red-bull.Z6EvoBKPz79840j4zP0Nt"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Tech insight: Ferrari's Singapore brakes and barge boards（2017年）",
+     "url": "https://www.formula1.com/en/latest/article/tech-insight-ferraris-singapore-brakes-and-barge-boards.AEzd4j0fteI4sYM00I88G"
+    },
+    {
+     "name": "The Brake Report（ブレンボの資料）",
+     "title": "Singapore GP Rated Tough on Brakes（2023年9月15日）",
+     "url": "https://thebrakereport.com/singapore-gp-rated-tough-on-brakes/"
+    },
+    {
+     "name": "The Race",
+     "title": "Another unforeseen headache set to be a theme of F1 2026",
+     "url": "https://www.the-race.com/formula-1/another-unforeseen-headache-set-to-be-a-theme-of-f1-2026"
+    }
+   ]
+  },
+  {
+   "id": "barriers",
+   "term": "ウォールと防護壁（バリア）",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "バリア",
+    "タイヤバリア",
+    "テックプロ",
+    "TecPro",
+    "ウォール",
+    "ばりあ"
+   ],
+   "words": [
+    "壁",
+    "コンクリートウォール",
+    "ガードレール",
+    "クラッシュ",
+    "防護壁",
+    "安全対策"
+   ],
+   "short": "コースの外で車を受け止める壁。ガードレールやコンクリート壁の前に、衝撃を吸う層を置く。",
+   "body": [
+    "コースのまわりには、コースから飛び出した車を受け止める壁がある。FIAの安全部門の資料は、ガードレールやコンクリートの壁を「最初の防護線」と呼んでいる。市街地コースでは、コースのすぐそばにコンクリートの壁が並ぶ（→ストリートサーキット）。",
+    "タイヤバリアは、直径のそろったツーリングカー用のタイヤを積み、ボルトでつなぐのがよいとされ、高さは1m以上にする。表面は、ベルトコンベアに使うような丈夫なゴムの帯で覆う。FIAの資料は、車が壁に20度より大きな角度で当たりうる場所に置くよう勧めている。レース用のタイヤやランフラットタイヤは使わない。",
+    "テックプロ（TecPro）は、ポリエチレンの外側の中に、衝撃を吸うフォーム（発泡材）を詰めたバリアだ。フォームがつぶれて衝撃を吸う。ガードレールの前に置いて使うことも、何層にも重ねて使うこともある（Formula One History）。2006年には、FIAの研究機関と共同で高速用の型が作られた。モナコ、シンガポール、モンツァ、シルバーストン、アブダビなど多くのサーキットで使われている（FIAが掲載した会社紹介）。"
+   ],
+   "examples": [
+    {
+     "t": "アルボンは、バクーでブレーキが遅れたときに内側の前輪が浮き、突風も重なって壁に当たったと説明した。",
+     "u": "/news/en-rn365-albon-three-wheel-crash/"
+    }
+   ],
+   "see": [
+    "run-off",
+    "gravel-trap",
+    "street-circuit",
+    "red-flag",
+    "marshal"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "FIA（安全部門）",
+     "title": "FIA Safety Bulletin 41: Tyre barriers（フィンランド自動車連盟のサイトに掲載）",
+     "url": "https://autourheilu.fi/site/assets/files/49408/fia_safety_bulletin_41.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "TECPRO Barriers（会社紹介）",
+     "url": "https://www.fia.com/sites/default/files/basicpage/file/TECPRO%20Barriers.pdf"
+    },
+    {
+     "name": "Formula One History",
+     "title": "What are TecPro Barriers in Formula 1? F1 Safety Explained",
+     "url": "https://www.formulaonehistory.com/tecpro-barriers-in-formula/"
+    }
+   ]
+  },
+  {
+   "id": "tear-off",
+   "term": "ティアオフ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ティア・オフ",
+    "テアオフ",
+    "tear-off",
+    "バイザーのフィルム",
+    "てぃあおふ"
+   ],
+   "words": [
+    "バイザー",
+    "ヘルメット",
+    "フィルム",
+    "視界",
+    "はがす",
+    "ブレーキダクトに詰まる"
+   ],
+   "short": "ヘルメットのバイザーに重ねて貼る透明なフィルム。汚れたら1枚はがして視界を戻す。",
+   "body": [
+    "ティアオフは、ヘルメットのバイザーに何枚か重ねて貼る、薄い透明のフィルムだ。タイヤのかす、油、虫などでバイザーが汚れたら、ドライバーが1枚はがし、下のきれいな面を出す。レースの長さによっては、5枚ほど重ねることもある（GPFans）。",
+    "はがしたフィルムは、風でコースに飛んでいく。これがほかの車のブレーキダクトに入ると、ブレーキが熱くなりすぎて、リタイアにつながることがある。2015年のスペインGPでは、アロンソの車の後ろのブレーキダクトにティアオフが入り、レースを終えた（RACER）。2022年のベルギーGPでは、ルクレールの右前のブレーキダクトに詰まり、早めのピットストップを強いられた（GPFans）。",
+    "FIAは2016年のモナコGPから、ティアオフを捨てることを禁じようとした。しかし、ドライバーとの話し合いで取りやめた。当時のレースディレクター、チャーリー・ホワイティングは、コックピットの中でしまおうとするほうが危ないと説明し、使う枚数をできるだけ少なくするよう求めた。"
+   ],
+   "examples": [],
+   "see": [
+    "brake-ducts",
+    "brakes",
+    "hans",
+    "dnf"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "GPFans",
+     "title": "F1 Explained: What is tear-off and how does it work?（2024年1月9日）",
+     "url": "https://www.gpfans.com/en/f1-news/1010626/f1-tear-offs/"
+    },
+    {
+     "name": "Formula1 Dictionary",
+     "title": "Visor Tearoffs in Formula 1 Racing",
+     "url": "https://www.formula1-dictionary.net/f1-visor-tearoffs-racing/"
+    },
+    {
+     "name": "RACER",
+     "title": "F1: 'Silly' visor tear-off ban arrives for Monaco（2016年5月25日）",
+     "url": "https://racer.com/2016/05/25/silly-visor-tear-off-ban-arrives-for-monaco/"
+    },
+    {
+     "name": "Sidepodcast",
+     "title": "FIA reverse decisions on visor tear-offs and year-long helmet designs（2016年5月26日）",
+     "url": "https://sidepodcast.com/news/fia-reverse-decisions-on-visor-tear-offs-and-year-long-helmet-designs"
+    }
+   ]
+  },
+  {
+   "id": "race-suit",
+   "term": "レーシングスーツと耐火下着",
+   "cat": "マシンと空力",
+   "aliases": [
+    "レーシングスーツ",
+    "ファイヤースーツ",
+    "耐火服",
+    "race suit",
+    "耐火アンダーウェア",
+    "れーしんぐすーつ"
+   ],
+   "words": [
+    "防火",
+    "耐火",
+    "火災",
+    "グローブ",
+    "バラクラバ",
+    "グロージャン"
+   ],
+   "short": "火に強い素材でできたドライバーの服。スーツ、手袋、下着に、FIAの耐火の基準がある。",
+   "body": [
+    "ドライバーは、火に強い素材でできたレーシングスーツを着る。その下にも、耐火の長袖と長ズボンの下着、靴下、頭と首を覆うバラクラバ（目出し帽）を着ける。これらの防火服には、FIAの規格（8856-2018）があり、F1では2020年から義務になった（FIA）。",
+    "FIAの資料によると、この規格では、熱を当てても内側の温度がすぐに上がらないことを確かめる。スーツは12秒以上、手袋は11秒以上（手のひらは8秒以上）、下着・靴下・バラクラバは5秒以上耐える必要がある。Motor Sport誌によると、スーツの基準は以前の11秒から上がり、全体で約20%守りが強くなった。",
+    "2020年のバーレーンGPでは、グロージャンの車が事故で燃え、グロージャンは約28秒、炎の中にいた。手にやけどを負ったが、自分で脱け出した（Motor Sport誌）。"
+   ],
+   "examples": [
+    {
+     "t": "アウディはシンガポールGPの特別カラーに合わせ、ヒュルケンベルグとボルトレートのレーシングスーツも同じデザインにした。",
+     "u": "/news/ja-f1gate-audi-singapore-livery/"
+    }
+   ],
+   "see": [
+    "hans",
+    "halo",
+    "cooling-vest",
+    "heat-hazard",
+    "livery"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "Strong Suit - AUTO Magazine（規格8856-2018、F1では2020年から義務）",
+     "url": "https://www.fia.com/news/strong-suit-auto-magazine"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "F1's new racesuit fire standards that arrived just in time for Grosjean",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/f1s-new-racesuit-fire-standards-that-arrived-just-in-time-for-grosjean"
+    },
+    {
+     "name": "GPR Direct",
+     "title": "The essential guide to FIA fireproof underwear",
+     "url": "https://www.gprdirect.com/the-essential-guide-to-fia-fireproof-underwear/"
+    }
+   ]
+  },
+  {
+   "id": "car-number",
+   "term": "カーナンバー",
+   "cat": "レース運営",
+   "aliases": [
+    "ゼッケン",
+    "車番",
+    "car number",
+    "ドライバーナンバー",
+    "かーなんばー"
+   ],
+   "words": [
+    "番号",
+    "1番",
+    "固定番号",
+    "チャンピオンの番号",
+    "33番",
+    "3番"
+   ],
+   "short": "車につける番号。2014年からはドライバーが2〜99から選んで使い続け、1番はチャンピオン用。",
+   "body": [
+    "2014年から、各ドライバーは2〜99の中から番号を1つ選び、F1にいるあいだ同じ番号を使う決まりになった（ウィリアムズ公式）。",
+    "1番は、前の年のチャンピオンのために取ってある。ただし、使うかどうかはチャンピオンが決められる。ドライバーがF1を離れると、その番号は2シーズンのあいだ、ほかの人は使えない（ウィリアムズ公式）。",
+    "2026年は、2025年のチャンピオンのノリスが1番を使う。1番をノリスに渡したフェルスタッペンは、33番に戻らず、3番を選んだ。3番は以前リカルドが使った番号で、本人も了承した。スカイスポーツによると、番号を替えられるように規則が改められていた。フェルスタッペンは2015〜2021年は33番だった。"
+   ],
+   "examples": [],
+   "see": [
+    "world-champion",
+    "rookie",
+    "seat"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Williams Racing 公式",
+     "title": "An Introduction to Driver Numbers in Formula 1（2024年9月29日）",
+     "url": "https://www.williamsf1.com/articles/b0a21eb2-dacc-4831-ab49-c5f821e28af9/an-introduction-to-driver-numbers-in-formula-1"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Max Verstappen: Red Bull driver reveals new car number for 2026 F1 season after losing No 1 to Lando Norris（2025年12月18日）",
+     "url": "https://www.skysports.com/f1/news/12433/13485085/max-verstappen-red-bull-driver-reveals-new-car-number-for-2026-f1-season-after-losing-no-1-to-lando-norris"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Lando Norris: F1 world champion to take car number 1 from 2026 season",
+     "url": "https://www.skysports.com/f1/news/12433/13481020/lando-norris-f1-world-champion-mclaren-driver-to-take-car-number-1-away-from-max-verstappen-from-2026-season"
+    }
+   ]
+  },
+  {
+   "id": "media-day",
+   "term": "木曜のメディアデー",
+   "cat": "レース運営",
+   "aliases": [
+    "メディアデー",
+    "media day",
+    "記者会見",
+    "FIA会見",
+    "めでぃあでー"
+   ],
+   "words": [
+    "木曜",
+    "会見",
+    "取材",
+    "インタビュー",
+    "メディア対応",
+    "遅刻の罰金"
+   ],
+   "short": "走行が始まる前の木曜日。ドライバーがFIAの記者会見や取材に応じる日。",
+   "body": [
+    "グランプリの週末は、走行が始まる前の木曜日が、メディアの取材の日（メディアデー）になっている。FIAの記者会見には、決められた数人のドライバーが呼ばれる。たとえば2026年のマイアミGPでは、木曜の会見に6人のドライバーが呼ばれた。",
+    "そのあとも会見は続く。FIAの日程表では、金曜にチーム代表などの会見があり、土曜は予選（スプリントの週末はスプリントも）の上位3人、日曜は決勝の上位3人が会見に出る。",
+    "公式のメディアの仕事は義務で、遅れると罰を受けることがある。2026年のベルギーGPでは、オコンが木曜のFIA会見に約1分遅れ、チームのハースに5000ユーロの罰金（12か月の執行猶予付き）が科された（GPFans）。2023年のオランダGPでは、ボッタスが木曜の取材に遅れ、チームが戒告を受けた（FIAの裁定書）。",
+    "2026年は、取材の義務が一部減った。金曜の2回目のフリー走行のあと、各チームが取材に出すのは、ドライバー1人と幹部1人でよくなった（以前は全ドライバー）。どちらのドライバーを出すかは、毎戦交代する（GPFans）。"
+   ],
+   "examples": [
+    {
+     "t": "シンガポールGPの木曜には、オコンが来季もF1に残る意向を語り、冷却ベストの評価はドライバーで割れた。",
+     "u": "/news/en-therace-singapore-day-one/"
+    },
+    {
+     "t": "セパンの木曜会見では、オコンが来季のシートを諦めていないと語り、サインツは5グリッド降格に抗議する考えを示した。",
+     "u": "/news/en-therace-malaysia-day-one-lessons/"
+    }
+   ],
+   "see": [
+    "fine",
+    "reprimand",
+    "suspended-penalty",
+    "race-weekend-format",
+    "free-practice"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "FIA",
+     "title": "F1 2026 Miami GP - Schedule press conferences",
+     "url": "https://www.fia.com/news/f1-2026-miami-gp-schedule-press-conferences"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 star under investigation over rule breach at FIA press conference（2026年7月17日）",
+     "url": "https://www.gpfans.com/en/f1-news/1087817/esteban-ocon-f1-fia-press-conference-fine-late-belgian-grand-prix/"
+    },
+    {
+     "name": "FIA",
+     "title": "2023 Dutch Grand Prix - Infringement - Alfa Romeo - Thursday Media Commitments",
+     "url": "https://www.fia.com/sites/default/files/decision-document/2023 Dutch Grand Prix - Infringement - Alfa Romeo - Thursday Media Commitments.pdf"
+    },
+    {
+     "name": "GPFans",
+     "title": "FIA confirms cut in media access to F1 drivers in 2026（2026年3月3日）",
+     "url": "https://www.gpfans.com/en/f1-news/1077555/f1-2026-drivers-fia-media-access-cut/"
+    }
+   ]
+  },
+  {
+   "id": "pit-wall",
+   "term": "ピットウォール",
+   "cat": "レース運営",
+   "aliases": [
+    "ピットウオール",
+    "ピットスタンド",
+    "pit wall",
+    "pitwall",
+    "ぴっとうぉーる"
+   ],
+   "words": [
+    "指令席",
+    "戦略",
+    "チーム代表の席",
+    "モニター",
+    "無線",
+    "ピットボード"
+   ],
+   "short": "ピットレーンとメインストレートの間の壁。その上に、チームがレースを指揮する席が並ぶ。",
+   "body": [
+    "ピットウォールは、ピットレーンとメインストレートを分ける壁のことで、その上に各チームの席が並ぶ。席にはモニターと無線の操作盤があり、タイム、データ、天気などを見ながらレースを指揮する（Autosport）。",
+    "座るのは、チーム代表、戦略の責任者、各ドライバーのレースエンジニアなどだ。席の数はチームで違い、3〜8席ほどある（Autosport）。マクラーレンの2026年の決勝では、チーム代表のステラ、CEOのブラウン、戦略を率いる責任者、スポーティングディレクター、2人のレースエンジニアなどが並ぶ。マクラーレンのレースエンジニアは、練習と予選のあいだはガレージの中の席で働き、決勝だけピットウォールに座る（マクラーレン公式）。",
+    "F1はとてもうるさいので、ピットウォールではヘッドセットの無線で話す。ガレージのメカニックや、チームの工場ともつながっている。フェンスのすき間からはピットボードを出し、ドライバーに順位やタイムを伝える（→ピットボード）。レース後の祝福でピットウォールによじ登ると、コースに落ちる危険があるため、罰を受けることがある（Autosport）。"
+   ],
+   "examples": [
+    {
+     "t": "ハミルトンが予選でピットウォールからの情報不足をこぼしたとされ、掲示板で話題になった。",
+     "u": "/news/ja-f1are-hamilton-engineer-radio/"
+    }
+   ],
+   "see": [
+    "race-engineer",
+    "team-principal",
+    "pit-board",
+    "team-radio",
+    "pit-lane",
+    "team-manager"
+   ],
+   "checked": "2026-10-09",
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "Everything you need to know about the pitwall in F1: who sits there and what does it do?",
+     "url": "https://www.autosport.com/f1/news/everything-you-need-to-know-about-the-pitwall-in-f1-who-sits-there-and-what-does-it-do/10588720/"
+    },
+    {
+     "name": "McLaren 公式",
+     "title": "Who sits on McLaren's pit wall?（2026年7月15日）",
+     "url": "https://www.mclaren.com/racing/formula-1/2026/who-sits-on-mclarens-pit-wall/"
     }
    ]
   }

@@ -2300,10 +2300,11 @@
    ],
    "role": "ヘッド・オブ・レーシング兼マックス・フェルスタッペンのレースエンジニア",
    "org": "レッドブル",
-   "short": "レッドブルのヘッド・オブ・レーシング兼フェルスタッペンのレースエンジニア。遅くとも2028年にマクラーレンへ。",
+   "short": "レッドブルのヘッド・オブ・レーシング兼フェルスタッペンのレースエンジニア。マクラーレンへの移籍が決まっており、加入は遅くとも2028年。ブラウンCEOは2027年中の加入に楽観的。",
    "avoid": [
     "2027年以降も「レッドブルのヘッド・オブ・レーシング」と書く（2027年初めからトム・マッカローが同職に就くとレッドブルが発表）",
-    "マクラーレンの役職（チーフ・レーシング・オフィサー）を現職として書く（就任は遅くとも2028年）"
+    "マクラーレンの役職（チーフ・レーシング・オフィサー）を現職として書く（就任は遅くとも2028年）",
+    "マクラーレン加入を「2027年」と断定して書く（公式発表は「遅くとも2028年」。2027年はブラウンCEOの楽観的な見通し）"
    ],
    "words": [
     "レッドブル",
@@ -2337,10 +2338,15 @@
      "name": "autosport web",
      "title": "レッドブル、アストンの上級エンジニア、マッカローの加入を発表。ランビアーゼ後任として2027年からレーシング部門責任者に（2026年9月2日、「ジャンピエロ・ランビアーゼ」）",
      "url": "https://www.as-web.jp/f1/1347164"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "McLaren set latest timeline for Gianpiero Lambiase arrival from Red Bull（2026年10月5日、ブラウン「来年のどこかでパパイヤ色の彼を見られると楽観している」）",
+     "url": "https://racingnews365.com/mclaren-set-latest-timeline-for-gianpiero-lambiase-arrival-from-red-bull"
     }
    ],
    "appears": [],
-   "checked": "2026-10-02"
+   "checked": "2026-10-09"
   },
   {
    "id": "david-sanchez",
@@ -3015,6 +3021,147 @@
    ],
    "appears": [],
    "checked": "2026-10-07"
+  },
+  {
+   "id": "mario-isola",
+   "name": "マリオ・イゾラ",
+   "kana": "",
+   "en": "Mario Isola",
+   "aliases": [
+    "イゾラ",
+    "Isola"
+   ],
+   "role": "ゼネラルマネージャー",
+   "org": "ACIスポーツ",
+   "short": "イタリアの自動車スポーツ連盟にあたるACIスポーツのゼネラルマネージャー（2026年7月から）。2026年2月まで、ピレリのモータースポーツ部門の責任者としてF1のタイヤを担当した。",
+   "avoid": [
+    "2026年3月以降の「ピレリのモータースポーツ責任者」と書く（3月1日からダリオ・マラフスキが後任。イゾラは引き継ぎのため7月1日まで在籍）"
+   ],
+   "words": [
+    "ピレリ",
+    "元F1タイヤ責任者",
+    "ACIスポーツ",
+    "イタリア"
+   ],
+   "sources": [
+    {
+     "name": "Formula 1 公式",
+     "title": "Mario Isola to leave Head of Motorsport role at Pirelli as Dario Marrafuschi announced as replacement（2026年2月26日）",
+     "url": "https://www.formula1.com/en/latest/article/mario-isola-to-leave-head-of-motorsport-role-at-pirelli-as-dario-marrafuschi.RVHl3VmCtalinpSsLMtKq"
+    },
+    {
+     "name": "Pirelli 公式",
+     "title": "Pirelli: Dario Marrafuschi appointed new Head of Motorsport replacing Mario Isola（2026年2月26日）",
+     "url": "https://press.pirelli.com/pirelli-dario-marrafuschi-appointed-new-head-of-motorsport-replacing-mario-isola/"
+    },
+    {
+     "name": "L'Automobile（ACI）",
+     "title": "Mario Isola、ACIスポーツのゼネラルマネージャーとして活動を開始（2026年7月3日）",
+     "url": "https://www.lautomobile.aci.it/?p=46215"
+    },
+    {
+     "name": "GrandPrix.com",
+     "title": "Isola to leave Pirelli and head Italian motorsport（2026年2月27日、7月1日からACIスポーツの要職）",
+     "url": "https://www.grandprix.com/news/isola-to-leave-pirelli-and-head-italian-motorsport.html"
+    },
+    {
+     "name": "autosport web",
+     "title": "ピレリのモータースポーツ部門責任者マリオ・イゾラが退社へ。3月からの後任者が発表に（2026年2月27日）",
+     "url": "https://www.as-web.jp/f1/1293777"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-09"
+  },
+  {
+   "id": "dario-marrafuschi",
+   "name": "ダリオ・マラフスキ",
+   "kana": "",
+   "en": "Dario Marrafuschi",
+   "aliases": [
+    "マラフスキ",
+    "Marrafuschi"
+   ],
+   "role": "モータースポーツ・ビジネスユニット責任者",
+   "org": "ピレリ",
+   "short": "ピレリのモータースポーツ部門の責任者。2026年3月1日に就任し、マリオ・イゾラの後を継いだ。2008年にピレリに入り、F1の研究開発に長く関わった。",
+   "avoid": [
+    "マリオ・イゾラを現在のピレリの責任者と書く（イゾラは2026年7月1日に退社）"
+   ],
+   "words": [
+    "ピレリ",
+    "タイヤ",
+    "モータースポーツ責任者",
+    "イゾラの後任"
+   ],
+   "sources": [
+    {
+     "name": "Pirelli 公式",
+     "title": "Pirelli: Dario Marrafuschi appointed new Head of Motorsport replacing Mario Isola（2026年2月26日、Head of Pirelli's Motorsport Business Unit）",
+     "url": "https://press.pirelli.com/pirelli-dario-marrafuschi-appointed-new-head-of-motorsport-replacing-mario-isola/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Mario Isola to leave Head of Motorsport role at Pirelli as Dario Marrafuschi announced as replacement（2026年2月26日、3月1日就任、2008年入社）",
+     "url": "https://www.formula1.com/en/latest/article/mario-isola-to-leave-head-of-motorsport-role-at-pirelli-as-dario-marrafuschi.RVHl3VmCtalinpSsLMtKq"
+    },
+    {
+     "name": "autosport web",
+     "title": "ピレリのモータースポーツ部門責任者マリオ・イゾラが退社へ。3月からの後任者が発表に（2026年2月27日、「ダリオ・マラフスキ」表記）",
+     "url": "https://www.as-web.jp/f1/1293777"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-09"
+  },
+  {
+   "id": "gernot-doellner",
+   "name": "ゲルノート・デルナー",
+   "kana": "",
+   "en": "Gernot Döllner",
+   "aliases": [
+    "デルナー",
+    "デリナー",
+    "ゲルノット・デルナー",
+    "Döllner",
+    "Doellner"
+   ],
+   "role": "取締役会会長（CEO）",
+   "org": "アウディ",
+   "short": "アウディ本社（AUDI AG）の取締役会会長（CEO）。2023年9月1日に就任し、2025年秋に再任された。アウディのF1参戦のために買収したアウディ・モータースポーツAGの会長も務める。",
+   "avoid": [
+    "アウディF1チームの代表と書く（チーム代表はマッティア・ビノット）"
+   ],
+   "words": [
+    "アウディ",
+    "CEO",
+    "株式売却",
+    "カタール投資庁"
+   ],
+   "sources": [
+    {
+     "name": "Audi 公式",
+     "title": "Gernot Döllner – Chairman of the Board of Management at AUDI AG（2023年9月1日就任、Audi Motorsport AG の会長）",
+     "url": "https://www.audi.com/en/biographies/gernot-doellner-chairman-of-the-board-of-management-15562"
+    },
+    {
+     "name": "Car Watch（Impress）",
+     "title": "アウディ、新取締役会会長としてゲルノート・デルナー氏が9月1日就任予定（2023年6月30日、カタカナ表記の確認）",
+     "url": "https://car.watch.impress.co.jp/docs/news/1513057.html"
+    },
+    {
+     "name": "GPFans",
+     "title": "Audi considering F1 sale as CEO reveals 'strong interest'（2026年9月17日）",
+     "url": "https://www.gpfans.com/en/f1-news/1090414/audi-considering-f1-sale-as-ceo-reveals-strong-interest/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Audi confirms significant sale as Qatar purchases stake in F1 team（2024年11月29日）",
+     "url": "https://www.planetf1.com/news/audi-f1-sell-team-stake-qatar"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-09"
   }
  ]
 }
