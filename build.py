@@ -179,6 +179,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="F1 Grid Walk" href="/feed.xml">
 <meta name="apple-mobile-web-app-title" content="Grid Walk">
 <meta name="application-name" content="Grid Walk">
 <meta property="og:type" content="{og_type}">
@@ -206,7 +207,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 {body}
 </main>
 <footer><div class="wrap">
-  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。</p>
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。　<a href="/feed.xml">RSS</a></p>
   <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
 </div></footer>
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -1516,6 +1517,139 @@ def top_rules_slot():
         open(ip, 'w', encoding='utf-8').write(out)
 
 
+# ---- per-article share image (owner's request, 8 Oct 2026) -----------------------------------------
+# news/<id>/og.png: the headline on the site's paper colour. Needs Pillow and the Noto CJK fonts;
+# when either is missing the article simply keeps the site-wide og-image.png.
+OG_SERIF = '/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc'
+OG_SANS = '/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc'
+OG_VER = 'og1'
+OG_KC = {'primary': '#2E6B3A', 'news': '#4B5261', 'tech': '#1F5E8A', 'rumor': '#B0532C', 'fan': '#7A4A93'}
+OG_NOSTART = set('、。，．・：；？！」』）】〕〉》ー…‥ァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎ々)]}%,.!?')
+OG_NOEND = set('「『（【〔〈《([{')
+_OG = {}
+
+
+def _og_tools():
+    if 'ok' not in _OG:
+        try:
+            from PIL import Image, ImageDraw, ImageFont, PngImagePlugin
+            ok = os.path.exists(OG_SERIF) and os.path.exists(OG_SANS) and os.path.exists(os.path.join(ROOT, 'og-image.png'))
+            if ok:
+                _OG.update(Image=Image, Draw=ImageDraw, Font=ImageFont, Png=PngImagePlugin,
+                           logo=Image.open(os.path.join(ROOT, 'og-image.png')).convert('RGB').crop((80, 62, 500, 172)))
+            _OG['ok'] = ok
+        except Exception:
+            _OG['ok'] = False
+    return _OG['ok']
+
+
+def _og_wrap(d, text, font, w):
+    lines, cur = [], ''
+    for ch in text:
+        t = cur + ch
+        if not cur or d.textlength(t, font=font) <= w:
+            cur = t
+            continue
+        if (ch in OG_NOSTART or cur[-1] in OG_NOEND) and len(cur) > 1:
+            lines.append(cur[:-1])
+            cur = cur[-1] + ch
+        else:
+            lines.append(cur)
+            cur = ch
+        cur = cur.lstrip('\u3000 ')
+    if cur:
+        lines.append(cur)
+    return [l.rstrip('\u3000 ') for l in lines]
+
+
+def article_og(a, k):
+    """Write news/<id>/og.png when the headline changed; return its URL (or None to use the site image)."""
+    if not _og_tools():
+        return None
+    src = a['source'] + ('\u3000' + a['region'] if a.get('region') else '')
+    stamp = hashlib.sha1('|'.join((OG_VER, a['title'], src, k)).encode()).hexdigest()[:10]
+    rel = f'news/{a["id"]}/og.png'
+    p = os.path.join(ROOT, rel)
+    url = f'{SITE}/{rel}?v={stamp}'
+    I = _OG['Image']
+    try:
+        if os.path.exists(p) and I.open(p).text.get('gw') == stamp:
+            return url
+    except Exception:
+        pass
+    try:
+        F, W, H = _OG['Font'].truetype, 1200, 630
+        im = I.new('RGB', (W, H), '#F3EFE6')
+        d = _OG['Draw'].Draw(im)
+        im.paste(_OG['logo'], (80, 52))
+        fs, fk = F(OG_SANS, 26), F(OG_SANS, 22)
+        sw = d.textlength(src, font=fs)
+        kw = d.textlength(KIND[k], font=fk) + 28
+        x = W - 80 - sw
+        d.text((x, 92), src, font=fs, fill='#5B5F57')
+        kx = x - 18 - kw
+        d.rounded_rectangle((kx, 90, kx + kw, 128), radius=8, outline=OG_KC[k], width=2)
+        d.text((kx + 14, 94), KIND[k], font=fk, fill=OG_KC[k])
+        for size in (68, 62, 56, 50):
+            f = F(OG_SERIF, size)
+            lines = _og_wrap(d, a['title'], f, 1040)
+            lh = int(size * 1.38)
+            maxl = 330 // lh
+            if len(lines) <= maxl:
+                break
+        if len(lines) > maxl:
+            lines = lines[:maxl]
+            l = lines[-1]
+            while l and d.textlength(l + '…', font=f) > 1040:
+                l = l[:-1]
+            lines[-1] = l + '…'
+        y0 = 200 + (340 - lh * len(lines)) // 2
+        for i, l in enumerate(lines):
+            d.text((80, y0 + i * lh), l, font=f, fill='#1F2420')
+        d.rectangle((0, 560, W, H), fill='#1F2420')
+        fb = F(OG_SANS, 26)
+        d.text((80, 577), '世界のF1ニュースを、日本語で。', font=fb, fill='#F3EFE6')
+        u = 'f1gridwalk.github.io'
+        d.text((W - 80 - d.textlength(u, font=fb), 577), u, font=fb, fill='#E8946C')
+        info = _OG['Png'].PngInfo()
+        info.add_text('gw', stamp)
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        im.quantize(colors=48, method=I.Quantize.MEDIANCUT).save(p, optimize=True, pnginfo=info)
+        return url
+    except Exception:
+        return None
+
+
+# ---- RSS feed (owner's request, 8 Oct 2026) ---------------------------------------------------------
+def rfc822(d):
+    d = d.astimezone(timezone.utc)
+    return d.strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+
+def build_feed(allarts):
+    """feed.xml: the newest news summaries and columns in one RSS 2.0 feed."""
+    items = []
+    for a in allarts[:40]:
+        items.append((when(a), a['title'], f'{SITE}/news/{a["id"]}/', a.get('summary', ''), KIND[kind_of(a)]))
+    for x in ALL_COLS[:20]:
+        dt = x['dt'] if x['dt'].tzinfo else x['dt'].replace(tzinfo=JST)
+        items.append((dt, x['title'], SITE + x['url'], '', COL_TAG[x['kind']]))
+    items.sort(key=lambda t: t[0], reverse=True)
+    items = items[:50]
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">', '<channel>',
+           '<title>F1 Grid Walk（F1グリッドウォーク）</title>', f'<link>{SITE}/</link>',
+           '<description>世界のF1ニュースを、日本語の見出しと短い要約で。海外報道の読み比べや深掘りのコラムも。</description>',
+           '<language>ja</language>', f'<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>',
+           f'<lastBuildDate>{rfc822(items[0][0]) if items else rfc822(datetime.now(JST))}</lastBuildDate>']
+    for dt, title, link, desc, cat in items:
+        out.append(f'<item><title>{e(title)}</title><link>{e(link)}</link><guid isPermaLink="true">{e(link)}</guid>'
+                   f'<pubDate>{rfc822(dt)}</pubDate><category>{e(cat)}</category>'
+                   + (f'<description>{e(desc)}</description>' if desc else '') + '</item>')
+    out += ['</channel>', '</rss>']
+    write('feed.xml', '\n'.join(out) + '\n')
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -1601,11 +1735,21 @@ def main():
                         + (f'<p class="lead">{e(t["summary"])}</p>' if t.get('summary') else '')
                         + f'<p class="lead">ほかに {len(others)} 本の記事があります。</p>'
                         + '<ul class="list">' + ''.join(item_li(x, flag_of) for x in others[:12]) + '</ul></section>')
-        latest = [x for x in allarts if x['id'] != a['id'] and x.get('topic') != a.get('topic')][:6]
+        shown = {a['id']} | {x['id'] for x in others[:12]}
+        tk = next((t for t in (a.get('teams') or []) if t in teams), None)
+        if tk:
+            same = [x for x in allarts if tk in (x.get('teams') or []) and x['id'] not in shown][:5]
+            if same:
+                tn = teams[tk].get('name') or teams[tk].get('en')
+                body.append(f'<section><h2>{e(tn)}の記事</h2><ul class="list">'
+                            + ''.join(item_li(x, flag_of) for x in same) + '</ul></section>')
+                shown |= {x['id'] for x in same}
+        latest = [x for x in allarts if x['id'] not in shown and x.get('topic') != a.get('topic')][:6]
         if latest:
             body.append('<section><h2>最新の記事</h2><ul class="list">'
                         + ''.join(item_li(x, flag_of) for x in latest)
                         + '</ul><p><a href="/">トップで全部見る →</a>　<a href="/news/">ニュース一覧 →</a></p></section>')
+        og_url = article_og(a, k)
         crumbs_ld = json.dumps({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'ニュース一覧', 'item': SITE + '/news/'},
@@ -1613,7 +1757,7 @@ def main():
         crumbs_ld = crumbs_ld.replace('</', '<\\/')
         art_ld = {'@context': 'https://schema.org', '@type': 'NewsArticle', 'headline': a['title'], 'description': desc,
                   'datePublished': a['published'], 'dateModified': a['published'], 'inLanguage': 'ja',
-                  'image': [OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                  'image': [og_url or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                   'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'],
                                 'publisher': {'@type': 'Organization', 'name': a['source']}}}
         if nused:
@@ -1621,7 +1765,7 @@ def main():
         head = ((f'<style>{DEEP_CSS}</style>\n' if dg else '') + (f'<style>{RULES_CSS}</style>\n' if nused else '') + f'<meta property="article:published_time" content="{e(a["published"])}">\n'
                 f'<script type="application/ld+json">{crumbs_ld}</script>\n' + ld(art_ld))
         if write(f'news/{a["id"]}/index.html',
-                 page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head)):
+                 page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head, og_image=og_url)):
             changed += 1
 
     # the list page: every article, newest first, grouped by day (JST)
@@ -1658,6 +1802,7 @@ def main():
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
     sm.append('</urlset>')
     write('sitemap.xml', '\n'.join(sm) + '\n')
+    build_feed(allarts)
 
     # robots.txt: everything may be crawled; say where the sitemap is
     write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
