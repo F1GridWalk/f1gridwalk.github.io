@@ -29,7 +29,7 @@ for s in D['sections']:
             steps.append(('img', f'img/{key}-c{n}.png', b['chart']['title'], f'{part}_図{n}_{b["chart"]["title"]}.png'))
 if teaser: cur.append(teaser)
 cur.append('<h2>続きは F1 Grid Walk で</h2><p>サイトの記事では、グラフに指で触ると数字が出ます。「データと記録」の表と、出典の一覧もあります。</p>')
-cur.append(f'<p><strong>DEEP GRID セパンのタイヤ {part}「{e(D["title"].split("】")[-1])}」</strong></p><p><a href="{url}">{url}</a></p>')
+cur.append(f'<p><strong>DEEP GRID {part}「{e(D["title"].split("】")[-1])}」</strong></p><p><a href="{url}">{url}</a></p>')
 cur.append('<p>━━━━━━━━━━</p><p><strong>F1 Grid Walk では、世界のF1ニュースを毎日日本語でまとめています。</strong></p><p>海外の記事の要約を、毎日載せています。</p><p>ほかの海外記事も読みたい方は、F1 Grid Walkへ。</p><p><a href="https://f1gridwalk.github.io/">https://f1gridwalk.github.io/</a></p><p>━━━━━━━━━━</p>')
 cur.append(''.join(f'<p><a href="{s["url"]}">出典：{e(s["name"])}</a></p>' for s in D['sources']))
 flush(f'本文 その{seg}')
