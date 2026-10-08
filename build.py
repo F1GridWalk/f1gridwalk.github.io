@@ -1241,10 +1241,10 @@ RULES_JS = '''<script>
   function lev(a,b){ var m=a.length,n=b.length,p=[],i,j; for(j=0;j<=n;j++)p[j]=j; for(i=1;i<=m;i++){ var prev=p[0]; p[0]=i; for(j=1;j<=n;j++){ var tmp=p[j]; p[j]=Math.min(p[j]+1,p[j-1]+1,prev+(a[i-1]===b[j-1]?0:1)); prev=tmp; } } return p[n]; }
   function near(q,name){ var best=lev(q,name),L=q.length,i; if(name.length>L){ for(i=0;i+L<=name.length;i++){ best=Math.min(best,lev(q,name.substr(i,L))); } } return best; }
   var q=document.getElementById('rb-q'); if(!q) return;
-  var items=[].slice.call(document.querySelectorAll('details.rb')), cat='all';
+  var items=[].slice.call(document.querySelectorAll('.rb-list .rb')), cat='all';
   var cnt=document.getElementById('rb-count'), none=document.getElementById('rb-none'), maybe=document.getElementById('rb-maybe');
   var parent=items.length?items[0].parentNode:null, endMark=items.length?items[items.length-1].nextSibling:null;
-  items.forEach(function(d,i){ d._i=i; d._k=norm(d.getAttribute('data-k')); d._names=(d.getAttribute('data-names')||'').split('|').map(norm).filter(Boolean); d._n=d._names.join(' '); d._w=(d.getAttribute('data-w')||'').split('|').map(norm).filter(Boolean); });
+  items.forEach(function(d,i){ d._i=i; d._k=norm([d.getAttribute('data-k'),d.getAttribute('data-names'),d.getAttribute('data-w'),d.textContent].join(' ')); d._names=(d.getAttribute('data-names')||'').split('|').map(norm).filter(Boolean); d._n=d._names.join(' '); d._w=(d.getAttribute('data-w')||'').split('|').map(norm).filter(Boolean); });
   function score(d,j){ var s=0; d._names.forEach(function(nm){ if(nm===j) s=Math.max(s,3); else if(nm.indexOf(j)===0) s=Math.max(s,2); else if(nm.indexOf(j)>=0) s=Math.max(s,1); }); if(!s) d._w.forEach(function(w){ if(w.indexOf(j)>=0||j.indexOf(w)>=0) s=0.5; }); return s; }
   function run(){
     var ts=toks(q.value), j=ts.join(''), n=0;
@@ -1255,7 +1255,6 @@ RULES_JS = '''<script>
     var any=false;
     if(!n&&ts.length>1){ any=true; items.forEach(function(d){ var ok=(cat==='all'||d.getAttribute('data-c')===cat)&&ts.some(function(t){ return d._k.indexOf(t)>=0; }); d.hidden=!ok; if(ok) n++; d._s=0; ts.forEach(function(t){ d._s=Math.max(d._s,score(d,t)); }); }); }
     if(parent){ items.slice().sort(function(a,b){ return (a.hidden-b.hidden)||(b._s-a._s)||(a._i-b._i); }).forEach(function(d){ parent.insertBefore(d,endMark); }); }
-    items.forEach(function(d){ if(!d.hidden) d.open = ts.length>0 && (n<=2 || d._s===3); });
     cnt.textContent=(ts.length||cat!=='all')?n+' / '+items.length+' ENTRIES'+(any&&n?' · どれかの言葉を含む':''):items.length+' ENTRIES';
     none.style.display=n?'none':'block';
     if(!n&&maybe){
@@ -1271,13 +1270,17 @@ RULES_JS = '''<script>
   function setCat(c){ cat=c; cbs.forEach(function(x){ x.setAttribute('aria-pressed',String(x.getAttribute('data-c')===c)); }); run(); }
   cbs.forEach(function(b){ b.addEventListener('click',function(){ setCat(cat===b.getAttribute('data-c')?'all':b.getAttribute('data-c')); }); });
   /* 検索 button (and Enter): filter, close the keyboard, jump to the best match */
-  function go(){ run(); q.blur(); var f=document.querySelector('details.rb:not([hidden])'); if(q.value&&f){ f.scrollIntoView({behavior:'smooth',block:'start'}); } }
+  function go(){ run(); q.blur(); var f=document.querySelector('.rb-list .rb:not([hidden])'); if(q.value&&f){ f.scrollIntoView({behavior:'smooth',block:'start'}); } }
   var gb=document.getElementById('rb-go'); if(gb) gb.addEventListener('click',go);
   q.addEventListener('keydown',function(ev){ if(ev.key==='Enter'){ ev.preventDefault(); go(); } });
   q.addEventListener('search',run);
   [].forEach.call(document.querySelectorAll('.rb-none button'),function(b){ b.addEventListener('click',function(){ q.value=b.textContent; run(); }); });
-  function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.tagName==='DETAILS'){ d.hidden=false; d.open=true; setTimeout(function(){d.scrollIntoView({block:'start'});},50);} }
+  /* old links (/deep/rules/#id) go to the entry's own page */
+  function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.classList.contains('rb')){ location.replace(d.getAttribute('href')); } }
   window.addEventListener('hashchange',openHash); openHash();
+  /* full-text search: the explanations are loaded only when the reader starts searching */
+  var full=false; function loadFull(){ if(full) return; full=true; fetch('/deep/rules/search.json').then(function(r){ return r.json(); }).then(function(m){ items.forEach(function(d){ var x=m[d.id]; if(x) d._k+=norm(x); }); if(q.value) run(); }).catch(function(){}); }
+  q.addEventListener('focus',loadFull); q.addEventListener('input',loadFull);
   try{ var sp=new URLSearchParams(location.search), p=sp.get('q'), c=sp.get('c'); if(p){ q.value=p; q.dispatchEvent(new Event('input')); } if(c){ setCat(c); } else if(p){ run(); } }catch(e){}
   /* grid penalty calculator */
   var t=document.getElementById('pu-tool');
@@ -1349,7 +1352,7 @@ def link_terms(html_text, used):
         w = e(word)
         i = html_text.find(w)
         if i >= 0:
-            html_text = html_text[:i] + f'<a class="term" href="/deep/rules/#{tid}" data-term="{tid}">{w}</a>' + html_text[i + len(w):]
+            html_text = html_text[:i] + f'<a class="term" href="/deep/rules/{tid}/" data-term="{tid}">{w}</a>' + html_text[i + len(w):]
             used.add(tid)
     return html_text
 
@@ -1433,33 +1436,37 @@ def rules_entry(where, on_page=False):
             f'<a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/{where}/all">すべての用語を見る →</a></div>' + RBX_JS)
 
 
-def build_rules():
-    if not RULES:
-        return []
-    R = RULES
-    url = SITE + '/deep/rules/'
-    name = {t['id']: t['term'] for t in R['terms']}
-    cats = ''.join(f'<button type="button" data-c="{e(c)}" aria-pressed="false">{e(c)}</button>' for c in R['cats'])
-    items = []
-    for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
-        # search also hits names and words inside the explanation and this season's examples (e.g. a driver's name)
-        keys = ' '.join([t['term']] + t.get('aliases', []) + t.get('words', []) + [t['short']] + t.get('body', []) + [x['t'] for x in t.get('examples', [])])
-        b = ''.join(f'<p>{e(p)}</p>' for p in t['body'])
-        if t.get('tool') == 'pu':
-            opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
-            rows = ''.join(f'<label>{e(p)}<select aria-label="{e(p)}">{opts}</select></label>' for p in ['エンジン（ICE）', 'ターボ', 'MGU-K', 'バッテリー（ES）', '制御電子機器（CE）'])
-            b += PU_TOOL.format(rows=rows)
-        if t.get('rule'):
-            b += f'<div class="rb-h">規則</div><span class="rb-rule">FIA {e(t["rule"])}</span>'
-        if t.get('examples'):
-            b += '<div class="rb-h">今季の実例・関連記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["u"])}">{e(x["t"])}</a></li>' for x in t['examples']) + '</ul>'
-        if t.get('see'):
-            b += '<div class="rb-h">あわせて読む</div><div class="rb-see">' + ''.join(f'<a href="#{e(s)}">{e(name.get(s, s))}</a>' for s in t['see']) + '</div>'
-        al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[\u3041-\u309f\u30fc]+', x)][:4])
-        items.append(f'<details class="rb" id="{e(t["id"])}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}" data-k="{e(keys)}">'
-                     f'<summary><span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
-                     + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
-                     f'<span class="rb-s">{e(t["short"])}</span></summary><div class="rb-b">{b}</div></details>')
+def rb_url(tid):
+    """Each rulebook entry has its own page (owner's request, 9 Oct 2026): /deep/rules/<id>/ (people: person-<id>)."""
+    return f'/deep/rules/{tid}/'
+
+
+RBP_CSS = '''
+.rbl{display:block;border-bottom:1px solid var(--line);padding:14px 0;color:var(--ink);text-decoration:none}
+.rbl:hover .rb-t b{text-decoration:underline;text-underline-offset:3px}
+.rbl .rb-s::after{content:"詳しく →"}
+.rb-t small{font-size:12px}
+.rb-al{font-size:12.5px}
+.rbp-eyebrow{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:18px 0 0;font-size:13px;color:var(--muted)}
+.rbp-eyebrow a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;color:var(--ink);background:var(--surface)}
+.rbp h1{margin:10px 0 4px}
+.rbp-al{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.rbp-short{font-size:18px;line-height:1.85;font-weight:700;margin:0 0 18px;padding:14px 16px;border-left:4px solid var(--clay);background:var(--surface);border-radius:0 12px 12px 0}
+.rbp-body p{font-size:16px;line-height:2;margin:0 0 14px}
+.rbp .rb-h{font-size:12.5px;margin:22px 0 6px}
+.rbp .rb-ex li{font-size:15px}
+.rbp .rb-see a{font-size:14px;padding:3px 13px}
+.rbp-back{display:inline-block;margin:22px 0 0;font-size:14px;font-weight:700}
+.rbp .rb-checked{margin-top:18px}
+'''
+
+PU_JS = '''<script>(function(){var t=document.getElementById('pu-tool');if(!t)return;var sels=[].slice.call(t.querySelectorAll('select')),out=document.getElementById('pu-out');
+function calc(){var p=0;sels.forEach(function(s){p+=+s.value;});
+out.innerHTML=p===0?'降格なし<small>どの部品も上限の中です。</small>':(p>15?'最後尾からのスタート<small>合計'+p+'グリッド。15を超えるので、数に関係なく最後尾です。</small>':p+'グリッド降格<small>予選で決まった位置から、'+p+'グリッド後ろに下がります。</small>');}
+sels.forEach(function(s){s.addEventListener('change',calc);});calc();})();</script>'''
+
+
+def _rb_titles():
     titles = {}
     for D in DEEPS:
         titles[f'/deep/{D["slug"]}/'] = 'DEEP GRID ' + deep_no(D) + ' ' + D['title']
@@ -1469,8 +1476,90 @@ def build_rules():
             L = load(os.path.join('lens', fn))
             if L and L.get('slug') and not L.get('draft'):
                 titles[f'/lens/{L["slug"]}/'] = f'{L.get("gpLabel", "コラム")}：{L["title"]}'
+    return titles
+
+
+def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_title):
+    """One rulebook entry page."""
+    url = SITE + rb_url(tid)
+    crumbs = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › '
+              f'<a href="/deep/rules/">ルールブック</a> › {e(name)}</nav>')
+    same = ''
+    body = (crumbs + '<div class="dg rbp">'
+            f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'
+            f'<p class="rbp-eyebrow"><span>F1用語・ルール辞典</span><a href="/deep/rules/?c={quote(cat)}">{e(cat)}</a></p>'
+            f'<h1>{e(name)}</h1>' + (f'<p class="rbp-al">{e(al)}</p>' if al else '')
+            + f'<p class="rbp-short">{e(short)}</p>' + inner
+            + rules_entry('term')
+            + f'<a class="rbp-back" href="/deep/rules/">← ルールブックの一覧へ（{len(R["terms"]) + len(PEOPLE)}項目）</a>'
+            + '</div>')
+    if used:
+        body += term_assets(used)
+    crumbs_ld = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+        {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
+        {'@type': 'ListItem', 'position': 2, 'name': 'DEEP GRID', 'item': SITE + '/deep/'},
+        {'@type': 'ListItem', 'position': 3, 'name': 'ルールブック', 'item': SITE + '/deep/rules/'},
+        {'@type': 'ListItem', 'position': 4, 'name': name, 'item': url}]}
+    head = (MONO_FONT + f'<style>{DEEP_CSS}{RULES_CSS}{RULES_ENTRY_CSS}{RBP_CSS}</style>\n' + ld(crumbs_ld) + ld(ld_term))
+    desc = re.sub(r'\s+', ' ', short)
+    desc = (desc if len(desc) <= 110 else desc[:108] + '…') + ' F1の用語とルールを、2026年の規則と今季の実例でやさしく解説。'
+    write(f'deep/rules/{tid}/index.html', page(desc_title, desc, url, body, head))
+
+
+def build_rules():
+    if not RULES:
+        return []
+    R = RULES
+    url = SITE + '/deep/rules/'
+    name = {t['id']: t['term'] for t in R['terms']}
+    name.update({'person-' + p['id']: p['name'] for p in PEOPLE})
+    by_cat = {}
+    for t in sorted(R['terms'], key=lambda t: t['term']):
+        by_cat.setdefault(t['cat'], []).append(t)
+    titles = _rb_titles()
+    items, search, sm = [], {}, []
+    term_set = {'@type': 'DefinedTermSet', 'name': R['title'], 'url': url}
+    for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
+        tid = t['id']
+        keys = ' '.join(x['t'] for x in t.get('examples', []))
+        search[tid] = ' '.join(t.get('body', []))
+        al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[ぁ-ゟー]+', x)][:4])
+        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}" data-k="{e(keys)}">'
+                     f'<span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
+                     + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
+                     f'<span class="rb-s">{e(t["short"])}</span></a>')
+        # the entry page
+        used = {tid}
+        b = '<div class="rbp-body">' + ''.join(f'<p>{link_terms(e(p), used)}</p>' for p in t['body']) + '</div>'
+        if t.get('tool') == 'pu':
+            opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
+            rows = ''.join(f'<label>{e(p)}<select aria-label="{e(p)}">{opts}</select></label>' for p in ['エンジン（ICE）', 'ターボ', 'MGU-K', 'バッテリー（ES）', '制御電子機器（CE）'])
+            b += PU_TOOL.format(rows=rows) + PU_JS
+        if t.get('rule'):
+            b += f'<div class="rb-h">規則</div><span class="rb-rule">FIA {e(t["rule"])}</span>'
+        if t.get('examples'):
+            b += '<div class="rb-h">今季の実例・関連記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["u"])}">{e(x["t"])}</a></li>' for x in t['examples']) + '</ul>'
+        if t.get('see'):
+            b += '<div class="rb-h">あわせて読む</div><div class="rb-see">' + ''.join(f'<a href="{rb_url(s)}">{e(name.get(s, s))}</a>' for s in t['see'] if s in name) + '</div>'
+        others = [x for x in by_cat.get(t['cat'], []) if x['id'] != tid and x['id'] not in (t.get('see') or [])][:12]
+        if others:
+            b += f'<div class="rb-h">「{e(t["cat"])}」のほかの用語</div><div class="rb-see">' + ''.join(f'<a href="{rb_url(x["id"])}">{e(x["term"])}</a>' for x in others) + '</div>'
+        chk = t.get('checked') or R['checked']
+        b += f'<p class="rb-checked">規則の中身は {e(chk)} 時点で確認しています。</p>'
+        used.discard(tid)
+        ld_term = {'@context': 'https://schema.org', '@type': 'DefinedTerm', 'name': t['term'], 'alternateName': t.get('aliases', [])[:4],
+                   'description': t['short'], 'url': SITE + rb_url(tid), 'inDefinedTermSet': term_set, 'inLanguage': 'ja'}
+        _rb_page(R, tid, 'term', t['term'], t['cat'], al, t['short'], b, used, ld_term,
+                 f'{t["term"]}とは｜意味をやさしく解説｜F1用語・ルール辞典｜F1グリッドウォーク')
+        sm.append((SITE + rb_url(tid), chk + 'T09:00:00+09:00', None, '0.6'))
     for p in PEOPLE:
-        keys = ' '.join([p['name'], p.get('kana', ''), p.get('en', ''), p['role'], p['org'], p['short']] + p.get('aliases', []) + p.get('words', []))
+        tid = 'person-' + p['id']
+        keys = ' '.join([p['role'], p['org']] + p.get('words', []))
+        al = '・'.join([x for x in [p.get('en', '')] + p.get('aliases', []) if x][:3])
+        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="人物" data-t="{e(p["name"])}" data-names="{e("|".join([p["name"], p.get("en", ""), p.get("kana", "")] + p.get("aliases", [])))}" data-k="{e(keys)}">'
+                     f'<span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
+                     + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
+                     f'<span class="rb-s">{e(p["short"])}</span></a>')
         b = f'<div class="rb-h" style="margin-top:0">肩書き</div><span class="rb-rule">{e(p["role"])}（{e(p["org"])}）</span>'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
@@ -1478,33 +1567,41 @@ def build_rules():
         if p.get('sources'):
             b += '<div class="rb-h">出典（肩書きの確認）</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])}</a></li>' for x in p['sources']) + '</ul>'
         b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
-        al = '・'.join([x for x in [p.get('en', '')] + p.get('aliases', []) if x][:3])
-        items.append(f'<details class="rb" id="person-{e(p["id"])}" data-c="人物" data-t="{e(p["name"])}" data-names="{e("|".join([p["name"], p.get("en", ""), p.get("kana", "")] + p.get("aliases", [])))}" data-k="{e(keys)}">'
-                     f'<summary><span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
-                     + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
-                     f'<span class="rb-s">{e(p["short"])}</span></summary><div class="rb-b">{b}</div></details>')
+        ld_p = {'@context': 'https://schema.org', '@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
+                'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
+        _rb_page(R, tid, 'person', p['name'], '人物', al, p['short'], b, set(), ld_p,
+                 f'{p["name"]}（{p["org"]}）とは｜F1人物辞典｜F1グリッドウォーク')
+        sm.append((SITE + rb_url(tid), (p.get('checked') or R['checked']) + 'T09:00:00+09:00', None, '0.5'))
+    # remove pages of entries that no longer exist
+    rdir = os.path.join(ROOT, 'deep', 'rules')
+    keep = set(name) | {'sources'}
+    for d in os.listdir(rdir):
+        if os.path.isdir(os.path.join(rdir, d)) and d not in keep and os.path.exists(os.path.join(rdir, d, 'index.html')):
+            os.remove(os.path.join(rdir, d, 'index.html'))
+            try: os.rmdir(os.path.join(rdir, d))
+            except OSError: pass
+    write('deep/rules/search.json', json.dumps(search, ensure_ascii=False, separators=(',', ':')) + '\n')
     sugg = ''.join(f'<button type="button">{e(w)}</button>' for w in ['降格', 'DRS', 'ハジャー', '折原', 'ADUO'])
     body = ('<nav class="crumbs"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › ルールブック</nav><div class="dg">'
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'
             f'<h1>{e(R["title"])}</h1><p class="dg-dek">{e(R["dek"])}</p>'
             + rules_entry('rules', on_page=True)
             + f'<div class="rb-none" id="rb-none">見つかりませんでした。<span style="display:none"><br>もしかして：<span id="rb-maybe"></span></span><br>こんな言葉はどうですか：<br>{sugg}</div>'
-            + ''.join(items) +
+            + '<div class="rb-list">' + ''.join(items) + '</div>' +
             f'<p class="rb-checked" style="margin-top:18px">規則の中身は {e(R["checked"])} 時点で確認しています。FIAが規則を変えたときは、ここを直して日付を更新します。</p>'
-            '<div class="dg-end"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src">'
-            + ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["name"])}</a> <small>{e(s["title"])}</small></li>' for s in R.get('sources', []))
-            + '</ol></div></div>' + RULES_JS)
-    head = MONO_FONT + f'<style>{DEEP_CSS}{RULES_CSS}{RULES_ENTRY_CSS}</style>\n' + ld({
+            f'<div class="dg-end"><h2><span class="k">SOURCES</span>出典</h2><p class="rb-checked">説明は、FIAの規則と各国の報道（{len(R.get("sources", []))}件）で確かめています。 <a href="/deep/rules/sources/">出典の一覧を見る →</a></p></div></div>' + RULES_JS)
+    src_body = ('<nav class="crumbs"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › <a href="/deep/rules/">ルールブック</a> › 出典</nav><div class="dg">'
+                f'<h1>ルールブックの出典</h1><p class="dg-dek">F1用語・ルール辞典の説明を確かめるのに使った資料です（{len(R.get("sources", []))}件）。</p>'
+                '<ol class="dg-src">' + ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["name"])}</a> <small>{e(s["title"])}</small></li>' for s in R.get('sources', []))
+                + '</ol><a class="rbp-back" href="/deep/rules/">← ルールブックの一覧へ</a></div>')
+    write('deep/rules/sources/index.html', page('ルールブックの出典｜F1用語・ルール辞典｜F1グリッドウォーク', 'F1グリッドウォークのF1用語・ルール辞典で使った資料の一覧。', SITE + '/deep/rules/sources/',
+                                                 src_body, f'<meta name="robots" content="noindex,follow">\n<style>{DEEP_CSS}{RBP_CSS}</style>\n', og_type='website'))
+    head = MONO_FONT + f'<style>{DEEP_CSS}{RULES_CSS}{RULES_ENTRY_CSS}{RBP_CSS}</style>\n' + ld({
         '@context': 'https://schema.org', '@type': 'DefinedTermSet', 'name': R['title'], 'description': R['dek'], 'url': url, 'inLanguage': 'ja',
-        'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': t['term'], 'alternateName': t.get('aliases', [])[:4], 'description': t['short'],
-                            'url': f'{url}#{t["id"]}'} for t in R['terms']]})
-    if PEOPLE:
-        head += ld({'@context': 'https://schema.org', '@graph': [{'@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
-                    'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': f'{url}#person-{p["id"]}'} for p in PEOPLE]})
+        'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': t['term'], 'url': SITE + rb_url(t['id'])} for t in R['terms']]})
     write('deep/rules/index.html', page('F1用語・ルール辞典 2026｜意味をやさしく解説｜F1グリッドウォーク',
                                          f'グリッド降格、オーバーテイクモード、セーフティカー、タイヤの種類……F1の用語とルールの意味を、2026年の規則と今季の実例でやさしく解説。{len(R["terms"])}語と人物を、言葉を入れて検索できます。', url, body, head, og_type='website'))
-    return [(url, R['checked'] + 'T09:00:00+09:00', 'weekly', '0.8')]
-
+    return [(url, R['checked'] + 'T09:00:00+09:00', 'weekly', '0.8')] + sm
 
 
 
