@@ -67,6 +67,18 @@
 .info .panel.fold:not(.open)>*:not(h2){display:none !important}
 }
 </style>
+<style>
+/* intro line next to the logo (owner's request, 8 Oct 2026) */
+.hd-intro{margin:0 auto 0 4px;display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-size:12px;line-height:1.5;color:var(--muted);font-weight:600}
+.hd-intro .hi-t>span{display:block}
+.hd-intro .intro-btn{font:inherit;font-size:11.5px;font-weight:700;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:2px 10px;cursor:pointer}
+.hd-intro .intro-btn:hover{border-color:var(--ink)}
+@media (max-width:520px){
+.hd-intro{order:5;flex-basis:100%;max-width:none;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:2px 0 0;font-size:11.5px}
+.hd-intro .intro-btn{font-size:11px;padding:1px 9px}
+.hd-intro .hi-t>span{display:inline}
+}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1523,6 +1535,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <p>コラムは3つ。<a href="/lens/">WORLD GRID</a>は世界の報道の読み比べ、<a href="/deep/">DEEP GRID</a>はニュースの「なぜ」の深掘り、<a href="/offgrid/">OFF GRID</a>は本筋の外のこぼれ話です。分からない言葉は<a href="/deep/rules/">ルールブック</a>で引けます。</p>
     </div>
     </div>
+    <p class="hd-intro"><span class="hi-t"><span>世界のF1報道を、</span><span>日本語で読み比べるサイトです。</span></span><button type="button" class="intro-btn" id="intro-btn">はじめての方へ</button></p>
     <div class="top-race" id="top-race" aria-label="次のレース" hidden></div>
     <div class="top-right">
     <div class="share">
@@ -1553,7 +1566,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </nav>
 
 <main id="top">
-  <div class="wrap intro-wrap"><p class="intro-line"><span>世界のF1報道を、日本語で読み比べるサイトです。</span><button type="button" class="intro-btn" id="intro-btn">はじめての方へ</button></p></div>
   <div class="wrap dash">
     <aside class="dash-side" aria-label="レース情報">
       <div class="databar" role="group" aria-label="データを開く">
