@@ -1520,8 +1520,17 @@ def top_rules_slot():
 # ---- per-article share image (owner's request, 8 Oct 2026) -----------------------------------------
 # news/<id>/og.png: the headline on the site's paper colour. Needs Pillow and the Noto CJK fonts;
 # when either is missing the article simply keeps the site-wide og-image.png.
-OG_SERIF = '/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc'
-OG_SANS = '/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc'
+def _og_font(system, local):
+    # the system Noto CJK font, or the Japanese subset kept on the reserve branch (tools/fonts/),
+    # copied into .ogfonts/ by the update routine (ROUTINE.md 7b) when the system font is missing
+    for f in (system, os.path.join(ROOT, '.ogfonts', local)):
+        if os.path.exists(f):
+            return f
+    return system
+
+
+OG_SERIF = _og_font('/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc', 'NotoSerifCJK-Black-JP-sub.otf')
+OG_SANS = _og_font('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc', 'NotoSansCJK-Bold-JP-sub.otf')
 OG_VER = 'og1'
 OG_KC = {'primary': '#2E6B3A', 'news': '#4B5261', 'tech': '#1F5E8A', 'rumor': '#B0532C', 'fan': '#7A4A93'}
 OG_NOSTART = set('、。，．・：；？！」』）】〕〉》ー…‥ァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎ々)]}%,.!?')
