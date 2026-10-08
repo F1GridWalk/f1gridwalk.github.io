@@ -79,6 +79,11 @@
 .hd-intro .hi-t>span{display:inline}
 }
 </style>
+<style>
+@media (max-width:520px){
+.jump{transition:transform .25s ease}
+.jump.jm-hide{transform:translateY(-100%)}}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2880,6 +2885,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     h.addEventListener('keydown',function(e){ if((e.key==='Enter'||e.key===' ')&&window.matchMedia('(max-width:520px)').matches){ e.preventDefault(); t(); } });
   });
 })();
+</script>
+<script>
+(function(){var j=document.querySelector('.jump');if(!j)return;var mq=window.matchMedia('(max-width:520px)'),last=window.scrollY,tick=false;
+function upd(){tick=false;var y=window.scrollY,d=y-last;if(!mq.matches||y<200){j.classList.remove('jm-hide');last=y;return}
+if(d>6){j.classList.add('jm-hide');last=y}else if(d<-6){j.classList.remove('jm-hide');last=y}}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
+j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
 </script>
 </body>
 </html>
