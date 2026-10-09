@@ -104,6 +104,13 @@ header.top .share{position:absolute !important;top:12px;right:12px;z-index:30;or
 /* header: no update time (owner, 9 Oct 2026); the intro line sits between the logo and the menu */
 header.top .status{display:none !important}
 </style>
+<style>
+/* narrow tablets / large phones (up to 599px): the intro line goes under the logo, so the SHARE button never sits on it (owner, 9 Oct 2026) */
+@media (max-width:599px){
+.top .wrap{flex-wrap:wrap !important;row-gap:6px}
+.hd-intro{order:5;flex-basis:100%;max-width:none;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:2px 0 0}
+.hd-intro .hi-t>span{display:inline}}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
