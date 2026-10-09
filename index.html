@@ -21,12 +21,12 @@
 <meta property="og:description" content="世界中のF1ニュース、テクニカル解説、パドックのうわさを日本語の見出しと要約で。毎日更新。">
 <meta property="og:url" content="https://f1gridwalk.github.io/">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<meta property="og:image" content="https://f1gridwalk.github.io/og-image.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="F1 Grid Walk — 世界のF1ニュースを、日本語で。">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=1">
+<meta name="twitter:image" content="https://f1gridwalk.github.io/og-image.png?v=2">
 <style>
 /* phone only: easier to read (owner's request, 6 Oct 2026) */
 @media (max-width:520px){
@@ -2628,7 +2628,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
     // sources
     var sc = {}, sl = {};
-    all.forEach(function(a){ sc[a.source] = (sc[a.source] || 0) + 1; sl[a.source] = a.lang; });
+    all.forEach(function(a){ if (a.isNote) return; sc[a.source] = (sc[a.source] || 0) + 1; sl[a.source] = a.lang; }); /* media only: individual writers are not outlets (owner, 9 Oct 2026) */
     var sk = Object.keys(sc).sort(function(a, b){ return sc[b] - sc[a]; }), smax = sk.length ? sc[sk[0]] : 1;
     var sb = el('sources'); sb.textContent = '';
     sk.forEach(function(k){
