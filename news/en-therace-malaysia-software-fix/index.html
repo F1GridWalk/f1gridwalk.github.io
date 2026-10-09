@@ -79,6 +79,18 @@ ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
 ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
 ul.list a.t:hover{text-decoration:underline}
 .day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
 footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
 footer p{margin:6px 0}
 @media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
@@ -240,6 +252,7 @@ footer p{margin:6px 0}
 <p class="summary">The Raceは、セパンの出走遅延を招いたPU用ソフトの不具合を受けた対応をまとめた。FIAは米国GPで新しい雨天用ソフトを導入し、10月25日にもう1度更新する。雨ならシンガポールでもセパンの暫定版を使う。原因は低回転域で250kWの出力制限が重なった点で、FIA側は「テストはしたが特定の条件では未検証だった」と説明した。</p>
 <a class="cta" href="https://www.the-race.com/formula-1/whats-being-changed-after-f1s-malaysia-software-bug-debacle/" target="_blank" rel="noopener" data-track="click/en-therace-malaysia-software-fix" data-title="The Race | マレーシアのソフト不具合を受け、FIAが雨天用ソフトを改修へ　米国GPで新版">The Raceで元の記事を読む ↗ <small>（英語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は The Race に帰属します。</p>
+<aside class="kw" aria-label="この記事のキーワード"><p class="kw-h">この記事のキーワード<small>F1 Grid Walk ルールブックより</small></p><a class="kw-t" href="/deep/rules/pu-software/" data-track="click/kw/pu-software"><b>PUの共通ソフトウェア（FIAのソフト）</b><small>パワーユニット</small><span>全車の電子制御ユニットで動く、FIAの共通ソフト。電気の出し方などの決まりを守らせる。</span></a><a class="kw-t" href="/deep/rules/fia/" data-track="click/kw/fia"><b>FIA（国際自動車連盟）</b><small>チームとビジネス</small><span>F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。</span></a><a class="kw-t" href="/deep/rules/testing-rules/" data-track="click/kw/testing-rules"><b>テストの決まり（シーズン前テスト、TPCなど）</b><small>チームとビジネス</small><span>レース週末の外で走れる日数や機会の決まり。シーズン前テストやTPCなど。</span></a><a class="kw-all" href="/deep/rules/">ルールブックで用語を引く →</a></aside>
 <div class="tags"><span>分析</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2%E3%81%AE%E3%82%BD%E3%83%95%E3%83%88%E4%B8%8D%E5%85%B7%E5%90%88%E3%82%92%E5%8F%97%E3%81%91%E3%80%81FIA%E3%81%8C%E9%9B%A8%E5%A4%A9%E7%94%A8%E3%82%BD%E3%83%95%E3%83%88%E3%82%92%E6%94%B9%E4%BF%AE%E3%81%B8%E3%80%80%E7%B1%B3%E5%9B%BDGP%E3%81%A7%E6%96%B0%E7%89%88%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/en-therace-malaysia-software-fix/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/en-therace-malaysia-software-fix/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/en-therace-malaysia-software-fix/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>
 </article>

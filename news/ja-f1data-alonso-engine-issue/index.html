@@ -191,6 +191,18 @@ ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
 ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
 ul.list a.t:hover{text-decoration:underline}
 .day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
 footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
 footer p{margin:6px 0}
 @media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
@@ -352,6 +364,7 @@ footer p{margin:6px 0}
 <p class="summary">アロンソはコーナーでボッタスを何度も抜きながら直線で抜き返される展開に苦しみ、「エンジンに何らかの問題があったと思う」と直線での大きなタイムロスを訴えて22周目にリタイアした。チームメイトのストロールも9周目に脱落し、アストンマーティンは2台とも完走できなかった。ホンダのトラックサイド責任者オリハラ氏も、バクーのような長い直線が続くコースでは現行パワーユニットが限界に達していると認めている。</p>
 <a class="cta" href="https://formula1-data.com/article/alonso-engine-issue-aston-honda-baku-2026" target="_blank" rel="noopener" data-track="click/ja-f1data-alonso-engine-issue" data-title="Formula1-Data | 抜いても直線で抜き返される…アロンソが訴えたエンジン不調、ホンダも限界認める">Formula1-Dataで元の記事を読む ↗</a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は Formula1-Data に帰属します。</p>
+<aside class="kw" aria-label="この記事のキーワード"><p class="kw-h">この記事のキーワード<small>F1 Grid Walk ルールブックより</small></p><a class="kw-t" href="/deep/rules/reliability/" data-track="click/kw/reliability"><b>信頼性（トラブルとリタイア）</b><small>パワーユニット</small><span>車が壊れずに走り切れるかどうか。速くても壊れればポイントは入らない。</span></a><a class="kw-t" href="/deep/rules/ice/" data-track="click/kw/ice"><b>ICE（内燃エンジン）</b><small>パワーユニット</small><span>燃料を燃やして動力を出すエンジン。2026年は約400kWで、電気と半々に近づいた。</span></a><a class="kw-t" href="/deep/rules/dnf/" data-track="click/kw/dnf"><b>DNF（リタイア）</b><small>レース運営</small><span>スタートしたが、決勝を最後まで走り切れなかったこと。結果表ではDNFと出る。</span></a><p class="kw-ph">登場する人物</p><div class="kw-p"><a href="/deep/rules/person-fernando-alonso/" data-track="click/kw/person-fernando-alonso">フェルナンド・アロンソ</a><a href="/deep/rules/person-valtteri-bottas/" data-track="click/kw/person-valtteri-bottas">バルテリ・ボッタス</a><a href="/deep/rules/person-lance-stroll/" data-track="click/kw/person-lance-stroll">ランス・ストロール</a></div><a class="kw-all" href="/deep/rules/">ルールブックで用語を引く →</a></aside>
 <a class="dg-from" href="/deep/grid-penalty-why/" data-track="click/deep/grid-penalty-why/from"><small>DEEP GRID #02</small><b>グリッド降格はなぜ起きる？</b><span>この話を、もっと深く →</span></a>
 <div class="tags"><span>Aston Martin</span><span>アゼルバイジャンGP</span><span>ドライバー</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E6%8A%9C%E3%81%84%E3%81%A6%E3%82%82%E7%9B%B4%E7%B7%9A%E3%81%A7%E6%8A%9C%E3%81%8D%E8%BF%94%E3%81%95%E3%82%8C%E3%82%8B%E2%80%A6%E3%82%A2%E3%83%AD%E3%83%B3%E3%82%BD%E3%81%8C%E8%A8%B4%E3%81%88%E3%81%9F%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E4%B8%8D%E8%AA%BF%E3%80%81%E3%83%9B%E3%83%B3%E3%83%80%E3%82%82%E9%99%90%E7%95%8C%E8%AA%8D%E3%82%81%E3%82%8B%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/ja-f1data-alonso-engine-issue/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/ja-f1data-alonso-engine-issue/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/ja-f1data-alonso-engine-issue/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>
