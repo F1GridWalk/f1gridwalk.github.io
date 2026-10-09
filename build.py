@@ -21,7 +21,7 @@ from datetime import datetime, timezone, timedelta
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://f1gridwalk.github.io'
 JST = timezone(timedelta(hours=9))
-OG_IMAGE = SITE + '/og-image.png?v=1'
+OG_IMAGE = SITE + '/og-image.png?v=2'
 
 KIND = {'primary': '一次情報', 'news': '報道', 'tech': '技術', 'rumor': '噂', 'fan': 'ファン投稿'}
 KIND_TIP = {
@@ -219,7 +219,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 {body}
 </main>
 <footer><div class="wrap">
-  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。毎日更新。　<a href="/feed.xml">RSS</a></p>
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
   <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
 </div></footer>
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -1491,7 +1491,7 @@ def _rb_titles():
     return titles
 
 
-def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_title):
+def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_title, og=None):
     """One rulebook entry page."""
     url = SITE + rb_url(tid)
     crumbs = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › '
@@ -1515,7 +1515,7 @@ def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_titl
     head = (MONO_FONT + f'<style>{DEEP_CSS}{RULES_CSS}{RULES_ENTRY_CSS}{RBP_CSS}</style>\n' + ld(crumbs_ld) + ld(ld_term))
     desc = re.sub(r'\s+', ' ', short)
     desc = (desc if len(desc) <= 110 else desc[:108] + '…') + ' F1の用語とルールを、2026年の規則と今季の実例でやさしく解説。'
-    write(f'deep/rules/{tid}/index.html', page(desc_title, desc, url, body, head))
+    write(f'deep/rules/{tid}/index.html', page(desc_title, desc, url, body, head, og_image=og))
 
 
 def build_rules():
@@ -1561,8 +1561,12 @@ def build_rules():
         used.discard(tid)
         ld_term = {'@context': 'https://schema.org', '@type': 'DefinedTerm', 'name': t['term'], 'alternateName': t.get('aliases', [])[:4],
                    'description': t['short'], 'url': SITE + rb_url(tid), 'inDefinedTermSet': term_set, 'inLanguage': 'ja'}
+        main = re.sub(r'（.*?）', '', t['term']).strip() or t['term']
+        og = rules_og(tid, main + 'とは', t['cat'], t['short'])
+        if og:
+            ld_term['image'] = og
         _rb_page(R, tid, 'term', t['term'], t['cat'], al, t['short'], b, used, ld_term,
-                 f'{t["term"]}とは｜意味をやさしく解説｜F1用語・ルール辞典｜F1グリッドウォーク')
+                 f'{t["term"]}とは｜意味をやさしく解説｜F1用語・ルール辞典｜F1グリッドウォーク', og)
         sm.append((SITE + rb_url(tid), chk + 'T09:00:00+09:00', None, '0.6'))
     for p in PEOPLE:
         tid = 'person-' + p['id']
@@ -1581,8 +1585,9 @@ def build_rules():
         b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
         ld_p = {'@context': 'https://schema.org', '@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
                 'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
+        og = rules_og(tid, p['name'], '人物', f'{p["role"]}（{p["org"]}）', 'F1人物辞典')
         _rb_page(R, tid, 'person', p['name'], '人物', al, p['short'], b, set(), ld_p,
-                 f'{p["name"]}（{p["org"]}）とは｜F1人物辞典｜F1グリッドウォーク')
+                 f'{p["name"]}（{p["org"]}）とは｜F1人物辞典｜F1グリッドウォーク', og)
         sm.append((SITE + rb_url(tid), (p.get('checked') or R['checked']) + 'T09:00:00+09:00', None, '0.5'))
     # remove pages of entries that no longer exist
     rdir = os.path.join(ROOT, 'deep', 'rules')
@@ -1738,6 +1743,73 @@ def article_og(a, k):
         return None
 
 
+def rules_og(tid, head, tag, sub, right='F1用語・ルール辞典'):
+    """deep/rules/<id>/og.png: the entry name and its one-line explanation (owner's request, 9 Oct 2026)."""
+    if not _og_tools():
+        return None
+    stamp = hashlib.sha1('|'.join(('rb1', head, tag, sub, right)).encode()).hexdigest()[:10]
+    rel = f'deep/rules/{tid}/og.png'
+    p = os.path.join(ROOT, rel)
+    url = f'{SITE}/{rel}?v={stamp}'
+    I = _OG['Image']
+    try:
+        if os.path.exists(p) and I.open(p).text.get('gw') == stamp:
+            return url
+    except Exception:
+        pass
+    try:
+        F, W, H = _OG['Font'].truetype, 1200, 630
+        clay = '#9E4E2B'
+        im = I.new('RGB', (W, H), '#F3EFE6')
+        d = _OG['Draw'].Draw(im)
+        im.paste(_OG['logo'], (80, 52))
+        fs, fk = F(OG_SANS, 26), F(OG_SANS, 22)
+        sw = d.textlength(right, font=fs)
+        kw = d.textlength(tag, font=fk) + 28
+        x = W - 80 - sw
+        d.text((x, 92), right, font=fs, fill='#5B5F57')
+        kx = x - 18 - kw
+        d.rounded_rectangle((kx, 90, kx + kw, 128), radius=8, outline=clay, width=2)
+        d.text((kx + 14, 94), tag, font=fk, fill=clay)
+        for size in (76, 68, 60, 52):
+            f = F(OG_SERIF, size)
+            lines = _og_wrap(d, head, f, 1040)
+            if len(lines) <= 2:
+                break
+        lines = lines[:2]
+        lh = int(size * 1.3)
+        fsub = F(OG_SANS, 30)
+        sl = _og_wrap(d, sub, fsub, 1040)
+        if len(sl) > 2:
+            l = sl[1]
+            while l and d.textlength(l + '…', font=fsub) > 1040:
+                l = l[:-1]
+            sl = [sl[0], l + '…']
+        slh = 46
+        total = lh * len(lines) + 22 + slh * len(sl)
+        y = 190 + (350 - total) // 2
+        for l in lines:
+            d.text((80, y), l, font=f, fill='#1F2420')
+            y += lh
+        y += 22
+        d.rectangle((80, y + 4, 86, y + slh * len(sl) - 6), fill=clay)
+        for l in sl:
+            d.text((104, y), l, font=fsub, fill='#3A3E37')
+            y += slh
+        d.rectangle((0, 560, W, H), fill='#1F2420')
+        fb = F(OG_SANS, 26)
+        d.text((80, 577), 'F1の用語とルールを、やさしく。', font=fb, fill='#F3EFE6')
+        u = 'f1gridwalk.github.io'
+        d.text((W - 80 - d.textlength(u, font=fb), 577), u, font=fb, fill='#E8946C')
+        info = _OG['Png'].PngInfo()
+        info.add_text('gw', stamp)
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        im.quantize(colors=48, method=I.Quantize.MEDIANCUT).save(p, optimize=True, pnginfo=info)
+        return url
+    except Exception:
+        return None
+
+
 # ---- RSS feed (owner's request, 8 Oct 2026) ---------------------------------------------------------
 def rfc822(d):
     d = d.astimezone(timezone.utc)
@@ -1787,12 +1859,20 @@ def _kw_names(names):
 _KATA = r'\u30a0-\u30ff'
 
 
+_KW_RE = {}
+
+
 def _kw_hit(n, text):
     """Whole-word match: a katakana or Latin name must not run on into more katakana / letters
-    (オーバー ≠ オーバーテイク, レーキ ≠ ブレーキ)."""
-    pre = r'(?<![A-Za-z])' if re.match(r'[A-Za-z]', n) else (f'(?<![{_KATA}])' if re.match(f'[{_KATA}]', n) else '')
-    post = r'(?![A-Za-z])' if re.search(r'[A-Za-z]$', n) else (f'(?![{_KATA}])' if re.search(f'[{_KATA}]$', n) else '')
-    return re.search(pre + re.escape(n) + post, text) is not None
+    (オーバー ≠ オーバーテイク, レーキ ≠ ブレーキ). Patterns are compiled once (thousands of names)."""
+    if n not in text:
+        return False
+    r = _KW_RE.get(n)
+    if r is None:
+        pre = r'(?<![A-Za-z])' if re.match(r'[A-Za-z]', n) else (f'(?<![{_KATA}])' if re.match(f'[{_KATA}]', n) else '')
+        post = r'(?![A-Za-z])' if re.search(r'[A-Za-z]$', n) else (f'(?![{_KATA}])' if re.search(f'[{_KATA}]$', n) else '')
+        r = _KW_RE[n] = re.compile(pre + re.escape(n) + post)
+    return r.search(text) is not None
 
 
 def _kw_index(allarts):
