@@ -1,9 +1,82 @@
 {
-  "updatedAt": "2026-10-09T12:25:00+09:00",
+  "updatedAt": "2026-10-09T18:40:00+09:00",
   "topics": {
     "mercedes-sepang-upgrade-failure": {
       "title": "メルセデスのセパン改良、期待外れの理由を探る",
-      "summary": "メルセデスはセパンに大型アップグレードを持ち込んだが、期待した約0.3秒の向上は得られず、後退した可能性も指摘されている。副代表のロード氏は、新パーツと高い路面温度、荒い舗装の組み合わせで車が快適な領域に収まらなかったと説明する。チームはシンガポールで新旧仕様を比較し、原因の切り分けを進める方針だ。"
+      "summary": "メルセデスはセパンに大型アップグレードを持ち込んだが、期待した約0.3秒の向上は得られず、後退した可能性も指摘されている。副代表のロード氏は、新パーツと高い路面温度、荒い舗装の組み合わせで車が快適な領域に収まらなかったと説明する。チームはシンガポールで新旧仕様を比較し、原因の切り分けを進める方針だ。",
+      "lens": {
+        "groups": [
+          {
+            "scope": "country",
+            "region": "ドイツ",
+            "label": "ドイツ系メディア",
+            "focus": "路面と仕様比較の切り分け",
+            "lead": "メルセデス",
+            "cause": "荒れた路面とタイヤの温度",
+            "hook": "路面条件と旧仕様の比較",
+            "points": [
+              "Formel1.deは路面とタイヤ温度の謎を整理",
+              "Motorsport-Totalはラッセルの旧仕様起用を中心に報じた"
+            ],
+            "ids": [
+              "de-mst-mercedes-old-car-russell",
+              "de-formel1-mercedes-upgrade-raetsel"
+            ],
+            "agree": 2
+          },
+          {
+            "scope": "outlet",
+            "region": "英国",
+            "label": "The Race",
+            "focus": "改良への疑念と比較の負担",
+            "lead": "メルセデス",
+            "cause": "期待と逆の約0.5秒の遅れの疑い",
+            "hook": "アップグレードへの疑念",
+            "points": [
+              "新旧併用の運用面の負担を指摘",
+              "ラッセルが旧仕様を選んだ理由も別記事で解説"
+            ],
+            "ids": [
+              "en-therace-mercedes-old-new-parts-singapore",
+              "en-therace-russell-ditches-upgrade"
+            ]
+          },
+          {
+            "scope": "outlet",
+            "region": "ブラジル",
+            "label": "Grande Prêmio",
+            "focus": "アントネッリの見立て",
+            "lead": "アントネッリ",
+            "cause": "古い舗装と摩耗",
+            "hook": "効果を見極めにくい理由",
+            "points": [
+              "第2弾は7箇所の変更と紹介",
+              "シンガポールで理解が進むと期待"
+            ],
+            "ids": [
+              "pt-grandepremio-antonelli-mercedes-updates"
+            ]
+          }
+        ],
+        "guide": [
+          {
+            "want": "路面の影響",
+            "ids": [
+              "de-formel1-mercedes-upgrade-raetsel",
+              "pt-grandepremio-antonelli-mercedes-updates"
+            ],
+            "note": "舗装とタイヤ温度の話"
+          },
+          {
+            "want": "ラッセルの判断",
+            "ids": [
+              "en-therace-russell-ditches-upgrade",
+              "de-mst-mercedes-old-car-russell"
+            ],
+            "note": "旧仕様を選んだ理由"
+          }
+        ]
+      }
     },
     "russell-singapore-pu-penalty": {
       "title": "ラッセル、PU交換でシンガポールは大幅降格の見通し",
@@ -85,8 +158,8 @@
       }
     },
     "alonso-dakar-lemans-rumour": {
-      "title": "アロンソ、ダカールやル・マン参戦の噂（未確認）",
-      "summary": "アロンソが今後数週間に「さらなるサプライズ」があると示唆したことを受け、2027年のダカール参戦やル・マン参戦をめぐる噂が出ている。スペイン紙の報道を引いた欧州メディアは、アストンマーティン名義のマシンとコ・ドライバーにマルク・コマの名を挙げた。いずれも正式発表はなく、未確認の話である。"
+      "title": "アロンソのダカール参戦の噂、本人は「ほぼ不可能」と否定",
+      "summary": "アロンソが「さらなるサプライズ」を示唆したことで、2027年のダカールやル・マン参戦の噂が出ていた。本人はシンガポールの会見でダカール復帰を身体的にほぼ不可能と否定し、GT3の話にも触れなかった。ただ新たな挑戦自体は排除せず、決めたら噂ではなく自分で発表すると述べた。"
     },
     "redbull-surge-after-sepang": {
       "title": "セパン優勝でレッドブルの躍進に注目、PU進歩とシンガポールの試金石",
@@ -108,10 +181,6 @@
       "title": "アントネッリ、フェルスタッペンに抜かれた教訓を語る",
       "summary": "セパンの決勝で、スリックタイヤのリスタート直後にフェルスタッペンに抜かれて2位に終わったアントネッリが、複数のメディアで談話を残した。路面がまだ滑りやすいなか、相手のほうがグリップを読む感覚に優れていたと認め、苛立ちつつも教訓にすると語った。ハミルトンからは、状況が悪くても最善の結果を探す姿勢を学んでいるという。"
     },
-    "aduo-tokens-redbull": {
-      "title": "ADUOの基準にレッドブル　2027年へ見直しを要求",
-      "summary": "エンジン性能差を埋める追い上げ支援制度ADUOで、レッドブル・フォードが基準になりトークンを得られない状況が続く。直近の評価ではメルセデスが1、フェラーリ、アウディ、ホンダが2トークンを得た。レッドブルのメキース代表は評価に驚いたとし、FIAとともに2027年へ向けた手法の改善を協議している。"
-    },
     "cost-cap-catchup-mechanism": {
       "title": "予算上限に「追いつき策」を　ウィリアムズとメルセデスが言及",
       "summary": "予算上限が上位4チームと下位の差を広げているとして、ウィリアムズのヴォウルズ代表が順位に連動した調整案を示した。メルセデスのロード副代表も、財務が安定した今は上限が性能を左右する要素になったとして、見直しを検討する余地があるとの考えを語った。F1委員会での議論が見込まれている。"
@@ -122,7 +191,7 @@
     },
     "singapore-heat-cooling-vest": {
       "title": "シンガポールも暑さ対策　FIAがヒートハザード宣言、冷却ベストは任意のまま",
-      "summary": "FIAはシンガポールGPに2戦連続でヒートハザードを宣言し、スプリントと決勝に適用する。チームは冷却システムを用意する必要があるが、ベストの着用は任意だ。ラッセルはメルセデスが費用上限の枠内で実用的な仕組みを作れていないと訴えており、冷却の持続時間や快適性が課題として残る。"
+      "summary": "FIAはシンガポールGPにヒートハザードを宣言し、液冷ベストは任意のまま使える。ラッセルは性能への影響を主張して支持し、ハジャーは禁止を、フェルスタッペンは不要でケーブルが邪魔だと主張する。メルセデスは予算枠が不十分として開発を見送った。システムは40分前後で効きが落ちる例もあり、持続時間と快適性が課題だ。"
     },
     "verstappen-engine-rules-criticism": {
       "title": "フェルスタッペンの現行規則批判、V8回帰論に広がる",
@@ -131,62 +200,111 @@
     "ocon-haas-exit": {
       "title": "オコン、今季限りでハースを離脱　F1残留を模索",
       "summary": "オコンは今季限りでハースを離れる。本人はF1に残る意向を示し、レースシートがなければテスト兼リザーブも受け入れる構えで、交渉は続いているという。ハースの小松代表は速さを評価しつつ、一貫性が判断の理由だと説明したと伝えられている。WECなど他カテゴリー行きの噂はトヨタ側が否定した。"
+    },
+    "sepang-wet-race-debate": {
+      "title": "ハミルトン「雨の決勝は昔と違う」　若手の慎重さに言及",
+      "summary": "ハミルトンはセパンの雨の決勝を振り返り、旧世代は走りたがる一方で若手は慎重で、それがレース運営の用心深さにつながると見ている。2008年はテストが多く雨用タイヤの開発も進んでいたとも語った。サインツは開始の判断を妥当とし、ハジャーは出力のソフトと水たまりが滑りの要因だと話した。"
+    },
+    "ferrari-singapore-opportunity": {
+      "title": "フェラーリのシンガポール戦展望　好機論と慎重論",
+      "summary": "Motorsport.comは、直線が少ないシンガポールは7戦勝てていないフェラーリにとって好機になりうると論じた。一方でハミルトンは「攻める」と語り、ルクレールはチームがトップ勢に対し性能を失っており勝利は非常に難しいと見る。マクラーレンとレッドブルが近い存在になったとの認識も示した。"
+    },
+    "audi-singapore-power": {
+      "title": "アウディ、PU出力が最大の弱点　シンガポールも期待控えめ",
+      "summary": "ヒュルケンベルグとボルトレートは、直近のレースで出力不足がアウディ最大の制約だと認めた。ヒュルケンベルグは冷却ではなく単純なパワー不足と話し、シンガポールへの期待も高くない。バクーの改良はセパンで狙い通りに働いたが、今季の残りに大型アップデートの予定はない。"
     }
   },
   "articles": [
     {
-      "id": "en-therace-bottas-jungle-ride",
+      "id": "de-mst-hamilton-night-races",
       "kind": "news",
-      "lang": "en",
-      "region": "英国",
-      "source": "The Race",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "カルチャー",
+      "circuit": "singapore",
+      "teams": [
+        "ferrari",
+        "astonmartin"
+      ],
+      "topic": "singapore-night-race-schedule",
+      "title": "ハミルトン「ナイトレースをもっと」　アロンソは「昼食までに帰宅したい」",
+      "orig": "\"Viele Strecken\" möglich: Lewis Hamilton wünscht sich weitere Nachtrennen",
+      "summary": "今季初のナイトレースとなるシンガポールを前に、ハミルトンはナイトレースが好きで、マドリードなど多くのコースで可能だと語った。昼に走るカタールはファンにとってひどいだろうとも述べた。アロンソは増えるかどうかはファンと欧米向けの時間帯次第としたうえ、レース日が長く遅くては帰れないと不満を示し、「早朝開催で昼食は自宅で」と冗談を飛ばした。",
+      "url": "https://www.motorsport-total.com/formel-1/news/viele-strecken-moeglich-lewis-hamilton-wuenscht-sich-weitere-nachtrennen-26100904",
+      "published": "2026-10-09T09:45:00+02:00"
+    },
+    {
+      "id": "de-mst-hamilton-rain-young-drivers",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
       "cat": "ドライバー",
       "circuit": "singapore",
       "teams": [
-        "cadillac"
+        "ferrari"
       ],
-      "topic": "bottas-bike-ride-singapore",
-      "title": "ボッタス、マレーシアからシンガポールまで3日間の自転車旅　夜のジャングルでコブラにも遭遇",
-      "orig": "'Your mind starts to play games' - Bottas's jungle ride to Singapore",
-      "summary": "キャデラックのボッタスが、マレーシアからシンガポールまで3日間かけて自転車で走破した。発案はプロ自転車選手の恋人で、現地のサイクリストとルートを練り、伴走車も付けたという。夜のジャングル走行が最も過酷で、コブラやニシキヘビに遭遇したと明かした。夜に走ったのは時差の調整と暑さ対策のためで、熱への順応にも役立つと期待している。",
-      "url": "https://www.the-race.com/extra/your-mind-starts-to-play-games-bottass-jungle-ride-to-singapore/",
-      "published": "2026-10-08T12:00:00+01:00"
+      "topic": "sepang-wet-race-debate",
+      "title": "ハミルトン「雨の決勝は昔と違う」　若手は慎重でレースコントロールにも影響と指摘",
+      "orig": "Lewis Hamilton: Junge Fahrer sind heute im Regen vorsichtiger",
+      "summary": "ハミルトンはセパンの雨の決勝を踏まえ、雨のレースは昔とは違うと話した。2008年はテストが多く、ブリヂストンと開発した雨用タイヤも良かったという。自分たち旧世代は「走ろう」と言うが若手は慎重で、そのため運営側が非常に用心深くなると見ている。サインツは開始の判断は妥当とし、ハジャーは周回前の滑りの原因をソフトの出力と水たまりに挙げた。",
+      "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-junge-fahrer-sind-heute-im-regen-vorsichtiger-26100902",
+      "published": "2026-10-09T08:00:00+02:00"
     },
     {
-      "id": "en-f1com-verstappen-singapore-no-guarantees",
+      "id": "es-motorsport-mercedes-no-cooling-budget",
       "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "Formula1.com",
-      "cat": "ドライバー",
+      "lang": "es",
+      "region": "スペイン",
+      "source": "Motorsport.com España",
+      "cat": "チーム",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "singapore-heat-cooling-vest",
+      "title": "メルセデス、冷却ベスト開発の枠を使わず　副代表「十分な額ではない」",
+      "orig": "Mercedes defiende su polémica decisión con Russell ante el calor extremo",
+      "summary": "メルセデスは、FIAが暑さ対策の液冷ベスト開発向けに用意した予算枠を使わなかった。副代表のロードは、全レース持つ頑丈な仕組みには足りないとして空力と機械面の性能に資源を回したと説明し、ドライバーも了承したという。ドライバーは快適さより性能を選ぶものだとも述べた。パドックには驚きが広がったと記事は伝えている。",
+      "url": "https://es.motorsport.com/f1/news/mercedes-defiende-polemica-decision-dejar-russell-sin-refrigeracion/10862751/",
+      "published": "2026-10-09T08:00:00+02:00"
+    },
+    {
+      "id": "ja-f1jouhou2-cooling-vest-debate",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
       "circuit": "singapore",
       "teams": [
         "redbull"
       ],
-      "topic": "verstappen-singapore-win-chance",
-      "title": "フェルスタッペン、初のシンガポール制覇へ意欲「保証はない」　マレーシア優勝の勢いを維持できるか",
-      "orig": "'There are no guarantees' - Verstappen evaluates chances of long-awaited Singapore win",
-      "summary": "フェルスタッペンはシンガポールGPでの初優勝を狙うが、上位勢の接戦で「保証はない」と慎重に語った。マリーナベイでの最高成績は2018年、2024年、2025年の3度の2位で、直近のマレーシアでは2025年アブダビ以来の勝利を挙げた。残り7戦で勢いを保ちつつ地に足を着けていたいとし、2027年に焦点が移る前にもう一勝したいという考えを示した。",
-      "url": "https://www.formula1.com/en/latest/article/there-are-no-guarantees-verstappen-evaluates-chances-of-long-awaited-singapore-win.32IJkWTcOpZXZObCiSlHA6",
-      "published": "2026-10-08T14:29:00+00:00"
+      "topic": "singapore-heat-cooling-vest",
+      "title": "冷却ベスト論争、フェルスタッペン「いらない」ハジャー「禁止を」　掲示板は批判的な声が目立つ",
+      "orig": "F1ドライバーの冷却ベストについてフェルスタッペン「そんなのいらない」ハジャー「禁止されるべき」",
+      "summary": "F1情報通は、Motorsport.comとソイモトールの報道を引き、冷却ベストを巡るドライバーの発言を紹介した。フェルスタッペンはコックピットは暑いがサウナではなく、ケーブルが絡んで動きを妨げると語り、ハジャーはF1は肉体的に厳しいものだとして禁止を求めたという。掲示板では、安全装備と同じ位置づけだと見てドライバー側に批判的な声が目立った。いずれも掲示板の受け止めである。",
+      "url": "https://f1jouhou2.com/blog-entry-31667.html",
+      "published": "2026-10-09T12:00:00+09:00"
     },
     {
-      "id": "en-f1com-norris-straightline-singapore",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "Formula1.com",
-      "cat": "ドライバー",
+      "id": "ja-f1jouhou2-aston-gearbox",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
       "circuit": "singapore",
       "teams": [
-        "mclaren"
+        "astonmartin"
       ],
-      "topic": "mclaren-norris-straightline-singapore",
-      "title": "ノリス、直近2戦は「力を出し切れなかった」　直線速度不足はシンガポールで解消に期待",
-      "orig": "Norris 'hopeful' recent straight-line speed issue will be cured in Singapore as he admits McLaren need to do a better job",
-      "summary": "ノリスはバクーとセパンの2戦でマクラーレンが力を出せず、表彰台にも届かなかったと認め、「もっと良い仕事が必要」と述べた。原因として直線速度の不足を挙げ、直線の少ないシンガポールでは改善を期待するが、走ってみないと分からないとも語った。予選での2、3グリッド分の差が痛かったとも振り返り、マクラーレンはコンストラクターズ3位で、首位メルセデスとは240ポイント差にある。",
-      "url": "https://www.formula1.com/en/latest/article/norris-hopeful-recent-straight-line-speed-issue-will-be-cured-in-singapore-as-he-admits-mclaren-need-to-do-a-better-job.7GhQrU0cCJGpY9v8lxyTkp",
-      "published": "2026-10-08T13:46:00+00:00"
+      "topic": "aston-martin-baku-gearbox",
+      "title": "アストンマーチンのバクー用ギアボックスは15kg軽量でギア比も短縮、との話題",
+      "orig": "アストンマーチンはF1バクーGPで15kg軽量化されギア比も最適化されたギアボックス入れてたんだな",
+      "summary": "F1情報通は、アストンマーティンがバクーGPで約15kg軽いギアボックスを導入し、ギア比も短くしたというソイモトールなどの報道を取り上げた。加速を優先して最高速を抑える狙いで、シンガポールでの5位もあり得るとの見方が紹介されている。掲示板では15kgは大きすぎるとの疑問や、PUとシャシーの両方が絡むとの声が出ており、確証のない話題である。",
+      "url": "https://f1jouhou2.com/blog-entry-31665.html",
+      "published": "2026-10-09T12:00:00+09:00"
     },
     {
       "id": "de-mst-piastri-redbull-benchmark",
@@ -296,6 +414,43 @@
       "published": "2026-10-08T18:28:00+02:00"
     },
     {
+      "id": "nl-gpblog-russell-cooling-reply",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "singapore-heat-cooling-vest",
+      "title": "ラッセル、冷却ベスト批判に反論　「コックピットの熱は性能に響く」",
+      "orig": "Russell verzet zich tegen felle kritiek van Verstappen en Hadjar",
+      "summary": "ハジャーとフェルスタッペンが冷却ベストに否定的な中、ラッセルは強い熱が性能に影響すると反論した。ただ失うタイムを数字で表すのは難しいと言う。2023年カタールではアルボンが幻覚を感じたと聞いたと明かした。熱はコックピットの設計にも左右され、今年のメルセデスは電子機器や油圧配管の配置などのおかげで以前よりかなり涼しいと話した。",
+      "url": "https://www.gpblog.com/nl/nieuws/russell-verzet-zich-tegen-felle-kritiek-van-verstappen-en-hadjar",
+      "published": "2026-10-08T17:57:00+02:00"
+    },
+    {
+      "id": "en-f1com-mercedes-split-specs",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "Formula1.com",
+      "cat": "チーム",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "mercedes-sepang-upgrade-failure",
+      "primary": true,
+      "title": "メルセデスが2台で仕様を分ける理由　ラッセルは「当然の判断」",
+      "orig": "Why splitting car specifications is a 'no-brainer' for Mercedes at the Singapore Grand Prix",
+      "summary": "メルセデスはシンガポールで、アントネッリにセパンの改良と新フロントウイング、ラッセルにバクーで勝った旧仕様を与え、3日間で比較する。セパンの改良は期待した伸びが出ず、ラッセルは終盤のリタイアでPUのグリッド降格も受けた。アントネッリは粗い舗装と60度超の路面温度が例外的だったとみて、低速コーナーの多いシンガポールで確かめたい考えだ。",
+      "url": "https://www.formula1.com/en/latest/article/why-splitting-car-specifications-is-a-no-brainer-for-mercedes-at-the-singapore-grand-prix.44OonD5CF8Eg4yQ2w5REwh",
+      "published": "2026-10-08T15:49:00+00:00"
+    },
+    {
       "id": "de-mst-norris-pu-changes",
       "kind": "tech",
       "lang": "de",
@@ -333,6 +488,43 @@
       "published": "2026-10-08T16:48:00+02:00"
     },
     {
+      "id": "en-f1com-ferrari-here-to-attack",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "Formula1.com",
+      "cat": "チーム",
+      "circuit": "singapore",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-singapore-opportunity",
+      "primary": true,
+      "title": "ハミルトン「攻める」、ルクレールは慎重　フェラーリがシンガポール戦を展望",
+      "orig": "'We're here to attack' – Hamilton and Leclerc preview Ferrari's chances in Singapore GP",
+      "summary": "ハミルトンは7月のイギリスGP以来となる表彰台をセパンで得たが、選手権争いに戻ったとは言えず、シンガポールは「攻める」と語った。スプリント週末は今季最難関の形式で、予選が鍵になるという。一方ルクレールは過去の好成績に頼れないとし、チームがトップ勢に対して性能を失っていて勝利は非常に難しいと見る。マクラーレンとレッドブルが近い存在になったとも述べた。",
+      "url": "https://www.formula1.com/en/latest/article/were-here-to-attack-hamilton-and-leclerc-preview-ferraris-chances-in-singapore-gp.6nzWl7doxY9SlrpgTm5hNH",
+      "published": "2026-10-08T14:46:00+00:00"
+    },
+    {
+      "id": "en-f1com-verstappen-singapore-no-guarantees",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "Formula1.com",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "verstappen-singapore-win-chance",
+      "title": "フェルスタッペン、初のシンガポール制覇へ意欲「保証はない」　マレーシア優勝の勢いを維持できるか",
+      "orig": "'There are no guarantees' - Verstappen evaluates chances of long-awaited Singapore win",
+      "summary": "フェルスタッペンはシンガポールGPでの初優勝を狙うが、上位勢の接戦で「保証はない」と慎重に語った。マリーナベイでの最高成績は2018年、2024年、2025年の3度の2位で、直近のマレーシアでは2025年アブダビ以来の勝利を挙げた。残り7戦で勢いを保ちつつ地に足を着けていたいとし、2027年に焦点が移る前にもう一勝したいという考えを示した。",
+      "url": "https://www.formula1.com/en/latest/article/there-are-no-guarantees-verstappen-evaluates-chances-of-long-awaited-singapore-win.32IJkWTcOpZXZObCiSlHA6",
+      "published": "2026-10-08T14:29:00+00:00"
+    },
+    {
       "id": "de-mst-mercedes-old-car-russell",
       "kind": "news",
       "lang": "de",
@@ -348,7 +540,50 @@
       "summary": "メルセデスはシンガポールで、ラッセルのみ旧仕様のW17を走らせ、アントネッリは新パッケージを続ける。ラッセルは「バクーで勝ったマシンだ」と語り、アップグレードが機能しなかった兆しはないと主張した。アントネッリはセパンの粗い舗装と60度超の路面温度が例外的だったと見ており、今回の比較で原因の切り分けを目指す。",
       "orig": "Also doch: Mercedes in Singapur mit altem Auto - aber nur für Russell",
       "url": "https://www.motorsport-total.com/formel-1/news/also-doch-mercedes-in-singapur-mit-altem-auto-aber-nur-fuer-russell-26100814",
-      "published": "2026-10-08T15:53:00+02:00"
+      "published": "2026-10-08T15:53:00+02:00",
+      "lens": {
+        "type": "談話",
+        "lead": "ラッセル",
+        "focus": "旧仕様での比較",
+        "cause": "セパンの路面が例外的",
+        "hook": "ラッセル車だけ旧仕様"
+      }
+    },
+    {
+      "id": "en-f1com-norris-straightline-singapore",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "Formula1.com",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "mclaren"
+      ],
+      "topic": "mclaren-norris-straightline-singapore",
+      "title": "ノリス、直近2戦は「力を出し切れなかった」　直線速度不足はシンガポールで解消に期待",
+      "orig": "Norris 'hopeful' recent straight-line speed issue will be cured in Singapore as he admits McLaren need to do a better job",
+      "summary": "ノリスはバクーとセパンの2戦でマクラーレンが力を出せず、表彰台にも届かなかったと認め、「もっと良い仕事が必要」と述べた。原因として直線速度の不足を挙げ、直線の少ないシンガポールでは改善を期待するが、走ってみないと分からないとも語った。予選での2、3グリッド分の差が痛かったとも振り返り、マクラーレンはコンストラクターズ3位で、首位メルセデスとは240ポイント差にある。",
+      "url": "https://www.formula1.com/en/latest/article/norris-hopeful-recent-straight-line-speed-issue-will-be-cured-in-singapore-as-he-admits-mclaren-need-to-do-a-better-job.7GhQrU0cCJGpY9v8lxyTkp",
+      "published": "2026-10-08T13:46:00+00:00"
+    },
+    {
+      "id": "nl-gpblog-alonso-dakar-denial",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "alonso-dakar-lemans-rumour",
+      "title": "アロンソ、ダカール復帰の噂に「身体的にほぼ不可能」　GT3も否定",
+      "orig": "Alonso legt waarheid op tafel na geruchten over groot avontuur buiten F1",
+      "summary": "アロンソはシンガポールの会見で、2027年のダカール復帰の噂に対し、F1参戦と両立するのは身体的にほぼ不可能だと答えた。GT3の話も「経験がない」と退けている。ただ新たな挑戦自体は排除せず、準備が整って判断したら噂ではなく自分で発表すると述べた。2020年のダカールではマルク・コマと組み総合13位だった。",
+      "url": "https://www.gpblog.com/nl/nieuws/alonso-legt-waarheid-op-tafel-na-geruchten-over-groot-avontuur-buiten-f1",
+      "published": "2026-10-08T15:14:00+02:00"
     },
     {
       "id": "de-mst-ocon-stay-in-f1",
@@ -402,6 +637,104 @@
       "orig": "Audi-Antriebseinheit: Nico Hülkenberg sieht \"Problem mit Leistungsausbeute\"",
       "url": "https://www.motorsport-total.com/formel-1/news/audi-antriebseinheit-nico-huelkenberg-sieht-problem-mit-leistungsausbeute-26100811",
       "published": "2026-10-08T14:38:00+02:00"
+    },
+    {
+      "id": "es-motorsport-hamilton-old-school-rain",
+      "kind": "news",
+      "lang": "es",
+      "region": "スペイン",
+      "source": "Motorsport.com España",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "sepang-wet-race-debate",
+      "title": "ハミルトン「旧世代は走りたい、若手は慎重」　セパンの雨とスリックでの追い上げを振り返る",
+      "orig": "Hamilton: \"Los pilotos de la vieja escuela queremos correr; los jóvenes son más prudentes\"",
+      "summary": "ハミルトンはセパンの雨で、スリックを履いた路面での追い上げを楽しんだと振り返った。ただ遅延や混乱でフェルスタッペンやアントネッリと戦えなかったと残念がり、審判団は責めなかった。雨の決勝は2008年より難しさが薄れ、旧世代は走りたがるが若手は慎重だと話す。現行PUは直線末端で出力が落ちるとも指摘し、数年内の是正を望んだ。",
+      "url": "https://es.motorsport.com/f1/news/declaraciones-hamilton-jueves-singapur-pilotos-vieja-escuela-correr-lluvia/10863068/",
+      "published": "2026-10-08T13:46:00+02:00"
+    },
+    {
+      "id": "es-motorsport-audi-power-limit",
+      "kind": "news",
+      "lang": "es",
+      "region": "スペイン",
+      "source": "Motorsport.com España",
+      "cat": "チーム",
+      "circuit": "singapore",
+      "teams": [
+        "audi"
+      ],
+      "topic": "audi-singapore-power",
+      "title": "アウディ勢が語る最大の弱点はPU出力　ボルトレートは「改善できる」と自信",
+      "orig": "Los pilotos de Audi F1 revelan cuál es su mayor limitación y cómo esperan solventarla",
+      "summary": "アウディのヒュルケンベルグとボルトレートは、直近のレースで出力不足が最大の制約だと口をそろえた。ヒュルケンベルグは冷却ではなく単純なパワー不足と話し、今週末の自身の期待も高くない。ボルトレートはDTMやルマンの実績を挙げて改善に自信を示し、初年度に最高のエンジンは期待できないと語った。バクーの改良はセパンで狙い通りに働いたという。",
+      "url": "https://es.motorsport.com/f1/news/fabricaban-mejores-motores-pilotos-audi-mayor-limitacion/10863059/",
+      "published": "2026-10-08T13:17:00+02:00"
+    },
+    {
+      "id": "en-therace-cooling-vests-divided",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "The Race",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes",
+        "williams"
+      ],
+      "topic": "singapore-heat-cooling-vest",
+      "title": "冷却ベストでドライバーの意見割れる　ハジャーは「禁止すべき」、ラッセルは支持",
+      "orig": "'Should be banned' - F1 drivers divided over cooling vests",
+      "summary": "シンガポールGPがヒートハザードとされ、液冷ベストを巡ってドライバーの意見が割れた。ラッセルは多くのレースで使いたいと述べるが、メルセデスは効率的な仕組みの開発に資源を割いていない。ハジャーは「禁止すべき」、フェルスタッペンは不要でケーブルが動きを妨げると話す。ウィリアムズが開発で先行すると見られ、システムは40分前後で効きが落ちる例もあるという。",
+      "url": "https://www.the-race.com/formula-1/should-be-banned-f1-drivers-divided-over-cooling-vests/",
+      "published": "2026-10-08T12:00:00+01:00"
+    },
+    {
+      "id": "en-therace-russell-ditches-upgrade",
+      "kind": "tech",
+      "lang": "en",
+      "region": "英国",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "mercedes-sepang-upgrade-failure",
+      "title": "ラッセル、メルセデスの大型アップグレードを外す　セパンの失敗を受け旧仕様で週末へ",
+      "orig": "Why Russell is ditching Mercedes' major F1 upgrade",
+      "summary": "ラッセルはシンガポールで大型アップグレードを使わず、旧仕様に戻した車で走る。アントネッリは新エアロを継続し、スプリント週末ゆえ金曜以降は仕様を入れ替えにくいため、2台の比較は週末を通じて続く。ラッセルは「完全な当然の判断」と述べ、バクーとブダペストで速さが数十分の1秒単位で振れた点も挙げた。ADUO 2の前倒しは間に合わなかったという。",
+      "url": "https://www.the-race.com/formula-1/why-russell-is-ditching-mercedes-major-f1-upgrade/",
+      "published": "2026-10-08T12:00:00+01:00",
+      "lens": {
+        "type": "分析",
+        "lead": "ラッセル",
+        "focus": "旧仕様に戻す判断",
+        "cause": "セパンの失敗と比較の必要",
+        "hook": "「ラッセルが外す」"
+      }
+    },
+    {
+      "id": "en-therace-bottas-jungle-ride",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "The Race",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "cadillac"
+      ],
+      "topic": "bottas-bike-ride-singapore",
+      "title": "ボッタス、マレーシアからシンガポールまで3日間の自転車旅　夜のジャングルでコブラにも遭遇",
+      "orig": "'Your mind starts to play games' - Bottas's jungle ride to Singapore",
+      "summary": "キャデラックのボッタスが、マレーシアからシンガポールまで3日間かけて自転車で走破した。発案はプロ自転車選手の恋人で、現地のサイクリストとルートを練り、伴走車も付けたという。夜のジャングル走行が最も過酷で、コブラやニシキヘビに遭遇したと明かした。夜に走ったのは時差の調整と暑さ対策のためで、熱への順応にも役立つと期待している。",
+      "url": "https://www.the-race.com/extra/your-mind-starts-to-play-games-bottass-jungle-ride-to-singapore/",
+      "published": "2026-10-08T12:00:00+01:00"
     },
     {
       "id": "en-therace-singapore-day-one",
@@ -934,7 +1267,14 @@
       "orig": "Mercedes taking old parts to Singapore amid F1 upgrade doubts",
       "summary": "ザ・レースは、メルセデスがシンガポールGPの週末に旧仕様と新アップグレードの空力パーツを比較走行させる方針だと伝えた。セパンでは0.3秒の向上を見込んだのに、実際は約0.5秒遅くなったという。ウォルフ代表は「結論を出すにはさらに証拠が必要」と述べた。フリー走行が1回だけのスプリント週末で、どこまで切り分けられるかが焦点になる。",
       "url": "https://www.the-race.com/formula-1/mercedes-taking-old-parts-to-singapore-amid-f1-upgrade-doubts/",
-      "published": "2026-10-07T12:00:00+01:00"
+      "published": "2026-10-07T12:00:00+01:00",
+      "lens": {
+        "type": "レポート",
+        "lead": "メルセデス",
+        "focus": "新旧の使い比べ",
+        "cause": "改良への疑念",
+        "hook": "アップグレードへの疑念"
+      }
     },
     {
       "id": "de-motorsport-total-honda-aduo2-turbo",
@@ -1038,7 +1378,14 @@
       "orig": "Antonelli explica dificuldade da Mercedes para avaliar atualizações em Sepang",
       "summary": "グランデ・プレミオは、メルセデスがセパンの追加アップデートの効果をなお検証中だと伝えた。アントネッリは、荒く摩耗しやすい古い舗装が影響した可能性に触れ、ザントフォールトでマクラーレンが速かった例も挙げている。第2弾はフロアやリアサスなど7箇所の変更で、シンガポールでは理解がかなり進むはずだと期待を示した。",
       "url": "https://grandepremio.com/br/f1/antonelli-aponta-fator-que-dificultou-vida-da-mercedes-com-atualizacoes-em-sepang/",
-      "published": "2026-10-07T06:00:00-03:00"
+      "published": "2026-10-07T06:00:00-03:00",
+      "lens": {
+        "type": "談話",
+        "lead": "アントネッリ",
+        "focus": "効果の見極めの難しさ",
+        "cause": "古い舗装と摩耗",
+        "hook": "アントネッリの説明"
+      }
     },
     {
       "id": "it-formula1it-horner-severance",
@@ -1269,7 +1616,14 @@
       "orig": "Sepang-Rätsel bei Mercedes: Warum das Upgrade nicht wie gewünscht griff",
       "summary": "メルセデスはセパンにアンダーフロアとサイドポッドを改めた改良パッケージを持ち込んだが、期待した効果は出なかった。ブラッドリー・ロード副代表は、新パーツと路面温度、荒い路面の組み合わせで車が快適な領域に収まらなかったと説明する。記事は粗い舗装によるタイヤの過熱や床下の気流への影響を要因として挙げ、同チームはシンガポールで追加のデータを集める方針だ。",
       "url": "https://www.formel1.de/news/news/2026-10-06/sepang-raetsel-bei-mercedes-warum-das-upgrade-nicht-wie-gewuenscht-griff",
-      "published": "2026-10-06T19:12:00+02:00"
+      "published": "2026-10-06T19:12:00+02:00",
+      "lens": {
+        "type": "分析",
+        "lead": "メルセデス",
+        "focus": "効かなかった原因",
+        "cause": "荒れた路面とタイヤ過熱",
+        "hook": "路面とタイヤ温度の謎"
+      }
     },
     {
       "id": "es-motorsport-piastri-lidero-vuelta",
@@ -1305,253 +1659,6 @@
       "summary": "ウィリアムズのボウルズ代表は、コストキャップは財政の安定には役立ったが競争の均衡という本来の狙いは果たせていないと訴えた。上位4チームが獲得するポイントの割合は導入前の約70%から83%に上がったという。同氏は基礎的な仕組みの整備に余計な費用がかかり、上位勢より約3割多く投じていると説明し、順位に応じたハンデ制を提案した。",
       "url": "https://www.formel1.de/news/news/2026-10-06/teamchef-fordert-umdenken-topteams-durch-kostendeckel-uneinholbar",
       "published": "2026-10-06T16:30:00+02:00"
-    },
-    {
-      "id": "it-formula1it-cadillac-singapore-bottas",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "チーム",
-      "circuit": "singapore",
-      "teams": [
-        "cadillac"
-      ],
-      "topic": "cadillac-singapore-hopes",
-      "title": "キャデラック、シンガポールに好機を見る　ただしボッタスは大型アップデート待ち",
-      "orig": "Cadillac, occasione Singapore ma Bottas parte ancora con un handicap",
-      "summary": "フォーミュラ1イットは、セパンで苦戦したキャデラックがシンガポールを好機とみていると伝えた。低速コーナーと強いブレーキングが多いコースは、マレーシアより車に合うとされる。ただし大型パッケージはペレスの車にのみ搭載済みで、ボッタスは米国ラウンドまで待つ。ブドコウスキー代表は適切なバランスと機械的なセットアップを探すと話し、ボッタスのバクーでの事故の調査も続いている。",
-      "url": "https://www.formula1.it/news/33083/1/cadillac-occasione-singapore-ma-bottas-parte-ancora-con-un-handicap",
-      "published": "2026-10-06T16:05:00+02:00"
-    },
-    {
-      "id": "it-formula1it-russell-ultimo-singapore",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "チーム",
-      "circuit": "singapore",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "russell-singapore-pu-penalty",
-      "title": "ラッセル、シンガポールは最後尾発進へ　パワーユニット交換でグリッド降格",
-      "orig": "Penalità Mercedes, disastro Russell: partirà ultimo a Singapore",
-      "summary": "フォーミュラ1.itは、ラッセルがシンガポールGPで最後尾からスタートすると伝えた。セパンで壊れたパワーユニットを交換すると年間4基の上限を超えるためだ。メルセデスは当初、新品の部品を今月の米国GPで投入する予定だった。副代表は機械的な故障と判断したが、原因はなお調査中で、追い抜きの難しい市街地コースでの影響が懸念される。",
-      "url": "https://www.formula1.it/news/33082/1/penalita-mercedes-disastro-russell-partira-ultimo-a-singapore",
-      "published": "2026-10-06T13:10:00+02:00",
-      "lens": {
-        "type": "レポート",
-        "lead": "ラッセル",
-        "focus": "最後尾発進の痛手",
-        "cause": "終盤のPU故障、年間4基の枠超過",
-        "hook": "「惨事」と最後尾"
-      }
-    },
-    {
-      "id": "de-motorsport-total-antonelli-singapore-scenario",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "分析",
-      "circuit": "singapore",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "antonelli-title-timeline",
-      "title": "アントネッリ、シンガポールで王座が決まる「ありえそうにないシナリオ」とは",
-      "orig": "Formel-1-Weltmeister in Singapur: Das unwahrscheinliche Szenario für Antonelli!",
-      "summary": "モータースポーツ・トータルは、アントネッリがシンガポールで王座を決める可能性を数字で検討した。現在はラッセルに84点、ハミルトンに106点の差をつけ、残りは6戦で獲得可能なのは150点という。カタールとアブダビが中東情勢で中止され代替開催もできない場合に限り、残戦が残ったまま決まりうるとし、1955年のファンジオの例を挙げた。通常ならオースティンが最速になる。",
-      "url": "https://www.motorsport-total.com/formel-1/news/formel-1-weltmeister-in-singapur-das-unwahrscheinliche-szenario-fuer-antonelli-26100608",
-      "published": "2026-10-06T13:09:00+02:00"
-    },
-    {
-      "id": "en-therace-weird-car-theory",
-      "kind": "tech",
-      "lang": "en",
-      "region": "英国",
-      "source": "The Race",
-      "cat": "テクニカル",
-      "circuit": "sepang",
-      "teams": [
-        "mercedes",
-        "mclaren",
-        "redbull"
-      ],
-      "topic": "sepang-rough-asphalt-theory",
-      "title": "勢力図が崩れたセパン　荒れた路面で車が「妙な動き」をしたという説",
-      "orig": "The 'weird' car theory sparked by F1 pecking order surprises",
-      "summary": "ザ・レースは、セパンで勢力図が大きく変わった理由として路面の荒さを挙げる説を紹介した。マクラーレンのステラ代表は、荒れた路面で車が空力的に「妙な動き」をしたと語っている。極端な暑さも重なり、多くの車が最適な作動領域から外れたという見方だ。メルセデスとマクラーレンはここまで15戦で13勝を挙げていたが、今回はレッドブルが主導権を握った。",
-      "url": "https://www.the-race.com/formula-1/weird-car-theory-sparked-by-f1-pecking-order-surprises/",
-      "published": "2026-10-06T12:00:00+01:00"
-    },
-    {
-      "id": "en-therace-mercedes-upgrade-action",
-      "kind": "tech",
-      "lang": "en",
-      "region": "英国",
-      "source": "The Race",
-      "cat": "テクニカル",
-      "circuit": "sepang",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "mercedes-sepang-upgrade-failure",
-      "title": "混乱を招いたメルセデスのアップグレード、シンガポールで旧仕様との比較走行を検討",
-      "orig": "The action Mercedes can take over confusing F1 upgrade",
-      "summary": "メルセデスはセパンに約0.3秒の向上を期待して大型アップグレードを投入したが、逆に最大0.5秒遅れた可能性があると記事は伝える。データ上のダウンフォースは増えても、低速域や直線の速さを失った疑いがある。チームはシンガポールの走行で新旧仕様を比べ、結果次第では旧仕様に戻すことも排除していないが、その場合は運用面の負担が大きいという。",
-      "url": "https://www.the-race.com/formula-1/the-action-mercedes-can-take-over-confusing-f1-upgrade/",
-      "published": "2026-10-06T12:00:00+01:00"
-    },
-    {
-      "id": "es-motorsport-redbull-aduo-2027",
-      "kind": "tech",
-      "lang": "es",
-      "region": "スペイン",
-      "source": "Motorsport.com España",
-      "cat": "テクニカル",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "aduo-tokens-redbull",
-      "title": "レッドブルのメキース代表、ADUOの評価に「驚いた」　2027年に向け見直しを要望",
-      "orig": "Red Bull supera las restricciones del ADUO, pero sigue pidiendo ajustes para la F1 2027",
-      "summary": "レッドブルのメキース代表は、FIAが当初示したADUOの評価に驚いたと述べ、見直しに向けて協議していると明かした。この制度は内燃機関の性能差を四半期ごとに測って開発の機会を与えるもので、直近ではメルセデスが1つ、フェラーリ、アウディ、ホンダが各2つの枠を得た。基準とされたレッドブルは枠を得られなかったが、改良は進み、マレーシアで今季初優勝を挙げた。",
-      "url": "https://es.motorsport.com/f1/news/red-bull-supera-aduo-pide-cambios/10862510/",
-      "published": "2026-10-06T12:00:00+02:00"
-    },
-    {
-      "id": "en-rn365-vasseur-allies",
-      "kind": "news",
-      "lang": "en",
-      "region": "英国",
-      "source": "RacingNews365",
-      "cat": "チーム",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "vasseur-pressure-support",
-      "title": "フェラーリのバスール代表に他チーム首脳から擁護の声、批判の矢面に",
-      "summary": "成績低迷でメディアの批判を浴びるフェラーリのバスール代表に、他チームの首脳から擁護の声が出ている。アルピーヌのブリアトーレ代表は「メディアは失敗のたびに叩く」と述べ、ウィリアムズのボウルズ代表も批判は他の代表より誇張されていると語った。フェラーリ上層部は緊急の説明会で代表への信頼を改めて示したという。マレーシアではハミルトンが3位に入り、6戦ぶりの表彰台となった。",
-      "orig": "Fred Vasseur finds much-needed allies as spotlight glares on Ferrari boss",
-      "url": "https://racingnews365.com/fred-vasseur-finds-much-needed-allies-as-spotlight-glares-on-ferrari-boss",
-      "published": "2026-10-06T10:40:00+01:00"
-    },
-    {
-      "id": "en-rn365-redbull-complexity",
-      "kind": "news",
-      "lang": "en",
-      "region": "英国",
-      "source": "RacingNews365",
-      "cat": "分析",
-      "circuit": "sepang",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "f1-complexity-talks",
-      "title": "レッドブルのメキース代表、F1の「複雑さ」を抑えるため関係者間の協議を明言",
-      "summary": "レッドブルのメキース代表は、セパンで起きたPU制御ソフトの不具合を受け、F1の関係者間で協議が行われると明らかにした。雨用の安全モードで電力出力が350kWから250kWに下がり、MGU-Kが停止して複数台がフォーメーションラップで動けなくなったという。同代表は「複雑さが手に負えなくならないよう、できるだけ制御下に置く」必要性を訴えた。FIAは緊急のソフト修正を出し、決勝は予定通り行われてフェルスタッペンが優勝した。",
-      "orig": "Red Bull confirm talks to ensure F1 'complexity' does not get out of control",
-      "url": "https://racingnews365.com/red-bull-confirm-talks-to-ensure-f1-complexity-does-not-get-out-of-control",
-      "published": "2026-10-06T09:50:00+01:00"
-    },
-    {
-      "id": "en-rn365-alonso-surprises",
-      "kind": "rumor",
-      "lang": "en",
-      "region": "英国",
-      "source": "RacingNews365",
-      "cat": "うわさ",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "alonso-dakar-lemans-rumour",
-      "title": "アロンソが「今後数週間にさらなるサプライズ」を示唆、ダカールやル・マン参戦の噂",
-      "summary": "アロンソはバーレーンGPで「今後数週間にさらなるサプライズがある」と語り、F1以外の参戦計画への憶測が強まっている。2027年ダカール・ラリーにアストンマーティン仕様のプロドライブ車で出る案や、ル・マン24時間にヴァルキリーで復帰する案が報じられた。フォーミュラEはF1との日程の重なりから可能性が低いという。同サイトは一部が交渉の最終段階にあると伝えたが、未確認の情報である。",
-      "orig": "Fernando Alonso sensational move rumours mounting",
-      "url": "https://racingnews365.com/fernando-alonso-sensational-move-rumours-mounting",
-      "published": "2026-10-06T09:00:00+01:00"
-    },
-    {
-      "id": "en-rn365-russell-double-whammy",
-      "kind": "news",
-      "lang": "en",
-      "region": "英国",
-      "source": "RacingNews365",
-      "cat": "チーム",
-      "circuit": "sepang",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "russell-singapore-pu-penalty",
-      "title": "ラッセルに「二重のグリッド降格」の恐れ、メルセデス副代表が言及",
-      "summary": "セパンでPU故障によりリタイアしたラッセルは、パワーユニット部品の交換による降格に加え、後日の仕様更新でも再び降格を受ける可能性があるとメルセデスのロード副代表が明かした。同氏は「痛恨の一撃の後の二重の打撃」と表現した。低走行距離のPUが不足しており、開発の進め方も見直す必要があるという。アントネッリとは84点差で、選手権への影響が懸念される。",
-      "orig": "George Russell facing 'double whammy' F1 penalty after 'gut-wrenching blow'",
-      "url": "https://racingnews365.com/george-russell-facing-double-whammy-f1-penalty-after-gut-wrenching-blow",
-      "published": "2026-10-06T08:10:00+01:00",
-      "lens": {
-        "type": "談話",
-        "lead": "ラッセル",
-        "focus": "二重降格の恐れ",
-        "cause": "原因不明のPU故障、低走行距離PU不足",
-        "hook": "「二重の打撃」"
-      }
-    },
-    {
-      "id": "ja-f1are-stroll-sepang-video",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "circuit": "sepang",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "stroll-sepang-video",
-      "title": "アストンマーチンのストロール、セパン決勝での走りが動画で話題に",
-      "summary": "F1のアレは、セパン決勝でのアストンマーチンのストロールの走りを捉えた動画を取り上げた。ブレーキング時の安定感や積極的なライン取りが見事だったとして、コメント欄では称賛の声が出ているという。雨のコンディションやマシンのメカニカルグリップの高さが好走の理由とする見方もあり、ポイント獲得に届かなかったことを惜しむ声もある。",
-      "orig": "【動画】アストンマーチンのストロール、F1セパン決勝で\"カッコイイ\"ところを見せてた模様",
-      "url": "https://f1are.com/blog-entry-3960.html",
-      "published": "2026-10-06T12:00:00+09:00"
-    },
-    {
-      "id": "ja-f1are-leclerc-sepang-comment",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "circuit": "sepang",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "leclerc-sepang-pace-comment",
-      "title": "フェラーリのルクレール、セパン決勝を振り返り「追いつけるペースはなかった」",
-      "summary": "F1のアレは、ルクレールがセパン決勝で「アントネッリにもフェルスタッペンにも追いつけるだけのパフォーマンスはなかった」と語ったとする記事を紹介した。予選後のバランスの問題にも触れたとされ、元記事はプラネットF1の採点記事に基づくという。コメント欄では戦略面での不満や、現行車の扱いに苦戦しているのではという見方が交わされている。",
-      "orig": "フェラーリのルクレール、F1セパン決勝について「アントネッリやフェルスタッペンには追いつけるパフォーマンスがなかった」",
-      "url": "https://f1are.com/blog-entry-3959.html",
-      "published": "2026-10-06T10:00:00+09:00"
-    },
-    {
-      "id": "ja-f1are-tsunoda-sepang-face",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "circuit": "sepang",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "tsunoda-sepang-expression",
-      "title": "レッドブル控えの角田、セパンでの表情がファンの間で話題に",
-      "summary": "F1のアレは、セパンのレース中に撮影されたレッドブルのリザーブドライバー、角田裕毅の大げさな表情の写真を取り上げた。何を話していたのかを巡り、コメント欄では給料の話か、コースコンディションの報告かといった冗談交じりの推測が出ているという。特定の芸人に似ているとの声もあり、全体として批判的ではなく和やかな雰囲気の話題だ。",
-      "orig": "レッドブル控えの角田裕毅、セパンでの表情が話題",
-      "url": "https://f1are.com/blog-entry-3958.html",
-      "published": "2026-10-06T09:00:00+09:00"
     }
   ]
 }
