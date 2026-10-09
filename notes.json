@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-09T18:40:00+09:00",
+  "updatedAt": "2026-10-10T00:40:00+09:00",
   "notes": [
+    {
+      "id": "note-formula1report-sq-singapore",
+      "platform": "note",
+      "site": "Formula1 Report",
+      "lang": "ja",
+      "paid": false,
+      "cat": "予選",
+      "author": "Formula1 Report",
+      "title": "【SQ】フェルスタッペン、圧巻のSector1でポールポジション獲得、ラッセル＆ルクレールを退ける。アントネッリは7番手に沈む【シンガポールGP】",
+      "summary": "シンガポールGPスプリント予選を時系列で振り返った記事。SQ1はペレスのクラッシュによる赤旗で混乱したと整理し、SQ3ではSector1で明確に速かったフェルスタッペンの1周が決定的だったという見立てを示す。ラッセルはメルセデス勢で最も強いと評価している。",
+      "url": "https://note.com/formula1report/n/n10cc2733440c",
+      "published": "2026-10-09T22:52:54+09:00",
+      "circuit": "singapore"
+    },
     {
       "id": "note-formula1report-americas-tyres",
       "platform": "note",
@@ -13,6 +27,21 @@
       "summary": "アメリカ、メキシコ、サンパウロの3連戦のタイヤ配分を整理した記事。米国GPはC2〜C4、メキシコとサンパウロはC3〜C5と最も柔らかい設定で、昨年より柔らかい。ハードをほとんど使わなかった昨年の傾向から、戦略の幅が広がる可能性を論じている。",
       "url": "https://note.com/formula1report/n/n62a191c88deb",
       "published": "2026-10-09T17:44:00+09:00"
+    },
+    {
+      "id": "substack-somersf1-singapore-docs",
+      "platform": "substack",
+      "site": "Somersf1",
+      "lang": "en",
+      "paid": false,
+      "cat": "テクニカル",
+      "author": "Matthew Somerfield",
+      "title": "2026年シンガポールGP　資料まとめと技術ジャーナル",
+      "orig": "2026 Singapore Grand Prix document cache and tech journal",
+      "summary": "シンガポールGPの公式資料を整理した週末プレビュー。アクティブエアロのストレートモード区間、ピレリのC3〜C5と最低空気圧、ピットストップの平均ロス約22秒、レースでの回生上限などをまとめている。資料の公開に合わせて週末中に更新していくとしている。",
+      "url": "https://somersf1.substack.com/p/2026-singapore-grand-prix-document",
+      "published": "2026-10-09T12:00:00+09:00",
+      "circuit": "singapore"
     },
     {
       "id": "note-formula1report-singapore-thursday",
@@ -40,6 +69,20 @@
       "summary": "FIAがセパンのフォーメーションラップで起きた出力低下を検証した結果をまとめた記事。250kW制限区間で低回転の車が想定以上に失速し回復できなかったと整理し、米国GPで新ソフトを入れる流れを追う。FIAの「未テストではない」という反論も紹介している。",
       "url": "https://note.com/formula1report/n/neb09a17d8aab",
       "published": "2026-10-08T16:58:51+09:00"
+    },
+    {
+      "id": "blog-albonnote-singapore-updates",
+      "platform": "blog",
+      "site": "アルボンノート",
+      "lang": "ja",
+      "paid": false,
+      "cat": "テクニカル",
+      "author": "アルボンさん",
+      "title": "F1 2026年シーズン第18戦シンガポールGP、アップデート確認と展望。",
+      "summary": "シンガポール向けの各車のアップデートを確認し、週末を展望した記事。追い越しが難しい市街地コースでは予選順位が重要だと述べ、メルセデスの新旧仕様の比較、フェラーリのリアウイング追加ウイングレット、レッドブルのステー先端のミニウイングなどを解説している。",
+      "url": "https://albonnote.com/f1-2026%e5%b9%b4%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e7%ac%ac18%e6%88%a6%e3%82%b7%e3%83%b3%e3%82%ac%e3%83%9d%e3%83%bc%e3%83%abgp%e3%80%81%e3%82%a2%e3%83%83%e3%83%97%e3%83%87%e3%83%bc%e3%83%88%e7%a2%ba/",
+      "published": "2026-10-08T12:00:00+09:00",
+      "circuit": "singapore"
     },
     {
       "id": "note-formula1report-singapore-c5-key",
@@ -756,58 +799,6 @@
       "summary": "燃料の重さやタイヤの劣化、トラフィックを補正して、決勝の本当のペースを比べる分析。ラッセルとフェルスタッペンのペースは実質的に互角で、41〜50周目の平均差はわずか0.03秒だったとする。アントネッリとハジャーが約0.4秒差、ピアストリ0.6秒、ルクレール0.7秒と続く。C5タイヤはC4より1周約0.3秒速かったという見立ても示している。",
       "url": "https://f1-lap-time.com/?page_id=17508",
       "published": "2026-09-27T15:58:00+09:00",
-      "teams": [
-        "mercedes",
-        "redbull"
-      ],
-      "circuit": "baku"
-    },
-    {
-      "id": "blog-f1lap-azerbaijan-race-pace",
-      "platform": "blog",
-      "site": "F1ラップタイム研究室",
-      "lang": "ja",
-      "paid": false,
-      "cat": "決勝",
-      "author": "Takumi",
-      "title": "2026年アゼルバイジャンGP レースペース分析",
-      "summary": "燃料や渋滞、オーバーテイクモードの影響を補正したレースペースの比較。ラッセルとフェルスタッペンがほぼ同等で最速、アントネッリとハジャーが約0.4秒差で続いたと分析。ソフトはミディアムより1周約0.3秒速かったという。",
-      "url": "https://f1-lap-time.com/?page_id=17508",
-      "published": "2026-09-27T12:00:00+09:00",
-      "circuit": "baku"
-    },
-    {
-      "id": "blog-f1laptime-baku-review",
-      "platform": "blog",
-      "site": "F1ラップタイム研究室",
-      "lang": "ja",
-      "paid": false,
-      "cat": "分析",
-      "author": "Takumi",
-      "title": "2026年アゼルバイジャンGP レビュー",
-      "summary": "バクーで追い抜きが極めて難しかった理由をエネルギーマネジメントの観点から読み解くレビュー。フェルスタッペンがコンマ差まで迫りながら交わせなかったのは、超ロングストレートでバッテリーを使い切ってしまい後続の追い抜き優位が終盤で消えるためだと分析する。予選でクラッシュしたアントネッリの経験を、セナやフェルスタッペン、ルクレールも通った「通過儀礼」になぞらえ、5位への挽回を評価。マクラーレンのダブルリタイアやレッドブルの復調にも触れている。",
-      "url": "https://f1-lap-time.com/?page_id=17512",
-      "published": "2026-09-27T06:23:00+09:00",
-      "teams": [
-        "mercedes",
-        "redbull",
-        "mclaren"
-      ],
-      "circuit": "baku"
-    },
-    {
-      "id": "substack-harrybenjamin-baku-review",
-      "platform": "substack",
-      "site": "Chequered Flag",
-      "lang": "en",
-      "paid": false,
-      "cat": "決勝",
-      "author": "Harry Benjamin",
-      "title": "バクー決勝振り返りポッドキャスト、ベッテルが見解「ラッセルは勢いを取り戻したか」",
-      "orig": "Azerbaijan GP Review: Vettel Gives His Verdict",
-      "summary": "ポッドキャスト「Chequered Flag」がバクー決勝を振り返った回。パネルはラッセルのポール・トゥ・ウィンで勢いを取り戻せたかを議論し、4度のワールドチャンピオン、セバスチャン・ベッテルが自身の見解を語っている。フェルスタッペンやアントネッリ本人へのインタビューも交え、僅差の優勝争いや順位変動の背景を多角的に解説したと紹介されている。",
-      "url": "https://harrybenjamin.substack.com/p/azerbaijan-gp-review-vettel-gives-f5a",
-      "published": "2026-09-26T19:10:00+01:00",
       "teams": [
         "mercedes",
         "redbull"
