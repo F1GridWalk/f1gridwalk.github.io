@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-10-10T00:40:00+09:00",
+  "updatedAt": "2026-10-10T06:30:00+09:00",
   "notes": [
+    {
+      "id": "note-formula1report-friday-analysis-singapore",
+      "platform": "note",
+      "site": "Formula1 Report",
+      "lang": "ja",
+      "paid": false,
+      "cat": "分析",
+      "author": "Formula1 Report",
+      "title": "【金曜分析】スプリント予選から読み解く勢力図。フェルスタッペンの速さとフェラーリ独自のアプローチに迫る【シンガポールGP】",
+      "summary": "シンガポールGP金曜の各チームを整理した分析記事。フェルスタッペンはSector1の直線区間で差をつけた一方、フェラーリは低速コーナーで強いという見立てを示す。メルセデスの新旧仕様比較やマクラーレンの燃料噴射の問題、FIAのSQ1ミスの影響も取り上げている。",
+      "url": "https://note.com/formula1report/n/n5ae218c73569",
+      "published": "2026-10-10T01:13:39+09:00",
+      "teams": [
+        "redbull",
+        "ferrari",
+        "mercedes",
+        "mclaren"
+      ],
+      "circuit": "singapore"
+    },
     {
       "id": "note-formula1report-sq-singapore",
       "platform": "note",
@@ -786,24 +806,6 @@
       "circuit": "baku",
       "platform": "note",
       "lang": "ja"
-    },
-    {
-      "id": "blog-f1laptime-baku-pace",
-      "platform": "blog",
-      "site": "F1ラップタイム研究室",
-      "lang": "ja",
-      "paid": false,
-      "cat": "分析",
-      "author": "Takumi",
-      "title": "2026年アゼルバイジャンGP レースペース分析",
-      "summary": "燃料の重さやタイヤの劣化、トラフィックを補正して、決勝の本当のペースを比べる分析。ラッセルとフェルスタッペンのペースは実質的に互角で、41〜50周目の平均差はわずか0.03秒だったとする。アントネッリとハジャーが約0.4秒差、ピアストリ0.6秒、ルクレール0.7秒と続く。C5タイヤはC4より1周約0.3秒速かったという見立ても示している。",
-      "url": "https://f1-lap-time.com/?page_id=17508",
-      "published": "2026-09-27T15:58:00+09:00",
-      "teams": [
-        "mercedes",
-        "redbull"
-      ],
-      "circuit": "baku"
     }
   ]
 }
