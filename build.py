@@ -159,6 +159,18 @@ ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
 ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
 ul.list a.t:hover{text-decoration:underline}
 .day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
 footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
 footer p{margin:6px 0}
 @media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
@@ -1756,6 +1768,83 @@ def build_feed(allarts):
     write('feed.xml', '\n'.join(out) + '\n')
 
 
+# ---- related rulebook entries on news pages (owner's request, 9 Oct 2026) ---------------------------
+_KW = {}
+
+
+def _kw_names(names):
+    out = []
+    for n in names:
+        n = (n or '').strip()
+        if len(n) < 2 or re.fullmatch(r'[ぁ-ゟー]+', n):
+            continue
+        if re.fullmatch(r'[A-Za-z0-9 .\-]+', n) and len(n) <= 2:
+            continue  # GP, PU, TP … match far too much
+        out.append(n)
+    return out
+
+
+_KATA = r'\u30a0-\u30ff'
+
+
+def _kw_hit(n, text):
+    """Whole-word match: a katakana or Latin name must not run on into more katakana / letters
+    (オーバー ≠ オーバーテイク, レーキ ≠ ブレーキ)."""
+    pre = r'(?<![A-Za-z])' if re.match(r'[A-Za-z]', n) else (f'(?<![{_KATA}])' if re.match(f'[{_KATA}]', n) else '')
+    post = r'(?![A-Za-z])' if re.search(r'[A-Za-z]$', n) else (f'(?![{_KATA}])' if re.search(f'[{_KATA}]$', n) else '')
+    return re.search(pre + re.escape(n) + post, text) is not None
+
+
+def _kw_index(allarts):
+    """Entries with their names (main name first), and how common each name is across all news."""
+    if _KW:
+        return _KW
+    ents = []
+    if RULES:
+        for t in RULES['terms']:
+            main = re.sub(r'（.*?）', '', t['term']).strip()
+            ents.append({'id': t['id'], 'kind': 'term', 'name': t['term'], 'cat': t['cat'], 'short': t['short'],
+                         'main': _kw_names([t['term'], main]), 'alias': _kw_names(t.get('aliases', [])),
+                         'ex': {x.get('u', '') for x in t.get('examples', [])}})
+    for p in PEOPLE:
+        ents.append({'id': 'person-' + p['id'], 'kind': 'person', 'name': p['name'], 'cat': '人物', 'short': p['short'],
+                     'main': _kw_names([p['name']]), 'alias': _kw_names(p.get('aliases', []) + [p.get('en', '')]), 'ex': set(p.get('appears', []))})
+    texts = [a['title'] + ' ' + a.get('summary', '') for a in allarts]
+    df = {}
+    for en in ents:
+        for n in en['main'] + en['alias']:
+            if n not in df:
+                df[n] = sum(1 for t in texts if _kw_hit(n, t)) / max(1, len(texts))
+    _KW.update(ents=ents, df=df)
+    return _KW
+
+
+def related_entries(a, allarts, n_terms=4, n_people=3):
+    K = _kw_index(allarts)
+    text = a['title'] + ' ' + a.get('summary', '')
+    me = f'/news/{a["id"]}/'
+    terms, people = [], []
+    for en in K['ents']:
+        if me in en['ex']:
+            score = 0
+        else:
+            m = [n for n in en['main'] if _kw_hit(n, text)]
+            al = [n for n in en['alias'] if _kw_hit(n, text) and (en['kind'] == 'person' or K['df'].get(n, 1) <= 0.08)]
+            if m:
+                if en['kind'] == 'term' and min(K['df'][n] for n in m) > 0.2:
+                    continue  # very common words (グランプリ …) say little about this article
+                score = 1 + min(K['df'][n] for n in m)
+            elif al:
+                score = 2 + min(K['df'][n] for n in al)
+            else:
+                continue
+        pos = min([text.find(n) for n in en['main'] + en['alias'] if _kw_hit(n, text)] or [9999])
+        (people if en['kind'] == 'person' else terms).append((score, pos, en))
+    terms.sort(key=lambda x: (x[0], x[1]))
+    people.sort(key=lambda x: (x[1], x[0]))
+    return [x[2] for x in terms[:n_terms]], [x[2] for x in people[:n_people]]
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -1812,6 +1901,14 @@ def main():
                     f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む\u00a0↗'
                     + (f' <small>（{e(lang)}）</small>' if a.get('lang') != 'ja' else '') + '</a>')
         body.append(f'<p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は {e(a["source"])} に帰属します。</p>')
+        kt, kp = related_entries(a, allarts)
+        if kt or kp:
+            kw = '<aside class="kw" aria-label="この記事のキーワード"><p class="kw-h">この記事のキーワード<small>F1 Grid Walk ルールブックより</small></p>'
+            kw += ''.join(f'<a class="kw-t" href="{rb_url(x["id"])}" data-track="click/kw/{e(x["id"])}"><b>{e(x["name"])}</b><small>{e(x["cat"])}</small><span>{e(x["short"])}</span></a>' for x in kt)
+            if kp:
+                kw += '<p class="kw-ph">登場する人物</p><div class="kw-p">' + ''.join(f'<a href="{rb_url(x["id"])}" data-track="click/kw/{e(x["id"])}">{e(x["name"])}</a>' for x in kp) + '</div>'
+            kw += '<a class="kw-all" href="/deep/rules/">ルールブックで用語を引く →</a></aside>'
+            body.append(kw)
         dg = deep_for_article(a)
         if dg:
             body.append(deep_card(dg))

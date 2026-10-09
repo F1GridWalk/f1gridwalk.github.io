@@ -231,6 +231,18 @@ ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
 ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
 ul.list a.t:hover{text-decoration:underline}
 .day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
 footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
 footer p{margin:6px 0}
 @media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
@@ -392,6 +404,7 @@ footer p{margin:6px 0}
 <p class="summary">セパンのブ<a class="term" href="/deep/rules/rake/" data-term="rake">レーキ</a>難易度は5段階で3で、1周に6カ所計13.2秒の制動があり、最も厳しいターン15では約189kgのペダル荷重と4.7Gが掛かる。回生上限は<a class="term" href="/deep/rules/qualifying/" data-term="qualifying">予選</a>7.5MJ、決勝8.5〜9.0MJで、バクーより回生機会が多く、直線終盤は<a class="term" href="/deep/rules/mgu-k/" data-term="mgu-k">MGU-K</a>の出力が100〜300mかけて徐々に落ちる見通しという。</p>
 <a class="cta" href="https://www.formula1.it/news/32904/1/gp-bahrain-freni-ed-energia-sepang-sfida-recupero-e-deployment" target="_blank" rel="noopener" data-track="click/it-formula1-sepang-brakes-energy" data-title="Formula1.it | セパンのブレーキとエネルギー回生を数字で読む　最大制動はターン15の4.7G">Formula1.itで元の記事を読む ↗ <small>（イタリア語）</small></a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は Formula1.it に帰属します。</p>
+<aside class="kw" aria-label="この記事のキーワード"><p class="kw-h">この記事のキーワード<small>F1 Grid Walk ルールブックより</small></p><a class="kw-t" href="/deep/rules/brakes/" data-track="click/kw/brakes"><b>ブレーキ（ディスクとキャリパー）</b><small>マシンと空力</small><span>車輪の内側で円盤をはさんで止める装置。2026年は回生が増え、後輪ブレーキは小さくなる方向。</span></a><a class="kw-t" href="/deep/rules/harvesting/" data-track="click/kw/harvesting"><b>エネルギー回生</b><small>パワーユニット</small><span>走りながら電気をためること。2026年はブレーキ、アクセルを戻す場面、直線の終わりなどで行う。</span></a><a class="kw-t" href="/deep/rules/mgu-k/" data-track="click/kw/mgu-k"><b>MGU-K</b><small>パワーユニット</small><span>ブレーキの力を電気に変え、その電気で後輪を押すモーター。2026年は最大350kW。</span></a><a class="kw-t" href="/deep/rules/energy-management/" data-track="click/kw/energy-management"><b>エネルギーマネジメント</b><small>パワーユニット</small><span>電池の電気を、1周のどこでためて、どこで使うかのやりくり。2026年は速さを分ける大きな要素。</span></a><a class="kw-all" href="/deep/rules/">ルールブックで用語を引く →</a></aside>
 <a class="dg-from" href="/deep/tyres-why-sepang/" data-track="click/deep/tyres-why-sepang/from"><small>DEEP GRID 後編</small><b>F1セパン決勝のタイヤ【後編】ソフトが31周。あなたなら、この理由をどう説明する？</b><span>この話を、もっと深く →</span></a>
 <div class="tags"><span>Mercedes</span><span>セパン</span><span>テクニカル</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E3%82%BB%E3%83%91%E3%83%B3%E3%81%AE%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AD%E3%81%A8%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%E3%83%BC%E5%9B%9E%E7%94%9F%E3%82%92%E6%95%B0%E5%AD%97%E3%81%A7%E8%AA%AD%E3%82%80%E3%80%80%E6%9C%80%E5%A4%A7%E5%88%B6%E5%8B%95%E3%81%AF%E3%82%BF%E3%83%BC%E3%83%B315%E3%81%AE4.7G%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/it-formula1-sepang-brakes-energy/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/it-formula1-sepang-brakes-energy/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/it-formula1-sepang-brakes-energy/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>

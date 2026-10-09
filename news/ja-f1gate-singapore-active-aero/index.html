@@ -231,6 +231,18 @@ ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
 ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
 ul.list a.t:hover{text-decoration:underline}
 .day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
 footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
 footer p{margin:6px 0}
 @media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
@@ -392,6 +404,7 @@ footer p{margin:6px 0}
 <p class="summary">F1-Gate.comは、FIAがシンガポールGPの<a class="term" href="/deep/rules/active-aero/" data-term="active-aero">アクティブエアロ</a>（ストレートモード）区間を5カ所に設定したと伝えた。対象にはスタート／フィニッシュ直線と、定番の追い抜きポイントであるターン7へ向かう加速区間が含まれる。以前の<a class="term" href="/deep/rules/drs/" data-term="drs">DRS</a>と違い、前走車との差に関係なく全員が使え、前後ウイングが動く。ターン16〜17の計測点で1秒以内なら、追い抜き用の電力が次の周に加わる。</p>
 <a class="cta" href="https://f1-gate.com/singapore_gp/227619.html" target="_blank" rel="noopener" data-track="click/ja-f1gate-singapore-active-aero" data-title="F1-Gate.com | シンガポールGPのストレートモード区間は5カ所　FIAが詳細を発表">F1-Gate.comで元の記事を読む ↗</a>
 <p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は F1-Gate.com に帰属します。</p>
+<aside class="kw" aria-label="この記事のキーワード"><p class="kw-h">この記事のキーワード<small>F1 Grid Walk ルールブックより</small></p><a class="kw-t" href="/deep/rules/straight-corner-mode/" data-track="click/kw/straight-corner-mode"><b>ストレートモードとコーナーモード</b><small>マシンと空力</small><span>アクティブエアロの2つの状態。決められた直線ではストレートモード、ふだんはコーナーモード。</span></a><a class="kw-t" href="/deep/rules/active-aero/" data-track="click/kw/active-aero"><b>アクティブエアロ</b><small>マシンと空力</small><span>走りながら翼の角度を変える仕組み。2026年から。</span></a><a class="kw-t" href="/deep/rules/drs/" data-track="click/kw/drs"><b>DRS</b><small>マシンと空力</small><span>2011〜2025年の追い抜き支援。リアウイングを開いて速度を稼いだ。2026年は廃止。</span></a><a class="kw-t" href="/deep/rules/fia/" data-track="click/kw/fia"><b>FIA（国際自動車連盟）</b><small>チームとビジネス</small><span>F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。</span></a><a class="kw-all" href="/deep/rules/">ルールブックで用語を引く →</a></aside>
 <a class="dg-from" href="/deep/singapore-sprint/" data-track="click/deep/singapore-sprint/from"><small>DEEP GRID #09</small><b>昼の練習、夜の本番</b><span>この話を、もっと深く →</span></a>
 <div class="tags"><span>シンガポールGP</span><span>テクニカル</span></div>
 <div class="share">共有：<a href="https://x.com/intent/tweet?text=%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%ABGP%E3%81%AE%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%83%88%E3%83%A2%E3%83%BC%E3%83%89%E5%8C%BA%E9%96%93%E3%81%AF5%E3%82%AB%E6%89%80%E3%80%80FIA%E3%81%8C%E8%A9%B3%E7%B4%B0%E3%82%92%E7%99%BA%E8%A1%A8%20%7C%20F1%20Grid%20Walk&url=https%3A//f1gridwalk.github.io/news/ja-f1gate-singapore-active-aero/" target="_blank" rel="noopener" data-track="share/x">X</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A//f1gridwalk.github.io/news/ja-f1gate-singapore-active-aero/" target="_blank" rel="noopener" data-track="share/line">LINE</a><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A//f1gridwalk.github.io/news/ja-f1gate-singapore-active-aero/" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a><button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>
