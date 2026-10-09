@@ -92,6 +92,14 @@
 .top #share-btn .sh-ic{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.9}
 .top #share-btn .sh-ic circle{fill:currentColor;stroke:none}
 </style>
+<style>
+/* header share button: smaller, at the far right edge of the screen (owner, 9 Oct 2026) */
+header.top{position:relative}
+header.top .share{position:absolute !important;top:12px;right:12px;z-index:30;order:0}
+.top #share-btn{min-height:24px !important;padding:0 9px 0 8px !important;gap:5px;font-size:9.5px !important;letter-spacing:.14em}
+.top #share-btn .sh-ic{width:11px;height:11px}
+@media (max-width:520px){header.top .share{top:10px;right:10px}}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
