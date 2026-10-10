@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-10-11T00:40:00+09:00",
+  "updatedAt": "2026-10-11T06:25:00+09:00",
   "notes": [
+    {
+      "id": "note-formula1report-saturday-analysis-singapore",
+      "platform": "note",
+      "site": "Formula1 Report",
+      "lang": "ja",
+      "paid": false,
+      "cat": "分析",
+      "author": "Formula1 Report",
+      "title": "【土曜分析】スプリント&予選を徹底分析。インターから見えたシンガポールの特殊性と決勝戦略、フェラーリの弱点は新たな強みに【シンガポールGP】",
+      "summary": "スプリントと予選を踏まえた決勝の展望記事。インターミディエイトでのグリップ回復の遅さを指摘し、レッドブルはスタート、フェラーリは二人の運用、メルセデスは新旧仕様の比較がカギという見立てを示す。タイヤはソフト始動の1ストップ想定としている。",
+      "url": "https://note.com/formula1report/n/n815724c46318",
+      "published": "2026-10-11T05:21:02+09:00",
+      "teams": [
+        "redbull",
+        "ferrari",
+        "mercedes"
+      ],
+      "circuit": "singapore"
+    },
     {
       "id": "note-formula1report-quali-singapore",
       "platform": "note",
@@ -790,23 +809,6 @@
       "teams": [
         "mercedes"
       ]
-    },
-    {
-      "id": "note-f1report-astonmartin-honda-baku-issues",
-      "platform": "note",
-      "lang": "ja",
-      "paid": false,
-      "cat": "テクニカル",
-      "author": "Formula1 Report (Yoshito)",
-      "title": "【分析】泥沼のテールエンダー。アストンマーティン×ホンダ、アゼルバイジャンGPで浮き彫りになった問題点",
-      "summary": "アストンマーティンのバクーでの不振を技術面から分析する記事。ストロールは水圧系統の問題でリタイアし、アロンソは最高速303km/hとストロールより14km/h遅く、直線での速度不足を訴えていたことがデータでも裏付けられたと指摘する。単一部品の不具合か、空力・シャシー・エネルギー回生を含むPUとシャシーの統合全体の問題かは特定できていないとし、アストンマーティンとホンダの間で原因の捉え方や方向性が揃っていない可能性にも言及している。",
-      "url": "https://note.com/formula1report/n/nd7bcf4dc46d2",
-      "published": "2026-09-29T11:09:00+09:00",
-      "teams": [
-        "astonmartin"
-      ],
-      "circuit": "baku",
-      "site": "Formula1 Report"
     }
   ]
 }
