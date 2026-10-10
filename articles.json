@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T20:55:00+09:00",
+  "updatedAt": "2026-10-11T00:40:00+09:00",
   "topics": {
     "singapore-heat-cooling-vest": {
       "title": "シンガポールも暑さ対策　FIAがヒートハザード宣言、冷却ベストは任意のまま",
@@ -252,9 +252,166 @@
     "singapore-qualifying-delay": {
       "title": "シンガポールGP予選が30分繰り下げ　スプリントの雨天遅延で",
       "summary": "豪雨でスプリントのスタートが約30分遅れたため、シンガポールGPの予選は現地時間21時30分（日本時間22時30分）開始へ30分繰り下げられた。スプリントのチェッカーから予選まで最低3時間を空ける規定によるもので、マシン変更が可能なパルクフェルメの解除期間も延びた。"
+    },
+    "singapore-quali-verstappen-pole": {
+      "title": "フェルスタッペンがシンガポールGPでポール　フェラーリ勢が続き、ラッセルは後方",
+      "summary": "フェルスタッペンが1分31秒373でシンガポールGP予選のポールを獲得し、スプリント勝利に続く好調を保った。ルクレールが0.054秒差の2番手、ハミルトンが3番手でフェラーリが2列目までを占め、アントネッリは4番手。ラッセルはパワーユニット交換の降格で後方から、ハジャーはトラブルでQ1のタイムを残せなかった。ハミルトンは決勝でフェラーリの連携によりフェルスタッペンを抜きたいと語っている。"
     }
   },
   "articles": [
+    {
+      "id": "ja-f1gate-singapore-qualifying-result",
+      "kind": "news",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1-Gate.com",
+      "cat": "予選",
+      "circuit": "singapore",
+      "teams": [
+        "redbull",
+        "ferrari"
+      ],
+      "topic": "singapore-quali-verstappen-pole",
+      "title": "フェルスタッペンがシンガポールGP予選でポール、ルクレールとハミルトンが続く",
+      "summary": "フェルスタッペンが1分31秒373でポールポジションを獲得した。ルクレールが0.054秒差の2番手、ハミルトンが3番手でフェラーリが2列目までを占め、4番手はアントネッリだった。ハミルトンはQ1とQ2で最速だったがQ3の最終アタックで約0.15秒を失った。ラッセルはパワーユニット交換の40グリッド降格で後方からスタートし、ハジャーはトラブルでタイムを残せなかった。",
+      "orig": "F1シンガポールGP 予選 結果・タイムシート：フェルスタッペンがポールポジション",
+      "url": "https://f1-gate.com/singapore_gp/228025.html",
+      "published": "2026-10-10T23:37:00+09:00"
+    },
+    {
+      "id": "en-therace-verstappen-beats-ferraris-pole",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "The Race",
+      "cat": "予選",
+      "circuit": "singapore",
+      "teams": [
+        "redbull",
+        "ferrari",
+        "mercedes"
+      ],
+      "topic": "singapore-quali-verstappen-pole",
+      "title": "フェルスタッペンがフェラーリ勢を抑えシンガポールGPポール",
+      "summary": "フェルスタッペンが1分31秒373でシンガポールGPのポールを獲得し、スプリント勝利に続く週末の好調を維持した。ルクレールが0.054秒差で2番手、ハミルトンが3番手に入り、アントネッリは4番手。ノリスとピアストリは3列目に並ぶ。ラッセルはエンジン交換の罰則で最後尾へ下がり、ハジャーは機械トラブルでQ1のタイムを残せず、アロンソはターボの不調を訴えて17番手だった。",
+      "orig": "Verstappen beats Ferraris to Singapore GP pole",
+      "url": "https://www.the-race.com/formula-1/verstappen-beats-ferraris-to-singapore-gp-pole/",
+      "published": "2026-10-10T12:00:00+01:00"
+    },
+    {
+      "id": "de-mst-verstappen-first-real-singapore-pole",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "予選",
+      "circuit": "singapore",
+      "teams": [
+        "redbull",
+        "ferrari",
+        "mercedes"
+      ],
+      "topic": "singapore-quali-verstappen-pole",
+      "title": "フェルスタッペン、初の「本物の」シンガポール・ポール　ハジャーは再びトラブル",
+      "summary": "フェルスタッペンが1分31秒373で、ルクレールに0.054秒差、ハミルトンに0.123秒差をつけてポールを獲得し、スプリントの勝利と合わせて週末を支配している。アントネッリは4番手で、ラッセルはエンジン交換で最後尾スタートとなる。ハジャーはQ1で繰り返しトラブルに見舞われてタイムなしとなり、オコンはブレーキが効かなくなったと無線で訴えた。ヒュルケンベルクは11番手でQ3を逃した。",
+      "orig": "Qualifying: Max Verstappen mit erster \"echter\" Singapur-Pole",
+      "url": "https://www.motorsport-total.com/formel-1/news/qualifying-max-verstappen-mit-erster-echter-singapur-pole-26101009",
+      "published": "2026-10-10T16:38:00+02:00"
+    },
+    {
+      "id": "nl-gpblog-verstappen-fiftieth-pole",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "singapore-quali-verstappen-pole",
+      "title": "フェルスタッペン、通算50回目のポール「これが本当に欲しかった」",
+      "summary": "フェルスタッペンがシンガポールGPで通算50回目のポールポジションを獲得した。本人は、シンガポールで欲しかったのはこのポールだと語り、新レギュレーションでマシンのコーナーでの働き方が変わり、他の局面で強くなったと説明した。シンガポールでの優勝経験はなく、追い抜きが難しいため決勝はスタートが鍵になる。スプリントで勝った後の週末を、本人は「これ以上悪くはならない」と前向きに見ている。",
+      "orig": "Verstappen pakt historische vijftigste pole: 'Deze wilde ik écht hebben'",
+      "url": "https://www.gpblog.com/nl/nieuws/verstappen-pakt-historische-vijftigste-pole-deze-wilde-ik-echt-hebben",
+      "published": "2026-10-10T16:45:00+02:00"
+    },
+    {
+      "id": "es-motorsport-verstappen-pole-54-milesimas",
+      "kind": "news",
+      "lang": "es",
+      "region": "スペイン",
+      "source": "Motorsport.com España",
+      "cat": "予選",
+      "circuit": "singapore",
+      "teams": [
+        "redbull",
+        "ferrari",
+        "astonmartin"
+      ],
+      "topic": "singapore-quali-verstappen-pole",
+      "title": "フェルスタッペンがシンガポールで全勝狙い、0.054秒差でフェラーリ勢を抑えポール",
+      "summary": "フェルスタッペンが1分31秒373で、マリーナベイでは初となるポールを0.054秒差でルクレールから奪い、ハミルトンが3番手でフェラーリは2列目までを占めた。アントネッリは4番手でメルセデス勢の最上位となった。アロンソはQ1で0.054秒差に泣いて敗退し、ラッセルの降格もあって決勝は16番手から出る。ハジャーはレッドブルのエンジントラブルで再びQ1のタイムを残せなかった。",
+      "orig": "Verstappen quiere el pleno en Singapur: pole por 54 milésimas ante Ferrari",
+      "url": "https://es.motorsport.com/f1/news/cronica-resumen-resultados-clasificacion-sabado-singapur-2026/10863913/",
+      "published": "2026-10-10T12:00:00+02:00"
+    },
+    {
+      "id": "it-formula1it-hamilton-teamwork-verstappen",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "ferrari",
+        "redbull"
+      ],
+      "topic": "singapore-quali-verstappen-pole",
+      "title": "ハミルトン「明日はチームワークでマックスを抜ける」　フェラーリ前列独占を好機に",
+      "summary": "シンガポールGP予選でフェルスタッペンの後ろ、2・3番手に並んだフェラーリのハミルトンは、Q3で2度ともマシンを失いかけたと振り返った。最初のアタックの小さなスライドと路面グリップの変化への対応の難しさが原因だと説明している。レッドブルの速さはバクーでのアップグレードが効いたものだと評価した。決勝は2台のフェラーリで連携し、フェルスタッペンを抜く展開を期待していると語った。",
+      "orig": "Ferrari, Hamilton ci crede: «Domani lavorando di squadra potremo superare Max»",
+      "url": "https://www.formula1.it/news/33172/1/ferrari-hamilton-ci-crede-domani-lavorando-di-squadra-potremo-superare-max",
+      "published": "2026-10-10T17:10:00+02:00"
+    },
+    {
+      "id": "it-formula1it-ferrari-radio-confusion",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "チーム",
+      "circuit": "singapore",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-sprint-radio-contrast",
+      "title": "フェラーリ、ハミルトンとルクレールの無線が正反対　SF-26の評価に温度差",
+      "summary": "雨のスプリントでハミルトンは6番手から3つ順位を上げて2位に入り、無線でも喜びを表した。一方3位のルクレールは「フロントがどこにもなかった」とマシンの問題を訴え、2人のSF-26への感触は大きく食い違った。ラッセルの首位での事故で、フェラーリ2台は1つずつ順位が上がっていた。同じレースでも2人の受け止め方が分かれた点を記事は取り上げている。",
+      "orig": "Ferrari, confusione in squadra: Hamilton e Leclerc agli antipodi in radio",
+      "url": "https://www.formula1.it/news/33164/1/ferrari-confusione-in-squadra-hamilton-e-leclerc-agli-antipodi-in-radio-",
+      "published": "2026-10-10T16:55:00+02:00"
+    },
+    {
+      "id": "ja-f1are-singapore-day2-digest",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "まとめ",
+      "circuit": "singapore",
+      "teams": [
+        "redbull",
+        "mercedes",
+        "mclaren"
+      ],
+      "topic": "singapore-day2-fan-reactions",
+      "title": "シンガポールGP2日目、スプリントの荒れた展開とフェルスタッペンのポールに掲示板が反応",
+      "summary": "5ちゃんねるのスレッドを集めたまとめで、スプリントは追い抜きが少なくリタイアが多かったという話題が目立った。予選ではフェルスタッペンとレッドブルの開発や戦略を評価する声が多い。ランキング争いではラッセルが後れを取り、アントネッリが落ち着いて戦っているという見方が出ている。決勝は天候やセーフティカー次第で荒れるかもしれないという期待も書かれ、いずれもファンの個人的な感想で公式情報ではない。",
+      "url": "https://f1are.com/blog-entry-3972.html",
+      "published": "2026-10-11T00:00:00+09:00"
+    },
     {
       "id": "en-gpblog-stewards-summon-singapore-sprint",
       "kind": "news",
@@ -1651,152 +1808,6 @@
       "orig": "Verstappen pleit voor andere koers na bizarre taferelen in Maleisië",
       "url": "https://www.gpblog.com/nl/nieuws/verstappen-wil-eenvoudige-versie-van-f1-terug-na-softwarechaos-in-maleisie",
       "published": "2026-10-08T21:02:00+02:00"
-    },
-    {
-      "id": "it-formula1it-russell-mercedes-pu-plan",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "チーム",
-      "circuit": "singapore",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "russell-mercedes-pu-planning",
-      "title": "ラッセル、PU交換の時期にメルセデスへ不満　内部計画が明らかに",
-      "summary": "ラッセルはシンガポールで後方スタートとなる。本人はセパンで交換して降格を受けたかったと語ったが、メルセデスはアップグレード版PUを米国GPで投入し、最終戦まで使う計画だった。アントネッリは改良版を使い、ラッセルは非改良版で臨んで後日もう一度降格を受ける見通しだ。ラッセルは予選の対チームメイト成績が悪化していることも認めた。",
-      "orig": "Russell contrariato da Mercedes, svelata la pianificazione interna sulle power unit",
-      "url": "https://www.formula1.it/news/33124/1/russell-contrariato-da-mercedes-svelata-la-pianificazione-interna-sulle-power-unit",
-      "published": "2026-10-08T20:10:00+02:00"
-    },
-    {
-      "id": "it-formula1it-hamilton-sprint",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "ドライバー",
-      "circuit": "singapore",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "hamilton-singapore-sprint",
-      "title": "ハミルトン「スプリントは怖くない」　問題が出るのは土曜が多いと分析",
-      "summary": "ハミルトンは、今季最後のスプリントとなるシンガポールで、スプリントは大きな不安ではないと語った。フェラーリは持ち込みの基本セットアップは悪くないが、今季は金曜に良い案を持って臨んでも方向性を見失うことがあり、問題は土曜に出やすいという。本人は睡眠なども含めて準備に集中し、クアラルンプールと全く違う難コースを歓迎するとした。",
-      "orig": "Ferrari, Hamilton non teme la Sprint. Di solito i problemi iniziano sabato",
-      "url": "https://www.formula1.it/news/33122/1/ferrari-hamilton-non-teme-la-sprint-di-solito-i-problemi-iniziano-sabato",
-      "published": "2026-10-08T19:05:00+02:00"
-    },
-    {
-      "id": "nl-gpblog-marko-horner-verstappen",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "ドライバー",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "marko-horner-verstappen-dispute",
-      "title": "マルコ、フェルスタッペン昇格をめぐるホーナーの主張に反論",
-      "summary": "マルコは、10月22日刊行予定のホーナーの自伝にある、フェルスタッペンのレッドブル入りをめぐる主張を受け流し、反論した。マルコはオーストリア紙のインタビューで、2016年の昇格時に疑問を持っていたのはホーナーの方で、若すぎて経験不足だと考えていたと主張した。ラルフ・シューマッハも、ホーナーの主張を「真っ赤な嘘」と呼んだと伝えられている。",
-      "orig": "Marko draait rollen om in conflict met Horner: 'Hij vond Verstappen te onervaren'",
-      "url": "https://www.gpblog.com/nl/nieuws/marko-draait-rollen-om-in-conflict-met-horner-hij-vond-verstappen-te-onervaren",
-      "published": "2026-10-08T18:28:00+02:00"
-    },
-    {
-      "id": "nl-gpblog-russell-cooling-reply",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "ドライバー",
-      "circuit": "singapore",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "singapore-heat-cooling-vest",
-      "title": "ラッセル、冷却ベスト批判に反論　「コックピットの熱は性能に響く」",
-      "orig": "Russell verzet zich tegen felle kritiek van Verstappen en Hadjar",
-      "summary": "ハジャーとフェルスタッペンが冷却ベストに否定的な中、ラッセルは強い熱が性能に影響すると反論した。ただ失うタイムを数字で表すのは難しいと言う。2023年カタールではアルボンが幻覚を感じたと聞いたと明かした。熱はコックピットの設計にも左右され、今年のメルセデスは電子機器や油圧配管の配置などのおかげで以前よりかなり涼しいと話した。",
-      "url": "https://www.gpblog.com/nl/nieuws/russell-verzet-zich-tegen-felle-kritiek-van-verstappen-en-hadjar",
-      "published": "2026-10-08T17:57:00+02:00"
-    },
-    {
-      "id": "en-f1com-mercedes-split-specs",
-      "kind": "news",
-      "lang": "en",
-      "region": "英国",
-      "source": "Formula1.com",
-      "cat": "チーム",
-      "circuit": "singapore",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "mercedes-sepang-upgrade-failure",
-      "primary": true,
-      "title": "メルセデスが2台で仕様を分ける理由　ラッセルは「当然の判断」",
-      "orig": "Why splitting car specifications is a 'no-brainer' for Mercedes at the Singapore Grand Prix",
-      "summary": "メルセデスはシンガポールで、アントネッリにセパンの改良と新フロントウイング、ラッセルにバクーで勝った旧仕様を与え、3日間で比較する。セパンの改良は期待した伸びが出ず、ラッセルは終盤のリタイアでPUのグリッド降格も受けた。アントネッリは粗い舗装と60度超の路面温度が例外的だったとみて、低速コーナーの多いシンガポールで確かめたい考えだ。",
-      "url": "https://www.formula1.com/en/latest/article/why-splitting-car-specifications-is-a-no-brainer-for-mercedes-at-the-singapore-grand-prix.44OonD5CF8Eg4yQ2w5REwh",
-      "published": "2026-10-08T15:49:00+00:00"
-    },
-    {
-      "id": "de-mst-norris-pu-changes",
-      "kind": "tech",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "テクニカル",
-      "circuit": "singapore",
-      "teams": [
-        "mclaren",
-        "mercedes"
-      ],
-      "topic": "mclaren-norris-fuel-system-fix",
-      "title": "マクラーレン、ノリスのPU周辺部品を変更　バクーとセパンの不調に対策",
-      "summary": "マクラーレンはシンガポールで、ノリスの車のPU周辺部品を変更して臨む。不調の疑いは燃料系にあり、燃料系はメルセデスではなく顧客チームのマクラーレンの担当領域だという。ノリスは直近2回の予選で2〜3グリッド分を失ったと話した。ストレートの短いシンガポールは欠点が隠れやすく、対策の効果を完全には測れないと記事は指摘する。",
-      "orig": "Änderungen an Power-Unit: Werden die Probleme von Lando Norris gelöst?",
-      "url": "https://www.motorsport-total.com/formel-1/news/aenderungen-an-power-unit-werden-die-probleme-von-lando-norris-geloest-26100817",
-      "published": "2026-10-08T17:30:00+02:00"
-    },
-    {
-      "id": "de-mst-verstappen-singapore-open-account",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "ドライバー",
-      "circuit": "singapore",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "verstappen-singapore-open-account",
-      "title": "フェルスタッペン、シンガポールに「未払いの勘定」　初優勝へ予選が鍵",
-      "summary": "フェルスタッペンは10回目の挑戦でもシンガポール未勝利で、2022年は燃料量の読み違いで予選最終アタックを断念した。バクーの大型アップデートが効いたレッドブルは、バクーで2台表彰台、セパンで優勝と好調だが、縁石や段差には弱点が残る。メルセデスやフェラーリの低速コーナーの強さも警戒しており、追い抜きが難しいため予選が最重要だと本人は見ている。",
-      "orig": "\"Offene Rechnung\": Kann Verstappen seinen ersten Singapur-Sieg holen?",
-      "url": "https://www.motorsport-total.com/formel-1/news/offene-rechnung-kann-verstappen-seinen-ersten-singapur-sieg-holen-26100816",
-      "published": "2026-10-08T16:48:00+02:00"
-    },
-    {
-      "id": "en-f1com-ferrari-here-to-attack",
-      "kind": "news",
-      "lang": "en",
-      "region": "英国",
-      "source": "Formula1.com",
-      "cat": "チーム",
-      "circuit": "singapore",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-singapore-opportunity",
-      "primary": true,
-      "title": "ハミルトン「攻める」、ルクレールは慎重　フェラーリがシンガポール戦を展望",
-      "orig": "'We're here to attack' – Hamilton and Leclerc preview Ferrari's chances in Singapore GP",
-      "summary": "ハミルトンは7月のイギリスGP以来となる表彰台をセパンで得たが、選手権争いに戻ったとは言えず、シンガポールは「攻める」と語った。スプリント週末は今季最難関の形式で、予選が鍵になるという。一方ルクレールは過去の好成績に頼れないとし、チームがトップ勢に対して性能を失っていて勝利は非常に難しいと見る。マクラーレンとレッドブルが近い存在になったとも述べた。",
-      "url": "https://www.formula1.com/en/latest/article/were-here-to-attack-hamilton-and-leclerc-preview-ferraris-chances-in-singapore-gp.6nzWl7doxY9SlrpgTm5hNH",
-      "published": "2026-10-08T14:46:00+00:00"
     }
   ]
 }
