@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T12:30:00+09:00",
+  "updatedAt": "2026-10-10T18:25:00+09:00",
   "topics": {
     "mercedes-sepang-upgrade-failure": {
       "title": "メルセデスのセパン改良、期待外れの理由を探る",
@@ -57,10 +57,6 @@
         ]
       }
     },
-    "antonelli-learns-from-rivals": {
-      "title": "アントネッリ、フェルスタッペンに抜かれた教訓を語る",
-      "summary": "セパンの決勝で、スリックタイヤのリスタート直後にフェルスタッペンに抜かれて2位に終わったアントネッリが、複数のメディアで談話を残した。路面がまだ滑りやすいなか、相手のほうがグリップを読む感覚に優れていたと認め、苛立ちつつも教訓にすると語った。ハミルトンからは、状況が悪くても最善の結果を探す姿勢を学んでいるという。"
-    },
     "malaysia-software-bug-fix": {
       "title": "マレーシアの出力低下騒動、FIAが原因と再発防止策を公表",
       "summary": "セパンの決勝前、雨天用PUソフトの250kW制限と低回転が重なり、複数車がフォーメーションラップで失速した。FIAは約5分で原因を特定して更新版を配り、再開まで約48分かかった。シンガポールで雨ならセパン版を使い、米国GP（10月25日）に新版を入れる。FIAは事前に試験済みと説明する一方、検証体制の強化も約束した。"
@@ -68,10 +64,6 @@
     "singapore-heat-cooling-vest": {
       "title": "シンガポールも暑さ対策　FIAがヒートハザード宣言、冷却ベストは任意のまま",
       "summary": "FIAはシンガポールGPにヒートハザードを宣言し、液冷ベストは任意のまま使える。ラッセルは性能への影響を主張して支持し、ハジャーは禁止を、フェルスタッペンは不要でケーブルが邪魔だと主張する。メルセデスは予算枠が不十分として開発を見送った。システムは40分前後で効きが落ちる例もあり、持続時間と快適性が課題だ。"
-    },
-    "verstappen-engine-rules-criticism": {
-      "title": "フェルスタッペンの現行規則批判、V8回帰論に広がる",
-      "summary": "フェルスタッペンはポッドキャストで、F1を1つ変えるなら直ちにV8へ戻したいと述べた。軽く扱いやすく、レースも面白くなるというのが理由だ。義兄のネルソン・ピケJr.も現行PU規則への批判を支持しており、エンジンの簡素化や電動依存の見直しをめぐる議論が続いている。"
     },
     "sepang-wet-race-debate": {
       "title": "ハミルトン「雨の決勝は昔と違う」　若手の慎重さに言及",
@@ -204,9 +196,142 @@
     "racing-bulls-2027-lineup": {
       "title": "レーシングブルズの2027年ドライバー、決定は数週間以内　3候補で2席",
       "summary": "レーシングブルズのパーメイン代表は、2027年のドライバー決定は数週間以内になると述べた。ローソン、リンドブラッド、F2のツォロフの3人が候補で、席は2つしかない。判断の軸はまず速さとペースで、若手の育成も考慮するという。ハジャーはレッドブルと2027年末まで契約しており、ローソンとリンドブラッドの契約は2026年末までとされる。"
+    },
+    "williams-cost-cap-reform": {
+      "title": "ウィリアムズ、コストキャップの設備投資改革を提案　賛否割れ採決は難航か",
+      "summary": "ウィリアムズのヴォウルズ代表は、過去に投資を済ませた上位チームが有利な現行のコストキャップを改め、小規模チームが設備投資を増やせる仕組みを求めている。2027年適用には11チーム中6票が必要で、賛成寄りは複数あるものの1票足りないと報じられた。ヴォルフら上位勢は慎重で、ヴォウルズは2027年が難しければ2028年を目指すとしている。"
+    },
+    "ferrari-singapore-pace-trend": {
+      "title": "フェラーリ、シンガポールで好調　ソフトよりミディアムが速い",
+      "summary": "フェラーリはスプリント予選でルクレールが3番手、ハミルトンが6番手と、マリーナベイで競争力を見せた。ヴァスール代表はソフトよりミディアムの方が速かったと明かし、決勝に向けた準備だと位置づけた。ドイツ系メディアはルクレールの調子の上向きを伝えている。"
     }
   },
   "articles": [
+    {
+      "id": "ja-f1gate-perez-cadillac-last-chance",
+      "kind": "news",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1-Gate.com",
+      "cat": "ドライバー",
+      "circuit": "singapore",
+      "teams": [
+        "cadillac"
+      ],
+      "topic": "cadillac-perez-first-points",
+      "title": "ペレス、キャデラック初ポイントへシンガポールが「最後の好機」",
+      "orig": "セルジオ・ペレス キャデラックF1初ポイントへシンガポールが最後の好機",
+      "summary": "ペレスは、シンガポールGPがキャデラックにとって今季初ポイントを狙う最後の大きな機会になりうると語った。マシンには依然として大きな性能差があり、今回は新たなアップデートも持ち込まない。ただ練習走行が1回だけの方式は、サーキットに慣れにくい市街地では差をつける好機と前向きにとらえている。予選でマシンの実力以上を引き出す必要があると述べ、バクーでの走りの再現を狙う。",
+      "url": "https://f1-gate.com/perez/227949.html",
+      "published": "2026-10-10T17:34:00+09:00"
+    },
+    {
+      "id": "de-mst-vowles-budget-rules",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "ビジネス",
+      "circuit": "singapore",
+      "teams": [
+        "williams"
+      ],
+      "topic": "williams-cost-cap-reform",
+      "title": "ヴォウルズ「予算規則を急ぎ変えるべき」　ウィリアムズ代表がコストキャップの欠点を訴え",
+      "orig": "James Vowles: Darum müssen wir die Budgetregeln dringend ändern!",
+      "summary": "ウィリアムズのヴォウルズ代表は、コストキャップは財政の安定をもたらした一方、競争面の前進は乏しいと主張した。過去に設備投資を済ませたチームが今も有利で、ウィリアムズが同水準に届くには約2億ドルが要り、毎年約2000万ドルの減価償却が10年続くと説明した。上位4チーム以外の勝利は直近130戦で1回だけだとも指摘し、「公平な戦いではない」と訴えた。",
+      "url": "https://www.motorsport-total.com/formel-1/news/james-vowles-darum-muessen-wir-die-budgetregeln-dringend-aendern-26101004",
+      "published": "2026-10-10T10:00:00+02:00"
+    },
+    {
+      "id": "it-formula1it-sq-telemetry-red-bull-leclerc",
+      "kind": "tech",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "テクニカル",
+      "circuit": "singapore",
+      "teams": [
+        "redbull",
+        "ferrari",
+        "mercedes"
+      ],
+      "topic": "singapore-sq-telemetry",
+      "title": "テレメトリーで読むスプリント予選　レッドブルは直線で約10km/h優位、ルクレールは中間セクターで挽回",
+      "orig": "Leclerc perfetto, Red Bull imprendibile: le sentenze della telemetria",
+      "summary": "スプリント予選のテレメトリー分析で、レッドブルは低ダウンフォースによる低い空気抵抗で、14コーナー手前では約10km/h速かったとされる。ルクレールは最も技術的なセクター2でフェラーリSF-26のコーナリングを生かし、差を縮めた。メルセデスでは、ラッセルが旧仕様の方が直線で3〜4km/h速く、アントネッリは新仕様でコーナーの立ち上がりに苦しむ様子が見えるという。SQ1のソフトウェア不具合でサインツは出力をほぼ失い、約1秒を失った。",
+      "url": "https://www.formula1.it/news/33156/1/leclerc-perfetto-red-bull-imprendibile-le-sentenze-della-telemetria",
+      "published": "2026-10-10T07:45:00+02:00"
+    },
+    {
+      "id": "de-mst-williams-fw23-lawsuit",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "カルチャー",
+      "teams": [
+        "williams"
+      ],
+      "topic": "williams-fw23-lawsuit",
+      "title": "ウィリアムズ、貸し出した2001年のFW23の行方を巡り提訴　返還できなければ100万ポンド超を請求",
+      "orig": "Williams verklagt Garagenbesitzer: Wo ist dieser Formel-1-Bolide?",
+      "summary": "ウィリアムズは、2015年に展示用として貸し出した2001年のFW23のシャシーが戻らないとして、元貸出先の責任者を高等法院に訴えた。この車はラルフ・シューマッハが3勝し、モントーヤが初優勝を挙げた個体だという。相手は2021年の清算後に車を持ち去ったと主張されているが、本人は所有を主張したことも行方も知らないと否定している。返還できない場合、ウィリアムズは100万ポンド超を求めている。",
+      "url": "https://www.motorsport-total.com/formel-1/news/williams-verklagt-garagenbesitzer-wo-ist-dieser-formel-1-bolide-26101001",
+      "published": "2026-10-10T07:30:00+02:00"
+    },
+    {
+      "id": "it-formula1it-ferrari-sf26-medium-vs-soft",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "チーム",
+      "circuit": "singapore",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-singapore-pace-trend",
+      "title": "フェラーリSF-26はソフトよりミディアムが好調　ヴァスールが戸惑い",
+      "orig": "Ferrari, la SF-26 criptica spiazza Vasseur: «Migliori con Medie che con Soft»",
+      "summary": "フェラーリはスプリント予選でルクレールが3番手、ハミルトンが6番手と競争力を見せた。ヴァスール代表はCanal Plus F1のインタビューで、ソフトよりミディアムの方が速かったと明かし、これを決勝への準備だと位置づけた。ルクレールは無線でポールを狙っていたと伝えられ、ハミルトンは後輪のグリップ不足を嘆いていたという。記事は、マリーナベイ市街地コースがSF-26に合うとも指摘している。",
+      "url": "https://www.formula1.it/news/33154/1/ferrari-la-sf-26-criptica-spiazza-vasseur-migliori-con-medie-che-con-soft",
+      "published": "2026-10-10T07:30:00+02:00"
+    },
+    {
+      "id": "en-planetf1-hamilton-ferrari-flak",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "PlanetF1",
+      "cat": "ドライバー",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "hamilton-ferrari-strategy-flak",
+      "title": "ハミルトン「フェラーリは戦略ミスで他より批判される」　バーレーンGPの判断を擁護",
+      "orig": "Hamilton claims Ferrari gets 'more flak' than rivals for F1 strategy mistakes",
+      "summary": "ハミルトンはSky Sportsに、フェラーリは戦略の失敗で他チームより多く批判されると語った。マレーシアで開催されたバーレーンGPでは、長い遅延後にソフトのスリックでスタートして後方に沈んだが、同じ判断をしたマクラーレンはほとんど注目されなかったと指摘した。ヴァスール代表はミスを認めたが、ハミルトンは判断は皆で下したと擁護し、自分はインターを望んでいたと明かした。",
+      "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-criticism-bahrain-gp-tyre-strategy",
+      "published": "2026-10-10T06:02:00+01:00"
+    },
+    {
+      "id": "ja-f1are-tsunoda-overtake-month",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "ドライバー",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "tsunoda-overtake-of-month",
+      "title": "角田裕毅が9月の「オーバーテイク・オブ・ザ・マンス」に　ファンの反応",
+      "orig": "角田裕毅、9月のオーバーテイク・オブ・ザ・マンスを受賞",
+      "summary": "レッドブルのリザーブとしてオランダGPに代役出場した角田裕毅が、9月のオーバーテイク・オブ・ザ・マンスを受賞したと伝えられ、ファンの話題になっている。F1公式のSNS投稿を元にした投稿で、掲示板では走りを称賛し、受賞を喜ぶ声が多かった。一方で、2027年のシートが未定であることを気にかける声や、苦しい1年の中の明るい話題として受け止める声も出ている。",
+      "url": "https://f1are.com/blog-entry-3971.html",
+      "published": "2026-10-10T12:00:00+09:00"
+    },
     {
       "id": "ja-f1jouhou2-mercedes-upgrade-disappoint",
       "kind": "fan",
@@ -478,6 +603,24 @@
       }
     },
     {
+      "id": "es-motorsport-antonelli-title-clinch-math",
+      "kind": "news",
+      "lang": "es",
+      "region": "スペイン",
+      "source": "Motorsport.com España",
+      "cat": "分析",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "antonelli-title-clinch-math",
+      "title": "アントネッリはシンガポールで王座確定の可能性があるか　ポイント計算で検証",
+      "orig": "¿Y si tras Singapur ya hay campeón de la F1 2026 pero sin saberlo aún?",
+      "summary": "アントネッリはラッセルに84ポイント差をつけて首位に立ち、ハミルトンとは106ポイント差になっている。スプリントと決勝を両方勝ち、ラッセルが無得点でも差は117ポイントにとどまり、日曜に王座を確定させることはできない。残りの獲得可能ポイントは150点あり、確定が可能になる最短の舞台は次戦オースティンだと同記事は計算している。コンストラクターズではメルセデスがフェラーリに151点差でリードしている。",
+      "url": "https://es.motorsport.com/f1/news/posibilidad-campeon-singapur-2026/10863359/",
+      "published": "2026-10-09T17:50:00+02:00"
+    },
+    {
       "id": "en-planetf1-russell-penalty-confirmed",
       "kind": "news",
       "lang": "en",
@@ -682,6 +825,41 @@
       "published": "2026-10-09T14:24:00+02:00"
     },
     {
+      "id": "ja-f1gate-alonso-honda-second-chance",
+      "kind": "news",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1-Gate.com",
+      "cat": "ドライバー",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "alonso-honda-2027-outlook",
+      "title": "アロンソ、ホンダに再起を期待　アストンマーティンの再建はPSGやシティと同じと語る",
+      "orig": "フェルナンド・アロンソ ホンダF1に再起を期待",
+      "summary": "アロンソは、アストンマーティンの今季の苦戦は来季には大きく変わりうると語り、ホンダにパワーユニットを立て直す機会を与えるべきだと述べた。再建はPSGやマンチェスター・シティのように数年の投資が要るとたとえ、ハンガリーGP以降にシャシーと空力の弱点は部分的に改善したと説明した。一方で、毎年冬には各チームが楽観的になるものだと、過度な期待には慎重な姿勢も示した。",
+      "url": "https://f1-gate.com/alonso/227798.html",
+      "published": "2026-10-09T21:16:00+09:00"
+    },
+    {
+      "id": "en-therace-williams-cost-cap-vote",
+      "kind": "news",
+      "lang": "en",
+      "region": "英国",
+      "source": "The Race",
+      "cat": "ビジネス",
+      "circuit": "singapore",
+      "teams": [
+        "williams"
+      ],
+      "topic": "williams-cost-cap-reform",
+      "title": "ウィリアムズのコストキャップ改革案、支持不足か　各チームの賛否が割れる",
+      "orig": "Rivals reject Williams proposal for F1 cost cap reform",
+      "summary": "ウィリアムズのヴォウルズ代表が求める、小規模チーム向けの設備投資を緩める改革案は、F1コミッションの採決で支持が足りない見通しだと報じた。2027年適用には11チーム中6票が必要で、アルピーヌ、アストンマーティン、アウディ、キャデラックが賛成寄りでもなお1票足りないという。ヴォルフは弱いチームに上乗せを与える段階制をBoPに近いと見て、ブラウンは前向きな姿勢を示した。",
+      "url": "https://www.the-race.com/formula-1/rivals-reject-williams-proposal-for-f1-cost-cap-reform/",
+      "published": "2026-10-09T12:00:00+01:00"
+    },
+    {
       "id": "en-therace-mercedes-new-spec-weakness",
       "kind": "tech",
       "lang": "en",
@@ -871,6 +1049,23 @@
       "summary": "メルセデスは、FIAが暑さ対策の液冷ベスト開発向けに用意した予算枠を使わなかった。副代表のロードは、全レース持つ頑丈な仕組みには足りないとして空力と機械面の性能に資源を回したと説明し、ドライバーも了承したという。ドライバーは快適さより性能を選ぶものだとも述べた。パドックには驚きが広がったと記事は伝えている。",
       "url": "https://es.motorsport.com/f1/news/mercedes-defiende-polemica-decision-dejar-russell-sin-refrigeracion/10862751/",
       "published": "2026-10-09T08:00:00+02:00"
+    },
+    {
+      "id": "ja-f1jouhou2-alonso-dakar-denial",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "カルチャー",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "alonso-dakar-rumour",
+      "title": "アロンソ、2027年ダカール参戦報道を否定か　ファンの間で憶測広がる",
+      "orig": "フェルナンド・アロンソ、2027年ダカール参戦の噂を否定か？",
+      "summary": "2027年のダカール・ラリーにアロンソが参戦するとの報道に対し、本人が否定したとみられる発言が話題になっている。伝えられたところでは、将来の挑戦は噂ではなく自分で発表し、準備とリスクの水準に納得した段階で明かすという内容だ。この発言はジャーナリストのSNS投稿から拡散した。掲示板では、否定なのか確認を避けただけなのか、準備はまだ続いているのかなど、憶測を交えた議論が交わされている。",
+      "url": "https://f1jouhou2.com/blog-entry-31670.html",
+      "published": "2026-10-09T12:00:00+09:00"
     },
     {
       "id": "ja-f1are-singapore-day1-reactions",
@@ -1485,194 +1680,6 @@
       "orig": "FIA klärt Formel-1-Softwarepanne auf: Was in Malaysia schiefgelaufen ist",
       "url": "https://www.motorsport-total.com/formel-1/news/fia-klaert-formel-1-softwarepanne-auf-was-in-malaysia-schiefgelaufen-ist-26100806",
       "published": "2026-10-08T09:47:00+02:00"
-    },
-    {
-      "id": "it-formula1it-singapore-heat-hazard",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "サーキット",
-      "circuit": "singapore",
-      "topic": "singapore-heat-cooling-vest",
-      "title": "シンガポールGPに「ヒートハザード」宣言　2戦連続で暑さ対策",
-      "summary": "Formula1.itは、FIAがシンガポールGPに「ヒートハザード」を宣言したと伝えた。予報の暑さ指数が規則の基準である31度を超えるためで、2戦連続となる。チームはドライバー用の冷却システムを準備する必要があり、ドライバーは着用を見送ることもできるが、その場合は追加の重量規定に従う。措置はスプリントと決勝の両方に適用される。",
-      "orig": "F1, caldo estremo anche a Singapore: la FIA attiva le misure speciali",
-      "url": "https://www.formula1.it/news/33108/1/f1-caldo-estremo-anche-a-singapore-la-fia-attiva-le-misure-speciali",
-      "published": "2026-10-08T06:50:00+02:00"
-    },
-    {
-      "id": "ja-f1are-komatsu-ocon-consistency",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "ドライバー",
-      "teams": [
-        "haas"
-      ],
-      "topic": "ocon-haas-exit",
-      "title": "ハース小松代表、オコンの速さは疑わないが一貫性には厳しい評価",
-      "summary": "F1-Gateの記事をもとにした掲示板まとめ。ハースの小松代表はオコンの一貫性を問われて「いいえ」と答える一方、速さと潜在力には疑いがないとし、来季の契約を結ばない判断は安定感が理由だと話したという。コメント欄では速さを惜しむ声が多く、一貫性が課題との見方もあるが、裏事情に関する書き込みは推測の域を出ない。",
-      "orig": "TGRハースF1小松代表、オコンのパフォーマンスに疑いはないとするも一貫性に厳しい評価",
-      "url": "https://f1are.com/blog-entry-3965.html",
-      "published": "2026-10-08T12:00:00+09:00"
-    },
-    {
-      "id": "ja-f1are-2026-cars-slower-than-2010",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "topic": "f1-2026-cars-slower-than-2010",
-      "title": "2026年のF1マシンは16年前のマシンより遅い？　掲示板で話題に",
-      "orig": "2026F1マシンが16年前のF1マシンよりも遅いと話題に",
-      "summary": "F1のアレは、2026年のF1マシンが約16年前のマシンより遅いと話題になった掲示板のスレッドをまとめた。具体的なラップタイムは示されていない。反応は、遅いうえにレースも面白くないと不満を述べる声が中心だった。一方で、安全のための速度抑制は昔から続くと擁護する意見や、予算制限の撤廃を求める声もあった。いずれも匿名の意見である。",
-      "url": "https://f1are.com/blog-entry-3964.html",
-      "published": "2026-10-08T12:00:00+09:00"
-    },
-    {
-      "id": "ja-f1jouhou2-mercedes-compare-packages",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1情報通",
-      "cat": "まとめ",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "mercedes-sepang-upgrade-failure",
-      "title": "メルセデス、シンガポールで新旧エアロを比較へ　ラッセル車が試すのでは、と掲示板",
-      "orig": "メルセデス、F1シンガポールGPで新旧エアロパッケージ比較を実施...ラッセル車がハズレ引くんやろなぁ",
-      "summary": "F1情報通は、メルセデスがシンガポールで新旧のエアロパッケージを比較し、セパンの改良が効かなかった理由を探るというスペイン語メディア経由の話を取り上げた。ラッセルのPU交換にも触れている。掲示板では、新仕様を試す役がラッセル車になりそうだと皮肉る声や、不運だったとする擁護もあった。いずれも未確認の話題である。",
-      "url": "https://f1jouhou2.com/blog-entry-31658.html",
-      "published": "2026-10-08T12:00:00+09:00"
-    },
-    {
-      "id": "it-formula1it-williams-fw23-montoya-court",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "ビジネス",
-      "teams": [
-        "williams"
-      ],
-      "topic": "williams-fw23-montoya-lawsuit",
-      "title": "ウィリアムズ、モントーヤが乗ったFW23の行方不明で提訴　英高等法院へ",
-      "orig": "Williams, sparita la FW23 di Montoya: il caso finisce in tribunale",
-      "summary": "フォーミュラ1.itは、ウィリアムズが2001年のFW23の返還を求め、英国の高等法院に提訴したと伝えた。2015年に整備工場へ展示用に貸したが、2021年の返却要請に応答がなく、会社も清算された。ウィリアムズは返還と使用料、返せなければ100万ポンド超の賠償を求める。被告側は車の所在を知らないと主張している。",
-      "url": "https://www.formula1.it/news/33105/1/williams-sparita-la-fw23-di-montoya-il-caso-finisce-in-tribunale",
-      "published": "2026-10-07T22:20:00+02:00"
-    },
-    {
-      "id": "it-formula1it-antonelli-verstappen-hamilton",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "ドライバー",
-      "circuit": "sepang",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "antonelli-learns-from-rivals",
-      "title": "アントネッリ、フェルスタッペンとハミルトンから学ぶ「二つの違うこと」",
-      "orig": "Kimi su Verstappen e Hamilton: «Da loro imparo due cose diverse»",
-      "summary": "フォーミュラ1.itは、セパン後にアントネッリがフェルスタッペンとハミルトンについて語った内容を伝えた。安全運転のあとのリスタートで抜かれたことを「とても苛立った」と認めつつ、相手がグリップをより良く捉えていたと分析し、教訓にするという。ハミルトンからは、状況が悪くても顔を上げて最善の結果を探す姿勢を学んでいると話した。",
-      "url": "https://www.formula1.it/news/33106/1/kimi-su-verstappen-e-hamilton-da-loro-imparo-due-cose-diverse",
-      "published": "2026-10-07T22:00:00+02:00"
-    },
-    {
-      "id": "nl-gpblog-piquet-verstappen-engine-rules",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "ドライバー",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "verstappen-engine-rules-criticism",
-      "title": "ピケJr.、フェルスタッペンの現行規則批判を支持　「もっと攻防が見たい」",
-      "orig": "Verstappen wordt gesteund door Piquet: 'Je krijgt meer actie op de baan'",
-      "summary": "GPblogは、フェルスタッペンの義兄ネルソン・ピケJr.がポッドキャストで現行のPU規則への批判を支持したと伝えた。エンジンを簡素にして車を軽くし、アクティブエアロを減らせば攻防が増えるという主張だ。現行車は限界に近づきやすく、差がドライバーの腕かマシンか見分けにくいとも述べ、僚友ハジャーが近い理由もそこにあると示唆した。",
-      "url": "https://www.gpblog.com/nl/nieuws/verstappen-wordt-gesteund-door-piquet-je-krijgt-meer-actie-op-de-baan",
-      "published": "2026-10-07T20:05:00+02:00"
-    },
-    {
-      "id": "de-formel1-mclaren-singapore-hopes",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "チーム",
-      "circuit": "singapore",
-      "teams": [
-        "mclaren"
-      ],
-      "topic": "mclaren-singapore-outlook",
-      "title": "マクラーレン、シンガポールで巻き返しなるか　技術責任者は「クルマの力を出し切れていない」",
-      "orig": "Warum McLaren in Singapur auf ein besseres Ergebnis hofft",
-      "summary": "マクラーレンはブダペストとザントフォールトで勝った後の4戦で、ノリスの表彰台がマドリードの1回だけと勢いを欠いている。ホールディ技術責任者は直近2戦でクルマの性能を出し切れていないとの認識を示す一方、MCL40はマリーナベイの低速90度コーナーに合わないかもしれないと警戒した。同チームは過去3年のシンガポールで毎回表彰台に上がっており、今回は初開催のスプリントにも臨む。",
-      "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-07/warum-mclaren-in-singapur-auf-ein-besseres-ergebnis-hofft",
-      "published": "2026-10-07T19:07:00+02:00"
-    },
-    {
-      "id": "nl-gpblog-antonelli-annoyed-verstappen",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "ドライバー",
-      "circuit": "sepang",
-      "teams": [
-        "mercedes",
-        "redbull"
-      ],
-      "topic": "antonelli-learns-from-rivals",
-      "title": "アントネッリ、フェルスタッペンの追い抜きに「とても苛立った」　それでも教訓に",
-      "orig": "Antonelli baalde van actie Verstappen: 'Ik ergerde me daar enorm aan'",
-      "summary": "GPblogは、セパンでスリックタイヤのリスタート後にフェルスタッペンに抜かれたアントネッリの談話を取り上げた。路面がまだ滑りやすいなか、相手のほうがグリップを読むのが上手かったと本人は認め、苛立ちながらも今後に生かすと語った。ハミルトンについても、不調でも集中を切らさない点を手本に挙げた。選手権は320点で首位を保つ。",
-      "url": "https://www.gpblog.com/nl/nieuws/verstappen-leert-antonelli-harde-maar-belangrijke-les",
-      "published": "2026-10-07T19:02:00+02:00"
-    },
-    {
-      "id": "es-motorsport-krack-alonso-fia",
-      "kind": "news",
-      "lang": "es",
-      "region": "スペイン",
-      "source": "Motorsport.com España",
-      "cat": "ドライバー",
-      "circuit": "sepang",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "krack-alonso-fia-restart",
-      "title": "クラック「FIAの判断は正しかった」　アロンソの不満に同調せず",
-      "orig": "Krack no da la razón a Alonso tras su enfado con la FIA en Sepang: \"Era lo correcto\"",
-      "summary": "Motorsport.com（スペイン語版）は、セパンで止まった車両を元の位置に戻したFIAの判断を巡り、アロンソが「100%不公平」と怒ったのに対し、アストンマーチンのクラックが異なる見方を示したと伝えた。クラックはフォーメーションラップでレースは始まっておらず、手順を中止したのは正しかったと述べつつ、見直しは必要だとも語った。",
-      "url": "https://es.motorsport.com/f1/news/krack-no-da-razon-alonso-enfado-fia-sepang/10862790/",
-      "published": "2026-10-07T17:52:00+02:00"
-    },
-    {
-      "id": "en-f1com-vowles-williams-trouble",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "Formula1.com",
-      "cat": "チーム",
-      "teams": [
-        "williams"
-      ],
-      "topic": "williams-2027-recovery",
-      "primary": true,
-      "title": "ボウルズ代表、ウィリアムズの不振をサインツとアルボンにどう伝えたかを明かす",
-      "orig": "'We're in trouble here' - Vowles reveals how he told Sainz and Albon of problems facing Williams in 2026",
-      "summary": "ウィリアムズのボウルズ代表は、2026年の車が深刻な問題を抱えていると、12月ごろにサインツとアルボンへ最初に伝え、1月にも再度連絡したと明かした。アルボンはすぐに「何か手伝えることは」と応じ、代表は驚いたという。チームは今季12ポイントで最高位は8位、コンストラクターズは9位にとどまる。両ドライバーは夏休み中にも残留への意思を改めて示した。",
-      "url": "https://www.formula1.com/en/latest/article/were-in-trouble-here-vowles-reveals-how-he-told-sainz-and-albon-of-problems-facing-williams-in-2026.1VI39x5GE7zaJY5aUMjQuk",
-      "published": "2026-10-07T15:25:00+00:00"
     }
   ]
 }
