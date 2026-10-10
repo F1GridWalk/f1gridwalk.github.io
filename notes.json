@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T06:30:00+09:00",
+  "updatedAt": "2026-10-10T12:30:00+09:00",
   "notes": [
     {
       "id": "note-formula1report-friday-analysis-singapore",
@@ -34,6 +34,39 @@
       "url": "https://note.com/formula1report/n/n10cc2733440c",
       "published": "2026-10-09T22:52:54+09:00",
       "circuit": "singapore"
+    },
+    {
+      "id": "substack-simplifyf1-singapore-prixview",
+      "platform": "substack",
+      "site": "Simplify F1",
+      "lang": "en",
+      "paid": false,
+      "cat": "分析",
+      "author": "Christopher Kiser",
+      "title": "汗の時間――シンガポールGPプレビュー",
+      "orig": "Time to Sweat - Prixview: Singapore GP 2026",
+      "summary": "マリーナベイは抜きにくく、オーバーテイクは正統な追い抜きよりドライバーのミスから生まれやすいという見立て。マレーシアの勢いからフェルスタッペンを本命、アントネッリを次点に挙げ、フェラーリとマクラーレンはほぼ互角、レーシングブルズはダブル入賞の可能性があると予想している。",
+      "url": "https://simplifyf1.substack.com/p/time-to-sweat-prixview-singapore",
+      "published": "2026-10-09T20:47:31+09:00",
+      "circuit": "singapore"
+    },
+    {
+      "id": "note-formula1report-fp1-singapore",
+      "platform": "note",
+      "site": "Formula1 Report",
+      "lang": "ja",
+      "paid": false,
+      "cat": "分析",
+      "author": "Formula1 Report",
+      "title": "【FP1】ラッセル最速。トップ4チームは僅差の争い、ヒュルケンベルグはギアボックストラブルでストップ【シンガポールGP】",
+      "summary": "シンガポールGPのFP1を振り返る記事。ラッセルが1分32秒274で最速となり、上位4チームが僅差で並んだ構図を整理している。ヒュルケンベルグのギアボックストラブルによる停止や、ラッセルのPU違反による決勝40グリッド降格にも触れている。",
+      "url": "https://note.com/formula1report/n/nbc7c4c211a48",
+      "published": "2026-10-09T17:44:45+09:00",
+      "circuit": "singapore",
+      "teams": [
+        "mercedes",
+        "audi"
+      ]
     },
     {
       "id": "note-formula1report-americas-tyres",
@@ -771,41 +804,6 @@
         "redbull"
       ],
       "circuit": "baku"
-    },
-    {
-      "id": "substack-somersf1-audi-baku-update",
-      "platform": "substack",
-      "site": "Somers F1",
-      "lang": "en",
-      "paid": false,
-      "cat": "テクニカル",
-      "author": "Matt Somerfield",
-      "title": "アウディのバクー投入アップデートを解剖",
-      "orig": "Front-to-Back(u): Inside Audi's Azerbaijan update package",
-      "summary": "アウディがバクー向けに投入した大型アップデートを技術解説者マット・サマーフィールドが分析。ノーズ先端を角ばった形状にしフロントウイングの構造を見直したほか、フロア端のスラット配置やハロベーンの追加で空気抵抗を減らし、リアはメルセデスのカナダ仕様に着想を得たディフューザーへ刷新するなど、車体前後にわたる改良を詳しく解説している。",
-      "url": "https://somersf1.substack.com/p/front-to-backu-inside-audis-azerbaijan",
-      "published": "2026-09-27T16:00:00+00:00",
-      "teams": [
-        "audi"
-      ],
-      "circuit": "baku"
-    },
-    {
-      "id": "note-sentaroh-russell-win-analysis",
-      "paid": false,
-      "cat": "分析",
-      "author": "仙太郎",
-      "title": "静寂の中の激走 ― バクーが証明した“新生ラッセル”の強さ",
-      "summary": "アゼルバイジャンGPで0.196秒差というきわどい勝利を収めたラッセルの強さを、精度の高さの証明として読み解く分析。序盤に築いた11秒差がセーフティカーで消え、ソフトタイヤに換えたフェルスタッペンが終盤に本物の脅威となる中、リスタート時のエネルギー配分やタイヤ温度、ミラー越しの駆け引きまで40周にわたる攻防を丁寧に追っている。",
-      "url": "https://note.com/sentaroh_f1/n/nab5735017229",
-      "published": "2026-09-27T17:08:00+09:00",
-      "teams": [
-        "mercedes",
-        "redbull"
-      ],
-      "circuit": "baku",
-      "platform": "note",
-      "lang": "ja"
     }
   ]
 }
