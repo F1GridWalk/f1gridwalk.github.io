@@ -132,6 +132,25 @@ body[data-v="data"] .dash-side{margin-top:6px}
 /* phone: the top menu is replaced by the bottom tabs (owner, 11 Oct 2026) */
 @media (max-width:520px){ nav.jump{display:none !important} }
 </style>
+<style>
+/* logo easter egg: F1 start lights reaction game (owner's choice A, 12 Oct 2026) */
+.lo{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(10,11,10,.97);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#F3EFE6;-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.lo[hidden],.lo-btns[hidden],.lo-btns [hidden]{display:none !important}
+.lo-box{width:min(440px,100%);text-align:center}
+.lo-k{font:700 12px/1 'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.32em;color:#E8946C;margin:0 0 14px}
+.lo-gantry{display:flex;justify-content:center;gap:clamp(8px,3vw,14px);padding:14px 16px;margin:0 auto 18px;background:#111311;border:2px solid #2C302B;border-radius:14px;width:max-content}
+.lo-pod{display:flex;flex-direction:column;gap:8px;padding:8px;background:#000;border-radius:10px}
+.lo-pod i{display:block;width:clamp(30px,9vw,44px);height:clamp(30px,9vw,44px);border-radius:50%;background:#2A0B0B;box-shadow:inset 0 0 0 2px #3A1414}
+.lo-pod.on i{background:radial-gradient(circle at 40% 35%,#FF8A80,#FF1E1E 45%,#B30000);box-shadow:0 0 18px 4px rgba(255,30,30,.55)}
+.lo-msg{font-size:18px;font-weight:700;line-height:1.6;min-height:3.2em;margin:0}
+.lo-time{font:700 56px/1.1 'IBM Plex Mono',ui-monospace,Menlo,monospace;margin:6px 0 2px;letter-spacing:.02em}
+.lo-sub{font-size:13.5px;line-height:1.7;color:#C9C4B8;margin:4px 0 0}
+.lo-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}
+.lo-btns button,.lo-btns a{font:inherit;font-size:14px;font-weight:700;border-radius:999px;padding:10px 18px;border:1px solid #5B5F57;background:transparent;color:#F3EFE6;text-decoration:none;cursor:pointer}
+.lo-btns .lo-go{background:#F3EFE6;color:#1F2420;border-color:#F3EFE6}
+.lo-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:#F3EFE6;font:700 20px/40px sans-serif;cursor:pointer}
+.lo-hint{font-size:12px;color:#8E9187;margin:14px 0 0}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1577,7 +1596,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 <header class="top">
   <div class="wrap">
     <div class="brand-wrap">
-    <a class="brand" href="#top" aria-label="F1 Grid Walk について" aria-haspopup="dialog" aria-expanded="false" aria-controls="about-pop">
+    <a class="brand" href="#top" aria-label="F1 Grid Walk（押すとスタート反応ゲーム）" aria-haspopup="dialog" aria-expanded="false" aria-controls="lights">
         <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg>
         <span class="brand-words"><span class="brand-f1">F1</span><span class="brand-name">Grid Walk</span><span class="brand-desk" aria-hidden="true">WORLD F1 DESK</span></span>
       </a>
@@ -2907,7 +2926,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   var b = document.querySelector('.brand'), pop = document.getElementById('about-pop');
   if (!b || !pop) return;
   function set(open){ pop.hidden = !open; b.setAttribute('aria-expanded', String(open)); }
-  b.addEventListener('click', function(e){ e.preventDefault(); set(pop.hidden); });
+  window.__gwAbout = function(open){ set(open); };
+  b.addEventListener('click', function(e){ e.preventDefault(); if (window.__gwLights) window.__gwLights(); else set(pop.hidden); });
   pop.querySelector('.about-x').addEventListener('click', function(){ set(false); b.focus(); });
   document.addEventListener('click', function(e){ if (!pop.hidden && !pop.contains(e.target) && !b.contains(e.target)) set(false); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !pop.hidden){ set(false); b.focus(); } });
@@ -2924,7 +2944,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 <script>
 (function(){
   var b=document.getElementById('intro-btn'), brand=document.querySelector('a.brand');
-  if(b&&brand) b.addEventListener('click',function(e){ e.preventDefault(); e.stopPropagation(); brand.click(); try{ window.scrollTo({top:0,behavior:'smooth'}); }catch(_){} });
+  if(b) b.addEventListener('click',function(e){ e.preventDefault(); e.stopPropagation(); if(window.__gwAbout) window.__gwAbout(true); try{ window.scrollTo({top:0,behavior:'smooth'}); }catch(_){} });
   document.querySelectorAll('.info .panel').forEach(function(p){
     p.classList.add('fold'); var h=p.querySelector('h2'); if(!h) return;
     h.setAttribute('role','button'); h.tabIndex=0; h.setAttribute('aria-expanded','false');
@@ -2959,6 +2979,55 @@ j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
   var start='news'; try{ var q=new URLSearchParams(location.search); if(q.get('v')==='data') start='data'; }catch(e){}
   if(DATA.indexOf(location.hash.slice(1))>=0) start='data';
   set(start,false);
+})();
+</script>
+<div class="lo" id="lights" role="dialog" aria-modal="true" aria-label="スタート反応ゲーム" hidden>
+  <button type="button" class="lo-x" aria-label="閉じる">×</button>
+  <div class="lo-box">
+    <p class="lo-k">LIGHTS OUT</p>
+    <div class="lo-gantry" aria-hidden="true"><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div></div>
+    <p class="lo-msg" id="lo-msg" aria-live="polite"></p>
+    <div id="lo-res" hidden><p class="lo-time" id="lo-time"></p><p class="lo-sub" id="lo-sub"></p></div>
+    <div class="lo-btns" id="lo-btns" hidden><button type="button" class="lo-go" id="lo-again">もう一度</button><a id="lo-share" target="_blank" rel="noopener">Xで共有</a></div>
+    <p class="lo-hint">画面のどこを押してもOK（パソコンはスペースキーも可）</p>
+  </div>
+</div>
+<script>
+(function(){
+  var ov=document.getElementById('lights'); if(!ov) return;
+  var pods=[].slice.call(ov.querySelectorAll('.lo-pod')), msg=document.getElementById('lo-msg'), res=document.getElementById('lo-res'),
+      tEl=document.getElementById('lo-time'), sub=document.getElementById('lo-sub'), btns=document.getElementById('lo-btns'), share=document.getElementById('lo-share');
+  var timers=[], state='idle', outAt=0, best=null;
+  try{ best=parseFloat(localStorage.getItem('gw-lights-best'))||null; }catch(e){}
+  function clear(){ timers.forEach(clearTimeout); timers=[]; }
+  function lights(n){ pods.forEach(function(p,i){ p.classList.toggle('on', i<n); }); }
+  function ev(path){ try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:path,title:'',event:true}); }catch(e){} }
+  function start(){
+    clear(); lights(0); res.hidden=true; btns.hidden=true; state='wait';
+    msg.textContent='5つのライトが全部消えたら、すぐタップ！';
+    for(var i=1;i<=5;i++){ (function(k){ timers.push(setTimeout(function(){ lights(k); },600+k*1000)); })(i); }
+    var hold=600+5*1000+200+Math.random()*2800;
+    timers.push(setTimeout(function(){ lights(0); outAt=performance.now(); state='go'; msg.textContent=''; },hold));
+  }
+  function verdict(t){ if(t<0.2) return 'F1ドライバー級！'; if(t<0.25) return 'ポールから逃げ切れる反応です'; if(t<0.32) return 'いいスタート！'; if(t<0.45) return 'まずまず。少し出遅れ'; return 'スタートで出遅れ…もう一度！'; }
+  function tap(){
+    if(state==='wait'){ clear(); lights(0); state='done'; msg.textContent='ジャンプスタート！ ライトが消える前に動きました。'; res.hidden=true; btns.hidden=false; share.hidden=true; ev('lights/jump'); return; }
+    if(state!=='go') return;
+    var t=(performance.now()-outAt)/1000; state='done';
+    var isBest=best===null||t<best; if(isBest){ best=t; try{ localStorage.setItem('gw-lights-best',String(t)); }catch(e){} }
+    msg.textContent=verdict(t); tEl.textContent=t.toFixed(3)+'秒';
+    sub.textContent='F1ドライバーの反応は、およそ0.2秒と言われます。'+(isBest?'自己ベスト更新！':'自己ベスト '+best.toFixed(3)+'秒');
+    res.hidden=false; btns.hidden=false; share.hidden=false;
+    share.href='https://x.com/intent/tweet?text='+encodeURIComponent('F1のスタート反応テスト、'+t.toFixed(3)+'秒でした（'+verdict(t)+'）\n#F1GridWalk')+'&url='+encodeURIComponent('https://f1gridwalk.github.io/');
+    ev('lights/result/'+(t<0.2?'lt200':t<0.25?'lt250':t<0.32?'lt320':'slow'));
+  }
+  function open(){ ov.hidden=false; document.body.style.overflow='hidden'; ev('click/logo/lights'); start(); }
+  function close(){ clear(); state='idle'; ov.hidden=true; document.body.style.overflow=''; }
+  window.__gwLights=open;
+  ov.addEventListener('pointerdown',function(e){ if(e.target.closest('.lo-x,.lo-btns')) return; e.preventDefault(); tap(); });
+  ov.querySelector('.lo-x').addEventListener('click',close);
+  document.getElementById('lo-again').addEventListener('click',start);
+  document.addEventListener('keydown',function(e){ if(ov.hidden) return; if(e.key==='Escape') close(); else if(e.key===' '||e.key==='Enter'){ if(state==='done'&&e.key==='Enter') return; e.preventDefault(); if(state==='done') start(); else tap(); } });
 })();
 </script>
 </body>
