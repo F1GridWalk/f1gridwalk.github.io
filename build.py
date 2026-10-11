@@ -2038,7 +2038,7 @@ def build_hubs(arch, flag_of):
         b.append('<p class="hub-meta">' + e(H.get('checkedNote') or f'{len(H["outlets"])}つの報道の原文を {H.get("checked", "")} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。') + '</p>')
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
-        b.append('<h2><i>WHAT\'S NEW</i>この記事を読むと増えること</h2>')
+        b.append('<h2><i>ONLY HERE</i>この記事にしかない情報</h2>' + f'<p class="hub-sub">今回比べた{len(H["outlets"])}本の中で、その記事だけが書いていること</p>')
         for o in H['outlets']:
             a = arts.get(o['id'])
             if not a:
