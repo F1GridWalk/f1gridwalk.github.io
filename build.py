@@ -1382,16 +1382,23 @@ def load_rules():
 
 
 def link_terms(html_text, used):
-    """Underline the first appearance of each rulebook term in a paragraph (already HTML-escaped)."""
+    """Underline the first appearance of each rulebook term in a paragraph (already HTML-escaped).
+    Longer terms win (バーチャルセーフティカー before セーフティカー) and a link is never put inside another link."""
     if not RULES:
         return html_text
-    for word, tid, _, _ in term_lookup():
+    taken = []  # (start, end) spans already linked, in the current string
+    for word, tid, _, _ in sorted(term_lookup(), key=lambda x: -len(x[0])):
         if tid in used:
             continue
         w = e(word)
         i = html_text.find(w)
+        while i >= 0 and any(a <= i < b or a < i + len(w) <= b for a, b in taken):
+            i = html_text.find(w, i + 1)
         if i >= 0:
-            html_text = html_text[:i] + f'<a class="term" href="/deep/rules/{tid}/" data-term="{tid}">{w}</a>' + html_text[i + len(w):]
+            a = f'<a class="term" href="/deep/rules/{tid}/" data-term="{tid}">{w}</a>'
+            html_text = html_text[:i] + a + html_text[i + len(w):]
+            shift = len(a) - len(w)
+            taken = [(x + (shift if x > i else 0), y + (shift if y > i else 0)) for x, y in taken] + [(i, i + len(a))]
             used.add(tid)
     return html_text
 
@@ -2009,6 +2016,13 @@ HUB_CSS = '''
 .hub-todo{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .hub-up{list-style:none;margin:0;padding:0}.hub-up li{display:grid;grid-template-columns:7.5em 1fr;gap:8px;font-size:14px;line-height:1.7;padding:6px 0;border-bottom:1px solid var(--line)}
 .hub-up time{color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
+.hub-story{margin:6px 0 0}
+.hub-story h2{margin-bottom:4px}
+.hub-by{font-size:12.5px;color:var(--muted);margin:0 0 6px}
+.hub-story h3{font-size:16.5px;line-height:1.6;margin:26px 0 8px;padding-left:10px;border-left:4px solid var(--clay)}
+.hub-story p{font-size:16px;line-height:2;margin:0 0 14px;color:var(--ink)}
+.hub-story p.hub-by{font-size:12.5px;line-height:1.6;color:var(--muted)}
+.hub-story .hub-st-note{font-size:13px;line-height:1.8;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:18px}
 .hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
 .hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
 .hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
@@ -2036,6 +2050,16 @@ def build_hubs(arch, flag_of):
         if H.get('answer'):
             b.append(f'<div class="hub-ans"><p class="hub-ans-k">読み比べて分かったこと</p><p>{e(H["answer"])}</p></div>')
         b.append('<p class="hub-meta">' + e(H.get('checkedNote') or f'{len(H["outlets"])}つの報道の原文を {H.get("checked", "")} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。') + '</p>')
+        used = set()
+        S = H.get('story')
+        if S:
+            n = sum(len(x[1]) for x in S['body'] if x[0] == 'p')
+            sb = [f'<section class="hub-story" aria-label="{e(S["title"])}"><h2><i>STORY</i>{e(S["title"])}</h2>',
+                  f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))} · 約{round(n / 100) * 100:,}字 · 約{max(1, round(n / 500))}分で読めます</p>']
+            for kind, txt in S['body']:
+                sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else f'<p>{link_terms(e(txt), used)}</p>')
+            sb.append('<p class="hub-st-note">事実の部分は、カッコ内の媒体の報道にもとづいています。「見方」は F1 Grid Walk の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
+            b.append(''.join(sb))
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
         b.append('<h2><i>ONLY HERE</i>この記事にしかない情報</h2>' + f'<p class="hub-sub">今回比べた{len(H["outlets"])}本の中で、その記事だけが書いていること</p>')
@@ -2081,7 +2105,7 @@ def build_hubs(arch, flag_of):
                 except Exception:
                     return s
             b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in H['updates']) + '</ul>')
-        b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>')
+        b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>' + term_assets(used))
         head = MONO_FONT + f'<style>{HUB_CSS}</style>\n' + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
