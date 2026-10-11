@@ -1591,6 +1591,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 :root{--hl:#FFEE9A}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hl:rgba(230,200,70,.36)}}
 :root[data-theme="dark"]{--hl:rgba(230,200,70,.36)}
+/* 話題のまとめ at the top instead of 今週の注目 (owner's decision, 12 Oct 2026) */
+.hubtop{display:flex;flex-direction:column;gap:10px}
+.hero:has(#hub-top) .duo{order:1;margin:18px 0 0}
+.hubtop h1{margin:0}
+.hubtop-sub{margin:-4px 0 0;font-size:14px;font-weight:700;color:var(--muted)}
+.hubtop-ans{margin:2px 0 0;font-size:14.5px;line-height:1.85;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.hubtop-ans b{display:block;font-size:11.5px;letter-spacing:.08em;color:var(--clay);margin-bottom:2px}
+.hubtop-go{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:4px;padding:11px 16px;border:2px solid var(--ink);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
+.hubtop-go span{display:flex;flex-direction:column;font-size:15px;font-weight:800;line-height:1.4}
+.hubtop-go small{font-size:11.5px;font-weight:500;color:var(--muted);margin-top:2px}
+.hubtop-go b{font-size:20px;line-height:1}
+.hubtop-go:hover{background:var(--tint)}
+@media (max-width:520px){.hubtop{gap:8px}.hubtop-sub{font-size:12.5px}.hubtop-ans{font-size:13px;line-height:1.75}.hubtop-go{padding:9px 12px}.hubtop-go span{font-size:14px}}
 </style>
 
 <header class="top">
@@ -1633,7 +1646,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <a href="/lens/" class="jump-col" data-track="click/nav/lens">WORLD GRID<span class="jm-col"> コラム</span></a>
     <a href="/deep/" class="jump-deep" data-track="click/nav/deep">DEEP GRID<span class="jm-col"> コラム</span></a>
     <a href="/offgrid/" class="jump-off" data-track="click/nav/offgrid">OFF GRID<span class="jm-col"> コラム</span></a>
-    <a href="#hero" class="jump-feat" data-track="click/nav/feature">今週の注目</a>
+    <a href="#hero" class="jump-feat" data-track="click/nav/feature">話題のまとめ</a>
   </div>
 </nav>
 
@@ -1686,9 +1699,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     <div class="dash-main">
       <section class="hero dbox" aria-labelledby="hero-title">
         <div class="hero-in">
-          <div class="hero-text" id="hero"><!--pre:hero--><div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の8媒体が報道</span></div>
-<div class="tw-sec" id="tw-facts"><h1 id="hero-title"><a href="/news/de-mst-wild-singapore-sprint/">フェルスタッペンが雨のシンガポール・スプリントを制す　首位ラッセルは自滅</a></h1></div>
-<section class="tw-sec lens" id="tw-lens"><h2 class="tw-h tw-h-lens"><span class="tw-dot"></span>総評：読みたいことで選ぶ</h2></section><!--/pre:hero--></div>
+          <div class="hero-text" id="hero"><!--pre:hero--><div class="hubtop" id="hub-top" data-circuit="singapore"><div class="chips"><span class="chip-feature">話題のまとめ</span><span class="chip-cat">シンガポールGP · F1 Grid Walk の独自記事</span></div><h1 id="hero-title"><a href="/topics/hamilton-singapore-strategy-blame/" data-track="click/top/hub">ハミルトンはなぜVSCで入らなかったのか</a></h1><p class="hubtop-sub">3つの報道を並べると</p><p class="hubtop-ans"><b>読み比べて分かったこと</b>確認した3本からは、コースに残ると決めたのはハミルトン本人で、本人も代表もそう認めていることが分かる。ただし伝え方には差がある。バスール代表は「指示は2台ともピットインだった」と話し、The Raceは「フェラーリが入れるかどうか迷っている間に」機会が消えたと書いている。チームの指示がハミルトンにどう伝わったかを示す無線は報じられておらず、どこまでが本人の判断で、どこからがチームの迷いだったのかは、まだ決められない。</p><a class="hubtop-go" href="/topics/hamilton-singapore-strategy-blame/" data-track="click/top/hub-go"><span>F1 Grid Walk の読み解きを読む<small>約1,800字 · 3つの報道の共通点と違い</small></span><b aria-hidden="true">→</b></a></div><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
         <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/singapore-race-three-20261011/" data-track="click/top/lens"><span class="duo-q"><small>WORLD GRID</small><strong>世界の見方を、日本語で。</strong></span><b>シンガポール決勝、見るべきは3つ。フェルスタッペン「スタートがまたひどかったら終わり」&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/singapore-sprint/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>昼の練習、夜の本番&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div>
@@ -2064,6 +2075,15 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var teams = {}; t.items.forEach(function(a){ (a.teams || []).forEach(function(k){ teams[k] = 1; }); });
   }
 
+  function renderHubArt(key){
+    var ha = el('hero-art'); if (!ha) return; ha.textContent = ''; ha.removeAttribute('data-c');
+    var c = key && state.circuits[key], plate = mk('div','plate');
+    if (c){
+      var s = circuitSvg(c, true); s.setAttribute('role','img'); s.setAttribute('aria-label', c.name + 'のコース図');
+      plate.appendChild(s); ha.appendChild(plate);
+      var lab = mk('div','circuit-label'); lab.appendChild(mk('b', null, c.name)); lab.appendChild(mk('span', null, c.gp)); ha.appendChild(lab);
+    } else { plate.appendChild(mk('span','catword', 'TOPIC')); ha.appendChild(plate); }
+  }
   function renderHero(a){
     var ha = el('hero-art'); ha.textContent = '';
     ha.setAttribute('data-c', colorOf(a.source));
@@ -2422,8 +2442,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     state.all = all;
     state.srcRegion = {}; all.forEach(function(a){ if (a.region && !state.srcRegion[a.source]) state.srcRegion[a.source] = a.region; });
     state.byUrl = {}; all.forEach(function(a){ state.byUrl[a.url] = a; });
-    var tr = trending(all), rest;
-    if (tr){ renderTrending(tr); rest = all; }
+    var tr = trending(all), rest, ht = el('hub-top');
+    if (ht){ renderHubArt(ht.getAttribute('data-circuit')); rest = all; }  // 話題のまとめ stays at the top (owner's decision, 12 Oct 2026)
+    else if (tr){ renderTrending(tr); rest = all; }
     else {
       var hero = all.filter(function(a){ return a.featured; })[0] || all[0];
       rest = all.filter(function(a){ return a !== hero; });
@@ -2482,7 +2503,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var btn = el('share-btn'), menu = el('share-menu'); if (!btn || !menu) return;
     function shareText(){
       var h = el('hero-title'), t = h ? h.textContent.trim() : '';
-      return (t && t.indexOf('読み込んでいます') < 0 ? '今週の注目：' + t + ' | ' : '') + 'F1 Grid Walk — 世界のF1ニュースを日本語で';
+      return (t && t.indexOf('読み込んでいます') < 0 ? (el('hub-top') ? '話題のまとめ：' : '今週の注目：') + t + ' | ' : '') + 'F1 Grid Walk — 世界のF1ニュースを日本語で';
     }
     function hrefFor(k){
       var u = encodeURIComponent(SITE_URL), t = encodeURIComponent(shareText());
