@@ -43,6 +43,8 @@ Topics: "topic" is a short English slug for the underlying story. Articles from 
 
 New articles.json: {"updatedAt": "<now, +09:00>", "topics": {...}, "articles": [new..., existing from the last 7 days...]}, max 80, newest first, never drop the featured one (but move "featured" to a newer, more important article when one exists); remove articles that went behind a paywall.
 
+Note (owner's decision, 12 Oct 2026): the top of the top page now shows the newest topic hub (「話題のまとめ」, from topics/*.json) instead of 「今週の注目」. build.py does this; never edit the hero block in index.html by hand.
+
 ## 4b. World media lens (「世界の見方」; the column brand is WORLD GRID since 3 Oct 2026)
 The page's feature 「今週の注目」 is the topic covered by the most different outlets in the last 7 days (ties: newest). For THAT topic (and, if time allows, any other topic with 4+ outlets) the page compares HOW the outlets covered it. Do this every run in which that topic has new articles or no "lens" yet.
 

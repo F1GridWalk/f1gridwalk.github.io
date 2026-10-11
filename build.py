@@ -322,7 +322,22 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         if n >= 2 and (best is None or n > best[1] or (n == best[1] and newest > best[2])):
             best = (key, n, newest, items)
     hero = []
-    if best:
+    top_hub = latest_hub()
+    if top_hub:  # 話題のまとめ replaces 今週の注目 at the top (owner's decision, 12 Oct 2026)
+        H = top_hub
+        by_id = {x['id']: x for x in arts}
+        circ = next((by_id[o['id']].get('circuit') for o in H.get('outlets', []) if by_id.get(o['id'], {}).get('circuit')), '')
+        S = H.get('story') or {}
+        n_chars = sum(len(x[1]) for x in S.get('body', []) if x[0] == 'p')
+        go_sub = (f'約{round(n_chars / 100) * 100:,}字 · ' if n_chars else '') + f'{len(H.get("outlets", []))}つの報道の共通点と違い'
+        hero.append(f'<div class="hubtop" id="hub-top" data-circuit="{e(circ or "")}">'
+                    f'<div class="chips"><span class="chip-feature">話題のまとめ</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
+                    f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
+                    + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') else '')
+                    + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') else '')
+                    + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "まとめを読む")}を読む<small>{e(go_sub)}</small></span><b aria-hidden="true">→</b></a>'
+                    '</div>')
+    elif best:
         key, n, _, items = best
         info = topics.get(key, {})
         lens = info.get('lens') if isinstance(info.get('lens'), dict) and info['lens'].get('groups') else None
@@ -2028,6 +2043,16 @@ HUB_CSS = '''
 .hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
 .hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 '''
+
+
+def latest_hub():
+    """The newest published topic hub (by its latest update, then checked date), shown at the top of the top page."""
+    if not HUBS:
+        return None
+    def key(H):
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        return (max(ups) if ups else '', H.get('checked', ''))
+    return max(HUBS.values(), key=key)
 
 
 def hub_box(H):
