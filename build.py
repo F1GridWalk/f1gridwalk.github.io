@@ -2037,12 +2037,17 @@ HUB_CSS = '''
 .hub-story h3{font-size:16.5px;line-height:1.6;margin:26px 0 8px;padding-left:10px;border-left:4px solid var(--clay)}
 .hub-story p{font-size:16px;line-height:2;margin:0 0 14px;color:var(--ink)}
 .hub-story p.hub-by{font-size:12.5px;line-height:1.6;color:var(--muted)}
+.hub-story .cite{font-size:11.5px;color:var(--muted);white-space:nowrap}
 .hub-story .hub-st-note{font-size:13px;line-height:1.8;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:18px}
 .hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
 .hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
 .hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
 .hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 '''
+
+
+# source tags like （The Race） in a hub story are shown small and quiet, so the story reads as one piece
+STORY_CITE = re.compile(r'(（(?:The Race|GPblog|Motorsport\.com|F1公式[^）]{0,20})）)')
 
 
 def latest_hub():
@@ -2082,7 +2087,7 @@ def build_hubs(arch, flag_of):
             sb = [f'<section class="hub-story" aria-label="{e(S["title"])}"><h2><i>STORY</i>{e(S["title"])}</h2>',
                   f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))} · 約{round(n / 100) * 100:,}字 · 約{max(1, round(n / 500))}分で読めます</p>']
             for kind, txt in S['body']:
-                sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else f'<p>{link_terms(e(txt), used)}</p>')
+                sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', link_terms(e(txt), used)) + '</p>')
             sb.append('<p class="hub-st-note">事実の部分は、カッコ内の媒体の報道にもとづいています。「見方」は F1 Grid Walk の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
         if H.get('common'):
