@@ -111,6 +111,16 @@ def shared_css():
 
 
 CSS = '''
+/* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
+.bt{display:none}
+@media (max-width:520px){
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
+.bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bt .on{color:var(--ink)}
+.bt .on svg{stroke-width:2.3}
+body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
 :root{--paper:#F3EFE6;--surface:#FBF9F4;--line:#DDD5C5;--ink:#1F2420;--ink-2:#3A3E37;--muted:#5B5F57;--moss:#1F2420;--clay:#9E4E2B;--on-ink:#FBF9F4;
 --sans:'IBM Plex Sans JP','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,sans-serif;--logo:'Fraunces',Georgia,'Times New Roman',serif}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}}
@@ -177,6 +187,18 @@ footer p{margin:6px 0}
 '''
 
 
+BT_ICON = {'news': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>', 'data': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>', 'col': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>', 'rule': '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>'}
+
+
+def bottom_tabs(canonical):
+    """Phone bottom tab bar on every page (owner's choice A, 11 Oct 2026)."""
+    path = canonical.replace(SITE, '')
+    cur = 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith('/news/') or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
+    items = [('news', '/', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('rule', '/deep/rules/', '用語')]
+    return ('<nav class="bt" aria-label="サイト内の移動">' + ''.join(
+        f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
+
+
 def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
     og = og_image or OG_IMAGE
     return f'''<!doctype html>
@@ -222,6 +244,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
   <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
 </div></footer>
+{bottom_tabs(canonical)}
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
 document.addEventListener('click',function(ev){{
