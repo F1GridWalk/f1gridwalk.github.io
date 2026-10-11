@@ -1991,6 +1991,12 @@ HUB_CSS = '''
 .hub-o ul{margin:0;padding-left:1.1em}.hub-o li{font-size:14.5px;line-height:1.8;margin:3px 0}
 .hub-o .lk{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px}
 .hub-o .nt{font-size:12px;color:var(--muted);margin:6px 0 0}
+.hub-ans{margin:16px 0 8px;padding:14px 16px;border:2px solid var(--ink);border-radius:14px;background:var(--surface)}
+.hub-ans-k{font-size:12.5px;font-weight:700;color:var(--clay);letter-spacing:.08em;margin:0 0 4px}
+.hub-ans p:last-child{margin:0;font-size:16px;line-height:1.95;font-weight:500}
+.hub-si{margin:0}.hub-si dt{font-size:14.5px;font-weight:700;margin:10px 0 2px}.hub-si dd{margin:0 0 0 1em;font-size:14px;line-height:1.75;color:var(--ink-2)}
+.hub-sub{font-size:13px;font-weight:700;color:var(--muted);margin:12px 0 4px}
+.hub-nq{margin:0 0 12px}.hub-nq p{font-size:15px;font-weight:700;margin:0 0 6px}
 .hub-src{font-size:14.5px;line-height:1.85;background:var(--surface);border-left:4px solid var(--clay);border-radius:0 10px 10px 0;padding:10px 14px;margin:0}
 .hub-d{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;margin:0}
 .hub-d dt{font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:1px 10px;height:max-content;white-space:nowrap}
@@ -2026,8 +2032,10 @@ def build_hubs(arch, flag_of):
         b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › 話題のまとめ</nav><div class="hub">',
              f'<p class="hub-k"><b>TOPIC</b><span>{e(H.get("gp", ""))} · 話題のまとめ</span></p>',
              f'<h1>{e(H["title"])}' + (f'<small>{e(H["sub"])}</small>' if H.get('sub') else '') + '</h1>',
-             f'<p class="hub-dek">{e(H["dek"])}</p>',
-             f'<p class="hub-meta">{len(H["outlets"])}つの報道の原文を {e(H.get("checked", ""))} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。</p>']
+             f'<p class="hub-dek">{e(H["dek"])}</p>']
+        if H.get('answer'):
+            b.append(f'<div class="hub-ans"><p class="hub-ans-k">読み比べて分かったこと</p><p>{e(H["answer"])}</p></div>')
+        b.append('<p class="hub-meta">' + e(H.get('checkedNote') or f'{len(H["outlets"])}つの報道の原文を {H.get("checked", "")} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。') + '</p>')
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
         b.append('<h2><i>WHAT\'S NEW</i>この記事を読むと増えること</h2>')
@@ -2039,18 +2047,31 @@ def build_hubs(arch, flag_of):
             b.append(f'<div class="hub-o"><div class="h"><span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span><span>{e(a.get("region", ""))} · {e(lang)}</span></div>'
                      f'<span class="ang">{e(o["angle"])}</span><ul>' + ''.join(f'<li>{e(x)}</li>' for x in o['adds']) + '</ul>'
                      + (f'<p class="nt">{e(o["note"])}</p>' if o.get('note') else '') +
-                     f'<div class="lk"><a href="/news/{e(a["id"])}/">日本語の要約</a><a href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}">原文を読む ↗</a></div></div>')
-        if H.get('sources'):
+                     f'<div class="lk"><a href="/news/{e(a["id"])}/">日本語の要約</a><a href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}">原文を読む ↗</a>'
+                     + ''.join(f'<a href="{e(l["url"])}" target="_blank" rel="noopener">{e(l["label"])} ↗</a>' for l in o.get('links', [])) + '</div></div>')
+        if H.get('sourceItems'):
+            b.append('<h2><i>SOURCES</i>情報のもとは同じ？</h2><dl class="hub-si">' + ''.join(f'<dt>{e(x["t"])}</dt><dd>{e(x["w"])}</dd>' for x in H['sourceItems']) + '</dl>')
+        elif H.get('sources'):
             b.append(f'<h2><i>SOURCES</i>情報のもとは同じ？</h2><p class="hub-src">{e(H["sources"])}</p>')
         if H.get('diffs'):
             b.append('<h2><i>DIFFERENCES</i>報道の違い</h2><dl class="hub-d">' + ''.join(f'<dt>{e(d["k"])}</dt><dd>{e(d["t"])}</dd>' for d in H['diffs']) + '</dl>')
-        if H.get('unknowns'):
+        if H.get('unknownsFillable') or H.get('unknownsLimits'):
+            b.append('<h2><i>UNKNOWN</i>まだ分からないこと</h2>')
+            if H.get('unknownsFillable'):
+                b.append('<p class="hub-sub">資料を足せば分かる可能性があること</p><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['unknownsFillable']) + '</ul>')
+            if H.get('unknownsLimits'):
+                b.append('<p class="hub-sub">公開されている情報では判断できないこと</p><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['unknownsLimits']) + '</ul>')
+        elif H.get('unknowns'):
             b.append('<h2><i>UNKNOWN</i>まだ分からないこと</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['unknowns']) + '</ul>')
         D = H.get('decision')
         if D:
             b.append(f'<h2><i>DECISION</i>その時点で、筋の通った判断だったか<span class="hub-tag">{e(D.get("label", ""))}</span></h2>'
                      f'<p class="hub-q">{e(D["q"])}</p><dl class="hub-d">' + ''.join(f'<dt>{e(r["k"])}</dt><dd>{e(r["t"])}</dd>' for r in D['rows']) + '</dl>')
-        if H.get('rules') or H.get('todo'):
+        if H.get('next'):
+            b.append('<h2><i>NEXT</i>次の疑問へ</h2>' + ''.join(
+                f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div></div>' for n in H['next'])
+                + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
+        elif H.get('rules') or H.get('todo'):
             b.append('<h2><i>NEXT</i>次の疑問へ</h2><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))}</a>' for r in H.get('rules', []) if r in rname) + '</div>'
                      + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
         if H.get('updates'):
