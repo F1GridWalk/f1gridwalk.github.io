@@ -1,104 +1,9 @@
 {
- "updatedAt": "2026-10-11T18:30:00+09:00",
+ "updatedAt": "2026-10-12T00:30:00+09:00",
  "topics": {
-  "sq-verstappen-pole": {
-   "title": "フェルスタッペンがシンガポールのスプリントポール　ラッセル2番手、アントネッリは7番手",
-   "summary": "シンガポールGPのスプリント予選で、フェルスタッペンがSQ3の1回のアタックでポールを獲得した。0.120秒差の2番手は旧仕様のメルセデスで走るラッセルで、新仕様のアントネッリは7番手に沈んだ。SQ1でハミルトンを黄旗下で抜いた件では、スチュワードが違反を認めながらも処分を科さず、フェルスタッペンはポールを維持した。"
-  },
-  "sq-overtake-mode-error": {
-   "title": "FIAがSQ1の人為ミスを認める　オーバーテイクモード再開せず、抗議も検討",
-   "summary": "シンガポールのスプリント予選SQ1で、ペレスの赤旗後にオーバーテイクモードが正しく再開されず、約27秒だけ有効になった。FIAはレースコントロールの人為ミスと認め、SQ2とSQ3は影響を受けていないとした。サインツは予選が歪められたと不満を示し、アストンマーティンは抗議を検討、ウィリアムズの22台でのSQ2開催要望は認められなかった。"
-  },
-  "verstappen-yellow-flag-hamilton": {
-   "title": "フェルスタッペンの黄旗下追い越し　違反認定も無処分",
-   "summary": "シンガポールのスプリント予選で、フェルスタッペンはペレスの車の破片による黄旗区間でハミルトンを抜いた。スチュワードは黄旗の規則違反を認めたが、接近速度の大きな差による不運な結果と判断し、ペナルティは科さなかった。テレメトリーでは約40メートル以内にスロットルを戻しており、ハミルトンは時速60キロ未満だった。フェルスタッペンはスプリントのポールを維持した。",
-   "lens": {
-    "groups": [
-     {
-      "scope": "outlet",
-      "region": "スペイン",
-      "label": "Motorsport.com España",
-      "focus": "無罰の理由を解説",
-      "lead": "スチュワード",
-      "cause": "速度差とスロットル操作",
-      "hook": "なぜ罰しなかったか",
-      "points": [
-       "違反は認めつつ「不運な結果」と整理",
-       "約40メートル手前での減速をデータで説明"
-      ],
-      "ids": [
-       "es-motorsport-verstappen-yellow-no-sanction"
-      ]
-     },
-     {
-      "scope": "outlet",
-      "region": "イタリア",
-      "label": "Formula1.it",
-      "focus": "審議の検証手順",
-      "lead": "スチュワード",
-      "cause": "速度差による不運な結果",
-      "hook": "FIAの裁定",
-      "points": [
-       "GPSや無線、映像など検証資料を列挙",
-       "ベアマンの降格例に触れ罰則予想を紹介"
-      ],
-      "ids": [
-       "it-formula1it-verstappen-yellow-decision"
-      ]
-     },
-     {
-      "scope": "outlet",
-      "region": "ドイツ",
-      "label": "Motorsport-Total.com",
-      "focus": "本人の認識とポール",
-      "lead": "フェルスタッペン",
-      "cause": "破片による黄旗とデータ確認",
-      "hook": "罰則なしを先に提示",
-      "points": [
-       "区間の前に抜いたつもりだったという本人の話",
-       "後でハミルトンを前に出したが結果には影響せず"
-      ],
-      "ids": [
-       "de-mst-verstappen-yellow-no-penalty"
-      ]
-     }
-    ],
-    "guide": [
-     {
-      "want": "無罰の理由",
-      "ids": [
-       "es-motorsport-verstappen-yellow-no-sanction"
-      ],
-      "note": "速度差とスロットル操作の説明"
-     },
-     {
-      "want": "審議の進め方",
-      "ids": [
-       "it-formula1it-verstappen-yellow-decision"
-      ],
-      "note": "検証資料と先例への言及"
-     },
-     {
-      "want": "本人の言い分",
-      "ids": [
-       "de-mst-verstappen-yellow-no-penalty"
-      ],
-      "note": "後でハミルトンを前に出した話"
-     }
-    ]
-   }
-  },
-  "hamilton-sq3-plan-error": {
-   "title": "ハミルトン、SQ3の走行プランは自分の誤りと認める",
-   "summary": "ハミルトンはスプリント予選SQ3で6番手に終わり、他車と違う走行プランを選んだのは自分の決断で誤りだったと認めた。ルクレールが2回アタックしたのに対し、ハミルトンは1回で、ソフトでリアが不安定になりグリップも足りなかった。原因が後輪の準備不足か過熱かは特定できていない。土曜のスプリントでの挽回が課題となる。"
-  },
   "mercedes-new-spec-singapore": {
    "title": "アップグレード版メルセデス、旧仕様に及ばず　シンガポールで新旧比較が鮮明に",
    "summary": "メルセデスはシンガポールGPで、旧仕様のラッセルと新仕様のアントネッリを走らせて比較している。スプリント予選はラッセルが2番手、アントネッリが7番手で、差は0.573秒だった。新型はバランスの許容幅が狭く乗りにくいとされ、ヴォルフとショブリンも期待した性能向上が見えないと認めた。原因が設計かセットアップかは未解明で、2027年の開発への影響も懸念されている。"
-  },
-  "russell-40-place-penalty": {
-   "title": "ラッセルにシンガポールGP決勝で40グリッド降格　PU4部品が上限超過",
-   "summary": "FIAはメルセデスのラッセルに、シンガポールGP決勝で合計40グリッド降格を科すと確認した。ICE、ターボ、エキゾースト、MGU-Kの4部品が年間の使用上限を超え、1部品あたり10グリッドの降格になる。降格は決勝のみに適用され、土曜のスプリントは通常のグリッドから出走できる。前戦セパンのトラブルでアントネッリとの差は84点に開き、ラッセル本人はシーズン中にもう一度ペナルティを受ける見通しを示した。"
   },
   "singapore-sprint-verstappen-win": {
    "title": "フェルスタッペンが雨のシンガポール・スプリントを制す　首位ラッセルは自滅",
@@ -239,9 +144,223 @@
   "singapore-day2-fan-reactions": {
    "title": "シンガポール2日目、掲示板はスプリントの荒れ方と予選に反応",
    "summary": "5ちゃんねるのまとめサイトでは、荒れたスプリントの展開、フェルスタッペンのポールとフェラーリの好調、ハジャーの不運などが話題になった。決勝の天候やセーフティカー次第で荒れるかもしれないという期待もある。いずれもファンの個人的な感想で、公式情報ではない。"
+  },
+  "singapore-gp-verstappen-win": {
+   "title": "フェルスタッペンがシンガポール初優勝　ハミルトンは戦略ミスで6位",
+   "summary": "レッドブルのフェルスタッペンがポールから逃げ切り、シンガポールGPで初優勝した。2位はルクレール、3位はアントネッリで、ボルトレートとストロールのトラブルで2度のVSCが出た。フェラーリはハミルトンの戦略で表彰台を逃し6位に終わった。フェルスタッペンは無線不調にも見舞われたが、最後まで首位を守った。"
+  },
+  "hamilton-singapore-strategy-blame": {
+   "title": "ハミルトン、VSC中にピットへ入らなかった戦略に責任を認める",
+   "summary": "39周目のVSCでルクレールが安価に2回目のピットを行った一方、ハミルトンは入らずソフトで走り続け、6位まで後退した。両メディアとも、ハミルトンが無線で「自分の判断だった」と謝罪したと伝えている。フランス版のMotorsport.comは、ヴァスール代表がチームは入るよう求めたと説明したと報じ、損失を約41.5秒と試算した。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-verstappen-singapore-win-hamilton-nosedive",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "決勝",
+   "circuit": "singapore",
+   "teams": [
+    "redbull",
+    "ferrari"
+   ],
+   "topic": "singapore-gp-verstappen-win",
+   "title": "フェルスタッペンがシンガポール初勝利、ハミルトンは戦略ミスで急落",
+   "summary": "レッドブルのフェルスタッペンがシンガポールGPで初優勝し、2位ルクレールに7.3秒差、3位はアントネッリだった。フェラーリはルクレールがミディアムにスイッチした後もハミルトンをソフトで走らせ、39周目のVSCでも止めず、ハミルトンのタイヤは21周分古い状態になった。終盤はノリスを外から抜こうとして膨らみ、アントネッリとノリスに先行されて6位に終わった。ハミルトンは無線で「僕の判断だった」と謝った。",
+   "orig": "Max Verstappen breaks Singapore win drought while Lewis Hamilton nosedives",
+   "url": "https://www.the-race.com/formula-1/max-verstappen-breaks-singapore-win-drought-while-lewis-hamilton-nosedives/",
+   "published": "2026-10-11T12:00:00+01:00",
+   "featured": true
+  },
+  {
+   "id": "nl-rn365nl-verstappen-near-perfection",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365 NL",
+   "cat": "決勝",
+   "circuit": "singapore",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "singapore-gp-verstappen-win",
+   "title": "フェルスタッペン、ポールからの完勝でシンガポール初制覇",
+   "summary": "フェルスタッペンはポールからスタートし、並びかけたルクレールを抑えてシンガポールGPを制した。8周目のボルトレートのリタイアでVSCが出て、39周目のストロールの停止でも再びVSCとなり、ルクレールとアントネッリはソフトに交換した。終盤、ルクレールは約16秒の差を詰めたが、フェルスタッペンは無線不調と最終コーナーでのはみ出しを乗り切った。ファステストラップだけは逃した。",
+   "orig": "Ongenaakbare Verstappen benadert perfectie in Singapore",
+   "url": "https://racingnews365.nl/ongenaakbare-verstappen-benadert-perfectie-in-singapore",
+   "published": "2026-10-11T15:46:00+02:00"
+  },
+  {
+   "id": "ja-f1gate-singapore-race-report-verstappen",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "決勝",
+   "circuit": "singapore",
+   "teams": [
+    "redbull",
+    "ferrari"
+   ],
+   "topic": "singapore-gp-verstappen-win",
+   "title": "決勝レポート：フェルスタッペンがF1シンガポールGP初制覇",
+   "summary": "フェルスタッペンがポールからの完勝でシンガポールGP初優勝を果たした。通算250戦目の節目で、通算73勝目となる。2位はルクレールで7.335秒差、3位はアントネッリだった。ハミルトンは3番手スタートから摩耗したソフトで失速し6位に終わり、ピアストリは右フロントのパンクで余分に1回ピットに入りながら最終周に5位へ上がった。",
+   "orig": "決勝レポート：フェルスタッペンがF1シンガポールGP初制覇",
+   "url": "https://f1-gate.com/singapore_gp/228242.html",
+   "published": "2026-10-11T23:45:00+09:00"
+  },
+  {
+   "id": "de-mst-verstappen-first-singapore-win",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "singapore",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "singapore-gp-verstappen-win",
+   "title": "フェルスタッペンが初のシンガポール制覇、残るはマドリードだけ",
+   "summary": "フェルスタッペンが62周のシンガポールGPを制し、マリーナベイ初勝利を挙げた。同サイトによると、現行開催サーキットで未勝利なのはマドリードだけになったという。2位はルクレール、3位は選手権首位のアントネッリで、ハミルトンは早めにソフトへ替え、VSC中も入らずに6位へ落ちた。ボルトレートは8周目にギアボックス、ストロールは39周目にクラッチの不具合で止まった。",
+   "orig": "Jetzt fehlt nur noch Madrid: Max Verstappen siegt erstmals in Singapur!",
+   "url": "https://www.motorsport-total.com/formel-1/news/jetzt-fehlt-nur-noch-madrid-max-verstappen-siegt-erstmals-in-singapur-26101107",
+   "published": "2026-10-11T16:00:00+02:00"
+  },
+  {
+   "id": "en-gpblog-hamilton-takes-blame-singapore-gamble",
+   "kind": "news",
+   "lang": "en",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "ドライバー",
+   "circuit": "singapore",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-singapore-strategy-blame",
+   "title": "ハミルトン、シンガポールの戦略の賭けは「自分の判断」と責任を認める",
+   "summary": "ハミルトンはルクレールがVSC中にピットへ入った際、ソフトのまま残る判断をし、結果的に6位まで後退した。最初のピット後にルクレールの後ろで約2秒を失ったと感じ、「速さを使いたい」と訴えたが、チームにはタイヤを労るよう言われたという。ソフトで44周を走り、アントネッリ、ノリス、ピアストリに先行された。無線では「僕の判断で貴重なポイントを失った」と謝罪した。",
+   "orig": "Lewis Hamilton takes the blame after costly Singapore gamble",
+   "url": "https://www.gpblog.com/en/news/lewis-hamilton-takes-the-blame-after-costly-singapore-gamble",
+   "published": "2026-10-11T16:29:00+01:00"
+  },
+  {
+   "id": "fr-motorsportcom-hamilton-assume-strategie",
+   "kind": "news",
+   "lang": "fr",
+   "region": "フランス",
+   "source": "Motorsport.com（フランス語版）",
+   "cat": "ドライバー",
+   "circuit": "singapore",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-singapore-strategy-blame",
+   "title": "ハミルトン、失敗に終わったシンガポールの戦略に責任を認める",
+   "summary": "39周目にストロールの停止でVSCが出た時、ルクレールは中古ソフトへの安価な2回目のピットに入ったが、ソフトで21周走っていたハミルトンは入らなかった。同サイトは、この判断が約41.5秒のロスになったと試算している。ヴァスール代表は、チームは両ドライバーに入るよう求めたがハミルトンが拒んだと説明し、これが表彰台を失う結果になったと述べた。",
+   "orig": "Hamilton assume la responsabilité de sa stratégie ratée à Singapour",
+   "url": "https://fr.motorsport.com/f1/news/hamilton-assume-responsabilite-strategie-ratee-singapour/10864342/",
+   "published": "2026-10-11T14:45:00+00:00"
+  },
+  {
+   "id": "nl-rn365nl-leclerc-missed-chance",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365 NL",
+   "cat": "決勝",
+   "circuit": "singapore",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "leclerc-singapore-p2-gap",
+   "title": "ルクレール、フェルスタッペン攻略の機会を逃したと悔やむ",
+   "summary": "ルクレールはベルギーGP以来の表彰台となる2位に入ったが、勝てなかったことを悔やんだ。スタートでは並んでターン1に入ったものの、フェルスタッペンの方が決断力があったという。最初のスティントでタイヤの摩耗が早く、終盤は差を14秒から8秒まで縮めたが決定的な動きはできなかった。フェラーリが小さな新パーツを持ち込んだことにも触れ、前を狙うにはまだ大きな一歩が必要だと話した。",
+   "orig": "Leclerc baalt van gemiste kans tegen Verstappen",
+   "url": "https://racingnews365.nl/leclerc-baalt-van-gemiste-kans-tegen-verstappen",
+   "published": "2026-10-11T16:15:00+02:00"
+  },
+  {
+   "id": "it-formula1it-lambiase-last-day-verstappen",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "circuit": "singapore",
+   "teams": [
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "lambiase-leaves-verstappen",
+   "title": "ランビアーゼ、シンガポールがフェルスタッペンの担当最後の日に",
+   "summary": "レッドブルはシンガポールGPの表彰台に、フェルスタッペンのレースエンジニアのランビアーゼを送り出し、コンストラクターズのトロフィーを受け取らせた。同サイトによると、この日が10年にわたる二人の関係での最後のレースだったという。ランビアーゼは2027年にマクラーレンへ移る予定で、アメリカ、ブラジル、ラスベガスの3戦はトム・ハートが担当するとされる。",
+   "orig": "Lambiase saluta Verstappen: a Singapore l'ultima festa insieme",
+   "url": "https://www.formula1.it/news/33194/1/lambiase-saluta-verstappen-a-singapore-l-ultima-festa-insieme",
+   "published": "2026-10-11T16:50:00+02:00"
+  },
+  {
+   "id": "it-formula1it-mekies-red-bull-rebirth",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "circuit": "singapore",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "mekies-red-bull-revival",
+   "title": "メキース代表、レッドブル復調の鍵は「チームの完璧な仕事」と語る",
+   "summary": "レッドブルのメキース代表は、マレーシアとシンガポールでの連勝について、ミルトン・キーンズの仕事を称えた。シャシーとパワーユニットの双方からパッケージの性能を引き出し、さまざまなレイアウトで先頭を争えるようになったという。今後の追加アップデートは計画しておらず、「1戦ずつ取り組む」と述べた。フェルスタッペンとの関係は率直で変わらないとし、その信頼には責任も伴うと話した。",
+   "orig": "Mekies svela il segreto della rinascita Red Bull: «Il team è stato impeccabile»",
+   "url": "https://www.formula1.it/news/33195/1/mekies-svela-il-segreto-della-rinascita-red-bull-il-team-e-stato-impeccabile",
+   "published": "2026-10-11T17:10:00+02:00"
+  },
+  {
+   "id": "fr-motorsportcom-antonelli-match-point-austin",
+   "kind": "news",
+   "lang": "fr",
+   "region": "フランス",
+   "source": "Motorsport.com（フランス語版）",
+   "cat": "ドライバー",
+   "circuit": "austin",
+   "teams": [
+    "mercedes",
+    "redbull",
+    "ferrari"
+   ],
+   "topic": "antonelli-austin-match-point",
+   "title": "アントネッリに初のタイトル王手、フェルスタッペンはハミルトンに迫る",
+   "summary": "アントネッリはシンガポールで3位に入り、ランキング首位を340点に伸ばした。2位ラッセルに102点差、3位ハミルトンとは111点差で、次のアメリカGPで初めてタイトル決定の可能性が生まれるという。連勝のフェルスタッペンは221点で4位に戻り、3位ハミルトンとの差はわずか8点になった。ただし記事は、オースティンで必要な得点の詳しい計算までは示していない。",
+   "orig": "Championnat - Antonelli aura sa première balle de match, Verstappen fond sur Hamilton",
+   "url": "https://fr.motorsport.com/f1/news/championnat-antonelli-balle-match-verstappen-hamilton/10864272/",
+   "published": "2026-10-11T15:45:00+00:00"
+  },
+  {
+   "id": "ja-f1are-singapore-race-digest",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "singapore",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "mercedes"
+   ],
+   "topic": "singapore-race-fan-reactions",
+   "title": "シンガポールGP決勝、フェルスタッペンの完勝にファンが注目、ハミルトンの戦略にも議論",
+   "summary": "シンガポールGP決勝結果をまとめた記事で、5chの実況スレッドへの反応を紹介している。フェルスタッペンの勝ち方を「完勝」と見る声が多く、レッドブルが今年のマシンで弱点を克服したのではという話題も出ている。アントネッリの落ち着きを評価する意見がある一方、ハミルトンは戦略で損をしたとの見方が目立つ。いずれもファンの個人的な感想であり、公式情報ではない。",
+   "orig": "2026年F1第17戦シンガポールGP決勝結果",
+   "url": "https://f1are.com/blog-entry-3975.html",
+   "published": "2026-10-11T00:00:00+09:00"
+  },
   {
    "id": "en-gpblog-wolff-russell-sensors",
    "kind": "news",
@@ -1136,7 +1255,6 @@
    "orig": "Verstappen wins sprint race after Russell crashes out of lead on wet track",
    "url": "https://www.racefans.net/2026/10/10/verstappen-wins-sprint-race-after-russell-crashes-out-of-lead-on-wet-track/",
    "published": "2026-10-10T11:24:00+01:00",
-   "featured": true,
    "lens": {
     "type": "レポート",
     "lead": "フェルスタッペン",
@@ -1569,230 +1687,6 @@
    "summary": "ラッセルはシンガポール前に、今季の自分のパフォーマンスは十分ではなかったと認めた。バーレーンGP（マレーシア開催）での技術トラブルで表彰台を逃したが、不運だけで84ポイント差は説明できないと話した。予選の直接対決はアントネッリの9勝7敗で、決勝でもアントネッリが11回先着している。キャリア初期は予選で8対2ほどだった自分の成績が、いまは4対6ほどだとも述べた。",
    "url": "https://www.motorsport-total.com/formel-1/news/mercedes-kampf-russell-will-antonelli-rueckstand-nicht-auf-pech-schieben-26100918",
    "published": "2026-10-09T19:32:00+02:00"
-  },
-  {
-   "id": "it-formula1it-wolff-russell-engine-rumours",
-   "kind": "rumor",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "うわさ",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "wolff-antonelli-favoritism",
-   "title": "ヴォルフ、「ラッセルのエンジンを壊しているのは自分ではない」とえこひいき説を否定",
-   "orig": "Wolff respinge voci e veleni: «Non sono io a rompere il motore a Russell»",
-   "summary": "ヴォルフ代表は、メルセデスがタイトル争いでアントネッリを優遇しているという噂を、すべて馬鹿げた話だと否定した。ラッセルの相次ぐリタイアと、誰かが自分にチャンピオンになってほしくないというラッセルの発言を受け、SNSで広まった説だという。ヴォルフは「両ドライバーを同じように扱っている」と述べ、ラッセルとの関係は良好だと強調した。デ・テレグラーフ紙の記事を基にした報道である。",
-   "url": "https://www.formula1.it/news/33151/1/wolff-respinge-voci-e-veleni-non-sono-io-a-rompere-il-motore-a-russell",
-   "published": "2026-10-09T19:00:00+02:00"
-  },
-  {
-   "id": "de-mst-verstappen-yellow-no-penalty",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "verstappen-yellow-flag-hamilton",
-   "title": "フェルスタッペンにペナルティなし　ハミルトンへの黄旗下の追い越し",
-   "orig": "Max Verstappen: Keine Strafe trotz Überholmanöver unter Gelb",
-   "summary": "ペレスの車の破片で出た黄旗の区間でフェルスタッペンはハミルトンを抜いたが、スチュワードはペナルティを科さなかった。ハミルトンは時速60キロ未満まで減速し、フェルスタッペンも約40メートル以内にスロットルを完全に戻していたとデータで確認された。フェルスタッペン本人は区間の手前で抜いたつもりで、確信が持てず後でハミルトンを前に出したと話した。ポールはSQ3の1回のアタックで獲得し、ラッセルとは0.120秒差だった。",
-   "url": "https://www.motorsport-total.com/formel-1/news/max-verstappen-keine-strafe-trotz-ueberholmanoever-unter-gelb-26100916",
-   "published": "2026-10-09T18:30:00+02:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "フェルスタッペン",
-    "focus": "本人の認識とポール",
-    "cause": "破片による黄旗とデータ確認",
-    "hook": "罰則なしを先に提示"
-   }
-  },
-  {
-   "id": "it-formula1it-sainz-fia-distorted",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "williams"
-   ],
-   "topic": "sq-overtake-mode-error",
-   "title": "FIAの失態にサインツが激怒「予選は歪められた」",
-   "orig": "Disastro FIA a Singapore, Sainz esplode: «Qualifica falsata»",
-   "summary": "サインツはSQ1敗退後、FIAのミスで予選が歪められたと激しく不満を示した。ペレスの赤旗後にオーバーテイクモードが作動しなかったのが原因で、FIAはレースコントロールの人為ミスを認めた。サインツは、半数の車は約0.5秒速いエンジンの状態で周回したと主張し、ブレーキの問題も訴えた。FIAは、SQ2とSQ3には影響がなかったとしている。",
-   "url": "https://www.formula1.it/news/33152/1/disastro-fia-a-singapore-sainz-esplode-qualifica-falsata",
-   "published": "2026-10-09T18:25:00+02:00"
-  },
-  {
-   "id": "de-mst-aston-martin-protest-sq",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "astonmartin",
-    "williams"
-   ],
-   "topic": "sq-overtake-mode-error",
-   "title": "アストンマーティン、スプリント予選への抗議を検討　FIAの新たなミス",
-   "orig": "Nächster FIA-Ärger: Aston Martin erwägt Protest gegen Singapur-Sprint-Qualifying",
-   "summary": "赤旗後にオーバーテイクモードが再開されなかった問題で、アストンマーティンがスプリント予選への抗議を検討していると報じられた。FIAはレースコントロールの人為ミスと認め、モードは27秒だけ作動したという。ウィリアムズは22台全車でのSQ2を求めたが認められず、SQ1のやり直しもタイヤ不足で見送られた。ウィリアムズとレーシングブルズは強い不満を抱えるが、現時点で抗議の予定はないとされる。",
-   "url": "https://www.motorsport-total.com/formel-1/news/naechster-fia-aerger-aston-martin-erwaegt-protest-gegen-singapur-sprint-qualifying-26100915",
-   "published": "2026-10-09T17:58:00+02:00"
-  },
-  {
-   "id": "it-formula1it-verstappen-yellow-decision",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "verstappen-yellow-flag-hamilton",
-   "title": "フェルスタッペンの黄旗下の追い越し　FIAの裁定は処分なし",
-   "orig": "Penalità Verstappen a Singapore: la decisione della FIA",
-   "summary": "スチュワードは、フェルスタッペンによるハミルトンの追い越しについて、両者の聴取に加えGPSやテレメトリー、無線、オンボード映像を検証した。ハミルトンは7コーナー出口で減速して脇に寄り、追い越し地点では時速60キロ未満だったという。結論は黄旗の規則違反だが、接近速度差の大きさによる不運な結果として処分なしとなった。ベアマンが似た状況でグリッド降格を受けたため、罰則を予想する声が多かったと伝えた。",
-   "url": "https://www.formula1.it/news/33149/1/penalita-verstappen-a-singapore-la-decisione-della-fia",
-   "published": "2026-10-09T17:55:00+02:00",
-   "lens": {
-    "type": "レポート",
-    "lead": "スチュワード",
-    "focus": "審議の検証手順",
-    "cause": "速度差による不運な結果",
-    "hook": "FIAの裁定"
-   }
-  },
-  {
-   "id": "es-motorsport-antonelli-title-clinch-math",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "分析",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-title-clinch-math",
-   "title": "アントネッリはシンガポールで王座確定の可能性があるか　ポイント計算で検証",
-   "orig": "¿Y si tras Singapur ya hay campeón de la F1 2026 pero sin saberlo aún?",
-   "summary": "アントネッリはラッセルに84ポイント差をつけて首位に立ち、ハミルトンとは106ポイント差になっている。スプリントと決勝を両方勝ち、ラッセルが無得点でも差は117ポイントにとどまり、日曜に王座を確定させることはできない。残りの獲得可能ポイントは150点あり、確定が可能になる最短の舞台は次戦オースティンだと同記事は計算している。コンストラクターズではメルセデスがフェラーリに151点差でリードしている。",
-   "url": "https://es.motorsport.com/f1/news/posibilidad-campeon-singapur-2026/10863359/",
-   "published": "2026-10-09T17:50:00+02:00"
-  },
-  {
-   "id": "en-planetf1-russell-penalty-confirmed",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "russell-40-place-penalty",
-   "title": "ラッセルの40グリッド降格をFIAが確認　「残り7戦ではPUの設計寿命を超える」",
-   "orig": "FIA confirms 40-place George Russell grid penalty at Singapore Grand Prix",
-   "summary": "PlanetF1は、FIAがラッセルに科す40グリッド降格を正式に確認したと伝えた。5基目のICE、ターボ、エキゾーストと4基目のMGU-Kが対象で、1要素あたり10グリッドの合計になる。ラッセルはアップグレードの到着まで交換を先送りしたい考えだったが、メルセデスはシンガポールでの新PU投入を認めた。本人は残り7戦は設計寿命より長いとして、シーズン中にもう一度ペナルティを受けると語った。",
-   "url": "https://www.planetf1.com/news/fia-george-russell-singapore-grand-prix-2026-grid-penalty",
-   "published": "2026-10-09T16:12:00+01:00"
-  },
-  {
-   "id": "de-mst-sprint-quali-verstappen-pole",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "sq-verstappen-pole",
-   "title": "シンガポールのスプリント予選　フェルスタッペンがポール、アントネッリは期待外れの7番手",
-   "orig": "Sprint-Quali Singapur: Verstappen auf Pole, Enttäuschung für Antonelli!",
-   "summary": "シンガポールのスプリント予選で、フェルスタッペンがセパンでの優勝に続いてポールを獲得した。ラッセルは0.120秒差の2番手だが、エンジン交換のため決勝では後方からのスタートになる。大型アップデートを積んだアントネッリは約0.7秒差の7番手で、同誌は最大の失望と伝えた。SQ1でハミルトンをイエロー旗下で抜いた疑いで、フェルスタッペンは審議の対象となっている。",
-   "url": "https://www.motorsport-total.com/formel-1/news/sprint-quali-singapur-verstappen-auf-pole-enttaeuschung-fuer-antonelli-26100911",
-   "published": "2026-10-09T16:28:00+02:00"
-  },
-  {
-   "id": "es-motorsport-verstappen-yellow-no-sanction",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "verstappen-yellow-flag-hamilton",
-   "title": "FIAはなぜフェルスタッペンを罰しなかったのか　黄旗下でハミルトンを追い越し",
-   "orig": "Por qué la FIA no sancionó a Verstappen tras adelantar a Hamilton con bandera amarilla",
-   "summary": "ペレスが5コーナーで事故を起こしフロントウイングを失った後、フェルスタッペンは黄旗区間でハミルトンを追い抜いた。スチュワードは旗の規則違反を認めたが、接近速度の大きな差による「不運な結果」とみなして処分しなかった。データでは約40メートル手前でスロットルを戻しており、速度は別の周回より約70キロ低かった。フェルスタッペンは、避けるには強いブレーキングが必要で危険になり得たと説明した。",
-   "url": "https://es.motorsport.com/f1/news/por-que-no-sancion-verstappen-adelantar-hamilton-bandera-amarilla/10863553/",
-   "published": "2026-10-09T16:17:00+02:00",
-   "lens": {
-    "type": "分析",
-    "lead": "スチュワード",
-    "focus": "無罰の理由の解説",
-    "cause": "速度差とスロットル操作",
-    "hook": "なぜ罰しなかったか"
-   }
-  },
-  {
-   "id": "es-motorsport-hamilton-wrong-run-plan",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com España",
-   "cat": "予選",
-   "circuit": "singapore",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "hamilton-sq3-plan-error",
-   "title": "ハミルトン、SQ3の走行プランを悔やむ「僕の決断で、間違えた」",
-   "orig": "Hamilton reconoce su error en Singapur: \"Fue decisión mía y nos equivocamos\"",
-   "summary": "ハミルトンはスプリント予選SQ3の走り方について「自分の決断で、我々は間違えた」と認めた。フェラーリは他車と少し違う計画で、ルクレールが2回アタックしたのに対しハミルトンは1回だけで6番手、フェルスタッペンに0.546秒差だった。ソフトでは後輪にグリップがなくリアが不安定で、タイヤの準備不足か過熱か特定できないという。土曜のスプリントでの挽回が求められる。",
-   "url": "https://es.motorsport.com/f1/news/hamilton-declaraciones-viernes-singapur-2026/10863537/",
-   "published": "2026-10-09T15:59:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-verstappen-pole-weak-points",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "sq-verstappen-pole",
-   "title": "フェルスタッペン、ポールに自ら驚く　「RB22の弱点がこのコースで出る」",
-   "orig": "Verstappen verbaast zichzelf met pole: 'Zwakke punten RB22 komen boven'",
-   "summary": "オランダのGPblogによると、フェルスタッペンはスプリントポールを予想しておらず、先頭からのスタートを喜んだ。ソフトタイヤではマシンの反応が良く、予選は僅差だったと振り返っている。レッドブルは直近2戦で大きく進歩したが、シンガポールではRB22の数少ない弱点が表れると語った。ただしSQ1の件で審議を受けており、グリッド降格の可能性が残る。",
-   "url": "https://www.gpblog.com/nl/nieuws/verstappen-verbaast-zichzelf-met-pole-zwakke-punten-rb22-komen-boven",
-   "published": "2026-10-09T15:56:00+02:00"
   }
  ]
 }

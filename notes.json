@@ -1,6 +1,25 @@
 {
- "updatedAt": "2026-10-11T18:30:00+09:00",
+ "updatedAt": "2026-10-12T00:30:00+09:00",
  "notes": [
+  {
+   "id": "note-formula1report-race-singapore",
+   "platform": "note",
+   "site": "F1レポート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "formula1report",
+   "title": "【決勝】フェルスタッペン、無線トラブルを跳ね除けシンガポール初制覇。フェラーリはペース不足に苦しみ、ハミルトンはチグハグな戦略で6位【シンガポールGP】",
+   "summary": "レッドブルがシンガポールで明らかに最速で、フェルスタッペンが無線トラブルがあっても楽に勝ったという見立て。フェラーリはペース不足で、ハミルトンは戦略が噛み合わず6位だったと分析している。アントネッリは3位で選手権首位を守ったが、トラックリミットの問題が繰り返された点を懸念材料に挙げている。",
+   "url": "https://note.com/formula1report/n/n1ac62469b923",
+   "published": "2026-10-11T23:06:30+09:00",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "mercedes"
+   ],
+   "circuit": "singapore"
+  },
   {
    "id": "blog-f1laptime-malaysia-race-pace",
    "platform": "blog",
@@ -790,23 +809,6 @@
    "summary": "近年のピットストップのデータを分析し、ピット作業はチームとドライバーの技量が表れる領域だと論じる。2022年のタイヤ規則変更の影響は小さく、チームは早く適応したとする。中央値より20秒以上遅い失敗はアウディ、ハースで目立つという。",
    "url": "https://f1iq.substack.com/p/how-valuable-are-pitstops-in-formula",
    "published": "2026-09-30T12:00:00+09:00"
-  },
-  {
-   "id": "note-formula1report-aston-honda-malaysia",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "チーム",
-   "author": "Yoshito",
-   "title": "アストンマーティン×ホンダ、9年ぶりのマレーシアで暑さと湿度に挑む。契約延長発表の裏で難しい週末を予想【アゼルバイジャンGP】",
-   "summary": "ホンダの現地責任者・折原伸太郎氏の見立てを軸に、アストンマーティンが9年ぶりのセパンで直面する課題を整理した記事。冷却性能とエアロ効率の両立、湿度による燃焼効率への影響に加え、エンジンデータの最適化が鍵になるとしている。英国ではドライバー・イン・ザ・ループのシミュレーションで準備を進めるという。ストロールとアロンソの契約延長にも触れ、難しい週末になりそうだという見立てを示している。",
-   "url": "https://note.com/formula1report/n/n47b672fd66df",
-   "published": "2026-09-29T20:50:00+09:00",
-   "teams": [
-    "astonmartin"
-   ],
-   "circuit": "sepang"
   }
  ]
 }
