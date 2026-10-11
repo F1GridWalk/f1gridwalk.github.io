@@ -111,6 +111,23 @@ header.top .status{display:none !important}
 .hd-intro{order:5;flex-basis:100%;max-width:none;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:2px 0 0}
 .hd-intro .hi-t>span{display:inline}}
 </style>
+<style>
+/* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
+.bt{display:none}
+@media (max-width:520px){
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
+.bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bt .on{color:var(--ink)}
+.bt .on svg{stroke-width:2.3}
+body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
+@media (max-width:520px){
+body[data-v="news"] #raceweek,body[data-v="news"] #sec-standings,body[data-v="news"] #numbers,body[data-v="news"] #sec-calendar,body[data-v="news"] #teams-band{display:none !important}
+body[data-v="data"] .dash-main,body[data-v="data"] #sec-rules{display:none !important}
+body[data-v="data"] .dash-side{margin-top:6px}
+}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2161,7 +2178,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     if (items.length > 1){ var all = mk('button','clear','すべて解除'); all.type = 'button'; all.addEventListener('click', function(){ state.q = ''; el('q').value = ''; state.kind = 'all'; state.team = 'all'; state.src = 'all'; state.lang = 'all'; renderAll(); }); bar.appendChild(all); }
     return bar;
   }
-  function goNews(){ var n = el('news'); if (n) n.scrollIntoView({ behavior:'smooth', block:'start' }); }
+  function goNews(){ if (window.__gwView) window.__gwView('news'); var n = el('news'); if (n) n.scrollIntoView({ behavior:'smooth', block:'start' }); }
   var qTimer = null;
   el('q').addEventListener('input', function(){ clearTimeout(qTimer); var v = this.value.trim(); qTimer = setTimeout(function(){ state.q = v; renderAll(); }, 150); });
   function renderFilters(list){
@@ -2604,7 +2621,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var l = mk('span'); l.appendChild(document.createTextNode(cpts[k] ? cpts[k].pos + '位 ' : '')); l.appendChild(mk('b', null, cpts[k] ? cpts[k].pts + '点' : '6位以下'));
       r2.appendChild(l); r2.appendChild(mk('span', null, '今週の記事 ' + (cnt[k] || 0) + '本'));
       b.appendChild(r2);
-      b.addEventListener('click', function(){ state.team = state.team === k ? 'all' : k; renderAll(); var n = el('news'); if (n) n.scrollIntoView({ behavior:'smooth', block:'start' }); });
+      b.addEventListener('click', function(){ state.team = state.team === k ? 'all' : k; renderAll(); goNews(); });
       g.appendChild(b);
     });
     // wins
@@ -2919,6 +2936,25 @@ function upd(){tick=false;var y=window.scrollY,d=y-last;if(!mq.matches||y<200){j
 if(d>6){j.classList.add('jm-hide');last=y}else if(d<-6){j.classList.remove('jm-hide');last=y}}
 window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
 j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
+</script>
+<nav class="bt" aria-label="画面の切り替え"><button type="button" data-v="news" class="on" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</button><button type="button" data-v="data" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</button><a href="/columns/" data-track="click/bt/columns"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/deep/rules/" data-track="click/bt/rules"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
+<script>
+(function(){
+  var bar=document.querySelector('.bt'); if(!bar) return;
+  var mq=window.matchMedia('(max-width:520px)');
+  var DATA=['raceweek','sec-standings','numbers','sec-calendar','teams-band'];
+  function set(v,top){ document.body.setAttribute('data-v',v);
+    [].forEach.call(bar.querySelectorAll('button'),function(b){ var on=b.getAttribute('data-v')===v; b.classList.toggle('on',on); b.setAttribute('aria-pressed',on?'true':'false'); });
+    if(top) window.scrollTo(0,0); }
+  window.__gwView=function(v){ if(mq.matches && document.body.getAttribute('data-v')!==v) set(v,false); };
+  [].forEach.call(bar.querySelectorAll('button'),function(b){ b.addEventListener('click',function(){ set(b.getAttribute('data-v'),true); try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:'click/bt/'+b.getAttribute('data-v'),title:'',event:true}); }catch(e){} }); });
+  /* links to news anchors (menu) go back to the news view; links to data sections open the data view */
+  document.addEventListener('click',function(ev){ var a=ev.target.closest&&ev.target.closest('a[href^="#"]'); if(!a||!mq.matches) return; var id=a.getAttribute('href').slice(1);
+    if(DATA.indexOf(id)>=0) set('data',false); else if(id) set('news',false); },true);
+  var start='news'; try{ var q=new URLSearchParams(location.search); if(q.get('v')==='data') start='data'; }catch(e){}
+  if(DATA.indexOf(location.hash.slice(1))>=0) start='data';
+  set(start,false);
+})();
 </script>
 </body>
 </html>
