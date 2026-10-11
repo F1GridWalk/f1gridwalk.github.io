@@ -181,6 +181,10 @@ ul.list a.t:hover{text-decoration:underline}
 .kw-p{display:flex;flex-wrap:wrap;gap:6px}
 .kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
 .kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
+.hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
+.hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
+.hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
+.hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
 footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
 footer p{margin:6px 0}
 @media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
@@ -1948,6 +1952,123 @@ def related_entries(a, allarts, n_terms=4, n_people=3):
     return [x[2] for x in terms[:n_terms]], [x[2] for x in people[:n_people]]
 
 
+# ---- topic hubs: one page per story that pulls the outlets together (prototype, owner's review 12 Oct 2026) ----
+HUBS = {}
+
+
+def load_hubs():
+    d = os.path.join(ROOT, 'topics')
+    if not os.path.isdir(d):
+        return {}
+    for fn in sorted(os.listdir(d)):
+        if fn.endswith('.json'):
+            H = load(os.path.join('topics', fn))
+            if H and H.get('slug') and (not H.get('draft') or os.environ.get('PREVIEW_DRAFTS') == '1'):
+                HUBS[H['slug']] = H
+    return HUBS
+
+
+def hub_for_article(aid):
+    for H in HUBS.values():
+        if any(o['id'] == aid for o in H.get('outlets', [])):
+            return H
+    return None
+
+
+HUB_CSS = '''
+.hub-k{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:22px 0 0;font-size:12.5px;color:var(--muted);letter-spacing:.06em}
+.hub-k b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.24em;color:var(--clay)}
+.hub h1{font-size:clamp(25px,6.4vw,34px);line-height:1.45;margin:10px 0 2px}
+.hub h1 small{display:block;font-size:.55em;color:var(--muted);font-weight:700;margin-top:4px}
+.hub-dek{font-size:16px;line-height:1.95;margin:14px 0 6px}
+.hub-meta{font-size:12px;color:var(--muted);margin:0 0 6px}
+.hub h2{font-size:17px;margin:30px 0 10px;padding-top:16px;border-top:2px solid var(--ink);display:flex;align-items:baseline;gap:10px}
+.hub h2 i{font-style:normal;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.2em;color:var(--clay)}
+.hub ul.dots{margin:0;padding-left:1.2em}.hub ul.dots li{font-size:15.5px;line-height:1.85;margin:4px 0}
+.hub-o{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:12px 14px;margin:10px 0}
+.hub-o .h{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:13px;color:var(--muted)}
+.hub-o .ang{display:block;font-weight:700;font-size:15px;color:var(--ink);margin:6px 0 4px}
+.hub-o ul{margin:0;padding-left:1.1em}.hub-o li{font-size:14.5px;line-height:1.8;margin:3px 0}
+.hub-o .lk{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px}
+.hub-o .nt{font-size:12px;color:var(--muted);margin:6px 0 0}
+.hub-src{font-size:14.5px;line-height:1.85;background:var(--surface);border-left:4px solid var(--clay);border-radius:0 10px 10px 0;padding:10px 14px;margin:0}
+.hub-d{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;margin:0}
+.hub-d dt{font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:1px 10px;height:max-content;white-space:nowrap}
+.hub-d dd{margin:0;font-size:14.5px;line-height:1.8}
+@media (max-width:520px){.hub-d{grid-template-columns:1fr;gap:2px}.hub-d dd{margin-bottom:10px}.hub-d dt{justify-self:start}}
+.hub-q{font-weight:700;font-size:15.5px;margin:0 0 8px}
+.hub-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--clay);border:1px dashed var(--clay);border-radius:999px;padding:0 9px;margin-left:6px}
+.hub-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hub-chips a{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:3px 13px;background:var(--surface);text-decoration:none;color:var(--ink)}
+.hub-todo{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+.hub-up{list-style:none;margin:0;padding:0}.hub-up li{display:grid;grid-template-columns:7.5em 1fr;gap:8px;font-size:14px;line-height:1.7;padding:6px 0;border-bottom:1px solid var(--line)}
+.hub-up time{color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
+.hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
+.hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
+.hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
+.hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+'''
+
+
+def hub_box(H):
+    n = len(H.get('outlets', []))
+    return (f'<a class="hubbox" href="/topics/{e(H["slug"])}/" data-track="click/hub/{e(H["slug"])}"><small>この話題をまとめて読む</small>'
+            f'<b>{e(H["title"])}</b><span>{n}つの報道の共通点・違い・まだ分からないこと →</span></a>')
+
+
+def build_hubs(arch, flag_of):
+    out = []
+    rname = {t['id']: t['term'] for t in (RULES or {}).get('terms', [])}
+    for H in HUBS.values():
+        slug = H['slug']
+        url = f'{SITE}/topics/{slug}/'
+        arts = arch['articles']
+        b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › 話題のまとめ</nav><div class="hub">',
+             f'<p class="hub-k"><b>TOPIC</b><span>{e(H.get("gp", ""))} · 話題のまとめ</span></p>',
+             f'<h1>{e(H["title"])}' + (f'<small>{e(H["sub"])}</small>' if H.get('sub') else '') + '</h1>',
+             f'<p class="hub-dek">{e(H["dek"])}</p>',
+             f'<p class="hub-meta">{len(H["outlets"])}つの報道の原文を {e(H.get("checked", ""))} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。</p>']
+        if H.get('common'):
+            b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
+        b.append('<h2><i>WHAT\'S NEW</i>この記事を読むと増えること</h2>')
+        for o in H['outlets']:
+            a = arts.get(o['id'])
+            if not a:
+                continue
+            lang = LANG.get(a.get('lang'), '')
+            b.append(f'<div class="hub-o"><div class="h"><span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span><span>{e(a.get("region", ""))} · {e(lang)}</span></div>'
+                     f'<span class="ang">{e(o["angle"])}</span><ul>' + ''.join(f'<li>{e(x)}</li>' for x in o['adds']) + '</ul>'
+                     + (f'<p class="nt">{e(o["note"])}</p>' if o.get('note') else '') +
+                     f'<div class="lk"><a href="/news/{e(a["id"])}/">日本語の要約</a><a href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}">原文を読む ↗</a></div></div>')
+        if H.get('sources'):
+            b.append(f'<h2><i>SOURCES</i>情報のもとは同じ？</h2><p class="hub-src">{e(H["sources"])}</p>')
+        if H.get('diffs'):
+            b.append('<h2><i>DIFFERENCES</i>報道の違い</h2><dl class="hub-d">' + ''.join(f'<dt>{e(d["k"])}</dt><dd>{e(d["t"])}</dd>' for d in H['diffs']) + '</dl>')
+        if H.get('unknowns'):
+            b.append('<h2><i>UNKNOWN</i>まだ分からないこと</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['unknowns']) + '</ul>')
+        D = H.get('decision')
+        if D:
+            b.append(f'<h2><i>DECISION</i>その時点で、筋の通った判断だったか<span class="hub-tag">{e(D.get("label", ""))}</span></h2>'
+                     f'<p class="hub-q">{e(D["q"])}</p><dl class="hub-d">' + ''.join(f'<dt>{e(r["k"])}</dt><dd>{e(r["t"])}</dd>' for r in D['rows']) + '</dl>')
+        if H.get('rules') or H.get('todo'):
+            b.append('<h2><i>NEXT</i>次の疑問へ</h2><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))}</a>' for r in H.get('rules', []) if r in rname) + '</div>'
+                     + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
+        if H.get('updates'):
+            def fmt(s):
+                try:
+                    d = datetime.fromisoformat(s).astimezone(JST); return f'{d.month}/{d.day} {d.hour:02d}:{d.minute:02d}'
+                except Exception:
+                    return s
+            b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in H['updates']) + '</ul>')
+        b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>')
+        head = MONO_FONT + f'<style>{HUB_CSS}</style>\n' + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
+                                                              'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                                                              'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
+        write(f'topics/{slug}/index.html', page(f'{H["title"]}｜{H.get("sub", "")}｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head))
+        out.append((url, H.get('checked', '') + 'T09:00:00+09:00', None, '0.7'))
+    return out
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -1957,6 +2078,7 @@ def main():
     arch = load('news/archive.json', {'articles': {}, 'topics': {}})
     load_rules()
     load_deeps()
+    load_hubs()
 
     for a in data.get('articles', []):
         if not ID_OK.match(a.get('id', '')) or not a.get('url', '').startswith('http'):
@@ -2012,6 +2134,9 @@ def main():
                 kw += '<p class="kw-ph">登場する人物</p><div class="kw-p">' + ''.join(f'<a href="{rb_url(x["id"])}" data-track="click/kw/{e(x["id"])}">{e(x["name"])}</a>' for x in kp) + '</div>'
             kw += '<a class="kw-all" href="/deep/rules/">ルールブックで用語を引く →</a></aside>'
             body.append(kw)
+        hb = hub_for_article(a['id'])
+        if hb:
+            body.append(hub_box(hb))
         dg = deep_for_article(a)
         if dg:
             body.append(deep_card(dg))
@@ -2102,6 +2227,7 @@ def main():
     urls += [u for u in build_deeps(arch, flag_map) if u[1]]
     urls += build_all_columns()
     urls += build_rules()
+    urls += build_hubs(arch, flag_of)
     top_rules_slot()
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lm, cf, pr in urls:
