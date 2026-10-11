@@ -194,7 +194,7 @@ def bottom_tabs(canonical):
     """Phone bottom tab bar on every page (owner's choice A, 11 Oct 2026)."""
     path = canonical.replace(SITE, '')
     cur = 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith('/news/') or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
-    items = [('news', '/', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('rule', '/deep/rules/', '用語')]
+    items = [('news', '/#news', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('rule', '/deep/rules/', '用語')]
     return ('<nav class="bt" aria-label="サイト内の移動">' + ''.join(
         f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
 
