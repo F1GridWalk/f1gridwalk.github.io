@@ -1591,6 +1591,17 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 :root{--hl:#FFEE9A}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hl:rgba(230,200,70,.36)}}
 :root[data-theme="dark"]{--hl:rgba(230,200,70,.36)}
+.cmp{margin:8px 0 2px}
+.cmp-btn{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:2px 0;border:0;background:none;font:inherit;font-size:12.5px;font-weight:700;color:var(--clay);cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
+.cmp-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:4px}
+.cmp-ar{font-size:11px;text-decoration:none}
+.cmp-list{list-style:none;margin:4px 0 0;padding:4px 0 0 10px;border-left:3px solid var(--line)}
+.cmp-list li{margin:0}
+.cmp-list a{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px;padding:7px 0;color:var(--ink);text-decoration:none;font-size:13.5px;line-height:1.55;min-width:0}
+.cmp-list a .srcbadge{font-size:11px;flex-shrink:0}
+.cmp-t{flex:1 1 12em;min-width:0;overflow-wrap:anywhere}
+.cmp-list a:hover .cmp-t{text-decoration:underline;text-underline-offset:3px}
+.cmp-more button{min-height:32px;border:0;background:none;padding:2px 0;font:inherit;font-size:12.5px;color:var(--muted);text-decoration:underline;cursor:pointer}
 /* 読み解き (formerly 話題のまとめ) at the top instead of 今週の注目 (owner's decision, 12 Oct 2026) */
 .hubtop{display:flex;flex-direction:column;gap:10px}
 .hero:has(#hub-top) .duo{order:1;margin:18px 0 0}
@@ -2145,6 +2156,45 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     th.appendChild(mk('span','code', langCode(a.lang)));
     return th;
   }
+  /* 「同じ話題をほかの媒体で読む」: other outlets' articles on the same topic, opened inside the card.
+     Counted only on real actions: compare/open/<from> when opened, compare/go/<from>/<to> when a link is followed. */
+  var cmpSeq = 0;
+  function cmpEv(path){ try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path:path, title:'', event:true }); } catch(e){} }
+  function compareBox(a){
+    if (a.isNote || a.kind === 'fan' || !a.topic || !state.byTopic) return null;
+    var seen = {}; seen[a.source] = 1;
+    var others = (state.byTopic[a.topic] || []).filter(function(x){
+      if (x.id === a.id || seen[x.source]) return false;
+      seen[x.source] = 1; return true;
+    });
+    if (!others.length) return null;
+    var box = mk('div','cmp'), id = 'cmp-' + (++cmpSeq);
+    var btn = mk('button','cmp-btn'); btn.type = 'button';
+    btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-controls', id);
+    btn.appendChild(mk('span', null, '同じ話題をほかの媒体で読む'));
+    var ar = mk('span','cmp-ar','▾'); ar.setAttribute('aria-hidden','true'); btn.appendChild(ar);
+    var ul = mk('ul','cmp-list'); ul.id = id; ul.hidden = true;
+    var FIRST = 3;
+    others.forEach(function(x, i){
+      var li = mk('li'); if (i >= FIRST) li.hidden = true;
+      var l = mk('a'); l.href = '/news/' + x.id + '/';
+      l.appendChild(badge(x.source)); l.appendChild(mk('span','cmp-t', x.title));
+      l.addEventListener('click', function(){ cmpEv('compare/go/' + a.id + '/' + x.id); });
+      li.appendChild(l); ul.appendChild(li);
+    });
+    if (others.length > FIRST){
+      var more = mk('li','cmp-more'); var mb = mk('button', null, 'この話題のほかの記事（あと' + (others.length - FIRST) + '本）'); mb.type = 'button';
+      mb.addEventListener('click', function(){ [].forEach.call(ul.querySelectorAll('li[hidden]'), function(n){ n.hidden = false; }); more.remove(); });
+      more.appendChild(mb); ul.appendChild(more);
+    }
+    btn.addEventListener('click', function(){
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', String(open)); ul.hidden = !open; ar.textContent = open ? '▴' : '▾';
+      if (open) cmpEv('compare/open/' + a.id);
+    });
+    box.appendChild(btn); box.appendChild(ul);
+    return box;
+  }
   function card(a){
     var it = mk('article','card');
     it.setAttribute('data-c', colorOf(a.source));
@@ -2164,6 +2214,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     var h = mk('h3'); h.appendChild(artLink(a, a.title)); it.appendChild(h);
     it.appendChild(mk('p', null, a.summary));
     if (a.orig) it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
+    { var cmp = compareBox(a); if (cmp) it.appendChild(cmp); }
     if (a.isNote){ var host = ''; try { host = new URL(a.url).hostname.replace(/^www\./, ''); } catch(e){} var dst = mk('p','note-dest'); dst.appendChild(document.createTextNode('個人の見解です · リンク先 ')); dst.appendChild(extLink(a.url, host + ' ↗')); it.appendChild(dst); }
     var tt = tagsFor(a); if (tt) it.appendChild(tt);
     var foot = mk('div','card-foot');
@@ -2443,6 +2494,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     });
     var all = (d.articles || []).concat(notesAsArts).slice().sort(function(a,b){ return new Date(b.published) - new Date(a.published); });
     state.all = all;
+    // same story, other outlets (読み比べ, owner's OK 13 Oct 2026): news/tech/rumor articles grouped by topic, newest first
+    state.byTopic = {};
+    all.forEach(function(a){ if (a.isNote || a.kind === 'fan' || !a.topic) return; (state.byTopic[a.topic] = state.byTopic[a.topic] || []).push(a); });
     state.srcRegion = {}; all.forEach(function(a){ if (a.region && !state.srcRegion[a.source]) state.srcRegion[a.source] = a.region; });
     state.byUrl = {}; all.forEach(function(a){ state.byUrl[a.url] = a; });
     var tr = trending(all), rest, ht = el('hub-top');
@@ -2925,6 +2979,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 </script>
 
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+/* links marked data-track are counted when followed, as on every other page */
+document.addEventListener('click',function(ev){
+  var a=ev.target.closest&&ev.target.closest('a[data-track]'); if(!a) return;
+  try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}
+});
+</script>
 <script>
 /* count opens from the home-screen icon and new home-screen installs (no personal data) */
 (function(){
