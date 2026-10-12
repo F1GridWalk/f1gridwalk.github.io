@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T00:30:00+09:00",
+ "updatedAt": "2026-10-13T06:30:00+09:00",
  "notes": [
   {
    "id": "note-formula1report-aston-race-analysis-singapore",
@@ -16,6 +16,34 @@
    "teams": [
     "astonmartin"
    ],
+   "circuit": "singapore"
+  },
+  {
+   "id": "blog-f1laptime-singapore-race-pace",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Takumi",
+   "title": "2026年シンガポールGP レースペース分析",
+   "summary": "シンガポールGPで各ドライバーが同じ条件で走った場合のレースペースを、燃料やトラフィックを補正して推定した分析。フェルスタッペンを基準に、ルクレールが約0.3秒、アントネッリが約0.4秒、ノリスが約0.5秒遅れと見積もり、上位4台は0.5秒以内に収まるという。ハミルトンはタイヤの挙動がばらつき、推定の対象外としている。",
+   "url": "https://f1-lap-time.com/?page_id=17625",
+   "published": "2026-10-12T12:00:00+09:00",
+   "circuit": "singapore"
+  },
+  {
+   "id": "blog-albonnote-singapore-race-report",
+   "platform": "blog",
+   "site": "アルボンノート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "アルボンさん",
+   "title": "F1 2026年シーズン第18戦シンガポールGP 決勝リポート ハードタイヤ用無し。",
+   "summary": "決勝を振り返り、フェルスタッペンのレースペースとタイヤの持ちを高く評価している。ソフトの摩耗が予想より大きくルクレールが対抗できなかったとし、ハミルトンの戦略についてはフェラーリに改善を求めた。ローソンの7位を中団の好結果として挙げ、マクラーレンの4・5位は期待に届かなかったという見方だ。",
+   "url": "https://albonnote.com/f1-2026%e5%b9%b4%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e7%ac%ac18%e6%88%a6%e3%82%b7%e3%83%b3%e3%82%ac%e3%83%9d%e3%83%bc%e3%83%abgp-%e6%b1%ba%e5%8b%9d%e3%83%aa%e3%83%9d%e3%83%bc%e3%83%88-%e3%83%8f/",
+   "published": "2026-10-12T12:00:00+09:00",
    "circuit": "singapore"
   },
   {
@@ -56,18 +84,23 @@
    "circuit": "singapore"
   },
   {
-   "id": "blog-f1laptime-malaysia-race-pace",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
+   "id": "substack-f1iq-as-if-it-were-ever-in-doubt",
+   "platform": "substack",
+   "site": "F1 IQ",
+   "lang": "en",
    "paid": false,
-   "cat": "分析",
-   "author": "Takumi",
-   "title": "2026年マレーシアGP レースペース分析",
-   "summary": "マレーシアGPで各ドライバーが同じタイヤ・条件で走った場合の持続的なレースペースを推定した分析。フェルスタッペンが最速で、アントネッリが毎周約0.2秒差、ルクレールとノリスが約0.4秒差、ラッセルが約0.5秒差と見積もっている。中団ではアロンソとコラピントが先頭に並ぶという見立てだ。",
-   "url": "https://f1-lap-time.com/?page_id=17581",
-   "published": "2026-10-05T12:00:00+09:00",
-   "circuit": "sepang"
+   "cat": "決勝",
+   "author": "F1ip",
+   "title": "疑う余地などあっただろうか　シンガポールGP決勝の振り返り",
+   "orig": "As If It Were Ever In Doubt",
+   "summary": "フェルスタッペンが全周をリードしてシンガポール初優勝を飾った決勝を振り返る。フェラーリは戦略を分けたがルクレールのピット出口の順序で崩れ、ハミルトンがVSC中にステイアウトして6位に沈んだと見る。アントネッリのリードは100ポイントを超え、オースティンでの王座決定もあり得るという見立てだ。",
+   "url": "https://f1iq.substack.com/p/as-if-it-were-ever-in-doubt",
+   "published": "2026-10-11T12:00:00+09:00",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "circuit": "singapore"
   },
   {
    "id": "note-formula1report-saturday-analysis-singapore",
@@ -493,6 +526,20 @@
    ]
   },
   {
+   "id": "blog-f1laptime-malaysia-race-pace",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Takumi",
+   "title": "2026年マレーシアGP レースペース分析",
+   "summary": "マレーシアGPで各ドライバーが同じタイヤ・条件で走った場合の持続的なレースペースを推定した分析。フェルスタッペンが最速で、アントネッリが毎周約0.2秒差、ルクレールとノリスが約0.4秒差、ラッセルが約0.5秒差と見積もっている。中団ではアロンソとコラピントが先頭に並ぶという見立てだ。",
+   "url": "https://f1-lap-time.com/?page_id=17581",
+   "published": "2026-10-05T12:00:00+09:00",
+   "circuit": "sepang"
+  },
+  {
    "id": "note-f1report-sepang-race-analysis-aston",
    "platform": "note",
    "site": "Formula1 Report",
@@ -771,48 +818,6 @@
    "summary": "セパンの週末に出る技術資料を整理した記事で、アクティブエアロのストレートモード区間が4か所あること、タイヤはC2〜C4で最低内圧の指定があること、決勝の回生は8.5MJ（オーバーテイク作動時は9MJ）であることなどを紹介。週末中に更新される予定という。",
    "url": "https://somersf1.substack.com/p/2026-bahrain-grand-prix-in-malaysia",
    "published": "2026-10-01T18:00:00+09:00",
-   "circuit": "sepang"
-  },
-  {
-   "id": "note-f1report-thursday-sepang-updates",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【木曜】アロンソのPUに異常なし。ストロールはADUO2投入の効果を語る、各チームのアップデート状況を徹底分析【バーレーンGP】",
-   "summary": "セパン初日の木曜会見をまとめ、アロンソの契約延長への思いやオコンの去就への姿勢、メルセデスなど各チームの空力アップデートの狙いを整理。高温多湿とにわか雨、タイヤ劣化が週末の鍵になるという見立て。",
-   "url": "https://note.com/formula1report/n/ndde19e18ff47",
-   "published": "2026-10-01T12:00:00+09:00",
-   "circuit": "sepang"
-  },
-  {
-   "id": "note-f1report-sepang-weather-heat-hazard",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【天気予報】高温多湿のセパン、最大53℃超の路面温度とスコールが週末を左右か。FIAは「Heat Hazard」を宣言【バーレーンGP】",
-   "summary": "セパンの週末は路面温度が最大53℃を超える見込みで、降水確率は金曜50%、土曜40%、日曜30%と整理。FIAが暑熱警戒を宣言したことを踏まえ、タイヤの熱管理とスコールが鍵になるという見立て。",
-   "url": "https://note.com/formula1report/n/n5fcd100c4b53",
-   "published": "2026-10-01T09:00:00+09:00",
-   "circuit": "sepang"
-  },
-  {
-   "id": "note-f1report-sepang-battery-delivery",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【分析】9年ぶりのセパン、カギを握るのはバッテリーデリバリー。大型アップデートのメルセデスと未知の現行世代マシンを徹底分析【バーレーンGP】",
-   "summary": "現行世代のマシンにはセパンの走行データがなく、金曜のフリー走行が重要になるという見立て。長い直線でのバッテリー展開と回生の配分、大型アップデートを持ち込むメルセデスの出来、午後のスコールが戦略を左右すると分析している。",
-   "url": "https://note.com/formula1report/n/n45daf1b41b4c",
-   "published": "2026-10-01T02:33:55+09:00",
    "circuit": "sepang"
   }
  ]
