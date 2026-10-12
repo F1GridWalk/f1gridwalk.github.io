@@ -329,11 +329,11 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         circ = next((by_id[o['id']].get('circuit') for o in H.get('outlets', []) if by_id.get(o['id'], {}).get('circuit')), '')
         S = H.get('story') or {}
         n_chars = sum(len(x[1]) for x in S.get('body', []) if x[0] == 'p')
-        go_sub = (f'約{round(n_chars / 100) * 100:,}字 · ' if n_chars else '') + f'{len(H.get("outlets", []))}つの報道の共通点と違い'
+        go_sub = f'約{round(n_chars / 100) * 100:,}字 · 約{max(1, round(n_chars / 500))}分で読めます' if n_chars else '共通点・違い・まだ分からないこと'
         hero.append(f'<div class="hubtop" id="hub-top" data-circuit="{e(circ or "")}">'
                     f'<div class="chips"><span class="chip-feature">話題のまとめ</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
                     f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
-                    + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') else '')
+                    + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') and H['sub'] != S.get('title') else '')
                     + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') else '')
                     + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "まとめを読む")}を読む<small>{e(go_sub)}</small></span><b aria-hidden="true">→</b></a>'
                     '</div>')
@@ -2070,7 +2070,7 @@ def latest_hub():
 def hub_box(H):
     n = len(H.get('outlets', []))
     return (f'<a class="hubbox" href="/topics/{e(H["slug"])}/" data-track="click/hub/{e(H["slug"])}"><small>この話題をまとめて読む</small>'
-            f'<b>{e(H["title"])}</b><span>{n}つの報道の共通点・違い・まだ分からないこと →</span></a>')
+            f'<b>{e(H["title"])}</b><span>' + (f'{e(H["story"]["title"])}を読む →' if H.get('story') else f'{n}つの報道の共通点・違い・まだ分からないこと →') + '</span></a>')
 
 
 def build_hubs(arch, flag_of):
