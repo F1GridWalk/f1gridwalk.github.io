@@ -2104,7 +2104,7 @@ def build_hubs(arch, flag_of):
                     + ''.join(f'<a class="sub" href="{e(l["url"])}" target="_blank" rel="noopener">{e(l["label"])} ↗</a>' for l in x.get('links', []))
                     + (f'<small>{e(x["note"])}</small>' if x.get('note') else '') + '</li>' for x in S['sources']) + '</ul></div>')
             sb.append('<p class="hub-st-note">' + ('事実の部分は、上の出典にもとづいています。' if S.get('sources') else '事実の部分は、カッコ内の媒体の報道にもとづいています。')
-                      + '「見解」は編集部の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
+                      + 'それ以外は編集部の読み解きです。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
             b.append(meta.replace('class="hub-meta"', 'class="hub-meta hub-meta-after"'))  # what was checked, shown with the material below the story
         if H.get('common'):
