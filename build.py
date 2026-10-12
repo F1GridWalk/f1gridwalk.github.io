@@ -2039,6 +2039,10 @@ HUB_CSS = '''
 .hub-story p{font-size:16px;line-height:2;margin:0 0 14px;color:var(--ink)}
 .hub-story p.hub-by{font-size:12.5px;line-height:1.6;color:var(--muted)}
 .hub-story .cite{font-size:11.5px;color:var(--muted);white-space:nowrap}
+.hub-story .hub-kw{margin:24px 0 0}
+.hub-story .kw-h{font-size:14px;line-height:1.5;margin:0 0 4px;color:var(--ink)}
+.hub-story .kw-p{margin-top:8px}
+.hub-story .hub-kw-n{font-size:12px;line-height:1.6;color:var(--muted);margin:10px 0 0}
 .hub-st-src{margin:22px 0 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .hub-st-src .k{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 6px}
 .hub-st-src ul{list-style:none;margin:0;padding:0}
@@ -2058,6 +2062,41 @@ HUB_CSS = '''
 STORY_CITE = re.compile(r'(（(?:The Race|GPblog|Motorsport\.com|F1公式[^）]{0,20})）)')
 
 
+def story_links(txt, used, extra):
+    """Rulebook links inside a 読み解き paragraph: first the story's own phrase→entry pairs
+    (story["terms"], for words the dictionary name does not match, e.g. ピットロス, コースに残る),
+    then the usual automatic links outside those."""
+    h = e(txt)
+    ids = {t['id'] for t in (RULES or {}).get('terms', [])}
+    for phrase, tid in sorted(extra or [], key=lambda x: -len(x[0])):
+        if tid in used or tid not in ids:
+            continue
+        ph = e(phrase)
+        spans = [(m.start(), m.end()) for m in re.finditer(r'<a [^>]*>.*?</a>', h)]
+        i = h.find(ph)
+        while i >= 0 and any(a <= i < b for a, b in spans):
+            i = h.find(ph, i + 1)
+        if i >= 0:
+            h = h[:i] + f'<a class="term" href="/deep/rules/{tid}/" data-term="{tid}">{ph}</a>' + h[i + len(ph):]
+            used.add(tid)
+    return link_terms_html(h, used)
+
+
+def story_terms_box(html):
+    """「この記事に出てくる用語」: every rulebook entry linked in the story, in reading order."""
+    info = {t['id']: (t['term'], t['cat'], t['short']) for t in (RULES or {}).get('terms', [])}
+    info.update({'person-' + p['id']: (p['name'], '人物', p['short']) for p in PEOPLE})
+    seen = []
+    for tid in re.findall(r'data-term="([^"]+)"', html):
+        if tid in info and tid not in seen:
+            seen.append(tid)
+    if not seen:
+        return ''
+    return ('<aside class="kw hub-kw" aria-label="この記事に出てくる用語"><p class="kw-h">この記事に出てくる用語<small>F1 Grid Walk ルールブックより</small></p>'
+            + '<div class="kw-p">' + ''.join(f'<a href="{rb_url(t)}" data-track="click/hub-kw/{e(t)}">{e(re.sub(r"（.*?）", "", info[t][0]))}</a>' for t in seen)
+            + '</div><p class="hub-kw-n">本文の下線の言葉をタップすると、その場で意味が読めます。</p></aside>')
+
+
 def latest_hub():
     """The newest published topic hub (by its latest update, then checked date), shown at the top of the top page."""
     if not HUBS:
@@ -2066,6 +2105,12 @@ def latest_hub():
         ups = [u.get('at', '') for u in H.get('updates', [])]
         return (max(ups) if ups else '', H.get('checked', ''))
     return max(HUBS.values(), key=key)
+
+
+def next_html(H, rname):
+    return ('<h2><i>NEXT</i>次の疑問へ</h2>' + ''.join(
+        f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div></div>' for n in H['next'])
+        + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
 
 
 def hub_box(H):
@@ -2097,7 +2142,8 @@ def build_hubs(arch, flag_of):
             sb = [f'<section class="hub-story" aria-label="{e(S["title"])}"><h2><i>STORY</i>{e(S["title"])}</h2>',
                   f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))} · 約{round(n / 100) * 100:,}字 · 約{max(1, round(n / 500))}分で読めます</p>']
             for kind, txt in S['body']:
-                sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', link_terms(e(txt), used)) + '</p>')
+                sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', story_links(txt, used, S.get('terms'))) + '</p>')
+            sb.append(story_terms_box(''.join(sb)))  # the story's words, tied to the rulebook (owner, 12 Oct 2026)
             if S.get('sources'):  # sources listed once at the end, not inside the text (owner's decision, 12 Oct 2026)
                 sb.append('<div class="hub-st-src"><p class="k">出典</p><ul>' + ''.join(
                     f'<li><b>{e(x["name"])}</b><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["title"])} ↗</a>'
@@ -2106,6 +2152,8 @@ def build_hubs(arch, flag_of):
             sb.append('<p class="hub-st-note">' + ('事実の部分は、上の出典にもとづいています。' if S.get('sources') else '事実の部分は、カッコ内の媒体の報道にもとづいています。')
                       + 'それ以外は編集部の読み解きです。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
+            if H.get('next'):
+                b.append(next_html(H, rname))  # questions → rulebook, straight after the story
             b.append(meta.replace('class="hub-meta"', 'class="hub-meta hub-meta-after"'))  # what was checked, shown with the material below the story
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
@@ -2139,9 +2187,8 @@ def build_hubs(arch, flag_of):
             b.append(f'<h2><i>DECISION</i>その時点で、筋の通った判断だったか<span class="hub-tag">{e(D.get("label", ""))}</span></h2>'
                      f'<p class="hub-q">{e(D["q"])}</p><dl class="hub-d">' + ''.join(f'<dt>{e(r["k"])}</dt><dd>{e(r["t"])}</dd>' for r in D['rows']) + '</dl>')
         if H.get('next'):
-            b.append('<h2><i>NEXT</i>次の疑問へ</h2>' + ''.join(
-                f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div></div>' for n in H['next'])
-                + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
+            if not H.get('story'):
+                b.append(next_html(H, rname))
         elif H.get('rules') or H.get('todo'):
             b.append('<h2><i>NEXT</i>次の疑問へ</h2><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))}</a>' for r in H.get('rules', []) if r in rname) + '</div>'
                      + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
@@ -2153,7 +2200,7 @@ def build_hubs(arch, flag_of):
                     return s
             b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in H['updates']) + '</ul>')
         b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>' + term_assets(used))
-        head = MONO_FONT + f'<style>{HUB_CSS}</style>\n' + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
+        head = MONO_FONT + f'<style>{HUB_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
         write(f'topics/{slug}/index.html', page(f'{H["title"]}｜{H.get("sub", "")}｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head))
