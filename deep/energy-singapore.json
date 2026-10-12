@@ -1,0 +1,574 @@
+{
+ "slug": "energy-singapore",
+ "no": 10,
+ "draft": true,
+ "title": "シンガポールで、電気はなぜ「迷子」になったのか",
+ "dek": "シンガポールGPの決勝のあと、優勝したフェルスタッペン、16位のアロンソ、14位のサインツが、そろって「電気の出し方」の不調を口にした。アロンソは「車は、コースのどこにいるのか正確には分かっていなかったと思う」と話している。2026年のパワーユニットは、電気をどこでため、どこで使うのか。分かっていることと、まだ分からないことを分けてほどく。",
+ "published": "2026-10-12T18:00:00+09:00",
+ "themes": [
+  "パワーユニット",
+  "エネルギー",
+  "サーキット"
+ ],
+ "circuit": "singapore",
+ "teams": [
+  "redbull",
+  "astonmartin",
+  "williams"
+ ],
+ "topics": [
+  "alonso-singapore-pu-change",
+  "sq-overtake-mode-error",
+  "malaysia-software-bug-fix",
+  "sepang-energy-management"
+ ],
+ "quick": [
+  "2026年のパワーユニットは、力の半分近くを電気に頼る。後輪を押すモーター（MGU-K）は最大350kWで、2025年までの120kWの約3倍になった。ただし、1周でためられる電気には上限がある。どこでためて、どこで使うかのやりくりが、速さを分ける。",
+  "シンガポールの決勝では、優勝したフェルスタッペンも、序盤の数周は電気がうまく出なかった。2位のルクレールは「一度きりのことだと思っていたので、バッテリーをあまり使っていなかった。それは間違いだったのかもしれない」と振り返っている。",
+  "アロンソは「必要のない所で電気が出て、直線では出なかった」と話し、サインツも最初の5周は電池の不調だった。3人のパワーユニットは、フォード、ホンダ、メルセデスと、メーカーがばらばらだ。",
+  "電気の出し方は、チームのやりくりだけでは決まらない。FIAがコースの区間ごとに出力の上限を決めていて、今季はFIA側のミスでも車の力が変わった。セパンの決勝前にはソフトの誤り、シンガポールのスプリント予選では人為ミスがあった。",
+  "「車がコースのどこにいるか正確には分かっていなかった」が、仕組みのうえで何を指すのかは、公開された情報ではまだ確かめられない。ホンダもアストンマーティンも、原因を説明していない。"
+ ],
+ "sections": [
+  {
+   "h": "決勝で、何が起きたのか",
+   "body": [
+    {
+     "p": "スタートでは、ルクレールが1コーナーの手前で横に並んだが、ポールのフェルスタッペンが先頭を守った。そのあとの数周、フェルスタッペンの車は電気をうまく出せなかった。決勝のあとの記者会見で、本人はこう説明している。"
+    },
+    {
+     "quote": "クラッチをつなぐ前から、感触がよくなかった。そのあと何周か、デプロイ（電気の出し方）の問題があった。それで、7コーナーでシャルルにもう少しで抜かれるところだった。デプロイの問題が片づいてからは、問題なかった",
+     "who": "フェルスタッペン（レッドブル）"
+    },
+    {
+     "p": "GrandPrix.comのレース分析も、フェルスタッペンは最初の3周、電気の力をうまく出せず、ルクレールに7コーナーへのチャンスを与えたと書いている。ルクレールは同じ記者会見で、こう振り返った。"
+    },
+    {
+     "quote": "最初の3周、マックスにデプロイの問題があったときに、何度かチャンスはあった。でも、一度きりのことだと思っていたので、バッテリーをあまり使っていなかった。それは間違いだったのかもしれない",
+     "who": "ルクレール（フェラーリ）"
+    },
+    {
+     "quote": "直線の終わりで彼にパワーがないと気づいたときには、もう何もできなかった。自分のパワーを使うには遅すぎた",
+     "who": "ルクレール（フェラーリ）"
+    },
+    {
+     "p": "電気の不調を口にしたのは、フェルスタッペンだけではなかった。ピットレーンから出て16位だったアロンソは、レース中の無線でこう言っている（英PlanetF1）。"
+    },
+    {
+     "quote": "ハハ。エネルギーだ。このエンジンは本当にばかげている",
+     "who": "アロンソ（アストンマーティン）"
+    },
+    {
+     "p": "レースのあと、アロンソは英語で「レースでは電気の出し方の問題がたくさんあった。正しい場所で、正しいタイミングで出ていなかった。とくにバーチャルセーフティカーのあとだ」と話した（PlanetF1）。スペインのメディアには、もう一歩踏み込んでいる（Motor.es、MotorTime）。スペイン語の記事では、問題が出たのは「バーチャルセーフティカーのあいだ」となっている。"
+    },
+    {
+     "quote": "車は、コースのどこにいるのか正確には分かっていなかったと思う。必要のない所で電気が出て、直線では出なかった",
+     "who": "アロンソ（アストンマーティン）。Motor.esより。MotorTimeでは「正確には」がない"
+    },
+    {
+     "p": "アロンソは「このコースに特有の問題のように見える。答えはまだない」とも話し、セパンやバクーではこの問題はなかったとしている。14位のサインツは、スペインのDAZNに「最初の5周でバッテリーの問題があった。問題が落ち着いたときには、入賞できるペースはなかった」と話した。"
+    },
+    {
+     "table": {
+      "head": [
+       "ドライバー",
+       "チーム（PU）",
+       "本人が話したこと",
+       "いつ"
+      ],
+      "rows": [
+       [
+        "フェルスタッペン（1位）",
+        "レッドブル（フォード）",
+        "デプロイの問題で、7コーナーで抜かれかけた",
+        "序盤の数周"
+       ],
+       [
+        "アロンソ（16位）",
+        "アストンマーティン（ホンダ）",
+        "必要のない所で電気が出て、直線で出なかった",
+        "バーチャルセーフティカーのころ"
+       ],
+       [
+        "サインツ（14位）",
+        "ウィリアムズ（メルセデス）",
+        "バッテリーの問題",
+        "最初の5周"
+       ]
+      ],
+      "note": "出典：GrandPrix.com（決勝後の記者会見の書き起こし、レース分析）、PlanetF1、Motor.es、MotorTime、DAZN（Motor.es経由）。"
+     }
+    },
+    {
+     "p": "3人のチームとも、レースのあとに技術的な原因を説明していない。レッドブルの発表文でフェルスタッペンは「無線が使えなかったことも含めて、いくつか対処する問題があった」と話しているだけだ。"
+    }
+   ]
+  },
+  {
+   "h": "2026年の電気は、どう働くのか",
+   "body": [
+    {
+     "p": "2026年のパワーユニットは、燃料で回すエンジン（ICE）と、後輪を押すモーター（MGU-K）の力が、半々に近い。MGU-Kの最大出力は350kWで、2025年までの120kWから大きく増えた（F1公式サイト、ホンダ）。一方で、排気の熱から発電していたMGU-Hはなくなり、電気はおもにブレーキで減速するときにつくる。"
+    },
+    {
+     "p": "電気をためる場面は、ブレーキのとき、アクセルを戻したとき、アクセルを半分だけ踏んでいるとき。それに、アクセル全開のまま直線の終わりなどで発電に回す「スーパークリッピング」がある（F1公式サイト、The Race）。"
+    },
+    {
+     "p": "使うほうにも決まりがある。スタートでは、時速50kmになるまでMGU-Kを使えない（GPFans、The Race）。速くなると出力は絞られ、ふだんは時速290kmから下がり始める（The Race）。技術規則の式では、時速345kmで0になる（GPFans、Mayahtt）。前の車に1秒以内まで近づくと使える「オーバーテイクモード」では、時速337km前後まで350kWを保てる（The Race）。"
+    },
+    {
+     "chart": {
+      "kind": "hbar",
+      "title": "ふだんのMGU-Kの最大出力と速度（kW）",
+      "labelWidth": 110,
+      "rows": [
+       {
+        "label": "290km/hまで",
+        "v": 350,
+        "text": "350kW"
+       },
+       {
+        "label": "300km/h",
+        "v": 300,
+        "text": "300kW"
+       },
+       {
+        "label": "320km/h",
+        "v": 200,
+        "text": "200kW"
+       },
+       {
+        "label": "340km/h",
+        "v": 100,
+        "text": "100kW"
+       },
+       {
+        "label": "345km/h以上",
+        "v": 0,
+        "text": "0kW"
+       }
+      ],
+      "note": "出典：GPFans、Mayahtt（2026年の技術規則の式）、The Race。各速度の値は、規則の式から編集部が計算した。5月のマイアミからは、決勝では加速の大事な区間を除き250kWまでに絞られた（FIA）。"
+     }
+    },
+    {
+     "p": "ためられる量にも上限がある。基本は1周8.5MJで、FIAはコースごとに、5MJから9MJのあいだで上限を変えられる（ホンダ、The Race）。この「1周で回生できる量」は、計測ラインを越えるたびに数え直される（The Race）。"
+    },
+    {
+     "p": "今季は、この決まりが何度も手直しされた。4月にFIAが発表した変更では、5月のマイアミから、決勝のMGU-Kは「加速の大事な区間では350kWを保ち、それ以外の区間では250kWまで」になった。つまり、同じ1周の中でも、区間によって使える力が違う。"
+    }
+   ]
+  },
+  {
+   "h": "シンガポールは「ためやすい」コースだった",
+   "body": [
+    {
+     "p": "電気に困るのは、長い直線が多く、ブレーキの場面が少ないコースだ。The Raceは、モンツァを「とても長い直線と、エネルギーを回収できる数少ないコーナー」のコースと書いている。逆にマリーナベイは、1周に15回のブレーキがある（ブレンボの2023年のデータ）。"
+    },
+    {
+     "p": "ウィリアムズのチーフ・トラックサイドエンジニア、ポール・ウィリアムズは、週末の前にチームが出した技術の解説で、こう話していた。"
+    },
+    {
+     "quote": "基本的には、電気をフルに使える。ラップタイムがエネルギーに左右される度合いは、とても小さい",
+     "who": "ポール・ウィリアムズ（ウィリアムズ）"
+    },
+    {
+     "p": "ウィリアムズは同じ解説で、1周のどこで回生するかの配分が、ターボの遅れを補う鍵になるとも話している。マリーナベイは、電気の量そのものに困るコースではなかった。"
+    },
+    {
+     "view": "F1 Grid Walk編集部としては、シンガポールの不調は「電気が足りない」ことではなく、「どこで出すか」の側で起きたのではないかと見ています。アロンソの「必要のない所で出て、直線では出なかった」という言葉も、量ではなく場所の話でした。ただし、これはチームが説明した原因ではありません。"
+    }
+   ]
+  },
+  {
+   "h": "FIAの設定でも、車の力は変わる",
+   "body": [
+    {
+     "p": "電気の出し方は、チームの設定だけで決まるわけではない。その一部は、全車に共通のソフトで決まっている。FIAのトンバジスは、セパンで問題になったコードを「全車に共通の標準のコード」の一部だと説明している（The Race）。最近、そのFIA側で2度、車の力が変わる出来事があった。"
+    },
+    {
+     "p": "1度目は、10月4日のセパンの決勝の前だ。雨のフォーメーションラップで、何台もの車の力が抜けた。FIAは、低いエンジン回転、滑りやすい路面、雨のときのエネルギー管理の設定、それにセパンの区間の分け方が重なって、意図しない出力の低下が起きたと説明した。対策として、FIAは問題の区間の「エネルギーの上限」を外した。FIAのシングルシーター部門の責任者、ニコラス・トンバジスはこう話している。"
+    },
+    {
+     "quote": "雨のときのための、ソフトの特別な設定がある。そのソフトに誤りがあった",
+     "who": "トンバジス（FIA）"
+    },
+    {
+     "p": "2度目は、シンガポールのスプリント予選のSQ1だ。赤旗のあと、レースコントロールの人為ミスで、オーバーテイクモードが使えないままになった。FIAによると、気づいたあとに27秒だけ使えるようにして、また止めた。FIAは「走ったタイミングと、コース上の位置によって、一部の車の速さに影響した」と認めている。"
+    },
+    {
+     "p": "2度目は、シンガポールのスプリント予選のSQ1だ。赤旗のあと、レースコントロールの人為ミスで、オーバーテイクモードが使えないままになった。FIAによると、その後27秒だけ使えるようにして、また止めた。FIAは「走ったタイミングと、コース上の位置によって、一部の車の速さに影響した」と認めている。"
+    },
+    {
+     "view": "F1 Grid Walk編集部としては、2026年の電気は「どれだけためられるか」より「1周のどの区間で、どれだけ出せるか」の勝負になったと見ています。その区間ごとの決まりは、チームの設定とFIAのソフトの両方でできている。セパンとシンガポールのFIAのミスは、その仕組みが、ちょっとした食い違いで車の力を大きく変えてしまうことを見せた出来事でした。",
+     "p": "どれだけ影響したかについては、見方が分かれる。サインツは「半分の車が、ほかより0.5秒速いエンジンで走った」と話した（Crash.net）。一方、英The Raceは、データを見るかぎり、ウィリアムズは直線で損をしていなかったようだと書いている。抗議の期限については、金曜の特別号（https://f1gridwalk.github.io/lens/singapore-2026-fri/ ）で取り上げた。"
+    }
+   ]
+  },
+  {
+   "h": "「どこにいるか分からない」は、何を意味するのか",
+   "body": [
+    {
+     "p": "アロンソの「車はコースのどこにいるのか正確には分かっていなかった」は、本人の感覚を言葉にしたものだ。仕組みのうえで何が起きていたのかは、公開された情報ではまだ確かめられない。分かっていることと、分からないことを分けておく。"
+    },
+    {
+     "p": "分かっていること。2026年は、1周の中の区間ごとに使える電気の力が違う。マイアミでは、FIAが1〜8コーナーと11〜16コーナーに出力の上限をかけた（The Race）。1周で回生できる量は、計測ラインを越えるたびに数え直される。アロンソは、問題がとくにバーチャルセーフティカーのころに出たと話している（英語では「あと」、スペイン語の記事では「あいだ」）。"
+    },
+    {
+     "p": "分からないこと。車が、自分が今どの区間にいるかを何で判断しているのか。バーチャルセーフティカーで速さが落ちたことが、それに関係するのか。なぜフェルスタッペンやサインツの不調は序盤の数周だけで、アロンソはそのあとも続いたのか。ホンダもアストンマーティンも、原因はまだ説明していない。"
+    },
+    {
+     "view": "ここからは推測です。区間ごとに電気の出し方を変える2026年の車にとって、「今どこを走っているか」の数え方がずれれば、電気は要らない所で出て、要る所で出ない。アロンソの言葉は、そうした食い違いを感じたものなのかもしれません。ただし、これを裏づける説明は、まだどこからも出ていません。次のアメリカGP（10月23〜25日）では、FIAが雨のときのための新しいソフトを入れる予定です。バーチャルセーフティカーのあとに、同じような不調の声が出るかどうかを見ておきたいところです。"
+    }
+   ]
+  }
+ ],
+ "deep": [
+  {
+   "h": "電気の決まりの主な数字",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "項目",
+       "数字",
+       "出典"
+      ],
+      "rows": [
+       [
+        "MGU-Kの最大出力",
+        "350kW（2025年までは120kW）",
+        "F1公式サイト、ホンダ"
+       ],
+       [
+        "スタートでMGU-Kが使える速さ",
+        "時速50kmから",
+        "GPFans、The Race"
+       ],
+       [
+        "ふだんの出力が下がり始める速さ",
+        "時速290km（規則の式では345kmで0）",
+        "The Race、GPFans、Mayahtt"
+       ],
+       [
+        "オーバーテイクモードで350kWを保てる速さ",
+        "時速337km前後まで（355kmで0）",
+        "F1公式サイト、The Race、GPFans"
+       ],
+       [
+        "1周で回生できる量（基本）",
+        "8.5MJ",
+        "ホンダ、The Race"
+       ],
+       [
+        "FIAがコースごとに決められる範囲",
+        "5〜9MJ",
+        "The Race"
+       ],
+       [
+        "オーバーテイクモードの上乗せ",
+        "0.5MJ",
+        "F1公式サイト、The Race"
+       ],
+       [
+        "オーバーテイクモードが使える条件",
+        "検知地点（ふつうは最終コーナー）で前の車と1秒以内なら、次の周に",
+        "F1公式サイト"
+       ]
+      ],
+      "note": "速度の数字は、2026年の技術規則の式をもとにした解説記事による。オーバーテイクモードの0.5MJが「回生」の上乗せか「使う量」の上乗せかは、記事によって書き方が違う。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "今季の主な手直し",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "いつ",
+       "何が変わったか",
+       "出典"
+      ],
+      "rows": [
+       [
+        "10月8日",
+        "FIAがセパンの出力低下の調査結果を発表。シンガポールで雨なら、セパンで作った暫定の設定を使う。アメリカGPで、雨のときの新しいソフトを入れる予定",
+        "RACER"
+       ],
+       [
+        "5月（マイアミから）",
+        "決勝のMGU-Kは、加速の大事な区間で350kW、それ以外で250kWまで。決勝のブーストは最大＋150kW。スーパークリッピングの上限を250kWから350kWに。フォーメーションラップの開始で回生の数え直しをすることは、マイアミで試すと発表",
+        "FIA（4月20日発表）"
+       ],
+       [
+        "3月（日本GP）",
+        "予選の回生の上限を9MJから8MJに",
+        "The Race"
+       ]
+      ],
+      "note": "FIAの4月の発表には「回生の上限を8MJから7MJに」ともあるが、PlanetF1は、すべてのコースで一律に下がるわけではないと説明している（マイアミは練習と決勝が9MJ、予選が8MJ）。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "コースごとの予選の回生の上限（The Raceの予想）",
+   "body": [
+    {
+     "chart": {
+      "kind": "hbar",
+      "title": "予選で1周に回生できる量（MJ）",
+      "labelWidth": 110,
+      "rows": [
+       {
+        "label": "シンガポール",
+        "v": 9,
+        "text": "9MJ"
+       },
+       {
+        "label": "モナコ",
+        "v": 9,
+        "text": "9MJ"
+       },
+       {
+        "label": "ハンガリー",
+        "v": 9,
+        "text": "9MJ"
+       },
+       {
+        "label": "ブラジル",
+        "v": 6.5,
+        "text": "6.5MJ"
+       },
+       {
+        "label": "カナダ",
+        "v": 6,
+        "text": "6MJ"
+       },
+       {
+        "label": "オーストリア",
+        "v": 6,
+        "text": "6MJ"
+       },
+       {
+        "label": "ラスベガス",
+        "v": 6,
+        "text": "6MJ"
+       },
+       {
+        "label": "イタリア（モンツァ）",
+        "v": 5,
+        "text": "5MJ"
+       }
+      ],
+      "note": "出典：The Race（5月2日）。FIAが発表した数字ではなく、The Raceの予想。FIAは遅くとも各レースの4週間前までに上限を決める。3月の時点の記事では、モンツァは6.5MJとされていた。"
+     }
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "デプロイ（ディプロイメント）",
+   "ためた電気を、MGU-Kで後輪の力にすること。"
+  ],
+  [
+   "回生",
+   "ブレーキなどで減速するときの力を電気に変えて、電池にためること。"
+  ],
+  [
+   "MJ（メガジュール）",
+   "エネルギーの量の単位。2026年は、1周で回生できる電気の量をMJで決めている。"
+  ],
+  [
+   "スーパークリッピング",
+   "アクセル全開のまま、モーターを発電に回すこと。電気はたまるが、最高速は落ちる。"
+  ],
+  [
+   "オーバーテイクモード",
+   "前の車に1秒以内まで近づいた車が、次の周に電気を多く使える仕組み。"
+  ],
+  [
+   "計測ライン",
+   "ラップタイムを区切る線。1周で回生できる量も、ここを越えるたびに数え直される。"
+  ]
+ ],
+ "sources": [
+  {
+   "name": "GrandPrix.com",
+   "title": "Singapore GP 2026: Sunday press conference",
+   "url": "https://www.grandprix.com/races/singapore-gp-2026-sunday-press-conference.html"
+  },
+  {
+   "name": "GrandPrix.com",
+   "title": "Singapore GP 2026: race analysis",
+   "url": "https://www.grandprix.com/races/singapore-gp-2026-race-analysis.html"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "What the teams said: race day in Singapore 2026",
+   "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-singapore-2026.3lLHolVW3aIRAl7Ohxlxf6"
+  },
+  {
+   "name": "GPblog",
+   "title": "Verstappen reveals issues that might have cost him his Singapore GP victory",
+   "url": "https://www.gpblog.com/en/news/verstappen-reveals-issues-that-might-have-cost-him-his-singapore-gp-victory"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Fernando Alonso: Honda engine, 2026 Singapore Grand Prix",
+   "url": "https://www.planetf1.com/news/fernando-alonso-honda-engine-f1-2026-singapore-grand-prix"
+  },
+  {
+   "name": "MotorTime",
+   "title": "Alonso explica sus problemas de despliegue en Singapur",
+   "url": "https://www.motortime.es/2026/10/alonso-explica-sus-problemas-de-despligue-en-singapur-el-coche-no-sabia-en-que-parte-del-circuito-se-encontraba/"
+  },
+  {
+   "name": "Motor.es",
+   "title": "Alonso vuelve a estallar contra Honda: «Este motor es ridículo»",
+   "url": "https://www.motor.es/formula-1/alonso-vuelve-estallar-honda-motor-ridiculo-singapur-2026116954.html"
+  },
+  {
+   "name": "Motor.es",
+   "title": "Sainz soñó con los puntos... en la primera vuelta",
+   "url": "https://www.motor.es/formula-1/singapur-sainz-declaraciones-2026116956.html"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "Explained: 2026 power unit regulations",
+   "url": "https://www.formula1.com/en/latest/article/explained-2026-power-unit-regulations-fia.68izKQ2tn1voQPWvgLVMXN"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "Explained: the new key terms for Formula 1's new for 2026 rules",
+   "url": "https://www.formula1.com/en/latest/article/explained-the-new-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+  },
+  {
+   "name": "ホンダ",
+   "title": "2026年のレギュレーション解説",
+   "url": "https://global.honda/en/F1/features/2026_Commentary/regulations/"
+  },
+  {
+   "name": "The Race",
+   "title": "Boost, overtake mode, active aero, recharge: key 2026 terms explained",
+   "url": "https://www.the-race.com/formula-1/boost-overtake-mode-active-aero-recharge-key-2026-terms-explained"
+  },
+  {
+   "name": "The Race",
+   "title": "Six weirdest things about F1 2026 cars explained",
+   "url": "https://www.the-race.com/formula-1/six-weirdest-things-about-f1-2026-cars-explained/"
+  },
+  {
+   "name": "The Race",
+   "title": "Super clipping: how it works and why it's controversial",
+   "url": "https://www.the-race.com/formula-1/super-clipping-how-it-works-why-controversial-key-f1-2026/"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 2026 track energy rankings",
+   "url": "https://www.the-race.com/formula-1/f1-2026-track-energy-rankings-chinese-gp-will-be-different"
+  },
+  {
+   "name": "The Race",
+   "title": "F1's new energy rankings for qualifying revealed",
+   "url": "https://www.the-race.com/formula-1/f1s-new-energy-rankings-for-qualifying-revealed/"
+  },
+  {
+   "name": "The Race",
+   "title": "Revealed: how F1 engine limits are actually more complex in Miami",
+   "url": "https://www.the-race.com/formula-1/revealed-how-f1-engine-limits-are-actually-more-complex-in-miami/"
+  },
+  {
+   "name": "The Race",
+   "title": "Late Japanese GP rule change",
+   "url": "https://www.the-race.com/formula-1/late-japanese-gp-f1-2026-rule-change-qualifying-energy-saving-fears"
+  },
+  {
+   "name": "The Race",
+   "title": "Canadian GP: F1 cars' energy demands",
+   "url": "https://the-race.com/formula-1/canadian-gp-2026-f1-cars-energy-demands/"
+  },
+  {
+   "name": "The Race",
+   "title": "The quirky rule adding to early F1 2026 race start chaos",
+   "url": "https://www.the-race.com/formula-1/the-quirky-rule-adding-to-early-f1-2026-race-start-chaos"
+  },
+  {
+   "name": "The Race",
+   "title": "FIA error left some drivers without full power in sprint qualifying",
+   "url": "https://www.the-race.com/formula-1/fia-error-left-some-drivers-without-full-power-in-sprint-qualifying/"
+  },
+  {
+   "name": "GPFans",
+   "title": "F1-motorreglement in 2026 op de schop: dit is het in detail uitgelegd",
+   "url": "https://www.gpfans.com/nl/f1-nieuws/1073119/f1-motorreglement-in-2026-op-de-schop-dit-is-het-in-detail-uitgelegd-gpfans-special/"
+  },
+  {
+   "name": "Mayahtt",
+   "title": "Chasing 400 km/h: how fast will the 2026 F1 cars be?",
+   "url": "https://www.mayahtt.com/blog/chasing-400-kmh-how-fast-will-the-2026-f1-cars-be/"
+  },
+  {
+   "name": "FIA",
+   "title": "Refinements to 2026 FIA Formula 1 regulations agreed by all stakeholders",
+   "url": "https://api.fia.com/news/refinements-2026-fia-formula-1-regulations-agreed-all-stakeholders"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "FIA Miami GP energy recharge rules clarification",
+   "url": "https://www.planetf1.com/news/fia-miami-gp-energy-recharge-rules-no-reduction-update-clarification"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Singapore Grand Prix 2026 sprint qualifying engine issue",
+   "url": "https://www.planetf1.com/news/singapore-grand-prix-2026-sprint-qualiffying-engine-issue"
+  },
+  {
+   "name": "Autosport",
+   "title": "Human error caused Singapore GP sprint qualifying glitch",
+   "url": "https://www.autosport.com/f1/news/human-error-caused-singapore-gp-sprint-qualifying-glitch/10863502/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Carlos Sainz slams FIA after human error left drivers with power inequality",
+   "url": "https://www.crash.net/f1/news/1106883/1/carlos-sainz-slams-fia-after-human-error-left-drivers-power-inequality-sprint"
+  },
+  {
+   "name": "RACER",
+   "title": "FIA explains software glitch behind delayed start",
+   "url": "https://racer.com/2026/10/04/fia-explains-software-glitch-behind-delayed-bahrain-gp-in-malaysia-start"
+  },
+  {
+   "name": "RACER",
+   "title": "FIA concludes investigation into software glitch",
+   "url": "https://racer.com/2026/10/08/fia-concludes-investigation-into-bahrain-gp-software-glitch"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA statement on the delayed start at Sepang",
+   "url": "https://www.gpfans.com/en/f1-news/1091100/f1-fia-statement-bahrain-grand-prix-malaysia-sepang-delayed-start-software-issue-chaos/"
+  },
+  {
+   "name": "ウィリアムズ",
+   "title": "Technical brief: Singapore",
+   "url": "https://www.williamsf1.com/articles/dccd5c43-2e15-43ba-ab1d-250f4dbc46c0/technical-brief-singapore"
+  },
+  {
+   "name": "The Brake Report",
+   "title": "Singapore GP rated tough on brakes (2023)",
+   "url": "https://thebrakereport.com/singapore-gp-rated-tough-on-brakes/"
+  },
+  {
+   "name": "The Race",
+   "title": "The software bug that triggered F1's Malaysia chaos explained",
+   "url": "https://www.the-race.com/formula-1/software-bug-that-triggered-f1s-malaysia-chaos-explained/"
+  }
+ ],
+ "history": [],
+ "lensRelated": [
+  "singapore-2026-fri"
+ ]
+}
