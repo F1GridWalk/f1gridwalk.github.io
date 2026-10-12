@@ -323,7 +323,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
             best = (key, n, newest, items)
     hero = []
     top_hub = latest_hub()
-    if top_hub:  # 話題のまとめ replaces 今週の注目 at the top (owner's decision, 12 Oct 2026)
+    if top_hub:  # 読み解き (formerly 話題のまとめ) replaces 今週の注目 at the top (owner's decision, 12 Oct 2026)
         H = top_hub
         by_id = {x['id']: x for x in arts}
         circ = next((by_id[o['id']].get('circuit') for o in H.get('outlets', []) if by_id.get(o['id'], {}).get('circuit')), '')
@@ -331,7 +331,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         n_chars = sum(len(x[1]) for x in S.get('body', []) if x[0] == 'p')
         go_sub = f'約{round(n_chars / 100) * 100:,}字 · 約{max(1, round(n_chars / 500))}分で読めます' if n_chars else '共通点・違い・まだ分からないこと'
         hero.append(f'<div class="hubtop" id="hub-top" data-circuit="{e(circ or "")}">'
-                    f'<div class="chips"><span class="chip-feature">話題のまとめ</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
+                    f'<div class="chips"><span class="chip-feature">読み解き</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
                     f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
                     + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') and H['sub'] != S.get('title') else '')
                     + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') and not S else '')  # the story is the read (owner, 12 Oct 2026)
@@ -2070,8 +2070,8 @@ def latest_hub():
 
 def hub_box(H):
     n = len(H.get('outlets', []))
-    return (f'<a class="hubbox" href="/topics/{e(H["slug"])}/" data-track="click/hub/{e(H["slug"])}"><small>この話題をまとめて読む</small>'
-            f'<b>{e(H["title"])}</b><span>' + (f'{e(H["story"]["title"])}を読む →' if H.get('story') else f'{n}つの報道の共通点・違い・まだ分からないこと →') + '</span></a>')
+    return (f'<a class="hubbox" href="/topics/{e(H["slug"])}/" data-track="click/hub/{e(H["slug"])}"><small>F1 Grid Walk の読み解き</small>'
+            f'<b>{e(H["title"])}</b><span>' + ('読む →' if H.get('story') else f'{n}つの報道の共通点・違い・まだ分からないこと →') + '</span></a>')
 
 
 def build_hubs(arch, flag_of):
@@ -2081,8 +2081,8 @@ def build_hubs(arch, flag_of):
         slug = H['slug']
         url = f'{SITE}/topics/{slug}/'
         arts = arch['articles']
-        b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › 話題のまとめ</nav><div class="hub">',
-             f'<p class="hub-k"><b>TOPIC</b><span>{e(H.get("gp", ""))} · 話題のまとめ</span></p>',
+        b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › 読み解き</nav><div class="hub">',
+             f'<p class="hub-k"><b>TOPIC</b><span>{e(H.get("gp", ""))} · 読み解き</span></p>',
              f'<h1>{e(H["title"])}' + (f'<small>{e(H["sub"])}</small>' if H.get('sub') and H['sub'] != (H.get('story') or {}).get('title') else '') + '</h1>',
              f'<p class="hub-dek">{e(H["dek"])}</p>']
         if H.get('answer') and not H.get('story'):  # with a story, readers go straight to it (owner's decision, 12 Oct 2026)
