@@ -44,7 +44,7 @@ Topics: "topic" is a short English slug for the underlying story. Articles from 
 New articles.json: {"updatedAt": "<now, +09:00>", "topics": {...}, "articles": [new..., existing from the last 7 days...]}, max 80, newest first, never drop the featured one (but move "featured" to a newer, more important article when one exists); remove articles that went behind a paywall.
 
 ## 4b. World media lens — STOPPED (owner's decision, 12 Oct 2026)
-The top of the top page now shows the newest topic hub (「読み解き」, formerly 「話題のまとめ」, from topics/*.json) instead of 「今週の注目」, so the 「世界の見方／総評」 lens is no longer shown anywhere. Do NOT write per-article "lens" or topic-level "lens" (groups/guide) any more; leave existing ones as they are. build.py fills the top block; never edit the hero block in index.html by hand.
+The top of the top page now shows the newest topic hub (「STORY」, formerly 「読み解き」/「話題のまとめ」, from topics/*.json) instead of 「今週の注目」, so the 「世界の見方／総評」 lens is no longer shown anywhere. Do NOT write per-article "lens" or topic-level "lens" (groups/guide) any more; leave existing ones as they are. build.py fills the top block; never edit the hero block in index.html by hand.
 
 ## 5. Personal analysis (notes.json)
 F1 analysis by individuals (fans, independent writers), not news outlets or companies. Platforms:
