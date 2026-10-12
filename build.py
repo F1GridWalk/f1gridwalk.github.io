@@ -2088,7 +2088,7 @@ def build_hubs(arch, flag_of):
                   f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))} · 約{round(n / 100) * 100:,}字 · 約{max(1, round(n / 500))}分で読めます</p>']
             for kind, txt in S['body']:
                 sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', link_terms(e(txt), used)) + '</p>')
-            sb.append('<p class="hub-st-note">事実の部分は、カッコ内の媒体の報道にもとづいています。「見方」は F1 Grid Walk の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
+            sb.append('<p class="hub-st-note">事実の部分は、カッコ内の媒体の報道にもとづいています。「見方」は編集部の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
