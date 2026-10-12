@@ -337,7 +337,8 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                     + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') and not S else '')  # the story is the read (owner, 12 Oct 2026)
                     + (f'<p class="hubtop-hook">{e(S["hook"])}</p>' if S.get('hook') else '')  # the story's first line, instead of a word count (owner, 12 Oct 2026)
                     + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "読み解き")}を読む</span><b aria-hidden="true">→</b></a>'
-                    '</div>')
+                    + (f'<a class="hubtop-all" href="/topics/" data-track="click/top/hub-all">これまでの読み解き（{len(HUBS)}本） →</a>' if len(HUBS) > 1 else '')
+                    + '</div>')
     elif best:
         key, n, _, items = best
         info = topics.get(key, {})
@@ -669,12 +670,16 @@ def build_all_columns():
     items = ''.join(col_li(x, 'click/columns' + x['url']) for x in ALL_COLS)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › すべてのコラム</nav><h1>すべてのコラム</h1>'
             '<p class="lead">F1 Grid Walk のコラムを、新しい順にすべて並べています。</p>'
+            + (('<section class="yk-box"><h2><i>STORY</i>読み解き</h2><p class="yk-lead">コラムとは別の、F1 Grid Walk 独自の記事です。</p><ul class="yk-list">'
+                + ''.join(hub_li(H, f'click/columns-yk/{H["slug"]}') for H in hubs_newest()[:3]) + '</ul>'
+                + '<a class="yk-all" href="/topics/">すべての読み解き →</a></section>') if HUBS else '')
+            + 
             '<p class="col-legend">' + ctag('world') + '<span>世界の見方を、日本語で。 <a href="/lens/">一覧</a></span><br>'
             + ctag('deep') + '<span>ニュースの、その奥へ。 <a href="/deep/">一覧</a></span><br>'
             + ctag('off') + '<span>本筋の外の、F1こぼれ話。 <a href="/offgrid/">一覧</a></span></p>'
             f'<ul class="col-list">{items}</ul>')
     write('columns/index.html', page('F1コラム一覧｜海外報道の読み比べ・深掘り解説・こぼれ話｜F1グリッドウォーク', 'F1グリッドウォークのコラムを新しい順にすべて。海外報道の読み比べ（WORLD GRID）、ニュースの深掘り解説（DEEP GRID）、こぼれ話（OFF GRID）。',
-                                     SITE + '/columns/', body, f'<style>{LENS_CSS}{ALLCOL_CSS}</style>\n', og_type='website'))
+                                     SITE + '/columns/', body, f'<style>{LENS_CSS}{ALLCOL_CSS}{YK_CSS}</style>\n', og_type='website'))
     return [(SITE + '/columns/', ALL_COLS[0]['dt'].isoformat(timespec='seconds'), 'daily', '0.8')]
 
 
@@ -2245,6 +2250,39 @@ def story_terms_box(html):
             + '</div><p class="hub-kw-n">本文の下線の言葉をタップすると、その場で意味が読めます。</p></aside>')
 
 
+def hubs_newest():
+    """Published 読み解き, newest first (by their latest update, then checked date)."""
+    def key(H):
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        return (max(ups) if ups else '', H.get('checked', ''))
+    return sorted(HUBS.values(), key=key, reverse=True)
+
+
+def hub_li(H, track):
+    S = H.get('story') or {}
+    line = S.get('hook') or H.get('dek', '')
+    return (f'<li><a class="yk-i" href="/topics/{e(H["slug"])}/" data-track="{e(track)}">'
+            f'<small>{e(H.get("gp", ""))} · {e(H.get("checked", "").replace("-", "/"))}</small>'
+            f'<b>{e(H["title"])}</b><span>{e(line)}</span></a></li>')
+
+
+YK_CSS = """
+.yk-list{list-style:none;margin:0;padding:0}
+.yk-list li{border-top:1px solid var(--line)}
+.yk-list li:first-child{border-top:0}
+.yk-i{display:block;padding:14px 0;color:var(--ink);text-decoration:none}
+.yk-i small{display:block;font-size:12px;color:var(--muted);letter-spacing:.04em}
+.yk-i b{display:block;font-size:17px;line-height:1.55;margin-top:3px}
+.yk-i span{display:block;font-size:14px;line-height:1.8;color:var(--ink-2);margin-top:4px;padding-left:10px;border-left:3px solid var(--clay)}
+.yk-i:hover b{text-decoration:underline;text-underline-offset:3px}
+.yk-box{margin:18px 0 26px;padding:14px 16px 8px;border:2px solid var(--ink);border-radius:16px;background:var(--surface)}
+.yk-box h2{display:flex;align-items:baseline;gap:10px;font-size:18px;margin:0 0 4px}
+.yk-box h2 i{font-style:normal;font-size:11px;letter-spacing:.2em;color:var(--clay)}
+.yk-box p.yk-lead{font-size:13px;color:var(--muted);margin:0 0 4px}
+.yk-all{display:inline-block;margin:8px 0 6px;font-size:14px;font-weight:700;color:var(--clay)}
+"""
+
+
 def latest_hub():
     """The newest published topic hub (by its latest update, then checked date), shown at the top of the top page."""
     if not HUBS:
@@ -2311,6 +2349,10 @@ def build_hubs(arch, flag_of):
                 b.append('<h2><i>BEFORE</i>決勝前は、こう見ていた</h2>' + ''.join(pv_links))
             if H.get('next'):
                 b.append(next_html(H, rname))  # questions → rulebook, straight after the story
+            others = [x for x in hubs_newest() if x['slug'] != slug][:5]
+            if others:  # the next 読み解き to read, right after this one (owner, 12 Oct 2026)
+                b.append('<h2><i>MORE</i>ほかの読み解き</h2><ul class="yk-list">' + ''.join(hub_li(x, f'click/hub-more/{x["slug"]}') for x in others) + '</ul>'
+                         '<p><a class="yk-all" href="/topics/">すべての読み解き →</a></p>')
             b.append(meta.replace('class="hub-meta"', 'class="hub-meta hub-meta-after"'))  # what was checked, shown with the material below the story
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
@@ -2357,11 +2399,21 @@ def build_hubs(arch, flag_of):
                     return s
             b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in H['updates']) + '</ul>')
         b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>' + term_assets(used))
-        head = MONO_FONT + f'<style>{HUB_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
+        head = MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
         write(f'topics/{slug}/index.html', page(f'{H["title"]}｜{H.get("sub", "")}｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head))
         out.append((url, H.get('checked', '') + 'T09:00:00+09:00', None, '0.7'))
+    hs = hubs_newest()
+    if hs:  # topics/index.html: every 読み解き, newest first (owner's request, 12 Oct 2026)
+        body = ('<nav class="crumbs"><a href="/">トップ</a> › 読み解き</nav><div class="hub">'
+                '<p class="hub-k"><b>STORY</b><span>F1 Grid Walk の読み解き</span></p><h1>読み解き</h1>'
+                '<p class="hub-dek">レースのいちばん心に残った場面を、世界の報道をもとに、F1 Grid Walk が自分の言葉で読み解きます。新しい順に並べています。</p>'
+                '<ul class="yk-list">' + ''.join(hub_li(H, f'click/topics/{H["slug"]}') for H in hs) + '</ul>'
+                '<p style="margin-top:26px"><a href="/columns/">コラムの一覧へ →</a></p></div>')
+        write('topics/index.html', page('読み解き｜F1グリッドウォーク独自の記事', 'レースのいちばん心に残った場面を、世界の報道をもとにF1グリッドウォークが読み解く独自記事の一覧です。',
+                                        SITE + '/topics/', body, MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n', og_type='website'))
+        out.append((SITE + '/topics/', hs[0].get('checked', '') + 'T09:00:00+09:00', 'weekly', '0.8'))
     return out
 
 
