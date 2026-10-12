@@ -329,11 +329,11 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         circ = next((by_id[o['id']].get('circuit') for o in H.get('outlets', []) if by_id.get(o['id'], {}).get('circuit')), '')
         S = H.get('story') or {}
         n_chars = sum(len(x[1]) for x in S.get('body', []) if x[0] == 'p')
-        go_sub = (f'約{round(n_chars / 100) * 100:,}字 · ' if n_chars else '') + f'{len(H.get("outlets", []))}つの報道の共通点と違い'
+        go_sub = f'約{round(n_chars / 100) * 100:,}字 · 約{max(1, round(n_chars / 500))}分で読めます' if n_chars else '共通点・違い・まだ分からないこと'
         hero.append(f'<div class="hubtop" id="hub-top" data-circuit="{e(circ or "")}">'
                     f'<div class="chips"><span class="chip-feature">話題のまとめ</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
                     f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
-                    + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') else '')
+                    + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') and H['sub'] != S.get('title') else '')
                     + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') else '')
                     + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "まとめを読む")}を読む<small>{e(go_sub)}</small></span><b aria-hidden="true">→</b></a>'
                     '</div>')
@@ -2038,6 +2038,13 @@ HUB_CSS = '''
 .hub-story p{font-size:16px;line-height:2;margin:0 0 14px;color:var(--ink)}
 .hub-story p.hub-by{font-size:12.5px;line-height:1.6;color:var(--muted)}
 .hub-story .cite{font-size:11.5px;color:var(--muted);white-space:nowrap}
+.hub-st-src{margin:22px 0 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.hub-st-src .k{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:0 0 6px}
+.hub-st-src ul{list-style:none;margin:0;padding:0}
+.hub-st-src li{display:flex;flex-direction:column;gap:1px;font-size:13px;line-height:1.6;padding:6px 0;border-top:1px solid var(--line)}
+.hub-st-src li:first-child{border-top:0;padding-top:0}
+.hub-st-src li b{font-size:12.5px}.hub-st-src li a{color:var(--ink);word-break:break-word}.hub-st-src li a.sub{font-size:12.5px}
+.hub-st-src li small{font-size:11.5px;color:var(--muted)}
 .hub-story .hub-st-note{font-size:13px;line-height:1.8;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:18px}
 .hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
 .hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
@@ -2063,7 +2070,7 @@ def latest_hub():
 def hub_box(H):
     n = len(H.get('outlets', []))
     return (f'<a class="hubbox" href="/topics/{e(H["slug"])}/" data-track="click/hub/{e(H["slug"])}"><small>この話題をまとめて読む</small>'
-            f'<b>{e(H["title"])}</b><span>{n}つの報道の共通点・違い・まだ分からないこと →</span></a>')
+            f'<b>{e(H["title"])}</b><span>' + (f'{e(H["story"]["title"])}を読む →' if H.get('story') else f'{n}つの報道の共通点・違い・まだ分からないこと →') + '</span></a>')
 
 
 def build_hubs(arch, flag_of):
@@ -2088,7 +2095,13 @@ def build_hubs(arch, flag_of):
                   f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))} · 約{round(n / 100) * 100:,}字 · 約{max(1, round(n / 500))}分で読めます</p>']
             for kind, txt in S['body']:
                 sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', link_terms(e(txt), used)) + '</p>')
-            sb.append('<p class="hub-st-note">事実の部分は、カッコ内の媒体の報道にもとづいています。「見方」は F1 Grid Walk の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
+            if S.get('sources'):  # sources listed once at the end, not inside the text (owner's decision, 12 Oct 2026)
+                sb.append('<div class="hub-st-src"><p class="k">出典</p><ul>' + ''.join(
+                    f'<li><b>{e(x["name"])}</b><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["title"])} ↗</a>'
+                    + ''.join(f'<a class="sub" href="{e(l["url"])}" target="_blank" rel="noopener">{e(l["label"])} ↗</a>' for l in x.get('links', []))
+                    + (f'<small>{e(x["note"])}</small>' if x.get('note') else '') + '</li>' for x in S['sources']) + '</ul></div>')
+            sb.append('<p class="hub-st-note">' + ('事実の部分は、上の出典にもとづいています。' if S.get('sources') else '事実の部分は、カッコ内の媒体の報道にもとづいています。')
+                      + '「見解」は編集部の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
