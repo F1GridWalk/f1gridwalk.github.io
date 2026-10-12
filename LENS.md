@@ -35,7 +35,7 @@ Owner's decision, 30 Sep 2026: no automatic breaking columns. A 速報コラム 
 Owner's decision, 30 Sep 2026: the daily column stays foreign-sources only (§0). In the issues the owner checks — 臨時号, グランプリ特別号 and 速報コラム written on request — Japanese outlets may be used as sources too, to show readers how the same story is told in Japan and abroad: "日本の〇〇（媒体名）はこう伝えた / 海外の〇〇（媒体名・国）はこう伝えた". Name every outlet. Never say which side is better or worse and never mock either side; lay the differences side by side (what was emphasised, what was left out, which quote was used, headline vs body) and let the reader decide. The "not seen in Japanese" stories still follow §2.
 
 ## Race weekends: グランプリ特別号
-**STOPPED (owner's decision, 12 Oct 2026): no more Grand Prix special issues (金曜・土曜・日曜号). The race-weekend feature is now the 読み解き (topic hub story, topics/*.json, written by the 読み解きデスク). Do not create new `<gp>-2026*` special issues or book their start times. The rules below are kept only as a record of how the published issues were made.**
+**STOPPED (owner's decision, 12 Oct 2026): no more Grand Prix special issues (金曜・土曜・日曜号). The race-weekend feature is now the 読み解き (topic hub story, topics/*.json, written by the 読み解きデスク). Do not create new `<gp>-2026*` special issues or book their start times. The already-published issues (baku-2026, malaysia-2026, malaysia-2026-fri, malaysia-2026-sat, singapore-2026-fri) stay on the site as they are (owner, 12 Oct). The rules below are kept only as a record of how they were made.**
 
 Race weekends get three special issues, one per day, each with its own page and vote:
 - 金曜 (practice): after FP2 — long runs, upgrades, what teams and drivers said, practice incidents. Slug `<gp>-2026-fri`, gpLabel e.g. "マレーシアGP特別号・金曜".
