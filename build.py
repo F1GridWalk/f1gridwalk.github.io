@@ -421,6 +421,10 @@ def prerender_index(data, flag_of, flag_map_ref=None):
 # WORLD GRID: one long-form page per race, from lens/<slug>.json
 # ---------------------------------------------------------------------------
 LENS_CSS = '''
+.ans-box{display:block;margin:6px 0 26px;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
+.ans-box small{display:block;font-size:12px;font-weight:700;color:var(--clay);letter-spacing:.06em}
+.ans-box b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
+.ans-box span{display:block;font-size:14px;line-height:1.7;color:var(--ink-2);margin-top:2px}
 .ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
 .ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
 .ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
@@ -737,13 +741,31 @@ def build_lenses(arch, flag_map):
                  '</div>')
         if L.get('type') == 'column':
             B.append('<div class="col-body">')
+            # 事前の注目点 → 答え合わせ: a 読み解き that answers one of this preview's points (review of 12 Oct 2026)
+            answers = {pv['h2']: (H, pv) for H in HUBS.values() for pv in H.get('preview', []) if pv.get('lens') == slug}
+            open_h2 = None
+            def answer_box(h2):
+                if h2 not in answers:
+                    return ''
+                H, pv = answers[h2]
+                d = pv.get('added', '')
+                d = f'{int(d[5:7])}/{int(d[8:10])} ' if len(d) >= 10 else ''
+                return (f'<a class="ans-box" href="/topics/{e(H["slug"])}/" data-track="click/lens/{e(slug)}/answer">'
+                        f'<small>決勝のあとで（{d}追記）</small><b>この注目点は、どうなった？</b>'
+                        f'<span>読み解き「{e(H["title"])}」 →</span></a>')
             for blk in L['body']:
                 k, t = blk[0], blk[1]
+                if k == 'h2' and open_h2:
+                    B.append(answer_box(open_h2))
+                if k == 'h2':
+                    open_h2 = t
                 if k == 'h2': B.append(f'<h2>{e(t)}</h2>')
                 elif k == 'quote': B.append(f'<blockquote><p>{site_links(e(t))}</p></blockquote>')
                 elif k == 'bold': B.append(f'<p><strong>{site_links(e(t))}</strong></p>')
                 elif k == 'ask': B.append(f'<p class="ask">{site_links(e(t))}</p>')
                 else: B.append(f'<p>{site_links(e(t))}</p>')
+            if open_h2:
+                B.append(answer_box(open_h2))
             B.append('</div>')
             B.append(more_columns(f'/lens/{slug}/'))
             if L.get('note'):
@@ -2143,6 +2165,10 @@ HUB_CSS = '''
 .hub-st-src li b{font-size:12.5px}.hub-st-src li a{color:var(--ink);word-break:break-word}.hub-st-src li a.sub{font-size:12.5px}
 .hub-st-src li small{font-size:11.5px;color:var(--muted)}
 .hub-story .hub-st-note{font-size:13px;line-height:1.8;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;margin-top:18px}
+.hub-pv{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
+.hub-pv small{display:block;font-size:12px;font-weight:700;color:var(--clay);letter-spacing:.06em}
+.hub-pv b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.hub-pv span{display:block;font-size:13.5px;line-height:1.75;color:var(--ink-2);margin-top:2px}
 .hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
 .hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
 .hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
@@ -2244,6 +2270,15 @@ def build_hubs(arch, flag_of):
             sb.append('<p class="hub-st-note">' + ('事実の部分は、上の出典にもとづいています。' if S.get('sources') else '事実の部分は、カッコ内の媒体の報道にもとづいています。')
                       + 'それ以外は編集部の読み解きです。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
+            pv_links = []
+            for pv in H.get('preview', []):
+                Lp = load(os.path.join('lens', pv['lens'] + '.json')) or {}
+                if Lp.get('slug') and not Lp.get('draft'):
+                    pv_links.append(f'<a class="hub-pv" href="/lens/{e(Lp["slug"])}/" data-track="click/hub-preview/{e(Lp["slug"])}">'
+                                    f'<small>レース前の見立て</small><b>{e(Lp.get("title", ""))}</b>'
+                                    f'<span>決勝前、注目点に「{e(re.sub(r"^.{1,4}つ目：", "", pv["h2"]).replace("「", "『").replace("」", "』"))}」を挙げていました。当時の文章のまま読めます →</span></a>')
+            if pv_links:
+                b.append('<h2><i>BEFORE</i>決勝前は、こう見ていた</h2>' + ''.join(pv_links))
             if H.get('next'):
                 b.append(next_html(H, rname))  # questions → rulebook, straight after the story
             b.append(meta.replace('class="hub-meta"', 'class="hub-meta hub-meta-after"'))  # what was checked, shown with the material below the story
