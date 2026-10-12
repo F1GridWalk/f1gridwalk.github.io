@@ -335,7 +335,8 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                     f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
                     + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') and H['sub'] != S.get('title') else '')
                     + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') and not S else '')  # the story is the read (owner, 12 Oct 2026)
-                    + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "まとめを読む")}を読む<small>{e(go_sub)}</small></span><b aria-hidden="true">→</b></a>'
+                    + (f'<p class="hubtop-hook">{e(S["hook"])}</p>' if S.get('hook') else '')  # the story's first line, instead of a word count (owner, 12 Oct 2026)
+                    + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "読み解き")}を読む</span><b aria-hidden="true">→</b></a>'
                     '</div>')
     elif best:
         key, n, _, items = best
@@ -2140,7 +2141,7 @@ def build_hubs(arch, flag_of):
         if S:
             n = sum(len(x[1]) for x in S['body'] if x[0] == 'p')
             sb = [f'<section class="hub-story" aria-label="{e(S["title"])}"><h2><i>STORY</i>{e(S["title"])}</h2>',
-                  f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))} · 約{round(n / 100) * 100:,}字 · 約{max(1, round(n / 500))}分で読めます</p>']
+                  f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))}</p>']
             for kind, txt in S['body']:
                 sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', story_links(txt, used, S.get('terms'))) + '</p>')
             sb.append(story_terms_box(''.join(sb)))  # the story's words, tied to the rulebook (owner, 12 Oct 2026)
