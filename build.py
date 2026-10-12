@@ -984,6 +984,14 @@ details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
 .dg table.stack tbody th{font-size:15px;margin-bottom:4px}
 .dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
 .dg table.stack td+td{margin-top:6px}}
+.dg-rel-l{list-style:none;margin:0;padding:0}
+.dg-rel-l li{border-top:1px solid var(--line)}
+.dg-rel-l li:first-child{border-top:0}
+.dg-rel-l a{display:block;padding:10px 0;color:var(--ink);text-decoration:none}
+.dg-rel-l small{display:block;font-size:12.5px;font-weight:700;color:var(--clay);line-height:1.6}
+.dg-rel-l b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-rel-l span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.dg-rel-l a:hover b{text-decoration:underline;text-underline-offset:3px}
 '''
 
 
@@ -1200,12 +1208,34 @@ def build_deeps(arch, flag_map):
         if D.get('history'):
             B.append('<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist">'
                      + ''.join(f'<li><time>{e(d)}</time>{e(t)}</li>' for d, t in D['history']) + '</ul></div>')
-        # links out: TODAY (newest news on the same circuit/teams/topics), WORLD GRID, other issues
-        news = [a for a in sorted(arch['articles'].values(), key=when, reverse=True)
-                if a.get('kind') != 'fan' and deep_for_article(a) is D][:5]
-        if news:
-            B.append('<div class="dg-end"><h2><span class="k">TODAY</span>このテーマの最新ニュース</h2><ul class="list">'
-                     + ''.join(item_li(a, flag_of) for a in news) + '</ul></div>')
+        # links out, by role (review of 12 Oct 2026): ① news that answers this issue's questions (max 2, with why),
+        # ② other news from the same Grand Prix, ③ the newest news. ① is shown only when there is a real link.
+        allnews = [a for a in sorted(arch['articles'].values(), key=when, reverse=True) if a.get('kind') != 'fan']
+        shown = set()
+        direct = []
+        for r in (D.get('related') or [])[:2]:
+            a = arch['articles'].get(r.get('id', ''))
+            if a:
+                direct.append((a, r.get('why', '')))
+        if not D.get('related'):
+            tp = set(D.get('topics') or [])
+            direct = [(a, '') for a in allnews if a.get('topic') in tp][:2] if tp else []
+        if direct:
+            B.append('<div class="dg-end dg-rel"><h2><span class="k">NEXT</span>この話の続きを読む</h2><ul class="dg-rel-l">'
+                     + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/deep/{e(slug)}/related">'
+                               + (f'<small>{e(why)}</small>' if why else '') + f'<b>{e(a["title"])}</b><span>{e(a["source"])}</span></a></li>'
+                               for a, why in direct) + '</ul></div>')
+            shown |= {a['id'] for a, _ in direct}
+        same_gp = [a for a in allnews if D.get('circuit') and a.get('circuit') == D['circuit'] and a['id'] not in shown][:5]
+        if same_gp:
+            gp_name = (((load('circuits.json', {}) or {}).get('circuits') or {}).get(D['circuit']) or {}).get('gp', '')
+            B.append(f'<div class="dg-end"><h2><span class="k">SAME GP</span>{e(gp_name or "同じグランプリ")}のほかのニュース</h2><ul class="list">'
+                     + ''.join(item_li(a, flag_of) for a in same_gp) + '</ul></div>')
+            shown |= {a['id'] for a in same_gp}
+        latest = [a for a in allnews if a['id'] not in shown][:3]
+        if latest:
+            B.append('<div class="dg-end"><h2><span class="k">LATEST</span>新着ニュース</h2><ul class="list">'
+                     + ''.join(item_li(a, flag_of) for a in latest) + '</ul></div>')
         rel = [lens[s] for s in D.get('lensRelated', []) if s in lens]
         if rel:
             B.append('<div class="dg-end"><h2><span class="k">WORLD GRID</span>世界はどう報じた？</h2>'
