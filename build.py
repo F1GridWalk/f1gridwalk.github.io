@@ -740,10 +740,10 @@ def build_lenses(arch, flag_map):
             for blk in L['body']:
                 k, t = blk[0], blk[1]
                 if k == 'h2': B.append(f'<h2>{e(t)}</h2>')
-                elif k == 'quote': B.append(f'<blockquote><p>{e(t)}</p></blockquote>')
-                elif k == 'bold': B.append(f'<p><strong>{e(t)}</strong></p>')
-                elif k == 'ask': B.append(f'<p class="ask">{e(t)}</p>')
-                else: B.append(f'<p>{e(t)}</p>')
+                elif k == 'quote': B.append(f'<blockquote><p>{site_links(e(t))}</p></blockquote>')
+                elif k == 'bold': B.append(f'<p><strong>{site_links(e(t))}</strong></p>')
+                elif k == 'ask': B.append(f'<p class="ask">{site_links(e(t))}</p>')
+                else: B.append(f'<p>{site_links(e(t))}</p>')
             B.append('</div>')
             B.append(more_columns(f'/lens/{slug}/'))
             if L.get('note'):
@@ -1015,7 +1015,7 @@ def deep_blocks(blocks, used=None):
     out = []
     for b in blocks:
         if 'p' in b:
-            out.append(f'<p>{link_terms(e(b["p"]), used) if used is not None else e(b["p"])}</p>')
+            out.append('<p>' + (link_terms_html(site_links(e(b["p"])), used) if used is not None else site_links(e(b["p"]))) + '</p>')
         elif 'quote' in b:
             out.append(f'<blockquote><p>「{e(b["quote"])}」</p><cite>— {e(b.get("who", ""))}</cite></blockquote>')
         elif 'view' in b:
@@ -1397,18 +1397,60 @@ def load_rules():
     return R
 
 
+_LT_KATA = '\u30a0-\u30ff'
+
+
+def _lt_ok(text, i, w):
+    """True when w at text[i] is a whole word: a katakana or Latin name must not run on into more
+    katakana / letters on either side (レーキ inside ブレーキ, オーバー inside オーバーテイク)."""
+    def kind(c):
+        if not c:
+            return ''
+        if re.match(f'[{_LT_KATA}]', c):
+            return 'k'
+        if re.match(r'[A-Za-z]', c):
+            return 'l'
+        return ''
+    before = text[i - 1] if i > 0 else ''
+    after = text[i + len(w)] if i + len(w) < len(text) else ''
+    if kind(w[0]) and kind(before) == kind(w[0]):
+        return False
+    if kind(w[-1]) and kind(after) == kind(w[-1]):
+        return False
+    return True
+
+
+_LT_LOOKUP = None
+
+
+def _lt_lookup():
+    """Names to link, longest first: every dictionary name, plus the name without its（…）note
+    (ブレーキ（ディスクとキャリパー） is also found as ブレーキ)."""
+    global _LT_LOOKUP
+    if _LT_LOOKUP is None:
+        rows = []
+        for word, tid, title, text in term_lookup():
+            rows.append((word, tid))
+            short = re.sub(r'（.*?）', '', word).strip()
+            if short != word and len(short) >= 3:
+                rows.append((short, tid))
+        _LT_LOOKUP = sorted(rows, key=lambda x: -len(x[0]))
+    return _LT_LOOKUP
+
+
 def link_terms(html_text, used):
     """Underline the first appearance of each rulebook term in a paragraph (already HTML-escaped).
-    Longer terms win (バーチャルセーフティカー before セーフティカー) and a link is never put inside another link."""
+    Longer terms win (バーチャルセーフティカー before セーフティカー), a name is linked only as a whole word,
+    and a link is never put inside another link."""
     if not RULES:
         return html_text
     taken = []  # (start, end) spans already linked, in the current string
-    for word, tid, _, _ in sorted(term_lookup(), key=lambda x: -len(x[0])):
+    for word, tid in _lt_lookup():
         if tid in used:
             continue
         w = e(word)
         i = html_text.find(w)
-        while i >= 0 and any(a <= i < b or a < i + len(w) <= b for a, b in taken):
+        while i >= 0 and (any(a <= i < b or a < i + len(w) <= b for a, b in taken) or not _lt_ok(html_text, i, w)):
             i = html_text.find(w, i + 1)
         if i >= 0:
             a = f'<a class="term" href="/deep/rules/{tid}/" data-term="{tid}">{w}</a>'
@@ -1417,6 +1459,55 @@ def link_terms(html_text, used):
             taken = [(x + (shift if x > i else 0), y + (shift if y > i else 0)) for x, y in taken] + [(i, i + len(a))]
             used.add(tid)
     return html_text
+
+
+SITE_TITLES = None
+
+
+def site_titles():
+    """Title of every page a column may point to, by path (news, columns, DEEP GRID, 読み解き)."""
+    global SITE_TITLES
+    if SITE_TITLES is None:
+        T = {}
+        arch = load('news/archive.json', {}) or {}
+        for a in (arch.get('articles') or {}).values():
+            T[f'/news/{a["id"]}/'] = a.get('title', '')
+        d = os.path.join(ROOT, 'lens')
+        if os.path.isdir(d):
+            for fn in os.listdir(d):
+                if fn.endswith('.json'):
+                    L = load(os.path.join('lens', fn)) or {}
+                    if L.get('slug'):
+                        T[f'/lens/{L["slug"]}/'] = L.get('title', '')
+        for D in DEEPS:
+            T[f'/deep/{D["slug"]}/'] = D.get('title', '')
+        for H in HUBS.values():
+            T[f'/topics/{H["slug"]}/'] = H.get('title', '')
+        SITE_TITLES = T
+    return SITE_TITLES
+
+
+_SITE_URL_RE = r'https://f1gridwalk\.github\.io(/[A-Za-z0-9_\-/]*)'
+
+
+def site_links(h):
+    """Column and DEEP GRID text is also posted to note, where a bare URL is fine. On the site, a URL of
+    our own page becomes a link that says where it goes (review of 12 Oct 2026):
+    「名前」（URL） → 「名前」 as the link; otherwise the URL → the page title as the link."""
+    if 'f1gridwalk.github.io' not in h:
+        return h
+    T = site_titles()
+    def norm(path):
+        return path if path.endswith('/') else path + '/'
+    def named(m):
+        return f'「<a href="{norm(m.group(2))}">{m.group(1)}</a>」'
+    h = re.sub(r'「([^「」<>]{1,60})」（\s*' + _SITE_URL_RE + r'\s*）', named, h)
+    def bare(m):
+        path = norm(m.group(1))
+        title = T.get(path) or 'このページ'
+        return f'「<a href="{path}">{e(title)}</a>」'
+    h = re.sub(r'\s*' + _SITE_URL_RE + r'\s*', bare, h)
+    return h
 
 
 SKIP_TAGS = ('a', 'h1', 'h2', 'h3', 'button', 'script', 'style', 'summary', 'textarea', 'label', 'select', 'time', 'cite')
