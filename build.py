@@ -1202,18 +1202,8 @@ def build_deeps(arch, flag_map):
             for s in D['deep']:
                 B.append(f'<div class="dg-sec"><h2>{e(s["h"])}</h2>{deep_blocks(s["body"], used)}</div>')
             B.append('</details>')
-        # other issues right after データと記録 (owner's request, 3 Oct 2026), like the WORLD GRID pages
-        B.append(more_columns(f'/deep/{slug}/', page='deep'))
-        if D.get('glossary'):
-            B.append('<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl>'
-                     + ''.join(f'<dt>{e(t)}</dt><dd>{e(d)}</dd>' for t, d in D['glossary']) + '</dl></div>')
-        B.append('<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src">'
-                 + ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener" data-track="click/deep/{e(slug)}/src">{e(s["name"])}</a> <small>{e(s["title"])}</small></li>' for s in D.get('sources', []))
-                 + '</ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>')
-        if D.get('history'):
-            B.append('<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist">'
-                     + ''.join(f'<li><time>{e(d)}</time>{e(t)}</li>' for d, t in D['history']) + '</ul></div>')
-        # links out, by role (review of 12 Oct 2026): ① news that answers this issue's questions (max 2, with why),
+        # 「この話の続きを読む」 straight after the body (review of 12 Oct 2026); then same GP and latest at the end.
+        # Links out, by role (review of 12 Oct 2026): ① news that answers this issue's questions (max 2, with why),
         # ② other news from the same Grand Prix, ③ the newest news. ① is shown only when there is a real link.
         allnews = [a for a in sorted(arch['articles'].values(), key=when, reverse=True) if a.get('kind') != 'fan']
         shown = set()
@@ -1231,6 +1221,17 @@ def build_deeps(arch, flag_map):
                                + (f'<small>{e(why)}</small>' if why else '') + f'<b>{e(a["title"])}</b><span>{e(a["source"])}</span></a></li>'
                                for a, why in direct) + '</ul></div>')
             shown |= {a['id'] for a, _ in direct}
+        # other issues right after データと記録 (owner's request, 3 Oct 2026), like the WORLD GRID pages
+        B.append(more_columns(f'/deep/{slug}/', page='deep'))
+        if D.get('glossary'):
+            B.append('<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl>'
+                     + ''.join(f'<dt>{e(t)}</dt><dd>{e(d)}</dd>' for t, d in D['glossary']) + '</dl></div>')
+        B.append('<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src">'
+                 + ''.join(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener" data-track="click/deep/{e(slug)}/src">{e(s["name"])}</a> <small>{e(s["title"])}</small></li>' for s in D.get('sources', []))
+                 + '</ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>')
+        if D.get('history'):
+            B.append('<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist">'
+                     + ''.join(f'<li><time>{e(d)}</time>{e(t)}</li>' for d, t in D['history']) + '</ul></div>')
         same_gp = [a for a in allnews if D.get('circuit') and a.get('circuit') == D['circuit'] and a['id'] not in shown][:5]
         if same_gp:
             gp_name = (((load('circuits.json', {}) or {}).get('circuits') or {}).get(D['circuit']) or {}).get('gp', '')
