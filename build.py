@@ -334,7 +334,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
                     f'<div class="chips"><span class="chip-feature">話題のまとめ</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
                     f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
                     + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') and H['sub'] != S.get('title') else '')
-                    + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') else '')
+                    + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') and not S else '')  # the story is the read (owner, 12 Oct 2026)
                     + f'<a class="hubtop-go" href="/topics/{e(H["slug"])}/" data-track="click/top/hub-go"><span>{e(S.get("title") or "まとめを読む")}を読む<small>{e(go_sub)}</small></span><b aria-hidden="true">→</b></a>'
                     '</div>')
     elif best:
@@ -2004,6 +2004,7 @@ HUB_CSS = '''
 .hub h1 small{display:block;font-size:.55em;color:var(--muted);font-weight:700;margin-top:4px}
 .hub-dek{font-size:16px;line-height:1.95;margin:14px 0 6px}
 .hub-meta{font-size:12px;color:var(--muted);margin:0 0 6px}
+.hub-meta-after{margin:26px 0 0}
 .hub h2{font-size:17px;margin:30px 0 10px;padding-top:16px;border-top:2px solid var(--ink);display:flex;align-items:baseline;gap:10px}
 .hub h2 i{font-style:normal;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.2em;color:var(--clay)}
 .hub ul.dots{margin:0;padding-left:1.2em}.hub ul.dots li{font-size:15.5px;line-height:1.85;margin:4px 0}
@@ -2031,7 +2032,7 @@ HUB_CSS = '''
 .hub-todo{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .hub-up{list-style:none;margin:0;padding:0}.hub-up li{display:grid;grid-template-columns:7.5em 1fr;gap:8px;font-size:14px;line-height:1.7;padding:6px 0;border-bottom:1px solid var(--line)}
 .hub-up time{color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
-.hub-story{margin:6px 0 0}
+.hub-story{margin:6px 0 0;padding-top:0;border-top:0}
 .hub-story h2{margin-bottom:4px}
 .hub-by{font-size:12.5px;color:var(--muted);margin:0 0 6px}
 .hub-story h3{font-size:16.5px;line-height:1.6;margin:26px 0 8px;padding-left:10px;border-left:4px solid var(--clay)}
@@ -2082,11 +2083,13 @@ def build_hubs(arch, flag_of):
         arts = arch['articles']
         b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › 話題のまとめ</nav><div class="hub">',
              f'<p class="hub-k"><b>TOPIC</b><span>{e(H.get("gp", ""))} · 話題のまとめ</span></p>',
-             f'<h1>{e(H["title"])}' + (f'<small>{e(H["sub"])}</small>' if H.get('sub') else '') + '</h1>',
+             f'<h1>{e(H["title"])}' + (f'<small>{e(H["sub"])}</small>' if H.get('sub') and H['sub'] != (H.get('story') or {}).get('title') else '') + '</h1>',
              f'<p class="hub-dek">{e(H["dek"])}</p>']
-        if H.get('answer'):
+        if H.get('answer') and not H.get('story'):  # with a story, readers go straight to it (owner's decision, 12 Oct 2026)
             b.append(f'<div class="hub-ans"><p class="hub-ans-k">読み比べて分かったこと</p><p>{e(H["answer"])}</p></div>')
-        b.append('<p class="hub-meta">' + e(H.get('checkedNote') or f'{len(H["outlets"])}つの報道の原文を {H.get("checked", "")} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。') + '</p>')
+        meta = '<p class="hub-meta">' + e(H.get('checkedNote') or f'{len(H["outlets"])}つの報道の原文を {H.get("checked", "")} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。') + '</p>'
+        if not H.get('story'):
+            b.append(meta)
         used = set()
         S = H.get('story')
         if S:
@@ -2103,6 +2106,7 @@ def build_hubs(arch, flag_of):
             sb.append('<p class="hub-st-note">' + ('事実の部分は、上の出典にもとづいています。' if S.get('sources') else '事実の部分は、カッコ内の媒体の報道にもとづいています。')
                       + '「見解」は編集部の考えで、確定した事実ではありません。以下に、その材料を並べています。</p></section>')
             b.append(''.join(sb))
+            b.append(meta.replace('class="hub-meta"', 'class="hub-meta hub-meta-after"'))  # what was checked, shown with the material below the story
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
         b.append('<h2><i>ONLY HERE</i>この記事にしかない情報</h2>' + f'<p class="hub-sub">今回比べた{len(H["outlets"])}本の中で、その記事だけが書いていること</p>')
