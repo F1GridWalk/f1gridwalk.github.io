@@ -155,7 +155,8 @@ h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-wei
 .cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
 .credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
-.tags span{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags span,.tags a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags a{color:var(--ink);text-decoration:none;font-weight:700}.tags a::after{content:" →";color:var(--clay)}
 .share{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;align-items:center;font-size:13px;color:var(--muted)}
 .share a,.share button{font:inherit;font-size:13px;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;text-decoration:none;cursor:pointer}
 section{margin:40px 0 0;padding-top:22px;border-top:1px solid var(--line)}
@@ -197,7 +198,7 @@ BT_ICON = {'news': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4
 def bottom_tabs(canonical):
     """Phone bottom tab bar on every page (owner's choice A, 11 Oct 2026)."""
     path = canonical.replace(SITE, '')
-    cur = 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith('/news/') or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
+    cur = 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith(('/news/', '/gp/', '/teams/')) or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
     items = [('news', '/#news', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('rule', '/deep/rules/', '用語')]
     return ('<nav class="bt" aria-label="サイト内の移動">' + ''.join(
         f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
@@ -399,7 +400,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     news = sorted([a for a in arts if a.get('kind', 'news') == 'news'], key=when, reverse=True)[:10]
     tech = sorted([a for a in arts if a.get('kind') == 'tech'], key=when, reverse=True)[:3]
     feed = ('<div class="grid">' + ''.join(static_card(a, flag_of) for a in news) + '</div>'
-            '<p class="pre-more"><a href="/news/">すべてのニュースの一覧 →</a></p>') if news else ''
+            '<p class="pre-more"><a href="/news/">すべてのニュースの一覧 →</a>　<a href="/gp/" data-track="click/top/gp">GPごと</a>　<a href="/teams/" data-track="click/top/teams">チームごと</a></p>') if news else ''
     techh = ('<div class="grid kgrid">' + ''.join(static_card(a, flag_of) for a in tech) + '</div>') if tech else ''
 
     p = os.path.join(ROOT, 'index.html')
@@ -622,9 +623,11 @@ def collect_columns(all_lens):
     global ALL_COLS
     out = []
     for p, s_, L in all_lens:
-        out.append({'dt': p, 'kind': lens_kind(L), 'url': f'/lens/{s_}/', 'title': L['title'], 'sub': L.get('gpLabel', 'コラム'), 'no': ''})
+        out.append({'dt': p, 'kind': lens_kind(L), 'url': f'/lens/{s_}/', 'title': L['title'], 'sub': L.get('gpLabel', 'コラム'), 'no': '',
+                    'txt': ' '.join([s_, L.get('gpLabel', ''), L.get('noteTags', ''), L['title']]), 'circuit': L.get('circuit'), 'teams': L.get('teams') or []})
     for D in DEEPS:
-        out.append({'dt': datetime.fromisoformat(D['published']), 'kind': 'deep', 'url': f'/deep/{D["slug"]}/', 'title': D['title'], 'sub': '', 'no': deep_no(D)})
+        out.append({'dt': datetime.fromisoformat(D['published']), 'kind': 'deep', 'url': f'/deep/{D["slug"]}/', 'title': D['title'], 'sub': '', 'no': deep_no(D),
+                    'txt': ' '.join([D['slug'], D['title']]), 'circuit': D.get('circuit'), 'teams': D.get('teams') or []})
     out.sort(key=lambda x: x['dt'], reverse=True)
     ALL_COLS = out
     return out
@@ -1781,6 +1784,10 @@ def build_rules():
             b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
         if p.get('sources'):
             b += '<div class="rb-h">出典（肩書きの確認）</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])}</a></li>' for x in p['sources']) + '</ul>'
+        pn_ = person_news(p, ALLARTS)
+        if pn_:
+            b += (f'<div class="rb-h">{e(p["name"])}が出てくる最新ニュース</div><ul class="rb-ex">'
+                  + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/person/{e(p["id"])}/news">{e(a["title"])}</a></li>' for a in pn_) + '</ul>')
         b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
         ld_p = {'@context': 'https://schema.org', '@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
                 'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
@@ -2437,6 +2444,307 @@ def build_hubs(arch, flag_of):
     return out
 
 
+# ---- more ways in: GP pages, team pages, month lists (owner's choice, 14 Oct 2026) -------------------------
+GP_EXTRA = {'sepang': ['マレーシアGP', 'マレーシア', 'malaysia']}  # this year's race at Sepang is officially the Bahrain GP
+GP_MIN = 5          # a GP page needs at least this many news articles
+GPS = {}            # slug -> race info (filled by plan_gps)
+GP_OF = {}          # article id -> GP slug
+
+ENT_CSS = """
+.ent-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:6px 0 4px}
+.ent-k{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--clay)}
+.ent-facts{display:flex;flex-wrap:wrap;gap:6px 10px;margin:0 0 14px;font-size:13.5px;color:var(--ink-2)}
+.ent-facts span{border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.ent-map{float:right;width:120px;height:120px;margin:0 0 8px 12px;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:6px}
+.ent-map .u{fill:none;stroke:var(--line);stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.ent-map .t{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.ent-map circle{fill:var(--clay)}
+.ent-jump{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0;clear:both}
+.ent-jump a{font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;color:var(--ink);background:var(--surface)}
+.ent-grid{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ent-grid a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
+.ent-grid a:hover b{text-decoration:underline;text-underline-offset:3px}
+.ent-grid small{display:block;font-size:12px;color:var(--muted)}
+.ent-grid b{display:block;font-size:17px;line-height:1.5;margin-top:2px}
+.ent-grid span{display:block;font-size:13px;color:var(--ink-2);margin-top:2px}
+@media (min-width:600px){.ent-grid.two{grid-template-columns:1fr 1fr}}
+.ent-pn{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:26px 0 0;font-size:14px;font-weight:700}
+.ent-more{display:flex;flex-wrap:wrap;gap:8px 16px;margin:14px 0 0;font-size:14px;font-weight:700}
+.ent-more a{color:var(--clay)}
+.mon-nav{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 4px}
+.mon-nav a,.mon-nav b{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:3px 12px;text-decoration:none;color:var(--ink);background:var(--surface)}
+.mon-nav b{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+"""
+
+
+def _gp_base(name):
+    return re.sub(r'（[^）]*）', '', name or '').strip()
+
+
+def plan_gps(allarts, circuits):
+    """Which races get a page: this season's calendar races with enough news. Articles go to the race at their
+    circuit in the same year (nearest date)."""
+    season = load('season.json', {}) or {}
+    races = []
+    for r in season.get('calendar') or []:
+        c = r.get('circuit')
+        if not c or c not in circuits or not r.get('date'):
+            continue
+        d = datetime.fromisoformat(r['date'] + 'T15:00:00+09:00')
+        races.append({'slug': f'{c}-{d.year}', 'circuit': c, 'gp': r['gp'], 'round': r.get('round'), 'date': d,
+                      'winner': r.get('winner', ''), 'cname': circuits[c].get('name', ''), 'arts': [], 'cols': [], 'hubs': []})
+    for a in allarts:
+        c = a.get('circuit')
+        cand = [x for x in races if x['circuit'] == c and x['date'].year == when(a).year]
+        if cand:
+            x = min(cand, key=lambda x: abs((x['date'] - when(a)).total_seconds()))
+            x['arts'].append(a)
+    GPS.clear(); GP_OF.clear()
+    for x in races:
+        if len(x['arts']) >= GP_MIN:
+            GPS[x['slug']] = x
+            for a in x['arts']:
+                GP_OF[a['id']] = x['slug']
+
+
+def _gp_words(x, circuits):
+    c = circuits.get(x['circuit'], {})
+    w = [x['gp'], _gp_base(x['gp']), c.get('gp', ''), re.sub(r'(市街地コース|インターナショナル|サーキット)', '', c.get('name', '')).strip(), x['circuit']]
+    return [v for v in w + GP_EXTRA.get(x['circuit'], []) if v and len(v) >= 3]
+
+
+def gp_link(a):
+    s = GP_OF.get(a['id'])
+    return (s, GPS[s]) if s else (None, None)
+
+
+def _cols_for_gp(x, circuits):
+    """Columns of one race weekend: a column with a circuit field belongs to that circuit; others are matched by
+    the GP / circuit names in their title, label and tags, within the weekend's dates (nearest race wins)."""
+    def hit(col, y):
+        if col.get('circuit'):
+            return col['circuit'] == y['circuit']
+        return any(w in col['txt'] for w in _gp_words(y, circuits))
+    out = []
+    for col in ALL_COLS:
+        dt = col['dt']
+        if not (x['date'] - timedelta(days=14) <= dt <= x['date'] + timedelta(days=9)) or not hit(col, x):
+            continue
+        near = min((y for y in GPS.values() if hit(col, y)), key=lambda y: abs((y['date'] - dt).total_seconds()))
+        if near['slug'] == x['slug']:
+            out.append(col)
+    return out
+
+
+def _hubs_for(pred):
+    return [H for H in hubs_newest() if pred(H)]
+
+
+def _day_list(arts, flag_of):
+    rows, last = [], None
+    for a in arts:
+        dd = when(a).astimezone(JST)
+        key = f'{dd.year}年{dd.month}月{dd.day}日（{"月火水木金土日"[dd.weekday()]}）'
+        if key != last:
+            if last is not None:
+                rows.append('</ul>')
+            rows.append(f'<h3 class="day">{key}</h3><ul class="list">')
+            last = key
+        rows.append(item_li(a, flag_of))
+    if last is not None:
+        rows.append('</ul>')
+    return ''.join(rows)
+
+
+def _crumbs_ld(items):
+    return ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+        {'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(items)]})
+
+
+def _map_svg(c):
+    if not c or not c.get('path'):
+        return ''
+    st = c.get('start')
+    return ('<svg class="ent-map" viewBox="0 0 100 100" role="img" aria-label="' + e(c.get('name', '')) + 'のコース図">'
+            f'<path class="u" d="{c["path"]}"/><path class="t" d="{c["path"]}"/>'
+            + (f'<circle cx="{st[0]}" cy="{st[1]}" r="2.6"/>' if st else '') + '</svg>')
+
+
+def build_gp_pages(flag_of, circuits):
+    if not GPS:
+        return []
+    sm = []
+    order = sorted(GPS.values(), key=lambda x: x['date'])
+    for i, x in enumerate(order):
+        x['cols'] = _cols_for_gp(x, circuits)
+        base = _gp_base(x['gp'])
+        x['hubs'] = _hubs_for(lambda H: H.get('gp') and (H['gp'] in (x['gp'], base) or _gp_base(H['gp']) == base))
+    for i, x in enumerate(order):
+        slug, url = x['slug'], f'{SITE}/gp/{x["slug"]}/'
+        y = x['date'].year
+        title = f'{y} {x["gp"]}'
+        facts = []
+        if x.get('round'):
+            facts.append(f'第{x["round"]}戦')
+        facts.append(f'決勝 {x["date"].month}月{x["date"].day}日')
+        facts.append(x['cname'])
+        if x.get('winner'):
+            facts.append(f'優勝 {x["winner"]}')
+        jump = []
+        if x['hubs']:
+            jump.append('<a href="#gp-story">STORY</a>')
+        if x['cols']:
+            jump.append(f'<a href="#gp-cols">コラム（{len(x["cols"])}本）</a>')
+        jump.append(f'<a href="#gp-news">ニュース（{len(x["arts"])}本）</a>')
+        b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/gp/">GPごとに読む</a> › {e(x["gp"])}</nav>',
+             _map_svg(circuits.get(x['circuit'])),
+             f'<p class="ent-k">GRAND PRIX {y}</p><h1>{e(title)}</h1>',
+             '<p class="ent-facts">' + ''.join(f'<span>{e(f)}</span>' for f in facts) + '</p>',
+             f'<p class="lead">{e(x["gp"])}の週末を、F1 Grid Walk で読めるものすべてで振り返るページです。世界のニュースの要約、コラム、STORY を集めています。</p>',
+             '<div class="ent-jump">' + ''.join(jump) + '</div>']
+        if x['hubs']:
+            b.append('<section id="gp-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/gp/{slug}/story') for H in x['hubs']) + '</ul></section>')
+        if x['cols']:
+            b.append('<section id="gp-cols"><h2>コラム</h2><ul class="col-list">' + ''.join(col_li(c, f'click/gp/{slug}/col') for c in x['cols']) + '</ul></section>')
+        b.append(f'<section id="gp-news"><h2>ニュース（{len(x["arts"])}本）</h2><p class="lead">新しい順。見出しを押すと、日本語の要約と原文へのリンクがあります。</p>'
+                 + _day_list(x['arts'], flag_of) + '</section>')
+        pn = []
+        if i > 0:
+            pv = order[i - 1]
+            pn.append(f'<a href="/gp/{pv["slug"]}/" data-track="click/gp/{slug}/prev">← {e(pv["gp"])}</a>')
+        else:
+            pn.append('<span></span>')
+        if i + 1 < len(order):
+            nx = order[i + 1]
+            pn.append(f'<a href="/gp/{nx["slug"]}/" data-track="click/gp/{slug}/next">{e(nx["gp"])} →</a>')
+        b.append('<div class="ent-pn">' + ''.join(pn) + '</div>')
+        b.append('<p class="ent-more"><a href="/gp/">ほかのGPを見る</a><a href="/teams/">チームごとに読む</a><a href="/news/">ニュース一覧</a></p>')
+        head = (f'<style>{ENT_CSS}{YK_CSS}{ALLCOL_CSS}</style>\n'
+                + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('GPごとに読む', SITE + '/gp/'), (x['gp'], url)]))
+        desc = f'{title}（第{x["round"]}戦）のニュース{len(x["arts"])}本の日本語要約と、コラム・STORY をまとめて。' if x.get('round') else f'{title}のニュースとコラムをまとめて。'
+        write(f'gp/{slug}/index.html', page(f'{title} ニュースまとめ｜F1グリッドウォーク', desc, url, '\n'.join(b), head, og_type='website'))
+        last = max([when(a) for a in x['arts']] + [c['dt'] for c in x['cols']])
+        sm.append((url, last.isoformat(timespec='seconds'), None, '0.7'))
+    items = ''.join(
+        f'<li><a href="/gp/{x["slug"]}/" data-track="click/gp-index/{x["slug"]}"><small>{x["date"].year} · 第{x["round"]}戦 · {x["date"].month}/{x["date"].day}</small>'
+        f'<b>{e(x["gp"])}</b><span>ニュース {len(x["arts"])}本' + (f' · コラム {len(x["cols"])}本' if x['cols'] else '') + (f' · STORY {len(x["hubs"])}本' if x['hubs'] else '')
+        + (f' · 優勝 {e(x["winner"])}' if x.get('winner') else '') + '</span></a></li>' for x in reversed(order))
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › GPごとに読む</nav><p class="ent-k">GRAND PRIX</p><h1>GPごとに読む</h1>'
+            '<p class="lead">レースの週末ごとに、ニュース・コラム・STORY をまとめています。新しいレースから順に。</p>'
+            f'<ul class="ent-grid">{items}</ul><p class="ent-more"><a href="/teams/">チームごとに読む</a><a href="/news/">ニュース一覧</a></p>')
+    write('gp/index.html', page('GPごとのF1ニュースまとめ｜F1グリッドウォーク', 'F1の各グランプリの週末を、世界のニュースの日本語要約とコラムでまとめて読めます。',
+                                SITE + '/gp/', body, f'<style>{ENT_CSS}</style>\n', og_type='website'))
+    sm.append((SITE + '/gp/', max(u[1] for u in sm), 'daily', '0.7'))
+    return sm
+
+
+def build_team_pages(allarts, flag_of, teams):
+    sm, cards = [], []
+    for k, t in teams.items():
+        arts = [a for a in allarts if k in (a.get('teams') or [])]
+        if len(arts) < GP_MIN:
+            continue
+        name, en = t.get('name') or k, t.get('en') or ''
+        cols = [c for c in ALL_COLS if k in (c.get('teams') or []) or ('#' + name) in c.get('txt', '') or name in c['title']]
+        def team_hub(H):
+            ids = [o.get('id') for o in H.get('outlets', [])]
+            hit = sum(1 for i in ids if i in ARCH_IDS and k in (ARCH_IDS[i].get('teams') or []))
+            return name in H.get('title', '') or (ids and hit * 2 >= len(ids))
+        hubs = _hubs_for(team_hub)
+        url = f'{SITE}/teams/{k}/'
+        jump = (['<a href="#tm-story">STORY</a>'] if hubs else []) + ([f'<a href="#tm-cols">コラム（{len(cols)}本）</a>'] if cols else []) + [f'<a href="#tm-news">ニュース（{len(arts)}本）</a>']
+        b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/teams/">チームごとに読む</a> › {e(name)}</nav>',
+             f'<p class="ent-k">{e(en.upper())}</p><h1>{e(name)}のニュース・コラム</h1>',
+             f'<p class="lead">{e(name)}に関する世界のF1ニュースの日本語要約と、コラム・STORY を新しい順に集めています。</p>',
+             '<div class="ent-jump">' + ''.join(jump) + '</div>']
+        if hubs:
+            b.append('<section id="tm-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/team/{k}/story') for H in hubs) + '</ul></section>')
+        if cols:
+            b.append('<section id="tm-cols"><h2>コラム</h2><ul class="col-list">' + ''.join(col_li(c, f'click/team/{k}/col') for c in cols[:20]) + '</ul></section>')
+        b.append(f'<section id="tm-news"><h2>ニュース（{len(arts)}本）</h2>' + _day_list(arts, flag_of) + '</section>')
+        b.append('<p class="ent-more"><a href="/teams/">ほかのチームを見る</a><a href="/gp/">GPごとに読む</a><a href="/news/">ニュース一覧</a></p>')
+        head = f'<style>{ENT_CSS}{YK_CSS}{ALLCOL_CSS}</style>\n' + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('チームごとに読む', SITE + '/teams/'), (name, url)])
+        write(f'teams/{k}/index.html', page(f'{name}（{en}）のF1ニュース・コラム｜F1グリッドウォーク',
+                                            f'{name}（{en}）に関する世界のF1ニュース{len(arts)}本の日本語要約と、コラム・STORY をまとめて。', url, '\n'.join(b), head, og_type='website'))
+        sm.append((url, when(arts[0]).isoformat(timespec='seconds'), None, '0.6'))
+        cards.append((len(arts), k, name, en, len(cols), arts[0]))
+    if not cards:
+        return []
+    cards.sort(reverse=True)
+    items = ''.join(f'<li><a href="/teams/{k}/" data-track="click/team-index/{k}"><small>{e(en)}</small><b>{e(name)}</b>'
+                    f'<span>ニュース {n}本' + (f' · コラム {nc}本' if nc else '') + f'<br>最新：{e(la["title"])}</span></a></li>' for n, k, name, en, nc, la in cards)
+    body = ('<nav class="crumbs"><a href="/">トップ</a> › チームごとに読む</nav><p class="ent-k">TEAMS</p><h1>チームごとに読む</h1>'
+            '<p class="lead">好きなチームのニュースとコラムを、まとめて読めます。記事の多いチームから順に。</p>'
+            f'<ul class="ent-grid two">{items}</ul><p class="ent-more"><a href="/gp/">GPごとに読む</a><a href="/news/">ニュース一覧</a></p>')
+    write('teams/index.html', page('チームごとのF1ニュース｜F1グリッドウォーク', 'F1の11チームそれぞれのニュースの日本語要約とコラムを、チームごとにまとめて読めます。',
+                                   SITE + '/teams/', body, f'<style>{ENT_CSS}</style>\n', og_type='website'))
+    sm.append((SITE + '/teams/', max(u[1] for u in sm), 'daily', '0.7'))
+    return sm
+
+
+ARCH_IDS = {}
+ALLARTS = []
+NEWS_TOP = 100   # /news/ shows the newest articles; every month has its own page
+
+
+def build_news_lists(allarts, flag_of):
+    months = {}
+    for a in allarts:
+        d = when(a).astimezone(JST)
+        months.setdefault((d.year, d.month), []).append(a)
+    keys = sorted(months, reverse=True)
+    def nav(cur=None):
+        return '<nav class="mon-nav" aria-label="月ごとの一覧">' + ''.join(
+            (f'<b>{y}年{m}月（{len(months[(y, m)])}本）</b>' if (y, m) == cur else
+             f'<a href="/news/{y}-{m:02d}/" data-track="click/news/month/{y}-{m:02d}">{y}年{m}月（{len(months[(y, m)])}本）</a>') for y, m in keys) + '</nav>'
+    ways = ('<p class="ent-more"><a href="/gp/" data-track="click/news/gp">GPごとに読む</a>'
+            '<a href="/teams/" data-track="click/news/teams">チームごとに読む</a></p>')
+    sm = []
+    for (y, m) in keys:
+        arts = months[(y, m)]
+        url = f'{SITE}/news/{y}-{m:02d}/'
+        body = (f'<nav class="crumbs"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › {y}年{m}月</nav>'
+                f'<h1>{y}年{m}月のF1ニュース</h1><p class="lead">この月に紹介した世界のF1ニュース {len(arts)} 本。新しい順。</p>'
+                + nav((y, m)) + ways + _day_list(arts, flag_of))
+        write(f'news/{y}-{m:02d}/index.html', page(f'{y}年{m}月のF1ニュース一覧｜F1グリッドウォーク',
+                                                  f'{y}年{m}月に紹介した世界のF1ニュース{len(arts)}本。各国の記事の見出しを日本語にして、要約と原文へのリンクを付けています。',
+                                                  url, body, f'<style>{ENT_CSS}</style>\n', og_type='website'))
+        sm.append((url, when(arts[0]).isoformat(timespec='seconds'), None, '0.5'))
+    top = allarts[:NEWS_TOP]
+    lst = ('<nav class="crumbs"><a href="/">トップ</a> › ニュース一覧</nav><h1>ニュース一覧</h1>'
+           f'<p class="lead">これまでに紹介した世界のF1ニュースは {len(allarts)} 本。各国の記事の見出しを日本語にして、短い要約と原文へのリンクを付けています。'
+           f'ここには新しい {len(top)} 本を並べています。それより前の記事は、月ごとの一覧からどうぞ。</p>'
+           + nav() + ways + '<h2 style="font-size:18px;margin:26px 0 0">新しい記事</h2>' + _day_list(top, flag_of)
+           + '<section><h2>月ごとの一覧</h2>' + nav() + '</section>')
+    write('news/index.html', page('ニュース一覧｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1ニュースを日本語の見出しと要約で。これまでに紹介した記事の一覧です。',
+                                  SITE + '/news/', lst, f'<style>{ENT_CSS}</style>\n', og_type='website'))
+    return sm
+
+
+PERSON_STOP = {'ジョージ', 'マックス', 'ニコ', 'キミ', 'キー', 'Key', 'ブラウン', 'Brown', 'アレックス', 'ルイス', 'シャルル', 'ランド', 'オスカー',
+               'カルロス', 'フェルナンド', 'ランス', 'ピエール', 'エステバン', 'オリバー', 'リアム', 'アイザック', 'ガブリエル', 'アンドレア', 'トト', 'セラ', 'ボノ'}
+
+
+def person_news(p, allarts, n=8):
+    """Newest news that names this person (full name or a surname alias no one else shares)."""
+    if not hasattr(person_news, 'shared'):
+        cnt = {}
+        for q in PEOPLE:
+            for nm in set([q['name'], q.get('en', '')] + q.get('aliases', [])):
+                cnt[nm] = cnt.get(nm, 0) + 1
+        person_news.shared = {k for k, v in cnt.items() if v > 1}
+    names = [nm for nm in _kw_names([p['name'], p.get('en', '')] + p.get('aliases', []))
+             if nm not in PERSON_STOP and nm not in person_news.shared and (len(nm) >= 3 or re.search(r'[一-龯]', nm))]
+    out = []
+    for a in allarts:
+        text = a['title'] + ' ' + a.get('summary', '')
+        if any(_kw_hit(nm, text) for nm in names):
+            out.append(a)
+            if len(out) >= n:
+                break
+    return out
+
+
 def main():
     global FLAGS, LOGO
     FLAGS, flag_map, LOGO = shared_css()
@@ -2460,6 +2768,10 @@ def main():
     for a in allarts:
         region_of.setdefault(a['source'], a.get('region'))
     flag_of = lambda a: flag_map.get(region_of.get(a['source']) or '', 'xx')
+    ARCH_IDS.update({a['id']: a for a in allarts})
+    ALLARTS[:] = allarts
+    plan_gps(allarts, circuits)
+    team_pages = {k for k in teams if sum(1 for a in allarts if k in (a.get('teams') or [])) >= GP_MIN}
 
     by_topic = {}
     for a in allarts:
@@ -2511,9 +2823,13 @@ def main():
         tags = []
         for tk in a.get('teams') or []:
             if tk in teams:
-                tags.append(f'<span>{e(teams[tk].get("en") or teams[tk].get("name"))}</span>')
+                tn_ = e(teams[tk].get("en") or teams[tk].get("name"))
+                tags.append(f'<a href="/teams/{tk}/" data-track="click/tag/team/{tk}">{tn_}</a>' if tk in team_pages else f'<span>{tn_}</span>')
+        gs, gx = gp_link(a)
         c = circuits.get(a.get('circuit') or '')
-        if c:
+        if gs:
+            tags.append(f'<a href="/gp/{gs}/" data-track="click/tag/gp/{gs}">{e(gx["gp"])}</a>')
+        elif c:
             tags.append(f'<span>{e(c.get("gp", ""))}</span>')
         if a.get('cat'):
             tags.append(f'<span>{e(a["cat"])}</span>')
@@ -2541,7 +2857,9 @@ def main():
             if same:
                 tn = teams[tk].get('name') or teams[tk].get('en')
                 body.append(f'<section><h2>{e(tn)}の記事</h2><ul class="list">'
-                            + ''.join(item_li(x, flag_of) for x in same) + '</ul></section>')
+                            + ''.join(item_li(x, flag_of) for x in same) + '</ul>'
+                            + (f'<p><a href="/teams/{tk}/" data-track="click/news/team-all/{tk}">{e(tn)}の記事をすべて見る →</a></p>' if tk in team_pages else '')
+                            + '</section>')
                 shown |= {x['id'] for x in same}
         latest = [x for x in allarts if x['id'] not in shown and x.get('topic') != a.get('topic')][:6]
         if latest:
@@ -2567,25 +2885,8 @@ def main():
                  page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head, og_image=og_url)):
             changed += 1
 
-    # the list page: every article, newest first, grouped by day (JST)
-    rows, last = [], None
-    for a in allarts:
-        dd = when(a).astimezone(JST)
-        key = f'{dd.year}年{dd.month}月{dd.day}日（{"月火水木金土日"[dd.weekday()]}）'
-        if key != last:
-            if last is not None:
-                rows.append('</ul>')
-            rows.append(f'<h2 class="day">{key}</h2><ul class="list">')
-            last = key
-        rows.append(item_li(a, flag_of))
-    if last is not None:
-        rows.append('</ul>')
-    lst = ('<nav class="crumbs"><a href="/">トップ</a> › ニュース一覧</nav>'
-           '<h1>ニュース一覧</h1>'
-           f'<p class="lead">これまでに紹介した世界のF1ニュース {len(allarts)} 本。各国の記事の見出しを日本語にして、短い要約と原文へのリンクを付けています。新しい順。</p>'
-           + ''.join(rows))
-    write('news/index.html', page('ニュース一覧｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1ニュースを日本語の見出しと要約で。これまでに紹介した記事の一覧です。',
-                                  SITE + '/news/', lst, og_type='website'))
+    # the list pages: the newest articles on /news/, every month on its own page (14 Oct 2026)
+    month_sm = build_news_lists(allarts, flag_of)
 
     # sitemap
     now = datetime.now(JST).isoformat(timespec='seconds')
@@ -2596,6 +2897,9 @@ def main():
     urls += build_all_columns()
     urls += build_rules()
     urls += build_hubs(arch, flag_of)
+    urls += month_sm
+    urls += build_gp_pages(flag_of, circuits)
+    urls += build_team_pages(allarts, flag_of, teams)
     top_rules_slot()
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lm, cf, pr in urls:

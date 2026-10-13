@@ -75,7 +75,8 @@ h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-wei
 .cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
 .credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
-.tags span{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags span,.tags a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags a{color:var(--ink);text-decoration:none;font-weight:700}.tags a::after{content:" →";color:var(--clay)}
 .share{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;align-items:center;font-size:13px;color:var(--muted)}
 .share a,.share button{font:inherit;font-size:13px;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;text-decoration:none;cursor:pointer}
 section{margin:40px 0 0;padding-top:22px;border-top:1px solid var(--line)}
