@@ -1,22 +1,33 @@
 {
- "updatedAt": "2026-10-13T12:40:00+09:00",
+ "updatedAt": "2026-10-13T18:20:00+09:00",
  "notes": [
   {
-   "id": "note-sentaroh-russell-struggle-structure",
-   "platform": "note",
-   "site": "sentaroh_f1",
+   "id": "blog-f1laptime-singapore-review",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Takumi",
+   "title": "シンガポールGPレビュー",
+   "summary": "フェルスタッペンがレースペースでルクレールを約0.3秒上回り、39周目のVSCでも残留が正解だったとの見立てを示したレビュー。アントネッリのタイトル決定の条件や、中東2戦が不透明な日程への疑問にも触れている。",
+   "url": "https://f1-lap-time.com/?page_id=17623",
+   "published": "2026-10-13T12:00:00+09:00",
+   "circuit": "singapore"
+  },
+  {
+   "id": "blog-f1laptime-singapore-pitstop",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
    "lang": "ja",
    "paid": false,
    "cat": "分析",
-   "author": "sentaroh_f1",
-   "title": "新世代マシンが炙り出した「王者との距離」——ラッセル苦戦の構造を読む",
-   "summary": "ラッセルの今季の苦戦を個人の衰えではなく新世代規則の構造変化として読む分析。スプリント週末は練習走行が1回しかなく、セットアップの詰める余地が少ないことも影響したと見る。レッドブルのチームメイトたちがフェルスタッペンに近いのも、勢力図のリセットで適応の速さが差になっているという見立てだ。",
-   "url": "https://note.com/sentaroh_f1/n/n5c64dda9616f",
-   "published": "2026-09-29T17:50:00+09:00",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ]
+   "author": "Takumi",
+   "title": "2026年シンガポールGP ピットストップ分析",
+   "summary": "シンガポールGPの各ドライバーのピット作業の静止時間とピットレーン通過時間を比較した分析。停止時間はフェルスタッペンの2.20秒が最速で、ストロール、アントネッリが続いたと整理している。ボックス性能の大半は21〜22秒の狭い範囲に収まるという。",
+   "url": "https://f1-lap-time.com/?page_id=17643",
+   "published": "2026-10-13T12:00:00+09:00",
+   "circuit": "singapore"
   },
   {
    "id": "note-formula1report-aston-race-analysis-singapore",
@@ -805,21 +816,6 @@
    "teams": [
     "redbull"
    ],
-   "circuit": "sepang"
-  },
-  {
-   "id": "substack-somersf1-sepang-asphalt-tyre-wear",
-   "platform": "substack",
-   "site": "SomersF1",
-   "lang": "en",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Dr. Campbell Waddell",
-   "title": "セパンの舗装がタイヤ摩耗にどう影響するか　F1復帰の週末を読む",
-   "orig": "How Sepang's asphalt may shape tyre wear on Formula 1's return",
-   "summary": "F1が走ったことのない2023年の再舗装区間と、古く摩耗した路面が混在する点に注目。バーレーンに近い粗い路面のため、タイヤの摩耗と熱管理が大きな課題になり、路面の骨材が剥がれる恐れもあると指摘する。写真やMotoGPのデータだけでは予測しきれず、週末は読みにくいという見立て。",
-   "url": "https://somersf1.substack.com/p/how-sepangs-asphalt-may-shape-tyre",
-   "published": "2026-10-01T23:00:00+09:00",
    "circuit": "sepang"
   }
  ]
