@@ -1797,6 +1797,17 @@ def build_rules():
             try: os.rmdir(os.path.join(rdir, d))
             except OSError: pass
     write('deep/rules/search.json', json.dumps(search, ensure_ascii=False, separators=(',', ':')) + '\n')
+    # logo mini-game: daily rule quiz (owner's choice, 13 Oct 2026). Small file: id, name, cat, short.
+    # Entries whose short text gives away the name (or an alias) are left out.
+    quiz = []
+    for t in R['terms']:
+        nm = re.sub(r'（[^）]*）', '', t['term']).strip()
+        words = [nm, t['term']] + [a for a in (t.get('aliases') or []) if len(a) >= 2]
+        sh = t.get('short') or ''
+        if not sh or any(w and w in sh for w in words):
+            continue
+        quiz.append({'id': t['id'], 'n': nm, 'c': t['cat'], 's': sh})
+    write('deep/rules/quiz.json', json.dumps({'terms': quiz}, ensure_ascii=False, separators=(',', ':')) + '\n')
     sugg = ''.join(f'<button type="button">{e(w)}</button>' for w in ['降格', 'DRS', 'ハジャー', '折原', 'ADUO'])
     body = ('<nav class="crumbs"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › ルールブック</nav><div class="dg">'
             f'<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>RULES</i></b><span>{DEEP_COPY}</span></div></div>'

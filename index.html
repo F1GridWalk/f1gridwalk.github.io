@@ -150,6 +150,29 @@ body[data-v="data"] .dash-side{margin-top:6px}
 .lo-btns .lo-go{background:#F3EFE6;color:#1F2420;border-color:#F3EFE6}
 .lo-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:#F3EFE6;font:700 20px/40px sans-serif;cursor:pointer}
 .lo-hint{font-size:12px;color:#8E9187;margin:14px 0 0}
+/* logo mini-games: rule quiz + circuit quiz (owner's choice, 13 Oct 2026) */
+.lo{overflow-y:auto}
+.lo-box{margin:auto;padding-top:44px}
+.lo-tabs{display:flex;justify-content:center;gap:6px;margin:0 auto 18px;padding:4px;border:1px solid #2C302B;border-radius:999px;width:max-content;max-width:100%}
+.lo-tabs button{font:inherit;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:#C9C4B8;background:transparent;border:0;border-radius:999px;padding:8px 12px;cursor:pointer;white-space:nowrap}
+.lo-tabs button[aria-selected="true"]{background:#F3EFE6;color:#1F2420}
+.lo-pane[hidden]{display:none !important}
+.qz-cat{display:inline-block;font-size:11.5px;font-weight:700;color:#E8946C;border:1px solid #6B3E2A;border-radius:999px;padding:3px 10px;margin:0 0 10px}
+.qz-q{font-size:13.5px;color:#C9C4B8;margin:0 0 8px}
+.qz-s{font-size:17px;font-weight:700;line-height:1.7;margin:0 0 16px;text-align:left;background:#111311;border:1px solid #2C302B;border-radius:12px;padding:14px 16px}
+.qz-ops{display:grid;gap:8px;text-align:left}
+.qz-ops button{font:inherit;font-size:15px;font-weight:700;line-height:1.45;color:#F3EFE6;background:#171917;border:1px solid #3A3E37;border-radius:12px;padding:12px 14px;cursor:pointer;text-align:left}
+.qz-ops button small{display:block;font-size:12px;font-weight:500;color:#A9A497;margin-top:2px}
+.qz-ops button:disabled{cursor:default;opacity:.55}
+.qz-ops button.ok{opacity:1;border-color:#4CAF6E;background:#173222}
+.qz-ops button.ng{opacity:1;border-color:#E05A4F;background:#3A1714}
+.qz-fb{font-size:15px;font-weight:700;margin:14px 0 0;min-height:1.5em}
+.qz-fb a{display:inline-block;margin-top:6px;font-size:13.5px;font-weight:700;color:#E8946C}
+.qz-score{font:700 44px/1.1 'IBM Plex Mono',ui-monospace,Menlo,monospace;margin:4px 0 6px}
+.trk-svg{display:block;width:min(240px,62vw);height:auto;margin:0 auto 14px;background:#111311;border:1px solid #2C302B;border-radius:14px;padding:10px}
+.trk-svg .u{fill:none;stroke:#2C302B;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.trk-svg .t{fill:none;stroke:#F3EFE6;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.trk-svg circle{fill:#E8946C}
 </style>
 </head>
 <body>
@@ -1623,7 +1646,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 <header class="top">
   <div class="wrap">
     <div class="brand-wrap">
-    <a class="brand" href="#top" aria-label="F1 Grid Walk（押すとスタート反応ゲーム）" aria-haspopup="dialog" aria-expanded="false" aria-controls="lights">
+    <a class="brand" href="#top" aria-label="F1 Grid Walk（押すとミニゲーム）" aria-haspopup="dialog" aria-expanded="false" aria-controls="lights">
         <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg>
         <span class="brand-words"><span class="brand-f1">F1</span><span class="brand-name">Grid Walk</span><span class="brand-desk" aria-hidden="true">WORLD F1 DESK</span></span>
       </a>
@@ -3066,15 +3089,19 @@ j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
   set(start,false);
 })();
 </script>
-<div class="lo" id="lights" role="dialog" aria-modal="true" aria-label="スタート反応ゲーム" hidden>
+<div class="lo" id="lights" role="dialog" aria-modal="true" aria-label="ミニゲーム" hidden>
   <button type="button" class="lo-x" aria-label="閉じる">×</button>
   <div class="lo-box">
-    <p class="lo-k">LIGHTS OUT</p>
+    <div class="lo-tabs" role="tablist" aria-label="ゲームを選ぶ"><button type="button" role="tab" data-g="lights" aria-selected="true">LIGHTS OUT</button><button type="button" role="tab" data-g="quiz" aria-selected="false">用語クイズ</button><button type="button" role="tab" data-g="trk" aria-selected="false">サーキット当て</button></div>
+    <div class="lo-pane" data-p="lights">
     <div class="lo-gantry" aria-hidden="true"><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div><div class="lo-pod"><i></i><i></i></div></div>
     <p class="lo-msg" id="lo-msg" aria-live="polite"></p>
     <div id="lo-res" hidden><p class="lo-time" id="lo-time"></p><p class="lo-sub" id="lo-sub"></p></div>
     <div class="lo-btns" id="lo-btns" hidden><button type="button" class="lo-go" id="lo-again">もう一度</button><a id="lo-share" target="_blank" rel="noopener">Xで共有</a></div>
     <p class="lo-hint">画面のどこを押してもOK（パソコンはスペースキーも可）</p>
+    </div>
+    <div class="lo-pane" data-p="quiz" hidden aria-live="polite"></div>
+    <div class="lo-pane" data-p="trk" hidden aria-live="polite"></div>
   </div>
 </div>
 <script>
@@ -3106,13 +3133,111 @@ j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
     share.href='https://x.com/intent/tweet?text='+encodeURIComponent('F1のスタート反応テスト、'+t.toFixed(3)+'秒でした（'+verdict(t)+'）\n#F1GridWalk')+'&url='+encodeURIComponent('https://f1gridwalk.github.io/');
     ev('lights/result/'+(t<0.2?'lt200':t<0.25?'lt250':t<0.32?'lt320':'slow'));
   }
-  function open(){ ov.hidden=false; document.body.style.overflow='hidden'; ev('click/logo/lights'); start(); }
+  var game='lights';
+  function show(g){ game=g; [].forEach.call(ov.querySelectorAll('.lo-tabs button'),function(b){ b.setAttribute('aria-selected', b.getAttribute('data-g')===g?'true':'false'); });
+    [].forEach.call(ov.querySelectorAll('.lo-pane'),function(p){ p.hidden=p.getAttribute('data-p')!==g; });
+    if(g==='lights') start(); else { clear(); state='idle'; if(window.__gwGames) window.__gwGames(g, ov.querySelector('.lo-pane[data-p="'+g+'"]'), ev); } }
+  function open(){ ov.hidden=false; document.body.style.overflow='hidden'; ev('click/logo/lights'); show('lights'); }
   function close(){ clear(); state='idle'; ov.hidden=true; document.body.style.overflow=''; }
   window.__gwLights=open;
-  ov.addEventListener('pointerdown',function(e){ if(e.target.closest('.lo-x,.lo-btns')) return; e.preventDefault(); tap(); });
+  [].forEach.call(ov.querySelectorAll('.lo-tabs button'),function(b){ b.addEventListener('click',function(){ var g=b.getAttribute('data-g'); if(g===game) return; ev('games/tab/'+g); show(g); }); });
+  ov.addEventListener('pointerdown',function(e){ if(game!=='lights'||e.target.closest('.lo-x,.lo-btns,.lo-tabs')) return; e.preventDefault(); tap(); });
   ov.querySelector('.lo-x').addEventListener('click',close);
   document.getElementById('lo-again').addEventListener('click',start);
-  document.addEventListener('keydown',function(e){ if(ov.hidden) return; if(e.key==='Escape') close(); else if(e.key===' '||e.key==='Enter'){ if(state==='done'&&e.key==='Enter') return; e.preventDefault(); if(state==='done') start(); else tap(); } });
+  document.addEventListener('keydown',function(e){ if(ov.hidden) return; if(e.key==='Escape') close(); else if(game==='lights'&&!(e.target.closest&&e.target.closest('.lo-tabs'))&&(e.key===' '||e.key==='Enter')){ if(state==='done'&&e.key==='Enter') return; e.preventDefault(); if(state==='done') start(); else tap(); } });
+})();
+</script>
+<script>
+/* logo mini-games 2 and 3: daily rule quiz (from the rulebook) and circuit quiz (owner's choice, 13 Oct 2026) */
+(function(){
+  var SITE='https://f1gridwalk.github.io/', data={};
+  function el(t,c,txt){ var x=document.createElement(t); if(c) x.className=c; if(txt!=null) x.textContent=txt; return x; }
+  function rng(seed){ return function(){ seed=seed+0x6D2B79F5|0; var t=Math.imul(seed^seed>>>15,1|seed); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+  function hash(s){ var h=2166136261; for(var i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
+  function shuf(a,r){ a=a.slice(); for(var i=a.length-1;i>0;i--){ var j=Math.floor(r()*(i+1)), t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+  function today(){ return new Date(Date.now()+9*3600e3).toISOString().slice(0,10); }
+  function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function load(k,u){ if(data[k]) return Promise.resolve(data[k]); return fetch(u).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ data[k]=j; return j; }); }
+  function xlink(text){ var a=el('a',null,'Xで共有'); a.target='_blank'; a.rel='noopener'; a.href='https://x.com/intent/tweet?text='+encodeURIComponent(text+'\n#F1GridWalk')+'&url='+encodeURIComponent(SITE); return a; }
+
+  /* one engine for both: qs = [{head(node), ops:[{n,sub}], ans, after(ok)->node}] */
+  function play(pane, label, qs, ev, key, done){
+    var i=0, score=0;
+    function step(){
+      pane.innerHTML=''; var q=qs[i];
+      pane.appendChild(el('p','lo-k',label+'　'+(i+1)+' / '+qs.length));
+      q.head(pane);
+      var ops=el('div','qz-ops'), fb=el('div','qz-fb'), nx=el('div','lo-btns'); nx.hidden=true;
+      q.ops.forEach(function(o,k){ var b=el('button',null,o.n); b.type='button'; if(o.sub) b.appendChild(el('small',null,o.sub));
+        b.addEventListener('click',function(){ var ok=k===q.ans; if(ok) score++;
+          [].forEach.call(ops.children,function(x,m){ x.disabled=true; if(m===q.ans) x.classList.add('ok'); else if(m===k) x.classList.add('ng'); });
+          fb.appendChild(el('div',null, ok?'正解！':'正解は「'+q.ops[q.ans].n+'」'+(q.ops[q.ans].sub?'（'+q.ops[q.ans].sub+'）':''))); var a=q.after&&q.after(); if(a) fb.appendChild(a);
+          ev(key+'/ans/'+(ok?'ok':'ng'));
+          var go=el('button','lo-go', i+1<qs.length?'次の問題':'結果を見る'); go.type='button'; go.addEventListener('click',function(){ i++; if(i<qs.length) step(); else done(score); });
+          nx.appendChild(go); nx.hidden=false; go.focus(); });
+        ops.appendChild(b); });
+      pane.appendChild(ops); pane.appendChild(fb); pane.appendChild(nx);
+    }
+    step();
+  }
+  function msgFor(sc,n){ return sc===n?'全問正解！ 見事です':sc>=n-1?'あと一歩！':sc>0?'いい勝負でした':'次はきっと当たります'; }
+
+  /* ---- rule quiz: the same 3 questions for everyone each day (JST), then free practice */
+  function quiz(pane, ev, mode){
+    pane.innerHTML='<p class="lo-msg">読み込み中…</p>';
+    load('quiz','/deep/rules/quiz.json').then(function(j){
+      var T=j.terms, day=today(), daily=mode!=='more', r=daily?rng(hash('gw-quiz-'+day)):Math.random;
+      var prev=lsGet('gw-quiz-day'); if(daily&&prev&&prev.split(':')[0]===day&&mode!=='replay') return end(+prev.split(':')[1], true);
+      var cats={}, qs=[]; T.forEach(function(t){ (cats[t.c]=cats[t.c]||[]).push(t); });
+      shuf(Object.keys(cats).sort(),r).slice(0,3).forEach(function(c){
+        var pool=shuf(cats[c],r), a=pool[0], ops=shuf(pool.slice(0,4),r);
+        qs.push({ ans:ops.indexOf(a), ops:ops.map(function(t){ return {n:t.n}; }),
+          head:function(p){ p.appendChild(el('span','qz-cat',c)); p.appendChild(el('p','qz-q','この説明は、どの用語？')); p.appendChild(el('p','qz-s',a.s)); },
+          after:function(){ var l=el('a',null,'「'+a.n+'」を辞典で読む →'); l.href='/deep/rules/'+a.id+'/'; l.addEventListener('click',function(){ ev('quiz/rule/'+a.id); }); return l; } });
+      });
+      play(pane, daily?'今日の用語クイズ':'用語クイズ（練習）', qs, ev, 'quiz', function(sc){ if(daily) lsSet('gw-quiz-day', day+':'+sc); ev('quiz/done/'+(daily?'day':'more')+'/'+sc); end(sc, daily); });
+    }).catch(function(){ pane.innerHTML='<p class="lo-msg">読み込めませんでした。時間をおいてもう一度どうぞ。</p>'; });
+    function end(sc, daily){
+      pane.innerHTML='';
+      pane.appendChild(el('p','lo-k', daily?'今日の用語クイズ　結果':'用語クイズ（練習）　結果'));
+      pane.appendChild(el('p','qz-score', sc+' / 3'));
+      pane.appendChild(el('p','lo-msg', msgFor(sc,3)));
+      pane.appendChild(el('p','lo-sub','今日の3問は、毎日0時（日本時間）に入れかわります。'));
+      var b=el('div','lo-btns'), more=el('button','lo-go','別の3問に挑戦'); more.type='button';
+      more.addEventListener('click',function(){ ev('quiz/more'); quiz(pane, ev, 'more'); });
+      var rb=el('a',null,'ルールブックを見る'); rb.href='/deep/rules/'; rb.addEventListener('click',function(){ ev('quiz/rules'); });
+      b.appendChild(more); if(daily) b.appendChild(xlink('F1 Grid Walk の「今日の用語クイズ」、3問中'+sc+'問正解でした')); b.appendChild(rb);
+      pane.appendChild(b);
+    }
+  }
+
+  /* ---- circuit quiz: 5 shapes from this season's calendar */
+  function trk(pane, ev){
+    pane.innerHTML='<p class="lo-msg">読み込み中…</p>';
+    Promise.all([load('c','/circuits.json'), load('s','/season.json')]).then(function(v){
+      var C=v[0].circuits, ids=[];
+      (v[1].calendar||[]).forEach(function(x){ if(C[x.circuit]&&ids.indexOf(x.circuit)<0) ids.push(x.circuit); });
+      var r=Math.random, qs=shuf(ids,r).slice(0,5).map(function(id){
+        var ops=[id].concat(shuf(ids.filter(function(x){ return x!==id; }),r).slice(0,3)); ops=shuf(ops,r); var c=C[id];
+        return { ans:ops.indexOf(id), ops:ops.map(function(x){ return {n:C[x].name, sub:C[x].gp}; }),
+          head:function(p){ var NS='http://www.w3.org/2000/svg', s=document.createElementNS(NS,'svg'); s.setAttribute('viewBox','0 0 100 100'); s.setAttribute('class','trk-svg'); s.setAttribute('role','img'); s.setAttribute('aria-label','コースの形');
+            ['u','t'].forEach(function(k){ var pa=document.createElementNS(NS,'path'); pa.setAttribute('d',c.path); pa.setAttribute('class',k); s.appendChild(pa); });
+            if(c.start){ var ci=document.createElementNS(NS,'circle'); ci.setAttribute('cx',c.start[0]); ci.setAttribute('cy',c.start[1]); ci.setAttribute('r','2.6'); s.appendChild(ci); }
+            p.appendChild(s); p.appendChild(el('p','qz-q','このコースはどこ？（オレンジの点がスタート）')); } };
+      });
+      play(pane,'サーキット当て', qs, ev, 'trk', function(sc){
+        var best=parseInt(lsGet('gw-trk-best'),10); var nb=isNaN(best)||sc>best; if(nb){ best=sc; lsSet('gw-trk-best',String(sc)); }
+        ev('trk/done/'+sc);
+        pane.innerHTML=''; pane.appendChild(el('p','lo-k','サーキット当て　結果')); pane.appendChild(el('p','qz-score', sc+' / 5'));
+        pane.appendChild(el('p','lo-msg', msgFor(sc,5))); pane.appendChild(el('p','lo-sub', nb?'自己ベスト更新！':'自己ベスト '+best+' / 5'));
+        var b=el('div','lo-btns'), ag=el('button','lo-go','もう一度'); ag.type='button'; ag.addEventListener('click',function(){ trk(pane, ev); });
+        b.appendChild(ag); b.appendChild(xlink('F1 Grid Walk の「サーキット当て」、5問中'+sc+'問正解でした')); pane.appendChild(b);
+      });
+    }).catch(function(){ pane.innerHTML='<p class="lo-msg">読み込めませんでした。時間をおいてもう一度どうぞ。</p>'; });
+  }
+
+  window.__gwGames=function(g, pane, ev){ ev(g+'/open'); if(g==='quiz') quiz(pane, ev); else trk(pane, ev); };
 })();
 </script>
 </body>
