@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T18:20:00+09:00",
+ "updatedAt": "2026-10-14T00:40:00+09:00",
  "topics": {
   "alonso-singapore-pu-change": {
    "title": "アロンソのホンダPU不調 決勝後に配備と扱いの問題を指摘",
@@ -55,6 +55,55 @@
   }
  },
  "articles": [
+  {
+   "id": "ja-f1gate-redbull-wache-pu-rating",
+   "kind": "tech",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "テクニカル",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-pu-wache-rating",
+   "title": "レッドブル技術責任者、自社製PUの完成度は「10点中4か5」",
+   "summary": "レッドブルのワッシュ技術責任者はRacingNews365の取材に、自社製パワーユニットの完成度を10点満点で「4か5くらい」と自己評価した。伸びしろは非常に大きいとも認めている。2026年はフォードと共同開発した初の自製PUで、序盤は苦戦したがフェルスタッペンがマレーシアとシンガポールで連勝した。課題はエンジン部門とシャシー部門の統合で、開発サイクルの違いから作業の進め方や考え方が異なると述べた。FIAの内燃機関評価ではレッドブルが最高とされ、追加の開発措置の対象外になっている。",
+   "orig": "レッドブルF1技術責任者 自社製PUの完成度は「まだ4～5割」",
+   "url": "https://f1-gate.com/redbull/228536.html",
+   "published": "2026-10-13T21:53:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-aston-honda-drivability",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "astonmartin"
+   ],
+   "circuit": "singapore",
+   "topic": "aston-honda-drivability",
+   "title": "アストンマーティン・ホンダ、加速不良の原因は「エンジン出力だけではない」",
+   "summary": "シンガポールGPで苦戦したアストンマーティン・ホンダについて、クラックは出力だけでなくブースト低下、シフト応答、エネルギー管理など複合的なドライバビリティの問題があると語った。症状は毎周起きるわけではなく数値化しにくく、他チームにもあると述べている。ホンダの折原氏は、同サーキットは出力感度が低くエネルギー管理の差が出たと説明した。アロンソのターボは事前に交換されたが、旧品に異常はなかったとされ、遅れの原因は特定されていない。両車とも予選Q1敗退でノーポイントに終わり、次戦は長い直線のあるアメリカGPとなる。",
+   "orig": "アストンマーティン・ホンダF1 加速不良の原因は「エンジン出力だけではない」",
+   "url": "https://f1-gate.com/astonmartin/228512.html",
+   "published": "2026-10-13T22:41:00+09:00"
+  },
+  {
+   "id": "en-therace-f1-rwanda-african-gp",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "カレンダー",
+   "topic": "rwanda-african-gp",
+   "title": "F1が2030年代にアフリカ復帰、ルワンダで10年契約の新レース",
+   "summary": "F1は2030年代初頭からルワンダでグランプリを開催する10年契約を発表した。会場はキガリの南約40kmのブゲセラに新設されるサーキットで、初開催の日程や整備の節目は後日明らかにされる。実現すれば1993年の南アフリカGP以来のアフリカ開催となり、ヤルマが検討されながら合意に至らなかった経緯がある。長年アフリカ開催を訴えてきたハミルトンは現役続行も口にしていたが、時期が遠く難しくなったと同媒体は見る。一方でアムネスティは国のイメージ戦略を「スポーツウォッシング」と批判している。",
+   "orig": "F1 to return to Africa with new race in Rwanda",
+   "url": "https://www.the-race.com/formula-1/f1-to-return-to-africa-with-new-race-in-rwanda/",
+   "published": "2026-10-13T12:00:00+01:00"
+  },
   {
    "id": "en-therace-mclaren-season-slump",
    "kind": "news",
@@ -1450,62 +1499,6 @@
    "orig": "Dit is waarom Verstappen zondag in Singapore al bij de start kan verliezen",
    "url": "https://www.gpblog.com/nl/nieuws/dit-is-waarom-verstappen-zondag-in-singapore-al-bij-de-start-kan-verliezen",
    "published": "2026-10-10T21:03:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-grid-reshuffle-alonso-engine",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "astonmartin",
-    "mercedes"
-   ],
-   "topic": "alonso-singapore-pu-change",
-   "title": "アロンソのPU交換でシンガポールGPのグリッドが再編、数台が1つ繰り上がる",
-   "summary": "アロンソは予選Q1で敗退して17番手となり、アストンマーティンは一晩でパワーユニットを交換するため、決勝は後方からのスタートになる。ラッセルも40グリッド降格で最後尾付近に回る。この影響でアルボン、ストロール、ペレス、ボッタス、ハジャーなど数台が1つずつ前に上がる。ポールはフェルスタッペンの50回目だった。",
-   "orig": "Startgrid Grand Prix van Singapore op de schop na motorwissel",
-   "url": "https://www.gpblog.com/nl/nieuws/startgrid-grand-prix-van-singapore-op-de-schop-na-motorwissel",
-   "published": "2026-10-10T20:32:00+02:00"
-  },
-  {
-   "id": "de-mst-hadjar-red-bull-apologises",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "hadjar-red-bull-struggle",
-   "title": "ハジャーに2戦続けてトラブル、レッドブル代表メキースが謝罪",
-   "summary": "ハジャーはスプリントでパワーユニット、予選ではギアボックスの不調に見舞われ、予選ではタイムを残せず決勝は最後尾付近からのスタートになる。メキース代表はレッドブルの責任を認めて本人に謝罪した。チームはRB22の一部部品を交換し、長い決勝でポイントに届くよう走行を重ねさせたい考えだ。ハジャーは「今回はまだ自分の週末ではない」と話した。",
-   "orig": "Nichts läuft bei Isack Hadjar: Red Bull entschuldigt sich",
-   "url": "https://www.motorsport-total.com/formel-1/news/nichts-laeuft-bei-isack-hadjar-red-bull-entschuldigt-sich-26101015",
-   "published": "2026-10-10T20:31:00+02:00"
-  },
-  {
-   "id": "de-mst-wolff-verstappen-dominant",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "wolff-verstappen-dominant",
-   "title": "ヴォルフ「フェルスタッペンは今や明らかに支配的」　レッドブルの復調に驚き",
-   "summary": "メルセデスのヴォルフ代表は、2戦連続でポールを獲得したフェルスタッペンを「明らかに支配的」と評した。レッドブルの改良はフェルスタッペンに合わせた方向で、チームメイトには効きにくいとの見方も示した。一方でフェルスタッペンはランキング首位のアントネッリと129点差で、タイトル争いはほぼ絶たれたと同記事は伝える。メケス代表は結果を過大評価すべきではないとしつつ、3つの異なるサーキットでの速さを大きな成果とした。",
-   "orig": "Toto Wolff: \"Max Verstappen ist jetzt eindeutig dominierend\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/toto-wolff-max-verstappen-ist-jetzt-eindeutig-dominierend-26101014",
-   "published": "2026-10-10T20:00:00+02:00"
   }
  ]
 }
