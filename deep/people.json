@@ -2298,20 +2298,22 @@
     "ジャンピエーロ・ランビアーゼ",
     "Gianpiero Lambiase"
    ],
-   "role": "ヘッド・オブ・レーシング兼マックス・フェルスタッペンのレースエンジニア",
+   "role": "ヘッド・オブ・レーシング（フェルスタッペンのレースエンジニアは後任へ引き継ぎ中）",
    "org": "レッドブル",
-   "short": "レッドブルのヘッド・オブ・レーシング兼フェルスタッペンのレースエンジニア。マクラーレンへの移籍が決まっており、加入は遅くとも2028年。ブラウンCEOは2027年中の加入に楽観的。",
+   "short": "レッドブルのヘッド・オブ・レーシング。長くフェルスタッペンのレースエンジニアを務めてきたが、2026年のアメリカ、ブラジル、ラスベガスGPでは後任のトム・ハートが担当し、本人はレース部門の責任者として現場に残る。マクラーレン加入は遅くとも2028年で、開始時期と休養期間はレッドブルとマクラーレンが話し合っている。",
    "avoid": [
     "2027年以降も「レッドブルのヘッド・オブ・レーシング」と書く（2027年初めからトム・マッカローが同職に就くとレッドブルが発表）",
     "マクラーレンの役職（チーフ・レーシング・オフィサー）を現職として書く（就任は遅くとも2028年）",
-    "マクラーレン加入を「2027年」と断定して書く（公式発表は「遅くとも2028年」。2027年はブラウンCEOの楽観的な見通し）"
+    "マクラーレン加入を「2027年」と断定して書く（公式発表は「遅くとも2028年」。2027年はブラウンCEOの楽観的な見通し）",
+    "2026年のアメリカGP以降のすべてのレースで担当を外れたと書く（レッドブルが確認したのは、アメリカ、ブラジル、ラスベガスの3戦をトム・ハートが担当すること）",
+    "シンガポールGPを「フェルスタッペンと組む最後のレース」と断定して書く（一部の報道の見方。チームは明言していない）"
    ],
    "words": [
     "レッドブル",
     "フェルスタッペン",
     "レースエンジニア",
     "マクラーレン",
-    "チーフ・レーシング・オフィサー"
+    "トム・ハート"
    ],
    "sources": [
     {
@@ -2343,10 +2345,20 @@
      "name": "RacingNews365",
      "title": "McLaren set latest timeline for Gianpiero Lambiase arrival from Red Bull（2026年10月5日、ブラウン「来年のどこかでパパイヤ色の彼を見られると楽観している」）",
      "url": "https://racingnews365.com/mclaren-set-latest-timeline-for-gianpiero-lambiase-arrival-from-red-bull"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Verstappen überrascht von Lambiase-Geste: \"Damit hatte ich nicht gerechnet\"（2026年10月12日、ハートがオースティン、ブラジル、ラスベガスで担当とレッドブルが確認。ランビアーゼはその週末もレース部門の責任者として現場に。マクラーレンと開始時期・休養期間を協議中）",
+     "url": "https://www.motorsport-total.com/formel-1/news/verstappen-ueberrascht-von-lambiase-geste-damit-hatte-ich-nicht-gerechnet-26101204"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "McLaren pushing to accelerate Max Verstappen ally's Red Bull exit - report（2026年9月12日、マクラーレンが加入の前倒しを協議中との報道）",
+     "url": "https://racingnews365.com/mclaren-pushing-to-accelerate-max-verstappen-allys-red-bull-exit---report"
     }
    ],
    "appears": [],
-   "checked": "2026-10-09"
+   "checked": "2026-10-13"
   },
   {
    "id": "david-sanchez",
@@ -3162,6 +3174,149 @@
    ],
    "appears": [],
    "checked": "2026-10-09"
+  },
+  {
+   "id": "tom-hart",
+   "name": "トム・ハート",
+   "kana": "",
+   "en": "Tom Hart",
+   "aliases": [
+    "ハート",
+    "Tom Hart"
+   ],
+   "role": "パフォーマンスエンジニア（フェルスタッペン担当）。2026年のアメリカ、ブラジル、ラスベガスGPではレースエンジニア",
+   "org": "レッドブル",
+   "short": "レッドブルでフェルスタッペンを担当するパフォーマンスエンジニア。フェルスタッペンが、ランビアーゼの後任のレースエンジニアになると認めた。2026年のアメリカ、ブラジル、ラスベガスの3戦ではレースエンジニアを務めるとレッドブルが確認した。ウィリアムズへ移る予定だったが、残留した。",
+   "avoid": [
+    "2026年のアメリカGP以降の全レースでレースエンジニアと書く（レッドブルが確認したのはアメリカ、ブラジル、ラスベガスの3戦）",
+    "正式な後任の就任時期を断定して書く（Motorsport-Total.comによると公式の日付はまだない）",
+    "ウィリアムズ（アルボン担当）への移籍を今も予定として書く（レッドブル残留で取りやめ）"
+   ],
+   "words": [
+    "レッドブル",
+    "フェルスタッペン",
+    "レースエンジニア",
+    "ランビアーゼの後任",
+    "パフォーマンスエンジニア"
+   ],
+   "sources": [
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Verstappen überrascht von Lambiase-Geste: \"Damit hatte ich nicht gerechnet\"（2026年10月12日、ハートがオースティン、ブラジル、ラスベガスで担当とレッドブルが確認。ランビアーゼはその週末もレース部門の責任者として現場に。マクラーレンと開始時期・休養期間を協議中）",
+     "url": "https://www.motorsport-total.com/formel-1/news/verstappen-ueberrascht-von-lambiase-geste-damit-hatte-ich-nicht-gerechnet-26101204"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Red Bull appoint new Max Verstappen race engineer after Gianpiero Lambiase exit（2026年7月18日、2020年1月からフェルスタッペンのパフォーマンスエンジニア、ウィリアムズ移籍を取りやめ）",
+     "url": "https://racingnews365.com/red-bull-appoint-new-max-verstappen-race-engineer-after-gianpiero-lambiase-exit"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Max Verstappen confirms Gianpiero Lambiase successor at Red Bull（2026年7月25日、Verstappen's performance engineer for several years）",
+     "url": "https://racingnews365.com/max-verstappen-confirms-gianpiero-lambiase-successor-at-red-bull"
+    },
+    {
+     "name": "GPFans",
+     "title": "Red Bull star makes U-turn over shock F1 exit（2026年7月20日、アルボンのレースエンジニアとしてウィリアムズへ移る予定だった）",
+     "url": "https://www.gpfans.com/en/f1-news/1087938/red-bull-f1-tom-hart-transfer-williams-gianpiero-lambiase-replacement-max-verstappen/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-13"
+  },
+  {
+   "id": "bryan-bozzi",
+   "name": "ブライアン・ボッツィ",
+   "kana": "",
+   "en": "Bryan Bozzi",
+   "aliases": [
+    "ボッツィ",
+    "Bozzi"
+   ],
+   "role": "レースエンジニア（ルクレール担当）",
+   "org": "フェラーリ",
+   "short": "フェラーリでルクレールを担当するレースエンジニア。2024年5月のエミリア・ロマーニャGPから、ルクレールのパフォーマンスエンジニアから昇格した。2026年も担当を続けている。",
+   "avoid": [
+    "前任のシャビ・マルコスと混同する（マルコスは2019年から2024年途中までの担当）"
+   ],
+   "words": [
+    "フェラーリ",
+    "ルクレール",
+    "レースエンジニア",
+    "無線"
+   ],
+   "sources": [
+    {
+     "name": "GPFans",
+     "title": "Leclerc krijgt vanaf race in Imola te maken met nieuwe race engineer: Bryan Bozzi（2024年5月9日、フェラーリの発表：パフォーマンスエンジニアからレースエンジニアへ）",
+     "url": "https://www.gpfans.com/nl/f1-nieuws/1020196/leclerc-krijgt-vanaf-gp-imola-te-maken-met-nieuwe-race-engineer-bryan-bozzi/"
+    },
+    {
+     "name": "Pit Debrief",
+     "title": "2026 F1 race engineers: A full list（2026年1月3日、2月12日更新。Leclerc: Bryan Bozzi）",
+     "url": "https://www.pitdebrief.com/?p=88761"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 2026: Meet the stars of team radio - race engineers（2026年2月19日、Leclerc: Bryan Bozzi）",
+     "url": "https://www.gpfans.com/en/f1-news/1076588/f1-race-engineers/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-13"
+  },
+  {
+   "id": "peter-bonnington",
+   "name": "ピーター・ボニントン",
+   "kana": "",
+   "en": "Peter Bonnington",
+   "aliases": [
+    "ボノ",
+    "ボニントン",
+    "Bono",
+    "Peter Bonnington"
+   ],
+   "role": "ヘッド・オブ・レースエンジニアリング兼アントネッリのレースエンジニア",
+   "org": "メルセデス",
+   "short": "メルセデスのレースエンジニア部門の責任者で、アントネッリのレースエンジニア。2024年8月に部門の責任者へ昇格した。愛称は「ボノ」。",
+   "avoid": [
+    "フェラーリでハミルトンを担当していると書く（フェラーリへは移っていない）"
+   ],
+   "words": [
+    "メルセデス",
+    "アントネッリ",
+    "レースエンジニア",
+    "ボノ"
+   ],
+   "sources": [
+    {
+     "name": "RACER",
+     "title": "Bonnington gets Mercedes promotion, ending Ferrari speculation（2024年8月21日、head of race engineering、2025年も1人のレースエンジニアを兼ねる）",
+     "url": "https://racer.com/2024/08/21/bonnington-gets-mercedes-promotion-ending-ferrari-speculation/"
+    },
+    {
+     "name": "Pit Debrief",
+     "title": "2026 F1 race engineers: A full list（2026年1月3日、Kimi Antonelli: Peter Bonnington）",
+     "url": "https://www.pitdebrief.com/?p=88761"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Mercedes confirms cause of Kimi Antonelli scare in Singapore GP（2026年10月11日、レースエンジニアのボニントン）",
+     "url": "https://www.planetf1.com/news/mercedes-confirms-kimi-antonelli-singapore-gp-scare"
+    },
+    {
+     "name": "autosport web",
+     "title": "ボノがハミルトンとともにフェラーリへ移籍しないのは「正しい」と元エンジニア（2024年10月2日、「“ボノ”ことピーター・ボニントン」表記）",
+     "url": "https://www.as-web.jp/f1/1133548"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 2026: Meet the stars of team radio - race engineers（2026年2月19日、head of race engineering、アントネッリのレースエンジニアを継続）",
+     "url": "https://www.gpfans.com/en/f1-news/1076588/f1-race-engineers/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-13"
   }
  ]
 }
