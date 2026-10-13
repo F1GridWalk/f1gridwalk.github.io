@@ -1,13 +1,9 @@
 {
- "updatedAt": "2026-10-14T00:40:00+09:00",
+ "updatedAt": "2026-10-14T06:20:00+09:00",
  "topics": {
   "alonso-singapore-pu-change": {
    "title": "アロンソのホンダPU不調 決勝後に配備と扱いの問題を指摘",
    "summary": "アストンマーティン・ホンダはシンガポールGPでアロンソのPUを決勝前に交換したが、不調は解消しきれず、アロンソは16位に終わった。アロンソは地元紙ASで「ターボが壊れていた」と述べたが、ホンダの折原チーフエンジニアは「壊れてはおらず、アロンソの意見を受けて交換した」と反論した。データには今のところ異常がなく、アメリカGP前に桜の拠点で詳しく調べる。アロンソはVSC後を中心にエネルギーを適切に使えず順位を失ったとも指摘している。"
-  },
-  "ferrari-singapore-pole-lost": {
-   "title": "フェラーリはなぜシンガポールのポールを逃したか",
-   "summary": "フェルスタッペンのポールとの差は、ルクレールが0.054秒、ハミルトンが0.123秒だった。ルクレールはブレーキの不調と最終アタックのミス、ハミルトンはQ1、Q2の最速からQ3前のセットアップ変更で車のバランスを崩したことを敗因に挙げる。路面のラバー乗りもあって原因の切り分けは難しかったとされる。ルクレールは決勝のストレートでレッドブルが速いと見て、スタートでの勝負を狙っている。"
   },
   "singapore-gp-verstappen-win": {
    "title": "フェルスタッペンがシンガポール初優勝　ハミルトンは戦略ミスで6位",
@@ -55,6 +51,60 @@
   }
  },
  "articles": [
+  {
+   "id": "ja-f1gate-van-langendonck-f4-title",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "ドライバー",
+   "teams": [
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "van-langendonck-british-f4-title",
+   "title": "フェルスタッペンが支援する16歳、英国F4王座を獲得 マクラーレンも育成",
+   "summary": "ベルギー出身の16歳ドリース・ファン・ランゲンドンクが、ブランズハッチで2位に入り、2026年の英国F4選手権でタイトルを確定させた。ロディン・モータースポーツから参戦し、残り2ラウンドを残しての王座で、今季は8勝を挙げている。マクラーレンの育成プログラムに所属し、7月からはフェルスタッペン・レーシングの支援も受けている。記事によれば、レッドブルのジュニアチームには属しておらず、4度の世界王者であるフェルスタッペンが潜在能力を高く評価しているという。",
+   "orig": "マックス・フェルスタッペン育成の16歳 英国F4王座獲得 マクラーレンF1も支援",
+   "url": "https://f1-gate.com/verstappen/228372.html",
+   "published": "2026-10-14T05:36:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-wolff-antonelli-cushion",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "決勝",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "singapore",
+   "topic": "antonelli-track-limits-no-penalty",
+   "title": "メルセデス代表、アントネッリのトラック制限違反に「座布団を敷いてやる」",
+   "summary": "シンガポールGPで3位に入ったアントネッリは、トラックリミット違反を繰り返し、無線でウルフ代表から「座布団を敷けばコースの縁が見えるかも」と冗談を言われた。違反は決勝中に4回記録され、折り返し時点で3回に達しており、チームは相当なストレスを感じたという。ウルフ代表は、それだけ限界まで攻めていた証拠だと述べ、冷静にレースを運んだ成熟ぶりも評価した。ターン7の違反はブレーキの不具合が原因とされ、ペナルティ対象から外れた。終盤にハミルトンとノリスを抜き、選手権リードは102点に広がった。",
+   "orig": "メルセデスF1代表 アントネッリのトラックリミット違反連発に「座布団を敷いてやる」",
+   "url": "https://f1-gate.com/mercedes-benz/228458.html",
+   "published": "2026-10-13T20:43:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-alonso-verstappen-pit-blueflag",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "決勝",
+   "teams": [
+    "astonmartin"
+   ],
+   "circuit": "singapore",
+   "topic": "alonso-energy-radio",
+   "title": "アロンソ、フェルスタッペンのピットインに激怒「予測できないのか」",
+   "summary": "シンガポールGP決勝で、アストンマーティン・ホンダのアロンソは周回遅れとして青旗を受け、首位フェルスタッペンに道を譲った。その数コーナー後にフェルスタッペンがピットへ入り、アロンソは約2秒を失ったと無線で不満を訴えた。1周あたり約0.1秒ずつ詰めていたため、取り戻すには約20周かかるとも話し、エンジニアに予測できなかったのかと問いかけた。記事は、フェルスタッペン側に手順違反はなく、チームが対応を読み切れなかった点が問題だと整理している。アロンソは16位で、チームはノーポイントだった。",
+   "orig": "フェルナンド・アロンソ フェルスタッペンのピットインで激怒「予測できないのか！」",
+   "url": "https://f1-gate.com/alonso/228486.html",
+   "published": "2026-10-13T20:04:00+09:00"
+  },
   {
    "id": "ja-f1gate-redbull-wache-pu-rating",
    "kind": "tech",
@@ -1445,60 +1495,6 @@
    "orig": "英メディア：TGRハースF1、オコン後任カマラ説が弱まり現在はドゥーハンと一騎打ちになってるらしい",
    "url": "https://f1jouhou2.com/blog-entry-31687.html",
    "published": "2026-10-11T12:00:00+09:00"
-  },
-  {
-   "id": "de-mst-fia-verdicts-guilty-no-penalty",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "cadillac",
-    "racingbulls",
-    "williams"
-   ],
-   "topic": "singapore-sprint-fia-verdicts",
-   "title": "シンガポール・スプリントの審議、複数ドライバーが「非がある」と認定されながら罰則なし",
-   "summary": "スチュワードはスプリント後の複数の事案で、ペレスらに非があると認めつつ罰則を科さなかった。ペレスはストロールとの接触で5秒加算相当とされたが、リタイアしたため適用されなかった。リンドブラッドは約100メートル逆走したものの、対向車がなく危険ではないと判断された。アルボンとボッタスの追突も、完走していれば5秒加算の対象だったという。",
-   "orig": "Schuldig, aber ohne Strafe: Kuriose FIA-Urteile nach Singapur-Sprint",
-   "url": "https://www.motorsport-total.com/formel-1/news/schuldig-aber-ohne-strafe-kuriose-fia-urteile-nach-singapur-sprint-26101016",
-   "published": "2026-10-10T21:59:00+02:00"
-  },
-  {
-   "id": "it-formula1it-race-strategy-intermediates",
-   "kind": "tech",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "テクニカル",
-   "circuit": "singapore",
-   "topic": "singapore-race-tyre-strategy",
-   "title": "シンガポールGPの戦略：ピレリはソフトスタートの1ストップを推奨、スリックのデータはなし",
-   "summary": "スプリントが全てインターミディエイトで行われたため、ドライバーはスリックタイヤの走行データを持たずに日曜の決勝を迎える。ピレリはグリップに優れるソフト(C5)でのスタートを勧め、2ストップは追い抜きが難しいため勧めていない。執筆者はソフトからハードへの1ストップを予想し、セーフティカーが出れば戦略が変わる可能性を指摘した。",
-   "orig": "GP Singapore - Possibili strategie: piloti completamente al buio",
-   "url": "https://www.formula1.it/news/33178/1/gp-singapore-possibili-strategie-piloti-completamente-al-buio",
-   "published": "2026-10-10T21:30:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-verstappen-start-risk",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "verstappen-red-bull-starts",
-   "title": "フェルスタッペンは日曜のスタートで負けるおそれ、ターン1後の首位が鍵",
-   "summary": "フェルスタッペンはポールからスタートするが、マレーシアとスプリントで続けて出遅れ、スプリントではラッセルに抜かれた。レッドブルのメキース代表は、今季のフェラーリはスタートが強いと警告している。マリーナベイは追い抜きが難しく、ターン1を過ぎて先頭にいる者がレースをほぼ握るという。同記事は、再び出遅れれば決勝は苦しくなると指摘する。",
-   "orig": "Dit is waarom Verstappen zondag in Singapore al bij de start kan verliezen",
-   "url": "https://www.gpblog.com/nl/nieuws/dit-is-waarom-verstappen-zondag-in-singapore-al-bij-de-start-kan-verliezen",
-   "published": "2026-10-10T21:03:00+02:00"
   }
  ]
 }
