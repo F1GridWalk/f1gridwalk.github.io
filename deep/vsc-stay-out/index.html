@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VSCで「入らない」のが正しい時はあるのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク</title>
+<meta name="description" content="バーチャルセーフティカー（VSC）が出たら、ピットに入るのが得。そう言われるのはなぜか。それでもコースに残るのが正しい時はあるのか。シンガポールの39周目、ハミルトンは入らずに表彰台を失った。数字と過去のレースから、その分かれ目をほどく。">
+<link rel="canonical" href="https://f1gridwalk.github.io/deep/vsc-stay-out/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="F1 Grid Walk" href="/feed.xml">
+<meta name="apple-mobile-web-app-title" content="Grid Walk">
+<meta name="application-name" content="Grid Walk">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="F1 Grid Walk">
+<meta property="og:title" content="VSCで「入らない」のが正しい時はあるのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク">
+<meta property="og:description" content="バーチャルセーフティカー（VSC）が出たら、ピットに入るのが得。そう言われるのはなぜか。それでもコースに残るのが正しい時はあるのか。シンガポールの39周目、ハミルトンは入らずに表彰台を失った。数字と過去のレースから、その分かれ目をほどく。">
+<meta property="og:url" content="https://f1gridwalk.github.io/deep/vsc-stay-out/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://f1gridwalk.github.io/deep/vsc-stay-out/og.png?v=c1d2409a">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://f1gridwalk.github.io/deep/vsc-stay-out/og.png?v=c1d2409a">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">
+<meta property="article:published_time" content="2026-10-14T15:30:00+09:00">
+<style>
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
+.more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
+.md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
+.more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-deep ul{list-style:none;margin:0 0 16px;padding:0}
+.more-deep li{border-top:1px solid var(--line)}
+.more-deep li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-deep li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-deep li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-deep li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.md-btn{display:block;text-align:center;background:#8E2F3B;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.md-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .md-k{color:#D98C96}}
+:root[data-theme="dark"] .md-k{color:#D98C96}
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF;--tW:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}}
+:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}
+.dg-fig figcaption{font-size:14.5px;font-weight:700;line-height:1.6;margin:0 0 8px}
+.dg-fig svg{display:block;width:100%;height:auto;max-width:640px;font-family:var(--sans)}
+.dg-fig .lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
+.dg-fig .lg i{display:inline-block;width:14px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid var(--ink)}
+.dg-fig .fn{font-size:12px;color:var(--muted);line-height:1.7;margin:6px 0 0}
+.dg-fig .t{fill:var(--ink);font-size:12px}.dg-fig .ts{fill:var(--muted);font-size:10.5px}.dg-fig .tv{fill:var(--ink);font-size:12px;font-weight:700}
+.dg-fig .ax{stroke:var(--line);stroke-width:1}.dg-fig .mk{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.dg-fig .sg:hover rect,.dg-fig .br:hover rect{opacity:.8}
+.dg-fig .zs{display:grid;gap:8px;margin:8px 0 0;max-width:640px}
+.dg-fig .zs b{display:block;font-size:13px}.dg-fig .zs span{display:block;font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+.dg-rel-l{list-style:none;margin:0;padding:0}
+.dg-rel-l li{border-top:1px solid var(--line)}
+.dg-rel-l li:first-child{border-top:0}
+.dg-rel-l a{display:block;padding:10px 0;color:var(--ink);text-decoration:none}
+.dg-rel-l small{display:block;font-size:12.5px;font-weight:700;color:var(--clay);line-height:1.6}
+.dg-rel-l b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-rel-l span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.dg-rel-l a:hover b{text-decoration:underline;text-underline-offset:3px}
+
+.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--line:#C9CBC6;background:var(--bg);color:var(--tx);border:2px solid var(--bd);border-radius:22px;overflow:hidden;margin:20px 0 10px;padding-bottom:14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}}
+:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}
+.rbx .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em}
+.rbx-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;background:var(--hd);color:var(--hdt)}
+.rbx-hd b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:18px;letter-spacing:.2em}
+.rbx-hd span{font-size:10.5px}
+.rbx p.rbx-lead{margin:12px 16px 0;font-size:14px;font-weight:700;line-height:1.6}
+.rbx form,.rbx .rbx-f{display:flex;gap:8px;margin:10px 12px 0}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 42px;border:2px solid var(--line);border-radius:999px;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx);outline:none}
+.rbx input::placeholder{color:var(--sub)}
+.rbx-in{position:relative;flex:1;min-width:0;display:flex}
+.rbx-in input{padding-right:42px}
+.rbx input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}
+.rbx .rbx-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:50%;background:var(--sub);color:var(--inp);font:700 17px/30px sans-serif;text-align:center;padding:0;cursor:pointer}
+.rbx .rbx-x[hidden]{display:none}
+.rbx input:focus{border-color:#F2C230}
+.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--btn);color:var(--btnt);cursor:pointer}
+.rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
+.rbx-all:hover{text-decoration:underline}
+.rbx p.rbx-cnt{margin:10px 16px 0;font-size:11px;line-height:1.4;color:var(--sub)}
+
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "VSCで「入らない」のが正しい時はあるのか", "description": "バーチャルセーフティカー（VSC）が出たら、ピットに入るのが得。そう言われるのはなぜか。それでもコースに残るのが正しい時はあるのか。シンガポールの39周目、ハミルトンは入らずに表彰台を失った。数字と過去のレースから、その分かれ目をほどく。", "datePublished": "2026-10-14T15:30:00+09:00", "dateModified": "2026-10-14T15:30:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=2"], "mainEntityOfPage": "https://f1gridwalk.github.io/deep/vsc-stay-out/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "DEEP GRID", "keywords": ["作戦", "レース運営", "タイヤ"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "DEEP GRID", "item": "https://f1gridwalk.github.io/deep/"}, {"@type": "ListItem", "position": 3, "name": "VSCで「入らない」のが正しい時はあるのか", "item": "https://f1gridwalk.github.io/deep/vsc-stay-out/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
+.bt{display:none}
+@media (max-width:520px){
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
+.bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bt .on{color:var(--ink)}
+.bt .on svg{stroke-width:2.3}
+body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
+:root{--paper:#F3EFE6;--surface:#FBF9F4;--line:#DDD5C5;--ink:#1F2420;--ink-2:#3A3E37;--muted:#5B5F57;--moss:#1F2420;--clay:#9E4E2B;--on-ink:#FBF9F4;
+--sans:'IBM Plex Sans JP','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,sans-serif;--logo:'Fraunces',Georgia,'Times New Roman',serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:1px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand b{display:block;font-family:var(--logo);font-weight:600;font-size:22px;line-height:1}
+.brand small{display:block;font-size:8.5px;font-weight:700;letter-spacing:.2em;color:var(--muted);margin-top:4px}
+.stamp-ring{fill:none;stroke:var(--moss)}.mark-line{fill:none;stroke:var(--ink);stroke-linecap:round;stroke-linejoin:round}.leaf{fill:var(--clay)}
+.toplink{font-size:13px;color:var(--muted);white-space:nowrap}
+.crumbs{font-size:12.5px;color:var(--muted);margin:22px 0 14px}
+.crumbs a{color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13px;color:var(--muted)}
+.srcbadge{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--c,var(--ink-2))}
+.srcbadge::before{content:"";width:15px;height:10px;border-radius:2px;flex-shrink:0;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.kind{display:inline-flex;align-items:center;padding:0 8px;border-radius:5px;font-size:11.5px;font-weight:700;letter-spacing:.06em;line-height:20px;white-space:nowrap;--k:var(--ink);border:1px solid var(--k);color:var(--k);background:color-mix(in srgb,var(--k) 9%,transparent)}
+.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}
+.kind.rumor,.kind.fan{border-style:dashed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}}
+h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-weight:700;letter-spacing:.01em}
+.orig{font-size:13.5px;color:var(--muted);margin:0 0 20px}
+.summary{font-size:17px;line-height:1.95;margin:0 0 22px}
+.warn{font-size:13.5px;border:1px dashed var(--clay);color:var(--ink-2);padding:10px 14px;border-radius:10px;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 8px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
+.cta:hover{color:var(--on-ink);opacity:.9}
+.cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
+.credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
+.tags span,.tags a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags a{color:var(--ink);text-decoration:none;font-weight:700}.tags a::after{content:" →";color:var(--clay)}
+.share{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;align-items:center;font-size:13px;color:var(--muted)}
+.share a,.share button{font:inherit;font-size:13px;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;text-decoration:none;cursor:pointer}
+section{margin:40px 0 0;padding-top:22px;border-top:1px solid var(--line)}
+section h2{font-size:18px;margin:0 0 6px}
+section .lead{font-size:14px;color:var(--ink-2);margin:0 0 14px}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.list li:last-child{border-bottom:0}
+ul.list .m{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:12px;color:var(--muted)}
+ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
+ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
+ul.list a.t:hover{text-decoration:underline}
+.day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
+.hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
+.hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
+.hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
+.hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
+footer p{margin:6px 0}
+@media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
+[data-c="jp"]{--c:#BC002D;--cs:#F7E2E6;--flag:radial-gradient(circle,#BC002D 0 27%,#FFFFFF 29%)}
+[data-c="gb"]{--c:#012169;--cs:#DFE4F2;--flag:linear-gradient(#C8102E,#C8102E) center/100% 22% no-repeat,linear-gradient(#C8102E,#C8102E) center/16% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 42% no-repeat,linear-gradient(#FFF,#FFF) center/30% 100% no-repeat,#012169}
+[data-c="us"]{--c:#0A3161;--cs:#DEE5F1;--flag:linear-gradient(#0A3161,#0A3161) top left/44% 54% no-repeat,repeating-linear-gradient(#B31942 0 15.4%,#FFFFFF 15.4% 30.8%)}
+[data-c="de"]{--c:#8A6D00;--cs:#F4ECCB;--flag:linear-gradient(#000 0 33.4%,#DD0000 33.4% 66.7%,#FFCE00 66.7%)}
+[data-c="it"]{--c:#008C45;--cs:#DDF0E5;--flag:linear-gradient(90deg,#008C45 0 33.4%,#F4F5F0 33.4% 66.7%,#CD212A 66.7%)}
+[data-c="es"]{--c:#AA151B;--cs:#F5E0E0;--flag:linear-gradient(#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75%)}
+[data-c="fr"]{--c:#0055A4;--cs:#DCE8F5;--flag:linear-gradient(90deg,#0055A4 0 33.4%,#FFFFFF 33.4% 66.7%,#EF4135 66.7%)}
+[data-c="nl"]{--c:#21468B;--cs:#DFE5F2;--flag:linear-gradient(#AE1C28 0 33.4%,#FFFFFF 33.4% 66.7%,#21468B 66.7%)}
+[data-c="br"]{--c:#008F36;--cs:#DCF1E3;--flag:radial-gradient(circle,#002776 0 20%,#FFDF00 21% 44%,#009C3B 46%)}
+[data-c="ar"]{--c:#2F7BBF;--cs:#E0EEF8;--flag:linear-gradient(#74ACDF 0 33.4%,#FFFFFF 33.4% 66.7%,#74ACDF 66.7%)}
+[data-c="mx"]{--c:#006847;--cs:#DCEFE7;--flag:linear-gradient(90deg,#006847 0 33.4%,#FFFFFF 33.4% 66.7%,#CE1126 66.7%)}
+[data-c="au"]{--c:#00247D;--cs:#DFE3F2;--flag:radial-gradient(circle at 72% 62%,#FFF 0 9%,transparent 10%),linear-gradient(#C8102E,#C8102E) 0 0/50% 50% no-repeat,#00247D}
+[data-c="be"]{--c:#9A7B00;--cs:#F4EDCC;--flag:linear-gradient(90deg,#000 0 33.4%,#FDDA24 33.4% 66.7%,#EF3340 66.7%)}
+[data-c="at"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#C8102E 0 33.4%,#FFFFFF 33.4% 66.7%,#C8102E 66.7%)}
+[data-c="ch"]{--c:#DA291C;--cs:#F7E0DE;--flag:linear-gradient(#FFF,#FFF) center/60% 20% no-repeat,linear-gradient(#FFF,#FFF) center/20% 60% no-repeat,#DA291C}
+[data-c="pt"]{--c:#046A38;--cs:#DCEFE5;--flag:linear-gradient(90deg,#046A38 0 40%,#DA291C 40%)}
+[data-c="ca"]{--c:#D80621;--cs:#F7E0E3;--flag:linear-gradient(90deg,#D80621 0 25%,#FFFFFF 25% 75%,#D80621 75%)}
+[data-c="pl"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#FFFFFF 0 50%,#DC143C 50%)}
+[data-c="fi"]{--c:#002F6C;--cs:#DFE4F0;--flag:linear-gradient(#002F6C,#002F6C) center/100% 26% no-repeat,linear-gradient(#002F6C,#002F6C) 30% 0/18% 100% no-repeat,#FFFFFF}
+[data-c="dk"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#FFF,#FFF) center/100% 20% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/14% 100% no-repeat,#C8102E}
+[data-c="se"]{--c:#006AA7;--cs:#DCEAF5;--flag:linear-gradient(#FECC02,#FECC02) center/100% 22% no-repeat,linear-gradient(#FECC02,#FECC02) 32% 0/16% 100% no-repeat,#006AA7}
+[data-c="no"]{--c:#BA0C2F;--cs:#F5DFE4;--flag:linear-gradient(#00205B,#00205B) center/100% 14% no-repeat,linear-gradient(#00205B,#00205B) 32% 0/10% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 30% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/22% 100% no-repeat,#BA0C2F}
+[data-c="mc"]{--c:#CE1126;--cs:#F7E0E3;--flag:linear-gradient(#CE1126 0 50%,#FFFFFF 50%)}
+[data-c="cn"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle at 25% 32%,#FFDE00 0 12%,transparent 13%),#DE2910}
+[data-c="kr"]{--c:#003478;--cs:#DFE4F0;--flag:radial-gradient(circle,#C60C30 0 16%,#003478 17% 27%,#FFFFFF 29%)}
+[data-c="in"]{--c:#E0701A;--cs:#F8E8DA;--flag:linear-gradient(#FF9933 0 33.4%,#FFFFFF 33.4% 66.7%,#138808 66.7%)}
+[data-c="nz"]{--c:#00247D;--cs:#DFE3F2;--flag:radial-gradient(circle at 74% 60%,#CC142B 0 8%,transparent 9%),linear-gradient(#C8102E,#C8102E) 0 0/50% 50% no-repeat,#00247D}
+[data-c="ie"]{--c:#169B62;--cs:#DCF0E6;--flag:linear-gradient(90deg,#169B62 0 33.4%,#FFFFFF 33.4% 66.7%,#FF883E 66.7%)}
+[data-c="hu"]{--c:#CD2A3E;--cs:#F6E0E3;--flag:linear-gradient(#CD2A3E 0 33.4%,#FFFFFF 33.4% 66.7%,#436F4D 66.7%)}
+[data-c="cz"]{--c:#11457E;--cs:#DFE5F0;--flag:linear-gradient(to bottom right,#11457E 0 30%,transparent 30%),linear-gradient(#FFFFFF 0 50%,#D7141A 50%)}
+[data-c="co"]{--c:#A38600;--cs:#F4EDCC;--flag:linear-gradient(#FCD116 0 50%,#003893 50% 75%,#CE1126 75%)}
+[data-c="cl"]{--c:#0039A6;--cs:#DFE4F2;--flag:linear-gradient(#0039A6,#0039A6) 0 0/34% 50% no-repeat,linear-gradient(#FFFFFF 0 50%,#D52B1E 50%)}
+[data-c="th"]{--c:#2D2A4A;--cs:#E4E3EE;--flag:linear-gradient(#A51931 0 16.6%,#F4F5F8 16.6% 33.3%,#2D2A4A 33.3% 66.6%,#F4F5F8 66.6% 83.3%,#A51931 83.3%)}
+[data-c="sg"]{--c:#EF3340;--cs:#F8E0E2;--flag:linear-gradient(#EF3340 0 50%,#FFFFFF 50%)}
+[data-c="ae"]{--c:#00732F;--cs:#DCEFE4;--flag:linear-gradient(90deg,#FF0000 0 25%,transparent 25%),linear-gradient(#00732F 0 33.4%,#FFFFFF 33.4% 66.7%,#000 66.7%)}
+[data-c="sa"]{--c:#006C35;--cs:#DCEFE4;--flag:linear-gradient(#FFF,#FFF) center 70%/60% 10% no-repeat,#006C35}
+[data-c="tr"]{--c:#E30A17;--cs:#F8DFE1;--flag:radial-gradient(circle at 40% 50%,#E30A17 0 18%,transparent 19%),radial-gradient(circle at 36% 50%,#FFF 0 24%,transparent 25%),#E30A17}
+[data-c="ru"]{--c:#0039A6;--cs:#DFE4F2;--flag:linear-gradient(#FFFFFF 0 33.4%,#0039A6 33.4% 66.7%,#D52B1E 66.7%)}
+[data-c="ua"]{--c:#0057B7;--cs:#DCE8F5;--flag:linear-gradient(#0057B7 0 50%,#FFD700 50%)}
+[data-c="gr"]{--c:#0D5EAF;--cs:#DCE8F5;--flag:repeating-linear-gradient(#0D5EAF 0 11.1%,#FFFFFF 11.1% 22.2%)}
+[data-c="ro"]{--c:#002B7F;--cs:#DFE4F2;--flag:linear-gradient(90deg,#002B7F 0 33.4%,#FCD116 33.4% 66.7%,#CE1126 66.7%)}
+[data-c="za"]{--c:#007A4D;--cs:#DCEFE7;--flag:linear-gradient(#E03C31 0 33%,#007A4D 33% 67%,#002395 67%)}
+[data-c="tw"]{--c:#000095;--cs:#E0E0F4;--flag:linear-gradient(#000095,#000095) 0 0/50% 50% no-repeat,#FE0000}
+[data-c="hk"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle,#FFF 0 18%,#DE2910 20%)}
+[data-c="qa"]{--c:#8A1538;--cs:#F3DFE5;--flag:linear-gradient(90deg,#FFFFFF 0 30%,#8A1538 30%)}
+[data-c="xx"]{--c:#5B5F57;--cs:#ECE6D8;--flag:linear-gradient(#9AA096,#9AA096)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) [data-c="jp"]{--c:#FF7A8E;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="gb"]{--c:#8FA8EE;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="us"]{--c:#8DAEE6;--cs:#1C2638}
+  :root:not([data-theme="light"]) [data-c="de"]{--c:#FFCE00;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="it"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="es"]{--c:#F48A8E;--cs:#3A2222}
+  :root:not([data-theme="light"]) [data-c="fr"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="nl"]{--c:#8FAAE6;--cs:#1D2740}
+  :root:not([data-theme="light"]) [data-c="br"]{--c:#55D283;--cs:#173020}
+  :root:not([data-theme="light"]) [data-c="ar"]{--c:#8EC8F4;--cs:#1B2B38}
+  :root:not([data-theme="light"]) [data-c="mx"]{--c:#4FC99A;--cs:#173028}
+  :root:not([data-theme="light"]) [data-c="au"]{--c:#8FA6EE;--cs:#1D2440}
+  :root:not([data-theme="light"]) [data-c="be"]{--c:#FDDA24;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="at"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="ch"]{--c:#FF8A80;--cs:#3A2322}
+  :root:not([data-theme="light"]) [data-c="pt"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="ca"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="pl"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="fi"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="dk"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
+  :root:not([data-theme="light"]) [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
+  :root:not([data-theme="light"]) [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
+  :root:not([data-theme="light"]) [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
+  :root:not([data-theme="light"]) [data-c="nz"]{--c:#8FA6EE;--cs:#1D2440}
+  :root:not([data-theme="light"]) [data-c="ie"]{--c:#55CF95;--cs:#173022}
+  :root:not([data-theme="light"]) [data-c="hu"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="cz"]{--c:#8FAAE6;--cs:#1D2740}
+  :root:not([data-theme="light"]) [data-c="co"]{--c:#FCD116;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="cl"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="th"]{--c:#A9A6D8;--cs:#24233A}
+  :root:not([data-theme="light"]) [data-c="sg"]{--c:#FF8A92;--cs:#3A2224}
+  :root:not([data-theme="light"]) [data-c="ae"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="sa"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="tr"]{--c:#FF8A90;--cs:#3A2224}
+  :root:not([data-theme="light"]) [data-c="ru"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="ua"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="gr"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="ro"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="za"]{--c:#4FC99A;--cs:#173028}
+  :root:not([data-theme="light"]) [data-c="tw"]{--c:#9A9AF0;--cs:#1E1E40}
+  :root:not([data-theme="light"]) [data-c="hk"]{--c:#FF8C7A;--cs:#3A2420}
+  :root:not([data-theme="light"]) [data-c="qa"]{--c:#F08AA6;--cs:#3A2230}
+  :root:not([data-theme="light"]) [data-c="xx"]{--c:#A5A99C;--cs:#2E332C}
+}
+:root[data-theme="dark"] [data-c="jp"]{--c:#FF7A8E;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="gb"]{--c:#8FA8EE;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="us"]{--c:#8DAEE6;--cs:#1C2638}
+:root[data-theme="dark"] [data-c="de"]{--c:#FFCE00;--cs:#35301A}
+:root[data-theme="dark"] [data-c="it"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="es"]{--c:#F48A8E;--cs:#3A2222}
+:root[data-theme="dark"] [data-c="fr"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="nl"]{--c:#8FAAE6;--cs:#1D2740}
+:root[data-theme="dark"] [data-c="br"]{--c:#55D283;--cs:#173020}
+:root[data-theme="dark"] [data-c="ar"]{--c:#8EC8F4;--cs:#1B2B38}
+:root[data-theme="dark"] [data-c="mx"]{--c:#4FC99A;--cs:#173028}
+:root[data-theme="dark"] [data-c="au"]{--c:#8FA6EE;--cs:#1D2440}
+:root[data-theme="dark"] [data-c="be"]{--c:#FDDA24;--cs:#35301A}
+:root[data-theme="dark"] [data-c="at"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="ch"]{--c:#FF8A80;--cs:#3A2322}
+:root[data-theme="dark"] [data-c="pt"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="ca"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="pl"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="fi"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="dk"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
+:root[data-theme="dark"] [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
+:root[data-theme="dark"] [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
+:root[data-theme="dark"] [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
+:root[data-theme="dark"] [data-c="nz"]{--c:#8FA6EE;--cs:#1D2440}
+:root[data-theme="dark"] [data-c="ie"]{--c:#55CF95;--cs:#173022}
+:root[data-theme="dark"] [data-c="hu"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="cz"]{--c:#8FAAE6;--cs:#1D2740}
+:root[data-theme="dark"] [data-c="co"]{--c:#FCD116;--cs:#35301A}
+:root[data-theme="dark"] [data-c="cl"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="th"]{--c:#A9A6D8;--cs:#24233A}
+:root[data-theme="dark"] [data-c="sg"]{--c:#FF8A92;--cs:#3A2224}
+:root[data-theme="dark"] [data-c="ae"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="sa"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="tr"]{--c:#FF8A90;--cs:#3A2224}
+:root[data-theme="dark"] [data-c="ru"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="ua"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="gr"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="ro"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="za"]{--c:#4FC99A;--cs:#173028}
+:root[data-theme="dark"] [data-c="tw"]{--c:#9A9AF0;--cs:#1E1E40}
+:root[data-theme="dark"] [data-c="hk"]{--c:#FF8C7A;--cs:#3A2420}
+:root[data-theme="dark"] [data-c="qa"]{--c:#F08AA6;--cs:#3A2230}
+:root[data-theme="dark"] [data-c="xx"]{--c:#A5A99C;--cs:#2E332C}
+.srcbadge::before{width:15px;height:10px;border-radius:2px;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)} }
+:root[data-theme="dark"] .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)}</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/" aria-label="F1 Grid Walk トップへ"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg><span><b>Grid Walk</b><small>WORLD F1 DESK</small></span></a>
+  <a class="toplink" href="/">最新ニュースを見る →</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › #11</nav>
+<article class="dg">
+<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>#11</i></b><span>ニュースの、その奥へ。</span></div></div>
+<h1>VSCで「入らない」のが正しい時はあるのか</h1>
+<p class="dg-dek">バーチャルセーフティカー（VSC）が出たら、ピットに入るのが得。そう言われるのはなぜか。それでもコースに残るのが正しい時はあるのか。シンガポールの39周目、ハミルトンは入らずに表彰台を失った。数字と過去のレースから、その分かれ目をほどく。</p>
+<p class="dg-meta"><span>2026年10月14日(水) 15:30 公開</span><span>本文 約6分</span></p>
+<div class="dg-themes"><span>作戦</span><span>レース運営</span><span>タイヤ</span></div>
+<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a><a href="#s1">VSCで入ると、なぜ得なのか</a><a href="#s2">残る理由1：順位とコース</a><a href="#s3">残る理由2：次のVSCを待つ</a><a href="#s4">間に合うかどうか</a><a href="#s5">シンガポールの39周目を、もう一度</a><a href="#deep">データと記録</a><a href="#sources">出典</a></nav>
+<div id="quick"><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span><em>先に結論</em></div></div>
+<div class="dg-quick"><ol><li>VSCの間も、ピットレーンの中を走る速さは変わらない。シンガポールでルクレールがピットレーンにいた時間は、ふつうのときが24.641秒、VSCのときが24.109秒で、ほとんど同じだった（F1公式のピットストップ記録）。得をするのは、コースに残った車が遅く走らされているからだ。</li><li>どれだけ得かはレースによって違う。英RacingNews365は、マドリードのVSCを取り上げた記事で、VSC中のピットは一般に、コースやピットレーンによって「4〜10秒」分の得になると書いた。シンガポールのふつうのピットロスは22.44秒（F1公式の事前資料）。</li><li>それでも残る理由はある。抜きにくいコースで順位を守る、もう一度VSCやセーフティカーが出るのを待つ、タイヤがまだ持つ、2台を同時に入れると後ろの車が待たされる、などだ。</li><li>ただし、時間との勝負でもある。FIAの規則では、「VSC ENDING」の合図から10〜15秒で緑に戻る。入ったとたんにVSCが終わると、得は小さくなる。</li><li>過去には、入った車が勝ったレースも、残った車が勝ったレースもある。正解は、タイヤ、順位、残りの周回、次のVSCが出る見込みの組み合わせで変わる。</li></ol></div>
+<div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><em>理由と背景</em></div>
+<div class="dg-sec" id="s1"><h2>VSCで入ると、なぜ得なのか</h2><p>VSCが出ると、全車は速さを落とし、<a class="term" href="/deep/rules/fia/" data-term="fia">FIA</a>の制御ユニットが決めた最低タイムより速く走ってはいけなくなる。追い抜きも禁止だ（FIA競技規則）。ところが、<a class="term" href="/deep/rules/pit-lane/" data-term="pit-lane">ピットレーン</a>の中の速度制限は、ふつうのときと同じ。F1公式サイトの<a class="term" href="/deep/rules/safety-car/" data-term="safety-car">セーフティカー</a>についての解説で、バーニー・コリンズは「ピットレーンを通る車の速さは、緑旗のときのピットと変わらない」と説明している。VSCでも、<a class="term" href="/deep/rules/pit-lane-speed/" data-term="pit-lane-speed">ピットレーンの速度制限</a>は同じだ。</p><p>つまり、ピットに入った車は、ふだんと同じ時間をピットで使う。その間、コースに残った車はゆっくり走っている。だから、ピットに入って失う差が小さくなる。シンガポールのルクレールの記録が、そのことをよく表している。</p><div class="dg-tw"><table class="short"><thead><tr><th scope="col">ルクレールのピット</th><th scope="col">周</th><th scope="col">ピットレーンにいた時間</th></tr></thead><tbody><tr><th scope="row">1回目（ふつうのとき）</th><td data-h="周">24周目</td><td data-h="ピットレーンにいた時間">24.641秒</td></tr><tr><th scope="row">2回目（VSC中）</th><td data-h="周">39周目</td><td data-h="ピットレーンにいた時間">24.109秒</td></tr></tbody></table></div><p class="tnote">出典：F1公式サイト（2026年シンガポールGPのピットストップ記録）。ピットレーンの中の時間はほぼ同じで、違うのはコースに残った車の速さ。</p><p>どれだけ得をするかは、VSCの長さや、入るタイミングで変わる。英RacingNews365は、今季のマドリードのVSCを取り上げた記事で、VSC中のピットは一般に、コースやピットレーンによって、ふつうのピットより「4〜10秒」分の順位の得になると書いた。2018年のオーストラリアでは、メルセデスは、ベッテルがVSC中に入ってハミルトンの前に出るには「約15秒」の差が要ると計算していたが、実際には「13秒弱」で足りた（F1公式サイト）。</p></div>
+<div class="dg-sec" id="s2"><h2>残る理由1：順位とコース</h2><p>いちばん大きな理由は、順位だ。抜きにくいコースでは、一度失った順位を取り戻すのが難しい。ハミルトンはシンガポールのあと、チームの発表で、VSCのあとの判断をこう書いている。</p><blockquote><p>「そのあと、残って最後まで順位を守ることにした」</p><cite>— ハミルトン（フェラーリ、チームの発表）</cite></blockquote><p>2023年のシンガポールでは、この考え方が当たった。終盤のVSCで、メルセデスは2台とも入れたが、先頭のサインツ（フェラーリ）ら前の車は残った。サインツはそのまま逃げ切って勝ち、新しいタイヤで追ったメルセデスは、ラッセルが最終ラップに壁に当て、ハミルトンの3位が最高だった（The Race）。</p></div>
+<div class="dg-sec" id="s3"><h2>残る理由2：次のVSCを待つ</h2><p>もう一つの理由は、「次」を待つことだ。今季の開幕戦オーストラリアで、VSCが出てもコースに残ったルクレールは、レースのあとこう話している。</p><blockquote><p>「このVSCが、レースで唯一のものにはならない可能性がとても高いと分かっていた。もう一度出るのを待ったほうがいいかもしれないと考えた」</p><cite>— ルクレール（フェラーリ）</cite></blockquote><p>このときは、メルセデスが2台とも入り、1-2で勝った（PlanetF1）。実際には2回目のVSCも出たが、フェラーリはそこでも入らず、ルクレールとハミルトンは3位・4位に終わった。ハミルトンは「少なくとも1台は入るべきだった」と話している。</p><p>シンガポールは、セーフティカーが出やすいコースだ。F1公式サイトの事前資料では、ここ6回でセーフティカーが出る確率は67%、VSCは33%だった。英The Raceによると、ハミルトンもシンガポールで、どうせピットで2つ順位を失うなら、残ってもう一度のコーションを待つ価値があるかもしれないと主張したという。</p></div>
+<div class="dg-sec" id="s4"><h2>間に合うかどうか</h2><p>VSCの得は、時間との勝負でもある。FIAの規則では、VSCを終えるとき、まず「VSC ENDING」という合図が送られ、その10〜15秒後に緑に戻る。ピット入口をもう通り過ぎていれば、その周は入れない。</p><p>今季のマドリードでは、マクラーレンのステラ代表が、ノリスについて「VSCが出たタイミングが数秒遅すぎた。ランドはもうピット入口を過ぎていた」と話している（F1公式サイト）。シンガポールでは、ラッセルが39周目に入ったところでVSCが終わった。</p><blockquote><p>「ピットに入ったところでVSCが終わった。あと10秒あれば、かなり助かったかもしれない」</p><cite>— ラッセル（メルセデス）</cite></blockquote><p>逆に、判断が間に合わないこともある。2018年のオーストリアでは、VSCの間にライバルは入ったが、メルセデスは迷ってハミルトンを入れられず、のちのふつうのピットで首位を失った。<a class="term" href="/deep/rules/person-toto-wolff/" data-term="person-toto-wolff">トト・ウォルフ</a>代表は「VSCが出て、反応するのに半周あった。でもしなかった。それが事実だ。ここでレースを失った」と話している（Motorsport.com）。</p></div>
+<div class="dg-sec" id="s5"><h2>シンガポールの39周目を、もう一度</h2><p>39周目、ストロールの車が15コーナーで止まり、VSCが出た。ルクレールとアントネッリは2回目のピットに入り、ラッセルは1回だけのピットをここで済ませた。ハミルトンは入らなかった。</p><p>なぜ入らなかったのかは、説明が食い違っている。ハミルトンはチームの発表で「チームは入るよう呼んだが、入口を逃した」とし、そのうえで残ることに決めたとしている。バスール代表も「入口を逃した」と話す一方で、「指示は入ることだった。ルイスはコースに残ると決めた」とも話した。英The Raceによると、フェラーリは、1回だけのピットで最後まで走るには「6周足りない」と見ていた。The Raceは、入っていればノリスのすぐ前で戻れた可能性が高いとしている。</p><p>ハミルトンは6位でゴールした。その裏側は、読み解き「<a href="/topics/hamilton-singapore-strategy-blame/">ハミルトンはなぜVSCで入らなかったのか</a>」で詳しく書いた。</p><div class="dg-view"><p>F1 Grid Walk編集部としては、VSCで残るのが正しいのは「タイヤが最後まで持つ」ときか、「もう一度のVSCやセーフティカーが来る見込みが十分にある」ときだと見ています。シンガポールの39周目は、そのどちらも確かではありませんでした。フェラーリの見立てではタイヤは6周足りず、残りは23周。67%という数字があっても、それは1レースのどこかで出る確率で、残りの周回で出るとは限りません。ただし、これは結果を知ったうえでの見方です。その瞬間に、何秒でどこまで判断できたかは、外からは分かりません。</p></div></div>
+<details class="dg-deep" id="deep"><summary><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><em>データと記録</em></div><span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">VSCとピットの主な数字・VSC・セーフティカーで「入る・残る」が分かれたレース ほか</span></span></span></summary>
+<div class="dg-sec"><h2>VSCとピットの主な数字</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">項目</th><th scope="col">数字</th><th scope="col">出典</th></tr></thead><tbody><tr><th scope="row">シンガポールのふつうのピットロス</th><td data-h="数字">22.44秒</td><td data-h="出典">F1公式サイト（2026年の事前資料）</td></tr><tr><th scope="row">シンガポールでセーフティカーが出る確率</th><td data-h="数字">67%（ここ6回）</td><td data-h="出典">F1公式サイト</td></tr><tr><th scope="row">シンガポールでVSCが出る確率</th><td data-h="数字">33%（ここ6回）</td><td data-h="出典">F1公式サイト</td></tr><tr><th scope="row">VSC中のピットの得（一般的な目安）</th><td data-h="数字">ふつうのピットより4〜10秒（コースやピットレーンによる）</td><td data-h="出典">RacingNews365</td></tr><tr><th scope="row">セーフティカー中のピットの得（2023年オーストラリア）</th><td data-h="数字">ふつうのピットより約6秒</td><td data-h="出典">F1公式サイト（コリンズ）</td></tr><tr><th scope="row">VSC ENDING から緑に戻るまで</th><td data-h="数字">10〜15秒</td><td data-h="出典">FIA競技規則</td></tr></tbody></table></div><p class="tnote">VSC中の得は、VSCの長さと、入るタイミングで大きく変わる。</p></div>
+<div class="dg-sec"><h2>VSC・セーフティカーで「入る・残る」が分かれたレース</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">レース</th><th scope="col">判断</th><th scope="col">結果</th><th scope="col">出典</th></tr></thead><tbody><tr><th scope="row">2026年シンガポール（39周目、VSC）</th><td data-h="判断">ルクレール・アントネッリは入り、ハミルトンは残った</td><td data-h="結果">ルクレール2位、アントネッリ3位、ハミルトン6位</td><td data-h="出典">F1公式サイト、The Race</td></tr><tr><th scope="row">2026年オーストラリア（VSC）</th><td data-h="判断">メルセデスは2台とも入り、フェラーリは2台とも残った</td><td data-h="結果">メルセデスが1-2、フェラーリは3位・4位</td><td data-h="出典">PlanetF1</td></tr><tr><th scope="row">2023年シンガポール（終盤のVSC）</th><td data-h="判断">メルセデスは2台とも入り、前の車は残った</td><td data-h="結果">残ったサインツが優勝</td><td data-h="出典">The Race</td></tr><tr><th scope="row">2018年オーストリア（VSC）</th><td data-h="判断">メルセデスはハミルトンを残した</td><td data-h="結果">メルセデスは「ここでレースを失った」</td><td data-h="出典">Motorsport.com</td></tr><tr><th scope="row">2018年オーストラリア（VSC）</th><td data-h="判断">ベッテルはVSC中に入った</td><td data-h="結果">ベッテルがハミルトンの前に出て優勝</td><td data-h="出典">F1公式サイト</td></tr></tbody></table></div><p class="tnote">「入る」と「残る」のどちらが正しかったかは、レースごとに違う。</p></div>
+</details>
+<div class="dg-end dg-rel"><h2><span class="k">NEXT</span>この話の続きを読む</h2><ul class="dg-rel-l"><li><a href="/news/en-therace-why-hamilton-singapore-imploded/" data-track="click/deep/vsc-stay-out/related"><small>39周目に残った判断の内側：無線の不調と「次のコーションを待つ」という考え</small><b>ハミルトンのシンガポールGPはなぜ崩れたのか　VSC中のステイアウトが分岐点</b><span>The Race</span></a></li><li><a href="/news/ja-f1jouhou2-russell-bad-luck-digest/" data-track="click/deep/vsc-stay-out/related"><small>同じVSCの反対側：入ったとたんに終わって、得が消えたラッセル</small><b>ラッセル、VSCのタイミングに泣いたシンガポール　ファンの間で「今季を象徴」との声</b><span>F1情報通</span></a></li></ul></div>
+<section class="more-deep"><p class="md-k">COLUMNS</p><h2>ほかのコラムを読む</h2><ul><li><a href="/lens/colapinto-triple-header-20261014/" data-track="click/deep/more/lens/colapinto-triple-header-20261014/"><span class="ctag ctag-world">WORLD GRID</span><b>コラピント「キャリアで最悪のトリプルヘッダー」 31周目の停止</b><small>コラム · 2026年10月14日(水) 06:29</small></a></li><li><a href="/lens/singapore-odd-records-20261013/" data-track="click/deep/more/lens/singapore-odd-records-20261013/"><span class="ctag ctag-off">OFF GRID</span><b>ラッセルは6回来て、6回とも壁に触れた。シンガポールの不思議な記録</b><small>シンガポールGP · 2026年10月13日(火) 13:46</small></a></li><li><a href="/lens/piastri-lonely-race-20261013/" data-track="click/deep/more/lens/piastri-lonely-race-20261013/"><span class="ctag ctag-world">WORLD GRID</span><b>ピアストリ「かなり孤独なレースだった」 パンクと最終ラップの5位</b><small>コラム · 2026年10月13日(火) 06:48</small></a></li><li><a href="/lens/antonelli-brakes-singapore-20261012/" data-track="click/deep/more/lens/antonelli-brakes-singapore-20261012/"><span class="ctag ctag-world">WORLD GRID</span><b>足元に謎の液体、効かないブレーキ。アントネッリ、王手の3位の裏側</b><small>コラム · 2026年10月12日(月) 14:05</small></a></li><li><a href="/deep/energy-singapore/" data-track="click/deep/more/deep/energy-singapore/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#10</span><b>シンガポールで、電気はなぜ「迷子」になったのか</b><small>2026年10月12日(月) 12:32</small></a></li><li><a href="/lens/hamilton-casino-20261011/" data-track="click/deep/more/lens/hamilton-casino-20261011/"><span class="ctag ctag-off">OFF GRID</span><b>バスール「水晶玉はない」 ハミルトンのカジノの冗談の裏側</b><small>シンガポールGP · 2026年10月11日(日) 17:13</small></a></li><li><a href="/lens/singapore-race-three-20261011/" data-track="click/deep/more/lens/singapore-race-three-20261011/"><span class="ctag ctag-world">WORLD GRID</span><b>シンガポール決勝、見るべきは3つ。フェルスタッペン「スタートがまたひどかったら終わり」</b><small>コラム · 2026年10月11日(日) 13:45</small></a></li><li><a href="/lens/ferrari-saturday-extra-20261011/" data-track="click/deep/more/lens/ferrari-saturday-extra-20261011/"><span class="ctag ctag-world">WORLD GRID</span><b>ルクレール「土曜は相手に何か上乗せがある」 ポールまで0.054秒</b><small>コラム · 2026年10月11日(日) 06:31</small></a></li></ul><a class="md-btn" href="/columns/" data-track="click/deep/more-all">すべてのコラムを見る →</a><a class="md-sub" href="/" data-track="click/deep/entrance-top">今日のF1ニュースを見る</a></section>
+<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl><dt>VSC（バーチャルセーフティカー）</dt><dd>実際のセーフティカーを出さず、全車に決められた速さまで落とさせる指示。</dd><dt>ピットロス</dt><dd>ピットに入って失う時間。ピットレーンの長さと速度制限、止まっている時間などで決まる。</dd><dt>VSC ENDING</dt><dd>VSCが終わる前の合図。10〜15秒後に緑に戻る。</dd><dt>ダブルスタック</dt><dd>同じチームの2台を、同じ周に続けてピットに入れること。後ろの車は待たされる。</dd><dt>トラックポジション</dt><dd>コース上の順位。抜きにくいコースほど大事になる。</dd></dl></div>
+<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src"><li><a href="https://www.formula1.com/en/results/2026/races/1296/singapore/pit-stop-summary" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>2026年シンガポールGP ピットストップ記録</small></li><li><a href="https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-singapore-grand-prix.2yF5JZuQTWUoUmbDH4niHv" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>Need to know: 2026年シンガポールGPの数字</small></li><li><a href="https://www.formula1.com/en/latest/article/strategy-unpacked-dissecting-the-red-flag-dilemma-facing-the-teams-in.6srkF5Qds4PyK5XPuPP1F8" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>Strategy unpacked（バーニー・コリンズ、2023年）</small></li><li><a href="https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">FIA</a> <small>2026 F1 Sporting Regulations, Section B, Issue 06</small></li><li><a href="https://racingnews365.com/the-crucial-seconds-that-cost-lando-norris-comfortable-spanish-gp-victory" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">RacingNews365</a> <small>The crucial seconds that cost Lando Norris comfortable Spanish GP victory</small></li><li><a href="https://racingnews365.com/george-russell-wont-lose-sleep-over-race-changing-f1-missed-opportunity" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">RacingNews365</a> <small>George Russell won&#x27;t lose sleep over race-changing missed opportunity</small></li><li><a href="https://www.formula1.com/en/latest/headlines/2018/3/mercedes-investigation-identifies-why-hamilton-lost-win.html" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>Mercedes investigation identifies why Hamilton lost win（2018年）</small></li><li><a href="https://www.formula1.com/en/latest/article/a-painful-lesson-hamilton-apologises-as-he-takes-responsibility-for-strategy-gamble-in-singapore.6NUbQvdet1DQa5ElDtonw1" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>A painful lesson: Hamilton apologises（2026年シンガポール）</small></li><li><a href="https://www.formula1.com/en/latest/article/it-was-a-mistake-vasseur-reacts-to-hamiltons-strategy-call-that-lost-a-podium-in-singapore.7FetC3ZueATDEKBKuuy4V" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>Vasseur reacts to Hamilton&#x27;s strategy call</small></li><li><a href="https://www.the-race.com/formula-1/why-lewis-hamilton-singapore-gp-really-imploded/" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">The Race</a> <small>Why Lewis Hamilton&#x27;s Singapore GP really imploded</small></li><li><a href="https://racer.com/2026/03/08/no-regrets-from-ferrari-drivers-after-staying-out-during-vsc" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">RACER</a> <small>No regrets from Ferrari drivers after staying out during VSC（2026年オーストラリア）</small></li><li><a href="https://www.planetf1.com/news/australian-grand-prix-2026-grand-prix-report" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">PlanetF1</a> <small>2026年オーストラリアGP決勝レポート</small></li><li><a href="https://the-race.com/formula-1/sainz-wins-singapore-gp-as-red-bulls-f1-2023-winning-streak-ends" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">The Race</a> <small>Sainz wins Singapore GP as Red Bull&#x27;s winning streak ends（2023年）</small></li><li><a href="https://www.motorsport.com/f1/news/mercedes-hamilton-strategy-vsc-mistake-austrian-gp-1054515/" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">Motorsport.com</a> <small>Mercedes: Hamilton strategy VSC mistake（2018年オーストリア）</small></li><li><a href="https://www.formula1.com/en/latest/article/there-was-no-option-to-retain-the-lead-stella-outlines-the-logic-behind-norris-unlucky-stop-in-madrid.NSjRkSmAcXBtfeGbOukmI" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>Stella outlines the logic behind Norris&#x27; unlucky stop in Madrid</small></li><li><a href="https://www.formula1.com/en/latest/article/russell-wins-action-packed-australian-gp-from-antonelli-as-mercedes-secure-1.4WRxPAtF4dFtrKCsWIiQX2" target="_blank" rel="noopener" data-track="click/deep/vsc-stay-out/src">F1公式サイト</a> <small>Russell wins action-packed Australian GP from Antonelli（2026年）</small></li></ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>
+<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist"><li><time>2026-10-14</time>公開。</li></ul></div>
+<div class="dg-end"><h2><span class="k">SAME GP</span>シンガポールGPのほかのニュース</h2><ul class="list"><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-13T22:41:00+09:00">2026年10月13日(火) 22:41</time></div><a class="t" href="/news/ja-f1gate-aston-honda-drivability/">アストンマーティン・ホンダ、加速不良の原因は「エンジン出力だけではない」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-13T20:43:00+09:00">2026年10月13日(火) 20:43</time></div><a class="t" href="/news/ja-f1gate-wolff-antonelli-cushion/">メルセデス代表、アントネッリのトラック制限違反に「座布団を敷いてやる」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-13T20:04:00+09:00">2026年10月13日(火) 20:04</time></div><a class="t" href="/news/ja-f1gate-alonso-verstappen-pit-blueflag/">アロンソ、フェルスタッペンのピットインに激怒「予測できないのか」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-13T18:04:00+09:00">2026年10月13日(火) 18:04</time></div><a class="t" href="/news/ja-f1gate-leclerc-perez-blue-flags/">ルクレール、ペレスに皮肉「まだレッドブルで走っているのか？」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-13T11:00:00+02:00">2026年10月13日(火) 18:00</time></div><a class="t" href="/news/it-formula1it-honda-denies-alonso-turbo/">ホンダ、アロンソの主張に反論「ターボは壊れていない」　交換はフィードバックに基づく措置</a></li></ul></div>
+<div class="dg-end"><h2><span class="k">LATEST</span>新着ニュース</h2><ul class="list"><li><div class="m"><span class="kind rumor">噂</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-14T12:00:00+09:00">2026年10月14日(水) 12:00</time></div><a class="t" href="/news/ja-f1gate-nike-f1-apparel-2027/">ナイキが2027年からF1公式アパレル供給へ　独紙が契約合意と報道</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-14T11:06:00+09:00">2026年10月14日(水) 11:06</time></div><a class="t" href="/news/ja-f1gate-brown-wolff-papaya-rule/">マクラーレンのブラウンCEO、ヴォルフに「パパイヤルール」を売り込むも翌日に同士討ち</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-14T10:36:00+09:00">2026年10月14日(水) 10:36</time></div><a class="t" href="/news/ja-f1gate-permane-lindblad-pu-output/">レーシングブルズ代表、リンドブラッドのPU不調を認める「出力が安定しなかった」</a></li></ul></div>
+<div class="dg-end"><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">493 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/deep-issue">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-issue/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script></div>
+</article>
+<script type="application/json" id="term-data">{"safety-car": ["セーフティカー", "コース上の危険を片付けるあいだ、隊列の先頭を走って全車の速さを抑える車。"], "fia": ["FIA（国際自動車連盟）", "F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。"], "pit-lane": ["ピットレーン", "ガレージにつながるコース脇の道。制限速度は原則80km/h。"], "pit-lane-speed": ["ピットレーンの速度制限", "ピットレーンを走る速度の上限。基本は80km/hで、大会によって下げることがある。"], "person-toto-wolff": ["トト・ウォルフ", "チーム代表兼CEO（メルセデス）"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
+</main>
+<footer><div class="wrap">
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
+  <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
+</div></footer>
+<nav class="bt" aria-label="サイト内の移動"><a href="/#news" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/?v=data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" class="on" aria-current="page" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
+<script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.addEventListener('click',function(ev){
+  var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
+  try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}
+});
+var cp=document.getElementById('copy'),cu=(document.querySelector('link[rel=canonical]')||{}).href||location.href;
+if(cp) cp.addEventListener('click',function(){
+  var done=function(){cp.textContent='コピーしました';setTimeout(function(){cp.textContent='リンクをコピー';},1400);};
+  try{navigator.clipboard.writeText(cu).then(done,function(){window.prompt('このURLをコピーしてください',cu);});}catch(e){window.prompt('このURLをコピーしてください',cu);}
+});
+</script>
+</body>
+</html>
