@@ -1,10 +1,6 @@
 {
- "updatedAt": "2026-10-15T00:40:00+09:00",
+ "updatedAt": "2026-10-15T06:30:00+09:00",
  "topics": {
-  "alonso-singapore-pu-change": {
-   "title": "アロンソのホンダPU不調 決勝後に配備と扱いの問題を指摘",
-   "summary": "アストンマーティン・ホンダはシンガポールGPでアロンソのPUを決勝前に交換したが、不調は解消しきれず、アロンソは16位に終わった。アロンソは地元紙ASで「ターボが壊れていた」と述べたが、ホンダの折原チーフエンジニアは「壊れてはおらず、アロンソの意見を受けて交換した」と反論した。データには今のところ異常がなく、アメリカGP前に桜の拠点で詳しく調べる。アロンソはVSC後を中心にエネルギーを適切に使えず順位を失ったとも指摘している。"
-  },
   "hamilton-singapore-strategy-blame": {
    "title": "ハミルトン、VSC中にピットへ入らなかった戦略に責任を認める",
    "summary": "VSCの間にルクレールがロスの少ない2回目のピットを行った一方、ハミルトンは入らずソフトで走り続け、6位まで後退した。各媒体とも、ハミルトンが無線で「あの戦略で期待を裏切ってしまった」と謝ったと伝えている。Motorsport.comは、バスール代表が「指示は2台ともピットインだった」と説明したと報じ、損失を約41.5秒と計算した。独Motorsport-Totalは、ハミルトンが通常走行中に呼び戻された後も次の安全車に賭けて拒んだと論じ、ピットウォールへの信頼の問題と指摘した。"
@@ -52,9 +48,103 @@
   "hulkenberg-singapore-mcnish": {
    "title": "ヒュルケンベルグ、メルセデス相手に今季最高の8位　アウディ首脳が評価",
    "summary": "シンガポールGPでヒュルケンベルグはラッセルのメルセデスを抑えて8位に入り、今季最高位となった。アウディのマクニッシュはヒュルケンベルグの走りを「賢い」と評価し、終盤10周のペースはレッドブルやメルセデスと互角だったと語った。ヴォルフが映像に映れたと冗談を言うと、マクニッシュは「前にいたから映っただけ」と返した。"
+  },
+  "mekies-extension": {
+   "title": "レッドブル、メキース代表と2031年まで契約延長　ホーナー再浮上の中で支持を明示",
+   "summary": "レッドブルは、ローラン・メキース代表兼CEOとの契約を2031年まで延長したと発表した。株主のマテシッツ氏がミルトンキーンズでの会合で明らかにし、ミンツラフCEOらが2025年後半の立て直しと自社製PU体制での指揮を評価した。ホーナーが新刊などで再び話題になる時期の発表で、メキース支持を明確にする狙いがあるとの見方もある。"
+  },
+  "hadjar-red-bull-struggle": {
+   "title": "ハジャー、シンガポールで不運続き　レッドブルは「自分たちの責任」と認める",
+   "summary": "ハジャーはシンガポールGPでスプリントのパワー喪失、PU交換、予選Q1のギアボックス不調と不運が続き、決勝は10位で1点を獲得した。メキース代表は同選手側の週末を「ひどい」と述べ、問題は自分たちにあると認めた。ハジャーは、より安定して走るクルマを望むと語っている。"
   }
  },
  "articles": [
+  {
+   "id": "ja-f1gate-mekies-extension-2031",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "mekies-extension",
+   "title": "レッドブル、メキース代表との契約を2031年まで延長　株主が高く評価",
+   "summary": "F1-Gate.comは、レッドブルがCEO兼チーム代表のローラン・メキースとの契約を2031年まで延長したと伝えた。発表は株主のマーク・マテシッツが英国ミルトンキーンズでの振り返りミーティングで行い、フェルスタッペンやハジャーの契約更新に続く動きとなる。メキースは2025年7月にチームを引き継ぎ、同年は後半に巻き返してタイトルまで2ポイント差に迫った。2026年は自社製PUで参戦し、シンガポールGPではスプリントと決勝を制している。ミンツラフCEOも技術力と戦略判断を評価した。",
+   "orig": "レッドブルF1 ローラン・メキース代表との契約を2031年まで延長",
+   "url": "https://f1-gate.com/redbull/228747.html",
+   "published": "2026-10-15T01:37:00+09:00"
+  },
+  {
+   "id": "en-therace-mekies-deal-extended",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "チーム",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "mekies-extension",
+   "title": "レッドブル、メキース代表の契約を2031年まで延長　ホーナー再浮上のタイミングで",
+   "summary": "The Raceは、レッドブルがローラン・メキース代表の契約を2031年まで延長したと報じた。メキースはホーナー解任後にレーシングブルズから昇格した人物で、同チームのリリースは2025年後半の立て直しを評価している。記事は、フェルスタッペンやハジャーの契約延長、マレーシアとシンガポールの連勝にも触れる。さらに、ホーナーが新刊やインタビューで話題になる時期の発表であり、メキース支持を明確に示す意味があると指摘。代表と契約を固定年数で結び、公表する例が増えている点も論じている。",
+   "orig": "Red Bull's F1 boss gets well-timed endorsement with extended deal",
+   "url": "https://www.the-race.com/formula-1/red-bull-f1-team-principal-laurent-mekies-deal-extended/",
+   "published": "2026-10-14T12:00:00+01:00",
+   "featured": true
+  },
+  {
+   "id": "en-racingnews365-mekies-long-term-extension",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "RacingNews365",
+   "cat": "チーム",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "mekies-extension",
+   "title": "レッドブル、メキース代表と2031年まで長期契約　「素晴らしいリーダーシップ」",
+   "summary": "RacingNews365は、レッドブルがローラン・メキース代表と2031年シーズン終了までの長期契約を結んだと報じた。マテシッツ氏がミルトンキーンズでの会合で発表し、ミンツラフ氏は「素晴らしいリーダーシップ」と評価、メキース本人は「誇りに思う」と述べた。メキースは2025年7月にホーナーの後任となり、フェルスタッペンはその年タイトルまで2ポイント差に迫った。自社製PU初勝利もマレーシアで挙げている。経歴はアローズ、ミナルディ、FIA、フェラーリ、レーシングブルズと幅広い。",
+   "orig": "Red Bull announce long-term extension for 'outstanding' F1 boss",
+   "url": "https://racingnews365.com/breaking-red-bull-announce-long-term-extension-for-outstanding-f1-boss",
+   "published": "2026-10-14T18:24:00+01:00"
+  },
+  {
+   "id": "en-racingnews365-hadjar-horrific-weekend",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-red-bull-struggle",
+   "title": "ハジャー「もう少し走るクルマが欲しい」　シンガポールの週末をメキースは「ひどい」と総括",
+   "summary": "RacingNews365は、シンガポールGPでトラブルが続いたハジャーの談話を伝えた。スプリントで早々にパワーを失ってリタイアし、PUを旧型に交換、予選Q1ではギアボックス不調で計測できずピットレーン発進となったが、決勝は10位で最後の1点を獲得した。ハジャーは「もう少しうまく機能するクルマが欲しい」と語り、メカニックには「もっと報われるべきだ」と話した。メキース代表はハジャー側の週末を「ひどい」と表し、原因は「自分たちにある」と認めている。",
+   "orig": "Isack Hadjar airs Red Bull desperation after 'horrific' F1 experience",
+   "url": "https://racingnews365.com/isack-hadjar-airs-red-bull-desperation-after-horrific-f1-experience",
+   "published": "2026-10-14T15:40:00+01:00"
+  },
+  {
+   "id": "en-racingnews365-piastri-signature-stella",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-driving-style-stella",
+   "title": "マクラーレン代表、ピアストリ不振の鍵は「持ち味」　新車に合う走りへの修正を示唆",
+   "summary": "RacingNews365は、マクラーレンのステッラ代表がピアストリの苦戦の背景を語ったと伝えた。2025年に7勝し15戦首位だった同選手は、今季は表彰台2回、138点でノリスの201点を下回り、最後の表彰台はマイアミの3位まで遡る。ステッラは、新世代車は入力の強度がはるかに高く、速く走ることがきれいに走ることとは限らないと説明。中盤の改良は扱いやすさを大きく変えず、根本的な変更は2027年のMCL41で狙うという。",
+   "orig": "McLaren identify Oscar Piastri 'signature' key to ongoing F1 struggles",
+   "url": "https://racingnews365.com/mclaren-identify-oscar-piastri-signature-key-to-ongoing-f1-struggles",
+   "published": "2026-10-14T20:00:00+01:00"
+  },
   {
    "id": "de-motorsporttotal-sainz-three-class-grid",
    "kind": "news",
@@ -1383,98 +1473,6 @@
    "orig": "レーシングブルズF1 FIAへの正式抗議を見送る「結果が悪化する可能性もあった」",
    "url": "https://f1-gate.com/rb/228322.html",
    "published": "2026-10-12T11:46:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-hamilton-apology-singapore-strategy",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "hamilton-singapore-strategy-blame",
-   "title": "ハミルトン、シンガポールGPの戦略ミスを謝罪「僕の責任だった」",
-   "summary": "ハミルトンはシンガポールGPを3番グリッドから新品ミディアムで長めに引っ張る戦略で入ったが、タイヤはソフトほど性能を出せなかった。VSC導入時にチームはピットインを指示したものの、ピット入口を通過して走り続け、終盤のタイヤ摩耗で3つ順位を落として6位だった。レース直後の無線では「僕の判断だった」と述べ、声明でも「今日は僕の責任」「6位は実力を反映していない」と認めている。決勝後は体調不良でFIA医療チームの診察を受け、メディア対応を欠席した。本人は「痛い教訓」と振り返り、アメリカGPでの巻き返しを誓った。",
-   "orig": "ルイス・ハミルトン F1シンガポールGPの戦略ミスを謝罪「僕の責任だった」",
-   "url": "https://f1-gate.com/hamilton/228326.html",
-   "published": "2026-10-12T11:03:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-honda-alonso-turbo-disagreement",
-   "kind": "tech",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "テクニカル",
-   "circuit": "singapore",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-singapore-pu-change",
-   "title": "ホンダとアロンソ、ターボ故障を巡り食い違い「壊れていない」「壊れていた」",
-   "summary": "シンガポールGPでのアロンソのターボ交換を巡り、ホンダとアロンソ本人の説明が食い違った。ホンダの折原伸太郎氏は、交換前のターボは物理的に壊れておらず、アロンソのフィードバックに基づく判断だったと説明し、「ドライバーは最高のセンサー」と述べた。一方アロンソは「昨日のターボは壊れていた」と主張している。アロンソはQ1敗退で17番手、スプリントは11位、ターボ交換後はピットレーン発進で決勝16位だった。第2セーフティカー再開時に約2秒を失い、問題はセパンやバクーでは出ていなかったとして、ドライバビリティとターボラグの解決が必要だと訴えた。",
-   "orig": "ホンダF1とアロンソ ターボ故障を巡り食い違い「壊れていない」「壊れていた」",
-   "url": "https://f1-gate.com/honda/228298.html",
-   "published": "2026-10-12T08:42:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-antonelli-title-condition-surprise",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-austin-match-point",
-   "title": "アントネッリ、次戦での王座決定の条件を聞いて仰天「僕が？ 本当に？」",
-   "summary": "アントネッリはシンガポールGPを4番グリッドから3位で終え、チームメイトのラッセルに対する選手権リードを102点に広げた。残り6戦で獲得可能なのは150点で、アメリカGP後に2位との差を125点にできれば初タイトルが決まると知らされ、「僕が？ 本当に？」と驚いた。本人は最高の週末を重ねて最後までやり遂げたいと語った。タイヤはソフトが非常に良く、ミディアムは苦戦したという。この週末に自身が使ったメルセデスの新アップグレードには可能性を感じ、「ようやくトンネルの出口に光が見えてきた」と述べた。",
-   "orig": "キミ・アントネッリ 次戦でF1王座獲得の条件を聞いて仰天「僕が？ 本当に？」",
-   "url": "https://f1-gate.com/andrea-kimi-antonelli/228294.html",
-   "published": "2026-10-12T08:21:00+09:00"
-  },
-  {
-   "id": "it-formula1it-cadillac-perez-better-car",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "circuit": "singapore",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-perez-singapore",
-   "title": "キャデラックのペレス「もっと良いマシンが必要」 シンガポールGPで課題",
-   "summary": "キャデラックはシンガポールGPで、ウィリアムズやアストンマーティンに迫る場面はあったものの、決勝距離を通した速さが足りなかった。ペレスは前との差を1〜1.5秒とみて、より良いマシンが必要だと語った。ソフトでの第1スティントは良かったが、差を詰めるには不十分だったという。ボッタスはミディアムスタートが振るわず、主な弱点はレースペースで即効薬はないと話した。代表のブドコフスキーは、他車のリタイアを期待したが叶わなかったと述べ、来季に向けた具体的な前進が必要だと記事はまとめている。",
-   "orig": "Cadillac, Perez non fa sconti: «Serve una macchina migliore»",
-   "url": "https://www.formula1.it/news/33208/1/cadillac-perez-non-fa-sconti-serve-una-macchina-migliore",
-   "published": "2026-10-11T22:50:00+02:00"
-  },
-  {
-   "id": "en-therace-verstappen-singapore-win-hamilton-nosedive",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "singapore-gp-verstappen-win",
-   "title": "フェルスタッペンがシンガポール初勝利、ハミルトンは戦略ミスで急落",
-   "summary": "レッドブルのフェルスタッペンがシンガポールGPで初優勝し、2位ルクレールに7.3秒差、3位はアントネッリだった。フェラーリはルクレールがミディアムにスイッチした後もハミルトンをソフトで走らせ、39周目のVSCでも止めず、ハミルトンのタイヤは21周分古い状態になった。終盤はノリスを外から抜こうとして膨らみ、アントネッリとノリスに先行されて6位に終わった。ハミルトンは無線で「僕の判断だった」と謝った。",
-   "orig": "Max Verstappen breaks Singapore win drought while Lewis Hamilton nosedives",
-   "url": "https://www.the-race.com/formula-1/max-verstappen-breaks-singapore-win-drought-while-lewis-hamilton-nosedives/",
-   "published": "2026-10-11T12:00:00+01:00",
-   "featured": true
   }
  ]
 }
