@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-13",
+ "checked": "2026-10-14",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -16441,8 +16441,8 @@
    "short": "ピットに入ると、走り続けた場合より失う時間。コースごとに約20〜30秒と差があり、戦略を左右する。",
    "body": [
     "ピットロスは、ピットインで失うタイムのことだ。ピットレーンを通る時間と、タイヤ交換で止まっている時間の合計から、そのまま走り続けた場合を引いて考える。F1公式サイトの事前資料には、コースごとの数字が出ている。",
-    "F1公式サイトの2026年の事前資料では、モナコが19.92秒（6月）、オーストリアが20.02秒（6月。どちらも2.5秒の停止を含む）、モンツァが24.14秒（9月）だった。シンガポールは2025年10月の資料で29.1秒だ。差が出る主な理由は、ピットレーンの長さと速度制限である。メルセデスによると、シンガポールはモナコと並んで制限が時速60kmで、ピットレーンは400mより長い。",
-    "ピットロスは戦略に直結する。ピレリのイゾラは2025年4月、戦略は「タイヤの劣化と性能」「追い抜きやすさ」「ピットで失う時間」の3つで決まると説明した。ピットロスが小さいほど、ストップ回数を増やしやすい。The Race（2025年5月）によると、時速60kmのシンガポールを80kmにすれば、ピットで失う時間は約29秒から22〜23秒ほどになる計算だ。",
+    "F1公式サイトの2026年の事前資料では、モナコが19.92秒（6月）、オーストリアが20.02秒（6月。どちらも2.5秒の停止を含む）、モンツァが24.14秒（9月）、シンガポールが22.44秒（10月）だった。差が出る主な理由は、ピットレーンの長さと速度制限である。",
+    "ピットロスは戦略に直結する。ピレリのイゾラは2025年4月、戦略は「タイヤの劣化と性能」「追い抜きやすさ」「ピットで失う時間」の3つで決まると説明した。ピットロスが小さいほど、ストップ回数を増やしやすい。シンガポールは、F1公式サイトの2025年の資料では29.1秒だった。The Race（2025年5月）は、時速60kmだったシンガポールの制限を80kmにすれば、約29秒から22〜23秒ほどになると計算していた。",
     "セーフティカー中は、ほかの車も遅く走るので、ピットで失う時間が小さくなる。そのため、セーフティカー中のピットストップは「無料の」ピットストップと呼ばれることがある。今季のバクーでは、これを生かしたレッドブルの判断が話題になった。"
    ],
    "examples": [
@@ -16478,6 +16478,11 @@
     },
     {
      "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Singapore Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-singapore-grand-prix.2yF5JZuQTWUoUmbDH4niHv"
+    },
+    {
+     "name": "formula1.com",
      "title": "NEED TO KNOW: 2025 Singapore Grand Prix",
      "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2025-singapore.468A8YSelm8nsKywLuGTf"
     },
@@ -16490,14 +16495,9 @@
      "name": "The Race",
      "title": "F1 boring races strategy problem: one-stop, Pirelli, pitlane limit (2025-04-26)",
      "url": "https://the-race.com/formula-1/f1-boring-races-strategy-problem-one-stop-pirelli-pitlane-limit"
-    },
-    {
-     "name": "Mercedes-AMG F1",
-     "title": "Singapore Grand Prix 2026",
-     "url": "https://www.mercedesamgf1.com/races/singapore-grand-prix-2026"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-14"
   },
   {
    "id": "fuel-saving",
