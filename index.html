@@ -1611,6 +1611,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .dash-main .hero-sum{font-size:13.5px;line-height:1.7;-webkit-line-clamp:1}
 
 .about-pop p + p{margin-top:10px}
+.about-play{display:inline-block;margin-left:6px;font:inherit;font-size:12.5px;font-weight:700;color:#E8946C;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-play{color:#9E4E2B}}
+:root[data-theme="dark"] .about-play{color:#9E4E2B}
 .about-pop a{color:#E8946C;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-pop a{color:#9E4E2B}}
 :root[data-theme="dark"] .about-pop a{color:#9E4E2B}
@@ -1659,7 +1662,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <button type="button" class="about-x" aria-label="閉じる">×</button>
       <h2>世界のグリッドを、ひと歩き。</h2>
       <p>世界中のF1の記事を、日本語の見出しと短い要約で毎日まとめています。どの記事も、原文へのリンク付きです。予選や決勝のあとは、結果と各国の反応を優先してお届けします。</p>
+      <p>レースのあとは<a href="/topics/" data-track="click/about/story">STORY</a>。世界の報道をもとに、そのレースでいちばん心を動かす場面を、F1 Grid Walk 独自の記事にしています。</p>
       <p>コラムは3つ。<a href="/lens/">WORLD GRID</a>は世界の報道の読み比べ、<a href="/deep/">DEEP GRID</a>はニュースの「なぜ」の深掘り、<a href="/offgrid/">OFF GRID</a>は本筋の外のこぼれ話です。分からない言葉は<a href="/deep/rules/">ルールブック</a>で引けます。</p>
+      <p>過去の記事は、<a href="/gp/" data-track="click/about/gp">GPごと</a>・<a href="/teams/" data-track="click/about/teams">チームごと</a>にまとめて読めます。</p>
+      <p class="about-sub">ちょっとしたお楽しみ：左上のロゴを押すと、スタート反応ゲーム「LIGHTS OUT」、用語クイズ、サーキット当てで遊べます。<button type="button" class="about-play" id="about-play" data-track="click/about/games">遊んでみる →</button></p>
     </div>
     </div>
     <p class="hd-intro"><span class="hi-t"><span>世界のF1報道を、</span><span>日本語で読み比べるサイトです。</span></span><button type="button" class="intro-btn" id="intro-btn">はじめての方へ</button></p>
@@ -3044,6 +3050,7 @@ document.addEventListener('click',function(ev){
   window.__gwAbout = function(open){ set(open); };
   b.addEventListener('click', function(e){ e.preventDefault(); if (window.__gwLights) window.__gwLights(); else set(pop.hidden); });
   pop.querySelector('.about-x').addEventListener('click', function(){ set(false); b.focus(); });
+  var pl = document.getElementById('about-play'); if (pl) pl.addEventListener('click', function(){ set(false); if (window.__gwLights) window.__gwLights(); });
   document.addEventListener('click', function(e){ if (!pop.hidden && !pop.contains(e.target) && !b.contains(e.target)) set(false); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !pop.hidden){ set(false); b.focus(); } });
 })();
