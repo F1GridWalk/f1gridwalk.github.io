@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-15T06:30:00+09:00",
+ "updatedAt": "2026-10-15T12:25:00+09:00",
  "topics": {
   "hamilton-singapore-strategy-blame": {
    "title": "ハミルトン、VSC中にピットへ入らなかった戦略に責任を認める",
@@ -24,10 +24,6 @@
   "cadillac-ugochukwu-2027": {
    "title": "キャデラックがF3王者ウゴチュクウに関心か　2027年の起用を検討と報道",
    "summary": "複数のメディアが、キャデラックが今季FIA F3王者のウゴ・ウゴチュクウと2027年に向けて接触している可能性を伝えた。ブラジルのグランデ・プレーモはイタリアのオートレーサーを出典に、金曜フリー走行1回目のプログラムでの合意が近いと報じ、GPblogは来季の起用を検討していると見る。キャデラック側も本人も公式コメントは出しておらず、いずれも未確認の情報だ。日本のまとめサイトF1情報通も、ウゴチュクを来季のFP1担当に選んだ模様との話題を取り上げたが、公式発表はない。"
-  },
-  "f1-calendar-middle-east-imola": {
-   "title": "カタール・アブダビGPの開催可否に注目　イモラ代替案の報道も",
-   "summary": "中東情勢を受け、カタールGPとアブダビGPの開催可否が今週発表される見通しだと伝えられている。ブラジルのグランデ・プレーモはMotorsport.comの報道として、2戦を中止してイモラを12月6日の最終戦の代替地とする準備が進むと報じた。実現すればアントネッリの王座決定がアメリカGPに早まる可能性もある。ただし公式発表はなく、いずれも未確認の情報だ。"
   },
   "fia-v8-2030": {
    "title": "FIA会長、V8エンジンを2030年に導入と発言　約80kg軽量化も目標",
@@ -59,6 +55,78 @@
   }
  },
  "articles": [
+  {
+   "id": "ja-f1gate-russell-engine-penalty-vegas",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "lasvegas",
+   "topic": "russell-engine-penalty-vegas",
+   "title": "ラッセル、エンジン交換で再びグリッド降格へ　「ラスベガスを考えている」",
+   "summary": "F1-Gate.comは、メルセデスのラッセルが今季もう一度PU交換によるグリッド降格を受ける見通しで、候補はラスベガスGPだと語ったと伝えた。マレーシアでの決勝で3番手走行中に残り5周ほどでPUが壊れ、予定より早くシンガポールで新品を投入して19番手から9位に終わった。年間4基の割り当てで1基は約6戦もつとされ、残り7戦では追加交換が避けられない。追い抜きやすいコースで受けたいという考えだが、最終判断はPUの状態と競争力次第だという。ドライバーズ選手権はアントネッリが340点、ラッセルが238点で102点差だ。",
+   "orig": "ジョージ・ラッセル F1エンジン交換で再びグリッド降格へ「ラスベガスを考えている」",
+   "url": "https://f1-gate.com/george-russell/228520.html",
+   "published": "2026-10-15T10:21:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-fia-redbull-sidepod-2027",
+   "kind": "tech",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "テクニカル",
+   "teams": [
+    "redbull",
+    "audi"
+   ],
+   "topic": "redbull-sidepod-2027-rule",
+   "title": "FIA、レッドブル独自のサイドポッド技術を2027年から規制へ",
+   "summary": "F1-Gate.comは、FIAがレッドブルRB22のサイドポッド設計を2027年から制限する方針だと報じたと伝えた。アナリストのスカーボロー氏によると、フロア支持材をサイドポッド下端に沿わせ、例外規定で曲率半径20mmまで許される近傍のボディワークと組み合わせて鋭く深い形状を作っていた。6月のオーストリアGPで初登場し、アウディもアゼルバイジャンGPで似た発想を使ったとされる。伊メディアの報道としてクラッシュ・ネットが、この許容値を20mmから5mmに縮める案を紹介した。現行規則違反の指摘ではなく、正式発表でもない。",
+   "orig": "FIA レッドブルF1の独自サイドポッド技術を2027年から規制へ",
+   "url": "https://f1-gate.com/redbull/228754.html",
+   "published": "2026-10-15T08:56:00+09:00"
+  },
+  {
+   "id": "it-formula1it-haas-camara-2027",
+   "kind": "rumor",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "うわさ",
+   "teams": [
+    "haas",
+    "ferrari"
+   ],
+   "topic": "haas-camara-2027",
+   "title": "ハース、2027年はカマラ起用へ？　「赤い電話」の投稿が示唆とイタリア紙",
+   "summary": "Formula1.itは、ハースが2027年にフェラーリ育成のラファエル・カマラをベアマンの相棒に起用する流れだと報じた。ガイ・ハース代表がフェラーリとの関係やカマラのテストでの好結果を背景に強く推したとされ、記事は伊人ドライバーのフォルナローリには道が閉ざされたと見る。カマラはオコンの後任となり、現在F2のランキング首位にいる。ハースがSNSに赤い電話の画像と「着信中…」の文言を投稿したことも、近い発表の予告ではと取り上げられた。いずれも公式の確認はなく、記事は筋道ができているように見えるとの見立てにとどまる。",
+   "orig": "F1, il mercato piloti si muove. L'indizio arriva da un telefono rosso... Ferrari",
+   "url": "https://www.formula1.it/news/33262/1/f1-il-mercato-piloti-si-muove-l-indizio-arriva-da-un-telefono-rosso-ferrari-",
+   "published": "2026-10-14T21:30:00+02:00"
+  },
+  {
+   "id": "de-motorsporttotal-horner-mercedes-hires",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ビジネス",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "horner-rbpt-mercedes-hires",
+   "title": "ホーナーが明かす、レッドブル・パワートレインズ立ち上げでメルセデスから人材を集めた舞台裏",
+   "summary": "Motorsport-Total.comは、元レッドブル代表ホーナーがオートスポーツ誌のインタビューで、自社PU部門RBPT立ち上げ時の人材集めを語ったと伝えた。ホンダ撤退後、英国の運用人員が移ってきたものの主要ポストの多くは空白で、ホーナーはメルセデスHPPから積極的に採用したという。技術部門にはホジキンソン氏やプルー氏らが加わり、ミルトンキーンズでは旧工場を改装して55週間で新工場を建てた。社内ではメルセデス流の話を禁じ、「チームB」という呼び名を使ったとホーナーは述べた。記事は、ウォルフとの対立との関連にも触れている。",
+   "orig": "Christian Horner verrät: So schnappte er Mercedes die besten Mitarbeiter weg",
+   "url": "https://www.motorsport-total.com/formel-1/news/christian-horner-verraet-so-schnappte-er-mercedes-die-besten-mitarbeiter-weg-26101413",
+   "published": "2026-10-14T20:00:00+02:00"
+  },
   {
    "id": "ja-f1gate-mekies-extension-2031",
    "kind": "news",
@@ -1405,74 +1473,6 @@
    "orig": "マックス・フェルスタッペン F1シンガポールGP決勝で無線故障「暗号で意思疎通」",
    "url": "https://f1-gate.com/verstappen/228302.html",
    "published": "2026-10-12T14:31:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-audi-bortoleto-fire-singapore",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "audi"
-   ],
-   "topic": "bortoleto-audi-fire",
-   "title": "アウディのボルトレート、決勝でマシン発火　ピットレーン入口が一時閉鎖",
-   "summary": "シンガポールGP決勝でアウディのボルトレートが8周目にピットレーン出口付近で止まり、ギアボックスのトラブルが疑われている。VSCが出てマシンはガレージ方面へ移されたが、オーバーヒートで発火し、マーシャルが消火する間ピットレーン入口が一時閉鎖された。火災の原因は不明で、損傷の程度も確認中だという。ボルトレートは「忘れたい週末」と語り、8位に入ったチームメイトのヒュルケンベルグには祝福を送った。アウディは次戦アメリカGPまでに修理と原因調査を進める。",
-   "orig": "アウディF1のマシンが炎上 シンガポールGP決勝でピットレーン一時閉鎖",
-   "url": "https://f1-gate.com/audi/228343.html",
-   "published": "2026-10-12T13:56:00+09:00"
-  },
-  {
-   "id": "ja-f1jouhou2-qatar-abudhabi-decision-digest",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "topic": "f1-calendar-middle-east-imola",
-   "title": "カタール・アブダビGPの開催可否、今週発表の見通しとの話題　掲示板では代替地や安全面に議論",
-   "summary": "F1情報通が、カタールGP（11月29日）とアブダビGP（12月6日）を開催するかどうかが、15日ごろに発表される見通しだという掲示板の話題を紹介している。情報の出どころはニュース記事やSNS投稿とされ、いずれも未確認だ。2戦が中止になればアントネッリの王座が早まり、イモラが最終戦の代替になるのではという推測が出ている。ファンの間では中東での開催の安全面への懸念が目立ち、代替地としてイモラやラスベガス、セパン、ポルトガルなどの名前が挙がった。12月のイモラは寒さが心配だという声もある。",
-   "orig": "F1カタールGP＆アブダビGPを開催するか否かは今週発表される見通しらしいけど",
-   "url": "https://f1jouhou2.com/blog-entry-31694.html",
-   "published": "2026-10-12T12:00:00+09:00"
-  },
-  {
-   "id": "ja-f1jouhou2-vasseur-hamilton-decision",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "circuit": "singapore",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "hamilton-singapore-strategy-blame",
-   "title": "フェラーリ代表「ルイスの決断だった」　VSC中のステイアウトにファンの反応",
-   "summary": "F1情報通が、シンガポールGPのVSC中にハミルトンがピットへ入らなかった件について、フェラーリのバスール代表が語った内容を紹介している。代表は「完全にルイスの決断だった」と述べ、チームは入るよう呼びかけたが彼は入らなかったと説明したという。ハミルトンはレース後に謝罪し、戦略は自分の判断でチームを失望させたと話した。バスール代表は、入っていれば3位に届いたかもしれなかったとし、本人と話し合う考えも示した。ファンの反応は割れ、ハミルトンの選択を責める声とチームの対応を疑問視する声が混在している。いずれもファンの感想で、公式情報ではない。",
-   "orig": "フェラーリ代表、F1シンガポールGP決勝VSC中のハミルトンステイアウトについて「ルイスの決断だった」",
-   "url": "https://f1jouhou2.com/blog-entry-31689.html",
-   "published": "2026-10-12T12:00:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-racingbulls-no-protest-overtake-mode",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "チーム",
-   "circuit": "singapore",
-   "teams": [
-    "racingbulls"
-   ],
-   "topic": "racingbulls-no-protest-sq1",
-   "title": "レーシングブルズ、FIAへの正式抗議を見送り　SQ1のオーバーテイクモード運用ミスで",
-   "summary": "レーシングブルズは、シンガポールGPスプリント予選SQ1でのFIAのオーバーテイクモード運用ミスについて、正式な抗議を見送った。赤旗中断後に本来使えるはずのモードが作動せず、FIAはチェッカー前後のわずか27秒間だけ有効にしたため、アタックのタイミング次第で追加エネルギーを使えた選手と使えなかった選手に分かれた。FIAは人為的ミスを認めている。予選8番手のローソンはスプリントで5位となり4ポイントを獲得したが、抗議で予選が無効になれば10番手に下がる見込みだった。パーメイン代表は「今はFIAを攻撃すべき時ではない」とし、予選中は機能を使えなくするロック機構を提案している。",
-   "orig": "レーシングブルズF1 FIAへの正式抗議を見送る「結果が悪化する可能性もあった」",
-   "url": "https://f1-gate.com/rb/228322.html",
-   "published": "2026-10-12T11:46:00+09:00"
   }
  ]
 }
