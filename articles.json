@@ -1,13 +1,9 @@
 {
- "updatedAt": "2026-10-15T12:25:00+09:00",
+ "updatedAt": "2026-10-15T18:30:00+09:00",
  "topics": {
   "hamilton-singapore-strategy-blame": {
    "title": "ハミルトン、VSC中にピットへ入らなかった戦略に責任を認める",
    "summary": "VSCの間にルクレールがロスの少ない2回目のピットを行った一方、ハミルトンは入らずソフトで走り続け、6位まで後退した。各媒体とも、ハミルトンが無線で「あの戦略で期待を裏切ってしまった」と謝ったと伝えている。Motorsport.comは、バスール代表が「指示は2台ともピットインだった」と説明したと報じ、損失を約41.5秒と計算した。独Motorsport-Totalは、ハミルトンが通常走行中に呼び戻された後も次の安全車に賭けて拒んだと論じ、ピットウォールへの信頼の問題と指摘した。"
-  },
-  "lambiase-leaves-verstappen": {
-   "title": "ランビアーゼ、フェルスタッペンの担当を離れる　後任はトム・ハート",
-   "summary": "シンガポールGPはランビアーゼがフェルスタッペンの担当として臨む最後の週末の一つとされ、レッドブルは表彰台に同行させて労った。後任はトム・ハートで、オースティンから務める。ランビアーゼの移籍先はマクラーレンとされ、時期や休養期間は交渉中と伝えられている。"
   },
   "antonelli-track-limits-no-penalty": {
    "title": "アントネッリ、トラックリミット4回でも処分なし　ブレーキ不調が理由",
@@ -52,9 +48,155 @@
   "hadjar-red-bull-struggle": {
    "title": "ハジャー、シンガポールで不運続き　レッドブルは「自分たちの責任」と認める",
    "summary": "ハジャーはシンガポールGPでスプリントのパワー喪失、PU交換、予選Q1のギアボックス不調と不運が続き、決勝は10位で1点を獲得した。メキース代表は同選手側の週末を「ひどい」と述べ、問題は自分たちにあると認めた。ハジャーは、より安定して走るクルマを望むと語っている。"
+  },
+  "rwanda-african-gp": {
+   "title": "F1が2030年代初頭のルワンダ開催を発表　人権団体は「スポーツウォッシング」と批判",
+   "summary": "F1はルワンダと10年契約を結び、キガリ南方の新サーキットでアフリカGPを2030年代初頭に開く計画を発表した。実現すれば1993年南アフリカGP以来のアフリカ開催となる。一方、アムネスティ英国などの人権団体は、国内の人権状況や隣国コンゴ民主共和国への関与疑惑を挙げ、スポーツウォッシングだと批判している。F1側は、アフリカの約1億人のファンに届く機会だと説明している。"
+  },
+  "cadillac-2027-lineup": {
+   "title": "キャデラックの2027年ラインアップ　ボッタス契約とオコン移籍説",
+   "summary": "キャデラックはペレスとボッタスの体制で2027年を迎える見通しとされるが、ボッタスの先行きを巡る話題が続いている。ドイツ誌の報道として、ハースを離れるオコンが候補に挙がり、ブコウスキー代表が高く評価していると伝えられた。ただし正式な打診や合意は確認されておらず、いずれも未確認のうわさの段階だ。"
   }
  },
  "articles": [
+  {
+   "id": "ja-f1gate-mercedes-upgrade-strategy",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "mercedes-upgrade-strategy",
+   "title": "メルセデス、大型アップデート戦略を見直しか　ヴォルフ代表が課題認める",
+   "summary": "F1-Gate.comは、メルセデスが大型パッケージを一括投入する開発手法の見直しを迫られていると伝えた。マレーシアで投入した新パッケージは1周0.3秒の向上を見込んでいたが、予選後にはほぼ同程度悪化した可能性があるとヴォルフ代表が示唆した。シンガポールでは新フロントウイング付きの新仕様のアントネッリがスプリント予選7番手、従来仕様のラッセルが2番手だった。ヴォルフは複数変更の同時投入は原因特定が難しく、小刻みな投入なら戻しやすいと認めたが、方針転換の決定はまだ下していない。",
+   "orig": "メルセデスF1 大型アップデート戦略を見直しか ヴォルフ代表が課題認める",
+   "url": "https://f1-gate.com/mercedes-benz/228499.html",
+   "published": "2026-10-15T16:26:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-verstappen-three-laps-rb22",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "verstappen-three-laps-rb22",
+   "title": "フェルスタッペン、レッドブル新車の問題を3周で察知　「なぜそこを変えた？」",
+   "summary": "F1-Gate.comは、フェルスタッペンが今年1月のバルセロナ事前テストでRB22の問題をわずか3周で見抜いたと伝えた。語ったのはメキース代表で、パートナー企業ロクトの動画インタビューでの発言だ。フェルスタッペンは前年の車で最も良かった部分をなぜ変えたのかと尋ね、チームは後に修正したと笑って振り返ったという。数千個のセンサーとAIを含むモデルでもデータ上は異常が出ず、メキースは困惑したと明かし、ドライバーの感覚が今も不可欠だと強調した。",
+   "orig": "マックス・フェルスタッペン レッドブルF1新車の問題を3周で察知「なぜそこを変えた？」",
+   "url": "https://f1-gate.com/verstappen/228708.html",
+   "published": "2026-10-15T15:41:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-honda-alonso-pu-check",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "チーム",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "honda-alonso-pu-check",
+   "title": "ホンダ、アロンソのPU異常を調査へ　「故障ではないが原因を突き止める」",
+   "summary": "F1-Gate.comは、ホンダがシンガポールGPで訴えられたアロンソのPU異常を調べると伝えた。アロンソは予選後にターボの不調を訴え、決勝前に交換してグリッド降格を受けたが、折原チーフエンジニアは「故障していたわけではない」と説明した。データ上は大きな問題が確認できておらず、「ドライバーが最も優れたセンサー」だとして本人の感覚を重視した判断だったという。日本の拠点でレースと予選のデータを比較し、アメリカGPまでに原因を特定する予定で、ハードか制御・調整の問題かを見極めるとされる。",
+   "orig": "ホンダF1 フェルナンド・アロンソのPU異常を調査へ「故障ではないが原因を突き止める」",
+   "url": "https://f1-gate.com/honda/228716.html",
+   "published": "2026-10-15T12:36:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-rwanda-gp-amnesty",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "ビジネス",
+   "teams": [],
+   "topic": "rwanda-african-gp",
+   "title": "F1アフリカGPのルワンダ開催に人権団体が抗議　「スポーツウォッシングだ」",
+   "summary": "F1-Gate.comは、ロイターの報道として、ルワンダでのアフリカGP開催に人権団体が抗議していると伝えた。F1は13日にキガリで10年契約を結び、首都南方約40kmのブゲセラ地区の新設サーキットで2030年代初頭に開く計画で、1993年南アフリカGP以来のアフリカ開催になる。アムネスティ英国のジェイクンス氏は、拘束や言論弾圧などを挙げて「スポーツウォッシング」と批判した。F1側は約1億人のファンに届く機会で「スポーツは良い影響を与えられる」と述べ、ルワンダ政府は取材に未回答だったという。",
+   "orig": "F1アフリカGPのルワンダ開催に人権団体が抗議「スポーツウォッシングだ」",
+   "url": "https://f1-gate.com/africangp/228744.html",
+   "published": "2026-10-15T13:29:00+09:00",
+   "provider": "Reuters"
+  },
+  {
+   "id": "de-motorsporttotal-mclaren-mcl40-fundamental",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "テクニカル",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "mclaren-mcl40-fundamental",
+   "title": "マクラーレンに「早い救済策」なし　MCL40には根本的な変更が必要",
+   "summary": "Motorsport-Total.comは、マクラーレンのステラ代表がMCL40の扱いにくさは根本的な変更なしには解消できないと認めたと伝えた。そうした変更は早くても2027年型のMCL41でしか行えず、今後のアップデートでこの特性が良くなるとは期待していないという。ノリスはコーナーのたびに「刃の上」を走るようで、前後の軸を力ずくで操る必要があり心身ともに消耗すると語った。穏やかなステアリング操作を得意とするピアストリはより大きな影響を受けたとされ、ステラは原因が技術面にあると説明している。",
+   "orig": "Keine schnelle Rettung: McLaren braucht \"fundamentale Änderungen\" am MCL40",
+   "url": "https://www.motorsport-total.com/formel-1/news/keine-schnelle-rettung-mclaren-braucht-fundamentale-aenderungen-am-mcl40-26101502",
+   "published": "2026-10-15T10:00:00+02:00"
+  },
+  {
+   "id": "de-motorsporttotal-redbull-new-number-one",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "teams": [
+    "redbull",
+    "mercedes",
+    "ferrari",
+    "mclaren"
+   ],
+   "topic": "redbull-three-wins-pecking-order",
+   "title": "3連勝のレッドブルは新たな勢力図の頂点か　ラッセルらが評価",
+   "summary": "Motorsport-Total.comは、バクーのわずか0.2秒差からマレーシア、シンガポールと続いたフェルスタッペンの3連勝を受け、レッドブルが新たな最強チームかを検証した。ラッセルは最近のレースでレッドブルが明らかに最速だったと認め、アントネッリは躍進を「信じられない」と評した。フェラーリのバスール代表はシンガポールで4チームが0.2秒以内にいたと述べ、マクラーレンのステラ代表は更新で順位が入れ替わる「ピンポン」状態だと語った。レッドブルは大型アップデートをもう投入しない方針で、フェルスタッペンはタイトル争いより個々のレースを楽しみたいと話している。",
+   "orig": "Drei Siege in Folge: Ist Red Bull jetzt die neue Nummer 1 der Formel 1?",
+   "url": "https://www.motorsport-total.com/formel-1/news/drei-siege-in-folge-ist-red-bull-jetzt-die-neue-nummer-1-der-formel-1-26101504",
+   "published": "2026-10-15T09:52:00+02:00"
+  },
+  {
+   "id": "ja-f1gate-ocon-cadillac-rumor",
+   "kind": "rumor",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "うわさ",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "cadillac-2027-lineup",
+   "title": "オコンのキャデラック移籍説が浮上　ブコウスキー代表の高評価が追い風",
+   "summary": "F1-Gate.comは、独誌アウトモトア・ウント・シュポルトの報道として、ハースを今季限りで離れるオコンにキャデラック移籍説が出ていると伝えた。ブコウスキー代表はルノーとアルピーヌ時代にオコンと働いた経験があり、高く評価しているという。キャデラックのボッタスは2027年まで契約があり、放出には多額の補償が必要になる可能性が指摘されている。ただ正式な打診や交渉の有無は不明で、契約合意の報道もない。オコンは5〜7年F1で走りたい意向で、シートがなければメルセデスの控えに戻る道もあるとされる。",
+   "orig": "エステバン・オコンのキャデラックF1移籍説が浮上 ブコウスキー代表の高評価が追い風",
+   "url": "https://f1-gate.com/esteban-ocon/228777.html",
+   "published": "2026-10-15T14:56:00+09:00"
+  },
+  {
+   "id": "ja-f1are-honda-watanabe-target",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "honda-watanabe-target-miss",
+   "title": "HRC渡辺社長「目標を達成できなかった」発言に掲示板が反応",
+   "summary": "F1のアレが、スペインのmotor.esのインタビューを紹介する形で、HRCの渡辺社長の発言を取り上げた。2027年1月に退任する渡辺社長は、新規則のPUでホンダが掲げた目標は非常に高く、開幕までに達成できず「誇りは深く傷ついた」と語ったという。アストンマーティンとの初年度に控えめな目標を置いたとの見方は否定している。掲示板では、率直な認め方を評価する声や、具体的な目標値と差を知りたいという声があり、エンジニア流出や過去の撤退を巡る意見も出ていた。いずれも匿名の書き込みで、確定情報ではない。",
+   "orig": "HRC（ホンダ・レーシング）渡辺社長、2026F1エンジン（PU）について「自ら掲げた目標を達成できなかった」",
+   "url": "https://f1are.com/blog-entry-3985.html",
+   "published": "2026-10-15T12:00:00+09:00"
+  },
   {
    "id": "ja-f1gate-russell-engine-penalty-vegas",
    "kind": "news",
@@ -1324,155 +1466,6 @@
    "orig": "George Russell schreibt WM-Titel ab: Warum Mercedes jetzt andere Sorgen hat",
    "url": "https://www.motorsport-total.com/formel-1/news/george-russell-schreibt-wm-titel-ab-warum-mercedes-jetzt-andere-sorgen-hat-26101208",
    "published": "2026-10-12T11:41:00+02:00"
-  },
-  {
-   "id": "it-formula1it-redbull-rb22-hidden-work",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "circuit": "singapore",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-rb22-recovery",
-   "title": "不具合だらけだったレッドブルRB-22はなぜ立ち直ったか　シンガポール優勝の裏の地道な作業",
-   "summary": "Formula1.itは、当初は性能が低く不具合も多かったレッドブルの新車RB-22が、バクー、セパン、シンガポールを通じて競争力を取り戻したと伝えた。フェルスタッペンは直近2戦を制し、車が「運転しやすく予測しやすくなった」ことが最後の一歩に必要だったと語っている。昨年は主にセットアップの問題だったが、今年は新しい部品を実際に投入する必要があったという。本人はタイトル争いには絡まず、アントネッリは「はるか先」にいるので、もう楽しみたいだけだと話した。",
-   "orig": "Red Bull, dai guasti alla vittoria: il lavoro nascosto sulla vettura",
-   "url": "https://www.formula1.it/news/33216/1/red-bull-dai-guasti-alla-vittoria-il-lavoro-nascosto-sulla-vettura",
-   "published": "2026-10-12T10:30:00+02:00"
-  },
-  {
-   "id": "de-motorsport-total-antonelli-track-limits-explained",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-track-limits-no-penalty",
-   "title": "アントネッリのトラックリミット違反が罰せられなかった理由をFIAが説明",
-   "summary": "アントネッリはシンガポールGPでコースを4回外れながらペナルティを受けなかった。FIAの担当者は、4回目とされた違反についてチーム無線で語られたブレーキの問題が説明になり、スチュワードが妥当な理由として認めたと述べた。FIAの文書では違反は2コーナーで2回、19コーナーで1回、いずれもレース前半で、争点の4回目は7コーナーだった。5秒加算でも、4位ノリスに15.9秒差の3位という結果は変わらなかった。ウォルフは前半で3回の警告を受けた状況を「ストレス」と表現しつつ、冷静に対処したと話している。",
-   "orig": "Erklärt: Warum Kimi Antonelli keine Tracklimits-Strafe erhielt",
-   "url": "https://www.motorsport-total.com/formel-1/news/erklaert-warum-kimi-antonelli-keine-tracklimits-strafe-erhielt-26101206",
-   "published": "2026-10-12T10:19:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-wolff-redbull-ford-pu",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "チーム",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "topic": "redbull-ford-pu-wolff",
-   "title": "メルセデス代表ウォルフ、レッドブル・フォードPUを高評価「性能で劣っていない」",
-   "summary": "メルセデスのウォルフ代表は、シンガポールGP後にレッドブル・フォードのパワーユニットは性能面で劣っていないと語った。データはまだ見ていないとしつつ、内燃機関は十分に競争力があり、ADUOの評価もそれを裏付け、エネルギー回生と展開も優れていると述べた。フェルスタッペンはシンガポールとクアラルンプールで最速だったと称賛している。一方でセパンで投入したメルセデスの大型アップグレードはまだ明確な成果を出していないといい、ウォルフは2027年に向けてレッドブルを含む本格的な争いになると見ている。",
-   "orig": "メルセデスF1代表 レッドブル・フォードPUを高評価「性能で劣っていない」",
-   "url": "https://f1-gate.com/mercedes-benz/228378.html",
-   "published": "2026-10-12T17:17:00+09:00"
-  },
-  {
-   "id": "de-motorsport-total-antonelli-clever-podium",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes",
-    "mclaren",
-    "ferrari"
-   ],
-   "topic": "antonelli-singapore-podium-pass",
-   "title": "ノリスとハミルトンの争いを突いて表彰台へ　アントネッリの冷静な追い上げ",
-   "summary": "ドライバーズ選手権首位のアントネッリは、シンガポールGPで終盤まで5番手を走り、争い合うノリスとハミルトンを抜いて3位に入った。ハミルトンは序盤にソフトへ替え、39周目のVSC中もピットに入らず、54周目に1コーナーのランオフへ滑り出ている。ノリスも1コーナーで膨らんで勢いを失い、アントネッリが3コーナー出口で前に出て、同じ周のうちに16コーナー手前でハミルトンも抜いた。ノリスは「もっとうまくやるべきだった」と反省し、アントネッリは状況をうまく利用したと話す。2週間後のオースティンでは、タイトル獲得の可能性がある。",
-   "orig": "Scharmützel ausgenutzt: So clever holte sich Antonelli das Podium in Singapur",
-   "url": "https://www.motorsport-total.com/formel-1/news/scharmuetzel-ausgenutzt-so-clever-holte-sich-antonelli-das-podium-in-singapur-26101205",
-   "published": "2026-10-12T10:09:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-norris-team-play-piastri",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "mclaren",
-    "ferrari"
-   ],
-   "topic": "norris-team-play-offer",
-   "title": "ノリス、決勝でハミルトンを抑えてピアストリを助ける案をチームに提案　マクラーレンは却下",
-   "summary": "ノリスはシンガポールGP決勝の終盤、前を走るハミルトンのペースを落とし、後ろのピアストリを助けるという案をチームに提案した。マクラーレンはピアストリに十分なペースがあるとして、通常どおり走るよう指示している。ノリスは5番手発進から4位でゴールし、ピアストリは右フロントのスローパンクで予定外のピットを強いられながら5位に入った。ノリスは表彰台争いが難しくなったため、チーム全体の得点を優先したと説明した。前日のスプリントでの接触については、自身のミスだったと認めて謝罪している。",
-   "orig": "ランド・ノリス 決勝でマクラーレンF1にチームプレー提案「ピアストリを助けたかった」",
-   "url": "https://f1-gate.com/lando-norris/228334.html",
-   "published": "2026-10-12T17:03:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-hamilton-no-penalty-offtrack",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "circuit": "singapore",
-   "teams": [
-    "ferrari",
-    "mclaren"
-   ],
-   "topic": "hamilton-turn1-no-penalty",
-   "title": "ハミルトン、シンガポールGPでコース外走行もペナルティなし　FIAが理由を説明",
-   "summary": "ハミルトンはシンガポールGPで1コーナーをノリスと争った際にコースを外れ、前に出た形で復帰したが、ペナルティは科されなかった。スチュワードは映像とタイミングデータ、オンボード映像を確認し、ノリスも同じ場所でコース外に出ており、その追い越しは正当なものではなかったと判断した。両者は元の順位のまま復帰し、その後アントネッリが2台を抜いたため、追加の措置は不要とされた。FIAは今回の判断は個別のケースで、守る側のコース外走行が一般に認められるという意味ではないと強調している。ハミルトンはVSC中にピットへ入らなかった影響で、最終的に6位だった。",
-   "orig": "ルイス・ハミルトン F1シンガポールGPでコース外走行もペナルティなし FIAが理由説明",
-   "url": "https://f1-gate.com/hamilton/228375.html",
-   "published": "2026-10-12T16:16:00+09:00"
-  },
-  {
-   "id": "de-motorsport-total-verstappen-lambiase-podium",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "circuit": "singapore",
-   "teams": [
-    "redbull",
-    "mclaren"
-   ],
-   "topic": "lambiase-leaves-verstappen",
-   "title": "フェルスタッペン、ランビアーゼの表彰台同行に驚き　後任はハート、オースティンから担当",
-   "summary": "レッドブルはシンガポールGPの表彰台に、今季限りで担当を離れるランビアーゼをフェルスタッペンと並べて上げた。フェルスタッペンは予想していなかったと話し、ラスベガス2025の後にランビアーゼが最後の表彰台になるかもしれないと語っていたことを思い出した。後任のレースエンジニアはトム・ハートで、オースティン、ブラジル、ラスベガスから担当すると同チームが確認している。ハートはウィリアムズでアルボンの担当になる予定だったが、フェルスタッペンの希望でレッドブルが残留させた。ランビアーゼの移籍先とされるマクラーレンとは、開始時期と休養期間をめぐり交渉中だという。",
-   "orig": "Verstappen überrascht von Lambiase-Geste: \"Damit hatte ich nicht gerechnet\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/verstappen-ueberrascht-von-lambiase-geste-damit-hatte-ich-nicht-gerechnet-26101204",
-   "published": "2026-10-12T08:47:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-verstappen-radio-failure",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "決勝",
-   "circuit": "singapore",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "verstappen-radio-failure",
-   "title": "フェルスタッペン、決勝中に無線故障「暗号で意思疎通」　それでもシンガポール初勝利",
-   "summary": "フェルスタッペンはポールからシンガポールGPの62周を制し、10回目の挑戦で初優勝を果たしたが、決勝中は無線の送信が不調だった。ランビアーゼ担当エンジニアの声は聞こえたものの、フェルスタッペンの返答はピットウォールに届かなかった。そこでSC時の戦略は、無言なら追加ピット、無線ボタンを押してノイズを出せばステイアウトという合図で伝えたという。本人はシーズンを通じて起きていた問題で今週末は特に悪かったと語り、金曜走行から症状が出ていた。ミケス代表は原因がチーム側にあり、サーキットの通信環境のせいではないと説明している。",
-   "orig": "マックス・フェルスタッペン F1シンガポールGP決勝で無線故障「暗号で意思疎通」",
-   "url": "https://f1-gate.com/verstappen/228302.html",
-   "published": "2026-10-12T14:31:00+09:00"
   }
  ]
 }
