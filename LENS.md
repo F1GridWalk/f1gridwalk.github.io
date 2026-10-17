@@ -28,6 +28,8 @@ WORLD GRID has two kinds of pages (owner's decision, 29 Sep 2026):
   3. 余談 already posted on note: published = the real time it goes on the site (not the note date); slug may end with the note date; optionally `note`: 「この余談は10月2日に note で先に公開しました。」 plus `noteUrl`. Ask the owner before adding a site link to an already-posted note. Which ones go on the site is the owner's call; publish only after the owner's OK on a phone-width preview.
 - A column that could stand as a グランプリ特別号 story may also be reused there later.
 
+- Names (owner, 17 Oct 2026): spell people as in `deep/people.json` (which follows autosport web). Paul Aron is 「ポール・アーロン」 from now on; older articles that say 「アロン」 stay as they are.
+
 ## 0b. Breaking column (速報コラム)
 Owner's decision, 30 Sep 2026: no automatic breaking columns. A 速報コラム is written only when the owner asks for one on a specific story (e.g. `ocon-future-20260930`). Same format and fact rules as §0, show the owner a phone-width preview and the note/X assets, and publish on the owner's OK. Always offer 3–5 title options (each following the Title rule) with a copy button on each, and 3–4 header-image options in different "eye" layouts, so the owner can choose (owner's request, 1 Oct 2026); same for any other text the owner is asked to choose or paste.
 
