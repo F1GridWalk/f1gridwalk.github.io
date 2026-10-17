@@ -151,6 +151,11 @@ body[data-v="data"] .dash-side{margin-top:6px}
 .lo-btns .lo-go{background:#F3EFE6;color:#1F2420;border-color:#F3EFE6}
 .lo-x{position:absolute;top:12px;right:14px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:#F3EFE6;font:700 20px/40px sans-serif;cursor:pointer}
 .lo-hint{font-size:12px;color:#8E9187;margin:14px 0 0}
+/* outlet name on news cards is a filter button (owner, 18 Oct 2026) */
+.src-btn{font:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;display:inline-flex;align-items:center;min-width:0;max-width:100%;color:inherit;text-align:left}
+.src-btn .srcbadge{text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
+.src-btn:hover .srcbadge,.src-btn:focus-visible .srcbadge{text-decoration-color:currentColor}
+.src-btn[aria-pressed="true"] .srcbadge{text-decoration-color:currentColor;text-decoration-thickness:2px}
 /* ways into older news under the feed (owner, 14 Oct 2026) */
 .feed-ways{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
 .feed-ways a{font-size:14px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;color:var(--ink);background:var(--surface)}
@@ -2242,7 +2247,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       meta.appendChild(mk('span', 'plat plat-' + a.platform, a.platform === 'blog' && a.site ? a.site : pfl));
       meta.appendChild(mk('span', 'author', a.author + (a.platform !== 'blog' && a.site && a.site !== a.author ? '（' + a.site + '）' : '')));
     } else {
-      meta.appendChild(badge(a.source));
+      /* press the outlet name to see only that outlet's news (owner's request, 18 Oct 2026) */
+      var sb = mk('button', 'src-btn'); sb.type = 'button'; sb.appendChild(badge(a.source));
+      var on = state.src === a.source;
+      sb.title = on ? 'すべての媒体に戻す' : a.source + 'のニュースだけを表示';
+      sb.setAttribute('aria-pressed', String(on));
+      sb.addEventListener('click', function(){ state.src = state.src === a.source ? 'all' : a.source; try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: 'click/card/src', title: '', event: true }); } catch(e){} renderAll(); goNews(); });
+      meta.appendChild(sb);
       meta.appendChild(mk('span', 'rg', a.region));
     }
     meta.appendChild(timeEl(a.published));
