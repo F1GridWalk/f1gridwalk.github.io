@@ -158,7 +158,7 @@
    ],
    "role": "チーム代表",
    "org": "ハース",
-   "short": "2024年からハースのチーム代表。日本人として15年ぶりのF1チーム代表。",
+   "short": "2024年からハースのチーム代表。日本人として15年ぶりのF1チーム代表で、トヨタがタイトルパートナーになった2026年は「TGRハース」を率いる。8月のポルティマオでの旧型車テストで候補を比べ、2027年のドライバーにカマラを選んだ。ベアマンの残留は「タイミングの問題」と話している。",
    "avoid": [
     "名前の読みは「あやお」"
    ],
@@ -167,13 +167,36 @@
      "name": "Number Web",
      "title": "日本人として15年ぶりのF1チーム代表就任…小松礼雄の手腕（2025年1月10日）",
      "url": "https://number.bunshun.jp/articles/-/864382"
+    },
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Sho Tsuboi and Nirei Fukuzumi drive Fuji Speedway TPC event（2026年6月25日、小松代表・豊田会長・中嶋一貴の肩書きを確認）",
+     "url": "https://haasf1team.com/news/sho-tsuboi-and-nirei-fukuzumi-drive-fuji-speedway-tpc-event"
+    },
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Rafael Câmara Confirmed at TGR Haas F1 Team for 2027（2026年10月15日）",
+     "url": "https://www.haasf1team.com/news/rafael-camara-confirmed-tgr-haas-f1-team-2027"
+    },
+    {
+     "name": "The Race",
+     "title": "Why one F1 test day decided 2027 Haas driver choice（2026年10月16日、カマラの複数年契約、ポルティマオのテスト、豊田会長への報告、ベアマン残留を確認）",
+     "url": "https://www.the-race.com/formula-1/why-one-f1-test-day-decided-2027-haas-driver-choice/"
     }
    ],
    "appears": [
     "/lens/ocon-villeneuve-20261001/",
     "/lens/ocon-future-20260930/"
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-17",
+   "words": [
+    "小松礼雄",
+    "ハース チーム代表",
+    "TGRハース",
+    "カマラ",
+    "ベアマン",
+    "トヨタ 提携"
+   ]
   },
   {
    "id": "george-russell",
@@ -3317,6 +3340,493 @@
    ],
    "appears": [],
    "checked": "2026-10-13"
+  },
+  {
+   "id": "ryo-hirakawa",
+   "name": "平川亮",
+   "kana": "",
+   "en": "Ryo Hirakawa",
+   "aliases": [
+    "平川",
+    "Hirakawa"
+   ],
+   "role": "リザーブドライバー（ハース）／WECドライバー（トヨタ・レーシング8号車）",
+   "org": "ハース（TGRハース）／トヨタ・レーシング",
+   "short": "トヨタのWECドライバーで、2025年4月からハースの公式リザーブドライバーを兼ねる。2026年はオーストリアGPのFP1でハースのVF-26を初めて走らせ、ル・マン24時間では8号車で3位に入った。8月のポルティマオでのハースの旧型車テストにも参加したが、2027年のシートはカマラに決まった。",
+   "avoid": [
+    "2027年のハースのレースシートに決まったわけではない（決まったのはカマラ）",
+    "2026年はアルピーヌのリザーブではない（ハースへの移籍は2025年4月）",
+    "2026年はマクラーレンのリザーブではない",
+    "ル・マン2026で優勝したのは7号車（小林可夢偉ら）で、平川の8号車は3位"
+   ],
+   "words": [
+    "平川亮",
+    "ハース リザーブ",
+    "TGRハース",
+    "トヨタ WEC",
+    "ル・マン",
+    "FP1"
+   ],
+   "sources": [
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Ryō Hirakawa（ドライバー紹介、2025年4月から公式リザーブであることと2026年のWEC継続を確認）",
+     "url": "https://www.haasf1team.com/season/team/ryo-hirakawa"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Who are the reserve drivers for each F1 team in 2026?（2026年2月25日、各チームのリザーブを確認）",
+     "url": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U"
+    },
+    {
+     "name": "autosport web",
+     "title": "平川亮、F1オーストリアGPのFP1にTGRハースから出走へ。VF-26初ドライブに「とても楽しみ」（2026年6月23日、リザーブドライバーとしてのFP1出走を確認）",
+     "url": "https://www.as-web.jp/f1/1327897?all"
+    },
+    {
+     "name": "autosport web",
+     "title": "可夢偉が語る勝利確信の瞬間とライバルとの最高速差。戦略違いの2台ワンチームで掴んだトヨタ6度目のル・マン24時間制覇（2026年6月16日、8号車で3位を確認）",
+     "url": "https://www.as-web.jp/sports-car/1326654"
+    },
+    {
+     "name": "The Race",
+     "title": "Why one F1 test day decided 2027 Haas driver choice（2026年10月16日、8月のポルティマオのテスト参加とカマラ起用を確認）",
+     "url": "https://www.the-race.com/formula-1/why-one-f1-test-day-decided-2027-haas-driver-choice/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "ayumu-iwasa",
+   "name": "岩佐歩夢",
+   "kana": "いわさ あゆむ",
+   "en": "Ayumu Iwasa",
+   "aliases": [
+    "岩佐",
+    "Iwasa"
+   ],
+   "role": "リザーブドライバー（レーシングブルズ）／スーパーフォーミュラドライバー",
+   "org": "レーシングブルズ／TEAM MUGEN AUTOBACS",
+   "short": "2025年のスーパーフォーミュラ王者。2026年もレーシングブルズの公式リザーブドライバーを務め、オーストリアGPのFP1でレーシングブルズ、イタリアGPのFP1でレッドブルのマシンを走らせた。スーパーフォーミュラはTEAM MUGENで参戦を続け、10月の第10戦富士で今季初優勝を挙げた。",
+   "avoid": [
+    "2026年のレッドブルのリザーブは角田裕毅。岩佐はレーシングブルズの公式リザーブ",
+    "F1のレギュラードライバーではない",
+    "2026年のスーパーフォーミュラのタイトルはまだ決まっていない（第11・12戦は鈴鹿）"
+   ],
+   "words": [
+    "岩佐歩夢",
+    "レーシングブルズ リザーブ",
+    "スーパーフォーミュラ",
+    "TEAM MUGEN",
+    "FP1"
+   ],
+   "sources": [
+    {
+     "name": "formula1.com",
+     "title": "Who are the reserve drivers for each F1 team in 2026?（2026年2月25日、各チームのリザーブを確認）",
+     "url": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U"
+    },
+    {
+     "name": "GPblog",
+     "title": "Racing Bulls maakt ook de vaste reserve bekend - en dat is niet Tsunoda（2025年12月2日、2026年もレーシングブルズの正リザーブに再任と確認）",
+     "url": "https://www.gpblog.com/nl/nieuws/racing-bulls-maakt-ook-de-vaste-reserve-bekend-en-dat-is-niet-tsunoda"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Red Bull F1 reserve Ayumu Iwasa wins Super Formula title（2025年、スーパーフォーミュラ王座獲得を確認）",
+     "url": "https://www.motorsport.com/super-formula/news/red-bull-f1-reserve-ayumu-iwasa-wins-super-formula-title/10779152/"
+    },
+    {
+     "name": "autosport web",
+     "title": "日本人は岩佐15番手、平川19番手。若手6人参加のセッションはメルセデスがワン・ツー／F1オーストリアGP FP1（2026年6月26日、FP1出走と表記を確認）",
+     "url": "https://www.as-web.jp/f1/1328673?all"
+    },
+    {
+     "name": "autosport web",
+     "title": "【タイム結果】2026年F1第13戦イタリアGP フリー走行1回目（2026年9月4日、レッドブルでのFP1出走を確認）",
+     "url": "https://www.as-web.jp/f1/1348157"
+    },
+    {
+     "name": "autosport web",
+     "title": "【正式結果】2026年スーパーフォーミュラ第10戦富士 決勝（2026年10月11日、優勝を確認）",
+     "url": "https://www.as-web.jp/super-formula/1361332"
+    },
+    {
+     "name": "autosport web",
+     "title": "【SF Mix Voices第10戦決勝（2）】（2026年10月14日、第10戦富士での今季初優勝を確認）",
+     "url": "https://www.as-web.jp/super-formula/1361769"
+    },
+    {
+     "name": "Honda 公式",
+     "title": "Honda育成ドライバー岩佐歩夢選手のF1日本グランプリ プラクティス出走が決定（2024年3月26日、読みを確認）",
+     "url": "https://global.honda/jp/topics/2024/4e_2024-03-26.html"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "kamui-kobayashi",
+   "name": "小林可夢偉",
+   "kana": "",
+   "en": "Kamui Kobayashi",
+   "aliases": [
+    "可夢偉",
+    "Kobayashi"
+   ],
+   "role": "チーム代表兼ドライバー（7号車）",
+   "org": "トヨタ・レーシング（WEC）",
+   "short": "元F1ドライバー。トヨタのWECチーム（トヨタ・レーシング）でチーム代表とドライバーを兼ね、2026年のル・マン24時間では7号車で優勝した。2025年にはポール・リカールでハースの旧型車（VF-23）をテストし、11年ぶりにF1マシンを走らせた。",
+   "avoid": [
+    "F1チーム（ハース）の役職はない。ハースのリザーブでもない",
+    "ハースのテストは2025年の旧型車テスト（TPC）で、2026年のF1公式セッションではない",
+    "会社（TOYOTA RACING GmbH）の役職ではなく、WECチームの代表"
+   ],
+   "words": [
+    "小林可夢偉",
+    "トヨタ WEC チーム代表",
+    "ル・マン",
+    "ハース テスト"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "「予選は重要視していない。レースペースは速い」と可夢偉。トヨタのル・マン逆転制覇の分岐点は“クセ強”新タイヤの攻略か（2026年6月12日、トヨタ・レーシングのチーム代表兼7号車ドライバーと確認）",
+     "url": "https://www.as-web.jp/sports-car/1325191"
+    },
+    {
+     "name": "autosport web",
+     "title": "可夢偉が語る勝利確信の瞬間とライバルとの最高速差。戦略違いの2台ワンチームで掴んだトヨタ6度目のル・マン24時間制覇（2026年6月16日、7号車の優勝を確認）",
+     "url": "https://www.as-web.jp/sports-car/1326654"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Kamui Kobayashi makes surprise return to F1 cockpit with Haas（2025年6月5日、ポール・リカールでのハースVF-23テストと11年ぶりの走行を確認）",
+     "url": "https://www.planetf1.com/news/kamui-kobayashi-f1-test-haas-paul-ricard-2025-tpc"
+    },
+    {
+     "name": "Car Watch",
+     "title": "小林可夢偉選手兼チーム代表、誕生日にWEC富士6時間へ向けてのコメント（2026年9月14日、現在もチーム代表兼ドライバーと確認）",
+     "url": "https://car.watch.impress.co.jp/docs/news/2140568.html"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "kazuki-nakajima",
+   "name": "中嶋一貴",
+   "kana": "",
+   "en": "Kazuki Nakajima",
+   "aliases": [
+    "一貴",
+    "Nakajima"
+   ],
+   "role": "副会長",
+   "org": "TOYOTA RACING GmbH（旧TGR-E）",
+   "short": "元F1ドライバーでル・マン24時間3勝。ドイツ・ケルンを拠点とするトヨタのモータースポーツ会社で副会長を務め、育成ドライバーの支援などを担う。2026年7月の富士でのハースの旧型車テストには、日本人ドライバーへの助言役として参加すると発表された。",
+   "avoid": [
+    "ハースの役職者ではない",
+    "TGR-Eは2026年1月にTOYOTA RACING GmbHへ社名変更。旧称を現在の社名として書かない",
+    "WECチームの代表は小林可夢偉で、中嶋ではない"
+   ],
+   "words": [
+    "中嶋一貴",
+    "TOYOTA RACING GmbH",
+    "TGR-E",
+    "副会長",
+    "ドライバー育成"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "トヨタ中嶋一貴が語るヨーロッパでのドライバー育成（2026年4月30日、副会長の肩書きと社名変更を確認）",
+     "url": "https://www.as-web.jp/overseas/1312134"
+    },
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Sho Tsuboi and Nirei Fukuzumi drive Fuji Speedway TPC event（2026年6月25日、小松代表・豊田会長・中嶋一貴の肩書きを確認）",
+     "url": "https://haasf1team.com/news/sho-tsuboi-and-nirei-fukuzumi-drive-fuji-speedway-tpc-event"
+    },
+    {
+     "name": "Toyota 公式",
+     "title": "Toyota's European R&D center changes its name and competes in WEC with a new brand（2026年1月7日、社名変更とケルン拠点を確認）",
+     "url": "https://global.toyota/en/newsroom/toyota/43839258.html"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "akio-toyoda",
+   "name": "豊田章男",
+   "kana": "",
+   "en": "Akio Toyoda",
+   "aliases": [
+    "豊田会長",
+    "モリゾウ",
+    "Toyoda"
+   ],
+   "role": "代表取締役会長",
+   "org": "トヨタ自動車",
+   "short": "トヨタ自動車の会長。2024年10月にTGRとハースの業務提携が発表され、2026年からはTGRがハースのタイトルパートナーになった。小松代表は2027年のドライバー選びについて「最も速いドライバーを選ぶ」と事前に伝え、シンガポールGP後にカマラ起用を直接報告したと明かしている。",
+   "avoid": [
+    "ハースの役職者ではない",
+    "トヨタの社長ではなく会長",
+    "トヨタがF1にワークス参戦を決めたと書かない（ハースとは業務提携とタイトルパートナー）",
+    "2027年のハースにトヨタ系ドライバーは入っていない（小松代表は速さで選んだと説明）"
+   ],
+   "words": [
+    "豊田章男",
+    "トヨタ 会長",
+    "ハース 提携",
+    "TGRハース",
+    "モリゾウ"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "初対面で意気投合した小松代表と豊田会長「堅苦しい大きな会社だと思っていた」「日本人だから、ではない」（2024年10月11日、提携発表と表記を確認）",
+     "url": "https://www.as-web.jp/f1/1137098"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Haas reveals new identity for 2026 as Toyota team name returns（2025年12月4日、2026年からのタイトルパートナーを確認）",
+     "url": "https://www.planetf1.com/news/tgr-haas-name-arrives-f1-2026-in-team-rename"
+    },
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Sho Tsuboi and Nirei Fukuzumi drive Fuji Speedway TPC event（2026年6月25日、小松代表・豊田会長・中嶋一貴の肩書きを確認）",
+     "url": "https://haasf1team.com/news/sho-tsuboi-and-nirei-fukuzumi-drive-fuji-speedway-tpc-event"
+    },
+    {
+     "name": "Car Watch",
+     "title": "富士スピードウェイでハースF1の走行テスト始まる 小松礼雄F1チーム代表やトヨタ豊田章男会長もF1の走行を見守る（2026年7月28日、代表取締役会長の肩書きを確認）",
+     "url": "https://car.watch.impress.co.jp/docs/news/2128425.html"
+    },
+    {
+     "name": "The Race",
+     "title": "Why one F1 test day decided 2027 Haas driver choice（2026年10月16日、小松代表が事前に「最速のドライバーを選ぶ」と伝え、シンガポールGP後の月曜に報告したことを確認）",
+     "url": "https://www.the-race.com/formula-1/why-one-f1-test-day-decided-2027-haas-driver-choice/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "ritomo-miyata",
+   "name": "宮田莉朋",
+   "kana": "",
+   "en": "Ritomo Miyata",
+   "aliases": [
+    "宮田",
+    "Miyata"
+   ],
+   "role": "FIA F2ドライバー",
+   "org": "ハイテックTGR／TGR-DC",
+   "short": "トヨタ育成（TGR-DC）のドライバー。2026年はハイテックTGRからFIA F2に3年目の参戦をしており、9月の第11戦マドリードのスプリントでF2初優勝を挙げた。2025年1月にはヘレスでハースの旧型車（VF-23）をテストした。",
+   "avoid": [
+    "F1チームの役職（リザーブなど）はない",
+    "2026年のF2の所属はARTではなくハイテック（ARTは2025年）",
+    "ハイテックのチームメイトはコルトン・ハータ"
+   ],
+   "words": [
+    "宮田莉朋",
+    "FIA F2",
+    "ハイテック",
+    "TGR-DC",
+    "トヨタ育成"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "宮田莉朋 ドライバートップ（2025年12月8日の記事見出し「2026年はハイテックTGRに加入」を確認）",
+     "url": "https://www.as-web.jp/driver_top/ritomo-miyata"
+    },
+    {
+     "name": "Pit Debrief",
+     "title": "Miyata joins Hitech TGR alongside Herta for 2026 F2 season（2025年12月8日、所属・チームメイト・F2 3年目を確認）",
+     "url": "https://www.pitdebrief.com/?p=87335"
+    },
+    {
+     "name": "autosport web",
+     "title": "宮田莉朋、FIA F2初優勝＆連続表彰台（2026年9月14日、第11戦マドリードのスプリントでの初優勝を確認）",
+     "url": "https://www.as-web.jp/overseas/1352166"
+    },
+    {
+     "name": "Formula Scout",
+     "title": "Ritomo Miyata to make F1 test debut with Haas this week（2025年1月、ヘレスでのハースVF-23テストを確認）",
+     "url": "https://formulascout.com/ritomo-miyata-to-make-f1-test-debut-with-haas-this-week/127635"
+    },
+    {
+     "name": "autosport web",
+     "title": "2025年FIA F2第4戦イモラ（宮田莉朋（ARTグランプリ/TGR-DC）、2025年の所属を確認）",
+     "url": "https://www.as-web.jp/overseas/1213520"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "rafael-camara",
+   "name": "ラファエル・カマラ",
+   "kana": "",
+   "en": "Rafael Câmara",
+   "aliases": [
+    "カマラ",
+    "Camara",
+    "Câmara"
+   ],
+   "role": "FIA F2ドライバー／2027年からハースのレースドライバー（契約済み）",
+   "org": "インビクタ・レーシング／フェラーリ育成／ハース（2027年）",
+   "short": "ブラジル出身のフェラーリ育成ドライバーで、2025年のFIA F3王者。2026年はインビクタ・レーシングからFIA F2に参戦し、タイトル争いをしている。2026年10月にハースと複数年契約を結び、2027年にオコンの後任としてF1にデビューする。小松代表は8月のポルティマオでの旧型車テストで「彼が最も速かった」と起用の理由を説明した。",
+   "avoid": [
+    "2026年はまだF1のレギュラーではない（デビューは2027年）",
+    "ハースのリザーブとして2026年に契約したわけではない",
+    "2027年のチームメイトがベアマンになることは、記事の時点では正式発表されていない",
+    "F2のランキング順位は変わるので固定して書かない"
+   ],
+   "words": [
+    "カマラ",
+    "ハース 2027",
+    "フェラーリ育成",
+    "FIA F2",
+    "インビクタ"
+   ],
+   "sources": [
+    {
+     "name": "formula1.com",
+     "title": "2025 Formula 3 champion Rafael Camara graduates to F2 with Invicta Racing（2025年F3王者とF2移籍を確認）",
+     "url": "https://www.formula1.com/en/latest/article/2025-formula-3-champion-rafael-camara-graduates-to-f2-with-invicta-racing.4UnAtEQJzOM3f6f4zIM1GQ"
+    },
+    {
+     "name": "autosport web",
+     "title": "宮田莉朋がスプリントのフロントロウ獲得。カマラが今季3度目のPP／FIA F2第7戦予選（2026年7月3日、表記と所属「インビクタ・レーシング／フェラーリ育成」を確認）",
+     "url": "https://www.as-web.jp/overseas/1331069"
+    },
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Rafael Câmara Confirmed at TGR Haas F1 Team for 2027（2026年10月15日、複数年契約を確認）",
+     "url": "https://www.haasf1team.com/news/rafael-camara-confirmed-tgr-haas-f1-team-2027"
+    },
+    {
+     "name": "The Race",
+     "title": "Why one F1 test day decided 2027 Haas driver choice（2026年10月16日、オコンの後任、ポルティマオのテスト、「最も速かった」発言、ベアマンは未発表を確認）",
+     "url": "https://www.the-race.com/formula-1/why-one-f1-test-day-decided-2027-haas-driver-choice/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "colton-herta",
+   "name": "コルトン・ハータ",
+   "kana": "",
+   "en": "Colton Herta",
+   "aliases": [
+    "ハータ",
+    "Herta"
+   ],
+   "role": "テストドライバー（キャデラック）／FIA F2ドライバー",
+   "org": "キャデラック／ハイテック",
+   "short": "インディカーで9勝を挙げたアメリカ人ドライバー。2026年はインディカーを離れ、キャデラックF1のテストドライバーを務めながらハイテックからFIA F2にフル参戦している。キャデラックではシーズン中に4回のFP1出走が予定された。",
+   "avoid": [
+    "キャデラックのレギュラーではない（レギュラーはボッタスとペレス）",
+    "2026年はインディカーに参戦していない",
+    "ハイテックのチームメイトは宮田莉朋"
+   ],
+   "words": [
+    "ハータ",
+    "キャデラック テストドライバー",
+    "FIA F2",
+    "ハイテック"
+   ],
+   "sources": [
+    {
+     "name": "Cadillac F1 Team 公式",
+     "title": "CADILLAC FORMULA 1 TEAM TEST DRIVER COLTON HERTA JOINS HITECH FOR 2026 FIA FORMULA 2 CAMPAIGN（テストドライバーとF2参戦を確認）",
+     "url": "https://www.cadillacf1team.com/news/cadillac-formula-1-r-team-test-driver-colton-herta-joins-hitech-for-2026-fia"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Herta to take part in four FP1 sessions with Cadillac during 2026 season（2026年4月17日、FP1 4回の予定を確認）",
+     "url": "https://formula1.com/en/latest/article/herta-to-take-part-in-four-fp1-sessions-with-cadillac-during-2026-season.6FzzlDMz5ltCYAumyU08Ab"
+    },
+    {
+     "name": "autosport web",
+     "title": "FIA F2初参戦のハータに“トップ10”を求めるキャデラック。一方本人は「勝利が目標でないならなぜやるのか」と意欲（2026年2月25日、表記と肩書きを確認）",
+     "url": "https://www.as-web.jp/overseas/1293344"
+    },
+    {
+     "name": "autosport web",
+     "title": "F1イタリアGPのフリー走行に岩佐ら4人の若手が参加へ（2026年9月4日、表記と「キャデラック」の所属を確認）",
+     "url": "https://www.as-web.jp/f1/1347732"
+    },
+    {
+     "name": "GPFans",
+     "title": "US star's big Cadillac F1 bet looks like a huge mistake already（2026年8月6日、インディカーを離れたことを確認）",
+     "url": "https://www.gpfans.com/en/f1-news/1088797/f1-colton-herta-cadillac-american-gamble-f2-struggles-superlicence-indycar/"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "paul-aron",
+   "name": "ポール・アーロン",
+   "kana": "",
+   "en": "Paul Aron",
+   "aliases": [
+    "アーロン",
+    "アロン",
+    "ポール・アロン",
+    "Aron"
+   ],
+   "role": "リザーブドライバー",
+   "org": "アルピーヌ",
+   "short": "エストニア出身。2026年はクシュ・マイニとともにアルピーヌのリザーブドライバーを務める。チーム間の合意でバルセロナとオーストリアのFP1はアウディから、ハンガリーとモンツァのFP1はアルピーヌから出走した。",
+   "avoid": [
+    "アウディの所属ではない（FP1のみアルピーヌとの合意で出走）",
+    "as-webの表記は「ポール・アーロン」。「アロン」と書く媒体もある",
+    "フェルナンド・アロンソと混同しない",
+    "アルピーヌのレギュラーではない"
+   ],
+   "words": [
+    "アーロン",
+    "アルピーヌ リザーブ",
+    "FP1",
+    "エストニア"
+   ],
+   "sources": [
+    {
+     "name": "formula1.com",
+     "title": "Who are the reserve drivers for each F1 team in 2026?（2026年2月25日、各チームのリザーブを確認）",
+     "url": "https://www.formula1.com/en/latest/article/who-are-the-reserve-drivers-for-each-f1-team-in-2026.Ce8YvwuVJGLkVNgERX21U"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Aron set for next FP1 run with Alpine at Monza（2026年9月1日、リザーブの肩書き、バルセロナとオーストリアはアウディとの合意で出走、ハンガリーはアルピーヌを確認）",
+     "url": "https://www.formula1.com/en/latest/article/aron-set-for-next-fp1-run-with-alpine-at-monza.3X5Psl55Co2cFyrpqwzrGt"
+    },
+    {
+     "name": "autosport web",
+     "title": "【タイム結果】2026年F1第13戦イタリアGP フリー走行1回目（2026年9月4日、アルピーヌでのFP1出走を確認）",
+     "url": "https://www.as-web.jp/f1/1348157"
+    },
+    {
+     "name": "autosport web",
+     "title": "アルピーヌのリザーブ務めるアーロン、F1イタリアGPのFP1に参加へ。過去2回はキック・ザウバーでドライブ（2025年9月5日、表記を確認）",
+     "url": "https://www.as-web.jp/f1/1247077"
+    },
+    {
+     "name": "autosport web",
+     "title": "日本人は岩佐15番手、平川19番手。若手6人参加のセッションはメルセデスがワン・ツー／F1オーストリアGP FP1（2026年6月26日、FP1出走と表記を確認）",
+     "url": "https://www.as-web.jp/f1/1328673?all"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-17"
   }
  ]
 }
