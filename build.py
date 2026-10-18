@@ -2320,6 +2320,24 @@ def latest_hub():
     return max(HUBS.values(), key=key)
 
 
+# making-of records in topics/*.json "updates" (drafts, owner's notes, approvals) stay in the data
+# but are not shown to readers (review, 18 Oct 2026). "internal": true/false on an entry overrides the guess.
+UPD_INTERNAL = re.compile(r'^F1 Grid Walk：|オーナー|下書き|第\d+稿|注釈|レビュー|原文を確認|読者点検')
+
+
+def reader_updates(updates):
+    """What readers see under UPDATES: the news events, corrections and real additions,
+    plus one line for when the STORY went out (the approval record, else the last making-of record)."""
+    def internal(u):
+        return u['internal'] if 'internal' in u else bool(UPD_INTERNAL.search(u.get('t', '')))
+    inner = [u for u in updates if internal(u)]
+    out = [u for u in updates if not internal(u)]
+    if inner:
+        pub = [u for u in inner if '公開' in u.get('t', '')]
+        out.append({'at': (pub[0] if pub else inner[-1])['at'], 't': 'F1 Grid Walk で STORY を公開'})
+    return sorted(out, key=lambda u: u.get('at', ''))
+
+
 def next_html(H, rname):
     return ('<h2><i>NEXT</i>次の疑問へ</h2>' + ''.join(
         f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div></div>' for n in H['next'])
@@ -2348,14 +2366,16 @@ def build_hubs(arch, flag_of):
         meta = '<p class="hub-meta">' + e(H.get('checkedNote') or f'{len(H["outlets"])}つの報道の原文を {H.get("checked", "")} に確認しました。媒体の分析と、F1 Grid Walk の整理は分けて書いています。') + '</p>'
         if not H.get('story'):
             b.append(meta)
-        used = set()
         S = H.get('story')
+        blocked = set((S or {}).get('noLink', []))  # entries that would mislead here, e.g. the F1 sprint page from an F3 story (review, 18 Oct 2026)
+        used = set(blocked)
         if S:
             n = sum(len(x[1]) for x in S['body'] if x[0] == 'p')
             sb = [f'<section class="hub-story" aria-label="STORY"><h2><i>STORY</i>レースの、もうひとつの物語</h2>',
                   f'<p class="hub-by">{e(S.get("by", "F1 Grid Walk 編集部"))}</p>']
             for kind, txt in S['body']:
                 sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', story_links(txt, used, S.get('terms'))) + '</p>')
+            used -= blocked
             sb.append(story_terms_box(''.join(sb)))  # the story's words, tied to the rulebook (owner, 12 Oct 2026)
             if S.get('sources'):  # sources listed once at the end, not inside the text (owner's decision, 12 Oct 2026)
                 sb.append('<div class="hub-st-src"><p class="k">出典</p><ul>' + ''.join(
@@ -2383,11 +2403,11 @@ def build_hubs(arch, flag_of):
             b.append(meta.replace('class="hub-meta"', 'class="hub-meta hub-meta-after"'))  # what was checked, shown with the material below the story
         if H.get('common'):
             b.append('<h2><i>COMMON</i>どの報道にも共通する事実</h2><ul class="dots">' + ''.join(f'<li>{e(x)}</li>' for x in H['common']) + '</ul>')
-        b.append('<h2><i>ONLY HERE</i>この記事にしかない情報</h2>' + f'<p class="hub-sub">今回比べた{len(H["outlets"])}本の中で、その記事だけが書いていること</p>')
-        for o in H['outlets']:
+        shown = [o for o in H['outlets'] if arts.get(o['id'])]
+        if shown:  # no compared articles → no empty ONLY HERE section (review, 18 Oct 2026)
+            b.append('<h2><i>ONLY HERE</i>この記事にしかない情報</h2>' + f'<p class="hub-sub">今回比べた{len(H["outlets"])}本の中で、その記事だけが書いていること</p>')
+        for o in shown:
             a = arts.get(o['id'])
-            if not a:
-                continue
             lang = LANG.get(a.get('lang'), '')
             b.append(f'<div class="hub-o"><div class="h"><span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span><span>{e(a.get("region", ""))} · {e(lang)}</span></div>'
                      f'<span class="ang">{e(o["angle"])}</span><ul>' + ''.join(f'<li>{e(x)}</li>' for x in o['adds']) + '</ul>'
@@ -2424,7 +2444,9 @@ def build_hubs(arch, flag_of):
                     d = datetime.fromisoformat(s).astimezone(JST); return f'{d.month}/{d.day} {d.hour:02d}:{d.minute:02d}'
                 except Exception:
                     return s
-            b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in H['updates']) + '</ul>')
+            ups = reader_updates(H['updates'])
+            if ups:
+                b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in ups) + '</ul>')
         b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>' + term_assets(used))
         head = MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
