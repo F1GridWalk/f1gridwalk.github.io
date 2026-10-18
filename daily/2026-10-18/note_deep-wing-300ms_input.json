@@ -1,0 +1,136 @@
+{
+ "slug": "deep-wing-300ms",
+ "type": "deep",
+ "title": "F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか【DEEP GRID #16】",
+ "siteUrl": "https://f1gridwalk.github.io/deep/wing-300ms/",
+ "utmCampaign": "wing-300ms",
+ "noteTags": "#F1 #F1jp #DEEPGRID #リアウイング #アクティブエアロ #F1の技術 #F1解説",
+ "body": [
+  [
+   "p",
+   "FIAは2027年、動くリアウイングの切り替えにかけてよい時間を0.4秒から0.3秒に縮める。いちばん影響を受けそうなのは、フラップを大きく回転させる「マカレナウイング」だ。たった0.1秒を、なぜわざわざ規則で決めるのか。2026年の翼の仕組み、フェルスタッペンの2度の事故、アロンソの「閉じたままの翼」から、安全と速さのせめぎ合いをほどく。"
+  ],
+  [
+   "h2",
+   "先に結論"
+  ],
+  [
+   "p",
+   "① 2026年のF1は、前後の翼が走りながら動く（アクティブエアロ）。決められた直線ではボタンで翼を寝かせて空気抵抗を減らし（ストレートモード）、ブレーキを踏むと自動で元の形（コーナーモード）に戻る。いまの規則では、この切り替えを0.4秒以内に終えなければならない。"
+  ],
+  [
+   "p",
+   "② FIAは2027年、この上限を0.3秒に縮める（英The Race、F1-Gate.com）。とくに関わるのは、フラップを大きく回転させる「マカレナウイング」だ。The Raceによると、フェラーリは270度、レッドブルとマクラーレンは約150〜160度回る。"
+  ],
+  [
+   "p",
+   "③ 時間を決めるのは、安全のためだ。ブレーキの瞬間に翼が戻りきらないと、車の後ろを押さえる力が足りないまま曲がり始めることになる。2026年、フェルスタッペンはオーストリアGPとイギリスGPで続けて、リアウイングの問題が関わるコースアウトとクラッシュを起こした。"
+  ],
+  [
+   "p",
+   "④ 「壊れたらコーナーモードに戻る」という決まりは、2026年の規則にもすでにある。伊Formula1.itによると、2027年の案では、前の翼のフラップが戻れなくなる故障まで考えて、危険を小さくする設計も求める。オランダGPのスプリント予選では、アロンソのリアウイングが開かず（ストレートモードが働かず）、アロンソは直線で遅れて最下位に終わった（GPFans、Crash.net）。翼が閉じた側で止まる故障は、遅くなっても、ダウンフォースは失わない。"
+  ],
+  [
+   "p",
+   "⑤ The Raceによると、回転式の3チームとも、大きな作り直しなしに0.3秒を守れる見込みだという。一方で、回転の大きいフェラーリがいちばん難しいとも伝えられる。回転式とメルセデス型のどちらがよいかは、まだはっきりしない。The Raceのアンダーソンは9月、成績から見ればメルセデス型に分があると書いた。"
+  ],
+  [
+   "ask",
+   "あなたは、0.1秒のために翼の作りまで見直させる規則を、やりすぎだと思いますか？ それとも安全のために当然だと思いますか？"
+  ],
+  [
+   "h2",
+   "続きは F1 Grid Walk で"
+  ],
+  [
+   "p",
+   "ここから先の「2026年、翼は「動く部品」になった」「なぜ「時間」に上限があるのか」「回る翼と、開く翼」「壊れたら、どちらに倒れるか」「0.3秒で、何が変わるのか」は、サイトで読めます。2026年の技術規則の条文、回転角の報道ごとの違い、切り替えのあいだに車が進む距離、動く翼の歴史などの表も載せています。"
+  ],
+  [
+   "bold",
+   "DEEP GRID #16「F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか」"
+  ],
+  [
+   "url",
+   "https://f1gridwalk.github.io/deep/wing-300ms/"
+  ]
+ ],
+ "extraSources": [
+  {
+   "source": "The Race",
+   "url": "https://www.the-race.com/formula-1/fia-clampdown-macarena-f1-rear-wings-for-2027/"
+  },
+  {
+   "source": "Formula1.it",
+   "url": "https://www.formula1.it/news/32975/1/regolamento-2027-le-ali-tipo-macarena-saranno-penalizzate"
+  },
+  {
+   "source": "F1-Gate.com",
+   "url": "https://f1-gate.com/fia/227852.html"
+  },
+  {
+   "source": "Motorsport.com（イタリア版）",
+   "url": "https://it.motorsport.com/f1/news/f1-la-fia-vuole-ridurre-la-transizione-delle-ali-reverse-nel-2027-ferrari-cambiera-la-macarena/10863709/"
+  },
+  {
+   "source": "Motor.es",
+   "url": "https://www.motor.es/formula-1/fia-modifica-reglamento-f1-temor-alerones-macarena-2026116922.html"
+  },
+  {
+   "source": "ScuderiaFans",
+   "url": "https://scuderiafans.com/fia-to-tighten-2027-active-aero-rules-as-ferrari-macarena-wing-faces-new-limit/"
+  },
+  {
+   "source": "FIA",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+  },
+  {
+   "source": "FIA",
+   "url": "https://www.fia.com/regulation/category/110"
+  },
+  {
+   "source": "The Race",
+   "url": "https://the-race.com/formula-1/ferrari-red-bull-fia-safety-talks-macarena-f1-rear-wings/"
+  },
+  {
+   "source": "F1-Gate.com",
+   "url": "https://f1-gate.com/fia/f1_95718.html"
+  },
+  {
+   "source": "The Star（ロイター）",
+   "url": "https://www.thestar.com.my/sport/motorsport/2026/07/17/motor-racing-verstappen-reverts-to-old-rear-wing-after-successive-crashes"
+  },
+  {
+   "source": "GPFans",
+   "url": "https://www.gpfans.com/en/f1-news/1089119/fia-f1-macarena-wing-ban-decision-red-bull-crashes-max-verstappen/"
+  },
+  {
+   "source": "The Race",
+   "url": "https://the-race.com/formula-1/rear-wings-major-2026-development-battle-explained/"
+  },
+  {
+   "source": "The Race",
+   "url": "https://www.the-race.com/formula-1/how-each-active-f1-rear-wing-concept-works-gary-anderson-explains/"
+  },
+  {
+   "source": "GPFans",
+   "url": "https://www.gpfans.com/en/f1-news/1089297/f1-fernando-alonso-dutch-grand-prix-misery-sprint-qualifying-straight-line-mode-not-working/"
+  },
+  {
+   "source": "Crash.net",
+   "url": "https://www.crash.net/f1/news/1102712/1/fernando-alonso-gets-zandvoort-f1-sprint-penalty-aston-confirms-key-car-fix"
+  },
+  {
+   "source": "The Race",
+   "url": "https://www.the-race.com/formula-1/what-is-drs-drag-reduction-system-explained/"
+  },
+  {
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/f1/news/banned-technical-analysis-f-duct/4782715/"
+  },
+  {
+   "source": "The Race",
+   "url": "https://www.the-race.com/formula-1/when-f1-last-had-adjustable-front-wings-and-why-it-didnt-work/"
+  }
+ ]
+}
