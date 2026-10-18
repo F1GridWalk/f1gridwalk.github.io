@@ -1669,6 +1669,7 @@ RBP_CSS = '''
 .rbp-body p{font-size:16px;line-height:2;margin:0 0 14px}
 .rbp .rb-h{font-size:12.5px;margin:22px 0 6px}
 .rbp .rb-ex li{font-size:15px}
+.rb-reads small{display:inline-block;margin-right:6px;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
 .rbp .rb-see a{font-size:14px;padding:3px 13px}
 .rbp-back{display:inline-block;margin:22px 0 0;font-size:14px;font-weight:700}
 .rbp .rb-checked{margin-top:18px}
@@ -1751,6 +1752,7 @@ def build_rules():
             b += PU_TOOL.format(rows=rows) + PU_JS
         if t.get('rule'):
             b += f'<div class="rb-h">規則</div><span class="rb-rule">FIA {e(t["rule"])}</span>'
+        b += f'<!--reads:{tid}-->'  # filled by add_term_reads() once every column and STORY is written
         if t.get('examples'):
             b += '<div class="rb-h">今季の実例・関連記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["u"])}">{e(x["t"])}</a></li>' for x in t['examples']) + '</ul>'
         if t.get('see'):
@@ -1779,6 +1781,7 @@ def build_rules():
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(p["short"])}</span></a>')
         b = f'<div class="rb-h" style="margin-top:0">肩書き</div><span class="rb-rule">{e(p["role"])}（{e(p["org"])}）</span>'
+        b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
             b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
@@ -2377,6 +2380,8 @@ def build_hubs(arch, flag_of):
                 sb.append(f'<h3>{e(txt)}</h3>' if kind == 'h' else '<p>' + STORY_CITE.sub(r'<span class="cite">\1</span>', story_links(txt, used, S.get('terms'))) + '</p>')
             used -= blocked
             sb.append(story_terms_box(''.join(sb)))  # the story's words, tied to the rulebook (owner, 12 Oct 2026)
+            if H.get('next'):  # the next questions straight after the story, before the long source list (owner's OK, 18 Oct 2026)
+                sb.append(next_html(H, rname))
             if S.get('sources'):  # sources listed once at the end, not inside the text (owner's decision, 12 Oct 2026)
                 sb.append('<div class="hub-st-src"><p class="k">出典</p><ul>' + ''.join(
                     f'<li><b>{e(x["name"])}</b><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["title"])} ↗</a>'
@@ -2394,8 +2399,6 @@ def build_hubs(arch, flag_of):
                                     f'<span>決勝前、注目点に「{e(re.sub(r"^.{1,4}つ目：", "", pv["h2"]).replace("「", "『").replace("」", "』"))}」を挙げていました。当時の文章のまま読めます →</span></a>')
             if pv_links:
                 b.append('<h2><i>BEFORE</i>決勝前は、こう見ていた</h2>' + ''.join(pv_links))
-            if H.get('next'):
-                b.append(next_html(H, rname))  # questions → rulebook, straight after the story
             others = [x for x in hubs_newest() if x['slug'] != slug][:5]
             if others:  # the next 読み解き to read, right after this one (owner, 12 Oct 2026)
                 b.append('<h2><i>MORE</i>ほかの STORY</h2><ul class="yk-list">' + ''.join(hub_li(x, f'click/hub-more/{x["slug"]}') for x in others) + '</ul>'
@@ -2590,6 +2593,45 @@ def _map_svg(c):
     return ('<svg class="ent-map" viewBox="0 0 100 100" role="img" aria-label="' + e(c.get('name', '')) + 'のコース図">'
             f'<path class="u" d="{c["path"]}"/><path class="t" d="{c["path"]}"/>'
             + (f'<circle cx="{st[0]}" cy="{st[1]}" r="2.6"/>' if st else '') + '</svg>')
+
+
+TERM_LINK = re.compile(r'<a class="term"[^>]*data-term="([^"]+)"')
+
+
+def add_term_reads(n=5):
+    """Rulebook entry pages: 「この言葉が出てくる読み物」— the STORY, DEEP GRID and column pages whose text
+    links to that entry, newest first. Most search visitors land on the rulebook; this takes them on to
+    the site's own reading (owner's OK, 18 Oct 2026). Replaces the <!--reads:id--> marker build_rules leaves."""
+    reads = []
+    for H in hubs_newest():
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        reads.append((max(ups) if ups else H.get('checked', ''), 'STORY', f'/topics/{H["slug"]}/', H['title']))
+    for x in ALL_COLS:
+        reads.append((x['dt'].isoformat(), COL_TAG[x['kind']], x['url'], x['title']))
+    reads.sort(key=lambda r: r[0], reverse=True)
+    by_term = {}
+    for dt, label, url, title in reads:
+        f = os.path.join(ROOT, url.strip('/'), 'index.html')
+        if not os.path.exists(f):
+            continue
+        with open(f, encoding='utf-8') as fh:
+            ids = dict.fromkeys(TERM_LINK.findall(fh.read()))
+        for tid in ids:
+            by_term.setdefault(tid, []).append((label, url, title))
+    rdir = os.path.join(ROOT, 'deep', 'rules')
+    for d in sorted(os.listdir(rdir)):
+        f = os.path.join(rdir, d, 'index.html')
+        if not os.path.exists(f):
+            continue
+        with open(f, encoding='utf-8') as fh:
+            h = fh.read()
+        mk = f'<!--reads:{d}-->'
+        if mk not in h:
+            continue
+        got = by_term.get(d, [])[:n]
+        box = ('<div class="rb-h">この言葉が出てくる読み物</div><ul class="rb-ex rb-reads">' + ''.join(
+            f'<li><a href="{e(u)}" data-track="click/rb-reads/{e(d)}"><small>{e(lb)}</small>{e(t)}</a></li>' for lb, u, t in got) + '</ul>') if got else ''
+        write(f'deep/rules/{d}/index.html', h.replace(mk, box))
 
 
 def build_gp_pages(flag_of, circuits):
@@ -2919,6 +2961,7 @@ def main():
     urls += build_all_columns()
     urls += build_rules()
     urls += build_hubs(arch, flag_of)
+    add_term_reads()
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)
     urls += build_team_pages(allarts, flag_of, teams)
