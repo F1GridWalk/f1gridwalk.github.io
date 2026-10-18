@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク</title>
+<meta name="description" content="FIAは2027年、動くリアウイングの切り替えにかけてよい時間を0.4秒から0.3秒に縮める。いちばん影響を受けそうなのは、フラップを大きく回転させる「マカレナウイング」だ。たった0.1秒を、なぜわざわざ規則で決めるのか。2026年の翼の仕組み、フェルスタッペンの2度の事故、アロンソの「閉じたままの翼」から、安全と速さのせめぎ合いをほどく。">
+<link rel="canonical" href="https://f1gridwalk.github.io/deep/wing-300ms/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="F1 Grid Walk" href="/feed.xml">
+<meta name="apple-mobile-web-app-title" content="Grid Walk">
+<meta name="application-name" content="Grid Walk">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="F1 Grid Walk">
+<meta property="og:title" content="F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク">
+<meta property="og:description" content="FIAは2027年、動くリアウイングの切り替えにかけてよい時間を0.4秒から0.3秒に縮める。いちばん影響を受けそうなのは、フラップを大きく回転させる「マカレナウイング」だ。たった0.1秒を、なぜわざわざ規則で決めるのか。2026年の翼の仕組み、フェルスタッペンの2度の事故、アロンソの「閉じたままの翼」から、安全と速さのせめぎ合いをほどく。">
+<meta property="og:url" content="https://f1gridwalk.github.io/deep/wing-300ms/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://f1gridwalk.github.io/deep/wing-300ms/og.png?v=facc6ff4">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://f1gridwalk.github.io/deep/wing-300ms/og.png?v=facc6ff4">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">
+<meta property="article:published_time" content="2026-10-18T16:45:00+09:00">
+<style>
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
+.more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
+.md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
+.more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-deep ul{list-style:none;margin:0 0 16px;padding:0}
+.more-deep li{border-top:1px solid var(--line)}
+.more-deep li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-deep li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-deep li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-deep li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.md-btn{display:block;text-align:center;background:#8E2F3B;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.md-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .md-k{color:#D98C96}}
+:root[data-theme="dark"] .md-k{color:#D98C96}
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF;--tW:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}}
+:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}
+.dg-fig figcaption{font-size:14.5px;font-weight:700;line-height:1.6;margin:0 0 8px}
+.dg-fig svg{display:block;width:100%;height:auto;max-width:640px;font-family:var(--sans)}
+.dg-fig .lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
+.dg-fig .lg i{display:inline-block;width:14px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid var(--ink)}
+.dg-fig .fn{font-size:12px;color:var(--muted);line-height:1.7;margin:6px 0 0}
+.dg-fig .t{fill:var(--ink);font-size:12px}.dg-fig .ts{fill:var(--muted);font-size:10.5px}.dg-fig .tv{fill:var(--ink);font-size:12px;font-weight:700}
+.dg-fig .ax{stroke:var(--line);stroke-width:1}.dg-fig .mk{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.dg-fig .sg:hover rect,.dg-fig .br:hover rect{opacity:.8}
+.dg-fig .zs{display:grid;gap:8px;margin:8px 0 0;max-width:640px}
+.dg-fig .zs b{display:block;font-size:13px}.dg-fig .zs span{display:block;font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+.dg-rel-l{list-style:none;margin:0;padding:0}
+.dg-rel-l li{border-top:1px solid var(--line)}
+.dg-rel-l li:first-child{border-top:0}
+.dg-rel-l a{display:block;padding:10px 0;color:var(--ink);text-decoration:none}
+.dg-rel-l small{display:block;font-size:12.5px;font-weight:700;color:var(--clay);line-height:1.6}
+.dg-rel-l b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-rel-l span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.dg-rel-l a:hover b{text-decoration:underline;text-underline-offset:3px}
+
+.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--line:#C9CBC6;background:var(--bg);color:var(--tx);border:2px solid var(--bd);border-radius:22px;overflow:hidden;margin:20px 0 10px;padding-bottom:14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}}
+:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}
+.rbx .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em}
+.rbx-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;background:var(--hd);color:var(--hdt)}
+.rbx-hd b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:18px;letter-spacing:.2em}
+.rbx-hd span{font-size:10.5px}
+.rbx p.rbx-lead{margin:12px 16px 0;font-size:14px;font-weight:700;line-height:1.6}
+.rbx form,.rbx .rbx-f{display:flex;gap:8px;margin:10px 12px 0}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 42px;border:2px solid var(--line);border-radius:999px;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx);outline:none}
+.rbx input::placeholder{color:var(--sub)}
+.rbx-in{position:relative;flex:1;min-width:0;display:flex}
+.rbx-in input{padding-right:42px}
+.rbx input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}
+.rbx .rbx-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:50%;background:var(--sub);color:var(--inp);font:700 17px/30px sans-serif;text-align:center;padding:0;cursor:pointer}
+.rbx .rbx-x[hidden]{display:none}
+.rbx input:focus{border-color:#F2C230}
+.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--btn);color:var(--btnt);cursor:pointer}
+.rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
+.rbx-all:hover{text-decoration:underline}
+.rbx p.rbx-cnt{margin:10px 16px 0;font-size:11px;line-height:1.4;color:var(--sub)}
+
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか", "description": "FIAは2027年、動くリアウイングの切り替えにかけてよい時間を0.4秒から0.3秒に縮める。いちばん影響を受けそうなのは、フラップを大きく回転させる「マカレナウイング」だ。たった0.1秒を、なぜわざわざ規則で決めるのか。2026年の翼の仕組み、フェルスタッペンの2度の事故、アロンソの「閉じたままの翼」から、安全と速さのせめぎ合いをほどく。", "datePublished": "2026-10-18T16:45:00+09:00", "dateModified": "2026-10-18T16:45:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=2"], "mainEntityOfPage": "https://f1gridwalk.github.io/deep/wing-300ms/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "DEEP GRID", "keywords": ["マシンと空力", "規則", "安全"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "DEEP GRID", "item": "https://f1gridwalk.github.io/deep/"}, {"@type": "ListItem", "position": 3, "name": "F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか", "item": "https://f1gridwalk.github.io/deep/wing-300ms/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
+.bt{display:none}
+@media (max-width:520px){
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
+.bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bt .on{color:var(--ink)}
+.bt .on svg{stroke-width:2.3}
+body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
+:root{--paper:#F3EFE6;--surface:#FBF9F4;--line:#DDD5C5;--ink:#1F2420;--ink-2:#3A3E37;--muted:#5B5F57;--moss:#1F2420;--clay:#9E4E2B;--on-ink:#FBF9F4;
+--sans:'IBM Plex Sans JP','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,sans-serif;--logo:'Fraunces',Georgia,'Times New Roman',serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:1px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand b{display:block;font-family:var(--logo);font-weight:600;font-size:22px;line-height:1}
+.brand small{display:block;font-size:8.5px;font-weight:700;letter-spacing:.2em;color:var(--muted);margin-top:4px}
+.stamp-ring{fill:none;stroke:var(--moss)}.mark-line{fill:none;stroke:var(--ink);stroke-linecap:round;stroke-linejoin:round}.leaf{fill:var(--clay)}
+.toplink{font-size:13px;color:var(--muted);white-space:nowrap}
+.crumbs{font-size:12.5px;color:var(--muted);margin:22px 0 14px}
+.crumbs a{color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13px;color:var(--muted)}
+.srcbadge{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--c,var(--ink-2))}
+.srcbadge::before{content:"";width:15px;height:10px;border-radius:2px;flex-shrink:0;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.kind{display:inline-flex;align-items:center;padding:0 8px;border-radius:5px;font-size:11.5px;font-weight:700;letter-spacing:.06em;line-height:20px;white-space:nowrap;--k:var(--ink);border:1px solid var(--k);color:var(--k);background:color-mix(in srgb,var(--k) 9%,transparent)}
+.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}
+.kind.rumor,.kind.fan{border-style:dashed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}}
+h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-weight:700;letter-spacing:.01em}
+.orig{font-size:13.5px;color:var(--muted);margin:0 0 20px}
+.summary{font-size:17px;line-height:1.95;margin:0 0 22px}
+.warn{font-size:13.5px;border:1px dashed var(--clay);color:var(--ink-2);padding:10px 14px;border-radius:10px;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 8px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
+.cta:hover{color:var(--on-ink);opacity:.9}
+.cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
+.credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
+.tags span,.tags a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags a{color:var(--ink);text-decoration:none;font-weight:700}.tags a::after{content:" →";color:var(--clay)}
+.share{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;align-items:center;font-size:13px;color:var(--muted)}
+.share a,.share button{font:inherit;font-size:13px;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;text-decoration:none;cursor:pointer}
+section{margin:40px 0 0;padding-top:22px;border-top:1px solid var(--line)}
+section h2{font-size:18px;margin:0 0 6px}
+section .lead{font-size:14px;color:var(--ink-2);margin:0 0 14px}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.list li:last-child{border-bottom:0}
+ul.list .m{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:12px;color:var(--muted)}
+ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
+ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
+ul.list a.t:hover{text-decoration:underline}
+.day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
+.hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
+.hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
+.hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
+.hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
+footer p{margin:6px 0}
+@media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
+[data-c="jp"]{--c:#BC002D;--cs:#F7E2E6;--flag:radial-gradient(circle,#BC002D 0 27%,#FFFFFF 29%)}
+[data-c="gb"]{--c:#012169;--cs:#DFE4F2;--flag:linear-gradient(#C8102E,#C8102E) center/100% 22% no-repeat,linear-gradient(#C8102E,#C8102E) center/16% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 42% no-repeat,linear-gradient(#FFF,#FFF) center/30% 100% no-repeat,#012169}
+[data-c="us"]{--c:#0A3161;--cs:#DEE5F1;--flag:linear-gradient(#0A3161,#0A3161) top left/44% 54% no-repeat,repeating-linear-gradient(#B31942 0 15.4%,#FFFFFF 15.4% 30.8%)}
+[data-c="de"]{--c:#8A6D00;--cs:#F4ECCB;--flag:linear-gradient(#000 0 33.4%,#DD0000 33.4% 66.7%,#FFCE00 66.7%)}
+[data-c="it"]{--c:#008C45;--cs:#DDF0E5;--flag:linear-gradient(90deg,#008C45 0 33.4%,#F4F5F0 33.4% 66.7%,#CD212A 66.7%)}
+[data-c="es"]{--c:#AA151B;--cs:#F5E0E0;--flag:linear-gradient(#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75%)}
+[data-c="fr"]{--c:#0055A4;--cs:#DCE8F5;--flag:linear-gradient(90deg,#0055A4 0 33.4%,#FFFFFF 33.4% 66.7%,#EF4135 66.7%)}
+[data-c="nl"]{--c:#21468B;--cs:#DFE5F2;--flag:linear-gradient(#AE1C28 0 33.4%,#FFFFFF 33.4% 66.7%,#21468B 66.7%)}
+[data-c="br"]{--c:#008F36;--cs:#DCF1E3;--flag:radial-gradient(circle,#002776 0 20%,#FFDF00 21% 44%,#009C3B 46%)}
+[data-c="ar"]{--c:#2F7BBF;--cs:#E0EEF8;--flag:linear-gradient(#74ACDF 0 33.4%,#FFFFFF 33.4% 66.7%,#74ACDF 66.7%)}
+[data-c="mx"]{--c:#006847;--cs:#DCEFE7;--flag:linear-gradient(90deg,#006847 0 33.4%,#FFFFFF 33.4% 66.7%,#CE1126 66.7%)}
+[data-c="au"]{--c:#00247D;--cs:#DFE3F2;--flag:radial-gradient(circle at 72% 62%,#FFF 0 9%,transparent 10%),linear-gradient(#C8102E,#C8102E) 0 0/50% 50% no-repeat,#00247D}
+[data-c="be"]{--c:#9A7B00;--cs:#F4EDCC;--flag:linear-gradient(90deg,#000 0 33.4%,#FDDA24 33.4% 66.7%,#EF3340 66.7%)}
+[data-c="at"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#C8102E 0 33.4%,#FFFFFF 33.4% 66.7%,#C8102E 66.7%)}
+[data-c="ch"]{--c:#DA291C;--cs:#F7E0DE;--flag:linear-gradient(#FFF,#FFF) center/60% 20% no-repeat,linear-gradient(#FFF,#FFF) center/20% 60% no-repeat,#DA291C}
+[data-c="pt"]{--c:#046A38;--cs:#DCEFE5;--flag:linear-gradient(90deg,#046A38 0 40%,#DA291C 40%)}
+[data-c="ca"]{--c:#D80621;--cs:#F7E0E3;--flag:linear-gradient(90deg,#D80621 0 25%,#FFFFFF 25% 75%,#D80621 75%)}
+[data-c="pl"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#FFFFFF 0 50%,#DC143C 50%)}
+[data-c="fi"]{--c:#002F6C;--cs:#DFE4F0;--flag:linear-gradient(#002F6C,#002F6C) center/100% 26% no-repeat,linear-gradient(#002F6C,#002F6C) 30% 0/18% 100% no-repeat,#FFFFFF}
+[data-c="dk"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#FFF,#FFF) center/100% 20% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/14% 100% no-repeat,#C8102E}
+[data-c="se"]{--c:#006AA7;--cs:#DCEAF5;--flag:linear-gradient(#FECC02,#FECC02) center/100% 22% no-repeat,linear-gradient(#FECC02,#FECC02) 32% 0/16% 100% no-repeat,#006AA7}
+[data-c="no"]{--c:#BA0C2F;--cs:#F5DFE4;--flag:linear-gradient(#00205B,#00205B) center/100% 14% no-repeat,linear-gradient(#00205B,#00205B) 32% 0/10% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 30% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/22% 100% no-repeat,#BA0C2F}
+[data-c="mc"]{--c:#CE1126;--cs:#F7E0E3;--flag:linear-gradient(#CE1126 0 50%,#FFFFFF 50%)}
+[data-c="cn"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle at 25% 32%,#FFDE00 0 12%,transparent 13%),#DE2910}
+[data-c="kr"]{--c:#003478;--cs:#DFE4F0;--flag:radial-gradient(circle,#C60C30 0 16%,#003478 17% 27%,#FFFFFF 29%)}
+[data-c="in"]{--c:#E0701A;--cs:#F8E8DA;--flag:linear-gradient(#FF9933 0 33.4%,#FFFFFF 33.4% 66.7%,#138808 66.7%)}
+[data-c="nz"]{--c:#00247D;--cs:#DFE3F2;--flag:radial-gradient(circle at 74% 60%,#CC142B 0 8%,transparent 9%),linear-gradient(#C8102E,#C8102E) 0 0/50% 50% no-repeat,#00247D}
+[data-c="ie"]{--c:#169B62;--cs:#DCF0E6;--flag:linear-gradient(90deg,#169B62 0 33.4%,#FFFFFF 33.4% 66.7%,#FF883E 66.7%)}
+[data-c="hu"]{--c:#CD2A3E;--cs:#F6E0E3;--flag:linear-gradient(#CD2A3E 0 33.4%,#FFFFFF 33.4% 66.7%,#436F4D 66.7%)}
+[data-c="cz"]{--c:#11457E;--cs:#DFE5F0;--flag:linear-gradient(to bottom right,#11457E 0 30%,transparent 30%),linear-gradient(#FFFFFF 0 50%,#D7141A 50%)}
+[data-c="co"]{--c:#A38600;--cs:#F4EDCC;--flag:linear-gradient(#FCD116 0 50%,#003893 50% 75%,#CE1126 75%)}
+[data-c="cl"]{--c:#0039A6;--cs:#DFE4F2;--flag:linear-gradient(#0039A6,#0039A6) 0 0/34% 50% no-repeat,linear-gradient(#FFFFFF 0 50%,#D52B1E 50%)}
+[data-c="th"]{--c:#2D2A4A;--cs:#E4E3EE;--flag:linear-gradient(#A51931 0 16.6%,#F4F5F8 16.6% 33.3%,#2D2A4A 33.3% 66.6%,#F4F5F8 66.6% 83.3%,#A51931 83.3%)}
+[data-c="sg"]{--c:#EF3340;--cs:#F8E0E2;--flag:linear-gradient(#EF3340 0 50%,#FFFFFF 50%)}
+[data-c="ae"]{--c:#00732F;--cs:#DCEFE4;--flag:linear-gradient(90deg,#FF0000 0 25%,transparent 25%),linear-gradient(#00732F 0 33.4%,#FFFFFF 33.4% 66.7%,#000 66.7%)}
+[data-c="sa"]{--c:#006C35;--cs:#DCEFE4;--flag:linear-gradient(#FFF,#FFF) center 70%/60% 10% no-repeat,#006C35}
+[data-c="tr"]{--c:#E30A17;--cs:#F8DFE1;--flag:radial-gradient(circle at 40% 50%,#E30A17 0 18%,transparent 19%),radial-gradient(circle at 36% 50%,#FFF 0 24%,transparent 25%),#E30A17}
+[data-c="ru"]{--c:#0039A6;--cs:#DFE4F2;--flag:linear-gradient(#FFFFFF 0 33.4%,#0039A6 33.4% 66.7%,#D52B1E 66.7%)}
+[data-c="ua"]{--c:#0057B7;--cs:#DCE8F5;--flag:linear-gradient(#0057B7 0 50%,#FFD700 50%)}
+[data-c="gr"]{--c:#0D5EAF;--cs:#DCE8F5;--flag:repeating-linear-gradient(#0D5EAF 0 11.1%,#FFFFFF 11.1% 22.2%)}
+[data-c="ro"]{--c:#002B7F;--cs:#DFE4F2;--flag:linear-gradient(90deg,#002B7F 0 33.4%,#FCD116 33.4% 66.7%,#CE1126 66.7%)}
+[data-c="za"]{--c:#007A4D;--cs:#DCEFE7;--flag:linear-gradient(#E03C31 0 33%,#007A4D 33% 67%,#002395 67%)}
+[data-c="tw"]{--c:#000095;--cs:#E0E0F4;--flag:linear-gradient(#000095,#000095) 0 0/50% 50% no-repeat,#FE0000}
+[data-c="hk"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle,#FFF 0 18%,#DE2910 20%)}
+[data-c="qa"]{--c:#8A1538;--cs:#F3DFE5;--flag:linear-gradient(90deg,#FFFFFF 0 30%,#8A1538 30%)}
+[data-c="xx"]{--c:#5B5F57;--cs:#ECE6D8;--flag:linear-gradient(#9AA096,#9AA096)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) [data-c="jp"]{--c:#FF7A8E;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="gb"]{--c:#8FA8EE;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="us"]{--c:#8DAEE6;--cs:#1C2638}
+  :root:not([data-theme="light"]) [data-c="de"]{--c:#FFCE00;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="it"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="es"]{--c:#F48A8E;--cs:#3A2222}
+  :root:not([data-theme="light"]) [data-c="fr"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="nl"]{--c:#8FAAE6;--cs:#1D2740}
+  :root:not([data-theme="light"]) [data-c="br"]{--c:#55D283;--cs:#173020}
+  :root:not([data-theme="light"]) [data-c="ar"]{--c:#8EC8F4;--cs:#1B2B38}
+  :root:not([data-theme="light"]) [data-c="mx"]{--c:#4FC99A;--cs:#173028}
+  :root:not([data-theme="light"]) [data-c="au"]{--c:#8FA6EE;--cs:#1D2440}
+  :root:not([data-theme="light"]) [data-c="be"]{--c:#FDDA24;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="at"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="ch"]{--c:#FF8A80;--cs:#3A2322}
+  :root:not([data-theme="light"]) [data-c="pt"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="ca"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="pl"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="fi"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="dk"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
+  :root:not([data-theme="light"]) [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
+  :root:not([data-theme="light"]) [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
+  :root:not([data-theme="light"]) [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
+  :root:not([data-theme="light"]) [data-c="nz"]{--c:#8FA6EE;--cs:#1D2440}
+  :root:not([data-theme="light"]) [data-c="ie"]{--c:#55CF95;--cs:#173022}
+  :root:not([data-theme="light"]) [data-c="hu"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="cz"]{--c:#8FAAE6;--cs:#1D2740}
+  :root:not([data-theme="light"]) [data-c="co"]{--c:#FCD116;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="cl"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="th"]{--c:#A9A6D8;--cs:#24233A}
+  :root:not([data-theme="light"]) [data-c="sg"]{--c:#FF8A92;--cs:#3A2224}
+  :root:not([data-theme="light"]) [data-c="ae"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="sa"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="tr"]{--c:#FF8A90;--cs:#3A2224}
+  :root:not([data-theme="light"]) [data-c="ru"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="ua"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="gr"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="ro"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="za"]{--c:#4FC99A;--cs:#173028}
+  :root:not([data-theme="light"]) [data-c="tw"]{--c:#9A9AF0;--cs:#1E1E40}
+  :root:not([data-theme="light"]) [data-c="hk"]{--c:#FF8C7A;--cs:#3A2420}
+  :root:not([data-theme="light"]) [data-c="qa"]{--c:#F08AA6;--cs:#3A2230}
+  :root:not([data-theme="light"]) [data-c="xx"]{--c:#A5A99C;--cs:#2E332C}
+}
+:root[data-theme="dark"] [data-c="jp"]{--c:#FF7A8E;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="gb"]{--c:#8FA8EE;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="us"]{--c:#8DAEE6;--cs:#1C2638}
+:root[data-theme="dark"] [data-c="de"]{--c:#FFCE00;--cs:#35301A}
+:root[data-theme="dark"] [data-c="it"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="es"]{--c:#F48A8E;--cs:#3A2222}
+:root[data-theme="dark"] [data-c="fr"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="nl"]{--c:#8FAAE6;--cs:#1D2740}
+:root[data-theme="dark"] [data-c="br"]{--c:#55D283;--cs:#173020}
+:root[data-theme="dark"] [data-c="ar"]{--c:#8EC8F4;--cs:#1B2B38}
+:root[data-theme="dark"] [data-c="mx"]{--c:#4FC99A;--cs:#173028}
+:root[data-theme="dark"] [data-c="au"]{--c:#8FA6EE;--cs:#1D2440}
+:root[data-theme="dark"] [data-c="be"]{--c:#FDDA24;--cs:#35301A}
+:root[data-theme="dark"] [data-c="at"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="ch"]{--c:#FF8A80;--cs:#3A2322}
+:root[data-theme="dark"] [data-c="pt"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="ca"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="pl"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="fi"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="dk"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
+:root[data-theme="dark"] [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
+:root[data-theme="dark"] [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
+:root[data-theme="dark"] [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
+:root[data-theme="dark"] [data-c="nz"]{--c:#8FA6EE;--cs:#1D2440}
+:root[data-theme="dark"] [data-c="ie"]{--c:#55CF95;--cs:#173022}
+:root[data-theme="dark"] [data-c="hu"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="cz"]{--c:#8FAAE6;--cs:#1D2740}
+:root[data-theme="dark"] [data-c="co"]{--c:#FCD116;--cs:#35301A}
+:root[data-theme="dark"] [data-c="cl"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="th"]{--c:#A9A6D8;--cs:#24233A}
+:root[data-theme="dark"] [data-c="sg"]{--c:#FF8A92;--cs:#3A2224}
+:root[data-theme="dark"] [data-c="ae"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="sa"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="tr"]{--c:#FF8A90;--cs:#3A2224}
+:root[data-theme="dark"] [data-c="ru"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="ua"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="gr"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="ro"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="za"]{--c:#4FC99A;--cs:#173028}
+:root[data-theme="dark"] [data-c="tw"]{--c:#9A9AF0;--cs:#1E1E40}
+:root[data-theme="dark"] [data-c="hk"]{--c:#FF8C7A;--cs:#3A2420}
+:root[data-theme="dark"] [data-c="qa"]{--c:#F08AA6;--cs:#3A2230}
+:root[data-theme="dark"] [data-c="xx"]{--c:#A5A99C;--cs:#2E332C}
+.srcbadge::before{width:15px;height:10px;border-radius:2px;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)} }
+:root[data-theme="dark"] .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)}</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/" aria-label="F1 Grid Walk トップへ"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg><span><b>Grid Walk</b><small>WORLD F1 DESK</small></span></a>
+  <a class="toplink" href="/">最新ニュースを見る →</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › #16</nav>
+<article class="dg">
+<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>#16</i></b><span>ニュースの、その奥へ。</span></div></div>
+<h1>F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか</h1>
+<p class="dg-dek">FIAは2027年、動くリアウイングの切り替えにかけてよい時間を0.4秒から0.3秒に縮める。いちばん影響を受けそうなのは、フラップを大きく回転させる「マカレナウイング」だ。たった0.1秒を、なぜわざわざ規則で決めるのか。2026年の翼の仕組み、フェルスタッペンの2度の事故、アロンソの「閉じたままの翼」から、安全と速さのせめぎ合いをほどく。</p>
+<p class="dg-meta"><span>2026年10月18日(日) 16:45 公開</span><span>本文 約12分</span></p>
+<div class="dg-themes"><span>マシンと空力</span><span>規則</span><span>安全</span></div>
+<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a><a href="#s1">2026年、翼は「動く部品」になった</a><a href="#s2">なぜ「時間」に上限があるのか</a><a href="#s3">回る翼と、開く翼</a><a href="#s4">壊れたら、どちらに倒れるか</a><a href="#s5">0.3秒で、何が変わるのか</a><a href="#deep">データと記録</a><a href="#sources">出典</a></nav>
+<div id="quick"><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span><em>先に結論</em></div></div>
+<div class="dg-quick"><ol><li>2026年のF1は、前後の翼が走りながら動く（アクティブエアロ）。決められた直線ではボタンで翼を寝かせて空気抵抗を減らし（ストレートモード）、ブレーキを踏むと自動で元の形（コーナーモード）に戻る。いまの規則では、この切り替えを0.4秒以内に終えなければならない。</li><li>FIAは2027年、この上限を0.3秒に縮める（英The Race、F1-Gate.com）。とくに関わるのは、フラップを大きく回転させる「マカレナウイング」だ。The Raceによると、フェラーリは270度、レッドブルとマクラーレンは約150〜160度回る。</li><li>時間を決めるのは、安全のためだ。ブレーキの瞬間に翼が戻りきらないと、車の後ろを押さえる力が足りないまま曲がり始めることになる。2026年、フェルスタッペンはオーストリアGPとイギリスGPで続けて、リアウイングの問題が関わるコースアウトとクラッシュを起こした。</li><li>「壊れたらコーナーモードに戻る」という決まりは、2026年の規則にもすでにある。伊Formula1.itによると、2027年の案では、前の翼のフラップが戻れなくなる故障まで考えて、危険を小さくする設計も求める。オランダGPのスプリント予選では、アロンソのリアウイングが開かず（ストレートモードが働かず）、アロンソは直線で遅れて最下位に終わった（GPFans、Crash.net）。翼が閉じた側で止まる故障は、遅くなっても、ダウンフォースは失わない。</li><li>The Raceによると、回転式の3チームとも、大きな作り直しなしに0.3秒を守れる見込みだという。一方で、回転の大きいフェラーリがいちばん難しいとも伝えられる。回転式とメルセデス型のどちらがよいかは、まだはっきりしない。The Raceのアンダーソンは9月、成績から見ればメルセデス型に分があると書いた。</li></ol></div>
+<div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><em>理由と背景</em></div>
+<div class="dg-sec" id="s1"><h2>2026年、翼は「動く部品」になった</h2><p>2026年のF1では、前後の翼の一部が走りながら動く。これが<a class="term" href="/deep/rules/active-aero/" data-term="active-aero">アクティブエアロ</a>だ。ふだんはコーナーモードで、翼のフラップを立てて、車を路面に押しつける力（<a class="term" href="/deep/rules/downforce/" data-term="downforce">ダウンフォース</a>）を大きくしている。決められた区間（作動ゾーン）に入ると、ストレートモードにして翼を寝かせ、空気抵抗を減らす（<a class="term" href="/deep/rules/fia/" data-term="fia">FIA</a>の技術規則、英The Race）。</p><p>2025年まであった<a class="term" href="/deep/rules/drs/" data-term="drs">DRS</a>との違いは、使える車だ。DRSは、前の車の1秒以内にいる車だけが、追い抜きのために<a class="term" href="/deep/rules/rear-wing/" data-term="rear-wing">リアウイング</a>を開けた。ストレートモードは、前の車との差に関係なく全車が使える（The Race）。The Raceの技術解説者ゲイリー・アンダーソンは、全車が毎周使うので「追い抜きを助けるためのものでは決してない」と書き、狙いは最高速を上げることだと説明している。2026年の車は、直線の終わりよりずっと前に電気が足りなくなりやすいからだという。</p><p>切り替えの流れは、こうだ。アンダーソンによると、ストレートモードにするのはドライバーのボタン。コーナーモードへ戻るのは、<a class="term" href="/deep/rules/brakes/" data-term="brakes">ブレーキ</a>を踏んだときに自動で行われる。</p><p>動かし方の細かいところは、FIAの技術規則（セクションC）が決めている。リアウイングの決まりはC3.11.6だ。フラップを動かせるのは、FIAが全車に配る<a class="term" href="/deep/rules/standard-ecu/" data-term="standard-ecu">標準ECU</a>の指令だけ。位置は、切り替えの途中と故障のときをのぞいて、「コーナーモード」と「ストレートモード」の2つしかない。その間の切り替えは「400ms（0.4秒）を超えてはならない」。フラップが決まった範囲より回りすぎないよう、物理的なストッパーを付けることも求めている。</p><p>前の翼（C3.10.10）にも、同じ0.4秒の決まりがある。前の翼では、動いてよい幅も決まっていて、前側のフラップ（プライマリーフラップ）は30mm、後ろ側のフラップ（セカンダリーフラップ）は60mmまでだ。</p></div>
+<div class="dg-sec" id="s2"><h2>なぜ「時間」に上限があるのか</h2><p>翼がストレートモードからコーナーモードに戻る瞬間は、たいていブレーキを踏んだ瞬間だ。車は大きく減速し、すぐにコーナーへ向かって曲がり始める。このとき翼が戻りきっていないと、後ろのタイヤを押さえる力が足りないまま、曲がることになる。</p><p>数字で考えてみる。編集部で計算すると、時速300kmの車は1秒に約83m進む。0.4秒なら約33m、0.3秒なら25m。0.1秒の差は、約8mにあたる。翼が「どっちつかず」の状態で走る距離が、それだけ短くなるということだ。</p><p>もう一つ大事なのが、空気の流れだ。翼が働くには、空気が翼の面に沿って流れる（付着する）必要がある。翼を寝かせたり回したりすると、この流れはいったん乱れる。元の形に戻したとき、流れがすぐに付き直らなければ、ダウンフォースは戻らない。伊Motorsport.comによると、FIAは切り替えの時間に加えて、フラップが元の位置に戻ったときの車の動きも確かめるよう求めた。翼を閉じたあと、空気の流れはすぐには元に戻らないからだという。</p><p>それが実際に起きたと見られているのが、2026年のレッドブルだ。The Raceによると、フェルスタッペンはオーストリアGPの<a class="term" href="/deep/rules/qualifying/" data-term="qualifying">予選</a>で、気流の再付着の問題から、最後から2つ目のコーナーで車を失った。翌戦のイギリスGPでは決勝の終盤、リアウイングの問題でストウ・コーナーでスピンし、<a class="term" href="/deep/rules/gravel-trap/" data-term="gravel-trap">グラベル</a>に飛び出した。英ロイターによると、フェルスタッペンはこう話した。</p><blockquote><p>「コーナーに向けて曲がっていくとき、リアウイングが完全には付いて（アタッチして）いなくて、そのせいでダウンフォースを大きく失う」</p><cite>— フェルスタッペン（レッドブル）</cite></blockquote><blockquote><p>「いまの時点では、すごく危険だ。2回も、本当にケガをしていたかもしれないんだから」</p><cite>— フェルスタッペン（レッドブル）</cite></blockquote><p>ただ、原因の見方は一つではない。The Raceのアンダーソンは、空気が十分に早く付き直らなかったことが原因だと書いた。一方で、同じ記事によると、レッドブルは機械的な問題が原因だったと説明している。伊Motorsport.comも、機械的な問題で、ハンガリーGPまでに直されたと書いている。チームメイトの<a class="term" href="/deep/rules/person-isack-hadjar/" data-term="person-isack-hadjar">アイザック・ハジャー</a>は、同じ問題に遭わなかった（ロイター）。</p><blockquote><p>「僕らのどちらにも起きなかったかもしれないし、2人で4回起きていたかもしれない」</p><cite>— ハジャー（レッドブル）</cite></blockquote><p>レッドブルは次のベルギーGPで、従来型のリアウイングに戻した（ロイター）。英GPFansによると、FIAは、レースで回転式を使った2チーム（レッドブルとフェラーリ）からデータを集めた。チームには、故障の起こり方とその影響を一つずつ調べる手法（FMEA）などを求め、話し合いを重ねたうえで、8月、回転式ウイングを禁止しないと明らかにした。FIAシングルシーター部門ディレクターの<a class="term" href="/deep/rules/person-nikolas-tombazis/" data-term="person-nikolas-tombazis">ニコラス・トンバジス</a>は、こう話している。</p><blockquote><p>「この種の最初の設計が出てきたとき、我々は、それが完全に安全であることを確かめたかった」</p><cite>— トンバジス（FIA）</cite></blockquote><blockquote><p>「主に確かめたかったのは、たとえば油圧が故障して、翼が開いたまま閉じた位置に戻れなくなる危険が決してないことだ」</p><cite>— トンバジス（FIA）</cite></blockquote><p>トンバジスによると、FIAが確かめたかったのは2つ。油圧が壊れて翼が開いたまま戻らなくなること、そして、翼がとてもゆっくり動いて車が不安定になることだ。規則の0.4秒という上限は、この切り替えの速さを決めている。</p></div>
+<div class="dg-sec" id="s3"><h2>回る翼と、開く翼</h2><p>リアウイングの動かし方は、チームによって違う。アンダーソンは9月、The Raceで4つの考え方を比べた。</p><p>メルセデスの方式は、DRSの延長だ。上のフラップを開いて閉じる。ただしDRSと違って、開く幅に制限がない。開いた状態でも、メインの板とフラップがまだ少しダウンフォースを出していて、空気の流れが翼に付いたままになる。だから閉じたときに流れが付き直る心配が小さい。アルピーヌは、フラップの後ろ側を下げて角度を小さくする方式で、こちらも空気の流れが翼から完全には離れない。アウディは、その変形だという。</p><p>これに対して、フェラーリが最初に走らせたのが<a class="term" href="/deep/rules/macarena-wing/" data-term="macarena-wing">マカレナウイング</a>だ。上のフラップを大きく回転させ、裏返しのような形にする。The Raceによると、裏返したフラップは少しだけ揚力（車を持ち上げる力）を生む。F1-Gate.comは7月、空気抵抗を大きく減らし、わずかな揚力で転がり抵抗（タイヤが転がるときの抵抗）も減らす狙いがあると書いている。The Raceは10月、この方式には「はっきりした利点」があるので、2027年にはほかのチームも検討しそうだと伝えた。</p><p>フェラーリは、フラップを開くときと閉じるときで回す向きを逆にしている。閉じるときに翼の角度が大きくなる向きに回すので、空気の流れが付き直りやすい。レッドブルとマクラーレンの方式は、フェラーリとは逆向きに回す。最後の位置に着く前に、角度がもっと大きい状態を通るので、着いた瞬間に流れが付き直る必要がある（アンダーソン）。</p><p>フェラーリの車では、フラップを動かす装置（アクチュエーター）が中央になく、翼の両端の板の中に入っている（伊Motorsport.com、ScuderiaFans）。真ん中が空くので、その空間をほかの工夫に使える、とScuderiaFansは書いている。</p><p>どちらが優れているかは、はっきりしない。アンダーソンは7月、回転式には流れが「より速く、安定して」付き直る可能性がある一方、開いている間はフラップの上を空気が設計と逆向きに流れ、閉じるときには流れをいったん失速させてから逆にしなければならない、と書いた。付き直り方は、ほかの車の後ろを走るときの乱れた空気や、空気の密度、気温、風の強さと向きにも左右されるという。このときの判断は「よくて五分五分」とした。9月には、メルセデスが今季のポール、優勝、得点でいずれも最も多いことにも触れ、「メルセデスの考え方のほうに傾かざるを得ない」と書いている。</p><p>回転式を使うチームは増えてきた。The Raceによると、フェラーリはシーズン前のテストで初めて走らせ、第2戦の中国GPでは<a class="term" href="/deep/rules/free-practice/" data-term="free-practice">フリー走行</a>で使い、5月の第5戦マイアミGPからレースで使った（The Race、F1-Gate.com）。レッドブルもマイアミで自前の版を用意していた。アンダーソンによると、レッドブルは、フェラーリの翼が出る前から自前の版を開発していたと強調している。マクラーレンは「Hウイング」と呼ぶ版を、9月のイタリアGPで初めてレースに使った。伊Motorsport.comは、レーシングブルズも自前の版を作ったと書いている。</p></div>
+<div class="dg-sec" id="s4"><h2>壊れたら、どちらに倒れるか</h2><p>動く翼には、もう一つ大事な決まりがある。壊れたときに、どちらの形で止まるかだ。2026年の技術規則C3.11.6は、リアウイングについて「システムが故障したときは、RWフラップがコーナーモードの位置に戻るように設計する」と定めている。前の翼のC3.10.10にも同じ趣旨の決まりがある。</p><p>コーナーモードは、ダウンフォースが大きい形だ。直線では遅くなるが、コーナーでは車が安定する。反対に、ストレートモードのまま動かなくなると、ブレーキでもコーナーでもダウンフォースが足りない。だから「遅くても安全な側」に倒れるように作らせている。</p><p>翼が開かない側の故障は、8月のオランダGPで実際に起きた。GPFansによると、アストンマーティンは、<a class="term" href="/deep/rules/sprint-qualifying/" data-term="sprint-qualifying">スプリント予選</a>で<a class="term" href="/deep/rules/person-fernando-alonso/" data-term="person-fernando-alonso">フェルナンド・アロンソ</a>の車のストレートモードがセッションを通して働かなかったと認めた。アロンソは直線で大きく遅れ、22人中の最下位に終わった。アロンソはこう話した（GPFans）。</p><blockquote><p>「リアウイングも開かなかったので、それでラップタイムを失った」</p><cite>— アロンソ（アストンマーティン）</cite></blockquote><p>英Crash.netによると、アロンソ自身も「ストレートモードが働かず、リアウイングを開けられなかった」と話した。アストンマーティンは夜のうちにこの問題を直し、その結果、アロンソは翌日の<a class="term" href="/deep/rules/sprint/" data-term="sprint">スプリント</a>を<a class="term" href="/deep/rules/pit-lane/" data-term="pit-lane">ピットレーン</a>からスタートすることになった。翼が閉じたまま開かない故障では、直線では遅くなるが、ダウンフォースは大きいままだ。ストレートモードのまま戻らない故障とは、危険の向きが逆になる。</p><p>ただし、安全な側に倒れることにも代償がある。故障でコーナーモードのまま直線を走った車のタイヤが壊れないよう、<a class="term" href="/deep/rules/pirelli/" data-term="pirelli">ピレリ</a>がタイヤの空気圧を高めに決めている話は、DEEP GRID #12（「<a href="/deep/soft-like-hard/">F1シンガポールのソフトは、なぜ「ハードみたい」に長持ちしたのか</a>」）で書いた。</p><p>2027年の案は、この決まりをさらに強める。Formula1.itによると、FIAは10月1日、2027年の技術規則になる案の新しい版を出した（FIAの公式サイトには、10月1日付で「2027年F1規則 セクションC」第3版が載っている）。同サイトは、レッドブルの可動翼でフェルスタッペンが続けて事故を起こした件を受けた動きだと書いている。案のC3.10.10とC3.11.6では、故障したらコーナーモードに戻るという決まりに加えて、前の翼のフラップがその位置に戻れなくなるような故障の起こり方まで考えて、危険を小さくする設計を求めている。</p></div>
+<div class="dg-sec" id="s5"><h2>0.3秒で、何が変わるのか</h2><p>The Raceによると、FIAは2027年の規則で、<a class="term" href="/deep/rules/straight-corner-mode/" data-term="straight-corner-mode">ストレートモードとコーナーモード</a>の切り替えの上限を、400ミリ秒から300ミリ秒へ25％縮める。回転式の翼は、もともと「切り替えが400ミリ秒以内」を条件にFIAから合法と認められていた。</p><p>影響がいちばん大きいとされるのがフェラーリだ。上のフラップが270度回るのに対し、レッドブルとマクラーレンは約150〜160度。動く角度が大きいほど、理屈のうえでは時間がかかる（スペインのMotor.es）。アンダーソンは9月の時点で、フェラーリのフラップが閉じる回転は「許される0.4秒をいっぱいまで使う」ことになる、と書いていた。</p><p>それでも、作り直しが必要になるとは限らない。The Raceは、関係者の話として、フェラーリ、レッドブル、マクラーレンのいまの設計は、少し手を入れる必要はあっても、大きく変えずに新しい上限を守れるはずだと伝えた。フェラーリの方式でも300ミリ秒は達成できる見込みだという。伊Motorsport.comも、マラネロ（フェラーリの本拠地）は規則の変更をあまり心配していないようだ、と書いている。</p><p>反対の見方もある。Formula1.itは、切り替えが短くなると、開け閉めで大きな角度を動く回転式は不利になりうるとし、2027年に向けて可動ウイングを全面的に変えるか、大きく作り直すチームが出るかもしれない、と書いた。F1-Gate.comは、新しい基準を満たせない場合には、動かす装置の改良、動く部品の軽量化、回転角度の見直しなどが必要になる可能性がある、としている。</p><p>では、FIAはなぜ禁止ではなく「時間」で縛るのか。Motor.esは、FIAは回転式を認めているが、設計がもっと極端になることは望んでいない、と書いた。The Raceも、今回の変更を、行き過ぎた設計を抑えるための引き締めと位置づけている。形は禁止せず、切り替えの時間で線を引く形だ。</p><div class="dg-view"><p>F1 Grid Walk編集部としては、0.1秒の短縮は、回転式ウイングへの罰というより、「動く部品は、すぐに安全な形に戻れなければならない」という考えをはっきりさせたものだと見ています。フェルスタッペンの2度の事故は、翼の切り替えの瞬間がどれだけ危ういかを示しました。アロンソの開かなかった翼は、閉じた側で止まる故障なら、遅くはなっても車の安定は保ちやすいことをうかがわせました。一方で、回転式の利点はまだ大きいと伝えられていて、2027年には使うチームが増えるかもしれません。0.3秒の中で、どこまで大きく動かせるのか。翼の開発競争は、形の勝負から「速さと安全を両立させる仕組み」の勝負に移っていきそうです。</p></div></div>
+<details class="dg-deep" id="deep"><summary><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><em>データと記録</em></div><span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">2026年の技術規則が決めていること（リアウイング C3.11.6、フロントウイング C3.10.10）・2027年に向けて伝えられた変更・回転式ウイングの回転角（報道によって違う） ほか</span></span></span></summary>
+<div class="dg-sec"><h2>2026年の技術規則が決めていること（リアウイング C3.11.6、フロントウイング C3.10.10）</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">項目</th><th scope="col">リアウイング</th><th scope="col">フロントウイング</th></tr></thead><tbody><tr><th scope="row">動かせるのは</th><td data-h="リアウイング">FIAの標準ECUの指令だけ</td><td data-h="フロントウイング">標準ECUの指令で、決められた軸のまわりだけ</td></tr><tr><th scope="row">位置</th><td data-h="リアウイング">コーナーモードとストレートモードの2つだけ（切り替え中と故障時をのぞく）</td><td data-h="フロントウイング">コーナーモードとストレートモードの2つだけ（切り替え中と故障時をのぞく）</td></tr><tr><th scope="row">切り替えの時間</th><td data-h="リアウイング">400ms（0.4秒）を超えない</td><td data-h="フロントウイング">400ms（0.4秒）を超えない</td></tr><tr><th scope="row">動く幅</th><td data-h="リアウイング">回転の軸は車の横方向。回りすぎを防ぐ物理的なストッパーが必要</td><td data-h="フロントウイング">前側のフラップ（プライマリー）30mm、後ろ側のフラップ（セカンダリー）60mmまで。ストッパーが必要</td></tr><tr><th scope="row">故障したとき</th><td data-h="リアウイング">RWフラップがコーナーモードの位置に戻るように設計する</td><td data-h="フロントウイング">コーナーモードの位置に戻るように設計する</td></tr></tbody></table></div><p class="tnote">出典：FIA 2026年F1規則 セクションC（第17版、2026年4月28日）。前のフラップ・後ろのフラップは、規則ではプライマリーフラップ・セカンダリーフラップ</p></div>
+<div class="dg-sec"><h2>2027年に向けて伝えられた変更</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">項目</th><th scope="col">内容</th><th scope="col">出典</th></tr></thead><tbody><tr><th scope="row">切り替えの上限</th><td data-h="内容">400ミリ秒から300ミリ秒へ（25％短縮）</td><td data-h="出典">The Race（10月9日）、F1-Gate.com（10月16日）</td></tr><tr><th scope="row">故障への備え</th><td data-h="内容">故障したらコーナーモードに戻る決まりに加え、前の翼のフラップが戻れなくなる故障の起こり方を考え、危険を小さくする設計を求める</td><td data-h="出典">Formula1.it（10月2日）</td></tr><tr><th scope="row">回転式の扱い</th><td data-h="内容">禁止はしない。新しい時間の中で切り替えを終えられれば使える</td><td data-h="出典">The Race、F1-Gate.com、伊Motorsport.com</td></tr><tr><th scope="row">案が出た日</th><td data-h="内容">2027年の技術規則の案の新しい版を、10月1日に公表（FIAの公式サイトには、10月1日付の「2027年F1規則 セクションC」第3版が載っている）</td><td data-h="出典">Formula1.it、FIA</td></tr></tbody></table></div></div>
+<div class="dg-sec"><h2>回転式ウイングの回転角（報道によって違う）</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">報道</th><th scope="col">日付</th><th scope="col">回転角</th></tr></thead><tbody><tr><th scope="row">The Race</th><td data-h="日付">2026年7月7日</td><td data-h="回転角">フェラーリは、ストレートモードにするとき時計回りに約225度回ると見られる</td></tr><tr><th scope="row">ロイター（The Star掲載）</th><td data-h="日付">2026年7月17日</td><td data-h="回転角">上のフラップがストレートモードで180度回る（フェラーリ、次いでレッドブル）</td></tr><tr><th scope="row">The Race</th><td data-h="日付">2026年10月9日</td><td data-h="回転角">フェラーリは270度。レッドブルとマクラーレンは約150〜160度</td></tr><tr><th scope="row">伊Motorsport.com</th><td data-h="日付">2026年10月10日</td><td data-h="回転角">フェラーリは270度。レッドブル、マクラーレン、レーシングブルズは150〜160度</td></tr></tbody></table></div><p class="tnote">チームは正式な角度を公表していない。数字は各媒体の報道による</p></div>
+<div class="dg-sec"><h2>切り替えのあいだに車が進む距離</h2><div class="dg-tw"><table class="short"><thead><tr><th scope="col">速度</th><th scope="col">0.4秒</th><th scope="col">0.3秒</th><th scope="col">差（0.1秒）</th></tr></thead><tbody><tr><th scope="row">時速300km</th><td data-h="0.4秒">約33m</td><td data-h="0.3秒">25m</td><td data-h="差（0.1秒）">約8m</td></tr><tr><th scope="row">時速250km</th><td data-h="0.4秒">約28m</td><td data-h="0.3秒">約21m</td><td data-h="差（0.1秒）">約7m</td></tr><tr><th scope="row">時速200km</th><td data-h="0.4秒">約22m</td><td data-h="0.3秒">約17m</td><td data-h="差（0.1秒）">約6m</td></tr></tbody></table></div><p class="tnote">編集部の計算（一定の速度で走ったとして計算。実際にはブレーキで減速しながら切り替わる）</p></div>
+<div class="dg-sec"><h2>2026年の主な出来事</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">時期</th><th scope="col">出来事</th><th scope="col">出典</th></tr></thead><tbody><tr><th scope="row">シーズン前</th><td data-h="出来事">フェラーリがテストで回転式リアウイングを初めて走らせる</td><td data-h="出典">The Race</td></tr><tr><th scope="row">第2戦 中国GP</th><td data-h="出来事">フェラーリが持ち込み、フリー走行で使ったが、その週末のレースには使わず</td><td data-h="出典">The Race、F1-Gate.com</td></tr><tr><th scope="row">第5戦 マイアミGP（5月）</th><td data-h="出来事">フェラーリがレースで使い始める。レッドブルも自前の版を用意</td><td data-h="出典">The Race</td></tr><tr><th scope="row">オーストリアGP</th><td data-h="出来事">フェルスタッペンが予選で、気流の再付着の問題から最後から2つ目のコーナーで車を失う</td><td data-h="出典">The Race</td></tr><tr><th scope="row">イギリスGP（7月）</th><td data-h="出来事">フェルスタッペンが決勝の終盤、リアウイングの問題でストウ・コーナーでスピン</td><td data-h="出典">The Race</td></tr><tr><th scope="row">7月7日</th><td data-h="出来事">FIAがフェラーリとレッドブルの技術責任者と話し合っていると報じられる</td><td data-h="出典">The Race</td></tr><tr><th scope="row">ベルギーGP</th><td data-h="出来事">レッドブルが従来型のリアウイングに戻す</td><td data-h="出典">ロイター</td></tr><tr><th scope="row">8月19日</th><td data-h="出来事">FIAが回転式ウイングを禁止しないと明らかにしたと報じられる</td><td data-h="出典">GPFans</td></tr><tr><th scope="row">オランダGP（8月）</th><td data-h="出来事">スプリント予選で、アロンソの車のストレートモードが働かず、リアウイングが開かないまま</td><td data-h="出典">GPFans、Crash.net</td></tr><tr><th scope="row">イタリアGP（9月）</th><td data-h="出来事">マクラーレンが「Hウイング」を初めてレースで使う</td><td data-h="出典">The Race</td></tr><tr><th scope="row">10月1日</th><td data-h="出来事">FIAが2027年の技術規則の案の新しい版を公表</td><td data-h="出典">Formula1.it、FIA</td></tr><tr><th scope="row">10月9日</th><td data-h="出来事">切り替えの上限を2027年に300ミリ秒へ縮めると報じられる</td><td data-h="出典">The Race</td></tr></tbody></table></div></div>
+<div class="dg-sec"><h2>動く翼の歴史</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">年</th><th scope="col">仕組み</th><th scope="col">中身</th><th scope="col">出典</th></tr></thead><tbody><tr><th scope="row">2009〜2010</th><td data-h="仕組み">動くフロントウイング</td><td data-h="中身">上のフラップの角度を6度の範囲（基準から前後3度ずつ）で、1周に2回まで変えられた。後ろを走る車を助ける狙いだったが効果は小さく、主にバランスの調整に使われた</td><td data-h="出典">The Race</td></tr><tr><th scope="row">2010</th><td data-h="仕組み">Fダクト</td><td data-h="中身">マクラーレンがMP4-25で始めた。ドライバーがコクピットの穴をふさいで、空気の流れをリアウイングに回し、翼を失速させて空気抵抗を減らす。2010年だけ認められ、翌年から禁止</td><td data-h="出典">Motorsport.com</td></tr><tr><th scope="row">2011〜2025</th><td data-h="仕組み">DRS</td><td data-h="中身">前の車の1秒以内にいるとき、決められた区間でリアウイングのフラップを開ける。ブレーキを踏むと自動で閉じる。2011年の動くフロントウイングの廃止と入れ替わりで導入</td><td data-h="出典">The Race</td></tr><tr><th scope="row">2026〜</th><td data-h="仕組み">アクティブエアロ</td><td data-h="中身">前後の翼が、作動ゾーンで全車ストレートモードになる。切り替えは0.4秒以内。2027年は0.3秒以内へ</td><td data-h="出典">The Race、FIA</td></tr></tbody></table></div></div>
+</details>
+<div class="dg-end dg-rel"><h2><span class="k">NEXT</span>この話の続きを読む</h2><ul class="dg-rel-l"><li><a href="/news/en-therace-macarena-wing-2027-limit/" data-track="click/deep/wing-300ms/related"><small>300ミリ秒への短縮と、フェラーリ270度・レッドブルとマクラーレン150〜160度という回転角の差</small><b>FIA、2027年に「マカレナ」回転式リアウイングの切り替え時間を300ミリ秒に短縮へ</b><span>The Race</span></a></li><li><a href="/news/it-formula1-2027-macarena-wings-transition-time/" data-track="click/deep/wing-300ms/related"><small>2027年の規則案で、故障したときの備えがどう強まるか</small><b>2027年規則の改訂案、可動ウイングの切り替え時間短縮で「マカレナ型」が不利に？</b><span>Formula1.it</span></a></li></ul></div>
+<section class="more-deep"><p class="md-k">COLUMNS</p><h2>ほかのコラムを読む</h2><ul><li><a href="/deep/upgrade-slower/" data-track="click/deep/more/deep/upgrade-slower/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#15</span><b>F1のアップデートで、なぜ車が遅くなることがあるのか</b><small>2026年10月18日(日) 14:23</small></a></li><li><a href="/lens/lord-one-in-25-20261018/" data-track="click/deep/more/lens/lord-one-in-25-20261018/"><span class="ctag ctag-world">WORLD GRID</span><b>アントネッリ、米GPで王座？ メルセデス副代表「25分の1くらい」</b><small>コラム · 2026年10月18日(日) 06:38</small></a></li><li><a href="/lens/aston-pole-claim-check-20261018/" data-track="click/deep/more/lens/aston-pole-claim-check-20261018/"><span class="ctag ctag-world">WORLD GRID</span><b>「PUが同じならアストンはポール争い」は本当か　The Raceの計算を、数字と当事者の声で確かめる</b><small>コラム · 2026年10月18日(日) 04:16</small></a></li><li><a href="/deep/champion-when/" data-track="click/deep/more/deep/champion-when/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#14</span><b>F1の王者は、いつ「決まった」と言えるのか</b><small>2026年10月17日(土) 13:51</small></a></li><li><a href="/lens/lawson-guitar-austin-20261017/" data-track="click/deep/more/lens/lawson-guitar-austin-20261017/"><span class="ctag ctag-world">WORLD GRID</span><b>ローソン、アメリカGPの前にギターで舞台へ 「頭をすっきりさせる」音楽</b><small>コラム · 2026年10月17日(土) 06:21</small></a></li><li><a href="/lens/williams-fw-name-20261016/" data-track="click/deep/more/lens/williams-fw-name-20261016/"><span class="ctag ctag-off">OFF GRID</span><b>ウィリアムズの車はなぜ「FW」？ 2027年はFW49を飛ばしてFW50</b><small>パドック · 2026年10月16日(金) 19:05</small></a></li><li><a href="/deep/super-licence-points/" data-track="click/deep/more/deep/super-licence-points/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#13</span><b>F1のレースに出るための「40点」は、どうやって集めるのか</b><small>2026年10月16日(金) 19:05</small></a></li><li><a href="/lens/alonso-teams-veto-20261016/" data-track="click/deep/more/lens/alonso-teams-veto-20261016/"><span class="ctag ctag-world">WORLD GRID</span><b>アロンソ「上位チームは毎回、反対票」 理由は「できるだけ退屈に」</b><small>コラム · 2026年10月16日(金) 06:33</small></a></li></ul><a class="md-btn" href="/columns/" data-track="click/deep/more-all">すべてのコラムを見る →</a><a class="md-sub" href="/" data-track="click/deep/entrance-top">今日のF1ニュースを見る</a></section>
+<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl><dt>アクチュエーター</dt><dd>翼のフラップなどを実際に動かす装置。FIAは、回転式ウイングを調べたとき、油圧の故障をとくに心配した。</dd><dt>気流の再付着</dt><dd>翼から離れて乱れた空気の流れが、もう一度翼の面に沿って流れるようになること。付き直らないと、翼はダウンフォースを出せない。</dd><dt>フェイルセーフ</dt><dd>故障したとき、危険の少ない側に倒れるように作っておく考え方。動く翼では、壊れたらコーナーモードに戻ることが決められている。</dd><dt>FMEA</dt><dd>故障モード影響解析。部品がどんな壊れ方をするか、壊れたら何が起きるかを一つずつ洗い出す手法。FIAは回転式ウイングの安全を確かめるため、チームにこの解析を求めた。</dd><dt>揚力</dt><dd>物を持ち上げる向きの力。F1の翼はふつう逆向き（下向き）の力を生むが、裏返したフラップは少しだけ持ち上げる力を生む。</dd></dl></div>
+<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src"><li><a href="https://www.the-race.com/formula-1/fia-clampdown-macarena-f1-rear-wings-for-2027/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Race</a> <small>FIA clampdown on Macarena wings for 2027（2026年10月9日）</small></li><li><a href="https://www.formula1.it/news/32975/1/regolamento-2027-le-ali-tipo-macarena-saranno-penalizzate" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">Formula1.it</a> <small>Regolamento 2027: le ali tipo «macarena» saranno penalizzate?（2026年10月2日）</small></li><li><a href="https://f1-gate.com/fia/227852.html" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">F1-Gate.com</a> <small>FIA 2027年F1リアウイング規則を厳格化 フェラーリの独自機構に影響（2026年10月16日）</small></li><li><a href="https://it.motorsport.com/f1/news/f1-la-fia-vuole-ridurre-la-transizione-delle-ali-reverse-nel-2027-ferrari-cambiera-la-macarena/10863709/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">Motorsport.com（イタリア版）</a> <small>F1 | La FIA vuole ridurre la transizione delle ali reverse nel 2027: Ferrari cambierà la Macarena?（2026年10月10日）</small></li><li><a href="https://www.motor.es/formula-1/fia-modifica-reglamento-f1-temor-alerones-macarena-2026116922.html" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">Motor.es</a> <small>La FIA modifica el reglamento de la F1 por temor a los alerones &#x27;Macarena&#x27;（2026年10月9日）</small></li><li><a href="https://scuderiafans.com/fia-to-tighten-2027-active-aero-rules-as-ferrari-macarena-wing-faces-new-limit/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">ScuderiaFans</a> <small>FIA to tighten 2027 active aero rules as Ferrari Macarena wing faces new limit（2026年10月10日）</small></li><li><a href="https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">FIA</a> <small>2026 F1 Regulations – Section C: Technical（第17版、2026年4月28日）</small></li><li><a href="https://www.fia.com/regulation/category/110" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">FIA</a> <small>Regulations – FIA Formula One World Championship（2027年F1規則 セクションC 第3版［2026年10月1日］、2026年F1規則 セクションC 第20版の掲載一覧）</small></li><li><a href="https://the-race.com/formula-1/ferrari-red-bull-fia-safety-talks-macarena-f1-rear-wings/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Race</a> <small>Two &#x27;Macarena&#x27; F1 wings subject to FIA safety probe（2026年7月7日）</small></li><li><a href="https://f1-gate.com/fia/f1_95718.html" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">F1-Gate.com</a> <small>フェラーリとレッドブルの“マカレナ”F1ウイングに安全性懸念 FIAが調査開始（2026年7月8日）</small></li><li><a href="https://www.thestar.com.my/sport/motorsport/2026/07/17/motor-racing-verstappen-reverts-to-old-rear-wing-after-successive-crashes" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Star（ロイター）</a> <small>Motor racing-Verstappen reverts to old rear wing after successive crashes（2026年7月17日）</small></li><li><a href="https://www.gpfans.com/en/f1-news/1089119/fia-f1-macarena-wing-ban-decision-red-bull-crashes-max-verstappen/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">GPFans</a> <small>FIA confirms decision on Macarena wing ban after scary Max Verstappen crashes（2026年8月19日）</small></li><li><a href="https://the-race.com/formula-1/rear-wings-major-2026-development-battle-explained/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Race</a> <small>Gary Anderson&#x27;s verdict on a major 2026 development battle（2026年7月30日）</small></li><li><a href="https://www.the-race.com/formula-1/how-each-active-f1-rear-wing-concept-works-gary-anderson-explains/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Race</a> <small>How each active F1 rear wing concept works - Gary Anderson explains（2026年9月22日）</small></li><li><a href="https://www.gpfans.com/en/f1-news/1089297/f1-fernando-alonso-dutch-grand-prix-misery-sprint-qualifying-straight-line-mode-not-working/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">GPFans</a> <small>Fernando Alonso suffers more misery at Dutch Grand Prix as Aston Martin confirm car issue（2026年8月21日）</small></li><li><a href="https://www.crash.net/f1/news/1102712/1/fernando-alonso-gets-zandvoort-f1-sprint-penalty-aston-confirms-key-car-fix" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">Crash.net</a> <small>Fernando Alonso gets Zandvoort F1 sprint penalty, but Aston confirms key car fix（2026年8月22日）</small></li><li><a href="https://www.the-race.com/formula-1/what-is-drs-drag-reduction-system-explained/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Race</a> <small>What is DRS in F1? Drag Reduction System explained</small></li><li><a href="https://www.motorsport.com/f1/news/banned-technical-analysis-f-duct/4782715/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">Motorsport.com</a> <small>Banned: Why McLaren&#x27;s F-duct was outlawed</small></li><li><a href="https://www.the-race.com/formula-1/when-f1-last-had-adjustable-front-wings-and-why-it-didnt-work/" target="_blank" rel="noopener" data-track="click/deep/wing-300ms/src">The Race</a> <small>When F1 last had adjustable front wings - and why it didn&#x27;t work（2026年1月13日）</small></li></ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>
+<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist"><li><time>2026-10-18</time>公開。</li></ul></div>
+<div class="dg-end"><h2><span class="k">LATEST</span>新着ニュース</h2><ul class="list"><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-18T11:03:00+09:00">2026年10月18日(日) 11:03</time></div><a class="t" href="/news/ja-f1gate-ferrari-beganovic-reserve/">フェラーリF1、ディノ・ベガノビッチの2027年リザーブドライバー就任を発表</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-18T10:06:00+09:00">2026年10月18日(日) 10:06</time></div><a class="t" href="/news/ja-f1gate-verstappen-gtwc-portimao-ninth/">フェルスタッペン、GTWC初参戦は9位 ペナルティで後退も24番手から猛追</a></li><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="jp">F1-Gate.com</span><time datetime="2026-10-18T08:36:00+09:00">2026年10月18日(日) 08:36</time></div><a class="t" href="/news/ja-f1gate-mercedes-w17-balance-cause/">メルセデスF1、W17の空力バランス問題を特定 アメリカGPで対策</a></li></ul></div>
+<div class="dg-end"><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">502 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/deep-issue">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-issue/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script></div>
+</article>
+<script type="application/json" id="term-data">{"active-aero": ["アクティブエアロ", "走りながら翼の角度を変える仕組み。2026年から。"], "qualifying": ["予選", "決勝のスタート順を決めるセッション。Q1・Q2・Q3の3段階で、遅い車から落としていく。"], "sprint": ["スプリント", "土曜に行う約100km・約30分の短いレース。上位8人にポイントが出る。"], "sprint-qualifying": ["スプリント予選", "スプリントのスタート順を決める、金曜の短い予選。SQ1〜SQ3の3段階で行う。"], "drs": ["DRS", "2011〜2025年の追い抜き支援。リアウイングを開いて速度を稼いだ。2026年は廃止。"], "fia": ["FIA（国際自動車連盟）", "F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。"], "gravel-trap": ["グラベル", "コーナーの外側などに敷かれた砂利。入った車を一気に減速させる。"], "pit-lane": ["ピットレーン", "ガレージにつながるコース脇の道。制限速度は原則80km/h。"], "rear-wing": ["リアウイング", "車の後ろにある翼。2026年はフラップが走りながら動き、DRSはなくなった。"], "downforce": ["ダウンフォース", "空気の流れで車を路面に押しつける力。大きいほどコーナーで速いが、空気抵抗も増える。"], "straight-corner-mode": ["ストレートモードとコーナーモード", "アクティブエアロの2つの状態。決められた直線ではストレートモード、ふだんはコーナーモード。"], "free-practice": ["フリー走行（FP1〜FP3）", "決勝までの練習走行。通常の週末は1時間を3回、スプリント週末は1時間を1回だ。"], "pirelli": ["ピレリ（唯一のタイヤ供給）", "2011年からF1にタイヤを独占供給する会社。FIAは2026年6月、契約を2028年まで延ばした。"], "brakes": ["ブレーキ（ディスクとキャリパー）", "車輪の内側で円盤をはさんで止める装置。2026年は回生が増え、後輪ブレーキは小さくなる方向。"], "standard-ecu": ["標準ECU（共通の電子制御ユニット）", "全チームが同じものを使う、FIA指定の電子制御ユニット。2026年は、アクティブエアロの制御も担う。"], "macarena-wing": ["マカレナウイング", "ストレートモードのとき、リアウイングのフラップが後ろへ大きく回転する方式の呼び名。"], "person-isack-hadjar": ["アイザック・ハジャー", "ドライバー（レッドブル）"], "person-fernando-alonso": ["フェルナンド・アロンソ", "ドライバー（アストンマーティン）"], "person-nikolas-tombazis": ["ニコラス・トンバジス", "FIAシングルシーター部門ディレクター（FIA（国際自動車連盟））"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
+</main>
+<footer><div class="wrap">
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
+  <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
+</div></footer>
+<nav class="bt" aria-label="サイト内の移動"><a href="/#news" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/?v=data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" class="on" aria-current="page" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
+<script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.addEventListener('click',function(ev){
+  var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
+  try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}
+});
+var cp=document.getElementById('copy'),cu=(document.querySelector('link[rel=canonical]')||{}).href||location.href;
+if(cp) cp.addEventListener('click',function(){
+  var done=function(){cp.textContent='コピーしました';setTimeout(function(){cp.textContent='リンクをコピー';},1400);};
+  try{navigator.clipboard.writeText(cu).then(done,function(){window.prompt('このURLをコピーしてください',cu);});}catch(e){window.prompt('このURLをコピーしてください',cu);}
+});
+</script>
+</body>
+</html>
