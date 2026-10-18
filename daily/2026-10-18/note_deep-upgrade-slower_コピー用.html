@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>note用原稿：F1のアップデートで、なぜ車が遅くなることがあるのか【DEEP GRID #15】</title>
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#F3EFE6;color:#1F2420;font-family:-apple-system,'Hiragino Sans','Noto Sans JP',sans-serif;line-height:1.8}
+.bar{position:sticky;top:0;z-index:5;background:#1F2420;color:#F3EFE6;padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar b{flex-basis:100%;font-size:13px;font-weight:600;opacity:.85}
+.bar button{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:999px;padding:8px 16px;background:#E8946C;color:#1F2420;cursor:pointer}
+.bar button.done{background:#7FC48C}
+.wrap{max-width:720px;margin:0 auto;padding:18px 16px 60px}
+.box{background:#FBF9F4;border:1px solid #DDD5C5;border-radius:14px;padding:14px 16px;margin-bottom:16px}
+.lbl{font-size:12px;font-weight:700;color:#9E4E2B;letter-spacing:.1em}
+#title{font-size:20px;font-weight:800;margin:4px 0 0}
+#tags{margin:4px 0 0}
+#body h2{font-size:20px;margin:30px 0 8px;border-left:4px solid #9E4E2B;padding-left:10px}
+#body p{margin:0 0 14px}
+#body blockquote{margin:0 0 14px;padding:4px 14px;border-left:3px solid #DDD5C5;color:#3A3E37}
+#body a{color:#1F5E8A;word-break:break-all}
+.how{font-size:13.5px}
+.how li{margin-bottom:4px}
+</style></head><body>
+<div class="bar"><b>ボタンを押してコピー → noteに貼り付け</b>
+<button data-copy="title">タイトル</button><button data-copy="body">本文</button><button data-copy="tags">ハッシュタグ</button></div>
+<div class="wrap">
+<div class="box how"><div class="lbl">使い方</div><ol>
+<li>noteで「投稿」→「テキスト」を開く</li>
+<li>見出し画像に「note_deep-upgrade-slower_見出し画像.png」を設定</li>
+<li>上の「タイトル」を押して、noteのタイトル欄に貼り付け</li>
+<li>「本文」を押して、noteの本文に貼り付け（大見出し・太字・引用・リンクもそのまま入ります）</li>
+<li>公開設定でハッシュタグを貼り付けて公開</li>
+<li>公開したらURLをClaudeに教えてください（X紹介文を仕上げます）</li></ol>
+<p style="margin:0">※ 貼り付けたあと見出しが普通の文字になっていたら、その行を選んで「大見出し」にしてください。URLだけの行は、noteがリンクカードにしてくれます。</p></div>
+<div class="box"><div class="lbl">タイトル</div><div id="title">F1のアップデートで、なぜ車が遅くなることがあるのか【DEEP GRID #15】</div></div>
+<div class="box"><div class="lbl">ハッシュタグ</div><div id="tags">#F1 #F1jp #DEEPGRID #メルセデス #アップデート #F1の技術 #F1解説 #フォーミュラ1 #モータースポーツ #F1ニュース #海外F1 #F1好きと繋がりたい #F1GridWalk</div></div>
+<div class="box"><div class="lbl">本文</div><div id="body"><p>メルセデスはセパンで、ダウンフォースを増やすための大型のアップデートを入れた。チームによると、力はたしかに増えた。それでも車は速くならなかった。増えすぎたのは「前」だったという。工場の予想とコースのずれ、前後のバランス、車がよく走る「領域」、そして予算と風洞の上限。新しい部品が裏目に出る仕組みを、今季と過去の例からほどく。</p><p>全文と表は F1 Grid Walk で → <a href="https://f1gridwalk.github.io/deep/upgrade-slower/?utm_source=note&amp;utm_campaign=upgrade-slower">https://f1gridwalk.github.io/deep/upgrade-slower/?utm_source=note&amp;utm_campaign=upgrade-slower</a></p><h2>先に結論</h2><p>① メルセデスは10月のセパンに、W17のフロアや車体の後ろなど7か所を変えた大型のアップデートを入れた。チームは1周約0.3秒速くなると見込んでいた。ところが予選のあと、トト・ウォルフ代表は、逆に0.3〜0.5秒遅くなったように見えると話した（PlanetF1、RACER）。</p><p>② 副テクニカルディレクターのシモーネ・レスタによると、ダウンフォースは狙いどおり増えた。ただ、前（フロント）が予想以上に効くようになり、車の前後のバランスが変わった（Formula1.it、F1-Gate.com）。力が増えても前後の釣り合いが崩れると、ドライバーは車を信じて攻められず、タイヤも滑りやすくなる。</p><p>③ 新しい部品は、工場の風洞やコンピューターの計算（CFD）で「速くなる」と確かめてから作る。それでも、実際のコースと完全に一致するわけではない。レスタは、セパンでは「シミュレーションから期待していたほどの進歩を確認できなかった」と話している（F1-Gate.com）。</p><p>④ 確かめる方法は、走って比べることだ。メルセデスはシンガポールで、アントネッリに新しい仕様、ラッセルに古い仕様を使わせた。10月25日決勝のアメリカGP（オースティン）では、2台とも最新の空力仕様と新しいフロントウイングを使う予定だと、チーム副代表のブラッドリー・ロードは話している（F1-Gate.com）。</p><p>⑤ 期待に届かないアップデートは、メルセデスだけの話ではない。F1公式サイトの分析では、ウィリアムズのバクーのアップデートは差を大きく縮めるには足りず、ハースは開幕戦よりメルセデスとの差が0.21秒広がった。2024年のフェラーリのように、新しい部品をあきらめて前の仕様に戻した例もある。</p><p><strong>あなたは、アップデートが外れたとき、前の仕様に戻すべきだと思いますか？ それとも使い続けて合わせるべきだと思いますか？</strong></p><h2>続きは F1 Grid Walk で</h2><p>ここから先の「セパンで何が起きたか」「力が増えたのに、なぜ遅いのか」「工場の「速い」と、コースの「速い」」「どうやって確かめるのか」「なぜ「何度も試す」「すぐ戻す」ができないのか」は、サイトで読めます。F1公式の開発競争の数字や、風洞・CFDの上限などの表も載せています。</p><p><strong>DEEP GRID #15「F1のアップデートで、なぜ車が遅くなることがあるのか」</strong></p><p><a href="https://f1gridwalk.github.io/deep/upgrade-slower/">https://f1gridwalk.github.io/deep/upgrade-slower/</a></p><p>━━━━━━━━━━</p><p><strong>F1 Grid Walk では、世界のF1ニュースを毎日日本語でまとめています。</strong></p><p>海外の記事の要約を、毎日載せています。</p><p>ほかの海外記事も読みたい方は、F1 Grid Walkへ。</p><p><a href="https://f1gridwalk.github.io/">https://f1gridwalk.github.io/</a></p><p>━━━━━━━━━━</p><p><a href="https://www.formula1.it/news/33302/1/f1-paradosso-mercedes-le-novita-migliori-del-previsto-hanno-sbilanciato-la-w17">出典：Formula1.it</a></p><p><a href="https://f1-gate.com/mercedes-benz/229058.html">出典：F1-Gate.com</a></p><p><a href="https://www.formula1.it/news/32905/1/sette-team-aggiornano-le-monoposto-a-sepang-mercedes-stravolge-la-w17">出典：Formula1.it</a></p><p><a href="https://racingnews365.com/ominous-mercedes-upgrade-causing-unease-amongst-rival-f1-teams">出典：RacingNews365</a></p><p><a href="https://www.planetf1.com/news/mercedes-w17-upgrade-2026-bahrain-grand-prix-malaysia">出典：PlanetF1</a></p><p><a href="https://racer.com/2026/10/03/mercedes-upgrades-fail-to-deliver-at-sepang">出典：RACER</a></p><p><a href="https://www.crash.net/f1/news/1106329/1/mercedes-has-big-question-mark-after-bahrain-gp-f1-car-upgrade-letdown">出典：Crash.net</a></p><p><a href="https://www.formula1.com/en/latest/article/i-can-confirm-the-old-car-is-not-bad-russell-reacts-to-p2-in-singapore-sprint-qualifying-with-downgraded-mercedes.DPwDvyn5ma6L2AnZzdR81">出典：F1公式サイト</a></p></div></div>
+</div>
+<script>
+function copyEl(el, btn){
+  var ok=false;
+  try{ var r=document.createRange(); r.selectNodeContents(el); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); ok=document.execCommand('copy'); s.removeAllRanges(); }catch(e){}
+  if(!ok && navigator.clipboard){ navigator.clipboard.writeText(el.innerText); ok=true; }
+  var t=btn.textContent; btn.textContent=ok?'コピーしました':'長押しで選択してコピーしてください'; btn.classList.add('done');
+  setTimeout(function(){ btn.textContent=t; btn.classList.remove('done'); },1600);
+}
+document.querySelectorAll('[data-copy]').forEach(function(b){ b.addEventListener('click',function(){ copyEl(document.getElementById(b.getAttribute('data-copy')), b); }); });
+</script></body></html>
