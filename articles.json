@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19T00:30:00+09:00",
+ "updatedAt": "2026-10-19T06:20:00+09:00",
  "topics": {
   "hamilton-singapore-strategy-blame": {
    "title": "ハミルトン、VSC中にピットへ入らなかった戦略に責任を認める",
@@ -33,10 +33,6 @@
    "title": "ベアマンの2027年ハース残留 カマラ獲得後も発表待ち",
    "summary": "ハースはカマラとの契約を発表したが、ベアマンの2027年契約はまだ正式発表されていない。コマツ代表は継続の意向で、発表の遅れはタイミングと詳細の調整の問題だと説明したと伝えられている。フェラーリに席がなく他チームとの関連も出ていないことから、手続き待ちとの見方が出ている。　ファンの掲示板では、F1公式SNSが同シートを未定扱いにしたことを受けた憶測も出ているが、未確認だ。"
   },
-  "malaysia-gp-return": {
-   "title": "マレーシア政府がF1復帰を検討　11月に評価報告書",
-   "summary": "マレーシア政府がセパンでのF1開催復活を検討している。委員会が費用や投資対効果、インフラを調べ、報告は11月末までにまとまり内閣が判断する。10月の開催は3日間で約26万1000人を集め、経済効果は約9億5000万リンギと試算された。年間3億リンギ超とされる費用が課題で、毎年開催のほか他国との持ち回り案も浮上している。"
-  },
   "mercedes-w17-aero-balance": {
    "title": "メルセデス、W17新空力パッケージの不振原因は前後バランスと特定",
    "summary": "メルセデスはセパンで投入した空力アップデートが期待ほど伸びなかった理由を、ダウンフォース総量ではなく前後の空力バランスのずれにあると分析した。シンガポールでは新旧仕様を並べて走らせてデータを集め、新型フロントウイングも試した。アメリカGPでは両車に最新仕様を投入する方針だと、複数の媒体が伝えている。"
@@ -56,9 +52,110 @@
   "antonelli-manager-lawsuit": {
    "title": "アントネッリと元マネージャーの報酬めぐる訴訟が報じられる",
    "summary": "アントネッリが元マネージャーから、過去の育成支援に対する報酬を求められているとの報道が出ている。ボローニャの裁判所が関係者に契約関連資料の提出を命じたとも伝えられるが、金額や契約条件は公式には明らかになっておらず、双方の主張も未確認のままだ。"
+  },
+  "redbull-engine-calibration": {
+   "title": "レッドブルPU躍進の鍵はADUOなしのキャリブレーション改善",
+   "summary": "RBPTのホジキンソン技術責任者はThe Raceに、開幕時は未成熟だったキャリブレーションがバクーとセパンの間で大きく改善したと語った。FIAが基準メーカーと扱うためADUOのハード更新は受けず、既存ハードの使い方で伸ばしたという。エンジンはまだ理論上の最大値に届かず今季さらに伸びる余地があり、2027年は燃焼系を変更する。F1-Gate.comもこの内容を日本語で伝えた。"
   }
  },
  "articles": [
+  {
+   "id": "ja-f1gate-alpine-mini-tpc-ricard",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "ドライバー",
+   "teams": [
+    "alpine"
+   ],
+   "circuit": "paulricard",
+   "topic": "alpine-mini-tpc-test",
+   "title": "アルピーヌのミニ、旧型A525でポール・リカール走行　メキシコGPのFP1出走も浮上",
+   "summary": "F1-Gate.comは、アルピーヌの育成ドライバーであるガブリエレ・ミニが10月16日にポール・リカールで2025年型A525のテストを行ったと伝えた。21歳のイタリア人で、今季はF2のMPモータースポーツから参戦し、残り2戦の時点で4位につけている。7月にシルバーストンで600km超、9月にポルティマオで約558kmを走っており、累計は1100kmを超える。SNSでは「多くを学んだ」と述べ、早く再びコクピットに戻りたいと綴った。伊メディアはメキシコGPのFP1出走の可能性を報じているが、アルピーヌは確認していない。",
+   "orig": "アルピーヌF1 ガブリエレ・ミニが旧型車テスト メキシコGPのFP1出走も浮上",
+   "url": "https://f1-gate.com/alpine/229084.html",
+   "published": "2026-10-19T05:26:00+09:00"
+  },
+  {
+   "id": "ja-f1gate-2027-grid-19-of-22",
+   "kind": "news",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "ドライバー",
+   "topic": "f1-2027-grid-seats",
+   "title": "2027年F1ドライバーラインアップ　22席中19席が決定、残る3席の行方",
+   "summary": "F1-Gate.comは、2027年のF1ドライバー22席のうち19席が確定したと整理した。マクラーレン、フェラーリ、メルセデス、アストンマーティンは現行の2人が残り、レッドブルはフェルスタッペンとハジャー、アルピーヌはガスリーとコラピント、ウィリアムズはアルボンとサインツ、アウディはヒュルケンベルグとボルトレートが並ぶ。キャデラックはボッタスとペレスで、ハースはカマラの起用が決まった。未定の3席は、ベアマンの去就が焦点のハース1席と、ローソンとリンドブラッドが走るレーシングブルズの2席となっている。",
+   "orig": "2027年F1ドライバーラインアップ 22席中19席が決定 残る3席の行方",
+   "url": "https://f1-gate.com/driver/228957.html",
+   "published": "2026-10-18T23:27:00+09:00"
+  },
+  {
+   "id": "en-therace-alonso-aston-turbo-doubt",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-turbo-doubt",
+   "title": "アロンソのターボ不調の訴え、ホンダのデータには異常なし　アストンマーティンの奇妙な副筋書き",
+   "summary": "The Raceは、アストンマーティン・ホンダの今季の浮き沈みの中で、アロンソの訴えとホンダのデータが食い違っていると論じた。バクーでアロンソは約20周でリタイアし、直線で1.5秒失ったと語ったが、ホンダは異常を見つけられず、セパンの後も同じ結論だった。シンガポールでもQ1敗退後に「ターボが壊れた」と主張し、部品交換でピットレーンからスタートしたが、やはり問題は見つからなかったという。クラックは、キャデラックのボッタスの後ろでのスリップストリームとオーバーテイク用ブーストが影響した可能性を挙げた。筆者は、テレメトリーに異常が出ない限り、バクーのリタイアは諦めたように見えると結んでいる。",
+   "orig": "The strange Alonso subplot to Aston Martin's weird recent run",
+   "url": "https://www.the-race.com/formula-1/strange-fernando-alonso-subplot-aston-martin-weird-f1-form/",
+   "published": "2026-10-18T12:00:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-fia-v8-2030",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ビジネス",
+   "topic": "f1-2030-v8-engine",
+   "title": "新F1エンジンは2030年から？　FIA会長が語る新V8の構想",
+   "summary": "Motorsport-Total.comによると、FIAのビン・スレイエム会長がルワンダでのアフリカGP発表会見で、新しいエンジン規則を2030年シーズンから導入する考えを示した。従来の計画は2031年で、現行方式から5シーズン後を想定していた。会長はV8に言及し、研究開発とPUのコストは少なくとも50％下がると述べ、車体も現在の最低重量768kgより約80kg軽くなるという。騒音ではなくサウンドを重視する姿勢も示し、FOMとメーカーの支持があると主張した。ただし会長自身が「まだ記者に話すべきではないかも」と漏らしており、FIAやFOM、メーカーからの正式な確認はない。",
+   "orig": "Neue F1-Antriebe schon 2030? Was der FIA-Präsident jetzt verraten hat",
+   "url": "https://www.motorsport-total.com/formel-1/news/neue-f1-antriebe-schon-2030-was-der-fia-praesident-jetzt-verraten-hat-26101801",
+   "published": "2026-10-18T12:00:00+02:00"
+  },
+  {
+   "id": "ja-f1gate-redbull-pu-hodgkinson",
+   "kind": "tech",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1-Gate.com",
+   "cat": "テクニカル",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-engine-calibration",
+   "title": "レッドブルF1製PU、技術責任者が語る開幕時のパフォーマンス不足と改善の舞台裏",
+   "summary": "F1-Gate.comは、レッドブル・パワートレインズのホジキンソン技術責任者がThe Raceに語った内容を伝えた。性能に不満があって仕様凍結を延ばしたため、耐久テストと調整の時間が減り、開幕時は「かなり未成熟なキャリブレーション」だったという。バクーからセパンの間に、燃焼系の制御への理解が深まって大きく向上した。FIAに基準メーカーと扱われるためADUOのハード更新は受けず、既存ハードの使い方の改善で伸ばしたと説明している。エンジンはダイノ計測の理論上の最大値にまだ届かず、今季さらに伸びる余地があり、2027年は燃焼系を変更する。",
+   "orig": "レッドブルF1製PU 技術責任者が語る開幕時のパフォーマンス不足と改善の舞台裏",
+   "url": "https://f1-gate.com/redbull/228871.html",
+   "published": "2026-10-18T20:46:00+09:00"
+  },
+  {
+   "id": "ja-f1jouhou2-haas-toyota-tpc-komatsu",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-komatsu-camara-choice",
+   "title": "ハースのカマラ起用はトヨタ支援のTPCがきっかけ？　平川亮の落選と小松代表の発言が話題に",
+   "summary": "ハースが2027年にカマラを起用した経緯について、トヨタが支援する旧型車テスト（TPC）が判断材料になったという話題がまとめられている。ハースの小松代表がThe Raceに、TPCがなければ同じ選択をしたか分からず、F2の選手を外から評価するのは難しいと語ったという内容に基づく。結果として、トヨタ系で席を望んでいた平川亮は選ばれなかった。コメント欄では、TPCなしなら平川が選ばれたのではという見方や、両席がフェラーリ系になることへの指摘が出ていたが、これらは読者の推測である。",
+   "orig": "ハースとトヨタのTPC資金、小松代表「カマラ起用はTPCがなければなかったかも」",
+   "url": "https://f1jouhou2.com/blog-entry-31736.html",
+   "published": "2026-10-19T06:00:00+09:00"
+  },
   {
    "id": "en-therace-ferrari-austin-upgrade",
    "kind": "tech",
@@ -1314,111 +1411,6 @@
    "orig": "Williams, testa già al 2027: scelto il nome della nuova monoposto",
    "url": "https://www.formula1.it/news/33276/1/williams-testa-gia-al-2027-scelto-il-nome-della-nuova-monoposto",
    "published": "2026-10-15T12:00:00+02:00"
-  },
-  {
-   "id": "it-formula1it-norris-steiner-stella",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ドライバー",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "norris-apology-steiner",
-   "title": "ノリスのシンガポール謝罪、シュタイナーは「ステラの功績」と評価",
-   "summary": "Formula1.itは、シンガポールGPのスプリント終盤に起きたノリスとピアストリの接触を巡る議論を取り上げた。ノリスはスプリント後、チームメイトに謝る必要はなく罪悪感もないと述べていたが、日曜の決勝後には責任を認め、ピアストリとチームに謝罪した。元ハースのシュタイナー氏はポッドキャストで、ステラ代表が問題を人前でなく内々に扱った点を評価した。ステラは「特定の行動は容認されない」と明確に伝えたといい、シュタイナーは謝罪が政治的な動きだとの見方を退け、ノリス自身が最初の反応を「傲慢だった」と認識したと語った。記事は、マクラーレンに落ち着きが戻ったようだが、いつまで続くかは分からないと結んでいる。",
-   "orig": "Norris spavaldo a Singapore, Steiner: «Il dietrofront è merito di Stella»",
-   "url": "https://www.formula1.it/news/33279/1/norris-spavaldo-a-singapore-steiner-il-dietrofront-e-merito-di-stella",
-   "published": "2026-10-15T12:00:00+02:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "de-motorsporttotal-palmer-ferrari-rivalry",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "hamilton-singapore-strategy-blame",
-   "circuit": "singapore",
-   "title": "元F1ドライバーのパーマー「ハミルトンとルクレールの対抗意識がフェラーリの得点を削っている」",
-   "summary": "Motorsport-Total.comは、元F1ドライバーのパーマーがF1.comのコラムで、フェラーリの2人が時にチームの利益より互いの競争を優先していると指摘したと伝えた。シンガポールでハミルトンはVSC中にピットへ入らず、ルクレールが2位を守る一方で6位まで後退し、ダブル表彰台を逃した。パーマーは、チームメイトと違うことをしたかったのではないかと推測し、ハミルトンがチームを完全には信用していないとも述べた。ザントフォールトでのルクレールの最終ラップの無理な仕掛けや、モンツァのスタートでの接触寸前の場面も例に挙げている。ハミルトンは無線でチームに謝罪している。",
-   "orig": "Experte: Hamilton und Leclerc bringen Ferrari um wichtige Punkte",
-   "url": "https://www.motorsport-total.com/formel-1/news/experte-hamilton-und-leclerc-bringen-ferrari-um-wichtige-punkte-26101511",
-   "published": "2026-10-15T12:00:00+02:00"
-  },
-  {
-   "id": "it-formula1it-sepang-return",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "カレンダー",
-   "topic": "malaysia-gp-return",
-   "circuit": "sepang",
-   "title": "マレーシア政府がF1復帰を本格検討　他国との持ち回り開催案も",
-   "summary": "Formula1.itは、マレーシア政府が最後の開催となった2017年から約10年ぶりのF1復帰を真剣に検討していると報じた。アンワル首相とF1のドメニカリCEOによる予備協議を受けた動きで、タウフィク・ジョハリ・スポーツ相は費用を抑えるため他国と数年ごとに持ち回る案があると語った。関係省庁の委員会が費用と経済効果を調べており、報告は11月までに内閣へ出され、進めるかどうかが判断される。10月2〜4日のセパン開催は3日間で26万1000人を集め、決勝日は10万人超、経済効果は約9億5000万リンギと推計された。公共交通や交通管理、観客向け施設の課題も解決が必要だという。",
-   "orig": "Formula 1, Sepang prepara il grande ritorno: spunta l'ipotesi della rotazione",
-   "url": "https://www.formula1.it/news/33273/1/formula-1-sepang-prepara-il-grande-ritorno-spunta-l-ipotesi-della-rotazione",
-   "published": "2026-10-15T12:00:00+02:00"
-  },
-  {
-   "id": "de-motorsporttotal-austin-title-scenarios",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "austin",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "austin-title-scenarios",
-   "title": "オースティンで王座の行方は　アントネッリのタイトル決定条件をライバル別に整理",
-   "summary": "Motorsport-Total.comは、アントネッリがオースティンで2026年タイトルを決める可能性があるとして、ライバルの生き残り条件を整理した。アントネッリは340点、ラッセルは238点、ハミルトン229点、フェルスタッペン221点、ルクレール215点、ノリス201点で、オースティン後に125点超離れていれば脱落する。アントネッリが優勝すればフェルスタッペンとルクレールは脱落し、ラッセルは8位以内が必要となる。成立すれば史上最年少の王者となる。",
-   "orig": "Austin: Das muss jeder Titelkandidat tun, um im WM-Rennen zu bleiben",
-   "url": "https://www.motorsport-total.com/formel-1/news/austin-das-muss-jeder-titelkandidat-tun-um-im-wm-rennen-zu-bleiben-26101505",
-   "published": "2026-10-15T11:22:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-horner-alonso-leclerc-marko",
-   "kind": "rumor",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "うわさ",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "astonmartin"
-   ],
-   "topic": "horner-drive-book",
-   "title": "ホーナー、レッドブルにアロンソとルクレール獲得を望んだが「マルコが反対」と自伝で主張",
-   "summary": "F1-Gate.comは、ホーナー前代表が10月22日発売の自伝『Drive』で、2024年にペレスの後任候補としてアロンソとルクレールを検討したと明かしたと伝えた。ホーナーによれば、アロンソは日本GPで「来季フェルスタッペンと組みたい」と語ったが、マルコ経由でフェルスタッペン陣営が乗り気でないと伝えられた。ルクレールについてもマルコから「忘れろ」と言われたと主張している。実際にはペレスが2024年限りで契約を終え、2025年はローソン、角田裕毅の順で起用された。",
-   "orig": "クリスチャン・ホーナー レッドブルF1でアロンソとルクレール獲得を希望も「マルコが反対」",
-   "url": "https://f1-gate.com/redbull/228704.html",
-   "published": "2026-10-15T17:56:00+09:00"
-  },
-  {
-   "id": "de-motorsporttotal-mclaren-mcl40-fundamental",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "mclaren-mcl40-fundamental",
-   "title": "マクラーレンに「早い救済策」なし　MCL40には根本的な変更が必要",
-   "summary": "Motorsport-Total.comは、マクラーレンのステラ代表がMCL40の扱いにくさは根本的な変更なしには解消できないと認めたと伝えた。そうした変更は早くても2027年型のMCL41でしか行えず、今後のアップデートでこの特性が良くなるとは期待していないという。ノリスはコーナーのたびに「刃の上」を走るようで、前後の軸を力ずくで操る必要があり心身ともに消耗すると語った。穏やかなステアリング操作を得意とするピアストリはより大きな影響を受けたとされ、ステラは原因が技術面にあると説明している。",
-   "orig": "Keine schnelle Rettung: McLaren braucht \"fundamentale Änderungen\" am MCL40",
-   "url": "https://www.motorsport-total.com/formel-1/news/keine-schnelle-rettung-mclaren-braucht-fundamentale-aenderungen-am-mcl40-26101502",
-   "published": "2026-10-15T10:00:00+02:00"
   }
  ]
 }
