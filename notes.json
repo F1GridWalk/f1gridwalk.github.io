@@ -1,40 +1,37 @@
 {
- "updatedAt": "2026-10-19T18:20:00+09:00",
+ "updatedAt": "2026-10-20T00:25:00+09:00",
  "notes": [
   {
-   "id": "note-sentaroh-mercedes-w17-floor-sepang",
+   "id": "note-formula1report-fornaroli-fp1-mexico-brazil",
    "platform": "note",
-   "site": "仙太郎",
+   "site": "F1レポート",
    "lang": "ja",
    "paid": false,
-   "cat": "テクニカル",
-   "author": "仙太郎",
-   "title": "メルセデスW17を惑わせた新型フロアは本当に失敗だったのか。バーレーンGPの不可解な低迷を読み解く",
-   "summary": "セパンでメルセデスW17が低速コーナーで苦戦した理由を探る分析。ロード副代表の説明をもとに、スロットルで車を向ける挙動がタイヤ温度を上げる悪循環を指摘し、粗い路面が床下の気流に影響した可能性にも仮説として触れている。シンガポールで同じ症状が出るかが判断材料になるという見立て。",
-   "url": "https://note.com/sentaroh_f1/n/n24cfd9ccb35d",
-   "published": "2026-10-07T16:06:58+09:00",
+   "cat": "ドライバー",
+   "author": "F1レポート",
+   "title": "マクラーレン、レオナルド・フォルナローリのメキシコ&サンパウロGPのFP1に出走へ。ポール・リカールで約350kmを走行し準備を進める",
+   "summary": "マクラーレンがフォルナローリを次戦以降の2戦でFP1に起用し、ルーキー起用の義務枠を消化すると伝えた記事。準備としてポール・リカールで2025年型MCL39を約350km走らせたという。本人は高地のメキシコシティが新たな挑戦になると語っている。",
+   "url": "https://note.com/formula1report/n/n585fc53fb60e",
+   "published": "2026-10-19T22:07:35+09:00",
    "teams": [
-    "mercedes"
-   ],
-   "circuit": "sepang"
+    "mclaren"
+   ]
   },
   {
-   "id": "substack-somersf1-mercedes-w17-malaysia",
-   "platform": "substack",
-   "site": "Somersf1",
-   "lang": "en",
+   "id": "note-formula1report-fornaroli-wec-2027",
+   "platform": "note",
+   "site": "F1レポート",
+   "lang": "ja",
    "paid": false,
-   "cat": "テクニカル",
-   "author": "Matthew Somerfield",
-   "title": "メルセデス、マレーシアでW17に大幅な変更",
-   "orig": "Mercedes make massive changes to the W17 in Malaysia",
-   "summary": "マレーシアでメルセデスW17に投入された前後に及ぶ大型アップデートを整理した技術解説。フロントフロアのフェンスやフロアボードの構成、リアタイヤ付近のフロアの分割、ブレーキダクトのウィングレットやディフューザーの変更点などを写真付きで読み解いている。",
-   "url": "https://somersf1.substack.com/p/mercedes-make-massive-changes-to",
-   "published": "2026-10-02T12:00:00+09:00",
+   "cat": "ドライバー",
+   "author": "F1レポート",
+   "title": "マクラーレン、レオナルド・フォルナローリが2027年からWEC参戦へ。ハイパーカーチームに加入し、F1リザーブドライバーも継続",
+   "summary": "マクラーレンがF2王者フォルナローリを2027年から新設のハイパーカーチームに起用し、F1リザーブも兼ねると伝えた記事。ル・マン24時間にも出場予定で、イェンセン、リン、ファントールと組むという。F3とF2の連続王者は5人しかいない点も紹介している。",
+   "url": "https://note.com/formula1report/n/n1acbcc201476",
+   "published": "2026-10-19T21:54:28+09:00",
    "teams": [
-    "mercedes"
-   ],
-   "circuit": "sepang"
+    "mclaren"
+   ]
   },
   {
    "id": "note-sentaroh-redbull-customer-ends",
@@ -485,6 +482,23 @@
    "circuit": "singapore"
   },
   {
+   "id": "note-sentaroh-mercedes-w17-floor-sepang",
+   "platform": "note",
+   "site": "仙太郎",
+   "lang": "ja",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "仙太郎",
+   "title": "メルセデスW17を惑わせた新型フロアは本当に失敗だったのか。バーレーンGPの不可解な低迷を読み解く",
+   "summary": "セパンでメルセデスW17が低速コーナーで苦戦した理由を探る分析。ロード副代表の説明をもとに、スロットルで車を向ける挙動がタイヤ温度を上げる悪循環を指摘し、粗い路面が床下の気流に影響した可能性にも仮説として触れている。シンガポールで同じ症状が出るかが判断材料になるという見立て。",
+   "url": "https://note.com/sentaroh_f1/n/n24cfd9ccb35d",
+   "published": "2026-10-07T16:06:58+09:00",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "sepang"
+  },
+  {
    "id": "note-sentaroh-mercedes-w17-floor",
    "platform": "note",
    "site": "仙太郎",
@@ -789,24 +803,6 @@
    "teams": [
     "redbull",
     "astonmartin",
-    "mercedes"
-   ],
-   "circuit": "sepang"
-  },
-  {
-   "id": "substack-gpexplained-cooling-cost-cap",
-   "platform": "substack",
-   "site": "GP Explained",
-   "lang": "en",
-   "paid": false,
-   "cat": "分析",
-   "author": "GP Explained",
-   "title": "ドライバー冷却システムは本当にコストキャップに含めるべきか？",
-   "orig": "Should F1's Driver Cooling System Really Count Towards the Cost Cap?",
-   "summary": "ラッセルが冷却ベストの強化を望む一方、メルセデスは開発費をコストキャップ内で車の性能と取り合う構図になっていると指摘する。安全関連費の扱いが曖昧な現行規則は性能投資に傾く誘因を生むとして、冷却システムを上限の対象外にするか共通供給にする案を提案している。",
-   "url": "https://gpexplained.substack.com/p/should-f1s-driver-cooling-system",
-   "published": "2026-10-03T15:10:58+09:00",
-   "teams": [
     "mercedes"
    ],
    "circuit": "sepang"
