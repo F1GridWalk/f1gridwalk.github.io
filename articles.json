@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T06:20:00+09:00",
+ "updatedAt": "2026-10-20T12:30:00+09:00",
  "topics": {
   "rwanda-african-gp": {
    "title": "F1が2030年代初頭のルワンダ開催を発表　人権団体は「スポーツウォッシング」と批判",
@@ -13,10 +13,6 @@
    "title": "メルセデス、W17新空力パッケージの不振原因は前後バランスと特定",
    "summary": "メルセデスはセパンで投入した空力アップデートが期待ほど伸びなかった理由を、ダウンフォース総量ではなく前後の空力バランスのずれにあると分析した。シンガポールでは新旧仕様を並べて走らせてデータを集め、新型フロントウイングも試した。アメリカGPでは両車に最新仕様を投入する方針だと、複数の媒体が伝えている。"
   },
-  "ferrari-academy-2027": {
-   "title": "フェラーリ育成体制が2027年に向け再編、ベガノビッチはリザーブに",
-   "summary": "フェラーリはドライバーアカデミーの顔ぶれを入れ替え、卒業するディノ・ベガノビッチを2027年の開発兼リザーブドライバーに起用すると発表した。同時にアカデミーでは2人が退き3人が加わると報じられている。ベガノビッチはF2参戦を続けながら、残りの今季数戦でもフェラーリに帯同する予定だ。"
-  },
   "verstappen-gt3-portimao": {
    "title": "フェルスタッペン、ポルティマオでGT3デビュー戦を9位で終える",
    "summary": "フェルスタッペンはGTワールドチャレンジ・ヨーロッパ最終戦ポルティマオに、メルセデスAMG GT3で参戦した。予選やペナルティで苦しい展開となったが、ピットレーンスタートから終盤に追い上げて9位でフィニッシュした。F1以外の舞台での挑戦として複数媒体が取り上げている。 Motorsport-Totalは、予選のセットアップミスと終盤の15台抜きを詳しく報じた。"
@@ -24,10 +20,6 @@
   "gulf-races-cancel-risk": {
    "title": "カタール・アブダビGPに中止の可能性、判断は直前まで続く見通し",
    "summary": "中東情勢が不安定なため、シーズン終盤のカタールGPとアブダビGPの開催可否は直前まで見通せないと報じられている。代替の最終戦としてイモラが準備しているとも伝えられ、MotoGPカタール戦の判断が鍵になるという見方もある。中止が重なればアントネッリのタイトル決定の時期にも影響し得るが、現時点では開催予定が維持されている。"
-  },
-  "redbull-engine-calibration": {
-   "title": "レッドブルPU躍進の鍵はADUOなしのキャリブレーション改善",
-   "summary": "RBPTのホジキンソン技術責任者はThe Raceに、開幕時は未成熟だったキャリブレーションがバクーとセパンの間で大きく改善したと語った。FIAが基準メーカーと扱うためADUOのハード更新は受けず、既存ハードの使い方で伸ばしたという。エンジンはまだ理論上の最大値に届かず今季さらに伸びる余地があり、2027年は燃焼系を変更する。F1-Gate.comもこの内容を日本語で伝えた。"
   },
   "honda-aston-pu-weakness": {
    "title": "ホンダPUがアストンマーティンの最大の弱点に　HRC社長も「ほぼ2年を失った」と認める",
@@ -43,6 +35,110 @@
   }
  },
  "articles": [
+  {
+   "id": "it-formula1it-sentronics-allengra-flowmeter-suit",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ビジネス",
+   "topic": "flowmeter-patent-suit",
+   "circuit": "austin",
+   "title": "FIA指定の燃料流量計メーカーに米国で特許訴訟　アメリカGP開催への影響は？",
+   "summary": "Formula1.itは、FIAの燃料流量計の独占サプライヤーであるアレングラが米国で特許侵害訴訟を起こされたと報じた。原告は英国のセントロニクスで、10月16日にテキサス州西部地区連邦地裁へ提訴し、同社の米国特許を侵害していると主張している。セントロニクスはF1などの契約を失った損害の賠償や、米国内での機器使用差し止めを求めている。ただし同紙は、機器の使用を禁じる命令は確認できず、提訴だけでレースが中止になるわけではないとしている。今後の影響は裁判所の判断次第で、現時点では不透明だ。",
+   "orig": "Il GP degli Stati Uniti è a rischio. Una causa sui brevetti scuote la FIA",
+   "url": "https://www.formula1.it/news/33359/1/il-gp-degli-stati-uniti-e-a-rischio-una-causa-sui-brevetti-scuote-la-fia",
+   "published": "2026-10-19T21:52:00+02:00"
+  },
+  {
+   "id": "it-formula1it-cadillac-herta-fp1-austin",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "topic": "cadillac-herta-fp1-austin",
+   "teams": [
+    "cadillac"
+   ],
+   "circuit": "austin",
+   "title": "キャデラック、アメリカGPのFP1でペレスに代わりハータが走行　フロアと冷却の小改良も",
+   "summary": "Formula1.itによると、キャデラックはアメリカGPの金曜フリー走行1回目で、セルジオ・ペレスに代わりコルトン・ハータがMAC-26を走らせる。ハータがキャデラックで走るのはバルセロナ、ブダペスト、モンツァに続き今季4回目だ。同選手は2019年にオースティンでインディカー初優勝を果たしており、F1マシンで走ることを「円を閉じるようなもの」と語った。チーム代表のブドコウスキーは、フロアと冷却部分の小さな改良をフリー走行で評価すると明かした。チームはシンガポールで見せた進歩を積み上げたい考えだ。",
+   "orig": "Cadillac, Herta al posto di Perez e ad Austin arrivano anche aggiornamenti",
+   "url": "https://www.formula1.it/news/33358/1/cadillac-herta-al-posto-di-perez-e-ad-austin-arrivano-anche-aggiornamenti",
+   "published": "2026-10-19T20:55:00+02:00"
+  },
+  {
+   "id": "de-motorsporttotal-hamilton-ferrari-trust",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "topic": "hamilton-ferrari-trust",
+   "teams": [
+    "ferrari"
+   ],
+   "circuit": "singapore",
+   "title": "ハミルトンとフェラーリの間に信頼問題？　シンガポールで再びチームの指示に従わず",
+   "summary": "Motorsport-Total.comは、ハミルトンがシンガポールGPでまたチームの戦略指示を拒んだことを受け、フェラーリとの信頼関係を問う声が出ていると伝えた。チームはバーチャルセーフティカー中のピット入りを求めたが、ハミルトンは古いタイヤのまま走り続け、表彰台圏内から6位まで後退した。1週間前のセパンでも、乾きかけた路面でインターミディエイトへの交換を断り、結果的に3位に入っている。元ドライバーのパーマーは「今はチームを必ずしも信頼していない」と指摘し、ラルフ・シューマッハは「チームの一員になる必要がある」と述べた。ハミルトンはレース直後に無線で謝罪し、後に「痛い教訓」だったとSNSに投稿した。",
+   "orig": "Gibt es ein Vertrauensproblem zwischen Lewis Hamilton und Ferrari?",
+   "url": "https://www.motorsport-total.com/formel-1/news/gibt-es-ein-vertrauensproblem-zwischen-lewis-hamilton-und-ferrari-26101903",
+   "published": "2026-10-19T12:00:00+02:00",
+   "featured": true
+  },
+  {
+   "id": "de-motorsporttotal-bortoleto-audi-title-goal",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "topic": "bortoleto-audi-title-goal",
+   "teams": [
+    "audi"
+   ],
+   "title": "ボルトレート独占取材「いつかアウディでタイトルを」　アントネッリらとの差に「忍耐が必要」",
+   "summary": "Motorsport-Total.comの独占取材で、アウディのボルトレートは「いつかアウディで世界タイトルを獲りたい」と語った。22歳の同選手は現在ドライバーズ選手権15位で、アウディはコンストラクターズ8位にいる。アントネッリやハジャーがすでに表彰台に立っていることについて、ジュニア時代には2人に勝っていたとしつつ「忍耐が必要だ」と述べた。プレッシャーについては「誇りは感じるが、重圧は感じない」と答え、アウディ代表のビノットを師であり友人だと表現している。アウディを他チームへの踏み台とは見ておらず、チームが勝てる集団になる瞬間に立ち会いたいと話した。",
+   "orig": "Gabriel Bortoleto exklusiv: Will mit Audi irgendwann WM-Titel gewinnen",
+   "url": "https://www.motorsport-total.com/formel-1/news/gabriel-bortoleto-exklusiv-will-mit-audi-irgendwann-wm-titel-gewinnen-26101912",
+   "published": "2026-10-19T12:00:00+02:00"
+  },
+  {
+   "id": "nl-gpblog-redbull-austin-double-test-hart",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "topic": "lambiase-hart-austin",
+   "teams": [
+    "redbull"
+   ],
+   "circuit": "austin",
+   "title": "レッド・ブル、アメリカGPは「二重のテスト」　ランビアーゼ不在でハートがフェルスタッペンを担当",
+   "summary": "GPblogは、レッド・ブルがアメリカGPで、RB22が異なる性格のサーキットでも最速級かを確かめる「二重のテスト」に臨むと伝えた。フェルスタッペンのレースエンジニアであるランビアーゼは、オースティン、ブラジル、ラスベガスの3戦で離れ、マクラーレンへ移るとされる。後任のトム・ハートは来季から正式にその役を引き継ぎ、今回が実力を示す機会になる。ハートは昨年もランビアーゼ不在時に代役を務め、関係は良好だったという。フェルスタッペン自身がハートの後任起用を求めたとも報じられている。",
+   "orig": "Max Verstappen en Red Bull staan in Austin voor een dubbele test",
+   "url": "https://www.gpblog.com/nl/nieuws/max-verstappen-en-red-bull-staan-in-austin-voor-een-dubbele-test",
+   "published": "2026-10-19T18:02:00+02:00"
+  },
+  {
+   "id": "ja-f1are-aston-honda-engine-switch",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "topic": "aston-engine-switch-rumor",
+   "teams": [
+    "astonmartin"
+   ],
+   "title": "アストンマーチンはホンダが2027年に改善しなければPU変更を探る？　掲示板の話題",
+   "summary": "F1のアレが、アストンマーチンが2027年にホンダのパワーユニットが改善しなければサプライヤー変更を探るのでは、という話題をまとめた。元になっているのはSNS上の投稿で、新ターボが低速コーナーで不利に働き、シンガポールではPUの最適化がむしろ悪化したと主張している。ホンダは他メーカーから人材やノウハウを取り込むよう促されているとも伝えられるが、確認された情報ではない。掲示板では、メルセデスやフェラーリが供給する可能性は低く、アウディが現実的な候補だと見る声が多いが、懐疑的な書き込みが中心だ。",
+   "orig": "アストンマーチンのパパストロール、ホンダが2027年に改善しなければエンジンサプライヤー変更を探る？",
+   "url": "https://f1are.com/blog-entry-4000.html",
+   "published": "2026-10-20T12:00:00+09:00"
+  },
   {
    "id": "ja-f1gate-qatar-abudhabi-decision-delay",
    "kind": "news",
@@ -1290,109 +1386,6 @@
    "orig": "The extraordinary figures hinting at Aston Martin's pole potential",
    "url": "https://www.the-race.com/formula-1/aston-martin-f1-pole-potential-extraordinary-figures/",
    "published": "2026-10-16T12:00:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-pirelli-magny-cours-test",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "pirelli-magny-cours-test-2027",
-   "title": "ピレリ、マニクールで2027年向けタイヤテスト　メルセデスのベスティが2日間で計263周",
-   "summary": "Motorsport-Total.comによると、ピレリはマニクールで2日間のタイヤテストを行い、メルセデスのリザーブドライバーのベスティが走行した。初日はウエット路面でインターミディエイトを中心に125周し、最速は1分30秒284だった。ピレリは2027年に向けて、コンパウンドや構造の異なる複数のインターを試し、ウォームアップ性能を探ったという。2日目は霧で開始が遅れたものの、硬さの違うドライ用スリックを138周走り、最速は1分15秒766だった。ピレリはウエットタイヤへ切り替える境目の把握に役立ったとしている。",
-   "orig": "Pirelli-Test in Magny-Cours: Mercedes testet Intermediates und Slicks",
-   "url": "https://www.motorsport-total.com/formel-1/news/pirelli-test-in-magny-cours-mercedes-testet-intermediates-und-slicks-26101606",
-   "published": "2026-10-16T12:47:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-fia-2027-rear-wing-300ms",
-   "kind": "tech",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "テクニカル",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "fia-2027-rear-wing-rule",
-   "title": "FIA、2027年のリアウイング作動時間を400ミリ秒から300ミリ秒へ短縮　フェラーリの回転式ウイングに影響か",
-   "summary": "F1-Gate.comによると、FIAは2027年から可動式リアウイングの切り替えに許される時間を400ミリ秒から300ミリ秒へ短縮する。影響が取り沙汰されるのは、可動部を大きな角度で回すフェラーリの通称「マカレナ」ウイングだ。回転式そのものが禁止されたわけではなく、実際の切り替えが300ミリ秒以内に収まれば継続できる。各チームはアクチュエーターの強化や可動部の軽量化、回転角の見直しを迫られる可能性がある。アクティブエアロは直線で空気抵抗を減らし、コーナーでダウンフォースを戻す2026年規則の柱だ。",
-   "orig": "FIA 2027年F1リアウイング規則を厳格化 フェラーリの独自機構に影響",
-   "url": "https://f1-gate.com/fia/227852.html",
-   "published": "2026-10-16T19:18:00+09:00"
-  },
-  {
-   "id": "de-motorsporttotal-ferrari-academy-2027",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "topic": "ferrari-academy-2027",
-   "teams": [
-    "ferrari"
-   ],
-   "title": "フェラーリ育成プログラム、2027年は3人が新加入　ベガノビッチはF1リザーブへ",
-   "summary": "Motorsport-Total.comによると、フェラーリは育成プログラムの2027年体制を発表し、トルコのアルプ・アクソイ、コロンビアのサリム・ハンナ、13歳のオランダ人ダニエル・ミロンの3人が新加入する。ラファエル・カマラはオコンの後任として2027年にハースからF1デビューし、フェラーリとのつながりは続く。ディノ・ベガノビッチはF2ランキング5位で今季2勝を挙げており、シーズン後にF2を離れてジョビナッツィと分担する形でフェラーリのF1開発・リザーブドライバーを務める。F3王者争いで3位に入ったタポネンはF2のARTへ昇格し、マッカニャーニはF4からF3へ上がる。",
-   "orig": "Ferrari-Akademie: Zwei Ab- und drei Neuzugänge bei den Junioren",
-   "url": "https://www.motorsport-total.com/formel-1/news/ferrari-akademie-zwei-ab-und-drei-neuzugaenge-bei-den-junioren-26101605",
-   "published": "2026-10-16T12:00:00+02:00"
-  },
-  {
-   "id": "de-motorsporttotal-qatar-abudhabi-cancel-risk",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "カレンダー",
-   "topic": "gulf-races-cancel-risk",
-   "title": "カタールとアブダビの中止なら、アントネッリがテレビ中継なしでタイトル確定の可能性",
-   "summary": "Motorsport-Total.comによると、F1は最終盤のカタールとアブダビ開催を予定通りと説明しているが、中東情勢で直前に中止となる恐れがある。アントネッリはラッセルに102ポイント差で、アメリカGPで125ポイント以上に広げれば残り5戦で王者が決まる。差が100〜124ポイントの場合は、中止が決まった時点でタイトルが確定する計算だという。両戦が中止になれば最終戦は12月6日のイモラに移り、母国で戴冠する可能性が高い。サウジアラビアは2026年の開催を既に取りやめており、2027年3月の復帰を目指している。",
-   "orig": "Katar- und Abu-Dhabi-Absage? Jetzt droht der Formel 1 der Super-GAU",
-   "url": "https://www.motorsport-total.com/formel-1/news/katar-und-abu-dhabi-absage-jetzt-droht-der-formel-1-der-super-gau-26101601",
-   "published": "2026-10-16T12:00:00+02:00",
-   "teams": [
-    "mercedes"
-   ]
-  },
-  {
-   "id": "de-motorsporttotal-norris-business-empire",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ビジネス",
-   "topic": "norris-business-empire",
-   "teams": [
-    "mclaren"
-   ],
-   "title": "ノリスの「F1の外」の事業網　ゲーム系ブランドのクアドラントから新設のLN4フュージョンまで",
-   "summary": "Motorsport-Total.comは、ノリスがF1の外で築いてきた事業の全体像を整理した。ゲーム・ライフスタイルブランドのクアドラントは2025年7月にヴェロース・メディア・グループが過半数を取得し、ノリスは20%超を持つ2位株主で、ヴェロース自体の株主にもなった。2024年の決算では約90万ポンドの赤字だった。ノリスは観戦・ホスピタリティ企業シート・ユニークの2000万ポンドの資金調達にも参加している。9月発表のLN4フュージョンは、資金のない有望な若手を支援する育成計画も備える。",
-   "orig": "Lando Norris: So sieht sein Business-Imperium abseits der Formel 1 aus",
-   "url": "https://www.motorsport-total.com/formel-1/news/lando-norris-so-sieht-sein-business-imperium-abseits-der-formel-1-aus-26101611",
-   "published": "2026-10-16T12:00:00+02:00"
-  },
-  {
-   "id": "en-therace-redbull-engine-calibration",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "topic": "redbull-engine-calibration",
-   "teams": [
-    "redbull"
-   ],
-   "featured": true,
-   "title": "レッドブル、ADUOなしでPUを進化させた方法　カギはキャリブレーション",
-   "summary": "The Raceは、マレーシア、シンガポールと連勝したレッドブルの進歩がPUにも及ぶと伝えた。FIAが同社のエンジンを2度ベンチマークと判定したため新しいホモロゲーションはできず、改善はハードウェアではなくキャリブレーションによるとRBPTのホジキンソン技術責任者が説明している。出力、燃費、エネルギー回生と展開のバランスを燃料サプライヤーと詰めたといい、開幕時の未成熟な設定は戦ごとに改善し、バクーとセパンの間で大きな学びがあったという。同氏はキャリブレーションだけで今季さらに伸びる余地があると見ており、2027年の燃料流量規則変更に向け燃焼系の改良も進めている。メルセデスのウォルフは、来季は一段と厳しいタイトル争いになると予想した。",
-   "orig": "How Red Bull has improved its F1 engine without ADUO",
-   "url": "https://www.the-race.com/formula-1/key-gains-red-bull-has-made-with-its-race-winning-f1-engine/",
-   "published": "2026-10-15T12:00:00+01:00"
   }
  ]
 }
