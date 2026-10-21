@@ -1671,10 +1671,13 @@ RBP_CSS = '''
 .rbp .rb-h{font-size:12.5px;margin:22px 0 6px}
 .rbp-body h2.rbp-sh{font-size:17px;font-weight:800;line-height:1.5;margin:26px 0 8px;padding-left:10px;border-left:3px solid var(--clay)}
 .rbp-body h2.rbp-sh:first-child{margin-top:6px}
-.rbp .rb-src li{font-size:13.5px;line-height:1.7}
-.rbp .rb-src a::before{content:none}
-.rbp .rb-src a{color:var(--ink-2)}
-.rbp .rb-src small{display:block;color:var(--muted);font-size:12px}
+.rb-srcbox{margin:22px 0 4px}
+.rb-srcbox summary{cursor:pointer;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--muted);padding:6px 0}
+.rbp ul.rb-src{margin:6px 0 0}
+.rbp ul.rb-src li{font-size:13px;line-height:1.7;padding:3px 0}
+.rbp ul.rb-src a::before{content:none}
+.rbp ul.rb-src a{color:var(--ink-2);text-decoration-color:var(--line)}
+.rbp ul.rb-src small{display:block;color:var(--muted);font-size:12px}
 .rbp .rb-ex li{font-size:15px}
 .rb-reads small{display:inline-block;margin-right:6px;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
 .rbp .rb-see a{font-size:14px;padding:3px 13px}
@@ -1769,9 +1772,9 @@ def build_rules():
         if others:
             b += f'<div class="rb-h">「{e(t["cat"])}」のほかの用語</div><div class="rb-see">' + ''.join(f'<a href="{rb_url(x["id"])}">{e(x["term"])}</a>' for x in others) + '</div>'
         if t.get('src'):  # each entry's own sources, linked, on its page (owner's OK, 21 Oct 2026); "note" says what it supports
-            b += ('<div class="rb-h">主な出典</div><ul class="rb-ex rb-src">' + ''.join(
+            b += (f'<details class="rb-srcbox"><summary>主な出典（{len(t["src"])}件）</summary><ul class="rb-ex rb-src">' + ''.join(
                 f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])} ↗</a>'
-                + (f'<small>{e(x["note"])}</small>' if x.get('note') else '') + '</li>' for x in t['src']) + '</ul>')
+                + (f'<small>{e(x["note"])}</small>' if x.get('note') else '') + '</li>' for x in t['src']) + '</ul></details>')
         chk = t.get('checked') or R['checked']
         b += f'<p class="rb-checked">規則の中身は {e(chk)} 時点で確認しています。</p>'
         used.discard(tid)
