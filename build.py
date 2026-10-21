@@ -2634,6 +2634,102 @@ def add_term_reads(n=5):
         write(f'deep/rules/{d}/index.html', h.replace(mk, box))
 
 
+SHARE_CSS = """
+.sk{max-width:760px;margin:0 auto;padding:0 0 40px}
+.sk h1{font-size:24px;margin:8px 0 6px}
+.sk h2{font-size:18px;margin:34px 0 6px;padding-top:18px;border-top:2px solid var(--ink)}
+.sk .lead,.sk .note{color:var(--ink-2);font-size:14px;line-height:1.8}
+.sk-i{border-top:1px solid var(--line);padding:16px 0}
+.sk-i .k{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+.sk-i b{display:block;font-size:16px;line-height:1.5;margin:2px 0 10px}
+.sk-box{position:relative;margin:8px 0 0}
+.sk-box small{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:4px}
+.sk-box textarea{width:100%;box-sizing:border-box;font:inherit;font-size:15px;line-height:1.7;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);resize:vertical}
+.sk-box button{margin-top:6px;font:inherit;font-size:14px;font-weight:700;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.sk-box button.ok{background:var(--ink);color:var(--bg)}
+.sk-w{font-size:12px;color:var(--muted);margin-left:8px}
+"""
+
+SHARE_JS = """<script>
+document.querySelectorAll('.sk-box button').forEach(function(b){b.addEventListener('click',function(){
+  var t=b.parentNode.querySelector('textarea');t.select();
+  var done=function(){b.textContent='コピーしました';b.classList.add('ok');setTimeout(function(){b.textContent='コピー';b.classList.remove('ok')},1600)};
+  if(navigator.clipboard){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand('copy');done()})}else{document.execCommand('copy');done()}
+})});
+</script>"""
+
+
+def x_weight(t):
+    """X counts most CJK characters as 2 and every link as 23."""
+    w = 0
+    for part in re.split(r'(https?://\S+)', t):
+        if part.startswith('http'):
+            w += 23
+        else:
+            w += sum(1 if ord(c) < 0x1100 else 2 for c in part)
+    return w
+
+
+def build_share_kit(days=7, req_days=4):
+    """share/index.html — the owner's copy-and-paste desk (owner's OK, 21 Oct 2026). No AI, no tokens:
+    for every STORY / column / DEEP of the last `days` days, a ready X post and a note line, each with the
+    utm_source / utm_campaign that GoatCounter already records (same rule as LENS.md / DEEP.md);
+    then the newest pages to ask Search Console to index, one URL per box. Not secret (all links are public),
+    but noindex, not in the sitemap and not linked from the site."""
+    now = datetime.now(JST)
+    since = now - timedelta(days=days)
+    items = []
+    for H in HUBS.values():
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        try:
+            dt = datetime.fromisoformat(max(ups)) if ups else datetime.fromisoformat(H.get('checked', '') + 'T12:00:00+09:00')
+        except Exception:
+            continue
+        S = H.get('story') or {}
+        items.append((dt, 'STORY', f'/topics/{H["slug"]}/', H['slug'], H['title'], H.get('dek') or S.get('hook', '')))
+    for x in ALL_COLS:
+        src = ('deep/' if x['kind'] == 'deep' else 'lens/') + x['url'].strip('/').split('/')[-1] + '.json'
+        J = load(src) or {}
+        items.append((x['dt'], COL_TAG[x['kind']], x['url'], x['url'].strip('/').split('/')[-1], x['title'], J.get('dek', '')))
+    items = sorted([i for i in items if i[0] >= since], key=lambda i: i[0], reverse=True)
+
+    def box(label, text, x=False):
+        w = f'<span class="sk-w">X の文字数 {x_weight(text)}／280</span>' if x else ''
+        return (f'<div class="sk-box"><small>{e(label)}</small><textarea rows="{8 if x else 2}" readonly>{e(text)}</textarea>'
+                f'<button type="button">コピー</button>{w}</div>')
+
+    blocks = []
+    for dt, label, url, slug, title, dek in items:
+        full = SITE + url
+        xurl = f'{full}?utm_source=x&utm_campaign={slug}'
+        nurl = f'{full}?utm_source=note&utm_campaign={slug}'
+        head = f'【{label}】{title}'
+        lead = re.sub(r'\s+', ' ', dek).strip()
+        while lead and x_weight(f'{head}\n\n{lead}\n\n{xurl}') > 270:
+            lead = lead[:-2].rstrip('、。 ') + '…'
+        xt = f'{head}\n\n{lead}\n\n{xurl}' if lead and lead != '…' else f'{head}\n\n{xurl}'
+        blocks.append(f'<div class="sk-i"><span class="k">{e(label)} · {e(jst_text(dt))}</span><b>{e(title)}</b>'
+                      + box('X に投稿', xt, True)
+                      + box('note の本文に入れるリンク', f'続きは F1 Grid Walk で → {nurl}')
+                      + '</div>')
+    req = [SITE + u for dt, _, u, _, _, _ in items if dt >= now - timedelta(days=req_days)]
+    for g in sorted(GPS.values(), key=lambda g: g['date']):
+        if -7 <= (g['date'].date() - now.date()).days <= 10:
+            req.insert(0, f'{SITE}/gp/{g["slug"]}/')
+    req = list(dict.fromkeys(req))
+    body = ('<div class="sk"><h1>共有キット</h1>'
+            f'<p class="lead">オーナー用の作業ページです。最近 {days} 日の STORY・コラム・DEEP について、X と note に貼る文と、'
+            'Search Console に出すURLを、ビルドのたびに自動で作っています。リンクには計測の印（utm）が付いているので、'
+            'どの投稿から何人来たかが GoatCounter の「キャンペーン」に出ます。</p>'
+            '<p class="note">サイトのどこからもリンクしておらず、検索にも出しません（中身はすべて公開中の記事のリンクです）。</p>'
+            '<h2>X・note に貼る文</h2>' + (''.join(blocks) or '<p class="note">最近の記事はありません。</p>')
+            + f'<h2>Search Console に出すURL</h2><p class="note">最近 {req_days} 日に出たページを、新しい順に並べています。開催前後のGPのページがあれば先頭に入ります。'
+              '登録済みかどうかは、Search Console の「URL検査」で確かめてから出してください（1日10回ほどまで）。</p>'
+            + ''.join(box('URL', u) for u in req) + '</div>' + SHARE_JS)
+    write('share/index.html', page('共有キット｜F1グリッドウォーク', 'オーナー用の作業ページ', SITE + '/share/', body,
+                                   f'<meta name="robots" content="noindex,nofollow">\n<style>{SHARE_CSS}</style>\n', og_type='website'))
+
+
 def build_gp_pages(flag_of, circuits):
     if not GPS:
         return []
@@ -2965,6 +3061,7 @@ def main():
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)
     urls += build_team_pages(allarts, flag_of, teams)
+    build_share_kit()  # owner's copy-and-paste page, not in the sitemap
     top_rules_slot()
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, lm, cf, pr in urls:
