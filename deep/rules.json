@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-14",
+ "checked": "2026-10-21",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -355,7 +355,7 @@
    "body": [
     "ADUO（Additional Development and Upgrade Opportunities、追加の開発とアップグレードの機会）は、2026年の新しいパワーユニットで出遅れたメーカーに、追加の改良の機会を与える仕組みだ。FIAは各メーカーの内燃エンジン（ICE）の性能を測って「ICE性能指数」を出し、いちばん良いメーカーとの差で、受けられる中身を決める。測るのはICEだけで、FIAは、この指数はPU全体の性能を表すものではないとしている。",
     "差が2%以上4%未満なら、その年に1回、翌年に1回の追加のアップグレードが認められる。4%以上なら、その年と翌年に2回ずつだ。あわせてPUメーカーのコスト上限に上乗せがあり、差が大きいほど額が増える（評価期間ごとに最大300万〜1100万ドル）。FIAのトンバジスは、ADUOは性能をそろえる調整（BoP）ではなく「コストキャップの救済の仕組み」で、燃料流量やバラストを変えるものではないと説明している（FIA、2026年5月）。",
-    "評価は3つの期間に分けて行う。中東の情勢でカレンダーが変わったため、1回目はオーストラリア、中国、日本、マイアミ、カナダの5戦になった。2回目はモナコからハンガリーまで、3回目はオランダからメキシコシティまでだ。改良は、通知を受けた次のレースから入れられる。どのメーカーが何回使ったかは細かく公表されないことが多く、ニュースで後から分かることもある。"
+    "評価は3つの期間に分けて行う。中東の情勢でカレンダーが変わったため、1回目はオーストラリア、中国、日本、マイアミ、カナダの5戦になった。2回目はモナコからハンガリーまで、3回目はオランダからメキシコシティまでだ。改良は、通知を受けた次のレースから入れられる。どのメーカーが何回使ったかは細かく公表されないことが多く、ニュースで後から分かることもある。The Raceは2026年10月、レッドブルのエンジンはFIAの分析で2度、基準（いちばん良いメーカー）とされたため、新しい部品の改良は認められないと伝えた。レッドブルは、燃料サプライヤーと進めた設定（キャリブレーション）の見直しでPUを伸ばしてきたという。同じ記事によると、フェラーリは認められた2回の改良を使い切り、メルセデスは少なくともアメリカGPまで投入を待つ構えだ。"
    ],
    "examples": [
     {
@@ -373,6 +373,14 @@
     {
      "t": "ウォルフ代表は、レッドブル・フォードのPUについて、内燃機関は十分に競争力があり、ADUOの評価もそれを裏付けると述べた。",
      "u": "/news/ja-f1gate-wolff-redbull-ford-pu/"
+    },
+    {
+     "t": "レッドブルはFIAに2度基準エンジンと判定され、ADUOなしでキャリブレーションによりPUを進化させた",
+     "u": "/news/en-therace-redbull-engine-calibration/"
+    },
+    {
+     "t": "フェラーリがモンツァで投入したADUO 2の効果は期待を下回ったとFormula1.itが報道",
+     "u": "/news/it-formula1it-ferrari-turbo-stop/"
     }
    ],
    "see": [
@@ -383,9 +391,14 @@
      "name": "FIA",
      "title": "Power Ups: How F1's Additional Development and Upgrade Opportunities will be applied and what's changing（2026年5月13日）",
      "url": "https://www.fia.com/news/power-ups-how-f1s-additional-development-upgrade-opportunities-will-be-applied-and-whats"
+    },
+    {
+     "name": "The Race",
+     "title": "How Red Bull has improved its F1 engine without ADUO（2026年10月15日、benchmark engine (twice)）",
+     "url": "https://www.the-race.com/formula-1/key-gains-red-bull-has-made-with-its-race-winning-f1-engine/"
     }
    ],
-   "checked": "2026-10-13"
+   "checked": "2026-10-21"
   },
   {
    "id": "super-clipping",
@@ -1415,6 +1428,14 @@
     {
      "t": "FIAが説明：4回目とされた7コーナーの違反は、ブレーキの問題が妥当な理由と認められた",
      "u": "/news/de-motorsport-total-antonelli-track-limits-explained/"
+    },
+    {
+     "t": "COTAはコースの端に青いラインが加わり、トラックリミットが予選の焦点になるとウィリアムズが予想",
+     "u": "/news/it-f1it-williams-cota-preview/"
+    },
+    {
+     "t": "FIAの遠隔管制センターで、AIがトラックリミット違反など確認すべき場面を抽出。判断はオフィシャルが行う",
+     "u": "/news/ja-f1gate-fia-remote-ops-centre/"
     }
    ],
    "see": [
@@ -1423,7 +1444,7 @@
     "stewards",
     "yellow-flag"
    ],
-   "checked": "2026-10-13",
+   "checked": "2026-10-21",
    "src": [
     {
      "name": "StatsF1（FIA規則の転載）",
@@ -4264,7 +4285,8 @@
     "チームが1年間に使えるお金に、FIAが上限をつける決まり。お金のあるチームだけが有利にならないようにするための仕組みだ。2026年の上限は2億1500万ドル（物価の調整が入ることがある）。2023〜2025年は1億3500万ドルだったので、大きく上がった。レースが24戦を超える年は、1戦につき180万ドルが上乗せされる。",
     "上がったのは、上限の対象になる費用が増えたからだ。F1公式は、増えた分を考えると全体ではほぼ同じ水準だと説明している。",
     "対象外の費用もある。FIAの財務規則（D5.1.1）によると、ドライバーへの支払い、報酬が高い上位3人の社員の分、マーケティング、レース週末の移動費（ホテルや航空券など）、金融費用、法人税などは数えない。チームが買うパワーユニットの代金も、この上限には数えない（パワーユニットには別のコスト上限がある）。",
-    "上限を超えると、超えた割合で重さが変わる。財務規則では、2％未満の超過は軽い違反（マイナー・オーバースペンド）、2％以上は重大な違反（マテリアル・オーバースペンド）とされる。罰には、罰金、選手権ポイントの剥奪、空力テストの制限、翌年の上限の引き下げなどがある。"
+    "上限を超えると、超えた割合で重さが変わる。財務規則では、2％未満の超過は軽い違反（マイナー・オーバースペンド）、2％以上は重大な違反（マテリアル・オーバースペンド）とされる。罰には、罰金、選手権ポイントの剥奪、空力テストの制限、翌年の上限の引き下げなどがある。",
+    "抜け道をふさぐ決まりも加わる。Motorsport-Total.comによると、2026年10月、世界モータースポーツ評議会（WMSC）は、F1チームの人員や設備を、親会社のほかの活動と分ける新しい決まりを承認した。これまでは技術者の働いた時間を分け、F1の分だけを上限に数えられたため、耐久レースなどほかの活動に費用を回す抜け道があったとされる。2027年の運営に関する規則（F6）に5つの条文が加わり、F1以外の人員はF1の工場に入れず、シミュレーターや風洞、ITシステムも分ける。F1から別の部門へ移るには新しい契約が要り、F1に戻れるのは早くても1年後だという。"
    ],
    "rule": "財務規則 D4.1.2（上限額）、D5.1.1（対象外の費用）、D10.3（超過の区分）、D12.1.1（罰）",
    "examples": [
@@ -4275,6 +4297,18 @@
     {
      "t": "ボウルズは、予算上限が格差を広げたと批判した。2021年以降、上位4チームが選手権ポイントの83％を取っているという。",
      "u": "/news/en-therace-vowles-cost-cap-two-tier/"
+    },
+    {
+     "t": "WMSCが、F1チームと親会社の他部門の人員・設備の分離を義務化する新規則を承認",
+     "u": "/news/de-motorsporttotal-budgetcap-separation/"
+    },
+    {
+     "t": "ホーナー「チームは5億〜6億ドルを使っている」と予算上限の見直しを要求",
+     "u": "/news/de-motorsporttotal-horner-budget-cap/"
+    },
+    {
+     "t": "サインツが、ボウルズ代表の設備投資を考慮した予算上限見直し案を支持",
+     "u": "/news/ja-f1gate-sainz-budget-cap-review/"
     }
    ],
    "see": [
@@ -4304,10 +4338,15 @@
      "name": "The Race",
      "title": "What Williams' F1 cost cap fix is and when it could happen（2026年10月7日）",
      "url": "https://www.the-race.com/formula-1/formula1-cost-cap-fix-f1-williams-2027-2028/"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Budgetobergrenze: FIA trennt Formel-1-Teams von anderen Projekten（2026年10月20日、2027年規則F6に5条項・11ページ追加）",
+     "url": "https://www.motorsport-total.com/formel-1/news/budgetobergrenze-fia-trennt-formel-1-teams-von-anderen-projekten-26102011"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-09"
+   "checked": "2026-10-21"
   },
   {
    "id": "atr",
@@ -4564,6 +4603,18 @@
     {
      "t": "ピレリの2027年タイヤの開発で、フェラーリとレーシングブルズがイモラで合計400周のテストを行ったと伝えられた。",
      "u": "/news/ja-f1gate-pirelli-2027-tire-degradation/"
+    },
+    {
+     "t": "ハースの2027年の人選は、ポルティマオでの旧型車テスト（TPC）で決まった。小松代表、TPCがなければ「はるかに賭けに近かった」",
+     "u": "/news/en-therace-haas-camara-test-day/"
+    },
+    {
+     "t": "トヨタ支援のTPCが、平川亮のハース落選を決定づけた皮肉",
+     "u": "/news/ja-f1gate-toyota-tpc-hirakawa-haas/"
+    },
+    {
+     "t": "アルピーヌ育成のミニ、旧型A525でポール・リカールを走行",
+     "u": "/news/ja-f1gate-alpine-mini-tpc-ricard/"
     }
    ],
    "see": [
@@ -4615,7 +4666,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "pu-manufacturer",
@@ -8742,8 +8793,17 @@
      "url": "https://www.planetf1.com/news/fia-approves-f1-2026-power-unit-rule-changes"
     }
    ],
-   "examples": [],
-   "checked": "2026-10-03"
+   "examples": [
+    {
+     "t": "FIA指定の燃料流量計メーカー、アレングラが米国で特許訴訟を起こされる（原告はセントロニクス）",
+     "u": "/news/it-formula1it-sentronics-allengra-flowmeter-suit/"
+    },
+    {
+     "t": "レッドブル、2027年の燃料流量とターボ過給圧の変更に向けて燃焼系の改良を計画",
+     "u": "/news/en-therace-redbull-pu-gains/"
+    }
+   ],
+   "checked": "2026-10-21"
   },
   {
    "id": "energy-management",
@@ -9208,7 +9268,8 @@
    "body": [
     "サイドポッドは、コクピットの左右、前輪と後輪のあいだにある車体の側面部分。前に空気の取り入れ口（インレット）があり、中に、エンジンや電池などを冷やすラジエーターが入っている。事故のときに横からの衝撃を受け止める構造も、ここに入る。",
     "空力の部品でもある。外側の形で、空気をフロアやリアウイングへ導き、車を路面へ押さえつける力に関わる。ただ、細く小さくするほど内部の空間が減り、冷却が難しくなる。2022年には、メルセデスがサイドポッドをごく小さくした「ゼロポッド」を使ったが、2023年に、より一般的な形へ戻した。",
-    "2026年規則では、サイドポッドは、規則が決めた範囲（体積）の中に収める。前側には、前輪の乱れた空気を内側へ向ける「ホイールウェイク・コントロール・ボード」が付く（→バージボード）。また、エンジンの出力が下がって熱が減る一方、電気の力が増えて電気部品の熱が増えた。冷却のバランスが変わり、ラジエーターの置き方や取り入れ口の形が、チームごとに分かれている（→冷却）。"
+    "2026年規則では、サイドポッドは、規則が決めた範囲（体積）の中に収める。前側には、前輪の乱れた空気を内側へ向ける「ホイールウェイク・コントロール・ボード」が付く（→バージボード）。また、エンジンの出力が下がって熱が減る一方、電気の力が増えて電気部品の熱が増えた。冷却のバランスが変わり、ラジエーターの置き方や取り入れ口の形が、チームごとに分かれている（→冷却）。",
+    "2026年10月には、FIAがレッドブルのRB22のサイドポッドの作りを、2027年から制限する方針だと報じられた。アナリストのスカーボローによると、サイドポッドの下の縁に沿ってフロアの支えを通し、例外として角の丸み（曲率半径）を20mmまで小さくできる周りの車体と組み合わせて、鋭く深い形を作っているという。この20mmを5mmに縮める案が、イタリアの報道を引いてCrash.netで伝えられた。FIAの正式な発表ではなく、今の規則に違反しているという指摘でもない（F1-Gate.com）。"
    ],
    "rule": "テクニカルレギュレーション C3.8.1（サイドポッド）",
    "examples": [
@@ -9219,6 +9280,10 @@
     {
      "t": "メルセデスは、セパンでサイドポッドの形と、ディフューザー周りのフロアを大きく改めたと報じられた。",
      "u": "/news/en-rn365-mercedes-w17-weakness-upgrade/"
+    },
+    {
+     "t": "FIAがレッドブル独自のサイドポッド技術を2027年から規制する方針と報道（許容値20mm→5mmの案、正式発表ではない）",
+     "u": "/news/ja-f1gate-fia-redbull-sidepod-2027/"
     }
    ],
    "see": [
@@ -9262,9 +9327,14 @@
      "name": "FIA",
      "title": "2026 F1 Regulations - Section C Technical（Issue 17, 2026年4月）",
      "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA レッドブルF1の独自サイドポッド技術を2027年から規制へ（2026年10月15日、Crash.net・AutoRacer.itの報道として。正式発表ではない）",
+     "url": "https://f1-gate.com/redbull/228754.html"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "cooling",
@@ -9933,7 +10003,7 @@
    "body": [
     "V8時代は、2006年から2013年までの8シーズンだ。排気量は2.4リッター。それまでの3.0リッターV10より、気筒が2つ減って小さくなった。出力は、2005年の930〜960馬力ほどから、2006年は730〜750馬力ほどに下がった。",
     "2007年からは、エンジンの仕様を凍結（新しく作り変えるのを止めること）し、回転数の上限を19,000回転にした。2009年には上限が18,000回転になり、1台が1シーズンに使えるエンジンは8基までになった。2014年からは、1.6リッターV6ターボのハイブリッドに代わった。",
-    "次の規則として、V8を復活させる案が出ている。2026年5月、FIAのビン・スライエム会長は、V8の復活は「時間の問題」だと述べた。目標は2030年で、無理なら2031年だという。",
+    "次の規則として、V8を復活させる案が出ている。2026年5月、FIAのビン・スライエム会長は、V8の復活は「時間の問題」だと述べた。目標は2030年で、無理なら2031年だという。2026年10月13日、ルワンダのキガリで開かれたアフリカGPの発表の場では、新しいV8の導入は「2030年になる」と述べた。車を今より約80kg軽くし、研究開発とエンジンの費用を少なくとも50%減らすことを目指すという。会長は「まだ記者の前で言うべきではないかもしれない」とも話した。FIA、FOM、メーカーからの正式な確認はなく、2030年の導入も細かい規則も、まだ決まっていない（F1-Gate.com、Motorsport-Total.com）。",
     "報じられている案は、3.0リッターのターボV8に、小さな100kWの電動モーターを組み合わせるものだ。まだ提案の段階で、細かい点はFIAとメーカーの話し合いが続いている。2006〜2013年の自然吸気V8とは別物だ。"
    ],
    "examples": [
@@ -9944,6 +10014,14 @@
     {
      "t": "自然吸気のV8案は、市街地コースの騒音規制を理由に見送られたと報じられた。",
      "u": "/news/ja-f1jouhou-v8-engine/"
+    },
+    {
+     "t": "FIA会長、V8エンジン復活は2030年と明言。約80kgの軽量化を目指す（正式な規則ではない）",
+     "u": "/news/ja-f1gate-fia-v8-2030/"
+    },
+    {
+     "t": "新F1エンジンは2030年から？ FIA会長が語る新V8の構想。FIA・FOM・メーカーの正式な確認はなし",
+     "u": "/news/de-motorsporttotal-fia-v8-2030/"
     }
    ],
    "see": [
@@ -9993,10 +10071,20 @@
      "name": "Formula 1",
      "title": "2014 Season Preview - the dawn of a new Formula One era",
      "url": "https://www.formula1.com/en/latest/article/2014-season-preview-the-dawn-of-a-new-formula-one-era.7wgUnlDeHx2CLBJQZM5VuX"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA会長 F1のV8エンジン復活は2030年と明言「80kg軽量化へ」（2026年10月14日）",
+     "url": "https://f1-gate.com/fia/228540.html"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Neue F1-Antriebe schon 2030? Was der FIA-Präsident jetzt verraten hat（2026年10月18日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/neue-f1-antriebe-schon-2030-was-der-fia-praesident-jetzt-verraten-hat-26101801"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "turbo-era-1980s",
@@ -12007,7 +12095,7 @@
    ],
    "short": "FIAがレースを進める管制室。旗やセーフティカーを決める。罰を決めるスチュワードとは別。",
    "body": [
-    "レースコントロールは、グランプリのあいだサーキットでレースを進めるFIAの管制室だ。中心はレースディレクターで、今季はルイ・マルケスが務める。2024年11月にニールス・ヴィティヒが辞任し、ラスベガスGPから交代した。マルケスは「ここには5人いる。ジュネーブにはさらに人がいて、第2のレースコントロールがある」と話す。ジュネーブの「リモート・オペレーション・センター」は、2021年のアブダビGPの混乱のあとに作られた。助言をする役で、規則上の権限はなく、過去の判断を見直すこともできない。",
+    "レースコントロールは、グランプリのあいだサーキットでレースを進めるFIAの管制室だ。中心はレースディレクターで、今季はルイ・マルケスが務める。2024年11月にニールス・ヴィティヒが辞任し、ラスベガスGPから交代した。マルケスは2026年1月、「ここには5人いる。ジュネーブにはさらに人がいて、第2のレースコントロールがある」と話していた。この「リモート・オペレーション・センター」は、2021年のアブダビGPの混乱のあとにジュネーブで作られた。2026年のオランダGPからは、英国ビギンヒルにあるF1のメディア＆テクノロジーセンターの中で動いている。助言をする役で、規則上の権限はなく、過去の判断を見直すこともできない。",
     "規則では、レースディレクターは、次の事柄で優先的な権限を持つ。練習・予選・スプリント・決勝の進行とタイムテーブルの管理、車を止めさせること、走行の中断と正しい再開手順、スタートの手順、セーフティカーの使用だ。コース上で車が走る間は、クラークオブザコース（コース責任者）と、スチュワード議長と、無線でいつでも連絡が取れる状態にいなければならない。",
     "罰を決めるのはレースコントロールではなく、スチュワードだ。レースディレクターは、事故や違反の疑いをスチュワードに報告できる。調べるかどうかは、スチュワードが決める。今季のバクーでは、SCのボードと黄旗がコース上で示された時点で、レースコントロールはまだSCを出していなかった。この矛盾にスチュワードも混乱を認めたが、振られた黄旗は守らなければならないと判断した。"
    ],
@@ -12066,9 +12154,19 @@
      "name": "formula1.com",
      "title": "Bortoleto handed penalty after yellow flag infringement in Azerbaijan GP",
      "url": "https://www.formula1.com/en/latest/article/bortoleto-handed-penalty-after-yellow-flag-infringement-in-azerbaijan-gp.4IRPm8CEnPZMAjmjCeBgGI"
+    },
+    {
+     "name": "Coffee Corner Motorsport",
+     "title": "FIA Remote Operations Centre Opens at Biggin Hill（2026年10月20日、2026年オランダGPから稼働、F1のメディア＆テクノロジーセンター内）",
+     "url": "https://coffeecornermotorsport.com/fia-remote-operations-centre/"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "FIA launch new high-tech Remote Operations Centre to improve Formula 1 race officiating（2026年10月20日）",
+     "url": "https://www.grandprix247.com/formula-1-news/fia-launch-new-high-tech-remote-operations-centre-opens-to-improve-formula-1-race-officiating"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "sponsor",
@@ -13429,7 +13527,7 @@
    "body": [
     "ワールドチャンピオンは、ドライバーズ選手権で、1シーズンの合計ポイントが最も多いドライバー。決勝とスプリントで取ったポイントを、全部足す。今のF1には、成績の悪いレースを除く「捨てレース」はない（Honda）。点が並んだときは、優勝の回数などで順位を決める（→同点のときの順位の決め方）。",
     "最終戦まで決まらない年もある。2025年は、最終戦のアブダビGPのあとで、ノリスが423点、フェルスタッペンが421点になり、ノリスが2点差で初めてチャンピオンになった。2010年に今の25点制が始まってから、最小の差だった。",
-    "ここまでにチャンピオンになったのは35人。最多はシューマッハとハミルトンの7回だ（→最多タイトルの記録）。最年少は、2010年のベッテルの23歳133日。チャンピオンは翌年、ゼッケン1番を使える。2026年は、ノリスが4番から1番を使うことにした。ハミルトンは、チャンピオンのときも44番を使い続けた。",
+    "ここまでにチャンピオンになったのは35人。最多はシューマッハとハミルトンの7回だ（→最多タイトルの記録）。最年少は、2010年のベッテルの23歳134日。チャンピオンは翌年、ゼッケン1番を使える。2026年は、ノリスが4番から1番を使うことにした。ハミルトンは、チャンピオンのときも44番を使い続けた。",
     "2026年は、10月4日のセパン終了時点で、アントネッリが320点で首位、ラッセルが236点で2位。差は84点で、3位ハミルトンは214点だ。決まる時期の考え方は「タイトル決定の条件」を見る。"
    ],
    "examples": [
@@ -13494,9 +13592,19 @@
      "name": "GPblog",
      "title": "Antonelli can't be crowned in Singapore, but Russell's DNF puts Austin in play as Hamilton keeps the title maths alive",
      "url": "https://www.gpblog.com/en/news/antonelli-cant-be-crowned-in-singapore-but-russells-dnf-puts-austin-in-play-as-hamilton-keeps-the-title-maths-alive"
+    },
+    {
+     "name": "Guinness World Records",
+     "title": "Youngest Formula One World Champion（23歳134日、2010年11月14日アブダビGP）",
+     "url": "https://www.guinnessworldrecords.com/world-records/youngest-formula-one-world-champion"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "Who are F1's 10 youngest world champions?（23歳134日）",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/who-are-f1s-10-youngest-world-champions"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-10-21"
   },
   {
    "id": "constructors-championship",
@@ -16414,6 +16522,14 @@
     {
      "t": "雨で30分遅れたシンガポールのスプリントは9台がリタイアし、フェルスタッペンが勝った。",
      "u": "/news/ja-f1data-singapore-sprint-digest/"
+    },
+    {
+     "t": "ハジャー、2027年モナコGPのスプリント開催に疑問。スプリントは24戦中6戦から10戦へ",
+     "u": "/news/ja-f1gate-hadjar-monaco-sprint-doubt/"
+    },
+    {
+     "t": "モナコGPはコース変更せず。2027年は6月に史上初のスプリント形式で開催予定",
+     "u": "/news/ja-f1gate-monaco-layout-no-change/"
     }
    ],
    "see": [
@@ -16466,7 +16582,7 @@
      "url": "https://www.esquireindia.co.in/culture/sports/formula-1-2027-calendar-revealed-10-sprint-races-monaco-debut-and-portugal-turkey-return"
     }
    ],
-   "checked": "2026-10-13"
+   "checked": "2026-10-21"
   },
   {
    "id": "pit-loss",
@@ -23178,6 +23294,14 @@
     {
      "t": "セパンでは、リンドブラッドが新しいPU部品を複数入れて最後尾スタートになる。",
      "u": "/news/en-therace-lindblad-back-of-grid-sepang/"
+    },
+    {
+     "t": "ラッセル、次のPU交換による降格は「ラスベガスかも」。メルセデスは落とす場所を選べる",
+     "u": "/news/de-motorsporttotal-russell-engine-penalty-vegas/"
+    },
+    {
+     "t": "ラッセル、エンジン交換で再びグリッド降格へ。追い抜きやすいラスベガスを検討",
+     "u": "/news/ja-f1gate-russell-engine-penalty-vegas/"
     }
    ],
    "see": [
@@ -23210,7 +23334,7 @@
     }
    ],
    "cat": "パワーユニット",
-   "checked": "2026-10-07"
+   "checked": "2026-10-21"
   },
   {
    "id": "rolling-start",
@@ -23577,6 +23701,14 @@
     {
      "t": "セパンの混乱では、雨の低速走行でブースト圧が下がってもMGU-Kが補えない状況が重なったと説明された。",
      "u": "/news/en-therace-software-bug-explained/"
+    },
+    {
+     "t": "アロンソ、シンガポールでホンダPUにターボラグなどのドライバビリティ問題「多くのタイムを失っている」",
+     "u": "/news/ja-f1gate-alonso-honda-drivability/"
+    },
+    {
+     "t": "アロンソのバクーはターボの遅れ低減を狙ったADUO2仕様。ホンダはデータ上の異常を確認できず",
+     "u": "/news/en-therace-alonso-honda-subplot/"
     }
    ],
    "see": [
@@ -23598,7 +23730,7 @@
      "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-2026-starts-much-more-complicated/"
     }
    ],
-   "checked": "2026-10-06"
+   "checked": "2026-10-21"
   },
   {
    "id": "crossover-point",
@@ -24226,7 +24358,16 @@
     "決まりは、事故のたびに厳しくなってきた。2013年のイギリスGPでタイヤの破損が相次いだあと、FIAは内圧や車輪の傾き（キャンバー）の基準を守るよう指示した（F1technical.net）。2021年のアゼルバイジャンGPでの破損のあとも、FIAは内圧と温度の検査を厳しくした（Crash.net）。"
    ],
    "rule": "スポーティングレギュレーション B6.1.3 a)（ピレリの指定）",
-   "examples": [],
+   "examples": [
+    {
+     "t": "アルボン「リアの空気圧が膨らみすぎ」でソフトが長持ち。ピレリはストレートモードの故障に備えて引き上げ",
+     "u": "/news/en-racingnews365-tyre-pressure-ballooned/"
+    },
+    {
+     "t": "アルボン、リアの空気圧上昇を問題視「ソフトがハードのようだ」",
+     "u": "/news/ja-f1gate-albon-tyre-pressure/"
+    }
+   ],
    "see": [
     "tyre-blankets",
     "pirelli",
@@ -24250,7 +24391,7 @@
      "url": "https://www.f1technical.net/news/18561"
     }
    ],
-   "checked": "2026-10-06"
+   "checked": "2026-10-21"
   },
   {
    "id": "curfew",
@@ -24735,7 +24876,7 @@
    "short": "予定の国やコースで開けなくなったレースを、別の場所で行うこと。大会名を残すこともある。",
    "body": [
     "戦争や災害、感染症などで予定のサーキットが使えなくなると、F1はそのレースを中止するか、別の場所で開く。2026年のセパン開催も、FIAの世界モータースポーツ評議会（WMSC）の最終承認を条件として発表された。",
-    "2026年は、2月28日に始まった中東での武力衝突のため、4月のバーレーンGPとサウジアラビアGPが3月に中止になった。その後、7月に、バーレーンGPをマレーシアのセパンで10月2〜4日に開くと発表された。正式な大会名は「フォーミュラ1 ガルフ・エア・バーレーンGP・イン・マレーシア」で、バーレーンGPの名前を残した。サウジアラビアGPの代わりはない。終盤のカタールとアブダビにも不安があり、イモラが予備の会場として準備を進めている。",
+    "2026年は、2月28日に始まった中東での武力衝突のため、4月のバーレーンGPとサウジアラビアGPが3月に中止になった。その後、7月に、バーレーンGPをマレーシアのセパンで10月2〜4日に開くと発表された。正式な大会名は「フォーミュラ1 ガルフ・エア・バーレーンGP・イン・マレーシア」で、バーレーンGPの名前を残した。サウジアラビアGPの代わりはない。終盤のカタールとアブダビにも不安があり、イモラが予備の会場として準備を進めている。ただし、イモラでの開催は正式には決まっていない。2026年10月には、開催の判断が11月中旬までずれ込む可能性があると英紙テレグラフが報じた（F1-Gate.com）。一方、FIAのビン・スライエム会長は「2つのレースは開催される」と述べた（The Race、10月20日）。",
     "国名と開催地が違うレースは、前にもある。スイスは1955年のル・マン24時間の大事故のあと国内でのレースを禁じ、1982年のスイスGPはフランスのディジョンで開かれた。2020年は新型コロナのためカナダ、アメリカ、メキシコ、ブラジルが中止になり、代わりにニュルブルクリンク（アイフェルGP）、ポルティマン（ポルトガルGP）、イモラ（エミリア・ロマーニャGP）などがカレンダーに入った。"
    ],
    "examples": [
@@ -24750,6 +24891,18 @@
     {
      "t": "中東の情勢悪化で今季はバーレーンとサウジアラビアが中止、F1はイモラを代替会場として準備している。",
      "u": "/news/en-therace-final-races-imola/"
+    },
+    {
+     "t": "FIA会長、カタールとアブダビは「開催される」と明言",
+     "u": "/news/en-therace-fia-adamant-gulf-races/"
+    },
+    {
+     "t": "カタールとアブダビの開催判断が11月中旬まで延びる可能性と英紙が報道。イモラは代替案として準備",
+     "u": "/news/ja-f1gate-qatar-abudhabi-decision-delay/"
+    },
+    {
+     "t": "両戦が中止になれば、最終戦は12月6日のイモラに移る計算",
+     "u": "/news/de-motorsporttotal-qatar-abudhabi-cancel-risk/"
     }
    ],
    "see": [
@@ -24760,7 +24913,7 @@
     "wmsc",
     "home-race"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-10-21",
    "src": [
     {
      "name": "Formula1.com",
@@ -24791,6 +24944,16 @@
      "name": "Sky Sports",
      "title": "Nurburgring, Portugal and Imola races added to F1 2020 calendar",
      "url": "https://www.skysports.com/f1/news/12433/12035235/nurburgring-portugal-and-imola-races-added-to-f1-2020-calendar"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA adamant F1's Qatar and Abu Dhabi GPs will go ahead（2026年10月20日）",
+     "url": "https://www.the-race.com/formula-1/fia-adamant-f1-qatar-abu-dhabi-gp-will-go-ahead/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "F1カタール＆アブダビGP 開催判断が11月中旬まで延期の可能性（2026年10月20日）",
+     "url": "https://f1-gate.com/qatargp/228948.html"
     }
    ]
   },
@@ -26282,14 +26445,23 @@
    "short": "ストレートモードのとき、リアウイングのフラップが後ろへ大きく回転する方式の呼び名。",
    "body": [
     "2026年のアクティブエアロでは、決められた直線でウイングのフラップを動かし、空気抵抗を減らす（→ストレートモードとコーナーモード）。多くの方式はフラップを開いて寝かせるが、フェラーリはフラップを後ろへ回転させる方式を、シーズン前のバーレーンのテストで見せた。バスール代表が、1990年代半ばにはやったダンスにちなんで冗談で「マカレナ」と呼び、この名前が広まった（PlanetF1）。",
-    "フェラーリは3月の中国GPのFP1で短く使ったあと、その週末は外した。走った距離が足りないことと、動かす装置が1つしかない点への不安が理由だった（PlanetF1）。レッドブルも4月22日のシルバーストンでの走行で、似た考え方のウイングを使ったとみられている（GrandPrix.com）。7月のハンガリーGPでは、マクラーレンも自前の回転式をフリー走行で試し、実戦に使う見通しを示した（autosport web）。",
+    "フェラーリは3月の中国GPのFP1で短く使ったあと、その週末は外した。走った距離が足りないことと、動かす装置が1つしかない点への不安が理由だった（PlanetF1）。レッドブルも4月22日のシルバーストンでの走行で、似た考え方のウイングを使ったとみられている（GrandPrix.com）。7月のハンガリーGPでは、マクラーレンも自前の回転式をフリー走行で試し、実戦に使う見通しを示した（autosport web）。The Raceによると、マクラーレンは「Hウイング」と呼ぶこの方式を、イタリアGPで初めてレースに使った。",
     "レッドブルでは、フェルスタッペンの車でリアウイングのトラブルが2度起き、シュピールベルクとシルバーストンでクラッシュした。チームは、2つの原因は別だと説明した。FIAは、安全の決まりを満たしているかを確かめるため、フェラーリとレッドブルに連絡を取った。規則では、2つの位置の切り替えは0.4秒以内と決まっている（Motorsport.com）。",
-    "2026年10月初めには、FIAが示した2027年の技術規則で、2つのモードの切り替えにかけてよい時間が0.4秒から0.3秒に縮むと報じられた。故障したときにコーナーモードへ戻れるよう、対策を強めることも求められるという。回転式はほかの方式より動く量が大きいので、設計の見直しが必要になるかもしれないとの見方も伝えられた（Formula1.it、ScuderiaFans）。"
+    "2026年10月初めには、FIAが示した2027年の技術規則で、2つのモードの切り替えにかけてよい時間が0.4秒から0.3秒に縮むと報じられた。故障したときにコーナーモードへ戻れるよう、対策を強めることも求められるという。回転式はほかの方式より動く量が大きいので、設計の見直しが必要になるかもしれないとの見方も伝えられた（Formula1.it、ScuderiaFans）。The Raceも10月9日、FIAが2027年に向けて規則を変え、切り替えの上限を300ミリ秒にすると伝えた。回転式そのものが禁止されるわけではなく、切り替えが300ミリ秒以内に収まれば使い続けられる（F1-Gate.com）。",
+    "メルセデスは回転式を使っていない。副テクニカルディレクターのレスタは、空気抵抗が減る利点は認めつつ、ストレートモードにするたびにダウンフォースも減ることや予算上限を考えると、作るだけの性能の向上が見込めなかったと説明した。ライバルとの差が縮まれば考え直す可能性もあるという（Formel1.de、2026年10月）。"
    ],
    "examples": [
     {
      "t": "2027年規則の改訂案で、可動ウイングの切り替え時間が400ミリ秒から300ミリ秒に縮み、回転式を使うフェラーリ、レッドブル、マクラーレンは設計の見直しを迫られる可能性があると伝えられた。",
      "u": "/news/it-formula1-2027-macarena-wings-transition-time/"
+    },
+    {
+     "t": "FIA、2027年のリアウイング作動時間を400ミリ秒から300ミリ秒へ短縮。回転式そのものは禁止されない",
+     "u": "/news/ja-f1gate-fia-2027-rear-wing-300ms/"
+    },
+    {
+     "t": "メルセデスW17が回転式リアウイングを採用しない理由を、副テクニカルディレクターのレスタが説明",
+     "u": "/news/de-formel1de-mercedes-no-rotating-wing/"
     }
    ],
    "see": [
@@ -26299,7 +26471,7 @@
     "wing-flap",
     "drag"
    ],
-   "checked": "2026-10-09",
+   "checked": "2026-10-21",
    "src": [
     {
      "name": "PlanetF1",
@@ -26330,6 +26502,21 @@
      "name": "Formula1.it",
      "title": "Regolamento 2027, le ali tipo Macarena saranno penalizzate（2026年10月2日）",
      "url": "https://www.formula1.it/news/32975/1/regolamento-2027-le-ali-tipo-macarena-saranno-penalizzate"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA clampdown on Macarena wings for 2027（2026年10月9日、400ms→300ms、マクラーレンの「H-wing」はイタリアGPでレース初投入）",
+     "url": "https://the-race.com/formula-1/fia-clampdown-macarena-f1-rear-wings-for-2027"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA 2027年F1リアウイング規則を厳格化 フェラーリの独自機構に影響（2026年10月16日）",
+     "url": "https://f1-gate.com/fia/227852.html"
+    },
+    {
+     "name": "Formel1.de",
+     "title": "Formel 1 Technik: Warum Mercedes noch keinen rotierenden Heckflügel hat（2026年10月20日）",
+     "url": "https://www.formel1.de/news/news/2026-10-20/formel-1-technik-warum-mercedes-noch-keinen-rotierenden-heckfluegel-hat"
     }
    ]
   },
@@ -26357,12 +26544,28 @@
    "body": [
     "アフリカで開かれた世界選手権のレースは、モロッコと南アフリカだ。モロッコGPは1958年に1度だけ、カサブランカ近くのアイン・ディアブで開かれた。その年の最終戦で、2位に入ったホーソーンがチャンピオンを決めた。",
     "南アフリカGPは、1962年にイーストロンドンで世界選手権のレースとして始まり、1967年からはヨハネスブルグ近くのキャラミで開かれた。1981年は、FISAとFOCAの対立のため、選手権に数えないレースになった。アパルトヘイト（人種隔離政策）のため1986〜1991年は開かれず、1992年と1993年に戻った。1993年はウィリアムズ・ルノーのプロストが勝ち、これがF1のアフリカでの最後のレースになっている。",
-    "F1はアフリカへの復帰を目指している。2024年12月、ルワンダのカガメ大統領は、首都キガリで開かれたFIAの総会で、グランプリの開催に名乗りを上げると発表した。2026年10月6日には、RacingNews365が、ルワンダでの開催で合意に達したと報じた。早ければ2030年に、キガリから約40kmのブゲセラ国際空港の近くに造る新しいサーキットで開き、設計は元F1ドライバーのアレクサンダー・ブルツの会社が担うという。ただし、F1の正式な発表はまだない（2026年10月9日時点）。"
+    "F1はアフリカへの復帰を目指している。2024年12月、ルワンダのカガメ大統領は、首都キガリで開かれたFIAの総会で、グランプリの開催に名乗りを上げると発表した。2026年10月6日には、RacingNews365が、ルワンダでの開催で合意に達したと報じた。そして10月13日、F1はルワンダと10年契約を結んだと発表した。キガリの南約40kmのブゲセラに新しく造るサーキットで、2030年代の初めから開く。最初の開催日は後で発表される（The Race）。設計は、元F1ドライバーのアレクサンダー・ブルツの会社が、ティルケ・エンジニアリングと組んで担う（PlanetF1）。実現すれば、1993年の南アフリカGP以来のアフリカでのレースになる。"
    ],
    "examples": [
     {
      "t": "F1がルワンダでの開催で合意間近と報じられた。早ければ2030年で、ブゲセラ空港の近くに新しいサーキットを造るという（正式発表はまだ）。",
      "u": "/news/de-motorsport-total-rwanda-gp-deal/"
+    },
+    {
+     "t": "F1がルワンダと10年契約。2030年代初頭にアフリカへ復帰",
+     "u": "/news/en-therace-f1-rwanda-african-gp/"
+    },
+    {
+     "t": "設計者のブルツが語るルワンダの新コース。高低差197mとオーバーテイク重視の設計",
+     "u": "/news/en-therace-rwanda-track-wurz/"
+    },
+    {
+     "t": "ルワンダでのアフリカGP開催に人権団体が抗議（キガリで10年契約）",
+     "u": "/news/ja-f1gate-rwanda-gp-amnesty/"
+    },
+    {
+     "t": "ハミルトン、F1のアフリカ復帰を歓迎「最も重要な大陸」",
+     "u": "/news/de-motorsporttotal-hamilton-africa-gp/"
     }
    ],
    "see": [
@@ -26371,7 +26574,7 @@
     "race-relocation",
     "world-champion"
    ],
-   "checked": "2026-10-09",
+   "checked": "2026-10-21",
    "src": [
     {
      "name": "RaceFans",
@@ -26402,6 +26605,16 @@
      "name": "GPblog",
      "title": "New African Grand Prix could get the green light for 2030（2026年10月6日）",
      "url": "https://www.gpblog.com/en/rumors/new-african-grand-prix-could-get-the-green-light-for-2030"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 to return to Africa with new race in Rwanda（2026年10月13日、10年契約、キガリの南約40km、開始時期は未定）",
+     "url": "https://www.the-race.com/formula-1/f1-to-return-to-africa-with-new-race-in-rwanda/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 makes historic announcement with African Grand Prix confirmed（2026年10月13日、ブルツの会社とティルケ・エンジニアリングが設計）",
+     "url": "https://www.planetf1.com/news/african-grand-prix-f1-calendar"
     }
    ]
   },
@@ -27987,6 +28200,1712 @@
      "url": "https://www.formula1.com/en/latest/article/ferrari-confirm-signing-of-former-mercedes-duo-as-jerome-dambrosio-appointed.21mpdWG6qAciGCByn2eLjU"
     }
    ]
+  },
+  {
+   "id": "calibration",
+   "term": "キャリブレーション",
+   "cat": "パワーユニット",
+   "aliases": [
+    "calibration",
+    "PUの制御の調整",
+    "エンジンの制御設定",
+    "きゃりぶれーしょん"
+   ],
+   "words": [
+    "制御の設定",
+    "燃焼の制御",
+    "ソフトでの改良",
+    "部品を変えない改良",
+    "エンジンの熟成"
+   ],
+   "short": "パワーユニットの部品を変えずに、燃焼やエネルギーの制御の設定を詰める作業。",
+   "body": [
+    "キャリブレーションは、パワーユニット（PU）の作動条件を調整する作業だ。燃焼やエネルギーの制御を最適にして、エンジンが設計どおりの力を出せるようにする（F1-Gate.com）。部品そのものは変えず、使い方の設定を詰める。英The Raceによると、出力、燃料の使い方、エネルギーの回収、電気の使い方（デプロイ）のバランスを取る細かい作業だ。",
+    "2026年は、この作業が勢力図に関わった。レッドブル・パワートレインズ（RBPT）のPUは、FIAの分析で2度、基準のエンジンと判定された。このため ADUO で新しい部品を入れることはできない（The Race）。RBPTのテクニカルディレクター、ホジキンソンは、燃料サプライヤーのエクソンモービルと進めたキャリブレーションで、出力、燃費、回生、デプロイのバランスが良くなったと説明した。開幕のときは「かなり未成熟なキャリブレーション」で、バクーからセパンにかけて理解が大きく進んだという（F1-Gate.com、The Race）。",
+    "ホジキンソンは、キャリブレーションだけでも今季まだ伸びる余地があると見ている。一方で2027年は燃料流量とターボの過給圧の決まりが変わる。このため燃焼の仕組みについては「ある意味でもう一度取り組み直す年になる」と話した（The Race、F1-Gate.com）。"
+   ],
+   "examples": [
+    {
+     "t": "レッドブル、ADUOなしでPUを進化させた方法　カギはキャリブレーション",
+     "u": "/news/en-therace-redbull-engine-calibration/"
+    },
+    {
+     "t": "レッドブルのホジキンソン技術責任者、開幕時は「かなり未成熟なキャリブレーション」だったと説明",
+     "u": "/news/ja-f1gate-redbull-pu-hodgkinson/"
+    }
+   ],
+   "see": [
+    "development-freeze",
+    "aduo",
+    "energy-management",
+    "fuel-supplier"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "How Red Bull has improved its F1 engine without ADUO（2026年10月15日）",
+     "url": "https://www.the-race.com/formula-1/key-gains-red-bull-has-made-with-its-race-winning-f1-engine/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "レッドブルF1製PU 技術責任者が語る開幕時のパフォーマンス不足と改善の舞台裏（2026年10月18日）",
+     "url": "https://f1-gate.com/redbull/228871.html"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "boost-pressure",
+   "term": "過給圧",
+   "cat": "パワーユニット",
+   "aliases": [
+    "ブースト圧",
+    "boost pressure",
+    "ターボ圧",
+    "かきゅうあつ"
+   ],
+   "words": [
+    "ターボの圧力",
+    "吸気の圧力",
+    "4.8バール",
+    "2027年のエンジン",
+    "燃焼"
+   ],
+   "short": "ターボチャージャーがエンジンに送り込む空気の圧力。2026年の規則には上限がある。",
+   "body": [
+    "過給圧は、ターボチャージャーがエンジンに送り込む空気の圧力だ。ターボチャージャーは排気の力で空気を圧縮し、エンジンへ送る。FIAが2024年に出した2026年用のパワーユニット規則では、エンジンに入る空気の圧力は、いつでも4.8バール（絶対圧）未満でなければならない。圧力を上げる圧縮機は、1段式のものを1つだけ使える。",
+    "2027年には、この決まりも変わる。英The Raceは、新しい燃料流量の決まりと過給圧の変更で、各メーカーのPUがある程度仕切り直しになると書いた。FIAは2026年6月、2027年と2028年に内燃エンジンの出力と燃料のエネルギー流量を調整し、内燃エンジンと電気の受け持ちを段階的に見直すと発表した。",
+    "レッドブル・パワートレインズのホジキンソンは、2027年に向けて、燃焼の仕組みを扱いやすくする部品の変更を予定していると話している（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "レッドブルのPUはなぜ進歩したか　2027年の燃料流量とターボ過給圧の変更に向けたハード改良も",
+     "u": "/news/en-therace-redbull-pu-gains/"
+    }
+   ],
+   "see": [
+    "turbo",
+    "fuel-flow",
+    "calibration"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Power Unit Technical Regulations, Issue 6（2024年3月29日）",
+     "url": "https://www.fia.com/sites/default/files/fia_2026_formula_1_technical_regulations_pu_-_issue_6_-_2024-03-29.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "Agreement reached on proposed regulatory changes for 2027 and 2028（2026年6月10日）",
+     "url": "https://www.fia.com/news/agreement-reached-proposed-regulatory-changes-2027-and-2028"
+    },
+    {
+     "name": "Formula 1",
+     "title": "FIA's WMSC ratifies F1 regulatory changes for 2027 and 2028（2026年6月23日）",
+     "url": "https://www.formula1.com/en/latest/article/fias-wmsc-ratifies-f1-regulatory-changes-for-2027-and-2028.ACyRcPvBKo8LRiOleCSJU"
+    },
+    {
+     "name": "The Race",
+     "title": "How Red Bull has improved its F1 engine without ADUO（2026年10月15日）",
+     "url": "https://www.the-race.com/formula-1/key-gains-red-bull-has-made-with-its-race-winning-f1-engine/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "fuel-supplier",
+   "term": "燃料サプライヤー",
+   "cat": "パワーユニット",
+   "aliases": [
+    "燃料供給会社",
+    "燃料パートナー",
+    "fuel supplier",
+    "ねんりょうさぷらいやー"
+   ],
+   "words": [
+    "燃料会社",
+    "石油会社",
+    "ペトロナス",
+    "シェル",
+    "エクソンモービル",
+    "アラムコ"
+   ],
+   "short": "チームやパワーユニットのメーカーと組んで、燃料を供給する会社。",
+   "body": [
+    "燃料サプライヤーは、F1チームやパワーユニットのメーカーに燃料を供給する会社だ。2026年からは、全車が先進的な持続可能燃料を使う。FIAによると、燃料は食料にならないバイオマスや、生物由来でない再生可能な原料、都市ごみから作り、FIAがそれを確かめる（GPblogが引用）。",
+    "シーズン前の報道では、2026年の組み合わせは次のとおりだ。ペトロナスはメルセデス、マクラーレン、ウィリアムズ、アルピーヌ。シェルはフェラーリ、ハース、キャデラック。エクソンモービルはレッドブルとレーシングブルズ。アラムコはアストンマーティン。アウディはbpと組み、カストロールを通じて燃料を受ける（GPblog、Scuderia Fans）。",
+    "Scuderia Fansは、燃料の違いで出力にはっきり差が出ることがあり、燃料と部品の組み合わせがこれまで以上に大事になったと書いた。レッドブル・パワートレインズのホジキンソンは、エクソンモービルと一緒に進めたキャリブレーションが今季のPUの伸びにつながったと説明している（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "レッドブル、出力・燃費・回生と展開のバランスを燃料サプライヤーと詰めてPUを改善",
+     "u": "/news/en-therace-redbull-engine-calibration/"
+    }
+   ],
+   "see": [
+    "sustainable-fuel",
+    "calibration"
+   ],
+   "src": [
+    {
+     "name": "GPblog",
+     "title": "The brands inside the F1 power unit: teams fuel suppliers for 2026（2025年12月23日）",
+     "url": "https://www.gpblog.com/en/news/the-brands-inside-the-f1-power-unit-teams-fuel-suppliers-for-2026"
+    },
+    {
+     "name": "Scuderia Fans",
+     "title": "F1 fuel suppliers for 2026: Ferrari sticks with Shell, but rivals choose differently（2026年1月7日）",
+     "url": "https://scuderiafans.com/f1-fuel-suppliers-for-2026-ferrari-sticks-with-shell-but-rivals-choose-differently/"
+    },
+    {
+     "name": "The Race",
+     "title": "How Red Bull has improved its F1 engine without ADUO（2026年10月15日）",
+     "url": "https://www.the-race.com/formula-1/key-gains-red-bull-has-made-with-its-race-winning-f1-engine/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "aero-balance",
+   "term": "空力バランス",
+   "cat": "マシンと空力",
+   "aliases": [
+    "エアロバランス",
+    "aero balance",
+    "aerodynamic balance",
+    "空力の前後配分",
+    "くうりきばらんす"
+   ],
+   "words": [
+    "前寄り",
+    "後ろ寄り",
+    "フロントが強い",
+    "乗りにくい",
+    "バランスが崩れた"
+   ],
+   "short": "ダウンフォースが前輪側と後輪側にどう分かれているか。量が増えても、配分がずれると乗りにくくなる。",
+   "body": [
+    "空力バランスは、ダウンフォースが前輪と後輪にどう配分されているかを表す。前が強すぎるとオーバーステアの方向に、後ろが強すぎるとアンダーステアの方向に傾く。主に前後の翼で調整する（formula1-dictionary.net）。ブレーキの力の前後配分を表すブレーキバランスとは別のものだ。",
+    "2026年、メルセデスはセパンで大型アップグレードを入れた。ダウンフォースは予想どおり増えたが、前側の増え方が想定より大きく、バランスが前に寄りすぎた（F1-Gate.com、独Motorsport-Total.com）。副テクニカルディレクターのレスタは「フロントは強くなった。もしかすると予想より少し多いくらいだ」と話した（Motorsport-Total.com）。伊Formula1.itは、前寄りになりすぎてコーナーの入り口で安定を失ったと書いている。",
+    "シンガポールでは、予選の前にアントネッリの車の車高を上げ、空力バランスを後ろへ移した。理論上の一番速い性能は少し犠牲にしたが、バランスは穏やかになったという（英The Race）。F1-Gate.comは、W17の課題はダウンフォースの不足ではなく、増えた力を適切なバランスで使い切ることだったとまとめている。"
+   ],
+   "examples": [
+    {
+     "t": "メルセデスF1、W17の空力バランス問題を特定 アメリカGPで対策",
+     "u": "/news/ja-f1gate-mercedes-w17-balance-cause/"
+    },
+    {
+     "t": "メルセデスの新アップグレードがW17を乗りにくくした理由　前寄りに偏った空力バランス",
+     "u": "/news/de-motorsporttotal-mercedes-upgrade-harder-to-drive/"
+    },
+    {
+     "t": "フェラーリ、アメリカGPの新フロアでダウンフォースと空力バランスの改善を狙う",
+     "u": "/news/en-therace-ferrari-austin-upgrade/"
+    }
+   ],
+   "see": [
+    "downforce",
+    "understeer",
+    "oversteer",
+    "brake-balance",
+    "upgrade",
+    "car-operating-window"
+   ],
+   "src": [
+    {
+     "name": "formula1-dictionary.net",
+     "title": "Aerodynamic Balance in F1: Front-to-Rear Downforce",
+     "url": "https://www.formula1-dictionary.net/f1-aerodynamic-balance/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "メルセデスF1 W17の空力バランス問題を特定 アメリカGPで対策（2026年10月18日）",
+     "url": "https://f1-gate.com/mercedes-benz/229058.html"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Warum das Mercedes-Upgrade das Auto schwerer zu fahren macht（2026年10月19日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/warum-das-mercedes-upgrade-das-auto-schwerer-zu-fahren-macht-26101905"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "F1, paradosso Mercedes: le novità migliori del previsto hanno sbilanciato la W17（2026年10月17日）",
+     "url": "https://www.formula1.it/news/33302/1/f1-paradosso-mercedes-le-novita-migliori-del-previsto-hanno-sbilanciato-la-w17"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Mercedes should be worried about F1 2027（2026年10月19日）",
+     "url": "https://www.the-race.com/formula-1/why-mercedes-should-be-worried-about-f1-2027/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "car-operating-window",
+   "term": "マシンの作動領域",
+   "cat": "マシンと空力",
+   "aliases": [
+    "作動領域",
+    "空力の作動領域",
+    "作動ウインドウ",
+    "car operating window",
+    "さどうりょういき"
+   ],
+   "words": [
+    "性能を引き出せる幅",
+    "扱いやすさ",
+    "ピーキー",
+    "車高の変化",
+    "姿勢の変化"
+   ],
+   "short": "車高や姿勢、条件が変わっても、マシンが性能をきちんと出せる幅。狭いと少しのずれで大きく遅くなる。",
+   "body": [
+    "マシンの作動領域は、マシンが性能をきちんと出せる条件の幅のことだ。タイヤの作動温度域（ウィンドウ）とは別のものだ。とくにフロアは、高速で空力の力がかかって車高が変わったり、ブレーキング・加速・コーナリングで姿勢が変わったりすると、床下の空気の流れが変わる（F1-Gate.com）。この幅が広いと、条件が変わっても空力が安定して働く。",
+    "幅が狭いと、少し条件が外れただけで大きく遅くなる。ピアストリはマクラーレンのMCL40について「かなり遅いか、本当に速いかのどちらかで、その中間がほとんどない」と話した（F1-Gate.com）。メルセデスはセパンのアップグレードで空力バランスが前に寄りすぎ、作動領域が大きく狭まった（独Motorsport-Total.com）。副テクニカルディレクターのレスタは、車を走らせる領域を中心に戻す必要があると話している（Motorsport-Total.com、伊Formula1.it）。",
+    "反対に、領域を広げることを狙う改良もある。フェラーリがアメリカGPに持ち込む新しいフロアは、作動領域を広げ、さまざまな条件で空力を安定させる狙いだと、伊AutoRacerの報道としてF1-Gate.comが伝えた。"
+   ],
+   "examples": [
+    {
+     "t": "メルセデスの新アップグレード、空力バランスが前に寄りすぎて作動領域が狭まる",
+     "u": "/news/de-motorsporttotal-mercedes-upgrade-harder-to-drive/"
+    },
+    {
+     "t": "フェラーリのアメリカGP向け新フロア、作動領域を広げる狙いと報道",
+     "u": "/news/ja-f1gate-ferrari-austin-final-floor/"
+    },
+    {
+     "t": "ピアストリ、MCL40は性能を引き出せる領域が狭いと明かす",
+     "u": "/news/ja-f1gate-piastri-mercedes-corner-entry/"
+    },
+    {
+     "t": "セパンの荒れた路面と暑さで、多くの車が最適な作動領域から外れたという説",
+     "u": "/news/en-therace-weird-car-theory/"
+    }
+   ],
+   "see": [
+    "operating-window",
+    "ride-height",
+    "aero-balance"
+   ],
+   "src": [
+    {
+     "name": "F1-Gate.com",
+     "title": "フェラーリF1 アメリカGPで今季最後の大型アップデート 新フロア投入へ（2026年10月19日）",
+     "url": "https://f1-gate.com/ferrari/228926.html"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "オスカー・ピアストリ メルセデスF1のコーナー進入性能に羨望「僕たちにはない自信」（2026年10月19日）",
+     "url": "https://f1-gate.com/oscar-piastri/229230.html"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Warum das Mercedes-Upgrade das Auto schwerer zu fahren macht（2026年10月19日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/warum-das-mercedes-upgrade-das-auto-schwerer-zu-fahren-macht-26101905"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "F1, paradosso Mercedes: le novità migliori del previsto hanno sbilanciato la W17（2026年10月17日）",
+     "url": "https://www.formula1.it/news/33302/1/f1-paradosso-mercedes-le-novita-migliori-del-previsto-hanno-sbilanciato-la-w17"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "actuator",
+   "term": "アクチュエーター",
+   "cat": "マシンと空力",
+   "aliases": [
+    "アクチュエータ",
+    "actuator",
+    "作動装置",
+    "あくちゅえーたー"
+   ],
+   "words": [
+    "翼を動かす装置",
+    "可動翼",
+    "切り替え時間",
+    "300ミリ秒",
+    "駆動機構"
+   ],
+   "short": "動く翼のフラップなどを、指令どおりに実際に動かす装置。",
+   "body": [
+    "アクチュエーターは、部品を実際に動かす装置だ。2026年のF1では、アクティブエアロの翼のフラップを動かす。FIAの技術規則では、リアウイングのフラップは1つのアクチュエーターで、フロントウイングは左右合わせて2つまでのアクチュエーターで動かす。リアウイングのフラップの調整は、FIAの標準ECUだけが制御できる。",
+    "規則は、2つの決まった位置の間の切り替え時間も決めている。2026年は400ミリ秒以内で、標準ECUが切り替えの指令を出した瞬間から測る。リアウイングは、故障したときにフラップがコーナーモードの位置に戻るように作らなければならない。英The Raceによると、2027年はリアウイングの切り替えが300ミリ秒以内になる。",
+    "F1-Gate.comは、短い時間で動かし終えるには、アクチュエーターの作動速度や機構の設計、動く部分への負荷を考える必要があるとした。そのうえで、駆動機構の改良や動く部分の軽量化、回転角度の見直しが必要になる可能性があると書いた。一方でThe Raceは、関係者の話として、フェラーリ、レッドブル、マクラーレンのいまの設計は大きく変えずに新しい上限を守れるはずだと伝えた。"
+   ],
+   "rule": "テクニカルレギュレーション（2026年 第20版）C3.10.10 o) p)、C3.11.6 d) e) i)",
+   "examples": [
+    {
+     "t": "FIA、2027年のリアウイング作動時間を400ミリ秒から300ミリ秒へ短縮　フェラーリの回転式ウイングに影響か",
+     "u": "/news/ja-f1gate-fia-2027-rear-wing-300ms/"
+    }
+   ],
+   "see": [
+    "active-aero",
+    "straight-corner-mode",
+    "macarena-wing"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C [Technical] – Issue 20（2026年8月5日）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_20_-_2026-08-05.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA clampdown on Macarena wings for 2027（2026年10月9日）",
+     "url": "https://www.the-race.com/formula-1/fia-clampdown-macarena-f1-rear-wings-for-2027/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA 2027年F1リアウイング規則を厳格化 フェラーリの独自機構に影響（2026年10月16日）",
+     "url": "https://f1-gate.com/fia/227852.html"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "downwash",
+   "term": "ダウンウォッシュ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "downwash",
+    "ダウンウォッシュ型",
+    "下向きの気流",
+    "だうんうぉっしゅ"
+   ],
+   "words": [
+    "サイドポッドの形",
+    "サイドポッド上面",
+    "空気を下へ流す",
+    "ディフューザー",
+    "レッドブル型"
+   ],
+   "short": "サイドポッドの上面などで、車体の上を流れる空気を下向きに導く空力の考え方。",
+   "body": [
+    "ダウンウォッシュは、車体の上を流れる空気を下向きに導く空力の考え方だ。とくに、サイドポッドの上面を後ろへ向かって下げる形をいう。英The Raceのヒューズは、ポッドを下向きに傾けると圧力が下がり、そばの流れが速くなると説明している。サイドポッドの下とフロアの端を通った流れは後輪の前で合わさり、タイヤとディフューザーのすき間へ送られる（The Race、2026年2月）。空気を車の外側へ押し出すアウトウォッシュとは、流す向きが違う。",
+    "レッドブルは2022年の初めからこの考え方を使った。のちにほとんどのチームが同じ道を選び、メルセデスは「ゼロポッド」から、フェラーリは内側へ流す「バスタブ」型から切り替えた（Autosport）。",
+    "2026年の車にも違いがある。ヒューズは、レッドブルRB22は強く下へ流す小さなポッド、フェラーリは大きく下へ流す上面、アストンマーティンAMR26はダウンウォッシュが控えめだと書いた（The Race）。フェラーリがアメリカGPに持ち込む新しいフロアでは、ダウンウォッシュを極端に強める設計は採らない見通しだと、伊AutoRacerの報道としてF1-Gate.comが伝えた。"
+   ],
+   "examples": [
+    {
+     "t": "フェラーリのアメリカGP向け新フロア、ダウンウォッシュを極端に強める設計は採らない見通し",
+     "u": "/news/ja-f1gate-ferrari-austin-final-floor/"
+    }
+   ],
+   "see": [
+    "outwash",
+    "sidepod",
+    "floor-diffuser"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Mark Hughes explains F1 2026's key car design differences（2026年2月10日）",
+     "url": "https://www.the-race.com/formula-1/mark-hughes-explains-f1-2026-key-car-design-differences/"
+    },
+    {
+     "name": "Autosport",
+     "title": "Why Ferrari's new F1 sidepods are not a straight Red Bull copy",
+     "url": "https://autosport.motorsport.com/f1/news/why-ferraris-new-f1-sidepods-are-not-a-straight-red-bull-copy/10477350/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "フェラーリF1 アメリカGPで今季最後の大型アップデート 新フロア投入へ（2026年10月19日）",
+     "url": "https://f1-gate.com/ferrari/228926.html"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "tyre-wake",
+   "term": "タイヤのウェイク",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ホイールウェイク",
+    "tyre wake",
+    "wheel wake",
+    "前輪の後流",
+    "たいやのうぇいく"
+   ],
+   "words": [
+    "前輪の乱流",
+    "タイヤの後ろの乱れ",
+    "床下への影響",
+    "空気抵抗",
+    "タイヤスクワート"
+   ],
+   "short": "回るタイヤの後ろにできる乱れた空気の流れ。床下に入るとダウンフォースを減らす。",
+   "body": [
+    "タイヤのウェイクは、回るタイヤの後ろにできる乱れた空気の流れ（後流）だ。タイヤが押しのけた空気は、タイヤの後ろの空いた所を埋めようとする。英The Raceのアンダーソンは、タイヤが空気をさえぎることが、車の空気抵抗の4割ほどを占めるだろうと書いている。",
+    "とくに問題になるのが前輪のウェイクだ。The Raceのヒューズは、前輪の乱れた流れはできれば車から外へ押し出して落ち着かせたいと書いた。床下へ引き込むと、ダウンフォースが減るからだ。アウトウォッシュは、そのための工夫だ。後ろの車が受けるダーティエアとは別の話で、こちらは自分の車の中での空気の扱いだ。",
+    "アンダーソンは2026年10月、レッドブルとメルセデスの差を部位ごとに比べた。レッドブルは前輪の乱れを整えるために、より多くの工夫をしているように見えるという。たとえばフロアの取り付け部の途中に小さな羽根を付け、フロントウイングからの流れを整えている。ただし、どちらが優れているかを決めるには、風洞とCFDでの長い検証が必要だとしている（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "ガリー・アンダーソン解説、前輪のウェイク処理がレッドブルとメルセデスの差を生んでいる",
+     "u": "/news/en-therace-redbull-mercedes-details/"
+    }
+   ],
+   "see": [
+    "outwash",
+    "front-wing",
+    "bargeboard",
+    "dirty-air"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Gary Anderson: The details that really separate Red Bull and Mercedes（2026年10月20日）",
+     "url": "https://www.the-race.com/formula-1/details-that-really-separate-red-bull-and-mercedes/"
+    },
+    {
+     "name": "The Race",
+     "title": "Mark Hughes explains F1 2026's key car design differences（2026年2月10日）",
+     "url": "https://www.the-race.com/formula-1/mark-hughes-explains-f1-2026-key-car-design-differences/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "car-concept",
+   "term": "マシンのコンセプト",
+   "cat": "マシンと空力",
+   "aliases": [
+    "車のコンセプト",
+    "設計コンセプト",
+    "設計思想",
+    "car concept",
+    "ましんのこんせぷと"
+   ],
+   "words": [
+    "設計の方向性",
+    "コンセプトの失敗",
+    "来年の車",
+    "作り直し",
+    "考え方"
+   ],
+   "short": "マシンをどう速くするかという設計の土台の考え方。見た目の形より、ダウンフォースをどこでどう生むかが中心。",
+   "body": [
+    "マシンのコンセプトは、車の設計の土台になる考え方だ。メルセデスは、コンセプトは目に見える形の話ではなく、いちばん速い車を作るために各部分がどうあるべきかという理論と理解だと説明している。カギは、どこでどうやってダウンフォースを生むかだという（Motorsport.com）。",
+    "同じ記事によると、メルセデスは2022年、車をできるだけ低く走らせてダウンフォースを狙ったが、跳ねる動き（ポーパシング）で実現できなかった。2023年の車は高く走らせたが、すぐに空力の性能が頭打ちになった。サイドポッドの形よりも、床下の流れやディフューザー、車高のほうが大事だったという。",
+    "2026年の終盤には、次の年に向けてコンセプトを試す動きもある。マクラーレンのステラ代表は、終盤のアップグレードで、来年の車に持ち込む基本的なコンセプトの一部を確かめたいと話した（RacingNews365）。ウィリアムズのサインツは今季の不振について、新しい規則への対応や、今年のマシンのコンセプト、空力、投入のタイミングで大きな間違いをしたと認めた（F1-Gate.com）。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレン、終盤のアップグレードで2027年型に向けた基本コンセプトも検証へ",
+     "u": "/news/en-racingnews365-mclaren-upgrade-vow/"
+    },
+    {
+     "t": "ステラ代表、アップグレードの一部は2027年車のコンセプト検証も兼ねると説明",
+     "u": "/news/de-mst-norris-mclaren-worst-top-team/"
+    },
+    {
+     "t": "サインツ、今季の不振は新規則への読み違いやコンセプト、空力、開発時期の失敗が原因と認める",
+     "u": "/news/ja-f1gate-sainz-budget-cap-review/"
+    }
+   ],
+   "see": [
+    "upgrade",
+    "b-spec",
+    "correlation"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "Why Mercedes' F1 concept switch goes far beyond new sidepods",
+     "url": "https://www.motorsport.com/f1/news/why-mercedes-f1-concept-switch-goes-far-beyond-new-sidepods-/10459954/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "McLaren make upgrade vow to dismiss resurgent Red Bull threat（2026年10月14日）",
+     "url": "https://racingnews365.com/mclaren-make-upgrade-vow-to-dismiss-resurgent-red-bull-threat"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "カルロス・サインツ、F1予算上限の見直しを支持（2026年10月18日）",
+     "url": "https://f1-gate.com/carlossainzjr/228524.html"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "full-throttle",
+   "term": "全開区間",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "全開率",
+    "フルスロットル",
+    "full throttle",
+    "アクセル全開",
+    "ぜんかいくかん"
+   ],
+   "words": [
+    "直線",
+    "ストレートの速さ",
+    "PUの差",
+    "エンジンの差",
+    "GPSデータ"
+   ],
+   "short": "アクセルを踏み切って走る区間。主に直線で、パワーユニットの差が出やすい。",
+   "body": [
+    "全開区間は、ドライバーがアクセルを踏み切って走る区間だ。主に直線にあたる（英The Race）。1周のうち全開で走る割合を全開率という。全開区間では、パワーユニットの力の差がタイムに出やすい。",
+    "The Raceのヒューズは2026年10月、GPSのデータで、アストンマーティンAMR26の遅れを全開区間とそれ以外に分けて調べた。セパンの予選で、アロンソはポールのフェルスタッペンから2.090秒遅れた。そのうち全開区間だけで2.238秒を失っていた。シンガポールでは、遅れの113％がパワーユニット、マイナス13％がシャシーによるものと見積もった。",
+    "ただし、この分け方には限界もある。ヒューズは、走るにつれて路面が速くなる変化の影響が残ることや、ホンダのパワーユニットがMGU-Kを前に置く独特の配置のため、コーナーの速さが実際よりよく見えている可能性にも触れている。2026年の車は、直線の途中で電気が尽きるクリッピングも起こるため、全開でも出力が一定とは限らない。"
+   ],
+   "examples": [
+    {
+     "t": "アストンマーティンAMR26、セパンで全開区間の損失が2.238秒　GPSデータで見るPU差とシャシー性能",
+     "u": "/news/en-therace-aston-pole-potential/"
+    }
+   ],
+   "see": [
+    "high-speed-circuit",
+    "clipping",
+    "speed-trap"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "The extraordinary figures hinting at Aston Martin's pole potential（2026年10月16日）",
+     "url": "https://www.the-race.com/formula-1/aston-martin-f1-pole-potential-extraordinary-figures/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "bumps",
+   "term": "バンプ（路面の凸凹）",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "バンプ",
+    "路面の凸凹",
+    "でこぼこ",
+    "bumps",
+    "bumpy",
+    "ばんぷ"
+   ],
+   "words": [
+    "凸凹",
+    "段差",
+    "路面が荒い",
+    "底を擦る",
+    "背中が痛い"
+   ],
+   "short": "路面の凸凹。車の底が擦れやすくなり、車高の決め方やドライバーの体にも響く。",
+   "body": [
+    "バンプは、路面の凸凹のことだ。凸凹が多いと、車の底が路面に当たりやすくなる。2023年のアメリカGP（COTA）では、ハミルトンとルクレールの車の底板（プランク）がすり減りすぎ、2人とも失格になった。両チームは、でこぼこの路面とスプリント形式の組み合わせが原因だろうと説明した。スプリント形式で、レースの前に車を合わせて確かめる時間が短かったという（Motorsport.com）。",
+    "COTAの凸凹の原因には、いくつかの説明がある。COTAの責任者ボビー・エプスタインは2019年、2015年の洪水で水がコースの下のパイプに沿って流れ、浸食で空洞ができて、隆起と収縮が起きたと話した（PlanetF1）。COTAは2022年1月までに、ターン12〜16を舗装し直し、ターン2と10はコンクリートの土台で補強した（同）。",
+    "2026年も手直しが入る。ウィリアムズのチーフ・トラック・エンジニア、ポール・ウィリアムズによると、コースは凸凹で、地面が動くために頻繁な再舗装が必要になる。今年はターン9とターン11の間を舗装し直し、ターン12とターン19の凸凹にも対処する（伊Formula1.it）。"
+   ],
+   "examples": [
+    {
+     "t": "ウィリアムズが語るCOTA　路面は凸凹が多く、今年は9〜11コーナー間を再舗装",
+     "u": "/news/it-f1it-williams-cota-preview/"
+    }
+   ],
+   "see": [
+    "resurfacing",
+    "ride-height",
+    "plank",
+    "circuit-austin"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "Hamilton and Leclerc disqualified from F1 US GP（2023年）",
+     "url": "https://www.motorsport.com/f1/news/hamilton-leclerc-disqualified-f1-us-gp/10536658/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "COTA bid farewell to bumps（2022年1月21日）",
+     "url": "https://www.planetf1.com/news/cota-bid-farewell-to-bumps"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "Gestione dell'energia e track limits più visibili, il COTA secondo Williams（2026年10月20日）",
+     "url": "https://www.formula1.it/news/33377/1/gestione-dell-energia-e-track-limits-piu-visibili-il-cota-secondo-williams"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "esses",
+   "term": "S字コーナー",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "S字",
+    "エス字",
+    "esses",
+    "えすじこーなー"
+   ],
+   "words": [
+    "連続コーナー",
+    "切り返し",
+    "リズム",
+    "鈴鹿のS字",
+    "高速コーナー"
+   ],
+   "short": "左右に続けて切り返すコーナーの連なり。1か所のミスが、後に続くコーナーまで響く。",
+   "body": [
+    "S字コーナーは、左右に続けて切り返すコーナーの連なりだ。英語ではエセス（esses）と呼ぶ。1つのコーナーの出口が次のコーナーの入り口につながるので、1か所のミスが後に続くコーナーに響く。ルワンダの新しいコースの設計に加わったブルツは、最後の区間のS字について「1つの要素を間違えると、次の5つか6つのコーナーがだめになる」と話した（英The Race）。",
+    "シケインも左右に切り返すが、主に車を減速させるために置かれる短い連続コーナーだ。アメリカGPのCOTAでは、3コーナーから9コーナーまでの速い切り返しが見どころで、米Racerはこの区間を鈴鹿の「スネーク」やシルバーストンのマゴッツ／ベケッツになぞらえている。",
+    "The Raceは、ルワンダのS字は鈴鹿のS字に似ているが、そのまねではないと書いた。ブルツは、コースは土地の形に合わせた独自のものだと話している（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "ブルツが語るルワンダの新コース　S字では1つのミスが続く5〜6個のコーナーを乱す",
+     "u": "/news/en-therace-rwanda-track-wurz/"
+    }
+   ],
+   "see": [
+    "chicane",
+    "high-speed-circuit",
+    "circuit-suzuka",
+    "circuit-austin"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "What one image can't show you about Rwanda F1 track（2026年10月17日）",
+     "url": "https://www.the-race.com/formula-1/what-one-image-cant-show-you-about-rwanda-f1-track/"
+    },
+    {
+     "name": "RACER",
+     "title": "Formula 1 at COTA – The racer's race（2025年10月16日）",
+     "url": "https://racer.com/2025/10/16/cota---the-racer-s-race"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "elevation-change",
+   "term": "高低差",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "elevation change",
+    "アップダウン",
+    "起伏",
+    "こうていさ"
+   ],
+   "words": [
+    "上り坂",
+    "下り坂",
+    "坂",
+    "勾配",
+    "標高差"
+   ],
+   "short": "1つのコースの中で、いちばん高い所と低い所の差。土地の高さを表す標高とは別。",
+   "body": [
+    "高低差は、コースの中のいちばん高い地点と低い地点の差だ。コースのある土地の高さを表す標高（メキシコシティ等）とは別のものだ。標高はその土地の空気の薄さに関わり、高低差はコースの上り下りの大きさを表す。",
+    "アメリカGPのCOTAは、高低差が130フィート（約40m）を少し超える。低速の1コーナーへ向かう11％の上り坂は、このコースを象徴するコーナーだ（米Racer）。",
+    "ルワンダで計画される新しいコースは、高低差が197mある。英The Raceによると、今季のどのコースより大きい。2コーナーには10.8％の下りを最高速で進入し、12％のバンクを通って、14％の上りに向かう（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "ブルツが語るルワンダの新コース　高低差197mは今季のどのコースより大きい",
+     "u": "/news/en-therace-rwanda-track-wurz/"
+    }
+   ],
+   "see": [
+    "altitude",
+    "track-banking",
+    "africa-gp",
+    "circuit-austin"
+   ],
+   "src": [
+    {
+     "name": "RACER",
+     "title": "Formula 1 at COTA – The racer's race（2025年10月16日）",
+     "url": "https://racer.com/2025/10/16/cota---the-racer-s-race"
+    },
+    {
+     "name": "The Race",
+     "title": "What one image can't show you about Rwanda F1 track（2026年10月17日）",
+     "url": "https://www.the-race.com/formula-1/what-one-image-cant-show-you-about-rwanda-f1-track/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "circuit-homologation",
+   "term": "サーキットの公認（FIAグレード1）",
+   "cat": "レース運営",
+   "aliases": [
+    "グレード1",
+    "FIAグレード1",
+    "サーキットライセンス",
+    "circuit licence",
+    "Grade 1",
+    "さーきっとのこうにん"
+   ],
+   "words": [
+    "コースの認定",
+    "再検査",
+    "レイアウト変更",
+    "サーキットの格付け",
+    "F1開催の条件"
+   ],
+   "short": "F1の車が走るには、FIAからいちばん上の「グレード1」の公認を受けたコースが要る。",
+   "body": [
+    "FIAは、国際スポーティングコードの付則Oで、サーキットを公認する手続きを決めている。公認には等級があり、F1の車はいちばん上のグレード1にあたる。重さと出力の比が1kg/馬力より小さい車のための等級だ。",
+    "FIAのサーキットライセンスの有効期間は、最長3年だ。コースの形や安全設備を変えるときは、工事の前にFIAの承認を受けなければならない。受けずに変えると、ライセンスが無効になることがある。いくつかのレイアウトがあるコースでは、承認は検査を受けた形にだけ有効だ（FIA付則O）。",
+    "2026年10月、モナコ自動車クラブ（ACM）のボエリ会長は、追い抜きが少なくてもレイアウトは変えない考えを示した。区間を取り除いたり動かしたりすれば、サーキットの再検査とFIAの新たな公認が必要になるからだという（仏ニース・マタンの取材、F1-Gate.com）。"
+   ],
+   "rule": "国際スポーティングコード付則O（2025年版）3.2、3.5、5.2、6.1",
+   "examples": [
+    {
+     "t": "モナコGP、コースを変えればFIAの再検査と新たな公認が必要　主催者がレイアウト変更を否定",
+     "u": "/news/ja-f1gate-monaco-layout-no-change/"
+    }
+   ],
+   "see": [
+    "run-off",
+    "street-circuit",
+    "circuit-monaco",
+    "hosting-fee"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "Appendix O to the International Sporting Code – Procedures for the Recognition of Motor Racing Circuits（2025年版）",
+     "url": "https://www.fia.com/sites/default/files/appendix_o_2025_published_15.01.2025.pdf"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "F1モナコGP 追い抜き不足でもコース変更せず 主催者が明言（2026年10月17日）",
+     "url": "https://f1-gate.com/monaco_gp/227597.html"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "race-rotation",
+   "term": "持ち回り開催",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "ローテーション開催",
+    "隔年開催",
+    "交互開催",
+    "race rotation",
+    "もちまわりかいさい"
+   ],
+   "words": [
+    "1年おき",
+    "数年に一度",
+    "開催枠を分け合う",
+    "スパとバルセロナ",
+    "マレーシア"
+   ],
+   "short": "1つの開催枠を複数のコースや国で分け合い、年ごとに交代でグランプリを開く方式。",
+   "body": [
+    "持ち回り開催は、1つの開催枠を複数のコースや国で分け合い、年ごとに交代でグランプリを開く方式だ。F1は2026年2月、スパ・フランコルシャンとバルセロナ＝カタルーニャ・サーキットでこの形を取ることで合意した。スパは2027年、2029年、2031年に、バルセロナは2028年、2030年、2032年に開く（英The Race）。",
+    "スパについては、F1が2025年1月に契約の延長を発表していた。2026年、2027年、2029年、2031年にレースを開く内容で、次の6年のうち4年でスパを走ることになる（Formula 1）。",
+    "2026年10月には、マレーシア政府が持ち回りを含む案を検討していると報じられた。青年スポーツ相のタウフィク・ジョハリは、ほかの国と協力して数年に一度レースを開く提案もあるが、まだ初期の段階だと話した（伊Formula1.it、F1-Gate.com）。協力する相手や開く間隔、契約の形は明らかになっていない。委員会の報告書は11月末までにまとまり、閣議で判断する（F1-Gate.com）。"
+   ],
+   "examples": [
+    {
+     "t": "マレーシア政府がF1復帰を本格検討　他国との持ち回り開催案も",
+     "u": "/news/it-formula1it-sepang-return/"
+    },
+    {
+     "t": "マレーシアGP復活構想、毎年開催のほか他国との持ち回り案も検討対象に",
+     "u": "/news/ja-f1gate-malaysia-gp-evaluation/"
+    }
+   ],
+   "see": [
+    "calendar",
+    "hosting-fee",
+    "race-relocation",
+    "circuit-spa",
+    "circuit-barcelona",
+    "circuit-sepang"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Barcelona and Spa to rotate on F1 calendar from 2027（2026年2月16日）",
+     "url": "https://www.the-race.com/formula-1/barcelona-and-spa-to-rotate-with-each-other-on-f1-calendar-from-2027"
+    },
+    {
+     "name": "Formula 1",
+     "title": "Formula 1 announces multi-year extension with the Belgian Grand Prix（2025年1月8日）",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-announces-multi-year-extension-with-the-belgian-grand-prix.7FR5zJUgLAB7htZrRQUB07"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "Formula 1, Sepang prepara il grande ritorno: spunta l'ipotesi della rotazione（2026年10月15日）",
+     "url": "https://www.formula1.it/news/33273/1/formula-1-sepang-prepara-il-grande-ritorno-spunta-l-ipotesi-della-rotazione"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "F1マレーシアGP復活構想 政府が11月に評価報告書を提出（2026年10月18日）",
+     "url": "https://f1-gate.com/malaysia_gp/228930.html"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "hosting-fee",
+   "term": "開催権料",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "開催料",
+    "開催契約",
+    "ホスティングフィー",
+    "hosting fee",
+    "race hosting fee",
+    "かいさいけんりょう"
+   ],
+   "words": [
+    "開催費用",
+    "契約年数",
+    "いくら払う",
+    "レースプロモーション収入",
+    "契約延長"
+   ],
+   "short": "グランプリの主催者が、レースを開く権利の代わりにF1に払うお金。金額はふつう公表されない。",
+   "body": [
+    "開催権料は、グランプリの主催者が、F1を開く権利の代わりにF1に払うお金だ。F1の持ち主のリバティ・メディアによると、2025年のF1の収入は38億7300万ドル。そのうち26.7%が、主催者から入るレースプロモーション収入だった。放映権料（31.3%）、スポンサー料（21.7%）と並ぶ柱だ。2025年にこの収入が増えたのは、主に契約で決まった料金の引き上げによるものだという。",
+    "契約は、何年かまとめて結ぶ。モナコGPは、2031年までだった契約が、2025年9月に2035年まで延びた（F1公式）。ルワンダは2026年10月13日に10年の契約を結び、2030年代の初めからグランプリを開く計画だ（ロイター）。どちらの発表でも、料金の額は明らかにされていない。",
+    "報道に出る金額は、関係者の説明や見積もりだ。マレーシアでは、セパン・サーキットの最高経営責任者が、毎年カレンダーに入るには年に少なくとも3億リンギが要ると話した（マレー・メール、2026年10月4日）。"
+   ],
+   "examples": [
+    {
+     "t": "モナコの主催者ACMの会長がコース変更を否定。開催契約は2035年まで延長済み",
+     "u": "/news/ja-f1gate-monaco-layout-no-change/"
+    },
+    {
+     "t": "マレーシア政府がF1復活を検討。年間の開催費用は3億リンギ超と報じられ、11月に評価報告書",
+     "u": "/news/ja-f1gate-malaysia-gp-evaluation/"
+    },
+    {
+     "t": "マレーシア政府、費用を抑えるため数年おきの持ち回り開催案も検討",
+     "u": "/news/it-formula1it-sepang-return-rotation/"
+    },
+    {
+     "t": "ルワンダGPは10年契約。コンゴ民主共和国は「道義的に擁護できない」と警告",
+     "u": "/news/en-racingnews365-rwanda-morally-indefensible/"
+    }
+   ],
+   "see": [
+    "f1-group",
+    "calendar",
+    "race-rotation",
+    "africa-gp"
+   ],
+   "src": [
+    {
+     "name": "Liberty Media（Business Wire）",
+     "title": "Liberty Media Corporation Reports Fourth Quarter and Year End 2025 Financial and Operating Results（2026年2月25日、レースプロモーション26.7%・放映権31.3%・スポンサー21.7%）",
+     "url": "https://www.businesswire.com/news/home/20260225788335/en/Liberty-Media-Corporation-Reports-Fourth-Quarter-and-Year-End-2025-Financial-and-Operating-Results"
+    },
+    {
+     "name": "BlackBook Motorsport",
+     "title": "F1 revenue grows 14% YoY to US$3.87bn in 2025（2026年2月26日）",
+     "url": "https://www.blackbookmotorsport.com/news/f1-financial-results-liberty-media-revenue-2025-february-2026/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "F1 to race in Monaco through 2035 after contract extension（2025年9月5日、従来は2031年まで）",
+     "url": "https://www.formula1.com/en/latest/article/f1-to-race-in-monaco-through-2035-after-contract-extension.6djpsN0QD5Zygd4SIcrSZO"
+    },
+    {
+     "name": "Khaleej Times（ロイター）",
+     "title": "Rwanda to bring F1 back to Africa for first time since 1993（2026年10月13日、10年契約・2030年代初め）",
+     "url": "https://www.khaleejtimes.com/world/africa/rwanda-bring-f1-back-africa-first-time-since-1993"
+    },
+    {
+     "name": "Malay Mail",
+     "title": "Malaysia eyes F1 calendar return as PM Anwar confirms talks under way（2026年10月4日、年にRM3億以上）",
+     "url": "https://www.malaymail.com/amp/news/malaysia/2026/10/04/malaysia-eyes-f1-calendar-return-as-pm-anwar-confirms-talks-under-way/237688"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "sportswashing",
+   "term": "スポーツウォッシング",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "sportswashing",
+    "スポーツウオッシング",
+    "スポーツ・ウォッシング",
+    "すぽーつうぉっしんぐ"
+   ],
+   "words": [
+    "人権団体の批判",
+    "イメージ戦略",
+    "開催国への批判",
+    "アムネスティ",
+    "人権"
+   ],
+   "short": "スポーツの大会などを使って評判を良く見せ、問題から目をそらさせている、と批判するときの言葉。",
+   "body": [
+    "スポーツウォッシングは、政府や組織などが、スポーツを使って自分たちの評判を高め、問題とされる行いから注意をそらすことを指す言葉だ（英語版ウィキペディア）。ほめ言葉ではなく、批判する側が使う。英語版ウィキペディアによると、早い使い方の例は、2015年にアゼルバイジャンのバクーで開かれたヨーロッパ競技大会に向けられたものとされる。",
+    "F1でも、開催国をめぐってこの言葉が使われる。2026年10月にF1がルワンダとの10年の開催契約を発表すると、アムネスティ・インターナショナル英国支部のフェリックス・ジェイクンス氏は「『ビジット・ルワンダ提供』の10年のグランプリは、ルワンダ当局にとってスポーツウォッシングの賞品だ」と批判した。理由として、恣意的な拘束や拷問、言論の抑圧を挙げた（ロイター）。",
+    "F1側の説明は違う。F1の広報担当は、アフリカの1億人にF1の情熱を届け、刺激を与える機会だと述べた。ルワンダのカガメ大統領は、この契約が、スポーツの世界でアフリカがどう見られるかを変える道のりの始まりになると話した。ルワンダ政府は、ロイターの取材にすぐには答えなかった（ロイター）。"
+   ],
+   "examples": [
+    {
+     "t": "ルワンダでのアフリカGP開催に、人権団体が「スポーツウォッシングだ」と抗議",
+     "u": "/news/ja-f1gate-rwanda-gp-amnesty/"
+    },
+    {
+     "t": "コンゴ民主共和国がルワンダGPに「道義的に擁護できない」と警告。F1は経済や観光への効果を説明",
+     "u": "/news/en-racingnews365-rwanda-morally-indefensible/"
+    }
+   ],
+   "see": [
+    "africa-gp",
+    "hosting-fee",
+    "f1-group"
+   ],
+   "src": [
+    {
+     "name": "Wikipedia（英語版）",
+     "title": "Sportswashing（定義、2015年バクーのヨーロッパ競技大会）",
+     "url": "https://en.wikipedia.org/wiki/Sportswashing"
+    },
+    {
+     "name": "The Star（ロイター）",
+     "title": "Motor racing-Amnesty accuses F1 of offering Rwanda a 'sportswashing prize' with race deal（2026年10月13日）",
+     "url": "https://www.thestar.com.my/sport/motorsport/2026/10/13/motor-racing-amnesty-accuses-f1-of-offering-rwanda-a-039sportswashing-prize039-with-race-deal"
+    },
+    {
+     "name": "Khaleej Times（ロイター）",
+     "title": "Rwanda to bring F1 back to Africa for first time since 1993（2026年10月13日）",
+     "url": "https://www.khaleejtimes.com/world/africa/rwanda-bring-f1-back-africa-first-time-since-1993"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "remote-operations-centre",
+   "term": "遠隔管制センター",
+   "cat": "レース運営",
+   "aliases": [
+    "ROC",
+    "リモート・オペレーション・センター",
+    "Remote Operations Centre",
+    "遠隔オペレーションセンター",
+    "えんかくかんせいせんたー"
+   ],
+   "words": [
+    "F1のVAR",
+    "ビギンヒル",
+    "AI",
+    "映像チェック",
+    "判定の支援"
+   ],
+   "short": "サーキットから離れた場所で映像や無線を確かめ、レースコントロールとスチュワードを支える拠点。判定はしない。",
+   "body": [
+    "遠隔管制センター（ROC）は、サーキットから離れた場所で、レース中の映像や音声を見て、現地のFIAの担当者を支える拠点だ。FIAは2026年10月、英国ビギンヒルにあるF1のメディア＆テクノロジーセンターの中に、F1と共同で正式に開いた。実際には2026年のオランダGPから動いていて、F1、F2、F3のレース週末に最大16人が働く（Coffee Corner Motorsport、GrandPrix247）。",
+    "扱うのは、140を超える映像と音声、車の位置のデータ、チーム無線だ。AIによる形の認識や画像の解析、無線の自動の仕分けを使い、フライングスタート、グリッドでの位置、トラックリミット、ピットレーンでの違反、ストップ＆ゴーペナルティの守り方など、確かめるべき場面を拾い出す。罰を決めるのはROCではない。レースコントロールとスチュワードの判断を支える役だ。",
+    "ROCの考え方は、2021年のアブダビGPの混乱を受けたFIAの見直しから生まれた。2022年3月の時点では、ジュネーブのFIA本部で使われていた。FIAは当時、サッカーの「VAR」に近い仕組みだと説明し、規則上の権限はなく、過去の判定を見直すこともできないとしていた（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "FIAがビギンヒルの遠隔管制センターを正式開設。AIが確認すべき場面を抽出し、判断はオフィシャルが行う",
+     "u": "/news/ja-f1gate-fia-remote-ops-centre/"
+    }
+   ],
+   "see": [
+    "race-control",
+    "stewards",
+    "track-limits",
+    "false-start"
+   ],
+   "src": [
+    {
+     "name": "Coffee Corner Motorsport",
+     "title": "FIA Remote Operations Centre Opens at Biggin Hill（2026年10月20日）",
+     "url": "https://coffeecornermotorsport.com/fia-remote-operations-centre/"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "FIA launch new high-tech Remote Operations Centre to improve Formula 1 race officiating（2026年10月）",
+     "url": "https://www.grandprix247.com/formula-1-news/fia-launch-new-high-tech-remote-operations-centre-opens-to-improve-formula-1-race-officiating"
+    },
+    {
+     "name": "The Race",
+     "title": "How a new F1 set-up inspired by Abu Dhabi review will work（2022年3月19日、ジュネーブ、VARに近い、規則上の権限なし）",
+     "url": "https://www.the-race.com/formula-1/how-a-new-f1-set-up-inspired-by-abu-dhabi-review-will-work"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "pit-stop-award",
+   "term": "最速ピットストップの年間ランキング",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "ピットストップランキング",
+    "DHLファステスト・ピットストップ・アワード",
+    "DHL Fastest Pit Stop Award",
+    "最速ピットストップ賞",
+    "さいそくぴっとすとっぷ"
+   ],
+   "words": [
+    "ピット作業の速さ",
+    "最速ピット",
+    "DHL",
+    "年間の賞",
+    "ピットクルーの順位"
+   ],
+   "short": "毎戦のピット作業の速さに点を与え、1年の合計でチームを順位付けする賞。物流会社DHLの名前が付いている。",
+   "body": [
+    "F1には、レース中のピットストップの速さを1年かけて競う賞がある。物流会社DHLの名前を付けた「DHLファステスト・ピットストップ・アワード」だ。DHLの説明では、各レースのあとに、最も速いピット作業に25点、2番目に18点、3番目に15点を与え、10番目に速い作業のチームの1点まで下がっていく。年間の合計点が最も多いチームが賞を取る。",
+    "2024年はレッドブルが取り、その年の最速の作業は1.90秒だった（DHL）。2025年はフェラーリが首位を走り、メキシコシティGPのあとで515点に達して、残りのレースで逆転されない差をつけた（GPFans）。",
+    "2026年のシンガポールGPでは、フェルスタッペンの車の2.2秒が最速だった。F1公式は、レッドブルにとって今季2回目の最速だと伝えている。"
+   ],
+   "examples": [
+    {
+     "t": "メルセデスがシンガポールで15年ぶりにピット作業をするスタッフを起用。ランキングはメルセデス347点で首位",
+     "u": "/news/ja-f1gate-mercedes-pitcrew-singapore/"
+    }
+   ],
+   "see": [
+    "pit-stop",
+    "pit-crew"
+   ],
+   "src": [
+    {
+     "name": "DHL",
+     "title": "Formula 1 2024 season concludes（2024年12月9日、25・18・15…10番目に1点、2024年はレッドブル、最速1.90秒）",
+     "url": "https://group.dhl.com/content/dam/deutschepostdhl/en/media-relations/press-releases/2024/pr-formula-one-2024-season-concludes-20241209.pdf"
+    },
+    {
+     "name": "GPFans",
+     "title": "Lewis Hamilton and Ferrari are champions - but it's not what they wanted（2025年11月1日、メキシコ後に515点）",
+     "url": "https://www.gpfans.com/en/f1-news/1066539/lewis-hamilton-ferrari-f1-pit-stop-champions"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "DHL Fastest Pit Stop Award: 2026 Singapore Grand Prix（動画、フェルスタッペン車2.2秒、レッドブル今季2回目）",
+     "url": "https://www.formula1.com/en/video/dhl-fastest-pit-stop-award-2026-singapore-grand-prix.1878838236181468448"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "youngest-records",
+   "term": "最年少記録",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "最年少王者",
+    "最年少優勝",
+    "最年少ポール",
+    "最年少出走",
+    "youngest record",
+    "さいねんしょうきろく"
+   ],
+   "words": [
+    "何歳",
+    "史上最年少",
+    "最年少チャンピオン",
+    "ベッテルの記録",
+    "10代"
+   ],
+   "short": "F1で最も若くして王座・優勝・ポールなどを達成した記録。年齢は「何歳何日」まで比べる。",
+   "body": [
+    "最年少記録は、その出来事の日の年齢で比べる。差が小さいことが多いので、ふつうは「何歳何日」まで数える。2026年10月21日時点の主な記録は次のとおりだ。最年少のワールドチャンピオンは、2010年のベッテルで、アブダビGPで決めたときに23歳134日だった（ギネス世界記録、PlanetF1）。",
+    "最年少の優勝は、2016年スペインGPのフェルスタッペンで18歳228日。最年少の決勝出走も、2015年オーストラリアGPのフェルスタッペンで17歳166日だ（ギネス世界記録）。最年少のポールポジションは、2026年3月の中国GPのアントネッリで19歳6か月17日。それまでは、2008年イタリアGPのベッテルの21歳72日だった（アルジャジーラ）。",
+    "今の規則では、最初のF1の大会の時点で18歳以上でないと、スーパーライセンスを受けられない。17歳で認められるのは、FIAが特別に判断したときだけだ（FIA付則L 13.1.2）。",
+    "2026年は、アントネッリが最年少王者の記録を破る可能性がある。PlanetF1は9月、アントネッリを「まだ20歳」と書いた。記録を持つベッテルは、破られたら「彼のためにとてもうれしい」と話している。決まる条件は「タイトル決定の条件」を見る。"
+   ],
+   "examples": [
+    {
+     "t": "アントネッリがオースティンで王座を決める条件。成立すれば史上最年少の王者",
+     "u": "/news/de-motorsporttotal-austin-title-scenarios/"
+    },
+    {
+     "t": "メルセデス副代表、アメリカGPでの王座決定は「25分の1」。実現すれば2010年のベッテルの最年少記録を更新",
+     "u": "/news/ja-f1gate-antonelli-austin-title-odds/"
+    }
+   ],
+   "see": [
+    "world-champion",
+    "title-decider",
+    "maiden-win",
+    "pole-position",
+    "super-licence"
+   ],
+   "src": [
+    {
+     "name": "Guinness World Records",
+     "title": "Youngest Formula One World Champion（23歳134日、2010年11月14日アブダビGP）",
+     "url": "https://www.guinnessworldrecords.com/world-records/youngest-formula-one-world-champion"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Sebastian Vettel responds as Kimi Antonelli closes in on 16-year F1 record（2026年9月20日、23歳134日）",
+     "url": "https://www.planetf1.com/news/kimi-antonelli-sebastian-vettel-youngest-f1-champion-record"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Unmasked: The driver who could take Sebastian Vettel's place in F1 history（2026年3月27日、2010年アブダビGPで23歳134日）",
+     "url": "https://www.planetf1.com/features/sebastian-vettel-f1-youngest-champion-max-verstappen-kimi-antonelli"
+    },
+    {
+     "name": "Guinness World Records",
+     "title": "Youngest driver to win a Formula One World Championship race（18歳228日、2016年5月15日）",
+     "url": "https://www.guinnessworldrecords.com/world-records/youngest-driver-to-win-a-formula-one-world-championship-race"
+    },
+    {
+     "name": "Guinness World Records",
+     "title": "Youngest driver to start a Formula One World Championship race（17歳166日、2015年3月15日）",
+     "url": "https://www.guinnessworldrecords.com/world-records/769828-youngest-driver-to-start-a-formula-one-world-championship-race"
+    },
+    {
+     "name": "Al Jazeera",
+     "title": "Kimi Antonelli becomes youngest F1 driver to take Grand Prix pole position（2026年3月14日、19歳6か月17日、ベッテル21歳72日）",
+     "url": "https://www.aljazeera.com/sports/2026/3/14/kimi-antonelli-becomes-youngest-f1-driver-to-take-grand-prix-pole-position"
+    },
+    {
+     "name": "FIA",
+     "title": "Appendix L to the International Sporting Code 2026（13.1.2 年齢）",
+     "url": "https://api.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "race-starts",
+   "term": "出走数",
+   "cat": "サーキットと歴史",
+   "aliases": [
+    "通算出走数",
+    "出走回数",
+    "スタート数",
+    "エントリー数",
+    "race starts",
+    "しゅっそうすう"
+   ],
+   "words": [
+    "何戦目",
+    "300戦",
+    "最多出走",
+    "節目",
+    "通算出場",
+    "記念レース"
+   ],
+   "short": "F1のグランプリに出た回数。エントリーした数と、決勝をスタートした数で、数字が変わる。",
+   "body": [
+    "出走数は、F1のグランプリに出た回数だ。数え方は2つある。大会にエントリーした回数（エントリー数）と、決勝のスタートを切った回数（スタート数）だ。予選のあとにスタートできなかったレースは、エントリー数には入るが、スタート数には入らない（→DNS（スタートできず））。",
+    "例はアロンソだ。2001年ベルギーGP、2005年アメリカGP、2017年ロシアGPの3戦は、エントリーしたがスタートしなかった。そのため2024年のメキシコシティGPは、エントリーでは400戦目、スタートでは397戦目だった。アロンソは2022年のシンガポールGPでライコネンを抜き、最多スタートの記録を持つ（Autosport）。ギネス世界記録は、最多エントリーを2024年11月23日のラスベガスGP時点の402戦としている。",
+    "2026年は節目が続く。フェルスタッペンは、10月のシンガポールGPが通算250回目のスタートで、そのレースで勝った（マレー・メール）。キャデラックのペレスは、予定どおりなら11月1日のメキシコシティGPが300回目のスタートになる（RacingNews365）。チームやメーカーの「〇戦目」は、それぞれが決めた数え方で発表されることがある。"
+   ],
+   "examples": [
+    {
+     "t": "ペレス、予定どおりなら母国メキシコで通算300戦目",
+     "u": "/news/en-racingnews365-perez-300th-mexico/"
+    },
+    {
+     "t": "フェルスタッペン、通算250戦目のシンガポールを含む今季を振り返る",
+     "u": "/news/en-racingnews365-verstappen-harsh/"
+    },
+    {
+     "t": "ホンダ、アメリカGPでF1参戦通算500戦。ホンダ製PUが決勝に出走したレースの数え方",
+     "u": "/news/ja-f1gate-honda-500th-race-austin/"
+    }
+   ],
+   "see": [
+    "dns",
+    "most-wins",
+    "rookie"
+   ],
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "Which F1 driver has the most race starts? Hamilton, Raikkonen and more（2024年、メキシコでエントリー400・スタート397）",
+     "url": "https://autosport.com/all/news/which-f1-driver-has-the-most-race-starts-hamilton-raikkonen-and-more/10338884/"
+    },
+    {
+     "name": "Guinness World Records",
+     "title": "Most Formula One Grand Prix entries（402、2024年11月23日時点）",
+     "url": "https://www.guinnessworldrecords.com/world-records/774011-most-formula-one-grand-prix-entries"
+    },
+    {
+     "name": "Malay Mail",
+     "title": "Verstappen wins Singapore GP for first time on 250th grand prix start（2026年10月12日）",
+     "url": "https://www.malaymail.com/amp/news/sports/2026/10/12/verstappen-wins-singapore-gp-for-first-time-on-250th-grand-prix-start/238742"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Sergio Perez reveals 'tough to digest' scenario ahead of Mexican return（2026年10月16日、300回目のスタート）",
+     "url": "https://racingnews365.com/sergio-perez-reveals-tough-to-digest-scenario-ahead-of-mexican-return"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "indycar",
+   "term": "インディカー",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "IndyCar",
+    "インディカー・シリーズ",
+    "NTTインディカー・シリーズ",
+    "IndyCar Series",
+    "いんでぃかー"
+   ],
+   "words": [
+    "アメリカのレース",
+    "オーバル",
+    "インディ",
+    "ダラーラ",
+    "スーパーライセンスの点"
+   ],
+   "short": "アメリカのトップの単座レース。全車が同じ車体を使い、オーバルでのレースもある。",
+   "body": [
+    "インディカー（NTTインディカー・シリーズ）は、アメリカを中心に開かれる単座のレースの最高峰だ。インディカー公式によると、全車がダラーラのIR-18という同じ車体を使う。エンジンはホンダかシボレーの2.2リッターV6ツインターボで、エネルギーを回収して使う仕組みも付き、出力は700馬力を超える。",
+    "F1との大きな違いは、コースの種類だ。大きなオーバル（スーパースピードウェイ）、小さなオーバル、ロードコース、市街地コースを走る。ロードコースと市街地コースのレースでは、ボタンで一時的に出力を上げるプッシュ・トゥ・パスが使える（インディカー公式）。",
+    "インディカーの成績でも、F1に出るためのスーパーライセンスの点がもらえる。2026年からの配点は、王者40点、2位30点、3位25点、4位20点、5位15点、6位10点で、3位から9位までが引き上げられた。FIAは、このカテゴリーの重みが増していることを反映したと説明した。2025年までの成績には、前の配点が使われる（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "角田裕毅、10月26日にミーク・シャンク・レーシングのインディカーをテストする見通し",
+     "u": "/news/en-racingnews365-tsunoda-indycar-test/"
+    },
+    {
+     "t": "ハータのスーパーライセンス。インディカーで3位以内に入る道も",
+     "u": "/news/ja-f1gate-herta-super-license-options/"
+    },
+    {
+     "t": "ハータがアメリカGPのFP1で走行。2019年にオースティンでインディカー初優勝",
+     "u": "/news/it-formula1it-cadillac-herta-fp1-austin/"
+    }
+   ],
+   "see": [
+    "super-licence",
+    "push-to-pass",
+    "super-formula"
+   ],
+   "src": [
+    {
+     "name": "IndyCar 公式",
+     "title": "Inside INDYCAR Racing: What Makes the NTT INDYCAR SERIES Race Car Unique?（ダラーラIR-18、ホンダ・シボレーの2.2L V6ツインターボ、700馬力超、コースの種類、プッシュ・トゥ・パス）",
+     "url": "https://indycar.com/Fan-Info/INDYCAR-101/Cars"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 IndyCar superlicence points change 2026（2025年12月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-indycar-superlicence-points-change-2026-fia/"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "super-formula",
+   "term": "スーパーフォーミュラ",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "Super Formula",
+    "全日本スーパーフォーミュラ選手権",
+    "スーパーフォーミュラ選手権",
+    "すーぱーふぉーみゅら"
+   ],
+   "words": [
+    "日本のレース",
+    "SF23",
+    "F1への道",
+    "スーパーライセンスの点",
+    "鈴鹿"
+   ],
+   "short": "日本のトップの単座レース。F1以外で最も速いシリーズの一つとされ、F1への道にもなる。",
+   "body": [
+    "スーパーフォーミュラは、日本で開かれる単座のレースの最高峰だ。2023年からは、ダラーラのSF23という車体を使う。エンジンはホンダかトヨタが供給し、タイヤは横浜ゴムだ（英語版ウィキペディア）。",
+    "F1に出るためのスーパーライセンスの点は、2025年から王者に30点、2位に25点、3位に20点が与えられる。FIAは見直しの理由に、F1以外で最も速い単座のシリーズの一つになったことを挙げた（GPFans）。",
+    "ここからF1へ進んだ例もある。2017年のガスリーは、最終戦の鈴鹿が台風で中止になり、王者の石浦宏明に0.5点届かず2位だった（GrandPrix247）。2023年のローソンも2位で、この年の王者は宮田莉朋だった（Velocity News）。"
+   ],
+   "examples": [
+    {
+     "t": "ハータのスーパーライセンス獲得に、スーパーフォーミュラで2位以内という選択肢",
+     "u": "/news/ja-f1gate-herta-super-license-options/"
+    },
+    {
+     "t": "フェラーリのシミュレータードライバーになったフェネストラズ。2022年のスーパーフォーミュラはランキング2位",
+     "u": "/news/it-f1it-ferrari-fenestraz-simulator/"
+    }
+   ],
+   "see": [
+    "super-licence",
+    "academy-f2",
+    "indycar"
+   ],
+   "src": [
+    {
+     "name": "Wikipedia（英語版）",
+     "title": "Dallara SF23（2023年から、ホンダかトヨタのエンジン、横浜ゴム）",
+     "url": "https://en.wikipedia.org/wiki/Dallara_SF23"
+    },
+    {
+     "name": "GPFans",
+     "title": "FIA Super Formula superlicence points change 2025（2024年11月8日）",
+     "url": "https://www.gpfans.com/en/f1-news/1034530/fia-super-formula-superlicence-points-change-2025/"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Typhoon ends Gasly's Japanese Super Formula title dream（2017年10月21日）",
+     "url": "https://www.grandprix247.com/2017/10/21/typhoon-ends-gaslys-japanese-super-formula-title-bid/"
+    },
+    {
+     "name": "Velocity News",
+     "title": "Lawson finishes Super Formula campaign in second with Suzuka podium（2023年10月29日）",
+     "url": "https://velocitynews.co.nz/lawson-finishes-super-formula-campaign-in-second-with-suzuka-podium"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "wec",
+   "term": "WEC（世界耐久選手権）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "WEC",
+    "世界耐久選手権",
+    "FIA WEC",
+    "World Endurance Championship",
+    "ハイパーカー",
+    "だぶりゅーいーしー"
+   ],
+   "words": [
+    "ル・マン24時間",
+    "耐久レース",
+    "ハイパーカー",
+    "LMDh",
+    "スポーツカー"
+   ],
+   "short": "ル・マン24時間を含む、FIAの耐久レースの世界選手権。最上位のクラスはハイパーカー。",
+   "body": [
+    "WEC（FIA世界耐久選手権）は、長い時間を走る耐久レースの世界選手権だ。1台の車を複数のドライバーが交代で走らせる。有名なル・マン24時間も、WECの1戦だ（WEC公式）。",
+    "最上位のクラスはハイパーカーで、2021年に始まった。LMHとLMDhという2つの規格の車が、同じクラスで競う。WECは2025年6月、この規則を2032年まで続けると発表した。その時点で、アルピーヌ、アストンマーティン、BMW、キャデラック、フェラーリ、プジョー、ポルシェ、トヨタの8社が出ていて、2026年にジェネシス、2027年にフォードとマクラーレンが加わる予定とされた（WEC公式）。",
+    "F1のチームを持つ会社も多い。マクラーレンは2027年、ダラーラをもとにしたLMDhの車「MCL-HY」でハイパーカーに出る。F1のリザーブドライバーのフォルナローリは、2027年もその役を続けながら、この車でWECを走る（RACER）。",
+    "同じ会社の中のF1と他の部門の線引きは、お金の決まりにもかかわる。FIAの世界モータースポーツ評議会（WMSC）は2026年10月19日、財務規則に関して、F1とF1以外の活動を、場所とITの面で分ける新しい要件を承認した（FIA）。"
+   ],
+   "examples": [
+    {
+     "t": "マクラーレン、フォルナローリを2027年もF1リザーブに起用しつつ、新しいハイパーカーでWECデビューさせる",
+     "u": "/news/it-formula1it-mclaren-fornaroli-wec/"
+    },
+    {
+     "t": "FIA、F1チームの人員と設備を他部門から切り離す規則を承認。WECなどに費用を回す抜け穴があったとされる",
+     "u": "/news/de-motorsporttotal-budgetcap-separation/"
+    }
+   ],
+   "see": [
+    "cost-cap",
+    "reserve-driver",
+    "gt3",
+    "wmsc"
+   ],
+   "src": [
+    {
+     "name": "FIA WEC 公式",
+     "title": "FIA WEC extends winning Hypercar formula（2025年6月13日、2021年開始、2032年まで、参戦メーカー）",
+     "url": "https://www.fiawec.com/en/news/fia-wec-extends-winning-hypercar-formula/8357"
+    },
+    {
+     "name": "RACER",
+     "title": "Fornaroli gets McLaren hypercar seat alongside continued F1 reserve role（2026年10月19日）",
+     "url": "https://racer.com/2026/10/19/fornaroli-gets-mclaren-hypercar-seat-alongside-continued-f1-reserve-role"
+    },
+    {
+     "name": "FIA",
+     "title": "Rally roadmaps and grassroots affordability focus of FIA World Motor Sport Council（2026年10月19日、F1と非F1活動の物理的・IT上の分離）",
+     "url": "https://www.fia.com/news/rally-roadmaps-and-grassroots-affordability-focus-fia-world-motor-sport-council"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "gt3",
+   "term": "GT3",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "GT3カー",
+    "GTワールドチャレンジ",
+    "GT World Challenge",
+    "GTWC",
+    "じーてぃーすりー"
+   ],
+   "words": [
+    "GTカー",
+    "性能調整",
+    "BoP",
+    "耐久レース",
+    "フェルスタッペンのGT参戦"
+   ],
+   "short": "メーカーが作ってチームに売る、GTカーのレース車の規格。性能調整で、違う車どうしが競えるようにしている。",
+   "body": [
+    "GT3は、FIAが決めているGTカーの規格だ。FIAのGT委員会の委員長は「FIAで最も大きく、最も成功したカスタマー向けのクラスの一つ」と呼ぶ。十数社のメーカーがGT3の車を売り、24時間レースから地域の選手権まで、同じ車が使われる。乗るのは、メーカーのプロからアマチュアまでだ（FIA、2024年6月）。",
+    "形の違う車をそろえるため、厳しい公認と性能調整（BoP）の決まりがある（FIA）。性能調整では、走行のデータを見て、車の重さ、エンジンの出力、空力、燃料などを変える（Pit Debrief）。各チームが自分で車を作り、その差で競うF1とは、考え方が違う。",
+    "GTワールドチャレンジ・ヨーロッパは、GT3の車だけで戦う選手権だ。1時間のレースを2人で走るスプリントカップと、3〜6時間のレースのエンデュランスカップがある。耐久のレースでは、1台をふつう3〜4人で分け合う。ドライバーは、FIAの格付け（プラチナ、ゴールド、シルバー、ブロンズ）でクラス分けされる（Pit Debrief）。",
+    "2026年10月、フェルスタッペンは、ポルティマオでのこの選手権の最終戦（3時間）に、自分のチームのメルセデスAMGで出た。ドライブスルーペナルティで24番手まで下がったが、最後に乗って追い上げ、9位に入った（RACER）。"
+   ],
+   "examples": [
+    {
+     "t": "フェルスタッペン、ポルティマオでGTワールドチャレンジ初日。メルセデスAMG GT3に「慣れるのに時間がかかった」",
+     "u": "/news/nl-gpblog-verstappen-portimao-gt3-day1/"
+    },
+    {
+     "t": "フェルスタッペン、GTWC初参戦は9位。ペナルティで後退も24番手から追い上げ",
+     "u": "/news/ja-f1gate-verstappen-gtwc-portimao-ninth/"
+    },
+    {
+     "t": "フェルスタッペン、GT3で残り45分に15台を抜く。予選のセットアップミスも認める",
+     "u": "/news/de-motorsporttotal-verstappen-gt3-15-positions/"
+    },
+    {
+     "t": "フェルスタッペン、チームメイトのルルハムへの中傷に「個人攻撃は許されない」",
+     "u": "/news/ja-f1gate-verstappen-lulham-abuse/"
+    }
+   ],
+   "see": [
+    "wec",
+    "drive-through"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "GT Explainer – Double dose of supercar GT3 action confirmed for Valencia（2024年6月25日）",
+     "url": "https://api.fia.com/news/gt-explainer-double-dose-supercar-gt3-action-confirmed-valencia"
+    },
+    {
+     "name": "Pit Debrief",
+     "title": "What you need to know about the GT World Challenge Europe（2025年8月26日）",
+     "url": "https://www.pitdebrief.com/?p=72464"
+    },
+    {
+     "name": "RACER",
+     "title": "Verstappen dwelling on positives from challenging Portimao GT outing（2026年10月18日）",
+     "url": "https://racer.com/2026/10/18/verstappen-dwelling-on-positives-from-challenging-portimao-gt-outing"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "f4",
+   "term": "F4（フォーミュラ4）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "F4",
+    "フォーミュラ4",
+    "Formula 4",
+    "FIA F4",
+    "えふふぉー"
+   ],
+   "words": [
+    "入門カテゴリー",
+    "カートの次",
+    "フォーミュラ・リージョナル",
+    "若手",
+    "登竜門"
+   ],
+   "short": "カートを卒業した若手が最初に乗る、入門の単座レース。FIAが2014年に始めた。",
+   "body": [
+    "F4（フォーミュラ4）は、カートからレースカーへ移る若手のための、最初の単座のカテゴリーだ。FIAが2014年に始めた。FIAは、カートの次の一歩として、世界の若手に、広く知られていて費用を抑えた機会を用意するためのものだと説明している。車は費用を抑えるように作られている（FIA）。",
+    "F4は、国や地域ごとの選手権として開かれ、FIAが認定する。最初にFIAの認定を受けたのは、2014年に始まったイタリアのF4だ。当時のトッド会長は、F4を「今のカートとF3の間に欠けている段」と呼び、FIAはF1へ続くピラミッドの最初の段と位置づけた（FIA、2014年5月）。",
+    "今のFIAの説明では、F4はカートとフォーミュラ・リージョナルの間に置かれる。その上はF3、F2と続く（→F2・F3（F1の下のカテゴリー））。"
+   ],
+   "examples": [
+    {
+     "t": "フェルスタッペンが支援する16歳のファン・ランゲンドンクが英国F4王座。マクラーレンの育成",
+     "u": "/news/ja-f1gate-van-langendonck-f4-title/"
+    },
+    {
+     "t": "フェラーリ育成、2027年に3人が新加入。マッカニャーニはF4からF3へ",
+     "u": "/news/de-motorsporttotal-ferrari-academy-2027/"
+    },
+    {
+     "t": "ノリスのLN4フュージョン、F2参戦を申請。2027年はF3、イタリアF4、欧州フォーミュラ・リージョナルにも",
+     "u": "/news/nl-gpblog-norris-ln4-fusion-f2/"
+    },
+    {
+     "t": "ノリスの自チーム「LN4 Fusion」、2027年からのF2参戦を申請",
+     "u": "/news/ja-f1gate-norris-ln4-fusion-f2-bid/"
+    }
+   ],
+   "see": [
+    "academy-f2",
+    "junior-programme",
+    "super-licence"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "Formula 4（2014年開始、カートからの最初の一歩、費用を抑えた車、カートとフォーミュラ・リージョナルの間）",
+     "url": "https://www.fia.com/championship/formula-4"
+    },
+    {
+     "name": "FIA",
+     "title": "Great start for FIA Formula 4（2014年5月27日、イタリアF4が最初の認定、トッド会長の発言）",
+     "url": "https://api.fia.com/news/great-start-fia-formula-4"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "international-sporting-code",
+   "term": "国際モータースポーツ競技規則",
+   "cat": "レース運営",
+   "aliases": [
+    "ISC",
+    "国際スポーツ競技規則",
+    "国際スポーツ・コード",
+    "国際スポーティングコード",
+    "国際スポーツ規則",
+    "International Sporting Code"
+   ],
+   "words": [
+    "FIAの基本ルール",
+    "付則L",
+    "抗議",
+    "控訴",
+    "ライセンス",
+    "視力"
+   ],
+   "short": "FIAが作る、国際的なモータースポーツすべてに共通する基本の規則。F1の規則もこれを土台にしている。",
+   "body": [
+    "国際モータースポーツ競技規則（International Sporting Code、ISC）は、FIAが作る、モータースポーツ全体の基本の規則だ。最初の条文で、FIAは、安全とスポーツの公正さを基本に、国際的な規則を作って運用できる唯一の国際的な権威だと定めている。目的は、モータースポーツを規律し、励まし、やりやすくすることだ。各国では、FIAが認めた1つの団体（ASN）がこの規則を運用する。",
+    "本文は、競技の一般的な条件（ライセンスを含む）、オフィシャル、違反と罰、抗議、裁定の見直し、控訴などの条で成り立つ。付則も多い。付則Bはスチュワードの罰のガイドライン、付則Lはドライバーのライセンス、健康診断、装備、運転の行動を扱う（FIA）。F1のスーパーライセンスの条件も、付則Lにある（→スーパーライセンス）。付則Lのライセンスの書式には、「矯正視力（眼鏡またはレンズ）」の有無を書く欄もある。",
+    "F1の規則は、ISCを土台にしている。F1規則のセクションA（総則）は、選手権を治める決まりとしてISCとその付則を挙げる。スチュワードの権限と手続きはISCに定められているとし、抗議と見直しの請求も、ISCとスポーティングレギュレーションに従うと書いている。"
+   ],
+   "rule": "国際モータースポーツ競技規則 1.1.1、1.2.2、1.4.1／F1規則 セクションA A1.2.1、A7.2.1 a)、A7.6、A7.7",
+   "examples": [
+    {
+     "t": "カマラが近視と乱視を告白。国際スポーツ・コードは視力矯正を認めるが、検査や基準の通過が必要",
+     "u": "/news/ja-f1gate-camara-eyesight/"
+    }
+   ],
+   "see": [
+    "fia",
+    "super-licence",
+    "stewards",
+    "wmsc"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 International Sporting Code (FR-EN) clean version 25.06.2026（1.1.1、1.2.2、1.4.1、各条の見出し）",
+     "url": "https://www.fia.com/system/files/documents/2026_international_sporting_code_fr-en_clean_version_25.06.2026.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "International Sporting Code and Appendices（付則の一覧）",
+     "url": "https://api.fia.com/regulation/category/123"
+    },
+    {
+     "name": "FIA",
+     "title": "Appendix L to the International Sporting Code 2026（ライセンスの書式の「Corrected eyesight (glasses or lenses)」欄）",
+     "url": "https://api.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA 2026 F1 Regulations - Section A [General Provisions] Iss 03 2026-06-25（A1.2.1、A7.2.1 a)、A7.6、A7.7）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_03_-_2026-06-25.pdf"
+    }
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "regulations-2027",
+   "term": "2027年の規則変更",
+   "cat": "マシンと空力",
+   "aliases": [
+    "2027年規則",
+    "2027年レギュレーション",
+    "2027 regulations",
+    "来季の規則",
+    "にせんにじゅうななねんのきそくへんこう"
+   ],
+   "words": [
+    "来年のルール",
+    "規則改正",
+    "燃料流量",
+    "レース距離",
+    "決定と報道",
+    "2027年"
+   ],
+   "short": "2027年のF1で変わる規則。FIAが決めたものと、報道で伝えられている案とを分けて読む。",
+   "body": [
+    "2027年は、2026年に始まった新しい規則の2年目だ。規則の変更は、F1コミッションなどで話し合ったあと、FIAの世界モータースポーツ評議会（WMSC）が承認して決まる。2026年10月21日時点で、承認や公式の発表があった主な変更は次のとおりだ。",
+    "パワーユニット：6月10日に合意し、6月23日のWMSCが承認した。燃料のエネルギーの流れは2026年より5%増え、エンジン（内燃機関）の最大出力は400kWから420kWに上がる。MGU-Kの最大出力は350kWから300kWに下がる。オーバーテイクモードでは350kWのままだ（F1公式）。2028年はさらに変わる（→燃料流量の制限）。テスト：同じ6月23日の承認で、シーズン前のテストが3日から4日に増える（F1公式）。",
+    "スプリント：9月16日に発表された2027年のカレンダーは24戦で、スプリントは6大会から10大会に増える。開幕戦がスプリントの大会になるのは初めてで、開幕はバーレーンだ。モナコでも初めてスプリントが開かれる（RACER）。お金：10月19日のWMSCは、財務規則に関して、F1とF1以外の活動を、場所とITの面で分ける新しい要件を承認した（FIA）。",
+    "合意して承認待ちとされたもの：F1コミッションは9月21日、2027年の決勝の総距離を305kmから290kmに縮めること、雨などで中断したときにレースを終える時刻を決めること、ギアボックスの公認をやめることで合意した。F1公式は、どれもWMSCの承認が条件だと書いている。10月19日のWMSCは、2026年と2027年の規則の改正を承認したと発表したが、どの項目かは示していない（FIA）。",
+    "報道で伝えられている案：リアウイングの2つのモードの切り替えにかけてよい時間を、0.4秒から0.3秒に縮めると、The Raceが10月9日に報じた（→マカレナウイング）。レッドブルのサイドポッドの形を可能にしている規則の許容値を20mmから5mmにするという案も、イタリアの媒体の報道として伝えられた（Crash.net、10月14日）。"
+   ],
+   "examples": [
+    {
+     "t": "FIA、2027年のリアウイング作動時間を400ミリ秒から300ミリ秒へ短縮と報道。回転式ウイングに影響か",
+     "u": "/news/ja-f1gate-fia-2027-rear-wing-300ms/"
+    },
+    {
+     "t": "FIAがレッドブル独自のサイドポッド技術を2027年から規制する方針と報道。正式発表ではない",
+     "u": "/news/ja-f1gate-fia-redbull-sidepod-2027/"
+    },
+    {
+     "t": "レッドブル、2027年の燃料流量とターボ過給圧の変更に向けて燃焼系のハード改良を計画",
+     "u": "/news/en-therace-redbull-pu-gains/"
+    },
+    {
+     "t": "FIAの世界モータースポーツ評議会、F1チームと他部門の人員・設備の分離を承認",
+     "u": "/news/de-motorsporttotal-budgetcap-separation/"
+    },
+    {
+     "t": "ハジャー、2027年のモナコでのスプリント開催に疑問。スプリントは24戦中10戦に",
+     "u": "/news/ja-f1gate-hadjar-monaco-sprint-doubt/"
+    }
+   ],
+   "see": [
+    "fuel-flow",
+    "macarena-wing",
+    "cost-cap",
+    "sprint-venue",
+    "testing-rules",
+    "wmsc",
+    "f1-commission"
+   ],
+   "src": [
+    {
+     "name": "Formula 1 公式",
+     "title": "Agreement reached on proposed F1 regulatory changes for 2027 and 2028（2026年6月10日、燃料流量+5%、ICE 420kW、MGU-K 350kW→300kW）",
+     "url": "https://www.formula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb.dlv3dZcWoXsXGbhw2WWyb"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "FIA's WMSC ratifies F1 regulatory changes for 2027 and 2028（2026年6月23日、テスト3日→4日）",
+     "url": "https://www.formula1.com/en/latest/article/fias-wmsc-ratifies-f1-regulatory-changes-for-2027-and-2028.ACyRcPvBKo8LRiOleCSJU"
+    },
+    {
+     "name": "RACER",
+     "title": "F1 ramps up the sprint races as 2027 calendar is unveiled（2026年9月16日）",
+     "url": "https://racer.com/2026/09/16/f1-ramps-up-the-sprint-races-as-2027-calendar-is-unveiled"
+    },
+    {
+     "name": "FIA",
+     "title": "Rally roadmaps and grassroots affordability focus of FIA World Motor Sport Council（2026年10月19日）",
+     "url": "https://www.fia.com/news/rally-roadmaps-and-grassroots-affordability-focus-fia-world-motor-sport-council"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Regulatory changes for 2026 and 2027 agreed at latest F1 Commission meeting（2026年9月21日、305km→290km、終了時刻、ギアボックス公認の廃止、WMSC承認が条件）",
+     "url": "https://www.formula1.com/en/latest/article/regulatory-changes-for-2026-and-2027-agreed-at-latest-f1-commission-meeting.2wFfaMinLUT40dRVw3FeCC"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA clampdown on Macarena wings for 2027（2026年10月9日、400ms→300ms）",
+     "url": "https://the-race.com/formula-1/fia-clampdown-macarena-f1-rear-wings-for-2027"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Clever Red Bull loophole to be outlawed for F1 2027 in FIA clampdown（2026年10月14日、AutoRacer.itの報道、20mm→5mm）",
+     "url": "https://www.crash.net/f1/news/1107568/1/clever-red-bull-loophole-be-outlawed-f1-2027-fia-clampdown"
+    }
+   ],
+   "checked": "2026-10-21"
   }
  ],
  "sources": [

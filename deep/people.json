@@ -812,12 +812,16 @@
    ],
    "role": "ドライバー",
    "org": "ハース",
-   "short": "フランス国籍のドライバー。ハース所属で、カーナンバーは31。F1デビューは2016年。",
-   "avoid": [],
+   "short": "フランス国籍のドライバー。ハース所属で、カーナンバーは31。F1デビューは2016年。2026年9月30日、2026年シーズン限りでハースを離れると本人が発表した。次の所属は発表されていない。",
+   "avoid": [
+    "2027年もハースのドライバーと書く（2026年限りで離れると本人が発表。ハースは2027年にカマラを起用すると発表）",
+    "次のチームを決まったこととして書く（2026年10月時点で発表なし）"
+   ],
    "words": [
     "フランス",
     "ハース",
-    "31番"
+    "31番",
+    "ハース離脱"
    ],
    "sources": [
     {
@@ -829,10 +833,15 @@
      "name": "autosport web",
      "title": "F1ドライバー一覧（カタカナ表記・所属）",
      "url": "https://www.as-web.jp/driver_top"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Ocon confirms he will leave Haas at end of 2026 season（2026年9月30日）",
+     "url": "https://www.formula1.com/en/latest/article/ocon-confirms-he-will-leave-haas-at-end-of-2026-season.cJjg9W9Om5ZW6Mn9GZ75v"
     }
    ],
    "appears": [],
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "oliver-bearman",
@@ -847,7 +856,9 @@
    "role": "ドライバー",
    "org": "ハース",
    "short": "イギリス国籍のドライバー。ハース所属で、カーナンバーは87。F1デビューは2024年。",
-   "avoid": [],
+   "avoid": [
+    "2027年のハース残留を決まったこととして書く（小松代表は続ける意向と話したが、2026年10月16日時点で正式発表はない）"
+   ],
    "words": [
     "イギリス",
     "ハース",
@@ -863,10 +874,15 @@
      "name": "autosport web",
      "title": "F1ドライバー一覧（カタカナ表記・所属）",
      "url": "https://www.as-web.jp/driver_top"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Ollie Bearman F1 contract delay explained after Haas sign new driver（2026年10月16日、小松代表「タイミングと細部の詰め」、正式発表は後日）",
+     "url": "https://racingnews365.com/ollie-bearman-f1-contract-delay-explained-after-haas-sign-new-driver"
     }
    ],
    "appears": [],
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "nico-hulkenberg",
@@ -1177,7 +1193,7 @@
    ],
    "role": "CEO兼チーム代表",
    "org": "レッドブル",
-   "short": "レッドブル・レーシングのCEO兼チーム代表。2025年7月9日、クリスチャン・ホーナーに代わって就任した。",
+   "short": "レッドブル・レーシングのCEO兼チーム代表。2025年7月9日、クリスチャン・ホーナーに代わって就任した。2026年10月14日、契約を2031年シーズンまで延長したとレッドブルが発表した。",
    "avoid": [
     "クリスチャン・ホーナーをレッドブルの現チーム代表と書く（2025年7月9日に退任し、メキースが後任）"
    ],
@@ -1185,7 +1201,8 @@
     "レッドブル",
     "CEO",
     "チーム代表",
-    "ホーナー後任"
+    "ホーナー後任",
+    "2031年"
    ],
    "sources": [
     {
@@ -1212,10 +1229,20 @@
      "name": "autosport web",
      "title": "クリスチャン・ホーナーを事実上の更迭。レーシングブルズがメキースのレッドブル新チーム代表就任を発表（2025年7月9日、表記「ローラン・メキース」）",
      "url": "https://www.as-web.jp/f1/1230134"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Mekies commits to long-term contract extension as Red Bull Team Principal（2026年10月14日、through the 2031 season）",
+     "url": "https://www.formula1.com/en/latest/article/mekies-commits-to-long-term-contract-extension-as-red-bull-team-principal.1NfCP1Zas2IAzVa3sNa3yf"
+    },
+    {
+     "name": "autosport web",
+     "title": "レッドブルがメキース代表との契約を2031年まで延長（2026年10月15日）",
+     "url": "https://www.as-web.jp/f1/1362495"
     }
    ],
    "appears": [],
-   "checked": "2026-10-02"
+   "checked": "2026-10-21"
   },
   {
    "id": "adrian-newey",
@@ -3827,6 +3854,520 @@
    ],
    "appears": [],
    "checked": "2026-10-17"
+  },
+  {
+   "id": "simone-resta",
+   "name": "シモーネ・レスタ",
+   "kana": "",
+   "en": "Simone Resta",
+   "aliases": [
+    "レスタ副テクニカルディレクター"
+   ],
+   "role": "副テクニカルディレクター",
+   "org": "メルセデス",
+   "short": "メルセデスの副テクニカルディレクター。フェラーリで設計に携わり、ハースのテクニカルディレクターを経て、2024年3月にメルセデスとの契約が発表された（当初の肩書きは戦略開発ディレクター）。2026年はW17の改良について説明している。",
+   "avoid": [
+    "「副技術部長」「副技術責任者」など訳語を混ぜる（ルールブックでは「副テクニカルディレクター」にそろえる）",
+    "メルセデスの「テクニカルディレクター」と書く（副テクニカルディレクター）"
+   ],
+   "words": [
+    "メルセデス",
+    "W17",
+    "副テクニカルディレクター",
+    "アップグレード",
+    "回転式リアウイング"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "ハースF1を離れた元テクニカルディレクターのレスタ、ガーデニング休暇後はメルセデスに加入へ（2024年5月23日、表記「シモーネ・レスタ」）",
+     "url": "https://www.as-web.jp/f1/1081877"
+    },
+    {
+     "name": "autosport web",
+     "title": "メルセデス、ラッセルのパフォーマンスを擁護（2025年11月18日、「メルセデスの副テクニカルディレクターを務める」レスタ）",
+     "url": "https://www.as-web.jp/f1/1269914"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Mercedes sign former Ferrari designer Simone Resta as Strategic Development Director（2024年3月21日）",
+     "url": "https://www.formula1.com/en/latest/article/mercedes-sign-former-ferrari-designer-simone-resta-as-strategic-development.3VG1DV1b3hugdznujx0ni5"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "メルセデスF1 W17の空力バランス問題を特定 アメリカGPで対策（2026年10月18日、「レスタ副テクニカルディレクター」）",
+     "url": "https://f1-gate.com/mercedes-benz/229058.html"
+    },
+    {
+     "name": "Formel1.de",
+     "title": "Formel 1 Technik: Warum Mercedes noch keinen rotierenden Heckflügel hat（2026年10月20日、stellvertretender Technischer Direktor）",
+     "url": "https://www.formel1.de/news/news/2026-10-20/formel-1-technik-warum-mercedes-noch-keinen-rotierenden-heckfluegel-hat"
+    }
+   ],
+   "appears": [
+    "/deep/upgrade-slower/",
+    "/deep/rules/macarena-wing/"
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "rob-marshall",
+   "name": "ロブ・マーシャル",
+   "kana": "",
+   "en": "Rob Marshall",
+   "aliases": [
+    "Rob Marshall"
+   ],
+   "role": "チーフ・テクニカル・オフィサー兼チーフデザイナー",
+   "org": "マクラーレン",
+   "short": "マクラーレンの技術部門の幹部。レッドブルで17年間働いたあと、2024年1月にマクラーレンへ移った。加入時の肩書きはテクニカルディレクター（エンジニアリング＆デザイン）で、マクラーレン公式の今の肩書きはチーフ・テクニカル・オフィサー兼チーフデザイナー。",
+   "avoid": [
+    "「テクニカルディレクター」とだけ書く（加入時の肩書き。公式サイトの今の肩書きはチーフ・テクニカル・オフィサー兼チーフデザイナー）",
+    "レース運営のマーシャル（コース係員）と混同する"
+   ],
+   "words": [
+    "マクラーレン",
+    "技術責任者",
+    "チーフデザイナー",
+    "元レッドブル",
+    "アップデート"
+   ],
+   "sources": [
+    {
+     "name": "McLaren 公式",
+     "title": "Rob Marshall（Chief Technical Officer & Chief Designer、2024年1月にTechnical Director, Engineering & Designとして加入）",
+     "url": "https://www.mclaren.com/racing/team/rob-marshall"
+    },
+    {
+     "name": "autosport web",
+     "title": "マクラーレンのTDマーシャル、成功を収めたレッドブルを離れた背景に“慢心”があったと語る（2025年2月2日、表記「ロブ・マーシャル」、レッドブルで17年）",
+     "url": "https://www.as-web.jp/f1/1175948"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "mark-mateschitz",
+   "name": "マーク・マテシッツ",
+   "kana": "",
+   "en": "Mark Mateschitz",
+   "aliases": [
+    "マルク・マテシッツ",
+    "Mark Mateschitz"
+   ],
+   "role": "レッドブル社（Red Bull GmbH）の株主",
+   "org": "レッドブル",
+   "short": "レッドブル社の株主。共同創業者だった父の一人息子で、父から受け継いだ49%の株式を持つ（残りの51%はタイ側の創業家）。2026年10月14日にレッドブルがメキース代表の契約延長を発表した際、もう一方の株主と連名で声明を出した。",
+   "avoid": [
+    "レッドブル・レーシングのCEOやチーム代表と書く（CEO兼チーム代表はメキース）",
+    "亡くなった父（共同創業者）と混同する",
+    "「マルク・マテシッツ」の表記（autosport webの2026年10月の記事は「マーク・マテシッツ」）"
+   ],
+   "words": [
+    "レッドブル",
+    "株主",
+    "オーナー",
+    "メキース",
+    "契約延長"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "レッドブルがメキース代表との契約を2031年まで延長（2026年10月15日、「レッドブル社の株主であるマーク・マテシッツ」）",
+     "url": "https://www.as-web.jp/f1/1362495"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Mekies commits to long-term contract extension as Red Bull Team Principal（2026年10月14日、株主としての声明）",
+     "url": "https://www.formula1.com/en/latest/article/mekies-commits-to-long-term-contract-extension-as-red-bull-team-principal.1NfCP1Zas2IAzVa3sNa3yf"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Inside Red Bull: the major players in Red Bull's hierarchy（2024年3月14日、父の49%を相続、残り51%はYoovidhya家）",
+     "url": "https://www.planetf1.com/news/red-bull-f1-hierarchy-explained"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "dino-beganovic",
+   "name": "ディーノ・ベガノビッチ",
+   "kana": "",
+   "en": "Dino Beganovic",
+   "aliases": [
+    "ベガノビッチ",
+    "Beganovic",
+    "ディノ・ベガノビッチ"
+   ],
+   "role": "FIA F2ドライバー／2027年からフェラーリのリザーブドライバー（発表済み）",
+   "org": "ダムス・ルーカスオイル／フェラーリ育成／フェラーリ（2027年）",
+   "short": "スウェーデンのドライバーで、フェラーリの育成ドライバー。2026年はダムス・ルーカスオイルからFIA F2に参戦している。2026年10月、フェラーリは2027年から彼をリザーブドライバーに起用すると発表した。車の開発も支え、アントニオ・ジョビナッツィと役割を分ける。",
+   "avoid": [
+    "2026年からフェラーリのリザーブと書く（就任は2027年から）",
+    "「ディノ・ベガノビッチ」の表記（autosport webは「ディーノ」）"
+   ],
+   "words": [
+    "フェラーリ",
+    "リザーブドライバー",
+    "FIA F2",
+    "フェラーリ育成",
+    "ダムス"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "フェラーリF1、2027年リザーブドライバーにベガノビッチを起用（2026年10月17日、表記「ディーノ・ベガノビッチ」）",
+     "url": "https://www.as-web.jp/f1/1363016"
+    },
+    {
+     "name": "autosport web",
+     "title": "フェラーリ育成ベガノビッチ、F1バーレーンGPでFP1に参加へ（2025年3月31日、「スウェーデン出身のディーノ・ベガノビッチ」）",
+     "url": "https://www.as-web.jp/f1/1196487"
+    },
+    {
+     "name": "autosport web",
+     "title": "ベガノビッチが今季2勝目／FIA F2第12戦スプリント（2026年9月25日、「ダムス・ルーカスオイル／フェラーリ育成」）",
+     "url": "https://www.as-web.jp/overseas/1355545"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Ferrari give F2 driver huge opportunity with promotion to F1 reserve role（2026年10月16日、ジョビナッツィと並んでリザーブ）",
+     "url": "https://www.crash.net/f1/news/1107614/1/ferrari-give-f2-driver-huge-opportunity-promotion-f1-reserve-role"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Ferrari confirm two driver academy departures as fresh plans revealed（2026年10月16日、development and reserve driver）",
+     "url": "https://racingnews365.com/ferrari-confirm-two-driver-academy-departures-as-fresh-plans-revealed"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "leonardo-fornaroli",
+   "name": "レオナルド・フォルナローリ",
+   "kana": "",
+   "en": "Leonardo Fornaroli",
+   "aliases": [
+    "フォルナローリ",
+    "Fornaroli"
+   ],
+   "role": "リザーブドライバー（2027年も継続）",
+   "org": "マクラーレン",
+   "short": "イタリアのドライバーで、2025年のFIA F2王者。2026年はマクラーレンのF1リザーブドライバーで、レースのシートはない。マクラーレンは2027年もリザーブを続けると発表し、同年はマクラーレンのハイパーカーでWECにフル参戦する。ハースの2027年のシートをかけた旧型車テストにも参加したが、ハースはカマラを選んだ。",
+   "avoid": [
+    "2026年もFIA F2に参戦中と書く（2026年はレースのシートがない）",
+    "ハースの2027年のドライバーと書く（ハースはカマラを起用）"
+   ],
+   "words": [
+    "マクラーレン",
+    "リザーブドライバー",
+    "F2王者",
+    "WEC",
+    "ハイパーカー"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "マクラーレンF1が2026年リザーブドライバーを発表。FIA F2王者フォルナローリとオワードを起用（2026年1月16日、「2025年FIA F2タイトルを獲得」）",
+     "url": "https://www.as-web.jp/f1/1283438"
+    },
+    {
+     "name": "autosport web",
+     "title": "マクラーレン育成のフォルナローリ、F1レースシートをつかめずリザーブ留任へ。2027年にはWECに参戦（2026年10月20日）",
+     "url": "https://www.as-web.jp/f1/1363969"
+    },
+    {
+     "name": "RACER",
+     "title": "Fornaroli gets McLaren hypercar seat alongside continued F1 reserve role（2026年10月19日）",
+     "url": "https://racer.com/2026/10/19/fornaroli-gets-mclaren-hypercar-seat-alongside-continued-f1-reserve-role"
+    },
+    {
+     "name": "autosport web（carview!配信）",
+     "title": "マクラーレン、フォルナローリをバルセロナのFP1に起用。F2&F3王者のイタリア出身21歳（2026年6月10日）",
+     "url": "https://carview.yahoo.co.jp/news/detail/104450f4666c5040c614a3145b1db9ae5f4c1949/"
+    },
+    {
+     "name": "The Race",
+     "title": "Why one F1 test day decided 2027 Haas driver choice（2026年10月16日、ポルティマオのテストにカマラ、フォルナローリ、平川、ドゥーハン）",
+     "url": "https://www.the-race.com/formula-1/why-one-f1-test-day-decided-2027-haas-driver-choice/"
+    }
+   ],
+   "appears": [
+    "/deep/rules/reserve-driver/"
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "jack-doohan",
+   "name": "ジャック・ドゥーハン",
+   "kana": "",
+   "en": "Jack Doohan",
+   "aliases": [
+    "ドゥーハン",
+    "Doohan"
+   ],
+   "role": "リザーブドライバー",
+   "org": "ハース",
+   "short": "オーストラリアのドライバー。2025年はアルピーヌでF1のレースに出たが、6戦のあとリザーブに移った。2026年はハースの公式リザーブドライバー。2027年の立場はまだ決まっておらず、小松代表は「扉は開いている」と話した（2026年10月）。",
+   "avoid": [
+    "2027年もハースのリザーブと書く（2026年10月時点で未定）",
+    "アルピーヌのドライバーと書く（2025年末で契約終了）",
+    "父のミック・ドゥーハン（ロードレース世界選手権500ccクラスの王者）と混同する"
+   ],
+   "words": [
+    "ハース",
+    "リザーブドライバー",
+    "オーストラリア",
+    "元アルピーヌ"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "TGRハースF1、ジャック・ドゥーハンのリザーブドライバー起用を発表（2026年2月3日）",
+     "url": "https://www.as-web.jp/f1/1288148"
+    },
+    {
+     "name": "TGR Haas F1 Team 公式",
+     "title": "Jack Doohan（Reserve Driver、Australian）",
+     "url": "https://www.haasf1team.com/season/team/jack-doohan"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Jack Doohan confirmed as Haas F1 reserve driver for 2026 season（2026年2月3日、2025年はアルピーヌで6戦）",
+     "url": "https://www.planetf1.com/news/haas-jack-doohan-reserve-driver-f1-2026-line-up"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "ジャック・ドゥーハン ハースF1リザーブ残留は未定 小松礼雄代表「扉は開いている」（2026年10月17日）",
+     "url": "https://f1-gate.com/jack-doohan/228963.html"
+    }
+   ],
+   "appears": [
+    "/deep/rules/rookie/"
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "frederik-vesti",
+   "name": "フレデリック・ベスティ",
+   "kana": "",
+   "en": "Frederik Vesti",
+   "aliases": [
+    "Vesti",
+    "フレデリク・ベスティ"
+   ],
+   "role": "サードドライバー（リザーブ）",
+   "org": "メルセデス",
+   "short": "デンマークのドライバー。2021年にメルセデスの育成に入り、2024年からリザーブ。2026年はメルセデスのサードドライバーとして、FP1やシミュレーター、テストを担う。2026年10月には、マニクールでピレリの2027年用タイヤのテストを走った。",
+   "avoid": [
+    "「フレデリク・ベスティ」の表記（autosport webは「フレデリック」）"
+   ],
+   "words": [
+    "メルセデス",
+    "リザーブドライバー",
+    "サードドライバー",
+    "デンマーク",
+    "ピレリテスト"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "フレデリック・ベスティ（メルセデス）写真キャプション（表記の確認）",
+     "url": "https://www.as-web.jp/f1/1202665/attachment/xpb_1336482_hires"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Vesti 'extremely excited' to be confirmed as Mercedes' Third Driver in 2026（2026年2月2日）",
+     "url": "https://www.formula1.com/en/latest/article/vesti-extremely-excited-to-be-confirmed-as-mercedes-third-driver-in-2026.1q5AA1zbPICreufDAmhkJx"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Pirelli-Test in Magny-Cours: Mercedes testet Intermediates und Slicks（2026年10月16日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/pirelli-test-in-magny-cours-mercedes-testet-intermediates-und-slicks-26101606"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "sacha-fenestraz",
+   "name": "サッシャ・フェネストラズ",
+   "kana": "",
+   "en": "Sacha Fenestraz",
+   "aliases": [
+    "フェネストラズ",
+    "Fenestraz",
+    "サシャ・フェネストラズ"
+   ],
+   "role": "フェラーリのシミュレーター兼開発ドライバー／スーパーフォーミュラ・ドライバー（VANTELIN TEAM TOM'S）",
+   "org": "フェラーリ／VANTELIN TEAM TOM'S",
+   "short": "フランスとアルゼンチンにルーツを持つドライバー。日本のスーパーフォーミュラに参戦し、2022年はランキング2位だった。2026年にフェラーリのシミュレーター兼開発ドライバーになり、2027年にはフェラーリでF1マシンに乗る予定だと本人が明かした。Formula1.itによると、それまでの3年間はメルセデスのシミュレータードライバーだった。",
+   "avoid": [
+    "フェラーリのリザーブドライバーと書く（シミュレーター兼開発ドライバー）",
+    "2027年のテストの日程や内容を決まったこととして書く（本人が乗る予定と話した段階）"
+   ],
+   "words": [
+    "フェラーリ",
+    "シミュレーター",
+    "スーパーフォーミュラ",
+    "TOM'S",
+    "開発ドライバー"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "スーパーフォーミュラなどで活躍するサッシャ・フェネストラズ、2027年にフェラーリのテストに参加へ（2026年10月20日）",
+     "url": "https://as-web.jp/f1/1364026"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "Ferrari, strappa un pilota a Mercedes e chiude un gran colpo di mercato（2026年10月20日、メルセデスで3年、2026年夏の初めにフェラーリへ、2022年SF2位）",
+     "url": "https://www.formula1.it/news/33378/1/ferrari-strappa-un-pilota-a-mercedes-e-chiude-un-gran-colpo-di-mercato"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Former Mercedes driver confirms Ferrari F1 test after switch（2026年10月18日、French-Argentine driver、7月からsimulator and development driver）",
+     "url": "https://racingnews365.com/former-mercedes-driver-confirms-ferrari-f1-test-after-switch"
+    }
+   ],
+   "appears": [],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "gabriele-mini",
+   "name": "ガブリエレ・ミニ",
+   "kana": "",
+   "en": "Gabriele Mini",
+   "aliases": [
+    "Gabriele Mini",
+    "ガブリエーレ・ミニ"
+   ],
+   "role": "FIA F2ドライバー／アルピーヌ育成ドライバー",
+   "org": "MPモータースポーツ／アルピーヌ育成",
+   "short": "イタリアのドライバーで、アルピーヌの育成ドライバー。2026年はMPモータースポーツからFIA F2に参戦している。アルピーヌの旧型車テスト（TPC）にも参加し、2026年10月16日にはポール・リカールで2025年型のA525を走らせた。",
+   "avoid": [
+    "「ガブリエーレ・ミニ」の表記（autosport webは「ガブリエレ」）",
+    "メキシコGPのFP1出走を決まったこととして書く（伊メディアの報道。アルピーヌは未確認）"
+   ],
+   "words": [
+    "アルピーヌ",
+    "育成ドライバー",
+    "FIA F2",
+    "MPモータースポーツ",
+    "TPC"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "アルピーヌ育成ミニが今季2勝目／FIA F2第9戦レース1（2026年7月25日、「ガブリエレ・ミニ（MPモータースポーツ／アルピーヌ育成）」）",
+     "url": "https://www.as-web.jp/overseas/1337609"
+    },
+    {
+     "name": "autosport web",
+     "title": "若手テストに力を入れるアルピーヌ。ガブリエレ・ミニとウーゴ・ウゴチュクウが旧型F1で走行（2026年7月17日）",
+     "url": "https://www.as-web.jp/f1/1334943"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "アルピーヌF1 ガブリエレ・ミニが旧型車テスト メキシコGPのFP1出走も浮上（2026年10月19日）",
+     "url": "https://f1-gate.com/alpine/229084.html"
+    }
+   ],
+   "appears": [
+    "/deep/rules/testing-rules/"
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "nikola-tsolov",
+   "name": "ニコラ・ツォロフ",
+   "kana": "",
+   "en": "Nikola Tsolov",
+   "aliases": [
+    "ツォロフ",
+    "Tsolov"
+   ],
+   "role": "FIA F2ドライバー／レッドブル育成ドライバー",
+   "org": "カンポス・レーシング／レッドブル育成",
+   "short": "ブルガリア出身のレッドブル育成ドライバー。2026年はカンポス・レーシングからFIA F2に参戦し、7月の時点で今季6勝を挙げた。レーシングブルズの2027年の候補とする報道があるが、決まってはいない。",
+   "avoid": [
+    "レーシングブルズ昇格を決まったこととして書く（報道で候補とされる段階）",
+    "F2の順位は変わるので固定して書かない"
+   ],
+   "words": [
+    "レッドブル育成",
+    "FIA F2",
+    "カンポス",
+    "ブルガリア",
+    "レーシングブルズ"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "レッドブル育成ツォロフがFIA F2昇格。2026年カンポスのシートを掴む（2025年9月16日、表記「ニコラ・ツォロフ」、ブルガリア出身）",
+     "url": "https://www.as-web.jp/overseas/1251406"
+    },
+    {
+     "name": "autosport web",
+     "title": "レッドブル育成のF1昇格候補ツォロフが3連勝で今季6勝目飾る／FIA F2第7戦レース2（2026年7月5日、「カンポス・レーシング／レッドブル育成」）",
+     "url": "https://www.as-web.jp/overseas/1331917"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "リアム・ローソン レッドブルF1離脱の可能性に言及（2026年10月19日、ツォロフ昇格は正式に決まっていない）",
+     "url": "https://f1-gate.com/liam-lawson/229189.html"
+    }
+   ],
+   "appears": [
+    "/deep/rules/person-liam-lawson/"
+   ],
+   "checked": "2026-10-21"
+  },
+  {
+   "id": "alexander-wurz",
+   "name": "アレクサンダー・ブルツ",
+   "kana": "",
+   "en": "Alexander Wurz",
+   "aliases": [
+    "ブルツ",
+    "Wurz",
+    "Alex Wurz",
+    "ヴルツ"
+   ],
+   "role": "サーキット設計のコンサルタント（ルワンダの新サーキットの設計に参加）",
+   "org": "自身のコンサルティング会社",
+   "short": "元F1ドライバーで、元GPDA（グランプリ・ドライバーズ協会）会長。自身のコンサルティング会社が、ティルケ・エンジニアリングと組んで、ルワンダに造るアフリカGPの新しいサーキットを設計する。サウジアラビアのキディヤのコースにも深く関わる。",
+   "avoid": [
+    "「ヴルツ」の表記を本文で使う（autosport webは「ブルツ」）",
+    "一人でコースを設計したと書く（ティルケ・エンジニアリングと共同）",
+    "今もGPDA会長と書く"
+   ],
+   "words": [
+    "ルワンダ",
+    "アフリカGP",
+    "サーキット設計",
+    "元F1ドライバー",
+    "ティルケ"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "ルワンダの新サーキットは地形を活かす造りと景観に。設計に携わる元F1ドライバーは「ベンチマークになる」と自信（2026年10月19日、表記「アレクサンダー・ブルツ」）",
+     "url": "https://www.as-web.jp/f1/1363838"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 makes historic announcement with African Grand Prix confirmed（2026年10月13日、former GPDA chairman、Tilke Engineeringと共同）",
+     "url": "https://www.planetf1.com/news/african-grand-prix-f1-calendar"
+    }
+   ],
+   "appears": [
+    "/deep/rules/africa-gp/"
+   ],
+   "checked": "2026-10-21"
   }
  ]
 }
