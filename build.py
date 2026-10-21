@@ -15,6 +15,7 @@ import html
 import json
 import os
 import re
+import urllib.parse
 from urllib.parse import quote
 from datetime import datetime, timezone, timedelta
 
@@ -2646,8 +2647,9 @@ SHARE_CSS = """
 .sk-box small{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:4px}
 .sk-box textarea{width:100%;box-sizing:border-box;font:inherit;font-size:15px;line-height:1.7;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);resize:vertical}
 .sk-box button{margin-top:6px;font:inherit;font-size:14px;font-weight:700;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
-.sk-box button.ok{background:var(--ink);color:var(--bg)}
+.sk-box button.ok{background:var(--ink);color:var(--paper)}
 .sk-w{font-size:12px;color:var(--muted);margin-left:8px}
+.sk a.sk-x,.sk a.sk-x:visited{display:inline-block;margin:10px 0 4px;font-size:15px;font-weight:700;padding:10px 18px;border-radius:999px;background:var(--ink);color:var(--paper)!important;text-decoration:none}
 """
 
 SHARE_JS = """<script>
@@ -2695,7 +2697,7 @@ def build_share_kit(days=7, req_days=4):
 
     def box(label, text, x=False):
         w = f'<span class="sk-w">X の文字数 {x_weight(text)}／280</span>' if x else ''
-        return (f'<div class="sk-box"><small>{e(label)}</small><textarea rows="{8 if x else 2}" readonly>{e(text)}</textarea>'
+        return (f'<div class="sk-box"><small>{e(label)}</small><textarea rows="{8 if x else 3}" readonly>{e(text)}</textarea>'
                 f'<button type="button">コピー</button>{w}</div>')
 
     blocks = []
@@ -2710,6 +2712,7 @@ def build_share_kit(days=7, req_days=4):
         xt = f'{head}\n\n{lead}\n\n{xurl}' if lead and lead != '…' else f'{head}\n\n{xurl}'
         blocks.append(f'<div class="sk-i"><span class="k">{e(label)} · {e(jst_text(dt))}</span><b>{e(title)}</b>'
                       + box('X に投稿', xt, True)
+                      + f'<a class="sk-x" href="https://x.com/intent/post?text={urllib.parse.quote(xt)}" target="_blank" rel="noopener">X の投稿画面を開く ↗</a>'
                       + box('note の本文に入れるリンク', f'続きは F1 Grid Walk で → {nurl}')
                       + '</div>')
     req = [SITE + u for dt, _, u, _, _, _ in items if dt >= now - timedelta(days=req_days)]
