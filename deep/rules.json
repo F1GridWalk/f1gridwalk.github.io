@@ -437,10 +437,10 @@
    "term": "アクティブエアロ",
    "cat": "マシンと空力",
    "aliases": [
-    "ストレートモード",
-    "コーナーモード",
     "可動翼",
     "active aero",
+    "アクティブエアロダイナミクス",
+    "active aerodynamics",
     "あくてぃぶえあろ"
    ],
    "words": [
@@ -448,19 +448,98 @@
     "ウイング",
     "可変",
     "空力",
-    "直線モード"
+    "直線モード",
+    "ウイングが開かない"
    ],
    "short": "走りながら翼の角度を変える仕組み。2026年から。",
    "body": [
-    "直線では前後の翼を寝かせて空気抵抗を減らし（ストレートモード）、コーナーでは立てて車を路面に押さえつける力を得る（コーナーモード）。",
-    "2025年までは翼の角度は基本的に固定で、追い抜きのときだけ後ろの翼を開くDRSがあった。"
+    "直線では前後の翼を寝かせて空気抵抗を減らし（ストレートモード）、コーナーでは立てて車を路面に押さえつける力を得る（コーナーモード）。翼の中の板（フラップ）が、ブラインドのように開いたり閉じたりする（→ストレートモードとコーナーモード）。2025年までは翼の角度は基本的に固定で、追い抜きのときだけ後ろの翼を開くDRSがあった。",
+    "DRSとの違いは3つある。まず、DRSで動くのは後ろの翼だけだったが、アクティブエアロは前後の翼が動く。次に、使える車だ。DRSは決勝では、前の車の1秒以内にいる車だけが使えた。練習走行と予選では、差に関係なく使えた。アクティブエアロは、前の車との差に関係なく全車が使える（F1公式）。最後に、目的だ。The Raceの技術解説者ゲイリー・アンダーソンは、追い抜きを助けるためのものでは「まったくない」と書いた。狙いは最高速を上げることだけで、2026年の車は直線の終わりよりかなり前に電気が足りなくなりやすいため、空気抵抗を減らす効果が大きいという。追い抜きの助けは、前の車に近づいた車だけが使えるオーバーテイクモードが受け持つ。",
+    "翼を開けるのは、決められた直線（作動ゾーン）の中だけだ。技術規則は、翼を開いてよいのを、車が止まっているときか、作動ゾーンの中に完全に入っているときに限っている。ゾーンは、1つのコースにDRSのときより多く設けられる。開くのはドライバーで、ゾーンごとにボタンで開く。閉じるのは自動で、ブレーキを踏むかアクセルを戻すと閉じる。ドライバーが自分で閉じることもできる。一部のゾーンでは、翼を開いたままコーナーに入れないよう、コース上の位置で自動的に閉じる仕組みもある（F1公式）。翼を実際に動かすのはアクチュエーターで、リアウイングのフラップを動かせるのは、FIAの標準ECUの指令だけだ（技術規則）。雨などで危ないとレースコントロールが判断すれば、ストレートモードを使わせないこともできる。前の翼だけをストレートモードにして、後ろの翼はコーナーモードのままにする「部分作動」もある（The Race）。",
+    "壊れたときの決まりもある。技術規則は、前後の翼とも、装置が故障したらコーナーモードの位置に戻るように作ることを求めている。直線では遅くなるが、ダウンフォースの大きい側だ。2026年のオランダGPのスプリント予選では、フェルナンド・アロンソ（アストンマーティン）の車で、ストレートモードがセッションを通して働かなかった。アロンソは「リアウイングも開かなかったので、それでラップタイムを失った」と話し、22人中の最下位に終わった（GPFans）。",
+    "切り替えにかけてよい時間は、前後の翼とも0.4秒以内だ（技術規則）。英The Raceによると、FIAは2027年、リアウイングのこの上限を0.3秒に縮める。とくに関わるのは、フラップを大きく回すマカレナウイングだ。F1-Gate.comは、回転式の仕組みそのものを禁止するものではないと伝えた。たった0.1秒をなぜ規則で縮めるのか。ブレーキの瞬間に翼が戻りきらないと何が起きるのかは、DEEP GRID #16「F1のリアウイング、切り替えの『0.1秒』をなぜ規則で縮めるのか」でくわしく書いた（下の実例から読める）。"
    ],
-   "examples": [],
+   "rule": "テクニカルレギュレーション（2026年 第21版）C3.10.10（フロントウイング）・C3.11.6（リアウイング）",
+   "examples": [
+    {
+     "t": "DEEP GRID #16 F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか",
+     "u": "/deep/wing-300ms/"
+    },
+    {
+     "t": "シンガポールGPのストレートモード区間は5カ所。DRSと違い、前の車との差に関係なく全員が使え、前後のウイングが動く。",
+     "u": "/news/ja-f1gate-singapore-active-aero/"
+    },
+    {
+     "t": "ピレリは、ストレートモードが故障したときのタイヤの損傷を避けるため、リアの最低空気圧を上げた。アルボンは「ソフトがハードのようだ」と話した。",
+     "u": "/news/ja-f1gate-albon-tyre-pressure/"
+    },
+    {
+     "t": "FIA、2027年のリアウイングの作動時間を400ミリ秒から300ミリ秒へ短縮。回転式ウイングそのものは禁止されない。",
+     "u": "/news/ja-f1gate-fia-2027-rear-wing-300ms/"
+    }
+   ],
    "see": [
+    "straight-corner-mode",
     "overtake-mode",
-    "super-clipping",
-    "drs"
-   ]
+    "drs",
+    "macarena-wing",
+    "actuator",
+    "standard-ecu",
+    "super-clipping"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C [Technical] – Issue 21（2026年10月19日）C3.10.10、C3.11.6",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_21_-_2026-10-19.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] – Issue 09（2026年10月1日）目次の B7.1 Driver Adjustable Bodywork",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics（2026年1月27日）",
+     "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: The key terms for Formula 1's new-for-2026 rules（2025年12月17日）",
+     "url": "https://www.formula1.com/en/latest/article/explained-the-new-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0"
+    },
+    {
+     "name": "The Race",
+     "title": "What is DRS in F1? Drag Reduction System explained",
+     "url": "https://www.the-race.com/formula-1/what-is-drs-drag-reduction-system-explained/"
+    },
+    {
+     "name": "The Race",
+     "title": "How each active F1 rear wing concept works - Gary Anderson explains（2026年9月22日）",
+     "url": "https://www.the-race.com/formula-1/how-each-active-f1-rear-wing-concept-works-gary-anderson-explains/"
+    },
+    {
+     "name": "The Race",
+     "title": "Why F1 has added new 'partial' aero mode to 2026 rules（2025年12月12日）",
+     "url": "https://www.the-race.com/formula-1/f1-2026-partial-aero-mode-explained/"
+    },
+    {
+     "name": "GPFans",
+     "title": "Fernando Alonso suffers more misery at Dutch Grand Prix as Aston Martin confirm car issue（2026年8月21日）",
+     "url": "https://www.gpfans.com/en/f1-news/1089297/f1-fernando-alonso-dutch-grand-prix-misery-sprint-qualifying-straight-line-mode-not-working/"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA clampdown on Macarena wings for 2027（2026年10月9日）",
+     "url": "https://www.the-race.com/formula-1/fia-clampdown-macarena-f1-rear-wings-for-2027/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA 2027年F1リアウイング規則を厳格化 フェラーリの独自機構に影響（2026年10月16日）",
+     "url": "https://f1-gate.com/fia/227852.html"
+    }
+   ],
+   "checked": "2026-10-21"
   },
   {
    "id": "overtake-mode",
