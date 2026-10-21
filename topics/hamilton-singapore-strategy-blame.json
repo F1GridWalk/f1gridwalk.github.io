@@ -168,18 +168,27 @@
       "rules": [
         "sc-pit-stop",
         "vsc"
+      ],
+      "links": [
+        "/deep/pit-stops-sepang/"
       ]
     },
     {
       "q": "ピットで失う時間は、どれくらい？",
       "rules": [
         "pit-loss"
+      ],
+      "links": [
+        "/deep/pit-stops-sepang/"
       ]
     },
     {
       "q": "古いタイヤは、どう遅くなっていく？",
       "rules": [
         "degradation"
+      ],
+      "links": [
+        "/deep/soft-like-hard/"
       ]
     }
   ],
