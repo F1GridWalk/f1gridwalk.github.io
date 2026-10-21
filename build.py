@@ -1669,6 +1669,15 @@ RBP_CSS = '''
 .rbp-short{font-size:18px;line-height:1.85;font-weight:700;margin:0 0 18px;padding:14px 16px;border-left:4px solid var(--clay);background:var(--surface);border-radius:0 12px 12px 0}
 .rbp-body p{font-size:16px;line-height:2;margin:0 0 14px}
 .rbp .rb-h{font-size:12.5px;margin:22px 0 6px}
+.rbp-body h2.rbp-sh{font-size:17px;font-weight:800;line-height:1.5;margin:26px 0 8px;padding-left:10px;border-left:3px solid var(--clay)}
+.rbp-body h2.rbp-sh:first-child{margin-top:6px}
+.rb-srcbox{margin:22px 0 4px}
+.rb-srcbox summary{cursor:pointer;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--muted);padding:6px 0}
+.rbp ul.rb-src{margin:6px 0 0}
+.rbp ul.rb-src li{font-size:13px;line-height:1.7;padding:3px 0}
+.rbp ul.rb-src a::before{content:none}
+.rbp ul.rb-src a{color:var(--ink-2);text-decoration-color:var(--line)}
+.rbp ul.rb-src small{display:block;color:var(--muted);font-size:12px}
 .rbp .rb-ex li{font-size:15px}
 .rb-reads small{display:inline-block;margin-right:6px;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
 .rbp .rb-see a{font-size:14px;padding:3px 13px}
@@ -1738,7 +1747,7 @@ def build_rules():
     for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
         tid = t['id']
         keys = ' '.join(x['t'] for x in t.get('examples', []))
-        search[tid] = ' '.join(t.get('body', []))
+        search[tid] = ' '.join(re.sub(r'^## ', '', x) for x in t.get('body', []))
         al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[ぁ-ゟー]+', x)][:4])
         items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}" data-k="{e(keys)}">'
                      f'<span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
@@ -1746,7 +1755,8 @@ def build_rules():
                      f'<span class="rb-s">{e(t["short"])}</span></a>')
         # the entry page
         used = {tid}
-        b = '<div class="rbp-body">' + ''.join(f'<p>{link_terms(e(p), used)}</p>' for p in t['body']) + '</div>'
+        # a body line starting with "## " is a small heading (owner's OK, 21 Oct 2026): lets long entries be scanned
+        b = '<div class="rbp-body">' + ''.join((f'<h2 class="rbp-sh">{e(p[3:].strip())}</h2>' if p.startswith('## ') else f'<p>{link_terms(e(p), used)}</p>') for p in t['body']) + '</div>'
         if t.get('tool') == 'pu':
             opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
             rows = ''.join(f'<label>{e(p)}<select aria-label="{e(p)}">{opts}</select></label>' for p in ['エンジン（ICE）', 'ターボ', 'MGU-K', 'バッテリー（ES）', '制御電子機器（CE）'])
@@ -1761,6 +1771,10 @@ def build_rules():
         others = [x for x in by_cat.get(t['cat'], []) if x['id'] != tid and x['id'] not in (t.get('see') or [])][:12]
         if others:
             b += f'<div class="rb-h">「{e(t["cat"])}」のほかの用語</div><div class="rb-see">' + ''.join(f'<a href="{rb_url(x["id"])}">{e(x["term"])}</a>' for x in others) + '</div>'
+        if t.get('src'):  # each entry's own sources, linked, on its page (owner's OK, 21 Oct 2026); "note" says what it supports
+            b += (f'<details class="rb-srcbox"><summary>主な出典（{len(t["src"])}件）</summary><ul class="rb-ex rb-src">' + ''.join(
+                f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])} ↗</a>'
+                + (f'<small>{e(x["note"])}</small>' if x.get('note') else '') + '</li>' for x in t['src']) + '</ul></details>')
         chk = t.get('checked') or R['checked']
         b += f'<p class="rb-checked">規則の中身は {e(chk)} 時点で確認しています。</p>'
         used.discard(tid)
