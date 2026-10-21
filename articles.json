@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T00:30:00+09:00",
+  "updatedAt": "2026-10-22T06:15:00+09:00",
   "topics": {
     "mercedes-w17-aero-balance": {
       "title": "メルセデス、W17新空力パッケージの不振原因は前後バランスと特定",
@@ -36,9 +36,174 @@
     "fia-budgetcap-separation": {
       "title": "FIA、コストキャップの抜け道封じへ　F1部門と非F1部門を厳格に分離",
       "summary": "FIAは2027年に向け、F1チームの非F1プロジェクトとの間で人員やITを厳格に分離する新規則を導入する。工場の区域分けや入退室記録の保存、部門間の異動に冷却期間を設けるなどの内容で、非F1側からF1側への知見流入をコストキャップ外で行う手法を防ぐ狙いがある。複数のチームが抵抗したと伝えられている。"
+    },
+    "wheel-rim-2027": {
+      "title": "FIA、2027年からホイールリムを予選・決勝で同一仕様に　開発競争を抑制",
+      "summary": "FIAは2027年規則で、ホイールリムを予選と決勝で同じ仕様に統一し、前後それぞれ1仕様のみの使用とした。2026年規則で標準リムが廃止され、各チームが独自設計でタイヤ温度を管理するようになったことが背景だ。フェラーリやマクラーレンらが前後で異なる設計を採用してきたとされ、FIAは予選専用リムによる開発競争を懸念した。"
+    },
+    "f1-2027-race-distance": {
+      "title": "2027年はレース距離を290kmに短縮、2028年は305km超へ復帰",
+      "summary": "2027年のF1は新パワーユニット規則で燃料流量が増えるため、最低レース距離を305kmから290kmに短縮する。タンク拡大に伴うシャシー変更とコストを避ける一時的な措置で、FIAが公表した規則では2028年に305km超へ戻る。モナコは別枠で260km超が維持される。"
+    },
+    "hadjar-sprint-dislike": {
+      "title": "ハジャー「スプリントは運次第」　来季は10戦に増加の方針に不満",
+      "summary": "レッドブルのハジャーは、2026年のスプリント形式は走行時間が少なく運に左右されやすいとして、もう好きではないと語った。来季はスプリントが6戦から10戦に増える予定で、その決定にも失望を示した。シンガポールでの不振は主にマシンの跳ねやパワーユニットなどのトラブルによるものとされる。"
     }
   },
   "articles": [
+    {
+      "id": "en-therace-fia-wheel-rim-single-spec",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "topic": "wheel-rim-2027",
+      "teams": [
+        "ferrari",
+        "mclaren"
+      ],
+      "title": "FIA、2027年から予選専用ホイールリムを禁止　予選と決勝で同一仕様に",
+      "summary": "FIAが世界モータースポーツ評議会で、2027年からホイールリムを予選と決勝で同じ仕様に統一する規則変更を承認したとThe Raceが伝えた。2026年規則で標準リムが廃止されて各チームが独自設計できるようになり、リムの形状がタイヤ温度に大きく影響すると分かってきた。フェラーリはバルセロナで後輪の冷却を狙った新リムを投入し、マクラーレンは前輪を温め後輪を冷やす設計を追求したという。FIAは、予選一発のために温度を最適化した専用リムを使う開発競争を懸念した。スプリントや決勝のパルクフェルメ前から、前後それぞれ1仕様のみを使う必要がある。",
+      "orig": "Why has the FIA intervened in F1's wheel rim war?",
+      "url": "https://www.the-race.com/formula-1/why-an-f1-arms-race-has-been-stopped-before-it-could-start/",
+      "published": "2026-10-21T12:00:00+01:00"
+    },
+    {
+      "id": "it-f1it-fia-wheel-2027-draft",
+      "kind": "tech",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "テクニカル",
+      "topic": "wheel-rim-2027",
+      "teams": [
+        "astonmartin",
+        "ferrari",
+        "mclaren"
+      ],
+      "title": "FIA、2027年規則案でホイール開発を厳格化　予選専用リムは禁止へ",
+      "summary": "FIAが2027年規則の草案を公表し、ホイール開発を厳しく制限するとFormula1.itが報じた。同一車軸の左右でホイール一式を同一仕様とする条項が加わり、記事は一部チームが左右で異なる仕様を使っていた可能性を示唆している。アストンマーティン、フェラーリ、マクラーレンは前後で異なるホイール設計を採用し、タイヤ温度を管理してきたという。10月初めの草案では、表面処理を防錆・摩耗防止・美観の目的に限っている。予選と決勝で使えるホイール仕様は1種類だけで、開発競争の過熱を防ぐ狙いだと記事は論じる。",
+      "orig": "La FIA stringe sui cerchi per il 2027: vietati i cerchioni da qualifica",
+      "url": "https://www.formula1.it/news/33398/1/la-fia-stringe-sui-cerchi-per-il-2027-vietati-i-cerchioni-da-qualifica",
+      "published": "2026-10-21T22:30:00+02:00"
+    },
+    {
+      "id": "de-motorsporttotal-ralf-leclerc-mistakes",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "ドライバー",
+      "topic": "ralf-leclerc-mistakes",
+      "teams": [
+        "ferrari"
+      ],
+      "title": "ラルフ・シューマッハー、ルクレールを批判「無意味なことをしでかす」",
+      "summary": "元F1ドライバーのラルフ・シューマッハーが、ルクレールにはミスが多すぎるとSport Bildで語ったとMotorsport-Total.comが伝えた。シューマッハーは、力ずくで速く走ろうとして無意味なことをしてしまうのがルクレールの弱点の一つだと指摘した。記事によると、ルクレールは今季17戦でチェッカーを受けられなかったのが3回で、うち2回は母国モナコとモンツァでのクラッシュだった。ほかにバルセロナの予選でのクラッシュや、2022年にフランスGPで首位走行中にクラッシュしたあとフェルスタッペンが独走でタイトルを獲った例も挙げている。ルクレールはフェラーリと早期に契約を延長している。",
+      "orig": "Kritik an Charles Leclerc: \"Macht irgendwelche sinnlosen Sachen\"",
+      "url": "https://www.motorsport-total.com/formel-1/news/kritik-an-charles-leclerc-macht-irgendwelche-sinnlosen-sachen-26102112",
+      "published": "2026-10-21T18:16:00+02:00"
+    },
+    {
+      "id": "it-f1it-ralf-hamilton-integrate",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "ドライバー",
+      "topic": "ralf-hamilton-integration",
+      "teams": [
+        "ferrari"
+      ],
+      "title": "ラルフ・シューマッハー「ハミルトンはフェラーリに溶け込むべき」",
+      "summary": "ラルフ・シューマッハーがSky Germanyのポッドキャストで、ハミルトンはチームのやり方に影響を与える前にまずフェラーリに溶け込むべきだと語ったとFormula1.itが伝えた。ハミルトンの加入1年目の統合は想定より難しいと言われている。シューマッハーは、ハミルトンが皆の影を薄くしてボスのように振る舞おうとしているようだと述べ、チーム代表のバスールとの関係にも疑問を呈した。変更の提案をほかの人と話し合っているか分からず、状況は完全に調和しているわけではないとも語った。記事は、これらは同氏の印象であり、ハミルトンやフェラーリの反応は載せていないと断っている。",
+      "orig": "Schumacher senza giri di parole: «Hamilton deve cambiare»",
+      "url": "https://www.formula1.it/news/33399/1/schumacher-senza-giri-di-parole-hamilton-deve-cambiare",
+      "published": "2026-10-21T22:30:00+02:00"
+    },
+    {
+      "id": "de-motorsporttotal-redbull-oracle-ai",
+      "kind": "tech",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "テクニカル",
+      "topic": "redbull-oracle-ai",
+      "teams": [
+        "redbull"
+      ],
+      "title": "レッドブル、オラクルのAIでレース判断を支援　2025年モンツァの助言も",
+      "summary": "レッドブルがオラクルと運用するAIシステムが、レース中の走り方についても推奨を出しているとMotorsport-Total.comが報じた。技術提携責任者のジャック・ハリントン氏によると、もとは規則や過去のスチュワード判断を調べる技術者向けの検索ツールだったが、今はGP中に具体的な助言も行う。2025年イタリアGPの1周目、フェルスタッペンが第1シケインでコースを外した際、AIは罰則回避のため順位を戻すよう勧めた。チームの見立てとは当初異なったが従い、ペナルティなしで首位を取り戻して勝った。ハリントン氏は、F1はこれからも人間のスポーツだと強調している。",
+      "orig": "Red Bull setzt auf KI: Wie Oracle die Rennstrategie verändert",
+      "url": "https://www.motorsport-total.com/formel-1/news/red-bull-setzt-auf-ki-wie-oracle-die-rennstrategie-veraendert-26102108",
+      "published": "2026-10-21T12:00:00+02:00"
+    },
+    {
+      "id": "pt-gp-redbull-2027-new-car",
+      "kind": "news",
+      "lang": "pt",
+      "region": "ブラジル",
+      "source": "Grande Prêmio",
+      "cat": "チーム",
+      "topic": "redbull-2027-new-car",
+      "teams": [
+        "redbull"
+      ],
+      "title": "レッドブル、2027年型はほぼ全面刷新へ　ワーシェ「ほとんど流用しない」",
+      "summary": "レッドブルの技術責任者ピエール・ワーシェがRacingNews365に、2027年型マシンをほぼ新規に作る方針を語ったとGrande Prêmioが伝えた。2026年のRB22には多くの制約があったとして、ほとんどの部品を流用せず、シャシーとギヤボックスは別物になるという。パッケージングや空力、機械部品も作り直す。限られた予算の中で多くの新部品を作る必要があることも認めた。記事によると、レッドブルは今季の両タイトルが手の届かない状況で、フェルスタッペンは221点で4位、チームもコンストラクターズ4位にいる。",
+      "orig": "Red Bull prevê mudar quase todo carro de 2027 e explica plano para manter reação na F1",
+      "url": "https://grandepremio.com/br/f1/red-bull-preve-mudar-quase-todo-carro-de-2027-e-explica-plano-para-manter-reacao-na-f1/",
+      "published": "2026-10-21T16:45:00-03:00"
+    },
+    {
+      "id": "pt-gp-hadjar-sprint-luck",
+      "kind": "news",
+      "lang": "pt",
+      "region": "ブラジル",
+      "source": "Grande Prêmio",
+      "cat": "ドライバー",
+      "topic": "hadjar-sprint-dislike",
+      "teams": [
+        "redbull"
+      ],
+      "title": "ハジャー、スプリント形式を批判「運に頼る必要がある」　来季は10戦に増加",
+      "summary": "レッドブルのハジャーが、2026年のスプリント形式はもう好きではないとGrande Prêmioに語った。走行時間が少なくマシン変更を検証しにくいため運に頼る面があり、うまく仕事ができていないチームに有利に働きかねないと述べた。昨年は楽しんでいたという。来季はスプリントが6戦から10戦に増え、モナコも含まれるが、ハジャーは失望する決定で、誰が決めているのか分からないと話した。記事は、シンガポールでの不振は主にRB22の跳ねやパワーユニットとギヤボックスのトラブルが原因だったとも指摘している。",
+      "orig": "Hadjar critica formato sprint que \"ajuda quem não trabalha bem\" na F1: \"Precisa ter sorte\"",
+      "url": "https://grandepremio.com/br/f1/hadjar-critica-formato-sprint-que-ajuda-quem-nao-trabalha-bem-na-f1-precisa-ter-sorte/",
+      "published": "2026-10-20T15:53:00-03:00"
+    },
+    {
+      "id": "en-gpblog-2028-race-distance-return",
+      "kind": "news",
+      "lang": "en",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "分析",
+      "topic": "f1-2027-race-distance",
+      "teams": [],
+      "title": "FIA、2028年は最低レース距離を305km超へ戻す　2027年の短縮は一時的措置",
+      "summary": "FIAが10月19日に公表した2027年スポーティング規則で、2028年にF1の最低レース距離が305km超へ戻るとGPblogが報じた。2027年は9月21日にF1委員会が承認した通り、305kmから290kmへ短縮され、周回数は2〜3周減る。背景には新パワーユニット規則があり、内燃機関と電気の比率が53対47から58対42へ変わって燃料流量が増える。通常距離のままだとタンク拡大に伴うシャシー変更とコストが必要になるため、2027年だけの措置とした。モナコは260km超が維持され、2028年のPUは比率60対40、内燃機関出力450kWへ進む。",
+      "orig": "FIA restores F1 race distance change for 2028 after 2027 reduction",
+      "url": "https://www.gpblog.com/en/news/fia-sets-out-2028-u-turn-on-controversial-f1-race-distance-change",
+      "published": "2026-10-21T22:01:00+02:00"
+    },
+    {
+      "id": "it-f1it-lusail-qatar-ready",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "サーキット",
+      "topic": "gulf-races-cancel-risk",
+      "circuit": "lusail",
+      "teams": [],
+      "title": "ルサイル、カタール開催の準備は「ほぼ完了」　MotoGPとF1を3週間差で",
+      "summary": "ルサイル・インターナショナル・サーキットは、MotoGPが11月6〜8日、F1が11月27〜29日に迫る中、準備はほぼ完了していると発表したとFormula1.itが伝えた。中東情勢を受けた安全面への懸念が広がっているが、最高経営責任者のアブドゥラジズ・アリ・アルムハンナディ氏は、両イベントは国際モータースポーツ界で最も待たれるものの一つだと述べた。観客席やホスピタリティの最終仕上げが進み、ファンフォーラムやシミュレーター、家族向けの空力ワークショップなども用意される。記事は、2つのイベントは通常通り開催されるとの見通しを示している。",
+      "orig": "F1 e MotoGP in Qatar, Lusail conferma i piani: «Preparativi quasi completati»",
+      "url": "https://www.formula1.it/news/33396/1/f1-e-motogp-in-qatar-lusail-conferma-i-piani-preparativi-quasi-completati",
+      "published": "2026-10-21T21:30:00+02:00"
+    },
     {
       "id": "ja-f1gate-2027-race-distance-290km",
       "kind": "news",
@@ -1256,158 +1421,6 @@
       "orig": "2027年F1ドライバーラインアップ 22席中19席が決定 残る3席の行方",
       "url": "https://f1-gate.com/driver/228957.html",
       "published": "2026-10-18T23:27:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-redbull-pu-hodgkinson",
-      "kind": "tech",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "テクニカル",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "redbull-engine-calibration",
-      "title": "レッドブルF1製PU、技術責任者が語る開幕時のパフォーマンス不足と改善の舞台裏",
-      "summary": "F1-Gate.comは、レッドブル・パワートレインズのホジキンソン技術責任者がThe Raceに語った内容を伝えた。性能に不満があって仕様凍結を延ばしたため、耐久テストと調整の時間が減り、開幕時は「かなり未成熟なキャリブレーション」だったという。バクーからセパンの間に、燃焼系の制御への理解が深まって大きく向上した。FIAに基準メーカーと扱われるためADUOのハード更新は受けず、既存ハードの使い方の改善で伸ばしたと説明している。エンジンはダイノ計測の理論上の最大値にまだ届かず、今季さらに伸びる余地があり、2027年は燃焼系を変更する。",
-      "orig": "レッドブルF1製PU 技術責任者が語る開幕時のパフォーマンス不足と改善の舞台裏",
-      "url": "https://f1-gate.com/redbull/228871.html",
-      "published": "2026-10-18T20:46:00+09:00"
-    },
-    {
-      "id": "en-therace-alonso-honda-subplot",
-      "kind": "tech",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "テクニカル",
-      "topic": "honda-aston-pu-weakness",
-      "teams": [
-        "astonmartin"
-      ],
-      "title": "アストンマーティン不振の裏でアロンソに起きた不可解なPUトラブル　ホンダは異常を確認できず",
-      "summary": "The Raceは、アストンマーティン・ホンダの今季の浮き沈みの中で、アロンソに繰り返し起きた不可解な症状を取り上げた。バクーではターボの遅れ低減を狙ったADUO2仕様を走らせたが、アロンソは約20周でリタイアし、直線で約1.5秒失ったと語った。ホンダはバクーでもセパンでも、データ上の異常は見つからなかったと説明している。シンガポールでも本人が「ターボが壊れた」と訴えたがPUに故障はなく、ホンダは本人を「最高のセンサー」と呼んだ。記事は、ハンガリーでのBスペック投入以降、予選で周回終盤にラップタイムが落ちる傾向が続いていると指摘する。",
-      "orig": "The strange Alonso subplot to Aston Martin's weird recent run",
-      "url": "https://www.the-race.com/formula-1/strange-fernando-alonso-subplot-aston-martin-weird-f1-form/",
-      "published": "2026-10-18T12:00:00+01:00"
-    },
-    {
-      "id": "en-therace-alonso-aston-turbo-doubt",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "分析",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "alonso-turbo-doubt",
-      "title": "アロンソのターボ不調の訴え、ホンダのデータには異常なし　アストンマーティンの奇妙な副筋書き",
-      "summary": "The Raceは、アストンマーティン・ホンダの今季の浮き沈みの中で、アロンソの訴えとホンダのデータが食い違っていると論じた。バクーでアロンソは約20周でリタイアし、直線で1.5秒失ったと語ったが、ホンダは異常を見つけられず、セパンの後も同じ結論だった。シンガポールでもQ1敗退後に「ターボが壊れた」と主張し、部品交換でピットレーンからスタートしたが、やはり問題は見つからなかったという。クラックは、キャデラックのボッタスの後ろでのスリップストリームとオーバーテイク用ブーストが影響した可能性を挙げた。筆者は、テレメトリーに異常が出ない限り、バクーのリタイアは諦めたように見えると結んでいる。",
-      "orig": "The strange Alonso subplot to Aston Martin's weird recent run",
-      "url": "https://www.the-race.com/formula-1/strange-fernando-alonso-subplot-aston-martin-weird-f1-form/",
-      "published": "2026-10-18T12:00:00+01:00"
-    },
-    {
-      "id": "en-therace-ferrari-austin-upgrade",
-      "kind": "tech",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "テクニカル",
-      "circuit": "austin",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-austin-upgrade",
-      "title": "フェラーリ、アメリカGPに今季最大のアップデート　フロア全面見直しと低ドラッグ化",
-      "summary": "フェラーリはアメリカGPに、SF-26として今季4つ目で最大の空力パッケージを投入すると伝えられた。変更はフロア、サイドポッド、上部ボディワークに及び、特にフロアはフロント部分からディフューザーまで見直してダウンフォースと空力バランスの改善を狙う。サイドポッドは大改造を避け、ドラッグ低減を主眼に既存設計を磨く方針で、レッドブルRB22の手法も研究したという。ザントフォールトの前回アップデートは期待した効果が出なかった。オースティン以降は2027年型に軸足を移し、SF-26の開発は各サーキット向けの調整が中心になる。",
-      "orig": "What Ferrari's changing with its biggest F1 upgrade of 2026",
-      "url": "https://www.the-race.com/formula-1/what-ferrari-is-changing-biggest-f1-2026-upgrade/",
-      "published": "2026-10-18T12:00:00+01:00"
-    },
-    {
-      "id": "de-motorsporttotal-verstappen-gt3-15-positions",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "ドライバー",
-      "teams": [
-        "redbull"
-      ],
-      "circuit": "portimao",
-      "topic": "verstappen-gt3-portimao",
-      "title": "フェルスタッペン、GT3で45分間に15ポジション挽回　予選のセットアップミスも告白",
-      "summary": "Motorsport-Totalは、フェルスタッペンのGTWCヨーロッパ初参戦を振り返った。予選ではセットアップミスで車高が低すぎ、路面に擦って火花が出たと本人が認めた。レース中はルルハムがシュトルツ車をスピンさせてペナルティを受け24番手まで後退したが、残り45分で乗り込んだフェルスタッペンが15台を抜いて9位に入った。低いクラスの車に譲られたとの声もあるが、レッドブルの動画では多くが通常のバトルだった。優勝はゲットスピードAMGで、同チーム初の総合勝利だった。",
-      "orig": "Max Verstappen im GT3: 15 Positionen in 45 Minuten gutgemacht",
-      "url": "https://www.motorsport-total.com/formel-1/news/max-verstappen-im-gt3-15-positionen-in-45-minuten-gutgemacht-26101804",
-      "published": "2026-10-18T12:00:00+02:00"
-    },
-    {
-      "id": "de-motorsporttotal-fia-v8-2030",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "ビジネス",
-      "topic": "f1-2030-v8-engine",
-      "title": "新F1エンジンは2030年から？　FIA会長が語る新V8の構想",
-      "summary": "Motorsport-Total.comによると、FIAのビン・スレイエム会長がルワンダでのアフリカGP発表会見で、新しいエンジン規則を2030年シーズンから導入する考えを示した。従来の計画は2031年で、現行方式から5シーズン後を想定していた。会長はV8に言及し、研究開発とPUのコストは少なくとも50％下がると述べ、車体も現在の最低重量768kgより約80kg軽くなるという。騒音ではなくサウンドを重視する姿勢も示し、FOMとメーカーの支持があると主張した。ただし会長自身が「まだ記者に話すべきではないかも」と漏らしており、FIAやFOM、メーカーからの正式な確認はない。",
-      "orig": "Neue F1-Antriebe schon 2030? Was der FIA-Präsident jetzt verraten hat",
-      "url": "https://www.motorsport-total.com/formel-1/news/neue-f1-antriebe-schon-2030-was-der-fia-praesident-jetzt-verraten-hat-26101801",
-      "published": "2026-10-18T12:00:00+02:00"
-    },
-    {
-      "id": "ja-f1are-vcarb-2027-lineup-sky",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "teams": [
-        "racingbulls"
-      ],
-      "topic": "racingbulls-2027-lineup",
-      "title": "VCARBは2027年もローソン＆リンドブラッド継続か　ツォロフはリザーブの見込みとSky報道、ファンの反応",
-      "summary": "F1のアレは、英Sky F1のテッド・クラヴィッツの報道として、レーシングブルズが2027年もローソンとリンドブラッドを継続する見込みだと紹介した。ツォロフはリザーブドライバーにとどまり、F1デビューはさらに1年先送りになるという。いずれもチームからの公式発表はまだなく、未確認の情報だ。掲示板ではローソンの中盤戦の巻き返しを評価し、継続は妥当とする声が多かった。ツォロフの昇格は時期尚早との見方や、角田に同情する書き込みも見られた。",
-      "orig": "英SKY F1：VCARBは2027年もローソン＆リンドブラッド継続、ツォロフはリザーブドライバーの見込み",
-      "url": "https://f1are.com/blog-entry-3995.html",
-      "published": "2026-10-18T18:00:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-antonelli-austin-title-odds",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "topic": "antonelli-title-odds",
-      "teams": [
-        "mercedes"
-      ],
-      "title": "メルセデス副代表、アントネッリのアメリカGP王座決定は「25分の1」",
-      "summary": "メルセデスのブラッド・ロード副代表は、アントネッリがアメリカGPで2026年王座を決める確率を「25分の1程度」と語った。ただし統計モデルではなく感覚的な表現だという。シンガポール後の時点でアントネッリは340点で、2位ラッセルに102点、3位ハミルトンに111点の差をつけている。オースティンで決めるには優勝に加え、ラッセルが9位以下、ハミルトンが5位以下に終わる必要がある。実現すれば20歳でのタイトルとなり、2010年のベッテルが持つ最年少記録を更新する。",
-      "orig": "メルセデスF1 アントネッリのアメリカGP王座決定は「確率25分の1」",
-      "url": "https://f1-gate.com/mercedes-benz/229096.html",
-      "published": "2026-10-18T17:36:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-hadjar-monaco-sprint-doubt",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "topic": "sprint-expansion-2027",
-      "teams": [
-        "redbull"
-      ],
-      "title": "ハジャー、2027年モナコGPのスプリント開催に疑問「誰が決めた？」",
-      "summary": "レッドブルのハジャーは、2027年に初めて組まれるモナコGPのスプリント開催に疑問を呈し、「誰がこういう決定をしているのか分からない」と語った。モナコは追い越しがほぼ不可能なうえ、2027年はスプリントが24戦中6戦から10戦に増える予定だ。スプリント週末はフリー走行が3回から1回に減るため、セットアップや信頼性の問題に対処する時間も限られる。フェルスタッペンも追い越せないコースでの開催に反対し、ハミルトンはシンガポールのスプリントが面白かったのは雨のおかげだとした。ルクレールも市街地でのスプリントに否定的で、アロンソは大手チームが票を握っていると述べた。",
-      "orig": "アイザック・ハジャー 2027年F1モナコGPのスプリント開催に疑問「誰が決めた？」",
-      "url": "https://f1-gate.com/isack-hadjar/229108.html",
-      "published": "2026-10-18T16:36:00+09:00"
     }
   ]
 }
