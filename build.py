@@ -2214,6 +2214,9 @@ HUB_CSS = '''
 .hub-q{font-weight:700;font-size:15.5px;margin:0 0 8px}
 .hub-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--clay);border:1px dashed var(--clay);border-radius:999px;padding:0 9px;margin-left:6px}
 .hub-chips{display:flex;flex-wrap:wrap;gap:6px}
+.hub-nq a.hub-nl{display:block;margin:8px 0 0;padding:10px 14px;border:1px solid var(--line);border-left:3px solid var(--clay);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:15px;font-weight:700;line-height:1.55}
+.hub-nq a.hub-nl small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
+.hub a.hub-gp{display:inline-block;margin:6px 0 14px;font-size:14.5px;font-weight:700;color:var(--ink)}
 .hub-chips a{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:3px 13px;background:var(--surface);text-decoration:none;color:var(--ink)}
 .hub-todo{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .hub-up{list-style:none;margin:0;padding:0}.hub-up li{display:grid;grid-template-columns:7.5em 1fr;gap:8px;font-size:14px;line-height:1.7;padding:6px 0;border-bottom:1px solid var(--line)}
@@ -2356,9 +2359,39 @@ def reader_updates(updates):
     return sorted(out, key=lambda u: u.get('at', ''))
 
 
+def read_index():
+    """url -> (corner label, title) for every STORY, column and DEEP issue."""
+    idx = {f'/topics/{H["slug"]}/': ('STORY', H['title']) for H in HUBS.values()}
+    for x in ALL_COLS:
+        idx[x['url']] = (COL_TAG[x['kind']], x['title'])
+    return idx
+
+
+def story_gp(H):
+    """The /gp/ page of the race a STORY is about, if there is one (newest year first)."""
+    base = _gp_base(H.get('gp', ''))
+    if not base or not base.endswith('GP'):
+        return None
+    hits = [g for g in GPS.values() if _gp_base(g['gp']) == base]
+    return max(hits, key=lambda g: g['date']) if hits else None
+
+
 def next_html(H, rname):
+    """NEXT: each question leads to the rulebook entries and, when one answers it, a STORY / column / DEEP
+    (next[].links, chosen by hand: owner's OK, 21 Oct 2026). The race's /gp/ page closes the block."""
+    idx = read_index()
+    g = story_gp(H)
+    def links(n):
+        out = []
+        for u in n.get('links', []):
+            if u in idx and u != f'/topics/{H["slug"]}/':
+                lb, t = idx[u]
+                out.append(f'<a class="hub-nl" href="{e(u)}" data-track="click/hub-next/{e(H["slug"])}"><small>{e(lb)}</small>{e(t)} →</a>')
+        return ''.join(out)
     return ('<h2><i>NEXT</i>次の疑問へ</h2>' + ''.join(
-        f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div></div>' for n in H['next'])
+        f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div>'
+        + links(n) + '</div>' for n in H['next'])
+        + (f'<a class="hub-gp" href="/gp/{e(g["slug"])}/" data-track="click/hub-gp/{e(g["slug"])}">{e(g["date"].year)} {e(g["gp"])}の記事を、まとめて読む →</a>' if g else '')
         + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
 
 
