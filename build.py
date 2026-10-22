@@ -1433,6 +1433,7 @@ TERM_JS = '''<script>
 </script>'''
 
 
+TEAMS_ALL = {}  # teams.json teams, for person pages
 PEOPLE = []  # deep/people.json: verified names and titles (shown in the rulebook search as 人物)
 
 
@@ -1448,6 +1449,8 @@ def term_lookup():
 def load_rules():
     global RULES, PEOPLE
     PEOPLE = (load('deep/people.json', {}) or {}).get('people', [])
+    global TEAMS_ALL
+    TEAMS_ALL = (load('teams.json', {}) or {}).get('teams', {})
     R = load('deep/rules.json')
     if R and R.get('draft') and os.environ.get('PREVIEW_DRAFTS') != '1':
         old = os.path.join(ROOT, 'deep', 'rules', 'index.html')
@@ -1673,6 +1676,8 @@ RBP_CSS = '''
 .rbp-body h2.rbp-sh{font-size:17px;font-weight:800;line-height:1.5;margin:26px 0 8px;padding-left:10px;border-left:3px solid var(--clay)}
 .rbp-body h2.rbp-sh:first-child{margin-top:6px}
 .rb-srcbox{margin:22px 0 4px}
+.rbp .rb-team{margin:10px 0 0}.rbp .rb-team a{font-size:15px;font-weight:700;color:var(--ink)}
+.rbp .rb-mate{margin:6px 0 0;font-size:14.5px;color:var(--ink-2)}.rbp .rb-mate a{font-weight:700;color:var(--ink)}
 .rb-srcbox summary{cursor:pointer;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--muted);padding:6px 0}
 .rbp ul.rb-src{margin:6px 0 0}
 .rbp ul.rb-src li{font-size:13px;line-height:1.7;padding:3px 0}
@@ -1796,17 +1801,27 @@ def build_rules():
                      f'<span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(p["short"])}</span></a>')
+        # the person's page as a fan's way in (owner's OK, 22 Oct 2026): reading first, then team, news, people around them
         b = f'<div class="rb-h" style="margin-top:0">肩書き</div><span class="rb-rule">{e(p["role"])}（{e(p["org"])}）</span>'
+        tk = next((k for k, t in TEAMS_ALL.items() if t.get('name') and t['name'] in p.get('org', '')), None)
+        if tk and os.path.exists(os.path.join(ROOT, 'teams', tk, 'index.html')):
+            b += f'<p class="rb-team"><a href="/teams/{e(tk)}/" data-track="click/person/{e(p["id"])}/team">{e(TEAMS_ALL[tk]["name"])}の記事を、まとめて読む →</a></p>'
+        if tk and p.get('role') == 'ドライバー':
+            mates = [x for x in team_people(tk)[0] if x['id'] != p['id']]
+            if mates:
+                b += ('<p class="rb-mate">チームメイト：' + '、'.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/person/{e(p["id"])}/mate">{e(x["name"])} →</a>' for x in mates) + '</p>')
         b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
             b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
-        if p.get('sources'):
-            b += '<div class="rb-h">出典（肩書きの確認）</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])}</a></li>' for x in p['sources']) + '</ul>'
         pn_ = person_news(p, ALLARTS)
         if pn_:
             b += (f'<div class="rb-h">{e(p["name"])}が出てくる最新ニュース</div><ul class="rb-ex">'
                   + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/person/{e(p["id"])}/news">{e(a["title"])}</a></li>' for a in pn_) + '</ul>')
+        b += f'<!--peers:{tid}-->'
+        if p.get('sources'):
+            b += (f'<details class="rb-srcbox"><summary>出典（肩書きの確認・{len(p["sources"])}件）</summary><ul class="rb-ex rb-src">' + ''.join(
+                f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])} ↗</a></li>' for x in p['sources']) + '</ul></details>')
         b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
         ld_p = {'@context': 'https://schema.org', '@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
                 'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
@@ -2525,6 +2540,11 @@ GPS = {}            # slug -> race info (filled by plan_gps)
 GP_OF = {}          # article id -> GP slug
 
 ENT_CSS = """
+.tm-ppl{margin:14px 0 6px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.tm-ppl p{display:grid;grid-template-columns:5.2em 1fr;align-items:baseline;margin:4px 0;font-size:15px;line-height:1.8}
+.tm-ppl span{grid-row:1/9;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
+.tm-ppl a{grid-column:2;font-weight:700;color:var(--ink)}
+.ent-grid li a em{display:block;font-style:normal;font-size:13px;font-weight:700;color:var(--ink-2);margin:2px 0 4px}
 .ent-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:6px 0 4px}
 .ent-k{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--clay)}
 .ent-facts{display:flex;flex-wrap:wrap;gap:6px 10px;margin:0 0 14px;font-size:13.5px;color:var(--ink-2)}
@@ -2658,7 +2678,8 @@ def add_term_reads(n=5):
     for x in ALL_COLS:
         reads.append((x['dt'].isoformat(), COL_TAG[x['kind']], x['url'], x['title']))
     reads.sort(key=lambda r: r[0], reverse=True)
-    by_term = {}
+    by_term, page_people = {}, {}
+    pname = {'person-' + q['id']: q['name'] for q in PEOPLE}
     for dt, label, url, title in reads:
         f = os.path.join(ROOT, url.strip('/'), 'index.html')
         if not os.path.exists(f):
@@ -2667,6 +2688,7 @@ def add_term_reads(n=5):
             ids = dict.fromkeys(TERM_LINK.findall(fh.read()))
         for tid in ids:
             by_term.setdefault(tid, []).append((label, url, title))
+        page_people[url] = {t for t in ids if t.startswith('person-')}
     rdir = os.path.join(ROOT, 'deep', 'rules')
     for d in sorted(os.listdir(rdir)):
         f = os.path.join(rdir, d, 'index.html')
@@ -2678,9 +2700,21 @@ def add_term_reads(n=5):
         if mk not in h:
             continue
         got = by_term.get(d, [])[:n]
-        box = ('<div class="rb-h">この言葉が出てくる読み物</div><ul class="rb-ex rb-reads">' + ''.join(
+        box = ('<div class="rb-h">' + ('この人が出てくる読み物' if d.startswith('person-') else 'この言葉が出てくる読み物') + '</div><ul class="rb-ex rb-reads">' + ''.join(
             f'<li><a href="{e(u)}" data-track="click/rb-reads/{e(d)}"><small>{e(lb)}</small>{e(t)}</a></li>' for lb, u, t in got) + '</ul>') if got else ''
-        write(f'deep/rules/{d}/index.html', h.replace(mk, box))
+        h = h.replace(mk, box)
+        pk = f'<!--peers:{d}-->'
+        if pk in h:
+            co = {}
+            for ids in page_people.values():
+                if d in ids:
+                    for o in ids:
+                        if o != d:
+                            co[o] = co.get(o, 0) + 1
+            peers = sorted([(c, o) for o, c in co.items() if c >= 2 and o in pname], key=lambda x: (-x[0], pname[x[1]]))[:6]
+            h = h.replace(pk, ('<div class="rb-h">よく一緒に出てくる人物</div><div class="rb-see">' + ''.join(
+                f'<a href="/deep/rules/{e(o)}/" data-track="click/person/peer/{e(o)}">{e(pname[o])}</a>' for _, o in peers) + '</div>') if peers else '')
+        write(f'deep/rules/{d}/index.html', h)
     return by_term
 
 
@@ -2855,6 +2889,22 @@ def add_related(n=3):
         write(url.strip('/') + '/index.html', h.replace(mk, box))
 
 
+def driver_person(short):
+    """people.json entry for a driver's short name in teams.json (drivers first)."""
+    c = [p for p in PEOPLE if short == p['name'] or short in (p.get('aliases') or []) or p['name'].endswith('・' + short)]
+    c.sort(key=lambda p: p.get('role') != 'ドライバー')
+    return c[0] if c else None
+
+
+def team_people(k):
+    """(drivers, principal) for a team key: people.json entries, principal = チーム代表 of that team."""
+    t = TEAMS_ALL.get(k) or {}
+    ds = [x for x in (driver_person(d) for d in t.get('drivers', [])) if x]
+    name = t.get('name') or ''
+    pr = [p for p in PEOPLE if name and p.get('org', '').startswith(name) and 'チーム代表' in p.get('role', '') and not p.get('role', '').startswith('副')]
+    return ds, (pr[0] if pr else None)
+
+
 DRV_CSS = """
 .drv h1{font-size:26px;margin:6px 0 4px}
 .drv .lead{color:var(--ink-2);font-size:14.5px;line-height:1.8;margin:0 0 18px}
@@ -2863,7 +2913,7 @@ DRV_CSS = """
 .drv-hot b{display:block;font-size:16px}
 .drv-hot span{display:block;font-size:13px;color:var(--ink-2);line-height:1.6;margin-top:2px}
 .drv-tm{border-top:1px solid var(--line);padding:12px 0 10px}
-.drv-tm .tn{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;letter-spacing:.06em;color:var(--muted);text-decoration:none;margin-bottom:6px}
+.drv-tm .tn{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:var(--ink);text-decoration:none;margin-bottom:8px;padding:4px 0}
 .drv-tm .tn i{display:inline-block;width:18px;height:6px;border-radius:3px}
 .drv-tm .ds{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .drv-tm .ds a{display:block;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none}
@@ -2877,10 +2927,7 @@ def build_drivers(by_term):
     each name leading to the person's page (reading first, then news). Built from teams.json + people.json only."""
     T = load('teams.json', {}) or {}
     teams, order = T.get('teams', {}), T.get('order', [])
-    def find(short):
-        c = [p for p in PEOPLE if short == p['name'] or short in (p.get('aliases') or []) or p['name'].endswith('・' + short)]
-        c.sort(key=lambda p: p.get('role') != 'ドライバー')
-        return c[0] if c else None
+    find = driver_person
     grid, drivers = [], []
     for k in order:
         t = teams.get(k) or {}
@@ -3016,6 +3063,10 @@ def build_team_pages(allarts, flag_of, teams):
              f'<p class="ent-k">{e(en.upper())}</p><h1>{e(name)}のニュース・コラム</h1>',
              f'<p class="lead">{e(name)}に関する世界のF1ニュースの日本語要約と、コラム・STORY を新しい順に集めています。</p>',
              '<div class="ent-jump">' + ''.join(jump) + '</div>']
+        ds, pr = team_people(k)
+        if ds or pr:  # team -> its people (owner's OK, 22 Oct 2026)
+            b.append('<div class="tm-ppl">' + (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver">{e(x["name"])} →</a>' for x in ds) + '</p>') if ds else '')
+                     + (f'<p><span>代表</span><a href="/deep/rules/person-{e(pr["id"])}/" data-track="click/team/{k}/principal">{e(pr["name"])} →</a></p>' if pr else '') + '</div>')
         if hubs:
             b.append('<section id="tm-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/team/{k}/story') for H in hubs) + '</ul></section>')
         if cols:
@@ -3031,7 +3082,8 @@ def build_team_pages(allarts, flag_of, teams):
         return []
     cards.sort(reverse=True)
     items = ''.join(f'<li><a href="/teams/{k}/" data-track="click/team-index/{k}"><small>{e(en)}</small><b>{e(name)}</b>'
-                    f'<span>ニュース {n}本' + (f' · コラム {nc}本' if nc else '') + f'<br>最新：{e(la["title"])}</span></a></li>' for n, k, name, en, nc, la in cards)
+                    + (f'<em>{e(" ／ ".join(x["name"].split("・")[-1] for x in team_people(k)[0]))}</em>' if team_people(k)[0] else '')
+                    + f'<span>ニュース {n}本' + (f' · コラム {nc}本' if nc else '') + f'<br>最新：{e(la["title"])}</span></a></li>' for n, k, name, en, nc, la in cards)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › チームごとに読む</nav><p class="ent-k">TEAMS</p><h1>チームごとに読む</h1>'
             '<p class="lead">好きなチームのニュースとコラムを、まとめて読めます。記事の多いチームから順に。</p>'
             f'<ul class="ent-grid two">{items}</ul><p class="ent-more"><a href="/gp/">GPごとに読む</a><a href="/news/">ニュース一覧</a></p>')
