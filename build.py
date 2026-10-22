@@ -2664,6 +2664,8 @@ def _map_svg(c):
             + (f'<circle cx="{st[0]}" cy="{st[1]}" r="2.6"/>' if st else '') + '</svg>')
 
 
+READ_CENTRAL = {}  # url -> people a STORY / column / DEEP names in its title or lead
+READ_TITLE = {}    # url -> people it names in its title
 TERM_LINK = re.compile(r'<a class="term"[^>]*data-term="([^"]+)"')
 
 
@@ -2671,13 +2673,27 @@ def add_term_reads(n=5):
     """Rulebook entry pages: 「この言葉が出てくる読み物」— the STORY, DEEP GRID and column pages whose text
     links to that entry, newest first. Most search visitors land on the rulebook; this takes them on to
     the site's own reading (owner's OK, 18 Oct 2026). Replaces the <!--reads:id--> marker build_rules leaves."""
-    reads = []
+    reads, lead = [], {}
     for H in hubs_newest():
         ups = [u.get('at', '') for u in H.get('updates', [])]
         reads.append((max(ups) if ups else H.get('checked', ''), 'STORY', f'/topics/{H["slug"]}/', H['title']))
+        lead[f'/topics/{H["slug"]}/'] = (H['title'], H.get('dek', ''))
     for x in ALL_COLS:
         reads.append((x['dt'].isoformat(), COL_TAG[x['kind']], x['url'], x['title']))
+        J = load(('deep/' if x['kind'] == 'deep' else 'lens/') + x['url'].strip('/').split('/')[-1] + '.json') or {}
+        lead[x['url']] = (x['title'], J.get('dek', ''))
     reads.sort(key=lambda r: r[0], reverse=True)
+    # who a piece is ABOUT: named in its title or lead (owner, 22 Oct 2026 — a passing mention is not "登場")
+    def about(text):
+        out = set()
+        for q in PEOPLE:
+            nm = [a for a in [q['name']] + (q.get('aliases') or []) if len(a) >= 3 and not re.fullmatch(r'[A-Za-z .]+', a)]
+            if any(a in text for a in nm):
+                out.add('person-' + q['id'])
+        return out
+    global READ_CENTRAL, READ_TITLE
+    READ_TITLE = {u: about(t) for u, (t, _) in lead.items()}            # named in the title: the piece is about them
+    READ_CENTRAL = {u: about(t + ' ' + d) for u, (t, d) in lead.items()}  # named in the title or the lead
     by_term, page_people = {}, {}
     pname = {'person-' + q['id']: q['name'] for q in PEOPLE}
     for dt, label, url, title in reads:
@@ -2689,6 +2705,10 @@ def add_term_reads(n=5):
         for tid in ids:
             by_term.setdefault(tid, []).append((label, url, title))
         page_people[url] = {t for t in ids if t.startswith('person-')}
+        for tid in READ_CENTRAL.get(url, ()):  # named in the title or lead but never linked in the text: still theirs
+            if (label, url, title) not in by_term.get(tid, []):
+                by_term.setdefault(tid, []).append((label, url, title))
+                page_people[url].add(tid)
     rdir = os.path.join(ROOT, 'deep', 'rules')
     for d in sorted(os.listdir(rdir)):
         f = os.path.join(rdir, d, 'index.html')
@@ -2699,7 +2719,9 @@ def add_term_reads(n=5):
         mk = f'<!--reads:{d}-->'
         if mk not in h:
             continue
-        got = by_term.get(d, [])[:n]
+        allr = by_term.get(d, [])
+        tier = lambda r: 2 if d in READ_TITLE.get(r[1], ()) else (1 if d in READ_CENTRAL.get(r[1], ()) else 0)
+        got = sorted(allr, key=lambda r: -tier(r))[:n]  # stable: newest first within each tier
         box = ('<div class="rb-h">' + ('この人が出てくる読み物' if d.startswith('person-') else 'この言葉が出てくる読み物') + '</div><ul class="rb-ex rb-reads">' + ''.join(
             f'<li><a href="{e(u)}" data-track="click/rb-reads/{e(d)}"><small>{e(lb)}</small>{e(t)}</a></li>' for lb, u, t in got) + '</ul>') if got else ''
         h = h.replace(mk, box)
@@ -2936,10 +2958,10 @@ def build_drivers(by_term):
             p = find(d)
             if not p:
                 continue
-            reads = by_term.get('person-' + p['id'], [])
+            reads = [r for r in by_term.get('person-' + p['id'], []) if 'person-' + p['id'] in READ_CENTRAL.get(r[1], ())]
             nn = len(person_news(p, ALLARTS))
             drivers.append((p, reads))
-            sub = f'STORY・コラム {len(reads)}本' if reads else ('ニュースあり' if nn else '')
+            sub = f'読み物 {len(reads)}本' if reads else ('ニュースあり' if nn else '')
             cards.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/{e(p["id"])}"><b>{e(p["name"])}</b>' + (f'<small>{e(sub)}</small>' if sub else '') + '</a>')
         if not cards:
             continue
@@ -2950,8 +2972,9 @@ def build_drivers(by_term):
     # drivers in the newest reading, newest first (one per driver)
     hot, rank = [], []
     for p, reads in drivers:
-        if reads:
-            rank.append((reads[0], p))
+        top = [r for r in reads if 'person-' + p['id'] in READ_TITLE.get(r[1], ())]
+        if top:
+            rank.append((top[0], p))
     order_urls = {}
     for H in hubs_newest():
         ups = [u.get('at', '') for u in H.get('updates', [])]
@@ -2964,10 +2987,10 @@ def build_drivers(by_term):
         if u in used_u or len(hot) >= 3:
             continue
         used_u.add(u)
-        hot.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/hot/{e(p["id"])}"><b>{e(p["name"])}</b><span>最新の読み物：{e(lb)}「{e(ttl)}」</span></a>')
+        hot.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/hot/{e(p["id"])}"><b>{e(p["name"])}</b><span>{e(lb)}「{e(ttl)}」</span></a>')
     body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › ドライバー</nav><div class="drv">'
             f'<h1>ドライバー</h1><p class="lead">{e(T.get("season", "2026"))}年のF1を走る{len(drivers)}人を、チームごとに並べています。名前を押すと、その人の STORY・コラム・ニュースをまとめて読めます。</p>'
-            + (f'<h2>最近の読み物に登場</h2><div class="drv-hot">{"".join(hot)}</div>' if hot else '')
+            + (f'<h2>最近の読み物の主役</h2><div class="drv-hot">{"".join(hot)}</div>' if hot else '')
             + '<h2>チームとドライバー</h2>' + ''.join(grid) + '</div>')
     url = SITE + '/drivers/'
     write('drivers/index.html', page('F1ドライバー一覧 2026｜チームごとの22人と記事｜F1グリッドウォーク',
