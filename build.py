@@ -2543,7 +2543,10 @@ ENT_CSS = """
 .tm-ppl{margin:14px 0 6px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .tm-ppl p{display:grid;grid-template-columns:5.2em 1fr;align-items:baseline;margin:4px 0;font-size:15px;line-height:1.8}
 .tm-ppl span{grid-row:1/9;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
-.tm-ppl a{grid-column:2;font-weight:700;color:var(--ink)}
+.tm-ppl a{grid-column:2;color:var(--ink);margin:0 0 6px;text-decoration:none}
+.tm-ppl a b{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.tm-ppl a small{display:block;font-size:12px;font-weight:400;color:var(--muted);line-height:1.5}
+.tm-ppl p.tm-ppl-h{display:block;font-size:12.5px;font-weight:800;letter-spacing:.1em;color:var(--clay);margin:0 0 6px}
 .ent-grid li a em{display:block;font-style:normal;font-size:13px;font-weight:700;color:var(--ink-2);margin:2px 0 4px}
 .ent-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:6px 0 4px}
 .ent-k{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--clay)}
@@ -2664,6 +2667,7 @@ def _map_svg(c):
             + (f'<circle cx="{st[0]}" cy="{st[1]}" r="2.6"/>' if st else '') + '</svg>')
 
 
+READ_COUNT = {}    # person-id -> number of STORY / column / DEEP pieces naming them
 READ_CENTRAL = {}  # url -> people a STORY / column / DEEP names in its title or lead
 READ_TITLE = {}    # url -> people it names in its title
 TERM_LINK = re.compile(r'<a class="term"[^>]*data-term="([^"]+)"')
@@ -2737,6 +2741,7 @@ def add_term_reads(n=5):
             h = h.replace(pk, ('<div class="rb-h">よく一緒に出てくる人物</div><div class="rb-see">' + ''.join(
                 f'<a href="/deep/rules/{e(o)}/" data-track="click/person/peer/{e(o)}">{e(pname[o])}</a>' for _, o in peers) + '</div>') if peers else '')
         write(f'deep/rules/{d}/index.html', h)
+    READ_COUNT.update({k: len(v) for k, v in by_term.items()})
     return by_term
 
 
@@ -2918,6 +2923,31 @@ def driver_person(short):
     return c[0] if c else None
 
 
+MEMBER_GROUPS = [  # (label, pattern) — first match wins (owner's OK, 22 Oct 2026)
+    ('reserve', 'リザーブ', r'リザーブ|テストドライバー|テスト兼|サードドライバー|シミュレーター|開発ドライバー'),
+    ('mgmt', '代表・経営', r'チーム代表|副チーム代表|チーム副代表|CEO|会長|オーナー|株主|創業者|チェアマン'),
+    ('race', 'レース現場', r'レースエンジニア|トラックサイド|ヘッド・オブ・レーシング|パフォーマンスエンジニア|レーシングディレクター|チーフトラックサイド'),
+    ('tech', '技術', r'テクニカル|技術|CTO|チーフデザイナー|パワートレイン|パワーユニット'),
+    ('mgmt', '代表・経営', r'.'),
+]
+
+
+def team_members(k):
+    """Everyone in people.json who works for team k, by group, most-read first; principal first."""
+    t = TEAMS_ALL.get(k) or {}
+    name = t.get('name') or ''
+    ds = {x['id'] for x in team_people(k)[0]}
+    out = {}
+    for p in PEOPLE:
+        if not name or not p.get('org', '').startswith(name) or p['id'] in ds or p.get('role') == 'ドライバー':
+            continue
+        g = next((gk for gk, _, pat in MEMBER_GROUPS if re.search(pat, p.get('role', ''))), 'mgmt')
+        out.setdefault(g, []).append(p)
+    for g, ps in out.items():
+        ps.sort(key=lambda p: (not ('チーム代表' in p['role'] and not p['role'].startswith('副')), -READ_COUNT.get('person-' + p['id'], 0), p['name']))
+    return out
+
+
 def team_people(k):
     """(drivers, principal) for a team key: people.json entries, principal = チーム代表 of that team."""
     t = TEAMS_ALL.get(k) or {}
@@ -3087,9 +3117,17 @@ def build_team_pages(allarts, flag_of, teams):
              f'<p class="lead">{e(name)}に関する世界のF1ニュースの日本語要約と、コラム・STORY を新しい順に集めています。</p>',
              '<div class="ent-jump">' + ''.join(jump) + '</div>']
         ds, pr = team_people(k)
-        if ds or pr:  # team -> its people (owner's OK, 22 Oct 2026)
-            b.append('<div class="tm-ppl">' + (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver">{e(x["name"])} →</a>' for x in ds) + '</p>') if ds else '')
-                     + (f'<p><span>代表</span><a href="/deep/rules/person-{e(pr["id"])}/" data-track="click/team/{k}/principal">{e(pr["name"])} →</a></p>' if pr else '') + '</div>')
+        mem = team_members(k)
+        if ds or mem:  # team -> its people (owner's OK, 22 Oct 2026)
+            def short_role(r):
+                r = re.sub(r'（[^）]*）|\([^)]*\)', '', r).split('。')[0].strip()
+                return r if len(r) <= 22 else r[:21] + '…'
+            rows = (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver"><b>{e(x["name"])} →</b></a>' for x in ds) + '</p>') if ds else '')
+            for gk, gl in [('mgmt', '代表・経営'), ('tech', '技術'), ('race', 'レース現場'), ('reserve', 'リザーブ')]:
+                if not mem.get(gk):
+                    continue
+                rows += (f'<p><span>{e(gl)}</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/{gk}"><b>{e(x["name"])} →</b><small>{e(short_role(x["role"]))}</small></a>' for x in mem[gk][:4]) + '</p>')
+            b.append(f'<div class="tm-ppl"><p class="tm-ppl-h">主なメンバー</p>{rows}</div>')
         if hubs:
             b.append('<section id="tm-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/team/{k}/story') for H in hubs) + '</ul></section>')
         if cols:
