@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>F1の予算上限の「抜け穴」とは何か　FIAはなぜ工場とITを分けさせるのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク</title>
+<meta name="description" content="F1チームが1年に使えるお金には上限がある。ところが、同じグループの別の部門で働く人や、共用の風洞・シミュレーターを通じて、上限の外からF1を速くできるのではないか、という疑いが何年も消えなかった。FIAは2027年から、F1の人と設備とITを、ほかの部門からはっきり切り離す。予算上限の仕組み、ふさがれる「抜け穴」、ホーナーの「5億か6億ドル」、そして2021年のレッドブルの前例から、この新しい決まりを読む。">
+<link rel="canonical" href="https://f1gridwalk.github.io/deep/cost-cap-loophole/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="F1 Grid Walk" href="/feed.xml">
+<meta name="apple-mobile-web-app-title" content="Grid Walk">
+<meta name="application-name" content="Grid Walk">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="F1 Grid Walk">
+<meta property="og:title" content="F1の予算上限の「抜け穴」とは何か　FIAはなぜ工場とITを分けさせるのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク">
+<meta property="og:description" content="F1チームが1年に使えるお金には上限がある。ところが、同じグループの別の部門で働く人や、共用の風洞・シミュレーターを通じて、上限の外からF1を速くできるのではないか、という疑いが何年も消えなかった。FIAは2027年から、F1の人と設備とITを、ほかの部門からはっきり切り離す。予算上限の仕組み、ふさがれる「抜け穴」、ホーナーの「5億か6億ドル」、そして2021年のレッドブルの前例から、この新しい決まりを読む。">
+<meta property="og:url" content="https://f1gridwalk.github.io/deep/cost-cap-loophole/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://f1gridwalk.github.io/deep/cost-cap-loophole/og.png?v=e21748d0">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://f1gridwalk.github.io/deep/cost-cap-loophole/og.png?v=e21748d0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">
+<meta property="article:published_time" content="2026-10-22T13:21:00+09:00">
+<style>
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
+.more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
+.md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
+.more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-deep ul{list-style:none;margin:0 0 16px;padding:0}
+.more-deep li{border-top:1px solid var(--line)}
+.more-deep li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-deep li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-deep li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-deep li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.md-btn{display:block;text-align:center;background:#8E2F3B;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.md-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .md-k{color:#D98C96}}
+:root[data-theme="dark"] .md-k{color:#D98C96}
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF;--tW:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}}
+:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}
+.dg-fig figcaption{font-size:14.5px;font-weight:700;line-height:1.6;margin:0 0 8px}
+.dg-fig svg{display:block;width:100%;height:auto;max-width:640px;font-family:var(--sans)}
+.dg-fig .lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
+.dg-fig .lg i{display:inline-block;width:14px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid var(--ink)}
+.dg-fig .fn{font-size:12px;color:var(--muted);line-height:1.7;margin:6px 0 0}
+.dg-fig .t{fill:var(--ink);font-size:12px}.dg-fig .ts{fill:var(--muted);font-size:10.5px}.dg-fig .tv{fill:var(--ink);font-size:12px;font-weight:700}
+.dg-fig .ax{stroke:var(--line);stroke-width:1}.dg-fig .mk{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.dg-fig .sg:hover rect,.dg-fig .br:hover rect{opacity:.8}
+.dg-fig .zs{display:grid;gap:8px;margin:8px 0 0;max-width:640px}
+.dg-fig .zs b{display:block;font-size:13px}.dg-fig .zs span{display:block;font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+.dg-rel-l{list-style:none;margin:0;padding:0}
+.dg-rel-l li{border-top:1px solid var(--line)}
+.dg-rel-l li:first-child{border-top:0}
+.dg-rel-l a{display:block;padding:10px 0;color:var(--ink);text-decoration:none}
+.dg-rel-l small{display:block;font-size:12.5px;font-weight:700;color:var(--clay);line-height:1.6}
+.dg-rel-l b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-rel-l span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.dg-rel-l a:hover b{text-decoration:underline;text-underline-offset:3px}
+
+.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--line:#C9CBC6;background:var(--bg);color:var(--tx);border:2px solid var(--bd);border-radius:22px;overflow:hidden;margin:20px 0 10px;padding-bottom:14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}}
+:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}
+.rbx .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em}
+.rbx-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;background:var(--hd);color:var(--hdt)}
+.rbx-hd b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:18px;letter-spacing:.2em}
+.rbx-hd span{font-size:10.5px}
+.rbx p.rbx-lead{margin:12px 16px 0;font-size:14px;font-weight:700;line-height:1.6}
+.rbx form,.rbx .rbx-f{display:flex;gap:8px;margin:10px 12px 0}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 42px;border:2px solid var(--line);border-radius:999px;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx);outline:none}
+.rbx input::placeholder{color:var(--sub)}
+.rbx-in{position:relative;flex:1;min-width:0;display:flex}
+.rbx-in input{padding-right:42px}
+.rbx input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}
+.rbx .rbx-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:50%;background:var(--sub);color:var(--inp);font:700 17px/30px sans-serif;text-align:center;padding:0;cursor:pointer}
+.rbx .rbx-x[hidden]{display:none}
+.rbx input:focus{border-color:#F2C230}
+.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--btn);color:var(--btnt);cursor:pointer}
+.rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
+.rbx-all:hover{text-decoration:underline}
+.rbx p.rbx-cnt{margin:10px 16px 0;font-size:11px;line-height:1.4;color:var(--sub)}
+
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "F1の予算上限の「抜け穴」とは何か　FIAはなぜ工場とITを分けさせるのか", "description": "F1チームが1年に使えるお金には上限がある。ところが、同じグループの別の部門で働く人や、共用の風洞・シミュレーターを通じて、上限の外からF1を速くできるのではないか、という疑いが何年も消えなかった。FIAは2027年から、F1の人と設備とITを、ほかの部門からはっきり切り離す。予算上限の仕組み、ふさがれる「抜け穴」、ホーナーの「5億か6億ドル」、そして2021年のレッドブルの前例から、この新しい決まりを読む。", "datePublished": "2026-10-22T13:21:00+09:00", "dateModified": "2026-10-22T13:21:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=2"], "mainEntityOfPage": "https://f1gridwalk.github.io/deep/cost-cap-loophole/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "DEEP GRID", "keywords": ["チームとビジネス", "規則"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "DEEP GRID", "item": "https://f1gridwalk.github.io/deep/"}, {"@type": "ListItem", "position": 3, "name": "F1の予算上限の「抜け穴」とは何か　FIAはなぜ工場とITを分けさせるのか", "item": "https://f1gridwalk.github.io/deep/cost-cap-loophole/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
+.bt{display:none}
+@media (max-width:520px){
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
+.bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bt .on{color:var(--ink)}
+.bt .on svg{stroke-width:2.3}
+body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+}
+:root{--paper:#F3EFE6;--surface:#FBF9F4;--line:#DDD5C5;--ink:#1F2420;--ink-2:#3A3E37;--muted:#5B5F57;--moss:#1F2420;--clay:#9E4E2B;--on-ink:#FBF9F4;
+--sans:'IBM Plex Sans JP','Hiragino Sans','Noto Sans JP','Yu Gothic',Meiryo,sans-serif;--logo:'Fraunces',Georgia,'Times New Roman',serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#191C18;--surface:#222620;--line:#353A32;--ink:#ECE7DC;--ink-2:#D3CEC2;--muted:#A5A99C;--moss:#ECE7DC;--clay:#E09A76;--on-ink:#191C18}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-underline-offset:3px;text-decoration-thickness:1px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand b{display:block;font-family:var(--logo);font-weight:600;font-size:22px;line-height:1}
+.brand small{display:block;font-size:8.5px;font-weight:700;letter-spacing:.2em;color:var(--muted);margin-top:4px}
+.stamp-ring{fill:none;stroke:var(--moss)}.mark-line{fill:none;stroke:var(--ink);stroke-linecap:round;stroke-linejoin:round}.leaf{fill:var(--clay)}
+.toplink{font-size:13px;color:var(--muted);white-space:nowrap}
+.crumbs{font-size:12.5px;color:var(--muted);margin:22px 0 14px}
+.crumbs a{color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13px;color:var(--muted)}
+.srcbadge{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--c,var(--ink-2))}
+.srcbadge::before{content:"";width:15px;height:10px;border-radius:2px;flex-shrink:0;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+.kind{display:inline-flex;align-items:center;padding:0 8px;border-radius:5px;font-size:11.5px;font-weight:700;letter-spacing:.06em;line-height:20px;white-space:nowrap;--k:var(--ink);border:1px solid var(--k);color:var(--k);background:color-mix(in srgb,var(--k) 9%,transparent)}
+.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}
+.kind.rumor,.kind.fan{border-style:dashed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}}
+h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-weight:700;letter-spacing:.01em}
+.orig{font-size:13.5px;color:var(--muted);margin:0 0 20px}
+.summary{font-size:17px;line-height:1.95;margin:0 0 22px}
+.warn{font-size:13.5px;border:1px dashed var(--clay);color:var(--ink-2);padding:10px 14px;border-radius:10px;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 8px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
+.cta:hover{color:var(--on-ink);opacity:.9}
+.cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
+.credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
+.tags span,.tags a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.tags a{color:var(--ink);text-decoration:none;font-weight:700}.tags a::after{content:" →";color:var(--clay)}
+.share{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;align-items:center;font-size:13px;color:var(--muted)}
+.share a,.share button{font:inherit;font-size:13px;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;text-decoration:none;cursor:pointer}
+section{margin:40px 0 0;padding-top:22px;border-top:1px solid var(--line)}
+section h2{font-size:18px;margin:0 0 6px}
+section .lead{font-size:14px;color:var(--ink-2);margin:0 0 14px}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{padding:12px 0;border-bottom:1px solid var(--line)}
+ul.list li:last-child{border-bottom:0}
+ul.list .m{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;font-size:12px;color:var(--muted)}
+ul.list .kind{font-size:10px;line-height:16px;padding:0 5px}
+ul.list a.t{display:block;font-weight:700;font-size:15.5px;line-height:1.6;margin-top:3px;text-decoration:none}
+ul.list a.t:hover{text-decoration:underline}
+.day{font-size:13px;font-weight:700;color:var(--muted);margin:26px 0 0;letter-spacing:.06em}
+.kw{margin:26px 0 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.kw-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 10px;margin:0 0 4px;font-size:14px;font-weight:700}
+.kw-h small{font-size:12px;font-weight:500;color:var(--muted)}
+.kw-t{display:block;padding:10px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.kw-t b{font-size:15.5px}
+.kw-t small{margin-left:8px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 8px;white-space:nowrap}
+.kw-t span{display:block;font-size:14px;line-height:1.75;color:var(--ink-2);margin-top:2px}
+.kw-t:hover b{text-decoration:underline;text-underline-offset:3px}
+.kw-ph{margin:8px 0 6px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--muted)}
+.kw-p{display:flex;flex-wrap:wrap;gap:6px}
+.kw-p a{font-size:13.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;text-decoration:none;background:var(--paper);color:var(--ink)}
+.kw-all{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--clay)}
+.hubbox{display:block;margin:18px 0 0;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;text-decoration:none;color:var(--ink)}
+.hubbox small{display:block;font-size:12px;color:var(--clay);font-weight:700;letter-spacing:.08em}
+.hubbox b{display:block;font-size:16px;line-height:1.6;margin-top:2px}
+.hubbox span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+footer{margin:56px 0 0;border-top:1px solid var(--line);padding:22px 0 40px;font-size:12px;color:var(--muted)}
+footer p{margin:6px 0}
+@media (max-width:600px){.summary{font-size:16px}.cta{font-size:15px}}
+[data-c="jp"]{--c:#BC002D;--cs:#F7E2E6;--flag:radial-gradient(circle,#BC002D 0 27%,#FFFFFF 29%)}
+[data-c="gb"]{--c:#012169;--cs:#DFE4F2;--flag:linear-gradient(#C8102E,#C8102E) center/100% 22% no-repeat,linear-gradient(#C8102E,#C8102E) center/16% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 42% no-repeat,linear-gradient(#FFF,#FFF) center/30% 100% no-repeat,#012169}
+[data-c="us"]{--c:#0A3161;--cs:#DEE5F1;--flag:linear-gradient(#0A3161,#0A3161) top left/44% 54% no-repeat,repeating-linear-gradient(#B31942 0 15.4%,#FFFFFF 15.4% 30.8%)}
+[data-c="de"]{--c:#8A6D00;--cs:#F4ECCB;--flag:linear-gradient(#000 0 33.4%,#DD0000 33.4% 66.7%,#FFCE00 66.7%)}
+[data-c="it"]{--c:#008C45;--cs:#DDF0E5;--flag:linear-gradient(90deg,#008C45 0 33.4%,#F4F5F0 33.4% 66.7%,#CD212A 66.7%)}
+[data-c="es"]{--c:#AA151B;--cs:#F5E0E0;--flag:linear-gradient(#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75%)}
+[data-c="fr"]{--c:#0055A4;--cs:#DCE8F5;--flag:linear-gradient(90deg,#0055A4 0 33.4%,#FFFFFF 33.4% 66.7%,#EF4135 66.7%)}
+[data-c="nl"]{--c:#21468B;--cs:#DFE5F2;--flag:linear-gradient(#AE1C28 0 33.4%,#FFFFFF 33.4% 66.7%,#21468B 66.7%)}
+[data-c="br"]{--c:#008F36;--cs:#DCF1E3;--flag:radial-gradient(circle,#002776 0 20%,#FFDF00 21% 44%,#009C3B 46%)}
+[data-c="ar"]{--c:#2F7BBF;--cs:#E0EEF8;--flag:linear-gradient(#74ACDF 0 33.4%,#FFFFFF 33.4% 66.7%,#74ACDF 66.7%)}
+[data-c="mx"]{--c:#006847;--cs:#DCEFE7;--flag:linear-gradient(90deg,#006847 0 33.4%,#FFFFFF 33.4% 66.7%,#CE1126 66.7%)}
+[data-c="au"]{--c:#00247D;--cs:#DFE3F2;--flag:radial-gradient(circle at 72% 62%,#FFF 0 9%,transparent 10%),linear-gradient(#C8102E,#C8102E) 0 0/50% 50% no-repeat,#00247D}
+[data-c="be"]{--c:#9A7B00;--cs:#F4EDCC;--flag:linear-gradient(90deg,#000 0 33.4%,#FDDA24 33.4% 66.7%,#EF3340 66.7%)}
+[data-c="at"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#C8102E 0 33.4%,#FFFFFF 33.4% 66.7%,#C8102E 66.7%)}
+[data-c="ch"]{--c:#DA291C;--cs:#F7E0DE;--flag:linear-gradient(#FFF,#FFF) center/60% 20% no-repeat,linear-gradient(#FFF,#FFF) center/20% 60% no-repeat,#DA291C}
+[data-c="pt"]{--c:#046A38;--cs:#DCEFE5;--flag:linear-gradient(90deg,#046A38 0 40%,#DA291C 40%)}
+[data-c="ca"]{--c:#D80621;--cs:#F7E0E3;--flag:linear-gradient(90deg,#D80621 0 25%,#FFFFFF 25% 75%,#D80621 75%)}
+[data-c="pl"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#FFFFFF 0 50%,#DC143C 50%)}
+[data-c="fi"]{--c:#002F6C;--cs:#DFE4F0;--flag:linear-gradient(#002F6C,#002F6C) center/100% 26% no-repeat,linear-gradient(#002F6C,#002F6C) 30% 0/18% 100% no-repeat,#FFFFFF}
+[data-c="dk"]{--c:#C8102E;--cs:#F6DFE3;--flag:linear-gradient(#FFF,#FFF) center/100% 20% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/14% 100% no-repeat,#C8102E}
+[data-c="se"]{--c:#006AA7;--cs:#DCEAF5;--flag:linear-gradient(#FECC02,#FECC02) center/100% 22% no-repeat,linear-gradient(#FECC02,#FECC02) 32% 0/16% 100% no-repeat,#006AA7}
+[data-c="no"]{--c:#BA0C2F;--cs:#F5DFE4;--flag:linear-gradient(#00205B,#00205B) center/100% 14% no-repeat,linear-gradient(#00205B,#00205B) 32% 0/10% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 30% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/22% 100% no-repeat,#BA0C2F}
+[data-c="mc"]{--c:#CE1126;--cs:#F7E0E3;--flag:linear-gradient(#CE1126 0 50%,#FFFFFF 50%)}
+[data-c="cn"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle at 25% 32%,#FFDE00 0 12%,transparent 13%),#DE2910}
+[data-c="kr"]{--c:#003478;--cs:#DFE4F0;--flag:radial-gradient(circle,#C60C30 0 16%,#003478 17% 27%,#FFFFFF 29%)}
+[data-c="in"]{--c:#E0701A;--cs:#F8E8DA;--flag:linear-gradient(#FF9933 0 33.4%,#FFFFFF 33.4% 66.7%,#138808 66.7%)}
+[data-c="nz"]{--c:#00247D;--cs:#DFE3F2;--flag:radial-gradient(circle at 74% 60%,#CC142B 0 8%,transparent 9%),linear-gradient(#C8102E,#C8102E) 0 0/50% 50% no-repeat,#00247D}
+[data-c="ie"]{--c:#169B62;--cs:#DCF0E6;--flag:linear-gradient(90deg,#169B62 0 33.4%,#FFFFFF 33.4% 66.7%,#FF883E 66.7%)}
+[data-c="hu"]{--c:#CD2A3E;--cs:#F6E0E3;--flag:linear-gradient(#CD2A3E 0 33.4%,#FFFFFF 33.4% 66.7%,#436F4D 66.7%)}
+[data-c="cz"]{--c:#11457E;--cs:#DFE5F0;--flag:linear-gradient(to bottom right,#11457E 0 30%,transparent 30%),linear-gradient(#FFFFFF 0 50%,#D7141A 50%)}
+[data-c="co"]{--c:#A38600;--cs:#F4EDCC;--flag:linear-gradient(#FCD116 0 50%,#003893 50% 75%,#CE1126 75%)}
+[data-c="cl"]{--c:#0039A6;--cs:#DFE4F2;--flag:linear-gradient(#0039A6,#0039A6) 0 0/34% 50% no-repeat,linear-gradient(#FFFFFF 0 50%,#D52B1E 50%)}
+[data-c="th"]{--c:#2D2A4A;--cs:#E4E3EE;--flag:linear-gradient(#A51931 0 16.6%,#F4F5F8 16.6% 33.3%,#2D2A4A 33.3% 66.6%,#F4F5F8 66.6% 83.3%,#A51931 83.3%)}
+[data-c="sg"]{--c:#EF3340;--cs:#F8E0E2;--flag:linear-gradient(#EF3340 0 50%,#FFFFFF 50%)}
+[data-c="ae"]{--c:#00732F;--cs:#DCEFE4;--flag:linear-gradient(90deg,#FF0000 0 25%,transparent 25%),linear-gradient(#00732F 0 33.4%,#FFFFFF 33.4% 66.7%,#000 66.7%)}
+[data-c="sa"]{--c:#006C35;--cs:#DCEFE4;--flag:linear-gradient(#FFF,#FFF) center 70%/60% 10% no-repeat,#006C35}
+[data-c="tr"]{--c:#E30A17;--cs:#F8DFE1;--flag:radial-gradient(circle at 40% 50%,#E30A17 0 18%,transparent 19%),radial-gradient(circle at 36% 50%,#FFF 0 24%,transparent 25%),#E30A17}
+[data-c="ru"]{--c:#0039A6;--cs:#DFE4F2;--flag:linear-gradient(#FFFFFF 0 33.4%,#0039A6 33.4% 66.7%,#D52B1E 66.7%)}
+[data-c="ua"]{--c:#0057B7;--cs:#DCE8F5;--flag:linear-gradient(#0057B7 0 50%,#FFD700 50%)}
+[data-c="gr"]{--c:#0D5EAF;--cs:#DCE8F5;--flag:repeating-linear-gradient(#0D5EAF 0 11.1%,#FFFFFF 11.1% 22.2%)}
+[data-c="ro"]{--c:#002B7F;--cs:#DFE4F2;--flag:linear-gradient(90deg,#002B7F 0 33.4%,#FCD116 33.4% 66.7%,#CE1126 66.7%)}
+[data-c="za"]{--c:#007A4D;--cs:#DCEFE7;--flag:linear-gradient(#E03C31 0 33%,#007A4D 33% 67%,#002395 67%)}
+[data-c="tw"]{--c:#000095;--cs:#E0E0F4;--flag:linear-gradient(#000095,#000095) 0 0/50% 50% no-repeat,#FE0000}
+[data-c="hk"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle,#FFF 0 18%,#DE2910 20%)}
+[data-c="qa"]{--c:#8A1538;--cs:#F3DFE5;--flag:linear-gradient(90deg,#FFFFFF 0 30%,#8A1538 30%)}
+[data-c="xx"]{--c:#5B5F57;--cs:#ECE6D8;--flag:linear-gradient(#9AA096,#9AA096)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) [data-c="jp"]{--c:#FF7A8E;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="gb"]{--c:#8FA8EE;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="us"]{--c:#8DAEE6;--cs:#1C2638}
+  :root:not([data-theme="light"]) [data-c="de"]{--c:#FFCE00;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="it"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="es"]{--c:#F48A8E;--cs:#3A2222}
+  :root:not([data-theme="light"]) [data-c="fr"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="nl"]{--c:#8FAAE6;--cs:#1D2740}
+  :root:not([data-theme="light"]) [data-c="br"]{--c:#55D283;--cs:#173020}
+  :root:not([data-theme="light"]) [data-c="ar"]{--c:#8EC8F4;--cs:#1B2B38}
+  :root:not([data-theme="light"]) [data-c="mx"]{--c:#4FC99A;--cs:#173028}
+  :root:not([data-theme="light"]) [data-c="au"]{--c:#8FA6EE;--cs:#1D2440}
+  :root:not([data-theme="light"]) [data-c="be"]{--c:#FDDA24;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="at"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="ch"]{--c:#FF8A80;--cs:#3A2322}
+  :root:not([data-theme="light"]) [data-c="pt"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="ca"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="pl"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="fi"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="dk"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
+  :root:not([data-theme="light"]) [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
+  :root:not([data-theme="light"]) [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
+  :root:not([data-theme="light"]) [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
+  :root:not([data-theme="light"]) [data-c="nz"]{--c:#8FA6EE;--cs:#1D2440}
+  :root:not([data-theme="light"]) [data-c="ie"]{--c:#55CF95;--cs:#173022}
+  :root:not([data-theme="light"]) [data-c="hu"]{--c:#FF8A9A;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="cz"]{--c:#8FAAE6;--cs:#1D2740}
+  :root:not([data-theme="light"]) [data-c="co"]{--c:#FCD116;--cs:#35301A}
+  :root:not([data-theme="light"]) [data-c="cl"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="th"]{--c:#A9A6D8;--cs:#24233A}
+  :root:not([data-theme="light"]) [data-c="sg"]{--c:#FF8A92;--cs:#3A2224}
+  :root:not([data-theme="light"]) [data-c="ae"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="sa"]{--c:#4FC98A;--cs:#17301F}
+  :root:not([data-theme="light"]) [data-c="tr"]{--c:#FF8A90;--cs:#3A2224}
+  :root:not([data-theme="light"]) [data-c="ru"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="ua"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="gr"]{--c:#7FB2F2;--cs:#1B2A3C}
+  :root:not([data-theme="light"]) [data-c="ro"]{--c:#8FA8E6;--cs:#1D2640}
+  :root:not([data-theme="light"]) [data-c="za"]{--c:#4FC99A;--cs:#173028}
+  :root:not([data-theme="light"]) [data-c="tw"]{--c:#9A9AF0;--cs:#1E1E40}
+  :root:not([data-theme="light"]) [data-c="hk"]{--c:#FF8C7A;--cs:#3A2420}
+  :root:not([data-theme="light"]) [data-c="qa"]{--c:#F08AA6;--cs:#3A2230}
+  :root:not([data-theme="light"]) [data-c="xx"]{--c:#A5A99C;--cs:#2E332C}
+}
+:root[data-theme="dark"] [data-c="jp"]{--c:#FF7A8E;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="gb"]{--c:#8FA8EE;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="us"]{--c:#8DAEE6;--cs:#1C2638}
+:root[data-theme="dark"] [data-c="de"]{--c:#FFCE00;--cs:#35301A}
+:root[data-theme="dark"] [data-c="it"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="es"]{--c:#F48A8E;--cs:#3A2222}
+:root[data-theme="dark"] [data-c="fr"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="nl"]{--c:#8FAAE6;--cs:#1D2740}
+:root[data-theme="dark"] [data-c="br"]{--c:#55D283;--cs:#173020}
+:root[data-theme="dark"] [data-c="ar"]{--c:#8EC8F4;--cs:#1B2B38}
+:root[data-theme="dark"] [data-c="mx"]{--c:#4FC99A;--cs:#173028}
+:root[data-theme="dark"] [data-c="au"]{--c:#8FA6EE;--cs:#1D2440}
+:root[data-theme="dark"] [data-c="be"]{--c:#FDDA24;--cs:#35301A}
+:root[data-theme="dark"] [data-c="at"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="ch"]{--c:#FF8A80;--cs:#3A2322}
+:root[data-theme="dark"] [data-c="pt"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="ca"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="pl"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="fi"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="dk"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
+:root[data-theme="dark"] [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
+:root[data-theme="dark"] [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
+:root[data-theme="dark"] [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
+:root[data-theme="dark"] [data-c="nz"]{--c:#8FA6EE;--cs:#1D2440}
+:root[data-theme="dark"] [data-c="ie"]{--c:#55CF95;--cs:#173022}
+:root[data-theme="dark"] [data-c="hu"]{--c:#FF8A9A;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="cz"]{--c:#8FAAE6;--cs:#1D2740}
+:root[data-theme="dark"] [data-c="co"]{--c:#FCD116;--cs:#35301A}
+:root[data-theme="dark"] [data-c="cl"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="th"]{--c:#A9A6D8;--cs:#24233A}
+:root[data-theme="dark"] [data-c="sg"]{--c:#FF8A92;--cs:#3A2224}
+:root[data-theme="dark"] [data-c="ae"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="sa"]{--c:#4FC98A;--cs:#17301F}
+:root[data-theme="dark"] [data-c="tr"]{--c:#FF8A90;--cs:#3A2224}
+:root[data-theme="dark"] [data-c="ru"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="ua"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="gr"]{--c:#7FB2F2;--cs:#1B2A3C}
+:root[data-theme="dark"] [data-c="ro"]{--c:#8FA8E6;--cs:#1D2640}
+:root[data-theme="dark"] [data-c="za"]{--c:#4FC99A;--cs:#173028}
+:root[data-theme="dark"] [data-c="tw"]{--c:#9A9AF0;--cs:#1E1E40}
+:root[data-theme="dark"] [data-c="hk"]{--c:#FF8C7A;--cs:#3A2420}
+:root[data-theme="dark"] [data-c="qa"]{--c:#F08AA6;--cs:#3A2230}
+:root[data-theme="dark"] [data-c="xx"]{--c:#A5A99C;--cs:#2E332C}
+.srcbadge::before{width:15px;height:10px;border-radius:2px;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)} }
+:root[data-theme="dark"] .srcbadge::before{box-shadow:0 0 0 1px rgba(255,255,255,.18)}</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/" aria-label="F1 Grid Walk トップへ"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg><span><b>Grid Walk</b><small>WORLD F1 DESK</small></span></a>
+  <a class="toplink" href="/">最新ニュースを見る →</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › #17</nav>
+<article class="dg">
+<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>#17</i></b><span>ニュースの、その奥へ。</span></div></div>
+<h1>F1の予算上限の「抜け穴」とは何か　FIAはなぜ工場とITを分けさせるのか</h1>
+<p class="dg-dek">F1チームが1年に使えるお金には上限がある。ところが、同じグループの別の部門で働く人や、共用の風洞・シミュレーターを通じて、上限の外からF1を速くできるのではないか、という疑いが何年も消えなかった。FIAは2027年から、F1の人と設備とITを、ほかの部門からはっきり切り離す。予算上限の仕組み、ふさがれる「抜け穴」、ホーナーの「5億か6億ドル」、そして2021年のレッドブルの前例から、この新しい決まりを読む。</p>
+<p class="dg-meta"><span>2026年10月22日(木) 13:21 公開</span><span>本文 約12分</span></p>
+<div class="dg-themes"><span>チームとビジネス</span><span>規則</span></div>
+<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a><a href="#s1">予算上限は、何を数えているのか</a><a href="#s2">「抜け穴」は、どこにあったのか</a><a href="#s3">2027年からの新しい「壁」</a><a href="#s4">前例：2021年のレッドブル</a><a href="#s5">上限は効いているのか、足りないのか</a><a href="#deep">データと記録</a><a href="#sources">出典</a></nav>
+<div id="quick"><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span><em>先に結論</em></div></div>
+<div class="dg-quick"><ol><li>F1チームが1年に使えるお金には、FIAが上限をつけている。2026年の上限は2億1500万ドル（FIAの財務規則）。ただし、ドライバーへの支払い、報酬が高い上位3人、マーケティング、レースの移動費などは数えない。F1以外の活動にかかる費用も、上限の外だ。</li><li>「抜け穴」と疑われてきたのは、チームのグループにある「F1以外」の技術部門だ。英The Raceによると、レッドブルやメルセデス、アストンマーティンには、ヨットや自転車などF1以外の技術を手がける部門がある。そこで上限の外から給料を払う人が、F1の車づくりにも知恵を貸しているのではないか、という疑いだ。ただし、それが証明されたことは一度もない。</li><li>世界モータースポーツ評議会（WMSC）は10月19日、2027年の新しい決まりを承認した。F1の人とF1以外の人は、別々の区画で働く。風洞やシミュレーターは共用できても、同時には使えない。ITも分け、情報はF1の外へ出ることはあっても、F1の中へは入れない。F1以外からF1に移る人には3か月の空白期間が、移ったあとは12か月の専念が求められる。</li><li>元レッドブル代表のクリスチャン・ホーナーは、上限は2億ドルを少し超える程度なのに「チームは5億か6億ドルを使っている」と話し、もっと多くの項目を上限に入れるべきだと訴えた（独Motorsport-Total.com）。一方で、予算上限がチームを赤字から抜け出させ、効率を生んだとも話している。</li><li>新しい決まりには、反発もあった。The Raceによると、いくつかのチームは厳しすぎると抵抗したが、FIAは押し切った。働き方を変えなければならないチームもあるという。予算上限には前例もある。2021年のレッドブルは上限を1.6％超え、罰金700万ドルと空力テストの10％削減を受けた。</li></ol></div>
+<div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><em>理由と背景</em></div>
+<div class="dg-sec" id="s1"><h2>予算上限は、何を数えているのか</h2><p><a class="term" href="/deep/rules/cost-cap/" data-term="cost-cap">コストキャップ（予算上限）</a>は、チームが1年に使えるお金の上限だ。<a class="term" href="/deep/rules/fia/" data-term="fia">FIA</a>の2026年の財務規則（D4.1.2）では、レースが24戦までなら2億1500万ドルで、必要なら物価の調整が入る。24戦を超えると、1戦につき180万ドルが上乗せされる。</p><p>上限が始まったのは2021年で、最初は1億4500万ドルだった（Motorsport-Total.com）。英Crash.netによると、2022年は1億4000万ドル、2023年から2025年までは1億3500万ドルに下がった。2026年に大きく上がったのは、数える費用の範囲などが変わったからだ。FIAは2024年10月、2026年の財務規則について、上限の水準は「実質的に、いまと同じ水準のまま」だと説明している。</p><p>数えない費用もある。これが<a class="term" href="/deep/rules/cost-cap-exclusions/" data-term="cost-cap-exclusions">コストキャップの対象外の費用</a>だ。財務規則（D5.1.1）は、マーケティング、ドライバーへの支払い、報酬が高い上位3人、金融費用、法人税、人事・経理・法務の部門、建物の費用、レースやテストのためのホテルや飛行機などを、上限の計算から外している。パワーユニットの代金も、決められた上限価格までは外れる。メーカーがパワーユニットを開発する費用には、別に1億9000万ドルの上限がある（Motorsport-Total.com）。</p><p>そして、この号の中心になるのが、同じ条文の「F1以外の活動」の項目（D5.1.1.h）だ。F1以外の活動に直接かかる費用は、人件費も含めて上限に入らない。F1とほかの仕事を兼ねる人の給料は、F1以外の分だけを外せる場合もある。ただし、それはパワーユニットの供給、<a class="term" href="/deep/rules/customer-team/" data-term="customer-team">カスタマーチーム</a>の支援、FIAのプロジェクトなどに限られ、しかもチームがFIAの予算上限の担当部署を納得させる証明をしたときだけだ。</p><p>上限で押さえると、お金は別のところへ流れる、という見方もある。ホーナーは、英Autosportに話した内容として、こうたとえている（Motorsport-Total.com）。</p><blockquote><p>「空気の足りない風船のようなものだ。一方の端を押すと、空気は別のところへ行く」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><blockquote><p>「だから今は、ドライバーの年俸が、予算上限が入る前よりずっと高くなっている」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote></div>
+<div class="dg-sec" id="s2"><h2>「抜け穴」は、どこにあったのか</h2><p>強いチームの多くは、F1チームだけでできているわけではない。The Raceによると、レッドブルには「アドバンスト・テクノロジーズ」、メルセデスには「アプライド・サイエンス」、アストンマーティンには「パフォーマンス・テクノロジーズ」という部門がある。フェラーリは最近、ヨット「ハイパーセイル」をつくってきた。マクラーレンにも「アプライド・サイエンス」があったが、投資グループに売却された。ブラジルのGrande Prêmioは、新しい決まりの影響を受けうるのは、市販車の開発や耐久レース、フォーミュラE、先端技術のプロジェクトとつながったチームだとしている。</p><p>疑いの中身は、こうだ。The Raceによると、F1以外の技術部門の人は、上限の外で給料を払われながら、F1の車を良くする手助けもできるのではないか、と長く疑われてきた。オランダのGPblogも、書類の上ではF1以外の仕事をしている人の知恵が、F1チームに役立っているのではないかという点を、FIAの心配として挙げている。ただし、どちらの記事も、チームが実際にこうした方法で規則を破った証拠はないと書いている。</p><p>上限の外で少しでも速さを足せれば、意味は大きい。2022年、メルセデスの<a class="term" href="/deep/rules/person-andrew-shovlin/" data-term="person-andrew-shovlin">アンドリュー・ショブリン</a>は、レッドブルの超過について話す中で、こう言い切っている（F1公式サイト）。</p><blockquote><p>「現実には、お金で速さが買える」</p><cite>— ショブリン（メルセデス、2022年）</cite></blockquote><p>FIAは、少しずつ穴をふさいできた。The Raceによると、2023年の<a class="term" href="/deep/rules/technical-directive/" data-term="technical-directive">技術指令（TD）</a>「TD45」で、技術部門からF1チームに移した知的財産は、すべて上限の中で数えることになった。その後、F1と特別プロジェクトを兼ねる人の給料を、割合で分けて数えるやり方も閉じた。さらに最近は、F1チームに少しでも貢献した人は、給料の全額を上限に入れることになったという。</p><p>英PlanetF1は2023年7月、TD45を伝えた記事で、両チームの代表の言葉を伝えている。メルセデスの<a class="term" href="/deep/rules/person-toto-wolff/" data-term="person-toto-wolff">トト・ウォルフ</a>代表は、会社の形をこう説明した。</p><blockquote><p>「我々の会社は一つで、その同じ会社がF1の仕事をすべてやり、F1以外の仕事も一部やっている」</p><cite>— ウォルフ（メルセデス、2023年）</cite></blockquote><blockquote><p>「その点で、我々には隠すことは何もない」</p><cite>— ウォルフ（メルセデス、2023年）</cite></blockquote><p>米Motorsport.comに、ほかのチームがこの抜け穴を使ってきたと思うかと聞かれると「そう思う。ええ」と答えた。当時レッドブルの代表だったホーナーは、こう話している。</p><blockquote><p>「TD45のせいで変えなければならなかったことは、何もない」</p><cite>— ホーナー（当時レッドブル代表、2023年）</cite></blockquote><div class="dg-view"><p>F1 Grid Walk編集部としては、この「抜け穴」は、はっきりした違反というより「どこまでがF1の仕事か」という境目の問題だと見ています。同じ建物で、同じ風洞を使い、同じ食堂で話す人たちの頭の中を、帳簿で分けるのは難しい。FIAが2027年に選んだのは、数え方をさらに細かくすることではなく、境目そのものを壁とITで引くことでした。</p></div></div>
+<div class="dg-sec" id="s3"><h2>2027年からの新しい「壁」</h2><p>新しい決まりは、2027年のF1運営規則（セクションF）の第F6条「F1活動とF1以外の活動の物理的・IT上の分離」に入った。FIAの規則の第1版は2026年10月19日付で、Grande Prêmioによると、同じ日に<a class="term" href="/deep/rules/wmsc/" data-term="wmsc">世界モータースポーツ評議会（WMSC）</a>が承認した。The Raceによると、新しい章は12ページあり、抜け道を見つけるのがきわめて難しくなるよう作られているという。</p><p>柱は3つある。1つ目は、場所だ。F1の人とF1以外の人は、物理的に分かれた区画で働き、互いの区画に入れない（F6.2）。The Raceによると、工場は電子的な入退室の管理で区切られ、記録はFIAの確認のために3年間残す。F1の人とF1以外の人が、同じ事務所で働くことはできない。</p><p><a class="term" href="/deep/rules/wind-tunnel/" data-term="wind-tunnel">風洞</a>、ドライバーが乗る<a class="term" href="/deep/rules/simulator/" data-term="simulator">シミュレーター</a>、エンジンなどを回す試験台（ダイナモ）、データセンター、会議室は、「制限付きの共用エリア」として両方が使える。ただし、同時には使えない（F6.2.5）。The Raceによると、そこで情報が行き来してもいけない。また、食堂、廊下、休憩の場所、駐車場は一緒に使えるが、そこで中心の仕事をしてはいけない。</p><p>2つ目は、ITだ。F1のシステムとF1以外のシステムは分け、互いのデータに触れられないようにする（F6.3）。The Raceによると、メッセージのやり取りや外付けの記録装置、契約の工夫、人の配置換えで決まりをすり抜けることも禁じる。情報は、限られた場合にF1からF1以外へ渡せるが、逆の向きは決して許されない。規則でも、F1以外の人が作ったデータを共有することは「いかなる場合も」できないとしている（F6.4.6）。</p><p>3つ目は、人の異動だ（F6.5）。F1以外からF1に移る人は、移る前の少なくとも3か月、F1の仕事もF1以外の仕事もせず、制限されたITにも入れない。移ったあとは、少なくとも12か月、F1の仕事（とパワーユニットの供給など、認められた仕事）だけをする。反対にF1からF1以外に移る人は、新しい契約と新しいメールアドレスが要り、その後12か月はF1以外の仕事だけをする。どちらの場合も、異動した年の給料は、F1チームの上限の中で数える。GPblogは、シーズンの途中に人を移して上限に余裕を作ることを防ぐ決まりだと説明している。</p><p>F1では、チームを移る人がしばらく働かない「<a class="term" href="/deep/rules/gardening-leave/" data-term="gardening-leave">ガーデニング休暇（ガーデニングリーブ）</a>」がよく知られている。新しい決まりの3か月の空白は、チームの間ではなく、同じグループの中の部門の移動に求められるものだ。</p></div>
+<div class="dg-sec" id="s4"><h2>前例：2021年のレッドブル</h2><p>予算上限が実際に破られたと認められた例が、2021年のレッドブルだ。FIAとレッドブルが2022年10月26日に結んだ合意書（ABA）によると、レッドブルの2021年の費用は、上限の1億1803万6000ポンドを186万4000ポンド（1.6％）超えていた。当時の規則では5％未満の超過は「軽い超過」で、レッドブルはこれにあたった。</p><p>合意書は、原因の一部も挙げている。ケータリングの費用を上限の外に多く出しすぎていたこと、レッドブル・パワートレインズから請求された費用の計算の事務的な誤りなどだ。税額控除の扱いを正しくしていれば、超過は43万2652ポンド（0.37％）だったとも書かれている。罰は、700万ドルの<a class="term" href="/deep/rules/fine/" data-term="fine">罰金</a>と、12か月の間、<a class="term" href="/deep/rules/atr/" data-term="atr">空力テストの制限（ATR）</a>で使える量を10％減らすことだった。FIAの担当部署は、レッドブルが悪意で動いたという主張も証拠もないと述べている。</p><p>決着までには、強い言葉が飛び交った。英GrandPrix247によると、マクラーレンの<a class="term" href="/deep/rules/person-zak-brown/" data-term="person-zak-brown">ザク・ブラウン</a>CEOは2022年10月12日付でFIAに手紙を送り、こう書いた。</p><blockquote><p>「超過の違反は、そしておそらく手続きの違反も、大きな有利をもたらすことで、不正にあたる」</p><cite>— ブラウン（マクラーレン、2022年の手紙）</cite></blockquote><p>罰が決まると、ホーナーは反発した（F1公式サイト）。</p><blockquote><p>「これは打撃であり、ハンデだ。信じられないほど懸命に働かなければならない」</p><cite>— ホーナー（当時レッドブル代表、2022年）</cite></blockquote><blockquote><p>「それはライバルに有利を与える。だから彼らは、あれほど厳しい罰を強く求めた」</p><cite>— ホーナー（当時レッドブル代表、2022年）</cite></blockquote><p>メルセデスのショブリンは、「厳しすぎる」という言い方は「誇張だ」と返した。ウォルフ代表は、FIAが手続きどおりに進めたことを評価し、自分たちへの審査も厳しかったと話したうえで、罰が十分な抑止力になることを望んでいるという（F1公式サイト）。英RacingNews365によると、ホーナーは最後にこう話している。</p><blockquote><p>「我々は今日、この件を閉じる。罰はしぶしぶ受け入れるが、受け入れる」</p><cite>— ホーナー（当時レッドブル代表、2022年）</cite></blockquote><p>いまの規則では、軽い超過の境目は2％未満に下がった（財務規則 D10.3）。2％以上は重大な超過で、コンストラクターズのポイントの剥奪と罰金が必ず科される（D10.3.4）。2021年のレッドブルの1.6％は、いまの規則でも軽い超過の範囲に入る。</p></div>
+<div class="dg-sec" id="s5"><h2>上限は効いているのか、足りないのか</h2><p>新しい決まりが伝えられる直前、ホーナーは予算上限そのものの見直しを訴えていた。Motorsport-Total.comによると、Autosportに話した内容だ。</p><blockquote><p>「いま見えているのは、2億ドルを少し超える予算上限があるということだ」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><blockquote><p>「しかし、チームは5億か6億ドルを使っている」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><blockquote><p>「もっと多くの項目を、上限に含めるべきだ」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><blockquote><p>「問題はただ一つ、それをどの水準にするかだ」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><p>5億〜6億ドルという数字は、ホーナー自身の見立てだ。Grande Prêmioは、上限の外の活動まで含めた全体の支出の見積もりで、上限を破った証拠ではないと書いている。ホーナーは、パワーユニットの上限を、包括的な上限のよい手本だとも見ている（Motorsport-Total.com）。</p><p>ただ、ホーナーは上限を否定しているわけではない。同じインタビューで、効果をこう認めている。</p><blockquote><p>「予算上限によって、効率が生まれた」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><blockquote><p>「こうした会社はどれも、もう赤字を出す存在ではないと思う」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><blockquote><p>「今では経理の部門が、設計の部門と同じくらい、グランプリの勝利に大きな役割を果たしている」</p><cite>— ホーナー（元レッドブル代表）</cite></blockquote><p>メルセデスのウォルフ代表も、英Motorsport Weekが10月18日に伝えた発言で、良い面と悪い面の両方を挙げている。</p><blockquote><p>「予算上限が我々を連れてきたのは、もちろん、利益の出る会社になったということだ。純粋に経済の面から見れば、それはいいことだ」</p><cite>— ウォルフ（メルセデス）</cite></blockquote><blockquote><p>「でも、それは給料を抑えてもいる」</p><cite>— ウォルフ（メルセデス）</cite></blockquote><p>分離の決まりそのものにも、反対はあった。The Raceによると、いくつかのチームが厳しさに抵抗したが、FIAは押し切った。FIAに近い関係者は、決まりを守るために働き方を変えなければならないチームもあると話しているという。どれだけの費用がかかるのかは、まだ数字で示されていない（Grande Prêmio）。入退室の記録やITの分け方が本当に守られているかを確かめるのも、FIAの仕事になる。</p><div class="dg-view"><p>編集部としては、ホーナーの「5億か6億ドル」と今回の分離の決まりは、別々の問いに答えているように見えます。前者は、もともと上限の「外」に置くと決めたお金をどうするか。後者は、上限の「内」で数えるべきお金を、外に逃がさないための決まりです。抜け穴を使った違反が一度も証明されていない中で、疑いだけは何年も消えませんでした。2027年の壁は、抜け穴をふさぐと同時に、「抜け穴はない」と示すための仕組みでもありそうです。</p></div></div>
+<details class="dg-deep" id="deep"><summary><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><em>データと記録</em></div><span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">予算上限の額の移り変わり・上限に数えない主な費用（財務規則 D5.1.1）・2027年の分離の決まり（運営規則 第F6条） ほか</span></span></span></summary>
+<div class="dg-sec"><h2>予算上限の額の移り変わり</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">年</th><th scope="col">上限</th><th scope="col">メモ</th></tr></thead><tbody><tr><th scope="row">2021</th><td data-h="上限">1億4500万ドル</td><td data-h="メモ">予算上限の始まり。FIAとレッドブルの合意書では、ポンド建てで1億1803万6000ポンド</td></tr><tr><th scope="row">2022</th><td data-h="上限">1億4000万ドル</td><td data-h="メモ"></td></tr><tr><th scope="row">2023〜2025</th><td data-h="上限">1億3500万ドル</td><td data-h="メモ"></td></tr><tr><th scope="row">2026</th><td data-h="上限">2億1500万ドル</td><td data-h="メモ">24戦まで。24戦を超えると1戦につき180万ドルを上乗せ。物価の調整あり（D4.1.2）。数える範囲が変わり、FIAは実質的な水準は同じと説明</td></tr><tr><th scope="row">参考：パワーユニット</th><td data-h="上限">1億9000万ドル</td><td data-h="メモ">メーカーがパワーユニットに使える、別の上限</td></tr></tbody></table></div><p class="tnote">出典：Crash.net（2021〜2025年）、Motorsport-Total.com（2021年の1億4500万ドル、PUの1億9000万ドル）、FIA 2026年F1規則 セクションD 第8版（2026年10月1日付、D4.1.2）、FIA（2024年10月17日）、FIAとレッドブルの合意書（2022年10月26日）。</p></div>
+<div class="dg-sec"><h2>上限に数えない主な費用（財務規則 D5.1.1）</h2><div class="dg-tw"><table class=""><thead><tr><th scope="col">項目</th><th scope="col">中身</th></tr></thead><tbody><tr><th scope="row">a</th><td data-h="中身">マーケティング</td></tr><tr><th scope="row">b</th><td data-h="中身">F1ドライバーへの支払い（移動・宿泊を含む）</td></tr><tr><th scope="row">c</th><td data-h="中身">ほかのドライバーへの支払い、育成プログラム（アカデミー）の運営</td></tr><tr><th scope="row">d</th><td data-h="中身">報酬が最も高い3人（関係する社会保険料や移動費も）</td></tr><tr><th scope="row">e</th><td data-h="中身">歴史的な資産（ヘリテージ）に関わる活動</td></tr><tr><th scope="row">f・g</th><td data-h="中身">金融費用、法人税</td></tr><tr><th scope="row">h</th><td data-h="中身">F1以外の活動（直接かかる費用。兼務の人の給料は、限られた活動の分だけ、証明したときに外せる）</td></tr><tr><th scope="row">i・j</th><td data-h="中身">人事・経理・法務の部門、建物の費用</td></tr><tr><th scope="row">k</th><td data-h="中身">社員のボーナス（固定給の合計の20％か、決められた上限額の低いほうまで）</td></tr><tr><th scope="row">m</th><td data-h="中身">財務規則の罰金、ほかの規則でFIAに科された罰金</td></tr><tr><th scope="row">n</th><td data-h="中身">パワーユニットの供給の費用（決められた上限価格まで）</td></tr><tr><th scope="row">r</th><td data-h="中身">レースやテストのためのホテル、飛行機、鉄道、陸上の移動</td></tr><tr><th scope="row">u・aa</th><td data-h="中身">社員向けの催し（120万ドルまで）、事業継続・災害への備え（150万ドルまで）</td></tr><tr><th scope="row">v・w・x・y・z</th><td data-h="中身">出産・育児休暇や長期の病気休職の給与、持続可能性の取り組み、健康と安全、ケータリング</td></tr></tbody></table></div><p class="tnote">出典：FIA 2026年F1規則 セクションD 第8版（2026年10月1日付）。主な項目だけを抜き出した。ほかに減価償却の一部、為替差損益、法定の社会保険料などもある。</p></div>
+<div class="dg-sec"><h2>2027年の分離の決まり（運営規則 第F6条）</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">分けるもの</th><th scope="col">決まりの中身</th><th scope="col">根拠</th></tr></thead><tbody><tr><th scope="row">働く場所</th><td data-h="決まりの中身">F1の人とF1以外の人は物理的に分かれた区画で働き、互いの区画に入れない。同じ事務所は不可</td><td data-h="根拠">F6.2、The Race</td></tr><tr><th scope="row">入退室の記録</th><td data-h="決まりの中身">2027年1月1日から、入る権限の記録と、共用エリアに入った人の記録を3年分残す</td><td data-h="根拠">F6.2.12</td></tr><tr><th scope="row">共用の設備</th><td data-h="決まりの中身">風洞、シミュレーター、ダイナモ、試験台、データセンター、会議室は両方が使えるが、同時は不可</td><td data-h="根拠">F6.2.5</td></tr><tr><th scope="row">食堂・廊下など</th><td data-h="決まりの中身">一緒に使えるが、そこで中心の仕事はできない</td><td data-h="根拠">The Race</td></tr><tr><th scope="row">IT</th><td data-h="決まりの中身">システムを分け、互いのデータに触れられないようにする。仮想的な分離か、システムの複製</td><td data-h="根拠">F6.3</td></tr><tr><th scope="row">情報の向き</th><td data-h="決まりの中身">限られた場合にF1からF1以外へ一方向だけ。F1以外の人が作ったデータは、いかなる場合もF1と共有できない</td><td data-h="根拠">F6.4</td></tr><tr><th scope="row">F1以外→F1の異動</th><td data-h="決まりの中身">移る前に3か月以上の空白（どちらの仕事もせず、制限されたITにも入れない）。移ったあと12か月以上はF1（とパワーユニットの供給など、認められた仕事）だけ。異動した年の給料は上限に入る</td><td data-h="根拠">F6.5.2</td></tr><tr><th scope="row">F1→F1以外の異動</th><td data-h="決まりの中身">新しい契約と新しいメールアドレス。移ったあと12か月以上はF1以外だけ。異動した年の給料は上限に入る</td><td data-h="根拠">F6.5.1</td></tr><tr><th scope="row">すり抜けの禁止</th><td data-h="決まりの中身">メッセージ、外付けの記録装置、契約の工夫、配置換えで決まりをすり抜けることを禁じる</td><td data-h="根拠">F6.1.4、The Race</td></tr></tbody></table></div><p class="tnote">出典：FIA 2027年F1規則 セクションF 第1版（2026年10月19日付）、The Race（2026年10月21日）、GPblog（2026年10月21日）。</p></div>
+<div class="dg-sec"><h2>予算上限の違反と、その罰</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">審査の年度</th><th scope="col">チーム</th><th scope="col">判断</th><th scope="col">罰</th></tr></thead><tbody><tr><th scope="row">2021</th><td data-h="チーム">レッドブル</td><td data-h="判断">手続きの違反と軽い超過。上限を186万4000ポンド（1.6％）超えた。税額控除を正しく扱えば0.37％だったとされる</td><td data-h="罰">罰金700万ドル、12か月、空力テストの制限（ATR）で使える量を10％削減</td></tr><tr><th scope="row">2021</th><td data-h="チーム">アストンマーティン</td><td data-h="判断">手続きの違反（上限は200万ドル下回っていた）</td><td data-h="罰">罰金45万ドル</td></tr></tbody></table></div><p class="tnote">出典：FIAとレッドブルの合意書（2022年10月26日）、RacingNews365（2023年1月4日）。いまの規則では、2％未満の超過が軽い超過、2％以上が重大な超過（D10.3）。重大な超過には、コンストラクターズのポイントの剥奪と罰金が必ず科され、出場停止や選手権からの除外、上限の引き下げなども選べる（D10.3.4、D12.1.1）。</p></div>
+<div class="dg-sec"><h2>年表</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">時期</th><th scope="col">できごと</th><th scope="col">出典</th></tr></thead><tbody><tr><th scope="row">2021年</th><td data-h="できごと">予算上限が始まる（1億4500万ドル）</td><td data-h="出典">Motorsport-Total.com、Crash.net</td></tr><tr><th scope="row">2022年10月10日</th><td data-h="できごと">FIAが、レッドブルの軽い超過と手続きの違反、アストンマーティンの手続きの違反を発表</td><td data-h="出典">RacingNews365</td></tr><tr><th scope="row">2022年10月12日</th><td data-h="できごと">マクラーレンのブラウンがFIAに手紙。超過は「不正にあたる」</td><td data-h="出典">GrandPrix247</td></tr><tr><th scope="row">2022年10月26日</th><td data-h="できごと">FIAとレッドブルが合意書（ABA）を結ぶ。28日に内容を公表</td><td data-h="出典">FIA、RacingNews365</td></tr><tr><th scope="row">2023年</th><td data-h="できごと">技術指令TD45。技術部門からF1に移した知的財産は上限の中で数える</td><td data-h="出典">The Race、PlanetF1</td></tr><tr><th scope="row">その後</th><td data-h="できごと">給料を割合で分けるやり方を閉じ、F1に貢献した人は給料の全額を上限に入れることに</td><td data-h="出典">The Race</td></tr><tr><th scope="row">2024年10月17日</th><td data-h="できごと">WMSCが2026年の財務規則を更新。上限の水準は実質的に同じと説明</td><td data-h="出典">FIA</td></tr><tr><th scope="row">2026年</th><td data-h="できごと">上限が2億1500万ドルに</td><td data-h="出典">FIA財務規則</td></tr><tr><th scope="row">2026年10月19日</th><td data-h="できごと">WMSCが分離の決まりを承認。2027年運営規則 第1版が同日付</td><td data-h="出典">FIA、Grande Prêmio</td></tr><tr><th scope="row">2026年10月</th><td data-h="できごと">ホーナーが「チームは5億か6億ドルを使っている」と上限の見直しを訴える</td><td data-h="出典">Motorsport-Total.com</td></tr><tr><th scope="row">2027年1月1日</th><td data-h="できごと">入退室の記録の義務が始まる。新しい決まりは2027年から</td><td data-h="出典">FIA（F6.2.12）、The Race</td></tr></tbody></table></div></div>
+</details>
+<div class="dg-end dg-rel"><h2><span class="k">NEXT</span>この話の続きを読む</h2><ul class="dg-rel-l"><li><a href="/news/en-therace-fia-cost-cap-ringfence/" data-track="click/deep/cost-cap-loophole/related"><small>2027年からの分離の決まりの中身と、チームの抵抗</small><b>FIA、コストキャップ抜け道封じの厳格新ルール　F1部門と他部門を物理・IT両面で分離</b><span>The Race</span></a></li><li><a href="/news/de-motorsporttotal-horner-budget-cap/" data-track="click/deep/cost-cap-loophole/related"><small>ホーナーが「5億か6億ドル」と挙げて訴えた、予算上限の見直し</small><b>ホーナー「チームは5億〜6億ドルを使っている」　予算上限の見直しを要求</b><span>Motorsport-Total.com</span></a></li></ul></div>
+<section class="more-deep"><p class="md-k">COLUMNS</p><h2>ほかのコラムを読む</h2><ul><li><a href="/lens/piero-ferrari-lauda-20261022/" data-track="click/deep/more/lens/piero-ferrari-lauda-20261022/"><span class="ctag ctag-world">WORLD GRID</span><b>ピエロ・フェラーリ「キミはニキを思い出させる」 アントネッリ、赤い車に？</b><small>コラム · 2026年10月22日(木) 06:36</small></a></li><li><a href="/lens/cota-bumps-spine-20261021/" data-track="click/deep/more/lens/cota-bumps-spine-20261021/"><span class="ctag ctag-world">WORLD GRID</span><b>フェルスタッペン「新しい背骨を」 COTAのでこぼこ、粘土か洪水か</b><small>コラム · 2026年10月21日(水) 06:38</small></a></li><li><a href="/lens/palmer-verstappen-six-points-20261020/" data-track="click/deep/more/lens/palmer-verstappen-six-points-20261020/"><span class="ctag ctag-world">WORLD GRID</span><b>フェルスタッペン、モナコ後11戦の得点差は6点 元F1ドライバーが驚く</b><small>コラム · 2026年10月20日(火) 06:26</small></a></li><li><a href="/lens/verstappen-gt3-rivals-20261019/" data-track="click/deep/more/lens/verstappen-gt3-rivals-20261019/"><span class="ctag ctag-world">WORLD GRID</span><b>フェルスタッペンに皮肉と敬意 GT3の仲間「本物のレーシングカー」</b><small>コラム · 2026年10月19日(月) 06:45</small></a></li><li><a href="/deep/wing-300ms/" data-track="click/deep/more/deep/wing-300ms/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#16</span><b>F1のリアウイング、切り替えの「0.1秒」をなぜ規則で縮めるのか</b><small>2026年10月18日(日) 16:45</small></a></li><li><a href="/deep/upgrade-slower/" data-track="click/deep/more/deep/upgrade-slower/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#15</span><b>F1のアップデートで、なぜ車が遅くなることがあるのか</b><small>2026年10月18日(日) 14:23</small></a></li><li><a href="/lens/lord-one-in-25-20261018/" data-track="click/deep/more/lens/lord-one-in-25-20261018/"><span class="ctag ctag-world">WORLD GRID</span><b>アントネッリ、米GPで王座？ メルセデス副代表「25分の1くらい」</b><small>コラム · 2026年10月18日(日) 06:38</small></a></li><li><a href="/lens/aston-pole-claim-check-20261018/" data-track="click/deep/more/lens/aston-pole-claim-check-20261018/"><span class="ctag ctag-world">WORLD GRID</span><b>「PUが同じならアストンはポール争い」は本当か　The Raceの計算を、数字と当事者の声で確かめる</b><small>コラム · 2026年10月18日(日) 04:16</small></a></li></ul><a class="md-btn" href="/columns/" data-track="click/deep/more-all">すべてのコラムを見る →</a><a class="md-sub" href="/" data-track="click/deep/entrance-top">今日のF1ニュースを見る</a></section>
+<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl><dt>F1以外の活動（Non-F1 Activities）</dt><dd>チームのグループが行う、F1以外の仕事。ほかのレースや市販車、ヨットなどの技術開発。直接かかる費用は予算上限に入らない。</dd><dt>制限付きの共用エリア</dt><dd>2027年の規則で、F1の人とF1以外の人の両方が使える設備。風洞やシミュレーターなど。同時には使えない。</dd><dt>空白期間（クーリングオフ）</dt><dd>部門を移る前に、決められた期間どちらの仕事もしないこと。2027年の規則では、F1以外からF1に移るときに3か月以上。</dd><dt>合意書（ABA）</dt><dd>規則違反を認めたチームとFIAが結ぶ合意。違反の中身と罰が書かれる。2021年度のレッドブルが結んだ。</dd><dt>軽い超過・重大な超過</dt><dd>予算上限を超えた割合による区分。いまの規則では2％未満が軽い超過、2％以上が重大な超過。2021年度は5％が境目だった。</dd><dt>物価の調整（インデクセーション）</dt><dd>物価の上がり方に合わせて、上限の額を見直すこと。</dd></dl></div>
+<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src"><li><a href="https://www.fia.com/system/files/documents/fia_2027_f1_regulations_-_section_f_operational_-_iss_01_-_2026-10-19.pdf" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">FIA</a> <small>2027 F1 Regulations Section F Operational Issue 01（2026年10月19日、第F6条）</small></li><li><a href="https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_08_-_2026-10-01.pdf" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">FIA</a> <small>2026 F1 Regulations Section D Financial - F1 Teams Issue 08（2026年10月1日、D4.1.2、D5.1.1、D10.3、D12.1.1）</small></li><li><a href="https://www.the-race.com/formula-1/fia-imposes-draconian-new-rules-on-f1-teams-to-stop-cost-cap-exploitation/" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">The Race</a> <small>FIA imposes draconian new rules on F1 teams to stop cost cap exploitation（2026年10月21日）</small></li><li><a href="https://www.gpblog.com/en/news/fia-introduces-strict-rules-to-prevent-tricks-with-the-budget-cap-regulations" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">GPblog</a> <small>FIA introduces strict rules to prevent &#x27;tricks&#x27; with the budget cap regulations（2026年10月21日）</small></li><li><a href="https://grandepremio.com/en/f1/fia-closes-f1-cost-cap-loopholes-with-strict-new-factory-and-staff-rules-for-2027/" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">Grande Prêmio</a> <small>FIA closes F1 cost cap loopholes with strict new factory and staff rules for 2027（2026年10月21日）</small></li><li><a href="https://www.motorsport-total.com/formel-1/news/horner-fordert-umdenken-teams-geben-500-oder-600-millionen-dollar-aus-26101909" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">Motorsport-Total.com</a> <small>Horner fordert Umdenken: &quot;Teams geben 500 oder 600 Millionen Dollar aus&quot;（2026年10月19日）</small></li><li><a href="https://www.motorsportweek.com/2026/10/18/toto-wolff-f1-cost-cap/" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">Motorsport Week</a> <small>Toto Wolff hits back at F1 cost cap change calls（2026年10月18日）</small></li><li><a href="https://www.planetf1.com/news/mercedes-and-red-bull-operations-revealed-as-fia-clamp-down-on-cost-cap-loophole" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">PlanetF1</a> <small>Mercedes and Red Bull operations revealed as FIA clamp down on cost cap loophole（2023年7月4日）</small></li><li><a href="https://api.fia.com/sites/default/files/rbr_public_summary_aba_-_article_6.32_1.pdf" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">FIA</a> <small>Red Bull Racing public summary of the Accepted Breach Agreement（2022年10月26日）</small></li><li><a href="https://racingnews365.com/red-bulls-budget-cap-breach-the-full-timeline" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">RacingNews365</a> <small>Red Bull&#x27;s budget cap breach: The full timeline（2023年1月4日）</small></li><li><a href="https://www.formula1.com/en/latest/article/wolff-satisfied-with-rigourous-cost-cap-process-as-shovlin-calls-horners.7b2VoA9Ev2ghKwGezw96Kr" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">F1公式サイト</a> <small>Wolff satisfied with &#x27;rigourous&#x27; Cost Cap process, as Shovlin calls Horner&#x27;s &#x27;draconian&#x27; penalty claim &#x27;an exaggeration&#x27;（2022年10月29日）</small></li><li><a href="https://www.grandprix247.com/2022/10/18/brown-dear-fia-f1-cost-cap-breach-constitutes-cheating/" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">GrandPrix247</a> <small>Brown: Dear FIA, F1 cost cap breach constitutes cheating（2022年10月18日）</small></li><li><a href="https://www.crash.net/f1/news/1014425/1/f1-cost-cap-how-red-bull-broke-it-their-punishment-and-2025-budget" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">Crash.net</a> <small>F1 cost cap: What is the F1 cost cap? How much money can F1 teams spend?（2025年10月24日更新）</small></li><li><a href="https://api.fia.com/news/future-regulations-across-multiple-categories-confirmed-during-world-motor-sport-council" target="_blank" rel="noopener" data-track="click/deep/cost-cap-loophole/src">FIA</a> <small>Future regulations across multiple categories confirmed during World Motor Sport Council（2024年10月17日）</small></li></ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>
+<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist"><li><time>2026-10-22</time>公開。</li></ul></div>
+<div class="dg-end"><h2><span class="k">LATEST</span>新着ニュース</h2><ul class="list"><li><div class="m"><span class="kind tech">技術</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-21T22:30:00+02:00">2026年10月22日(木) 05:30</time></div><a class="t" href="/news/it-f1it-fia-wheel-2027-draft/">FIA、2027年規則案でホイール開発を厳格化　予選専用リムは禁止へ</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><time datetime="2026-10-21T22:30:00+02:00">2026年10月22日(木) 05:30</time></div><a class="t" href="/news/it-f1it-ralf-hamilton-integrate/">ラルフ・シューマッハー「ハミルトンはフェラーリに溶け込むべき」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">GPblog</span><time datetime="2026-10-21T22:01:00+02:00">2026年10月22日(木) 05:01</time></div><a class="t" href="/news/en-gpblog-2028-race-distance-return/">FIA、2028年は最低レース距離を305km超へ戻す　2027年の短縮は一時的措置</a></li></ul></div>
+<div class="dg-end"><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">541 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/deep-issue">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-issue/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script></div>
+</article>
+<script type="application/json" id="term-data">{"cost-cap": ["コストキャップ（予算上限）", "チームが1年に使えるお金の上限。2026年は2億1500万ドルで、対象外の費用もある。"], "atr": ["空力テストの制限（ATR）", "風洞とCFDで使える量を、成績の悪いチームほど多くする制限。"], "customer-team": ["カスタマーチーム", "自分ではパワーユニットを作らず、ほかのメーカーから供給を受けて走るチーム。"], "fia": ["FIA（国際自動車連盟）", "F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。"], "wmsc": ["世界モータースポーツ評議会（WMSC）", "FIAの最高の意思決定機関。F1の規則変更は、最後にここで承認される。"], "technical-directive": ["技術指令（TD）", "規則のあいまいな部分について、FIAが「こう解釈する」とチームに示す文書。"], "simulator": ["シミュレーター", "実車の動きとコースを再現し、運転席に座って走れる装置。セットアップや予習に使う。"], "wind-tunnel": ["風洞", "縮小した模型に風を当て、空気の力を測る設備。空力開発の中心だ。"], "fine": ["罰金", "お金で払う罰。順位は変わらない。ドライバーやチームに科され、一部が猶予になることもある。"], "cost-cap-exclusions": ["コストキャップの対象外の費用", "予算上限の計算に入れない支出。ドライバー報酬、移動費、マーケティング費などがある。"], "gardening-leave": ["ガーデニング休暇（ガーデニングリーブ）", "移籍が決まった人が、前の職場との契約の期間、働かずに待つこと。情報が漏れるのを防ぐ。"], "person-toto-wolff": ["トト・ウォルフ", "チーム代表兼CEO（メルセデス）"], "person-zak-brown": ["ザク・ブラウン", "CEO（マクラーレン・レーシング）（マクラーレン）"], "person-andrew-shovlin": ["アンドリュー・ショブリン", "トラックサイド・エンジニアリング・ディレクター（メルセデス）"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
+</main>
+<footer><div class="wrap">
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
+  <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
+</div></footer>
+<nav class="bt" aria-label="サイト内の移動"><a href="/#news" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/?v=data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" class="on" aria-current="page" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
+<script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.addEventListener('click',function(ev){
+  var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
+  try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}
+});
+var cp=document.getElementById('copy'),cu=(document.querySelector('link[rel=canonical]')||{}).href||location.href;
+if(cp) cp.addEventListener('click',function(){
+  var done=function(){cp.textContent='コピーしました';setTimeout(function(){cp.textContent='リンクをコピー';},1400);};
+  try{navigator.clipboard.writeText(cu).then(done,function(){window.prompt('このURLをコピーしてください',cu);});}catch(e){window.prompt('このURLをコピーしてください',cu);}
+});
+</script>
+</body>
+</html>
