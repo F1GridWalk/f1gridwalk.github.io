@@ -1433,6 +1433,7 @@ TERM_JS = '''<script>
 </script>'''
 
 
+TEAMS_ALL = {}  # teams.json teams, for person pages
 PEOPLE = []  # deep/people.json: verified names and titles (shown in the rulebook search as 人物)
 
 
@@ -1448,6 +1449,8 @@ def term_lookup():
 def load_rules():
     global RULES, PEOPLE
     PEOPLE = (load('deep/people.json', {}) or {}).get('people', [])
+    global TEAMS_ALL
+    TEAMS_ALL = (load('teams.json', {}) or {}).get('teams', {})
     R = load('deep/rules.json')
     if R and R.get('draft') and os.environ.get('PREVIEW_DRAFTS') != '1':
         old = os.path.join(ROOT, 'deep', 'rules', 'index.html')
@@ -1673,6 +1676,7 @@ RBP_CSS = '''
 .rbp-body h2.rbp-sh{font-size:17px;font-weight:800;line-height:1.5;margin:26px 0 8px;padding-left:10px;border-left:3px solid var(--clay)}
 .rbp-body h2.rbp-sh:first-child{margin-top:6px}
 .rb-srcbox{margin:22px 0 4px}
+.rbp .rb-team{margin:10px 0 0}.rbp .rb-team a{font-size:15px;font-weight:700;color:var(--ink)}
 .rb-srcbox summary{cursor:pointer;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--muted);padding:6px 0}
 .rbp ul.rb-src{margin:6px 0 0}
 .rbp ul.rb-src li{font-size:13px;line-height:1.7;padding:3px 0}
@@ -1796,17 +1800,23 @@ def build_rules():
                      f'<span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(p["short"])}</span></a>')
+        # the person's page as a fan's way in (owner's OK, 22 Oct 2026): reading first, then team, news, people around them
         b = f'<div class="rb-h" style="margin-top:0">肩書き</div><span class="rb-rule">{e(p["role"])}（{e(p["org"])}）</span>'
+        tk = next((k for k, t in TEAMS_ALL.items() if t.get('name') and t['name'] in p.get('org', '')), None)
+        if tk and os.path.exists(os.path.join(ROOT, 'teams', tk, 'index.html')):
+            b += f'<p class="rb-team"><a href="/teams/{e(tk)}/" data-track="click/person/{e(p["id"])}/team">{e(TEAMS_ALL[tk]["name"])}の記事を、まとめて読む →</a></p>'
         b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
             b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
-        if p.get('sources'):
-            b += '<div class="rb-h">出典（肩書きの確認）</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])}</a></li>' for x in p['sources']) + '</ul>'
         pn_ = person_news(p, ALLARTS)
         if pn_:
             b += (f'<div class="rb-h">{e(p["name"])}が出てくる最新ニュース</div><ul class="rb-ex">'
                   + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/person/{e(p["id"])}/news">{e(a["title"])}</a></li>' for a in pn_) + '</ul>')
+        b += f'<!--peers:{tid}-->'
+        if p.get('sources'):
+            b += (f'<details class="rb-srcbox"><summary>出典（肩書きの確認・{len(p["sources"])}件）</summary><ul class="rb-ex rb-src">' + ''.join(
+                f'<li><a href="{e(x["url"])}" target="_blank" rel="noopener">{e(x["name"])}：{e(x["title"])} ↗</a></li>' for x in p['sources']) + '</ul></details>')
         b += f'<p class="rb-checked">{e(p.get("checked", ""))} に確認</p>'
         ld_p = {'@context': 'https://schema.org', '@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
                 'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
@@ -2658,7 +2668,8 @@ def add_term_reads(n=5):
     for x in ALL_COLS:
         reads.append((x['dt'].isoformat(), COL_TAG[x['kind']], x['url'], x['title']))
     reads.sort(key=lambda r: r[0], reverse=True)
-    by_term = {}
+    by_term, page_people = {}, {}
+    pname = {'person-' + q['id']: q['name'] for q in PEOPLE}
     for dt, label, url, title in reads:
         f = os.path.join(ROOT, url.strip('/'), 'index.html')
         if not os.path.exists(f):
@@ -2667,6 +2678,7 @@ def add_term_reads(n=5):
             ids = dict.fromkeys(TERM_LINK.findall(fh.read()))
         for tid in ids:
             by_term.setdefault(tid, []).append((label, url, title))
+        page_people[url] = {t for t in ids if t.startswith('person-')}
     rdir = os.path.join(ROOT, 'deep', 'rules')
     for d in sorted(os.listdir(rdir)):
         f = os.path.join(rdir, d, 'index.html')
@@ -2678,9 +2690,21 @@ def add_term_reads(n=5):
         if mk not in h:
             continue
         got = by_term.get(d, [])[:n]
-        box = ('<div class="rb-h">この言葉が出てくる読み物</div><ul class="rb-ex rb-reads">' + ''.join(
+        box = ('<div class="rb-h">' + ('この人が出てくる読み物' if d.startswith('person-') else 'この言葉が出てくる読み物') + '</div><ul class="rb-ex rb-reads">' + ''.join(
             f'<li><a href="{e(u)}" data-track="click/rb-reads/{e(d)}"><small>{e(lb)}</small>{e(t)}</a></li>' for lb, u, t in got) + '</ul>') if got else ''
-        write(f'deep/rules/{d}/index.html', h.replace(mk, box))
+        h = h.replace(mk, box)
+        pk = f'<!--peers:{d}-->'
+        if pk in h:
+            co = {}
+            for ids in page_people.values():
+                if d in ids:
+                    for o in ids:
+                        if o != d:
+                            co[o] = co.get(o, 0) + 1
+            peers = sorted([(c, o) for o, c in co.items() if c >= 2 and o in pname], key=lambda x: (-x[0], pname[x[1]]))[:6]
+            h = h.replace(pk, ('<div class="rb-h">よく一緒に出てくる人物</div><div class="rb-see">' + ''.join(
+                f'<a href="/deep/rules/{e(o)}/" data-track="click/person/peer/{e(o)}">{e(pname[o])}</a>' for _, o in peers) + '</div>') if peers else '')
+        write(f'deep/rules/{d}/index.html', h)
     return by_term
 
 
