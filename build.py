@@ -1677,6 +1677,7 @@ RBP_CSS = '''
 .rbp-body h2.rbp-sh:first-child{margin-top:6px}
 .rb-srcbox{margin:22px 0 4px}
 .rbp .rb-team{margin:10px 0 0}.rbp .rb-team a{font-size:15px;font-weight:700;color:var(--ink)}
+.rbp .rb-mate{margin:6px 0 0;font-size:14.5px;color:var(--ink-2)}.rbp .rb-mate a{font-weight:700;color:var(--ink)}
 .rb-srcbox summary{cursor:pointer;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--muted);padding:6px 0}
 .rbp ul.rb-src{margin:6px 0 0}
 .rbp ul.rb-src li{font-size:13px;line-height:1.7;padding:3px 0}
@@ -1805,6 +1806,10 @@ def build_rules():
         tk = next((k for k, t in TEAMS_ALL.items() if t.get('name') and t['name'] in p.get('org', '')), None)
         if tk and os.path.exists(os.path.join(ROOT, 'teams', tk, 'index.html')):
             b += f'<p class="rb-team"><a href="/teams/{e(tk)}/" data-track="click/person/{e(p["id"])}/team">{e(TEAMS_ALL[tk]["name"])}の記事を、まとめて読む →</a></p>'
+        if tk and p.get('role') == 'ドライバー':
+            mates = [x for x in team_people(tk)[0] if x['id'] != p['id']]
+            if mates:
+                b += ('<p class="rb-mate">チームメイト：' + '、'.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/person/{e(p["id"])}/mate">{e(x["name"])} →</a>' for x in mates) + '</p>')
         b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
@@ -2535,6 +2540,11 @@ GPS = {}            # slug -> race info (filled by plan_gps)
 GP_OF = {}          # article id -> GP slug
 
 ENT_CSS = """
+.tm-ppl{margin:14px 0 6px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.tm-ppl p{margin:4px 0;font-size:15px;line-height:1.8}
+.tm-ppl span{display:inline-block;min-width:5.5em;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
+.tm-ppl a{font-weight:700;color:var(--ink);margin-right:14px;white-space:nowrap}
+.ent-grid li a em{display:block;font-style:normal;font-size:13px;font-weight:700;color:var(--ink-2);margin:2px 0 4px}
 .ent-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:6px 0 4px}
 .ent-k{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--clay)}
 .ent-facts{display:flex;flex-wrap:wrap;gap:6px 10px;margin:0 0 14px;font-size:13.5px;color:var(--ink-2)}
@@ -2879,6 +2889,22 @@ def add_related(n=3):
         write(url.strip('/') + '/index.html', h.replace(mk, box))
 
 
+def driver_person(short):
+    """people.json entry for a driver's short name in teams.json (drivers first)."""
+    c = [p for p in PEOPLE if short == p['name'] or short in (p.get('aliases') or []) or p['name'].endswith('・' + short)]
+    c.sort(key=lambda p: p.get('role') != 'ドライバー')
+    return c[0] if c else None
+
+
+def team_people(k):
+    """(drivers, principal) for a team key: people.json entries, principal = チーム代表 of that team."""
+    t = TEAMS_ALL.get(k) or {}
+    ds = [x for x in (driver_person(d) for d in t.get('drivers', [])) if x]
+    name = t.get('name') or ''
+    pr = [p for p in PEOPLE if name and p.get('org', '').startswith(name) and 'チーム代表' in p.get('role', '') and not p.get('role', '').startswith('副')]
+    return ds, (pr[0] if pr else None)
+
+
 DRV_CSS = """
 .drv h1{font-size:26px;margin:6px 0 4px}
 .drv .lead{color:var(--ink-2);font-size:14.5px;line-height:1.8;margin:0 0 18px}
@@ -2887,7 +2913,7 @@ DRV_CSS = """
 .drv-hot b{display:block;font-size:16px}
 .drv-hot span{display:block;font-size:13px;color:var(--ink-2);line-height:1.6;margin-top:2px}
 .drv-tm{border-top:1px solid var(--line);padding:12px 0 10px}
-.drv-tm .tn{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;letter-spacing:.06em;color:var(--muted);text-decoration:none;margin-bottom:6px}
+.drv-tm .tn{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:var(--ink);text-decoration:none;margin-bottom:8px;padding:4px 0}
 .drv-tm .tn i{display:inline-block;width:18px;height:6px;border-radius:3px}
 .drv-tm .ds{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .drv-tm .ds a{display:block;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none}
@@ -2901,10 +2927,7 @@ def build_drivers(by_term):
     each name leading to the person's page (reading first, then news). Built from teams.json + people.json only."""
     T = load('teams.json', {}) or {}
     teams, order = T.get('teams', {}), T.get('order', [])
-    def find(short):
-        c = [p for p in PEOPLE if short == p['name'] or short in (p.get('aliases') or []) or p['name'].endswith('・' + short)]
-        c.sort(key=lambda p: p.get('role') != 'ドライバー')
-        return c[0] if c else None
+    find = driver_person
     grid, drivers = [], []
     for k in order:
         t = teams.get(k) or {}
@@ -3040,6 +3063,10 @@ def build_team_pages(allarts, flag_of, teams):
              f'<p class="ent-k">{e(en.upper())}</p><h1>{e(name)}のニュース・コラム</h1>',
              f'<p class="lead">{e(name)}に関する世界のF1ニュースの日本語要約と、コラム・STORY を新しい順に集めています。</p>',
              '<div class="ent-jump">' + ''.join(jump) + '</div>']
+        ds, pr = team_people(k)
+        if ds or pr:  # team -> its people (owner's OK, 22 Oct 2026)
+            b.append('<div class="tm-ppl">' + (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver">{e(x["name"])} →</a>' for x in ds) + '</p>') if ds else '')
+                     + (f'<p><span>代表</span><a href="/deep/rules/person-{e(pr["id"])}/" data-track="click/team/{k}/principal">{e(pr["name"])} →</a></p>' if pr else '') + '</div>')
         if hubs:
             b.append('<section id="tm-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/team/{k}/story') for H in hubs) + '</ul></section>')
         if cols:
@@ -3055,7 +3082,8 @@ def build_team_pages(allarts, flag_of, teams):
         return []
     cards.sort(reverse=True)
     items = ''.join(f'<li><a href="/teams/{k}/" data-track="click/team-index/{k}"><small>{e(en)}</small><b>{e(name)}</b>'
-                    f'<span>ニュース {n}本' + (f' · コラム {nc}本' if nc else '') + f'<br>最新：{e(la["title"])}</span></a></li>' for n, k, name, en, nc, la in cards)
+                    + (f'<em>{e(" ／ ".join(x["name"].split("・")[-1] for x in team_people(k)[0]))}</em>' if team_people(k)[0] else '')
+                    + f'<span>ニュース {n}本' + (f' · コラム {nc}本' if nc else '') + f'<br>最新：{e(la["title"])}</span></a></li>' for n, k, name, en, nc, la in cards)
     body = ('<nav class="crumbs"><a href="/">トップ</a> › チームごとに読む</nav><p class="ent-k">TEAMS</p><h1>チームごとに読む</h1>'
             '<p class="lead">好きなチームのニュースとコラムを、まとめて読めます。記事の多いチームから順に。</p>'
             f'<ul class="ent-grid two">{items}</ul><p class="ent-more"><a href="/gp/">GPごとに読む</a><a href="/news/">ニュース一覧</a></p>')
