@@ -3119,7 +3119,7 @@ def build_team_pages(allarts, flag_of, teams):
         mem = team_members(k)
         if ds or mem:  # team -> its people (owner's OK, 22 Oct 2026)
             def short_role(r):
-                r = re.sub(r'（[^）]*）|\([^)]*\)', '', r).strip()
+                r = re.sub(r'（[^）]*）|\([^)]*\)', '', r).split('。')[0].strip()
                 return r if len(r) <= 22 else r[:21] + '…'
             rows = (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver">{e(x["name"])} →</a>' for x in ds) + '</p>') if ds else '')
             for gk, gl in [('mgmt', '代表・経営'), ('tech', '技術'), ('race', 'レース現場'), ('reserve', 'リザーブ')]:
