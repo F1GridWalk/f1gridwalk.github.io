@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T06:15:00+09:00",
+  "updatedAt": "2026-10-22T12:14:25+09:00",
   "topics": {
     "mercedes-w17-aero-balance": {
       "title": "メルセデス、W17新空力パッケージの不振原因は前後バランスと特定",
@@ -15,7 +15,7 @@
     },
     "ferrari-austin-upgrade": {
       "title": "フェラーリ、アメリカGPで今季最後の大型空力アップデートへ　新フロアが中心",
-      "summary": "フェラーリはオースティンに今季4回目の空力パッケージを持ち込み、新フロアを中心にサイドポッドや冷却開口部も変更するとされる。狙いは車高や姿勢が変わる条件でも空力を安定させることだ。サイドポッドの吸気口を狭めつつ冷却を保つ設計が課題になる。以降の開発は2027年型へ移ると報じられている。"
+      "summary": "フェラーリはオースティンに今季4回目の空力パッケージを持ち込み、新フロアを中心にサイドポッドや冷却開口部も変更するとされる。ダウンフォースの増加、前寄りの空力バランスの是正、抵抗の削減が狙いだ。SF-26として最後の大型改良で、以降の開発は2027年型へ移ると報じられている。"
     },
     "haas-godzilla-livery": {
       "title": "ハース、アメリカGPでゴジラ特別カラー　ホームレースで映画とコラボ",
@@ -48,9 +48,134 @@
     "hadjar-sprint-dislike": {
       "title": "ハジャー「スプリントは運次第」　来季は10戦に増加の方針に不満",
       "summary": "レッドブルのハジャーは、2026年のスプリント形式は走行時間が少なく運に左右されやすいとして、もう好きではないと語った。来季はスプリントが6戦から10戦に増える予定で、その決定にも失望を示した。シンガポールでの不振は主にマシンの跳ねやパワーユニットなどのトラブルによるものとされる。"
+    },
+    "mercedes-update-struggle": {
+      "title": "メルセデス、アップデート不発でリード縮小　オースティンは新パーツを両車に",
+      "summary": "首位のメルセデスはマレーシアとシンガポールの改良が狙いどおりに働かず、レッドブルとフェラーリに接近された。ブラッドリー・ロード副代表は「本物の戦いが待っている」と語り、ウォルフ代表も難しい2週末だったと認めた。シンガポールでは新旧仕様を比較したが、オースティンでは最新パーツを両車に使う。アントネッリは同地でタイトルを決める可能性がある。"
     }
   },
   "articles": [
+    {
+      "id": "en-therace-ferrari-austin-biggest-upgrade",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "circuit": "austin",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-austin-upgrade",
+      "title": "フェラーリ、オースティンに今季最大の空力アップデート　フロア中心で空気抵抗削減を狙う",
+      "summary": "The Raceは、フェラーリがアメリカGPに今季4回目で最大の空力パッケージを持ち込み、SF-26として最後の大規模改良になると伝えた。変更の中心はフロアで、ダウンフォースの増加と、前寄りに偏った空力バランスの是正、使える領域の拡大が狙いだという。サイドポッドの基本コンセプトは維持し、抵抗の削減を重視する。レッドブルの水路状の処理も検討したが、残り戦数が少なく採用を見送った。この先は2027年型の風洞作業が続くとされる。",
+      "orig": "What Ferrari's changing with its biggest F1 upgrade of 2026",
+      "url": "https://www.the-race.com/formula-1/what-ferrari-is-changing-biggest-f1-2026-upgrade/",
+      "published": "2026-10-18T12:00:00+01:00"
+    },
+    {
+      "id": "en-therace-alonso-aston-turbo-mystery",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "分析",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "alonso-aston-honda-mystery",
+      "title": "アロンソのリタイアに潜む謎　ホンダは「データに異常なし」、苦戦続くアストンマーティン",
+      "summary": "The Raceは、アストンマーティン・ホンダの今季の不振の中でも、アロンソのトラブルが最も不可解だと論じた。バクーでは約20周でリタイアし、ストレートで約1.5秒を失ったと訴えたが、ホンダはデータに問題を見つけていない。シンガポールでも予選Q1敗退後に「ターボが壊れた」と述べたものの、ホンダ側は故障の証拠なしとした。マイク・クラックは、ボッタスのキャデラックの後ろで受けたスリップストリームと追い越し用モードが錯覚を生んだ可能性を指摘する。記事は、データで原因が見つかるまでは早期撤退の疑いも残るとの見方を示した。",
+      "orig": "The strange Alonso subplot to Aston Martin's weird recent run",
+      "url": "https://www.the-race.com/formula-1/strange-fernando-alonso-subplot-aston-martin-weird-f1-form/",
+      "published": "2026-10-18T12:00:00+01:00"
+    },
+    {
+      "id": "de-motorsporttotal-mercedes-warns-redbull-ferrari",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "チーム",
+      "circuit": "austin",
+      "teams": [
+        "mercedes",
+        "redbull",
+        "ferrari"
+      ],
+      "topic": "mercedes-update-struggle",
+      "title": "メルセデス「本物の戦いが待っている」　レッドブルとフェラーリの接近に警戒",
+      "summary": "Motorsport-Total.comは、ドライバーズ・コンストラクターズ両首位のメルセデスが、リードの縮小を認めたと報じた。開幕6連勝のメルセデスは今季11勝だが、直近はレッドブルとフェラーリが優位に立つ場面が増え、4チームが複数勝利を挙げている。ブラッドリー・ロード副代表は「本物の戦いが待っている」と述べた。W17の最新アップデートは期待ほどの効果を示せず、ラッセルが旧仕様、アントネッリが新仕様でシンガポールを走り比較した。シモーネ・レスタは、オースティンでセットアップを詰めて前に戻ると語った。",
+      "orig": "Mercedes warnt vor Red Bull und Ferrari: \"Ein echter Kampf\" steht bevor",
+      "url": "https://www.motorsport-total.com/formel-1/news/mercedes-warnt-vor-red-bull-und-ferrari-ein-echter-kampf-steht-bevor-26102106",
+      "published": "2026-10-21T12:00:00+02:00"
+    },
+    {
+      "id": "it-f1it-wolff-mercedes-update-both-cars",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "チーム",
+      "circuit": "austin",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "mercedes-update-struggle",
+      "title": "メルセデス、オースティンは最新アップデートを両車に搭載　ウォルフ「浮かれはしない」",
+      "summary": "Formula1.itは、メルセデスがマレーシアで投入しシンガポールで拡大した改良が狙いどおりに働かず、レッドブルの連勝を許したと伝えた。アントネッリはオースティンでドライバーズタイトルを決める可能性があるが、条件は厳しい。トト・ウォルフ代表は「難しい2週末だった」と認めつつ、チームは来季に向けて正しい道にいると自信を示した。シンガポールではラッセルが旧仕様、アントネッリが新仕様だったが、オースティンでは新パーツを両車に使う。ウォルフは「浮かれはしない」とし、まず車の性能を引き出すことが先決だと述べた。",
+      "orig": "Occhi su Antonelli, ma Wolff chiede auto identiche. Mercedes continua a sperimentare",
+      "url": "https://www.formula1.it/news/33395/1/occhi-su-antonelli-ma-wolff-chiede-auto-identiche-mercedes-continua-a-sperimentare",
+      "published": "2026-10-21T20:05:00+02:00"
+    },
+    {
+      "id": "de-motorsporttotal-fia-remote-ops-centre",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "ビジネス",
+      "topic": "fia-remote-operations-centre",
+      "title": "FIAが英ビギンヒルに新管制センター　140超の映像・音声を監視しAIも活用",
+      "summary": "Motorsport-Total.comは、FIAが英ビギンヒルのF1拠点に遠隔運用センター（ROC）を新設し、レースディレクションと審査委員を支援すると伝えた。投資額は「数百万ユーロ」で、8月のオランダGPから実際に稼働していたという。レース週末には最大16人が140以上の映像・音声やマシン位置、チーム無線を監視し、ジャンプスタートやトラックリミット違反などを洗い出す。画像認識や無線の自動文字起こしも使うが、判断は従来どおりレースディレクションと審査委員が下す。FIAは、週末後の検証を規則改定や審判員の訓練にも生かすとしている。",
+      "orig": "FIA eröffnet neue F1-Kommandozentrale: Was sich jetzt ändern soll",
+      "url": "https://www.motorsport-total.com/formel-1/news/fia-eroeffnet-neue-f1-kommandozentrale-was-sich-jetzt-aendern-soll-26102103",
+      "published": "2026-10-21T12:00:00+02:00"
+    },
+    {
+      "id": "it-f1it-ferrari-intake-runners-rumor",
+      "kind": "rumor",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "うわさ",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-engine-intake-gap",
+      "title": "フェラーリ、エンジンのインテーク素材に差？　ADUO-2の効果は限定的との報道",
+      "summary": "Formula1.itは、モンツァで投入したフェラーリのエンジン改良ADUO-2が期待したほどの前進をもたらさなかったと伝えた。出力の上積みは、一部で報じられた10馬力の半分以下にとどまるとされる。より大きなタービンは信頼性目標を満たせず、2027年へ先送りされたという。同誌は匿名の情報源を挙げ、ライバルのインテークランナーがカーボン製なのに対し、フェラーリは鋼製で出力差が30馬力超になり得ると主張した。ただしこれらは未確認で、フェラーリやFIAは確認していない。",
+      "orig": "Ferrari, non solo turbo: anche la fluidodinamica del motore finisce sotto esame",
+      "url": "https://www.formula1.it/news/33386/1/ferrari-non-solo-turbo-anche-la-fluidodinamica-del-motore-finisce-sotto-esame",
+      "published": "2026-10-21T20:15:00+02:00"
+    },
+    {
+      "id": "ja-f1are-honda-job-rotation",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "まとめ",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "honda-job-rotation",
+      "title": "HRC渡辺社長が語るホンダの「ジョブローテーション」　ネット上では賛否",
+      "summary": "F1のアレは、Motorsport.com日本版のインタビューを元に、HRCの渡辺社長がF1でのジョブローテーションについて語った内容を取り上げた。PU開発を担うHRCの技術者はホンダやホンダ・リサーチ・アンド・ディベロップメントからの出向者で、再び他部門へ異動することもある。渡辺社長は、技術やアイデアの引き出しが増えるとして、この方式を続ける考えを示したという。掲示板では、専門性が求められるF1では経験の蓄積が重要だとの意見や、外部の専門家を招くべきだという声が出ていた。今季のホンダの苦戦と結びつける見方も話題になっている。",
+      "orig": "F1でホンダが活用する“ジョブローテーション”についてHRC渡辺社長が説明「技術やアイデアの引き出しを増やす」",
+      "url": "https://f1are.com/blog-entry-4007.html",
+      "published": "2026-10-22T12:00:00+09:00"
+    },
     {
       "id": "en-therace-fia-wheel-rim-single-spec",
       "kind": "tech",
@@ -1301,126 +1426,6 @@
       "orig": "カルロス・サインツJr. ホーナーのレッドブルF1移籍交渉暴露に反応「彼の家で夕食を食べた」",
       "url": "https://f1-gate.com/carlossainzjr/229197.html",
       "published": "2026-10-19T11:56:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-albon-calendar-suitcase",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "teams": [
-        "williams"
-      ],
-      "topic": "albon-calendar-burden",
-      "title": "アルボン、過密日程の実態を告白「最終戦まで自宅で過ごせるのは5日だけ」",
-      "summary": "F1-Gate.comは、アルボンが24戦のカレンダーの負担を語ったと伝えた。最終戦までにモナコの自宅で過ごせるのは5日だけで、「ほとんどスーツケースの中で暮らしている」という。レース後は水曜夜か木曜朝に次の開催地へ向かい、マレーシアとシンガポールのように飛行は短くても体内時計が約8時間ずれる遠征もある。睡眠の専門家や栄養士と組み、ブルーライトカット眼鏡やカフェインガムで調整している。メカニックらの負担はドライバー以上だとも述べた。",
-      "orig": "アレクサンダー・アルボン F1過密日程の実態を告白「最終戦まで自宅に5日だけ」",
-      "url": "https://f1-gate.com/alexander-albon/229193.html",
-      "published": "2026-10-19T10:23:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-verstappen-lulham-abuse",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "teams": [
-        "redbull"
-      ],
-      "circuit": "portimao",
-      "topic": "verstappen-lulham-abuse-statement",
-      "title": "フェルスタッペン、チームメイトへの誹謗中傷に声明「個人攻撃は許されない」",
-      "summary": "F1-Gate.comは、フェルスタッペンがGTワールドチャレンジ・ヨーロッパ最終戦の後にチームメイトへの中傷を批判したと伝えた。10月17日のポルティマオ3時間レースで、フェルスタッペン・レーシングの3号車はルルハムがシュトルツ車と接触し、ドライブスルーペナルティを受けた。フェルスタッペンは最終スティントで24番手から追い上げて9位に入った。声明では、レースへの意見は自由だが個人攻撃は許されないとし、ミスは誰にでも起こり得るとルルハムを擁護した。",
-      "orig": "マックス・フェルスタッペン チームメイトへの誹謗中傷に声明「個人攻撃は許されない」",
-      "url": "https://f1-gate.com/verstappen/229156.html",
-      "published": "2026-10-19T09:01:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-hamilton-vettel-friend",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "hamilton-vettel-friendship",
-      "title": "ハミルトン、ベッテルとの友情を語る「F1界で最も親しい友人」",
-      "summary": "F1-Gate.comは、ハミルトンがベッテルを「レースの世界で出会った中で最も親しい友人」と語ったと伝えた。発言はARDのドキュメンタリー『Being Sebastian Vettel』によるもので、全4回の配信は10月22日に始まる。ハミルトンは、ベッテルが自分を決めつけたり非難したりしなかったと振り返った。2人は2017年と2018年にタイトルを争い、2017年のアゼルバイジャンGPでは接触騒動もあった。人種差別や環境問題で発信してきた点も共通している。",
-      "orig": "ルイス・ハミルトン セバスチャン・ベッテルとの友情を告白「F1界で最も親しい友人」",
-      "url": "https://f1-gate.com/hamilton/229123.html",
-      "published": "2026-10-19T06:38:00+09:00"
-    },
-    {
-      "id": "ja-f1jouhou2-haas-toyota-tpc-komatsu",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1情報通",
-      "cat": "まとめ",
-      "teams": [
-        "haas"
-      ],
-      "topic": "haas-komatsu-camara-choice",
-      "title": "ハースのカマラ起用はトヨタ支援のTPCがきっかけ？　平川亮の落選と小松代表の発言が話題に",
-      "summary": "ハースが2027年にカマラを起用した経緯について、トヨタが支援する旧型車テスト（TPC）が判断材料になったという話題がまとめられている。ハースの小松代表がThe Raceに、TPCがなければ同じ選択をしたか分からず、F2の選手を外から評価するのは難しいと語ったという内容に基づく。結果として、トヨタ系で席を望んでいた平川亮は選ばれなかった。コメント欄では、TPCなしなら平川が選ばれたのではという見方や、両席がフェラーリ系になることへの指摘が出ていたが、これらは読者の推測である。",
-      "orig": "ハースとトヨタのTPC資金、小松代表「カマラ起用はTPCがなければなかったかも」",
-      "url": "https://f1jouhou2.com/blog-entry-31736.html",
-      "published": "2026-10-19T06:00:00+09:00"
-    },
-    {
-      "id": "ja-f1gate-alpine-mini-tpc-ricard",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "teams": [
-        "alpine"
-      ],
-      "circuit": "paulricard",
-      "topic": "alpine-mini-tpc-test",
-      "title": "アルピーヌのミニ、旧型A525でポール・リカール走行　メキシコGPのFP1出走も浮上",
-      "summary": "F1-Gate.comは、アルピーヌの育成ドライバーであるガブリエレ・ミニが10月16日にポール・リカールで2025年型A525のテストを行ったと伝えた。21歳のイタリア人で、今季はF2のMPモータースポーツから参戦し、残り2戦の時点で4位につけている。7月にシルバーストンで600km超、9月にポルティマオで約558kmを走っており、累計は1100kmを超える。SNSでは「多くを学んだ」と述べ、早く再びコクピットに戻りたいと綴った。伊メディアはメキシコGPのFP1出走の可能性を報じているが、アルピーヌは確認していない。",
-      "orig": "アルピーヌF1 ガブリエレ・ミニが旧型車テスト メキシコGPのFP1出走も浮上",
-      "url": "https://f1-gate.com/alpine/229084.html",
-      "published": "2026-10-19T05:26:00+09:00"
-    },
-    {
-      "id": "it-formula1it-ferrari-without-customers",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "ビジネス",
-      "teams": [
-        "ferrari",
-        "cadillac",
-        "haas"
-      ],
-      "topic": "ferrari-customer-teams",
-      "title": "フェラーリは顧客チームを失うべきか　「勝利への復帰に必要かもしれない」",
-      "summary": "Formula1.itのコラムは、フェラーリが数年内にPU供給先を失っても恐れる必要はないと論じた。キャデラックは2027年に自社製エンジンを作る予定だったが、規則変更で来季もフェラーリ製を使う見通しで、筆者はこの喪失を確実視する。ハースはトヨタとの関係が単なるスポンサー以上だとして、将来の離脱の可能性を指摘する。1993〜2005年には自社の2台だけに供給し、1999〜2004年にタイトルを獲った前例もある。供給先が自社だけになるのは欠点というより長所になりうる、というのが筆者の主張だ。",
-      "orig": "Ferrari senza clienti in F1? Forse è ciò che serve per tornare a vincere",
-      "url": "https://www.formula1.it/news/33331/1/ferrari-senza-clienti-in-f1-forse-e-cio-che-serve-per-tornare-a-vincere",
-      "published": "2026-10-18T20:00:00+02:00"
-    },
-    {
-      "id": "ja-f1gate-2027-grid-19-of-22",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "topic": "f1-2027-grid-seats",
-      "title": "2027年F1ドライバーラインアップ　22席中19席が決定、残る3席の行方",
-      "summary": "F1-Gate.comは、2027年のF1ドライバー22席のうち19席が確定したと整理した。マクラーレン、フェラーリ、メルセデス、アストンマーティンは現行の2人が残り、レッドブルはフェルスタッペンとハジャー、アルピーヌはガスリーとコラピント、ウィリアムズはアルボンとサインツ、アウディはヒュルケンベルグとボルトレートが並ぶ。キャデラックはボッタスとペレスで、ハースはカマラの起用が決まった。未定の3席は、ベアマンの去就が焦点のハース1席と、ローソンとリンドブラッドが走るレーシングブルズの2席となっている。",
-      "orig": "2027年F1ドライバーラインアップ 22席中19席が決定 残る3席の行方",
-      "url": "https://f1-gate.com/driver/228957.html",
-      "published": "2026-10-18T23:27:00+09:00"
     }
   ]
 }
