@@ -644,11 +644,11 @@ def more_columns(cur_url, page='lens', n=8):
     """End of every column page: the newest other columns of all three corners, with corner tags (owner, 6 Oct 2026)."""
     others = [x for x in ALL_COLS if x['url'] != cur_url][:n]
     if not others:
-        return ''
+        return f'<!--related:{cur_url}-->'
     k = 'mc' if page == 'lens' else 'md'
     sec = 'more-cols' if page == 'lens' else 'more-deep'
     li = ''.join(col_li(x, f'click/{page}/more{x["url"]}') for x in others)
-    return (f'<section class="{sec}"><p class="{k}-k">COLUMNS</p><h2>ほかのコラムを読む</h2>'
+    return (f'<!--related:{cur_url}--><section class="{sec}"><p class="{k}-k">COLUMNS</p><h2>ほかのコラムを読む</h2>'
             f'<ul>{li}</ul>'
             f'<a class="{k}-btn" href="/columns/" data-track="click/{page}/more-all">すべてのコラムを見る →</a>'
             f'<a class="{k}-sub" href="/" data-track="click/{page}/entrance-top">今日のF1ニュースを見る</a></section>')
@@ -2780,6 +2780,79 @@ def build_share_kit(days=7, req_days=4):
                                    f'<meta name="robots" content="noindex,nofollow">\n<style>{SHARE_CSS}</style>\n', og_type='website'))
 
 
+RELATED_CSS = """<style>
+.rel{margin:34px 0 8px;padding-top:16px;border-top:2px solid var(--ink)}
+.rel .rel-k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--clay);margin:0}
+.rel h2{font-size:20px;margin:2px 0 10px}
+.rel a.rel-i{display:block;margin:8px 0 0;padding:10px 14px;border:1px solid var(--line);border-left:3px solid var(--clay);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:15px;font-weight:700;line-height:1.55}
+.rel a.rel-i small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
+.rel a.rel-t{display:inline-block;margin:12px 0 0;font-size:14.5px;font-weight:700;color:var(--ink)}
+</style>"""
+
+
+def page_entities(text, teams):
+    """Teams and people a page is about, read from its title and lead (no AI; names from teams.json / people.json)."""
+    ents = set()
+    for k, t in teams.items():
+        names = [t.get('name') or k] + list(t.get('drivers') or [])
+        if any(n and n in text for n in names):
+            ents.add('team:' + k)
+        if t.get('pu') and t['pu'] in text:
+            ents.add('pu:' + t['pu'])
+    for pp in PEOPLE:
+        short = [a for a in [pp['name']] + (pp.get('aliases') or []) if len(a) >= 3 and not re.fullmatch(r'[A-Za-z ]+', a)]
+        if any(a in text for a in short):
+            ents.add('person:' + pp['id'])
+    return ents
+
+
+def add_related(n=3):
+    """「この話の続き」at the end of every column and DEEP issue (owner's OK, 22 Oct 2026): STORYs, columns and
+    DEEP issues about the same people / teams, best match first, then the team page. A shared person counts 2,
+    a shared team or engine maker 1; at least 2 is needed, so a single team name alone does not make a link."""
+    teams = (load('teams.json', {}) or {}).get('teams', {})
+    pages = []
+    for H in HUBS.values():
+        S = H.get('story') or {}
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        pages.append(('STORY', f'/topics/{H["slug"]}/', H['title'], ' '.join([H['title'], H.get('dek', ''), S.get('hook', '')]), max(ups) if ups else ''))
+    for x in ALL_COLS:
+        J = load(('deep/' if x['kind'] == 'deep' else 'lens/') + x['url'].strip('/').split('/')[-1] + '.json') or {}
+        pages.append((COL_TAG[x['kind']], x['url'], x['title'], ' '.join([x['title'], J.get('dek', ''), J.get('noteTags', '')]), x['dt'].isoformat()))
+    ents = {u: page_entities(t, teams) for _, u, _, t, _ in pages}
+    def w(e_):
+        return 2 if e_.startswith('person:') else 1
+    for label, url, title, text, dt in pages:
+        if url.startswith('/topics/'):
+            continue
+        f = os.path.join(ROOT, url.strip('/'), 'index.html')
+        if not os.path.exists(f):
+            continue
+        with open(f, encoding='utf-8') as fh:
+            h = fh.read()
+        mk = f'<!--related:{url}-->'
+        if mk not in h:
+            continue
+        mine = ents[url]
+        scored = []
+        for lb2, u2, t2, _, d2 in pages:
+            if u2 == url:
+                continue
+            sc = sum(w(e_) for e_ in mine & ents[u2])
+            if sc >= 2:
+                scored.append((sc, d2, lb2, u2, t2))
+        scored.sort(key=lambda r: (r[0], r[1]), reverse=True)
+        tm = [e_[5:] for e_ in sorted(mine) if e_.startswith('team:')]
+        tm = [k for k in tm if os.path.exists(os.path.join(ROOT, 'teams', k, 'index.html'))]
+        box = ''
+        if scored or tm:
+            box = ('<section class="rel"><p class="rel-k">MORE ON THIS</p><h2>この話の続き</h2>'
+                   + ''.join(f'<a class="rel-i" href="{e(u2)}" data-track="click/rel{e(url)}"><small>{e(lb2)}</small>{e(t2)} →</a>' for _, _, lb2, u2, t2 in scored[:n])
+                   + ''.join(f'<a class="rel-t" href="/teams/{e(k)}/" data-track="click/rel-team/{e(k)}">{e(teams[k].get("name", k))}の記事を、まとめて読む →</a><br>' for k in tm[:2])
+                   + '</section>' + RELATED_CSS)
+        write(url.strip('/') + '/index.html', h.replace(mk, box))
+
+
 def build_gp_pages(flag_of, circuits):
     if not GPS:
         return []
@@ -3108,6 +3181,7 @@ def main():
     urls += build_rules()
     urls += build_hubs(arch, flag_of)
     add_term_reads()
+    add_related()
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)
     urls += build_team_pages(allarts, flag_of, teams)
