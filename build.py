@@ -115,7 +115,7 @@ CSS = '''
 /* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
 .bt{display:none}
 @media (max-width:520px){
-.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(5,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
 .bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
 .bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .bt .on{color:var(--ink)}
@@ -193,14 +193,14 @@ footer p{margin:6px 0}
 '''
 
 
-BT_ICON = {'news': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>', 'data': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>', 'col': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>', 'rule': '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>'}
+BT_ICON = {'drv': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 8 0 0 1 16-1v3H4z"/><path d="M12 14h8M8 19h8"/></svg>', 'news': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>', 'data': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>', 'col': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>', 'rule': '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>'}
 
 
 def bottom_tabs(canonical):
     """Phone bottom tab bar on every page (owner's choice A, 11 Oct 2026)."""
     path = canonical.replace(SITE, '')
-    cur = 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith(('/news/', '/gp/', '/teams/')) or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
-    items = [('news', '/#news', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('rule', '/deep/rules/', '用語')]
+    cur = 'drv' if path.startswith(('/drivers/', '/deep/rules/person-')) else 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith(('/news/', '/gp/', '/teams/')) or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
+    items = [('news', '/#news', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('drv', '/drivers/', 'ドライバー'), ('rule', '/deep/rules/', '用語')]
     return ('<nav class="bt" aria-label="サイト内の移動">' + ''.join(
         f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
 
@@ -1420,7 +1420,8 @@ TERM_JS = '''<script>
     pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
     var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
     pop.appendChild(document.createTextNode(d[1]));
-    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent='ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    var tid=a.getAttribute('data-term')||'';
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent=tid.indexOf('person-')===0?(d[0]+'の記事をすべて見る →'):'ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
     document.body.appendChild(pop);
     var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
     pop.style.width=w+'px';
@@ -2680,6 +2681,7 @@ def add_term_reads(n=5):
         box = ('<div class="rb-h">この言葉が出てくる読み物</div><ul class="rb-ex rb-reads">' + ''.join(
             f'<li><a href="{e(u)}" data-track="click/rb-reads/{e(d)}"><small>{e(lb)}</small>{e(t)}</a></li>' for lb, u, t in got) + '</ul>') if got else ''
         write(f'deep/rules/{d}/index.html', h.replace(mk, box))
+    return by_term
 
 
 SHARE_CSS = """
@@ -2851,6 +2853,80 @@ def add_related(n=3):
                    + ''.join(f'<a class="rel-t" href="/teams/{e(k)}/" data-track="click/rel-team/{e(k)}">{e(teams[k].get("name", k))}の記事を、まとめて読む →</a><br>' for k in tm[:2])
                    + '</section>' + RELATED_CSS)
         write(url.strip('/') + '/index.html', h.replace(mk, box))
+
+
+DRV_CSS = """
+.drv h1{font-size:26px;margin:6px 0 4px}
+.drv .lead{color:var(--ink-2);font-size:14.5px;line-height:1.8;margin:0 0 18px}
+.drv h2{font-size:18px;margin:30px 0 8px;padding-top:14px;border-top:2px solid var(--ink)}
+.drv-hot a{display:block;margin:8px 0 0;padding:10px 14px;border:1px solid var(--line);border-left:3px solid var(--clay);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none}
+.drv-hot b{display:block;font-size:16px}
+.drv-hot span{display:block;font-size:13px;color:var(--ink-2);line-height:1.6;margin-top:2px}
+.drv-tm{border-top:1px solid var(--line);padding:12px 0 10px}
+.drv-tm .tn{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;letter-spacing:.06em;color:var(--muted);text-decoration:none;margin-bottom:6px}
+.drv-tm .tn i{display:inline-block;width:18px;height:6px;border-radius:3px}
+.drv-tm .ds{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.drv-tm .ds a{display:block;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none}
+.drv-tm .ds b{display:block;font-size:15.5px;line-height:1.4}
+.drv-tm .ds small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+"""
+
+
+def build_drivers(by_term):
+    """drivers/index.html — the bottom bar's ドライバー tab (owner's OK, 22 Oct 2026): this season's grid by team,
+    each name leading to the person's page (reading first, then news). Built from teams.json + people.json only."""
+    T = load('teams.json', {}) or {}
+    teams, order = T.get('teams', {}), T.get('order', [])
+    def find(short):
+        c = [p for p in PEOPLE if short == p['name'] or short in (p.get('aliases') or []) or p['name'].endswith('・' + short)]
+        c.sort(key=lambda p: p.get('role') != 'ドライバー')
+        return c[0] if c else None
+    grid, drivers = [], []
+    for k in order:
+        t = teams.get(k) or {}
+        cards = []
+        for d in t.get('drivers', []):
+            p = find(d)
+            if not p:
+                continue
+            reads = by_term.get('person-' + p['id'], [])
+            nn = len(person_news(p, ALLARTS))
+            drivers.append((p, reads))
+            sub = f'STORY・コラム {len(reads)}本' if reads else ('ニュースあり' if nn else '')
+            cards.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/{e(p["id"])}"><b>{e(p["name"])}</b>' + (f'<small>{e(sub)}</small>' if sub else '') + '</a>')
+        if not cards:
+            continue
+        tn = f'<i style="background:{e(t.get("c1", "#888"))}"></i>{e(t.get("name", k))}'
+        head = (f'<a class="tn" href="/teams/{e(k)}/" data-track="click/drivers/team/{e(k)}">{tn} →</a>' if os.path.exists(os.path.join(ROOT, 'teams', k, 'index.html'))
+                else f'<span class="tn">{tn}</span>')
+        grid.append(f'<div class="drv-tm">{head}<div class="ds">{"".join(cards)}</div></div>')
+    # drivers in the newest reading, newest first (one per driver)
+    hot, rank = [], []
+    for p, reads in drivers:
+        if reads:
+            rank.append((reads[0], p))
+    order_urls = {}
+    for H in hubs_newest():
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        order_urls[f'/topics/{H["slug"]}/'] = max(ups) if ups else ''
+    for x in ALL_COLS:
+        order_urls[x['url']] = x['dt'].isoformat()
+    rank.sort(key=lambda r: order_urls.get(r[0][1], ''), reverse=True)
+    used_u = set()
+    for (lb, u, ttl), p in rank:
+        if u in used_u or len(hot) >= 3:
+            continue
+        used_u.add(u)
+        hot.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/hot/{e(p["id"])}"><b>{e(p["name"])}</b><span>最新の読み物：{e(lb)}「{e(ttl)}」</span></a>')
+    body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › ドライバー</nav><div class="drv">'
+            f'<h1>ドライバー</h1><p class="lead">{e(T.get("season", "2026"))}年のF1を走る{len(drivers)}人を、チームごとに並べています。名前を押すと、その人の STORY・コラム・ニュースをまとめて読めます。</p>'
+            + (f'<h2>最近の読み物に登場</h2><div class="drv-hot">{"".join(hot)}</div>' if hot else '')
+            + '<h2>チームとドライバー</h2>' + ''.join(grid) + '</div>')
+    url = SITE + '/drivers/'
+    write('drivers/index.html', page('F1ドライバー一覧 2026｜チームごとの22人と記事｜F1グリッドウォーク',
+                                     f'{T.get("season", "2026")}年のF1ドライバー{len(drivers)}人をチームごとに。名前から、その人のSTORY・コラム・ニュースへ。', url, body,
+                                     f'<style>{DRV_CSS}</style>\n', og_type='website'))
+    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
 
 
 def build_gp_pages(flag_of, circuits):
@@ -3180,7 +3256,8 @@ def main():
     urls += build_all_columns()
     urls += build_rules()
     urls += build_hubs(arch, flag_of)
-    add_term_reads()
+    by_term = add_term_reads()
+    urls += build_drivers(by_term)
     add_related()
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)

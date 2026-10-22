@@ -89,7 +89,7 @@
 /* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
 .bt{display:none}
 @media (max-width:520px){
-.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(5,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
 .bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
 .bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .bt .on{color:var(--ink)}
@@ -327,7 +327,7 @@ footer p{margin:6px 0}
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
   <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
 </div></footer>
-<nav class="bt" aria-label="サイト内の移動"><a href="/#news" class="on" aria-current="page" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/?v=data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
+<nav class="bt" aria-label="サイト内の移動"><a href="/#news" class="on" aria-current="page" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/?v=data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/drivers/" data-track="click/bt/drv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 8 0 0 1 16-1v3H4z"/><path d="M12 14h8M8 19h8"/></svg>ドライバー</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
 document.addEventListener('click',function(ev){
