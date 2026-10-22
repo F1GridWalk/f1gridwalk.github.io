@@ -2543,7 +2543,8 @@ ENT_CSS = """
 .tm-ppl{margin:14px 0 6px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .tm-ppl p{display:grid;grid-template-columns:5.2em 1fr;align-items:baseline;margin:4px 0;font-size:15px;line-height:1.8}
 .tm-ppl span{grid-row:1/9;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
-.tm-ppl a{grid-column:2;font-weight:700;color:var(--ink);margin:0 0 4px}
+.tm-ppl a{grid-column:2;color:var(--ink);margin:0 0 6px;text-decoration:none}
+.tm-ppl a b{font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .tm-ppl a small{display:block;font-size:12px;font-weight:400;color:var(--muted);line-height:1.5}
 .tm-ppl p.tm-ppl-h{display:block;font-size:12.5px;font-weight:800;letter-spacing:.1em;color:var(--clay);margin:0 0 6px}
 .ent-grid li a em{display:block;font-style:normal;font-size:13px;font-weight:700;color:var(--ink-2);margin:2px 0 4px}
@@ -3121,11 +3122,11 @@ def build_team_pages(allarts, flag_of, teams):
             def short_role(r):
                 r = re.sub(r'（[^）]*）|\([^)]*\)', '', r).split('。')[0].strip()
                 return r if len(r) <= 22 else r[:21] + '…'
-            rows = (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver">{e(x["name"])} →</a>' for x in ds) + '</p>') if ds else '')
+            rows = (('<p><span>ドライバー</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/driver"><b>{e(x["name"])} →</b></a>' for x in ds) + '</p>') if ds else '')
             for gk, gl in [('mgmt', '代表・経営'), ('tech', '技術'), ('race', 'レース現場'), ('reserve', 'リザーブ')]:
                 if not mem.get(gk):
                     continue
-                rows += (f'<p><span>{e(gl)}</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/{gk}">{e(x["name"])} →<small>{e(short_role(x["role"]))}</small></a>' for x in mem[gk][:4]) + '</p>')
+                rows += (f'<p><span>{e(gl)}</span>' + ''.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/team/{k}/{gk}"><b>{e(x["name"])} →</b><small>{e(short_role(x["role"]))}</small></a>' for x in mem[gk][:4]) + '</p>')
             b.append(f'<div class="tm-ppl"><p class="tm-ppl-h">主なメンバー</p>{rows}</div>')
         if hubs:
             b.append('<section id="tm-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/team/{k}/story') for H in hubs) + '</ul></section>')
