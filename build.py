@@ -2714,7 +2714,7 @@ def add_term_reads(n=5):
         out = set()
         for q in PEOPLE:
             nm = [a for a in [q['name']] + (q.get('aliases') or []) if len(a) >= 3 and not re.fullmatch(r'[A-Za-z .]+', a)]
-            if any(a in text for a in nm):
+            if any(_kw_hit(a, text) for a in nm):   # whole word: マイニ ≠ マイニング (column desk, 23 Oct 2026)
                 out.add('person-' + q['id'])
         return out
     global READ_CENTRAL, READ_TITLE
