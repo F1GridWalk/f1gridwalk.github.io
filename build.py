@@ -205,6 +205,9 @@ def bottom_tabs(canonical):
         f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
 
 
+BASE_CSS_V = ''  # version of assets/base.css, set in main() once FLAGS is known (owner's OK, 23 Oct 2026)
+
+
 def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
     og = og_image or OG_IMAGE
     return f'''<!doctype html>
@@ -236,7 +239,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 {extra_head}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
-<style>{CSS}{FLAGS}</style>
+<link rel="stylesheet" href="/assets/base.css?v={BASE_CSS_V}">
 </head>
 <body>
 <header><div class="wrap">
@@ -2392,6 +2395,18 @@ def story_gp(H):
     return max(hits, key=lambda g: g['date']) if hits else None
 
 
+TODO_MEMO = re.compile(r'確かめ|確認|追う|材料|？|\?|答え合わせ')
+
+
+def reader_todo(H):
+    """'準備中' lines readers see: only announcements of a later addition, never desk memos (owner's OK, 23 Oct 2026)."""
+    out = []
+    for t in H.get('todo', []):
+        if '追記' in t and not TODO_MEMO.search(t):
+            out.append(re.sub(r'追記する。?$', '追記します。', t))
+    return ''.join(f'<p class="hub-todo">今後の追記：{e(t)}</p>' for t in out)
+
+
 def next_html(H, rname):
     """NEXT: each question leads to the rulebook entries and, when one answers it, a STORY / column / DEEP
     (next[].links, chosen by hand: owner's OK, 21 Oct 2026). The race's /gp/ page closes the block."""
@@ -2408,7 +2423,7 @@ def next_html(H, rname):
         f'<div class="hub-nq"><p>{e(n["q"])}</p><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))} →</a>' for r in n.get('rules', []) if r in rname) + '</div>'
         + links(n) + '</div>' for n in H['next'])
         + (f'<a class="hub-gp" href="/gp/{e(g["slug"])}/" data-track="click/hub-gp/{e(g["slug"])}">{e(g["date"].year)} {e(g["gp"])}の記事を、まとめて読む →</a>' if g else '')
-        + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
+        + reader_todo(H))
 
 
 def hub_box(H):
@@ -2504,7 +2519,7 @@ def build_hubs(arch, flag_of):
                 b.append(next_html(H, rname))
         elif H.get('rules') or H.get('todo'):
             b.append('<h2><i>NEXT</i>次の疑問へ</h2><div class="hub-chips">' + ''.join(f'<a href="{rb_url(r)}" data-track="click/hub-rule/{e(r)}">{e(rname.get(r, r))}</a>' for r in H.get('rules', []) if r in rname) + '</div>'
-                     + ''.join(f'<p class="hub-todo">準備中：{e(t)}</p>' for t in H.get('todo', [])))
+                     + reader_todo(H))
         if H.get('updates'):
             def fmt(s):
                 try:
@@ -3029,6 +3044,40 @@ def build_drivers(by_term):
     return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
 
 
+def top_people_slot():
+    """Top page: one quiet line under the STORY / column boxes — the people the newest pieces are about,
+    and the way to all drivers (owner's OK, 23 Oct 2026). Fills <!--pre:people--> in index.html."""
+    pages = []
+    for H in hubs_newest():
+        ups = [u.get('at', '') for u in H.get('updates', [])]
+        pages.append((max(ups) if ups else '', f'/topics/{H["slug"]}/'))
+    for x in ALL_COLS:
+        pages.append((x['dt'].isoformat(), x['url']))
+    pages.sort(reverse=True)
+    pname = {'person-' + q['id']: q for q in PEOPLE}
+    picks = []
+    for _, u in pages:
+        for pid in sorted(READ_TITLE.get(u, ())):
+            if pid in pname and pid not in picks:
+                picks.append(pid)
+        if len(picks) >= 4:
+            break
+    picks = picks[:4]
+    blk = ''
+    if picks:
+        blk = ('<style>.ppl-strip{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin:14px 2px 0;font-size:14px;line-height:1.9}'
+               '.ppl-strip span{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}'
+               '.ppl-strip a{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}'
+               '.ppl-strip a.all{color:var(--clay);text-decoration:none}</style>'
+               '<p class="ppl-strip"><span>いま話題の人</span>'
+               + ''.join(f'<a href="/deep/rules/{e(pid)}/" data-track="click/top/people/{e(pid)}">{e(pname[pid]["name"].split("・")[-1])}</a>' for pid in picks)
+               + '<a class="all" href="/drivers/" data-track="click/top/people/all">ドライバー一覧 →</a></p>')
+    ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
+    out = re.sub(r'(<!--pre:people-->).*?(<!--/pre:people-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
+    if out != src:
+        open(ip, 'w', encoding='utf-8').write(out)
+
+
 def build_gp_pages(flag_of, circuits):
     if not GPS:
         return []
@@ -3218,8 +3267,10 @@ def person_news(p, allarts, n=8):
 
 
 def main():
-    global FLAGS, LOGO
+    global FLAGS, LOGO, BASE_CSS_V
     FLAGS, flag_map, LOGO = shared_css()
+    BASE_CSS_V = hashlib.md5((CSS + FLAGS).encode('utf-8')).hexdigest()[:8]
+    write('assets/base.css', CSS + FLAGS)  # shared styles in one cached file instead of inside every page
     data = load('articles.json', {})
     teams = (load('teams.json', {}) or {}).get('teams', {})
     circuits = (load('circuits.json', {}) or {}).get('circuits', {})
@@ -3371,6 +3422,7 @@ def main():
     urls += build_hubs(arch, flag_of)
     by_term = add_term_reads()
     urls += build_drivers(by_term)
+    top_people_slot()
     add_related()
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)
