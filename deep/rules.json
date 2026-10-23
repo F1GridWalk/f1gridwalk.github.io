@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-21",
+ "checked": "2026-10-23",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -118,6 +118,10 @@
     {
      "t": "ホンダは、アロンソのPUを夜のうちに載せ替えると確認した。交換にはグリッド降格が伴う。",
      "u": "/news/es-motorsport-honda-alonso-engine-change/"
+    },
+    {
+     "t": "FIA、2026年限りの予定だったPU部品の追加1基の枠を2028年まで延長。上限を超えればグリッド降格は変わらない",
+     "u": "/news/ja-f1gate-pu-allowance-extended-2028/"
     }
    ],
    "see": [
@@ -150,6 +154,11 @@
      "name": "Formula 1 公式",
      "title": "How many power unit components has each driver used in 2026 so far?（2026年6月27日、ICE4・TC4・EX4・MGU-K3・ES3・CE3、15を超えると最後尾）",
      "url": "https://www.formula1.com/en/latest/article/how-many-power-unit-components-has-each-driver-used-in-2026-so-far.6DLZYWn0uEpsB0409mFRTF"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA 2027年F1のPU使用制限を緩和 追加使用枠を2028年まで延長（2026年10月22日。2027年競技規則B8.2.3として、ICE・TC・EXH各4、ES・CE・MGU-K各3）",
+     "url": "https://f1-gate.com/fia/229622.html"
     }
    ]
   },
@@ -370,7 +379,7 @@
    "body": [
     "ADUO（Additional Development and Upgrade Opportunities、追加の開発とアップグレードの機会）は、2026年の新しいパワーユニットで出遅れたメーカーに、追加の改良の機会を与える仕組みだ。FIAは各メーカーの内燃エンジン（ICE）の性能を測って「ICE性能指数」を出し、いちばん良いメーカーとの差で、受けられる中身を決める。測るのはICEだけで、FIAは、この指数はPU全体の性能を表すものではないとしている。",
     "差が2%以上4%未満なら、その年に1回、翌年に1回の追加のアップグレードが認められる。4%以上なら、その年と翌年に2回ずつだ。あわせてPUメーカーのコスト上限に上乗せがあり、差が大きいほど額が増える（評価期間ごとに最大300万〜1100万ドル）。FIAのトンバジスは、ADUOは性能をそろえる調整（BoP）ではなく「コストキャップの救済の仕組み」で、燃料流量やバラストを変えるものではないと説明している（FIA、2026年5月）。",
-    "評価は3つの期間に分けて行う。中東の情勢でカレンダーが変わったため、1回目はオーストラリア、中国、日本、マイアミ、カナダの5戦になった。2回目はモナコからハンガリーまで、3回目はオランダからメキシコシティまでだ。改良は、通知を受けた次のレースから入れられる。どのメーカーが何回使ったかは細かく公表されないことが多く、ニュースで後から分かることもある。The Raceは2026年10月、レッドブルのエンジンはFIAの分析で2度、基準（いちばん良いメーカー）とされたため、新しい部品の改良は認められないと伝えた。レッドブルは、燃料サプライヤーと進めた設定（キャリブレーション）の見直しでPUを伸ばしてきたという。同じ記事によると、フェラーリは認められた2回の改良を使い切り、メルセデスは少なくともアメリカGPまで投入を待つ構えだ。"
+    "評価は3つの期間に分けて行う。中東の情勢でカレンダーが変わったため、1回目はオーストラリア、中国、日本、マイアミ、カナダの5戦になった。2回目はモナコからハンガリーまで、3回目はオランダからメキシコシティまでだ。改良は、通知を受けた次のレースから入れられる。どのメーカーが何回使ったかは細かく公表されないことが多く、ニュースで後から分かることもある。The Raceは2026年10月、レッドブルのエンジンはFIAの分析で2度、基準（いちばん良いメーカー）とされたため、新しい部品の改良は認められないと伝えた。レッドブルは、燃料サプライヤーと進めた設定（キャリブレーション）の見直しでPUを伸ばしてきたという。同じ記事によると、フェラーリは認められた2回の改良を使い切り、メルセデスは少なくともアメリカGPまで投入を待つ構えとされたが、その後のThe Race（10月22日）によると、改良型のPUはアメリカGPに間に合わず、メキシコシティGPも難しい見通しで、サンパウロGPが最も早い投入時期になる。投入するとグリッド降格を伴うという。"
    ],
    "examples": [
     {
@@ -396,6 +405,10 @@
     {
      "t": "フェラーリがモンツァで投入したADUO 2の効果は期待を下回ったとFormula1.itが報道",
      "u": "/news/it-formula1it-ferrari-turbo-stop/"
+    },
+    {
+     "t": "メルセデス、ADUOの改良型PUの投入をアメリカGPで見送り。メキシコシティGPも難しく、サンパウロGPが最短に",
+     "u": "/news/en-therace-mercedes-aduo-engine-delay/"
     }
    ],
    "see": [
@@ -411,9 +424,14 @@
      "name": "The Race",
      "title": "How Red Bull has improved its F1 engine without ADUO（2026年10月15日、benchmark engine (twice)）",
      "url": "https://www.the-race.com/formula-1/key-gains-red-bull-has-made-with-its-race-winning-f1-engine/"
+    },
+    {
+     "name": "The Race",
+     "title": "Mercedes rolls back ADUO engine debut（2026年10月22日、Josh Suttill）",
+     "url": "https://www.the-race.com/formula-1/mercedes-rolls-back-aduo-engine-debut/"
     }
    ],
-   "checked": "2026-10-21"
+   "checked": "2026-10-23"
   },
   {
    "id": "super-clipping",
@@ -4793,6 +4811,10 @@
     {
      "t": "サインツが、ボウルズ代表の設備投資を考慮した予算上限見直し案を支持",
      "u": "/news/ja-f1gate-sainz-budget-cap-review/"
+    },
+    {
+     "t": "FIA、コストキャップの抜け道を塞ぐ新規則。工場とITをF1と非F1で分け、非F1からF1へ移る人には3か月の冷却期間とThe Raceが報道",
+     "u": "/news/en-therace-fia-cost-cap-ringfence/"
     }
    ],
    "see": [
@@ -4827,6 +4849,16 @@
      "name": "Motorsport-Total.com",
      "title": "Budgetobergrenze: FIA trennt Formel-1-Teams von anderen Projekten（2026年10月20日、2027年規則F6に5条項・11ページ追加）",
      "url": "https://www.motorsport-total.com/formel-1/news/budgetobergrenze-fia-trennt-formel-1-teams-von-anderen-projekten-26102011"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA imposes draconian new rules on F1 teams to stop cost cap exploitation（2026年10月21日、Jon Noble。12ページの新項目、記録3年保存、3か月の冷却期間と12か月の専従）",
+     "url": "https://www.the-race.com/formula-1/fia-imposes-draconian-new-rules-on-f1-teams-to-stop-cost-cap-exploitation/"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA 2027 F1 Regulations - Section F [Operational] Iss 01（2026年10月19日、F6 物理とITの分離）",
+     "url": "https://www.fia.com/system/files/documents/fia_2027_f1_regulations_-_section_f_operational_-_iss_01_-_2026-10-19.pdf"
     }
    ],
    "cat": "チームとビジネス",
@@ -15796,10 +15828,20 @@
      "name": "Motorsport.com",
      "title": "Insider's guide: Why are F1 pit stops so fast?",
      "url": "https://www.motorsport.com/f1/news/insiders-guide-why-are-f1-pit-stops-so-fast/6816459"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "メルセデスF1 シンガポールGPで15年ぶりにピット作業を行うメカニックを起用（2026年10月21日）",
+     "url": "https://f1-gate.com/mercedes-benz/229466.html"
     }
    ],
    "checked": "2026-10-02",
-   "examples": []
+   "examples": [
+    {
+     "t": "メルセデス、レギュラーのピットクルーの欠員で、15年間ピット作業をしていなかったスタッフを起用。決勝の作業は2.26秒",
+     "u": "/news/ja-f1gate-mercedes-pitcrew-singapore/"
+    }
+   ]
   },
   {
    "id": "wheel-nut",
@@ -16185,6 +16227,10 @@
     {
      "t": "アウディは、シンガポールGPでR26に特別なカラーを使う。リアウイングとサイドポッドに、プラナカンの伝統的な模様を入れた。",
      "u": "/news/ja-f1gate-audi-singapore-livery/"
+    },
+    {
+     "t": "フェラーリ、アメリカGPで設計図やスケッチを車体に描く特別デザイン。アストンマーティン、メルセデス、キャデラック、ハースも特別仕様",
+     "u": "/news/de-motorsporttotal-ferrari-austin-livery/"
     }
    ],
    "see": [
@@ -16292,10 +16338,20 @@
     "決勝の周回数は、1周の長さから決まる。規則では、走る距離が305kmを超える最も少ない周回数にする。モナコだけは例外で、260kmを超える最も少ない周回数だ。1周が短いコースほど周回数は多くなる。",
     "F1公式サイトの数字で見ると、メキシコシティは1周4.304kmで71周、合計305.354km。70周だと301kmほどで305kmに届かないので、71周になる。ベルギーのスパは1周7.004kmで44周（308.054km）、モナコは1周3.337kmで78周（260.286km）だ。",
     "時間にも上限がある。決勝はスタートの合図から2時間以内に終わる。赤旗などで中断した場合は、中断した時間ぶん延びるが、全部で3時間までだ。2時間が過ぎると、決められた周回数に届かなくてもレースは終わり、そのときの順位で結果が決まる。",
-    "フォーメーションラップをセーフティカーの後ろで始めたときは、決勝の周回数が「セーフティカーが走った周回数から1を引いた数」だけ減る（規則B2.5.2a）。スプリントも同じ考え方で、100kmを超える最も少ない周回数になる。"
+    "フォーメーションラップをセーフティカーの後ろで始めたときは、決勝の周回数が「セーフティカーが走った周回数から1を引いた数」だけ減る（規則B2.5.2a）。スプリントも同じ考え方で、100kmを超える最も少ない周回数になる。",
+    "2027年は距離が短くなると報じられている。GPblogは、FIAが10月19日に公表した2027年の競技規則で、決勝は290kmを超える最も少ない周回数になり、2028年には305kmを超える周回数に戻ると報じた。周回数はコースによって2〜3周ほど減り、モナコは260kmのままだという。GPblogとF1-Gate.comによると、2027年のパワーユニットは燃料を多く使うため、305kmのままだと燃料タンクを大きくする必要があり、シャシーの変更と費用がかかる。それを避ける一時的な措置だという。"
    ],
    "rule": "B2.5.2、B2.5.3（決勝）、B2.3.2（スプリント）",
-   "examples": [],
+   "examples": [
+    {
+     "t": "F1の決勝距離、2027年は305kmから290kmに短縮。多くのGPで周回数が2〜3周減り、モナコは約260kmのまま",
+     "u": "/news/ja-f1gate-2027-race-distance-290km/"
+    },
+    {
+     "t": "2027年の短縮は一時的。FIAの2027年競技規則で、2028年は最低レース距離を305km超へ戻す",
+     "u": "/news/en-gpblog-2028-race-distance-return/"
+    }
+   ],
    "see": [
     "circuit-length",
     "sprint",
@@ -16323,9 +16379,19 @@
      "name": "formula1.com",
      "title": "Monaco Grand Prix 2026 - F1 Race",
      "url": "https://www.formula1.com/en/racing/2026/monaco"
+    },
+    {
+     "name": "GPblog",
+     "title": "FIA restores F1 race distance change for 2028 after 2027 reduction（2026年10月21日）",
+     "url": "https://www.gpblog.com/en/news/fia-sets-out-2028-u-turn-on-controversial-f1-race-distance-change"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "F1決勝距離 2027年は290kmに短縮 2028年に305kmへ復帰（2026年10月21日）",
+     "url": "https://f1-gate.com/regulation/229420.html"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-23"
   },
   {
    "id": "circuit-length",
@@ -25399,6 +25465,14 @@
     {
      "t": "両戦が中止になれば、最終戦は12月6日のイモラに移る計算",
      "u": "/news/de-motorsporttotal-qatar-abudhabi-cancel-risk/"
+    },
+    {
+     "t": "米国がサウジから外交官を退避させる中、ビン・スライエム会長はカタールGPとアブダビGPの開催を明言。ドメニカリCEOは代替案も残す",
+     "u": "/news/it-f1it-us-diplomats-saudi-sulayem/"
+    },
+    {
+     "t": "サインツ、中東2戦の開催を「いま確信するのは非常に難しい」。ピアストリらはFIAとF1の判断に従う姿勢",
+     "u": "/news/en-therace-sainz-doubts-middle-east-finale/"
     }
    ],
    "see": [
@@ -25450,6 +25524,11 @@
      "name": "F1-Gate.com",
      "title": "F1カタール＆アブダビGP 開催判断が11月中旬まで延期の可能性（2026年10月20日）",
      "url": "https://f1-gate.com/qatargp/228948.html"
+    },
+    {
+     "name": "The Race",
+     "title": "'Very difficult' to be convinced Middle East races go ahead - Sainz（2026年10月22日）",
+     "url": "https://www.the-race.com/formula-1/f1-qatar-abu-dhabi-very-difficult-to-be-convinced-races-go-ahead-carlos-sainz/"
     }
    ]
   },
@@ -27322,6 +27401,10 @@
     {
      "t": "アウディはシンガポールGPの特別カラーに合わせ、ヒュルケンベルグとボルトレートのレーシングスーツも同じデザインにした。",
      "u": "/news/ja-f1gate-audi-singapore-livery/"
+    },
+    {
+     "t": "OMP、昇華プリントでレーシングスーツ1着あたり約600グラムの軽量化。2026年は22人中14人に供給",
+     "u": "/news/de-motorsporttotal-omp-suit-600-grams/"
     }
    ],
    "see": [
@@ -29299,6 +29382,10 @@
     {
      "t": "ウィリアムズが語るCOTA　路面は凸凹が多く、今年は9〜11コーナー間を再舗装",
      "u": "/news/it-f1it-williams-cota-preview/"
+    },
+    {
+     "t": "フェルスタッペン、COTAの凹凸は「手に負えない」と警告。昨年は縦方向に9Gを超える荷重を背骨に受けたという",
+     "u": "/news/en-therace-verstappen-cota-bumps-spine/"
     }
    ],
    "see": [
@@ -29322,6 +29409,11 @@
      "name": "Formula1.it",
      "title": "Gestione dell'energia e track limits più visibili, il COTA secondo Williams（2026年10月20日）",
      "url": "https://www.formula1.it/news/33377/1/gestione-dell-energia-e-track-limits-piu-visibili-il-cota-secondo-williams"
+    },
+    {
+     "name": "The Race",
+     "title": "Verstappen's spinal damage fears from 'out of control' F1 bumps（2026年10月22日）",
+     "url": "https://www.the-race.com/formula-1/verstappens-spinal-damage-fears-from-out-of-control-f1-bumps/"
     }
    ],
    "checked": "2026-10-21"
@@ -30327,10 +30419,11 @@
    ],
    "short": "2027年のF1で変わる規則。FIAが決めたものと、報道で伝えられている案とを分けて読む。",
    "body": [
-    "2027年は、2026年に始まった新しい規則の2年目だ。規則の変更は、F1コミッションなどで話し合ったあと、FIAの世界モータースポーツ評議会（WMSC）が承認して決まる。2026年10月21日時点で、承認や公式の発表があった主な変更は次のとおりだ。",
+    "2027年は、2026年に始まった新しい規則の2年目だ。規則の変更は、F1コミッションなどで話し合ったあと、FIAの世界モータースポーツ評議会（WMSC）が承認して決まる。2026年10月23日時点で、承認や公式の発表があった主な変更は次のとおりだ。",
     "パワーユニット：6月10日に合意し、6月23日のWMSCが承認した。燃料のエネルギーの流れは2026年より5%増え、エンジン（内燃機関）の最大出力は400kWから420kWに上がる。MGU-Kの最大出力は350kWから300kWに下がる。オーバーテイクモードでは350kWのままだ（F1公式）。2028年はさらに変わる（→燃料流量の制限）。テスト：同じ6月23日の承認で、シーズン前のテストが3日から4日に増える（F1公式）。",
     "スプリント：9月16日に発表された2027年のカレンダーは24戦で、スプリントは6大会から10大会に増える。開幕戦がスプリントの大会になるのは初めてで、開幕はバーレーンだ。モナコでも初めてスプリントが開かれる（RACER）。お金：10月19日のWMSCは、財務規則に関して、F1とF1以外の活動を、場所とITの面で分ける新しい要件を承認した（FIA）。",
-    "合意して承認待ちとされたもの：F1コミッションは9月21日、2027年の決勝の総距離を305kmから290kmに縮めること、雨などで中断したときにレースを終える時刻を決めること、ギアボックスの公認をやめることで合意した。F1公式は、どれもWMSCの承認が条件だと書いている。10月19日のWMSCは、2026年と2027年の規則の改正を承認したと発表したが、どの項目かは示していない（FIA）。",
+    "決勝の距離など：F1コミッションは9月21日、2027年の決勝の総距離を305kmから290kmに縮めること、雨などで中断したときにレースを終える時刻を決めること、ギアボックスの公認をやめることで合意した。F1公式は、どれもWMSCの承認が条件だと書いている。FIAは10月19日に2027年の競技規則（第1版）を公表した。GPblogは、この規則で決勝の距離が290kmになり、2028年には305kmを超える距離に戻ると報じた。モナコは260kmを超える距離のままだ（→周回数）。10月19日のWMSCは、2026年と2027年の規則の改正を承認したと発表したが、どの項目かは示していない（FIA）。",
+    "ホイールとPU：The Raceによると、10月のWMSCは、2027年から各予選と決勝で、前と後ろそれぞれ1つの仕様のホイールリムしか使えなくする変更を承認した（→ホイールリム）。PUの部品を1人あたり1つずつ多く使える特例は、2026年だけの予定だったが、2027年と2028年も続くと伝えられた（F1-Gate.com、→パワーユニットの使用数）。",
     "報道で伝えられている案：リアウイングの2つのモードの切り替えにかけてよい時間を、0.4秒から0.3秒に縮めると、The Raceが10月9日に報じた（→マカレナウイング）。レッドブルのサイドポッドの形を可能にしている規則の許容値を20mmから5mmにするという案も、イタリアの媒体の報道として伝えられた（Crash.net、10月14日）。"
    ],
    "examples": [
@@ -30353,6 +30446,18 @@
     {
      "t": "ハジャー、2027年のモナコでのスプリント開催に疑問。スプリントは24戦中10戦に",
      "u": "/news/ja-f1gate-hadjar-monaco-sprint-doubt/"
+    },
+    {
+     "t": "FIA、2027年から予選専用ホイールリムを禁止。予選と決勝で前後それぞれ1仕様のみに",
+     "u": "/news/en-therace-fia-wheel-rim-single-spec/"
+    },
+    {
+     "t": "FIA公表の2027年競技規則で、決勝距離は290kmに。2028年は305km超へ戻す一時的な措置",
+     "u": "/news/en-gpblog-2028-race-distance-return/"
+    },
+    {
+     "t": "FIA、PUの追加使用枠を2027年と2028年も維持。もとは2027年から各部品を1基ずつ減らす計画だった",
+     "u": "/news/ja-f1gate-pu-allowance-extended-2028/"
     }
    ],
    "see": [
@@ -30399,9 +30504,562 @@
      "name": "Crash.net",
      "title": "Clever Red Bull loophole to be outlawed for F1 2027 in FIA clampdown（2026年10月14日、AutoRacer.itの報道、20mm→5mm）",
      "url": "https://www.crash.net/f1/news/1107568/1/clever-red-bull-loophole-be-outlawed-f1-2027-fia-clampdown"
+    },
+    {
+     "name": "GPblog",
+     "title": "FIA restores F1 race distance change for 2028 after 2027 reduction（2026年10月21日、Tobia Elia。10月19日の2027年スポーティング規則公表、290km、2028年は305km超、モナコ260km超）",
+     "url": "https://www.gpblog.com/en/news/fia-sets-out-2028-u-turn-on-controversial-f1-race-distance-change"
+    },
+    {
+     "name": "The Race",
+     "title": "Why an F1 arms race has been stopped before it could start（2026年10月21日、ホイールリムの1仕様化とWMSC承認）",
+     "url": "https://www.the-race.com/formula-1/why-an-f1-arms-race-has-been-stopped-before-it-could-start/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIA 2027年F1のPU使用制限を緩和 追加使用枠を2028年まで延長（2026年10月22日）",
+     "url": "https://f1-gate.com/fia/229622.html"
     }
    ],
-   "checked": "2026-10-21"
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "wheel-rim",
+   "term": "ホイールリム",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "wheel rim",
+    "リム設計",
+    "予選専用リム",
+    "ほいーるりむ"
+   ],
+   "words": [
+    "ホイール",
+    "タイヤの温度",
+    "予選と決勝",
+    "2027年",
+    "冷却"
+   ],
+   "short": "タイヤをはめるホイールの輪。2026年からチームが自分で選べるようになり、タイヤの温度を左右する部品になった。",
+   "body": [
+    "ホイールリムは、タイヤをはめるホイールの本体だ。大きさは2022年から18インチ（→18インチホイール）。2022〜2025年は、全チームがBBSのリムを使っていた。2026年からは、チームが自分でリムの供給元を選べるようになった。F1technical.netは、リムは性能の差がつく部品ではないので開発で大きな利得は出にくいこと、不具合や変更の要望に早く応えられること、リムのメーカーとスポンサー契約も結べることを利点に挙げていた。",
+    "The Raceによると、走ってみると、リムがタイヤの温度に大きく効くことが分かってきた。ピレリのチーフエンジニアは「リムがホイール全体とタイヤを冷やしている」と話している。フェラーリはバルセロナで後輪を冷やすための新しいリムを入れ、マクラーレンは前輪を温めて後輪を冷やす設計を追ったという。Formula1.itは、アストンマーティン、フェラーリ、マクラーレンが前と後ろで違う設計を選んだと伝えた。",
+    "2027年からは制限が入る。The Raceによると、10月の世界モータースポーツ評議会（WMSC）が承認した変更で、各予選と決勝では、前と後ろそれぞれ1つの仕様のリムしか使えない。スプリントか決勝の前に車がプレ・パルクフェルメに入った時点から当てはまり、リムを付けてピットレーンを出たら「使った」とみなされる。予選のためだけに温度を合わせた専用のリムを作る開発競争を防ぐのがねらいだ。Formula1.itは、同じ車軸の左右を同じ組にすること、表面の処理をさび止め、摩耗の防止、見た目の目的に限ることも、2027年の規則の案に入ったと報じた。"
+   ],
+   "examples": [
+    {
+     "t": "FIA、2027年から予選専用ホイールリムを禁止。リムの形がタイヤ温度に大きく影響すると分かってきた",
+     "u": "/news/en-therace-fia-wheel-rim-single-spec/"
+    },
+    {
+     "t": "2027年規則案でホイール開発を厳格化。左右の同一仕様と表面処理の目的の制限も",
+     "u": "/news/it-f1it-fia-wheel-2027-draft/"
+    }
+   ],
+   "see": [
+    "wheels-18inch",
+    "operating-window",
+    "parc-ferme",
+    "pirelli",
+    "regulations-2027"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Why an F1 arms race has been stopped before it could start（2026年10月21日、Jon Noble。標準リムの廃止、ピレリの説明、フェラーリとマクラーレンの例、2027年の1仕様のルール、WMSC承認）",
+     "url": "https://www.the-race.com/formula-1/why-an-f1-arms-race-has-been-stopped-before-it-could-start/"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "La FIA stringe sui cerchi per il 2027: vietati i cerchioni da qualifica（2026年10月21日。左右同一、表面処理の目的、前後で違う設計の3チーム）",
+     "url": "https://www.formula1.it/news/33398/1/la-fia-stringe-sui-cerchi-per-il-2027-vietati-i-cerchioni-da-qualifica"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "BBS to lose its exclusive contract with F1 as teams set to choose their rim supplier from 2026（2022年からBBSが唯一の供給、2026年からチームが供給元を選ぶ、記事が挙げた利点）",
+     "url": "https://f1technical.net/news/25264"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "mechanical-grip",
+   "term": "メカニカルグリップ",
+   "cat": "マシンと空力",
+   "aliases": [
+    "mechanical grip",
+    "機械的グリップ",
+    "めかにかるぐりっぷ"
+   ],
+   "words": [
+    "低速コーナー",
+    "足回り",
+    "グリップ不足",
+    "空力グリップ",
+    "モナコ"
+   ],
+   "short": "空気の力を借りずに、タイヤとサスペンションで生むグリップ。低速のコーナーで特に効く。",
+   "body": [
+    "メカニカルグリップは、空気の力を借りずに、タイヤとサスペンションが生むグリップのことだ。空気の力で車を押さえつけるダウンフォースによるグリップ（空力グリップ）とは分けて考える（Formula 1 Dictionary）。グリップそのものについて、F1公式の用語集は「車がどれだけ路面に張り付くか」と説明している。",
+    "メカニカルグリップが特に大事なのは、低速のコーナーだ。Formula 1 Dictionaryは、時速130〜150kmを下回るようなコーナーで効くとし、モナコやハンガロリンクを例に挙げる。F1technical.netも、モナコはほとんどのコーナーを時速150km未満で回るため、メカニカルグリップと車の前側の反応が大事になると書いている。",
+    "2026年の例もある。レッドブルのワシェは、RB22の性能が落ちた原因について、空力とは別に「メカニカルグリップの低下という別の問題もある」と話した。サスペンションのリンクなどの部品は、走行を重ねると状態が変わるといい、その影響はまだ完全には分かっていないという（F1-Gate.com、PlanetF1のインタビューとして）。"
+   ],
+   "examples": [
+    {
+     "t": "ワシェ、RB22の性能低下を説明。空力の低下とは別に、走行を重ねるとサスペンションのリンク類が変化してメカニカルグリップも落ちる",
+     "u": "/news/ja-f1gate-wache-rb22-performance-loss/"
+    }
+   ],
+   "see": [
+    "suspension",
+    "downforce",
+    "traction",
+    "setup",
+    "circuit-monaco"
+   ],
+   "src": [
+    {
+     "name": "Formula 1 Dictionary",
+     "title": "Mechanical Grip in F1: Tyres and Suspension（タイヤとサスペンションによるグリップ、空力とは独立、時速130〜150km未満のコーナー、モナコとハンガロリンク）",
+     "url": "https://www.formula1-dictionary.net/f1-mechanical-grip/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "F1 Glossary (F-J)（Grip の項）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "F1technical.net",
+     "title": "The technical demands that make the Monte Carlo circuit unique（ほとんどのコーナーが時速150km未満、メカニカルグリップと前側の反応）",
+     "url": "https://www.f1technical.net/news/28617"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "レッドブルF1 RB22のパフォーマンス低下 ワシェが複合的な原因を説明（2026年10月22日、PlanetF1のインタビューとして）",
+     "url": "https://f1-gate.com/redbull/229661.html"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "gpda",
+   "term": "GPDA（グランプリ・ドライバーズ・アソシエーション）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "GPDA",
+    "グランプリ・ドライバーズ・アソシエーション",
+    "Grand Prix Drivers' Association",
+    "ドライバーの組合",
+    "じーぴーでぃーえー"
+   ],
+   "words": [
+    "ドライバーの団体",
+    "安全",
+    "ドライバーの声",
+    "労働組合",
+    "ディレクター"
+   ],
+   "short": "F1ドライバーの利益を代表する団体。安全の問題から規則への意見まで、ドライバーの声をまとめる。",
+   "body": [
+    "GPDA（グランプリ・ドライバーズ・アソシエーション）は、F1ドライバーの利益を代表する団体だ。1961年に安全を良くするために作られ、1994年にイモラでセナとラッツェンバーガーが亡くなったあと、立て直された（Motorsport.com）。GrandPrix247は「F1ドライバーの労働組合」と呼んでいる。",
+    "運営は数人のディレクターが担う。2025年2月、サインツが、引退したベッテルに代わってディレクターになった。このとき、ほかのディレクターは、会長のアレクサンダー・ブルツ（元F1ドライバー）、現役のジョージ・ラッセル、法律面の担当者だった（GrandPrix247）。2026年7月にも、ブルツはGPDAの会長として紹介されている（grandprix.com）。",
+    "レースの外の問題にもかかわる。2022年のサウジアラビアGPでは、ミサイル攻撃のあと、ドライバーがストライキをする寸前になった（Motorsport.com）。2026年7月、ブルツは、GPDAがかかわらなければ2026年の規則は改められなかったと話した（grandprix.com）。10月のアメリカGPの会見では、サインツが、GPDAの代表ではなく個人の考えだと断ったうえで、カタールとアブダビの開催を「いま確信するのは非常に難しい」と述べた。GPDAはF1やFIAの半分の情報も持っていない、とも話している（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "GPDAのディレクターのサインツ、中東2戦の開催は「いま確信するのは非常に難しい」。GPDAの代表ではなく個人の見解として",
+     "u": "/news/en-therace-sainz-doubts-middle-east-finale/"
+    }
+   ],
+   "see": [
+    "fia",
+    "race-relocation",
+    "driver-steward",
+    "super-licence"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "Sainz replaces F1 world champion Vettel as GPDA director（2025年2月。1961年の結成、1994年の立て直し、2022年サウジアラビアGP）",
+     "url": "https://www.motorsport.com/f1/news/sainz-replaces-f1-world-champion-vettel-as-gpda-director/10697891/"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Sainz becomes GPDA director, replaces Vettel（2025年2月23日。ディレクターの顔ぶれ、「F1ドライバーの労働組合」）",
+     "url": "https://www.grandprix247.com/formula-1-news/sainz-becomes-gpda-director-replaces-vettel"
+    },
+    {
+     "name": "grandprix.com",
+     "title": "Wurz says GPDA already reshaping hated 2026 rules（2026年7月25日）",
+     "url": "https://www.grandprix.com/news/wurz-says-gpda-already-reshaping-hated-2026-rules.html"
+    },
+    {
+     "name": "The Race",
+     "title": "'Very difficult' to be convinced Middle East races go ahead - Sainz（2026年10月22日、Josh Suttill）",
+     "url": "https://www.the-race.com/formula-1/f1-qatar-abu-dhabi-very-difficult-to-be-convinced-races-go-ahead-carlos-sainz/"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "strategist",
+   "term": "ストラテジスト（戦略担当）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "戦略担当",
+    "戦略エンジニア",
+    "strategist",
+    "strategy engineer",
+    "すとらてじすと"
+   ],
+   "words": [
+    "作戦",
+    "ピットの判断",
+    "シミュレーション",
+    "ピットウォール",
+    "AI"
+   ],
+   "short": "いつピットに入るか、どのタイヤを使うかなど、レースの作戦を考えるチームの担当者。",
+   "body": [
+    "ストラテジストは、レースの作戦を考える担当者だ。メルセデスの戦略責任者だったロージー・ウェイトは2021年、F1公式のインタビューで仕事を説明している。レースの前には、コースのデータやライバルの速さからシミュレーションを作り、レースエンジニアの部門と一緒に、タイヤの使い方や走りの計画を決める。思ったより速かった場合、遅かった場合と場面を考え、いちばん難しい場面にも備える。レース中は、何をいつすべきかを提案し、大きな判断をその場で下す。",
+    "ウェイトは当時、4〜5人のチームを率いていた。本人はふだん工場のリモート・サポート・ルームにいて、サーキットのピットウォールにいた戦略ディレクターのジェームズ・ボウルズに提案を伝えていた。レースではドライバーから届く情報もとても大事だという（F1公式）。",
+    "2026年のシンガポールGPでは、バーチャルセーフティカーの間に、フェラーリはルクレールと同時にハミルトンもピットに呼んだとしているが、ハミルトンは「一瞬の判断で」コースに残った。結果は6位だった（The Race）。道具も変わっている。Motorsport-Total.comによると、レッドブルがオラクルと使うAIは、グランプリの最中に具体的な行動を勧めるようになった。技術提携の担当者は「F1は人間のスポーツであり、これからもそうだ」とも話している。"
+   ],
+   "examples": [
+    {
+     "t": "ハミルトン、シンガポールのVSC中にピット指示を自分の判断で覆したと説明。ミディアム発進の作戦も実らず6位",
+     "u": "/news/en-therace-hamilton-overruled-ferrari-singapore/"
+    },
+    {
+     "t": "フェラーリの判断でソフトを選んだハミルトン。バスール代表は「インターミディエイトで始めるべきだった」",
+     "u": "/news/de-motorsport-total-hamilton-pace-strategy/"
+    },
+    {
+     "t": "レッドブル、オラクルのAIがレース中の判断にも推奨を出す。2025年モンツァでは順位を戻すよう助言",
+     "u": "/news/de-motorsporttotal-redbull-oracle-ai/"
+    }
+   ],
+   "see": [
+    "race-engineer",
+    "data-engineer",
+    "pit-wall",
+    "pit-window",
+    "plan-b",
+    "vsc"
+   ],
+   "src": [
+    {
+     "name": "Formula 1 公式",
+     "title": "Q&A: Mercedes' Head of Strategy Rosie Wait on how the champions make key mid-race calls in the heat of battle（2021年6月5日）",
+     "url": "https://www.formula1.com/en/latest/article/q-and-a-mercedes-head-of-strategy-rosie-wait-on-how-the-champions-make-key.3oQ8RBJCuoCEfXFIw2iddJ"
+    },
+    {
+     "name": "The Race",
+     "title": "Hamilton explains why he overruled Ferrari in Singapore（2026年10月22日）",
+     "url": "https://www.the-race.com/formula-1/hamilton-explains-why-he-overruled-ferrari-in-singapore/"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Red Bull setzt auf KI: Wie Oracle die Rennstrategie verändert（2026年10月21日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/red-bull-setzt-auf-ki-wie-oracle-die-rennstrategie-veraendert-26102108"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "mechanic",
+   "term": "メカニック",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "整備士",
+    "mechanic",
+    "ナンバーワン・メカニック",
+    "チーフメカニック",
+    "めかにっく"
+   ],
+   "words": [
+    "車の組み立て",
+    "整備",
+    "部品交換",
+    "裏方",
+    "ガレージ"
+   ],
+   "short": "車を組み立て、整備し、部品を替えるチームの技術者。1台ごとに担当の班がある。",
+   "body": [
+    "メカニックは、車を組み立て、整備し、部品を替える技術者だ。レースの週末には、走行の合間にセットアップを変え、部品を交換する。F1公式によると、金曜の夜には、決勝用のエンジンとギアボックスを積み、テスト用の配線やセンサーを外して、車を組み直すこともある。予選のあとはパルクフェルメの決まりで、できる作業が限られる。",
+    "1台ごとに担当の班がある。その責任者が「ナンバーワン・メカニック」で、車を走らせてよいかを最後に決める。前側と後ろ側の担当、油圧やギアボックスの技術者がその下につく。ナンバーワン・メカニックは、レースエンジニア、チーフメカニック、チームマネージャーと連絡を取り合う。ピットストップでホイールガンを持つメカニックもいる（F1公式、2020年）。",
+    "夜の作業には時間の制限がある（→作業時間の制限）。2026年10月、バトンは24戦のカレンダーについて、ドライバーはレースのあと自家用機で家に帰れるが、メカニックたちにとっては撤収の作業がとてつもなく大変で、工場に戻ってまた仕事を始めるのだと話した（F1-Gate.com）。"
+   ],
+   "examples": [
+    {
+     "t": "バトン、年間24戦に警鐘。ドライバーは自家用機で帰れても、メカニックらスタッフは撤収して次の準備に向かう",
+     "u": "/news/ja-f1gate-button-24-races/"
+    },
+    {
+     "t": "レッドブル、シンガポールでハジャー車の修復にフェルスタッペン担当のメカニックも参加。作業は決勝当日の朝まで",
+     "u": "/news/ja-f1gate-hadjar-car-repair-singapore/"
+    }
+   ],
+   "see": [
+    "pit-crew",
+    "curfew",
+    "parc-ferme",
+    "race-engineer",
+    "team-manager"
+   ],
+   "src": [
+    {
+     "name": "Formula 1 公式",
+     "title": "The insider's guide to… #1 mechanics（2020年1月23日、Matt Youson）",
+     "url": "https://www.formula1.com/en/latest/article/the-insiders-guide-to-1-mechanics.3gJ0ftkDz2C8Q4I3tcGQgt"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "ジェンソン・バトン F1年間24戦に警鐘「これ以上増やすべきではない」（2026年10月21日）",
+     "url": "https://f1-gate.com/button/229433.html"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "operational-regulations",
+   "term": "運用規則（セクションF）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "セクションF",
+    "Operational Regulations",
+    "オペレーショナル・レギュレーション",
+    "運営に関する規則",
+    "うんようきそく"
+   ],
+   "words": [
+    "規則の種類",
+    "工場の閉鎖",
+    "風洞の制限",
+    "F1部門の分離",
+    "コストキャップの抜け道"
+   ],
+   "short": "F1の規則のうち、工場の閉鎖期間や開発テストの制限など、チームの運営の仕方を決める部分。",
+   "body": [
+    "F1の規則（FIA F1規則）は、6つのセクションでできている。A（総則）、B（競技規則）、C（技術規則）、D（財務規則・チーム）、E（財務規則・PUメーカー）、F（運用規則）だ（A1.2.2）。セクションAの決まりは、ほかのすべてのセクションに当てはまる（A1.1.3）。",
+    "運用規則は、レースの外のチームの動き方を決める。2026年版（10月1日付の第11版）の中身は、環境の基準（FIAの環境認証で3つ星以上、F2）、工場を閉める期間（F3）、空力テストの制限（F4）、パワーユニットのテスト台の制限（F5）だ。工場を閉める期間は2回あり、7〜8月の連続14日と、12月24日からの9日間だ（F3.1）。",
+    "2027年版（10月19日付の第1版）には、F6「F1の活動とF1以外の活動の、場所とITの分離」が加わる。制限の対象になるF1の人員とF1以外の人員は、互いの区域に入れない（F6.1.1）。風洞、テスト台、データセンターなどは共用できるが、同時には使えない（F6.2.5）。2027年1月1日からは、入退室の記録を3年分残す（F6.2.12）。The Raceは、12ページの新しい項目で、F1以外の部門からF1に移る人には3か月の冷却期間と、その後12か月のF1専従が課されると報じた。Motorsport-Total.comは、5つの条文と11ページが加わると伝えている（→コストキャップ）。"
+   ],
+   "rule": "A1.1.3、A1.2.2（2026年セクションA 第3版）、F2.1.1、F3.1（2026年セクションF 第11版）、F6.1.1、F6.2.5、F6.2.12（2027年セクションF 第1版）",
+   "examples": [
+    {
+     "t": "FIA、コストキャップ抜け道封じの新ルール。運用規則に12ページの新項目が加わり、F1部門と他部門を物理・IT両面で分離",
+     "u": "/news/en-therace-fia-cost-cap-ringfence/"
+    },
+    {
+     "t": "FIA、F1チームと他部門の人員・設備の分離を義務化。2027年規則のF6に5条項・11ページを追加",
+     "u": "/news/de-motorsporttotal-budgetcap-separation/"
+    }
+   ],
+   "see": [
+    "fia-documents",
+    "cost-cap",
+    "atr",
+    "pu-dyno",
+    "summer-shutdown",
+    "international-sporting-code"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "FIA 2026 F1 Regulations - Section A [General Provisions] Iss 03（2026年6月25日、A1.1.3、A1.2.2）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_03_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA 2026 F1 Regulations - Section F [Operational] Iss 11（2026年10月1日、F2〜F5、付則F2）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_11_-_2026-10-01.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA 2027 F1 Regulations - Section F [Operational] Iss 01（2026年10月19日、F6.1.1、F6.2.5、F6.2.12）",
+     "url": "https://www.fia.com/system/files/documents/fia_2027_f1_regulations_-_section_f_operational_-_iss_01_-_2026-10-19.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA imposes draconian new rules on F1 teams to stop cost cap exploitation（2026年10月21日、Jon Noble）",
+     "url": "https://www.the-race.com/formula-1/fia-imposes-draconian-new-rules-on-f1-teams-to-stop-cost-cap-exploitation/"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "motogp",
+   "term": "MotoGP",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "モトGP",
+    "MotoGP World Championship",
+    "ロードレース世界選手権",
+    "もとじーぴー"
+   ],
+   "words": [
+    "バイク",
+    "二輪",
+    "ドルナ",
+    "リバティ・メディア",
+    "ルサイル"
+   ],
+   "short": "二輪のロードレースの世界選手権。2025年からF1と同じリバティ・メディアのグループに入っている。",
+   "body": [
+    "MotoGPは、二輪のロードレースの世界選手権で、最高のクラスの名前でもある。下のクラスにMoto2とMoto3がある。この世界選手権の最初のレースは、1949年6月13日にマン島で開かれた。MotoGPクラスの車両は、最大1000ccの4気筒エンジンを使う（Repsol）。",
+    "F1と同じグループの中にある。F1の商業権を持つリバティ・メディアは、2025年7月、MotoGPの商業権を持つドルナの買収を終えた。これで、リバティのフォーミュラ・ワン・グループは、F1、MotoGP、クイントを子会社に持つことになった。ドルナは1991年から、MotoGPの商業権とテレビの放映権をただ1社で持っている（リバティ・メディア）。",
+    "F1と同じサーキットを使う大会もある。2026年は、カタールのルサイルで、MotoGPが11月6〜8日、F1が11月27〜29日に予定されている。中東の情勢が心配される中、サーキットは「準備はほぼ完了している」と発表した（Formula1.it）。"
+   ],
+   "examples": [
+    {
+     "t": "ルサイル、MotoGP（11月6〜8日）とF1（11月27〜29日）を3週間差で開く準備は「ほぼ完了」",
+     "u": "/news/it-f1it-lusail-qatar-ready/"
+    },
+    {
+     "t": "MotoGPがカタール戦を予定どおり行うと確認したのを受け、ビン・スライエム会長がF1最終2戦の開催を強調",
+     "u": "/news/it-f1it-bensulayem-gulf-races/"
+    }
+   ],
+   "see": [
+    "f1-group",
+    "circuit-lusail",
+    "circuit-austin",
+    "indycar"
+   ],
+   "src": [
+    {
+     "name": "Liberty Media",
+     "title": "Liberty Media Corporation Completes Acquisition of MotoGP（2025年7月3日）",
+     "url": "https://www.libertymedia.com/news/detail/562/liberty-media-corporation-completes-acquisition-of-motogp"
+    },
+    {
+     "name": "Box Repsol",
+     "title": "The different MotoGP World Championship classes（2020年8月31日、2025年6月26日更新。1949年6月13日のマン島、1000cc4気筒）",
+     "url": "https://www.boxrepsol.com/en/motogp-en/the-different-motogp-world-championship-classes/"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "F1 e MotoGP in Qatar, Lusail conferma i piani: «Preparativi quasi completati»（2026年10月21日）",
+     "url": "https://www.formula1.it/news/33396/1/f1-e-motogp-in-qatar-lusail-conferma-i-piani-preparativi-quasi-completati"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "packaging",
+   "term": "パッケージング（部品の詰め込み方）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "packaging",
+    "パッケージング設計",
+    "部品の配置",
+    "サイズゼロ",
+    "ぱっけーじんぐ"
+   ],
+   "words": [
+    "部品の配置",
+    "車体の小ささ",
+    "ラジエーター",
+    "サイドポッド",
+    "新車の設計"
+   ],
+   "short": "エンジンや電池、ラジエーターなどを車体の中にどう並べて詰め込むかという設計。空力と冷却のかね合いで決まる。",
+   "body": [
+    "パッケージングは、パワーユニットや電池、ラジエーターなどの冷却装置を、車体の中にどう並べて詰め込むかという設計のことだ。Autosportは、F1の車の内部の部品は「スイス時計のように精密に」並べられていると表現した。",
+    "詰め込むほど、車体の覆いを小さくできる。Autosportは、覆いを減らすと車が空気の中をすり抜けやすくなり、小さなサイドポッドは上を流れる空気を操りやすくすると説明している。代わりに、部品どうしが近いほど、熱の管理が大変になる。余裕のある配置のほうが信頼性には有利だとし、ぎっしり詰まった車を組み立てるメカニックの苦労にも触れている（Autosport）。",
+    "2027年型について、レッドブルのテクニカルディレクターのワシェは、2027年型ではほとんどの部品を流用せず、ギアボックスとシャシーも別物にすると話し、それは「部品のパッケージング、空力、機械の部分」にかかわると述べた（Grande Prêmio、RacingNews365への発言として）。F1-Gate.comは、2027年に決勝の距離を290kmに短くすると報じ、その理由として、燃料タンクを大きくするとモノコックや車体のパッケージングに響きうることを挙げた。"
+   ],
+   "examples": [
+    {
+     "t": "レッドブル、2027年型はほぼ全面刷新へ。シャシーとギアボックスを変え、パッケージングや空力、機械部品も作り直す",
+     "u": "/news/pt-gp-redbull-2027-new-car/"
+    },
+    {
+     "t": "F1の決勝距離、2027年は290kmに。タンクを大きくするとモノコックに影響するため距離を短くして対応",
+     "u": "/news/ja-f1gate-2027-race-distance-290km/"
+    }
+   ],
+   "see": [
+    "sidepod",
+    "cooling",
+    "survival-cell",
+    "gearbox",
+    "fuel-cell",
+    "car-concept"
+   ],
+   "src": [
+    {
+     "name": "Autosport",
+     "title": "Why F1 cars have all gone size zero（日付の表示なし）",
+     "url": "https://www.autosport.com/f1/news/why-f1-cars-have-all-gone-size-zero-5111816/5111816/"
+    },
+    {
+     "name": "Grande Prêmio",
+     "title": "Red Bull prevê mudar quase todo carro de 2027 e explica plano para manter reação na F1（2026年10月21日、RacingNews365への発言として）",
+     "url": "https://grandepremio.com/br/f1/red-bull-preve-mudar-quase-todo-carro-de-2027-e-explica-plano-para-manter-reacao-na-f1/"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "F1決勝距離 2027年は290kmに短縮 2028年に305kmへ復帰（2026年10月21日）",
+     "url": "https://f1-gate.com/regulation/229420.html"
+    }
+   ],
+   "checked": "2026-10-23"
+  },
+  {
+   "id": "defending-champion",
+   "term": "前年王者（ディフェンディングチャンピオン）",
+   "cat": "ポイント",
+   "aliases": [
+    "ディフェンディングチャンピオン",
+    "タイトル防衛",
+    "defending champion",
+    "reigning champion",
+    "ぜんねんおうじゃ"
+   ],
+   "words": [
+    "連覇",
+    "王座を守る",
+    "ゼッケン1番",
+    "去年のチャンピオン",
+    "王者の翌年"
+   ],
+   "short": "前の年のワールドチャンピオン。翌年はゼッケン1番を使える。",
+   "body": [
+    "前年王者（ディフェンディングチャンピオン）は、前の年のワールドチャンピオンのことだ。翌年は1番のカーナンバーを使える。使うかどうかは本人が選べ、ハミルトンのように前の番号を使い続けた例もある。2026年は、2025年の王者ノリスが、4番から1番に替えた（Motorsport.com）。",
+    "Motorsport-Total.comによると、2026年のノリスは、残り6戦の時点で201点のランキング6位で、2勝を挙げている。このまま6位以下で終えると、前年王者としては、1997年にアロウズで12位だったデイモン・ヒル以来の低い順位になる。1997年よりあとでいちばん低かったのは5位で、1998年のビルヌーブ、初タイトルの翌年のハミルトン、2010年のバトン、2014年のベッテルだ。",
+    "王者が翌年に走らないこともある。2016年の王者ロズベルグは、その年で引退し、タイトルを守る戦いには出なかった（Motorsport-Total.com）。"
+   ],
+   "examples": [
+    {
+     "t": "王者ノリス、残り6戦でランキング6位。このままなら1997年のデイモン・ヒル以来で最悪のタイトル防衛に",
+     "u": "/news/de-motorsporttotal-norris-worst-title-defence/"
+    },
+    {
+     "t": "王者ノリス「マクラーレンは今、トップ4チームで最も弱い」。ステラ代表はアップグレード投入を明言",
+     "u": "/news/de-mst-norris-mclaren-worst-top-team/"
+    }
+   ],
+   "see": [
+    "world-champion",
+    "car-number",
+    "title-decider",
+    "most-titles"
+   ],
+   "src": [
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Weltmeister Lando Norris droht die schlechteste Titelverteidigung seit 1997（2026年10月22日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/weltmeister-lando-norris-droht-die-schlechteste-titelverteidigung-seit-1997-26102214"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Lando Norris will race with #1 in F1 2026 as reigning champion（2025年12月）",
+     "url": "https://www.motorsport.com/f1/news/lando-norris-will-race-with-1-in-f1-2026-as-reigning-champion/10783508/"
+    }
+   ],
+   "checked": "2026-10-23"
   }
  ],
  "sources": [
