@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T00:30:00+09:00",
+ "updatedAt": "2026-10-24T06:30:00+09:00",
  "topics": {
   "gulf-races-cancel-risk": {
    "title": "FIA会長「カタール・アブダビGPは開催」　中東情勢の不安の中で明言",
@@ -40,9 +40,181 @@
   "hamilton-ferrari-successor": {
    "title": "ハミルトン後のフェラーリ席、ベアマンとカマラが静かな争いへ",
    "summary": "ハースのベアマンは将来のフェラーリ入りを望み、ハミルトンの後継候補に挙がっている。2027年にはオコンに代わりF2首位のカマラがハースに加わる見通しで、2人ともフェラーリ育成出身だ。ルクレールは複数年契約、ハミルトンも2027年は残留するため、席が空く時期は見通せない。"
+  },
+  "fp1-austin-2026": {
+   "title": "アメリカGP FP1　ルクレールが最速、フェルスタッペンはタイム抹消",
+   "summary": "アメリカGPの初回走行はフェラーリのルクレールが1分36秒052で首位に立った。フェルスタッペンは0.084秒差の2番手だが、最速ラップは19コーナーのトラックリミット違反で抹消されており、実質的にはトップだったとも報じられた。ノリス、ラッセル、アントネッリが続き、上位4チームが僅差で並んだ。日本のまとめブログでもトラックリミットが話題になった。"
   }
  },
  "articles": [
+  {
+   "id": "en-f1-fp1-leclerc-fastest-cota",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "分析",
+   "circuit": "austin",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "fp1-austin-2026",
+   "title": "アメリカGP FP1　ルクレールが最速、フェルスタッペンはトラックリミットでタイム抹消",
+   "orig": "FP1: Leclerc fastest in first practice for the United States GP ahead of Verstappen and Norris",
+   "url": "https://www.formula1.com/en/latest/article/fp1-leclerc-fastest-in-first-practice-for-the-united-states-gp-ahead-of-verstappen-and-norris.125WlaFK7K1mXXyLgb93ui",
+   "published": "2026-10-23T19:51:00+01:00",
+   "summary": "アメリカGPのFP1はフェラーリのルクレールが1分36秒052で最速だった。0.084秒差の2番手はフェルスタッペンで、1分35秒台の最速ラップは19コーナーのトラックリミット違反で抹消された。3番手はノリス、4番手ラッセル、5番手アントネッリと続き、上位は4チームが僅差で並んだ。ハミルトンは最初のアタックでダストの多い路面にはみ出し、約0.8秒遅れた。ラッセルは強いアンダーステアを訴え、フロントウイングの確認を求めている。"
+  },
+  {
+   "id": "de-formel1de-fp1-verstappen-deleted-lap",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "分析",
+   "circuit": "austin",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "audi",
+    "cadillac"
+   ],
+   "topic": "fp1-austin-2026",
+   "title": "アメリカGP FP1　実質最速はフェルスタッペン、ルクレール首位の裏側",
+   "orig": "Verstappen eigentlich Schnellster: So kam Leclerc in Austin auf Platz 1",
+   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-23/verstappen-eigentlich-schnellster-so-kam-leclerc-in-austin-auf-platz-1",
+   "published": "2026-10-23T20:37:00+02:00",
+   "summary": "独紙はFP1でフェルスタッペンの最速タイムがトラックリミットで抹消され、ルクレールが首位になった経緯を伝えた。フェラーリは改良したアンダーフロアを投入したが、両ドライバーは効果を1周あたり約0.1秒と見積もっていた。フェルスタッペンは最初の走行でステアリングが引っかかる感覚を訴え、ヒュルケンベルグ（アウディ）は最終コーナーのスロットル反応が奇妙だと報告した。ウィリアムズは長時間ピットにいたが、空力テスト計画によるものでトラブルではないという。セッション終盤には、マレーシアの雨のレースで起きた問題を受け、新しいパワーユニット保護策を確認する低グリップモードの試験も行われた。"
+  },
+  {
+   "id": "en-f1-us-gp-power-unit-penalties",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "予選",
+   "circuit": "austin",
+   "teams": [
+    "racingbulls",
+    "alpine",
+    "audi"
+   ],
+   "topic": "us-gp-grid-penalties",
+   "title": "アメリカGP　リンドブラッド、コラピント、ボルトレートにPU交換のグリッド降格",
+   "orig": "Lindblad, Colapinto and Bortoleto to take penalties for US GP",
+   "url": "https://www.formula1.com/en/latest/article/lindblad-colapinto-and-bortoleto-to-take-grid-penalties-for-united-states-grand-prix.4qjn84W4zOmwNXeELFWn0k",
+   "published": "2026-10-23T20:08:00+01:00",
+   "summary": "アメリカGPでは、パワーユニット部品の使用数超過により3人にグリッド降格が科された。レーシングブルズのリンドブラッドは今季6基目のICEを投入し5グリッド降格となる。アルピーヌのコラピントは4基目の制御電子機器で10グリッド降格、アウディのボルトレートは4基目のエナジーストアと制御電子機器により20グリッド降格で、最後尾スタートとなる見込みだ。初回の超過は10グリッド、以後は5グリッドで、同一戦の降格は合算され、15を超えると最後尾になる。予選は現地土曜16時、決勝は日曜15時開始だ。"
+  },
+  {
+   "id": "de-formel1de-sainz-williams-overhaul",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "チーム",
+   "teams": [
+    "williams"
+   ],
+   "topic": "williams-restructure-2027",
+   "title": "サインツ「ウィリアムズ首脳は、今すぐ全て変えろと言った」　2027年へ組織改革",
+   "orig": "Carlos Sainz: Williams-Management hat gesagt, wir sollen sofort alles ändern",
+   "url": "https://www.formel1.de/news/news/2026-10-23/carlos-sainz-williams-management-hat-gesagt-wir-sollen-sofort-alles-aendern",
+   "published": "2026-10-23T21:37:00+02:00",
+   "summary": "ウィリアムズのサインツは、チームが現在のマシンでは安定して入賞できる状態にないと認めた。バクーのアップデートでも足りず、通常のレースでは14〜15位が精一杯だという。同選手は「チーム内で大規模な変革が進んでいる」と述べ、首脳陣から、シーズン途中でも変えるべきものはすぐ変えるよう言われたと明かした。残り6戦は今季の挽回より、来季に向けた工程と体制の見直しに充てる考えだ。レースウイーク中の作業やラップタイムに影響が出る可能性は認めつつ、来季の好発進のため短期的な犠牲を受け入れるとした。"
+  },
+  {
+   "id": "de-formel1de-leclerc-notes-hamilton",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Formel1.de",
+   "cat": "ドライバー",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "leclerc-learns-from-hamilton",
+   "title": "ルクレール「ハミルトンから学ぶためのメモを今も取っている」",
+   "orig": "Charles Leclerc: Mache immer noch Notizen, um von Hamilton zu lernen",
+   "url": "https://www.formel1.de/news/news/2026-10-23/charles-leclerc-mache-immer-noch-notizen-um-von-hamilton-zu-lernen",
+   "published": "2026-10-23T23:05:00+02:00",
+   "summary": "フェラーリのルクレールが、チームメイトのハミルトンから今も多くを学んでいると語った。「ルイスからは間違いなく多くを学んでいる」と明言した。自身が好調な週末のあとでもハミルトンのデータを分析し、マシンの扱い方を確かめているという。ハミルトンの加入以降、ノートに書き込んだメモは「おそらくこれまでで最も多い」と述べた。現行世代のマシンについては、必ずしも楽しいものではないとしつつ、ドライバーとして長期的には役立つ経験になるとの見方を示した。"
+  },
+  {
+   "id": "nl-gpblog-russell-horner-tactical",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "移籍",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "topic": "horner-russell-redbull-approach",
+   "title": "ラッセル、ホーナー氏のレッドブル接触話に「全く真剣ではなかった」　駆け引きと指摘",
+   "orig": "Russell ontkracht verhaal van Horner over interesse in Red Bull: 'Allemaal tactisch'",
+   "url": "https://www.gpblog.com/nl/nieuws/russell-ontkracht-verhaal-van-horner-over-interesse-in-red-bull-allemaal-tactisch",
+   "published": "2026-10-23T22:47:00+02:00",
+   "summary": "元レッドブル代表ホーナー氏は自著で、昨年の英国GP前後にラッセルの代理人へ接触し、メルセデスの関心を探ったと明かした。メルセデスがフェルスタッペンを追うのに対抗する狙いで、ヴォルフ代表に「レッドブルを検討すべきだ」と言いたかったという。ラッセルはアメリカGPで「正直、全く真剣ではなかった」と述べ、メルセデス以外で走るつもりはなかったと否定した。ホーナー氏とヴォルフ代表が互いを挑発し合う駆け引きの一部だったとの見方で、心理戦だったかとの問いにも肯定した。"
+  },
+  {
+   "id": "nl-gpblog-newey-answers-horner-2014",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "teams": [
+    "redbull",
+    "astonmartin"
+   ],
+   "topic": "newey-horner-2014-departure",
+   "title": "ニューウェイ氏、ホーナー氏の2014年離脱を巡る記述に反論「エンジンが問題だった」",
+   "orig": "Newey slaat terug na Horners verwijt over vertrek bij Red Bull",
+   "url": "https://www.gpblog.com/nl/nieuws/newey-slaat-terug-na-horners-verwijt-over-vertrek-bij-red-bull",
+   "published": "2026-10-23T22:27:00+02:00",
+   "summary": "アストンマーティンのニューウェイ氏が、ホーナー氏の自著『Drive』にある2014年の離脱話への記述に答えた。同書は、逆境の最初の兆候で同氏が船を降りたがったと記したが、ニューウェイ氏はまだその部分を読んでいないと述べた。シャシー設計者は1年の不振は受け入れられるが、2014年はエンジン側に改善の意思が見えず、2019年にホンダへ替わるまで変わらなかったと説明した。ホーナー氏には自身のいら立ちが完全には伝わっていなかったかもしれないとしつつ、今も友人で、ホーナー氏の娘の名付け親だと語った。"
+  },
+  {
+   "id": "nl-gpblog-montoya-hadjar-gap",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "ドライバー",
+   "circuit": "austin",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-verstappen-gap",
+   "title": "モントーヤ氏「レッドブルは動くべき」　ハジャーとフェルスタッペンの差を指摘",
+   "orig": "Montoya dringt aan op ingrijpen bij Red Bull na achterstand Hadjar op Verstappen",
+   "url": "https://www.gpblog.com/nl/nieuws/montoya-dringt-aan-op-ingrijpen-bij-red-bull-na-achterstand-hadjar",
+   "published": "2026-10-23T22:16:00+02:00",
+   "summary": "元F1ドライバーのモントーヤ氏は、アメリカGPのFP1でハジャーがフェルスタッペンに遅れたことを受け、レッドブルは原因を調べるべきだと語った。差は週ごとに広がって見えるとし、縮める方法を見つける必要があるという。ハジャーは走行時間が足りず、2人はハードとソフトを分け合う異なるプログラムだった。元インディカーのヒンチクリフ氏は1回のセッションでは原因を断定できないとし、上位4チームが約0.25秒内にいる点を重視した。モントーヤ氏はマクラーレンが長いコーナーで有利になりうるとも述べた。"
+  },
+  {
+   "id": "ja-f1jouhou2-us-gp-fp1-track-limits",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1情報通",
+   "cat": "まとめ",
+   "circuit": "austin",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "fp1-austin-2026",
+   "title": "アメリカGP FP1「トラリミ祭りの予感」　ルクレール最速に掲示板もざわつく",
+   "orig": "2026年 F1 第18戦 アメリカGP フリー走行1“トラリミ祭りの予感”",
+   "url": "https://f1jouhou2.com/blog-entry-31768.html",
+   "published": "2026-10-24T05:00:00+09:00",
+   "summary": "5ch系まとめブログ「F1情報通」が、アメリカGPのFP1結果を取り上げた。ルクレールが1分36秒052で最速、0.084秒差でフェルスタッペン、ノリス、ラッセルと続き、ハミルトンが6番手、ピアストリが7番手だった。ハジャーは14番手で、キャデラックのハータが最下位だった。タイトルはトラックリミットによるタイム抹消が相次いだことを指す。コメント欄では日本からの視聴時間の遅さを嘆く声や、アストンマーティンの速さに驚く声、フェルスタッペンとフェラーリへの期待が話題になっている。いずれも掲示板の個人的な感想で、未確認の話である。"
+  },
   {
    "id": "de-formel1de-sainz-too-many-races",
    "kind": "news",
@@ -1244,159 +1416,6 @@
    "orig": "Gestione dell'energia e track limits più visibili, il COTA secondo Williams",
    "url": "https://www.formula1.it/news/33377/1/gestione-dell-energia-e-track-limits-piu-visibili-il-cota-secondo-williams",
    "published": "2026-10-20T20:45:00+02:00"
-  },
-  {
-   "id": "it-f1it-ferrari-fenestraz-simulator",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "topic": "ferrari-fenestraz-simulator",
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ],
-   "title": "フェラーリ、メルセデスのシミュレータードライバーだったフェネストラズを獲得",
-   "summary": "フェラーリは、2027年型マシンの仮想開発ツールを担当する新しいシミュレータードライバーとして、27歳のフランス人サシャ・フェネストラズを迎えたと伝えられた。彼は3年間ブラックレーでメルセデスの同職を務めており、今年の夏の初めにフェラーリへ加わったという。本人はGrande Premioの取材で移籍を認めた。フェラーリは旧型車を使うTPCテストでの実車走行を提示したとされ、記事は2027年の実施を見込む。日本ではスーパーフォーミュラやスーパーGTに参戦し、2022年のスーパーフォーミュラはランキング2位だった。",
-   "orig": "Ferrari, strappa un pilota a Mercedes e chiude un gran colpo di mercato",
-   "url": "https://www.formula1.it/news/33378/1/ferrari-strappa-un-pilota-a-mercedes-e-chiude-un-gran-colpo-di-mercato",
-   "published": "2026-10-20T20:20:00+02:00"
-  },
-  {
-   "id": "de-motorsporttotal-hadjar-sprint-luck",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "topic": "hadjar-sprint-dislike",
-   "teams": [
-    "redbull"
-   ],
-   "title": "ハジャー「スプリントは運次第」　今季は全スプリントで無得点",
-   "summary": "ハジャーはスプリントについて、セットアップに運が必要で、週末に学べることも少ないとして「気に入らない」と語った。今季は中国15位、マイアミ9位、カナダ21位、シルバーストン9位、ザントフォールトは負傷で欠場、シンガポールはエンジントラブルでリタイアと、スプリントでは無得点だ。金曜に1時間の走行しかないため、3回の走行がある通常の週末のほうがよいという。来年はスプリントが6戦から10戦に増え、モナコも含まれることには「どうやって成立させるのか」と疑問を呈した。",
-   "orig": "Isack Hadjar: Sprintrennen haben nur etwas mit \"Glück\" zu tun",
-   "url": "https://www.motorsport-total.com/formel-1/news/isack-hadjar-sprintrennen-haben-nur-etwas-mit-glueck-zu-tun-26102015",
-   "published": "2026-10-20T20:04:00+02:00"
-  },
-  {
-   "id": "it-formula1it-hamilton-wanted-redbull",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "移籍",
-   "topic": "hamilton-redbull-2012",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "title": "ハミルトンはレッドブル入りを望んでいた　ホーナーが自著で明かす",
-   "summary": "ホーナーは自著『Drive』で、2012年にハミルトンがメルセデス移籍前にレッドブル入りを望み、アドリアン・ニューウェイの自宅で極秘に会ったと明かした。当時のマクラーレンで故障が続き、ハミルトンは楽しそうに見えなかったという。マルコはベッテルが影に隠れることを懸念して反対し、最終的に代理人側の高額な報酬要求で話は流れたとされる。ハミルトンはその後メルセデスで6度の王者になり、84勝を挙げた。ホーナーによれば、代理人は「ムハマド・アリ以来最大の取引」になると語ったという。",
-   "orig": "Hamilton voleva la Red Bull, non la Mercedes: la rivelazione di Horner",
-   "url": "https://www.formula1.it/news/33375/1/hamilton-voleva-la-red-bull-non-la-mercedes-la-rivelazione-di-horner",
-   "published": "2026-10-20T19:45:00+02:00"
-  },
-  {
-   "id": "it-formula1it-mclaren-austin-modest-upgrade",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "topic": "mclaren-austin-upgrade",
-   "teams": [
-    "mclaren"
-   ],
-   "circuit": "austin",
-   "title": "マクラーレン、オースティンは「控えめ」な改良　レッドブルの追い上げに反撃へ",
-   "summary": "マクラーレンはアメリカGPに、信頼性とブレーキ性能、アンダーフロアの挙動を狙った控えめな改良を持ち込む。技術責任者のマーシャルは直近のレースは良くなかったと認めつつ、オースティンは他のサーキットよりマシン特性に合うとみている。コンストラクターズ3位のマクラーレンは339点で、332点の4位レッドブルに迫られている。記事は第1セクターの高速コーナーがマシンと選手に大きな負荷をかけると紹介している。日程はイタリア時間で予選が24日23時、決勝が25日21時から。",
-   "orig": "La McLaren non si arrende, ad Austin la risposta alla pericolosissima Red Bull",
-   "url": "https://www.formula1.it/news/33373/1/la-mclaren-non-si-arrende-ad-austin-la-risposta-alla-pericolosissima-red-bull",
-   "published": "2026-10-20T19:15:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-mclaren-austin-updates",
-   "kind": "tech",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "テクニカル",
-   "topic": "mclaren-austin-upgrade",
-   "teams": [
-    "mclaren"
-   ],
-   "circuit": "austin",
-   "title": "マクラーレン、オースティン向けアップデートの詳細を説明　ブレーキ問題の改善が狙い",
-   "summary": "GPblogによると、マクラーレンはアメリカGPにブレーキの信頼性と性能の問題を直す控えめなパッケージを投入し、フロアにも小変更を試す。アゼルバイジャン、マレーシア、シンガポールの3連戦で稼いだのは33点にとどまり、チームは期待を大きく下回ったとしている。技術責任者のマーシャルは、オースティンはマシンに合うサーキットだと述べた。この作業は規則変更が比較的小さい2027年にも生きるといい、ステラ代表は成功は保証されないと語った。",
-   "orig": "McLaren maakt nieuwe details bekend over upgradepakket in jacht op Red Bull",
-   "url": "https://www.gpblog.com/nl/nieuws/mclaren-licht-nieuwe-updates-toe-om-achterstand-op-red-bull-te-verkleinen",
-   "published": "2026-10-20T18:43:00+02:00"
-  },
-  {
-   "id": "it-f1it-bensulayem-gulf-races",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "カレンダー",
-   "topic": "gulf-races-cancel-risk",
-   "title": "ベン・スライエム会長「中東に危険はない」　MotoGPカタール戦の確認を受け最終2戦の開催を強調",
-   "summary": "MotoGPが数週間後にカタールのロサイル戦を予定どおり行うと確認した後、FIAのベン・スライエム会長はF1最終2戦も計画どおり開催されると述べた。会長は、危険と判断した場所にスタッフや選手、役員を送ることはないと語り、家族がUAEで暮らしていることも挙げた。将来は予測できないとしつつ、現時点で心配すべきことはないという立場で、イモラについては「FIAは常に準備ができている」と述べた。記事は、貨物船の沈没やリヤドへの攻撃といった不穏な情勢も併せて伝えている。",
-   "orig": "Ben Sulayem categorico: «Medio Oriente? Nessun pericolo. Ci correremo regolarmente»",
-   "url": "https://www.formula1.it/news/33371/1/ben-sulayem-categorico-medio-oriente-nessun-pericolo-ci-correremo-regolarmente",
-   "published": "2026-10-20T18:15:00+02:00"
-  },
-  {
-   "id": "nl-gpblog-hamilton-asked-redbull",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "移籍",
-   "topic": "hamilton-redbull-2012",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "title": "ホーナー「ハミルトン自ら移籍を打診」　2012年、ニューウェイ邸で極秘会談",
-   "summary": "GPblogは、ホーナーの自著『Drive』によれば、ハミルトンが2012年にマクラーレンを離れたがり、レッドブルを希望してニューウェイのアスコット近郊の自宅で会ったと伝えた。ハミルトンは「どうすれば一緒に走れるか」と尋ねたとされる。マルコはベッテルへの影響を心配し、代理人のフラーは巨額の投資が必要だと述べ、ホーナーは金銭が障害だったと振り返った。ホーナーはハミルトンを「商業面での夢」とも評している。レッドブルは2013年もベッテルとウェバーで戦い、ベッテルが4連覇を果たした。",
-   "orig": "Horner onthult dat Hamilton zelf om zitje bij Red Bull vroeg",
-   "url": "https://www.gpblog.com/nl/nieuws/horner-onthult-dat-hamilton-zelf-om-plek-bij-red-bull-vroeg",
-   "published": "2026-10-20T17:05:00+02:00"
-  },
-  {
-   "id": "ja-f1gate-horner-alonso-2007-talks",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "topic": "horner-alonso-2007-talks",
-   "teams": [
-    "redbull",
-    "astonmartin"
-   ],
-   "title": "アロンソのレッドブル移籍交渉、2007年末に契約書類まで交換していた　ホーナーが明かす",
-   "summary": "ホーナー氏はThe Raceのポッドキャストで、2007年末のアロンソ獲得交渉が最も近づいた場面で、契約書類のやり取りまで進んでいたと語ったと伝えられた。アロンソ側は1年契約を望んだが、共同創業者のマテシッツは最低2年を求め、フェラーリへの踏み台にされる懸念もあって交渉は決裂したという。アロンソは2008年にルノーへ戻り、レッドブルは2010年から4年連続で王者となった。ホーナー氏は2010年にウェバーと入れ替える案があったことや、2024年に再び名前が挙がったことにも触れた。",
-   "orig": "フェルナンド・アロンソのレッドブルF1移籍交渉 契約書類まで交換した過去",
-   "url": "https://f1-gate.com/alonso/229415.html",
-   "published": "2026-10-20T21:52:00+09:00"
-  },
-  {
-   "id": "de-motorsporttotal-budgetcap-separation",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ビジネス",
-   "topic": "fia-budgetcap-separation",
-   "title": "予算上限の抜け穴を塞ぐ　FIA、F1チームと他部門の人員・設備の分離を義務化",
-   "summary": "FIAの世界モータースポーツ評議会は月曜日、F1チームのスタッフや施設を親会社の他プロジェクトから切り離す新規則を承認した。これまでは技術者の稼働を分けて、F1分のみを予算上限に計上でき、WECやフォーミュラE、ヨットなどに費用を隠す抜け穴があったとされる。2027年規則のF6に5条項・11ページが追加され、非F1の人員はF1工場に入れず、シミュレーターや風洞、ITシステムも分離される。F1から他部門へ移るには新たな契約が必要で、F1に戻るには最短1年かかる。筆者は、この規則が全体の人員とコストを増やしかねないと指摘する。",
-   "orig": "Budgetobergrenze: FIA trennt Formel-1-Teams von anderen Projekten",
-   "url": "https://www.motorsport-total.com/formel-1/news/budgetobergrenze-fia-trennt-formel-1-teams-von-anderen-projekten-26102011",
-   "published": "2026-10-20T14:45:00+02:00"
   }
  ]
 }
