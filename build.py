@@ -1813,6 +1813,13 @@ def build_rules():
             mates = [x for x in team_people(tk)[0] if x['id'] != p['id']]
             if mates:
                 b += ('<p class="rb-mate">チームメイト：' + '、'.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/person/{e(p["id"])}/mate">{e(x["name"])} →</a>' for x in mates) + '</p>')
+            engs = engineers_of(p)
+            if engs:  # the voice on the radio (owner's OK, 23 Oct 2026)
+                b += ('<p class="rb-mate">レースエンジニア：' + '、'.join(f'<a href="/deep/rules/person-{e(x["id"])}/" data-track="click/person/{e(p["id"])}/engineer">{e(x["name"])} →</a>' for x in engs) + '</p>')
+        if 'エンジニア' in p.get('role', '') and p.get('role') != 'ドライバー':
+            drv = [d for d in PEOPLE if d.get('role') == 'ドライバー' and p in engineers_of(d)]
+            if drv:
+                b += ('<p class="rb-mate">担当ドライバー：' + '、'.join(f'<a href="/deep/rules/person-{e(d["id"])}/" data-track="click/person/{e(p["id"])}/driver">{e(d["name"])} →</a>' for d in drv) + '</p>')
         b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
@@ -2945,6 +2952,13 @@ MEMBER_GROUPS = [  # (label, pattern) — first match wins (owner's OK, 22 Oct 2
     ('tech', '技術', r'テクニカル|技術|CTO|チーフデザイナー|パワートレイン|パワーユニット'),
     ('mgmt', '代表・経営', r'.'),
 ]
+
+
+def engineers_of(d):
+    """Engineers whose role names this driver (「レースエンジニア（ノリス担当）」, 「…アントネッリのレースエンジニア」)."""
+    short = [a for a in [d['name'].split('・')[-1]] + (d.get('aliases') or []) if len(a) >= 3 and not re.fullmatch(r'[A-Za-z .]+', a)]
+    return [q for q in PEOPLE if q is not d and 'エンジニア' in q.get('role', '') and q.get('role') != 'ドライバー'
+            and any(a in q['role'] for a in short)]
 
 
 def team_members(k):
