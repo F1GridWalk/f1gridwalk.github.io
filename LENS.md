@@ -28,6 +28,7 @@ WORLD GRID has two kinds of pages (owner's decision, 29 Sep 2026):
   3. 余談 already posted on note: published = the real time it goes on the site (not the note date); slug may end with the note date; optionally `note`: 「この余談は10月2日に note で先に公開しました。」 plus `noteUrl`. Ask the owner before adding a site link to an already-posted note. Which ones go on the site is the owner's call; publish only after the owner's OK on a phone-width preview.
 - A column that could stand as a グランプリ特別号 story may also be reused there later.
 
+- F1-Gate (owner, via site desk, 23 Oct 2026): do not use f1-gate.com as a source in new columns, OFF GRID, DEEP GRID, STORY or rulebook entries (it was also removed from the news routine). Published pieces keep their existing sources. Checking whether a story is already out in Japanese may still include F1-Gate.
 - Names (owner, 17 Oct 2026): spell people as in `deep/people.json` (which follows autosport web). Paul Aron is 「ポール・アーロン」 from now on; older articles that say 「アロン」 stay as they are.
 
 ## 0b. Breaking column (速報コラム)
