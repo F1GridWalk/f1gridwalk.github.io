@@ -174,8 +174,11 @@
    "short": "違反をした車のレースタイムに、5秒や10秒を足す罰。",
    "body": [
     "5秒や10秒の時間加算は、決勝やスプリントで使われる罰だ。ピットストップのときに、その秒数だけ車を止めて消化する。その間、メカニックは車に触れられない。時間が過ぎる前に触れると、別の罰が出る（formula1.com）。",
+    "## 5秒か10秒かは何で決まる？",
     "どの違反が5秒で、どの違反が10秒になるかは、FIAのペナルティ・ガイドラインに目安がある。2026年版では、衝突を起こしたとき、相手をコースの外に押し出したとき、コースの外を走って有利になったときは、10秒加算が基準だ。セーフティカーの後ろで1台を抜いたときも10秒とされている。5秒の例は、トラックリミットの違反の4回目以降や、決勝でのピットレーンの速度超過が6km/h未満のときだ。酌量すべき事情があれば、10秒が基準の違反でも5秒に軽くなることがある。どれも目安で、最後はスチュワードが1件ごとに決める。",
+    "## ほかのペナルティとの違い",
     "ほかの罰とくらべると、時間加算は軽いほうだ。規則の罰の一覧は、5秒加算、10秒加算、ドライブスルーペナルティ、ストップ＆ゴーペナルティの順に始まる。レースが終わってから科されたときに足される時間も、この順に5秒、10秒、20秒、30秒と長くなる。ガイドラインでも、決勝のピットレーンの速度超過は、6km/h未満なら5秒加算、6〜15km/hならドライブスルー、15km/hを超えるとストップ＆ゴーが目安で、違反が重いほど重い罰になる。時間加算は、止まる時間が過ぎればそのままタイヤ交換ができる。ドライブスルーは止まらずに通り抜けるだけで、ストップ＆ゴーは止まっている間に作業ができない。",
+    "## 消化しなかったら？ リタイアしたら？",
     "消化しないままゴールすれば、その秒数がレースのタイムに足され、ゴールした順位より後ろになることがある（→暫定結果と正式結果）。レースが終わってから科されたときも、同じように秒数が足される。リタイアして完走扱いにならず、消化できなかったときは、次のレースのグリッド降格に切り替えられることがある。ただしガイドラインでは、5秒の罰が1つだけなら切り替えない。今季のシンガポールのスプリントでは、アルボンとボッタスの追突がそれぞれ5秒加算に当たるとされたが、2台ともリタイアしていたため、罰は出なかった。一方、バクーで10秒加算を受けたコラピントは、リタイアしたため、次戦セパンで5グリッド降格になった（→衝突を起こした）。"
    ],
    "rule": "スポーティングレギュレーション B1.9.5 a)〜d)、B1.9.6",
@@ -201,37 +204,49 @@
    ],
    "src": [
     {
-     "name": "formula1.com",
-     "title": "The beginner's guide to F1 penalties",
-     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-penalties.5lne3FfE8IXpGOagsmfq90"
-    },
-    {
-     "name": "The Race",
-     "title": "All you need to know about a big F1 penalty guidelines reveal（2025年6月）",
-     "url": "https://www.the-race.com/formula-1/big-f1-penalty-guidelines-reveal-all-you-need-to-know/"
-    },
-    {
-     "name": "PlanetF1",
-     "title": "FIA confirms decision after triple Singapore Grand Prix investigation（2026年、スプリントの3件）",
-     "url": "https://www.planetf1.com/news/fia-singapore-grand-prix-triple-investigation"
-    },
-    {
-     "name": "RacingNews365",
-     "title": "Three F1 drivers learn stewards' decision into chain reaction accident（2026年シンガポールGPスプリント）",
-     "url": "https://racingnews365.com/three-f1-drivers-learn-stewards-decision-into-chain-reaction-accident"
-    },
-    {
      "name": "FIA",
      "title": "2026 F1 Regulations Section B Sporting (Issue 09, 2026-10-01)",
-     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf",
+     "note": "2026年の今の規則：罰の一覧が5秒・10秒・ドライブスルー・ストップ＆ゴーの順で始まること（B1.9.5 a〜d）、止まっている間は作業できないこと、消化しなければ秒数が足されること、レース後に科されたら5・10・20・30秒が足されること、完走扱いにならず消化できなければ次のレースでグリッド降格にできること（B1.9.6）"
     },
     {
      "name": "FIA",
      "title": "2026 Formula 1 Penalty Guidelines（Version 01）",
-     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf"
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf",
+     "note": "2026年の今の目安：衝突・押し出し・コース外で有利は10秒が基準で酌量があれば5秒、SCの後ろで1台抜くと10秒、トラックリミット4回目以降と決勝の速度超過6km/h未満は5秒（6〜15km/hはドライブスルー、15km/h超はストップ＆ゴー）、5秒の罰1つだけならグリッド降格に切り替えないこと"
+    },
+    {
+     "name": "formula1.com",
+     "title": "The beginner's guide to F1 penalties",
+     "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-f1-penalties.5lne3FfE8IXpGOagsmfq90",
+     "note": "解説：時間加算はピットで止まって消化し、その間メカニックは触れられず、触れると別の罰になること、消化しなければゴールのタイムに足されること"
+    },
+    {
+     "name": "The Race",
+     "title": "All you need to know about a big F1 penalty guidelines reveal（2025年6月）",
+     "url": "https://www.the-race.com/formula-1/big-f1-penalty-guidelines-reveal-all-you-need-to-know/",
+     "note": "2025年6月の報道：ペナルティ・ガイドラインが初めて全文公開され、罰の「メニュー」のような作りであること、5秒の罰1つだけならリタイアしてもグリッド降格に切り替えないこと（2025年版について）"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA confirms decision after triple Singapore Grand Prix investigation（2026年、スプリントの3件）",
+     "url": "https://www.planetf1.com/news/fia-singapore-grand-prix-triple-investigation",
+     "note": "2026年シンガポールGPスプリント：アルボンとボッタスの追突は完走していれば5秒加算だったが、5秒はグリッド降格に切り替えないため罰が出なかったこと（2026年10月10日の報道）"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Three F1 drivers learn stewards' decision into chain reaction accident（2026年シンガポールGPスプリント）",
+     "url": "https://racingnews365.com/three-f1-drivers-learn-stewards-decision-into-chain-reaction-accident",
+     "note": "2026年シンガポールGPスプリントの玉突き事故で、アルボンはリタイアしていなければ5秒加算だったが、5秒はグリッド降格に切り替えないため、アルボン・ボッタス・ボルトレートの3人とも罰が出なかったこと（2026年10月10日の報道）"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Colapinto hit with five-place grid penalty for Bahrain GP in Malaysia after Baku collision（2026年9月26日）",
+     "url": "https://www.formula1.com/en/latest/article/colapinto-hit-with-five-place-grid-penalty-for-bahrain-gp-in-malaysia-after-baku-collision.3gWVfzDMMr5hReiwTt1fPD",
+     "note": "バクーで衝突の基準の10秒加算を受けたコラピントが、リタイアで消化できず、次戦（セパンで開かれるバーレーンGP）で5グリッド降格になったこと（スチュワードの文言の引用つき）"
     }
    ],
-   "checked": "2026-10-21"
+   "checked": "2026-10-23"
   },
   {
    "id": "short-race-points",
@@ -753,25 +768,92 @@
    "cat": "タイヤと作戦",
    "aliases": [
     "undercut",
-    "overcut",
+    "undercutting",
     "あんだーかっと"
    ],
    "words": [
-    "ピット",
-    "ピットストップ",
-    "作戦",
-    "早めにピット"
+    "早めにピット",
+    "先にピット",
+    "ピット作戦",
+    "タイヤの差",
+    "カバー",
+    "前に出る"
    ],
    "short": "前の車より先にピットに入り、新しいタイヤの速さで前に出る作戦。",
    "body": [
-    "新しいタイヤは古いタイヤより速いので、前の車がピットに入るまでの数周で差を縮め、相手のピットのあいだに前に出る。",
-    "反対に、あえて長く走り続けて前に出るのが「オーバーカット」。タイヤが温まりにくいコースや、古いタイヤでもペースが落ちにくいときに効く。"
+    "追う車が、前の車より先にピットストップをする。新しいタイヤは古いタイヤより速いので、前の車がピットに入るまでの数周で差を縮め、相手のピットのあいだに前に出る。",
+    "## どうやって前に出る？",
+    "勝負は、ピットの前後の数周で決まる。先に入った車は、ピットを出て最初の周（アウトラップ）を新しいタイヤで走る。そのころ前の車は、古いタイヤのまま、ピットに入る直前の周（インラップ）を走っている。新しいタイヤの周のほうが速ければ、相手がピットを終えたときに前に出られる（F1公式、→インラップとアウトラップ）。ただし、先に入った車はピットで時間を失う。新しいタイヤの速さで、それを取り戻さなければならない。ピット作業が遅れたり、思ったほど速く走れなかったりすると失敗する（GPFans）。",
+    "## 前の車はどう守る？",
+    "前の車は、相手が入ったすぐあとにピットに入って、アンダーカットを「カバー」することがある（F1公式の用語集）。ペースを上げて差を広げ、守ろうとすることもある（GPFans）。",
+    "## 効くとき、効かないとき",
+    "多くのコースでは、アンダーカットが効きやすい。古いタイヤはふつう性能が大きく落ちていて（デグラデーション）、新しいタイヤもすぐに温まるからだ（F1公式）。反対に、新しいタイヤが温まりにくいと効きにくい（→タイヤのウォームアップ）。2021年のモナコGPでは、メルセデスのハミルトンが先に入ってガスリーの前に出ようとした。しかし、温まりにくい新品のハードでのアウトラップは、温まりきった古いソフトでのガスリーのインラップより速くなかった（F1公式）。古いタイヤが落ちにくく、新しいタイヤが温まりにくいときは、あえて長く走って前に出るオーバーカットが効くことがある。",
+    "## ピットを出た先の車の列",
+    "ピットを出た先で遅い車の後ろに入ると、新しいタイヤの速さを生かせない。ピットの時期に車の列に引っかかることや、思わぬセーフティカーで、アンダーカットがだめになることもある（GPFans）。どこに戻るかは、そのコースのピットロスの大きさで決まる。F1公式サイトの解説では、2021年のモナコのピットロスは21秒だった。先頭のフェルスタッペンが、後ろを走る遅い車との差を21秒より小さく保てば、ボッタスが先に入っても遅い車の後ろに戻ることになり、アンダーカットは成り立たない、という計算だった。",
+    "## 2026年のタイヤでは",
+    "F1公式サイトは2026年10月、今季のタイヤは最近より丈夫で、シンガポールと似た市街地コースでは劣化がとても小さかったと書いた。アンダーカットのような昔ながらの手は、効き目が小さいかもしれないという。アンダーカットが効くこともあるが、1回のストップが見込まれるシンガポールでは、最初のタイヤで長く走り、短い2本目で新旧のタイヤの差を大きくするほうが効くことが多かったとも書いている。Motorsport.comも、開幕2戦を終えた時点で、新しい規則が始まった今季はタイヤの摩耗が小さく、持ちがよいと伝えた。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "DEEP GRID #04 9年前は1回だった（セパンのピットロスと、アンダーカット・オーバーカット）",
+     "u": "/deep/pit-stops-sepang/"
+    },
+    {
+     "t": "DEEP GRID #09 昼の練習、夜の本番（2026年のタイヤでは、アンダーカットが効きにくいかもしれない）",
+     "u": "/deep/singapore-sprint/"
+    },
+    {
+     "t": "シンガポールGPの戦略の考え方。2026年のタイヤは耐久性が高く摩耗が少ないため、アンダーカットなど従来の戦術が効きにくくなる可能性がある。",
+     "u": "/news/en-f1com-singapore-risk-perspective/"
+    },
+    {
+     "t": "アウディのマクニッシュは、ヒュルケンベルグのシンガポール週末を称え、ピット作業やアンダーカットなどチームの実行力も評価した。",
+     "u": "/news/de-motorsporttotal-hulkenberg-mcnish-praise/"
+    }
+   ],
    "see": [
+    "overcut",
+    "pit-window",
+    "pit-loss",
+    "in-out-lap",
+    "tyre-warm-up",
     "degradation",
-    "overcut"
-   ]
+    "pit-stop",
+    "sc-pit-stop"
+   ],
+   "src": [
+    {
+     "name": "Formula1.com",
+     "title": "Undercut vs overcut – Why tyre strategy was so finely poised in Monaco, and why Hamilton couldn't make either work（マーク・ヒューズ、2021年5月24日）",
+     "url": "https://www.formula1.com/en/latest/article/undercut-vs-overcut-why-tyre-strategy-was-so-finely-poised-in-monaco-and-why.1YYMDkEBnFols8bDWtSXiz",
+     "note": "仕組み（新品タイヤのアウトラップと相手の古いタイヤのインラップの比べ合い）、多くのコースで効く理由（劣化と温まり）、2021年モナコのハミルトンとガスリーの例、ピットロス21秒と遅い車の後ろに戻る計算"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (U-Z)",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-u-z.5JSlDsnyvYmbK0TCjTs7KB",
+     "note": "定義と、前の車がすぐ後にピットに入ってアンダーカットを「カバー」すること"
+    },
+    {
+     "name": "GPFans",
+     "title": "Pit stop strategy explained: How the undercut and overcut work in F1（2024年7月21日、2026年3月26日更新）",
+     "url": "https://www.gpfans.com/en/f1-news/1016512/f1-undercut-overcut-explained/",
+     "note": "ピットで失う時間を新しいタイヤで取り戻すこと、失敗する理由（遅いピット作業、ピット後の車の列、思わぬセーフティカー）、前の車の守り方、オーバーカットは劣化が小さいコースで使われること"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "THE RISK PERSPECTIVE: How F1 drivers, engineers and strategists tackle the Singapore Grand Prix（2026年10月7日）",
+     "url": "https://www.formula1.com/en/latest/article/the-risk-perspective-how-f1-drivers-engineers-and-strategists-tackle-the-singapore-grand-prix.5hcVFIGmI8lG1LyPPzxvFR",
+     "note": "2026年のタイヤは丈夫で市街地コースの劣化がとても小さく、アンダーカットの効き目が小さいかもしれないこと。シンガポールでは最初のスティントを長くするほうが効くことが多かったこと"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Pirelli's plan to combat continuous one-stop races in F1 2026",
+     "url": "https://www.motorsport.com/f1/news/pirellis-plan-to-combat-continuous-one-stop-races-in-f1-2026/10807616/",
+     "note": "開幕2戦（オーストラリア、中国）のあとの記事で、新しい規則の始まりの2026年はタイヤの摩耗が小さく耐久性が高いと書いたこと（報道）"
+    }
+   ],
+   "checked": "2026-10-23"
   },
   {
    "id": "red-flag",
@@ -1683,11 +1765,18 @@
    "short": "コースの外側の限界。白線の外にはみ出すと、タイムの取り消しやペナルティになる。",
    "body": [
     "規則では、車のどの部分もコースに接していないとき、コースを離れたとみなす。白線はコースの一部で、縁石は含まれない。つまり、白線の外に全部の車輪が出ると違反だ。コースに戻るのは安全なときだけで、長く続く利益を得てはならない。レースディレクターの判断で、得た利益を返す機会が与えられることもある。",
-    "予選やスプリント予選では、違反したラップのタイムが取り消される。決勝は段階式で、3回目までは罰がなく、3回目に黒白旗で警告される。4回目からは、違反のたびに5秒加算になる。今季のモナコGPでは、ストロールが4回違反して5秒加算を受けた。イギリスGPでは、ストロールが合わせて6回違反し、4〜6回目にそれぞれ5秒加算を受けた。サーキットごとの細かい決まりは、レースディレクターのノートに出る。今季のハンガリーGPでは、14コーナーの出口で違反すると、そのラップと直後のラップのタイムが取り消されることがあるとされた。",
+    "## 誰が、どうやって判定する？",
+    "違反を見つけてチームに知らせるのは、FIAのレースコントロールだ。予選では、取り消しが走行中にすぐ伝えられ、ドライバーはもう1周アタックするか、ピットに戻るかを決められる（Motorsport Magazine）。タイムを取り消し、罰を決めるのはスチュワードで、取り消したタイムは一覧にして裁定の文書で公表する。今季のモナコGPでは、スチュワードは車の位置とマーシャリングシステムのデータ、映像、車載映像を確かめて、5秒加算を決めた。2026年のオランダGPからは、英国の遠隔管制センターでも映像を見ていて、AIがトラックリミット違反などの確かめるべき場面を拾い出す。ただし、AIが罰を自動で決めるわけではなく、判断するのはFIAのオフィシャルだ（F1-Gate.com）。",
+    "## 予選と決勝で何が違う？",
+    "予選やスプリント予選では、違反したラップのタイムが取り消される。決勝は段階式で、3回目までは罰がなく、3回目に黒白旗で警告される。4回目からは、違反のたびに5秒加算になる。決勝でも、違反した周のタイムは取り消される。今季のモナコGPでは、ストロールが4回違反して5秒加算を受けた。イギリスGPでは、ストロールが合わせて6回違反し、4〜6回目にそれぞれ5秒加算を受けた。サーキットごとの細かい決まりは、レースディレクターのノートに出る。今季のハンガリーGPでは、フリー走行と予選などの走行で、14コーナーの出口で違反すると、そのラップと直後のラップのタイムが取り消されることがあるとされた。",
+    "## COTAでは、どのコーナー？",
+    "アメリカGPの舞台、サーキット・オブ・ジ・アメリカズ（COTA）では、2025年のアメリカGPで、予選で12回、スプリントで19回、決勝で32回、トラックリミットでタイムが取り消された（FIAの文書）。決勝でいちばん多かったのは12コーナーの11回で、19コーナーが7回、20コーナーが5回、9コーナーが4回だった。スプリントでは、9コーナーが7回、12コーナーが6回だった。2026年のレースディレクターのノート（10月22日付）によると、今年は多くのコーナーに、違反を見つけるための青い線が新しく引かれた。1コーナーと11コーナーの頂点にある黄色い縁石は低くなり、11コーナーの出口にあった、縁石に見せた白い塗装は消された。また、フリー走行と予選、スプリント予選では、ホームストレートにつながる最後の20コーナーを曲がりきれなかったとき、その周に加えて、すぐ次の周のタイムもスチュワードが取り消すことがある（PlanetF1、レースディレクターのノート）。",
+    "## 白線が基準になるまで",
     "「白線で決める」という基準は、2022年にレースディレクターが明確にした。2023年のオーストリアGPでは、決勝で違反の疑いが1,200件を超えた。2024年のオーストリアでは、9・10コーナーの出口に狭い砂利帯を置き、はみ出しにくくする対策が取られた。",
-    "2026年のガイドラインでは、衝突を避けようとしたとき、明らかにコントロールを失ったとき、他車に押し出されたとスチュワードが認めたときなどは、違反の回数に数えるかどうかをスチュワードが判断できる。追い越しの途中でコースの外に出ても、はっきりした利益がなければ、数えないことができる（Pit Debrief、The Raceによる）。"
+    "## 回数に数えないこともある",
+    "2026年のガイドラインでは、衝突を避けようとしたとき、明らかにコントロールを失ったとき、他車に押し出されたとスチュワードが認めたときなどは、違反の回数に数えるかどうかをスチュワードが判断できる。追い越しの途中でコースの外に出ても、はっきりした利益がなければ、数えないことができる（Pit Debrief、The Raceによる）。今季のシンガポールGPでは、アントネッリが決勝で4周分のタイムを取り消された。しかし、4回目とされた7コーナーの違反は、ブレーキの不具合が正当な理由とスチュワードに認められて数えられず、5秒加算を免れた（The Race、Motorsport-Total.com）。"
    ],
-   "rule": "スポーティングレギュレーション B1.8.6",
+   "rule": "スポーティングレギュレーション（2026年 Issue 09）B1.8.6",
    "examples": [
     {
      "t": "アントネッリ、シンガポールGPで4周分のタイムが削除されたが、1件が取り消されて5秒加算を免れた",
@@ -1710,66 +1799,131 @@
     "black-white-flag",
     "time-penalty",
     "stewards",
-    "yellow-flag"
+    "yellow-flag",
+    "lap-time-deleted",
+    "lasting-advantage",
+    "race-control",
+    "remote-operations-centre",
+    "circuit-austin",
+    "kerb"
    ],
-   "checked": "2026-10-21",
    "src": [
     {
-     "name": "StatsF1（FIA規則の転載）",
-     "title": "2026 F1 Sporting Regulations（Issue 06、2026年4月28日付）",
-     "url": "https://www.statsf1.com/reglement/sportif.pdf"
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] – Issue 09（2026年10月1日）B1.8.6",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf",
+     "note": "2026年の今の規則：車のどの部分もコースに接していなければコースを離れたとみなす、白線はコースの一部で縁石は含まない、戻るのは安全で長く続く利益を得ないときだけ、レースディレクターの裁量で利益を返させられる（B1.8.6）"
     },
     {
      "name": "FIA",
-     "title": "2026 Monaco Grand Prix Infringement Car 18 Exceeded Track Limits（スチュワード裁定）",
-     "url": "https://www.fia.com/system/files/decision-document/2026_monaco_grand_prix_-_infringement_-_car_18_-_exceeded_track_limits.pdf"
+     "title": "2026 Formula 1 Penalty Guidelines（Version 01）",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf",
+     "note": "罰の目安：白線の外でタイムは認めない、予選はラップ削除、決勝は削除と回数（3回目で黒白旗、4回目から毎回5秒）"
     },
     {
      "name": "FIA",
-     "title": "2026 British Grand Prix Infringement - Qualifying Deleted Lap Times（スチュワード裁定）",
-     "url": "https://www.fia.com/system/files/decision-document/2026_british_grand_prix_-_infringement_-_qualifying_deleted_lap_times.pdf"
+     "title": "2026 Monaco Grand Prix Infringement Car 18 Exceeded Track Limits（スチュワード裁定、2026年6月7日）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_monaco_grand_prix_-_infringement_-_car_18_-_exceeded_track_limits.pdf",
+     "note": "ストロールが4回違反し、3回目の黒白旗のあと5秒加算になった例と、スチュワードが確かめたデータ（位置・マーシャリングシステム・映像・車載映像）"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 British Grand Prix Infringement - Qualifying Deleted Lap Times（スチュワード裁定、2026年7月4日）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_british_grand_prix_-_infringement_-_qualifying_deleted_lap_times.pdf",
+     "note": "予選で取り消したタイムを、スチュワードが一覧にして裁定の文書で出す例"
     },
     {
      "name": "PlanetF1",
      "title": "FIA confirms triple Lance Stroll punishment after British Grand Prix（2026年7月）",
-     "url": "https://www.planetf1.com/news/fia-lance-stroll-british-grand-prix-2026-penalty"
+     "url": "https://www.planetf1.com/news/fia-lance-stroll-british-grand-prix-2026-penalty",
+     "note": "イギリスGPでストロールが6回違反し、4〜6回目にそれぞれ5秒加算を受けた例"
     },
     {
      "name": "FIA",
-     "title": "2026 Hungarian Grand Prix Race Director's Competition Notes",
-     "url": "https://www.fia.com/system/files/decision-document/2026_hungarian_grand_prix_-_race_directors_competition_notes.pdf"
+     "title": "2026 Hungarian Grand Prix Race Director's Competition Notes（2026年7月23日）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_hungarian_grand_prix_-_race_directors_competition_notes.pdf",
+     "note": "サーキットごとの決まりの例：14コーナー出口の違反で、その周と直後の周のタイムが取り消されることがある"
     },
     {
-     "name": "Pit Debrief",
-     "title": "FIA shares tweaks to F1 2026 driver guidelines after Qatar meet",
-     "url": "https://www.pitdebrief.com/?p=100450"
+     "name": "FIA",
+     "title": "2026 United States Grand Prix Race Director's Competition Notes（2026年10月22日）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_race_directors_competition_notes.pdf",
+     "note": "2026年のCOTA：フリー走行・予選・スプリント予選（LTCS）では、20コーナーで違反するとその周と次の周を取り消すことがある（17.1）、違反を見つける青い線を多くのコーナーに追加、1・11コーナーの縁石を低く、11コーナー出口の白い塗装を消した（19）"
     },
     {
-     "name": "The Race",
-     "title": "F1 changes penalty and racing rules for 2026（2026年3月6日）",
-     "url": "https://www.the-race.com/formula-1/f1-2026-penalty-driving-guidelines-changes/"
+     "name": "FIA",
+     "title": "2025 United States Grand Prix Race Deleted Lap Times（スチュワード裁定、2025年10月19日）",
+     "url": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_race_deleted_lap_times.pdf",
+     "note": "2025年アメリカGP決勝の取り消し32回とコーナー別の数（12コーナー11、19コーナー7、20コーナー5、9コーナー4）、決勝でもタイムが取り消されること"
     },
     {
-     "name": "RacingNews365",
-     "title": "Masi's replacement sets out clear rules over track limits（2022年3月17日）",
-     "url": "https://racingnews365.com/masis-replacement-sets-out-clear-rules-over-track-limits"
+     "name": "FIA",
+     "title": "2025 United States Grand Prix Infringement - Sprint Deleted Lap Times（スチュワード裁定、2025年10月18日）",
+     "url": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_infringement_-_sprint_deleted_lap_times.pdf",
+     "note": "2025年アメリカGPスプリントの取り消し19回とコーナー別の数（9コーナー7、12コーナー6）"
+    },
+    {
+     "name": "FIA",
+     "title": "2025 United States Grand Prix Qualifying Session Race Control Messages（2025年10月18日）",
+     "url": "https://www.fia.com/sites/default/files/2025_19_usa_f1_q0_timing_qualifyingsessionracecontrolmessages_v01.pdf",
+     "note": "2025年アメリカGP予選のトラックリミットによる取り消し12回"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Circuit of The Americas track guide",
+     "url": "https://www.planetf1.com/news/circuit-of-the-americas-track-guide",
+     "note": "COTAはコーナーが20で、20コーナーはホームストレートにつながる最後のコーナーであること"
+    },
+    {
+     "name": "F1-Gate.com",
+     "title": "FIAがF1の新たな遠隔管制センターを正式開設 AI活用でレース判定を支援（2026年10月21日）",
+     "url": "https://f1-gate.com/fia/229458.html",
+     "note": "遠隔管制センターがオランダGPから稼働し、AIがトラックリミット違反などの場面を拾うが、罰は自動で決めずFIAのオフィシャルが判断すること"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "What are F1 track limits rules, penalties and what is changing（2024年6月26日）",
+     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/what-are-f1-track-limits-rules-penalties-and-what-is-changing",
+     "note": "4輪とも白線の外に出ると違反、レースコントロールがチームに知らせること、予選の取り消しはすぐ伝えられ次の周を決められること、2023年オーストリアの1,200件超"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Wittich: The white lines are the track limits（2022年3月18日）",
+     "url": "https://www.grandprix247.com/2022/03/18/wittich-the-white-lines-are-the-track-limits/",
+     "note": "2022年にレースディレクターのヴィティヒが、白線をコースの縁とする基準をイベントノートで示したこと"
     },
     {
      "name": "Motorsport.com",
      "title": "Is F1's new track limits solution already changing driver attitudes?（2024年オーストリアGP）",
-     "url": "https://www.motorsport.com/f1/news/is-f1s-new-track-limits-solution-already-changing-driver-attitudes/10628923/"
+     "url": "https://www.motorsport.com/f1/news/is-f1s-new-track-limits-solution-already-changing-driver-attitudes/10628923/",
+     "note": "2023年オーストリアGP決勝で違反の疑いが1,200件超、2024年に9・10コーナー出口へ狭い砂利帯を置いたこと"
     },
     {
-     "name": "Motorsport Magazine",
-     "title": "What are F1 track limits rules, penalties and what is changing",
-     "url": "https://motorsportmagazine.com/articles/single-seaters/f1/what-are-f1-track-limits-rules-penalties-and-what-is-changing"
+     "name": "Pit Debrief",
+     "title": "FIA shares tweaks to F1 2026 driver guidelines after Qatar meet（2026年3月6日）",
+     "url": "https://www.pitdebrief.com/post/fia-shares-tweaks-to-f1-2026-driver-guidelines-after-qatar-meet/",
+     "note": "2026年のガイドライン：衝突を避けたとき、明らかにコントロールを失ったとき、押し出されたとき、利益のない追い抜きの途中などは、回数に数えないことができる"
     },
     {
      "name": "The Race",
-     "title": "Why Antonelli avoided a penalty that seemed obvious（2026年シンガポールGP）",
-     "url": "https://www.the-race.com/formula-1/why-antonelli-avoided-a-penalty-that-seemed-obvious/"
+     "title": "F1 changes penalty and racing rules for 2026（2026年3月6日）",
+     "url": "https://www.the-race.com/formula-1/f1-2026-penalty-driving-guidelines-changes/",
+     "note": "失敗した追い抜きではっきりした利益がなければ、スチュワードが違反を消せるようになったこと"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Antonelli avoided a penalty that seemed obvious（2026年10月12日）",
+     "url": "https://www.the-race.com/formula-1/why-antonelli-avoided-a-penalty-that-seemed-obvious/",
+     "note": "シンガポールGPでアントネッリの4周分のタイムが削除され、1件が取り消されて5秒加算にならなかったこと"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Erklärt: Warum Kimi Antonelli keine Tracklimits-Strafe erhielt（2026年10月12日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/erklaert-warum-kimi-antonelli-keine-tracklimits-strafe-erhielt-26101206",
+     "note": "4回目とされた7コーナーの違反で、ブレーキの問題がスチュワードに妥当な理由と認められたこと（FIAの説明）"
     }
-   ]
+   ],
+   "checked": "2026-10-23"
   },
   {
    "id": "qualifying",
@@ -3052,9 +3206,13 @@
    "short": "グリッドに並ばず、全車が通り過ぎたあとにピットレーンから発進するスタート。",
    "body": [
     "グリッドに並ばず、ピットレーンで待つ。全車がピット出口を通り過ぎたあと、出口の信号が緑になり、コースに出ていく。ピットレーンスタートの車は、ピット出口が閉じるまでは、ガレージから出られない。",
+    "## ピットレーンスタートになる理由",
     "理由で多いのは、パルクフェルメの違反だ。技術代表の承認なしにマシンの設定を変えると、決勝をピットレーンから出ることになる。スプリント週末では、違反の時期によってスプリントか決勝になる。ほかに、予選で壊れた車の修理が間に合わないときや、フォーメーションラップでグリッドに着けなかったときもある。チームが、パワーユニットの降格が重なったときなどにあえて選び、設定を変えることもある。",
+    "## 最後尾スタートとの違い",
     "最後尾からのスタートとくらべると、損も得もある。ピットレーンからは、最後尾のさらに後ろから出ることになる。前の車に逃げられないよう、早いうちに追い抜く必要がある。後ろから順位を上げるために、ほかと違うタイヤの作戦をとったり、自分たちでは動かせない展開に賭けたりすることもある。一方で、予選のあとに設定をやり直し、車を決勝に合わせて整えられる。そのため、降格でどのみち後方になるときに、チームがあえて選ぶことがある。2025年のベルギーGPでは、ハミルトンがピットレーンから出て7位に入った（formula1.com）。",
+    "## 2026年カナダGP：スプリントで4台",
     "2026年のカナダGPのスプリントでは、アルボン、ガスリー、ベアマン、ボッタスの4台が、技術代表の承認なしに設定を変えたとして、ピットレーンスタートになった。このうちアルボンとガスリーの2台は、規則で決まった時間内に車にカバーをかけていなかったことも指摘された。",
+    "## 2026年シンガポールGP：決勝で3台",
     "2026年のシンガポールGPの決勝では、ハジャー、アロンソ、ストロールの3台がピットレーンからスタートした。公式の発表では、3台ともパルクフェルメの間に車に手を加えたためで、ハジャーとアロンソはパワーユニットの部品も新しくしていた。予選でタイムを残せなかったハジャーは、決勝で10位に入り、1ポイントを取った。アロンソは16位、ストロールはリタイアだった。"
    ],
    "rule": "スポーティングレギュレーション B3.5.3",
@@ -3077,47 +3235,55 @@
     "grid-penalty",
     "pu-allocation"
    ],
-   "checked": "2026-10-21",
+   "checked": "2026-10-23",
    "src": [
     {
      "name": "FIA",
+     "title": "2026 F1 Regulations Section B Sporting (Issue 09, 2026-10-01)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf",
+     "note": "2026年の今の規則：パルクフェルメで承認なしに車を変えると、決勝（スプリント週末は時期によりスプリントか決勝）をピットレーンから出ること（B3.5.3）、ピット出口が閉じるまでガレージから出られないこと（B5.3.1）、全車がピット出口を過ぎてから出口が開くこと（B5.7.3）、フォーメーションラップで遅れて順番に戻れない車はピットレーンから出ること（B5.6.4）"
+    },
+    {
+     "name": "FIA",
      "title": "2026 F1 Regulations Section B Sporting (Issue 07, 2026-06-25)",
-     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf",
+     "note": "旧版（2026年6月25日。今の規則は上の Issue 09）：同じ B3.5.3 で、パルクフェルメの違反があるとピットレーンから出ること（スプリント週末は時期によりスプリントか決勝）"
     },
     {
      "name": "formula1.com",
      "title": "EXPLAINED: Pit lane starts – Why drivers start from the back and how they fight forwards（2025年7月31日）",
-     "url": "https://www.formula1.com/en/latest/article/explained-pit-lane-starts-why-drivers-start-from-the-back.6GUzecVqR4rbSwNT79OGG3"
+     "url": "https://www.formula1.com/en/latest/article/explained-pit-lane-starts-why-drivers-start-from-the-back.6GUzecVqR4rbSwNT79OGG3",
+     "note": "2025年7月の解説：全車が通り過ぎたあとピット出口の緑の信号で出ること、理由（パルクフェルメの違反、修理、グリッドに着けない、PUの降格に合わせて選ぶ）、損と得、2025年ベルギーGPでハミルトンがピットレーンから7位に入った例"
     },
     {
      "name": "FIA",
      "title": "2026 Canadian Grand Prix Parc Fermé Issues（技術代表の報告）",
-     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_parc_ferme_issues.pdf"
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_parc_ferme_issues.pdf",
+     "note": "2026年カナダGP（5月23日）の技術代表の報告：23・10・87・77号車が承認なしに設定を変えてスプリントをピットレーンから出ること（B3.5.3）、23・10号車はSQ3の2時間後にカバーがかかっていなかったこと（B3.4.2 a）"
     },
     {
      "name": "GPFans",
      "title": "F1 chaos as FOUR drivers set to start in pitlane at Canadian Grand Prix",
-     "url": "https://www.gpfans.com/en/f1-news/1084340/f1-canadian-grand-prix-sprint-2026-pitlane-start-alex-albon-ollie-bearman-pierre-gasly-valtteri-bottas/"
-    },
-    {
-     "name": "FIA",
-     "title": "2026 F1 Regulations Section B Sporting (Issue 09, 2026-10-01)",
-     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+     "url": "https://www.gpfans.com/en/f1-news/1084340/f1-canadian-grand-prix-sprint-2026-pitlane-start-alex-albon-ollie-bearman-pierre-gasly-valtteri-bottas/",
+     "note": "2026年カナダGPの報道：ピットレーンスタートの4台がアルボン、ガスリー、ベアマン、ボッタスであることと、アルボンとガスリーのカバーの件（2026年5月23日）"
     },
     {
      "name": "formula1.com",
      "title": "Official grid: Who starts where for the 2026 Singapore Grand Prix（2026年10月11日）",
-     "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-singapore-grand-prix.4JVD7MzJPal9kXzVlrEXXo"
+     "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-singapore-grand-prix.4JVD7MzJPal9kXzVlrEXXo",
+     "note": "2026年シンガポールGP決勝のピットレーンスタート3台（ハジャー、アロンソ、ストロール）と、ハジャーが予選でタイムを残せなかったこと（2026年10月11日）"
     },
     {
      "name": "formula1.com",
      "title": "2026 Singapore Grand Prix – Starting Grid",
-     "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid"
+     "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid",
+     "note": "2026年シンガポールGPの公式スターティンググリッドの注記：3台ともパルクフェルメで車に手を加え、ハジャーとアロンソはPUの部品も追加したこと"
     },
     {
      "name": "formula1.com",
      "title": "2026 Singapore Grand Prix – Race Result",
-     "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/race-result"
+     "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/race-result",
+     "note": "2026年シンガポールGPの決勝結果：ハジャー10位で1ポイント、アロンソ16位、ストロールはリタイア（完走扱いにならず）"
     }
    ]
   },
