@@ -25,7 +25,8 @@ B = [list(b) for b in L['body']]
 # entrance near the top as well (owner's decision, 2 Oct 2026): right after the first paragraph, one line to the site with UTM
 _top = L.get('siteUrl') or url
 _camp = L.get('utmCampaign') or (_top.rstrip('/').split('/')[-1])
-_lead = L.get('topLead') or ('全文と表は F1 Grid Walk で' if '/deep/' in _top else '全文は F1 Grid Walk で')
+# topLead = what is only on the site, e.g. 「各国の報道の違いと、元の記事へのリンクはサイトで」 (site desk, owner's OK 23 Oct 2026)
+_lead = L.get('topLead') or ('表と出典の一覧はサイトで' if '/deep/' in _top else '元の記事へのリンクと出典の一覧はサイトで')
 _topurl = _top + ('&' if '?' in _top else '?') + f'utm_source=note&utm_campaign={_camp}'
 _i = next((n for n, b in enumerate(B) if b[0] == 'p'), -1)
 B.insert(_i + 1, ['link', (_lead + ' → ', _topurl)])

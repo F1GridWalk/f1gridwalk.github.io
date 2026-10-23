@@ -25,7 +25,8 @@ B = [list(b) for b in L['body']]
 # entrance near the top as well (owner's decision, 2 Oct 2026): right after the first paragraph, one line to the site with UTM
 _top = L.get('siteUrl') or url
 _camp = L.get('utmCampaign') or (_top.rstrip('/').split('/')[-1])
-_lead = L.get('topLead') or ('全文と表は F1 Grid Walk で' if '/deep/' in _top else '全文は F1 Grid Walk で')
+# topLead = what is only on the site, e.g. 「各国の報道の違いと、元の記事へのリンクはサイトで」 (site desk, owner's OK 23 Oct 2026)
+_lead = L.get('topLead') or ('表と出典の一覧はサイトで' if '/deep/' in _top else '元の記事へのリンクと出典の一覧はサイトで')
 _topurl = _top + ('&' if '?' in _top else '?') + f'utm_source=note&utm_campaign={_camp}'
 _i = next((n for n, b in enumerate(B) if b[0] == 'p'), -1)
 B.insert(_i + 1, ['link', (_lead + ' → ', _topurl)])
@@ -82,6 +83,11 @@ if L.get('eye'):
         L['eye']['foot'] = '・'.join(regions[:4]) + 'の記事から'
     h = eye_layouts.render(L, fl, 670, fcss)
     h2 = eye_layouts.render(L, fl, 720, fcss)
+# OFF GRID: band/pillar in the OFF GRID colour (teal #2F6B66, white text) so X shows it apart from WORLD GRID (site desk, owner's OK 23 Oct 2026)
+if L.get('series') == 'offgrid':
+    _og = '.pl .pil,.p,.tag,.bd .band,.half.r{background:#2F6B66!important;color:#FFF!important}.half.r em{color:#FFF!important}'
+    h = h.replace('</style>', _og + '</style>', 1)
+    h2 = h2.replace('</style>', _og + '</style>', 1)
 p1 = os.path.join(out, f'_eye_{P}.html'); open(p1, 'w', encoding='utf-8').write(h)
 p2 = os.path.join(out, f'_eyex_{P}.html'); open(p2, 'w', encoding='utf-8').write(h2)
 js = f"""const {{ chromium }} = require('playwright');
