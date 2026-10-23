@@ -1,0 +1,323 @@
+{
+ "slug": "bono-leave-that-to-me",
+ "gp": "アメリカGP",
+ "title": "「任せてくれ」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "ハミルトンの無線の向こうに12年いた男は、いま20歳のアントネッリの隣に座っている。「ルイスとは、まるで違う。彼が何を知らないのかが、僕には分からなかった」。ウォルフが無線に出ようとしたとき、彼は止めた。「それは僕に任せてくれ」。今週末、8つ目のタイトルが来るかもしれない、ボノの話。",
+ "checked": "2026-10-23",
+ "checkedNote": "GPfans（英語・オランダ語）、PlanetF1、Crash.net、RacingNews365、Formula1.com、Motorsport-Total.com、Wikipedia（英語）の原文を10月23日に確認しました。ボノ、アントネッリ、ウォルフ、バトン、ハミルトンの言葉は、英語とオランダ語から編集部が訳しました。",
+ "draft": true,
+ "common": [
+  "ピーター・ボニントン（ボノ）は1975年生まれ。2004年ジョーダン、2009年ブラウンGPでバトンのパフォーマンスエンジニアとしてタイトル、2011年9月からシューマッハのレースエンジニア、2013〜2024年ハミルトンのレースエンジニア（7つのうち6つのタイトル）。",
+  "2025年からアントネッリのレースエンジニア。2025年はアントネッリ150点、ラッセル319点。",
+  "2026年：上海で最年少ポールと初優勝、マイアミのトラックリミットのやりとり、ザントフォールトの「集中しろ、ルイ……集中しろ、キミ」。",
+  "アメリカGPで、アントネッリが勝ってラッセルが8位以内に入れなければタイトル決定。ボノにとっては8つ目。"
+ ],
+ "outlets": [],
+ "sourceItems": [
+  {
+   "t": "「集中しろ、ルイ……集中しろ、キミ」",
+   "w": "GPfans（オランダ語、8月27日）。見出しは「Oké Lew...」、本文は「Gewoon focussen Lew... Gewoon focussen Kimi」。編集部が訳した。"
+  },
+  {
+   "t": "「ルイスとは、まるで違う」「何を知らないのかが分からなかった」「あと0.1秒か0.2秒」",
+   "w": "PlanetF1（3月15日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「もう1回やったら、僕が無線に出る」「それは僕に任せてくれ」",
+   "w": "Crash.net（5月20日、英語。ウォルフが RacingNews365 に話したやりとり）を編集部が訳した。"
+  },
+  {
+   "t": "ウォルフの「静かでバランスのとれた」「慌てない、浮かれない」、バトンの言葉、アントネッリの「ハグが好き」「幸運」",
+   "w": "RacingNews365、PlanetF1、GPfans、Formula1.com（英語）を編集部が訳した。"
+  },
+  {
+   "t": "ハミルトンの「あの瞬間に、本当に、はっきり分かった」",
+   "w": "Crash.net（2024年12月8日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ボノの肩書き",
+   "t": "Wikipedia の本文は「トラックサイド・パフォーマンスの責任者」、情報欄は「レースエンジニアリングの責任者」。本文では肩書きを書かず、アントネッリのレースエンジニアとした。"
+  },
+  {
+   "k": "ボノの2025年",
+   "t": "Crash.net は「2025年を前にフェラーリへ移った」と書くが、フェラーリへ移ったのはハミルトンで、ボノはメルセデスに残った。本文は他の資料に合わせた。"
+  }
+ ],
+ "unknownsFillable": [
+  "アメリカGPの結果（タイトルが決まったかどうか）。"
+ ],
+ "unknownsLimits": [
+  "ザントフォールトの無線の正確な原語（オランダ語の記事の訳で確認。英語の音声は確かめていない）。",
+  "ボノ本人がアントネッリとのハグやいたずらをどう思っているか（本人の言葉は「またやりやがった」だけ）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "ハミルトンの12年のあと、20歳の隣に座ったボノは、何を変えたか？",
+  "rows": [
+   {
+    "k": "伝え方",
+    "t": "ハミルトンは「言わなくても分かる人」。アントネッリとは「何を知らないのかが分からない」から始めた。"
+   },
+   {
+    "k": "守り方",
+    "t": "マイアミで、代表が無線に出るのを止めた。「それは僕に任せてくれ」。ウォルフはそれを「成功の一部」と言う。"
+   },
+   {
+    "k": "静けさ",
+    "t": "ウォルフの言葉では「慌てない、浮かれない」がアントネッリに移った。2025年の「プレッシャーと悲しみ」は消えた。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "レースエンジニアは、何をする人？",
+   "rules": [
+    "race-engineer",
+    "team-radio"
+   ],
+   "links": [
+    "/topics/verstappen-lambiase-singapore-radio/",
+    "/topics/jos-verstappen-setup/"
+   ]
+  },
+  {
+   "q": "チャンピオンは、いつ決まる？",
+   "rules": [
+    "world-champion",
+    "title-decider"
+   ],
+   "links": [
+    "/topics/antonelli-below-the-limit/",
+    "/deep/champion-when/"
+   ]
+  },
+  {
+   "q": "トラックリミットとは？",
+   "rules": [
+    "track-limits"
+   ]
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-10-21T18:28:00+09:00",
+   "t": "GPfans がアントネッリの「ハグ」の話を掲載"
+  },
+  {
+   "at": "2026-10-23T16:00:00+09:00",
+   "t": "原文を確認し、STORYを下書き"
+  }
+ ],
+ "answer": "ボノことピーター・ボニントンは、2013年から2024年までハミルトンのレースエンジニアで、7つのタイトルのうち6つを一緒に取った。2025年から18歳のアントネッリの隣に座り、「ルイスとは、まるで違う。彼が何を知らないのかが分からなかった」と言う。2026年、上海の初優勝、マイアミで代表の無線を止めた「それは僕に任せてくれ」。ウォルフは「成功の一部」と言う。アメリカGPでアントネッリが王者になれば、ボノにとって8つ目のタイトルになる。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "8月のザントフォールト。レースの半ば、メルセデスの無線に、落ち着いた声が入った。「集中しろ、ルイ……集中しろ、キミ」。",
+  "body": [
+   [
+    "h",
+    "「集中しろ、ルイ……」"
+   ],
+   [
+    "p",
+    "8月のザントフォールト。レースの半ば、メルセデスの無線に、落ち着いた声が入った。"
+   ],
+   [
+    "p",
+    "「集中しろ、ルイ……集中しろ、キミ」。"
+   ],
+   [
+    "p",
+    "ピーター・ボニントン。パドックでは、ボノと呼ばれる。12年間、ルイス・ハミルトンの無線の向こうにいた男だ。いまはその声を、20歳になったばかりのキミ・アントネッリに向けている。一瞬、名前を間違えた。すぐに言い直した。"
+   ],
+   [
+    "h",
+    "ハンマータイム"
+   ],
+   [
+    "p",
+    "ボノは1975年生まれ。2004年に小さなチームのデータ担当としてF1に入り、2009年、ブラウンGPでジェンソン・バトンのチームにいて、タイトルを取った。このときはまだ、無線の声ではなく、マシンの調整を担当するエンジニアだった。2011年から、復帰したミハエル・シューマッハのレースエンジニアになり、無線の声になった。"
+   ],
+   [
+    "p",
+    "そして2013年、シューマッハの後任として来たハミルトンの隣に座った。それから12年。ハミルトンの7つのタイトルのうち、6つはボノの無線で取ったものだ。"
+   ],
+   [
+    "p",
+    "レースの終盤、攻めるときに、ボノはいつも同じ言葉を言った。「ハンマータイムだ」。"
+   ],
+   [
+    "p",
+    "2024年12月、アブダビ。メルセデスでの最後のレースで、ハミルトンは最終ラップにチームメイトを外から抜いて4位に入った。その追い上げの途中で、無線に、最後のハンマータイムが流れた。ハミルトンは、聞いた瞬間に、これが最後だと気づいたという。「あの瞬間に、本当に、はっきり分かった」。"
+   ],
+   [
+    "h",
+    "何を知らないかが、分からない"
+   ],
+   [
+    "p",
+    "2025年、ハミルトンはフェラーリへ行き、ボノはメルセデスに残った。隣に来たのは、18歳のアントネッリだった。"
+   ],
+   [
+    "p",
+    "アントネッリは言った。「ボノのような人がいるのは、すごいことです。F1の歴史でいちばんのドライバー2人と働いてきた人ですから。本当に幸運だと思います」。"
+   ],
+   [
+    "p",
+    "ボノの側は、戸惑っていた。あとで、こう話している。「ルイスとは、まるで違う。ルイスといるときは、彼が何を考えているか分かった。言わなくても分かる人だった」。「キミと始めたときは、彼が何を知らないのかが、僕には分からなかった」。"
+   ],
+   [
+    "p",
+    "1年目のアントネッリは150点。チームメイトのラッセルは319点で、2倍以上の差がついた。ミスも、リタイアも多かった。トト・ウォルフ代表は、その年のアントネッリを「プレッシャーがあって、落ち込んでいた」と振り返る。"
+   ],
+   [
+    "h",
+    "「任せてくれ」"
+   ],
+   [
+    "p",
+    "2026年、マシンが変わり、メルセデスが最速になった。3月の上海で、アントネッリは史上最年少でポールを取り、初めて勝った。ボノは、シューマッハやハミルトンと働いて、速さの上限を知ったつもりでいた。「でも、そこで気づくんだ。いや、もう一段あると。あと0.1秒か0.2秒。キミはそれを持っている」。"
+   ],
+   [
+    "p",
+    "5月のマイアミ。アントネッリは、トラックリミットの違反を2回していた。あと1回で罰になる。ウォルフは、ピットウォールから無線に出ようとした。「もう1回やったら、僕が無線に出る」。ボノが止めた。「いや、いい。それは僕に任せてくれ」。"
+   ],
+   [
+    "p",
+    "ボノが何をどう伝えたかは、公開されていない。分かっているのは、アントネッリが3つ目の違反をせず、そのまま勝ったことだ。それは3連勝目で、チームメイトのラッセルとの差が開きはじめたレースでもあった。ウォルフは言う。「彼には、キミとどうつながるか、どう扱うかが分かっている」。"
+   ],
+   [
+    "h",
+    "静かな声"
+   ],
+   [
+    "p",
+    "夏、ウォルフはボノのことをこう話した。「キミにいちばん近いエンジニアだ。準備も、振り返りも、全部ボノとやっている。とても静かで、バランスのとれたエンジニアで、それがキミにも移った。うまくいかないときに慌てないし、うまくいったときに浮かれもしない」。"
+   ],
+   [
+    "p",
+    "2009年にボノと一緒にタイトルを取ったバトンの見方は、こうだ。「エンジニアとドライバーの関係がどれだけ大事か、みんな分かっていない。ボノはキミにとって、本当にいい影響だ。ルイスとボノがそうだったように」。"
+   ],
+   [
+    "p",
+    "アントネッリは、いい結果のあと、ボノを抱きしめに行く。「イタリア人なので、ハグが好きなんです。去年は、ボノはときどき、すごく固くなっていた。でも今年は、楽しんでいる。たぶん認めないと思うけど」。"
+   ],
+   [
+    "p",
+    "いたずらもする。5月には、ボノの社員証を使えなくした。ドアの前で止められたボノは、言った。「あのちびが、またやりやがった」。"
+   ],
+   [
+    "h",
+    "8つ目"
+   ],
+   [
+    "p",
+    "バトンで1つ、ハミルトンで6つ。ボノが隣で取ったタイトルは、7つある。"
+   ],
+   [
+    "p",
+    "アントネッリは、春に5連勝し、秋までに8勝した。去年2倍の差をつけられたラッセルに、いまは102点の差をつけている。今週末のオースティン。アントネッリが勝ち、ラッセルが8位以内に入れなければ、史上最年少の王者が決まる。ボノにとっては、8つ目になる。ハミルトンとは12年かけて6つ。20歳の少年とは、2年目で。"
+   ],
+   [
+    "p",
+    "ハンマータイムは、ハミルトンの言葉だった。何を知らないのかも分からなかった相手に、ボノは2年かけて、言葉を合わせてきた。日曜日、無線に静かな声が入る。「集中しろ、キミ」。今度は、間違えない。"
+   ]
+  ],
+  "terms": [
+   [
+    "レースエンジニア",
+    "race-engineer"
+   ],
+   [
+    "無線",
+    "team-radio"
+   ],
+   [
+    "トラックリミット",
+    "track-limits"
+   ],
+   [
+    "ピットウォール",
+    "pit-wall"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "GPfans（オランダ語）",
+    "title": "'Bono' vergeet tijdens Dutch GP even wie hij moet aanspreken: 'Oké Lew...'",
+    "url": "https://www.gpfans.com/nl/f1-nieuws/1089592/bono-gaat-in-de-fout-tijdens-dutch-gp-ok-lew-ok-kimi/",
+    "note": "2026年8月27日。ザントフォールトの無線「集中しろ、ルイ……集中しろ、キミ」（オランダ語から編集部が訳した）。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Pete Bonnington makes Schumacher, Hamilton comparison after Antonelli win",
+    "url": "https://www.planetf1.com/news/kimi-antonelli-win-bonnington-schumacher-hamilton-extra-tenth",
+    "note": "2026年3月15日。上海の初優勝のあとのボノの言葉（「まるで違う」「何を知らないのかが分からなかった」「あと0.1秒か0.2秒」）。英語から編集部が訳した。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Toto Wolff points to unsung Mercedes mentor behind Kimi Antonelli's breakthrough",
+    "url": "https://www.crash.net/f1/news/1095682/1/toto-wolff-points-unsung-mercedes-mentor-behind-kimi-antonelli-breakthrough",
+    "note": "2026年5月20日。マイアミのトラックリミットのやりとり（「もう1回やったら」「それは僕に任せてくれ」）、「成功の一部」。英語から編集部が訳した。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Toto Wolff heralds key Mercedes figure over Kimi Antonelli transformation",
+    "url": "https://racingnews365.com/toto-wolff-heralds-key-mercedes-figure-over-kimi-antonelli-transformation",
+    "note": "2026年8月15日。「いちばん近いエンジニア」「静かでバランスのとれた」「慌てない、浮かれない」「プレッシャーがあって、落ち込んでいた」。英語から編集部が訳した。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Jenson Button identifies key factor behind Kimi Antonelli rise",
+    "url": "https://www.planetf1.com/news/button-praises-bonnington-role-in-antonelli-mercedes-rise",
+    "note": "2026年7月10日。バトンの言葉。英語から編集部が訳した。"
+   },
+   {
+    "name": "GPfans",
+    "title": "Hamilton, Antonelli and Bono: the hugs that changed at Mercedes",
+    "url": "https://www.gpfans.com/en/f1-news/1091775/f1-lewis-hamilton-kimi-antonelli-peter-bono-bonnington-changed-hugs-mercedes/",
+    "note": "2026年10月21日。アントネッリの「ハグが好き」「去年は固くなっていた」（The Athletic の引用）。英語から編集部が訳した。"
+   },
+   {
+    "name": "GPfans",
+    "title": "F1 star Kimi Antonelli leaves Bono livid after prank: 'The little s*** has done it again!'",
+    "url": "https://www.gpfans.com/en/f1-news/1083840/mercedes-f1-kimi-antonelli-race-engineer-prank-peter-bonnington/",
+    "note": "2026年5月16日。社員証のいたずら。英語から編集部が訳した。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'I feel really lucky' – Antonelli expands on what it's like working with race engineer 'Bono'",
+    "url": "https://www.formula1.com/en/latest/article/i-feel-really-lucky-antonelli-expands-on-what-its-like-working-with-race.k1diHZ3DTDuvgoIlgxG0i",
+    "note": "2025年3月31日。「すごいこと」「いちばんのドライバー2人」「本当に幸運」。英語から編集部が訳した。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Lewis Hamilton's tear-jerking reaction to final 'Hammer time' radio call",
+    "url": "https://crash.net/f1/news/1061455/1/lewis-hamiltons-emotional-reaction-final-hammer-time-radio-call",
+    "note": "2024年12月8日。アブダビの最後のハンマータイム、最終ラップの4位、「はっきり分かった」。英語から編集部が訳した。"
+   },
+   {
+    "name": "Wikipedia（英語）",
+    "title": "Peter Bonnington",
+    "url": "https://en.wikipedia.org/wiki/Peter_Bonnington",
+    "note": "1975年生まれ、2004年ジョーダン、バトンの2009年、シューマッハ（2011年9月からレースエンジニア）、ハミルトン2013〜2024年で6つのタイトル。"
+   },
+   {
+    "name": "Motorsport-Total.com",
+    "title": "Nico Rosberg: Kimi Antonelli in diesem Jahr auf Michael-Schumacher-Level",
+    "url": "https://www.motorsport-total.com/formel-1/news/nico-rosberg-kimi-antonelli-in-diesem-jahr-auf-michael-schumacher-level-26101510",
+    "note": "2026年10月15日。2025年の150点対319点。"
+   },
+   {
+    "name": "Motorsport-Total.com",
+    "title": "Austin: Das muss jeder Titelkandidat tun, um im WM-Rennen zu bleiben",
+    "url": "https://www.motorsport-total.com/formel-1/news/austin-das-muss-jeder-titelkandidat-tun-um-im-wm-rennen-zu-bleiben-26101505",
+    "note": "2026年10月15日。オースティンで決まる条件。"
+   }
+  ]
+ }
+}
