@@ -3058,6 +3058,45 @@ document.addEventListener('click',function(ev){
   window.addEventListener('appinstalled', function(){ gc('homescreen/installed', 'ホーム画面に追加された'); });
 })();
 </script>
+<script>
+/* how far down the top page readers scroll, and whether they stay 30s (each once per visit; no personal data) */
+(function(){
+  if (location.pathname !== '/' && location.pathname !== '/index.html') return;
+  function gc(path, title){
+    var n = 0;
+    (function tryCount(){
+      if (window.goatcounter && window.goatcounter.count){ try { window.goatcounter.count({ path:path, title:title, event:true }); } catch(e){} return; }
+      if (++n < 20) setTimeout(tryCount, 500);
+    })();
+  }
+  var marks = [
+    ['#feed .card', 'scroll/top/news', 'トップ：ニュース一覧の始めまで見えた'],
+    ['#feed .card:nth-of-type(5)', 'scroll/top/news-mid', 'トップ：ニュース一覧の5本目まで見えた'],
+    ['.feed-ways', 'scroll/top/news-end', 'トップ：ニュース一覧の終わりまで見えた'],
+    ['main section.info', 'scroll/top/bottom', 'トップ：いちばん下まで見えた']
+  ];
+  var busy = false;
+  function check(){
+    busy = false;
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    marks = marks.filter(function(m){
+      var el = document.querySelector(m[0]);
+      if (!el || el.offsetParent === null) return true;
+      if (el.getBoundingClientRect().top < h * 0.8){ gc(m[1], m[2]); return false; }
+      return true;
+    });
+    if (!marks.length) window.removeEventListener('scroll', onScroll);
+  }
+  function onScroll(){ if (!busy){ busy = true; (window.requestAnimationFrame || setTimeout)(check); } }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  /* 30 seconds of the page actually being on screen */
+  var seen = 0, done = false;
+  var t = setInterval(function(){
+    if (document.visibilityState === 'visible') seen++;
+    if (seen >= 30 && !done){ done = true; clearInterval(t); gc('stay/top/30s', 'トップ：30秒以上見ていた'); }
+  }, 1000);
+})();
+</script>
 
 <script>
 (function(){
