@@ -10,3 +10,13 @@ https://f1gridwalk.github.io/lens/redbull-sim-customers-20261023/?utm_source=x&u
 ③ 毎日の海外F1ニュースは、日本語でこちらにまとめています。
 https://f1gridwalk.github.io/
 
+## ガスリー「その夜はNASCARドライバー」 2015年のアメリカで
+
+① 2015年のアメリカで「F1のリザーブ」と説明しようとしたガスリー。数分後には「その夜はNASCARドライバー」と言うことにした――。今のオースティンの盛り上がりとあわせて、noteにまとめました #F1jp #F1こぼれ話
+
+② ほかの海外記事も読みたい方は、F1 Grid Walkへ。
+https://f1gridwalk.github.io/lens/gasly-nascar-driver-20261023/?utm_source=x&utm_campaign=gasly-nascar-driver-20261023
+
+③ 毎日の海外F1ニュースは、日本語でこちらにまとめています。
+https://f1gridwalk.github.io/
+
