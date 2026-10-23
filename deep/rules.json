@@ -405,32 +405,139 @@
    "term": "スーパークリッピング",
    "cat": "パワーユニット",
    "aliases": [
-    "クリッピング",
     "super clipping",
+    "スーパークリップ",
+    "superclip",
+    "super-clipping",
     "すーぱーくりっぴんぐ"
    ],
    "words": [
     "最高速",
-    "電気切れ",
     "失速",
     "回生",
-    "バッテリー"
+    "バッテリー",
+    "速度差",
+    "クリッピングとの違い"
    ],
    "short": "アクセル全開のまま、電気モーターが発電に回ること。電気はたまるが、そのぶん最高速が落ちる。",
    "body": [
-    "2026年のパワーユニットは電気の比重が大きく、長い直線では電気が足りなくなりやすい。そこで直線の終わりや速いコーナーで、後輪に行くはずの力の一部をMGU-Kで電気に変える。",
-    "全開のままなので翼は空気抵抗の少ない状態を保てるが、最高速は落ちる。どこで、どれだけクリッピングするかが、2026年の速さを分けるポイントの一つ。"
+    "2026年のパワーユニットは電気の比重が大きく、長い直線では電気が足りなくなりやすい。そこで直線の終わりや速いコーナーで、アクセル全開のまま、後輪に行くはずの力の一部をMGU-Kで電気に変えて電池にためる。これがスーパークリッピングだ。全開のままなので翼は空気抵抗の少ない状態を保てるが、最高速は落ちる。どこで、どれだけためるかが、2026年の速さを分けるポイントの一つになっている。",
+    "## クリッピングとの違い",
+    "似た言葉のクリッピングは、直線の途中で電気が尽きて、加速が鈍ること。電気が足りなくて起きる「結果」だ。スーパークリッピングは、電気をためるためにわざと行う「手段」で、The Raceの説明では、後輪を押していたMGU-Kを、逆に発電機として回す。ドライバーが操作するのではなく、ECUが自動で行う（F1公式）。アクセルを早めに戻して電気をためるリフト＆コーストとは、翼の動きも違う。アクセルを戻すとアクティブエアロは閉じるが、スーパークリッピングでは開いたままだ（F1公式）。",
+    "## 何が問題なのか",
+    "まず、最高速が落ちる。The Raceによると、開幕前のバーレーンのテストでは、いちばん速い12コーナーで、速度が時速267kmから233kmに下がった。次に、安全だ。前の車が全開区間で減速すると、後ろの車との速度差が大きくなる。予想外の減速による接触のおそれは、開幕前から指摘されていた（PlanetF1）。3月の日本GPの決勝では、ベアマン（ハース）が、スプーンカーブへ向かう全開区間で減速していたコラピントに追いつき、芝生に出てスピンし、クラッシュした。ベアマンは速度差を「50km/h」と話し、直線の終わりで電気をためるために車が減速する2026年の規則のせいだとした（Sky Sports）。9月のアゼルバイジャンGPでは、ボッタス（キャデラック）の車の制御が、走った距離から位置を計算していたため、1コーナーでコースを外れた分だけ位置がずれ、15コーナーの手前でスーパークリッピングが早く強くかかったと報じられた。ブレーキの地点では、ふだんより時速60kmほど遅かったという（Motorsport-Total.com）。",
+    "## マイアミGPからの変更",
+    "FIAは4月20日、5月のマイアミGPからの変更を発表した。スーパークリッピングの最大出力を250kWから350kWに上げ、決勝にも使う。充電にかかる時間を短くし、ドライバーの電気の管理の負担を減らすためだ。3月の日本GPのあと、マクラーレンのステラ代表は、スーパークリッピングの出力を上げる理由を、ドライバーにリフト＆コーストをさせないためだと話していた。リフト＆コーストのほうが、後ろの車との速度差がもっと大きくなるからだという（Sky Sports）。予選では、1周の回生の上限を8MJから7MJに下げるとした。ためすぎを減らし、より続けて全開で走れるようにするのが狙いで、1周のスーパークリッピングを長くても2〜4秒ほどにすることを目指した。ただしFIAは後に、一律の引き下げではなく、大会によって7MJまで下げられるようにしたものだと説明した。マイアミはスーパークリッピングが1周2秒ほどの見込みで、予選は8MJのままだった（PlanetF1）。ハースの車両エンジニアリング責任者は、回生を減らすと使える電気も減り、クリッピングが増えるおそれがあるとして、「別の問題を直すために、もっと問題を持ち込む」ようなものだと話した（The Race）。",
+    "## コースによる違い",
+    "どれだけスーパークリッピングをするかは、コースと、FIAが大会ごとに決める回生の上限で変わる。9月のイタリアGP（モンツァ）では、FIAが今季でいちばん低い1周の回生の上限を決め、スーパークリッピングを減らそうとした（RACER）。The Raceは、上限が5MJなので、スーパークリッピングに頼る場面は多くないと書いた。ピアストリ（マクラーレン）は「上限がもっと高ければ、どこでもスーパークリッピングをして、直線の終わりごとにおそらく時速30〜40kmを失っていた」と話している。10月のセパンについては、回生の機会が多く、本当のスーパークリッピングは要らないかもしれないと、イタリアのFormula1.itが事前に分析していた。直線の最後の100〜300mで、電気の助けが少しずつ切れていく見通しだという。シンガポールのあとに複数のドライバーが口にした電気の不調はDEEP GRID #10「シンガポールで、電気はなぜ『迷子』になったのか」、アメリカGPのCOTAでの電気の配分はDEEP GRID #18「アメリカGPのCOTAでは、なぜ電気のやりくりが難しいのか」でくわしく書いた（下の実例から読める）。"
    ],
    "examples": [
     {
+     "t": "DEEP GRID #10 シンガポールで、電気はなぜ「迷子」になったのか",
+     "u": "/deep/energy-singapore/"
+    },
+    {
+     "t": "DEEP GRID #18 アメリカGPのCOTAでは、なぜ電気のやりくりが難しいのか",
+     "u": "/deep/cota-energy/"
+    },
+    {
      "t": "DEEP GRID #01 なぜセパンは現代F1にとって「未知」なのか",
      "u": "/deep/sepang-unknown/"
+    },
+    {
+     "t": "ボッタスのバクーでのクラッシュは、1コーナーのミスで位置の計算がずれ、15コーナー手前で想定より早く強いスーパークリッピングが起きたためと報じられた。",
+     "u": "/news/de-motorsport-total-bottas-verbremser-ecu/"
+    },
+    {
+     "t": "セパンはバクーより回生の機会が多く、直線の終わりではMGU-Kの出力が100〜300mかけて徐々に落ちる見通しと報じられた。",
+     "u": "/news/it-formula1-sepang-brakes-energy/"
     }
    ],
    "see": [
+    "clipping",
+    "harvesting",
+    "lift-and-coast",
+    "mgu-k",
     "active-aero",
-    "overtake-mode"
-   ]
+    "overtake-mode",
+    "energy-management",
+    "circuit-monza"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "Refinements to 2026 FIA Formula 1 regulations agreed by all stakeholders（2026年4月20日）",
+     "url": "https://api.fia.com/news/refinements-2026-fia-formula-1-regulations-agreed-all-stakeholders",
+     "note": "マイアミからの変更：スーパークリッピングの最大出力250kW→350kW（充電の時間と負担を減らす、決勝にも適用）、予選の回生上限8MJ→7MJ（ためすぎを減らし全開で走る、スーパークリッピングを1周2〜4秒ほどに）"
+    },
+    {
+     "name": "F1Technical",
+     "title": "Things to know about the refinements to the 2026 F1 regulations（2026年4月）",
+     "url": "https://www.f1technical.net/news/28443",
+     "note": "FIA発表と同じ数字（250→350kW、2〜4秒、8→7MJ、決勝にも適用）の確認"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA clarifies no Miami Grand Prix recharge reduction（2026年5月1日）",
+     "url": "https://www.planetf1.com/news/fia-miami-gp-energy-recharge-rules-no-reduction-update-clarification",
+     "note": "7MJは一律の引き下げではなく大会によって下げられる仕組みで、マイアミはスーパークリッピングが1周2秒ほどの見込みのため予選8MJのままだったこと"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: The key terms for Formula 1's new-for-2026 rules（2025年12月17日）",
+     "url": "https://www.formula1.com/en/latest/article/explained-the-new-key-terms-for-formula-1s-new-for-2026-rules.3T5BU6TC9quGcIpGzoWkY0",
+     "note": "スーパークリッピングは直線の終わりの全開での回生で、ECUが自動で行うこと、全開なのでアクティブエアロは開いたままで、アクセルを戻すと閉じること"
+    },
+    {
+     "name": "The Race",
+     "title": "A key 2026 battleground teams are scrambling to exploit（2026年2月25日）",
+     "url": "https://www.the-race.com/formula-1/super-clipping-how-it-works-why-controversial-key-f1-2026/",
+     "note": "直線の終わりや速いコーナーで全開のまま回生すること、翼はストレートモードのまま（リフト＆コーストではコーナーモード）、バーレーンで12コーナーの速度が267km/hから233km/hに落ちた例"
+    },
+    {
+     "name": "The Race",
+     "title": "Why key 2026 F1 rules fix will create another problem（2026年4月20日）",
+     "url": "https://www.the-race.com/formula-1/why-key-2026-f1-rules-fix-will-create-another-problem/",
+     "note": "MGU-Kを逆に発電機として回すという説明と、ハースの車両エンジニアリング責任者の「別の問題を直すために、もっと問題を持ち込む」という懸念"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 2026 explained: why ‘super clipping’ could reshape racing（2026年2月21日）",
+     "url": "https://www.planetf1.com/features/f1-2026-explained-why-super-clipping-could-reshape-racing",
+     "note": "前の車が予想外に減速して接触するおそれが開幕前から指摘されていたこと"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Japanese GP: FIA to assess F1 2026 regulations after Oliver Bearman crash at Suzuka highlights closing speeds issue（2026年3月29日）",
+     "url": "https://www.skysports.com/f1/news/12040/13525701/japanese-gp-fia-to-assess-f1-2026-regulations-after-oliver-bearman-crash-at-suzuka-highlights-closing-speeds-issue",
+     "note": "鈴鹿のベアマンのクラッシュ（スプーンへ向かう全開区間、速度差50km/h、ベアマンは電気をためるために減速する2026年の規則のせいとした）と、ステラ代表の「リフト＆コーストをさせないため」という説明"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "Technik-Rätsel gelöst: Ein Verbremser schaltete Bottas' Steuergerät aus（2026年9月30日）",
+     "url": "https://www.motorsport-total.com/formel-1/news/technik-raetsel-geloest-ein-verbremser-schaltete-bottas-steuergeraet-aus-26093012",
+     "note": "バクーのボッタスで、走行距離から位置を計算する制御がずれ、15コーナー手前でスーパークリッピングが早く強くかかり、ブレーキ地点で約60km/h遅かったという報道"
+    },
+    {
+     "name": "RACER",
+     "title": "Prepare for a very different F1 race at Monza（2026年9月3日）",
+     "url": "https://racer.com/2026/09/03/prepare-for-a-very-different-f1-race-at-monza",
+     "note": "モンツァでFIAが今季いちばん低い回生の上限を決め、スーパークリッピングを減らそうとしたこと"
+    },
+    {
+     "name": "The Race",
+     "title": "Slower than Hungary? Why F1 drivers think Italian GP will be 'weird'（2026年9月4日）",
+     "url": "https://www.the-race.com/formula-1/slower-than-hungary-why-f1-drivers-think-italian-gp-will-be-weird/",
+     "note": "モンツァの回生上限5MJでスーパークリッピングに頼る場面は多くないこと、ピアストリの「上限が高ければ直線の終わりごとに30〜40km/h失う」という発言"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "GP Bahrain - Freni ed energia: Sepang sfida recupero e deployment（2026年10月1日）",
+     "url": "https://www.formula1.it/news/32904/1/gp-bahrain-freni-ed-energia-sepang-sfida-recupero-e-deployment",
+     "note": "セパンは本当のスーパークリッピングが要らないかもしれず、直線の最後の100〜300mで電気の助けが徐々に切れるという事前分析"
+    }
+   ],
+   "checked": "2026-10-23"
   },
   {
    "id": "active-aero",
@@ -1317,12 +1424,21 @@
    "short": "実際のセーフティカーを出さず、全車に決められた速さまで落とさせる減速の指示。",
    "body": [
     "事故車の撤去などで、ダブルイエローが必要になる危険があるが、セーフティカーを出すほどではない。そういうときに使う。2014年の日本GPでの事故を受けて、2015年に導入された。始まると、FIAのライトパネルに「VSC」が出て、全チームに「VSC DEPLOYED」のメッセージが送られる。追い越しは、ピット出入口などの例外を除いてできない。",
-    "ドライバーは、コースを分けたセクターごとに、FIAのECU（電子制御ユニット）が決めた最低タイムより遅く走らなければならない。ダッシュボードには、その目標との差（デルタ）が出る。セーフティカーと違って隊列はできず、車間は保たれる。守れなかった車には罰が出る。今季のカナダGPでは、ボルトレートがデルタを超えたとして5秒加算を受けた。",
+    "## セーフティカーとの違い",
+    "いちばんの違いは、隊列ができるかどうかだ。セーフティカーのときは、全車が実際の車の後ろに一列に並ぶ。前の車から10車身より離れてはいけないので、それまでの差は縮まる。VSCでは、先頭を走る車はいない。各車がその場で速さを落とし、決められた最低タイムを守って走るので、車と車の間はおおむねそのまま保たれる（F1公式の用語集）。",
+    "## 最低タイムと終わり方",
+    "ドライバーは、コースを分けたセクターごとに、FIAのECU（電子制御ユニット）が決めた最低タイムより遅く走らなければならない。走りながら、その目標との差（デルタ）が知らされる。守れなかった車には罰が出る。今季のカナダGPでは、ボルトレートがデルタを超えたとして5秒加算を受けた。",
     "終わるときは「VSC ENDING」のメッセージが送られ、その10〜15秒後にライトパネルのVSCが緑に変わって、通常のレースに戻る。",
-    "VSC中でもピットインはできる。ピット入口を過ぎる前にVSCが出た車は、ピットストップの損失が小さくなる。今季のスペインGP（マドリード）では、トップのノリスがVSC導入の直前にピット入口を過ぎていて、先にピットに入れなかった。後ろのアントネッリやフェルスタッペンはVSC中に入り、ノリスは3位になった。ノリスは不公平だと不満を述べ、マクラーレンのステラ代表はFIAの諮問委員会で議題にする考えを示した。確認できた範囲では、ルールはまだ変わっていない。"
+    "## VSC中のピットストップ",
+    "VSC中でもピットインはできる。ピット入口を過ぎる前にVSCが出た車は、ピットストップの損失が小さくなる。今季のスペインGP（マドリード）では、トップのノリスがVSC導入の直前にピット入口を過ぎていて、先にピットに入れなかった。後ろのアントネッリやフェルスタッペンはVSC中に入り、ノリスは3位になった。ノリスは不公平だと不満を述べ、マクラーレンのステラ代表は、FIAの諮問委員会で議題になり得ると話した。F1 Oversteerは9月22日、英BBCの報道として、VSCの規則の見直しがFIAの諮問委員会とF1コミッションで話し合われたが、意見はまとまらず、すぐに規則が変わる見込みはないと伝えた。",
+    "損失が小さくなるのは、コースに残った車が遅いペースで走っているあいだに、ピットを済ませられるからだ。それでも、抜きにくいコースで順位を守りたいときや、もう一度VSCが出るのを待つときは、入らずにコースに残る（→ステイアウト）のが正しい時もある。その分かれ目は、DEEP GRID #11「VSCで『入らない』のが正しい時はあるのか」でくわしく書いた（下の実例から読める）。"
    ],
-   "rule": "スポーティングレギュレーション B5.12",
+   "rule": "スポーティングレギュレーション B5.12（バーチャルセーフティカー）、B5.13（セーフティカー）",
    "examples": [
+    {
+     "t": "DEEP GRID #11 VSCで「入らない」のが正しい時はあるのか",
+     "u": "/deep/vsc-stay-out/"
+    },
     {
      "t": "バクー終盤のボッタスのクラッシュで、VSCが出なかった理由をFIAが説明",
      "u": "/news/ja-f1are-vsc-bottas-explained/"
@@ -1345,51 +1461,116 @@
     "double-yellow",
     "yellow-flag",
     "red-flag",
-    "time-penalty"
+    "time-penalty",
+    "sc-pit-stop",
+    "stay-out",
+    "pit-loss"
    ],
-   "checked": "2026-10-13",
    "src": [
     {
      "name": "FIA",
-     "title": "2026 Formula 1 Regulations Section B Sporting（Issue 05）",
-     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_05_-_2026-02-27.pdf"
+     "title": "2026 F1 Regulations – Section B [Sporting] – Issue 09（2026年10月1日）目次のB5.12（VSC）・B5.13（SC）、B4.1.4",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf",
+     "note": "2026年の今の規則：VSCはB5.12、セーフティカーはB5.13。VSC DEPLOYEDとライトパネルの「VSC」、セクターごとの最低タイム、追い越しの例外、VSC ENDINGの10〜15秒後に緑（B4.1.4）"
     },
     {
      "name": "Formula1.com",
      "title": "FIA clarifies new virtual safety car procedures（2015年1月9日）",
-     "url": "https://www.formula1.com/en/latest/article/fia-clarifies-new-virtual-safety-car-procedures.3kAXqSlWzpv5DRXo8eW8Nf"
+     "url": "https://www.formula1.com/en/latest/article/fia-clarifies-new-virtual-safety-car-procedures.3kAXqSlWzpv5DRXo8eW8Nf",
+     "note": "2015年に導入されたこと、2014年日本GPの事故（ビアンキ）がきっかけ、ダブルイエローが要るがセーフティカーほどではない時に使うこと、セクターごとの最低タイム、緑に戻るまでの10〜15秒"
     },
     {
      "name": "Motorsport Explained",
      "title": "Virtual Safety Car (VSC) in F1",
-     "url": "https://motorsportexplained.com/virtual-safety-car-f1/"
+     "url": "https://motorsportexplained.com/virtual-safety-car-f1/",
+     "note": "VSCでは順位が保たれ隊列ができないこと、走りながら目標より速いか遅いかを知らされること、守らないと罰が出ること"
     },
     {
      "name": "FIA",
      "title": "2026 Canadian Grand Prix Infringement Car 5（VSCデルタ超過、スチュワード裁定）",
-     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_infringement_-_car_5_-_driving_unnecessarily_slowly_during_vsc.pdf"
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_infringement_-_car_5_-_driving_unnecessarily_slowly_during_vsc.pdf",
+     "note": "カナダGPでボルトレートが「VSC delta」を複数のミニセクターで超え、5秒加算を受けた裁定"
     },
     {
      "name": "PlanetF1",
      "title": "Does Formula 1 need to change its Virtual Safety Car rules?（2026年9月20日）",
-     "url": "https://www.planetf1.com/news/f1-virtual-safety-car-lando-norris-spanish-gp"
+     "url": "https://www.planetf1.com/news/f1-virtual-safety-car-lando-norris-spanish-gp",
+     "note": "マドリードでノリスはVSCの直前にピット入口を過ぎていたこと、アントネッリとフェルスタッペンがVSC中に入ったこと、ノリスの3位、ステラ代表の諮問委員会の話"
     },
     {
      "name": "The Race",
      "title": "Norris calls out 'unfair' VSC rules after lost Madrid win（2026年9月13日）",
-     "url": "https://www.the-race.com/formula-1/norris-calls-out-unfair-vsc-rules-after-lost-madrid-win/"
+     "url": "https://www.the-race.com/formula-1/norris-calls-out-unfair-vsc-rules-after-lost-madrid-win/",
+     "note": "ノリスの「不公平だ」という発言と、アントネッリとフェルスタッペンがVSC中に入ってノリスより小さな損失で済んだこと"
     },
     {
      "name": "Crash.net",
      "title": "Why FIA didn't deploy safety car in Baku despite late Valtteri Bottas crash",
-     "url": "https://crash.net/f1/news/1105805/1/why-fia-didnt-deploy-safety-car-baku-despite-late-valtteri-bottas-crash"
+     "url": "https://crash.net/f1/news/1105805/1/why-fia-didnt-deploy-safety-car-baku-despite-late-valtteri-bottas-crash",
+     "note": "実例：バクー終盤のボッタスの事故で、VSCやセーフティカーを出さずダブルイエローで対応した理由（FIAの説明）"
     },
     {
      "name": "formula1.com",
      "title": "Verstappen seals commanding Singapore Grand Prix victory from Leclerc and Antonelli（2026年10月11日）",
-     "url": "https://www.formula1.com/en/latest/article/verstappen-seals-commanding-singapore-grand-prix-victory-from-leclerc-and-antonelli.49wDzysiVqi5cloGjle40A"
+     "url": "https://www.formula1.com/en/latest/article/verstappen-seals-commanding-singapore-grand-prix-victory-from-leclerc-and-antonelli.49wDzysiVqi5cloGjle40A",
+     "note": "実例：シンガポールGPの2回のVSC（ボルトレート、ストロール）、ルクレールとアントネッリのVSC中のピット、ハミルトンが2回目のピットに入らなかったこと、ラッセルがVSC終了間際に入ったこと"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (U-Z)（Virtual Safety Car）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-u-z.5JSlDsnyvYmbK0TCjTs7KB",
+     "note": "セーフティカーとの違い：VSCでは決められたタイムを守り、車の間がそのまま保たれ、追い越しはできないこと"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "F1 Glossary (P-T)（Safety Car）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1",
+     "note": "セーフティカーとの違い：セーフティカーでは全車がその後ろに並び、遅い速さで先導されること"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Penalty Guidelines (Version 01)",
+     "url": "https://www.fia.com/sites/default/files/2026_f1_penalty_guidelines.pdf",
+     "note": "セーフティカー中は前の車との間に「最大の間隔」があること（B5.13.2(b)）と、VSCの最低タイム・追い越しの罰（B5.12.2）"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Monaco Grand Prix Decision Car 6 Alleged Safety Car Infringement（B5.13.2、SCの後ろで10車身）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_monaco_grand_prix_-_decision_-_car_6_-_alleged_safety_car_infringement.pdf",
+     "note": "セーフティカーの後ろで「10車身より大きい間隔」を空けるとB5.13.2の違反に問われること"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Safety Car explained: Full or virtual, and how it all works（2026年3月26日更新）",
+     "url": "https://www.gpfans.com/en/f1-news/102658/f1-safety-car/",
+     "note": "セーフティカーは隊列を詰め、VSCは詰めないこと、VSCやセーフティカーで残った車が遅く走るためピットの損失が小さくなること"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 delta: What does it mean and what different contexts are there?（2026年10月18日）",
+     "url": "https://www.planetf1.com/news/f1-delta-explained-different-contexts-meanings",
+     "note": "VSCでは決められたタイムより遅く走る（プラスのデルタを保つ）必要があり、守れているかをレースコントロールが走行中に伝えること"
+    },
+    {
+     "name": "F1 Oversteer",
+     "title": "F1 teams disagree on VSC rule changes in FIA meeting after Lando Norris' 'unfair' criticism（2026年9月22日）",
+     "url": "https://www.f1oversteer.com/news/f1-teams-disagree-on-vsc-rule-changes-in-fia-meeting-after-lando-norris-unfair-criticism/",
+     "note": "BBCの報道として、VSCの規則の見直しがFIAの諮問委員会とF1コミッションで話し合われたが意見がまとまらず、すぐの変更は見込まれないこと（報道）"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "'A painful lesson': Hamilton apologises as he takes responsibility for strategy gamble in Singapore（2026年10月11日）",
+     "url": "https://www.formula1.com/en/latest/article/a-painful-lesson-hamilton-apologises-as-he-takes-responsibility-for-strategy-gamble-in-singapore.6NUbQvdet1DQa5ElDtonw1",
+     "note": "残る理由の例：ハミルトンがVSCのあと、コースに残って最後まで順位を守ろうとしたこと"
+    },
+    {
+     "name": "RACER",
+     "title": "No regrets from Ferrari drivers after staying out during VSC（2026年3月8日）",
+     "url": "https://racer.com/2026/03/08/no-regrets-from-ferrari-drivers-after-staying-out-during-vsc",
+     "note": "残る理由の例：2026年オーストラリアGPで、ルクレールがこのレースでVSCがもう一度出る見込みが高いと見て、次を待ったこと"
     }
-   ]
+   ],
+   "checked": "2026-10-23"
   },
   {
    "id": "stewards",
@@ -8304,8 +8485,8 @@
     "リフト＆コーストは、ブレーキを踏む前に早めにアクセルを戻し（リフト）、惰性で進む（コースト）運転。昔から、燃料を節約するために使われてきた。F1公式の用語集は、燃料を少なく使う運転と説明している。レース中の給油は、2010年から禁止されている。",
     "タイヤを長持ちさせたり、底板（スキッド）のすり減りを抑えたりするためにも使う。ただし、そのぶんタイムは落ちるので、後ろの車に抜かれやすくなる。",
     "2026年は、電気をためる手段が加わった。F1公式によると、電気をためる4つの場面のうち、ドライバーが自分で操作できるのは、これだけだ。アクセルを早く戻すと、MGU-Kが発電し、車は空気抵抗でも減速する。この間はアクティブエアロのストレートモードが使えず、翼はコーナーモードに戻る。",
-    "予選でも、リフト＆コーストは大きな話題になった。アタックの周でも、電気をためるためにアクセルを戻す場面が多かったからだ。FIAは、予選の回生の上限を引き下げた。日本GP（鈴鹿）で9MJから8MJに、5月のマイアミGPからは7MJに下げた。",
-    "同時に、直線の終わりで自動的に電気をためるスーパークリッピングの最大出力を、250kWから350kWに上げ、その時間は1周で2〜4秒ほどに短くした。マクラーレンの技術陣は、この変更で、予選のリフト＆コーストはもう要らなくなるはずだと話した。"
+    "予選でも、リフト＆コーストは大きな話題になった。アタックの周でも、電気をためるためにアクセルを戻す場面が多かったからだ。FIAは、予選の回生の上限を引き下げた。日本GP（鈴鹿）で9MJから8MJに下げた。5月のマイアミGPからは、大会によって7MJまで下げられるようにした。一律の引き下げではなく、マイアミの予選は8MJのままだった（PlanetF1）。",
+    "同時に、直線の終わりで自動的に電気をためるスーパークリッピングの最大出力を、250kWから350kWに上げ、その時間を1周で2〜4秒ほどにすることを目標にした。マクラーレンの技術陣は、この変更で、予選のリフト＆コーストはもう要らなくなるはずだと話した。"
    ],
    "examples": [],
    "see": [
@@ -8316,7 +8497,7 @@
     "energy-store",
     "refuelling"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-23",
    "src": [
     {
      "name": "Formula1.com",
@@ -8367,6 +8548,12 @@
      "name": "Motorsport.com",
      "title": "Why was refuelling banned in F1?",
      "url": "https://www.motorsport.com/f1/news/why-was-refuelling-banned-in-f1/10555079/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA clarifies no Miami GP energy recharge reduction（2026年5月1日）",
+     "url": "https://www.planetf1.com/news/fia-miami-gp-energy-recharge-rules-no-reduction-update-clarification",
+     "note": "予選の回生の上限は一律に7MJへ下げたのではなく、大会によって7MJまで下げられる。マイアミの予選は8MJのまま"
     }
    ]
   },
@@ -23078,7 +23265,7 @@
     "クリッピングは、直線の終わりまで電気がもたず、MGU-Kの助けがなくなって加速が鈍ること。2026年のPUは、エンジンと電気がほぼ半々の力を出す。電気がなくなると、その分の力を失うので、とくに長い直線で起きやすい。",
     "似た言葉に「スーパークリッピング」（→）がある。こちらは、全開のまま、わざとMGU-Kに発電させて電池にためる方法だ。電気をためる代わりに最高速を捨てる。クリッピングは電気が足りなくて起きる結果、スーパークリッピングは電気をためるための手段、と分けて考えるとよい。",
     "速度の落ち方は大きい。ランド・ノリスは鈴鹿で、直線で速度が50〜60km/h落ちるのを見ると「魂が痛む」と話した。",
-    "FIAは2026年5月のマイアミGPから、スーパークリッピングの最大出力を250kWから350kWに上げた（予選と決勝の両方）。短い時間でたくさんためられるようにして、ためるために長く速度を落とす走りを減らすねらいで、予選の1周でためてよい量も8MJから7MJに下げた。スーパークリッピングの時間は、1周で2〜4秒ほどが目安とされる。"
+    "FIAは2026年5月のマイアミGPから、スーパークリッピングの最大出力を250kWから350kWに上げた（予選と決勝の両方）。短い時間でたくさんためられるようにするねらいだ。予選の1周でためてよい量は、大会によって8MJから7MJに下げられるようにした。ためすぎを減らして全開で走る時間を増やすためで、FIAはスーパークリッピングを1周で2〜4秒ほどにすることを目標にした。ただし一律の引き下げではなく、マイアミの予選は8MJのままだった（PlanetF1）。"
    ],
    "examples": [
     {
@@ -23133,10 +23320,16 @@
      "name": "Honda",
      "title": "2026 F1 Explained: Regulations",
      "url": "https://global.honda/en/F1/features/f1-explained/regulations/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA clarifies no Miami GP energy recharge reduction（2026年5月1日）",
+     "url": "https://www.planetf1.com/news/fia-miami-gp-energy-recharge-rules-no-reduction-update-clarification",
+     "note": "予選の回生の上限は一律に7MJへ下げたのではなく、大会によって7MJまで下げられる。マイアミの予選は8MJのまま"
     }
    ],
    "cat": "パワーユニット",
-   "checked": "2026-10-03"
+   "checked": "2026-10-23"
   },
   {
    "id": "boost-recharge",
