@@ -27,7 +27,7 @@ Find F1 news published since the previous run (compare the current time in Asia/
 
 Avoid by default (usually paywalled or metered): Autosport Plus, The Athletic, auto motor und sport "Plus", L'Équipe "abonnés", Gazzetta "G+/Extra", El País, De Telegraaf "Premium", Folha/UOL subscriber pieces, any motorsport.com / autosport "Premium" or "Prime" article.
 
-Aim for 5–10 new articles per run (more right after a session; fewer is fine on quiet days), from several languages, outlets and countries, covering a spread of teams. Across the day try to include technical deep dives, rumour / paddock-gossip pieces from different countries, and fan-forum digests (about 1 tech, 1–2 rumour and 1 fan item per run when available). Favour substantive stories over live tickers, TV-schedule posts, galleries, videos and bare results tables. Skip URLs already in articles.json. Several outlets' articles about the same big story are GOOD (that is how the most-covered story is measured), but never two articles from the same outlet about the same story.
+Aim for 5–10 new articles per run (more right after a session; fewer is fine on quiet days), from several languages, outlets and countries, covering a spread of teams. Across the day try to include technical deep dives, rumour / paddock-gossip pieces from different countries, and fan-forum digests (about 1 tech, 2–3 rumour and 1 fan item per run when available; owner's decision, 23 Oct 2026: more rumours, at least half of them from non-English outlets — see step 2c). Favour substantive stories over live tickers, TV-schedule posts, galleries, videos and bare results tables. Skip URLs already in articles.json. Several outlets' articles about the same big story are GOOD (that is how the most-covered story is measured), but never two articles from the same outlet about the same story.
 
 Race weekends (qualifying day to two days after the race): the site publishes a WORLD GRID (formerly WORLD MEDIA LENS) column after each race, which needs stories that Japanese outlets did not cover. So on these runs, include at least 3 articles per run from non-English, non-Japanese outlets (Italian, German, Spanish, Dutch, Portuguese/Brazilian, French), preferring post-session analysis, driver/team quotes and paddock detail over plain results.
 
@@ -40,7 +40,7 @@ Pick:
 - family links to racing (a racing father or sibling, family at the track);
 - hobbies and activities outside F1 that the person shares publicly.
 Never pick:
-- dating or break-up claims from anonymous "sources"/"insiders" only;
+- dating or break-up claims from anonymous "sources"/"insiders" only (dating rumours reported by a named outlet go under step 2c instead);
 - guesses from unfollows, likes, or how people appear in photos;
 - paparazzi photos, or anything that reveals where someone or their family lives;
 - children (beyond what the parents announced), health, pregnancy rumours;
@@ -48,9 +48,27 @@ Never pick:
 Test: could the person look at our article and say "yes, I said/posted that myself"? If not, skip it.
 Fields: kind "news" (it is on the record), cat "素顔". The summary must say where it comes from in one plain line (e.g. 「本人のInstagramへの投稿による」「本人がインタビューで語った」). No sensational words in titles (熱愛, 破局か, 衝撃, 激写 …). Write calmly, like a newspaper's people column.
 
+### 2c. More rumours from abroad, and dating rumours — owner's decision, 23 Oct 2026
+Aim for 2–3 rumour articles (kind "rumor", cat "うわさ") per run when available, at least half from non-English outlets. Rumours = transfers and seats, team management and internal politics, relations between drivers / teams / bosses, technical rumours, and (with the rules below) dating rumours. Where to look first:
+- Italy: formulapassion.it, f1grandprix.motorionline.com, corrieredellosport.it (search "voci", "mercato")
+- Germany: f1-insider.com, motorsport-magazin.com (search "Gerüchte")
+- Netherlands: f1maximaal.nl, racingnews365.nl, gpblog.com/nl (search "geruchten")
+- Spain / Latin America: soymotor.com, as.com/motor, marca.com/motor (search "rumores")
+- Brazil: grandepremio.com.br (search "rumores")
+- France: motorsport.nextgen-auto.com/fr (search "rumeurs")
+- UK: planetf1.com, gpfans.com, crash.net (search "rumours")
+Dating rumours (a driver's or team person's romantic partner) MAY be published as kind "rumor", cat "うわさ", only if ALL of these hold:
+- a named newspaper, magazine or sports/entertainment site reported it (never forums, matome blogs, anonymous social-media accounts);
+- if the only outlet is a tabloid (The Sun, Daily Mail, Mirror, Bild, etc.), skip it unless another outlet also reports it or the article states its basis (seen together at a named event, the two people's own public posts);
+- written as a report ("〜と報じた"), never as fact;
+- the partner is named only if they are a public figure themselves (model, athlete, influencer, actor …); otherwise write 「一般の女性」「一般の男性」 and nothing that could identify them;
+- no sensational words in titles (熱愛, 破局か, 衝撃, 激写 …);
+- if the person or partner later denies it, add the denial to that article's summary on the next run, or remove the article.
+Still never: family members, children, health, pregnancy rumours, where anyone lives, paparazzi-only material, ex-partners' revelations (things the person announced themselves go under 2b).
+
 ## 3. Check every candidate
 Open it with WebFetch and check (a) the complete text is visible for free and (b) what it actually says. Reject if (a) is not clearly yes, if the fetch fails, returns only a teaser, or is a live blog. Summaries only from what the article says; never invent facts, numbers or quotes; leave out details that sources disagree on.
-Rumours and forum digests: summarise in our own words as reported claims ("〜と報じた", "〜と主張", "〜という話題"), never as fact. For forum digests, say which outlet the post is based on if it names one, and describe reactions only in general terms. Never quote or paraphrase insults, slurs, personal attacks, or claims about anyone's private life, health or crimes — except what step 2b allows (things the person made public themselves).
+Rumours and forum digests: summarise in our own words as reported claims ("〜と報じた", "〜と主張", "〜という話題"), never as fact. For forum digests, say which outlet the post is based on if it names one, and describe reactions only in general terms. Never quote or paraphrase insults, slurs, personal attacks, or claims about anyone's private life, health or crimes — except what step 2b allows (things the person made public themselves) and dating rumours under step 2c.
 
 ## 4. Article objects (articles.json)
 Fields: id (short unique slug), kind ("news" | "tech" | "rumor" | "fan"), lang (ISO 639-1; Japanese "ja"), region (outlet's country in Japanese), source (outlet name, spelled consistently with existing entries), cat (one of 予選, 決勝, 分析, テクニカル, チーム, ドライバー, カレンダー, サーキット, カルチャー, 移籍, ビジネス, うわさ, まとめ, 素顔), circuit (circuits.json key; omit if none; never guess), teams (1–3 teams.json keys; omit if none), topic, title (natural Japanese headline; every person, team, number or claim named in the title must also appear in the summary and be stated in the article — re-read both before saving), summary (own Japanese summary, 4–5 sentences, 210–350 characters — count them, see step 7: what happened, the key facts (numbers, who said what), the background and why it matters — the title opens our summary page first, so give the reader a full picture, but still leave the complete details, full figures and longer quotes for the original so the reader still wants to open it (owner's decision, 12 Oct 2026: 4–5 sentences, 210–350 characters; was 3–4 sentences, 150–280 from 2 Oct, and 2–3 sentences, 120–180 before that); written in our own words — never translate or closely paraphrase paragraphs, at most one very short quoted phrase), orig (original headline verbatim), url, published (ISO 8601 with offset; date only → 12:00 outlet time). Consistency check: each run, compare title and summary of every new article (and 10 existing ones); if the title names something the summary does not cover, fix the summary or the title from the article. Keep exactly ONE article with "featured": true (the most important news/tech article, never rumor/fan). Plain newspaper-style Japanese with standard katakana names (ラッセル, ルクレール, フェルスタッペン, アントネッリ, ピアストリ, ノリス, ハミルトン, アロンソ, サインツ, ボルトレート, ハジャー（「アジャー」は誤り）, リンドブラッド（「リンブラッド」は誤り） …). 2026: DRS no longer exists (replaced by active aero "straight mode" and the electrical overtake mode); if an outlet says "DRS" loosely, re-read the article and write what it actually means.; technical summaries may use proper F1 terms.
