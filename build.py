@@ -3146,6 +3146,28 @@ def build_drivers(by_term):
     return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
 
 
+def top_latest_slot(allarts):
+    """Top page first screen: the three newest headlines under the columns, so a visitor sees there is news
+    without scrolling (owner asked to see it, 25 Oct 2026). Fills <!--pre:latest--> in index.html."""
+    new = [a for a in allarts if a.get('kind') in ('news', 'tech', 'rumor')][:3]
+    blk = ''
+    if new:
+        KL = {'news': '報道', 'tech': '技術', 'rumor': '噂'}
+        blk = ('<style>.top-latest{order:2;margin:16px 2px 0}.top-latest h2{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted);margin:0 0 4px}'
+               '.top-latest ul{list-style:none;margin:0;padding:0}.top-latest li{border-top:1px solid var(--line)}.top-latest li:first-child{border-top:0}'
+               '.top-latest a{display:block;padding:9px 0;color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;line-height:1.5}'
+               '.top-latest a small{display:inline-block;font-size:11px;font-weight:800;color:var(--muted);margin-right:8px;border:1px solid var(--line);border-radius:4px;padding:0 5px}'
+               '.top-latest .more{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay);text-decoration:none}</style>'
+               '<div class="top-latest"><h2>最新のニュース</h2><ul>'
+               + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/top/latest/{i + 1}"><small>{KL[a["kind"]]}</small>{e(a["title"])}</a></li>' for i, a in enumerate(new))
+               + '</ul><a class="more" href="#news" data-track="click/top/latest/more">ニュースをもっと見る ↓</a></div>')
+    ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
+    out = re.sub(r'(<!--pre:latest-->).*?(<!--/pre:latest-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
+    if out != src:
+        with open(ip, 'w', encoding='utf-8') as fh:
+            fh.write(out)
+
+
 def top_people_slot():
     """Top page: one quiet line under the STORY / column boxes — the people the newest pieces are about,
     and the way to all drivers (owner's OK, 23 Oct 2026). Fills <!--pre:people--> in index.html."""
@@ -3533,6 +3555,7 @@ def main():
     by_term = add_term_reads()
     urls += build_drivers(by_term)
     top_people_slot()
+    top_latest_slot(allarts)
     add_related()
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)
