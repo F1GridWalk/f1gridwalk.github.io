@@ -31,7 +31,12 @@
 /* news list: headlines only, no summary, tighter (owner's request, 25 Oct 2026). The summary is one tap away on the article page. */
 html body #news article.card > p{display:none !important}
 html body #news article.card{gap:6px !important}
-html body #news .card .cmp{margin-top:0 !important}
+html body #news .card .cmp{margin:0 !important;padding:0 !important}
+/* less space between one news item and the next (owner's request, 25 Oct 2026) */
+html body #news .grid > article.card{padding:9px 0 9px !important;gap:3px !important}
+html body #news .card .cmp-btn{min-height:24px !important;padding:0 !important}
+html body #news .card .teamtags{padding-top:0 !important}
+html body #news .card h3{margin-top:0 !important}
 /* phone only: easier to read (owner's request, 6 Oct 2026) */
 @media (max-width:520px){
 /* first screen, preview (owner, 25 Oct 2026): header in one row, smaller STORY button */
