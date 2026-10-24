@@ -1507,6 +1507,21 @@ def _lt_lookup():
     return _LT_LOOKUP
 
 
+_MDLINK = re.compile(r'\[([^\]\n]+)\]\((/[^)\s]*)\)')
+
+
+def body_links(text, used):
+    """A body paragraph: rulebook terms linked as usual, plus [text](/site/path/) links to our own pages
+    (internal paths only; e.g. to a DEEP). Link text itself is not term-linked, so links never nest."""
+    out, pos = [], 0
+    for m in _MDLINK.finditer(text):
+        out.append(link_terms(e(text[pos:m.start()]), used))
+        out.append(f'<a href="{e(m.group(2))}">{e(m.group(1))}</a>')
+        pos = m.end()
+    out.append(link_terms(e(text[pos:]), used))
+    return ''.join(out)
+
+
 def link_terms(html_text, used):
     """Underline the first appearance of each rulebook term in a paragraph (already HTML-escaped).
     Longer terms win (バーチャルセーフティカー before セーフティカー), a name is linked only as a whole word,
@@ -1820,6 +1835,10 @@ def build_rules():
             drv = [d for d in PEOPLE if d.get('role') == 'ドライバー' and p in engineers_of(d)]
             if drv:
                 b += ('<p class="rb-mate">担当ドライバー：' + '、'.join(f'<a href="/deep/rules/person-{e(d["id"])}/" data-track="click/person/{e(p["id"])}/driver">{e(d["name"])} →</a>' for d in drv) + '</p>')
+        pu = set()
+        if p.get('body'):  # longer text, e.g. 「## 経歴」 (column desk request, owner's OK, 24 Oct 2026)
+            b += '<div class="rbp-body" style="margin-top:22px">' + ''.join(
+                (f'<h2 class="rbp-sh">{e(x[3:].strip())}</h2>' if x.startswith('## ') else f'<p>{body_links(x, pu)}</p>') for x in p['body']) + '</div>'
         b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
@@ -1836,7 +1855,7 @@ def build_rules():
         ld_p = {'@context': 'https://schema.org', '@type': 'Person', 'name': p['name'], 'alternateName': p.get('en', ''), 'jobTitle': p['role'],
                 'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
         og = rules_og(tid, p['name'], '人物', f'{p["role"]}（{p["org"]}）', 'F1人物辞典')
-        _rb_page(R, tid, 'person', p['name'], '人物', al, p['short'], b, set(), ld_p,
+        _rb_page(R, tid, 'person', p['name'], '人物', al, p['short'], b, pu, ld_p,
                  f'{p["name"]}とは｜経歴・役職（{re.sub(r"（.*?）", "", p["org"]).strip()}）｜F1人物辞典｜F1グリッドウォーク', og)
         sm.append((SITE + rb_url(tid), (p.get('checked') or R['checked']) + 'T09:00:00+09:00', None, '0.5'))
     # remove pages of entries that no longer exist
