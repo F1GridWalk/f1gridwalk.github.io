@@ -130,6 +130,125 @@
 .lens-list a{display:block;font-size:17px;font-weight:800;text-decoration:none}
 .lens-list small{display:block;color:var(--muted);font-size:12.5px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lens-hero,:root:not([data-theme="light"]) .quiz{background:#0F110E;border:1px solid #353A32}}
+
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
+.more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
+.md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
+.more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-deep ul{list-style:none;margin:0 0 16px;padding:0}
+.more-deep li{border-top:1px solid var(--line)}
+.more-deep li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-deep li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-deep li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-deep li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.md-btn{display:block;text-align:center;background:#8E2F3B;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.md-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .md-k{color:#D98C96}}
+:root[data-theme="dark"] .md-k{color:#D98C96}
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF;--tW:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}}
+:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}
+.dg-fig figcaption{font-size:14.5px;font-weight:700;line-height:1.6;margin:0 0 8px}
+.dg-fig svg{display:block;width:100%;height:auto;max-width:640px;font-family:var(--sans)}
+.dg-fig .lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
+.dg-fig .lg i{display:inline-block;width:14px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid var(--ink)}
+.dg-fig .fn{font-size:12px;color:var(--muted);line-height:1.7;margin:6px 0 0}
+.dg-fig .t{fill:var(--ink);font-size:12px}.dg-fig .ts{fill:var(--muted);font-size:10.5px}.dg-fig .tv{fill:var(--ink);font-size:12px;font-weight:700}
+.dg-fig .ax{stroke:var(--line);stroke-width:1}.dg-fig .mk{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.dg-fig .sg:hover rect,.dg-fig .br:hover rect{opacity:.8}
+.dg-fig .zs{display:grid;gap:8px;margin:8px 0 0;max-width:640px}
+.dg-fig .zs b{display:block;font-size:13px}.dg-fig .zs span{display:block;font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+.dg-rel-l{list-style:none;margin:0;padding:0}
+.dg-rel-l li{border-top:1px solid var(--line)}
+.dg-rel-l li:first-child{border-top:0}
+.dg-rel-l a{display:block;padding:10px 0;color:var(--ink);text-decoration:none}
+.dg-rel-l small{display:block;font-size:12.5px;font-weight:700;color:var(--clay);line-height:1.6}
+.dg-rel-l b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-rel-l span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.dg-rel-l a:hover b{text-decoration:underline;text-underline-offset:3px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ホテルの駐車場、40℃のダラス、6台のレース。アメリカのF1、12か所の歴史", "description": "来週はオースティンでアメリカGP。アメリカでF1の選手権レースが開かれた場所を数えると、12か所になります。ホテルの駐車場、40℃を超えたダラス、6台しか走らなかったレース。オースティンの前に、アメリカのF1の不思議な歴史をたどりました。", "datePublished": "2026-10-15T20:32:00+09:00", "dateModified": "2026-10-15T20:32:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/lens/us-venues-12-20261015/og.png?v=215397b5"], "mainEntityOfPage": "https://f1gridwalk.github.io/lens/us-venues-12-20261015/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "OFF GRID"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "OFF GRID", "item": "https://f1gridwalk.github.io/offgrid/"}, {"@type": "ListItem", "position": 3, "name": "ホテルの駐車場、40℃のダラス、6台のレース。アメリカのF1、12か所の歴史", "item": "https://f1gridwalk.github.io/lens/us-venues-12-20261015/"}]}</script>
@@ -236,7 +355,8 @@ a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-u
 <p class="ask">アメリカの12か所のうち、あなたがいちばん走ってみたいコースはどこですか？</p>
 
 </div>
-<section class="more-cols"><p class="mc-k">COLUMNS</p><h2>ほかのコラムを読む</h2><ul><li><a href="/lens/cota-cowboy-hat-swift-20261024/" data-track="click/lens/more/lens/cota-cowboy-hat-swift-20261024/"><span class="ctag ctag-off">OFF GRID</span><b>世界最大のカウボーイハットに、スウィフトから10年。COTAのこぼれ話</b><small>アメリカGP · 2026年10月24日(土) 13:34</small></a></li><li><a href="/lens/leclerc-notebook-hamilton-20261024/" data-track="click/lens/more/lens/leclerc-notebook-hamilton-20261024/"><span class="ctag ctag-world">WORLD GRID</span><b>ルクレール「ルイスがチームに来てから、メモはたぶん過去最多」</b><small>コラム · 2026年10月24日(土) 06:21</small></a></li><li><a href="/lens/antonelli-no-champagne-20261024/" data-track="click/lens/more/lens/antonelli-no-champagne-20261024/"><span class="ctag ctag-off">OFF GRID</span><b>アントネッリの表彰台はノンアル？ アメリカの「21歳」とラベルのない瓶</b><small>アメリカGP · 2026年10月24日(土) 00:00</small></a></li><li><a href="/lens/gasly-nascar-driver-20261023/" data-track="click/lens/more/lens/gasly-nascar-driver-20261023/"><span class="ctag ctag-off">OFF GRID</span><b>ガスリー「その夜はNASCARドライバー」 2015年のアメリカで</b><small>アメリカGP · 2026年10月23日(金) 23:00</small></a></li><li><a href="/lens/redbull-sim-customers-20261023/" data-track="click/lens/more/lens/redbull-sim-customers-20261023/"><span class="ctag ctag-off">OFF GRID</span><b>ホーナー「ラッセルがお金を払って」 レッドブルが逃した3人</b><small>アメリカGP · 2026年10月23日(金) 21:57</small></a></li><li><a href="/lens/wolff-hamilton-middle-of-car-20261023/" data-track="click/lens/more/lens/wolff-hamilton-middle-of-car-20261023/"><span class="ctag ctag-world">WORLD GRID</span><b>ウォルフ「そこは車の真ん中だ」 ハミルトンの一言を技術者は特定しきれず</b><small>コラム · 2026年10月23日(金) 06:27</small></a></li><li><a href="/deep/cota-energy/" data-track="click/lens/more/deep/cota-energy/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#18</span><b>アメリカGPのCOTAでは、なぜ電気のやりくりが難しいのか</b><small>2026年10月22日(木) 21:50</small></a></li><li><a href="/lens/austin-godzilla-honda500-20261023/" data-track="click/lens/more/lens/austin-godzilla-honda500-20261023/"><span class="ctag ctag-off">OFF GRID</span><b>ゴジラが走り、ホンダは500戦目。オースティンのこぼれ話</b><small>アメリカGP · 2026年10月22日(木) 17:08</small></a></li></ul><a class="mc-btn" href="/columns/" data-track="click/lens/more-all">すべてのコラムを見る →</a><a class="mc-sub" href="/" data-track="click/lens/entrance-top">今日のF1ニュースを見る</a></section>
+<section class="more-cols"><p class="mc-k">COLUMNS</p><h2>ほかのコラムを読む</h2><ul><li><a href="/deep/us-f1-boom/" data-track="click/lens/more/deep/us-f1-boom/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#19</span><b>F1は、なぜアメリカでこんなに人気になったのか</b><small>2026年10月24日(土) 13:57</small></a></li><li><a href="/lens/cota-cowboy-hat-swift-20261024/" data-track="click/lens/more/lens/cota-cowboy-hat-swift-20261024/"><span class="ctag ctag-off">OFF GRID</span><b>世界最大のカウボーイハットに、スウィフトから10年。COTAのこぼれ話</b><small>アメリカGP · 2026年10月24日(土) 13:34</small></a></li><li><a href="/lens/leclerc-notebook-hamilton-20261024/" data-track="click/lens/more/lens/leclerc-notebook-hamilton-20261024/"><span class="ctag ctag-world">WORLD GRID</span><b>ルクレール「ルイスがチームに来てから、メモはたぶん過去最多」</b><small>コラム · 2026年10月24日(土) 06:21</small></a></li><li><a href="/lens/antonelli-no-champagne-20261024/" data-track="click/lens/more/lens/antonelli-no-champagne-20261024/"><span class="ctag ctag-off">OFF GRID</span><b>アントネッリの表彰台はノンアル？ アメリカの「21歳」とラベルのない瓶</b><small>アメリカGP · 2026年10月24日(土) 00:00</small></a></li><li><a href="/lens/gasly-nascar-driver-20261023/" data-track="click/lens/more/lens/gasly-nascar-driver-20261023/"><span class="ctag ctag-off">OFF GRID</span><b>ガスリー「その夜はNASCARドライバー」 2015年のアメリカで</b><small>アメリカGP · 2026年10月23日(金) 23:00</small></a></li><li><a href="/lens/redbull-sim-customers-20261023/" data-track="click/lens/more/lens/redbull-sim-customers-20261023/"><span class="ctag ctag-off">OFF GRID</span><b>ホーナー「ラッセルがお金を払って」 レッドブルが逃した3人</b><small>アメリカGP · 2026年10月23日(金) 21:57</small></a></li><li><a href="/lens/wolff-hamilton-middle-of-car-20261023/" data-track="click/lens/more/lens/wolff-hamilton-middle-of-car-20261023/"><span class="ctag ctag-world">WORLD GRID</span><b>ウォルフ「そこは車の真ん中だ」 ハミルトンの一言を技術者は特定しきれず</b><small>コラム · 2026年10月23日(金) 06:27</small></a></li><li><a href="/deep/cota-energy/" data-track="click/lens/more/deep/cota-energy/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#18</span><b>アメリカGPのCOTAでは、なぜ電気のやりくりが難しいのか</b><small>2026年10月22日(木) 21:50</small></a></li></ul><a class="mc-btn" href="/columns/" data-track="click/lens/more-all">すべてのコラムを見る →</a><a class="mc-sub" href="/" data-track="click/lens/entrance-top">今日のF1ニュースを見る</a></section>
+<a class="dg-from" href="/deep/us-f1-boom/" data-track="click/deep/us-f1-boom/from"><small>DEEP GRID #19</small><b>F1は、なぜアメリカでこんなに人気になったのか</b><span>なぜそうなった？を深く読む →</span></a>
 <div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">585 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/lens">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/lens/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script>
 <section class="lens-sec sdesk"><h2>SOURCE DESK</h2><p class="lens-lead">この記事のもとになった10本の記事（5媒体）。すべて原文に飛びます。</p><ul><li><span class="srcbadge" data-c="gb">Formula1.com</span><span>英語</span><a class="t" href="https://www.formula1.com/en/latest/article/miami-is-coming-but-where-else-has-f1-raced-in-the-usa.62oTelm2rpEueOVaQfFNh" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">マイアミが来る。F1はアメリカのどこを走ってきたのか ↗</a></li><li><span class="srcbadge" data-c="gb">Formula1.com</span><span>英語</span><a class="t" href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">2026年のカレンダー ↗</a></li><li><span class="srcbadge" data-c="xx">Wikipedia（英語版）</span><span>英語</span><a class="t" href="https://en.wikipedia.org/wiki/List_of_Formula_One_circuits" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">F1のサーキットの一覧 ↗</a></li><li><span class="srcbadge" data-c="xx">Wikipedia（英語版）</span><span>英語</span><a class="t" href="https://en.wikipedia.org/wiki/1959_United_States_Grand_Prix" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">1959年アメリカGP ↗</a></li><li><span class="srcbadge" data-c="gb">Formula1.com</span><span>英語</span><a class="t" href="https://www.formula1.com/en/latest/features/2015/10/9-reasons-why-the-84-dallas-grand-prix-was-one-of-the-wildest-ra.html" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">1984年ダラスGPが荒れたレースだった9つの理由 ↗</a></li><li><span class="srcbadge" data-c="xx">Wikipedia（英語版）</span><span>英語</span><a class="t" href="https://en.wikipedia.org/wiki/1989_United_States_Grand_Prix" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">1989年アメリカGP ↗</a></li><li><span class="srcbadge" data-c="us">Phoenix New Times</span><span>英語</span><a class="t" href="https://www.phoenixnewtimes.com/news/25-years-ago-phoenix-hosted-formula-ones-us-grand-prix-6666761" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">25年前、フェニックスはF1のアメリカGPを開いた ↗</a></li><li><span class="srcbadge" data-c="xx">Wikipedia（英語版）</span><span>英語</span><a class="t" href="https://en.wikipedia.org/wiki/2005_United_States_Grand_Prix" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">2005年アメリカGP ↗</a></li><li><span class="srcbadge" data-c="gb">PlanetF1</span><span>英語</span><a class="t" href="https://www.planetf1.com/news/circuit-of-the-americas-track-guide" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">サーキット・オブ・ジ・アメリカズのコースガイド ↗</a></li><li><span class="srcbadge" data-c="gb">Sky Sports</span><span>英語</span><a class="t" href="https://www.skysports.com/f1/news/12433/10043990/united-states-gp-lewis-hamilton-clinches-2015-world-title" target="_blank" rel="noopener" data-track="click/lens/us-venues-12-20261015/desk">ハミルトン、アメリカGPで2015年の王座を決める ↗</a></li></ul></section>
 <p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p><script type="application/json" id="term-data">{"formation-lap": ["フォーメーションラップ", "決勝のスタート前に、グリッドから1周して、タイヤを温めて整列し直す周回。"], "podium": ["表彰台", "決勝の上位3人がトロフィーを受ける、一段高い台。優勝チームの代表も上がる。"], "grand-prix": ["グランプリ（GP）", "F1の1レースの正式な呼び名。フランス語で「大きな賞」の意味。"], "circuit-austin": ["サーキット・オブ・ジ・アメリカズ", "アメリカGPの会場。1コーナーへの急な上りと、名コースを写したような連続コーナーが特徴。"], "elevation-change": ["高低差", "1つのコースの中で、いちばん高い所と低い所の差。土地の高さを表す標高とは別。"], "person-lewis-hamilton": ["ルイス・ハミルトン", "ドライバー（フェラーリ）"]}</script><script>
