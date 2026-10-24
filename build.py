@@ -3167,13 +3167,13 @@ def top_rail_slot():
                '.hero .hero-in,.hero .duo{display:none !important}'
                '.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
                '.rail::-webkit-scrollbar{display:none}'
-               '.rcard{flex:0 0 84%;scroll-snap-align:start;scroll-margin-left:16px;border-radius:18px;padding:16px 16px 18px;min-height:236px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}'
+               '.rcard{flex:0 0 84%;scroll-snap-align:start;scroll-margin-left:16px;border-radius:16px;padding:12px 14px 12px;min-height:0;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}'
                '.rc-story{background:#1F2420}.rc-world{background:#B8673F}.rc-deep{background:#8E2F3B}.rc-off{background:#2F6B66}'
                '.rcard small{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,.18)}'
                '.rc-story small{background:var(--hl,#FFEE9A);color:#1F2420}'
-               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:23px;line-height:1.4;font-weight:900;margin:12px 0 8px}"
-               '.rcard p{margin:0;font-size:13.5px;line-height:1.7;opacity:.88;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}'
-               '.rcard span.go{font-weight:800;font-size:13px;margin-top:12px}'
+               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:19px;line-height:1.4;font-weight:900;margin:8px 0 4px}"
+               '.rcard p{margin:0;font-size:13px;line-height:1.6;opacity:.88;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}'
+               '.rcard span.go{font-weight:800;font-size:12.5px;margin-top:8px}'
                '.rdots{display:flex;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}'
                '</style><div class="top-rail" aria-label="今日の読みもの"><div class="rail" id="rail">'
                + ''.join(f'<a class="rcard rc-{k}" href="{e(u)}" data-track="click/top/rail/{k}"><div><small>{e(tag)}</small><b>{e(t)}</b>'
