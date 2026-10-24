@@ -2646,6 +2646,7 @@ ENT_CSS = """
 .ent-map .t{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 .ent-map circle{fill:var(--clay)}
 .ent-jump{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0;clear:both}
+.gp-time{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:6px}.gp-time li{display:flex;justify-content:space-between;gap:12px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:15px}.gp-time b{font-weight:700}.gp-time span{font-variant-numeric:tabular-nums;color:var(--ink)}
 .ent-jump a{font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;color:var(--ink);background:var(--surface)}
 .ent-grid{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .ent-grid a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
@@ -3191,6 +3192,14 @@ def build_gp_pages(flag_of, circuits):
              '<p class="ent-facts">' + ''.join(f'<span>{e(f)}</span>' for f in facts) + '</p>',
              f'<p class="lead">{e(x["gp"])}の週末を、F1 Grid Walk で読めるものすべてで振り返るページです。世界のニュースの要約、コラム、STORY を集めています。</p>',
              '<div class="ent-jump">' + ''.join(jump) + '</div>']
+        wk = (load('season.json') or {}).get('weekend') or {}
+        if wk.get('sessions') and wk.get('round') == x.get('round') and _gp_base(wk.get('gp', '')) == _gp_base(x['gp']):
+            # this weekend's timetable in Japan time (owner's OK, 24 Oct 2026: GP pages as the weekend's entrance)
+            def jst(t):
+                d = datetime.fromisoformat(t.replace('Z', '+00:00')).astimezone(JST)
+                return f'{d.month}/{d.day}（{"月火水木金土日"[d.weekday()]}）{d.hour}:{d.minute:02d}'
+            b.append('<section id="gp-time"><h2>日程（日本時間）</h2><ul class="gp-time">' + ''.join(
+                f'<li><b>{e(ss["name"])}</b><span>{e(jst(ss["start"]))}</span></li>' for ss in wk['sessions']) + '</ul></section>')
         if x['hubs']:
             b.append('<section id="gp-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/gp/{slug}/story') for H in x['hubs']) + '</ul></section>')
         if x['cols']:
@@ -3211,7 +3220,7 @@ def build_gp_pages(flag_of, circuits):
         head = (f'<style>{ENT_CSS}{YK_CSS}{ALLCOL_CSS}</style>\n'
                 + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('GPごとに読む', SITE + '/gp/'), (x['gp'], url)]))
         desc = f'{title}（第{x["round"]}戦）のニュース{len(x["arts"])}本の日本語要約と、コラム・STORY をまとめて。' if x.get('round') else f'{title}のニュースとコラムをまとめて。'
-        write(f'gp/{slug}/index.html', page(f'{title} ニュースまとめ｜F1グリッドウォーク', desc, url, '\n'.join(b), head, og_type='website'))
+        write(f'gp/{slug}/index.html', page(f'F1 {title}｜' + ('結果・' if x.get('winner') else '') + '日程・ニュースまとめ｜F1グリッドウォーク', desc, url, '\n'.join(b), head, og_type='website'))
         last = max([when(a) for a in x['arts']] + [c['dt'] for c in x['cols']])
         sm.append((url, last.isoformat(timespec='seconds'), None, '0.7'))
     items = ''.join(
@@ -3265,7 +3274,7 @@ def build_team_pages(allarts, flag_of, teams):
         b.append(f'<section id="tm-news"><h2>ニュース（{len(arts)}本）</h2>' + _day_list(arts, flag_of) + '</section>')
         b.append('<p class="ent-more"><a href="/teams/">ほかのチームを見る</a><a href="/gp/">GPごとに読む</a><a href="/news/">ニュース一覧</a></p>')
         head = f'<style>{ENT_CSS}{YK_CSS}{ALLCOL_CSS}</style>\n' + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('チームごとに読む', SITE + '/teams/'), (name, url)])
-        write(f'teams/{k}/index.html', page(f'{name}（{en}）のF1ニュース・コラム｜F1グリッドウォーク',
+        write(f'teams/{k}/index.html', page(f'{name}F1 {(load("season.json") or {}).get("season", 2026)}｜ドライバー・代表・ニュース（{en}）｜F1グリッドウォーク',
                                             f'{name}（{en}）に関する世界のF1ニュース{len(arts)}本の日本語要約と、コラム・STORY をまとめて。', url, '\n'.join(b), head, og_type='website'))
         sm.append((url, when(arts[0]).isoformat(timespec='seconds'), None, '0.6'))
         cards.append((len(arts), k, name, en, len(cols), arts[0]))
