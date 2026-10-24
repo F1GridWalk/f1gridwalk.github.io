@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T00:30:00+09:00",
+  "updatedAt": "2026-10-25T06:30:00+09:00",
   "topics": {
     "gulf-races-cancel-risk": {
       "title": "FIA会長「カタール・アブダビGPは開催」　中東情勢の不安の中で明言",
@@ -39,7 +39,7 @@
     },
     "cadillac-2027-drivers-rumor": {
       "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
-      "summary": "キャデラックの2027年のドライバー布陣をめぐり、日独の複数メディアが観測を伝えた。ブトコウスキー代表はオースティンでボッタスの去就に明言せず、ほぼ全ドライバー陣営から接触があると述べた。オーナーは米国人起用を望み、ハータが候補とされる。いずれも未確認の話である。"
+      "summary": "キャデラックの2027年の布陣をめぐり、日英独の複数メディアが観測を伝えた。ブトコウスキー代表はオースティンでボッタスの去就に明言せず、リザーブのハータが後任候補とされ、角田やオコンの名も挙がる。ペレスの席は安泰との見方が強い。いずれもチームの正式発表ではなく、未確認の話である。"
     },
     "alonso-singapore-honda-drivability": {
       "title": "シンガポールでのホンダ製PUのドライバビリティ問題",
@@ -48,9 +48,151 @@
     "norris-piastri-singapore-sprint": {
       "title": "ノリスとピアストリのシンガポール接触とマクラーレンの対応",
       "summary": "シンガポールのスプリントで起きたノリスとピアストリの接触について、マクラーレンは処分を科さない方針を示した。ステラ代表はチームとして受け入れられないとしつつ、チームメイト同士の争い自体は禁じていない。ノリスはその後たくさん叱られたと明かした。"
+    },
+    "us-gp-grid-penalties": {
+      "title": "アメリカGP　PU部品の使用超過で3人にグリッド降格",
+      "summary": "アメリカGPではリンドブラッド、コラピント、ボルトレートの3人がパワーユニット部品の使用数超過でグリッド降格を受けた。ボルトレートは4基目のバッテリーと制御電子機器で計20グリッド降格となり、アウディにとって初のコンポーネント交換ペナルティで、最後尾スタートとなる見込みだ。"
     }
   },
   "articles": [
+    {
+      "id": "en-therace-fp3-hamilton-leclerc-deleted",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "分析",
+      "circuit": "austin",
+      "teams": [
+        "ferrari",
+        "redbull",
+        "mclaren",
+        "audi"
+      ],
+      "topic": "fp3-austin-2026",
+      "title": "アメリカGP FP3　ハミルトンが最速、ルクレールはタイム抹消で3番手",
+      "orig": "Hamilton leads final practice after Leclerc lap deletion",
+      "url": "https://www.the-race.com/formula-1/ferrari-completes-us-gp-practice-sweep/",
+      "published": "2026-10-24T12:00:00+01:00",
+      "summary": "The Raceによると、アメリカGPのFP3はフェラーリのハミルトンが1分34秒893で最速だった。ルクレールはハミルトンより0.083秒速いタイムを刻んだがトラックリミット違反で抹消され、0.234秒差の3番手に下がった。2番手はフェルスタッペン（0.168秒差）、4番手アントネッリ、5番手ラッセルで、アウディのヒュルケンベルグが7番手に入った。ロングランでもフェラーリが先行していたという。ハミルトンがボルトレートに妨げられたとする件は、審議の対象になるという。"
+    },
+    {
+      "id": "de-motorsportmagazin-austin-track-limits-181-laps",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Magazin.com",
+      "cat": "サーキット",
+      "circuit": "austin",
+      "topic": "austin-track-limits-2026",
+      "title": "オースティン、金曜だけで181周のタイム抹消　トラックリミット違反が続出",
+      "orig": "181 Runden weg! Formel 1 erlebt Track-Limit-Fiasko in Austin - die FIA reagiert",
+      "url": "https://www.motorsport-magazin.com/formel1/news-300879-181-runden-weg-formel-1-erlebt-track-limit-fiasko-in-austin-die-fia-reagiert/",
+      "published": "2026-10-24T03:35:00+02:00",
+      "summary": "独Motorsport-Magazin.comによると、アメリカGP金曜のFP1とFP2で競技会は計207回介入し、181周のタイムが抹消された。最多違反はウィリアムズのアルボンで20回、ノリスが18回、ハジャーとルクレールが各15回だった。場所別では12コーナーが70回で最も多く、20コーナーでは違反が次の周も無効にするため70周分が消えた。ルクレールは東寄りの風でマシンが外へ押されると説明している。同誌はFIAが縁の白線の幅を広げる対応を検討していると伝えた。"
+    },
+    {
+      "id": "en-therace-anderson-mirrors-impeding",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "teams": [],
+      "topic": "impeding-mirror-proposal",
+      "title": "ゲイリー・アンダーソン、妨害問題の解決策にミラー拡大を提案",
+      "orig": "Gary Anderson's simple design solution for F1's impeding problem",
+      "url": "https://www.the-race.com/formula-1/gary-andersons-simple-solution-for-f1s-impeding-problem/",
+      "published": "2026-10-24T12:00:00+01:00",
+      "summary": "元F1デザイナーのゲイリー・アンダーソンがThe Raceのコラムで、予選での走行妨害を減らす案を示した。今季は17戦中12戦で妨害が審議され、14件の処分が出たという。提案はリアビューミラーの大きさを2倍にし、ドライバーの視線から見た理想の位置を規定に明記するものだ。抜け道を防ぐため、コクピットから後方に置いた板の文字を読む「逆の視力検査」も加えるとする。ミラーで抗力が増えることは認めつつ、予選が妨害で左右される回数を減らす方が重要だと述べた。"
+    },
+    {
+      "id": "de-f1insider-audi-bortoleto-first-engine-penalty",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider.com",
+      "cat": "チーム",
+      "circuit": "austin",
+      "teams": [
+        "audi"
+      ],
+      "topic": "us-gp-grid-penalties",
+      "title": "アウディ、初のPU交換ペナルティ　ボルトレートは最後尾スタートへ",
+      "orig": "Audi kassiert erste Motorstrafe! Hülkenberg muss nachlegen",
+      "url": "https://f1-insider.com/formel-1-audi-motor-strafe-austin-87932/",
+      "published": "2026-10-24T09:44:00+02:00",
+      "summary": "独F1-Insider.comによると、アウディはボルトレートに4基目のバッテリーと制御電子機器を投入し、メーカーとして初のコンポーネント交換ペナルティを受ける。年間3基の上限を超えた分で計20グリッド降格となり、最後尾からの出走だ。アウディは今季、唯一ペナルティのないメーカーだった。ボルトレートはFP1で8番手、FP2で11番手と更新の効果が出ている。ヒュルケンベルグは両セッションで18番手だが、トラックリミットで最速ラップが抹消された影響が大きいと同誌は指摘する。"
+    },
+    {
+      "id": "en-therace-herta-bottas-cadillac-2027",
+      "kind": "rumor",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "うわさ",
+      "circuit": "austin",
+      "teams": [
+        "cadillac"
+      ],
+      "topic": "cadillac-2027-drivers-rumor",
+      "title": "ハータ、キャデラックで2027年にボッタスの後任候補か　英メディア報道",
+      "orig": "Herta could replace Bottas at Cadillac in F1 2027",
+      "url": "https://www.the-race.com/formula-1/herta-could-replace-bottas-at-cadillac-in-f1-2027/",
+      "published": "2026-10-24T12:00:00+01:00",
+      "summary": "The Raceは、キャデラックが2027年のドライバーを最終決定しておらず、リザーブのコルトン・ハータがボッタスの後任候補に入っていると報じた。ボッタスとペレスは長期契約を結んだとされるが、ブトコウスキー代表は契約の話を避けた。予選の対決ではペレスが13勝9敗とリードし、ボッタスは共走周回の18%しか前にいないという。ハータはF2で19位と苦戦し、スーパーライセンスにあと1点足りない。角田裕毅やオコンも名が挙がるが、いずれもチームの正式発表ではない。"
+    },
+    {
+      "id": "de-motorsportmagazin-cadillac-bottas-seat",
+      "kind": "rumor",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Magazin.com",
+      "cat": "うわさ",
+      "circuit": "austin",
+      "teams": [
+        "cadillac"
+      ],
+      "topic": "cadillac-2027-drivers-rumor",
+      "title": "キャデラック、ボッタスは席を空けるのか　独誌が2027年の去就を分析",
+      "orig": "Cadillac hält den Formel-1-Fahrermarkt spannend: Muss Valtteri Bottas sein Cockpit räumen?",
+      "url": "https://www.motorsport-magazin.com/formel1/news-300874-cadillac-haelt-den-formel-1-fahrermarkt-spannend-muss-valtteri-bottas-sein-cockpit-raeumen/",
+      "published": "2026-10-24T08:00:00+02:00",
+      "summary": "独Motorsport-Magazin.comは、キャデラックの2027年の布陣が不透明だと伝えた。オースティンの会見でブトコウスキー代表は、ドライバー契約についてコメントするのに最もふさわしくない場所だと述べ、発表は正式な場で行うとした。8月にはトウリスCEOが両ドライバーへの満足を語っていたが、その後ボッタスはバクーとシンガポールでペレスより1〜2秒遅い場面が続いた。オコンや角田が空いている候補として挙げられ、ペレスの席は安泰と見る。ボッタスの去就は報道上の見方にとどまる。"
+    },
+    {
+      "id": "de-f1insider-vettel-doku-redbull-exit",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider.com",
+      "cat": "カルチャー",
+      "teams": [
+        "redbull",
+        "ferrari"
+      ],
+      "topic": "vettel-doc-redbull-exit",
+      "title": "ベッテル、ドキュメンタリーでレッドブル離脱の理由を語る　「安心感がなくなった」",
+      "orig": "Vettel enthüllt plötzlich wahren Grund für Red-Bull-Abschied",
+      "url": "https://f1-insider.com/formel-1-vettel-team-abschied-nicht-geborgen-83088/",
+      "published": "2026-10-23T11:42:00+02:00",
+      "summary": "独F1-Insider.comは、元王者ベッテルがARDのドキュメンタリー「Being Sebastian Vettel」で2014年のレッドブル離脱を振り返ったと伝えた。新規定のハイブリッド時代にマシンに苦しみ、新加入のリカルドが3勝を挙げてランキング3位になる一方、ベッテルは勝てず5位だった。本人は自信が揺らぎ、チーム内で守られているという感覚も失ったと語ったという。それが決め手となり、2015年のフェラーリ移籍を選んだ。番組は4部構成で、ARDメディアテークで無料配信中だ。"
+    },
+    {
+      "id": "ja-f1jouhou2-fia-v8-talks-2030",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
+      "teams": [],
+      "topic": "fia-v8-return-2030",
+      "title": "FIA会長「V8回帰の交渉は継続中」、2030年が現実的な目標　5ch反応まとめ",
+      "orig": "FIA会長「F1がV8エンジンに回帰するための交渉はまだ続いている」2030年が現実的な目標に",
+      "url": "https://f1jouhou2.com/blog-entry-31775.html",
+      "published": "2026-10-24T12:00:00+09:00",
+      "summary": "F1情報通は、FIAのベン・スレイエム会長がF1のV8エンジン回帰に向けた交渉は続いており、2030年が現実的な目標だと語ったとする投稿を取り上げた。仏NextgenAutoを引用したSNS投稿に基づく話題で、導入の詳細や合意内容は示されていない。5chでは意見が割れ、ターボなしの自然吸気V8なら歓迎という声や、V10を望む声があった。ハイブリッドの環境面での意義を巡る議論もあり、懐古路線の別シリーズを望む意見も出た。元記事の全文ではなく抜粋に基づく話題である。"
+    },
     {
       "id": "de-formel1de-cadillac-bottas-2027-open",
       "kind": "rumor",
@@ -1313,141 +1455,6 @@
       "orig": "Why has the FIA intervened in F1's wheel rim war?",
       "url": "https://www.the-race.com/formula-1/why-an-f1-arms-race-has-been-stopped-before-it-could-start/",
       "published": "2026-10-21T12:00:00+01:00"
-    },
-    {
-      "id": "it-f1it-fia-wheel-2027-draft",
-      "kind": "tech",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "テクニカル",
-      "topic": "wheel-rim-2027",
-      "teams": [
-        "astonmartin",
-        "ferrari",
-        "mclaren"
-      ],
-      "title": "FIA、2027年規則案でホイール開発を厳格化　予選専用リムは禁止へ",
-      "summary": "FIAが2027年規則の草案を公表し、ホイール開発を厳しく制限するとFormula1.itが報じた。同一車軸の左右でホイール一式を同一仕様とする条項が加わり、記事は一部チームが左右で異なる仕様を使っていた可能性を示唆している。アストンマーティン、フェラーリ、マクラーレンは前後で異なるホイール設計を採用し、タイヤ温度を管理してきたという。10月初めの草案では、表面処理を防錆・摩耗防止・美観の目的に限っている。予選と決勝で使えるホイール仕様は1種類だけで、開発競争の過熱を防ぐ狙いだと記事は論じる。",
-      "orig": "La FIA stringe sui cerchi per il 2027: vietati i cerchioni da qualifica",
-      "url": "https://www.formula1.it/news/33398/1/la-fia-stringe-sui-cerchi-per-il-2027-vietati-i-cerchioni-da-qualifica",
-      "published": "2026-10-21T22:30:00+02:00"
-    },
-    {
-      "id": "de-motorsporttotal-ralf-leclerc-mistakes",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "ドライバー",
-      "topic": "ralf-leclerc-mistakes",
-      "teams": [
-        "ferrari"
-      ],
-      "title": "ラルフ・シューマッハー、ルクレールを批判「無意味なことをしでかす」",
-      "summary": "元F1ドライバーのラルフ・シューマッハーが、ルクレールにはミスが多すぎるとSport Bildで語ったとMotorsport-Total.comが伝えた。シューマッハーは、力ずくで速く走ろうとして無意味なことをしてしまうのがルクレールの弱点の一つだと指摘した。記事によると、ルクレールは今季17戦でチェッカーを受けられなかったのが3回で、うち2回は母国モナコとモンツァでのクラッシュだった。ほかにバルセロナの予選でのクラッシュや、2022年にフランスGPで首位走行中にクラッシュしたあとフェルスタッペンが独走でタイトルを獲った例も挙げている。ルクレールはフェラーリと早期に契約を延長している。",
-      "orig": "Kritik an Charles Leclerc: \"Macht irgendwelche sinnlosen Sachen\"",
-      "url": "https://www.motorsport-total.com/formel-1/news/kritik-an-charles-leclerc-macht-irgendwelche-sinnlosen-sachen-26102112",
-      "published": "2026-10-21T18:16:00+02:00"
-    },
-    {
-      "id": "it-f1it-ralf-hamilton-integrate",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "ドライバー",
-      "topic": "ralf-hamilton-integration",
-      "teams": [
-        "ferrari"
-      ],
-      "title": "ラルフ・シューマッハー「ハミルトンはフェラーリに溶け込むべき」",
-      "summary": "ラルフ・シューマッハーがSky Germanyのポッドキャストで、ハミルトンはチームのやり方に影響を与える前にまずフェラーリに溶け込むべきだと語ったとFormula1.itが伝えた。ハミルトンの加入1年目の統合は想定より難しいと言われている。シューマッハーは、ハミルトンが皆の影を薄くしてボスのように振る舞おうとしているようだと述べ、チーム代表のバスールとの関係にも疑問を呈した。変更の提案をほかの人と話し合っているか分からず、状況は完全に調和しているわけではないとも語った。記事は、これらは同氏の印象であり、ハミルトンやフェラーリの反応は載せていないと断っている。",
-      "orig": "Schumacher senza giri di parole: «Hamilton deve cambiare»",
-      "url": "https://www.formula1.it/news/33399/1/schumacher-senza-giri-di-parole-hamilton-deve-cambiare",
-      "published": "2026-10-21T22:30:00+02:00"
-    },
-    {
-      "id": "de-motorsporttotal-redbull-oracle-ai",
-      "kind": "tech",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "テクニカル",
-      "topic": "redbull-oracle-ai",
-      "teams": [
-        "redbull"
-      ],
-      "title": "レッドブル、オラクルのAIでレース判断を支援　2025年モンツァの助言も",
-      "summary": "レッドブルがオラクルと運用するAIシステムが、レース中の走り方についても推奨を出しているとMotorsport-Total.comが報じた。技術提携責任者のジャック・ハリントン氏によると、もとは規則や過去のスチュワード判断を調べる技術者向けの検索ツールだったが、今はGP中に具体的な助言も行う。2025年イタリアGPの1周目、フェルスタッペンが第1シケインでコースを外した際、AIは罰則回避のため順位を戻すよう勧めた。チームの見立てとは当初異なったが従い、ペナルティなしで首位を取り戻して勝った。ハリントン氏は、F1はこれからも人間のスポーツだと強調している。",
-      "orig": "Red Bull setzt auf KI: Wie Oracle die Rennstrategie verändert",
-      "url": "https://www.motorsport-total.com/formel-1/news/red-bull-setzt-auf-ki-wie-oracle-die-rennstrategie-veraendert-26102108",
-      "published": "2026-10-21T12:00:00+02:00"
-    },
-    {
-      "id": "pt-gp-redbull-2027-new-car",
-      "kind": "news",
-      "lang": "pt",
-      "region": "ブラジル",
-      "source": "Grande Prêmio",
-      "cat": "チーム",
-      "topic": "redbull-2027-new-car",
-      "teams": [
-        "redbull"
-      ],
-      "title": "レッドブル、2027年型はほぼ全面刷新へ　ワーシェ「ほとんど流用しない」",
-      "summary": "レッドブルの技術責任者ピエール・ワーシェがRacingNews365に、2027年型マシンをほぼ新規に作る方針を語ったとGrande Prêmioが伝えた。2026年のRB22には多くの制約があったとして、ほとんどの部品を流用せず、シャシーとギヤボックスは別物になるという。パッケージングや空力、機械部品も作り直す。限られた予算の中で多くの新部品を作る必要があることも認めた。記事によると、レッドブルは今季の両タイトルが手の届かない状況で、フェルスタッペンは221点で4位、チームもコンストラクターズ4位にいる。",
-      "orig": "Red Bull prevê mudar quase todo carro de 2027 e explica plano para manter reação na F1",
-      "url": "https://grandepremio.com/br/f1/red-bull-preve-mudar-quase-todo-carro-de-2027-e-explica-plano-para-manter-reacao-na-f1/",
-      "published": "2026-10-21T16:45:00-03:00"
-    },
-    {
-      "id": "pt-gp-hadjar-sprint-luck",
-      "kind": "news",
-      "lang": "pt",
-      "region": "ブラジル",
-      "source": "Grande Prêmio",
-      "cat": "ドライバー",
-      "topic": "hadjar-sprint-dislike",
-      "teams": [
-        "redbull"
-      ],
-      "title": "ハジャー、スプリント形式を批判「運に頼る必要がある」　来季は10戦に増加",
-      "summary": "レッドブルのハジャーが、2026年のスプリント形式はもう好きではないとGrande Prêmioに語った。走行時間が少なくマシン変更を検証しにくいため運に頼る面があり、うまく仕事ができていないチームに有利に働きかねないと述べた。昨年は楽しんでいたという。来季はスプリントが6戦から10戦に増え、モナコも含まれるが、ハジャーは失望する決定で、誰が決めているのか分からないと話した。記事は、シンガポールでの不振は主にRB22の跳ねやパワーユニットとギヤボックスのトラブルが原因だったとも指摘している。",
-      "orig": "Hadjar critica formato sprint que \"ajuda quem não trabalha bem\" na F1: \"Precisa ter sorte\"",
-      "url": "https://grandepremio.com/br/f1/hadjar-critica-formato-sprint-que-ajuda-quem-nao-trabalha-bem-na-f1-precisa-ter-sorte/",
-      "published": "2026-10-20T15:53:00-03:00"
-    },
-    {
-      "id": "en-gpblog-2028-race-distance-return",
-      "kind": "news",
-      "lang": "en",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "分析",
-      "topic": "f1-2027-race-distance",
-      "teams": [],
-      "title": "FIA、2028年は最低レース距離を305km超へ戻す　2027年の短縮は一時的措置",
-      "summary": "FIAが10月19日に公表した2027年スポーティング規則で、2028年にF1の最低レース距離が305km超へ戻るとGPblogが報じた。2027年は9月21日にF1委員会が承認した通り、305kmから290kmへ短縮され、周回数は2〜3周減る。背景には新パワーユニット規則があり、内燃機関と電気の比率が53対47から58対42へ変わって燃料流量が増える。通常距離のままだとタンク拡大に伴うシャシー変更とコストが必要になるため、2027年だけの措置とした。モナコは260km超が維持され、2028年のPUは比率60対40、内燃機関出力450kWへ進む。",
-      "orig": "FIA restores F1 race distance change for 2028 after 2027 reduction",
-      "url": "https://www.gpblog.com/en/news/fia-sets-out-2028-u-turn-on-controversial-f1-race-distance-change",
-      "published": "2026-10-21T22:01:00+02:00"
-    },
-    {
-      "id": "it-f1it-lusail-qatar-ready",
-      "kind": "news",
-      "lang": "it",
-      "region": "イタリア",
-      "source": "Formula1.it",
-      "cat": "サーキット",
-      "topic": "gulf-races-cancel-risk",
-      "circuit": "lusail",
-      "teams": [],
-      "title": "ルサイル、カタール開催の準備は「ほぼ完了」　MotoGPとF1を3週間差で",
-      "summary": "ルサイル・インターナショナル・サーキットは、MotoGPが11月6〜8日、F1が11月27〜29日に迫る中、準備はほぼ完了していると発表したとFormula1.itが伝えた。中東情勢を受けた安全面への懸念が広がっているが、最高経営責任者のアブドゥラジズ・アリ・アルムハンナディ氏は、両イベントは国際モータースポーツ界で最も待たれるものの一つだと述べた。観客席やホスピタリティの最終仕上げが進み、ファンフォーラムやシミュレーター、家族向けの空力ワークショップなども用意される。記事は、2つのイベントは通常通り開催されるとの見通しを示している。",
-      "orig": "F1 e MotoGP in Qatar, Lusail conferma i piani: «Preparativi quasi completati»",
-      "url": "https://www.formula1.it/news/33396/1/f1-e-motogp-in-qatar-lusail-conferma-i-piani-preparativi-quasi-completati",
-      "published": "2026-10-21T21:30:00+02:00"
     }
   ]
 }

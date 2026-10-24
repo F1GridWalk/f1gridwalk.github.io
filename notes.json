@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-10-25T00:30:00+09:00",
+  "updatedAt": "2026-10-25T06:30:00+09:00",
   "notes": [
+    {
+      "id": "note-formula1report-cota-fp3",
+      "platform": "note",
+      "site": "F1レポート",
+      "lang": "ja",
+      "paid": false,
+      "cat": "予選",
+      "author": "Yoshito",
+      "title": "【FP3】ハミルトン最速、フェラーリが好調を維持。Turn9を中心にトラックリミット違反が多発、タイヤの持ち越しは分かれる【アメリカGP】",
+      "summary": "アメリカGPのFP3を振り返り、ハミルトン最速とフェラーリ、レッドブルの好調を整理。9コーナーなどでのトラックリミット違反によるタイム抹消と、上位がソフトで走りミディアムを決勝に残す一方、中団はミディアムを使うというタイヤ戦略の違いを分析している。",
+      "url": "https://note.com/formula1report/n/n60f626dbc296",
+      "published": "2026-10-25T03:43:39+09:00",
+      "circuit": "austin"
+    },
     {
       "id": "substack-somersf1-ferrari-sf26-update",
       "platform": "substack",
@@ -771,24 +785,6 @@
       "teams": [
         "astonmartin"
       ]
-    },
-    {
-      "id": "blog-f1laplab-sepang-pitstop",
-      "platform": "blog",
-      "site": "F1ラップタイム研究室",
-      "lang": "ja",
-      "paid": false,
-      "cat": "分析",
-      "author": "Takumi",
-      "title": "2026年マレーシアGP ピットストップ分析",
-      "summary": "マレーシアGPのピットストップを、車両が止まっていた静止時間と、ピットレーン通過時間から静止時間を引いた「ボックスパフォーマンス」の二つの指標で分析。静止時間の最速はフェルスタッペンの2.09秒、ボックスパフォーマンスはベアマンが24.85秒で最良という結果を示している。",
-      "url": "https://f1-lap-time.com/?page_id=17575",
-      "published": "2026-10-05T18:10:00+09:00",
-      "teams": [
-        "haas",
-        "redbull"
-      ],
-      "circuit": "sepang"
     }
   ]
 }
