@@ -1837,7 +1837,7 @@ def build_rules():
                 'worksFor': {'@type': 'Organization', 'name': p['org']}, 'url': SITE + rb_url(tid), 'description': p['short']}
         og = rules_og(tid, p['name'], '人物', f'{p["role"]}（{p["org"]}）', 'F1人物辞典')
         _rb_page(R, tid, 'person', p['name'], '人物', al, p['short'], b, set(), ld_p,
-                 f'{p["name"]}（{p["org"]}）とは｜F1人物辞典｜F1グリッドウォーク', og)
+                 f'{p["name"]}とは｜経歴・役職（{re.sub(r"（.*?）", "", p["org"]).strip()}）｜F1人物辞典｜F1グリッドウォーク', og)
         sm.append((SITE + rb_url(tid), (p.get('checked') or R['checked']) + 'T09:00:00+09:00', None, '0.5'))
     # remove pages of entries that no longer exist
     rdir = os.path.join(ROOT, 'deep', 'rules')
@@ -2407,6 +2407,36 @@ STORY_SCROLL_JS = """<script>
 </script>"""
 
 
+# STORY subjects the slug does not spell out (ボノ = Peter Bonnington, Jos is not in the dictionary)
+STORY_SEO_NAMES = {'bono-leave-that-to-me': ['ボニントン', 'アントネッリ'],
+                   'jos-verstappen-setup': ['ヨス・フェルスタッペン'],          # not Max
+                   'haas-komatsu-fastest-driver': ['小松礼雄', '平川亮']}
+
+
+def story_seo_title(H):
+    """<title> for a STORY: the (often poetic) headline plus who it is about and the GP, so that a reader
+    searching 「角田裕毅」 or 「ボルトレート」 finds it (owner's OK, 24 Oct 2026). The visible headline is unchanged.
+    Who = people whose dictionary id contains a word of the slug (bortoleto-twenty-years → ボルトレート),
+    or STORY_SEO_NAMES. Never guessed from the lead: a lead names other people too."""
+    last = {}
+    for q in PEOPLE:
+        last.setdefault(q['name'].split('・')[-1], []).append(q)
+    def short(q):
+        n = q['name']
+        return n if '・' not in n or len(last[n.split('・')[-1]]) > 1 else n.split('・')[-1]
+    names = list(STORY_SEO_NAMES.get(H['slug'], []))
+    if not names:
+        for tok in H['slug'].split('-'):
+            hits = [q for q in PEOPLE if tok in q['id'].split('-') and len(tok) >= 3]
+            if len(hits) == 1 and short(hits[0]) not in names:
+                names.append(short(hits[0]))
+    names = [n for n in names if n not in H['title']][:2]
+    parts = [H['title'] + ('　' + 'と'.join(names) if names else '')]
+    if H.get('gp', '').endswith('GP'):
+        parts.append(H['gp'])
+    return '｜'.join(parts + ['STORY'])
+
+
 def reader_updates(updates):
     """What readers see under UPDATES: the news events, corrections and real additions,
     plus one line for when the STORY went out (the approval record, else the last making-of record)."""
@@ -2577,7 +2607,7 @@ def build_hubs(arch, flag_of):
         head = MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
-        write(f'topics/{slug}/index.html', page(f'{H["title"]}｜' + ('STORY' if H.get('story') else H.get('sub', '')) + '｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head))
+        write(f'topics/{slug}/index.html', page((story_seo_title(H) if H.get('story') else f'{H["title"]}｜' + H.get('sub', '')) + '｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head))
         out.append((url, H.get('checked', '') + 'T09:00:00+09:00', None, '0.7'))
     hs = hubs_newest()
     if hs:  # topics/index.html: every 読み解き, newest first (owner's request, 12 Oct 2026)
@@ -3485,10 +3515,16 @@ def main():
         sm.append(f'  <url><loc>{e(loc)}</loc><lastmod>{lm}</lastmod>' + (f'<changefreq>{cf}</changefreq>' if cf else '') + f'<priority>{pr}</priority></url>')
     sm.append('</urlset>')
     write('sitemap.xml', '\n'.join(sm) + '\n')
+    # the same URLs split in two (owner's OK, 24 Oct 2026): Search Console has shown sitemap.xml as
+    # 「取得できませんでした」 for weeks although it is valid; new file names give it a fresh fetch
+    head_, tail_ = sm[:2], sm[-1:]
+    urls_ = [l for l in sm[2:-1] if '<loc>' in l]
+    for fn_, keep in (('sitemap-news.xml', lambda l: '/news/' in l), ('sitemap-pages.xml', lambda l: '/news/' not in l)):
+        write(fn_, '\n'.join(head_ + [l for l in urls_ if keep(l)] + tail_) + '\n')
     build_feed(allarts)
 
     # robots.txt: everything may be crawled; say where the sitemap is
-    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
+    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap-pages.xml\nSitemap: {SITE}/sitemap-news.xml\n')
 
     # 404 page (GitHub Pages serves /404.html for any missing path)
     nf = ['<div class="nf"><p class="nf-code">404</p><h1>ページが見つかりませんでした</h1>'
