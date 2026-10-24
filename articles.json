@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T12:40:00+09:00",
+ "updatedAt": "2026-10-24T18:20:00+09:00",
  "topics": {
   "gulf-races-cancel-risk": {
    "title": "FIA会長「カタール・アブダビGPは開催」　中東情勢の不安の中で明言",
@@ -32,9 +32,89 @@
   "hadjar-verstappen-gap": {
    "title": "ハジャー、FP2で「乗れない」と訴え　フェルスタッペンとの差が拡大",
    "summary": "FP2でハジャーはフェルスタッペンに0.931秒及ばず9番手となり、マシンを「乗れない」と評した。セッション間のセットアップ変更でフロントタイヤが早々にオーバーヒートしたという。ワシェ技術責任者は方向性の誤りを認めて夜に調整する方針を示し、オランダ紙GPblogではモントーヤがチームの対応を求める声を伝えた。"
+  },
+  "ferrari-austin-update": {
+   "title": "フェラーリのオースティン改良、ドライバーの「小さな一歩」発言と実際の規模",
+   "summary": "フェラーリがアメリカGPに持ち込んだ空力改良について、ルクレールは効果を約0.05秒、ハミルトンは0.1秒未満と控えめに語った。一方、The RaceはFIAへの提出資料から、フロア前縁やサイドポッド、ディフューザーなど性能に関わる広い範囲に手が入っていると伝えている。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-us-gp-wide-open-fight",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "austin",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "mercedes",
+    "mclaren"
+   ],
+   "topic": "us-gp-friday-pace",
+   "title": "アメリカGP、フェラーリ・レッドブル・メルセデス・マクラーレンの4強が混戦　金曜の走りを分析",
+   "orig": "F1's wide-open US GP fight explained",
+   "url": "https://www.the-race.com/formula-1/f1-2026-wide-open-us-gp-fight-explained/",
+   "published": "2026-10-24T12:00:00+01:00",
+   "summary": "The Raceは金曜のデータから、フェラーリ、レッドブル、メルセデスの1周のペースが0.2秒未満に収まったと分析した。FP2の理論上のベストはルクレールが1分35秒291で、アントネッリ、フェルスタッペンが続く。フェルスタッペンはストレートでルクレールに約0.6秒勝る一方、1コーナーなど低速域で遅れ、技術責任者のワッシュは均衡探しが想定より難しかったと話した。ロングランの平均はノリスが最速で、マクラーレンもミスがなければ上位だったとみる。ハジャーはフロントタイヤの過熱に悩み、ハミルトンはバンプでの安定感を欠いたという。"
+  },
+  {
+   "id": "en-therace-ferrari-fia-submission-austin",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "circuit": "austin",
+   "teams": [
+    "ferrari",
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "ferrari-austin-update",
+   "title": "フェラーリのオースティン改良、ハミルトンの「0.1秒未満」発言より大規模　FIA提出資料が示す",
+   "orig": "Ferrari's most significant F1 aero upgrade of 2026 revealed",
+   "url": "https://www.the-race.com/formula-1/ferrari-f1-2026-us-gp-biggest-upgrade-revealed/",
+   "published": "2026-10-23T12:00:00+01:00",
+   "summary": "ハミルトンはフェラーリのアップデートを「非常に小さく、0.1秒未満」と語ったが、FIAへの提出資料はそれ以上の変更を示しているとThe Raceが伝えた。フロアの前縁、ボードの形状、サイドポッドの吸気口とアンダーカット、ディフューザーの容積や後縁まわりが改められている。フェラーリの狙いは、前後のフロアのダウンフォース増加と、後方の気流の安定だという。他チームではマクラーレンがブレーキダクトとディフューザーを改め、レッドブルはフロントタイヤ温度を測るためのベーンを追加した。レーシングブルズは大規模なパッケージで中位首位を狙う。"
+  },
+  {
+   "id": "en-therace-newey-honda-disappointment",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "チーム",
+   "circuit": "austin",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "newey-honda-progress-2027",
+   "title": "ニューウェイ「ホンダは今季の進歩にやや失望しているはず」　2027年のPU刷新に期待も慎重",
+   "orig": "Newey on Honda progress 'disappointment' and signs for 2027",
+   "url": "https://www.the-race.com/formula-1/adrian-newey-honda-f1-2026-progress-disappointment-2027-signs/",
+   "published": "2026-10-23T12:00:00+01:00",
+   "summary": "アストンマーティン代表のニューウェイが、アメリカGP金曜のFIA会見でホンダの進歩について語ったとThe Raceが伝えた。ホンダの今季のADUO改良は、アストンが安定して入賞争いをするには足りていないという。ニューウェイは「ホンダは今季の進歩の幅にやや失望しているはず」と述べつつ、その分決意は強まるとの見方を示した。責任の所在には踏み込まず、2027年に向けては桜のHRCで多くの取り組みが始まっているが、開幕時点の位置を語るのは時期尚早とした。第8戦ごろの追加投入の可能性にも触れ、燃料流量の増加など新規則への刷新が見込まれる。"
+  },
+  {
+   "id": "ja-f1are-sainz-gulf-races-comment",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "teams": [
+    "williams"
+   ],
+   "topic": "gulf-races-cancel-risk",
+   "title": "サインツ「カタールとアブダビの開催決定は納得しにくい」　ファンの受け止めは割れる",
+   "orig": "ウィリアムズのサインツ「カタール＆アブダビ開催の決定を納得するのは難しい」「でもやると言われればドライバーは従うしかない」",
+   "url": "https://f1are.com/blog-entry-4013.html",
+   "published": "2026-10-24T12:00:00+09:00",
+   "summary": "ファンのまとめサイト「F1のアレ」が、アメリカGP木曜の会見でのサインツの発言を取り上げた。FIA会長が最終盤のカタールとアブダビの開催を確認したことに、サインツはGPDAの立場ではなく個人として、現在の中東情勢では納得するのが難しいと述べた。米国の選挙など多くの状況が変わり得るため、いま断定するのは早いという考えで、開催が決まれば「ドライバーは従うしかない」とも話した。同じ会見でピアストリはFIAとF1への信頼を示し、ハジャーは分からないと答えたという。掲示板の反応は、サインツの発言を妥当とみる声と、FIAの判断を懸念する声に分かれた。"
+  },
   {
    "id": "en-f1-fp2-leclerc-antonelli-verstappen",
    "kind": "news",
@@ -1348,76 +1428,6 @@
    "orig": "F1, il futuro è un ritorno al passato? I V8 sono solo l'inizio",
    "url": "https://www.formula1.it/news/33361/1/f1-il-futuro-e-un-ritorno-al-passato-i-v8-sono-solo-l-inizio",
    "published": "2026-10-20T08:00:00+02:00"
-  },
-  {
-   "id": "ja-f1are-lawson-aston-opinion",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "topic": "lawson-aston-opinion",
-   "teams": [
-    "astonmartin",
-    "racingbulls",
-    "redbull"
-   ],
-   "title": "今のアストンマーティンにはローソンのようなドライバーを乗せるべきとの意見",
-   "summary": "F1のアレが、アストンマーティンにはアロンソよりローソンのようなドライバーが合うのではという意見を取り上げた。元はF1-Gate.comが伝えた元技術責任者ゲイリー・アンダーソンの見方で、ローソンがレーシングブルズで返したフィードバックがRB22のドライバビリティ改善に役立った可能性を指摘したという。ネットではアロンソが現行車に適応できていないとの声と、実績を考えれば比べても無意味だとの声に分かれている。ローソンへの過去の評価は主にスーパーフォーミュラ時代のもので、その後は結果を残しているとの指摘もあった。ただし匿名掲示板由来の意見であり、裏付けのある情報ではない。",
-   "orig": "今のアストンマーチンにはローソンのようなドライバーを乗せた方がいいのではないかとの意見",
-   "url": "https://f1are.com/blog-entry-4004.html",
-   "published": "2026-10-21T12:00:00+09:00"
-  },
-  {
-   "id": "en-therace-fia-cost-cap-ringfence",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ビジネス",
-   "topic": "fia-budgetcap-separation",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "astonmartin",
-    "ferrari"
-   ],
-   "title": "FIA、コストキャップ抜け道封じの厳格新ルール　F1部門と他部門を物理・IT両面で分離",
-   "summary": "FIAは世界モータースポーツ評議会で、2027年に向けコストキャップの抜け道を塞ぐ新規則を承認したとThe Raceが報じた。非F1プロジェクトの人員が費用計上なしにF1チームへ知見を流す事態を防ぐ狙いで、運用規則に12ページの新項目が加わる。工場はF1専用区域と非F1区域に分け、入退室記録を3年保存し、ITシステムも完全に分離する。非F1部門からF1へ移る人材には3か月の冷却期間と、12か月のF1専従が課される。複数のチームが抵抗したが、FIAは押し切ったという。",
-   "orig": "FIA imposes draconian rules on teams to stop cost cap exploitation",
-   "url": "https://www.the-race.com/formula-1/fia-imposes-draconian-new-rules-on-f1-teams-to-stop-cost-cap-exploitation/",
-   "published": "2026-10-21T12:00:00+01:00"
-  },
-  {
-   "id": "ja-f1gate-verstappen-exdrivers",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "ドライバー",
-   "topic": "verstappen-exdrivers-regulations",
-   "teams": [
-    "redbull"
-   ],
-   "title": "フェルスタッペン、元F1ドライバーの批判に反論「新レギュレーションを勉強していない」",
-   "summary": "マックス・フェルスタッペンはオランダ紙デ・テレフラーフのインタビューで、新規則を批判する元F1ドライバーに反論した。ダモン・ヒルがBBCで「楽しめないなら別のことをすべき」と語ったことが発端で、フェルスタッペンは「新レギュレーションをまったく勉強していない」と述べた。ただし全員を指すわけではないとも付け加えている。F1は意見に「少しは耳を傾けてくれた」とし、今後は燃焼エンジンの役割が増える可能性にも触れた。日本GP後に引退を考えたと語った経緯があり、レッドブルとの契約は2030年まで延長済みだが、そこまで走る保証はないという。",
-   "orig": "マックス・フェルスタッペン 元F1ドライバーの批判に反論「新レギュレーションを勉強していない」",
-   "url": "https://f1-gate.com/verstappen/229462.html",
-   "published": "2026-10-21T15:39:00+09:00"
-  },
-  {
-   "id": "ja-f1gate-button-24-races",
-   "kind": "news",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1-Gate.com",
-   "cat": "カレンダー",
-   "topic": "button-calendar-warning",
-   "title": "ジェンソン・バトン、F1年間24戦に警鐘「これ以上増やすべきではない」",
-   "summary": "2009年王者のジェンソン・バトンが、シンガポールで開かれたミルケン・インスティテュートのアジアサミットで、F1のカレンダー拡大に懸念を示した。開催数は2009年の17戦から2016年に21戦、現在は24戦へ増えている。バトンは「世界中で年間24戦を戦うのは本当に大変」と述べ、ドライバーは自家用機で帰宅できても、メカニックらスタッフは撤収して次の準備に向かうと負担を語った。2026年のパワーユニットは複雑でファンにも理解が必要だとし、持続可能燃料を使う燃焼エンジンへの回帰を望むとも話した。",
-   "orig": "ジェンソン・バトン F1年間24戦に警鐘「これ以上増やすべきではない」",
-   "url": "https://f1-gate.com/button/229433.html",
-   "published": "2026-10-21T14:08:00+09:00"
   }
  ]
 }
