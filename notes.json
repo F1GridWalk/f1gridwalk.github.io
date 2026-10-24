@@ -1,6 +1,49 @@
 {
- "updatedAt": "2026-10-24T06:30:00+09:00",
+ "updatedAt": "2026-10-24T12:40:00+09:00",
  "notes": [
+  {
+   "id": "note-formula1report-cota-friday-analysis",
+   "platform": "note",
+   "site": "F1レポート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Yoshito",
+   "title": "【金曜分析】フェラーリが好調、アップデートでコーナリング性能を強化。タイヤの熱管理が予選・決勝の焦点に、各チームの勢力図を分析【アメリカGP】",
+   "summary": "アメリカGPの金曜を総括し、ストレートの弱さをコーナリング性能で補うフェラーリが好調だと分析。ロングランの落ち込みはタイヤ摩耗ではなく熱によるデグラデーションが主因とみて、各チームの勢力図を整理している。",
+   "url": "https://note.com/formula1report/n/nf1ed88707fe7",
+   "published": "2026-10-24T10:18:33+09:00",
+   "circuit": "austin"
+  },
+  {
+   "id": "note-formula1report-cota-fp2",
+   "platform": "note",
+   "site": "F1レポート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Yoshito",
+   "title": "【FP2】ルクレールが再び最速、メルセデス&フェルスタッペンが僅差で続く。ロングランはサーマルデグが焦点に、タイヤ選択が鍵を握る週末へ【アメリカGP】",
+   "summary": "FP2は上位が僅差で、単独アタックのペースはFP1とほぼ変わらなかったと整理。ロングランではタイヤの摩耗よりも過熱が焦点で、ソフトは作動領域が狭いという見立てを示し、金曜の傾向がそのまま続くとは限らないとしている。",
+   "url": "https://note.com/formula1report/n/n305987478f02",
+   "published": "2026-10-24T07:09:32+09:00",
+   "circuit": "austin"
+  },
+  {
+   "id": "substack-somersf1-us-gp-document-cache",
+   "platform": "substack",
+   "site": "SomersF1",
+   "lang": "en",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "Matthew Somerfield",
+   "title": "2026年アメリカGP　資料集とテクニカル・ジャーナル",
+   "orig": "2026 United States Grand Prix document cache and tech journal",
+   "summary": "アメリカGPのテクニカル資料を整理した記事。ストレートモードのゾーンは2か所、ピレリはC2〜C4を持ち込み、ピットストップのロスは平均約21.5秒、レースでの回生は8.5MJ（オーバーテイク作動時は9MJ）といった数値をまとめている。",
+   "url": "https://somersf1.substack.com/p/2026-united-states-grand-prix-document",
+   "published": "2026-10-23T12:00:00+09:00",
+   "circuit": "austin"
+  },
   {
    "id": "note-formula1report-cota-fp1",
    "platform": "note",
@@ -741,52 +784,6 @@
    "summary": "燃料補正などを加えた推定で、マレーシアGPのレースペースを比較した分析。フェルスタッペンを基準にアントネッリが約0.2秒差、ラッセルは約0.5秒差と見積もる。フェルスタッペンが終盤に余力を残していたという仮定が上位の順位付けを左右する、と断っている。",
    "url": "https://f1-lap-time.com/?page_id=17581",
    "published": "2026-10-05T18:00:00+09:00",
-   "circuit": "sepang"
-  },
-  {
-   "id": "blog-f1laptime-malaysia-review",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Takumi",
-   "title": "マレーシアGPレビュー",
-   "summary": "マレーシアGPを予選から決勝まで振り返るレビュー。フェルスタッペンの勝利はマシンだけでなく本人の走りによるという見立てで、アントネッリがラッセルを21周目に抜いた展開や、アロンソの終盤の走りを数字で追っている。次戦シンガポールはアストンマーチンの好機と見る。",
-   "url": "https://f1-lap-time.com/?page_id=17551",
-   "published": "2026-10-05T17:00:00+09:00",
-   "circuit": "sepang"
-  },
-  {
-   "id": "substack-f1iq-verstappen-mercedes-upset",
-   "platform": "substack",
-   "site": "F1IQ",
-   "lang": "en",
-   "paid": false,
-   "cat": "決勝",
-   "author": "F1IQ",
-   "title": "フェルスタッペンが完成させたメルセデス番狂わせ",
-   "orig": "Verstappen Completes the Mercedes Upset",
-   "summary": "セパンの荒れたレースを振り返り、メルセデスの大型アップグレードが不発に終わる中でフェルスタッペンが楽に両者を抜いたと論じる。長く粘ったハミルトンの3位や、アストンマーティンの復調にも触れ、選手権ではアントネッリの優位が続くという見立てを示している。",
-   "url": "https://f1iq.substack.com/p/verstappen-completes-the-mercedes",
-   "published": "2026-10-05T14:42:00+09:00",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ]
-  },
-  {
-   "id": "blog-f1laptime-malaysia-race-pace",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Takumi",
-   "title": "2026年マレーシアGP レースペース分析",
-   "summary": "マレーシアGPで各ドライバーが同じタイヤ・条件で走った場合の持続的なレースペースを推定した分析。フェルスタッペンが最速で、アントネッリが毎周約0.2秒差、ルクレールとノリスが約0.4秒差、ラッセルが約0.5秒差と見積もっている。中団ではアロンソとコラピントが先頭に並ぶという見立てだ。",
-   "url": "https://f1-lap-time.com/?page_id=17581",
-   "published": "2026-10-05T12:00:00+09:00",
    "circuit": "sepang"
   }
  ]
