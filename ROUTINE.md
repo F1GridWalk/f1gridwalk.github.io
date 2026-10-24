@@ -59,12 +59,12 @@ Aim for 2–3 rumour articles (kind "rumor", cat "うわさ") per run when avail
 - UK: planetf1.com, gpfans.com, crash.net (search "rumours")
 Dating rumours (a driver's or team person's romantic partner) MAY be published as kind "rumor", cat "うわさ", only if ALL of these hold:
 - a named newspaper, magazine or sports/entertainment site reported it (never forums, matome blogs, anonymous social-media accounts);
-- if the only outlet is a tabloid (The Sun, Daily Mail, Mirror, Bild, etc.), skip it unless another outlet also reports it or the article states its basis (seen together at a named event, the two people's own public posts);
+- tabloids (The Sun, Daily Mail, Mirror, Bild, etc.) MAY be used (owner's decision, 24 Oct 2026), but then name the paper and say it is a tabloid in the summary (e.g. 「英タブロイド紙ザ・サンが報じた」) so readers can judge it themselves;
 - written as a report ("〜と報じた"), never as fact;
 - the partner is named only if they are a public figure themselves (model, athlete, influencer, actor …); otherwise write 「一般の女性」「一般の男性」 and nothing that could identify them;
 - no sensational words in titles (熱愛, 破局か, 衝撃, 激写 …);
 - if the person or partner later denies it, add the denial to that article's summary on the next run, or remove the article.
-Still never: family members, children, health, pregnancy rumours, where anyone lives, paparazzi-only material, ex-partners' revelations (things the person announced themselves go under 2b).
+Still never: family members, children, health, pregnancy rumours, where anyone lives, stories whose only basis is paparazzi photos, ex-partners' revelations (things the person announced themselves go under 2b).
 
 ## 3. Check every candidate
 Open it with WebFetch and check (a) the complete text is visible for free and (b) what it actually says. Reject if (a) is not clearly yes, if the fetch fails, returns only a teaser, or is a live blog. Summaries only from what the article says; never invent facts, numbers or quotes; leave out details that sources disagree on.
