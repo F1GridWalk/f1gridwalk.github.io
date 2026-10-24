@@ -39,6 +39,11 @@ html body #news .card .teamtags{padding-top:0 !important}
 html body #news .card h3{margin-top:0 !important}
 /* phone only: easier to read (owner's request, 6 Oct 2026) */
 @media (max-width:520px){
+/* news view tabs (新着・テック・パドックの噂…): never cut off; if a phone's font is wider, the row scrolls sideways (owner, 25 Oct 2026) */
+#news .seg{overflow-x:auto !important;scrollbar-width:none;-webkit-overflow-scrolling:touch;justify-content:flex-start}
+#news .seg::-webkit-scrollbar{display:none}
+#news .seg .ph-x{display:none}
+#news .seg button{flex:1 0 auto !important;min-width:auto !important;padding:0 6px !important;font-size:12.5px !important;letter-spacing:0 !important}
 /* first screen, preview (owner, 25 Oct 2026): header in one row, smaller STORY button */
 header.top .hd-intro .hi-t{display:none !important}
 header.top .brand-desk{display:none !important}
@@ -1823,9 +1828,9 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
             <div class="seg" role="group" aria-label="並べ方">
               <button type="button" id="view-latest" aria-pressed="true">新着</button>
               <button type="button" id="view-tech" aria-pressed="false">テック</button>
-              <button type="button" id="view-rumor" aria-pressed="false">パドックの噂</button>
+              <button type="button" id="view-rumor" aria-pressed="false" aria-label="パドックの噂"><span class="ph-x">パドックの</span>噂</button>
               <button type="button" id="view-analysis" aria-pressed="false">個人分析</button>
-              <button type="button" id="view-ja" aria-pressed="false" title="日本の媒体の記事だけを表示">日本語のみ</button>
+              <button type="button" id="view-ja" aria-pressed="false" title="日本の媒体の記事だけを表示" aria-label="日本語のみ">日本語<span class="ph-x">のみ</span></button>
             </div>
           </div>
           <p class="feed-jump">探し方<a href="/news/" data-track="click/top/jump/news">ニュース一覧</a><a href="/gp/" data-track="click/top/jump/gp">GPから探す</a><a href="/teams/" data-track="click/top/jump/teams">チームから探す</a></p>
