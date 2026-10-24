@@ -3146,6 +3146,49 @@ def build_drivers(by_term):
     return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
 
 
+def top_rail_slot():
+    """Phone top page: the newest STORY and the newest WORLD GRID, DEEP GRID and OFF GRID as big cards
+    you swipe sideways (owner chose design B, 25 Oct 2026). Fills <!--pre:rail--> in index.html; on phones
+    it replaces the STORY box and the two column rows, on wider screens it is hidden."""
+    cards = []
+    H = latest_hub()
+    if H:
+        S = H.get('story') or {}
+        cards.append(('story', f'/topics/{H["slug"]}/', 'STORY' + (f' · {H["gp"]}' if H.get('gp', '').endswith('GP') else ''),
+                      H['title'], S.get('hook') or H.get('dek', ''), 'STORY を読む'))
+    for k in ('world', 'deep', 'off'):
+        x = next((c for c in ALL_COLS if c['kind'] == k), None)
+        if x:
+            cards.append((k, x['url'], COL_TAG[k], x['title'], '', '読む'))
+    blk = ''
+    if cards:
+        blk = ('<style>.top-rail{display:none}'
+               '@media (max-width:520px){.top-rail{display:block;width:100vw;margin:0 0 6px calc(50% - 50vw);order:-5}'
+               '.hero .hero-in,.hero .duo{display:none !important}'
+               '.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
+               '.rail::-webkit-scrollbar{display:none}'
+               '.rcard{flex:0 0 84%;scroll-snap-align:start;scroll-margin-left:16px;border-radius:18px;padding:16px 16px 18px;min-height:236px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}'
+               '.rc-story{background:#1F2420}.rc-world{background:#B8673F}.rc-deep{background:#8E2F3B}.rc-off{background:#2F6B66}'
+               '.rcard small{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,.18)}'
+               '.rc-story small{background:var(--hl,#FFEE9A);color:#1F2420}'
+               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:23px;line-height:1.4;font-weight:900;margin:12px 0 8px}"
+               '.rcard p{margin:0;font-size:13.5px;line-height:1.7;opacity:.88;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}'
+               '.rcard span.go{font-weight:800;font-size:13px;margin-top:12px}'
+               '.rdots{display:flex;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}'
+               '</style><div class="top-rail" aria-label="今日の読みもの"><div class="rail" id="rail">'
+               + ''.join(f'<a class="rcard rc-{k}" href="{e(u)}" data-track="click/top/rail/{k}"><div><small>{e(tag)}</small><b>{e(t)}</b>'
+                         + (f'<p>{e(d)}</p>' if d else '') + f'</div><span class="go">{e(go)} →</span></a>' for k, u, tag, t, d, go in cards)
+               + '</div><div class="rdots" aria-hidden="true">' + ''.join('<i></i>' for _ in cards) + '</div></div>'
+               '<script>(function(){var r=document.getElementById("rail");if(!r)return;var d=r.parentNode.querySelectorAll(".rdots i");'
+               'function u(){var w=r.firstElementChild?r.firstElementChild.offsetWidth+12:1,i=Math.round(r.scrollLeft/w);'
+               'for(var j=0;j<d.length;j++)d[j].className=j===i?"on":"";}r.addEventListener("scroll",u,{passive:true});u();})();</script>')
+    ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
+    out = re.sub(r'(<!--pre:rail-->).*?(<!--/pre:rail-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
+    if out != src:
+        with open(ip, 'w', encoding='utf-8') as fh:
+            fh.write(out)
+
+
 def top_latest_slot(allarts):
     """Top page first screen: the three newest headlines under the columns, so a visitor sees there is news
     without scrolling (owner asked to see it, 25 Oct 2026). Fills <!--pre:latest--> in index.html."""
@@ -3556,6 +3599,7 @@ def main():
     urls += build_drivers(by_term)
     top_people_slot()
     top_latest_slot(allarts)
+    top_rail_slot()
     add_related()
     urls += month_sm
     urls += build_gp_pages(flag_of, circuits)
