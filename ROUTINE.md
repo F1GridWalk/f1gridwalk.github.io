@@ -62,7 +62,7 @@ Dating rumours (a driver's or team person's romantic partner) MAY be published a
 - tabloids (The Sun, Daily Mail, Mirror, Bild, etc.) MAY be used (owner's decision, 24 Oct 2026), but then name the paper and say it is a tabloid in the summary (e.g. 「英タブロイド紙ザ・サンが報じた」) so readers can judge it themselves;
 - written as a report ("〜と報じた"), never as fact;
 - the partner is named only if they are a public figure themselves (model, athlete, influencer, actor …); otherwise write 「一般の女性」「一般の男性」 and nothing that could identify them;
-- no sensational words in titles (熱愛, 破局か, 衝撃, 激写 …);
+- titles may use 「熱愛」「破局」 only together with the outlet that reported it, never as our own claim (e.g. 「〇〇に熱愛報道　英紙」「破局と伊誌が報道」; owner's decision, 25 Oct 2026, same as the column rules); still never 「衝撃」「激写」 or other sensational words;
 - if the person or partner later denies it, add the denial to that article's summary on the next run, or remove the article.
 Still never: family members, children, health, pregnancy rumours, where anyone lives, stories whose only basis is paparazzi photos, ex-partners' revelations (things the person announced themselves go under 2b).
 
