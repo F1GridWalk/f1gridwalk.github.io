@@ -2372,6 +2372,41 @@ def latest_hub():
 UPD_INTERNAL = re.compile(r'^F1 Grid Walk：|オーナー|下書き|第\d+稿|注釈|レビュー|原文を確認|読者点検')
 
 
+# How far STORY readers get: half of the story, its end, the NEXT links (once each per visit; no personal data).
+# Owner's OK, 24 Oct 2026 — to see whether readers who leave after one STORY reached the links at the end.
+STORY_SCROLL_JS = """<script>
+(function(){
+  var slug = '__SLUG__';
+  function gc(path, title){
+    var n = 0;
+    (function t(){
+      if (window.goatcounter && window.goatcounter.count){ try { window.goatcounter.count({ path:path, title:title, event:true }); } catch(e){} return; }
+      if (++n < 20) setTimeout(t, 500);
+    })();
+  }
+  function top(sel){ var el = document.querySelector(sel); return el ? el.getBoundingClientRect().top : null; }
+  var marks = [
+    ['half', 'STORY：本文の半分まで見えた', function(){ var a = top('.hub-story .hub-by'), b = top('.hub-story .hub-kw') || top('.hub-nq'); return (a === null || b === null) ? null : (a + b) / 2; }],
+    ['end', 'STORY：本文の終わりまで見えた', function(){ var b = top('.hub-story .hub-kw'); return b === null ? top('.hub-nq') : b; }],
+    ['next', 'STORY：「次の疑問へ」まで見えた', function(){ return top('.hub-nq'); }]
+  ];
+  var busy = false;
+  function check(){
+    busy = false;
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    marks = marks.filter(function(m){
+      var y = m[2]();
+      if (y !== null && y < h * 0.8){ gc('scroll/story/' + slug + '/' + m[0], m[1] + '（' + slug + '）'); return false; }
+      return true;
+    });
+    if (!marks.length) window.removeEventListener('scroll', on);
+  }
+  function on(){ if (!busy){ busy = true; (window.requestAnimationFrame || setTimeout)(check); } }
+  window.addEventListener('scroll', on, { passive:true });
+})();
+</script>"""
+
+
 def reader_updates(updates):
     """What readers see under UPDATES: the news events, corrections and real additions,
     plus one line for when the STORY went out (the approval record, else the last making-of record)."""
@@ -2537,6 +2572,8 @@ def build_hubs(arch, flag_of):
             if ups:
                 b.append('<h2><i>UPDATES</i>この話題の動き</h2><ul class="hub-up">' + ''.join(f'<li><time>{e(fmt(u["at"]))}</time><span>{e(u["t"])}</span></li>' for u in ups) + '</ul>')
         b.append('<p style="margin-top:26px"><a href="/#news">← 最新の記事へ</a></p></div>' + term_assets(used))
+        if H.get('story'):
+            b.append(STORY_SCROLL_JS.replace('__SLUG__', slug))
         head = MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
