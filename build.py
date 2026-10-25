@@ -3150,16 +3150,27 @@ def top_rail_slot():
     """Phone top page: the newest STORY and the newest WORLD GRID, DEEP GRID and OFF GRID as big cards
     you swipe sideways (owner chose design B, 25 Oct 2026). Fills <!--pre:rail--> in index.html; on phones
     it replaces the STORY box and the two column rows (the three-headline box was dropped the same night: the news list right below already starts on the first screen), on wider screens it is hidden."""
-    cards = []
+    def md(d):
+        return f'{d.astimezone(JST).month}/{d.astimezone(JST).day}'
+    dated = []  # (when, card) — newest first (owner, 26 Oct 2026: tiles in order of update)
     H = latest_hub()
     if H:
         S = H.get('story') or {}
-        cards.append(('story', f'/topics/{H["slug"]}/', 'STORY' + (f' · {H["gp"]}' if H.get('gp', '').endswith('GP') else ''),
-                      H['title'], S.get('hook') or H.get('dek', ''), 'STORY を読む'))
+        ups = [u.get('at', '') for u in H.get('updates', []) if u.get('at')]
+        try:
+            hd = datetime.fromisoformat(max(ups)) if ups else datetime.fromisoformat(H.get('checked', '2000-01-01') + 'T09:00:00+09:00')
+        except Exception:
+            hd = datetime(2000, 1, 1, tzinfo=timezone.utc)
+        if hd.tzinfo is None:
+            hd = hd.replace(tzinfo=JST)
+        dated.append((hd, ('story', f'/topics/{H["slug"]}/', 'STORY' + (f' · {H["gp"]}' if H.get('gp', '').endswith('GP') else '') + f' · {md(hd)}',
+                           H['title'], S.get('hook') or H.get('dek', ''), 'STORY を読む')))
     for k in ('world', 'deep', 'off'):
         x = next((c for c in ALL_COLS if c['kind'] == k), None)
         if x:
-            cards.append((k, x['url'], COL_TAG[k], x['title'], '', '読む'))
+            dated.append((x['dt'], (k, x['url'], f'{COL_TAG[k]} · {md(x["dt"])}', x['title'], '', '読む')))
+    dated.sort(key=lambda t: t[0], reverse=True)
+    cards = [c for _, c in dated]
     blk = ''
     if cards:
         blk = ('<style>.top-rail{display:none}'
