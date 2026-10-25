@@ -1,10 +1,6 @@
 {
-  "updatedAt": "2026-10-26T00:25:00+09:00",
+  "updatedAt": "2026-10-26T06:30:00+09:00",
   "topics": {
-    "gulf-races-cancel-risk": {
-      "title": "FIA会長「カタール・アブダビGPは開催」　中東情勢の不安の中で明言",
-      "summary": "FIAのベン・スライエム会長は、中東情勢が不安定な中でも最終2戦のカタールGPとアブダビGPは予定どおり開催されると明言した。判断期限は9月中旬から10月中旬に延び、MotoGPのカタール戦開催確認も追い風となった。会長は子どもがUAEにいることを挙げて安全性を強調する一方、イモラの代替準備は「常に可能」とし、重要スタッフ向けの第2チームも待機させている。一方サインツは、中東情勢と11月の米中間選挙で状況が急変し得るとして、開催をいま確信するのは難しいと述べた。"
-    },
     "mclaren-austin-upgrade": {
       "title": "マクラーレン、最終アップデート第1弾をオースティンに投入　「一歩遅れている」",
       "summary": "マクラーレンはオースティンにブレーキ改善とフロア挙動を狙った控えめな改良を投入し、独メディアはフロントサスペンション形状とディフューザーの変更だと報じた。パッケージはラスベガスにかけて段階投入され、次はブラジルが予定されている。ノリスは練習後に「一歩遅れている」と述べ、コンストラクターズ3位の防衛が焦点となる。"
@@ -33,10 +29,6 @@
       "title": "シンガポールでのホンダ製PUのドライバビリティ問題",
       "summary": "アロンソが指摘したシンガポールでのホンダ製PUのドライバビリティ不良について、ホンダは制御が要求水準に達していないと認めた。独メディアは原因をターボラグと伝え、新ターボ投入後も高エネルギー消費のコースでは抑え切れなかったとする。対策は主にソフトとキャリブレーションで進められている。"
     },
-    "norris-piastri-singapore-sprint": {
-      "title": "ノリスとピアストリのシンガポール接触とマクラーレンの対応",
-      "summary": "シンガポールのスプリントで起きたノリスとピアストリの接触について、マクラーレンは処分を科さない方針を示した。ステラ代表はチームとして受け入れられないとしつつ、チームメイト同士の争い自体は禁じていない。ノリスはその後たくさん叱られたと明かした。"
-    },
     "us-gp-grid-penalties": {
       "title": "アメリカGP　PU部品の使用超過でグリッド降格",
       "summary": "アメリカGPではリンドブラッド、コラピント、ボルトレートがパワーユニット部品の使用数超過でグリッド降格を受けた。ボルトレートは部品交換が重なって最後尾スタートとなる見込みで、アウディにとって初のコンポーネント交換ペナルティとなった。予選ではQ2でヒュルケンベルグのスリップストリーム役を務めた。"
@@ -56,9 +48,142 @@
     "cota-bumps-2026": {
       "title": "COTAの路面の凹凸をめぐるドライバーと主催者の議論",
       "summary": "アメリカGPの舞台COTAの凹凸に、フェルスタッペンやサインツが苦言を呈した。フェルスタッペンは体への負担を訴え、地盤から作り直すべきだと主張。主催側のエプスタイン代表は多くの凹凸は除去済みと説明する。一方ハミルトンは背中は問題なく、凹凸はコースの個性だと受け止めている。"
+    },
+    "antonelli-title-austin": {
+      "title": "アントネッリ、オースティンでタイトル決定なるか",
+      "summary": "アメリカGPでポールを獲得したアントネッリは、2位ラッセルに102点差をつけ、決勝次第で王座を決める可能性がある。Motorsport-Magazinはトラックリミットの扱いが運命を分けうると見る。一方ラッセルは6番手スタートで、ファンイベントでは阻止策を冗談交じりに語った。ただしラッセルの逆転は数字上の可能性にとどまる。"
+    },
+    "austin-track-limits-2026": {
+      "title": "オースティンのトラックリミット問題、FIAが白線を拡幅",
+      "summary": "COTAでは金曜のFP1・FP2だけで207周のタイムがトラックリミット違反で抹消された。FIAは12・15・20コーナーの白線を広げ、青いマーカーも移動した。決勝は3回の違反で黒白旗、4回目で5秒加算となる。Motorsport-Magazinも土曜にFP3で多数の違反が出たことを伝えている。"
     }
   },
   "articles": [
+    {
+      "id": "de-formel1de-russell-party-plan-antonelli",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Formel1.de",
+      "cat": "ドライバー",
+      "circuit": "austin",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "antonelli-title-austin",
+      "title": "ラッセル、アントネッリの王座を止める策を冗談交じりに語る　ファンイベントで",
+      "orig": "Party-Plan gegen den Teamkollegen: So will Russell Antonellis WM verhindern",
+      "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-25/party-plan-gegen-den-teamkollegen-so-will-russell-antonellis-wm-verhindern",
+      "published": "2026-10-25T13:29:00+01:00",
+      "summary": "ラッセルはアメリカGPを前にしたファンイベントで、アントネッリのタイトルを阻むため飲みに誘うと冗談を飛ばした。20歳のアントネッリは米国の飲酒可能年齢の21歳に届かず、記事は実行は疑わしいと見る。アントネッリはラッセルに102点差をつけ、オースティンで王座を決める可能性がある。予選はアントネッリがポール、ラッセルは6番手で、Q3のベストはQ2より約0.25秒遅く、12コーナーでのスライドと最終区間のタイヤ温度が原因だと本人は話した。"
+    },
+    {
+      "id": "de-formel1de-leclerc-hamilton-limit",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Formel1.de",
+      "cat": "ドライバー",
+      "circuit": "austin",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-leclerc-hamilton-limit",
+      "title": "ルクレール「もう見たくない」　ハミルトンとの接近戦、フェラーリの限界線を語る",
+      "orig": "Leclerc warnt Ferrari vor nächstem Zwischenfall: \"Wir kennen die Grenze\"",
+      "url": "https://www.formel1.de/news/news/2026-10-25/leclerc-warnt-ferrari-vor-naechstem-zwischenfall-wir-kennen-die-grenze",
+      "published": "2026-10-25T20:28:00+01:00",
+      "summary": "ルクレールはアメリカGPを前に、フェラーリの2台は接近戦での限界線を心得ていると述べた。今季その線を自分もハミルトンも越えたと認め、「もう一度見たくない」と語っている。記事が挙げるのはモンツァでの接触で、ハミルトンの進路取りに譲らなかったルクレールが外側の縁石へ押し出したと振り返る。その後ヴァッセール代表が両者と非公開で話し合ったという。2人は4番手と5番手から決勝に臨み、COTAの1コーナーが火種になりうると記事は指摘する。"
+    },
+    {
+      "id": "en-therace-teammate-qualifying-comparison-2026",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "分析",
+      "teams": [
+        "mercedes",
+        "ferrari",
+        "mclaren"
+      ],
+      "topic": "teammate-qualifying-2026",
+      "title": "2026年F1チームメイト対決、予選の勝敗と平均タイム差を全チームで集計",
+      "orig": "How F1 2026 team-mates are comparing in qualifying",
+      "url": "https://www.the-race.com/formula-1/how-f1-2026-team-mates-are-comparing-in-qualifying/",
+      "published": "2026-10-25T12:00:00+00:00",
+      "summary": "The Raceが今季のチームメイト同士の予選成績を、GP予選24回とスプリント予選6回、最大30回の比較で集計した。マクラーレンはノリスがピアストリに16勝8敗、メルセデスはアントネッリがラッセルに13勝10敗で、平均0.101秒先行する。フェラーリはルクレールがハミルトンに13勝11敗とほぼ互角で、平均差は0.047秒だった。差が大きい組ではアストンマーティンのアロンソがストロールに19勝3敗、平均0.360秒の差をつけている。数値は出走できなかった回だけを除いた生データだと説明されている。"
+    },
+    {
+      "id": "en-therace-verstappen-lost-pole-sector-analysis",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "予選",
+      "circuit": "austin",
+      "teams": [
+        "redbull",
+        "mercedes"
+      ],
+      "topic": "austin-quali-red-bull-sectors",
+      "title": "アントネッリにポールを許したフェルスタッペン　Q3の区間差とハジャーの猛追を分析",
+      "orig": "How Verstappen lost pole to Antonelli - and nearly got beaten by Hadjar",
+      "url": "https://www.the-race.com/formula-1/how-verstappen-lost-pole-to-antonelli-and-nearly-got-beaten-by-hadjar/",
+      "published": "2026-10-25T12:00:00+00:00",
+      "summary": "アントネッリは1分34秒035でポールを獲得し、フェルスタッペンが2番手、ハジャーが僅差で続いた。区間別ではレッドブルが第1セクターで0.065秒速く、アントネッリは第2で0.049秒、第3で0.057秒上回ったという。フェルスタッペンは最終セクターの後輪グリップ不足を訴え、最初のQ3アタックは「感触が悪かった」と話した。ハジャーは第2セクターでフェルスタッペンより0.1秒近く速く、両者のベストをつなげてもアントネッリより0.041秒遅いだけだった。メルセデスは低速コーナーが弱点とされる。"
+    },
+    {
+      "id": "nl-gpblog-fia-track-limits-207-austin",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "サーキット",
+      "circuit": "austin",
+      "topic": "austin-track-limits-2026",
+      "title": "FIA、オースティンでトラックリミットの白線を拡幅　金曜だけで207周が抹消",
+      "orig": "FIA grijpt in na 207 overtredingen van coureurs in Austin",
+      "url": "https://www.gpblog.com/nl/nieuws/fia-grijpt-in-na-207-overtredingen-van-coureurs-in-austin",
+      "published": "2026-10-25T19:28:00+01:00",
+      "summary": "GPblogによると、FIAのレースディレクターのマルケスは、12・15・20コーナーの白線を広げ、青いマーカーの位置も動かした。金曜のFP1で79周、FP2で128周、合計207周のタイムがトラックリミット違反で抹消されたためだ。違反が多かったのは6・12・15・19・20コーナーで、ノリスが18回、ルクレールが15回、ハミルトンが14回だった。アントネッリは最初の2セッションで13回、フェルスタッペンは金曜に3回だった。決勝では3回の違反で黒白旗、4回目で5秒加算となる。"
+    },
+    {
+      "id": "nl-gpblog-bottas-cadillac-herta-rumor",
+      "kind": "rumor",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "うわさ",
+      "circuit": "austin",
+      "teams": [
+        "cadillac"
+      ],
+      "topic": "cadillac-2027-drivers-rumor",
+      "title": "キャデラック、ボッタスに代えハータ昇格を真剣に検討か　本人は「F1ではよくあること」",
+      "orig": "Bottas hoort 'geruchten' over Cadillac-ontslag en reageert stellig",
+      "url": "https://www.gpblog.com/nl/nieuws/bottas-hoort-geruchten-over-cadillac-ontslag-en-reageert-stellig",
+      "published": "2026-10-25T13:45:00+01:00",
+      "summary": "GPblogは、キャデラックが2027年にコルトン・ハータを昇格させ、ボッタスの後任としてペレスの相棒にする案を真剣に検討していると伝えた。ハータの方が若く伸びしろがあり、アメリカ人でPR面でも魅力的という理由だ。確定ではなく、ハータはスーパーライセンスにあと1ポイント必要で、100km以上を問題なく走ることを条件にFP1の追加走行を狙う構想もある。ボッタスは予選後、噂は聞いているが「F1ではそういうもの」と平静で、来季も走る前提だと話した。ブトコウスキー代表が残留を確約しなかったことが憶測を呼んでいる。"
+    },
+    {
+      "id": "ja-f1jouhou2-tsunoda-cadillac-contact",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1情報通",
+      "cat": "まとめ",
+      "teams": [
+        "cadillac",
+        "astonmartin"
+      ],
+      "topic": "cadillac-2027-drivers-rumor",
+      "title": "英メディアによると角田裕毅がキャデラックと接触、オコンはアストンのリザーブ濃厚との話題",
+      "orig": "英メディア「角田裕毅はキャデラックF1と連絡を取っている」「オコンはアストンリザーブの可能性が高い」",
+      "url": "https://f1jouhou2.com/blog-entry-31783.html",
+      "published": "2026-10-25T18:00:00+09:00",
+      "summary": "F1情報通が、英The Raceの発信をもとに、角田裕毅が2027年のシートに向けてキャデラックと連絡を取っていると紹介した。同じ話題では、オコンはキャデラックには加わらずアストンマーティンのリザーブになる可能性が高く、ボッタスの後任はハータが最有力とされ、ペレスの席は安泰という。コメント欄では角田の起用を歓迎する声がある一方、キャデラックは多くのドライバーと接触しているので通常の情報収集ではないかと冷静にみる意見もある。いずれも未確認の話である。"
+    },
     {
       "id": "en-planetf1-bottas-cadillac-seat-response",
       "kind": "rumor",
@@ -1366,122 +1491,6 @@
       "url": "https://www.formula1.com/en/latest/article/it-would-be-a-dream-antonelli-targets-perfect-weekend-in-austin-to-claim-maiden-f1-title.39LQkTCcrGsLcfcPGgd4ud",
       "published": "2026-10-22T21:27:00+01:00",
       "summary": "メルセデスのアントネッリが、アメリカGPで自身初のF1王座を決める可能性がある。今季は17戦で8勝を挙げ、ほかに6度表彰台に立っている。決めるには決勝で優勝し、チームメートのラッセルが9位以下に終わることが必要で、ハミルトンやフェルスタッペンも大きく順位を落とす必要がある。本人は「夢のようだ」と話す一方、タイトルを考えるのは「クレイジー」だとして一戦ずつ臨む姿勢で、エンジニアのボノとは「楽しむこと」を確認した。優勝すればF1史上最年少の王者となる。"
-    },
-    {
-      "id": "de-formel1de-bearman-camara-haas-ferrari",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "ドライバー",
-      "teams": [
-        "ferrari",
-        "haas"
-      ],
-      "topic": "hamilton-ferrari-successor",
-      "title": "ハースで同僚になるベアマンとカマラ、フェラーリ昇格を巡り静かな競争",
-      "orig": "Ferrari-Duell bei Haas: Bearman und Camara kämpfen um Scuderia-Cockpit",
-      "url": "https://www.formel1.de/news/news/2026-10-22/ferrari-duell-bei-haas-bearman-und-camara-kaempfen-um-scuderia-cockpit",
-      "published": "2026-10-22T23:46:00+02:00",
-      "summary": "ハースで2年目のベアマン（21）は、将来のフェラーリ入りを望み、ハミルトンの後継候補に挙げられている。2027年にはオコンに代わり、F2首位のカマラ（21）が同僚となる見通しで、ベアマンの正式発表は形式的なものとされる。2人ともフェラーリ育成出身で、ベアマンは「ラファのF1経験は私より少ない」と述べ、フェラーリは中期的に誰を乗せるか見ているはずだと語った。ルクレールは複数年契約で、ハミルトンは2027年も残留するため、席が空く時期は読みにくい。"
-    },
-    {
-      "id": "ja-f1gate-renault-sells-viry-engine-dumarey",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "provider": "Reuters",
-      "cat": "ビジネス",
-      "teams": [
-        "alpine"
-      ],
-      "topic": "renault-viry-sale-dumarey",
-      "title": "ルノー、F1エンジン開発拠点をベルギーのデュマレーに売却　雇用150人は維持",
-      "orig": "ルノー F1エンジン開発拠点をベルギー企業に売却 150人の雇用維持",
-      "url": "https://f1-gate.com/renault/229712.html",
-      "published": "2026-10-23T07:06:00+09:00",
-      "summary": "ルノーは、パリ近郊ヴィリー・シャティヨンのF1エンジン部門アルピーヌ・レーシングSASを、ベルギーのパワートレイン企業デュマレー・グループに売却することで合意した。ロイター通信によると、約150人の雇用は維持され、金額は明らかにされていない。ルノーは2024年に独自PUの開発をやめており、アルピーヌは今季からメルセデス製を使う。売却対象はエンジン部門のみでチーム本体は含まない。両社はこの拠点の技術を将来ほかのチームへ提供する可能性に触れたが、具体的な契約はない。"
-    },
-    {
-      "id": "ja-f1gate-tsunoda-skips-indycar-test",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "ドライバー",
-      "topic": "tsunoda-indycar-test-skip",
-      "title": "角田裕毅、インディカーのテスト参加を見送り　2027年F1の席探しを優先",
-      "orig": "角田裕毅 インディカーのテスト参加を見送り 2027年F1残留を優先",
-      "url": "https://f1-gate.com/yuki-tsunoda/229739.html",
-      "published": "2026-10-23T07:28:00+09:00",
-      "summary": "角田裕毅が、10月26日にバーバー・モータースポーツ・パークで予定されていたミーヤー・シャンク・レーシングのインディカー・テストへの参加を見送った。米RACERの報道を引くもので、2027年のF1参戦の選択肢を優先したという。2027年にキャデラックの席を望む1人とも伝えられるが、契約交渉が確認されたわけではない。インディカーの可能性が消えたとは限らず、年内に別日程でテストが行われる余地は残るが、新たな日程は確定していない。"
-    },
-    {
-      "id": "de-formel1de-redbull-comeback-2026",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "分析",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "redbull-2026-comeback",
-      "title": "レッドブルはなぜ今季を立て直せたのか　ベースの弱さから優勝争いへ",
-      "orig": "Beeindruckendes Comeback: Wie hat Red Bull seine Saison 2026 gerettet?",
-      "url": "https://www.formel1.de/news/news/2026-10-22/beeindruckendes-comeback-wie-hat-red-bull-seine-saison-2026-gerettet",
-      "published": "2026-10-22T23:48:00+02:00",
-      "summary": "フェルスタッペンはランキング2位のラッセルに17点差まで迫り、「優勝しなければ意味がない」と語った。レッドブルはモンツァ予選前に「ぽんこつ」と呼ばれたが、直近の3連戦で2勝と2位を記録した。レース最適ペースとの差は開幕のオーストラリアで1周1.377秒、日本で1.052秒あったが、夏休み前には約0.2秒まで縮んだという。立て直しの要因は軽量化や空力の改良の積み重ねで、バクーの新アンダーフロアとサイドポッドがクルマを扱いやすくしたとフェルスタッペンは述べた。"
-    },
-    {
-      "id": "en-therace-hamilton-overruled-ferrari-singapore",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "ドライバー",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "hamilton-singapore-overrule",
-      "title": "ハミルトン、シンガポールでピット指示を「自分の判断で拒んだ」と説明",
-      "orig": "Hamilton explains why he overruled Ferrari in Singapore",
-      "url": "https://www.the-race.com/formula-1/hamilton-explains-why-he-overruled-ferrari-in-singapore/",
-      "published": "2026-10-22T12:00:00+01:00",
-      "summary": "ハミルトンがアメリカGPを前に、シンガポールGPでバーチャルセーフティカー中にピットへ入らなかったのは、ピットのミスではなく自分がチームの指示を覆したからだと説明した。「一瞬の判断でステイアウトを選んだ」と述べ、ピット入口に近づいた時点で誤りに気づいたという。ミディアムで発進したのはフェルスタッペンに勝つためで、そのまま走れば2位か3位止まりだと考えていた。タイヤは終盤に垂れ、結果は6位に終わった。チームとは再発防止を話し合い、関係は変わらないと語り、「チームのポイントを失うのは堪える」と述べている。"
-    },
-    {
-      "id": "en-therace-mclaren-no-punishment-norris-piastri",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "チーム",
-      "teams": [
-        "mclaren"
-      ],
-      "topic": "norris-piastri-singapore-sprint",
-      "title": "マクラーレン、シンガポール・スプリント最終周の接触でノリスに処分せず",
-      "orig": "McLaren opts not to punish Norris for Piastri Singapore collision",
-      "url": "https://www.the-race.com/formula-1/mclaren-opts-not-to-punish-norris-for-piastri-singapore-collision/",
-      "published": "2026-10-22T12:00:00+01:00",
-      "summary": "マクラーレンは、シンガポールのスプリント最終周でノリスがチームメートのピアストリと接触した件で、処分を科さない方針だとThe Raceが報じた。ノリスは5コーナーで4番手を狙って仕掛け、接触して8位に落ち、ピアストリはリタイアした。ステラ代表は強い不満を示したが、ノリスは「自分のミスには責任を持ち、そこから学ぶ」と語り、これがチームの決着の形だという。昨年はシンガポールの接触後にオースティンで軽い処分が出ており、今回は違う対応を選んだ。仮に抜けても結果は変わらず、1ポイントのために危険を冒す場面ではなかったとの判断で、ピアストリも受け入れている。"
-    },
-    {
-      "id": "en-therace-sainz-doubts-middle-east-finale",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "カレンダー",
-      "teams": [],
-      "topic": "gulf-races-cancel-risk",
-      "title": "サインツ「中東2戦の開催をいま確信するのは非常に難しい」",
-      "orig": "'Very difficult' to be convinced Middle East races go ahead - Sainz",
-      "url": "https://www.the-race.com/formula-1/f1-qatar-abu-dhabi-very-difficult-to-be-convinced-races-go-ahead-carlos-sainz/",
-      "published": "2026-10-22T12:00:00+01:00",
-      "summary": "サインツがアメリカGPの会見で、最終盤のカタールGPとアブダビGPが確実に開催されると「いま確信するのは非常に難しい」と述べた。FIAのベン・スライエム会長が開催を明言した直後の発言で、中東情勢に加え、11月3日の米中間選挙で状況が急変し得ると指摘し、断言は「やや時期尚早」だとした。GPDAの代表としてではなく個人の見解で、ドライバーはF1とFIAの判断に従うべきだが、「行きたいから行く」だけでは困るとも語った。ピアストリは「FIAとF1を信頼する」と述べ、ハジャーとコラピントも両者の判断に従う姿勢を示した。"
     }
   ]
 }
