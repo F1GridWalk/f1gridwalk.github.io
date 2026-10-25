@@ -37,6 +37,13 @@ html body #news .grid > article.card{padding:9px 0 9px !important;gap:3px !impor
 html body #news .card .cmp-btn{min-height:24px !important;padding:0 !important}
 html body #news .card .teamtags{padding-top:0 !important}
 html body #news .card h3{margin-top:0 !important}
+/* dense news list: about 15 headlines per phone screen (owner's request, 25 Oct 2026) */
+html body #news .grid > article.card{padding:6px 0 6px !important;gap:1px !important;border-width:0 0 1px !important;border-bottom:1px solid var(--line) !important}
+html body #news .card .cmp,html body #news .card .teamtags{display:none !important}
+html body #news .card .card-meta{gap:2px 6px !important;line-height:1.3 !important}
+html body #news .card .card-meta .kind{padding:0 4px !important;line-height:1.35 !important}
+html body #news .card .card-meta .rg{display:none !important}
+html body #news .card h3{font-size:14px !important;line-height:1.4 !important;display:-webkit-box !important;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 /* phone only: easier to read (owner's request, 6 Oct 2026) */
 @media (max-width:520px){
 /* news view tabs (新着・テック・パドックの噂…): never cut off; if a phone's font is wider, the row scrolls sideways (owner, 25 Oct 2026) */
@@ -2502,7 +2509,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var lead = -1; for (var li = 0; li < shown.length; li++){ var kk = shown[li].kind || 'news'; if (kk === 'news' || kk === 'tech'){ lead = li; break; } }
       var ordered = lead > 0 ? [shown[lead]].concat(shown.slice(0, lead), shown.slice(lead + 1)) : shown;
       // first rows: desktop 8 (3 full rows with the wide lead card), phones 9; then 15 / 14 more per tap so rows stay full
-      var PAGE = wide.matches ? 15 : 14; if (!state.newsShown) state.newsShown = wide.matches ? 8 : 9;
+      var PAGE = 15; if (!state.newsShown) state.newsShown = wide.matches ? 8 : 15;  // phones: 15 first (owner, 25 Oct 2026)
       ordered.forEach(function(a, i){ var c = card(a); if (i >= state.newsShown) c.classList.add('cut'); g.appendChild(c); });
       feed.appendChild(g);
       if (ordered.length > state.newsShown){
