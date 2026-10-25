@@ -1,6 +1,49 @@
 {
-  "updatedAt": "2026-10-25T06:30:00+09:00",
+  "updatedAt": "2026-10-25T12:30:00+09:00",
   "notes": [
+    {
+      "id": "note-formula1report-cota-quali",
+      "platform": "note",
+      "site": "F1レポート",
+      "lang": "ja",
+      "paid": false,
+      "cat": "予選",
+      "author": "Yoshito",
+      "title": "【予選】アントネッリ、8戦ぶりのポールポジション獲得。変化したコンディション、タイヤマネジメントが明暗を分ける【アメリカGP】",
+      "summary": "アメリカGP予選を振り返り、アントネッリのポールとQ1〜Q3の流れを整理。曇りや路面温度の低下といったコンディション変化とタイヤの準備への対応が明暗を分けたと総括し、フェラーリのQ3での伸び悩みやフェルスタッペンのQ3での性能低下、ノリスのトラックリミット違反にも触れている。",
+      "url": "https://note.com/formula1report/n/n1f43e5f01c1d",
+      "published": "2026-10-25T07:24:08+09:00",
+      "circuit": "austin"
+    },
+    {
+      "id": "substack-f1iq-antonelli-surprises-again",
+      "platform": "substack",
+      "site": "F1IQ",
+      "lang": "en",
+      "paid": false,
+      "cat": "予選",
+      "author": "F1IQ",
+      "title": "アントネッリがまた驚かせる",
+      "orig": "Antonelli Surprises Again",
+      "summary": "アメリカGP予選を振り返り、練習で全セッション最速だったフェラーリが予選でアントネッリのポールに及ばなかった点を整理。タイトル決定にはアントネッリの優勝に加え、ハミルトンが6位以下、ラッセルが9位以下という条件が必要で、可能だが混乱がなければ難しいとの見立てを示している。",
+      "url": "https://f1iq.substack.com/p/antonelli-surprises-again",
+      "published": "2026-10-25T09:00:00+09:00",
+      "circuit": "austin"
+    },
+    {
+      "id": "blog-albonnote-cota-fp3-quali",
+      "platform": "blog",
+      "site": "アルボンノート",
+      "lang": "ja",
+      "paid": false,
+      "cat": "予選",
+      "author": "アルボンさん",
+      "title": "F1 2026年シーズン第19戦アメリカGP FP3・予選 フェラーリ最後の最後でまたも失速。",
+      "summary": "FP3と予選を振り返り、アップデートしたサイドポッドで好調だったフェラーリがQ3で伸びず、ルクレール4番手、ハミルトン5番手に終わったと評価。アントネッリがセクター3で大きくタイムを伸ばしてポールを獲得し、ノリスはトラックリミット違反でタイムを抹消されたとまとめている。",
+      "url": "https://albonnote.com/f1-2026%e5%b9%b4%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e7%ac%ac19%e6%88%a6%e3%82%a2%e3%83%a1%e3%83%aa%e3%82%abgp-fp3%e3%83%bb%e4%ba%88%e9%81%b8/",
+      "published": "2026-10-25T09:00:00+09:00",
+      "circuit": "austin"
+    },
     {
       "id": "note-formula1report-cota-fp3",
       "platform": "note",
@@ -152,22 +195,6 @@
         "astonmartin"
       ],
       "circuit": "austin"
-    },
-    {
-      "id": "note-sentaroh-russell-struggle-structure",
-      "platform": "note",
-      "site": "仙太郎",
-      "lang": "ja",
-      "paid": false,
-      "cat": "ドライバー",
-      "author": "仙太郎",
-      "title": "新世代マシンが炙り出した「王者との距離」——ラッセル苦戦の構造を読む",
-      "summary": "ラッセルの苦戦を個人の衰えではなく、走行時間が限られる現代F1の構造変化の表れとして読み解いた分析。新しい空力とタイヤで有利なドライビングのタイプが入れ替わり、短時間でマシンに適応する能力が重要になったという見立てを示している。",
-      "url": "https://note.com/sentaroh_f1/n/n5c64dda9616f",
-      "published": "2026-09-29T17:50:54+09:00",
-      "teams": [
-        "mercedes"
-      ]
     },
     {
       "id": "note-formula1report-fornaroli-fp1-mexico-brazil",
@@ -755,36 +782,6 @@
       "summary": "FIAが発表した2027年のF2・F3カレンダーを整理した記事。F2は14戦で、イスタンブールとメキシコシティが新たに加わり、モントリオールが復帰する。F3は10戦で、モントリオール開催により初めて北米に進出し、両カテゴリーとも4大陸を回る。",
       "url": "https://note.com/formula1report/n/na5794436c33a",
       "published": "2026-10-06T03:32:00+09:00"
-    },
-    {
-      "id": "blog-f1laplab-sepang-racepace",
-      "platform": "blog",
-      "site": "F1ラップタイム研究室",
-      "lang": "ja",
-      "paid": false,
-      "cat": "分析",
-      "author": "Takumi",
-      "title": "2026年マレーシアGP レースペース分析",
-      "summary": "タイヤの経過周回や劣化、周回遅れ処理の影響を除いてマレーシアGPのレースペースを比較した分析。フェルスタッペンが最速で、アントネッリが約0.2秒差、ルクレールとノリスが約0.4秒差、ラッセルが約0.5秒差と見積もる。中団ではアロンソが約1.5秒差で先頭という見立てだ。",
-      "url": "https://f1-lap-time.com/?page_id=17581",
-      "published": "2026-10-05T21:00:00+09:00",
-      "circuit": "sepang"
-    },
-    {
-      "id": "note-formula1report-hrc-president-change",
-      "platform": "note",
-      "site": "Formula1 Report",
-      "lang": "ja",
-      "paid": false,
-      "cat": "チーム",
-      "author": "Yoshito",
-      "title": "HRC、2027年1月1日付で社長交代を発表。安田啓一が新社長に就任、渡辺康治は3年間の任務を終え退任へ",
-      "summary": "HRCの社長が2027年1月1日付で渡辺康治から安田啓一へ交代する発表を整理した記事。渡辺氏の3年間の功績として四輪と二輪の統合やF1復帰を挙げ、新社長の人事・海外経営の経歴を紹介している。交代時期を4月でなく1月にしたのは、シーズンの区切りに合わせるためという見立て。",
-      "url": "https://note.com/formula1report/n/n17ccab96fd60",
-      "published": "2026-10-05T19:41:00+09:00",
-      "teams": [
-        "astonmartin"
-      ]
     }
   ]
 }
