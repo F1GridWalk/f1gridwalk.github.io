@@ -3168,34 +3168,35 @@ def top_rail_slot():
             hd = hd.replace(tzinfo=JST)
         dated.append((hd, ('story', f'/topics/{H["slug"]}/', 'STORY' + (f' · {H["gp"]}' if H.get('gp', '').endswith('GP') else '') + f' · {md(hd)}',
                            H['title'], S.get('hook') or H.get('dek', ''), 'STORY を読む')))
-    for k in ('world', 'deep', 'off'):
-        x = next((c for c in ALL_COLS if c['kind'] == k), None)
-        if x:
-            dated.append((x['dt'], (k, x['url'], f'{COL_TAG[k]} · {md(x["dt"])}', x['title'], '', '読む')))
+    # every column kind mixed, newest first, one sideways row (owner, 26 Oct 2026)
+    for x in sorted((c for c in ALL_COLS if c['kind'] in ('world', 'deep', 'off')), key=lambda c: c['dt'], reverse=True)[:11]:
+        k = x['kind']
+        dated.append((x['dt'], (k, x['url'], f'{COL_TAG[k]} · {md(x["dt"])}', x['title'], '', '読む')))
     dated.sort(key=lambda t: t[0], reverse=True)
-    cards = [c for _, c in dated]
+    cards = [c for _, c in dated][:12]
     blk = ''
     if cards:
         blk = ('<style>.top-rail{display:none}'
-               '@media (max-width:520px){.top-rail{display:block;width:100vw;margin:0 0 6px calc(50% - 50vw);order:-5}'
+               '@media all{.top-rail{display:block;margin:6px 0 12px}.top-rail .rl{margin:4px 0 6px;font-weight:800;font-size:13px}'
                '.hero .hero-in,.hero .duo{display:none !important}.hero.dbox{background:none !important;padding:0 2px !important;margin-bottom:8px !important}'
-               '.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
+               '.rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 0 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
                '.rail::-webkit-scrollbar{display:none}'
-               '.rcard{flex:0 0 72%;scroll-snap-align:start;scroll-margin-left:16px;border-radius:14px;padding:10px 12px 10px;min-height:0;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}'
+               '.rcard{flex:0 0 46%;scroll-snap-align:start;border-radius:10px;padding:8px 10px;min-height:0;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}'
                '.rc-story{background:#1F2420}.rc-world{background:#B8673F}.rc-deep{background:#8E2F3B}.rc-off{background:#2F6B66}'
-               '.rcard small{align-self:flex-start;font-size:9.5px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,.18)}'
+               '.rcard small{align-self:flex-start;font-size:8.5px;font-weight:800;letter-spacing:.08em;padding:2px 6px;border-radius:5px;background:rgba(255,255,255,.18)}'
                '.rc-story small{background:var(--hl,#FFEE9A);color:#1F2420}'
-               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:16px;line-height:1.4;font-weight:900;margin:6px 0 2px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}"
-               '.rcard p{margin:0;font-size:12px;line-height:1.55;opacity:.88;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}'
+               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:13.5px;line-height:1.4;font-weight:900;margin:4px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}"
+               '.rcard p,.rcard span.go{display:none}.rcard p{margin:0;font-size:12px;line-height:1.55;opacity:.88;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}'
                '.rcard span.go{font-weight:800;font-size:11.5px;margin-top:6px}'
-               '.rdots{display:flex;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}'
-               '</style><div class="top-rail" aria-label="今日の読みもの"><div class="rail" id="rail">'
+               '.top-rail{position:relative}.rarr{display:none}.rdots{display:none;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}'
+               '</style><div class="top-rail" aria-label="コラム"><p class="rl">コラム</p><div class="rail" id="rail">'
                + ''.join(f'<a class="rcard rc-{k}" href="{e(u)}" data-track="click/top/rail/{k}"><div><small>{e(tag)}</small><b>{e(t)}</b>'
                          + (f'<p>{e(d)}</p>' if d else '') + f'</div><span class="go">{e(go)} →</span></a>' for k, u, tag, t, d, go in cards)
-               + '</div><div class="rdots" aria-hidden="true">' + ''.join('<i></i>' for _ in cards) + '</div></div>'
+               + '</div><button type="button" class="rarr rprev" aria-label="前へ">‹</button><button type="button" class="rarr rnext" aria-label="次へ">›</button><div class="rdots" aria-hidden="true">' + ''.join('<i></i>' for _ in cards) + '</div></div>'
                '<script>(function(){var r=document.getElementById("rail");if(!r)return;var d=r.parentNode.querySelectorAll(".rdots i");'
                'function u(){var w=r.firstElementChild?r.firstElementChild.offsetWidth+12:1,i=Math.round(r.scrollLeft/w);'
-               'for(var j=0;j<d.length;j++)d[j].className=j===i?"on":"";}r.addEventListener("scroll",u,{passive:true});u();})();</script>')
+               'for(var j=0;j<d.length;j++)d[j].className=j===i?"on":"";}r.addEventListener("scroll",u,{passive:true});u();'
+               'var P=r.parentNode;[[".rprev",-1],[".rnext",1]].forEach(function(x){var b=P.querySelector(x[0]);if(b)b.addEventListener("click",function(){r.scrollBy({left:x[1]*r.clientWidth*.9,behavior:"smooth"});});});})();</script>')
     ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
     out = re.sub(r'(<!--pre:rail-->).*?(<!--/pre:rail-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
@@ -3228,7 +3229,7 @@ def top_people_slot():
                '.ppl-strip span{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}'
                '.ppl-strip a{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}'
                '.ppl-strip a.all{color:var(--clay);text-decoration:none}'
-               '@media (max-width:520px){.ppl-strip{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;margin-top:4px}.ppl-strip::-webkit-scrollbar{display:none}}</style>'
+               '@media all{.ppl-strip{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;margin-top:4px}.ppl-strip::-webkit-scrollbar{display:none}}</style>'
                '<p class="ppl-strip"><span>いま話題の人</span>'
                + ''.join(f'<a href="/deep/rules/{e(pid)}/" data-track="click/top/people/{e(pid)}">{e(pname[pid]["name"].split("・")[-1])}</a>' for pid in picks)
                + '<a class="all" href="/drivers/" data-track="click/top/people/all">ドライバー一覧 →</a></p>')
