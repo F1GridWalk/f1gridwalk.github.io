@@ -1,102 +1,102 @@
 {
- "updatedAt": "2026-10-26T08:20:00+09:00",
+ "updatedAt": "2026-10-26T12:30:00+09:00",
  "season": 2026,
  "standingsAfter": {
-  "round": 17,
-  "gp": "シンガポールGP"
+  "round": 18,
+  "gp": "アメリカGP"
  },
  "drivers": [
   {
    "pos": 1,
    "name": "アントネッリ",
    "team": "mercedes",
-   "pts": 340
+   "pts": 365
   },
   {
    "pos": 2,
    "name": "ラッセル",
    "team": "mercedes",
-   "pts": 238
+   "pts": 242
   },
   {
    "pos": 3,
    "name": "ハミルトン",
    "team": "ferrari",
-   "pts": 229
+   "pts": 241
   },
   {
    "pos": 4,
    "name": "フェルスタッペン",
    "team": "redbull",
-   "pts": 221
+   "pts": 236
   },
   {
    "pos": 5,
    "name": "ルクレール",
    "team": "ferrari",
-   "pts": 215
+   "pts": 233
   },
   {
    "pos": 6,
    "name": "ノリス",
    "team": "mclaren",
-   "pts": 201
+   "pts": 211
   },
   {
    "pos": 7,
    "name": "ピアストリ",
    "team": "mclaren",
-   "pts": 138
+   "pts": 144
   },
   {
    "pos": 8,
    "name": "ハジャー",
    "team": "redbull",
-   "pts": 97
+   "pts": 105
   },
   {
    "pos": 9,
    "name": "ローソン",
    "team": "racingbulls",
-   "pts": 75
+   "pts": 77
   },
   {
    "pos": 10,
    "name": "ガスリー",
    "team": "alpine",
-   "pts": 41
+   "pts": 42
   }
  ],
  "constructors": [
   {
    "pos": 1,
    "team": "mercedes",
-   "pts": 578
+   "pts": 607
   },
   {
    "pos": 2,
    "team": "ferrari",
-   "pts": 444
+   "pts": 474
   },
   {
    "pos": 3,
-   "team": "mclaren",
-   "pts": 339
+   "team": "redbull",
+   "pts": 355
   },
   {
    "pos": 4,
-   "team": "redbull",
-   "pts": 332
+   "team": "mclaren",
+   "pts": 355
   },
   {
    "pos": 5,
    "team": "racingbulls",
-   "pts": 100
+   "pts": 102
   },
   {
    "pos": 6,
    "team": "alpine",
-   "pts": 68
+   "pts": 69
   },
   {
    "pos": 7,
@@ -125,38 +125,36 @@
   }
  ],
  "weekend": {
-  "round": 18,
-  "gp": "アメリカGP",
-  "circuit": "austin",
-  "laps": 56,
-  "lengthKm": 5.513,
+  "round": 19,
+  "gp": "メキシコシティGP",
+  "circuit": "mexico",
+  "laps": 71,
+  "lengthKm": 4.304,
   "sessions": [
    {
     "name": "フリー走行1",
-    "start": "2026-10-23T17:30:00Z",
-    "end": "2026-10-23T18:30:00Z"
+    "start": "2026-10-30T18:30:00Z",
+    "end": "2026-10-30T19:30:00Z"
    },
    {
     "name": "フリー走行2",
-    "start": "2026-10-23T21:00:00Z",
-    "end": "2026-10-23T22:00:00Z"
+    "start": "2026-10-30T22:00:00Z",
+    "end": "2026-10-30T23:00:00Z"
    },
    {
     "name": "フリー走行3",
-    "start": "2026-10-24T17:30:00Z",
-    "end": "2026-10-24T18:30:00Z"
+    "start": "2026-10-31T17:30:00Z",
+    "end": "2026-10-31T18:30:00Z"
    },
    {
     "name": "予選",
-    "start": "2026-10-24T21:00:00Z",
-    "end": "2026-10-24T22:00:00Z",
-    "result": "ポール: アントネッリ"
+    "start": "2026-10-31T21:00:00Z",
+    "end": "2026-10-31T22:00:00Z"
    },
    {
     "name": "決勝",
-    "start": "2026-10-25T20:00:00Z",
-    "end": "2026-10-25T22:00:00Z",
-    "result": "優勝: アントネッリ"
+    "start": "2026-11-01T20:00:00Z",
+    "end": "2026-11-01T22:00:00Z"
    }
   ]
  },

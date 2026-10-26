@@ -1,10 +1,6 @@
 {
-  "updatedAt": "2026-10-26T08:20:00+09:00",
+  "updatedAt": "2026-10-26T12:40:00+09:00",
   "topics": {
-    "mclaren-austin-upgrade": {
-      "title": "マクラーレン、最終アップデート第1弾をオースティンに投入　「一歩遅れている」",
-      "summary": "マクラーレンはオースティンにブレーキ改善とフロア挙動を狙った控えめな改良を投入し、独メディアはフロントサスペンション形状とディフューザーの変更だと報じた。パッケージはラスベガスにかけて段階投入され、次はブラジルが予定されている。ノリスは練習後に「一歩遅れている」と述べ、コンストラクターズ3位の防衛が焦点となる。"
-    },
     "fp1-austin-2026": {
       "title": "アメリカGP FP1　ルクレールが最速、フェルスタッペンはタイム抹消",
       "summary": "アメリカGPの初回走行はフェラーリのルクレールが1分36秒052で首位に立った。フェルスタッペンは0.084秒差の2番手だが、最速ラップは19コーナーのトラックリミット違反で抹消されており、実質的にはトップだったとも報じられた。ノリス、ラッセル、アントネッリが続き、上位4チームが僅差で並んだ。日本のまとめブログでもトラックリミットが話題になった。"
@@ -24,10 +20,6 @@
     "cadillac-2027-drivers-rumor": {
       "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
       "summary": "キャデラックの2027年の布陣をめぐり、日英独蘭の複数メディアが観測を伝えた。ブトコウスキー代表はオースティンでボッタスの去就に明言せず、リザーブのハータが後任候補とされ、角田やオコン、ローソン陣営の名も挙がる。ペレスの席は安泰との見方が強い。いずれもチームの正式発表ではなく、未確認の話である。"
-    },
-    "alonso-singapore-honda-drivability": {
-      "title": "シンガポールでのホンダ製PUのドライバビリティ問題",
-      "summary": "アロンソが指摘したシンガポールでのホンダ製PUのドライバビリティ不良について、ホンダは制御が要求水準に達していないと認めた。独メディアは原因をターボラグと伝え、新ターボ投入後も高エネルギー消費のコースでは抑え切れなかったとする。対策は主にソフトとキャリブレーションで進められている。"
     },
     "us-gp-grid-penalties": {
       "title": "アメリカGP　PU部品の使用超過でグリッド降格",
@@ -60,9 +52,136 @@
     "usgp-race-austin-2026": {
       "title": "アメリカGP決勝　アントネッリ圧勝も王座決定は持ち越し",
       "summary": "アントネッリがオースティンでポールから勝ち、今季9勝目を挙げた。2位ルクレール、3位フェルスタッペン、4位ハミルトンで、ラッセルはペナルティもあって8位だった。ボッタスの停止でバーチャルセーフティカーが出て、終盤の勢力図に影響した。ランキング首位のアントネッリは365点で、王座決定は次戦メキシコGP以降に持ち越された。"
+    },
+    "redbull-us-gp-frustration": {
+      "title": "アメリカGPでレッドブルに不満噴出　フェルスタッペンとハジャーが発進・無線・戦略を指摘",
+      "summary": "アメリカGP後、フェルスタッペンは3位、ハジャーは6位で終え、ともにレッドブルへの不満を語った。2人とも発進で失敗し、無線の不調も続き、ソフトを使う2ストップ作戦はフェルスタッペンが事前に合意していなかったと述べた。ハジャーは壊れやすいクラッチの全面的な再設計を求めた。メキース代表は整理すべき点があると認め、発進の根本改善は来季になるとの見方を示した。"
     }
   },
   "articles": [
+    {
+      "id": "en-therace-redbull-us-gp-fury",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "決勝",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "redbull-us-gp-frustration",
+      "title": "フェルスタッペンとハジャー、アメリカGPでレッドブルに不満　スタート・無線・戦略に注文",
+      "orig": "Why US GP has left Verstappen and Hadjar furious with Red Bull",
+      "url": "https://www.the-race.com/formula-1/why-verstappen-hadjar-furious-red-bull-f1-us-gp/",
+      "published": "2026-10-26T02:30:00+00:00",
+      "summary": "アメリカGP後、フェルスタッペンとハジャーはレッドブルへの不満を口にした。2番手と3番手スタートの2人はともに発進で失敗し、ピットとの無線も聞き取りにくかったという。2ストップ作戦についてフェルスタッペンは、事前に合意した内容ではなく、直近2戦でソフトが最速だった経験に頼りすぎたと述べた。優勝したアントネッリは1ストップで、フェルスタッペンは3位、ハジャーは6位だった。メキース代表は整理すべき点があると認め、発進の根本改善は来季になるとの見方を示した。",
+      "circuit": "austin"
+    },
+    {
+      "id": "de-formel1de-verstappen-sauer-reifenwahl",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Formel1.de",
+      "cat": "決勝",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "redbull-us-gp-frustration",
+      "title": "フェルスタッペン、アメリカGP3位も不満　タイヤ選択の誤りと無線不調を指摘",
+      "orig": "Verstappen sauer: Falsche Reifenwahl, zu wenig Pace und Funkprobleme",
+      "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-26/verstappen-sauer-falsche-reifenwahl-zu-wenig-pace-und-funkprobleme",
+      "published": "2026-10-26T02:23:00+01:00",
+      "summary": "フェルスタッペンはアメリカGPを3位で終えたが、内容には不満を示した。ソフトが期待通りに働かず、ハードの方がグリップが高いと気づくのが遅く、使う順序も誤りだったと振り返った。パワーユニットの挙動が周ごと、コーナーごとに安定せず、遅いピット作業も2位争いで痛手になったという。無線の不調は繰り返し起きており、手話に切り替えようかと皮肉った。終盤のVSCに助けられた面もあると認め、メキース代表はアントネッリが単に速かったと語った。",
+      "circuit": "austin"
+    },
+    {
+      "id": "en-crash-hadjar-clutch-redesign",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "Crash.net",
+      "cat": "テクニカル",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "redbull-us-gp-frustration",
+      "title": "ハジャー、レッドブルのクラッチ「作り直しを」　アメリカGPで発進失敗",
+      "orig": "Isack Hadjar demands Red Bull redesign fragile clutch after difficult US GP",
+      "url": "https://www.crash.net/f1/news/1108516/1/isack-hadjar-demands-red-bull-redesign-fragile-clutch-after-difficult-us-gp",
+      "published": "2026-10-25T23:00:00+00:00",
+      "summary": "予選3番手から6位に終わったハジャーが、アメリカGPの発進失敗をクラッチのせいだと訴えた。スタート手順は正しく守ったと映像を見直して確信しており、クラッチの出力が悪く自分では制御できなかったという。部品は壊れやすく温度への対応も弱いとして、素早い解決策はなく全面的な再設計が必要だと述べた。ほかにもピット無線が聞き取りにくく、誤ったエンジンマップでピットを出てハードタイヤで1周約1秒を失ったと明かした。直近2戦は10位と6位で、次のメキシコシティGPでの5位以内復帰を狙う。",
+      "circuit": "austin"
+    },
+    {
+      "id": "en-therace-alonso-albon-low-quality",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "ドライバー",
+      "teams": [
+        "astonmartin",
+        "williams"
+      ],
+      "topic": "alonso-albon-lap1-contact",
+      "title": "アロンソ、1周目の接触でアルボンを批判　「後方3分の1はレベルが非常に低い」",
+      "orig": "Alonso calls 33% of the F1 grid 'low quality'",
+      "url": "https://www.the-race.com/formula-1/alonso-slams-low-quality-albon-for-us-gp/",
+      "published": "2026-10-26T02:30:00+00:00",
+      "summary": "アロンソはアメリカGP1周目のアルボンとの接触を受け、グリッド後方のドライバーの質は非常に低いと批判した。アルボンがイン側に入り、外側にはオコンのハースがいた状況で、スチュワードはお咎めなしとした。アロンソは左のバージボードが外れ、「車が半分しかない」状態で1周0.5秒以上失ったと主張した。ウイング交換の遅いピットもあり周回遅れの16位だったが、今季最高のレースだったと話した。アルボンは避けようとしたが縁石に乗り切れなかったと述べ、アロンソを「強いがフェア」と評した。",
+      "circuit": "austin"
+    },
+    {
+      "id": "de-formel1de-leclerc-ferrari-konstanz",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Formel1.de",
+      "cat": "決勝",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-leclerc-austin-p2",
+      "title": "ルクレール、アメリカGP2位　「パッケージとしてはまだ堅牢さが足りない」",
+      "orig": "Charles Leclerc nach Platz zwei in Austin: Ferrari fehlt noch die Konstanz",
+      "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-26/charles-leclerc-nach-platz-zwei-in-austin-ferrari-fehlt-noch-die-konstanz",
+      "published": "2026-10-26T01:55:00+01:00",
+      "summary": "ルクレールはアメリカGPを2位で終え、ペースは良かったと振り返った。序盤はバッテリーの電力を使ってフェルスタッペンに並んだ分、防御が難しくなり、ノリスやフェルスタッペンとの競り合いで時間を失ったという。フェラーリとレッドブルは2ストップを予想したが、アントネッリのハード1ストップが決定的で、前が空いても追いつけなかったと語った。予選Q3ではタイヤを適温に入れにくく、優勝の可能性を逃したと見る。速さはあるが週末を通じた一貫性に欠けるとし、メキシコでの勝利は予言できないと述べた。",
+      "circuit": "austin"
+    },
+    {
+      "id": "nl-racingnews365-ford-verstappen-hypercar",
+      "kind": "rumor",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "RacingNews365",
+      "cat": "うわさ",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "verstappen-ford-hypercar-talk",
+      "title": "フォード幹部、フェルスタッペンとのF1外プロジェクトに含み　ハイパーカーの話題",
+      "orig": "Ford geheimzinnig over ambities met 'geweldige' Verstappen",
+      "url": "https://racingnews365.nl/ford-geheimzinnig-over-ambities-met-geweldige-verstappen",
+      "published": "2026-10-25T18:05:00+01:00",
+      "summary": "フォード・パフォーマンスのラッシュブルック氏が、オランダ紙デ・テレフラーフの取材でフェルスタッペンを称賛したと伝えられた。2023年の提携発表時にフェルスタッペンが自らスーパーバン4.2を走らせた逸話を挙げ、偉大なチャンピオンで素晴らしい人物だと述べたという。フォードは2027年にWECハイパーカーへ参戦予定で、GT3のマスタングも走らせている。同氏は以前からハイパーカーを巡る話し合いに触れており、GT参戦でマスタングに乗ってほしいとも語った。F1外で獲得を狙うかと問われると「最高のドライバーは興味深い」と述べるにとどまり、契約などの確認はない。"
+    },
+    {
+      "id": "ja-f1are-us-gp-race-result-digest",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "まとめ",
+      "topic": "usgp-race-austin-2026",
+      "title": "アメリカGP決勝結果にファン反応　アントネッリの完勝とフェルスタッペンのタイヤ選択が話題",
+      "orig": "2026年F1第18戦アメリカGP決勝結果",
+      "url": "https://f1are.com/blog-entry-4018.html",
+      "published": "2026-10-26T07:00:00+09:00",
+      "summary": "F1のアレがアメリカGP決勝結果をまとめた記事では、アントネッリの完勝をたたえる声が目立った。話題になったのは、2位争いに絡んだフェルスタッペンが最後に履いたミディアムで、ハードにすべきだったのではという議論だった。ハミルトンは終盤のVSCの影響で順位を落としたとの指摘もあり、後半に調子を上げたフェラーリに触れる書き込みもあった。初年度のキャデラックには厳しめの意見も出た。記事には決勝後の暫定ランキングも載り、ラッセル242点、ハミルトン241点、フェルスタッペン236点、ルクレール233点とされている。",
+      "circuit": "austin"
+    },
     {
       "id": "nl-gpblog-verstappen-p3-austin-race",
       "lang": "nl",
@@ -1387,122 +1506,6 @@
       "url": "https://www.formel1.de/news/news/2026-10-23/oscar-piastri-kaempft-mit-seinem-mclaren-was-2026-ploetzlich-anders-ist",
       "published": "2026-10-23T14:02:00+02:00",
       "summary": "マクラーレンのピアストリが、今季の苦戦の背景を語った。昨季うまく機能した走り方が今年は損になることが多く、身についた癖を変えるのは簡単ではないという。直近の3連戦では本来の調子に近づいたものの、「目指す水準にはまだ届いていない」と認めた。ザク・ブラウンは、再び見慣れたピアストリが戻ってきたと見ている。マクラーレンは高速コーナーに強い一方で低速コーナーが課題で、両方を併せ持つオースティンに新パーツを持ち込む。シンガポールでのノリスとの接触への対応には満足していると述べた。"
-    },
-    {
-      "id": "de-formel1de-verstappen-horner-book",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "ドライバー",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "verstappen-horner-book",
-      "title": "フェルスタッペン、ホーナーの著書に「読んでいない」　過去を蒸し返す理由はないと語る",
-      "orig": "Max Verstappen: So reagiert er auf das Buch von Christian Horner",
-      "url": "https://www.formel1.de/news/news/2026-10-23/max-verstappen-so-reagiert-er-auf-das-buch-von-christian-horner",
-      "published": "2026-10-23T15:41:00+02:00",
-      "summary": "元レッドブル代表ホーナーの著書について、フェルスタッペンがアメリカGP前に問われ、読んでおらず、そもそも本を読まないと答えた。内容を一つずつ反論する必要も感じないといい、長く続いた関係は皆にとって素晴らしい時代だったと振り返った。4度の王者で通算73勝を挙げた大半はホーナー体制下のものだ。ホーナーは2025年夏にチームを去り、フェルスタッペンは2026年夏に複数年の契約延長に署名した。「ただ未来を見て、レーシングドライバーとしての時間を楽しむ」と話した。"
-    },
-    {
-      "id": "ja-f1are-aston-honda-2027-target",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "うわさ",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "aston-honda-2027-target-rumor",
-      "title": "アストンマーティン、ホンダが2027年開幕戦で目標未達なら他社との提携も検討か　ファンが反応",
-      "orig": "海外メディア「ホンダが2027年の開幕戦までに目標を達成できなかったらアストンマーチンは他メーカーとの提携を検討する用意がある」",
-      "url": "https://f1are.com/blog-entry-4009.html",
-      "published": "2026-10-23T12:00:00+09:00",
-      "summary": "F1ファンのまとめサイト「F1のアレ」が、専門メディアF1 OVERSTEERの報道として、アストンマーティンはホンダが2027年開幕戦までに目標を達成できなければ他メーカーとの提携を検討する用意があると伝えた。東京スポーツが紹介した内容で、スペイン紙ASも同様の話を報じている。ASによれば、アストンは開幕戦でホンダのエンジンが10位以内に入れる水準へ改善することを期待しているという。いずれも未確認の話で、コメント欄では情報源への懐疑的な見方が多く、ホンダの体制や過去の問題を指摘する声もあった。"
-    },
-    {
-      "id": "en-therace-fia-700kg-weight-plan",
-      "kind": "tech",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "テクニカル",
-      "topic": "fia-700kg-weight-plan",
-      "title": "FIA、F1マシンを700kg未満に軽量化する構想　2031年のPU簡素化が柱",
-      "orig": "F1's plan to slash car weight revealed",
-      "url": "https://www.the-race.com/formula-1/f1s-plan-to-slash-car-weight-revealed/",
-      "published": "2026-10-23T12:00:00+01:00",
-      "summary": "FIAが、現行768kgの最低重量を2016年以来となる700kg未満へ引き下げる構想を明らかにした。FIAの分析では、20年で増えた約200kgのうち安全装備に由来するのは約40kgにとどまるという。軽量化の柱は、2031年を想定したターボ圧の低減、吸排気の簡素化、バッテリーとMGU-Kの小型化だ。ホイールのリム径縮小も検討され、FIAのトンバジスは重量だけで2.5〜3秒速くなると語った。給油の復活は、FIAとチームの双方が反対している。"
-    },
-    {
-      "id": "ja-f1gate-honda-admits-alonso-control",
-      "kind": "news",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "チーム",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "alonso-singapore-honda-drivability",
-      "title": "ホンダF1、アロンソの加速不良の訴えを認める「制御が要求に届いていない」",
-      "orig": "ホンダF1 アロンソの加速不良の訴えを認める「制御が要求に届いていない」",
-      "url": "https://f1-gate.com/honda/229764.html",
-      "published": "2026-10-23T12:34:00+09:00",
-      "summary": "ホンダの折原伸太郎トラックサイドGM兼チーフエンジニアが、スペイン紙ASに、アロンソが訴えた加速の遅れを認めた。シンガポールGPでは予選とレースの間にターボを交換したが、解消しなかったという。出力の反応がラップごとに変わり、ドライバーがスロットルへの車の反応を予測できなかったと説明している。レース後にHRCさくらで調べたが重大な不具合は見つからず、現在は対策を準備中だ。アメリカGPで投入するかどうかは明らかにしていない。"
-    },
-    {
-      "id": "ja-f1gate-mclaren-cota-brake-floor",
-      "kind": "tech",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1-Gate.com",
-      "cat": "テクニカル",
-      "teams": [
-        "mclaren"
-      ],
-      "topic": "mclaren-austin-upgrade",
-      "title": "マクラーレンF1、MCL40のブレーキとフロアを改良　アメリカGPで巻き返し狙う",
-      "orig": "マクラーレンF1 MCL40のブレーキとフロアを改良 アメリカGPで反撃狙う",
-      "url": "https://f1-gate.com/mclaren/229780.html",
-      "published": "2026-10-23T15:00:00+09:00",
-      "summary": "マクラーレンはアメリカGPに向けて、MCL40のブレーキの信頼性と性能を改善し、フロアにも小規模な変更を加える。直近3戦で獲得したのは計33ポイントにとどまり、巻き返しを狙う。技術責任者のロブ・マーシャルは、高速コーナーと縁石でマシンへの負荷が大きいCOTAでは信頼性が重要だと述べ、劇的な向上は期待していないとした。ピアストリは今季中の根本的な解決には懐疑的だ。ステラ代表は、根本的な問題は2027年型まで解決しないと見ている。"
-    },
-    {
-      "id": "de-formel1de-horner-antonelli-number-one",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "ドライバー",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "antonelli-austin-title-chance",
-      "title": "ホーナー「メルセデスはアントネッリを正式にナンバー1にすべきだ」",
-      "orig": "Christian Horner: Mercedes muss Antonelli offiziell zur Nummer 1 machen!",
-      "url": "https://www.formel1.de/news/news/2026-10-23/christian-horner-mercedes-muss-antonelli-offiziell-zur-nummer-1-machen",
-      "published": "2026-10-23T06:03:00+02:00",
-      "summary": "元レッドブル代表のクリスチャン・ホーナーが、メルセデスはアントネッリをラッセルより上の正式なエースに据えるべきだと主張した。オートスポーツ誌に語った内容で、アントネッリはアメリカGP前の時点でランキング首位を102ポイント差でリードしている。オースティンで勝てば、ベッテルを抜く史上最年少の王者になる可能性がある。ホーナーは「チームが第一で、ドライバーは請負人にすぎない」と述べ、2人にタイトルの可能性を約束するのは非現実的だと語った。"
-    },
-    {
-      "id": "de-formel1de-russell-driving-style-antonelli",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "分析",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "russell-style-vs-antonelli",
-      "title": "ラッセル、アントネッリの走りが2026年型に合うと認める　早いスロットルが仇に",
-      "orig": "George Russell: Hat ihn dieser Fahrstil die WM-Chance 2026 gekostet?",
-      "url": "https://www.formel1.de/news/news/2026-10-23/george-russell-hat-ihn-dieser-fahrstil-die-wm-chance-2026-gekostet",
-      "published": "2026-10-23T11:00:00+02:00",
-      "summary": "ラッセルは、アントネッリの走り方が2026年のマシン、タイヤ、パワーユニットに合っており、特にレースペースで優位だと認めた。ラッセルはコーナー中盤から出口で早めにスロットルを開けるのに対し、アントネッリは遅めに踏む。電動比率が大きい今季のPUでは、早い加速が限られたエネルギーを先に使うため、遅い方が有利になる場合があるという。ポイント差は一時70点から25点まで縮んだが再び開いた。ラッセルは適応の遅れを認めつつ、悔いはないと語っている。"
     }
   ]
 }
