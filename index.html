@@ -244,6 +244,13 @@ body[data-v="data"] .dash-side{margin-top:6px}
   html body .rprev{left:-44px}html body .rnext{right:-44px}
   html body .wrap{padding-left:20px;padding-right:20px}
 }
+@media (min-width:880px){
+  html body{padding-bottom:0}
+  html body nav.bt.bt-top{position:sticky;top:0;bottom:auto;left:auto !important;right:auto !important;transform:none;width:auto !important;display:flex;justify-content:center;gap:6px;border-top:0;border-bottom:1px solid var(--line);box-shadow:none;padding:4px 20px;z-index:60}
+  html body nav.bt.bt-top a,html body nav.bt.bt-top button{flex-direction:row;gap:6px;min-height:36px;font-size:13px;padding:0 14px;border-radius:18px}
+  html body nav.bt.bt-top .on{background:var(--ink);color:var(--paper)}
+  html body nav.bt.bt-top svg{width:17px;height:17px}
+}
 @media (min-width:521px) and (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pc-out:#0d0f0c}}
 :root[data-theme="dark"]{--pc-out:#0d0f0c}
 </style>
@@ -3370,5 +3377,8 @@ j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
   window.__gwGames=function(g, pane, ev){ ev(g+'/open'); if(g==='quiz') quiz(pane, ev); else trk(pane, ev); };
 })();
 </script>
+<script>(function(){var n=document.querySelector('nav.bt'),h=document.querySelector('header.top');if(!n||!h||!window.matchMedia)return;var mq=matchMedia('(min-width:880px)');
+function p(){if(mq.matches){if(n.previousElementSibling!==h){h.parentNode.insertBefore(n,h.nextSibling);}n.classList.add('bt-top');}else if(n.classList.contains('bt-top')){n.classList.remove('bt-top');document.body.appendChild(n);}}
+p();if(mq.addEventListener)mq.addEventListener('change',p);})();</script>
 </body>
 </html>
