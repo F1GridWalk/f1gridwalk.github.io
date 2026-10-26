@@ -45,7 +45,7 @@ html body #news .card .card-meta .kind{padding:0 4px !important;line-height:1.35
 html body #news .card .card-meta .rg{display:none !important}
 html body #news .card h3{font-size:14px !important;line-height:1.4 !important;display:-webkit-box !important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* phone only: easier to read (owner's request, 6 Oct 2026) */
-@media (max-width:520px){
+@media all{
 /* news view tabs (新着・テック・パドックの噂…): never cut off; if a phone's font is wider, the row scrolls sideways (owner, 25 Oct 2026) */
 #news .seg{overflow-x:auto !important;scrollbar-width:none;-webkit-overflow-scrolling:touch;justify-content:flex-start}
 #news .seg::-webkit-scrollbar{display:none}
@@ -84,11 +84,11 @@ html body #news .card .teamtags,html body #news .card .teamtags *{font-size:10px
 #sources:not(.all) .srow2:nth-child(n+11){display:none}
 .src-more{display:block;width:100%;margin:12px 0 2px;padding:10px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:inherit;font-size:13.5px;font-weight:700;cursor:pointer}
 }
-@media (min-width:521px){.src-more{display:none}}
+@media not all{.src-more{display:none}}
 </style>
 <style>
 /* phone only: every menu item visible in two rows, without 「コラム」 (owner's choice B, 6 Oct 2026) */
-@media (max-width:520px){
+@media all{
 .jump .wrap{flex-wrap:wrap !important;overflow:visible !important;gap:7px !important;padding-block:8px !important}
 .jump .wrap a{font-size:12px !important;white-space:nowrap}
 .jump .jm-col{display:none}
@@ -102,7 +102,7 @@ html body #news .card .teamtags,html body #news .card .teamtags *{font-size:10px
 .intro-btn{font:inherit;font-size:12.5px;font-weight:700;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer}
 .intro-btn:hover{border-color:var(--ink)}
 /* phone only: fold the long info panels at the bottom (owner's request, 8 Oct 2026) */
-@media (max-width:520px){
+@media all{
 .intro-line{font-size:12.5px}
 .info .panel.fold>h2{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:0}
 .info .panel.fold>h2::after{content:"＋";font-size:16px;font-weight:700}
@@ -117,14 +117,14 @@ html body #news .card .teamtags,html body #news .card .teamtags *{font-size:10px
 .hd-intro .hi-t>span{display:block}
 .hd-intro .intro-btn{font:inherit;font-size:11.5px;font-weight:700;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:2px 10px;cursor:pointer}
 .hd-intro .intro-btn:hover{border-color:var(--ink)}
-@media (max-width:520px){
+@media all{
 .hd-intro{order:5;flex-basis:100%;max-width:none;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:2px 0 0;font-size:11.5px}
 .hd-intro .intro-btn{font-size:11px;padding:1px 9px}
 .hd-intro .hi-t>span{display:inline}
 }
 </style>
 <style>
-@media (max-width:520px){
+@media all{
 .jump{transition:transform .25s ease}
 .jump.jm-hide{transform:translateY(-100%)}}
 </style>
@@ -141,7 +141,7 @@ header.top{position:relative}
 header.top .share{position:absolute !important;top:12px;right:12px;z-index:30;order:0}
 .top #share-btn{min-height:24px !important;padding:0 9px 0 8px !important;gap:5px;font-size:9.5px !important;letter-spacing:.14em}
 .top #share-btn .sh-ic{width:11px;height:11px}
-@media (max-width:520px){header.top .share{top:10px;right:10px}}
+@media all{header.top .share{top:10px;right:10px}}
 </style>
 <style>
 /* header: no update time (owner, 9 Oct 2026); the intro line sits between the logo and the menu */
@@ -157,7 +157,7 @@ header.top .status{display:none !important}
 <style>
 /* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
 .bt{display:none}
-@media (max-width:520px){
+@media all{
 .bt{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:repeat(5,1fr);background:var(--paper);border-top:1px solid var(--line);padding:5px 4px calc(5px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06)}
 .bt a,.bt button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:48px;font:inherit;font-size:11px;font-weight:700;line-height:1.2;color:var(--muted);background:none;border:0;text-decoration:none;cursor:pointer;padding:2px 0;-webkit-tap-highlight-color:transparent}
 .bt svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -165,7 +165,7 @@ header.top .status{display:none !important}
 .bt .on svg{stroke-width:2.3}
 body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
 }
-@media (max-width:520px){
+@media all{
 body[data-v="news"] #raceweek,body[data-v="news"] #sec-standings,body[data-v="news"] #numbers,body[data-v="news"] #sec-calendar,body[data-v="news"] #teams-band{display:none !important}
 body[data-v="data"] .dash-main,body[data-v="data"] #sec-rules{display:none !important}
 body[data-v="data"] .dash-side{margin-top:6px}
@@ -173,7 +173,7 @@ body[data-v="data"] .dash-side{margin-top:6px}
 </style>
 <style>
 /* phone: the top menu is replaced by the bottom tabs (owner, 11 Oct 2026) */
-@media (max-width:520px){ nav.jump{display:none !important} }
+@media all{ nav.jump{display:none !important} }
 </style>
 <style>
 /* logo easter egg: F1 start lights reaction game (owner's choice A, 12 Oct 2026) */
@@ -230,6 +230,22 @@ body[data-v="data"] .dash-side{margin-top:6px}
 .trk-svg .u{fill:none;stroke:#2C302B;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
 .trk-svg .t{fill:none;stroke:#F3EFE6;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 .trk-svg circle{fill:#E8946C}
+</style>
+<style id="pc-phone">
+/* PC shows the phone layout in a centre column (owner's request, 26 Oct 2026) */
+@media (min-width:521px){
+  html{background:var(--pc-out,#E6E0D3)}
+  body{max-width:860px;margin:0 auto;box-shadow:0 0 0 1px rgba(0,0,0,.06),0 10px 40px rgba(0,0,0,.08);min-height:100vh}
+  nav.bt{left:50% !important;right:auto !important;width:860px !important;max-width:100vw !important;transform:translateX(-50%)}
+}
+@media (min-width:880px){
+  html body .rcard{flex:0 0 calc((100% - 36px) / 4.3)}
+  html body .rarr{display:flex;align-items:center;justify-content:center;position:absolute;top:58%;transform:translateY(-50%);width:32px;height:32px;border-radius:16px;border:1px solid var(--line);background:var(--card,#fff);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.15);z-index:2}
+  html body .rprev{left:-44px}html body .rnext{right:-44px}
+  html body .wrap{padding-left:20px;padding-right:20px}
+}
+@media (min-width:521px) and (prefers-color-scheme:dark){:root:not([data-theme="light"]){--pc-out:#0d0f0c}}
+:root[data-theme="dark"]{--pc-out:#0d0f0c}
 </style>
 </head>
 <body>
@@ -1470,7 +1486,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
    (The old separate desktop layout was switched off by turning its media queries into "not all".) */
 .wrap,.wrap.dash,body .wrap{max-width:760px !important;padding-inline:clamp(16px,5vw,20px) !important;margin-inline:auto !important}
 /* Small phones: one article per row and larger text, so nothing is squeezed into two narrow columns */
-@media (max-width:520px){
+@media all{
   .dash-main .grid{grid-template-columns:1fr}
   .dash-main .card,.dash-main .card:nth-child(2n+2),.dash-main .card:nth-child(2n+3){padding:14px 0 15px;border-left:0}
   .dash-main .card{gap:5px}
@@ -1492,7 +1508,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 }
 
 /* Small phones, second step: everything a little larger again (header excluded, it is sized to fit) */
-@media (max-width:520px){
+@media all{
   .dash-main .card p,.dash-main .card:first-child p{font-size:16px !important;line-height:1.75}
   .dash-main .card h3{font-size:18.5px !important}
   .dash-main .card:first-child h3{font-size:21.5px !important}
@@ -1638,18 +1654,18 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .jump a.jump-feat:hover{color:#1F2420;opacity:.9}
 .jump a.jump-off{color:#FFFFFF;background:#2F6B66;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:0}
 .jump a.jump-off:hover{color:#FFFFFF;opacity:.9}
-@media (min-width:521px){.jump a.jump-off{padding:2px 8px !important}}
+@media not all{.jump a.jump-off{padding:2px 8px !important}}
 #hero{scroll-margin-top:64px}
-@media (min-width:521px){.jump a.jump-feat{padding:2px 8px !important}}
-@media (min-width:521px){.jump a.jump-news{padding:0 8px !important}}
-@media (max-width:520px){.jump a.jump-news{padding:1px 8px !important}}
+@media not all{.jump a.jump-feat{padding:2px 8px !important}}
+@media not all{.jump a.jump-news{padding:0 8px !important}}
+@media all{.jump a.jump-news{padding:1px 8px !important}}
 /* menu: smaller text; on wider screens every item is visible (two rows if needed) (owner's request, 3 Oct 2026) */
-@media (min-width:521px){
+@media not all{
   .jump .wrap{flex-wrap:wrap !important;overflow-x:visible !important;gap:4px 12px !important;font-size:11.5px !important;padding-block:6px !important}
   .jump .wrap a{font-size:11.5px !important;padding:2px 0}
   .jump a.jump-col,.jump a.jump-deep{padding:2px 8px !important}
 }
-@media (max-width:520px){
+@media all{
   .jump .wrap a{font-size:11.5px !important}
   .jump .wrap{gap:8px !important}
   .jump a.jump-col,.jump a.jump-deep{padding:3px 8px !important}
@@ -1700,7 +1716,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .hubtop-go:hover{background:var(--tint)}
 .hubtop-all{align-self:flex-start;font-size:13.5px;font-weight:700;color:var(--clay);text-decoration:none;margin-top:2px}
 .hubtop-all:hover{text-decoration:underline}
-@media (max-width:520px){.hubtop-hook{font-size:14px;line-height:1.8}.hubtop{gap:8px}.hubtop-sub{font-size:12.5px}.hubtop-ans{font-size:13px;line-height:1.75}.hubtop-go{padding:9px 12px}.hubtop-go span{font-size:14px}}
+@media all{.hubtop-hook{font-size:14px;line-height:1.8}.hubtop{gap:8px}.hubtop-sub{font-size:12.5px}.hubtop-ans{font-size:13px;line-height:1.75}.hubtop-go{padding:9px 12px}.hubtop-go span{font-size:14px}}
 </style>
 
 <header class="top">
@@ -1797,13 +1813,12 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       </section>
     </aside>
     <div class="dash-main">
-      <!--pre:rail--><style>.top-rail{display:none}@media (max-width:520px){.top-rail{display:block;width:100vw;margin:0 0 6px calc(50% - 50vw);order:-5}.hero .hero-in,.hero .duo{display:none !important}.hero.dbox{background:none !important;padding:0 2px !important;margin-bottom:8px !important}.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.rail::-webkit-scrollbar{display:none}.rcard{flex:0 0 72%;scroll-snap-align:start;scroll-margin-left:16px;border-radius:14px;padding:10px 12px 10px;min-height:0;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}.rc-story{background:#1F2420}.rc-world{background:#B8673F}.rc-deep{background:#8E2F3B}.rc-off{background:#2F6B66}.rcard small{align-self:flex-start;font-size:9.5px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,.18)}.rc-story small{background:var(--hl,#FFEE9A);color:#1F2420}.rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:16px;line-height:1.4;font-weight:900;margin:6px 0 2px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.rcard p{margin:0;font-size:12px;line-height:1.55;opacity:.88;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.rcard span.go{font-weight:800;font-size:11.5px;margin-top:6px}.rdots{display:flex;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}</style><div class="top-rail" aria-label="今日の読みもの"><div class="rail" id="rail"><a class="rcard rc-deep" href="/deep/who-decides-penalties/" data-track="click/top/rail/deep"><div><small>DEEP GRID · 10/26</small><b>F1の判定は、誰がどこで決めているのか</b></div><span class="go">読む →</span></a><a class="rcard rc-world" href="/lens/antonelli-title-mexico-20261026/" data-track="click/top/rail/world"><div><small>WORLD GRID · 10/26</small><b>アントネッリ、勝っても王座お預け 伊「祝賀は延期」西「王座に投げ縄」</b></div><span class="go">読む →</span></a><a class="rcard rc-story" href="/topics/tsunoda-phone-not-yet/" data-track="click/top/rail/story"><div><small>STORY · 10/26</small><b>残っている席</b><p>10月26日、アラバマのインディカーのテスト。角田裕毅は、そこでマシンに乗るはずだった。乗らなかった。</p></div><span class="go">STORY を読む →</span></a><a class="rcard rc-off" href="/lens/tsunoda-cadillac-rumor-20261026/" data-track="click/top/rail/off"><div><small>OFF GRID · 10/26</small><b>角田裕毅の代理人がキャデラックに連絡と英報道　ハータも候補</b></div><span class="go">読む →</span></a></div><div class="rdots" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div><script>(function(){var r=document.getElementById("rail");if(!r)return;var d=r.parentNode.querySelectorAll(".rdots i");function u(){var w=r.firstElementChild?r.firstElementChild.offsetWidth+12:1,i=Math.round(r.scrollLeft/w);for(var j=0;j<d.length;j++)d[j].className=j===i?"on":"";}r.addEventListener("scroll",u,{passive:true});u();})();</script><!--/pre:rail-->
       <section class="hero dbox" aria-labelledby="hero-title">
         <div class="hero-in">
           <div class="hero-text" id="hero"><!--pre:hero--><div class="hubtop" id="hub-top" data-circuit="austin"><div class="chips"><span class="chip-feature">STORY</span><span class="chip-cat">2026年シーズン · F1 Grid Walk の独自記事</span></div><h1 id="hero-title"><a href="/topics/tsunoda-phone-not-yet/" data-track="click/top/hub">残っている席</a></h1><p class="hubtop-hook">10月26日、アラバマのインディカーのテスト。角田裕毅は、そこでマシンに乗るはずだった。乗らなかった。</p><a class="hubtop-go" href="/topics/tsunoda-phone-not-yet/" data-track="click/top/hub-go"><span>STORY を読む</span><b aria-hidden="true">→</b></a><a class="hubtop-all" href="/topics/" data-track="click/top/hub-all">これまでの STORY（16本） →</a></div><!--/pre:hero--></div>
           <div class="hero-art" id="hero-art"><div class="plate"></div></div>
         </div>
-        <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/antonelli-title-mexico-20261026/" data-track="click/top/lens"><span class="duo-q"><small>WORLD GRID</small><strong>世界の見方を、日本語で。</strong></span><b>アントネッリ、勝っても王座お預け 伊「祝賀は延期」西「王座に投げ縄」&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/who-decides-penalties/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>F1の判定は、誰がどこで決めているのか&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div><!--pre:people--><style>.ppl-strip{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin:14px 2px 0;font-size:14px;line-height:1.9}.ppl-strip span{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}.ppl-strip a{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.ppl-strip a.all{color:var(--clay);text-decoration:none}@media (max-width:520px){.ppl-strip{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;margin-top:4px}.ppl-strip::-webkit-scrollbar{display:none}}</style><p class="ppl-strip"><span>いま話題の人</span><a href="/deep/rules/person-kimi-antonelli/" data-track="click/top/people/person-kimi-antonelli">アントネッリ</a><a href="/deep/rules/person-max-verstappen/" data-track="click/top/people/person-max-verstappen">フェルスタッペン</a><a href="/deep/rules/person-colton-herta/" data-track="click/top/people/person-colton-herta">ハータ</a><a href="/deep/rules/person-yuki-tsunoda/" data-track="click/top/people/person-yuki-tsunoda">角田裕毅</a><a class="all" href="/drivers/" data-track="click/top/people/all">ドライバー一覧 →</a></p><!--/pre:people-->
+        <div class="duo" aria-label="F1 Grid Walkの2つの読みもの"><!--pre:lens--><a class="duo-row duo-lens" href="/lens/antonelli-title-mexico-20261026/" data-track="click/top/lens"><span class="duo-q"><small>WORLD GRID</small><strong>世界の見方を、日本語で。</strong></span><b>アントネッリ、勝っても王座お預け 伊「祝賀は延期」西「王座に投げ縄」&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:lens--><!--pre:deep--><a class="duo-row duo-deep" href="/deep/who-decides-penalties/" data-track="click/top/deep"><span class="duo-q"><small>DEEP GRID</small><strong>ニュースの、その奥へ。</strong></span><b>F1の判定は、誰がどこで決めているのか&#8288;<i aria-hidden="true">→</i></b></a><!--/pre:deep--></div><!--pre:people--><style>.ppl-strip{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin:14px 2px 0;font-size:14px;line-height:1.9}.ppl-strip span{font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted)}.ppl-strip a{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.ppl-strip a.all{color:var(--clay);text-decoration:none}@media all{.ppl-strip{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;margin-top:4px}.ppl-strip::-webkit-scrollbar{display:none}}</style><p class="ppl-strip"><span>いま話題の人</span><a href="/deep/rules/person-kimi-antonelli/" data-track="click/top/people/person-kimi-antonelli">アントネッリ</a><a href="/deep/rules/person-max-verstappen/" data-track="click/top/people/person-max-verstappen">フェルスタッペン</a><a href="/deep/rules/person-colton-herta/" data-track="click/top/people/person-colton-herta">ハータ</a><a href="/deep/rules/person-yuki-tsunoda/" data-track="click/top/people/person-yuki-tsunoda">角田裕毅</a><a class="all" href="/drivers/" data-track="click/top/people/all">ドライバー一覧 →</a></p><!--/pre:people-->
       </section>
       <div class="geek" id="geek" hidden>
         <section class="dbox" id="tech" aria-label="テクニカル深掘り">
@@ -1852,6 +1867,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
           <div class="teamtags" role="group" aria-label="チームで絞り込む" id="teamfilter"></div>
           </div>
         </div>
+        <!--pre:rail--><style>.top-rail{display:none}@media all{.top-rail{display:block;margin:6px 0 12px}.top-rail .rl{margin:4px 0 6px;font-weight:800;font-size:13px}.hero .hero-in,.hero .duo{display:none !important}.hero.dbox{background:none !important;padding:0 2px !important;margin-bottom:8px !important}.rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 0 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.rail::-webkit-scrollbar{display:none}.rcard{flex:0 0 46%;scroll-snap-align:start;border-radius:10px;padding:8px 10px;min-height:0;display:flex;flex-direction:column;justify-content:space-between;color:#fff;text-decoration:none}.rc-story{background:#1F2420}.rc-world{background:#B8673F}.rc-deep{background:#8E2F3B}.rc-off{background:#2F6B66}.rcard small{align-self:flex-start;font-size:8.5px;font-weight:800;letter-spacing:.08em;padding:2px 6px;border-radius:5px;background:rgba(255,255,255,.18)}.rc-story small{background:var(--hl,#FFEE9A);color:#1F2420}.rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:13.5px;line-height:1.4;font-weight:900;margin:4px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.rcard p,.rcard span.go{display:none}.rcard p{margin:0;font-size:12px;line-height:1.55;opacity:.88;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.rcard span.go{font-weight:800;font-size:11.5px;margin-top:6px}.top-rail{position:relative}.rarr{display:none}.rdots{display:none;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}</style><div class="top-rail" aria-label="コラム"><p class="rl">コラム</p><div class="rail" id="rail"><a class="rcard rc-deep" href="/deep/who-decides-penalties/" data-track="click/top/rail/deep"><div><small>DEEP GRID · 10/26</small><b>F1の判定は、誰がどこで決めているのか</b></div><span class="go">読む →</span></a><a class="rcard rc-deep" href="/deep/mexico-altitude/" data-track="click/top/rail/deep"><div><small>DEEP GRID · 10/26</small><b>なぜメキシコシティでは、F1の車が「別物」になるのか</b></div><span class="go">読む →</span></a><a class="rcard rc-deep" href="/deep/cota-track-limits/" data-track="click/top/rail/deep"><div><small>DEEP GRID · 10/26</small><b>COTAでは、なぜ金曜だけで207周も消えたのか</b></div><span class="go">読む →</span></a><a class="rcard rc-world" href="/lens/antonelli-title-mexico-20261026/" data-track="click/top/rail/world"><div><small>WORLD GRID · 10/26</small><b>アントネッリ、勝っても王座お預け 伊「祝賀は延期」西「王座に投げ縄」</b></div><span class="go">読む →</span></a><a class="rcard rc-story" href="/topics/tsunoda-phone-not-yet/" data-track="click/top/rail/story"><div><small>STORY · 10/26</small><b>残っている席</b><p>10月26日、アラバマのインディカーのテスト。角田裕毅は、そこでマシンに乗るはずだった。乗らなかった。</p></div><span class="go">STORY を読む →</span></a><a class="rcard rc-world" href="/lens/verstappen-p3-strategy-20261026/" data-track="click/top/rail/world"><div><small>WORLD GRID · 10/26</small><b>フェルスタッペン「事前に決めていなかった」 3位でもタイヤ戦略に不満</b></div><span class="go">読む →</span></a><a class="rcard rc-off" href="/lens/tsunoda-cadillac-rumor-20261026/" data-track="click/top/rail/off"><div><small>OFF GRID · 10/26</small><b>角田裕毅の代理人がキャデラックに連絡と英報道　ハータも候補</b></div><span class="go">読む →</span></a><a class="rcard rc-world" href="/lens/antonelli-fence-reverse-20261026/" data-track="click/top/rail/world"><div><small>WORLD GRID · 10/26</small><b>アントネッリ、バックでフェンスに ラッセル大笑い 原因は国で書き方が違う</b></div><span class="go">読む →</span></a><a class="rcard rc-off" href="/lens/ralf-bottas-cycling-20261025/" data-track="click/top/rail/off"><div><small>OFF GRID · 10/25</small><b>ボッタスに「自転車に乗って人生を楽しむべき」 ラルフはオコン推し</b></div><span class="go">読む →</span></a><a class="rcard rc-world" href="/lens/vettel-ferrari-secret-20261025/" data-track="click/top/rail/world"><div><small>WORLD GRID · 10/25</small><b>ベッテル「まったく秘密の会談」 フェラーリを断り、ドアは少し開けた</b></div><span class="go">読む →</span></a><a class="rcard rc-off" href="/lens/horner-marko-book-20261025/" data-track="click/top/rail/off"><div><small>OFF GRID · 10/25</small><b>ホーナー「関係はない」、マルコ「ウソの寄せ集め」 自伝の応酬</b></div><span class="go">読む →</span></a><a class="rcard rc-off" href="/lens/verstappen-cota-records-20261024/" data-track="click/top/rail/off"><div><small>OFF GRID · 10/24</small><b>フェルスタッペン、COTAで7連続表彰台。ハミルトンに並ぶか</b></div><span class="go">読む →</span></a></div><button type="button" class="rarr rprev" aria-label="前へ">‹</button><button type="button" class="rarr rnext" aria-label="次へ">›</button><div class="rdots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><script>(function(){var r=document.getElementById("rail");if(!r)return;var d=r.parentNode.querySelectorAll(".rdots i");function u(){var w=r.firstElementChild?r.firstElementChild.offsetWidth+12:1,i=Math.round(r.scrollLeft/w);for(var j=0;j<d.length;j++)d[j].className=j===i?"on":"";}r.addEventListener("scroll",u,{passive:true});u();var P=r.parentNode;[[".rprev",-1],[".rnext",1]].forEach(function(x){var b=P.querySelector(x[0]);if(b)b.addEventListener("click",function(){r.scrollBy({left:x[1]*r.clientWidth*.9,behavior:"smooth"});});});})();</script><!--/pre:rail-->
         <div id="feed"><!--pre:feed--><div class="grid"><article class="card" data-c="it"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><span class="rg">イタリア</span><time datetime="2026-10-26T07:45:00+01:00">10/26 15:45</time></div><h3><a href="/news/it-formula1it-alpine-gasly-colapinto-austin/">アルピーヌ、ガスリーが10位で入賞　コラピントは2戦連続でリタイア</a></h3><p>伊Formula1.itは、アルピーヌのアメリカGPをガスリーの入賞とコラピントの途中棄権の対比で伝えた。ガスリーはスタート順位と同じ10位に入ったが、バーマンとの接触でフロア下を傷め、ピット作業の遅れもあって、ローソンを狙えたかもしれないと話した。コラピントはハードで始める別戦略をとったが、リンドブラッドとの接触でフロアとサイドポッドを傷めて2戦連続のリタイアとなった。ブリアトーレ代表は運の悪い残念な週末と述べ、次戦は両車での得点を目標に掲げた。チームはコンストラクターズ6位にいる。</p><div class="card-foot"><span class="cat">チーム</span><a href="https://www.formula1.it/news/33490/1/alpine-gasly-salva-ancora-il-risultato-colapinto-adesso-e-un-problema" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="nl"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="nl">RacingNews365</span><span class="rg">オランダ</span><time datetime="2026-10-26T07:35:00+01:00">10/26 15:35</time></div><h3><a href="/news/nl-racingnews365-hadjar-fia-throttle-map/">ハジャー、アメリカGPでFIAの規則に不満　誤ったスロットルマップで1周1秒を失う</a></h3><p>3番手スタートで表彰台を狙ったハジャーは、クラッチの出力が強すぎて発進に失敗し、無線も聞き取りにくかったという。ピットアウト時にはスロットルマップがピットレーン用のままで、1周あたり約1秒を失ったと主張し、FIAに不満をぶつけた。マップはFIAとの取り決めで設定されるため、非難の矛先がFIAに向いたとオランダのRacingNews365は伝えた。予期せずハードタイヤを履いたが、ペース自体は悪くなく、チームの判断は理解できると話した。フェルスタッペン同様、事前に知らされない作戦があったとも語った。</p><div class="card-foot"><span class="cat">決勝</span><a href="https://racingnews365.nl/hadjar-hekelt-fia-regel-jullie-hebben-geen-idee-waar-ik-mee-reed" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="it"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="it">Formula1.it</span><span class="rg">イタリア</span><time datetime="2026-10-26T07:30:00+01:00">10/26 15:30</time></div><h3><a href="/news/it-formula1it-hamilton-austin-understeer/">ハミルトン、アメリカGPはアンダーステアに苦戦　セットアップが課題と認める</a></h3><p>ハミルトンはアメリカGPを4位で終え、フェラーリが伸びなかった主因はバランスの問題だと振り返った。バーチャルセーフティカーは影響したが、勝負は最初の2スティントで決まり、強いアンダーステアのためスローコーナーで離されたという。最終スティントでセットアップを詰めて、ようやくバランスに近づいたと語った。直近5戦ほどでセットアップを煮詰め切れず多くのポイントを失ったと認め、身につけるべき技術だと述べた。伊Formula1.itは、次戦メキシコGPで週末の最初からバランスを見つけられるかが焦点だと伝えた。</p><div class="card-foot"><span class="cat">ドライバー</span><a href="https://www.formula1.it/news/33486/1/ferrari-hamilton-cerca-risposte-dopo-austin-nel-mirino-la-configurazione" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="gb"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="gb">Sky Sports</span><span class="rg">イギリス</span><time datetime="2026-10-26T06:22:00+00:00">10/26 15:22</time></div><h3><a href="/news/en-skysports-russell-rubbish-pace-austin/">ラッセル、アメリカGP8位に「ペースがひどかった」　優勝アントネッリから54秒差</a></h3><p>ラッセルはアメリカGPを8位で終え、優勝したチームメイトのアントネッリから54秒遅れた。6番手スタートから第1スティントは順位を守ったが、1周目にコース外を走ってピアストリに対して利益を得たとして5秒ペナルティを受け、ピットで消化して8位に下がった。その後の26周はピアストリの後ろから抜け出せず、本人は「ペースがひどかった」と認め、原因はまだ分からないと語った。ウォルフ代表は改良型W17は最適なセットアップの幅が狭いと説明した。スカイのバトンは、グリッド位置や乱気流、ペナルティが差を大きく見せたとの見方を示した。</p><div class="card-foot"><span class="cat">決勝</span><a href="https://www.skysports.com/f1/news/13603617/george-russell-mercedes-driver-admits-to-rubbish-pace-in-united-states-gp-after-finishing-almost-one-minute-behind-kimi-antonelli" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="nl"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="nl">F1Maximaal</span><span class="rg">オランダ</span><time datetime="2026-10-26T06:45:00+01:00">10/26 14:45</time></div><h3><a href="/news/nl-f1maximaal-hart-lambiase-successor-debut/">レッドブル、ランビアーゼ後任ハートのデビューを評価　メキース「見事な仕事」</a></h3><p>オランダのF1Maximaalによると、来季フェルスタッペンのレースエンジニアとなるトム・ハートが、アメリカGPで初めてその役を務めた。ハートは長くフェルスタッペンのパフォーマンスエンジニアを務めた後、ウィリアムズでアルボンを担当していたが、ランビアーゼの退任が決まり、ボウルズ代表の了承を得てレッドブルに戻った。メキース代表は、いくつかのミスはあったものの「見事な仕事をした」と評価し、ランビアーゼも裏で支えたと語った。年末までは2人が交代で担当し、メキシコはランビアーゼ、ブラジルとラスベガスはハートが務める予定だという。</p><div class="card-foot"><span class="cat">チーム</span><a href="https://www.f1maximaal.nl/formule-1/red-bull-beoordeelt-de-vervanger-van-lambiase-hij-gaat-de-relatie-met-verstappen-opbouwen" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="gb"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="gb">The Race</span><span class="rg">イギリス</span><time datetime="2026-10-26T02:30:00+00:00">10/26 11:30</time></div><h3><a href="/news/en-therace-redbull-us-gp-fury/">フェルスタッペンとハジャー、アメリカGPでレッドブルに不満　スタート・無線・戦略に注文</a></h3><p>アメリカGP後、フェルスタッペンとハジャーはレッドブルへの不満を口にした。2番手と3番手スタートの2人はともに発進で失敗し、ピットとの無線も聞き取りにくかったという。2ストップ作戦についてフェルスタッペンは、事前に合意した内容ではなく、直近2戦でソフトが最速だった経験に頼りすぎたと述べた。優勝したアントネッリは1ストップで、フェルスタッペンは3位、ハジャーは6位だった。メキース代表は整理すべき点があると認め、発進の根本改善は来季になるとの見方を示した。</p><div class="card-foot"><span class="cat">決勝</span><a href="https://www.the-race.com/formula-1/why-verstappen-hadjar-furious-red-bull-f1-us-gp/" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="gb"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="gb">The Race</span><span class="rg">イギリス</span><time datetime="2026-10-26T02:30:00+00:00">10/26 11:30</time></div><h3><a href="/news/en-therace-alonso-albon-low-quality/">アロンソ、1周目の接触でアルボンを批判　「後方3分の1はレベルが非常に低い」</a></h3><p>アロンソはアメリカGP1周目のアルボンとの接触を受け、グリッド後方のドライバーの質は非常に低いと批判した。アルボンがイン側に入り、外側にはオコンのハースがいた状況で、スチュワードはお咎めなしとした。アロンソは左のバージボードが外れ、「車が半分しかない」状態で1周0.5秒以上失ったと主張した。ウイング交換の遅いピットもあり周回遅れの16位だったが、今季最高のレースだったと話した。アルボンは避けようとしたが縁石に乗り切れなかったと述べ、アロンソを「強いがフェア」と評した。</p><div class="card-foot"><span class="cat">ドライバー</span><a href="https://www.the-race.com/formula-1/alonso-slams-low-quality-albon-for-us-gp/" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="de"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="de">Formel1.de</span><span class="rg">ドイツ</span><time datetime="2026-10-26T02:23:00+01:00">10/26 10:23</time></div><h3><a href="/news/de-formel1de-verstappen-sauer-reifenwahl/">フェルスタッペン、アメリカGP3位も不満　タイヤ選択の誤りと無線不調を指摘</a></h3><p>フェルスタッペンはアメリカGPを3位で終えたが、内容には不満を示した。ソフトが期待通りに働かず、ハードの方がグリップが高いと気づくのが遅く、使う順序も誤りだったと振り返った。パワーユニットの挙動が周ごと、コーナーごとに安定せず、遅いピット作業も2位争いで痛手になったという。無線の不調は繰り返し起きており、手話に切り替えようかと皮肉った。終盤のVSCに助けられた面もあると認め、メキース代表はアントネッリが単に速かったと語った。</p><div class="card-foot"><span class="cat">決勝</span><a href="https://www.formel1.de/news/grand-prix-berichte/2026-10-26/verstappen-sauer-falsche-reifenwahl-zu-wenig-pace-und-funkprobleme" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="de"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="de">Formel1.de</span><span class="rg">ドイツ</span><time datetime="2026-10-26T01:55:00+01:00">10/26 09:55</time></div><h3><a href="/news/de-formel1de-leclerc-ferrari-konstanz/">ルクレール、アメリカGP2位　「パッケージとしてはまだ堅牢さが足りない」</a></h3><p>ルクレールはアメリカGPを2位で終え、ペースは良かったと振り返った。序盤はバッテリーの電力を使ってフェルスタッペンに並んだ分、防御が難しくなり、ノリスやフェルスタッペンとの競り合いで時間を失ったという。フェラーリとレッドブルは2ストップを予想したが、アントネッリのハード1ストップが決定的で、前が空いても追いつけなかったと語った。予選Q3ではタイヤを適温に入れにくく、優勝の可能性を逃したと見る。速さはあるが週末を通じた一貫性に欠けるとし、メキシコでの勝利は予言できないと述べた。</p><div class="card-foot"><span class="cat">決勝</span><a href="https://www.formel1.de/news/grand-prix-berichte/2026-10-26/charles-leclerc-nach-platz-zwei-in-austin-ferrari-fehlt-noch-die-konstanz" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article><article class="card" data-c="gb"><div class="card-meta"><span class="kind news" title="報道機関の記事">報道</span><span class="srcbadge" data-c="gb">The Race</span><span class="rg">イギリス</span><time datetime="2026-10-26T00:26:00+00:00">10/26 09:26</time></div><h3><a href="/news/en-therace-usgp-winners-losers/">アメリカGPの勝者と敗者　アントネッリは圧勝、アロンソとベアマンは苦い週末に</a></h3><p>ザ・レースがアメリカGPを振り返る総括記事を出した。アントネッリは1ストップ作戦で勝ち、ポイントリーダーとして次戦メキシコでタイトルを決める可能性がある。ルクレールが2位でフェラーリはアップグレードの成果を示し、フェルスタッペンは3位、ハジャーは6位でクラッチを「壊れやすい」と評した。アロンソは1周目のアルボンとの接触でバージボードを傷めて16位、ベアマンはガスリーとの接触でリタイアし、10秒ペナルティに異議を唱えた。チーム別ではフェラーリ30点、メルセデス29点、レッドブル23点だったという。</p><div class="card-foot"><span class="cat">決勝</span><a href="https://www.the-race.com/formula-1/winners-and-losers-from-f1s-2026-united-states-grand-prix/" target="_blank" rel="noopener noreferrer">原文へ ↗</a></div></article></div><p class="pre-more"><a href="/news/">すべてのニュースの一覧 →</a>　<a href="/gp/" data-track="click/top/gp">GPごと</a>　<a href="/teams/" data-track="click/top/teams">チームごと</a></p><!--/pre:feed--></div>
         <p class="feed-ways"><a href="/news/" data-track="click/top/ways/news">ニュース一覧</a><a href="/gp/" data-track="click/top/ways/gp">GPごとに読む</a><a href="/teams/" data-track="click/top/ways/teams">チームごとに読む</a></p>
         <a class="next-up" href="#sec-rumor"><span>次は</span>パドック（うわさ）→ 掲示板まとめ → テック</a>
@@ -3171,13 +3187,13 @@ document.addEventListener('click',function(ev){
     p.classList.add('fold'); var h=p.querySelector('h2'); if(!h) return;
     h.setAttribute('role','button'); h.tabIndex=0; h.setAttribute('aria-expanded','false');
     var t=function(){ var o=p.classList.toggle('open'); h.setAttribute('aria-expanded', o?'true':'false'); };
-    h.addEventListener('click',function(){ if(window.matchMedia('(max-width:520px)').matches) t(); });
-    h.addEventListener('keydown',function(e){ if((e.key==='Enter'||e.key===' ')&&window.matchMedia('(max-width:520px)').matches){ e.preventDefault(); t(); } });
+    h.addEventListener('click',function(){ if(window.matchMedia('all').matches) t(); });
+    h.addEventListener('keydown',function(e){ if((e.key==='Enter'||e.key===' ')&&window.matchMedia('all').matches){ e.preventDefault(); t(); } });
   });
 })();
 </script>
 <script>
-(function(){var j=document.querySelector('.jump');if(!j)return;var mq=window.matchMedia('(max-width:520px)'),last=window.scrollY,tick=false;
+(function(){var j=document.querySelector('.jump');if(!j)return;var mq=window.matchMedia('all'),last=window.scrollY,tick=false;
 function upd(){tick=false;var y=window.scrollY,d=y-last;if(!mq.matches||y<200){j.classList.remove('jm-hide');last=y;return}
 if(d>6){j.classList.add('jm-hide');last=y}else if(d<-6){j.classList.remove('jm-hide');last=y}}
 window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
@@ -3187,7 +3203,7 @@ j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
 <script>
 (function(){
   var bar=document.querySelector('.bt'); if(!bar) return;
-  var mq=window.matchMedia('(max-width:520px)');
+  var mq=window.matchMedia('all');
   var DATA=['raceweek','sec-standings','numbers','sec-calendar','teams-band'];
   function set(v,top){ document.body.setAttribute('data-v',v);
     [].forEach.call(bar.querySelectorAll('button'),function(b){ var on=b.getAttribute('data-v')===v; b.classList.toggle('on',on); b.setAttribute('aria-pressed',on?'true':'false'); });
