@@ -1970,13 +1970,14 @@ def _og_wrap(d, text, font, w):
 
 def article_og(a, k):
     """Write news/<id>/og.png when the headline changed; return its URL (or None to use the site image)."""
-    if not _og_tools():
-        return None
     src = a['source'] + ('\u3000' + a['region'] if a.get('region') else '')
     stamp = hashlib.sha1('|'.join((OG_VER, a['title'], src, k)).encode()).hexdigest()[:10]
     rel = f'news/{a["id"]}/og.png'
     p = os.path.join(ROOT, rel)
     url = f'{SITE}/{rel}?v={stamp}'
+    if not _og_tools():
+        # no fonts / PIL here: keep the card image already made, never fall back to the site image (26 Oct 2026)
+        return url if os.path.exists(p) else None
     I = _OG['Image']
     try:
         if os.path.exists(p) and I.open(p).text.get('gw') == stamp:
@@ -2028,12 +2029,12 @@ def article_og(a, k):
 
 def rules_og(tid, head, tag, sub, right='F1用語・ルール辞典'):
     """deep/rules/<id>/og.png: the entry name and its one-line explanation (owner's request, 9 Oct 2026)."""
-    if not _og_tools():
-        return None
     stamp = hashlib.sha1('|'.join(('rb1', head, tag, sub, right)).encode()).hexdigest()[:10]
     rel = f'deep/rules/{tid}/og.png'
     p = os.path.join(ROOT, rel)
     url = f'{SITE}/{rel}?v={stamp}'
+    if not _og_tools():
+        return url if os.path.exists(p) else None
     I = _OG['Image']
     try:
         if os.path.exists(p) and I.open(p).text.get('gw') == stamp:
