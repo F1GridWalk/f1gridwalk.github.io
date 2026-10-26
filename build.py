@@ -3197,6 +3197,11 @@ def top_rail_slot():
                'function u(){var w=r.firstElementChild?r.firstElementChild.offsetWidth+12:1,i=Math.round(r.scrollLeft/w);'
                'for(var j=0;j<d.length;j++)d[j].className=j===i?"on":"";}r.addEventListener("scroll",u,{passive:true});u();'
                'var P=r.parentNode;[[".rprev",-1],[".rnext",1]].forEach(function(x){var b=P.querySelector(x[0]);if(b)b.addEventListener("click",function(){r.scrollBy({left:x[1]*r.clientWidth*.9,behavior:"smooth"});});});})();</script>')
+    # every column and STORY for the header keyword search (owner, 26 Oct 2026)
+    idx = [{'t': x['title'], 'u': x['url'], 'g': COL_TAG.get(x['kind'], 'コラム'), 'k': x.get('txt', '')} for x in ALL_COLS]
+    for H_ in hubs_newest():
+        idx.append({'t': H_['title'], 'u': f'/topics/{H_["slug"]}/', 'g': 'STORY', 'k': ' '.join([H_['slug'], H_.get('dek', ''), H_.get('gp', '')])})
+    blk += '<script type="application/json" id="colidx">' + json.dumps(idx, ensure_ascii=False).replace('</', '<\\/') + '</script>'
     ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
     out = re.sub(r'(<!--pre:rail-->).*?(<!--/pre:rail-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
