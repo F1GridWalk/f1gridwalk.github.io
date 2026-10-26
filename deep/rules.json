@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-26",
+ "checked": "2026-10-27",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -52,6 +52,10 @@
     {
      "t": "メルセデスはラッセルのPUを交換し、シンガポールGPの決勝は最後尾からのスタートが確定した。",
      "u": "/news/pt-grandepremio-russell-engine-penalty/"
+    },
+    {
+     "t": "リンドブラッドのシーズン6基目のエンジンで5グリッド降格が決まり、レーシングブルズはQ3でローソンを走らせなかった。",
+     "u": "/news/de-formel1de-lawson-q3-skipped/"
     }
    ],
    "see": [
@@ -122,6 +126,10 @@
     {
      "t": "FIA、2026年限りの予定だったPU部品の追加1基の枠を2028年まで延長。上限を超えればグリッド降格は変わらない",
      "u": "/news/ja-f1gate-pu-allowance-extended-2028/"
+    },
+    {
+     "t": "アウディはボルトレートに4基目のバッテリーと制御電子機器を入れ、年間3基の上限を超えて最後尾スタートになった。",
+     "u": "/news/de-f1insider-audi-bortoleto-first-engine-penalty/"
     }
    ],
    "see": [
@@ -413,6 +421,10 @@
     {
      "t": "メルセデス、ADUOの改良型PUの投入をアメリカGPで見送り。メキシコシティGPも難しく、サンパウロGPが最短に",
      "u": "/news/en-therace-mercedes-aduo-engine-delay/"
+    },
+    {
+     "t": "ホンダは2回目のADUOトークンで新ターボを入れたが、シンガポールではターボラグを隠し切れなかった。",
+     "u": "/news/de-formel1de-honda-aduo-turbo-lag-singapore/"
     }
    ],
    "see": [
@@ -1424,7 +1436,12 @@
     "今のF1では、トラックリミット（コースの外側の限界）の警告にも使う。決勝では、違反が3回目になった車に示され、4回目には5秒加算が科される。今季のモナコGPでは、ストロールが4回違反した。3回目に黒白旗が示され、4回目で5秒加算を受けている（FIAの裁定文書）。"
    ],
    "rule": "国際スポーティングコード付則H 2.5.4.1 f)／スポーティングレギュレーション B1.8.6（トラックリミット）",
-   "examples": [],
+   "examples": [
+    {
+     "t": "FIAはオースティンで白線を広げた。決勝では3回の違反で黒白旗、4回目で5秒加算となる。",
+     "u": "/news/nl-gpblog-fia-track-limits-207-austin/"
+    }
+   ],
    "see": [
     "track-limits",
     "black-flag",
@@ -5098,9 +5115,10 @@
    "body": [
     "空力の開発に使う、風洞の走行回数とCFD（コンピューターで空気の流れを計算すること）の量に上限をつける決まり。成績のよいチームほど少なく、悪いチームほど多く使える。チームの差を縮めるために2021年に入った仕組みだ。",
     "基準の100％は、期間ごとに風洞が320回の走行、CFDが2000件。順位が1つ下がるごとに5％増え、1つ上がるごとに5％減る。コンストラクターズ選手権の1位は70％、7位は100％、10位以下と新規参入のチームは115％になる。1年は6つの期間に分かれ、1つの期間は8〜10週間ほどだ。",
-    "どの順位を使うかは、年に2回切り替わる。前半の3期間は前年の最終順位、後半の3期間は、第3期間が終わった時点のその年の順位を使う。2026年の前半は2025年の最終順位が基準になり、チャンピオンのマクラーレンが70％（風洞224回、CFD1400件）、アルピーヌと新規参入のキャデラックが115％（風洞368回、CFD2300件）だった。"
+    "どの順位を使うかは、年に2回切り替わる。前半の3期間は前年の最終順位、後半の3期間は、第3期間が終わった時点のその年の順位を使う。2026年の前半は2025年の最終順位が基準になり、チャンピオンのマクラーレンが70％（風洞224回、CFD1400件）、アルピーヌと新規参入のキャデラックが115％（風洞368回、CFD2300件）だった。",
+    "GPFansのオランダ語版は2026年7月2日、今季のコンストラクターズ順位にもとづく新しい割り当てとして、首位のメルセデスが70％、2位のフェラーリが75％、3位のマクラーレンが80％、4位のレッドブルが85％になったと伝えた。"
    ],
-   "rule": "運用規則（Section F）F4.6.1（上限と順位ごとの割合）、F4.1.4（6つの期間）",
+   "rule": "運用規則（Section F）F4.6.1（上限と順位ごとの割合）、F4.1.4（6つの期間）（Issue 09 で確認）",
    "examples": [],
    "see": [
     "cost-cap",
@@ -5121,10 +5139,20 @@
      "name": "The Race",
      "title": "The aero restrictions each F1 team will face in 2026",
      "url": "https://the-race.com/formula-1/the-aero-restrictions-each-f1-team-will-face-in-2026"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section F Operational (Issue 09, 2026-06-25)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_09_-_2026-06-25.pdf"
+    },
+    {
+     "name": "GPFans（オランダ語版）",
+     "title": "Red Bull wint ontwikkelingstijd onder ATR-regels, Mercedes verliest terrein（2026年7月2日）",
+     "url": "https://www.gpfans.com/nl/f1-nieuws/1087059/red-bull-wint-ontwikkelingstijd-onder-atr-regels-mercedes-verliest-terrein/"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-10-27"
   },
   {
    "id": "concorde-agreement",
@@ -5148,7 +5176,8 @@
    "body": [
     "F1の運営について、FIA、F1の商業を担うFOM、チームが結ぶ契約。今回の新しい協定は9つ目とされ、2026年から2030年までの5年間続く。全11チームが参加している。",
     "協定は2つの部分に分かれる。商業面は2025年3月に全チームが署名し、テレビ放映権などの収入と、チームへの賞金の分け方を決めた。統治面（ガバナンス）は2025年12月12日に合意され、FIAの役割やF1コミッションの投票の仕組み、チームがFIAに払う参戦料などを決めた。",
-    "統治面の合意では、規則の変更を通すために必要なチームの票が減ったと報じられた。通常の多数決は11チーム中6票から4票に、特別多数は8票から6票になった。参戦料も、前年のポイントで決まる方式から、コンストラクターズ順位に応じた方式に変わった。"
+    "統治面の合意では、規則の変更を通すために必要なチームの票が減ったと報じられた。通常の多数決は11チーム中6票から4票に、特別多数は8票から6票になった。参戦料も、前年のポイントで決まる方式から、コンストラクターズ順位に応じた方式に変わった。",
+    "商業面の協定には、キャデラックが既存チームに払った新規参戦の負担金（アンチダイリューション・フィー）の計算方法も入っている、とAdam Cooperは報じた。12番目のチームが来たときも同じ方法を使うという。統治面では参戦料の仕組みが見直され、FOMとチームがFIAに払う額は増える。FIAはそれを、審判やマーシャルなどに回す見込みだとMotorsport.comは伝えた。"
    ],
    "examples": [],
    "see": [
@@ -5177,10 +5206,15 @@
      "name": "F1Technical",
      "title": "Formula One confirms 2026 Concorde Commercial Agreement signed by all teams",
      "url": "https://www.f1technical.net/news/26456"
+    },
+    {
+     "name": "Adam Cooper's F1 Blog",
+     "title": "Commercial side of 2026 Concorde Agreement is confirmed（2025年3月16日）",
+     "url": "https://adamcooperf1.com/2025/03/16/commercial-side-of-2026-concorde-agreement-is-confirmed/"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-10-27"
   },
   {
    "id": "super-licence",
@@ -5216,6 +5250,10 @@
     {
      "t": "アウディのビノット代表は、F3で2位の18歳スレーターについて、2027年かそれ以前のF1入りを示唆した。スーパーライセンスに向けたFP1走行も計画されている。",
      "u": "/news/it-formula1-slater-audi-binotto/"
+    },
+    {
+     "t": "ハータはスーパーライセンスの40点にあと1点足りず、年内にFP1走行が必要だという。",
+     "u": "/news/en-therace-herta-could-replace-bottas/"
     }
    ],
    "see": [
@@ -5736,6 +5774,10 @@
     {
      "t": "ルクレールが、車が勝手にブレーキをかけ始めたと訴えると、エンジニアのボッツィは走行を続けるよう指示し、2周後にステアリングの設定を変えさせた。",
      "u": "/news/ja-f1gate-leclerc-sudden-braking-singapore/"
+    },
+    {
+     "t": "来季フェルスタッペンのレースエンジニアになるトム・ハートが、アメリカGPで初めてその役を務めた。",
+     "u": "/news/nl-f1maximaal-hart-lambiase-successor-debut/"
     }
    ],
    "see": [
@@ -5927,9 +5969,19 @@
    "body": [
     "FIAの中で最も高い意思決定の場。F1コミッションなどで話がまとまった規則変更が、最後にここで承認（批准）される。規則や安全の議題を扱い、少なくとも年に3回開かれる。安全のためにFIAがF1コミッションを通さず規則を変えるときも、WMSCが票を投じる。",
     "2026年の例。6月10日に、FIA、FOM、チーム、PUメーカーが2027〜2028年の規則の変更案で合意した。エンジン（ICE）の出力を上げ、電気（MGU-K）の出力を下げて、エネルギー管理の負担を減らす方向だ。6月23日にマカオで開かれたWMSCが、これを承認した。",
-    "同じ会議で、2027年からシーズン前のテストを3日から4日に増やすことも承認された。理由には、今のマシンの複雑さが挙げられている。"
+    "同じ会議で、2027年からシーズン前のテストを3日から4日に増やすことも承認された。理由には、今のマシンの複雑さが挙げられている。",
+    "10月の会議でも、2027年に向けた変更が承認されたとThe Raceは伝えた。1つは、コストキャップの抜け道を塞ぐため、F1の部門とF1以外の部門で、人や作業場所、ITシステムを分ける規則。もう1つは、予選と決勝で同じ仕様のホイールリムを使う決まりだ。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "FIA、コストキャップの抜け道を塞ぐ新ルールをWMSCで承認　F1部門と他部門を物理・IT両面で分離",
+     "u": "/news/en-therace-fia-cost-cap-ringfence/"
+    },
+    {
+     "t": "FIA、2027年から予選専用のホイールリムを禁止　WMSCで承認、予選と決勝で同じ仕様に",
+     "u": "/news/en-therace-fia-wheel-rim-single-spec/"
+    }
+   ],
    "see": [
     "fia",
     "f1-commission",
@@ -5961,10 +6013,25 @@
      "name": "FIA",
      "title": "Writing the rules: how the FIA develops new regulations for Formula 1",
      "url": "https://www.fia.com/news/writing-rules-how-fia-develops-new-regulations-formula-1"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA imposes draconian new rules on F1 teams to stop cost cap exploitation（2026年10月21日）",
+     "url": "https://www.the-race.com/formula-1/fia-imposes-draconian-new-rules-on-f1-teams-to-stop-cost-cap-exploitation/"
+    },
+    {
+     "name": "The Race",
+     "title": "Why an F1 arms race has been stopped before it could start（2026年10月21日）",
+     "url": "https://the-race.com/formula-1/why-an-f1-arms-race-has-been-stopped-before-it-could-start/"
+    },
+    {
+     "name": "FIA",
+     "title": "Agreement reached on proposed regulatory changes for 2027 and 2028（2026年6月10日）",
+     "url": "https://www.fia.com/news/agreement-reached-proposed-regulatory-changes-2027-and-2028"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-10-27"
   },
   {
    "id": "f1-commission",
@@ -6060,7 +6127,7 @@
    "short": "規則のあいまいな部分について、FIAが「こう解釈する」とチームに示す文書。",
    "body": [
     "FIAがチームに送る文書で、技術規則のあいまいな部分や、解釈が分かれる部分について、FIAの読み方を示す。一般には公開されない。新しい技術的な工夫についての考え方や、検査方法の変更も伝える。規則すれすれの工夫をしている相手がいる、というチームの指摘をきっかけに出ることもある。",
-    "2026年から、FIAはこの種の文書を「FIA doc」と呼んでいる。技術だけでなく競技の話も扱えるように、呼び方をそろえたためという。ただし、報道では今も「技術指令（TD）」と呼ばれることが多い。",
+    "2026年から、この種の文書は「FIA doc」と呼ばれている。FIA docは競技から技術まで扱う文書で、呼び方をそろえただけだとAutosportは伝えた。ただし、報道では今も「技術指令（TD）」と呼ばれることが多い。",
     "2026年の例の1つは4月。日本GPのあと、メルセデスとレッドブルが予選で、MGU-Kを止める手順を使っていたことが明らかになった。止めると、タイミングラインの手前で出力を下げる決まり（ランプダウン）を避けられ、高い出力を長く保てた。この停止は、部品を壊さないための緊急用という本来の目的に限る、とFIAは指令で示した。",
     "もう1つは、モントリオールで投入されたメルセデスのディフューザーだ。バルセロナGPのあとにFIAが指令を出し、オーストリアGPの週末からメルセデスとレーシングブルズが形を直した。"
    ],
@@ -6095,7 +6162,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-10-27"
   },
   {
    "id": "chicane",
@@ -12061,6 +12128,10 @@
     {
      "t": "バクー予選のQ3でハミルトンはスリップを得られず、その効果は約0.6秒とされた。",
      "u": "/news/en-therace-mercedes-dominance/"
+    },
+    {
+     "t": "ボルトレートはPU交換で最後尾スタートが決まり、予選Q2ではヒュルケンベルグのスリップストリーム役を務めた。",
+     "u": "/news/pt-grandepremio-bortoleto-penalty-slipstream/"
     }
    ],
    "see": [
@@ -12151,6 +12222,14 @@
     {
      "t": "アントネッリは、セパンの予選Q2でトラックリミットを超え、ベストタイムが取り消された。",
      "u": "/news/de-motorsport-total-wolff-antonelli-q2-error/"
+    },
+    {
+     "t": "アメリカGPのFP3で、ルクレールはハミルトンより速いタイムをトラックリミット違反で抹消され3番手に下がった。",
+     "u": "/news/en-therace-fp3-hamilton-leclerc-deleted/"
+    },
+    {
+     "t": "オースティンは金曜だけで181周のタイムが抹消され、20コーナーの違反は次の周も無効にした。",
+     "u": "/news/de-motorsportmagazin-austin-track-limits-181-laps/"
     }
    ],
    "checked": "2026-10-07"
@@ -12807,6 +12886,10 @@
     {
      "t": "メルセデスのウォルフ代表は、王座争いの2人に同じ機会を与える方針で、戦略の判断が難しくなると認めた。",
      "u": "/news/de-motorsport-total-wolff-strategy-russell-antonelli/"
+    },
+    {
+     "t": "マクラーレンには僚友同士の争いを禁じる厳格な決まりはなく、押し出しやポイントを危うくしない限り戦える。",
+     "u": "/news/de-formel1de-norris-standpauken-piastri/"
     }
    ],
    "see": [
@@ -13063,7 +13146,7 @@
     "F1のコストキャップ（予算上限）では、マーケティング活動に直接かかる費用は、上限の対象外になっている（財務規則 D5.1.1 a）。",
     "スポンサーが変わると、チームの名前や見た目も変わる。2026年は、ハースがトヨタ・ガズー・レーシングをタイトルパートナーに迎えて「TGR Haas F1 Team」になった。それまでの冠スポンサーはマネーグラムだった。名前に社名が入る最も大きなスポンサーについては「タイトルスポンサー」の項を見てほしい。"
    ],
-   "rule": "財務規則 D5.1.1 a)（マーケティング費用はコストキャップの対象外）",
+   "rule": "財務規則 D5.1.1 a)（マーケティング費用はコストキャップの対象外）（Issue 07 で確認）",
    "examples": [],
    "see": [
     "title-sponsor",
@@ -13071,7 +13154,7 @@
     "prize-money",
     "pay-driver"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "FIA",
@@ -13178,14 +13261,27 @@
     "アウディは、ザウバーを引き継いで2026年にF1へ入った。チーム名は「Audi Revolut F1 Team」で、本拠地はスイスのヒンヴィルだ。",
     "キャデラックは、2026年はフェラーリのPUを使うカスタマーだ。F1公式によると、GMは自社のPUを2029年から使う計画で、そうなれば自社のPUで走るチームになる。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "レッドブル・フォードがデビュー年に初優勝　フェルスタッペン、自社製PUの1年目での勝利を評価",
+     "u": "/news/en-rn365-redbull-ford-history/"
+    },
+    {
+     "t": "キャデラック、自社PU工場を12月18日に全面稼働へ　GMは2029年からのPU供給者として承認済み",
+     "u": "/news/de-motorsporttotal-cadillac-engine-factory-date/"
+    },
+    {
+     "t": "マクラーレン、自社製PUは作らずメルセデスとの提携を優先　ブラウン、自社開発は「5年後より10年後」",
+     "u": "/news/de-motorsport-total-mclaren-2030-engine/"
+    }
+   ],
    "see": [
     "customer-team",
     "pu-manufacturer",
     "factory",
     "eleventh-team"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "PlanetF1",
@@ -13386,13 +13482,18 @@
     "2026年9月29日更新のThe Raceの2027年の一覧でも、「オプション」の扱いで完全な確定とは書かれていない席や、「複数年契約にいくつかのオプション」とされながら正式な発表がない席がある。オプションがあることと、席が決まっていることは同じではない。",
     "契約の中身は、チームもドライバーも公表しないことが多い。The Raceも、契約の話は「とても私的な手続き」だと書いている。報道の多くは関係者の話に基づくので、オプションの有無や持ち主は、確かでないこともある。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "ベアマンの2027年契約発表が遅れる理由　2026年までの契約に2027年のオプションがあるとされ、ハースは継続の方針",
+     "u": "/news/en-racingnews365-bearman-contract-delay/"
+    }
+   ],
    "see": [
     "seat",
     "driver-market",
     "reserve-driver"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "The Race",
@@ -13688,14 +13789,14 @@
     "申請",
     "費用"
    ],
-   "short": "チームがその年のF1に出るためにFIAへ払う費用。固定額に、前年のポイントに応じた額を足すと報じられている。",
+   "short": "チームがその年のF1に出るためにFIAへ払う費用。2026年からは、コンストラクターズ順位に応じた段階制になったと報じられている。",
    "body": [
     "エントリー費は、チームがその年のF1に参戦するために、FIAへ払う費用だ。チームは、前の年の10月21日〜11月1日に参戦を申請する。申請には「前の年の12月15日までにエントリー費を払う」という約束を付ける。FIAは12月20日までに、参戦が認められた車とドライバーの一覧を出す。認められたチームは、その年の全レースに自動でエントリーされる。",
-    "額は「固定額＋獲得ポイントに応じた額」で、物価に合わせて毎年上がるとPlanetF1は説明している。同社によると、2024年は固定額が約65.8万ドル、1ポイントあたり約6,575ドルだった（前年の王者チームは約7,893ドル）。2026年は、同社の見積もりで固定額が約70.3万ドル、1ポイントあたり約7,030ドル（王者は約8,438ドル）だ。2026年の額はFIAの発表ではなく、報道の見積もりにすぎない。",
+    "これまでの額は「固定額＋前年の獲得ポイントに応じた額」で、物価に合わせて毎年上がるとPlanetF1は説明していた。同社によると、2024年は固定額が約65.8万ドル、1ポイントあたり約6,575ドルだった（前年の王者チームは約7,893ドル）。2025年12月に合意した新しいコンコルド協定の統治面で、この方式は、コンストラクターズ順位に応じた段階制に変わったとMotorsport.comは報じた。チーム全体の負担は年に約1500万ドル増え、中団のチームは数百万ドル多く払うという。",
     "新しく入るチームには、このエントリー費のほかに、既存チームに払う負担金（アンチダイリューション・フィー）がかかる。",
     "エントリー費はFIAへの支払いで、F1の運営会社がチームへ配る賞金とは別のお金だ。"
    ],
-   "rule": "F1規則 Section A（一般規定）A3.1.2（参戦申請の期間と、12月15日までの支払いの約束）",
+   "rule": "F1規則 Section A（一般規定）A3.1.2（参戦申請の期間と、12月15日までの支払いの約束）（Issue 02 で確認）",
    "examples": [],
    "see": [
     "anti-dilution",
@@ -13704,7 +13805,7 @@
     "eleventh-team",
     "concorde-agreement"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "FIA",
@@ -13720,6 +13821,11 @@
      "name": "PlanetF1",
      "title": "Huge F1 2024 entry fees revealed with Red Bull pockets hit hardest",
      "url": "https://www.planetf1.com/news/f1-2024-fia-entry-fees"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Two key changes in F1's Concorde governance agreement explained",
+     "url": "https://www.motorsport.com/f1/news/two-key-changes-in-f1s-concorde-governance-agreement-explained/10784461/"
     }
    ]
   },
@@ -13748,7 +13854,8 @@
     "賞金は、F1を運営する会社の収入の一部を、チームへ配るお金だ。レースごとの賞金ではない。配り方は、チームとの契約（コンコルド協定）で決まっていて、細かい中身は公表されていない。",
     "The Raceが漏れ伝わった情報をもとに伝えた分け方では、全体は3つに分かれる。約5％は、フェラーリへの特別な支払い。約20％は、過去10年のコンストラクターズ順位で上位3位に入った実績に応じる分。残りの約75％は、コンストラクターズ順位に応じて分ける。これらの割合は公式に発表されたものではなく、The Raceもフェラーリの正確な割合は確かめられないとしている。",
     "どの年の順位を使うかにも注意が要る。PlanetF1は、2025年の分配を、2024年の順位で計算したと説明した。そのため、2024年のコンストラクターズ王者マクラーレンが受け取った額は、フェラーリより少なかったと報じられた（The Race、PlanetF1）。",
-    "2026年は、キャデラックが加わり、賞金を11チームで分ける。薄まる分は、新チームが払う負担金（アンチダイリューション・フィー）で、既存の10チームに補うと報じられた。"
+    "2026年は、キャデラックが加わり、賞金を11チームで分ける。薄まる分は、新チームが払う負担金（アンチダイリューション・フィー）で、既存の10チームに補うと報じられた。",
+    "コンコルド協定では、参戦が認められたチームは1年目から賞金を受け取れる、とPlanetF1は2026年2月に伝えた。以前は、3シーズン走るまで受け取れなかったという。同社によると、Liberty Mediaの通期の届け出では、2025年にチームへ払われた賞金は計14億ドルだった。"
    ],
    "examples": [],
    "see": [
@@ -13760,7 +13867,7 @@
     "eleventh-team",
     "cost-cap"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "The Race",
@@ -13801,9 +13908,9 @@
    "short": "新しいチームが入るとき、既存チームに払うお金。キャデラックは4億5000万ドルと報じられた。",
    "body": [
     "賞金は、チームが増えると1チームあたりの取り分が減る。その分を補うために、新しく入るチームが既存のチームへ払うのが、アンチダイリューション・フィー（薄まるのを防ぐ負担金）だ。",
-    "これまでの決まりでは2億ドルだった。2024年11月、GMとTWGグローバルがキャデラックの参戦のために4億5000万ドルを払うと報じられ、2倍以上になった。この4億5000万ドルは、既存の10チームで均等に分けるとされた（Motorsport.com）。",
+    "これまでの決まりでは2億ドルだった。2024年11月、GMとTWGグローバルがキャデラックの参戦のために4億5000万ドルを払うと報じられ、2倍以上になった。この4億5000万ドルは、既存の10チームで均等に分けるとされた（Motorsport.com）。1チームあたり4500万ドルになる（PlanetF1）。",
     "チームの受け止めは分かれた。メルセデスのウォルフ代表は、4億5000万ドルは「低すぎる。収入の直接の減少を補えない」と話した（PlanetF1）。Motorsport.comは、これを折り合いの金額と伝え、もっと高い額を望んだチームもあったとしている。",
-    "この金額は、2026年以降の新しいコンコルド協定の中で決まったと報じられている。エントリー費（FIAへの支払い）とは別のお金だ。"
+    "Adam Cooperは、2025年3月に全チームが署名した新しいコンコルド協定の商業面に、キャデラックが払ったこの負担金の計算方法が入っていると報じた。12番目のチームが来たときも、同じ方法を使うという。エントリー費（FIAへの支払い）とは別のお金だ。"
    ],
    "examples": [],
    "see": [
@@ -13813,7 +13920,7 @@
     "entry-fee",
     "f1-group"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "PlanetF1",
@@ -13839,6 +13946,16 @@
      "name": "Speedcafe",
      "title": "Toto Wolff reaction to Cadillac F1 entry condition",
      "url": "https://speedcafe.com/f1-news-2025-mercedes-toto-wolff-reaction-cadillac-f1-entry-condition/"
+    },
+    {
+     "name": "Adam Cooper's F1 Blog",
+     "title": "Commercial side of 2026 Concorde Agreement is confirmed（2025年3月16日）",
+     "url": "https://adamcooperf1.com/2025/03/16/commercial-side-of-2026-concorde-agreement-is-confirmed/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 2025 prize money payouts revealed: McLaren crowned champions as Ferrari steal the spoils（2026年2月26日）",
+     "url": "https://www.planetf1.com/news/f1-2025-prize-money-payouts-revealed-mclaren-crowned-champions-as-ferrari-steal-the-spoils"
     }
    ]
   },
@@ -14069,7 +14186,7 @@
     "F1の決まりでは、お金だけでは走れない。F1に出るには、下位カテゴリーの成績で決まる点数が40点以上のスーパーライセンスが要る。また、ドライバーへの支払いは、コストキャップの対象外になっている（財務規則 D5.1.1 b）。",
     "個々のドライバーにこの言葉を当てはめるかどうかは、人によって見方が分かれる。このルールブックでは、特定の人には使わない。"
    ],
-   "rule": "財務規則 D5.1.1 b)（ドライバーへの支払いはコストキャップの対象外）",
+   "rule": "財務規則 D5.1.1 b)（ドライバーへの支払いはコストキャップの対象外）（Issue 07 で確認）",
    "examples": [],
    "see": [
     "seat",
@@ -14079,7 +14196,7 @@
     "junior-programme",
     "cost-cap"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "src": [
     {
      "name": "Motorsport.com",
@@ -15654,6 +15771,10 @@
     {
      "t": "セパンは高温多湿で、ピレリはタイヤへの負荷を5段階中4と評価した。",
      "u": "/news/en-therace-malaysia-driver-expectations/"
+    },
+    {
+     "t": "ルクレールは、路面温度が1度にも満たない程度下がっただけで、Q3でタイヤを作動域に入れられなかったと話した。",
+     "u": "/news/it-motorionline-leclerc-fourth-q3-tyre-temperature/"
     }
    ],
    "see": [
@@ -15859,8 +15980,13 @@
      "url": "https://careers.williamsf1.com/blog/2025-10/how-f1-data-jobs-bring-insights-to-the-track"
     }
    ],
-   "checked": "2026-10-02",
-   "examples": []
+   "checked": "2026-10-27",
+   "examples": [
+    {
+     "t": "トム・ハートは長くフェルスタッペンのパフォーマンスエンジニアを務め、ウィリアムズを経てレッドブルに戻り、アメリカGPでレースエンジニアを務めた。",
+     "u": "/news/nl-f1maximaal-hart-lambiase-successor-debut/"
+    }
+   ]
   },
   {
    "id": "wind-tunnel",
@@ -16551,9 +16677,14 @@
      "name": "Formula1.com",
      "title": "Why do F1 teams use special liveries at testing?",
      "url": "https://www.formula1.com/en/latest/article/what-are-testing-liveries-and-why-do-f1-teams-use-them.70d5AeZLjE85r2cT77R0BD"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "EXPLAINED: How the Barcelona Shakedown will work",
+     "url": "https://www.formula1.com/en/latest/article/explained-how-the-barcelona-shakedown-will-work.5oGVmo25OyEhyVR9RbiREo"
     }
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "examples": []
   },
   {
@@ -16610,7 +16741,7 @@
      "url": "https://www.silverstone.co.uk/news/f1-car-launches-2026-every-teams-livery-reveal-date"
     }
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-27",
    "examples": []
   },
   {
@@ -20447,6 +20578,10 @@
     {
      "t": "セパンFP2で、ハミルトンは右ミラーの損傷を訴えたが、スチュワードは警告とし、フェラーリに1万ユーロの罰金を科した。",
      "u": "/news/en-rn365-hamilton-mirror-impeding/"
+    },
+    {
+     "t": "予選での妨害を減らすため、リアビューミラーを2倍に大きくし、位置を規定に明記する案が示された。",
+     "u": "/news/en-therace-anderson-mirrors-impeding/"
     }
    ],
    "see": [
@@ -22524,6 +22659,10 @@
     {
      "t": "ヒュルケンベルグ、Q2でサインツを妨げた疑いで審議。チームから知らされていなかったと説明",
      "u": "/news/de-mst-hulkenberg-eleventh-stewards/"
+    },
+    {
+     "t": "ゲイリー・アンダーソンは、今季17戦中12戦で妨害が審議されたとして、ミラーの大きさを2倍にする案を示した。",
+     "u": "/news/en-therace-anderson-mirrors-impeding/"
     }
    ],
    "see": [
@@ -22737,6 +22876,10 @@
     {
      "t": "ハミルトン、1コーナーでコース外に出て前で戻るもペナルティなし。ノリスも同じ場所でコースを外れていた",
      "u": "/news/ja-f1gate-hamilton-no-penalty-offtrack/"
+    },
+    {
+     "t": "ラッセルは1周目にコース外を走ってピアストリに対して利益を得たとされ、5秒ペナルティを受けた。",
+     "u": "/news/en-skysports-russell-rubbish-pace-austin/"
     }
    ],
    "see": [
@@ -24854,6 +24997,10 @@
     {
      "t": "アロンソのバクーはターボの遅れ低減を狙ったADUO2仕様。ホンダはデータ上の異常を確認できず",
      "u": "/news/en-therace-alonso-honda-subplot/"
+    },
+    {
+     "t": "シンガポールでのホンダPUのドライバビリティ不良は、ハードの故障ではなくターボラグが主因だった。",
+     "u": "/news/de-formel1de-honda-aduo-turbo-lag-singapore/"
     }
    ],
    "see": [
@@ -25337,6 +25484,10 @@
     {
      "t": "シンガポールGPでリンドブラッドのPUが不調　本人はエンジンブレーキの効きも悪かったと語った",
      "u": "/news/ja-f1gate-permane-lindblad-pu-output/"
+    },
+    {
+     "t": "フェルスタッペンはアメリカGP後、エンジンブレーキやシフトの挙動が安定しない問題を明かした。",
+     "u": "/news/nl-f1maximaal-verstappen-strategy-not-agreed/"
     }
    ],
    "see": [
@@ -25599,9 +25750,14 @@
      "name": "F1technical.net",
      "title": "Alpine uses first curfew exception of the season after late-night work on Gasly's car",
      "url": "https://www.f1technical.net/news/28558"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Canadian Grand Prix - Curfew",
+     "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_curfew.pdf"
     }
    ],
-   "checked": "2026-10-06"
+   "checked": "2026-10-27"
   },
   {
    "id": "summer-shutdown",
@@ -25625,10 +25781,11 @@
    "short": "夏に、チームが14日続けて車の設計・開発・製造を止める決まり。",
    "body": [
     "F1のチームは、夏に工場を閉める決まりがある。2026年の規則では、7月か8月の間に、14日続けて休まなければならない（規則F3.1.1a）。この間は、風洞やCFD（コンピューターでの空気の計算）を使えず、車の部品もつくれず、社員や外部の人が設計や開発をすることもできない（規則F3.1.2）。",
-    "12月にも、24日から9日間の閉鎖がある（規則F3.1.1b）。PUメーカーにも、同じように夏の14日間と12月の9日間の閉鎖があり、別の条文（F3.2）で決められている。",
-    "FIAは、作業の記録、建物の出入りの記録、設計や風洞のデータの確認、抜き打ちの確認などで、守られているかを調べる（GPFans）。2026年の夏の閉鎖は7月31日に始まった（同）。2021年の規則についてのRacingNews365の解説では、ひどく壊れた車の修理（FIAの承認が必要）などの例外が挙げられている。"
+    "12月にも、24日から9日間の閉鎖がある（規則F3.1.1b）。PUメーカーにも、同じように夏の14日間と12月の9日間の閉鎖がある（規則F3.2.1）。この間は、エンジンの試験台を使えず、コンピューターでのシミュレーションもできず、PUの部品もつくれない（規則F3.2.5）。",
+    "FIAは、作業の記録、建物の出入りの記録、設計や風洞のデータの確認、抜き打ちの確認などで、守られているかを調べる（GPFans）。例外もある。直前の大会でひどく壊れた車を、FIAの同意を得て直すことなどだ（規則F3.1.4）。",
+    "2026年は、ハンガリーGPのあと、8月21〜23日のオランダGPまでがレースのない期間だった。各チームは、7月か8月の中で14日を選んで休む（GPFans）。GPFansは、7月31日から工場が閉まると伝えた。アウディは、本拠地のヒンヴィル、PUを設計・製造するノイブルク、英国のビスターの3拠点で、競技にかかわる作業が止まると説明した。"
    ],
-   "rule": "オペレーショナルレギュレーション F3.1（チーム）、F3.2（PUメーカー）",
+   "rule": "オペレーショナルレギュレーション F3.1（チーム。期間 F3.1.1、禁止事項 F3.1.2、例外 F3.1.4）、F3.2（PUメーカー。期間 F3.2.1、禁止事項 F3.2.5）（Issue 09 で確認）",
    "examples": [],
    "see": [
     "cost-cap",
@@ -25652,9 +25809,19 @@
      "name": "RacingNews365",
      "title": "What is not allowed during F1's summer shutdown",
      "url": "https://racingnews365.com/what-is-not-allowed-during-f1s-summer-shutdown"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Summer Break: Key dates, rules, email bans and when is the next race（2026年8月5日）",
+     "url": "https://www.gpfans.com/en/f1-news/1088756/f1-summer-break-dates-rules-email-ban/"
+    },
+    {
+     "name": "Audi F1（公式）",
+     "title": "The F1 summer shutdown（2026年8月10日）",
+     "url": "https://www.audif1.com/news/2026/the-f1-summer-shutdown"
     }
    ],
-   "checked": "2026-10-06"
+   "checked": "2026-10-27"
   },
   {
    "id": "team-radio",
@@ -31367,6 +31534,10 @@
     {
      "t": "レッドブル、オラクルのAIがレース中の判断にも推奨を出す。2025年モンツァでは順位を戻すよう助言",
      "u": "/news/de-motorsporttotal-redbull-oracle-ai/"
+    },
+    {
+     "t": "フェルスタッペンは、ソフトからソフトへつなぐ2ストップの判断に、戦略責任者への不満を示した。",
+     "u": "/news/nl-f1maximaal-verstappen-strategy-not-agreed/"
     }
    ],
    "see": [
@@ -31700,6 +31871,733 @@
     }
    ],
    "checked": "2026-10-26"
+  },
+  {
+   "id": "throttle-map",
+   "term": "スロットルマップ（ペダルマップ）",
+   "cat": "パワーユニット",
+   "aliases": [
+    "スロットルマップ",
+    "ペダルマップ",
+    "throttle map",
+    "pedal map",
+    "トルクマップ",
+    "すろっとるまっぷ"
+   ],
+   "words": [
+    "アクセルの効き方",
+    "アクセルペダル",
+    "トルク",
+    "マップの設定",
+    "ピットレーン用のマップ",
+    "エンジンの反応"
+   ],
+   "short": "アクセルペダルをどれだけ踏んだら、どれだけの力を出すかを決める設定の表。",
+   "body": [
+    "スロットルマップは、アクセルペダルの踏み込み量とエンジンの回転数から、ドライバーがほしい力（トルク）を決める表だ。技術解説サイトのF1Technicalは、ペダルの位置と回転数ごとに「ドライバーからのトルクの要求」が作られ、それが電子制御の装置に送られると説明している。",
+    "同じ踏み方でも、マップを変えるとエンジンの感触が変わる。F1Technicalは、タイヤの摩耗が大きかったときに、ホイールが空転しにくい設定に変えた例を挙げている。ルノーの技術者だったロブ・ホワイトも2012年に、ペダルのマップはサーキットの特徴に合わせて変わると説明している。",
+    "2026年のアメリカGPでは、ハジャーがピットを出たとき、マップがピットレーン用のままだったと話した。オランダのRacingNews365によると、ハジャーは「それで1周に1秒を失った」と述べ、「またFIAの規則だ」と不満を示した。同紙は、アクセルのマップはFIAと取り決めて設定するものだと説明している。"
+   ],
+   "examples": [
+    {
+     "t": "ハジャーは、ピットアウト後もスロットルマップがピットレーン用のままで、1周約1秒を失ったと主張した。",
+     "u": "/news/nl-racingnews365-hadjar-fia-throttle-map/"
+    },
+    {
+     "t": "ハジャーはアメリカGPで発進に失敗し、誤ったエンジンマップでピットを出たとも明かした。",
+     "u": "/news/en-crash-hadjar-clutch-redesign/"
+    }
+   ],
+   "see": [
+    "engine-modes",
+    "pit-lane-speed",
+    "launch",
+    "drivability",
+    "traction"
+   ],
+   "src": [
+    {
+     "name": "F1Technical",
+     "title": "An insight into pedal mapping",
+     "url": "https://f1technical.net/features/17820"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Hungarian Grand Prix Technical Feature: Explaining engine torque maps（ルノーのロブ・ホワイト、2012年）",
+     "url": "https://www.motorsport.com/f1/news/renault-s-rob-white-explains-engine-torque-maps/423814/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Hadjar hekelt FIA-regel: \"Jullie hebben geen idee waar ik mee reed!\"（2026年10月26日）",
+     "url": "https://racingnews365.nl/hadjar-hekelt-fia-regel-jullie-hebben-geen-idee-waar-ik-mee-reed"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "theoretical-best",
+   "term": "理論上のベストラップ（合成ラップ）",
+   "cat": "レース運営",
+   "aliases": [
+    "理論上のベスト",
+    "合成ラップ",
+    "アルティメットラップ",
+    "ideal lap",
+    "theoretical best",
+    "りろんじょうのべすと"
+   ],
+   "words": [
+    "ベストセクターの合計",
+    "本当の速さ",
+    "つなげたら",
+    "ポールに届いたか",
+    "区間のベスト"
+   ],
+   "short": "それぞれのセクターでいちばん速かったタイムをつなげて作る、計算上の1周のタイム。",
+   "body": [
+    "1周のタイムは3つのセクターに分かれている。ドライバーがいちばん速く走れたセクターは、同じ周とは限らない。そこで、各セクターのベストを足し合わせて「もし全部うまくいったら」という1周のタイムを計算する。これが理論上のベストラップだ。",
+    "The Raceは2026年のアメリカGPのFP2で、各ドライバーの3つのセクターのベストと、その合計の「理論上のベスト」を表にして比べた。",
+    "2人のドライバーのセクターを組み合わせることもある。The Raceによると、アメリカGP予選で、フェルスタッペンの第1・第3セクターとハジャーの第2セクターをつないだレッドブルの「合成ラップ」でも、ポールのアントネッリより0.041秒遅かった。"
+   ],
+   "examples": [
+    {
+     "t": "アメリカGP予選で、レッドブル2人の最良の区間をつないでもポールとの差は0.041秒だった。",
+     "u": "/news/en-therace-verstappen-lost-pole-antonelli/"
+    },
+    {
+     "t": "FP2の理論上のベストはルクレールの1分35秒291で、上位3チームが0.2秒未満に並んだ。",
+     "u": "/news/en-therace-us-gp-wide-open-fight/"
+    }
+   ],
+   "see": [
+    "sector",
+    "purple-sector",
+    "qualifying",
+    "lap-time-deleted"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "How Verstappen lost pole to Antonelli - and nearly got beaten by Hadjar",
+     "url": "https://www.the-race.com/formula-1/how-verstappen-lost-pole-to-antonelli-and-nearly-got-beaten-by-hadjar/"
+    },
+    {
+     "name": "The Race",
+     "title": "How F1's top four teams are comparing in Austin",
+     "url": "https://www.the-race.com/formula-1/f1-2026-wide-open-us-gp-fight-explained/"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "used-tyres",
+   "term": "中古タイヤと新品タイヤ（スクラブ）",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "中古タイヤ",
+    "スクラブタイヤ",
+    "ユーズドタイヤ",
+    "scrubbed tyre",
+    "used tyres"
+   ],
+   "words": [
+    "使用済みのソフト",
+    "新しいセット",
+    "皮むき",
+    "Q3用のタイヤ",
+    "温まりやすい"
+   ],
+   "short": "少し走って表面をならしたタイヤが「中古（スクラブ）」、まだ走っていないタイヤが「新品」。",
+   "body": [
+    "F1公式サイトの用語集は、スクラブしたタイヤを「すでに軽く使ったタイヤで、新品より早く最適な温度に届きやすい」と説明している。英語ではスクラブド・タイヤ、スカッフド・タイヤ、または中古（ユーズド）と呼ぶ。技術解説サイトのF1Technicalは、数周走って表面のつやを取り、グリップを安定させたタイヤだと書いている。",
+    "新品は、ゴムがまっさらなので、いちばん高いグリップが出る。ただ、米RACERの解説によると、新品は最適な温度と空気圧に届くまで1〜2周かかることが多い。中古は最高のグリップでは新品にわずかに劣り、一発の速さより安定した扱いやすさが大事な場面で選ばれるとも書いている。",
+    "新品にしても、感触が良くなるとは限らない。The Raceによると、2026年のアメリカGP予選で、レッドブルはQ2の中古のソフトで非常に速かったが、Q3の新品ではその感触を再現できなかった。"
+   ],
+   "examples": [
+    {
+     "t": "フェルスタッペンはQ2の中古タイヤよりQ3の新品で遅く、中古の感触が良かったことを「非常に奇妙」と語った。",
+     "u": "/news/de-motorsportmagazin-verstappen-no-excuse/"
+    },
+    {
+     "t": "ローソンはQ1とQ2でタイヤを節約し、Q3用の新品を2セット残していたが、Q3を走らせてもらえなかった。",
+     "u": "/news/de-formel1de-lawson-q3-skipped/"
+    }
+   ],
+   "see": [
+    "tyre-allocation",
+    "tyre-warm-up",
+    "operating-window",
+    "qualifying"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (P-T)（SCRUBBED TYRE）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-p-t.GBhLQtpeu9b8LrK5VM0F1"
+    },
+    {
+     "name": "RACER",
+     "title": "What is the difference between stickered and scrubbed/scuffed tires?",
+     "url": "https://racer.com/racerpedia/racing-101/what-is-the-difference-between-stickered-and-scrubbed-scuffed-tires"
+    },
+    {
+     "name": "F1Technical",
+     "title": "Formula One glossary（Scrubbed tires）",
+     "url": "https://www.f1technical.net/glossary/s"
+    },
+    {
+     "name": "The Race",
+     "title": "How Verstappen lost pole to Antonelli - and nearly got beaten by Hadjar",
+     "url": "https://www.the-race.com/formula-1/how-verstappen-lost-pole-to-antonelli-and-nearly-got-beaten-by-hadjar/"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "performance-clause",
+   "term": "パフォーマンス条項（成績の条件）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "パフォーマンス条項",
+    "パフォーマンスクローズ",
+    "performance clause",
+    "成績条項",
+    "ぱふぉーまんすじょうこう"
+   ],
+   "words": [
+    "契約の条件",
+    "成績しだい",
+    "自動延長",
+    "契約を切れる",
+    "来季の契約"
+   ],
+   "short": "成績が決めた条件を満たすかどうかで、契約の延長や解除が決まる取り決め。",
+   "body": [
+    "F1のドライバー契約には、成績に条件を付けるものがある。これをパフォーマンス条項と呼ぶ。条件を満たせば契約が延びたり、満たさなければドライバーが契約を離れられたりする。",
+    "よく知られた例がある。2021年、当時レッドブルの顧問だったヘルムート・マルコは、フェルスタッペンの契約に、ドライバー側の条項があると明かした。フェルスタッペンが自力で優勝とタイトルを争えれば契約は延び、そうでなければ自由になるという内容だった。",
+    "メルセデスのラッセルは2025年10月、英テレグラフ紙に、ある目標に届けば2027年も自動で延長される条項があると話した。「2027年のシートは自分の手の中にある」と語っている。どんな目標かについては「詳しくは話したくない」としている。"
+   ],
+   "examples": [
+    {
+     "t": "キャデラックは複数年契約とみられるボッタスについて、2年目に条件が付く可能性があると報じられた。",
+     "u": "/news/de-formel1de-cadillac-bottas-2027-open/"
+    }
+   ],
+   "see": [
+    "contract-option",
+    "seat",
+    "driver-market"
+   ],
+   "src": [
+    {
+     "name": "GrandPrix.com",
+     "title": "Marko reveals Verstappen 'performance clause'（2021年2月15日）",
+     "url": "https://www.grandprix.com/news/marko-reveals-verstappen-performance-clause.html"
+    },
+    {
+     "name": "GrandPrix.com",
+     "title": "Russell reveals automatic Mercedes deal details（2025年10月27日、テレグラフ紙の取材を引用）",
+     "url": "https://www.grandprix.com/news/russell-reveals-automatic-mercedes-deal-details.html"
+    },
+    {
+     "name": "Sports Illustrated",
+     "title": "George Russell Reveals Key Clause In New Mercedes Contract That Gives Him Control Of F1 Future（テレグラフ紙の取材を引用）",
+     "url": "https://www.si.com/onsi/f1/news/george-russell-reveals-key-clause-in-new-mercedes-contract"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "broadcast-rights",
+   "term": "放映権（テレビ・配信の契約）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "放映権",
+    "放送権",
+    "放映権料",
+    "broadcast rights",
+    "TV rights",
+    "ほうえいけん"
+   ],
+   "words": [
+    "テレビ中継",
+    "配信",
+    "Apple TV",
+    "視聴者数",
+    "独占放送"
+   ],
+   "short": "F1のレースを国ごとに中継・配信する権利。F1側が放送局や配信会社と契約する。",
+   "body": [
+    "F1のレースをテレビや配信で見せる権利を放映権という。F1は国や地域ごとに、放送局や配信会社と契約を結ぶ。",
+    "契約の相手は変わることがある。The Raceによると、アメリカでは2026年からAppleが5年契約で独占の放送局になった。前の年まではESPNが中継していた。",
+    "視聴の数え方で評価が分かれることもある。Appleのエディ・キュー氏はレース日の視聴が前年より二桁％増えたと話したが、調査会社のSambaは世帯の到達率が下がったと指摘した。F1のドメニカリCEOは、8月のアメリカでの視聴時間が前年比13％増えたと説明している。"
+   ],
+   "examples": [
+    {
+     "t": "リバティのチャンCEOは、Appleとのアメリカ独占放送契約が「考えていた以上」の成果だと語った。",
+     "u": "/news/en-therace-apple-tv-f1-engagement/"
+    }
+   ],
+   "see": [
+    "f1-group",
+    "prize-money",
+    "concorde-agreement"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Why F1 is so sure its Apple TV deal is working（2026年10月25日）",
+     "url": "https://www.the-race.com/business/why-f1-is-so-sure-its-apple-tv-deal-is-working/"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "opening-lap",
+   "term": "オープニングラップ（1周目）",
+   "cat": "レース運営",
+   "aliases": [
+    "オープニングラップ",
+    "opening lap",
+    "first lap"
+   ],
+   "words": [
+    "スタート直後",
+    "1周目の接触",
+    "多重事故",
+    "ターン1",
+    "審議の甘さ"
+   ],
+   "short": "決勝の最初の1周。車が密集するので接触が多く、審議の扱いもほかの周と少し違う。",
+   "body": [
+    "オープニングラップは、スタートしてから最初にコントロールラインに戻るまでの1周だ。全車が近くに固まって走るので、コーナーで接触が起きやすい。",
+    "1周目の接触は、ほかの周より寛大に扱われやすい。The Raceは2021年、「1周目には、ほかの周より大きな寛容さが与えられる」と書いた。「ドライバーにレースをさせる」という考え方からだ。当時のレースディレクターのマシは、1周目に片方に完全な責任があれば処分になるが、責任が両方にあって片方の比重が大きいだけのときや、3台以上が絡んだときは、処分にならない可能性が高いと説明した。2026年7月のThe Raceによると、ハンガリーGPでのドライバーとスチュワードの会合で、セーフティカー明けの再スタートでの接触も、オープニングラップと同じように寛大に扱うことが決まった。",
+    "それでも、1周目に罰を受けることはある。2026年のアメリカGPでは、ラッセルが1周目にコースの外を走ってピアストリの前を守ったとして、5秒のタイム加算ペナルティを受けた。一方、1周目のアルボンとアロンソの接触は、スチュワードが処分しなかった。"
+   ],
+   "examples": [
+    {
+     "t": "アロンソは1周目のアルボンとの接触を批判した。スチュワードはお咎めなしとした。",
+     "u": "/news/en-therace-alonso-albon-low-quality/"
+    },
+    {
+     "t": "ラッセルは1周目にコース外を走って利益を得たとされ、5秒ペナルティで8位に下がった。",
+     "u": "/news/en-skysports-russell-rubbish-pace-austin/"
+    }
+   ],
+   "see": [
+    "race-start",
+    "racing-incident",
+    "no-further-action",
+    "lasting-advantage",
+    "stewards"
+   ],
+   "src": [
+    {
+     "name": "The Race",
+     "title": "Why F1's first-lap leniency didn't apply to Gasly's Alonso hit（2021年10月10日）",
+     "url": "https://the-race.com/formula-1/why-f1s-first-lap-leniency-didnt-apply-to-gaslys-alonso-hit/"
+    },
+    {
+     "name": "The Race",
+     "title": "The grey area Verstappen is benefitting from on first laps（2021年9月23日）",
+     "url": "https://the-race.com/formula-1/the-grey-area-verstappen-is-benefitting-from-on-first-laps/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 stewards admit error in Leclerc/Piastri Spa collision（2026年7月24日）",
+     "url": "https://the-race.com/formula-1/f1-stewards-admit-error-in-leclerc-piastri-spa-collision/"
+    },
+    {
+     "name": "The Race",
+     "title": "Alonso calls 33% of the F1 grid 'low quality'（2026年10月26日）",
+     "url": "https://www.the-race.com/formula-1/alonso-slams-low-quality-albon-for-us-gp/"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "George Russell: Mercedes driver admits to 'rubbish' pace in United States GP（2026年10月26日）",
+     "url": "https://www.skysports.com/f1/news/13603617/george-russell-mercedes-driver-admits-to-rubbish-pace-in-united-states-gp-after-finishing-almost-one-minute-behind-kimi-antonelli"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "aero-damage",
+   "term": "空力のダメージ（ダウンフォースの損失）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "空力ダメージ",
+    "フロアの損傷",
+    "aero damage",
+    "floor damage",
+    "ダウンフォースポイント"
+   ],
+   "words": [
+    "壊れたまま走る",
+    "部品が外れた",
+    "接触の後",
+    "ペースが落ちた",
+    "1周に何秒"
+   ],
+   "short": "接触や破片でフロアやウイングが傷み、ダウンフォースが減ってペースが落ちること。",
+   "body": [
+    "フロアやウイング、バージボードが壊れると、空気の流れが乱れてダウンフォースが減る。マシンは走り続けられても、1周のタイムが遅くなる。",
+    "失ったダウンフォースは「ポイント」で表すことがある。Motorsport.comは2024年のイギリスGPの際、一般に10ポイントが約0.1秒に当たり、100ポイントなら最大で1秒ほどになると説明した。ただし、ポイントとタイムの関係は正確に決まっていないとも書いている。2020年のエミリア・ロマーニャGPでは、ボッタスが破片をフロアに挟み、約50ポイントを失ったと話した。",
+    "2026年のアメリカGPでは、アロンソが1周目の接触で左のバージボードを失った。The Raceによると、アロンソは「車が半分しかない」状態で、1周に0.5秒以上失ったと話した。"
+   ],
+   "examples": [
+    {
+     "t": "アロンソはアルボンとの接触でフロアの半分近くを失い、ダメージがなければ入賞できたとみている。",
+     "u": "/news/en-planetf1-alonso-albon-quality-jibe/"
+    },
+    {
+     "t": "ガスリーはベアマンとの接触でフロア下を傷めた。ピット作業の遅れもあり、ローソンを狙えたかもしれないと話した。",
+     "u": "/news/it-formula1it-alpine-gasly-colapinto-austin/"
+    }
+   ],
+   "see": [
+    "downforce",
+    "floor-diffuser",
+    "bargeboard",
+    "nose-change",
+    "debris"
+   ],
+   "src": [
+    {
+     "name": "Motorsport.com",
+     "title": "Verstappen's floor damage cost him 100 points of downforce（2024年のイギリスGP）",
+     "url": "https://www.motorsport.com/f1/news/verstappen-floor-damage-cost-him-100-points-of-downforce/10632352"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Bottas says floor damage cost him '50 points of downforce' as Mercedes reveal size of debris he hit（2020年11月1日）",
+     "url": "https://www.formula1.com/en/latest/article/bottas-says-floor-damage-cost-him-50-points-of-downforce-as-mercedes-reveal.2bHmpOJllYVmeoZVPV6ioe"
+    },
+    {
+     "name": "The Race",
+     "title": "Alonso calls 33% of the F1 grid 'low quality'（2026年10月26日）",
+     "url": "https://www.the-race.com/formula-1/alonso-slams-low-quality-albon-for-us-gp/"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "debris",
+   "term": "デブリ（コース上の破片）",
+   "cat": "レース運営",
+   "aliases": [
+    "デブリ",
+    "debris",
+    "でぶり"
+   ],
+   "words": [
+    "部品が落ちた",
+    "カーボンの破片",
+    "パンクの原因",
+    "回収",
+    "コースの掃除"
+   ],
+   "short": "接触や故障でコースに落ちた部品のかけら。パンクや損傷の原因になるので回収する。",
+   "body": [
+    "デブリは、接触や故障でマシンから外れ、コースに落ちた部品のかけらだ。踏むとタイヤがパンクしたり、フロアに挟まって車を傷めたりする。2020年のエミリア・ロマーニャGPでは、ボッタスがコース上のカーボンの破片を避けきれず、フロアに挟まってダウンフォースを大きく失った。",
+    "破片が見つかると、レースコントロールは黄旗やバーチャルセーフティカー、セーフティカーを出すことがある。FIAは2024年のカタールGPの後、「破片が少なく、走行ラインから外れていれば、セーフティカーは出さないのが通常」と説明した。このときは、車がばらけていてマーシャルが片付ける時間が足りないため、バーチャルセーフティカーでは対応できなかったとしている。このレースでは、アルボンのミラーが落ち、ボッタスが踏んで散らばった破片で、サインツとハミルトンがパンクした。",
+    "2026年のアメリカGPでは、コース上の破片のために短いバーチャルセーフティカーが出た。"
+   ],
+   "examples": [
+    {
+     "t": "ペレスのキャデラックから出た破片で黄旗が出て、その区間でフェルスタッペンがハミルトンを抜いた。",
+     "u": "/news/en-therace-verstappen-yellow-keeps-pole/"
+    }
+   ],
+   "see": [
+    "vsc",
+    "safety-car",
+    "yellow-flag",
+    "marshal",
+    "puncture",
+    "aero-damage"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "FIA explain key decisions during Qatar Grand Prix including Safety Car deployment and Norris's penalty（2024年12月2日）",
+     "url": "https://www.formula1.com:443/en/latest/article/fia-explain-key-decisions-during-qatar-grand-prix-including-safety-car.3yHdxqVUyINnY41tkiIt3y"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Bottas says floor damage cost him '50 points of downforce' as Mercedes reveal size of debris he hit（2020年11月1日）",
+     "url": "https://www.formula1.com/en/latest/article/bottas-says-floor-damage-cost-him-50-points-of-downforce-as-mercedes-reveal.2bHmpOJllYVmeoZVPV6ioe"
+    },
+    {
+     "name": "Motor.es",
+     "title": "Antonelli domina de nuevo en Austin y ya acaricia su primer título",
+     "url": "https://www.motor.es/formula-1/cronica-gp-estados-unidos-2026117229.html"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "stint",
+   "term": "スティント",
+   "cat": "タイヤと作戦",
+   "aliases": [
+    "stint",
+    "第1スティント",
+    "最終スティント",
+    "すてぃんと"
+   ],
+   "words": [
+    "ピットとピットの間",
+    "同じタイヤで走る区間",
+    "1本目のタイヤ",
+    "スティントの長さ"
+   ],
+   "short": "ピットストップとピットストップの間の、同じタイヤで続けて走る区間。",
+   "body": [
+    "スティントは、レースのうち、ピットストップとピットストップの間の部分を指す。イタリアのMotorBoxの用語解説によると、スタートから最初のピットまで、ピットとピットの間、最後のピットからチェッカーフラッグまでの、それぞれの周回のまとまりがスティントだ。スタートからの区間を第1スティント、ゴールまでの区間を最終スティントと呼ぶ。",
+    "MotorBoxは、2ストップのレースは3つのスティントに分かれると説明している。練習走行や予選では、ひと続きの走行（ラン）とほぼ同じ意味で使うとも書いている。",
+    "2026年のアメリカGPでは、ラッセルが6番手のスタート位置を第1スティントの間は守った。"
+   ],
+   "examples": [
+    {
+     "t": "ハミルトンはアメリカGPの勝負は最初の2スティントで決まったとし、最終スティントでようやくバランスに近づいたと語った。",
+     "u": "/news/it-formula1it-hamilton-austin-understeer/"
+    }
+   ],
+   "see": [
+    "pit-stop",
+    "one-stop-two-stop",
+    "degradation",
+    "pit-window"
+   ],
+   "src": [
+    {
+     "name": "MotorBox",
+     "title": "Dizionario F1: che cosa è lo stint",
+     "url": "https://www.motorbox.com/auto/sport/f1/news/dizionario-f1-che-cosa-e-stint"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "George Russell: Mercedes driver admits to 'rubbish' pace in United States GP（2026年10月26日）",
+     "url": "https://www.skysports.com/f1/news/13603617/george-russell-mercedes-driver-admits-to-rubbish-pace-in-united-states-gp-after-finishing-almost-one-minute-behind-kimi-antonelli"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "turn-in",
+   "term": "ターンイン（コーナーへの切り込み）",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ターンイン",
+    "turn-in",
+    "turn in",
+    "コーナー進入",
+    "たーんいん"
+   ],
+   "words": [
+    "ハンドルを切り始める",
+    "曲がり始め",
+    "フロントの食いつき",
+    "進入の安定",
+    "トレイルブレーキ"
+   ],
+   "short": "ブレーキを残しながらハンドルを切り始め、コーナーに入っていく瞬間。",
+   "body": [
+    "ターンインは、直線のブレーキングを終えて、ハンドルを切り始める段階だ。運転技術の講座のHPアカデミーは、コーナーの最初の段階として、ブレーキとハンドル操作を同時に行う場面だと説明している。",
+    "ブレーキを少しずつ緩めながら曲がる方法を「トレイルブレーキ」という。モータースポーツの解説サイトDriver61は、ブレーキを残すとフロントのサスペンションが沈み、前のタイヤにかかる重さが増えると説明している。ブレーキを早く離しすぎると、フロントが浮いてグリップが減り、アンダーステアが出るという。"
+   ],
+   "examples": [
+    {
+     "t": "フェルスタッペンはオースティンFP1で、ターンイン時の抵抗感を訴えていた。",
+     "u": "/news/nl-gpblog-verstappen-fp2-work-left/"
+    },
+    {
+     "t": "メルセデスの新しい空力パッケージは、ターンインの安定性を下げてW17を扱いにくくした。",
+     "u": "/news/it-f1it-mercedes-w17-balance-paradox/"
+    }
+   ],
+   "see": [
+    "understeer",
+    "oversteer",
+    "apex",
+    "braking-point"
+   ],
+   "src": [
+    {
+     "name": "HP Academy",
+     "title": "The Cornering Phases",
+     "url": "https://www.hpacademy.com/courses/race-driving-fundamentals/the-cornering-phases-the-cornering-phases/"
+    },
+    {
+     "name": "Driver61",
+     "title": "Formula 1 braking and cornering speed（スコット・マンセル、2023年）",
+     "url": "https://driver61.com/uni/formula-1-braking-cornering-speed/"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "number-one-driver",
+   "term": "ナンバーワンドライバー（チームのエース）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "ナンバーワンドライバー",
+    "第一ドライバー",
+    "エースドライバー",
+    "number one driver"
+   ],
+   "words": [
+    "エース",
+    "序列",
+    "優先",
+    "セカンドドライバー",
+    "どちらを優先する"
+   ],
+   "short": "チームが2人のうち、優先すると決めたドライバー。もう1人はナンバー2と呼ばれる。",
+   "body": [
+    "F1のチームは2台を走らせる。チームが片方のドライバーを優先するとき、そのドライバーをナンバーワン、もう1人をナンバー2（セカンドドライバー）と呼ぶ。",
+    "2人を対等に扱う方針のチームもある。メルセデスのウォルフ代表は2015年、F1公式サイトに「チームとマシンの性能を押し上げるには、ナンバーワンのドライバーが2人必要だ」と話し、ナンバー1とナンバー2の関係にはしないと述べた。",
+    "序列はチームオーダーとも結びつく。F1公式サイトによると、1981年の雨のブラジルGPで、ウィリアムズのロイテマンは、ジョーンズを先に行かせるチームの指示に従わなかった。"
+   ],
+   "examples": [
+    {
+     "t": "ホーナーは、メルセデスはアントネッリをラッセルより上の正式なエースにすべきだと主張した。",
+     "u": "/news/de-formel1de-horner-antonelli-number-one/"
+    },
+    {
+     "t": "マルコ氏の「ラッセルはもうメルセデスの第一ドライバーではない」に、ウォルフ代表が反論した。",
+     "u": "/news/en-planetf1-wolff-marko-russell-claim/"
+    }
+   ],
+   "see": [
+    "team-orders",
+    "teammate-battle",
+    "seat"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "Wolff: Mercedes need two number-one drivers（2015年4月21日）",
+     "url": "https://www.formula1.com/en/latest/article/wolff-mercedes-need-two-number-one-drivers.2x6xcMF6lVUQ9DLUEAKYuo"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Carlos Reutemann – an enigmatic genius remembered in words and video（2021年7月8日）",
+     "url": "https://www.formula1.com/en/latest/article/carlos-reutemann-an-enigmatic-genius-remembered.yIEzYRnAZyQk1vUshHZI1"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "next-year-focus",
+   "term": "翌年のマシンへの開発の切り替え",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "開発の切り替え",
+    "来季型への集中",
+    "翌年型への移行",
+    "development switch",
+    "focus switch"
+   ],
+   "words": [
+    "2027年の車",
+    "今季をあきらめる",
+    "設計チーム",
+    "風洞の時間",
+    "最後のアップデート"
+   ],
+   "short": "シーズンの途中で、今の車の改良をやめて、次の年の車の開発に人とお金を回すこと。",
+   "body": [
+    "チームの人手や風洞の時間には限りがある。そこでシーズンのどこかで、今の車の改良をやめ、開発の中心を次の年の車に移す。",
+    "2023年には、レッドブルのクリスチャン・ホーナー代表が「次の年に重点を移す」と話した。風洞の時間が他チームより少なく、使い方を選ばなければならないという理由だった。当時のレッドブルは、空力テストの制限に加え、コストキャップ違反の罰で風洞の使用をさらに減らされていた。",
+    "英Motor Sport誌は2026年8月、マクラーレンの車の弱点の一部は2027年まで直せないと書いた。レッドブルについては、メキース代表がハンガリーGPの後、夏休み明けから2027年の車に資源を多く回し、RB22の開発が遅れることを受け入れると明かしたと伝えた。早く切り替えることは、今季をあきらめると認めることでもあり、次の車への賭けでもあると同誌は書いている。"
+   ],
+   "examples": [
+    {
+     "t": "ウィリアムズはオースティンのFP1で2027年に向けた空力テストを優先し、最速車でもキャデラックの後ろだった。",
+     "u": "/news/en-therace-williams-strangest-day/"
+    },
+    {
+     "t": "マクラーレンは今季最後のアップデートを投入したが、設計の資源はすでに2027年車に集中している。",
+     "u": "/news/de-formel1de-mclaren-update-one-step-behind/"
+    }
+   ],
+   "see": [
+    "upgrade",
+    "atr",
+    "cost-cap",
+    "regulations-2027",
+    "wind-tunnel"
+   ],
+   "src": [
+    {
+     "name": "Sky Sports",
+     "title": "Christian Horner confirms Red Bull switching development focus to 2024 car as Toto Wolff says Mercedes 'need a lot of changes'（2023年7月26日）",
+     "url": "https://www.skysports.com/f1/news/12433/12926751/christian-horner-confirms-red-bull-switching-development-focus-to-2024-car-as-toto-wolff-says-mercedes-need-a-lot-of-changes"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "The F1 teams that should shift focus to 2027 already（2026年8月17日）",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/the-f1-teams-that-should-shift-focus-to-2027-already/"
+    }
+   ],
+   "checked": "2026-10-27"
+  },
+  {
+   "id": "braking-point",
+   "term": "ブレーキングポイント",
+   "cat": "マシンと空力",
+   "aliases": [
+    "ブレーキングポイント",
+    "ブレーキポイント",
+    "braking point",
+    "ブレーキングゾーン",
+    "braking zone",
+    "ぶれーきんぐぽいんと"
+   ],
+   "words": [
+    "ブレーキを踏む場所",
+    "遅いブレーキング",
+    "ブレーキングミス",
+    "目印",
+    "飛び込み"
+   ],
+   "short": "コーナーの手前で、ドライバーがブレーキを踏み始める場所。",
+   "body": [
+    "F1公式サイトの用語集は、ブレーキングポイントを「コーナーの手前で、曲がる前に車を減速させるためにブレーキを踏む場所」と説明している。",
+    "同じ用語集によると、相手より遅くブレーキを踏めば追い抜きに役立つが、速すぎてコーナーを曲がりきれない危険がある。ブレーキングポイントを逃すと、速度が高すぎてコーナーで外にふくらむ。",
+    "ブレーキングの後、ドライバーはハンドルを切ってコーナーに入る（ターンイン）。運転技術の講座のHPアカデミーは、コーナーの入り口では、ブレーキとハンドルの操作を同時に行うと説明している。"
+   ],
+   "examples": [
+    {
+     "t": "ノリスはアメリカGPのQ3で、ターン15のブレーキングミスとターン19のトラックリミット違反でタイムを失った。",
+     "u": "/news/de-motorsportmagazin-mclaren-hard-to-drive-austin/"
+    },
+    {
+     "t": "ウィリアムズのアルボンは、オースティンの初日にブレーキングに全く自信がないと訴えた。",
+     "u": "/news/en-therace-williams-strangest-day/"
+    }
+   ],
+   "see": [
+    "brakes",
+    "lock-up",
+    "dive-bomb",
+    "turn-in",
+    "brake-balance"
+   ],
+   "src": [
+    {
+     "name": "formula1.com",
+     "title": "F1 Glossary (A-E)（BRAKING POINT）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "HP Academy",
+     "title": "The Cornering Phases",
+     "url": "https://www.hpacademy.com/courses/race-driving-fundamentals/the-cornering-phases-the-cornering-phases/"
+    }
+   ],
+   "checked": "2026-10-27"
   }
  ],
  "sources": [
