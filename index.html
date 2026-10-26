@@ -706,10 +706,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 /* kind labels */
 .kind{display:inline-flex;align-items:center;padding:0 7px;border-radius:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;line-height:18px;border:1px solid var(--ink);color:var(--ink);white-space:nowrap;background:transparent}
 .kind{--k:var(--ink);border-color:var(--k);color:var(--k);background:color-mix(in srgb,var(--k) 9%,transparent)}
-.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.analysis{--k:#86650F}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}
-.kind.rumor,.kind.fan{border-style:dashed}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.analysis{--k:#D9B85A}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}}
-:root[data-theme="dark"] .kind.primary{--k:#7FC48C}:root[data-theme="dark"] .kind.news{--k:#B6BCC8}:root[data-theme="dark"] .kind.tech{--k:#7DB6E0}:root[data-theme="dark"] .kind.analysis{--k:#D9B85A}:root[data-theme="dark"] .kind.rumor{--k:#E8946C}:root[data-theme="dark"] .kind.fan{--k:#C39AD9}
+.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.analysis{--k:#86650F}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}.kind.voice{--k:#2F7A72}
+.kind.rumor,.kind.fan,.kind.voice{border-style:dashed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.analysis{--k:#D9B85A}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}:root:not([data-theme="light"]) .kind.voice{--k:#7CC9BF}}
+:root[data-theme="dark"] .kind.primary{--k:#7FC48C}:root[data-theme="dark"] .kind.news{--k:#B6BCC8}:root[data-theme="dark"] .kind.tech{--k:#7DB6E0}:root[data-theme="dark"] .kind.analysis{--k:#D9B85A}:root[data-theme="dark"] .kind.rumor{--k:#E8946C}:root[data-theme="dark"] .kind.fan{--k:#C39AD9}:root[data-theme="dark"] .kind.voice{--k:#7CC9BF}
 /* geek boxes */
 .geek{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
 .geek .band-head{margin-bottom:4px}
@@ -1836,6 +1836,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
               <button type="button" id="view-latest" aria-pressed="true">新着</button>
               <button type="button" id="view-tech" aria-pressed="false">テック</button>
               <button type="button" id="view-rumor" aria-pressed="false" aria-label="パドックの噂"><span class="ph-x">パドックの</span>噂</button>
+              <button type="button" id="view-voice" aria-pressed="false">ファンの声</button>
               <button type="button" id="view-analysis" aria-pressed="false">個人分析</button>
               <button type="button" id="view-ja" aria-pressed="false" title="日本の媒体の記事だけを表示" aria-label="日本語のみ">日本語<span class="ph-x">のみ</span></button>
             </div>
@@ -1892,7 +1893,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       <div class="panel outline">
         <h2>翻訳について</h2>
         <p>「最新のニュース」に載せているのは、登録や購読をしなくても無料で全文を読める記事だけです。個人の分析（note・Substack・個人ブログ）も、無料で読めるものだけを載せています。</p>
-        <p>それぞれの記事には種類の印を付けています。「一次情報」はF1・FIA・チームなど当事者の発表、「報道」は報道機関の記事、「技術」は技術の解説、「個人分析」は個人の見解です。「噂」と「ファン投稿」は未確認の話題で、確定した情報ではありません。</p>
+        <p>それぞれの記事には種類の印を付けています。「一次情報」はF1・FIA・チームなど当事者の発表、「報道」は報道機関の記事、「技術」は技術の解説、「個人分析」は個人の見解です。「噂」と「ファン投稿」は未確認の話題、「ファンの声」はファンの意見で、確定した情報ではありません。</p>
         <p>海外の記事は見出しを日本語に訳し、「詳細・共有」のページに原題を添えています。要約は各記事の要点をこちらで短くまとめたもので、本文の翻訳ではありません。本文は、すべての記事に付けたリンクから元の媒体でお読みください。「世界の見方」は、同じニュースを各国の媒体がどう伝えたかを、こちらで読み比べてまとめたものです。</p>
       </div>
     </div>
@@ -2074,7 +2075,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
       var lab = mk('div','circuit-label'); lab.appendChild(mk('b', null, c.name)); lab.appendChild(mk('span', null, c.gp)); ha.appendChild(lab);
     } else { plate.appendChild(mk('span','catword', lead.cat || 'NEWS')); ha.appendChild(plate); }
 
-    var media = t.items.filter(function(a){ return a.kind !== 'fan'; });
+    var media = t.items.filter(function(a){ return a.kind !== 'fan' && a.kind !== 'voice'; });
     var mediaSrc = {}; media.forEach(function(a){ mediaSrc[a.source] = 1; });
     var nMedia = Object.keys(mediaSrc).length || t.n;
     var weekAgo = Date.now() - 7 * 864e5;
@@ -2251,7 +2252,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   var cmpSeq = 0;
   function cmpEv(path){ try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path:path, title:'', event:true }); } catch(e){} }
   function compareBox(a){
-    if (a.isNote || a.kind === 'fan' || !a.topic || !state.byTopic) return null;
+    if (a.isNote || a.kind === 'fan' || a.kind === 'voice' || !a.topic || !state.byTopic) return null;
     var seen = {}; seen[a.source] = 1;
     var others = (state.byTopic[a.topic] || []).filter(function(x){
       if (x.id === a.id || seen[x.source]) return false;
@@ -2320,7 +2321,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     return it;
   }
 
-  var KIND_TABS = [['all','すべて'],['news','ニュース'],['tech','テック'],['rumor','パドック（うわさ）'],['fan','掲示板まとめ'],['analysis','個人分析']];
+  var KIND_TABS = [['all','すべて'],['news','ニュース'],['tech','テック'],['rumor','パドック（うわさ）'],['fan','掲示板まとめ'],['voice','ファンの声'],['analysis','個人分析']];
   function notePass(n){
     if (state.lang !== 'all' && (n.lang || 'ja') !== state.lang) return false;
     if (state.team !== 'all' && (n.teams || []).indexOf(state.team) < 0) return false;
@@ -2592,7 +2593,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     state.all = all;
     // same story, other outlets (読み比べ, owner's OK 13 Oct 2026): news/tech/rumor articles grouped by topic, newest first
     state.byTopic = {};
-    all.forEach(function(a){ if (a.isNote || a.kind === 'fan' || !a.topic) return; (state.byTopic[a.topic] = state.byTopic[a.topic] || []).push(a); });
+    all.forEach(function(a){ if (a.isNote || a.kind === 'fan' || a.kind === 'voice' || !a.topic) return; (state.byTopic[a.topic] = state.byTopic[a.topic] || []).push(a); });
     state.srcRegion = {}; all.forEach(function(a){ if (a.region && !state.srcRegion[a.source]) state.srcRegion[a.source] = a.region; });
     state.byUrl = {}; all.forEach(function(a){ state.byUrl[a.url] = a; });
     var tr = trending(all), rest, ht = el('hub-top');
@@ -2608,7 +2609,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     renderFeed(rest);
     renderKindSecs(all);
     el('view-latest').setAttribute('aria-pressed', String(state.view === 'latest' && state.kind === 'all'));
-    ['tech','rumor','analysis'].forEach(function(k){ el('view-' + k).setAttribute('aria-pressed', String(state.view === 'latest' && state.kind === k)); });
+    ['tech','rumor','voice','analysis'].forEach(function(k){ el('view-' + k).setAttribute('aria-pressed', String(state.view === 'latest' && state.kind === k)); });
     el('view-ja').setAttribute('aria-pressed', String(state.lang === 'ja'));
     { var fnum = (state.kind !== 'all') + (state.lang !== 'all') + (state.team !== 'all') + (state.src !== 'all'); var fb = el('filt-n'); if (fb){ fb.hidden = !fnum; fb.textContent = fnum ? String(fnum) : ''; } }
     if (d.updatedAt){
@@ -2622,7 +2623,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   }
 
   el('view-latest').addEventListener('click', function(){ state.view = 'latest'; state.kind = 'all'; renderAll(); });
-  ['tech','rumor','analysis'].forEach(function(k){ el('view-' + k).addEventListener('click', function(){ state.view = 'latest'; state.kind = state.kind === k ? 'all' : k; state.newsShown = 0; renderAll(); }); });
+  ['tech','rumor','voice','analysis'].forEach(function(k){ el('view-' + k).addEventListener('click', function(){ state.view = 'latest'; state.kind = state.kind === k ? 'all' : k; state.newsShown = 0; renderAll(); }); });
   el('view-ja').addEventListener('click', function(){ state.lang = state.lang === 'ja' ? 'all' : 'ja'; renderAll(); });
 
   var SITE_URL = 'https://f1gridwalk.github.io/';
@@ -2699,8 +2700,8 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
     return d;
   }
   // one short label on every item, so what kind of information it is shows at a glance
-  var KIND = { primary:'一次情報', news:'報道', tech:'技術', rumor:'噂', fan:'ファン投稿', analysis:'個人分析' };
-  var KIND_TIP = { primary:'F1・FIA・チームなど当事者の公式発表', news:'報道機関の記事', tech:'技術の解説・分析記事', rumor:'報道で出たうわさ・未確認の話', fan:'ファン掲示板で話題の投稿（未確認を含む）', analysis:'個人による分析・考察（note・Substack・個人ブログ。報道ではなく個人の見解です）' };
+  var KIND = { primary:'一次情報', news:'報道', tech:'技術', rumor:'噂', fan:'ファン投稿', voice:'ファンの声', analysis:'個人分析' };
+  var KIND_TIP = { primary:'F1・FIA・チームなど当事者の公式発表', news:'報道機関の記事', tech:'技術の解説・分析記事', rumor:'報道で出たうわさ・未確認の話', fan:'ファン掲示板で話題の投稿（未確認を含む）', voice:'日本と海外のファンの反応を、F1 Grid Walk がまとめたもの（ファンの意見です）', analysis:'個人による分析・考察（note・Substack・個人ブログ。報道ではなく個人の見解です）' };
   var PRIMARY_SRC = /^(Formula1\.com|F1公式|FIA)(\s|$)/i;
   function kindOf(a){ var k = a.kind || 'news'; if (k === 'news' && (a.primary || PRIMARY_SRC.test(a.source || ''))) return 'primary'; return KIND[k] ? k : 'news'; }
   function kindChip(a){ var k = a === 'analysis' ? 'analysis' : kindOf(a); var c = mk('span', 'kind ' + k, KIND[k]); c.title = KIND_TIP[k]; return c; }
@@ -2728,7 +2729,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   function renderGeek(){
     var all = state.all || [];
     var tech = all.filter(function(a){ return a.kind === 'tech'; }).slice(0, 40);
-    var gos = all.filter(function(a){ return a.kind === 'rumor' || a.kind === 'fan'; }).slice(0, 40);
+    var gos = all.filter(function(a){ return a.kind === 'rumor' || a.kind === 'fan' || a.kind === 'voice'; }).slice(0, 40);
     var tl = el('tech-list'), gl = el('gossip-list'); tl.textContent = ''; gl.textContent = '';
     tech.forEach(function(a){ tl.appendChild(geekRow(a)); });
     gos.forEach(function(a){ gl.appendChild(geekRow(a)); });
