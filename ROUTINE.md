@@ -27,7 +27,7 @@ Find F1 news published since the previous run (compare the current time in Asia/
 
 Avoid by default (usually paywalled or metered): Autosport Plus, The Athletic, auto motor und sport "Plus", L'Équipe "abonnés", Gazzetta "G+/Extra", El País, De Telegraaf "Premium", Folha/UOL subscriber pieces, any motorsport.com / autosport "Premium" or "Prime" article.
 
-Aim for 5–10 new articles per run (more right after a session; fewer is fine on quiet days), from several languages, outlets and countries, covering a spread of teams. Across the day try to include technical deep dives, rumour / paddock-gossip pieces from different countries, and fan-forum digests (about 1 tech, 2–3 rumour and 1 fan item per run when available; owner's decision, 23 Oct 2026: more rumours, at least half of them from non-English outlets — see step 2c). Favour substantive stories over live tickers, TV-schedule posts, galleries, videos and bare results tables. Skip URLs already in articles.json. Several outlets' articles about the same big story are GOOD (that is how the most-covered story is measured), but never two articles from the same outlet about the same story.
+Aim for 5–10 new articles per run (more right after a session; fewer is fine on quiet days), from several languages, outlets and countries, covering a spread of teams. Across the day try to include technical deep dives, rumour / paddock-gossip pieces from different countries, and fan-forum digests (about 1 tech, 3–4 rumour and 1 fan item per run when available; owner's decisions, 23 and 26 Oct 2026: more rumours and gossip, at least half of them from non-English outlets — see step 2c). Favour substantive stories over live tickers, TV-schedule posts, galleries, videos and bare results tables. Skip URLs already in articles.json. Several outlets' articles about the same big story are GOOD (that is how the most-covered story is measured), but never two articles from the same outlet about the same story.
 
 Race weekends (qualifying day to two days after the race): the site publishes a WORLD GRID (formerly WORLD MEDIA LENS) column after each race, which needs stories that Japanese outlets did not cover. So on these runs, include at least 3 articles per run from non-English, non-Japanese outlets (Italian, German, Spanish, Dutch, Portuguese/Brazilian, French), preferring post-session analysis, driver/team quotes and paddock detail over plain results.
 
@@ -49,7 +49,7 @@ Test: could the person look at our article and say "yes, I said/posted that myse
 Fields: kind "news" (it is on the record), cat "素顔". The summary must say where it comes from in one plain line (e.g. 「本人のInstagramへの投稿による」「本人がインタビューで語った」). No sensational words in titles (熱愛, 破局か, 衝撃, 激写 …). Write calmly, like a newspaper's people column.
 
 ### 2c. More rumours from abroad, and dating rumours — owner's decision, 23 Oct 2026
-Aim for 2–3 rumour articles (kind "rumor", cat "うわさ") per run when available, at least half from non-English outlets. Rumours = transfers and seats, team management and internal politics, relations between drivers / teams / bosses, technical rumours, and (with the rules below) dating rumours. Where to look first:
+Aim for 3–4 rumour / gossip articles (kind "rumor", cat "うわさ") per run when available (owner, 26 Oct 2026: was 2–3), at least half from non-English outlets. Rumours = transfers and seats, team management and internal politics, relations between drivers / teams / bosses, technical rumours, and (with the rules below) dating rumours. Where to look first:
 - Italy: formulapassion.it, f1grandprix.motorionline.com, corrieredellosport.it (search "voci", "mercato")
 - Germany: f1-insider.com, motorsport-magazin.com (search "Gerüchte")
 - Netherlands: f1maximaal.nl, racingnews365.nl, gpblog.com/nl (search "geruchten")
@@ -57,6 +57,8 @@ Aim for 2–3 rumour articles (kind "rumor", cat "うわさ") per run when avail
 - Brazil: grandepremio.com.br (search "rumores")
 - France: motorsport.nextgen-auto.com/fr (search "rumeurs")
 - UK: planetf1.com, gpfans.com, crash.net (search "rumours")
+- Gossip-strong papers (owner, 26 Oct 2026) — look at these every run: The Sun, Daily Mail, Daily Express, Mirror (UK); Bild (Germany; skip BILDplus); Corriere dello Sport, FormulaPassion (Italy); AS, Marca (Spain). Tabloids may be used under the tabloid rule below (name the paper and say it is a tabloid).
+- Named journalists' own newsletters (e.g. a Substack written under the reporter's real name, with a track record in F1 reporting) may be used as a rumour source, written as 「〇〇記者が自身のニュースレターで伝えた」. Anonymous blogs, personal fan blogs, forums, matome sites and anonymous social-media accounts are NEVER a rumour source (personal analysis still goes only into notes.json).
 Dating rumours (a driver's or team person's romantic partner) MAY be published as kind "rumor", cat "うわさ", only if ALL of these hold:
 - a named newspaper, magazine or sports/entertainment site reported it (never forums, matome blogs, anonymous social-media accounts);
 - tabloids (The Sun, Daily Mail, Mirror, Bild, etc.) MAY be used (owner's decision, 24 Oct 2026), but then name the paper and say it is a tabloid in the summary (e.g. 「英タブロイド紙ザ・サンが報じた」) so readers can judge it themselves;
