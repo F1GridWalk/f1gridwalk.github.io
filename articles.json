@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T16:50:00+09:00",
+  "updatedAt": "2026-10-26T17:20:00+09:00",
   "topics": {
     "fp2-austin-2026": {
       "title": "アメリカGP FP2　ルクレールが連続最速、4チームが僅差",
@@ -44,9 +44,172 @@
     "russell-austin-struggle": {
       "title": "ラッセル、アメリカGP8位で原因つかめず　アントネッリから54秒差",
       "summary": "ラッセルはアメリカGPで6番手からスタートしたが、1周目にコース外でピアストリに対して利益を得たとして5秒ペナルティを受け、8位に終わった。優勝したチームメイトのアントネッリとの差は54秒に広がり、本人はペースが悪かった原因をまだ説明できないと認めた。ウォルフ代表は改良型W17のセットアップの幅が狭いと説明している。ラッセルはランキング2位を守ったが、3位ハミルトンとの差はわずか1点となった。"
+    },
+    "verstappen-ford-hypercar-talk": {
+      "title": "フォード幹部がフェルスタッペン起用に関心　F1外プロジェクトの観測",
+      "summary": "フォードのラッシュブルック氏がオランダ紙デ・テレフラーフの取材で、フェルスタッペンを自社のF1外プロジェクトに迎えることに関心を示したと伝えられた。蘭RacingNews365はハイパーカー、仏Nextgen-AutoはムスタングGT3での起用に注目している。いずれも構想段階の話で、実現は確認されていない。"
     }
   },
   "articles": [
+    {
+      "id": "ja-voice-usgp-race-2026",
+      "kind": "voice",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1 Grid Walk",
+      "cat": "ファンの声",
+      "circuit": "austin",
+      "teams": [
+        "mercedes",
+        "redbull",
+        "ferrari"
+      ],
+      "topic": "usgp-race-austin-2026",
+      "title": "アメリカGP決勝、ファンの反応は？",
+      "orig": "アメリカGP決勝、ファンの反応は？",
+      "url": "https://carview.yahoo.co.jp/news/detail/d5e728fc1c12b1c6bbcf64b47236167d8994d50e/",
+      "published": "2026-10-26T17:10:00+09:00",
+      "summary": "優勝したアントネッリ、2位ルクレール、3位フェルスタッペンというアメリカGP決勝をめぐるファンの声を、日本と海外から集めた。日本のカービューのコメント欄は書き込みが少なく、メルセデスの勝因やレッドブルの無線不調、パワーユニットの評価に触れる意見が見られた。海外ではフェラーリの失速に落胆したRedditのファンの反応を英F1オーバーステアが紹介しており、ただし内容は予選後のものだ。いずれもごく一部の声で、全体の世論を示すものではない。",
+      "voices": [
+        {
+          "side": "日本",
+          "text": "アントネッリの勝因は、低い気温がハードタイヤに合ったことや空気抵抗の小さいシャシー、ストレートの強さだという分析と、記事でフェラーリに触れた部分が少ないという皮肉が書き込まれていた。",
+          "src": "カービューのコメント欄",
+          "url": "https://carview.yahoo.co.jp/news/detail/555e73eae175020dc2bd7a447a72ddebf066d82d"
+        },
+        {
+          "side": "日本",
+          "text": "レッドブルの無線トラブルは、別のドライバーが同チームに移った際に改善した例があるという見方も出ていた。",
+          "src": "カービューのコメント欄",
+          "url": "https://carview.yahoo.co.jp/news/detail/d5e728fc1c12b1c6bbcf64b47236167d8994d50e/"
+        },
+        {
+          "side": "日本",
+          "text": "ホンダのパワーユニットが下位なのに対し、フォードの評価が高いことに驚くという意見もあった。",
+          "src": "カービューのコメント欄",
+          "url": "https://carview.yahoo.co.jp/news/detail/d5e728fc1c12b1c6bbcf64b47236167d8994d50e/"
+        },
+        {
+          "side": "海外",
+          "text": "練習で好調だったフェラーリが予選で後退したことに、また同じ展開だと落胆するRedditのファンが多かったという（F1オーバーステアが紹介、予選後の反応）。",
+          "src": "F1 Oversteer",
+          "url": "https://www.f1oversteer.com/news/ferrari-fans-all-say-the-same-thing-on-lewis-hamilton-and-charles-leclercs-united-states-gp-demise/"
+        },
+        {
+          "side": "海外",
+          "text": "練習のペースにまただまされたという声や、練習で速いのに予選で沈むのはフェラーリのお決まりだと冗談めかす意見も出ていた（同記事による）。",
+          "src": "F1 Oversteer",
+          "url": "https://www.f1oversteer.com/news/ferrari-fans-all-say-the-same-thing-on-lewis-hamilton-and-charles-leclercs-united-states-gp-demise/"
+        }
+      ]
+    },
+    {
+      "id": "fr-nextgen-alonso-indycar-verstappen-ford-gt",
+      "kind": "rumor",
+      "lang": "fr",
+      "region": "フランス",
+      "source": "Nextgen-Auto",
+      "cat": "うわさ",
+      "teams": [
+        "astonmartin",
+        "redbull"
+      ],
+      "topic": "verstappen-ford-hypercar-talk",
+      "title": "アロンソにバルセロナのインディカー招待案、フェルスタッペンにはフォードがGT起用に関心　仏メディア",
+      "orig": "Alonso déjà invité à courir en IndyCar à Barcelone, Verstappen avec Ford en GT ?",
+      "url": "https://motorsport.nextgen-auto.com/fr/formule-1/alonso-deja-invite-a-courir-en-indycar-a-barcelone-verstappen-avec-ford-en-gt,212682.html",
+      "published": "2026-10-25T13:17:00+01:00",
+      "summary": "仏Nextgen-Autoは、スペインのモーターやオランダのデ・テレフラーフの報道を基に、F1王者を他カテゴリーに迎える動きを伝えた。インディカーが来年バルセロナで開催される際、通常25台の上限を緩めて地元のアロンソを招く案がうわさされている。ボールズ会長は社内で議論済みと認めたが、判断は2027年7月が近づいてからで課題もあると述べ、パロウはアロンソを「100%」推すと語った。フォードのラッシュブルック氏はフェルスタッペンをムスタングGT3に迎えたいと話したが、実現は確認されていない。"
+    },
+    {
+      "id": "fr-nextgen-wolff-succession-plan",
+      "kind": "news",
+      "lang": "fr",
+      "region": "フランス",
+      "source": "Nextgen-Auto",
+      "cat": "チーム",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "wolff-succession-plan",
+      "title": "ウォルフ代表、自身の後任計画を語る　職務は2〜3人に分担へ",
+      "orig": "« Mercedes F1 doit pouvoir vivre sans moi ! » : Wolff révèle son plan de succession",
+      "url": "https://motorsport.nextgen-auto.com/fr/formule-1/mercedes-f1-doit-pouvoir-vivre-sans-moi-wolff-revele-son-plan-de-succession,212595.html",
+      "published": "2026-10-25T10:05:00+01:00",
+      "summary": "メルセデスのトト・ウォルフ代表は、自分が率いなくてもチームが回る体制を考えていると、ポッドキャスト「Cheeky Pint」で明かした。後任を一人に絞らず、職務を2〜3人に分ける考えで、候補を見極めている最中だという。すでにブラッドリー・ロード氏が副代表に就いているが、誰がどの役割を担うかは語らなかった。将来はニキ・ラウダ氏のような非執行の会長職に就く可能性にも触れ、日々の運営には口を出さない形が前提だと述べた。すぐに退く話ではなく、移行は長期的に進むとNextgen-Autoは伝えた。"
+    },
+    {
+      "id": "nl-racingnews365-hadjar-fia-throttle-map",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "RacingNews365",
+      "cat": "決勝",
+      "circuit": "austin",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "redbull-us-gp-frustration",
+      "title": "ハジャー、アメリカGPでFIAの規則に不満　誤ったスロットルマップで1周1秒を失う",
+      "orig": "Hadjar hekelt FIA-regel: 'Jullie hebben geen idee waar ik mee reed!'",
+      "url": "https://racingnews365.nl/hadjar-hekelt-fia-regel-jullie-hebben-geen-idee-waar-ik-mee-reed",
+      "published": "2026-10-26T07:35:00+01:00",
+      "summary": "3番手スタートで表彰台を狙ったハジャーは、クラッチの出力が強すぎて発進に失敗し、無線も聞き取りにくかったという。ピットアウト時にはスロットルマップがピットレーン用のままで、1周あたり約1秒を失ったと主張し、FIAに不満をぶつけた。マップはFIAとの取り決めで設定されるため、非難の矛先がFIAに向いたとオランダのRacingNews365は伝えた。予期せずハードタイヤを履いたが、ペース自体は悪くなく、チームの判断は理解できると話した。フェルスタッペン同様、事前に知らされない作戦があったとも語った。"
+    },
+    {
+      "id": "it-formula1it-alpine-gasly-colapinto-austin",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "チーム",
+      "circuit": "austin",
+      "teams": [
+        "alpine"
+      ],
+      "topic": "alpine-austin-2026",
+      "title": "アルピーヌ、ガスリーが10位で入賞　コラピントは2戦連続でリタイア",
+      "orig": "Alpine, Gasly salva ancora il risultato. Colapinto adesso è un problema",
+      "url": "https://www.formula1.it/news/33490/1/alpine-gasly-salva-ancora-il-risultato-colapinto-adesso-e-un-problema",
+      "published": "2026-10-26T07:45:00+01:00",
+      "summary": "伊Formula1.itは、アルピーヌのアメリカGPをガスリーの入賞とコラピントの途中棄権の対比で伝えた。ガスリーはスタート順位と同じ10位に入ったが、バーマンとの接触でフロア下を傷め、ピット作業の遅れもあって、ローソンを狙えたかもしれないと話した。コラピントはハードで始める別戦略をとったが、リンドブラッドとの接触でフロアとサイドポッドを傷めて2戦連続のリタイアとなった。ブリアトーレ代表は運の悪い残念な週末と述べ、次戦は両車での得点を目標に掲げた。チームはコンストラクターズ6位にいる。"
+    },
+    {
+      "id": "it-formula1it-hamilton-austin-understeer",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "ドライバー",
+      "circuit": "austin",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "hamilton-austin-understeer",
+      "title": "ハミルトン、アメリカGPはアンダーステアに苦戦　セットアップが課題と認める",
+      "orig": "Ferrari, Hamilton cerca risposte dopo Austin: nel mirino la configurazione",
+      "url": "https://www.formula1.it/news/33486/1/ferrari-hamilton-cerca-risposte-dopo-austin-nel-mirino-la-configurazione",
+      "published": "2026-10-26T07:30:00+01:00",
+      "summary": "ハミルトンはアメリカGPを4位で終え、フェラーリが伸びなかった主因はバランスの問題だと振り返った。バーチャルセーフティカーは影響したが、勝負は最初の2スティントで決まり、強いアンダーステアのためスローコーナーで離されたという。最終スティントでセットアップを詰めて、ようやくバランスに近づいたと語った。直近5戦ほどでセットアップを煮詰め切れず多くのポイントを失ったと認め、身につけるべき技術だと述べた。伊Formula1.itは、次戦メキシコGPで週末の最初からバランスを見つけられるかが焦点だと伝えた。"
+    },
+    {
+      "id": "ja-f1are-lawson-us-gp-ninth",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "まとめ",
+      "circuit": "austin",
+      "teams": [
+        "racingbulls"
+      ],
+      "topic": "lawson-austin-p9",
+      "title": "ローソン、アメリカGP9位に「素晴らしい週末」　ファンは安定感を評価",
+      "orig": "VCARBのローソン、F1アメリカGP決勝9位「本当に素晴らしい週末」「チームはアップグレードで素晴らしい仕事をしてくれた」",
+      "url": "https://f1are.com/blog-entry-4019.html",
+      "published": "2026-10-26T12:00:00+09:00",
+      "summary": "F1のアレは、アメリカGP決勝で9位に入ったローソンのコメントを紹介した。ローソンは「本当に素晴らしい週末」と述べ、チームのアップグレードの成果に感謝し、決勝のペースも良かったと語ったという。ローソンは77点でドライバーズランキング9位につけている。上位との差はまだ大きいが、中団の先頭にいることは将来への良い兆しだと話した。コメント欄では、安定した走りや入賞の多さを評価する声が目立ち、来季のシート確保を見込む意見も出ていた。"
+    },
     {
       "id": "en-skysports-russell-rubbish-pace-austin",
       "kind": "news",
@@ -1358,134 +1521,6 @@
       "url": "https://f1grandprix.motorionline.com/mercedes-gp-stati-uniti-austin-prove-libere-antonelli-russell-fp2/",
       "published": "2026-10-24T01:00:00+02:00",
       "summary": "メルセデスは両車にマレーシア仕様のパッケージを載せ、シンガポールのFP1で初めて見せた新フロントウイングも使った。FP1はロックアップや低速コーナーでのロスに悩んだが、FP2に向けてセットアップを変更し、バランスが改善した。アントネッリはFP2でルクレールに僅差の2番手に入り、ミディアムのロングランは平均1分41秒714と安定していた。ラッセルは単独アタックで力を出し切れなかったと述べている。ショブリン技術責任者は、上位4チームのどこもポール争いから外せないと語った。"
-    },
-    {
-      "id": "nl-gpblog-verstappen-fp2-work-left",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "ドライバー",
-      "circuit": "austin",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "fp2-austin-2026",
-      "title": "フェルスタッペン、好調な金曜も「やるべき作業が残る」　低速と高速コーナーの両立が課題",
-      "orig": "Verstappen ziet na sterke vrijdag in Austin nog één groot struikelblok",
-      "url": "https://www.gpblog.com/nl/nieuws/verstappen-ziet-ondanks-sterke-vt2-nog-een-lastig-probleem-bij-red-bull",
-      "published": "2026-10-24T00:41:00+02:00",
-      "summary": "フェルスタッペンはFP1で2番手、FP2で3番手に入った。FP2ではルクレールの1分35秒291に対し1分35秒480と、0.2秒足らずの差だった。本人はこのサーキットで良い妥協点を見つけるのは容易でないと語り、低速と高速コーナーのバランスにまだ作業が必要だとみている。セッション間にセットアップを変えたが、最適な状態には届いていないという。FP1ではソフトの最速ラップがトラックリミットで抹消され、ターンイン時の抵抗感も訴えていた。"
-    },
-    {
-      "id": "ja-f1are-us-gp-day1-digest",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "circuit": "austin",
-      "teams": [
-        "mclaren",
-        "ferrari",
-        "racingbulls"
-      ],
-      "topic": "fp2-austin-2026",
-      "title": "アメリカGP初日結果にファンの声　ローソンの好走に期待、マクラーレンの伸び悩みを心配",
-      "orig": "2026年F1第18戦アメリカGP初日結果",
-      "url": "https://f1are.com/blog-entry-4012.html",
-      "published": "2026-10-24T07:30:00+09:00",
-      "summary": "F1のアレが、アメリカGP初日のFP1とFP2の結果を公式アカウントの投稿とともに紹介し、匿名掲示板の反応を集めた。ローソンの走りを評価し、結果次第では来季のシートに響くのではと気にする声が出た。中盤戦の勢いが見られないマクラーレンを案じる書き込みや、ハジャーの走りが始まったという指摘もあった。フェラーリが今季最後の大型アップデートを入れたのかという推測や、「普通の一日だった」との感想もあり、いずれも匿名投稿での推測や感想である。"
-    },
-    {
-      "id": "en-f1-fp2-leclerc-antonelli-verstappen",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "Formula1.com",
-      "cat": "分析",
-      "circuit": "austin",
-      "teams": [
-        "ferrari",
-        "mercedes",
-        "redbull"
-      ],
-      "topic": "fp2-austin-2026",
-      "title": "アメリカGP FP2　ルクレールが連続最速、アントネッリが0.042秒差で2番手",
-      "orig": "FP2: Leclerc sets the pace from Antonelli and Verstappen in second practice at United States Grand Prix",
-      "url": "https://www.formula1.com/en/latest/article/fp2-leclerc-sets-the-pace-from-antonelli-and-verstappen-in-second-practice-at-united-states-grand-prix.4lRGhApoylA3exqOxagIqx",
-      "published": "2026-10-23T23:17:00+01:00",
-      "summary": "アメリカGPのFP2はフェラーリのルクレールが1分35秒291で最速だった。メルセデスのアントネッリが0.042秒差の2番手で、フェルスタッペンが0.189秒差の3番手に入った。ハミルトンが0.615秒差の4番手、ラッセルが0.744秒差の5番手で、ラッセルはルクレールをコース外へ押し出したとして審議対象になったが、お咎めなしとなった。ハジャーはマシンを「ひどい」と評し、ノリスは予選シミュレーション中にオーバーステアで走行を中断した。"
-    },
-    {
-      "id": "de-formel1de-leclerc-notes-hamilton",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "ドライバー",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "leclerc-learns-from-hamilton",
-      "title": "ルクレール「ハミルトンから学ぶためのメモを今も取っている」",
-      "orig": "Charles Leclerc: Mache immer noch Notizen, um von Hamilton zu lernen",
-      "url": "https://www.formel1.de/news/news/2026-10-23/charles-leclerc-mache-immer-noch-notizen-um-von-hamilton-zu-lernen",
-      "published": "2026-10-23T23:05:00+02:00",
-      "summary": "フェラーリのルクレールが、チームメイトのハミルトンから今も多くを学んでいると語った。「ルイスからは間違いなく多くを学んでいる」と明言した。自身が好調な週末のあとでもハミルトンのデータを分析し、マシンの扱い方を確かめているという。ハミルトンの加入以降、ノートに書き込んだメモは「おそらくこれまでで最も多い」と述べた。現行世代のマシンについては、必ずしも楽しいものではないとしつつ、ドライバーとして長期的には役立つ経験になるとの見方を示した。"
-    },
-    {
-      "id": "nl-gpblog-russell-horner-tactical",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "移籍",
-      "teams": [
-        "mercedes",
-        "redbull"
-      ],
-      "topic": "horner-russell-redbull-approach",
-      "title": "ラッセル、ホーナー氏のレッドブル接触話に「全く真剣ではなかった」　駆け引きと指摘",
-      "orig": "Russell ontkracht verhaal van Horner over interesse in Red Bull: 'Allemaal tactisch'",
-      "url": "https://www.gpblog.com/nl/nieuws/russell-ontkracht-verhaal-van-horner-over-interesse-in-red-bull-allemaal-tactisch",
-      "published": "2026-10-23T22:47:00+02:00",
-      "summary": "元レッドブル代表ホーナー氏は自著で、昨年の英国GP前後にラッセルの代理人へ接触し、メルセデスの関心を探ったと明かした。メルセデスがフェルスタッペンを追うのに対抗する狙いで、ヴォルフ代表に「レッドブルを検討すべきだ」と言いたかったという。ラッセルはアメリカGPで「正直、全く真剣ではなかった」と述べ、メルセデス以外で走るつもりはなかったと否定した。ホーナー氏とヴォルフ代表が互いを挑発し合う駆け引きの一部だったとの見方で、心理戦だったかとの問いにも肯定した。"
-    },
-    {
-      "id": "nl-gpblog-newey-answers-horner-2014",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "チーム",
-      "teams": [
-        "redbull",
-        "astonmartin"
-      ],
-      "topic": "newey-horner-2014-departure",
-      "title": "ニューウェイ氏、ホーナー氏の2014年離脱を巡る記述に反論「エンジンが問題だった」",
-      "orig": "Newey slaat terug na Horners verwijt over vertrek bij Red Bull",
-      "url": "https://www.gpblog.com/nl/nieuws/newey-slaat-terug-na-horners-verwijt-over-vertrek-bij-red-bull",
-      "published": "2026-10-23T22:27:00+02:00",
-      "summary": "アストンマーティンのニューウェイ氏が、ホーナー氏の自著『Drive』にある2014年の離脱話への記述に答えた。同書は、逆境の最初の兆候で同氏が船を降りたがったと記したが、ニューウェイ氏はまだその部分を読んでいないと述べた。シャシー設計者は1年の不振は受け入れられるが、2014年はエンジン側に改善の意思が見えず、2019年にホンダへ替わるまで変わらなかったと説明した。ホーナー氏には自身のいら立ちが完全には伝わっていなかったかもしれないとしつつ、今も友人で、ホーナー氏の娘の名付け親だと語った。"
-    },
-    {
-      "id": "de-formel1de-sainz-williams-overhaul",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Formel1.de",
-      "cat": "チーム",
-      "teams": [
-        "williams"
-      ],
-      "topic": "williams-restructure-2027",
-      "title": "サインツ「ウィリアムズ首脳は、今すぐ全て変えろと言った」　2027年へ組織改革",
-      "orig": "Carlos Sainz: Williams-Management hat gesagt, wir sollen sofort alles ändern",
-      "url": "https://www.formel1.de/news/news/2026-10-23/carlos-sainz-williams-management-hat-gesagt-wir-sollen-sofort-alles-aendern",
-      "published": "2026-10-23T21:37:00+02:00",
-      "summary": "ウィリアムズのサインツは、チームが現在のマシンでは安定して入賞できる状態にないと認めた。バクーのアップデートでも足りず、通常のレースでは14〜15位が精一杯だという。同選手は「チーム内で大規模な変革が進んでいる」と述べ、首脳陣から、シーズン途中でも変えるべきものはすぐ変えるよう言われたと明かした。残り6戦は今季の挽回より、来季に向けた工程と体制の見直しに充てる考えだ。レースウイーク中の作業やラップタイムに影響が出る可能性は認めつつ、来季の好発進のため短期的な犠牲を受け入れるとした。"
     }
   ]
 }
