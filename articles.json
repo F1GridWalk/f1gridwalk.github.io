@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T00:30:00+09:00",
+  "updatedAt": "2026-10-27T06:30:00+09:00",
   "topics": {
     "fp2-austin-2026": {
       "title": "アメリカGP FP2　ルクレールが連続最速、4チームが僅差",
@@ -48,9 +48,142 @@
     "verstappen-ford-hypercar-talk": {
       "title": "フォード幹部がフェルスタッペン起用に関心　F1外プロジェクトの観測",
       "summary": "フォードのラッシュブルック氏がオランダ紙デ・テレフラーフの取材で、フェルスタッペンを自社のF1外プロジェクトに迎えることに関心を示したと伝えられた。蘭RacingNews365はハイパーカー、仏Nextgen-AutoはムスタングGT3での起用に注目している。いずれも構想段階の話で、実現は確認されていない。"
+    },
+    "lawson-austin-p9": {
+      "title": "ローソン、アメリカGPで9位　VSC中の警告音で約6秒ロス",
+      "summary": "レーシングブルズのローソンはアメリカGPで9番手から9位に入り、ガスリーとのベスト・オブ・ザ・レスト争いで35点差に広げた。終盤のVSC中にデルタ超過の警告音が鳴り続け、違反したと思って減速し約6秒を失ったと本人が説明している。F1情報通系の掲示板まとめも、ローソンの9位入賞を話題にしている。"
+    },
+    "alonso-albon-austin-clash": {
+      "title": "アロンソとアルボンが1周目に接触　後方の質を巡り批判",
+      "summary": "アメリカGPの1周目、アロンソはターン11でオコンを抜こうとした際にアルボンと接触してマシンを損傷した。アロンソは後方集団のドライバーの質が低いと批判し、アルボン側は別の見方を示した。審査委員会は処分を科さず、損傷がなければ9〜10位もあり得たとアロンソは見ている。"
     }
   },
   "articles": [
+    {
+      "id": "nl-racingnews365-bridgestone-f1-return-bid",
+      "kind": "rumor",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "RacingNews365",
+      "cat": "うわさ",
+      "topic": "bridgestone-f1-return-bid",
+      "title": "ブリヂストン、F1タイヤ供給への復帰を狙う　蘭メディアが報道",
+      "orig": "Grote naam lonkt naar een terugkeer in F1",
+      "url": "https://racingnews365.nl/grote-naam-lonkt-naar-een-terugkeer-in-f1",
+      "published": "2026-10-26T11:40:00+01:00",
+      "summary": "RacingNews365は、ブリヂストンがF1のタイヤサプライヤー復帰に本腰を入れ、2023年の入札より強い提案を準備していると関係筋の話として報じた。同社はシンガポールとオースティンに専門家チームを送り、構想を協議したという。2025年にはマクラーレンに16年在籍した今井弘氏を呼び戻している。ピレリは2011年から独占供給しており、7月にFIAが1年延長のオプションを行使して2028年まで契約が続く。次の入札は2027年に始まる見通しで、ハンコックやミシュランの名も挙がる。"
+    },
+    {
+      "id": "nl-racingnews365-redbull-mclaren-countback",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "RacingNews365",
+      "cat": "ビジネス",
+      "teams": [
+        "redbull",
+        "mclaren"
+      ],
+      "circuit": "austin",
+      "topic": "redbull-mclaren-constructors-countback",
+      "title": "レッドブル、マクラーレンと同点でも2位の数で上回り選手権3位に　規約の「countback」",
+      "orig": "Red Bull profiteert van vergeten F1-regel in strijd met McLaren",
+      "url": "https://racingnews365.nl/red-bull-profiteert-van-vergeten-f1-regel-in-strijd-met-mclaren",
+      "published": "2026-10-26T21:00:00+01:00",
+      "summary": "アメリカGP後、コンストラクターズ選手権でレッドブルとマクラーレンはともに355点で並んだ。レース前はマクラーレン339点、レッドブル332点だった。今季の優勝は両者2勝ずつで、規約A2.1.4.cにより2位の回数で順位が決まり、4回のレッドブルが2回のマクラーレンを上回って3位となった。1つの順位は約1000万ドルの賞金差になり、空力試験の割当も3位80%、4位85%と変わるため、残り5戦の争いは重要になる。記事は、ハジャーが6位、ノリスが5位、ピアストリが7位だったと伝えている。"
+    },
+    {
+      "id": "nl-racingnews365-mercedes-worries-grow",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "RacingNews365",
+      "cat": "分析",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "mercedes-w17-development-concern",
+      "title": "メルセデス、タイトル目前も開発に不安　W17の優位は薄れる",
+      "orig": "Mercedes-zorgen nemen toe ondanks aanstaande F1-titels",
+      "url": "https://racingnews365.nl/mercedes-zorgen-nemen-toe-ondanks-aanstaande-f1-titels",
+      "published": "2026-10-26T17:15:00+01:00",
+      "summary": "RacingNews365は、メルセデスが今季圧倒的な強さを見せたものの、W17の当初の優位は薄れていると伝えた。ラッセルとアントネッリが開幕6戦を分け合ったが、その後フェラーリ、マクラーレン、レッドブルにも敗れ、マレーシアの最新アップデートも期待した効果を出せなかった。17戦を終えてメルセデスは11勝で、フェラーリに134点差をつけており、逆転はほぼ不可能とされる。元F1ドライバーのパーマー氏は、残りのシーズンは新パーツの効果の理由を理解することに充てるべきで、2027年を懸念すると語った。"
+    },
+    {
+      "id": "de-motorsportmagazin-hulkenberg-anti-stall-austin",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Magazin.com",
+      "cat": "決勝",
+      "teams": [
+        "audi"
+      ],
+      "circuit": "austin",
+      "topic": "hulkenberg-austin-anti-stall",
+      "title": "ヒュルケンベルグ、スタートで「アンチストール」作動　アウディ、入賞圏を逃す",
+      "orig": "Wohin verschwand Nico Hülkenberg? Seltsames Audi-Problem am Formel-1-Start in Austin",
+      "url": "https://www.motorsport-magazin.com/formel1/news-300915-wohin-verschwand-nico-huelkenberg-seltsames-audi-problem-am-formel-1-start-in-austin/",
+      "published": "2026-10-26T07:58:00+01:00",
+      "summary": "アウディのヒュルケンベルグは11番手からスタートしたが、ブラックアウトの約1秒後にマシンがアンチストール状態に入り、前進力を失って1周目に5つ順位を落として16番手になった。その後ウィリアムズ2台やハースなどを抜いて11位まで戻り、29周目にソフトタイヤへ交換した。本人は「アンチストールに入ったが、反応はかなり遅かった」と語り、データを調べる必要があるとした。レースディレクターのマクニッシュ氏は、問題がなければアルピーヌやレーシングブルズと入賞を争えたと述べた。ボルトレートは13位だった。"
+    },
+    {
+      "id": "de-motorsportmagazin-austin-strategy-analysis",
+      "kind": "tech",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Magazin.com",
+      "cat": "分析",
+      "teams": [
+        "ferrari",
+        "redbull",
+        "mercedes"
+      ],
+      "circuit": "austin",
+      "topic": "usgp-race-austin-2026",
+      "title": "アメリカGP分析　ハードを避けたフェルスタッペンとフェラーリの判断は誤りだったか",
+      "orig": "Formel-1-Analyse: Hat dieser Denkfehler Max Verstappen & Ferrari in Austin eliminiert?",
+      "url": "https://www.motorsport-magazin.com/formel1/news-300928-formel-1-analyse-hat-dieser-denkfehler-max-verstappen-ferrari-in-austin-eliminiert/",
+      "published": "2026-10-26T21:17:00+01:00",
+      "summary": "Motorsport-Magazinは、アントネッリが2位ルクレールに13.078秒差で勝ったアメリカGPのタイヤ戦略を検証した。路面は高温で、フェラーリとレッドブルはハードのグリップ不足を恐れてソフトからの2ストップを選んだが、実際にはハードが最良のタイヤだったと指摘する。フェルスタッペンは31周目に守りの2回目のピットを強いられ、ルクレールは38周目のハードで1周約1.5秒速く、49周目に2位へ上がった。同誌は、追加ストップの分を除けばルクレールの実力ペースの方が上で、それでもアントネッリは少なくとも6秒のリードを保てたと見ている。"
+    },
+    {
+      "id": "en-planetf1-lawson-vsc-beep-glitch",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "PlanetF1",
+      "cat": "決勝",
+      "teams": [
+        "racingbulls"
+      ],
+      "circuit": "austin",
+      "topic": "lawson-austin-p9",
+      "title": "ローソン、VSC中の警告音で「違反したと思った」　約6秒を失ったと説明",
+      "orig": "'I thought I was illegal' – Lawson reveals 'extremely distracting' beep cost him six seconds at US GP",
+      "url": "https://www.planetf1.com/news/iam-lawson-six-second-software-glitch-us-grand-prix-vsc",
+      "published": "2026-10-26T18:02:00+00:00",
+      "summary": "レーシングブルズのローソンは9番手スタートから9位でアメリカGPを終え、8秒後ろのガスリーを抑えてベスト・オブ・ザ・レスト争いのリードを35点に広げた。残り4周でボッタスのキャデラックが止まりVSCが出た際、デルタタイムを守れなかったときに鳴る警告音がずっと鳴り続けたという。実際には約6秒の余裕があったが、本人は違反していると思って必要以上に減速し、「極めて邪魔だった」と話した。他のドライバーも同じソフトの不具合を抱えた可能性があるとも述べている。"
+    },
+    {
+      "id": "de-motorsportmagazin-alonso-backmarker-quality",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Magazin.com",
+      "cat": "ドライバー",
+      "teams": [
+        "astonmartin",
+        "williams"
+      ],
+      "circuit": "austin",
+      "topic": "alonso-albon-austin-clash",
+      "title": "アロンソ、後方集団のドライバーの質は「非常に低い」　アルボンとの接触後に批判",
+      "orig": "Fernando Alonso rechnet mit Formel-1-Hinterbänklern ab: Fahrerqualität ist sehr niedrig",
+      "url": "https://www.motorsport-magazin.com/formel1/news-300916-fernando-alonso-rechnet-mit-formel-1-hinterbaenklern-ab-fahrerqualitaet-ist-sehr-niedrig/",
+      "published": "2026-10-26T09:39:00+01:00",
+      "summary": "アロンソは1周目のターン11でオコンを抜こうとした際にアルボンに接触され、アストンマーティンの左アンダーフロアが大きく壊れ、その後フロントウイングのフラップも脱落して16位に終わった。「後方3分の1のドライバーの質は非常に低い」と述べ、アルボンへの批判をにじませた。一方アルボンは原因をオコンに求め、審査委員会は処分を出していない。アロンソは損傷で1周あたり0.5秒以上を失い、無傷なら9〜10位も狙えたと見ている。ストロールは15位で、クラック代表は縁石によるダメージを挙げた。"
+    },
     {
       "id": "en-planetf1-wolff-marko-russell-claim",
       "kind": "news",
@@ -1404,124 +1537,6 @@
       "url": "https://f1grandprix.motorionline.com/newey-aston-martin-honda-austin-horner-alonso/",
       "published": "2026-10-24T12:00:00+02:00",
       "summary": "F1GrandPrix.itによると、ニューウェイはアメリカGPのチーム代表会見で、AMR26は当初とても高いレーキを前提に作られたが、ハンガリーの改良後は「中間的な領域」に戻ったと説明した。振動や強いアンダーステアは残るものの頻度は減り、技術部門は「大きな進歩」を遂げているという。ホンダのPUについては、レッドブルが2019年にホンダと組んだ時より「少し遅れている」が、優れた企業なので開発を加速できると自信を示した。FIAのADUO指標は出力しか測れず、GPSデータの方がシャシーとPUの内訳を正確に示すとも述べた。"
-    },
-    {
-      "id": "de-f1insider-audi-bortoleto-first-engine-penalty",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "F1-Insider.com",
-      "cat": "チーム",
-      "circuit": "austin",
-      "teams": [
-        "audi"
-      ],
-      "topic": "us-gp-grid-penalties",
-      "title": "アウディ、初のPU交換ペナルティ　ボルトレートは最後尾スタートへ",
-      "orig": "Audi kassiert erste Motorstrafe! Hülkenberg muss nachlegen",
-      "url": "https://f1-insider.com/formel-1-audi-motor-strafe-austin-87932/",
-      "published": "2026-10-24T09:44:00+02:00",
-      "summary": "独F1-Insider.comによると、アウディはボルトレートに4基目のバッテリーと制御電子機器を投入し、メーカーとして初のコンポーネント交換ペナルティを受ける。年間3基の上限を超えた分で計20グリッド降格となり、最後尾からの出走だ。アウディは今季、唯一ペナルティのないメーカーだった。ボルトレートはFP1で8番手、FP2で11番手と更新の効果が出ている。ヒュルケンベルグは両セッションで18番手だが、トラックリミットで最速ラップが抹消された影響が大きいと同誌は指摘する。"
-    },
-    {
-      "id": "de-motorsportmagazin-cadillac-bottas-seat",
-      "kind": "rumor",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Magazin.com",
-      "cat": "うわさ",
-      "circuit": "austin",
-      "teams": [
-        "cadillac"
-      ],
-      "topic": "cadillac-2027-drivers-rumor",
-      "title": "キャデラック、ボッタスは席を空けるのか　独誌が2027年の去就を分析",
-      "orig": "Cadillac hält den Formel-1-Fahrermarkt spannend: Muss Valtteri Bottas sein Cockpit räumen?",
-      "url": "https://www.motorsport-magazin.com/formel1/news-300874-cadillac-haelt-den-formel-1-fahrermarkt-spannend-muss-valtteri-bottas-sein-cockpit-raeumen/",
-      "published": "2026-10-24T08:00:00+02:00",
-      "summary": "独Motorsport-Magazin.comは、キャデラックの2027年の布陣が不透明だと伝えた。オースティンの会見でブトコウスキー代表は、ドライバー契約についてコメントするのに最もふさわしくない場所だと述べ、発表は正式な場で行うとした。8月にはトウリスCEOが両ドライバーへの満足を語っていたが、その後ボッタスはバクーとシンガポールでペレスより1〜2秒遅い場面が続いた。オコンや角田が空いている候補として挙げられ、ペレスの席は安泰と見る。ボッタスの去就は報道上の見方にとどまる。"
-    },
-    {
-      "id": "ja-f1jouhou2-fia-v8-talks-2030",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1情報通",
-      "cat": "まとめ",
-      "teams": [],
-      "topic": "fia-v8-return-2030",
-      "title": "FIA会長「V8回帰の交渉は継続中」、2030年が現実的な目標　5ch反応まとめ",
-      "orig": "FIA会長「F1がV8エンジンに回帰するための交渉はまだ続いている」2030年が現実的な目標に",
-      "url": "https://f1jouhou2.com/blog-entry-31775.html",
-      "published": "2026-10-24T12:00:00+09:00",
-      "summary": "F1情報通は、FIAのベン・スレイエム会長がF1のV8エンジン回帰に向けた交渉は続いており、2030年が現実的な目標だと語ったとする投稿を取り上げた。仏NextgenAutoを引用したSNS投稿に基づく話題で、導入の詳細や合意内容は示されていない。5chでは意見が割れ、ターボなしの自然吸気V8なら歓迎という声や、V10を望む声があった。ハイブリッドの環境面での意義を巡る議論もあり、懐古路線の別シリーズを望む意見も出た。元記事の全文ではなく抜粋に基づく話題である。"
-    },
-    {
-      "id": "ja-f1are-horner-promoted-too-early",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "horner-young-drivers-promoted-early",
-      "title": "元レッドブル代表ホーナー、若手の昇格が早過ぎたと振り返る　5ch反応まとめ",
-      "orig": "元レッドブル代表、過去数年間の若手ドライバーのマネジメントを後悔「昇格が早過ぎた」",
-      "url": "https://f1are.com/blog-entry-4014.html",
-      "published": "2026-10-24T12:00:00+09:00",
-      "summary": "F1のアレは、モータースポーツ・ドットコムの報道を元に、ホーナー元レッドブル代表が自伝で若手の昇格が早過ぎたと振り返ったという話題を取り上げた。ガスリー、アルボン、ローソンを2台目のシートに上げたことを挙げ、ガスリーが周回遅れにされたことやローソンの苦戦に触れたとされる。5chでは、リカルドの突然の離脱が原因だという見方や、フェルスタッペン好みのセッティングが難しさの根にあるという見方が出た。昇格ではなく降格が早すぎたのだという意見もあった。元記事の全文ではなく抜粋に基づく話題である。"
-    },
-    {
-      "id": "ja-f1are-sainz-gulf-races-comment",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "teams": [
-        "williams"
-      ],
-      "topic": "gulf-races-cancel-risk",
-      "title": "サインツ「カタールとアブダビの開催決定は納得しにくい」　ファンの受け止めは割れる",
-      "orig": "ウィリアムズのサインツ「カタール＆アブダビ開催の決定を納得するのは難しい」「でもやると言われればドライバーは従うしかない」",
-      "url": "https://f1are.com/blog-entry-4013.html",
-      "published": "2026-10-24T12:00:00+09:00",
-      "summary": "ファンのまとめサイト「F1のアレ」が、アメリカGP木曜の会見でのサインツの発言を取り上げた。FIA会長が最終盤のカタールとアブダビの開催を確認したことに、サインツはGPDAの立場ではなく個人として、現在の中東情勢では納得するのが難しいと述べた。米国の選挙など多くの状況が変わり得るため、いま断定するのは早いという考えで、開催が決まれば「ドライバーは従うしかない」とも話した。同じ会見でピアストリはFIAとF1への信頼を示し、ハジャーは分からないと答えたという。掲示板の反応は、サインツの発言を妥当とみる声と、FIAの判断を懸念する声に分かれた。"
-    },
-    {
-      "id": "de-motorsportmagazin-austin-track-limits-181-laps",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Magazin.com",
-      "cat": "サーキット",
-      "circuit": "austin",
-      "topic": "austin-track-limits-2026",
-      "title": "オースティン、金曜だけで181周のタイム抹消　トラックリミット違反が続出",
-      "orig": "181 Runden weg! Formel 1 erlebt Track-Limit-Fiasko in Austin - die FIA reagiert",
-      "url": "https://www.motorsport-magazin.com/formel1/news-300879-181-runden-weg-formel-1-erlebt-track-limit-fiasko-in-austin-die-fia-reagiert/",
-      "published": "2026-10-24T03:35:00+02:00",
-      "summary": "独Motorsport-Magazin.comによると、アメリカGP金曜のFP1とFP2で競技会は計207回介入し、181周のタイムが抹消された。最多違反はウィリアムズのアルボンで20回、ノリスが18回、ハジャーとルクレールが各15回だった。場所別では12コーナーが70回で最も多く、20コーナーでは違反が次の周も無効にするため70周分が消えた。ルクレールは東寄りの風でマシンが外へ押されると説明している。同誌はFIAが縁の白線の幅を広げる対応を検討していると伝えた。"
-    },
-    {
-      "id": "en-therace-williams-strangest-day",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "チーム",
-      "circuit": "austin",
-      "teams": [
-        "williams"
-      ],
-      "topic": "williams-cota-friday",
-      "title": "ウィリアムズ、オースティン初日は2027年を優先　最速車でもキャデラックの後ろ",
-      "orig": "What was behind one F1 team's strangest day of 2026",
-      "url": "https://www.the-race.com/formula-1/what-was-behind-williams-f1-team-strangest-day-2026/",
-      "published": "2026-10-24T02:00:00+01:00",
-      "summary": "ウィリアムズは金曜、最速の車がキャデラックの後ろでフリー走行を終え、アルボンはFP1とFP2の両方で最下位だった。FP1は2027年に向けた空力テストを優先し、ハードで空力計測を行ってから短いミディアム走行をした。チーフ・トラックサイド・エンジニアのポール・ウィリアムズは「今週末の性能と長期的な学習のバランスを取った」と説明した。サインツは「このサーキットでは今季のマシンに多くの弱点がある」と述べ、FP2ではリアに自信が持てず、アルボンもブレーキングに全く自信がないと訴えた。"
     }
   ]
 }
