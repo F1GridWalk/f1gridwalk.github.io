@@ -24,13 +24,14 @@ SITE = 'https://f1gridwalk.github.io'
 JST = timezone(timedelta(hours=9))
 OG_IMAGE = SITE + '/og-image.png?v=2'
 
-KIND = {'primary': '一次情報', 'news': '報道', 'tech': '技術', 'rumor': '噂', 'fan': 'ファン投稿'}
+KIND = {'primary': '一次情報', 'news': '報道', 'tech': '技術', 'rumor': '噂', 'fan': 'ファン投稿', 'voice': 'ファンの声'}
 KIND_TIP = {
     'primary': 'F1・FIA・チームなど当事者の公式発表',
     'news': '報道機関の記事',
     'tech': '技術の解説・分析記事',
     'rumor': '報道で出たうわさ・未確認の話',
     'fan': 'ファン掲示板で話題の投稿（未確認を含む）',
+    'voice': '日本と海外のファンの反応を、F1 Grid Walk がまとめたもの（ファンの意見です）',
 }
 PRIMARY_SRC = re.compile(r'^(Formula1\.com|F1公式|FIA)(\s|$)', re.I)
 LANG = {'en': '英語', 'it': 'イタリア語', 'de': 'ドイツ語', 'es': 'スペイン語', 'fr': 'フランス語',
@@ -38,7 +39,7 @@ LANG = {'en': '英語', 'it': 'イタリア語', 'de': 'ドイツ語', 'es': '�
         'sv': 'スウェーデン語', 'da': 'デンマーク語', 'hu': 'ハンガリー語', 'zh': '中国語',
         'ko': '韓国語', 'ja': '日本語'}
 KEEP = ('id', 'kind', 'primary', 'lang', 'region', 'source', 'provider', 'cat', 'circuit', 'teams', 'topic',
-        'title', 'summary', 'orig', 'url', 'published')
+        'title', 'summary', 'orig', 'url', 'published', 'voices')
 ID_OK = re.compile(r'^[a-z0-9][a-z0-9-]{0,120}$')
 
 e = lambda s: html.escape(str(s if s is not None else ''), quote=True)
@@ -144,9 +145,9 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .srcbadge{display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--c,var(--ink-2))}
 .srcbadge::before{content:"";width:15px;height:10px;border-radius:2px;flex-shrink:0;background:var(--flag,var(--c,var(--moss)));box-shadow:0 0 0 1px rgba(0,0,0,.14)}
 .kind{display:inline-flex;align-items:center;padding:0 8px;border-radius:5px;font-size:11.5px;font-weight:700;letter-spacing:.06em;line-height:20px;white-space:nowrap;--k:var(--ink);border:1px solid var(--k);color:var(--k);background:color-mix(in srgb,var(--k) 9%,transparent)}
-.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}
-.kind.rumor,.kind.fan{border-style:dashed}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}}
+.kind.primary{--k:#2E6B3A}.kind.news{--k:#4B5261}.kind.tech{--k:#1F5E8A}.kind.rumor{--k:#B0532C}.kind.fan{--k:#7A4A93}.kind.voice{--k:#2F7A72}
+.kind.rumor,.kind.fan,.kind.voice{border-style:dashed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kind.primary{--k:#7FC48C}:root:not([data-theme="light"]) .kind.news{--k:#B6BCC8}:root:not([data-theme="light"]) .kind.tech{--k:#7DB6E0}:root:not([data-theme="light"]) .kind.rumor{--k:#E8946C}:root:not([data-theme="light"]) .kind.fan{--k:#C39AD9}:root:not([data-theme="light"]) .kind.voice{--k:#7CC9BF}}
 h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-weight:700;letter-spacing:.01em}
 .orig{font-size:13.5px;color:var(--muted);margin:0 0 20px}
 .summary{font-size:17px;line-height:1.95;margin:0 0 22px}
@@ -154,6 +155,7 @@ h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-wei
 .cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 8px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
 .cta:hover{color:var(--on-ink);opacity:.9}
 .cta small{font-weight:500;opacity:.8;font-size:12.5px;white-space:nowrap}
+.voices{margin:18px 0}.voices h2{font-size:15px;margin:0 0 6px;padding-left:8px;border-left:3px solid #2F7A72}.voices ul{margin:0;padding-left:1.2em}.voices li{margin:6px 0;line-height:1.7}.voices li a{font-size:12px;color:var(--muted);white-space:nowrap}
 .credit{font-size:12.5px;color:var(--muted);margin:12px 0 0;text-align:center}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
 .tags span,.tags a{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
@@ -352,7 +354,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         lead = next((x for x in items if x.get('featured')), items[0])
         nt = sorted([x for x in items if x.get('kind', 'news') in ('news', 'tech')], key=when)
         pick = next((x for x in items if x.get('featured')), nt[0] if nt else lead)
-        media = [x for x in items if x.get('kind') != 'fan']
+        media = [x for x in items if x.get('kind') not in ('fan', 'voice')]
         n_media = len({x['source'] for x in media}) or n
         hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n_media}媒体が報道</span></div>')
         hero.append('<div class="tw-sec" id="tw-facts">'
@@ -594,7 +596,7 @@ def lens_issue_blocks(L, slug, flag_map, region_of):
 
 def site_entrance(arch, slug):
     """Entrance to the rest of the site right after a column's body (owner's OK, 1 Oct 2026)."""
-    xs = sorted((a for a in arch['articles'].values() if a.get('kind') != 'fan'),
+    xs = sorted((a for a in arch['articles'].values() if a.get('kind') not in ('fan', 'voice')),
                 key=lambda a: a.get('published', ''), reverse=True)[:3]
     li = ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/lens/{e(slug)}/entrance-news">{e(a["title"])}</a>'
                  f'<small>{e(a["source"])}</small></li>' for a in xs)
@@ -725,7 +727,7 @@ def build_lenses(arch, flag_map):
         url = f'{SITE}/lens/{slug}/'
         # the source desk: every article on the topic we already carry, plus the extra sources used here
         desk, seen = [], set()
-        topic_arts = sorted([a for a in arch['articles'].values() if a.get('topic') in (L.get('topics') or [L.get('topic')]) and a.get('kind') != 'fan'], key=when, reverse=True)
+        topic_arts = sorted([a for a in arch['articles'].values() if a.get('topic') in (L.get('topics') or [L.get('topic')]) and a.get('kind') not in ('fan', 'voice')], key=when, reverse=True)
         for a in topic_arts:
             desk.append({'source': a['source'], 'region': a.get('region'), 'lang': a.get('lang'), 'title': a['title'], 'url': a['url'], 'page': f'/news/{a["id"]}/'})
         for s in L.get('extraSources', []) + [it for it in L.get('unreported', {}).get('items', [])]:
@@ -1212,7 +1214,7 @@ def build_deeps(arch, flag_map):
         # 「この話の続きを読む」 straight after the body (review of 12 Oct 2026); then same GP and latest at the end.
         # Links out, by role (review of 12 Oct 2026): ① news that answers this issue's questions (max 2, with why),
         # ② other news from the same Grand Prix, ③ the newest news. ① is shown only when there is a real link.
-        allnews = [a for a in sorted(arch['articles'].values(), key=when, reverse=True) if a.get('kind') != 'fan']
+        allnews = [a for a in sorted(arch['articles'].values(), key=when, reverse=True) if a.get('kind') not in ('fan', 'voice')]
         shown = set()
         direct = []
         for r in (D.get('related') or [])[:2]:
@@ -1927,7 +1929,7 @@ def _og_font(system, local):
 OG_SERIF = _og_font('/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc', 'NotoSerifCJK-Black-JP-sub.otf')
 OG_SANS = _og_font('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc', 'NotoSansCJK-Bold-JP-sub.otf')
 OG_VER = 'og1'
-OG_KC = {'primary': '#2E6B3A', 'news': '#4B5261', 'tech': '#1F5E8A', 'rumor': '#B0532C', 'fan': '#7A4A93'}
+OG_KC = {'primary': '#2E6B3A', 'news': '#4B5261', 'tech': '#1F5E8A', 'rumor': '#B0532C', 'fan': '#7A4A93', 'voice': '#2F7A72'}
 OG_NOSTART = set('、。，．・：；？！」』）】〕〉》ー…‥ァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎ々)]}%,.!?')
 OG_NOEND = set('「『（【〔〈《([{')
 _OG = {}
@@ -3485,15 +3487,27 @@ def main():
                 f'<h1>{e(a["title"])}</h1>']
         if a.get('orig') and a['orig'] != a['title']:
             body.append(f'<p class="orig">原題：{e(a["orig"])}</p>')
-        if k in ('rumor', 'fan'):
+        if k in ('rumor', 'fan', 'voice'):
             body.append('<p class="warn">' + ('報道で出たうわさで、公式には確認されていない話です。' if k == 'rumor'
-                        else 'ファン掲示板の話題をまとめた投稿です。未確認の話を含みます。') + '</p>')
+                        else ('レースやニュースへのファンの反応をまとめたものです。ファンの意見で、事実として確かめた話ではありません。' if k == 'voice' else 'ファン掲示板の話題をまとめた投稿です。未確認の話を含みます。')) + '</p>')
         nused = set()
         body.append(f'<p class="summary">{link_terms(e(a.get("summary", "")), nused)}</p>')
-        body.append(f'<a class="cta" href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}" '
-                    f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む\u00a0↗'
-                    + (f' <small>（{e(lang)}）</small>' if a.get('lang') != 'ja' else '') + '</a>')
-        body.append(f'<p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は {e(a["source"])} に帰属します。</p>')
+        if a.get('voices'):
+            # our own digest of fan reactions (owner, 26 Oct 2026): paraphrased, no quotes, no user names
+            vs = a['voices']
+            for side in ('日本', '海外'):
+                xs = [v for v in vs if v.get('side') == side]
+                if not xs:
+                    continue
+                body.append(f'<section class="voices"><h2>{side}のファンの声</h2><ul>' + ''.join(
+                    f'<li>{e(v["text"])}' + (f' <a href="{e(v["url"])}" target="_blank" rel="noopener" data-track="click/voice/{e(a["id"])}">{e(v.get("src", "出どころ"))}\u00a0↗</a>' if v.get('url') else '') + '</li>'
+                    for v in xs) + '</ul></section>')
+            body.append('<p class="credit">ファンの声は、F1 Grid Walk がニュースのコメント欄や個人のブログ、ファンの反応を伝える記事を読み、言い換えて短くまとめたものです。書き込みをそのまま載せたり、投稿した人の名前を出したりはしていません。</p>')
+        else:
+            body.append(f'<a class="cta" href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}" '
+                        f'data-title="{e(a["source"] + " | " + a["title"])}">{e(a["source"])}で元の記事を読む\u00a0↗'
+                        + (f' <small>（{e(lang)}）</small>' if a.get('lang') != 'ja' else '') + '</a>')
+            body.append(f'<p class="credit">要約は F1 Grid Walk が独自にまとめたものです。記事の著作権は {e(a["source"])} に帰属します。</p>')
         kt, kp = related_entries(a, allarts)
         if kt or kp:
             kw = '<aside class="kw" aria-label="この記事のキーワード"><p class="kw-h">この記事のキーワード<small>F1 Grid Walk ルールブックより</small></p>'
