@@ -3177,7 +3177,7 @@ def top_rail_slot():
     blk = ''
     if cards:
         blk = ('<style>.top-rail{display:none}'
-               '@media all{.top-rail{display:block;margin:6px 0 12px}.top-rail .rl{margin:4px 0 6px;font-weight:800;font-size:13px}'
+               '@media all{.top-rail{display:block;margin:4px 0 6px;order:-5}.top-rail .rl{margin:4px 0 6px;font-weight:800;font-size:13px}'
                '.hero .hero-in,.hero .duo{display:none !important}.hero.dbox{background:none !important;padding:0 2px !important;margin-bottom:8px !important}'
                '.rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 0 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}'
                '.rail::-webkit-scrollbar{display:none}'
