@@ -1837,15 +1837,19 @@ def build_rules():
             drv = [d for d in PEOPLE if d.get('role') == 'ドライバー' and p in engineers_of(d)]
             if drv:
                 b += ('<p class="rb-mate">担当ドライバー：' + '、'.join(f'<a href="/deep/rules/person-{e(d["id"])}/" data-track="click/person/{e(p["id"])}/driver">{e(d["name"])} →</a>' for d in drv) + '</p>')
+        is_drv = 'ドライバー' in p.get('role', '') and 'エンジニア' not in p.get('role', '')
+        if is_drv:
+            b += driver_fan_block(p)  # fan page for drivers: news first, then the profile (owner, 27 Oct 2026)
         pu = {tid}  # never link the person's own name on their own page (column desk, 24 Oct 2026)
         if p.get('body'):  # longer text, e.g. 「## 経歴」 (column desk request, owner's OK, 24 Oct 2026)
-            b += '<div class="rbp-body" style="margin-top:22px">' + ''.join(
+            b += ('<div class="rb-h">プロフィール・経歴</div>' if is_drv else '') + '<div class="rbp-body" style="margin-top:22px">' + ''.join(
                 (f'<h2 class="rbp-sh">{e(x[3:].strip())}</h2>' if x.startswith('## ') else f'<p>{body_links(x, pu)}</p>') for x in p['body']) + '</div>'
-        b += f'<!--reads:{tid}-->'
+        if not is_drv:
+            b += f'<!--reads:{tid}-->'
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
             b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
-        pn_ = person_news(p, ALLARTS)
+        pn_ = [] if is_drv else person_news(p, ALLARTS)
         if pn_:
             b += (f'<div class="rb-h">{e(p["name"])}が出てくる最新ニュース</div><ul class="rb-ex">'
                   + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/person/{e(p["id"])}/news">{e(a["title"])}</a></li>' for a in pn_) + '</ul>')
@@ -3418,6 +3422,63 @@ def build_news_lists(allarts, flag_of):
 
 PERSON_STOP = {'ジョージ', 'マックス', 'ニコ', 'キミ', 'キー', 'Key', 'ブラウン', 'Brown', 'アレックス', 'ルイス', 'シャルル', 'ランド', 'オスカー',
                'カルロス', 'フェルナンド', 'ランス', 'ピエール', 'エステバン', 'オリバー', 'リアム', 'アイザック', 'ガブリエル', 'アンドレア', 'トト', 'セラ', 'ボノ'}
+
+
+FAN_CSS = '''.fan-stat{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}.fan-stat div{flex:1 1 140px;border:1px solid var(--line);border-radius:12px;padding:8px 12px;background:var(--surface)}.fan-stat small{display:block;font-size:11px;color:var(--muted);font-weight:700}.fan-stat b{font-size:20px}.fan-list{list-style:none;margin:0;padding:0}.fan-list li{padding:7px 0;border-top:1px solid var(--line);line-height:1.55}.fan-list li:first-child{border-top:0}.fan-list a{font-weight:700;text-decoration:none;color:var(--ink)}.fan-list small{display:block;font-size:11.5px;color:var(--muted)}.fan-list .fk{display:inline-block;font-size:10.5px;font-weight:800;border:1px dashed currentColor;border-radius:4px;padding:0 5px;margin-right:6px;color:#B0532C}.fan-note{font-size:12px !important;line-height:1.6 !important;color:var(--muted);margin:6px 0 0 !important}.fan-sns{display:flex;flex-wrap:wrap;gap:8px}.fan-sns a{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;background:var(--surface)}'''
+
+
+def driver_fan_block(p):
+    """A driver's person page as a fan page: season, recent news, rumours, columns/STORY, fan voices, official accounts."""
+    out = '<style>' + FAN_CSS + '</style>'
+    se = load('season.json', {}) or {}
+    names = set([p['name'], p.get('en', '')] + p.get('aliases', []))
+    row = next((d for d in se.get('drivers', []) if d.get('name') in names), None)
+    wk = se.get('weekend') or {}
+    race = next((x for x in wk.get('sessions', []) if x.get('name') == '決勝'), None)
+    cells = []
+    if row:
+        sa = se.get('standingsAfter') or {}
+        cells.append(f'<div><small>ランキング（{e(sa.get("gp", ""))}終了時点）</small><b>{row["pos"]}位</b>・{row["pts"]}点</div>')
+    if race:
+        try:
+            cells.append(f'<div><small>次のレース</small><b style="font-size:16px">{e(wk.get("gp", ""))}</b><br>決勝 {e(jst_text(datetime.fromisoformat(race["start"].replace("Z", "+00:00"))))}（日本時間）</div>')
+        except Exception:
+            pass
+    if cells:
+        out += '<div class="rb-h">今季の成績</div><div class="fan-stat">' + ''.join(cells) + '</div>'
+    hits = person_news(p, ALLARTS, n=60)
+    news = [a for a in hits if a.get('kind', 'news') in ('news', 'tech') and a.get('cat') != '素顔'][:8]
+    gos = [a for a in hits if a.get('kind') == 'rumor' or a.get('cat') == '素顔'][:6]
+    def li(a, tag=''):
+        d = when(a).astimezone(JST)
+        return (f'<li>{tag}<a href="/news/{e(a["id"])}/" data-track="click/person/{e(p["id"])}/fan">{e(a["title"])}</a>'
+                f'<small>{e(a["source"])} · {d.month}/{d.day}</small></li>')
+    if news:
+        out += f'<div class="rb-h">{e(p["name"])}の近況</div><ul class="fan-list">' + ''.join(li(a) for a in news) + '</ul>'
+    if gos:
+        out += ('<div class="rb-h">うわさ・ゴシップ</div><ul class="fan-list">' + ''.join(li(a, '<span class="fk">' + ('素顔' if a.get('cat') == '素顔' else '噂') + '</span>') for a in gos) + '</ul>'
+                '<p class="fan-note">報道で出たうわさで、公式には確認されていない話を含みます。どの媒体の報道かは、それぞれのページに書いています。</p>')
+    nm_ok = [nm for nm in _kw_names(list(names)) if nm not in PERSON_STOP and nm not in getattr(person_news, 'shared', set()) and (len(nm) >= 3 or re.search(r'[一-龯]', nm))]
+    cols = [x for x in ALL_COLS if any(_kw_hit(nm, x['title'] + ' ' + x.get('txt', '')) for nm in nm_ok)][:8]
+    sto = [H for H in hubs_newest() if any(_kw_hit(nm, ' '.join([H.get('title', ''), H.get('dek', ''), (H.get('story') or {}).get('hook', '')])) for nm in nm_ok)][:3]
+    if cols or sto:
+        out += ('<div class="rb-h">コラム・STORY</div><ul class="fan-list">'
+                + ''.join(f'<li><span class="fk" style="color:#1F2420">STORY</span><a href="/topics/{e(H["slug"])}/" data-track="click/person/{e(p["id"])}/story">{e(H["title"])}</a></li>' for H in sto)
+                + ''.join(f'<li><span class="fk" style="color:#2F6B66">{e(COL_TAG.get(x["kind"], "コラム"))}</span><a href="{e(x["url"])}" data-track="click/person/{e(p["id"])}/col">{e(x["title"])}</a></li>' for x in cols) + '</ul>')
+    vo = []
+    for a in ALLARTS:
+        if a.get('kind') == 'voice':
+            t = ' '.join([a.get('title', ''), a.get('summary', '')] + [v.get('text', '') for v in a.get('voices') or []])
+            if any(_kw_hit(nm, t) for nm in nm_ok):
+                vo.append(a)
+    if vo:
+        out += '<div class="rb-h">ファンの声</div><ul class="fan-list">' + ''.join(li(a) for a in vo[:3]) + '</ul>'
+    sns = p.get('sns') or []
+    if sns:
+        out += ('<div class="rb-h">公式アカウント</div><div class="fan-sns">'
+                + ''.join(f'<a href="{e(x["url"])}" target="_blank" rel="noopener" data-track="click/person/{e(p["id"])}/sns">{e(x["name"])} ↗</a>' for x in sns)
+                + '</div><p class="fan-note">本人の投稿がニュースになったときは、「近況」に要約を載せます。</p>')
+    return out
 
 
 def person_news(p, allarts, n=8):
