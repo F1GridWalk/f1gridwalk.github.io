@@ -280,6 +280,17 @@ header.top .hd-finder input{min-height:38px}
 #col-hits small{display:inline-block;margin-right:6px;font-size:10px;font-weight:800;color:var(--muted);letter-spacing:.04em}
 #col-hits .ch-none{margin:0;font-size:12.5px;color:var(--muted)}
 </style>
+<style id="rail-mouse">
+/* mouse users (Windows desktops): arrows at every PC width, a thin scrollbar, wheel scrolls the row (owner, 27 Oct 2026) */
+@media (min-width:521px) and (hover:hover) and (pointer:fine){
+  html body .top-rail{padding:0 22px}
+  html body .rarr{display:flex !important;align-items:center;justify-content:center;position:absolute;top:58%;transform:translateY(-50%);width:36px;height:36px;border-radius:18px;border:1px solid var(--line);background:var(--card,#fff);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.18);z-index:2}
+  html body .rprev{left:-12px !important}html body .rnext{right:-12px !important}
+  html body .rarr[disabled]{opacity:.25;cursor:default}
+  html body .rail{scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding-bottom:8px}
+  html body .rail::-webkit-scrollbar{display:block;height:6px}html body .rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -3415,5 +3426,9 @@ function run(){var v=q.value.trim().toLowerCase();if(!v){box.hidden=true;box.inn
 box.hidden=false;box.innerHTML='<h3>コラム・STORY（'+hit.length+'本）</h3>'+(hit.length?'<ul>'+hit.slice(0,6).map(function(x){return '<li><small>'+esc(x.g)+'</small><a href="'+esc(x.u)+'" data-track="click/top/search/col">'+esc(x.t)+'</a></li>'}).join('')+'</ul>':'<p class="ch-none">見つかりませんでした</p>');}
 var tm;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,150)});
 q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();q.blur();var n=document.getElementById('news');if(n)n.scrollIntoView({behavior:'smooth'});}});})();</script>
+<script>(function(){var r=document.getElementById('rail');if(!r)return;var P=r.parentNode,pv=P.querySelector('.rprev'),nx=P.querySelector('.rnext');
+function st(){var m=r.scrollWidth-r.clientWidth-2;if(pv)pv.disabled=r.scrollLeft<=2;if(nx)nx.disabled=r.scrollLeft>=m;}
+r.addEventListener('scroll',st,{passive:true});st();
+r.addEventListener('wheel',function(e){if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;var m=r.scrollWidth-r.clientWidth;if(m<=0)return;var d=e.deltaY;if((d>0&&r.scrollLeft>=m-1)||(d<0&&r.scrollLeft<=0))return;e.preventDefault();r.scrollLeft+=d;},{passive:false});})();</script>
 </body>
 </html>
