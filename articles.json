@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T18:20:00+09:00",
+ "updatedAt": "2026-10-28T00:40:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -56,9 +56,123 @@
   "antonelli-title-mexico": {
    "title": "アントネッリ、メキシコGPで王座決定の可能性",
    "summary": "アメリカGPを制したアントネッリは365点で、2位ラッセルに123点差をつけている。Motorsport-Totalの整理では、メキシコGPで9位以内なら他車の結果にかかわらず戴冠となる。10位や11位以下でも、ラッセルらが勝たない限り王座は動かない。本人は王座が近いことを認めつつ、メキシコでも楽しんで臨み、もう1勝を狙うと語った。"
+  },
+  "alonso-albon-lap1-contact": {
+   "title": "アロンソとアルボンの1周目接触、アストンマーティンのアロンソは大きな損傷",
+   "summary": "アメリカGPの1周目、アロンソ（アストンマーティン）とアルボン（ウィリアムズ）が接触し、アロンソのマシンはフロアなどを損傷して16位に終わった。アロンソは1周0.5秒以上のペース低下を見積もり、後方のドライバーの質にも苦言を呈した。スチュワードは調査しなかった。"
+  },
+  "mercedes-w17-development-concern": {
+   "title": "メルセデスW17の改良、期待した性能には届かず",
+   "summary": "メルセデスのW17は大規模改良後もウォルフ代表が望む水準には届いていない。アントネッリはアメリカGPで優勝した一方、ラッセルは54秒差の8位と苦戦し、改良でマシンの作動領域が狭まった可能性が指摘される。チームはメキシコ前に原因の理解を優先し、知見を2027年車に生かす方針だ。"
   }
  },
  "articles": [
+  {
+   "id": "en-crashnet-buxton-herta-cadillac-rumour",
+   "kind": "rumor",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "うわさ",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "cadillac-2027-drivers-rumor",
+   "title": "バクストン氏「ハータがキャデラックの2027年シート候補」　ポッドキャストで言及",
+   "summary": "元F1TVの司会者ウィル・バクストン氏がポッドキャストで、コルトン・ハータがキャデラックの2027年フルタイム席の候補に挙がっていると明かした。ハータはアメリカGPのFP1で走り、スーパーライセンスに必要な40ポイントへ届かせるため追加のFP1走行が用意される可能性があるという。ブトコウスキー代表は契約について「時が来れば」チームが発表するとだけ述べた。角田裕毅の名も取り沙汰される一方、オコンの起用は考えにくいとされる。いずれも同氏の伝聞で、チームの確認はない。",
+   "orig": "Will Buxton shares F1 rumour amid ongoing Cadillac 2027 driver mystery",
+   "url": "https://www.crash.net/f1/news/1108552/1/will-buxton-shares-f1-rumour-amid-cadillac-2027-driver-mystery",
+   "published": "2026-10-27T13:30:00+00:00"
+  },
+  {
+   "id": "en-crashnet-alonso-us-gp-floor-damage",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "決勝",
+   "circuit": "austin",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-albon-lap1-contact",
+   "title": "アロンソのアメリカGP、フロア損傷の大きさが判明　ペースは「1周0.5秒以上」落ちた",
+   "summary": "アストンマーティンのアロンソは、アメリカGPの1周目にアルボン（ウィリアムズ）と接触し、フロアの大部分やバージボードを失った。12番手からスタートして順位を落とし、最終的に16位でレースを終えている。本人はペース低下を1周あたり「0.5秒以上」と見積もり、新しいフロントウイングに交換して走り続けたが、終盤15周は左コーナーで曲がりにくかったという。アストンマーティンのアンバサダー、デ・ラ・ロサは、損傷を考えれば速さは驚きだと述べた。スチュワードはこの接触を調査しなかった。",
+   "orig": "True extent of damage that ruined Fernando Alonso's US GP revealed",
+   "url": "https://www.crash.net/f1/news/1108549/1/true-extent-damage-ruined-fernando-alonsos-us-gp-revealed",
+   "published": "2026-10-27T12:30:00+00:00"
+  },
+  {
+   "id": "en-planetf1-mekies-red-bull-start-problems",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "austin",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-start-problems-2027",
+   "title": "レッドブルのスタート不振、解決は2027年車から　メキース代表「大幅な設計変更が必要」",
+   "summary": "レッドブルのメキース代表は、今季悩まされてきたスタートの問題には「大幅な設計とハードウェアの変更」が必要で、実現は2027年のRB23になると語った。原因はエンジン、ギアボックス、クラッチなど空力を除くほぼ全部門にまたがるという。アメリカGPではフェルスタッペンがルクレールに先行され、ハジャーも1コーナーで2台のフェラーリに抜かれた。ハジャーはクラッチが高温に弱いと指摘している。同じユニットを使うレーシングブルズには同様の問題がなく、シーズン終盤までに差は縮まる見込みだが、基準にはなれないとした。",
+   "orig": "Laurent Mekies admits Red Bull's start problems need major changes for 2027",
+   "url": "https://www.planetf1.com/news/red-bull-start-problems-laurent-mekies-2027-changes",
+   "published": "2026-10-27T12:13:00+00:00"
+  },
+  {
+   "id": "en-planetf1-mercedes-upgrade-puzzle-wolff",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "austin",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "mercedes-w17-development-concern",
+   "title": "メルセデスW17の改良、期待の性能には届かず　ウォルフ「作動の幅を広げる段階」",
+   "summary": "メルセデスのウォルフ代表は、大規模改良が期待したほどの性能をまだ生んでいないとしつつ、正しい方向への一歩だと位置づけた。アメリカGPではアントネッリがポールから優勝した一方、ラッセルは50秒以上の差で終え、改良でマシンの作動領域が狭まった可能性を口にしている。ウォルフは「車は機能している。次は作動の幅を広げることだ」と述べた。メキシコ前の最優先課題は、オースティンの週末にマシンをどう立て直したかを理解することだという。得られた知見は2027年車の開発方針にも直結する。",
+   "orig": "Mercedes face upgrade puzzle as Toto Wolff reveals what is holding the W17 back",
+   "url": "https://www.planetf1.com/news/mercedes-upgrade-puzzle-toto-wolff-w17-potential",
+   "published": "2026-10-27T13:00:00+00:00"
+  },
+  {
+   "id": "en-crashnet-wolff-hits-back-marko-russell",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "ドライバー",
+   "circuit": "austin",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "russell-austin-struggle",
+   "title": "ウォルフ、マルコ氏の「ラッセルはもう1番手ではない」に反論　問題は車と主張",
+   "summary": "レッドブル元アドバイザーのマルコ氏は、ラッセルはもうメルセデスのエースではないと述べ、アントネッリが今季のタイトルを獲るとの見方を示した。アントネッリはアメリカGPの優勝でタイトルまで2ポイントとなり、決着はメキシコシティで付く公算が大きい。これに対しウォルフ代表は、マルコ氏は誤っていると反論し、ラッセルには「すべての能力がある」と述べた。問題はドライバーでなく車にあり、競争力のある車があればラッセルは王者になれるとも語り、F2やF3での勝利、カート時代のタイトルを挙げて擁護した。",
+   "orig": "Toto Wolff's blunt response to Helmut Marko's claim George Russell is 'no longer number one'",
+   "url": "https://www.crash.net/f1/news/1108555/1/toto-wolffs-blunt-response-helmut-markos-claim-george-russell-no-longer-number",
+   "published": "2026-10-27T15:20:00+00:00"
+  },
+  {
+   "id": "en-planetf1-sainz-premier-league-calendar",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "カルチャー",
+   "teams": [
+    "williams"
+   ],
+   "topic": "f1-calendar-saturation-2026",
+   "title": "サインツ、過密日程を「チャンピオンズリーグでなくプレミアリーグ」に例える",
+   "summary": "ウィリアムズのサインツ（GPDA理事）は、シーズン終盤の過密日程がファンの関心を薄めないか考えるべきだと語った。今季は11週間で9戦を戦い、オースティンから2度目のトリプルヘッダーが始まった。サインツは放送が増えること自体は歓迎しつつ、「チャンピオンズリーグでなくプレミアリーグのようだ」と例えた。最も負担が大きいのは自宅にほとんど戻れないチームスタッフだとし、3連続のトリプルヘッダーは「体にも心にもきつい」と述べた。コンコルド協定の上限は24戦で、現状が働き手の限界との見方も紹介された。",
+   "orig": "Sainz enters F1 2026 debate with 'Premier League rather than Champions League' theory",
+   "url": "https://www.planetf1.com/news/carlos-sainz-f1-2026-triple-headers",
+   "published": "2026-10-27T10:38:00+00:00"
+  },
   {
    "id": "en-racingnews365-norris-mclaren-nowhere",
    "kind": "news",
@@ -1417,120 +1531,6 @@
    "url": "https://f1grandprix.motorionline.com/hamilton-quinto-austin-qualifiche-ferrari-mercedes-aggiornamento/",
    "published": "2026-10-25T03:00:00+01:00",
    "summary": "F1GrandPrix.itによると、ハミルトンはアメリカGP予選で5番手、ルクレールは4番手となり、フェラーリの2台はメルセデスとレッドブルの後ろに並んだ。ハミルトンはFP3で最速だったが、予選では伸びなかった。同選手は、毎週末ストレートのパワー不足を理解したうえで、コーナーで補う戦いをしていると語った。メルセデスのアップデートの効果は「少なくとも0.2秒」とみている。ルクレールは、Q3でわずかな路面温度の低下によりタイヤが最適な作動域から外れたと説明した。"
-  },
-  {
-   "id": "ja-f1are-us-gp-day2-reactions",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "circuit": "austin",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "us-gp-quali-fan-reaction",
-   "title": "アメリカGP予選結果にファンが反応　レッドブルの復調とフェラーリの「FP番長」ぶりが話題",
-   "orig": "2026年F1第18戦アメリカGP 2日目結果",
-   "url": "https://f1are.com/blog-entry-4015.html",
-   "published": "2026-10-25T09:00:00+09:00",
-   "summary": "F1のアレは、アメリカGPのFP3と予選の結果をまとめ、掲示板に寄せられた反応を紹介した。コメントでは、練習走行で最速を続けたフェラーリが予選で伸びなかったことを「FP番長」と皮肉る声が出ているという。レッドブルが急に速さを取り戻したことへの驚きや、メルセデスは復調したのかという話題も見られる。ほかに、ヒュルケンベルグへの称賛や、ノリスが終盤に失速したとの指摘もある。タイトル争いで大きくリードしても落ち着いているアントネッリを評価する意見があるが、いずれも匿名の書き込みで未確認の見方だ。"
-  },
-  {
-   "id": "en-f1com-wolff-antonelli-miracle-lap",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Formula1.com",
-   "cat": "予選",
-   "circuit": "austin",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "austin-qualifying-2026",
-   "title": "ウォルフ、アントネッリの「奇跡のラップ」に当惑　ポールを喜びつつ原因を探る",
-   "orig": "Bemused Wolff celebrates Antonelli's 'miracle lap' in Qualifying at the United States GP",
-   "url": "https://www.formula1.com/en/latest/article/bemused-wolff-celebrates-antonellis-miracle-lap-in-qualifying-at-the-united-states-gp.16Hhn5cueHlsfCdfY62pka",
-   "published": "2026-10-24T23:50:00+00:00",
-   "summary": "F1公式サイトによると、アントネッリ（メルセデス）は1分34秒035でアメリカGPのポールを獲得した。今季7回目、ベルギーGP以来のポールで、マレーシアで投入した大型アップデート後としてはチーム初の予選最速となる。ウォルフ代表はF1 TVに対し、アントネッリが「どこから出たのか理解に苦しむ奇跡のラップ」を決めたと話した。決勝のペースはフェラーリやフェルスタッペンに劣るとの見方を示し、マシンが速い理由を解明する必要があると語った。20歳のアントネッリはこの週末にタイトルを決める可能性がある。"
-  },
-  {
-   "id": "nl-racingnews365-verstappen-kangaroo-austin",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "予選",
-   "circuit": "austin",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "austin-qualifying-2026",
-   "title": "フェルスタッペン、Q3で「カンガルーのように跳ねた」　2番手は受け入れるが不満",
-   "orig": "Verstappen blijft verbaasd achter: \"Auto stuiterde als een kangoeroe!\"",
-   "url": "https://racingnews365.nl/verstappen-blijft-verbaasd-achter-auto-stuiterde-als-een-kangoeroe",
-   "published": "2026-10-25T00:13:00+02:00",
-   "summary": "オランダのRacingNews365によると、フェルスタッペンはアメリカGP予選でアントネッリと約0.2秒差の2番手となり、フロントロウから決勝に臨む。Q3前にソフトを1セットしか使わなかったが、Q3ではどちらのセットでもバランスが整わず、グリップ不足でクルマが大きく滑ったと話した。攻めようとして路面の突起に乗った際、クルマが「カンガルーのように跳ねた」という。追い風で最終ラップの一部が難しかったとも述べ、Q3には満足していないが2番手は受け入れると語った。"
-  },
-  {
-   "id": "de-motorsportmagazin-austin-quali-antonelli-pole",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin.com",
-   "cat": "予選",
-   "circuit": "austin",
-   "teams": [
-    "mercedes",
-    "redbull",
-    "ferrari",
-    "mclaren"
-   ],
-   "topic": "austin-qualifying-2026",
-   "title": "アメリカGP予選　アントネッリがポール、フェラーリはQ3で失速　独誌",
-   "orig": "Formel 1 Austin-Qualifying: Kimi Antonelli holt Pole, Ferrari stürzt erneut",
-   "url": "https://www.motorsport-magazin.com/formel1/news-300893-formel-1-austin-qualifying-kimi-antonelli-holt-pole-ferrari-stuerzt-erneut/",
-   "published": "2026-10-25T00:05:00+02:00",
-   "summary": "独Motorsport-Magazinによると、アメリカGP予選はアントネッリ（メルセデス）がポールを獲得し、0.179秒差の2番手がフェルスタッペン、3番手がハジャーだった。ハジャーとフェルスタッペンの差はわずか36/1000秒だったという。FP3まで好調だったフェラーリはQ3で再び姿を消し、ルクレールが4番手、ハミルトンが5番手に終わった。Q1ではアロンソのマシンがピット出口で一時出火したが、火は自然に消えた。同誌は、この週末にアントネッリがタイトルを決める可能性は低いとみている。"
-  },
-  {
-   "id": "es-infobae-cadillac-2027-herta-tsunoda",
-   "kind": "rumor",
-   "lang": "es",
-   "region": "アルゼンチン",
-   "source": "Infobae",
-   "cat": "うわさ",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "キャデラック、2027年はボッタスに代えハータ起用の観測　角田陣営の接触も報道　亜メディア",
-   "orig": "Sorpresa en la Fórmula 1 por el inesperado movimiento de pilotos que modificaría la grilla del 2027",
-   "url": "https://www.infobae.com/deportes/2026/10/24/sorpresa-en-la-formula-1-por-el-inesperado-movimiento-de-pilotos-que-modificaria-la-grilla-del-2027/",
-   "published": "2026-10-24T16:59:00-04:00",
-   "summary": "アルゼンチンのInfobaeは、英The Raceなどの報道をもとに、キャデラックの2027年の布陣が変わる可能性を伝えた。ブトコウスキー代表はボッタスの残留を明言せず、契約に関する話はチームの公式発表で伝えると述べた。The Raceによると、ボッタスがペレスの前を走ったのは共有周回の約18%にとどまり、米国籍のリザーブ、ハータが後任の最有力とされる。角田の陣営もチームに接触したと報じられた一方、オコンの起用の可能性は低いとみられている。代表は決定を急いでいないと語った。"
-  },
-  {
-   "id": "nl-racingnews365-ocon-cadillac-lifeline",
-   "kind": "rumor",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "うわさ",
-   "circuit": "austin",
-   "teams": [
-    "cadillac",
-    "haas"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "オコン、ハース離脱後の行き先にキャデラックを探る　蘭RacingNews365報道",
-   "orig": "Ocon op zoek naar F1-reddingsboei na ontslag bij Haas",
-   "url": "https://racingnews365.nl/esteban-ocon-onderzoekt-mogelijke-reddingsboei-in-de-f1-bij-een-concurrerend-team-na-zijn-ontslag-bij-haas",
-   "published": "2026-10-24T19:00:00+02:00",
-   "summary": "蘭RacingNews365は、ハースを今季限りで離れるオコンとそのマネジメントが、2027年の候補としてキャデラックと接触したと報じた。ブトコウスキー代表とはアルピーヌ時代の2021〜22年に面識があるという。ペレスはチームの要とされる一方でボッタスの席は不安定とされ、ハータや角田のマネジメント、ローソン陣営の名も挙がる。ブトコウスキー代表は金曜の会見で「空いている人はほぼ全員が連絡してくる」と述べ、布陣への言及は避けた。話はまだ探り合いの段階で、決定は年内遅くになる見通しだ。"
   }
  ]
 }
