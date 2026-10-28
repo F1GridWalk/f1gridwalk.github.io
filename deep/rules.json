@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-27",
+ "checked": "2026-10-28",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -390,8 +390,8 @@
    "short": "2026年の新しいパワーユニットで出遅れたメーカーに、追加の開発とアップグレードの機会を与える仕組み。",
    "body": [
     "ADUO（Additional Development and Upgrade Opportunities、追加の開発とアップグレードの機会）は、2026年の新しいパワーユニットで出遅れたメーカーに、追加の改良の機会を与える仕組みだ。FIAは各メーカーの内燃エンジン（ICE）の性能を測って「ICE性能指数」を出し、いちばん良いメーカーとの差で、受けられる中身を決める。測るのはICEだけで、FIAは、この指数はPU全体の性能を表すものではないとしている。",
-    "差が2%以上4%未満なら、その年に1回、翌年に1回の追加のアップグレードが認められる。4%以上なら、その年と翌年に2回ずつだ。あわせてPUメーカーのコスト上限に上乗せがあり、差が大きいほど額が増える（評価期間ごとに最大300万〜1100万ドル）。FIAのトンバジスは、ADUOは性能をそろえる調整（BoP）ではなく「コストキャップの救済の仕組み」で、燃料流量やバラストを変えるものではないと説明している（FIA、2026年5月）。",
-    "評価は3つの期間に分けて行う。中東の情勢でカレンダーが変わったため、1回目はオーストラリア、中国、日本、マイアミ、カナダの5戦になった。2回目はモナコからハンガリーまで、3回目はオランダからメキシコシティまでだ。改良は、通知を受けた次のレースから入れられる。どのメーカーが何回使ったかは細かく公表されないことが多く、ニュースで後から分かることもある。The Raceは2026年10月、レッドブルのエンジンはFIAの分析で2度、基準（いちばん良いメーカー）とされたため、新しい部品の改良は認められないと伝えた。レッドブルは、燃料サプライヤーと進めた設定（キャリブレーション）の見直しでPUを伸ばしてきたという。同じ記事によると、フェラーリは認められた2回の改良を使い切り、メルセデスは少なくともアメリカGPまで投入を待つ構えとされたが、その後のThe Race（10月22日）によると、改良型のPUはアメリカGPに間に合わず、メキシコシティGPにも間に合わない見通しで、最も早いのはブラジル（サンパウロGP）になりそうだという。投入するとグリッド降格を伴うという。"
+    "差が2%以上4%未満なら、その年に1回、翌年に1回の追加のアップグレードが認められる。4%以上なら、その年と翌年に2回ずつだ。あわせて、PUメーカーのコスト上限の計算で、評価期間ごとに差に応じた額を差し引ける。差が2%以上4%未満なら最大300万ドルで、4%、6%、8%と段階が上がるごとに最大465万、635万、800万ドル、10%以上なら最大1100万ドルだ（物価に合わせて調整する）。差が10%以上のメーカーは、2026年だけ、将来の期間のコスト上限から最大800万ドルを前倒しで使える（FIA）。FIAのトンバジスは、ADUOは性能をそろえる調整（BoP）ではなく「コストキャップの救済の仕組み」で、燃料流量やバラストを変えるものではないと説明している（FIA、2026年5月）。",
+    "評価は3つの期間に分けて行う。中東の情勢でカレンダーが変わったため、1回目はオーストラリア、中国、日本、マイアミ、カナダの5戦になった。2回目はモナコからハンガリーまで、3回目はオランダからメキシコシティまでだ。改良は、通知を受けた次のレースから入れられる。その年の最初の2回の評価でADUOを受けなかったメーカーは、3回目の評価では受けられない。その年に使うと決まった追加のアップグレードは、最終戦までに入れないと権利がなくなる。どのメーカーが何回使ったかは細かく公表されないことが多く、ニュースで後から分かることもある。The Raceは2026年10月、レッドブルのエンジンはFIAの分析で2度、基準（いちばん良いメーカー）とされたため、新しい部品の改良は認められないと伝えた。レッドブルは、燃料サプライヤーと進めた設定（キャリブレーション）の見直しでPUを伸ばしてきたという。同じ記事によると、フェラーリは認められた2回の改良を使い切り、メルセデスは少なくともアメリカGPまで投入を待つ構えとされたが、その後のThe Race（10月22日）によると、改良型のPUはアメリカGPに間に合わず、メキシコシティGPにも間に合わない見通しで、最も早いのはブラジル（サンパウロGP）になりそうだという。投入するとグリッド降格を伴うという。"
    ],
    "examples": [
     {
@@ -445,9 +445,20 @@
      "name": "The Race",
      "title": "Mercedes rolls back ADUO engine debut（2026年10月22日、Josh Suttill）",
      "url": "https://www.the-race.com/formula-1/mercedes-rolls-back-aduo-engine-debut/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section C Technical (Issue 21, 2026-10-19) 付則C5 4.2、4.3",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_21_-_2026-10-19.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section E Financial – PU Manufacturers (Issue 07, 2026-10-19) E4.1.1 t",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_e_financial_-_pu_manufacturers_-_iss_07_-_2026-10-19.pdf"
     }
    ],
-   "checked": "2026-10-26"
+   "checked": "2026-10-28",
+   "rule": "技術規則（Section C）付則C5 4.2（評価期間）、4.3（追加のアップグレードと条件）／PUメーカーの財務規則（Section E）E4.1.1 t（コスト上限の計算で差し引く額）（Section C Issue 21、Section E Issue 07 で確認）"
   },
   {
    "id": "super-clipping",
@@ -5123,11 +5134,11 @@
    "short": "風洞とCFDで使える量を、成績の悪いチームほど多くする制限。",
    "body": [
     "空力の開発に使う、風洞の走行回数とCFD（コンピューターで空気の流れを計算すること）の量に上限をつける決まり。成績のよいチームほど少なく、悪いチームほど多く使える。チームの差を縮めるために2021年に入った仕組みだ。",
-    "基準の100％は、期間ごとに風洞が320回の走行、CFDが2000件。順位が1つ下がるごとに5％増え、1つ上がるごとに5％減る。コンストラクターズ選手権の1位は70％、7位は100％、10位以下と新規参入のチームは115％になる。1年は6つの期間に分かれ、1つの期間は8〜10週間ほどだ。",
+    "基準の100％は、期間ごとに風洞が320回の走行、CFDが2000件。順位が1つ下がるごとに5％増え、1つ上がるごとに5％減る。コンストラクターズ選手権の1位は70％、7位は100％、10位と新規参入のチームは115％になる。1年は6つの期間に分かれ、1つの期間は8〜10週間ほどだ。",
     "どの順位を使うかは、年に2回切り替わる。前半の3期間は前年の最終順位、後半の3期間は、第3期間が終わった時点のその年の順位を使う。2026年の前半は2025年の最終順位が基準になり、チャンピオンのマクラーレンが70％（風洞224回、CFD1400件）、アルピーヌと新規参入のキャデラックが115％（風洞368回、CFD2300件）だった。",
-    "GPFansのオランダ語版は2026年7月2日、今季のコンストラクターズ順位にもとづく新しい割り当てとして、首位のメルセデスが70％、2位のフェラーリが75％、3位のマクラーレンが80％、4位のレッドブルが85％になったと伝えた。"
+    "GPFansのオランダ語版は2026年7月2日、今季のコンストラクターズ順位にもとづく新しい割り当てとして、首位のメルセデスが70％、2位のフェラーリが75％、3位のマクラーレンが80％、4位のレッドブルが85％になったと伝えた。ScuderiaFansも6月30日、2位のフェラーリは7月から空力テストの量が10％減り、4位のレッドブルは増えると報じた。"
    ],
-   "rule": "運用規則（Section F）F4.6.1（上限と順位ごとの割合）、F4.1.4（6つの期間）（Issue 09 で確認）",
+   "rule": "運用規則（Section F）F4.6.1（上限と順位ごとの割合）、F4.1.4（6つの期間）（Issue 11 で確認）",
    "examples": [],
    "see": [
     "cost-cap",
@@ -5158,10 +5169,20 @@
      "name": "GPFans（オランダ語版）",
      "title": "Red Bull wint ontwikkelingstijd onder ATR-regels, Mercedes verliest terrein（2026年7月2日）",
      "url": "https://www.gpfans.com/nl/f1-nieuws/1087059/red-bull-wint-ontwikkelingstijd-onder-atr-regels-mercedes-verliest-terrein/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section F Operational (Issue 11, 2026-10-01) F4.1.4、F4.6.1",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_11_-_2026-10-01.pdf"
+    },
+    {
+     "name": "ScuderiaFans",
+     "title": "F1 aerodynamic testing rules change from July 1: what it means for Ferrari and rivals（2026年6月30日、Elena Rossi）",
+     "url": "https://scuderiafans.com/f1-aerodynamic-testing-rules-change-from-july-1-what-it-means-for-ferrari-and-rivals/"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-27"
+   "checked": "2026-10-28"
   },
   {
    "id": "concorde-agreement",
@@ -6009,11 +6030,6 @@
      "url": "https://www.formula1.com/en/latest/article/fias-wmsc-ratifies-f1-regulatory-changes-for-2027-and-2028.ACyRcPvBKo8LRiOleCSJU"
     },
     {
-     "name": "formula1.com",
-     "title": "Agreement reached on proposed F1 regulatory changes for 2027 and 2028",
-     "url": "https://core-ecs-origin-home.core-dns.watchliveformula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb"
-    },
-    {
      "name": "New Straits Times",
      "title": "F1 to have extra test day from 2027, engine tweaks approved",
      "url": "https://www.nst.com.my/amp/sports/motor-sports/2026/06/1470843/f1-have-extra-test-day-2027-engine-tweaks-approved"
@@ -6037,10 +6053,15 @@
      "name": "FIA",
      "title": "Agreement reached on proposed regulatory changes for 2027 and 2028（2026年6月10日）",
      "url": "https://www.fia.com/news/agreement-reached-proposed-regulatory-changes-2027-and-2028"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Agreement reached on proposed F1 regulatory changes for 2027 and 2028（2026年6月10日、FIA・FOM・チーム・PUメーカーが合意、6月23日にマカオのWMSCへ）",
+     "url": "https://www.formula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-27"
+   "checked": "2026-10-28"
   },
   {
    "id": "f1-commission",
@@ -13814,7 +13835,7 @@
     "新しく入るチームには、このエントリー費のほかに、既存チームに払う負担金（アンチダイリューション・フィー）がかかる。",
     "エントリー費はFIAへの支払いで、F1の運営会社がチームへ配る賞金とは別のお金だ。"
    ],
-   "rule": "F1規則 Section A（一般規定）A3.1.2（参戦申請の期間と、12月15日までの支払いの約束）（Issue 02 で確認）",
+   "rule": "F1規則 Section A（一般規定）A3.1.2（参戦申請の期間と、12月15日までの支払いの約束）、A3.1.4（12月20日までに一覧を公表）、A3.1.5（全レースに自動でエントリー）（Issue 03 で確認）",
    "examples": [],
    "see": [
     "anti-dilution",
@@ -13844,6 +13865,11 @@
      "name": "Motorsport.com",
      "title": "Two key changes in F1's Concorde governance agreement explained",
      "url": "https://www.motorsport.com/f1/news/two-key-changes-in-f1s-concorde-governance-agreement-explained/10784461/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section A General Provisions (Issue 03, 2026-06-25) A3.1.2、A3.1.4、A3.1.5",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_a_general_provisions_-_iss_03_-_2026-06-25.pdf"
     }
    ]
   },
@@ -15415,10 +15441,25 @@
      "name": "Crash.net",
      "title": "2026 F1 calendar: Full race schedule",
      "url": "https://www.crash.net/f1/news/1073119/1/2026-f1-calendar-full-race-schedule-revealed"
+    },
+    {
+     "name": "Al Jazeera",
+     "title": "F1 leader Kimi Antonelli wins Italian GP after epic charge from the back (2026-09-06)",
+     "url": "https://www.aljazeera.com/amp/sports/2026/9/6/f1-leader-kimi-antonelli-wins-italian-gp-after-epic-charge-from-the-back"
+    },
+    {
+     "name": "DutchNews.nl",
+     "title": "Norris wins final Dutch Grand Prix as Verstappen crashes out (2026-08)",
+     "url": "https://www.dutchnews.nl/2026/08/norris-wins-final-dutch-grand-prix-as-verstappen-crashes-out/"
     }
    ],
-   "examples": [],
-   "checked": "2026-10-02"
+   "examples": [
+    {
+     "t": "ペレス、母国メキシコで300戦目へ　無得点の1年目に「ファンには消化しにくい」",
+     "u": "/news/en-racingnews365-perez-300th-mexico/"
+    }
+   ],
+   "checked": "2026-10-28"
   },
   {
    "id": "calendar",
@@ -16907,15 +16948,15 @@
     "2時間ルール",
     "モナコの260km"
    ],
-   "short": "決勝の周回数は、距離が305kmを超える最も少ない周回数で決まる。モナコだけ260km。",
+   "short": "決勝の周回数は、距離が305kmを超える最も少ない周回数で決まる（2027年は290km）。モナコだけ260km。",
    "body": [
     "決勝の周回数は、1周の長さから決まる。規則では、走る距離が305kmを超える最も少ない周回数にする。モナコだけは例外で、260kmを超える最も少ない周回数だ。1周が短いコースほど周回数は多くなる。",
     "F1公式サイトの数字で見ると、メキシコシティは1周4.304kmで71周、合計305.354km。70周だと301kmほどで305kmに届かないので、71周になる。ベルギーのスパは1周7.004kmで44周（308.054km）、モナコは1周3.337kmで78周（260.286km）だ。",
     "時間にも上限がある。決勝はスタートの合図から2時間以内に終わる。赤旗などで中断した場合は、中断した時間ぶん延びるが、全部で3時間までだ。2時間が過ぎると、決められた周回数に届かなくてもレースは終わり、そのときの順位で結果が決まる。",
     "フォーメーションラップをセーフティカーの後ろで始めたときは、決勝の周回数が「セーフティカーが走った周回数から1を引いた数」だけ減る（規則B2.5.2a）。スプリントも同じ考え方で、100kmを超える最も少ない周回数になる。",
-    "2027年は距離が短くなると報じられている。GPblogは、FIAが10月19日に公表した2027年の競技規則で、決勝は290kmを超える最も少ない周回数になり、2028年には305kmを超える周回数に戻ると報じた。周回数はコースによって2〜3周ほど減り、モナコは260kmのままだという。GPblogとF1-Gate.comによると、2027年のパワーユニットは燃料を多く使うため、305kmのままだと燃料タンクを大きくする必要があり、シャシーの変更と費用がかかる。それを避ける一時的な措置だという。"
+    "2027年は距離が短くなる。FIAが10月19日に公表した2027年の競技規則（第1版）のB2.5.2では、決勝は290kmを超える最も少ない周回数になる。モナコは260kmを超える最も少ない周回数のままだ。同じ規則の付則B5（翌年以降に向けて承認済みの変更）には、2028年からB2.5.2を305kmに戻すと書かれている。F1公式によると、9月21日のF1コミッションが、2027年に燃料流量の規則が変わるのに合わせて、305kmから290kmへの短縮を承認した。周回数にすると2〜3周の短縮だ。2027年は、赤旗などの中断を含めて全部で3時間という上限もなくなり、大会ごとに示す決勝の打ち切り時刻に替わる。実際に走る時間の2時間の上限は残る（B2.5.3）。"
    ],
-   "rule": "B2.5.2、B2.5.3（決勝）、B2.3.2（スプリント）",
+   "rule": "スポーティングレギュレーション B2.5.2、B2.5.3（決勝）、B2.3.2（スプリント）（2026年 Issue 09 で確認）／2027年競技規則 B2.5.2、B2.5.3、付則B5（2028年の変更）（2027年 Issue 01 で確認）",
    "examples": [
     {
      "t": "F1の決勝距離、2027年は305kmから290kmに短縮。多くのGPで周回数が2〜3周減り、モナコは約260kmのまま",
@@ -16963,9 +17004,34 @@
      "name": "F1-Gate.com",
      "title": "F1決勝距離 2027年は290kmに短縮 2028年に305kmへ復帰（2026年10月21日）",
      "url": "https://f1-gate.com/regulation/229420.html"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations Section B (Sporting) Issue 09（2026年10月1日）B2.3.2（スプリント100km超）、B2.5.2（決勝305km超、モナコ260km超）、B2.5.3（2時間・3時間）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2027 F1 Regulations Section B (Sporting) Issue 01（2026年10月19日、WMSC承認同日）B2.5.2（決勝は290km超、モナコ260km超）、B2.5.3（打ち切り時刻）、付則B5「Changes for 2028」（B2.5.2を305km超に戻す）",
+     "url": "https://www.fia.com/system/files/documents/fia_2027_f1_regulations_-_section_b_sporting_-_iss_01_-_2026-10-19.pdf"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Regulatory changes for 2026 and 2027 agreed at latest F1 Commission meeting（2026年9月21日、305km→290km、2〜3周の短縮、燃料流量の変更に合わせる、3時間の上限をやめ打ち切り時刻、2時間は維持）",
+     "url": "https://www.formula1.com/en/latest/article/regulatory-changes-for-2026-and-2027-agreed-at-latest-f1-commission-meeting.2wFfaMinLUT40dRVw3FeCC"
+    },
+    {
+     "name": "RaceFans",
+     "title": "Formula 1's move to shorter grands prix in 2027 will not be permanent（2026年10月20日、Keith Collantine）",
+     "url": "https://www.racefans.net/2026/10/20/formula-1s-move-to-shorter-grands-prix-in-2027-will-not-be-permanent/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 to reverse contentious rule change after only one season（2026年10月20日、2028年は305km、モナコ260km）",
+     "url": "https://racingnews365.com/f1-to-reverse-contentious-rule-change-after-only-one-season"
     }
    ],
-   "checked": "2026-10-23"
+   "checked": "2026-10-28"
   },
   {
    "id": "circuit-length",
@@ -16990,7 +17056,7 @@
    "short": "サーキット1周の長さ。モナコの3.3kmからスパの7.0kmまで、F1の会場でも大きく違う。",
    "body": [
     "コース長は、スタート／フィニッシュのラインから1周してラインに戻るまでの距離だ。F1公式サイトによると、今季いちばん短いのはモナコの3.337km。いちばん長いのはスパの7.004kmで、2倍以上の差がある。",
-    "ほかの会場は、メキシコシティが4.304km、モンツァが5.793km、ラスベガスが6.201kmだ（F1公式サイトの各レースページ）。同じ決勝でも、コース長によって周回数が変わる。モナコは78周で合計260.286km、スパは44周で308.054kmだ（周回数の決め方は「周回数」の項目を見る）。",
+    "ほかの会場は、メキシコシティが4.304km、モンツァが5.793km、ラスベガスが6.201kmだ（F1公式サイトの各レースページ）。同じ決勝でも、コース長によって周回数が変わる。モナコは78周で合計260.286km。スパは44周で、FIAの大会資料では308.052kmだ（周回数の決め方は「周回数」の項目を見る）。",
     "1周の長さが違えば、1周のタイムも違う。F1公式サイトのコースレコードは、モナコが1分12秒909（2021年）、スパが1分44秒701（2024年）だ。",
     "コースの形が変わると、数字も変わる。シンガポールは2023年にレイアウトを変え、コーナーが23から19に減った（F1公式サイト）。数字は大会ごとのF1公式の値を使うのがよい。"
    ],
@@ -17036,9 +17102,19 @@
      "name": "formula1.com",
      "title": "2026 Monaco Grand Prix circuit guide",
      "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-monaco.vFsmfGHr6RWyLFtxi58wi"
+    },
+    {
+     "name": "FIA",
+     "title": "Media kit: Belgian Grand Prix 2026 (Spa)",
+     "url": "https://api.fia.com/sites/default/files/media_kit_spa_2026.pdf"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "Belgium 2026 overview",
+     "url": "https://www.williamsf1.com/now-next/belgium-2026/overview"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-28"
   },
   {
    "id": "overtaking-friendly",
@@ -17145,12 +17221,17 @@
    ],
    "short": "平均速度が高く、アクセル全開の区間が長いコース。モンツァやシルバーストンが代表的だ。",
    "body": [
-    "高速コースは、長い直線と、速度を落とさずに曲がる高速コーナーが多いコースだ。F1公式サイトによると、モンツァは1周の約80%でアクセル全開になる。シルバーストンは、コプス、マゴッツ、ベケッツの連続する高速コーナーで、ふつうのF1ではあまりない横Gが体にかかるという。",
+    "高速コースは、長い直線と、速度を落とさずに曲がる高速コーナーが多いコースだ。F1公式サイトによると、モンツァは1周の約80%でアクセル全開になる。シルバーストンについて、元ドライバーのパーマーは、コプス、マゴッツ、ベケッツの連続する高速コーナーでは、F1でもめったにないほどのGが体にかかると話している。",
     "ラスベガスもこの仲間だ。F1公式サイトは、ラスベガスの平均速度をモンツァと同じくらいだと紹介している。モンツァは曲がる場所が少ないので、ほかの会場よりダウンフォースを減らした仕様で走ると、F1公式サイトは説明している。",
     "2026年は、高速コースの見え方が変わった。長い直線は、電気をためる場所にもなるからだ。PlanetF1の分析（2026年9月）では、モンツァの予選の最高速は、2026年の最高がラッセルの時速341km、2025年は354.7kmで、決勝でも365kmから351kmに下がった。",
-    "FIAは、予選で1周にためてよい電気の量を、コースごとに決めている。The Race（2026年5月）によると、いちばん少ないのがモンツァの5MJで、モナコ、ハンガリー、シンガポールは9MJだ。RACERによると、モンツァはスーパークリッピング（直線の終わりで電気をためる走り）を減らすため、今までで最も低い上限が決められた。"
+    "FIAは、予選で1周にためてよい電気の量を、コースごとに決めている。The Race（2026年5月）が伝えた見込みの値では、いちばん少ないのがモンツァの5MJで、モナコ、ハンガリー、シンガポールは9MJだ。RACERによると、モンツァはスーパークリッピング（直線の終わりで電気をためる走り）を減らすため、今までで最も低い上限が決められた。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "ストロール「パワーユニットで2秒失っている」　バクーやモンツァのような高速コースでは打つ手が少ない",
+     "u": "/news/es-motorsport-stroll-honda-two-seconds/"
+    }
+   ],
    "see": [
     "low-speed-circuit",
     "downforce",
@@ -17196,7 +17277,7 @@
      "url": "https://racer.com/2026/09/03/prepare-for-a-very-different-f1-race-at-monza"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-28"
   },
   {
    "id": "low-speed-circuit",
@@ -17219,12 +17300,17 @@
    ],
    "short": "直線が短く、低速コーナーが多いコース。モナコやシンガポールが代表的で、速さより正確さが問われる。",
    "body": [
-    "低速コースは、長い直線が少なく、遅いコーナーとブレーキングが続くコースだ。F1公式サイトのコースガイドによると、モナコは道幅が狭く、直線らしい直線がほとんどないため、最高速はあまり意味を持たない。元ドライバーのパーマーは「F1の車で走ると狂気のように感じる」と話している。",
+    "低速コースは、長い直線が少なく、遅いコーナーとブレーキングが続くコースだ。F1公式サイトのコースガイドによると、モナコは道幅が狭く、コーナーが次々に来て、「直線」はあっという間に過ぎる。2026年のモナコでは、安全のため、今季初めてストレートモードが使えなかった。元ドライバーのパーマーは「F1の車で走ると狂気のように感じる」と話している。",
     "シンガポールもその一つだ。ピレリは2022年に、遅いコーナーが多く、リアタイヤのトラクションをうまく使うことが大事だと説明した。F1公式サイトは、荒れた路面と高い湿度のため、体への負担が大きいコースだと紹介している。ドライバーは、レースで体重が最大3kg減ることもある。",
-    "2026年の予選では、1周にためてよい電気の量の上限が、コースごとに決められている。The Race（2026年5月）によると、モナコ、ハンガリー、シンガポールが9MJで、モンツァの5MJより多い。",
+    "2026年の予選では、1周にためてよい電気の量の上限が、コースごとに決められている。The Race（2026年5月）が伝えた見込みの値では、モナコ、ハンガリー、シンガポールが9MJで、モンツァの5MJより多い。",
     "モナコは追い抜きがとても少ない。F1公式サイトの数字では、2025年の追い抜きは4回だった。コースガイドによると、直近12戦のうち10戦が最前列からの優勝で、予選の順位が大事になる。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "キャデラック、シンガポールに好機を見る　低速コーナーと強いブレーキングの多いコースは車に合うとされる",
+     "u": "/news/it-formula1it-cadillac-singapore-bottas/"
+    }
+   ],
    "see": [
     "high-speed-circuit",
     "street-circuit",
@@ -17258,9 +17344,14 @@
      "name": "The Race",
      "title": "F1's new energy rankings for qualifying revealed",
      "url": "https://www.the-race.com/formula-1/f1s-new-energy-rankings-for-qualifying-revealed/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What makes the Singapore Grand Prix special – and why you should see it",
+     "url": "https://formula1.com/en/latest/article/what-makes-the-singapore-grand-prix-special-and-why-you-should-see-it.f9it2DEDEjL9ZEjvQIMRq"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-28"
   },
   {
    "id": "altitude",
@@ -17285,11 +17376,16 @@
    "short": "サーキットのある土地の高さ。メキシコシティは2,200m超と、F1でいちばん高く、空気が薄い。",
    "body": [
     "標高が高いと、空気が薄くなる。F1公式サイトによると、メキシコシティのエルマノス・ロドリゲス・サーキットは海抜2,200m以上で、カレンダーでいちばん高い。同じ記事（2021年）は、次に高いサンパウロのインテルラゴスを約800mとしている。",
-    "空気が薄いと、車はいくつか影響を受ける。F1公式サイトの2018年の記事は、酸素が海面の78%ほどしかなく、内燃エンジンの出力が下がり、ブレーキも冷やしにくくなると説明した（2018年時点の説明）。f1technical.netも、ダウンフォースが減り、エンジンとブレーキの冷却が難しくなると伝えている。",
+    "空気が薄いと、車はいくつか影響を受ける。メルセデスの公式サイトによると、空気の密度は海面より約25%低く、ダウンフォースも約25%減る。ラジエーターなどを通る空気も少なくなるので、エンジンとブレーキを冷やしにくい。",
     "空気が薄い分、空気抵抗も小さくなるので、直線は速くなる。モータースポーツ・マガジン（2025年10月）は、2024年のシーズン最高速、時速362.5kmがメキシコシティで記録されたと伝えた。",
     "今季のメキシコシティGPは10月30日〜11月1日の予定で、決勝は71周（F1公式サイト）。新しいパワーユニットとアクティブエアロの車が高地を走るのは、今季が初めてになる（2026年10月2日時点）。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "標高2,250mのメキシコシティ、薄い空気が現行F1マシンに突きつける課題",
+     "u": "/news/nl-gpfans-mexico-altitude-challenge/"
+    }
+   ],
    "see": [
     "downforce",
     "drag",
@@ -17310,16 +17406,6 @@
      "url": "https://www.formula1.com/en/latest/article/watch-how-does-mexico-citys-high-altitude-affect-an-f1-car.2viU1hO6pXOPslHbNqjyim"
     },
     {
-     "name": "formula1.com",
-     "title": "Mexico preview: the stats and info you need to know (2018)",
-     "url": "https://www.formula1.com/en/latest/article/mexico-preview-the-stats-and-info-you-need-to-know.5T3MUg4m1qwaaOsQuGYMK2"
-    },
-    {
-     "name": "f1technical.net",
-     "title": "Cooling requirement: How did teams optimize their cars for the Mexico City Grand Prix?",
-     "url": "https://www.f1technical.net/news/27928"
-    },
-    {
      "name": "Motorsport Magazine",
      "title": "What are the fastest speeds recorded at every F1 circuit?",
      "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/what-are-the-fastest-speeds-recorded-at-every-f1-circuit/"
@@ -17328,9 +17414,14 @@
      "name": "The Race",
      "title": "F1 2026 grand prix race start times",
      "url": "https://www.the-race.com/formula-1/what-time-is-f1-this-weekend-2026-grand-prix-start-times/"
+    },
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "What impact does high altitude have on an F1 car?",
+     "url": "https://www.mercedesamgf1.com/news/what-impact-does-high-altitude-have-on-an-f1-car"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-28"
   },
   {
    "id": "surface-abrasiveness",
@@ -17508,10 +17599,10 @@
    ],
    "short": "コースを反時計回りに走る会場。左コーナーが多く、首の負担がふだんと違うと言われる。",
    "body": [
-    "反時計回りのコースは、F1では少数派だ。レッドブルの公式サイトで、アルボンはブラジルのインテルラゴスを「数少ない反時計回りのコースで、ドライバーには厳しい。体、特に首は時計回りのコースに慣れている」と話している。",
-    "メルセデスの公式サイトによると、2025年のカレンダーで全体が反時計回りだったのは9会場だ。COTA（アメリカ）のほか、ジェッダ、マイアミ、イモラ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナ（アブダビ）が挙げられている。",
-    "この一覧と今季のカレンダー（F1公式サイト）を見比べると、2026年に開催されるのはCOTA、マイアミ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナの7会場だ。ジェッダとイモラは、今季のカレンダーにない。今季から加わったマドリード（マドリング）とセパンは、この一覧に入っていないので、ここでは数えていない。",
-    "首の負担については、ドライバーの話として語られることが多い。ただし、この負担の大きさを数字で示した公式の資料は確認できなかった。"
+    "反時計回りのコースは、F1では少数派だ。フェルスタッペンは2019年、ブラジルのインテルラゴスについて「反時計回りなので、首には少し重い」と話した（The Checkered Flag）。",
+    "メルセデスの公式サイトによると、2025年のカレンダーで全体が反時計回りだったのは8会場だ。COTA（アメリカ）のほか、マイアミ、イモラ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナ（アブダビ）が挙げられている。",
+    "この一覧と今季のカレンダー（F1公式サイト）を見比べると、2026年に開催されるのはCOTA、マイアミ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナの7会場だ。イモラは、今季のカレンダーにない。ただし、カタールとアブダビが開けないときの予備の候補とされ、FIAのビン・スライエム会長は「FIAはいつでも準備ができている」と話した（The Race、2026年10月20日）。今季から加わったマドリード（マドリング）とセパンは、この一覧に入っていないので、ここでは数えていない。",
+    "首の負担については、ドライバーの話として語られることが多い。"
    ],
    "examples": [],
    "see": [
@@ -17526,11 +17617,6 @@
      "url": "https://www.mercedesamgf1.com/races/united-states-grand-prix-2026"
     },
     {
-     "name": "Red Bull Racing",
-     "title": "Circuit scout: Interlagos",
-     "url": "https://redbullracing.com/int-en/circuit-scout-interlagos"
-    },
-    {
      "name": "formula1.com",
      "title": "The 2026 F1 calendar",
      "url": "https://www.formula1.com/en/racing/2026"
@@ -17539,9 +17625,19 @@
      "name": "Mercedes-AMG F1",
      "title": "2026 F1 Schedule",
      "url": "https://www.mercedesamgf1.com/seasons/2026"
+    },
+    {
+     "name": "The Checkered Flag",
+     "title": "Alexander Albon on Interlagos: 'It's one of the circuits I've been looking forward to most' (2019-11-09)",
+     "url": "https://www.thecheckeredflag.co.uk/2019/11/alexander-albon-on-interlagos-its-one-of-the-circuits-ive-been-looking-forward-to-most/"
+    },
+    {
+     "name": "The Race",
+     "title": "FIA adamant Qatar and Abu Dhabi GPs will go ahead (2026-10-20)",
+     "url": "https://www.the-race.com/formula-1/fia-adamant-f1-qatar-abu-dhabi-gp-will-go-ahead/"
     }
    ],
-   "checked": "2026-10-02"
+   "checked": "2026-10-28"
   },
   {
    "id": "night-race",
@@ -17567,9 +17663,14 @@
     "ナイトレースは、サーキットを照明で照らして、日が落ちてから走るレースだ。F1公式サイトによると、シンガポールが2008年に開いたレースが、F1で初めての夜のレースだった。",
     "今季の例は、シンガポールとラスベガスだ。シンガポールGPの決勝は現地時間の20時スタート（10月11日、F1公式サイト）。ラスベガスは土曜の20時スタートで、街の通りを照明の下で走る（F1公式サイト）。アブダビは、日没前にスタートして暗くなってからゴールする。メルセデスは、これも夜のレースと位置づけている。",
     "夜だから涼しいとは限らない。シンガポールは高温多湿で、ドライバーはレースで体重が最大3kg減ることもあるとF1公式サイトは伝えている。",
-    "10月のセパン（バーレーンGPを開催）は、夜のレースではなかった。バーレーンGPはふだん夜に行われるが、セパンの決勝は現地時間の15時スタートの予定で組まれた（2026年8月のGPFansとCrashの報道）。レースの時間は、大会ごとに変わることがある。"
+    "10月4日にセパンで開かれたバーレーンGPは、夜のレースではなかった。バーレーンGPはふだん夜に行われるが、セパンの決勝は現地時間の15時スタートで組まれた（2026年8月のGPFansとCrashの報道）。GPblogによると、セパンには夜に走るための設備がない。当日は雨で、スタートが90分以上遅れた（Khaleej Times）。レースの時間は、大会ごとに変わることがある。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "ハミルトン「ナイトレースをもっと」　今季初のナイトレース、シンガポールを前に",
+     "u": "/news/de-mst-hamilton-night-races/"
+    }
+   ],
    "see": [
     "street-circuit",
     "heat-hazard",
@@ -17605,9 +17706,19 @@
      "name": "Crash.net",
      "title": "Sepang F1 start time confusion cleared as FIA releases new update (2026-08-05)",
      "url": "https://crash.net/f1/news/1102092/1/sepang-f1-start-time-confusion-cleared-fia-releases-new-update"
+    },
+    {
+     "name": "GPblog",
+     "title": "F1 clear up Malaysia night race confusion (2026-08-05)",
+     "url": "https://www.gpblog.com/en/news/f1-clear-up-malasyia-night-race-confusion"
+    },
+    {
+     "name": "Khaleej Times",
+     "title": "Verstappen wins chaotic rain-delayed Bahrain Grand Prix in Malaysia (2026-10-04)",
+     "url": "https://www.khaleejtimes.com/f1/max-verstappen-wins-bahrain-grand-prix-malaysia-sepang-international-circuit"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-10-28"
   },
   {
    "id": "sprint-venue",
@@ -18409,7 +18520,7 @@
     "overtake-mode",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18425,6 +18536,11 @@
      "name": "formula1.com",
      "title": "2026 Australian GP race report",
      "url": "https://www.formula1.com/en/latest/article/russell-wins-action-packed-australian-gp-from-antonelli-as-mercedes-secure-1.4WRxPAtF4dFtrKCsWIiQX2"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Australian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026.7gyyqNLcwuCPZdXvgGwhCM"
     }
    ]
   },
@@ -18461,7 +18577,7 @@
     "straight-corner-mode",
     "resurfacing"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18477,6 +18593,11 @@
      "name": "formula1.com",
      "title": "2026 Chinese GP race report",
      "url": "https://www.formula1.com/en/latest/article/antonelli-beats-russell-for-maiden-f1-victory-in-china-as-hamilton-takes.5aJsWCPiRhp2euZctEwEYA"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Chinese Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-chinese-grand-prix.2KbEu5okNlIMtVgklEpGJT"
     }
    ]
   },
@@ -18501,7 +18622,7 @@
    ],
    "short": "三重県にある、上下に交差する「8の字」型の高速テクニカルコース。",
    "body": [
-    "三重県の鈴鹿市にあるコース。1962年にホンダのテストコースとして造られた。コースが立体交差する「8の字」の形は、現在のF1カレンダーで鈴鹿だけだ。1周は5.807km、決勝は53周、コーナーは18個。F1での開催は1987年から。1周の最速記録は、アントネッリの1分30秒965（2025年）。",
+    "三重県の鈴鹿市にあるコース。1962年に、ホンダが日本初の本格的なロードレース用のコースとして造った。市販車を開発するための高速走行テストの場でもあった（ホンダ公式サイト）。コースが立体交差する「8の字」の形は、現在のF1カレンダーで鈴鹿だけだ。1周は5.807km、決勝は53周、コーナーは18個。F1での開催は1987年から。1周の最速記録は、アントネッリの1分30秒965（2025年）。",
     "第1セクターの続くS字カーブ、2つのデグナー、高速の130Rなど、ドライバーが「難しい」と話す場所が多い。ターン1に入ったあとは目印が少なく、リズムを崩すとタイムを失う。追い抜きはシケインや130Rで見られる。",
     "2026年の日本GPは3月29日（2025年より1週間早い）に行われ、アントネッリが優勝。路面は2025年に第1セクターが再舗装され、2026年は残りの2つのセクターもターン17まで再舗装された。新しい舗装はなめらかで汚れが残り、グリップが低めと予想された。ストレートモードは、スタート／フィニッシュの直線とターン14〜15のバックストレートの2か所だった。"
    ],
@@ -18512,7 +18633,7 @@
     "active-aero",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18533,6 +18654,16 @@
      "name": "Honda",
      "title": "Completion of Suzuka Circuit / 1962",
      "url": "https://global.honda/en/heritage/episodes/1962suzuka.html"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Full race results: 2026 Japanese Grand Prix",
+     "url": "https://www.planetf1.com/news/f1-results-2026-japanese-grand-prix"
+    },
+    {
+     "name": "F1 Chronicle",
+     "title": "Suzuka Lap Record: F1's Fastest Times (updated 2026-07-11)",
+     "url": "https://f1chronicle.com/suzuka-lap-record-f1s-fastest-times"
     }
    ]
   },
@@ -18569,7 +18700,7 @@
     "overtaking-friendly",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18585,6 +18716,11 @@
      "name": "formula1.com",
      "title": "2026 Miami GP race report",
      "url": "https://www.formula1.com/en/latest/article/antonelli-wins-thrilling-miami-grand-prix-from-norris-and-piastri.2bxaKuYKJjxlXx8KOJf7lc"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Miami International Autodrome (circuit page 2026)",
+     "url": "https://www.formula1.com/en/racing/2026/miami/circuit"
     }
    ]
   },
@@ -18622,7 +18758,7 @@
     "chicane",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18638,6 +18774,11 @@
      "name": "formula1.com",
      "title": "2026 Canadian GP race report",
      "url": "https://www.formula1.com/en/latest/article/antonelli-wins-dramatic-canadian-grand-prix-as-russell-retires-amid-thrilling-mercedes-battle.MzvclJaqCidlYMUXonuDq"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2026 Canadian Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-canadian-grand-prix.5mxhs5HB0dFrvjaz7sbBGR"
     }
    ]
   },
@@ -18666,7 +18807,12 @@
     "道幅がとても狭く、壁が近い。ネルソン・ピケが「居間で自転車に乗るようなもの」と言ったことで知られる。追い抜きが難しいので、予選の順位が決勝に直結する。直近12回のうち10回は、フロントロウ（予選1〜2位）から優勝している。",
     "2026年は6月7日に開催され、7台がリタイアする荒れたレースをアントネッリが制し、ハミルトンが2位、ハジャーが3位。モナコでは安全のためストレートモードが使えず、全セッションで前後のウイングは最大ダウンフォースの形に固定された。路面は、ターン19〜1の間、ターン7〜トンネル入口の間、ピットレーンの出入口の3か所で再舗装された。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "ハジャー、追い抜きが難しいモナコでの2027年スプリント計画に疑問「どうやって成立するのか」",
+     "u": "/news/en-gpblog-hadjar-monaco-sprint/"
+    }
+   ],
    "see": [
     "street-circuit",
     "low-speed-circuit",
@@ -18674,7 +18820,7 @@
     "pole-position",
     "active-aero"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18721,7 +18867,8 @@
    "body": [
     "スペイン・カタルーニャ州にあるコース。1周は4.657km、決勝は66周、コーナーは14個。F1での開催は1991年から。1周の最速記録は、ピアストリの1分15秒743（2025年）。長年シーズン前テストの会場としても使われ、マシンの特徴がはっきり出るため「ごまかしが利かない」と言われる。",
     "高速と低速のコーナーが混ざっていて、ターン3〜4やターン9の長いコーナーでは持久力も要る。路面は荒く、タイヤの摩耗が大きい。特に左フロントタイヤへの負担が大きい。追い抜きができる場所は限られ、ほぼターン1だけ。最終シケインは2023年に外された。",
-    "2026年は6月14日に、初めて「バルセロナ＝カタルーニャGP」の名前で開催された（カタルーニャでの36回目のGP）。ハミルトンがフェラーリで初優勝を挙げ（2位ラッセル、3位ノリス）、アントネッリは残り5周でリタイアした。"
+    "2026年は6月14日に、初めて「バルセロナ＝カタルーニャGP」の名前で開催された（カタルーニャでの36回目のGP）。ハミルトンがフェラーリで初優勝を挙げ（2位ラッセル、3位ノリス）、アントネッリは残り5周でリタイアした。",
+    "2026年2月16日、F1は契約の延長を発表した。2026年に続いて2028年・2030年・2032年にも開かれ、スパ・フランコルシャンと交互に開く（スパは2026年・2027年・2029年・2031年）。「スペインGP」の名前は、新しく造られたマドリードのコース（マドリング）が使っている。"
    ],
    "examples": [],
    "see": [
@@ -18730,7 +18877,7 @@
     "overtaking-friendly",
     "testing-rules"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18746,6 +18893,16 @@
      "name": "formula1.com",
      "title": "2026 Barcelona-Catalunya GP race report",
      "url": "https://www.formula1.com/en/latest/article/hamilton-claims-stellar-maiden-grand-prix-victory-for-ferrari-in-barcelona-as-antonelli-suffers-shock-retirement.4yCXiPLHUdcnl2BwNpqUIa"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1 announces multi-year extension with the Circuit de Barcelona-Catalunya",
+     "url": "https://www.formula1.com/en/latest/article/f1-announces-multi-year-extension-with-the-circuit-de-barcelona-catalunya-to.34PBcnuzB9vYVzFIwdEgf4"
+    },
+    {
+     "name": "FIA",
+     "title": "F1 – Hamilton claims first Ferrari win ahead of Russell and Norris as Antonelli retires",
+     "url": "https://www.fia.com/news/f1-hamilton-claims-first-ferrari-win-ahead-russell-and-norris-antonelli-retires"
     }
    ]
   },
@@ -18780,7 +18937,7 @@
     "overtaking-friendly",
     "kerb"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18831,7 +18988,7 @@
     "overtaking-friendly",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18872,8 +19029,9 @@
    "short": "F1で最も長い1周7kmの高速コース。森の中で天気も変わりやすい。",
    "body": [
     "ベルギーのアルデンヌの森の中にある。1周は7.004kmで、現在のF1カレンダーで最も長い。決勝は44周、コーナーは19個。F1での初開催は1950年。1周の最速記録は、ペレスの1分44秒701（2024年）。",
-    "長い直線と、オー・ルージュなどの速いコーナーがつながった、ドライバーに人気のコース。高低差が大きく、プーオン（Pouhon）は今のマシンでもほぼ全開で抜ける。コースの一部が雨でも別の場所は乾いていることがあり、天気が読みにくい。第1・第3セクターに合わせてダウンフォースを減らすか、第2セクターに合わせて増やすか、その決め方が難しい。",
-    "2026年は7月19日に開催され、アントネッリがルクレールを抑えて優勝（3位フェルスタッペン）、ラッセルはリタイアした。ストレートモードは5か所に設定され、オーバーテイクモードの検出点は最終コーナー（ターン19）に置かれた。"
+    "長い直線と、オー・ルージュなどの速いコーナーがつながった、ドライバーに人気のコース。高低差が大きく、プーオン（Pouhon）は今のマシンでもほぼ全開で抜ける。雨の心配が大きく、天気が読みにくい。第1・第3セクターに合わせてダウンフォースを減らすか、第2セクターに合わせて増やすか、その決め方が難しい。",
+    "2026年は7月19日に開催され、アントネッリがルクレールを抑えて優勝（3位フェルスタッペン）、ラッセルはリタイアした。ストレートモードは5か所に設定され、オーバーテイクモードの検出点は最終コーナー（ターン19）に置かれた。",
+    "ベルギーGPは交互開催になった。F1の発表によると、スパでの開催は2026年・2027年・2029年・2031年で、2028年・2030年・2032年はバルセロナ＝カタルーニャ・サーキットが開く。"
    ],
    "examples": [],
    "see": [
@@ -18882,7 +19040,7 @@
     "active-aero",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18903,6 +19061,11 @@
      "name": "formula1.com",
      "title": "2026 Belgian GP race report",
      "url": "https://www.formula1.com/en/latest/article/antonelli-beats-leclerc-to-belgian-grand-prix-win-to-extend-title-lead-as-russell-retires.MAqSJSgXvRP6dLbwiRbWI"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1 announces multi-year extension with the Circuit de Barcelona-Catalunya",
+     "url": "https://www.formula1.com/en/latest/article/f1-announces-multi-year-extension-with-the-circuit-de-barcelona-catalunya-to.34PBcnuzB9vYVzFIwdEgf4"
     }
    ]
   },
@@ -18928,7 +19091,7 @@
    "short": "直線が短く、カートコースのように曲がりが続く、ダウンフォース重視のコース。",
    "body": [
     "ハンガリーにあるコース。1周は4.381km、決勝は70周、コーナーは14個。F1での初開催は1986年で、初代の勝者はネルソン・ピケ。1周の最速記録は、ハミルトンの1分16秒627（2020年）。自然の窪地に造られている。",
-    "直線が短く、コーナーが連続するため「カートコースのよう」とよく言われる。エンジンの力よりも、コーナーが続く中でリズムよく走れる車の扱いやすさが大事になる。追い抜きは難しく、動きがあるのは周回の序盤が多い。ターン1とターン2が追い抜きの場所になる。最終セクターではタイヤが熱を持ちすぎることがある。",
+    "直線が短く、コーナーが連続するため「カートコースのよう」とよく言われる。エンジンの力よりも、コーナーが続く中でリズムよく走れる車の扱いやすさが大事になる。追い抜きは難しく、仕掛けるのはほとんどが1周の始めの部分だ。ターン1とターン2が追い抜きの場所になる。最終セクターではタイヤが熱を持ちすぎることがある。",
     "2026年は7月26日、F1が初めてハンガリーで走ってから40周年の年に開催され、ノリスがフェルスタッペンとアントネッリを抑えて優勝した。ストレートモードは、スタート／フィニッシュの直線、ターン1〜2、ターン3〜4、ターン11〜12の4か所に設定された。"
    ],
    "examples": [],
@@ -18938,7 +19101,7 @@
     "downforce",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -18980,7 +19143,8 @@
    "body": [
     "オランダの砂丘の中を走るコース。1周は4.259km、決勝は72周、コーナーは14個。F1での初開催は1952年で、1985年を最後に離れたあと、2021年に36年ぶりに復活した。1周の最速記録は、ハミルトンの1分11秒097（2021年）。",
     "ジェットコースターのように上り下りが続く。最終コーナーのアリー・ルイエンダイクは18度のバンク（傾斜）がついていて（インディアナポリスのほぼ2倍）、追い抜きを仕掛ける場所の一つ。ターン3にもバンクがあり、多くのドライバーが外側のラインを使う。古い設計のコースなので、追い抜きは難しい。",
-    "2026年は8月23日に開催され、ノリスが優勝（2位アントネッリ、3位ラッセル）、地元のフェルスタッペンはクラッシュでリタイアした。ザントフォールトで初めてスプリントが行われた年でもある。ストレートモードは、スタート／フィニッシュの直線とターン10〜11の2か所だった。"
+    "2026年は8月23日に開催され、ノリスが優勝（2位アントネッリ、3位ラッセル）、地元のフェルスタッペンはクラッシュでリタイアした。ザントフォールトで初めてスプリントが行われた年でもある。ストレートモードは、スタート／フィニッシュの直線とターン10〜11の2か所だった。",
+    "2026年が最後のオランダGPになった。F1は2024年12月4日、契約を1年延ばして2026年まで開くことと、主催者が2026年より後は続けないと決めたことを発表した。"
    ],
    "examples": [],
    "see": [
@@ -18989,7 +19153,7 @@
     "home-race",
     "straight-corner-mode"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "formula1.com",
@@ -19005,6 +19169,16 @@
      "name": "formula1.com",
      "title": "2026 Dutch GP race report",
      "url": "https://www.formula1.com/en/latest/article/norris-wins-dramatic-dutch-grand-prix-from-antonelli-and-russell-as-verstappen-crashes-out.Zn7iYevVGp5eHzFkTEAz7"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Formula 1 to celebrate final Dutch Grand Prix in 2026 after one-year extension confirmed for Zandvoort",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-to-celebrate-final-dutch-grand-prix-in-2026-after-one-year.7EYLHSMGIJyqefI5tMjLrZ"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Dutch GP: need to know",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-dutch-grand-prix.7rXg1scAXG5IMsHc9k74g4"
     }
    ]
   },
@@ -19087,7 +19261,7 @@
    "body": [
     "モンツァは、イタリアGPが開かれる歴史あるコースだ。F1公式サイトによると、1周は5.793km、コーナーは11、決勝は53周。1922年にわずか110日で造られ、ブルックランズ（イギリス）とインディアナポリス（アメリカ）に次ぐ、世界で3番目の専用レース場とされる。F1の選手権には1950年から加わり、イモラで開かれた1980年を除いて毎年イタリアGPを開いてきた。",
     "1周の約80%でアクセル全開になるので、F1屈指の高速コースだ。有名なコーナーに、レズモ、アスカリ、そして最終コーナーのパラボリカ（いまの名前はクルバ・アルボレート）がある。ラップレコードは、2025年にノリスが出した1分20秒901だ（F1公式サイト）。",
-    "2026年は、アクティブエアロのストレートモード（空気抵抗を減らせる区間）が4つ、オーバーテイクの検出地点がターン11の手前に1つ置かれた（F1公式サイト）。"
+    "2026年は、アクティブエアロのストレートモード（空気抵抗を減らせる区間）が4つ、オーバーテイクの検出地点がターン11の手前に1つ置かれた（F1公式サイト）。決勝は9月6日に開かれ、アントネッリがラッセルとフェルスタッペンを抑えて優勝した（F1公式サイト）。"
    ],
    "see": [
     "high-speed-circuit",
@@ -19106,10 +19280,15 @@
      "name": "formula1.com",
      "title": "CIRCUIT GUIDE: Everything you need to know about the Autodromo Nazionale Monza",
      "url": "https://formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-autodromo-nazionale-monza.51PKqBRlxNs0fzLWQzsnd0"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2026 Italian Grand Prix（サーキット情報・結果）",
+     "url": "https://www.formula1.com/en/racing/2026/italy/circuit"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "examples": []
   },
   {
@@ -19453,9 +19632,9 @@
    ],
    "short": "メキシコシティGPの会場。海抜2,200m超で空気が薄く、元野球場の中を通る区間がある。",
    "body": [
-    "エルマノス・ロドリゲスは、メキシコシティにあるコースだ。F1公式サイトによると、1959年に完成し、F1の選手権の最初の開催は1963年。1周は4.304km、決勝は71周で、ラップレコードは2021年にボッタスが出した1分17秒774だ。コーナーは17（メルセデスF1）。名前は、レーサーだったロドリゲス兄弟（ペドロとリカルド）にちなむ。F1は長い空白のあと、2015年に戻ってきた（F1公式サイト）。",
-    "F1公式サイトによると、海抜は2km以上ある。メルセデスF1は「2,200m以上で、F1が訪れる中でいちばん高い会場」と紹介している。空気が薄いので、車の空力やエンジンの冷却に影響が出る（くわしくは「標高」）。",
-    "コース終盤の有名なコーナー「ペラルタ」は、いまは途中で切られ、元野球場のフォロ・ソルの中を通る。F1公式サイトは、F1で最も個性的な景色の一つと紹介している。2026年のメキシコシティGPは10月30日〜11月1日に開かれる予定だ（F1公式サイト、2026年10月2日時点で開催前）。"
+    "エルマノス・ロドリゲスは、メキシコシティにあるコースだ。F1公式サイトによると、1959年に完成し、F1の選手権の最初の開催は1963年。1周は4.304km、決勝は71周で、ラップレコードは2021年にボッタスが出した1分17秒774だ。コーナーは17（F1公式サイトが紹介したピレリの資料）。名前は、レーサーだったロドリゲス兄弟（ペドロとリカルド）にちなむ。F1は長い空白のあと、2015年に戻ってきた（F1公式サイト）。",
+    "F1公式サイトによると、海抜は2km以上ある。マクラーレンは2,285mとし、次に高いインテルラゴス（800m）を大きく上回ると紹介している。空気が薄いので、車の空力やエンジンの冷却に影響が出る（くわしくは「標高」）。",
+    "コース終盤の有名なコーナー「ペラルタ」は、いまは途中で切られ、元野球場のフォロ・ソルの中を通る。F1公式サイトは、F1で最も個性的な景色の一つと紹介している。2026年のメキシコシティGPは10月30日〜11月1日に開かれ、決勝は11月1日の予定だ（F1公式サイト）。"
    ],
    "see": [
     "altitude",
@@ -19483,11 +19662,26 @@
      "name": "formula1.com",
      "title": "Formula 1 reveals calendar for 2026 season",
      "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+    },
+    {
+     "name": "formula1.com",
+     "title": "NEED TO KNOW: 2024 Mexico City Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2024-mexico-city.1h3w7llCmLdZJbmfTUwUWs"
+    },
+    {
+     "name": "McLaren",
+     "title": "Mexico City Grand Prix 2026",
+     "url": "https://www.mclaren.com/racing/formula-1/2026/mexico-city-grand-prix/"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-02",
-   "examples": []
+   "checked": "2026-10-28",
+   "examples": [
+    {
+     "t": "標高約2,250mの薄い空気で、各チームは高ダウンフォース仕様に　冷却も課題とGPFans",
+     "u": "/news/nl-gpfans-mexico-altitude-challenge/"
+    }
+   ]
   },
   {
    "id": "circuit-interlagos",
@@ -19511,7 +19705,7 @@
    "body": [
     "インテルラゴスは、ブラジルのサンパウロにあるコースで、正式名はアウトドローモ・ジョゼ・カルロス・パーチェだ。F1公式サイトによると、1周は4.309km、決勝は71周。コーナーは15で、反時計回りだ。工事は1938年に始まった。F1の選手権のブラジルGPは1973年に始まり、地元のエマーソン・フィッティパルディが優勝した。",
     "コースには「セナS」と呼ばれる連続コーナーがあり、傾斜のついた最終コーナーを抜けてホームストレートに戻る（F1公式サイト）。正式名は、1975年にここで優勝したカルロス・パーチェにちなむ。",
-    "ラップレコードは、2018年にボッタスが出した1分10秒540だ。2026年のサンパウロGPは11月6〜8日に開かれる予定（F1公式サイト、2026年10月2日時点で開催前）。"
+    "ラップレコードは、2018年にボッタスが出した1分10秒540だ。2026年のサンパウロGPは11月6〜8日に開かれる予定だ（F1公式サイト）。"
    ],
    "see": [
     "anticlockwise",
@@ -19541,7 +19735,7 @@
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-02",
+   "checked": "2026-10-28",
    "examples": []
   },
   {
@@ -19565,8 +19759,8 @@
    "short": "ラスベガスGPの市街地コース。ストリップを走る高速コースで、土曜の夜に決勝を行う。",
    "body": [
     "ラスベガス市街地コースは、ラスベガスの目抜き通り「ストリップ」を使う市街地コースだ。F1公式サイトによると、1周は6.201km、コーナーは17、決勝は50周。現在のコースでのF1開催は2023年からだ。1981年と1982年にも、シーザーズ・パレスGPの名前でF1が開かれている。",
-    "F1公式サイトは、平均速度がモンツァと同じくらいで、追い抜きも多いと紹介している。コースはシーザーズ・パレス、ベラージオ、ベネチアンなどの前を通る。決勝は現地の土曜の夜に行われる（RacingNews365）。ラップレコードは、2025年にフェルスタッペンが出した1分33秒365だ（F1公式サイト）。",
-    "2026年のラスベガスGPは11月19〜21日に開かれる予定だ（F1公式サイト、2026年10月2日時点で開催前）。"
+    "F1公式サイトは、平均速度がモンツァと同じくらいで、追い抜きも多いと紹介している。コースはシーザーズ・パレス、ベラージオ、ベネチアンなどの前を通る。決勝は現地の土曜の夜に行われる（F1公式サイト）。ラップレコードは、2025年にフェルスタッペンが出した1分33秒365だ（F1公式サイト）。",
+    "2026年のラスベガスGPは11月19〜21日に開かれる予定だ（F1公式サイト）。"
    ],
    "see": [
     "night-race",
@@ -19588,11 +19782,21 @@
      "name": "RacingNews365",
      "title": "Las Vegas GP",
      "url": "https://racingnews365.com/f1/races/gp-las-vegas"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Las Vegas Strip Circuit（2026年サーキット情報）",
+     "url": "https://www.formula1.com/en/racing/2026/las-vegas/circuit"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-02",
-   "examples": []
+   "checked": "2026-10-28",
+   "examples": [
+    {
+     "t": "ラッセル、次のエンジン交換の降格は「ラスベガスかも」　今回は追い抜きがやや容易なコースを選べる",
+     "u": "/news/de-motorsporttotal-russell-engine-penalty-vegas/"
+    }
+   ]
   },
   {
    "id": "circuit-lusail",
@@ -19837,9 +20041,9 @@
    ],
    "short": "サウジアラビアGPの会場。F1で最も速い市街地コースだが、2026年のレースは中止になった。",
    "body": [
-    "ジェッダ市街地コースは、サウジアラビアGPが開かれてきた市街地コースだ。F1公式サイトによると、臨時の市街地コースだが、常設の部分もある。1周は6.174km、コーナーは27でカレンダーでいちばん多く、決勝は50周。F1は2021年に初めて開いた。",
-    "F1公式サイトは「F1がこれまでに見た最も速い市街地コース」と紹介し、平均時速は約250kmで、カレンダーではモンツァに次ぐという。速くて流れるようなコーナーが続く。ラップレコードは、初開催の2021年にハミルトンが出した1分30秒734だ（メルセデスF1、F1公式の結果ページ）。",
-    "2026年のサウジアラビアGPは、バーレーンGPとともに3月14日に中止が発表された。理由は中東情勢で、4月に代わりのレースは設けないとされた（PlanetF1、Sky Sports）。この結果、2026年のカレンダーは24戦から22戦に減った。その後、バーレーンGPがマレーシアのセパンで開かれることになり、23戦に戻った（f1technical.net）。"
+    "ジェッダ市街地コースは、サウジアラビアGPが開かれてきた市街地コースだ。F1公式サイトによると、臨時の市街地コースだが、常設の部分もある。1周は6.174km、コーナーは27で、2025年のカレンダーではいちばん多く、決勝は50周。F1は2021年に初めて開いた。",
+    "F1公式サイトは「F1がこれまでに見た最も速い市街地コース」と紹介し、平均時速は約250kmで、2025年のカレンダーではモンツァに次ぐという。速くて流れるようなコーナーが続く。ラップレコードは、初開催の2021年にハミルトンが出した1分30秒734だ（メルセデスF1、F1公式の結果ページ）。",
+    "2026年のサウジアラビアGPは、バーレーンGPとともに3月14日に中止が発表された。理由は中東情勢で、4月に代わりのレースは設けないとされた（F1公式サイト）。この結果、2026年のカレンダーは24戦から22戦に減った（The Race）。その後、F1は7月26日に、バーレーンGPを10月2〜4日にマレーシアのセパンで開くと発表し、23戦になった（Sky Sports、f1technical.net）。"
    ],
    "see": [
     "street-circuit",
@@ -19877,11 +20081,36 @@
      "name": "f1technical.net",
      "title": "Formula 1 returns to Sepang as Malaysia to host 2026 Bahrain Grand Prix",
      "url": "https://www.f1technical.net/news/29047"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Bahrain and Saudi Arabian Grands Prix will not take place in April",
+     "url": "https://www.formula1.com/en/racing/2026/saudi-arabia"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Malaysia added to 2026 F1 calendar in October to host postponed Bahrain GP",
+     "url": "https://www.skysports.com/f1/news/12040/13566600/malaysia-added-to-2026-f1-calendar-in-october-to-host-postponed-bahrain-gp-amid-continued-conflict-in-middle-east"
+    },
+    {
+     "name": "formula1.com",
+     "title": "2025 Saudi Arabian Grand Prix（サーキット情報）",
+     "url": "https://www.formula1.com/en/racing/2025/saudi-arabia"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's Bahrain and Saudi Arabian GPs cancelled",
+     "url": "https://www.the-race.com/formula-1/f1-bahrain-saudi-arabia-races-cancelled-no-replacement"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-02",
-   "examples": []
+   "checked": "2026-10-28",
+   "examples": [
+    {
+     "t": "中東情勢が続く中、FIA会長はカタールとアブダビの開催を明言　サウジアラビアGPは今季すでに中止",
+     "u": "/news/it-f1it-us-diplomats-saudi-sulayem/"
+    }
+   ]
   },
   {
    "id": "nose",
@@ -23771,13 +24000,13 @@
     "常勤",
     "審判団"
    ],
-   "short": "スチュワード4人のうち1人が務める、元F1ドライバーの審査員。",
+   "short": "グランプリのスチュワード（3〜4人）のうち1人が務める、元F1ドライバーの審査員。",
    "body": [
-    "グランプリの審判団（スチュワード）は、ふつう1つの週末で4人だ。2010年から、そのうち1人は元F1ドライバーが務めている。これがドライバースチュワードで、ほかの3人は、法律家や競技運営の専門家などが多い。",
+    "グランプリの審判団（スチュワード）は、規則では、FIAが3人以上4人以下を選び、そのうち1人が議長になる。2025年からは、多くのGPで3人、仕事の多い6戦（オーストラリア、中国、カナダ、シンガポール、メキシコシティ、サンパウロ）で4人になったと、Motorsport.comなどが報じた。FIAのスポーティングディレクターも2026年4月、スチュワードは「3人か4人」だと話している（GPFans）。開催国の団体（ASN）の国の人を1人置く決まりもある。今季のオーストラリアGPでは、地元の人も4人の中に入っていた（GPFans）。2010年から、そのうち1人は元F1ドライバーが務めている。これがドライバースチュワードで、ほかは法律家や競技運営の専門家などが多い。",
     "役目は、事故や違反を調べて罰を決める作業に、ドライバーとしての経験を持ち込むことだ。名前は、レースごとに入れ替わる。今季のオーストラリアGPでも、元F1ドライバーが1人、4人の中に入っていた。",
     "この役は、人選が話題になりやすい。2025年1月、ジョニー・ハーバートはスチュワードの職を離れた。解説者の仕事との利益相反が理由とされた。同じ年のカナダGPでは、別の元ドライバーが、許可のない発言を理由に1戦だけ外れた。2025年9月には、カルロス・サインツがアゼルバイジャンGPのバクーで、スチュワードのうち少なくとも2人を、毎戦同じ人が務める常任にするよう求めた（PlanetF1）。10月に伝えられたDAZNのインタビューでは、元ドライバーのスチュワードも毎戦同じ人にするべきだと話した（GRANDPRIX.COM）。"
    ],
-   "rule": "スポーティングレギュレーション B1.3.1（FIA任命のスチュワードの人数）",
+   "rule": "スポーティングレギュレーション B1.3.1 a)（FIAが選ぶスチュワードは3〜4人、1人が議長）、B1.3.2 a)（ASNが出すスチュワード1人）（Issue 09 で確認）",
    "examples": [],
    "see": [
     "stewards",
@@ -23785,7 +24014,7 @@
     "penalty-points",
     "time-penalty"
    ],
-   "checked": "2026-10-23",
+   "checked": "2026-10-28",
    "src": [
     {
      "name": "FIA",
@@ -23841,6 +24070,21 @@
      "name": "PlanetF1",
      "title": "Carlos Sainz voices 'very clear opinion' on substantial FIA change（2025年9月28日、バクーでの発言）",
      "url": "https://www.planetf1.com/news/carlos-sainz-fia-permanent-stewards"
+    },
+    {
+     "name": "GPFans",
+     "title": "The FIA use 30 people to help stewards police drivers at F1 races, this is how（2026年4月5日、FIAのスポーティングディレクター Tim Malyon「three or four stewards」）",
+     "url": "https://www.gpfans.com/en/f1-news/1080903/f1-fia-stewards/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "F1 stewards' panels set to expand at six grands prix in 2025（多くのGPは3人、6戦で4人）",
+     "url": "https://www.motorsport.com/f1/news/f1-stewards-panels-expand-2025/10699971/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA take immediate action over F1 stewards with big change for 2025 - report（2025年3月3日、Autosportの報道として6戦で4人）",
+     "url": "https://www.planetf1.com/news/fia-introduce-new-steward-system-australian-gp-debut-report"
     }
    ]
   },
@@ -31246,7 +31490,7 @@
     "2027年は、2026年に始まった新しい規則の2年目だ。規則の変更は、F1コミッションなどで話し合ったあと、FIAの世界モータースポーツ評議会（WMSC）が承認して決まる。2026年10月23日時点で、承認や公式の発表があった主な変更は次のとおりだ。",
     "パワーユニット：6月10日に合意し、6月23日のWMSCが承認した。燃料のエネルギーの流れは2026年より5%増え、エンジン（内燃機関）の最大出力は400kWから420kWに上がる。MGU-Kの最大出力は350kWから300kWに下がる。オーバーテイクモードでは350kWのままだ（F1公式）。2028年はさらに変わる（→燃料流量の制限）。テスト：同じ6月23日の承認で、シーズン前のテストが3日から4日に増える（F1公式）。",
     "スプリント：9月16日に発表された2027年のカレンダーは24戦で、スプリントは6大会から10大会に増える。開幕戦がスプリントの大会になるのは初めてで、開幕はバーレーンだ。モナコでも初めてスプリントが開かれる（RACER）。お金：10月19日のWMSCは、財務規則に関して、F1とF1以外の活動を、場所とITの面で分ける新しい要件を承認した（FIA）。",
-    "決勝の距離など：F1コミッションは9月21日、2027年の決勝の総距離を305kmから290kmに縮めること、雨などで中断したときにレースを終える時刻を決めること、ギアボックスの公認をやめることで合意した。F1公式は、どれもWMSCの承認が条件だと書いている。FIAは10月19日に2027年の競技規則（第1版）を公表した。GPblogは、この規則で決勝の距離が290kmになり、2028年には305kmを超える距離に戻ると報じた。モナコは260kmを超える距離のままだ（→周回数）。10月19日のWMSCは、2026年と2027年の規則の改正を承認したと発表したが、どの項目かは示していない（FIA）。",
+    "決勝の距離など：F1コミッションは9月21日、2027年の決勝の総距離を305kmから290kmに縮めること、雨などで中断したときにレースを終える時刻を決めること、ギアボックスの公認をやめることで合意した。F1公式は、どれもWMSCの承認が条件だと書いている。FIAは10月19日に2027年の競技規則（第1版）を公表した。この規則のB2.5.2では、決勝は290kmを超える最も少ない周回数になり、モナコは260kmを超える周回数のままだ。翌年以降の変更をまとめた付則B5には、2028年に305kmへ戻すと書かれている。中断を含めて全部で3時間という上限はなくなり、大会ごとに示す決勝の打ち切り時刻に替わった（B2.5.3、→周回数）。10月19日のWMSCは、2026年と2027年の規則の改正を承認したと発表したが、どの項目かは示していない（FIA）。",
     "ホイールとPU：The Raceによると、10月のWMSCは、2027年から各予選と決勝で、前と後ろそれぞれ1つの仕様のホイールリムしか使えなくする変更を承認した（→ホイールリム）。PUの部品を1人あたり1つずつ多く使える特例は、2026年だけの予定だったが、2027年と2028年も続くと伝えられた（F1-Gate.com、→パワーユニットの使用数）。",
     "報道で伝えられている案：リアウイングの2つのモードの切り替えにかけてよい時間を、0.4秒から0.3秒に縮めると、The Raceが10月9日に報じた（→マカレナウイング）。レッドブルのサイドポッドの形を可能にしている規則の許容値を20mmから5mmにするという案も、イタリアの媒体の報道として伝えられた（Crash.net、10月14日）。"
    ],
@@ -31297,7 +31541,7 @@
     {
      "name": "Formula 1 公式",
      "title": "Agreement reached on proposed F1 regulatory changes for 2027 and 2028（2026年6月10日、燃料流量+5%、ICE 420kW、MGU-K 350kW→300kW）",
-     "url": "https://www.formula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb.dlv3dZcWoXsXGbhw2WWyb"
+     "url": "https://www.formula1.com/en/latest/article/agreement-reached-on-proposed-f1-regulatory-changes-for-2027-and-2028.dlv3dZcWoXsXGbhw2WWyb"
     },
     {
      "name": "Formula 1 公式",
@@ -31343,9 +31587,14 @@
      "name": "F1-Gate.com",
      "title": "FIA 2027年F1のPU使用制限を緩和 追加使用枠を2028年まで延長（2026年10月22日）",
      "url": "https://f1-gate.com/fia/229622.html"
+    },
+    {
+     "name": "FIA",
+     "title": "2027 F1 Regulations Section B (Sporting) Issue 01（2026年10月19日、WMSC承認同日）B2.5.2（決勝は290km超、モナコ260km超）、B2.5.3（打ち切り時刻）、付則B5「Changes for 2028」（B2.5.2を305km超に戻す）",
+     "url": "https://www.fia.com/system/files/documents/fia_2027_f1_regulations_-_section_b_sporting_-_iss_01_-_2026-10-19.pdf"
     }
    ],
-   "checked": "2026-10-23"
+   "checked": "2026-10-28"
   },
   {
    "id": "wheel-rim",
@@ -31486,7 +31735,7 @@
    "short": "F1ドライバーの利益を代表する団体。安全の問題から規則への意見まで、ドライバーの声をまとめる。",
    "body": [
     "GPDA（グランプリ・ドライバーズ・アソシエーション）は、F1ドライバーの利益を代表する団体だ。1961年に安全を良くするために作られ、1994年にイモラでセナとラッツェンバーガーが亡くなったあと、立て直された（Motorsport.com）。GrandPrix247は「F1ドライバーの労働組合」と呼んでいる。",
-    "運営は数人のディレクターが担う。2025年2月、サインツが、引退したベッテルに代わってディレクターになった。このとき、ほかのディレクターは、会長のアレクサンダー・ブルツ（元F1ドライバー）、現役のジョージ・ラッセル、法律面の担当者だった（GrandPrix247）。2026年7月にも、ブルツはGPDAの会長として紹介されている（grandprix.com）。",
+    "運営は数人のディレクターが担う。2025年2月、サインツが、引退したベッテルに代わってディレクターになった。このとき、ほかのディレクターは、会長のアレクサンダー・ブルツ（元F1ドライバー）、現役のジョージ・ラッセル、法律面の担当者だった（GrandPrix247）。2026年7月にも、ブルツはGPDAの会長として紹介されている（grandprix.com）。10月21日のRacingNews365とMotorsport Weekも、ブルツを会長、ラッセルとサインツをドライバーのディレクターとして紹介している。",
     "レースの外の問題にもかかわる。2022年のサウジアラビアGPでは、ミサイル攻撃のあと、ドライバーがストライキをする寸前になった（Motorsport.com）。2026年7月、ブルツは、GPDAがかかわらなければ2026年の規則は改められなかったと話した（grandprix.com）。10月のアメリカGPの会見では、サインツが、GPDAの代表ではなく個人の考えだと断ったうえで、カタールとアブダビの開催を「いま確信するのは非常に難しい」と述べた。GPDAはF1やFIAの半分の情報も持っていない、とも話している（The Race）。"
    ],
    "examples": [
@@ -31521,9 +31770,24 @@
      "name": "The Race",
      "title": "'Very difficult' to be convinced Middle East races go ahead - Sainz（2026年10月22日、Josh Suttill）",
      "url": "https://www.the-race.com/formula-1/f1-qatar-abu-dhabi-very-difficult-to-be-convinced-races-go-ahead-carlos-sainz/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Lando Norris reveals 'bias' as new status confirms F1 weight（2026年10月21日、Jake Nichol。ブルツが会長、ラッセルとサインツがドライバーのディレクター）",
+     "url": "https://racingnews365.com/lando-norris-reveals-bias-as-new-status-confirms-f1-weight"
+    },
+    {
+     "name": "Motorsport Week",
+     "title": "'I'm biased towards drivers and fans': Norris on his GPDA voice（2026年10月21日、Hannah Kate Costello。会長のブルツ、ディレクターのラッセルとサインツ）",
+     "url": "https://motorsportweek.com/2026/10/21/im-biased-towards-drivers-and-fans-norris-on-his-gpda-voice"
+    },
+    {
+     "name": "autosport web",
+     "title": "FIA、カートの安全性が脅かされているというGPDA会長ブルツの主張を否定（2025年8月26日、表記「GPDA（グランプリ・ドライバーズ・アソシエーション）」）",
+     "url": "https://www.as-web.jp/f1/1244089"
     }
    ],
-   "checked": "2026-10-23"
+   "checked": "2026-10-28"
   },
   {
    "id": "strategist",
@@ -32625,6 +32889,79 @@
     }
    ],
    "checked": "2026-10-27"
+  },
+  {
+   "id": "chassis-name",
+   "term": "マシンの名前（シャシー名）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "シャシー名",
+    "chassis name",
+    "マシン名",
+    "しゃしーめい"
+   ],
+   "words": [
+    "新車の名前",
+    "型式",
+    "SF-26",
+    "W17",
+    "RB22",
+    "FW50"
+   ],
+   "short": "各チームが毎年の車につける名前。チームの頭文字に、年や通し番号を組み合わせることが多い。",
+   "body": [
+    "F1では毎年、各チームが新しい車を作り、それぞれに名前をつける。多くのチームは決まった型を続け、数字だけを毎年変えている。2026年の名前は、マクラーレンがMCL40、メルセデスがW17（F1 W17とも書く）、レッドブルがRB22、フェラーリがSF-26、ウィリアムズがFW48、レーシングブルズがVCARB 03、アストンマーティンがAMR26、ハースがVF-26、アウディがR26、アルピーヌがA526、キャデラックがMAC-26だ。",
+    "名前の由来はチームごとに違う。年の下2桁を入れる型には、フェラーリのSF-26、アストンマーティン・レーシングの頭文字を使うAMR26、マリオ・アンドレッティ・キャデラックを略したMAC-26がある。アルピーヌのA526は、計画の名前A500と年の26を合わせたものだ。メルセデスのWは、ドイツ語で「車」を意味するWagenから来ている。ハースのVFは、ハース・オートメーションが最初に作った工作機械VF-1にさかのぼる。レーシングブルズのVCARBは、スポンサー名を含むチーム名の頭文字で、この名前で3台目の車になる。",
+    "通し番号の型は、毎年1つずつ数が増える。レッドブルはRB1から始まり、例外は2021年だけだ。この年はRB17ではなくRB16Bとした。マクラーレンは2017年のMCL32から1つずつ増やしてきたが、2023年は創立60年にちなんでMCL60とした。ウィリアムズのFWは創設者フランク・ウィリアムズの頭文字だ。2027年の車は、創立50年に合わせてFW48からFW50へ飛ぶ。40周年の2017年にもFW39を飛ばしている。来年の車も、走る前からこの番号で呼ばれる。PlanetF1は、レッドブルがスタートの問題を2027年のRB23で設計から取り除こうとしていると伝えた。"
+   ],
+   "examples": [
+    {
+     "t": "ウィリアムズ、2027年型の名前をFW50に決定。創設50周年のためFW49は飛ばす",
+     "u": "/news/it-formula1it-williams-fw50/"
+    },
+    {
+     "t": "レッドブルのスタートの問題、直すには大幅な設計変更が必要で、実現は2027年のRB23とメキース代表",
+     "u": "/news/en-planetf1-mekies-red-bull-start-problems/"
+    },
+    {
+     "t": "マクラーレンのMCL40の扱いにくさ、根本から直せるのは早くても2027年型のMCL41とステラ代表",
+     "u": "/news/de-motorsporttotal-mclaren-mcl40-fundamental/"
+    }
+   ],
+   "see": [
+    "car-launch",
+    "livery",
+    "b-spec",
+    "next-year-focus"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "F1 2026 cars: What name has each team given its chassis for the 2026 season?（2026年2月27日）",
+     "url": "https://www.planetf1.com/news/f1-2026-cars-chassis-names"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Every car name for the 2026 F1 season（2026年2月28日）",
+     "url": "https://racingnews365.com/every-car-name-for-the-2026-f1-season"
+    },
+    {
+     "name": "Formula 1",
+     "title": "Williams outline plans for 50th anniversary year with calendar of special events（2026年10月15日）",
+     "url": "https://www.formula1.com/en/latest/article/williams-outline-plans-for-50th-anniversary-year-with-calendar-of-special-events.wxPd7X2kbw2bUHstwFeZB"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Williams is set to 'skip a year' with 2027 F1 car（2026年4月14日）",
+     "url": "https://www.the-race.com/formula-1/williams-2027-f1-car-name-change/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Red Bull start problems: Laurent Mekies on 2027 changes（2026年10月27日、RB23）",
+     "url": "https://www.planetf1.com/news/red-bull-start-problems-laurent-mekies-2027-changes"
+    }
+   ],
+   "checked": "2026-10-28"
   }
  ],
  "sources": [

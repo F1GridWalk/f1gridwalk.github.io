@@ -4827,18 +4827,20 @@
     "Alex Wurz",
     "ヴルツ"
    ],
-   "role": "サーキット設計のコンサルタント（ルワンダの新サーキットの設計に参加）",
-   "org": "自身のコンサルティング会社",
-   "short": "元F1ドライバーで、元GPDA（グランプリ・ドライバーズ協会）会長。自身のコンサルティング会社が、ティルケ・エンジニアリングと組んで、ルワンダに造るアフリカGPの新しいサーキットを設計する。サウジアラビアのキディヤのコースにも深く関わる。",
+   "role": "GPDA会長／サーキット設計のコンサルタント（ルワンダの新サーキットの設計に参加）",
+   "org": "GPDA／自身のコンサルティング会社",
+   "short": "元F1ドライバーで、GPDA（グランプリ・ドライバーズ・アソシエーション）の会長。自身のコンサルティング会社が、ティルケ・エンジニアリングと組んで、ルワンダに造るアフリカGPの新しいサーキットを設計する。サウジアラビアのキディヤのコースにも深く関わる。",
    "avoid": [
     "「ヴルツ」の表記を本文で使う（autosport webは「ブルツ」）",
     "一人でコースを設計したと書く（ティルケ・エンジニアリングと共同）",
-    "今もGPDA会長と書く"
+    "「元GPDA会長」と書く（2026年10月21日のRacingNews365とMotorsport Weekは会長として紹介。PlanetF1の10月13日の記事だけがformer chairmanと書いた）",
+    "GPDAを「グランプリ・ドライバーズ協会」と訳す（autosport webとルールブックは「グランプリ・ドライバーズ・アソシエーション」）"
    ],
    "words": [
     "ルワンダ",
     "アフリカGP",
     "サーキット設計",
+    "GPDA会長",
     "元F1ドライバー",
     "ティルケ"
    ],
@@ -4852,12 +4854,27 @@
      "name": "PlanetF1",
      "title": "F1 makes historic announcement with African Grand Prix confirmed（2026年10月13日、former GPDA chairman、Tilke Engineeringと共同）",
      "url": "https://www.planetf1.com/news/african-grand-prix-f1-calendar"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Lando Norris reveals 'bias' as new status confirms F1 weight（2026年10月21日、「with former F1 racer Alex Wurz the chairman」）",
+     "url": "https://racingnews365.com/lando-norris-reveals-bias-as-new-status-confirms-f1-weight"
+    },
+    {
+     "name": "Motorsport Week",
+     "title": "'I'm biased towards drivers and fans': Norris on his GPDA voice（2026年10月21日、GPDA chairman Alex Wurz）",
+     "url": "https://motorsportweek.com/2026/10/21/im-biased-towards-drivers-and-fans-norris-on-his-gpda-voice"
+    },
+    {
+     "name": "autosport web",
+     "title": "FIA、カートの安全性が脅かされているというGPDA会長ブルツの主張を否定（2025年8月26日、表記「GPDA（グランプリ・ドライバーズ・アソシエーション）の会長を務めるアレクサンダー・ブルツ」）",
+     "url": "https://www.as-web.jp/f1/1244089"
     }
    ],
    "appears": [
     "/deep/rules/africa-gp/"
    ],
-   "checked": "2026-10-21"
+   "checked": "2026-10-28"
   },
   {
    "id": "pat-fry",
@@ -6835,6 +6852,65 @@
      "url": "https://www.instagram.com/stoffvandoorne/"
     }
    ]
+  },
+  {
+   "id": "pedro-de-la-rosa",
+   "name": "ペドロ・デ・ラ・ロサ",
+   "kana": "",
+   "en": "Pedro de la Rosa",
+   "aliases": [
+    "デ・ラ・ロサ",
+    "de la Rosa"
+   ],
+   "role": "チームアンバサダー",
+   "org": "アストンマーティン",
+   "short": "元F1ドライバー。2022年10月にアストンマーティンのアンバサダーに就任した。就任時の発表では、広報・メディア・商業面の仕事や助言を受け持つとされた。",
+   "avoid": [
+    "「デラロサ」「デ・ラ・ローサ」（autosport webの表記は「ペドロ・デ・ラ・ロサ」）",
+    "「アストンマーティンのチーム代表デ・ラ・ロサ」（役職はアンバサダー。チーム代表はエイドリアン・ニューウェイ）"
+   ],
+   "words": [
+    "アストンマーティン",
+    "アンバサダー",
+    "元F1ドライバー"
+   ],
+   "sources": [
+    {
+     "name": "autosport web",
+     "title": "日本でも活躍したデ・ラ・ロサが語る鈴鹿の難しさと魅力。アストンマーティンが都内でイベントを開催（2023年9月20日、「ペドロ・デ・ラ・ロサ」「チームアンバサダー」）",
+     "url": "https://www.as-web.jp/f1/992351"
+    },
+    {
+     "name": "autosport web",
+     "title": "デ・ラ・ロサ「アロンソが扱いにくい人物だとは思わない」（2022年10月18日、「新たにアストンマーティンのアンバサダーに就任した元F1ドライバーのペドロ・デ・ラ・ロサ」）",
+     "url": "https://www.as-web.jp/f1/871892"
+    },
+    {
+     "name": "GPFans",
+     "title": "Aston Martin hand Pedro de la Rosa expansive ambassadorial role（2022年10月13日）",
+     "url": "https://www.gpfans.com/en/f1-news/93672/pedro-de-la-rosa-aston-martin-ambassador/"
+    },
+    {
+     "name": "motorsport.com 日本版（carview!掲載）",
+     "title": "不振が続くアストンマーティン、トンネルの出口は「かなり先にある」とデ・ラ・ロサ（2026年6月11日、「チームアンバサダー」）",
+     "url": "https://carview.yahoo.co.jp/news/detail/c7c4ae72e00ba1b967be818bf655d0efe4e76987/?mode=top"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "Pedro de la Rosa says Aston Martin \"not yet seeing light\" but full faith in Adrian Newey（2026年6月6日、\"Aston Martin team ambassador Pedro de la Rosa\"）",
+     "url": "https://www.grandprix247.com/f1-teams-news/pedro-de-la-rosa-says-aston-martin-not-yet-seeing-light-but-full-faith-in-adrian-newey"
+    },
+    {
+     "name": "Formula 1",
+     "title": "'One of the best moments we've had' – De la Rosa on how Aston Martin's risky upgrade strategy paid off（2026年9月9日、写真の説明に \"Team Ambassador of Aston Martin F1 Team\"）",
+     "url": "https://www.formula1.com/en/latest/article/one-of-the-best-moments-weve-had-de-la-rosa-on-how-aston-martins-risky-upgrade-strategy-paid-off.7upoB0qtRkJJyvu90aoeIE"
+    }
+   ],
+   "appears": [
+    "/news/en-crashnet-alonso-us-gp-floor-damage/",
+    "/deep/rules/circuit-bahrain/"
+   ],
+   "checked": "2026-10-28"
   }
  ]
 }
