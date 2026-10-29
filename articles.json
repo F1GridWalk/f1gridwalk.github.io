@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T06:20:00+09:00",
+ "updatedAt": "2026-10-29T12:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -29,10 +29,6 @@
    "title": "アントネッリ、メキシコGPで王座決定の可能性",
    "summary": "アメリカGPを制したアントネッリは365点で、2位ラッセルに123点差をつけている。Motorsport-Totalの整理では、メキシコGPで9位以内なら他車の結果にかかわらず戴冠となる。10位や11位以下でも、ラッセルらが勝たない限り王座は動かない。本人は王座が近いことを認めつつ、メキシコでも楽しんで臨み、もう1勝を狙うと語った。"
   },
-  "alonso-albon-lap1-contact": {
-   "title": "アロンソとアルボンの1周目接触、アストンマーティンのアロンソは大きな損傷",
-   "summary": "アメリカGPの1周目、アロンソ（アストンマーティン）とアルボン（ウィリアムズ）が接触し、アロンソのマシンはフロアなどを損傷して16位に終わった。アロンソは1周0.5秒以上のペース低下を見積もり、後方のドライバーの質にも苦言を呈した。スチュワードは調査しなかった。"
-  },
   "mercedes-w17-development-concern": {
    "title": "メルセデスW17の改良、期待した性能には届かず",
    "summary": "メルセデスのW17は大規模改良後もウォルフ代表が望む水準には届いていない。アントネッリはアメリカGPで優勝した一方、ラッセルは54秒差の8位と苦戦し、改良でマシンの作動領域が狭まった可能性が指摘される。チームはメキシコ前に原因の理解を優先し、知見を2027年車に生かす方針だ。"
@@ -60,9 +56,124 @@
   "audi-neuburg-fuhr-ceo": {
    "title": "アウディF1、ノイブルク新CEOに元メルセデスのフール氏",
    "summary": "アウディはPU開発拠点ノイブルクの新CEOにトーマス・フール氏を迎え、11月1日に就任する。同氏は2009〜2012年にメルセデスAMGのハイパフォーマンス・パワートレインズで要職を務めた。CTOのドライヤーは技術開発に専念し、COOのフォワイエは留任する。"
+  },
+  "perez-cadillac-2029": {
+   "title": "ペレス、キャデラックと2029年まで契約延長",
+   "summary": "キャデラックは地元メキシコシティGPを前に、ペレスとの契約を少なくとも2029年まで延長したと発表した。通算300戦目に合わせた発表で、ブドコフスキー代表は復帰シーズンのペレスを高く評価した。一方でボッタスの2027年の去就は不透明なままで、チームは言及を避けている。"
+  },
+  "lambiase-hart-transition": {
+   "title": "フェルスタッペンの新エンジニア、ハートが米国GPでデビュー",
+   "summary": "レッドブルでは、フェルスタッペンのレースエンジニアがランビアーセからトム・ハートへ移行しつつある。米国GPでハートは無線の不具合の中でデビューし、メキース代表は高く評価した。最終戦までは両者が交代で担当し、ランビアーセはマクラーレンへ移る見通しだが時期は未定とされる。"
   }
  },
  "articles": [
+  {
+   "id": "de-motorsportmagazin-hart-verstappen-engineer",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "チーム",
+   "teams": [
+    "redbull"
+   ],
+   "circuit": "austin",
+   "topic": "lambiase-hart-transition",
+   "title": "フェルスタッペンの新レースエンジニア、ハートが米国GPでデビュー　メキース代表「最高の仕事」",
+   "summary": "オースティンでトム・ハートがフェルスタッペンのレースエンジニアとして正式にデビューしたが、無線の不具合で交信が聞き取りにくい場面があった。原因はレッドブルから説明されていない。メキース代表は難しい状況だったとしつつ、予選を含めハートは素晴らしい仕事をしたと評価し、関係は時間をかけて築かれると述べた。ハートは2012年のインターンから同チームに在籍し、シーズン最終戦まではランビアーセと交代で担当する。ランビアーセの後任の競争責任者にはアストンマーティンのマッカロー氏が就く予定だ。",
+   "orig": "Max Verstappens neuer Mann am F1-Funk: Was Laurent Mekies zu Tom Harts Debüt sagt",
+   "url": "https://www.motorsport-magazin.com/formel1/news-300947-max-verstappens-neuer-mann-am-f1-funk-was-mekies-zu-tom-harts-debuet-sagt/",
+   "published": "2026-10-28T15:20:00+01:00"
+  },
+  {
+   "id": "de-motorsportmagazin-perez-cadillac-2029",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "ドライバー",
+   "teams": [
+    "cadillac"
+   ],
+   "circuit": "mexico",
+   "topic": "perez-cadillac-2029",
+   "title": "ペレス、キャデラック残留　契約を少なくとも2029年まで延長",
+   "summary": "キャデラックは、メキシコシティGPを前にセルジオ・ペレスとの契約を少なくとも2029年まで延長したと発表した。通算300戦目を迎える地元でのタイミングで、メキシコシティの目抜き通りではショーランも行われた。36歳のペレスは、最初からプロジェクトに加わったことを心から信じていたと語り、今後3年間全力で取り組む意向を示した。ブドコフスキー代表は、引退間近の選手のようには振る舞わないと復帰シーズンを称賛した。ボッタスの2027年の扱いは依然不透明で、代表は明言を避けている。",
+   "orig": "Sergio Pérez bleibt Cadillac treu: Formel-1-Vertrag bis mindestens 2029 verlängert",
+   "url": "https://www.motorsport-magazin.com/formel1/news-300941-sergio-perez-bleibt-cadillac-treu-formel-1-vertrag-bis-mindestens-2029-verlaengert/",
+   "published": "2026-10-28T16:05:00+01:00"
+  },
+  {
+   "id": "en-planetf1-cadillac-2027-teammate",
+   "kind": "rumor",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "うわさ",
+   "teams": [
+    "cadillac"
+   ],
+   "circuit": "mexico",
+   "topic": "cadillac-2027-drivers-rumor",
+   "title": "ペレスの2027年の相棒は誰か　ボッタスに圧力、ハータが有力との観測",
+   "summary": "PlanetF1は、ペレスとの契約延長を受けてキャデラックの2027年の相棒探しを分析した。チームは新人より現職のボッタスを残す方を好むとされるが、今季はペレスが優勢で、GMが推すというコルトン・ハータが主な対抗馬だと報じている。ハータはスーパーライセンスが39点で、メキシコのFP1で24周以上走る必要がある。ほかにオコンは決め手に欠け、角田が接触したとの話もあり、ブドコフスキー代表は市場のほぼ全員から連絡があると述べた。いずれも未確認で、チームの決定は出ていない。",
+   "orig": "Who will partner Sergio Perez at Cadillac in 2027, and why Bottas is under pressure",
+   "url": "https://www.planetf1.com/news/sergio-perez-cadillac-teammate-2027-bottas-herta-options",
+   "published": "2026-10-28T16:58:00+00:00"
+  },
+  {
+   "id": "en-therace-russell-rubbish-pace",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "teams": [
+    "mercedes"
+   ],
+   "circuit": "austin",
+   "topic": "russell-austin-struggle",
+   "title": "ラッセルの「ひどい」ペース、メルセデス内の対照　米国GP分析",
+   "summary": "米国GPでラッセルは8位、優勝したアントネッリから54秒遅れた。5秒加算ペナルティで順位を落としたとしつつ、本人はペースそのものが悪かったと認めた。序盤のスティントでは1周あたり約0.8秒アントネッリより遅く、「良い周回6周、悪い周回50周」と振り返っている。予選ではスロー系コーナーの立ち上がりで全般に劣り、同誌はリアタイヤの扱いとスロットル効率の差を指摘した。ウォルフ代表は差は半秒でも3/10秒でもなく、これはチームの責任だと述べている。",
+   "orig": "The brutal Mercedes contrasts behind Russell's 'rubbish' pace",
+   "url": "https://www.the-race.com/formula-1/the-brutal-mercedes-contrasts-behind-russells-rubbish-pace/",
+   "published": "2026-10-26T12:00:00+00:00"
+  },
+  {
+   "id": "en-planetf1-hadjar-team-orders",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "決勝",
+   "teams": [
+    "redbull"
+   ],
+   "circuit": "austin",
+   "topic": "redbull-us-gp-frustration",
+   "title": "ハジャー、米国GPでフェルスタッペンへの順位譲渡指示に抵抗　無線でひと悶着",
+   "summary": "米国GPでレッドブルは2台に異なる戦略を採り、2ストップのフェルスタッペンが13周目のピット後に未ピットのハジャーに追いついた。チームはハジャーに12コーナーで道を譲るよう指示したが、ハジャーは「レースタイムを失いたくない」と渋った。エンジニアのウッドが繰り返し指示すると従い、フェルスタッペンは15コーナーで前に出て3位、ハジャーは6位だった。解説のクルサードは「手首を叩かれるだろう」と述べ、ハジャーは状況が双方にとって混乱していたと説明した。",
+   "orig": "Isack Hadjar warned over Max Verstappen team orders after Red Bull radio row",
+   "url": "https://www.planetf1.com/news/isack-hadjar-red-bull-team-orders-max-verstappen-us-gp",
+   "published": "2026-10-28T08:05:00+00:00"
+  },
+  {
+   "id": "fan-f1are-bearman-haas-2027",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "teams": [
+    "haas"
+   ],
+   "topic": "bearman-haas-2027",
+   "title": "ベアマンのハース残留交渉、「僕では解決できない契約上の問題」　年俸要求の話も話題に",
+   "summary": "ハースのベアマンが2027年の契約について、残っている問題は自分ではどうにもできない契約上のことだと語ったという話題。F1のアレは、F1-Gateが日本のモータースポーツ分析家の見立てとして伝えた、約600万ユーロを求めてハースが応じず交渉が止まっているとの話を引用している。ベアマンは、管理会社とフェラーリに任せていると述べた。金額や交渉の状況はハースにもベアマン側にも確認されていない。掲示板では、交渉の駆け引きだとみる声やフェラーリ移籍を巡る見方が多かった。",
+   "orig": "TGRハースF1ベアマン、2027年の契約について「残っている問題は僕自身ではどうにもできないこと」",
+   "url": "https://f1are.com/blog-entry-4026.html",
+   "published": "2026-10-28T12:00:00+09:00"
+  },
   {
    "id": "en-planetf1-mclaren-upgrades-stella",
    "kind": "news",
@@ -1415,118 +1526,6 @@
    "url": "https://www.the-race.com/formula-1/why-verstappen-hadjar-furious-red-bull-f1-us-gp/",
    "published": "2026-10-26T02:30:00+00:00",
    "summary": "アメリカGP後、フェルスタッペンとハジャーはレッドブルへの不満を口にした。2番手と3番手スタートの2人はともに発進で失敗し、ピットとの無線も聞き取りにくかったという。2ストップ作戦についてフェルスタッペンは、事前に合意した内容ではなく、直近2戦でソフトが最速だった経験に頼りすぎたと述べた。優勝したアントネッリは1ストップで、フェルスタッペンは3位、ハジャーは6位だった。メキース代表は整理すべき点があると認め、発進の根本改善は来季になるとの見方を示した。",
-   "circuit": "austin"
-  },
-  {
-   "id": "en-therace-alonso-albon-low-quality",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "teams": [
-    "astonmartin",
-    "williams"
-   ],
-   "topic": "alonso-albon-lap1-contact",
-   "title": "アロンソ、1周目の接触でアルボンを批判　「後方3分の1はレベルが非常に低い」",
-   "orig": "Alonso calls 33% of the F1 grid 'low quality'",
-   "url": "https://www.the-race.com/formula-1/alonso-slams-low-quality-albon-for-us-gp/",
-   "published": "2026-10-26T02:30:00+00:00",
-   "summary": "アロンソはアメリカGP1周目のアルボンとの接触を受け、グリッド後方のドライバーの質は非常に低いと批判した。アルボンがイン側に入り、外側にはオコンのハースがいた状況で、スチュワードはお咎めなしとした。アロンソは左のバージボードが外れ、「車が半分しかない」状態で1周0.5秒以上失ったと主張した。ウイング交換の遅いピットもあり周回遅れの16位だったが、今季最高のレースだったと話した。アルボンは避けようとしたが縁石に乗り切れなかったと述べ、アロンソを「強いがフェア」と評した。",
-   "circuit": "austin"
-  },
-  {
-   "id": "de-formel1de-verstappen-sauer-reifenwahl",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Formel1.de",
-   "cat": "決勝",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-us-gp-frustration",
-   "title": "フェルスタッペン、アメリカGP3位も不満　タイヤ選択の誤りと無線不調を指摘",
-   "orig": "Verstappen sauer: Falsche Reifenwahl, zu wenig Pace und Funkprobleme",
-   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-26/verstappen-sauer-falsche-reifenwahl-zu-wenig-pace-und-funkprobleme",
-   "published": "2026-10-26T02:23:00+01:00",
-   "summary": "フェルスタッペンはアメリカGPを3位で終えたが、内容には不満を示した。ソフトが期待通りに働かず、ハードの方がグリップが高いと気づくのが遅く、使う順序も誤りだったと振り返った。パワーユニットの挙動が周ごと、コーナーごとに安定せず、遅いピット作業も2位争いで痛手になったという。無線の不調は繰り返し起きており、手話に切り替えようかと皮肉った。終盤のVSCに助けられた面もあると認め、メキース代表はアントネッリが単に速かったと語った。",
-   "circuit": "austin"
-  },
-  {
-   "id": "de-formel1de-leclerc-ferrari-konstanz",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Formel1.de",
-   "cat": "決勝",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-leclerc-austin-p2",
-   "title": "ルクレール、アメリカGP2位　「パッケージとしてはまだ堅牢さが足りない」",
-   "orig": "Charles Leclerc nach Platz zwei in Austin: Ferrari fehlt noch die Konstanz",
-   "url": "https://www.formel1.de/news/grand-prix-berichte/2026-10-26/charles-leclerc-nach-platz-zwei-in-austin-ferrari-fehlt-noch-die-konstanz",
-   "published": "2026-10-26T01:55:00+01:00",
-   "summary": "ルクレールはアメリカGPを2位で終え、ペースは良かったと振り返った。序盤はバッテリーの電力を使ってフェルスタッペンに並んだ分、防御が難しくなり、ノリスやフェルスタッペンとの競り合いで時間を失ったという。フェラーリとレッドブルは2ストップを予想したが、アントネッリのハード1ストップが決定的で、前が空いても追いつけなかったと語った。予選Q3ではタイヤを適温に入れにくく、優勝の可能性を逃したと見る。速さはあるが週末を通じた一貫性に欠けるとし、メキシコでの勝利は予言できないと述べた。",
-   "circuit": "austin"
-  },
-  {
-   "id": "en-therace-usgp-winners-losers",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "決勝",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "usgp-winners-losers-2026",
-   "title": "アメリカGPの勝者と敗者　アントネッリは圧勝、アロンソとベアマンは苦い週末に",
-   "orig": "Winners and losers from F1's 2026 United States Grand Prix",
-   "url": "https://www.the-race.com/formula-1/winners-and-losers-from-f1s-2026-united-states-grand-prix/",
-   "published": "2026-10-26T00:26:00+00:00",
-   "circuit": "austin",
-   "summary": "ザ・レースがアメリカGPを振り返る総括記事を出した。アントネッリは1ストップ作戦で勝ち、ポイントリーダーとして次戦メキシコでタイトルを決める可能性がある。ルクレールが2位でフェラーリはアップグレードの成果を示し、フェルスタッペンは3位、ハジャーは6位でクラッチを「壊れやすい」と評した。アロンソは1周目のアルボンとの接触でバージボードを傷めて16位、ベアマンはガスリーとの接触でリタイアし、10秒ペナルティに異議を唱えた。チーム別ではフェラーリ30点、メルセデス29点、レッドブル23点だったという。"
-  },
-  {
-   "id": "it-oasport-pagelle-gp-usa-2026",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "OA Sport",
-   "cat": "分析",
-   "circuit": "austin",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "usgp-race-austin-2026",
-   "title": "伊OA Sport、アメリカGPの採点でアントネッリに「10点満点」　ラッセルは最低の4点",
-   "orig": "F1, pagelle GP USA 2026: Antonelli di un'altra caratura, Leclerc si scatena, Russell scompare",
-   "url": "https://www.oasport.it/2026/10/f1-pagelle-gp-usa-2026-antonelli-di-unaltra-caratura-leclerc-si-scatena-russell-scompare/",
-   "published": "2026-10-26T00:12:00+01:00",
-   "summary": "イタリアのOA SportはアメリカGPのドライバー採点を掲載し、ポールから首位を守り切ったアントネッリに最高評価の「10 e lode」（10点満点に称賛付き）を付けた。タイヤも重圧もライバルも管理した走りと評し、王座決定の舞台はメキシコに移ったと伝えた。2位のルクレールは9点で、フェルスタッペンをきれいに抜いた闘志を評価した。ハミルトンとフェルスタッペンはともに6点、ノリスは6.5点だった。最低はラッセルの4点で、アントネッリの陰に隠れる重圧が響いているとの見方を示した。"
-  },
-  {
-   "id": "en-crash-hadjar-clutch-redesign",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "テクニカル",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-us-gp-frustration",
-   "title": "ハジャー、レッドブルのクラッチ「作り直しを」　アメリカGPで発進失敗",
-   "orig": "Isack Hadjar demands Red Bull redesign fragile clutch after difficult US GP",
-   "url": "https://www.crash.net/f1/news/1108516/1/isack-hadjar-demands-red-bull-redesign-fragile-clutch-after-difficult-us-gp",
-   "published": "2026-10-25T23:00:00+00:00",
-   "summary": "予選3番手から6位に終わったハジャーが、アメリカGPの発進失敗をクラッチのせいだと訴えた。スタート手順は正しく守ったと映像を見直して確信しており、クラッチの出力が悪く自分では制御できなかったという。部品は壊れやすく温度への対応も弱いとして、素早い解決策はなく全面的な再設計が必要だと述べた。ほかにもピット無線が聞き取りにくく、誤ったエンジンマップでピットを出てハードタイヤで1周約1秒を失ったと明かした。直近2戦は10位と6位で、次のメキシコシティGPでの5位以内復帰を狙う。",
    "circuit": "austin"
   }
  ]
