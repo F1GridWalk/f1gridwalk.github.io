@@ -1,0 +1,509 @@
+{
+ "slug": "fia-car-inspection",
+ "no": 32,
+ "title": "FIAは、F1のマシンをどう検査しているのか　ラッセルのW17で読む、重さ・底板・燃料・動く翼の確かめ方",
+ "dek": "アメリカGPのあと、FIAは8位のジョージ・ラッセルのメルセデスW17を部品まで調べ、規則に合っていると発表した。PlanetF1によると、上位10台から無作為に1台を選ぶ、いつもの手続きだった。F1の車検は、金曜の朝の申告から決勝後の分解まで続く。何を、いつ、どう測るのか。なぜ違反はほとんど失格になり、なぜ全車は調べないのかを読む。",
+ "published": "2026-10-30T22:29:00+09:00",
+ "themes": [
+  "規則",
+  "マシンと空力",
+  "レース運営"
+ ],
+ "circuit": "austin",
+ "teams": [
+  "mercedes",
+  "ferrari",
+  "mclaren",
+  "redbull",
+  "astonmartin"
+ ],
+ "topics": [
+  "russell-w17-fia-inspection"
+ ],
+ "quick": [
+  "アメリカGPのあと、FIAは上位10台から無作為に選んだ1台として、8位のラッセルの63号車（メルセデスW17）を詳しく調べた。対象はエンジンの吸気を冷やす仕組み、センサーと配線、SECU（標準ECU）へのつなぎで、すべて規則に合っていた（FIAの技術代表の文書、PlanetF1）。",
+  "検査は大会のはじめから終わりまで続く。チームが出す申告書、走行中のデータの確認、予選での計量と燃料の見本、予選から決勝まで設定を固めるパルクフェルメ、決勝後の計量と底板のすり減りの確認。結果は技術代表の報告として、大会ごとにFIAのサイトに出る。",
+  "測るものは、重さ、底板（プランク）の厚さ、燃料の成分、翼や床のしなり（たわみ）、部品の形とソフトウェアの版など。2026年は、動く翼（アクティブエアロ）の切り替え時間を、ほぼ毎セッション全車で確かめている。",
+  "違反が見つかると、ほとんどは失格だ。2023年アメリカGPのハミルトンとルクレールは底板のすり減り、2024年ベルギーGPのラッセルは重さ1.5kg不足で、ゴール後に結果を失った。チームの事情は、罰を軽くする理由としてほぼ認められない。",
+  "一方で、FIAは全車の全部品を調べるのは「不可能」だと認め、無作為の抜き取りを抑止力と説明する。2023年には、調べられなかった車にも違反があったのでは、という声がドライバーから出た。厳しい罰と抜き取りの組み合わせが、F1の検査の形だ。"
+ ],
+ "sections": [
+  {
+   "h": "ラッセルの63号車は、なぜ調べられたのか",
+   "body": [
+    {
+     "p": "10月25日のアメリカGPのあと、FIAはジョージ・ラッセル（メルセデス）の63号車を、ふだんより踏み込んで調べた。PlanetF1が伝えたFIAのF1技術代表、ヨー・バウアー（Jo Bauer）の文書によると、対象は内燃エンジン（ICE）の吸気を冷やす仕組みと、そこに付いたすべてのセンサー、その配線の通し方、そしてSECU（FIAが指定する標準ECU）などへのつなぎ方だった。結論は「調べた部品はすべて、2026年のF1技術規則に合っていた」。"
+    },
+    {
+     "p": "なぜ63号車だったのか。PlanetF1によると、これはFIAが決勝後にいつも行う検査の一つで、63号車は上位10台に入った車の中から、より大がかりな検査の対象として無作為に選ばれた。ラッセルは8位でゴールしていた。サイトのニュース要約（https://f1gridwalk.github.io/news/en-planetf1-fia-russell-w17-inspection/ ）も参照してほしい。"
+    },
+    {
+     "p": "結果の文書がFIAのサイトに載ったのは、日本時間の10月29日。「Post-Race Inspections on Car Number 63, 2026 United States GP」という題で、次のメキシコシティGPの文書の3番目として出た。アメリカGPの文書一覧にも、前の大会の分として「2026年シンガポールGPの27番の車の決勝後の検査」という題の文書が、大会前の10月22日付で並んでいる（FIAの文書一覧）。詳しい検査の結果は、次の大会の文書として出ることがあるわけだ。"
+    },
+    {
+     "p": "FIAは2023年10月、こうした検査の考え方を自らのサイトで説明している。毎週末、車のさまざまな場所を無作為に調べ、チームはレースの前に、どの車のどこが調べられるかを知らない。予選と決勝の間にも詳しい調べ（ディープダイブ）を行い、それは大きな部品を外さなければならないことが多い。外した部品は、チームがFIAに出すことになっているCADのデータ（設計図）と比べる。決勝後の検査の車とは別に、少なくとも1台は内部の部品まで分析し、FIAのソフトウェアの技術者はチームのデータも見ているという。"
+    },
+    {
+     "p": "63号車は、同じ週末にほかの検査も受けていた。技術代表の予選の報告（文書42）では、63号車は予選の途中と予選のあとの2回、計量の対象になった。予選のあとには燃料とエンジンオイルの見本も採られ、燃料は承認済みのものと同じ、オイルは赤外線の分析（FTIR）と粘り気の測定で、承認された見本と合っていると確かめられている。"
+    },
+    {
+     "view": "FIAの文書は、今回なぜ吸気の冷却やセンサーを開けたのかを書いていません。車は無作為に選ばれ、どこを調べるかはFIAが決める仕組みなので、特定の疑いと結びつけて読むのは早いと編集部としては見ています。むしろ、優勝争いから遠い8位の車にも分解検査が回ってくること自体が、この仕組みの要点だと見ています。"
+    }
+   ]
+  },
+  {
+   "h": "金曜の朝から日曜の夜まで：検査はいつあるのか",
+   "body": [
+    {
+     "p": "車検（スクルーティニアリング）を仕切るのは、FIAの技術代表だ。2026年のスポーツ規則（セクションB）は、技術代表が大会の終わりまで、前もって求められなくても確認できるとしている（B1.2.3）。チームや車が規則に合っているかは、決勝の直後を含め、大会中いつでも確かめられる（B3.1.4）。事故にあった車を止めて調べるよう、レースディレクターが求めることもできる（B3.1.5）。"
+    },
+    {
+     "p": "入り口は、チーム自身の申告だ。自分の車が規則に合っていると書いた申告書の締め切りは、1回目のフリー走行（FP1）が始まる2時間前（B3.1.1）。申告書に抜けがないと技術代表が確かめるまでは、その車をコースに出すことはできない（B3.1.2）。2026年の開幕戦オーストラリアGPでは、11チーム22台の申告書が金曜の朝8時55分までにそろったと、技術代表の文書が記録している。同じ文書には、全ドライバーについて、コックピットから出るのにかかる時間などを確かめたことも書かれている。"
+    },
+    {
+     "p": "走っている間は、データで確かめる。アメリカGPの3回目のフリー走行（FP3）では、全車の燃料の圧力、燃料のエネルギーの流れ、ターボの最高回転数、電池（ES）の充電の範囲、MGU-Kの最大出力などが確かめられた（技術代表の文書42）。"
+    },
+    {
+     "p": "予選は、重さを測る場面でもある。規則では、予選の最後のQ3を走った車はすべて計量される（B3.2.1）。アメリカGPでは予選のセッション中に13台、予選のあとに10台が計量された。予選の前と後には燃料の見本を採った車があり、予選のあとには床の前の部分のたわみ試験を受けた車もある（文書42）。FIAは予選の終わりに、さらに調べる車を選ぶことができ、選ばれたチームはすぐに車をパルクフェルメへ運ばなければならない（B3.5.6）。"
+    },
+    {
+     "p": "予選から決勝までは、パルクフェルメで車の設定が固められる。部品の交換や設定の変更は原則としてできず（B3.5.3）、車1台ごとに担当の検査員が1人つく（B3.5.8）。アメリカGPでは、アストンマーティンがランス・ストロールの車で、技術代表の承認を得ずにパワーユニットの要素を替え、サスペンションの設定も変えた。予選の終わりから2時間たっても車にカバーがかけられていなかったことも記録され、ストロールはピットレーンからのスタートとされた（GPblog、Grande Prêmio）。"
+    },
+    {
+     "p": "決勝のあとの計量は、全車が対象とは限らない。規則は、順位のついた車なら、どれを量ってもよいとしている（B3.2.2）。5月のマイアミGPでは決勝後に18台が計量され、7月のイギリスGPでは20台の底板のスキッドのすり減りが確かめられた（技術代表の文書96、文書80）。規則は、車を調べるたびにスチュワードがその結果を公表すると定めている（B3.1.8）。FIAのサイトには大会ごとに、技術代表がスチュワードにあてた「Scrutineering」の題の報告が並ぶ。"
+    }
+   ]
+  },
+  {
+   "h": "重さ、底板、燃料、たわみ：何をどう測るのか",
+   "body": [
+    {
+     "p": "重さの物差しは、技術規則の最低重量だ。数字と、その移り変わりは、DEEP GRID「F1の車は、なぜこんなに重くなったのか」（https://f1gridwalk.github.io/deep/car-weight/ ）で書いた。Autosportによると、2024年の規則では、燃料を除いた車の重さが大会のあいだ常に798kgを下回ってはならなかった。決勝後は燃料を抜いてから量り直すことがある。2024年ベルギーGPの技術代表の報告では、ラッセルの車は決勝後に798.0kgだったが、燃料を2.8リットル抜いて量り直すと796.5kgだった。屋内と屋外の2つの秤で同じ数字が出たと、スチュワードの裁定にある（文書42、文書44）。Autosportによると、燃料を抜いたのは、当時の技術規則6.5.2が求める1リットルの燃料の見本を採るためだった。"
+    },
+    {
+     "p": "底板（プランク）は、床下に付ける板だ。車高を下げすぎると路面とこすれて減るので、厚さで車高の下げすぎを見張る役目がある。2026年の技術規則（C3.6.1）では、新品は10mmで、すり減っても8mmまでしか認められない。厚さは板に開いた穴のまわりで測る。2025年ラスベガスGPのスチュワードの裁定には、ランド・ノリスの車の2か所が8.88mmと8.93mmで、当時の下限の9mmを下回ったとある。測ったのは1000分の1mmまで読めるマイクロメーターで、スチュワードの前で測り直すと、数字はさらに小さかった（文書57）。"
+    },
+    {
+     "p": "燃料は、FIAが前もって承認したものしか使えない。アメリカGPでは、予選の前に3台、予選のあとに2台（63号車を含む）から燃料を採り、密度とガスクロマトグラフィー（成分を分けて調べる方法）で分析した。どれも、そのチームの承認済みの燃料と一致した（文書42）。マイアミGPでは、63号車の燃料の重さを、決勝の前と後に確かめる検査もあった（文書96）。"
+    },
+    {
+     "p": "翼や床は、走ると空気の力でしなる。しなる翼は、速いところで空気抵抗を減らしたり、低速と高速で車の釣り合いを変えたりする得を生みうる（FIA）。そこでFIAは、止まった車の部品に決まった重さをかけ、どれだけ曲がるかを測る。FIAが2025年5月に自らのサイトで説明した数字では、前の翼に100kgをかける試験の許容は、2025年のスペインGPから、左右同時なら15mmから10mmへ、片側だけなら20mmから15mmへ厳しくなった。フラップの後ろの端に6kgをかける試験も、5mmから3mmになった。FIAのニコラス・トンバジスによると、2024年のベルギーGPからの数戦で全車の前の翼にカメラを付け、その結果から試験を厳しくすると決めた。ただ、結論が出たのは年の終わり近くで、シーズンのはじめに入れるとチームの負担が大きいため、導入を遅らせたという（FIA、F1公式）。"
+    },
+    {
+     "p": "こうした試験は、パルクフェルメの間、つまり予選のあとや日曜の朝に行うことが多い。試験のときだけ硬い翼を付け、レースでは別の翼を使う、ということができないからだ（F1公式）。2026年もたわみ試験は続いている。マイアミGPの決勝の報告には、3台の前の翼（左右同時と片側）とフラップ、1台の後ろの翼とフラップの試験が載っている（文書96）。"
+    },
+    {
+     "p": "形とソフトウェアも調べる。イギリスGPの決勝前には、1台の前の翼をスキャンし、チームが届けたCADのデータと比べた（文書80）。アメリカGPの予選のあとには、床、ノーズ、サイドポッド、前後の翼など24か所を、条文ごとに確かめた車が3台あった。同じ文書には、11チームが予選で使ったSECUのソフトの版が並び、すべて規則に合っていたと書かれている（文書42）。"
+    }
+   ]
+  },
+  {
+   "h": "2026年の新しい項目：動く翼の確かめ方",
+   "body": [
+    {
+     "p": "2026年の車は、走りながら前後の翼を動かす（→アクティブエアロ）。翼を開いてよい場所と、切り替えにかけてよい時間は規則で決まっている。切り替えの上限と、2027年にそれを縮める話は、DEEP GRID「F1のリアウイング、切り替えの『0.1秒』をなぜ規則で縮めるのか」（https://f1gridwalk.github.io/deep/wing-300ms/ ）で書いた。"
+    },
+    {
+     "p": "技術代表の文書を見ると、この確認はほぼすべてのセッションに入っている。アメリカGPでは、FP3でも予選でも、全車について「前の翼の調整装置の切り替え時間の最大値」と「後ろの翼の調整装置の切り替え時間の最大値」が確かめられた（文書42）。マイアミGPとイギリスGPの決勝の報告にも、同じ項目が全車分ある（文書96、文書80）。"
+    },
+    {
+     "p": "部品そのものの確認もある。イギリスGPの決勝前には、1台について、前の翼のフラップが動ける範囲をデジタルで確かめた。マイアミGPでも、決勝前にステアリングを替えた1台で、前の翼をCADのデータと比べ、フラップの動く範囲を確かめている（文書80、文書96）。"
+    },
+    {
+     "p": "翼が動くようになって、たわみ試験の考え方も変わりうる。FIAは2025年5月の説明で、2026年の新しい規則ではたわみの問題は減るはずだと書いている。トンバジスは、ストレートモードのように、しなる部品が出にくい場面では、いずれ試験の厳しさをゆるめることもありうると話し、翌年の荷重は今決めているところだとも述べた（FIA）。"
+    },
+    {
+     "view": "動く翼は、いつ、どれだけの速さで動いたかがデータに残ります。部品を外して重さをかけるたわみ試験は一部の車にしかできませんが、切り替え時間は毎回全車を確かめられる項目になっている、と編集部としては見ています。"
+    }
+   ]
+  },
+  {
+   "h": "失格はなぜ厳しく、なぜ全部は調べないのか",
+   "body": [
+    {
+     "p": "検査で違反が見つかると、ほとんどの場合は失格になる。2023年のアメリカGPでは、決勝後に4台の底板を調べ、2台が規則の限度を超えてすり減っていた（FIA、The Race）。ルイス・ハミルトン（当時メルセデス）とシャルル・ルクレール（フェラーリ）の車で、後ろのスキッドが、技術代表の報告が示した範囲で、当時の技術規則3.5.9 e)に合っていなかった（技術代表の文書60、スチュワードの文書64）。ハミルトンは2位、ルクレールは6位でゴールしていたが、どちらも失格になった（F1公式）。"
+    },
+    {
+     "p": "両チームは、凸凹の多い路面と、スプリントのある週末で準備や確認の時間が短かったことを理由に挙げた。スチュワードは、FIAの測定が正しいことはチームも認めたとしたうえで、「大会のあいだ、車を常に規則に合った状態に保つ責任は、チームの側にある」として、ふつうの罰を変えなかった（F1公式、文書64）。"
+    },
+    {
+     "p": "2024年のベルギーGPでは、ラッセルが1位でゴールしたが、重さが当時の最低重量の798kgに1.5kg足りず失格になり、優勝はハミルトンに移った（Autosport）。スチュワードの裁定には、酌量すべき事情はなく、チームの純粋なミスだったとチームも認めた、とある（文書44）。"
+    },
+    {
+     "p": "違いがごく小さくても、同じだ。2025年のラスベガスGPでは、審問の場でFIAが、違反は意図的なものではないと強く考えているとしながら、ふつうの罰以外を科せる規定も前例もないと述べた。スチュワードは、2位のノリスを失格にした（文書57）。4位のオスカー・ピアストリも、同じ底板の確認で失格になった（RaceFans）。2026年のマイアミGPでは、アイザック・ハジャー（レッドブル）の車の床の板が、規則が決めた空間（リファレンスボリューム）から左右とも2mmはみ出していて、予選の結果から外された。レッドブルのメキース代表は「我々はミスをした。スチュワードの決定を尊重する」と話した（PlanetF1）。"
+    },
+    {
+     "p": "一方で、FIAは全車の全部品を調べてはいない。2023年の失格のあと、FIAは、決勝のあとに使える時間は限られていて、輸送の締め切りもある連戦ではとくにそうだと説明した。そのうえで「短い時間で、すべての車のすべての項目を調べるのは不可能だ」とし、無作為に選ぶやり方は「重い抑止力として働く」と書いている（FIA）。"
+    },
+    {
+     "p": "これには疑問の声も出た。英The Raceによると、2023年のアメリカGPの次のメキシコGPで、ハミルトンは、ほかにも違反になる車が「たくさんあった」が「検査されなかったので見逃された」と聞いたと話し、ルクレールも「全部の車を調べたら、もっと多くの驚きがあったかもしれないと本当に思う」と言った。一方でマックス・フェルスタッペンは「すべてを調べるのは、とにかく無理だ」と話し、アレクサンダー・アルボンも、毎戦すべての車を調べ続けることが答えではないという考えだった。そのかわり二人とも、1台に違反が見つかったら、同じチームのもう1台も調べるべきだと話している。"
+    },
+    {
+     "view": "抜き取りの検査は、当たる確率が低くても、当たれば失格という重い罰と組み合わさって初めて効きます。ラッセルの63号車から何も出なかったことはニュースとしては地味ですが、この仕組みがいつも通りに回っていることの記録だと、編集部としては見ています。"
+    }
+   ]
+  }
+ ],
+ "deep": [
+  {
+   "h": "検査の種類（2026年）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "段階",
+       "主な中身",
+       "2026年の例",
+       "よりどころ"
+      ],
+      "rows": [
+       [
+        "大会のはじめ",
+        "規則に合っているという申告書。ドライバーがコックピットから出る時間など",
+        "オーストラリアGP：11チーム22台の申告書を確認",
+        "B3.1.1、B3.1.2、オーストラリアGP 文書10"
+       ],
+       [
+        "走行中のデータ",
+        "燃料の圧力と流れ、ターボの回転数、電池、MGU-K、ソフトの版、翼の切り替え時間",
+        "アメリカGPのFP3と予選で全車",
+        "アメリカGP 文書42"
+       ],
+       [
+        "計量",
+        "予選のQ3を走った車は全部。決勝後は順位のついた車のどれでも。ドライバーも量る",
+        "アメリカGP予選：途中13台、予選後10台。マイアミGP決勝後：18台",
+        "B3.2.1、B3.2.2、文書42、文書96"
+       ],
+       [
+        "燃料とオイルの見本",
+        "燃料は密度とガスクロマトグラフィー、オイルは赤外線（FTIR）と粘り気",
+        "アメリカGP：燃料は予選の前に3台、予選のあとに2台",
+        "文書42"
+       ],
+       [
+        "たわみ試験",
+        "前後の翼、フラップ、床の前の部分に重さをかけ、曲がりを測る",
+        "マイアミGP：前の翼3台、後ろの翼1台。アメリカGP予選：床の前の部分1台",
+        "文書96、文書42"
+       ],
+       [
+        "形とソフト",
+        "CADのデータとの比較、条文ごとの寸法、SECUのソフトの版",
+        "イギリスGP：前の翼のスキャン。アメリカGP予選後：3台の24か所",
+        "文書80、文書42"
+       ],
+       [
+        "パルクフェルメ",
+        "予選から決勝まで設定を固める。1台に検査員が1人",
+        "アメリカGP：承認のない交換と変更で、ストロールがピットレーンスタート",
+        "B3.5.1、B3.5.3、B3.5.8、GPblog"
+       ],
+       [
+        "決勝後",
+        "計量、底板のスキッドのすり減り、燃料とオイル",
+        "イギリスGP：20台のスキッドを確認",
+        "B3.1.4、B3.2.2、文書80"
+       ],
+       [
+        "詳しい検査（分解）",
+        "上位10台から無作為に1台。部品を外して調べる",
+        "アメリカGP：63号車の吸気の冷却、センサー、配線、SECUへのつなぎ",
+        "PlanetF1、FIAの文書一覧"
+       ]
+      ],
+      "note": "条文はFIA 2026年F1規則 セクションB（スポーツ規則）第8版（2026年8月5日）の番号。技術代表の文書は、2026年オーストラリアGP 文書10（3月6日）、マイアミGP 文書96（5月3日）、イギリスGP 文書80（7月5日）、アメリカGP 文書42（10月24日）。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "2026年アメリカGPで、63号車が受けた主な検査",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "いつ",
+       "中身",
+       "出典"
+      ],
+      "rows": [
+       [
+        "FP3・予選",
+        "全車と同じデータの確認（燃料、電池、MGU-K、翼の切り替え時間など）",
+        "文書42"
+       ],
+       [
+        "予選の途中",
+        "計量と、重さの配分の確認",
+        "文書42"
+       ],
+       [
+        "予選のあと",
+        "計量（予選のあとに量った10台の1台として）。燃料の見本（密度とガスクロマトグラフィー、承認済みの燃料と一致）、エンジンオイルの見本（FTIRと粘り気、承認された見本と合う）",
+        "文書42"
+       ],
+       [
+        "決勝のあと",
+        "上位10台から無作為に選ばれ、吸気の冷却系、センサー、配線、SECUなどへのつなぎを検査。すべて規則に合っていた",
+        "PlanetF1、メキシコシティGP 文書3（日本時間10月29日）"
+       ]
+      ],
+      "note": "出典：FIA 2026年アメリカGP「P3 and Qualifying Scrutineering」（文書42、10月24日）、PlanetF1（2026年10月29日）、FIAの2026年の文書一覧。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "主な失格の例（技術的な違反）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "大会",
+       "車",
+       "見つかったこと",
+       "結果",
+       "出典"
+      ],
+      "rows": [
+       [
+        "2023年アメリカGP",
+        "ハミルトン（メルセデス）、ルクレール（フェラーリ）",
+        "後ろのスキッドが、決められた範囲で摩耗の限度を超えた（当時の技術規則3.5.9 e）",
+        "2位と6位から失格",
+        "技術代表の文書60、スチュワードの文書64、F1公式"
+       ],
+       [
+        "2024年ベルギーGP",
+        "ラッセル（メルセデス）",
+        "決勝後は798.0kg。燃料2.8リットルを抜くと796.5kgで、最低重量798kgに1.5kg不足（技術規則4.1）",
+        "1位から失格。優勝はハミルトン",
+        "技術代表の文書42、スチュワードの文書44、Autosport"
+       ],
+       [
+        "2025年ラスベガスGP",
+        "ノリス、ピアストリ（マクラーレン）",
+        "スキッドの厚さが下限9mmを下回った（ノリスは8.88mmと8.93mm）（技術規則3.5.9）",
+        "2位と4位から失格",
+        "スチュワードの文書57、RaceFans"
+       ],
+       [
+        "2026年マイアミGP",
+        "ハジャー（レッドブル）",
+        "床の板が、決められた範囲から左右とも2mmはみ出した（C3.5.5）",
+        "予選の結果から除外",
+        "PlanetF1"
+       ]
+      ],
+      "note": "条文の番号は当時の規則による。2023年アメリカGPで底板を調べたのは4台（FIA、2023年10月26日）。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "前の翼のたわみ試験は、どう厳しくなったか（2025年）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "試験",
+       "かける重さ",
+       "2025年のはじめ",
+       "スペインGPから"
+      ],
+      "rows": [
+       [
+        "前の翼（左右同時）",
+        "100kg",
+        "15mmまで",
+        "10mmまで"
+       ],
+       [
+        "前の翼（片側だけ）",
+        "100kg",
+        "20mmまで",
+        "15mmまで"
+       ],
+       [
+        "前の翼のフラップ（後ろの端）",
+        "6kg",
+        "5mmまで",
+        "3mmまで"
+       ]
+      ],
+      "note": "出典：FIA「FIA Insights」（2025年5月28日、トンバジスの説明）、F1公式（2025年5月29日）。当時の技術規則3.15.4、3.15.5による2025年の数字。"
+     }
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "技術代表（テクニカルデリゲート）",
+   "FIAで車検を受け持つ責任者。大会のあいだ、いつでも車を調べられ、結果をスチュワードに報告する。2026年はヨー・バウアー。"
+  ],
+  [
+   "申告書（セルフスクルーティニアリング）",
+   "チームが「この車は規則に合っている」と書いてFIAに出す書類。FP1の2時間前までに出し、認められるまで走れない。"
+  ],
+  [
+   "ディープダイブ",
+   "大きな部品を外して、内部まで調べる詳しい検査。外した部品は、チームが出したCADのデータと比べる。"
+  ],
+  [
+   "たわみ試験",
+   "止まった車の翼や床に決まった重さをかけ、どれだけ曲がるかを測る試験。しなりすぎる部品を見つけるために行う。"
+  ],
+  [
+   "ガスクロマトグラフィー",
+   "燃料などの成分を分けて調べる方法。FIAは、採った燃料が承認済みのものと同じかを確かめるのに使う。"
+  ],
+  [
+   "リファレンスボリューム",
+   "規則が決めた、部品が収まっていなければならない空間。はみ出すと違反になる。"
+  ]
+ ],
+ "sources": [
+  {
+   "name": "PlanetF1",
+   "title": "FIA confirms George Russell findings after 'extensive' Mercedes inspection（2026年10月29日、Michelle Foster）",
+   "url": "https://www.planetf1.com/news/fia-george-russell-mercedes-w17-inspection-austin"
+  },
+  {
+   "name": "FIA",
+   "title": "Decision documents – FIA Formula One World Championship 2026（メキシコシティGP 文書3「Post-Race Inspections on Car Number 63, 2026 United States GP」の題と掲載時刻）",
+   "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072"
+  },
+  {
+   "name": "FIA",
+   "title": "Decision documents – 2026 United States Grand Prix（文書の一覧。文書3「Post-Race Checks on Car Number 27, 2026 Singapore GP」など）",
+   "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/United%20States%20Grand%20Prix"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 United States Grand Prix – P3 and Qualifying Scrutineering（文書42、2026年10月24日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_p3_and_qualifying_scrutineering.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Miami Grand Prix – Race Scrutineering（文書96、2026年5月3日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_race_scrutineering.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 British Grand Prix – Race Scrutineering（文書80、2026年7月5日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_british_grand_prix_-_race_scrutineering.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Australian Grand Prix – Self Scrutineering（文書10、2026年3月6日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_self_scrutineering.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations – Section B [Sporting] – Issue 08（2026年8月5日）B1.2.3、B3.1.1、B3.1.2、B3.1.4、B3.1.5、B3.1.8、B3.2.1、B3.2.2、B3.5.1、B3.5.3、B3.5.6、B3.5.8",
+   "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_08_-_2026-08-05_7.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations – Section C [Technical] – Issue 17（2026年4月28日）C3.6.1",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "FIA Insights: How the FIA's process of post-race legality checks ensure fairness in Formula 1（2023年10月26日）",
+   "url": "https://api.fia.com/news/fia-insights-how-fias-process-post-race-legality-checks-ensure-fairness-formula-1"
+  },
+  {
+   "name": "FIA",
+   "title": "FIA Insights: Staying ahead of the curve – why the FIA is stiffening tests around wing flexibility（2025年5月28日、ニコラス・トンバジス）",
+   "url": "https://api.fia.com/news/fia-insights-staying-ahead-curve-why-fia-stiffening-tests-around-wing-flexibility"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "EXPLAINED: Everything you need to know about the Spanish Grand Prix front wing Technical Directive（2025年5月29日）",
+   "url": "https://www.formula1.com/en/latest/article/explained-everything-you-need-to-know-about-the-spanish-grand-prix-front.60dW3xB6esCkvCXbihD9FH"
+  },
+  {
+   "name": "GPblog",
+   "title": "Aston Martin set for pit lane start at US Grand Prix（2026年10月25日、Henry Eccles）",
+   "url": "https://www.gpblog.com/en/breaking-news/pit-lane-start-confirmed-at-united-states-grand-prix"
+  },
+  {
+   "name": "Grande Prêmio",
+   "title": "FIA sends Stroll to pit lane after Aston Martin makes illegal late changes in Austin（2026年10月25日、Victor Martins）",
+   "url": "https://grandepremio.com/en/f1/stroll-handed-pit-lane-start-after-aston-martin-breaches-parc-ferme-rules-at-us-gp/"
+  },
+  {
+   "name": "FIA",
+   "title": "2023 United States Grand Prix – Plank checks（文書60、2023年10月22日）",
+   "url": "https://www.fia.com/sites/default/files/decision-document/2023%20United%20States%20Grand%20Prix%20-%20Plank%20checks.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2023 United States Grand Prix – Infringement – Car 44 – Technical non-compliance (Plank)（文書64、2023年10月22日）",
+   "url": "https://www.fia.com/sites/default/files/decision-document/2023%20United%20States%20Grand%20Prix%20-%20Infringement%20-%20Car%2044%20-%20Technical%20non-compliance%20(Plank).pdf"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "Hamilton and Leclerc disqualified from United States Grand Prix for technical breach（2023年10月23日）",
+   "url": "https://www.formula1.com/en/latest/article/breaking-hamilton-and-leclerc-disqualified-from-united-states-grand-prix-for.10nvuyvEPfMgoeWxWOhw0a"
+  },
+  {
+   "name": "FIA",
+   "title": "2024 Belgian Grand Prix – Weight of Car Number 63（文書42、2024年7月28日）",
+   "url": "https://www.fia.com/sites/default/files/decision-document/2024%20Belgian%20Grand%20Prix%20-%20Weight%20of%20Car%20Number%2063.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2024 Belgian Grand Prix – Infringement – Car 63 – Technical non-compliance (Weight)（文書44、2024年7月28日）",
+   "url": "https://www.fia.com/sites/default/files/decision-document/2024%20Belgian%20Grand%20Prix%20-%20Infringement%20-%20Car%2063%20-%20Technical%20non-compliance%20(Weight).pdf"
+  },
+  {
+   "name": "Autosport",
+   "title": "Explained: The F1 car weight rule that cost Russell Belgian GP victory",
+   "url": "https://www.autosport.com/f1/news/explained-the-f1-car-weight-rule-that-cost-russell-belgian-gp-victory/10640005/"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Las Vegas Grand Prix – Infringement – Car 4 – Technical non-conformity (Plank Assembly)（文書57、2025年11月23日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_las_vegas_grand_prix_-_infringement_-_car_4_-_technical_non-conformity_plank_assembly.pdf"
+  },
+  {
+   "name": "RaceFans",
+   "title": "Official: Norris and Piastri disqualified from Las Vegas Grand Prix（2025年11月23日、Keith Collantine）",
+   "url": "https://www.racefans.net/2025/11/23/official-norris-and-piastri-disqualified-from-las-vegas-grand-prix/"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "FIA verdict as Isack Hadjar disqualified from Miami GP qualifying for illegal RB22 floor（2026年5月3日、Michelle Foster）",
+   "url": "https://www.planetf1.com/news/isack-hadjar-disqualified-miami-gp-qualifying-rb22-floor-illegal"
+  },
+  {
+   "name": "The Race",
+   "title": "FIA's defence of random F1 checks after double DSQ（2023年10月26日）",
+   "url": "https://www.the-race.com/formula-1/fia-defence-f1-scrutineering-practical-impossible-hamilton-leclerc/"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 drivers suspect more illegalities among unchecked cars（2023年10月26日、Scott Mitchell-Malm、Mark Hughes、Edd Straw）",
+   "url": "https://www.the-race.com/formula-1/f1-drivers-suspect-more-illegalities-among-unchecked-cars/"
+  }
+ ],
+ "related": [
+  {
+   "id": "en-planetf1-fia-russell-w17-inspection",
+   "why": "アメリカGP後にラッセルの63号車が無作為に選ばれ、吸気の冷却系やSECUへの接続まで調べられた検査の中身"
+  }
+ ],
+ "lensRelated": [
+  "cota-bumps-spine-20261021"
+ ],
+ "history": [
+  [
+   "2026-10-30",
+   "公開。"
+  ]
+ ]
+}
