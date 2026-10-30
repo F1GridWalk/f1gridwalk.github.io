@@ -1,0 +1,658 @@
+{
+ "slug": "straight-mode-zones",
+ "no": 29,
+ "title": "メキシコのストレートモードは、なぜ3区間なのか　翼を寝かせる場所は誰がどう決めるのか",
+ "dek": "2026年のF1では、翼を寝かせて空気抵抗を減らすストレートモードを、コースのどこでも使えるわけではない。使える区間を決めるのはFIAで、その数はモナコの0からオーストラリアなどの5まで大きく違う。今週末のメキシコシティGPは3区間。区間を選ぶ物差しと、薄い空気との関係、よく似た名前のオーバーテイクモードとの違いを読む。",
+ "published": "2026-10-30T17:14:00+09:00",
+ "themes": [
+  "マシンと空力",
+  "規則",
+  "サーキット",
+  "安全"
+ ],
+ "circuit": "mexico",
+ "teams": [],
+ "topics": [
+  "mexico-straight-mode-zones",
+  "singapore-active-aero-zones",
+  "mexico-gp-altitude-2026"
+ ],
+ "quick": [
+  "ストレートモードは、FIAが大会ごとに決めた「作動ゾーン」の中でしか使えない。メキシコシティGPは3区間で、メインストレート、3〜4コーナーの間、11〜12コーナーの間に置かれた（PlanetF1、ScuderiaFans）。",
+  "区間を描いた地図は、FIAのF1レースディレクターが全チームに出す文書に載る。英The Raceによると、物差しは、タイヤのグリップの限界で走っていない場所であることと、1つの区間が3秒より長く続くこと。燃料の軽い予選でも、タイヤがすり減った終盤でも安全であることも求められる。",
+  "区間の数はコースで0〜5と大きく違う。オーストラリア、ベルギー、シンガポールが5、モナコは0だった（FIAの地図）。開幕戦では、FIAが安全を理由に1区間を外すと発表し、約1時間後に取り消した。",
+  "メキシコの3区間は、2025年まで使われたDRSの3区間（3つ目は2019年に追加）と同じ3本の直線にある。空気が薄いここでは、翼が生む空気抵抗がもともと小さい。ウィリアムズは2024年、メキシコではDRSの効きがほかのコースより小さいと説明していた。",
+  "名前の似たオーバーテイクモードは別の仕組みだ。前の車の1秒以内を走る車だけに許される電気の上乗せで、メキシコでは15コーナーで差を測り、17コーナーから使えるようになる（PlanetF1）。"
+ ],
+ "sections": [
+  {
+   "h": "「翼を寝かせてよい場所」は、規則で囲われている",
+   "body": [
+    {
+     "p": "2026年の車は、走りながら前後の翼の一部を動かす。翼を寝かせて空気抵抗を減らすのがストレートモード、立てて車を路面に押しつける力（ダウンフォース）を得るのがコーナーモードだ（→ストレートモードとコーナーモード）。PlanetF1も、ストレートモードはFIAが決めたコース上の指定の区間でしか使えないと書いている。"
+    },
+    {
+     "p": "その囲いは、FIAの技術規則にある。前の翼の決まり（C3.10.10）と後ろの翼の決まり（C3.11.6）は、フラップを開くことを、止まっている車か、「作動ゾーン（Activation Zone）」の内側に車がすっかり収まっている車にだけ認めている。作動ゾーンそのものの決まりは、技術規則ではなく、スポーツ規則の側に任されている。翼がどう動くかは技術規則、どこで開けるかはスポーツ規則と大会ごとの決定、という分け方だ。切り替えの速さの決まりと、2027年の変更は、DEEP GRID「F1のリアウイング、切り替えの『0.1秒』をなぜ規則で縮めるのか」（https://f1gridwalk.github.io/deep/wing-300ms/ ）で書いた。"
+    },
+    {
+     "p": "大会ごとの区間は、FIAのF1レースディレクター、ルイ・マルケスが全チームと関係者に出す「競技ノート」の地図に描かれる。たとえば5月のカナダGPの地図（5月22日付の第2版）には、ストレートモードの区間が「SM A1」から「SM A4」まで4つあり、凡例では「ふつうのグリップのときの作動」と「グリップが低いときの作動」が分けて示されている。オーバーテイクモードの検知点（OT D）と作動点（OT A）も、同じ地図に載っている。"
+    },
+    {
+     "p": "スタートの扱いも、この種の文書で決まった。開幕戦オーストラリアGPの前にレースディレクターが出した競技ノートは、「スタンディングスタートのあと、ストレートモードは1コーナーを過ぎてから使えるようになる」とした（FIA、GPFans）。3月の日本GPの競技ノートにも、同じ決まりが載っている（FIA）。The Raceによると、スタートの並ぶ位置はたいてい作動ゾーンの中にあり、車の強い加速と、ストレートモードでダウンフォースが減ることが重なると危ないと考えられた。"
+    }
+   ]
+  },
+  {
+   "h": "FIAの物差し：グリップの限界、3秒、曲がり具合",
+   "body": [
+    {
+     "p": "では、どこを作動ゾーンにするのか。英The Raceは5月、モナコで区間がなくなった理由を伝える記事の中で、FIAの考え方を紹介した。記事は名前の出る情報源を示していない。3秒の目安は、Crash.netも、FIAが示したものとして伝えている。"
+    },
+    {
+     "p": "1つ目は、車がタイヤのグリップの限界で走っていない場所にだけ置くこと。コーナーで横に踏ん張る場面だけでなく、立ち上がりの加速（トラクション）やブレーキの区間も含む。そこで翼を開いたり閉じたりすると、車の安定に響くおそれがあるからだ。2つ目は、1つの区間が3秒より長く続くこと。短い区間は、ドライバーの仕事を増やすだけで、速さにも燃費にも得がないという。3つ目は、燃料の軽い予選のアタックでも、タイヤの性能が落ちたスティントの終わりでも安全であること。"
+    },
+    {
+     "p": "ストレートモードの効き目は小さくない。The Raceによると、空気抵抗は約20％減り、最高速は最大で時速20km上がる。そのぶん車が次のコーナーに速く着きすぎないかも、FIAは気にしているという。"
+    },
+    {
+     "p": "「3秒」という目安は、規則づくりの段階からあった。F1公式サイトは2024年6月、低い抵抗のモードについて、FIAは3秒より長い直線ならどこでも使えるようにする見込みだと伝えていた。"
+    },
+    {
+     "p": "区間がまっすぐとは限らない。FIAのシングルシーター部門ディレクター、ニコラス・トンバジスは3月、区間の多くは本当の直線だが、「年に3つか4つのサーキット」では、かなり曲がった区間も入っていると話した。翼を開いたときにどれだけダウンフォースを失うかは、車によって違うとも説明している（Autosport）。"
+    },
+    {
+     "p": "区間は、削られるだけではない。7月のベルギーGPでは、FIAは開幕戦以来の多さとなる5区間を置き（FIAの地図ではSM A1〜A5）、ラ・ソースからオールージュの手前までの区間も入れた。F1Technicalが伝えたFIAの説明では、この区間で動く翼が使われるのは14年ぶり。F1Technicalは、区間を増やしてエネルギーのやりくりの厳しさを和らげることがFIAのねらいだと書いている。スパは、1周が長く速いコースだ。"
+    }
+   ]
+  },
+  {
+   "h": "0区間のモナコ、取り消されたメルボルン",
+   "body": [
+    {
+     "p": "物差しがいちばんはっきり表に出たのが、6月のモナコGPだ。FIAはこの週末、ストレートモードの区間を1つも置かなかった。FIAの地図にも、区間の番号は1つもない。区間のない大会は、2026年で初めてだった。2025年まではスタート／フィニッシュの短い直線でDRSが使えたが、Crash.netによると、FIAはモナコには物差しを満たす場所がないと判断した。加速とブレーキの場面が多いコースで、そこでの車の安定が心配されたという。"
+    },
+    {
+     "p": "GRANDPRIX247によると、車は週末を通して、ダウンフォースが最大の形のまま走った。そのうえでFIAは、モナコ用のパワーユニットの設定を認めた。ふだんはMGU-Kの最大350kWの後押しが時速290kmまで続くが、モナコでは時速200kmから絞られ始める。速度を抑えるための、もう一つの安全策だという。"
+    },
+    {
+     "p": "それでも、オーバーテイクモードは使えた。差を測る地点はラスカスの手前で、最終コーナーへ向かうところから使えた（Speedcafe）。アウディのボルトレートは、カナダGPの時点で、モナコでは追い抜きが難しくなると見ていた。モナコは電気をためられる場面が多く、エネルギーで苦しむことはあまりないとも話している（Crash.net）。"
+    },
+    {
+     "quote": "僕の理解が正しければ、ストレートモードはオフになる。だから翼の効果もないことになる。",
+     "who": "ボルトレート（アウディ）"
+    },
+    {
+     "p": "開幕戦では、反対の向きの迷いがあった。3月のオーストラリアGPには5区間が置かれた。土曜の朝、FIAは、8コーナーと9コーナーの間の4番目の区間を、FP3から予選と決勝まで外すと発表した。曲がりながら9コーナーへ向かうこの区間では、ストレートモードにするとダウンフォースが少なすぎて、とくに車が近くを走っているときに制御を失うおそれがあると、ドライバーが訴えていた（Motorsport.com、Autosport）。トンバジスは、こう説明した。"
+    },
+    {
+     "quote": "もちろん、私たちにとって安全が第一だ。分析をしたうえで、慎重な側に倒すことにした。",
+     "who": "ニコラス・トンバジス（FIA）"
+    },
+    {
+     "p": "ところが約1時間後、FIAはこの決定を取り消した。声明は、直近1時間のチームとドライバーからの意見と、チームの追加の分析を理由に挙げ、FP3の間とそのあとにさらに評価するとした（GPFans）。チームからは、金曜に集めたデータが使えなくなるという声が出ていた。この区間は、電気をためるうえで大きな差がつく所でもあった（GPFans）。トンバジスは、数台の車にだけ「セッティングを変えてくれ」と言って、ほかの車には言わない、というやり方はできなかったとも話している（Motorsport.com）。"
+    },
+    {
+     "p": "ドライバーの中には、仕組みそのものに疑問を持つ声もある。ウィリアムズのサインツは、その週末の決勝の日曜日、レースでいちばん心配なのは1周目だと話した。"
+    },
+    {
+     "quote": "スリップストリームとストレートモードの中で車を抑えるのは、本当に危なくて、本当に難しく感じた。",
+     "who": "サインツ（ウィリアムズ）"
+    },
+    {
+     "p": "サインツは、アクティブエアロは、パワーユニットの電気の使い方の問題を補う一時しのぎだと見ている。ただ、いまの電気の量では、ストレートモードなしでは車がレースにならないとも認めている（Crash.net）。"
+    },
+    {
+     "view": "区間の決定は、「安全」「電気のやりくり」「チームの準備」の綱引きだと、編集部としては見ています。モナコでは安全が勝ち、ベルギーでは電気のために区間が増え、メルボルンでは安全と、チームが金曜までに積み上げた準備がぶつかりました。一度発表した区間を週末の途中で変えると、各チームの電気の計画まで崩れます。区間は、走り出す前にどれだけ正しく見積もれるかが問われる決定でもあります。"
+    }
+   ]
+  },
+  {
+   "h": "メキシコの3区間は、DRSの時代と同じ3本の直線",
+   "body": [
+    {
+     "p": "今週末のメキシコシティGPについて、FIAは3区間を発表した（PlanetF1、10月29日）。PlanetF1によると、第1区間は最終の17コーナーの70m先、フィニッシュラインを過ぎたところから始まり、1コーナーへ向かう直線で最高速を伸ばすためのもの。第2区間は3コーナーの150m先から、第3区間は11コーナーの70m先から始まる。ScuderiaFansは、3区間をメインストレート、3〜4コーナーの間、11〜12コーナーの間と説明している。サイトの要約は「FIA、メキシコGPのストレートモード区間を3カ所に設定」（https://f1gridwalk.github.io/news/en-planetf1-fia-mexico-straight-mode/ ）にある。"
+    },
+    {
+     "p": "この3本の直線は、DRSの時代と同じだ。メキシコでは2019年、メインストレートと3〜4コーナーの間に加えて、11〜12コーナーの間の直線に3つ目のDRSゾーンが足された。追い抜きの機会を増やすためだった（Crash.net）。2025年のFIAの地図でも、DRSの作動点はメインストレート（17コーナーの240m先）、3コーナーの115m先、11コーナーの80m先の3つだった。2026年のストレートモードは、前の車に近づいた車だけが使うDRSと違い、全車が毎周使う。目的は違っても、翼を寝かせられる場所は、同じ3本の直線になった。"
+    },
+    {
+     "p": "数で見ると、3区間は少ない方だ。各大会のFIAの地図とPlanetF1の一覧を合わせると、メキシコを含む2026年の19戦のうち、5区間が3戦、4区間が8戦、3区間が2戦（マイアミとメキシコ）、2区間が5戦、0区間が1戦だった。カナダGPは、PlanetF1の一覧では3区間とされたが、FIAの地図には4区間が描かれている（「データと記録」の表を参照）。"
+    },
+    {
+     "p": "メキシコでは、ここに薄い空気が加わる。コースは海抜2,200mを超える（ScuderiaFans）。ウィリアムズのチーフ・トラックサイドエンジニア、ポール・ウィリアムズは、今週末に向けて「薄い空気は、車からダウンフォースも空気抵抗も奪う」と話した（GRANDPRIX247）。高地が車全体に与える影響は、DEEP GRID「なぜメキシコシティでは、F1の車が『別物』になるのか」（https://f1gridwalk.github.io/deep/mexico-altitude/ ）でくわしく書いた。"
+    },
+    {
+     "p": "翼を寝かせる効き目にも、高地は関わる。ウィリアムズの公式サイトは2024年、メキシコでは後ろの翼が直線でふだんほど大きな抵抗を生まないため、DRSの効きがほかのコースより小さいと説明していた。"
+    },
+    {
+     "view": "ストレートモードが減らすのも、翼の空気抵抗です。抵抗がもともと小さいメキシコでは、同じように翼を寝かせても、海面に近いコースほどは時速が伸びないのではないかと、編集部としては見ています。一方で、The Raceが書くように、ストレートモードには電気の使い方を減らす役目もあります。GRANDPRIX247によると、ウィリアムズは予選も決勝も電気をほぼ上限まで使う見込みとしていて、3区間の効き目は、最高速の数字よりも、1周の電池のもたせ方に表れるかもしれません。"
+    }
+   ]
+  },
+  {
+   "h": "オーバーテイクモードは「場所」ではなく「差」で決まる",
+   "body": [
+    {
+     "p": "名前が似ていて混同されやすいのが、オーバーテイクモードだ。こちらは翼ではなく、パワーユニットの電気の上乗せだ。Motorsport Magazineの説明では、前の車の1秒以内を走っているときに使え、ふだんの電気に0.5MJを足せる。Crash.netによると、一度にまとめて使っても、1周に分けて使ってもよい。"
+    },
+    {
+     "p": "ストレートモードは、区間の中なら全車が毎周使える。オーバーテイクモードは、決められた検知点で前の車との差を測り、条件を満たした車だけが、作動点から使える。メキシコでは、検知点が15コーナーの中ほど、作動点が17コーナーの中ほどだ（PlanetF1）。第1区間のストレートモードは17コーナーの70m先から始まるので、位置の上では、同じメインストレートで2つが重なる。"
+    },
+    {
+     "p": "The Raceは、ストレートモードは追い抜きのためのものではなく、空気抵抗と電気の使用を減らすためのものだと書いている。2026年の追い抜きの助けは、主に電気の側に移った。モナコのように翼の区間が0でも、オーバーテイクモードは残る。翼の区間はコースの形と安全で決まり、電気の上乗せは前の車との差で決まる。"
+    },
+    {
+     "view": "ストレートモードの区間の数は、「このコースでは、どこまで翼を寝かせても安全か」をFIAが見積もった結果として読むと分かりやすいと、編集部としては見ています。区間が多いのは速さの印ではなく、安全に寝かせられる直線が多いということ。メキシコの3区間は、DRSの時代から変わらない3本の直線に、薄い空気という条件が重なったものです。金曜のフリー走行では、メインストレートの終わりの最高速だけでなく、各チームが3区間をどう電気の計画に組み込むかにも注目したいところです。"
+    }
+   ]
+  }
+ ],
+ "deep": [
+  {
+   "h": "2026年の大会ごとのストレートモードの区間の数",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "戦",
+       "GP（コース）",
+       "区間の数",
+       "確かめた資料"
+      ],
+      "rows": [
+       [
+        "1",
+        "オーストラリアGP（アルバート・パーク）",
+        "5",
+        "FIAの地図（SM A1〜A5）。土曜に4番目の区間を外すと発表し、約1時間後に取り消し"
+       ],
+       [
+        "2",
+        "中国GP（上海）",
+        "4",
+        "PlanetF1の一覧"
+       ],
+       [
+        "3",
+        "日本GP（鈴鹿）",
+        "2",
+        "PlanetF1の一覧"
+       ],
+       [
+        "4",
+        "マイアミGP",
+        "3",
+        "FIAの地図（SM A1〜A3）"
+       ],
+       [
+        "5",
+        "カナダGP（ジル・ヴィルヌーヴ・サーキット）",
+        "4",
+        "FIAの地図（5月22日付の第2版）はSM A1〜A4の4区間。報道（PlanetF1の一覧）では3区間とされた"
+       ],
+       [
+        "6",
+        "モナコGP",
+        "0",
+        "FIAの地図に区間の番号なし。The Race、Crash.net、Speedcafe、GRANDPRIX247も区間なし"
+       ],
+       [
+        "7",
+        "バルセロナGP",
+        "4",
+        "PlanetF1の一覧"
+       ],
+       [
+        "8",
+        "オーストリアGP（レッドブル・リンク）",
+        "4",
+        "PlanetF1の一覧"
+       ],
+       [
+        "9",
+        "イギリスGP（シルバーストン）",
+        "4",
+        "FIAの地図（SM A1〜A4）"
+       ],
+       [
+        "10",
+        "ベルギーGP（スパ・フランコルシャン）",
+        "5",
+        "FIAの地図（SM A1〜A5）。オールージュの手前までの区間を含む（F1Technical）"
+       ],
+       [
+        "11",
+        "ハンガリーGP（ハンガロリンク）",
+        "4",
+        "FIAの地図（SM A1〜A4）"
+       ],
+       [
+        "12",
+        "オランダGP（ザントフォールト）",
+        "2",
+        "PlanetF1の一覧"
+       ],
+       [
+        "13",
+        "イタリアGP（モンツァ）",
+        "4",
+        "PlanetF1の一覧"
+       ],
+       [
+        "14",
+        "スペインGP（マドリング）",
+        "2",
+        "PlanetF1の一覧"
+       ],
+       [
+        "15",
+        "アゼルバイジャンGP（バクー）",
+        "2",
+        "PlanetF1の一覧"
+       ],
+       [
+        "16",
+        "バーレーンGP（セパンで開催）",
+        "4",
+        "FIAの地図（SM A1〜A4）。FIAの文書の題は「バーレーンGP（マレーシア開催）」"
+       ],
+       [
+        "17",
+        "シンガポールGP",
+        "5",
+        "FIAの地図（SM A1〜A5）"
+       ],
+       [
+        "18",
+        "アメリカGP（COTA）",
+        "2",
+        "PlanetF1の一覧と大会前の記事（20コーナーのあとと11コーナーのあと）"
+       ],
+       [
+        "19",
+        "メキシコシティGP（エルマノス・ロドリゲス）",
+        "3",
+        "PlanetF1の一覧（FIAの発表として）。ScuderiaFans、GRANDPRIX247も3"
+       ]
+      ],
+      "note": "区間の数は、FIAのF1レースディレクターが大会ごとに出す地図（Circuit Map）により、「PlanetF1の一覧」とした大会はPlanetF1「FIA makes key decision for the Mexican Grand Prix」（2026年10月29日）と「FIA makes key decision for United States Grand Prix」（2026年10月22日）の一覧による。戦の番号はサイトのカレンダーによる。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "FIAが区間を決めるときの物差し",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "物差し",
+       "中身",
+       "出典"
+      ],
+      "rows": [
+       [
+        "タイヤのグリップ",
+        "車がタイヤのグリップの限界で走っていない場所だけ。コーナー、加速、ブレーキの区間は避ける",
+        "The Race（2026年5月28日）"
+       ],
+       [
+        "長さ",
+        "1つの区間が3秒より長く続く。短い区間は仕事が増えるだけで、速さにも燃費にも得がない",
+        "The Race、Crash.net"
+       ],
+       [
+        "どんな状態でも安全",
+        "燃料の軽い予選のアタックでも、タイヤの落ちたスティントの終わりでも安全",
+        "The Race"
+       ],
+       [
+        "次のコーナー",
+        "空気抵抗は約20％減り、最高速は最大で時速20km上がる。速く着きすぎないか",
+        "The Race"
+       ],
+       [
+        "曲がった区間",
+        "多くは本当の直線。年に3つか4つのサーキットで、かなり曲がった区間も入る",
+        "トンバジス（Autosport）"
+       ],
+       [
+        "グリップが低いとき",
+        "地図には、ふつうのグリップのときと、グリップが低いときの作動が分けて描かれる",
+        "FIA カナダGPの競技ノート"
+       ],
+       [
+        "スタート",
+        "スタンディングスタートのあとは、1コーナーを過ぎてから使える",
+        "開幕戦の競技ノート（FIA、GPFans）"
+       ]
+      ],
+      "note": "The Raceの物差しは、名前の出る情報源を示さずに伝えられたもの。F1公式サイトは2024年6月、FIAが3秒より長い直線ならどこでも使えるようにする見込みだと伝えていた。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "メキシコの3区間と、DRSの時代",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "区間",
+       "始まり（PlanetF1）",
+       "場所（ScuderiaFans）",
+       "2025年のDRS（FIAの地図の作動点）"
+      ],
+      "rows": [
+       [
+        "第1区間",
+        "17コーナーの70m先（フィニッシュラインのすぐ先）",
+        "メインストレート",
+        "17コーナーの240m先（メインストレート）"
+       ],
+       [
+        "第2区間",
+        "3コーナーの150m先",
+        "3〜4コーナーの間",
+        "3コーナーの115m先"
+       ],
+       [
+        "第3区間",
+        "11コーナーの70m先",
+        "11〜12コーナーの間",
+        "11コーナーの80m先（2019年に3つ目のDRSゾーンとして追加）"
+       ]
+      ],
+      "note": "出典：PlanetF1（2026年10月29日）、ScuderiaFans（2026年10月29日）、FIA「2025 Mexico City Grand Prix - Event Notes - Circuit Map」（2025年10月23日）、Crash.net「Third DRS zone added for Mexican Grand Prix」（2019年10月23日）。オーバーテイクモードの検知点は15コーナーの中ほど、作動点は17コーナーの中ほど（PlanetF1）。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "規則と文書の中のストレートモード",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "決まり",
+       "中身",
+       "どこで決まるか"
+      ],
+      "rows": [
+       [
+        "フラップを開いてよいとき",
+        "止まっている車か、作動ゾーンの内側に車がすっかり収まっている車だけ",
+        "技術規則 C3.10.10（前の翼）、C3.11.6（後ろの翼）"
+       ],
+       [
+        "作動ゾーンの決まり",
+        "技術規則は、作動ゾーンの定めをスポーツ規則に任せている",
+        "スポーツ規則"
+       ],
+       [
+        "大会ごとの区間",
+        "区間（SM A1など）、グリップが低いときの作動、オーバーテイクモードの検知点と作動点",
+        "レースディレクターの競技ノートの地図"
+       ],
+       [
+        "スタート",
+        "スタンディングスタートのあとは1コーナーを過ぎてから",
+        "レースディレクターの競技ノート（開幕戦、日本GP）"
+       ],
+       [
+        "区間をなくす",
+        "モナコは区間0。車はダウンフォース最大の形のまま",
+        "FIAの判断（2026年6月）。FIAのモナコの地図に区間の番号なし"
+       ]
+      ],
+      "note": "技術規則は、FIAの2026年F1規則セクションC 第17版（2026年4月28日）の C3.10.10(w) と C3.11.6(j) による。カナダGPの競技ノートは、2026年5月22日付のCircuit Map V2。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "ストレートモードとオーバーテイクモードの違い",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "",
+       "ストレートモード",
+       "オーバーテイクモード"
+      ],
+      "rows": [
+       [
+        "何を変えるか",
+        "前後の翼（空気抵抗を減らす）",
+        "パワーユニットの電気（0.5MJの上乗せ）"
+       ],
+       [
+        "だれが使えるか",
+        "区間の中なら全車が毎周",
+        "検知点で前の車の1秒以内にいた車"
+       ],
+       [
+        "どこで使えるか",
+        "FIAが決めた作動ゾーンの中だけ",
+        "作動点から。一度に使っても、1周に分けてもよい"
+       ],
+       [
+        "メキシコでは",
+        "3区間",
+        "検知点は15コーナーの中ほど、作動点は17コーナーの中ほど"
+       ],
+       [
+        "モナコでは",
+        "0区間",
+        "使えた（ラスカスの手前で検知、最終コーナーへ向かう所から）"
+       ]
+      ],
+      "note": "出典：PlanetF1、Motorsport Magazine、Crash.net、The Race、Speedcafe。"
+     }
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "作動ゾーン（アクティベーションゾーン）",
+   "ストレートモードを使ってよい区間。大会ごとにFIAが決め、レースディレクターの文書の地図に描かれる。地図では「SM A1」のような記号で示される。"
+  ],
+  [
+   "競技ノート",
+   "FIAのレースディレクターが、大会ごとに全チームと関係者へ出す文書。コースの地図、区間、スタートの手順などが入る。"
+  ],
+  [
+   "3秒の目安",
+   "1つの作動ゾーンが3秒より長く続くこと。短い区間はドライバーの仕事を増やすだけで得がない、という考え方による（The Race）。"
+  ],
+  [
+   "検知点と作動点",
+   "オーバーテイクモードで、前の車との差を測る地点と、使えるようになる地点。メキシコでは15コーナーと17コーナーの中ほど。"
+  ],
+  [
+   "曲がった区間",
+   "まっすぐではない作動ゾーン。トンバジスによると、年に3つか4つのサーキットにある。開幕戦メルボルンの4番目の区間がその例。"
+  ]
+ ],
+ "sources": [
+  {
+   "name": "PlanetF1",
+   "title": "FIA makes key decision for the Mexican Grand Prix（2026年10月29日、Michelle Foster）",
+   "url": "https://www.planetf1.com/news/fia-mexican-grand-prix-2026-active-aero"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "FIA makes key decision for United States Grand Prix（2026年10月22日、Michelle Foster）",
+   "url": "https://www.planetf1.com/news/fia-united-states-grand-prix-2026-active-aero"
+  },
+  {
+   "name": "ScuderiaFans",
+   "title": "How Mexico City's three Straight Mode zones could affect Ferrari, Mercedes and Red Bull（2026年10月29日、Luca Marini）",
+   "url": "https://scuderiafans.com/how-mexico-citys-three-straight-mode-zones-could-affect-ferrari-mercedes-and-red-bull/"
+  },
+  {
+   "name": "GRANDPRIX247",
+   "title": "Some technical insights ahead of the 2026 Mexico City Grand Prix at Autódromo Hermanos Rodríguez（2026年10月29日）",
+   "url": "https://www.grandprix247.com/formula-1-news/some-technical-insights-ahead-of-the-2026-mexico-city-grand-prix-at-autodromo-hermanos-rodriguez"
+  },
+  {
+   "name": "ウィリアムズ",
+   "title": "How Altitude Affects a Formula 1 Car（2024年10月25日）",
+   "url": "https://williamsf1.com/posts/ffcf0d74-0d2c-4b62-9dde-1c7a0e291a91/how-altitude-affects-an-f1-car"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Third DRS zone added for Mexican Grand Prix（2019年10月23日、Lewis Larkam）",
+   "url": "https://www.crash.net/f1/news/931873/1/third-drs-zone-added-mexican-gp"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Canadian Grand Prix - Competition Notes - Circuit Map V2（2026年5月22日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_canadian_grand_prix_-_competition_notes_-_circuit_map_v2.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Australian Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Quarantine Zone（2026年3月5日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_quarantine_zone.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Australian Grand Prix - Race Director's Competition Notes（2026年3月5日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_race_directors_competition_notes.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Japanese Grand Prix - Race Director's Competition Notes V2（2026年3月27日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_japanese_grand_prix_-_race_directors_competition_notes_v2.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Miami Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Red Zone（2026年4月30日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_red_zone.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Monaco Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Red Zone（2026年6月4日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_monaco_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_red_zone.pdf"
+  },
+  {
+   "name": "FIA（gp.news掲載の写し）",
+   "title": "2026 British Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Red Zone（2026年7月2日）",
+   "url": "https://gp.news/media/documents/2026/British_Grand_Prix/d06_Competition_Notes_-_Circuit_Map_Pit_Lane_Drawing_Emergency_Exits_Map_and_Red_Zone/document.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Belgian Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Red Zone（2026年7月16日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_belgian_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_red_zone.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Hungarian Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Red Zone（2026年7月23日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_hungarian_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_red_zone.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Bahrain Grand Prix in Malaysia - Competition Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Red Zone（2026年10月1日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_bahrain_grand_prix_in_malaysia_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_red_zone.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 Singapore Grand Prix - Competition Notes - Circuit Map, Pit Lane Drawing and Emergency Exits Map（2026年10月8日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_and_emergency_exits_map.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Mexico City Grand Prix - Event Notes - Circuit Map, Pit Lane Drawing, Emergency Exits Map and Quarantine Zone Area（2025年10月23日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_quarantine_zone_area.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations – Section C: Technical（第17版、2026年4月28日）",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+  },
+  {
+   "name": "The Race",
+   "title": "'Three second rule' among reasons F1's dropped active aero for Monaco（2026年5月28日、Jon Noble）",
+   "url": "https://the-race.com/formula-1/why-f1-cars-wont-run-active-aero-in-monaco/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Explained: Why F1 has removed active aero at the Monaco Grand Prix（2026年6月4日、Lewis Larkam）",
+   "url": "https://www.crash.net/f1/news/1096301/1/explained-why-f1-has-removed-active-aero-monaco-grand-prix"
+  },
+  {
+   "name": "Speedcafe",
+   "title": "F1 active aero system dropped for Monaco（2026年5月29日、Ben Waterworth）",
+   "url": "https://speedcafe.com/f1-news-2026-monaco-grand-prix-acrive-aero-update-track-map-new-rule-dropped-regulations-overtaking"
+  },
+  {
+   "name": "GRANDPRIX247",
+   "title": "Active Aero switched off for 2026 Formula 1 Monaco Grand Prix as FIA prioritizes safety（2026年6月4日）",
+   "url": "https://www.grandprix247.com/formula-1-news/active-aero-switched-off-for-2026-formula-1-monaco-grand-prix-as-fia-prioritizes-safety"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA announce dramatic U-turn over F1 rule change on eve of Australian Grand Prix（2026年3月7日、Chris Deeley）",
+   "url": "https://www.gpfans.com/en/f1-news/1077976/fia-f1-2026-rule-change-australian-grand-prix-u-turn-straight-mode/"
+  },
+  {
+   "name": "Motorsport.com",
+   "title": "FIA to revert Australian GP straight mode change after F1 team pushback",
+   "url": "https://www.motorsport.com/f1/news/fia-to-revert-australian-gp-straight-mode-change-after-f1-team-pushback/10802784/"
+  },
+  {
+   "name": "Autosport",
+   "title": "FIA to revert Australian GP straight mode change after F1 team pushback（2026年3月7日、Filip Cleeren）",
+   "url": "https://www.autosport.com/f1/news/fia-to-revert-australian-gp-straight-mode-change-after-f1-team-pushback/10802800/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "Active aero latest 2026 F1 car rule to be panned: 'It's really dangerous'（2026年3月9日、Lewis Duncan、Adam Cooper）",
+   "url": "https://www.crash.net/f1/news/1091079/1/active-aero-latest-2026-f1-car-rule-be-panned-its-really-dangerous"
+  },
+  {
+   "name": "GPFans",
+   "title": "FIA announce change to F1 start procedure at Australian Grand Prix（2026年3月6日、Sheona Mountford）",
+   "url": "https://www.gpfans.com/en/f1-news/1077827/f1-2026-australian-grand-prix-fia-start-procedure-change/"
+  },
+  {
+   "name": "The Race",
+   "title": "F1 teams agree another change to tackle 2026 start safety fears（2026年2月21日、Jon Noble）",
+   "url": "https://www.the-race.com/formula-1/f1-teams-agree-another-change-to-tackle-2026-start-safety-fears"
+  },
+  {
+   "name": "F1Technical",
+   "title": "FIA introduces five straight-line mode zones at Spa for Belgian Grand Prix",
+   "url": "https://www.f1technical.net/news/28910"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "EXPLAINED: From more agile cars to 'X-mode' and 'Z-mode' – unpicking the 2026 aerodynamics regulations（2024年6月6日、Lawrence Barretto）",
+   "url": "https://www.formula1.com/en/latest/article/explained-2026-aerodynamic-regulations-fia-x-mode-z-mode-.26c1CtOzCmN3GfLMywrgb2"
+  },
+  {
+   "name": "Motorsport Magazine",
+   "title": "Explained: Active aero, overtake mode and the new F1 2026 terminology（2025年12月17日、Pablo Elizalde）",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/explained-the-new-mode-names-for-active-aero-and-energy-boost-for-f1-2026/"
+  },
+  {
+   "name": "Crash.net",
+   "title": "F1 2026 terms explained: Overtake, boost, active aero, recharge（2025年12月17日、Lewis Larkam）",
+   "url": "https://www.crash.net/f1/news/1088255/1/explained-f1s-new-simplified-2026-terminology-after-confusion-fears"
+  }
+ ],
+ "related": [
+  {
+   "id": "nl-gpfans-mexico-altitude-challenge",
+   "why": "標高約2,250mの薄い空気で、ダウンフォースと空気抵抗が減り、チームが大きな翼を選ぶ理由"
+  }
+ ],
+ "lensRelated": [],
+ "history": [
+  [
+   "2026-10-30",
+   "公開。"
+  ]
+ ]
+}
