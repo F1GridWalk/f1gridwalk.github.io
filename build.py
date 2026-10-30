@@ -2967,6 +2967,16 @@ RELATED_CSS = """<style>
 .rel a.rel-i{display:block;margin:8px 0 0;padding:10px 14px;border:1px solid var(--line);border-left:3px solid var(--clay);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:15px;font-weight:700;line-height:1.55}
 .rel a.rel-i small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
 .rel a.rel-t{display:inline-block;margin:12px 0 0;font-size:14.5px;font-weight:700;color:var(--ink)}
+.rel .nx{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.rel a.nx-c{display:flex;flex-direction:column;justify-content:space-between;min-height:118px;padding:12px 14px;border-radius:14px;color:#fff;text-decoration:none;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:15px;line-height:1.45}
+.rel a.nx-c:first-child{grid-column:1/-1;min-height:130px;font-size:19px}
+.rel a.nx-c small{align-self:flex-start;font-family:system-ui,sans-serif;font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,.2);margin-bottom:8px}
+.rel a.nx-c span.go{font-family:system-ui,sans-serif;font-size:12px;font-weight:800;margin-top:8px;opacity:.9}
+.rel .nx-STORY{background:#1F2420}.rel a.nx-STORY small{background:#FFEE9A;color:#1F2420}
+.rel .nx-DEEP{background:#8E2F3B}.rel .nx-WORLD{background:#B8673F}.rel .nx-OFF{background:#2F6B66}
+.rel .nx-p{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.rel .nx-p a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:700;text-decoration:none;color:var(--ink);background:var(--surface)}
+.rel .nx-p a b{color:var(--clay)}
 </style>"""
 
 
@@ -3022,12 +3032,30 @@ def add_related(n=3):
             if sc >= 2:
                 scored.append((sc, d2, lb2, u2, t2))
         scored.sort(key=lambda r: (r[0], r[1]), reverse=True)
+        if len(scored) < n:  # top up with pages sharing one name, newest first (owner, 30 Oct 2026)
+            have = {r[3] for r in scored}
+            weak = sorted([(1, d2, lb2, u2, t2) for lb2, u2, t2, _, d2 in pages if u2 != url and u2 not in have and mine & ents[u2]],
+                          key=lambda r: r[1], reverse=True)
+            scored += weak[:n - len(scored)]
         tm = [e_[5:] for e_ in sorted(mine) if e_.startswith('team:')]
         tm = [k for k in tm if os.path.exists(os.path.join(ROOT, 'teams', k, 'index.html'))]
         box = ''
-        if scored or tm:
-            box = ('<section class="rel"><p class="rel-k">MORE ON THIS</p><h2>この話の続き</h2>'
-                   + ''.join(f'<a class="rel-i" href="{e(u2)}" data-track="click/rel{e(url)}"><small>{e(lb2)}</small>{e(t2)} →</a>' for _, _, lb2, u2, t2 in scored[:n])
+        # 「次に読む」 as big cards, a STORY first when there is one (owner, 30 Oct 2026)
+        top = scored[:n]
+        st = next((r for r in scored[:6] if r[2] == 'STORY'), None)
+        if st and st not in top:
+            top = [st] + top[:n - 1]
+        top.sort(key=lambda r: r[2] != 'STORY')
+        mytxt = next((t_ for _, u_, _, t_, _ in pages if u_ == url), '')
+        def pos(pp):
+            ix = [mytxt.find(a) for a in [pp['name']] + (pp.get('aliases') or []) if len(a) >= 2 and mytxt.find(a) >= 0]
+            return min(ix) if ix else 10 ** 6
+        drv = sorted([pp for pp in PEOPLE if 'person:' + pp['id'] in mine and 'ドライバー' in pp.get('role', '') and 'エンジニア' not in pp.get('role', '')], key=pos)[:3]
+        if scored or tm or drv:
+            box = ('<section class="rel"><p class="rel-k">READ NEXT</p><h2>次に読む</h2><div class="nx">'
+                   + ''.join(f'<a class="nx-c nx-{e(lb2.split()[0])}" href="{e(u2)}" data-track="click/rel{e(url)}"><small>{e(lb2)}</small>{e(t2)}<span class="go">読む →</span></a>' for _, _, lb2, u2, t2 in top)
+                   + '</div>'
+                   + ('<div class="nx-p">' + ''.join(f'<a href="/deep/rules/person-{e(pp["id"])}/" data-track="click/rel-person/{e(pp["id"])}"><b>{e(pp["name"])}</b>のページ（近況・うわさ）→</a>' for pp in drv) + '</div>' if drv else '')
                    + ''.join(f'<a class="rel-t" href="/teams/{e(k)}/" data-track="click/rel-team/{e(k)}">{e(teams[k].get("name", k))}の記事を、まとめて読む →</a><br>' for k in tm[:2])
                    + '</section>' + RELATED_CSS)
         write(url.strip('/') + '/index.html', h.replace(mk, box))
