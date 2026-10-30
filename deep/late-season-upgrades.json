@@ -1,0 +1,635 @@
+{
+ "slug": "late-season-upgrades",
+ "no": 33,
+ "title": "F1の終盤、マクラーレンはなぜメキシコで改良を入れないのか",
+ "dek": "マクラーレンはメキシコシティGPに新しい部品をほとんど持ち込まず、残りの改良をブラジルとラスベガスに回す。シーズンの終わりが近づくと、新しい部品は「何戦使えるか」と「来季に何が残るか」で値打ちが変わる。予算上限、風洞とCFDの上限、2027年の車づくり、そしてFIAに出す部品の申告の数から、終盤の改良の考え方を読む。",
+ "published": "2026-10-31T01:17:00+09:00",
+ "themes": [
+  "マシンと空力",
+  "チームとビジネス"
+ ],
+ "circuit": "mexico",
+ "teams": [
+  "mclaren",
+  "ferrari",
+  "williams",
+  "astonmartin",
+  "mercedes",
+  "redbull"
+ ],
+ "topics": [
+  "mclaren-slow-corner-weakness",
+  "mclaren-austin-upgrade",
+  "ferrari-austin-upgrade",
+  "mclaren-upgrade-vow",
+  "vowles-cost-cap-two-tier"
+ ],
+ "quick": [
+  "マクラーレンは、メキシコシティGP（10月30日〜11月1日）に新しい部品をほとんど持ち込まず、残りの改良をサンパウロGP（ブラジル）とラスベガスGPに回す。アンドレア・ステラ代表は「メキシコでは多くはないが、ブラジルとラスベガスではいくつか改良がある」と話した（RacingNews365）。チームは、オースティンで入れた前後のコーナーまわりの変更を、メキシコで仕上げるとしている（マクラーレン公式）。",
+  "シーズンの終わりが近いほど、新しい部品の値打ちは下がる。使えるレースが少ないからだ。フェラーリのフレデリック・バスール代表は、最後の2戦で0.2秒ほど速くなるより、5戦で0.2秒ほど速くなるほうがいいという考えを示した（The Race）。",
+  "改良に使うお金と、風洞・CFDの量は、今季の車と来季の車で同じ枠から出る。ステラ代表は2025年、CFDと風洞のテストは「同じ鍋から出る」と話した（Motorsport Week）。ウィリアムズのジェームズ・ボウルズ代表は「今年のためのことをすれば、将来の自分を遅くする」と話している（The Race）。",
+  "マクラーレンのロブ・マーシャルは、2027年の規則の変更は控えめで、今の車の部品や考え方の多くが来季にも通じると話す（RACER）。終盤の改良は、来季の車のための試験も兼ねる。FIAの運用規則では、前の年のコンストラクターズの最終順位が、その年の前半の風洞とCFDの量を決める。この仕組みのままなら、2026年の最終順位は2027年前半の開発の量にも響く。",
+  "FIAに出す部品の申告を見ると、2025年の終盤は、サンパウロとアブダビで全10チームが新しい部品なしだった。メキシコの申告は、冷却用の部品が中心になりやすい（2023年、2025年）。ただし2024年には、マクラーレンがメキシコに新しいフロアを持ち込んでいる（PlanetF1）。"
+ ],
+ "sections": [
+  {
+   "h": "「メキシコはほぼなし」で決まったこと",
+   "body": [
+    {
+     "p": "マクラーレンは、2025年のコンストラクターズ王者だ。それが2026年は、第18戦アメリカGPを終えてコンストラクターズ4位。英RacingNews365によると、355点で3位のレッドブルと並び、メルセデスとフェラーリの後ろにいる。オースティンの決勝は、ランド・ノリスが5位、オスカー・ピアストリが7位だった（Grandprix.com）。"
+    },
+    {
+     "p": "その次のレースが、メキシコシティGPだ。ステラ代表は、残りのアップグレード（新しい部品）の予定をこう話した（RacingNews365。同じ話を伝えたPlanetF1の記事の要約は「マクラーレン、ブラジルとラスベガスで改良投入へ　ステラ代表『メキシコはほぼなし』」 https://f1gridwalk.github.io/news/en-planetf1-mclaren-upgrades-stella/ ）。"
+    },
+    {
+     "quote": "結局、それができるのはブラジルとラスベガスだけになるだろう。だからメキシコでは多くはないが、ブラジルとラスベガスではいくつか改良がある",
+     "who": "ステラ（マクラーレン）"
+    },
+    {
+     "quote": "まだ準備中の改良が、いくつかある",
+     "who": "ステラ（マクラーレン）"
+    },
+    {
+     "p": "ステラ代表は、改良で表彰台を毎戦争えるようになり、勝つために必要な速さに近づくことを望んでいる、とも話した。ただし、どんな部品なのかは明かしていない。これまでの改良では、バクーで新しいブレーキダクトを入れたことに触れた。"
+    },
+    {
+     "p": "マクラーレンの公式サイトのメキシコシティGPのプレビュー（10月28日）は、オースティンで前後のコーナーまわりの変更を入れて成功したとし、メキシコではその変更を仕上げることを目指し、あわせて少しの部品を持ち込むと書いている。ここでいう「コーナー」は、コースの曲がり角ではなく、車の四隅（タイヤのまわりのブレーキダクトなど）のことだ。"
+    },
+    {
+     "p": "オースティンで何を入れたかは、FIAの文書で分かる。アメリカGPの「カー・プレゼンテーション・サブミッション」（ドキュメント11、10月23日）では、マクラーレンはフロントコーナー、リアコーナー、ディフューザーの3つを申告し、理由はどれも「性能：流れの整え（フロー・コンディショニング）」だった。"
+    },
+    {
+     "p": "つまりメキシコは、新しい部品を足す週末ではなく、入れたばかりの部品を理解する週末になる。英Sky Sportsは、マクラーレンの計画を伝えた記事の中で、ほとんどのチームがいまは2027年の車の設計に集中している、と書いている。"
+    }
+   ]
+  },
+  {
+   "h": "残りのレースが減るほど、部品の値打ちは下がる",
+   "body": [
+    {
+     "p": "新しい部品で0.2秒ほど速くなっても、使えるのが2戦なら、得られるものは小さい。だからチームは、いつ入れるかを考える。英The Race（8月14日）によると、フェラーリのバスール代表は、たくさんの改良を入れていると言われたことに答えて、こう話した。"
+    },
+    {
+     "quote": "最後の2戦で0.2秒ほど速くなるより、5戦で0.2秒ほど速くなるほうがいい",
+     "who": "バスール（フェラーリ）"
+    },
+    {
+     "p": "逆の考え方もある。メルセデスのトト・ウォルフ代表は6月、オーストリアGPのあとに、改良は「正しいタイミングでやらなければならない」と話した（F1公式サイト）。ウォルフ代表は、フェラーリは車に部品を大量に投入しているが、メルセデスにはそこまでのお金の余裕がないとも話している。The Raceは8月の記事で、改良を前半に詰め込むと、年の後半に開発のお金が足りなくなるおそれがある、と書いている。"
+    },
+    {
+     "p": "予想が外れることもある。メルセデスのジョージ・ラッセルは10月1日、オランダのGPblogなどに、ほかのチームがまた大きな改良を入れたら驚く、今のまま最後まで行ってほしい、と話した。ところがフェラーリは、アメリカGPに今季4つ目で、いちばん大きな空力の改良を持ち込んだ（The Race）。"
+    },
+    {
+     "p": "そのフェラーリも、ここで線を引いた。The Raceは10月18日、アメリカGPは、フェラーリがこの規模の空力パッケージを入れる最後のレースになる、と伝えた。オースティンのあとのSF-26の開発は、主にコースごとの調整に限られるという。レッドブルの車の考え方を取り入れることも調べたが、残りの少ないレースで十分な差が出る確かさがなく、多くの資源を回さないと決めたとされる。"
+    },
+    {
+     "view": "編集部としては、終盤の改良の値打ちは「速くなるか」だけでなく、「何戦使えるか」と「来季に何を残すか」で決まると見ています。マクラーレンの場合、メキシコに少しの部品を足すより、オースティンで入れた部品を理解し、改良をブラジルとラスベガスにまとめるほうが、残りの戦数と来季の準備の両方に合う判断だと見ています。"
+    }
+   ]
+  },
+  {
+   "h": "同じお金、同じ風洞",
+   "body": [
+    {
+     "p": "改良に使うお金には、コストキャップ（予算上限）がある。FIAの財務規則（D4.1.2）によると、2026年からの上限は1年に2億1500万ドル（24戦まで。物価の調整が入ることがある）。F1の車の費用を資産として計上した場合も、その費用がかかった年に数えるよう調整しなければならない（D6.1.1.d）。"
+    },
+    {
+     "p": "風洞とCFDにも上限がある。空力テストの制限（ATR）だ。FIAの運用規則（F4.1.2）は、制限の対象を、F1の車や部品を模したものを使った、風洞やコンピューターの中のテストと定めている。今季の車と来季の車の関係について、ステラ代表は2025年10月、アメリカGPの週末にこう説明していた（Motorsport Week）。"
+    },
+    {
+     "quote": "CFDと風洞のテストについては、同じ鍋から出ている",
+     "who": "ステラ（マクラーレン、2025年）"
+    },
+    {
+     "p": "この年のマクラーレンは、イタリアGPから改良を重ねたレッドブルを追いかけなかった。ステラ代表は、2025年の車はすでに空力の開発が頭打ちで、空力の効率を1ポイント上げるのに何週間もかかったと話した。改良を続ければ「2026年の計画が大きく損なわれていた」とし、全部の資源を2026年に移す時期は「とても慎重に」選んだという。レッドブルについては、2026年を少しあきらめることを、より受け入れやすかったのかもしれない、と話している。"
+    },
+    {
+     "p": "お金の足りないチームでは、この天秤はもっと重い。ウィリアムズのボウルズ代表は10月2日、セパンで開かれたバーレーンGPのチーム代表の記者会見で、こう話した（The Race）。"
+    },
+    {
+     "quote": "今年のためのことを何かすれば、将来の自分を遅くすることになる。それはできない",
+     "who": "ボウルズ（ウィリアムズ）"
+    },
+    {
+     "p": "順位も、来季の開発の量に響く。運用規則（F4.6.1）では、1年を6つに分けた期間のうち、最初の3つの期間の割合を、前の年のコンストラクターズの最終順位で決める。この仕組みのままなら、2026年の最終順位が、2027年の1月から6月ごろまでの風洞とCFDの量になる。1つ順位が上がるごとに5％減り、3位は基準の80％、4位は85％だ（順位ごとの量の一覧は、DEEP GRID「F1のアップデートで、なぜ車が遅くなることがあるのか」 https://f1gridwalk.github.io/deep/upgrade-slower/ ）。規則の基準（1期間に風洞320回、CFD2000件）に当てはめると、3位と4位の差は、1期間に風洞16回、CFD100件になる（編集部の計算）。"
+    },
+    {
+     "view": "編集部としては、順位が1つ上がると来季前半の風洞とCFDが少し減る仕組みでも、チームがそのために順位を手放すとは考えにくいと見ています。賞金の分配（コンストラクター順位で決まる）も順位で変わるからです。それでも、レッドブルと同点で並ぶマクラーレンにとって、終盤の1戦ごとの点が、来季の開発の量にもつながっているのは確かです。"
+    }
+   ]
+  },
+  {
+   "h": "2027年への「試験台」",
+   "body": [
+    {
+     "p": "シーズンのどこかで、今の車の改良をやめて開発の中心を次の年の車に移すのが、翌年のマシンへの開発の切り替えだ。ただ、2026年の終盤の改良は、来季の車のための試験も兼ねる。RACERによると、マクラーレンのチーフ・テクニカル・オフィサー兼チーフデザイナー、ロブ・マーシャルは、アメリカGPの前に、2027年の規則変更はかなり控えめなので、この車の部品や考え方の多くが来季にも通じると話した。そのうえで、こう続けている。"
+    },
+    {
+     "quote": "部品そのものが来季に持ち越せない場合でも、学んだことと相関は持ち越せる",
+     "who": "マーシャル（マクラーレン）"
+    },
+    {
+     "p": "マーシャルは、シミュレーション、風洞、コースの結果を比べるたびに、2027年の車を作るための道具がよくなるとも話した。オースティンについては、ブレーキの信頼性などを狙った控えめな改良に加え、フロアの小さな変更を試すと話していた。"
+    },
+    {
+     "p": "ほかのチームも同じ考え方を見せている。ウィリアムズは、アメリカGPのFP1を2027年に向けた空力のテストに使い、ハードタイヤで空力を測った（The Race、10月24日）。チーフ・トラックサイド・エンジニアのポール・ウィリアムズは、このコースは空力のデータを集めるのにとても向いているとして、この週末の速さと長い目で見た学びのバランスを取ったと説明した。カルロス・サインツは「少なくとも来年に向けて、できるだけ多くを学ぶことに投資している」と話している。"
+    },
+    {
+     "p": "アストンマーティンは、もっと早く線を引いた。チーフ・テクニカル・オフィサーのエンリコ・カルディレは、イタリアGPの前にチームの公式サイトのインタビュー（9月3日）で、ハンガリーのあとにオランダGPで入れた前翼とフロアの小さな手直しが、この車の「最後に予定している空力開発」だと話した。例外は、2027年の車を開発するなかで見つかったものを、相関のためにコースで試す場合だけで、いまのところ予定はないという。空力ではない軽量化はアゼルバイジャンGPのころまで続け、そこからは実質的に最終版の車でシーズンを走るとも話している。"
+    },
+    {
+     "p": "ただ、どのチームも来季に部品を持ち越すつもりとは限らない。カルディレは同じインタビューで、2027年の車は「すべての部品が新しくなる」と話している。考え方は今年の車の方向を引き継ぐが、今の車から部品を持ち越そうとはしていないという。今季の車の部品がそのまま使えないなら、終盤に部品を作る理由は、速さよりも、学びと相関のほうに寄っていく。"
+    },
+    {
+     "p": "マクラーレンは10月のシンガポールGPのあとにも、終盤に改良を入れると話していた（RacingNews365。「マクラーレン、終盤3戦にアップグレード投入へ　ステラ代表が復調レッドブルに対抗」 https://f1gridwalk.github.io/news/en-racingnews365-mclaren-upgrade-vow/ ）。一方でステラ代表は、シンガポールで、車の性格を変えるには「ダウンフォースを足すだけではない、もっと根本的なもの」が必要で、それは「早くても2027年のMCL41」になるという見方を示していた（PlanetF1、10月19日）。ステラ代表は同じ場で、これから車に入る部品でこの性格がよくなるとは思っていない、とも話している。"
+    }
+   ]
+  },
+  {
+   "h": "FIAの申告で見る、メキシコと終盤",
+   "body": [
+    {
+     "p": "チームは、各グランプリで、新しい部品の一覧をFIAに出す。FIAの説明（2023年）によると、前のレースで使っていない、主な空力と車体の部品が対象だ。FIAは、この「カー・プレゼンテーション」が、シーズンを通した各チームの開発の道すじをのぞける資料だとしている。部品ごとに、性能のためか、そのコースのためか、信頼性のためかといった理由も書かれる。"
+    },
+    {
+     "p": "メキシコの申告は、冷却の部品が多くなりやすい。FIAによると、2023年のメキシコシティGPでは、レッドブル、フェラーリ、アルピーヌ、マクラーレン、ハース、ウィリアムズが、冷却のためのルーバーやブレーキダクトを持ち込んだ。メルセデスとアストンマーティンは変更なし。一般的な性能の改良を持ち込んだのは、アルファロメオだけだった。"
+    },
+    {
+     "p": "2025年も似ていた。FIAのドキュメント7（2025年10月24日）では、申告は6チームの11部品。そのうち7つは「サーキット専用：冷却の幅」、2つは信頼性で、その場所のダウンフォースを増やす（ローカル・ロード）部品は、レッドブルのフロアとエッジウイングの2つだけだった。マクラーレン、メルセデス、アストンマーティン、ハースは申告なしだった。"
+    },
+    {
+     "p": "ただし、メキシコで大きな部品を入れた年もある。英PlanetF1によると、2024年のマクラーレンは、メキシコに新しいフロアを持ち込んだ。マクラーレンは、このフロアを「あらゆる場所で形を変えた」と説明している。この年は5チームが部品を持ち込み、残りの5チームは何も持ち込まなかった。"
+    },
+    {
+     "p": "メキシコの空気の薄さが、ダウンフォースや冷却にどう効くかは、DEEP GRID「なぜメキシコシティでは、F1の車が「別物」になるのか」（ https://f1gridwalk.github.io/deep/mexico-altitude/ ）で詳しく書いた。"
+    },
+    {
+     "p": "シーズンの最後の数戦は、もっと静かになる。2025年のFIAの申告では、アメリカGPが2チームの6部品、メキシコシティGPが6チームの11部品、ラスベガスGPが3チームの4部品（どれも翼で、理由はバランスか空気抵抗の幅）、カタールGPが1チームの1部品だった。サンパウロGPとアブダビGPは、全10チームが「この大会での更新なし」だった。2026年に規則が大きく変わる前の年だった。"
+    },
+    {
+     "p": "2026年はどうか。RACERによると、セパンで開かれたバーレーンGP（10月）では、ウィリアムズ、アストンマーティン、アウディ、キャデラックの4チームが申告なし。FIAのアメリカGPの申告では、7チームが合わせて20の部品を出し、メルセデス、ウィリアムズ、アストンマーティン、ハースは申告なしだった。いちばん多かったのは、フェラーリとレーシングブルズの4つずつだ。"
+    },
+    {
+     "view": "編集部としては、空気の薄いメキシコは、ダウンフォースの大きさがほかのコースと違うぶん、新しい空力の部品の効果を確かめる場としては使いにくい面がありそうだと見ています。ただ、マクラーレン自身はそう説明しておらず、2024年には同じメキシコで新しいフロアを入れています。メキシコを避けたというより、部品ができあがる時期と、確かめたいコースの組み合わせで、ブラジルとラスベガスになったと読むのが自然だと見ています。メキシコシティGPの申告は、各チームの部品の数を照らし合わせる材料になります。"
+    }
+   ]
+  }
+ ],
+ "deep": [
+  {
+   "h": "マクラーレンの2026年後半の主な改良",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "レース",
+       "中身",
+       "出典"
+      ],
+      "rows": [
+       [
+        "第11戦 ハンガリーGP",
+        "大きな改良パッケージ。このあと、ノリスがハンガリーとオランダで勝った",
+        "Motorsport Week"
+       ],
+       [
+        "第15戦 アゼルバイジャンGP",
+        "新しいブレーキダクト（ステラ代表が例として挙げた）",
+        "RacingNews365"
+       ],
+       [
+        "第16戦 バーレーンGP（マレーシア開催）",
+        "冷却を増やしたエンジンカバー（セパンの条件のためのサーキット専用の部品）",
+        "RACER"
+       ],
+       [
+        "第18戦 アメリカGP",
+        "フロントコーナー、リアコーナー、ディフューザー（理由はどれも「性能：流れの整え」）",
+        "FIA ドキュメント11"
+       ],
+       [
+        "第19戦 メキシコシティGP",
+        "オースティンの変更を仕上げ、少しの部品を持ち込む",
+        "マクラーレン公式"
+       ],
+       [
+        "第20戦 サンパウロGP、第21戦 ラスベガスGP",
+        "いくつか改良を入れる予定（中身は明かしていない）",
+        "RacingNews365（ステラ代表）"
+       ]
+      ],
+      "note": "出典：Motorsport Week（2026年10月29日）、RacingNews365（2026年10月29日）、RACER（2026年10月1日）、FIA「2026 United States Grand Prix - Car Presentation Submissions」（ドキュメント11、2026年10月23日）、マクラーレン公式のメキシコシティGPのプレビュー（2026年10月28日）。ハンガリーGPの戦の番号は、サイトのシーズンの日程による。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "2026年の最近の大会で、部品を申告したチーム",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "大会",
+       "申告したチーム",
+       "申告なし",
+       "出典"
+      ],
+      "rows": [
+       [
+        "第16戦 バーレーンGP（マレーシア開催、セパン）",
+        "7チーム（メルセデス、マクラーレン、アルピーヌ、レッドブル、フェラーリ、レーシングブルズ、ハース）",
+        "ウィリアムズ、アストンマーティン、アウディ、キャデラック",
+        "RACER"
+       ],
+       [
+        "第18戦 アメリカGP（オースティン）",
+        "7チーム、20部品（フェラーリ4、レーシングブルズ4、マクラーレン3、アウディ3、レッドブル2、アルピーヌ2、キャデラック2）",
+        "メルセデス、ウィリアムズ、アストンマーティン、ハース",
+        "FIA ドキュメント11"
+       ]
+      ],
+      "note": "出典：RACER「Technical updates: 2026 Bahrain Grand Prix in Malaysia」（2026年10月1日、Chris Medland）、FIA「2026 United States Grand Prix - Car Presentation Submissions」（2026年10月23日）。セパンの部品の数は、RACERの記事に書かれていない。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "2025年の終盤6戦の申告（FIAの文書）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "大会",
+       "申告したチーム",
+       "部品の数",
+       "主な理由"
+      ],
+      "rows": [
+       [
+        "アメリカGP",
+        "2（メルセデス1、ハース5）",
+        "6",
+        "性能（その場所のダウンフォース、流れの整え）"
+       ],
+       [
+        "メキシコシティGP",
+        "6（レッドブル4、フェラーリ2、レーシングブルズ2、アルピーヌ1、ウィリアムズ1、ザウバー1）",
+        "11",
+        "冷却の幅7、信頼性2、その場所のダウンフォース2"
+       ],
+       [
+        "サンパウロGP",
+        "0",
+        "0",
+        "全10チームが更新なし"
+       ],
+       [
+        "ラスベガスGP",
+        "3（マクラーレン2、レッドブル1、レーシングブルズ1）",
+        "4",
+        "どれも翼。理由はバランスか空気抵抗の幅（4つのうち3つは「サーキット専用」と明記）"
+       ],
+       [
+        "カタールGP",
+        "1（レーシングブルズ1）",
+        "1",
+        "コース専用のバランスの幅（前翼のガーニー）"
+       ],
+       [
+        "アブダビGP",
+        "0",
+        "0",
+        "全10チームが更新なし"
+       ]
+      ],
+      "note": "出典：FIA「Car Presentation Submissions」2025年アメリカGP（ドキュメント10、10月17日）、メキシコシティGP（ドキュメント7、10月24日）、サンパウロGP（ドキュメント10、11月7日）、ラスベガスGP（ドキュメント7、11月20日）、カタールGP（ドキュメント8、11月28日）、アブダビGP（ドキュメント8、12月5日）。部品の数は、文書の行の数。ラスベガスのマクラーレンのリアウイングのフラップは、1行に2つの案がある。2025年は、2026年の大きな規則変更の前の年。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "メキシコシティGPの申告（2023〜2025年）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "年",
+       "申告",
+       "マクラーレン",
+       "出典"
+      ],
+      "rows": [
+       [
+        "2023",
+        "メルセデスとアストンマーティン以外の8チーム。多くは冷却のルーバーやブレーキダクト。一般的な性能の改良はアルファロメオだけ",
+        "冷却のための部品",
+        "FIA"
+       ],
+       [
+        "2024",
+        "5チーム（RB〈現レーシングブルズ〉4、マクラーレン3、レッドブル2、ウィリアムズ2、フェラーリ1）。残り5チームはなし",
+        "3。冷却の部品2つと、新しいフロア",
+        "PlanetF1"
+       ],
+       [
+        "2025",
+        "6チーム、11部品。多くは冷却",
+        "申告なし",
+        "FIA ドキュメント7"
+       ]
+      ],
+      "note": "出典：FIA「F1 - Tech updates: Mexico City Grand Prix」（2023年10月27日）、PlanetF1（2024年10月25日、Sam Cooper）、FIA「2025 Mexico City Grand Prix - Car Presentation Submissions」（2025年10月24日）。2024年のマクラーレンの部品の数は、The Race（2024年10月25日）では2つと数えられていて、数え方で違う。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "終盤の改良を左右する決まり",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "決まり",
+       "中身",
+       "根拠"
+      ],
+      "rows": [
+       [
+        "コストキャップ（予算上限）",
+        "1年に2億1500万ドル（24戦まで。物価の調整が入ることがある）。24戦を超えると1戦につき180万ドルを足す",
+        "財務規則 D4.1.2"
+       ],
+       [
+        "費用を数える年",
+        "F1の車の費用を資産に計上した場合も、かかった年の費用として数えるよう調整する。研究・開発・設計・テストの費用は、在庫の部品の原価に入れられない",
+        "財務規則 D6.1.1.d、D6.1.1.e"
+       ],
+       [
+        "空力テストの制限（ATR）の対象",
+        "F1の車や部品を模したものを使った、風洞やコンピューターの中でのテスト",
+        "運用規則 F4.1.2"
+       ],
+       [
+        "期間",
+        "1年に6つ。第1期間は1月1日から第9週の終わりまで。第2・3・5期間は8週、第4期間は夏休みの工場閉鎖を含む10週、第6期間は12月31日まで",
+        "運用規則 F4.1.4"
+       ],
+       [
+        "量を決める順位",
+        "最初の3期間は前の年のコンストラクターズの最終順位、後の3期間は第3期間の終わりの時点のその年の順位",
+        "運用規則 F4.6.1(a)"
+       ],
+       [
+        "割合と基準",
+        "1位70％から順位ごとに5％ずつ増え、10位以下と新しいチームは115％。基準（100％）は1期間に風洞320回、CFD2000件",
+        "運用規則 F4.6.1"
+       ],
+       [
+        "部品の申告",
+        "各グランプリで、前のレースで使っていない主な空力・車体の部品の一覧をFIAに出し、FIAが公開する",
+        "FIAの説明（2023年）"
+       ]
+      ],
+      "note": "出典：FIA 財務規則 セクションD（F1チーム）第7版（2026年6月25日）、運用規則 セクションF 第9版（2026年6月25日）、FIA「F1 - Tech updates: Mexico City Grand Prix」（2023年10月27日）。"
+     }
+    }
+   ]
+  },
+  {
+   "h": "各チームの終盤の判断（2025〜2026年）",
+   "body": [
+    {
+     "table": {
+      "head": [
+       "チーム",
+       "判断",
+       "出典"
+      ],
+      "rows": [
+       [
+        "マクラーレン（2026年）",
+        "メキシコは少しの部品。改良はブラジルとラスベガス。部品と考え方の多くは2027年にも通じる（マーシャル）",
+        "RacingNews365、マクラーレン公式、RACER"
+       ],
+       [
+        "フェラーリ（2026年）",
+        "アメリカGPが、この規模の空力パッケージの最後。その後は主にコースごとの調整。風洞の作業の多くは2027年へ",
+        "The Race"
+       ],
+       [
+        "アストンマーティン（2026年）",
+        "オランダGPの手直しが、予定していた最後の空力開発。例外は2027年の発見を相関のために試す場合。2027年の車は「すべての部品が新しく」なる（カルディレ、イタリアGPの前）",
+        "アストンマーティン公式"
+       ],
+       [
+        "ウィリアムズ（2026年）",
+        "アメリカGPのFP1を、2027年に向けた空力のテストに使った",
+        "The Race"
+       ],
+       [
+        "メルセデス（2026年）",
+        "部品の量と予算上限の制約で苦しんでいる（ラッセル、10月1日）。アメリカGPは申告なし",
+        "GPblog、FIA ドキュメント11"
+       ],
+       [
+        "マクラーレン（2025年）",
+        "2026年の計画を守るため、終盤の改良でレッドブルを追わなかった",
+        "Motorsport Week"
+       ],
+       [
+        "レッドブル（2025年）",
+        "イタリアGPから改良を重ね、メキシコにもフロアの部品を持ち込んだ",
+        "Motorsport Week、FIA"
+       ]
+      ],
+      "note": "出典：各記事とFIAの文書。フェラーリの判断は、The Raceが名前の出ない情報源をもとに伝えたもの。"
+     }
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  [
+   "カー・プレゼンテーション（部品の申告）",
+   "各グランプリで、チームがFIAに出す新しい部品の一覧。前のレースで使っていない主な空力と車体の部品が対象で、FIAが公開する。"
+  ],
+  [
+   "サーキット専用の部品",
+   "そのコースの条件に合わせるためだけの部品。メキシコの冷却用のルーバーや、ラスベガスの空気抵抗の小さい翼など。"
+  ],
+  [
+   "流れの整え（フロー・コンディショニング）",
+   "申告の理由の書き方の一つ。ほかの部品がうまく働くように、空気の流れを整えること。"
+  ],
+  [
+   "ローカル・ロード",
+   "申告の理由の書き方の一つ。その部品のまわりで、ダウンフォースを増やすこと。"
+  ],
+  [
+   "空力テスト期間（ATP）",
+   "空力テストの制限で、量を数える区切り。1年に6つあり、期間ごとに風洞とCFDの上限がある。"
+  ]
+ ],
+ "sources": [
+  {
+   "name": "RacingNews365",
+   "title": "McLaren reveal plan to recapture winning form amid sudden F1 slump（2026年10月29日、Samuel Coop）",
+   "url": "https://racingnews365.com/mclaren-reveal-plan-to-recapture-winning-form-amid-sudden-f1-slump"
+  },
+  {
+   "name": "マクラーレン公式",
+   "title": "Preview: The 2026 Mexico City Grand Prix（2026年10月28日）",
+   "url": "https://www.mclaren.com/racing/formula-1/2026/mexico-city-grand-prix/preview/"
+  },
+  {
+   "name": "Sky Sports",
+   "title": "Mexico City GP: McLaren plan further upgrades after Lando Norris and Oscar Piastri's struggles in Austin（2026年10月28日、Nigel Chiu）",
+   "url": "https://www.skysports.com/f1/news/13604726/mexico-city-gp-mclaren-plan-further-upgrades-after-lando-norris-and-oscar-piastris-struggles-in-austin"
+  },
+  {
+   "name": "Motorsport Week",
+   "title": "McLaren to bring more upgrades in Brazil and Las Vegas as Stella targets podium return（2026年10月29日、Hannah Kate Costello）",
+   "url": "https://www.motorsportweek.com/2026/10/29/mclaren-to-bring-upgrades-brazil/"
+  },
+  {
+   "name": "Grandprix.com",
+   "title": "McLaren targets Brazil and Las Vegas for next upgrades（2026年10月29日）",
+   "url": "https://www.grandprix.com/news/mclaren-targets-brazil-and-las-vegas-for-next-upgrades.html"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 United States Grand Prix - Car Presentation Submissions（ドキュメント11、2026年10月23日）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "The Race",
+   "title": "Why top F1 teams face a big six million dilemma（2026年8月14日、Jon Noble）",
+   "url": "https://www.the-race.com/formula-1/why-top-f1-teams-face-a-big-six-million-dilemma/"
+  },
+  {
+   "name": "F1公式サイト",
+   "title": "'You have to do it at the right time' – Wolff thinks Ferrari might run out of update spending（2026年6月29日）",
+   "url": "https://www.formula1.com/en/latest/article/you-have-to-do-it-at-the-right-time-wolff-thinks-ferrari-might-run-out-of-update-spending-after-throwing-things-at-their-car.7cmEak70Xhh1G7WhFnyhLr"
+  },
+  {
+   "name": "GPblog",
+   "title": "Russell admits Mercedes have struggled to match rivals' upgrade pace ahead of Bahrain GP package（2026年10月1日、Kieran Lynch）",
+   "url": "https://www.gpblog.com/en/news/george-russell-admits-mercedes-are-struggling-to-match-rivals-upgrade-pace"
+  },
+  {
+   "name": "The Race",
+   "title": "What Ferrari's changing with its biggest F1 upgrade of 2026（2026年10月18日、Rosario Giuliana）",
+   "url": "https://www.the-race.com/formula-1/what-ferrari-is-changing-biggest-f1-2026-upgrade/"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section D Financial - F1 Teams Issue 07（2026年6月25日）D4.1.2、D6.1.1",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2026 F1 Regulations Section F Operational Issue 09（2026年6月25日）F4.1.2、F4.1.4、F4.6.1",
+   "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_f_operational_-_iss_09_-_2026-06-25.pdf"
+  },
+  {
+   "name": "Motorsport Week",
+   "title": "Why McLaren hasn't rivalled Red Bull's late F1 upgrades in 2025（2025年10月24日、Taylor Powling）",
+   "url": "https://www.motorsportweek.com/2025/10/24/why-mclaren-hasnt-rivalled-red-bulls-late-f1-upgrades-in-2025/"
+  },
+  {
+   "name": "The Race",
+   "title": "Cost cap creating 'two-tier' F1 - Vowles（2026年10月2日、Josh Suttill）",
+   "url": "https://www.the-race.com/formula-1/cost-cap-creating-two-tier-f1/"
+  },
+  {
+   "name": "RACER",
+   "title": "McLaren bringing 'modest' upgrades to COTA, with one eye on 2027 developments（2026年10月20日、Chris Medland）",
+   "url": "https://racer.com/2026/10/20/mclaren-bringing-modest-upgrades-to-cota-with-one-eye-on-2027-developments"
+  },
+  {
+   "name": "The Race",
+   "title": "What was behind one F1 team's strangest day of 2026（2026年10月24日、Scott Mitchell-Malm）",
+   "url": "https://www.the-race.com/formula-1/what-was-behind-williams-f1-team-strangest-day-2026/"
+  },
+  {
+   "name": "アストンマーティン公式",
+   "title": "Undercut: An espresso with Enrico Cardile（2026年9月3日）",
+   "url": "https://www.astonmartinf1.com/en-GB/news/feature/undercut-an-espresso-with-enrico-cardile"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "Stella delivers McLaren MCL40 verdict as fix timeline revealed（2026年10月19日、Mat Coch）",
+   "url": "https://www.planetf1.com/news/mclaren-mcl40-problems-andrea-stella-2027-fix-timeline"
+  },
+  {
+   "name": "FIA",
+   "title": "F1 - Tech updates: Mexico City Grand Prix（2023年10月27日）",
+   "url": "https://www.fia.com/news/f1-tech-updates-mexico-city-grand-prix"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Mexico City Grand Prix - Car Presentation Submissions（ドキュメント7、2025年10月24日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "PlanetF1",
+   "title": "McLaren reveal Mexico GP upgrades in bid to regain dominance over F1 rivals（2024年10月25日、Sam Cooper）",
+   "url": "https://www.planetf1.com/news/mclaren-mexico-gp-upgrades-f1-rivals"
+  },
+  {
+   "name": "The Race",
+   "title": "New McLaren floor headlines F1 upgrades at Mexican GP（2024年10月25日、Mark Hughes）",
+   "url": "https://www.the-race.com/formula-1/mclaren-floor-headlines-f1-upgrades-mexican-gp/"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 United States Grand Prix - Car Presentation Submissions（ドキュメント10、2025年10月17日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Sao Paulo Grand Prix - Car Presentation Submissions（ドキュメント10、2025年11月7日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Las Vegas Grand Prix - Car Presentation Submissions（ドキュメント7、2025年11月20日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_las_vegas_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Qatar Grand Prix - Car Presentation Submissions（ドキュメント8、2025年11月28日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_qatar_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "FIA",
+   "title": "2025 Abu Dhabi Grand Prix - Car Presentation Submissions（ドキュメント8、2025年12月5日）",
+   "url": "https://www.fia.com/system/files/decision-document/2025_abu_dhabi_grand_prix_-_car_presentation_submissions.pdf"
+  },
+  {
+   "name": "RACER",
+   "title": "Technical updates: 2026 Bahrain Grand Prix in Malaysia（2026年10月1日、Chris Medland）",
+   "url": "https://racer.com/2026/10/01/technical-updates-2026-bahrain-grand-prix-in-malaysia"
+  }
+ ],
+ "history": [
+  [
+   "2026-10-31",
+   "公開。"
+  ]
+ ],
+ "related": [
+  {
+   "id": "en-planetf1-mclaren-upgrades-stella",
+   "why": "この号のきっかけ。ステラ代表が、メキシコはほぼなし、改良はブラジルとラスベガスと話した記事の要約"
+  },
+  {
+   "id": "en-therace-ferrari-austin-upgrade",
+   "why": "フェラーリがアメリカGPを今季最後の大型改良にし、開発の軸足を2027年に移すと伝えた記事の要約"
+  }
+ ],
+ "lensRelated": [
+  "piastri-struggles-20261030",
+  "sainz-three-classes-20261015"
+ ]
+}
