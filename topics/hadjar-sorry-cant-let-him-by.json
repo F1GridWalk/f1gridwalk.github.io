@@ -1,0 +1,410 @@
+{
+ "slug": "hadjar-sorry-cant-let-him-by",
+ "gp": "アメリカGP",
+ "title": "「ごめん」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "オースティンの12コーナー。マックスを前に出せ、という無線に、ハジャーは「通せない。ごめん」と答えた。エンジニアは「いや、これでいく」。「最初の1か月は自分のほうが遅いと受け入れる」と言って始まった1年目が、10か月で、ここまで来た。叱られることも含めて。",
+ "checked": "2026-10-30",
+ "checkedNote": "PlanetF1、Formula1.com、GPblog、RacingNews365、Crash.net、Motorsport Magazine、RACER、GPFans、Wikipedia（英語）の原文を10月30日に確認しました。無線と本人・関係者の言葉は英語から編集部が訳しました。土曜日にエンジニアに謝ったという話は一次の出典が確認できなかったので、本文には入れていません。",
+ "draft": true,
+ "common": [
+  "ハジャー（2004年9月28日生まれ、22歳）は2026年、角田に代わってレッドブルでフェルスタッペンのチームメイト。モナコ3位、手首のけがで3戦欠場、復帰戦のバクーで3位、同じ週末に2027年残留が決定。",
+  "アメリカGP（10月25日）：予選3番手、スタートで2つ落とし、ピット後は誤ったスロットルマップで1周1秒損、12コーナーの指示に「通せない。ごめん」と答えて15コーナーで譲り、6位。フェルスタッペンは3位。",
+  "ランキングはフェルスタッペン4位236点、ハジャー8位105点。",
+  "クルサードは「雇い主が誰か忘れていた」、ラルフ・シューマッハは「少し抑えたほうがいい」。メキースの公式の反応は伝えられていない。"
+ ],
+ "outlets": [
+  {
+   "id": "de-f1insider-hadjar-verstappen-team-order",
+   "angle": "無線の経緯",
+   "adds": [
+    "12コーナーで指示、「レース時間を失いたくない」、ウッド「ダメだ、これでいく」、15コーナーで譲る。",
+    "クルサードは叱責を受けるだろうと。チームが実際に注意したかは不明。"
+   ]
+  },
+  {
+   "id": "en-planetf1-hadjar-red-bull-clutch-redesign",
+   "angle": "クラッチと発進",
+   "adds": [
+    "クラッチは温度に弱く「再設計が必要」。来季までに直るか「自信はない」。"
+   ]
+  },
+  {
+   "id": "en-therace-redbull-us-gp-fury",
+   "angle": "2人の不満",
+   "adds": [
+    "発進、無線、2ストップ作戦への不満。メキースは発進の根本改善は来季。"
+   ]
+  },
+  {
+   "id": "nl-racingnews365-hadjar-verstappen-struggle",
+   "angle": "ポッドキャストの見方",
+   "adds": [
+    "無線が攻撃的。フェルスタッペンが勝つほどハジャーは苦しい。",
+    "順位は8〜9番手から4〜5番手に上がっており悪くないとの見方も。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「レースの時間を失いたくない。彼を通せない。ごめん」「いや、これでいくんだ」",
+   "w": "PlanetF1（10月28日、英語）を編集部が訳した。SPEEDWEEK の独→英訳とは語尾が少し違う。"
+  },
+  {
+   "t": "「ありがとう、みんな。本当にいい作戦だね」",
+   "w": "GPblog（10月25日、英語）を編集部が訳した。末尾の悪態は省いた。"
+  },
+  {
+   "t": "「最初の1か月は遅いと受け入れる」「踏みつぶされる」",
+   "w": "PlanetF1（2025年12月4日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "バクーの無線「レースの時間が優先」「行っていいのか」「順位を保つ」「分かった」",
+   "w": "GPFans（9月28日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "クルサード「雇い主が誰か忘れていた」",
+   "w": "PlanetF1（10月28日、F1TV の発言）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "無線の文言",
+   "t": "PlanetF1 は \"No, mate, this is what we're doing.\"、SPEEDWEEK（独語から）は \"No, my friend, this is how we're going to do it.\"。本文は PlanetF1 に合わせた。"
+  },
+  {
+   "k": "順位",
+   "t": "Motorsport Magazine はハジャーを5位と書いているが、公式結果は6位（5位はノリス）。"
+  }
+ ],
+ "unknownsFillable": [
+  "メキシコの結果と、スタート。",
+  "レッドブルがハジャーに正式に注意したかどうか。"
+ ],
+ "unknownsLimits": [
+  "何周目に譲ったか（12コーナーで指示、15コーナーで譲ったことは複数の報道で一致）。",
+  "「ピット用のマップ」の正式な名前（スペインの報道の「Strat 12」は英語の報道では確認できない）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "「ごめん」は、何のサインか？",
+  "rows": [
+   {
+    "k": "12月との差",
+    "t": "「最初の1か月は遅い」と受け入れて始めた人が、2番手を走りながら「通せない」と言った。遅いままではいない、ということ。"
+   },
+   {
+    "k": "チームの順番",
+    "t": "バクーでは「分かった」と従い、オースティンでは一度断ってから従った。どちらも最後は従っている。クルサードの「雇い主」は、その順番の話。"
+   },
+   {
+    "k": "本当の問題",
+    "t": "本人が言うとおり、クラッチとマップと無線。それが直れば、譲る場面は来なかった。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "チームオーダーとは？",
+   "rules": [
+    "team-orders"
+   ],
+   "links": []
+  },
+  {
+   "q": "レースエンジニアは何をする人？",
+   "rules": [
+    "race-engineer",
+    "team-radio"
+   ],
+   "links": [
+    "/topics/bono-leave-that-to-me/"
+   ]
+  },
+  {
+   "q": "汚れた空気で、なぜ遅くなる？",
+   "rules": [
+    "dirty-air"
+   ],
+   "links": []
+  },
+  {
+   "q": "スタートで何が起きた？",
+   "rules": [
+    "clutch",
+    "launch",
+    "anti-stall"
+   ],
+   "links": []
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-10-26T00:00:00+09:00",
+   "t": "F1公式が無線の動画を公開"
+  },
+  {
+   "at": "2026-10-28T00:00:00+09:00",
+   "t": "クルサード、ラルフ・シューマッハの発言が伝えられる"
+  }
+ ],
+ "answer": "アメリカGPで2番手を走っていたハジャーは、別の作戦で先にピットに入ったフェルスタッペンを通せという指示に「レースの時間を失いたくない。通せない。ごめん」と答え、エンジニアに「いや、これでいく」と言われて15コーナーで譲った。結果は6位（フェルスタッペン3位）。スタートのクラッチと誤ったスロットルマップでも時間を失い、本人は「再設計が必要」。クルサードは「雇い主が誰か忘れていた」。ハジャーは12月に「最初の1か月は自分のほうが遅いと受け入れる」と言って1年目を始め、モナコとバクーで3位、2027年残留も決まっている。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "12コーナーで無線が言った。マックスを前に出せ。22歳は答えた。「レースの時間を失いたくない。彼を通せない。ごめん」。",
+  "body": [
+   [
+    "h",
+    "「ごめん」"
+   ],
+   [
+    "p",
+    "10月25日、オースティン。レースの序盤、アイザック・ハジャーは2番手を走っていた。2人の作戦は違っていた。フェルスタッペンは2回止まる作戦で先にピットに入り、新しいタイヤで後ろから追いついてきた。新しいタイヤのほうを前に出す。それがチームの判断で、12コーナーで、無線が言った。マックスを前に出せ。"
+   ],
+   [
+    "p",
+    "ハジャーは答えた。「レース全体の時間を失いたくない。彼を通せない。ごめん」。"
+   ],
+   [
+    "p",
+    "レースエンジニアのリチャード・ウッドが返した。「いや、これでいくんだ」。ハジャーは15コーナーで、道を空けた。"
+   ],
+   [
+    "p",
+    "後ろで詰まっている間のフェルスタッペンの無線は、皮肉だった。「ありがとう、みんな。本当にいい作戦だね。前のマシンが乱した空気の中で、動けない」。結果は、フェルスタッペンが3位、ハジャーが6位。"
+   ],
+   [
+    "h",
+    "「最初の1か月は、遅い」"
+   ],
+   [
+    "p",
+    "去年の12月2日、レッドブルは2026年のドライバーを発表した。角田裕毅に代わって、フェルスタッペンの隣に座るのは、当時21歳、いま22歳のハジャー。本人は言った。「最高の人と働いて、マックスから学ぶなんて、待ちきれない」。"
+   ],
+   [
+    "p",
+    "その2日後、アブダビで、もっと正直なことを言っている。「目標があるとすれば、最初の1か月は自分のほうが遅いと受け入れることだ」。「誰もが自分は特別だと思っている。『彼も人間だ、僕が倒す』と言って入ってくる。そして踏みつぶされる。そこから、悪いほうに雪だるまが転がり始める」。「相手は、グリッドでいちばんのドライバーだ。年の初めに僕が遅い可能性は、とても高い」。"
+   ],
+   [
+    "p",
+    "「もちろん、彼と同じくらい速くありたいと願っている。願っているけど、現実には、その可能性はとても小さい」。"
+   ],
+   [
+    "h",
+    "バクーの「分かった」"
+   ],
+   [
+    "p",
+    "レッドブルでの1年目は、雪だるまにはならなかった。モナコで3位。夏に手首をけがして3戦を休み、復帰戦のバクーで、また3位。その週末に、2027年もレッドブルで走ることが決まった。"
+   ],
+   [
+    "p",
+    "バクーには、オースティンの前触れがあった。6周目、ウッドの無線。「後ろはフェルスタッペンだ。忘れるな、ここではレース全体の時間が優先だ」。フェルスタッペンが、ストレートで前に出た。26周目、前のフェルスタッペンまでコンマ数秒。ハジャーが聞いた。「抜きに行っていいのか、どうなんだ？」。ウッドは「きれいにいこう」と言い、続けて「順位を保ちたい。順位を保つ」。ハジャーの返事は、ひとこと。「分かった」。"
+   ],
+   [
+    "p",
+    "メキース代表はそのレースを「見事だった」と言い、「この子がどれだけ賢くレースをしているか」「マシンの中でどれだけ感情を抑えられているか」をほめた。"
+   ],
+   [
+    "h",
+    "全部が狂った"
+   ],
+   [
+    "p",
+    "オースティンの週末は、金曜日から悪かった。2回目のフリー走行は「運転できない」。セットアップを大きく変えて、土曜日には3番手まで立て直して、「このマシンが、少し生き返った」と言った。"
+   ],
+   [
+    "p",
+    "日曜日。スタートで、クラッチが必要より強くつながってタイヤが空転し、順位を2つ落とした。「手順は完璧にやっている。それなのに、クラッチが余計に伝わる」。「再設計が必要だ。それだけだ。いまのままでは壊れやすすぎる」。来年までに直るかと聞かれて、「いや、自信はない」。「うんざりし始めているんだ」。"
+   ],
+   [
+    "p",
+    "ピット作業のあとは、ピットレーン用のアクセルの設定（スロットルマップ）のまま、コースに出た。アクセルを踏んでもマシンが応えない。ハードタイヤで1周に1秒ずつ失った。無線はよく聞こえなかった。「クラッチと無線、この2つを直せば、表彰台にいたかもしれない」。"
+   ],
+   [
+    "p",
+    "そして、12コーナーの無線が来た。"
+   ],
+   [
+    "h",
+    "誰に雇われているか"
+   ],
+   [
+    "p",
+    "レースのあと、ハジャーは説明した。「結局、僕のほうでは、これは1ストップのレースだと気づいた。チームのほうも『ああ、1ストップだ』となったけど、もうピットに入れていた」。「だから彼は、弾丸みたいに後ろから来た。2人とも混乱する状況で、それで僕は通した」。「僕の汚れた空気で、彼は時間を失う。僕は、彼を通すために時間を失う」。"
+   ],
+   [
+    "p",
+    "かつてレッドブルで走ったデビッド・クルサードは、テレビで言った。「決まりごとを、思い出させてあげよう」。「厳しく聞こえるかもしれないが、彼は勝ち続けている人で、マシンの順番の入れ替え方を知っている」。「アイザックはいい週末を過ごしていたが、あれはお灸を据えられるだろう」。「一瞬、体から抜け出していて、自分の雇い主が誰か忘れていた」。"
+   ],
+   [
+    "p",
+    "ラルフ・シューマッハは、もっと短く言った。「ハジャーは好きだ。でも、少し抑えたほうがいい」。"
+   ],
+   [
+    "h",
+    "131点"
+   ],
+   [
+    "p",
+    "ランキングは、フェルスタッペンが4位で236点、ハジャーが8位で105点。差は131点。この日は、レッドブルの2人とも、チームに腹を立てていた。フェルスタッペンはタイヤの選択とピット作業とエンジンブレーキを並べて、「何もうまくいかなかった」。ハジャーはクラッチとマップと無線を並べて、「全部が狂った」。"
+   ],
+   [
+    "p",
+    "メキース代表は、10月の初めに、2人の順位の問題についてこう言っていた。「その状況になれるなら、いい悩みだと思う」。「2人とも、チームの結果を最大にすることには同意している」。"
+   ],
+   [
+    "h",
+    "もう一度、無線が来るとき"
+   ],
+   [
+    "p",
+    "今週末は、メキシコ。"
+   ],
+   [
+    "p",
+    "「最初の1か月は遅い」と受け入れると言った人が、1年たたないうちに、2番手を走りながら「通せない」と言うところまで来た。遅いままではいない、ということだ。お灸を据えられるのは、その代償だ。"
+   ],
+   [
+    "p",
+    "日曜日、同じ無線が来るかもしれない。そのとき、ハジャーは何と答えるのか。バクーの「分かった」か、オースティンの「ごめん」か。"
+   ]
+  ],
+  "terms": [
+   [
+    "レースエンジニア",
+    "race-engineer"
+   ],
+   [
+    "チームオーダー",
+    "team-orders"
+   ],
+   [
+    "汚れた空気",
+    "dirty-air"
+   ],
+   [
+    "クラッチ",
+    "clutch"
+   ],
+   [
+    "スロットルのマップ",
+    "throttle-map"
+   ],
+   [
+    "無線",
+    "team-radio"
+   ],
+   [
+    "1ストップ",
+    "one-stop-two-stop"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "PlanetF1",
+    "title": "Isack Hadjar faces Red Bull warning after refusing Max Verstappen team orders at US GP",
+    "url": "https://www.planetf1.com/news/isack-hadjar-red-bull-team-orders-max-verstappen-us-gp",
+    "note": "2026年10月28日。無線の原文（12コーナーで指示、15コーナーで譲る）、クルサードの言葉、ハジャーの「弾丸みたいに」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com（動画）",
+    "title": "2026 United States Grand Prix: Hadjar argues over team order to let Verstappen through",
+    "url": "https://www.formula1.com/en/video/2026-united-states-grand-prix-hadjar-argues-over-team-order-to-let-verstappen-through.1880059143175867752",
+    "note": "2026年10月26日。2番手走行中、作戦が違ったため。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Verstappen hits out at Red Bull over Hadjar handling",
+    "url": "https://www.gpblog.com/en/news/verstappen-hits-out-at-red-bull-over-hadjar-handling-really-good-strategy-there",
+    "note": "2026年10月25日。フェルスタッペンの無線「いい作戦だね」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Hadjar reveals untold details of tense Verstappen moment during US GP",
+    "url": "https://www.gpblog.com/en/news/hadjar-reveals-untold-details-of-tense-verstappen-moment-during-us-gp",
+    "note": "2026年10月25日。レース後の説明（英語から編集部が訳した）。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Isack Hadjar demands Red Bull 'redesign' after US GP problems",
+    "url": "https://www.planetf1.com/news/isack-hadjar-red-bull-redesign-us-gp-problems",
+    "note": "2026年10月27日。クラッチ「再設計が必要」「自信はない」「うんざり」、間違ったマップで1周1秒（Sky Sports の取材、英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Isack Hadjar demands Red Bull fixes 'stupid little things' ruining F1 races",
+    "url": "https://racingnews365.com/isack-hadjar-demands-red-bull-fixes-stupid-little-things-ruining-f1-races",
+    "note": "2026年10月27日。ピット用のスロットルマップ、無線、「この2つを直せば表彰台」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Why Isack Hadjar's COTA F1 weekend has been 'disaster'",
+    "url": "https://www.crash.net/f1/news/1108423/1/why-isack-hadjars-cota-f1-weekend-has-been-disaster",
+    "note": "2026年10月25日。予選後の「マシンが少し生き返った」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Hadjar rues 'undriveable' Red Bull after set-up changes lead to Austin struggles",
+    "url": "https://www.formula1.com/en/latest/article/hadjar-rues-undriveable-red-bull-after-set-up-changes-lead-to-austin-struggles.3JtCn8kuzY4KVD6cjNFnAl",
+    "note": "2026年10月24日。FP2「運転できない」。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Isack Hadjar given ticking off by former F1 driver",
+    "url": "https://www.gpblog.com/en/news/isack-hadjar-given-ticking-off-by-former-f1-driver-after-apologising-to-his-red-bull-team",
+    "note": "2026年10月28日。ラルフ・シューマッハ「少し抑えたほうがいい」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Motorsport Magazine",
+    "title": "'Nothing worked': the string of problems that sank Red Bull in Austin",
+    "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/nothing-worked-the-string-of-problems-that-sank-red-bull-in-austin/",
+    "note": "2026年10月26日。フェルスタッペン「何もうまくいかなかった」、ハジャー「全部が狂った」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RACER",
+    "title": "Hadjar to replace Tsunoda at Red Bull in 2026",
+    "url": "https://racer.com/2025/12/02/hadjar-to-replace-tsunoda-at-red-bull-in-2026-lindblad-gets-racing-bulls-call-up",
+    "note": "2025年12月2日。昇格の発表、「待ちきれない」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Isack Hadjar opens up on Max Verstappen partnership at Red Bull",
+    "url": "https://www.planetf1.com/news/isack-hadjar-opens-up-on-max-verstappen-partnership-at-red-bull-f1-2026",
+    "note": "2025年12月4日。「最初の1か月は遅いと受け入れる」「踏みつぶされる」「可能性はとても小さい」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPFans",
+    "title": "Untelevised Red Bull F1 radio reveals captivating Max Verstappen team orders to Isack Hadjar",
+    "url": "https://www.gpfans.com/en/f1-news/1090836/untelevised-red-bull-f1-radio-reveals-captivating-max-verstappen-team-orders-to-isack-hadjar/",
+    "note": "2026年9月28日。バクーの無線（6周目、26周目）（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'It was outstanding' – Mekies praises Hadjar's Azerbaijan GP podium on return",
+    "url": "https://www.formula1.com/en/latest/article/it-was-outstanding-mekies-praises-hadjars-azerbaijan-gp-podium-on-return.5suUJmpAuHzbzrUe5SzELk",
+    "note": "2026年9月27日。「見事だった」「賢くレースをしている」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Red Bull: Verstappen-Hadjar team orders a good problem to have",
+    "url": "https://www.planetf1.com/news/red-bull-max-verstappen-isack-hadjar-f1-team-orders-problem",
+    "note": "2026年10月2日。メキース「いい悩みだ」（Sky F1、英語から編集部が訳した）。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "New F1 championship standings after United States Grand Prix",
+    "url": "https://www.crash.net/f1/results/1108507/1/new-f1-championship-standings-after-united-states-grand-prix",
+    "note": "フェルスタッペン236点、ハジャー105点。"
+   },
+   {
+    "name": "Wikipedia（英語）",
+    "title": "Isack Hadjar",
+    "url": "https://en.wikipedia.org/wiki/Isack_Hadjar",
+    "note": "2004年9月28日生まれ。2026年の各戦、モナコ3位、3戦欠場、バクー3位、2027年残留。"
+   }
+  ]
+ }
+}
