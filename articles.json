@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T09:06:00+09:00",
+ "updatedAt": "2026-10-31T12:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -76,9 +76,127 @@
   "mexico-fp1-2026": {
    "title": "メキシコGP FP1　ルクレールが最速、ルーキー10人が走る",
    "summary": "メキシコGPの金曜FP1は、フェラーリのルクレールがアントネッリに0.6秒以上の差をつけて最速だった。10チームがルーキーを走らせ、フェラーリだけが正ドライバー2人で走行した。薄い空気と汚れた路面でロックアップが相次ぎ、オーディのスレーターは送風機を付けたままピットを出る珍事もあった。"
+  },
+  "mexico-fp2-2026": {
+   "title": "メキシコGP FP2　ルクレールが最速、ハミルトン停止とフェルスタッペン接触",
+   "summary": "メキシコGPの金曜FP2は、フェラーリのルクレールがノリスに0.103秒差をつけて最速だった。ハミルトンはパワーユニットの不調でコース上に止まり11番手。フェルスタッペンとローソンは接触して赤旗となった。オーディのボルトレートは技術的な問題で終盤まで走れなかった。"
+  },
+  "verstappen-lawson-fp2": {
+   "title": "FP2でフェルスタッペンとローソンが接触　双方に1グリッド降格",
+   "summary": "メキシコGPのFP2で、フェルスタッペンとローソンが競り合いの末に接触し、両車が壊れて赤旗となった。フェルスタッペンは「賢い行動ではない」とローソンを批判した。審査委員は主な責任者を定めず、両者に1グリッド降格と反則ポイント1点を科した。ローソンは来季の席が未定で、レーシングブルズはツォロフ昇格も検討している。"
   }
  },
  "articles": [
+  {
+   "id": "en-crash-mexico-fp2-leclerc-hamilton",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "分析",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari",
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "mexico-fp2-2026",
+   "title": "メキシコGP FP2、ルクレールが最速　ハミルトンは止まりフェルスタッペンは接触",
+   "summary": "Crash.netはメキシコGPの金曜FP2で、フェラーリのルクレールがトップに立ち、2番手のノリスとの差は0.103秒だったと伝えた。3番手はラッセル、4番手はアントネッリだった。ハミルトンはパワーユニットの不調を訴えて3コーナーで止まり、最後の30分を走れず11番手に終わった。フェルスタッペンとローソンは接触して両車が壊れ、赤旗となり、両者とも審査対象になった。アントネッリは9位以内に入れば、ラッセルが勝ってもタイトルが決まるという。",
+   "orig": "Leclerc tops Mexico FP2 as Hamilton breaks down, Verstappen and Lawson collide",
+   "url": "https://www.crash.net/f1/news/1108824/1/charles-leclerc-tops-mexico-fp2-lewis-hamilton-breaks-down-and-max-verstappen-and",
+   "published": "2026-10-30T23:50:00+00:00"
+  },
+  {
+   "id": "de-motorsportmagazin-mexiko-fp2-leclerc",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "分析",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "audi"
+   ],
+   "topic": "mexico-fp2-2026",
+   "title": "メキシコGP FP2　ルクレールがトップ、ハミルトンのフェラーリは壊れる",
+   "summary": "独モータースポーツ・マガジンはメキシコGPのFP2で、ルクレールが1分17秒827で最速、ノリスが0.103秒差の2番手だったと報じた。ハミルトンは終了の約33分前に3コーナー後で出力を失い、短時間のVSCとなった。オーディのボルトレートは技術的な問題で最後の15分まで走れず22番手、ヒュルケンベルグは15番手だった。ハースではオコンがステアリングの不調を訴え、ベアマンはエンジンが止まったが、ともに走行を続けた。気温は25度、路面温度は38度だった。",
+   "orig": "Formel 1, Mexiko FP2: Verstappen und Lawson fahren sich ins Auto, Hamilton-Ferrari kaputt",
+   "url": "https://www.motorsport-magazin.com/formel1/news-300990-formel-1-2-training-in-mexiko-verstappen-faehrt-lawson-ins-auto-hamilton-ferrari-kaputt/",
+   "published": "2026-10-31T00:02:00+01:00"
+  },
+  {
+   "id": "en-crash-verstappen-lawson-not-smart",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "redbull",
+    "racingbulls"
+   ],
+   "topic": "verstappen-lawson-fp2",
+   "title": "フェルスタッペン、FP2接触でローソンに「賢い行動ではない」",
+   "summary": "Crash.netは、メキシコGPのFP2でレッドブルのフェルスタッペンとレーシングブルズのローソンが接触した件で、フェルスタッペンが「あまり賢い行動ではない」と語ったと伝えた。ローソンが12コーナーで守り、フェルスタッペンは14コーナーでコース外に出たのち接触した。両車が壊れて赤旗となり、両者は審査対象になった。フェルスタッペンは自身の週末は変わらないとし、席を争う立場ならもっと賢く動くべきだと述べた。ローソンの来季は未定で、チームはF2のツォロフ昇格も検討している。",
+   "orig": "Max Verstappen calls out 'not very smart' Liam Lawson behaviour after tangle",
+   "url": "https://www.crash.net/f1/news/1108827/1/max-verstappen-calls-out-liam-lawson-not-very-smart-behaviour-after-tangle",
+   "published": "2026-10-31T00:50:00+00:00"
+  },
+  {
+   "id": "nl-racingnews365-verstappen-lawson-stewards",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "redbull",
+    "racingbulls"
+   ],
+   "topic": "verstappen-lawson-fp2",
+   "title": "フェルスタッペンとローソンに1グリッド降格　FP2の接触で審議の結果",
+   "summary": "蘭レーシングニュース365は、メキシコGPのFP2での接触について、審査委員が両者にそれぞれ1グリッド降格と反則ポイント1点を科したと報じた。どちらにも主な責任は定めず、双方とも退かなかったことが問題とされた。練習走行の接触は通常は口頭の警告で済むが、当日のチーム代表会議で同様の行為に警告が出ていたことが重く見られた。過去の似た例の処分も参考にしたという。降格は次戦のメキシコGPに適用される。両者の累積点はまだ危険な水準ではないと同紙は伝えた。",
+   "orig": "Stewards vellen oordeel over incident Verstappen en Lawson",
+   "url": "https://racingnews365.nl/stewards-vellen-oordeel-over-incident-verstappen-2",
+   "published": "2026-10-31T03:58:00+01:00"
+  },
+  {
+   "id": "en-crash-mekies-horner-mojo",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "horner-mekies-mojo",
+   "title": "メキシコGP会見でメケス「雰囲気は全く違う」　ホーナーの「覇気を失った」発言に反論",
+   "summary": "Crash.netは、レッドブル代表メケスがメキシコGPの会見で、ホーナー前代表の発言に反論したと伝えた。ホーナーは英紙タイムズの取材で、自身の退任後にレッドブルは勢いも存在感も雰囲気も失ったと語っていた。メケスは意見を持つ自由は認めつつ、チームの感じ方は「大きく異なる」と述べた。シャシーとパワーユニットの問題で苦しんだ序盤も結束を保ち、ドライバーの率直な意見が立て直しにつながったと説明した。レッドブルは残り5戦でコンストラクターズ3位、マクラーレンと同点だがカウントバックで上回る。",
+   "orig": "Laurent Mekies claps back at Christian Horner's Red Bull 'lost its mojo' claim",
+   "url": "https://www.crash.net/f1/news/1108791/1/laurent-mekies-claps-back-christian-horners-red-bull-lost-its-mojo-claim",
+   "published": "2026-10-30T22:30:00+00:00"
+  },
+  {
+   "id": "nl-racingnews365-ralf-schumacher-plane",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "素顔",
+   "title": "ラルフ・シューマッハ、搭乗機が離陸中止　本人が動画で説明",
+   "summary": "蘭レーシングニュース365は、元F1ドライバーのラルフ・シューマッハがザルツブルクへ向かうルフトハンザ機で、離陸滑走中に前輪のタイヤが破裂したと伝えた。乗務員が離陸を中止し、機体はフランクフルト空港で強くブレーキをかけて止まった。警察と消防が駆けつけ、乗客153人と乗務員は全員無事に降りたという。本人はインスタグラムの動画で、乗務員の対応が非常に良かったと語り、別便への手配を早く行った同社に感謝した。この出来事は水曜日に起きた。",
+   "orig": "Ralf Schumacher betrokken bij beangstigend vliegtuigincident",
+   "url": "https://racingnews365.nl/ralf-schumacher-betrokken-bij-beangstigend-vliegtuigincident",
+   "published": "2026-10-30T21:40:00+01:00",
+   "topic": "ralf-schumacher-plane"
+  },
   {
    "id": "en-crash-mexico-fp1-leclerc-rookies",
    "kind": "news",
@@ -1395,113 +1513,6 @@
    "orig": "Laurent Mekies admits Red Bull's start problems need major changes for 2027",
    "url": "https://www.planetf1.com/news/red-bull-start-problems-laurent-mekies-2027-changes",
    "published": "2026-10-27T12:13:00+00:00"
-  },
-  {
-   "id": "en-planetf1-mercedes-upgrade-puzzle-wolff",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
-   "circuit": "austin",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "mercedes-w17-development-concern",
-   "title": "メルセデスW17の改良、期待の性能には届かず　ウォルフ「作動の幅を広げる段階」",
-   "summary": "メルセデスのウォルフ代表は、大規模改良が期待したほどの性能をまだ生んでいないとしつつ、正しい方向への一歩だと位置づけた。アメリカGPではアントネッリがポールから優勝した一方、ラッセルは50秒以上の差で終え、改良でマシンの作動領域が狭まった可能性を口にしている。ウォルフは「車は機能している。次は作動の幅を広げることだ」と述べた。メキシコ前の最優先課題は、オースティンの週末にマシンをどう立て直したかを理解することだという。得られた知見は2027年車の開発方針にも直結する。",
-   "orig": "Mercedes face upgrade puzzle as Toto Wolff reveals what is holding the W17 back",
-   "url": "https://www.planetf1.com/news/mercedes-upgrade-puzzle-toto-wolff-w17-potential",
-   "published": "2026-10-27T13:00:00+00:00"
-  },
-  {
-   "id": "en-crashnet-wolff-hits-back-marko-russell",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "ドライバー",
-   "circuit": "austin",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "russell-austin-struggle",
-   "title": "ウォルフ、マルコ氏の「ラッセルはもう1番手ではない」に反論　問題は車と主張",
-   "summary": "レッドブル元アドバイザーのマルコ氏は、ラッセルはもうメルセデスのエースではないと述べ、アントネッリが今季のタイトルを獲るとの見方を示した。アントネッリはアメリカGPの優勝でタイトルまで2ポイントとなり、決着はメキシコシティで付く公算が大きい。これに対しウォルフ代表は、マルコ氏は誤っていると反論し、ラッセルには「すべての能力がある」と述べた。問題はドライバーでなく車にあり、競争力のある車があればラッセルは王者になれるとも語り、F2やF3での勝利、カート時代のタイトルを挙げて擁護した。",
-   "orig": "Toto Wolff's blunt response to Helmut Marko's claim George Russell is 'no longer number one'",
-   "url": "https://www.crash.net/f1/news/1108555/1/toto-wolffs-blunt-response-helmut-markos-claim-george-russell-no-longer-number",
-   "published": "2026-10-27T15:20:00+00:00"
-  },
-  {
-   "id": "en-planetf1-sainz-premier-league-calendar",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "カルチャー",
-   "teams": [
-    "williams"
-   ],
-   "topic": "f1-calendar-saturation-2026",
-   "title": "サインツ、過密日程を「チャンピオンズリーグでなくプレミアリーグ」に例える",
-   "summary": "ウィリアムズのサインツ（GPDA理事）は、シーズン終盤の過密日程がファンの関心を薄めないか考えるべきだと語った。今季は11週間で9戦を戦い、オースティンから2度目のトリプルヘッダーが始まった。サインツは放送が増えること自体は歓迎しつつ、「チャンピオンズリーグでなくプレミアリーグのようだ」と例えた。最も負担が大きいのは自宅にほとんど戻れないチームスタッフだとし、3連続のトリプルヘッダーは「体にも心にもきつい」と述べた。コンコルド協定の上限は24戦で、現状が働き手の限界との見方も紹介された。",
-   "orig": "Sainz enters F1 2026 debate with 'Premier League rather than Champions League' theory",
-   "url": "https://www.planetf1.com/news/carlos-sainz-f1-2026-triple-headers",
-   "published": "2026-10-27T10:38:00+00:00"
-  },
-  {
-   "id": "en-racingnews365-norris-mclaren-nowhere",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "チーム",
-   "circuit": "austin",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "mclaren-slow-corner-weakness",
-   "title": "ノリス、マクラーレンの現状に「まだ全然足りない」　低速コーナーの弱点を指摘",
-   "summary": "ノリスはアメリカGPを5位で終え、マクラーレンは低速コーナーで必要な水準に「全く届いていない」と率直に語った。レース中にはピアストリの前へ出たが、その理由を「週末を通じて自分の方が速かった」と説明している。今回はブレーキの改良とフロア変更を投入したが、効果が必要な領域すべてには表れていないという。低速域のリア性能は「長く抱えてきた課題」で、解決は簡単でないとの認識だ。チームはラスベガスGP前に次の開発を予定する。現在コンストラクターズ4位で、レッドブルと同点だがカウントバックで下回る。",
-   "orig": "Lando Norris hands McLaren brutal 'nowhere' verdict: 'We need a lot more'",
-   "url": "https://racingnews365.com/lando-norris-hands-mclaren-brutal-nowhere-verdict-we-need-a-lot-more",
-   "published": "2026-10-27T09:50:00+01:00"
-  },
-  {
-   "id": "en-racingnews365-leclerc-verstappen-overtake",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "決勝",
-   "circuit": "austin",
-   "teams": [
-    "ferrari",
-    "redbull"
-   ],
-   "topic": "ferrari-leclerc-austin-p2",
-   "title": "ルクレール、アメリカGP1周目のフェルスタッペン攻略を振り返る　2ストップが正解だったと主張",
-   "summary": "ルクレールは予選4番手から1周目にフェルスタッペンとハジャーをかわし、「接近戦で楽しかった」と振り返った。フェルスタッペンは出遅れて外側から抜かれたが、同じ周のうちに抜き返して2番手を取り戻している。その後は2ストップ作戦の争いとなり、ルクレールはターン12で再び前に出て2位に上がった。優勝したアントネッリは1ストップで約13秒先にいたが、ルクレールは2ストップが正しい選択だったと述べた。フェルスタッペンとノリスの後ろで失った時間が大きく、追いつくには足りなかったとも語っている。",
-   "orig": "Charles Leclerc explains stunning Max Verstappen overtake after 'coming to play'",
-   "url": "https://racingnews365.com/charles-leclerc-explains-stunning-max-verstappen-overtake-after-coming-to-play",
-   "published": "2026-10-27T09:00:00+01:00"
-  },
-  {
-   "id": "en-planetf1-honda-upgrade-roadmap",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "テクニカル",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-2027-upgrade-roadmap",
-   "title": "ホンダ、2027年に2段階のパワーユニット改良　開幕時に「大きなステップ」、第8戦頃にも",
-   "summary": "ホンダの折原伸太郎チーフエンジニアは、2027年に2回の大きな改良を計画していると明かした。開幕戦で最初の大きなステップを踏むが、それでも最強のパワーユニットにはならないという。2回目は「第8戦あたり」の中盤に狙う。ホンダ、フェラーリ、アウディは内燃機関の出力が基準より4%以上低いため、追加の開発枠を2つ持つ。アストンマーティンのニューウェイ代表は、2019年にホンダを引き継いだ頃のレッドブルより「少し遅れている」が、急速に追いつくと自信を示した。折原氏は内燃機関を「弱点」と認めている。",
-   "orig": "Honda reveals development 'road map' amid Aston Martin deficit",
-   "url": "https://www.planetf1.com/news/honda-upgrade-timeline-2027-season-big-step",
-   "published": "2026-10-27T09:02:00+00:00"
   }
  ]
 }
