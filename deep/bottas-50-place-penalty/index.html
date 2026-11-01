@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>グリッドは22台なのに、なぜボッタスは「50グリッド降格」なのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク</title>
+<meta name="description" content="メキシコシティGPで、キャデラックのバルテリ・ボッタスに「50グリッド降格」が出た。並ぶ車は22台しかない。それでも50になるのは、この数字がスタート位置ではなく、部品ごとの罰の足し算だからだ。FIAの文書から50を自分で数え直し、16でも50でも行き先が同じになるグリッドの並べ方と、ボッタスが最後尾の22番手ではなく21番手になった理由を読む。">
+<link rel="canonical" href="https://f1gridwalk.github.io/deep/bottas-50-place-penalty/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="F1 Grid Walk" href="/feed.xml">
+<meta name="apple-mobile-web-app-title" content="Grid Walk">
+<meta name="application-name" content="Grid Walk">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="F1 Grid Walk">
+<meta property="og:title" content="グリッドは22台なのに、なぜボッタスは「50グリッド降格」なのか｜F1深掘り解説 DEEP GRID｜F1グリッドウォーク">
+<meta property="og:description" content="メキシコシティGPで、キャデラックのバルテリ・ボッタスに「50グリッド降格」が出た。並ぶ車は22台しかない。それでも50になるのは、この数字がスタート位置ではなく、部品ごとの罰の足し算だからだ。FIAの文書から50を自分で数え直し、16でも50でも行き先が同じになるグリッドの並べ方と、ボッタスが最後尾の22番手ではなく21番手になった理由を読む。">
+<meta property="og:url" content="https://f1gridwalk.github.io/deep/bottas-50-place-penalty/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://f1gridwalk.github.io/deep/bottas-50-place-penalty/og.png?v=af6afb53">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://f1gridwalk.github.io/deep/bottas-50-place-penalty/og.png?v=af6afb53">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&display=swap">
+<meta property="article:published_time" content="2026-11-02T03:07:00+09:00">
+<style>
+.ctag{display:inline-block;font-weight:800;font-size:11px;line-height:1;letter-spacing:.1em;padding:5px 10px;border-radius:999px;margin:0 0 7px;vertical-align:middle;white-space:nowrap}
+.ctag-world{background:#E8946C;color:#1F2420}.ctag-deep{background:#8E2F3B;color:#FFFFFF}.ctag-off{background:#2F6B66;color:#FFFFFF}
+.ctag-no{display:inline-block;margin:0 0 7px 8px;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em;vertical-align:middle}
+
+.more-deep{margin:30px 0 8px;padding:20px 18px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);border-top:4px solid #8E2F3B}
+.md-k{margin:0;font:600 12px/1 'Fraunces',Georgia,serif;letter-spacing:.24em;color:#8E2F3B}
+.more-deep h2{margin:8px 0 10px;font-size:22px;line-height:1.4}
+.more-deep ul{list-style:none;margin:0 0 16px;padding:0}
+.more-deep li{border-top:1px solid var(--line)}
+.more-deep li a{display:block;padding:12px 0;color:var(--ink);text-decoration:none}
+.more-deep li b{display:block;font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:17px;line-height:1.5}
+.more-deep li a:hover b{text-decoration:underline;text-underline-offset:3px}
+.more-deep li small{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+.md-btn{display:block;text-align:center;background:#8E2F3B;color:#FFFFFF;text-decoration:none;font-weight:800;font-size:16px;padding:14px 12px;border-radius:12px}
+.md-sub{display:block;text-align:center;margin-top:12px;font-size:13.5px;color:var(--muted);font-weight:600}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .md-k{color:#D98C96}}
+:root[data-theme="dark"] .md-k{color:#D98C96}
+.dg{--dgw:700px}
+.dg-top{margin:26px 0 0;padding-top:10px;background:linear-gradient(var(--ink),var(--ink)) top/100% 3px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 6px/100% 1px no-repeat}
+.dg-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding-top:8px}
+.dg-label b{font-family:var(--logo);font-weight:600;font-size:13px;letter-spacing:.32em;color:var(--ink)}
+.dg-label b i{font-style:normal;color:var(--clay);letter-spacing:.12em;margin-left:6px}
+.dg-label span{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.dg h1{font-size:clamp(26px,6vw,38px);line-height:1.4;margin:18px 0 12px;letter-spacing:.01em}
+.dg-dek{font-size:16.5px;line-height:1.95;color:var(--ink-2);margin:0 0 14px}
+.dg-meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.dg-themes{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.dg-themes span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;color:var(--ink-2)}
+.dg-toc{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;margin:0 0 6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.dg-toc::-webkit-scrollbar{display:none}
+.dg-toc a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 13px;white-space:nowrap}
+.dg-layer{display:flex;align-items:center;gap:10px;margin:40px 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.dg-layer .g{display:inline-flex;gap:3px}
+.dg-layer .g i{width:14px;height:5px;border-radius:2px;background:var(--line)}
+.dg-layer .g i.on{background:var(--clay)}
+.dg-layer em{font-style:normal;color:var(--ink);font-size:15px;letter-spacing:.04em}
+.dg-quick{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 6px 18px;margin:0}
+.dg-quick ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.dg-quick li{counter-increment:q;position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.85}
+.dg-quick li:last-child{border-bottom:0}
+.dg-quick li::before{content:counter(q);position:absolute;left:0;top:13px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;line-height:22px;text-align:center}
+.dg-sec{margin:34px 0 0}
+.dg-sec h2{display:flex;gap:12px;align-items:baseline;font-size:20px;line-height:1.5;margin:0 0 12px;padding-top:14px;border-top:1px solid var(--line)}
+.dg-sec h2 .n{font-family:var(--logo);font-weight:600;font-size:15px;color:var(--clay);flex-shrink:0}
+.dg p{font-size:16.5px;line-height:2;margin:0 0 16px}
+.dg blockquote{margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--ink)}
+.dg blockquote p{margin:0 0 4px;font-weight:500}
+.dg blockquote cite{font-style:normal;font-size:12.5px;color:var(--muted)}
+.dg-view{border:1px dashed var(--clay);border-radius:12px;padding:12px 16px;margin:8px 0 16px}
+.dg-view p{margin:0;font-size:15.5px}
+details.dg-deep{margin:44px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details.dg-deep>summary{list-style:none;cursor:pointer;padding:16px 0}
+details.dg-deep>summary::-webkit-details-marker{display:none}
+details.dg-deep .dg-layer{margin:0 0 8px}
+.dg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:700;font-size:15.5px}
+.dg-open::after{content:"＋ 開く";flex-shrink:0;font-size:13px;border:1px solid var(--ink);border-radius:999px;padding:3px 12px}
+details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
+.dg-deep-sub{display:block;font-size:13px;font-weight:400;color:var(--muted);margin-top:4px}
+.dg-tw{overflow-x:auto;margin:4px 0 8px;-webkit-overflow-scrolling:touch}
+.dg table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.6}
+.dg th,.dg td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.dg thead th{background:var(--surface);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.dg tbody th{font-weight:700;white-space:nowrap}
+.dg .tnote{font-size:12.5px;color:var(--muted);margin:0 0 16px;line-height:1.7}
+.dg dl{margin:0}
+.dg dt{font-weight:700;font-size:15px;margin:14px 0 2px}
+.dg dd{margin:0;font-size:14.5px;line-height:1.85;color:var(--ink-2)}
+.dg-src{font-size:13px;line-height:1.7;padding-left:20px;margin:0}
+.dg-src li{margin:0 0 6px}
+.dg-src small{color:var(--muted)}
+.dg-hist{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-2)}
+.dg-hist time{font-weight:700;margin-right:10px}
+.dg-end{margin:36px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.dg-end h2{font-size:15px;letter-spacing:.06em;margin:0 0 8px}
+.dg-end .k{font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.3em;color:var(--clay);display:block;margin-bottom:2px}
+.dg-fig{margin:10px 0 18px;padding:14px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;--cS:#D3302F;--cM:#E2AE00;--cH:#FBF9F4;--cI:#2E9447;--cW:#2F6FD0;--bar:#9E4E2B;--tS:#FFFFFF;--tM:#1F2420;--tH:#1F2420;--tI:#FFFFFF;--tW:#FFFFFF}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}}
+:root[data-theme="dark"] .dg-fig{--cS:#E5544C;--cM:#E9BC2A;--cH:#ECE7DC;--cI:#3FAE5C;--bar:#E09A76;--tS:#191C18;--tM:#191C18;--tH:#191C18;--tI:#191C18;--cW:#6B9BE8;--tW:#191C18}
+.dg-fig figcaption{font-size:14.5px;font-weight:700;line-height:1.6;margin:0 0 8px}
+.dg-fig svg{display:block;width:100%;height:auto;max-width:640px;font-family:var(--sans)}
+.dg-fig .lg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
+.dg-fig .lg i{display:inline-block;width:14px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid var(--ink)}
+.dg-fig .fn{font-size:12px;color:var(--muted);line-height:1.7;margin:6px 0 0}
+.dg-fig .t{fill:var(--ink);font-size:12px}.dg-fig .ts{fill:var(--muted);font-size:10.5px}.dg-fig .tv{fill:var(--ink);font-size:12px;font-weight:700}
+.dg-fig .ax{stroke:var(--line);stroke-width:1}.dg-fig .mk{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3}
+.dg-fig .sg:hover rect,.dg-fig .br:hover rect{opacity:.8}
+.dg-fig .zs{display:grid;gap:8px;margin:8px 0 0;max-width:640px}
+.dg-fig .zs b{display:block;font-size:13px}.dg-fig .zs span{display:block;font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+.dg-card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:8px 0}
+.dg-card small{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.dg-card b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-list{list-style:none;margin:0;padding:0}
+.dg-list li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dg-list a{text-decoration:none}
+.dg-list small{display:block;font-family:var(--logo);font-weight:600;letter-spacing:.24em;font-size:12px;color:var(--clay)}
+.dg-list b{display:block;font-size:18px;line-height:1.55;margin:4px 0}
+.dg-list p{font-size:14px;line-height:1.85;color:var(--ink-2);margin:0}
+.dg-from{display:block;margin:22px 0 0;padding:14px 16px 12px;text-decoration:none;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) top/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) 0 5px/100% 1px no-repeat,var(--surface);border-radius:0 0 12px 12px}
+.dg-from small{display:block;font-family:var(--logo);font-weight:600;font-size:11.5px;letter-spacing:.28em;color:var(--clay);margin-top:4px}
+.dg-from b{display:block;font-size:15.5px;line-height:1.6;margin:2px 0}
+.dg-from span{font-size:12.5px;color:var(--muted)}
+.dg table.short td{white-space:nowrap}
+@media (max-width:600px){.dg p{font-size:16px}.dg-sec h2{font-size:18.5px}
+.dg table.stack thead{display:none}
+.dg table.stack,.dg table.stack tbody,.dg table.stack tr,.dg table.stack th,.dg table.stack td{display:block;width:100%}
+.dg table.stack tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dg table.stack th,.dg table.stack td{border:0;padding:2px 0}
+.dg table.stack tbody th{font-size:15px;margin-bottom:4px}
+.dg table.stack td::before{content:attr(data-h);display:block;font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.dg table.stack td+td{margin-top:6px}}
+.dg-rel-l{list-style:none;margin:0;padding:0}
+.dg-rel-l li{border-top:1px solid var(--line)}
+.dg-rel-l li:first-child{border-top:0}
+.dg-rel-l a{display:block;padding:10px 0;color:var(--ink);text-decoration:none}
+.dg-rel-l small{display:block;font-size:12.5px;font-weight:700;color:var(--clay);line-height:1.6}
+.dg-rel-l b{display:block;font-size:15.5px;line-height:1.6;margin-top:2px}
+.dg-rel-l span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.dg-rel-l a:hover b{text-decoration:underline;text-underline-offset:3px}
+
+.rbx{--bd:#111311;--bg:#E4E5E2;--tx:#111311;--sub:#4A4D48;--inp:#F7F7F5;--hd:#111311;--hdt:#F7F7F5;--btn:#111311;--btnt:#F2C230;--line:#C9CBC6;background:var(--bg);color:var(--tx);border:2px solid var(--bd);border-radius:22px;overflow:hidden;margin:20px 0 10px;padding-bottom:14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}}
+:root[data-theme="dark"] .rbx{--bd:#D9DBDD;--bg:#24272A;--tx:#ECEDEE;--sub:#A3A8AD;--inp:#1B1D20;--hd:#ECEDEE;--hdt:#111311;--btn:#F2C230;--btnt:#111311;--line:#3A3E43}
+.rbx .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em}
+.rbx-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;background:var(--hd);color:var(--hdt)}
+.rbx-hd b{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:18px;letter-spacing:.2em}
+.rbx-hd span{font-size:10.5px}
+.rbx p.rbx-lead{margin:12px 16px 0;font-size:14px;font-weight:700;line-height:1.6}
+.rbx form,.rbx .rbx-f{display:flex;gap:8px;margin:10px 12px 0}
+.rbx input{flex:1;min-width:0;font:inherit;font-size:16px;padding:12px 12px 12px 42px;border:2px solid var(--line);border-radius:999px;background:var(--inp) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23777B76' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx);outline:none}
+.rbx input::placeholder{color:var(--sub)}
+.rbx-in{position:relative;flex:1;min-width:0;display:flex}
+.rbx-in input{padding-right:42px}
+.rbx input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}
+.rbx .rbx-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:50%;background:var(--sub);color:var(--inp);font:700 17px/30px sans-serif;text-align:center;padding:0;cursor:pointer}
+.rbx .rbx-x[hidden]{display:none}
+.rbx input:focus{border-color:#F2C230}
+.rbx button.go{flex-shrink:0;font:inherit;font-size:15px;font-weight:700;border:0;border-radius:999px;padding:0 18px;background:var(--btn);color:var(--btnt);cursor:pointer}
+.rbx-all{display:inline-block;margin:12px 16px 0;font-size:13.5px;font-weight:700;color:var(--tx);text-decoration:none}
+.rbx-all:hover{text-decoration:underline}
+.rbx p.rbx-cnt{margin:10px 16px 0;font-size:11px;line-height:1.4;color:var(--sub)}
+
+.rb-search{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;margin:0 0 6px;border-bottom:1px solid var(--line)}
+.rb-search input{width:100%;font:inherit;font-size:16px;padding:12px 16px 12px 42px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%235B5F57' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") 15px center no-repeat;color:var(--ink)}
+.rb-cats{display:flex;gap:6px;overflow-x:auto;padding:10px 0 0;scrollbar-width:none}
+.rb-cats::-webkit-scrollbar{display:none}
+.rb-cats button{flex:0 0 auto;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:4px 13px;cursor:pointer}
+.rb-cats button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.rb-count{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.rb-none{display:none;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:14px 0;font-size:14.5px}
+.rb-none button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 11px;margin:4px 6px 0 0;cursor:pointer;color:var(--ink)}
+details.rb{border-bottom:1px solid var(--line)}
+details.rb>summary{list-style:none;cursor:pointer;padding:14px 0;display:block}
+details.rb>summary::-webkit-details-marker{display:none}
+.rb-t{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rb-t b{font-size:17.5px}
+.rb-t small{flex-shrink:0;font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 9px}
+.rb-al{display:block;font-size:12px;color:var(--muted);margin:1px 0 4px}
+.rb-s{display:block;font-size:15px;line-height:1.8;color:var(--ink-2)}
+.rb-s::after{content:"＋ 詳しく";display:inline-block;margin-left:8px;font-size:12px;font-weight:700;color:var(--clay)}
+details[open].rb .rb-s::after{content:"－ 閉じる"}
+.rb-b{padding:0 0 18px}
+.rb-b p{font-size:15.5px;line-height:1.95;margin:0 0 12px}
+.rb-h{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+.rb-rule{display:inline-block;font-size:13px;border-left:3px solid var(--clay);padding:1px 0 1px 10px}
+.rb-ex{list-style:none;margin:0;padding:0}
+.rb-ex li{padding:4px 0;font-size:14.5px;line-height:1.7}
+.rb-ex a::before{content:"→ ";color:var(--clay)}
+.rb-see{display:flex;flex-wrap:wrap;gap:6px}
+.rb-see a{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:1px 11px;text-decoration:none;background:var(--surface)}
+.rb-tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:12px 0 4px}
+.rb-tool label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;padding:5px 0}
+.rb-tool select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:62%}
+.rb-out{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:15px}
+.rb-out small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.rb-checked{font-size:12px;color:var(--muted);margin:6px 0 0}
+a.term{text-decoration:underline dotted;text-decoration-color:var(--clay);text-underline-offset:4px;color:inherit;cursor:help}
+.term-pop{position:absolute;z-index:20;max-width:300px;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.7;box-shadow:0 6px 24px rgba(0,0,0,.14)}
+.term-pop b{display:block;font-size:14.5px}
+.term-pop a{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--clay)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "グリッドは22台なのに、なぜボッタスは「50グリッド降格」なのか", "description": "メキシコシティGPで、キャデラックのバルテリ・ボッタスに「50グリッド降格」が出た。並ぶ車は22台しかない。それでも50になるのは、この数字がスタート位置ではなく、部品ごとの罰の足し算だからだ。FIAの文書から50を自分で数え直し、16でも50でも行き先が同じになるグリッドの並べ方と、ボッタスが最後尾の22番手ではなく21番手になった理由を読む。", "datePublished": "2026-11-02T03:07:00+09:00", "dateModified": "2026-11-02T03:07:00+09:00", "inLanguage": "ja", "image": ["https://f1gridwalk.github.io/og-image.png?v=2"], "mainEntityOfPage": "https://f1gridwalk.github.io/deep/bottas-50-place-penalty/", "author": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "publisher": {"@type": "Organization", "name": "F1 Grid Walk", "alternateName": "F1グリッドウォーク", "url": "https://f1gridwalk.github.io/", "logo": {"@type": "ImageObject", "url": "https://f1gridwalk.github.io/icon-512.png", "width": 512, "height": 512}}, "articleSection": "DEEP GRID", "keywords": ["ペナルティ", "パワーユニット", "規則"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "DEEP GRID", "item": "https://f1gridwalk.github.io/deep/"}, {"@type": "ListItem", "position": 3, "name": "グリッドは22台なのに、なぜボッタスは「50グリッド降格」なのか", "item": "https://f1gridwalk.github.io/deep/bottas-50-place-penalty/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<link rel="stylesheet" href="/assets/base.css?v=3173ea4e">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/" aria-label="F1 Grid Walk トップへ"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="stamp-ring" cx="120" cy="120" r="112" stroke-width="7"></circle><circle class="stamp-ring" cx="120" cy="120" r="76" stroke-width="4"></circle><g transform="translate(78 78) scale(1.3)"><path class="mark-line" d="M6 26V8H30V26" stroke-width="4.4"></path><path class="mark-line" d="M34 56V38H58V56" stroke-width="4.4"></path><path class="leaf" d="M36 30C36 22 41 17 49 17C49 25 44 30 36 30Z"></path></g></svg><span><b>Grid Walk</b><small>WORLD F1 DESK</small></span></a>
+  <a class="toplink" href="/">最新ニュースを見る →</a>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/deep/">DEEP GRID</a> › #36</nav>
+<article class="dg">
+<div class="dg-top"><div class="dg-label"><b>DEEP GRID<i>#36</i></b><span>ニュースの、その奥へ。</span></div></div>
+<h1>グリッドは22台なのに、なぜボッタスは「50グリッド降格」なのか</h1>
+<p class="dg-dek">メキシコシティGPで、キャデラックのバルテリ・ボッタスに「50グリッド降格」が出た。並ぶ車は22台しかない。それでも50になるのは、この数字がスタート位置ではなく、部品ごとの罰の足し算だからだ。FIAの文書から50を自分で数え直し、16でも50でも行き先が同じになるグリッドの並べ方と、ボッタスが最後尾の22番手ではなく21番手になった理由を読む。</p>
+<p class="dg-meta"><span>2026年11月2日(月) 03:07 公開</span><span>本文 約9分</span></p>
+<div class="dg-themes"><span>ペナルティ</span><span>パワーユニット</span><span>規則</span></div>
+<nav class="dg-toc" aria-label="目次"><a href="#quick">先に結論</a><a href="#s1">50は「場所」ではなく「足し算」</a><a href="#s2">50を自分で数える</a><a href="#s3">16でも50でも、行き先は同じ</a><a href="#s4">なぜ22番手ではなく、21番手なのか</a><a href="#deep">データと記録</a><a href="#sources">出典</a></nav>
+<div id="quick"><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i></span><em>先に結論</em></div></div>
+<div class="dg-quick"><ol><li>ボッタス（キャデラック）は、メキシコシティGPの金曜に、パワーユニットの5つの部品（ICE、ターボ、MGU-K、ES、CE）を、今季の上限を超えて新しくした。FIAのスチュワードは「50グリッド降格」を決めた。</li><li>50は、部品ごとの罰の足し算だ。上限を超えた部品が、その種類で初めての超過なら10、2回目からは5。FIAの技術代表の報告では、5つとも今季の上限をちょうど1つ超えた部品なので、10×5＝50になる。文書の数字と、規則の表で数えた数字は合う。</li><li>2026年の上限は、技術代表の報告ではICEとターボが4基、MGU-K・ES・CEが3基。規則の基本の数に、新しいPUの年の「追加の1基」が足されている。</li><li>降格の合計が15を超えると、16でも50でも行き先は同じで、予選で順位がついたほかの全員の後ろに並ぶ（B2.5.4 b iv）。50は「50番目」という意味ではない。</li><li>暫定のスターティンググリッドで、ボッタスは21番手。予選で失格になったローソン（レーシングブルズ）は、スチュワードの許可で出走でき、ボッタスのさらに後ろの22番手になった。予選の順位がなく出走を認められた人の決まり（B2.5.4 b v）に当てはめると、この並びになる。</li></ol></div>
+<div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i></span><em>理由と背景</em></div>
+<div class="dg-sec" id="s1"><h2>50は「場所」ではなく「足し算」</h2><p>10月30日（現地）、メキシコシティGPの金曜。<a class="term" href="/deep/rules/fia/" data-term="fia">FIA</a>の技術代表、ヨー・バウアー（Jo Bauer）は、この大会で新しいパワーユニット（PU）の部品を使った車の一覧を<a class="term" href="/deep/rules/stewards/" data-term="stewards">スチュワード</a>に出した（文書14）。そこで、ボッタスの77号車について、5つの部品が今季認められた数を超えていると報告した。たとえば<a class="term" href="/deep/rules/ice/" data-term="ice">ICE</a>は「2026年のシーズンに認められた4基のうちの5基目」という書き方だ。</p><p>スチュワードは同じ日の13時34分、決定を出した（文書17）。使われた部品は、5基目のICE（内燃エンジン）、5基目の<a class="term" href="/deep/rules/turbo/" data-term="turbo">ターボチャージャー</a>、4基目の<a class="term" href="/deep/rules/energy-store/" data-term="energy-store">ES（エネルギーストア）</a>、4基目の<a class="term" href="/deep/rules/control-electronics/" data-term="control-electronics">CE（制御電子機器）</a>、4基目の<a class="term" href="/deep/rules/mgu-k/" data-term="mgu-k">MGU-K</a>。違反は競技規則B8.2.2（B8.2.3と合わせて読む）、決定は「ドライバーが次に出るレースでの50グリッドの降格」だった。</p><p>ここで最初の疑問が出る。F1のグリッドは22台分しかない。50も下がる場所は、どこにもない。英Grandprix.comは、この点をこう書いている。「出走が22台しかないなかで、この数字は文字どおりのスタート位置ではなく、積み上がった競技上の罰だ」。50は、どこに並ぶかを示す数ではなく、規則の表で罰を足していった結果だ。</p><p>もう一つ、この件には少し変わった点がある。文書17の「セッション」の欄は「<a class="term" href="/deep/rules/free-practice/" data-term="free-practice">フリー走行</a>1回目（FP1）」だ。F1公式サイトによると、そのFP1でボッタスの車に乗っていたのは、<a class="term" href="/deep/rules/rookie-fp1/" data-term="rookie-fp1">ルーキーの金曜走行義務</a>で走った<a class="term" href="/deep/rules/person-colton-herta/" data-term="person-colton-herta">コルトン・ハータ</a>だった。新しい部品で最初に<a class="term" href="/deep/rules/pit-lane/" data-term="pit-lane">ピットレーン</a>を出たのはハータだが、罰を受けるのはボッタスになる。<a class="term" href="/deep/rules/rookie/" data-term="rookie">ルーキー</a>の金曜走行義務で走るドライバーは、その車のもとのドライバー（ここではボッタス）に割り当てられたPUを使うからだ（くわしくは「ルーキーのFP1は、なぜ「1台に2回」なのか」「<a href="/deep/rookie-fp1/">ルーキーのFP1は、なぜ「1台に2回」なのか　岩佐歩夢と平川亮の出番を数える</a>」）。部品は、車がピットレーンを出た時点で「使った」ことになる（B8.2.8）。</p><p>なぜこの週末に5つもまとめて替えたのか。F1公式サイトは「さまざまなPUの部品を替えた」と書くだけで、確かめた報道には、チームの説明は見つからなかった。この号では、理由には立ち入らない。また、2024年アブダビGPで科された5<a class="term" href="/deep/rules/grid-penalty/" data-term="grid-penalty">グリッド降格</a>（12か月で消える決まりにより、今季の開幕戦では受けずに済んだ）とは別の話だ（その件は「グリッド降格はなぜ起きる？」「<a href="/deep/grid-penalty-why/">グリッド降格はなぜ起きる？</a>」）。</p></div>
+<div class="dg-sec" id="s2"><h2>50を自分で数える</h2><p>降格の基本の仕組み（部品の上限、10と5、15を超えたら最後尾）は、10月の号「<a href="/deep/grid-penalty-why/">グリッド降格はなぜ起きる？</a>」で書いた。ここでは、その仕組みでボッタスの50を数え直す。</p><p>まず上限。競技規則B8.2.2は、1人のドライバーが1シーズンに使える数を、ICE、ターボ、排気が3つ、ES、CE、MGU-Kが2つと決めている。B8.2.3は、これに各部品1つずつの「追加」を認める条文だ。</p><p>このB8.2.3は、第9版のPDFの中に2通りの書き方が見つかっている。1つは「2026年の選手権で」、もう1つは「2026年、2027年、2028年の選手権で」で始まる。どちらが効いている文なのか、この号では確かめられていない。どちらの書き方も2026年を挙げている。技術代表の報告も、ボッタスについてICEは「認められた4基」、MGU-K、ES、CEは「認められた3基」と書いており、この号ではその数を2026年の上限として使う。</p><p>次に罰の表。B8.2.8によると、ある種類の部品で初めて「追加の部品」を使ったときは10グリッド、同じ種類で次からは5グリッド。罰は足し算（累積）になる。</p><p>技術代表の報告（文書14）は、部品ごとに「これまでに使った数」を書いている。ICEは4基使ったあとの5基目、ターボも4基のあとの5基目。MGU-K、ES、CEは、3基使ったあとの4基目だ。どれも、上限をちょうど1つ超えた1基目、つまりその種類で「初めての追加」になる。</p><div class="dg-tw"><table class="short"><thead><tr><th scope="col">部品</th><th scope="col">これまで</th><th scope="col">今回</th><th scope="col">2026年の上限</th><th scope="col">罰</th></tr></thead><tbody><tr><th scope="row">ICE</th><td data-h="これまで">4</td><td data-h="今回">5基目</td><td data-h="2026年の上限">4</td><td data-h="罰">10</td></tr><tr><th scope="row">ターボ（TC）</th><td data-h="これまで">4</td><td data-h="今回">5基目</td><td data-h="2026年の上限">4</td><td data-h="罰">10</td></tr><tr><th scope="row">MGU-K</th><td data-h="これまで">3</td><td data-h="今回">4基目</td><td data-h="2026年の上限">3</td><td data-h="罰">10</td></tr><tr><th scope="row">ES</th><td data-h="これまで">3</td><td data-h="今回">4基目</td><td data-h="2026年の上限">3</td><td data-h="罰">10</td></tr><tr><th scope="row">CE（PU-CE）</th><td data-h="これまで">3</td><td data-h="今回">4基目</td><td data-h="2026年の上限">3</td><td data-h="罰">10</td></tr><tr><th scope="row">合計</th><td data-h="これまで"></td><td data-h="今回"></td><td data-h="2026年の上限"></td><td data-h="罰">50</td></tr></tbody></table></div><p class="tnote">出典：FIA 文書14（技術代表の報告）、文書17（スチュワードの決定）、競技規則 第9版 B8.2.8。罰は編集部の計算で、文書17の「50」と一致する。</p><p>10が5つで50。スチュワードの決定の数字と合う。F1公式サイトも、5つの部品はどれも2026年で初めての超過なので、公式には50グリッドの降格になると書いている。文書17に挙がった部品は5つで、排気（EXH）と補機類（PU-ANC）は入っていない。</p><p>数え方からは、この先のことも分かる。5つの部品はどれも一度上限を超えたので、同じ種類をもう一度新しくすれば、次は1つにつき5グリッドになる（B8.2.8 b）。また、同じ大会で同じ部品を2つ以上入れた場合、あとの大会で罰なしに使えるのは最後に付けた1つだけだ（B8.2.8）。</p><p>今季は、シンガポールのラッセルの合計60という例もある（→<a class="term" href="/deep/rules/pu-allocation/" data-term="pu-allocation">パワーユニットの使用数</a>）。</p></div>
+<div class="dg-sec" id="s3"><h2>16でも50でも、行き先は同じ</h2><p>では、50は実際にどう効くのか。決勝のグリッドの並べ方は、競技規則B2.5.4に手順がある。降格が15以下のドライバーは、まず「<a class="term" href="/deep/rules/qualifying/" data-term="qualifying">予選</a>の順位＋降格の数」の仮の位置に置かれ、罰のない人を入れたあと、空いた場所へ前に詰める（b の i〜iii）。この手順の流れは「グリッド降格はなぜ起きる？」にもある。</p><p>降格が15を超えた人は、この計算に入らない。B2.5.4 b iv は、過去12か月に科された未消化の降格が15を超える、予選で順位がついたドライバーは「ほかの、予選で順位がついたどのドライバーよりも後ろからスタートする」と決めている。その中に何人もいれば、並び順は予選の順位で決める。</p><p>つまり、15を超えた時点で、何グリッドかという数は、並べ方の上では意味を持たなくなる。16でも50でも、入る場所は同じ「後ろのグループ」だ。そこでの順番を決めるのは降格の数ではなく、予選の順位になる。50の人が16の人より後ろになるとは限らない。</p><p>文書17の理由の欄も、この条文を名指ししている。「77号車が予選の結果で順位がついていることを条件に、B2.5.4.b.iv に従ってグリッドの位置を割り当てる」。「順位がついていれば」という条件が付いているのは、予選で順位がつかなかった人には、別の決まり（b v）が使われるからだ。それが、次の章のローソンの話につながる。</p><div class="dg-view"><p>「50グリッド降格」という書き方は、初めて見ると大げさに見えます。編集部としては、それでもこの数字には意味があると見ています。50は、5つの部品がどれも初めての超過だったことを、そのまま示しているからです。一方で、15を超えたらどれも同じ扱いになる以上、観る側に伝わるのは「最後尾のグループ」という結果だけで、数字の大きさは誤解を生みやすい、という見方も成り立ちます。</p></div></div>
+<div class="dg-sec" id="s4"><h2>なぜ22番手ではなく、21番手なのか</h2><p>予選の前の10月30日、RacingNews365は「ボッタスは22台のグリッドの最後尾からのスタートが確実になった」と書いた。降格が15を超えれば、予選で順位がついたほかの全員の後ろになる。全員が予選で順位をもらえば、それは22番手、つまり最後尾だ。</p><p>ところが、10月31日19時15分（現地）に出た暫定のスターティンググリッド（文書60）で、ボッタスは21番手だった。22番手には、レーシングブルズのローソンが並んでいる。</p><p>理由は、ローソンが予選の結果から<a class="term" href="/deep/rules/disqualification/" data-term="disqualification">失格</a>になったことだ。失格の中身は「<a href="/deep/lawson-dsq-mgu-k/">ローソンはなぜメキシコの予選で失格になったのか</a>」にある。予選の記録がなくなったローソンは、スチュワードの許可で決勝に出られることになった。文書58は、B2.4.3b に従ってローソンが「決勝に出る資格がある」とし、車はB2.5.4に従ってグリッドに置かれると書いている。文書58が挙げる条文はB2.5.4だけだ。予選の順位がなく、スチュワードに出走を認められた人の決まりは、その中のb vになる。</p><p>B2.5.4 b v は、予選で順位がつかず、スチュワードに出走を認められたドライバーを「予選で順位がついたすべてのドライバーの後ろ」に置く。ボッタスは、予選で順位がついた側の、いちばん後ろ（b iv）。ローソンは、順位がつかなかった側（b v、編集部の当てはめ）。だから順番は、ボッタスが21番手、ローソンが22番手になる。</p><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">番手</th><th scope="col">ドライバー</th><th scope="col">並べ方の根拠</th></tr></thead><tbody><tr><th scope="row">1〜20</th><td data-h="ドライバー">ハミルトンからペレスまで</td><td data-h="並べ方の根拠">予選の順位と、15以下の降格（b i〜iii）</td></tr><tr><th scope="row">21</th><td data-h="ドライバー">ボッタス（キャデラック）</td><td data-h="並べ方の根拠">予選で順位がつき、降格が15を超えた（b iv）</td></tr><tr><th scope="row">22</th><td data-h="ドライバー">ローソン（レーシングブルズ）</td><td data-h="並べ方の根拠">予選で失格、スチュワードが出走を許可（b v、文書58）</td></tr></tbody></table></div><p class="tnote">出典：FIA 文書60（暫定スターティンググリッド、10月31日19時15分）、文書58、競技規則 第9版 B2.5.4。</p><p>文書60には、ローソンに「不規則な運転（driving erratically）」による1グリッド降格（文書34）も書かれている。ただ、b v の並びは予選で順位がついた全員の後ろなので、22番手のままだ。</p><p>ボッタスにとって、50の罰はどれくらい重かったのか。文書60に並んだタイムでは、ボッタスの1分19秒852は、タイムのある21人の中でいちばん遅い。ただし表のタイムは、それぞれが最後に走ったセッションのもので、同じ条件の比較ではない。降格がなければ何番手だったのかは、この号で使った資料からは確かめられない。</p><p>なお、文書60は「暫定」のグリッドだ。決勝の前に、<a class="term" href="/deep/rules/parc-ferme/" data-term="parc-ferme">パルクフェルメ</a>の間に車に手を加えた車が<a class="term" href="/deep/rules/pit-lane-start/" data-term="pit-lane-start">ピットレーンスタート</a>になるなど、並びが変わることはある（→ピットレーンスタート）。この号は、日本時間11月2日0時半、決勝の前の時点の情報で書いている。</p><div class="dg-view"><p>今回の並びは、規則が「罰の重さ」より「予選で順位がついたかどうか」を先に見ていることをよく示しています。50グリッドの罰を受けたボッタスが、予選の記録が消えたローソンより前に並ぶ。編集部としては、b iv と b v の順番は、まず予選で順位が残った人を前に置くという考え方だと見ています。数字だけを見ると逆に見えるこの並びも、手順を追えば筋が通ります。</p></div></div>
+<details class="dg-deep" id="deep"><summary><div class="dg-layer"><span class="g" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span><em>データと記録</em></div><span class="dg-open"><span>データ・規則・歴史を読む<span class="dg-deep-sub">文書で見る流れ（現地時間）・2026年に使える部品の数（ボッタスの場合）・規則の原文（競技規則 第9版、2026年10月1日付） ほか</span></span></span></summary>
+<div class="dg-sec"><h2>文書で見る流れ（現地時間）</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">日時（現地）</th><th scope="col">出来事</th><th scope="col">文書</th></tr></thead><tbody><tr><th scope="row">10月30日 13:05</th><td data-h="出来事">技術代表ヨー・バウアーが、この大会の新しいPU部品の一覧をスチュワードに報告。ボッタスの5部品が上限超え</td><td data-h="文書">文書14</td></tr><tr><th scope="row">10月30日 13:34</th><td data-h="出来事">スチュワードが77号車に50グリッド降格を決定（セッション欄はFP1）</td><td data-h="文書">文書17</td></tr><tr><th scope="row">10月31日 19:06</th><td data-h="出来事">ローソン（30号車）の出走を許可（B2.4.3b）</td><td data-h="文書">文書58</td></tr><tr><th scope="row">10月31日 19:15</th><td data-h="出来事">暫定スターティンググリッド。ボッタス21番手、ローソン22番手</td><td data-h="文書">文書60</td></tr></tbody></table></div><p class="tnote">出典：FIA 2026年メキシコシティGPの文書14、17、58、60。ローソンの失格の決定（文書57、19時05分）は「ローソンはなぜメキシコの予選で失格になったのか」を参照。</p></div>
+<div class="dg-sec"><h2>2026年に使える部品の数（ボッタスの場合）</h2><div class="dg-tw"><table class="short"><thead><tr><th scope="col">部品</th><th scope="col">B8.2.2の数</th><th scope="col">2026年の上限（技術代表の報告）</th><th scope="col">ボッタスの今回</th></tr></thead><tbody><tr><th scope="row">ICE</th><td data-h="B8.2.2の数">3</td><td data-h="2026年の上限（技術代表の報告）">4</td><td data-h="ボッタスの今回">5基目</td></tr><tr><th scope="row">ターボ（TC）</th><td data-h="B8.2.2の数">3</td><td data-h="2026年の上限（技術代表の報告）">4</td><td data-h="ボッタスの今回">5基目</td></tr><tr><th scope="row">排気（EXH）</th><td data-h="B8.2.2の数">3</td><td data-h="2026年の上限（技術代表の報告）">—（文書17になし）</td><td data-h="ボッタスの今回">—</td></tr><tr><th scope="row">ES</th><td data-h="B8.2.2の数">2</td><td data-h="2026年の上限（技術代表の報告）">3</td><td data-h="ボッタスの今回">4基目</td></tr><tr><th scope="row">CE（PU-CE）</th><td data-h="B8.2.2の数">2（各）</td><td data-h="2026年の上限（技術代表の報告）">3</td><td data-h="ボッタスの今回">4基目</td></tr><tr><th scope="row">MGU-K</th><td data-h="B8.2.2の数">2</td><td data-h="2026年の上限（技術代表の報告）">3</td><td data-h="ボッタスの今回">4基目</td></tr><tr><th scope="row">補機類（PU-ANC）</th><td data-h="B8.2.2の数">5（各）</td><td data-h="2026年の上限（技術代表の報告）">—（文書17になし）</td><td data-h="ボッタスの今回">—</td></tr></tbody></table></div><p class="tnote">出典：競技規則 第9版 B8.2.2、FIA 文書14・文書17。上限の「＋1」はB8.2.3による。B8.2.3はPDFの中に2通りの書き方があり（「2026年」／「2026年、2027年、2028年」）、どちらが効いている文かは確かめていない。</p></div>
+<div class="dg-sec"><h2>規則の原文（競技規則 第9版、2026年10月1日付）</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">条文</th><th scope="col">原文の要点</th><th scope="col">訳</th></tr></thead><tbody><tr><th scope="row">B8.2.2</th><td data-h="原文の要点">&quot;each driver may use no more than: a. 3 engines (ICE) b. 3 turbochargers (TC) c. 3 exhaust sets (EXH) d. 2 energy store units (ES) e. 2 of each control electronics units (PU-CE) f. 2 MGU-K g. 5 of each Power Unit ancillary components (PU-ANC).&quot;</td><td data-h="訳">各ドライバーが使えるのは、ICE 3、ターボ 3、排気 3、ES 2、CE 各2、MGU-K 2、補機類 各5まで（追加の決まりを条件に）。</td></tr><tr><th scope="row">B8.2.3</th><td data-h="原文の要点">&quot;Each driver will be permitted to use an additional unit for each of the Power Unit elements listed in Article B8.2.2 a. to g. in the following conditions: a. In the 2026 Championship b. If the Power Unit used is supplied by a PU Manufacturer who has not supplied Power Units in 2026 and is in its first year of supplying Power Units.&quot;</td><td data-h="訳">B8.2.2のa〜gの各部品に、1つずつ追加の部品を使える。次の場合（a 2026年の選手権／b 2026年にPUを供給していない、供給1年目のPUメーカーのPUを使う場合。aとbのつながりは抜き書きでは不明）。PDFの別の箇所には「a. In the 2026, 2027 and 2028 Championships」で始まる文もある。</td></tr><tr><th scope="row">B8.2.8</th><td data-h="原文の要点">&quot;a. The first time an additional element of each type is used: Ten (10) grid place penalty for the race. b. The next times an additional element of each type is used: Five (5) grid place penalty for the race.&quot;</td><td data-h="訳">上限を超えると、その部品を初めて使った大会で降格。罰は累積。各種類で初めての追加は10グリッド、次からは5グリッド。</td></tr><tr><th scope="row">B8.2.8（表の後段）</th><td data-h="原文の要点">&quot;will be deemed to have been used once the F1 Car&#x27;s timing transponder has shown that it has left the Pit Lane.&quot;</td><td data-h="訳">部品は、車の計時用の発信機がピットレーンを出たことを示した時点で「使った」とみなす。同じ大会で同じ部品を2つ以上入れたら、あとの大会で罰なしに使えるのは最後に付けた1つだけ。</td></tr><tr><th scope="row">B2.5.4 b iv</th><td data-h="原文の要点">&quot;Classified drivers who have accrued more than 15 cumulative unserved grid position penalties for the Race imposed in the previous twelve (12) months will start behind any other classified driver.&quot;</td><td data-h="訳">過去12か月の未消化の降格が15を超える、予選で順位がついたドライバーは、ほかの順位がついたどのドライバーよりも後ろ。その中の順番は予選の順位。</td></tr><tr><th scope="row">B2.5.4 b v</th><td data-h="原文の要点">&quot;Unclassified drivers who have been permitted to participate by the Stewards will be allocated grid positions behind all the classified drivers.&quot;</td><td data-h="訳">予選で順位がつかず、スチュワードに出走を認められたドライバーは、順位がついたすべてのドライバーの後ろ。その中の順番はB2.4.3 bに従う。</td></tr></tbody></table></div><p class="tnote">出典：FIA 2026 F1 Regulations Section B（Sporting）第9版（2026年10月1日付）。訳は編集部。原文はFIAのPDFから取り出したもの。</p></div>
+<div class="dg-sec"><h2>暫定スターティンググリッドの後ろの方（文書60）</h2><div class="dg-tw"><table class="stack"><thead><tr><th scope="col">番手</th><th scope="col">ドライバー</th><th scope="col">文書60のタイム</th><th scope="col">備考</th></tr></thead><tbody><tr><th scope="row">18</th><td data-h="ドライバー">平川（ハース）</td><td data-h="文書60のタイム">1:18.958</td><td data-h="備考"></td></tr><tr><th scope="row">19</th><td data-h="ドライバー">ストロール</td><td data-h="文書60のタイム">1:19.072</td><td data-h="備考"></td></tr><tr><th scope="row">20</th><td data-h="ドライバー">ペレス（キャデラック）</td><td data-h="文書60のタイム">1:19.105</td><td data-h="備考"></td></tr><tr><th scope="row">21</th><td data-h="ドライバー">ボッタス（キャデラック）</td><td data-h="文書60のタイム">1:19.852</td><td data-h="備考">50グリッド降格（文書17）</td></tr><tr><th scope="row">22</th><td data-h="ドライバー">ローソン（レーシングブルズ）</td><td data-h="文書60のタイム">—</td><td data-h="備考">出走許可（文書58）。1グリッド降格（文書34）も記載</td></tr></tbody></table></div><p class="tnote">出典：FIA 文書60（暫定スターティンググリッド、10月31日19時15分）。ほかに記載の罰は、3号車（フェルスタッペン）の1グリッド降格（文書33）。</p></div>
+</details>
+<div class="dg-end dg-rel"><h2><span class="k">NEXT</span>この話の続きを読む</h2><ul class="dg-rel-l"><li><a href="/news/de-motorsportmagazin-mexiko-fp1-leclerc-audi/" data-track="click/deep/bottas-50-place-penalty/related"><small>FP1の日に、ボッタスのPU交換と最後尾スタートを伝えたニュース</small><b>メキシコGP FP1　ルクレールが大差でトップ、オーディに珍しい出来事</b><span>Motorsport-Magazin</span></a></li><li><a href="/news/en-planetf1-lawson-disqualified-mexico/" data-track="click/deep/bottas-50-place-penalty/related"><small>ローソンが予選の順位を失い、ボッタスの後ろに回った理由</small><b>ローソン、メキシコGP予選で失格　MGU-Kの出力規定違反</b><span>PlanetF1</span></a></li></ul></div>
+<section class="rel"><p class="rel-k">READ NEXT</p><h2>次に読む</h2><div class="nx"><a class="nx-c nx-STORY" href="/topics/haukipuro-max-max-max-limit/" data-track="click/rel/deep/bottas-50-place-penalty/"><small>STORY</small>最大の、最大の、最大の限界<span class="go">読む →</span></a><a class="nx-c nx-OFF" href="/lens/tsunoda-cadillac-last-seat-20261029/" data-track="click/rel/deep/bottas-50-place-penalty/"><small>OFF GRID</small>角田裕毅はアウトサイダー？　キャデラック残り1席、各国の伝え方<span class="go">読む →</span></a><a class="nx-c nx-WORLD" href="/lens/perez-cadillac-2029-20261029/" data-track="click/rel/deep/bottas-50-place-penalty/"><small>WORLD GRID</small>ペレス2029年まで　見出しは「まだまだ」と「ボッタスの不透明さ」<span class="go">読む →</span></a></div><div class="nx-p"><a href="/deep/rules/person-valtteri-bottas/" data-track="click/rel-person/valtteri-bottas"><b>バルテリ・ボッタス</b>のページ（近況・うわさ）→</a></div><a class="rel-t" href="/teams/cadillac/" data-track="click/rel-team/cadillac">キャデラックの記事を、まとめて読む →</a><br></section><style>
+.rel{margin:34px 0 8px;padding-top:16px;border-top:2px solid var(--ink)}
+.rel .rel-k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--clay);margin:0}
+.rel h2{font-size:20px;margin:2px 0 10px}
+.rel a.rel-i{display:block;margin:8px 0 0;padding:10px 14px;border:1px solid var(--line);border-left:3px solid var(--clay);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:15px;font-weight:700;line-height:1.55}
+.rel a.rel-i small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
+.rel a.rel-t{display:inline-block;margin:12px 0 0;font-size:14.5px;font-weight:700;color:var(--ink)}
+.rel .nx{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.rel a.nx-c{display:flex;flex-direction:column;justify-content:space-between;min-height:118px;padding:12px 14px;border-radius:14px;color:#fff;text-decoration:none;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:900;font-size:15px;line-height:1.45}
+.rel a.nx-c:first-child{grid-column:1/-1;min-height:130px;font-size:19px}
+.rel a.nx-c small{align-self:flex-start;font-family:system-ui,sans-serif;font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:5px;background:rgba(255,255,255,.2);margin-bottom:8px}
+.rel a.nx-c span.go{font-family:system-ui,sans-serif;font-size:12px;font-weight:800;margin-top:8px;opacity:.9}
+.rel .nx-STORY{background:#1F2420}.rel a.nx-STORY small{background:#FFEE9A;color:#1F2420}
+.rel .nx-DEEP{background:#8E2F3B}.rel .nx-WORLD{background:#B8673F}.rel .nx-OFF{background:#2F6B66}
+.rel .nx-p{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.rel .nx-p a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:700;text-decoration:none;color:var(--ink);background:var(--surface)}
+.rel .nx-p a b{color:var(--clay)}
+</style><section class="more-deep"><p class="md-k">COLUMNS</p><h2>ほかのコラムを読む</h2><ul><li><a href="/lens/mercedes-double-title-20261102/" data-track="click/deep/more/lens/mercedes-double-title-20261102/"><span class="ctag ctag-off">OFF GRID</span><b>メルセデス、メキシコで2冠なるか　条件はフェラーリより39点以上多く</b><small>メキシコシティGP · 2026年11月2日(月) 03:07</small></a></li><li><a href="/lens/verstappen-paddock-zoo-20261102/" data-track="click/deep/more/lens/verstappen-paddock-zoo-20261102/"><span class="ctag ctag-off">OFF GRID</span><b>フェルスタッペン「ここはまるで動物園」　ハジャーの行動に理解</b><small>メキシコシティGP · 2026年11月2日(月) 03:07</small></a></li><li><a href="/deep/mexico-tyres-resurfaced/" data-track="click/deep/more/deep/mexico-tyres-resurfaced/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#37</span><b>F1メキシコ決勝のタイヤは、新しい路面でどう読めばいいのか</b><small>2026年11月2日(月) 03:07</small></a></li><li><a href="/deep/lawson-dsq-mgu-k/" data-track="click/deep/more/deep/lawson-dsq-mgu-k/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#35</span><b>ローソンはなぜメキシコの予選で失格になったのか　ラインの先で「電気の下げ方」を決める規則</b><small>2026年11月1日(日) 18:07</small></a></li><li><a href="/deep/driver-change-midweekend/" data-track="click/deep/more/deep/driver-change-midweekend/"><span class="ctag ctag-deep">DEEP GRID</span><span class="ctag-no">#34</span><b>F1は週末の途中でドライバーを替えられるのか　金曜の最後はオコン、土曜から平川</b><small>2026年11月1日(日) 17:54</small></a></li><li><a href="/lens/ocon-haas-exit-20261101/" data-track="click/deep/more/lens/ocon-haas-exit-20261101/"><span class="ctag ctag-world">WORLD GRID</span><b>オコン除外、仏は「いさかい」らしいと報道　本人は暴力を否定</b><small>メキシコシティGP · 2026年11月1日(日) 17:14</small></a></li><li><a href="/lens/hamilton-ferrari-pole-20261101/" data-track="click/deep/more/lens/hamilton-ferrari-pole-20261101/"><span class="ctag ctag-world">WORLD GRID</span><b>41歳ハミルトンのフェラーリ初ポール　伊は「言葉」、英は「年齢」</b><small>メキシコシティGP · 2026年11月1日(日) 17:13</small></a></li><li><a href="/lens/antonelli-nerves-20261101/" data-track="click/deep/more/lens/antonelli-nerves-20261101/"><span class="ctag ctag-off">OFF GRID</span><b>王手のアントネッリ「いつもより少し緊張」　体調も「100％ではない」</b><small>メキシコシティGP · 2026年11月1日(日) 17:12</small></a></li></ul><a class="md-btn" href="/columns/" data-track="click/deep/more-all">すべてのコラムを見る →</a><a class="md-sub" href="/" data-track="click/deep/entrance-top">今日のF1ニュースを見る</a></section>
+<div class="dg-end"><h2><span class="k">GLOSSARY</span>この号の用語</h2><dl><dt>追加の部品（additional element）</dt><dd>規則で決められた年間の数より多く使った部品。B8.2.8は、その種類で初めてなら10グリッド、次からは5グリッドの降格を決めている。</dd><dt>予選で順位がついたドライバー（classified）</dt><dd>予選の結果に順位が載ったドライバー。グリッドの並べ方（B2.5.4）は、順位がついた人とつかなかった人を分けて扱う。</dd><dt>未消化の降格</dt><dd>科されたが、まだ受けていないグリッド降格。B2.5.4は、過去12か月に科されたものを数える。</dd><dt>暫定スターティンググリッド</dt><dd>決勝の前にFIAが出すグリッドの一覧。規則では、フォーメーションラップの予定の開始の2時間以上前に出す。</dd><dt>技術代表</dt><dd>大会ごとに、どの車がどのPU部品を新しく使ったかをまとめてスチュワードに知らせるFIAの役。車の検査も受け持つ。今回はヨー・バウアー。</dd></dl></div>
+<div class="dg-end" id="sources"><h2><span class="k">SOURCES</span>出典</h2><ol class="dg-src"><li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_infringement_-_car_77_-_pu_elements.pdf" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">FIA</a> <small>2026 Mexico City Grand Prix - Infringement - Car 77 - PU Elements（文書17、スチュワードの決定）</small></li><li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_new_pu_elements_for_this_competition.pdf" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">FIA</a> <small>2026 Mexico City Grand Prix - New PU Elements for this Competition（文書14、技術代表の報告）</small></li><li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_provisional_starting_grid.pdf" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">FIA</a> <small>2026 Mexico City Grand Prix - Provisional Starting Grid（文書60）</small></li><li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_decision_-_car_30_-_permission_to_start.pdf" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">FIA</a> <small>2026 Mexico City Grand Prix 文書58（30号車の出走許可）</small></li><li><a href="https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">FIA</a> <small>FIA 2026 F1 Regulations - Section B [Sporting] - Iss 09（2026年10月1日）</small></li><li><a href="https://www.formula1.com/en/latest/article/bottas-set-for-grid-penalty-at-mexico-city-grand-prix-after-power-unit-changes.2J7hkopU6hrvgFvlK82cip" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">F1公式サイト</a> <small>Bottas set for grid penalty at Mexico City Grand Prix after power unit changes</small></li><li><a href="https://www.grandprix.com/news/bottas-handed-50-place-grid-penalty-in-mexico.html" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">Grandprix.com</a> <small>Bottas handed 50-place grid penalty in Mexico</small></li><li><a href="https://racingnews365.com/two-f1-drivers-set-for-mexico-city-grand-prix-grid-penalties" target="_blank" rel="noopener" data-track="click/deep/bottas-50-place-penalty/src">RacingNews365</a> <small>Two F1 drivers set for Mexico City Grand Prix grid penalties</small></li></ol><p class="tnote" style="margin-top:10px">発言は原文から訳し、数字は出典で確かめたものだけを使っています。</p></div>
+<div class="dg-end"><h2><span class="k">UPDATES</span>更新履歴</h2><ul class="dg-hist"><li><time>2026-11-02</time>公開。</li></ul></div>
+<div class="dg-end"><h2><span class="k">SAME GP</span>メキシコシティGPのほかのニュース</h2><ul class="list"><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">F1Maximaal</span><time datetime="2026-11-01T14:54:00+01:00">2026年11月1日(日) 22:54</time></div><a class="t" href="/news/nl-f1maximaal-hamilton-antonelli-title/">ハミルトン、アントネッリの王座決定に「記録は破られるもの」　自身はチーム最善を優先</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">F1Maximaal</span><time datetime="2026-11-01T13:58:00+01:00">2026年11月1日(日) 21:58</time></div><a class="t" href="/news/nl-f1maximaal-hirakawa-debut-haas/">ハース代役の平川亮「電話で知らされた」　予選19番手、Q2進出は可能だったと悔やむ</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="gb">Crash.net</span><time datetime="2026-11-01T12:00:00+00:00">2026年11月1日(日) 21:00</time></div><a class="t" href="/news/en-crash-hamilton-schumacher-dream/">ハミルトン、初のフェラーリ・ポールで「シューマッハを見ていた夢」に言及</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">F1Maximaal</span><time datetime="2026-11-01T11:34:00+01:00">2026年11月1日(日) 19:34</time></div><a class="t" href="/news/nl-f1maximaal-stella-mclaren-responsibility/">マクラーレンのステッラ代表、メキシコ予選の不振で責任を認める　ドライバーにも言及</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">F1Maximaal</span><time datetime="2026-11-01T10:44:00+01:00">2026年11月1日(日) 18:44</time></div><a class="t" href="/news/nl-f1maximaal-vasseur-stay-calm/">フェラーリのバスール代表、ポール獲得も「冷静に」　アップデートの効果は数戦かかるとも</a></li></ul></div>
+<div class="dg-end"><h2><span class="k">LATEST</span>新着ニュース</h2><ul class="list"><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="gb">PlanetF1</span><time datetime="2026-11-01T13:42:00+00:00">2026年11月1日(日) 22:42</time></div><a class="t" href="/news/en-planetf1-vowles-alonso-grid-quality/">ウィリアムズのボウルズ代表、アロンソの「グリッドの質」批判に反論　「私の知る最高水準」</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="nl">F1Maximaal</span><time datetime="2026-11-01T13:09:00+01:00">2026年11月1日(日) 21:09</time></div><a class="t" href="/news/nl-f1maximaal-yamaha-qatar-f1-risk/">ヤマハがMotoGPカタール戦への派遣を見送り　F1のカタール・アブダビ戦にも影響の見方</a></li><li><div class="m"><span class="kind news">報道</span><span class="srcbadge" data-c="gb">PlanetF1</span><time datetime="2026-11-01T07:54:00+00:00">2026年11月1日(日) 16:54</time></div><a class="t" href="/news/en-planetf1-bearman-ocon-stressful/">ベアマン、オコン欠場の状況は「根本的にストレス」　平川には助言</a></li></ul></div>
+<div class="dg-end"><div class="rbx"><div class="rbx-hd"><b>RULES</b><span class="mono">601 ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p><form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span><button type="submit" class="go" data-track="click/rules-entry/deep-issue">検索</button></form><a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/deep-issue/all">すべての用語を見る →</a></div><script>(function(){[].forEach.call(document.querySelectorAll(".rbx-in"),function(w){var i=w.querySelector("input"),x=w.querySelector(".rbx-x");if(!i||!x)return;function s(){x.hidden=!i.value;}i.addEventListener("input",s);x.addEventListener("click",function(){i.value="";s();i.dispatchEvent(new Event("input",{bubbles:true}));i.focus();});s();});})();</script></div>
+</article>
+<script type="application/json" id="term-data">{"grid-penalty": ["グリッド降格", "予選で決まったスタート位置から、決められた数だけ後ろに下げる罰。"], "pu-allocation": ["パワーユニットの使用数", "1人のドライバーが1シーズンに使えるパワーユニット部品の数の上限。超えるとグリッド降格。"], "parc-ferme": ["パルクフェルメ", "予選で車が初めてピットレーンを出てから決勝のスタートまで、マシンの設定を基本的に変えられない決まり。"], "stewards": ["スチュワード", "レース中の事故や違反を調べ、ペナルティを決める審判役。レースを進行する人とは別。"], "qualifying": ["予選", "決勝のスタート順を決めるセッション。Q1・Q2・Q3の3段階で、遅い車から落としていく。"], "disqualification": ["失格", "レースや予選の結果から、その車の記録をすべて消される、とても重い罰。"], "pit-lane-start": ["ピットレーンスタート", "グリッドに並ばず、全車が通り過ぎたあとにピットレーンから発進するスタート。"], "mgu-k": ["MGU-K", "ブレーキの力を電気に変え、その電気で後輪を押すモーター。2026年は最大350kW。"], "energy-store": ["ES（エネルギーストア）", "MGU-Kがつくった電気をためる電池。規則上の名前はエネルギーストア。"], "ice": ["ICE（内燃エンジン）", "燃料を燃やして動力を出すエンジン。2026年は約400kWで、電気と半々に近づいた。"], "rookie-fp1": ["ルーキーの金曜走行義務", "各車、年2回、金曜のFP1にF1の出走が2戦以内の選手を走らせる義務。"], "fia": ["FIA（国際自動車連盟）", "F1を含む世界の自動車レースのルールを決めて運用する国際団体。本部はパリ。"], "pit-lane": ["ピットレーン", "ガレージにつながるコース脇の道。制限速度は原則80km/h。"], "turbo": ["ターボチャージャー", "排気の力で空気を圧縮し、エンジンに送り込む部品。2026年はMGU-Hがなくなった。"], "control-electronics": ["CE（制御電子機器）", "パワーユニットの各部を制御する電子機器。電池とMGU-Kのあいだで電気を扱う。"], "free-practice": ["フリー走行（FP1〜FP3）", "決勝までの練習走行。通常の週末は1時間を3回、スプリント週末は1時間を1回だ。"], "rookie": ["ルーキー（1年目のドライバー）", "F1で初めてのシーズンを走るドライバー。2026年のルーキーはリンドブラッドだけ。"], "person-colton-herta": ["コルトン・ハータ", "テストドライバー（キャデラック）／FIA F2ドライバー（キャデラック／ハイテック）"]}</script><script>
+(function(){
+  var data=JSON.parse(document.getElementById('term-data').textContent), pop=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a.term');
+    if(!a){ if(pop&&!(ev.target.closest&&ev.target.closest('.term-pop'))) close(); return; }
+    ev.preventDefault(); close();
+    var d=data[a.getAttribute('data-term')]; if(!d) return;
+    pop=document.createElement('div'); pop.className='term-pop'; pop.setAttribute('role','dialog');
+    var b=document.createElement('b'); b.textContent=d[0]; pop.appendChild(b);
+    pop.appendChild(document.createTextNode(d[1]));
+    var tid=a.getAttribute('data-term')||'';
+    var l=document.createElement('a'); l.href=a.getAttribute('href'); l.textContent=tid.indexOf('person-')===0?(d[0]+'の記事をすべて見る →'):'ルールブックで詳しく →'; pop.appendChild(document.createElement('br')); pop.appendChild(l);
+    document.body.appendChild(pop);
+    var r=a.getBoundingClientRect(), w=Math.min(300,document.documentElement.clientWidth-32);
+    pop.style.width=w+'px';
+    pop.style.left=Math.max(16,Math.min(r.left+scrollX,document.documentElement.clientWidth-w-16))+'px';
+    pop.style.top=(r.bottom+scrollY+8)+'px';
+  });
+  document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') close(); });
+})();
+</script>
+</main>
+<footer><div class="wrap">
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
+  <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
+</div></footer>
+<nav class="bt" aria-label="サイト内の移動"><a href="/#news" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/?v=data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" class="on" aria-current="page" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/drivers/" data-track="click/bt/drv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 8 0 0 1 16-1v3H4z"/><path d="M12 14h8M8 19h8"/></svg>ドライバー</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
+<script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+document.addEventListener('click',function(ev){
+  var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
+  try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}
+});
+var cp=document.getElementById('copy'),cu=(document.querySelector('link[rel=canonical]')||{}).href||location.href;
+if(cp) cp.addEventListener('click',function(){
+  var done=function(){cp.textContent='コピーしました';setTimeout(function(){cp.textContent='リンクをコピー';},1400);};
+  try{navigator.clipboard.writeText(cu).then(done,function(){window.prompt('このURLをコピーしてください',cu);});}catch(e){window.prompt('このURLをコピーしてください',cu);}
+});
+</script>
+</body>
+</html>
