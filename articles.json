@@ -1,25 +1,9 @@
 {
- "updatedAt": "2026-11-01T12:40:00+09:00",
+ "updatedAt": "2026-11-01T18:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
    "summary": "キャデラックの2027年の布陣をめぐり、日英独蘭西に加えアルゼンチンやブラジルのメディアも観測を伝えた。ブトコウスキー代表はオースティンでボッタスの去就に明言せず、契約の話は公式発表で伝えるとした。英The Raceはリザーブのハータが後任の有力候補で、角田の陣営もチームに接触したと報じ、オコンの起用の可能性は低いとみる。ペレスの席は安泰との見方が強い。いずれもチームの正式発表ではなく、未確認の話である。"
-  },
-  "redbull-us-gp-frustration": {
-   "title": "アメリカGPでレッドブルに不満噴出　フェルスタッペンとハジャーが発進・無線・戦略を指摘",
-   "summary": "アメリカGP後、フェルスタッペンは3位、ハジャーは6位で終え、ともにレッドブルへの不満を語った。2人とも発進で失敗し、無線の不調も続き、ソフトを使う2ストップ作戦はフェルスタッペンが事前に合意していなかったと述べた。ハジャーは壊れやすいクラッチの全面的な再設計を求めた。メキース代表は整理すべき点があると認め、発進の根本改善は来季になるとの見方を示した。"
-  },
-  "lawson-2027-seat": {
-   "title": "レーシングブルズの2027年布陣、ローソンの去就は未定",
-   "summary": "レーシングブルズは2027年のドライバーを発表していない唯一のチームで、ペルマネ代表はレッドブル育成のツォルフが昇格候補だと述べた。ローソンかリンドブラッドのどちらかが外れるとの見方があり、ローソンが有力だという話も出ている。ローソンは3戦連続入賞で、本人は決定時期を知らないと話した。いずれも未確認の情報である。"
-  },
-  "mexico-fp1-rookies": {
-   "title": "メキシコGPのFP1、新人起用でラッセルとフェルスタッペンが欠場",
-   "summary": "メキシコGPのFP1では、ルールで義務づけられた新人起用のため、メルセデスはラッセルに代えてベスティ、レッドブルはフェルスタッペンに代えて岩佐歩夢を走らせる。ほかにマクラーレンはフォルナローリ、ウィリアムズはブラウニング、キャデラックはハータなどが起用される。主力ドライバーはFP2から走行する。"
-  },
-  "aston-redbull-engine-rumor": {
-   "title": "アストンマーチンにレッドブル製エンジンの噂、メキース代表は否定的",
-   "summary": "ホンダ製エンジンが苦戦するアストンマーチンが、レッドブル・パワートレインズの供給を受けるのではという噂が出ているが、未確認の話だ。ローラン・メキース代表は真剣な交渉はなく、他チームへの供給の準備はできていないと説明し、今後1年ほどは変わらないとした。アストンマーチン側もホンダとの関係継続を強調している。"
   },
   "audi-neuburg-fuhr-ceo": {
    "title": "アウディF1、ノイブルク新CEOに元メルセデスのフール氏",
@@ -68,9 +52,162 @@
   "ocon-hirakawa-mexico": {
    "title": "ハース、オコンを外し平川亮が代役　暴力報道は本人が否定",
    "summary": "ハースはメキシコGPの週末にオコンを外し、リザーブの平川亮を起用した。仏紙レキップが代表との身体的衝突の可能性を報じたが、オコンは話し合いがあったことは認めつつ暴力を断固否定した。ハースは来季の後任にラファエル・カマラを起用する予定で、詳しい経緯は明らかになっていない。"
+  },
+  "lawson-dsq-mexico": {
+   "title": "ローソンがメキシコGP予選で失格　MGU-Kの出力低下規定違反",
+   "summary": "レーシングブルズのローソンは、メキシコGP予選Q2の最終アタック直後にMGU-Kの出力が急に落ち、出力低下を毎秒一定以下に抑える技術規則に違反したとして失格となった。チームが自己申告し、利益はなかったと主張したが、スチュワードは技術違反は明確で常に遵守が必要だと退けた。決勝は最後尾からのスタートとなる。"
+  },
+  "piastri-q2-mexico": {
+   "title": "ピアストリ、メキシコ予選Q2敗退　マクラーレンは「グリップなし」",
+   "summary": "マクラーレンのピアストリはメキシコGP予選でQ2敗退の13番手に終わった。本人は理由もなくグリップがなかったと話し、ステラ代表はクールダウン中にタイヤが十分に冷えなかった点を挙げた。6番手のノリスも車が遅すぎると認めている。掲示板でもマクラーレンの不振が話題になった。"
   }
  },
  "articles": [
+  {
+   "id": "de-motorsportmagazin-lawson-mgu-k-rule",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "テクニカル",
+   "circuit": "mexico",
+   "teams": [
+    "racingbulls",
+    "mercedes"
+   ],
+   "topic": "lawson-dsq-mexico",
+   "title": "ローソン失格の背景にMGU-K出力の低下規定　メルセデス発の抜け道を巡る攻防",
+   "summary": "独モータースポーツ・マガジンは、メキシコGP予選でのローソン（レーシングブルズ）失格の技術的背景を解説した。2026年規定では最大350kWの電気出力が認められ、全開時の出力低下は毎秒100kW以下に抑える必要がある。チームはゴール直前に電池を使い切るため、ドライバーに早めにアクセルを戻させて規定を避けており、メルセデスがシルバーストンで見つけたとされる。ローソンは最後のQ2アタックで戻すのが遅れ、チームが自己申告したが、スチュワードは規則違反の車は認められないとして失格とした。",
+   "orig": "Disqualifikation nach Formel-1-Qualifying: Liam Lawson scheitert am Mercedes-Motortrick",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301019-disqualifikation-nach-formel-1-qualifying-liam-lawson-scheitert-am-mercedes-motortrick/",
+   "published": "2026-11-01T03:05:00+01:00"
+  },
+  {
+   "id": "en-crash-ocon-haas-row-details",
+   "kind": "rumor",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "うわさ",
+   "circuit": "mexico",
+   "teams": [
+    "haas"
+   ],
+   "topic": "ocon-hirakawa-mexico",
+   "title": "オコン外しの経緯めぐり新情報　エンジニアとの口論説、本人は暴力を否定",
+   "summary": "英クラッシュ・ネットは、ハースがオコンをメキシコGPの週末から外した経緯を巡る報道をまとめた。金曜FP2でレースエンジニアとタイヤ選択で意見が合わなかったことが発端とされ、仏紙レキップはコマツ代表との面談が突然終わったと報じたが、オコンは暴力を否定している。スカイスポーツのクラビッツ氏は、オコンはハースを離れる見通しでキャデラックのボッタスの席を望んでいると語ったが、キャデラックは候補ではないとしている。ハースは今回の欠場のみを確認し、F2首位のカマラが来週のブラジルで早期デビューする可能性も報じられた。いずれも未確認の情報である。",
+   "orig": "The end of Esteban Ocon's F1 career? Details emerge about big row at Haas",
+   "url": "https://www.crash.net/f1/news/1109068/1/end-esteban-ocons-f1-career-details-emerge-about-big-row-haas",
+   "published": "2026-11-01T06:00:00+00:00"
+  },
+  {
+   "id": "en-planetf1-bearman-ocon-stressful",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "haas"
+   ],
+   "topic": "ocon-hirakawa-mexico",
+   "title": "ベアマン、オコン欠場の状況は「根本的にストレス」　平川には助言",
+   "summary": "ハースのベアマンが、オコンのメキシコGP欠場を巡る状況について「根本的にストレスがかかる」と語ったと英プラネットF1が伝えた。何が起きているのか詳しくは把握していないことも認めている。一方でF1デビューとなる代役の平川亮を手助けし、1コーナーでは思い切って行くよう助言したという。平川は予選19番手で、ローソンの失格により決勝は18番手からスタートする。コマツ代表は理由を明かさず、スカイスポーツにオコンは病気ではないとだけ説明した。",
+   "orig": "Oliver Bearman admits Ocon situation is 'fundamentally stressful' after shock Haas decision",
+   "url": "https://www.planetf1.com/news/oliver-bearman-admits-haas-situation-fundamentally-stressful-after-ocon-shock",
+   "published": "2026-11-01T07:54:00+00:00"
+  },
+  {
+   "id": "en-crash-hadjar-warning-reality-show",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "hadjar-fan-paddock-shove",
+   "title": "ハジャー、来場者を押した件で戒告　「パドックはリアリティ番組ではない」",
+   "summary": "レッドブルのハジャーは、メキシコGPのFP1前に自撮りを求めた来場者を押したように見えた件で、スチュワードから行為規定違反として戒告を受けた。スチュワードは、相手が不快な形で近づいたうえ、混雑した場所で警備も不十分だったとして情状を認めた。ハジャーは理解を得られて嬉しいと述べ、仕事のあるパドックは「リアリティ番組ではない」と話した。パドックを動物園に例えたフェルスタッペンの見方にも同調している。ハジャーは予選7番手だった。",
+   "orig": "Isack Hadjar explains Mexico F1 paddock incident: 'Not a reality show'",
+   "url": "https://www.crash.net/f1/news/1109067/1/isack-hadjar-explains-mexico-gp-f1-paddock-incident-not-reality-show",
+   "published": "2026-11-01T06:00:00+00:00"
+  },
+  {
+   "id": "de-motorsportmagazin-mclaren-mexico-quali",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "予選",
+   "circuit": "mexico",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-q2-mexico",
+   "title": "マクラーレン、メキシコ予選で苦戦　ピアストリはQ2敗退、ノリスは「遅すぎる」",
+   "summary": "独モータースポーツ・マガジンは、メキシコGP予選でのマクラーレンの不振を伝えた。ピアストリはQ1で4番手だったがQ2で敗退し、13番手に終わった。ターン7でオーバーステアが出て1周目を中断し、ステラ代表はクールダウン中にタイヤが十分に冷えなかったことが原因とみている。ノリスは6番手で、最初の3コーナーで1周あたり約0.2秒失うとして車が遅すぎると語った。ステラ代表は責任を認めつつ、手持ちの装備は6位や13位より競争力があるとした。",
+   "orig": "McLaren-Krise im Formel-1-Qualifying: Piastri scheitert in Mexiko, Norris verliert Hoffnung",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301026-neuer-formel-1-tiefpunkt-fuer-mclaren-im-mexiko-qualifying-norris-verliert-hoffnung/",
+   "published": "2026-11-01T08:00:00+01:00"
+  },
+  {
+   "id": "ja-f1are-piastri-q2-mexico",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "circuit": "mexico",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-q2-mexico",
+   "title": "ピアストリのQ2敗退、ネット掲示板の話題　マクラーレンの不振に厳しい声",
+   "summary": "F1のアレが、メキシコGP予選でQ2敗退したマクラーレンのピアストリを巡るネット掲示板の話題をまとめた。F1公式の記事を元にした投稿で、本人はグリップが全くなかったと話し、原因が分からない様子だった。掲示板では今季ノリスに差をつけられているとの指摘や、トップチームとして恥ずかしい結果だという声が見られた。路面温度の低下や、2026年型の車はグリップを出しにくいという見方もある。いずれも掲示板上の意見であり、未確認の話である。",
+   "orig": "マクラーレンのピアストリ、F1メキシコシティGP予選Q2敗退「何が起こったのかよくわからない」「全くグリップがなかった」",
+   "url": "https://f1are.com/blog-entry-4037.html",
+   "published": "2026-11-01T14:00:00+09:00"
+  },
+  {
+   "id": "de-motorsporttotal-perez-300th-gp",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "perez-300th-gp",
+   "title": "ペレスが母国で通算300戦目　F1キャリアを彩った10の場面",
+   "summary": "独モータースポーツ・トータルは、母国メキシコGPでF1通算300戦目を迎えるペレス（キャデラック）の10の名場面を振り返った。2011年にザウバーでデビューし、2012年のマレーシアGPでは雨の中で2位に入り、メキシコ人として41年ぶりの表彰台に立った。2020年のサヒールGPでは初優勝を挙げ、これがレッドブル昇格につながった。2024年末にレッドブルを去り、今季はキャデラックで復帰して契約は2029年まで延びている。300戦に到達したのは歴史上6人だけだという。",
+   "orig": "300. Grand Prix für Sergio Perez: Die 10 wichtigsten Momente seiner F1-Karriere!",
+   "url": "https://www.motorsport-total.com/formel-1/news/300-grand-prix-fuer-sergio-perez-die-10-wichtigsten-momente-seiner-f1-karriere-26110110",
+   "published": "2026-11-01T08:00:00+01:00"
+  },
+  {
+   "id": "de-motorsportmagazin-hamilton-pole-tyre-prep",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "予選",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "mexico-qualifying-2026",
+   "title": "ハミルトン、1198日ぶりのポール　鍵はタイヤの準備ラップ",
+   "summary": "独モータースポーツ・マガジンは、メキシコGP予選でフェラーリ移籍後初のポールを獲得したハミルトンの背景を伝えた。2023年ハンガリーGP以来1198日ぶりのポールで、41歳での獲得は1982年のアンドレッティ以来の最年長となる。ハミルトンはFP2の半分をエンジン不調で失い、パワーユニットを交換していたが、最終アタックで中間セクターを約0.3秒縮めた。本人は準備ラップが完璧だったことが鍵だと語った。ラッセルとの差は0.009秒で、ルクレールは3番手だった。",
+   "orig": "Lewis Hamilton holt erste Ferrari-Pole in Mexiko: Perfekte Reifenvorbereitung als Schlüssel",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301018-erste-ferrari-pole-fuer-lewis-hamilton-so-gelang-der-formel-1-coup-im-mexiko-qualifying/",
+   "published": "2026-11-01T03:30:00+01:00"
+  },
   {
    "id": "de-motorsporttotal-ocon-violence-denial",
    "kind": "news",
@@ -1381,147 +1518,6 @@
    "orig": "Lewis Hamilton's Ferrari suspicion gets backing after United States GP",
    "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-suspicion-rivals-qualifying-pace",
    "published": "2026-10-28T07:35:00+00:00"
-  },
-  {
-   "id": "nl-racingnews365-mexico-fp1-rookies",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "チーム",
-   "circuit": "mexico",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "mclaren"
-   ],
-   "topic": "mexico-fp1-rookies",
-   "title": "メキシコGPのFP1、フェルスタッペンも欠場　岩佐歩夢がRB22を駆る",
-   "summary": "フェルスタッペンはメキシコGPのFP1を欠場し、岩佐歩夢がレッドブルRB22を走らせる。フェルスタッペンはピットウォールから見守り、FP2から走る予定だ。各ドライバーはシーズン中に2回FP1を新人に譲る義務があり、新人とはGP出走2回以下の選手を指す。ほかにメルセデスはベスティ、マクラーレンはフォルナローリ、ウィリアムズはブラウニング、キャデラックはハータが起用される。アルピーヌ、アウディ、アストンマーチンもそれぞれ新人を乗せると発表済みだ。",
-   "orig": "Verstappen staat Red Bull-zitje af tijdens F1 GP Mexico",
-   "url": "https://racingnews365.nl/enorme-stoelendans-aanstaande-voor-f1-gp-mexico",
-   "published": "2026-10-28T08:10:00+01:00"
-  },
-  {
-   "id": "nl-racingnews365-hadjar-verstappen-struggle",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "circuit": "austin",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-us-gp-frustration",
-   "title": "ハジャー、レッドブルでフェルスタッペンの陰に　ポッドキャストが指摘する苦戦の理由",
-   "summary": "アメリカGPでハジャーは発進で順位を落として6位、フェルスタッペンは3位だった。ポッドキャストの出演者は、ハジャーのチーム無線が非常に攻撃的だったと指摘した。ルイ・ディマースは、フェルスタッペンが勝利を重ねるほどハジャーの苦しさが増すと見る。過去にアルボン、ローソン、ガスリーもフェルスタッペン好みのセットアップに苦しんだという。一方、順位は開幕時の8〜9番手から4〜5番手に上がっており、状況は悪くないとの見方も出た。",
-   "orig": "Hadjar worstelt met Verstappen bij Red Bull: \"Begint te knagen\"",
-   "url": "https://racingnews365.nl/hadjar-worstelt-met-verstappen-bij-red-bull-begint-te-knagen",
-   "published": "2026-10-28T08:00:00+01:00"
-  },
-  {
-   "id": "en-planetf1-mekies-aston-engine-speculation",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "うわさ",
-   "teams": [
-    "astonmartin",
-    "redbull"
-   ],
-   "topic": "aston-redbull-engine-rumor",
-   "title": "アストンマーチンにレッドブル製エンジンの噂　メキース代表「他チーム供給の準備はできていない」",
-   "summary": "今夏、オーナーのローレンス・ストロールがホンダ以外の選択肢を探ったと報じられ、レッドブル・パワートレインズ供給の噂が出ている。同社は今季、FIAのADUO評価で5メーカー中最良の内燃機関と位置づけられた。ローラン・メキース代表は他チームへの供給について「真剣な話はしていない。準備ができているとは思わない」と述べ、今後1年ほどは変わらないとした。アストンマーチンのマイク・クラックは噂を否定せず、ホンダとは初勝利まで一緒にいたいと語った。変更があっても最短で2028年シーズンとされる。",
-   "orig": "Laurent Mekies addresses Aston Martin speculation over a potential Red Bull engine deal",
-   "url": "https://www.planetf1.com/news/aston-martin-red-bull-engines-laurent-mekies-supply-speculation",
-   "published": "2026-10-28T06:08:00+00:00"
-  },
-  {
-   "id": "fan-f1are-bearman-haas-2027",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "teams": [
-    "haas"
-   ],
-   "topic": "bearman-haas-2027",
-   "title": "ベアマンのハース残留交渉、「僕では解決できない契約上の問題」　年俸要求の話も話題に",
-   "summary": "ハースのベアマンが2027年の契約について、残っている問題は自分ではどうにもできない契約上のことだと語ったという話題。F1のアレは、F1-Gateが日本のモータースポーツ分析家の見立てとして伝えた、約600万ユーロを求めてハースが応じず交渉が止まっているとの話を引用している。ベアマンは、管理会社とフェラーリに任せていると述べた。金額や交渉の状況はハースにもベアマン側にも確認されていない。掲示板では、交渉の駆け引きだとみる声やフェラーリ移籍を巡る見方が多かった。",
-   "orig": "TGRハースF1ベアマン、2027年の契約について「残っている問題は僕自身ではどうにもできないこと」",
-   "url": "https://f1are.com/blog-entry-4026.html",
-   "published": "2026-10-28T12:00:00+09:00"
-  },
-  {
-   "id": "ja-f1are-sprint-no-fans",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "topic": "sprint-format-fan-view",
-   "title": "「スプリントを歓迎するチームやドライバーは0人では」という話題　5ちゃんねるのまとめ",
-   "summary": "2ちゃんねる系掲示板の書き込みをまとめた記事で、スプリントを歓迎するチームやドライバーはいないのではという話題を扱っている。フェルスタッペンが「スプリントでは感情が高ぶることはない」と語ったとされる点に賛同する声が多かった。スプリントは8ポイント、決勝は25ポイントで、優勝の価値は決勝より低いという意見が目立つ。決勝の展開が先に分かってしまうかどうか、スプリント後に設定変更できる規則についても意見が分かれた。全体として形式への懐疑的な声が中心だった。",
-   "orig": "スプリント歓迎してるF1チーム／ドライバー0人説",
-   "url": "https://f1are.com/blog-entry-4025.html",
-   "published": "2026-10-28T12:00:00+09:00"
-  },
-  {
-   "id": "es-excelsior-herta-superlicence-bottas",
-   "kind": "rumor",
-   "lang": "es",
-   "region": "メキシコ",
-   "source": "Excélsior",
-   "cat": "うわさ",
-   "circuit": "mexico",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "キャデラック、ハータのスーパーライセンスのためボッタスの車でFP1　来季の席をめぐる観測　メキシコ紙",
-   "summary": "メキシコ紙エクセルシオールは、ハータがボッタスのキャデラックでメキシコGPのFP1を走る狙いはスーパーライセンスのポイント獲得だと伝えた。同紙によると、ブトコウスキー代表はハータに必要なのはあと1ポイントで、レースシートの候補になり得ると述べた。同紙は、ペレスの隣の席にチームがハータを望んでいるように見えると書いた。ボッタスの去就について代表は否定せず、同紙は成績でペレスに先行されていることからチームが状況を見直していると伝え、ボッタス本人は契約条件は把握していると語った。報道の多くは匿名の情報に基づき、チームの正式発表ではない。",
-   "orig": "Tensión en Cadillac: Colton Herta busca la superlicencia en el coche de Bottas",
-   "url": "https://www.excelsior.com.mx/deportes/tension-cadillac-colton-herta-busca-superlicencia-coche-bottas",
-   "published": "2026-10-27T16:56:00-06:00"
-  },
-  {
-   "id": "en-planetf1-permane-lawson-2027-decision",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "うわさ",
-   "circuit": "austin",
-   "teams": [
-    "racingbulls"
-   ],
-   "topic": "lawson-2027-seat",
-   "title": "ローソン9位に「完璧な週末」とペルマネ代表　レーシングブルズの2027年布陣は未定",
-   "summary": "レーシングブルズのペルマネ代表は、アメリカGPで9位に入ったローソンを「完璧な週末」と評価した。ローソンは3戦連続の入賞で、ガスリーとのランキング差を35点に広げている。同チームは2027年のドライバーをまだ発表していない唯一のチームで、ペルマネ代表はレッドブル育成のツォルフが「次の候補」だと述べた。このため、ローソンかリンドブラッドのどちらかが外れるとの見方が出ており、その場合はローソンが有力だという話もある。ローソン本人は決定の期限を聞かれ「全然知らない」と答えた。いずれも確定した情報ではない。",
-   "orig": "Liam Lawson earns 'perfect' verdict as Racing Bulls F1 2027 decision looms",
-   "url": "https://www.planetf1.com/news/liam-lawson-perfect-racing-bulls-f1-2027-seat",
-   "published": "2026-10-27T18:30:00+00:00"
-  },
-  {
-   "id": "es-motorsport-aston-martin-mountain",
-   "kind": "news",
-   "lang": "es",
-   "region": "スペイン",
-   "source": "Motorsport.com（スペイン語版）",
-   "cat": "チーム",
-   "circuit": "austin",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "aston-martin-pointless-2026",
-   "title": "アストンマーチン、今季無得点「登るべき山は大きい」　クラック代表がアメリカGPを総括",
-   "summary": "アストンマーチンはアメリカGPで15位と16位に終わり、今季はここまで無得点のままだ。クラック代表は「登るべき大きな山がある」と述べた。アロンソは1周目のアルボンとの接触で右側のフロアとフロントウイングを傷め、代表はこれを「1周目に勝とうとした野心的すぎる動き」と評した。ストロールは予選後の変更でピットレーンスタートとなり、車はオースティンの大きな縁石に耐える頑丈さがなかったという。低速域やタイヤ摩耗は良いとしつつ、今回の内容は「十分には程遠い」と話した。",
-   "orig": "Aston Martin ve una \"montaña por escalar\" para volver a puntuar este año",
-   "url": "https://es.motorsport.com/f1/news/aston-martin-dificultad-puntuar-actualidad/10868925/",
-   "published": "2026-10-27T18:32:00+01:00"
   }
  ]
 }

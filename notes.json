@@ -1,17 +1,32 @@
 {
- "updatedAt": "2026-11-01T12:40:00+09:00",
+ "updatedAt": "2026-11-01T18:30:00+09:00",
  "notes": [
   {
-   "id": "note-formula1report-mexico-quali-2026",
+   "id": "substack-gpexplained-mexico-altitude",
+   "platform": "substack",
+   "site": "GP Explained",
+   "lang": "en",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "GP Explained",
+   "title": "メキシコシティの高地がF1のパワーユニットに厳しい理由",
+   "orig": "Why Mexico City’s Altitude Is So Tough on an F1 Power Unit",
+   "summary": "標高約2,250mの高地では空気が薄く、ターボが圧縮で補うために回転を上げる必要があり、2026年規定では最大15万rpmに達するという。冷却効率も約2割落ち、電気系の発熱が大きい今年の車では冷却開口部と空気抵抗のバランスが一段と難しくなる、という解説。",
+   "url": "https://gpexplained.substack.com/p/why-mexico-citys-altitude-is-so-tough",
+   "published": "2026-11-01T17:02:30+09:00",
+   "circuit": "mexico"
+  },
+  {
+   "id": "note-formula1report-mexico-quali-analysis-2026",
    "platform": "note",
    "site": "Formula1 Report",
    "lang": "ja",
    "paid": false,
    "cat": "予選",
    "author": "Yoshito",
-   "title": "【予選】ハミルトン、フェラーリ移籍後初のポールポジション獲得。フェルスタッペンは最終アタックで痛恨のミス、代役参戦の平川亮は19番手【メキシコGP】",
+   "title": "【予選分析】ハミルトンPP獲得の要因、フェラーリとメルセデスで異なるアプローチ。決勝はスタートとタイヤ戦略が鍵に【メキシコGP】",
    "summary": "メキシコGP予選をQ1からQ3まで詳述し、フェラーリは金曜から速さがありタイヤの準備も機能したためハミルトンのポールにつながったと分析。メルセデスは準備に苦しみ、フェルスタッペンは最終ラップがポール圏内だったがミスで終わったという見立て。ローソンの失格などスチュワードの判断も整理している。",
-   "url": "https://note.com/formula1report/n/n7dfd34b7ccbe",
+   "url": "https://note.com/formula1report/n/n82bbed3dd474",
    "published": "2026-11-01T07:27:58+09:00",
    "teams": [
     "ferrari",
@@ -773,24 +788,6 @@
    "summary": "FIAがセパンのフォーメーションラップで起きた出力低下を検証した結果をまとめた記事。250kW制限区間で低回転の車が想定以上に失速し回復できなかったと整理し、米国GPで新ソフトを入れる流れを追う。FIAの「未テストではない」という反論も紹介している。",
    "url": "https://note.com/formula1report/n/neb09a17d8aab",
    "published": "2026-10-08T16:58:51+09:00"
-  },
-  {
-   "id": "substack-gpexplained-week41",
-   "platform": "substack",
-   "site": "GP Explained",
-   "lang": "en",
-   "paid": false,
-   "cat": "分析",
-   "author": "GP Explained",
-   "title": "第41週｜ラッセルのペナルティ問題とシンガポールへ向かうF1",
-   "orig": "Week 41 | Russell's Penalty Problem & F1 Heads to Singapore",
-   "summary": "マレーシアの開始前の混乱とソフトウェア不具合、ラッセルのエンジントラブルでの無得点、コストキャップを巡るウィリアムズの提案を週刊で整理した記事。メルセデスはシンガポールで交換に伴う降格を抱えるとの見立てを示す。あわせて、練習1回のスプリント週末でソフトタイヤが有効になりうる点も展望している。",
-   "url": "https://gpexplained.substack.com/p/week-41-russells-penalty-problem",
-   "published": "2026-10-08T12:00:00+09:00",
-   "teams": [
-    "mercedes"
-   ],
-   "circuit": "singapore"
   }
  ]
 }
