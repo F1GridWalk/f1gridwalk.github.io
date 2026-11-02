@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T00:45:00+09:00",
+ "updatedAt": "2026-11-03T06:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -60,9 +60,86 @@
   "russell-fine-mexico": {
    "title": "メキシコGP後のラッセルとメルセデス　罰金と公式投稿をめぐる反応",
    "summary": "メキシコGPで6位に終わったラッセルはアントネッリのタイトル確定後にメディア対応を欠席し、メルセデスは5000ユーロの罰金を科された。ウォルフ代表は「失望させた」と謝罪し、チームはラッセルが落胆していたと説明した。公式アカウントが涙をこらえるラッセルの映像を投稿したことには、ファンの間で賛否が出た。"
+  },
+  "aston-martin-mexico-double-dnf": {
+   "title": "アストンマーティン、メキシコGPで2台とも早々にリタイア　ホンダのERS冷却が原因",
+   "summary": "アストンマーティンのアロンソとストロールは、メキシコGPの序盤に相次いでリタイアした。ブラジルと独の両メディアは標高の高さが響いたと伝え、独誌はホンダの技術責任者がERS冷却回路の不調を認めたと報じた。予選でも同じ問題でアロンソが早々に止まり、2台とも後方からのスタートだった。"
   }
  },
  "articles": [
+  {
+   "id": "de-motorsportmagazin-honda-ers-cooling-mexico",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "決勝",
+   "circuit": "mexico",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "aston-martin-mexico-double-dnf",
+   "title": "ホンダのERS冷却が高地で破綻　アストンマーティン、メキシコで2台とも5周前後で止まる",
+   "summary": "独モータースポーツ・マガジンによると、アストンマーティンとホンダはメキシコGPで大きく崩れ、アロンソとストロールの予選・決勝の合計周回は24周にとどまった。ホンダの折原伸太郎氏は、標高約2000mでERSの冷却回路が正常に働かなかったと認め、特定条件で負荷が高すぎたと説明した。予選で最も攻めたエンジンモードに切り替えた途端に冷却が破綻し、水ポンプやMGU-K、パワーユニットの交換も効果がなかったという。決勝でアロンソは5周目に止まり、「パワーがない」とホンダが高地を過小評価したと批判した。チーム代表のクラックは、過去に好調だったブラジルへ前向きに向かうと述べた。",
+   "orig": "Honda-Motor hält in Mexiko nur 5 Runden: Neuer Formel-1-Tiefpunkt für Aston Martin",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301055-honda-motor-haelt-in-mexiko-nur-5-runden-neuer-formel-1-tiefpunkt-fuer-aston-martin/",
+   "published": "2026-11-02T19:15:00+01:00"
+  },
+  {
+   "id": "de-motorsportmagazin-antonelli-number-12",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "最年少王者アントネッリ、来季も「12番」　ゼッケン1は縁起が悪いと明かす",
+   "summary": "独モータースポーツ・マガジンは、メキシコGPで3位に入り史上最年少のF1王者となったアントネッリが、来季もゼッケン12を使うと伝えた。本人はチャンピオンのゼッケン1について「自分にはいい番号ではなかった」と述べ、ゲン担ぎを理由に挙げた。12はラウダやセナも使い、複数回タイトルを獲った番号でもあるという。レースは約40分の中断があり、再開1周後にルクレールを抜いて表彰台を確保し、ウイニングラップでは涙で約2秒を失ったと明かした。表彰台ではフェルスタッペンとハミルトンに担ぎ上げられ、祖父が好んだ「誰も寝てはならぬ」が流れた。",
+   "orig": "Tränen, Rekorde und ein Aberglaube: Warum Formel-1-Champion Kimi Antonelli die Nummer 1 nicht will",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301050-traenen-rekorde-und-ein-aberglaube-warum-formel-1-champion-kimi-antonelli-die-nummer-1-ablehnt/",
+   "published": "2026-11-02T14:05:00+01:00"
+  },
+  {
+   "id": "en-planetf1-newey-inspects-ferrari-mexico",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "astonmartin",
+    "ferrari"
+   ],
+   "topic": "newey-ferrari-sf26-mexico",
+   "title": "ニューウェイ代表、メキシコのグリッドでフェラーリSF-26を入念に観察",
+   "summary": "PlanetF1によると、アストンマーティンのチーム代表エイドリアン・ニューウェイが、メキシコGP前のグリッドでルクレールのフェラーリSF-26を細かく見て回った。ライバル車を観察するのは同氏の恒例で、今季はオーストラリアでハミルトン車、シルバーストンでルクレール車、ハンガリーでもハミルトン車を見ている。SF-26はバルセロナと英国GPで勝っている。アストンマーティンはこの週末もアロンソとストロールが早々に止まり、今季5度目のダブルリタイアで、チームは19戦を終えて7点のコンストラクターズ10位にとどまる。ニューウェイは今季の車の開発が大きく妨げられたと語り、2027年に向けてフロア前部を重要部分とみている。",
+   "orig": "Adrian Newey holds new Ferrari SF-26 inspection at Mexican Grand Prix",
+   "url": "https://www.planetf1.com/news/adrian-newey-ferrari-mexican-grand-prix-2026-investigation",
+   "published": "2026-11-02T11:25:00+00:00"
+  },
+  {
+   "id": "en-planetf1-bottas-suspension-failure-mexico",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "決勝",
+   "circuit": "mexico",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "bottas-suspension-failure-mexico",
+   "title": "ボッタスのメキシコGP大クラッシュ、キャデラックが原因を調査　左フロントサスが壊れる",
+   "summary": "PlanetF1によると、キャデラックのボッタスはメキシコGPの46周目、1コーナーへの高速進入で左フロントのサスペンションが壊れてクラッシュし、レースを終えた。医療センターで念のための検査を受け、その後に退出した。報じられた未放送の無線ではボッタスが繰り返し悪態をつき、担当エンジニアが体調を確認していたという。チーム代表のブドコフスキーは原因を徹底調査し再発を防ぐと述べた。チームメートのペレスもカナダで同様のサス破損を経験しており、キャデラックは初年度の今季ここまで無得点で、コンストラクターズ11位にとどまる。",
+   "orig": "Untelevised Valtteri Bottas team radio as Cadillac launches investigation over Mexican GP crash",
+   "url": "https://www.planetf1.com/news/valtteri-bottas-mexican-grand-prix-2026-team-radio",
+   "published": "2026-11-02T13:08:00+00:00"
+  },
   {
    "id": "ja-voice-mexico-gp-race",
    "kind": "voice",
@@ -1492,80 +1569,6 @@
    "orig": "ウィリアムズのアルボンは車がダメなのかサインツに手も足も出ないのかどっちなんだろ",
    "url": "https://f1are.com/blog-entry-4030.html",
    "published": "2026-10-30T10:00:00+09:00"
-  },
-  {
-   "id": "de-motorsportmagazin-bearman-haas-vertrag",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "bearman-haas-2027",
-   "title": "ベアマンのハース契約、なぜまだ発表されないのか　交渉が停滞と独誌",
-   "summary": "独モータースポーツ・マガジンは、ベアマンが2027年もハースに残ることは確実視されるが、正式発表がないと伝えた。コマツ代表はシンガポール後に継続の方針を示したが、それから2週間以上が過ぎた。同誌は未確認の噂として、ベアマン側が年俸600万ドル前後を求めているとも報じている。ハースは同じフェラーリ育成のカマラを2人目に決めており、ベアマンは入社時の2025年に2年契約と2027年のオプションを得ていたとされ、2025年の契約に付いたフェラーリの意向も絡むため、時期は読みにくい。",
-   "orig": "Warum hat Oliver Bearman noch keinen neuen Formel-1-Vertrag? Verhandlungen stocken",
-   "url": "https://www.motorsport-magazin.com/formel1/news-300971-warum-hat-oliver-bearman-noch-keinen-neuen-formel-1-vertrag-verhandlungen-stocken/",
-   "published": "2026-10-30T08:22:00+09:00"
-  },
-  {
-   "id": "en-planetf1-perez-herta-bottas-cadillac",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "うわさ",
-   "circuit": "mexico",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "ペレス、ハータを評価　キャデラックの2027年シートを巡る観測続く",
-   "summary": "PlanetF1は、キャデラックのペレスが同僚候補のハータについて「良い仕事をしている」と語ったと報じた。ハータは貴重なフィードバックをもたらし、車とシミュレーターでの走行が増えて速さも見せ始めているという。ペレスは複数年契約を結んだが、ボッタスの2027年の席は確定していないとされ、チームは現状ではボッタスを残したい意向だとの関係者の話も伝えられた。GMはハータの昇格を望んでいるとされる。ペレスは決めるのは自分でなくブドコフスキー代表だと述べた。いずれもチームの発表ではなく、未確認の話である。",
-   "orig": "Perez casts Colton Herta verdict as Bottas Cadillac F1 rumours swirl",
-   "url": "https://www.planetf1.com/news/sergio-perez-colton-herta-cadillac-f1-2027",
-   "published": "2026-10-29T23:03:00+00:00"
-  },
-  {
-   "id": "en-racefans-perez-herta-bottas-not-easy",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RaceFans",
-   "cat": "チーム",
-   "circuit": "mexico",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "キャデラックの2027年、ボッタスかハータか「簡単な決断ではない」とペレス",
-   "summary": "レースファンズによると、ペレスはキャデラックが来季のチームメートにボッタスとハータのどちらを選ぶかについて「簡単な決断ではない」と語った。最終判断はブトコウスキー代表がデータを見て下すもので、自分は関わらないという。ペレスはボッタスとの関係は良好で、オースティンでは強いペースを見せ、不運なレースも多かったと述べた。ハータはテストドライバーとして「良いフィードバックをくれる」と評価し、今週末にFP1で5回目の走行をする予定だ。今季はペレスが予選でボッタスを10対8で上回り、両者とも無得点だという。",
-   "orig": "Herta or Bottas for 2027 seat is “not an easy decision” for Cadillac, says Perez",
-   "url": "https://www.racefans.net/2026/10/29/herta-or-bottas-for-2027-seat-is-not-an-easy-decision-for-cadillac-says-perez/",
-   "published": "2026-10-29T22:05:00+00:00"
-  },
-  {
-   "id": "de-motorsportmagazin-antonelli-illness-mexico",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes",
-    "cadillac"
-   ],
-   "topic": "antonelli-illness-mexico",
-   "title": "アントネッリ、メキシコ木曜の取材を体調不良で欠席　金曜走行には復帰見込み",
-   "summary": "メルセデスはキミ・アントネッリが木曜のメディア行事を欠席すると発表した。ウイルス性の疾患から回復中で、FIAも予防措置として免除を認め、同日はボッタスも欠席した。チームは金曜のフリー走行までに回復すると見ており、FIA代表の確認が条件になる。アントネッリは365点でラッセルに123点差をつけ、あと2点でタイトルが決まる。予選に出れば決勝は走れるが、出走できなければ第3ドライバーのヴェスティが代役となり、決着はブラジルに持ち越される。",
-   "orig": "Kimi Antonelli vor WM-Entscheidung krank! Droht Formel-1-Ausfall in Mexiko?",
-   "url": "https://www.motorsport-magazin.com/formel1/news-300960-kimi-antonelli-krank-droht-ausfall-beim-formel-1-gp-in-mexiko/",
-   "published": "2026-10-29T21:00:00+01:00"
   }
  ]
 }
