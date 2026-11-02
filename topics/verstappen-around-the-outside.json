@@ -1,0 +1,370 @@
+{
+ "slug": "verstappen-around-the-outside",
+ "gp": "メキシコシティGP",
+ "title": "外側から、王者は抜けない",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "20歳の史上最年少チャンピオンが決まった日に、4度の王者が勝った。ミディアムで出て1周目に2番手、ルクレールの5秒ペナルティで首位、赤旗後の1コーナーでハミルトンと並んで前に残り、0.799秒差。「世界チャンピオンを外側から抜くことはできない、って彼が言ってたよね」。お祝いには加わらず、ブラジルへ。",
+ "checked": "2026-11-02",
+ "checkedNote": "PlanetF1、GPblog（英語・オランダ語）、Formula1.com、RacingNews365、Yahoo Sports（motorsport.com 配信）、Crash.net、FIA、ESPN の原文を11月2日に確認しました。本人の言葉は英語とオランダ語から編集部が訳しました。フェルスタッペンの連覇は2021〜24年の4回で、2025年はノリスが王者（本文に明記）。メキシコの無線はランビアーゼで、ハートはオースティンだけでした。",
+ "draft": true,
+ "common": [
+  "フェルスタッペンは5番グリッド（予選4番手、金曜のローソンとの接触で1つ降格）からミディアムで出て、1周目の4コーナーでフェラーリ2台がコース外に出た隙にハミルトンを抜いて2番手。ルクレールの5秒ペナルティ消化のピットで首位。赤旗後の再スタートの1コーナーでハミルトンと並んで前に残り、0.799秒差で優勝。",
+  "メキシコで6勝目、直近4戦で3勝、通算74勝目。ランキング2位261点、アントネッリに119点差。",
+  "王座は2021〜24年の4連覇。2025年はアブダビで勝ちながらノリスに2点差で2位。2026年はメキシコの前に争いから外れていた。",
+  "無線はランビアーゼ（オースティンはハート。年末まで交互）。",
+  "アントネッリについて「とても誇りに思う」「2年目で特別」。お祝いには加わらずブラジルへ。"
+ ],
+ "outlets": [
+  {
+   "id": "en-skysports-antonelli-champion-mexico",
+   "angle": "レース全体",
+   "adds": [
+    "フェルスタッペン優勝、アントネッリ戴冠。"
+   ]
+  },
+  {
+   "id": "en-therace-ferrari-mess-verstappen-mexico",
+   "angle": "フェラーリの混乱",
+   "adds": [
+    "1周目のハミルトンとルクレールの争いがフェルスタッペンを利した。"
+   ]
+  },
+  {
+   "id": "de-f1insider-verstappen-radio-sign-language",
+   "angle": "オースティンの無線",
+   "adds": [
+    "「手話に切り替えた方が安い」。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "無線「新しいペナルティは全部10秒だと思ってた」",
+   "w": "PlanetF1（11月1日、英語）を編集部が訳した。ランビアーゼの言葉は GPblog（オランダ語）から。"
+  },
+  {
+   "t": "「最初のスタートでレースは決まった」「汗をかいていた」「誇りに思う」",
+   "w": "表彰台のインタビュー（Yahoo Sports、RacingNews365、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「カジノ」「フェラーリのほうが強かった」「外側から王者は抜けない」「お祝いには加わらない」「エンジンと話し合い」",
+   "w": "Viaplay への言葉（GPblog の英語とオランダ語）を編集部が訳した。"
+  },
+  {
+   "t": "「100パーセントには手をつけていない」",
+   "w": "Bild の取材（RacingNews365、10月30日）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "通算勝利数",
+   "t": "RacingNews365 と FIA の数字では74勝。Wikipedia は73。本文は74。"
+  },
+  {
+   "k": "ピットの周回",
+   "t": "ルクレールのピットは27周目の終わり（28周目とする報道も）。"
+  }
+ ],
+ "unknownsFillable": [
+  "残り4戦の結果とランキング2位の行方（ハミルトンと2点差）。",
+  "エンジンブレーキの問題の修正。"
+ ],
+ "unknownsLimits": [
+  "チェッカー後の無線の内容。",
+  "「自分も若い頃」のような直接の言葉（確認できない）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "この優勝は、何でできているか？",
+  "rows": [
+   {
+    "k": "1周目",
+    "t": "本人の言葉で「最初のスタートで決まった」。ミディアムで出て、フェラーリ同士の争いの隙に2番手。"
+   },
+   {
+    "k": "運と裁定",
+    "t": "「フェラーリのほうが強かった」「カジノに行ったほうがいい」。5秒のペナルティに自分でも首をかしげた。"
+   },
+   {
+    "k": "守り",
+    "t": "再スタートの1コーナーと、残り9周。「外側から王者は抜けない」はハミルトンの言葉を返したもの。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "タイムペナルティの5秒と10秒は、どう決まる？",
+   "rules": [
+    "time-penalty",
+    "penalty-guidelines",
+    "lasting-advantage"
+   ],
+   "links": [
+    "/deep/who-decides-penalties/"
+   ]
+  },
+  {
+   "q": "赤旗のあとの再スタートは？",
+   "rules": [
+    "red-flag",
+    "standing-start"
+   ],
+   "links": []
+  },
+  {
+   "q": "レースエンジニアが交代すると何が変わる？",
+   "rules": [
+    "race-engineer",
+    "team-radio"
+   ],
+   "links": [
+    "/topics/verstappen-lambiase-singapore-radio/",
+    "/topics/bono-leave-that-to-me/"
+   ]
+  },
+  {
+   "q": "アントネッリの戴冠は？",
+   "rules": [
+    "youngest-records"
+   ],
+   "links": [
+    "/topics/antonelli-champion-of-the-world/"
+   ]
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-11-02T07:00:00+09:00",
+   "t": "メキシコシティGP決勝で優勝"
+  }
+ ],
+ "answer": "フェルスタッペンは11月1日のメキシコシティGPを5番グリッドからミディアムで出て、1周目にフェラーリ2台がコース外に出た隙にハミルトンを抜き、ルクレールの5秒ペナルティ消化で首位、赤旗後の再スタートでハミルトンと並んで前に残り0.799秒差で優勝（メキシコ6勝目、直近4戦で3勝、通算74勝目）。同じレースで3位のアントネッリが20歳68日で史上最年少王者に。フェルスタッペン（2021〜24年4連覇、2025年は2点差で2位）は「とても誇りに思う」「お祝いには加わらずブラジルへ」。ランキング2位、119点差。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "20歳の史上最年少チャンピオンが決まった日に、4度の王者が勝った。「世界チャンピオンを外側から抜くことはできない、って彼が言ってたよね」。",
+  "body": [
+   [
+    "h",
+    "「新しいペナルティは、全部10秒だと思ってた」"
+   ],
+   [
+    "p",
+    "11月1日、メキシコシティ。レースの中盤、無線が入った。レースエンジニアのランビアーゼだった。「ルクレールに5秒のペナルティだ。ハミルトンはもう、彼の5秒後ろにいる」。"
+   ],
+   [
+    "p",
+    "フェルスタッペンは笑った。「ハ！ 新しいペナルティは、全部10秒だと思ってたよ」。"
+   ],
+   [
+    "p",
+    "2週間前のオースティンでは、長年の相棒ランビアーゼの後任になるトム・ハートが、初めて無線に出た。その無線は雑音で聞き取れず、本人は「手話で話したほうが安上がりかもしれない」と言った。メキシコではランビアーゼが無線に戻った。チームは年末まで、2人を交互に使うという。"
+   ],
+   [
+    "h",
+    "1周目で、レースは決まった"
+   ],
+   [
+    "p",
+    "グリッドは5番手。予選4番手だったが、金曜日のローソンとの接触で1つ下げられた。前の4台がソフトで出る中、フェルスタッペンだけミディアムだった。"
+   ],
+   [
+    "p",
+    "1周目。先頭のフェラーリ2台が4コーナーで並び、2台ともコース外に出た。ルクレールは芝を越えて近道をした形で首位に立ち、あとで5秒のペナルティを受ける。コース外で得た順位は、普通なら10秒だ。立ち上がりで姿勢を乱したハミルトンを、フェルスタッペンが抜いた。2番手。"
+   ],
+   [
+    "p",
+    "「今日はとにかく慌ただしかった。最初のスタートで、もうレースは決まった。とてもいい1周目だった、と言っておこう」。2週間前、オースティンでは「何もうまくいかなかった」と言った人が、この日は「実は、いいスタートが2回できた。普段なら、何かしら、必ずうまくいかないんだけど」。"
+   ],
+   [
+    "h",
+    "カジノに行ったほうがいい"
+   ],
+   [
+    "p",
+    "ルクレールは5秒のペナルティを抱えたまま、5秒少しのリードを作った。27周目の終わりにピットに入り、5秒止まってからタイヤを替えた。フェラーリの作業はそれ自体も遅かった。その直後、フェルスタッペンがピットに入り、ルクレールの前で戻った。まだピットに入っていないアントネッリが首位にいたが、実質の先頭はここで入れ替わった。"
+   ],
+   [
+    "p",
+    "本人は、運だと言った。「今日はフェラーリのほうが強かった。100パーセント、明らかだった」。「僕らに起きている運を考えたら、いまからカジノに行ったほうがいいね。ははは」。黒に賭けるかと聞かれて（レッドブルの色は赤ではないのかという冗談だ）、「そんなことできる？ 新しい色を選ぶよ」。"
+   ],
+   [
+    "p",
+    "ペナルティについては、こう言った。「普通なら10秒のはずのペナルティが、急に5秒になった。僕にも、とても奇妙に見える」。「結局、違いはなかった。ただ、そのために必死で戦わないといけなかったけど」。"
+   ],
+   [
+    "h",
+    "外側から、王者は抜けない"
+   ],
+   [
+    "p",
+    "44周目を過ぎて、ボッタスが1コーナー手前でバリアに突っ込み、赤旗。残り25周を、グリッドからやり直す。先頭はフェルスタッペン、2番手ルクレール、3番手ハミルトン。"
+   ],
+   [
+    "p",
+    "再スタートで、ハミルトンがルクレールを抜き、1コーナーでフェルスタッペンと並んだ。ホイールが触れた。フェルスタッペンが、前に残った。「かなり気をつけないといけなかった」。"
+   ],
+   [
+    "p",
+    "レースのあと、フェルスタッペンはこう言った。「彼が数週間前に自分で言ってたよね。世界チャンピオンを外側から抜くことはできない、って。だから、そうはならなかった」。"
+   ],
+   [
+    "p",
+    "59周目、リンドブラッドとピアストリの接触でまたセーフティカー。1秒あったリードは消え、残り9周。「きつかった。最後はルイスを後ろに抑えるために、汗をかいていた」。0.799秒差で、優勝。メキシコで6勝目。直近4戦で3勝目。通算74勝目。"
+   ],
+   [
+    "h",
+    "2年続けて、ほかの人の戴冠を見る"
+   ],
+   [
+    "p",
+    "3位でゴールしたアントネッリが、20歳と68日で、史上最年少のチャンピオンになった。"
+   ],
+   [
+    "p",
+    "フェルスタッペンは、2021年から4年続けてチャンピオンだった。2025年は、最終戦のアブダビで勝ちながら、2点差でノリスにタイトルを譲った。2026年は、メキシコの前にもう、数字の上で争いから外れていた。この日の優勝で、ランキングは2位。アントネッリとの差は119点。"
+   ],
+   [
+    "p",
+    "表彰台で、ハミルトンと2人でアントネッリを肩に担いだ。「信じられない。なんというシーズンだ。この年齢でこれをやるなんて、本当に、本当にすごい」。「彼にとってとても感情的な日だと思う。僕は彼をとても誇りに思う」。「2年目のシーズンでチャンピオンになれるのは、とても特別なことだ」。"
+   ],
+   [
+    "p",
+    "お祝いには、行かない。「僕はブラジルに向かうから、お祝いには加わらない。彼のまわりには、パーティーをやる人が十分いると思う」。"
+   ],
+   [
+    "p",
+    "その数日前、ドイツの新聞にこう話していた。「彼はまだ、自分の100パーセントには手をつけていない。タイトルを取れば、もっと良くなる」。「人生の目標を達成すると、レースの週末にもっと落ち着いて向かえるようになる」。フェルスタッペンの初めてのタイトルは、2021年のアブダビ、24歳と73日のときだ。"
+   ],
+   [
+    "h",
+    "エンジンと、話し合う"
+   ],
+   [
+    "p",
+    "表彰台の裏の部屋で、ハミルトンが言った。「君たちは、ストレートでパワーがありすぎる」。フェルスタッペンが返した。「君のコーナリングが相手なら、必要だったよ、ははは」。そして、緑の紙吹雪まみれのアントネッリに、濡らしたタオルを手渡した。"
+   ],
+   [
+    "p",
+    "勝っても、課題は言う。「レースでは、バランスの問題が少し多すぎたかもしれない。調べないといけない」。オースティンから続くエンジンブレーキの問題には、こう言った。「正直、エンジンが自分で何をするか決めている」。「レースの前に、エンジンと話し合いをしたほうがいいかもしれない。もう少し行儀よくしてもらわないと」。"
+   ],
+   [
+    "p",
+    "「来季に向けて、学び続けたいだけだ」。24歳と73日で初めての王者になった人が、20歳と68日の王者にタオルを渡して、ブラジルへ向かった。残りは4戦。争うものは、もうない。それでも、直近4戦で3勝している。"
+   ]
+  ],
+  "terms": [
+   [
+    "レースエンジニア",
+    "race-engineer"
+   ],
+   [
+    "赤旗",
+    "red-flag"
+   ],
+   [
+    "セーフティカー",
+    "safety-car"
+   ],
+   [
+    "エンジンブレーキ",
+    "engine-braking"
+   ],
+   [
+    "タイムペナルティ",
+    "time-penalty"
+   ],
+   [
+    "DRS",
+    "drs"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "PlanetF1",
+    "title": "Mexican Grand Prix 2026 race report",
+    "url": "https://www.planetf1.com/news/mexican-grand-prix-2026-race-report",
+    "note": "2026年11月1日。無線「新しいペナルティは全部10秒だと思ってた」、ミディアムスタート（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog（オランダ語）",
+    "title": "Verstappen lacht om tijdstraf tijdens GP Mexico",
+    "url": "https://www.gpblog.com/nl/nieuws/verstappen-lacht-om-tijdstraf-tijdens-gp-mexico-geen-10-seconden",
+    "note": "2026年11月1日。ランビアーゼの無線。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix",
+    "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH",
+    "note": "2026年11月1日。1周目、ピット、赤旗、再スタート、0.799秒。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Max Verstappen survives almighty Lewis Hamilton pressure as Kimi Antonelli seals world title",
+    "url": "https://racingnews365.com/max-verstappen-survives-almighty-lewis-hamilton-pressure-as-kimi-antonelli-seals-world-title",
+    "note": "2026年11月1日。「かなり気をつけないといけなかった」「汗をかいていた」、通算74勝目。"
+   },
+   {
+    "name": "Yahoo Sports（motorsport.com 配信）",
+    "title": "Max Verstappen shares emotional message for Antonelli",
+    "url": "https://sports.yahoo.com/articles/max-verstappen-shares-emotional-message-230332817.html",
+    "note": "2026年11月1日。表彰台の言葉「最初のスタートでレースは決まった」「とても誇りに思う」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Verstappen surprised by Leclerc's penalty at the Mexico Grand Prix",
+    "url": "https://www.gpblog.com/en/news/verstappen-surprised-by-leclercs-penalty-at-the-mexico-grand-prix",
+    "note": "2026年11月1日。Viaplay への言葉「カジノ」「フェラーリのほうが強かった」「外側から王者は抜けない」「お祝いには加わらない」「2年目で特別」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog（オランダ語）",
+    "title": "Verstappen oppert gesprek na Mexico: motor moet zich beter gedragen",
+    "url": "https://www.gpblog.com/nl/nieuws/verstappen-oppert-gesprek-na-mexico-moet-zich-beter-gedragen",
+    "note": "2026年11月1日。「エンジンが自分で決めている」「エンジンと話し合い」（オランダ語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Verstappen jokes with new world champion Antonelli in the cooldown room",
+    "url": "https://www.gpblog.com/en/news/verstappen-jokes-with-new-world-champion-antonelli-in-the-cooldown-room",
+    "note": "2026年11月2日。「君のコーナリングが相手なら」、タオル（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Max Verstappen makes striking F1 prediction about Kimi Antonelli",
+    "url": "https://racingnews365.com/max-verstappen-makes-striking-f1-prediction-about-kimi-antonelli",
+    "note": "2026年10月30日。Bild の取材「100パーセントには手をつけていない」「人生の目標を達成すると」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Red Bull give first verdict on new Max Verstappen right-hand man",
+    "url": "https://racingnews365.com/red-bull-give-first-verdict-on-new-max-verstappen-right-hand-man",
+    "note": "2026年10月28日。メキース「年末までトムとGPを交互に」。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Max Verstappen rues Red Bull 'disaster': 'Maybe we should use sign language'",
+    "url": "https://www.crash.net/f1/news/1108526/1/max-verstappen-rues-red-bull-disaster-maybe-we-should-use-sign-language",
+    "note": "2026年10月26日。オースティンの「手話」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Race day in Mexico City 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-mexico-city-2026.5jvq4rkRMEYHkdIE7IXwxK",
+    "note": "2026年11月2日。メキース「マスタークラス」、直近4戦で3勝。"
+   },
+   {
+    "name": "FIA",
+    "title": "Norris crowned FIA Formula One World Champion, Verstappen takes Abu Dhabi win",
+    "url": "https://www.fia.com/news/f1-norris-crowned-fia-formula-one-world-champion-verstappen-takes-abu-dhabi-win",
+    "note": "2025年12月7日。2025年は2点差でノリスが王者、フェルスタッペンはアブダビで優勝。"
+   },
+   {
+    "name": "ESPN",
+    "title": "Kimi Antonelli youngest F1 world champion",
+    "url": "https://www.espn.com/f1/story/_/id/50250037/kimi-antonelli-youngest-f1-world-champion-2026-mexico-city-grand-prix",
+    "note": "20歳68日、メキシコで6勝目、119点差。"
+   }
+  ]
+ }
+}
