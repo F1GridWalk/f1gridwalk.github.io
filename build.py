@@ -2031,10 +2031,11 @@ def article_og(a, k):
         return None
 
 
-def rules_og(tid, head, tag, sub, right='F1用語・ルール辞典'):
-    """deep/rules/<id>/og.png: the entry name and its one-line explanation (owner's request, 9 Oct 2026)."""
-    stamp = hashlib.sha1('|'.join(('rb1', head, tag, sub, right)).encode()).hexdigest()[:10]
-    rel = f'deep/rules/{tid}/og.png'
+def rules_og(tid, head, tag, sub, right='F1用語・ルール辞典', rel=None, foot='F1の用語とルールを、やさしく。'):
+    """deep/rules/<id>/og.png: the entry name and its one-line explanation (owner's request, 9 Oct 2026).
+    Also used for STORY cards (rel='topics/<slug>/og.png'), so a shared STORY link shows its own title (2 Nov 2026)."""
+    stamp = hashlib.sha1('|'.join(('rb1', head, tag, sub, right, foot)).encode()).hexdigest()[:10]
+    rel = rel or f'deep/rules/{tid}/og.png'
     p = os.path.join(ROOT, rel)
     url = f'{SITE}/{rel}?v={stamp}'
     if not _og_tools():
@@ -2086,7 +2087,7 @@ def rules_og(tid, head, tag, sub, right='F1用語・ルール辞典'):
             y += slh
         d.rectangle((0, 560, W, H), fill='#1F2420')
         fb = F(OG_SANS, 26)
-        d.text((80, 577), 'F1の用語とルールを、やさしく。', font=fb, fill='#F3EFE6')
+        d.text((80, 577), foot, font=fb, fill='#F3EFE6')
         u = 'f1gridwalk.github.io'
         d.text((W - 80 - d.textlength(u, font=fb), 577), u, font=fb, fill='#E8946C')
         info = _OG['Png'].PngInfo()
@@ -2634,7 +2635,10 @@ def build_hubs(arch, flag_of):
         head = MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
                                                               'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
-        write(f'topics/{slug}/index.html', page((story_seo_title(H) if H.get('story') else f'{H["title"]}｜' + H.get('sub', '')) + '｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head))
+        S_ = H.get('story') or {}
+        og_h = rules_og(slug, H['title'], 'STORY', S_.get('hook') or H.get('dek', ''), H.get('gp', '') or 'F1グリッドウォーク',
+                        rel=f'topics/{slug}/og.png', foot='世界の報道から、ひとつの物語を。')
+        write(f'topics/{slug}/index.html', page((story_seo_title(H) if H.get('story') else f'{H["title"]}｜' + H.get('sub', '')) + '｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head, og_image=og_h))
         out.append((url, H.get('checked', '') + 'T09:00:00+09:00', None, '0.7'))
     hs = hubs_newest()
     if hs:  # topics/index.html: every 読み解き, newest first (owner's request, 12 Oct 2026)
@@ -2863,6 +2867,8 @@ def add_term_reads(n=5):
 
 
 SHARE_CSS = """
+.sk-card{display:block;margin:10px 0 6px;text-decoration:none;color:var(--muted)}.sk-card img{display:block;width:100%;max-width:520px;aspect-ratio:1200/630;object-fit:cover;border:1px solid var(--line);border-radius:14px}.sk-card span{display:block;font-size:12px;margin-top:4px}
+.sk-tip{background:#FFF6D6;border:1px solid #E8D58A;border-radius:10px;padding:10px 14px;font-size:14px;line-height:1.7}
 .sk{max-width:760px;margin:0 auto;padding:0 0 40px}
 .sk h1{font-size:24px;margin:8px 0 6px}
 .sk h2{font-size:18px;margin:34px 0 6px;padding-top:18px;border-top:2px solid var(--ink)}
@@ -2937,8 +2943,12 @@ def build_share_kit(days=7, req_days=4):
         while lead and x_weight(f'{head}\n\n{lead}\n\n{xurl}') > 270:
             lead = lead[:-2].rstrip('、。 ') + '…'
         xt = f'{head}\n\n{lead}\n\n{xurl}' if lead and lead != '…' else f'{head}\n\n{xurl}'
+        ogp = os.path.join(ROOT, url.strip('/'), 'og.png')
+        card = (f'<a class="sk-card" href="{e(xurl)}" target="_blank" rel="noopener"><img src="{e(url)}og.png" alt="" loading="lazy"><span>X ではこの画像のカードになります。画像を押すと記事に飛びます。</span></a>'
+                if os.path.exists(ogp) else '<p class="note">この記事には専用のカード画像がありません（サイト共通の画像になります）。</p>')
         blocks.append(f'<div class="sk-i"><span class="k">{e(label)} · {e(jst_text(dt))}</span><b>{e(title)}</b>'
-                      + box('X に投稿', xt, True)
+                      + card
+                      + box('X に投稿（画像は付けずに、この文だけを投稿）', xt, True)
                       + f'<a class="sk-x" href="https://x.com/intent/post?text={urllib.parse.quote(xt)}" target="_blank" rel="noopener">X の投稿画面を開く ↗</a>'
                       + box('note の本文に入れるリンク', f'続きは F1 Grid Walk で → {nurl}')
                       + '</div>')
@@ -2952,6 +2962,8 @@ def build_share_kit(days=7, req_days=4):
             'Search Console に出すURLを、ビルドのたびに自動で作っています。リンクには計測の印（utm）が付いているので、'
             'どの投稿から何人来たかが GoatCounter の「キャンペーン」に出ます。</p>'
             '<p class="note">サイトのどこからもリンクしておらず、検索にも出しません（中身はすべて公開中の記事のリンクです）。</p>'
+            '<p class="sk-tip"><b>X に投稿するときは、画像を付けずに文だけを投稿してください。</b>文の最後のリンクから、X が記事の画像を大きなカードにして出します。そのカードの画像を押すと、記事に飛びます。'
+            '画像を自分で付けると、カードが出なくなり、画像を押しても記事に飛ばなくなります。</p>'
             '<h2>X・note に貼る文</h2>' + (''.join(blocks) or '<p class="note">最近の記事はありません。</p>')
             + f'<h2>Search Console に出すURL</h2><p class="note">最近 {req_days} 日に出たページを、新しい順に並べています。開催前後のGPのページがあれば先頭に入ります。'
               '登録済みかどうかは、Search Console の「URL検査」で確かめてから出してください（1日10回ほどまで）。</p>'
