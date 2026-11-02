@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-10-28",
+ "checked": "2026-11-02",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -14580,8 +14580,8 @@
    "body": [
     "ワールドチャンピオンは、ドライバーズ選手権で、1シーズンの合計ポイントが最も多いドライバー。決勝とスプリントで取ったポイントを、全部足す。今のF1には、成績の悪いレースを除く「捨てレース」はない（Honda）。点が並んだときは、優勝の回数などで順位を決める（→同点のときの順位の決め方）。",
     "最終戦まで決まらない年もある。2025年は、最終戦のアブダビGPのあとで、ノリスが423点、フェルスタッペンが421点になり、ノリスが2点差で初めてチャンピオンになった。2010年に今の25点制が始まってから、最小の差だった。",
-    "ここまでにチャンピオンになったのは35人。最多はシューマッハとハミルトンの7回だ（→最多タイトルの記録）。最年少は、2010年のベッテルの23歳134日。チャンピオンは翌年、ゼッケン1番を使える。2026年は、ノリスが4番から1番を使うことにした。ハミルトンは、チャンピオンのときも44番を使い続けた。",
-    "2026年は、10月25日のアメリカGP終了時点で、アントネッリが365点で首位。2位ラッセル（242点）とは123点差、3位ハミルトン（241点）とは124点差だ（F1公式サイト）。アントネッリは早ければ11月1日のメキシコシティGPで王者になる。決まる時期の考え方は「タイトル決定の条件」を見る。"
+    "2025年のノリスまでに、チャンピオンになったのは35人。2026年は、アントネッリが初めて王座を取った。最多はシューマッハとハミルトンの7回（→最多タイトルの記録）。最年少は、2026年のアントネッリの20歳68日（ABCニュース、CNN Brasil）。それまでは、2010年のベッテルの23歳134日だった（ギネス世界記録、CNN Brasil）。チャンピオンは翌年、ゼッケン1番を使える。2026年は、ノリスが4番から1番を使うことにした。ハミルトンは、チャンピオンのときも44番を使い続けた。",
+    "2026年は、11月1日のメキシコシティGPで、アントネッリ（メルセデス）が3位に入り、予定の残り4戦を残して王座を決めた。終了時点の点は380点で、2位のフェルスタッペン（261点）とは119点差だ（F1公式サイト、Grande Prêmio）。イタリア人の王者は、1953年のアスカリ以来だ（Grande Prêmio、CNN Brasil）。決まるまでの計算は「タイトル決定の条件」を見る。"
    ],
    "examples": [
     {
@@ -14599,6 +14599,10 @@
     {
      "t": "アントネッリがアメリカGPを独走で制するも、王座の決定はメキシコGPに持ち越し",
      "u": "/news/it-fanpage-antonelli-wins-title-postponed/"
+    },
+    {
+     "t": "アントネッリが史上最年少のF1王者に　メキシコGPはフェルスタッペンが優勝",
+     "u": "/news/en-skysports-antonelli-champion-mexico/"
     }
    ],
    "see": [
@@ -14662,16 +14666,41 @@
     },
     {
      "name": "formula1.com",
-     "title": "2026 Driver Standings（アメリカGP後）",
+     "title": "2026 Driver Standings（メキシコシティGP後）",
      "url": "https://www.formula1.com/en/results/2026/drivers"
     },
     {
      "name": "formula1.com",
      "title": "Antonelli surges to dominant victory in United States Grand Prix ahead of Leclerc and Verstappen（2026年10月25日）",
      "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix（2026年11月1日、4番手スタートで3位、9位以内で王座が決まる状況だった）",
+     "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH"
+    },
+    {
+     "name": "Grande Prêmio",
+     "title": "Antonelli becomes youngest F1 world champion as Verstappen wins chaotic 2026 Mexican GP（2026年11月1日、残り4戦で決定、1953年のアスカリ以来のイタリア人王者）",
+     "url": "https://grandepremio.com/en/f1/antonelli-becomes-youngest-f1-world-champion-as-verstappen-wins-chaotic-2026-mexican-gp/"
+    },
+    {
+     "name": "CNN Brasil",
+     "title": "Kimi Antonelli é o campeão da Fórmula 1 com pódio no GP do México（2026年11月1日、20歳68日、ベッテルの23歳134日、2点で決まる状況、最後のイタリア人王者はアスカリ）",
+     "url": "https://www.cnnbrasil.com.br/esportes/automobilismo/kimi-antonelli-e-o-campeao-da-formula-1-com-podio-no-gp-do-mexico/"
+    },
+    {
+     "name": "ABC News（オーストラリア）",
+     "title": "F1 records broken by Kimi Antonelli in 2026 to become world champion（2026年11月2日、20歳68日、21世紀生まれ初の王者、日本GP後に19歳7か月4日で最年少の首位）",
+     "url": "https://www.abc.net.au/news/2026-11-02/f1-records-broken-by-kimi-antonelli-in-2026/107154478"
     }
    ],
-   "checked": "2026-10-26"
+   "checked": "2026-11-02"
   },
   {
    "id": "constructors-championship",
@@ -14698,7 +14727,7 @@
     "コンストラクターズ選手権は、チームの年間王者を決める選手権だ。点数は、そのチームの2人のドライバーが取ったポイントの合計（Honda）。決勝もスプリントも数える。始まりは1958年で、最初のチャンピオンはヴァンウォールだった。ドライバーズ選手権は1950年に始まっている。",
     "順位は、F1の運営側（FOM）からの賞金の分配や、スポンサー集めにも響く（Honda）。ドライバーズ選手権とは別に、チームにとって大事な順位表だ。",
     "最多タイトルはフェラーリの16回。マクラーレンが10回、ウィリアムズが9回、メルセデスが8回、ロータスが7回、レッドブルが6回と続く（2025年終了時点）。マクラーレンは、2025年のシンガポールGPで、6戦を残して10回目を決めた。2025年の最終ポイントは、マクラーレン833点、メルセデス469点、レッドブル451点だった。",
-    "2026年は11チーム。10月4日のセパン終了時点で、メルセデス556点、フェラーリ405点、マクラーレン316点だ。メルセデスとフェラーリの差は151点。残り7戦でチームが取れる最大は、決勝43点×7戦とシンガポールのスプリント15点で316点なので、まだ決まらない。"
+    "2026年は11チーム。ドライバーズの王座は、11月1日のメキシコシティGPでメルセデスのアントネッリが決めたが、コンストラクターズ選手権はまだ決まっていない。終了時点で、メルセデス630点、フェラーリ504点、レッドブル382点、マクラーレン365点だ（F1公式サイト）。メルセデスとフェラーリの差は126点。予定では残り4戦で、どれもスプリントのない週末だ。チームが取れる最大は43点×4戦の172点なので、計算上はまだ決まらない。"
    ],
    "examples": [
     {
@@ -14747,9 +14776,19 @@
      "name": "GrandPrix.com",
      "title": "Race Notes - Verstappen wins as Hamilton recovers to the podium (Bahrain GP 2026)",
      "url": "https://www.grandprix.com/races/bahrain-gp-2026-race-notes.html"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Teams' Standings（メキシコシティGP後、メルセデス630点、フェラーリ504点）",
+     "url": "https://www.formula1.com/en/results/2026/team"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-11-02"
   },
   {
    "id": "title-decider",
@@ -14776,9 +14815,9 @@
     "タイトルが決まるのは、首位と2位の差が、残りのレースで2位が取れる最大のポイントより大きくなったとき。2位がすべて勝っても追いつけなければ、最終戦を待たずにチャンピオンが決まる。",
     "最大のポイントは、決勝1戦で25点。スプリントのある週末は、スプリントの8点が加わって33点になる（ファステストラップの1点は2025年からない）。コンストラクターズ選手権は、2台で1位と2位なら1戦43点、スプリントは15点で数える。",
     "決まるのが早かった記録は、2002年のシューマッハ（フェラーリ）。17戦のうち第11戦のフランスGPで決め、6戦を残していた（PlanetF1、2023年8月時点）。チームでは、2025年のマクラーレンが、24戦のうちシンガポールGPで、6戦を残してコンストラクターズ選手権を決めた。最終戦までもつれる年もある。2025年は、最終戦のアブダビGPでノリスが2点差で決めた。",
-    "2026年は、10月25日のアメリカGPで、アントネッリがポールから勝ち、今季9勝目を挙げた。それでも王座は決まらなかった。この週末に決めるには、ラッセルが9位以下、ハミルトンが5位以下でなければならなかったが、結果はラッセル8位、ハミルトン4位だった（F1公式サイト）。終了時点の点は、アントネッリが365点、ラッセルが242点、ハミルトンが241点、フェルスタッペンが236点、ルクレールが233点だ（F1公式サイトの順位表）。残る5戦はどれもスプリントのない週末で、残りの最大は125点。メキシコシティGPが終わると100点に減る。同点のときは勝利数の多いほうが上になり、アントネッリはすでに9勝している（GPblog）。",
-    "つまり、メキシコシティGP（11月1日）を終えた時点で、2位以下の全員に100点以上の差をつけていれば決まる。いまの差はラッセルに123点、ハミルトンに124点。メキシコでラッセルとの差が23点、ハミルトンとの差が24点より多く縮まなければよい（BBC）。ラッセルが勝った場合でも、アントネッリは9位（2点）に入れば足り、ハミルトンが勝った場合は10位（1点）で足りる。勝者が2人以外なら、2人が取れるのは2位の18点までで、差は100点を切らない。この場合は、アントネッリの順位に関係なく決まる（BBC、GPblog）。",
-    "カタールGP（11月29日）とアブダビGP（12月6日）は、中東情勢のため開催がまだ確定していない。イモラが予備の案として準備を進めており、チームは10月中旬までに結論が出ると見ている（The Race、9月24日）。10月12日には、両戦をやめてイモラの1戦（12月6日）を最終戦にする準備が進んでいるという報道も出た（Motorsport.comの報道として Grande Prêmio が伝えた）。その後、GPFansは10月15日、米ESPNの報道として、F1は2戦を予定どおり開く方向で、開くなら改めて発表はしないと伝えた。ただし、カタールをやめてアブダビの代わりにイモラで開くという判断が、11月中旬まで出ないこともあり得るとした。FIAのビン・スライエム会長は10月20日、「2つのレースは開かれる」と話したが、先のことは予測できないとも述べた（The Race）。開催数が変われば、残りの最大ポイントも、決まる条件も変わる。"
+    "2026年は、10月25日のアメリカGPでアントネッリが今季9勝目を挙げたが、王座は決まらなかった。この週末に決めるには、ラッセルが9位以下、ハミルトンが5位以下でなければならなかったが、結果はラッセル8位、ハミルトン4位だった（F1公式サイト）。次のメキシコシティGP（11月1日）では、アントネッリは9位に入れば王座が決まる状況だった（F1公式サイト、CNN Brasil）。",
+    "アントネッリは、メキシコシティGPを4番手からスタートして3位に入り、予定の残り4戦を残して、初めての王座を決めた（F1公式サイト、Grande Prêmio）。優勝はフェルスタッペン、2位はハミルトンだった。終了時点の点は、アントネッリが380点、2位のフェルスタッペンが261点で、差は119点だ（F1公式サイト）。予定の残り4戦はどれもスプリントのない週末で、残りの最大は100点なので、もう追いつけない。",
+    "カタールGP（11月29日）とアブダビGP（12月6日）は、中東情勢のため開催がまだ確定していない。イモラが予備の案として準備を進めており、チームは10月中旬までに結論が出ると見ている（The Race、9月24日）。10月12日には、両戦をやめてイモラの1戦（12月6日）を最終戦にする準備が進んでいるという報道も出た（Motorsport.comの報道として Grande Prêmio が伝えた）。その後、GPFansは10月15日、米ESPNの報道として、F1は2戦を予定どおり開く方向で、開くなら改めて発表はしないと伝えた。ただし、カタールをやめてアブダビの代わりにイモラで開くという判断が、11月中旬まで出ないこともあり得るとした。FIAのビン・スライエム会長は10月20日、「2つのレースは開かれる」と話したが、先のことは予測できないとも述べた（The Race）。ドライバーズの王座はもう決まったが、開催数が変われば、コンストラクターズ選手権の残りの最大ポイントと、決まる条件が変わる。"
    ],
    "examples": [
     {
@@ -14812,6 +14851,10 @@
     {
      "t": "アメリカGP後、アントネッリは365点で2位ラッセルに123点差。王座決定は次戦に持ち越し",
      "u": "/news/nl-gpblog-verstappen-p3-austin-race/"
+    },
+    {
+     "t": "アントネッリが王座決定、必要だった9位以内を上回る3位　ブラジル局が報道",
+     "u": "/news/pt-cnnbrasil-antonelli-campeao-mexico/"
     }
    ],
    "see": [
@@ -14904,7 +14947,7 @@
     },
     {
      "name": "formula1.com",
-     "title": "2026 Driver Standings（アメリカGP後）",
+     "title": "2026 Driver Standings（メキシコシティGP後）",
      "url": "https://www.formula1.com/en/results/2026/drivers"
     },
     {
@@ -14926,9 +14969,29 @@
      "name": "The Race",
      "title": "FIA adamant Qatar and Abu Dhabi GPs will go ahead（2026年10月20日）",
      "url": "https://www.the-race.com/formula-1/fia-adamant-f1-qatar-abu-dhabi-gp-will-go-ahead/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix（2026年11月1日、4番手スタートで3位、9位以内で王座が決まる状況だった）",
+     "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH"
+    },
+    {
+     "name": "Grande Prêmio",
+     "title": "Antonelli becomes youngest F1 world champion as Verstappen wins chaotic 2026 Mexican GP（2026年11月1日、残り4戦で決定、1953年のアスカリ以来のイタリア人王者）",
+     "url": "https://grandepremio.com/en/f1/antonelli-becomes-youngest-f1-world-champion-as-verstappen-wins-chaotic-2026-mexican-gp/"
+    },
+    {
+     "name": "CNN Brasil",
+     "title": "Kimi Antonelli é o campeão da Fórmula 1 com pódio no GP do México（2026年11月1日、20歳68日、ベッテルの23歳134日、2点で決まる状況、最後のイタリア人王者はアスカリ）",
+     "url": "https://www.cnnbrasil.com.br/esportes/automobilismo/kimi-antonelli-e-o-campeao-da-formula-1-com-podio-no-gp-do-mexico/"
     }
    ],
-   "checked": "2026-10-26"
+   "checked": "2026-11-02"
   },
   {
    "id": "dnf",
@@ -15332,8 +15395,8 @@
    ],
    "short": "ドライバーはシューマッハとハミルトンの7回。チームはフェラーリの16回。",
    "body": [
-    "ドライバーズ選手権の最多は、ミハエル・シューマッハとルイス・ハミルトンの7回。続いてファンジオが5回、フェルスタッペン、ベッテル、プロストが4回だ。1950年に始まってから、チャンピオンになったのは35人。2025年のノリスが35人目だった。",
-    "今の現役でタイトルを持つのは、ハミルトン（7回）、フェルスタッペン（4回）、アロンソ（2回）、ノリス（1回）の4人（GPFans）。2026年10月4日のセパン終了時点で、ハミルトンは214点で3位。首位アントネッリとは106点差で、残りの最大は183点だ。",
+    "ドライバーズ選手権の最多は、ミハエル・シューマッハとルイス・ハミルトンの7回。続いてファンジオが5回、フェルスタッペン、ベッテル、プロストが4回だ。1950年に始まってから、2025年のノリスまでにチャンピオンになったのは35人。2026年は、アントネッリが初めて王座を取った（F1公式サイト）。",
+    "今の現役でタイトルを持つのは、ハミルトン（7回）、フェルスタッペン（4回）、アロンソ（2回）、ノリス（1回）だった（GPFans）。2026年に初めて王座を取ったアントネッリ（1回）が、ここに加わった（F1公式サイト）。",
     "コンストラクターズ選手権の最多は、フェラーリの16回。マクラーレンが10回、ウィリアムズが9回、メルセデスが8回、ロータスが7回、レッドブルが6回と続く（2025年終了時点）。マクラーレンは2024年と2025年の連続優勝で、10回目は2025年のシンガポールGPで決めた。"
    ],
    "examples": [
@@ -15382,9 +15445,19 @@
      "name": "GPblog",
      "title": "Antonelli can't be crowned in Singapore, but Russell's DNF puts Austin in play as Hamilton keeps the title maths alive",
      "url": "https://www.gpblog.com/en/news/antonelli-cant-be-crowned-in-singapore-but-russells-dnf-puts-austin-in-play-as-hamilton-keeps-the-title-maths-alive"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix（2026年11月1日、4番手スタートで3位、9位以内で王座が決まる状況だった）",
+     "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH"
+    },
+    {
+     "name": "Grande Prêmio",
+     "title": "Antonelli becomes youngest F1 world champion as Verstappen wins chaotic 2026 Mexican GP（2026年11月1日、残り4戦で決定、1953年のアスカリ以来のイタリア人王者）",
+     "url": "https://grandepremio.com/en/f1/antonelli-becomes-youngest-f1-world-champion-as-verstappen-wins-chaotic-2026-mexican-gp/"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-11-02"
   },
   {
    "id": "home-race",
@@ -30979,10 +31052,10 @@
    ],
    "short": "F1で最も若くして王座・優勝・ポールなどを達成した記録。年齢は「何歳何日」まで比べる。",
    "body": [
-    "最年少記録は、その出来事の日の年齢で比べる。差が小さいことが多いので、ふつうは「何歳何日」まで数える。2026年10月21日時点の主な記録は次のとおりだ。最年少のワールドチャンピオンは、2010年のベッテルで、アブダビGPで決めたときに23歳134日だった（ギネス世界記録、PlanetF1）。",
+    "最年少記録は、その出来事の日の年齢で比べる。差が小さいことが多いので、ふつうは「何歳何日」まで数える。2026年11月2日時点の主な記録は次のとおりだ。最年少のワールドチャンピオンは、2026年のアントネッリで、メキシコシティGPで決めたときに20歳68日だった（ABCニュース、CNN Brasil）。それまでの記録は、2010年のベッテルがアブダビGPで決めたときのもので、23歳134日だった（ギネス世界記録、CNN Brasil）。アントネッリはそれを3年以上縮めた（ABCニュース）。",
     "最年少の優勝は、2016年スペインGPのフェルスタッペンで18歳228日。最年少の決勝出走も、2015年オーストラリアGPのフェルスタッペンで17歳166日だ（ギネス世界記録）。最年少のポールポジションは、2026年3月の中国GPのアントネッリで19歳6か月17日。それまでは、2008年イタリアGPのベッテルの21歳72日だった（アルジャジーラ）。",
     "今の規則では、最初のF1の大会の時点で18歳以上でないと、スーパーライセンスを受けられない。17歳で認められるのは、FIAが特別に判断したときだけだ（FIA付則L 13.1.2）。",
-    "2026年は、アントネッリが最年少王者の記録を破る可能性がある。PlanetF1は9月、アントネッリを「まだ20歳」と書いた。記録を持つベッテルは、破られたら「彼のためにとてもうれしい」と話している。決まる条件は「タイトル決定の条件」を見る。"
+    "アントネッリは、ほかにも年齢の記録を持つ。ABCニュースによると、2026年の日本GPのあと、19歳7か月4日で選手権の首位に立ち、2007年スペインGPのあとのハミルトン（22歳4か月6日）を抜いて、最も若い首位になった。21世紀生まれで初めての王者でもある（2006年8月25日生まれ、ABCニュース）。王座を決めたのは、F1で2年目のシーズンだった（Motorsport Week）。記録を持っていたベッテルは9月、破られたら「彼のためにとてもうれしい」と話していた（PlanetF1）。決まるまでの計算は「タイトル決定の条件」を見る。"
    ],
    "examples": [
     {
@@ -30992,6 +31065,10 @@
     {
      "t": "メルセデス副代表、アメリカGPでの王座決定は「25分の1」。実現すれば2010年のベッテルの最年少記録を更新",
      "u": "/news/ja-f1gate-antonelli-austin-title-odds/"
+    },
+    {
+     "t": "アントネッリが20歳で王座　ベッテルの最年少記録を3年以上更新",
+     "u": "/news/de-motorsportcom-antonelli-youngest-champion/"
     }
    ],
    "see": [
@@ -31036,9 +31113,29 @@
      "name": "FIA",
      "title": "Appendix L to the International Sporting Code 2026（13.1.2 年齢）",
      "url": "https://api.fia.com/system/files/documents/appendix_l_2026_publie_le_24_juin_2026.pdf"
+    },
+    {
+     "name": "ABC News（オーストラリア）",
+     "title": "F1 records broken by Kimi Antonelli in 2026 to become world champion（2026年11月2日、20歳68日、21世紀生まれ初の王者、日本GP後に19歳7か月4日で最年少の首位）",
+     "url": "https://www.abc.net.au/news/2026-11-02/f1-records-broken-by-kimi-antonelli-in-2026/107154478"
+    },
+    {
+     "name": "CNN Brasil",
+     "title": "Kimi Antonelli é o campeão da Fórmula 1 com pódio no GP do México（2026年11月1日、20歳68日、ベッテルの23歳134日、2点で決まる状況、最後のイタリア人王者はアスカリ）",
+     "url": "https://www.cnnbrasil.com.br/esportes/automobilismo/kimi-antonelli-e-o-campeao-da-formula-1-com-podio-no-gp-do-mexico/"
+    },
+    {
+     "name": "Motorsport Week",
+     "title": "Kimi Antonelli crowned youngest F1 champion in Mexico City（2026年11月1日、F1で2年目のシーズン）",
+     "url": "https://www.motorsportweek.com/2026/11/01/kimi-antonelli-crowned-youngest-f1-champion-in-mexico-city/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix（2026年11月1日、4番手スタートで3位、9位以内で王座が決まる状況だった）",
+     "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH"
     }
    ],
-   "checked": "2026-10-21"
+   "checked": "2026-11-02"
   },
   {
    "id": "race-starts",
@@ -32133,7 +32230,7 @@
    "short": "前の年のワールドチャンピオン。翌年はゼッケン1番を使える。",
    "body": [
     "前年王者（ディフェンディングチャンピオン）は、前の年のワールドチャンピオンのことだ。翌年は1番のカーナンバーを使える。使うかどうかは本人が選べ、ハミルトンのように前の番号を使い続けた例もある。2026年は、2025年の王者ノリスが、4番から1番に替えた（Motorsport.com）。",
-    "2026年のノリスは、アメリカGPで5位に入り、残り5戦の時点で211点のランキング6位だ。5位のルクレール（233点）とは22点差がある（F1公式サイト）。勝利は2回のままだ。Motorsport-Total.comによると、このまま6位以下で終えると、前年王者としては、1997年にアロウズで12位だったデイモン・ヒル以来の低い順位になる。1997年よりあとでいちばん低かったのは5位で、1998年のビルヌーブ、初タイトルの翌年のハミルトン、2010年のバトン、2014年のベッテルだ。",
+    "2026年のノリスは、アメリカGPとメキシコシティGPで続けて5位に入った。メキシコシティGPのあと、予定では残り4戦の時点で221点のランキング6位、5位のルクレール（245点）とは24点差だ（F1公式サイト）。勝利は2回のままだ。Motorsport-Total.comによると、このまま6位以下で終えると、前年王者としては、1997年にアロウズで12位だったデイモン・ヒル以来の低い順位になる。1997年よりあとでいちばん低かったのは5位で、1998年のビルヌーブ、初タイトルの翌年のハミルトン、2010年のバトン、2014年のベッテルだ。",
     "王者が翌年に走らないこともある。2016年の王者ロズベルグは、その年で引退し、タイトルを守る戦いには出なかった（Motorsport-Total.com）。"
    ],
    "examples": [
@@ -32165,16 +32262,21 @@
     },
     {
      "name": "formula1.com",
-     "title": "2026 Driver Standings（アメリカGP後）",
+     "title": "2026 Driver Standings（メキシコシティGP後）",
      "url": "https://www.formula1.com/en/results/2026/drivers"
     },
     {
      "name": "formula1.com",
      "title": "Antonelli surges to dominant victory in United States Grand Prix ahead of Leclerc and Verstappen（2026年10月25日）",
      "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
     }
    ],
-   "checked": "2026-10-26"
+   "checked": "2026-11-02"
   },
   {
    "id": "throttle-map",
