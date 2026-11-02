@@ -2972,6 +2972,8 @@ def build_share_kit(days=7, req_days=4):
                                    f'<meta name="robots" content="noindex,nofollow">\n<style>{SHARE_CSS}</style>\n', og_type='website'))
 
 
+VM_CSS = '''.vm{margin:18px 0}.vm-k{font-weight:800;font-size:13px;letter-spacing:.06em;color:#2F7A72;margin:0 0 6px}.vm-r{padding:10px 0 12px;border-top:1px solid var(--line)}.vm-h{margin:0;font-size:12.5px;color:#2F7A72}.vm-h b{color:var(--ink)}.vm-m{margin-left:8px;font-weight:800;font-size:11px;border:1px solid currentColor;border-radius:4px;padding:0 5px}.vm-s{float:right;font-size:11px}.vm-s a{color:var(--muted)}.vm-t{margin:4px 0 0;font-size:16px;line-height:1.7;font-weight:600}.vm-t.vm-big{font-size:20px;font-weight:800;color:#B0532C}.vm-q{margin:6px 0 0;padding:8px 12px;border-left:4px solid #2F7A72;background:var(--surface);border-radius:0 8px 8px 0}.vm-q p{margin:0;font-size:17px;font-weight:700;line-height:1.6}.vm-q small{display:block;margin-top:2px;font-size:11px;color:var(--muted)}.vm-ed{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px}.vm-ed p{margin:4px 0 0;font-size:14.5px}'''
+
 RELATED_CSS = """<style>
 .rel{margin:34px 0 8px;padding-top:16px;border-top:2px solid var(--ink)}
 .rel .rel-k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--clay);margin:0}
@@ -3601,15 +3603,22 @@ def main():
         nused = set()
         body.append(f'<p class="summary">{link_terms(e(a.get("summary", "")), nused)}</p>')
         if a.get('voices'):
-            # our own digest of fan reactions (owner, 26 Oct 2026): paraphrased, no quotes, no user names
+            # our own digest of fan reactions, laid out like a forum digest (owner, 3 Nov 2026):
+            # numbered posts, side label, big type for the most common view — but every line is our paraphrase, no names
             vs = a['voices']
-            for side in ('日本', '海外'):
-                xs = [v for v in vs if v.get('side') == side]
-                if not xs:
-                    continue
-                body.append(f'<section class="voices"><h2>{side}のファンの声</h2><ul>' + ''.join(
-                    f'<li>{e(v["text"])}' + (f' <a href="{e(v["url"])}" target="_blank" rel="noopener" data-track="click/voice/{e(a["id"])}">{e(v.get("src", "出どころ"))}\u00a0↗</a>' if v.get('url') else '') + '</li>'
-                    for v in xs) + '</ul></section>')
+            MOOD = {'賛': '#2F7A72', '否': '#B0532C', '驚': '#8E2F3B', '笑': '#B8873F', '心配': '#4B5261'}
+            rows = []
+            for i, v in enumerate(vs, 1):
+                col = MOOD.get(v.get('mood', ''), '')
+                cls = 'vm-big' if v.get('big') else ''
+                src = (f'<a href="{e(v["url"])}" target="_blank" rel="noopener" data-track="click/voice/{e(a["id"])}">{e(v.get("src", "出どころ"))}\u00a0↗</a>' if v.get('url') else '')
+                rows.append(f'<div class="vm-r"><p class="vm-h"><b>{i}</b>：{e(v.get("side", ""))}のファン'
+                            + (f'<span class="vm-m" style="color:{col}">{e(v["mood"])}</span>' if v.get('mood') else '')
+                            + f'<span class="vm-s">{src}</span></p>'
+                            + (f'<blockquote class="vm-q"><p>「{e(v["text"])}」</p><small>引用：{e(v.get("src", ""))}</small></blockquote></div>' if v.get('quote') else
+                               f'<p class="vm-t {cls}"' + (f' style="color:{col}"' if (col and v.get('big')) else '') + f'>{e(v["text"])}</p></div>'))
+            body.append('<style>' + VM_CSS + '</style><section class="vm"><p class="vm-k">みんなの反応</p>' + ''.join(rows)
+                        + (f'<div class="vm-ed"><b>編集部のひとこと</b><p>{e(a["note"])}</p></div>' if a.get('note') else '') + '</section>')
             body.append('<p class="credit">ファンの声は、F1 Grid Walk がニュースのコメント欄や個人のブログ、ファンの反応を伝える記事を読み、言い換えて短くまとめたものです。書き込みをそのまま載せたり、投稿した人の名前を出したりはしていません。</p>')
         else:
             body.append(f'<a class="cta" href="{e(a["url"])}" target="_blank" rel="noopener" data-track="click/{e(a["id"])}" '
