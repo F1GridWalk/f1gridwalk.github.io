@@ -69,16 +69,32 @@ Dating rumours (a driver's or team person's romantic partner) MAY be published a
 - if the person or partner later denies it, add the denial to that article's summary on the next run, or remove the article.
 Still never: family members, children, health, pregnancy rumours, where anyone lives, stories whose only basis is paparazzi photos, ex-partners' revelations (things the person announced themselves go under 2b).
 
-### 2d. 「ファンの声」 digests written by us — owner's decision, 26 Oct 2026
+### 2d. 「ファンの声」 digests written by us — owner's decisions, 26 Oct / 2–3 Nov 2026
 The site has its own 「ファンの声」 tab (kind "voice"). **Every day, at least ONE digest (owner's decision, 2 Nov 2026 — readers should find new fan voices daily, not only after races).** In EVERY run, first check articles.json and news/archive.json: if no kind "voice" article has a published date of today (JST) yet, write one in this run about the story fans are talking about most today (a race or session, a title, a transfer, a rumour, a team row — whatever the comment sections and fan-reaction articles are busiest about). On race weekends also write one after each qualifying, sprint and race. At most 3 per day. This is separate from the matome summaries (kind "fan"), which go on as before.
-- Japanese side: find the voices yourself. Do NOT use f1jouhou2.com, f1are.com or any other 5ch matome blog for kind "voice", and never name them in it. Use: the comment sections of Yahoo!ニュース / carview! F1 articles; personal blogs and note posts with race impressions (search e.g. 「メキシコGP 感想」「アントネッリ 優勝 感想」); Japanese media articles that report what fans said on SNS.
-- 5ch (owner's decision, 26 Oct 2026): ALSO read the 5ch F1 board directly — the board (probably https://egg.5ch.net/f1/; if that host is wrong, find the F1 board from the board menu at https://www.5ch.net/ and use its host) (thread list: https://egg.5ch.net/f1/subback.html) and the live / race threads about the session or story (thread pages https://egg.5ch.net/test/read.cgi/f1/<number>/). Use curl from the shell first (e.g. curl -sL -A "Mozilla/5.0" <url>, decode Shift_JIS with iconv -f CP932 -t UTF-8 if needed), WebFetch if curl fails. Summarise only the general trend of many posts in your own words (「5ちゃんねるのF1板では〜という声が多かった」), src 「5ちゃんねる F1板」, url = the thread page. Never quote a post, never give a name/ID/trip, and skip insults and discriminatory posts (very common there). If 5ch cannot be reached, skip it and use the other Japanese sources. In the final summary, ALWAYS say in one line whether 5ch could be read (which URL, which tool, or the error).
-- Overseas side: never open reddit.com or X directly (owner's decision, 26 Oct 2026). Reach Reddit and X voices only through articles that report them, and write e.g. 「Reddit では〜という声が多かった（GPFans が紹介）」. Use articles that report fan reactions, e.g. GPFans ("fans react"), PlanetF1, Sportskeeda, Crash.net ("social media reacts"), Motorsport.com, The Sun / Daily Express (write that they are tabloids). Search "<driver or GP> fans react" or "social media reacts".
-- Write 2–4 voices per side, each one sentence in your own Japanese words, saying how common the view was (「〜という声が多かった」「〜という意見も出ていた」). Never quote a comment or post word for word, never give a user name or handle, never copy a blog's wording. A blog or note post used here is a source of a voice only; it still does not go into articles.json as its own article.
-- Skip insults, mockery of a driver's looks, nationality or family, private life, death wishes, and fan quarrels. If most reactions are like that, write none for that story.
-- Fan opinions are not facts: do not present a fan claim (a conspiracy, a "rigged" penalty) as true. What only fans say is NOT a rumour source for kind "rumor".
-- Object: kind "voice", source "F1 Grid Walk", region "日本", lang "ja", cat "ファンの声", topic = the story's existing topic, url = the main page you read, title like 「メキシコGP決勝、ファンの反応は？」 (no 衝撃, 炎上, 大荒れ), summary 1–2 sentences on what the reactions were about, plus
-  "voices": [{"side": "日本" or "海外", "text": "…", "src": site name (for a blog or note, write 「個人のブログ」 or 「note」, not the person's name), "url": the page you read}]. Every voice must have a url you actually opened.
+The page looks like a forum digest (numbered voices, mood marks, big type for the loudest view, an editor's line at the end), so write it like one.
+
+**Japanese side**
+- Main source: the comment sections of Yahoo!ニュース and carview! articles about the story. Also personal blogs / note race impressions and Japanese media articles reporting SNS reactions.
+- Do NOT use f1jouhou2.com, f1are.com or any other 5ch matome blog, and never name them.
+- 5ch: try the F1 board (probably https://egg.5ch.net/f1/, thread list https://egg.5ch.net/f1/subback.html) with curl -sL -A "Mozilla/5.0" (iconv -f CP932 -t UTF-8), WebFetch if curl fails. Use it only if it can be read; never quote 5ch posts (paraphrase only).
+
+**Overseas side** (never open reddit.com or x.com directly — Reddit objects to AI scraping)
+- Fan-reaction articles (GPFans, PlanetF1, Sportskeeda, Crash.net, Motorsport.com, The Sun / Daily Express as tabloids): they quote Reddit and X posts — you may use those, with src like 「GPFans が紹介した Reddit の書き込み」 and url = that article.
+- Fan forums: F1Technical (f1technical.net/forum), FerrariChat, Clip the Apex, Autosport Forums. Find the race / story thread with WebSearch (e.g. "f1technical <GP> 2026 race thread", "ferrarichat <GP> 2026") and open the result with WebFetch. src = forum name, url = the thread page.
+- Bluesky: try once per day with curl "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=<driver or GP>&sort=top&limit=25" (lang en/it/es). If it works, it is a good source; if not, say the error in the summary.
+
+**How to write it**
+- 8–15 voices per article, both sides when possible. Each voice: one short line, 15–40 Japanese characters, in your own words, saying how common the view was when you can (「〜という声が多数」「〜と嘆く人も」).
+- Quotes (owner, 3 Nov 2026): 1–3 voices per article may be a short VERBATIM quote of one comment/post, at most ~40 characters (English: quote ≤ 25 words, then give your Japanese translation as the text and add "orig" with the original words). Mark it "quote": true. Copy the words exactly; never invent, merge or "improve" a quote; the url must be the page where you read it. Never quote 5ch.
+- Fields per voice: side (日本/海外), text, src, url, optional mood (賛 / 否 / 驚 / 笑 / 心配), optional big: true for the 1–2 loudest views, optional quote: true, optional orig. Article field "note": one or two sentences — 編集部のひとこと, our own short take on what the reactions show.
+- Never: user names, IDs, handles, avatars; insults, mockery of looks / nationality / family, discriminatory words, private life, death wishes, fan quarrels; a fan claim presented as fact (what only fans say is not a rumour source).
+
+**Headline (owner, 3 Nov 2026: it must hit hard, or nobody opens it)**
+- Lead with the loudest or most striking reaction, then the story, 25–40 characters. Use a short quote or the strongest feeling: e.g. 「20歳で王者は『早すぎる』　アントネッリに海外ファンも脱帽」, 「『またフェラーリか』　ルクレール対ハミルトンにファンの嘆き」, 「平川の1点に『泣いた』の声　日本のファンが沸いた夜」.
+- It must be true to the voices you collected (if you write 「大荒れ」, the comments must really be split and heated). No 衝撃, 炎上, 激写, no invented quotes, nothing about private life.
+- Any story is fine (race, qualifying, a title, a transfer, a rumour, a team row, an interview).
+
+**Object**: kind "voice", source "F1 Grid Walk", region "日本", lang "ja", cat "ファンの声", topic = the story's existing topic, url = the main page you read, title as above, summary 1–2 sentences on what the reactions were about, note, and "voices": [ … ]. Every voice must have a url you actually opened.
 
 ## 3. Check every candidate
 Open it with WebFetch and check (a) the complete text is visible for free and (b) what it actually says. Reject if (a) is not clearly yes, if the fetch fails, returns only a teaser, or is a live blog. Summaries only from what the article says; never invent facts, numbers or quotes; leave out details that sources disagree on.
