@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T18:30:00+09:00",
+ "updatedAt": "2026-11-04T00:40:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -8,10 +8,6 @@
   "bearman-haas-2027": {
    "title": "ベアマンのハース2027年残留、発表は未定のまま",
    "summary": "ベアマンは2027年もハースに残る見通しだが、正式発表はまだない。本人は残留が目標で「自分の手の中にはない」と語り、フェラーリが最終判断を握る。ハースは同じフェラーリ育成のカマラを2027年に起用すると発表済み。独誌は年俸をめぐる交渉が停滞しているとの未確認情報も伝えている。"
-  },
-  "mexico-fp2-2026": {
-   "title": "メキシコGP FP2　ルクレールが最速、ハミルトン停止とフェルスタッペン接触",
-   "summary": "メキシコGPの金曜FP2は、フェラーリのルクレールがノリスに0.103秒差をつけて最速だった。ハミルトンはパワーユニットの不調でコース上に止まり11番手。フェルスタッペンとローソンは接触して赤旗となった。オーディのボルトレートは技術的な問題で終盤まで走れなかった。"
   },
   "verstappen-lawson-fp2": {
    "title": "FP2でフェルスタッペンとローソンが接触　双方に1グリッド降格",
@@ -56,9 +52,87 @@
   "verstappen-mexico-win-starts": {
    "title": "フェルスタッペンのメキシコ制覇、スタートと同時ピットが分けた勝負",
    "summary": "フェルスタッペンはメキシコGPで今季3勝目を挙げた。独Motorsport-Magazinは良好だったスタートに注目し、Motorsport-Total.comはルクレールへの5秒加算を受けた同時ピットというレッドブルの戦略判断を勝因に挙げた。赤旗でのタイヤ交換も流れを変え、メキーズ代表は「最善の選択だった」と語った。"
+  },
+  "mexico-clipping-overtaking": {
+   "title": "メキシコGPで追い抜きを阻んだクリッピングと出力制限、ハミルトンが改善を要求",
+   "summary": "メキシコGPでは終盤にハミルトンがフェルスタッペンを、ノリスがルクレールを抜けなかった。The Raceは技術規則の電動出力の展開制限が原因と解説し、時速337km付近を超えると出力が減ると伝えた。PlanetF1は未放送の無線を紹介し、ハミルトンが「レッドブルのエンジンをどう抜く」と漏らし、FIAの対応を求めたと報じた。この制限は2027年規則で削除される予定とされる。"
   }
  },
  "articles": [
+  {
+   "id": "en-planetf1-hamilton-red-bull-engine-radio",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "決勝",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "mexico-clipping-overtaking",
+   "title": "ハミルトン「レッドブルのエンジンをどう抜く？」未放送無線が明らかに",
+   "summary": "PlanetF1が、メキシコGPの未放送の無線を紹介した。ハミルトンは71周中64周目、エンジニアのサンティからメインストレートでオーバーテイクとブーストが使えると伝えられ、「レッドブルのエンジンをどうやって抜けばいいんだ」と返した。フェルスタッペンは赤旗後の再開で0.799秒差で逃げ切り、今季3勝目を挙げた。レース後の部屋ではハミルトンが冗談で「パワーがありすぎる」と言い、フェルスタッペンはフェラーリのコーナリング速度を補うために必要だと返した。ハミルトンはクリッピングを問題視し、FIAの対応を求めた。",
+   "orig": "Lewis Hamilton calls for FIA action as Max Verstappen exchange emerges",
+   "url": "https://www.planetf1.com/news/lewis-hamilton-fia-max-verstappen-mexican-grand-prix-2026-footage",
+   "published": "2026-11-03T12:16:00+00:00"
+  },
+  {
+   "id": "en-therace-antonelli-demolished-russell",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-russell-gap-2026",
+   "title": "同じ車でラッセルを圧倒、アントネッリの強さを数字で読み解く",
+   "summary": "The Raceは、アントネッリが今季ラッセルを大差で退けた理由を分析した。アントネッリは9勝でラッセルの3勝を上回り、130点差でタイトルを決めた。予選の差は小さく、Q3の中央値で0.185秒、ポールは7対5だが、決勝ではクリーンエアの比較で9戦中8戦で速く、1周あたり約0.25秒上回った。タイヤの摩耗に伴う失速もラッセルのほうが大きい傾向で、アントネッリは後輪のスリップ管理に優れ、よりコントロールできている感覚があると語った。",
+   "orig": "The in-depth details behind Antonelli thumping Russell",
+   "url": "https://www.the-race.com/formula-1/mercedes-f1-how-antonelli-demolished-russell-same-car/",
+   "published": "2026-11-03T12:00:00+00:00"
+  },
+  {
+   "id": "en-therace-mexico-speed-limit-clipping",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "mexico-clipping-overtaking",
+   "title": "メキシコGPで追い抜きを阻んだ『愚か』な出力制限の仕組み",
+   "summary": "The Raceは、メキシコGPで追い抜きが難しかった原因が、薄い空気ではなく技術規則の電動出力の展開制限にあると解説した。この制限により、オーバーテイクモードでも時速337km付近を超えると1km/hごとに約20kW出力が減る。最終盤にハミルトンはフェルスタッペンのスリップから仕掛けたが、速度が伸びても出力を失い差が詰まらなかった。ハミルトンは「愚か」と評し、ノリスも「レースを台無しにする」と語った。この速度制限は2027年規則では削除される予定だという。",
+   "orig": "How a 'stupid' speed limit stopped Mexican GP overtaking",
+   "url": "https://www.the-race.com/formula-1/the-stupid-speed-limit-that-neutered-mexican-gp-explained/",
+   "published": "2026-11-03T12:00:00+00:00"
+  },
+  {
+   "id": "de-f1insider-mclaren-own-engine",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ビジネス",
+   "teams": [
+    "mclaren",
+    "mercedes"
+   ],
+   "topic": "mclaren-own-engine",
+   "title": "マクラーレン、自社製エンジンを夢見る　ブラウン代表が長期構想を語る",
+   "summary": "独F1-Insider.comによると、マクラーレンのザク・ブラウン代表が、F1参戦60年で一度もない自社製エンジンの開発に意欲を示した。ワークスはシャシーとエンジンを一体で開発できるため有利で、カスタマーは「短期的には理想的でない」としつつ、5年程度の周期なら不利は限られると述べた。ただし自社製エンジンは5年ではなく10年規模の計画だとした。2030年には8気筒で電動比率の低い新規則が始まり、FIAがカスタマー供給の禁止を検討しているとも伝えられる。同記事は、メルセデスがイルモアを買収した例を引き、マクラーレンも同様の道を歩む可能性を指摘した。",
+   "orig": "McLaren träumt von eigenem Formel-1-Motor",
+   "url": "https://f1-insider.com/formel-1-mclaren-traeumt-eigen-motor-83550/",
+   "published": "2026-11-03T11:34:00+01:00"
+  },
   {
    "id": "de-motorsporttotal-redbull-key-decision-mexico",
    "kind": "news",
@@ -78,42 +152,6 @@
    "published": "2026-11-03T10:05:00+01:00"
   },
   {
-   "id": "de-motorsporttotal-vettel-ferrari-documentary",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "vettel-ferrari-documentary",
-   "title": "ベッテル、最初のフェラーリ誘いは断っていた　ARDドキュメンタリーで語る",
-   "summary": "独Motorsport-Total.comは、ARDの新ドキュメンタリー「Being Sebastian Vettel」でベッテルが語ったフェラーリ移籍の経緯を伝えた。2011年の2度目の王座後、当時のモンテゼーモロ会長から祝いの手紙が届き、2012年には極秘の面会にも招かれたという。ベッテルはレッドブルに満足しており必要性を感じないと断ったが、扉は少し開けたままにしたと語った。3年後の2015年に移籍し、幼いころのフェラーリ博物館の記憶やシューマッハの赤いマシンへの思いが決め手になったという。2017〜18年はタイトルを争ったが、いずれもハミルトンに敗れ、2020年限りでチームを去った。",
-   "orig": "Sebastian Vettel: Warum er Ferrari erst absagte und später doch wechselte",
-   "url": "https://www.motorsport-total.com/formel-1/news/sebastian-vettel-warum-er-ferrari-erst-absagte-und-spaeter-doch-wechselte-26110301",
-   "published": "2026-11-03T07:00:00+01:00"
-  },
-  {
-   "id": "en-crash-gazzetta-ferrari-swipe-antonelli",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "カルチャー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "「フェラーリの選手ではないおかげ」　ガゼッタ紙一面がアントネッリ戴冠で皮肉",
-   "summary": "Crash.netは、イタリアのガゼッタ・デロ・スポルト紙が月曜の一面でアントネッリの戴冠に絡めてフェラーリを皮肉ったと伝えた。見出しは才能とマシン、そして「フェラーリで走っていないこと」のおかげという趣旨だった。20歳のアントネッリは史上最年少王者で、1952〜53年のアスカリ以来のイタリア人王者となった。記事は、今季のフェラーリが勝機を逃し、実行力や判断、ドライバー同士の衝突で批判されてきたと触れている。父マルコ氏が、フェラーリが息子との契約機会を逃したと語っていたことも紹介した。",
-   "orig": "Italian newspaper's brutal Ferrari swipe as Antonelli crowned champion",
-   "url": "https://www.crash.net/f1/news/1109278/1/italian-newspapers-brutal-ferrari-swipe-kimi-antonelli-crowned-f1-champion",
-   "published": "2026-11-02T18:00:00+00:00"
-  },
-  {
    "id": "en-planetf1-ferrari-sf26-downforce",
    "kind": "tech",
    "lang": "en",
@@ -131,58 +169,21 @@
    "published": "2026-11-03T08:07:00+00:00"
   },
   {
-   "id": "en-crash-herta-bottas-cadillac-update",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "うわさ",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "ボッタス、ハータ後任説に「いずれ分かる」　キャデラックの2027年布陣",
-   "summary": "Crash.netは、ペレスがキャデラックと少なくとも2029年までの契約延長に署名したことで、2027年の布陣をめぐる観測が強まったと伝えた。リザーブのハータがボッタスの後任になり得るとの見方が出ており、チームは2027年に向けて彼のスーパーライセンス取得を進めている。記事は、この見方の出どころとなる報道機関は特定していない。オコンも一時名前が挙がったが、すぐ否定されたという。ボッタスは「噂はある。いずれ分かる」と述べ、2年目も残れると「かなり自信がある」とした。最終判断は米国側の承認が必要で、いずれも未確認の話である。",
-   "orig": "Valtteri Bottas responds to Colton Herta Cadillac F1 replacement rumours",
-   "url": "https://www.crash.net/f1/news/1109140/1/valtteri-bottas-responds-colton-herta-cadillac-f1-replacement-rumours",
-   "published": "2026-11-01T12:00:00+00:00"
-  },
-  {
-   "id": "de-f1insider-schumacher-antonelli-ferrari",
-   "kind": "rumor",
+   "id": "de-motorsporttotal-vettel-ferrari-documentary",
+   "kind": "news",
    "lang": "de",
    "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "うわさ",
-   "circuit": "mexico",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
    "teams": [
-    "mercedes",
     "ferrari"
    ],
-   "topic": "antonelli-ferrari-future",
-   "title": "アントネッリはいずれフェラーリへ？　ラルフ・シューマッハーが「必然」と予想",
-   "summary": "独F1インサイダーは、ラルフ・シューマッハーがスカイで、20歳で王者となったアントネッリは当面メルセデスに残るものの、いずれフェラーリへ移るのは避けられないと語ったと伝えた。「それはいつか来る。必須だと思う」との発言だという。障害になるのは幼少期から支えてきたウォルフ代表だが、ハミルトンが12年在籍したメルセデスを去った例を挙げ、最後は送り出すとみた。あくまで元ドライバーの見立てであり、両陣営から移籍の動きは報じられていない。",
-   "orig": "Wechselt Antonelli zu Ferrari? Schumacher mit deutlicher Ansage",
-   "url": "https://f1-insider.com/formel-1-antonelli-zu-ferrari-schumacher-83527/",
-   "published": "2026-11-02T14:06:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-wolff-verstappen-effect-antonelli",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "ウォルフ「最初の1つにすぎない」　アントネッリの複数タイトルを予言",
-   "summary": "蘭F1マキシマールは、メルセデスのウォルフ代表がアントネッリの初タイトルは始まりにすぎないと語ったと伝えた。フェルスタッペンやハミルトンも初戴冠後に強くなったと例に挙げ、「勝利を争える車を与えなければならない。これは最初の1つで、さらに続く」と述べた。メキシコの週末のアントネッリは緊張していて、決まる前に祝福されるのがつらかったという。ウォルフは、タイトルを必要以上に大きくしないようにという父の助言がカートの頃と同じだったと明かした。",
-   "orig": "Wolff ziet gevreesd Verstappen-effect ontstaan bij Antonelli: \"Er komen er meer\"",
-   "url": "https://www.f1maximaal.nl/formule-1/wolff-ziet-gevreesd-verstappen-effect-ontstaan-bij-antonelli-er-komen-er-meer",
-   "published": "2026-11-02T14:00:00+01:00"
+   "topic": "vettel-ferrari-documentary",
+   "title": "ベッテル、最初のフェラーリ誘いは断っていた　ARDドキュメンタリーで語る",
+   "summary": "独Motorsport-Total.comは、ARDの新ドキュメンタリー「Being Sebastian Vettel」でベッテルが語ったフェラーリ移籍の経緯を伝えた。2011年の2度目の王座後、当時のモンテゼーモロ会長から祝いの手紙が届き、2012年には極秘の面会にも招かれたという。ベッテルはレッドブルに満足しており必要性を感じないと断ったが、扉は少し開けたままにしたと語った。3年後の2015年に移籍し、幼いころのフェラーリ博物館の記憶やシューマッハの赤いマシンへの思いが決め手になったという。2017〜18年はタイトルを争ったが、いずれもハミルトンに敗れ、2020年限りでチームを去った。",
+   "orig": "Sebastian Vettel: Warum er Ferrari erst absagte und später doch wechselte",
+   "url": "https://www.motorsport-total.com/formel-1/news/sebastian-vettel-warum-er-ferrari-erst-absagte-und-spaeter-doch-wechselte-26110301",
+   "published": "2026-11-03T07:00:00+01:00"
   },
   {
    "id": "nl-f1maximaal-mekies-fia-ferrari-penalty",
@@ -204,59 +205,21 @@
    "published": "2026-11-02T21:49:00+01:00"
   },
   {
-   "id": "en-planetf1-rosberg-vasseur-act-hamilton-leclerc",
-   "kind": "news",
+   "id": "en-planetf1-chandhok-lawson-racingbulls-2027",
+   "kind": "rumor",
    "lang": "en",
    "region": "イギリス",
    "source": "PlanetF1",
-   "cat": "チーム",
-   "circuit": "mexico",
+   "cat": "うわさ",
    "teams": [
-    "ferrari"
+    "racingbulls"
    ],
-   "topic": "ferrari-hamilton-leclerc-mexico",
-   "title": "ロズベルグ、フェラーリに「ヴァスールが動くべき」　メキシコのハミルトン対ルクレール",
-   "summary": "PlanetF1は、元王者ロズベルグがメキシコGPでのハミルトンとルクレールの接触寸前の争いを受け、フェラーリのヴァスール代表は行動を起こすべきだと語ったと伝えた。ポールのハミルトンをルクレールが外側から抜こうとして両者がはみ出し、ハミルトンはフェルスタッペンにも抜かれた。ルクレールは5秒加算を受け、ハミルトンは「チームメイトが邪魔をする」と不満を述べた。ロズベルグは明確なルールがなければ路上で決着をつけてしまうと警告し、最初の接触の原因はルクレールにあるとの見方を示した。ルクレールは「両方がミスをした」と話した。",
-   "orig": "Rosberg tells Ferrari to take action after Hamilton and Leclerc clash in Mexico",
-   "url": "https://www.planetf1.com/news/nico-rosberg-lewis-hamilton-charles-leclerc-ferrari-action",
-   "published": "2026-11-02T10:42:00+00:00"
-  },
-  {
-   "id": "pt-grandepremio-antonelli-senna-helmet-interlagos",
-   "kind": "news",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "Grande Prêmio",
-   "cat": "ドライバー",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-senna-helmet-interlagos",
-   "title": "アントネッリ、サンパウロGPでセナ追悼の特別ヘルメット　「最高の出来の一つ」",
-   "summary": "ブラジルのグランデ・プレミオは、アントネッリが11月6〜8日のサンパウロGPでアイルトン・セナを称える特別ヘルメットを使用すると伝えた。メキシコGPで3位に入り王座を決めた後に明らかにしたもので、1991年のセナのインテルラゴス優勝から35年にあたる。セナはその勝利をギアボックスが6速に固まった状態で挙げており、アントネッリはそこに触れた。本人は「これまでにデザインした中で最高のものの一つ」と話した。昨季からブラジルのファンの支援に感謝しているとし、帰還を楽しみにしているという。",
-   "orig": "Antonelli prepara capacete especial para homenagear Senna no GP de São Paulo",
-   "url": "https://grandepremio.com/br/f1/antonelli-prepara-capacete-especial-para-homenagear-senna-no-gp-de-sao-paulo/",
-   "published": "2026-11-02T08:00:00-03:00"
-  },
-  {
-   "id": "de-motorsportmagazin-verstappen-starts-mexico",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "verstappen-mexico-win-starts",
-   "title": "フェルスタッペンの勝利はフェラーリの贈り物だけではない　2回のスタートが好発進",
-   "summary": "独モータースポーツ・マガジンは、メキシコGPを5番手から制したフェルスタッペンの勝利が、フェラーリの内輪もめだけによるものではないと分析した。今季のレッドブルの弱点だったスタンディングスタートを2回とも決め、オーバーテイクが難しい舞台で前に出たという。ターン4でのハミルトンとルクレールの争いで両者がブレーキングを誤り、ハミルトンは失速して標的になった。メキーズ代表は好スタートを評価しつつ「まだ基準ではない」と慎重だった。ミディアムで出た影響で早めにソフトへ替え、赤旗がなければ持ったかは不明だと指摘した。",
-   "orig": "F1-Sieg nicht nur Ferrari-Geschenk: Plötzlich kann Verstappens Red Bull auch gut starten",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301041-f1-sieg-nicht-nur-ferrari-geschenk-ploetzlich-kann-verstappens-red-bull-auch-gut-starten/",
-   "published": "2026-11-02T08:03:00+01:00"
+   "topic": "lawson-2027-seat",
+   "title": "ローソン外しは「最も不当な解雇の一つ」　チャンドックが2027年の起用に警鐘",
+   "summary": "PlanetF1によると、元F1ドライバーのカルン・チャンドックは、レーシングブルズが2027年にリアム・ローソンを外せば、F1史上でも最も不当な解雇の一つになると語った。チームはローソン、リンドブラッド、ツォロフの3人で2席を検討中と伝えられ、まだ決定していない。ローソンは77点を挙げ、チームのコンストラクターズ5位に貢献している。チャンドックは、ツォロフがローソンより優れるとするデータがあるとは思えないと述べた。ジェイミー・チャドウィックは、レッドブルが急いで決める必要はなく、ツォロフを控えに置く案もあると語った。",
+   "orig": "Karun Chandhok warns that removing Liam Lawson from Racing Bulls would be unfair",
+   "url": "https://www.planetf1.com/news/liam-lawson-racing-bulls-future-karun-chandhok",
+   "published": "2026-11-02T18:32:00+00:00"
   },
   {
    "id": "de-motorsportmagazin-honda-ers-cooling-mexico",
@@ -277,59 +240,23 @@
    "published": "2026-11-02T19:15:00+01:00"
   },
   {
-   "id": "de-motorsportmagazin-antonelli-number-12",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "最年少王者アントネッリ、来季も「12番」　ゼッケン1は縁起が悪いと明かす",
-   "summary": "独モータースポーツ・マガジンは、メキシコGPで3位に入り史上最年少のF1王者となったアントネッリが、来季もゼッケン12を使うと伝えた。本人はチャンピオンのゼッケン1について「自分にはいい番号ではなかった」と述べ、ゲン担ぎを理由に挙げた。12はラウダやセナも使い、複数回タイトルを獲った番号でもあるという。レースは約40分の中断があり、再開1周後にルクレールを抜いて表彰台を確保し、ウイニングラップでは涙で約2秒を失ったと明かした。表彰台ではフェルスタッペンとハミルトンに担ぎ上げられ、祖父が好んだ「誰も寝てはならぬ」が流れた。",
-   "orig": "Tränen, Rekorde und ein Aberglaube: Warum Formel-1-Champion Kimi Antonelli die Nummer 1 nicht will",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301050-traenen-rekorde-und-ein-aberglaube-warum-formel-1-champion-kimi-antonelli-die-nummer-1-ablehnt/",
-   "published": "2026-11-02T14:05:00+01:00"
-  },
-  {
-   "id": "en-planetf1-newey-inspects-ferrari-mexico",
+   "id": "en-crash-gazzetta-ferrari-swipe-antonelli",
    "kind": "news",
    "lang": "en",
    "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
+   "source": "Crash.net",
+   "cat": "カルチャー",
    "circuit": "mexico",
    "teams": [
-    "astonmartin",
+    "mercedes",
     "ferrari"
    ],
-   "topic": "newey-ferrari-sf26-mexico",
-   "title": "ニューウェイ代表、メキシコのグリッドでフェラーリSF-26を入念に観察",
-   "summary": "PlanetF1によると、アストンマーティンのチーム代表エイドリアン・ニューウェイが、メキシコGP前のグリッドでルクレールのフェラーリSF-26を細かく見て回った。ライバル車を観察するのは同氏の恒例で、今季はオーストラリアでハミルトン車、シルバーストンでルクレール車、ハンガリーでもハミルトン車を見ている。SF-26はバルセロナと英国GPで勝っている。アストンマーティンはこの週末もアロンソとストロールが早々に止まり、今季5度目のダブルリタイアで、チームは19戦を終えて7点のコンストラクターズ10位にとどまる。ニューウェイは今季の車の開発が大きく妨げられたと語り、2027年に向けてフロア前部を重要部分とみている。",
-   "orig": "Adrian Newey holds new Ferrari SF-26 inspection at Mexican Grand Prix",
-   "url": "https://www.planetf1.com/news/adrian-newey-ferrari-mexican-grand-prix-2026-investigation",
-   "published": "2026-11-02T11:25:00+00:00"
-  },
-  {
-   "id": "en-planetf1-bottas-suspension-failure-mexico",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "bottas-suspension-failure-mexico",
-   "title": "ボッタスのメキシコGP大クラッシュ、キャデラックが原因を調査　左フロントサスが壊れる",
-   "summary": "PlanetF1によると、キャデラックのボッタスはメキシコGPの46周目、1コーナーへの高速進入で左フロントのサスペンションが壊れてクラッシュし、レースを終えた。医療センターで念のための検査を受け、その後に退出した。報じられた未放送の無線ではボッタスが繰り返し悪態をつき、担当エンジニアが体調を確認していたという。チーム代表のブドコフスキーは原因を徹底調査し再発を防ぐと述べた。チームメートのペレスもカナダで同様のサス破損を経験しており、キャデラックは初年度の今季ここまで無得点で、コンストラクターズ11位にとどまる。",
-   "orig": "Untelevised Valtteri Bottas team radio as Cadillac launches investigation over Mexican GP crash",
-   "url": "https://www.planetf1.com/news/valtteri-bottas-mexican-grand-prix-2026-team-radio",
-   "published": "2026-11-02T13:08:00+00:00"
+   "topic": "antonelli-champion-2026",
+   "title": "「フェラーリの選手ではないおかげ」　ガゼッタ紙一面がアントネッリ戴冠で皮肉",
+   "summary": "Crash.netは、イタリアのガゼッタ・デロ・スポルト紙が月曜の一面でアントネッリの戴冠に絡めてフェラーリを皮肉ったと伝えた。見出しは才能とマシン、そして「フェラーリで走っていないこと」のおかげという趣旨だった。20歳のアントネッリは史上最年少王者で、1952〜53年のアスカリ以来のイタリア人王者となった。記事は、今季のフェラーリが勝機を逃し、実行力や判断、ドライバー同士の衝突で批判されてきたと触れている。父マルコ氏が、フェラーリが息子との契約機会を逃したと語っていたことも紹介した。",
+   "orig": "Italian newspaper's brutal Ferrari swipe as Antonelli crowned champion",
+   "url": "https://www.crash.net/f1/news/1109278/1/italian-newspapers-brutal-ferrari-swipe-kimi-antonelli-crowned-f1-champion",
+   "published": "2026-11-02T18:00:00+00:00"
   },
   {
    "id": "ja-voice-mexico-gp-race",
@@ -388,58 +315,77 @@
    ]
   },
   {
-   "id": "en-sportbible-vasseur-lack-of-respect-mexico",
+   "id": "en-planetf1-bottas-suspension-failure-mexico",
    "kind": "news",
    "lang": "en",
-   "region": "英国",
-   "source": "SportBible",
-   "cat": "チーム",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-mexico",
-   "title": "フェラーリのバスール代表、メキシコGPのハミルトンとルクレールの接触に「ブランドへの敬意の欠如」",
-   "summary": "英SportBibleによると、フェラーリのバスール代表はメキシコGPで先頭争いをしたハミルトンとルクレールの接触について、受け入れるのが難しいと語った。ターン4でルクレールがコース外から前に出て5秒加算を受け、4位に終わった。バスール代表は勝利を捨てたことをブランドやスタッフの努力への敬意の欠如と表現したが、特定の誰かを標的にしたわけではなく両者と話すと述べ、ハミルトンが外に膨らんだ点にも触れた。ハミルトンは「チームが最優先であるべきだ」と訴え、選手権2位を逃したとも話した。",
-   "orig": "Ferrari boss releases furious statement on Lewis Hamilton and Charles Leclerc conduct at Mexican GP",
-   "url": "https://www.sportbible.com/formula-1/ferrari/lewis-hamilton-charles-leclerc-fred-vasseur-mexican-gp-115695-20261102",
-   "published": "2026-11-02T09:11:00+00:00"
-  },
-  {
-   "id": "en-f1com-leclerc-deserved-penalty-mexico",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "Formula1.com",
+   "region": "イギリス",
+   "source": "PlanetF1",
    "cat": "決勝",
    "circuit": "mexico",
    "teams": [
-    "ferrari"
+    "cadillac"
    ],
-   "topic": "ferrari-hamilton-leclerc-mexico",
-   "title": "ルクレール「ペナルティは、ある意味で当然」　メキシコGP1周目のハミルトンとの接触を語る",
-   "summary": "Formula1.comによると、ルクレールはメキシコGP1周目にハミルトンの外からターン4で前に出てコース外を走り、5秒加算ペナルティを受けた。彼は順位を返すか尋ねたが、2番手に来たフェルスタッペンの存在もあって順位を保ち、「当然のペナルティだった」と認めた。一方で、ターン1後にハミルトンから押し出されたことにも触れ、勝利を争うならこれがレースだと語った。スチュワードの基準は10秒だが、ハミルトンも1周目に一度コース外へ出たため5秒に軽減された。ルクレールはハミルトンやチームと話し合う考えを示した。",
-   "orig": "Charles Leclerc concedes he 'deserved penalty' over Lewis Hamilton clash in Mexico City Grand Prix",
-   "url": "https://www.formula1.com/en/latest/article/leclerc-concedes-he-deserved-penalty-over-hamilton-clash-in-mexico-city-gp.4rYJb2xww8myo1gtgBV5pV",
-   "published": "2026-11-02T01:18:00+00:00"
+   "topic": "bottas-suspension-failure-mexico",
+   "title": "ボッタスのメキシコGP大クラッシュ、キャデラックが原因を調査　左フロントサスが壊れる",
+   "summary": "PlanetF1によると、キャデラックのボッタスはメキシコGPの46周目、1コーナーへの高速進入で左フロントのサスペンションが壊れてクラッシュし、レースを終えた。医療センターで念のための検査を受け、その後に退出した。報じられた未放送の無線ではボッタスが繰り返し悪態をつき、担当エンジニアが体調を確認していたという。チーム代表のブドコフスキーは原因を徹底調査し再発を防ぐと述べた。チームメートのペレスもカナダで同様のサス破損を経験しており、キャデラックは初年度の今季ここまで無得点で、コンストラクターズ11位にとどまる。",
+   "orig": "Untelevised Valtteri Bottas team radio as Cadillac launches investigation over Mexican GP crash",
+   "url": "https://www.planetf1.com/news/valtteri-bottas-mexican-grand-prix-2026-team-radio",
+   "published": "2026-11-02T13:08:00+00:00"
   },
   {
-   "id": "en-sportbible-mercedes-russell-post-antonelli-title",
+   "id": "de-f1insider-schumacher-antonelli-ferrari",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "antonelli-ferrari-future",
+   "title": "アントネッリはいずれフェラーリへ？　ラルフ・シューマッハーが「必然」と予想",
+   "summary": "独F1インサイダーは、ラルフ・シューマッハーがスカイで、20歳で王者となったアントネッリは当面メルセデスに残るものの、いずれフェラーリへ移るのは避けられないと語ったと伝えた。「それはいつか来る。必須だと思う」との発言だという。障害になるのは幼少期から支えてきたウォルフ代表だが、ハミルトンが12年在籍したメルセデスを去った例を挙げ、最後は送り出すとみた。あくまで元ドライバーの見立てであり、両陣営から移籍の動きは報じられていない。",
+   "orig": "Wechselt Antonelli zu Ferrari? Schumacher mit deutlicher Ansage",
+   "url": "https://f1-insider.com/formel-1-antonelli-zu-ferrari-schumacher-83527/",
+   "published": "2026-11-02T14:06:00+01:00"
+  },
+  {
+   "id": "de-motorsportmagazin-antonelli-number-12",
    "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "SportBible",
-   "cat": "チーム",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "ドライバー",
    "circuit": "mexico",
    "teams": [
     "mercedes"
    ],
-   "topic": "russell-fine-mexico",
-   "title": "メルセデスの公式投稿をめぐりファンの意見割れる　涙をこらえるラッセルとウォルフの映像",
-   "summary": "英SportBibleによると、アントネッリのタイトル確定直後、メルセデスはラッセルが涙をこらえながらウォルフ代表と抱き合う映像を公式アカウントで公開し、ファンの間で賛否が分かれた。ウォルフは映像の中で「ショーのようなレースで申し訳ない、ジョージ」と声をかけている。ラッセルはスタートでエネルギー展開の不調に見舞われ、ハジャーと接触して10秒加算を受け6位に終わった。「不要な投稿でウォルフの印象づくりのようだ」との反応や、動揺する本人の映像の公開に疑問を呈す声があった。ラッセルはメディア対応を欠席し、メルセデスは5000ユーロの罰金を科された。",
-   "orig": "Mercedes' 'unnecessary' post about George Russell seconds after Kimi Antonelli wins world title angers fans",
-   "url": "https://www.sportbible.com/formula-1/george-russell-kimi-antonelli-mercedes-mexican-gp-post-004318-20261102",
-   "published": "2026-11-02T08:29:00+00:00"
+   "topic": "antonelli-champion-2026",
+   "title": "最年少王者アントネッリ、来季も「12番」　ゼッケン1は縁起が悪いと明かす",
+   "summary": "独モータースポーツ・マガジンは、メキシコGPで3位に入り史上最年少のF1王者となったアントネッリが、来季もゼッケン12を使うと伝えた。本人はチャンピオンのゼッケン1について「自分にはいい番号ではなかった」と述べ、ゲン担ぎを理由に挙げた。12はラウダやセナも使い、複数回タイトルを獲った番号でもあるという。レースは約40分の中断があり、再開1周後にルクレールを抜いて表彰台を確保し、ウイニングラップでは涙で約2秒を失ったと明かした。表彰台ではフェルスタッペンとハミルトンに担ぎ上げられ、祖父が好んだ「誰も寝てはならぬ」が流れた。",
+   "orig": "Tränen, Rekorde und ein Aberglaube: Warum Formel-1-Champion Kimi Antonelli die Nummer 1 nicht will",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301050-traenen-rekorde-und-ein-aberglaube-warum-formel-1-champion-kimi-antonelli-die-nummer-1-ablehnt/",
+   "published": "2026-11-02T14:05:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-wolff-verstappen-effect-antonelli",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "ウォルフ「最初の1つにすぎない」　アントネッリの複数タイトルを予言",
+   "summary": "蘭F1マキシマールは、メルセデスのウォルフ代表がアントネッリの初タイトルは始まりにすぎないと語ったと伝えた。フェルスタッペンやハミルトンも初戴冠後に強くなったと例に挙げ、「勝利を争える車を与えなければならない。これは最初の1つで、さらに続く」と述べた。メキシコの週末のアントネッリは緊張していて、決まる前に祝福されるのがつらかったという。ウォルフは、タイトルを必要以上に大きくしないようにという父の助言がカートの頃と同じだったと明かした。",
+   "orig": "Wolff ziet gevreesd Verstappen-effect ontstaan bij Antonelli: \"Er komen er meer\"",
+   "url": "https://www.f1maximaal.nl/formule-1/wolff-ziet-gevreesd-verstappen-effect-ontstaan-bij-antonelli-er-komen-er-meer",
+   "published": "2026-11-02T14:00:00+01:00"
   },
   {
    "id": "en-therace-alpine-double-penalty-mexico",
@@ -497,6 +443,115 @@
    "published": "2026-11-02T12:00:00+00:00"
   },
   {
+   "id": "en-therace-verdict-antonelli-title",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "アントネッリの初タイトルをどう見るか　ザ・レース5人の記者が評価",
+   "summary": "ザ・レースの記者5人が、20歳で史上最年少王者となったアントネッリの2026年を評価した。ストローは、豪州の練習走行とバクーの予選での壁への接触ぐらいしかミスがなかったと称え、ラッセルが新規則に苦しんだ点も指摘した。ミッチェル＝マームは新規則が優勝の価値を下げるという批判を退けた。アンダーソンは、1953年のアスカリ以来のイタリア人王者であり、主にラッセルとの比較で価値が測れるとした。ベニョンは、バッテリーでなくドライバーが試される車での本物のタイトル争いがなかったことを惜しんだ。",
+   "orig": "The rival Verstappen needs - our verdict on Antonelli's F1 title",
+   "url": "https://www.the-race.com/formula-1/the-rival-verstappen-needs-our-verdict-antonelli-f1-title/",
+   "published": "2026-11-02T12:00:00+00:00"
+  },
+  {
+   "id": "en-planetf1-newey-inspects-ferrari-mexico",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "astonmartin",
+    "ferrari"
+   ],
+   "topic": "newey-ferrari-sf26-mexico",
+   "title": "ニューウェイ代表、メキシコのグリッドでフェラーリSF-26を入念に観察",
+   "summary": "PlanetF1によると、アストンマーティンのチーム代表エイドリアン・ニューウェイが、メキシコGP前のグリッドでルクレールのフェラーリSF-26を細かく見て回った。ライバル車を観察するのは同氏の恒例で、今季はオーストラリアでハミルトン車、シルバーストンでルクレール車、ハンガリーでもハミルトン車を見ている。SF-26はバルセロナと英国GPで勝っている。アストンマーティンはこの週末もアロンソとストロールが早々に止まり、今季5度目のダブルリタイアで、チームは19戦を終えて7点のコンストラクターズ10位にとどまる。ニューウェイは今季の車の開発が大きく妨げられたと語り、2027年に向けてフロア前部を重要部分とみている。",
+   "orig": "Adrian Newey holds new Ferrari SF-26 inspection at Mexican Grand Prix",
+   "url": "https://www.planetf1.com/news/adrian-newey-ferrari-mexican-grand-prix-2026-investigation",
+   "published": "2026-11-02T11:25:00+00:00"
+  },
+  {
+   "id": "pt-grandepremio-antonelli-senna-helmet-interlagos",
+   "kind": "news",
+   "lang": "pt",
+   "region": "ブラジル",
+   "source": "Grande Prêmio",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-senna-helmet-interlagos",
+   "title": "アントネッリ、サンパウロGPでセナ追悼の特別ヘルメット　「最高の出来の一つ」",
+   "summary": "ブラジルのグランデ・プレミオは、アントネッリが11月6〜8日のサンパウロGPでアイルトン・セナを称える特別ヘルメットを使用すると伝えた。メキシコGPで3位に入り王座を決めた後に明らかにしたもので、1991年のセナのインテルラゴス優勝から35年にあたる。セナはその勝利をギアボックスが6速に固まった状態で挙げており、アントネッリはそこに触れた。本人は「これまでにデザインした中で最高のものの一つ」と話した。昨季からブラジルのファンの支援に感謝しているとし、帰還を楽しみにしているという。",
+   "orig": "Antonelli prepara capacete especial para homenagear Senna no GP de São Paulo",
+   "url": "https://grandepremio.com/br/f1/antonelli-prepara-capacete-especial-para-homenagear-senna-no-gp-de-sao-paulo/",
+   "published": "2026-11-02T08:00:00-03:00"
+  },
+  {
+   "id": "en-planetf1-rosberg-vasseur-act-hamilton-leclerc",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-mexico",
+   "title": "ロズベルグ、フェラーリに「ヴァスールが動くべき」　メキシコのハミルトン対ルクレール",
+   "summary": "PlanetF1は、元王者ロズベルグがメキシコGPでのハミルトンとルクレールの接触寸前の争いを受け、フェラーリのヴァスール代表は行動を起こすべきだと語ったと伝えた。ポールのハミルトンをルクレールが外側から抜こうとして両者がはみ出し、ハミルトンはフェルスタッペンにも抜かれた。ルクレールは5秒加算を受け、ハミルトンは「チームメイトが邪魔をする」と不満を述べた。ロズベルグは明確なルールがなければ路上で決着をつけてしまうと警告し、最初の接触の原因はルクレールにあるとの見方を示した。ルクレールは「両方がミスをした」と話した。",
+   "orig": "Rosberg tells Ferrari to take action after Hamilton and Leclerc clash in Mexico",
+   "url": "https://www.planetf1.com/news/nico-rosberg-lewis-hamilton-charles-leclerc-ferrari-action",
+   "published": "2026-11-02T10:42:00+00:00"
+  },
+  {
+   "id": "en-sportbible-vasseur-lack-of-respect-mexico",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "SportBible",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-mexico",
+   "title": "フェラーリのバスール代表、メキシコGPのハミルトンとルクレールの接触に「ブランドへの敬意の欠如」",
+   "summary": "英SportBibleによると、フェラーリのバスール代表はメキシコGPで先頭争いをしたハミルトンとルクレールの接触について、受け入れるのが難しいと語った。ターン4でルクレールがコース外から前に出て5秒加算を受け、4位に終わった。バスール代表は勝利を捨てたことをブランドやスタッフの努力への敬意の欠如と表現したが、特定の誰かを標的にしたわけではなく両者と話すと述べ、ハミルトンが外に膨らんだ点にも触れた。ハミルトンは「チームが最優先であるべきだ」と訴え、選手権2位を逃したとも話した。",
+   "orig": "Ferrari boss releases furious statement on Lewis Hamilton and Charles Leclerc conduct at Mexican GP",
+   "url": "https://www.sportbible.com/formula-1/ferrari/lewis-hamilton-charles-leclerc-fred-vasseur-mexican-gp-115695-20261102",
+   "published": "2026-11-02T09:11:00+00:00"
+  },
+  {
+   "id": "en-sportbible-mercedes-russell-post-antonelli-title",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "SportBible",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "russell-fine-mexico",
+   "title": "メルセデスの公式投稿をめぐりファンの意見割れる　涙をこらえるラッセルとウォルフの映像",
+   "summary": "英SportBibleによると、アントネッリのタイトル確定直後、メルセデスはラッセルが涙をこらえながらウォルフ代表と抱き合う映像を公式アカウントで公開し、ファンの間で賛否が分かれた。ウォルフは映像の中で「ショーのようなレースで申し訳ない、ジョージ」と声をかけている。ラッセルはスタートでエネルギー展開の不調に見舞われ、ハジャーと接触して10秒加算を受け6位に終わった。「不要な投稿でウォルフの印象づくりのようだ」との反応や、動揺する本人の映像の公開に疑問を呈す声があった。ラッセルはメディア対応を欠席し、メルセデスは5000ユーロの罰金を科された。",
+   "orig": "Mercedes' 'unnecessary' post about George Russell seconds after Kimi Antonelli wins world title angers fans",
+   "url": "https://www.sportbible.com/formula-1/george-russell-kimi-antonelli-mercedes-mexican-gp-post-004318-20261102",
+   "published": "2026-11-02T08:29:00+00:00"
+  },
+  {
    "id": "de-f1insider-vasseur-respekt-mexiko",
    "kind": "news",
    "lang": "de",
@@ -515,22 +570,23 @@
    "published": "2026-11-02T08:45:00+01:00"
   },
   {
-   "id": "en-therace-verdict-antonelli-title",
+   "id": "de-motorsportmagazin-verstappen-starts-mexico",
    "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "分析",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "決勝",
    "circuit": "mexico",
    "teams": [
-    "mercedes"
+    "redbull",
+    "ferrari"
    ],
-   "topic": "antonelli-champion-2026",
-   "title": "アントネッリの初タイトルをどう見るか　ザ・レース5人の記者が評価",
-   "summary": "ザ・レースの記者5人が、20歳で史上最年少王者となったアントネッリの2026年を評価した。ストローは、豪州の練習走行とバクーの予選での壁への接触ぐらいしかミスがなかったと称え、ラッセルが新規則に苦しんだ点も指摘した。ミッチェル＝マームは新規則が優勝の価値を下げるという批判を退けた。アンダーソンは、1953年のアスカリ以来のイタリア人王者であり、主にラッセルとの比較で価値が測れるとした。ベニョンは、バッテリーでなくドライバーが試される車での本物のタイトル争いがなかったことを惜しんだ。",
-   "orig": "The rival Verstappen needs - our verdict on Antonelli's F1 title",
-   "url": "https://www.the-race.com/formula-1/the-rival-verstappen-needs-our-verdict-antonelli-f1-title/",
-   "published": "2026-11-02T12:00:00+00:00"
+   "topic": "verstappen-mexico-win-starts",
+   "title": "フェルスタッペンの勝利はフェラーリの贈り物だけではない　2回のスタートが好発進",
+   "summary": "独モータースポーツ・マガジンは、メキシコGPを5番手から制したフェルスタッペンの勝利が、フェラーリの内輪もめだけによるものではないと分析した。今季のレッドブルの弱点だったスタンディングスタートを2回とも決め、オーバーテイクが難しい舞台で前に出たという。ターン4でのハミルトンとルクレールの争いで両者がブレーキングを誤り、ハミルトンは失速して標的になった。メキーズ代表は好スタートを評価しつつ「まだ基準ではない」と慎重だった。ミディアムで出た影響で早めにソフトへ替え、赤旗がなければ持ったかは不明だと指摘した。",
+   "orig": "F1-Sieg nicht nur Ferrari-Geschenk: Plötzlich kann Verstappens Red Bull auch gut starten",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301041-f1-sieg-nicht-nur-ferrari-geschenk-ploetzlich-kann-verstappens-red-bull-auch-gut-starten/",
+   "published": "2026-11-02T08:03:00+01:00"
   },
   {
    "id": "es-latmotorsport-perez-17-mexico",
@@ -570,6 +626,24 @@
    "url": "https://www.skysports.com/f1/news/13606682/kimi-antonelli-crowned-2026-f1-world-champion-as-max-verstappen-wins-wild-mexico-city-grand-prix-from-lewis-hamilton",
    "published": "2026-11-02T01:57:00+00:00",
    "featured": true
+  },
+  {
+   "id": "en-f1com-leclerc-deserved-penalty-mexico",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "Formula1.com",
+   "cat": "決勝",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-mexico",
+   "title": "ルクレール「ペナルティは、ある意味で当然」　メキシコGP1周目のハミルトンとの接触を語る",
+   "summary": "Formula1.comによると、ルクレールはメキシコGP1周目にハミルトンの外からターン4で前に出てコース外を走り、5秒加算ペナルティを受けた。彼は順位を返すか尋ねたが、2番手に来たフェルスタッペンの存在もあって順位を保ち、「当然のペナルティだった」と認めた。一方で、ターン1後にハミルトンから押し出されたことにも触れ、勝利を争うならこれがレースだと語った。スチュワードの基準は10秒だが、ハミルトンも1周目に一度コース外へ出たため5秒に軽減された。ルクレールはハミルトンやチームと話し合う考えを示した。",
+   "orig": "Charles Leclerc concedes he 'deserved penalty' over Lewis Hamilton clash in Mexico City Grand Prix",
+   "url": "https://www.formula1.com/en/latest/article/leclerc-concedes-he-deserved-penalty-over-hamilton-clash-in-mexico-city-gp.4rYJb2xww8myo1gtgBV5pV",
+   "published": "2026-11-02T01:18:00+00:00"
   },
   {
    "id": "en-therace-ferrari-mess-verstappen-mexico",
@@ -875,6 +949,23 @@
    "orig": "Yamaha trekt zich terug uit MotoGP-race in Qatar: mogelijk voorbode voor Formule 1",
    "url": "https://www.f1maximaal.nl/formule-1/yamaha-weigert-naar-motogp-race-in-qatar-af-te-reizen-ook-formule-1-in-gevaar",
    "published": "2026-11-01T13:09:00+01:00"
+  },
+  {
+   "id": "en-crash-herta-bottas-cadillac-update",
+   "kind": "rumor",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "うわさ",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "cadillac-2027-drivers-rumor",
+   "title": "ボッタス、ハータ後任説に「いずれ分かる」　キャデラックの2027年布陣",
+   "summary": "Crash.netは、ペレスがキャデラックと少なくとも2029年までの契約延長に署名したことで、2027年の布陣をめぐる観測が強まったと伝えた。リザーブのハータがボッタスの後任になり得るとの見方が出ており、チームは2027年に向けて彼のスーパーライセンス取得を進めている。記事は、この見方の出どころとなる報道機関は特定していない。オコンも一時名前が挙がったが、すぐ否定されたという。ボッタスは「噂はある。いずれ分かる」と述べ、2年目も残れると「かなり自信がある」とした。最終判断は米国側の承認が必要で、いずれも未確認の話である。",
+   "orig": "Valtteri Bottas responds to Colton Herta Cadillac F1 replacement rumours",
+   "url": "https://www.crash.net/f1/news/1109140/1/valtteri-bottas-responds-colton-herta-cadillac-f1-replacement-rumours",
+   "published": "2026-11-01T12:00:00+00:00"
   },
   {
    "id": "en-crash-hamilton-schumacher-dream",
@@ -1469,102 +1560,6 @@
    "orig": "Stewards vellen oordeel over incident Verstappen en Lawson",
    "url": "https://racingnews365.nl/stewards-vellen-oordeel-over-incident-verstappen-2",
    "published": "2026-10-31T03:58:00+01:00"
-  },
-  {
-   "id": "en-crash-verstappen-lawson-not-smart",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "redbull",
-    "racingbulls"
-   ],
-   "topic": "verstappen-lawson-fp2",
-   "title": "フェルスタッペン、FP2接触でローソンに「賢い行動ではない」",
-   "summary": "Crash.netは、メキシコGPのFP2でレッドブルのフェルスタッペンとレーシングブルズのローソンが接触した件で、フェルスタッペンが「あまり賢い行動ではない」と語ったと伝えた。ローソンが12コーナーで守り、フェルスタッペンは14コーナーでコース外に出たのち接触した。両車が壊れて赤旗となり、両者は審査対象になった。フェルスタッペンは自身の週末は変わらないとし、席を争う立場ならもっと賢く動くべきだと述べた。ローソンの来季は未定で、チームはF2のツォロフ昇格も検討している。",
-   "orig": "Max Verstappen calls out 'not very smart' Liam Lawson behaviour after tangle",
-   "url": "https://www.crash.net/f1/news/1108827/1/max-verstappen-calls-out-liam-lawson-not-very-smart-behaviour-after-tangle",
-   "published": "2026-10-31T00:50:00+00:00"
-  },
-  {
-   "id": "en-crash-mexico-fp2-leclerc-hamilton",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "分析",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "mclaren",
-    "redbull"
-   ],
-   "topic": "mexico-fp2-2026",
-   "title": "メキシコGP FP2、ルクレールが最速　ハミルトンは止まりフェルスタッペンは接触",
-   "summary": "Crash.netはメキシコGPの金曜FP2で、フェラーリのルクレールがトップに立ち、2番手のノリスとの差は0.103秒だったと伝えた。3番手はラッセル、4番手はアントネッリだった。ハミルトンはパワーユニットの不調を訴えて3コーナーで止まり、最後の30分を走れず11番手に終わった。フェルスタッペンとローソンは接触して両車が壊れ、赤旗となり、両者とも審査対象になった。アントネッリは9位以内に入れば、ラッセルが勝ってもタイトルが決まるという。",
-   "orig": "Leclerc tops Mexico FP2 as Hamilton breaks down, Verstappen and Lawson collide",
-   "url": "https://www.crash.net/f1/news/1108824/1/charles-leclerc-tops-mexico-fp2-lewis-hamilton-breaks-down-and-max-verstappen-and",
-   "published": "2026-10-30T23:50:00+00:00"
-  },
-  {
-   "id": "de-motorsportmagazin-mexiko-fp2-leclerc",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "分析",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "audi"
-   ],
-   "topic": "mexico-fp2-2026",
-   "title": "メキシコGP FP2　ルクレールがトップ、ハミルトンのフェラーリは壊れる",
-   "summary": "独モータースポーツ・マガジンはメキシコGPのFP2で、ルクレールが1分17秒827で最速、ノリスが0.103秒差の2番手だったと報じた。ハミルトンは終了の約33分前に3コーナー後で出力を失い、短時間のVSCとなった。オーディのボルトレートは技術的な問題で最後の15分まで走れず22番手、ヒュルケンベルグは15番手だった。ハースではオコンがステアリングの不調を訴え、ベアマンはエンジンが止まったが、ともに走行を続けた。気温は25度、路面温度は38度だった。",
-   "orig": "Formel 1, Mexiko FP2: Verstappen und Lawson fahren sich ins Auto, Hamilton-Ferrari kaputt",
-   "url": "https://www.motorsport-magazin.com/formel1/news-300990-formel-1-2-training-in-mexiko-verstappen-faehrt-lawson-ins-auto-hamilton-ferrari-kaputt/",
-   "published": "2026-10-31T00:02:00+01:00"
-  },
-  {
-   "id": "en-crash-mekies-horner-mojo",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "チーム",
-   "circuit": "mexico",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "horner-mekies-mojo",
-   "title": "メキシコGP会見でメケス「雰囲気は全く違う」　ホーナーの「覇気を失った」発言に反論",
-   "summary": "Crash.netは、レッドブル代表メケスがメキシコGPの会見で、ホーナー前代表の発言に反論したと伝えた。ホーナーは英紙タイムズの取材で、自身の退任後にレッドブルは勢いも存在感も雰囲気も失ったと語っていた。メケスは意見を持つ自由は認めつつ、チームの感じ方は「大きく異なる」と述べた。シャシーとパワーユニットの問題で苦しんだ序盤も結束を保ち、ドライバーの率直な意見が立て直しにつながったと説明した。レッドブルは残り5戦でコンストラクターズ3位、マクラーレンと同点だがカウントバックで上回る。",
-   "orig": "Laurent Mekies claps back at Christian Horner's Red Bull 'lost its mojo' claim",
-   "url": "https://www.crash.net/f1/news/1108791/1/laurent-mekies-claps-back-christian-horners-red-bull-lost-its-mojo-claim",
-   "published": "2026-10-30T22:30:00+00:00"
-  },
-  {
-   "id": "en-crash-mexico-fp1-leclerc-rookies",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "分析",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ],
-   "topic": "mexico-fp1-2026",
-   "title": "メキシコGP FP1、ルクレールが最速　ルーキー10人が走る荒れた展開",
-   "summary": "Crash.netはメキシコGPの金曜FP1で、フェラーリのルクレールがトップに立ち、2番手のアントネッリに0.659秒差をつけたと伝えた。この日は10人のルーキーが出走し、フェラーリだけが不在だったため、ハミルトンは各種の試しに専念できた。路面が汚れてグリップが低く、順位は入り乱れた。ハジャーはパワーユニットの不調で11番手、オーディのスレーターはトラブルで14周にとどまり21番手だった。キャデラックのハータは5回目のFP1で、スーパーライセンスに必要な40ポイントに届いたという。",
-   "orig": "Charles Leclerc fastest in Mexico GP FP1 dominated by 10 F1 rookies",
-   "url": "https://www.crash.net/f1/news/1108775/1/charles-leclerc-fastest-mexico-gp-fp1-dominated-10-f1-rookies",
-   "published": "2026-10-30T20:50:00+00:00"
   }
  ]
 }
