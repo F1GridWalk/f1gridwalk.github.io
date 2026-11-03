@@ -1,0 +1,400 @@
+{
+ "slug": "russell-more-bad-days-than-good",
+ "gp": "メキシコシティGP",
+ "title": "いい日より、悪い日が多かった",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "最前列からスタートして、直線の途中で電気が止まった。「どうしてこんなことが」。6位。チームメイトが史上最年少の王者になった日、ラッセルはチャンピオンのところへだけ行って、取材に出ずに帰った。罰金5,000ユーロ。翌日、心から書いた。「2026年は僕の年ではなかった」「君は、心からチャンピオンにふさわしい」。",
+ "checked": "2026-11-03",
+ "checkedNote": "Yahoo Sports、Formula1.com、PlanetF1、SPORTbible、RacingNews365、GPblog、Crash.net、Sky Sports、GPFans の原文を11月3日に確認しました。無線、ウォルフとラッセルの言葉、声明は英語から編集部が訳しました。電気が止まった技術的な原因は、ウォルフも「現時点では分からない」としており、本文には書いていません。",
+ "draft": true,
+ "common": [
+  "ラッセルはメキシコで2番グリッドからスタート直後にハイブリッドの放出が止まり4台に抜かれ、1周目6コーナーでハジャーに接触して10秒ペナルティ、6位。",
+  "レース後、ウォルフが計量所で「打ちのめされた」ラッセルを見た。ラッセルはアントネッリに会いに行き、取材に出ずにサーキットを離れた。メルセデスに5,000ユーロの罰金。",
+  "メルセデスがウォルフの抱擁の映像を投稿し、意見が割れた。",
+  "2026年：開幕戦優勝で首位→アントネッリが5連勝。3勝（メルボルン、オーストリア、バクー）、リタイア3回。予選8対11、決勝5対14。ランキング4位250点。",
+  "11月2日のインスタグラムの声明「いい日より悪い日が多いシーズン」「2026年は僕の年ではなかった」「君は心からチャンピオンにふさわしい」。"
+ ],
+ "outlets": [
+  {
+   "id": "en-therace-russell-fine-distraught-mexico",
+   "angle": "罰金",
+   "adds": [
+    "会見欠席で5,000ユーロ、チームは「打ちのめされていた」。"
+   ]
+  },
+  {
+   "id": "en-sportbible-mercedes-russell-post-antonelli-title",
+   "angle": "投稿",
+   "adds": [
+    "涙をこらえるラッセルとウォルフの映像にファンの意見が割れた。"
+   ]
+  },
+  {
+   "id": "nl-f1maximaal-wolff-antonelli-quali-prep",
+   "angle": "ウォルフ",
+   "adds": [
+    "予選の準備に別の選択肢があったかも。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "無線「どうしてこんなことがあり得るんだ」「ごめん、ジョージ」",
+   "w": "Yahoo Sports（MotorBiscuit、11月1日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "ウォルフ「計量所」「壊滅的な瞬間」「スポーツマンシップ」「完全に裏切った。また、だ」",
+   "w": "PlanetF1（11月2日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "映像の「ひどいことになって、ごめんな」",
+   "w": "SPORTbible（11月2日、英語 \"Sorry for the sh*tshow\"）を編集部が訳した。"
+  },
+  {
+   "t": "声明の全文",
+   "w": "RacingNews365（11月2日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "6月「45点」、9月「いい仕事をした」、10月「高いレベル」「壊すことはない」",
+   "w": "GPblog、Formula1.com、RacingNews365、Crash.net（英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "電気が止まった原因",
+   "t": "ウォルフは「現時点では分からない」。Yahoo Sports はスパの「バッテリー0%」との類似を指摘しているが、チームの説明ではない。"
+  },
+  {
+   "k": "「会見」か「メディアペン」か",
+   "t": "欠席したのは取材の場（メディアペン）で、FIAの会見ではない。本文は「取材の場」。"
+  }
+ ],
+ "unknownsFillable": [
+  "残り4戦のラッセル。",
+  "2027年の契約の自動更新条項（本人は「2027年の席は僕の手の中にある」）。"
+ ],
+ "unknownsLimits": [
+  "スタートの電気の技術的な原因。",
+  "ラッセルがアントネッリに会いに行ったときの言葉。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "この日、ラッセルは何をして、何をしなかったか？",
+  "rows": [
+   {
+    "k": "した",
+    "t": "アントネッリに会いに行った（ウォルフ「スポーツマンシップ」）。翌日、心からの声明を書いた。"
+   },
+   {
+    "k": "しなかった",
+    "t": "取材に出なかった。サーキットを離れた。祝賀の輪に入らなかった。"
+   },
+   {
+    "k": "チーム",
+    "t": "ウォルフは「彼を完全に裏切った。また」「ドライバーは2人いる」。映像の投稿には批判も。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "ハイブリッドの電気は、なぜ止まる？",
+   "rules": [
+    "deployment",
+    "energy-management",
+    "energy-store"
+   ],
+   "links": [
+    "/deep/cota-energy/"
+   ]
+  },
+  {
+   "q": "チームメイト同士の対決は、どう数える？",
+   "rules": [
+    "teammate-battle"
+   ],
+   "links": [
+    "/topics/piastri-story-of-my-year/"
+   ]
+  },
+  {
+   "q": "アントネッリの戴冠の日は？",
+   "rules": [
+    "youngest-records"
+   ],
+   "links": [
+    "/topics/antonelli-champion-of-the-world/"
+   ]
+  },
+  {
+   "q": "メディアペンの義務とは？",
+   "rules": [
+    "media-pen",
+    "fine"
+   ],
+   "links": []
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-11-02T07:00:00+09:00",
+   "t": "メキシコ決勝6位、取材欠席で罰金"
+  },
+  {
+   "at": "2026-11-03T05:30:00+09:00",
+   "t": "インスタグラムで「心から」の声明"
+  }
+ ],
+ "answer": "ラッセルはメキシコで2番グリッドから、スタート直後にハイブリッドの電気が止まって4台に抜かれ（無線「どうしてこんなことが」、ウォルフ「ごめん、ジョージ」）、ハジャーとの接触で10秒ペナルティ、6位。チームメイトのアントネッリが同じ日に最年少王者に。レース後、ウォルフは計量所で「打ちのめされた」ラッセルを見た。ラッセルはアントネッリに会いに行ってからサーキットを離れ、取材欠席でメルセデスに5,000ユーロの罰金。翌日の声明「キャリアで初めて、いい日より悪い日が多いシーズン」「2026年は僕の年ではなかった」「君は心からチャンピオンにふさわしい」「少し運が戻るように、指を交差させておく」。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "チームメイトが史上最年少の王者になった日、ラッセルは6位で、取材に出ずに帰った。翌日、心から書いた。「いい日より悪い日のほうが多いシーズンになった」。",
+  "body": [
+   [
+    "h",
+    "「ごめん、ジョージ」"
+   ],
+   [
+    "p",
+    "11月1日、メキシコシティ。ジョージ・ラッセルは、最前列の2番グリッドにいた。ポールのフェラーリのハミルトンとの差は、0.009秒。「スタートが決定的になる。1コーナーが決定的になる」と、前の日に言っていた。"
+   ],
+   [
+    "p",
+    "スタートは、良かった。1コーナーに向かう長い直線の途中で、マシンからハイブリッドの電気が出なくなった。原因は、レースのあとの時点でチームも「分からない」としている。ブレーキングに届く前に、4台に抜かれた。ラッセルは無線で言った。「なあ、どうしてこんなことがあり得るんだ？」。そして、続けた。「いや、ああ……黙っておくよ」。"
+   ],
+   [
+    "p",
+    "ウォルフ代表が、無線で返した。「ごめん、ジョージ。あれは」。"
+   ],
+   [
+    "p",
+    "1周目の6コーナーで、前に出ようとしてハジャーの後ろに当て、10秒のペナルティ。6位でゴールした。同じレースで3位に入ったチームメイトのアントネッリが、残り4戦を待たずに、20歳で史上最年少のチャンピオンになった。ラッセルがこの日に勝っていても、差は埋まらなかった。それでも、勝つためのレースだった。"
+   ],
+   [
+    "h",
+    "計量所で"
+   ],
+   [
+    "p",
+    "レースのあと、ウォルフはラッセルを、マシンの重さを計る場所で見た。「明らかに、打ちのめされていた」。「レーシングドライバーにとっては、壊滅的な瞬間だ。今日のレースは、彼のシーズンの縮図だったかもしれない」。「これは、彼が勝つためのレースだった。マシンには速さがあった。それを僕らが、最初のストレートで裏切った」。"
+   ],
+   [
+    "p",
+    "ラッセルはそこから、アントネッリのところへ行った。ウォルフは言う。「キミに会いに行ったのは、素晴らしいスポーツマンシップだ」。「彼を長く知っている。スポーツ選手として、つらいときを過ごしているのは分かる。でも、あの若者をこのチームに入れたことには、彼にも責任があった」。2年前、ハミルトンの後任に18歳を据えると決めたとき、それを受け入れて一緒にやると決めたのは、ラッセルでもあった、という意味だ。"
+   ],
+   [
+    "p",
+    "それから、ラッセルはサーキットを離れた。6位の選手に義務づけられた取材の場には、出なかった。スチュワードはその夜に呼び出したが、文書にはこうある。「チームの代表者から、ドライバーはサーキットを離れたと聞いた」。メルセデスに5,000ユーロの罰金。ウォルフは「取材に出ないことも、サーキットを離れることも、まったく理解できる。残っていたら、むしろ驚いていた」。"
+   ],
+   [
+    "h",
+    "投稿"
+   ],
+   [
+    "p",
+    "その夜、メルセデスは短い映像をSNSに出した。戴冠の直後、ウォルフがラッセルに歩み寄って抱きしめる。「ひどいことになって、ごめんな、ジョージ」。ラッセルは、涙をこらえているように見える。何も言わない。"
+   ],
+   [
+    "p",
+    "映像には、意見が割れた。「なぜ泣いている人の映像を上げるのか」。「まったく不要な投稿だった」。ウォルフは別の取材で、こうも言っている。「僕らは今日、彼を完全に裏切った。また、だ」。「うちにはドライバーが2人いる。1人じゃない。このマシンは、今年、彼のためには働かなかった」。"
+   ],
+   [
+    "h",
+    "いい日より、悪い日が多かった"
+   ],
+   [
+    "p",
+    "シーズンは、ラッセルの勝利で始まった。3月のメルボルン、ポール・トゥ・ウィン。初めてランキングの首位に立った。そこからアントネッリが5連勝した。"
+   ],
+   [
+    "p",
+    "6月、ラッセルは言った。「60点差だけど、そのうち少なくとも45点は、僕にはどうしようもなかった」。カナダで、エンジンが壊れていた。その後も、10月のセパン（マレーシアで代替開催されたバーレーンGP）でまた壊れ、シンガポールのスプリントでは1周目にクラッシュして、本戦はパーツ交換の降格が積み上がって最後尾から。勝ったのは、メルボルンと、オーストリアと、バクーの3回。アントネッリは9回。"
+   ],
+   [
+    "p",
+    "9月、マドリードの前に、こう言っている。「現実から目をそらすつもりはない。現実は、チームメイトが今年、僕よりいい仕事をしたということだ」。「もう、争いとか巻き返しとか、そういうことは考えてもいない」。10月の終わり、メキシコの木曜日には、「彼は今年、僕より高いレベルにいた」。「このスポーツは、1位か、それ以外か、だ」。"
+   ],
+   [
+    "p",
+    "比べられるレースだけで、予選はアントネッリに8勝11敗、決勝は5勝14敗。「これが僕を壊すことはない。むしろ、強くする」。「僕には、あと12年から15年ある」。"
+   ],
+   [
+    "h",
+    "「彼は、僕を油断させてくれない」"
+   ],
+   [
+    "p",
+    "2024年2月、ハミルトンがフェラーリに行くと決まった。ウォルフは「ルイスが去ったあとの新しいチームのリーダーとして、これ以上は望めない」と言った。その隣に18歳を置くと決まったとき、ラッセルは言った。「速さは、あるかないかだ。キミには、絶対にある」。「来年、彼は僕を油断させてくれないだろう」。"
+   ],
+   [
+    "p",
+    "2025年、アントネッリはこう話した。「ジョージとの関係は、確実に変わってきている」。「僕の後ろでゴールして彼がうれしくないのは自然なことで、僕も後ろにいたらうれしくない」。「でも、お互いに大きな敬意がある」。"
+   ],
+   [
+    "p",
+    "今年のメキシコの木曜日、ラッセルは言った。「個人としては、キミはもちろん、エネルギーに満ちたいいやつだ」。「ライバル関係の多くは、コース上の出来事から始まる。今年はそれがなかった」。「僕らは、それぞれ自分のエンジニアと、自分の仕事をしている」。"
+   ],
+   [
+    "h",
+    "心から"
+   ],
+   [
+    "p",
+    "レースから約1日後、ラッセルは自分の言葉で書いた。"
+   ],
+   [
+    "p",
+    "「いまが、心から話すのにふさわしい瞬間だと思う。このシーズンは、僕が望んだとおりに始まった。でも、不運と悪いパフォーマンスで、あっという間にほどけていった」。「キャリアで初めて、いい日より悪い日のほうが多いシーズンになった。つらかったか？ ああ、とても。毎週、自分を立て直すのはつらかったか？ ああ、とても。混乱は？ しょっちゅう」。"
+   ],
+   [
+    "p",
+    "「分かっているのは、全部を出し切ったということと、2026年は僕の年ではなかった、ということだけだ」。「キミ、本当におめでとう。本当に素晴らしいシーズンだった。君は、心からチャンピオンにふさわしい」。"
+   ],
+   [
+    "p",
+    "「約束できるのは、このシーズンの残りと、次のシーズン、キャリアの大半で出せていたパフォーマンスをもう一度見つけるために、全部を出すということ。それと、少しだけ運が戻ってくるように、願をかけておく」。"
+   ],
+   [
+    "p",
+    "計量所で打ちのめされていた人が、チャンピオンのところへだけ行って、帰った。翌日、心から書いた。残りは4戦。少しの運が、戻るまで。"
+   ]
+  ],
+  "terms": [
+   [
+    "ハイブリッド",
+    "hybrid-era"
+   ],
+   [
+    "エネルギー",
+    "deployment"
+   ],
+   [
+    "タイムペナルティ",
+    "time-penalty"
+   ],
+   [
+    "スチュワード",
+    "stewards"
+   ],
+   [
+    "メディアペン",
+    "media-pen"
+   ],
+   [
+    "ポール・トゥ・ウィン",
+    "pole-to-win"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Yahoo Sports（MotorBiscuit）",
+    "title": "George Russell rages at battery failure",
+    "url": "https://sports.yahoo.com/articles/george-russell-rages-battery-failure-213034855.html",
+    "note": "2026年11月1日。無線「どうしてこんなことが」「黙っておくよ」、ウォルフ「ごめん、ジョージ」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Russell details frustrating opening lap issue in Mexico City that cost him a shot at victory",
+    "url": "https://www.formula1.com/en/latest/article/russell-details-frustrating-opening-lap-issue-in-mexico-city-that-cost-him-a-shot-at-victory.3K9bqtqg1bCnFQf9NxWM5J",
+    "note": "2026年11月2日。レース直後の公式コメント。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "George Russell 'distraught': Mercedes explain media absence in Mexico",
+    "url": "https://www.planetf1.com/news/george-russell-distraught-mercedes-media-absence-mexico",
+    "note": "2026年11月2日。ウォルフ「計量所で」「打ちのめされていた」「壊滅的な瞬間」「スポーツマンシップ」「責任があった」「残っていたら驚いていた」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "FIA fine Mercedes after George Russell skips media",
+    "url": "https://www.planetf1.com/news/fia-george-russell-fine-f1-2026-mexican-grand-prix-mercedes",
+    "note": "2026年11月2日。5,000ユーロ、「ドライバーはサーキットを離れた」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Toto Wolff on George Russell after Mexican GP",
+    "url": "https://www.planetf1.com/news/toto-wolff-george-russell-f1-2026-mexican-grand-prix",
+    "note": "2026年11月2日。「完全に裏切った。また、だ」「ドライバーは2人いる」（Sky F1、英語から編集部が訳した）。"
+   },
+   {
+    "name": "SPORTbible",
+    "title": "Mercedes post divides fans after Antonelli title",
+    "url": "https://www.sportbible.com/formula-1/george-russell-kimi-antonelli-mercedes-mexican-gp-post-004318-20261102",
+    "note": "2026年11月2日。映像の内容（ウォルフの抱擁と言葉）、ファンの反応（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "George Russell issues statement 'from the heart' after catastrophic title defeat",
+    "url": "https://racingnews365.com/george-russell-issues-statement-from-the-heart-after-catastrophic-title-defeat",
+    "note": "2026年11月2日。インスタグラムの声明の全文（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Russell reflects on title gap to Antonelli: 'at least 45 of those were out of my control'",
+    "url": "https://www.gpblog.com/en/news/russell-reflects-on-title-gap-to-antonelli-at-least-45-of-those-were-out-of-my-control",
+    "note": "2026年6月12日。「45点は僕にはどうしようもなかった」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Russell concedes 'my team mate has done a better job than me'",
+    "url": "https://www.formula1.com/en/latest/article/russell-concedes-my-team-mate-has-done-a-better-job-than-me.3s3P399CjchZyixhDnromZ",
+    "note": "2026年9月10日。「現実から目をそらすつもりはない」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "George Russell handed F1 title chances hammer blow",
+    "url": "https://racingnews365.com/george-russell-handed-f1-title-chances-hammer-blow",
+    "note": "2026年9月10日。「争いとか巻き返しとか、考えてもいない」。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "George Russell defiant as F1 title defeat nears: 'It's not going to break me'",
+    "url": "https://www.crash.net/f1/news/1108611/1/george-russell-defiant-f1-title-defeat-nears-its-not-going-break-me",
+    "note": "2026年10月29日。「壊すことはない」「12年から15年」「1位か、それ以外か」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'We keep ourselves to ourselves' – Russell opens up on relationship with Antonelli",
+    "url": "https://www.formula1.com/en/latest/article/we-keep-ourselves-to-ourselves-russell-opens-up-on-relationship-with-antonelli-this-season.2m4A9yZTCSJNlLYmPPJbvK",
+    "note": "2026年10月29日。「僕より高いレベルにいた」「エネルギーに満ちたいいやつ」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "In numbers: the qualifying and race head-to-heads between team mates so far in 2026",
+    "url": "https://www.formula1.com/en/latest/article/in-numbers-the-qualifying-and-race-head-to-heads-between-team-mates-so-far-in-2026.D8AYcVEPGOs8OjIiVisZw",
+    "note": "2026年11月2日。予選8対11、決勝5対14。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Russell reckons Antonelli will 'keep me on my toes' in 2025",
+    "url": "https://www.formula1.com/en/latest/article/russell-reckons-antonelli-will-keep-me-on-my-toes-in-2025-as-he-outlines.73w8UjjXAPLwhoxmL2S79P",
+    "note": "2024年10月10日。「速さは、あるかないかだ」。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Wolff: I couldn't wish for better new Mercedes leader than Russell",
+    "url": "https://www.skysports.com/f1/news/12433/13063509/wolff-i-couldnt-wish-for-better-new-mercedes-leader-than-russell",
+    "note": "2024年2月5日。「新しいチームのリーダー」。"
+   },
+   {
+    "name": "GPFans",
+    "title": "Antonelli reveals George Russell relationship change",
+    "url": "https://www.gpfans.com/en/f1-news/1067701/mercedes-f1-kimi-antonelli-reveals-george-russell-relationship-change/",
+    "note": "2025年11月。「関係は変わってきている」「大きな敬意」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Russell details 'the frustration I have' despite securing P2",
+    "url": "https://www.formula1.com/en/latest/article/russell-details-the-frustration-i-have-despite-securing-p2-qualifying-result-for-mexico-city-gp.7DMElgRPmwTePfGOfGiUu9",
+    "note": "2026年11月1日。予選後「スタートが決定的」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "2026 F1 championship standings after the Mexico City Grand Prix",
+    "url": "https://racingnews365.com/2026-f1-championship-standings-after-the-mexico-city-grand-prix",
+    "note": "ラッセル4位250点。"
+   }
+  ]
+ }
+}
