@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T00:40:00+09:00",
+ "updatedAt": "2026-11-04T06:45:00+09:00",
  "notes": [
   {
    "id": "substack-somersf1-small-things-mexico",
@@ -54,18 +54,51 @@
    "circuit": "mexico"
   },
   {
-   "id": "blog-f1laptime-us-gp-race-pace",
+   "id": "blog-f1laptime-mexico-pit-stops",
    "platform": "blog",
    "site": "F1ラップタイム研究室",
    "lang": "ja",
    "paid": false,
-   "cat": "分析",
+   "cat": "戦略",
    "author": "Takumi",
-   "title": "2026年アメリカGP レースペース分析",
-   "summary": "全22台のラップタイムから、燃料の影響やタイヤの摩耗、渋滞、車両トラブルを補正し、同じタイヤ・同じ距離で走った場合の実質的なレースペースを推定した分析。アントネッリを基準に、ルクレールとフェルスタッペンが約0.1秒差、ハミルトンとノリスが約0.2秒差という見立てで、接触でダメージを負ったドライバーは評価から除外している。",
-   "url": "https://f1-lap-time.com/?page_id=17677",
-   "published": "2026-11-01T12:00:00+09:00",
-   "circuit": "austin"
+   "title": "2026年メキシコGP ピットストップ分析",
+   "summary": "停止時間と、ピットレーン通過時間から停止時間を引いた「ボックスパフォーマンス」でメキシコGPのピットストップを比較した分析。静止時間はアルボンの2.11秒が最速でフェルスタッペンが2.14秒と続き、ボックスパフォーマンスではヒュルケンベルグが19.72秒で最良だったと整理している。",
+   "url": "https://f1-lap-time.com/?page_id=17711",
+   "published": "2026-11-02T12:00:00+09:00",
+   "circuit": "mexico"
+  },
+  {
+   "id": "blog-f1laptime-mexico-review",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Takumi",
+   "title": "メキシコGPレビュー",
+   "summary": "メキシコGPを振り返るレビュー。フェルスタッペンがミディアムスタートからピットでルクレールを逆転しソフトを引っ張った戦略と、アントネッリが序盤にタイヤを温存して48周目に1コーナーでルクレールを抜いた走りを評価している。サンパウロは今年のエネルギー規則下で追い抜きが難しいとの見立て。",
+   "url": "https://f1-lap-time.com/?page_id=17715",
+   "published": "2026-11-02T12:00:00+09:00",
+   "circuit": "mexico"
+  },
+  {
+   "id": "note-formula1report-mexico-race-report-2026",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Yoshito",
+   "title": "【決勝】フェルスタッペン今季3勝目、アントネッリ最年少ワールドチャンピオン決定。フェラーリは同士討ちで勝利逃す【メキシコGP】",
+   "summary": "メキシコGP決勝の経過を整理したレポート。フェルスタッペンが3勝目、アントネッリが20歳68日で最年少王者となり、フェラーリの同士討ちが勝利を逃す要因になったと述べる。ボッタスのクラッシュによる赤旗、ピアストリらへのペナルティ、ソフトが有利だったタイヤ事情にも触れている。",
+   "url": "https://note.com/formula1report/n/nf48f6c083055",
+   "published": "2026-11-02T07:51:23+09:00",
+   "teams": [
+    "redbull",
+    "mercedes",
+    "ferrari"
+   ],
+   "circuit": "mexico"
   },
   {
    "id": "substack-gpexplained-mexico-altitude",
@@ -81,6 +114,20 @@
    "url": "https://gpexplained.substack.com/p/why-mexico-citys-altitude-is-so-tough",
    "published": "2026-11-01T17:02:30+09:00",
    "circuit": "mexico"
+  },
+  {
+   "id": "blog-f1laptime-us-gp-race-pace",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Takumi",
+   "title": "2026年アメリカGP レースペース分析",
+   "summary": "全22台のラップタイムから、燃料の影響やタイヤの摩耗、渋滞、車両トラブルを補正し、同じタイヤ・同じ距離で走った場合の実質的なレースペースを推定した分析。アントネッリを基準に、ルクレールとフェルスタッペンが約0.1秒差、ハミルトンとノリスが約0.2秒差という見立てで、接触でダメージを負ったドライバーは評価から除外している。",
+   "url": "https://f1-lap-time.com/?page_id=17677",
+   "published": "2026-11-01T12:00:00+09:00",
+   "circuit": "austin"
   },
   {
    "id": "note-formula1report-mexico-quali-analysis-2026",
@@ -546,259 +593,6 @@
     "ferrari"
    ],
    "circuit": "singapore"
-  },
-  {
-   "id": "blog-f1laptime-singapore-review",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Takumi",
-   "title": "シンガポールGPレビュー",
-   "summary": "フェルスタッペンがレースペースでルクレールを約0.3秒上回り、39周目のVSCでも残留が正解だったとの見立てを示したレビュー。アントネッリのタイトル決定の条件や、中東2戦が不透明な日程への疑問にも触れている。",
-   "url": "https://f1-lap-time.com/?page_id=17623",
-   "published": "2026-10-13T12:00:00+09:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "blog-f1laptime-singapore-pitstop",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Takumi",
-   "title": "2026年シンガポールGP ピットストップ分析",
-   "summary": "シンガポールGPの各ドライバーのピット作業の静止時間とピットレーン通過時間を比較した分析。停止時間はフェルスタッペンの2.20秒が最速で、ストロール、アントネッリが続いたと整理している。ボックス性能の大半は21〜22秒の狭い範囲に収まるという。",
-   "url": "https://f1-lap-time.com/?page_id=17643",
-   "published": "2026-10-13T12:00:00+09:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-aston-race-analysis-singapore",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "formula1report",
-   "title": "【決勝分析】アストンマーティン、ドライバビリティに苦しむ週末。ホンダPUの課題とデプロイメントの問題が浮き彫りに【シンガポールGP】",
-   "summary": "アストンマーティンがシンガポールGPで苦戦した理由を、ホンダPUのターボ交換によるピットレーン発進、ドライバビリティの悪化、エネルギーデプロイの不具合から分析。レースペースは中団後方並みで、ピットレーンからの追い上げが難しかったという見立て。マレーシアの勢いを維持できず、次戦までの改善が焦点としている。",
-   "url": "https://note.com/formula1report/n/n1fbc7ad2743a",
-   "published": "2026-10-12T12:22:09+09:00",
-   "teams": [
-    "astonmartin"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "blog-f1laptime-singapore-race-pace",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Takumi",
-   "title": "2026年シンガポールGP レースペース分析",
-   "summary": "シンガポールGPで各ドライバーが同じ条件で走った場合のレースペースを、燃料やトラフィックを補正して推定した分析。フェルスタッペンを基準に、ルクレールが約0.3秒、アントネッリが約0.4秒、ノリスが約0.5秒遅れと見積もり、上位4台は0.5秒以内に収まるという。ハミルトンはタイヤの挙動がばらつき、推定の対象外としている。",
-   "url": "https://f1-lap-time.com/?page_id=17625",
-   "published": "2026-10-12T12:00:00+09:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "blog-albonnote-singapore-race-report",
-   "platform": "blog",
-   "site": "アルボンノート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "決勝",
-   "author": "アルボンさん",
-   "title": "F1 2026年シーズン第18戦シンガポールGP 決勝リポート ハードタイヤ用無し。",
-   "summary": "決勝を振り返り、フェルスタッペンのレースペースとタイヤの持ちを高く評価している。ソフトの摩耗が予想より大きくルクレールが対抗できなかったとし、ハミルトンの戦略についてはフェラーリに改善を求めた。ローソンの7位を中団の好結果として挙げ、マクラーレンの4・5位は期待に届かなかったという見方だ。",
-   "url": "https://albonnote.com/f1-2026%e5%b9%b4%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e7%ac%ac18%e6%88%a6%e3%82%b7%e3%83%b3%e3%82%ac%e3%83%9d%e3%83%bc%e3%83%abgp-%e6%b1%ba%e5%8b%9d%e3%83%aa%e3%83%9d%e3%83%bc%e3%83%88-%e3%83%8f/",
-   "published": "2026-10-12T12:00:00+09:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-race-analysis-singapore",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "formula1report",
-   "title": "【決勝分析】ソフトが鍵を握った決勝を徹底分析。フェラーリの長年の課題とデグラデーション耐性不足、ハミルトンはレース後に体調不良【シンガポールGP】",
-   "summary": "ソフトスタートの戦略が優位で、フェルスタッペンはソフトからミディアムへの走りでペースを保って勝ったという分析。フェラーリはタイヤのデグラデーションと戦略に課題があり、ハミルトンのVSC中のステイアウトが表彰台を逃す要因になったと見ている。レッドブルの速さが際立ち、メルセデスとマクラーレンはペース不足だったという見立て。",
-   "url": "https://note.com/formula1report/n/n57b1bced1e02",
-   "published": "2026-10-12T11:32:20+09:00",
-   "teams": [
-    "ferrari",
-    "redbull"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-race-singapore",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "決勝",
-   "author": "formula1report",
-   "title": "【決勝】フェルスタッペン、無線トラブルを跳ね除けシンガポール初制覇。フェラーリはペース不足に苦しみ、ハミルトンはチグハグな戦略で6位【シンガポールGP】",
-   "summary": "レッドブルがシンガポールで明らかに最速で、フェルスタッペンが無線トラブルがあっても楽に勝ったという見立て。フェラーリはペース不足で、ハミルトンは戦略が噛み合わず6位だったと分析している。アントネッリは3位で選手権首位を守ったが、トラックリミットの問題が繰り返された点を懸念材料に挙げている。",
-   "url": "https://note.com/formula1report/n/n1ac62469b923",
-   "published": "2026-10-11T23:06:30+09:00",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "mercedes"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "substack-f1iq-as-if-it-were-ever-in-doubt",
-   "platform": "substack",
-   "site": "F1 IQ",
-   "lang": "en",
-   "paid": false,
-   "cat": "決勝",
-   "author": "F1ip",
-   "title": "疑う余地などあっただろうか　シンガポールGP決勝の振り返り",
-   "orig": "As If It Were Ever In Doubt",
-   "summary": "フェルスタッペンが全周をリードしてシンガポール初優勝を飾った決勝を振り返る。フェラーリは戦略を分けたがルクレールのピット出口の順序で崩れ、ハミルトンがVSC中にステイアウトして6位に沈んだと見る。アントネッリのリードは100ポイントを超え、オースティンでの王座決定もあり得るという見立てだ。",
-   "url": "https://f1iq.substack.com/p/as-if-it-were-ever-in-doubt",
-   "published": "2026-10-11T12:00:00+09:00",
-   "teams": [
-    "ferrari",
-    "redbull"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-saturday-analysis-singapore",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Formula1 Report",
-   "title": "【土曜分析】スプリント&予選を徹底分析。インターから見えたシンガポールの特殊性と決勝戦略、フェラーリの弱点は新たな強みに【シンガポールGP】",
-   "summary": "スプリントと予選を踏まえた決勝の展望記事。インターミディエイトでのグリップ回復の遅さを指摘し、レッドブルはスタート、フェラーリは二人の運用、メルセデスは新旧仕様の比較がカギという見立てを示す。タイヤはソフト始動の1ストップ想定としている。",
-   "url": "https://note.com/formula1report/n/n815724c46318",
-   "published": "2026-10-11T05:21:02+09:00",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "mercedes"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-quali-singapore",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "予選",
-   "author": "Formula1 Report",
-   "title": "【予選】フェルスタッペンが通算50回目のポールポジション獲得。Q2まで好調のハミルトンは終盤に失速、メルセデスも苦戦【シンガポールGP】",
-   "summary": "シンガポールGP予選の振り返り。フェルスタッペンが通算50回目のポールを取り、ルクレールが2番手に入った一方、Q2まで好調だったハミルトンはQ3で伸びず3番手に終わったとまとめる。メルセデス勢の苦戦にも触れている。",
-   "url": "https://note.com/formula1report/n/nebfee9128568",
-   "published": "2026-10-10T23:46:52+09:00",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "mercedes"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-sprint-singapore",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Formula1 Report",
-   "title": "【スプリント】雨が呼んだ大波乱、8台リタイアのサバイバル。フェルスタッペンがポールトゥーウイン、ラッセルは自滅、マクラーレンは同士討ち【シンガポールGP】",
-   "summary": "雨で30分遅れて始まったシンガポールGPスプリントを振り返る記事。路面が乾ききらない中でラッセルやストロールらが脱落し、マクラーレン同士の接触も起きたと整理する。フェルスタッペンのポールトゥーウインを軸に、各チームの明暗を追っている。",
-   "url": "https://note.com/formula1report/n/n14640aac71e8",
-   "published": "2026-10-10T19:34:50+09:00",
-   "teams": [
-    "redbull",
-    "mercedes",
-    "mclaren"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-friday-analysis-singapore",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Formula1 Report",
-   "title": "【金曜分析】スプリント予選から読み解く勢力図。フェルスタッペンの速さとフェラーリ独自のアプローチに迫る【シンガポールGP】",
-   "summary": "シンガポールGP金曜の各チームを整理した分析記事。フェルスタッペンはSector1の直線区間で差をつけた一方、フェラーリは低速コーナーで強いという見立てを示す。メルセデスの新旧仕様比較やマクラーレンの燃料噴射の問題、FIAのSQ1ミスの影響も取り上げている。",
-   "url": "https://note.com/formula1report/n/n5ae218c73569",
-   "published": "2026-10-10T01:13:39+09:00",
-   "teams": [
-    "redbull",
-    "ferrari",
-    "mercedes",
-    "mclaren"
-   ],
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-sq-singapore",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "予選",
-   "author": "Formula1 Report",
-   "title": "【SQ】フェルスタッペン、圧巻のSector1でポールポジション獲得、ラッセル＆ルクレールを退ける。アントネッリは7番手に沈む【シンガポールGP】",
-   "summary": "シンガポールGPスプリント予選を時系列で振り返った記事。SQ1はペレスのクラッシュによる赤旗で混乱したと整理し、SQ3ではSector1で明確に速かったフェルスタッペンの1周が決定的だったという見立てを示す。ラッセルはメルセデス勢で最も強いと評価している。",
-   "url": "https://note.com/formula1report/n/n10cc2733440c",
-   "published": "2026-10-09T22:52:54+09:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "substack-simplifyf1-singapore-prixview",
-   "platform": "substack",
-   "site": "Simplify F1",
-   "lang": "en",
-   "paid": false,
-   "cat": "分析",
-   "author": "Christopher Kiser",
-   "title": "汗の時間――シンガポールGPプレビュー",
-   "orig": "Time to Sweat - Prixview: Singapore GP 2026",
-   "summary": "マリーナベイは抜きにくく、オーバーテイクは正統な追い抜きよりドライバーのミスから生まれやすいという見立て。マレーシアの勢いからフェルスタッペンを本命、アントネッリを次点に挙げ、フェラーリとマクラーレンはほぼ互角、レーシングブルズはダブル入賞の可能性があると予想している。",
-   "url": "https://simplifyf1.substack.com/p/time-to-sweat-prixview-singapore",
-   "published": "2026-10-09T20:47:31+09:00",
-   "circuit": "singapore"
-  },
-  {
-   "id": "note-formula1report-fp1-singapore",
-   "platform": "note",
-   "site": "Formula1 Report",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Formula1 Report",
-   "title": "【FP1】ラッセル最速。トップ4チームは僅差の争い、ヒュルケンベルグはギアボックストラブルでストップ【シンガポールGP】",
-   "summary": "シンガポールGPのFP1を振り返る記事。ラッセルが1分32秒274で最速となり、上位4チームが僅差で並んだ構図を整理している。ヒュルケンベルグのギアボックストラブルによる停止や、ラッセルのPU違反による決勝40グリッド降格にも触れている。",
-   "url": "https://note.com/formula1report/n/nbc7c4c211a48",
-   "published": "2026-10-09T17:44:45+09:00",
-   "circuit": "singapore",
-   "teams": [
-    "mercedes",
-    "audi"
-   ]
   }
  ]
 }
