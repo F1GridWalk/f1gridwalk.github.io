@@ -1,0 +1,415 @@
+{
+ "slug": "norris-happy-to-see-it-go",
+ "gp": "メキシコシティGP",
+ "title": "ジョージより、2つ上のレベル",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "王者として走る最後のレースは、5位。1年前に「僕らは4番だって言うのはかっこよくない」と1番を選んだ人が、「僕の1番が彼に渡るのを見られてうれしい」と言った。「人生でいちばん難しいマシン」で2勝、ランキング6位。渡す相手は20歳で、1番は付けないという。ノリスのマシンは、4番に戻る。",
+ "checked": "2026-11-03",
+ "checkedNote": "The Race、Motorsport Week、grandprix.com、AutoHebdo、Formula1.com、FIA、RacingNews365、GPblog、RACER、beIN SPORTS、Crash.net、GRANDPRIX247、Sky Sports、ESPN、Yahoo Sports、Autosport、Pit Debrief の原文を11月3日に確認しました。本人の言葉は英語から編集部が訳しました（AutoHebdo の分はフランス語のメディアへの発言で、英語の訳をさらに訳しています）。「記録は破られるもの」とノリスが言ったという日本語の要約は、英語の原文が見つからないので使っていません。",
+ "common": [
+  "ノリスは2025年12月7日のアブダビで2点差の初タイトル。2026年は1番を付けて走り、「最悪のマシン」「人生でいちばん難しいマシン」でハンガリーとザントフォールトの2勝、ランキング6位221点（王者の翌年としては1997年のヒル以来の低さ）。",
+  "メキシコは予選6番手、決勝5位（ピットで6秒ロス、赤旗で作戦が消えた）。王者として走る最後のレース。",
+  "アントネッリについて「全員を吹き飛ばした」「ジョージより2つ上のレベル」「僕の1番が渡るのを見られてうれしい」「誰よりもふさわしい」。",
+  "アントネッリは来年も12番。ノリスのマシンは4番に戻る。"
+ ],
+ "outlets": [
+  {
+   "id": "en-skysports-antonelli-champion-mexico",
+   "angle": "レース",
+   "adds": [
+    "アントネッリ戴冠、ノリス5位。"
+   ]
+  },
+  {
+   "id": "en-therace-verdict-antonelli-title",
+   "angle": "評価",
+   "adds": [
+    "ザ・レース5人の記者がアントネッリの初タイトルを評価。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「全員を吹き飛ばした」「僕の1番が渡るのを見られてうれしい」",
+   "w": "The Race（11月2日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「僕らは4番だって言うのはかっこよくない」",
+   "w": "Formula1.com（2025年12月8日、Sky Sports News への発言）を編集部が訳した。"
+  },
+  {
+   "t": "「デジャヴ」「最悪のマシン」「心臓にナイフ」「いちばん難しいマシン」",
+   "w": "Formula1.com、The Race、GPblog、RACER（英語）を編集部が訳した。"
+  },
+  {
+   "t": "「キミを見ていたいだけ」「去年、同じことを経験した」「誰よりもふさわしい」",
+   "w": "AutoHebdo（11月2日、フランスのメディアへの発言の英訳）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ピアストリの順位",
+   "t": "ペナルティ後の順位を13位とする記事と15位とする記事がある。本文には出していない。"
+  }
+ ],
+ "unknownsFillable": [
+  "残り4戦とコンストラクターズ3位争い（レッドブルと16点差）。",
+  "2027年型マシン。"
+ ],
+ "unknownsLimits": [
+  "去年のカタールでアントネッリのミスがノリスに2点を与えた件について、ノリス本人が何か言ったか（記事がない）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "渡す側の1年は、何だったか？",
+  "rows": [
+   {
+    "k": "言葉",
+    "t": "「期待を持たない」で始まり、「最悪のマシン」「心臓にナイフ」「いちばん難しいマシン」。それでも「機材のせいにしたことがない」。"
+   },
+   {
+    "k": "相手",
+    "t": "1年を通してアントネッリを褒め続けた。「2つ上のレベル」「間抜けに見せた」「誰よりもふさわしい」。"
+   },
+   {
+    "k": "番号",
+    "t": "1番は「みんなのため」に付け、「渡っていくのを見られてうれしい」と手放す。来年は4番で取り返しに行く。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "王者の翌年に低迷した例は？",
+   "rules": [
+    "defending-champion",
+    "world-champion"
+   ],
+   "links": [
+    "/topics/norris-knife-edge/"
+   ]
+  },
+  {
+   "q": "カーナンバーの1番は、どう決まる？",
+   "rules": [
+    "car-number"
+   ],
+   "links": [
+    "/topics/antonelli-helmet-for-ayrton/"
+   ]
+  },
+  {
+   "q": "2026年のマクラーレンは、何が難しい？",
+   "rules": [
+    "downforce",
+    "setup"
+   ],
+   "links": [
+    "/topics/piastri-story-of-my-year/"
+   ]
+  },
+  {
+   "q": "アントネッリの戴冠の日は？",
+   "rules": [
+    "youngest-records"
+   ],
+   "links": [
+    "/topics/antonelli-champion-of-the-world/"
+   ]
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-11-02T07:00:00+09:00",
+   "t": "メキシコ決勝5位、王者として最後のレース"
+  },
+  {
+   "at": "2026-11-03T18:20:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "ノリスは2025年に2点差で初タイトルを取り、1番を「みんなのため」に付けて2026年を走ったが、「最悪のマシン」「人生でいちばん難しいマシン」で2勝、ランキング6位（王者の翌年としては1997年のヒル以来の低さ）。メキシコは5位で、王者として走る最後のレース。アントネッリについて「全員を吹き飛ばした」「ジョージより2つ上のレベル」「僕の1番が彼に渡るのを見られてうれしい。ある意味、渡っていくのを見られてうれしい」「誰よりもふさわしい」。アントネッリは12番のままなので、ノリスのマシンは4番に戻る。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "王者として走る最後のレースは、5位だった。「僕の1番が彼に渡るのを見られて、うれしい」。1年前に「僕らは4番だって言うのはかっこよくない」と言った人の、渡す側の1年。",
+  "body": [
+   [
+    "h",
+    "「僕の1番が、彼に渡るのを見られてうれしい」"
+   ],
+   [
+    "p",
+    "11月1日、メキシコシティ。ランド・ノリスは5位でゴールした。王者として走る、最後のレースだった。"
+   ],
+   [
+    "p",
+    "レースのあと、ノリスは20歳の新しいチャンピオンについて話した。「信じられない。彼がやったことは、全員を吹き飛ばした」。「彼は、ほかの全員を素人みたいに見せた」。「このマシンの乗り方を理解するために努力して、誰よりもうまく引き出した」。「F1の2年目で、20歳。信じられないよ」。"
+   ],
+   [
+    "p",
+    "「僕の1番が彼に渡るのを見られて、とてもうれしい。彼にはその資格があるから」。「ある意味、渡っていくのを見られてうれしいんだ」。"
+   ],
+   [
+    "h",
+    "1番は、みんなのため"
+   ],
+   [
+    "p",
+    "1年前の12月7日、アブダビ。ノリスは3位でゴールして、前王者のフェルスタッペンに2点差で、初めてのチャンピオンになった。「しばらく泣いていなかった。泣くとは思わなかったけど、泣いた」。「これは僕のワールドチャンピオンシップじゃない。僕らのだ」。「これで少しは、マックスがどう感じているか分かる」。"
+   ],
+   [
+    "p",
+    "その翌日、来年は1番を付けると決めた。「伝統だし、理由があってそこにある」。「だから僕のためじゃなくて、みんなのためでもある」。「『僕らは4番だ』って言うのは、そんなにかっこよくないだろ。だから、みんなは僕より喜ぶと思う」。"
+   ],
+   [
+    "h",
+    "「1年を、まるごとデジャヴに」"
+   ],
+   [
+    "p",
+    "2月、チームの工場で、ノリスは今年の目標を聞かれて言った。「1年をまるごとデジャヴにして、全部をもう一度起こす」。「去年、自分には必要なものがあると証明できた。もう、自分を疑う必要はない」。「もうひとつ学んだのは、期待を持たないことだ」。"
+   ],
+   [
+    "p",
+    "期待は、開幕戦でなくなった。メルボルンで、新しいルールのマシンに乗って、こう言った。「F1史上でいちばんいい、いちばん乗りやすいマシンから、たぶん最悪のマシンに来た」。「つらいけど、それと生きて、もらったものを最大にするしかない」。"
+   ],
+   [
+    "p",
+    "6月、「このすべてが、タイトルの防衛を当面不可能にしている。痛いけど、レースとはそういうものだ」。9月のバクー、「どれだけ離されているかを見ると、心臓にナイフだ」。10月のオースティンで、「人生で運転した中で、たぶんいちばん難しいマシン」。"
+   ],
+   [
+    "h",
+    "2勝"
+   ],
+   [
+    "p",
+    "それでも、2回勝った。7月のハンガリー、ポールから。「戻ってこられて、また1番を見られてうれしい」。「チームは、ようやくまた勝てるマシンを作るために、ものすごく働いてくれた」。8月のザントフォールトでは、アントネッリを抜いて勝った。「ブレーキングで行くと決めていた。あの動きが、レースを勝たせてくれた」。"
+   ],
+   [
+    "p",
+    "9月のマドリードで勝ったのはアントネッリだったが、本人はこう言った。「今日はランドが勝つにふさわしかった。だから、あまりいい気分じゃない」。"
+   ],
+   [
+    "p",
+    "ランキングはいま6位、221点。残り4戦でこのままなら、王者の翌年としては、1997年にアロウズで12位に終わったデイモン・ヒル以来の低さになる。マクラーレンは、2年続けてチャンピオンだったチームが、コンストラクターズで4位にいる。"
+   ],
+   [
+    "h",
+    "「ジョージより、2つ上のレベル」"
+   ],
+   [
+    "p",
+    "ノリスは1年を通して、アントネッリのことを聞かれ続けた。4月、「1年目から2年目で、全部の領域で大きく前に進む。僕の19歳の1年目はかなり早く感じたけど、彼は2年目でもうチャンピオンシップを争っている」。7月、前半戦のベストドライバーを問われて、「キミだと言わないといけない。完全なパッケージとして」。「でも、僕にいいマシンがあれば、誰にも負けない気がしている」。"
+   ],
+   [
+    "p",
+    "10月、「ジョージはとてもいいドライバーだと思う。でもキミは、シーズンを通して、ジョージより2つ上のレベルにいた」。「言う必要もない。十分に明らかだ」。ラッセルの「このマシンは自分に合わない」という話を向けられると、「僕は機材のせいにしたことがない。いつも、まず自分を見る」。自分のマクラーレンを、1年言い続けてきた人の言葉だ。"
+   ],
+   [
+    "p",
+    "メキシコの木曜日。「キミには、敬意しかない」。「とてもいいやつで、仲がいい。1番を彼に渡すのは、まったく構わない」。"
+   ],
+   [
+    "h",
+    "メキシコの5位"
+   ],
+   [
+    "p",
+    "予選は6番手。Q2で出来すぎたラップを出して、Q3でそれ以上が出なかった。「Q2でいいラップを出した時点で、Q3はもうだめだと分かった」。「あのラップをもう一度出せる可能性は、ゼロだ」。「ただ、僕らは遅すぎる」。"
+   ],
+   [
+    "p",
+    "決勝では、長く引っ張って一時2番手まで上がった。39周目のピットでボックスを行き過ぎて6秒を失い、5番手。その直後の赤旗で、作戦は消えた。再スタートのあとはルクレールに迫ったが、抜けなかった。「彼がミスするのを期待していた。ミスしても、曲がりくねった区間で、抜くのは無理だった」。"
+   ],
+   [
+    "p",
+    "自分のレースより、話したいことがあった。「正直、キミを見ていたいだけなんだ」。「もちろん、僕にとっても感情は強い。去年、同じことを経験したから」。「あの瞬間は、世界の頂点にいるように感じる。彼もきっと、そうだと思う」。"
+   ],
+   [
+    "h",
+    "4番に戻る"
+   ],
+   [
+    "p",
+    "渡るのは、番号ではなくタイトルだ。アントネッリは、来年も12番のままでいくと言った。1番は、誰も付けない。ノリスのマシンの1番は、4番に戻る。"
+   ],
+   [
+    "p",
+    "ステラ代表は、このマシンの性格は改良では直らず、根本的に変えられるのは来年のマシンからだと言っている。ノリスはメキシコのあと、「来季、タイトルを取り戻すために、ずっと強い戦いをする」とチームのコメントに書いた。"
+   ],
+   [
+    "p",
+    "「『僕らは4番だ』って言うのは、そんなにかっこよくない」。そう言った人が、1年で1番を渡して、4番で取り返しに行く。渡す相手については、こう言った。「彼は、誰よりもこのタイトルにふさわしい」。"
+   ]
+  ],
+  "terms": [
+   [
+    "カーナンバー",
+    "car-number"
+   ],
+   [
+    "Q3",
+    "qualifying"
+   ],
+   [
+    "赤旗",
+    "red-flag"
+   ],
+   [
+    "コンストラクターズ",
+    "constructors-championship"
+   ],
+   [
+    "前年王者",
+    "defending-champion"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "The Race",
+    "title": "New F1 champion Antonelli 'made everyone look silly'",
+    "url": "https://www.the-race.com/formula-1/new-f1-champion-antonelli-made-everyone-look-silly/",
+    "note": "2026年11月2日。「全員を吹き飛ばした」「間抜けに見せた」「僕の1番が渡るのを見られてうれしい」「ある意味、渡っていくのを見られてうれしい」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Motorsport Week",
+    "title": "F1 Mexico City GP driver ratings",
+    "url": "https://www.motorsportweek.com/2026/11/03/f1-mexico-city-gp-driver-ratings/",
+    "note": "2026年11月3日。予選6番手、決勝5位、「王者として走る最後のレース」。"
+   },
+   {
+    "name": "grandprix.com",
+    "title": "Mexican GP 2026 race notes",
+    "url": "https://www.grandprix.com/races/mexican-gp-2026-race-notes.html",
+    "note": "2026年11月1日。35周目に2番手、39周目のピットで行き過ぎて約6秒ロス、赤旗。"
+   },
+   {
+    "name": "The Race",
+    "title": "Everything we learned from F1's 2026 Mexican Grand Prix",
+    "url": "https://www.the-race.com/formula-1/everything-we-learned-from-f1s-2026-mexican-grand-prix/",
+    "note": "2026年11月2日。予選後「Q3は終わったと分かった」「僕らは遅すぎる」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "AutoHebdo",
+    "title": "Norris passes the torch to Antonelli: 'the title couldn't have gone to a better person'",
+    "url": "https://www.autohebdof1.com/news/f1/Norris-passes-the-torch-to-Antonelli;-the-title-couldn't-have-gone-to-a-better-person..html",
+    "note": "2026年11月2日。フランスのメディアへの言葉「キミを見ていたいだけ」「去年、同じことを経験した」「世界の頂点」「誰よりもふさわしい」「ミスするのを期待していた」（英語の訳から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'I've dreamed of this for a long time' – Norris shares emotional reaction to maiden title",
+    "url": "https://www.formula1.com/en/latest/article/ive-dreamed-of-this-for-a-long-time-norris-shares-emotional-reaction-to.67xqJKYyMr6vHBZLpDPtco",
+    "note": "2025年12月7日。「泣くとは思わなかった」「マックスがどう感じているか」。"
+   },
+   {
+    "name": "FIA",
+    "title": "F1 2025 Abu Dhabi Grand Prix post-race press conference transcript",
+    "url": "https://www.fia.com/news/f1-2025-abu-dhabi-grand-prix-post-race-press-conference-transcript",
+    "note": "2025年12月7日。「僕のワールドチャンピオンシップじゃない。僕らのだ」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris confirms he will use car number 1 next season",
+    "url": "https://www.formula1.com/en/latest/article/norris-confirms-he-will-use-car-number-1-next-season-after-claiming-maiden.ACReb1X9OOwHKUb2u8hPk",
+    "note": "2025年12月8日。「伝統」「みんなのため」「僕らは4番だって言うのはかっこよくない」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris on his goals for 2026 and getting used to his world champion status",
+    "url": "https://www.formula1.com/en/latest/article/norris-on-his-goals-for-2026-getting-used-to-his-world-champion-status-and.4XZTM1DyYLCUJg5Z9jy4fG",
+    "note": "2026年2月5日。「デジャヴ」「自分を疑う必要はない」「期待を持たない」。"
+   },
+   {
+    "name": "The Race",
+    "title": "Lando Norris F1 2026 criticism after Australian GP",
+    "url": "https://www.the-race.com/formula-1/lando-norris-f1-2026-criticism-australian-gp/",
+    "note": "2026年3月7日。「いちばんいいマシンから、たぶん最悪のマシンに」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Lando Norris 'hurting' over 'impossible' F1 title defence",
+    "url": "https://racingnews365.com/lando-norris-hurting-over-impossible-f1-title-defence",
+    "note": "2026年6月12日。「防衛を当面不可能に」「痛い」。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Norris admits McLaren are 'pretty pants' in Baku: 'a knife in the heart'",
+    "url": "https://www.gpblog.com/en/news/norris-admits-mclaren-are-pretty-pants-in-baku-a-knife-in-the-heart",
+    "note": "2026年9月24日。「心臓にナイフ」。"
+   },
+   {
+    "name": "RACER",
+    "title": "'Insanely difficult' McLaren had pace for front row - Norris",
+    "url": "https://racer.com/2026/10/24/-insanely-difficult-mclaren-had-pace-for-front-row---norris",
+    "note": "2026年10月24日。「人生でいちばん難しいマシン」。"
+   },
+   {
+    "name": "beIN SPORTS",
+    "title": "Norris 'happy to be back and see the number one again' after Hungaroring victory",
+    "url": "https://www.beinsports.com/en-asia/motorsports/formula-1/articles/norris-happy-to-be-back-and-see-the-number-one-again-after-hungaroring-victory-2026-07-26",
+    "note": "2026年7月26日。ハンガリー優勝。"
+   },
+   {
+    "name": "FIA",
+    "title": "F1 2026 Dutch Grand Prix post-race press conference transcript",
+    "url": "https://api.fia.com/news/f1-2026-dutch-grand-prix-post-race-press-conference-transcript",
+    "note": "2026年8月23日。「あの動きがレースを勝たせてくれた」。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Kimi Antonelli makes honest confession after latest F1 win in Madrid",
+    "url": "https://www.crash.net/f1/news/1104688/1/kimi-antonelli-makes-honest-confession-after-latest-f1-win-madrid",
+    "note": "2026年9月13日。アントネッリ「ランドが勝つにふさわしかった」。"
+   },
+   {
+    "name": "GRANDPRIX247",
+    "title": "Lando Norris heaps praise on 'very capable' Kimi Antonelli",
+    "url": "https://www.grandprix247.com/formula-1-news/lando-norris-heaps-praise-on-very-capable-kimi-antonelli",
+    "note": "2026年4月。「2年目でもうチャンピオンシップを争っている」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "F1 champions laud Kimi Antonelli over pertinent question",
+    "url": "https://racingnews365.com/f1-champions-laud-kimi-antonelli-over-pertinent-question",
+    "note": "2026年7月26日。「完全なパッケージ」「誰にも負けない気がしている」。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Norris and Hamilton praise Antonelli ahead of first title chance",
+    "url": "https://www.skysports.com/f1/news/13602369/",
+    "note": "2026年10月23日。「ジョージより2つ上のレベル」。"
+   },
+   {
+    "name": "ESPN",
+    "title": "Norris sends message to F1 drivers unhappy with cars: 'do a better job'",
+    "url": "https://www.espn.com/f1/story/_/id/50320292/",
+    "note": "2026年10月30日。「機材のせいにしたことがない」。"
+   },
+   {
+    "name": "Yahoo Sports（motorsport.com 配信）",
+    "title": "Lando Norris says Kimi Antonelli deserves the No 1",
+    "url": "https://sports.yahoo.com/articles/lando-norris-says-kimi-antonelli-232236172.html",
+    "note": "2026年11月1日。木曜の「敬意しかない」「1番を渡すのは構わない」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Race day in Mexico City 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-mexico-city-2026.5jvq4rkRMEYHkdIE7IXwxK",
+    "note": "2026年11月2日。「タイトルを取り戻すために」、ステラ「16点差」。"
+   },
+   {
+    "name": "Autosport",
+    "title": "The worst title defences in F1 history",
+    "url": "https://www.autosport.com/f1/news/the-worst-title-defences-in-f1-history/10814422/",
+    "note": "2026年4月22日。1997年デイモン・ヒル12位。"
+   },
+   {
+    "name": "Pit Debrief",
+    "title": "Stella explains McLaren's F1 struggles as major fixes may wait until 2027",
+    "url": "https://www.pitdebrief.com/post/stella-explains-mclarens-f1-struggles-after-2026-singapore-gp-as-major-fixes-may-wait-until-2027/",
+    "note": "2026年10月18日。「もっと根本的な何か」「早くてもMCL41」。"
+   }
+  ]
+ }
+}

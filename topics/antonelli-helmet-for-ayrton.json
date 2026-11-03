@@ -1,0 +1,359 @@
+{
+ "slug": "antonelli-helmet-for-ayrton",
+ "gp": "サンパウロGP",
+ "title": "アイルトンのために",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "「ブラジルでは、特別なヘルメットをかぶる。アイルトンのために」。1991年に6速だけでインテルラゴスを勝った人の35年後、その人の番号12で王者になった20歳が、セナの母国へ行く。1番は付けない。「一度もいい数字じゃなかった」。去年はセナの墓に、同じ日に2回行った。",
+ "checked": "2026-11-03",
+ "checkedNote": "Grande Prêmio（英語・ポルトガル語）、RaceFans、motorsport.com 日本版、The Race、Formula1.com、F1i.com、Yahoo Sports、RacingNews365、Exame、senna.com、formulaonehistory.com、Sky Sports の原文を11月3日に確認しました。本人の言葉は英語とポルトガル語から編集部が訳しました（日本語訳のあるものは motorsport.com 日本版に合わせた）。ヘルメットの絵柄とデザイナーは、11月3日の時点でどの記事にも書かれていません。1番を避ける理由として The Race は2020年のカートのクラッシュを推測していますが、本人は言っていないので本文に入れていません。",
+ "common": [
+  "アントネッリは11月1日のメキシコの会見で、サンパウロGP（11月6〜8日、スプリントなし、決勝は日本時間9日2時）でセナ追悼の特別ヘルメットを使うと明かした。1991年ブラジルGP（セナが6速だけで勝った母国初優勝）から35年。",
+  "番号12はセナが1988年に初タイトルを取った番号。2027年も1番ではなく12のまま（「謙虚でいるため」「1番は一度もいい数字じゃなかった」）。12番での王者はセナ以来。",
+  "2025年11月、セナの墓を同じ日に2回訪問。サンパウロは3つとも2位で、ヘルメットをセナ家に贈った。",
+  "セナが走るのはDVDでしか見ていない。イタリア人王者はアスカリ以来73年ぶり。"
+ ],
+ "outlets": [
+  {
+   "id": "pt-grandepremio-antonelli-senna-helmet-interlagos",
+   "angle": "ヘルメット",
+   "adds": [
+    "「最高の出来の一つ」。"
+   ]
+  },
+  {
+   "id": "de-motorsportmagazin-antonelli-number-12",
+   "angle": "番号12",
+   "adds": [
+    "1番は縁起が悪い。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「アイルトンのために」「35年」「いちばんいいもののひとつ」",
+   "w": "Grande Prêmio（11月2日、英語・ポルトガル語）を編集部が訳した。"
+  },
+  {
+   "t": "「12のままでいく」「迷信深い」「一度もいい数字じゃなかった」",
+   "w": "RaceFans（11月2日、英語）と motorsport.com 日本版の訳。"
+  },
+  {
+   "t": "「アイルトンのためだ」「DVD」「コースの外でも」",
+   "w": "F1i.com（2025年2月7日、メルセデスの取材）を編集部が訳した。"
+  },
+  {
+   "t": "墓地、本、「挨拶したかった」",
+   "w": "RacingNews365（2025年11月7日）を編集部が訳した。"
+  },
+  {
+   "t": "1991年の6速、雨、トロフィー",
+   "w": "senna.com。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "1番を避ける理由",
+   "t": "本人は「迷信深い」「付けたときはひどいことになった」。The Race は2020年のカート世界選手権で1番を付けてクラッシュし脚を骨折したことを推測しているが、本人の言葉ではない。"
+  },
+  {
+   "k": "2025年サンパウロのヘルメット",
+   "t": "Exame は特別デザインではなく、レースで使ったヘルメットをセナ家に贈ったと書いている。"
+  }
+ ],
+ "unknownsFillable": [
+  "ヘルメットの絵柄（週末に公開される）。",
+  "サンパウロの結果。"
+ ],
+ "unknownsLimits": [
+  "デザイナーが誰か。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜ、このヘルメットが特別か？",
+  "rows": [
+   {
+    "k": "35年",
+    "t": "1991年、6速だけで勝った母国初優勝。その年に合わせた。"
+   },
+   {
+    "k": "12",
+    "t": "セナの番号で王者になり、来年も1番を付けない。"
+   },
+   {
+    "k": "見たことがない",
+    "t": "DVDでしか見ていない人を、墓に挨拶に行くほど思っている。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "カーナンバーは、どう決まる？",
+   "rules": [
+    "car-number"
+   ],
+   "links": []
+  },
+  {
+   "q": "最年少王者の記録は？",
+   "rules": [
+    "youngest-records",
+    "world-champion"
+   ],
+   "links": [
+    "/deep/younger-champions/",
+    "/topics/antonelli-champion-of-the-world/"
+   ]
+  },
+  {
+   "q": "インテルラゴスは、どんなコース？",
+   "rules": [
+    "circuit-interlagos",
+    "anticlockwise"
+   ],
+   "links": [
+    "/deep/interlagos-chaos/"
+   ]
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-11-02T17:00:00+09:00",
+   "t": "メキシコの会見でセナ追悼ヘルメットと番号12の継続を明かす"
+  },
+  {
+   "at": "2026-11-03T18:25:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "アントネッリは11月1日のメキシコの会見で、サンパウロGPでセナ追悼の特別ヘルメットを使うと明かした（1991年にセナが6速だけで勝った母国初優勝から35年）。番号12はセナが1988年に初タイトルを取った番号で、2027年も1番ではなく12のまま（「謙虚でいるため」「1番は一度もいい数字じゃなかった」）。12番での王者はセナ以来。2025年11月にはセナの墓を同じ日に2回訪ね、サンパウロのヘルメットをセナ家に贈った。セナが走るのはDVDでしか見ていない。決勝は日本時間11月9日2時。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "「ブラジルでは、特別なヘルメットをかぶる。アイルトンのために」。セナを DVD でしか見たことのない20歳が、セナの番号で王者になり、セナの母国へ行く。",
+  "body": [
+   [
+    "h",
+    "「アイルトンのために」"
+   ],
+   [
+    "p",
+    "11月1日、メキシコシティ。史上最年少のチャンピオンになった日の記者会見で、キミ・アントネッリは次のレースの話をした。"
+   ],
+   [
+    "p",
+    "「ブラジルでは、特別なヘルメットをかぶる。アイルトンのために」。「彼が母国のレースで、6速だけで勝ってから、35年になるから」。「自分が作ったヘルメットの中で、いちばんいいもののひとつだと思う。みんなが気に入ってくれるといいな」。"
+   ],
+   [
+    "p",
+    "絵柄は、まだ見せていない。"
+   ],
+   [
+    "h",
+    "6速だけで"
+   ],
+   [
+    "p",
+    "1991年3月、インテルラゴス。アイルトン・セナは、母国のブラジルGPに、まだ勝ったことがなかった。"
+   ],
+   [
+    "p",
+    "その日、先頭を走るセナのマクラーレンは、終盤にギアボックスがおかしくなった。ギアが次々に入らなくなり、最後の7周は6速に固定されたまま、低速コーナーも6速で抜けた。残り3周で雨が降り、滑る路面を、ギアを落とせないまま走った。2位のパトレーゼに約3秒差で、ゴール。肩と首が痙攣して、表彰台でトロフィーをほとんど持ち上げられなかった。"
+   ],
+   [
+    "p",
+    "セナが1994年5月1日のイモラで亡くなってから、12年後の2006年に、アントネッリはイタリアのボローニャで生まれた。2人は、会っていない。"
+   ],
+   [
+    "h",
+    "12"
+   ],
+   [
+    "p",
+    "2024年8月の終わり、モンツァ。18歳でメルセデスの来季のドライバーに決まったアントネッリは、その翌週、番号を12にすると言った。「好きな番号はたくさんあるけど、12は特別なんだ」。「F4からずっと使っていて、いつもうまくいった。来年に向けて変える理由がない」。"
+   ],
+   [
+    "p",
+    "翌年の2月、チームの取材には、もうひとつの理由を話した。「アイルトンのためだ」。「でも、フォーミュラカーで最初に使った番号でもある」。今年の夏のポッドキャストでは、もっとはっきり言っている。「僕のレースのアイドルだから」。「彼は12番で走って、12番で最初のワールドチャンピオンになった。僕のモータースポーツのインスピレーションなんだ」。「F1に来て、チャンスがあったらすぐ、マシンに付けた」。「いまでも、ときどき鳥肌が立つ」。"
+   ],
+   [
+    "p",
+    "1988年のマクラーレンは、プロストが11番、セナが12番だった。12番でチャンピオンになったのは、それ以来、アントネッリが初めてになる。セナもアントネッリも、F1で初めて勝ったときの番号も12だった。"
+   ],
+   [
+    "h",
+    "「1番は、一度もいい数字じゃなかった」"
+   ],
+   [
+    "p",
+    "チャンピオンは、翌年に1番を付けられる。今年はノリスが付けている。アントネッリは、付けない。"
+   ],
+   [
+    "p",
+    "「12のままでいく。もちろん、僕にとってとても特別な番号だから」。「でも、地に足をつけて、謙虚でいるための方法でもある」。「12を残すことで、新しい出発点を持てる気がする」。"
+   ],
+   [
+    "p",
+    "「それと、正直に言うと、僕はとても迷信深い。1番は、僕にとって一度もいい数字じゃなかった」。「付けたときはいつも、ものすごくひどいことになった」。「だから、12のままでいる理由が、もうひとつある」。いつ、何があったのかは、本人は言っていない。"
+   ],
+   [
+    "h",
+    "墓地のベンチで"
+   ],
+   [
+    "p",
+    "去年の11月、サンパウロGPの週の水曜日。アントネッリは、ホテルの近くのモルンビー墓地にある、セナの墓に行った。同じ日に、2回。"
+   ],
+   [
+    "p",
+    "「アイルトンは、僕のレースのヒーローだ」。「アイルトンについての本を読んでいた。イタリア語で、訳すと『完璧へと駆り立てられて』」。「本当に、彼に会いに行って、挨拶したかった」。「とても静かで、とても安らかな場所だった」。コーチと一緒に行き、ベンチに座って、その本を読んだ。"
+   ],
+   [
+    "p",
+    "その週末、アントネッリはスプリントも予選も決勝も2位だった。レースのあと、使ったヘルメットをセナの家族に贈った。バイザーに、こう書いて。「セナ家のみなさんへ、たくさんの愛をこめて」。"
+   ],
+   [
+    "h",
+    "DVDで見た人"
+   ],
+   [
+    "p",
+    "アントネッリは、セナが走るのを見たことがない。「彼のレースを見られるほど、運がよくなかった」。「1980年代から2000年代のシーズンのDVDを、全部見て育った」。「セナのビデオを見ると、いつも本当に熱くなった」。"
+   ],
+   [
+    "p",
+    "「彼が僕のアイドルなのは、コースの上だけじゃなく、外でもどういう人だったかによる」。「信じられないドライバーで、でも、偉大な人でもあった」。「それが僕を駆り立てた。彼がやったことの、ほんの一部でも自分のキャリアで達成できたら、すごくいい」。"
+   ],
+   [
+    "p",
+    "イタリア人のチャンピオンは、1953年のアスカリ以来、73年ぶり。セナがDVDの中の人だった子どもが、セナと同じ番号で、セナの母国に、チャンピオンとして行く。"
+   ],
+   [
+    "h",
+    "インテルラゴス"
+   ],
+   [
+    "p",
+    "サンパウロGPの決勝は、11月8日、日曜日。日本時間では、月曜日の午前2時。今年はスプリントがない。"
+   ],
+   [
+    "p",
+    "「とても特別な週末になる」。「ブラジルの人たちからもらっている支えは、本当に信じられないくらいで、とても楽しみにしている」。"
+   ],
+   [
+    "p",
+    "インテルラゴスの1コーナーから2コーナーは、セナが改修に関わってできた区間で、「セナのS」と呼ばれる。6速に固定されたまま勝った人から35年。12番の王者が、その人のためのヘルメットをかぶって、そのSに入っていく。"
+   ]
+  ],
+  "terms": [
+   [
+    "ギアボックス",
+    "gearbox"
+   ],
+   [
+    "スプリント",
+    "sprint"
+   ],
+   [
+    "世界チャンピオン",
+    "world-champion"
+   ],
+   [
+    "カーナンバー",
+    "car-number"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Grande Prêmio",
+    "title": "Antonelli reveals special Ayrton Senna tribute helmet for 2026 São Paulo F1 Grand Prix",
+    "url": "https://grandepremio.com/en/f1/antonelli-reveals-special-ayrton-senna-tribute-helmet-for-2026-sao-paulo-f1-grand-prix/",
+    "note": "2026年11月2日。「アイルトンのために」「35年」「いちばんいいもののひとつ」（英語から編集部が訳した）。12番での王者はセナ以来。"
+   },
+   {
+    "name": "Grande Prêmio（ポルトガル語）",
+    "title": "Antonelli prepara capacete especial para homenagear Senna no GP de São Paulo",
+    "url": "https://grandepremio.com/br/f1/antonelli-prepara-capacete-especial-para-homenagear-senna-no-gp-de-sao-paulo/",
+    "note": "2026年11月2日。「とても特別な週末」「ブラジルの人たちの支え」（ポルトガル語から編集部が訳した）。"
+   },
+   {
+    "name": "RaceFans",
+    "title": "'I'll stay with number 12': No number one in 2027 for new champion Antonelli",
+    "url": "https://www.racefans.net/2026/11/02/ill-stay-with-number-12-no-number-one-in-2027-for-new-champion-antonelli/",
+    "note": "2026年11月2日。「12のままでいく」「謙虚でいるため」「迷信深い」「1番は一度もいい数字じゃなかった」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "motorsport.com 日本版",
+    "title": "アントネッリ、来季も12番「1番は僕にとって良い数字ではない」",
+    "url": "https://carview.yahoo.co.jp/news/detail/a55e579927abd5452d4f49a949f6be36264f28a6",
+    "note": "2026年11月2日。日本語訳。セナも1988年は12番。"
+   },
+   {
+    "name": "The Race",
+    "title": "Why Antonelli's rejecting #1 for 2027 F1 season",
+    "url": "https://www.the-race.com/formula-1/why-antonellis-rejecting-1-for-2027-f1-season/",
+    "note": "2026年11月2日。セナは1985〜88年に12番。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Antonelli confirms car number he wants to use for start of Formula 1 career",
+    "url": "https://www.formula1.com/en/latest/article/antonelli-confirms-car-number-he-wants-to-use-for-start-of-formula-1-career.2FIIOiCp12yTdcG30ZeRq9",
+    "note": "2024年9月5日。「12は特別」「F4からずっと」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "F1i.com",
+    "title": "Kimi Antonelli honors racing hero Senna with #12",
+    "url": "https://f1i.com/news/530281-kimi-antonelli-honors-racing-hero-senna-with-12.html",
+    "note": "2025年2月7日。メルセデスの取材「アイルトンのためだ」「DVDで」「コースの外でもどういう人だったか」「ほんの一部でも」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Yahoo Sports",
+    "title": "Kimi Antonelli reveals why he chose number 12",
+    "url": "https://sports.yahoo.com/articles/kimi-antonelli-reveals-why-chose-113000907.html",
+    "note": "2026年8月4日。ポッドキャスト「レースのアイドル」「12番で最初のタイトル」「鳥肌」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Kimi Antonelli reveals why he paid two visits in one day to Ayrton Senna grave",
+    "url": "https://racingnews365.com/kimi-antonelli-reveals-why-he-paid-two-visits-in-one-day-to-ayrton-senna-grave",
+    "note": "2025年11月7日。墓地、本、「挨拶したかった」「静かで安らか」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Exame（ポルトガル語）",
+    "title": "Kimi Antonelli presenteia família Senna com seu capacete no GP",
+    "url": "https://exame.com/casual/kimi-antonelli-presenteia-familia-senna-com-seu-capacete-no-gp/",
+    "note": "2025年11月10日。バイザーに「セナ家のみなさんへ、たくさんの愛をこめて」（ポルトガル語から編集部が訳した）。"
+   },
+   {
+    "name": "senna.com",
+    "title": "Vitória apenas com 6ª marcha nas voltas finais",
+    "url": "https://www.senna.com/en/vitoria-apenas-com-6a-marcha-nas-voltas-finais-consagracao-de-senna-interlagos/",
+    "note": "1991年ブラジルGP。6速だけ、雨、パトレーゼに約3秒差、トロフィー。"
+   },
+   {
+    "name": "formulaonehistory.com",
+    "title": "1988 F1 World Championship",
+    "url": "https://www.formulaonehistory.com/seasons/1988-f1-world-championship/",
+    "note": "1988年マクラーレン：プロスト11番、セナ12番。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris wins thrilling São Paulo GP from Antonelli",
+    "url": "https://www.formula1.com/en/latest/article/norris-wins-thrilling-sao-paulo-gp-from-antonelli-as-verstappen-climbs-to.4T0Y5xGNn1MOVegzhGTqAx",
+    "note": "2025年11月9日。スプリント、予選、決勝とも2位。"
+   },
+   {
+    "name": "Grande Prêmio",
+    "title": "When is the 2026 São Paulo F1 Grand Prix: full Interlagos schedule",
+    "url": "https://grandepremio.com/en/f1/when-is-the-2026-sao-paulo-f1-grand-prix-full-interlagos-schedule-and-race-start-times/",
+    "note": "2026年11月6〜8日、スプリントなし、決勝は現地14時（日本時間9日2時）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Kimi Antonelli: How F1's newest world champion has rewritten the record books",
+    "url": "https://www.skysports.com/f1/news/13606995/",
+    "note": "2026年11月2日。アスカリ以来73年ぶりのイタリア人王者。"
+   }
+  ]
+ }
+}
