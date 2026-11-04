@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T12:30:00+09:00",
+ "updatedAt": "2026-11-04T18:14:09+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -12,10 +12,6 @@
   "ocon-hirakawa-mexico": {
    "title": "ハース、オコンを外し平川亮が代役　暴力報道は本人が否定",
    "summary": "ハースはメキシコGPの週末にオコンを外し、リザーブの平川亮を起用した。仏紙レキップが代表との身体的衝突の可能性を報じたが、オコンは話し合いがあったことは認めつつ暴力を断固否定した。ハースは来季の後任にラファエル・カマラを起用する予定で、詳しい経緯は明らかになっていない。"
-  },
-  "lawson-dsq-mexico": {
-   "title": "ローソンがメキシコGP予選で失格　MGU-Kの出力低下規定違反",
-   "summary": "レーシングブルズのローソンは、メキシコGP予選Q2の最終アタック直後にMGU-Kの出力が急に落ち、出力低下を毎秒一定以下に抑える技術規則に違反したとして失格となった。チームが自己申告し、利益はなかったと主張したが、スチュワードは技術違反は明確で常に遵守が必要だと退けた。決勝は最後尾からのスタートとなる。"
   },
   "piastri-q2-mexico": {
    "title": "ピアストリ、メキシコ予選Q2敗退　マクラーレンは「グリップなし」",
@@ -52,9 +48,141 @@
   "antonelli-russell-gap-2026": {
    "title": "アントネッリとラッセルの差はどこにあるか　同じ車で明暗",
    "summary": "同じメルセデスに乗るアントネッリとラッセルの差が、タイトル決定後に改めて分析されている。The Raceは数字で両者の差を読み解き、元F1ドライバーのモントーヤはラッセルが遅いわけではなく、車の挙動が不安定な場面での扱い方に差があると指摘した。ラッセル本人も今季は難しい年だったと振り返っている。"
+  },
+  "ferrari-engine-2027": {
+   "title": "フェラーリのエンジン劣勢とヴァッスールの再建　2027年型に賭ける",
+   "summary": "フェラーリはSF-26のシャシーが好調な一方、ストレートでエンジン性能の遅れに苦しんでいる。ヴァッスール代表は遅れを数年前から承知していたと認め、追加開発枠ADUOの改良を2027年型パワーユニットに充てたと説明した。エンジンは公認サイクルと予算の制約で改良に時間がかかるため、巻き返しは来季以降になる見通しだ。"
+  },
+  "lawson-2027-seat": {
+   "title": "ローソンの2027年シート　ツォロフ台頭でレーシングブルズ残留に黄信号",
+   "summary": "ローソンは今季ランキング9位ながら、レーシングブルズでの来季の去就が取り沙汰されている。メキシコでのフェルスタッペンとの接触を巡る話題に加え、独誌はデータ面でF2のツォロフが有力と分析した。いずれも報道・分析で、チームからの正式な発表はない。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-ferrari-engine-vasseur-success",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-engine-2027",
+   "title": "フェラーリのエンジン劣勢の陰で進むシャシーの進歩　ヴァッスールの再建を検証",
+   "summary": "英The Raceのエド・ストローは、フェラーリのSF-26が高いシャシー性能を持つ一方、ストレートでエンジンの差に苦しんでいると分析した。ハンガロリンクや高地のメキシコシティなど、トラクション重視のコースではその差が縮まるという。フェラーリは追加開発枠ADUOの2回の改良を2027年型パワーユニットに充てたとされ、ヴァッスールは最初の新エンジンに約150万ドルかかると語った。シャシーの改良幅は序盤の1回約0.4秒から終盤は0.1〜0.2秒に鈍っている。ハミルトンは「100%信頼している」と述べた。",
+   "orig": "Ferrari's engine weakness hides biggest Vasseur success",
+   "url": "https://www.the-race.com/formula-1/why-ferrari-engine-weakness-hides-vasseurs-biggest-success/",
+   "published": "2026-11-04T12:00:00+00:00"
+  },
+  {
+   "id": "it-automoto-vasseur-engine-hindsight",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Automoto.it",
+   "cat": "チーム",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-engine-2027",
+   "title": "ヴァッスール「今ならほぼ全て違うやり方を」　エンジンの遅れは数年前から承知",
+   "summary": "フェラーリのヴァッスール代表はメキシコシティで取材に応じ、後から振り返れば今季はほぼ全てを違う形で進めたと語ったとイタリアのAutomoto.itが伝えた。エンジンの遅れは数年前から分かっていたといい、追加開発枠ADUOについては「やや倒錯した仕組み」と評し、6月か9月に新エンジンを入れるか2027年に集中するかの選択を迫られたと説明した。エンジンは公認サイクルと予算上限のため改良に時間がかかるとして、来季の巻き返しに期待を示した。ハミルトンの適応の難しさを過小評価していたことも認めた。",
+   "orig": "Ferrari, Vasseur: col senno del poi avrei fatto tutto in modo diverso",
+   "url": "https://www.automoto.it/formula1/ferrari-vasseur-col-senno-del-poi-avrei-fatto-tutto-in-modo-diverso-e-sul-motore-ammette-sapevamo-da-anni-di-essere-in-ritardo.html",
+   "published": "2026-11-04T12:00:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-mclaren-frontfluegel-2027",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "テクニカル",
+   "circuit": "interlagos",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "mclaren-brazil-update-2027",
+   "title": "マクラーレン、ブラジルで新フロントウイング　2027年型にも継承の見通し",
+   "summary": "マクラーレンはサンパウロGPでMCL40にフロントウイング、リアウイング、一部アンダーフロアを含む改良を投入すると独Motorsport-Totalが報じた。空力責任者のプロドロモウは、新しいフロントウイングの考え方を2027年型の初期仕様にも採り入れる見込みだと語った。コンストラクターズでは3位レッドブルの382点に対し4位マクラーレンは365点。直近4回の予選ではポールから平均0.511秒差の4番手の速さにとどまり、メキシコでノリスは優勝のフェルスタッペンから12秒遅れの5位だった。",
+   "orig": "Neue Frontflügel-Idee bei McLaren: Was das Brasilien-Update für 2027 bedeutet",
+   "url": "https://www.motorsport-total.com/formel-1/news/neue-frontfluegel-idee-bei-mclaren-was-das-brasilien-update-fuer-2027-bedeutet-26110402",
+   "published": "2026-11-04T07:24:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-lawson-tsolov-data",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "teams": [
+    "racingbulls",
+    "redbull"
+   ],
+   "topic": "lawson-2027-seat",
+   "title": "ローソン、F1シート危機か　データはツォロフを支持と独誌",
+   "summary": "独Motorsport-Totalは、リアム・ローソンが今季83点でランキング9位ながらレーシングブルズでの来季が不透明だと分析した。2025年にレッドブルで同僚フェルスタッペンに予選で平均1.49秒、決勝ペースで1周1.86秒及ばず、2戦で降格している。今季はリンドブラッドと予選はほぼ互角で、決勝ペースはローソンが0.14秒上回る。負傷したハジャーの代役で出た3戦では14点を挙げた。同誌はF2で2位につけるレッドブル育成のツォロフが有力で、ローソンは次の一流ドライバーではなさそうだと結論づけた。",
+   "orig": "Liam Lawson vor Formel-1-Aus? Warum die Daten für Nikola Tsolov sprechen",
+   "url": "https://www.motorsport-total.com/formel-1/news/liam-lawson-vor-formel-1-aus-warum-die-daten-fuer-nikola-tsolov-sprechen-26110403",
+   "published": "2026-11-04T08:37:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-hamilton-fia-mexico-limit",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari",
+    "mclaren"
+   ],
+   "topic": "mexico-clipping-overtaking",
+   "title": "ハミルトン「史上最悪のエンジン設定かも」　メキシコの追い越し難でFIAに対応求める",
+   "summary": "独Motorsport-Totalによると、ハミルトンとノリスはメキシコGP後、2026年規則のパワー設定を批判した。FIAは速度に応じて電気出力の支援を絞ることができ、メキシコでは高速域でゼロになり、最高速が抑えられて追い越しが難しくなったという。ハミルトンは序盤にフェルスタッペンに抜かれた後、「ここでは追い越せない」と述べ、「F1史上最悪のエンジン設定かもしれない」とFIAの調査を求めた。ノリスは2027年の小さな規則変更でも状況は変わらないと語り、ストレートモードを全員が使えば追い越しの機会は消えるとの見方も出た。",
+   "orig": "\"Überholverbot\" in Mexiko: Lewis Hamilton fordert FIA zum Handeln auf",
+   "url": "https://www.motorsport-total.com/formel-1/news/ueberholverbot-in-mexiko-lewis-hamilton-fordert-fia-zum-handeln-auf-26110311",
+   "published": "2026-11-03T17:25:00+01:00"
+  },
+  {
+   "id": "en-therace-antonelli-keeps-12",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "王者アントネッリ、2027年も「1」を拒否　セナ縁の12番を継続",
+   "summary": "メキシコGPで史上最年少の20歳で世界王者となったアントネッリは、来季も王者の1番ではなく自身の12番を使うと英The Raceが伝えた。本人は12を「自分にとって特別な番号」と語り、地に足をつけていられるからだと説明した。迷信深いことも認め、1番はこれまでうまくいかなかったという。12はセナがロータス時代と1988年の王者の年に使った番号で、2020年カート世界選手権決勝では1番をつけて転倒し左脚を骨折した。ブラジルではセナの1991年優勝から35年を記念するトリビュートヘルメットを用意する。",
+   "orig": "Why Antonelli's rejecting #1 for 2027 F1 season",
+   "url": "https://www.the-race.com/formula-1/why-antonellis-rejecting-1-for-2027-f1-season/",
+   "published": "2026-11-02T12:00:00+00:00"
+  },
+  {
+   "id": "en-planetf1-fia-interlagos-straight-mode",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "サーキット",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "interlagos-straight-mode-2026",
+   "title": "インテルラゴスのストレートモードは2カ所　FIAが発表、メルセデスは3点差でタイトル確定",
+   "summary": "FIAはブラジルGP（第20戦）のインテルラゴスにストレートモードのゾーンを2カ所設けると発表したと英PlanetF1が伝えた。1カ所目はスタート／フィニッシュ直線、2カ所目は3コーナーと4コーナーの間で、検知は12コーナー出口、作動は13コーナーの左のキンク後だ。今季のゾーン数はオーストラリアやシンガポールの5カ所から、アクティブエアが事実上禁止のモナコの0カ所まで幅がある。メルセデスはコンストラクターズで126点リードし、フェラーリを3点以上上回れば確定する。同チームのブラジル優勝は2022年のラッセル以来ない。",
+   "orig": "FIA reveals its first clue on how 2026-style racing will work at Interlagos",
+   "url": "https://www.planetf1.com/news/fia-brazilian-grand-prix-2026-interlagos",
+   "published": "2026-11-04T07:15:00+00:00"
+  },
   {
    "id": "en-therace-herta-cadillac-fp1-superlicence",
    "kind": "news",
@@ -1496,133 +1624,6 @@
    "orig": "Formel 1: Perfektes Hülkenberg-Qualifying reicht nicht für Q3 - dann bekommt Audi ein Geschenk",
    "url": "https://www.motorsport-magazin.com/formel1/news-301021-formel-1-perfektes-huelkenberg-qualifying-reicht-nicht-fuer-q3-dann-bekommt-audi-ein-geschenk/",
    "published": "2026-11-01T07:28:00+01:00"
-  },
-  {
-   "id": "en-crash-ocon-haas-row-details",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "うわさ",
-   "circuit": "mexico",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-hirakawa-mexico",
-   "title": "オコン外しの経緯めぐり新情報　エンジニアとの口論説、本人は暴力を否定",
-   "summary": "英クラッシュ・ネットは、ハースがオコンをメキシコGPの週末から外した経緯を巡る報道をまとめた。金曜FP2でレースエンジニアとタイヤ選択で意見が合わなかったことが発端とされ、仏紙レキップはコマツ代表との面談が突然終わったと報じたが、オコンは暴力を否定している。スカイスポーツのクラビッツ氏は、オコンはハースを離れる見通しでキャデラックのボッタスの席を望んでいると語ったが、キャデラックは候補ではないとしている。ハースは今回の欠場のみを確認し、F2首位のカマラが来週のブラジルで早期デビューする可能性も報じられた。いずれも未確認の情報である。",
-   "orig": "The end of Esteban Ocon's F1 career? Details emerge about big row at Haas",
-   "url": "https://www.crash.net/f1/news/1109068/1/end-esteban-ocons-f1-career-details-emerge-about-big-row-haas",
-   "published": "2026-11-01T06:00:00+00:00"
-  },
-  {
-   "id": "en-crash-hadjar-warning-reality-show",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Crash.net",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "hadjar-fan-paddock-shove",
-   "title": "ハジャー、来場者を押した件で戒告　「パドックはリアリティ番組ではない」",
-   "summary": "レッドブルのハジャーは、メキシコGPのFP1前に自撮りを求めた来場者を押したように見えた件で、スチュワードから行為規定違反として戒告を受けた。スチュワードは、相手が不快な形で近づいたうえ、混雑した場所で警備も不十分だったとして情状を認めた。ハジャーは理解を得られて嬉しいと述べ、仕事のあるパドックは「リアリティ番組ではない」と話した。パドックを動物園に例えたフェルスタッペンの見方にも同調している。ハジャーは予選7番手だった。",
-   "orig": "Isack Hadjar explains Mexico F1 paddock incident: 'Not a reality show'",
-   "url": "https://www.crash.net/f1/news/1109067/1/isack-hadjar-explains-mexico-gp-f1-paddock-incident-not-reality-show",
-   "published": "2026-11-01T06:00:00+00:00"
-  },
-  {
-   "id": "ja-f1are-piastri-q2-mexico",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "circuit": "mexico",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-q2-mexico",
-   "title": "ピアストリのQ2敗退、ネット掲示板の話題　マクラーレンの不振に厳しい声",
-   "summary": "F1のアレが、メキシコGP予選でQ2敗退したマクラーレンのピアストリを巡るネット掲示板の話題をまとめた。F1公式の記事を元にした投稿で、本人はグリップが全くなかったと話し、原因が分からない様子だった。掲示板では今季ノリスに差をつけられているとの指摘や、トップチームとして恥ずかしい結果だという声が見られた。路面温度の低下や、2026年型の車はグリップを出しにくいという見方もある。いずれも掲示板上の意見であり、未確認の話である。",
-   "orig": "マクラーレンのピアストリ、F1メキシコシティGP予選Q2敗退「何が起こったのかよくわからない」「全くグリップがなかった」",
-   "url": "https://f1are.com/blog-entry-4037.html",
-   "published": "2026-11-01T14:00:00+09:00"
-  },
-  {
-   "id": "de-motorsporttotal-russell-p2-mexico",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "予選",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "mexico-qualifying-2026",
-   "title": "ラッセル、予選2位は想定外　「1コーナーが勝負を分ける」",
-   "summary": "独モータースポーツ・トータルは、メキシコシティGP予選2位のラッセル（メルセデス）の談話を伝えた。ポールのハミルトンとは0.009秒差で、本人は週末を通じて苦しみ、Q3のアタックまでこの結果は予想していなかったと話した。涼しい気温と雲が助けになり、積極的なアウトラップでタイヤのグリップへの自信を得たという。メルセデスは準備ラップを1周入れたが、ハミルトンらは省いており、その分燃料を余計に積んでいたと説明した。上位7、8台の決勝ペース差は約0.1秒とみて、1コーナーが決定的になると語った。",
-   "orig": "Sekt oder Selters: Russell spricht nach P2 im Qualifying über schwankende Pace",
-   "url": "https://www.motorsport-total.com/formel-1/news/sekt-oder-selters-russell-spricht-nach-p2-im-qualifying-ueber-schwankende-pace-26110107",
-   "published": "2026-11-01T03:53:00+01:00"
-  },
-  {
-   "id": "de-motorsportmagazin-hamilton-pole-tyre-prep",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "予選",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "mexico-qualifying-2026",
-   "title": "ハミルトン、1198日ぶりのポール　鍵はタイヤの準備ラップ",
-   "summary": "独モータースポーツ・マガジンは、メキシコGP予選でフェラーリ移籍後初のポールを獲得したハミルトンの背景を伝えた。2023年ハンガリーGP以来1198日ぶりのポールで、41歳での獲得は1982年のアンドレッティ以来の最年長となる。ハミルトンはFP2の半分をエンジン不調で失い、パワーユニットを交換していたが、最終アタックで中間セクターを約0.3秒縮めた。本人は準備ラップが完璧だったことが鍵だと語った。ラッセルとの差は0.009秒で、ルクレールは3番手だった。",
-   "orig": "Lewis Hamilton holt erste Ferrari-Pole in Mexiko: Perfekte Reifenvorbereitung als Schlüssel",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301018-erste-ferrari-pole-fuer-lewis-hamilton-so-gelang-der-formel-1-coup-im-mexiko-qualifying/",
-   "published": "2026-11-01T03:30:00+01:00"
-  },
-  {
-   "id": "de-motorsportmagazin-lawson-mgu-k-rule",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "テクニカル",
-   "circuit": "mexico",
-   "teams": [
-    "racingbulls",
-    "mercedes"
-   ],
-   "topic": "lawson-dsq-mexico",
-   "title": "ローソン失格の背景にMGU-K出力の低下規定　メルセデス発の抜け道を巡る攻防",
-   "summary": "独モータースポーツ・マガジンは、メキシコGP予選でのローソン（レーシングブルズ）失格の技術的背景を解説した。2026年規定では最大350kWの電気出力が認められ、全開時の出力低下は毎秒100kW以下に抑える必要がある。チームはゴール直前に電池を使い切るため、ドライバーに早めにアクセルを戻させて規定を避けており、メルセデスがシルバーストンで見つけたとされる。ローソンは最後のQ2アタックで戻すのが遅れ、チームが自己申告したが、スチュワードは規則違反の車は認められないとして失格とした。",
-   "orig": "Disqualifikation nach Formel-1-Qualifying: Liam Lawson scheitert am Mercedes-Motortrick",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301019-disqualifikation-nach-formel-1-qualifying-liam-lawson-scheitert-am-mercedes-motortrick/",
-   "published": "2026-11-01T03:05:00+01:00"
-  },
-  {
-   "id": "en-planetf1-lawson-disqualified-mexico",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "予選",
-   "circuit": "mexico",
-   "teams": [
-    "racingbulls"
-   ],
-   "topic": "lawson-dsq-mexico",
-   "title": "ローソン、メキシコGP予選で失格　MGU-Kの出力規定違反",
-   "summary": "英プラネットF1は、レーシングブルズのローソンがメキシコGP予選の結果から失格になったと伝えた。FIAの調査で、Q2最速ラップの制御線通過直後にアクセルを緩めず、規定のMGU-Kの出力ステップダウンを満たしていなかったと判断された。チームは自ら違反を申告し性能上の利得はないと主張したが、審議会は利得がなくても技術規則違反は免責されないとした。ローソンは予選8番手でQ3に進んでいたが、決勝は後方からのスタートになる。FP2のフェルスタッペンとの接触で1グリッド降格とライセンス1点も受けており、来季の去就は未発表だ。",
-   "orig": "Liam Lawson disqualified from Mexican GP qualifying following FIA investigation",
-   "url": "https://www.planetf1.com/news/liam-lawson-fia-disqualified-mexico-gp-qualifying",
-   "published": "2026-11-01T01:29:00+00:00"
   }
  ]
 }
