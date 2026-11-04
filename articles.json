@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T00:40:00+09:00",
+ "updatedAt": "2026-11-05T06:40:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -56,9 +56,106 @@
   "lawson-2027-seat": {
    "title": "ローソンの2027年シート　ツォロフ台頭でレーシングブルズ残留に黄信号",
    "summary": "ローソンは今季ランキング9位ながら、レーシングブルズでの来季の去就が取り沙汰されている。メキシコでのフェルスタッペンとの接触を巡る話題に加え、独誌はデータ面でF2のツォロフが有力と分析した。いずれも報道・分析で、チームからの正式な発表はない。"
+  },
+  "bearman-haas-2027": {
+   "title": "ベアマンの2027年ハース残留は未発表　年俸要求説は小松代表が否定",
+   "summary": "ハースは2年目のベアマンの2027年契約をまだ発表していない。小松代表は年俸要求のうわさを「完全な戯言」と否定し、双方が継続を望むと語った。ベアマンは残留を望むが「自分の手の中にはない」と述べ、背景にはフェラーリが2028年のシートを保証できるかという問題があると独誌は伝えている。"
+  },
+  "piastri-lindblad-penalty": {
+   "title": "ピアストリ、リンドブラッドとの接触で10秒加算　入賞を逃す",
+   "summary": "メキシコGPで7位だったピアストリ（マクラーレン）は、リンドブラッド（レーシングブルズ）との接触でスチュワードから10秒加算を受け、入賞圏外に後退した。再スタート後のターン1で外側から仕掛けた際に接触し、リンドブラッドは壁に当たった。ピアストリは「難しい状況だった」と振り返っている。"
   }
  },
  "articles": [
+  {
+   "id": "en-planetf1-piastri-lindblad-verdict",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "mclaren",
+    "racingbulls"
+   ],
+   "topic": "piastri-lindblad-penalty",
+   "title": "ピアストリ、リンドブラッドとの接触を語る　「難しい状況だった」と10秒加算後に説明",
+   "summary": "メキシコGPで7位だったピアストリ（マクラーレン）は、レース後に10秒加算されて入賞圏外に後退した。スチュワードは、ピアストリがコーナーの進入権を主張できていなかったとして接触回避の責任を負わせた。ボッタスのクラッシュによる再スタート後、12周にわたりリンドブラッドの後ろにいたピアストリはターン1の外側から仕掛け、ターン2で接触してリンドブラッドの車は壁に当たった。ピアストリは「難しい状況」としたうえで、すでにコース外にいて順位を譲ろうとしていたと説明。車は大きく損傷し、15戦連続で表彰台を逃している。",
+   "orig": "Oscar Piastri verdict on Lindblad clash revealed after FIA penalty decision",
+   "url": "https://www.planetf1.com/news/oscar-piastri-arvid-lindblad-crash-f1-2026-mexican-grand-prix",
+   "published": "2026-11-04T20:01:00+00:00"
+  },
+  {
+   "id": "en-planetf1-wolff-sponsors-antonelli-doubts",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "ウォルフ「アントネッリへの疑念でスポンサー2社が離れた」　残った企業は戴冠で見返り",
+   "summary": "メルセデスのウォルフ代表はSky F1で、キミ・アントネッリへの疑念を理由にスポンサー2社がチームを離れたと明かした。一方、残った企業はアントネッリの優勝で「満額の見返りを得た」という。ウォルフはハミルトンからフェラーリ移籍を告げられた直後にアントネッリの起用を決めたと述べ、「計算されたリスクであり、本当のリスクではなかった」と語った。ルーキーイヤーは9戦ノーポイントでスパでは涙もあったと振り返っている。アントネッリはメキシコで3位に入り、20歳で最年少王者となった。",
+   "orig": "Mercedes lost two sponsors in new Kimi Antonelli reveal",
+   "url": "https://www.planetf1.com/news/mercedes-sponsors-kimi-antonelli-toto-wolff",
+   "published": "2026-11-04T12:00:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-bearman-haas-ferrari-limbo",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "teams": [
+    "haas",
+    "ferrari"
+   ],
+   "topic": "bearman-haas-2027",
+   "title": "ハース、ベアマンの3年目は未発表　フェラーリの2028年シート次第か",
+   "summary": "ハースは2年目のベアマンについて、3年目となる2027年の契約をまだ発表していない。ベアマンは残留が「最終目標」だが「自分の手の中にはない」と述べ、全体像に関わる事情があると示唆した。小松代表は高額な年俸要求のうわさを「完全な戯言」と否定し、双方が継続を望んでいると語った。Motorsport-Total.comによると、フェラーリが2028年のシートを保証できなければ、ベアマンは3年間のレンタル後に自由に移籍できる。ハミルトンは2027年の契約オプションを行使し、ルクレールも2030年まで契約を延長済みだ。",
+   "orig": "Haas: Warum Bearman in der Luft hängt - und was Ferrari damit zu tun hat",
+   "url": "https://www.motorsport-total.com/formel-1/news/haas-warum-bearman-in-der-luft-haengt-und-was-ferrari-damit-zu-tun-hat-26110413",
+   "published": "2026-11-04T18:31:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-imola-finale-mcnish",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "カレンダー",
+   "circuit": "imola",
+   "teams": [
+    "audi"
+   ],
+   "topic": "season-finale-imola-contingency",
+   "title": "最終戦のイモラ代替開催は可能か　アウディのマクニッシュ「2週間あれば足りる」",
+   "summary": "F1は11月29日のカタールと12月6日のアブダビを予定どおり開催する方針だが、米イラン間の緊張が再び高まる可能性が報じられている。アウディのマクニッシュは、現時点で新しい情報はなく、チームは中東へ向かう準備を進めており機材もすでに輸送中だと述べた。決定の期限はないとし、不当なリスクにチームをさらすべきではないとも語った。中止の場合の代替として、12月第1週末のイモラ開催案が残っている。シミュレーター作業は通常レースの2週間前に始まるため、準備は2週間で足りるとの見方を示した。",
+   "orig": "Spontanes Saisonfinale in Imola? Zwei Wochen Vorlauf würden reichen",
+   "url": "https://www.motorsport-total.com/formel-1/news/spontanes-saisonfinale-in-imola-zwei-wochen-vorlauf-wuerden-reichen-26110414",
+   "published": "2026-11-04T19:17:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-steiner-antonelli-more-titles",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "分析",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "元ハース代表シュタイナー「アントネッリはフェルスタッペンより多くのタイトルを取る」",
+   "summary": "元ハース代表のギュンター・シュタイナーは、ポッドキャスト「The Red Flags」でアントネッリが将来フェルスタッペンより多くのタイトルを獲得すると語った。現行規則が2030年まで続くなか、アントネッリはメルセデスで適切な時期に適切な場所にいるというのが理由だ。フェルスタッペンより大幅に若く、今後20年ほど現役を続けると見ており、タイトル数は「7つか8つ」になり得るとした。アントネッリは今季9勝を挙げ、20歳でメキシコで戴冠した。フェルスタッペンは4冠で、最多は7冠のシューマッハとハミルトンだ。",
+   "orig": "Steiner legt uit waarom Antonelli meer wereldtitels zal behalen dan Verstappen",
+   "url": "https://www.f1maximaal.nl/opinie/oud-teambaas-verwacht-dat-antonelli-meer-titels-zal-winnen-dan-verstappen",
+   "published": "2026-11-04T18:05:00+01:00"
+  },
   {
    "id": "en-therace-vesti-cadillac-pitch",
    "kind": "rumor",
@@ -1538,93 +1635,6 @@
    "orig": "Wolff erkent mogelijke fout bij Antonelli: \"We hadden het misschien beter kunnen doen\"",
    "url": "https://www.f1maximaal.nl/formule-1/wolff-erkent-mogelijke-fout-bij-antonelli-we-hadden-het-misschien-beter-kunnen-doen",
    "published": "2026-11-01T16:46:00+01:00"
-  },
-  {
-   "id": "en-planetf1-cadillac-herta-bottas-budkowski",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "うわさ",
-   "circuit": "mexico",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "キャデラック、2027年のペレスの僚友は「急がない」　米国人ハートか現職ボッタスか",
-   "summary": "キャデラックのブドコフスキ代表は、2027年のペレスの僚友選びを急がない考えを示した。ペレスは新たな複数年契約を結んだばかりで、ボッタスの去就には触れられていない。有力な対抗馬として、今季5度目のFP1を走ったコルトン・ハートや、メルセデス控えのヴェスティが名乗りを上げている。米国チームとして米国人ドライバーは「重要」だが、起用はチームの準備が整う時期次第だという。ハートはスーパーライセンス取得にあと100kmの走行が必要とされる。",
-   "orig": "Cadillac F1 2027 driver latest as Herta and Bottas rumours swirl",
-   "url": "https://www.planetf1.com/news/cadillac-f1-2027-colton-herta-valtteri-bottas",
-   "published": "2026-11-01T15:34:13+00:00"
-  },
-  {
-   "id": "nl-f1maximaal-hamilton-antonelli-title",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ],
-   "topic": "antonelli-title-chance-mexico",
-   "title": "ハミルトン、アントネッリの王座決定に「記録は破られるもの」　自身はチーム最善を優先",
-   "summary": "ハミルトン（フェラーリ）は、ポールからスタートするメキシコGPで、4番手スタートのアントネッリが9位以内でタイトルを決められる状況について「そのことは考えていない」と語った。狙うのはチームにとって最良の結果で、フェラーリはコンストラクターズ2位の維持も目指す。高地のメキシコでは出力差が出にくく、フェラーリにも好機があるとの見方だ。後継としてメルセデスに座るアントネッリの成長を称え、今季9勝でベッテルの最年少王者記録を破り得る点にも「記録は破られるためにある」と述べた。来季は本当に争いたいとも話した。",
-   "orig": "Hamilton kan titelfeest Antonelli verpesten, maar reageert opvallend: \"Daar denk ik niet over na\"",
-   "url": "https://www.f1maximaal.nl/formule-1/hamilton-ziet-antonelli-geschiedenis-schrijven-records-zijn-er-om-verbroken-te-worden",
-   "published": "2026-11-01T14:54:00+01:00"
-  },
-  {
-   "id": "en-planetf1-vowles-alonso-grid-quality",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "teams": [
-    "williams",
-    "astonmartin"
-   ],
-   "topic": "alonso-grid-quality",
-   "title": "ウィリアムズのボウルズ代表、アロンソの「グリッドの質」批判に反論　「私の知る最高水準」",
-   "summary": "アロンソはアメリカGP1周目にアルボンと接触して車を傷め、16位完走の後、下位のドライバーの質が「非常に低い」と主張し、メキシコGP前にも発言を重ねた。ウィリアムズのボウルズ代表は、アロンソは偉大な存在で意見を持つ権利があるとしつつ、1周目の接触はスチュワードが検討済みのレーシングアクシデントだと述べた。現在のグリッドにはレース優勝者や表彰台候補が並び、自身のキャリアで最も水準が高いとも語っている。アルボンも、後方の層は10〜15年前よりずっと厚くペイドライバーはもういないと反論した。",
-   "orig": "Williams boss disputes Fernando Alonso's claim over quality of F1 grid",
-   "url": "https://www.planetf1.com/news/williams-boss-disputes-fernando-alonso-claim",
-   "published": "2026-11-01T13:42:00+00:00"
-  },
-  {
-   "id": "nl-f1maximaal-hirakawa-debut-haas",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-hirakawa-mexico",
-   "title": "ハース代役の平川亮「電話で知らされた」　予選19番手、Q2進出は可能だったと悔やむ",
-   "summary": "ハースのリザーブで32歳の平川亮は、土曜の朝にチームから電話で予選と決勝を走ると告げられたという。金曜FP1でオコンの車を駆って15番手だった平川は、予選で19番手。最終アタックで前走車の影響によりダウンフォースとグリップを失い、「Q2に行けたはずだった」と悔しさを語りつつ、機会を得たことには「とても嬉しい」と話した。ハースは外した理由を公式には明かしておらず、オコンは暴力的な衝突を否定している。次戦以降の起用は何も話し合われていない。2022年のル・マン24時間の優勝者でもある。",
-   "orig": "32-jarige debutant krijgt onverwachte kans bij Haas na Ocon-rel: \"Ik ben er ontzettend blij mee\"",
-   "url": "https://www.f1maximaal.nl/formule-1/32-jarige-debutant-krijgt-onverwachte-kans-bij-haas-na-ocon-rel-ik-ben-er-ontzettend-blij-mee",
-   "published": "2026-11-01T13:58:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-yamaha-qatar-f1-risk",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "カレンダー",
-   "topic": "middle-east-calendar-risk",
-   "title": "ヤマハがMotoGPカタール戦への派遣を見送り　F1のカタール・アブダビ戦にも影響の見方",
-   "summary": "ヤマハは中東の治安情勢の不透明さを理由に、翌週のMotoGPカタール戦にスタッフを送らない方針で、サテライトのプラマックも影響を受け最大4台が欠場しうる。主催者は中止の理由はまだ十分でないとしている。F1は11月29日のカタール、12月6日のアブダビを予定通り開催する構えで、FIAのベン・スライエム会長は両戦とも実施可能と述べた。ウィリアムズのサインツは開催を断定するのは時期尚早とし、代替地にイモラを挙げた。今季は地域情勢でバーレーン戦がマレーシアのセパンで行われ、サウジ戦も外れている。",
-   "orig": "Yamaha trekt zich terug uit MotoGP-race in Qatar: mogelijk voorbode voor Formule 1",
-   "url": "https://www.f1maximaal.nl/formule-1/yamaha-weigert-naar-motogp-race-in-qatar-af-te-reizen-ook-formule-1-in-gevaar",
-   "published": "2026-11-01T13:09:00+01:00"
   }
  ]
 }
