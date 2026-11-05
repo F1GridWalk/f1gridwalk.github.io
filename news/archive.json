@@ -21645,6 +21645,186 @@
      "mood": "賛"
     }
    ]
+  },
+  "ja-voice-ocon-haas-exit": {
+   "id": "ja-voice-ocon-haas-exit",
+   "kind": "voice",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1 Grid Walk",
+   "cat": "ファンの声",
+   "circuit": "interlagos",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "title": "「真相は闇になるのでは」　オコン離脱に日本のファン、カマラ昇格には期待",
+   "summary": "ハースがオコンを今季の残りから外し、カマラのF1デビューを発表したことについて、Yahoo!ニュースのコメント欄では、公式発表の少なさから真相を測りかねる声が目立った。FP2後の騒動で信頼関係が崩れたとの見方や、来季の布陣を早く固める判断を理解する意見が多く、カマラの母国デビューへの期待も出ていた。",
+   "url": "https://news.yahoo.co.jp/articles/8db338b4dcc7f0fdc091d862a6a84e45cde90a50",
+   "published": "2026-11-06T00:35:00+09:00",
+   "voices": [
+    {
+     "side": "日本",
+     "text": "公式発表で確認できるのは解雇とカマラ起用だけ、とリリースを読み解く声が最も共感を集めた。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/8db338b4dcc7f0fdc091d862a6a84e45cde90a50/comments",
+     "mood": "驚",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "真相は闇になりそう、いつかネットフリックスの番組になるのでは、と冗談交じりに語る人も。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/8db338b4dcc7f0fdc091d862a6a84e45cde90a50/comments",
+     "mood": "笑"
+    },
+    {
+     "side": "日本",
+     "text": "FP2後の騒動で信頼関係が壊れたのでは、と見る人が多い。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/328e503d0592ffd4dbc8bbc19d0baa355da0c066/comments",
+     "mood": "否",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "来季の契約がないドライバーより、来季のカマラを早く走らせる判断は当然という見方。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/328e503d0592ffd4dbc8bbc19d0baa355da0c066/comments",
+     "mood": "賛"
+    },
+    {
+     "side": "日本",
+     "text": "無線のやり取り自体はオコンの言い分にも理があったのでは、という指摘。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/328e503d0592ffd4dbc8bbc19d0baa355da0c066/comments",
+     "mood": "驚"
+    },
+    {
+     "side": "日本",
+     "text": "契約上の重い違反があったのかもしれない、と推測する声も。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/328e503d0592ffd4dbc8bbc19d0baa355da0c066/comments",
+     "mood": "心配"
+    },
+    {
+     "side": "日本",
+     "text": "大事な中位争いで新人に替えるのは、かなりリスクがあるとの心配。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/8db338b4dcc7f0fdc091d862a6a84e45cde90a50/comments",
+     "mood": "心配"
+    },
+    {
+     "side": "日本",
+     "text": "神童カマラの母国デビューを楽しみにしている、という声が多数。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/8db338b4dcc7f0fdc091d862a6a84e45cde90a50/comments",
+     "mood": "賛"
+    },
+    {
+     "side": "日本",
+     "text": "カマラの起用は意外だったが、小松代表は平川の起用も含めてうまくやったと評価する人も。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/328e503d0592ffd4dbc8bbc19d0baa355da0c066/comments",
+     "mood": "賛"
+    },
+    {
+     "side": "日本",
+     "text": "平川にもう一戦走ってほしかった、と惜しむ声。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/328e503d0592ffd4dbc8bbc19d0baa355da0c066/comments",
+     "mood": "心配"
+    }
+   ]
+  },
+  "en-planetf1-cadillac-bottas-suspension-mitigations": {
+   "id": "en-planetf1-cadillac-bottas-suspension-mitigations",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "cadillac-bottas-suspension",
+   "title": "キャデラック、ボッタスのクラッシュ原因調査を終え再発防止策　サスペンション破損は今季2度目",
+   "summary": "PlanetF1によると、キャデラックのブドコウスキー代表は、メキシコシティGPでボッタスが大クラッシュした件の調査結果を受け、再発を防ぐ対策を講じたと明かした。左前のサスペンションが41周目、ターン1のブレーキングで壊れ、時速200マイル超でバリアに衝突したが、ボッタス自身は動揺しつつも無事だった。同種の破損は今季2度目で、1度目はカナダGPでペレスの右前がピットレーン進入時に壊れたものだ。メキシコは「今季最も競争力のあるレース」だったと代表は語り、ボッタスはインテルラゴスでの復帰を楽しみにしている。",
+   "orig": "Cadillac confirms investigation findings after scary Valtteri Bottas crash",
+   "url": "https://www.planetf1.com/news/cadillac-confirms-investigation-findings-after-scary-valtteri-bottas-crash",
+   "published": "2026-11-05T12:01:00+00:00"
+  },
+  "de-motorsporttotal-cadillac-sale-rumors": {
+   "id": "de-motorsporttotal-cadillac-sale-rumors",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "うわさ",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "cadillac-stake-sale-rumor",
+   "title": "キャデラックF1の一部売却観測　オーナーのウォルター氏、資金繰り圧力とドイツ誌が報道",
+   "summary": "Motorsport-Total.comは、米スポーティコの報道を引いて、キャデラックF1の筆頭株主マーク・ウォルター氏が持ち分の一部売却を検討していると伝えた。ワシントン・ポストによれば、リバプールなどを保有するフェンウェイ・スポーツ・グループが関心を示す一社で、チーム評価額は約30億ドルとされる。同氏には米司法省が保険会社の取引を調べていると報じられており、グループ内融資の置き換えが売却の引き金になり得るという。TWGグローバルは当初否定し、実際に売却があるかは未確定で、いずれも未確認の報道だ。",
+   "orig": "Gerüchte um den Verkauf von Cadillacs Formel-1-Team",
+   "url": "https://www.motorsport-total.com/formel-1/news/geruechte-um-den-verkauf-von-cadillacs-formel-1-team-26110506",
+   "published": "2026-11-05T09:00:00+01:00"
+  },
+  "de-motorsporttotal-ocon-difficult-reputation": {
+   "id": "de-motorsporttotal-ocon-difficult-reputation",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "title": "オコンの「気難しい」評判は誇張か　ハース離脱で問われる来季の行き先",
+   "summary": "Motorsport-Total.comは、ハースを今季の残りで外れたオコン（30）の評判を論じる署名記事を載せた。筆者は「気難しい」という評は誇張で、チームメイトとの衝突の多くは本人の責任ではなかったと見る。離脱の理由は公式に明かされておらず、憶測は避けるべきだとも述べる。来季は大半のシートが埋まり、キャデラックの残る1席などが取り沙汰されるが厳しい状況だ。ウォルフが一時「お気に入りの弟子」と呼びながらアントネッリを選んだ経緯にも触れ、アルボンやボッタスのような復帰の例を挙げて可能性は残るとした。",
+   "orig": "Esteban Ocon und sein schwieriger Ruf: Die andere Seite des F1-Siegers",
+   "url": "https://www.motorsport-total.com/formel-1/news/esteban-ocon-und-sein-schwieriger-ruf-die-andere-seite-des-f1-siegers-26110509",
+   "published": "2026-11-05T11:00:00+01:00"
+  },
+  "de-motorsporttotal-antonelli-sump-crack-near-retirement": {
+   "id": "de-motorsporttotal-antonelli-sump-crack-near-retirement",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "アントネッリ、メキシコで完走寸前のトラブル　メルセデス副代表「床下はオイルだらけ」",
+   "summary": "Motorsport-Total.comは、メルセデスのブラッドリー・ロード副代表がポッドキャストで、メキシコGPでアントネッリが一時リタイア寸前だったと明かしたと伝えた。レース後に床下を外すとオイルまみれで、サンプに亀裂が見つかったという。アントネッリはゴール4周前からエンジンの異変を感じ、そのまま管理して3位でフィニッシュした。仮に止まっていても、ハミルトンが優勝してフェルスタッペンを抜かなければ王座は決まる状況だった。ハミルトンとノリスはMGU-Kの出力低下を批判し、2027年に向けた変更を求めている。",
+   "orig": "Mercedes enthüllt: Kimi Antonelli stand in Mexiko kurz vor dem Ausfall",
+   "url": "https://www.motorsport-total.com/formel-1/news/mercedes-enthuellt-kimi-antonelli-stand-in-mexiko-kurz-vor-dem-ausfall-26110508",
+   "published": "2026-11-05T11:55:00+01:00"
+  },
+  "en-planetf1-beganovic-replaces-leclerc-brazil-fp1": {
+   "id": "en-planetf1-beganovic-replaces-leclerc-brazil-fp1",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-beganovic-fp1-brazil",
+   "title": "ブラジルGPのFP1、ルクレールに代わりベガノビッチがフェラーリ出走",
+   "summary": "PlanetF1によると、フェラーリはブラジルGPのFP1でルクレールに代え、育成のディノ・ベガノビッチをSF-26に乗せる。今季3度目のFP1出走となる。当初はラファエル・カマラが走行デビューする予定だったが、カマラがオコンに代わりハースからレースデビューすることになり計画が変わった。ルクレールは家族と過ごす時間を取るために欠場する。若手のFP1起用義務は4回のうち3回目で、ハミルトンもシーズン中にあと1回シートを譲る必要がある。ベガノビッチは両エースから学んでいると話した。",
+   "orig": "Charles Leclerc to miss Brazilian GP FP1 as Ferrari junior steps in",
+   "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-teammate-brazilian-gp-fp1-announcement",
+   "published": "2026-11-05T08:15:00+00:00"
   }
  },
  "topics": {
@@ -22423,7 +22603,11 @@
   "mclaren-brazil-update-2027": {
    "title": "マクラーレン、サンパウロGPにフロントウイングなど新パーツ　2027年型にも継承",
    "summary": "マクラーレンはサンパウロGPでMCL40にフロントウイング、リアウイング、フロアの改良を投入する。空力責任者のプロドロモウは「シーズンはまだ終わっていない」と述べ、新しいフロントウイングの考え方は2027年型にも生かされるとした。コンストラクターズではレッドブルを17点差で追う。"
+  },
+  "cadillac-stake-sale-rumor": {
+   "title": "キャデラックF1の一部売却観測　FSGなどが関心と報道",
+   "summary": "米スポーティコは、キャデラックF1の筆頭株主マーク・ウォルター氏が持ち分の売却を探っていると報じ、リバプールの親会社FSGが関心を示す一社と伝えられた。評価額は約30億ドルとされ、オーナーのグループへの司法当局の調査も背景にあるという。TWGグローバルは当初否定しており、いずれも未確認の報道だ。"
   }
  },
- "updatedAt": "2026-11-05T18:30:00+09:00"
+ "updatedAt": "2026-11-06T00:35:00+09:00"
 }
