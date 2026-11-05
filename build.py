@@ -1836,7 +1836,10 @@ def build_rules():
         if 'エンジニア' in p.get('role', '') and p.get('role') != 'ドライバー':
             drv = [d for d in PEOPLE if d.get('role') == 'ドライバー' and p in engineers_of(d)]
             if drv:
-                b += ('<p class="rb-mate">担当ドライバー：' + '、'.join(f'<a href="/deep/rules/person-{e(d["id"])}/" data-track="click/person/{e(p["id"])}/driver">{e(d["name"])} →</a>' for d in drv) + '</p>')
+                b += ('<div style="margin:12px 0;padding:12px 14px;border-radius:12px;background:#1F2420;color:#fff">'
+                      '<p style="margin:0;font-size:12px;font-weight:800;opacity:.8">担当ドライバー</p>'
+                      + ''.join(f'<a style="display:block;color:#fff;font-size:18px;font-weight:900;text-decoration:none;margin-top:4px" href="/deep/rules/person-{e(d["id"])}/" data-track="click/person/{e(p["id"])}/driver">{e(d["name"])}のページ（近況・うわさ）→</a>' for d in drv)
+                      + '<a style="display:inline-block;margin-top:8px;color:#FFEE9A;font-size:12.5px;font-weight:700" href="/drivers/engineers/" data-track="click/person/engineers">レースエンジニア一覧 →</a></div>')
         is_drv = 'ドライバー' in p.get('role', '') and 'エンジニア' not in p.get('role', '')
         if is_drv:
             b += driver_fan_block(p)  # fan page for drivers: news first, then the profile (owner, 27 Oct 2026)
@@ -3127,6 +3130,7 @@ def team_people(k):
 
 
 DRV_CSS = """
+.drv-more{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}.drv-more a{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:800;text-decoration:none;color:var(--ink);background:var(--surface)}
 .drv h1{font-size:26px;margin:6px 0 4px}
 .drv .lead{color:var(--ink-2);font-size:14.5px;line-height:1.8;margin:0 0 18px}
 .drv h2{font-size:18px;margin:30px 0 8px;padding-top:14px;border-top:2px solid var(--ink)}
@@ -3189,12 +3193,94 @@ def build_drivers(by_term):
         hot.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/hot/{e(p["id"])}"><b>{e(p["name"])}</b><span>{e(lb)}「{e(ttl)}」</span></a>')
     body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › ドライバー</nav><div class="drv">'
             f'<h1>ドライバー</h1><p class="lead">{e(T.get("season", "2026"))}年のF1を走る{len(drivers)}人を、チームごとに並べています。名前を押すと、その人の STORY・コラム・ニュースをまとめて読めます。</p>'
+            + '<p class="drv-more"><a href="/drivers/japan/" data-track="click/drivers/japan">日本人ドライバーのページ →</a><a href="/drivers/engineers/" data-track="click/drivers/engineers">レースエンジニア一覧 →</a></p>'
             + (f'<h2>最近の読み物の主役</h2><div class="drv-hot">{"".join(hot)}</div>' if hot else '')
             + '<h2>チームとドライバー</h2>' + ''.join(grid) + '</div>')
     url = SITE + '/drivers/'
     write('drivers/index.html', page('F1ドライバー一覧 2026｜チームごとの22人と記事｜F1グリッドウォーク',
                                      f'{T.get("season", "2026")}年のF1ドライバー{len(drivers)}人をチームごとに。名前から、その人のSTORY・コラム・ニュースへ。', url, body,
                                      f'<style>{DRV_CSS}</style>\n', og_type='website'))
+    now_ = datetime.now(JST).isoformat(timespec='seconds')
+    return [(url, now_, 'daily', '0.7')] + build_engineers(teams, order) + build_japan()
+
+
+JP_DRIVERS = ['yuki-tsunoda', 'ryo-hirakawa', 'ayumu-iwasa', 'ritomo-miyata', 'kakunoshin-ohta', 'taito-kato', 'hiyu-yamakoshi']
+JP_PEOPLE = ['ayao-komatsu', 'shintaro-orihara', 'koji-watanabe', 'kazuki-nakajima']
+XP_CSS = '''.xp h1{font-size:26px;margin:6px 0 4px}.xp .lead{color:var(--muted);line-height:1.8}
+.xp h2{font-size:18px;margin:26px 0 8px;padding-top:12px;border-top:2px solid var(--ink)}
+.xp table{width:100%;border-collapse:collapse;font-size:14.5px}.xp th,.xp td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.xp th{font-size:12px;color:var(--muted)}.xp td a{font-weight:700;color:var(--ink)}.xp td small{display:block;color:var(--muted);font-size:11.5px}
+.xp .tmh td{background:var(--surface);font-weight:800;font-size:13px}.xp .tmh i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.jp-c{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:10px 0;background:var(--surface)}
+.jp-c h3{margin:0;font-size:18px}.jp-c h3 a{color:var(--ink);text-decoration:none}.jp-c .r{font-size:12.5px;color:var(--muted);margin:2px 0 6px}
+.jp-c ul{margin:0;padding:0;list-style:none}.jp-c li{padding:5px 0;border-top:1px dashed var(--line);font-size:14px;line-height:1.55}.jp-c li a{color:var(--ink);font-weight:700;text-decoration:none}
+.jp-c li small{color:var(--muted);font-size:11px;margin-left:4px}.jp-c .go{display:inline-block;margin-top:6px;font-size:13px;font-weight:800;color:var(--clay)}
+.jp-l{list-style:none;margin:0;padding:0}.jp-l li{padding:7px 0;border-top:1px solid var(--line)}.jp-l a{font-weight:700;color:var(--ink);text-decoration:none}
+.jp-l .fk{display:inline-block;font-size:10.5px;font-weight:800;border:1px solid currentColor;border-radius:4px;padding:0 5px;margin-right:6px;color:#2F6B66}
+.jp-p{display:flex;flex-wrap:wrap;gap:8px}.jp-p a{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13.5px;font-weight:700;text-decoration:none;color:var(--ink);background:var(--surface)}'''
+
+
+def _crumb(name):
+    return f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/drivers/">ドライバー</a> › {e(name)}</nav>'
+
+
+def build_engineers(teams, order):
+    """drivers/engineers/ — every driver and the engineers on their radio, team by team (owner's OK, 6 Nov 2026)."""
+    rows, n = [], 0
+    for k in order:
+        t = teams.get(k) or {}
+        ds = [driver_person(d) for d in t.get('drivers', [])]
+        ds = [d for d in ds if d]
+        if not ds:
+            continue
+        rows.append(f'<tr class="tmh"><td colspan="2"><i style="background:{e(t.get("c1", "#888"))}"></i>{e(t.get("name", k))}</td></tr>')
+        for d in ds:
+            engs = engineers_of(d)
+            n += len(engs)
+            cell = ''.join(f'<a href="{rb_url("person-" + x["id"])}" data-track="click/eng/{e(x["id"])}">{e(x["name"])}</a><small>{e(x["role"])}</small>' for x in engs) or '<small>まだ人物辞典にいません</small>'
+            rows.append(f'<tr><td><a href="{rb_url("person-" + d["id"])}" data-track="click/eng/drv/{e(d["id"])}">{e(d["name"])}</a></td><td>{cell}</td></tr>')
+    body = (_crumb('レースエンジニア一覧') + '<div class="xp"><h1>F1 レースエンジニア一覧 2026</h1>'
+            '<p class="lead">無線でドライバーと話すレースエンジニアを、チームとドライバーごとに並べました。名前を押すと、その人の経歴や、担当ドライバーとの話が読めます。中身は人物辞典から自動で作っています。</p>'
+            '<table><thead><tr><th>ドライバー</th><th>レースエンジニアなど</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table>'
+            '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a>　<a href="/deep/rules/">用語・人物の辞典 →</a></p></div>')
+    url = SITE + '/drivers/engineers/'
+    write('drivers/engineers/index.html', page('F1レースエンジニア一覧 2026｜ドライバーと担当エンジニア｜F1グリッドウォーク',
+          f'2026年のF1、ドライバーごとの担当レースエンジニア（{n}人）。ボニントン、ランビアーゼなど、無線の声の主を一覧に。', url, body,
+          f'<style>{XP_CSS}</style>\n', og_type='website'))
+    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
+
+
+def build_japan():
+    """drivers/japan/ — Japanese drivers: news, rumours, columns, STORY and fan voices (owner's OK, 6 Nov 2026)."""
+    byid = {q['id']: q for q in PEOPLE}
+    ppl = [byid[i] for i in JP_DRIVERS if i in byid]
+    cards, names = [], []
+    for q in ppl:
+        nm = [x for x in _kw_names([q['name']] + (q.get('aliases') or [])) if x not in PERSON_STOP and (len(x) >= 3 or re.search(r'[一-龯]', x))]
+        names += nm
+        hits = person_news(q, ALLARTS, n=4)
+        li = ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/japan/news">{e(a["title"])}</a><small>{e(a["source"])} · {when(a).astimezone(JST).month}/{when(a).astimezone(JST).day}</small></li>' for a in hits[:3])
+        cards.append(f'<div class="jp-c"><h3><a href="{rb_url("person-" + q["id"])}" data-track="click/japan/{e(q["id"])}">{e(q["name"])}</a></h3>'
+                     f'<p class="r">{e(q["role"])}</p>' + (f'<ul>{li}</ul>' if li else '<p class="r">最近のニュースはまだありません。</p>')
+                     + f'<a class="go" href="{rb_url("person-" + q["id"])}" data-track="click/japan/{e(q["id"])}/more">近況・うわさを全部見る →</a></div>')
+    hit = lambda t: any(_kw_hit(x, t) for x in names)
+    sto = [H for H in hubs_newest() if hit(' '.join([H.get('title', ''), H.get('dek', ''), (H.get('story') or {}).get('hook', '')]))][:4]
+    cols = [x for x in ALL_COLS if hit(x['title'] + ' ' + x.get('txt', ''))][:10]
+    vo = [a for a in ALLARTS if a.get('kind') == 'voice' and hit(' '.join([a['title'], a.get('summary', '')] + [v.get('text', '') for v in a.get('voices') or []]))][:3]
+    rd = ''.join(f'<li><span class="fk" style="color:#1F2420">STORY</span><a href="/topics/{e(H["slug"])}/">{e(H["title"])}</a></li>' for H in sto)
+    rd += ''.join(f'<li><span class="fk">{e(COL_TAG.get(x["kind"], "コラム"))}</span><a href="{e(x["url"])}">{e(x["title"])}</a></li>' for x in cols)
+    rd += ''.join(f'<li><span class="fk" style="color:#2F7A72">ファンの声</span><a href="/news/{e(a["id"])}/">{e(a["title"])}</a></li>' for a in vo)
+    jp2 = [byid[i] for i in JP_PEOPLE if i in byid]
+    body = (_crumb('日本人ドライバー') + '<div class="xp"><h1>F1と日本人ドライバー 2026</h1>'
+            '<p class="lead">角田裕毅、平川亮、岩佐歩夢、そして F2・F3 で上を目指す若手まで。日本人ドライバーの近況、うわさ、コラムを1ページに集めました。毎日自動で新しくなります。</p>'
+            + ''.join(cards)
+            + (f'<h2>日本人ドライバーの読み物</h2><ul class="jp-l">{rd}</ul>' if rd else '')
+            + ('<h2>F1の日本人関係者</h2><div class="jp-p">' + ''.join(f'<a href="{rb_url("person-" + q["id"])}"><b>{e(q["name"])}</b>（{e(re.sub(r"（.*?）", "", q["org"]))}）</a>' for q in jp2) + '</div>' if jp2 else '')
+            + '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a></p></div>')
+    url = SITE + '/drivers/japan/'
+    write('drivers/japan/index.html', page('F1 日本人ドライバー 2026｜角田裕毅・平川亮・岩佐歩夢の近況とうわさ｜F1グリッドウォーク',
+          'F1の日本人ドライバー（角田裕毅、平川亮、岩佐歩夢、宮田莉朋ほか）の最新ニュース、うわさ、コラムをまとめて。毎日更新。', url, body,
+          f'<style>{XP_CSS}</style>\n', og_type='website'))
     return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
 
 
