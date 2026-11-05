@@ -1,0 +1,372 @@
+{
+ "slug": "camara-lot-to-learn",
+ "gp": "サンパウロGP",
+ "title": "「学ぶことは多い」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "来年からのハースのシートが、4戦早く、母国インテルラゴスで始まる。21歳のラファエル・カマラは、2026年型のマシンに一度も乗っていない。「学ぶことは多いと分かっている」。レシフェで兄の代わりにカートに乗った日から、父に「来年、僕が乗る」と伝えた日まで。ブラジル人が2人並ぶのは10年ぶり。",
+ "checked": "2026-11-06",
+ "checkedNote": "読者チェックで「同い年のアントネッリ」（実際は1歳下）、「1年早く」（正しくは4戦）を直しました。Grande Prêmio、Sky Sports、The Race、LBC、GRANDPRIX247、Formula1.com、Pit Debrief、Formula Scout、RacingNews365、O Liberal、The Rio Times の原文を11月5日に確認しました。本人の言葉は英語から編集部が訳しました。ハースの公式サイトの原文は直接開けなかったので、プレビューの言葉は転載元で確認しています。この週末のカーナンバーはFIAのエントリーリストで確定します。",
+ "common": [
+  "ハースは11月3日、サンパウロGPでオコンに代えてカマラを起用すると発表。オコンは今季はもうレースに出ない（理由は「内部の問題」、本人は暴力の報道を否定）。",
+  "カマラは21歳、レシフェ出身。フェラーリ育成。2024年FRECA王者、2025年F3王者、2026年F2首位（207点、ツォロフに7点差）。2027年からのハース起用は10月15日に発表済み。",
+  "8月にポルティマオで旧型車の2日間テスト（若手4人）。2026年型には未乗車。",
+  "ブラジル人2人が同じ週末に走るのは2016年以来。FP1は日本時間11月7日（土）0時30分。"
+ ],
+ "outlets": [
+  {
+   "id": "en-f1com-camara-lot-to-learn-debut",
+   "angle": "本人",
+   "adds": [
+    "「学ぶことは多い」、小松代表の評価、ベアマンの完走への思い。"
+   ]
+  },
+  {
+   "id": "en-therace-haas-drops-ocon",
+   "angle": "経緯",
+   "adds": [
+    "オコンの今季離脱、カマラの前倒し。"
+   ]
+  },
+  {
+   "id": "pt-grandepremio-haas-ocon-camara-interlagos",
+   "angle": "ブラジル",
+   "adds": [
+    "地元紙の発表報道。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「特別な瞬間」「学ぶことは多い」",
+   "w": "ハースのプレビュー（11月5日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「どう言えばいいか分からなかった」「父のほうが感情的」「ガビは7歳のときから」",
+   "w": "Formula1.com（10月15日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「兄が先に始めた」「セナは最高の存在」",
+   "w": "Formula Scout（11月4日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「決して軽く下されるものではない」「ラファの力は分かっている」",
+   "w": "ハースの声明（11月3日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "フェラーリ育成に入った年",
+   "t": "2021年とする記事と2022年とする記事がある。本文は「16歳のとき（2021年）」の記述に合わせた。"
+  },
+  {
+   "k": "サンパウロ以降の3戦",
+   "t": "ラスベガスもカマラ、カタールとアブダビ（F2と重なる）は平川、という見方があるが、チームは発表していない。"
+  }
+ ],
+ "unknownsFillable": [
+  "この週末のカーナンバー。",
+  "FP1、予選、決勝の結果。",
+  "残り3戦のハースのドライバー。"
+ ],
+ "unknownsLimits": [
+  "メキシコでオコンとチームの間に何があったか（チームは「内部の問題」）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜ、いま母国でデビューなのか？",
+  "rows": [
+   {
+    "k": "前倒し",
+    "t": "オコンの今季離脱で席が空き、来年のレギュラーが4戦早く乗ることになった。"
+   },
+   {
+    "k": "準備",
+    "t": "8月のポルティマオで旧型車を2日間。小松代表は「とてもうまくこなした」。ただし2026年型は初めて。"
+   },
+   {
+    "k": "日程",
+    "t": "サンパウロにF2のレースはなく、重ならない。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "平川亮のメキシコは、どうだった？",
+   "rules": [
+    "reserve-driver"
+   ],
+   "links": [
+    "/topics/hirakawa-first-71-laps/"
+   ]
+  },
+  {
+   "q": "ハースのベアマンの来季は？",
+   "rules": [
+    "contract-option",
+    "driver-market"
+   ],
+   "links": [
+    "/topics/bearman-question-of-timing/"
+   ]
+  },
+  {
+   "q": "旧型車のテストは、どこまで許される？",
+   "rules": [
+    "testing-rules"
+   ]
+  },
+  {
+   "q": "ルーキーがF1に乗るには、何が要る？",
+   "rules": [
+    "super-licence",
+    "rookie"
+   ]
+  }
+ ],
+ "todo": [
+  "FP1・予選・決勝の結果を追記",
+  "カーナンバーを確認"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-03T18:35:00-03:00",
+   "t": "ハースがサンパウロGPのカマラ起用を発表"
+  },
+  {
+   "at": "2026-11-06T03:00:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "ハースは11月3日、オコンを今季残りのレースから外し、サンパウロGPに21歳のラファエル・カマラを起用すると発表した。カマラはレシフェ出身のフェラーリ育成で、2024年FRECA、2025年F3の王者、2026年F2首位。2027年からのハース起用は10月15日に決まっていて、それが4戦早く、母国で始まる。8月にポルティマオで旧型車を2日間走ったが、2026年型は初めて。「ブラジルでのデビューは特別な瞬間。学ぶことは多いと分かっている」。ブラジル人2人が同じ週末に走るのは2016年以来。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "来年からのF1が、4戦早く、母国で始まる。21歳、2026年型には一度も乗っていない。「学ぶことは多いと分かっている」。レシフェの兄の話、父に伝えた日、7歳から知る友達。ブラジル人が2人並ぶのは10年ぶり。",
+  "body": [
+   [
+    "h",
+    "「学ぶことは多い」"
+   ],
+   [
+    "p",
+    "11月3日、火曜日。ハースが短い声明を出した。サンパウロGPは、ベアマンの隣にラファエル・カマラを乗せる。オコンは、今季はもうレースのシートに戻らない。"
+   ],
+   [
+    "p",
+    "カマラは21歳。来年からハースのレギュラーになることは10月に決まっていたが、それが4戦、早まった。2026年型のF1マシンには、まだ一度も乗っていない。走るのは、生まれた国のサーキットだ。"
+   ],
+   [
+    "p",
+    "週末を前に、本人の短い言葉が出た。「ブラジルでF1デビューするのは、僕にとって特別な瞬間だ」。「学ぶことは多いと分かっている。チームと密に働いて、マシンを理解して、この週末にできる限りのことをするのが、僕のやることだ」。"
+   ],
+   [
+    "h",
+    "前倒し"
+   ],
+   [
+    "p",
+    "きっかけは、1週間前のメキシコシティにある。金曜日の走行のあと、オコンとチームの間で何かがあり、土曜の朝、ハースは残りの週末を平川亮に任せた。平川は18番手から走って10位、1点を持ち帰った。一部で身体的な衝突があったと伝えられたが、オコンは強く否定している。チームは理由を「内部の問題」とだけ言っている。"
+   ],
+   [
+    "p",
+    "小松礼雄代表は、こう書いた。「こうした決断は、決して軽く下されるものではない。メキシコシティでもそうだった」。そして、「8月のテストで非常にいい走りを見せてくれたので、ラファの力は分かっている」。"
+   ],
+   [
+    "p",
+    "来年の相棒になるはずだった2人が、4戦早く、隣に並ぶ。"
+   ],
+   [
+    "h",
+    "レシフェから"
+   ],
+   [
+    "p",
+    "カマラは、ブラジル北東部のレシフェで育った。先にレースを始めたのは、兄だった。「兄が先に始めたけど、好きになれなかった。それで、僕が父に『運転したい』と言った」。6歳でカートに乗った。"
+   ],
+   [
+    "p",
+    "16歳のとき、ヨーロッパのカート選手権で2位になった。1位は、キミ・アントネッリだった。その年にフェラーリの育成に入った。「少し怖かった」と、あとで振り返っている。フェラーリでは「ドライバーとしてだけでなく、人として成長できた」。"
+   ],
+   [
+    "p",
+    "2024年、ヨーロッパのフォーミュラ・リージョナルでチャンピオン。2025年、FIA F3でチャンピオン。2026年はF2の首位にいる。3勝で207点、2位のツォロフ（レッドブルの育成）に7点差。残りはカタールとアブダビの2戦で、サンパウロの週末にF2のレースはない。"
+   ],
+   [
+    "h",
+    "「どう言えばいいか、分からなかった」"
+   ],
+   [
+    "p",
+    "8月、ハースはポルティマオで、去年のマシンを使って若手4人を2日間走らせた。「間違いなく、濃い2日間だった」。「2日のうちにマシンに慣れて、出すべきものを出さないといけない」。「ただ、自分がちゃんと楽しめているかは、確かめたかった」。"
+   ],
+   [
+    "p",
+    "小松代表は、その2日間について、マシンを覚える時間がほとんどなくても「とてもうまくこなした」と言った。10月15日、ハースはカマラの2027年からの起用を発表した。"
+   ],
+   [
+    "p",
+    "家族には、自分で伝えた。「どう言えばいいか分からなかったから、さっと言った。『来年、僕が乗る』って」。「父のほうが、感情的になっていた」。「父は抑えられないんだ。出てきてしまう」。"
+   ],
+   [
+    "p",
+    "ブラジルから先にF1に来た友達がいる。アウディのガブリエル・ボルトレート。「ガビは7歳のときから知っている」。「彼がF1に行くのを見て、僕が頑張り続ける理由が、もうひとつ増えた」。"
+   ],
+   [
+    "h",
+    "セナのロゴと、50番"
+   ],
+   [
+    "p",
+    "去年のヘルメットの後ろには、セナのロゴがあった。「セナは僕にとって最高の存在だった。たぶん、すべてのブラジル人のアイドルだ」。"
+   ],
+   [
+    "p",
+    "来年のカーナンバーは、50番にしたいと言っている。誕生日が2005年5月5日で、5番はボルトレートが使っているからだ。ブラジル人が2人、同じ週末にF1のグリッドに並ぶのは、2016年のマッサとナッセ以来、10年ぶりになる。ブラジル北東部の出身者がF1で走るのは、初めてだという。"
+   ],
+   [
+    "p",
+    "インテルラゴスは、今年は新しい路面で、スタンドも造り直された。スプリントのない週末で、カマラが初めてマシンに乗るFP1は、日本時間の土曜日午前0時30分に始まる。"
+   ],
+   [
+    "h",
+    "始めればいい"
+   ],
+   [
+    "p",
+    "隣のベアマンは、直近2戦をリタイアで終えている。「この3連戦は、ここまで僕にあまり優しくなかった。ペースはよかったのに、まだゴールラインを越えていない」。そして、こう続けた。「ここでは2024年にケビンの代役で走ったから、ラファがいまどんな気持ちか、少しは分かる」。"
+   ],
+   [
+    "p",
+    "ブラジルのメディアは、こう書いた。カマラはインテルラゴスで輝く必要はない。始めればいい。"
+   ],
+   [
+    "p",
+    "「学ぶことは多い」。そう言った21歳が、母国のピットレーンで、2026年のマシンに初めて乗る。学ぶ時間は、現地の金曜日の昼、日本では土曜日の0時30分に始まる。"
+   ]
+  ],
+  "terms": [
+   [
+    "育成（アカデミー）",
+    "academy-f2"
+   ],
+   [
+    "スーパーライセンス",
+    "super-licence"
+   ],
+   [
+    "ルーキー",
+    "rookie"
+   ],
+   [
+    "母国レース",
+    "home-race"
+   ],
+   [
+    "旧型車テスト（TPC）",
+    "testing-rules"
+   ],
+   [
+    "スプリント",
+    "sprint"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Grande Prêmio",
+    "title": "Haas confirms Câmara for São Paulo F1 debut after Ocon exit",
+    "url": "https://grandepremio.com/en/f1/haas-confirms-camara-for-sao-paulo-f1-debut-after-ocon-exit/",
+    "note": "2026年11月3日。ハースの声明全文、小松代表「決して軽く下されるものではない」「8月のテスト」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Esteban Ocon will not race for Haas again this season as Rafael Camara replaces him at Sao Paulo Grand Prix",
+    "url": "https://www.skysports.com/f1/news/13607256/",
+    "note": "2026年11月3日。「内部の問題」、平川18番手から10位。"
+   },
+   {
+    "name": "The Race",
+    "title": "Esteban Ocon replaced by Haas for rest of Mexico F1 weekend",
+    "url": "https://the-race.com/formula-1/esteban-ocon-replaced-haas-f1-rest-of-mexico-f1-weekend",
+    "note": "2026年10月31日。金曜の走行のあとの経緯、土曜朝の交代。"
+   },
+   {
+    "name": "LBC",
+    "title": "Esteban Ocon denies reports of physical violence after being dropped by Haas",
+    "url": "https://www.lbc.co.uk/article/esteban-ocon-denies-reports-of-physical-violence-after-being-dropped-by-haas-5Hjdkjg_2/",
+    "note": "2026年11月1日。オコンの声明。"
+   },
+   {
+    "name": "GRANDPRIX247",
+    "title": "Rafael Camara's dream home Grand Prix Formula 1 debut, Bearman's unfinished business at Interlagos",
+    "url": "https://www.grandprix247.com/grand-prix-f1-weekend-news/rafael-camaras-dream-home-grand-prix-formula-1-debut-bearmans-unfinished-business-at-interlagos",
+    "note": "2026年11月5日。ハースのプレビュー。カマラ「特別な瞬間」「学ぶことは多い」、ベアマン「まだゴールラインを越えていない」「ケビンの代役」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Exclusive: 'It's really crazy to achieve this' – Camara on joining Haas in 2027 and the intense shoot-out test he faced",
+    "url": "https://www.formula1.com/en/latest/article/exclusive-its-really-crazy-to-achieve-this-camara-on-joining-haas-in-2027-and-the-intense-shoot-out-test-he-faced.Sx8HzUOO7WsUm0afvDcP4",
+    "note": "2026年10月15日。「濃い2日間」「どう言えばいいか分からなかった」「父のほうが感情的」「少し怖かった」「ガビは7歳のときから」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Ferrari junior Rafael Camara promoted to F1 with Haas for 2027",
+    "url": "https://www.formula1.com/en/latest/article/ferrari-junior-rafael-camara-promoted-to-f1-with-haas-for-2027.1RSxvnFaLu8Hd3JD2ppFsz",
+    "note": "2026年10月15日。2027年の起用発表、2024年FRECA王者、2025年F3王者。"
+   },
+   {
+    "name": "Pit Debrief",
+    "title": "Camara to make F1 debut at São Paulo GP as Haas confirms early Ocon exit",
+    "url": "https://www.pitdebrief.com/post/camara-to-make-f1-debut-at-sao-paulo-gp-as-haas-confirms-early-ocon-exit/",
+    "note": "2026年11月3日。ポルティマオの2日間、小松代表「とてもうまくこなした」。"
+   },
+   {
+    "name": "Formula Scout",
+    "title": "Eyes forward: Rafa Camara's road from Recife to Formula 1",
+    "url": "https://formulascout.com/eyes-forward-rafa-camaras-road-from-recife-to-formula-1/140608",
+    "note": "2026年11月4日。「兄が先に始めた」「父に運転したいと言った」「セナは最高の存在」、6歳でカート、2021年ヨーロッパ選手権2位（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "2026 F2 championship standings after Baku Feature Race 2",
+    "url": "https://racingnews365.com/2026-f2-championship-standings-after-baku-feature-race-2",
+    "note": "F2首位207点、ツォロフに7点差、残りカタールとアブダビ。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "New Haas signing Camara indicates the driver number he'd like to use in 2027",
+    "url": "https://www.formula1.com/en/latest/article/new-haas-signing-camara-indicates-the-driver-number-hed-like-to-use-in-2027.2gYYicm5lswBpzkn5Wh2v0",
+    "note": "2026年10月。50番、誕生日2005年5月5日。"
+   },
+   {
+    "name": "Pit Debrief",
+    "title": "Rafael Camara helmet",
+    "url": "https://www.pitdebrief.com/?p=78023",
+    "note": "2025年。ヘルメットの後ろのセナのロゴ。"
+   },
+   {
+    "name": "O Liberal",
+    "title": "Rafael Câmara é anunciado pela Haas e Brasil volta a ter dois pilotos na F-1 após 10 anos",
+    "url": "https://www.oliberal.com/esportes/rafael-camara-e-anunciado-pela-haas-e-brasil-volta-a-ter-dois-pilotos-na-f-1-apos-10-anos-1.1182855",
+    "note": "2026年11月。ブラジル人2人は2016年のマッサとナッセ以来。"
+   },
+   {
+    "name": "Grande Prêmio",
+    "title": "Câmara doesn't need to shine in Brazil, but F1 may be witnessing something bigger",
+    "url": "https://grandepremio.com/en/f1/camara-doesnt-need-to-shine-in-brazil-but-f1-may-be-witnessing-something-bigger/",
+    "note": "2026年11月。「輝く必要はない。始めればいい」、北東部出身で初。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "2026 F1 São Paulo Grand Prix – Brazil time schedule",
+    "url": "https://racingnews365.com/2026-f1-sao-paulo-grand-prix---brazil-time-schedule",
+    "note": "スプリントなし、FP1は現地金曜12時30分（日本時間土曜0時30分）。"
+   },
+   {
+    "name": "The Rio Times",
+    "title": "São Paulo Grand Prix 2026 Interlagos guide",
+    "url": "https://www.riotimesonline.com/sao-paulo-grand-prix-2026-interlagos-guide/",
+    "note": "新しい路面、造り直されたスタンド。"
+   }
+  ]
+ }
+}
