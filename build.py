@@ -2926,6 +2926,9 @@ def build_share_kit(days=7, req_days=4):
         src = ('deep/' if x['kind'] == 'deep' else 'lens/') + x['url'].strip('/').split('/')[-1] + '.json'
         J = load(src) or {}
         items.append((x['dt'], COL_TAG[x['kind']], x['url'], x['url'].strip('/').split('/')[-1], x['title'], J.get('dek', '')))
+    for a in ALLARTS:  # 「ファンの声」 too (owner, 6 Nov 2026): its strong headline is made for X
+        if a.get('kind') == 'voice':
+            items.append((when(a), 'ファンの声', f'/news/{a["id"]}/', a['id'], a['title'], a.get('summary', '')))
     items = sorted([i for i in items if i[0] >= since], key=lambda i: i[0], reverse=True)
 
     def box(label, text, x=False):
