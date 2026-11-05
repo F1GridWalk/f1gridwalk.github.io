@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T06:40:00+09:00",
+ "updatedAt": "2026-11-05T12:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -64,9 +64,137 @@
   "piastri-lindblad-penalty": {
    "title": "ピアストリ、リンドブラッドとの接触で10秒加算　入賞を逃す",
    "summary": "メキシコGPで7位だったピアストリ（マクラーレン）は、リンドブラッド（レーシングブルズ）との接触でスチュワードから10秒加算を受け、入賞圏外に後退した。再スタート後のターン1で外側から仕掛けた際に接触し、リンドブラッドは壁に当たった。ピアストリは「難しい状況だった」と振り返っている。"
+  },
+  "redbull-adidas-2027-rumor": {
+   "title": "レッドブル、2027年からアディダスと契約か　フェルスタッペンの着用写真が流出",
+   "summary": "ドイツのF1-Insiderとオランダのレーシングニュース365が、レッドブルが2027年からウェア供給元をアディダスに切り替える可能性を伝えた。流出したとされる写真でフェルスタッペンがアディダスの服を着ていることが根拠で、公式発表はなく未確認。"
   }
  },
  "articles": [
+  {
+   "id": "en-crash-antonelli-oil-leak-edge-retirement",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "決勝",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "アントネッリ、タイトル決定の裏で車はリタイア寸前　メキシコGPでオイル漏れ",
+   "summary": "メルセデスのブラッドリー・ロード副代表が、ポッドキャストでメキシコGPでのアントネッリの車にオイル漏れがあったと明かした。レース後にフロアがオイルまみれだったといい、サンプが割れていたとの説明だ。残り4周ほどでエンジンに異変を感じたというが、車は最後まで持ちこたえ3位で初のタイトルを決めた。ロードは「リタイアのすぐ手前だった」と表現している。アントネッリは週末にウイルス性の体調不良で木曜のメディアデーを欠席し、予選も振るわなかった。",
+   "orig": "Mercedes reveals Kimi Antonelli was \"on the edge of retirement\" at Mexico GP",
+   "url": "https://www.crash.net/f1/news/1109316/1/mercedes-reveals-kimi-antonelli-was-edge-retirement-mexico-gp",
+   "published": "2026-11-04T23:00:00+00:00"
+  },
+  {
+   "id": "nl-racingnews365-mercedes-w17-technical-secret",
+   "kind": "tech",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "テクニカル",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "mercedes-w17-title-tech",
+   "title": "アントネッリ王座の技術的な理由　メルセデスW17は「高い完成度で癖が少ない」車",
+   "summary": "RacingNews365は、メルセデスW17が全面的に圧倒的というより、弱点が少なく扱いやすい強力な車だと分析した。テクニカルディレクターのジェームズ・アリソンの下、パワーユニットが最大の武器になると見て、空力とシャシーは開幕時点でかなり完成していたという。ダウンフォース量が最大ではない一方、車全体への配分が効率的で、タイヤを適正な作動域に収めるセットアップを見つけやすい。フロアはほぼ変更せず、マレーシアで大型アップデートを入れ、オースティンで新フロントウイングを加えて仕上げた。",
+   "orig": "Het technische geheim achter de wereldtitel van Kimi Antonelli",
+   "url": "https://racingnews365.nl/mercedes-w17-het-technische-geheim-achter-de-wereldtitel-van-kimi-antonelli",
+   "published": "2026-11-04T17:15:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-verstappen-adidas-leaked-photos",
+   "kind": "rumor",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "うわさ",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-adidas-2027-rumor",
+   "title": "フェルスタッペンのアディダス着用写真が流出　レッドブルの新サプライヤー契約か",
+   "summary": "オランダのRacingNews365は、フォトシュートとみられる写真でフェルスタッペンがアディダスの服を着ていると伝えた。肩に同社のストライプ、胸にロゴが入っているといい、レッドブルがウェア供給元をカステルからアディダスに切り替えるのではないかとの見方を示した。ただしこれは写真からの推測で、発表はされておらず、情報源も明かされていない。同紙は過去に2027年からの契約や2700万ユーロという金額に触れた記事にリンクしているが、最初に報じたのが誰かは記していない。",
+   "orig": "Gelekte Verstappen-foto's verklappen nieuwe miljoenendeal Red Bull",
+   "url": "https://racingnews365.nl/gelekte-verstappen-fotos-verklappen-nieuwe-miljoenendeal-red-bull",
+   "published": "2026-11-04T13:15:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-daly-ferrari-management",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "チーム",
+   "circuit": "mexico",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-mexico",
+   "title": "元F1ドライバーのデイリー「フェラーリの管理ミス」　ハミルトン獲得にも疑問",
+   "summary": "元F1ドライバーのデレク・デイリーがRacingNews365の取材に、メキシコGP序盤のハミルトンとルクレールの争いはフェラーリ首脳陣の管理ミスだと語った。2台の戦い方を明確に決めておらず、ヴァスールはトッド時代のような厳しさを示せていないという見方だ。ヴァスールは両者の評価ゆえに、どちらかに譲れとは言いにくいとも指摘した。さらに、ハミルトンは終盤に差しかかり、技術面の助言もラッセルやサインツより少ないとして、2025年の獲得判断に疑問を呈した。これは同氏個人の意見である。",
+   "orig": "Ferrari gewaarschuwd voor Hamilton: \"Staat ontwikkeling in de weg\"",
+   "url": "https://racingnews365.nl/ferrari-gewaarschuwd-voor-hamilton-staat-ontwikkeling-in-de-weg",
+   "published": "2026-11-04T18:00:00+01:00"
+  },
+  {
+   "id": "de-f1insider-wolff-antonelli-new-values",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ドライバー",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-champion-2026",
+   "title": "ウォルフ「強面レーサー像は死んだ」　アントネッリ王座に重ねて他のスターに苦言",
+   "summary": "メルセデスのウォルフ代表は、メキシコGPで王座を決めたアントネッリについて、謙虚さ、誠実さ、忠誠心、敬意を体現するチャンピオンだと称えた。無線で不満ばかり言う、あるいは接触を起こす名指しなしのドライバーを念頭に、「この20歳を見て、自分に何ができるか考えてほしい」と述べ、強面のレーサー像は終わったと語った。ガレージで皆とハグを交わし、英国人スタッフにも広がったという逸話も紹介している。F1-Insiderは論評で、アントネッリが厳しい争いでも同じ姿勢を保てるか、主張の強いドライバーが悪人とは限らないとも指摘した。",
+   "orig": "Toto Wolff nimmt F1-Stars wegen Antonelli ins Visier",
+   "url": "https://f1-insider.com/formel-1-wolff-antonelli-formel-1-stars-83554/",
+   "published": "2026-11-03T17:38:00+01:00"
+  },
+  {
+   "id": "en-crash-fsg-cadillac-stake-interest",
+   "kind": "rumor",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Crash.net",
+   "cat": "うわさ",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "cadillac-stake-sale-rumor",
+   "title": "リバプール親会社FSG、キャデラックF1の過半数株取得に関心か　英紙が報道",
+   "summary": "Crash.netは、リバプールFCの親会社フェンウェイ・スポーツ・グループ（FSG）がキャデラックF1チームの過半数株の取得を検討する一社だと伝えた。オーナー側のマーク・ウォルターが支配株の売却を探っているとスポーティコが報じたのが発端で、評価額は22.4億ポンドとされるが、関連記事では30億ドルとあり確認が必要だ。ウォルターは以前、F1部門の売却を否定していた。ほかに最大6社が関心を示しているという。キャデラックは今季ポイントなしの最下位で、ボッタスの13位が最高成績である。いずれも未確認の報道だ。",
+   "orig": "Liverpool FC owners emerge as potential buyers of Cadillac F1 stake",
+   "url": "https://www.crash.net/f1/news/1109319/1/liverpool-fc-owners-emerge-potential-buyers-cadillac-f1-team-stake",
+   "published": "2026-11-04T23:30:00+00:00"
+  },
+  {
+   "id": "en-f1com-camara-lot-to-learn-debut",
+   "kind": "news",
+   "lang": "en",
+   "region": "英国",
+   "source": "Formula1.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "title": "カマラ「学ぶことは多い」　母国サンパウロでのF1デビューを前に",
+   "summary": "F2ランキング首位でフェラーリ育成のラファエル・カマラが、サンパウロGPでオコンに代わりハースからF1デビューする。2026年型F1での走行は初めてで、本人は「ブラジルでのデビューは特別。学ぶことは多い」と語った。ハースは来季の起用を決めており、デビューを前倒しした形だ。小松礼雄代表は、ポルティマオでの2025年型車テストで速さと重圧への対応力を示したと評価。チームメイトのベアマンは直近2戦連続でリタイアしており、「まだゴールラインを越えていない」とサンパウロでの完走を望んだ。",
+   "orig": "Camara concedes 'there is a lot to learn' ahead of special F1 debut with Haas in Sao Paulo",
+   "url": "https://www.formula1.com/en/latest/article/camara-concedes-there-is-a-lot-to-learn-ahead-of-special-f1-debut-with-haas-in-sao-paulo.28dp6c9ntdxBu0xmEWAAUm",
+   "published": "2026-11-04T16:55:00+00:00"
+  },
   {
    "id": "en-planetf1-piastri-lindblad-verdict",
    "kind": "news",
@@ -1509,132 +1637,6 @@
    "orig": "2026年F1第19戦メキシコシティGP決勝結果",
    "url": "https://f1are.com/blog-entry-4039.html",
    "published": "2026-11-02T07:30:00+09:00"
-  },
-  {
-   "id": "pt-cnnbrasil-antonelli-campeao-mexico",
-   "kind": "news",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "CNN Brasil",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "アントネッリが王座決定、必要だった9位以内を上回る3位　ブラジル局が報道",
-   "summary": "ブラジルのCNN Brasilは、アントネッリがメキシコGPでドライバーズ王座を決めたと報じた。必要だったのは9位以内だったが、3位でフィニッシュした。20歳68日での戴冠はベッテルの記録を上回り、イタリア人王者は1953年のアスカリ以来となる。同局によると、レース中はメルセデスのタイヤ交換のミスで43周目前後に4位まで順位を落としたが、ボッタスのクラッシュによる赤旗を経て3位に戻った。レース後は「みんなのおかげだ」と喜びを語り、次戦は11月のサンパウロGPと伝えている。",
-   "orig": "Kimi Antonelli é o campeão da Fórmula 1 com pódio no GP do México",
-   "url": "https://www.cnnbrasil.com.br/esportes/automobilismo/kimi-antonelli-e-o-campeao-da-formula-1-com-podio-no-gp-do-mexico/",
-   "published": "2026-11-01T19:25:00-03:00"
-  },
-  {
-   "id": "it-automoto-antonelli-senza-parole",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Automoto.it",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "アントネッリ「言葉が出ない」　最年少王者が表彰台で語った喜び",
-   "summary": "イタリアのAutomoto.itは、アントネッリがメキシコシティGPで3位に入り、2026年のドライバーズ王座を決めたと伝えた。本人は「言葉が出ない」と話し、起きたことをまだ整理できていない様子だった。フェルスタッペンとハミルトンという史上屈指の2人と表彰台を分け合えたことが特別だったとし、今週末は普段より少し緊張していたとも明かした。マシンを降りたあとは両親に抱きしめられ、近くにはフェルスタッペンとハミルトンもいた。メルセデスと家族への感謝も口にしている。",
-   "orig": "Andrea Kimi Antonelli Campione del Mondo F1: Terzo in Messico, le prime dichiarazioni e le parole sul podio",
-   "url": "https://www.automoto.it/formula1/antonelli-campione-del-mondo-f1-messico-dichiarazioni.html",
-   "published": "2026-11-01T22:00:00+01:00"
-  },
-  {
-   "id": "pt-grandepremio-aston-martin-double-dnf-mexico",
-   "kind": "news",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "Grande Prêmio",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "aston-martin-mexico-double-dnf",
-   "title": "アストンマーティン、メキシコGP序盤の6周目にダブルリタイア",
-   "summary": "ブラジルのグランデ・プレミオによると、アストンマーティンのアロンソとストロールが、メキシコGPの6周目に相次いでリタイアした。アロンソはピットに入り、ストロールは6コーナーで止まってバーチャルセーフティカーが出た。同紙は標高2200メートル超の高地がAMR26に早々に影響したとみるが、具体的な故障原因は伝えていない。アロンソは予選でホンダ製パワーユニットのERSの水圧トラブルによりQ1で敗退し、2台とも最後尾付近からのスタートだった。アロンソのメキシコ完走はこれで5年連続で途絶えた。",
-   "orig": "Aston Martin passa vergonha e abandona com os dois carros em 1 minuto no México",
-   "url": "https://grandepremio.com/br/f1/aston-martin-passa-vergonha-e-abandona-com-os-dois-carros-em-1-minuto-no-mexico/",
-   "published": "2026-11-01T17:28:44-03:00"
-  },
-  {
-   "id": "de-motorsporttotal-hamilton-18-inch-tyre-window",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "mexico-qualifying-2026",
-   "title": "ハミルトン、18インチタイヤ攻略の手応え　鍵はアウトラップでの温度管理",
-   "summary": "独モータースポーツ・トータルは、ハミルトンがメキシコGP予選のポールで、長年の課題だった18インチタイヤの扱いを掴みつつあると伝えた。タイヤの作動温度域は非常に狭く、アウトラップで適温に入れ、速い周回の間ずっと保つことが肝心だという。本人は今年ここに来て走り方やコーナーへの入り方を変え、約13年使っていなかった手法も取り入れたと明かした。1〜3コーナーを抜けた後は周回が自然に流れ、どこでも失っていないと感じたと話す。センサーの数値は目安にとどまり、最後は感覚が頼りだとも述べた。",
-   "orig": "Lewis Hamilton: Hat er die 18-Zoll-Räder jetzt endlich geknackt?",
-   "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-hat-er-die-18-zoll-raeder-jetzt-endlich-geknackt-26110124",
-   "published": "2026-11-01T19:40:52+01:00"
-  },
-  {
-   "id": "en-planetf1-komatsu-bearman-salary-nonsense",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "うわさ",
-   "circuit": "mexico",
-   "teams": [
-    "haas"
-   ],
-   "topic": "bearman-haas-2027",
-   "title": "ベアマンの年俸600万ユーロ要求説、ハース代表が「完全な戯言」と否定",
-   "summary": "ハースのコマツ代表は、ベアマンが約600万ユーロへの昇給を求めているため2027年の契約がまとまらないという噂を「完全な戯言」と否定した。保留の理由は明かさなかったが、ベアマン側、ハース、親会社のトヨタ・ガズー・レーシングとも継続を望む点では一致していると述べた。金額はインスタグラムで初めて見たもので、出どころは不明だという。確認なしに話が拡散する風潮も批判した。ハースは2027年にカマラの起用を発表済みで、もう一方の席は未定のままだ。",
-   "orig": "Haas boss slams 'absolute nonsense' €6 million Oliver Bearman salary rumour",
-   "url": "https://www.planetf1.com/news/oliver-bearman-haas-salary-f1-2027-contract",
-   "published": "2026-11-01T16:55:28+00:00"
-  },
-  {
-   "id": "nl-f1maximaal-windsor-haas-ocon-handling",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "チーム",
-   "circuit": "mexico",
-   "teams": [
-    "haas"
-   ],
-   "topic": "ocon-hirakawa-mexico",
-   "title": "ウィンザー氏、ハースのオコン交代を批判「管理能力の欠如」　法的な余波にも言及",
-   "summary": "英国のF1アナリスト、ピーター・ウィンザー氏は、ハースが週末の途中でオコンを平川亮に交代させた対応を「管理能力の欠如」と批判した。金曜はオコンがベアマンより速く、無線でのやり取りも特別に大きな問題には見えなかったという。オコンは来季カマラに席を譲ることが決まっているが、それは扱い方を正当化しないと主張した。同氏は何らかの法的な動きがあり得るとも話したが、手続きが始まったわけではない。ハースは交代の理由を公式には説明していない。",
-   "orig": "Windsor haalt hard uit naar Haas na Ocon-rel: \"Dit kan gewoon niet\"",
-   "url": "https://www.f1maximaal.nl/opinie/windsor-haalt-hard-uit-naar-haas-na-ocon-rel-dit-kan-gewoon-niet",
-   "published": "2026-11-01T17:33:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-wolff-antonelli-quali-prep",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "予選",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "wolff-antonelli-quali-prep",
-   "title": "ウォルフ、アントネッリの予選最終アタックの準備に「別の選択肢があったかも」",
-   "summary": "メルセデスのウォルフ代表は、メキシコGP予選でアントネッリの最終アタックに向けた準備が最善だったか検証したいと語った。ラッセルはポールのハミルトンにわずか0.009秒届かず、アントネッリは5番手だった。ウォルフは両者の差を「コース上で50センチ程度」と評し、タイヤを作動温度域に入れるのが難しく、グリップの低下も早かったと説明した。高地で空気が薄く、ダウンフォースが減ることも難しさの要因だという。アントネッリはフェルスタッペンの降格で4番手から決勝に臨む。",
-   "orig": "Wolff erkent mogelijke fout bij Antonelli: \"We hadden het misschien beter kunnen doen\"",
-   "url": "https://www.f1maximaal.nl/formule-1/wolff-erkent-mogelijke-fout-bij-antonelli-we-hadden-het-misschien-beter-kunnen-doen",
-   "published": "2026-11-01T16:46:00+01:00"
   }
  ]
 }
