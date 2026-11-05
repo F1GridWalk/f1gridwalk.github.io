@@ -84,13 +84,14 @@ The page looks like a forum digest (numbered voices, mood marks, big type for th
 - Bluesky: try once per day with curl "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=<driver or GP>&sort=top&limit=25" (lang en/it/es). If it works, it is a good source; if not, say the error in the summary.
 
 **How to write it**
-- 8–15 voices per article, both sides when possible. Each voice: one short line, 15–40 Japanese characters, in your own words, saying how common the view was when you can (「〜という声が多数」「〜と嘆く人も」).
-- Quotes (owner, 3 Nov 2026): 1–3 voices per article may be a short VERBATIM quote of one comment/post, at most ~40 characters (English: quote ≤ 25 words, then give your Japanese translation as the text and add "orig" with the original words). Mark it "quote": true. Copy the words exactly; never invent, merge or "improve" a quote; the url must be the page where you read it. Never quote 5ch.
+- Quotes are the stars (owner, 6 Nov 2026): 5–8 voices per article are short VERBATIM quotes of one comment/post each, at most ~40 characters (English: quote ≤ 25 words, give your Japanese translation as "text" and the original words as "orig"). Mark them "quote": true. Copy the words exactly; never invent, merge, shorten or "improve" a quote; the url must be the page where you read it. Never quote 5ch.
+- EVERY quote must have "comment": 1–2 sentences (30–80 Japanese characters) in our own words — what the comment is reacting to and the facts behind it (a number, a quote from the driver or team, what happened), taken from the articles. This is what makes the page our own writing and keeps the quotes a minor part, so never skip it.
+- Then 3–6 short paraphrased voices (no "quote"), one line each, 15–40 characters, saying how common the view was (「〜という声が多数」「〜と嘆く人も」). Both sides (日本・海外) when you can.
 - Fields per voice: side (日本/海外), text, src, url, optional mood (賛 / 否 / 驚 / 笑 / 心配), optional big: true for the 1–2 loudest views, optional quote: true, optional orig. Article field "note": one or two sentences — 編集部のひとこと, our own short take on what the reactions show.
 - Never: user names, IDs, handles, avatars; insults, mockery of looks / nationality / family, discriminatory words, private life, death wishes, fan quarrels; a fan claim presented as fact (what only fans say is not a rumour source).
 
 **Headline (owner, 3 Nov 2026: it must hit hard, or nobody opens it)**
-- Lead with the loudest or most striking reaction, then the story, 25–40 characters. Use a short quote or the strongest feeling: e.g. 「20歳で王者は『早すぎる』　アントネッリに海外ファンも脱帽」, 「『またフェラーリか』　ルクレール対ハミルトンにファンの嘆き」, 「平川の1点に『泣いた』の声　日本のファンが沸いた夜」.
+- Lead with the loudest or most striking reaction, then the story, 25–40 characters. Words inside 「」 in the headline must be EXACTLY the words of one quoted comment (owner, 6 Nov 2026) — if the comment is too long, do not shorten it inside 「」; write the feeling without brackets instead. Use a short quote or the strongest feeling: e.g. 「20歳で王者は『早すぎる』　アントネッリに海外ファンも脱帽」, 「『またフェラーリか』　ルクレール対ハミルトンにファンの嘆き」, 「平川の1点に『泣いた』の声　日本のファンが沸いた夜」.
 - It must be true to the voices you collected (if you write 「大荒れ」, the comments must really be split and heated). No 衝撃, 炎上, 激写, no invented quotes, nothing about private life.
 - Any story is fine (race, qualifying, a title, a transfer, a rumour, a team row, an interview).
 
