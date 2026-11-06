@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T00:40:00+09:00",
+ "updatedAt": "2026-11-07T06:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -63,6 +63,118 @@
   }
  },
  "articles": [
+  {
+   "id": "en-f1com-sao-paulo-fp2-antonelli",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "予選",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes",
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "brazil-fp2-antonelli-2026",
+   "primary": true,
+   "title": "サンパウロGP金曜FP2、アントネッリが最速　ノリスとフェルスタッペンが続く",
+   "summary": "Formula1.comによると、サンパウロGPのFP2は新王者アントネッリ（メルセデス）が1分10秒763でトップだった。0.253秒差の2番手がノリス、3番手はフェルスタッペンで、ラッセルが4番手、ピアストリが5番手に入った。ルクレールはブレーキの不調を訴え、ハミルトンもターン1でロックアップするなど苦しんだ。残り時間は長距離走が中心で、終盤には小雨の報告もあった。ヒュルケンベルグはアウディの不具合対応のためタイムを残せなかった。",
+   "orig": "FP2: Antonelli tops the times from Norris in second practice at Sao Paulo GP",
+   "url": "https://www.formula1.com/en/latest/article/fp2-antonelli-tops-the-times-from-norris-in-second-practice-at-sao-paulo-gp.27XFbTG9Lji18qmtHbCJUA",
+   "published": "2026-11-06T20:11:00+00:00"
+  },
+  {
+   "id": "en-f1com-komatsu-camara-tough-decision",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "primary": false,
+   "title": "ハースのコマツ代表、カマラ早期起用は「難しい決断」　平川の好走も評価",
+   "summary": "Formula1.comによると、ハースのコマツ代表はラファエル・カマラをサンパウロGPで早期デビューさせた判断を「簡単ではなかった」と振り返った。当初はFP1で現行車に乗る予定だったが、オコンの突然の離脱で母国戦に出走することになった。メキシコシティに急きょ出て10位に入った平川亮の仕事ぶりも高く評価している。カマラが正式に決まっているのはインテルラゴスのみで、F2のカタールとアブダビ戦との兼ね合いなど残りは未定だという。「彼を守りたい」と、外部の圧力を避けたい意向も示した。",
+   "orig": "Komatsu explains why fast-tracking Camara into Haas seat was a 'tough decision' after Hirakawa performance",
+   "url": "https://www.formula1.com/en/latest/article/komatsu-explains-why-fast-tracking-camara-into-haas-seat-was-a-tough-decision-after-hirakawa-performance.6N8NbSuekc1oGCylHgVZ2g",
+   "published": "2026-11-06T20:28:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-wolff-vasseur-ocon-million",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "haas",
+    "ferrari",
+    "mercedes"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "title": "オコンの2016年マノー入り、ヴァッセールが100万ドルを自腹で負担　ウォルフ明かす",
+   "summary": "Motorsport-Total.comによると、メルセデスのウォルフ代表はブラジルの会見で、2016年にオコンがマノーのシートを得る際に200万ドルが必要だったと明かした。半分をメルセデスが払い、残りの100万ドルは現フェラーリ代表のヴァッセールが個人で負担したという。当時オコンはメルセデス育成で、両者はGP3時代から彼のキャリアに関わっていた。ハースがオコンを早期に外した件について、ウォルフは残念としつつもコマツ代表の判断には理解を示した。ヴァッセールはオコンを「生粋のレーサー」と呼び、カマラに席を譲るのは惜しいと語った。",
+   "orig": "Toto Wolff verrät: Vasseur hat für Ocon eine Million aus eigener Tasche bezahlt",
+   "url": "https://www.motorsport-total.com/formel-1/news/toto-wolff-verraet-vasseur-hat-fuer-ocon-eine-million-aus-eigener-tasche-bezahlt-26110619",
+   "published": "2026-11-06T22:02:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-rosberg-ferrari-criticism",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "rosberg-ferrari-driver-rivalry",
+   "title": "ロズベルグ、ハミルトンとルクレールへのフェラーリの対応を批判　自身の経験から",
+   "summary": "Motorsport-Total.comによると、元王者ロズベルグはポッドキャストで、フェラーリのドライバー同士の対立への対応に厳しい意見を述べた。メキシコでは両者が1周目に同時にコースを外れ、フェルスタッペンの優勝を許している。ロズベルグはメルセデス時代、2014年ベルギーや2016年スペインなど3度ハミルトンと接触した経験を踏まえ、指示が曖昧なことが争いの原因だと指摘した。メルセデスも完璧ではなかったと認め、修理費を折半する決まりで自身が約36万ドルを負担した例も挙げた。ラウダ会長の存在が関係維持に大きかったとも語っている。",
+   "orig": "Rosberg kritisiert Ferrari im Umgang mit Hamilton und Leclerc",
+   "url": "https://www.motorsport-total.com/formel-1/news/rosberg-kritisiert-ferrari-im-umgang-mit-hamilton-und-leclerc-26110614",
+   "published": "2026-11-06T19:02:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-ralf-herta-cadillac",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "herta-cadillac-seat-comment",
+   "title": "ラルフ・シューマッハー、キャデラックのハータ起用に否定的「あり得ない」",
+   "summary": "Motorsport-Total.comによると、キャデラックのテスト担当ハータはサンパウロGPのFP1でペレスに代わって24周を走り、2027年に出走できるスーパーライセンスの最後の1ポイントを得た。これに対しラルフ・シューマッハーはSkyで、ペレスの隣の席の候補としては現実的でないと述べ、F2での成績の悪さを理由に挙げた。F2ではハータは26ポイントで19位にとどまり、勝利も表彰台もない。シューマッハーは代わりにマクラーレン育成のフォルナローリを推した。ハータ本人は2027年の正式シートが「目標」と語り、確率の言及は避けた。",
+   "orig": "Ralf Schumacher zieht über Colton Herta her: \"Hat in der F1 nichts zu suchen\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/ralf-schumacher-zieht-ueber-colton-herta-her-hat-in-der-f1-nichts-zu-suchen-26110612",
+   "published": "2026-11-06T18:22:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-antonelli-new-cars-debate",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-title-new-cars-debate",
+   "title": "アントネッリ、「新世代の車のおかげ」論に反論　自分も適応が必要だった",
+   "summary": "Motorsport-Total.comによると、20歳で新王者となったアントネッリは、2026年の新世代車のおかげでタイトルを得たという議論に答えた。チームメートのラッセルが電力の出方とエネルギー管理が自分の走りに合わないと不満を述べていたが、本人も昨年とは全く違う車に適応が必要だったと話す。鈴鹿のようにコーナーを悪く走るほうが充電に有利になる場面があり、ドライバーを悩ませたという。来季は電気出力が減りエンジン出力が増えるため、全員にとって少し楽になるとの見方を示した。",
+   "orig": "Antonelli über Online-Debatte: Musste mich auch an neue Autos anpassen",
+   "url": "https://www.motorsport-total.com/formel-1/news/antonelli-ueber-online-debatte-musste-mich-auch-an-neue-autos-anpassen-26110615",
+   "published": "2026-11-06T20:00:00+01:00"
+  },
   {
    "id": "en-therace-mclaren-2027-front-wing",
    "kind": "tech",
@@ -1687,118 +1799,6 @@
    "orig": "Valtteri Bottas issues Cadillac update as F1 2027 rumours hit overdrive",
    "url": "https://www.planetf1.com/news/valtteri-bottas-cadillac-rumours-f1-future",
    "published": "2026-11-03T12:03:00+00:00"
-  },
-  {
-   "id": "en-therace-antonelli-demolished-russell",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "分析",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-russell-gap-2026",
-   "title": "同じ車でラッセルを圧倒、アントネッリの強さを数字で読み解く",
-   "summary": "The Raceは、アントネッリが今季ラッセルを大差で退けた理由を分析した。アントネッリは9勝でラッセルの3勝を上回り、130点差でタイトルを決めた。予選の差は小さく、Q3の中央値で0.185秒、ポールは7対5だが、決勝ではクリーンエアの比較で9戦中8戦で速く、1周あたり約0.25秒上回った。タイヤの摩耗に伴う失速もラッセルのほうが大きい傾向で、アントネッリは後輪のスリップ管理に優れ、よりコントロールできている感覚があると語った。",
-   "orig": "The in-depth details behind Antonelli thumping Russell",
-   "url": "https://www.the-race.com/formula-1/mercedes-f1-how-antonelli-demolished-russell-same-car/",
-   "published": "2026-11-03T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-mexico-speed-limit-clipping",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mclaren"
-   ],
-   "topic": "mexico-clipping-overtaking",
-   "title": "メキシコGPで追い抜きを阻んだ『愚か』な出力制限の仕組み",
-   "summary": "The Raceは、メキシコGPで追い抜きが難しかった原因が、薄い空気ではなく技術規則の電動出力の展開制限にあると解説した。この制限により、オーバーテイクモードでも時速337km付近を超えると1km/hごとに約20kW出力が減る。最終盤にハミルトンはフェルスタッペンのスリップから仕掛けたが、速度が伸びても出力を失い差が詰まらなかった。ハミルトンは「愚か」と評し、ノリスも「レースを台無しにする」と語った。この速度制限は2027年規則では削除される予定だという。",
-   "orig": "How a 'stupid' speed limit stopped Mexican GP overtaking",
-   "url": "https://www.the-race.com/formula-1/the-stupid-speed-limit-that-neutered-mexican-gp-explained/",
-   "published": "2026-11-03T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-haas-drops-ocon",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "haas"
-   ],
-   "topic": "haas-ocon-camara-brazil",
-   "title": "ハース、オコンを今季残りのレースから外す　ブラジルGPはカマラが代役",
-   "summary": "ハースは、オコンが今季中はレースシートに戻らないとチームが本人に通告したと、コマツ代表の声明で明らかにした。オコンはメキシコGPの週末に金曜の走行後、代表との間で何かがあったとされて外れていたが、本人は暴力があったとの報道を否定している。ハースは来季からフェラーリ育成のカマラ（F2王座争い中）を起用する予定で、今回はその昇格が前倒しになった形だ。確認されたのはブラジルGPでの出走のみ。メキシコでは平川亮が土曜朝に出走を告げられ、1ポイントを獲得した。",
-   "orig": "Haas drops Ocon for rest of 2026 F1 season",
-   "url": "https://www.the-race.com/formula-1/haas-drops-ocon-for-rest-of-2026-f1-season/",
-   "published": "2026-11-03T12:00:00+00:00"
-  },
-  {
-   "id": "en-planetf1-mercedes-constructors-title-brazil",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "mercedes-constructors-title-brazil",
-   "title": "メルセデス、サンパウロGPでコンストラクターズ王座決定も　フェラーリを3点以上上回れば",
-   "summary": "アントネッリのドライバーズ王座に続き、メルセデスはサンパウロGPでコンストラクターズ王座を決める可能性があると、英PlanetF1が整理した。ブラジル入りの時点でフェラーリに126ポイント差をつけており、現地でフェラーリを3点以上上回れば確定するという。届かなければ決着は後続戦に持ち越しとなる。今季の勝利数はメルセデスが12、フェラーリが2で、シーズン序盤はアントネッリとラッセルが最初の8戦のうち7勝した。最近はレッドブルがマクラーレンを抜いて3位に上がっている。",
-   "orig": "How Mercedes can win F1 2026 Constructors' Championship at the Sao Paulo GP",
-   "url": "https://www.planetf1.com/news/how-mercedes-can-win-f1-2026-constructors-championship",
-   "published": "2026-11-03T12:00:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-leclerc-flatspot-restart",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "redbull",
-    "mclaren"
-   ],
-   "topic": "ferrari-hamilton-leclerc-mexico",
-   "title": "ルクレール、再スタートでタイヤをカーカスまで削る　ヴァスール「早めのピットでも逆転された」",
-   "summary": "5秒加算を受けたルクレールは、赤旗後の再スタートでフェルスタッペンに先頭を譲り、ハミルトンとアントネッリにも抜かれたと独Motorsport-Totalが伝えた。1コーナーでロックアップし、右側にゴムが溜まっていたためタイヤはカーカスが見えるほど削れたが、ノリスは何度も仕掛けても抜けず「全くチャンスがなかった」と話した。フェルスタッペンは28周目にピットに入り、レッドブルが5秒待ちのフェラーリに合わせて同時に動いたことで前に出た。ヴァスール代表は、早く入っていても5秒未満の差でフェルスタッペンの後ろに出ていたと説明した。ペナルティは表示された秒数以上に響くとも述べ、再スタートが敗因とは見ていない。",
-   "orig": "Siegchance vernichtet: Charles Leclerc bremst bis zur Karkasse",
-   "url": "https://www.motorsport-total.com/formel-1/news/siegchance-vernichtet-charles-leclerc-bremst-bis-zur-karkasse-26110306",
-   "published": "2026-11-03T12:00:00+01:00"
-  },
-  {
-   "id": "it-motorionline-leclerc-click-missing",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorionline",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-mexico",
-   "title": "「ルクレールにはまだ覚醒が来ていない」　伊サイトがフェラーリに介入を求める",
-   "summary": "伊Motorionlineのペッペ・マリーノ氏は論説で、メキシコGPのフェラーリは1コーナー後に1-2体制だったのに2位と4位に終わり、原因はルクレールの攻撃的な動きにあったと論じた。ヴァスール代表はレース後、ブランドと現場への敬意を欠くと述べたが、どちらの名前も挙げていない。筆者はモンツァでの接触にも触れ、2018年のモナコの事故を経て変わったフェルスタッペンのような「クリック」がルクレールにはまだ来ていないとみる。ハミルトンの闘争心が影響しても免罪にはならないとし、二人が共存できるのかと問うている。",
-   "orig": "F1 | Leclerc non ha ancora fatto quel \"clic\" per diventare grande: la Ferrari deve intervenire",
-   "url": "https://f1grandprix.motorionline.com/leclerc-ferrari-clic-mancato-messico/",
-   "published": "2026-11-03T12:00:00+01:00"
   }
  ]
 }
