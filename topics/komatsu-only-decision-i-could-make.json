@@ -1,0 +1,399 @@
+{
+ "slug": "komatsu-only-decision-i-could-make",
+ "gp": "サンパウロGP",
+ "title": "「私が下せる、唯一の決断」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "金曜日のFP2の無線。その夜の、何か。土曜日の朝6時半に平川亮へ電話をかけ、日曜日に1点を取り、火曜日に「今季はもう戻らない」と通知した。小松礼雄代表は「内部の問題です」と言い、理由は言わなかった。言ったのは、「オーナーのジーン・ハースは私に判断を委ねた。責任はすべて私にある」。",
+ "checked": "2026-11-06",
+ "checkedNote": "読者チェックで「4人を使った」（カマラはまだ走っていない）を直し、引用を減らしました。PlanetF1、The Race、Formula1.com、AUTOSPORT web、F1Maximaal、grandprix.com、AutoHebdo、Loughborough University、RacingNews365、ESPN、Crash.net、FIA の原文を11月6日に確認しました。小松代表の言葉は英語から編集部が訳し、Canal+への発言はフランス語の英訳をさらに訳しています。金曜夜の「身体的な接触」はフランスとドイツのメディアの報道で、確認されておらず、オコンは否定しています。「肩をつかんだ」という独紙の記述は単独の報道なので本文に入れていません。サンパウロでの小松代表の発言は、11月6日の時点で見つかっていません。",
+ "common": [
+  "10月30日FP2でオコンとエンジニアがタイヤ選択で対立、その夜にチームと何かがあった。31日朝、ハースは平川を起用（6時半ごろ電話、FIA受理8時35分）。オコンは「身体的な暴力」の報道を否定。",
+  "小松代表：土曜「病気ではない、詳しくは言えない」、Canal+「重い決断、私が下せる唯一の決断、ジーンが判断を委ね、責任はすべて私に」、日曜「クルーはひとつのセッションも落とさなかった」。",
+  "11月3日、オコンの今季離脱とカマラのサンパウロ起用を発表。「軽々しく下すことは決してない」「内部の問題」。",
+  "小松は1976年東京生まれ、2024年1月から代表。「政治はやらない」「コミュニケーション」「意見の違いは健全」。"
+ ],
+ "outlets": [
+  {
+   "id": "en-crash-ocon-replaced-hirakawa-mexico",
+   "angle": "土曜日",
+   "adds": [
+    "平川がFP3から代役。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-ocon-violence-denial",
+   "angle": "オコン",
+   "adds": [
+    "暴力の報道を否定する声明。"
+   ]
+  },
+  {
+   "id": "en-therace-haas-drops-ocon",
+   "angle": "火曜日",
+   "adds": [
+    "今季残りから外す、カマラ起用。"
+   ]
+  },
+  {
+   "id": "nl-f1maximaal-windsor-haas-ocon-handling",
+   "angle": "批判",
+   "adds": [
+    "ハースの対応への批判、法的な余波の指摘。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「軽々しく下すことは決してありません」「内部の問題」",
+   "w": "ハースの声明（11月3日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「病気ではない」「詳しいことは話せない」「とても頭のいい人」",
+   "w": "Sky Sports F1への発言（PlanetF1、10月31日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「唯一の決断」「ジーンは私に判断を委ねた」",
+   "w": "Canal+への発言（AutoHebdo、11月1日、フランス語の英訳）を編集部が訳した。"
+  },
+  {
+   "t": "「シュタイナーになろうとはしていない」「政治はやらない」",
+   "w": "The Race（2024年1月、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "金曜夜に何があったか",
+   "t": "フランス紙は「身体的にも終わった可能性」、ドイツ紙は「肩をつかんだ」と報じ、オコンは暴力を否定。チームは「内部の問題」。確認された事実はない。"
+  },
+  {
+   "k": "ベアマンの年俸の噂への言葉",
+   "t": "「完全なナンセンス」と訳す記事があるが、原文は「absolute nonsense」で、金曜日（10月30日）の発言。"
+  }
+ ],
+ "unknownsFillable": [
+  "サンパウロでの小松代表の発言。",
+  "ラスベガス以降の3戦のドライバー。",
+  "ベアマンの正式発表。"
+ ],
+ "unknownsLimits": [
+  "金曜夜の話し合いの中身（チームは公表しない方針）。",
+  "オコンとの契約の処理。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜ理由を言わないのか？",
+  "rows": [
+   {
+    "k": "方針",
+    "t": "「非公開の場でのやり取りは公表を控える」と声明で明言。2024年の就任時から「政治はやらない」。"
+   },
+   {
+    "k": "責任",
+    "t": "オーナーに説明し、判断を委ねられ、「責任はすべて私に」。理由を外に出さないことも、その責任の一部として引き受けている形。"
+   },
+   {
+    "k": "代償",
+    "t": "理由がないまま「唯一の決断」だけが残る。批判と法的な余波の指摘は、その空白に向いている。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "小松代表は、2027年の席をどう選んだ？",
+   "rules": [
+    "team-principal"
+   ],
+   "links": [
+    "/topics/haas-komatsu-fastest-driver/"
+   ]
+  },
+  {
+   "q": "平川の土曜日と日曜日は？",
+   "rules": [
+    "reserve-driver"
+   ],
+   "links": [
+    "/topics/hirakawa-race-tomorrow/",
+    "/topics/hirakawa-first-71-laps/"
+   ]
+  },
+  {
+   "q": "カマラのデビューは？",
+   "rules": [
+    "rookie",
+    "home-race"
+   ],
+   "links": [
+    "/topics/camara-lot-to-learn/"
+   ]
+  },
+  {
+   "q": "ベアマンの来季は、なぜ決まらない？",
+   "rules": [
+    "contract-option"
+   ],
+   "links": [
+    "/topics/bearman-question-of-timing/"
+   ]
+  }
+ ],
+ "todo": [
+  "サンパウロでの小松代表の発言があれば追記",
+  "ラスベガス以降のドライバーが決まったら追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-03T18:35:00-03:00",
+   "t": "ハースがオコンの今季離脱とカマラ起用を発表"
+  },
+  {
+   "at": "2026-11-06T21:15:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "小松礼雄代表は11月3日、オコンに今季はもうレースに出ないと通知し、サンパウロにカマラを起用すると発表した。「こうした決断を軽々しく下すことは決してない」「話し合いは内部の問題」と言い、理由は明かしていない。10月30日のFP2でタイヤ選択をめぐる無線の対立があり、その夜に何かがあった（身体的な接触の報道をオコンは否定）。31日朝6時半ごろ平川に電話し、FP3中に「病気ではない、詳しくは言えない」。フランスのテレビには「重い決断。私が下せる唯一の決断。ジーンが判断を委ねてくれたので、責任はすべて私にある」。日曜は平川が10位で1点。「クルーはひとつのセッションも落とさなかった」。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "金曜の無線、土曜の朝6時半の電話、日曜の1点、火曜の声明。「内部の問題です」とだけ言った小松礼雄代表が、この1週間に言ったことと、言わなかったこと。「オーナーのジーン・ハースは私に判断を委ねた。責任はすべて私にある」。",
+  "body": [
+   [
+    "h",
+    "「内部の問題です」"
+   ],
+   [
+    "p",
+    "11月3日、火曜日。ハースの声明に、小松礼雄代表の言葉が載った。「エステバン・オコンには、今季はもうレースのシートに戻らないと通知しました。メキシコシティのときもそうでしたが、こうした決断を軽々しく下すことは決してありません。ただ、当時もいまも、これがチームの今後にとって最善だと確信しています」。"
+   ],
+   [
+    "p",
+    "「チームとエステバンの間で最終的に交わされた話し合いは、内部の問題です。非公開の場でのやり取りについては、今後も公表を控えます」。"
+   ],
+   [
+    "p",
+    "何があったかは、言わなかった。この1週間、小松代表が言ったことと、言わなかったことを、順に並べてみる。"
+   ],
+   [
+    "h",
+    "金曜日の無線"
+   ],
+   [
+    "p",
+    "10月30日、金曜日。小松代表は午後、FIAの記者会見で、ベアマンの年俸600万ユーロ要求という噂について聞かれていた。「誰がその数字を作り出したのか、分からない。インスタグラムで初めて見た」。「なぜこんな、まったくのナンセンスに付き合うのか」。その日の本当の問題は、そのあとに来た。"
+   ],
+   [
+    "p",
+    "FP2。オコンの無線に、レースエンジニアのローラ・ミュラーの声が入った。「燃料を積んだ走行はミディアムに変えます。オリー（ベアマン）のタイヤの状態がよくないので」。オコン、「ソフトでやるんだよね？」。「いいえ、ミディアムでやらないと」。「いや、いや、僕はソフトがよかった。そんなことしないでくれ。頼むよ」。"
+   ],
+   [
+    "p",
+    "その夜、オコンとチームの間で何かがあった。フランスやドイツのメディアは、話し合いが途中で終わり、身体的な接触があった可能性を伝えた。オコンは翌日の夜、声明を出した。「昨夜、見解の相違から、関係者との話し合いになりました。それがあったことは認めますが、いかなる形であれ身体的な暴力で違いを解決しようとしたという報道や主張は、断固として否定します」。"
+   ],
+   [
+    "h",
+    "土曜日の朝、日曜日の1点"
+   ],
+   [
+    "p",
+    "10月31日、土曜日。平川亮は朝6時半ごろ、電話で、代わりに乗ると知らされた。FIAがドライバー交代を受理したのは8時35分。チームの声明は短く、最後にこうあった。「現時点で、これ以上の声明は出しません」。"
+   ],
+   [
+    "p",
+    "FP3の最中、小松代表はイギリスのテレビに聞かれて答えた。「多くは言えないが、少なくとも、彼は病気ではない。それだけは言える」。走行計画の意見の違いが関係しているかと聞かれると、「いや、申し訳ないが、詳しいことは何も話せない」。「言えるのは、目の前のことだけに集中して、リョウを午後の予選に向けていちばんいい状態にする、ということだけだ」。"
+   ],
+   [
+    "p",
+    "平川については、こう言った。「手順のことは全部、彼は長くチームにいるから分かっている。準備はできている」。「とても、とても頭のいい人だ。注意深くて、走っていないときもピットウォールで、いつも学んでいる」。"
+   ],
+   [
+    "p",
+    "日曜日、平川は10位で1点を取った。ベアマンは他車と接触してリタイア。小松代表は、「リョウの最初のF1レースについて、何を言えばいいか。最初のスタートはよかった。予想どおり、レースを通してよくなっていって、冷静だった。彼は自分の走りを誇りに思うべきだ」。そして、「ここにいるクルー全員に、ありがとうと言いたい。今週末はやることが山ほどあったのに、大きな変更があっても、ひとつのセッションも落とさなかった」。"
+   ],
+   [
+    "h",
+    "「ジーンは、私に判断を委ねた」"
+   ],
+   [
+    "p",
+    "メキシコの週末、フランスのテレビには、もう少し話した。「正直、詳しくは話したくない」。「すべての要素を考えたうえで、彼を交代させる決断はチームにとって正しかったと思っている」。"
+   ],
+   [
+    "p",
+    "「重大な結果を伴い、大きな影響を及ぼす、重い決断だ。だから、決して簡単な決断ではなかった」。「でも同時に、私が下せる唯一の決断だと確信していた」。"
+   ],
+   [
+    "p",
+    "オーナーのジーン・ハースには、事前に話していた。「理由と、私たちが取れる措置について説明した。そのうえで、ジーンは私に判断を委ねてくれた。だから、この決断の責任はすべて私にある」。「いまのところ、決めたのはこの週末のことだけだ」。残りの決断は、火曜日に来る。"
+   ],
+   [
+    "h",
+    "2024年1月"
+   ],
+   [
+    "p",
+    "小松代表は、1976年東京生まれのエンジニアだ。19歳でイギリスに渡り、大学で車両の運動力学を学んで博士号を取り、ルノーとロータスでグロージャンのレースエンジニアを務め、2016年からハースにいる。2024年1月、シュタイナーの後を継いで代表になった。"
+   ],
+   [
+    "p",
+    "そのとき、こう言っていた。「私は政治はやらない。そこには集中していない」。「もちろん、意見の違いはどこにでも起きる。それは健全なことで、問題ではない」。"
+   ],
+   [
+    "p",
+    "オコンについては、今年5月に関係悪化の噂が出たとき、「まったくのでたらめだ。根拠がゼロ」と一蹴した。10月には、「エステバンは、調子のいい日はとても、とても速い。私たちが欲しいのは、その速さに加えて、もっと一貫性と、フィードバックだ」。「もっといい環境、完璧な環境なら、エステバンは才能を完全に開花させられるかもしれない」。来年の契約を延長しないことは、9月末に決まっていた。"
+   ],
+   [
+    "h",
+    "「チームの今後にとって最善」"
+   ],
+   [
+    "p",
+    "火曜日の声明は、カマラの起用で終わる。「8月のテストで非常にいい走りを見せてくれたので、ラファの力は分かっている。今週末、彼をチームに迎えて、ブラジルでのF1デビューをともに進めるのを楽しみにしている」。"
+   ],
+   [
+    "p",
+    "ハースは今季、ベアマン、オコン、平川に続いてカマラを起用し、4人目のレースドライバーになる。1シーズンに使えるレースドライバーは、通常4人までだ。ベアマンの来季は、まだ発表がない。小松代表は「時期の問題だ」と言っている。コンストラクターズは、メキシコを終えて7位、31点。"
+   ],
+   [
+    "p",
+    "金曜日、インテルラゴス。小松代表はFIAの代表者会見には出ない。ガレージとピットウォールには、「ひとつのセッションも落とさなかった」クルーと、代表がいる。マシンには、代表が決めた21歳、カマラが乗る。"
+   ],
+   [
+    "p",
+    "言わなかったことは、三つ残っている。金曜日の夜に何があったか。オコンとの契約をどうするか。ラスベガス以降の3戦に、誰が乗るか。「非公開の場でのやり取りについては、今後も公表を控えます」。言うことと言わないことを決めたのも、代表だ。"
+   ]
+  ],
+  "terms": [
+   [
+    "リザーブドライバー",
+    "reserve-driver"
+   ],
+   [
+    "チーム代表",
+    "team-principal"
+   ],
+   [
+    "フリー走行",
+    "free-practice"
+   ],
+   [
+    "無線",
+    "team-radio"
+   ],
+   [
+    "コンストラクターズ",
+    "constructors-championship"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "PlanetF1",
+    "title": "Haas confirm Camara for Brazil as Ocon exit made permanent",
+    "url": "https://www.planetf1.com/news/haas-camara-ocon-brazil",
+    "note": "2026年11月3日。小松代表の声明全文（英語から編集部が訳した）。"
+   },
+   {
+    "name": "The Race",
+    "title": "Esteban Ocon replaced by Haas for rest of Mexico F1 weekend",
+    "url": "https://the-race.com/formula-1/esteban-ocon-replaced-haas-f1-rest-of-mexico-f1-weekend",
+    "note": "2026年10月31日。FP2の無線のやり取り、土曜の声明「これ以上の声明は出しません」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "The Race",
+    "title": "Haas drops Ocon for rest of 2026 F1 season",
+    "url": "https://www.the-race.com/formula-1/haas-drops-ocon-for-rest-of-2026-f1-season/",
+    "note": "2026年11月3日。金曜夜の経緯、フランスのメディアの報道。"
+   },
+   {
+    "name": "The Race",
+    "title": "Ocon denies using violence in his disagreement with Haas",
+    "url": "https://www.the-race.com/formula-1/ocon-denies-using-violence-in-his-disagreement-with-haas/",
+    "note": "2026年10月31日。オコンの声明（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'Absolute nonsense' – Komatsu refutes Bearman's salary demand is the reason for Haas contract delay",
+    "url": "https://www.formula1.com/en/latest/article/absolute-nonsense-komatsu-refutes-bearmans-salary-demand-is-the-reason-for-haas-contract-delay.68hjHnOBePhQXhTccJ5eJP",
+    "note": "2026年10月30日。金曜日のFIA会見、「インスタグラムで初めて見た」「まったくのナンセンス」。"
+   },
+   {
+    "name": "AUTOSPORT web",
+    "title": "ハースと平川のプロ意識で掴んだ1ポイント【チーム・フォーカス】",
+    "url": "https://www.as-web.jp/f1/1370333",
+    "note": "2026年11月。FIAが交代を受理したのは土曜8時35分。"
+   },
+   {
+    "name": "F1Maximaal",
+    "title": "Hirakawa debut Haas",
+    "url": "https://www.f1maximaal.nl/",
+    "note": "2026年11月1日。平川「電話で知らされた」（朝6時半ごろ）。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Haas boss gives update on Esteban Ocon after Mexican GP driver swap",
+    "url": "https://www.planetf1.com/news/haas-boss-esteban-ocon-mexican-gp-driver-swap",
+    "note": "2026年10月31日。FP3中のSky Sportsへの発言「病気ではない」「詳しいことは話せない」「目の前のことに集中」「とても頭のいい人」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "grandprix.com",
+    "title": "Mexican GP 2026 Sunday team quotes",
+    "url": "https://www.grandprix.com/races/mexican-gp-2026-sunday-team-quotes.html",
+    "note": "2026年11月1日。決勝後「まずまずの日」「誇りに思うべき」「ひとつのセッションも落とさなかった」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "AutoHebdo",
+    "title": "Ayao Komatsu, after Esteban Ocon's dismissal: 'it was the only decision I could make'",
+    "url": "https://www.autohebdof1.com/news/f1/Ayao-Komatsu--after-Steban-Ocon's-dismissal--it-was-the-only-decision-I-could-make.html",
+    "note": "2026年11月1日。Canal+への発言「重い決断」「唯一の決断」「ジーンは私に判断を委ねた」「責任はすべて私に」（フランス語の英訳から編集部が訳した）。"
+   },
+   {
+    "name": "The Race",
+    "title": "Not Steiner: New Haas F1 boss Ayao Komatsu's masterplan",
+    "url": "https://www.the-race.com/formula-1/not-steiner-new-haas-f1-boss-ayao-komatsu-masterplan/",
+    "note": "2024年1月。「シュタイナーになろうとはしていない」「政治はやらない」「コミュニケーション」「意見の違いは健全」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Loughborough University",
+    "title": "Loughborough alumnus Ayao Komatsu appointed Haas F1 team principal",
+    "url": "https://www.lboro.ac.uk/departments/aae/news/2024/ayao-komatsu-f1",
+    "note": "経歴。1995年に渡英、博士号。"
+   },
+   {
+    "name": "The Race",
+    "title": "An F1 team boss's fury at 'absolute bulls***' driver exit rumours",
+    "url": "https://the-race.com/formula-1/an-f1-team-boss-fury-at-absolute-bulls-driver-exit-rumours/",
+    "note": "2026年5月22日。「根拠がゼロ」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Haas reveal brutal reason behind Esteban Ocon axe",
+    "url": "https://racingnews365.com/haas-reveal-brutal-reason-behind-esteban-ocon-axe",
+    "note": "2026年10月10日。「調子のいい日はとても速い」「もっといい環境なら」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Ocon confirms he will leave Haas at end of 2026 season",
+    "url": "https://www.formula1.com/en/latest/article/ocon-confirms-he-will-leave-haas-at-end-of-2026-season.cJjg9W9Om5ZW6Mn9GZ75v",
+    "note": "2026年9月30日。契約を延長しないことの発表。"
+   },
+   {
+    "name": "ESPN",
+    "title": "Haas drop Ocon for rest of season",
+    "url": "https://www.espn.com/f1/story/_/id/50371747/esteban-ocon-haas-f1-aayo-komatsu",
+    "note": "2026年11月3日。今季4人目のレースドライバー、4人までの上限。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "New F1 championship standings after Mexico Grand Prix",
+    "url": "https://www.crash.net/f1/results/1109260/1/new-f1-championship-standings-after-mexico-grand-prix",
+    "note": "ハース7位31点。"
+   },
+   {
+    "name": "FIA",
+    "title": "F1 2026 São Paulo GP – schedule press conferences",
+    "url": "https://www.fia.com/news/f1-2026-sao-paulo-gp-schedule-press-conferences-0",
+    "note": "金曜の代表者会見の出席者（ヴァッスール、ウォルフ、ペルマネ）。"
+   }
+  ]
+ }
+}
