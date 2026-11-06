@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T06:30:00+09:00",
+ "updatedAt": "2026-11-06T12:30:00+09:00",
  "topics": {
   "cadillac-2027-drivers-rumor": {
    "title": "キャデラックの2027年ドライバー布陣をめぐる観測",
@@ -37,10 +37,6 @@
    "title": "ローソンの2027年シート　ツォロフ台頭でレーシングブルズ残留に黄信号",
    "summary": "ローソンは今季ランキング9位ながら、レーシングブルズでの来季の去就が取り沙汰されている。独誌はデータ面でF2のツォロフが有力と分析し、伊メディアはCEOが保証を避けたと伝えた。いずれも報道・分析で、チームからの正式な発表はない。"
   },
-  "piastri-lindblad-penalty": {
-   "title": "ピアストリ、リンドブラッドとの接触で10秒加算　入賞を逃す",
-   "summary": "メキシコGPで7位だったピアストリ（マクラーレン）は、リンドブラッド（レーシングブルズ）との接触でスチュワードから10秒加算を受け、入賞圏外に後退した。再スタート後のターン1で外側から仕掛けた際に接触し、リンドブラッドは壁に当たった。ピアストリは「難しい状況だった」と振り返っている。"
-  },
   "redbull-adidas-2027-rumor": {
    "title": "レッドブル、2027年からアディダスと契約か　フェルスタッペンの着用写真が流出",
    "summary": "ドイツのF1-Insiderとオランダのレーシングニュース365が、レッドブルが2027年からウェア供給元をアディダスに切り替える可能性を伝えた。流出したとされる写真でフェルスタッペンがアディダスの服を着ていることが根拠で、公式発表はなく未確認。"
@@ -56,9 +52,124 @@
   "cadillac-stake-sale-rumor": {
    "title": "キャデラックF1の一部売却観測　FSGなどが関心と報道",
    "summary": "米スポーティコは、キャデラックF1の筆頭株主マーク・ウォルター氏が持ち分の売却を探っていると報じ、リバプールの親会社FSGが関心を示す一社と伝えられた。評価額は約30億ドルとされ、オーナーのグループへの司法当局の調査も背景にあるという。TWGグローバルは当初否定しており、いずれも未確認の報道だ。"
+  },
+  "ferrari-hamilton-leclerc-rift": {
+   "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
+   "summary": "メキシコGP1周目の接触後も、ハミルトンはフェラーリにチーム内ルールの明確化を求め、公の場で主張を曲げていない。ヴァッスールは2人と別々に話したとされる。一方、伊記者がハミルトンはチーム内で好かれていないと主張したとする報道もあるが、同サイト自身がチーム内の支持の変化は確認できないと断っており、未確認の見方だ。"
   }
  },
  "articles": [
+  {
+   "id": "de-motorsporttotal-hamilton-never-apologise",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "ハミルトン「謝るつもりはない」　ルクレールとの接触後も姿勢変えず",
+   "summary": "ハミルトンはサンパウロGPを前に、メキシコGP1周目のルクレールとの接触をめぐり、フェラーリにチーム内ルールの再確認が必要だと改めて訴えた。ルクレールは他チームの相手より自分に対して強く攻めてくるとの見方も示し、シンガポールでの例を挙げた。ルクレールの5秒加算は軽すぎるとの無線発言は批判されたが、本人は「率直であることを謝らない」と述べ、チームから黙るよう求められたことはないとも語った。ヴァッスールは2人と別々に話したとされ、出来事の整理はまだ終わっていない。",
+   "orig": "Lewis Hamilton bleibt hart: \"Werde mich niemals dafür entschuldigen\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-bleibt-hart-werde-mich-niemals-dafuer-entschuldigen-26110515",
+   "published": "2026-11-05T20:00:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-hamilton-hadjar-no-report",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "hamilton-hadjar-mexico-fp",
+   "title": "ハミルトン、ハジャーの走行妨害を報告せず　「言えば罰則だった」と明かす",
+   "summary": "ハミルトンはサンパウロのメディアデーで、メキシコの走行セッションでハジャーが1コーナーで自分の走行を妨げた件を、あえてスチュワードに報告しなかったと明かした。報告すれば調査され、妨害で罰則を受けた可能性が高かったという。無線はAIツールでリアルタイムに文字起こしされており、ドライバーが口にした事案は審議の対象になりやすいと説明した。両者は良好な関係で、ハジャーは事実を認め、ハミルトンに謝ったうえで、少年時代の憧れの選手と走れるのは夢だと語った。",
+   "orig": "Lewis Hamilton verrät: So bewahrte er Isack Hadjar vor einer Strafe",
+   "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-verraet-so-bewahrte-er-isack-hadjar-vor-einer-strafe-26110520",
+   "published": "2026-11-05T23:28:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-piastri-accepts-penalty",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-lindblad-mexico-penalty",
+   "title": "ピアストリ、メキシコの10秒加算を受け入れ　ガイドラインは「適用が難しい」",
+   "summary": "ピアストリは、メキシコGPでリンドブラッドと接触して受けた10秒加算を、FIAのガイドライン上は反論できないとして受け入れた。接触でリンドブラッドの車は宙に浮いて壁に当たりリタイアし、ピアストリは7位から13位に落ちた。一方で、高速コーナーが続く区間ではガイドラインを当てはめにくいとも指摘し、リンドブラッドも範囲内で守っていたと認めた。マクラーレンはコンストラクターズ3位をレッドブルから奪い返したい状況で、サンパウロには改良フロントウイングを持ち込む。",
+   "orig": "Oscar Piastri akzeptiert Strafe, aber: Richtlinien schwierig umzusetzen",
+   "url": "https://www.motorsport-total.com/formel-1/news/oscar-piastri-akzeptiert-strafe-aber-richtlinien-schwierig-umzusetzen-26110517",
+   "published": "2026-11-05T22:00:00+01:00"
+  },
+  {
+   "id": "de-f1insider-ferrari-insider-hamilton",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "「ハミルトンはフェラーリで好かれていない」　伊記者の主張を独サイトが紹介",
+   "summary": "F1-Insider.comは、伊専門サイトAutoRacerのピエルジュゼッペ・ドナドーニ記者が、ハミルトンはフェラーリ内であまり好かれていないと主張したと紹介した。同記者は政治的な立ち回りが目立つとも述べ、2007年のマクラーレン時代の対アロンソの件を引き合いに出した。伊紙コリエーレ・デラ・セーラは、メキシコ後のデブリーフィングが紛糾し、ハミルトンとルクレールは互いに我慢ならない状況だと伝えたとされる。同サイト自身も、チーム内の支持が落ちたかは確認できないと断っており、あくまで未確認の見方だ。",
+   "orig": "Ferrari-Insider erhebt schwere Vorwürfe gegen Hamilton",
+   "url": "https://f1-insider.com/formel-1-ferrari-insider-hamilton-vorwuerfe-83588/",
+   "published": "2026-11-05T14:11:00+01:00"
+  },
+  {
+   "id": "en-therace-vasseur-engine-weakness",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "vasseur-ferrari-engine-chassis",
+   "title": "ヴァッスール最大の成果はエンジン弱点に隠れている　The Race分析",
+   "summary": "The Raceのエド・ストローは、フェラーリのSF-26は現時点でグリッド随一のシャシーと言えるが、エンジンの弱さでストレートが遅いと分析した。今季2勝は同チームの基準では失敗だが、開発の進み方は良くなっているという。長いパワーユニット期の出発点が誤った方向だったことが主因で、ヴァッスールは2026年のアップグレードか2027年用に集中するかを選んだと説明した。チーフエンジニアのセルラの下で開発速度が上がり、ヴァッスールは反応から先読みへの転換を目指している。",
+   "orig": "Ferrari's engine weakness hides biggest Vasseur success",
+   "url": "https://www.the-race.com/formula-1/why-ferrari-engine-weakness-hides-vasseurs-biggest-success/",
+   "published": "2026-11-04T12:00:00+00:00"
+  },
+  {
+   "id": "en-therace-brazil-media-day",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes",
+    "haas",
+    "ferrari"
+   ],
+   "topic": "brazil-media-day-2026",
+   "title": "ブラジルGP木曜まとめ　ラッセル「疲れた」、オコン離脱でカマラが母国デビュー",
+   "summary": "The Raceはブラジルの木曜メディアデーを整理し、ラッセルが「少し疲れた」と述べ、問題なく走れたのは6戦だけで14戦は外的要因で影響を受けたと語ったと伝えた。ハースはオコンが今後参戦しないと発表し、ラファ・カマラが母国でF1デビューする。ルクレールは第1子誕生でメディアデーを欠席し、ヴァッスールは金曜に2人と話し合う予定だ。キャデラックは、メキシコでボッタスが乗った車の前輪サスペンション破損を受けて旧仕様に戻し、温度上限も下げた。",
+   "orig": "What we learned from day one of F1's Brazilian Grand Prix",
+   "url": "https://www.the-race.com/formula-1/what-we-learned-from-day-one-of-f1s-brazilian-grand-prix/",
+   "published": "2026-11-05T12:00:00+00:00"
+  },
   {
    "id": "en-therace-ferrari-drivers-crunch-meeting-brazil",
    "kind": "news",
@@ -1661,115 +1772,6 @@
    "orig": "Wechselt Antonelli zu Ferrari? Schumacher mit deutlicher Ansage",
    "url": "https://f1-insider.com/formel-1-antonelli-zu-ferrari-schumacher-83527/",
    "published": "2026-11-02T14:06:00+01:00"
-  },
-  {
-   "id": "de-motorsportmagazin-antonelli-number-12",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "最年少王者アントネッリ、来季も「12番」　ゼッケン1は縁起が悪いと明かす",
-   "summary": "独モータースポーツ・マガジンは、メキシコGPで3位に入り史上最年少のF1王者となったアントネッリが、来季もゼッケン12を使うと伝えた。本人はチャンピオンのゼッケン1について「自分にはいい番号ではなかった」と述べ、ゲン担ぎを理由に挙げた。12はラウダやセナも使い、複数回タイトルを獲った番号でもあるという。レースは約40分の中断があり、再開1周後にルクレールを抜いて表彰台を確保し、ウイニングラップでは涙で約2秒を失ったと明かした。表彰台ではフェルスタッペンとハミルトンに担ぎ上げられ、祖父が好んだ「誰も寝てはならぬ」が流れた。",
-   "orig": "Tränen, Rekorde und ein Aberglaube: Warum Formel-1-Champion Kimi Antonelli die Nummer 1 nicht will",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301050-traenen-rekorde-und-ein-aberglaube-warum-formel-1-champion-kimi-antonelli-die-nummer-1-ablehnt/",
-   "published": "2026-11-02T14:05:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-wolff-verstappen-effect-antonelli",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "ドライバー",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "ウォルフ「最初の1つにすぎない」　アントネッリの複数タイトルを予言",
-   "summary": "蘭F1マキシマールは、メルセデスのウォルフ代表がアントネッリの初タイトルは始まりにすぎないと語ったと伝えた。フェルスタッペンやハミルトンも初戴冠後に強くなったと例に挙げ、「勝利を争える車を与えなければならない。これは最初の1つで、さらに続く」と述べた。メキシコの週末のアントネッリは緊張していて、決まる前に祝福されるのがつらかったという。ウォルフは、タイトルを必要以上に大きくしないようにという父の助言がカートの頃と同じだったと明かした。",
-   "orig": "Wolff ziet gevreesd Verstappen-effect ontstaan bij Antonelli: \"Er komen er meer\"",
-   "url": "https://www.f1maximaal.nl/formule-1/wolff-ziet-gevreesd-verstappen-effect-ontstaan-bij-antonelli-er-komen-er-meer",
-   "published": "2026-11-02T14:00:00+01:00"
-  },
-  {
-   "id": "en-therace-alpine-double-penalty-mexico",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "alpine"
-   ],
-   "topic": "alpine-yellow-flag-penalty",
-   "title": "アルピーヌ、イエローフラッグ違反の2件のペナルティでメキシコGPの全ポイントを失う",
-   "summary": "ザ・レースによると、アルピーヌのコラピントとガスリーはピアストリへの10秒加算で7位と9位に繰り上がっていたが、その後に2人ともイエローフラッグ違反のペナルティを受けた。コラピントは単一の振られた黄旗で十分に減速しなかったとして10秒加算で15位、ガスリーはストップ＆ゴーが30秒加算に置き換えられて17位となり、ペナルティポイント2点も付いた。これでチームは8ポイントを失い、ローソンが7位に上がった。レーシングブルズは選手権5位争いでアルピーヌを39点リードしている。ガスリーは「自分のミスで得点を逃した」と述べた。",
-   "orig": "Double penalty costs Alpine all its Mexican GP points",
-   "url": "https://www.the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points/",
-   "published": "2026-11-02T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-piastri-lindblad-penalty-mexico",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "mclaren",
-    "racingbulls"
-   ],
-   "topic": "piastri-lindblad-penalty",
-   "title": "ピアストリ、リンドブラッドとの接触で10秒加算　7位から15位に後退",
-   "summary": "ザ・レースによると、マクラーレンのピアストリはメキシコGPの1コーナーで7位を狙った際、レーシングブルズのリンドブラッドと接触し、相手のマシンは一時宙に浮いてバリアに当たった。ピアストリは傷んだ車で7位に入ったが、レース後に10秒加算を受けて15位となった。スチュワードは、ピアストリが「完全には並んでいなかった」ためコーナーの権利はなく、1コーナー後にさらに左へ寄れば接触は避けられたと判断した。ピアストリは「リンドブラッドがかなり遅くドアを閉めた」と主張し、リンドブラッドは映像を確認するまでコメントを控えた。",
-   "orig": "Piastri punished for Lindblad collision",
-   "url": "https://www.the-race.com/formula-1/piastri-punished-for-lindblad-collision/",
-   "published": "2026-11-02T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-russell-fine-distraught-mexico",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "決勝",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "russell-fine-mexico",
-   "title": "ラッセルの会見欠席でメルセデスに罰金5000ユーロ　チームは「打ちのめされていた」と説明",
-   "summary": "ザ・レースによると、メキシコGPのスチュワードは、ラッセルがレース後の義務的なメディア対応に出なかったとしてメルセデスに5000ユーロの罰金を科した。ラッセルはスタート時のエネルギー供給の問題で2番手から後退し、ハジャーと接触して10秒加算を受け、6位で終えた。チームはラッセルが「打ちのめされていた」ため免除されたと説明し、ウォルフ代表はエネルギー供給でチームが彼を失望させたと認めた。ウォルフは、ラッセルがその場を離れたのは理解できると語った。ラッセルはチームの祝賀には加わらなかったが、アントネッリとその家族には祝意を伝えた。",
-   "orig": "Mercedes explains 'distraught' Russell's post-race absence after fine",
-   "url": "https://www.the-race.com/formula-1/mercedes-explains-distraught-russells-post-race-absence-after-fine/",
-   "published": "2026-11-02T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-verdict-antonelli-title",
-   "kind": "news",
-   "lang": "en",
-   "region": "英国",
-   "source": "The Race",
-   "cat": "分析",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "アントネッリの初タイトルをどう見るか　ザ・レース5人の記者が評価",
-   "summary": "ザ・レースの記者5人が、20歳で史上最年少王者となったアントネッリの2026年を評価した。ストローは、豪州の練習走行とバクーの予選での壁への接触ぐらいしかミスがなかったと称え、ラッセルが新規則に苦しんだ点も指摘した。ミッチェル＝マームは新規則が優勝の価値を下げるという批判を退けた。アンダーソンは、1953年のアスカリ以来のイタリア人王者であり、主にラッセルとの比較で価値が測れるとした。ベニョンは、バッテリーでなくドライバーが試される車での本物のタイトル争いがなかったことを惜しんだ。",
-   "orig": "The rival Verstappen needs - our verdict on Antonelli's F1 title",
-   "url": "https://www.the-race.com/formula-1/the-rival-verstappen-needs-our-verdict-antonelli-f1-title/",
-   "published": "2026-11-02T12:00:00+00:00"
   }
  ]
 }
