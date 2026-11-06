@@ -1,0 +1,335 @@
+{
+ "slug": "gasly-anything-else-is-no-pressure",
+ "gp": "サンパウロGP",
+ "title": "「マルコを相手にしたあとなら」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "コラピントを応援しに来たアルゼンチンの大勢のファン。その空気は自分に影響するかと聞かれて、ガスリーは「ヘルムート・マルコを相手にしたあとなら、ほかのことは何でも重圧じゃない」と答えた。2019年8月12日、朝8時42分の電話。3か月後のインテルラゴスの0.062秒。9月に家族へ届いた脅し。メキシコで失った全部の点。それでも「いいエネルギーをもらう」。",
+ "checked": "2026-11-06",
+ "checkedNote": "GPblog、Formula1.com、RaceFans、GRANDPRIX247、Sport24、GPFans、Crash.net、The Race、Sky Sports の原文を11月6日に確認しました。本人の言葉は英語から編集部が訳しました。木曜日の発言で「ファンが行き過ぎる」と言ったとする日本語の要約がありますが、英語の原文では見つからなかったので、その趣旨は9月の発言で書いています。「予選でポールから0.6秒」という数字も原文が見つからないので使っていません。",
+ "common": [
+  "ガスリーは木曜日、コラピントのアルゼンチン人ファンの空気について「マルコを相手にしたあとなら、ほかのことは重圧じゃない」「いいエネルギーをもらう」。",
+  "2019年8月12日にレッドブルからトロロッソへ降格（12戦）。3か月後のインテルラゴスで0.062秒差の2位、初表彰台。2020年モンツァ初優勝、2026年9月モンツァで初ポール。",
+  "9月のマドリードのあと家族に脅し、「越えてはいけない一線」。バクーでコラピントに追突される。8月に2027年も2人で続投、ガスリーは2028年末まで。",
+  "メキシコはイエローフラッグ違反で2台とも全ポイントを失う（ガスリーは30秒加算、「全部僕の責任」）。アルピーヌ6位69点。"
+ ],
+ "outlets": [
+  {
+   "id": "de-motorsporttotal-gasly-marko-colapinto-fans",
+   "angle": "木曜日",
+   "adds": [
+    "アルゼンチンのファン、「マルコを経験したら」。"
+   ]
+  },
+  {
+   "id": "en-therace-alpine-double-penalty-mexico",
+   "angle": "メキシコ",
+   "adds": [
+    "2件のペナルティで全ポイント失う。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「マルコを相手にしたあとなら」「いいエネルギー」",
+   "w": "GPblog（11月5日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「8時42分」「ショックだった」",
+   "w": "Formula1.com（2019年8月29日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「ほとんど安堵」「第2の人生」",
+   "w": "GPFans（F1公式ポッドキャストの英語）を編集部が訳した。"
+  },
+  {
+   "t": "「越えてはいけない一線」",
+   "w": "The Race（9月23日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "木曜日の「行き過ぎ」",
+   "t": "日本語の要約には「熱心なあまり行き過ぎる面もある」とあるが、英語の原文では確認できない。本文では9月の発言に置き換えた。"
+  }
+ ],
+ "unknownsFillable": [
+  "サンパウロの予選・決勝の結果。",
+  "コンストラクターズ5位争いの行方。"
+ ],
+ "unknownsLimits": [
+  "木曜日の質問の正確な言い回し（取材の形式）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "「重圧じゃない」は、強がりか？",
+  "rows": [
+   {
+    "k": "基準",
+    "t": "2019年の12戦で降格され、「心理的な問題」とまで言われた。それ以降の重圧は、その比較の中にある。"
+   },
+   {
+    "k": "実績",
+    "t": "降格から3か月でインテルラゴス2位。以後、初優勝、初ポール。ここでは6回中5回入賞。"
+   },
+   {
+    "k": "今",
+    "t": "9月の脅し、バクーの追突、メキシコの全ポイント失点。それでも「いいエネルギー」と言える場所がインテルラゴス。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "イエローフラッグで、どれだけ減速すればいい？",
+   "rules": [
+    "yellow-flag",
+    "double-yellow",
+    "time-penalty"
+   ]
+  },
+  {
+   "q": "チームメイト同士の争いは、どう決まる？",
+   "rules": [
+    "teammate-battle",
+    "team-radio"
+   ]
+  },
+  {
+   "q": "コンストラクターズの順位は、何を決める？",
+   "rules": [
+    "constructors-championship"
+   ]
+  }
+ ],
+ "todo": [
+  "サンパウロの結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-05T19:00:00-03:00",
+   "t": "ガスリーが木曜日の取材で「マルコを相手にしたあとなら」"
+  },
+  {
+   "at": "2026-11-06T20:15:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "ガスリーは11月5日、コラピントを応援しに来たアルゼンチンのファンの空気について「ヘルムート・マルコを相手にしたあとなら、ほかのことは何でも重圧じゃない」「こういう瞬間にむしろいいエネルギーをもらう」と答えた。2019年8月12日の朝8時42分、マルコからの電話で12戦でレッドブルから降格。3か月後のインテルラゴスで0.062秒差の2位、初表彰台。9月のマドリードのあと家族に脅しが届き「越えてはいけない一線」。メキシコではイエローフラッグ違反で2台とも全ポイントを失った。30歳、196戦。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "コラピントを応援しに来たアルゼンチンの大勢のファン。その空気は影響するかと聞かれて、ガスリーは言った。「マルコを相手にしたあとなら、ほかのことは重圧じゃない」。2019年8月12日、朝8時42分の電話から。",
+  "body": [
+   [
+    "h",
+    "「マルコを相手にしたあとなら」"
+   ],
+   [
+    "p",
+    "11月5日、木曜日のインテルラゴス。ピエール・ガスリーは、チームメイトのコラピントを応援しにアルゼンチンから来た大勢のファンについて聞かれた。コラピントにとって、ブラジルはいちばん母国に近いレースだ。その空気は、自分に影響するか。"
+   ],
+   [
+    "p",
+    "「あのね。ヘルムート・マルコを相手にしたあとなら、ほかのことは何でも、重圧じゃない」。"
+   ],
+   [
+    "p",
+    "「僕は自分の仕事として何をすべきか分かっているし、そこに集中している。だいたい、こういうのがF1の美しさで、こういう瞬間に、僕はむしろいいエネルギーをもらう」。"
+   ],
+   [
+    "h",
+    "2019年8月12日、8時42分"
+   ],
+   [
+    "p",
+    "重圧、という言葉の中身は、7年前にある。2019年、レッドブルに昇格した1年目。12戦を終えたハンガリーの翌月曜日、朝8時42分にマルコから電話が来て、トロロッソに戻ると告げられた。「ブダペストの前に言われていたことと違ったから、ショックだった」。13戦で、フェルスタッペンが181点、ガスリーが63点。"
+   ],
+   [
+    "p",
+    "マルコはそのころ、こう話していた。「追い抜きが好きではない」。「精神的に強いと思っていたが、彼の危機をいちばんよく説明するのは、心理的な問題だ」。"
+   ],
+   [
+    "p",
+    "ガスリーが、あとで振り返った言葉がある。「トロロッソに戻ると言われた電話は、ほとんど安堵に近かった」。「自分にとって、第2の人生のように感じた」。「難しい時期のほうが、ずっと多くを学ぶ」。"
+   ],
+   [
+    "h",
+    "インテルラゴスの0.062秒"
+   ],
+   [
+    "p",
+    "戻って3か月後の2019年11月、インテルラゴス。トロロッソのガスリーは最終ラップのストレートでハミルトンと並び、0.062秒差で先にラインを越えて、2位になった。初めての表彰台だった。"
+   ],
+   [
+    "p",
+    "翌2020年のモンツァで初優勝。2024年には、雨のインテルラゴスでまた表彰台。ここでは直近6回のうち5回で入賞している。本人は「2019年に初めての表彰台を取った、特別な場所」と言っている。今年の9月にはモンツァで、キャリア初のポールも取った。"
+   ],
+   [
+    "h",
+    "9月の一線"
+   ],
+   [
+    "p",
+    "コラピントのファンの話は、今週に始まったことではない。9月のマドリードで、ガスリーは古いタイヤのまま、後ろから来たチームメイトを押さえる形になった。順位を入れ替えろという指示はなかった。そのあと、ガスリー本人と恋人と家族に、脅しが届いた。"
+   ],
+   [
+    "p",
+    "ガスリーは言った。「僕らのスポーツにとって、不穏なことだ」。「画面とキーボードの後ろにいるからといって、越えてはいけない一線がある」。"
+   ],
+   [
+    "p",
+    "次のバクーでは、再スタートでコラピントがロックアップして、ガスリーに追突した。2人ともリタイア。ガスリーは「いまは言葉が見つからないし、いまは言葉も要らない」。「チームとして、一緒に処理する」。10月、コラピントは動画でファンに呼びかけた。「僕を守っているつもりだと思うけど、実際は逆のことをしている」。"
+   ],
+   [
+    "p",
+    "アルピーヌは8月に、来年もこの2人でいくと発表している。ガスリーの契約は、少なくとも2028年末まである。"
+   ],
+   [
+    "h",
+    "メキシコの30秒"
+   ],
+   [
+    "p",
+    "1週間前のメキシコで、アルピーヌは2台とも入賞しながら、レース後に全部の点を失った。1周目の事故で振られたイエローフラッグで、十分に減速しなかった。コラピントは10秒加算、ガスリーはダブルイエローで30秒加算。9位から17位、最後尾まで落ちた。"
+   ],
+   [
+    "p",
+    "「結局、十分に減速しなかった。ペナルティの責任は、全部僕にある」。「事故が目の前で起きて、ダブルイエローが出たのは1コーナーのクリッピングにいたときだった。アクセルは戻したままだった」。「でも、審議が納得するには足りなかった」。"
+   ],
+   [
+    "p",
+    "アルピーヌはコンストラクターズ6位、69点。5位のレーシングブルズとは39点差。"
+   ],
+   [
+    "h",
+    "「いいエネルギー」"
+   ],
+   [
+    "p",
+    "30歳。F1で196戦。レッドブルに乗っていたのは12戦で、そこから196戦のうちの大半を、戻った先のチームで走ってきた。"
+   ],
+   [
+    "p",
+    "日曜日のインテルラゴスには、アルゼンチンの旗が並ぶ。隣のガレージの若いチームメイトのために来た人たちだ。その空気の中で、ガスリーは「いいエネルギーをもらう」と言った。重圧の基準を、7年前に決めてしまった人の言葉だ。"
+   ]
+  ],
+  "terms": [
+   [
+    "イエローフラッグ",
+    "yellow-flag"
+   ],
+   [
+    "ダブルイエロー",
+    "double-yellow"
+   ],
+   [
+    "タイム加算",
+    "time-penalty"
+   ],
+   [
+    "審議（スチュワード）",
+    "stewards"
+   ],
+   [
+    "チームメイト同士",
+    "teammate-battle"
+   ],
+   [
+    "ポールポジション",
+    "pole-position"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "GPblog",
+    "title": "Gasly delivers cheeky Marko verdict: 'Anything else is no pressure'",
+    "url": "https://www.gpblog.com/en/news/gasly-delivers-cheeky-marko-verdict-anything-else-is-no-pressure",
+    "note": "2026年11月5日。「マルコを相手にしたあとなら」「いいエネルギー」、メキシコのペナルティ「全部僕の責任」「1コーナーのクリッピング」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Gasly: I was shocked at Red Bull demotion",
+    "url": "https://www.formula1.com/en/latest/article/gasly-i-was-shocked-at-red-bull-demotion.7d84tGKF6KJMMpFVzAL3Jo",
+    "note": "2019年8月29日。8時42分の電話、「ブダペストの前に言われていたことと違った」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RaceFans",
+    "title": "Red Bull swap Gasly and Albon",
+    "url": "https://www.racefans.net/?p=403455",
+    "note": "2019年8月14日。13戦で181点と63点。"
+   },
+   {
+    "name": "GRANDPRIX247",
+    "title": "Marko: Psychological problems best explain Gasly crisis",
+    "url": "https://www.grandprix247.com/formula-1-news/marko-psychological-problems-best-explain-gasly-crisis",
+    "note": "2019年8月22日。マルコ「心理的な問題」。"
+   },
+   {
+    "name": "Sport24",
+    "title": "Marko explains Gasly demotion: 'He doesn't like to pass'",
+    "url": "https://m.sport24.co.za/Motorsport/marko-explains-gasly-demotion-he-doesnt-like-to-pass-20190815",
+    "note": "2019年8月15日。マルコ「追い抜きが好きではない」。"
+   },
+   {
+    "name": "GPFans",
+    "title": "Gasly admits Red Bull sacking 'almost felt like a relief'",
+    "url": "https://www.gpfans.com/en/f1-news/1073134/alpine-f1-star-pierre-gasly-admits-red-bull-sacking-relief/",
+    "note": "F1公式のポッドキャストでの言葉。「ほとんど安堵」「第2の人生」「難しい時期のほうが学ぶ」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Gasly takes maiden win in Monza thriller",
+    "url": "https://www.formula1.com/en/latest/article/gasly-takes-maiden-win-in-monza-thriller-from-sainz-as-penalty-leaves.2wjQyiSgOy8ggwcJlWHhsi",
+    "note": "2020年9月6日。初優勝。"
+   },
+   {
+    "name": "GRANDPRIX247",
+    "title": "Pierre Gasly eyes more Interlagos magic as Alpine seek to end Americas triple-header on a high",
+    "url": "https://www.grandprix247.com/f1-teams-news/pierre-gasly-eyes-more-interlagos-magic-as-alpine-seek-to-end-americas-triple-header-on-a-high",
+    "note": "2026年11月。「2019年に初めての表彰台を取った特別な場所」、2019年の0.062秒。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Pierre Gasly beats George Russell to claim stunning first F1 pole at Italian GP",
+    "url": "https://www.crash.net/f1/news/1103770/1/pierre-gasly-beats-george-russell-claim-stunning-first-f1-pole-italian-gp",
+    "note": "2026年9月5日。キャリア初のポール。"
+   },
+   {
+    "name": "The Race",
+    "title": "Gasly hits out at 'disturbing' abuse over Colapinto incident",
+    "url": "https://www.the-race.com/formula-1/gasly-hits-out-at-disturbing-abuse-over-colapinto-incident/",
+    "note": "2026年9月23日。マドリードの経緯、「不穏」「越えてはいけない一線」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'Sorry to all of them' – Colapinto apologises for Azerbaijan GP crash with Alpine team mate Gasly",
+    "url": "https://www.formula1.com/en/latest/article/sorry-to-all-of-them-colapinto-apologises-for-2026-formula-1-azerbaijan-gp-crash-with-alpine-team-mate-gasly.3fcbjHOa8zF2lQacETFaw8",
+    "note": "2026年9月27日。バクーの追突、「言葉も要らない」「チームとして一緒に」。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Franco Colapinto urges fans to stop online abuse",
+    "url": "https://www.skysports.com/f1/news/13599549/",
+    "note": "2026年10月15日。「実際は逆のことをしている」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Alpine announce Colapinto contract extension as team confirms unchanged 2027 line-up",
+    "url": "https://formula1.com/en/latest/article/alpine-announce-colapinto-contract-extension-as-team-confirms-unchanged-2027-line-up.DL3dVyZLJm5cHryWcHyPq",
+    "note": "2026年8月27日。2027年も同じ2人、ガスリーは2028年末まで。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Alpine's Gasly and Colapinto stripped of Mexico City GP points after post-race penalties",
+    "url": "https://www.formula1.com/en/latest/article/alpines-gasly-and-colapinto-stripped-of-mexico-city-gp-points-after-post-race-penalties.2wLfobQHufuH1L1aMYPl7h",
+    "note": "2026年11月2日。10秒と30秒、9位から17位。"
+   },
+   {
+    "name": "The Race",
+    "title": "Double penalty costs Alpine all its Mexican GP points",
+    "url": "https://the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points",
+    "note": "2026年11月2日。レーシングブルズとの39点差。"
+   }
+  ]
+ }
+}

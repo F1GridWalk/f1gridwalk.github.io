@@ -1,0 +1,306 @@
+{
+ "slug": "hadjar-dream-to-race-him",
+ "gp": "サンパウロGP",
+ "title": "「夢」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "メキシコの練習走行で、ハジャーはハミルトンの前で1コーナーのアクセルを戻した。ハミルトンは無線で何も言わなかった。「言っていたら、彼はペナルティだった」。ハジャーは「謝ったのを覚えている。邪魔をしたのは初めてだった」。メルボルンの雨の日に、ハミルトンの父に肩を抱かれた22歳が、「夢」と答えるまで。",
+ "checked": "2026-11-06",
+ "checkedNote": "GPblog、Sky Sports、Motorsport-Total.com、Formula1.com、GRANDPRIX247、PlanetF1、AutoHebdo の原文を11月6日に確認しました。ハミルトンの言葉は英語から、ハジャーの木曜日の言葉はドイツ語の記事から編集部が訳しました（英語の原文は見つかっていないので、言い回しは要約に近い可能性があります）。「無線はAIで文字起こしされる」という話は記事の地の文で、ハミルトンの発言ではないので本文に入れていません。メキシコの練習走行のどのセッションかは、どの記事にも書かれていません。",
+ "common": [
+  "ハミルトンは木曜日、メキシコの練習走行でハジャーに1コーナーで妨害されたが無線で言わず、審議は調べなかったと明かした。「言っていたら、彼はペナルティだった」。",
+  "ハジャーは認めて「あのとき謝った」「邪魔をしたのは初めて」。ハミルトンと戦うことは「夢」。セナと並ぶ憧れ。",
+  "2025年メルボルンのデビューはフォーメーションラップで終わり、ハミルトンの父アンソニーに慰められた。",
+  "メキシコは戒告、予選7番手、1周目にラッセルと接触して最後尾、9位。ランキング8位107点。"
+ ],
+ "outlets": [
+  {
+   "id": "de-motorsporttotal-hamilton-hadjar-no-report",
+   "angle": "木曜日",
+   "adds": [
+    "ハミルトンが報告せず、ハジャーが謝罪、「夢」。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-hadjar-russell-collision",
+   "angle": "メキシコ決勝",
+   "adds": [
+    "最後尾から9位、「信用すべきでなかった」。"
+   ]
+  },
+  {
+   "id": "en-crash-hadjar-warning-reality-show",
+   "angle": "戒告",
+   "adds": [
+    "パドックの件、「リアリティ番組ではない」。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-hamilton-never-apologise",
+   "angle": "ハミルトン",
+   "adds": [
+    "ルクレールとの件、「率直であることを謝らない」。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「何も言わなかった」「彼はペナルティを受けていた」",
+   "w": "GPblog、Sky Sports（11月5日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「謝ったのを覚えている」「初めてだった」「夢」",
+   "w": "Motorsport-Total.com（11月5日、ドイツ語）を編集部が訳した。"
+  },
+  {
+   "t": "「僕のアイドルの父親」「品のある人たち」",
+   "w": "Formula1.com（2025年3月20日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ハミルトンの言い回し",
+   "t": "「ペナルティを受けていた」と言い切る版（Sky）と、「調べられていた」までの版（GPblog）がある。本文はSkyの版にそろえた。"
+  }
+ ],
+ "unknownsFillable": [
+  "メキシコの練習走行のどのセッションだったか。",
+  "サンパウロの予選・決勝の結果。"
+ ],
+ "unknownsLimits": [
+  "ハジャーの木曜日の言葉の英語の原文。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜハミルトンは言わなかったのか？",
+  "rows": [
+   {
+    "k": "仕組み",
+    "t": "審議はドライバーに「声に出して」と求めている。無線に残らなければ、見られないこともある。"
+   },
+   {
+    "k": "相手",
+    "t": "ハジャーは「初めて」の妨害で、その場で謝った。ハミルトンは例として挙げただけで、不満の形では話していない。"
+   },
+   {
+    "k": "文脈",
+    "t": "ハミルトンが本当に言いたかったのは、ルクレールとの件で「率直であることを謝らない」ということ。ハジャーの件は、その対比として出てきた。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "妨害（インピーディング）は、どう裁かれる？",
+   "rules": [
+    "impeding",
+    "stewards"
+   ]
+  },
+  {
+   "q": "ハジャーのオースティンは、どうだった？",
+   "rules": [
+    "team-radio"
+   ],
+   "links": [
+    "/topics/hadjar-sorry-cant-let-him-by/"
+   ]
+  },
+  {
+   "q": "ハミルトンのメキシコは？",
+   "rules": [
+    "pole-position"
+   ],
+   "links": [
+    "/topics/hamilton-long-time-coming/"
+   ]
+  },
+  {
+   "q": "戒告とは？",
+   "rules": [
+    "reprimand",
+    "warning"
+   ]
+  }
+ ],
+ "todo": [
+  "サンパウロの結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-05T20:00:00-03:00",
+   "t": "ハミルトンが木曜日の取材でハジャーの件を明かす"
+  },
+  {
+   "at": "2026-11-06T20:00:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "ハミルトンは11月5日、メキシコの練習走行でハジャーに1コーナーで妨害されたが無線で何も言わず、審議は調べなかったと明かした。「言っていたら、調べられて、彼はペナルティを受けていた」。ハジャーは認めて「あのとき謝った。邪魔をしたのは初めて」と言い、ハミルトンと戦うことを「夢。ルイスはアイルトンと並んで小さな頃に見上げていたドライバー」と話した。2025年メルボルンのデビューではフォーメーションラップでクラッシュし、ハミルトンの父に慰められた。メキシコは戒告、予選7番手、最後尾から9位。ランキング8位107点。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "メキシコの練習走行で、ハジャーは1コーナーでアクセルを戻した。ハミルトンは無線で言わなかった。「言っていたら、彼はペナルティだった」。メルボルンで泣いていた22歳が、「夢」と答えるまで。",
+  "body": [
+   [
+    "h",
+    "言わなかった"
+   ],
+   [
+    "p",
+    "11月5日、木曜日のインテルラゴス。ルイス・ハミルトンは、メキシコでの1周目のルクレールとの接触について聞かれ続けていた。「審議は、コース上で何かあれば声に出してくれと、いつも僕らに言っている」。その流れで、ひとつ例を挙げた。"
+   ],
+   [
+    "p",
+    "「メキシコの練習走行のひとつで、ハジャーが1コーナーの入口で、レコードライン上でアクセルを戻した。僕は何も言わなかった。だから、審議はそれを見もしなかった」。「もし僕が何か言っていたら、調べられて、彼はペナルティを受けていた。妨害だったから」。"
+   ],
+   [
+    "p",
+    "無線で言えば、その言葉は記録に残る。言わなかったから、何も起きなかった。相手は、フェルスタッペンの隣で走る1年目の22歳。"
+   ],
+   [
+    "h",
+    "「初めて、彼の邪魔をした」"
+   ],
+   [
+    "p",
+    "ハジャーも、その件を認めている。「彼がそのままにしてくれたことに、感謝している」。「あのとき、彼に謝ったのを覚えている」。「正直に言うと、彼の邪魔をしたのは、あれが初めてだった」。"
+   ],
+   [
+    "p",
+    "初めて、と言うのには理由がある。"
+   ],
+   [
+    "h",
+    "メルボルン、2025年3月"
+   ],
+   [
+    "p",
+    "ハジャーのF1デビューは、2025年のメルボルンだった。雨のフォーメーションラップでマシンを壁に当て、スタートする前にレースが終わった。ガレージに戻る途中、泣いている彼の肩を抱いたのが、ハミルトンの父アンソニーだった。"
+   ],
+   [
+    "p",
+    "次の中国で、本人はこう言った。「アンソニーのような人と、僕のアイドルの父親と、時間を分け合えたのはいい瞬間だった」。「ルイスはその日のうちにメッセージをくれた。本当に、品のある人たちだ」。"
+   ],
+   [
+    "p",
+    "6歳でF1を見始めて、7歳でカートに乗った。憧れは、セナとハミルトン。"
+   ],
+   [
+    "h",
+    "メキシコの週末"
+   ],
+   [
+    "p",
+    "その1年半後のメキシコは、ハジャーにとって落ち着かない週末だった。金曜日、パドックで自撮りを求めてきた客を押したとして、審議から戒告を受けた。相手の近づき方が強引で、人混みで、警備が足りなかったことは、情状として認められた。本人は「正しい判断だった」と言い、パドックは「少し落ち着いたほうがいい」と言った。"
+   ],
+   [
+    "p",
+    "予選は7番手。「セッションの間ずっと、ひどかった」。決勝の1周目、6コーナーで並んだラッセルと接触してスピンし、最後尾まで落ちた。ラッセルには10秒加算。それでもハジャーは、「彼を信用すべきじゃなかった。でも、起こることだ」と、自分の側にも目を向けた。フロアを傷めたまま追い上げて、9位。"
+   ],
+   [
+    "p",
+    "ランキングは8位、107点。来年もレッドブルで走ることは、9月に決まっている。"
+   ],
+   [
+    "h",
+    "「夢」"
+   ],
+   [
+    "p",
+    "ハミルトンと戦うことについて聞かれて、ハジャーはひとことで答えた。「夢」。"
+   ],
+   [
+    "p",
+    "「ルイスは、アイルトンと並んで、小さな頃の僕が見上げていたドライバーだった。彼と戦う日が来るなんて、思ったこともなかった」。「それがいま、同じグリッドにいるだけじゃなくて、競争力のあるマシンで、お互いに争っている」。"
+   ],
+   [
+    "p",
+    "メキシコのポールはハミルトンで、ハジャーはその0.4秒後ろだった。今週末のインテルラゴスにも、1コーナーがある。今度は、2人とも何も戻さずに入っていく。"
+   ]
+  ],
+  "terms": [
+   [
+    "妨害（インピーディング）",
+    "impeding"
+   ],
+   [
+    "審議（スチュワード）",
+    "stewards"
+   ],
+   [
+    "戒告",
+    "reprimand"
+   ],
+   [
+    "フォーメーションラップ",
+    "formation-lap"
+   ],
+   [
+    "無線",
+    "team-radio"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "GPblog",
+    "title": "'I'm never going to apologise for being authentic and real, I'm not going to be silenced'",
+    "url": "https://www.gpblog.com/en/news/im-never-going-to-apologise-for-being-authentic-and-real-im-not-going-to-be-silenced",
+    "note": "2026年11月5日。ハミルトン「審議はいつも声に出してくれと」「ハジャーが1コーナーでアクセルを戻した」「何も言わなかった」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Lewis Hamilton: Ferrari driver says team-mate Charles Leclerc races him harder than other F1 rivals",
+    "url": "https://www.skysports.com/f1/news/13608314/",
+    "note": "2026年11月5日。「調べられて、彼はペナルティを受けていた。妨害だったから」。"
+   },
+   {
+    "name": "Motorsport-Total.com",
+    "title": "Lewis Hamilton verrät: So bewahrte er Isack Hadjar vor einer Strafe",
+    "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-verraet-so-bewahrte-er-isack-hadjar-vor-einer-strafe-26110520",
+    "note": "2026年11月5日。ハジャー「そのままにしてくれたことに感謝」「謝ったのを覚えている」「初めてだった」「夢」「アイルトンと並んで見上げていた」（ドイツ語の記事から編集部が訳した。英語の原文は見つかっていない）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'They're classy guys' – Hadjar reflects on special moment with Anthony Hamilton",
+    "url": "https://www.formula1.com/en/latest/article/theyre-classy-guys-hadjar-reflects-on-special-moment-with-anthony-hamilton.27PgCwNPmWs1PonVcRlcUi",
+    "note": "2025年3月20日。メルボルンのフォーメーションラップ、アンソニー・ハミルトン、「僕のアイドルの父親」「ルイスはその日のうちにメッセージを」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GRANDPRIX247",
+    "title": "Hadjar: F1 rookie says his racing heroes are Ayrton Senna and Lewis Hamilton",
+    "url": "https://www.grandprix247.com/2025/01/01/hadjar-f1-rookie-says-his-racing-heroes-are-ayrton-senna-and-lewis-hamilton/",
+    "note": "2025年1月1日。6歳でF1、7歳でカート、憧れはセナとハミルトン。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Isack Hadjar pushes fan at F1 2026 Mexican Grand Prix",
+    "url": "https://www.planetf1.com/news/isack-hadjar-pushes-fan-f1-2026-mexican-grand-prix",
+    "note": "2026年11月1日。戒告、情状、「正しい判断だった」「少し落ち着いたほうがいい」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "AutoHebdo",
+    "title": "Hadjar wurde Siebter in der mexikanischen Qualifikation",
+    "url": "https://www.autohebdo.de/Nachrichten/f1/Hadjar-wurde-Siebter-in-der-mexikanischen-Qualifikation;-ich-war-die-ganze-Session-%C3%BCber-furchtbar..html",
+    "note": "2026年11月1日。予選7番手、「セッションの間ずっとひどかった」、ポールのハミルトンから0.386秒。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Isack Hadjar George Russell F1 2026 Mexican Grand Prix",
+    "url": "https://www.planetf1.com/news/isack-hadjar-george-russell-f1-2026-mexican-grand-prix",
+    "note": "2026年11月2日。6コーナーの接触、「信用すべきじゃなかった。でも、起こることだ」。"
+   },
+   {
+    "name": "Motorsport-Total.com",
+    "title": "Hadjar nach Russell-Kollision: Ich hätte ihm nicht vertrauen dürfen",
+    "url": "https://www.motorsport-total.com/formel-1/news/hadjar-nach-russell-kollision-ich-haette-ihm-nicht-vertrauen-duerfen-26110308",
+    "note": "2026年11月3日。最後尾から9位、フロアの損傷、ラッセルに10秒加算。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "2026 Driver Standings",
+    "url": "https://www.formula1.com/en/results/2026/drivers",
+    "note": "メキシコ後、ハジャー8位107点。"
+   }
+  ]
+ }
+}
