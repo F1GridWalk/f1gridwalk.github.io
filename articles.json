@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T00:30:00+09:00",
+ "updatedAt": "2026-11-08T06:30:00+09:00",
  "topics": {
   "antonelli-champion-2026": {
    "title": "アントネッリが最年少王者に　メキシコGPで3位、残り4戦で戴冠",
@@ -20,10 +20,6 @@
   "lawson-2027-seat": {
    "title": "ローソンの2027年シート　ツォロフ台頭でレーシングブルズ残留に黄信号",
    "summary": "ローソンは今季ランキング9位ながら、レーシングブルズでの来季の去就が取り沙汰されている。独誌はデータ面でF2のツォロフが有力と分析し、伊メディアはCEOが保証を避けたと伝えた。いずれも報道・分析で、チームからの正式な発表はない。"
-  },
-  "redbull-adidas-2027-rumor": {
-   "title": "レッドブル、2027年からアディダスと契約か　フェルスタッペンの着用写真が流出",
-   "summary": "ドイツのF1-Insiderとオランダのレーシングニュース365が、レッドブルが2027年からウェア供給元をアディダスに切り替える可能性を伝えた。流出したとされる写真でフェルスタッペンがアディダスの服を着ていることが根拠で、公式発表はなく未確認。"
   },
   "alan-jones-death": {
    "title": "1980年王者アラン・ジョーンズ氏が80歳で死去　ウィリアムズ初のF1王者",
@@ -56,9 +52,153 @@
   "herta-cadillac-seat-comment": {
    "title": "ハータのキャデラック昇格論、ラルフ・シューマッハーが否定",
    "summary": "キャデラックのテスト担当ハータはサンパウロGPのFP1でペレスの車を走り、スーパーライセンスに必要な最後の1ポイントを得た。これに対しラルフ・シューマッハーはSkyで、F2での成績の悪さを理由に2027年のシート獲得は現実的でないとの見方を示した。ハータはF2で19位、26ポイントで勝利も表彰台もないが、インディカでは9勝を挙げている。"
+  },
+  "brazil-quali-norris-pole": {
+   "title": "雨のサンパウロ予選でノリスがポール　ラッセル2番手も降格",
+   "summary": "雨で大幅に遅れたサンパウロGP予選は、マクラーレンのノリスが1分27秒470でポールを獲得した。2番手はラッセル、3番手はアントネッリで、ラッセルは5グリッド降格、ルクレールは10グリッド降格となる。フェルスタッペンとハミルトンはパワーユニット交換で最後尾に回る。"
+  },
+  "brazil-russell-aborted-lap": {
+   "title": "ラッセル、無線で怒り　Q3の中止指示にウォルフ「宝くじだった」",
+   "summary": "サンパウロGP予選Q3でラッセルは最終ラップ中にペースを落とすよう指示され、ポールを逃したと無線で不満をあらわにした。ウォルフ代表は状況が読みにくかったと擁護し、あのラップでもポールには届かなかっただろうとの見方を示した。ノリスのポールとは0.204秒差だった。"
+  },
+  "brazil-verstappen-back-of-grid": {
+   "title": "フェルスタッペン、最後尾から巻き返し狙う　予選は早期終了",
+   "summary": "フェルスタッペンは新パワーユニット投入によるグリッド降格が決まっていたため、サンパウロGP予選でリスクを避けて早めに走行を終えた。決勝は後方から追い上げる構えで、雨とセーフティカーが多い展開を望んでいる。DRSがなく抜きにくい点も本人は認めている。"
   }
  },
  "articles": [
+  {
+   "id": "en-f1com-sao-paulo-norris-pole",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "Formula1.com",
+   "cat": "予選",
+   "circuit": "interlagos",
+   "teams": [
+    "mclaren",
+    "mercedes"
+   ],
+   "topic": "brazil-quali-norris-pole",
+   "primary": true,
+   "featured": true,
+   "title": "ノリスが雨のサンパウロ予選でポール　インテルラゴス3年連続",
+   "summary": "マクラーレンのノリスが雨に見舞われたサンパウロGP予選で1分27秒470を記録し、インテルラゴスで3年連続のポールを獲得した。2番手はラッセルで差は0.204秒、3番手はアントネッリだった。ラッセルは5グリッド降格、ルクレールは4番手ながら10グリッド降格となる。ハミルトンとフェルスタッペンはパワーユニット交換などで最後尾から発進する見込みだ。ノリスは「長い一日だった」と振り返り、決勝は日曜の現地14時にインテルラゴスでスタートする予定で、日本時間では日曜深夜2時にあたる。",
+   "orig": "Norris takes pole in wet Sao Paulo qualifying",
+   "url": "https://www.formula1.com/en/latest/article/norris-beats-russell-to-pole-position-in-dramatic-rain-affected-sao-paolo-qualifying.2V60rhlQjdS5my1uFrOKUH",
+   "published": "2026-11-07T20:37:00+00:00"
+  },
+  {
+   "id": "en-therace-norris-pole-russell-rages",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "予選",
+   "circuit": "interlagos",
+   "teams": [
+    "mclaren",
+    "mercedes"
+   ],
+   "topic": "brazil-quali-norris-pole",
+   "title": "ノリスがブラジルGPポール　ラッセルは中止指示のラップに激怒",
+   "summary": "豪雨で1時間25分遅れたブラジルGP予選で、ノリスが土砂降りの中でポールを奪った。Q3は雨雲の動きから走れるのは1周だけとみられたが、ラッセルは2周走り、2周目はアルボンに追いついて引いたとされる。ラッセルは無線で「あれはP1のラップだった」と訴え、チームの指示に不満を示した。フェルスタッペンはタイヤ温存のためQ2を走らず、ハミルトンも同じ理由でQ2を早く終えた。カマラはQ2でクラッシュを起こしながらF1デビュー戦を13番手で終えた。",
+   "orig": "Norris on Brazilian GP pole as Russell rages at Mercedes over aborted lap",
+   "url": "https://www.the-race.com/formula-1/norris-on-brazilian-gp-pole-as-russell-rages-at-mercedes-over-aborted-lap/",
+   "published": "2026-11-07T21:00:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-russell-rages-norris-pole",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "予選",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes",
+    "mclaren"
+   ],
+   "topic": "brazil-russell-aborted-lap",
+   "title": "ラッセルが無線で怒り「あれがポールだった」　ノリスがサンパウロ制す",
+   "summary": "ブラジルGP予選で、ノリスが1分27秒470でポールを獲得し、ラッセルは0.204秒差の2番手だった。ラッセルはQ3で走行中に「ペースを落とせと言ったじゃないか」と無線で抗議し、ウォルフ代表は「ジョージ、君はP2だ」と返した。レース後にラッセルは「あれは間違いなくポールのラップだった」と語った。ノリスの速さにはマクラーレンがブラジルに持ち込んだ改良も寄与したという。ラッセルはパワーユニット交換により、グリッドは5つ後退して7番手となる。",
+   "orig": "Verrücktes Regen-Qualifying: George Russell tobt nach Pole von Lando Norris",
+   "url": "https://www.motorsport-total.com/formel-1/news/verruecktes-regen-qualifying-george-russell-tobt-nach-pole-von-lando-norris-26110714",
+   "published": "2026-11-07T21:49:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-wolff-defends-russell-lap",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "予選",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "brazil-russell-aborted-lap",
+   "title": "ウォルフ、ラッセルの怒りに反論　「あのラップでもポールには届かなかった」",
+   "summary": "ブラジルGP予選のQ3で、ラッセルは1回目のアタック後に暫定最速となったが、2回目でノリスに逆転されポールを逃した。最終ラップはアルボンに追いついたため、チームが中断して1周後に再挑戦するよう伝えたが、直後に雨が強まり更新できなかった。ラッセルは無線で理由を問い詰めて怒りをあらわにした。ウォルフ代表は状況が読みにくく「いつも少し宝くじのようになる」と擁護し、あのラップでもポールには足りなかっただろうとの見方を示した。一方でノリスについては「まったく別次元」と称賛した。",
+   "orig": "Wolff verdedigt team na scheldkanonnade Russell",
+   "url": "https://racingnews365.nl/wolff-verdedigt-team-na-scheldkanonnade-russell",
+   "published": "2026-11-07T22:10:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-verstappen-quali-early-exit",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "予選",
+   "circuit": "interlagos",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "brazil-verstappen-back-of-grid",
+   "title": "フェルスタッペンが予選早期終了を説明　「戦う意味がなかった」",
+   "summary": "フェルスタッペンはブラジルGPの雨の予選で、リスクを避けるため早めに走行を切り上げた。決勝でグリッド降格を受けることが分かっていたため、予選で攻める価値は小さいとチームと判断したという。本人は天候次第だったが「正しい選択だったと思う」と述べた。一方で「楽しかったか」と問われると「あまり。何かのために戦っているわけではない」と答えた。Q1ではタイムを出すだけにとどめ、走りの感触にも満足していると述べた。すでに意識は決勝に向いていた。",
+   "orig": "Verstappen verklaart vroegtijdig einde kwalificatie GP Brazilië",
+   "url": "https://racingnews365.nl/verstappen-verklaart-vroegtijdig-einde-kwalificatie-gp-brazilie",
+   "published": "2026-11-07T21:37:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-verstappen-p21-safety-cars",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "redbull",
+    "ferrari"
+   ],
+   "topic": "brazil-verstappen-back-of-grid",
+   "title": "フェルスタッペン、最後尾から勝利狙う　「セーフティカーが多いほどいい」",
+   "summary": "フェルスタッペンはQ1で好印象を残したものの、新パワーユニットの投入でサンパウロGPを21番手から迎える。この交換は週末の当初計画になく、金曜に決めたと本人は語った。今年はDRSがなく、直線では電気エネルギーの使い方で速度差が小さいため、昨年より抜きにくくなるとの見方だ。雨なら2024年に17番手から勝った展開に近いとして、「ライバルが差を広げられないようセーフティカーが多く必要だ」と話した。20番手発進のハミルトンとともに前方の車を早く抜きたいという。",
+   "orig": "Verstappen richt pijlen vanaf P21 op de zege: \"Dan kunnen ze geen gat trekken\"",
+   "url": "https://www.f1maximaal.nl/max-verstappen/verstappen-richt-pijlen-vanaf-p21-op-de-zege-dan-kunnen-ze-geen-gat-trekken",
+   "published": "2026-11-07T21:49:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-komatsu-ocon-surprised",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "title": "小松代表、オコン外しを語る　「全員が驚いた」",
+   "summary": "ハースの小松礼雄代表は、オコンをシートから外す決定にスタッフ全員が驚いたと明かした。土曜朝のメキシコで、平川亮が代わりに乗ると伝えたという。背景にはFP2後のオコンとレースエンジニアとのやり取りがあると報じられているが、詳しい理由は明らかにされていない。小松代表は「これ以上はあまり話せない」とし、2年近く共にした日々を「毎日が学びだった」と振り返った。ブラジルGPではF2首位のカマラがF1デビューし、ベアマンは強力なチームメイトを歓迎すると語った。",
+   "orig": "Teamchef Komatsu über Ocons Haas-Aus: \"Alle waren überrascht\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/teamchef-komatsu-ueber-ocons-haas-aus-alle-waren-ueberrascht-26110713",
+   "published": "2026-11-07T18:30:00+01:00"
+  },
   {
    "id": "ja-voice-ferrari-meeting-cold",
    "kind": "voice",
@@ -1278,8 +1418,7 @@
    "summary": "1980年のF1世界チャンピオン、アラン・ジョーンズ氏が短い闘病の末に亡くなったと、ザ・レースが5日に伝えた。今週80歳になったばかりで、訃報は木曜の早朝に伝わったという。通算12勝を挙げ、ウィリアムズにとって初のドライバーズ王者で、ジャック・ブラバムに続く2人目のオーストラリア人王者でもあった。ウィリアムズは「速く妥協を許さない、挑戦者の気概を持ったレーサー」と称え、フランク・ウィリアムズ、パトリック・ヘッドとの強い絆にも触れた。",
    "orig": "1980 F1 champion Alan Jones passes away",
    "url": "https://www.the-race.com/formula-1/1980-f1-champion-alan-jones-passes-away/",
-   "published": "2026-11-05T08:33:18+00:00",
-   "featured": true
+   "published": "2026-11-05T08:33:18+00:00"
   },
   {
    "id": "en-crash-alan-jones-dies-aged-80",
@@ -1680,132 +1819,6 @@
    "orig": "Steiner legt uit waarom Antonelli meer wereldtitels zal behalen dan Verstappen",
    "url": "https://www.f1maximaal.nl/opinie/oud-teambaas-verwacht-dat-antonelli-meer-titels-zal-winnen-dan-verstappen",
    "published": "2026-11-04T18:05:00+01:00"
-  },
-  {
-   "id": "en-therace-vesti-cadillac-pitch",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "うわさ",
-   "teams": [
-    "mercedes",
-    "cadillac"
-   ],
-   "topic": "cadillac-2027-drivers-rumor",
-   "title": "メルセデス控えのヴェスティ、キャデラック2027年シートに名乗り「あのマシンなら非常に速い」",
-   "summary": "メルセデスの控えドライバー、フレッド・ヴェスティ（24）がメキシコGPのFP1でラッセルの代役として3番手、アントネッリとは0.111秒差と好走し、2027年のキャデラック候補に名乗りを上げたとThe Raceが伝えた。本人は「あの車なら非常に速いはず」「F1にしか関心がない」と語り、ラッセルも「チャンスに値する」と後押ししたという。キャデラックの候補はほかにボッタス、ハータ、角田裕毅らで、チームはまだ決定していないとされる。",
-   "orig": "A Mercedes driver's punchy pitch for 2027 Cadillac F1 seat",
-   "url": "https://www.the-race.com/formula-1/mercedes-f1-driver-fred-vesti-punchy-pitch-2027-cadillac-seat/",
-   "published": "2026-11-04T12:00:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-mercedes-constructors-brazil",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "circuit": "interlagos",
-   "topic": "mercedes-constructors-title-brazil",
-   "title": "メルセデス、サンパウロGPでコンストラクターズ王者に王手　フェラーリに3点差以上で決定",
-   "summary": "メルセデスは第20戦サンパウロGPで、2021年以来となるコンストラクターズ選手権の優勝を決める可能性があるとMotorsport-Total.comが試算した。現在フェラーリに126点差で、残り4戦の最大獲得点は172点にあたる。ブラジルで決めるにはフェラーリを3点以上上回ればよく、1-2、1-3、1-4フィニッシュなら確定する。3位レッドブルは248点差で、数字上の可能性はすでに消えている。2位フェラーリは巻き返しが必要だ。",
-   "orig": "Nächster Titel? So wird Mercedes in Brasilien Konstrukteurs-Weltmeister",
-   "url": "https://www.motorsport-total.com/formel-1/news/naechster-titel-so-wird-mercedes-in-brasilien-konstrukteurs-weltmeister-26110410",
-   "published": "2026-11-04T15:05:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-mcnish-huelkenberg-defence",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "teams": [
-    "audi",
-    "haas"
-   ],
-   "circuit": "mexico",
-   "topic": "huelkenberg-bearman-mexico",
-   "title": "アウディ代表マクニッシュ「私も同じ隙間に入った」　ヒュルケンベルグのベアマン接触を擁護",
-   "summary": "メキシコGPの赤旗再スタートでヒュルケンベルグ（アウディ）がベアマン（ハース）と接触した件で、アウディ代表マクニッシュは「私も同じ隙間に入っていた」と擁護したとMotorsport-Total.comが伝えた。混戦の再スタートで前が詰まり、フロントのグリップを失って触れてしまったと説明し、ペナルティ自体は妥当としつつ不運だったと述べた。ヒュルケンベルグは「故意ではない」と謝罪し、スチュワードはタイム加算を科して入賞圏を逃した。ベアマンはリタイアとなり、路外にゴムかすが多かったと語っている。",
-   "orig": "\"Ich wäre in dieselbe Lücke gefahren\": Audi-Teamchef verteidigt Hülkenberg",
-   "url": "https://www.motorsport-total.com/formel-1/news/ich-waere-in-dieselbe-luecke-gefahren-audi-teamchef-verteidigt-huelkenberg-26110406",
-   "published": "2026-11-04T11:31:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-ralf-schumacher-hamilton-tolerate",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "circuit": "mexico",
-   "topic": "ferrari-hamilton-leclerc-mexico",
-   "title": "ラルフ・シューマッハー、ハミルトンの無線を批判「私なら容認しない」　メキシコの同士討ち",
-   "summary": "元F1ドライバーのラルフ・シューマッハーがスカイのポッドキャストで、メキシコGP1周目のルクレールとハミルトンの接触を語り、ハミルトンは無理と分かって突っ込んだと述べたとMotorsport-Total.comが伝えた。ハミルトンがチームメイトへのペナルティを間接的に求めた無線を「ドライバーがすることではない」と批判し、チームより自分を上に置いていると主張した。フェラーリは速いマシンを持ちながら2台とも勝てた可能性があったとして、首脳陣の介入を求め「私なら容認しない」と語った。ルクレールは5秒加算でトップをフェルスタッペンに譲った。",
-   "orig": "\"Ich würde es nicht tolerieren\": Formel-1-Experte zählt Lewis Hamilton an",
-   "url": "https://www.motorsport-total.com/formel-1/news/ich-wuerde-es-nicht-tolerieren-formel-1-experte-zaehlt-lewis-hamilton-an-26110407",
-   "published": "2026-11-04T12:54:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-russell-message-antonelli-title",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "mercedes"
-   ],
-   "circuit": "mexico",
-   "topic": "antonelli-russell-gap-2026",
-   "title": "ラッセル、アントネッリ戴冠後に長文メッセージ「2026年は自分の年ではなかった」",
-   "summary": "ラッセルはアントネッリのタイトル決定後、恒例の取材対応を欠席し、長文のSNSメッセージを出したとMotorsport-Total.comが伝えた。「今季は私の年ではなかった」「キャリアで初めて悪い日が良い日より多いシーズンだった」と振り返り、アントネッリには「本当にタイトルに値する」と祝福を送った。メルセデスが最高のマシンとパワーユニットを用意してくれたと感謝し、2027年は本来の姿に戻ると誓っている。メキシコは6位で、ドライバーズ順位は2位から4位に下がった。",
-   "orig": "Nach Antonellis WM-Titel: George Russell meldet sich mit emotionaler Botschaft",
-   "url": "https://www.motorsport-total.com/formel-1/news/nach-antonellis-wm-titel-george-russell-meldet-sich-mit-emotionaler-botschaft-26110408",
-   "published": "2026-11-04T13:30:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-leclerc-first-child",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "素顔",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "leclerc-first-child",
-   "title": "ルクレールに第1子の長女　妻アレクサンドラがインスタグラムで報告",
-   "summary": "フェラーリのルクレールに第1子の女児が誕生したと、妻アレクサンドラ本人がインスタグラムの投稿で明らかにしたとMotorsport-Total.comが伝えた。投稿で名前はビアンカと明かされ、誕生はメキシコシティGPとサンパウロGPの間の火曜日だったという。2人は今年2月に結婚し、夏に妊娠を発表していた。ルクレールは事前に、レースは欠場せず合間はできるだけ自宅で過ごすと話していた。現在のF1では、アロンソ、ヒュルケンベルグ、ペレス、フェルスタッペンに続く5人目の父親ドライバーとなる。",
-   "orig": "Babyglück: Charles Leclerc ist erstmals Vater geworden",
-   "url": "https://www.motorsport-total.com/formel-1/news/babyglueck-charles-leclerc-ist-erstmals-vater-geworden-26110409",
-   "published": "2026-11-04T13:45:00+01:00"
-  },
-  {
-   "id": "de-f1insider-verstappen-adidas-2027",
-   "kind": "rumor",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "うわさ",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-adidas-2027-rumor",
-   "title": "フェルスタッペン、2027年からアディダスのウェアか　レッドブルが供給元変更との観測",
-   "summary": "レッドブルの来季ウェア供給元がカステレからアディダスに替わる可能性があると、F1-Insider.comが伝えた。SNSに、未公開とみられる撮影でフェルスタッペンがアディダスのロゴ入りチームウェアを着た姿や、車体にロゴが見える写真が出回っているという。契約額は独タブロイド紙ビルが3月に報じた情報を引き、少なくとも3年・年約2700万ユーロ（総額8100万ユーロ以上）とされる。ただしレッドブルもアディダスも正式には確認していない。",
-   "orig": "Verstappen ab 2027 wohl mit deutscher Traditionsmarke unterwegs",
-   "url": "https://f1-insider.com/formel-1-verstappen-ab-2027-deutsche-marke-83562/",
-   "published": "2026-11-04T10:16:00+01:00"
   }
  ]
 }
