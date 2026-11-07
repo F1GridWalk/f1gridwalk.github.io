@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T18:30:00+09:00",
+ "updatedAt": "2026-11-08T00:30:00+09:00",
  "topics": {
   "antonelli-champion-2026": {
    "title": "アントネッリが最年少王者に　メキシコGPで3位、残り4戦で戴冠",
@@ -16,10 +16,6 @@
   "haas-ocon-camara-brazil": {
    "title": "ハースがオコンを今季残り戦から外す　ブラジルGPはカマラがデビュー",
    "summary": "ハースはメキシコGPの週末にチーム内の対立が伝えられたオコンを、今季のレースから外すと発表した。ブラジルGPではフェラーリ育成のカマラがベアマンと組んでF1デビューする。発端はFP2でのタイヤ選択をめぐる意見の相違と、その後の代表との口論とされるが、詳細は公式には確認されていない。カマラは来季からの起用が決まっており、昇格が前倒しになった。"
-  },
-  "ferrari-engine-2027": {
-   "title": "フェラーリのエンジン劣勢とヴァッスールの再建　2027年型に賭ける",
-   "summary": "フェラーリはSF-26のシャシーが好調な一方、ストレートでエンジン性能の遅れに苦しんでいる。ヴァッスール代表は遅れを数年前から承知していたと認め、追加開発枠ADUOの改良を2027年型パワーユニットに充てたと説明した。エンジンは公認サイクルと予算の制約で改良に時間がかかるため、巻き返しは来季以降になる見通しだ。"
   },
   "lawson-2027-seat": {
    "title": "ローソンの2027年シート　ツォロフ台頭でレーシングブルズ残留に黄信号",
@@ -56,9 +52,222 @@
   "brazil-fp2-antonelli-2026": {
    "title": "サンパウロGP金曜、アントネッリが最速　ロングランでもメルセデス優位",
    "summary": "サンパウロGPのFP2は新王者アントネッリが1分10秒763でトップ、ノリスとフェルスタッペンが続いた。ロングランでもアントネッリがラッセルを0.3秒ほど上回り、フェラーリはバランスとエネルギー配分に課題を抱えて1秒超の遅れとなった。土曜は雨の予報で、勢力図が変わる可能性がある。"
+  },
+  "herta-cadillac-seat-comment": {
+   "title": "ハータのキャデラック昇格論、ラルフ・シューマッハーが否定",
+   "summary": "キャデラックのテスト担当ハータはサンパウロGPのFP1でペレスの車を走り、スーパーライセンスに必要な最後の1ポイントを得た。これに対しラルフ・シューマッハーはSkyで、F2での成績の悪さを理由に2027年のシート獲得は現実的でないとの見方を示した。ハータはF2で19位、26ポイントで勝利も表彰台もないが、インディカでは9勝を挙げている。"
   }
  },
  "articles": [
+  {
+   "id": "ja-voice-ferrari-meeting-cold",
+   "kind": "voice",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1 Grid Walk",
+   "cat": "ファンの声",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "ハミルトンとルクレールが会談、ファンの視線は冷ややか　最悪の金曜も重なり",
+   "summary": "ハミルトンとルクレールが会談し「チーム最優先」を再確認したとのTopNewsの記事に、Yahoo!ニュースのコメント欄では冷ややかな声が目立った。メキシコでの接触の後だけに、言葉だけでは信用できないという反応が多かった。",
+   "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb",
+   "published": "2026-11-08T00:20:00+09:00",
+   "note": "和解の言葉より、次のレースでの振る舞いを見たいというのがファンの本音に見える。ブラジルの金曜で車が振るわなかったことも、不信感に拍車をかけていた。今回は日本のコメント欄のみで、海外の反応は読めていない。",
+   "voices": [
+    {
+     "side": "日本",
+     "text": "「フェラーリが最優先」 政治家の公約並みの信頼度だなw",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "笑",
+     "quote": true,
+     "comment": "ハミルトンとルクレールは木曜に会談し、「チーム最優先」を再確認した。メキシコでは1周目に接触し、ルクレールが5秒加算を受けた。",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "ルクレールは3歩で忘れるから意味無しｗ",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "メキシコの接触の後、ハミルトンはルクレールの戦い方が他のチームメイトより激しいと語っていた。会談で解決したとされるが、コメント欄は半信半疑だ。"
+    },
+    {
+     "side": "日本",
+     "text": "そしてレースでまたバトって順位落として、最悪ダブルリタイアするんですね、わかりますw",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "心配",
+     "quote": true,
+     "comment": "メキシコではフェルスタッペンが優勝し、フェラーリは1-2を逃した。同じ展開の再発を皮肉る声だ。"
+    },
+    {
+     "side": "日本",
+     "text": "結局どっちに問題があるのかは誰にもわからないけど",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "両者とも相手の戦い方を問題視する発言を重ねてきた。外から見て、どちらが悪いかは決めにくいという冷静な見方だ。"
+    },
+    {
+     "side": "日本",
+     "text": "何かいつものダメな時のフェラーリに戻りつつ有るな。 って、いつもダメか。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/2ed8601ceda4d4f301c615191496480bcc54df80/comments",
+     "mood": "笑",
+     "quote": true,
+     "comment": "ブラジルGPの金曜、フェラーリは直線でもコーナーでも遅かった。ルクレールは今季最悪レベルのフィーリングだったと話している。",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "会談の「再確認」を茶番と見る声が多数",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "否",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "ルクレールの接近戦が荒いと見る人も、ハミルトン側の姿勢を疑う人も",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "否"
+    },
+    {
+     "side": "日本",
+     "text": "ブラジルでまた接触するのでは、と心配する声",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/a35ca590548979e8bbc83d49e4c158643de87bbb/comments",
+     "mood": "心配"
+    },
+    {
+     "side": "日本",
+     "text": "車が遅いことで不満が再燃しないか、と気にする人も",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/2ed8601ceda4d4f301c615191496480bcc54df80/comments",
+     "mood": "心配"
+    }
+   ]
+  },
+  {
+   "id": "de-f1insider-leclerc-hamilton-move-on",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "ルクレール「先週は多くのことがありすぎた」　ハミルトンとの対立に区切りの姿勢",
+   "summary": "F1-Insiderによると、ルクレールはブラジルGPのFP2後、ハミルトンとの対立から前へ進みたい意向を示した。対立はメキシコGPで始まり、1コーナー付近で接触した2人はコース外へ出て、ルクレールが5秒加算のペナルティを受けた。フェルスタッペンが優勝し、フェラーリは1-2を逃している。ルクレールは「先週は明らかに多くのことがありすぎた」と述べ、2人で話して解決したと語った。バスール代表は木曜夜に両者と面談したと認めたが、記事は緊張が残るとも指摘している。",
+   "orig": "Leclerc bricht Schweigen über Hamilton-Streit",
+   "url": "https://f1-insider.com/formel-1-leclerc-bricht-schweigen-hamilton-83709/",
+   "published": "2026-11-07T15:07:00+01:00"
+  },
+  {
+   "id": "de-f1insider-schumacher-herta-no-place",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "herta-cadillac-seat-comment",
+   "title": "ラルフ・シューマッハー、ハータのF1昇格を一蹴「F1にいる資格はない」",
+   "summary": "F1-Insiderによると、スカイ解説者のラルフ・シューマッハーは、キャデラックのテスト担当コルトン・ハータ（26）のF1昇格の可能性を一蹴した。ハータがFP1でペレスの車を24周走り、スーパーライセンスに必要な最後の1ポイントを得たことを受けた発言だ。シューマッハーはF2での成績が悪く、進歩に値しないとして「F1にいる資格はない」と述べた。ハータはF2で19位、26ポイントで勝利も表彰台もない一方、インディカでは9勝し、2024年は年間2位だった。F2代表のミシェル氏も、予想以上に苦戦していると認めている。",
+   "orig": "Schumacher rechnet ab: „Der hat in der Formel 1 nichts zu suchen“",
+   "url": "https://f1-insider.com/formel-1-schumacher-rechnet-mit-fahrer-ab-83707/",
+   "published": "2026-11-07T13:47:00+01:00"
+  },
+  {
+   "id": "nl-gpblog-wolff-ferrari-escalate",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "ウォルフ、フェラーリに助言「ときには衝突が必要」　ロズベルグ時代を引き合いに",
+   "summary": "GPblogによると、メルセデスのウォルフ代表はブラジルGPの代表会見で、メキシコでのハミルトンとルクレールの衝突をめぐる質問は懐かしいと語った。2013〜2016年にハミルトンとロズベルグについて同じことを聞かれ続けたという。強い2人のドライバーは勝ちたいがゆえに「鋭い角」を持ち扱いが難しいとして、バスール代表に同情を示した。ときには深刻な接触が限界を教えることもあり、メルセデスもクラッシュを経て対立のあり方が変わったと説明した。何より大切なのはチームへの敬意だと強調している。",
+   "orig": "Wolff waarschuwt Ferrari na spanningen tussen Hamilton en Leclerc",
+   "url": "https://www.gpblog.com/nl/nieuws/wolff-trekt-opvallende-vergelijking-met-ferrari-soms-moet-het-escaleren",
+   "published": "2026-11-07T11:31:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-mol-russell-mercedes-message",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "russell-mexico-statement",
+   "title": "ラッセルの取材欠席とメルセデスの説明に疑問　オランダの解説者が指摘",
+   "summary": "F1Maximaalによると、アントネッリがメキシコGPで初タイトルを決めた後、序盤にトラブルのあったラッセルは取材エリアに立ち寄らなかった。メルセデスは王座を逃して落胆したためと説明したが、ジッゴ・スポーツのオラフ・モルはこの説明を疑問視した。長い間実質的なタイトル争いはなかったのに、僅差で敗れたかのような言い方だというのが理由だ。ラッセルは今季初めて良い日より悪い日が多いと声明で述べており、F2のファン・ホーペンは不運だが取材欠席は印象が悪いとし、プラウチェはより厳しく批判した。",
+   "orig": "Mol kraakt Mercedes-bericht over Russell: \"Alsof hij het niet haalde\"",
+   "url": "https://www.f1maximaal.nl/opinie/mol-kraakt-mercedes-bericht-over-russell-alsof-hij-het-niet-haalde",
+   "published": "2026-11-07T12:25:00+01:00"
+  },
+  {
+   "id": "en-therace-brazil-grid-penalties",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari",
+    "redbull",
+    "cadillac",
+    "mercedes"
+   ],
+   "topic": "brazil-grid-penalties",
+   "title": "ブラジルGP、グリッド降格が相次ぐ　フェラーリ2台は10、フェルスタッペンは30",
+   "summary": "The Raceによると、ブラジルGPではフェラーリのハミルトンとルクレールが新しい内燃機関の投入で10グリッド降格を受ける。ルクレールはラスベガスまで持ち越す可能性もあったが、FP3中に両者が今季5基目のICEを使うと確認された。フェルスタッペンは新ICE、排気系、ターボなどの交換で30グリッド降格となり、予選順位にかかわらず最後尾から出る。キャデラックのペレスもICE、ターボ、MGU-Kの交換で30グリッド降格だ。ラッセルは事前に公表していた5グリッド降格がすでに確定している。",
+   "orig": "Leclerc joins growing list of Brazilian GP grid peanlties",
+   "url": "https://www.the-race.com/formula-1/leclerc-joins-growing-list-of-brazilian-gp-grid-peanlties/",
+   "published": "2026-11-07T12:00:00+00:00"
+  },
+  {
+   "id": "en-therace-ferrari-worst-friday",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari",
+    "mercedes"
+   ],
+   "topic": "ferrari-brazil-friday-struggle",
+   "title": "フェラーリ、今季最悪の金曜　ハミルトンはFP2でアントネッリに0.45秒差",
+   "summary": "The Raceによると、フェラーリはブラジルGP初日に今季最悪の金曜を過ごした。FP2でハミルトンはアントネッリの基準タイムから0.450秒遅れ、ルクレールはさらに約0.3秒遅れた。スタート/フィニッシュ直線でのデプロイの問題が大きく、ロングランでもフェラーリは4番手相当だった。ルクレールはコーナーでの感触を「今季最悪に近い金曜」と表現し、バスール代表も夜通しバランスの作業が必要だと認めた。ブラジルでメルセデスに3点を超えて差をつけられると、コンストラクターズ王座がこの週末に決まる。",
+   "orig": "Hamilton set for Brazil grid penalty after Ferrari's worst 2026 Friday",
+   "url": "https://www.the-race.com/formula-1/hamilton-set-for-brazil-grid-penalty-after-ferraris-worst-2026-friday/",
+   "published": "2026-11-07T12:00:00+00:00"
+  },
   {
    "id": "de-motorsporttotal-hamilton-bitter-old-drivers",
    "kind": "news",
@@ -1597,130 +1806,6 @@
    "orig": "Verstappen ab 2027 wohl mit deutscher Traditionsmarke unterwegs",
    "url": "https://f1-insider.com/formel-1-verstappen-ab-2027-deutsche-marke-83562/",
    "published": "2026-11-04T10:16:00+01:00"
-  },
-  {
-   "id": "de-f1insider-ferrari-pressure-antonelli",
-   "kind": "rumor",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ],
-   "topic": "antonelli-ferrari-move-rumor",
-   "title": "アントネッリ戴冠でイタリア世論が割れる　エクレストン「フェラーリに選択肢はない」",
-   "summary": "アントネッリが1953年のアスカリ以来73年ぶりのイタリア人王者になり、フェラーリへの移籍を望む声が強まっているとF1-Insider.comが伝えた。ガゼッタ紙は1面で「フェラーリで走らずに済んだことも一因」と見出しを打ち、ルモンド紙はフェラーリへの忠誠とアントネッリへの熱狂の間でファンが揺れていると描写したという。95歳のエクレストンは同サイトに「フェラーリに選択肢はない、キミの心はイタリア人だ」と語った。ただし移籍の具体的な動きは伝えられておらず、あくまで観測の域を出ない。",
-   "orig": "Kimi Antonelli spaltet Italien! Jetzt wächst der Druck auf Ferrari",
-   "url": "https://f1-insider.com/formel-1-ferrari-druck-wegen-antonelli-83560/",
-   "published": "2026-11-04T09:37:00+01:00"
-  },
-  {
-   "id": "en-therace-ferrari-engine-vasseur-success",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-engine-2027",
-   "title": "フェラーリのエンジン劣勢の陰で進むシャシーの進歩　ヴァッスールの再建を検証",
-   "summary": "英The Raceのエド・ストローは、フェラーリのSF-26が高いシャシー性能を持つ一方、ストレートでエンジンの差に苦しんでいると分析した。ハンガロリンクや高地のメキシコシティなど、トラクション重視のコースではその差が縮まるという。フェラーリは追加開発枠ADUOの2回の改良を2027年型パワーユニットに充てたとされ、ヴァッスールは最初の新エンジンに約150万ドルかかると語った。シャシーの改良幅は序盤の1回約0.4秒から終盤は0.1〜0.2秒に鈍っている。ハミルトンは「100%信頼している」と述べた。",
-   "orig": "Ferrari's engine weakness hides biggest Vasseur success",
-   "url": "https://www.the-race.com/formula-1/why-ferrari-engine-weakness-hides-vasseurs-biggest-success/",
-   "published": "2026-11-04T12:00:00+00:00"
-  },
-  {
-   "id": "it-automoto-vasseur-engine-hindsight",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Automoto.it",
-   "cat": "チーム",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-engine-2027",
-   "title": "ヴァッスール「今ならほぼ全て違うやり方を」　エンジンの遅れは数年前から承知",
-   "summary": "フェラーリのヴァッスール代表はメキシコシティで取材に応じ、後から振り返れば今季はほぼ全てを違う形で進めたと語ったとイタリアのAutomoto.itが伝えた。エンジンの遅れは数年前から分かっていたといい、追加開発枠ADUOについては「やや倒錯した仕組み」と評し、6月か9月に新エンジンを入れるか2027年に集中するかの選択を迫られたと説明した。エンジンは公認サイクルと予算上限のため改良に時間がかかるとして、来季の巻き返しに期待を示した。ハミルトンの適応の難しさを過小評価していたことも認めた。",
-   "orig": "Ferrari, Vasseur: col senno del poi avrei fatto tutto in modo diverso",
-   "url": "https://www.automoto.it/formula1/ferrari-vasseur-col-senno-del-poi-avrei-fatto-tutto-in-modo-diverso-e-sul-motore-ammette-sapevamo-da-anni-di-essere-in-ritardo.html",
-   "published": "2026-11-04T12:00:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-mclaren-frontfluegel-2027",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "circuit": "interlagos",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "mclaren-brazil-update-2027",
-   "title": "マクラーレン、ブラジルで新フロントウイング　2027年型にも継承の見通し",
-   "summary": "マクラーレンはサンパウロGPでMCL40にフロントウイング、リアウイング、一部アンダーフロアを含む改良を投入すると独Motorsport-Totalが報じた。空力責任者のプロドロモウは、新しいフロントウイングの考え方を2027年型の初期仕様にも採り入れる見込みだと語った。コンストラクターズでは3位レッドブルの382点に対し4位マクラーレンは365点。直近4回の予選ではポールから平均0.511秒差の4番手の速さにとどまり、メキシコでノリスは優勝のフェルスタッペンから12秒遅れの5位だった。",
-   "orig": "Neue Frontflügel-Idee bei McLaren: Was das Brasilien-Update für 2027 bedeutet",
-   "url": "https://www.motorsport-total.com/formel-1/news/neue-frontfluegel-idee-bei-mclaren-was-das-brasilien-update-fuer-2027-bedeutet-26110402",
-   "published": "2026-11-04T07:24:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-lawson-tsolov-data",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "teams": [
-    "racingbulls",
-    "redbull"
-   ],
-   "topic": "lawson-2027-seat",
-   "title": "ローソン、F1シート危機か　データはツォロフを支持と独誌",
-   "summary": "独Motorsport-Totalは、リアム・ローソンが今季83点でランキング9位ながらレーシングブルズでの来季が不透明だと分析した。2025年にレッドブルで同僚フェルスタッペンに予選で平均1.49秒、決勝ペースで1周1.86秒及ばず、2戦で降格している。今季はリンドブラッドと予選はほぼ互角で、決勝ペースはローソンが0.14秒上回る。負傷したハジャーの代役で出た3戦では14点を挙げた。同誌はF2で2位につけるレッドブル育成のツォロフが有力で、ローソンは次の一流ドライバーではなさそうだと結論づけた。",
-   "orig": "Liam Lawson vor Formel-1-Aus? Warum die Daten für Nikola Tsolov sprechen",
-   "url": "https://www.motorsport-total.com/formel-1/news/liam-lawson-vor-formel-1-aus-warum-die-daten-fuer-nikola-tsolov-sprechen-26110403",
-   "published": "2026-11-04T08:37:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-hamilton-fia-mexico-limit",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "mexico",
-   "teams": [
-    "ferrari",
-    "mclaren"
-   ],
-   "topic": "mexico-clipping-overtaking",
-   "title": "ハミルトン「史上最悪のエンジン設定かも」　メキシコの追い越し難でFIAに対応求める",
-   "summary": "独Motorsport-Totalによると、ハミルトンとノリスはメキシコGP後、2026年規則のパワー設定を批判した。FIAは速度に応じて電気出力の支援を絞ることができ、メキシコでは高速域でゼロになり、最高速が抑えられて追い越しが難しくなったという。ハミルトンは序盤にフェルスタッペンに抜かれた後、「ここでは追い越せない」と述べ、「F1史上最悪のエンジン設定かもしれない」とFIAの調査を求めた。ノリスは2027年の小さな規則変更でも状況は変わらないと語り、ストレートモードを全員が使えば追い越しの機会は消えるとの見方も出た。",
-   "orig": "\"Überholverbot\" in Mexiko: Lewis Hamilton fordert FIA zum Handeln auf",
-   "url": "https://www.motorsport-total.com/formel-1/news/ueberholverbot-in-mexiko-lewis-hamilton-fordert-fia-zum-handeln-auf-26110311",
-   "published": "2026-11-03T17:25:00+01:00"
-  },
-  {
-   "id": "en-therace-antonelli-keeps-12",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-champion-2026",
-   "title": "王者アントネッリ、2027年も「1」を拒否　セナ縁の12番を継続",
-   "summary": "メキシコGPで史上最年少の20歳で世界王者となったアントネッリは、来季も王者の1番ではなく自身の12番を使うと英The Raceが伝えた。本人は12を「自分にとって特別な番号」と語り、地に足をつけていられるからだと説明した。迷信深いことも認め、1番はこれまでうまくいかなかったという。12はセナがロータス時代と1988年の王者の年に使った番号で、2020年カート世界選手権決勝では1番をつけて転倒し左脚を骨折した。ブラジルではセナの1991年優勝から35年を記念するトリビュートヘルメットを用意する。",
-   "orig": "Why Antonelli's rejecting #1 for 2027 F1 season",
-   "url": "https://www.the-race.com/formula-1/why-antonellis-rejecting-1-for-2027-f1-season/",
-   "published": "2026-11-02T12:00:00+00:00"
   }
  ]
 }
