@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>note用原稿：F1のステアリングは、なぜ「重く」なるのか　パワーステアリングとクラッチの決まり【DEEP GRID #45】</title>
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#F3EFE6;color:#1F2420;font-family:-apple-system,'Hiragino Sans','Noto Sans JP',sans-serif;line-height:1.8}
+.bar{position:sticky;top:0;z-index:5;background:#1F2420;color:#F3EFE6;padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar b{flex-basis:100%;font-size:13px;font-weight:600;opacity:.85}
+.bar button{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:999px;padding:8px 16px;background:#E8946C;color:#1F2420;cursor:pointer}
+.bar button.done{background:#7FC48C}
+.wrap{max-width:720px;margin:0 auto;padding:18px 16px 60px}
+.box{background:#FBF9F4;border:1px solid #DDD5C5;border-radius:14px;padding:14px 16px;margin-bottom:16px}
+.lbl{font-size:12px;font-weight:700;color:#9E4E2B;letter-spacing:.1em}
+#title{font-size:20px;font-weight:800;margin:4px 0 0}
+#tags{margin:4px 0 0}
+#body h2{font-size:20px;margin:30px 0 8px;border-left:4px solid #9E4E2B;padding-left:10px}
+#body p{margin:0 0 14px}
+#body blockquote{margin:0 0 14px;padding:4px 14px;border-left:3px solid #DDD5C5;color:#3A3E37}
+#body a{color:#1F5E8A;word-break:break-all}
+.how{font-size:13.5px}
+.how li{margin-bottom:4px}
+</style></head><body>
+<div class="bar"><b>ボタンを押してコピー → noteに貼り付け</b>
+<button data-copy="title">タイトル</button><button data-copy="body">本文</button><button data-copy="tags">ハッシュタグ</button></div>
+<div class="wrap">
+<div class="box how"><div class="lbl">使い方</div><ol>
+<li>noteで「投稿」→「テキスト」を開く</li>
+<li>見出し画像に「note_deep-power-steering-heavy_見出し画像.png」を設定</li>
+<li>上の「タイトル」を押して、noteのタイトル欄に貼り付け</li>
+<li>「本文」を押して、noteの本文に貼り付け（大見出し・太字・引用・リンクもそのまま入ります）</li>
+<li>公開設定でハッシュタグを貼り付けて公開</li>
+<li>公開したらURLをClaudeに教えてください（X紹介文を仕上げます）</li></ol>
+<p style="margin:0">※ 貼り付けたあと見出しが普通の文字になっていたら、その行を選んで「大見出し」にしてください。URLだけの行は、noteがリンクカードにしてくれます。</p></div>
+<div class="box"><div class="lbl">タイトル</div><div id="title">F1のステアリングは、なぜ「重く」なるのか　パワーステアリングとクラッチの決まり【DEEP GRID #45】</div></div>
+<div class="box"><div class="lbl">ハッシュタグ</div><div id="tags">#F1 #F1jp #パワーステアリング #ステアリング #F1のルール #フェルスタッペン #技術規則 #DEEPGRID #フォーミュラ1 #モータースポーツ #F1ニュース #海外F1 #F1好きと繋がりたい #F1GridWalk</div></div>
+<div class="box"><div class="lbl">本文</div><div id="body"><p>サンパウロGPの金曜、フェルスタッペンは重いステアリングを「workout」と言い、シフトダウンにも不満を言った。F1の車のステアリングは量産車よりはるかに重く、パワーステアリングが欠かせない。ところが、その助け方には厳しい決まりがある。電気も電子制御も使えず、ギアの変速もクラッチも、ドライバーの操作が基本だ。2026年の技術規則の条文、過去の故障の例、ドライバーの好みから、「重さ」の正体を読む。</p><p>データの表と、出典13件はサイトで → <a href="https://f1gridwalk.github.io/deep/power-steering-heavy/?utm_source=note&amp;utm_campaign=power-steering-heavy">https://f1gridwalk.github.io/deep/power-steering-heavy/?utm_source=note&amp;utm_campaign=power-steering-heavy</a></p><h2>先に結論</h2><p>① F1のステアリングは、人の力だけでは重すぎる。ホンダの技術論文（2002年）によると、当時のF1で、ステアリングを切る力は最大で350N以上、量産車の5〜10倍にあたった。パワーステアリングは、その力を減らすためにある。</p><p>② 規則は、パワーステアリングに電子制御も電気の動力も禁じ、「ステアリングを切る力を減らす」以外の働きを認めていない（技術規則 C10.5.3）。電子制御が使えないので、ソフトウェアで助け方を変えることはできない。</p><p>③ 軽ければいい、というものでもない。ホンダは、軽すぎると車の操縦性が悪くなると書いている。2011年のトゥルーリは、手応えのなさを「目隠しで運転しているよう」と嘆いた。好みはドライバーごとに違い、合わせるのに何戦もかかることがある。</p><p>④ 油圧が落ちると、ステアリングは重くなる。2019年フランスGPのノリスは、油圧の低下でステアリングが重くなり、変速も悪くなった。油圧は、ステアリングのほかにクラッチや変速、デフなども動かしているからだ（F1公式）。</p><p>⑤ 変速とクラッチにも、細かい決まりがある。自動変速は禁止で、変速は1回ずつドライバーが始め、シフトダウンは300ミリ秒以内に終える（C9.8）。クラッチは、ステアリングに付けた最大2枚のパドルでしか操作できない（C9.2）。2026年は、ラッセルによると、電気をためているときに直線でシフトダウンすることもある。</p><p><strong>F1のステアリングは、どれくらい重いと思いますか？</strong></p><h2>続きは F1 Grid Walk で</h2><p>ここから先の「「重い」は、どこから来るのか」「規則は、パワーステアリングに何を許しているのか」「軽ければいい、わけではない」「壊れたら、どうなるのか」「ステアリングの裏のパドル：クラッチと変速の決まり」は、サイトで読めます。2026年技術規則の、ステアリングとクラッチ・変速の条文、パワーステアリングにまつわる主な出来事、ホンダの電動パワーステアリングの数字（2002年の論文）、ステアリングの移り変わりの表も載せています。</p><p><strong>DEEP GRID #45「F1のステアリングは、なぜ「重く」なるのか　パワーステアリングとクラッチの決まり」</strong></p><p><a href="https://f1gridwalk.github.io/deep/power-steering-heavy/">https://f1gridwalk.github.io/deep/power-steering-heavy/</a></p><p>━━━━━━━━━━</p><p><strong>F1 Grid Walk では、世界のF1ニュースを毎日日本語でまとめています。</strong></p><p>海外の記事の要約を、毎日載せています。</p><p>ほかの海外記事も読みたい方は、F1 Grid Walkへ。</p><p><a href="https://f1gridwalk.github.io/">https://f1gridwalk.github.io/</a></p><p>━━━━━━━━━━</p><p><a href="https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_21_-_2026-10-19.pdf">出典：FIA</a></p><p><a href="https://global.honda/jp/technical-review/PDF/014-2/014-2_45.pdf">出典：Honda R&amp;D Technical Review</a></p><p><a href="https://www.motorsport.com/f1/news/explained-whats-behind-ferrari-f1s-mysterious-high-speed-handling-anomaly/10740562/">出典：Motorsport.com</a></p><p><a href="https://www.autosport.com/f1/news/152802/no-safety-concerns-with-hamilton-loose-steering">出典：Autosport</a></p><p><a href="https://www.autosport.com/f1/news/92509/trulli-frustrated-by-steering-issues">出典：Autosport</a></p><p><a href="https://www.autosport.com/f1/news/95065/trulli-forced-to-use-old-power-steering">出典：Autosport</a></p><p><a href="https://f1technical.net/news/17169">出典：F1technical.net</a></p><p><a href="https://www.autosport.com/f1/news/98240/raikkonen-seeks-steering-improvements">出典：Autosport</a></p><p><a href="https://www.autosport.com/f1/news/59045/bmw-to-debut-power-steering-system">出典：Autosport</a></p><p><a href="https://www.formula1.com/en/latest/article/jolyon-palmers-analysis-how-lando-norris-managed-a-car-with-hydraulic.229dYZv6iIkprNjbVcszGl">出典：Formula1.com</a></p><p><a href="https://motorsportweek.com/2023/08/27/power-steering-failure-triggered-sargeants-accident/">出典：Motorsport Week</a></p><p><a href="https://www.autosport.com/f1/news/f1-steering-wheels-how-they-work-what-the-buttons-do-and-more/10556327/">出典：Autosport</a></p><p><a href="https://www.autosport.com/f1/news/how-fears-on-f1s-new-rules-have-been-soothed-despite-downshifting-on-straights-and-lift-and-coast/10794739/">出典：Autosport</a></p></div></div>
+</div>
+<script>
+function copyEl(el, btn){
+  var ok=false;
+  try{ var r=document.createRange(); r.selectNodeContents(el); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); ok=document.execCommand('copy'); s.removeAllRanges(); }catch(e){}
+  if(!ok && navigator.clipboard){ navigator.clipboard.writeText(el.innerText); ok=true; }
+  var t=btn.textContent; btn.textContent=ok?'コピーしました':'長押しで選択してコピーしてください'; btn.classList.add('done');
+  setTimeout(function(){ btn.textContent=t; btn.classList.remove('done'); },1600);
+}
+document.querySelectorAll('[data-copy]').forEach(function(b){ b.addEventListener('click',function(){ copyEl(document.getElementById(b.getAttribute('data-copy')), b); }); });
+</script></body></html>
