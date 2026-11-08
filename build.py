@@ -210,8 +210,24 @@ def bottom_tabs(canonical):
 BASE_CSS_V = ''  # version of assets/base.css, set in main() once FLAGS is known (owner's OK, 23 Oct 2026)
 
 
+# Google「優先ソース」ボタン at the end of news, columns, DEEP and STORY pages (owner, 8 Nov 2026).
+# Official code from developers.google.com/search/docs/appearance/preferred-sources; the plain link is the fallback.
+PS_RE = re.compile(re.escape(SITE) + r'/(news|lens|deep|topics)/(?!rules/)[^/]+/$')
+PS_HTML = ('<aside class="ps"><p class="ps-k">GOOGLE</p>'
+           '<p class="ps-t">Google のトップニュースで、F1グリッドウォークの記事を見つけやすくするには、「優先ソース」に追加してください。</p>'
+           '<div google-add-preferred-source-btn data-lang="ja"></div>'
+           '<p class="ps-l"><a href="https://www.google.com/preferences/source?q=f1gridwalk.github.io" target="_blank" rel="noopener" data-track="click/preferred-source">ボタンが出ないときは、こちらから追加 →</a></p>'
+           '<script async src="https://news.google.com/swg/js/v1/publisher.js"></script>'
+           '<style>.ps{margin:28px 0 8px;padding:16px 18px;border:1px solid #ddd8cc;border-radius:14px;background:#fbfaf6}'
+           '.ps-k{margin:0;font-size:11px;letter-spacing:.14em;color:#8a8577;font-weight:700}'
+           '.ps-t{margin:4px 0 12px;font-size:14px;line-height:1.7}.ps-l{margin:10px 0 0;font-size:12.5px}'
+           '.ps-l a{color:#6b6659}</style></aside>')
+
+
 def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
     og = og_image or OG_IMAGE
+    if PS_RE.match(canonical or '') and not re.search(r'/page\d+/$', canonical):
+        body = body + PS_HTML
     return f'''<!doctype html>
 <html lang="ja">
 <head>
