@@ -212,6 +212,8 @@ BASE_CSS_V = ''  # version of assets/base.css, set in main() once FLAGS is known
 
 # Google「優先ソース」ボタン at the end of news, columns, DEEP and STORY pages (owner, 8 Nov 2026).
 # Official code from developers.google.com/search/docs/appearance/preferred-sources; the plain link is the fallback.
+# Off until f1gridwalk.github.io appears in google.com/preferences/source (owner, 8 Nov 2026: 「一致する結果はありません」).
+PS_ON = False
 PS_RE = re.compile(re.escape(SITE) + r'/(news|lens|deep|topics)/(?!rules/)[^/]+/$')
 PS_HTML = ('<aside class="ps"><p class="ps-k">GOOGLE</p>'
            '<p class="ps-t">Google のトップニュースで、F1グリッドウォークの記事を見つけやすくするには、「優先ソース」に追加してください。</p>'
@@ -226,7 +228,7 @@ PS_HTML = ('<aside class="ps"><p class="ps-k">GOOGLE</p>'
 
 def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
     og = og_image or OG_IMAGE
-    if PS_RE.match(canonical or '') and not re.search(r'/page\d+/$', canonical):
+    if PS_ON and PS_RE.match(canonical or '') and not re.search(r'/page\d+/$', canonical):
         body = body + PS_HTML
     return f'''<!doctype html>
 <html lang="ja">
