@@ -1,64 +1,64 @@
 {
- "updatedAt": "2026-11-08T06:30:00+09:00",
+ "updatedAt": "2026-11-09T06:30:00+09:00",
  "season": 2026,
  "standingsAfter": {
-  "round": 19,
-  "gp": "メキシコシティGP"
+  "round": 20,
+  "gp": "サンパウロGP"
  },
  "drivers": [
   {
    "pos": 1,
    "name": "アントネッリ",
    "team": "mercedes",
-   "pts": 380
+   "pts": 390
   },
   {
    "pos": 2,
    "name": "フェルスタッペン",
    "team": "redbull",
-   "pts": 261
+   "pts": 279
   },
   {
    "pos": 3,
-   "name": "ハミルトン",
-   "team": "ferrari",
-   "pts": 259
+   "name": "ラッセル",
+   "team": "mercedes",
+   "pts": 262
   },
   {
    "pos": 4,
-   "name": "ラッセル",
-   "team": "mercedes",
-   "pts": 250
+   "name": "ハミルトン",
+   "team": "ferrari",
+   "pts": 261
   },
   {
    "pos": 5,
    "name": "ルクレール",
    "team": "ferrari",
-   "pts": 245
+   "pts": 251
   },
   {
    "pos": 6,
    "name": "ノリス",
    "team": "mclaren",
-   "pts": 221
+   "pts": 246
   },
   {
    "pos": 7,
    "name": "ピアストリ",
    "team": "mclaren",
-   "pts": 144
+   "pts": 152
   },
   {
    "pos": 8,
    "name": "ハジャー",
    "team": "redbull",
-   "pts": 107
+   "pts": 122
   },
   {
    "pos": 9,
    "name": "ローソン",
    "team": "racingbulls",
-   "pts": 83
+   "pts": 87
   },
   {
    "pos": 10,
@@ -71,27 +71,27 @@
   {
    "pos": 1,
    "team": "mercedes",
-   "pts": 630
+   "pts": 652
   },
   {
    "pos": 2,
    "team": "ferrari",
-   "pts": 504
+   "pts": 512
   },
   {
    "pos": 3,
    "team": "redbull",
-   "pts": 382
+   "pts": 415
   },
   {
    "pos": 4,
    "team": "mclaren",
-   "pts": 365
+   "pts": 390
   },
   {
    "pos": 5,
    "team": "racingbulls",
-   "pts": 108
+   "pts": 112
   },
   {
    "pos": 6,
@@ -106,7 +106,7 @@
   {
    "pos": 8,
    "team": "audi",
-   "pts": 27
+   "pts": 28
   },
   {
    "pos": 9,
@@ -125,37 +125,36 @@
   }
  ],
  "weekend": {
-  "round": 20,
-  "gp": "サンパウロGP",
-  "circuit": "interlagos",
-  "laps": 71,
-  "lengthKm": 4.309,
+  "round": 21,
+  "gp": "ラスベガスGP",
+  "circuit": "lasvegas",
+  "laps": 50,
+  "lengthKm": 6.201,
   "sessions": [
    {
     "name": "フリー走行1",
-    "start": "2026-11-06T15:30:00Z",
-    "end": "2026-11-06T16:30:00Z"
+    "start": "2026-11-20T00:30:00Z",
+    "end": "2026-11-20T01:30:00Z"
    },
    {
     "name": "フリー走行2",
-    "start": "2026-11-06T19:00:00Z",
-    "end": "2026-11-06T20:00:00Z"
+    "start": "2026-11-20T04:00:00Z",
+    "end": "2026-11-20T05:00:00Z"
    },
    {
     "name": "フリー走行3",
-    "start": "2026-11-07T14:30:00Z",
-    "end": "2026-11-07T15:30:00Z"
+    "start": "2026-11-21T00:30:00Z",
+    "end": "2026-11-21T01:30:00Z"
    },
    {
     "name": "予選",
-    "start": "2026-11-07T18:00:00Z",
-    "end": "2026-11-07T19:00:00Z",
-    "result": "ポール: ノリス"
+    "start": "2026-11-21T04:00:00Z",
+    "end": "2026-11-21T05:00:00Z"
    },
    {
     "name": "決勝",
-    "start": "2026-11-08T17:00:00Z",
-    "end": "2026-11-08T19:00:00Z"
+    "start": "2026-11-22T04:00:00Z",
+    "end": "2026-11-22T06:00:00Z"
    }
   ]
  },
@@ -311,7 +310,8 @@
    "round": 20,
    "gp": "サンパウロGP",
    "circuit": "interlagos",
-   "date": "2026-11-08"
+   "date": "2026-11-08",
+   "winner": "ノリス"
   },
   {
    "round": 21,
