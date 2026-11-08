@@ -1,0 +1,332 @@
+{
+ "slug": "russell-that-was-a-p1-lap",
+ "gp": "サンパウロGP",
+ "title": "「あれはP1のラップだった」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "豪雨で1時間24分止まった予選のQ3。ラッセルは2周目のアタックの途中でアルボンに追いつき、「下げろ」と言われ、次の周に雨が来た。ノリスに0.204秒差の2番手。「P2になりたいんじゃない。あれはP1のラップだった」。マシンを降りると、「僕のエンジニアのせいじゃない。誰かを指さすことはできない」。タイトルを失った1週間後の、7番グリッド。",
+ "checked": "2026-11-08",
+ "checkedNote": "Crash.net、Autosport、The Race、ESPN、Sky Sports、RacingNews365、PlanetF1 の原文を11月8日に確認しました。無線と本人の言葉は英語から編集部が訳し、無線の罵り言葉は省きました。ノリスのポールタイム1分27秒470は複数の日本語の要約にありますが、英語の原文では0.204秒差の形で確認しています。「木曜日の取材を欠席した」とする見方がありますが、欠席したのはメキシコの決勝後で、木曜日には取材に応じています。",
+ "common": [
+  "Q3の2周目、ラッセルは2区間まで全体最速（ノリスより18ミリ秒速い）でアルボンに追いつき、チームの指示でラップを中断。次の周に雨が強まり、ノリスがポール、ラッセルは0.204秒差の2番手。",
+  "無線「あれはP1のラップだった」。降りてからは「意思疎通の行き違い」「エンジニアのせいじゃない、12人が話しかけている」「全員で判断を誤った」「誰かを指さすことはできない」。",
+  "ウォルフ「五分五分」「ポールには足りなかったと思うが、ポールに値した」「別格」。",
+  "5グリッド降格（今季2回目のエンジン交換）で7番グリッド。メルセデスはフェラーリより3点以上多く取ればコンストラクターズ決定。「明日は雨であってほしい」。"
+ ],
+ "outlets": [
+  {
+   "id": "en-therace-norris-pole-russell-rages",
+   "angle": "予選",
+   "adds": [
+    "ノリスのポール、ラッセルの怒り、1時間25分の中断。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-russell-rages-norris-pole",
+   "angle": "無線",
+   "adds": [
+    "「あれは間違いなくポールのラップだった」、5グリッド降格で7番手。"
+   ]
+  },
+  {
+   "id": "nl-racingnews365-wolff-defends-russell-lap",
+   "angle": "ウォルフ",
+   "adds": [
+    "「あのラップでもポールには届かなかった」、ノリスへの称賛。"
+   ]
+  },
+  {
+   "id": "en-therace-brazil-wet-race-horrific-incident",
+   "angle": "雨",
+   "adds": [
+    "「恐ろしい事故」の警鐘。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "無線「下げるのか、行くのか」「あれはP1のラップだった」",
+   "w": "Crash.net、Autosport（11月7日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「僕のエンジニアのせいじゃない」「12人」「誰かを指さすことはできない」",
+   "w": "Crash.net、ESPN（11月7日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "ウォルフ「水晶玉」「五分五分」「別格」",
+   "w": "Autosport、ESPN（11月7日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ウォルフの言葉",
+   "t": "「宝くじのよう」「別次元」と訳す要約があるが、英語の原文で確認できたのは「五分五分」「別格（a league of his own）」。"
+  },
+  {
+   "k": "無線の言い回し",
+   "t": "「ペースを落とせと言ったじゃないか」とする要約があるが、原文は「君が下げろと言ったんだ」の意味で、言ったのはチーム側。"
+  }
+ ],
+ "unknownsFillable": [
+  "決勝の結果。",
+  "メルセデスのコンストラクターズ決定の可否。"
+ ],
+ "unknownsLimits": [
+  "中断しなかった場合に本当にポールだったか（3区間目にアルボンがいた）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "怒りは、誰に向いていたのか？",
+  "rows": [
+   {
+    "k": "無線",
+    "t": "瞬間の怒りはチームの判断に。「君が下げろと言った」。"
+   },
+   {
+    "k": "降りてから",
+    "t": "「エンジニアのせいじゃない」「全員で誤った」「指さすことはできない」。矛先を自分たち全員に戻した。"
+   },
+   {
+    "k": "背景",
+    "t": "1週間前にタイトルを失い、取材に出ずに帰った。その直後の週末で、今度は最後まで話した。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "メキシコでラッセルに何があった？",
+   "rules": [
+    "race-engineer"
+   ],
+   "links": [
+    "/topics/russell-more-bad-days-than-good/"
+   ]
+  },
+  {
+   "q": "ハジャーとの接触は、どう見られている？",
+   "rules": [
+    "stewards"
+   ],
+   "links": [
+    "/topics/hadjar-dream-to-race-him/"
+   ]
+  },
+  {
+   "q": "グリッド降格は、どう決まる？",
+   "rules": [
+    "grid-penalty",
+    "power-unit-allocation"
+   ]
+  },
+  {
+   "q": "雨の予選と決勝、何が危ない？",
+   "rules": [
+    "rain-hazard",
+    "wet-race-declared",
+    "intermediate",
+    "full-wet"
+   ]
+  }
+ ],
+ "todo": [
+  "決勝の結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-07T16:45:00-03:00",
+   "t": "Q3でラップを中断、ノリスに0.204秒差の2番手"
+  },
+  {
+   "at": "2026-11-08T21:00:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "11月7日のサンパウロGP予選Q3、ラッセルは2周目のアタックで2区間まで全体最速（ノリスより18ミリ秒速い）だったが、アルボンに追いつき、チームの「下げろ」でラップを中断。次の周に雨が強まり、ノリスがポール、ラッセルは0.204秒差の2番手。無線で「あれはP1のラップだった」と怒ったが、降りてからは「意思疎通の行き違い」「僕のエンジニアのせいじゃない。彼には12人が話しかけている」「全員で判断を誤った」「誰かを指さすことはできない」。ウォルフは「五分五分」「ポールには足りなかったと思うが、別格だった」。エンジン交換の5グリッド降格で7番グリッド。「明日は雨であってほしい」。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "豪雨のQ3、2周目のアタックの途中で「下げろ」と言われ、次の周に雨が来た。「あれはP1のラップだった」。マシンを降りると、「僕のエンジニアのせいじゃない。彼には12人が話しかけている」。タイトルを失った1週間後の、7番グリッド。",
+  "body": [
+   [
+    "h",
+    "「あれはP1のラップだった」"
+   ],
+   [
+    "p",
+    "11月7日、土曜日のインテルラゴス。豪雨で1時間24分止まった予選のQ3で、ジョージ・ラッセルは2周目のアタックの途中にいた。前にアルボンが見えた。「どけ、アルボン！」。"
+   ],
+   [
+    "p",
+    "ピットからの声。「もう1周、行けるはずだ」。ラッセル、「何をするのか言ってくれ。下げるのか、行くのか」。「下げていい。いま下げろ」。「本当に？」。「雨が強くなってきた。ピットレーンは本降りだ」。"
+   ],
+   [
+    "p",
+    "ラッセルは、ラップを捨てた。次の周、雨は本当に強くなった。ノリスがポール。ラッセルは0.204秒差の2番手。無線に、ウォルフ代表の声が入った。「ジョージ、P2だ」。「分かってる。でもP2だ。P2になりたいんじゃない。P1になりたいんだ。あれはP1のラップだった」。"
+   ],
+   [
+    "h",
+    "18ミリ秒"
+   ],
+   [
+    "p",
+    "Q3の1周目、ラッセルは暫定トップだった。レースエンジニアのマーカス・ダドリーは、「行けるなら押せ。この雨の前に、もう1周いけると思う」。2周目、ラッセルは最初の2つの区間で全体最速で、その時点でノリスより18ミリ秒、つまり0.018秒速かった。そこでアルボンに追いついた。"
+   ],
+   [
+    "p",
+    "ウォルフ代表は、あとでこう話した。「下げるべきかどうか分かる水晶玉があれば、助かったんだが」。「難しい判断で、五分五分だった。あの判断は、50%の確率で正しくて、50%で間違う」。「彼はアルボンに追いついていた。あの時点でノリスより18ミリ秒速かった」。"
+   ],
+   [
+    "p",
+    "そのうえで、言った。「ポールには足りなかったと思う。でも彼はセッションを通して完璧に走ったし、ポールに値した」。「今日のジョージは、別格だった」。"
+   ],
+   [
+    "h",
+    "「僕のエンジニアのせいじゃない」"
+   ],
+   [
+    "p",
+    "マシンを降りたラッセルは、無線のときより静かだった。「ちょっとした、意思疎通の行き違いだったと思う」。「雨が来る前にもう1周できると、僕らは信じていた」。「本当にいいラップの途中で、アルボンに追いついたから下げろと言われた」。「ポールは取れるところにあったと、はっきり感じていた」。"
+   ],
+   [
+    "p",
+    "「判断が下された瞬間に、それが間違いだったと僕らは分かったと思う」。「彼らの目の前には天気予報があって、僕にはない」。"
+   ],
+   [
+    "p",
+    "そして、こう続けた。「僕のエンジニアのせいじゃない。彼には12人が話しかけていて、その情報を僕に伝えている」。「今日は、僕らが全員で判断を誤った」。「誰かを指さすことはできない。僕のチームには、いまの僕と同じくらい嫌な気持ちでいる人たちがいる」。"
+   ],
+   [
+    "h",
+    "1週間前"
+   ],
+   [
+    "p",
+    "1週間前のメキシコで、ラッセルはタイトルを失った。最前列から出て、1周目のストレートで電気が止まり、ハジャーと接触し、6位。チームメイトのアントネッリが史上最年少の王者になった日、ラッセルは取材に出ずにサーキットを去り、チームは5,000ユーロの罰金を受けた。翌日、「いい日より悪い日が多かった初めての年」と書いた。"
+   ],
+   [
+    "p",
+    "木曜日のインテルラゴスが、その後の初めての取材だった。「勝てなかったことを、ただ運のせいにして、世間知らずでいないことも大事だ」。「全体として、僕らが望んだ年ではなかった」。"
+   ],
+   [
+    "p",
+    "イギリスの元ドライバーの解説者は、メキシコの件をこう見た。「彼を責めるな」。「これがジョージを壊すかもしれない。でも私は、これが彼を作ると思う」。"
+   ],
+   [
+    "h",
+    "7番グリッド"
+   ],
+   [
+    "p",
+    "2番手のタイムは、グリッドでは7番手になる。今季2回目のエンジン交換の、5グリッド降格が決まっていた。それでも、ラッセルは2周目に出て、ポールのラップを追いかけた。"
+   ],
+   [
+    "p",
+    "インテルラゴスは、2022年にラッセルが初めて勝ったコースだ。メルセデスは日曜日、フェラーリより3点以上多く取れば、コンストラクターズのタイトルが決まる。"
+   ],
+   [
+    "p",
+    "予選の雨について、ラッセルは「あんな中で走るべきではなかった」「本当にひどい事故が起きる可能性が、とても高かった」と言っている。それとは別に、決勝については、こう言った。「ドライよりウェットのほうが、自信があった」。「明日は雨であってほしい。雨なら、僕のチャンスは大きくなると思う」。"
+   ],
+   [
+    "p",
+    "日本時間の月曜日、午前2時。7番グリッドに、P1のラップを走ったと信じている人がいる。"
+   ]
+  ],
+  "terms": [
+   [
+    "レースエンジニア",
+    "race-engineer"
+   ],
+   [
+    "インターミディエイト",
+    "intermediate"
+   ],
+   [
+    "グリッド降格",
+    "grid-penalty"
+   ],
+   [
+    "雨のリスク",
+    "rain-hazard"
+   ],
+   [
+    "コンストラクターズ",
+    "constructors-championship"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Crash.net",
+    "title": "George Russell explains 'miscommunication' behind Brazil GP qualifying radio rage",
+    "url": "https://www.crash.net/f1/news/1109823/1/george-russell-explains-miscommunication-behind-brazil-gp-qualifying-radio-rage",
+    "note": "2026年11月7日。無線の全文、「意思疎通の行き違い」「僕のエンジニアのせいじゃない」「12人」「誰かを指さすことはできない」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Autosport",
+    "title": "Why Russell was so angry in Brazilian GP qualifying despite already having a grid penalty",
+    "url": "https://www.autosport.com/f1/news/why-russell-was-so-angry-in-brazilian-gp-qualifying-despite-already-having-a-grid-penalty/10872788/",
+    "note": "2026年11月7日。ダドリー「もう1周いけると思う」、18ミリ秒、ウォルフ「水晶玉」「五分五分」「別格」「明日は雨であってほしい」。"
+   },
+   {
+    "name": "The Race",
+    "title": "Norris on Brazilian GP pole as Russell rages at Mercedes over aborted lap",
+    "url": "https://www.the-race.com/formula-1/norris-on-brazilian-gp-pole-as-russell-rages-at-mercedes-over-aborted-lap/",
+    "note": "2026年11月7日。0.204秒差、1時間24分の中断。"
+   },
+   {
+    "name": "ESPN",
+    "title": "Russell: Pole was there for the taking in São Paulo",
+    "url": "https://www.espn.com/f1/story/_/id/50389062/george-russell-pole-sao-paulo-grand-prix-brazil-formula-1",
+    "note": "2026年11月7日。「天気予報は彼らの目の前にあって、僕にはない」、ウォルフ「ポールには足りなかったと思う」。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Sao Paulo GP grid penalties: Hamilton, Verstappen, Leclerc to drop down Interlagos grid",
+    "url": "https://www.skysports.com/f1/news/13609202/",
+    "note": "2026年11月7日。ラッセル5グリッド降格（今季2回目のエンジン交換）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Sao Paulo GP starting grid heavily adjusted after severe Hamilton, Verstappen penalties",
+    "url": "https://racingnews365.com/sao-paulo-gp-starting-grid-heavily-adjusted-after-severe-lewis-hamilton-max-verstappen-penalties",
+    "note": "暫定グリッド、ラッセル7番手。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "FIA fine Mercedes after Russell leaves Mexican GP without media duties",
+    "url": "https://www.planetf1.com/news/fia-george-russell-fine-f1-2026-mexican-grand-prix-mercedes",
+    "note": "2026年11月2日。5,000ユーロの罰金。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Brundle on Russell: It will make him",
+    "url": "https://www.planetf1.com/news/george-russell-fia-fines-mercedes-f1-2026-mexican-grand-prix-martin-brundle",
+    "note": "2026年11月。「彼を責めるな」「これが彼を作ると思う」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "The Race",
+    "title": "What we learned from day one of F1's Brazilian Grand Prix",
+    "url": "https://www.the-race.com/formula-1/what-we-learned-from-day-one-of-f1s-brazilian-grand-prix/",
+    "note": "2026年11月6日。木曜日「運のせいにして世間知らずでいないことも大事」「望んだ年ではなかった」。"
+   },
+   {
+    "name": "The Race",
+    "title": "Why F1 risks 'horrific incident' if Brazilian GP risks are repeated",
+    "url": "https://www.the-race.com/formula-1/why-f1-risks-horrific-incident-if-brazilian-gp-risks-are-repeated/",
+    "note": "2026年11月8日。「あんな中で走るべきではなかった」「本当にひどい事故」。"
+   },
+   {
+    "name": "Autosport",
+    "title": "How Mercedes can win the F1 world constructors title in Brazil",
+    "url": "https://www.autosport.com/f1/news/how-mercedes-can-win-the-f1-world-constructors-title-in-brazil/10871661/",
+    "note": "フェラーリより3点以上多く取れば決定。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Toto Wolff confirms George Russell to remain at Mercedes",
+    "url": "https://www.crash.net/f1/news/1099613/1/toto-wolff-confirms-george-russell-remain-mercedes-max-verstappen-radar",
+    "note": "2026年6月27日。契約は2027年末まで。"
+   }
+  ]
+ }
+}
