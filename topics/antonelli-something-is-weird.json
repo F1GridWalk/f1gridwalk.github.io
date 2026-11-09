@@ -1,0 +1,330 @@
+{
+ "slug": "antonelli-something-is-weird",
+ "gp": "サンパウロGP",
+ "title": "「何かがおかしい」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "王者として最初のレース。偵察ラップでスピンし、スタートで先頭に立ち、18周目に「何かがおかしい」と無線に入れ、1コーナーで2度スピンして5位。「とても腹が立っている。でも、いまは脇に置く。チームがタイトルを決めたから」。メルセデスは9度目。セナの黄色いヘルメットの週末。",
+ "checked": "2026-11-09",
+ "checkedNote": "Formula1.com、PlanetF1、RacingNews365、GRANDPRIX247、Sky Sports、Crash.net、FIA、GPblog の原文を11月9日に確認しました。本人と関係者の言葉は英語から編集部が訳しました。2度目にコースを外れた周は「23周目」と「24周目」で記事が割れていて、本文はF1公式の23周目に合わせています。「チームに謝った」とする記述は原文で確認できず、入れていません。",
+ "common": [
+  "偵察ラップで12コーナー出口でスピン（損傷なし）。スタートで先頭、8秒以上リード。17周目終わりにスリック、18周目「何かがおかしい」「片側に引っ張られる」、20周目1コーナーでスピン、23周目にも外へ。53周目ソフト、終盤のピットでアンセーフリリース（5秒加算）、5位。",
+  "「とてもがっかりしている。とても腹が立っている。でも脇に置く。チームがタイトルを決めたし、それに値する」「前触れも何もなかった」「勝てるレースだった」。ショブリンは「普通ではないバランス」を調査、ラッセルも同様の報告。",
+  "メルセデスは9度目のコンストラクターズ（2014〜21年の8連覇以来）、ウィリアムズと並ぶ。ウォルフ「祝っていない。何が悪かったのかばかり考えている」「2,500人のスーパースター」。",
+  "セナへの黄色いヘルメット、セナ家訪問、ロータス98T。来年も12番。アントネッリ390点、残り3戦。"
+ ],
+ "outlets": [
+  {
+   "id": "en-f1com-sao-paulo-norris-wins-mercedes-title",
+   "angle": "決勝",
+   "adds": [
+    "偵察ラップのスピン、2度のスピン、コンストラクターズ決定。"
+   ]
+  },
+  {
+   "id": "de-motorsportmagazin-brasilien-norris-wins-verstappen-show",
+   "angle": "ドイツ",
+   "adds": [
+    "「メルセデスの自滅」。"
+   ]
+  },
+  {
+   "id": "de-motorsportmagazin-mercedes-constructors-title-scenarios",
+   "angle": "条件",
+   "adds": [
+    "フェラーリに3点差で確定。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「何かがおかしい」「片側に引っ張られる」「走れない」",
+   "w": "Formula1.com、PlanetF1（11月8日、英語の無線）を編集部が訳した。"
+  },
+  {
+   "t": "「とても腹が立っている。でも脇に置く」「前触れも何もなかった」",
+   "w": "RacingNews365（11月8日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "ウォルフ「私は祝っていない」「2,500人」",
+   "w": "Formula1.com、Sky Sports（11月8日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "2度目にコースを外れた周",
+   "t": "23周目（F1公式）と24周目（RacingNews365）。本文は23周目。"
+  },
+  {
+   "k": "ソフトに替えた周",
+   "t": "53周目（F1公式）と54周目（実況）。本文は53周目。"
+  }
+ ],
+ "unknownsFillable": [
+  "バランス異常の原因（チームが調査中）。",
+  "ラスベガスの結果。"
+ ],
+ "unknownsLimits": [
+  "スピンの原因が本人の操作かマシンか。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "何が「おかしかった」のか？",
+  "rows": [
+   {
+    "k": "本人",
+    "t": "「片側に引っ張られる」「前触れなくリアを失った」。マシン側の異常を疑っている。"
+   },
+   {
+    "k": "チーム",
+    "t": "エンジニアは無線で「問題はない」と伝えた。レース後、ショブリンは「普通ではないバランス」を調べると言い、ラッセルも似た報告をしていた。"
+   },
+   {
+    "k": "条件",
+    "t": "スリックに替えた直後の、まだ半分濡れた路面。タイヤの温度が難しく、ラッセルもピット出口でスピンした。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "セナのヘルメットの話は、どこから始まった？",
+   "rules": [
+    "home-race"
+   ],
+   "links": [
+    "/topics/antonelli-helmet-for-ayrton/"
+   ]
+  },
+  {
+   "q": "メキシコでタイトルを決めた日は？",
+   "rules": [
+    "constructors-championship"
+   ],
+   "links": [
+    "/topics/antonelli-champion-of-the-world/"
+   ]
+  },
+  {
+   "q": "ラッセルの土曜日と日曜日は？",
+   "rules": [
+    "race-engineer"
+   ],
+   "links": [
+    "/topics/russell-that-was-a-p1-lap/"
+   ]
+  },
+  {
+   "q": "アンセーフリリースとは？",
+   "rules": [
+    "unsafe-release"
+   ]
+  }
+ ],
+ "todo": [
+  "バランス異常の原因が分かったら追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-08T15:30:00-03:00",
+   "t": "18周目「何かがおかしい」、20周目スピン"
+  },
+  {
+   "at": "2026-11-09T11:30:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "アントネッリは王者として最初のレースで、偵察ラップにスピンし、スタートで先頭に立ち、17周目終わりのスリック交換のあと18周目に「何かがおかしい」「片側に引っ張られる」と無線に入れ、20周目と23周目に1コーナーで止まれず、終盤のアンセーフリリースで5秒加算、5位。「とても腹が立っている。でも脇に置く。チームがタイトルを決めたし、それに値する」。メルセデスは9度目のコンストラクターズでウィリアムズと並び、ウォルフは「祝っていない」「2,500人のスーパースター」。セナの黄色いヘルメットをかぶり、セナ家を訪ねた週末だった。390点、残り3戦。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "王者として最初のレース。先頭で「何かがおかしい」と無線に入れ、1コーナーで2度スピンして5位。「とても腹が立っている。でも脇に置く。チームがタイトルを決めたから」。メルセデス9度目。黄色いヘルメットの週末。",
+  "body": [
+   [
+    "h",
+    "「何かがおかしい」"
+   ],
+   [
+    "p",
+    "11月8日、日曜日のインテルラゴス。18周目、先頭を走るキミ・アントネッリの無線に、こう入った。「何かが、クルマがおかしい」。「加速すると、片側に引っ張られる」。"
+   ],
+   [
+    "p",
+    "チャンピオンになって最初のレースだった。スタートで1コーナーの内側からノリスを抜いて先頭に立ち、一時は8秒以上の差をつけていた。ノリスより1周遅く、17周目の終わりにスリックに替えて、それでも先頭のまま戻ってきた。その直後だった。"
+   ],
+   [
+    "p",
+    "20周目、1コーナーでスピン。ノリスが前に出た。23周目、また1コーナーで止まりきれず、外に出た。レースエンジニアのボニントンは、クルマに問題はない、集中し直せと伝えた。"
+   ],
+   [
+    "h",
+    "偵察ラップ"
+   ],
+   [
+    "p",
+    "この日の最初のスピンは、レースの前にあった。グリッドに向かう偵察ラップで12コーナーの出口で膨らみ、濡れた芝でスピンした。無線は「走れない」。ガレージに戻って点検を受け、損傷はなかった。"
+   ],
+   [
+    "p",
+    "そこから、スタートで先頭に立った。土曜日の予選は3番手で、ラッセルの降格で2番グリッド。週末を通して速く、金曜日のFP2は最速だった。"
+   ],
+   [
+    "h",
+    "「とても腹が立っている。でも、脇に置く」"
+   ],
+   [
+    "p",
+    "レースのあとの言葉は、率直だった。「今日の自分のレースには、とてもがっかりしている。正直に言えば、とても腹が立っている。でも、いまはそれを脇に置く。チームがタイトルを決めたし、チームはそれに値するから」。"
+   ],
+   [
+    "p",
+    "「なぜあんなに早くリアを失ったのか分からない。前触れも何もなかった」。「クルマに何か変なものを感じた。何が起きたのか、確かめないといけない」。「この素晴らしい観客の前で、ブラジルで本当に勝ちたかった」。「勝てるレースだった」。"
+   ],
+   [
+    "p",
+    "チームの技術責任者ショブリンは、スリックに替えたあとの「普通ではないバランス」を調べる必要があると言い、ラッセルも似た症状を報告していたと明かした。アントネッリは53周目にソフトに替え、57周目にラッセルが道を空け、終盤にインターミディエイトへ替えるピットストップで、アルピーヌの前に出してしまって5秒のペナルティ。5位。"
+   ],
+   [
+    "h",
+    "9度目"
+   ],
+   [
+    "p",
+    "表彰台はなかった。それでもラッセルの4位とアントネッリの5位で、メルセデスは9度目のコンストラクターズのタイトルを決めた。2014年から8連覇したあと、初めてのタイトル。ウィリアムズと並ぶ数になった。"
+   ],
+   [
+    "p",
+    "ウォルフ代表は、こう言った。「私は祝っていない。『このレースで何が悪かったのか。なぜ力を出せなかったのか』と、そればかり考えている」。「信じられない」。そして、「フランクとは親しかった。そこに並べるのは、素晴らしいことだ」。"
+   ],
+   [
+    "p",
+    "「いつも言うが、スーパースターは2人のドライバーではなく、2,500人いる」。「苦しい時期に、人が持ちこたえたこと。その粘り強さが、要因のひとつだと思う」。"
+   ],
+   [
+    "h",
+    "黄色いヘルメット"
+   ],
+   [
+    "p",
+    "この週末、アントネッリは黄色いヘルメットをかぶっていた。緑と青の帯、側面にブラジルの旗、後ろにセナのS。メキシコで「ブラジルでは、アイルトンのために特別なヘルメットをかぶる」と予告していたものだ。「僕が作った中で、いちばんいいヘルメットのひとつ」。"
+   ],
+   [
+    "p",
+    "週の初めには、父とともにセナの家族を訪ね、ブルーノ、ビアンカ、パウラに会い、ロータス98Tに座った。「忘れられない一日。セナ家のみなさんに感謝します。実感するには時間がかかるけど、この記憶は一生持っていきます」。来年のカーナンバーも、1番ではなく、セナがロータスで使った12番のままにすると言っている。"
+   ],
+   [
+    "h",
+    "「もっと楽しもうとしている」"
+   ],
+   [
+    "p",
+    "木曜日、王者として初めての週末の前に、アントネッリはこう話していた。「もっと楽しもうとしている。いまはチャンピオンシップのことはまったく考えていなくて、楽しんでいる」。フェルスタッペンは、「彼はとても普通で、とても謙虚に見える。彼の多くが変わるとは思わない」。"
+   ],
+   [
+    "p",
+    "日曜日、王者は勝てなかった。腹が立っていると言い、それを脇に置いた。2,500人がタイトルを取った日だったからだ。何がおかしかったのかは、これから調べる。残りは3戦。次はラスベガスで、390点の王者はまだ、楽しもうとしている。"
+   ]
+  ],
+  "terms": [
+   [
+    "フォーメーションラップ",
+    "formation-lap"
+   ],
+   [
+    "アンセーフリリース",
+    "unsafe-release"
+   ],
+   [
+    "コンストラクターズ",
+    "constructors-championship"
+   ],
+   [
+    "レースエンジニア",
+    "race-engineer"
+   ],
+   [
+    "インターミディエイト",
+    "intermediate"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。偵察ラップのスピン、18周目「何かがおかしい」、20周目と23周目、53周目、57周目。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "2026 Brazilian Grand Prix race report",
+    "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-race-report",
+    "note": "2026年11月8日。「走れない」「片側に引っ張られる」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Kimi Antonelli voices anger after 'no warning' race-deciding F1 spin",
+    "url": "https://racingnews365.com/kimi-antonelli-voices-anger-after-no-warning-race-deciding-f1-spin",
+    "note": "2026年11月8日。「とても腹が立っている」「脇に置く」「前触れも何もなかった」「この観客の前で勝ちたかった」、ボニントン「集中し直せ」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GRANDPRIX247",
+    "title": "Antonelli disappointed and angry after Sao Paulo GP as balance issues baffle Mercedes",
+    "url": "https://www.grandprix247.com/formula-1-news/kimi-antonelli-disappointed-and-angry-after-sao-paulo-grand-prix-as-balance-issues-baffle-mercedes",
+    "note": "2026年11月8日。「勝てるレースだった」、ショブリン「普通ではないバランス」「ラッセルも似た症状」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Race day in Brazil 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-brazil-2026.6WRrgNQ7FDoFnwzxR9Vjw7",
+    "note": "2026年11月8日。アントネッリ「勝てると感じていた」、ショブリン、ウォルフ。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "FIA decision: Kimi Antonelli, F1 2026 Brazilian Grand Prix",
+    "url": "https://www.planetf1.com/news/fia-decision-kimi-antonelli-f1-2026-brazilian-grand-prix",
+    "note": "2026年11月8日。アンセーフリリースで5秒加算、5位は変わらず。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Toto Wolff proud of Mercedes turnaround after winning F1 2026 Constructors' Championship",
+    "url": "https://www.skysports.com/f1/news/13609697/",
+    "note": "2026年11月8日。9度目、ウィリアムズと並ぶ、「2,500人のスーパースター」「粘り強さ」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Wolff already thinking about 2027 despite Constructors' Championship win in Brazil",
+    "url": "https://www.formula1.com/en/latest/article/wolff-already-thinking-about-2027-despite-constructors-championship-win-in-brazil.21aGFbwHKbhjkcmpeYVrZV",
+    "note": "2026年11月8日。「私は祝っていない」「信じられない」「フランクとは親しかった」。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Kimi Antonelli reveals Ayrton Senna F1 tribute helmet for Brazil GP",
+    "url": "https://www.crash.net/f1/news/1109343/1/kimi-antonelli-reveals-ayrton-senna-f1-tribute-helmet-brazil-gp",
+    "note": "2026年11月5日。ヘルメットのデザイン、「いちばんいいヘルメットのひとつ」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Kimi Antonelli pays Ayrton Senna family emotional visit: 'An unforgettable day'",
+    "url": "https://racingnews365.com/kimi-antonelli-pays-ayrton-senna-family-emotional-visit-an-unforgettable-day",
+    "note": "2026年11月。セナ家の訪問、「忘れられない一日」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'I'm trying to enjoy more' – Antonelli explains his mindset in Sao Paulo as the new World Champion",
+    "url": "https://www.formula1.com/en/latest/article/im-trying-to-enjoy-more-antonelli-explains-his-mindset-in-sao-paulo-as-the-new-world-champion.1iucwqkOBiexeg1SJiMP27",
+    "note": "2026年11月6日。「もっと楽しもうとしている」。"
+   },
+   {
+    "name": "FIA",
+    "title": "F1 2026 São Paulo Grand Prix – Thursday press conference transcript",
+    "url": "https://www.fia.com/news/f1-2026-sao-paulo-grand-prix-thursday-press-conference-transcript",
+    "note": "2026年11月5日。フェルスタッペン「とても謙虚に見える」。"
+   },
+   {
+    "name": "GPblog",
+    "title": "F1 standings: Mercedes win 2026 Constructors' Championship in Brazil",
+    "url": "https://www.gpblog.com/en/news/f1-standings-mercedes-win-2026-constructors-championship-in-brazil",
+    "note": "アントネッリ390点、メルセデス652点。"
+   }
+  ]
+ }
+}

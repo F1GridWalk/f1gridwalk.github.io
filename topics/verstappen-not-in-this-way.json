@@ -1,0 +1,358 @@
+{
+ "slug": "verstappen-not-in-this-way",
+ "gp": "サンパウロGP",
+ "title": "「P2はうれしい。でも、このやり方じゃない」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "21番グリッドから2位。クールダウンラップの無線は、「レースの85%を、壊れたクルマで走った。もちろんP2はうれしい。でも、このやり方じゃない」。スリックに替えた途端に「昼と夜ほど」変わったクルマで、38周目にチームメイトが道を空けた。ハジャーは「いつもマックスが僕の前にいる！」。インテルラゴスで3年続けて、17番手より後ろからの表彰台。",
+ "checked": "2026-11-09",
+ "checkedNote": "Formula1.com、ESPN、PlanetF1、GPblog、RacingNews365（英語版とオランダ語版）、Crash.net の原文を11月9日に確認しました。本人の言葉は英語から、ハジャーの一部と「辞める」の言葉とメキース代表の言葉の一部はオランダ語から編集部が訳しました。無線の罵り言葉は省いています。「11周目に5番手」とする要約がありますが原文で確認できず、本文は5周目8番手、8周目トップ6としています。メキース代表のシミュレーターの言葉は複数のメディアにあり、本文では地の文にしました。",
+ "common": [
+  "21番グリッド（5基目のエンジン・ターボ・排気系で30グリッド降格）から2位、ノリスに14.602秒差。1周目13番手、5周目8番手、8周目トップ6。17周目にスリックへ替えてから「極端なオーバーステア」「昼と夜」。",
+  "クールダウンラップ「85%を壊れたクルマで走った。P2はうれしいが、このやり方じゃない」。何が壊れたかはチームが調査。",
+  "38周目、ハジャーが1コーナーで膨らみ、チームの指示で道を空けた。ハジャー「戻すのを忘れるなよ」「いつもマックスが僕の前にいる！」。順位は戻らず3位。",
+  "3年続けて17番手以下から表彰台（2024年17番手から優勝、2025年ピットレーンから3位）。2位279点、レッドブルはマクラーレンに17点差の3位。"
+ ],
+ "outlets": [
+  {
+   "id": "en-f1com-verstappen-p21-to-podium",
+   "angle": "本人",
+   "adds": [
+    "21番手から2位、「最初のスティントとは正反対」。"
+   ]
+  },
+  {
+   "id": "nl-racingnews365-mekies-verstappen-beats-simulator",
+   "angle": "代表",
+   "adds": [
+    "シミュレーターでも予測できない、PU初年度、ハジャーの評価。"
+   ]
+  },
+  {
+   "id": "nl-f1maximaal-verstappen-p21-safety-cars",
+   "angle": "前日",
+   "adds": [
+    "最後尾から、セーフティカーを望む。"
+   ]
+  },
+  {
+   "id": "nl-racingnews365-verstappen-anders-stop-ik-ermee",
+   "angle": "土曜",
+   "adds": [
+    "「そう思えなければ辞める」。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「85%を壊れたクルマで」「このやり方じゃない」",
+   "w": "ESPN（11月8日、英語の無線）を編集部が訳した。"
+  },
+  {
+   "t": "「極端なオーバーステア」「昼と夜」",
+   "w": "PlanetF1（11月8日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "ハジャー「戻すのを忘れるなよ」「いつもマックスが僕の前にいる！」",
+   "w": "GPblog（英語）、RacingNews365.nl（オランダ語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ハジャーのスタート位置",
+   "t": "5番グリッドとする記事と4番とする記事がある。暫定グリッドでは5番。"
+  },
+  {
+   "k": "「11周目に5番手」",
+   "t": "日本語の要約にあるが、原文で確認できず。本文は5周目8番手、8周目トップ6。"
+  }
+ ],
+ "unknownsFillable": [
+  "スリック交換後に何が壊れていたか（チームが調査中）。",
+  "ラスベガスの結果。"
+ ],
+ "unknownsLimits": [
+  "ハジャーに順位を戻す約束があったのかどうか。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜ「このやり方じゃない」なのか？",
+  "rows": [
+   {
+    "k": "クルマ",
+    "t": "スリックに替えた途端に「極端なオーバーステア」。本人は「レースの85%を壊れたクルマで」。"
+   },
+   {
+    "k": "ペナルティ",
+    "t": "金曜の問題で急きょ30グリッド降格。「人生の12時間を無駄にした」土曜日のあとの、最後尾から。"
+   },
+   {
+    "k": "基準",
+    "t": "「自分がいちばん速いと感じなくなったら辞める」。21番手から2位でも、本人の基準では足りない。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "メキシコのフェルスタッペンは？",
+   "rules": [
+    "team-orders"
+   ],
+   "links": [
+    "/topics/verstappen-around-the-outside/"
+   ]
+  },
+  {
+   "q": "ハジャーの土曜日までは？",
+   "rules": [
+    "impeding"
+   ],
+   "links": [
+    "/topics/hadjar-dream-to-race-him/"
+   ]
+  },
+  {
+   "q": "パワーユニット交換の降格は、どう決まる？",
+   "rules": [
+    "grid-penalty",
+    "pu-allocation"
+   ]
+  },
+  {
+   "q": "チームオーダーの決まりは？",
+   "rules": [
+    "team-orders"
+   ]
+  }
+ ],
+ "todo": [
+  "壊れていたものが分かったら追記",
+  "ラスベガスの結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-08T16:00:00-03:00",
+   "t": "21番手から2位、無線「このやり方じゃない」"
+  },
+  {
+   "at": "2026-11-09T12:00:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "フェルスタッペンは5基目のエンジン・ターボ・排気系の交換で30グリッド降格、21番手から走って2位（ノリスに14.602秒差）。1周目13番手、8周目トップ6。17周目にスリックへ替えてから「極端なオーバーステア」「最初のスティントとは昼と夜」。38周目にハジャーが1コーナーで膨らみ、チームの指示で道を空けた（ハジャー「いつもマックスが僕の前にいる！」）。クールダウンラップの無線は「レースの85%を壊れたクルマで走った。P2はうれしいが、このやり方じゃない」。インテルラゴスで3年続けて17番手以下から表彰台。ランキング2位279点。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "21番手から2位。クールダウンラップの無線は「レースの85%を、壊れたクルマで走った。P2はうれしい。でも、このやり方じゃない」。38周目にチームメイトが道を空け、ハジャーは「いつもマックスが僕の前にいる！」。3年続けて、17番手より後ろからの表彰台。",
+  "body": [
+   [
+    "h",
+    "「P2はうれしい。でも、このやり方じゃない」"
+   ],
+   [
+    "p",
+    "11月8日、日曜日のインテルラゴス。チェッカーのあとのクールダウンラップで、マックス・フェルスタッペンの無線に、こう入った。「なんてことだ。レースの85%を、壊れたクルマで走った」。「もちろんP2はうれしい。でも、このやり方じゃない。悪いけど、運転していて最悪だった。ウェットでもドライでも、こんなのは経験したことがない。本当に、本当にひどい」。"
+   ],
+   [
+    "p",
+    "21番グリッドから、2位。ノリスに14.602秒差。ドライバー・オブ・ザ・デイ。それでも本人は、そう言った。"
+   ],
+   [
+    "h",
+    "最初の2周"
+   ],
+   [
+    "p",
+    "スタートは、よくなかった。「クラッチの持ち方を間違えて、反応がすごく遅かった」。それでも1周目で13番手。「2周もしないうちに、ほとんど毎コーナーで誰かを抜いていた」。3周目にはポイント圏内、5周目に8番手、8周目にトップ6。"
+   ],
+   [
+    "p",
+    "「最初のスティント、インターミディエイトでの走りは、本当に、本当に強かった」。17周目の終わりにスリックに替えた。そこから、クルマが変わった。「スリックに替えた途端、極端なオーバーステアが出た」。「最初のスティントとは、昼と夜ほど違った。何かがおかしいということだ」。「何かが壊れたのか、空力で何かを失ったのか、確かめないといけない」。"
+   ],
+   [
+    "h",
+    "38周目、1コーナー"
+   ],
+   [
+    "p",
+    "その壊れたクルマで、フェルスタッペンは前を行くチームメイトのハジャーに追いついた。38周目、ハジャーが1コーナーで膨らみ、レッドブルはハジャーに、フェルスタッペンを前に出すよう伝えた。"
+   ],
+   [
+    "p",
+    "ハジャーの無線。「もし彼がランドを抜けなかったら、このままなのか」。しばらくして、「おい、僕に戻すのを忘れるなよ」。エンジニア、「ああ、やっている。いま、やっているところだ」。"
+   ],
+   [
+    "p",
+    "レッドブルは2台の戦略を分けた。フェルスタッペンは45周目、ハジャーは50周目にピットへ。差は開き、順位は戻らなかった。ハジャーはあとで、こう言っている。「僕らの間には4秒あって、僕は1コーナーで2回か3回ミスをした。マックスはミスをしなかった。だから順位を入れ替えるのは当然だった」。「議論はしなかった。ただ、自分がミスをしないことで、この状況を避けたかった」。そして、「いつも3位で、いつもマックスが僕の前にいる！」。"
+   ],
+   [
+    "h",
+    "「人生の12時間を無駄にした」"
+   ],
+   [
+    "p",
+    "この週末は、金曜日から壊れていた。FP1の無線、「受け入れられない。このダウンシフトは受け入れられない」。「このステアリングは、筋トレだ」。FP2は終了5分前に降りた。"
+   ],
+   [
+    "p",
+    "土曜日、レッドブルは5基目のエンジン、ターボ、排気系を入れた。合わせて30グリッド降格、つまり最後尾。「問題が見えたから、ここでペナルティを受けることにした。たぶんここが最良の場所だろう。でも、誰にも分からない」。雨で長引いた予選は、Q1を3番手で通って、Q2には出なかった。ウェットタイヤを温存するためだ。「人生の12時間を無駄にした。何も得るものなしに」。"
+   ],
+   [
+    "p",
+    "メキース代表は、「計画していたものではない。金曜日の小さな問題で、そうせざるを得なかった」。「マックスとは、この週末が最初のペナルティだ」。"
+   ],
+   [
+    "h",
+    "3年続けて、17番手より後ろから"
+   ],
+   [
+    "p",
+    "インテルラゴスの決勝を、フェルスタッペンは3年続けて、17番手より後ろから走っている。2024年は17番手から優勝。2025年はピットレーンから3位。2026年は21番手から2位。"
+   ],
+   [
+    "p",
+    "メキース代表は、どんなシミュレーターでもこんな結果は予測できないと言い、こうも言った。「忘れがちだが、パワーユニットの1年目だ。みんなが途方もない仕事をしている」。チームの公式コメントは、「マックスはまた、彼にしかできないやり方で、P21からP2へのマスタークラスを見せた」。"
+   ],
+   [
+    "p",
+    "本人は、「来年は、最後尾やピットレーンじゃなくて、もう少し前からスタートしたい」。"
+   ],
+   [
+    "h",
+    "「そう思えなくなったら、辞める」"
+   ],
+   [
+    "p",
+    "この週末、自分がいちばん速いドライバーだと思うかと聞かれて、フェルスタッペンは即答した。「いつもそう思っている。そうでなければ、辞める」。"
+   ],
+   [
+    "p",
+    "ランキングは2位、279点。レッドブルはコンストラクターズ3位で、マクラーレンに17点差。残りはラスベガス、カタール、アブダビの3戦。"
+   ],
+   [
+    "p",
+    "21番手から2位に来て、「このやり方じゃない」と言う人がいる。壊れたクルマで、何が壊れていたのかを、これから調べる。2週間後のラスベガスは、少なくとも、もう少し前から始まる。"
+   ]
+  ],
+  "terms": [
+   [
+    "グリッド降格",
+    "grid-penalty"
+   ],
+   [
+    "パワーユニットの交換",
+    "pu-allocation"
+   ],
+   [
+    "チームオーダー",
+    "team-orders"
+   ],
+   [
+    "インターミディエイト",
+    "intermediate"
+   ],
+   [
+    "インテルラゴス",
+    "circuit-interlagos"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。1周目13番手、17周目スリック、38周目の1コーナー、45周目と50周目のピット、14.602秒差。"
+   },
+   {
+    "name": "ESPN",
+    "title": "Verstappen: 'What a disaster to drive' despite P21 to P2",
+    "url": "https://www.espn.com/f1/story/_/id/50389072/max-verstappen-sao-paulo-grand-prix-brazil-formula-1",
+    "note": "2026年11月8日。クールダウンラップの無線「85%を壊れたクルマで」「このやり方じゃない」（英語から編集部が訳した。罵り言葉は省いた）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Verstappen reflects on 'challenging' Sao Paulo GP as he charges from P21 to the podium",
+    "url": "https://www.formula1.com/en/latest/article/verstappen-reflects-on-challenging-sao-paulo-gp-as-he-charges-from-p21-to-the-podium.4g4jMP9fsJQwWOCfDLitK9",
+    "note": "2026年11月8日。「最初のスティントは本当に強かった」「P2に入ってからは差を詰められなかった」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Max Verstappen reveals Red Bull problem after Sao Paulo Grand Prix charge",
+    "url": "https://www.planetf1.com/news/max-verstappen-red-bull-problem-sao-paulo-grand-prix",
+    "note": "2026年11月8日。「クラッチの持ち方」「毎コーナーで抜いていた」「極端なオーバーステア」「昼と夜」「空力で何かを失ったのか」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Hadjar asks Red Bull to let him pass Verstappen again after team orders",
+    "url": "https://www.gpblog.com/en/news/hadjar-asks-red-bull-to-let-him-pass-verstappen-again-after-team-orders",
+    "note": "2026年11月8日。ハジャーの無線「戻すのを忘れるなよ」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365.nl",
+    "title": "Hadjar erkent verschil met Verstappen na Braziliaans onderonsje",
+    "url": "https://racingnews365.nl/hadjar-erkent-verschil-met-verstappen-na-braziliaans-onderonsje",
+    "note": "2026年11月8日。ハジャー「4秒あって、2回か3回ミスをした」「いつもマックスが僕の前にいる！」（オランダ語から編集部が訳した）。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Max Verstappen fumes at 'unacceptable' issues during Brazil GP practice",
+    "url": "https://www.crash.net/f1/news/1109549/1/max-verstappen-fumes-unacceptable-issues-during-brazil-gp-practice",
+    "note": "2026年11月6日。「受け入れられない」「ステアリングは筋トレ」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "FIA: Max Verstappen penalty, Brazilian Grand Prix",
+    "url": "https://www.planetf1.com/news/fia-max-verstappen-penalty-brazilian-grand-prix",
+    "note": "2026年11月7日。5基目のエンジン、ターボ、排気系で30グリッド降格。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'Maybe it's the best place to take it' – Verstappen sets out goal from back of the grid in Sao Paulo",
+    "url": "https://www.formula1.com/en/latest/article/maybe-its-the-best-place-to-take-it-verstappen-sets-out-goal-from-back-of-the-grid-in-sao-paulo.3Q4PjMuHO5GVxoRFTwhggD",
+    "note": "2026年11月7日。「ここが最良の場所だろう」。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Verstappen frustrated by long qualifying day: '12 hours of my life wasted'",
+    "url": "https://www.gpblog.com/en/news/verstappen-frustrated-by-long-qualifying-day-12-hours-of-my-life-wasted",
+    "note": "2026年11月7日。「人生の12時間を無駄にした」（オランダ語からの英訳を編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Max Verstappen bales out of Sao Paulo GP qualifying with penalties looming",
+    "url": "https://racingnews365.com/max-verstappen-bales-out-of-sao-paulo-gp-qualifying-with-penalties-loming",
+    "note": "2026年11月7日。Q1で3番手、Q2に出ずウェットタイヤを温存。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Race day in Brazil 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-brazil-2026.6WRrgNQ7FDoFnwzxR9Vjw7",
+    "note": "2026年11月8日。レッドブル「彼にしかできないやり方でマスタークラス」、メキース「計画していたものではない」「最初のペナルティ」。"
+   },
+   {
+    "name": "RacingNews365.nl",
+    "title": "Mekies maakt diepe buiging voor Verstappen: hij verslaat zelfs de simulator",
+    "url": "https://racingnews365.nl/mekies-maakt-diepe-buiging-voor-verstappen-hij-verslaat-zelfs-de-simulator",
+    "note": "2026年11月8日。シミュレーターでは予測できない、パワーユニットの1年目、計画外の降格（オランダ語から編集部が訳した）。"
+   },
+   {
+    "name": "RacingNews365.nl",
+    "title": "Mekies tóch weer verbluft door Verstappen: iets wat alleen hij kan",
+    "url": "https://racingnews365.nl/mekies-t%C3%B3ch-weer-verbluft-door-verstappen-iets-wat-alleen-hij-kan",
+    "note": "2026年11月8日。3年続けて17番手以下から表彰台。"
+   },
+   {
+    "name": "RacingNews365.nl",
+    "title": "Verstappen zonder enige twijfel: 'Altijd, anders stop ik ermee'",
+    "url": "https://racingnews365.nl/verstappen-zonder-enige-twijfel-altijd-anders-stop-ik-ermee",
+    "note": "2026年11月8日。「いつもそう思う。そうでなければ辞める」（オランダ語から編集部が訳した）。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "New F1 championship standings after Brazil Grand Prix",
+    "url": "https://www.crash.net/f1/news/1110014/1/new-f1-championship-standings-after-brazil-grand-prix",
+    "note": "フェルスタッペン2位279点、レッドブル3位415点、マクラーレン398点。"
+   }
+  ]
+ }
+}
