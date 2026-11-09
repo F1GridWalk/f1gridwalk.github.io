@@ -1,13 +1,13 @@
 {
- "updatedAt": "2026-11-10T00:35:00+09:00",
+ "updatedAt": "2026-11-10T06:30:00+09:00",
  "topics": {
   "haas-ocon-camara-brazil": {
    "title": "ハースがオコンを今季残り戦から外す　ブラジルGPはカマラがデビュー",
    "summary": "ハースはメキシコGPの週末にチーム内の対立が伝えられたオコンを、今季のレースから外すと発表した。ブラジルGPではフェラーリ育成のカマラがベアマンと組んでF1デビューする。発端はFP2でのタイヤ選択をめぐる意見の相違と、その後の代表との口論とされるが、詳細は公式には確認されていない。カマラは来季からの起用が決まっており、昇格が前倒しになった。"
   },
   "lawson-2027-seat": {
-   "title": "ローソンの2027年シート　ツォロフ台頭でレーシングブルズ残留に黄信号",
-   "summary": "ローソンは今季ランキング9位ながら、レーシングブルズでの来季の去就が取り沙汰されている。独誌はデータ面でF2のツォロフが有力と分析し、伊メディアはCEOが保証を避けたと伝えた。いずれも報道・分析で、チームからの正式な発表はない。"
+   "title": "ローソンの来季シート　残留へ傾くとの報道、ツォロフが対抗",
+   "summary": "ローソンは今季ランキング9位で、レーシングブルズの選手権5位を支えている。ザ・レースはサンパウロGPの走りで残留に近づき、発表はラスベガスGP前になる見込みと報じた。ただレッドブル株主の最終判断は未了で、F2のツォロフが対抗馬だ。メキーズ代表は決めるのはレーシングブルズと述べており、公式発表はまだない。"
   },
   "mclaren-brazil-update-2027": {
    "title": "マクラーレン、サンパウロGPにフロントウイングなど新パーツ　2027年型にも継承",
@@ -71,6 +71,43 @@
   }
  },
  "articles": [
+  {
+   "id": "en-planetf1-lawson-mekies-praise-contract",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "circuit": "interlagos",
+   "teams": [
+    "racingbulls",
+    "redbull"
+   ],
+   "topic": "lawson-2027-seat",
+   "title": "メキーズ代表、ローソンの走りを称賛　来季の席はレーシングブルズ次第と強調",
+   "summary": "PlanetF1によると、レッドブルのメキーズ代表はサンパウロGPのローソンを「非常に強い週末」と称え、来季の去就はレーシングブルズの判断だと述べた。ローソンは中団最多得点で、チームメートのリンドブラッドの2倍超を稼いでおり、リンドブラッドは4戦連続でノーポイントだ。ローソンは2列目から一時2番手を走り7位で終え、チームの選手権5位に貢献した。代表は「データを持つのはレーシングブルズで、レッドブルが急ぐ理由はない」と話した。F2のツォロフが席を争う。",
+   "orig": "Red Bull hail Liam Lawson performance as Racing Bulls stall on contract decision",
+   "url": "https://www.planetf1.com/news/red-bull-liam-lawson-racing-bulls-stall-contract-decision",
+   "published": "2026-11-09T18:55:00+00:00"
+  },
+  {
+   "id": "en-planetf1-hamilton-devastated-sf26-investigation",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-brazil-race-call",
+   "title": "ハミルトン「打ちのめされた」　フェラーリ、ラスベガス前にSF-26を調査へ",
+   "summary": "PlanetF1によると、ハミルトンはサンパウロGPの結果と終わり方に「打ちのめされた」と語り、チームは次戦までに原因を理解して戻ると述べた。フェラーリはタイヤと強いオーバーステアに苦しみ、ラスベガスGPまでにSF-26を調べるという。両車はエンジンのペナルティで10番手圏外から出走し、ハミルトンは20番手から1周目で10位以内に上がった。ベアマンに順位を譲る指示後にペースが落ち、雨の戻った終盤のスピンもあって9位で、ルクレールは5秒加算で8位だった。",
+   "orig": "Lewis Hamilton 'devastated' as Ferrari to launch SF-26 investigation",
+   "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-sf-26-investigation-f1-2026-brazilian-grand-prix",
+   "published": "2026-11-09T16:23:00+00:00"
+  },
   {
    "id": "ja-voice-verstappen-p21-p2",
    "kind": "voice",
@@ -161,6 +198,43 @@
    ]
   },
   {
+   "id": "nl-f1maximaal-verstappen-ferrari-teamboss",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "ドライバー",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "フェルスタッペン「自分がフェラーリ代表なら第1ドライバーを2人は取らない」",
+   "summary": "F1Maximaalによると、フェルスタッペンはViaplayのインタビューで、自分がチーム代表なら二人の第1ドライバーは決して起用しないと語り、フェラーリの現状なら変えると述べた。ハミルトンとルクレールはモンツァやメキシコで衝突し、メキシコでは両者の遅いブレーキングがフェルスタッペンの優勝につながった。ルクレールの契約は2030年までで、ハミルトンより13歳若い。フェルスタッペンは自身、確立したエースがいるチームには行きたくなく、マクラーレンやメルセデスの話を追わなかった一因とも示唆した。",
+   "orig": "Verstappen veroordeelt Ferrari-keuze voor Hamilton: \"Als teambaas zou ik dit aanpassen\"",
+   "url": "https://www.f1maximaal.nl/max-verstappen/verstappen-zou-hamilton-of-leclerc-wegsturen-als-teambaas-zou-ik-dit-aanpassen",
+   "published": "2026-11-09T16:22:00+01:00"
+  },
+  {
+   "id": "en-planetf1-albon-fia-double-punishment",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "決勝",
+   "circuit": "interlagos",
+   "teams": [
+    "williams",
+    "alpine"
+   ],
+   "topic": "brazil-post-race-penalties",
+   "title": "アルボンに5秒加算とペナルティポイント2点　サンパウロGPのガスリー妨害で",
+   "summary": "PlanetF1によると、FIAのスチュワードはサンパウロGPの決勝後、ウィリアムズのアルボンに5秒加算と、スーパーライセンスのペナルティポイント2点を科した。アルボンは2コーナーでコースを外れ、3コーナーでアルピーヌのガスリーの前に戻り、ガスリーは急ブレーキを強いられた。スチュワードは走行中の車が復帰車のために減速させられるべきではないとした。ガスリーは「コースを外れた」と述べ、アルボンは乾く路面で安全な選択肢はなかったと話した。これで累計3点になり、ウィリアムズは5戦連続でノーポイントだ。",
+   "orig": "FIA confirms double Alex Albon punishment after Brazilian GP investigation",
+   "url": "https://www.planetf1.com/news/fia-decision-alex-albon-f1-2026-brazilian-grand-prix",
+   "published": "2026-11-09T15:12:00+00:00"
+  },
+  {
    "id": "de-motorsporttotal-hadjar-verstappen-team-order",
    "kind": "news",
    "lang": "de",
@@ -214,56 +288,42 @@
    "published": "2026-11-09T13:14:00+00:00"
   },
   {
-   "id": "de-motorsporttotal-schumacher-hamilton-not-fast-enough",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "schumacher-hamilton-criticism",
-   "title": "ラルフ・シューマッハー「ハミルトンは速さが足りない」　ルクレールとの比較で持論",
-   "summary": "モータースポーツ・トータルによると、スカイの解説者ラルフ・シューマッハーは、サンパウロGP後にハミルトンへの批判を重ねた。ルクレールに明確な差をつけられていない点が問題で、ミハエルの時代のように速い方が議論を終わらせるべきだという見方だ。記事は予選でルクレールが11勝9敗、決勝は10勝10敗、スプリントレースは4勝2敗でルクレール優勢という数字を挙げている。41歳のハミルトンの現状に疑問を呈し、フェラーリには明確なエースが必要とも述べた。あくまで解説者個人の意見である。",
-   "orig": "Ralf Schumacher: \"Lewis Hamilton ist einfach nicht schnell genug\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/ralf-schumacher-lewis-hamilton-ist-einfach-nicht-schnell-genug-26110906",
-   "published": "2026-11-09T12:00:00+01:00"
-  },
-  {
-   "id": "ja-f1are-redbull-aston-pu-reason",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "teams": [
-    "redbull",
-    "astonmartin"
-   ],
-   "topic": "redbull-engine-supply-aston",
-   "title": "レッドブルがアストンマーティンにPUを供給しない理由は賞金？　掲示板で議論",
-   "summary": "F1のアレが、レッドブルのPU供給をめぐる掲示板の話題をまとめた。アストンマーティンがレッドブル製PUを使うという報道に対し、メキーズ代表は他チームへの供給に前向きではなく、具体的な交渉もないと述べた。オーストリアのOE24は、エンジン価格上限が年1500万ユーロで、順位次第では賞金が減ることを恐れているためだと伝えたという。ニューウェイやホンダの存在を理由に挙げる書き込みや、賞金の話は言い訳だとする見方があった。あくまで掲示板上の議論で、事実とは確認されていない。",
-   "orig": "レッドブルがアストンマーチンのPUを供給したくない本当の理由",
-   "url": "https://f1are.com/blog-entry-4061.html",
-   "published": "2026-11-09T12:00:00+09:00"
-  },
-  {
-   "id": "en-planetf1-piastri-webber-split",
-   "kind": "news",
+   "id": "en-therace-lawson-closing-racingbulls-2027",
+   "kind": "rumor",
    "lang": "en",
    "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
+   "source": "The Race",
+   "cat": "移籍",
+   "circuit": "interlagos",
    "teams": [
+    "racingbulls",
+    "redbull"
+   ],
+   "topic": "lawson-2027-seat",
+   "title": "ローソン、レーシングブルズ残留に近づく　ラスベガス前に発表の見通しとザ・レース",
+   "summary": "ザ・レースによると、ローソンはサンパウロGPでの走りを受け、2027年もレーシングブルズに残る方向に傾いている。ただレッドブルの大株主による最終判断はまだで、発表はラスベガスGP前になる見込みという。代表のパーメインはローソンを支持し、「少し科学的に決めたい、時間がかかる」と述べた。対抗はF2ランク2位のレッドブル育成ツォロフで、ローソンは3番グリッドから8位、のち7位に繰り上がった。メキーズ代表は「決めるのはレーシングブルズ」と話した。",
+   "orig": "Lawson closing in on F1 2027 stay with Racing Bulls",
+   "url": "https://www.the-race.com/formula-1/liam-lawson-closing-on-f1-2027-racing-bulls-stay/",
+   "published": "2026-11-09T12:00:00+00:00"
+  },
+  {
+   "id": "en-therace-red-bull-car-problems-verstappen-brazil",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "circuit": "interlagos",
+   "teams": [
+    "redbull",
     "mclaren"
    ],
-   "topic": "piastri-webber-split",
-   "title": "ピアストリ、マネジメント契約を解消　ウェバー氏と2019年から",
-   "summary": "PlanetF1によると、ピアストリは11月9日、マーク・ウェバー氏らのマネジメントチームとの契約終了を明らかにした。ウェバー氏は2019年から下位カテゴリー時代を含めて同選手を支えてきたが、今季はサーキットでの関与が減っていたとして、双方合意の上で関係を終えると声明で述べた。ピアストリは初期のF1キャリアでの助言に感謝を示したが、今後の体制は明かしていない。今季のピアストリはチームメートのノリスに苦戦し、ランキングではノリスに94ポイント差の位置にいる。マクラーレンとの契約は2028年末まで続く。",
-   "orig": "Oscar Piastri splits with manager Mark Webber in shock announcement",
-   "url": "https://www.planetf1.com/news/oscar-piastri-mark-webber-management-split",
-   "published": "2026-11-09T08:25:00+00:00"
+   "topic": "brazil-verstappen-p21-p2",
+   "title": "レッドブルの車の不調がフェルスタッペンの勝利を奪ったか　ザ・レースが検証",
+   "summary": "ザ・レースは、21番手から2位に入ったフェルスタッペンの勝機を、車の不調が奪ったのかを検証した。スリックに替えた後、高速コーナーで強いオーバーステアが出て、本人は空力の損傷を疑い「週末ずっとと正反対」と話した。データでは最初のインターミディエイトのスティントは平均で約0.05秒速かったが、ソフトではノリスが約0.1秒上回った。メキーズ代表は原因が分からず、マクラーレンの速さもあったと述べ、ノーブル氏は21番手からの勝利は難しかったとみる。",
+   "orig": "Did Red Bull car problems cost Verstappen Brazilian GP victory?",
+   "url": "https://www.the-race.com/formula-1/did-red-bull-car-problems-cost-verstappen-brazilian-gp-victory/",
+   "published": "2026-11-09T12:00:00+00:00"
   },
   {
    "id": "en-therace-piastri-webber-split",
@@ -283,41 +343,21 @@
    "published": "2026-11-09T12:00:00+00:00"
   },
   {
-   "id": "nl-f1maximaal-antonelli-spin-angry",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "決勝",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "brazil-mercedes-spins",
-   "title": "アントネッリ、優勝逃しに怒り　「タイヤはフラットスポットで完全に壊れた」",
-   "summary": "F1マキシマールによると、サンパウロGPで優勝へ向かっていたアントネッリは、スピンでレースを失ったことに怒りを隠さなかった。インターミディエイトからスリックに替えた後、ソフトでマシンの後部に違和感があったと説明している。スピンで大きなフラットスポットができ、タイヤは「完全に壊れた」状態だったという。なぜ後部のグリップが急に抜けたかはまだ分からず、チームにデータ分析を求めた。メルセデスのコンストラクターズ優勝は祝福に値するとしつつ、ブラジルのファンの前で勝ちたかったと語った。",
-   "orig": "Antonelli legt bal bij Mercedes en is pissig: 'Compleet verwoest'",
-   "url": "https://www.f1maximaal.nl/formule-1/antonelli-legt-bal-bij-mercedes-en-is-pissig-compleet-verwoest",
-   "published": "2026-11-09T08:30:00+01:00"
-  },
-  {
-   "id": "de-f1insider-leclerc-penalty-brazil",
+   "id": "de-motorsporttotal-schumacher-hamilton-not-fast-enough",
    "kind": "news",
    "lang": "de",
    "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "決勝",
-   "circuit": "interlagos",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
    "teams": [
-    "ferrari",
-    "racingbulls"
+    "ferrari"
    ],
-   "topic": "brazil-post-race-penalties",
-   "title": "ルクレールに5秒加算　ローソンとの接触でスチュワードが判断",
-   "summary": "F1インサイダーによると、ルクレールはサンパウロGP後に5秒のタイムペナルティを受け、7位から8位に下がった。69周目の12コーナーで7位争い中にローソンと接触し、その後5つのコーナーを経て追い抜いた場面だ。スチュワードは映像やオンボード、車載データを確認し、接触の原因はルクレールにあり、わずかな接触でもローソンのマシンに影響したと判断した。さらにこの影響で追い抜けたとも指摘している。ルクレールは両者とも激しくも公正に戦ったと述べ、ローソンはフロントウイングがタイヤに当たったと主張した。",
-   "orig": "Ferrari-Star kassiert nachträglich eine Strafe in Brasilien",
-   "url": "https://f1-insider.com/formel-1-ferrari-star-strafe-nach-brasilien-83887/",
-   "published": "2026-11-09T08:36:00+01:00"
+   "topic": "schumacher-hamilton-criticism",
+   "title": "ラルフ・シューマッハー「ハミルトンは速さが足りない」　ルクレールとの比較で持論",
+   "summary": "モータースポーツ・トータルによると、スカイの解説者ラルフ・シューマッハーは、サンパウロGP後にハミルトンへの批判を重ねた。ルクレールに明確な差をつけられていない点が問題で、ミハエルの時代のように速い方が議論を終わらせるべきだという見方だ。記事は予選でルクレールが11勝9敗、決勝は10勝10敗、スプリントレースは4勝2敗でルクレール優勢という数字を挙げている。41歳のハミルトンの現状に疑問を呈し、フェラーリには明確なエースが必要とも述べた。あくまで解説者個人の意見である。",
+   "orig": "Ralf Schumacher: \"Lewis Hamilton ist einfach nicht schnell genug\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/ralf-schumacher-lewis-hamilton-ist-einfach-nicht-schnell-genug-26110906",
+   "published": "2026-11-09T12:00:00+01:00"
   },
   {
    "id": "en-planetf1-hamilton-wolff-jet-mercedes-title",
@@ -339,6 +379,60 @@
    "published": "2026-11-09T09:00:00+00:00"
   },
   {
+   "id": "en-planetf1-piastri-webber-split",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-webber-split",
+   "title": "ピアストリ、マネジメント契約を解消　ウェバー氏と2019年から",
+   "summary": "PlanetF1によると、ピアストリは11月9日、マーク・ウェバー氏らのマネジメントチームとの契約終了を明らかにした。ウェバー氏は2019年から下位カテゴリー時代を含めて同選手を支えてきたが、今季はサーキットでの関与が減っていたとして、双方合意の上で関係を終えると声明で述べた。ピアストリは初期のF1キャリアでの助言に感謝を示したが、今後の体制は明かしていない。今季のピアストリはチームメートのノリスに苦戦し、ランキングではノリスに94ポイント差の位置にいる。マクラーレンとの契約は2028年末まで続く。",
+   "orig": "Oscar Piastri splits with manager Mark Webber in shock announcement",
+   "url": "https://www.planetf1.com/news/oscar-piastri-mark-webber-management-split",
+   "published": "2026-11-09T08:25:00+00:00"
+  },
+  {
+   "id": "de-f1insider-leclerc-penalty-brazil",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "決勝",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari",
+    "racingbulls"
+   ],
+   "topic": "brazil-post-race-penalties",
+   "title": "ルクレールに5秒加算　ローソンとの接触でスチュワードが判断",
+   "summary": "F1インサイダーによると、ルクレールはサンパウロGP後に5秒のタイムペナルティを受け、7位から8位に下がった。69周目の12コーナーで7位争い中にローソンと接触し、その後5つのコーナーを経て追い抜いた場面だ。スチュワードは映像やオンボード、車載データを確認し、接触の原因はルクレールにあり、わずかな接触でもローソンのマシンに影響したと判断した。さらにこの影響で追い抜けたとも指摘している。ルクレールは両者とも激しくも公正に戦ったと述べ、ローソンはフロントウイングがタイヤに当たったと主張した。",
+   "orig": "Ferrari-Star kassiert nachträglich eine Strafe in Brasilien",
+   "url": "https://f1-insider.com/formel-1-ferrari-star-strafe-nach-brasilien-83887/",
+   "published": "2026-11-09T08:36:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-antonelli-spin-angry",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "決勝",
+   "circuit": "interlagos",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "brazil-mercedes-spins",
+   "title": "アントネッリ、優勝逃しに怒り　「タイヤはフラットスポットで完全に壊れた」",
+   "summary": "F1マキシマールによると、サンパウロGPで優勝へ向かっていたアントネッリは、スピンでレースを失ったことに怒りを隠さなかった。インターミディエイトからスリックに替えた後、ソフトでマシンの後部に違和感があったと説明している。スピンで大きなフラットスポットができ、タイヤは「完全に壊れた」状態だったという。なぜ後部のグリップが急に抜けたかはまだ分からず、チームにデータ分析を求めた。メルセデスのコンストラクターズ優勝は祝福に値するとしつつ、ブラジルのファンの前で勝ちたかったと語った。",
+   "orig": "Antonelli legt bal bij Mercedes en is pissig: 'Compleet verwoest'",
+   "url": "https://www.f1maximaal.nl/formule-1/antonelli-legt-bal-bij-mercedes-en-is-pissig-compleet-verwoest",
+   "published": "2026-11-09T08:30:00+01:00"
+  },
+  {
    "id": "de-motorsportmagazin-verstappen-desaster",
    "kind": "news",
    "lang": "de",
@@ -355,6 +449,24 @@
    "orig": "Max Verstappen platzt trotz Formel-1-Sensation in Brasilien der Kragen: \"Ein Desaster!\"",
    "url": "https://www.motorsport-magazin.com/formel1/news-301180-max-verstappen-platzt-trotz-formel-1-sensation-in-brasilien-der-kragen-ein-desaster/",
    "published": "2026-11-09T04:00:00+01:00"
+  },
+  {
+   "id": "ja-f1are-redbull-aston-pu-reason",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "teams": [
+    "redbull",
+    "astonmartin"
+   ],
+   "topic": "redbull-engine-supply-aston",
+   "title": "レッドブルがアストンマーティンにPUを供給しない理由は賞金？　掲示板で議論",
+   "summary": "F1のアレが、レッドブルのPU供給をめぐる掲示板の話題をまとめた。アストンマーティンがレッドブル製PUを使うという報道に対し、メキーズ代表は他チームへの供給に前向きではなく、具体的な交渉もないと述べた。オーストリアのOE24は、エンジン価格上限が年1500万ユーロで、順位次第では賞金が減ることを恐れているためだと伝えたという。ニューウェイやホンダの存在を理由に挙げる書き込みや、賞金の話は言い訳だとする見方があった。あくまで掲示板上の議論で、事実とは確認されていない。",
+   "orig": "レッドブルがアストンマーチンのPUを供給したくない本当の理由",
+   "url": "https://f1are.com/blog-entry-4061.html",
+   "published": "2026-11-09T12:00:00+09:00"
   },
   {
    "id": "de-motorsporttotal-antonelli-unsafe-release-penalty",
@@ -765,6 +877,21 @@
    "published": "2026-11-08T09:17:00+01:00"
   },
   {
+   "id": "en-therace-brazil-wet-race-horrific-incident",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "interlagos",
+   "topic": "brazil-wet-race-safety",
+   "title": "雨の決勝は「恐ろしい事故」の恐れ　ラッセルらが警鐘、サンパウロ予選の裏側",
+   "summary": "サンパウロGP予選は今季初めてフルウェットで行われ、インターに比べて熱が入りやすく、車も安定していたと分析されている。FIAは低グリップ時のエネルギー展開を抑え、マルケス・レースディレクターは安全車ドライバーの判断を受けて開始した。ただ予選は車間を空けて走れたが、決勝では前の車に近づかざるを得ない。ラッセルは「本当に恐ろしい事故」の可能性が非常に高いと述べ、ハジャーは「こんな状況では走れない」と訴えた。サインツは水上で車を失えば大きな事故になると語り、雨の決勝への懸念が広がる。",
+   "orig": "Why F1 risks 'horrific incident' if Brazilian GP perils are repeated",
+   "url": "https://www.the-race.com/formula-1/why-f1-risks-horrific-incident-if-brazilian-gp-risks-are-repeated/",
+   "published": "2026-11-08T08:00:00+00:00"
+  },
+  {
    "id": "de-motorsporttotal-pirelli-fullwet-inter-crossover",
    "kind": "tech",
    "lang": "de",
@@ -781,21 +908,6 @@
    "orig": "Pirelli zufrieden: \"Keine Lücke\" zwischen Full-Wet-Regenreifen und Intermediate",
    "url": "https://www.motorsport-total.com/formel-1/news/pirelli-zufrieden-keine-luecke-zwischen-full-wet-regenreifen-und-intermediate-26110815",
    "published": "2026-11-08T09:00:00+01:00"
-  },
-  {
-   "id": "en-therace-brazil-wet-race-horrific-incident",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "分析",
-   "circuit": "interlagos",
-   "topic": "brazil-wet-race-safety",
-   "title": "雨の決勝は「恐ろしい事故」の恐れ　ラッセルらが警鐘、サンパウロ予選の裏側",
-   "summary": "サンパウロGP予選は今季初めてフルウェットで行われ、インターに比べて熱が入りやすく、車も安定していたと分析されている。FIAは低グリップ時のエネルギー展開を抑え、マルケス・レースディレクターは安全車ドライバーの判断を受けて開始した。ただ予選は車間を空けて走れたが、決勝では前の車に近づかざるを得ない。ラッセルは「本当に恐ろしい事故」の可能性が非常に高いと述べ、ハジャーは「こんな状況では走れない」と訴えた。サインツは水上で車を失えば大きな事故になると語り、雨の決勝への懸念が広がる。",
-   "orig": "Why F1 risks 'horrific incident' if Brazilian GP perils are repeated",
-   "url": "https://www.the-race.com/formula-1/why-f1-risks-horrific-incident-if-brazilian-gp-risks-are-repeated/",
-   "published": "2026-11-08T08:00:00+00:00"
   },
   {
    "id": "ja-topnews-fia-qatar-abudhabi-safety-letter",
@@ -1630,183 +1742,6 @@
    "orig": "Ralf Schumacher zieht über Colton Herta her: \"Hat in der F1 nichts zu suchen\"",
    "url": "https://www.motorsport-total.com/formel-1/news/ralf-schumacher-zieht-ueber-colton-herta-her-hat-in-der-f1-nichts-zu-suchen-26110612",
    "published": "2026-11-06T18:22:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-hill-hamilton-first-driver",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "ヒル、フェラーリに「ハミルトンを第1ドライバーに」　メキシコの内紛受け",
-   "summary": "F1Maximaalの論評によると、1996年王者のデイモン・ヒルはXで、フェラーリはハミルトンを第1ドライバーにすべきだと訴えた。メキシコGPでは両者が4コーナーで先行争いをし、5秒加算を受けたルクレールが首位を守り、ハミルトンは公の場で不満を示した。ランキングではハミルトンが14点リードする一方、夏休み後の獲得点はルクレール107点に対しハミルトン90点だ。契約はルクレールが2030年まで、ハミルトンは2027年末まで。筆者は、ハミルトンが問題をメディアに持ち込む姿勢にヴァッスールは歓迎しないだろうとみる。",
-   "orig": "Oud-kampioen roept op tot actie bij Ferrari: 'Maak Hamilton de eerste coureur'",
-   "url": "https://www.f1maximaal.nl/opinie/oud-kampioen-roept-op-tot-actie-bij-ferrari-maak-hamilton-de-eerste-coureur",
-   "published": "2026-11-06T18:01:00+01:00"
-  },
-  {
-   "id": "ja-voice-antonelli-ferrari-move",
-   "kind": "voice",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1 Grid Walk",
-   "cat": "ファンの声",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "antonelli-ferrari-move-talk",
-   "title": "「アントネッリがフェラーリで結果出せたら本物だね」　王座直後の移籍論にファンは慎重",
-   "summary": "アントネッリの初王座を受けてフェラーリ移籍を望む声が再燃し、ウォルフ代表が9年間の育成を強調した件で、Yahoo!ニュースのコメント欄は盛り上がった。移籍に期待する声よりも、今のフェラーリの戦略やチーム状況を不安視して慎重な見方が目立った。",
-   "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016",
-   "published": "2026-11-07T00:20:00+09:00",
-   "note": "王座を取ったばかりの20歳に早くも次の行き先を重ねる熱は、期待の大きさの表れ。ただファンの視線は、移籍そのものよりフェラーリ側の勝つ力に向いていた。今回は日本のコメント欄のみで、海外の反応は読めていない。",
-   "voices": [
-    {
-     "side": "日本",
-     "text": "怖いのはまだ2年目で伸び代がたっぷりとあるということ。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "驚",
-     "big": true,
-     "quote": true,
-     "comment": "アントネッリはF1参戦2年目の20歳で、史上最年少の王者になった。メルセデスのウォルフ代表は、9年かけた育成を強調している。"
-    },
-    {
-     "side": "日本",
-     "text": "まあルクレールの後釜になることは間違いないね。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "賛",
-     "quote": true,
-     "comment": "フェラーリは長くイタリア人王者を求めてきたと言われる。ルクレールの今後や、チーム内の不協和音も背景にある議論だ。"
-    },
-    {
-     "side": "日本",
-     "text": "アントネッリがフェラーリで結果出せたら本物だね",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "賛",
-     "big": true,
-     "quote": true,
-     "comment": "1953年のアスカリ以来のイタリア人王者となったアントネッリが、赤い車でも勝てるのかという見方。メルセデス育ちの王者への視線だ。"
-    },
-    {
-     "side": "日本",
-     "text": "圧倒的に優位なマシンは作れず戦略もポカをやらかして、ドライバー同士も揉めているフェラーリへ今行くのは、キャリアの無駄遣いという声が最も共感を集めた。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "否",
-     "big": true
-    },
-    {
-     "side": "日本",
-     "text": "フェラーリなら18歳のキミにシートは与えなかった、というウォルフ代表の言葉に納得する声。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "賛"
-    },
-    {
-     "side": "日本",
-     "text": "戦略が改善されない限り、移籍しても今より遅くなるだけでは、という不安。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "心配"
-    },
-    {
-     "side": "日本",
-     "text": "勝てば、アスカリ以来のフェラーリのイタリア人王者になるのか、と夢を膨らませる人も。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "驚"
-    },
-    {
-     "side": "日本",
-     "text": "まずメルセデスでもっと経験を積んでから、という慎重な意見。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/49801d39bddf0207124735359cc654cd9022d016/comments",
-     "mood": "賛"
-    }
-   ]
-  },
-  {
-   "id": "nl-f1maximaal-mclaren-only-big-update",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "mclaren",
-    "redbull"
-   ],
-   "topic": "mclaren-brazil-update-2027",
-   "title": "マクラーレンだけが大型アップデート　サンパウロGPで3位レッドブルを追う",
-   "summary": "オランダのF1Maximaalによると、マクラーレンはサンパウロGPに大型のアップデートを持ち込む唯一のチームだ。投入するのはフロントウイング、リアウイング、新しいビームウイング、フロア周りの変更の4点で、空力効率の向上が狙いという。ほかの9チームは既存パーツで臨み、レッドブルやメルセデス、フェラーリも現仕様を続ける。マクラーレンはコンストラクターズ4位の365点で、3位レッドブルとは17点差だ。メルセデスは王座が近く、大きな更新の必要性が薄いと同紙は指摘する。",
-   "orig": "McLaren kiest aanval op Verstappen en Red Bull: als enige met groot updatepakket",
-   "url": "https://www.f1maximaal.nl/formule-1/mclaren-valt-verstappen-en-red-bull-aan-met-opvallende-zet-in-brazilie",
-   "published": "2026-11-06T14:50:00+01:00"
-  },
-  {
-   "id": "en-therace-hamilton-leclerc-meeting-learned",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "ヴァッスール、ハミルトンとルクレールと面談　「個人がチームに優先してはならない」",
-   "summary": "The Raceによると、フェラーリのヴァッスール代表はサンパウロ市内のホテルでハミルトン、ルクレールと会い、メキシコGP1周目の接触について話し合った。ルクレールは第1子の誕生に立ち会うためモナコへ戻っていた。代表は記者会見で、面談で双方の立場が明確になったと述べ、ドライバー同士の戦い方の指針は変えないと説明した。メキシコで1-2を取りながら勝てなかったことについては「チーム全体の失敗」と認めた。内容の多くは非公開とした。",
-   "orig": "What we learned about Ferrari's key Hamilton/Leclerc meeting",
-   "url": "https://www.the-race.com/formula-1/what-we-learned-about-ferraris-hamilton-leclerc-meeting/",
-   "published": "2026-11-06T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-camara-reprimand-debut",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "circuit": "interlagos",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "haas-ocon-camara-brazil",
-   "title": "カマラ、デビュー戦FP2でルクレールの走行を妨害　「危険」とされ戒告",
-   "summary": "The Raceによると、ハースのカマラはF1デビュー戦のFP2で、アタックラップに入る際にコース上へ出てルクレールを妨害し、戒告を受けた。審判団は「明らかに危険」と指摘し、通常の警告から処分を引き上げた。ルクレールが接近するという警告が複数回あったにもかかわらず、フェラーリをランオフ側へ押しやったとされる。タイムはFP1でベアマンから0.86秒遅れ、FP2では0.57秒差に縮めた。ターン1でのロックアップは続いたが、ハースのニッド氏は「見事だった」と評価した。",
-   "orig": "'Dangerous' but also 'brilliant' - Rafael Camara's F1 debut",
-   "url": "https://www.the-race.com/formula-1/f1-debutant-camara-punished-for-dangerous-leclerc-impeding/",
-   "published": "2026-11-06T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-mclaren-2027-front-wing",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "circuit": "interlagos",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "mclaren-brazil-update-2027",
-   "title": "マクラーレン、2027年型につながる新フロントウイングをブラジルで投入",
-   "summary": "The Raceによると、マクラーレンはサンパウロGPでMCL40にフロントウイングを一新し、リアウイングの改良とフロアの手直しもあわせて投入した。メインプレーンとエンドプレート下縁の取り付け位置を変え、ノーズとの接続を2枚目のフラップ側に移すなど、コンセプトから見直している。この前翼は2027年型MCL41のローンチ仕様にも引き継ぐ方針だ。空力担当のプロドロモウは、今の車を良くして選手権3位を争うための改良だと説明した。狙いはダウンフォース増と車のバランス改善で、来季の開発にも知見が生きるという。",
-   "orig": "McLaren's 2027 F1 front wing breaks cover in Brazil",
-   "url": "https://www.the-race.com/formula-1/mclaren-2027-f1-front-wing-breaks-cover-in-brazil/",
-   "published": "2026-11-06T12:00:00+00:00"
   }
  ]
 }
