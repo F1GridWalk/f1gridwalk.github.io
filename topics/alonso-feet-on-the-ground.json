@@ -1,0 +1,316 @@
+{
+ "slug": "alonso-feet-on-the-ground",
+ "gp": "サンパウロGP",
+ "title": "「地に足をつけて」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "雨の予選で、アストンマーティン・ホンダに今季初めてのQ3が来た。45歳のアロンソは9番手。「1周目はタイヤが氷のようで、2周目はエネルギーがなかった」「トップ6は手が届かない惑星にいた」。それでも「いい気分だ」と言い、すぐに「地に足をつけていないと」と足した。メキシコの5周から1週間、ホンダの折原GMは「一歩前進」。21年前にここで初めて王者になった人の、いま。",
+ "checked": "2026-11-09",
+ "checkedNote": "RacingNews365、Motorsport Week、Formula1.com、grandprix.com、The Race、PlanetF1、TopNews、RaceFans、Autosport の原文を11月9日に確認しました。本人と関係者の言葉は英語から編集部が訳し、折原GMの決勝後の言葉は日本語の記事から引用しました。ストロールのリタイアした周は「38周目」（チーム）と「32周目ごろ」（他の記事）で割れていて、本文には出していません。「アロンソの腕が光った」という見出しの記事は、原文が見つかりませんでした。",
+ "common": [
+  "11月7日の雨の予選で、アストンマーティン・ホンダが今季初のQ3。アロンソ9番手、降格で8番グリッド（今季最高）。Q2でフルウェットからインターへの賭け。",
+  "「タイヤが氷のように」「2周目にはエネルギーがなかった」「トップ6は手が届かない惑星」「いい気分だ」「地に足をつけて」。",
+  "メキシコは2台とも5周で終了。ホンダ折原GM「ERSの冷却回路に想定より大きな負荷」「堅牢さが足りない」「弱点は燃焼」、2027年に2段階の改良。",
+  "決勝は12位（スタートでベアマンと接触、「コーナーでは強かったがストレートで足りない」）。ストロールはバッテリーでリタイア。折原GM「一歩前進」。10位7点はすべてアロンソ。2005年にここで初王者。"
+ ],
+ "outlets": [
+  {
+   "id": "de-motorsporttotal-alonso-q3-cold-tyres-no-energy",
+   "angle": "予選",
+   "adds": [
+    "「タイヤは氷のよう」、エネルギー切れ。"
+   ]
+  },
+  {
+   "id": "ja-voice-alonso-honda-q3",
+   "angle": "ファン",
+   "adds": [
+    "日本のファンの反応、ドライの決勝への冷静な声。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「手が届かない惑星」「タイヤが氷のように」",
+   "w": "RacingNews365（11月7日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「いい気分だ」「地に足をつけて」",
+   "w": "Formula1.com（11月7日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "折原GM「冷却回路に負荷」「堅牢さが足りない」「一歩前進」",
+   "w": "Formula1.com、The Race（英語）を編集部が訳した。決勝後はTopNews（日本語）。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ストロールのリタイアの周",
+   "t": "チームは38周目、ほかの記事は32周目ごろ。本文には出していない。"
+  },
+  {
+   "k": "最初にインターへ替えた周",
+   "t": "61周目にラッセルと（F1公式）、60周目にペレスの次（別の記事）。本文は「ラッセルとともに最初に」とした。"
+  }
+ ],
+ "unknownsFillable": [
+  "ストロールのERSの問題の原因。",
+  "ラスベガスの結果。"
+ ],
+ "unknownsLimits": [
+  "2027年の改良の中身。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "Q3は、何を意味するか？",
+  "rows": [
+   {
+    "k": "条件",
+    "t": "雨。Q2でインターに替えた賭けが当たった。本人は「乾いたFP3はがっかり」「自然な位置に戻るだけ」と、雨の結果だと認めている。"
+   },
+   {
+    "k": "ホンダ",
+    "t": "折原GMは「パートナーシップが始まってから最高」「一歩前進」。メキシコで認めた弱点のあとの、1週間。"
+   },
+   {
+    "k": "本人",
+    "t": "45歳で「学ばないといけない」「地に足をつけて」。来年も走ることは決めている。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "ホンダのメキシコの5周とは？",
+   "rules": [
+    "ers",
+    "pu-manufacturer"
+   ]
+  },
+  {
+   "q": "フルウェットとインター、どう使い分ける？",
+   "rules": [
+    "full-wet",
+    "intermediate"
+   ]
+  },
+  {
+   "q": "同じ日のヒュルケンベルグは？",
+   "rules": [
+    "grid-penalty"
+   ],
+   "links": [
+    "/topics/hulkenberg-keep-it-clean/"
+   ]
+  }
+ ],
+ "todo": [
+  "ラスベガスの結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-07T16:45:00-03:00",
+   "t": "今季初のQ3、9番手"
+  },
+  {
+   "at": "2026-11-09T21:30:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "アロンソは11月7日の雨のサンパウロGP予選で、アストンマーティン・ホンダに今季初めてのQ3をもたらし、9番手（降格で8番グリッド、今季最高）。Q2でフルウェットからインターに替える賭けが当たった。「1周目はタイヤが氷のように冷たく、2周目はエネルギーがなかった」「トップ6は手が届かない惑星にいた」「いい気分だが、地に足をつけていないと」。1週間前のメキシコでは2台とも5周で終わり、ホンダの折原GMは「ERSの冷却回路に想定より大きな負荷」「弱点は燃焼」と認めていた。決勝は12位で、折原GMは「一歩前進」。45歳、2005年にこのコースで初めて王者になった。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "雨の予選で、アストンマーティン・ホンダに今季初めてのQ3が来た。45歳のアロンソは「トップ6は手が届かない惑星にいた」と言い、すぐに「地に足をつけていないと」と足した。メキシコの5周から、1週間後の一歩。",
+  "body": [
+   [
+    "h",
+    "「手が届かない惑星」"
+   ],
+   [
+    "p",
+    "11月7日、土曜日のインテルラゴス。雨で長く止まった予選のQ3に、今年初めて、アストンマーティンがいた。フェルナンド・アロンソ、9番手。前の1台の降格で、決勝は8番グリッドになる。"
+   ],
+   [
+    "p",
+    "本人の説明は、細かかった。「1周目は、列の先頭にいて、タイヤが氷のように冷たくて、グリップがまったくなかった」。「1周だけの予選だと思っていたから、1周目でエネルギーをたくさん使った。2周目には、エネルギーが残っていなかった」。「1周目はタイヤの準備ができていなくて、2周目はエンジンの準備ができていなかった」。"
+   ],
+   [
+    "p",
+    "「トップ6は、手が届かない惑星にいた」。「6番手は僕の1.8秒前だったから、それより上を夢見るのは無理だった」。「結局、どこでもない場所に落ち着いた」。「この経験から、学ばないといけない」。"
+   ],
+   [
+    "h",
+    "賭け"
+   ],
+   [
+    "p",
+    "Q3に行けたのは、Q2で賭けたからだ。全員がフルウェットで走っていたところで、アロンソはインターミディエイトに替えた。ほかの車がタイムを上げてくる中で、「『いまは9番手だけど、何も変えずに走り続ければ、たぶんQ3には行けない』と言った」。「うまくいけばQ3。うまくいかなくても、フルウェットのままでもどうせQ3の外だ」。"
+   ],
+   [
+    "p",
+    "うまくいった。チームの現場責任者クラックは、「今季初めてのQ3。今日の収穫だ」。ホンダの折原伸太郎GMは、「フェルナンドは8番グリッドからスタートする。今年の、そしてアストンマーティンとのパートナーシップが始まってからの、最高の結果だ」。"
+   ],
+   [
+    "p",
+    "アロンソは、「今季初のQ3は、いい気分だ」。「新しい可能性が開ける」。そして、すぐに付け足した。「でも、乾いたFP3は少しがっかりする内容だったから、地に足をつけていないといけない」。「そうでなければ、僕らの自然な位置に戻るだけだ」。"
+   ],
+   [
+    "h",
+    "メキシコの5周"
+   ],
+   [
+    "p",
+    "その1週間前、メキシコシティで、アストンマーティンの2台は、どちらも5周もたずに終わっていた。アロンソは3周目の終わりに冷却のために呼び戻され、そのままリタイア。ストロールも止まった。"
+   ],
+   [
+    "p",
+    "ホンダの折原GMは、隠さなかった。「特別な状況で、ERSの冷却回路に、想定より大きな負荷がかかっていたことが分かった」。「私たちのエンジンには、特別な状況で、堅牢さが足りないところがある」。「今年のすべてのレースで、2027年のために学ばないといけない。厳しい教訓でも」。"
+   ],
+   [
+    "p",
+    "10月のオースティンでは、こうも言っている。「間違いなく、僕らの弱点は燃焼だ」。来年は開幕に向けてひとつ、シーズン半ばにもうひとつ、大きな改良を入れる計画だと、チーム代表のニューウェイも認めている。"
+   ],
+   [
+    "h",
+    "日曜日、12位"
+   ],
+   [
+    "p",
+    "日曜日のアロンソは8番グリッドから出て、3コーナーでコントロールを失ったベアマンとの接触を避けられず、順位を落とした。それでもコーナーでは速く、アルボンと何周も争い、7コーナーで抜き返した。雨が戻ると、ラッセルとともに最初にインターミディエイトへ替えた。12位。ストロールはバッテリーの問題でリタイアした。"
+   ],
+   [
+    "p",
+    "「今日のクルマは強かった。特にコーナーでは。コース上でいい争いができていた」。「僕らにとって、いちばん競争力のあるレースのひとつだったと思う。ただ、ストレートではパフォーマンスが足りなかった」。「この週末には前向きなものがある。来年に向けて差を詰めるために、働き続けないといけない」。"
+   ],
+   [
+    "p",
+    "折原GMは、「前戦の厳しい結果を踏まえると、今日は一歩前進できたと考えています」。アストンマーティンはコンストラクターズ10位、7点。7点はすべて、アロンソが取ったものだ。"
+   ],
+   [
+    "h",
+    "2005年9月25日"
+   ],
+   [
+    "p",
+    "インテルラゴスは、アロンソが初めてチャンピオンになった場所だ。2005年9月25日、ポールから3位でゴールして、24歳で当時の最年少王者になった。21年後の同じコースで、45歳のアロンソは、9番手のQ3を「いい気分だ」と言っている。"
+   ],
+   [
+    "p",
+    "9月、来年もアストンマーティンで走ることを発表したとき、本人はこう言った。「僕はF1を引退する。でも、まだじゃない」。「まだ速いと感じているし、やる気があるし、F1とこのスポーツへの大きな情熱がある」。「これが、僕の人生だ」。"
+   ],
+   [
+    "h",
+    "「地に足をつけて」"
+   ],
+   [
+    "p",
+    "今季のアロンソのQ3は、まだ1回だけだ。グリッドで年上の人はいない。手が届かない惑星までの距離を、本人は1.8秒と数えていた。"
+   ],
+   [
+    "p",
+    "「地に足をつけていないといけない」。45歳の人が、今季初のQ3のあとに言った言葉だ。地に足をつけて走るレースは、今年あと3戦ある。"
+   ]
+  ],
+  "terms": [
+   [
+    "フルウェットとインターミディエイト",
+    "full-wet"
+   ],
+   [
+    "エネルギー回生（ERS）",
+    "ers"
+   ],
+   [
+    "パワーユニットの製造者",
+    "pu-manufacturer"
+   ],
+   [
+    "インテルラゴス",
+    "circuit-interlagos"
+   ],
+   [
+    "コンストラクターズ",
+    "constructors-championship"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "RacingNews365",
+    "title": "Fernando Alonso faced 'unreachable planet' in Aston Martin F1 breakthrough",
+    "url": "https://racingnews365.com/fernando-alonso-faced-unreachable-planet-in-aston-martin-f1-breakthrough",
+    "note": "2026年11月7日。「タイヤが氷のように」「2周目にはエネルギーがなかった」「手が届かない惑星」「1.8秒前」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Motorsport Week",
+    "title": "Fernando Alonso Brazil GP qualifying",
+    "url": "https://www.motorsportweek.com/2026/11/08/fernando-alonso-brazil-gp/",
+    "note": "2026年11月8日。「どこでもない場所」「学ばないといけない」、Q2でインターに替えた判断。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'First Q3 of the season feels good' – Alonso has 'feet on the ground' after best qualifying of the season in Brazil",
+    "url": "https://www.formula1.com/en/latest/article/first-q3-of-the-season-feels-good-alonso-has-feet-on-the-ground-after-best-qualifying-of-the-season-in-brazil.4OATD4hn8zsO4htkxOYBBE",
+    "note": "2026年11月7日。「いい気分だ」「新しい可能性」「地に足をつけて」「自然な位置に戻るだけ」。"
+   },
+   {
+    "name": "grandprix.com",
+    "title": "Brazilian GP 2026 Saturday team quotes",
+    "url": "https://www.grandprix.com/races/brazilian-gp-2026-saturday-team-quotes.html",
+    "note": "2026年11月7日。クラック「今季初めてのQ3」、折原GM「パートナーシップが始まってから最高の結果」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Why Aston Martin's Mexico City Grand Prix ended after five laps",
+    "url": "https://formula1.com/en/latest/article/why-aston-martins-mexico-city-grand-prix-ended-after-five-laps.2j9GYm3FSjAOGu23hmaMTA",
+    "note": "2026年11月。折原GM「ERSの冷却回路に負荷」。"
+   },
+   {
+    "name": "The Race",
+    "title": "Honda's F1 engine problem explained: Aston Martin Mexico to Brazil",
+    "url": "https://www.the-race.com/formula-1/honda-f1-engine-problem-aston-martin-mexico-brazil/",
+    "note": "2026年11月5日。折原GM「堅牢さが足りない」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Honda reveals double Aston Martin Mexico retirement reason",
+    "url": "https://www.planetf1.com/news/honda-reveals-double-aston-martin-mexico-retirement-reason",
+    "note": "2026年11月。「厳しい教訓でも」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Honda upgrade timeline: 'big step' for 2027 season",
+    "url": "https://www.planetf1.com/news/honda-upgrade-timeline-2027-season-big-step",
+    "note": "2026年10月27日。「弱点は燃焼」、2027年の2段階の改良。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Race day in Brazil 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-brazil-2026.6WRrgNQ7FDoFnwzxR9Vjw7",
+    "note": "2026年11月8日。アロンソ「コーナーでは強かった」「いちばん競争力のあるレースのひとつ」「ベアマンとの接触」、クラック「バッテリーの問題」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "TopNews",
+    "title": "ホンダ折原GM、サンパウロGP決勝コメント",
+    "url": "https://topnews.jp/2026/11/09/news/f1/f1races/saopaulogp/261894.html",
+    "note": "2026年11月9日。「今日は一歩前進できたと考えています」。"
+   },
+   {
+    "name": "RaceFans",
+    "title": "2026 Brazilian Grand Prix race result and championship points",
+    "url": "https://www.racefans.net/2026/11/08/2026-brazilian-grand-prix-race-result-and-championship-points/",
+    "note": "アストンマーティン10位7点。"
+   },
+   {
+    "name": "Autosport",
+    "title": "20 years ago: Fernando Alonso won his and Renault's maiden F1 world title",
+    "url": "https://www.autosport.com/f1/news/20-years-ago-fernando-alonso-won-his-and-renaults-maiden-f1-world-title/10762265/",
+    "note": "2005年9月25日、インテルラゴスで3位、24歳で王者。"
+   },
+   {
+    "name": "The Race",
+    "title": "Alonso extends F1 career into 2027",
+    "url": "https://www.the-race.com/formula-1/alonso-extends-f1-career-into-2027/",
+    "note": "2026年9月29日。「引退する。でも、まだじゃない」「これが僕の人生だ」（英語から編集部が訳した）。"
+   }
+  ]
+ }
+}

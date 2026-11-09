@@ -1,0 +1,356 @@
+{
+ "slug": "hamilton-400th-start",
+ "gp": "サンパウロGP",
+ "title": "1周目、11台",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "史上2人目の400戦目。木曜日に「300に届いたら勝てないと言われて、300戦目で勝った。だから400戦目を勝つのが目標になる」と言い、その夜にホテルでルクレールと会い、土曜日にコックピットに煙が入って20番グリッドへ。日曜日は1周目に11台抜き、誰より早くスリックに替え、2008年に王者になった12コーナーでスピンした。9位。",
+ "checked": "2026-11-09",
+ "checkedNote": "Formula1.com、RacingNews365、Daily Sabah（ロイター）、RACER、The Race、ESPN、PlanetF1、Crash.net、Free Malaysia Today（ロイター）、Motorsport-Total.com、Mercedes-AMG F1、RaceFans の原文を11月9日に確認しました。本人の言葉は英語とドイツ語から編集部が訳しました。「400戦目」はエントリーも出走も400で、欠場がないため一致しています。スピンした周は、どの記事にも明記されていません。「年を取った元ドライバー」の発言がどの日のものかは、記事に書かれていません。",
+ "common": [
+  "400回目のスタート（史上2人目、アロンソに次ぐ）。木曜「300戦目で勝った。400戦目を勝つのが目標」。",
+  "木曜夜にヴァッスール代表と2人で会合。ヴァッスール「チームが最初」「親友になれとは言わない」。土曜、ハミルトン「けりをつけた」、ルクレール「閉じた章」。",
+  "FP3で煙、パワーユニット丸ごと交換で20番グリッド。決勝は1周目に9番手（ベアマンに順位を返す）、14周目に最初にスリック、「リアタイヤが膨らんだ」、余計に1回ストップ、終盤に12コーナーの登りでスピン、9位。",
+  "ランキング4位261点。2027年もフェラーリ。"
+ ],
+ "outlets": [
+  {
+   "id": "en-f1com-sao-paulo-norris-wins-mercedes-title",
+   "angle": "決勝",
+   "adds": [
+    "400戦目、20番手から9位、12コーナーのスピン。"
+   ]
+  },
+  {
+   "id": "en-therace-hamilton-leclerc-meeting-learned",
+   "angle": "会合",
+   "adds": [
+    "ヴァッスール代表と2人の面談。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-hamilton-never-apologise",
+   "angle": "木曜",
+   "adds": [
+    "「謝るつもりはない」。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-hamilton-bitter-old-drivers",
+   "angle": "若手",
+   "adds": [
+    "「年を取った元ドライバーのようになりたくない」。"
+   ]
+  },
+  {
+   "id": "en-therace-ferrari-worst-friday",
+   "angle": "金曜",
+   "adds": [
+    "今季最悪の金曜。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「300戦目で勝った」「400戦目を勝つのが目標」",
+   "w": "Daily Sabah（ロイター、11月5日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「リアタイヤが膨らんで」「雨が強くなっていることを聞いていなかった」",
+   "w": "Free Malaysia Today（ロイター、11月9日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「若い人たちのことを悪く言う」「謙虚さと品位」",
+   "w": "Motorsport-Total.com（11月7日、ドイツ語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "ヴァッスールの言葉",
+   "t": "「個人がチームに優先してはならない」と訳す要約があるが、原文で確認できたのは「チームが最初に来る」。"
+  },
+  {
+   "k": "FP3で壊れた部品",
+   "t": "どの記事も特定していない。フェラーリは「パワーユニット全体を交換」とだけ発表。"
+  }
+ ],
+ "unknownsFillable": [
+  "スピンした周。",
+  "ラスベガスの結果。"
+ ],
+ "unknownsLimits": [
+  "木曜夜の会合の中身。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "400戦目は、どんな週末だったか？",
+  "rows": [
+   {
+    "k": "言葉",
+    "t": "「謝らない」「黙らされない」から、「けりをつけた」まで。木曜から土曜で、言葉が変わった。"
+   },
+   {
+    "k": "マシン",
+    "t": "金曜は今季最悪、土曜は煙、日曜は20番グリッド。それでも1周目に11台。"
+   },
+   {
+    "k": "場所",
+    "t": "2008年に王者になった12コーナーで、400戦目が終わった。本人は「雨が強くなっていることを聞いていなかった」。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "メキシコでルクレールと何があった？",
+   "rules": [
+    "teammate-battle"
+   ],
+   "links": [
+    "/topics/hamilton-long-time-coming/"
+   ]
+  },
+  {
+   "q": "ハジャーの件を、なぜ報告しなかった？",
+   "rules": [
+    "impeding"
+   ],
+   "links": [
+    "/topics/hadjar-dream-to-race-him/"
+   ]
+  },
+  {
+   "q": "パワーユニット交換の降格は、どう決まる？",
+   "rules": [
+    "grid-penalty",
+    "pu-allocation"
+   ]
+  },
+  {
+   "q": "同じ日のラッセルは？",
+   "rules": [
+    "race-engineer"
+   ],
+   "links": [
+    "/topics/russell-that-was-a-p1-lap/"
+   ]
+  }
+ ],
+ "todo": [
+  "ラスベガスの結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-08T14:00:00-03:00",
+   "t": "400回目のスタート、20番グリッドから"
+  },
+  {
+   "at": "2026-11-09T21:26:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "ハミルトンはサンパウロGPでF1史上2人目の400回目のスタートを切った。木曜日に「300に届いたら勝てないと言われたが300戦目で勝った。400戦目を勝つのが目標」と言い、同じ夜にホテルでヴァッスール代表とルクレールと会って「けりをつけた」。土曜のFP3でコックピットに煙が入り、パワーユニットを丸ごと交換して20番グリッドへ。決勝は1周目に11台抜いて9番手（ベアマンに順位を返す）、14周目に誰より早くスリックに替えたが「リアタイヤが膨らんで」余計に1回止まり、終盤に2008年に王者になった12コーナーでスピン。9位、ランキング4位261点。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "史上2人目の400戦目。「300に届いたら勝てないと言われて、300戦目で勝った。だから400戦目を勝つのが目標になる」。20番手から1周目に11台抜き、誰より早くスリックに替え、2008年に王者になった12コーナーでスピンした。9位。",
+  "body": [
+   [
+    "h",
+    "12コーナー"
+   ],
+   [
+    "p",
+    "11月8日、日曜日のインテルラゴス。レースの終盤、雨が戻ってきた路面で、ルイス・ハミルトンは12コーナーからの登りでスピンし、壁をかすめて、ピットに入った。9位。1周遅れ。"
+   ],
+   [
+    "p",
+    "12コーナーは、2008年の最終戦の最終ラップで、ハミルトンがトヨタのグロックを抜いて、初めての世界チャンピオンになった場所だ。18年後の同じコーナーで、400戦目のレースは、そういう形で崩れた。"
+   ],
+   [
+    "h",
+    "「400戦目を勝つのが、目標になる」"
+   ],
+   [
+    "p",
+    "この週末、ハミルトンはF1で400回目のスタートを切った。400に届いたのは、史上2人目。もう1人は、同じグリッドにいる45歳のアロンソだ。"
+   ],
+   [
+    "p",
+    "木曜日、本人はこう言っていた。「ちょっとおかしな話だ。あんな数字に届くなんて、一度も思ったことがなかった」。「300戦目に向かっていたころ、みんなが『300に届いたら、もう勝てない』と言っていたのを覚えている」。「それで、僕は300戦目で勝った。だから、400戦目を勝つのが目標になるんだろうね」。"
+   ],
+   [
+    "p",
+    "アロンソは「おめでとう。いい週末になることを願っている」。アントネッリは「彼が成し遂げたことは信じられない」。ラッセルは「とても多くの人にとっての、インスピレーションだ」。"
+   ],
+   [
+    "h",
+    "木曜日の夜、ホテルで"
+   ],
+   [
+    "p",
+    "400戦目の週は、静かには始まらなかった。1週間前のメキシコで、ハミルトンはチームメイトのルクレールと1周目に接触し、ルクレールの動きを「敬意を欠く」と言っていた。木曜日のインテルラゴスで、「本物で、率直であることを、謝るつもりは決してない。黙らされるつもりもない」。"
+   ],
+   [
+    "p",
+    "その夜、サンパウロ市内のホテルで、ヴァッスール代表と2人のドライバーが会った。ルクレールは娘が生まれたばかりで、モナコから飛んできていた。ヴァッスール代表は翌日、「うまくいった」。「彼らはチームのために働いていて、チームが最初に来る」。「親友になれとは言っていない。プロとして振る舞い、働くことを求めているだけだ」。"
+   ],
+   [
+    "p",
+    "土曜日、ハミルトンは言った。「チャールズと座って話した。けりをつけて、前に進む」。ルクレールは、「閉じた章だと考えている」。"
+   ],
+   [
+    "h",
+    "土曜日の煙"
+   ],
+   [
+    "p",
+    "金曜日のフェラーリは、今季初めて、2台ともトップ5の外で終えた。土曜日のFP3、ハミルトンは変な振動と強いエンジンブレーキを報告し、コックピットに煙が入った。7周で終わり。すでに5基目のエンジンを入れて10グリッド降格が決まっていたが、フェラーリはパワーユニットを丸ごと交換して、20番グリッドからのスタートになった。"
+   ],
+   [
+    "h",
+    "1周目、11台"
+   ],
+   [
+    "p",
+    "20番グリッドから、1周目で9番手まで上がった。11台抜き。ただし5コーナーの出口でベアマンをコースの外から抜いていて、順位を返して11番手に下がった。14周目、誰よりも早くスリックに替えた。"
+   ],
+   [
+    "p",
+    "レースのあと、「本当に厳しい一日で、チーム全体にとって厳しい週末だった」。「彼らは本当にいい仕事をしてくれた。特に、エンジンを載せ替えたメカニックたちは」。「スタートはよかった。でも残念ながら、リアタイヤが膨らんで、熱を持ちすぎた」。「この条件ではとても難しくて、結局、余計に1回ピットに入ることになった」。"
+   ],
+   [
+    "p",
+    "スピンについては、「最初のセクターで雨が強くなっていることを、聞いていなかった」。"
+   ],
+   [
+    "h",
+    "「年を取った元ドライバーのようには」"
+   ],
+   [
+    "p",
+    "この週末、ハミルトンは若いドライバーについて聞かれて、こう話している。「元F1ドライバーや、年を取ったドライバーが、若い人たちのことをずっと悪く言うのを、たくさん見てきた」。「自分も似たことをくぐり抜けてきたはずなのに、共感がまったくない」。「ああいうドライバーには決してならないと、いつも気をつけてきた」。若いドライバーたちは「本物の謙虚さと品位をもって、やっている」。"
+   ],
+   [
+    "p",
+    "ランキングは4位、261点。来年もフェラーリで走るのかという7月の問いに、ヴァッスール代表は「イエス」と答えている。2021年にここで勝ったあとブラジルの旗を掲げ、翌年にはブラジルの名誉市民になった。その人の400戦目は、12コーナーでスピンして、9位で終わった。"
+   ],
+   [
+    "p",
+    "「400戦目を勝つのが目標になる」。それは、できなかった。401戦目は、2週間後のラスベガスにある。"
+   ]
+  ],
+  "terms": [
+   [
+    "グリッド降格",
+    "grid-penalty"
+   ],
+   [
+    "パワーユニットの交換",
+    "pu-allocation"
+   ],
+   [
+    "チームメイト同士",
+    "teammate-battle"
+   ],
+   [
+    "インテルラゴス",
+    "circuit-interlagos"
+   ],
+   [
+    "インターミディエイト",
+    "intermediate"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。1周目に9番手、ベアマンに順位を返す、14周目にスリック、12コーナーの登りでスピン、9位。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Lewis Hamilton: Key milestones ahead of landmark 400th F1 grand prix",
+    "url": "https://racingnews365.com/lewis-hamilton-key-milestones-ahead-of-landmark-400th-f1-grand-prix",
+    "note": "2026年11月4日。400戦目、史上2人目、アロンソに次ぐ。"
+   },
+   {
+    "name": "Daily Sabah",
+    "title": "Hamilton hits 400-race mark amid lingering Ferrari discontent",
+    "url": "https://www.dailysabah.com/sports/motorsports/hamilton-hits-400-race-mark-amid-lingering-ferrari-discontent/amp",
+    "note": "2026年11月5日。「ちょっとおかしな話だ」「300に届いたら勝てない」「300戦目で勝った」「400戦目を勝つのが目標」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Rivals pay tribute as Lewis Hamilton reaches 400 Formula 1 starts at Sao Paulo Grand Prix",
+    "url": "https://www.formula1.com/en/latest/article/rivals-pay-tribute-as-lewis-hamilton-reaches-400-formula-1-starts-at-sao-paulo-grand-prix.7ahLqNwTWm8Nze2o9hteZB",
+    "note": "2026年11月8日。アロンソ、アントネッリ、ラッセルの言葉。"
+   },
+   {
+    "name": "RACER",
+    "title": "As Ferrari tensions simmer, Hamilton doubles down",
+    "url": "https://racer.com/2026/11/06/as-ferrari-tensions-simmer-hamilton-doubles-down",
+    "note": "2026年11月5日。「謝るつもりは決してない。黙らされるつもりもない」。"
+   },
+   {
+    "name": "The Race",
+    "title": "What we learned about Ferrari's Hamilton-Leclerc meeting",
+    "url": "https://www.the-race.com/formula-1/what-we-learned-about-ferraris-hamilton-leclerc-meeting/",
+    "note": "2026年11月6日。木曜夜のホテルでの会合、ヴァッスール「チームが最初に来る」「親友になれとは言っていない」。"
+   },
+   {
+    "name": "ESPN",
+    "title": "Hamilton and Leclerc squash Mexico row",
+    "url": "https://www.espn.com/f1/story/_/id/50389063/",
+    "note": "2026年11月7日。「けりをつけて、前に進む」、ルクレール「閉じた章」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "F1 results: Brazilian Grand Prix 2026 – FP2 (Interlagos)",
+    "url": "https://www.planetf1.com/news/f1-results-brazilian-grand-prix-2026-fp2-interlagos",
+    "note": "2026年11月6日。ハミルトン6番手、ルクレール7番手。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Lewis Hamilton joins Max Verstappen at back of Brazil grid after engine drama",
+    "url": "https://www.crash.net/f1/news/1109740/1/lewis-hamilton-joins-max-verstappen-back-brazil-grid-after-engine-drama",
+    "note": "2026年11月7日。FP3の振動と煙、パワーユニット丸ごと交換、最後尾。"
+   },
+   {
+    "name": "Free Malaysia Today / Reuters",
+    "title": "Subdued Hamilton praises Ferrari after tricky weekend",
+    "url": "https://www.freemalaysiatoday.com/category/sports/2026/11/09/subdued-hamilton-praises-ferrari-after-tricky-weekend",
+    "note": "2026年11月9日。「本当に厳しい一日」「メカニックたち」「リアタイヤが膨らんで」「余計に1回」「雨が強くなっていることを聞いていなかった」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Motorsport-Total.com",
+    "title": "Lewis Hamilton: Wollte nie so verbittert werden wie die anderen alten Fahrer",
+    "url": "https://www.motorsport-total.com/formel-1/news/lewis-hamilton-wollte-nie-so-verbittert-werden-wie-die-anderen-alten-fahrer-26110703",
+    "note": "2026年11月7日。「若い人たちのことを悪く言う」「共感がまったくない」「謙虚さと品位」（ドイツ語の記事から編集部が訳した）。"
+   },
+   {
+    "name": "Mercedes-AMG F1",
+    "title": "How the Interlagos corners got their names",
+    "url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+    "note": "12コーナー（ジュンソン）で2008年の最終ラップにグロックを抜いた。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "From Senna's inspiration to an honorary citizen – why Hamilton has a special relationship with Brazil",
+    "url": "https://formula1.com/en/latest/article/from-sennas-inspiration-to-an-honorary-citizen-why-hamilton-has-a-special.1sEy5DwmLocsejVlyybvWy",
+    "note": "2021年の旗、2022年の名誉市民。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Ferrari confirm major Lewis Hamilton decision over 2027 F1 seat",
+    "url": "https://racingnews365.com/ferrari-confirm-major-lewis-hamilton-decision-over-2027-f1-seat",
+    "note": "2026年7月。ヴァッスール「イエス」。"
+   },
+   {
+    "name": "RaceFans",
+    "title": "2026 Brazilian Grand Prix race result and championship points",
+    "url": "https://www.racefans.net/2026/11/08/2026-brazilian-grand-prix-race-result-and-championship-points/",
+    "note": "ハミルトン4位261点。"
+   }
+  ]
+ }
+}

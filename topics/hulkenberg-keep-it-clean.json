@@ -1,0 +1,371 @@
+{
+ "slug": "hulkenberg-keep-it-clean",
+ "gp": "サンパウロGP",
+ "title": "「クリーンに走る」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "金曜日は1周も走れなかった。雨の土曜日に6番手、降格で4番グリッド。アウディの最高位で、本人にとっても2020年以来。「天気を願わなくなって久しい」「経験が助けてくれる」。16年前の同じ11月の土曜日、同じコースで、23歳の新人がポールを取り、「F1に何年も長くいたい」と言った。39歳のインテルラゴス。",
+ "checked": "2026-11-08",
+ "checkedNote": "Crash.net、Formula1.com、AutoHebdo、Motorsport-Total.com、F1-Insider、grandprix.com、theScore、RacingNews365、ESPN、PlanetF1、Pit Debrief、GPblog の原文を11月8日に確認しました。本人の言葉は英語とドイツ語から編集部が訳しました。チーム代表の名前として「ウィートリー」を出す記事がありますが、3月に退任しており、現在はビノットが兼務、マクニッシュがレース責任者です。通算の出走数は資料で数え方が割れるので本文には出していません。",
+ "common": [
+  "11月7日の雨の予選で6番手（1分28秒668）、ラッセルとルクレールの降格で4番グリッド。アウディ最高、本人も2020年シルバーストンの3番以来。",
+  "金曜はFP1をスレーターに譲り（序盤に止まる）、FP2も走れず0周。FP3で13番手。「最初の周からいい感触」「経験が助けてくれる」「天気を願わなくなって久しい」。",
+  "2010年11月6日、同じコースでウィリアムズの新人としてポール（ベッテルに1.049秒差）。2025年7月シルバーストン、239戦目で初表彰台。",
+  "アウディは8位、ハースに4点差。ボルトレートはQ1でクラッシュ。マクニッシュ「これまでで最高の予選」。"
+ ],
+ "outlets": [
+  {
+   "id": "de-motorsportmagazin-huelkenberg-audi-record",
+   "angle": "予選",
+   "adds": [
+    "アウディ最高の4番グリッド、金曜のトラブル。"
+   ]
+  },
+  {
+   "id": "pt-grandepremio-bortoleto-quali-crash",
+   "angle": "チームメイト",
+   "adds": [
+    "ボルトレートのQ1クラッシュ。"
+   ]
+  },
+  {
+   "id": "en-therace-brazil-grid-penalties",
+   "angle": "グリッド",
+   "adds": [
+    "降格の一覧。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「天気を願わなくなって久しい」「経験が助けてくれる」",
+   "w": "AutoHebdo（11月7日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「クリーンに走り続けて、最大限を絞り出した」",
+   "w": "F1-Insider（11月7日、ドイツ語）を編集部が訳した。"
+  },
+  {
+   "t": "2010年「スリックが正しい選択」「何年も長くいたい」",
+   "w": "grandprix.com（2010年11月6日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "予選の中断時間",
+   "t": "「1時間25分」とする記事と、具体的な時間を書かない記事がある。本文には出していない。"
+  },
+  {
+   "k": "契約",
+   "t": "2027年末までと報じる記事があるが、公式には確認できていない。本文には出していない。"
+  }
+ ],
+ "unknownsFillable": [
+  "ハースとの7位争いの行方（残り3戦）。"
+ ],
+ "unknownsLimits": [
+  "通算の出走数（資料で数え方が割れる）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜ、0周の翌日に4番グリッドなのか？",
+  "rows": [
+   {
+    "k": "経験",
+    "t": "本人は「コースをよく知っている。こういう条件では経験が助けてくれる」。2010年の雨上がりのポール、2025年の雨の表彰台。"
+   },
+   {
+    "k": "感触",
+    "t": "「最初の周からいい感触があれば、金曜の損失で苦しまない」。FP3の13番手から、予選で6番手。"
+   },
+   {
+    "k": "クリーン",
+    "t": "Q1でチームメイトが消えた日に、「鍵はクリーンに保つこと」。日曜の目標も同じ言葉。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "ボルトレートの土曜日は？",
+   "rules": [
+    "home-race"
+   ],
+   "links": [
+    "/topics/bortoleto-just-want-to-go-home/"
+   ]
+  },
+  {
+   "q": "ラッセルは、なぜ怒っていた？",
+   "rules": [
+    "race-engineer"
+   ],
+   "links": [
+    "/topics/russell-that-was-a-p1-lap/"
+   ]
+  },
+  {
+   "q": "新人のFP1とは？",
+   "rules": [
+    "rookie-fp1"
+   ]
+  },
+  {
+   "q": "グリッド降格は、どう決まる？",
+   "rules": [
+    "grid-penalty"
+   ]
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-11-07T16:45:00-03:00",
+   "t": "予選6番手、4番グリッド"
+  },
+  {
+   "at": "2026-11-09T21:24:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  },
+  {
+   "at": "2026-11-09T21:25:00+09:00",
+   "t": "決勝10位、1点を追記"
+  }
+ ],
+ "answer": "ヒュルケンベルグは11月7日の雨のサンパウロGP予選で6番手（1分28秒668）、ラッセルとルクレールの降格で4番グリッド。アウディがF1に来て最高の位置で、本人にとっても2020年シルバーストンの3番以来。金曜はFP1を新人スレーターに譲り（序盤に止まる）、FP2も走れず0周だった。「天気を願わなくなって久しい」「最初の周からいい感触があった」「経験が助けてくれる」。2010年11月6日には同じコースでウィリアムズの新人としてポール。チームメイトのボルトレートはQ1でクラッシュ。「鍵はクリーンに保つこと」。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "金曜日は0周。雨の土曜日に6番手、降格で4番グリッド。アウディの最高位で、本人も2020年以来。「天気を願わなくなって久しい」。16年前の同じ土曜日、同じコースで、23歳の新人がポールを取った。39歳のインテルラゴス。",
+  "body": [
+   [
+    "h",
+    "「天気を願わなくなって久しい」"
+   ],
+   [
+    "p",
+    "11月7日、土曜日のインテルラゴス。雨の予選で、ニコ・ヒュルケンベルグは6番手のタイムを出した。前の2人の降格で、日曜日のグリッドは4番。アウディがF1に来て1年目で、いちばん前のグリッドになる。本人にとっても、2020年のシルバーストンの3番グリッド以来の位置だ。"
+   ],
+   [
+    "p",
+    "「来るものを、来るままに受け取る。雨だとか晴れだとか、天気を願わなくなって久しい」。「簡単じゃなかった。難しかった。でも、こうやって抜けてこられたことに満足している」。"
+   ],
+   [
+    "p",
+    "「こんな位置は、ふつうは期待できない。それは確かだ。でも、いいQ3だった」。39歳の土曜日だった。"
+   ],
+   [
+    "h",
+    "金曜日、0周"
+   ],
+   [
+    "p",
+    "その前日、ヒュルケンベルグは1周も走っていなかった。FP1は新人のスレーターに譲る予定で、スレーターは序盤にパワーを失って坂の途中で止まった。原因は分かったが、FP2までに直らなかった。「今日は、僕の周回はなし」。土曜の朝のFP3で初めて走って、13番手。"
+   ],
+   [
+    "p",
+    "「最初の周から、マシンにすごくいい感触があった。ここでは、それが大事なんだ」。「マシンの感触さえよければ、金曜日に失った時間でそれほど苦しまないと分かっていた。幸い、その通りになった」。"
+   ],
+   [
+    "p",
+    "「ここでは過去に何度も走っていて、コースをよく知っている。こういう条件では、経験が助けてくれる」。"
+   ],
+   [
+    "h",
+    "2010年11月6日"
+   ],
+   [
+    "p",
+    "経験の最初の1ページは、同じサーキットの、同じ11月の土曜日にある。2010年11月6日、ウィリアムズの新人だった23歳のヒュルケンベルグは、乾きかけた路面で最後にスリックタイヤを選び、2番手のベッテルに1.049秒の差をつけて、ポールポジションを取った。ウィリアムズにとって5年ぶりのポールだった。"
+   ],
+   [
+    "p",
+    "そのとき、こう言った。「最後はスリックが正しい選択だった。出せるものは全部絞り出した」。「初めてのポールは、感情的で、歴史的な瞬間だ。僕はF1に、何年も長くいたいから」。"
+   ],
+   [
+    "p",
+    "それから16年。本人は今回、「あのときは半分乾いた路面、今日は濡れた路面」と、2つを同じには扱っていない。それでも、インテルラゴスの雨の土曜日に、39歳のヒュルケンベルグは、あの日と同じことを言っている。「クリーンに走り続けて、最大限を絞り出した」。"
+   ],
+   [
+    "h",
+    "239戦目の表彰台"
+   ],
+   [
+    "p",
+    "「何年も長くいたい」は、本当になった。2025年7月のシルバーストン、239戦目にして初めての表彰台。19番グリッドから、雨の中を3位まで上がって、最後は地元のハミルトンを抑えた。無線で、ハミルトンを待っていた観客に向けるように、「ごめん、みんな。でも今日は僕の日でもある」。"
+   ],
+   [
+    "p",
+    "アウディでの今年は、開幕戦を欠場し、前半11戦でリタイアと欠場が合わせて4回あった。初めての入賞は8月のハンガリーの9位。ザントフォールトとシンガポールの8位がベストで、13点。グリッドで年上なのは、45歳のアロンソと41歳のハミルトンだけだ。"
+   ],
+   [
+    "h",
+    "2台のうち、1台"
+   ],
+   [
+    "p",
+    "この土曜日、アウディのもう1台は、Q1で終わった。週末を通してトップ10にいたボルトレートが、12コーナーで前輪をロックさせて壁に軽く当たり、リアウイングがずれて続けられなくなった。レース責任者のマクニッシュは、「まず、ガビに心を寄せたい。週末を通して、あれほど速かったのに」と言ってから、「全体として、これまでで最高の予選だ」。"
+   ],
+   [
+    "p",
+    "ヒュルケンベルグは、「鍵は、とても難しい条件の中でクリーンに保つことだった」。"
+   ],
+   [
+    "p",
+    "アウディは1年目のシーズンを、コンストラクターズ8位で走っている。7位のハースとは4点差。3月にチーム代表のウィートリーが突然去り、ビノットが代表の役割を兼ねる体制で、ここまで来た。"
+   ],
+   [
+    "h",
+    "「クリーンに走る」"
+   ],
+   [
+    "p",
+    "日曜日の予報は、雨。決勝は現地14時、日本時間の月曜日午前2時に始まる。"
+   ],
+   [
+    "p",
+    "「すべてはこれからだ。いい位置からスタートできるから、クリーンに走って、明日は最大限を引き出したい」。後ろからは、降格で下がったハミルトン、フェルスタッペン、ルクレールが上がってくる。浮かれないように、本人がまず口にしたのは、そのことだった。"
+   ],
+   [
+    "p",
+    "天気を願わなくなった人が、雨の予報の日曜日を、4番グリッドで迎える。"
+   ],
+   [
+    "h",
+    "（追記）日曜日"
+   ],
+   [
+    "p",
+    "日曜日は、雨が降ったりやんだりの71周だった。ヒュルケンベルグは4番グリッドから走り、コラピントとの争いでコースの外に押し出したとして10秒のペナルティを受け、それを終盤のピットストップで消化して、10位。最後の1点を持ち帰った。ボルトレートは19番グリッドから16位。"
+   ],
+   [
+    "p",
+    "アウディは28点になり、7位のハースとの差は3点に縮まった。ノリスが勝ち、21番グリッドのフェルスタッペンが2位、ハジャーが3位。メルセデスがコンストラクターズのタイトルを決めた。残りは3戦。"
+   ]
+  ],
+  "terms": [
+   [
+    "新人のFP1",
+    "rookie-fp1"
+   ],
+   [
+    "インターミディエイト",
+    "intermediate"
+   ],
+   [
+    "グリッド降格",
+    "grid-penalty"
+   ],
+   [
+    "インテルラゴス",
+    "circuit-interlagos"
+   ],
+   [
+    "コンストラクターズ",
+    "constructors-championship"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Crash.net",
+    "title": "F1 Brazil Grand Prix full qualifying results",
+    "url": "https://www.crash.net/f1/results/1109817/1/f1-brazil-grand-prix-full-qualifying-results",
+    "note": "2026年11月7日。ヒュルケンベルグ6番手1分28秒668、ノリス1分27秒470。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'All to play for' – Hulkenberg reflects on strong Sao Paulo qualifying for Audi",
+    "url": "https://www.formula1.com/en/latest/article/all-to-play-for-hulkenberg-reflects-on-strong-sao-paulo-qualifying-for-audi.4bMU3ptAMb8EtvF6MCJMke",
+    "note": "2026年11月7日。「すべてはこれから」「クリーンに走って最大限を」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "AutoHebdo",
+    "title": "Hulkenberg in the second row with his Audi: experience helps in these conditions",
+    "url": "https://www.autohebdof1.com/news/f1/Hulkenberg-in-the-second-row-with-his-Audi;-experience-helps-in-these-conditions.html",
+    "note": "2026年11月7日。「天気を願わなくなって久しい」「最初の周からいい感触」「経験が助けてくれる」「こんな位置は期待できない」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "Motorsport-Total.com",
+    "title": "Hülkenberg überrascht in Brasilien: Der beste Startplatz seit Silverstone 2020",
+    "url": "https://motorsport-total.com/formel-1/news/huelkenberg-ueberrascht-in-brasilien-der-beste-startplatz-seit-silverstone-2020-26110806",
+    "note": "2026年11月8日。2020年シルバーストン以来の位置、2010年との路面の違い、後方からの追い上げへの注意。"
+   },
+   {
+    "name": "F1-Insider",
+    "title": "Hülkenberg-Sensation: Audi in Brasilien",
+    "url": "https://f1-insider.com/formel-1-huelkenberg-sensation-audi-brasilien-83778/",
+    "note": "2026年11月7日。「クリーンに走り続けて、最大限を絞り出した」（ドイツ語から編集部が訳した）。"
+   },
+   {
+    "name": "grandprix.com",
+    "title": "Brazilian GP 2026 Saturday team quotes",
+    "url": "https://www.grandprix.com/races/brazilian-gp-2026-saturday-team-quotes.html",
+    "note": "2026年11月7日。「鍵はクリーンに保つこと」、マクニッシュ「最高の予選」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Qualifying in Brazil 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-qualifying-in-brazil-2026.1mHPYet4OKECujD4Pc1l1r",
+    "note": "マクニッシュ「ガビに心を寄せたい」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Friday in Brazil 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-friday-in-brazil-2026.4WPgQlfi6v476KUJTYZeFM",
+    "note": "2026年11月6日。スレーターのFP1、「今日は僕の周回はなし」。"
+   },
+   {
+    "name": "grandprix.com",
+    "title": "Brazilian GP 2010 qualifying report: Hulkenberg takes sensational Brazil pole",
+    "url": "https://www.grandprix.com/races/brazilian-gp-2010-qualifying-report-hulkenberg-takes-sensational-brazil-pole.html",
+    "note": "2010年11月6日。1分14秒470、ベッテルに1.049秒差、「スリックが正しい選択」「感情的で歴史的な瞬間」（英語から編集部が訳した）。"
+   },
+   {
+    "name": "theScore / AP",
+    "title": "Hulkenberg claims first podium at 239th attempt",
+    "url": "https://www.thescore.com/formula1/news/3308728",
+    "note": "2025年7月6日。239戦目、19番グリッドから3位、「今日は僕の日でもある」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Audi F1 Team results",
+    "url": "https://racingnews365.com/f1/teams/audi-f1-team/results",
+    "note": "今季のレース結果。ハンガリー9位、ザントフォールトとシンガポール8位。"
+   },
+   {
+    "name": "ESPN",
+    "title": "F1 constructors standings after Mexico",
+    "url": "https://africa.espn.com/f1/table/_/sort/nld/group/constructors/mex",
+    "note": "ハース31点、アウディ27点。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Audi F1 team principal: Binotto on Wheatley exit decision",
+    "url": "https://www.planetf1.com/news/audi-f1-team-principal-binotto-wheatley-exit-decision",
+    "note": "2026年3月。ウィートリーの退任、ビノットが兼務。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Who is the oldest and youngest F1 driver on the 2026 grid",
+    "url": "https://www.gpblog.com/en/news/who-is-the-oldest-and-youngest-formula-1-driver-on-the-2026-grid",
+    "note": "アロンソ、ハミルトンに次ぐ3番目の年長。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Sunday morning Brazil F1 weather update",
+    "url": "https://racingnews365.com/sunday-morning-brazil-f1-weather-update-as-wet-weather-threat-remains",
+    "note": "2026年11月8日。決勝の雨の予報。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。決勝の結果と経過（追記）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Sao Paulo GP: Lando Norris wins wet race for McLaren as Mercedes seal 2026 F1 Constructors' Championship",
+    "url": "https://www.skysports.com/f1/news/13609694/",
+    "note": "2026年11月8日。メルセデス9度目のタイトル、ヒュルケンベルグのペナルティ（追記）。"
+   }
+  ]
+ }
+}
