@@ -60,8 +60,7 @@
   }
  ],
  "unknownsFillable": [
-  "決勝の結果。",
-  "ハースとの7位争いの行方。"
+  "ハースとの7位争いの行方（残り3戦）。"
  ],
  "unknownsLimits": [
   "通算の出走数（資料で数え方が割れる）。"
@@ -116,9 +115,7 @@
    ]
   }
  ],
- "todo": [
-  "決勝の結果を追記"
- ],
+ "todo": [],
  "updates": [
   {
    "at": "2026-11-07T16:45:00-03:00",
@@ -127,6 +124,10 @@
   {
    "at": "2026-11-08T21:30:00+09:00",
    "t": "原文を確認し、STORYを公開"
+  },
+  {
+   "at": "2026-11-09T10:10:00+09:00",
+   "t": "決勝10位、1点を追記"
   }
  ],
  "answer": "ヒュルケンベルグは11月7日の雨のサンパウロGP予選で6番手（1分28秒668）、ラッセルとルクレールの降格で4番グリッド。アウディがF1に来て最高の位置で、本人にとっても2020年シルバーストンの3番以来。金曜はFP1を新人スレーターに譲り（序盤に止まる）、FP2も走れず0周だった。「天気を願わなくなって久しい」「最初の周からいい感触があった」「経験が助けてくれる」。2010年11月6日には同じコースでウィリアムズの新人としてポール。チームメイトのボルトレートはQ1でクラッシュ。「鍵はクリーンに保つこと」。",
@@ -227,6 +228,18 @@
    [
     "p",
     "天気を願わなくなった人が、雨の予報の日曜日を、4番グリッドで迎える。"
+   ],
+   [
+    "h",
+    "（追記）日曜日"
+   ],
+   [
+    "p",
+    "日曜日は、雨が降ったりやんだりの71周だった。ヒュルケンベルグは4番グリッドから走り、コラピントとの争いでコースの外に押し出したとして10秒のペナルティを受け、それを終盤のピットストップで消化して、10位。最後の1点を持ち帰った。ボルトレートは19番グリッドから16位。"
+   ],
+   [
+    "p",
+    "アウディは28点になり、7位のハースとの差は3点に縮まった。ノリスが勝ち、21番グリッドのフェルスタッペンが2位、ハジャーが3位。メルセデスがコンストラクターズのタイトルを決めた。残りは3戦。"
    ]
   ],
   "terms": [
@@ -341,6 +354,18 @@
     "title": "Sunday morning Brazil F1 weather update",
     "url": "https://racingnews365.com/sunday-morning-brazil-f1-weather-update-as-wet-weather-threat-remains",
     "note": "2026年11月8日。決勝の雨の予報。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。決勝の結果と経過（追記）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Sao Paulo GP: Lando Norris wins wet race for McLaren as Mercedes seal 2026 F1 Constructors' Championship",
+    "url": "https://www.skysports.com/f1/news/13609694/",
+    "note": "2026年11月8日。メルセデス9度目のタイトル、ヒュルケンベルグのペナルティ（追記）。"
    }
   ]
  }

@@ -60,7 +60,7 @@
   }
  ],
  "unknownsFillable": [
-  "決勝の結果。",
+  "決勝後の本人の言葉。",
   "今季のチームメイト対決の数字。"
  ],
  "unknownsLimits": [
@@ -120,9 +120,7 @@
    ]
   }
  ],
- "todo": [
-  "決勝の結果を追記"
- ],
+ "todo": [],
  "updates": [
   {
    "at": "2026-11-07T16:30:00-03:00",
@@ -131,6 +129,10 @@
   {
    "at": "2026-11-08T21:15:00+09:00",
    "t": "原文を確認し、STORYを公開"
+  },
+  {
+   "at": "2026-11-09T10:05:00+09:00",
+   "t": "決勝16位を追記"
   }
  ],
  "answer": "ボルトレートは11月7日のサンパウロGP予選Q1、12コーナーでベアマンとの間隔を空けようとして前輪をロックし、壁に軽く当たってリアウイングがずれ、交換が間に合わず22番手（降格で19番グリッド）。週末を通してトップ10にいただけに、「まず、家に帰って休みたい。すごくいい流れだったのに、しくじった」。去年は57Gのクラッシュで予選欠場、決勝1周目リタイア。「母国のレースは、僕にとって、まだいいものになっていない」。チームメイトのヒュルケンベルグはアウディ最高の4番グリッド。「明日は別の日」。",
@@ -231,6 +233,18 @@
    [
     "p",
     "「家に帰って休みたい」。それは、やめたいという意味ではなかった。家は近い。現地時間の日曜日午後2時、インテルラゴスに、もう一度戻ってくる。"
+   ],
+   [
+    "h",
+    "（追記）日曜日"
+   ],
+   [
+    "p",
+    "戻ってきた日曜日は、雨が降ったりやんだりの71周だった。ボルトレートは19番グリッドから走り、1周遅れの16位でゴールした。点はなかった。チームメイトのヒュルケンベルグは4番グリッドから、終盤にペナルティを消化しながら10位で、アウディに1点を持ち帰った。"
+   ],
+   [
+    "p",
+    "もう1人のブラジル人、カマラは完走した最後の20位。ノリスが勝ち、21番グリッドのフェルスタッペンが2位、メルセデスがコンストラクターズのタイトルを決めた。ボルトレートの母国のレースは、2年目も、いいものにはならなかった。それでも今年は、日曜日の最後まで走った。"
    ]
   ],
   "terms": [
@@ -333,6 +347,18 @@
     "title": "Sunday morning Brazil F1 weather update",
     "url": "https://racingnews365.com/sunday-morning-brazil-f1-weather-update-as-wet-weather-threat-remains",
     "note": "2026年11月8日。雨が残る予報、気温15度未満。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。決勝の結果と経過（追記）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Sao Paulo GP: Lando Norris wins wet race for McLaren as Mercedes seal 2026 F1 Constructors' Championship",
+    "url": "https://www.skysports.com/f1/news/13609694/",
+    "note": "2026年11月8日。メルセデス9度目のタイトル、ヒュルケンベルグのペナルティ（追記）。"
    }
   ]
  }

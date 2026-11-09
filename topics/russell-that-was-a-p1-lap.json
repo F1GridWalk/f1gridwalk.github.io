@@ -67,8 +67,7 @@
   }
  ],
  "unknownsFillable": [
-  "決勝の結果。",
-  "メルセデスのコンストラクターズ決定の可否。"
+  "ピット出口のスピンの詳しい経緯。"
  ],
  "unknownsLimits": [
   "中断しなかった場合に本当にポールだったか（3区間目にアルボンがいた）。"
@@ -126,9 +125,7 @@
    ]
   }
  ],
- "todo": [
-  "決勝の結果を追記"
- ],
+ "todo": [],
  "updates": [
   {
    "at": "2026-11-07T16:45:00-03:00",
@@ -137,6 +134,10 @@
   {
    "at": "2026-11-08T21:00:00+09:00",
    "t": "原文を確認し、STORYを公開"
+  },
+  {
+   "at": "2026-11-09T10:00:00+09:00",
+   "t": "決勝4位、メルセデスのコンストラクターズ決定を追記"
   }
  ],
  "answer": "11月7日のサンパウロGP予選Q3、ラッセルは2周目のアタックで2区間まで全体最速（ノリスより18ミリ秒速い）だったが、アルボンに追いつき、チームの「下げろ」でラップを中断。次の周に雨が強まり、ノリスがポール、ラッセルは0.204秒差の2番手。無線で「あれはP1のラップだった」と怒ったが、降りてからは「意思疎通の行き違い」「僕のエンジニアのせいじゃない。彼には12人が話しかけている」「全員で判断を誤った」「誰かを指さすことはできない」。ウォルフは「五分五分」「ポールには足りなかったと思うが、ポールに値した」。エンジン交換の5グリッド降格で7番グリッド。「明日は雨であってほしい」。",
@@ -229,6 +230,18 @@
    [
     "p",
     "日本時間の月曜日、午前2時。7番グリッドに、P1のラップを走ったと信じている人がいる。"
+   ],
+   [
+    "h",
+    "（追記）日曜日"
+   ],
+   [
+    "p",
+    "決勝は、雨が降ったりやんだりの71周になった。ラッセルは16周目の終わりにスリックに替え、ピット出口でスピンして壁に当たった。それでも走り続け、57周目にチームメイトのアントネッリを前に出し、61周目にはアロンソとともに最初にインターミディエイトへ替えて、4位でゴールした。アントネッリは5位。"
+   ],
+   [
+    "p",
+    "表彰台はなかったが、2台の点でメルセデスはコンストラクターズのタイトルを決めた。チームにとって9度目で、2014年から8連覇したあと、初めてのタイトルになる。ノリスが勝ち、21番グリッドのフェルスタッペンが2位、ハジャーが3位だった。"
    ]
   ],
   "terms": [
@@ -325,6 +338,18 @@
     "title": "Toto Wolff confirms George Russell to remain at Mercedes",
     "url": "https://www.crash.net/f1/news/1099613/1/toto-wolff-confirms-george-russell-remain-mercedes-max-verstappen-radar",
     "note": "2026年6月27日。契約は2027年末まで。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+    "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI",
+    "note": "2026年11月8日。決勝の結果と経過（追記）。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Sao Paulo GP: Lando Norris wins wet race for McLaren as Mercedes seal 2026 F1 Constructors' Championship",
+    "url": "https://www.skysports.com/f1/news/13609694/",
+    "note": "2026年11月8日。メルセデス9度目のタイトル、ヒュルケンベルグのペナルティ（追記）。"
    }
   ]
  }
