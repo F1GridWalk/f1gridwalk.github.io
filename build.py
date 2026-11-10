@@ -3048,11 +3048,18 @@ def add_related(n=3):
         J = load(('deep/' if x['kind'] == 'deep' else 'lens/') + x['url'].strip('/').split('/')[-1] + '.json') or {}
         pages.append((COL_TAG[x['kind']], x['url'], x['title'], ' '.join([x['title'], J.get('dek', ''), J.get('noteTags', '')]), x['dt'].isoformat()))
     ents = {u: page_entities(t, teams) for _, u, _, t, _ in pages}
+    txts = {u: t for _, u, _, t, _ in pages}
+    targets = [u for _, u, _, _, _ in pages if not u.startswith('/topics/')]
+    for a in ((load('news/archive.json', {}) or {}).get('articles') or {}).values():  # news pages (owner, 11 Nov 2026)
+        if not ID_OK.match(a.get('id', '')):
+            continue
+        u = f'/news/{a["id"]}/'
+        txts[u] = ' '.join([a.get('title', ''), a.get('summary', '')])
+        ents[u] = page_entities(txts[u], teams)
+        targets.append(u)
     def w(e_):
         return 2 if e_.startswith('person:') else 1
-    for label, url, title, text, dt in pages:
-        if url.startswith('/topics/'):
-            continue
+    for url in targets:
         f = os.path.join(ROOT, url.strip('/'), 'index.html')
         if not os.path.exists(f):
             continue
@@ -3084,7 +3091,7 @@ def add_related(n=3):
         if st and st not in top:
             top = [st] + top[:n - 1]
         top.sort(key=lambda r: r[2] != 'STORY')
-        mytxt = next((t_ for _, u_, _, t_, _ in pages if u_ == url), '')
+        mytxt = txts.get(url, '')
         def pos(pp):
             ix = [mytxt.find(a) for a in [pp['name']] + (pp.get('aliases') or []) if len(a) >= 2 and mytxt.find(a) >= 0]
             return min(ix) if ix else 10 ** 6
@@ -3775,6 +3782,7 @@ def main():
                     f'<a href="https://b.hatena.ne.jp/add?mode=confirm&url={quote(url)}" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a>'
                     '<button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>')
         body.append('</article>')
+        body.append(f'<!--related:/news/{a["id"]}/-->')  # 「次に読む」 on news pages too (owner, 11 Nov 2026)
 
         others = [x for x in by_topic.get(a.get('topic'), []) if x['id'] != a['id']]
         if others:
