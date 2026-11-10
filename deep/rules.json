@@ -1,7 +1,7 @@
 {
  "title": "DEEP GRID ルールブック",
  "dek": "F1の用語とルール、人物を、言葉を入れて引ける辞典。一言の説明から、規則の中身、今季の実例、肩書きまで。",
- "checked": "2026-11-07",
+ "checked": "2026-11-11",
  "cats": [
   "ペナルティ",
   "パワーユニット",
@@ -818,18 +818,39 @@
    ],
    "short": "タイヤが走るうちに性能を落としていくこと。",
    "body": [
-    "熱でゴムの表面が傷む「熱のデグ」と、路面にこすられて減る「摩耗」がある。デグが大きいとピットストップの回数が増え、作戦の幅が広がる。",
+    "ピレリの説明では、デグには2つの形がある。1つは、タイヤが路面で滑りすぎて表面が熱くなる「オーバーヒート」で、走り方や天気が変わればグリップは戻る。もう1つは、強い熱でゴムの材料の結びつきが変わる「熱のデグラデーション」で、失ったグリップは戻らない。ゴムが削れて減る「摩耗」とは分けて考える。デグの出方で、1回ストップか複数回かが決まる。デグが大きいと、早めに新しいタイヤに替えるアンダーカットが効きやすい。",
     "粗い路面や高い気温はデグを大きくする。"
    ],
    "examples": [
     {
      "t": "DEEP GRID #01 なぜセパンは現代F1にとって「未知」なのか（「紙やすり」の路面）",
      "u": "/deep/sepang-unknown/"
+    },
+    {
+     "t": "サンパウロFP2のロングラン分析　平均のデグラデーションは1周約0.15秒",
+     "u": "/news/de-formel1de-brasilien-longruns/"
+    },
+    {
+     "t": "アルピーヌ、予選は速くても決勝で失速　ガスリー「リアタイヤの消耗が早すぎる」",
+     "u": "/news/it-formula1it-alpine-gasly-sunday-struggle/"
     }
    ],
    "see": [
     "undercut"
-   ]
+   ],
+   "src": [
+    {
+     "name": "F1Technical",
+     "title": "F1 EXPLAINED: What does degradation mean?（ピレリの説明を引用）",
+     "url": "https://www.f1technical.net/news/26577"
+    },
+    {
+     "name": "GPblog",
+     "title": "Why Is Tyre Degradation So Important in Formula 1?（2026年2月9日）",
+     "url": "https://www.gpblog.com/en/general/why-is-tyre-degradation-so-important-in-formula-1"
+    }
+   ],
+   "checked": "2026-11-11"
   },
   {
    "id": "undercut",
@@ -1216,13 +1237,18 @@
     "旗を2本同時に振る。コースの全部または一部をふさぐ危険があるときや、コース上やコース脇でマーシャルが作業しているときに出る。通る車は、速度を大きく落とし、進路を変えるか、止まれるように備える。追い越しは認められない。",
     "予選とスプリント予選では、ダブルイエローの区間を通ったラップのタイムは取り消される。フリー走行でも同じだと、今季のハンガリーGPのレースディレクターノートに書かれている。セーフティカーやVSCの間にダブルイエローの区間を通るときは、そのセクターでFIAのECU（電子制御ユニット）が決めた最低タイムを守る。FIAの2026年のガイドラインでは、減速の目安の一つを、その区間を通る時間が前の周と比べて15%以上長いこととしている（The Raceによる）。",
     "2023年のモナコGPから、VSC中にダブルイエローの区間に入ると、車のダッシュボードの目標タイムとの差（デルタ）がゼロに戻り、新しい、より低い速度の上限を守って走る仕組みになった。FIAのF1電子部門の責任者は、危険を減らすための変更だと説明している。",
-    "ダブルイエローだけで事故を処理する場合もある。今季のバクー決勝の最終盤、ボッタスが15コーナーでクラッシュしたとき、FIAは低速コーナーで他車が避けて通れたため、SCやVSCは出さずにダブルイエローで対応できたと説明した。"
+    "ダブルイエローだけで事故を処理する場合もある。今季のバクー決勝の最終盤、ボッタスが15コーナーでクラッシュしたとき、FIAは低速コーナーで他車が避けて通れたため、SCやVSCは出さずにダブルイエローで対応できたと説明した。",
+    "今季のメキシコGPでは、アルピーヌの2人が黄旗の違反で罰を受けた。コラピントは黄旗1本の区間で十分に減速しなかったとして10秒加算だった。ガスリーはダブルイエローの区間での違反で、ストップ＆ゴーペナルティに代わる30秒加算と、ペナルティポイント2点を受けた。ガスリーの罰が重くなったのはダブルイエローでの違反だったからだと、The Raceは伝えた。"
    ],
    "rule": "スポーティングレギュレーション B1.8.4",
    "examples": [
     {
      "t": "ボッタスのバクー終盤のクラッシュ。VSCは出ず、ダブルイエローで対応したとFIAが説明",
      "u": "/news/ja-f1are-vsc-bottas-explained/"
+    },
+    {
+     "t": "アルピーヌ、黄旗違反の2件のペナルティでメキシコGPの得点をすべて失う",
+     "u": "/news/en-therace-alpine-double-penalty-mexico/"
     }
    ],
    "see": [
@@ -1232,7 +1258,7 @@
     "red-flag",
     "stewards"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -1268,6 +1294,11 @@
      "name": "Crash.net",
      "title": "Why FIA didn't deploy safety car in Baku despite late Valtteri Bottas crash",
      "url": "https://crash.net/f1/news/1105805/1/why-fia-didnt-deploy-safety-car-baku-despite-late-valtteri-bottas-crash"
+    },
+    {
+     "name": "The Race",
+     "title": "Double penalty costs Alpine all its Mexican GP points（2026年11月2日）",
+     "url": "https://the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points"
     }
    ]
   },
@@ -1630,7 +1661,7 @@
     "time-penalty",
     "stewards"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -1857,7 +1888,7 @@
     "規則では、FIAが任命する3人以上4人以下のスチュワード（うち1人が議長）と、開催国のASN（自動車連盟）が推薦する1人が置かれる。今季のオーストラリアGPのスチュワードは4人で、元F1ドライバーのペドロ・ラミーや、地元の国内スチュワードが入っていた。",
     "仕事は、事故や違反の疑いを調べ、罰を出すかどうかを決めることだ。ビデオなど、使える映像や電子データは何でも使える。罰には、タイム加算（5秒・10秒）、ドライブスルー、ストップ・アンド・ゴー、グリッド降格、警告や譴責などがある。",
     "レースを進めるのは、別の役のレースディレクターだ。VSCやセーフティカーの導入など、レースの進行はレースディレクターが決める。スチュワードは、起きたことを判断する側だ。",
-    "2026年は、国際スポーティングコードの改定で、スチュワードが「決定のときになかった重要な新しい事実」を見つけたとき、自分たちの判断で裁定を見直せるようになった。それまでは、見直しはチームの請求（大会の終了から96時間以内）だけだった。また、FIAは2026年3月にペナルティとドライビング基準のガイドラインを公表した。ペナルティポイントは、危険・無謀な行為や、衝突につながる故意の行為、スポーツマンらしくない行為に限って付ける。12か月で12点になると、出場停止になる。"
+    "2026年は、国際スポーティングコードの改定で、スチュワードが「決定のときになかった重要な新しい事実」を見つけたとき、自分たちの判断で裁定を見直せるようになった。それまでは、見直しはチームの請求（対象の競技会の終了から96時間以内）だけだった。また、FIAは2026年3月にペナルティとドライビング基準のガイドラインを公表した。ペナルティポイントは、危険・無謀な行為や、衝突につながる故意の行為、スポーツマンらしくない行為に限って付ける。12か月で12点になると、出場停止になる。"
    ],
    "rule": "スポーティングレギュレーション B1.3.1、B1.9",
    "examples": [
@@ -1882,7 +1913,7 @@
     "black-flag",
     "safety-car"
    ],
-   "checked": "2026-10-26",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -1923,6 +1954,11 @@
      "name": "Crash.net",
      "title": "Fee introduced as FIA tightens up Right of Review process for F1 teams（ISCの「96 hours from the end of the competition concerned」）",
      "url": "https://crash.net/f1/news/1042872/1/fee-introduced-fia-tightens-right-review-process-f1-teams"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 International Sporting Code（2026年6月26日適用）14.1.2、14.4.1（競技会の終了から96時間）、14.4.3",
+     "url": "https://www.fia.com/system/files/documents/2026_international_sporting_code_fr-en_clean_version_25.06.2026.pdf"
     }
    ]
   },
@@ -2163,6 +2199,14 @@
     {
      "t": "バクー予選：メルセデスのラッセルが今季最大の0.837秒差でポールを獲得。",
      "u": "/news/en-therace-mercedes-dominance/"
+    },
+    {
+     "t": "ノリスが雨のサンパウロ予選でポール　上位の降格でグリッドは入れ替わる",
+     "u": "/news/en-f1com-sao-paulo-norris-pole/"
+    },
+    {
+     "t": "ヒュルケンベルグ、0.028秒差でQ3を逃す　ローソン失格で10番手に繰り上がり",
+     "u": "/news/de-motorsportmagazin-huelkenberg-q3-miss/"
     }
    ],
    "see": [
@@ -2172,7 +2216,7 @@
     "parc-ferme",
     "grid-penalty"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -2529,6 +2573,10 @@
     {
      "t": "バクー後、アントネッリとラッセルの差は66点。残り8戦で最大208点が残っている。",
      "u": "/news/en-f1com-russell-title-hope/"
+    },
+    {
+     "t": "アントネッリのメキシコ戴冠条件　9位以内なら確定、同点なら勝利数で上",
+     "u": "/news/en-planetf1-antonelli-title-scenarios/"
     }
    ],
    "see": [
@@ -2537,7 +2585,7 @@
     "short-race-points",
     "sprint"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "RacingNews365",
@@ -2597,7 +2645,7 @@
     "points-system",
     "pole-position"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "Formula 1",
@@ -2800,6 +2848,14 @@
     {
      "t": "バクー決勝前：ハジャーは中断した練習スタートで気を取られ、手順を誤って警告処分になった。",
      "u": "/news/en-planetf1-sainz-hadjar-warnings/"
+    },
+    {
+     "t": "ヒュルケンベルグ、スタート直後に「アンチストール」が作動し5つ後退",
+     "u": "/news/de-motorsportmagazin-hulkenberg-anti-stall-austin/"
+    },
+    {
+     "t": "ハジャー、アメリカGPの発進でクラッチが過剰に作動　レッドブルのクラッチに「再設計が必要」",
+     "u": "/news/en-planetf1-hadjar-red-bull-clutch-redesign/"
     }
    ],
    "see": [
@@ -2809,7 +2865,7 @@
     "time-penalty",
     "grid-penalty"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "Formula 1",
@@ -3017,7 +3073,8 @@
    "body": [
     "スーパーライセンス（F1を走るための免許）に、違反に応じて点がつく。点は、つけられてから12か月で消える。12点に達すると、次の1戦に出られなくなる。出場停止のあとは、その12点が消される。",
     "点は、時間加算やグリッド降格といっしょに科されることがある。2024年にマグヌッセンが出場停止になったときは、10点を持った状態で、衝突による10秒加算と2点を受けて12点になった。スーパーライセンスを取るために必要な点（ライセンスポイント）とは別のものだ。",
-    "2026年は、点がつく場合が絞られた。FIAが3月に運転基準のガイドラインを見直し、点は「危険、無謀、または明らかに故意の行為で衝突を起こしたとき、そのほか認められない非スポーツマン的行為」に限ると決めた。これまではふらつく走りやコース外への押し出しなどでも点がついたが、開幕から8戦は、点が1つも出なかったと報じられた。"
+    "2026年は、点がつく場合が絞られた。FIAが3月に運転基準のガイドラインを見直し、点は「危険、無謀、または明らかに故意の行為で衝突を起こしたとき、そのほか認められない非スポーツマン的行為」に限ると決めた。これまではふらつく走りやコース外への押し出しなどでも点がついたが、開幕から8戦は、点が1つも出なかったと報じられた。",
+    "ただ、衝突以外の違反で点がつくこともある。今季のメキシコGPでは、ガスリーがダブルイエローの区間での違反で、ストップ＆ゴーペナルティに代わる30秒加算と、ペナルティポイント2点を受けた（The Raceによる）。"
    ],
    "examples": [
     {
@@ -3027,6 +3084,14 @@
     {
      "t": "出場停止には12か月で12点が必要で、コラピントは現状4点（The Raceの指摘）",
      "u": "/news/en-therace-norris-colapinto-ban/"
+    },
+    {
+     "t": "アルピーヌ、黄旗違反でメキシコGPの得点を失う　ガスリーにはペナルティポイント2点",
+     "u": "/news/en-therace-alpine-double-penalty-mexico/"
+    },
+    {
+     "t": "アルボンに5秒加算とペナルティポイント2点　コースへの戻り方でガスリーを妨害",
+     "u": "/news/en-planetf1-albon-fia-double-punishment/"
     }
    ],
    "see": [
@@ -3034,7 +3099,7 @@
     "reprimand",
     "grid-penalty"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -3065,6 +3130,11 @@
      "name": "RacingNews365",
      "title": "2026 F1 driver penalty points total（2026年9月25日更新）",
      "url": "https://racingnews365.com/2026-f1-driver-penalty-points-total"
+    },
+    {
+     "name": "The Race",
+     "title": "Double penalty costs Alpine all its Mexican GP points（2026年11月2日）",
+     "url": "https://the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points"
     }
    ]
   },
@@ -3113,7 +3183,7 @@
     "disqualification",
     "reprimand"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -3397,10 +3467,10 @@
    "short": "スチュワードの裁定について、新しい事実をもとに、審理のやり直しを求める手続き。",
    "body": [
     "再審査は、スチュワードが出した裁定について、新しい事実をもとに審理のやり直しを求める手続きだ。国際スポーティングコードの14条にある。条件は、「重要で、関係があり、裁定の時点では請求する側が入手できなかった新しい要素」があること。ただ反論するだけや、新しい分析では足りない。",
-    "流れは2段階だ。まずスチュワードが、新しい要素と認められるかを審理する。認められたら、裁定をもう一度審理する。請求できるのはレースの終了から96時間以内で、やむを得ないときは24時間のばせる。2023年末の改定で、14日から短くなった。預託金も必要で、2026年は20,000ユーロだ。",
+    "流れは2段階だ。まずスチュワードが、新しい要素と認められるかを審理する。認められたら、裁定をもう一度審理する。請求できるのは、対象の競技会（コンペティション）の終了から96時間以内で、やむを得ないときは24時間のばせる。2023年末の改定で、14日から短くなった。預託金も必要で、2026年は20,000ユーロだ。",
     "2026年のモナコGPでは、ガスリーに科された2回の5秒加算（ピットレーンの速度違反）に対して、アルピーヌが再審査を請求した。公式計時を担うFOM（F1の運営会社）が、速度の計算に使ったピットレーンの距離が不正確で、速度を高く見積もっていたことを示し、6月に加算が取り消された。ガスリーは3位に戻った。ところが、マクラーレンとレッドブルがこの再審査の決定をFIAの国際控訴裁判所に控訴し、8月にパリで審理が開かれた。9月4日に公表された判断で、裁判所は控訴を認めて加算を元に戻し、ガスリーは7位、ハジャーが3位になった（F1公式サイト）。FIAは計時の仕組みとあわせて、再審査と控訴の手続きも見直すとした。2026年版のコードでは、スチュワードが自分から再審理を始めることもできる。"
    ],
-   "rule": "国際スポーティングコード 14条",
+   "rule": "国際スポーティングコード 14条（14.1.1 請求の条件、14.1.2 スチュワード自身による見直し、14.4.1 期限は競技会の終了から96時間、14.4.3 預託金）（2026年版、2026年6月26日適用）",
    "examples": [
     {
      "t": "DEEP GRID #22 F1の判定は、誰がどこで決めているのか",
@@ -3412,7 +3482,7 @@
     "time-penalty",
     "penalty-points"
    ],
-   "checked": "2026-10-26",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "Racer",
@@ -3456,7 +3526,7 @@
     },
     {
      "name": "FIA",
-     "title": "2026 International Sporting Code（目次で13〜15条を確認）",
+     "title": "2026 International Sporting Code（14.1.2・14.4.1 再審査の請求）",
      "url": "https://www.fia.com/system/files/documents/2026_international_sporting_code_fr-en_clean_version_25.06.2026.pdf"
     },
     {
@@ -3729,6 +3799,11 @@
      "name": "formula1.com",
      "title": "What tyres will the teams and drivers have for the 2026 Dutch Grand Prix?",
      "url": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-dutch-grand-prix.402ufleb78rXrqaispof9U"
+    },
+    {
+     "name": "Pirelli",
+     "title": "F1 2026 Here we go! What's changing on track（2026年2月12日、外径は前1.5cm・後ろ1cm小さい）",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/new-2026-f1-rules-187730/"
     }
    ]
   },
@@ -3825,6 +3900,14 @@
     {
      "t": "セパンは雨予報。ファン掲示板では、フルウェットは実質セーフティカー用だという声も出た（ファン投稿のまとめ）。",
      "u": "/news/ja-f1are-sepang-weather-forecast/"
+    },
+    {
+     "t": "ピレリ「フルウェットとインターの間に隙間はない」　雨のサンパウロ予選で検証",
+     "u": "/news/de-motorsporttotal-pirelli-fullwet-inter-crossover/"
+    },
+    {
+     "t": "サインツ、全車インターで始まったサンパウロGPのあと、雨用タイヤの改善を求める",
+     "u": "/news/en-planetf1-sainz-pirelli-wet-tyres/"
     }
    ],
    "see": [
@@ -3833,7 +3916,7 @@
     "safety-car",
     "red-flag"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "Pirelli",
@@ -3897,7 +3980,7 @@
     "pit-window",
     "undercut"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "formula1.com",
@@ -3964,6 +4047,10 @@
     {
      "t": "バクーでフェルスタッペンは30周目ごろに早めのピットを望んだが、無線で却下された。要求どおりなら、セーフティカー導入の「無料の」ピットを逃していたと指摘された。",
      "u": "/news/nl-gpblog-verstappen-pit-lambiase/"
+    },
+    {
+     "t": "アメリカGPの作戦分析　ハードを避けた2ストップは誤りだったか",
+     "u": "/news/de-motorsportmagazin-austin-strategy-analysis/"
     }
    ],
    "see": [
@@ -3973,7 +4060,7 @@
     "safety-car",
     "two-compound-rule"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "PlanetF1",
@@ -4084,6 +4171,10 @@
     {
      "t": "アウディが挽回するには、長い直線でのスリップストリームや戦略、電力配分の工夫がカギとみられた。",
      "u": "/news/pt-gp-bortoleto-17/"
+    },
+    {
+     "t": "ボルトレート、予選Q2で自分のアタックをやめヒュルケンベルグのスリップストリーム役に",
+     "u": "/news/pt-grandepremio-bortoleto-penalty-slipstream/"
     }
    ],
    "see": [
@@ -4091,7 +4182,7 @@
     "overtake-mode",
     "active-aero"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "Sky Sports F1",
@@ -4436,6 +4527,14 @@
     {
      "t": "バクー予選Q3で、フェルスタッペンのバッテリーは半分ほどしか充電されていなかったと指摘された。",
      "u": "/news/en-gpblog-redbull-last-chance/"
+    },
+    {
+     "t": "ラッセル、首位でのスピンは「バッテリーの出力が想定以上」だったと説明",
+     "u": "/news/en-motorbiscuit-russell-power-surge/"
+    },
+    {
+     "t": "アロンソ、Q3の2周目は「エネルギーが残っていなかった」",
+     "u": "/news/de-motorsporttotal-alonso-q3-cold-tyres-no-energy/"
     }
    ],
    "see": [
@@ -4444,7 +4543,7 @@
     "overtake-mode",
     "ice"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "F1 Chronicle",
@@ -4623,6 +4722,10 @@
     {
      "t": "バクー予選後、フェルスタッペン車は内燃エンジン、ターボ、補機、排気系の4部品を交換した。",
      "u": "/news/en-planetf1-verstappen-engine-investigation/"
+    },
+    {
+     "t": "FIA、最後のADUO評価で追加なし　最強の内燃エンジンとの差で追加の改良を認める制度",
+     "u": "/news/en-planetf1-fia-aduo-final-window/"
     }
    ],
    "see": [
@@ -4632,7 +4735,7 @@
     "energy-store",
     "pu-allocation"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -4705,7 +4808,8 @@
    "body": [
     "最低重量は、マシンがこれより軽くしてはいけない重さ。燃料を入れない状態で、ドライバーを乗せて測る。軽いマシンは速く、10kgでおよそ0.35秒の差が出るという見方もあるため、規則で下限が決められている。",
     "2026年は768kgで、2025年の800kgから32kg軽くなった。マシンが小さくなった（ホイールベースは最大3400mm、幅は1900mm）ことやMGU-Hがなくなったことで、軽くできるという考えだ。ただ、開幕前から多くのチームが、規定の重さに収めるのは難しいと話していた。FIAは、重さを引き上げてほしいというチームの求めに応じなかった。",
-    "ドライバーにも、ヘルメットや服を含めた最低重量が別にあり（2024年7月のFIAの発表で80kgから82kgに引き上げ）、足りない分はバラスト（重り）で補う。2019年に始まったルールで、体の大きいドライバーが不利にならないようにするためだ。"
+    "ドライバーにも、ヘルメットや服を含めた最低重量が別にあり（2024年7月のFIAの発表で80kgから82kgに引き上げ）、足りない分はバラスト（重り）で補う。2019年に始まったルールで、体の大きいドライバーが不利にならないようにするためだ。",
+    "先の話として、FIAは2026年10月、最低重量を700kg未満に下げる目標を示した。FIAのシングルシーター部門ディレクター、トンバジス氏がThe Raceに話したもので、ターボの圧力を下げる、バッテリーとMGU-Kを小さくする、車とホイールを小さくする、などを挙げている。遅くとも2031年に始まる次の規則に合わせた構想だ（The Raceによる）。"
    ],
    "examples": [
     {
@@ -4719,13 +4823,17 @@
     {
      "t": "DEEP GRID #24 F1の車は、なぜこんなに重くなったのか",
      "u": "/deep/car-weight/"
+    },
+    {
+     "t": "FIA、768kgの最低重量を700kg未満に下げる構想　バッテリーとMGU-Kの小型化など",
+     "u": "/news/en-therace-fia-700kg-weight-plan/"
     }
    ],
    "see": [
     "energy-store",
     "floor-diffuser"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "Formula1.com",
@@ -4776,6 +4884,11 @@
      "name": "FIA",
      "title": "Formula 1 Commission meeting 23.07.2024 – media statement",
      "url": "https://www.fia.com/news/formula-1-commission-meeting-23072024-media-statement"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's plan to slash car weight revealed（2026年10月23日）",
+     "url": "https://www.the-race.com/formula-1/f1s-plan-to-slash-car-weight-revealed/"
     }
    ]
   },
@@ -4888,6 +5001,14 @@
     {
      "t": "メルセデスはセパンで、サイドポッドとディフューザー周りのフロアを大きく改めた。",
      "u": "/news/en-rn365-mercedes-w17-weakness-upgrade/"
+    },
+    {
+     "t": "アロンソ、1周目の接触でフロアの大部分を失い「1周0.5秒以上」遅く",
+     "u": "/news/en-crashnet-alonso-us-gp-floor-damage/"
+    },
+    {
+     "t": "フェラーリ、今季最大の空力アップデートはフロアが中心",
+     "u": "/news/en-therace-ferrari-austin-biggest-upgrade/"
     }
    ],
    "see": [
@@ -4895,7 +5016,7 @@
     "porpoising",
     "active-aero"
    ],
-   "checked": "2026-10-02",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -5558,6 +5679,14 @@
     {
      "t": "ホンダは2回目のADUOを使い、改良型ターボをスペインGPでストロール車に、続くバクーでアロンソ車に載せていた。",
      "u": "/news/en-therace-honda-aduo2-secret/"
+    },
+    {
+     "t": "FIA、2026年最後のADUO評価　どのPUメーカーにも追加の改良は認めず",
+     "u": "/news/en-planetf1-fia-aduo-final-window/"
+    },
+    {
+     "t": "GM、キャデラックの自社PU工場を12月18日に全面稼働へ",
+     "u": "/news/de-motorsporttotal-cadillac-engine-factory-date/"
     }
    ],
    "see": [
@@ -5595,7 +5724,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "customer-team",
@@ -5625,6 +5754,10 @@
     {
      "t": "マクラーレンのブラウンCEOは、自社でPUは作らずメルセデス製を使い続けると述べた。メルセデスとの契約は2030年まで続くという。",
      "u": "/news/de-motorsport-total-mclaren-2030-engine/"
+    },
+    {
+     "t": "アストンマーティンのエンジン乗り換え報道　メキース代表は、第3のカスタマーより先に自社PUの性能を高める必要があると話す",
+     "u": "/news/nl-racingnews365-redbull-aston-rumours/"
     }
    ],
    "see": [
@@ -5654,7 +5787,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "rookie-fp1",
@@ -5675,9 +5808,9 @@
     "各車2回",
     "新人"
    ],
-   "short": "各車、年2回、金曜のFP1にF1の出走が2戦以内の選手を走らせる義務。",
+   "short": "各車、年2回、フリー走行（FP1かFP2）に、F1の出走が2戦以内の選手を走らせる義務。",
    "body": [
-    "各チームは、2台それぞれについて、年に2回、F1での出走が2戦以内の選手を金曜の最初のフリー走行（FP1）で走らせなければならない。2台あるので、チーム全体では合計4回になる。",
+    "各チームは、2台それぞれについて、年に2回、F1での出走が2戦以内の選手を、フリー走行のFP1かFP2で走らせなければならない。2台あるので、チーム全体では合計4回になる。",
     "この義務は2022年に1台1回で始まり、2025年から2回に増えた。",
     "手続きもある。どの車に乗せるかを、7日前までにFIAへ知らせる。走る選手は、スーパーライセンスかフリー走行専用のスーパーライセンスを持つ。使うパワーユニットとタイヤは、もとのドライバーに割り当てられたものだ。1回のセッションで使えるドライバーは2人までになる。",
     "2026年は、ベルギーGPのFP1でアストンマーティンがアロンソの車にクロフォードを乗せた。クロフォードはそれが今季3回目のFP1走行だった。"
@@ -5691,6 +5824,14 @@
     {
      "t": "アウディは、アカデミーのスレーターのスーパーライセンス獲得に向け、FP1走行を計画していると伝えられた。",
      "u": "/news/it-formula1-slater-audi-binotto/"
+    },
+    {
+     "t": "メキシコGPのFP1、10人のルーキーが出走　走らせなかったのはフェラーリだけ",
+     "u": "/news/en-crash-mexico-fp1-leclerc-rookies/"
+    },
+    {
+     "t": "ブラジルGPのFP1、ルクレールの車でベガノビッチ　フェラーリは4回のうち3回目",
+     "u": "/news/en-planetf1-beganovic-replaces-leclerc-brazil-fp1/"
     }
    ],
    "see": [
@@ -5721,7 +5862,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "team-principal",
@@ -5746,7 +5887,9 @@
    "body": [
     "チーム代表は、F1チームを率いるボスだ。チームを代表して話し、最終的な判断を下す。何百人もの社員の先頭に立ち、チームの方向を決め、採用や解雇を通じて、勝てるチームの文化を作る。",
     "FIAやスチュワード、ほかのチームとの交渉も大きな役目で、ガレージにいるより会議の時間のほうが長いことも多い。ドライバーの獲得や、レース中の作戦のような大きな決断にも関わる。",
-    "技術の面は技術責任者、競技の面は競技担当などの専門家が支える。代表はそれをまとめる。出身はさまざまで、エンジニア、金融、戦略など、決まった道はない。"
+    "技術の面は技術責任者、競技の面は競技担当などの専門家が支える。代表はそれをまとめる。出身はさまざまで、エンジニア、金融、戦略など、決まった道はない。",
+    "肩書きの付け方は、チームによって違う。メルセデスのウォルフはCEOを兼ねる。アストンマーティンでは、2025年にマネージング・テクニカル・パートナーとして加わったニューウェイが、2026年からチーム代表も務める。アルピーヌはチーム代表の肩書きの人を置かず、エグゼクティブ・アドバイザーのブリアトーレがチームを率い、マネージング・ディレクターのニールセンが日々の運営を受け持つ。",
+    "今季は、シーズン中の交代もあった。アウディでは3月にウィートリーが去り、F1プロジェクトの責任者のビノットがチーム代表を兼ねた。キャデラックは8月に、ロードンに代えてブコウスキーを代表に起用した。"
    ],
    "examples": [
     {
@@ -5756,6 +5899,14 @@
     {
      "t": "フェラーリのバスール代表は、後任のうわさに「ホーナー氏は仕事を探しているだけ」と反応した。",
      "u": "/news/en-motorsport-vasseur-horner-response/"
+    },
+    {
+     "t": "ハースの小松代表、カマラの早いデビューは「難しい決断」",
+     "u": "/news/en-f1com-komatsu-camara-tough-decision/"
+    },
+    {
+     "t": "キャデラックのブコウスキー代表、2027年のペレスの相棒選びは「急がない」",
+     "u": "/news/en-planetf1-cadillac-herta-bottas-budkowski/"
     }
    ],
    "see": [
@@ -5774,10 +5925,15 @@
      "name": "Red Bull",
      "title": "The people behind the F1 paddock",
      "url": "https://www.redbull.com/gb-en/the-people-behind-the-f1-paddock"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Who are the 2026 Team Principals?（2026年8月27日）",
+     "url": "https://formula1.com/en/latest/article/who-are-the-2026-team-principals.2Jrw5LEJbEoX2gM5OtFL8K"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "technical-director",
@@ -5807,6 +5963,14 @@
     {
      "t": "キャデラックは、アストンマーティンの副テクニカル代表だったブランダンを、空力部門のトップに迎えると発表した。",
      "u": "/news/de-f1de-cadillac-hires/"
+    },
+    {
+     "t": "レッドブルのワシェ技術責任者、フェルスタッペンがFP2でソフトを履かなかった理由を説明",
+     "u": "/news/nl-gpblog-wache-verstappen-no-soft-run/"
+    },
+    {
+     "t": "マクラーレンの技術責任者「クルマの力を出し切れていない」",
+     "u": "/news/de-formel1-mclaren-singapore-hopes/"
     }
    ],
    "see": [
@@ -5826,7 +5990,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "race-engineer",
@@ -5927,6 +6091,10 @@
     {
      "t": "マレーシアへの復帰にあたり、FIAが熱中症への警告を出し、ドライバーの冷却システムが義務になった。",
      "u": "/news/de-formel1-sepang-heat-warning/"
+    },
+    {
+     "t": "FIA、英ビギンヒルに遠隔運用センター　映像と無線を監視してレースディレクションを支える",
+     "u": "/news/de-motorsporttotal-fia-remote-ops-centre/"
     }
    ],
    "see": [
@@ -5974,7 +6142,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "f1-group",
@@ -6005,6 +6173,10 @@
     {
      "t": "F1のドメニカリCEOが、フェラーリの代表交代論に対し「空想的な解決策は避けるべきだ」と述べた。",
      "u": "/news/it-motorsport-domenicali-ferrari-horner/"
+    },
+    {
+     "t": "ドメニカリCEO「アップルは米国外でも放映権を狙うだろう」　国ごとに収益を最大にする方針",
+     "u": "/news/en-therace-apple-broadcast-rights-expansion/"
     }
    ],
    "see": [
@@ -6035,7 +6207,7 @@
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-10-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "wmsc",
@@ -10886,6 +11058,11 @@
      "name": "The Race",
      "title": "F1's plan to slash car weight revealed",
      "url": "https://www.the-race.com/formula-1/f1s-plan-to-slash-car-weight-revealed/"
+    },
+    {
+     "name": "Pirelli",
+     "title": "F1 2026 Here we go! What's changing on track（2026年2月12日、外径は前1.5cm・後ろ1cm小さい）",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/new-2026-f1-rules-187730/"
     }
    ],
    "checked": "2026-10-02"
@@ -11620,16 +11797,6 @@
    "src": [
     {
      "name": "RaceFans",
-     "title": "Williams FW15C: F1's high-tech pinnacle",
-     "url": "https://www.racefans.net/?p=47893"
-    },
-    {
-     "name": "RaceFans",
-     "title": "Great F1 cars: Williams-Renault FW14B",
-     "url": "https://www.racefans.net/?p=28362"
-    },
-    {
-     "name": "RaceFans",
      "title": "Banned: Active suspension（2007-05-17）",
      "url": "https://www.racefans.net/2007/05/17/banned-active-suspension/"
     },
@@ -11652,6 +11819,11 @@
      "name": "Motor Sport Magazine",
      "title": "Great racing cars: Williams FW14, FW14B and FW15C",
      "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/great-racing-cars-williams-f14-14b-and-fw15c"
+    },
+    {
+     "name": "GRANDPRIX.COM",
+     "title": "All change!（Peter Wright、2001年3月25日。1993年末にドライバー補助とアクティブサスペンションを禁止、補助にはトラクションコントロールとABS）",
+     "url": "https://www.grandprix.com/features/peter-wright/technical-all-change.html"
     }
    ],
    "cat": "サーキットと歴史",
@@ -14912,8 +15084,9 @@
    "body": [
     "コンストラクターズ選手権は、チームの年間王者を決める選手権だ。点数は、そのチームの2人のドライバーが取ったポイントの合計（Honda）。決勝もスプリントも数える。始まりは1958年で、最初のチャンピオンはヴァンウォールだった。ドライバーズ選手権は1950年に始まっている。",
     "順位は、F1の運営側（FOM）からの賞金の分配や、スポンサー集めにも響く（Honda）。ドライバーズ選手権とは別に、チームにとって大事な順位表だ。",
-    "最多タイトルはフェラーリの16回。マクラーレンが10回、ウィリアムズが9回、メルセデスが8回、ロータスが7回、レッドブルが6回と続く（2025年終了時点）。マクラーレンは、2025年のシンガポールGPで、6戦を残して10回目を決めた。2025年の最終ポイントは、マクラーレン833点、メルセデス469点、レッドブル451点だった。",
-    "2026年は11チーム。ドライバーズの王座は、11月1日のメキシコシティGPでメルセデスのアントネッリが決めたが、コンストラクターズ選手権はまだ決まっていない。終了時点で、メルセデス630点、フェラーリ504点、レッドブル382点、マクラーレン365点だ（F1公式サイト）。メルセデスとフェラーリの差は126点。予定では残り4戦で、どれもスプリントのない週末だ。チームが取れる最大は43点×4戦の172点なので、計算上はまだ決まらない。"
+    "最多タイトルはフェラーリの16回。マクラーレンが10回、ウィリアムズが9回、メルセデスが8回、ロータスが7回、レッドブルが6回と続く（2025年終了時点）。マクラーレンは、2025年のシンガポールGPで、6戦を残して10回目を決めた。2025年の最終ポイントは、マクラーレン833点、メルセデス469点、レッドブル451点だった。2026年はメルセデスが9回目を取り、ウィリアムズと並んだ（F1公式サイト）。",
+    "2026年は11チーム。ドライバーズの王座は、11月1日のメキシコシティGPでメルセデスのアントネッリが決めたが、コンストラクターズ選手権は、そのときはまだ決まらなかった。メキシコシティGPの終了時点で、メルセデス630点、フェラーリ504点で、差は126点だった（F1公式サイト）。",
+    "メルセデスは、11月8日のサンパウロGPで、予定の3戦を残して王座を決めた（The Race）。2021年以来で、9回目だ（F1公式サイト）。雨のレースで、ラッセルが4位、アントネッリが5位に入り、22点を取った。フェラーリは、ルクレールが8位、ハミルトンが9位で6点だった（FIAの正式結果）。終了時点の点は、メルセデス652点、フェラーリ510点、レッドブル415点、マクラーレン398点だ（F1公式サイト）。差は142点で、残り3戦でチームが取れる最大の129点（43点×3戦）より大きい。"
    ],
    "examples": [
     {
@@ -14923,6 +15096,14 @@
     {
      "t": "セパン終了時点のコンストラクターズ選手権は、メルセデス556点、フェラーリ405点。",
      "u": "/news/ja-f1gate-points-after-sepang/"
+    },
+    {
+     "t": "メルセデスの王座はいつ決まったのか。20戦終了時点で652点、フェラーリと142点差までのポイントの流れ",
+     "u": "/news/de-motorsporttotal-mercedes-title-when-decided/"
+    },
+    {
+     "t": "メルセデス9度目のチーム王座。2台がスピンしても4位・5位の22点で決めた",
+     "u": "/lens/mercedes-constructors-title-won-20261109/"
     }
    ],
    "see": [
@@ -14972,9 +15153,24 @@
      "name": "Formula 1 公式",
      "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
      "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Wolff already thinking about 2027 despite Constructors' Championship win in Brazil（9回目、2021年以来、ウィリアムズと並ぶ）",
+     "url": "https://www.formula1.com/en/latest/article/wolff-already-thinking-about-2027-despite-constructors-championship-win-in-brazil.21aGFbwHKbhjkcmpeYVrZV"
+    },
+    {
+     "name": "The Race",
+     "title": "What Mercedes said about race-losing driver spins（「three rounds to spare」）",
+     "url": "https://www.the-race.com/formula-1/mercedes-trying-to-understand-strange-behaviour-amid-driver-spins/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 São Paulo Grand Prix – Final Race Classification（文書81）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_final_race_classification.pdf"
     }
    ],
-   "checked": "2026-11-02"
+   "checked": "2026-11-11"
   },
   {
    "id": "title-decider",
@@ -15003,7 +15199,8 @@
     "決まるのが早かった記録は、2002年のシューマッハ（フェラーリ）。17戦のうち第11戦のフランスGPで決め、6戦を残していた（PlanetF1、2023年8月時点）。チームでは、2025年のマクラーレンが、24戦のうちシンガポールGPで、6戦を残してコンストラクターズ選手権を決めた。最終戦までもつれる年もある。2025年は、最終戦のアブダビGPでノリスが2点差で決めた。",
     "2026年は、10月25日のアメリカGPでアントネッリが今季9勝目を挙げたが、王座は決まらなかった。この週末に決めるには、ラッセルが9位以下、ハミルトンが5位以下でなければならなかったが、結果はラッセル8位、ハミルトン4位だった（F1公式サイト）。次のメキシコシティGP（11月1日）では、アントネッリは9位に入れば王座が決まる状況だった（F1公式サイト、CNN Brasil）。",
     "アントネッリは、メキシコシティGPを4番手からスタートして3位に入り、予定の残り4戦を残して、初めての王座を決めた（F1公式サイト、Grande Prêmio）。優勝はフェルスタッペン、2位はハミルトンだった。終了時点の点は、アントネッリが380点、2位のフェルスタッペンが261点で、差は119点だ（F1公式サイト）。予定の残り4戦はどれもスプリントのない週末で、残りの最大は100点なので、もう追いつけない。",
-    "カタールGP（11月29日）とアブダビGP（12月6日）は、中東情勢のため開催がまだ確定していない。イモラが予備の案として準備を進めており、チームは10月中旬までに結論が出ると見ている（The Race、9月24日）。10月12日には、両戦をやめてイモラの1戦（12月6日）を最終戦にする準備が進んでいるという報道も出た（Motorsport.comの報道として Grande Prêmio が伝えた）。その後、GPFansは10月15日、米ESPNの報道として、F1は2戦を予定どおり開く方向で、開くなら改めて発表はしないと伝えた。ただし、カタールをやめてアブダビの代わりにイモラで開くという判断が、11月中旬まで出ないこともあり得るとした。FIAのビン・スライエム会長は10月20日、「2つのレースは開かれる」と話したが、先のことは予測できないとも述べた（The Race）。ドライバーズの王座はもう決まったが、開催数が変われば、コンストラクターズ選手権の残りの最大ポイントと、決まる条件が変わる。"
+    "コンストラクターズ選手権は、11月8日のサンパウロGPで決まった。その前の時点では、メルセデス630点、フェラーリ504点で、差は126点だった。サンパウロでメルセデスは22点、フェラーリは6点を取り、差は142点に広がった（F1公式サイト、FIAの正式結果）。予定の残り3戦はどれもスプリントのない週末で、チームが取れる最大は129点（43点×3戦）なので、もう追いつけない。メルセデスは、3戦を残して王座を決めた（The Race）。",
+    "カタールGP（11月29日）とアブダビGP（12月6日）は、中東情勢のため開催が心配され、開けないときは12月6日にイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況、とくにカタールとアブダビの状況は、ここ数か月で悪くなっていないと説明した。状況が悪くなれば対応するとしている（Crash.net）。ドライバーズとコンストラクターズの王座は、どちらもすでに決まっている。"
    ],
    "examples": [
     {
@@ -15041,6 +15238,10 @@
     {
      "t": "アントネッリが王座決定、必要だった9位以内を上回る3位　ブラジル局が報道",
      "u": "/news/pt-cnnbrasil-antonelli-campeao-mexico/"
+    },
+    {
+     "t": "メルセデスは、サンパウロでフェラーリより3点以上多く取れば王座が決まる状況だった",
+     "u": "/news/de-motorsportmagazin-mercedes-constructors-title-scenarios/"
     }
    ],
    "see": [
@@ -15117,16 +15318,6 @@
      "url": "https://www.crash.net/f1/news/1107507/1/how-kimi-antonelli-can-become-f1-world-champion-united-states-gp"
     },
     {
-     "name": "The Race",
-     "title": "What's going on with F1's uncertain final 2026 races（2026年9月24日）",
-     "url": "https://www.the-race.com/formula-1/whats-going-on-with-f1s-uncertain-final-2026-races/"
-    },
-    {
-     "name": "Grande Prêmio",
-     "title": "F1 prepares Imola contingency as Qatar and Abu Dhabi finale comes under fresh doubt（2026年10月12日）",
-     "url": "https://grandepremio.com/en/f1/f1-prepares-imola-contingency-as-qatar-and-abu-dhabi-finale-comes-under-fresh-doubt/"
-    },
-    {
      "name": "formula1.com",
      "title": "Antonelli surges to dominant victory in United States Grand Prix ahead of Leclerc and Verstappen（2026年10月25日）",
      "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
@@ -15147,16 +15338,6 @@
      "url": "https://sports.yahoo.com/articles/antonelli-wins-us-wait-secure-215237448.html"
     },
     {
-     "name": "GPFans",
-     "title": "F1 set to push ahead with Qatar and Abu Dhabi races despite missile strikes（2026年10月15日）",
-     "url": "https://www.gpfans.com/en/f1-news/1091591/f1-qatar-abu-dhabi-grand-prix-cancellation-decision-no-announcement-imola/"
-    },
-    {
-     "name": "The Race",
-     "title": "FIA adamant Qatar and Abu Dhabi GPs will go ahead（2026年10月20日）",
-     "url": "https://www.the-race.com/formula-1/fia-adamant-f1-qatar-abu-dhabi-gp-will-go-ahead/"
-    },
-    {
      "name": "Formula 1 公式",
      "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
      "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
@@ -15175,6 +15356,41 @@
      "name": "CNN Brasil",
      "title": "Kimi Antonelli é o campeão da Fórmula 1 com pódio no GP do México（2026年11月1日、20歳68日、ベッテルの23歳134日、2点で決まる状況、最後のイタリア人王者はアスカリ）",
      "url": "https://www.cnnbrasil.com.br/esportes/automobilismo/kimi-antonelli-e-o-campeao-da-formula-1-com-podio-no-gp-do-mexico/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Teams' Standings（サンパウロGP後、メルセデス652点、フェラーリ510点、レッドブル415点、マクラーレン398点）",
+     "url": "https://www.formula1.com/en/results/2026/team"
+    },
+    {
+     "name": "The Race",
+     "title": "What Mercedes said about race-losing driver spins（「three rounds to spare」）",
+     "url": "https://www.the-race.com/formula-1/mercedes-trying-to-understand-strange-behaviour-amid-driver-spins/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 São Paulo Grand Prix – Final Race Classification（文書81）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_final_race_classification.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 confirms Middle East finale as Imola stood down（2026年11月10日、チームに伝えた）",
+     "url": "https://www.planetf1.com/news/f1-confirms-2026-season-finale-with-new-announcement"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
+     "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2026 - full timetable（F1のスプリントなし）",
+     "url": "https://www.formula1.com/en/latest/article/formula-1-qatar-airways-qatar-grand-prix-2026.3XJyoYSnpJEcuZovstTdcG"
     }
    ],
    "checked": "2026-11-02"
@@ -15583,7 +15799,7 @@
    "body": [
     "ドライバーズ選手権の最多は、ミハエル・シューマッハとルイス・ハミルトンの7回。続いてファンジオが5回、フェルスタッペン、ベッテル、プロストが4回だ。1950年に始まってから、2025年のノリスまでにチャンピオンになったのは35人。2026年は、アントネッリが初めて王座を取った（F1公式サイト）。",
     "今の現役でタイトルを持つのは、ハミルトン（7回）、フェルスタッペン（4回）、アロンソ（2回）、ノリス（1回）だった（GPFans）。2026年に初めて王座を取ったアントネッリ（1回）が、ここに加わった（F1公式サイト）。",
-    "コンストラクターズ選手権の最多は、フェラーリの16回。マクラーレンが10回、ウィリアムズが9回、メルセデスが8回、ロータスが7回、レッドブルが6回と続く（2025年終了時点）。マクラーレンは2024年と2025年の連続優勝で、10回目は2025年のシンガポールGPで決めた。"
+    "コンストラクターズ選手権の最多は、フェラーリの16回。マクラーレンが10回、ウィリアムズが9回、メルセデスが8回、ロータスが7回、レッドブルが6回と続いていた（2025年終了時点）。マクラーレンは2024年と2025年の連続優勝で、10回目は2025年のシンガポールGPで決めた。2026年は、メルセデスがサンパウロGPで9回目を決め、ウィリアムズと並んだ（F1公式サイト）。"
    ],
    "examples": [
     {
@@ -15593,6 +15809,10 @@
     {
      "t": "セパン終了時点で、表彰台に上がったハミルトンは214点で3位。",
      "u": "/news/ja-f1gate-points-after-sepang/"
+    },
+    {
+     "t": "メルセデス9度目のチーム王座。ウィリアムズの9回に並んだ",
+     "u": "/lens/mercedes-constructors-title-won-20261109/"
     }
    ],
    "see": [
@@ -15641,6 +15861,11 @@
      "name": "Grande Prêmio",
      "title": "Antonelli becomes youngest F1 world champion as Verstappen wins chaotic 2026 Mexican GP（2026年11月1日、残り4戦で決定、1953年のアスカリ以来のイタリア人王者）",
      "url": "https://grandepremio.com/en/f1/antonelli-becomes-youngest-f1-world-champion-as-verstappen-wins-chaotic-2026-mexican-gp/"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Wolff already thinking about 2027 despite Constructors' Championship win in Brazil（9回目、2021年以来、ウィリアムズと並ぶ）",
+     "url": "https://www.formula1.com/en/latest/article/wolff-already-thinking-about-2027-despite-constructors-championship-win-in-brazil.21aGFbwHKbhjkcmpeYVrZV"
     }
    ],
    "checked": "2026-11-02"
@@ -15753,12 +15978,12 @@
     "最終戦はどこ",
     "全何戦"
    ],
-   "short": "1シーズンのグランプリの日程表。2026年は23戦の予定（2026年10月時点）。",
+   "short": "1シーズンのグランプリの日程表。2026年は23戦の予定（2026年11月時点）。",
    "body": [
     "レースカレンダーは、1シーズンに開くグランプリの日程表。次のシーズンの分は、前の年にFIAの世界モータースポーツ評議会（WMSC）が承認して発表する。2026年の分は2025年6月に発表され、全24戦だった。3月6〜8日のオーストラリアから、12月4〜6日のアブダビまでだ。",
     "ただし、発表のあとで変わることがある。2026年は、中東の情勢を理由に、4月のバーレーンGP（10〜12日）とサウジアラビアGP（17〜19日）の中止が3月14日に発表され、22戦になった。4月には代わりのレースはなかった。7月26日には、バーレーンGPをマレーシアのセパンで10月2〜4日に開くと発表され、23戦に戻った。",
-    "2026年の予定は23戦。10月4日のセパン（第16戦）までに16戦が終わった。残りは、シンガポール（10月11日）、アメリカ（10月25日）、メキシコシティ（11月1日）、サンパウロ（11月8日）、ラスベガス（11月21日）、カタール（11月29日）、アブダビ（12月6日）と続く。",
-    "最後のカタールとアブダビについて、F1のドメニカリ代表は、「カレンダーは確定で、最後の2戦はカタールとアブダビだ」と述べた。ただし、今後の安全の保証しだいで変わることもあり、12月6日にイモラで開く予備の案は残されている（RacingNews365、10月3日）。",
+    "2026年の予定は23戦。11月8日のサンパウロ（第20戦）までに20戦が終わった。残りは、ラスベガス（11月21日）、カタール（11月29日）、アブダビ（12月6日）の3戦だ（F1公式サイト）。",
+    "最後のカタールとアブダビについて、F1のドメニカリ代表は10月初め、「カレンダーは確定で、最後の2戦はカタールとアブダビだ」と述べていた。ただ、中東情勢のため、開けないときに12月6日にイモラで開く予備の案も残されていた（RacingNews365、10月3日）。F1は11月10日、2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況はここ数か月で悪くなっていないと説明し、状況が悪くなれば対応するとしている（Crash.net）。",
     "2027年の日程は、2026年9月16日に発表された。24戦で、開幕はバーレーン（3月12〜14日）、最終戦はアブダビ（12月10〜12日）。スプリントは、2026年の6戦から10戦に増える。"
    ],
    "examples": [
@@ -15833,6 +16058,26 @@
      "name": "RacingNews365",
      "title": "F1 provides 'confirmed' update on final rounds of calendar",
      "url": "https://racingnews365.com/f1-provides-confirmed-update-on-final-rounds-of-calendar"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 F1 Schedule（全23戦。第20戦ブラジルまで終了、第21戦ラスベガス、第22戦カタール、第23戦アブダビ）",
+     "url": "https://www.formula1.com/en/racing/2026"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 confirms Middle East finale as Imola stood down（2026年11月10日、チームに伝えた）",
+     "url": "https://www.planetf1.com/news/f1-confirms-2026-season-finale-with-new-announcement"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
+     "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
     }
    ],
    "checked": "2026-10-07"
@@ -17878,7 +18123,7 @@
    "body": [
     "反時計回りのコースは、F1では少数派だ。フェルスタッペンは2019年、ブラジルのインテルラゴスについて「反時計回りなので、首には少し重い」と話した（The Checkered Flag）。",
     "メルセデスの公式サイトによると、2025年のカレンダーで全体が反時計回りだったのは8会場だ。COTA（アメリカ）のほか、マイアミ、イモラ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナ（アブダビ）が挙げられている。",
-    "この一覧と今季のカレンダー（F1公式サイト）を見比べると、2026年に開催されるのはCOTA、マイアミ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナの7会場だ。イモラは、今季のカレンダーにない。ただし、カタールとアブダビが開けないときの予備の候補とされ、FIAのビン・スライエム会長は「FIAはいつでも準備ができている」と話した（The Race、2026年10月20日）。今季から加わったマドリード（マドリング）とセパンは、この一覧に入っていないので、ここでは数えていない。",
+    "この一覧と今季のカレンダー（F1公式サイト）を見比べると、2026年に開催されるのはCOTA、マイアミ、バクー、シンガポール、インテルラゴス、ラスベガス、ヤス・マリーナの7会場だ。イモラは、今季のカレンダーにない。カタールとアブダビが開けないときの予備の会場とされていたが、F1は11月10日、イモラに最終戦の開催は要らないと知らせた（The Race）。今季から加わったマドリード（マドリング）とセパンは、この一覧に入っていないので、ここでは数えていない。",
     "首の負担については、ドライバーの話として語られることが多い。"
    ],
    "examples": [],
@@ -17910,8 +18155,8 @@
     },
     {
      "name": "The Race",
-     "title": "FIA adamant Qatar and Abu Dhabi GPs will go ahead (2026-10-20)",
-     "url": "https://www.the-race.com/formula-1/fia-adamant-f1-qatar-abu-dhabi-gp-will-go-ahead/"
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
     }
    ],
    "checked": "2026-10-28"
@@ -18422,6 +18667,11 @@
      "name": "PlanetF1",
      "title": "Formula 1 set to drop major 2026 regulation change after U-turn (18-inch wheels, 2024)",
      "url": "https://www.planetf1.com/news/f1-2026-16-inch-tyres-u-turn"
+    },
+    {
+     "name": "Pirelli",
+     "title": "F1 2026 Here we go! What's changing on track（2026年2月12日、外径は前1.5cm・後ろ1cm小さい）",
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/new-2026-f1-rules-187730/"
     }
    ],
    "checked": "2026-10-02"
@@ -20036,7 +20286,8 @@
    "body": [
     "インテルラゴスは、ブラジルのサンパウロにあるコースで、正式名はアウトドローモ・ジョゼ・カルロス・パーチェだ。F1公式サイトによると、1周は4.309km、決勝は71周。コーナーは15で、反時計回りだ。工事は1938年に始まった。F1の選手権のブラジルGPは1973年に始まり、地元のエマーソン・フィッティパルディが優勝した。",
     "コースには「セナS」と呼ばれる連続コーナーがあり、傾斜のついた最終コーナーを抜けてホームストレートに戻る（F1公式サイト）。正式名は、1975年にここで優勝したカルロス・パーチェにちなむ。",
-    "ラップレコードは、2018年にボッタスが出した1分10秒540だ。2026年のサンパウロGPは11月6〜8日に開かれる予定だ（F1公式サイト）。"
+    "ラップレコードは、2018年にボッタスが出した1分10秒540だ。2026年のサンパウロGPは11月6〜8日に開かれた（F1公式サイト）。",
+    "2026年の決勝（11月8日、71周）は、ぬれた路面で始まって乾いていき、終盤ににわか雨が来た（F1公式サイト）。ポールからスタートしたノリス（マクラーレン）が勝ち、2位のフェルスタッペン（レッドブル）に14.602秒の差をつけた。フェルスタッペンは、パワーユニットの部品の交換によるグリッド降格で、21番手からのスタートだった。3位はハジャー（レッドブル）。メルセデスは4位ラッセル、5位アントネッリで、このレースでコンストラクターズ選手権の王座を決めた（F1公式サイト、FIAの正式結果）。"
    ],
    "see": [
     "anticlockwise",
@@ -20063,11 +20314,44 @@
      "name": "formula1.com",
      "title": "Formula 1 reveals calendar for 2026 season",
      "url": "https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship（2026年11月8日）",
+     "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Sao Paulo Grand Prix – Race Result（1位ノリス、2位フェルスタッペン +14.602s、71周）",
+     "url": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Sao Paulo Grand Prix – Starting Grid（フェルスタッペン21番グリッド、PUの追加部品で30グリッド降格）",
+     "url": "https://www.formula1.com/en/results/2026/races/1299/brazil/starting-grid"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 São Paulo Grand Prix – Final Race Classification（文書81）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_final_race_classification.pdf"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-28",
-   "examples": []
+   "checked": "2026-11-11",
+   "examples": [
+    {
+     "t": "雨のサンパウロGPでノリスが優勝、21番手のフェルスタッペンが2位。メルセデスがチームの王座",
+     "u": "/news/en-f1com-sao-paulo-norris-wins-mercedes-title/"
+    },
+    {
+     "t": "後ろからの追い上げが名物のインテルラゴスで、2026年の規則は追い抜きを鈍らせるのか",
+     "u": "/news/en-therace-brazil-overtaking-worries-2026-rules/"
+    },
+    {
+     "t": "雨の予選でノリスがポール。インテルラゴスで3年連続",
+     "u": "/news/en-f1com-sao-paulo-norris-pole/"
+    }
+   ]
   },
   {
    "id": "circuit-lasvegas",
@@ -20151,7 +20435,7 @@
    "body": [
     "ルサイルは、カタールにあるコースだ。F1公式サイトによると、2004年のMotoGPに向けて造られ、F1は2021年に初めて開いた。2023年から10年間の開催契約を結んでいる。1周は5.419km、決勝は57周。コーナーは16（右10、左6）だ（メルセデスF1）。",
     "F1公式サイトは、中速と高速のコーナーが中心の、速くて流れるコースだと紹介している。1kmを超える主直線から入る1コーナーは、追い抜きの場所になる。ラップレコードは、2024年にノリスが出した1分22秒384だ。",
-    "2026年のカタールGPは、11月27〜29日に予定されている。ただ、中東情勢のため、F1は最終の2戦（カタールとアブダビ）を開くかどうかを10月中旬までに決める見通しだ（2026年9月24日のTSN、RacingNews365の報道）。開けない場合は、イモラが予備の会場として準備されている。F1のドメニカリ代表は「最後の2戦はカタールとアブダビだ」と述べたが、イモラは予備の案として残っている（RacingNews365、10月3日）。"
+    "2026年のカタールGPは、11月27〜29日に予定されている。中東情勢のため開催が心配され、開けないときはイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、カタールとアブダビの2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況はここ数か月で悪くなっておらず、カタールでは最近MotoGPのレースも開かれたと説明した。状況が悪くなれば対応するとしている（Crash.net）。"
    ],
    "examples": [
     {
@@ -20184,19 +20468,19 @@
      "url": "https://mercedesamgf1.com/news/what-can-we-expect-from-the-losail-international-circuit"
     },
     {
-     "name": "TSN",
-     "title": "F1 teams to expect decision on Qatar, Abu Dhabi by mid-October",
-     "url": "https://www.tsn.ca/motorsports/article/f1-teams-to-expect-decision-on-qatar-abu-dhabi-and-where-2026-season-will-end-by-mid-october-n1-50011899/"
+     "name": "The Race",
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
     },
     {
-     "name": "RacingNews365",
-     "title": "Qatar and Abu Dhabi Grands Prix confirmation deadline revealed",
-     "url": "https://racingnews365.com/qatar-and-abu-dhabi-grands-prix-confirmation-deadline-revealed"
+     "name": "PlanetF1",
+     "title": "F1 confirms Middle East finale as Imola stood down（2026年11月10日、チームに伝えた）",
+     "url": "https://www.planetf1.com/news/f1-confirms-2026-season-finale-with-new-announcement"
     },
     {
-     "name": "RacingNews365",
-     "title": "F1 provides 'confirmed' update on final rounds of calendar",
-     "url": "https://racingnews365.com/f1-provides-confirmed-update-on-final-rounds-of-calendar"
+     "name": "Crash.net",
+     "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
+     "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
     }
    ],
    "cat": "サーキットと歴史",
@@ -20224,7 +20508,7 @@
    "body": [
     "ヤス・マリーナは、アブダビのヤス島にあるコースで、アブダビGPの会場だ。F1公式サイトによると、ティルケが設計し、F1は2009年に初めて開いた。2021年の前にコースが変わり、1周は少し短くなって5.281km。決勝は58周で、反時計回りだ（メルセデスF1）。",
     "ターン5と6のあいだに約1.2kmの長い直線があり、追い抜きの場所になる（F1公式サイト）。レースは日没の前に始まって暗くなってから終わり、ナイトレースに数えられる（メルセデスF1）。F1公式サイトのコース紹介にはラップレコードが載っていない。2024年の決勝では、マグヌッセンが1分25秒637の最速ラップを記録した（F1公式の結果ページ）。",
-    "2026年のアブダビGPは12月4〜6日の予定で、シーズン最終戦にあたる。ただ、中東情勢のため、F1はカタールとアブダビを開くかどうかを10月中旬までに決める見通しだ（2026年9月24日のTSN、RacingNews365の報道）。開けない場合は、イモラが予備の会場になる。F1のドメニカリ代表は「最後の2戦はカタールとアブダビだ」と述べたが、イモラは予備の案として残っている（RacingNews365、10月3日）。"
+    "2026年のアブダビGPは12月4〜6日の予定で、シーズン最終戦にあたる。中東情勢のため開催が心配され、開けないときは12月6日にイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、カタールとアブダビの2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況、とくにカタールとアブダビの状況は、ここ数か月で悪くなっていないと説明した。状況が悪くなれば対応するとしている（Crash.net）。"
    ],
    "examples": [
     {
@@ -20268,19 +20552,19 @@
      "url": "https://www.formula1.com/en/results/2025/races/1276/abu-dhabi/fastest-laps"
     },
     {
-     "name": "TSN",
-     "title": "F1 teams to expect decision on Qatar, Abu Dhabi by mid-October",
-     "url": "https://www.tsn.ca/motorsports/article/f1-teams-to-expect-decision-on-qatar-abu-dhabi-and-where-2026-season-will-end-by-mid-october-n1-50011899/"
+     "name": "The Race",
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
     },
     {
-     "name": "RacingNews365",
-     "title": "Qatar and Abu Dhabi Grands Prix confirmation deadline revealed",
-     "url": "https://racingnews365.com/qatar-and-abu-dhabi-grands-prix-confirmation-deadline-revealed"
+     "name": "PlanetF1",
+     "title": "F1 confirms Middle East finale as Imola stood down（2026年11月10日、チームに伝えた）",
+     "url": "https://www.planetf1.com/news/f1-confirms-2026-season-finale-with-new-announcement"
     },
     {
-     "name": "RacingNews365",
-     "title": "F1 provides 'confirmed' update on final rounds of calendar",
-     "url": "https://racingnews365.com/f1-provides-confirmed-update-on-final-rounds-of-calendar"
+     "name": "Crash.net",
+     "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
+     "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
     }
    ],
    "cat": "サーキットと歴史",
@@ -24350,7 +24634,7 @@
     "penalty-points",
     "time-penalty"
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-11-11",
    "src": [
     {
      "name": "FIA",
@@ -26798,13 +27082,12 @@
     "バーレーンGP・イン・マレーシア",
     "中東情勢",
     "開催中止",
-    "代わりのサーキット",
-    "イモラが予備"
+    "代わりのサーキット"
    ],
    "short": "予定の国やコースで開けなくなったレースを、別の場所で行うこと。大会名を残すこともある。",
    "body": [
     "戦争や災害、感染症などで予定のサーキットが使えなくなると、F1はそのレースを中止するか、別の場所で開く。2026年のセパン開催も、FIAの世界モータースポーツ評議会（WMSC）の最終承認を条件として発表された。",
-    "2026年は、2月28日に始まった中東での武力衝突のため、4月のバーレーンGPとサウジアラビアGPが3月に中止になった。その後、7月に、バーレーンGPをマレーシアのセパンで10月2〜4日に開くと発表された。正式な大会名は「フォーミュラ1 ガルフ・エア・バーレーンGP・イン・マレーシア」で、バーレーンGPの名前を残した。サウジアラビアGPの代わりはない。終盤のカタールとアブダビにも不安があり、イモラが予備の会場として準備を進めている。ただし、イモラでの開催は正式には決まっていない。2026年10月には、開催の判断が11月中旬までずれ込む可能性があると英紙テレグラフが報じた（F1-Gate.com）。一方、FIAのビン・スライエム会長は「2つのレースは開催される」と述べた（The Race、10月20日）。",
+    "2026年は、2月28日に始まった中東での武力衝突のため、4月のバーレーンGPとサウジアラビアGPが3月に中止になった。その後、7月に、バーレーンGPをマレーシアのセパンで10月2〜4日に開くと発表された。正式な大会名は「フォーミュラ1 ガルフ・エア・バーレーンGP・イン・マレーシア」で、バーレーンGPの名前を残した。サウジアラビアGPの代わりはない。終盤のカタールとアブダビにも不安があり、開けないときは12月6日にイモラで最終戦を開く予備の案が準備されていた（The Race、11月10日）。FIAのビン・スライエム会長は10月20日、「2つのレースは開催される」と述べていた（The Race）。F1は11月10日、2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、状況が悪くなれば対応するとしている（Crash.net）。",
     "国名と開催地が違うレースは、前にもある。スイスは1955年のル・マン24時間の大事故のあと国内でのレースを禁じ、1982年のスイスGPはフランスのディジョンで開かれた。2020年は新型コロナのためカナダ、アメリカ、メキシコ、ブラジルが中止になり、代わりにニュルブルクリンク（アイフェルGP）、ポルティマン（ポルトガルGP）、イモラ（エミリア・ロマーニャGP）などがカレンダーに入った。"
    ],
    "examples": [
@@ -26823,10 +27106,6 @@
     {
      "t": "FIA会長、カタールとアブダビは「開催される」と明言",
      "u": "/news/en-therace-fia-adamant-gulf-races/"
-    },
-    {
-     "t": "カタールとアブダビの開催判断が11月中旬まで延びる可能性と英紙が報道。イモラは代替案として準備",
-     "u": "/news/ja-f1gate-qatar-abudhabi-decision-delay/"
     },
     {
      "t": "両戦が中止になれば、最終戦は12月6日のイモラに移る計算",
@@ -26887,14 +27166,24 @@
      "url": "https://www.the-race.com/formula-1/fia-adamant-f1-qatar-abu-dhabi-gp-will-go-ahead/"
     },
     {
-     "name": "F1-Gate.com",
-     "title": "F1カタール＆アブダビGP 開催判断が11月中旬まで延期の可能性（2026年10月20日）",
-     "url": "https://f1-gate.com/qatargp/228948.html"
-    },
-    {
      "name": "The Race",
      "title": "'Very difficult' to be convinced Middle East races go ahead - Sainz（2026年10月22日）",
      "url": "https://www.the-race.com/formula-1/f1-qatar-abu-dhabi-very-difficult-to-be-convinced-races-go-ahead-carlos-sainz/"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 confirms Middle East finale as Imola stood down（2026年11月10日、チームに伝えた）",
+     "url": "https://www.planetf1.com/news/f1-confirms-2026-season-finale-with-new-announcement"
+    },
+    {
+     "name": "Crash.net",
+     "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
+     "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
     }
    ]
   },
@@ -29884,15 +30173,13 @@
    "words": [
     "エミリア・ロマーニャGP",
     "サンマリノGP",
-    "反時計回り",
-    "代わりの最終戦",
-    "12月6日"
+    "反時計回り"
    ],
-   "short": "イタリア北部のサーキット。2025年まで開催し、2026年最終戦の代わりの候補とされる。",
+   "short": "イタリア北部のサーキット。2025年まで開催。2026年は最終戦の予備の会場だったが、11月10日に外れた。",
    "body": [
     "イモラは、イタリア北部にあるサーキットだ。F1公式のレースプログラムによると、1周は4.909kmで、決勝は63周。反時計回りのコースで、古くからの雰囲気を残す速いコースと紹介されている。1953年にレースが始まり、1988年から「エンツォ・エ・ディーノ・フェラーリ」の名前がついている。",
     "F1では、1980年にイタリアGPを開き、1981年からは「サンマリノGP」として開いた。2006年までに開いたグランプリは27回になる。1994年のサンマリノGPでは、アイルトン・セナとローランド・ラッツェンバーガーが亡くなった。2020年には「エミリア・ロマーニャGP」としてカレンダーに戻った（F1公式）。2023年は、地域の大洪水でテレビの施設やF2・F3のパドックが水につかり、中止になった（GrandPrix.com）。",
-    "2026年のカレンダーからは外れ、同じ発表でマドリードが新しく加わった（The Race、2025年6月）。ただ、中東の情勢でカタール（11月29日）とアブダビ（12月6日）の最終2戦が開けない場合の、代わりの会場として名前が挙がっている。12月6日にイモラで開くという報道もあるが、F1のドメニカリCEOは10月初めの時点で、最終2戦はカタールとアブダビだと話している。イモラは、そのための備えとされる（RacingNews365、2026年10月3日）。12月のイモラは気温が低く、タイヤの温度を上げにくいことが課題とされる（The Race）。"
+    "2026年のカレンダーからは外れ、同じ発表でマドリードが新しく加わった（The Race、2025年6月）。ただ、中東の情勢でカタール（11月29日）とアブダビ（12月6日）の最終2戦が開けない場合に備えて、12月6日に最終戦を開く予備の会場とされていた。12月のイモラは気温が低く、タイヤの温度を上げにくいことが課題とされていた（The Race、2026年7月）。F1は11月10日、イモラに最終戦の開催は要らないと知らせ、イモラは予備の会場から正式に外れた（The Race、11月10日）。F1の広報は「イモラをいつまでも待たせることはできない」と話した（Crash.net）。"
    ],
    "examples": [
     {
@@ -29934,14 +30221,14 @@
      "url": "https://www.the-race.com/formula-1/new-contender-emerges-as-f1-2026-season-finale-back-up/"
     },
     {
-     "name": "GrandPrix.com",
-     "title": "Imola reportedly lined up for 2026 season finale（2026年9月9日）",
-     "url": "https://www.grandprix.com/news/imola-reportedly-lined-up-for-2026-season-finale.html"
+     "name": "The Race",
+     "title": "F1 stands Imola down - what it means for 2026 and '27 calendars（2026年11月10日）",
+     "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/"
     },
     {
-     "name": "RacingNews365",
-     "title": "F1 provides confirmed update on final rounds of calendar（2026年10月3日、ドメニカリ「最終2戦はカタールとアブダビ」、イモラは備え）",
-     "url": "https://racingnews365.com/f1-provides-confirmed-update-on-final-rounds-of-calendar"
+     "name": "Crash.net",
+     "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
+     "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
     }
    ]
   },
@@ -32485,7 +32772,7 @@
    "short": "前の年のワールドチャンピオン。翌年はゼッケン1番を使える。",
    "body": [
     "前年王者（ディフェンディングチャンピオン）は、前の年のワールドチャンピオンのことだ。翌年は1番のカーナンバーを使える。使うかどうかは本人が選べ、ハミルトンのように前の番号を使い続けた例もある。2026年は、2025年の王者ノリスが、4番から1番に替えた（Motorsport.com）。",
-    "2026年のノリスは、アメリカGPとメキシコシティGPで続けて5位に入った。メキシコシティGPのあと、予定では残り4戦の時点で221点のランキング6位、5位のルクレール（245点）とは24点差だ（F1公式サイト）。勝利は2回のままだ。Motorsport-Total.comによると、このまま6位以下で終えると、前年王者としては、1997年にアロウズで12位だったデイモン・ヒル以来の低い順位になる。1997年よりあとでいちばん低かったのは5位で、1998年のビルヌーブ、初タイトルの翌年のハミルトン、2010年のバトン、2014年のベッテルだ。",
+    "2026年のノリスは、アメリカGPとメキシコシティGPで続けて5位に入った。メキシコシティGPのあと、予定では残り4戦の時点で221点のランキング6位、5位のルクレール（245点）とは24点差だった（F1公式サイト）。ノリスは、11月8日のサンパウロGPでポールから勝ち、今季3勝目を挙げた。終了時点で246点のランキング6位、5位のルクレール（249点）とは3点差だ（F1公式サイト）。Motorsport-Total.comによると、このまま6位以下で終えると、前年王者としては、1997年にアロウズで12位だったデイモン・ヒル以来の低い順位になる。1997年よりあとでいちばん低かったのは5位で、1998年のビルヌーブ、初タイトルの翌年のハミルトン、2010年のバトン、2014年のベッテルだ。",
     "王者が翌年に走らないこともある。2016年の王者ロズベルグは、その年で引退し、タイトルを守る戦いには出なかった（Motorsport-Total.com）。"
    ],
    "examples": [
@@ -32496,6 +32783,10 @@
     {
      "t": "王者ノリス「マクラーレンは今、トップ4チームで最も弱い」。ステラ代表はアップグレード投入を明言",
      "u": "/news/de-mst-norris-mclaren-worst-top-team/"
+    },
+    {
+     "t": "ノリス、サンパウロで勝っても「まだタイトルを争う水準にない」とマクラーレンに注文",
+     "u": "/news/en-planetf1-norris-mclaren-warning-brazil-win/"
     }
    ],
    "see": [
@@ -32529,6 +32820,11 @@
      "name": "Formula 1 公式",
      "title": "2026 Mexico City Grand Prix – Race Result（2026年11月1日、1位フェルスタッペン、2位ハミルトン、3位アントネッリ、10位平川亮・1点）",
      "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+    },
+    {
+     "name": "Formula 1 公式",
+     "title": "2026 Sao Paulo Grand Prix – Race Result（1位ノリス、2位フェルスタッペン +14.602s、71周）",
+     "url": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result"
     }
    ],
    "checked": "2026-11-02"
@@ -34323,6 +34619,639 @@
     }
    ],
    "checked": "2026-11-06"
+  },
+  {
+   "id": "reconnaissance-lap",
+   "term": "偵察ラップ（レコノサンスラップ）",
+   "cat": "レース運営",
+   "aliases": [
+    "レコノサンスラップ",
+    "reconnaissance lap",
+    "recon lap",
+    "ていさつらっぷ"
+   ],
+   "words": [
+    "決勝前",
+    "グリッドにつく",
+    "ピット出口",
+    "路面の確認",
+    "スタート前の周回"
+   ],
+   "short": "決勝の前に、ピットを出てグリッドにつくまでに走る周。その日の路面を確かめる。",
+   "body": [
+    "決勝のスタート前には、決められた時間だけピットレーンが開く。ドライバーはこの間にコースへ出て1周以上走り、最後にグリッドの自分の位置につく。これが偵察ラップだ。2020年のMotorsport Weekの解説では、ヨーロッパの大会の例で、フォーメーションラップが始まる40分前にピットレーンが開き、30分前に閉じていた。閉じるまでにコースへ出なかった車は、グリッドにつけず、ピットレーンからのスタートになる。",
+    "偵察ラップにも決まりがある。FIAの2026年オーストラリアGPの競技ノートでは、2本のセーフティカーラインの間を決められた時間より遅く走ると、予選などと同じく「不必要にゆっくり走った」とみなされることがある。スタートの練習ができる場所も1か所に限られる。一方で、この周に限っては、ピット出口の道とコースを分ける白線を越えてよい。2023年のアメリカGPでは、ピットレーンからスタートする予定のストロールが、偵察ラップのあとピットに入らず、グリッドの最後尾まで来てしまった。車はチームが押して戻した。スチュワードは、手順どおりではなかったが規則違反はなかったとして、措置なしとした。",
+    "雨の日は、ドライバーがその日の路面に初めて触れる周にもなる。2026年のサンパウロGPでは、濡れて乾きはじめた路面で、アントネッリが偵察ラップ中にターン12で外へはらみ、スピンした。車はガレージで念のため点検を受け、大きな傷みはなかった（F1公式サイト）。"
+   ],
+   "examples": [
+    {
+     "t": "雨のサンパウロGP、アントネッリが偵察ラップでスピン（ノリスが優勝）",
+     "u": "/news/en-f1com-sao-paulo-norris-wins-mercedes-title/"
+    }
+   ],
+   "see": [
+    "formation-lap",
+    "pit-lane-start",
+    "race-start",
+    "pit-lane"
+   ],
+   "src": [
+    {
+     "name": "Motorsport Week",
+     "title": "Insight: What happens before an F1 race starts（2020年1月12日、14:30にピットレーンが開き偵察ラップ、14:40に閉鎖、15:10にフォーメーションラップ）",
+     "url": "https://motorsportweek.com/2020/01/12/insight-what-happens-before-an-f1-race-starts"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Australian Grand Prix - Race Director's Competition Notes（2026年3月5日、項目1・14・15・16）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_race_directors_competition_notes.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2023 United States Grand Prix - Decision - Car 18 - Not entering Pit Lane（\"no breach of any regulation was evident\"、措置なし）",
+     "url": "https://www.fia.com/sites/default/files/decision-document/2023 United States Grand Prix - Decision - Car 18 - Not entering Pit Lane.pdf"
+    },
+    {
+     "name": "Formula 1",
+     "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship（2026年11月8日、\"running wide at Turn 12 on his reconnaissance lap\"）",
+     "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "fast-lane",
+   "term": "ファストレーン（ピットレーンの走行車線）",
+   "cat": "レース運営",
+   "aliases": [
+    "fast lane",
+    "ふぁすとれーん"
+   ],
+   "words": [
+    "ピットレーン",
+    "車線",
+    "白線",
+    "合流",
+    "送り出し",
+    "インナーレーン"
+   ],
+   "short": "ピットレーンの中で、車が走って通り抜ける側の車線。ガレージの前の車線とは白線で分かれる。",
+   "body": [
+    "ピットレーンは、ガレージの前の車線（インナーレーン）と、車が走って通り抜ける車線（ファストレーン）に分かれている。2つの間には実線の白線がある。FIAの2026年オーストラリアGPの競技ノートは、タイヤがこの白線を完全に越えたとき、つまりタイヤ全体がガレージから見て白線の向こう側に出たときに、車はファストレーンにいるとみなすとした。",
+    "ガレージを出た車は、安全になったらすぐにファストレーンに合流し、そこを走る車を不必要に邪魔してはいけない（国際モータースポーツ競技規則の付則L）。インナーレーンをファストレーンと並んで走り続けても、「できるだけ早く合流した」とはみなされない。ファストレーンの車は、特別な場合を除き、ほかのファストレーンの車を追い越せない。スタートや再開の前にピットレーンの出口へ向かう車は、ファストレーンに一列に並び、着いた順に出ていく。",
+    "ピット作業を終えた車を、ファストレーンを来る車の進路に出すと、アンセーフリリースとして罰の対象になる。2024年のモナコのF2では、レース1の前の偵察ラップのときに、アントネッリの車がファストレーンを来るアーロンの前に送り出された。アーロンは強いブレーキでよけ、チームは500ユーロの罰金を受けた（FIAの裁定書）。"
+   ],
+   "examples": [
+    {
+     "t": "アントネッリに5秒加算、ピットでファストレーンを走るコラピントの進路に送り出された（サンパウロGP）",
+     "u": "/news/de-motorsporttotal-antonelli-unsafe-release-penalty/"
+    }
+   ],
+   "see": [
+    "pit-lane",
+    "unsafe-release",
+    "international-sporting-code"
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "2026 Australian Grand Prix - Race Director's Competition Notes（2026年3月5日、項目1・14・15・16）",
+     "url": "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_race_directors_competition_notes.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2024 Monaco Event - INFRINGEMENT - Car 4 - unsafe release on recon lap（FIA F2、\"with Car 17 (Aron) approaching in the fast lane\"、罰金500ユーロ）",
+     "url": "https://fia.com/sites/default/files/decision-document/2024 Monaco Event - INFRINGEMENT - Car 4 - unsafe release on recon lap.pdf"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "rules-of-engagement",
+   "term": "チーム内の戦い方の取り決め（パパイヤルールなど）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "パパイヤルール",
+    "papaya rules",
+    "ルールズ・オブ・エンゲージメント",
+    "rules of engagement",
+    "ぱぱいやるーる"
+   ],
+   "words": [
+    "同士討ち",
+    "チームメイト",
+    "接触",
+    "レースの指針",
+    "対等"
+   ],
+   "short": "同じチームの2台が争うときに、チームが前もって決めておく戦い方の約束。マクラーレンの「パパイヤルール」がよく知られる。",
+   "body": [
+    "同じチームの2台が接触すれば、チームは2台分の点を失うおそれがある。そこで、2人がどう戦うかを前もって決めておくチームがある。英語では「ルールズ・オブ・エンゲージメント」とも呼ぶ。レース中に順位について出す指示（→チームオーダー）とは別の、前もっての約束だ。",
+    "マクラーレンの「パパイヤルール」は、2024年のイタリアGPで広く知られた。チーム代表のステラは、相手がパパイヤ色の車（チームメイト）なら、ほかの相手のとき以上に気をつけて戦うことだと説明した。ノリスの言い方は「とにかくぶつけるな」だった。2025年のタイトル争いでは、イタリアGPでピアストリがノリスに2位を譲るよう指示されたこともあり、議論を呼んだ。Motorsport.com（2026年1月）によると、マクラーレンは2026年もこの方針を続けるとし、ステラは「公平、平等、スポーツマンシップ」の原則で戦うと述べた。2026年5月のPlanetF1は、ポッドキャストの司会者が、マクラーレンはこの呼び名を使わなくなったと思うと話したと伝えた。",
+    "フェラーリは、2026年のメキシコシティGPでのハミルトンとルクレールの争いのあと、サンパウロGPで2人と話し合った。フェラーリには決まった形の取り決めはなく、指針で2人を戦わせている。バスール代表は「指針は今も同じだ」と述べ、変えなかった。「2人はチームのために働いている。チームが最優先だ」とも話した（The Race、PlanetF1）。"
+   ],
+   "examples": [
+    {
+     "t": "バスール代表、ハミルトンとルクレールと面談　戦い方の指針は変えず",
+     "u": "/news/en-therace-hamilton-leclerc-meeting-learned/"
+    },
+    {
+     "t": "ハミルトンは2台の取り決めの議論を求め、バスール代表は「フェラーリが最優先」",
+     "u": "/news/en-f1com-vasseur-hamilton-leclerc-talks/"
+    },
+    {
+     "t": "ピアストリとマネージャーの決別、「パパイヤルール」も摩擦の一因と独誌",
+     "u": "/news/de-motorsporttotal-piastri-webber-real-reason/"
+    }
+   ],
+   "see": [
+    "team-orders",
+    "teammate-battle",
+    "number-one-driver"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "'Papaya rules' explained: What are McLaren instructing their drivers with new phrase?（2024年9月2日、ステラ \"if the car is papaya, you take even extra care\"、ノリス \"Just don't crash\"）",
+     "url": "https://www.planetf1.com/news/mclaren-f1-papaya-rules-explained"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Has McLaren quietly killed 'papaya rules' after title fight controversy spiralled?（2026年5月17日、モンツァでの2位の譲渡、\"I think they dropped it now\"）",
+     "url": "https://www.planetf1.com/news/mclaren-kills-papaya-rules-title-fight-controversy-spiralled"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "McLaren confirms controversial papaya rules will stay for 2026 F1 season（2026年1月22日更新、ステラ \"the principles of fairness, equality, sportsmanship\"）",
+     "url": "https://au.motorsport.com/f1/news/mclaren-confirms-controversial-papaya-rules-will-stay-for-2026-f1-season/10791816/"
+    },
+    {
+     "name": "The Race",
+     "title": "What we learned about Ferrari's key Hamilton/Leclerc meeting（2026年11月6日、\"The guidelines are still the same\"、\"the team has to come first\"）",
+     "url": "https://www.the-race.com/formula-1/what-we-learned-about-ferraris-hamilton-leclerc-meeting/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Ferrari boss reveals outcome of Lewis Hamilton and Charles Leclerc talks（2026年11月6日）",
+     "url": "https://www.planetf1.com/news/ferrari-lewis-hamilton-charles-leclerc-discussion"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "teamwear",
+   "term": "チームウェア（アパレル供給）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "チームウェア",
+    "アパレル契約",
+    "teamwear",
+    "team kit",
+    "kit supplier",
+    "ちーむうぇあ"
+   ],
+   "words": [
+    "ウェア",
+    "アディダス",
+    "プーマ",
+    "グッズ",
+    "服"
+   ],
+   "short": "チームの服や靴を作って供給する、スポーツ用品メーカーとの契約。ファン向けのグッズにもつながる。",
+   "body": [
+    "F1チームは、チームの服や靴を作るメーカーと契約を結ぶ。メルセデスは2025年1月7日、アディダスとの複数年の契約を発表した。チームの一人一人に合わせた服を一式そろえ、靴や小物も含めて、チームとファンに向けて作る。2024年までは、トミー・ヒルフィガーがデザインしていた（PlanetF1）。",
+    "契約先はときどき替わる。PlanetF1（2026年4月1日）によると、メルセデスとアウディはアディダス、マクラーレンは2026年からプーマ、アルピーヌとハースはCastoreだ。レッドブルは2023年のシーズン前にCastoreと組み、2024年の初めに延長した。延長の発表のときは、F1の歴史で最も大きなアパレル契約とされた。",
+    "2026年11月には、アディダスのロゴが入ったレッドブルの服を着たフェルスタッペンの写真が出回った。独紙ビルは、レッドブルとアディダスが2027年から少なくとも3年、年2700万ユーロの契約に近いと報じていた。アディダスは「原則として、うわさや憶測には応じない」としていて、正式な発表はない（PlanetF1）。"
+   ],
+   "examples": [
+    {
+     "t": "フェルスタッペン、アディダスのウェア姿が出回る　レッドブルの供給元変更の観測",
+     "u": "/news/de-f1insider-verstappen-adidas-2027/"
+    },
+    {
+     "t": "流出写真でフェルスタッペンがアディダスの服　レッドブルの新しい契約か",
+     "u": "/news/nl-racingnews365-verstappen-adidas-leaked-photos/"
+    }
+   ],
+   "see": [
+    "sponsor",
+    "title-sponsor"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Mercedes announce 'groundbreaking' deal with Adidas in F1 first（2025年1月7日、\"Until 2024, Mercedes' kit was designed by Tommy Hilfiger\"）",
+     "url": "https://www.planetf1.com/news/mercedes-adidas-f1-2025-team-kit-supplier"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Red Bull linked with $31million Adidas deal for F1 2027 season（2026年4月1日、ビルの報道、\"we do not engage in rumours or speculation\"、各チームの供給元）",
+     "url": "https://www.planetf1.com/news/red-bull-adidas-f1-2027-deal-merchandise"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Spy shot reveals major Red Bull and Max Verstappen change for 2027（2026年11月5日、\"Red Bull team wear with Adidas branding\"）",
+     "url": "https://www.planetf1.com/home-page/red-bull-max-verstappen-f1-2027-adidas"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "team-ownership",
+   "term": "チームのオーナー（株主）",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "チームオーナー",
+    "筆頭株主",
+    "team ownership",
+    "ちーむのおーなー"
+   ],
+   "words": [
+    "株",
+    "売却",
+    "出資",
+    "買収",
+    "持ち主"
+   ],
+   "short": "F1チームを持っている会社や人。チームの株が売り買いされて、持ち主が変わることもある。",
+   "body": [
+    "F1チームの持ち主はさまざまだ。PlanetF1（2026年9月22日）によると、メルセデスのチームは、メルセデス・ベンツ、イネオス、モータースポーツ・インベスト社が3分の1ずつを持つ。レッドブルとレーシングブルズは、どちらもレッドブル社が完全に支配する。フェラーリのチームは、上場しているフェラーリ社のものだ。ハースはジーン・ハースが全部を持つ。",
+    "チームの一部を外に売る例もある。アウディのチームは、フォルクスワーゲン・グループが最終的な持ち主で、PlanetF1によると、アウディはカタール投資庁に30％を売った。アルピーヌは、ルノーが76％を持ち、残りはオトロ・キャピタルが持つ（同）。",
+    "2026年11月には、キャデラックのチームの売却の話が広がった。チームを支配するのは、米国の投資会社TWGグローバルのモータースポーツ部門だ。RACER（11月3日）は、米スポーティコが、TWGがチームの売却を考えていて、7者が関心を示していると報じたと伝えた。チームの値打ちは、TWGの側が30億ドルとみているという。TWGは8月には「売却は考えていない」としていた。The Race（11月6日）は、英紙ガーディアンがフェンウェイ・スポーツ・グループ（FSG）による過半数の取得の話し合いを報じたと書いた。チームは「何も変わっていない」としている。"
+   ],
+   "examples": [
+    {
+     "t": "リバプールの親会社FSG、キャデラックF1の過半数株の取得に関心か",
+     "u": "/news/en-crash-fsg-cadillac-stake-interest/"
+    },
+    {
+     "t": "キャデラックF1の一部売却の観測　筆頭株主ウォルター氏",
+     "u": "/news/de-motorsporttotal-cadillac-sale-rumors/"
+    },
+    {
+     "t": "キャデラックF1の売却交渉の実態　チームは「何も変わっていない」",
+     "u": "/news/en-therace-cadillac-buyout-talks/"
+    }
+   ],
+   "see": [
+    "eleventh-team",
+    "works-team"
+   ],
+   "src": [
+    {
+     "name": "PlanetF1",
+     "title": "Who owns each Formula 1 team?（2026年9月22日）",
+     "url": "https://www.planetf1.com/features/who-owns-f1-team"
+    },
+    {
+     "name": "RACER",
+     "title": "TWG Group exploring sale of Cadillac F1 team stake（2026年11月3日、\"controlled by Mark Walter through TWG Motorsports\"、\"values it at $3 billion\"）",
+     "url": "https://racer.com/2026/11/03/twg-group-exploring-sale-of-cadillac-f1-team"
+    },
+    {
+     "name": "The Race",
+     "title": "What's really happening with Cadillac F1 buyout talks（2026年11月6日、ガーディアンの報道、\"nothing has changed\"）",
+     "url": "https://www.the-race.com/business/cadillac-f1-buyout-talks-what-is-really-happening/"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "driver-salary",
+   "term": "ドライバーの年俸",
+   "cat": "チームとビジネス",
+   "aliases": [
+    "年俸",
+    "ドライバーの給料",
+    "driver salary",
+    "ドライバーの報酬",
+    "ねんぽう"
+   ],
+   "words": [
+    "給料",
+    "契約金",
+    "ボーナス",
+    "成功報酬",
+    "稼ぎ"
+   ],
+   "short": "チームがドライバーに払う報酬。基本給と、成績に応じたボーナスからなる。金額はふつう公表されない。",
+   "body": [
+    "ドライバーの報酬は、基本給と、成績に応じたボーナスからなる。金額はふつう公表されないので、報じられる数字は推定だ。米誌フォーブスは毎年、財務の資料、裁判の書類、報道、関係者への取材をもとに推定を出している（Crash.net）。",
+    "フォーブスの2025年の推定では、1位がフェルスタッペンで7600万ドル、2位がハミルトンで7050万ドル、3位がノリスで5750万ドルだった。フェルスタッペンの基本給は約6500万ドルとみられ、残りは成績に応じたボーナスだという。この数字には、F1の外での収入は入らず、税も引いていない（Crash.net）。",
+    "ドライバーの報酬は、コストキャップ（予算上限）の計算に入らない（→コストキャップの対象外の費用）。契約の年数も話題になる。2026年10月には、ペレスがキャデラックとの契約を2029年まで延ばした（RACER）。"
+   ],
+   "examples": [
+    {
+     "t": "ペレスのキャデラック新契約は3年1億ドル超か　米ESPNの報道",
+     "u": "/news/de-motorsporttotal-perez-cadillac-salary/"
+    },
+    {
+     "t": "ベアマンの年俸600万ユーロ要求説、ハースの小松代表が否定",
+     "u": "/news/en-planetf1-komatsu-bearman-salary-nonsense/"
+    }
+   ],
+   "see": [
+    "cost-cap-exclusions",
+    "driver-manager",
+    "seat",
+    "contract-option"
+   ],
+   "src": [
+    {
+     "name": "Crash.net",
+     "title": "Highest-paid F1 drivers in 2025 revealed: Who sits top?（2025年12月11日、フォーブスの推定、フェルスタッペン7600万ドル）",
+     "url": "https://www.crash.net/f1/news/1088154/1/highest-paid-f1-drivers-2025-revealed-who-sits-top"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "F1 2026 driver salaries: Who are the highest-paid drivers on the grid?（2026年8月6日、\"F1 driver salaries are not taken into account in the team's budget cap\"）",
+     "url": "https://www.planetf1.com/news/f1-driver-salaries-2026-grid"
+    },
+    {
+     "name": "RACER",
+     "title": "Perez signs Cadillac extension through 2029（2026年10月28日）",
+     "url": "https://racer.com/2026/10/28/perez-signs-cadillac-extension-through-2029"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "oil-sump",
+   "term": "オイルサンプ（エンジンオイルの受け皿）",
+   "cat": "パワーユニット",
+   "aliases": [
+    "ドライサンプ",
+    "oil sump",
+    "dry sump",
+    "オイルパン",
+    "おいるさんぷ"
+   ],
+   "words": [
+    "オイル漏れ",
+    "潤滑",
+    "オイルタンク",
+    "エンジンの油"
+   ],
+   "short": "エンジンの下で、エンジンオイルが集まる部分。F1のエンジンは「ドライサンプ」という方式を使う。",
+   "body": [
+    "エンジンの中では、オイルが部品の間を流れる。流れたオイルが下に集まる部分がサンプ（オイルパン）だ。「ウェットサンプ」という方式では、エンジンの下の受け皿にオイルをためておく。",
+    "F1のエンジンは「ドライサンプ」だ。オイルをサンプにためず、クランクシャフトで回す1つ以上のスカベンジポンプ（回収ポンプ）で吸い出し、外に置いた別のオイルタンクに送る。サンプを小さく作れるので、エンジンの重心を下げられる。速いコーナーで横向きの力がかかると、オイルがサンプの片側に寄り、エンジンにオイルが届かなくなるおそれがあるが、その問題にも対処できる（F1Technical）。",
+    "2026年のメキシコシティGPでは、アントネッリの車のサンプが割れていた。メルセデスのブラッドリー・ロード副代表によると、レースのあとにフロアを外すと、オイルまみれだった。ロードは「リタイアのぎりぎり手前だったが、持ちこたえた」と話した（F1公式サイト）。"
+   ],
+   "examples": [
+    {
+     "t": "アントネッリ、メキシコGPでオイル漏れ　車はリタイア寸前だった",
+     "u": "/news/en-crash-antonelli-oil-leak-edge-retirement/"
+    },
+    {
+     "t": "メルセデス副代表「床下はオイルだらけ」　アントネッリの車のサンプに亀裂",
+     "u": "/news/de-motorsporttotal-antonelli-sump-crack-near-retirement/"
+    }
+   ],
+   "see": [
+    "reliability",
+    "cooling",
+    "ice"
+   ],
+   "src": [
+    {
+     "name": "F1Technical",
+     "title": "Dry sump lubrication in F1 engines（\"The design differs from a wet sump in its external oil tank\"、スカベンジポンプ）",
+     "url": "https://www.f1technical.net/articles/8766"
+    },
+    {
+     "name": "Formula 1",
+     "title": "'Right on the edge of retirement' – Mercedes reveal how close Antonelli came to Mexico DNF（2026年11月5日、\"took the floor off the bottom – covered in oil!\"、\"Sump cracked\"）",
+     "url": "https://formula1.com/en/latest/article/right-on-the-edge-of-retirement-mercedes-reveal-how-close-antonelli-came-to-mexico-dnf.7iIZJXxnzN5HEz7WbDb3tl"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "flying-lap",
+   "term": "アタックラップ（フライングラップ）",
+   "cat": "レース運営",
+   "aliases": [
+    "フライングラップ",
+    "flying lap",
+    "プッシュラップ",
+    "push lap",
+    "ホットラップ",
+    "あたっくらっぷ"
+   ],
+   "words": [
+    "予選",
+    "タイムアタック",
+    "最速タイム",
+    "全開の周",
+    "アタック"
+   ],
+   "short": "予選や練習で、最速のタイムを出すために全力で走る周。前にアウトラップ、後ろにインラップがある。",
+   "body": [
+    "F1公式サイトの用語集は、フライングラップを、ドライバーができるだけ速く走り、パワーユニットを最大に上げて、最速のタイムを出す周と説明している。ふつうは、ピットを出る周（アウトラップ）と、ピットに戻る周（インラップ）の間に走る。プッシュラップやホットラップとも呼ばれる。予選では、アウトラップで車を温めてから、この周に入る（→インラップとアウトラップ）。",
+    "アタックラップの車を、ほかの車が邪魔してはいけない（→予選での走行妨害）。2026年のサンパウロGPのFP2では、ハースのカマラは、ルクレールが速い周で近づいていると何度も知らされていたのに、車を左右に振り、走行ラインに大きく入った。ルクレールは衝突を避けるため右へよけ、車の大部分がコースの外に出た。スチュワードは「明らかに危険」とし、練習走行でふつう出す警告より重い、戒告にした（PlanetF1）。"
+   ],
+   "examples": [
+    {
+     "t": "カマラ、デビュー戦のFP2でルクレールの走行を妨害して戒告",
+     "u": "/news/en-therace-camara-reprimand-debut/"
+    },
+    {
+     "t": "ラッセルのQ3最後のアタック、アルボンに追いつき中断　ウォルフが判断を擁護",
+     "u": "/news/nl-racingnews365-wolff-defends-russell-lap/"
+    }
+   ],
+   "see": [
+    "in-out-lap",
+    "impeding",
+    "qualifying",
+    "cool-down-lap"
+   ],
+   "src": [
+    {
+     "name": "Formula 1",
+     "title": "F1 Glossary: F–J（Flying Lap、\"Sometimes called a push lap or a hot lap\"）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-f-j.2g6grJVxT6dFCDpSmgoCQX"
+    },
+    {
+     "name": "Formula 1",
+     "title": "F1 Glossary: K–O（Out-lap）",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-k-o.6g2hrWHA2pyxbXoe8FT9Db"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA confirms Rafael Camara punishment after Charles Leclerc investigation（2026年11月6日、\"clearly dangerous\"、\"a reprimand is warranted\"）",
+     "url": "https://www.planetf1.com/news/fia-rafael-camara-charles-leclerc-penalty"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "weather-forecast",
+   "term": "天気予報（気象レーダー）",
+   "cat": "レース運営",
+   "aliases": [
+    "気象レーダー",
+    "雨雲レーダー",
+    "weather radar",
+    "weather forecast",
+    "てんきよほう"
+   ],
+   "words": [
+    "雨",
+    "予報",
+    "レーダー",
+    "雨雲",
+    "気象"
+   ],
+   "short": "雨が来るか、いつ来るかの予報。タイヤ交換や車の設定の判断に使われる。",
+   "body": [
+    "F1では、天気の予報が作戦を大きく左右する。F1公式サイト（2016年9月）によると、当時はオーストリアの気象会社ユービメット（Ubimet）が、レースコントロールと当時の全11チームに天気の情報を出していた。毎戦2人の気象予報士がサーキットに来て、観測所とレーダーを置く。チームはウェブで、レーダー、観測データ、予報、走行中の速報を見られる。雨については、降り始めと止む時刻を分単位で当て、雨の量も予報することを目指していた。",
+    "予報は、いろいろな判断に使われる。同じ記事で、レッドブルの作戦担当者は、レースの作戦を立てるときに予報にとても関心があると話した。雨の心配はタイヤの選び方に関わるからだ。マクラーレンの担当者は、週末の前の長い先の予報を、冷却など車の基本の設定に使うと説明した。路面が濡れていくときは、濡れすぎを体で感じるドライバーがタイヤを替える時期を決め、乾いていくときはチームも判断を手伝うという。",
+    "予報が外れることもある。2021年のベルギーGPのあと、F1のドメニカリCEOは、気象レーダーの予報が外れたことを認め、「雨があれほどひどくなる兆しはなかった」と話した（PlanetF1）。予選が始まると車の設定を自由に変えられなくなる（→パルクフェルメ）ので、決勝の天気の読みは予選の前から大事になる。"
+   ],
+   "examples": [
+    {
+     "t": "サンパウロの天気予報は当てにならず　レッドブル、ウェット用の設定の判断を日曜朝まで先送り",
+     "u": "/news/nl-f1maximaal-mekies-pitlane-wet-setup-decision/"
+    },
+    {
+     "t": "豪雨で1時間25分遅れたブラジルGP予選　雨雲の動きからQ3は1周勝負とみられた",
+     "u": "/news/en-therace-norris-pole-russell-rages/"
+    }
+   ],
+   "see": [
+    "parc-ferme",
+    "rain-hazard",
+    "wet-race-declared",
+    "crossover-point"
+   ],
+   "src": [
+    {
+     "name": "Formula 1",
+     "title": "Watching the skies - how weather forecasting works in F1（2016年9月28日、Ubimet、\"to the minute when rain will arrive\"）",
+     "url": "https://www.formula1.com/en/latest/features/2016/9/how-weather-forecasting-works-in-f1.html"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Domenicali admits weather radar failed F1 in Belgium（2021年8月30日、\"There was no sign that the rain would have been so bad\"）",
+     "url": "https://www.planetf1.com/news/stefano-domenicali-weather-radar-belgium"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "support-race",
+   "term": "サポートレース",
+   "cat": "レース運営",
+   "aliases": [
+    "サポートシリーズ",
+    "support race",
+    "support series",
+    "前座レース",
+    "さぽーとれーす"
+   ],
+   "words": [
+    "F2",
+    "F3",
+    "併催",
+    "同じ週末",
+    "下のカテゴリー"
+   ],
+   "short": "F1のグランプリの週末に、同じサーキットで開かれるほかのカテゴリーのレース。F2やF3がその代表だ。",
+   "body": [
+    "F1の週末には、同じサーキットでほかのカテゴリーのレースも開かれる。これをサポートレースと呼ぶ。F2とF3はその代表で、F2のCEOは、F2の大会はどれも「F1のサポートイベント」だと述べた。2026年の予定は、F2が14大会、F3が10大会だった（F1公式サイト、2025年6月10日）。",
+    "F1の予定が変わると、サポートレースも動く。4月のバーレーンGPとサウジアラビアGPが中東の情勢で中止になった2026年は、F2の第2戦と第3戦（バーレーンとサウジアラビア）もなくなった。代わりにマイアミとカナダのF1の週末にF2が加わり、14大会のままになった（PlanetF1、2026年4月9日）。",
+    "同じ週末に開かれるので、両方に出たいドライバーは困ることがある。F2の最後の2大会は、F1のカタールGP（11月27〜29日）とアブダビGP（12月4〜6日）と同じ週末だ（F1公式サイト）。2026年は、F2に出ているカマラがハースからF1に出始めた。GPblog（11月6日）は、その時点でF2の首位だったカマラが今季の残りをハースで走る見通しで、そうなればF2のカタールとアブダビには出ないと報じた。"
+   ],
+   "examples": [
+    {
+     "t": "カタールとアブダビはF2と同じ週末　ハースは「4人まで」の規定の上限に",
+     "u": "/news/de-motorsporttotal-haas-four-driver-rule-hirakawa/"
+    }
+   ],
+   "see": [
+    "academy-f2",
+    "calendar",
+    "driver-count"
+   ],
+   "src": [
+    {
+     "name": "Formula 1",
+     "title": "Formula 2 and Formula 3 unveil their 2026 calendars（2025年6月10日、\"all support events of F1\"、F2最終戦はヤス・マリーナで12月4〜6日）",
+     "url": "https://www.formula1.com/en/latest/article/formula-2-and-formula-3-unveil-their-2026-calendars.4XZVkowTI7nQy17Fy7a4ze"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Formula 2 confirms Miami and Montreal rounds after Bahrain and Saudi cancellations（2026年4月9日）",
+     "url": "https://www.planetf1.com/news/formula-2-miami-montreal-replace-bahrain-saudi-2026-calendar"
+    },
+    {
+     "name": "GPblog",
+     "title": "Haas appears to have made a decision on Camara: major implications for the title fight（2026年11月6日）",
+     "url": "https://www.gpblog.com/en/exclusive-news/haas-appears-to-have-made-a-decision-on-camara-major-implications-for-the-title-fight"
+    }
+   ],
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "safety-car-driver",
+   "term": "セーフティカーのドライバー",
+   "cat": "レース運営",
+   "aliases": [
+    "セーフティカードライバー",
+    "safety car driver",
+    "SCドライバー",
+    "せーふてぃかーのどらいばー"
+   ],
+   "words": [
+    "マイレンダー",
+    "セーフティカー",
+    "路面の確認",
+    "雨",
+    "コースの点検"
+   ],
+   "short": "FIAのセーフティカーを運転する人。2000年からベルント・マイレンダーが務める。雨の日は路面の確認も受け持つ。",
+   "body": [
+    "セーフティカーは、FIAの公式のセーフティカードライバーが運転する。2000年のオーストラリアGPから務めているのが、ベルント・マイレンダーだ。1999年にF3000でセーフティカーのドライバーになり、翌年F1を任された。2026年のオーストラリアGPが、F1での500戦目になった（メルセデスAMG F1）。",
+    "車は、2021年からメルセデスとアストンマーティンが大会ごとに交代で出していた。アストンマーティンが2025年限りで契約を延ばさなかったため、2026年はメルセデスがすべての大会のセーフティカーとメディカルカーを出している（GPFans）。",
+    "雨の日は、コースを走れるかを確かめる役目もある。2026年のサンパウロGPの予選は、雨で始まってすぐ赤旗になった。セーフティカーは2周の確認の周回をした。マイレンダーは点検のあと、F1 TVに「簡単に言えば、走れない。危なすぎる」と話した。直線にも水が残り、高い速度でのアクアプレーニングが起きうるためだ（The Race）。"
+   ],
+   "examples": [
+    {
+     "t": "サンパウロの雨の予選、レースディレクターはセーフティカーのドライバーの判断を受けて開始",
+     "u": "/news/en-therace-brazil-wet-race-horrific-incident/"
+    }
+   ],
+   "see": [
+    "safety-car",
+    "medical-car",
+    "race-director",
+    "aquaplaning"
+   ],
+   "src": [
+    {
+     "name": "Mercedes-AMG F1",
+     "title": "500 Grand Prix of Bernd Mayländer as the F1 Safety Car Driver（2026年3月5日、\"my first race in Melbourne in 2000\"）",
+     "url": "https://www.mercedesamgf1.com/news/500-grand-prix-of-bernd-maylaender-as-the-f1-safety-car-driver"
+    },
+    {
+     "name": "GPFans",
+     "title": "Mercedes take control of F1 safety car after Aston Martin withdrawal（2026年はメルセデスがすべての大会のセーフティカーとメディカルカー）",
+     "url": "https://www.gpfans.com/en/f1-news/1074811/mercedes-f1-safety-car-provider-2026-aston-martin-withdrawal/"
+    },
+    {
+     "name": "The Race",
+     "title": "Brazilian GP qualifying red flagged almost immediately due to rain（2026年11月7日、\"two recon laps\"、\"it's, not drivable, it's too dangerous\"）",
+     "url": "https://www.the-race.com/formula-1/brazilian-gp-qualifying-red-flagged-almost-immediately-due-to-rain/"
+    },
+    {
+     "name": "autosport web",
+     "title": "ベルント・マイレンダーに聞くF1セーフティカーとアストンマーティン・バンテージ（2023年10月12日、表記「ベルント・マイレンダー」）",
+     "url": "https://www.as-web.jp/f1/1000779"
+    }
+   ],
+   "checked": "2026-11-11"
   }
  ],
  "sources": [
