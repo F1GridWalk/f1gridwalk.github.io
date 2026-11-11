@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T06:30:00+09:00",
+ "updatedAt": "2026-11-11T12:13:28+09:00",
  "topics": {
   "haas-ocon-camara-brazil": {
    "title": "ハースがオコンを今季残り戦から外す　ブラジルGPはカマラがデビュー",
@@ -60,9 +60,103 @@
   "aduo-final-window-2026": {
    "title": "FIA、第3回ADUO評価で追加のアップグレードなし",
    "summary": "FIAは今季3回目で最後のADUO評価で、PUメーカーへの追加の承認を認めなかった。第1回で支援を得たメルセデス、フェラーリ、アウディ、ホンダの権利は維持され、基準のレッドブルは今回も恩恵なし。次の評価は2027年開幕から6戦が対象となる。　FIAは2027年に向け、ターボ径などを考慮した測定法やPU全体での順位付けを検討している。"
+  },
+  "sainz-pirelli-wet-tyres": {
+   "title": "2026年の雨用タイヤにドライバーの不満相次ぐ　サインツ「改善を」",
+   "summary": "サンパウロGPのウェット路面で、サインツ、アルボン、ベアマン、フェルスタッペンらが2026年仕様のピレリ雨用タイヤを批判した。主な不満は温まるまでに時間がかかり、グリップと耐久性が足りない点。ノリスは適温に入れば問題ないとしつつ、寒いラスベガスでは違う可能性を認めた。"
+  },
+  "hamilton-brazil-race-call": {
+   "title": "ハミルトンの雨の終盤の判断を巡り議論　サンパウロGP",
+   "summary": "サンパウロGPで20番手から追い上げたハミルトンは、終盤に雨が戻った際の中間タイヤへの交換呼び戻しに従わず、1コーナーで制御を失った。ピットの判断と、ドライバーの感覚をどこまで信じるべきかを巡り、元ドライバーや解説者の間で意見が分かれている。"
   }
  },
  "articles": [
+  {
+   "id": "en-planetf1-camara-vegas-discussions",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "teams": [
+    "haas"
+   ],
+   "topic": "haas-ocon-camara-brazil",
+   "title": "カマラ、ラスベガス出走は未定「話し合いがある」　F2王座との兼ね合いも",
+   "orig": "Rafael Camara reveals 'discussions' to see out F1 season with Haas",
+   "summary": "ハースで初参戦したラファエル・カマラが、残りのシーズンも走るかどうかについて「分からない。この週末のあと話すことがたくさんある」と語った。確定しているのはブラジルGPのみで、ラスベガスGPに出るかは未定だ。出走すればF2のタイトル争いを諦めることになり、同シリーズではレッドブル育成のツォルがすぐ後ろにいる。インテルラゴスでは予選Q1でスピンして壁に接触、決勝は優勝したノリスから2周遅れの最後尾完走だった。2027年のオコンの後任としてはすでに発表済みだ。",
+   "url": "https://www.planetf1.com/news/rafael-camara-reveals-discussions-to-see-out-f1-season-with-haas",
+   "published": "2026-11-11T01:05:00+00:00"
+  },
+  {
+   "id": "en-planetf1-mclaren-upgrades-flattered",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "テクニカル",
+   "circuit": "interlagos",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "mclaren-brazil-upgrades-flattered",
+   "title": "ブラジルの勝利はマクラーレンの改良を実力以上に見せたか　ステッラ代表が説明",
+   "orig": "Why Brazilian GP victory flattered McLaren upgrades",
+   "summary": "ノリスがポールからサンパウロGPを制し、マクラーレンは5戦続いた表彰台なしを脱して今季3勝目を挙げた。同チームはリビジョン版のフロントウイングなど新パーツを投入し、ステッラ代表は得られたラップタイムは想定どおりだったと述べた。ただ勝因は改良より「条件と車の相性」で、決勝は気温と路面温度が低くタイヤの過熱を抑えられたことが最大の理由だという。金曜は高温下のロングランでメルセデスに後れを取っており、その安定性は課題として残る。予選ではピアストリがQ2の赤旗とブレーキの異常で後輪をロックさせて苦戦した。",
+   "url": "https://www.planetf1.com/brazilian-grand-prix/mclaren-brazilian-gp-f1-upgrades",
+   "published": "2026-11-10T18:18:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-ferrari-jokes-after-talk",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "ハミルトンとルクレール、金曜の話し合いのあと笑って部屋を出る　フェラーリ",
+   "orig": "Ferrari: Hamilton und Leclerc machten Witze nach dem Krisengespräch",
+   "summary": "フェラーリのバスール代表が、メキシコGPのスタートをめぐって揉めたハミルトンとルクレールをサンパウロの金曜に呼んで話し合いをさせた。代表は二人の姿勢を「ゼロに戻した」と述べ、冗談を言い合いながら部屋を出たという。ハミルトンは「本当に良く開かれた」対話だったと語り、仲介役のバスールを評価した。ルクレールは問題が大きくなりすぎ長引いたとしつつ、「緊張はもちろんある」と認めた。話し合いが遅れた理由として、今週に第一子が生まれたことを挙げている。",
+   "url": "https://www.motorsport-total.com/formel-1/news/ferrari-hamilton-und-leclerc-machten-witze-nach-dem-krisengespraech-26111012",
+   "published": "2026-11-10T18:00:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-pirelli-wet-tyre-criticism",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "interlagos",
+   "topic": "sainz-pirelli-wet-tyres",
+   "title": "2026年のピレリ雨用タイヤに不満の声　「温まりにくく、冷えると石のよう」",
+   "orig": "Kritik an Pirelli-Regenreifen: 'Funktionieren nicht besonders gut'",
+   "summary": "サンパウロGPは今季初のウェット予選となり、ピレリは貴重なデータを得たが、ドライバーの多くは2026年仕様の雨用タイヤに不満を述べた。サインツは中間コンパウンドの後輪が非常に弱く、前輪は温まる前に摩耗すると指摘した。アルボンは前作より悪いと話し、フェルスタッペンは作動領域が狭く冷えると「石のように硬い」と評した。一方、優勝したノリスは「それほど悪くない」とし、適温に入れば機能すると述べつつ、寒いラスベガスで雨が降れば意見が変わるかもしれないと付け加えた。",
+   "url": "https://www.motorsport-total.com/formel-1/news/kritik-an-pirelli-regenreifen-funktionieren-nicht-besonders-gut-26111013",
+   "published": "2026-11-10T18:58:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-hamilton-pitstop-gamble",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "チーム",
+   "circuit": "interlagos",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-brazil-race-call",
+   "title": "ハミルトンのピット判断をクルサードは「勇敢」、バクストンは「愚か」と評す",
+   "orig": "Hamilton gokt verkeerd met pitstops in São Paulo: 'Moedig van hem, maar ronduit dom'",
+   "summary": "20番手から出たハミルトンは14周目の終わりに早々とソフトへ交換し、アントネッリやフェルスタッペンはより長く待った。クルサードは「1周早かったが勇敢で、レースを決める判断になり得た」と見る。終盤に雨が戻ると、ハミルトンはピットレーン手前で中間タイヤへの呼び戻しを受けながら路面は大差ないと判断して続行し、1コーナーが予想以上に濡れていて制御を失った。クルサードはピットレーンの状況はコックピットから見えないと擁護し、バクストンは「勇敢だったが、結局は愚かだった」と評した。",
+   "url": "https://www.f1maximaal.nl/formule-1/hamilton-gokt-verkeerd-met-pitstops-in-sao-paulo-moedig-van-hem-maar-ronduit-dom",
+   "published": "2026-11-10T16:39:00+01:00"
+  },
   {
    "id": "ja-voice-camara-debut-20th",
    "kind": "voice",
@@ -1591,100 +1685,6 @@
    "orig": "Norris on Brazilian GP pole as Russell rages at Mercedes over aborted lap",
    "url": "https://www.the-race.com/formula-1/norris-on-brazilian-gp-pole-as-russell-rages-at-mercedes-over-aborted-lap/",
    "published": "2026-11-07T21:00:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-russell-rages-norris-pole",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "予選",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes",
-    "mclaren"
-   ],
-   "topic": "brazil-russell-aborted-lap",
-   "title": "ラッセルが無線で怒り「あれがポールだった」　ノリスがサンパウロ制す",
-   "summary": "ブラジルGP予選で、ノリスが1分27秒470でポールを獲得し、ラッセルは0.204秒差の2番手だった。ラッセルはQ3で走行中に「ペースを落とせと言ったじゃないか」と無線で抗議し、ウォルフ代表は「ジョージ、君はP2だ」と返した。レース後にラッセルは「あれは間違いなくポールのラップだった」と語った。ノリスの速さにはマクラーレンがブラジルに持ち込んだ改良も寄与したという。ラッセルはパワーユニット交換により、グリッドは5つ後退して7番手となる。",
-   "orig": "Verrücktes Regen-Qualifying: George Russell tobt nach Pole von Lando Norris",
-   "url": "https://www.motorsport-total.com/formel-1/news/verruecktes-regen-qualifying-george-russell-tobt-nach-pole-von-lando-norris-26110714",
-   "published": "2026-11-07T21:49:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-verstappen-p21-safety-cars",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "ドライバー",
-   "circuit": "interlagos",
-   "teams": [
-    "redbull",
-    "ferrari"
-   ],
-   "topic": "brazil-verstappen-back-of-grid",
-   "title": "フェルスタッペン、最後尾から勝利狙う　「セーフティカーが多いほどいい」",
-   "summary": "フェルスタッペンはQ1で好印象を残したものの、新パワーユニットの投入でサンパウロGPを21番手から迎える。この交換は週末の当初計画になく、金曜に決めたと本人は語った。今年はDRSがなく、直線では電気エネルギーの使い方で速度差が小さいため、昨年より抜きにくくなるとの見方だ。雨なら2024年に17番手から勝った展開に近いとして、「ライバルが差を広げられないようセーフティカーが多く必要だ」と話した。20番手発進のハミルトンとともに前方の車を早く抜きたいという。",
-   "orig": "Verstappen richt pijlen vanaf P21 op de zege: \"Dan kunnen ze geen gat trekken\"",
-   "url": "https://www.f1maximaal.nl/max-verstappen/verstappen-richt-pijlen-vanaf-p21-op-de-zege-dan-kunnen-ze-geen-gat-trekken",
-   "published": "2026-11-07T21:49:00+01:00"
-  },
-  {
-   "id": "en-f1com-sao-paulo-norris-pole",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "Formula1.com",
-   "cat": "予選",
-   "circuit": "interlagos",
-   "teams": [
-    "mclaren",
-    "mercedes"
-   ],
-   "topic": "brazil-quali-norris-pole",
-   "primary": true,
-   "title": "ノリスが雨のサンパウロ予選でポール　インテルラゴス3年連続",
-   "summary": "マクラーレンのノリスが雨に見舞われたサンパウロGP予選で1分27秒470を記録し、インテルラゴスで3年連続のポールを獲得した。2番手はラッセルで差は0.204秒、3番手はアントネッリだった。ラッセルは5グリッド降格、ルクレールは4番手ながら10グリッド降格となる。ハミルトンとフェルスタッペンはパワーユニット交換などで最後尾から発進する見込みだ。ノリスは「長い一日だった」と振り返り、決勝は日曜の現地14時にインテルラゴスでスタートする予定で、日本時間では日曜深夜2時にあたる。",
-   "orig": "Norris takes pole in wet Sao Paulo qualifying",
-   "url": "https://www.formula1.com/en/latest/article/norris-beats-russell-to-pole-position-in-dramatic-rain-affected-sao-paolo-qualifying.2V60rhlQjdS5my1uFrOKUH",
-   "published": "2026-11-07T20:37:00+00:00"
-  },
-  {
-   "id": "nl-racingnews365-verstappen-quali-early-exit",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "予選",
-   "circuit": "interlagos",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "brazil-verstappen-back-of-grid",
-   "title": "フェルスタッペンが予選早期終了を説明　「戦う意味がなかった」",
-   "summary": "フェルスタッペンはブラジルGPの雨の予選で、リスクを避けるため早めに走行を切り上げた。決勝でグリッド降格を受けることが分かっていたため、予選で攻める価値は小さいとチームと判断したという。本人は天候次第だったが「正しい選択だったと思う」と述べた。一方で「楽しかったか」と問われると「あまり。何かのために戦っているわけではない」と答えた。Q1ではタイムを出すだけにとどめ、走りの感触にも満足していると述べた。すでに意識は決勝に向いていた。",
-   "orig": "Verstappen verklaart vroegtijdig einde kwalificatie GP Brazilië",
-   "url": "https://racingnews365.nl/verstappen-verklaart-vroegtijdig-einde-kwalificatie-gp-brazilie",
-   "published": "2026-11-07T21:37:00+01:00"
-  },
-  {
-   "id": "pt-grandepremio-bortoleto-quali-crash",
-   "kind": "news",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "Grande Prêmio",
-   "cat": "予選",
-   "circuit": "interlagos",
-   "teams": [
-    "audi"
-   ],
-   "topic": "bortoleto-brazil-quali-crash",
-   "title": "ボルトレート「ただ家に帰りたい」　地元予選Q1でクラッシュ",
-   "summary": "サンパウロGP予選のQ1で、アウディのボルトレートがジュンソンのコーナーでクラッシュし、そこで敗退した。前を走るベアマン（ハース）との距離を空けようとして近づきすぎ、ブレーキングで前輪をロックして止まれずタイヤバリアに当たったと本人は説明した。衝撃は大きくなかったがリアウイングがずれ、交換が間に合わなかった。FP1から全セッションでトップ10に入り、Q2進出が有力とみられていただけに落胆は大きく、「まず家に帰って休みたい」と語った。決勝は最後尾付近からの巻き返しを狙う。",
-   "orig": "Bortoleto explica 'vacilo' em Interlagos e demonstra abatimento: 'Só quero ir para casa'",
-   "url": "https://grandepremio.com/br/f1/bortoleto-explica-vacilo-em-interlagos-e-demonstra-abatimento-so-quero-ir-para-casa/",
-   "published": "2026-11-07T17:13:00-03:00"
   }
  ]
 }
