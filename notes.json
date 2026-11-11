@@ -1,6 +1,34 @@
 {
- "updatedAt": "2026-11-11T18:20:00+09:00",
+ "updatedAt": "2026-11-12T00:20:00+09:00",
  "notes": [
+  {
+   "id": "note-formula1report-pirelli-wet-tyre-raison",
+   "platform": "note",
+   "site": "F1レポート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "formula1report",
+   "title": "【分析】サンパウロGPから見えたPirelliのウェットタイヤの存在意義、そして今後の課題を徹底分析",
+   "summary": "サンパウロGP予選を題材に、エクストリームウェットは主に水を排出して走れる状態にする役割が大きいと整理する。一方で排水性能の高さは水煙を生み、視界を損ねて豪雨でのレースを難しくするとの見方だ。インターとエクストリームの二本立ては評価しつつ、豪雨向けの性能型ウェットの必要性を訴える。",
+   "url": "https://note.com/formula1report/n/nd26644750c3a",
+   "published": "2026-11-11T18:42:06+09:00",
+   "circuit": "interlagos"
+  },
+  {
+   "id": "note-sentaroh-interlagos-norris-adaptation",
+   "platform": "note",
+   "site": "仙太郎",
+   "lang": "ja",
+   "paid": false,
+   "cat": "決勝",
+   "author": "仙太郎",
+   "title": "冷えたインテルラゴスが選んだ勝者――ノリス、完璧な「適応」の午後",
+   "summary": "雨、ドライ、雨と変わった71周を「タイヤの温度窓をめぐる攻防」と捉え、慌てず適応したノリスが勝ったと読み解く。メルセデスのコンストラクターズ制覇は圧倒的というより波乱の中で決まったとする。フェラーリの苦戦は他チームにも共通するタイヤ課題の表れで、2027年に向けた作業はすでに始まっているという見立て。",
+   "url": "https://note.com/sentaroh_f1/n/n43eda21daadc",
+   "published": "2026-11-11T14:33:22+09:00",
+   "circuit": "interlagos"
+  },
   {
    "id": "note-formula1report-aduo-third-evaluation",
    "platform": "note",
@@ -157,23 +185,6 @@
    "circuit": "interlagos"
   },
   {
-   "id": "substack-somersf1-mclaren-late-season-update",
-   "platform": "substack",
-   "site": "Somers F1",
-   "lang": "en",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Matthew Somerfield",
-   "title": "マクラーレンのシーズン終盤アップデート、現在の戦いだけでなく2027年にも備える",
-   "orig": "McLaren's late-season update package that not helps them in their current fight but also prepares them for 2027",
-   "summary": "マクラーレンのブラジル向けアップデートを技術面から読み解く記事。フロントウイングはピラーの取り付け先をメインプレーンから第2エレメントに移し、アクティブエアで動く上側フラップの影響を強めたと分析する。リアウイングも下向き荷重の配分を変える変更が入ったとみており、コンストラクターズ3位争いと2027年への布石の両面があるという見立てだ。",
-   "url": "https://somersf1.substack.com/p/mclarens-late-season-update-package",
-   "published": "2026-11-06T12:00:00+00:00",
-   "teams": [
-    "mclaren"
-   ]
-  },
-  {
    "id": "note-sentaroh-verstappen-mexico-winner",
    "platform": "note",
    "site": "仙太郎",
@@ -192,19 +203,21 @@
    "circuit": "mexico"
   },
   {
-   "id": "substack-somersf1-brazil-document-cache",
+   "id": "substack-somersf1-mclaren-late-season-update",
    "platform": "substack",
    "site": "Somers F1",
    "lang": "en",
    "paid": false,
    "cat": "テクニカル",
    "author": "Matthew Somerfield",
-   "title": "2026年ブラジルGPの文書まとめとテック日誌",
-   "orig": "2026 Brazilian Grand Prix document cache and tech journal",
-   "summary": "FIAの文書からサンパウロGPの技術的な条件を整理した記事。ストレートモードの区間はピットストレートとターン3〜4の間の2か所で、タイヤはC3・C4・C5が持ち込まれ、ドライの最低スタート内圧は前輪27psi、後輪26.5psiと紹介する。ピットストップのロスは平均約22.5秒、レース中の回生は8MJ、オーバーテイク作動時は8.5MJだとまとめている。",
-   "url": "https://somersf1.substack.com/p/2026-brazilian-grand-prix-document",
-   "published": "2026-11-05T12:00:00+00:00",
-   "circuit": "interlagos"
+   "title": "マクラーレンのシーズン終盤アップデート、現在の戦いだけでなく2027年にも備える",
+   "orig": "McLaren's late-season update package that not helps them in their current fight but also prepares them for 2027",
+   "summary": "マクラーレンのブラジル向けアップデートを技術面から読み解く記事。フロントウイングはピラーの取り付け先をメインプレーンから第2エレメントに移し、アクティブエアで動く上側フラップの影響を強めたと分析する。リアウイングも下向き荷重の配分を変える変更が入ったとみており、コンストラクターズ3位争いと2027年への布石の両面があるという見立てだ。",
+   "url": "https://somersf1.substack.com/p/mclarens-late-season-update-package",
+   "published": "2026-11-06T12:00:00+00:00",
+   "teams": [
+    "mclaren"
+   ]
   },
   {
    "id": "note-formula1report-saopaulo-tyre-preview",
@@ -218,6 +231,21 @@
    "summary": "2026年の再舗装とC3〜C5の最も柔らかい配分を軸に、サンパウロGPのタイヤ戦略を展望した記事。昨年C3・C4で大きな劣化が出て2ストップが主流だったことを踏まえ、C3で長く引っ張る1ストップか、C4中心の2ストップかが焦点になるという見立て。土曜の雨の確率が高く、天候次第で戦略が大きく変わるとも指摘する。",
    "url": "https://note.com/formula1report/n/nd6f98e167155",
    "published": "2026-11-05T20:11:49+09:00",
+   "circuit": "interlagos"
+  },
+  {
+   "id": "substack-somersf1-brazil-document-cache",
+   "platform": "substack",
+   "site": "Somers F1",
+   "lang": "en",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "Matthew Somerfield",
+   "title": "2026年ブラジルGPの文書まとめとテック日誌",
+   "orig": "2026 Brazilian Grand Prix document cache and tech journal",
+   "summary": "FIAの文書からサンパウロGPの技術的な条件を整理した記事。ストレートモードの区間はピットストレートとターン3〜4の間の2か所で、タイヤはC3・C4・C5が持ち込まれ、ドライの最低スタート内圧は前輪27psi、後輪26.5psiと紹介する。ピットストップのロスは平均約22.5秒、レース中の回生は8MJ、オーバーテイク作動時は8.5MJだとまとめている。",
+   "url": "https://somersf1.substack.com/p/2026-brazilian-grand-prix-document",
+   "published": "2026-11-05T12:00:00+00:00",
    "circuit": "interlagos"
   },
   {
@@ -286,24 +314,6 @@
    "circuit": "mexico"
   },
   {
-   "id": "substack-simplifyf1-young-king-mexico",
-   "platform": "substack",
-   "site": "Simplify F1",
-   "lang": "en",
-   "paid": false,
-   "cat": "決勝",
-   "author": "Christopher Kiser",
-   "title": "若き王と重量級の表彰台　メキシコGPレビュー",
-   "orig": "Young King and a Heavyweight Podium - Recap: Mexican GP 2026",
-   "summary": "フェルスタッペン優勝、ハミルトン2位の展開を振り返り、9位でも王座が決まる状況で表彰台を狙ったアントネッリの判断を大胆だったと評価する。メルセデスの強さが続けば、長く王座を争えるだろうという見立て。",
-   "url": "https://simplifyf1.substack.com/p/young-king-and-a-heavyweight-podium",
-   "published": "2026-11-02T14:02:55+00:00",
-   "circuit": "mexico",
-   "teams": [
-    "mercedes"
-   ]
-  },
-  {
    "id": "note-formula1report-mexico-race-analysis-2026",
    "platform": "note",
    "site": "Formula1 Report",
@@ -321,6 +331,24 @@
     "haas"
    ],
    "circuit": "mexico"
+  },
+  {
+   "id": "substack-simplifyf1-young-king-mexico",
+   "platform": "substack",
+   "site": "Simplify F1",
+   "lang": "en",
+   "paid": false,
+   "cat": "決勝",
+   "author": "Christopher Kiser",
+   "title": "若き王と重量級の表彰台　メキシコGPレビュー",
+   "orig": "Young King and a Heavyweight Podium - Recap: Mexican GP 2026",
+   "summary": "フェルスタッペン優勝、ハミルトン2位の展開を振り返り、9位でも王座が決まる状況で表彰台を狙ったアントネッリの判断を大胆だったと評価する。メルセデスの強さが続けば、長く王座を争えるだろうという見立て。",
+   "url": "https://simplifyf1.substack.com/p/young-king-and-a-heavyweight-podium",
+   "published": "2026-11-02T14:02:55+00:00",
+   "circuit": "mexico",
+   "teams": [
+    "mercedes"
+   ]
   },
   {
    "id": "blog-f1laptime-mexico-pit-stops",
@@ -750,38 +778,6 @@
     "astonmartin"
    ],
    "circuit": "austin"
-  },
-  {
-   "id": "note-formula1report-fornaroli-fp1-mexico-brazil",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "ドライバー",
-   "author": "F1レポート",
-   "title": "マクラーレン、レオナルド・フォルナローリのメキシコ&サンパウロGPのFP1に出走へ。ポール・リカールで約350kmを走行し準備を進める",
-   "summary": "マクラーレンがフォルナローリを次戦以降の2戦でFP1に起用し、ルーキー起用の義務枠を消化すると伝えた記事。準備としてポール・リカールで2025年型MCL39を約350km走らせたという。本人は高地のメキシコシティが新たな挑戦になると語っている。",
-   "url": "https://note.com/formula1report/n/n585fc53fb60e",
-   "published": "2026-10-19T22:07:35+09:00",
-   "teams": [
-    "mclaren"
-   ]
-  },
-  {
-   "id": "note-formula1report-fornaroli-wec-2027",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "ドライバー",
-   "author": "F1レポート",
-   "title": "マクラーレン、レオナルド・フォルナローリが2027年からWEC参戦へ。ハイパーカーチームに加入し、F1リザーブドライバーも継続",
-   "summary": "マクラーレンがF2王者フォルナローリを2027年から新設のハイパーカーチームに起用し、F1リザーブも兼ねると伝えた記事。ル・マン24時間にも出場予定で、イェンセン、リン、ファントールと組むという。F3とF2の連続王者は5人しかいない点も紹介している。",
-   "url": "https://note.com/formula1report/n/n1acbcc201476",
-   "published": "2026-10-19T21:54:28+09:00",
-   "teams": [
-    "mclaren"
-   ]
   }
  ]
 }
