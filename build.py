@@ -2950,6 +2950,16 @@ def build_share_kit(days=7, req_days=4):
     for a in ALLARTS:  # 「ファンの声」 too (owner, 6 Nov 2026): its strong headline is made for X
         if a.get('kind') == 'voice':
             items.append((when(a), 'ファンの声', f'/news/{a["id"]}/', a['id'], a['title'], a.get('summary', '')))
+    # the day's big news, 2 per day (owner, 13 Nov 2026): the stories the most outlets covered (same topic), 3+ outlets
+    tc = __import__('collections').Counter(a.get('topic') for a in ALLARTS if a.get('topic'))
+    byday = {}
+    for a in ALLARTS:
+        if a.get('kind', 'news') != 'news' or when(a) < since or tc.get(a.get('topic'), 0) < 3:
+            continue
+        byday.setdefault(when(a).date(), {}).setdefault(a['topic'], a)  # newest article of each topic that day
+    for d, tops in byday.items():
+        for a in sorted(tops.values(), key=lambda a: -tc[a['topic']])[:2]:
+            items.append((when(a), 'ニュース', f'/news/{a["id"]}/', a['id'], a['title'], a.get('summary', '')))
     items = sorted([i for i in items if i[0] >= since], key=lambda i: i[0], reverse=True)
 
     def box(label, text, x=False):
@@ -2976,18 +2986,20 @@ def build_share_kit(days=7, req_days=4):
                       + f'<a class="sk-x" href="https://x.com/intent/post?text={urllib.parse.quote(xt)}" target="_blank" rel="noopener">X の投稿画面を開く ↗</a>'
                       + box('note の本文に入れるリンク', f'続きは F1 Grid Walk で → {nurl}')
                       + '</div>')
-    req = [SITE + u for dt, _, u, _, _, _ in items if dt >= now - timedelta(days=req_days)]
+    req = [SITE + u for dt, lb_, u, _, _, _ in items if dt >= now - timedelta(days=req_days) and lb_ != 'ニュース']
     for g in sorted(GPS.values(), key=lambda g: g['date']):
         if -7 <= (g['date'].date() - now.date()).days <= 10:
             req.insert(0, f'{SITE}/gp/{g["slug"]}/')
     req = list(dict.fromkeys(req))
     body = ('<div class="sk"><h1>共有キット</h1>'
-            f'<p class="lead">オーナー用の作業ページです。最近 {days} 日の STORY・コラム・DEEP について、X と note に貼る文と、'
+            f'<p class="lead">オーナー用の作業ページです。最近 {days} 日の STORY・コラム・DEEP・ファンの声と、その日の大きなニュースについて、X と note に貼る文と、'
             'Search Console に出すURLを、ビルドのたびに自動で作っています。リンクには計測の印（utm）が付いているので、'
             'どの投稿から何人来たかが GoatCounter の「キャンペーン」に出ます。</p>'
             '<p class="note">サイトのどこからもリンクしておらず、検索にも出しません（中身はすべて公開中の記事のリンクです）。</p>'
             '<p class="sk-tip"><b>X に投稿するときは、画像を付けずに文だけを投稿してください。</b>文の最後のリンクから、X が記事の画像を大きなカードにして出します。そのカードの画像を押すと、記事に飛びます。'
             '画像を自分で付けると、カードが出なくなり、画像を押しても記事に飛ばなくなります。</p>'
+            '<p class="sk-tip"><b>投稿におすすめの時間：夕方から夜（18時〜23時ごろ）。</b>これまでのアクセス解析では、X から来る人はこの時間に多くなっています。'
+            '「ニュース」は、その日いちばん多くの媒体が報じた話題を、1日2本まで選んでいます。</p>'
             '<h2>X・note に貼る文</h2>' + (''.join(blocks) or '<p class="note">最近の記事はありません。</p>')
             + f'<h2>Search Console に出すURL</h2><p class="note">最近 {req_days} 日に出たページを、新しい順に並べています。開催前後のGPのページがあれば先頭に入ります。'
               '登録済みかどうかは、Search Console の「URL検査」で確かめてから出してください（1日10回ほどまで）。</p>'
@@ -3218,7 +3230,7 @@ def build_drivers(by_term):
         hot.append(f'<a href="{rb_url("person-" + p["id"])}" data-track="click/drivers/hot/{e(p["id"])}"><b>{e(p["name"])}</b><span>{e(lb)}「{e(ttl)}」</span></a>')
     body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › ドライバー</nav><div class="drv">'
             f'<h1>ドライバー</h1><p class="lead">{e(T.get("season", "2026"))}年のF1を走る{len(drivers)}人を、チームごとに並べています。名前を押すと、その人の STORY・コラム・ニュースをまとめて読めます。</p>'
-            + '<p class="drv-more"><a href="/drivers/japan/" data-track="click/drivers/japan">日本人ドライバーのページ →</a><a href="/drivers/engineers/" data-track="click/drivers/engineers">レースエンジニア一覧 →</a></p>'
+            + '<p class="drv-more"><a href="/drivers/japan/" data-track="click/drivers/japan">日本人ドライバーのページ →</a><a href="/drivers/engineers/" data-track="click/drivers/engineers">レースエンジニア一覧 →</a><a href="/drivers/bosses/" data-track="click/drivers/bosses">チーム代表・首脳陣の一覧 →</a></p>'
             + (f'<h2>最近の読み物の主役</h2><div class="drv-hot">{"".join(hot)}</div>' if hot else '')
             + '<h2>チームとドライバー</h2>' + ''.join(grid) + '</div>')
     url = SITE + '/drivers/'
@@ -3226,7 +3238,7 @@ def build_drivers(by_term):
                                      f'{T.get("season", "2026")}年のF1ドライバー{len(drivers)}人をチームごとに。名前から、その人のSTORY・コラム・ニュースへ。', url, body,
                                      f'<style>{DRV_CSS}</style>\n', og_type='website'))
     now_ = datetime.now(JST).isoformat(timespec='seconds')
-    return [(url, now_, 'daily', '0.7')] + build_engineers(teams, order) + build_japan()
+    return [(url, now_, 'daily', '0.7')] + build_engineers(teams, order) + build_bosses(teams, order) + build_japan()
 
 
 JP_DRIVERS = ['yuki-tsunoda', 'ryo-hirakawa', 'ayumu-iwasa', 'ritomo-miyata', 'kakunoshin-ohta', 'taito-kato', 'hiyu-yamakoshi']
@@ -3267,10 +3279,46 @@ def build_engineers(teams, order):
     body = (_crumb('レースエンジニア一覧') + '<div class="xp"><h1>F1 レースエンジニア一覧 2026</h1>'
             '<p class="lead">無線でドライバーと話すレースエンジニアを、チームとドライバーごとに並べました。名前を押すと、その人の経歴や、担当ドライバーとの話が読めます。中身は人物辞典から自動で作っています。</p>'
             '<table><thead><tr><th>ドライバー</th><th>レースエンジニアなど</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table>'
-            '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a>　<a href="/deep/rules/">用語・人物の辞典 →</a></p></div>')
+            '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a>　<a href="/drivers/bosses/">チーム代表・首脳陣の一覧 →</a>　<a href="/deep/rules/">用語・人物の辞典 →</a></p></div>')
     url = SITE + '/drivers/engineers/'
     write('drivers/engineers/index.html', page('F1レースエンジニア一覧 2026｜ドライバーと担当エンジニア｜F1グリッドウォーク',
           f'2026年のF1、ドライバーごとの担当レースエンジニア（{n}人）。ボニントン、ランビアーゼなど、無線の声の主を一覧に。', url, body,
+          f'<style>{XP_CSS}</style>\n', og_type='website'))
+    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
+
+
+BOSS_GROUPS = [('チーム代表', ('チーム代表', '副代表')),
+               ('技術のトップ', ('テクニカル', 'CTO', '技術', 'デザイナー')),
+               ('レースの現場', ('スポーティング', 'レーシングディレクター', 'トラックサイド', 'レーシング・オフィサー', 'マネージング・ディレクター')),
+               ('経営・そのほか', ())]
+
+
+def build_bosses(teams, order):
+    """drivers/bosses/ — team principals, technical heads and owners, team by team, from people.json
+    (owner's OK, 13 Nov 2026; same idea as drivers/engineers/, which brings readers from Google)."""
+    rows, n = [], 0
+    for k in order:
+        t = teams.get(k) or {}
+        ppl = [p for p in PEOPLE if p.get('org') == t.get('name') and 'ドライバー' not in p.get('role', '') and 'エンジニア' not in p.get('role', '')]
+        if not ppl:
+            continue
+        groups = {g: [] for g, _ in BOSS_GROUPS}
+        for p in ppl:
+            g = next((g for g, keys in BOSS_GROUPS if keys and any(x in p['role'] for x in keys)), '経営・そのほか')
+            groups[g].append(p)
+        rows.append(f'<tr class="tmh"><td colspan="2"><i style="background:{e(t.get("c1", "#888"))}"></i>{e(t.get("name", k))}</td></tr>')
+        for g, _ in BOSS_GROUPS:
+            if groups[g]:
+                n += len(groups[g])
+                cell = ''.join(f'<a href="{rb_url("person-" + x["id"])}" data-track="click/boss/{e(x["id"])}">{e(x["name"])}</a><small>{e(x["role"])}</small>' for x in groups[g])
+                rows.append(f'<tr><td>{e(g)}</td><td>{cell}</td></tr>')
+    body = (_crumb('チーム代表・首脳陣の一覧') + '<div class="xp"><h1>F1 チーム代表・首脳陣の一覧 2026</h1>'
+            '<p class="lead">11チームのチーム代表、技術のトップ、レースの現場を仕切る人、経営者やオーナーなどを、チームごとに並べました。名前を押すと、その人の経歴や最近の発言が読めます。中身は人物辞典から自動で作っています。</p>'
+            '<table><thead><tr><th>役割</th><th>名前と肩書き</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table>'
+            '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a>　<a href="/drivers/engineers/">レースエンジニア一覧 →</a>　<a href="/deep/rules/">用語・人物の辞典 →</a></p></div>')
+    url = SITE + '/drivers/bosses/'
+    write('drivers/bosses/index.html', page('F1チーム代表・首脳陣の一覧 2026｜ウォルフ、小松、バスールほか｜F1グリッドウォーク',
+          f'2026年のF1、11チームのチーム代表・テクニカルディレクター・オーナーなど{n}人を、チームごとに一覧に。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
     return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
 
