@@ -1,0 +1,369 @@
+{
+ "slug": "lindblad-until-you-hit-the-wall",
+ "gp": "サンパウロGP",
+ "title": "「壁に当たるまでは、うまくいく」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "残り15周で入賞を確信して、雨が戻って、11位。4戦続けて点がない19歳の新人リンドブラッドは、「リスクを取れば取るほどうまくいく。いつか壁に当たるまでは」と言った。13歳で育成、17歳で特例のライセンス、デビュー戦で入賞、9月に2度のクラッシュと「自信がない」。38点の1年目と、まだ決まらない来年の席。",
+ "checked": "2026-11-12",
+ "checkedNote": "formel1.de（Motorsport-Total.comの転載）、The Race、GPblog、Formula1.com、Sky Sports、Motorsport Week、RacingNews365、PlanetF1、Pit Debrief、Autosport、Crash.net の原文を11月12日に確認しました。サンパウロ後の本人の言葉はドイツ語から、ほかは英語から編集部が訳しました。候補の段階で「予選10番手」「12番グリッド」と書きましたが、正しくはQ2でトラブルの14番手、10グリッド降格で18番グリッドです。「16歳でF1」ではなく、デビューは18歳（2026年3月）です。",
+ "common": [
+  "サンパウロは18番グリッド（Q2でトラブル、10グリッド降格）から11位。残り15周で11番手、前のヒュルケンベルグに10秒のペナルティがあり「入賞は確実だと思っていた」。雨が戻り、インターで最後の10周は「クルマをコース上にとどめるだけ」。4戦連続ノーポイント、38点11位。",
+  "「リスクを取れば取るほどうまくいく。いつか壁に当たるまでは」「こういう条件は初めて」「1年を通してとてもいいエンジンだった」。",
+  "2007年8月サリー生まれ、父スウェーデン人、母インド系。13歳でレッドブル育成、17歳で特例のスーパーライセンス。2025年メキシコFP1で6番手。デビュー戦メルボルン8位。モナコ6位がベスト。9月にマドリードとバクーでクラッシュ「自信がない」「特別であろうとしすぎた」。",
+  "2027年のレーシングブルズの席は未定（ローソン、リンドブラッド、ツォロフ）。パーメイン「3は2に収まらない」「数週間のうちに発表」。"
+ ],
+ "outlets": [
+  {
+   "id": "de-motorsporttotal-lindblad-no-points-brazil",
+   "angle": "本人",
+   "adds": [
+    "残り15周で確信、雨、コラピント、エンジン。"
+   ]
+  },
+  {
+   "id": "en-therace-lawson-closing-racingbulls-2027",
+   "angle": "来季",
+   "adds": [
+    "ローソン残留に近づく、ツォロフ、「科学的に決めたい」。"
+   ]
+  },
+  {
+   "id": "en-therace-piastri-lindblad-penalty-mexico",
+   "angle": "メキシコ",
+   "adds": [
+    "ピアストリとの接触、10秒加算はピアストリに。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「残り15周で確実だと思っていた」「壁に当たるまでは」",
+   "w": "formel1.de（Motorsport-Total.com、11月11日、ドイツ語）を編集部が訳した。"
+  },
+  {
+   "t": "「自信がない」「特別であろうとしすぎた」",
+   "w": "The Race（9月、英語）を編集部が訳した。"
+  },
+  {
+   "t": "パーメイン「要求が多い」「自己批判的」「3は2に収まらない」",
+   "w": "Autosport（6月）、PlanetF1（10月）の英語を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "モナコの順位",
+   "t": "6位（F1公式）と7位（一部の資料）。本文はF1公式の6位。"
+  },
+  {
+   "k": "インターに替えた周",
+   "t": "記事に明記なし。本文は周を書いていない。"
+  }
+ ],
+ "unknownsFillable": [
+  "2027年のレーシングブルズの席。",
+  "ラスベガスの結果。"
+ ],
+ "unknownsLimits": [
+  "レッドブルの「科学的な」判断基準。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "4戦連続ノーポイントは、何を意味するか？",
+  "rows": [
+   {
+    "k": "中身",
+    "t": "シンガポールとオースティンは降格、メキシコは7番手走行中の接触、サンパウロは残り15周まで入賞圏。結果ほど悪い4戦ではない。"
+   },
+   {
+    "k": "本人",
+    "t": "「よく走れた」「一歩前に進めた」と、自分の側は肯定している。9月の「自信がない」からは戻っている。"
+   },
+   {
+    "k": "席",
+    "t": "ローソンは残留に近づき、ツォロフが控える。38点と83点の差を、チームは「科学的に」見ると言っている。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "チームメイトのローソンは、どうなる？",
+   "rules": [
+    "driver-market",
+    "contract-option"
+   ]
+  },
+  {
+   "q": "メキシコでピアストリと何があった？",
+   "rules": [
+    "stewards"
+   ],
+   "links": [
+    "/topics/piastri-story-of-my-year/"
+   ]
+  },
+  {
+   "q": "スーパーライセンスの特例とは？",
+   "rules": [
+    "super-licence",
+    "rookie"
+   ]
+  },
+  {
+   "q": "同じレースのヒュルケンベルグは？",
+   "rules": [
+    "grid-penalty"
+   ],
+   "links": [
+    "/topics/hulkenberg-keep-it-clean/"
+   ]
+  }
+ ],
+ "todo": [
+  "2027年の席が決まったら追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-08T16:00:00-03:00",
+   "t": "サンパウロで11位、4戦連続ノーポイント"
+  },
+  {
+   "at": "2026-11-12T12:30:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "レーシングブルズの19歳リンドブラッドは、サンパウロGPを18番グリッド（Q2でトラブル、10グリッド降格）から走り、残り15周で11番手。前のヒュルケンベルグに10秒のペナルティがあったため「入賞は確実だと思っていた」が、雨が戻ってインターに替えた最後の10周は「クルマをコース上にとどめるだけ」になり11位。4戦連続ノーポイントで38点11位。「リスクを取れば取るほどうまくいく。いつか壁に当たるまでは」「こういう条件は初めて」「1年を通してとてもいいエンジンだった」。13歳でレッドブル育成、17歳で特例のライセンス、デビュー戦8位、モナコ6位。9月に2度クラッシュして「自信がない」。2027年の席はローソン、ツォロフと3人で2席、未定。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "残り15周で入賞を確信して、雨が戻って、11位。4戦連続で点がない19歳の新人は、「リスクを取れば取るほどうまくいく。いつか壁に当たるまでは」と言った。13歳で育成、17歳でライセンス、デビュー戦で入賞。38点の1年目と、まだ決まらない来年。",
+  "body": [
+   [
+    "h",
+    "「残り15周で、確信していた」"
+   ],
+   [
+    "p",
+    "11月8日、日曜日のインテルラゴス。アービッド・リンドブラッドは18番グリッドから走り出して、残り15周のころ、11番手にいた。前はヒュルケンベルグで、ヒュルケンベルグにはまだ消化していない10秒のペナルティがあった。「正直に言うと、残り15周のところで、入賞は確実だと思っていた」。"
+   ],
+   [
+    "p",
+    "そこへ、雨が戻ってきた。インターミディエイトに替えて、一瞬はヒュルケンベルグの前に出たが、ついていけなかった。「最後の10周は、クルマの挙動に大きな問題があった」。「ニコと戦うどころじゃなかった。実際、クルマをコースの上にとどめておくことだけが問題だった」。11位。"
+   ],
+   [
+    "p",
+    "シンガポール15位、オースティン12位、メキシコでリタイア、サンパウロ11位。4戦続けて点がなく、19歳の新人の今季の点は、38のままだ。"
+   ],
+   [
+    "h",
+    "「壁に当たるまでは、うまくいく」"
+   ],
+   [
+    "p",
+    "雨の終盤について、本人の説明は、新人らしくなかった。「どれだけ押していいかを見極めるのは難しい。前の周からどれだけ雨が降ったか、正確には分からないから」。「グリップがどれだけあるか、少し推測しないといけない。慎重すぎれば遅くて、時間を失う。だからある程度のリスクを取りたくなる。でも、リスクを取れば取るほど、うまくいく。いつか壁に当たるまでは」。"
+   ],
+   [
+    "p",
+    "「こういう条件でのレースは、僕にとって初めてだった。全体としては、大部分をどうこなしたかには、かなり満足している」。「楽しかった。50周か55周で終わっていれば、特に」。「最後の15周から20周に何が起きたかは、見直さないといけない。全部を完璧にできたとは思わないから」。"
+   ],
+   [
+    "p",
+    "コラピントとの争いでも、「間違いなく、たくさんの時間を失った」。53周目に抜いたとき、ヒュルケンベルグは6秒以上先にいた。直近5戦で3回あったパワーユニットの降格については、「仕方がない。結局、1年を通して、とてもいいエンジンだった。だからペナルティは受け入れる」。"
+   ],
+   [
+    "h",
+    "19歳"
+   ],
+   [
+    "p",
+    "リンドブラッドは2007年8月、イングランドのサリーで生まれた。父はスウェーデン人、母はインド系。13歳でレッドブルの育成に入り、17歳のときにFIAの特例でスーパーライセンスを得た。「並外れた能力と成熟を、最近、一貫して示してきた」というのが、その理由だった。"
+   ],
+   [
+    "p",
+    "去年のメキシコでは、フェルスタッペンのマシンでFP1を走って6番手。レーシングブルズのパーメイン代表は、「メキシコのレッドブルでのFP1が、並外れていた」「ヘルムート（マルコ）が彼を信じている。それは持っていて損のないものだ」と、起用の理由を話している。去年12月2日、ハジャーがレッドブルに上がり、角田がリザーブになって、リンドブラッドの席が決まった。「5歳でこの道を始めたときから、F1にいることがずっと目標だった」。"
+   ],
+   [
+    "p",
+    "デビュー戦のメルボルンでは、1周目に3番手まで上がり、8位で初めての点を取った。「1周目にP3かそこらにいたと思う。ちょっと、どうかしてる」。「自分が『若い子』で新人なのは分かっている。でもクルマに乗れば、僕は激しい競争相手だ」。「父がそこにいてくれたのも、本当にうれしかった」。"
+   ],
+   [
+    "h",
+    "マドリードとバクー"
+   ],
+   [
+    "p",
+    "9月、マドリードとバクーのFP2で、2戦続けてクラッシュした。マドリードのあとは、「僕はミスをしていい。そこから学ぶ」。バクーでは、言葉が変わった。「正直、自信がない」。「特別であろうとしすぎて、肝心なときのための自分の軌道を、傷つけてしまった」。"
+   ],
+   [
+    "p",
+    "バクーの決勝では、再スタートでチームメイトのローソンと接触した。ローソンの無線、「いいね、チームメイトに消されるのは。最高だ」。リンドブラッドはおとがめなしで、7位。パーメイン代表は、2人がまたぶつかったら「こっぴどく叱る」と言った。"
+   ],
+   [
+    "h",
+    "38点"
+   ],
+   [
+    "p",
+    "今年のベストは、モナコの6位。15番グリッドから上がった。「とんでもない結果だ。ここにはミスの余地がない」。シルバーストンで7位、バクーで7位。メキシコでは7番手を走っていた58周目に、10周以上後ろにいたピアストリと接触してリタイアした。ペナルティはピアストリに出た。「僕らは本当の勝負をしていた。外側から楽に抜かせるつもりはなかった」。"
+   ],
+   [
+    "p",
+    "38点で、ランキング11位。チームメイトのローソンは、レッドブル本隊での代役の点も含めて、83点。パーメイン代表は、リンドブラッドのことをこう言っている。「かなり要求が多い。何でもすぐに欲しがる」。「自己批判的だ。速さを探すとき、最初に見るのは自分自身だ」。"
+   ],
+   [
+    "h",
+    "「まだ決まっていない」"
+   ],
+   [
+    "p",
+    "来年のレーシングブルズの2席は、まだ決まっていない。ローソン、リンドブラッド、F2のツォロフの3人がいて、パーメイン代表は「3は2に収まらない」。サンパウロの週には、「少し科学を使おうとしていて、それには時間がかかる」「数週間のうちに発表するとき、みんなが満足するはずだ」。"
+   ],
+   [
+    "p",
+    "リンドブラッド本人は、サンパウロのあとにこう言っている。「この3連戦、僕はとてもよく走れたと感じている。でも、すべてが自分に味方したわけではないようだ」。「前の週末と比べて、一歩前に進めた感覚がある。いちばんに集中しているのは、そこだ」。"
+   ],
+   [
+    "p",
+    "残り15周で確信したものを、取りこぼした19歳が、いちばん見ているのは、自分の次の一歩だ。次のラスベガスは、11月21日。壁に当たるまでの、どこかに正解がある。"
+   ]
+  ],
+  "terms": [
+   [
+    "ルーキー",
+    "rookie"
+   ],
+   [
+    "スーパーライセンス",
+    "super-licence"
+   ],
+   [
+    "インターミディエイト",
+    "intermediate"
+   ],
+   [
+    "グリッド降格",
+    "grid-penalty"
+   ],
+   [
+    "オーバーテイクモード",
+    "overtake-mode"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "formel1.de（Motorsport-Total.com）",
+    "title": "Arvid Lindblad erneut ohne Punkte: Was in Brasilien genau schiefgelaufen ist",
+    "url": "https://www.formel1.de/news/grand-prix-berichte/2026-11-11/arvid-lindblad-erneut-ohne-punkte-was-in-brasilien-genau-schiefgelaufen-ist",
+    "note": "2026年11月11日。「残り15周で確実だと思っていた」「壁に当たるまでは」「初めての条件」「50周か55周で終わっていれば」「とてもいいエンジン」「一歩前に進めた」（ドイツ語から編集部が訳した）。"
+   },
+   {
+    "name": "The Race",
+    "title": "F1 2026 Brazilian GP qualifying results",
+    "url": "https://www.the-race.com/formula-1/f1-2026-brazilian-gp-qualifying-results/",
+    "note": "2026年11月7日。Q2でトラブル、14番手。"
+   },
+   {
+    "name": "GPblog",
+    "title": "F1 driver receives new power unit after Sao Paulo GP qualifying issue",
+    "url": "https://www.gpblog.com/en/news/f1-driver-receives-new-power-unit-after-sao-paulo-gp-qualifying-issue",
+    "note": "2026年11月7日。10グリッド降格、「失われた機会」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Race day in Brazil 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-brazil-2026.6WRrgNQ7FDoFnwzxR9Vjw7",
+    "note": "2026年11月8日。パーメイン「後方から11位へ力強い走り」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "2026 Driver results: Arvid Lindblad",
+    "url": "https://www.formula1.com/en/results/2026/drivers/ARVLIN01/arvid-lindblad",
+    "note": "レースごとの結果、38点、11位。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Arvid Lindblad: Red Bull teenage protege granted F1 super licence at 17 after special exemption",
+    "url": "https://www.skysports.com/f1/news/12040/13381626/",
+    "note": "2025年6月。17歳での特例、「並外れた能力と成熟」、両親の出自。"
+   },
+   {
+    "name": "Motorsport Week",
+    "title": "Racing Bulls explains decision to promote Arvid Lindblad to F1 drive",
+    "url": "https://www.motorsportweek.com/2025/12/04/racing-bulls-explains-decision-to-promote-arvid-lindblad-to-f1-drive",
+    "note": "2025年12月4日。パーメイン「メキシコのFP1が並外れていた」「ヘルムートが信じている」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Hadjar earns Red Bull seat for 2026 as rookie Lindblad joins Lawson at Racing Bulls",
+    "url": "https://www.formula1.com/en/latest/article/hadjar-earns-red-bull-seat-for-2026-as-rookie-lindblad-joins-lawson-at.3agyavmwcP9LJkVkRXWSEb",
+    "note": "2025年12月2日。「5歳で始めたときからF1が目標」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Lindblad shakes off 'young kid' stereotype with 'pretty nuts' P8 finish on debut",
+    "url": "https://www.formula1.com/en/latest/article/lindblad-shakes-off-young-kid-stereotype-with-pretty-nuts-p8-finish-on-debut.3XJBPgJ2hzmxhIMCfmV4QI",
+    "note": "2026年3月。「1周目にP3」「激しい競争相手」「父がいてくれた」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Arvid Lindblad fires staunch F1 defence: I'm allowed to crash",
+    "url": "https://racingnews365.com/arvid-lindblad-fires-staunch-f1-defence-im-allowed-to-crash",
+    "note": "2026年9月。「僕はミスをしていい」。"
+   },
+   {
+    "name": "The Race",
+    "title": "Scathing Lindblad self-criticism for 'trying to be too special'",
+    "url": "https://www.the-race.com/formula-1/scathing-lindblad-self-criticism-for-trying-to-be-too-special.md",
+    "note": "2026年9月。「自信がない」「特別であろうとしすぎた」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Liam Lawson, Arvid Lindblad FIA investigation, Azerbaijan Grand Prix",
+    "url": "https://www.planetf1.com/news/liam-lawson-arvid-lindblad-fia-investigation-azerbaijan-grand-prix",
+    "note": "2026年9月。ローソンの無線、おとがめなし。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Arvid Lindblad makes Racing Bulls pledge after internal discussions",
+    "url": "https://racingnews365.com/arvid-lindblad-makes-racing-bulls-pledge-after-internal-discussions",
+    "note": "パーメイン「こっぴどく叱る」。"
+   },
+   {
+    "name": "Pit Debrief",
+    "title": "Lindblad P6 Monaco",
+    "url": "https://www.pitdebrief.com/?p=122463",
+    "note": "2026年。モナコ6位「とんでもない結果」「ミスの余地がない」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'We were in a genuine fight' – Lindblad offers verdict on Piastri collision in Mexico City Grand Prix",
+    "url": "https://www.formula1.com/en/latest/article/we-were-in-a-genuine-fight-lindblad-offers-verdict-on-piastri-collision-in-mexico-city-grand-prix.30FzCcOAR3jR8jti3SjN2e",
+    "note": "2026年11月。メキシコ58周目、「本当の勝負」「楽に抜かせるつもりはなかった」。"
+   },
+   {
+    "name": "Autosport",
+    "title": "How Lindblad has shown that he's found his feet in F1",
+    "url": "https://www.autosport.com/f1/news/how-lindblad-has-shown-that-hes-found-his-feet-in-f1-/10833171/",
+    "note": "2026年6月。パーメイン「要求が多い」「自己批判的」。"
+   },
+   {
+    "name": "Crash.net",
+    "title": "Huge F1 driver dilemma: Decision facing Red Bull for 2027",
+    "url": "https://www.crash.net/f1/feature/1107912/1/huge-f1-driver-dilemma-decision-facing-red-bull-2027",
+    "note": "ローソン83点のうち14点は本隊での代役。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'The right decision will be made' – Permane gives update on driver decision process at Racing Bulls",
+    "url": "https://www.formula1.com/en/latest/article/the-right-decision-will-be-made-permane-gives-update-on-driver-decision-process-at-racing-bulls.2kgfMJB54MrzV3I94KJHrG",
+    "note": "2026年11月7日。「少し科学を使う」「数週間のうちに」。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Liam Lawson Racing Bulls F1 2027",
+    "url": "https://www.planetf1.com/news/liam-lawson-racing-bulls-f1-2027",
+    "note": "2026年10月9日。パーメイン「3は2に収まらない」。"
+   }
+  ]
+ }
+}

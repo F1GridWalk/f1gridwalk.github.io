@@ -1,0 +1,365 @@
+{
+ "slug": "hirakawa-tenth-and-one-point-twice",
+ "gp": "WEC最終戦モンツァ",
+ "title": "10位、1点",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "メキシコのF1デビューで10位、1点。その1週間後、11月8日のモンツァでトヨタ8号車は10位、1点。後のほうの1点で、平川亮はブエミ、ハートレーとともに3度目の世界チャンピオンになった。日曜の朝には「明るい話題があんまりないです」と言っていた。土曜の朝の電話から8日間の中身と、まだ決まっていない「その後」。",
+ "checked": "2026-11-12",
+ "checkedNote": "AUTOSPORT web、Toyota Gazoo Racing Europe、Car Watch、RACER、Dailysportscar、Pit Debrief、Formula1.com、RacingNews365、Grande Prêmio、GPblog の原文を11月12日に確認しました。平川の言葉は日本語の記事から引用し、ブエミ、ハートレー、コンウェイの言葉は英語と日本語の公式コメントから引用・翻訳しました。8号車の順位は、チェッカー時点の11位を書く記事と、ペナルティ後の正式結果10位を書く記事があり、本文は正式結果に合わせています。8号車の誰がどのスティントを走ったかは、どの記事にも書かれていません。",
+ "common": [
+  "11月8日のWEC最終戦モンツァで、トヨタ8号車（ブエミ／ハートレー／平川）は正式結果10位、1点。7号車は11位0点で、最終115対97。平川は2022年、2023年に続く3度目の世界王者。同じ3人で3度は初。",
+  "1週間前の11月1日、メキシコでF1デビュー、10位1点。土曜朝の電話から8日間。",
+  "日曜朝「明るい話題があんまりないです」「正直ちょっと厳しい」。TR010と今年のタイヤで初めてのモンツァ、予選15番手。5位以内で自力決定だったが、7号車が点を取れず決まった。",
+  "「おそらくチーム史上最大の成果のひとつ」「昨年は厳しいシーズンでしたが、すべてを勝ち取ることができました」。ハースの残り3戦は未定（4人の上限で、カマラか平川のみ）。"
+ ],
+ "outlets": [
+  {
+   "id": "en-crash-ocon-replaced-hirakawa-mexico",
+   "angle": "8日前",
+   "adds": [
+    "土曜朝の代役起用。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-haas-four-driver-rule-hirakawa",
+   "angle": "規定",
+   "adds": [
+    "4人までの上限、残りはカマラか平川。"
+   ]
+  },
+  {
+   "id": "en-planetf1-camara-vegas-discussions",
+   "angle": "カマラ",
+   "adds": [
+    "ラスベガスは未定、F2との兼ね合い。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「明るい話題があんまりないです」「正直ちょっと厳しい」",
+   "w": "Car Watch（11月8日、日本語のオンライン取材）。"
+  },
+  {
+   "t": "「おそらくチーム史上最大の成果のひとつ」「すべてを勝ち取ることができました」",
+   "w": "トヨタの公式コメント（AUTOSPORT web、11月9日、日本語）。"
+  },
+  {
+   "t": "ブエミ「少し遅すぎた」、コンウェイ「清々しい気持ち」",
+   "w": "RACER（英語）、トヨタの日本語コメントを編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "8号車の順位",
+   "t": "チェッカー時点11位（RACER、トヨタ）と、アストンマーティンのペナルティ後の正式結果10位（AUTOSPORT web、Pit Debrief）。本文は10位。"
+  },
+  {
+   "k": "ハースの残り3戦",
+   "t": "カタール・アブダビは平川（Grande Prêmio）とカマラが3戦とも（GPblog）で割れる。チームは未発表。"
+  }
+ ],
+ "unknownsFillable": [
+  "ハースの残り3戦のドライバー。",
+  "8号車のスティント配分。"
+ ],
+ "unknownsLimits": [
+  "ブラジルで乗る可能性をめぐる「議論」の中身。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "なぜ「明るい話題がない」から王者になれたのか？",
+  "rows": [
+   {
+    "k": "貯金",
+    "t": "17点のリードは、イモラ、富士、バルセロナの3勝で作った。モンツァは守るレースだった。"
+   },
+   {
+    "k": "相手",
+    "t": "追えるのは僚友の7号車だけで、その7号車が序盤に2度の接触で消えた。"
+   },
+   {
+    "k": "本人",
+    "t": "厳しいと言いながら「見てほしい」。F1の週のあとでも、言葉の温度を変えなかった。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "土曜の朝の電話から、どうなった？",
+   "rules": [
+    "reserve-driver"
+   ],
+   "links": [
+    "/topics/hirakawa-race-tomorrow/"
+   ]
+  },
+  {
+   "q": "メキシコの71周の中身は？",
+   "rules": [
+    "safety-car"
+   ],
+   "links": [
+    "/topics/hirakawa-first-71-laps/"
+   ]
+  },
+  {
+   "q": "代わりに乗ったカマラのデビューは？",
+   "rules": [
+    "rookie"
+   ],
+   "links": [
+    "/topics/camara-lot-to-learn/"
+   ]
+  },
+  {
+   "q": "代役の点は、誰のものになる？",
+   "rules": [
+    "replacement-driver-points",
+    "reserve-driver"
+   ]
+  }
+ ],
+ "todo": [
+  "ハースの残り3戦が決まったら追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-08T17:00:00+01:00",
+   "t": "モンツァで10位、ドライバーズタイトル決定"
+  },
+  {
+   "at": "2026-11-12T12:15:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "平川亮は11月1日のメキシコでF1デビュー（10位、1点）、1週間後の11月8日、WEC最終戦モンツァでトヨタ8号車（ブエミ、ハートレーと）が正式結果10位・1点で、7号車が0点に終わったためドライバーズタイトルを決めた（115対97）。2022年、2023年に続く3度目で、同じ3人で3度は初。日曜朝は「明るい話題があんまりないです」「正直ちょっと厳しい」と言い、レース後は「おそらくチーム史上最大の成果のひとつ」「昨年は厳しかったが、すべてを勝ち取ることができました」。ハースの残り3戦に乗るかは未定（4人の上限で、カマラか平川のみ）。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "メキシコのF1デビューで10位、1点。その1週間後のモンツァで10位、1点。後のほうの1点で、平川亮は3度目の世界チャンピオンになった。日曜の朝には「明るい話題があんまりないです」と言っていた。8日間の中身。",
+  "body": [
+   [
+    "h",
+    "10位、1点"
+   ],
+   [
+    "p",
+    "11月8日、日曜日のモンツァ。WECの最終戦、6時間レースが終わったとき、トヨタ8号車は10位で、1点を取っていた。その1点で、ブエミ、ハートレー、平川亮の3人は、2026年の世界チャンピオンになった。"
+   ],
+   [
+    "p",
+    "ちょうど1週間前の日曜日、メキシコシティ。平川はハースでF1のデビュー戦を走り、10位で、1点を取っていた。"
+   ],
+   [
+    "p",
+    "10位と1点が、2回。片方はF1の最初の点で、もう片方は、3度目の世界タイトルを決める点だった。"
+   ],
+   [
+    "h",
+    "8日間"
+   ],
+   [
+    "p",
+    "10月31日、土曜日の朝。ランニングに出ようとしていた平川に、ハースから電話が来て、その日のFP3からオコンの代わりに乗ることになった。18番グリッドから走って、日曜日に10位。「今日は、僕の夢でした」。"
+   ],
+   [
+    "p",
+    "月曜日、トヨタの豊田章男会長が、公開の手紙を出した。火曜日、ハースはサンパウロGPに、来年のレギュラーのカマラを起用すると発表した。小松代表は「リョウはあれだけ急な話で、素晴らしい仕事をした」「決して簡単な決断ではなかった」。"
+   ],
+   [
+    "p",
+    "金曜日、平川はモンツァにいた。ブラジルで乗る可能性については、「議論はありました」「その判断を尊重します」。「今は今週末のことに集中していますし、その後のことは様子を見ましょう」。メキシコの電話については、改めて「本当に驚いた」。"
+   ],
+   [
+    "h",
+    "「明るい話題が、あんまりないです」"
+   ],
+   [
+    "p",
+    "日曜日の朝、日本のメディアに向けたオンラインの取材で、平川は正直だった。「明るい話題があんまりないです」。「正直、ちょっと今のところは厳しいかなっていうのは本音ですね」。"
+   ],
+   [
+    "p",
+    "理由はあった。今年のマシンTR010でモンツァを走るのは初めてで、今年のタイヤでここを走るのも初めてだった。週末で乾いていたのは予選だけで、8号車は15番手。降格した他車の分で、スタートは14番手だった。"
+   ],
+   [
+    "p",
+    "タイトルの計算は、単純だった。8号車は7号車に17点差でリードしていて、追えるのは僚友の7号車だけ。8号車が5位以内なら、7号車の結果に関係なく決まる。「チームオーダーはなく、自由にレースをしていいことになっています」。"
+   ],
+   [
+    "p",
+    "「苦手な中で、僕らトヨタレーシングがどういう走りができるかというのを、見てほしいなと思います」。"
+   ],
+   [
+    "h",
+    "6時間"
+   ],
+   [
+    "p",
+    "レースは、キャデラックの38号車が勝った。エイトケン、ブルデー、バンバー。6周目にパラボリカで先頭に出て、最後まで譲らなかった。"
+   ],
+   [
+    "p",
+    "トヨタの2台は、どちらもきれいなレースにはならなかった。7号車は最初のシケインでGT3のマシンと接触してマシンを傷め、数周後、同じ場所で後ろから来たジェネシスに当てられた。8号車もジェネシスと接触した。ブエミは「少し遅すぎた」と言った。セーフティカーは4回。"
+   ],
+   [
+    "p",
+    "チェッカーのとき、8号車は11番手だった。あとでアストンマーティンにペナルティが出て、10位に繰り上がり、1点。7号車は11位で、0点。最終的な点差は、115対97。タイトルは、5位以内ではなく、相手が点を取れなかったことで決まった。"
+   ],
+   [
+    "p",
+    "この日が、7号車のコンウェイの最後のレースだった。12シーズン、2度のタイトル、20勝。「僕にとっては最後のレースだったが、正直とても清々しい気持ちだ」。"
+   ],
+   [
+    "h",
+    "「おそらく、チーム史上最大の成果」"
+   ],
+   [
+    "p",
+    "平川は、こう言った。「8号車のメンバーだけでなく、チーム全員のためにも本当に嬉しく思います」。「トヨタレーシングとしてル・マン24時間レースと両チャンピオンシップを制することができたのは非常に大きな成果であり、おそらくチーム史上最大の成果のひとつだと思います」。"
+   ],
+   [
+    "p",
+    "「昨年は厳しいシーズンでしたが、2026年はTR010ハイブリッドとともに戻ってきて、すべてを勝ち取ることができました」。「そのことを誇りに思うべきですし、同時に、これからもチーム一丸となってさらに強くなっていきたいと思います」。"
+   ],
+   [
+    "p",
+    "ブエミは「8号車でル・マンに勝てなかったのはつらかったが、ドライバーズの世界タイトルがそれを埋めてくれる」。ハートレーは「8号車の3人はル・マンのあと複雑な感情を抱えていたが、シーズン後半に力強く巻き返せたことを誇りに思う」。ブエミとハートレーは5度目、平川は2022年、2023年に続く3度目。同じ3人で3度のタイトルは、初めてのことだ。"
+   ],
+   [
+    "h",
+    "その後のこと"
+   ],
+   [
+    "p",
+    "平川の「その後」は、まだ決まっていない。ハースは今季、ベアマン、オコン、平川、カマラの4人を使い、規定の上限に達した。残り3戦に乗れるのは、カマラか平川しかいない。カタールとアブダビはF2と日程が重なるから平川が戻るという見方と、カマラが3戦とも走るという見方があり、チームはまだ発表していない。"
+   ],
+   [
+    "p",
+    "1994年、広島県呉市の生まれ。32歳。8日間に、F1の最初の1点と、3度目の世界タイトルの1点を取った。どちらも10位だった。その数字の小ささと、中身の大きさを、本人がいちばんよく分かっている。「その後のことは、様子を見ましょう」。"
+   ]
+  ],
+  "terms": [
+   [
+    "リザーブドライバー",
+    "reserve-driver"
+   ],
+   [
+    "WEC（世界耐久選手権）",
+    "wec"
+   ],
+   [
+    "セーフティカー",
+    "safety-car"
+   ],
+   [
+    "代役の点",
+    "replacement-driver-points"
+   ],
+   [
+    "ル・マン",
+    "le-mans"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "AUTOSPORT web",
+    "title": "WEC第8戦モンツァ6時間 正式結果",
+    "url": "https://www.as-web.jp/sports-car/1372788",
+    "note": "2026年11月8日。正式結果、8号車10位、7号車11位。"
+   },
+   {
+    "name": "Toyota Gazoo Racing Europe",
+    "title": "6 Hours of Monza race – TOYOTA RACING completes world title double",
+    "url": "https://newsroom.toyota.eu/6-hours-of-monza-race---toyota-racing-completes-world-title-double/",
+    "note": "2026年11月8日。レース経過、14番手スタート、7号車の接触、セーフティカー4回、ブエミ・ハートレー・小林の言葉（英語から編集部が訳した）。"
+   },
+   {
+    "name": "AUTOSPORT web（carview）",
+    "title": "トヨタ、ドライバーズタイトルを獲得。平川「おそらくチーム史上最大の成果のひとつ」",
+    "url": "https://carview.yahoo.co.jp/news/detail/9df52718509aaa8ad1a2bb150d9ca2e02b7f9838",
+    "note": "2026年11月9日。平川の日本語のコメント。"
+   },
+   {
+    "name": "Car Watch",
+    "title": "平川亮、WEC最終戦モンツァ前のオンライン取材",
+    "url": "https://car.watch.impress.co.jp/docs/news/2154629.html",
+    "note": "2026年11月8日。「明るい話題があんまりないです」「正直ちょっと厳しい」「見てほしい」。"
+   },
+   {
+    "name": "AUTOSPORT web（carview）",
+    "title": "平川亮、モンツァ到着時の取材",
+    "url": "https://carview.yahoo.co.jp/news/detail/8c1ee6fc924e78d3fcf28c4a0005e7078dc66a9b",
+    "note": "2026年11月6日。「議論はありました」「判断を尊重します」「様子を見ましょう」「本当に驚いた」「チームオーダーはなく」。"
+   },
+   {
+    "name": "AUTOSPORT web（carview）",
+    "title": "WEC最終戦モンツァ プレビュー",
+    "url": "https://carview.yahoo.co.jp/news/detail/31898e231a6bf46be9b8c832c52ee82465a53bd5",
+    "note": "2026年11月2日。17点差、TR010と今年のタイヤで初めてのモンツァ。"
+   },
+   {
+    "name": "RACER",
+    "title": "Bourdais helps guide Cadillac to Monza 6 Hours win",
+    "url": "https://racer.com/2026/11/08/bourdais-helps-guide-cadillac-to-monza-6-hours-win-in-final-race-for-the-team",
+    "note": "2026年11月8日。キャデラック38号車の勝利、6周目のパラボリカ。"
+   },
+   {
+    "name": "RACER",
+    "title": "Quiet WEC title clinches taste just as sweet for Toyota, TF Sport",
+    "url": "https://racer.com/2026/11/08/quiet-wec-title-clinches-taste-just-as-sweet-for-toyota-tf-sport",
+    "note": "2026年11月8日。ブエミ「少し遅すぎた」。"
+   },
+   {
+    "name": "Dailysportscar",
+    "title": "Cadillac wins at Monza as #8 Toyota crowned champions",
+    "url": "https://www.dailysportscar.com/2026/11/08/cadillac-wins-at-monza-as-8-toyota-crowned-champions.html",
+    "note": "2026年11月8日。同じ3人で3度のタイトルは初。"
+   },
+   {
+    "name": "Pit Debrief",
+    "title": "2026 WEC standings after Round 8, 6 Hours of Monza",
+    "url": "https://www.pitdebrief.com/post/2026-wec-standings-after-round-8-6-hours-of-monza/",
+    "note": "最終ポイント115対97。"
+   },
+   {
+    "name": "RACER",
+    "title": "Ferrari secures home pole at WEC season finale",
+    "url": "https://racer.com/2026/11/07/ferrari-secures-home-pole-at-wec-season-finale",
+    "note": "2026年11月7日。予選、8号車15番手。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'Today was my dream' – Hirakawa really happy with F1 debut in Mexico City",
+    "url": "https://www.formula1.com/en/latest/article/today-was-my-dream-hirakawa-really-happy-with-f1-debut-in-mexico-city.2JU1Knkff6nSnfmyb6cCId",
+    "note": "2026年11月1日。メキシコ10位、「今日は僕の夢でした」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Komatsu explains why fast-tracking Camara into Haas seat was a tough decision after Hirakawa performance",
+    "url": "https://www.formula1.com/en/latest/article/komatsu-explains-why-fast-tracking-camara-into-haas-seat-was-a-tough-decision-after-hirakawa-performance.6N8NbSuekc1oGCylHgVZ2g",
+    "note": "2026年11月。小松代表「素晴らしい仕事」「簡単な決断ではなかった」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Toyota issues incredibly emotional letter after unforgettable Hirakawa F1 debut",
+    "url": "https://racingnews365.com/toyota-issues-incredibly-emotional-letter-after-unforgettable-hirakawa-f1-debut",
+    "note": "2026年11月2日。豊田章男会長の手紙。"
+   },
+   {
+    "name": "Grande Prêmio",
+    "title": "Câmara to race for Haas at São Paulo and Las Vegas F1 Grands Prix",
+    "url": "https://grandepremio.com/en/f1/camara-to-race-for-haas-at-sao-paulo-and-las-vegas-f1-grands-prix/",
+    "note": "2026年11月3日。カタール・アブダビは平川という見方。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Haas appears to have made a decision on Camara",
+    "url": "https://www.gpblog.com/en/exclusive-news/haas-appears-to-have-made-a-decision-on-camara-major-implications-for-the-title-fight",
+    "note": "2026年11月6日。カマラが3戦とも走るという見方。"
+   }
+  ]
+ }
+}
