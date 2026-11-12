@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T06:30:00+09:00",
+  "updatedAt": "2026-11-12T12:30:00+09:00",
   "topics": {
     "haas-ocon-camara-brazil": {
       "title": "ハースがオコンを今季残り戦から外す　ブラジルGPはカマラがデビュー",
@@ -60,9 +60,68 @@
     "verstappen-ferrari-mercedes-talk": {
       "title": "フェルスタッペンの将来、解説者が語る「フェラーリなら」「メルセデスは難しい」",
       "summary": "元ハース代表のシュタイナー氏はフェラーリにはフェルスタッペンが合うかもしれないと語り、ラルフ・シューマッハー氏は技術への深い関与ゆえにメルセデスは難しいと述べた。いずれも元関係者の個人的な見立てで、移籍の動きが報じられたわけではない。フェルスタッペンは2030年末までレッドブルと契約している。"
+    },
+    "honda-stroll-battery-retirement": {
+      "title": "ホンダのバッテリー不具合でストロールが連続リタイア　根本原因は不明",
+      "summary": "ブラジルGPでアストンマーティンのストロールが2戦連続でリタイアした。ホンダの技術責任者は何が起きたかは把握しているが根本原因は分かっていないとし、ラスベガスまでの対策と来季に向けた根本的な解決が必要だと述べた。信頼性は夏休み前後に一時改善していたが、直近で再び問題が相次いでいる。"
     }
   },
   "articles": [
+    {
+      "id": "en-planetf1-lawson-radio-leclerc-penalty",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "PlanetF1",
+      "cat": "決勝",
+      "circuit": "interlagos",
+      "teams": [
+        "racingbulls",
+        "ferrari"
+      ],
+      "topic": "brazil-post-race-penalties",
+      "title": "ローソンの未放送無線「ルクレールは処分を」　ノリスは「絶妙な接触」",
+      "summary": "サンパウロGPの未放送の無線で、ローソンがルクレールとの接触について処分を求めていたことが分かった。ルクレールはジュンサオでローソンの左後輪に接触し、ローソンは「彼は処分されるべきだ」と訴え、エンジニアは調査されると答えた。ルクレールは7位でゴールしたが5秒加算を受け、ローソンが7位に繰り上がった。ローソンは2017年のF2アブダビでの出来事を引き合いに「彼の得意技かもしれない」と話したが、優勝したノリスは「絶妙な接触」だとし、5秒の裁定に疑問を示した。",
+      "orig": "Untelevised Liam Lawson team radio after FIA issues Charles Leclerc penalty",
+      "url": "https://www.planetf1.com/news/liam-lawson-fia-charles-leclerc-brazilian-grand-prix-2026-team-radio",
+      "published": "2026-11-12T00:02:00+00:00"
+    },
+    {
+      "id": "de-motorsporttotal-mercedes-explains-antonelli-spin",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "チーム",
+      "circuit": "interlagos",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "brazil-mercedes-spins",
+      "title": "メルセデスがアントネッリのスピンを説明　タイヤ温度が適正域を下回る",
+      "summary": "メルセデスは、サンパウロGPでアントネッリが首位から後退したスピンの原因を説明した。首位を走っていたアントネッリは18周目にインターからスリックへ替え、2周後の1コーナーでリヤを失った。代表代行を務めたブラッドリー・ロード氏は、気温が低くタイヤが適正な温度域を下回りがちで、車がオーバーステア傾向で極めて乗りにくかったとデータが示すと述べた。アントネッリは「なぜ急にリヤを失ったのか自分でも分からない」と話し、5位でゴールした。ラッセルは4位だった。",
+      "orig": "Mercedes erklärt Ursache für Kimi Antonellis Dreher in Brasilien",
+      "url": "https://www.motorsport-total.com/formel-1/news/mercedes-erklaert-ursache-fuer-kimi-antonellis-dreher-in-brasilien-26111110",
+      "published": "2026-11-11T18:01:00+01:00"
+    },
+    {
+      "id": "nl-gpblog-lambiase-verstappen-farewell",
+      "kind": "rumor",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "GPblog",
+      "cat": "うわさ",
+      "teams": [
+        "redbull",
+        "mclaren"
+      ],
+      "topic": "lambiase-redbull-mclaren",
+      "title": "ランビアーゼ氏、フェルスタッペンとの別れが近いか　遅くとも2028年にマクラーレンへ",
+      "summary": "GPブログは、フェルスタッペンのレースエンジニアを務めるランビアーゼ氏が、遅くとも2028年までにマクラーレンへ移ると伝えた。今季限りでエンジニア役を離れるとされ、後任のトム・ハート氏はオースティンとブラジルで既にフェルスタッペンと仕事をし、ラスベガスも担当する。カタールとアブダビが中止になればラスベガスが最終戦となり、二人が最後に一緒に戦ったのは優勝したメキシコGPになる可能性がある。時期については匿名の社内の話とされ、記事に当事者のコメントはない。",
+      "orig": "Verstappen dreigt afscheid van Lambiase al achter de rug te hebben",
+      "url": "https://www.gpblog.com/nl/nieuws/verstappen-dreigt-afscheid-van-lambiase-al-achter-de-rug-te-hebben",
+      "published": "2026-11-11T17:02:00+01:00"
+    },
     {
       "id": "nl-f1maximaal-steiner-verstappen-ferrari-solution",
       "kind": "rumor",
@@ -345,6 +404,75 @@
       "published": "2026-11-11T12:34:30+00:00"
     },
     {
+      "id": "en-therace-wet-tyres-2027-what-needs-solving",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "circuit": "interlagos",
+      "topic": "sainz-pirelli-wet-tyres",
+      "title": "雨用タイヤは2027年にどう変わるか　サンパウロで噴出した不満の中身",
+      "summary": "ピレリは2027年向けの新しいウェットとインターミディエイトの仕上げに入っている。サンパウロはインターで始まりスリックを挟んで再びインターに戻る展開で、サインツは「リヤがまだ非常に弱い」、ガスリーは「氷の上にいるようだった」と話した。2026年型はストレートモードでタイヤに大きな力がかかるため、インターの最低内圧が前年の25.5psiから28psiに上がり、温まりにくくなったという。ピレリはウォームアップの改善に取り組んでいると明かし、最終的な承認は12月の予定だ。",
+      "orig": "F1's divisive wet weather tyres to change in 2027 - what we know",
+      "url": "https://www.the-race.com/formula-1/f1-divisive-wet-weather-tyres-to-change-in-2027-what-we-know/",
+      "published": "2026-11-11T12:00:00+00:00"
+    },
+    {
+      "id": "en-therace-honda-reliability-stroll-orihara",
+      "kind": "tech",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "The Race",
+      "cat": "テクニカル",
+      "circuit": "interlagos",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "honda-stroll-battery-retirement",
+      "title": "ホンダの新たな信頼性問題　「何が起きたかは分かるが根本原因は不明」",
+      "summary": "アストンマーティンとホンダは、ブラジルでストロールが2戦連続でリタイアし、今季20戦で完走は6回にとどまる。ホンダのオリハラ氏は「何が起きたかは分かるが、根本原因は分からない」と述べ、ラスベガスまでの対策と来季に向けた根本対策が必要だとした。ストロールは週末にバッテリーの問題が2度あり、アロンソも今季7回リタイアしている。夏休み前後には5戦連続で完走するなど一時は改善していた。この対応が人員や予算、時間を圧迫するため、2027年序盤に大きな前進は見込めないと記事は指摘する。",
+      "orig": "What we know about worrying new Honda F1 reliability issue",
+      "url": "https://www.the-race.com/formula-1/honda-f1-new-reliability-problem-might-not-cure-before-2026-end/",
+      "published": "2026-11-11T12:00:00+00:00"
+    },
+    {
+      "id": "de-motorsporttotal-bortoleto-home-race-frustration",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "決勝",
+      "circuit": "interlagos",
+      "teams": [
+        "audi"
+      ],
+      "topic": "bortoleto-brazil-home-race",
+      "title": "ボルトレート、母国GPはノーポイント　「予選で起きたことの直接の結果」",
+      "summary": "アウディのボルトレートは母国サンパウロGPで無得点に終わった。土曜にクラッシュしてエンジンのペナルティも受け、19番グリッドからのスタートだった彼は、結果を「予選で起きたことの直接の結果」と振り返った。終盤はインターでルクレールやローソンに食らいつき、ペースには「かなり満足」としつつ、新規則では追い抜きが難しいと嘆いた。アウディのマクニッシュ氏は予選のミスを不運とし、混戦が壁だったと述べた。チームメートのヒュルケンベルグは10位で1点を獲得した。",
+      "orig": "Mit der Pace 'ziemlich zufrieden', aber: Bortoleto hadert mit Brasilien-Heimspiel",
+      "url": "https://www.motorsport-total.com/formel-1/news/mit-der-pace-ziemlich-zufrieden-aber-bortoleto-hadert-mit-brasilien-heimspiel-26111107",
+      "published": "2026-11-11T12:00:00+01:00"
+    },
+    {
+      "id": "it-motorionline-barrichello-antonelli-ferrari",
+      "kind": "rumor",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Motorionline",
+      "cat": "うわさ",
+      "teams": [
+        "ferrari",
+        "mercedes"
+      ],
+      "topic": "barrichello-antonelli-ferrari",
+      "title": "バリチェロ氏「アントネッリはいずれフェラーリへ」　ガゼッタ紙に語る",
+      "summary": "元フェラーリのバリチェロ氏が、アントネッリはいずれフェラーリで走ると思うと語ったとモトリオンラインが伝えた。インテルラゴスでのガゼッタ・デロ・スポルト紙の取材で、移籍の可能性を問われて「そう思う」と答え、どのドライバーも夢はフェラーリで走ることだと述べた。速さと才能に加えて謙虚な人柄も称賛し、イタリア人の彼にはその思いがより強いかもしれないと語った。記事は、アントネッリがメルセデスを離れる具体的な兆候はないとし、本人は最近、チームから遠い将来は想像できないと話している。",
+      "orig": "Barrichello: \"Antonelli in Ferrari? Penso che accadrà\"",
+      "url": "https://f1grandprix.motorionline.com/barrichello-antonelli-ferrari-previsione-futuro/",
+      "published": "2026-11-11T12:00:00+01:00"
+    },
+    {
       "id": "de-motorsporttotal-verstappen-no-two-number-ones",
       "kind": "news",
       "lang": "de",
@@ -401,6 +529,37 @@
       "published": "2026-11-11T10:59:00+00:00"
     },
     {
+      "id": "de-f1insider-russell-academy-gr63",
+      "kind": "rumor",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider.com",
+      "cat": "うわさ",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "russell-gr63-academy",
+      "title": "ラッセルが自身の育成アカデミーを立ち上げか　「GR63」のアカウントが登場",
+      "summary": "メルセデスのラッセルが、自身の若手育成アカデミーを立ち上げるようだとF1インサイダーが伝えた。ラッセルはインスタグラムに、7歳で始めたカートを振り返り、今度はスポーツに恩返しする時だと語る動画を投稿し、末尾に「Stay tuned」と11月12日の日付を添えた。ゼッケン63にちなむ「GR63 Academy」というアカウントも作られている。公式発表ではなく、同誌が投稿から推測した内容だ。ノリスは9月に独自のジュニアチームを発表している。",
+      "orig": "Formel-1-Star gründet wohl eine eigene Nachwuchsakademie",
+      "url": "https://f1-insider.com/formel-1-star-gruendet-nachwuchsakademie-83915/",
+      "published": "2026-11-11T11:47:00+01:00"
+    },
+    {
+      "id": "de-f1insider-byd-geely-twelfth-team",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider.com",
+      "cat": "ビジネス",
+      "topic": "byd-geely-twelfth-team",
+      "title": "FIA会長「BYDとジーリーが参戦に関心」　12番目のチームの条件は",
+      "summary": "FIAのベン・スレイエム会長が、マドリードのニュー・エコノミー・フォーラムで、中国のBYDとジーリーがF1参戦について接触してきたと明かした。会長はBYDに既存チームの買収を勧めたが、BYDは独自チームを望んだという。会長は「必要なのはどんなチームでもなく、正しいチームだ」と述べ、関心の表明だけでは足りず実現性のある提案を求めた。F1ではV8回帰案など規則の議論も進むが、中国メーカーのために規則は変えないと語った。ジーリーはボルボやロータスを傘下に持つ。",
+      "orig": "Zwölftes Team in der Formel 1? Neue Hersteller klopfen an",
+      "url": "https://f1-insider.com/formel-1-zwoelftes-team-neue-hersteller-83913/",
+      "published": "2026-11-11T10:25:00+01:00"
+    },
+    {
       "id": "de-motorsporttotal-wet-f1-2026-how-dangerous",
       "kind": "tech",
       "lang": "de",
@@ -414,6 +573,23 @@
       "orig": "Nach Regen-Chaos in Brasilien: Wie gefährlich ist die Formel 1 von 2026 wirklich?",
       "url": "https://www.motorsport-total.com/formel-1/news/nach-regen-chaos-in-brasilien-wie-gefaehrlich-ist-die-formel-1-von-2026-wirklich-26111103",
       "published": "2026-11-11T09:50:00+01:00"
+    },
+    {
+      "id": "en-planetf1-bottas-herta-super-licence",
+      "kind": "rumor",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "PlanetF1",
+      "cat": "うわさ",
+      "teams": [
+        "cadillac"
+      ],
+      "topic": "cadillac-bottas-herta",
+      "title": "ハータがスーパーライセンス獲得　キャデラックのボッタスの座を巡るうわさ",
+      "summary": "コルトン・ハータがサンパウロGPのFP1走行で必要な40点に届き、スーパーライセンスを得たとPlanetF1が伝えた。キャデラックは義務の4回を上回る6回のFP1にハータを起用した。ハータはF2で19位にとどまるため、F1側の走行でなければ得られない点数だった。これを受けボッタスの来季の座にハータが就くとのうわさが出ており、ボッタスは「通常なら何も変わらないはずだが、将来のことは分からない」と語った。キャデラックはペレスの長期契約を発表したが、ボッタスには触れていない。",
+      "orig": "'Don't know' – Valtteri Bottas responds to Colton Herta's Super Licence points",
+      "url": "https://www.planetf1.com/news/valtteri-bottas-cadillac-future-colton-herta-super-licence",
+      "published": "2026-11-11T08:43:00+00:00"
     },
     {
       "id": "de-motorsporttotal-bearman-haas-pitstops",
@@ -432,6 +608,23 @@
       "summary": "ハースのベアマンは予選8位から決勝17位に終わり、無得点でサンパウロGPを終えた。1回目のピットは周囲より約15秒長くかかり、本人は「20秒のピットストップだった」と振り返っている。コマツ代表は、1周目の3コーナーでベアマンがスライドしてアロンソに接触し、後部のクラッシュ構造が壊れてジャッキを正しくかけられなかったと説明した。このピットではアンセーフリリースで5秒加算も受けた。コンストラクターズでハースは7位だが、8位アウディとは3点差しかない。",
       "url": "https://www.motorsport-total.com/formel-1/news/haas-verschenkt-wichtige-wm-punkte-bearman-rechnet-mit-seinem-team-ab-26111102",
       "published": "2026-11-11T08:50:00+01:00"
+    },
+    {
+      "id": "pt-grandepremio-camara-hirakawa-vs-bearman",
+      "kind": "news",
+      "lang": "pt",
+      "region": "ブラジル",
+      "source": "Grande Prêmio",
+      "cat": "分析",
+      "teams": [
+        "haas"
+      ],
+      "topic": "haas-ocon-camara-brazil",
+      "title": "カマラとヒラカワ、ベアマンとの差は　ハースの新人2人をラップ比較",
+      "summary": "グランデ・プレミオは、ハースの新人ヒラカワ（メキシコ）とカマラ（サンパウロ）をチームメートのベアマンと比べたラップタイム分析を掲載した。メキシコでは有効37周の平均でベアマンが1.220秒速く、ヒラカワが上回ったのは5周だけだった。サンパウロのスリック走行40周ではベアマンが平均0.518秒速く、カマラが上回ったのは比較できた39周のうち15周だった。レース条件が違うため結論は出せず、カマラがヒラカワより速いとも言えないと記事は結んでいる。",
+      "orig": "Câmara superou Hirakawa? O que os tempos ao lado de Bearman revelam",
+      "url": "https://grandepremio.com/br/f1/camara-ou-hirakawa-o-que-ritmo-de-cada-um-em-relacao-a-bearman-diz-sobre-duelo-na-haas/",
+      "published": "2026-11-11T04:00:00-03:00"
     },
     {
       "id": "en-planetf1-newey-two-tier-f1",
@@ -469,6 +662,24 @@
       "summary": "アストンマーティンのストロールはサンパウロGPで30周を走ったところで18位から止まり、本人はバッテリーの問題を理由に挙げた。今季13度目のリタイアで、ホンダ側の折原伸太郎氏は前日にも同じ車にバッテリーの不具合があったと明かしている。原因はまだ分かっておらず、データとバッテリーを調べて特定には数週間かかる見込みで、来季までに直さなければ再発すると話した。シーズン序盤の振動問題との関係は薄いとしつつ、走行距離か使い方かも判断できていない。雨でパワーユニットの弱点は隠れたが、ドライバビリティの改善は必要だという。",
       "url": "https://www.motorsport-total.com/formel-1/news/lance-stroll-honda-raetselt-ueber-13-ausfall-der-saison-26111101",
       "published": "2026-11-11T07:00:00+01:00"
+    },
+    {
+      "id": "ja-f1are-russell-pit-exit-spin",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "まとめ",
+      "circuit": "interlagos",
+      "teams": [
+        "mercedes"
+      ],
+      "topic": "brazil-mercedes-spins",
+      "title": "【掲示板】ラッセルのピット出口スピン「ピットレーンでの事故にペナルティを」との声も",
+      "summary": "サンパウロGP決勝でピットアウト付近でスピンしたラッセルをめぐり、ピットレーンでのスピンやクラッシュにペナルティを課すべきだとの意見が取り上げられた。ラッセルはAUTOSPORTの取材で、勝ちに行ってリスクを取りすぎたと認め、結果を大きくは変えなかったとの見方を示したという。掲示板ではスピンを批判する声が目立つ一方、アントネッリもリヤを失ったことから車両側の問題を疑う意見もあった。ピット出口を塞いだ場合の扱いを議論する書き込みも見られる。",
+      "orig": "F1サンパウロGP決勝のラッセルについて「ピットレーンでのスピンやクラッシュはペナルティを課すべき」との意見",
+      "url": "https://f1are.com/blog-entry-4068.html",
+      "published": "2026-11-11T12:00:00+09:00"
     },
     {
       "id": "en-planetf1-camara-vegas-discussions",
@@ -867,6 +1078,23 @@
       "summary": "FIAによる今季3回目のADUO評価で、レッドブル・フォード・パワートレインズは追加の開発機会を得られなかった。今回は条件を満たすメーカーがなく、評価の対象は第12戦から第18戦のアメリカGPまでだった。レッドブルは前2回の評価でも追加の承認を受けておらず、各社の性能差は非公開のままだ。第1回で支援を得たメルセデスは2026年と2027年に1回ずつ、フェラーリ、アウディ、ホンダは各2回ずつの権利を維持する。同サイトはこの制度が、後れを取るメーカーが何年も遅れたままになるのを防ぐ狙いだと説明している。",
       "url": "https://www.f1maximaal.nl/formule-1/red-bull-krijgt-opnieuw-niets-van-fia-na-nieuwe-motorbeoordeling",
       "published": "2026-11-10T12:50:00+01:00"
+    },
+    {
+      "id": "it-motorionline-ocon-haas-legal-dispute",
+      "kind": "rumor",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Motorionline",
+      "cat": "うわさ",
+      "teams": [
+        "haas"
+      ],
+      "topic": "ocon-haas-dispute",
+      "title": "オコンとハースの決別、契約をめぐる法的争いに発展も　独誌報道",
+      "summary": "ハースを離れたオコンの件が、契約をめぐる法的な争いになりうると、モトリオンラインがスピードウィークの報道として伝えた。記事によれば決別はメキシコでのコマツ代表との対立の後に起き、ハースは詳しい経緯を公表していない。コマツ代表は「簡単ではなかったが、自分の中では納得している」と述べ、ウォルフ代表は「チーム代表はどこで限度かを決めなければならない」と擁護した。ローソンのチームのパーマン氏は「終わったとは言わない」と含みを残し、来季はアストンマーティンの控えという可能性も挙がるが確定ではない。",
+      "orig": "Ocon-Haas, il licenziamento può finire in tribunale",
+      "url": "https://f1grandprix.motorionline.com/ocon-haas-licenziamento-battaglia-legale-wolff/",
+      "published": "2026-11-10T12:00:00+01:00"
     },
     {
       "id": "de-motorsporttotal-f2-champions-overlooked",
@@ -1463,207 +1691,6 @@
       "published": "2026-11-09T08:25:00+00:00"
     },
     {
-      "id": "de-f1insider-leclerc-penalty-brazil",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "F1-Insider.com",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "ferrari",
-        "racingbulls"
-      ],
-      "topic": "brazil-post-race-penalties",
-      "title": "ルクレールに5秒加算　ローソンとの接触でスチュワードが判断",
-      "summary": "F1インサイダーによると、ルクレールはサンパウロGP後に5秒のタイムペナルティを受け、7位から8位に下がった。69周目の12コーナーで7位争い中にローソンと接触し、その後5つのコーナーを経て追い抜いた場面だ。スチュワードは映像やオンボード、車載データを確認し、接触の原因はルクレールにあり、わずかな接触でもローソンのマシンに影響したと判断した。さらにこの影響で追い抜けたとも指摘している。ルクレールは両者とも激しくも公正に戦ったと述べ、ローソンはフロントウイングがタイヤに当たったと主張した。",
-      "orig": "Ferrari-Star kassiert nachträglich eine Strafe in Brasilien",
-      "url": "https://f1-insider.com/formel-1-ferrari-star-strafe-nach-brasilien-83887/",
-      "published": "2026-11-09T08:36:00+01:00"
-    },
-    {
-      "id": "nl-f1maximaal-antonelli-spin-angry",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "F1Maximaal",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "brazil-mercedes-spins",
-      "title": "アントネッリ、優勝逃しに怒り　「タイヤはフラットスポットで完全に壊れた」",
-      "summary": "F1マキシマールによると、サンパウロGPで優勝へ向かっていたアントネッリは、スピンでレースを失ったことに怒りを隠さなかった。インターミディエイトからスリックに替えた後、ソフトでマシンの後部に違和感があったと説明している。スピンで大きなフラットスポットができ、タイヤは「完全に壊れた」状態だったという。なぜ後部のグリップが急に抜けたかはまだ分からず、チームにデータ分析を求めた。メルセデスのコンストラクターズ優勝は祝福に値するとしつつ、ブラジルのファンの前で勝ちたかったと語った。",
-      "orig": "Antonelli legt bal bij Mercedes en is pissig: 'Compleet verwoest'",
-      "url": "https://www.f1maximaal.nl/formule-1/antonelli-legt-bal-bij-mercedes-en-is-pissig-compleet-verwoest",
-      "published": "2026-11-09T08:30:00+01:00"
-    },
-    {
-      "id": "de-motorsporttotal-alonso-aston-martin-phenomenal",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "チーム",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "brazil-alonso-aston-pace",
-      "title": "アロンソ「車は驚異的だった」　雨のサンパウロでアストンが見せた速さ",
-      "summary": "独モータースポーツ・トータルは、サンパウロGPを12位で終えたアロンソのコメントを伝えた。アロンソはアストンマーティンにとって今季最も競争力のあるレースだったとし、一時はフェラーリ、終盤はメルセデスと互角に走れたと語った。同誌のペース分析でも、ルクレールのフェラーリに並ぶ区間があり、コーナーの出口に向けて特に強かったという。アロンソは直線の遅れがなければコーナーで1秒近く速かったかもしれないと述べ、雨が追い風になったとも認めた。ストロールは車両トラブルで30周目にリタイアし、今季14回目の戦線離脱となった。",
-      "orig": "Fernando Alonso schwärmt von Aston Martin: \"Das Auto war phänomenal\"",
-      "url": "https://www.motorsport-total.com/formel-1/news/fernando-alonso-schwaermt-von-aston-martin-das-auto-war-phaenomenal-26110903",
-      "published": "2026-11-09T06:37:00+01:00"
-    },
-    {
-      "id": "de-motorsportmagazin-verstappen-desaster",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Magazin.com",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "brazil-verstappen-p21-p2",
-      "title": "フェルスタッペン、2位でも怒り　「車は85%の間ひどかった」",
-      "summary": "モータースポーツ・マガジンによると、21番手からスタートしたフェルスタッペンは19ポジションを上げて2位に入り、ノリスとの差は14秒602だった。2024年の17番手から優勝、2025年のピットレーンから3位に続く、3年連続の大逆転劇だ。一方、本人は無線で、レースの約85%を壊れたような車で走るのはひどいと不満をぶつけ、スリック装着後は高速コーナーで強いオーバーステアが出たと説明した。部品が壊れたのか空力性能を失ったのかをチームが調べるべきだとし、来年はもっと前から出たいとも語った。",
-      "orig": "Max Verstappen platzt trotz Formel-1-Sensation in Brasilien der Kragen: \"Ein Desaster!\"",
-      "url": "https://www.motorsport-magazin.com/formel1/news-301180-max-verstappen-platzt-trotz-formel-1-sensation-in-brasilien-der-kragen-ein-desaster/",
-      "published": "2026-11-09T04:00:00+01:00"
-    },
-    {
-      "id": "ja-f1are-redbull-aston-pu-reason",
-      "kind": "fan",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1のアレ",
-      "cat": "まとめ",
-      "teams": [
-        "redbull",
-        "astonmartin"
-      ],
-      "topic": "redbull-engine-supply-aston",
-      "title": "レッドブルがアストンマーティンにPUを供給しない理由は賞金？　掲示板で議論",
-      "summary": "F1のアレが、レッドブルのPU供給をめぐる掲示板の話題をまとめた。アストンマーティンがレッドブル製PUを使うという報道に対し、メキーズ代表は他チームへの供給に前向きではなく、具体的な交渉もないと述べた。オーストリアのOE24は、エンジン価格上限が年1500万ユーロで、順位次第では賞金が減ることを恐れているためだと伝えたという。ニューウェイやホンダの存在を理由に挙げる書き込みや、賞金の話は言い訳だとする見方があった。あくまで掲示板上の議論で、事実とは確認されていない。",
-      "orig": "レッドブルがアストンマーチンのPUを供給したくない本当の理由",
-      "url": "https://f1are.com/blog-entry-4061.html",
-      "published": "2026-11-09T12:00:00+09:00"
-    },
-    {
-      "id": "de-motorsporttotal-antonelli-unsafe-release-penalty",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "brazil-post-race-penalties",
-      "title": "アントネッリに5秒加算　ピットでの危険な送り出しで　5位は変わらず",
-      "summary": "ドイツのモータースポーツ・トータルによると、FIAのスチュワードはサンパウロGP後、アントネッリに5秒のタイムペナルティを科した。最後のピットストップでメルセデスが危険な形で送り出し、ファストレーンを走るコラピントの進路に入って双方が回避を強いられたためだ。滑りやすい路面で一時コントロールを失ったことも指摘された。5位のゴール順位は、ピアストリに20秒以上の差をつけていたため変わらない。メルセデスはピット作業をより安全にできたと認めた。",
-      "orig": "Unsafe Release: Darum wurde Antonelli in Brasilien nachträglich bestraft",
-      "url": "https://www.motorsport-total.com/formel-1/news/unsafe-release-darum-wurde-antonelli-in-brasilien-nachtraeglich-bestraft-26110902",
-      "published": "2026-11-09T02:24:00+01:00"
-    },
-    {
-      "id": "de-motorsporttotal-wolff-russell-p2-support",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "チーム",
-      "circuit": "interlagos",
-      "teams": [
-        "mercedes"
-      ],
-      "topic": "mercedes-russell-p2-priority",
-      "title": "ウォルフ代表、ラッセルの選手権2位を全力支援も　アントネッリは王者確定済み",
-      "summary": "ドイツのモータースポーツ・トータルによると、ウォルフ代表はサンパウロGP後、残り3戦でラッセルのドライバーズランキング2位を全力で支える選択肢があると語った。アントネッリはすでにタイトルを決めており、ポイントを気にせず走れる立場にある。2位はフェルスタッペンの279点で、3位ラッセルは262点と17点差だ。ウォルフは予選でポールを逃した最後のラップについてチームの判断が響いたと認め、来季の巻き返しに疑いはないと述べた。コンストラクターズ王座は「ジョージのチャンピオンシップ」と呼んだ。",
-      "orig": "Toto Wolff bestätigt: Jetzt fährt Antonelli für Russells P2",
-      "url": "https://www.motorsport-total.com/formel-1/news/toto-wolff-bestaetigt-jetzt-faehrt-antonelli-fuer-russells-p2-26110901",
-      "published": "2026-11-09T02:10:00+01:00"
-    },
-    {
-      "id": "nl-f1maximaal-windsor-hamilton-verstappen-contrast",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "F1Maximaal",
-      "cat": "分析",
-      "circuit": "interlagos",
-      "teams": [
-        "ferrari",
-        "redbull",
-        "mclaren"
-      ],
-      "topic": "brazil-windsor-review",
-      "title": "ウィンザー氏がサンパウロGPを評す　ハミルトンとフェルスタッペンの対比",
-      "summary": "オランダのF1マキシマールが、F1アナリストのピーター・ウィンザー氏（74）によるサンパウロGP評を伝えた。同氏はハミルトンについて、スタートは見事だったがインターミディエイトの劣化が早く、リアに負荷をかける走り方が影響した可能性があるとの見方を示した。フェルスタッペンは勢いを保って抜き続け、車は大半でバランスに苦しんでいたと対照的に評価した。ノリスは序盤にトップを失っても冷静にペースを管理した、最高クラスのレースだったと称えた。アロンソのウェット予選のラップも、車よりドライバーの力だと語った。",
-      "orig": "Windsor wijst op contrast tussen Verstappen en Hamilton: \"Dit was niet het geval bij Max\"",
-      "url": "https://www.f1maximaal.nl/opinie/windsor-wijst-op-contrast-tussen-verstappen-en-hamilton-dit-was-niet-het-geval-bij-max",
-      "published": "2026-11-09T00:05:00+01:00"
-    },
-    {
-      "id": "de-motorsportmagazin-hamilton-brazil-slick-call",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Magazin.com",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "hamilton-brazil-race-call",
-      "title": "ハミルトン、61周目にピット指示を見送りスピン　400戦目は9位",
-      "summary": "モータースポーツ・マガジンによると、通算400戦目のハミルトンは20番手から1周目に11台を抜いて9番手に上がったが、インターミディエイトでリアのグリップを失い一時14番手まで下がった。29周目には9番手に戻ったものの、61周目にローソンの背後でオーバーテイクボタンを押した直後にピットへ呼ばれ、ぎりぎりでコースに残る判断をした。その直後に雨が強まり、スリックのままスピンしたが9位でゴールした。本人は最新の情報を持っていなかったと語り、チームに謝罪した。ヴァスール代表は呼び戻しは間に合ったと思うと述べた。",
-      "orig": "Ignorierte Lewis Hamilton Ferrari wieder? Nach Super-Start gerät Brasilien aus den Fugen",
-      "url": "https://www.motorsport-magazin.com/formel1/news-301174-ignorierte-lewis-hamilton-ferrari-wieder-nach-super-start-geraet-formel-1-rennen-brasilien-aus-den-fugen/",
-      "published": "2026-11-08T22:41:00+01:00"
-    },
-    {
-      "id": "nl-racingnews365-mekies-verstappen-beats-simulator",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "RacingNews365",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "brazil-verstappen-p21-p2",
-      "title": "メキース代表、フェルスタッペンの21番手から2位を絶賛　シミュレーターも予測できず",
-      "summary": "レッドブルのメキース代表は、21番手から2位に入ったフェルスタッペンの走りを称え、そんな結果はどんなシミュレーターでも予測できないと語った。グリッド降格は金曜の小さな問題による予定外のもので、チームにとって初の降格だったという。同代表は、今季が自社製パワーユニットでの初年度であることも強調した。5番手から3位に入ったハジャーについては、純粋なレースペースでは移籍後最高かもしれないと評価した。ハジャーはウェット路面に苦戦する場面もあったが、メキース代表は再び基準を引き上げたと語った。",
-      "orig": "Mekies maakt diepe buiging voor Verstappen: \"Hij verslaat zelfs de simulator!\"",
-      "url": "https://racingnews365.nl/mekies-maakt-diepe-buiging-voor-verstappen-hij-verslaat-zelfs-de-simulator",
-      "published": "2026-11-08T22:10:00+01:00"
-    },
-    {
-      "id": "en-f1com-verstappen-p21-to-podium",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "Formula1.com",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "brazil-verstappen-p21-p2",
-      "title": "フェルスタッペン、21番手から2位　「困難なレースだった」と振り返る",
-      "summary": "パワーユニット部品の交換で21番手スタートとなったフェルスタッペンは、サンパウロGPを2位で終えた。路面は濡れた状態から乾いていくレースで、雨が戻ると終盤にインターミディエイトへ交換した。第1スティント後は、週末のそれまでとは正反対の車に感じたと語り、困難なレースだったと振り返った。5番手スタートのハジャーは3位で、ターン1でコースオフしたため2位をフェルスタッペンに譲るよう指示されていた。フェルスタッペンはインテルラゴスに強く、2024年は17番手から優勝している。",
-      "orig": "Verstappen reflects on 'challenging' Sao Paulo GP as he charges from P21 to the podium",
-      "url": "https://www.formula1.com/en/latest/article/verstappen-reflects-on-challenging-sao-paulo-gp-as-he-charges-from-p21-to-the-podium.4g4jMP9fsJQwWOCfDLitK9",
-      "published": "2026-11-08T20:41:00+00:00",
-      "primary": true
-    },
-    {
       "id": "en-f1com-sao-paulo-norris-wins-mercedes-title",
       "kind": "news",
       "lang": "en",
@@ -1684,104 +1711,6 @@
       "published": "2026-11-08T20:00:00+00:00",
       "primary": true,
       "featured": true
-    },
-    {
-      "id": "de-motorsportmagazin-brasilien-norris-wins-verstappen-show",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Magazin.com",
-      "cat": "決勝",
-      "circuit": "interlagos",
-      "teams": [
-        "mclaren",
-        "mercedes",
-        "redbull",
-        "ferrari"
-      ],
-      "topic": "brazil-race-norris-win",
-      "title": "雨のブラジルでノリスが独走勝利　フェルスタッペンの猛追とメルセデスの自滅",
-      "summary": "独モータースポーツ・マガジンは、ウェットのサンパウロGPでノリスが独走で勝ったと報じた。決め手は絶妙なタイミングのピットストップと、アントネッリやラッセルのスピンだったという。フェルスタッペンは第1スティントで順位を上げ、11周目に5番手まで浮上した。ハミルトンは14周目ごろ早めにスリックへ交換して序盤に順位を上げたが、63周目にターン14でスピンした。メルセデスは優勝を逃したものの、ラッセル4位、アントネッリ5位でコンストラクターズ王座を決めた。",
-      "orig": "Formel 1 Brasilien: Lando Norris gewinnt bei Verstappen-Show im Regen, Mercedes holt WM",
-      "url": "https://www.motorsport-magazin.com/formel1/news-301169-formel-1-brasilien-lando-norris-gewinnt-bei-verstappen-show-im-regen-mercedes-holt-wm/",
-      "published": "2026-11-08T19:51:00+01:00"
-    },
-    {
-      "id": "ja-voice-alonso-honda-q3",
-      "kind": "voice",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1 Grid Walk",
-      "cat": "ファンの声",
-      "circuit": "interlagos",
-      "teams": [
-        "astonmartin"
-      ],
-      "topic": "alonso-brazil-q3",
-      "title": "『アロンソの腕が光った予選でした』　ホンダPUの今季初Q3に日本のファンが沸く",
-      "summary": "Yahoo!ニュースのコメント欄では、ホンダPUのアストンマーティンが雨のサンパウロ予選で今季初のQ3に進み、アロンソが8番グリッドを得たことへの称賛が目立った。一方、ドライの決勝では厳しいと見る冷静な声もあった。",
-      "url": "https://news.yahoo.co.jp/articles/adfe6a6190fa53a596ae0b66936523578efd7a82",
-      "published": "2026-11-09T00:40:00+09:00",
-      "note": "雨で車の差が縮まった一戦だったことは、アロンソ本人も認めている。ファンの喜びと、晴れたら厳しいという冷静さが同居しているのが今回の特徴だ。今回は日本のコメント欄のみで、海外の反応は読めていない。",
-      "voices": [
-        {
-          "side": "日本",
-          "text": "アロンソの腕が光った予選でした。",
-          "src": "Yahoo!ニュース コメント欄（東スポWEB）",
-          "url": "https://news.yahoo.co.jp/articles/97a2807de7ca51cb1e0c21856f142cf7fd6a9a1a/comments",
-          "mood": "賛",
-          "quote": true,
-          "big": true,
-          "comment": "アロンソは雨のQ3で9番手を記録し、ルクレールの降格で8番グリッドに上がった。F1公式サイトは、ホンダPUに今も出力と信頼性が足りないと指摘している。"
-        },
-        {
-          "side": "日本",
-          "text": "雨のインテルラゴスは曲者。",
-          "src": "Yahoo!ニュース コメント欄（CoCoKARAnext）",
-          "url": "https://news.yahoo.co.jp/articles/adfe6a6190fa53a596ae0b66936523578efd7a82/comments",
-          "mood": "心配",
-          "quote": true,
-          "comment": "アロンソはQ1を8番手、Q2を7番手で通過し、今季初のQ3へ。ただ本人は、上位を狙うにはあまりにも差が大きいと慎重に語っている。"
-        },
-        {
-          "side": "日本",
-          "text": "ノントラブルでポイントゲットして欲しい。",
-          "src": "Yahoo!ニュース コメント欄（CoCoKARAnext）",
-          "url": "https://news.yahoo.co.jp/articles/adfe6a6190fa53a596ae0b66936523578efd7a82/comments",
-          "mood": "賛",
-          "quote": true,
-          "comment": "入賞すれば、バーレーンGP以来4戦ぶりのポイントになると記事は伝える。前戦メキシコでは、MGU-Kの問題で序盤にリタイアしていた。"
-        },
-        {
-          "side": "日本",
-          "text": "PUの弱さは承知の上で、アロンソの腕を称える声",
-          "src": "Yahoo!ニュース コメント欄（東スポWEB）",
-          "url": "https://news.yahoo.co.jp/articles/97a2807de7ca51cb1e0c21856f142cf7fd6a9a1a/comments",
-          "mood": "賛",
-          "big": true
-        },
-        {
-          "side": "日本",
-          "text": "雨で見せた力をドライでも、と期待する声が多数",
-          "src": "Yahoo!ニュース コメント欄（東スポWEB）",
-          "url": "https://news.yahoo.co.jp/articles/97a2807de7ca51cb1e0c21856f142cf7fd6a9a1a/comments",
-          "mood": "賛"
-        },
-        {
-          "side": "日本",
-          "text": "来季はせめてQ3常連のマシンを、と求める声も",
-          "src": "Yahoo!ニュース コメント欄（スポニチ）",
-          "url": "https://news.yahoo.co.jp/articles/6d1a751f9bff10a30764b727e99f583f31b7d995/comments",
-          "mood": "否"
-        },
-        {
-          "side": "日本",
-          "text": "決勝が晴れなら厳しい、と冷静に見る人も",
-          "src": "Yahoo!ニュース コメント欄（CoCoKARAnext）",
-          "url": "https://news.yahoo.co.jp/articles/adfe6a6190fa53a596ae0b66936523578efd7a82/comments",
-          "mood": "心配"
-        }
-      ]
     }
   ]
 }
