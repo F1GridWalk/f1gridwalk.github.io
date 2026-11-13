@@ -3177,7 +3177,7 @@ MEMBER_GROUPS = [  # (label, pattern) — first match wins (owner's OK, 22 Oct 2
     ('reserve', 'リザーブ', r'リザーブ|テストドライバー|テスト兼|サードドライバー|シミュレーター|開発ドライバー'),
     ('mgmt', '代表・経営', r'チーム代表|副チーム代表|チーム副代表|CEO|会長|オーナー|株主|創業者|チェアマン'),
     ('race', 'レース現場', r'レースエンジニア|スポーティングディレクター|トラックサイド|ヘッド・オブ・レーシング|パフォーマンスエンジニア|レーシングディレクター|チーフトラックサイド'),
-    ('tech', '技術', r'テクニカル|技術|CTO|チーフデザイナー|パワートレイン|パワーユニット'),
+    ('tech', '技術', r'テクニカル|技術|CTO|チーフデザイナー|パワートレイン|パワーユニット|空力|エアロ|エンジニアリング|パフォーマンス|デザイン|コンサルタント'),  # column desk request, 13 Nov 2026
     ('mgmt', '代表・経営', r'.'),
 ]
 
@@ -3336,7 +3336,7 @@ def build_engineers(teams, order):
 
 
 BOSS_GROUPS = [('チーム代表', ('チーム代表', '副代表')),
-               ('技術のトップ', ('テクニカル', 'CTO', '技術', 'デザイナー')),
+               ('技術のトップ', ('テクニカル', 'CTO', '技術', 'デザイナー', '空力', 'エアロ', 'エンジニアリング', 'パフォーマンス', 'デザイン', 'コンサルタント')),
                ('レースの現場', ('スポーティング', 'レーシングディレクター', 'トラックサイド', 'レーシング・オフィサー', 'マネージング・ディレクター')),
                ('経営・そのほか', ())]
 
@@ -3347,7 +3347,8 @@ def build_bosses(teams, order):
     rows, n = [], 0
     for k in order:
         t = teams.get(k) or {}
-        ppl = [p for p in PEOPLE if p.get('org') == t.get('name') and 'ドライバー' not in p.get('role', '') and 'エンジニア' not in p.get('role', '')]
+        ppl = [p for p in PEOPLE if p.get('org') == t.get('name') and 'ドライバー' not in p.get('role', '')
+               and not re.search(r'レースエンジニア|パフォーマンスエンジニア', p.get('role', ''))]  # race engineers are on drivers/engineers/
         if not ppl:
             continue
         groups = {g: [] for g, _ in BOSS_GROUPS}
