@@ -1748,6 +1748,53 @@ def _rb_titles():
     return titles
 
 
+SEO = None
+
+
+def _seo(tid):
+    global SEO
+    if SEO is None:
+        SEO = {k: v for k, v in (load('deep/seo.json', {}) or {}).items() if not k.startswith('_')}
+    return (SEO.get(tid) or {}).get('title')
+
+
+def _heads(body):
+    """「## 」 headings of a body, without （…）, years and long ones: the questions a page answers, for its search title."""
+    out = []
+    for x in body or []:
+        if isinstance(x, str) and x.startswith('## '):
+            h = re.sub(r'（.*?）', '', x[3:]).strip()
+            if h and not re.match(r'\d', h):
+                out.append(h)
+    return out
+
+
+def term_title(t):
+    """Search title of a term page (owner's OK, 13 Nov 2026): the first answered questions after 「意味と」."""
+    hs = [h for h in _heads(t.get('body')) if len(h) <= 12 and '、' not in h][:2]
+    hook = ('意味と' + '・'.join(hs)) if hs else '意味をやさしく解説'
+    return f'{_seo(t["id"]) or t["term"] + "とは｜" + hook}｜F1用語・ルール辞典｜F1グリッドウォーク'
+
+
+def person_title(p):
+    """Search title of a person page (owner's OK, 13 Nov 2026): nickname, what they do, and what the page answers."""
+    org = re.sub(r'（.*?）', '', p.get('org', '')).strip()
+    nick = next((a for a in p.get('aliases', []) if len(a) <= 3 and re.fullmatch(r'[ァ-ヴー]+', a) and a not in p['name']), '')
+    nick = f'（{nick}）' if nick else ''
+    hs = _heads(p.get('body'))
+    role = p.get('role', '')
+    if 'ドライバー' in role and 'エンジニア' not in role:
+        hook = ('国籍・生年月日・カーナンバー' if 'プロフィール' in hs else 'プロフィール・経歴') + f'（{org}）'
+    else:
+        r = re.sub(r'（.*?）', '', role).strip()
+        if len(r) > 20 and '兼' in r and len(r.split('兼')[-1]) <= 20:
+            r = r.split('兼')[-1]
+        r = r if len(r) <= 22 else r[:21] + '…'
+        extra = next((h for h in hs if h not in ('経歴', 'プロフィール') and len(h) <= 12 and h[:4] not in r), '')
+        hook = f'{r}（{org}）・経歴' + (f'・{extra}' if extra else '')
+    return f'{_seo("person-" + p["id"]) or p["name"] + nick + "とは｜" + hook}｜F1人物辞典｜F1グリッドウォーク'
+
+
 def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_title, og=None):
     """One rulebook entry page."""
     url = SITE + rb_url(tid)
@@ -1771,7 +1818,8 @@ def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_titl
         {'@type': 'ListItem', 'position': 4, 'name': name, 'item': url}]}
     head = (MONO_FONT + f'<style>{DEEP_CSS}{RULES_CSS}{RULES_ENTRY_CSS}{RBP_CSS}</style>\n' + ld(crumbs_ld) + ld(ld_term))
     desc = re.sub(r'\s+', ' ', short)
-    desc = (desc if len(desc) <= 110 else desc[:108] + '…') + ' F1の用語とルールを、2026年の規則と今季の実例でやさしく解説。'
+    desc = (desc if len(desc) <= 110 else desc[:108] + '…') + (' F1人物辞典：経歴と最近の発言を、2026年の報道からまとめています。' if kind == 'person'
+                                                              else ' F1の用語とルールを、2026年の規則と今季の実例でやさしく解説。')
     write(f'deep/rules/{tid}/index.html', page(desc_title, desc, url, body, head, og_image=og))
 
 
@@ -1829,7 +1877,7 @@ def build_rules():
         if og:
             ld_term['image'] = og
         _rb_page(R, tid, 'term', t['term'], t['cat'], al, t['short'], b, used, ld_term,
-                 f'{t["term"]}とは｜意味をやさしく解説｜F1用語・ルール辞典｜F1グリッドウォーク', og)
+                 term_title(dict(t, id=tid)), og)
         sm.append((SITE + rb_url(tid), chk + 'T09:00:00+09:00', None, '0.6'))
     for p in PEOPLE:
         tid = 'person-' + p['id']
@@ -1884,7 +1932,7 @@ def build_rules():
         og = rules_og(tid, p['name'], '人物', f'{p["role"]}（{p["org"]}）', 'F1人物辞典')
         pu.discard(tid)
         _rb_page(R, tid, 'person', p['name'], '人物', al, p['short'], b, pu, ld_p,
-                 f'{p["name"]}とは｜経歴・役職（{re.sub(r"（.*?）", "", p["org"]).strip()}）｜F1人物辞典｜F1グリッドウォーク', og)
+                 person_title(p), og)
         sm.append((SITE + rb_url(tid), (p.get('checked') or R['checked']) + 'T09:00:00+09:00', None, '0.5'))
     # remove pages of entries that no longer exist
     rdir = os.path.join(ROOT, 'deep', 'rules')
