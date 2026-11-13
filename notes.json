@@ -1,6 +1,39 @@
 {
- "updatedAt": "2026-11-14T00:40:00+09:00",
+ "updatedAt": "2026-11-14T06:40:00+09:00",
  "notes": [
+  {
+   "id": "note-formula1report-audi-tsunoda-appeal",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Formula1 Report",
+   "title": "【分析】角田裕毅のスタート手順を巡るアウディの控訴。11月25日にFIA国際控訴裁判所で審理へ【イタリアGP】",
+   "summary": "イタリアGPの再スタート時に角田裕毅がピットレーンからスタートすべきだったとするアウディの控訴を分析した記事。当初のスチュワードは追加フォーメーションラップはレースディレクターの判断だったとして罰則を科さなかった。控訴が通れば30秒加算で順位が動くが、筆者は覆る可能性は低いと見ている。",
+   "url": "https://note.com/formula1report/n/n343609687ab8",
+   "published": "2026-11-13T22:50:31+09:00",
+   "teams": [
+    "audi"
+   ]
+  },
+  {
+   "id": "note-formula1report-tsolov-reserve-2027",
+   "platform": "note",
+   "site": "F1レポート",
+   "lang": "ja",
+   "paid": false,
+   "cat": "ドライバー",
+   "author": "formula1report",
+   "title": "ニコラ・ツォロフ、2027シーズンはレッドブル＆レーシングブルズのリザーブドライバーに就任。F1デビューに向けた準備を進める",
+   "summary": "ツォロフが来季レッドブルとレーシングブルズ両チームのリザーブに就くとの発表を、F1デビューへの重要な一歩として整理する。シミュレーターや開発プログラム、練習走行、タイヤテストなどを担う予定で、代表の評価も紹介する。F2ランキング2位で今季6勝を挙げ、本人は残るカタールとアブダビでのタイトル獲得を優先すると語ったという。",
+   "url": "https://note.com/formula1report/n/n55034dabbdd2",
+   "published": "2026-11-13T00:35:00+09:00",
+   "teams": [
+    "redbull",
+    "racingbulls"
+   ]
+  },
   {
    "id": "substack-gpexplained-week46",
    "platform": "substack",
@@ -20,21 +53,18 @@
    ]
   },
   {
-   "id": "note-formula1report-tsolov-reserve-2027",
+   "id": "note-formula1report-wet-tyre-saopaulo",
    "platform": "note",
-   "site": "F1レポート",
+   "site": "Formula1 Report",
    "lang": "ja",
    "paid": false,
-   "cat": "ドライバー",
-   "author": "formula1report",
-   "title": "ニコラ・ツォロフ、2027シーズンはレッドブル＆レーシングブルズのリザーブドライバーに就任。F1デビューに向けた準備を進める",
-   "summary": "ツォロフが来季レッドブルとレーシングブルズ両チームのリザーブに就くとの発表を、F1デビューへの重要な一歩として整理する。シミュレーターや開発プログラム、練習走行、タイヤテストなどを担う予定で、代表の評価も紹介する。F2ランキング2位で今季6勝を挙げ、本人は残るカタールとアブダビでのタイトル獲得を優先すると語ったという。",
-   "url": "https://note.com/formula1report/n/n55034dabbdd2",
-   "published": "2026-11-13T00:35:00+09:00",
-   "teams": [
-    "redbull",
-    "racingbulls"
-   ]
+   "cat": "テクニカル",
+   "author": "Formula1 Report",
+   "title": "【分析】サンパウロGPから見えたPirelliのウェットタイヤの存在意義、そして今後の課題を徹底分析",
+   "summary": "サンパウロGPを題材に、ピレリのウェットタイヤの役割と課題を論じた分析。エクストリームウェットとインターミディエイトの排水量を比べ、水煙による後方視界の悪さが決勝のバトルを難しくしていると指摘する。筆者は排水性能と視界を両立するタイヤの開発が今後の課題だという見立てを示している。",
+   "url": "https://note.com/formula1report/n/nd26644750c3a",
+   "published": "2026-11-11T18:42:06+09:00",
+   "circuit": "interlagos"
   },
   {
    "id": "note-formula1report-pirelli-wet-tyre-raison",
@@ -282,6 +312,24 @@
     "ferrari"
    ],
    "circuit": "mexico"
+  },
+  {
+   "id": "substack-somersf1-mclaren-late-season-update",
+   "platform": "substack",
+   "site": "SomersF1",
+   "lang": "en",
+   "paid": false,
+   "cat": "テクニカル",
+   "author": "SomersF1",
+   "title": "マクラーレンの終盤アップデート、今の戦いと2027年の両方に効く",
+   "orig": "McLaren's late-season update package that not only helps them in their current fight but also prepares them for 2027",
+   "summary": "サンパウロGPで唯一アップデートを投入したマクラーレンの新パーツを解説する記事。フロントウイングは支柱の取り付け位置を第2エレメントに変え、リアウイングも上側フラップの形状とハンガーフラップを変更したと説明する。コンストラクターズ3位争いと2027年の開発の両面に役立つという見立てだ。",
+   "url": "https://somersf1.substack.com/p/mclarens-late-season-update-package",
+   "published": "2026-11-06T12:00:00+09:00",
+   "teams": [
+    "mclaren"
+   ],
+   "circuit": "interlagos"
   },
   {
    "id": "substack-somersf1-brazil-document-cache",
@@ -735,49 +783,6 @@
    "summary": "アメリカGPの金曜を総括し、ストレートの弱さをコーナリング性能で補うフェラーリが好調だと分析。ロングランの落ち込みはタイヤ摩耗ではなく熱によるデグラデーションが主因とみて、各チームの勢力図を整理している。",
    "url": "https://note.com/formula1report/n/nf1ed88707fe7",
    "published": "2026-10-24T10:18:33+09:00",
-   "circuit": "austin"
-  },
-  {
-   "id": "note-formula1report-cota-fp2",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【FP2】ルクレールが再び最速、メルセデス&フェルスタッペンが僅差で続く。ロングランはサーマルデグが焦点に、タイヤ選択が鍵を握る週末へ【アメリカGP】",
-   "summary": "FP2は上位が僅差で、単独アタックのペースはFP1とほぼ変わらなかったと整理。ロングランではタイヤの摩耗よりも過熱が焦点で、ソフトは作動領域が狭いという見立てを示し、金曜の傾向がそのまま続くとは限らないとしている。",
-   "url": "https://note.com/formula1report/n/n305987478f02",
-   "published": "2026-10-24T07:09:32+09:00",
-   "circuit": "austin"
-  },
-  {
-   "id": "note-formula1report-cota-fp1",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Yoshito",
-   "title": "【FP1】ルクレール最速、トップ4は4チームが犇めき合う状況。ウィリアムズはテスト中心の走行プランと独特なタイヤ運用を実施【アメリカGP】",
-   "summary": "アメリカGPのFP1をもとに、ルクレールが最速でトップ4を4チームが分け合う接戦だった状況を整理した記事。ウィリアムズがテスト中心の走行プランと独特なタイヤ運用を行った点にも触れ、各チームの動きを分析している。",
-   "url": "https://note.com/formula1report/n/na19faa81c080",
-   "published": "2026-10-24T03:38:48+09:00",
-   "circuit": "austin"
-  },
-  {
-   "id": "substack-somersf1-us-gp-document-cache",
-   "platform": "substack",
-   "site": "SomersF1",
-   "lang": "en",
-   "paid": false,
-   "cat": "テクニカル",
-   "author": "Matthew Somerfield",
-   "title": "2026年アメリカGP　資料集とテクニカル・ジャーナル",
-   "orig": "2026 United States Grand Prix document cache and tech journal",
-   "summary": "アメリカGPのテクニカル資料を整理した記事。ストレートモードのゾーンは2か所、ピレリはC2〜C4を持ち込み、ピットストップのロスは平均約21.5秒、レースでの回生は8.5MJ（オーバーテイク作動時は9MJ）といった数値をまとめている。",
-   "url": "https://somersf1.substack.com/p/2026-united-states-grand-prix-document",
-   "published": "2026-10-23T12:00:00+09:00",
    "circuit": "austin"
   }
  ]
