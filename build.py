@@ -3442,7 +3442,7 @@ def top_rail_slot():
                '.rc-story{background:#1F2420}.rc-world{background:#B8673F}.rc-deep{background:#8E2F3B}.rc-off{background:#2F6B66}'
                '.rcard small{align-self:flex-start;font-size:8.5px;font-weight:800;letter-spacing:.08em;padding:2px 6px;border-radius:5px;background:rgba(255,255,255,.18)}'
                '.rc-story small{background:var(--hl,#FFEE9A);color:#1F2420}'
-               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:13.5px;line-height:1.4;font-weight:900;margin:4px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}"
+               ".rcard b{display:block;font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:13.5px;line-height:1.4;font-weight:900;margin:4px 0 0}"  # full title, no clamp (owner, 14 Nov 2026)
                '.rcard p,.rcard span.go{display:none}.rcard p{margin:0;font-size:12px;line-height:1.55;opacity:.88;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}'
                '.rcard span.go{font-weight:800;font-size:11.5px;margin-top:6px}'
                '.top-rail{position:relative}.rarr{display:none}.rdots{display:none;gap:6px;justify-content:center;padding:6px 0 4px}.rdots i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .2s}.rdots i.on{background:var(--ink);width:16px}}'
