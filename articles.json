@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T12:30:00+09:00",
+ "updatedAt": "2026-11-14T18:30:00+09:00",
  "topics": {
   "lawson-2027-seat": {
    "title": "ローソン、2027年もレーシングブルズ残留が決定　リンドブラッドと継続",
@@ -16,10 +16,6 @@
   "brazil-post-race-penalties": {
    "title": "サンパウロGP後に相次ぐ加算ペナルティ　アントネッリとルクレール",
    "summary": "サンパウロGP後、FIAのスチュワードはアントネッリにピットでの危険な送り出しで、ルクレールにローソンとの接触で、それぞれ5秒のタイムペナルティを科した。アントネッリは5位のまま、ルクレールは7位から8位に下がりローソンが7位に上がった。メルセデスはピット作業をより安全にできたと認めている。　ドイツの専門サイトも、スチュワードがルクレールに接触の責任があると判断したと伝えた。"
-  },
-  "sainz-pirelli-wet-tyres": {
-   "title": "2026年の雨用タイヤにドライバーの不満相次ぐ　サインツ「改善を」",
-   "summary": "サンパウロGPのウェット路面で、サインツ、アルボン、ベアマン、フェルスタッペンらが2026年仕様のピレリ雨用タイヤを批判した。主な不満は温まるまでに時間がかかり、グリップと耐久性が足りない点。ノリスは適温に入れば問題ないとしつつ、寒いラスベガスでは違う可能性を認めた。"
   },
   "verstappen-ferrari-mercedes-talk": {
    "title": "フェルスタッペンの将来、解説者が語る「フェラーリなら」「メルセデスは難しい」",
@@ -49,12 +45,96 @@
    "title": "ツォロフ、2027年はレッドブル両チームの正式リザーブに",
    "summary": "レーシングブルズがローソンとリンドブラッドの2027年残留を決め、ニコラ・ツォロフは来季のシートを得られなかった。代わりにレッドブルとレーシングブルズ両チームの公式リザーブ兼育成ドライバーに就き、シミュレーター、金曜フリー走行、旧型車テスト、タイヤテストを担う。F2で6勝を挙げて2位につけ、2028年の昇格候補とされる。"
   },
-  "aduo-engine-upgrades": {
-   "title": "ADUO第3回評価で序列変わらず　メルセデスの上積み報道も",
-   "summary": "FIAはエンジン開発の追加枠ADUOの第3回評価を終え、レッドブルだけが追加枠を得られない状況は変わらなかった。2027年に向けては測定方法の見直しも検討されている。一方、独メディアは伊サイトの情報として、メルセデスが枠を使わずに最大20馬力を上積みした可能性があると伝えたが、非公式で未確認の話だ。"
+  "fia-mcevoy-suspension": {
+   "title": "FIA、英紙マケボイ記者の取材資格を停止　デイリー・メールは残り3戦をボイコット",
+   "summary": "FIAは英デイリー・メール紙のマケボイ記者について、11月4日のルクレールを侮辱的に呼んだコラムを理由に、ラスベガス、カタール、アブダビの残り3戦の取材資格を停止した。FIAは専門家としての基準に合わないと説明し、同紙は別の記者を指名できるとしている。一方でデイリー・メール紙は3戦の取材と会見をボイコットし、報道の自由への攻撃だと抗議した。"
   }
  },
  "articles": [
+  {
+   "id": "de-f1insider-daily-mail-boycott-mcevoy",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ビジネス",
+   "topic": "fia-mcevoy-suspension",
+   "title": "デイリー・メール紙、ラスベガスなど残り3戦の取材をボイコット　FIAの記者資格停止に反発",
+   "summary": "F1-Insiderは、FIAが英デイリー・メール紙のマケボイ記者の取材資格を、ラスベガス、カタール、アブダビの残り3戦で停止したと伝えた。11月4日のコラムでルクレールを侮辱的な言葉で呼んだことが発端で、FIAは専門家としての基準に合わないとフロント・オフィス・スポーツ紙に説明し、同紙は別の記者を送ることもできる。同紙は3戦の取材と会見をボイコットし、スポーツ編集長は報道の自由への前例のない攻撃だと抗議した。マケボイ氏は冗談のつもりだったと述べ、フェラーリ側の関与を推測したが、確認はされていない。",
+   "orig": "Zeitung boykottiert Formel 1 nach Fahrerlager-Rauswurf",
+   "url": "https://f1-insider.com/formel-1-zeitung-boykott-rausuwrf-fahrerlager-83955/",
+   "published": "2026-11-14T09:36:00+01:00"
+  },
+  {
+   "id": "en-planetf1-newey-salary-horner-book",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "カルチャー",
+   "teams": [
+    "redbull",
+    "astonmartin"
+   ],
+   "topic": "horner-book-newey",
+   "title": "ニューウェイ獲得の舞台裏　年俸600万ポンド要求にミルシッツ氏「非常識」、ホーナー氏の回顧録",
+   "summary": "PlanetF1は、元レッドブル代表ホーナー氏の回顧録『Drive』が明かした2005年のニューウェイ獲得交渉を紹介した。同氏によると、当時の妻マリゴールドが年俸600万ポンドを求め、マクラーレンでの約300万ポンドを想定していたホーナー氏は驚いたという。創設者ミルシッツ氏は「非常識だ」と激怒したが、後に電話で承認し「チームにとって正しい判断」と述べたとされる。製図台の移送を巡りマクラーレンのデニス氏から叱責を受けたことも綴られている。数字や会話は回顧録の記述で、記事内で独自に裏付けられてはいない。",
+   "orig": "‘That’s obscene’ – Adrian Newey Red Bull salary demand revealed in Horner book claim",
+   "url": "https://www.planetf1.com/news/adrian-newey-christian-horner-red-bull-salary-book",
+   "published": "2026-11-14T07:22:00+00:00"
+  },
+  {
+   "id": "nl-racingnews365-redbull-herstel-punten-2026",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "分析",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-points-2026",
+   "title": "レッドブル、苦しい開幕から巻き返し　昨季の総得点超えまであと36点",
+   "summary": "RacingNews365は、レッドブルが苦しい序盤から立て直し、2025年の総得点を上回る勢いにあると分析した。開幕3戦はフェルスタッペンとハジャーの合計16点にとどまったが、アゼルバイジャンGP以降に計55点分の改良部品を投入し、フェルスタッペンはマレーシア、シンガポール、メキシコで優勝した。20戦終了時点で415点を獲得し、昨季の451点まで36点で、残り3戦の最大獲得は129点である。コンストラクターズ3位争いでもマクラーレンに17点差をつけている。",
+   "orig": "Red Bull ruikt eerherstel na moeizame start van F1-seizoen",
+   "url": "https://racingnews365.nl/red-bull-ruikt-eerherstel-na-moeizame-start-van-f1-seizoen",
+   "published": "2026-11-14T08:00:00+01:00"
+  },
+  {
+   "id": "en-planetf1-antonelli-verstappen-2027-threat",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "topic": "antonelli-verstappen-threat",
+   "title": "アントネッリ、来季の最大の脅威にフェルスタッペンを挙げる「問題を起こすのはマックだ」",
+   "summary": "PlanetF1は、王者アントネッリが2027年に最も警戒する相手としてフェルスタッペンの名を挙げたと伝えた。アントネッリはメキシコGPで残り4戦を残して初タイトルを決め、20歳68日で史上最年少王者となり、今季9勝を挙げている。一方フェルスタッペンは直近5戦で3勝し、ランキング2位で111点差まで迫った。アントネッリはマクラーレンとフェラーリも加わる接戦になると見ており、メルセデス育成のデビッドソンも来季はフェルスタッペンが王者になると予想した。",
+   "orig": "Max Verstappen resurgence puts Mercedes on high alert for F1 2027",
+   "url": "https://www.planetf1.com/news/max-verstappen-named-mercedes-biggest-2027-threat",
+   "published": "2026-11-14T06:02:00+00:00"
+  },
+  {
+   "id": "en-planetf1-massa-ferrari-rules-hamilton-leclerc",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "マッサ「フェラーリの様子はおかしい」　ハミルトンとルクレールに明確なルールを求める",
+   "summary": "PlanetF1は、元フェラーリのマッサ氏がポッドキャストで、チームにドライバー同士の戦い方の明確な規則が欠けていると語ったと伝えた。メキシコGP1周目の接触後のハミルトンとルクレールの確執を受けた発言で、同氏は今季の状況は適切でなく、関係改善も必要だと述べた。自身の在籍時はカバーしつつ自由に戦えたが、ベルギーGP後に第1ドライバー重視へ変わったと振り返った。元担当エンジニアのスメドレー氏も、攻めてよい場所を事前に決めていたと同調した。",
+   "orig": "‘Something not right’ at Ferrari in telling Felipe Massa verdict",
+   "url": "https://www.planetf1.com/news/felipe-massa-ferrari-not-right",
+   "published": "2026-11-14T03:00:00+00:00"
+  },
   {
    "id": "ja-f1are-slow-corner-ranking",
    "kind": "fan",
@@ -210,6 +290,23 @@
    "published": "2026-11-13T19:05:00+00:00"
   },
   {
+   "id": "nl-racingnews365-tsunoda-onzeker-redbull",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "tsolov-reserve-2027",
+   "title": "ツォロフの昇格で角田裕毅の行き場は？　レッドブルでの役割は「ほぼ終わり」とRacingNews365",
+   "summary": "RacingNews365は、レーシングブルズがローソンとリンドブラッドの継続を、レッドブルがツォロフを両チームのリザーブに起用すると発表したことを受け、角田裕毅の将来を論じた。角田は2025年末にハジャーへシートを譲り、今季はリザーブとしてローソンの代役も務めた。記事はレッドブルでの角田の役割は「ほぼ終わった」とみて、残る選択肢はテストとシミュレーター業務のみだが、本人の関心は低いだろうと指摘する。角田はすでに他の道を探すと話しており、インディカーは現実的な候補とされるものの、F1の席探しは難しいという。",
+   "orig": "Tsunoda in onzekerheid na toekomstnieuws Red Bull",
+   "url": "https://racingnews365.nl/tsunoda-in-onzekerheid-na-toekomstnieuws-red-bull",
+   "published": "2026-11-13T19:30:00+01:00"
+  },
+  {
    "id": "nl-f1maximaal-piastri-zwakke-punt",
    "kind": "news",
    "lang": "nl",
@@ -261,6 +358,23 @@
    "orig": "Schock für Konkurrenz! Mercedes soll ohne Update 20 PS gefunden haben",
    "url": "https://f1-insider.com/formel-1-mercedes-motor-ohne-update-20-ps-83950/",
    "published": "2026-11-13T15:20:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-antonelli-senna-lotus-98t",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "カルチャー",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-senna-lotus",
+   "title": "アントネッリにセナのF1マシンを　ブルーノ・セナ氏が「乗せたい」",
+   "summary": "Motorsport-Totalは、ブルーノ・セナ氏がポッドキャストで、王者アントネッリにアイルトン・セナの車を運転させたいと語ったと伝えた。アントネッリは最近ブラジルのセナ家の敷地を訪れ、1986年のロータス98Tに座ると降りたがらなかったという。ロータスやマクラーレンが動けば実現できるとし、父親が心配したマニュアル変速機も「できる」と答えたとされる。セナ氏が設計したカートコースでは泥や石の多い路面でも同じラインを守り、速さと安定感に感心したと語った。",
+   "orig": "Fährt Kimi Antonelli bald ein Formel-1-Auto von Ayrton Senna?",
+   "url": "https://www.motorsport-total.com/formel-1/news/faehrt-kimi-antonelli-bald-ein-formel-1-auto-von-ayrton-senna-26111309",
+   "published": "2026-11-13T15:00:00+01:00"
   },
   {
    "id": "en-planetf1-hamilton-ferrari-second-place-focus",
@@ -1520,126 +1634,6 @@
    "orig": "Zwölftes Team in der Formel 1? Neue Hersteller klopfen an",
    "url": "https://f1-insider.com/formel-1-zwoelftes-team-neue-hersteller-83913/",
    "published": "2026-11-11T10:25:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-wet-f1-2026-how-dangerous",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
-   "circuit": "interlagos",
-   "topic": "sainz-pirelli-wet-tyres",
-   "title": "雨のサンパウロで見えた2026年型の弱点　ピレリの雨用タイヤは来季どう変わるか",
-   "summary": "開幕前から2026年型は雨で扱いにくいと懸念されていたが、記事は実際はもう少し複雑だったと分析する。予選Q1は豪雨で80分間の赤旗中断となり、ラッセルはあの条件の決勝は大事故の危険が高かったと語った。ピレリのフルウェットは作動温度域が狭く路面が乾くと過熱し、インターミディエイトは硬くて温まりにくいとされ、アルボンは決勝中ずっと手応えがなかったと話す。ピレリは2027年へ、インターは早く温まるように、エクストリームは耐久性を高める方針だ。ただ一度のインテルラゴスだけでは他サーキットに当てはめにくく、ローソンはラスベガスの雨を懸念した。",
-   "orig": "Nach Regen-Chaos in Brasilien: Wie gefährlich ist die Formel 1 von 2026 wirklich?",
-   "url": "https://www.motorsport-total.com/formel-1/news/nach-regen-chaos-in-brasilien-wie-gefaehrlich-ist-die-formel-1-von-2026-wirklich-26111103",
-   "published": "2026-11-11T09:50:00+01:00"
-  },
-  {
-   "id": "en-planetf1-bottas-herta-super-licence",
-   "kind": "rumor",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "うわさ",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-bottas-herta",
-   "title": "ハータがスーパーライセンス獲得　キャデラックのボッタスの座を巡るうわさ",
-   "summary": "コルトン・ハータがサンパウロGPのFP1走行で必要な40点に届き、スーパーライセンスを得たとPlanetF1が伝えた。キャデラックは義務の4回を上回る6回のFP1にハータを起用した。ハータはF2で19位にとどまるため、F1側の走行でなければ得られない点数だった。これを受けボッタスの来季の座にハータが就くとのうわさが出ており、ボッタスは「通常なら何も変わらないはずだが、将来のことは分からない」と語った。キャデラックはペレスの長期契約を発表したが、ボッタスには触れていない。",
-   "orig": "'Don't know' – Valtteri Bottas responds to Colton Herta's Super Licence points",
-   "url": "https://www.planetf1.com/news/valtteri-bottas-cadillac-future-colton-herta-super-licence",
-   "published": "2026-11-11T08:43:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-bearman-haas-pitstops",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "haas"
-   ],
-   "topic": "haas-bearman-pitstops",
-   "title": "ベアマン、ハースのピット作業に不満「7位を譲っている」　サンパウロ17位",
-   "orig": "Haas verschenkt wichtige WM-Punkte: Bearman rechnet mit seinem Team ab",
-   "summary": "ハースのベアマンは予選8位から決勝17位に終わり、無得点でサンパウロGPを終えた。1回目のピットは周囲より約15秒長くかかり、本人は「20秒のピットストップだった」と振り返っている。コマツ代表は、1周目の3コーナーでベアマンがスライドしてアロンソに接触し、後部のクラッシュ構造が壊れてジャッキを正しくかけられなかったと説明した。このピットではアンセーフリリースで5秒加算も受けた。コンストラクターズでハースは7位だが、8位アウディとは3点差しかない。",
-   "url": "https://www.motorsport-total.com/formel-1/news/haas-verschenkt-wichtige-wm-punkte-bearman-rechnet-mit-seinem-team-ab-26111102",
-   "published": "2026-11-11T08:50:00+01:00"
-  },
-  {
-   "id": "pt-grandepremio-camara-hirakawa-vs-bearman",
-   "kind": "news",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "Grande Prêmio",
-   "cat": "分析",
-   "teams": [
-    "haas"
-   ],
-   "topic": "haas-ocon-camara-brazil",
-   "title": "カマラとヒラカワ、ベアマンとの差は　ハースの新人2人をラップ比較",
-   "summary": "グランデ・プレミオは、ハースの新人ヒラカワ（メキシコ）とカマラ（サンパウロ）をチームメートのベアマンと比べたラップタイム分析を掲載した。メキシコでは有効37周の平均でベアマンが1.220秒速く、ヒラカワが上回ったのは5周だけだった。サンパウロのスリック走行40周ではベアマンが平均0.518秒速く、カマラが上回ったのは比較できた39周のうち15周だった。レース条件が違うため結論は出せず、カマラがヒラカワより速いとも言えないと記事は結んでいる。",
-   "orig": "Câmara superou Hirakawa? O que os tempos ao lado de Bearman revelam",
-   "url": "https://grandepremio.com/br/f1/camara-ou-hirakawa-o-que-ritmo-de-cada-um-em-relacao-a-bearman-diz-sobre-duelo-na-haas/",
-   "published": "2026-11-11T04:00:00-03:00"
-  },
-  {
-   "id": "en-planetf1-newey-two-tier-f1",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ビジネス",
-   "teams": [
-    "astonmartin",
-    "williams",
-    "audi"
-   ],
-   "topic": "budget-cap-two-tier",
-   "title": "予算上限で「2層化」は進んだのか　ニューウェイ氏も議論に加わる",
-   "orig": "Adrian Newey weighs in on 'two-tier' F1 debate",
-   "summary": "ウィリアムズのボウルズ代表が提起した予算上限をめぐる議論に、アストンマーティンのニューウェイ代表も加わった。ボウルズ代表によると、過去15年で上位4チームが得点の83%を占め、上限導入後はその割合が導入前の70%台より高い。下位チームの表彰台も約10%から約5%に減ったとして、上限の公平性と格差縮小という目的は果たせていないと主張した。ニューウェイ代表は、風洞やダイノの使用時間を遅れたチームに多く与える仕組みの延長で、予算にも小さな上乗せを認める案を示した。アウディのマクニッシュ代表は、上限は持続可能性に重要でFIAを信頼すると述べた。",
-   "url": "https://www.planetf1.com/news/adrian-newey-two-tier-f1-debate",
-   "published": "2026-11-11T06:03:00+00:00"
-  },
-  {
-   "id": "en-therace-aduo-third-review-2027",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "teams": [
-    "mercedes",
-    "ferrari",
-    "audi",
-    "redbull"
-   ],
-   "topic": "aduo-engine-upgrades",
-   "title": "FIA、ADUO第3回評価の結果を通知　2027年に向け制度見直しも示唆",
-   "summary": "FIAはエンジン開発の追加枠「ADUO」の第3回評価（第12〜18戦）を終え、結果を各メーカーに伝えた。順位に変動はなく、レッドブルだけが引き続きエンジン改良の追加枠を得られない。メルセデスは差が2〜4％の区分で2026年と2027年に1回ずつ、アウディ、フェラーリ、ホンダは4％超の区分で2027年に各2回の追加を得る。FIAのトンバジス氏は結果に自信を示し、2027年の新燃料流量規定に合わせて測定方法などを見直す考えを明かした。アウディのビノット氏は、コンストラクターズ順位に基づく配分も提案している。",
-   "orig": "FIA makes latest ADUO ruling and hints at 2027 revamp",
-   "url": "https://www.the-race.com/formula-1/fia-makes-latest-aduo-ruling-and-hints-at-2027-revamp/",
-   "published": "2026-11-10T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-imola-stood-down-finale",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "カレンダー",
-   "topic": "f1-finale-middle-east",
-   "title": "F1、最終盤の代替開催地イモラを解除　カタールとアブダビで予定通り閉幕へ",
-   "summary": "F1は2026年シーズン終盤の代替開催地として確保していたイモラを正式に解除し、最終2戦はカタール（11月29日）とアブダビ（12月6日）で予定通り行うとした。中東での開催が難しくなった場合に備えた計画で、推定費用は1000万〜1500万ドル、F1側が負担する意向だった。決定は現地情勢に満足できたためと説明されたが、ドメニカリCEOは、脅威評価で不要なリスクがあれば素早く動くとしている。4月のバーレーンとサウジアラビアは安全上の懸念で中止され、バーレーンはマレーシアのセパンで9月に代替開催された。2027年3月のサウジ戦は、渡航勧告の影響で実施が難しいとの見方も示された。",
-   "orig": "Imola stood down - what it means for F1's 2026 and '27 calendars",
-   "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/",
-   "published": "2026-11-10T12:00:00+00:00"
   }
  ]
 }
