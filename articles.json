@@ -1,10 +1,6 @@
 {
- "updatedAt": "2026-11-14T06:40:00+09:00",
+ "updatedAt": "2026-11-14T12:30:00+09:00",
  "topics": {
-  "haas-ocon-camara-brazil": {
-   "title": "ハースがオコンを今季残り戦から外す　ブラジルGPはカマラがデビュー",
-   "summary": "ハースはメキシコGPの週末にチーム内の対立が伝えられたオコンを、今季のレースから外すと発表した。ブラジルGPではフェラーリ育成のカマラがベアマンと組んでF1デビューする。発端はFP2でのタイヤ選択をめぐる意見の相違と、その後の代表との口論とされるが、詳細は公式には確認されていない。カマラは来季からの起用が決まっており、昇格が前倒しになった。　オコンはSNSで感謝を表し、「このスポーツへの愛は変わらない」と投稿した。"
-  },
   "lawson-2027-seat": {
    "title": "ローソン、2027年もレーシングブルズ残留が決定　リンドブラッドと継続",
    "summary": "レーシングブルズは12日、2027年もローソンとリンドブラッドの体制を続けると発表した。ローソンは今季ランキング9位で、チームの選手権5位を支えている。レッドブル育成のツォロフ昇格の観測もあったが、サンパウロGPの7位などが評価されたと伝えられた。ペルメイン代表は両者の経験と意欲の組み合わせを称えた。"
@@ -21,17 +17,9 @@
    "title": "サンパウロGP後に相次ぐ加算ペナルティ　アントネッリとルクレール",
    "summary": "サンパウロGP後、FIAのスチュワードはアントネッリにピットでの危険な送り出しで、ルクレールにローソンとの接触で、それぞれ5秒のタイムペナルティを科した。アントネッリは5位のまま、ルクレールは7位から8位に下がりローソンが7位に上がった。メルセデスはピット作業をより安全にできたと認めている。　ドイツの専門サイトも、スチュワードがルクレールに接触の責任があると判断したと伝えた。"
   },
-  "brazil-mercedes-spins": {
-   "title": "メルセデス勢のスピン　アントネッリは優勝を逃したと怒り",
-   "summary": "サンパウロGPでメルセデスの2台がスリックへの交換後にスピンした。優勝へ向かっていたアントネッリはタイヤが大きく傷み、後部のグリップが急に抜けた原因はまだ分かっていない。チームはデータの分析を進めている。"
-  },
   "sainz-pirelli-wet-tyres": {
    "title": "2026年の雨用タイヤにドライバーの不満相次ぐ　サインツ「改善を」",
    "summary": "サンパウロGPのウェット路面で、サインツ、アルボン、ベアマン、フェルスタッペンらが2026年仕様のピレリ雨用タイヤを批判した。主な不満は温まるまでに時間がかかり、グリップと耐久性が足りない点。ノリスは適温に入れば問題ないとしつつ、寒いラスベガスでは違う可能性を認めた。"
-  },
-  "hamilton-brazil-race-call": {
-   "title": "ハミルトンの雨の終盤の判断を巡り議論　サンパウロGP",
-   "summary": "サンパウロGPで20番手から追い上げたハミルトンは、終盤に雨が戻った際の中間タイヤへの交換呼び戻しに従わず、1コーナーで制御を失った。ピットの判断と、ドライバーの感覚をどこまで信じるべきかを巡り、元ドライバーや解説者の間で意見が分かれている。"
   },
   "verstappen-ferrari-mercedes-talk": {
    "title": "フェルスタッペンの将来、解説者が語る「フェラーリなら」「メルセデスは難しい」",
@@ -60,9 +48,27 @@
   "tsolov-reserve-2027": {
    "title": "ツォロフ、2027年はレッドブル両チームの正式リザーブに",
    "summary": "レーシングブルズがローソンとリンドブラッドの2027年残留を決め、ニコラ・ツォロフは来季のシートを得られなかった。代わりにレッドブルとレーシングブルズ両チームの公式リザーブ兼育成ドライバーに就き、シミュレーター、金曜フリー走行、旧型車テスト、タイヤテストを担う。F2で6勝を挙げて2位につけ、2028年の昇格候補とされる。"
+  },
+  "aduo-engine-upgrades": {
+   "title": "ADUO第3回評価で序列変わらず　メルセデスの上積み報道も",
+   "summary": "FIAはエンジン開発の追加枠ADUOの第3回評価を終え、レッドブルだけが追加枠を得られない状況は変わらなかった。2027年に向けては測定方法の見直しも検討されている。一方、独メディアは伊サイトの情報として、メルセデスが枠を使わずに最大20馬力を上積みした可能性があると伝えたが、非公式で未確認の話だ。"
   }
  },
  "articles": [
+  {
+   "id": "ja-f1are-slow-corner-ranking",
+   "kind": "fan",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1のアレ",
+   "cat": "まとめ",
+   "topic": "slow-corner-ranking",
+   "title": "低速コーナーが速いドライバーのランキングが話題に　実感と合わないとの声も",
+   "summary": "F1のアレは、2026年シーズンの時速115km以下の低速コーナーで速いドライバーを並べたランキングが話題になっていると伝えた。元の図はXのTrackSimsF1が出したもので、サンプル不足のドライバーは除かれているという。コメントでは、アントネッリがラッセルより下、ノリスがピアストリより下という並びを興味深いとする声があった。一方で、最低速度だけを見ているのではないか、サーキットで順位は変わるので一つの表では決められないなど、結果に懐疑的な意見も出た。ラスベガスでのアントネッリとラッセルの争いを楽しみにする書き込みもあった。",
+   "orig": "2026F1シーズンにおける115km/h以下の低速コーナーが速いドライバーランキングが話題に",
+   "url": "https://f1are.com/blog-entry-4075.html",
+   "published": "2026-11-14T12:00:00+09:00"
+  },
   {
    "id": "ja-voice-ferrari-hamilton-priority-hill",
    "kind": "voice",
@@ -204,6 +210,23 @@
    "published": "2026-11-13T19:05:00+00:00"
   },
   {
+   "id": "nl-f1maximaal-piastri-zwakke-punt",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "ドライバー",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-mclaren-future",
+   "title": "ピアストリ、新世代マシンへの適応に苦戦を認める「昨年の強みが今年は弱点」",
+   "summary": "ピアストリはF1公式サイトで、2026年が思うようにいかないシーズンだと率直に語った。25歳の彼は今季ランク7位で表彰台は2回にとどまり、3勝のノリスとは94ポイント差がある。新世代のマシンでは運転スタイルを変える必要があり、昨年うまくいったことが今年はむしろ弱点になっていると明かした。マシンは扱いが難しいが、MCL40での快適さは少しずつ増しているという。2023年の不振から立ち直った実績を挙げ、チームは再び前進できると自信を見せた。",
+   "orig": "Piastri komt met opmerkelijke bekentenis na tegenvallend seizoen: 'Dat is mijn zwakke punt'",
+   "url": "https://www.f1maximaal.nl/formule-1/piastri-komt-met-opmerkelijke-bekentenis-na-tegenvallend-seizoen-dat-is-mijn-zwakke-punt",
+   "published": "2026-11-13T19:22:00+01:00"
+  },
+  {
    "id": "nl-f1maximaal-steiner-russell-piastri-2027",
    "kind": "news",
    "lang": "nl",
@@ -220,6 +243,24 @@
    "orig": "Steiner ziet toekomst Russell bij Mercedes in gevaar komen: \"Dan is het afgelopen\"",
    "url": "https://www.f1maximaal.nl/opinie/steiner-ziet-geen-reden-om-russell-te-sparen-als-het-niet-mogelijk-is-dan-is-het-niet-mogelijk",
    "published": "2026-11-13T17:47:00+01:00"
+  },
+  {
+   "id": "de-f1insider-mercedes-20ps-ohne-update",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "aduo-engine-upgrades",
+   "title": "メルセデス、アップデートなしで最大20馬力増の可能性　伊サイト報道",
+   "summary": "独F1-Insider.comは、イタリアのAutoRacer.itの報道として、メルセデスが今季、ADUOの枠を使わずにハイブリッドPUで10〜20馬力を上積みした可能性があると伝えた。数字は非公式で、メルセデスもFIAも認めていない。要因はエンジンの制御調整とバッテリーの変更とされ、バッテリーはシュピールベルクで信頼性向上の目的で承認されたものだという。比較として、フェラーリのモンツァ仕様の改良は約15馬力と推定されている。メルセデスには未使用の枠があり、ラスベガスで新ターボが登場する可能性があるとも報じられたが、確認はされていない。",
+   "orig": "Schock für Konkurrenz! Mercedes soll ohne Update 20 PS gefunden haben",
+   "url": "https://f1-insider.com/formel-1-mercedes-motor-ohne-update-20-ps-83950/",
+   "published": "2026-11-13T15:20:00+01:00"
   },
   {
    "id": "en-planetf1-hamilton-ferrari-second-place-focus",
@@ -1308,6 +1349,23 @@
    "published": "2026-11-11T12:34:30+00:00"
   },
   {
+   "id": "en-therace-hamilton-marketable-ranking",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "ビジネス",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "sportspro-marketable-2026",
+   "title": "ハミルトン、最も商品価値の高い選手の座を失う　SportsPro調査で22位に",
+   "summary": "SportsProとノーススターの2026年版「最もマーケタブルな選手」ランキングで、ハミルトンは昨年の首位から22位に後退した。スコアは96.03から66.63に下がり、ネイマールらと並んだ。フェラーリのチームメイトであるルクレールは25位から9位に上昇し、フェルスタッペンは48位、世界王者のアントネッリは126位だった。ブランド力はルクレールが上回る一方、勢いの項目ではハミルトンが勝っている。ノーススターのコリンズ社長は、ハミルトンが10位圏外に落ちたのはブランドではなく年齢などの時間の問題だと説明した。",
+   "orig": "Hamilton loses 'most marketable athlete' status in 2026",
+   "url": "https://www.the-race.com/extra/hamilton-loses-most-marketable-athlete-status-in-2026/",
+   "published": "2026-11-11T12:00:00+00:00"
+  },
+  {
    "id": "en-therace-wet-tyres-2027-what-needs-solving",
    "kind": "tech",
    "lang": "en",
@@ -1550,108 +1608,38 @@
    "published": "2026-11-11T06:03:00+00:00"
   },
   {
-   "id": "de-motorsporttotal-stroll-honda-battery",
+   "id": "en-therace-aduo-third-review-2027",
    "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
    "cat": "テクニカル",
-   "circuit": "interlagos",
    "teams": [
-    "astonmartin"
-   ],
-   "topic": "honda-stroll-battery-retirement",
-   "title": "ストロール今季13度目のリタイア　ホンダはバッテリー不調の原因を調査",
-   "orig": "Lance Stroll: Honda rätselt über 13. Ausfall der Saison",
-   "summary": "アストンマーティンのストロールはサンパウロGPで30周を走ったところで18位から止まり、本人はバッテリーの問題を理由に挙げた。今季13度目のリタイアで、ホンダ側の折原伸太郎氏は前日にも同じ車にバッテリーの不具合があったと明かしている。原因はまだ分かっておらず、データとバッテリーを調べて特定には数週間かかる見込みで、来季までに直さなければ再発すると話した。シーズン序盤の振動問題との関係は薄いとしつつ、走行距離か使い方かも判断できていない。雨でパワーユニットの弱点は隠れたが、ドライバビリティの改善は必要だという。",
-   "url": "https://www.motorsport-total.com/formel-1/news/lance-stroll-honda-raetselt-ueber-13-ausfall-der-saison-26111101",
-   "published": "2026-11-11T07:00:00+01:00"
-  },
-  {
-   "id": "ja-f1are-russell-pit-exit-spin",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1のアレ",
-   "cat": "まとめ",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "brazil-mercedes-spins",
-   "title": "【掲示板】ラッセルのピット出口スピン「ピットレーンでの事故にペナルティを」との声も",
-   "summary": "サンパウロGP決勝でピットアウト付近でスピンしたラッセルをめぐり、ピットレーンでのスピンやクラッシュにペナルティを課すべきだとの意見が取り上げられた。ラッセルはAUTOSPORTの取材で、勝ちに行ってリスクを取りすぎたと認め、結果を大きくは変えなかったとの見方を示したという。掲示板ではスピンを批判する声が目立つ一方、アントネッリもリヤを失ったことから車両側の問題を疑う意見もあった。ピット出口を塞いだ場合の扱いを議論する書き込みも見られる。",
-   "orig": "F1サンパウロGP決勝のラッセルについて「ピットレーンでのスピンやクラッシュはペナルティを課すべき」との意見",
-   "url": "https://f1are.com/blog-entry-4068.html",
-   "published": "2026-11-11T12:00:00+09:00"
-  },
-  {
-   "id": "en-planetf1-camara-vegas-discussions",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "teams": [
-    "haas"
-   ],
-   "topic": "haas-ocon-camara-brazil",
-   "title": "カマラ、ラスベガス出走は未定「話し合いがある」　F2王座との兼ね合いも",
-   "orig": "Rafael Camara reveals 'discussions' to see out F1 season with Haas",
-   "summary": "ハースで初参戦したラファエル・カマラが、残りのシーズンも走るかどうかについて「分からない。この週末のあと話すことがたくさんある」と語った。確定しているのはブラジルGPのみで、ラスベガスGPに出るかは未定だ。出走すればF2のタイトル争いを諦めることになり、同シリーズではレッドブル育成のツォルがすぐ後ろにいる。インテルラゴスでは予選Q1でスピンして壁に接触、決勝は優勝したノリスから2周遅れの最後尾完走だった。2027年のオコンの後任としてはすでに発表済みだ。",
-   "url": "https://www.planetf1.com/news/rafael-camara-reveals-discussions-to-see-out-f1-season-with-haas",
-   "published": "2026-11-11T01:05:00+00:00"
-  },
-  {
-   "id": "en-planetf1-steiner-lawson-leave-red-bull",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "teams": [
-    "racingbulls",
+    "mercedes",
+    "ferrari",
+    "audi",
     "redbull"
    ],
-   "topic": "lawson-2027-seat",
-   "title": "ローソンはレッドブル系を出るべき　シュタイナー氏「トップ4で王者になれる」",
-   "orig": "Liam Lawson told to leave Red Bull as Guenther Steiner backs world title potential",
-   "summary": "元ハース代表のシュタイナー氏がニュージーランドのラジオ局で、ローソンは適切なマシンならタイトルを狙える才能があると語った。ただレッドブルは本隊に戻さないため、レッドブル系を離れ、トップ4チームに移るべきだと主張している。同氏は来季もレーシングブルズが残留させるとみる。ローソンは残り3戦で89点、9位ガスリーの2倍以上で、5戦連続入賞中だ。ハジャーの2027年残留が確定し本隊昇格の道は閉ざされたが、チームはF2のツォルとの比較も続けている。",
-   "url": "https://www.planetf1.com/news/liam-lawson-red-bull-exit-guenther-steiner-world-champion",
-   "published": "2026-11-10T19:30:00+00:00"
+   "topic": "aduo-engine-upgrades",
+   "title": "FIA、ADUO第3回評価の結果を通知　2027年に向け制度見直しも示唆",
+   "summary": "FIAはエンジン開発の追加枠「ADUO」の第3回評価（第12〜18戦）を終え、結果を各メーカーに伝えた。順位に変動はなく、レッドブルだけが引き続きエンジン改良の追加枠を得られない。メルセデスは差が2〜4％の区分で2026年と2027年に1回ずつ、アウディ、フェラーリ、ホンダは4％超の区分で2027年に各2回の追加を得る。FIAのトンバジス氏は結果に自信を示し、2027年の新燃料流量規定に合わせて測定方法などを見直す考えを明かした。アウディのビノット氏は、コンストラクターズ順位に基づく配分も提案している。",
+   "orig": "FIA makes latest ADUO ruling and hints at 2027 revamp",
+   "url": "https://www.the-race.com/formula-1/fia-makes-latest-aduo-ruling-and-hints-at-2027-revamp/",
+   "published": "2026-11-10T12:00:00+00:00"
   },
   {
-   "id": "en-planetf1-mclaren-upgrades-flattered",
-   "kind": "tech",
+   "id": "en-therace-imola-stood-down-finale",
+   "kind": "news",
    "lang": "en",
    "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "テクニカル",
-   "circuit": "interlagos",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "mclaren-brazil-upgrades-flattered",
-   "title": "ブラジルの勝利はマクラーレンの改良を実力以上に見せたか　ステッラ代表が説明",
-   "orig": "Why Brazilian GP victory flattered McLaren upgrades",
-   "summary": "ノリスがポールからサンパウロGPを制し、マクラーレンは5戦続いた表彰台なしを脱して今季3勝目を挙げた。同チームはリビジョン版のフロントウイングなど新パーツを投入し、ステッラ代表は得られたラップタイムは想定どおりだったと述べた。ただ勝因は改良より「条件と車の相性」で、決勝は気温と路面温度が低くタイヤの過熱を抑えられたことが最大の理由だという。金曜は高温下のロングランでメルセデスに後れを取っており、その安定性は課題として残る。予選ではピアストリがQ2の赤旗とブレーキの異常で後輪をロックさせて苦戦した。",
-   "url": "https://www.planetf1.com/brazilian-grand-prix/mclaren-brazilian-gp-f1-upgrades",
-   "published": "2026-11-10T18:18:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-pirelli-wet-tyre-criticism",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "分析",
-   "circuit": "interlagos",
-   "topic": "sainz-pirelli-wet-tyres",
-   "title": "2026年のピレリ雨用タイヤに不満の声　「温まりにくく、冷えると石のよう」",
-   "orig": "Kritik an Pirelli-Regenreifen: 'Funktionieren nicht besonders gut'",
-   "summary": "サンパウロGPは今季初のウェット予選となり、ピレリは貴重なデータを得たが、ドライバーの多くは2026年仕様の雨用タイヤに不満を述べた。サインツは中間コンパウンドの後輪が非常に弱く、前輪は温まる前に摩耗すると指摘した。アルボンは前作より悪いと話し、フェルスタッペンは作動領域が狭く冷えると「石のように硬い」と評した。一方、優勝したノリスは「それほど悪くない」とし、適温に入れば機能すると述べつつ、寒いラスベガスで雨が降れば意見が変わるかもしれないと付け加えた。",
-   "url": "https://www.motorsport-total.com/formel-1/news/kritik-an-pirelli-regenreifen-funktionieren-nicht-besonders-gut-26111013",
-   "published": "2026-11-10T18:58:00+01:00"
+   "source": "The Race",
+   "cat": "カレンダー",
+   "topic": "f1-finale-middle-east",
+   "title": "F1、最終盤の代替開催地イモラを解除　カタールとアブダビで予定通り閉幕へ",
+   "summary": "F1は2026年シーズン終盤の代替開催地として確保していたイモラを正式に解除し、最終2戦はカタール（11月29日）とアブダビ（12月6日）で予定通り行うとした。中東での開催が難しくなった場合に備えた計画で、推定費用は1000万〜1500万ドル、F1側が負担する意向だった。決定は現地情勢に満足できたためと説明されたが、ドメニカリCEOは、脅威評価で不要なリスクがあれば素早く動くとしている。4月のバーレーンとサウジアラビアは安全上の懸念で中止され、バーレーンはマレーシアのセパンで9月に代替開催された。2027年3月のサウジ戦は、渡航勧告の影響で実施が難しいとの見方も示された。",
+   "orig": "Imola stood down - what it means for F1's 2026 and '27 calendars",
+   "url": "https://www.the-race.com/formula-1/f1-stands-imola-down-what-it-means-for-2026-and-27-calendars/",
+   "published": "2026-11-10T12:00:00+00:00"
   }
  ]
 }
