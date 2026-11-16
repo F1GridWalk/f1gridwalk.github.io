@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T12:30:00+09:00",
+ "updatedAt": "2026-11-16T18:30:00+09:00",
  "topics": {
   "lawson-2027-seat": {
    "title": "ローソン、2027年もレーシングブルズ残留が決定　リンドブラッドと継続",
@@ -32,9 +32,135 @@
   "audi-tsunoda-appeal": {
    "title": "アウディの角田裕毅ペナルティ控訴、11月25日にパリで審理",
    "summary": "アウディはイタリアGPで角田に追加フォーメーションラップの原因があったとして、ペナルティを求める控訴を申し立てた。FIA国際控訴裁判所は11月25日にパリで非公開で審理する。認められれば角田は10位から15位に下がり、ボルトレートが10位で1ポイントを得る。"
+  },
+  "mclaren-redbull-p3": {
+   "title": "マクラーレンとレッドブル、コンストラクターズ3位を17点差で争う",
+   "summary": "残り3戦でレッドブルが3位、マクラーレンが4位で17点差。マクラーレンはラスベガスに追加アップデートを持ち込み、来季マシンへの土台とも位置づける。賞金は順位ごとに約1000万ドル変わり、風洞時間にも差が出る。"
   }
  },
  "articles": [
+  {
+   "id": "en-planetf1-mclaren-vegas-upgrades-2027",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "テクニカル",
+   "circuit": "lasvegas",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "mclaren-redbull-p3",
+   "title": "マクラーレン、ラスベガスにも追加アップデート　「来季マシンの土台」と位置づけ",
+   "summary": "マクラーレンはラスベガスGPにMCL40の追加アップデートを持ち込み、コンストラクターズ3位の奪回を狙う。ブラジルGPでは唯一アップデートを投入したチームで、新リヤウイング、ディフューザー、フロア、フロントウイングを使い、フロントウイングのコンセプトは来季マシンの初期仕様に引き継ぐという。アンドレア・ステラ代表はハンガリーでの改良後に勝てる位置にいたと振り返った。チームは現在4位の398点で、3位レッドブルとは17点差だ。ラスベガスは過去3回で表彰台1回にとどまり、代表はコース特性が合わない理由をギア比にも求めている。",
+   "orig": "McLaren Las Vegas upgrades lay foundations for F1 2027",
+   "url": "https://www.planetf1.com/news/mclaren-las-vegas-upgrades-foundations-2027-f1-car",
+   "published": "2026-11-16T08:00:00+00:00"
+  },
+  {
+   "id": "en-planetf1-antonelli-mercedes-salary",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-salary",
+   "title": "アントネッリのメルセデス年俸に注目　フォーブスは約500万ドルと推計",
+   "summary": "PlanetF1は米フォーブスの推計などをもとに、キミ・アントネッリのメルセデスでの収入を伝えた。2025年のデビュー時は約200万ドルとされ、2026年は約500万ドルと、およそ3倍に増えたという。ボーナスは報道により1000万〜1200万ユーロ（1100万〜1300万ドル）とされる。一方、ジョージ・ラッセルの収入は2600万ドルと伝えられ、差はなお大きい。記事は、ブラジルでの雨と乾きが交じるレースでフラットスポットを抱えながらもアントネッリはノリスと同等、ラッセルには及ばないペースだったとするジェームズ・アリソンの見方も紹介している。",
+   "orig": "Kimi Antonelli Mercedes salary in spotlight after Russell defeated – report",
+   "url": "https://www.planetf1.com/news/kimi-antonelli-mercedes-salary-george-russell",
+   "published": "2026-11-16T07:30:00+00:00"
+  },
+  {
+   "id": "de-f1insider-ferrari-nummer-eins",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-hamilton-leclerc-rift",
+   "title": "フェラーリ、来季は序盤戦後に「ナンバー1」を決めるのか　伊紙の報道",
+   "summary": "F1-Insiderは、イタリアのコリエレ・デロ・スポルト紙の記者の報道として、フェラーリが来季の数戦後にエース格のドライバーを決める可能性があると伝えた。何戦待つのか、どんな基準で選ぶのかは分かっていないという。フレデリック・バスール代表は「方針は変わらない」と述べ、両者が互いを尊重しチームの利益を優先すると見ている。ハミルトンは予選後にルクレールと話し合い、互いに要求はしていないと語った。メキシコGPでは両者がターン4でコースオフし、ルクレールが5秒ペナルティを受けた経緯がある。",
+   "orig": "Setzt Ferrari jetzt auf eine Nummer 1? Insider lässt aufhorchen",
+   "url": "https://f1-insider.com/formel-1-ferrari-nummer-1-insider-aufhorchen-83968/",
+   "published": "2026-11-16T09:32:00+01:00"
+  },
+  {
+   "id": "de-f1insider-mercedes-20ps",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "mercedes-pu-20hp",
+   "title": "メルセデスPU、アップデートなしで最大20馬力向上か　伊メディア報道",
+   "summary": "F1-Insiderは、イタリアのAutoRacer.itの報道として、メルセデスがシーズン中にエンジン制御の改善とバッテリー変更で10〜20馬力ほど出力を上げた可能性があると伝えた。公式には確認されていない数字だ。バッテリー変更はFIAの承認を得て信頼性向上を狙ったもので、シュピールベルグで導入されたという。メルセデスはPU開発の追加枠ADUOを使っておらず、フェラーリはオーストリアとモンツァで2回使った。AutoRacerは新ターボのデビュー戦としてラスベガスを挙げたが、これも未確認だ。",
+   "orig": "Schock für Konkurrenz! Mercedes soll ohne Update 20 PS gefunden haben",
+   "url": "https://f1-insider.com/formel-1-mercedes-motor-ohne-update-20-ps-83950/",
+   "published": "2026-11-13T15:20:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-williams-aduo-teams",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "ビジネス",
+   "teams": [
+    "williams"
+   ],
+   "topic": "williams-aduo-teams",
+   "title": "ウィリアムズ、予算上限の「チーム版ADUO」を提案　F1委員会で協議",
+   "summary": "RacingNews365によると、F1委員会は16日、ウィリアムズが提案したチーム向けの「ADUO」について協議する。エンジンメーカーが遅れに応じて開発枠を得る仕組みを、予算上限にも当てはめる案だ。上位4チーム以外はより多く使え、差が大きいほど余地が広がるという。ジェームズ・ボウルズ代表は、上位4チームが得点の大半を占めて状況が悪化したと述べ、上限の撤廃が狙いではないと説明する。上位4チームは反対、アルピーヌ、アストンマーティン、アウディ、キャデラックは支持と報じられている。",
+   "orig": "F1 Commission buigt zich over opmerkelijk voorstel Williams",
+   "url": "https://racingnews365.nl/f1-commission-buigt-zich-over-opmerkelijk-voorstel-williams",
+   "published": "2026-11-16T09:30:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-wolff-horner-bericht",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "チーム",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "wolff-horner-message",
+   "title": "ウォルフ、二冠後にホーナーから届いた祝福を明かす　「驚かなかった」",
+   "summary": "トト・ウォルフはBild紙のインタビューで、ドライバーズとコンストラクターズの二冠後にクリスチャン・ホーナーから個人的な祝福が届いたと明かした。ホーナーは2025年夏にレッドブルを離れたが、「キミは今年、信じられないほどだった」と称えたという。ウォルフは両者に「敬意のある絆」があるため驚かなかったと語る。祝福のメッセージは計577通にのぼり、メルセデスのレースチームは1500人超の規模だ。CEOとして派手に祝う余裕はなく、一晩でも羽目を外せないとも述べている。",
+   "orig": "Wolff onthult bericht Horner na dubbele titel Mercedes: \"Dat verraste me niet\"",
+   "url": "https://racingnews365.nl/wolff-onthult-bericht-horner-na-dubbele-titel-mercedes-dat-verraste-me-niet",
+   "published": "2026-11-16T08:50:00+01:00"
+  },
+  {
+   "id": "nl-racingnews365-redbull-mclaren-p3",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "分析",
+   "teams": [
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "mclaren-redbull-p3",
+   "title": "コンストラクターズ3位争いはレッドブルが17点リード　残り3戦で賞金も変動",
+   "summary": "ラスベガス、カタール、アブダビの残り3戦を前に、コンストラクターズ3位はレッドブルが17点リードしている。フェルスタッペンの3勝がマクラーレン逆転を後押しした。賞金は順位が1つ下がるごとに約1000万ドル減り、4位は2027年前半の風洞使用時間が3位より5%多い。7位争いではハースが31点、アウディが28点で、直近4戦ではアウディが11点、ハースが4点だった。ドライバーズ2位はフェルスタッペン279点、ラッセル262点、ハミルトン261点と続く。",
+   "orig": "Red Bull verwikkeld in cruciale miljoenenstrijd",
+   "url": "https://racingnews365.nl/red-bull-verwikkeld-in-cruciale-miljoenenstrijd",
+   "published": "2026-11-15T08:00:00+01:00"
+  },
   {
    "id": "en-therace-honda-reliability-orihara",
    "kind": "tech",
@@ -1528,129 +1654,6 @@
    "orig": "Uitslag Grand Prix van Italië is nog altijd niet definitief",
    "url": "https://www.f1maximaal.nl/formule-1/uitslag-grand-prix-van-italie-is-nog-altijd-niet-definitief",
    "published": "2026-11-12T20:12:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-hill-ferrari-all-in-hamilton",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "ヒル「フェラーリはハミルトンに賭けるべき」　二人の確執を「政治的問題」と指摘",
-   "summary": "1996年王者のダモン・ヒルがスカイに対し、フェラーリは明確な第1ドライバーを置き、ハミルトンに全てを賭けるべきだと語った。来季マシンが競争力を持てば両タイトルを狙えるが、今の二人の振る舞いでは難しく、陣営が分かれる「政治的問題」があるとの見立てだ。ヒルはハミルトン獲得に巨額の投資をした点を挙げ、8度目の王座ならシューマッハーの7回を超える意義も指摘した。ルクレールの経験は認めつつ結果が重要とし、現在ルクレールは選手権5位で、1つ上の4位にハミルトンがいる。",
-   "orig": "Formel-1-Weltmeister erklärt: Darum muss Ferrari alles auf Hamilton setzen",
-   "url": "https://www.motorsport-total.com/formel-1/news/formel-1-weltmeister-erklaert-darum-muss-ferrari-alles-auf-hamilton-setzen-26111210",
-   "published": "2026-11-12T19:00:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-hamilton-santi-brazil-radio",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "分析",
-   "circuit": "interlagos",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "hamilton-santi-brazil-radio",
-   "title": "ハミルトンとエンジニアの噛み合わぬ無線　ブラジルGPを蘭メディアが検証",
-   "summary": "オランダのF1Maximaalは、ブラジルGPでのハミルトンとエンジニアのサンティの無線のやりとりを検証した。ハミルトンはスリックへの交換を最初に求めたが、サンティは「まだ転換点ではない」と繰り返した。2回目のピットでは「ノリスと戦っている」と指示があり、9位から14位に落ちて、ハミルトンが居場所を尋ねてもサンティは分からないと答えた。雨の中でピット入口を通過した場面を筆者は意図的と見るが、これは筆者の見方だ。結局ハミルトンは9位、ルクレールは8位で、両者への評価は厳しい。",
-   "orig": "Hamilton liegt tegen Ferrari, onkunde van twee kanten: \"Waar ben ik?\"",
-   "url": "https://www.f1maximaal.nl/analyse/bizarre-situatie-voor-hamilton-bij-ferrari-waar-ben-ik",
-   "published": "2026-11-12T18:30:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-antonelli-dyed-hair-promise",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "カルチャー",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-hair-title-party",
-   "title": "アントネッリ、約束通り髪を染めて王座祝賀会に　イタリア国旗の3色",
-   "summary": "メルセデスの新王者アントネッリが、ブラックリーの工場で行われた祝賀会に、イタリア国旗の緑・白・赤に染めた髪で現れた。シーズン中に染めると約束しており、サンパウロGP前にガゼッタ・デロ・スポルトへ時期は未定だが実行すると語っていた。チームは「キミはやった。本当にやった」と投稿し、本人は「缶は持ってる」と冗談を言った。20歳で史上最年少王者となり、イタリア人では1953年のアスカリ以来、今季は9勝を挙げ、メルセデスはブラジルで2021年以来のコンストラクターズ王座も決めた。",
-   "orig": "Kimi Antonelli löst Versprechen ein: Mit gefärbten Haaren bei WM-Feier",
-   "url": "https://www.motorsport-total.com/formel-1/news/kimi-antonelli-loest-versprechen-ein-mit-gefaerbten-haaren-bei-wm-feier-26111211",
-   "published": "2026-11-12T18:22:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-rain-masters-data",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "分析",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "rain-drivers-data-ranking",
-   "title": "雨の名手はやはりフェルスタッペン　過去8年のデータで蘭メディアが比較",
-   "summary": "F1Maximaalは過去8シーズンの雨絡みの決勝19戦で、各ドライバーの成績を乾いた路面のレースと比べた。フェルスタッペンは雨のポイント363.5で首位となり、ハミルトンの合計のほぼ2倍、ノリスより約30点多い。優勝は19戦中10勝で、ノリス4勝、ハミルトン3勝が続く。フェルスタッペンは1戦平均20点近くで、表彰台は15回だった。ハミルトンは全体の平均13.2点に対し雨では10.0点にとどまり、最も弱いのはボッタスで、スペシャリストにはベッテルやヒュルケンベルグも挙がる。",
-   "orig": "Data wijzen beste regenrijders aan: Verstappen met krankzinnige cijfers",
-   "url": "https://www.f1maximaal.nl/analyse/verstappen-versus-hamilton-versus-norris-wie-zijn-de-beste-regenrijders",
-   "published": "2026-11-12T17:30:00+01:00"
-  },
-  {
-   "id": "en-planetf1-mercedes-russell-team-orders-stance",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "mercedes-russell-team-orders",
-   "title": "メルセデス、ラッセル支援のチームオーダーを否定せず　ウォルフ「可能性はある」",
-   "summary": "メルセデスのウォルフ代表は、残り3戦でラッセルを助けるチームオーダーの可能性について「全力を注ぐ可能性はある」と述べた。アントネッリはメキシコで個人タイトルを決め、チームはブラジルで2021年以来のコンストラクターズ王座を取り戻している。一方のラッセルは5戦連続で表彰台を逃し、ランキング3位でフェルスタッペンの後ろに下がり、6位ノリスとの差は16点だ。代表は個人タイトルについては「まだ考えていない」とし、ラッセルが来季も「間違いなく」準備万端で戻ると語った。",
-   "orig": "Mercedes reveals stance on potential team orders to aid George Russell",
-   "url": "https://www.planetf1.com/news/mercedes-reveals-george-russell-team-orders-stance",
-   "published": "2026-11-12T16:28:00+00:00"
-  },
-  {
-   "id": "en-planetf1-tsolov-red-bull-reserve-2027",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "teams": [
-    "redbull",
-    "racingbulls"
-   ],
-   "topic": "tsolov-reserve-2027",
-   "title": "レッドブル、ツォロフを2027年の控えドライバーに起用",
-   "summary": "レッドブルは、19歳のブルガリア人ニコラ・ツォロフを2027年のレッドブルとレーシングブルズ両チームの控えドライバーに指名した。レーシングブルズがローソンとリンドブラッドの残留を発表した直後の発表だ。ツォロフは2025年F3で2位、今季F2は残り2戦でランキング2位につけている。メキシコGPのFP1で走り、12位でリンドブラッドより0.1秒遅かった。来季はFP1走行、タイヤテスト、シミュレーターなどを担う予定で、今季控えだった角田裕毅への影響は不明とされる。",
-   "orig": "Red Bull signs new reserve driver for F1 2027 season",
-   "url": "https://www.planetf1.com/news/red-bull-nikola-tsolov-f1-2027-reserve-driver",
-   "published": "2026-11-12T15:29:00+00:00"
-  },
-  {
-   "id": "de-f1insider-elkann-vasseur-hamilton-leclerc",
-   "kind": "rumor",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "フェラーリのエルカン会長がハミルトンとルクレールの確執に介入か　独サイトが伊メディアを引用",
-   "summary": "F1-Insider.comは、伊AutoRacer.itの報道として、フェラーリのエルカン会長がハミルトンとルクレールの内紛に自ら関与したと伝えた。ブラジルでの2人との話し合いの前に、ヴァスール代表が経営トップから具体的な指示を受け、その一部はエルカン会長本人からだったという。上層部が問題視したのは主にチームのイメージへの影響とされる。確執はメキシコGP1周目の接触が発端で、ヴァスール代表は話し合いを「良好」と認め、2人の序列は変わらず、ナンバー1も決めていないと述べた。以上は伊メディアの報道で、フェラーリは詳細を公式に認めていない。",
-   "orig": "Ferrari-Oberboss schreitet offenbar im Fahrerstreit ein",
-   "url": "https://f1-insider.com/formel-1-ferrari-oberboss-fahrerstreit-83939/",
-   "published": "2026-11-12T15:26:00+01:00"
   }
  ]
 }
