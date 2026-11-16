@@ -1,6 +1,23 @@
 {
- "updatedAt": "2026-11-16T12:30:00+09:00",
+ "updatedAt": "2026-11-17T00:40:00+09:00",
  "notes": [
+  {
+   "id": "note-formula1report-haas-vegas-lineup",
+   "platform": "note",
+   "site": "Formula1 Report",
+   "lang": "ja",
+   "paid": false,
+   "cat": "チーム",
+   "author": "Formula1 Report",
+   "title": "ハース、ラスベガスGPにはラファエル・カマラが2戦連続で出走へ。平川亮はFP1に参加、残り2戦のラインアップは未定",
+   "summary": "ハースのラスベガスGPの布陣を整理した記事。カマラとベアマンで臨み、平川亮はFP1でベアマンの車に乗る。コマツ代表のコメントやコースの特徴にも触れ、カタールとアブダビの顔ぶれは未定で、平川やドゥーハンの起用もあり得るという見立て。",
+   "url": "https://note.com/formula1report/n/nd1c3fae4d956",
+   "published": "2026-11-16T19:19:16+09:00",
+   "teams": [
+    "haas"
+   ],
+   "circuit": "lasvegas"
+  },
   {
    "id": "substack-f1guydan-lasvegas-statpack",
    "platform": "substack",
@@ -29,20 +46,6 @@
    "url": "https://note.com/formula1report/n/ne52ae6427098",
    "published": "2026-11-14T02:50:00+09:00",
    "circuit": "lasvegas"
-  },
-  {
-   "id": "blog-f1laptime-brazil-race-pace",
-   "platform": "blog",
-   "site": "F1ラップタイム研究室",
-   "lang": "ja",
-   "paid": false,
-   "cat": "分析",
-   "author": "Takumi",
-   "title": "2026年ブラジルGP レースペース分析",
-   "summary": "ドライのソフトで走った約32周のスティントから、各ドライバーの持続的なレースペースをラッセル基準で推定している。ラッセルとノリスがほぼ同等で、表彰台のレッドブル勢はマクラーレンに純粋なドライペースで及ばなかったという見立て。フェラーリは路面やタイヤ温度の条件に左右されやすいと分析している。",
-   "url": "https://f1-lap-time.com/?page_id=17765",
-   "published": "2026-11-09T12:00:00+09:00",
-   "circuit": "interlagos"
   },
   {
    "id": "note-formula1report-audi-tsunoda-appeal",
@@ -192,6 +195,20 @@
    "summary": "雨と低い路温で路面が刻々と変わり、タイヤの作動領域とマシンバランスへの対応が明暗を分けたとする分析。ノリスはソフト投入後に首位へ立ち、メルセデスはリアの不安定さ、フェラーリは低温への適応に苦しんだという見立て。中団ではローソンやヒュルケンベルグが雨の変化を生かしたとも指摘している。",
    "url": "https://note.com/formula1report/n/n3aaa96ebbd7e",
    "published": "2026-11-09T13:31:00+09:00",
+   "circuit": "interlagos"
+  },
+  {
+   "id": "blog-f1laptime-brazil-race-pace",
+   "platform": "blog",
+   "site": "F1ラップタイム研究室",
+   "lang": "ja",
+   "paid": false,
+   "cat": "分析",
+   "author": "Takumi",
+   "title": "2026年ブラジルGP レースペース分析",
+   "summary": "ドライのソフトで走った約32周のスティントから、各ドライバーの持続的なレースペースをラッセル基準で推定している。ラッセルとノリスがほぼ同等で、表彰台のレッドブル勢はマクラーレンに純粋なドライペースで及ばなかったという見立て。フェラーリは路面やタイヤ温度の条件に左右されやすいと分析している。",
+   "url": "https://f1-lap-time.com/?page_id=17765",
+   "published": "2026-11-09T12:00:00+09:00",
    "circuit": "interlagos"
   },
   {
@@ -766,20 +783,6 @@
    "summary": "FP3と予選を振り返り、アップデートしたサイドポッドで好調だったフェラーリがQ3で伸びず、ルクレール4番手、ハミルトン5番手に終わったと評価。アントネッリがセクター3で大きくタイムを伸ばしてポールを獲得し、ノリスはトラックリミット違反でタイムを抹消されたとまとめている。",
    "url": "https://albonnote.com/f1-2026%e5%b9%b4%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e7%ac%ac19%e6%88%a6%e3%82%a2%e3%83%a1%e3%83%aa%e3%82%abgp-fp3%e3%83%bb%e4%ba%88%e9%81%b8/",
    "published": "2026-10-25T09:00:00+09:00",
-   "circuit": "austin"
-  },
-  {
-   "id": "note-formula1report-cota-quali",
-   "platform": "note",
-   "site": "F1レポート",
-   "lang": "ja",
-   "paid": false,
-   "cat": "予選",
-   "author": "Yoshito",
-   "title": "【予選】アントネッリ、8戦ぶりのポールポジション獲得。変化したコンディション、タイヤマネジメントが明暗を分ける【アメリカGP】",
-   "summary": "アメリカGP予選を振り返り、アントネッリのポールとQ1〜Q3の流れを整理。曇りや路面温度の低下といったコンディション変化とタイヤの準備への対応が明暗を分けたと総括し、フェラーリのQ3での伸び悩みやフェルスタッペンのQ3での性能低下、ノリスのトラックリミット違反にも触れている。",
-   "url": "https://note.com/formula1report/n/n1f43e5f01c1d",
-   "published": "2026-10-25T07:24:08+09:00",
    "circuit": "austin"
   }
  ]

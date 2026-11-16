@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T18:30:00+09:00",
+ "updatedAt": "2026-11-17T00:40:00+09:00",
  "topics": {
   "lawson-2027-seat": {
    "title": "ローソン、2027年もレーシングブルズ残留が決定　リンドブラッドと継続",
@@ -40,39 +40,174 @@
  },
  "articles": [
   {
-   "id": "en-planetf1-mclaren-vegas-upgrades-2027",
-   "kind": "tech",
+   "id": "ja-voice-bearman-ferrari-guarantee",
+   "kind": "voice",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1 Grid Walk",
+   "cat": "ファンの声",
+   "teams": [
+    "haas",
+    "ferrari"
+   ],
+   "topic": "haas-bearman-guarantee",
+   "title": "ベアマンのフェラーリ昇格保証要求に冷ややかな声　ハースの顔ぶれにも注目",
+   "summary": "Yahoo!ニュースのコメント欄では、ベアマンが2028年のフェラーリ昇格の保証を求めていると報じられたことに、無理筋だとする冷ややかな声が目立った。ラスベガスで平川亮がFP1を走ることにも意見が出ている。",
+   "url": "https://news.yahoo.co.jp/articles/992f89a9211c06b9544a2606f304c5adc157cae9/comments",
+   "published": "2026-11-17T00:30:00+09:00",
+   "note": "フェラーリの席はハミルトンとルクレールが先という現実を指摘する声が多く、保証の要求そのものを疑問視する空気が強い。カマラや平川の起用をめぐる関心の高さも見えた。読めたコメントは日本語のみで、海外の反応は確認できていない。",
+   "voices": [
+    {
+     "side": "日本",
+     "text": "フェラーリとしては、保証って言われても、そこはルイスに訊いてくれって感じか。",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/992f89a9211c06b9544a2606f304c5adc157cae9/comments",
+     "mood": "驚",
+     "quote": true,
+     "comment": "報道は、ベアマンが2028年のフェラーリ昇格で最有力候補となる保証を求めていると伝える。ハースとの契約発表は遅れている。",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "ベアマンの立場は理解できるがこの保証を求める契約は無理筋だと思う。",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/992f89a9211c06b9544a2606f304c5adc157cae9/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "ハースは来季のドライバーとして、現時点でカマラだけを確定している。ベアマンとの契約発表は遅れたままだ。",
+     "big": true
+    },
+    {
+     "side": "日本",
+     "text": "フェラーリは経験を積んだドライバーが、どちらかといえばキャリアの最後に乗るシート",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/992f89a9211c06b9544a2606f304c5adc157cae9/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "フェラーリの現ドライバーはハミルトンとルクレールで、ハミルトンは今季ここまでドライバーズ4位の261点だ。"
+    },
+    {
+     "side": "日本",
+     "text": "カマラは若いから乗れば乗るほど速くなるだろうしそりゃそうよね",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/09d134fac3772d1960adf68391be0e85ca5f1e97/comments",
+     "mood": "賛",
+     "quote": true,
+     "comment": "カマラはブラジルで予選にクラッシュし、決勝は最下位だったが、ハースはラスベガスでも起用を続ける。"
+    },
+    {
+     "side": "日本",
+     "text": "トヨタが平川乗せる金出してくれるので、歓迎でしょうねぇ。",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/09d134fac3772d1960adf68391be0e85ca5f1e97/comments",
+     "mood": "笑",
+     "quote": true,
+     "comment": "平川はベアマンの車でFP1に出る。今季4度目のFP1走行だ。"
+    },
+    {
+     "side": "日本",
+     "text": "本当に早ければカマラじゃなく、ずっと平川でしょうに",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/09d134fac3772d1960adf68391be0e85ca5f1e97/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "平川はメキシコシティGPでオコンに代わって出走し、1点を獲得した。"
+    },
+    {
+     "side": "日本",
+     "text": "ベアマンの保証要求は無理筋とみる声が目立った",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/992f89a9211c06b9544a2606f304c5adc157cae9/comments",
+     "mood": "否"
+    },
+    {
+     "side": "日本",
+     "text": "フェラーリはハミルトンとルクレールが先と見る人も",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/992f89a9211c06b9544a2606f304c5adc157cae9/comments",
+     "mood": "心配"
+    },
+    {
+     "side": "日本",
+     "text": "カマラの伸びしろに期待する声も",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/09d134fac3772d1960adf68391be0e85ca5f1e97/comments",
+     "mood": "賛"
+    },
+    {
+     "side": "日本",
+     "text": "平川の本気をもっと見たいという声も",
+     "src": "Yahoo!ニュース コメント欄（TopNews）",
+     "url": "https://news.yahoo.co.jp/articles/09d134fac3772d1960adf68391be0e85ca5f1e97/comments",
+     "mood": "賛"
+    }
+   ]
+  },
+  {
+   "id": "nl-gpblog-hamilton-focus-2027",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "チーム",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-ferrari-focus",
+   "title": "ハミルトン、フェラーリはコンストラクターズ2位死守へ　焦点は2027年にも",
+   "summary": "GPblogによると、ハミルトンはフェラーリがコンストラクターズ2位を守ることを目標に掲げ、チームの焦点は2027年にも移るべきだと語った。メルセデスがブラジルで王者を決めたため、フェラーリの最高位は2位だ。ハミルトンは2位を守るには懸命に働く必要があると述べ、次戦ラスベガスも間近だとした。工場では来季に向けた方向性の作業がすでに進んでいるという。記事の順位表ではフェラーリ510点、レッドブル415点、マクラーレン398点で、ドライバーズではハミルトンが261点の4位だ。",
+   "orig": "Hamilton laat Red Bull en Verstappen in het ongewis over focus Ferrari",
+   "url": "https://www.gpblog.com/nl/nieuws/hamilton-laat-red-bull-en-verstappen-in-het-ongewis-over-focus-ferrari",
+   "published": "2026-11-16T15:14:00+01:00"
+  },
+  {
+   "id": "en-planetf1-fia-age-limit-proposal",
+   "kind": "news",
    "lang": "en",
    "region": "イギリス",
    "source": "PlanetF1",
-   "cat": "テクニカル",
-   "circuit": "lasvegas",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "mclaren-redbull-p3",
-   "title": "マクラーレン、ラスベガスにも追加アップデート　「来季マシンの土台」と位置づけ",
-   "summary": "マクラーレンはラスベガスGPにMCL40の追加アップデートを持ち込み、コンストラクターズ3位の奪回を狙う。ブラジルGPでは唯一アップデートを投入したチームで、新リヤウイング、ディフューザー、フロア、フロントウイングを使い、フロントウイングのコンセプトは来季マシンの初期仕様に引き継ぐという。アンドレア・ステラ代表はハンガリーでの改良後に勝てる位置にいたと振り返った。チームは現在4位の398点で、3位レッドブルとは17点差だ。ラスベガスは過去3回で表彰台1回にとどまり、代表はコース特性が合わない理由をギア比にも求めている。",
-   "orig": "McLaren Las Vegas upgrades lay foundations for F1 2027",
-   "url": "https://www.planetf1.com/news/mclaren-las-vegas-upgrades-foundations-2027-f1-car",
-   "published": "2026-11-16T08:00:00+00:00"
+   "cat": "ビジネス",
+   "topic": "fia-age-limit",
+   "title": "FIA、役員の75歳定年の撤廃を提案へ　12月の総会に諮る　BBC報道",
+   "summary": "PlanetF1は、FIAが会長を含む役員の年齢上限75歳を撤廃する案を総会に出す見通しだと伝えた。BBCが入手した提案文書は、年齢制限が選挙の適格候補者を減らしかねないと指摘しているという。上限は2023年に70歳で始まり、ベン・スレイエム会長の1期目に75歳へ引き上げられた。会長の3期上限の撤廃は6月に加盟クラブが承認済みだ。FIA広報は、生年月日だけで候補者を排除せず、選ぶ権限は各機関に残ると説明した。提案は来月の総会で可決されて初めて発効する。",
+   "orig": "FIA confirms major age limits rule change set to be proposed",
+   "url": "https://www.planetf1.com/news/fia-major-age-limits-rule-change-to-be-proposed",
+   "published": "2026-11-16T12:19:00+00:00"
   },
   {
-   "id": "en-planetf1-antonelli-mercedes-salary",
+   "id": "en-planetf1-alonso-honda-vow",
    "kind": "news",
    "lang": "en",
    "region": "イギリス",
    "source": "PlanetF1",
    "cat": "ドライバー",
    "teams": [
-    "mercedes"
+    "astonmartin"
    ],
-   "topic": "antonelli-salary",
-   "title": "アントネッリのメルセデス年俸に注目　フォーブスは約500万ドルと推計",
-   "summary": "PlanetF1は米フォーブスの推計などをもとに、キミ・アントネッリのメルセデスでの収入を伝えた。2025年のデビュー時は約200万ドルとされ、2026年は約500万ドルと、およそ3倍に増えたという。ボーナスは報道により1000万〜1200万ユーロ（1100万〜1300万ドル）とされる。一方、ジョージ・ラッセルの収入は2600万ドルと伝えられ、差はなお大きい。記事は、ブラジルでの雨と乾きが交じるレースでフラットスポットを抱えながらもアントネッリはノリスと同等、ラッセルには及ばないペースだったとするジェームズ・アリソンの見方も紹介している。",
-   "orig": "Kimi Antonelli Mercedes salary in spotlight after Russell defeated – report",
-   "url": "https://www.planetf1.com/news/kimi-antonelli-mercedes-salary-george-russell",
-   "published": "2026-11-16T07:30:00+00:00"
+   "topic": "alonso-honda-2027",
+   "title": "アロンソ、ホンダに信頼を表明　来季の新エンジンは「ダイノで試験中」",
+   "summary": "PlanetF1によると、アロンソはアストンマーティンとの新契約で2027年も走る。チームは現在コンストラクターズ9位の7点にとどまり、信頼性とホンダ製PUの非力さが課題だ。アロンソは、来季の新型エンジンが現在ダイノで試験中だとして、ホンダを信じていると語った。ブラジルでは雨の中で今季初めてQ3に進み、車はコーナーで素晴らしかったと評価する一方、直線の速さが足りないと認めた。ホンダの折原伸太郎氏は、雨は出力不足を隠すと述べ、ドライバビリティの改善が必要だとした。",
+   "orig": "Fernando Alonso delivers Honda vow after 'phenomenal' Aston Martin claim",
+   "url": "https://www.planetf1.com/news/fernando-alonso-delivers-honda-vow-aston-martin-claim",
+   "published": "2026-11-16T11:36:00+00:00"
+  },
+  {
+   "id": "en-planetf1-haas-camara-vegas",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "teams": [
+    "haas"
+   ],
+   "circuit": "lasvegas",
+   "topic": "haas-camara-vegas",
+   "title": "ハース、ラスベガスもカマラを起用　FP1は平川亮がベアマンの車に",
+   "summary": "ハースはラスベガスGPでも、F2王者争いで首位のラファエル・カマラを起用すると発表した。チームメイトは引き続きオリバー・ベアマンで、平川亮がFP1でベアマンの車に乗る。オコンはメキシコシティGPの金曜走行後に外され、メキシコは平川、ブラジルは平川がWECと重なったためカマラが走った。カマラはブラジルで予選のQ1とQ2にクラッシュし、決勝は優勝のノリスから2周遅れの最下位だった。カマラは2027年の唯一の確定ドライバーで、ハースは来季に向けた経験の場を与えた形だ。",
+   "orig": "Haas confirm Esteban Ocon replacement for Las Vegas",
+   "url": "https://www.planetf1.com/news/haas-confirm-esteban-ocon-replacement-las-vegas-rafael-camara",
+   "published": "2026-11-16T09:56:00+00:00"
   },
   {
    "id": "de-f1insider-ferrari-nummer-eins",
@@ -92,24 +227,6 @@
    "published": "2026-11-16T09:32:00+01:00"
   },
   {
-   "id": "de-f1insider-mercedes-20ps",
-   "kind": "rumor",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "うわさ",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "mercedes-pu-20hp",
-   "title": "メルセデスPU、アップデートなしで最大20馬力向上か　伊メディア報道",
-   "summary": "F1-Insiderは、イタリアのAutoRacer.itの報道として、メルセデスがシーズン中にエンジン制御の改善とバッテリー変更で10〜20馬力ほど出力を上げた可能性があると伝えた。公式には確認されていない数字だ。バッテリー変更はFIAの承認を得て信頼性向上を狙ったもので、シュピールベルグで導入されたという。メルセデスはPU開発の追加枠ADUOを使っておらず、フェラーリはオーストリアとモンツァで2回使った。AutoRacerは新ターボのデビュー戦としてラスベガスを挙げたが、これも未確認だ。",
-   "orig": "Schock für Konkurrenz! Mercedes soll ohne Update 20 PS gefunden haben",
-   "url": "https://f1-insider.com/formel-1-mercedes-motor-ohne-update-20-ps-83950/",
-   "published": "2026-11-13T15:20:00+01:00"
-  },
-  {
    "id": "nl-racingnews365-williams-aduo-teams",
    "kind": "news",
    "lang": "nl",
@@ -125,6 +242,24 @@
    "orig": "F1 Commission buigt zich over opmerkelijk voorstel Williams",
    "url": "https://racingnews365.nl/f1-commission-buigt-zich-over-opmerkelijk-voorstel-williams",
    "published": "2026-11-16T09:30:00+01:00"
+  },
+  {
+   "id": "en-planetf1-mclaren-vegas-upgrades-2027",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "テクニカル",
+   "circuit": "lasvegas",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "mclaren-redbull-p3",
+   "title": "マクラーレン、ラスベガスにも追加アップデート　「来季マシンの土台」と位置づけ",
+   "summary": "マクラーレンはラスベガスGPにMCL40の追加アップデートを持ち込み、コンストラクターズ3位の奪回を狙う。ブラジルGPでは唯一アップデートを投入したチームで、新リヤウイング、ディフューザー、フロア、フロントウイングを使い、フロントウイングのコンセプトは来季マシンの初期仕様に引き継ぐという。アンドレア・ステラ代表はハンガリーでの改良後に勝てる位置にいたと振り返った。チームは現在4位の398点で、3位レッドブルとは17点差だ。ラスベガスは過去3回で表彰台1回にとどまり、代表はコース特性が合わない理由をギア比にも求めている。",
+   "orig": "McLaren Las Vegas upgrades lay foundations for F1 2027",
+   "url": "https://www.planetf1.com/news/mclaren-las-vegas-upgrades-foundations-2027-f1-car",
+   "published": "2026-11-16T08:00:00+00:00"
   },
   {
    "id": "nl-racingnews365-wolff-horner-bericht",
@@ -144,57 +279,21 @@
    "published": "2026-11-16T08:50:00+01:00"
   },
   {
-   "id": "nl-racingnews365-redbull-mclaren-p3",
+   "id": "en-planetf1-antonelli-mercedes-salary",
    "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "分析",
-   "teams": [
-    "redbull",
-    "mclaren"
-   ],
-   "topic": "mclaren-redbull-p3",
-   "title": "コンストラクターズ3位争いはレッドブルが17点リード　残り3戦で賞金も変動",
-   "summary": "ラスベガス、カタール、アブダビの残り3戦を前に、コンストラクターズ3位はレッドブルが17点リードしている。フェルスタッペンの3勝がマクラーレン逆転を後押しした。賞金は順位が1つ下がるごとに約1000万ドル減り、4位は2027年前半の風洞使用時間が3位より5%多い。7位争いではハースが31点、アウディが28点で、直近4戦ではアウディが11点、ハースが4点だった。ドライバーズ2位はフェルスタッペン279点、ラッセル262点、ハミルトン261点と続く。",
-   "orig": "Red Bull verwikkeld in cruciale miljoenenstrijd",
-   "url": "https://racingnews365.nl/red-bull-verwikkeld-in-cruciale-miljoenenstrijd",
-   "published": "2026-11-15T08:00:00+01:00"
-  },
-  {
-   "id": "en-therace-honda-reliability-orihara",
-   "kind": "tech",
    "lang": "en",
    "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
    "teams": [
-    "astonmartin"
+    "mercedes"
    ],
-   "topic": "honda-stroll-battery-retirement",
-   "title": "ホンダの新たな信頼性問題、原因特定はラスベガス前に間に合うか",
-   "summary": "アストンマーティンとホンダは、メキシコ・ブラジルの連戦でまた3度目のリタイアを喫した。ブラジルではストロールが2度のバッテリー不具合に見舞われ、今季の完走は20戦中6回にとどまる。ホンダのトラックサイド主任、折原伸太郎エンジニアは「何が起きたかは分かるが根本原因は分からない」と述べ、ラスベガス前の対策を急ぐ。原因は部品の走行距離や出力の上げ方が疑われるが、2027年序盤に大きな進歩は見込めず、改良は年間を通じ段階的に入る見通しだ。",
-   "orig": "What we know about worrying new Honda F1 reliability issue",
-   "url": "https://www.the-race.com/formula-1/honda-f1-new-reliability-problem-might-not-cure-before-2026-end/",
-   "published": "2026-11-11T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-wet-tyres-2027-pirelli",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "teams": [
-    "williams"
-   ],
-   "circuit": "interlagos",
-   "topic": "pirelli-wet-tyres-2027",
-   "title": "ピレリ、2027年向けウェット系タイヤを刷新へ　インターへの不満受け",
-   "summary": "ピレリは、ブラジルで雨の週末に噴出したドライバーの不満を受け、2027年向けに雨用タイヤを見直す。サインツは「インターとウェットの水準は十分でない」と述べ、ローソンはグリッド上の周回で「ほぼ運転不能」だったと語った。2026年規則でタイヤにかかる力が増し、最低空気圧も前輪インターで25.5psiから28psiへ上がって温まりにくくなったという。ピレリのマラフスキ氏は仕様変更を認め、FIAとの最終承認は12月の予定だ。",
-   "orig": "F1's divisive wet weather tyres to change in 2027 - what needs solving",
-   "url": "https://www.the-race.com/formula-1/f1-divisive-wet-weather-tyres-to-change-in-2027-what-we-know/",
-   "published": "2026-11-11T14:00:00+00:00"
+   "topic": "antonelli-salary",
+   "title": "アントネッリのメルセデス年俸に注目　フォーブスは約500万ドルと推計",
+   "summary": "PlanetF1は米フォーブスの推計などをもとに、キミ・アントネッリのメルセデスでの収入を伝えた。2025年のデビュー時は約200万ドルとされ、2026年は約500万ドルと、およそ3倍に増えたという。ボーナスは報道により1000万〜1200万ユーロ（1100万〜1300万ドル）とされる。一方、ジョージ・ラッセルの収入は2600万ドルと伝えられ、差はなお大きい。記事は、ブラジルでの雨と乾きが交じるレースでフラットスポットを抱えながらもアントネッリはノリスと同等、ラッセルには及ばないペースだったとするジェームズ・アリソンの見方も紹介している。",
+   "orig": "Kimi Antonelli Mercedes salary in spotlight after Russell defeated – report",
+   "url": "https://www.planetf1.com/news/kimi-antonelli-mercedes-salary-george-russell",
+   "published": "2026-11-16T07:30:00+00:00"
   },
   {
    "id": "en-planetf1-antonelli-mattarella",
@@ -212,23 +311,6 @@
    "orig": "Kimi Antonelli meets Italian president after receiving prestigious award",
    "url": "https://www.planetf1.com/news/kimi-antonelli-meets-italian-president-after-award",
    "published": "2026-11-16T00:01:00+00:00"
-  },
-  {
-   "id": "en-therace-hamilton-marketable-ranking",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ビジネス",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "sportspro-marketability-2026",
-   "title": "ハミルトン、市場価値ランキングで首位陥落　F1最上位はルクレール",
-   "summary": "スポーツビジネス誌SportsProの2026年マーケタビリティ調査で、ハミルトンは昨年の首位から22位に後退した。スコアは96.03から66.63へ下がり、ネイマールらと並ぶ。一方、ルクレールは25位から9位に上がりF1勢の最上位となり、フェルスタッペンは48位、アントネッリは126位だった。評価はブランド力、勢い、商業面の将来性で算出され、調査会社の幹部はハミルトンについて「トップ10に届かないのはブランドではなく年齢だ」と説明した。",
-   "orig": "Hamilton loses 'most marketable athlete' status in 2026",
-   "url": "https://www.the-race.com/extra/hamilton-loses-most-marketable-athlete-status-in-2026/",
-   "published": "2026-11-11T12:00:00+00:00"
   },
   {
    "id": "nl-f1maximaal-tsolov-wacht-op-stoeltje",
@@ -531,6 +613,24 @@
    "published": "2026-11-15T11:45:00+01:00"
   },
   {
+   "id": "it-corrieredellosport-antonelli-ferrari-steiner",
+   "kind": "rumor",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Corriere dello Sport",
+   "cat": "うわさ",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "antonelli-ferrari-future",
+   "title": "アントネッリはいずれフェラーリへ？　シュタイナー氏「フェラーリが彼を探す」と予想　伊紙",
+   "summary": "コリエレ・デロ・スポルト紙は、元ハース代表のギュンター・シュタイナー氏がRacingNews365のインタビューで、キミ・アントネッリがいずれフェラーリで走ると予想したと伝えた。すぐではなく10年ほど先の話で、同氏は「フェラーリが彼を探すことになる」と語ったという。アントネッリ本人はAutomoto.itに「何も排除しないが、今はメルセデスで勝つことが目標」と話している。元フェラーリ会長のモンテゼーモロ氏も、フェラーリで走る姿が見られず残念だと述べた。20歳のアントネッリは史上最年少の王者で、イタリア人王者は1953年のアスカリ以来だ。",
+   "orig": "\"Antonelli guiderà per la Ferrari, saranno loro a cercarlo\": la previsione dell'ex team principal fa sognare i tifosi",
+   "url": "https://www.corrieredellosport.it/news/formula-1/ferrari/2026/11/15-152603985/antonelli_guider_per_la_ferrari_saranno_loro_a_cercarlo_la_previsione_dell_ex_team_principal_fa_sognare_i_tifosi",
+   "published": "2026-11-15T11:41:00+01:00"
+  },
+  {
    "id": "en-planetf1-chandhok-russell-career-defining-15-months",
    "kind": "news",
    "lang": "en",
@@ -546,6 +646,24 @@
    "orig": "George Russell faces career-defining 15 months with either Rosberg or Ricciardo outcome",
    "url": "https://www.planetf1.com/news/george-russell-mercedes-future-kimi-antonelli-title-defeat",
    "published": "2026-11-15T07:43:00+00:00"
+  },
+  {
+   "id": "nl-racingnews365-redbull-mclaren-p3",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "分析",
+   "teams": [
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "mclaren-redbull-p3",
+   "title": "コンストラクターズ3位争いはレッドブルが17点リード　残り3戦で賞金も変動",
+   "summary": "ラスベガス、カタール、アブダビの残り3戦を前に、コンストラクターズ3位はレッドブルが17点リードしている。フェルスタッペンの3勝がマクラーレン逆転を後押しした。賞金は順位が1つ下がるごとに約1000万ドル減り、4位は2027年前半の風洞使用時間が3位より5%多い。7位争いではハースが31点、アウディが28点で、直近4戦ではアウディが11点、ハースが4点だった。ドライバーズ2位はフェルスタッペン279点、ラッセル262点、ハミルトン261点と続く。",
+   "orig": "Red Bull verwikkeld in cruciale miljoenenstrijd",
+   "url": "https://racingnews365.nl/red-bull-verwikkeld-in-cruciale-miljoenenstrijd",
+   "published": "2026-11-15T08:00:00+01:00"
   },
   {
    "id": "en-planetf1-brundle-wolff-sniffy-text",
@@ -1205,6 +1323,24 @@
    "published": "2026-11-13T17:00:00+01:00"
   },
   {
+   "id": "de-f1insider-mercedes-20ps",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "mercedes-pu-20hp",
+   "title": "メルセデスPU、アップデートなしで最大20馬力向上か　伊メディア報道",
+   "summary": "F1-Insiderは、イタリアのAutoRacer.itの報道として、メルセデスがシーズン中にエンジン制御の改善とバッテリー変更で10〜20馬力ほど出力を上げた可能性があると伝えた。公式には確認されていない数字だ。バッテリー変更はFIAの承認を得て信頼性向上を狙ったもので、シュピールベルグで導入されたという。メルセデスはPU開発の追加枠ADUOを使っておらず、フェラーリはオーストリアとモンツァで2回使った。AutoRacerは新ターボのデビュー戦としてラスベガスを挙げたが、これも未確認だ。",
+   "orig": "Schock für Konkurrenz! Mercedes soll ohne Update 20 PS gefunden haben",
+   "url": "https://f1-insider.com/formel-1-mercedes-motor-ohne-update-20-ps-83950/",
+   "published": "2026-11-13T15:20:00+01:00"
+  },
+  {
    "id": "de-f1insider-mercedes-20ps-ohne-update",
    "kind": "rumor",
    "lang": "de",
@@ -1341,23 +1477,6 @@
    "published": "2026-11-13T11:22:00+01:00"
   },
   {
-   "id": "nl-f1maximaal-fia-suspends-mcevoy-leclerc",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "カルチャー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "fia-mcevoy-suspension",
-   "title": "FIA、英紙記者の取材資格を停止　ルクレール批判のコラムが発端",
-   "summary": "F1Maximaalによると、FIAは英デイリー・メール紙のマケボイ記者の取材資格を、今季残り3戦の週末について停止した。メキシコGP後にルクレールを批判するコラムを書き、ハミルトン側に立った内容だったことが発端という。本人はFIAのヴィラレアル事務局長から年末まで資格を取り消すと告げられ、来季の初めに再開できる可能性があると語っている。残り3戦は両タイトルが決まった後のレースで影響は小さいと見る一方、コラムは半ば冗談で、報道の自由が重要だと主張した。ヴァッスール代表への批判にも本人が言及している。",
-   "orig": "FIA schorst Britse journalist na uitspraken over Leclerc",
-   "url": "https://www.f1maximaal.nl/formule-1/fia-schorst-britse-journalist-na-uitspraken-over-leclerc-verslaggever-haalt-keihard-uit-naar-vasseur",
-   "published": "2026-11-13T10:05:00+01:00"
-  },
-  {
    "id": "en-planetf1-russell-antonelli-barrichello-schumacher",
    "kind": "news",
    "lang": "en",
@@ -1373,6 +1492,23 @@
    "orig": "George Russell hit with 'Antonelli's Barrichello' warning from Schumacher",
    "url": "https://www.planetf1.com/news/george-russell-kimi-antonelli-level-mercedes-ralf-schumacher",
    "published": "2026-11-13T09:05:00+00:00"
+  },
+  {
+   "id": "nl-f1maximaal-fia-suspends-mcevoy-leclerc",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "カルチャー",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "fia-mcevoy-suspension",
+   "title": "FIA、英紙記者の取材資格を停止　ルクレール批判のコラムが発端",
+   "summary": "F1Maximaalによると、FIAは英デイリー・メール紙のマケボイ記者の取材資格を、今季残り3戦の週末について停止した。メキシコGP後にルクレールを批判するコラムを書き、ハミルトン側に立った内容だったことが発端という。本人はFIAのヴィラレアル事務局長から年末まで資格を取り消すと告げられ、来季の初めに再開できる可能性があると語っている。残り3戦は両タイトルが決まった後のレースで影響は小さいと見る一方、コラムは半ば冗談で、報道の自由が重要だと主張した。ヴァッスール代表への批判にも本人が言及している。",
+   "orig": "FIA schorst Britse journalist na uitspraken over Leclerc",
+   "url": "https://www.f1maximaal.nl/formule-1/fia-schorst-britse-journalist-na-uitspraken-over-leclerc-verslaggever-haalt-keihard-uit-naar-vasseur",
+   "published": "2026-11-13T10:05:00+01:00"
   },
   {
    "id": "de-motorsporttotal-steiner-piastri-pressure",
@@ -1600,60 +1736,6 @@
    "orig": "ピアストリがウェバーとマネジメント契約を解除したのはマクラーレン離脱の準備との噂",
    "url": "https://f1jouhou2.com/blog-entry-31921.html",
    "published": "2026-11-13T12:00:00+09:00"
-  },
-  {
-   "id": "en-planetf1-lawson-racing-bulls-2027-reaction",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "circuit": "interlagos",
-   "teams": [
-    "racingbulls",
-    "redbull"
-   ],
-   "topic": "lawson-2027-seat",
-   "title": "ローソン、レーシングブルズ残留に「一緒に成し遂げられることに期待」",
-   "summary": "レーシングブルズが2027年もローソンとリンドブラッドの体制を続けると発表し、ローソンは「ブリリアントなシーズン」と振り返ってチームとの未来に意欲を示した。今季は20戦中15戦で入賞し、サンパウロGPは7位で、チームは5位アルピーヌに45点差をつけて過去最高のランキングに向かっている。席を巡ってはレッドブル育成のツォロフ（F2ランキング2位）が取り沙汰されたが、同選手は来季リザーブに就く見通しという。ペルメイン代表は新契約で2031年末までチームに残り、今回の体制を「最良」と語った。",
-   "orig": "First Liam Lawson reaction as Racing Bulls makes final F1 2027 decision",
-   "url": "https://www.planetf1.com/news/liam-lawson-racing-bulls-f1-2027-decision-reaction",
-   "published": "2026-11-13T00:03:00+00:00"
-  },
-  {
-   "id": "en-planetf1-piastri-missing-title-stress",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-missing-title-stress",
-   "title": "ピアストリ「あの感覚が恋しい」　昨年のタイトル争いのストレスを回顧",
-   "summary": "マクラーレンのピアストリは、今季は昨年ほどのストレスがなく、「あの感覚が今年は確かに恋しい」と語った。昨年はノリスとのタイトル争いがアブダビまでもつれ、13点差で王座を逃している。今季は未勝利で、表彰台からも16戦遠ざかっている。毎年選手権を争いたいと話し、重圧は目標へ戦っている証だと捉えている。残り3戦はコンストラクターズでレッドブルを抜くことが目標で、その差は17点。新規則のMCL40は「今も扱いやすくない」という。",
-   "orig": "Oscar Piastri 'missing that feeling' in new admission over F1 2025 title 'stress'",
-   "url": "https://www.planetf1.com/news/oscar-piastri-mclaren-stress",
-   "published": "2026-11-12T20:04:00+00:00"
-  },
-  {
-   "id": "nl-f1maximaal-italy-gp-result-audi-protest",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "決勝",
-   "circuit": "monza",
-   "teams": [
-    "audi"
-   ],
-   "topic": "italy-gp-audi-protest",
-   "title": "イタリアGPの結果は今も確定せず　アウディの抗議、控訴審は25日",
-   "summary": "2026年イタリアGPの結果が、アウディの抗議で今も確定していない。ルクレールが2周目にクラッシュして赤旗となり、スタンディング再スタートで角田が並ぶ位置を一瞬取り違え、レースディレクターが追加のフォーメーションラップを命じた。スチュワードは角田に責任はないとしたが、アウディは規則B5.9.4に基づきピットレーンスタートが必要だったと主張し、11位だったボルトレートに関わる形で争っている。国際控訴裁判所は25日9時に審理し、アウディはハースとの3点差を2点差に縮められる可能性があり、7位と8位の賞金差は約850万ドルとされる。",
-   "orig": "Uitslag Grand Prix van Italië is nog altijd niet definitief",
-   "url": "https://www.f1maximaal.nl/formule-1/uitslag-grand-prix-van-italie-is-nog-altijd-niet-definitief",
-   "published": "2026-11-12T20:12:00+01:00"
   }
  ]
 }
