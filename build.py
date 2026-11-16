@@ -1853,6 +1853,7 @@ def build_rules():
             opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
             rows = ''.join(f'<label>{e(p)}<select aria-label="{e(p)}">{opts}</select></label>' for p in ['エンジン（ICE）', 'ターボ', 'MGU-K', 'バッテリー（ES）', '制御電子機器（CE）'])
             b += PU_TOOL.format(rows=rows) + PU_JS
+        b += rb_news_box(f'「{t["term"]}」が出てくる最新ニュース', term_news(t, ALLARTS), f'term/{tid}/news')
         if t.get('rule'):
             b += f'<div class="rb-h">規則</div><span class="rb-rule">FIA {e(t["rule"])}</span>'
         b += f'<!--reads:{tid}-->'  # filled by add_term_reads() once every column and STORY is written
@@ -1909,6 +1910,8 @@ def build_rules():
         is_drv = 'ドライバー' in p.get('role', '') and 'エンジニア' not in p.get('role', '')
         if is_drv:
             b += driver_fan_block(p)  # fan page for drivers: news first, then the profile (owner, 27 Oct 2026)
+        pn_ = [] if is_drv else [a for a in person_news(p, ALLARTS, n=20) if a.get('kind', 'news') in ('news', 'tech')][:5]
+        b += rb_news_box(f'{p["name"]}の最新ニュース', pn_, f'person/{p["id"]}/news')  # moved up from the bottom (owner's OK, 17 Nov 2026)
         pu = {tid}  # never link the person's own name on their own page (column desk, 24 Oct 2026)
         if p.get('body'):  # longer text, e.g. 「## 経歴」 (column desk request, owner's OK, 24 Oct 2026)
             b += ('<div class="rb-h">プロフィール・経歴</div>' if is_drv else '') + '<div class="rbp-body" style="margin-top:22px">' + ''.join(
@@ -1918,10 +1921,6 @@ def build_rules():
         app = [u for u in p.get('appears', []) if u in titles]
         if app:
             b += '<div class="rb-h">登場する記事</div><ul class="rb-ex">' + ''.join(f'<li><a href="{e(u)}">{e(titles[u])}</a></li>' for u in app) + '</ul>'
-        pn_ = [] if is_drv else person_news(p, ALLARTS)
-        if pn_:
-            b += (f'<div class="rb-h">{e(p["name"])}が出てくる最新ニュース</div><ul class="rb-ex">'
-                  + ''.join(f'<li><a href="/news/{e(a["id"])}/" data-track="click/person/{e(p["id"])}/news">{e(a["title"])}</a></li>' for a in pn_) + '</ul>')
         b += f'<!--peers:{tid}-->'
         if p.get('sources'):
             b += (f'<details class="rb-srcbox"><summary>出典（肩書きの確認・{len(p["sources"])}件）</summary><ul class="rb-ex rb-src">' + ''.join(
@@ -3732,6 +3731,35 @@ def driver_fan_block(p):
                 + ''.join(f'<a href="{e(x["url"])}" target="_blank" rel="noopener" data-track="click/person/{e(p["id"])}/sns">{e(x["name"])} ↗</a>' for x in sns)
                 + '</div><p class="fan-note">本人の投稿がニュースになったときは、「近況」に要約を載せます。</p>')
     return out
+
+
+def rb_news_box(title, arts, track):
+    """「〜の最新ニュース」 near the top of term and non-driver person pages (owner's OK, 17 Nov 2026):
+    the rulebook gets most of the readers, so the way from there to the news is made wide."""
+    if not arts:
+        return ''
+    def li(a):
+        d = when(a).astimezone(JST)
+        return (f'<li><a href="/news/{e(a["id"])}/" data-track="click/{track}">{e(a["title"])}</a>'
+                f'<small>{e(a["source"])} · {d.month}/{d.day}</small></li>')
+    return (f'<style>{FAN_CSS}</style><div class="rb-h">{e(title)}</div><ul class="fan-list">' + ''.join(li(a) for a in arts) + '</ul>'
+            f'<p class="fan-note"><a href="/#news" data-track="click/{track}/all">ニュースをもっと見る →</a></p>')
+
+
+def term_news(t, allarts, n=5):
+    """Newest news whose title or lead names this term (term or an alias of 3+ letters)."""
+    names = [x for x in _kw_names([t['term']] + t.get('aliases', [])) if len(x) >= 3 and not re.fullmatch(r'[ぁ-ゟー]+', x)]
+    top, rest = [], []  # named in the title first, then in the lead
+    for a in allarts:
+        if a.get('kind', 'news') not in ('news', 'tech'):
+            continue
+        if any(_kw_hit(nm, a['title']) for nm in names):
+            top.append(a)
+        elif len(rest) < n and any(_kw_hit(nm, a.get('summary', '')) for nm in names):
+            rest.append(a)
+        if len(top) >= n:
+            break
+    return (top + rest)[:n]
 
 
 def person_news(p, allarts, n=8):
