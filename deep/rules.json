@@ -371,10 +371,14 @@
     {
      "t": "FIAは、シンガポールGPのスプリントと決勝にヒートハザードを宣言した。セパンに続いて2戦連続になる。",
      "u": "/news/it-formula1it-singapore-heat-hazard/"
+    },
+    {
+     "t": "メルセデスは、FIAが液冷ベストの開発向けに用意した予算枠を使わず、空力と機械面の性能に資源を回した。",
+     "u": "/news/es-motorsport-mercedes-no-cooling-budget/"
     }
    ],
    "see": [],
-   "checked": "2026-10-09",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "Crash.net",
@@ -395,6 +399,11 @@
      "name": "AsiaOne",
      "title": "2026 Singapore Grand Prix declared heat-hazard race as heat index forecast to exceed 31°C（2026年10月8日）",
      "url": "https://www.asiaone.com/sports/2026-singapore-grand-prix-f1-fia-declares-heat-hazard"
+    },
+    {
+     "name": "Motorsport.com España",
+     "title": "Mercedes defiende su polémica decisión con Russell ante el calor extremo",
+     "url": "https://es.motorsport.com/f1/news/mercedes-defiende-polemica-decision-dejar-russell-sin-refrigeracion/10862751/"
     }
    ]
   },
@@ -6268,7 +6277,7 @@
    "body": [
     "FIAは、F1世界選手権を統括する国際団体。世界の自動車クラブなどが加盟していて、2024年の時点で243団体、147か国が加わっている。始まりは1904年で、各国のクラブ代表がパリに集まった会合だ。F1の最初の世界選手権は1950年にFIAが作った。本部はパリで、ジュネーブなどにも事務所がある。",
     "F1での役目は、ルールを作って運用する側だ。技術規則、スポーティング規則（競技の規則）、財務規則などを決める。レース運営と、スチュワードによる判定も、FIAの役割に入っている。F1の興行や放映権などの商業面は、FIAではなくフォーミュラ・ワン・グループが担う。",
-    "FIAの最高の意思決定機関は、世界モータースポーツ評議会（WMSC）。会長は、2025年12月に無投票で再選されたモハメド・ビン・スライエムで、任期は4年（2029年まで）だ。"
+    "FIAの規約では、加盟団体の代表団が集まるFIA総会が主権を持つ。世界モータースポーツ評議会（WMSC）は、規約と国際モータースポーツ競技規則が守られるよう監督し、総会から回された競技の問題や、総会を待てない問題を決める機関だ（FIA規約 10、17）。会長は、2025年12月に無投票で再選されたモハメド・ビン・スライエムで、任期は4年（2029年まで）だ。"
    ],
    "examples": [
     {
@@ -6322,10 +6331,15 @@
      "name": "FIA",
      "title": "Writing the rules: how the FIA develops new regulations for Formula 1",
      "url": "https://www.fia.com/news/writing-rules-how-fia-develops-new-regulations-formula-1"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Statutes（2026年6月25日の臨時総会で採択、6月26日適用。10条 総会の主権、17条 WMSCの権限）",
+     "url": "https://www.fia.com/sites/default/files/2026_fia_statutes_fr-en_0.pdf"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-11-11"
+   "checked": "2026-11-18"
   },
   {
    "id": "f1-group",
@@ -11521,7 +11535,7 @@
    "body": [
     "コーナーモードは、ウイングのフラップを閉じて、ダウンフォースを最大にする状態。ふだんはこちらだ。ストレートモードは、前後のフラップを開いて空気抵抗を減らし、最高速を伸ばす状態。FIAの説明では、この2つは、Xモード（低抵抗）とZモード（高ダウンフォース）とも呼ばれる。",
     "ストレートモードを使えるのは、FIAがサーキットごとに決めた「作動ゾーン」の中だけ。ゾーンは、レースの前にチームへ知らされる。ドライバーがボタンを押して切り替える。2025年まであったDRSと違い、前の車との差は関係なく、全車が使える。",
-    "ゾーンの数はコースで違う。The Raceによると、セパンはメインストレート、バックストレート、ターン3からターン4までの区間、ターン8の立ち上がりの4か所。鈴鹿では、スプーンカーブから130Rまでの区間にもゾーンが追加された。",
+    "ゾーンの数はコースで違う。The Raceによると、セパンはメインストレート、バックストレート、ターン3からターン4までの区間、ターン8の立ち上がりの4か所。鈴鹿では、スプーンカーブから130Rまでの区間にもゾーンが追加された。オーストラリアとシンガポールでは、過去最多の5か所が置かれた。モナコでは事実上アクティブエアロが禁じられ、ゾーンはなかった。サンパウロのインテルラゴスは2か所とされた（PlanetF1）。",
     "コーナーモードへ戻るときは、ドライバーがブレーキを踏むと自動で切り替わる。ボタンで少し早めに戻すこともできる。アクセルを戻して電気をためるリフトオフ回生を使うと、アクティブエアロは働かない。切り替えは、決まった2つの状態のあいだで、0.4秒以内に終えなければならない。装置が壊れたときは、コーナーモードに戻るように作る決まりだ。",
     "雨などでグリップが低いときは、FIAのレースディレクターが、完全な作動を止められる。そのときは、フロントだけストレートモードにして、リアはコーナーモードのままにする「部分作動」の段階がある。予選などのセッション中に制限を変えた場合、その状態はそのセグメント（Q1など）の終わりまで続く。"
    ],
@@ -11532,8 +11546,12 @@
      "u": "/news/en-therace-malaysia-driver-expectations/"
     },
     {
-     "t": "シンガポールGPのストレートモードの区間は5か所。スタート／フィニッシュの直線や、ターン7へ向かう区間が含まれる。",
-     "u": "/news/ja-f1gate-singapore-active-aero/"
+     "t": "インテルラゴスのストレートモードの区間は2か所。スタート／フィニッシュの直線と、3コーナーと4コーナーの間だ。",
+     "u": "/news/en-planetf1-fia-interlagos-straight-mode/"
+    },
+    {
+     "t": "ラスベガスのストレートモードの区間は3か所。いちばん長いのは、ターン12の後からターン14の手前までの1.9kmの直線だ。",
+     "u": "/news/en-planetf1-vegas-straight-mode-zones/"
     }
    ],
    "see": [
@@ -11613,9 +11631,19 @@
      "name": "PlanetF1",
      "title": "FIA makes key decision for Singapore Grand Prix（2026年10月7日、ストレートモード5区間）",
      "url": "https://www.planetf1.com/news/fia-singapore-grand-prix-2026-active-aero"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA reveals its first clue on how 2026-style racing will work at Interlagos",
+     "url": "https://www.planetf1.com/news/fia-brazilian-grand-prix-2026-interlagos"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA makes key decision ahead of the Las Vegas Grand Prix",
+     "url": "https://www.planetf1.com/news/fia-las-vegas-grand-prix-2026-active-aero"
     }
    ],
-   "checked": "2026-10-09"
+   "checked": "2026-11-18"
   },
   {
    "id": "v10-era",
@@ -17649,6 +17677,14 @@
     {
      "t": "ハースはシンガポールに新しいパッケージを持ち込み、まずベアマンの車に付ける。オコンの車はオースティンからの見込み。",
      "u": "/news/it-formula1it-haas-upgrade-singapore/"
+    },
+    {
+     "t": "フェラーリはアメリカGPに、今季最後の大型改良とみられる変更を入れた。サイドポッドの入口やディフューザーの細部が変わった。",
+     "u": "/news/en-therace-ferrari-last-major-upgrade-explained/"
+    },
+    {
+     "t": "マクラーレンはサンパウロGPに新しい前翼などを入れて勝ったが、ステラ代表は、勝因は改良より条件と車の相性だったと説明した。",
+     "u": "/news/en-planetf1-mclaren-upgrades-flattered/"
     }
    ],
    "see": [
@@ -17681,9 +17717,19 @@
      "name": "Coffee Corner Motorsport",
      "title": "Singapore Grand Prix 2026 media day（ベアマン車に先に装着、オコンはオースティンの見込み）",
      "url": "https://coffeecornermotorsport.com/singapore-grand-prix-2026-media-day/"
+    },
+    {
+     "name": "The Race",
+     "title": "Ferrari's last major 2026 F1 upgrade explained",
+     "url": "https://www.the-race.com/formula-1/ferrari-last-major-2026-f1-upgrade-explained/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Why Brazilian GP victory flattered McLaren upgrades",
+     "url": "https://www.planetf1.com/brazilian-grand-prix/mclaren-brazilian-gp-f1-upgrades"
     }
    ],
-   "checked": "2026-10-09"
+   "checked": "2026-11-18"
   },
   {
    "id": "development-freeze",
@@ -19511,6 +19557,10 @@
     {
      "t": "セパンでは、多くのドライバーがハード（C2）を2セット残した。フェルスタッペンとルクレールは1セットしかなかった。",
      "u": "/news/it-formula1-bahrain-strategie-boomerang/"
+    },
+    {
+     "t": "ピレリはサンパウロGPに、2025年より柔らかいC3（ハード）、C4（ミディアム）、C5（ソフト）を持ち込むと伝えられた。",
+     "u": "/news/it-motorionline-pirelli-interlagos-tyres/"
     }
    ],
    "see": [
@@ -19556,9 +19606,14 @@
      "name": "PlanetF1",
      "title": "Monaco Grand Prix drops controversial two-stop rule for 2026 season (2026-02-28)",
      "url": "https://www.planetf1.com/news/monaco-grand-prix-two-stop-rule-scrapped-2026-fia"
+    },
+    {
+     "name": "Motorionline",
+     "title": "Formula 1 | Pirelli, gomme più morbide in Brasile rispetto al 2025",
+     "url": "https://f1grandprix.motorionline.com/gp-san-paolo-2026-interlagos-pirelli-mescole-c3-c4-c5/"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-11-18"
   },
   {
    "id": "pirelli",
@@ -19702,7 +19757,7 @@
      "url": "https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-monaco-grand-prix.1dphiN7qz6fiI4sm4MaC4V"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-11-18"
   },
   {
    "id": "speed-trap",
@@ -20947,7 +21002,7 @@
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-07"
+   "checked": "2026-11-18"
   },
   {
    "id": "circuit-singapore",
@@ -21415,7 +21470,7 @@
    "body": [
     "ルサイルは、カタールにあるコースだ。F1公式サイトによると、2004年のMotoGPに向けて造られ、F1は2021年に初めて開いた。2023年から10年間の開催契約を結んでいる。1周は5.419km、決勝は57周。コーナーは16（右10、左6）だ（メルセデスF1）。",
     "F1公式サイトは、中速と高速のコーナーが中心の、速くて流れるコースだと紹介している。1kmを超える主直線から入る1コーナーは、追い抜きの場所になる。ラップレコードは、2024年にノリスが出した1分22秒384だ。",
-    "2026年のカタールGPは、11月27〜29日に予定されている。中東情勢のため開催が心配され、開けないときはイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、カタールとアブダビの2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況はここ数か月で悪くなっておらず、カタールでは最近MotoGPのレースも開かれたと説明した。状況が悪くなれば対応するとしている（Crash.net）。"
+    "2026年のカタールGPは、第21戦ラスベガスの次の第22戦で、11月27〜29日に予定されている。中東情勢のため開催が心配され、開けないときはイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、カタールとアブダビの2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況はここ数か月で悪くなっておらず、カタールでは最近MotoGPのレースも開かれたと説明した。状況が悪くなれば対応するとしている（Crash.net）。"
    ],
    "examples": [
     {
@@ -21429,6 +21484,14 @@
     {
      "t": "F1のドメニカリ代表は、最後の2戦はカタールとアブダビと明言した。イモラは代わりの案として残る。",
      "u": "/news/de-motorsport-total-domenicali-finale-imola/"
+    },
+    {
+     "t": "ルサイルは、MotoGP（11月6〜8日）とF1（11月27〜29日）に向けた準備がほぼ完了したと発表した。",
+     "u": "/news/it-f1it-lusail-qatar-ready/"
+    },
+    {
+     "t": "F1はイモラの待機を解除し、カタール（11月29日）とアブダビ（12月6日）で今季を締めくくる計画を続けると決めた。",
+     "u": "/news/en-therace-imola-stood-down/"
     }
    ],
    "see": [
@@ -21461,10 +21524,15 @@
      "name": "Crash.net",
      "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
      "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
+    },
+    {
+     "name": "Formula1.it",
+     "title": "F1 e MotoGP in Qatar, Lusail conferma i piani: «Preparativi quasi completati»",
+     "url": "https://www.formula1.it/news/33396/1/f1-e-motogp-in-qatar-lusail-conferma-i-piani-preparativi-quasi-completati"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-07"
+   "checked": "2026-11-18"
   },
   {
    "id": "circuit-yasmarina",
@@ -21488,7 +21556,7 @@
    "body": [
     "ヤス・マリーナは、アブダビのヤス島にあるコースで、アブダビGPの会場だ。F1公式サイトによると、ティルケが設計し、F1は2009年に初めて開いた。2021年の前にコースが変わり、1周は少し短くなって5.281km。決勝は58周で、反時計回りだ（メルセデスF1）。",
     "ターン5と6のあいだに約1.2kmの長い直線があり、追い抜きの場所になる（F1公式サイト）。レースは日没の前に始まって暗くなってから終わり、ナイトレースに数えられる（メルセデスF1）。F1公式サイトのコース紹介にはラップレコードが載っていない。2024年の決勝では、マグヌッセンが1分25秒637の最速ラップを記録した（F1公式の結果ページ）。",
-    "2026年のアブダビGPは12月4〜6日の予定で、シーズン最終戦にあたる。中東情勢のため開催が心配され、開けないときは12月6日にイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、カタールとアブダビの2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況、とくにカタールとアブダビの状況は、ここ数か月で悪くなっていないと説明した。状況が悪くなれば対応するとしている（Crash.net）。"
+    "2026年のアブダビGPは12月4〜6日の予定で、第23戦、シーズン最終戦にあたる。中東情勢のため開催が心配され、開けないときは12月6日にイモラで最終戦を開く予備の案が準備されていた（The Race）。F1は11月10日、カタールとアブダビの2戦を予定どおり開くとチームに伝え（PlanetF1）、イモラには最終戦の開催は要らないと知らせた（The Race）。F1の広報は、地域の状況、とくにカタールとアブダビの状況は、ここ数か月で悪くなっていないと説明した。状況が悪くなれば対応するとしている（Crash.net）。"
    ],
    "examples": [
     {
@@ -21502,6 +21570,10 @@
     {
      "t": "F1のドメニカリ代表は、最後の2戦はカタールとアブダビと明言した。イモラは代わりの案として残る。",
      "u": "/news/de-motorsport-total-domenicali-finale-imola/"
+    },
+    {
+     "t": "FIAのビン・スライエム会長は11月10日、カタールGP（11月29日）とアブダビGP（12月6日）を予定どおり開くと明らかにした。",
+     "u": "/news/de-f1insider-fia-qatar-abudhabi-confirmed/"
     }
    ],
    "see": [
@@ -21545,10 +21617,15 @@
      "name": "Crash.net",
      "title": "F1 delivers update on Qatar and Abu Dhabi GPs as Imola ruled out（2026年11月10日、F1広報の説明）",
      "url": "https://www.crash.net/f1/news/1110062/1/f1-delivers-update-qatar-and-abu-dhabi-gps-imola-ruled-out"
+    },
+    {
+     "name": "F1-Insider.com",
+     "title": "FIA gibt Entscheidung für Abu Dhabi und Katar bekannt",
+     "url": "https://f1-insider.com/formel-1-fia-entscheidung-abu-dhabi-katar-83911/"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-10-07"
+   "checked": "2026-11-18"
   },
   {
    "id": "circuit-bahrain",
@@ -23787,6 +23864,10 @@
     {
      "t": "The Raceは、低い速さでMGU-Kを止める行為を防ぐ約60秒のロック機能が、雨の中で誤作動したと解説した。",
      "u": "/news/en-therace-software-bug-explained/"
+    },
+    {
+     "t": "米国GP後のFIAの抜き打ち検査で、ラッセルのW17は、内燃エンジンの吸気冷却系やセンサー、配線、SECUなどへの接続が調べられ、規則に適合と確認された。",
+     "u": "/news/en-planetf1-fia-russell-w17-inspection/"
     }
    ],
    "see": [
@@ -23797,7 +23878,7 @@
     "telemetry",
     "listed-parts"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "FIA",
@@ -23833,6 +23914,11 @@
      "name": "The Race",
      "title": "'Software bug' that triggered F1's Malaysia chaos explained",
      "url": "https://www.the-race.com/formula-1/software-bug-that-triggered-f1s-malaysia-chaos-explained/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA confirms George Russell findings after 'extensive' Mercedes inspection",
+     "url": "https://www.planetf1.com/news/fia-george-russell-mercedes-w17-inspection-austin"
     }
    ]
   },
@@ -24762,6 +24848,14 @@
     {
      "t": "アウディは、セパンのピット作業での危険な事案で3万ユーロの罰金を受けた。うち2万ユーロは執行猶予。",
      "u": "/news/de-motorsport-total-bahrain-analyse-norris-audi/"
+    },
+    {
+     "t": "メキシコGPのスチュワードは、ラッセルがレース後の義務的なメディア対応に出なかったとして、メルセデスに5000ユーロの罰金を科した。",
+     "u": "/news/en-therace-russell-fine-distraught-mexico/"
+    },
+    {
+     "t": "アウディはメキシコGPの金曜に、外付けの冷却器を付けたまま車を走らせた件（7500ユーロ）と、部品を布で覆って隠した件（5000ユーロ）の2件で罰金を受けた。",
+     "u": "/news/de-motorsportmagazin-audi-mexico-fines/"
     }
    ],
    "see": [
@@ -24773,7 +24867,7 @@
     "stewards",
     "scrutineering"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "FIA",
@@ -24794,6 +24888,16 @@
      "name": "PlanetF1",
      "title": "FIA confirms Audi punishment after Bahrain Grand Prix investigation",
      "url": "https://www.planetf1.com/news/fia-audi-bahrain-grand-prix-malaysia-2026-investigation"
+    },
+    {
+     "name": "The Race",
+     "title": "Mercedes explains 'distraught' Russell's post-race absence after fine",
+     "url": "https://www.the-race.com/formula-1/mercedes-explains-distraught-russells-post-race-absence-after-fine/"
+    },
+    {
+     "name": "Motorsport-Magazin",
+     "title": "Audi vergisst Kühler & versteckt Formel-1-Teile: 2 Strafen nach Mexiko-Trainings",
+     "url": "https://www.motorsport-magazin.com/formel1/news-301000-audi-vergisst-kuehler-versteckt-formel-1-teile-2-strafen-nach-mexiko-trainings/"
     }
    ]
   },
@@ -25005,7 +25109,7 @@
     "causing-collision",
     "sc-infringement"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "FIA",
@@ -25073,7 +25177,7 @@
     "unsafe-release",
     "penalty-points"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "FIA",
@@ -27392,7 +27496,7 @@
      "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_06_-_2026-04-28.pdf"
     }
    ],
-   "checked": "2026-10-07"
+   "checked": "2026-11-18"
   },
   {
    "id": "sc-pit-stop",
@@ -28184,6 +28288,10 @@
     {
      "t": "雨で2度スタートが延期されたセパンの決勝は、55周のレースになった。",
      "u": "/news/en-sky-sepang-verstappen-first-win/"
+    },
+    {
+     "t": "シンガポールでは、スプリントのスタートが豪雨で30分遅れ、予選も現地21時30分開始へ30分繰り下げられた。",
+     "u": "/news/en-rn365-singapore-qualifying-delay/"
     }
    ],
    "see": [
@@ -28199,7 +28307,7 @@
     "rain-hazard",
     "lap-count"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "RaceFans",
@@ -28250,6 +28358,11 @@
      "name": "Formula1.com",
      "title": "Belgian GP stewards push back time limit for the race after heavy rain delays running at Spa",
      "url": "https://www.formula1.com/en/latest/article/belgian-gp-stewards-push-back-time-limit-for-the-race-after-heavy-rain.5aNfsiIuPChNABaagsgyY5"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "F1 qualifying delay confirmed after torrential downpour triggers Singapore Sprint chaos",
+     "url": "https://racingnews365.com/f1-qualifying-delay-confirmed-after-torrential-downpour-triggers-singapore-sprint-chaos"
     }
    ]
   },
@@ -28285,6 +28398,10 @@
     {
      "t": "セパン予選の並びには、ハジャーらのグリッド降格も絡んだ。",
      "u": "/news/en-planetf1-sepang-qualifying-report/"
+    },
+    {
+     "t": "フェルスタッペンは、アメリカGP予選でアントネッリと約0.2秒差の2番手となり、フロントロウから決勝に臨むことになった。",
+     "u": "/news/nl-racingnews365-verstappen-kangaroo-austin/"
     }
    ],
    "see": [
@@ -28295,7 +28412,7 @@
     "race-start",
     "start-line"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "Malay Mail",
@@ -28311,6 +28428,11 @@
      "name": "Formula One History",
      "title": "2026 Bahrain Grand Prix in Malaysia: F1 Race, Qualifying & Winners",
      "url": "https://www.formulaonehistory.com/2026-bahrain-grand-prix-in-malaysia/"
+    },
+    {
+     "name": "RacingNews365",
+     "title": "Verstappen blijft verbaasd achter: \"Auto stuiterde als een kangoeroe!\"",
+     "url": "https://racingnews365.nl/verstappen-blijft-verbaasd-achter-auto-stuiterde-als-een-kangoeroe"
     }
    ]
   },
@@ -28458,7 +28580,8 @@
    "body": [
     "Bスペックは、シーズンの途中で、フロアやサイドポッドなど多くの部品をまとめて変えた改良版のマシンを指す言葉だ。正式な分類ではなく、報道やチームが使う呼び名で、どこからを「B」と呼ぶかの決まりはない。ふつうの小さな改良は、アップグレード（アップデート）と呼ぶ。",
     "有名な例が、2022年のアストンマーティンだ。スペインGP（バルセロナ）で、フロア、サイドポッドの入口、エンジンカバー、放熱のルーバー、リアウイングなど8か所を変えた「BスペックのAMR22」を投入した。見た目がレッドブルRB18に似ていたため話題になったが、FIAは独自に開発した正当な改良だと確認した。",
-    "2026年は、セパンでメルセデスがW17の7か所を変える大型の改良を入れた。5月のカナダ以来の大きな改良で、約0.3秒の向上を見込んだが、ウォルフ代表は「0.3〜0.5秒、逆に遅くなったように見える」と話した。前の仕様に戻そうにも、古い部品は寿命が近く、作り直すと予算上限を使ってしまう。RacingNews365は、この改良について「W17の空力の考え方を作り直すものではなく、性能を磨くもの」としている。"
+    "2026年は、セパンでメルセデスがW17の7か所を変える大型の改良を入れた。5月のカナダ以来の大きな改良で、約0.3秒の向上を見込んだが、ウォルフ代表は「0.3〜0.5秒、逆に遅くなったように見える」と話した。セパンの直後には、前の仕様に戻そうにも、古い部品は寿命が近く、作り直すと予算上限を使ってしまうと伝えられていた。RacingNews365は、この改良について「W17の空力の考え方を作り直すものではなく、性能を磨くもの」としている。",
+    "メルセデスは次のシンガポールで、ラッセルの車をセパンの改良の前の仕様に戻し、アントネッリの車は新しい仕様のままとした。ラッセルは、PU交換でグリッド降格を受ける週末だったことが、仕様を戻す良い機会になったと話した。スプリントの週末で、新旧の仕様を練習走行の中で入れ替えて比べるのは現実的でなく、2台は週末を通してそれぞれの仕様で走ることになった（The Race）。"
    ],
    "examples": [
     {
@@ -28468,6 +28591,10 @@
     {
      "t": "メルセデスは約0.3秒の向上を見込んだ大型アップグレードを持ち込んだが、予選は今季最も厳しい内容になった。",
      "u": "/news/en-therace-mercedes-upgrade-letdown/"
+    },
+    {
+     "t": "ラッセルはシンガポールで大型アップグレードを使わず、旧仕様に戻した車で走ることになった。アントネッリは新しい空力部品を使い続けた。",
+     "u": "/news/en-therace-russell-ditches-upgrade/"
     }
    ],
    "see": [
@@ -28479,7 +28606,7 @@
     "wind-tunnel",
     "cfd"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "PlanetF1",
@@ -28500,6 +28627,11 @@
      "name": "The Race",
      "title": "'Gone backwards' - Mercedes's upgrade letdown explained",
      "url": "https://www.the-race.com/formula-1/gone-backwards-mercedess-upgrade-letdown-explained/"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Russell is ditching Mercedes' major F1 upgrade",
+     "url": "https://www.the-race.com/formula-1/why-russell-is-ditching-mercedes-major-f1-upgrade/"
     }
    ]
   },
@@ -28543,7 +28675,7 @@
     "apex",
     "high-speed-circuit"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "The Race",
@@ -28605,7 +28737,7 @@
     "seat",
     "qualifying-tiebreak"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "RacingNews365",
@@ -28643,7 +28775,7 @@
     "2026年のF1では、全車が同じ電子制御ユニット（標準ECU）を積み、その中で動くソフトの一部は全車に共通だ。FIAのニコラス・トンバジス（シングルシーター部門ディレクター）は、このソフトを「FIAがチームと協力して開発した、全車に共通の標準のコード」と説明している。電気の力の出し方など、規則で決まった制限を守らせる役目がある（→標準ECU）。",
     "たとえば雨の走行では、電気の力の上限を250kWに抑える専用のエンジンモードが決められている。乾いた路面での上限は350kWだ。また今季は、チームがわざとMGU-Kを止める行為を防ぐため、60秒間の「緊急ロック」が入った。これが作動すると、エンジン（ICE）の力まで出なくなることがある（ザ・レース）。",
     "2026年10月4日のセパンの決勝（バーレーンGP・イン・マレーシア）では、雨のフォーメーションラップで複数台が力を失い、止まりかけた。FIAは、エンジン回転の低さ、滑りやすい路面、雨用のエネルギー設定、セパンの区間の設定が、前例のない形で重なったためと説明した。ザ・レースによると、とてもゆっくり走るうちにターボの過給圧が下がり、MGU-Kの助けも得られなかった。問題が起きたターン9は、250kWの制限がかかる区間の1つだった。",
-    "FIAは、問題の区間のエネルギー制限を外した修正版のソフトを全チームに配り、各チームはスタート前にPUへ入れた。シンガポールGPで雨になった場合も、この暫定版を使う。そのうえで、米国GPで新しい雨天用のソフトを入れる（ザ・レース、2026年10月8日）。ザ・レースによると、FIAはこのソフトをベルギーとオランダのFP1でも試していたと説明した。トンバジスは、最初の版は「テストはしていた。ただ、あの特定の条件では試していなかった」と話し、「この特定の問題が二度と起きないことは保証できる。だが、問題がまったく起きないとは保証できない」とも述べた。"
+    "FIAは、問題の区間のエネルギー制限を外した修正版のソフトを全チームに配り、各チームはスタート前にPUへ入れた。シンガポールGPで雨になった場合も、この暫定版を使うとした。そのうえで、米国GPで新しい雨天用のソフトを入れるとした（ザ・レース、2026年10月8日）。FIAは米国GPの前に、雨天用のソフトにさらに変更を入れると確認し、オースティンのFP1の終わりに、低グリップ用の設定で車をターン15付近で短くゆっくり走らせる追加のテストを予定した（GPblog、2026年10月23日）。ザ・レースによると、FIAはこのソフトをベルギーとオランダのFP1でも試していたと説明した。トンバジスは、最初の版は「テストはしていた。ただ、あの特定の条件では試していなかった」と話し、「この特定の問題が二度と起きないことは保証できる。だが、問題がまったく起きないとは保証できない」とも述べた。"
    ],
    "examples": [
     {
@@ -28671,7 +28803,7 @@
     "control-electronics",
     "ers"
    ],
-   "checked": "2026-10-09",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "The Race",
@@ -28692,6 +28824,11 @@
      "name": "The Race",
      "title": "Everything we learned from F1's Malaysia return（トンバジス「この特定の問題なら保証できる」）",
      "url": "https://www.the-race.com/formula-1/everything-we-learned-from-f1-malaysia-return/"
+    },
+    {
+     "name": "GPblog",
+     "title": "FIA announces unusual FP1 test in Austin after Malaysia chaos",
+     "url": "https://www.gpblog.com/en/news/sepang-software-chaos-prompts-fia-to-test-unusual-procedure-during-austin-fp1"
     }
    ]
   },
@@ -28730,8 +28867,8 @@
      "u": "/news/en-rn365-honda-hrc-leadership/"
     },
     {
-     "t": "HRCの渡辺社長は、今季のADUOを2回使ったと述べ、PUの性能はまだ引き出せていないとの認識を示した。",
-     "u": "/news/ja-f1jouhou-honda-aduo-untapped/"
+     "t": "HRCの渡辺康治社長は、2023年の復帰発表が競合より約1年遅れたことで、実質ほぼ2年を失ったと語った。",
+     "u": "/news/de-motorsporttotal-hrc-president-honda-struggle/"
     }
    ],
    "see": [
@@ -28740,7 +28877,7 @@
     "customer-team",
     "aduo"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "Honda Racing 公式",
@@ -28766,6 +28903,11 @@
      "name": "Honda 公式",
      "title": "HRCの歴史 1980年代",
      "url": "https://www.honda.co.jp/HRC/company/history/1980/"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "HRC-Präsident exklusiv: Darum läuft es bei Honda so schlecht!",
+     "url": "https://www.motorsport-total.com/formel-1/news/hrc-praesident-exklusiv-darum-laeuft-es-bei-honda-so-schlecht-26101904"
     }
    ]
   },
@@ -28809,7 +28951,7 @@
     "track-evolution",
     "circuit-sepang"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "The Race",
@@ -28868,8 +29010,8 @@
      "u": "/news/en-planetf1-alpine-abuse-statement/"
     },
     {
-     "t": "アルピーヌは、ノリスへの中傷も非難し、F1やFIA、各チームが一体で取り組むべき問題だと訴えた。",
-     "u": "/news/ja-f1gate-alpine-norris-abuse/"
+     "t": "ノリスは、コラピントの出場停止を求めた発言をインスタグラムで謝罪した。アルピーヌはSNS上の中傷を非難する声明を出した。",
+     "u": "/news/en-therace-norris-apologises-colapinto/"
     }
    ],
    "see": [
@@ -28878,7 +29020,7 @@
     "stewards",
     "race-ban"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "Autosport",
@@ -28904,6 +29046,11 @@
      "name": "Motorsport.com（inkl転載）",
      "title": "Lando Norris rues online abuse, explains Franco Colapinto apology",
      "url": "https://www.inkl.com/news/lando-norris-rues-online-abuse-explains-franco-colapinto-apology"
+    },
+    {
+     "name": "The Race",
+     "title": "Norris apologises to Colapinto for race ban demand",
+     "url": "https://www.the-race.com/formula-1/norris-apologises-colapinto-for-race-ban-demand-f1-baku-crash/"
     }
    ]
   },
@@ -28929,13 +29076,21 @@
    "short": "ドライバーの代わりにチームと契約を交渉し、仕事全体を支える人。",
    "body": [
     "F1ドライバーの多くには、マネージャーがいる。F1公式のポッドキャスト「F1 Nation」は、マネージャーを「代理人と相談役を合わせたような存在」と紹介している。できるだけ良い契約をまとめるのが大きな仕事で、忙しい生活の段取りも引き受ける（→ドライバー市場）。",
-    "元F1ドライバーがマネージャーになる例もある。マクラーレンのピアストリのマネージャーは、マーク・ウエーバーだ。2022年、アルピーヌはピアストリを翌年の正ドライバーと発表したが、本人は否定した。契約の争いを扱う契約承認委員会（CRB）は2022年9月2日、2023年の契約として有効なのはマクラーレンとのものだけだと判断した。アルピーヌとは、2022年より先の契約が結ばれていなかった。",
+    "元F1ドライバーがマネージャーになる例もある。マクラーレンのピアストリは、2019年からマーク・ウエーバーにマネジメントを任せていた。2022年、アルピーヌはピアストリを翌年の正ドライバーと発表したが、本人は否定した。契約の争いを扱う契約承認委員会（CRB）は2022年9月2日、2023年の契約として有効なのはマクラーレンとのものだけだと判断した。アルピーヌとは、2022年より先の契約が結ばれていなかった。2026年11月9日、ウエーバーは、今季はサーキットでの関与が減っていたとして、双方合意の上でマネジメント契約を終えると発表した。ピアストリは、これからの体制を明らかにしていない（PlanetF1）。",
     "フェラーリのルクレールのマネージャーは、ほかのドライバーのマネジメントも手がけるニコラ・トッドだ。ルクレールは2026年9月、引退後はドライバーのマネージャーの仕事を「いつか、100％やる」と話し、トッドとも相談したと明かした。"
    ],
    "examples": [
     {
      "t": "ルクレールは、引退後はドライバーのマネジメントの仕事をしたいと明言し、マネージャーのトッドともこの件を話したという。",
      "u": "/news/de-f1insider-leclerc-manager/"
+    },
+    {
+     "t": "ピアストリは11月9日、2019年から続いたマーク・ウエーバーらのマネジメントチームとの契約を、双方合意の上で終えたと明らかにした。",
+     "u": "/news/en-planetf1-piastri-webber-split/"
+    },
+    {
+     "t": "カマラを担当するマネージャーのエンリコ・ザナリーニ氏は、マルコ氏が率いていた頃のレッドブルとは「有意義な対話は事実上不可能だった」と語った。",
+     "u": "/news/nl-f1maximaal-zanarini-red-bull-marko/"
     }
    ],
    "see": [
@@ -28945,7 +29100,7 @@
     "junior-programme",
     "pay-driver"
    ],
-   "checked": "2026-10-07",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "RacingNews365",
@@ -28971,6 +29126,16 @@
      "name": "autosport web",
      "title": "ピアストリのマネージャー、ウエーバーが、フェルスタッペンとの交代説を「ナンセンス」と一蹴",
      "url": "https://www.as-web.jp/f1/1334556"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Oscar Piastri splits with manager Mark Webber in shock announcement",
+     "url": "https://www.planetf1.com/news/oscar-piastri-mark-webber-management-split"
+    },
+    {
+     "name": "F1Maximaal",
+     "title": "Manager haalt fel uit: 'Met Red Bull en Marko onmogelijk een zinvolle dialoog aan te gaan'",
+     "url": "https://www.f1maximaal.nl/formule-1/manager-haalt-fel-uit-met-red-bull-en-marko-onmogelijk-een-zinvolle-dialoog-aan-te-gaan"
     }
    ]
   },
@@ -29007,6 +29172,18 @@
     {
      "t": "アストンマーティンのクラックは、止まった車を元の位置に戻したFIAの判断について、手順を中止したのは正しかったと述べた。",
      "u": "/news/es-motorsport-krack-alonso-fia/"
+    },
+    {
+     "t": "オースティンでは金曜だけで207周のタイムが抹消され、レースディレクターのマルケスが12・15・20コーナーの白線を広げた。",
+     "u": "/news/nl-gpblog-fia-track-limits-207-austin/"
+    },
+    {
+     "t": "FIAは英ビギンヒルに遠隔運用センターを置き、レースディレクションとスチュワードを支える。判断はこれまでどおりレースディレクションとスチュワードが下す。",
+     "u": "/news/de-motorsporttotal-fia-remote-ops-centre/"
+    },
+    {
+     "t": "サンパウロGPの雨の予選は、マルケス・レースディレクターが、セーフティカーのドライバーの判断を受けて始めた。",
+     "u": "/news/en-therace-brazil-wet-race-horrific-incident/"
     }
    ],
    "see": [
@@ -29018,7 +29195,7 @@
     "heat-hazard",
     "fia"
    ],
-   "checked": "2026-10-09",
+   "checked": "2026-11-18",
    "src": [
     {
      "name": "FIA",
@@ -29049,6 +29226,21 @@
      "name": "Motorsport Week",
      "title": "Why was a glitch allowed to break F1 in Sepang?（2026年10月7日）",
      "url": "https://www.motorsportweek.com/2026/10/07/why-was-a-glitch-allowed-to-break-f1-in-sepang/"
+    },
+    {
+     "name": "GPblog",
+     "title": "FIA grijpt in na 207 overtredingen van coureurs in Austin",
+     "url": "https://www.gpblog.com/nl/nieuws/fia-grijpt-in-na-207-overtredingen-van-coureurs-in-austin"
+    },
+    {
+     "name": "Motorsport-Total.com",
+     "title": "FIA eröffnet neue F1-Kommandozentrale: Was sich jetzt ändern soll",
+     "url": "https://www.motorsport-total.com/formel-1/news/fia-eroeffnet-neue-f1-kommandozentrale-was-sich-jetzt-aendern-soll-26102103"
+    },
+    {
+     "name": "The Race",
+     "title": "Why F1 risks 'horrific incident' if Brazilian GP perils are repeated",
+     "url": "https://www.the-race.com/formula-1/why-f1-risks-horrific-incident-if-brazilian-gp-risks-are-repeated/"
     }
    ]
   },
@@ -36590,6 +36782,274 @@
     }
    ],
    "checked": "2026-11-13"
+  },
+  {
+   "id": "international-court-of-appeal",
+   "term": "国際控訴裁判所（ICA）",
+   "aliases": [
+    "International Court of Appeal",
+    "FIA国際控訴裁判所",
+    "FIA控訴裁",
+    "こくさいこうそさいばんしょ"
+   ],
+   "cat": "ペナルティ",
+   "short": "国際的なモータースポーツで、控訴を最後に審理するFIAの裁判機関。F1では、スチュワードの裁定に納得できないチームが訴える先になる。",
+   "body": [
+    "FIAの説明では、国際控訴裁判所（ICA）は国際的なモータースポーツの最後の控訴審で、FIAの規約と国際モータースポーツ競技規則にもとづいて置かれている。FIAの本体の組織から切り離された独自の運営体制を持つ、独立した機関だという。裁判官はFIA総会が選ぶ。2026年6月26日から適用のFIA規約では、選挙は2年ごとで、任期は4年だ。",
+    "国際モータースポーツ競技規則では、FIAの選手権での控訴はICAが扱う（15.1.5）。控訴するチームは、裁定の公表から1時間以内に、控訴する意思をスチュワードへ書面で伝えなければならない（15.4.2 a）。ドライブスルーやストップ＆ゴーのように、控訴できない罰もある（12.3.4）。抗議と再審査はスチュワードに申し立てる手続きで、控訴はスチュワードの判断をICAに改めて審理してもらう手続きだ。",
+    "2026年は、モナコGPのガスリーの件がICAに持ち込まれた。アルピーヌの再審査で、ピットレーンの速度違反による2回の5秒加算がいったん取り消されたが、マクラーレンとレッドブルが控訴した。RACERが9月4日に伝えた判断で、ICAは加算を元に戻し、ハジャーが3位に戻って、ガスリーは7位になった。ICAは、ほかのドライバーと同じ基準で判定しなければ、平等な扱いに反するとした（RACER）。アルピーヌのブリアトーレが裁判官の公平さを疑うと、ICAは9月5日、すべての裁判官はFIA総会で選ばれ、事件ごとに独立を誓う書面を当事者に示していると反論した（RACER）。",
+    "2026年11月には、イタリアGPの角田裕毅をめぐるアウディの控訴が続いている。角田がグリッドの枠の中で車を斜めに止め、レースディレクターが追加のフォーメーションラップを決めたが、スチュワードは角田に罰を科さなかった。アウディは規則B5.9.4の適用に懸念があるとして控訴し、ICAは11月25日にパリで審理する（PlanetF1）。審理はFIAの求めで非公開だ。30秒加算になれば、角田は15位に下がり、ボルトレートが10位に上がる（The Race）。"
+   ],
+   "rule": "国際スポーティングコード（2026年版）12.3.4（控訴できない罰）、15.1.5（FIAの選手権の控訴先）、15.4.2 a（裁定の公表から1時間以内の控訴の意思の通知）／FIA規約（2026年6月26日適用）10.6、10.6.4（裁判官の選挙と任期）",
+   "words": [
+    "控訴",
+    "上訴",
+    "裁判",
+    "パリ",
+    "裁定への不服",
+    "審理"
+   ],
+   "see": [
+    "protest",
+    "right-of-review",
+    "stewards",
+    "aborted-start",
+    "fia"
+   ],
+   "examples": [
+    {
+     "t": "アウディの角田裕毅ペナルティ控訴、11月25日にパリで審理。FIAの要請で非公開",
+     "u": "/news/en-therace-audi-tsunoda-appeal-hearing/"
+    },
+    {
+     "t": "イタリアGPの結果は今も確定せず。アウディの抗議をめぐる国際控訴裁判所の審理は25日",
+     "u": "/news/nl-f1maximaal-italy-gp-result-audi-protest/"
+    },
+    {
+     "t": "アウディのモンツァ抗議、FIA国際控訴裁判所が11月25日にパリで審理",
+     "u": "/news/de-f1insider-audi-tsunoda-appeal-hearing/"
+    }
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "International Court of Appeal（\"the final appeal tribunal for international motor sport\"、FIAの本体から切り離された独自の運営体制、裁判官はFIA総会が選ぶ）",
+     "url": "https://api.fia.com/international-court-appeal"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 International Sporting Code（2026年6月25日、12.3.4、15.1.5、15.4.2）",
+     "url": "https://www.fia.com/system/files/documents/2026_international_sporting_code_fr-en_clean_version_25.06.2026.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Statutes（2026年6月26日適用、10.6、10.6.4）",
+     "url": "https://www.fia.com/sites/default/files/2026_fia_statutes_fr-en_0.pdf"
+    },
+    {
+     "name": "RACER",
+     "title": "Hadjar's Monaco podium reinstated on appeal as Gasly loses out（2026年9月4日）",
+     "url": "https://racer.com/2026/09/04/hadjar-s-monaco-podium-reinstated-on-appeal-as-gasly-loses-out"
+    },
+    {
+     "name": "RACER",
+     "title": "ICA hits back at Briatore's impartiality claims（2026年9月5日）",
+     "url": "https://racer.com/2026/09/05/ica-hits-back-at-briatore-s-impartiality-claims"
+    },
+    {
+     "name": "The Race",
+     "title": "Hearing set for Audi Tsunoda appeal（2026年11月12日、B5.9.4、非公開、30秒加算なら15位）",
+     "url": "https://www.the-race.com/formula-1/audi-appeal-f1-italian-gp-yuki-tsunoda/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA sets court hearing date in Audi F1 appeal against Yuki Tsunoda（2026年11月13日）",
+     "url": "https://www.planetf1.com/news/fia-court-audi-yuki-tsunoda-appeal"
+    }
+   ],
+   "checked": "2026-11-18"
+  },
+  {
+   "id": "media-accreditation",
+   "term": "取材資格（メディア・アクレディテーション）",
+   "aliases": [
+    "メディアアクレディテーション",
+    "メディアパス",
+    "取材パス",
+    "記者証",
+    "media accreditation",
+    "しゅざいしかく"
+   ],
+   "cat": "レース運営",
+   "short": "F1の会場で取材するための許可。書く記者と写真家にはFIAが出し、テレビやラジオはF1の運営会社が扱う。",
+   "body": [
+    "F1の会場で記者や写真家として取材するには、取材資格が要る。FIAによると、FIAが資格を出すのは文章を書く記者と写真家だけで、放送局、テレビ、ラジオなどの資格はフォーミュラ・ワン・マネジメント（FOM）が扱う。",
+    "資格には、1年を通して使える常時の資格と、1戦ごとの資格がある。常時の資格は、前のシーズンに14戦以上来ていることが条件だ。1戦ごとの資格は、レースの4週間以上前に申し込む（FIA）。",
+    "FIAの2026年の指針は、資格を職業の記者と写真家に限るとしている。広告や広報の会社、SNSの担当者、インフルエンサー、スポンサーやチーム、ドライバーの代理人は対象にならない。資格はFIAの裁量だけで出すもので、予告なしにいつでも取り消せると書かれている。ウェブサイトの申請は、条件をすべて満たしても断られることがある。メディアには、公正さと正確さで最も高い水準が求められる。",
+    "2026年11月、FIAは英デイリー・メール紙のF1担当記者の取材資格を、2026年の残りのシーズンについて一時的に取り消した。11月4日のコラムでルクレールを侮辱的な言葉で呼んだことが発端だ。FIAは、記事がプロとして求められる水準に届かなかったとし、同紙が別の記者を出すことは妨げないと説明した。記者本人は、FIAから年末までの取り消しで、来季の初めに資格が戻ると告げられたと書いている（Front Office Sports）。同紙は、ラスベガス、カタール、アブダビの残り3戦で、レースと会見の報道をやめると発表し、スポーツ部門の責任者は、報道の自由への前例のない攻撃だと抗議した（GPblog）。"
+   ],
+   "words": [
+    "記者",
+    "取材",
+    "パス",
+    "報道",
+    "資格停止",
+    "ボイコット"
+   ],
+   "see": [
+    "media-pen",
+    "media-day",
+    "fia",
+    "f1-group"
+   ],
+   "examples": [
+    {
+     "t": "FIA、英紙記者の取材資格を停止。ルクレール批判のコラムが発端",
+     "u": "/news/nl-f1maximaal-fia-suspends-mcevoy-leclerc/"
+    },
+    {
+     "t": "デイリー・メール紙、ラスベガスなど残り3戦の取材をボイコット。FIAの記者資格停止に反発",
+     "u": "/news/de-f1insider-daily-mail-boycott-mcevoy/"
+    }
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "FIA Media Centre – Media accreditation（FIAは記者と写真家のみ、放送などはFormula One Management、常時の資格は前のシーズン14戦以上、1戦ごとは4週間前まで）",
+     "url": "https://www.fia.com/media-center/media_accreditation"
+    },
+    {
+     "name": "FIA",
+     "title": "Guidelines for the 2026 FIA Formula One World Championship（取材資格の指針）",
+     "url": "https://www.fia.com/file/410527/download"
+    },
+    {
+     "name": "Front Office Sports",
+     "title": "FIA Bans F1 Journalist for Calling Driver a 'Sneaky Little Bastard'（2026年11月13日、FIAの声明）",
+     "url": "https://frontofficesports.com/?p=255987"
+    },
+    {
+     "name": "GPblog",
+     "title": "British newspaper boycotts F1 as FIA bans journalist after Leclerc column（2026年11月14日、残り3戦の報道の取りやめ）",
+     "url": "https://www.gpblog.com/en/news/british-newspaper-boycotts-f1-as-fia-bans-journalist-after-leclerc-column"
+    }
+   ],
+   "checked": "2026-11-18"
+  },
+  {
+   "id": "fia-general-assembly",
+   "term": "FIA総会",
+   "aliases": [
+    "FIA年次総会",
+    "FIA臨時総会",
+    "FIA General Assembly",
+    "えふあいえーそうかい"
+   ],
+   "cat": "チームとビジネス",
+   "short": "FIAに加盟する各国の団体が集まる会議。会長や評議会、裁判官を選び、規約の改正を承認する。通常の総会は年に1回開く。",
+   "body": [
+    "FIA総会は、FIAに加盟する団体の代表団が集まる会議だ。FIAの規約は、総会が主権を持つと定めている。通常の総会は毎年1回開く。FIAに代表を出す国の5分の1以上の加盟団体の求めか、上院（セネト）の決議があれば、会長が臨時の総会を開く。決定はふつう過半数で、票が同じときは会長が決める（FIA規約 9.3、12.1）。",
+    "総会の大きな役目は選挙だ。会長を含む名簿と、世界モータースポーツ評議会（WMSC）のメンバーを4年ごとに選び、国際控訴裁判所などの裁判官を2年ごとに選ぶ。規約の改正も総会が承認する（FIA規約 10.4〜10.6、10.9）。2025年12月12日にウズベキスタンのタシケントで開いた年次総会では、ビン・スライエム会長が2期目に再選され、WMSCの14人と、国際裁定所と国際控訴裁判所の18人が選ばれた。国際モータースポーツ競技規則の改正も承認された（FIA）。",
+    "2026年6月には、マカオの臨時総会で、会長の在任を最長12年（4年を3期）とする上限がなくなった（RACER）。その後の規約は、FIAの役職に就く人は選挙の日に75歳未満、会長は70歳未満でなければならないとしている（8.2）。2026年11月、英BBCは、役職者の年齢の上限をなくす案が12月の総会に出されると報じた。FIAの広報は、総会で可決されて初めて効力を持つと説明した（Crash.net）。",
+    "FIAは2025年12月の発表で、次の年次総会を2026年12月12日に上海で開くとしていた。同じ日には上海でFIAの年間表彰式も開かれる（FIA）。"
+   ],
+   "rule": "FIA規約（2026年6月26日適用）8.2（年齢の条件）、9.3.1（通常の総会は毎年）、9.3.3（臨時の総会）、10（総会の権限）、10.4〜10.6（選挙）、10.9（規約の改正の承認）、12.1（過半数と会長の決定票）",
+   "words": [
+    "会長選挙",
+    "規約改正",
+    "任期",
+    "年齢制限",
+    "加盟団体",
+    "投票"
+   ],
+   "see": [
+    "fia",
+    "wmsc",
+    "international-sporting-code"
+   ],
+   "examples": [
+    {
+     "t": "FIA、役員の75歳定年の撤廃を提案へ。12月の総会に諮る（BBC報道）",
+     "u": "/news/en-planetf1-fia-age-limit-proposal/"
+    }
+   ],
+   "src": [
+    {
+     "name": "FIA",
+     "title": "FIA Statutes（2026年6月25日の臨時総会で採択、6月26日適用。8.2、9.3、10、12.1）",
+     "url": "https://www.fia.com/sites/default/files/2026_fia_statutes_fr-en_0.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Annual General Assemblies: December 2025（2025年12月12日、タシケント）",
+     "url": "https://api.fia.com/news/fia-annual-general-assemblies-december-2025"
+    },
+    {
+     "name": "RACER",
+     "title": "FIA removes limits on presidential terms and tightens eligibility criteria（2026年6月25日）",
+     "url": "https://racer.com/2026/06/25/fia-removes-limits-on-presidential-terms-and-tightens-eligibility-criteria"
+    },
+    {
+     "name": "Crash.net",
+     "title": "FIA boss looking to make controversial change to presidency rule（2026年11月14日、BBCの報道）",
+     "url": "https://www.crash.net/f1/news/1110114/1/fia-boss-looking-make-controversial-change-presidency-rule"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Awards set for Shanghai spectacular（2026年12月12日、上海）",
+     "url": "https://www.fia.com/news/fia-awards-set-shanghai-spectacular"
+    }
+   ],
+   "checked": "2026-11-18"
+  },
+  {
+   "id": "team-valuation",
+   "term": "チームの評価額（企業価値）",
+   "aliases": [
+    "チームの企業価値",
+    "チーム評価額",
+    "team valuation",
+    "ちーむのひょうかがく"
+   ],
+   "cat": "チームとビジネス",
+   "short": "F1チームという会社に、どれだけの値打ちがあるかを示す金額。多くは報道機関の推計で、実際に売り買いされた値段とは別だ。",
+   "body": [
+    "F1チームは会社で、株が売り買いされて持ち主が変わることがある（→チームのオーナー（株主））。評価額は、その会社全体にどれだけの値打ちがあるかを示す金額だ。よく報じられるのは、スポーツビジネス媒体スポーティコの推計だ。",
+    "ロイターによると、スポーティコは2026年11月、全11チームの評価額を発表した。1位はフェラーリの82億ドルで、2025年より28%増えた。2位はメルセデスの77.5億ドル、3位はマクラーレンの63億ドル、4位はレッドブルの56億ドルで、最下位は新しく加わったキャデラックの27億ドルだった。平均は45.5億ドルで、伸びは平均33%と、NFL（30%）やNBA（28%）を上回った。",
+    "実際の売り買いでは、別の数字が出る。2025年9月、バーレーンの政府系ファンドのムムタラカトとアブダビのCYVNホールディングスが、マクラーレン・レーシングの残りの株を買い取り、チームを完全に持つことになった。このときの評価は、報道によって30億ポンド近く、約50億ドルと分かれた。2020年には5億6000万ポンドと評価されていた（Motor Sport Magazine）。"
+   ],
+   "words": [
+    "いくらの価値",
+    "億ドル",
+    "売却",
+    "株",
+    "スポーティコ",
+    "ランキング"
+   ],
+   "see": [
+    "team-ownership",
+    "prize-money",
+    "anti-dilution"
+   ],
+   "examples": [
+    {
+     "t": "F1チームの価値ランキング。フェラーリ82億ドルで首位、メルセデスが続く（スポーティコの推計）",
+     "u": "/news/de-f1insider-team-values-sportico/"
+    }
+   ],
+   "src": [
+    {
+     "name": "TimesLIVE（ロイター）",
+     "title": "Ferrari tops F1 team valuations at $8.2bn（2026年11月13日、スポーティコの推計）",
+     "url": "https://www.timeslive.co.za/motoring/2026-11-13-ferrari-tops-f1-team-valuations-at-82bn/"
+    },
+    {
+     "name": "Motor Sport Magazine",
+     "title": "McLaren F1 team taken over by Bahrain and Abu Dhabi wealth funds（2025年9月3日）",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/mclaren-f1-team-taken-over-by-bahrain-and-abu-dhabi-wealth-funds"
+    }
+   ],
+   "checked": "2026-11-18"
   }
  ],
  "sources": [
