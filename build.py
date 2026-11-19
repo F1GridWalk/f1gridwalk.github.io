@@ -46,7 +46,7 @@ e = lambda s: html.escape(str(s if s is not None else ''), quote=True)
 
 
 # who publishes the summaries and columns (structured data for search engines)
-PUBLISHER = {'@type': 'Organization', 'name': 'F1 Grid Walk', 'alternateName': 'F1グリッドウォーク', 'url': SITE + '/',
+PUBLISHER = {'@type': 'Organization', 'name': 'F1 Grid Walk', 'alternateName': 'F1グリッドウォーク', 'url': SITE + '/', 'publishingPrinciples': SITE + '/about/',
              'logo': {'@type': 'ImageObject', 'url': SITE + '/icon-512.png', 'width': 512, 'height': 512}}
 
 
@@ -235,6 +235,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="max-image-preview:large">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{e(canonical)}">
@@ -270,7 +271,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 {body}
 </main>
 <footer><div class="wrap">
-  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a></p>
+  <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a>　<a href="/about/">運営者情報・編集方針</a></p>
   <p>記事の著作権は各媒体に帰属します。当サイトは見出しの翻訳と独自の短い要約、原文へのリンクを掲載しています。F1 Grid Walk は非公式のファンサイトで、Formula 1 および FIA とは関係ありません。</p>
 </div></footer>
 {bottom_tabs(canonical)}
@@ -3371,6 +3372,34 @@ def build_bosses(teams, order):
     return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
 
 
+def build_about():
+    """about/ — who runs the site and how its pieces are made (owner's OK, 20 Nov 2026; for Google Discover / E-E-A-T)."""
+    secs = [
+        ('このサイトについて', [
+            'F1 Grid Walk（F1グリッドウォーク）は、世界のF1ニュースを日本語で読めるようにする、非公式のファンサイトです。運営は「F1 Grid Walk 編集部」です。',
+            'Formula 1、FIA、各チームとは関係ありません。',
+            '更新は毎日です。']),
+        ('記事の作り方', [
+            '<b>ニュース</b>：海外と日本のF1媒体の記事から、見出しの翻訳と、独自の短い要約を作り、元の記事へのリンクを付けています。翻訳と要約には AI を使っています。どの媒体を読むか、どう要約するかの決まりは編集部が決め、AI はそれに沿って作業します。記事の著作権は、それぞれの媒体にあります。',
+            '<b>コラム・STORY・DEEP</b>：複数の報道や公式の発表を読み比べて、背景や意味をまとめた読み物です。AI を使って書いていますが、事実は公式の資料や信頼できる報道で確かめてから載せます。確かめられないことは書かず、推測は推測と分かるように書きます。',
+            '<b>用語・人物辞典</b>：F1の用語と、ドライバー、エンジニア、チーム代表などの人物を説明しています。肩書きや経歴は出典を確かめて載せ、各ページに確かめた日と出典を書いています。',
+            '<b>ファンの声</b>：公開されている声を、出どころを書いたうえで短く引用・要約しています。']),
+        ('間違いの訂正', [
+            '間違いが分かったときは、はっきり訂正します。人物辞典の「確認した日」も、そのときに新しくします。']),
+        ('アクセス解析', [
+            'ページがどれくらい読まれたかを知るために、GoatCounter を使っています。Cookie を使わず、個人を特定する情報は集めない仕組みです。']),
+    ]
+    body = (_crumb('運営者情報・編集方針') + '<div class="xp"><h1>運営者情報・編集方針</h1>'
+            + ''.join(f'<h2 class="rbp-sh">{e(h)}</h2>' + ''.join(f'<p class="lead">{x}</p>' for x in ps) for h, ps in secs)
+            + '<p class="lead" style="margin-top:18px"><a href="/">← トップへ</a></p></div>')
+    url = SITE + '/about/'
+    ld = {'@context': 'https://schema.org', '@type': 'AboutPage', 'name': '運営者情報・編集方針', 'url': url, 'publisher': PUBLISHER}
+    write('about/index.html', page('運営者情報・編集方針｜F1グリッドウォーク',
+          'F1 Grid Walk（F1グリッドウォーク）の運営者と、ニュース・コラム・用語辞典の作り方、AI の使い方、訂正の方針。', url, body,
+          f'<style>{XP_CSS}</style>\n<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', og_type='website'))
+    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'monthly', '0.3')]
+
+
 def build_japan():
     """drivers/japan/ — Japanese drivers: news, rumours, columns, STORY and fan voices (owner's OK, 6 Nov 2026)."""
     byid = {q['id']: q for q in PEOPLE}
@@ -3965,6 +3994,7 @@ def main():
     urls += build_hubs(arch, flag_of)
     by_term = add_term_reads()
     urls += build_drivers(by_term)
+    urls += build_about()
     top_people_slot()
     top_rail_slot()
     add_related()
