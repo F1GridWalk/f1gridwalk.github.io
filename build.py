@@ -3389,7 +3389,7 @@ def build_about():
         ('アクセス解析', [
             'ページがどれくらい読まれたかを知るために、GoatCounter を使っています。Cookie を使わず、個人を特定する情報は集めない仕組みです。']),
     ]
-    body = (_crumb('運営者情報・編集方針') + '<div class="xp"><h1>運営者情報・編集方針</h1>'
+    body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › 運営者情報・編集方針</nav>' + '<div class="xp"><h1>運営者情報・編集方針</h1>'
             + ''.join(f'<h2 class="rbp-sh">{e(h)}</h2>' + ''.join(f'<p class="lead">{x}</p>' for x in ps) for h, ps in secs)
             + '<p class="lead" style="margin-top:18px"><a href="/">← トップへ</a></p></div>')
     url = SITE + '/about/'
