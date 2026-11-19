@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T12:40:00+09:00",
+ "updatedAt": "2026-11-19T18:30:00+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -47,6 +47,61 @@
   }
  },
  "articles": [
+  {
+   "id": "en-therace-cadillac-skinner-joins",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "チーム",
+   "teams": [
+    "cadillac",
+    "redbull",
+    "alpine"
+   ],
+   "topic": "cadillac-skinner-hire",
+   "title": "キャデラック、元レッドブルのスキナーが加入　アルピーヌ行きは頓挫",
+   "summary": "レッドブルで約20年働き、直近はチーフデザイナーだったクレイグ・スキナーが、キャデラックにチーフ開発エンジニアとして正式に加わったとThe Raceが伝えた。スキナーは2月にレッドブルを離れ、8月からアルピーヌで働く予定だったが、アルピーヌが元の契約条件の履行を求め、移籍は実現しなかった。キャデラックはチーム代表をグレアム・ロウドンからマルシン・ブドコフスキーに交代しており、ドライバーのペレスの後押しもあって獲得に動いたという。ほかにも空力責任者のエリック・ブランダンが加わり、ティム・リーンは2027年1月に合流する。",
+   "orig": "Ex-Red Bull hire Cadillac stole from Alpine finally joins",
+   "url": "https://www.the-race.com/formula-1/ex-red-bull-hire-cadillac-stole-from-alpine-finally-joins/",
+   "published": "2026-11-19T10:00:00+00:00"
+  },
+  {
+   "id": "en-therace-whoop-biometric-verstappen",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "ビジネス",
+   "teams": [
+    "redbull",
+    "ferrari",
+    "mercedes"
+   ],
+   "topic": "f1-biometric-whoop",
+   "title": "F1が生体データ放送へ　フェルスタッペンは参加せず",
+   "summary": "F1がウェアラブル企業ウーフと提携し、ドライバーの心拍などの生体データを中継で使う計画をThe Raceが伝えた。試験的にイギリスGPのルクレールとブラジルGPのローソンの心拍データが使われ、使用にはドライバー本人の同意が必要になる。フェルスタッペンは「追跡されるのは好きではない」としてプライバシーを理由に参加しない考えを示した。ラッセルは拒まないものの、年齢や体質で心拍は大きく違うため比較は誤解を生みかねないと疑問を呈した。一方、ウーフのアンバサダーでもあるルクレールは前向きだという。",
+   "orig": "Verstappen isn't a fan of F1's 2027 biometric data plan",
+   "url": "https://www.the-race.com/formula-1/f1-2027-biometric-data-plan-whoop-max-verstappen-not-a-fan/",
+   "published": "2026-11-19T11:00:00+00:00"
+  },
+  {
+   "id": "en-therace-ford-redbull-engine-role",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-ford-engine-role",
+   "title": "レッドブル・フォードPU、フォードの本当の貢献とは",
+   "summary": "レッドブル・フォード・パワートレインズのエンジンは、FIAの評価で内燃機関のトップとされ、初年度に3勝を挙げているとThe Raceが分析した。協議は2022年9月に始まり、2023年2月に提携が発表されたが、フォードの役割は名義貸しにとどまらず、電動化から制御ソフト、キャリブレーションへと広がったという。ミルトンキーンズにはフォードの技術者が常駐し、ターボ試験用のガスタービン設備も提供した。2025年初めまでに金属や樹脂の3Dプリント部品を約1000点製造した点も挙げられている。エンジニアリング責任者のプルーは、少なくとも2件の開発が並行して進んでいると語った。",
+   "orig": "What Ford has really contributed to Red Bull's 'best' F1 engine",
+   "url": "https://www.the-race.com/formula-1/ford-real-role-in-building-f1-best-engine/",
+   "published": "2026-11-18T12:00:00+00:00"
+  },
   {
    "id": "en-therace-bearman-contract-disappointed",
    "kind": "news",
@@ -1666,55 +1721,6 @@
    "orig": "Mercedes explains how Russell made Kimi Antonelli's F1 success possible",
    "url": "https://www.planetf1.com/news/mercedes-george-russell-role-kimi-antonelli-f1-success",
    "published": "2026-11-15T14:53:00+00:00"
-  },
-  {
-   "id": "nl-f1maximaal-patrese-bearman-camara",
-   "kind": "rumor",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari",
-    "haas"
-   ],
-   "topic": "ferrari-seat-bearman-camara",
-   "title": "パトレーゼ氏「ベアマンは待つべき」　フェラーリの席はカマラが先に得る可能性も",
-   "summary": "F1Maximaal.nlは、元F1ドライバーのパトレーゼ氏の見方を紹介した。同氏はハミルトンとルクレールの不和よりも、勝てるマシンを作ることが先決だと述べ、調和が重要になるのはその後だと語った。フェラーリ育成出身のベアマンについては、当面は待つべきだとし、2027年にハースへ移るカマラが上回れば、先にフェラーリのシートを得る可能性も否定しなかった。「F1に確実なことはなく、1か月で全てが変わりうる」とも述べ、ベアマンの速さと才能は評価して2人の争いを楽しみにしている。以上は同氏個人の見立てで、フェラーリの決定ではない。",
-   "orig": "Patrese ziet nieuwe kandidaat voor Ferrari-stoeltje: \"Alles kan binnen een maand veranderen\"",
-   "url": "https://www.f1maximaal.nl/opinie/patrese-ziet-groot-probleem-bij-ferrari-dan-pas-zorgen-maken-over-hamilton-en-leclerc",
-   "published": "2026-11-15T15:24:00+01:00"
-  },
-  {
-   "id": "nl-racingnews365-piastri-moeizaam-seizoen",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-mclaren-future",
-   "title": "ピアストリ、苦しい今季は2025年のタイトル逃しとは別問題と説明",
-   "summary": "RacingNews365は、ピアストリが今季の不振について語った内容を伝えた。2025年はオランダGP後にノリスへ34点差をつけていたが、バクーでの予選クラッシュなどで流れを失い、ノリスが423点で王者となり、ピアストリは410点の3位だった。今季は表彰台2回にとどまり、マイアミ以降は3位以内がない。マクラーレンのステラ代表は、ダウンフォースの少ない新車の運転スタイルに適応できていないと見ている。本人はブラジルのレースペースを「長い間で最高」と評し、冬の間に気持ちを切り替えるとしている。",
-   "orig": "Piastri verklaart moeizaam seizoen en ziet problemen los van titelverlies in 2025",
-   "url": "https://racingnews365.nl/piastri-verklaart-moeizaam-seizoen-en-ziet-problemen-los-van-titelverlies-in-2025",
-   "published": "2026-11-15T14:45:00+01:00"
-  },
-  {
-   "id": "en-planetf1-maffei-f1-sale",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ビジネス",
-   "topic": "f1-sale-maffei",
-   "title": "リバティ前トップのマフェイ氏「F1は近く売却される」　上場は2028年まで持たないと予想",
-   "summary": "PlanetF1は、リバティ・メディアの前CEOグレッグ・マフェイ氏が、F1は数年内に再び非上場になるとの見方を示したと伝えた。投資会議で2028年にもF1が上場しているかと問われ「F1はなくなっている」と答えている。同氏は「簡単に稼げる時期は終わった」と述べ、EBITDAは8〜9年で3倍になったが、同じ期間でもう一度3倍になる可能性は低いと指摘した。リバティは2017年にCVCから約46億ドルで商業権を取得し、現在の企業価値は約300億ドルと見積もられている。",
-   "orig": "F1 tipped for imminent sale by former Liberty Media boss",
-   "url": "https://www.planetf1.com/news/f1-tipped-for-imminent-sale-by-former-liberty-media-boss",
-   "published": "2026-11-15T12:23:00+00:00"
   }
  ]
 }
