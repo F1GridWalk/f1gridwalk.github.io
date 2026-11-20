@@ -4065,6 +4065,76 @@ def build_storylines(arch, allarts):
     return sm
 
 
+SEARCH_CSS = (".sr-f{display:flex;gap:8px;margin:14px 0 6px}.sr-f input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}"
+              ".sr-f button{font:inherit;font-weight:700;padding:0 18px;border:0;border-radius:12px;background:var(--ink);color:var(--paper);cursor:pointer}"
+              ".sr-n{color:var(--muted);font-size:13px;margin:6px 0 14px}.sr-g{margin:22px 0 0}.sr-g h2{font-size:15px;margin:0 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line)}"
+              ".sr-g ul{list-style:none;margin:0;padding:0}.sr-g li{padding:10px 0;border-bottom:1px solid var(--line)}.sr-g li:last-child{border-bottom:0}.sr-g h2{border-bottom:0}.sr-g li a{font-weight:700;color:var(--ink);text-decoration:none;line-height:1.5}"
+              ".sr-g li a:hover{text-decoration:underline}.sr-g li small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.sr-g li p{margin:3px 0 0;color:var(--muted);font-size:13px;line-height:1.6}"
+              ".sr-more{font:inherit;font-size:13px;font-weight:700;margin-top:10px;padding:8px 14px;border:1px solid var(--line);border-radius:10px;background:none;color:var(--ink);cursor:pointer}"
+              ".sr-hint{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.sr-hint a{font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none}")
+
+SEARCH_JS = r"""<script>(function(){
+var f=document.getElementById('sr-f'),q=document.getElementById('sr-q'),out=document.getElementById('sr-out');if(!f||!q||!out)return;
+var D={},N=0;
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+/* the same word in hiragana or katakana, full or half width, upper or lower case */
+function norm(t){t=String(t||'');try{t=t.normalize('NFKC')}catch(e){}return t.toLowerCase().replace(/[ぁ-ゖ]/g,function(c){return String.fromCharCode(c.charCodeAt(0)+96)}).replace(/[\s・･\-‐－]/g,'');}
+function get(k,u){return fetch(u).then(function(r){return r.json()}).then(function(j){j.forEach(function(x){x._n=norm(x.t)+'|'+norm(x.k)+'|'+norm(x.g);});D[k]=j;}).catch(function(){D[k]=[];});}
+var ready=Promise.all([get('names','/deep/rules/names.json'),get('cols','/colidx.json'),get('news','/search-index.json')]);
+var G=[['names','用語・人物',8,'term'],['line','STORYLINE',8,'storyline'],['cols','STORY・コラム',8,'col'],['news','ニュース',20,'news']];
+function render(v){
+  if(!v.trim()){out.innerHTML='';return;}
+  var ws=v.trim().split(/\s+/).map(norm).filter(Boolean);
+  var hit=function(x){return ws.every(function(w){return x._n.indexOf(w)>=0})};
+  var names=(D.names||[]).filter(hit),news=(D.news||[]).filter(hit),cols=(D.cols||[]).filter(hit);
+  /* a name that is the word itself comes first */
+  var w0=norm(v.trim());names.sort(function(a,b){return (norm(b.t).indexOf(w0)===0)-(norm(a.t).indexOf(w0)===0)});
+  var R={names:names,line:news.filter(function(x){return x.g==='STORYLINE'}),cols:cols,news:news.filter(function(x){return x.g!=='STORYLINE'})};
+  var total=names.length+news.length+cols.length;
+  var h='<p class="sr-n">「'+esc(v.trim())+'」の検索結果：'+total+' 件</p>';
+  if(!total)h+='<p>見つかりませんでした。言葉を短くするか、カタカナ・ひらがなを変えて試してください。</p>';
+  G.forEach(function(g){var L=R[g[0]];if(!L.length)return;
+    h+='<div class="sr-g" data-g="'+g[0]+'"><h2>'+g[1]+'（'+L.length+'）</h2><ul>'+L.map(function(x,i){
+      return '<li'+(i>=g[2]?' hidden':'')+'><a href="'+esc(x.u)+'" data-track="click/search/'+g[3]+'">'+esc(x.t)+'</a><small>'+esc(x.g)+(x.d?' · '+esc(x.d):'')+'</small>'+(x.s?'<p>'+esc(x.s)+'</p>':'')+'</li>'}).join('')+'</ul>'
+      +(L.length>g[2]?'<button type="button" class="sr-more">もっと見る（ほか '+(L.length-g[2])+' 件）</button>':'')+'</div>';});
+  out.innerHTML=h;}
+out.addEventListener('click',function(e){var b=e.target.closest('.sr-more');if(!b)return;var s=b.parentNode;s.querySelectorAll('li[hidden]').forEach(function(li,i){if(i<30)li.hidden=false;});var left=s.querySelectorAll('li[hidden]').length;if(left)b.textContent='もっと見る（ほか '+left+' 件）';else b.remove();});
+function go(v,push){var n=++N;out.innerHTML=v.trim()?'<p class="sr-n">探しています…</p>':'';ready.then(function(){if(n===N)render(v);});
+  if(push!==false){try{history.replaceState(null,'',v.trim()?'?q='+encodeURIComponent(v.trim()):location.pathname);}catch(e){}}}
+f.addEventListener('submit',function(e){e.preventDefault();q.blur();go(q.value);});
+var tm;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(function(){go(q.value)},250);});
+var p0='';try{p0=new URLSearchParams(location.search).get('q')||'';}catch(e){}
+if(p0){q.value=p0;go(p0,false);}
+document.querySelectorAll('.sr-hint a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();q.value=a.textContent;go(q.value);});});
+})();</script>"""
+
+
+def _cut(t, n):
+    return t if len(t) <= n else t[:n - 1] + '…'
+
+
+def build_search():
+    """/search/: one page to look for a word across terms, people, STORYLINE, STORY, columns and every news
+    (outside review, owner's OK, 20 Nov 2026). Reads three small files only when opened; results are not indexed."""
+    names = []
+    for t in (RULES or {}).get('terms', []):
+        names.append({'t': t['term'], 'u': rb_url(t['id']), 'g': '用語・' + t.get('cat', ''), 'k': ' '.join(t.get('aliases', [])), 's': _cut(t.get('short') or '', 70)})
+    for q in PEOPLE:
+        names.append({'t': q['name'], 'u': rb_url('person-' + q['id']), 'g': '人物・' + (q.get('org') or ''),
+                      'k': ' '.join([q.get('en', ''), q.get('role', '')] + (q.get('aliases') or [])), 's': _cut(q.get('short') or '', 70)})
+    write('deep/rules/names.json', json.dumps(names, ensure_ascii=False, separators=(',', ':')))
+    hints = ['角田', 'ハミルトン', 'キャデラック', 'ポールポジション', 'ラスベガス', 'ホンダ']
+    body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › 検索</nav><div class="xp"><h1>サイト内を探す</h1>'
+            '<p class="lead">用語・人物、STORYLINE、STORY・コラム、これまでのニュースをまとめて探せます。</p>'
+            '<form id="sr-f" class="sr-f" action="/search/" method="get" role="search"><input id="sr-q" name="q" type="search" placeholder="例：角田、ペナルティ、ホンダ" aria-label="探す言葉" autocomplete="off" enterkeyhint="search">'
+            '<button type="submit">探す</button></form>'
+            '<div class="sr-hint">' + ''.join(f'<a href="#">{e(h)}</a>' for h in hints) + '</div>'
+            '<div id="sr-out" aria-live="polite"></div>'
+            '<noscript><p>この検索は JavaScript を使います。<a href="/news/">ニュース一覧</a>、<a href="/deep/rules/">用語・人物辞典</a>からも探せます。</p></noscript></div>')
+    write('search/index.html', page('サイト内検索｜F1グリッドウォーク', 'F1グリッドウォークの用語・人物、STORYLINE、コラム、これまでのニュースをまとめて探せます。',
+                                    SITE + '/search/', body + SEARCH_JS, f'<meta name="robots" content="noindex,follow">\n<style>{XP_CSS}{SEARCH_CSS}</style>\n', og_type='website'))
+
+
 DIGEST_OFFICIAL = ('formula1.com', 'fia.com')
 DIGEST_DECIDED = re.compile(r'決定|発表|正式|契約|残留|加入|離脱|起用|裁定|ペナルティ|失格|降格|優勝|ポール|王者|王座|規則|レギュレーション')
 
@@ -4211,6 +4281,9 @@ def build_news_lists(allarts, flag_of):
     lst = ('<nav class="crumbs"><a href="/">トップ</a> › ニュース一覧</nav><h1>ニュース一覧</h1>'
            f'<p class="lead">これまでに紹介した世界のF1ニュースは {len(allarts)} 本。各国の記事の見出しを日本語にして、短い要約と原文へのリンクを付けています。'
            f'ここには新しい {len(top)} 本を並べています。それより前の記事は、月ごとの一覧からどうぞ。</p>'
+           '<form class="nl-sr" action="/search/" method="get" role="search" style="display:flex;gap:8px;margin:12px 0">'
+           '<input name="q" type="search" placeholder="過去のニュースを探す（例：ホンダ）" aria-label="過去のニュースを探す" style="flex:1;min-width:0;font:inherit;font-size:16px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)">'
+           '<button type="submit" style="font:inherit;font-weight:700;padding:0 16px;border:0;border-radius:10px;background:var(--ink);color:var(--paper)">探す</button></form>'
            + nav() + ways + (f'<p class="ent-more"><a href="/news/daily/{when(allarts[0]).astimezone(JST).date().isoformat()}/" data-track="click/news/digest">今日のF1ニュースまとめ →</a></p>' if allarts else '')
            + '<h2 style="font-size:18px;margin:26px 0 0">新しい記事</h2>' + _day_list(top, flag_of)
            + '<section><h2>月ごとの一覧</h2>' + nav() + '</section>')
@@ -4624,6 +4697,7 @@ def main():
     month_sm = build_news_lists(allarts, flag_of)
     month_sm += build_daily_digest(allarts, flag_of)
     month_sm += build_storylines(arch, allarts)
+    build_search()
 
     # sitemap
     now = datetime.now(JST).isoformat(timespec='seconds')

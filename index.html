@@ -809,6 +809,8 @@ if(v.length>=2){if(!A&&!ld){ld=1;fetch('/search-index.json').then(function(r){re
 if(A){var nh=A.filter(function(x){var t=(x.t+' '+(x.k||'')).toLowerCase();return ws.every(function(w){return t.indexOf(w)>=0})});
 html+='<h3 style="margin-top:10px">ニュース・STORYLINE（'+nh.length+'本）</h3>'+(nh.length?'<ul>'+nh.slice(0,8).map(function(x){return '<li><small>'+esc(x.g)+(x.d?' · '+esc(x.d):'')+'</small><a href="'+esc(x.u)+'" data-track="click/top/search/news">'+esc(x.t)+'</a></li>'}).join('')+'</ul>'+(nh.length>8?'<p class="ch-none">ほか '+(nh.length-8)+' 本。言葉を足すと絞り込めます。</p>':''):'<p class="ch-none">見つかりませんでした</p>');}
 else{html+='<p class="ch-none">過去のニュースを探しています…</p>';}}
+/* the full results on /search/ (owner's OK, 20 Nov 2026) */
+html+='<p class="ch-none" style="margin-top:10px"><a href="/search/?q='+encodeURIComponent(q.value.trim())+'" data-track="click/top/search/all">用語・人物もふくめて、すべての結果を見る →</a></p>';
 box.hidden=false;box.innerHTML=html;}
 var A=null,ld=0;
 var tm;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,150)});
