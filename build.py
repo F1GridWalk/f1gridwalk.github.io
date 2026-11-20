@@ -87,14 +87,38 @@ def kind_of(a):
 RUN_NOW = datetime.now(timezone.utc)
 
 
-def when(a):
-    """Publication time of an article, never later than now: ROUTINE.md sets a date-only article to 12:00
+SITE_PUB, SITE_MOD = {}, {}  # id -> the time this site first put the page out / last changed it (filled in main)
+
+
+def src_when(a):
+    """The original outlet's time, never later than now: ROUTINE.md sets a date-only article to 12:00
     outlet time, which is 21:00 in Japan for a British outlet, so the top page, RSS, sitemap and JSON-LD
     showed a time still to come (found by the owner's outside review, 20 Nov 2026)."""
     try:
         return min(datetime.fromisoformat(a['published'].replace('Z', '+00:00')), RUN_NOW)
     except Exception:
         return datetime(2000, 1, 1, tzinfo=timezone.utc)
+
+
+def _iso(s):
+    try:
+        return datetime.fromisoformat(s.replace('Z', '+00:00'))
+    except Exception:
+        return None
+
+
+def when(a):
+    """When this site put the article out (sitePublished in news/archive.json). It is set once and never moves:
+    articles already here keep their outlet time, a new one gets the time the build first saw it
+    (outside review, owner's OK, 20 Nov 2026). Before that is known, the outlet time."""
+    sp = a.get('sitePublished') or SITE_PUB.get(a.get('id'))
+    return (sp and _iso(sp)) or src_when(a)
+
+
+def mod_when(a):
+    """When this site last changed the article (siteModified), else when it was put out."""
+    sm = a.get('siteModified') or SITE_MOD.get(a.get('id'))
+    return (sm and _iso(sm)) or when(a)
 
 
 def jst_text(d):
@@ -437,7 +461,10 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     p = os.path.join(ROOT, 'index.html')
     src = open(p, encoding='utf-8').read()
     out = src
-    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh)):
+    # the page script shows this site's times too, not the outlets' (owner's OK, 20 Nov 2026)
+    st = {a['id']: SITE_PUB[a['id']] for a in arts if a['id'] in SITE_PUB}
+    sth = ('<script type="application/json" id="sitetimes">' + json.dumps(st, separators=(',', ':')).replace('</', '<\\/') + '</script>') if st else ''
+    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth)):
         if not block:
             continue
         pat = re.compile(r'(<!--pre:' + name + r'-->).*?(<!--/pre:' + name + r'-->)', re.S)
@@ -4345,10 +4372,33 @@ def main():
     load_deeps()
     load_hubs()
 
+    # site times (outside review, owner's OK, 20 Nov 2026): sitePublished is set once, siteModified when the content changes
+    for a in arch['articles'].values():
+        if not a.get('sitePublished'):
+            a['sitePublished'] = src_when(a).isoformat(timespec='seconds')
+    fresh = []
     for a in data.get('articles', []):
         if not ID_OK.match(a.get('id', '')) or not a.get('url', '').startswith('http'):
             continue
-        arch['articles'][a['id']] = {k: a[k] for k in KEEP if k in a}
+        old_ = arch['articles'].get(a['id'])
+        rec = {k: a[k] for k in KEEP if k in a}
+        if old_:
+            rec['sitePublished'] = old_['sitePublished']
+            if {k: old_[k] for k in KEEP if k in old_} != {k: v for k, v in rec.items() if k in KEEP}:
+                rec['siteModified'] = RUN_NOW.isoformat(timespec='seconds')
+            elif old_.get('siteModified'):
+                rec['siteModified'] = old_['siteModified']
+        else:
+            fresh.append(rec)
+        arch['articles'][a['id']] = rec
+    # a batch taken in together: same minute, a second apart, in the outlets' order, so lists keep a sensible order
+    fresh.sort(key=src_when)
+    for i, rec in enumerate(fresh):
+        rec['sitePublished'] = (RUN_NOW - timedelta(seconds=len(fresh) - 1 - i)).isoformat(timespec='seconds')
+    for a in arch['articles'].values():
+        SITE_PUB[a['id']] = a['sitePublished']
+        if a.get('siteModified'):
+            SITE_MOD[a['id']] = a['siteModified']
     for slug, t in (data.get('topics') or {}).items():
         arch['topics'][slug] = {'title': t.get('title', ''), 'summary': t.get('summary', '')}
 
@@ -4395,7 +4445,9 @@ def main():
                 f'<span>{e(a.get("region", ""))} · {e(lang)}</span>'
                 + (f'<span>掲載：{e(a["source"])}　記事提供：{e(a["provider"])}</span>' if a.get('provider') else '')
                 + 
-                f'<time datetime="{when(a).isoformat(timespec="seconds")}">{e(jst_text(d))}</time></div>',
+                f'<time datetime="{when(a).isoformat(timespec="seconds")}">{e(jst_text(d))}</time>'
+                + (f'<span class="srct">原文：{e(jst_text(src_when(a)))}</span>' if abs((src_when(a) - d).total_seconds()) >= 1800 else '')
+                + '</div>',
                 f'<h1>{e(a["title"])}</h1>']
         if a.get('orig') and a['orig'] != a['title']:
             body.append(f'<p class="orig">原題：{e(a["orig"])}</p>')
@@ -4505,9 +4557,9 @@ def main():
             {'@type': 'ListItem', 'position': 3, 'name': a['title'], 'item': url}]}, ensure_ascii=False)
         crumbs_ld = crumbs_ld.replace('</', '<\\/')
         art_ld = {'@context': 'https://schema.org', '@type': 'NewsArticle', 'headline': a['title'], 'description': desc,
-                  'datePublished': when(a).isoformat(timespec='seconds'), 'dateModified': when(a).isoformat(timespec='seconds'), 'inLanguage': 'ja',
+                  'datePublished': when(a).isoformat(timespec='seconds'), 'dateModified': mod_when(a).isoformat(timespec='seconds'), 'inLanguage': 'ja',
                   'image': [og_url or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
-                  'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'],
+                  'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'], 'datePublished': src_when(a).isoformat(timespec='seconds'),
                                 'publisher': {'@type': 'Organization', 'name': a['source']}}}
         if nused:
             body.append(term_assets(nused))
@@ -4530,7 +4582,7 @@ def main():
     now = datetime.now(JST).isoformat(timespec='seconds')
     newest_ = when(allarts[0]).isoformat(timespec='seconds') if allarts else now  # when the content changed, not when we built (20 Nov 2026)
     urls = [(SITE + '/', newest_, 'hourly', '1.0'), (SITE + '/news/', newest_, 'hourly', '0.8')]
-    urls += [(f'{SITE}/news/{a["id"]}/', when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]
+    urls += [(f'{SITE}/news/{a["id"]}/', mod_when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]
     urls += [u for u in build_lenses(arch, flag_map) if u[1]]
     urls += [u for u in build_deeps(arch, flag_map) if u[1]]
     urls += build_all_columns()
