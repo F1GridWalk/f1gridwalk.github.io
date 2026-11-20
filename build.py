@@ -3645,7 +3645,8 @@ def top_rail_slot():
     idx = [{'t': x['title'], 'u': x['url'], 'g': COL_TAG.get(x['kind'], 'コラム'), 'k': x.get('txt', '')} for x in ALL_COLS]
     for H_ in hubs_newest():
         idx.append({'t': H_['title'], 'u': f'/topics/{H_["slug"]}/', 'g': 'STORY', 'k': ' '.join([H_['slug'], H_.get('dek', ''), H_.get('gp', '')])})
-    blk += '<script type="application/json" id="colidx">' + json.dumps(idx, ensure_ascii=False).replace('</', '<\\/') + '</script>'
+    # in its own file, read only when someone types in the search box (page weight, owner's OK, 20 Nov 2026; was inline, 158KB)
+    write('colidx.json', json.dumps(idx, ensure_ascii=False, separators=(',', ':')))
     ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
     out = re.sub(r'(<!--pre:rail-->).*?(<!--/pre:rail-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
