@@ -84,9 +84,15 @@ def kind_of(a):
     return k if k in KIND else 'news'
 
 
+RUN_NOW = datetime.now(timezone.utc)
+
+
 def when(a):
+    """Publication time of an article, never later than now: ROUTINE.md sets a date-only article to 12:00
+    outlet time, which is 21:00 in Japan for a British outlet, so the top page, RSS, sitemap and JSON-LD
+    showed a time still to come (found by the owner's outside review, 20 Nov 2026)."""
     try:
-        return datetime.fromisoformat(a['published'].replace('Z', '+00:00'))
+        return min(datetime.fromisoformat(a['published'].replace('Z', '+00:00')), RUN_NOW)
     except Exception:
         return datetime(2000, 1, 1, tzinfo=timezone.utc)
 
@@ -296,7 +302,7 @@ def item_li(a, flag_of):
     k = kind_of(a)
     return (f'<li><div class="m"><span class="kind {k}">{KIND[k]}</span>'
             f'<span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span>'
-            f'<time datetime="{e(a["published"])}">{e(jst_text(when(a)))}</time></div>'
+            f'<time datetime="{when(a).isoformat(timespec="seconds")}">{e(jst_text(when(a)))}</time></div>'
             f'<a class="t" href="/news/{e(a["id"])}/">{e(a["title"])}</a></li>')
 
 
@@ -325,7 +331,7 @@ def static_card(a, flag_of):
             f'<span class="kind {k}" title="{e(KIND_TIP[k])}">{KIND[k]}</span>'
             f'<span class="srcbadge" data-c="{flag_of(a)}">{e(a["source"])}</span>'
             f'<span class="rg">{e(a.get("region", ""))}</span>'
-            f'<time datetime="{e(a["published"])}">{short_jst(a)}</time></div>'
+            f'<time datetime="{when(a).isoformat(timespec="seconds")}">{short_jst(a)}</time></div>'
             f'<h3>{art(a, e(a["title"]))}</h3><p>{e(a.get("summary", ""))}</p>'
             f'<div class="card-foot"><span class="cat">{e(a.get("cat") or "ニュース")}</span>{ext(a["url"], "原文へ ↗")}</div></article>')
 
@@ -2630,6 +2636,13 @@ STORY_SEO_NAMES = {'bono-leave-that-to-me': ['ボニントン', 'アントネッ
                    'haas-komatsu-fastest-driver': ['小松礼雄', '平川亮']}
 
 
+def story_published(H):
+    """When a STORY went out: its 「…公開」 update, else the first update, else the checked date."""
+    ups = H.get('updates') or []
+    pub = [u['at'] for u in ups if '公開' in u.get('t', '') and u.get('at')]
+    return (pub or [u['at'] for u in ups if u.get('at')] or [H.get('checked', '')])[0]
+
+
 def story_seo_title(H):
     """<title> for a STORY: the (often poetic) headline plus who it is about and the GP, so that a reader
     searching 「角田裕毅」 or 「ボルトレート」 finds it (owner's OK, 24 Oct 2026). The visible headline is unchanged.
@@ -2647,6 +2660,10 @@ def story_seo_title(H):
             hits = [q for q in PEOPLE if tok in q['id'].split('-') and len(tok) >= 3]
             if len(hits) == 1 and short(hits[0]) not in names:
                 names.append(short(hits[0]))
+    if not names:  # no name in the slug: the first person named in the title, dek or hook (owner's OK, 20 Nov 2026)
+        tg = story_tags(H)
+        if tg['people']:
+            names.append(short(tg['people'][0]))
     names = [n for n in names if n not in H['title']][:2]
     parts = [H['title'] + ('　' + 'と'.join(names) if names else '')]
     if H.get('gp', '').endswith('GP'):
@@ -2826,7 +2843,7 @@ def build_hubs(arch, flag_of):
         if H.get('story'):
             b.append(STORY_SCROLL_JS.replace('__SLUG__', slug))
         head = MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n' + (f'<style>{RULES_CSS}</style>\n' if used else '') + ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': H['title'], 'description': H['dek'][:150],
-                                                              'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                                                              'datePublished': story_published(H), 'dateModified': H.get('checked', ''), 'inLanguage': 'ja', 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                                                               'citation': [arts[o['id']]['url'] for o in H['outlets'] if o['id'] in arts]})
         S_ = H.get('story') or {}
         og_h = rules_og(slug, H['title'], 'STORY', S_.get('hook') or H.get('dek', ''), H.get('gp', '') or 'F1グリッドウォーク',
@@ -3515,6 +3532,14 @@ def build_about():
             '<b>コラム・STORY・DEEP</b>：複数の報道や公式の発表を読み比べて、背景や意味をまとめた読み物です。AI を使って書いていますが、事実は公式の資料や信頼できる報道で確かめてから載せます。確かめられないことは書かず、推測は推測と分かるように書きます。',
             '<b>用語・人物辞典</b>：F1の用語と、ドライバー、エンジニア、チーム代表などの人物を説明しています。肩書きや経歴は出典を確かめて載せ、各ページに確かめた日と出典を書いています。',
             '<b>ファンの声</b>：公開されている声を、出どころを書いたうえで短く引用・要約しています。']),
+        ('制作の流れ', [
+            '<table class="ab-t"><tr><th>記事の集め方</th><td>AI が手伝う（読む媒体の一覧は編集部が決める）</td></tr>'
+            '<tr><th>翻訳・要約</th><td>AI が手伝う</td></tr>'
+            '<tr><th>コラム・STORY の下書き</th><td>AI が手伝う</td></tr>'
+            '<tr><th>事実の確認</th><td>公式の資料と、信頼できる報道で確かめる</td></tr>'
+            '<tr><th>載せるかどうか</th><td>F1 Grid Walk 編集部が決める</td></tr>'
+            '<tr><th>訂正するかどうか</th><td>F1 Grid Walk 編集部が決める</td></tr></table>'
+            '<style>.ab-t{width:100%;border-collapse:collapse;font-size:14px;margin-top:4px}.ab-t th,.ab-t td{border-top:1px solid var(--line);padding:9px 6px;text-align:left;vertical-align:top}.ab-t th{width:38%;font-weight:800}</style>']),
         ('間違いの訂正', [
             '間違いが分かったときは、はっきり訂正します。人物辞典の「確認した日」も、そのときに新しくします。']),
         ('アクセス解析', [
@@ -4066,7 +4091,7 @@ def main():
                 f'<span>{e(a.get("region", ""))} · {e(lang)}</span>'
                 + (f'<span>掲載：{e(a["source"])}　記事提供：{e(a["provider"])}</span>' if a.get('provider') else '')
                 + 
-                f'<time datetime="{e(a["published"])}">{e(jst_text(d))}</time></div>',
+                f'<time datetime="{when(a).isoformat(timespec="seconds")}">{e(jst_text(d))}</time></div>',
                 f'<h1>{e(a["title"])}</h1>']
         if a.get('orig') and a['orig'] != a['title']:
             body.append(f'<p class="orig">原題：{e(a["orig"])}</p>')
@@ -4173,7 +4198,7 @@ def main():
             {'@type': 'ListItem', 'position': 3, 'name': a['title'], 'item': url}]}, ensure_ascii=False)
         crumbs_ld = crumbs_ld.replace('</', '<\\/')
         art_ld = {'@context': 'https://schema.org', '@type': 'NewsArticle', 'headline': a['title'], 'description': desc,
-                  'datePublished': a['published'], 'dateModified': a['published'], 'inLanguage': 'ja',
+                  'datePublished': when(a).isoformat(timespec='seconds'), 'dateModified': when(a).isoformat(timespec='seconds'), 'inLanguage': 'ja',
                   'image': [og_url or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                   'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'],
                                 'publisher': {'@type': 'Organization', 'name': a['source']}}}
@@ -4218,8 +4243,16 @@ def main():
     # 「取得できませんでした」 for weeks although it is valid; new file names give it a fresh fetch
     head_, tail_ = sm[:2], sm[-1:]
     urls_ = [l for l in sm[2:-1] if '<loc>' in l]
-    for fn_, keep in (('sitemap-news.xml', lambda l: '/news/' in l), ('sitemap-pages.xml', lambda l: '/news/' not in l)):
-        write(fn_, '\n'.join(head_ + [l for l in urls_ if keep(l)] + tail_) + '\n')
+    write('sitemap-pages.xml', '\n'.join(head_ + [l for l in urls_ if '/news/' not in l] + tail_) + '\n')
+    # sitemap-news.xml in the Google News form: the last 2 days of news only, with title and publication time
+    # (owner's OK, 20 Nov 2026); every article stays in sitemap.xml
+    gn = ['<?xml version="1.0" encoding="UTF-8"?>',
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
+    for a in [a for a in allarts if when(a) >= RUN_NOW - timedelta(days=2) and a.get('kind', 'news') in ('news', 'tech', 'rumor')][:1000]:
+        gn.append(f'  <url><loc>{SITE}/news/{e(a["id"])}/</loc><news:news><news:publication><news:name>F1 Grid Walk</news:name><news:language>ja</news:language></news:publication>'
+                  f'<news:publication_date>{when(a).isoformat(timespec="seconds")}</news:publication_date><news:title>{e(a["title"])}</news:title></news:news></url>')
+    gn.append('</urlset>')
+    write('sitemap-news.xml', '\n'.join(gn) + '\n')
     build_feed(allarts)
 
     # robots.txt: everything may be crawled; say where the sitemap is
