@@ -363,7 +363,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         go_sub = f'約{round(n_chars / 100) * 100:,}字 · 約{max(1, round(n_chars / 500))}分で読めます' if n_chars else '共通点・違い・まだ分からないこと'
         hero.append(f'<div class="hubtop" id="hub-top" data-circuit="{e(circ or "")}">'
                     f'<div class="chips"><span class="chip-feature">STORY</span><span class="chip-cat">{e(H.get("gp", ""))} · F1 Grid Walk の独自記事</span></div>'
-                    f'<h1 id="hero-title"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h1>'
+                    f'<h2 id="hero-title" class="hero-h"><a href="/topics/{e(H["slug"])}/" data-track="click/top/hub">{e(H["title"])}</a></h2>'
                     + (f'<p class="hubtop-sub">{e(H["sub"])}</p>' if H.get('sub') and not S else '')
                     + (f'<p class="hubtop-ans"><b>読み比べて分かったこと</b>{e(H["answer"])}</p>' if H.get('answer') and not S else '')  # the story is the read (owner, 12 Oct 2026)
                     + (f'<p class="hubtop-hook">{e(S["hook"])}</p>' if S.get('hook') else '')  # the story's first line, instead of a word count (owner, 12 Oct 2026)
@@ -382,7 +382,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         n_media = len({x['source'] for x in media}) or n
         hero.append(f'<div class="chips"><span class="chip-feature">今週の注目</span><span class="chip-cat">世界の{n_media}媒体が報道</span></div>')
         hero.append('<div class="tw-sec" id="tw-facts">'
-                    f'<h1 id="hero-title">{art(pick, e(info.get("title") or pick["title"]))}</h1>'
+                    f'<h2 id="hero-title" class="hero-h">{art(pick, e(info.get("title") or pick["title"]))}</h2>'
                     '</div>')
         li = []
         for x in sorted(media, key=when, reverse=True)[:3]:
@@ -426,7 +426,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         a = next((x for x in arts if x.get('featured')), arts[0] if arts else None)
         if a:
             hero.append('<div class="chips"><span class="chip-feature">今日の一本</span></div>')
-            hero.append(f'<h1 id="hero-title">{art(a, e(a["title"]))}</h1><p class="hero-sum">{e(a.get("summary", ""))}</p>')
+            hero.append(f'<h2 id="hero-title" class="hero-h">{art(a, e(a["title"]))}</h2><p class="hero-sum">{e(a.get("summary", ""))}</p>')
     news = sorted([a for a in arts if a.get('kind', 'news') == 'news'], key=when, reverse=True)[:30]  # 10 → 30 in the HTML Google reads first (owner's OK, 20 Nov 2026)
     tech = sorted([a for a in arts if a.get('kind') == 'tech'], key=when, reverse=True)[:3]
     feed = ('<div class="grid">' + ''.join(static_card(a, flag_of) for a in news) + '</div>'
@@ -3981,6 +3981,26 @@ def build_storylines(arch, allarts):
     return sm
 
 
+DIGEST_OFFICIAL = ('formula1.com', 'fia.com')
+DIGEST_DECIDED = re.compile(r'決定|発表|正式|契約|残留|加入|離脱|起用|裁定|ペナルティ|失格|降格|優勝|ポール|王者|王座|規則|レギュレーション')
+
+
+def digest_score(a, dc):
+    """How high a news goes in the day's digest (outside review, owner's OK, 20 Nov 2026): how many outlets reported the
+    same story still counts (up to 5), but an official source, a decision, a result or a rule counts more, and a
+    tech piece a little. Rumours are already left out."""
+    sc = min(dc.get(a.get('topic'), 1), 5)
+    if any(o in (a.get('url') or '') for o in DIGEST_OFFICIAL):
+        sc += 4
+    if a.get('cat') in ('決勝', '予選'):
+        sc += 3
+    if DIGEST_DECIDED.search(a.get('title', '')):
+        sc += 2
+    if a.get('kind') == 'tech':
+        sc += 1
+    return sc
+
+
 def build_daily_digest(allarts):
     """news/daily/YYYY-MM-DD/ — the day's main F1 news on one page (owner's OK, 20 Nov 2026).
     One summary each is thin; ten together make a page worth reading, finding and sharing.
@@ -4005,7 +4025,7 @@ def build_daily_digest(allarts):
             if a.get('topic'):
                 dc[a['topic']] = dc.get(a['topic'], 0) + 1
         seen, picks = set(), []
-        for a in sorted(days[d], key=lambda a: (-dc.get(a.get('topic'), 1), -tc.get(a.get('topic'), 1), -when(a).timestamp())):
+        for a in sorted(days[d], key=lambda a: (-digest_score(a, dc), -tc.get(a.get('topic'), 1), -when(a).timestamp())):
             k = a.get('topic') or a['id']
             if k in seen:
                 continue
@@ -4464,6 +4484,15 @@ def main():
     gn.append('</urlset>')
     write('sitemap-news.xml', '\n'.join(gn) + '\n')
     build_feed(allarts)
+    # search-index.json: every news (past ones too) and every STORYLINE for the header search on the top page,
+    # read only when someone types (outside review, owner's OK, 20 Nov 2026). Title, outlet and date only.
+    si = [{'t': x['name'], 'u': f'/storyline/{x["slug"]}/', 'g': 'STORYLINE', 'k': ' '.join(x['topics'])} for x in STORYLINES]
+    for a in allarts:
+        if a.get('kind', 'news') in ('fan',):
+            continue
+        d_ = when(a).astimezone(JST)
+        si.append({'t': a['title'], 'u': f'/news/{a["id"]}/', 'g': a.get('source', ''), 'd': f'{d_.year % 100}/{d_.month}/{d_.day}', 'k': a.get('topic', '')})
+    write('search-index.json', json.dumps(si, ensure_ascii=False, separators=(',', ':')))
 
     # robots.txt: everything may be crawled; say where the sitemap is
     write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap-pages.xml\nSitemap: {SITE}/sitemap-news.xml\n')
