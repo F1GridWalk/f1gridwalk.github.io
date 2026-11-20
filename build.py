@@ -3672,7 +3672,13 @@ def top_people_slot():
                 picks.append(pid)
         if len(picks) >= 4:
             break
-    picks = picks[:4]
+    seen_, picks2 = set(), []  # one name once: Lance and Lawrence Stroll are both 「ストロール」 (20 Nov 2026)
+    for pid in picks:
+        lab = pname[pid]['name'].split('・')[-1]
+        if lab not in seen_:
+            seen_.add(lab)
+            picks2.append(pid)
+    picks = picks2[:4]
     blk = ''
     if picks:
         blk = ('<style>.ppl-strip{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin:14px 2px 0;font-size:14px;line-height:1.9}'
@@ -3683,6 +3689,15 @@ def top_people_slot():
                '<p class="ppl-strip"><span>いま話題の人</span>'
                + ''.join(f'<a href="/deep/rules/{e(pid)}/" data-track="click/top/people/{e(pid)}">{e(pname[pid]["name"].split("・")[-1])}</a>' for pid in picks)
                + '<a class="all" href="/drivers/" data-track="click/top/people/all">ドライバー一覧 →</a></p>')
+    # the strip of ways in, right under the columns (owner chose design B, 20 Nov 2026)
+    days_ = sorted(d for d in os.listdir(os.path.join(ROOT, 'news', 'daily')) if re.match(r'\d{4}-\d\d-\d\d$', d)) if os.path.isdir(os.path.join(ROOT, 'news', 'daily')) else []
+    ways = [(f'/news/daily/{days_[-1]}/', 'TODAY 今日のF1を3分で →', 'today', True)] if days_ else []
+    ways += [('/storyline/', 'STORYLINE', 'storyline', False), ('/lens/', 'WORLD GRID', 'worldgrid', False), ('/deep/', 'DEEP GRID', 'deepgrid', False)]
+    strip = ('<style>.ways{display:flex;gap:8px;overflow-x:auto;margin:6px 2px 12px;scrollbar-width:none}.ways::-webkit-scrollbar{display:none}'
+             '.ways a{flex:none;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-weight:800;font-size:14px;color:var(--ink);text-decoration:none;background:var(--surface)}'
+             '.ways a.on{background:#1F2420;border-color:#1F2420;color:#fff}</style><nav class="ways" aria-label="読みかた">'
+             + ''.join(f'<a{" class=on" if on else ""} href="{u}" data-track="click/top/ways/{k}">{e(t)}</a>' for u, t, k, on in ways) + '</nav>')
+    blk = strip + blk
     ip = os.path.join(ROOT, 'index.html'); src = open(ip, encoding='utf-8').read()
     out = re.sub(r'(<!--pre:people-->).*?(<!--/pre:people-->)', lambda m: m.group(1) + blk + m.group(2), src, count=1, flags=re.S)
     if out != src:
