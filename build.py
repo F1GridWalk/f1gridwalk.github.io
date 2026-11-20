@@ -3916,35 +3916,36 @@ DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:
 
 # STORYLINE (owner's OK to preview, 20 Nov 2026): one page per developing story, built from the news
 # already tagged with the same topic. Name and topics are chosen by the site author; everything else is automatic.
+# 'published' is when the page first went out (its first commit), for its structured data: add it with a new entry.
 STORYLINES = [
-    {'slug': 'ferrari-hamilton-leclerc', 'name': 'フェラーリ、ハミルトンとルクレールの溝',
+    {'slug': 'ferrari-hamilton-leclerc', 'published': '2026-11-20T16:32:40+09:00', 'name': 'フェラーリ、ハミルトンとルクレールの溝',
      'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift'],
      'dek': 'メキシコGPの接触から始まった、フェラーリの2人の関係をめぐる報道を、最初から順に追います。'},
-    {'slug': 'lawson-2027-seat', 'name': 'ローソン、2027年のシート',
+    {'slug': 'lawson-2027-seat', 'published': '2026-11-20T16:32:40+09:00', 'name': 'ローソン、2027年のシート',
      'topics': ['lawson-2027-seat', 'racingbulls-lawson-tsolov-2027', 'tsolov-reserve-2027'],
      'status': 'resolved', 'decided': '2026-11-12',
      'conclusion': 'レーシングブルズは、2027年もローソンとリンドブラッドの2人で戦うと発表した。',
      'dek': '2027年もレーシングブルズに残ることが決まった。そこまでのローソンをめぐる報道を、最初から順に追います。'},
-    {'slug': 'cadillac-2027-drivers', 'name': 'キャデラック、2027年のドライバー',
+    {'slug': 'cadillac-2027-drivers', 'published': '2026-11-20T16:32:40+09:00', 'name': 'キャデラック、2027年のドライバー',
      'topics': ['cadillac-2027-drivers-rumor', 'cadillac-2027-lineup', 'cadillac-ugochukwu-2027', 'cadillac-bottas-2027', 'herta-cadillac-seat-comment', 'cadillac-bottas-herta', 'perez-cadillac-2029'],
      'status': 'resolved', 'decided': '2026-11-18',
      'conclusion': 'キャデラックは2027年もボッタスを起用し、ハータの昇格は見送られた。',
      'dek': '2027年もボッタスが走ることになった。そこまでのキャデラックのドライバーをめぐる報道を、最初から順に追います。'},
-    {'slug': 'piastri-mclaren-future', 'name': 'ピアストリとマクラーレンのこれから',
+    {'slug': 'piastri-mclaren-future', 'published': '2026-11-20T16:32:40+09:00', 'name': 'ピアストリとマクラーレンのこれから',
      'topics': ['piastri-mclaren-future'],
      'dek': 'マネジメント契約の終了と、ノリスとの差。ピアストリをめぐる報道を、最初から順に追います。'},
-    {'slug': 'haas-2027-drivers', 'name': 'ハース、2027年のドライバー',
+    {'slug': 'haas-2027-drivers', 'published': '2026-11-20T16:56:41+09:00', 'name': 'ハース、2027年のドライバー',
      'topics': ['haas-ocon-camara-brazil', 'ocon-haas-exit-official', 'bearman-haas-2027', 'haas-bearman-2027', 'haas-camara-vegas', 'haas-camara-2027',
                 'haas-2027-seat-doohan-camara', 'haas-komatsu-camara-choice', 'ocon-hirakawa-mexico'],
      'dek': 'オコンが外れ、平川とカマラが走り、ベアマンの契約はまだ。ハースの2027年をめぐる報道を、最初から順に追います。'},
-    {'slug': 'aston-honda-2026', 'name': 'アストンマーティン・ホンダの苦戦',
+    {'slug': 'aston-honda-2026', 'published': '2026-11-20T16:56:41+09:00', 'name': 'アストンマーティン・ホンダの苦戦',
      'topics': ['honda-aston-pu-weakness', 'aston-martin-mexico-double-dnf', 'honda-stroll-battery-retirement', 'honda-alonso-engine-dispute', 'honda-aduo2-reveal',
                 'alonso-singapore-honda-drivability', 'honda-pu-struggle', 'newey-honda-progress-2027'],
      'dek': 'パワー不足、リタイア、アロンソとの食い違い。アストンマーティン・ホンダの2026年をめぐる報道を、最初から順に追います。'},
-    {'slug': 'f1-v8-engine', 'name': 'F1のV8エンジン復活案',
+    {'slug': 'f1-v8-engine', 'published': '2026-11-20T16:56:41+09:00', 'name': 'F1のV8エンジン復活案',
      'topics': ['f1-v8-engine-proposal', 'fia-v8-2030', 'f1-v8-engine-2030', 'f1-2030-v8-engine', 'f1-2031-v8-engine'],
      'dek': 'いつから、どんなエンジンになるのか。F1のV8復活案をめぐる報道を、最初から順に追います。'},
-    {'slug': 'antonelli-title-2026', 'name': 'アントネッリ、王座への道',
+    {'slug': 'antonelli-title-2026', 'published': '2026-11-20T16:56:41+09:00', 'name': 'アントネッリ、王座への道',
      'topics': ['antonelli-title-austin', 'antonelli-austin-title-chance', 'antonelli-austin-match-point', 'antonelli-title-mexico', 'antonelli-title-timeline', 'antonelli-champion-2026'],
      'status': 'resolved', 'decided': '2026-11-01',
      'conclusion': 'アントネッリはメキシコシティGPで3位に入り、2026年のワールドチャンピオンになった。オースティンでは決まらず、メキシコに持ち越していた。',
@@ -4026,19 +4027,40 @@ def build_storylines(arch, allarts):
         b.append('<p class="lead" style="margin-top:22px"><a href="/storyline/">← STORYLINE の一覧</a></p></div>')
         url = f'{SITE}/storyline/{x["slug"]}/'
         done = x.get('status') == 'resolved'
+        # structured data (owner's OK, 20 Nov 2026): the page as an Article naming its people, with the TIMELINE as a list of our news pages
+        sl_ld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': x['name'], 'description': x['dek'],
+                 'datePublished': x.get('published') or when(newest).isoformat(timespec='seconds'),  # when this page first went out (first commit)
+                 'dateModified': max([when(newest)] + ([_iso(x['published'])] if x.get('published') else [])).isoformat(timespec='seconds'),
+                 'inLanguage': 'ja', 'image': [i for i in (hero_img(f'storyline/{x["slug"]}', x['name'] + ' ' + x['dek'], TEAMS_ALL), OG_IMAGE) if i],
+                 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                 'mentions': [{'@type': 'Person', 'name': q['name'], 'url': SITE + rb_url('person-' + q['id'])} for n, q in cnt[:6]],
+                 'hasPart': {'@type': 'ItemList', 'name': 'TIMELINE', 'itemListOrder': 'https://schema.org/ItemListOrderAscending', 'numberOfItems': len(arts),
+                             'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': f'{SITE}/news/{a["id"]}/', 'name': a['title']} for i, a in enumerate(arts)]}}
+        if not sl_ld['mentions']:
+            del sl_ld['mentions']
+        crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'トップ', 'item': SITE + '/'},
+            {'@type': 'ListItem', 'position': 2, 'name': 'STORYLINE', 'item': SITE + '/storyline/'},
+            {'@type': 'ListItem', 'position': 3, 'name': x['name'], 'item': url}]}
         write(f'storyline/{x["slug"]}/index.html', page(f'{x["name"]}｜' + ('決まるまでの経緯' if done else 'これまでの経緯と最新情報') + '｜STORYLINE｜F1グリッドウォーク',
-              (x['dek'] + f' 報道{len(arts)}本、{len(srcs)}媒体。')[:150], url, '\n'.join(b), f'<style>{XP_CSS}{SL_CSS}</style>\n', og_type='article'))
+              (x['dek'] + f' 報道{len(arts)}本、{len(srcs)}媒体。')[:150], url, '\n'.join(b), f'<style>{XP_CSS}{SL_CSS}</style>\n' + ld(crumbs) + ld(sl_ld), og_type='article'))
         sm.append((url, d1.isoformat(timespec='seconds'), 'daily', '0.7'))
-        cards.append((d1, f'<li><a href="/storyline/{x["slug"]}/" data-track="click/storyline/index"><b>{e(x["name"])}</b></a>'
+        cards.append((d1, x['name'], url, f'<li><a href="/storyline/{x["slug"]}/" data-track="click/storyline/index"><b>{e(x["name"])}</b></a>'
                           f'<small>' + (f'決着 {int(x["decided"][5:7])}/{int(x["decided"][8:10])} · ' if done and x.get('decided') else '') + f'報道 {len(arts)} 本 · 最終更新 {d1.month}/{d1.day}</small></li>', done))
     if cards:
         body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › STORYLINE</nav><div class="xp"><p class="sl-k">STORYLINE</p><h1>STORYLINE</h1>'
                 '<p class="lead">F1の話題を、始まりから今まで1ページで追えるようにしました。新しく動いた順です。</p>'
-                '<h2 class="sl-h">追いかけ中</h2><ul class="sl-rel">' + ''.join(c for _, c, dn in sorted(cards, key=lambda t: t[0], reverse=True) if not dn) + '</ul>'
-                + ('<h2 class="sl-h">決着済み</h2><ul class="sl-rel">' + ''.join(c for _, c, dn in sorted(cards, key=lambda t: t[0], reverse=True) if dn) + '</ul>' if any(dn for *_, dn in cards) else '') + '</div>')
+                '<h2 class="sl-h">追いかけ中</h2><ul class="sl-rel">' + ''.join(c for _, _n, _u, c, dn in sorted(cards, key=lambda t: t[0], reverse=True) if not dn) + '</ul>'
+                + ('<h2 class="sl-h">決着済み</h2><ul class="sl-rel">' + ''.join(c for _, _n, _u, c, dn in sorted(cards, key=lambda t: t[0], reverse=True) if dn) + '</ul>' if any(dn for *_, dn in cards) else '') + '</div>')
+        idx_ld = {'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'STORYLINE', 'url': SITE + '/storyline/', 'inLanguage': 'ja', 'publisher': PUBLISHER,
+                  'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': u_, 'name': n_}
+                                                                           for i, (_, n_, u_, _c, _dn) in enumerate(sorted(cards, key=lambda t: t[0], reverse=True))]}}
+        idx_crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'トップ', 'item': SITE + '/'},
+            {'@type': 'ListItem', 'position': 2, 'name': 'STORYLINE', 'item': SITE + '/storyline/'}]}
         write('storyline/index.html', page('STORYLINE｜F1の話題を始まりから決着まで追う｜F1グリッドウォーク',
               'F1の続いている話題と決着した話題を、最初の報道から最新の動き・決着まで時系列で追えるページの一覧。', SITE + '/storyline/', body,
-              f'<style>{XP_CSS}{SL_CSS}</style>\n', og_type='website'))
+              f'<style>{XP_CSS}{SL_CSS}</style>\n' + ld(idx_crumbs) + ld(idx_ld), og_type='website'))
         sm.append((SITE + '/storyline/', max(c[0] for c in cards).isoformat(timespec='seconds'), 'daily', '0.6'))
     return sm
 
