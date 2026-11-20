@@ -3996,6 +3996,7 @@ def build_daily_digest(allarts):
         d = when(a).astimezone(JST).date()
         days.setdefault(d, []).append(a)
     keys = sorted(days, reverse=True)[:DIGEST_DAYS]
+    keys = [d for d in keys if len({a.get('topic') or a['id'] for a in days[d]}) >= 3]  # only days that get a page, so prev/next never point at a missing one
     sm = []
     W = '月火水木金土日'
     for i, d in enumerate(keys):
