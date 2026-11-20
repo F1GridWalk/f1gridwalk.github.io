@@ -3724,6 +3724,67 @@ ALLARTS = []
 NEWS_TOP = 100   # /news/ shows the newest articles; every month has its own page
 
 
+DIGEST_DAYS = 21
+DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:dg}.dg-list li{counter-increment:dg;padding:14px 0 14px 40px;border-top:1px solid var(--line);position:relative}"
+              ".dg-list li::before{content:counter(dg);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center}"
+              ".dg-list h2{font-size:17px;line-height:1.5;margin:0}.dg-list h2 a{color:var(--ink);text-decoration:none}.dg-list p{margin:6px 0 0;font-size:14.5px;line-height:1.75}"
+              ".dg-list small{display:block;margin-top:6px;font-size:12px;color:var(--muted)}.dg-nav{display:flex;justify-content:space-between;gap:12px;margin:24px 0 0;font-weight:700}")
+
+
+def build_daily_digest(allarts):
+    """news/daily/YYYY-MM-DD/ — the day's main F1 news on one page (owner's OK, 20 Nov 2026).
+    One summary each is thin; ten together make a page worth reading, finding and sharing.
+    The day's news is ranked by how many outlets covered the same story."""
+    tc = {}
+    for a in allarts:
+        if a.get('topic'):
+            tc[a['topic']] = tc.get(a['topic'], 0) + 1
+    days = {}
+    for a in allarts:
+        if a.get('kind', 'news') not in ('news', 'tech', 'rumor'):
+            continue
+        d = when(a).astimezone(JST).date()
+        days.setdefault(d, []).append(a)
+    keys = sorted(days, reverse=True)[:DIGEST_DAYS]
+    sm = []
+    W = '月火水木金土日'
+    for i, d in enumerate(keys):
+        seen, picks = set(), []
+        for a in sorted(days[d], key=lambda a: (-tc.get(a.get('topic'), 1), -when(a).timestamp())):
+            k = a.get('topic') or a['id']
+            if k in seen:
+                continue
+            seen.add(k)
+            picks.append(a)
+            if len(picks) >= 10:
+                break
+        if len(picks) < 3:
+            continue
+        lab = f'{d.month}月{d.day}日（{W[d.weekday()]}）'
+        rows = ''.join(
+            f'<li><h2><a href="/news/{e(a["id"])}/" data-track="click/digest/{d.isoformat()}">{e(a["title"])}</a></h2>'
+            f'<p>{e(a.get("summary", ""))}</p><small>{e(a["source"])}' + (f' ほか {tc[a["topic"]] - 1} 媒体' if tc.get(a.get('topic'), 1) > 1 else '') + '</small></li>'
+            for a in picks)
+        nav = ['<span></span>', '<span></span>']
+        if i + 1 < len(keys):
+            nav[0] = f'<a href="/news/daily/{keys[i + 1].isoformat()}/" data-track="click/digest/prev">← {keys[i + 1].month}月{keys[i + 1].day}日</a>'
+        if i > 0:
+            nav[1] = f'<a href="/news/daily/{keys[i - 1].isoformat()}/" data-track="click/digest/next">{keys[i - 1].month}月{keys[i - 1].day}日 →</a>'
+        body = (f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › {lab}のまとめ</nav>'
+                f'<p class="ent-k">DAILY F1 NEWS</p><h1>{d.year}年{lab}のF1ニュースまとめ</h1>'
+                f'<p class="lead">この日に世界の媒体が報じたF1ニュースから、主な{len(picks)}本を選びました。多くの媒体が報じた話題ほど上にあります。見出しを押すと、要約と原文へのリンクがあるページに移ります。</p>'
+                f'<ol class="dg-list">{rows}</ol><div class="dg-nav">{nav[0]}{nav[1]}</div>'
+                '<p class="ent-more"><a href="/news/">ニュース一覧</a><a href="/gp/">GPごとに読む</a><a href="/teams/">チームごとに読む</a></p>')
+        url = f'{SITE}/news/daily/{d.isoformat()}/'
+        top3 = '／'.join(a['title'] for a in picks[:3])
+        write(f'news/daily/{d.isoformat()}/index.html', page(
+            f'F1ニュースまとめ {d.year}年{lab}｜主なニュース{len(picks)}本｜F1グリッドウォーク',
+            (f'{d.year}年{lab}のF1の主なニュース{len(picks)}本を日本語で。{top3}')[:150], url, body,
+            f'<style>{ENT_CSS}{DIGEST_CSS}</style>\n', og_type='article'))
+        sm.append((url, max(when(a) for a in picks).isoformat(timespec='seconds'), None, '0.6'))
+    return sm
+
+
 def build_news_lists(allarts, flag_of):
     months = {}
     for a in allarts:
@@ -3751,7 +3812,8 @@ def build_news_lists(allarts, flag_of):
     lst = ('<nav class="crumbs"><a href="/">トップ</a> › ニュース一覧</nav><h1>ニュース一覧</h1>'
            f'<p class="lead">これまでに紹介した世界のF1ニュースは {len(allarts)} 本。各国の記事の見出しを日本語にして、短い要約と原文へのリンクを付けています。'
            f'ここには新しい {len(top)} 本を並べています。それより前の記事は、月ごとの一覧からどうぞ。</p>'
-           + nav() + ways + '<h2 style="font-size:18px;margin:26px 0 0">新しい記事</h2>' + _day_list(top, flag_of)
+           + nav() + ways + (f'<p class="ent-more"><a href="/news/daily/{when(allarts[0]).astimezone(JST).date().isoformat()}/" data-track="click/news/digest">今日のF1ニュースまとめ →</a></p>' if allarts else '')
+           + '<h2 style="font-size:18px;margin:26px 0 0">新しい記事</h2>' + _day_list(top, flag_of)
            + '<section><h2>月ごとの一覧</h2>' + nav() + '</section>')
     write('news/index.html', page('ニュース一覧｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1ニュースを日本語の見出しと要約で。これまでに紹介した記事の一覧です。',
                                   SITE + '/news/', lst, f'<style>{ENT_CSS}</style>\n', og_type='website'))
@@ -4039,6 +4101,7 @@ def main():
 
     # the list pages: the newest articles on /news/, every month on its own page (14 Oct 2026)
     month_sm = build_news_lists(allarts, flag_of)
+    month_sm += build_daily_digest(allarts)
 
     # sitemap
     now = datetime.now(JST).isoformat(timespec='seconds')
