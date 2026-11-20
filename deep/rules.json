@@ -2880,19 +2880,25 @@
     "ファステストラップは、レース中にいちばん速かった1周のことだ。2024年までは、これを出したドライバーが10位以内でゴールすれば、ボーナスとして1点がもらえた。",
     "このボーナスは2025年シーズンからなくなった。2024年10月にFIA世界モータースポーツ評議会が決めた。10位より後ろの車がピットに入ってファステストラップを取ると、10位以内の誰かから1点を奪えてしまう、という問題があったためだ。",
     "今は、1位の25点が決勝で取れる最大のポイントになった（チームなら1位と2位で最大43点）。ファステストラップを出しても、ポイントは増えない。スプリントには、もともとこのボーナスはない。",
-    "ただし、タイムの記録としては残る。ポール、優勝、ファステストラップ、全周回で先頭を走る、を1人で達成すると「グランドスラム」と呼ばれる。"
+    "ただし、タイムの記録としては残る。ポール、優勝、ファステストラップ、全周回で先頭を走る、を1人で達成すると「グランドスラム」と呼ばれる。",
+    "点はなくなっても、記録としての重みは残る。2026年のモナコGPでは、アントネッリがポールからスタートして全周回をリードし、ファステストラップも記録して、自身初のグランドスラムを達成した。5連勝目の勝利だった（RACER、grandprix.com）。"
    ],
    "examples": [
     {
      "t": "バクー：ラッセルがポール、優勝、ファステストラップ、全周回リードを達成。ボーナス点はないため、得点は優勝の25点。",
      "u": "/news/de-motorsport-total-russell-dominant-weekend/"
+    },
+    {
+     "t": "アントネッリは5連勝目のモナコでグランドスラムを達成した",
+     "u": "/news/de-motorsporttotal-wolff-antonelli-senninha/"
     }
    ],
    "see": [
     "points-system",
-    "pole-position"
+    "pole-position",
+    "grand-slam"
    ],
-   "checked": "2026-11-11",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "Formula 1",
@@ -2913,6 +2919,16 @@
      "name": "Motor Sport Magazine",
      "title": "F1 points system: how it works, and what has changed",
      "url": "https://motorsportmagazine.com/articles/single-seaters/f1/f1-points-system-how-it-works-and-what-has-changed"
+    },
+    {
+     "name": "RACER",
+     "title": "Antonelli masterclass leaves Monaco chaos far behind（2026年6月7日、初のグランドスラム）",
+     "url": "https://racer.com/2026/06/07/antonelli-masterclass-leaves-monaco-chaos-far-behind"
+    },
+    {
+     "name": "GRANDPRIX.COM",
+     "title": "Monaco GP 2026 race notes（5連勝目）",
+     "url": "https://www.grandprix.com/races/monaco-gp-2026-race-notes.html"
     }
    ]
   },
@@ -3293,21 +3309,28 @@
     "違反をした車は、ピットレーンに入り、自分のピット位置で10秒以上止まってから、コースに戻る。止まっている間は、車に作業ができない。",
     "規則の罰の一覧では、10秒のストップ＆ゴーとして、5秒加算、10秒加算、ドライブスルーペナルティの次に並ぶ。フォルススタートや、SC・VSC中に最低タイムを守らなかったときにも、スチュワードが選べる罰の一つだ。",
     "消化できる回数の決まりはドライブスルーペナルティと同じで、通知のあとコース上でラインを通れるのは2回まで。最後の3周に入ってから、またはレースが終わってから科されたときは、30秒（ドライブスルーは20秒）がレースタイムに加算される。",
-    "危険な状態のままピットから車を出したとき（→アンセーフリリース）は、ストップ＆ゴーが科される。ピットレーンの速度違反でも、スチュワードがこの罰を選べる。エンジンが止まって自力で再始動できないときは、罰の時間が過ぎたあとなら、再始動のための作業が認められる。"
+    "危険な状態のままピットから車を出したとき（→アンセーフリリース）は、ストップ＆ゴーが科される。ピットレーンの速度違反でも、スチュワードがこの罰を選べる。エンジンが止まって自力で再始動できないときは、罰の時間が過ぎたあとなら、再始動のための作業が認められる。",
+    "今季は、この罰を科すべきだったかどうかが、FIAの国際控訴裁判所で争われている。イタリアGPの再スタートの前、角田はグリッドの自分の枠の中で斜めに止まり、レースディレクターのマルケスは追加のフォーメーションラップを命じた。スチュワードは、追加の周を決めたのはレースディレクターだとして、角田を罰しなかった。アウディは、角田が追加の周のきっかけをつくったと主張して控訴した。消化されなかったストップ＆ゴーは30秒加算に置き換わるため、罰が出れば角田は15位に下がり、ボルトレートが10位に上がる。審理は11月25日にパリで、非公開で行われる（The Race）。"
    ],
-   "rule": "スポーティングレギュレーション B1.9.5 d)、B1.9.6",
+   "rule": "スポーティングレギュレーション B1.9.5 d)、B1.9.6、B5.11.1（Issue 09〈2026年10月1日版〉で確認）",
    "examples": [
     {
      "t": "メキシコGP、ガスリーはイエローフラッグ違反でストップ＆ゴーが30秒加算に置き換えられた",
      "u": "/news/en-therace-alpine-double-penalty-mexico/"
+    },
+    {
+     "t": "アウディは、角田にストップ・アンド・ゴーを科すべきだったとしてイタリアGPの裁定に控訴し、FIA国際控訴裁判所が11月25日にパリで審理する",
+     "u": "/news/de-f1insider-audi-tsunoda-appeal-hearing/"
     }
    ],
    "see": [
     "drive-through",
     "unsafe-release",
-    "time-penalty"
+    "time-penalty",
+    "international-court-of-appeal",
+    "formation-lap"
    ],
-   "checked": "2026-11-13",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -3338,6 +3361,11 @@
      "name": "FIA",
      "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
      "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "Hearing set for Audi appeal against rival（2026年11月、角田のイタリアGPの件、11月25日にパリで非公開審理）",
+     "url": "https://www.the-race.com/formula-1/audi-appeal-f1-italian-gp-yuki-tsunoda/"
     }
    ]
   },
@@ -3452,7 +3480,8 @@
    "body": [
     "スチュワードは、規則で、次の大会への出場停止を科せる。代表的なのは、ペナルティポイントが12点に達したときの自動的な1戦停止だ。このときスーパーライセンスが停止され、そのドライバーは次の1戦に出られない。",
     "12点に達して停止になった初めてのドライバーは、2024年のケビン・マグヌッセンだ。イタリアGPで12点に達し、次のアゼルバイジャンGPを欠場して、ハースはベアマンを起用した。出場停止になったドライバーは、2012年のグロージャン以来だった。",
-    "2026年のバクーでは、ノリスが事故のあとに「最低でも1戦の出場停止が妥当」と主張した。ただ、ラッセルは出場停止を意図的で危険な行為に限るべきだとし、フェルスタッペンは本人が反省しているなら十分だと述べた。ノリスはレースの翌朝、インスタグラムで自分の発言を謝罪し、「僕が間違っていた」と書いた（The Race）。"
+    "2026年のバクーでは、ノリスが事故のあとに「最低でも1戦の出場停止が妥当」と主張した。ただ、ラッセルは出場停止を意図的で危険な行為に限るべきだとし、フェルスタッペンは本人が反省しているなら十分だと述べた。ノリスはレースの翌朝、インスタグラムで自分の発言を謝罪し、「僕が間違っていた」と書いた（The Race）。",
+    "規則の罰の一覧では、出場停止は「ドライバーの次の大会への出場停止」として、失格の次、いちばん最後に並ぶ（B1.9.5 j）。12点に届く前でも、スチュワードが選べる罰の一つだ。ニュースでは、処分が出るたびにそのドライバーの過去12か月の累計点が添えられることが多い。2026年のサンパウロGPでは、アルボンがコースに戻るときにガスリーにブレーキを踏ませたとして5秒加算と2点を受け、累計は3点になった（GPblog）。"
    ],
    "rule": "スポーティングレギュレーション B1.9.5 j)（条文番号は Issue 09〈2026年10月1日版〉で確認）",
    "examples": [
@@ -3505,6 +3534,11 @@
      "name": "The Race",
      "title": "Norris apologises to Colapinto for race ban demand（2026年9月28日、Josh Suttill。インスタグラムで謝罪、\"it was wrong of me\"）",
      "url": "https://www.the-race.com/formula-1/norris-apologises-colapinto-for-race-ban-demand-f1-baku-crash/"
+    },
+    {
+     "name": "GPblog",
+     "title": "Brazilian GP stewards deliver verdict after dangerous on-track incident（2026年11月、アルボンに5秒加算と2点、過去12か月で計3点）",
+     "url": "https://www.gpblog.com/en/news/brazilian-gp-stewards-deliver-verdict-after-dangerous-on-track-incident"
     }
    ]
   },
@@ -3531,22 +3565,29 @@
    "body": [
     "失格になると、そのレースや予選の結果から記録が消え、順位もポイントも失う。とても重い罰のひとつだ（B1.9.5 i）。",
     "多くは、レース後の車検で技術規則に合っていないと分かったときに起きる。2025年の中国GPでは、ハミルトンの車は底板の下の板（プランク）がすり減りすぎ、ルクレールとガスリーの車は最低重量に足りず、3人とも失格になった。2026年のマイアミでは、ハジャーの車のフロアが規則の範囲からはみ出していて、予選の結果から外された。最後尾からの出走をいったん認められたが、そのあとパルクフェルメの間にパワーユニットの部品を替えたため、決勝はピットレーンからのスタートになった。",
-    "レース中に黒旗を示されても失格になる。危険な運転や安全にかかわる違反などに使われる。示すかどうかはスチュワードが決め、示されたドライバーは、次にピット入口に来たときにピットに入って止まらなければならない（→黒旗）。"
+    "レース中に黒旗を示されても失格になる。危険な運転や安全にかかわる違反などに使われる。示すかどうかはスチュワードが決め、示されたドライバーは、次にピット入口に来たときにピットに入って止まらなければならない（→黒旗）。",
+    "2026年のメキシコシティGPでは、ローソン（レーシングブルズ）が予選で失格になった。スチュワードによると、Q2の最速の周でコントロールラインを越えたあと、すぐにアクセルを戻さなかったため、MGU-Kの出力を決められたとおりに下げる「ステップダウン」が守られなかった。チームは自分から違反を申し出て、速さの得はなかったと主張した。スチュワードは「性能上の利益がなくても、技術規則への不適合は免除されない」とし、過去の例に合わせて失格にした。予選8番手だったローソンは、決勝で7位に入った（F1公式）。"
    ],
    "rule": "スポーティングレギュレーション B1.9.5 i)（条文番号は Issue 09〈2026年10月1日版〉で確認）",
    "examples": [
     {
      "t": "ローソンのメキシコGP予選失格、背景にMGU-K出力の低下規定",
      "u": "/news/de-motorsportmagazin-lawson-mgu-k-rule/"
+    },
+    {
+     "t": "ローソンは予選で技術違反により失格となったが、ピットレーンからスタートして7位に入った",
+     "u": "/news/en-planetf1-lawson-verstappen-impact/"
     }
    ],
    "see": [
     "race-ban",
     "penalty-points",
     "parc-ferme",
-    "points-deduction"
+    "points-deduction",
+    "scrutineering",
+    "mgu-k"
    ],
-   "checked": "2026-11-13",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -3592,6 +3633,16 @@
      "name": "FIA",
      "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
      "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Lawson disqualified from Mexico City GP Qualifying for technical breach（2026年10月31日）",
+     "url": "https://www.formula1.com/en/latest/article/lawson-disqualified-from-mexico-city-gp-qualifying-for-technical-breach.1LIHCl2P75cYj0cGJgyZhx"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Gran Premio de la Ciudad de México 2026 – Race Result",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
     }
    ]
   },
@@ -4245,14 +4296,11 @@
    "short": "大雨のときに使う青色の雨用タイヤ。水を逃がす力はいちばん大きい。",
    "body": [
     "フルウェットは、雨用タイヤのなかでいちばん水を逃がせるタイヤだ。サイドウォールは青で示される。スリックやインターでは走れないほどの大雨で使う。",
-    "ピレリのイザーラ氏は2025年6月、シミュレーションではフルウェット1本で毎秒約85リットルの水を押しのけられると話した（85リットルという数字は、2021年にも時速300kmでの値として示されていた）。そのぶん水煙が上がり、後ろの車は前が見えにくくなる。氏は、視界の問題は完全には解決できないとも話している。",
-    "フルウェットは熱を持ちやすく、ドライバーはインターで粘りたがると言われてきた。ピレリは2025年の時点で、インターとの切り替えの目安が乾いたラップタイムの118%ほどになっていると説明し、これを115%前後に下げて、フルウェットを使いやすくしたいと話していた。2026年用の溝の模様は2025年と同じだと発表されている。"
+    "2025年6月のAutosportの記事によると、フルウェット1本はレースの速さで毎秒約85リットルの水を押しのけられる。そのぶん水煙が上がり、後ろの車は前が見えにくくなる。ピレリのマリオ・イゾラは、視界の問題はピレリが直せるものではないと話している（Autosport）。",
+    "フルウェットは熱を持ちやすく、ドライバーはインターで粘りたがると言われてきた。ピレリは2025年の時点で、インターとの切り替えの目安が乾いたラップタイムの118%ほどになっていると説明し、これを115%前後に下げて、フルウェットを使いやすくしたいと話していた。2026年用の溝の模様は2025年と同じだと発表されている。",
+    "規則では、通常の週末にドライバー1人が受け取るフルウェットは2セット、インターミディエイトは5セットだ（B6.2.4）。セーフティカーの後ろでフォーメーションラップを始めるときや、中断のあとセーフティカーの後ろで再開するときは、セーフティカーのオレンジのライトが消えるまでフルウェットを使わなければならず、その間にほかのタイヤに替えるとストップ・アンド・ゴーのペナルティになる（B6.3.7）。2026年は最低内圧も上がり、サンパウロGPではフルウェットの前輪の最低内圧が前年の22psiから26.5psiになった。雨のサンパウロの週末のあと、サインツは「ウェットとインターの水準は十分ではない」と話し、ピレリのマラフスキは来季は別の仕様になると述べた（The Race）。"
    ],
    "examples": [
-    {
-     "t": "セパンは雨予報。ファン掲示板では、フルウェットは実質セーフティカー用だという声も出た（ファン投稿のまとめ）。",
-     "u": "/news/ja-f1are-sepang-weather-forecast/"
-    },
     {
      "t": "ピレリ「フルウェットとインターの間に隙間はない」　雨のサンパウロ予選で検証",
      "u": "/news/de-motorsporttotal-pirelli-fullwet-inter-crossover/"
@@ -4260,25 +4308,27 @@
     {
      "t": "サインツ、全車インターで始まったサンパウロGPのあと、雨用タイヤの改善を求める",
      "u": "/news/en-planetf1-sainz-pirelli-wet-tyres/"
+    },
+    {
+     "t": "サンパウロの週末、多くのドライバーが2026年仕様の雨用タイヤに不満を述べた。フェルスタッペンは作動領域が狭く、冷えると「石のように硬い」と評した。",
+     "u": "/news/de-motorsporttotal-pirelli-wet-tyre-criticism/"
     }
    ],
    "see": [
     "intermediate",
     "tyre-compounds",
     "safety-car",
-    "red-flag"
+    "red-flag",
+    "tyre-allocation",
+    "tyre-pressure",
+    "rain-hazard"
    ],
-   "checked": "2026-11-11",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "Pirelli",
      "title": "Pirelli reveals 2026 F1 tyres: a fresh logo design and new compounds",
      "url": "https://press.pirelli.com/pirelli-reveals-2026-f1-tyres-a-fresh-logo-design-and-new-compounds/"
-    },
-    {
-     "name": "ScuderiaFans",
-     "title": "F1: will full wet tyres make a comeback in 2026? Pirelli responds",
-     "url": "https://scuderiafans.com/f1-will-full-wet-tyres-make-a-comeback-in-2026-pirelli-responds/"
     },
     {
      "name": "Yahoo Sports",
@@ -4294,8 +4344,24 @@
      "name": "PlanetF1",
      "title": "Pirelli 'can do very little' about wet tyre issues",
      "url": "https://www.planetf1.com/news/pirelli-powerless-wet-tyre-issues"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] Issue 09（2026-10-01）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1's divisive wet-weather tyres to change in 2027 – what we know",
+     "url": "https://www.the-race.com/formula-1/f1-divisive-wet-weather-tyres-to-change-in-2027-what-we-know/"
+    },
+    {
+     "name": "Autosport",
+     "title": "Everything Pirelli wants to change about F1's wet tyre that nobody uses",
+     "url": "https://www.autosport.com/f1/news/everything-pirelli-wants-to-change-about-f1s-wet-tyre-that-nobody-uses/10735573/"
     }
-   ]
+   ],
+   "rule": "スポーティングレギュレーション B6.2.4（週末に受け取るセット数）、B6.3.7（セーフティカーの後ろのフォーメーションラップ・再開ではフルウェット）（条文番号は Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "two-compound-rule",
@@ -4412,7 +4478,8 @@
    "body": [
     "ピットウィンドウは、ピットストップをするのに向いているタイミングの幅のことだ。無線で「ピットウィンドウが開いた」と言われたら、そろそろ入ってもよい時期に来たという意味になる。幅は数周ほどだ。",
     "窓の早いほうで入り、新しいタイヤで前に出るのがアンダーカットだ。遅くまで走って前に出るのがオーバーカットになる。どちらが効くかは、古いタイヤの落ち方（デグラデーション）や、新しいタイヤの温まりやすさで変わる。チームは相手の動きを見て、窓の中のどの周に入るかを選ぶ。",
-    "セーフティカーが出ると、ピットで失う時間が小さくなり、半分ほどになることもある。そのため、作戦が変わることがある。ドライのレースでは2種類のタイヤを使う義務があるので、少なくとも1回はピットに入る必要がある。"
+    "セーフティカーが出ると、ピットで失う時間が小さくなり、半分ほどになることもある。そのため、作戦が変わることがある。ドライのレースでは2種類のタイヤを使う義務があるので、少なくとも1回はピットに入る必要がある。",
+    "規則では、バーチャルセーフティカーやセーフティカーの間は、タイヤを替えるとき以外はピットに入れない（B5.12.3、B5.13.3）。雨用タイヤを使ったレースでは、2種類のドライタイヤを使う義務はかからない（B6.3.6）。今季のサンパウロGPはインターミディエイトで始まったので、この義務はかからなかった。窓の中で入っても、作業でつまずけば意味がなくなる。同じレースのベアマンは、1周目の3コーナーで車が急に挙動を乱したときに後部の衝撃吸収構造を傷めていて、ピットストップがとても長くなった。小松代表は、それがレースを台なしにしたと話した（F1公式）。"
    ],
    "examples": [
     {
@@ -4422,6 +4489,10 @@
     {
      "t": "アメリカGPの作戦分析　ハードを避けた2ストップは誤りだったか",
      "u": "/news/de-motorsportmagazin-austin-strategy-analysis/"
+    },
+    {
+     "t": "サンパウロGPで20番手から出たハミルトンは14周目の終わりにソフトへ交換。クルサードは「1周早かったが勇敢」と評した。",
+     "u": "/news/nl-f1maximaal-hamilton-pitstop-gamble/"
     }
    ],
    "see": [
@@ -4429,9 +4500,11 @@
     "overcut",
     "degradation",
     "safety-car",
-    "two-compound-rule"
+    "two-compound-rule",
+    "pit-loss",
+    "vsc"
    ],
-   "checked": "2026-11-11",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "PlanetF1",
@@ -4452,8 +4525,19 @@
      "name": "formula1.com",
      "title": "Undercut vs overcut – Why tyre strategy was so finely poised in Monaco",
      "url": "https://www.formula1.com/en/latest/article/undercut-vs-overcut-why-tyre-strategy-was-so-finely-poised-in-monaco-and-why.1YYMDkEBnFols8bDWtSXiz"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] Issue 09（2026-10-01）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What the teams said – Race day at the 2026 Sao Paulo Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-at-the-2026-sao-paulo-grand-prix.6WRrgNQ7FDoFnwzxR9Vjw7"
     }
-   ]
+   ],
+   "rule": "スポーティングレギュレーション B5.12.3（VSC中のピット進入）、B5.13.3（SC中のピット進入）、B6.3.6（2種類のドライタイヤの使用義務と例外）（条文番号は Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "overcut",
@@ -4944,9 +5028,10 @@
    ],
    "short": "MGU-Kがつくった電気をためる電池。規則上の名前はエネルギーストア。",
    "body": [
-    "ES（Energy Store）は、MGU-Kが回生でつくった電気をためておく電池。ファンはバッテリーと呼ぶことが多いが、規則上の正式な呼び名はエネルギーストアだ。ホンダは、リチウムイオン電池の技術は変わらず、容量も2025年までと同じだと説明している。",
-    "2026年規則の大きなポイントは、1周のあいだにESの充電量が増減できる幅に「4MJ」の上限があること。ためる量と使う量の差が、1周で4MJを超えてはいけない。4MJは、MGU-Kの350kWをフルで使って約11.4秒ぶんにあたる。",
-    "電気の出力が約3倍になったので、電池の使い方が速さを左右する。電気が足りなくなると、直線の終わりでMGU-Kの助けが弱まり、最高速が落ちる。エネルギーをどこで使い、どこでためるかが、2026年のマシンづくりとレース運びの大事な部分になった。"
+    "ES（Energy Store）は、MGU-Kが回生でつくった電気をためておく電池。一般にはバッテリーと呼ばれることが多いが、技術規則での呼び名はエネルギーストア（ES）だ。ホンダは、リチウムイオン電池の技術は変わらず、容量も2025年までと同じだと説明している。",
+    "2026年規則の大きなポイントは、コースを走っているあいだ、ESの充電量の最大と最小の差が「4MJ」を超えてはいけないことだ（C5.2.9）。4MJは、MGU-Kの350kWをフルで使って約11.4秒ぶんにあたる。",
+    "電気の出力が約3倍になったので、電池の使い方が速さを左右する。電気が足りなくなると、直線の終わりでMGU-Kの助けが弱まり、最高速が落ちる。エネルギーをどこで使い、どこでためるかが、2026年のマシンづくりとレース運びの大事な部分になった。",
+    "技術規則は、ESの主な筐体に収める部品の最低重量を合わせて35.0kgと決めている（C5.17.9）。1人のドライバーが1年に使えるESは2基で、2026年はさらに1基を追加で使える（B8.2.2、B8.2.3）。今季は電池の不具合も目立った。ホンダの折原伸太郎は、ブラジルGPの週末にストロールの車で電池の問題が2回出たと話し、「何が起きたかは分かっているが、根本原因は分からない」と述べた。ストロールは決勝でリタイアし、今季の完走は20戦中6回にとどまった（The Race）。"
    ],
    "examples": [
     {
@@ -4960,21 +5045,22 @@
     {
      "t": "アロンソ、Q3の2周目は「エネルギーが残っていなかった」",
      "u": "/news/de-motorsporttotal-alonso-q3-cold-tyres-no-energy/"
+    },
+    {
+     "t": "ホンダの折原伸太郎は、ブラジルGPでストロールを襲ったバッテリー関連のトラブルについて、根本原因はまだ分かっていないと明かした。",
+     "u": "/news/en-planetf1-honda-stroll-battery-investigation/"
     }
    ],
    "see": [
     "mgu-k",
     "super-clipping",
     "overtake-mode",
-    "ice"
+    "ice",
+    "pu-allocation",
+    "kw-and-mj"
    ],
-   "checked": "2026-11-11",
+   "checked": "2026-11-20",
    "src": [
-    {
-     "name": "F1 Chronicle",
-     "title": "The Energy Store: F1's 2026 Battery Specifications Explained",
-     "url": "https://f1chronicle.com/f1-battery-energy-store-explained/"
-    },
     {
      "name": "Autosport",
      "title": "How to simplify the complex subject of F1's electrical rules",
@@ -4989,8 +5075,24 @@
      "name": "Honda",
      "title": "2026 Formula 1 Regulations Overview",
      "url": "https://global.honda/en/F1/features/2026_Commentary/regulations/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C [Technical] Issue 17（2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] Issue 09（2026-10-01）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "What we know about worrying new Honda F1 reliability issue",
+     "url": "https://the-race.com/formula-1/honda-f1-new-reliability-problem-might-not-cure-before-2026-end/"
     }
-   ]
+   ],
+   "rule": "技術規則 C5.2.9（ESの充電量の幅）、C5.17.9（ES本体の部品の最低重量）（Section C Issue 17〈2026年4月28日版〉で確認）／スポーティングレギュレーション B8.2.2、B8.2.3（ESの使用数）（Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "mgu-h",
@@ -5154,7 +5256,8 @@
    "body": [
     "ICE（Internal Combustion Engine）は、燃料を燃やして動力を出す内燃エンジンのこと。F1では1.6リッターのV6ターボで、基本の形は2025年までと同じまま2026年に引き継がれた。",
     "変わったのは出力だ。2025年までの約550〜560kWから、2026年は約400kWに下がった。燃料のエネルギーの流れには上限（1時間あたり3000MJ）がかかり、圧縮比も18:1から16:1に下げられた。そのぶんMGU-Kが350kWに増え、エンジンと電気の割合はおよそ50対50になった。",
-    "圧縮比の検査は、2026年6月1日から冷えた状態だけでなく熱い状態（130℃）でも行うことになった（2027年からは熱い状態のみ）。2026年6月にFIAの世界モータースポーツ評議会が承認した変更で、エンジンの出力は2027年に420kW、2028年に450kWへ引き上げられる。そのぶんMGU-Kの通常時の最大は300kWに下がる。"
+    "圧縮比の検査は、2026年6月1日から冷えた状態だけでなく熱い状態（130℃）でも行うことになった（2027年からは熱い状態のみ）。2026年6月にFIAの世界モータースポーツ評議会が承認した変更で、エンジンの出力は2027年に420kW、2028年に450kWへ引き上げられる。そのぶんMGU-Kの通常時の最大は300kWに下がる。",
+    "技術規則は、排気量を1600cc（+0/−10cc）、6つの気筒を90度のV型に並べると決め（C5.1.2、C5.1.3）、どの気筒も幾何学的な圧縮比を16.0までとしている（C5.4.3）。1人のドライバーが1年に使えるICEは3基で、2026年は1基を追加で使え（B8.2.2、B8.2.3）、超えるとグリッド降格になる。今季は、ラッセルがサンパウロGPで新しいICEを入れて5グリッド降格を受け、ピアストリは今季5基目のICEでラスベガスGPに10グリッド降格を受けることになった（The Race）。ニュースで「エンジン交換で降格」と出たら、どの部品の何基目かを見ると、降格の大きさが分かる。"
    ],
    "examples": [
     {
@@ -5164,6 +5267,10 @@
     {
      "t": "FIA、最後のADUO評価で追加なし　最強の内燃エンジンとの差で追加の改良を認める制度",
      "u": "/news/en-planetf1-fia-aduo-final-window/"
+    },
+    {
+     "t": "ピアストリはラスベガスGPで新しい内燃機関（ICE）を投入し、10グリッド降格を受ける。年間4基までは無罰で、5基目の扱いになる。",
+     "u": "/news/en-racingnews365-piastri-ice-penalty-vegas/"
     }
    ],
    "see": [
@@ -5171,9 +5278,11 @@
     "mgu-h",
     "sustainable-fuel",
     "energy-store",
-    "pu-allocation"
+    "pu-allocation",
+    "kw-and-mj",
+    "grid-penalty"
    ],
-   "checked": "2026-11-11",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -5219,8 +5328,29 @@
      "name": "PlanetF1",
      "title": "F1 agrees major 2027 engine change with further 2028 revision",
      "url": "https://www.planetf1.com/news/f1-2027-engine-rules-power-unit-ratio-approved-2028"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C [Technical] Issue 17（2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] Issue 09（2026-10-01）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "Russell serving another F1 engine grid penalty in Brazil",
+     "url": "https://www.the-race.com/formula-1/russell-serving-another-f1-engine-grid-penalty-in-brazil/"
+    },
+    {
+     "name": "The Race",
+     "title": "Mercedes plan to debut ADUO upgrade on Antonelli's car only",
+     "url": "https://www.the-race.com/formula-1/mercedes-plan-to-debut-aduo-upgrade-on-antonellis-car-only/"
     }
-   ]
+   ],
+   "rule": "技術規則 C5.1.2（排気量）、C5.1.3（気筒の数と配置）、C5.4.3（圧縮比）（Section C Issue 17〈2026年4月28日版〉で確認）／スポーティングレギュレーション B8.2.2、B8.2.3（使用数）（Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "minimum-weight",
@@ -6221,7 +6351,8 @@
     "パワーユニット（PU）を作り、自分のチームや他のチームに供給する会社。2026年は5社で、メルセデス、フェラーリ、ホンダ、レッドブル・フォード、アウディだ。このうちアウディは2026年にF1へ初めて加わり、レッドブルも自社のPU（フォードが協力）を使い始めた。",
     "供給先は次のとおり。メルセデスは自社のほか、マクラーレン、ウィリアムズ、アルピーヌ。フェラーリは自社のほか、ハースとキャデラック。ホンダはアストンマーティン。レッドブル・フォードはレッドブルとレーシングブルズ。アウディは自社チームだけだ。",
     "キャデラックは、2026〜2028年の3シーズンはフェラーリのPUを使う。GMが作る自社PUは2029年の参戦が目標で、FIAは2025年4月にGMをPUメーカーとして2029年から認めた。",
-    "お金の面では、チームのコストキャップとは別の扱いがある。チームが払うPUの代金は、決められた最高価格までコストキャップの外で数える。"
+    "お金の面では、チームのコストキャップとは別の扱いがある。チームが払うPUの代金は、決められた最高価格までコストキャップの外で数える。",
+    "メーカーの名前だけでは、だれが何をしたかは分からない。レッドブル・フォードのPUはレッドブルが設計したもので、フォードは電池のセルの化学から関わり始め、制御ソフトやキャリブレーションにも広げた。技術者をミルトンキーンズに常駐させ、ターボの試験に使うガスタービンの設備も用意した。このPUはFIAの内燃エンジンの評価でトップとされ、2026年に3勝した（The Race）。"
    ],
    "examples": [
     {
@@ -6239,6 +6370,10 @@
     {
      "t": "GM、キャデラックの自社PU工場を12月18日に全面稼働へ",
      "u": "/news/de-motorsporttotal-cadillac-engine-factory-date/"
+    },
+    {
+     "t": "レッドブル・フォードのPUはFIAの評価で内燃機関のトップとされ、初年度に3勝。フォードの役割は名義貸しにとどまらなかったとThe Raceが分析した。",
+     "u": "/news/en-therace-ford-redbull-engine-role/"
     }
    ],
    "see": [
@@ -6273,10 +6408,15 @@
      "name": "FIA",
      "title": "2026 F1 Regulations Section D Financial - F1 Teams (Issue 07, 2026-06-25)",
      "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "Ford's real role in building F1's best engine",
+     "url": "https://www.the-race.com/formula-1/ford-real-role-in-building-f1-best-engine/"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-11-11"
+   "checked": "2026-11-20"
   },
   {
    "id": "customer-team",
@@ -6535,7 +6675,8 @@
     "技術部門の責任者。F1公式の説明では、マシンが「規則に合い、安全で、速く、壊れにくい」ようにするため、技術の人材と資源をまとめる役目だ。部門どうしで意見が分かれたときは、決断を下す。",
     "昔は、技術責任者が自分の考えをすべての部品に反映させる形が多かった。今は1000人規模の組織でマシンを作るので、専門のスタッフに仕事を任せることが求められる。どの開発の方向に進むかは、データだけでなく、経験と勘に頼る部分も大きい。",
     "形はチームによって違う。技術責任者が1人のところもあれば、車体とエンジンで別々に置いたところもある（2019年のルノーなど）。車のデザインの決定と、FIAの規則に合っているかの確認が、おもな仕事だ。",
-    "チーム代表が経営と全体を見るのに対し、技術責任者は車の設計と開発を受け持つ。"
+    "チーム代表が経営と全体を見るのに対し、技術責任者は車の設計と開発を受け持つ。",
+    "2026年は新しい規則の1年目で、開発の速さが大きな話題になった。メルセデスのジェームズ・アリソン技術責任者は8月、風洞で「2か月ごとに約0.5秒」を見つけていて、1週間あたりの空力の伸びは前年の6〜7倍だと話した（PlanetF1）。技術責任者の下には、副技術責任者などが置かれる。メルセデスのシモーネ・レスタ副技術責任者は、セパンで入れた空力の改良はダウンフォースを増やすためのものだったが、バランスを前に寄せすぎて車の扱える幅を狭め、乗りにくくしたと説明した（Autosport）。"
    ],
    "examples": [
     {
@@ -6549,11 +6690,16 @@
     {
      "t": "マクラーレンの技術責任者「クルマの力を出し切れていない」",
      "u": "/news/de-formel1-mclaren-singapore-hopes/"
+    },
+    {
+     "t": "メルセデスのアリソン技術責任者が、今季終盤にW17が伸び悩んだ理由として、セパンで投入した「アップデート18」の副作用を挙げた。",
+     "u": "/news/de-motorsporttotal-allison-w17-update18/"
     }
    ],
    "see": [
     "team-principal",
-    "race-engineer"
+    "race-engineer",
+    "upgrade"
    ],
    "src": [
     {
@@ -6565,10 +6711,20 @@
      "name": "Red Bull",
      "title": "The people behind the F1 paddock",
      "url": "https://www.redbull.com/gb-en/the-people-behind-the-f1-paddock"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "Mercedes 'scary' half-second development claim as team seeks to restore 'status quo'",
+     "url": "https://www.planetf1.com/news/mercedes-f1-development-james-allison-half-second-every-two-months"
+    },
+    {
+     "name": "Autosport",
+     "title": "Mercedes explains why its upgrade made its F1 car harder to drive",
+     "url": "https://www.autosport.com/f1/news/mercedes-explains-why-its-upgrade-made-its-f1-car-harder-to-drive/10866035/"
     }
    ],
    "cat": "チームとビジネス",
-   "checked": "2026-11-11"
+   "checked": "2026-11-20"
   },
   {
    "id": "race-engineer",
@@ -6592,7 +6748,8 @@
    "body": [
     "ドライバーと最も近くで働くエンジニア。ドライバーと、ピットウォール、ガレージ、工場をつなぐ窓口で、レース中の無線の相手になる。各ドライバーを囲む少人数のチームの中心にいる。",
     "仕事は、マシンのセットアップを決める相談、車のデータ（テレメトリー）を読んで走り方を伝えること、タイヤの状態やライバルの速さを見て判断を助けることなどだ。ほしい情報の量やタイミングはドライバーによって違うので、伝え方を相手に合わせる。",
-    "ピットストップやタイヤの作戦は、データを分析する戦略担当（ストラテジスト）が受け持つチームもある。その場合、レースエンジニアは、決まったことを分かりやすくドライバーに伝える役になる。"
+    "ピットストップやタイヤの作戦は、データを分析する戦略担当（ストラテジスト）が受け持つチームもある。その場合、レースエンジニアは、決まったことを分かりやすくドライバーに伝える役になる。",
+    "担当の交代は、時間をかけて進めることが多い。レッドブルでは、フェルスタッペンを長く担当したランビアーゼが遅くとも2028年にマクラーレンへ移ることになり、後任のトム・ハートが今季の残りのレースを交代で受け持って、2027年の開幕から完全に引き継ぐ。ハートが初めて担当したアメリカGPは、無線の不具合もある難しい週末だった。メキース代表は「素晴らしい仕事をした」と評価する一方、「関係を短い時間でつくり直すことはできない」とも話した（The Race）。"
    ],
    "examples": [
     {
@@ -6606,11 +6763,17 @@
     {
      "t": "フェルスタッペンの新しいレースエンジニアのハートが、米国GPで初めて本番を担当。今季の残りはランビアーゼと交代で務める",
      "u": "/news/en-therace-hart-lambiase-transition/"
+    },
+    {
+     "t": "オースティンでトム・ハートがフェルスタッペンのレースエンジニアとして正式にデビューしたが、無線の不具合で交信が聞き取りにくい場面があった。",
+     "u": "/news/de-motorsportmagazin-hart-verstappen-engineer/"
     }
    ],
    "see": [
     "team-principal",
-    "technical-director"
+    "technical-director",
+    "box-box",
+    "head-of-racing"
    ],
    "src": [
     {
@@ -6632,6 +6795,11 @@
      "name": "Motorsport-Total.com",
      "title": "Verstappen überrascht von Lambiase-Geste: \"Damit hatte ich nicht gerechnet\"（2026年10月12日、ハートがオースティン、ブラジル、ラスベガスで担当とレッドブルが確認）",
      "url": "https://www.motorsport-total.com/formel-1/news/verstappen-ueberrascht-von-lambiase-geste-damit-hatte-ich-nicht-gerechnet-26101204"
+    },
+    {
+     "name": "The Race",
+     "title": "The first step in a major Verstappen F1 change",
+     "url": "https://www.the-race.com/formula-1/how-first-step-in-verstappens-big-f1-2027-transition-really-went/"
     }
    ],
    "cat": "チームとビジネス",
@@ -7261,7 +7429,8 @@
    "body": [
     "開催都市の道路の一部を閉鎖して、一時的なコースにしたもの。レース専用に造ったサーキットではない。ウィリアムズの解説記事は、都市が公道を閉鎖して臨時のレース場にすると説明している。",
     "壁やバリアの間を走るので、細かい正確さが求められる。普通のサーキットにあるような、舗装や芝のランオフは取りにくい。路面は一般の道路なので白線や標示が多く、雨のときは滑りやすいとされる。",
-    "今季の暦では、モナコ（6月）、バクー（9月）、シンガポール（10月）、ラスベガス（11月）が代表的な市街地コースだ。メルボルンとマイアミも、ウィリアムズは2023年に市街地での開催として数えた。マドリードの「マドリング」は、公道の部分とそうでない部分を組み合わせたコースだとThe Raceは伝えた。マドリングでのF1は、9月13日に初めて開かれた（formula1.com）。"
+    "今季の暦では、モナコ（6月）、バクー（9月）、シンガポール（10月）、ラスベガス（11月）が代表的な市街地コースだ。メルボルンとマイアミも、ウィリアムズは2023年に市街地での開催として数えた。マドリードの「マドリング」は、公道の部分とそうでない部分を組み合わせたコースだとThe Raceは伝えた。マドリングでのF1は、9月13日に初めて開かれた（formula1.com）。",
+    "2026年11月19〜21日の第21戦ラスベガスGPも、市街地コースで行われる。1周のコーナーのうち、4つを除くすべてが既存の道路の上にあり、ターン12では時速212マイル（約341km）を超える（Sky Sports）。壁に囲まれながら最高速の高いコースで、低速の曲がり角での正確さと、直線の速さの両方が問われる。"
    ],
    "examples": [
     {
@@ -7275,13 +7444,19 @@
     {
      "t": "ハミルトンは、シンガポールの市街地コースは直線を長くすれば「真に偉大なサーキット」になると語った",
      "u": "/news/en-racingnews365-hamilton-singapore-change/"
+    },
+    {
+     "t": "ヒンチクリフは、ラスベガスの市街地コースはフルスロットルが約1.9km続き、最高速がラップタイムと追い抜きを左右するとして、メルセデスとレッドブルを有力とみた",
+     "u": "/news/en-racingnews365-hinchcliffe-vegas-mercedes-redbull/"
     }
    ],
    "see": [
     "run-off",
     "kerb",
     "track-limits",
-    "grand-prix"
+    "grand-prix",
+    "circuit-lasvegas",
+    "circuit-singapore"
    ],
    "src": [
     {
@@ -7303,10 +7478,15 @@
      "name": "formula1.com",
      "title": "2026 Race Results",
      "url": "https://www.formula1.com/en/results/2026/races"
+    },
+    {
+     "name": "Sky Sports",
+     "title": "Las Vegas Strip Circuit in profile",
+     "url": "https://www.skysports.com/f1/grandprix/las-vegas/circuit-guide"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "kerb",
@@ -7331,6 +7511,7 @@
     "コーナーの縁に置かれた、盛り上がった縁取りのこと。F1の公式用語集によると、コースの端を分かりやすくする役目があり、種類はいくつかあって、多くは目立つ色に塗られている。",
     "ドライバーは縁石を上手に使う。コーナーの内側の縁石にかすめるように寄ると、内側を回る短い線を走れる。出口の縁石を使ってラインを広げ、加速につなげることもある。乗り方を間違えると、マシンを傷める。",
     "「ソーセージ縁石」と呼ばれる盛り上がりの大きい縁石は、コースの限界を示し、大きくはみ出す走りを防ぐために使われる。乗ると床板やサスペンションを傷めたり、スピンしたり、車が空中に飛んだりする恐れがあり、安全面の議論が起きたことがある。",
+    "縁石はタイヤも傷める。2023年のカタールGPでは、多くのタイヤで、側面のゴムと内部のコードの間にはがれが見つかった。FIAは、高さ50mmの「ピラミッド」縁石に、タイヤの側面が細かく何度も当たったことが原因だとし、1セットのタイヤで走れる周回に上限を設けた（FIA）。翌2024年には、16のコーナーのうち7つで、縁石のとがった頂点と後ろの角が削られた（Autosport）。カタールは今季も第22戦として開かれる。",
     "どの縁石にどこまで乗れるかは、ドライバーがレース前のコース歩きで確かめる。コースの端の扱いは「トラックリミット」も見る。"
    ],
    "examples": [
@@ -7348,7 +7529,9 @@
     "track-limits",
     "chicane",
     "run-off",
-    "gravel-trap"
+    "gravel-trap",
+    "tyre-stint-limit",
+    "circuit-lusail"
    ],
    "src": [
     {
@@ -7365,10 +7548,20 @@
      "name": "Motorsport.com",
      "title": "Sausage kerbs: Masi on the Peroni accident",
      "url": "https://www.motorsport.com/f1/news/sausage-kerbs-masi-peroni-accident/4536647/"
+    },
+    {
+     "name": "FIA",
+     "title": "FIA Statement – Treatment of tyres for the 2023 FIA Formula 1 Qatar Grand Prix - UPDATE",
+     "url": "https://www.fia.com/news/fia-statement-treatment-tyres-2023-fia-formula-1-qatar-grand-prix"
+    },
+    {
+     "name": "Autosport",
+     "title": "How the FIA and Pirelli have responded to avoid repeat Qatar tyre troubles（2024年11月26日）",
+     "url": "https://www.autosport.com/f1/news/how-the-fia-and-pirelli-have-responded-to-avoid-repeat-qatar-tyre-troubles/10676676/"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "run-off",
@@ -7391,12 +7584,17 @@
    "body": [
     "決められたコースの境界の外側にあり、ミスをしたドライバーが入ることのできる区域。F1の公式用語集の説明だ。コースを外れたときの逃げ場になる。",
     "舗装（アスファルト）のものと、砂利（グラベル）のものがある。Motorsport Magazineによると、舗装はグリップがよく、ブレーキで速度を落とせるので、大きな事故が起きる可能性を減らせる。砂利で止まってリタイアすることなく、安全にコースへ戻れるのも利点だ。",
-    "ただ、舗装のランオフは、白線の外へ少しはみ出しても危険が小さいので、限界まで攻める走りを生み、取り締まりが難しくなった。そこでFIAは、一部のコーナーで縁石のすぐ外に砂利を戻している。市街地コースでは壁やバリアの間を走ることが多く、ランオフはあまり取れない。"
+    "ただ、舗装のランオフは、白線の外へ少しはみ出しても危険が小さいので、限界まで攻める走りを生み、取り締まりが難しくなった。そこでFIAは、一部のコーナーで縁石のすぐ外に砂利を戻している。市街地コースでは壁やバリアの間を走ることが多く、ランオフはあまり取れない。",
+    "コースの外を通って得をすると、罰の対象になる。2026年のサンパウロGPでは、ヒュルケンベルグがターン1でコースを外れてコラピントを抜き、利益を得たとして10秒加算を受けた。アウディのマクニッシュは、コラピントも外へ膨らんでいて、どちらのコーナーだったかははっきりしなかったと話した。ヒュルケンベルグは罰を消化して10位に入り、1点を得た（PlanetF1）。中継では、ランオフに出た車がどこからコースに戻り、順位がどう変わったかも見ておきたい。"
    ],
    "examples": [
     {
      "t": "バクーのFP1で、アントネッリが油圧トラブルのためターン7でランオフエリアに入った",
      "u": "/news/en-rn365-baku-track-repairs/"
+    },
+    {
+     "t": "サンパウロGPで、ヒュルケンベルグがコラピントをコース外から抜いたとして10秒加算に。アウディのマクニッシュ氏は、抜くにはランオフを通るしかなかったと説明した",
+     "u": "/news/de-motorsporttotal-audi-hulkenberg-penalty-mcnish/"
     }
    ],
    "see": [
@@ -7425,10 +7623,15 @@
      "name": "RacingNews365",
      "title": "Baku track repairs made overnight after F1 drivers complain",
      "url": "https://racingnews365.com/baku-track-repairs-made-overnight-after-f1-drivers-complain"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "FIA penalty decision under Audi microscope after Brazilian GP（2026年11月14日）",
+     "url": "https://www.planetf1.com/news/nico-hulkenberg-fia-penalty-audi-f1-2026-brazilian-grand-prix"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "gravel-trap",
@@ -7453,13 +7656,18 @@
     "主にコーナーの外側にある、砂利を敷いた場所。コースを外れて入った車が、すばやく減速するように作られている。F1の公式用語集の説明だ。",
     "砂利に入った車は動けなくなりやすい。ここが、舗装のランオフとの大きな違いだ。舗装なら、ドライバーはコースに戻ってレースを続けられる（Motorsport Magazine）。",
     "近年は、一部のコーナーで砂利が戻ってきた。スパやイモラに続き、2024年にはオーストリアのターン9と10で、縁石のすぐ外に砂利の帯が置かれた。その先には広い舗装のランオフが残る。砂利でグリップを失う危険があるので、大きくはみ出す走りが減ると考えられている（Motorsport Magazine）。",
-    "当時のFIAのレースディレクターだったマシ氏は、どのサーキットにも同じ形を当てはめられるわけではなく、サーキットごとに合った形を探すと話していた。"
+    "2024年のイモラでは、アックエ・ミネラリの外側の舗装のランオフが大きく削られて砂利になり、ヴァリアンテ・アルタの出口にも砂利が置かれた。舗装のランオフはミスの逃げ場になる一方、トラックリミットの違反も生んでいたためだ（Autosport）。同じ2024年、カタールのルサイルでは、いくつかのコーナーの出口で、縁石の後ろに幅2mの砂利の帯が足された（Autosport）。カタールGPは、今季も第22戦として開かれる。",
+    "当時のFIAのレースディレクターだったマシ氏は、どのサーキットにも同じ形を当てはめられるわけではなく、サーキットごとに合った形を探すと話していた。",
+    "二輪のレースと共用のサーキットでは、縁石や砂利の形が二輪にも合わなければならない。マシ氏は2021年、FIAとFIM（国際モーターサイクリズム連盟）がコーナーごとに検討していると話していた（Autosport）。"
    ],
    "examples": [],
    "see": [
     "run-off",
     "track-limits",
-    "kerb"
+    "kerb",
+    "stopping-on-track",
+    "circuit-lusail",
+    "circuit-imola"
    ],
    "src": [
     {
@@ -7476,10 +7684,25 @@
      "name": "Motorsport.com",
      "title": "Mugello gravel trap approach won't work everywhere - FIA",
      "url": "https://au.motorsport.com/f1/news/mugello-gravel-trap-track-limits/4875696/"
+    },
+    {
+     "name": "Autosport",
+     "title": "Imola brings back gravel traps to help drive away F1's track limits problem（2024年5月16日）",
+     "url": "https://www.autosport.com/f1/news/imola-brings-back-gravel-traps-to-help-drive-away-f1s-track-limits-problem/10611372/"
+    },
+    {
+     "name": "Autosport",
+     "title": "How the FIA and Pirelli have responded to avoid repeat Qatar tyre troubles（2024年11月26日）",
+     "url": "https://www.autosport.com/f1/news/how-the-fia-and-pirelli-have-responded-to-avoid-repeat-qatar-tyre-troubles/10676676/"
+    },
+    {
+     "name": "Autosport",
+     "title": "The popular gravel solution to F1's track limits problem（2021年6月30日）",
+     "url": "https://www.autosport.com/f1/news/the-popular-gravel-solution-to-f1s-track-limits-problem/6622939/"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "sector",
@@ -7593,13 +7816,15 @@
    "short": "ガレージにつながるコース脇の道。制限速度は原則80km/h。",
    "body": [
     "ピットボックスとガレージにつながる、コースの一部。F1の公式用語集の説明だ。規則では、「ピット入口の道」「ピットレーン」「ピット出口の道」に分けて決められている。",
+    "ガレージとピットレーンの場所は、FIAがチームに平等に割り当てる。チームは、ピットレーンに線を塗ったり、乾かす、掃く、タイヤのゴムを乗せる以外のやり方で路面のグリップを高めたりしてはいけない。ピットレーンで動力付きの道具を使って車を持ち上げることも認められない（B1.6.1）。",
     "2026年の規則では、ピットレーンの制限速度は競技の間ずっと80km/hだ。ただし、競技を安全に、秩序立てて進めるため、レースディレクターが変えることができる。車を自分の力でバックさせることも禁じられている。",
-    "練習走行や予選で制限を超えると、1km/hあたり100ユーロ（最大1,000ユーロ）の罰金が科される。レース中は、スチュワードが5秒加算、10秒加算、ドライブスルー、ストップ＆ゴーのどれかを出せる。今季のハンガリーGPでは、80km/hの制限を0.1km/h超えた（80.1km/h）だけで、5秒加算になった例がある。"
+    "練習走行や予選で制限を超えると、1km/hあたり100ユーロ（最大1,000ユーロ）の罰金が科される。レース中は、スチュワードが5秒加算、10秒加算、ドライブスルー、ストップ＆ゴーのどれかを出せる。今季のハンガリーGPでは、80km/hの制限を0.1km/h超えた（80.1km/h）だけで、5秒加算になった例がある。",
+    "人の安全の決まりもある。走行中、チームの人員がピットレーンに出てよいのは、車の作業が必要になる直前だけだ。予選、スプリント予選、スプリント、決勝でピットストップの作業をする人は、決められた規格のヘルメットと目の保護具を着ける。FIAが認めた場合を除き、16歳未満はセッションの前後などの決められた時間、ピットレーンに入れない（B1.6.2）。中継で、ピットクルーが車の来る直前にガレージから出てくるのは、このためだ。"
    ],
-   "rule": "スポーティングレギュレーション B1.6.3（ピット入口の道・ピットレーン・ピット出口の道での走行。a：制限速度80km/hと罰則、b：バックの禁止）（2026年 Issue 09 で確認）",
+   "rule": "スポーティングレギュレーション B1.6.1（ガレージの割り当てとピットレーンでの禁止事項）、B1.6.2（ピットレーンの安全）、B1.6.3（ピット入口の道・ピットレーン・ピット出口の道での走行。a：制限速度80km/hと罰則、b：バックの禁止）（2026年 Issue 09 で確認）",
    "examples": [
     {
-     "t": "地元ペレスはメキシコGPで17位　赤旗中のピットレーンで速度違反を取られ5秒加算",
+     "t": "地元ペレス、メキシコGPで赤旗中のピットレーンの速度違反を取られ5秒加算",
      "u": "/news/es-latmotorsport-perez-17-mexico/"
     }
    ],
@@ -7610,7 +7835,10 @@
     "pit-window",
     "time-penalty",
     "drive-through",
-    "stop-go"
+    "stop-go",
+    "fast-lane",
+    "pit-lane-speed",
+    "sc-pit-stop"
    ],
    "src": [
     {
@@ -7645,7 +7873,7 @@
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "refuelling",
@@ -7856,8 +8084,10 @@
    "body": [
     "1つのレース週末に、予選でポールポジションを取り、ファステストラップを出し、決勝で全周回をトップで走って優勝すること。F1の公式用語集は、「グランシェレム」の項目で説明している。グランドスラムとも呼ぶ。",
     "4つの条件をすべて満たす必要があるので、達成はまれだ。The Raceによると、今のF1ではタイヤ交換の義務や作戦があるため、独走していても、挑戦者より先にピットに入って1周でも先頭を譲ることがある。",
+    "歴代でいちばん多いのはジム・クラークの8回で、ハミルトンが6回で続く。ハミルトンの6回目は2019年のアブダビGPだった（formula1.com、2025年2月）。",
     "ファステストラップのボーナス1点は、2025年から廃止された（formula1.com）。ただ、最速ラップの記録は今も残っていて、グランドスラムの条件にも数えられる。",
-    "今季はバクーで、ラッセルがキャリア初のグランドスラムを達成した。ポールから優勝し、51周すべてで先頭を走り、ファステストラップも出した（RacingNews365）。"
+    "今季はバクーで、ラッセルがキャリア初のグランドスラムを達成した。ポールから優勝し、51周すべてで先頭を走り、ファステストラップも出した（RacingNews365）。",
+    "達成が決まるのはレースが終わったときだ。ポールから最後まで先頭を守っても、ファステストラップをほかの車に更新されれば成り立たない。中継では、独走する先頭の車が終盤に最速ラップを狙うかどうかも見どころになる。"
    ],
    "examples": [
     {
@@ -7911,10 +8141,15 @@
      "name": "Formel1.de",
      "title": "George Russell findet seine Form: Aber reicht es noch für den Titel?",
      "url": "https://www.formel1.de/news/news/2026-09-28/george-russell-findet-seine-form-aber-reicht-es-noch-fuer-den-titel"
+    },
+    {
+     "name": "Formula 1",
+     "title": "10 of the oldest F1 records that remain unbroken（2025年2月3日）",
+     "url": "https://www.formula1.com/en/latest/article/10-oldest-f1-records-remain-unbroken.3h1M8Lb0Sc1oUnSnESJqKS"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "hat-trick",
@@ -8028,8 +8263,10 @@
     "F1チームの正式な呼び名。F1の公式用語集によると、各チームは自分で車を設計して作ることになっていて、そのため世界コンストラクターズ選手権を争う。",
     "コンストラクターズ選手権の点は、チームの2人のドライバーが取った点の合計だ（Honda）。今季は11チームで、たとえばセパン終了時点のメルセデスは556点。これは、アントネッリの320点とラッセルの236点の合計と同じだ（GrandPrix.com）。",
     "今季のコンストラクターズ選手権は、11月8日のサンパウロGPで、メルセデスの優勝が決まった。この日はラッセルが4位、アントネッリが5位だった（F1公式サイト）。",
+    "サンパウロGP終了時点の順位は、メルセデス652点、フェラーリ512点、レッドブル415点、マクラーレン398点、レーシングブルズ112点と続き、キャデラックは0点で11位だ。3位のレッドブルと4位のマクラーレンの差は17点で、残る3戦の見どころの一つになっている（GPblog）。",
     "チームとエンジンのメーカーは、同じとは限らない。今季は5つのメーカーが、11チームにパワーユニットを供給している（The Race）。",
-    "順位は、F1の運営会社（FOM）からの収入の分配や、スポンサー集めにも大きく響く（Honda）。"
+    "順位は、F1の運営会社（FOM）からの収入の分配や、スポンサー集めにも大きく響く（Honda）。",
+    "コンストラクターズの王座は、ドライバーズより遅れて1958年に始まった。最初の王者はヴァンウォールだ。この年のドライバーズ王者はフェラーリのホーソーンで、ヴァンウォールのモスは1点差で届かなかった（GrandPrix247）。"
    ],
    "examples": [
     {
@@ -8039,13 +8276,18 @@
     {
      "t": "アメリカGPのあと、レッドブルとマクラーレンは355点で並んだが、2位の回数が多いレッドブルが3位になった。",
      "u": "/news/nl-racingnews365-redbull-mclaren-countback/"
+    },
+    {
+     "t": "マクラーレンはコンストラクターズ3位の奪回を狙い、ラスベガスに追加アップデートを持ち込む。4位の398点で、3位レッドブルとは17点差",
+     "u": "/news/en-planetf1-mclaren-vegas-upgrades-2027/"
     }
    ],
    "see": [
     "points-system",
     "championship-tiebreak",
     "podium",
-    "grand-prix"
+    "grand-prix",
+    "most-titles"
    ],
    "src": [
     {
@@ -8077,6 +8319,16 @@
      "name": "Formula1.com",
      "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
      "url": "https://formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
+    },
+    {
+     "name": "GPblog",
+     "title": "F1 Standings | Mercedes win 2026 Constructors' championship in Brazil（2026年11月8日）",
+     "url": "https://www.gpblog.com/en/news/f1-standings-mercedes-win-2026-constructors-championship-in-brazil"
+    },
+    {
+     "name": "GrandPrix247",
+     "title": "F1's first Constructors Champions: Tony Vandervell's Vanwall team（2025年10月11日）",
+     "url": "https://www.grandprix247.com/2025/10/11/f1-history-the-first-formula-1-world-champion-team-vanwall-and-boss-tony-vandervell/"
     }
    ],
    "cat": "サーキットと歴史",
@@ -8647,13 +8899,18 @@
     "決勝は、最後まで走り切らなくても、順位がつくことがある。規則では、勝者が走った周回数の90%（小数点以下は切り捨て）に届かなかった車は、順位がつかない。順位がつかないことを「NC（ノット・クラシファイド）」という。90%以上走っていれば、リタイアしても順位がつく。",
     "順位は、走った周回数が多い順に決まる。同じ周回数なら、ゴールラインを通った順だ。そのため、周回遅れの車も、ゴールすれば順位がつく。",
     "2026年のアゼルバイジャンGP（バクー）は51周だった。51周の90%は45.9周で、切り捨てると45周になる。ボッタスは49周を走り終えたあと、終盤にクラッシュして止まった。記録は「リタイア」だが、順位は16位になった。アルボン（29周）、アロンソ（20周）、ストロール（7周）などは、45周に届かず、順位がつかなかった。",
+    "結果表では、順位のつかない車は「NC」と書かれる。2026年のメキシコシティGPは71周で、90%は63.9周、切り捨てて63周が基準だった。リンドブラッドは58周、ベアマンは47周、ボッタスは42周、アストンマーティンの2台は5周で止まり、どれもNCになった（F1公式の結果）。",
     "順位がつけば、その順位がポイントなどの計算に使われる（→ポイントの付け方）。"
    ],
-   "rule": "スポーティングレギュレーション B2.5.5",
+   "rule": "スポーティングレギュレーション B2.5.5 b)（Issue 09〈2026年10月1日版〉で確認）",
    "examples": [
     {
      "t": "バクー終盤のボッタスのクラッシュをきっかけに、ラッセルはゴールライン目前までフェルスタッペンに迫られた",
      "u": "/news/de-mm-baku-bottas/"
+    },
+    {
+     "t": "ストロールは今季20戦で完走6回、リタイア14回。メキシコでは2台とも5周でERS冷却の問題でリタイアした",
+     "u": "/news/de-motorsportmagazin-stroll-ausfallrekord/"
     }
    ],
    "see": [
@@ -8684,6 +8941,16 @@
      "name": "FIA",
      "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07）B2.5.5 b)",
      "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Gran Premio de la Ciudad de México 2026 – Race Result",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
     }
    ]
   },
@@ -8790,9 +9057,10 @@
    "body": [
     "マーシャルは、コースのまわりに配置される係員だ。コース脇のマーシャルポストに立ち、旗を振って、ドライバーに危険を知らせる（→黄旗）。事故の対応や、止まった車の片付けもする。",
     "規則では、F1の車がコース上で止まったら、ほかの車の危険や妨げにならないよう、できるだけ早く片付けるのがマーシャルの務めだ。ドライバーは、正当な理由なくコース上に車を止めてはならない。スタートの前にグリッドで動けない車が出たときも、マーシャルが黄旗を振り、安全になったらその車を最短の道でピットレーンへ押していく。コース運営の責任者（クラーク・オブ・ザ・コース）は、レースコントロールにいて、すべてのマーシャルポストと無線でつながっていなければならない。",
-    "マーシャルは、作業のためにコースのそばや中に入ることがある。そのとき、車は黄旗やセーフティカーで減速させられる。旗を守らない運転は、スチュワードの審議の対象になる。"
+    "マーシャルは、作業のためにコースのそばや中に入ることがある。そのとき、車は黄旗やセーフティカーで減速させられる。旗を守らない運転は、スチュワードの審議の対象になる。",
+    "マーシャルが受け持つ区間（マーシャリング・セクター）は、VSCやSCのときの速さの基準にも使われる。VSC中、ドライバーは区間ごとに少なくとも1回、FIAのECUが決めた最低タイムより遅く走らなければならない。SCが出ると、マーシャルポストでは黄旗が振られ、「SC」のボードが示される（B5.12.2 b、B5.13.1）。"
    ],
-   "rule": "スポーティングレギュレーション B1.5.2、B1.3.6、B5.7.1 a)",
+   "rule": "スポーティングレギュレーション B1.5.2、B1.3.6、B5.7.1 a)、B5.12.2 b)、B5.13.1",
    "examples": [
     {
      "t": "バクー決勝で、マーシャルがセーフティカーのボードと黄旗を出した区間でペレスを抜いたボルトレートが、10秒加算を受けた。",
@@ -8804,9 +9072,10 @@
     "double-yellow",
     "safety-car",
     "medical-car",
-    "red-flag"
+    "red-flag",
+    "vsc"
    ],
-   "checked": "2026-11-13",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -8982,9 +9251,10 @@
     "フロントウイングは、車の最前部にある翼だ。最初に空気に当たる部品で、車の前側のダウンフォースと、後ろへ流れる空気の向きに関わる。",
     "2026年規則で、形が大きく変わった。FIAによると、幅は2025年より100mm狭くなり、動くフラップは2枚になった。板の数が減ってシンプルになった一方、端板の周りは細かい形になった。車全体の幅も、2000mmから1900mmになった。",
     "動くフラップは、走りながら2つの位置に切り替わる。コーナーでは角度を立てて下向きの力を出す「コーナーモード」、直線では寝かせて空気抵抗を減らす「ストレートモード」だ（→アクティブエアロ）。切り替えの指令はFIA共通のECUが出し、0.4秒以内に終わらなければならない。そのほかの角度の調整は、車が止まっているときに、道具でしかできない。",
-    "前の翼も動くのは、後ろの翼と合わせて車の姿勢を整え、安定させるためだとformula1.comは説明している。"
+    "前の翼も動くのは、後ろの翼と合わせて車の姿勢を整え、安定させるためだとformula1.comは説明している。",
+    "シーズン後半には、翌年を見すえた新しい形も出てきた。マクラーレンはサンパウロGPに、考え方を変えたフロントウイングを持ち込んだ。メインプレーンと端板のつながり方を改め、ノーズはメインプレーンではなく2枚目のフラップに付く形になった。プロドロモウは、この考え方を翌年の車にも引き継ぐと話した（The Race）。"
    ],
-   "rule": "テクニカルレギュレーション C3.10、C3.10.10",
+   "rule": "テクニカルレギュレーション C3.10、C3.10.10 o)（Issue 17〈2026年4月28日版〉で確認）",
    "examples": [
     {
      "t": "アウディはバクーで、形を改めたノーズとフロントウイングを含む大型アップデートを持ち込んだ。",
@@ -9010,7 +9280,7 @@
     "floor-diffuser",
     "dirty-air"
    ],
-   "checked": "2026-11-13",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -9031,6 +9301,11 @@
      "name": "Formula1.com",
      "title": "2026 REGULATIONS EXPLAINED: All you need to know about F1's new aerodynamics",
      "url": "https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-new-aerodynamics.7IAt0auc32UkCEFE5ypkTB"
+    },
+    {
+     "name": "The Race",
+     "title": "McLaren's 2027 F1 front wing breaks cover in Brazil（2026年11月）",
+     "url": "https://www.the-race.com/formula-1/mclaren-2027-f1-front-wing-breaks-cover-in-brazil/"
     }
    ]
   },
@@ -10541,7 +10816,8 @@
     "ロックアップは、ほかの車輪が回っているのに、ある車輪の回転が止まってしまうこと。たいていは、ブレーキを強く踏みすぎたときに起きる（F1公式の用語集）。止まったタイヤは、路面の上を引きずられる。",
     "F1では、ABS（ブレーキのロックを防ぐ装置）は規則で認められていない（メルセデスの解説）。ブレーキの強さを加減するのは、ドライバーだ。ブレーキバランスが前に寄りすぎているときや、ブレーキが冷えているときにも起きやすい。",
     "コラピントは、バクーでの自分のミスについて、ブレーキを2〜3％踏みすぎると前輪がロックして止まれない、と話した。ロックしたタイヤは削れて、フラットスポットができ、振動が出てグリップも落ちる。",
-    "2026年は、回生ブレーキのせいで後輪のブレーキが冷えやすく、ロックアップの一因になっている。バーレーンのテストでは、1コーナーで前輪のロックアップが見られた。バクーでも、コラピントやピアストリのロックアップが大きな出来事になった。"
+    "2026年は、回生ブレーキのせいで後輪のブレーキが冷えやすく、ロックアップの一因になっている。バーレーンのテストでは、1コーナーで前輪のロックアップが見られた。バクーでも、コラピントやピアストリのロックアップが大きな出来事になった。",
+    "中継では、ロックした車輪から煙が上がるので見つけやすい（F1公式の用語集）。今季のメキシコGPでは、赤旗のあとの再スタートで、ハミルトンを避けようとしたルクレールがロックアップし、フラットスポットのできたタイヤでアントネッリに抜かれた（Motorsport Magazine）。ロックアップのあとは、タイヤの振動やペースの落ち方、予定より早いピットがないかが見どころになる。"
    ],
    "examples": [
     {
@@ -10559,6 +10835,10 @@
     {
      "t": "アメリカGPで、周回遅れのサインツに追いついたアントネッリが、乱れた空気の中でロックアップしてコースの外に出た",
      "u": "/news/en-planetf1-sainz-blue-flag-antonelli/"
+    },
+    {
+     "t": "ザ・レースは、サンパウロ予選Q3で前を走るアルボンがジャンカオ手前でロックアップして大きくタイムを失ったため、ラッセルがアタックを続けても影響を受けた可能性が高いと見た。",
+     "u": "/news/en-therace-russell-pole-lost-either-way/"
     }
    ],
    "see": [
@@ -10568,7 +10848,7 @@
     "tyre-warm-up",
     "understeer"
    ],
-   "checked": "2026-11-13",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "Formula1.com",
@@ -10609,6 +10889,11 @@
      "name": "Formula1.com",
      "title": "F1 Glossary (A-E)",
      "url": "https://www.formula1.com/en/latest/article/f1-glossary-a-e.1MFONigMlQSbSQtpP7YCy2"
+    },
+    {
+     "name": "Motorsport Magazine",
+     "title": "Mark Hughes: Overheating and enraged – how Ferrari threw another F1 win away",
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/mark-hughes-overheating-and-enraged-how-ferrari-threw-another-f1-win-away/"
     }
    ]
   },
@@ -11891,7 +12176,8 @@
    "body": [
     "バージボードは、前輪のすぐ後ろ、サイドポッドの前あたりに付ける縦長の整流板。前輪がつくる乱れた空気を整えて、向きを変える。1985年ごろに登場し、2017年に大型化が認められたあとは、小さな羽根を何枚も付ける開発競争になった。",
     "2022年の規則で、バージボードは禁止された。2022年規則は、後ろの車が前の車に近づきやすくすることを狙っていた。バージボードの役目は、床の下の前のほうにあるフロアフェンスが引き継いだ。",
-    "2026年規則では、似た位置に部品が戻った。サイドポッドの前に、空気を内側へ向ける（インウォッシュ）ホイールウェイク・コントロール・ボードが付き、formula1.comは、これを「前輪の後ろのバージボードが戻った」と紹介した。ただし昔とは狙いが逆で、前輪の乱れた空気を外へ出さず、できるだけ内側の高い位置へ寄せる（→アウトウォッシュ）。"
+    "2026年規則では、似た位置に部品が戻った。サイドポッドの前に、空気を内側へ向ける（インウォッシュ）ホイールウェイク・コントロール・ボードが付き、formula1.comは、これを「前輪の後ろのバージボードが戻った」と紹介した。ただし昔とは狙いが逆で、前輪の乱れた空気を外へ出さず、できるだけ内側の高い位置へ寄せる（→アウトウォッシュ）。",
+    "今季は、この部品を失ったときの影響の大きさも見えた。アメリカGPの1周目、アロンソ（アストンマーティン）はアルボンと接触し、左のバージボードが外れた。アロンソは「半分の車」になったと言い、1周あたり「0.5秒かそれ以上」遅くなったと話した。アルボンの動きに罰は出なかった（The Race）。"
    ],
    "examples": [
     {
@@ -11901,6 +12187,10 @@
     {
      "t": "ウィリアムズは、バクーでバージボードのステーを撤去するなどの見直しをした。",
      "u": "/news/en-therace-williams-chassis/"
+    },
+    {
+     "t": "アロンソはアメリカGP1周目にアルボンと接触して左のバージボードが外れ、1周0.5秒以上遅くなった",
+     "u": "/news/en-therace-alonso-albon-low-quality/"
     }
    ],
    "see": [
@@ -11939,9 +12229,14 @@
      "name": "The Race",
      "title": "F1 2026's brand-new car rules explained",
      "url": "https://www.the-race.com/formula-1/f1-2026-new-car-rules-explained/"
+    },
+    {
+     "name": "The Race",
+     "title": "Alonso slams 'low quality' Albon for US GP（2026年10月、左のバージボードを失い \"half a car\"）",
+     "url": "https://www.the-race.com/formula-1/alonso-slams-low-quality-albon-for-us-gp/"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "outwash",
@@ -12302,7 +12597,8 @@
    "body": [
     "V10は、10気筒のエンジンのこと。F1では1989年に、ターボが禁止されて排気量3.5リッターの自然吸気エンジンだけになったとき、ホンダとルノーがV10を選んだ。自然吸気は、ターボのように空気を押し込まず、そのまま吸い込むエンジンだ。",
     "1995年に排気量が3.0リッターへ小さくなった。それでもV10が主役で、2005年まで続いた。回転数は上がり続け、2002年にはBMWが1分間19,000回転を超えた。2005年には、重さ90kg未満のエンジンが900馬力を超えるまでになった。",
-    "2006年からは、排気量2.4リッターのV8に切り替わった。ただ、その年もトロロッソだけは、小さなチームに認められた規則を使い、回転数を制限したV10で走った。V8時代のあと、2014年からは1.6リッターV6ターボのハイブリッドになった。"
+    "2006年からは、排気量2.4リッターのV8に切り替わった。ただ、その年もトロロッソだけは、小さなチームに認められた規則を使い、回転数を制限したV10で走った。V8時代のあと、2014年からは1.6リッターV6ターボのハイブリッドになった。",
+    "V10の音を懐かしむ声は今もある。2025年にはV10の復活が話題になり、4月にバーレーンで、FIAのビン・スライエム会長がエンジンメーカーを集めた会合を開いた。決を採る場ではなかったが、V10やV8への切り替えは当面後回しにし、方向を変えるとしても2029年より前ではない、という大筋の考えがまとまった（The Race）。"
    ],
    "examples": [],
    "see": [
@@ -12331,10 +12627,15 @@
      "name": "Formula 1",
      "title": "2014 Season Preview - the dawn of a new Formula One era",
      "url": "https://www.formula1.com/en/latest/article/2014-season-preview-the-dawn-of-a-new-formula-one-era.7wgUnlDeHx2CLBJQZM5VuX"
+    },
+    {
+     "name": "The Race",
+     "title": "The major decisions from F1's crunch engine meeting（2025年4月11日）",
+     "url": "https://www.the-race.com/formula-1/f1-set-for-2026-engine-concessions-v10-return-ruled-out"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "v8-era",
@@ -12637,9 +12938,16 @@
    "body": [
     "ディフューザーは、車の底の後ろ側にある空気の出口だ。ブロウンディフューザーは、そこにエンジンの排気ガスを吹きつけて、空気の流れを整え、ダウンフォースを増やす工夫のこと。排気管の出口をディフューザーの近くに置いた古い例は、1980〜90年代にもあった。",
     "2010年ごろ、レッドブルのRB6が排気管の出口を床の近くに移し、ディフューザーの上から吹きつけるやり方を広めた。ルノーのエンジン制御で、ドライバーがアクセルを戻しても排気が流れ続けるようにした。これで、ブレーキ中もダウンフォースが残った。ほかのチームも次々にまねした。",
-    "2012年の規則で、排気管の出口を置ける場所が決められ、床に吹きつける形はできなくなった。チームは、排気の流れを別の形で使うコアンダ排気などを探した。レッドブルのニューウェイは、2シーズン深く研究した排気の吹きつけを禁止されたのは、チームにとって大きな痛手だったと話した。"
+    "2011年には、アクセルを戻したときに燃料と点火を止め、エンジンを空気のポンプのように使う「コールドブロー」と、点火を遅らせてより強い排気を出す「ホットブロー」が使われた。ホットブローは燃料を多く使い、エンジンの寿命にも響いた。FIAはシーズン途中での禁止を考えたが、チームの働きかけで先送りし、翌年の規則を変える形で対応した（Motorsport.com）。",
+    "2012年の規則で、排気管の出口を置ける場所が決められ、床に吹きつける形はできなくなった。チームは、排気の流れを別の形で使うコアンダ排気などを探した。レッドブルのニューウェイは、2シーズン深く研究した排気の吹きつけを禁止されたのは、チームにとって大きな痛手だったと話した。",
+    "2026年の技術規則も、排気の出口をはっきり決めている。ターボのタービンを出た排気と、ウェイストゲートの排気は、すべて決められた排気管（テールパイプ）を通さなければならない（C5.8.2）。その出口は、後輪の中心を通る面から390〜400mm後ろで、車体（ばね上）の底の基準面から350mmより上に置く（C3.9.2）。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "PlanetF1は、2026年規則で設計の焦点が大型化したディフューザーに移ったとして、フェラーリSF-26の空力を解説した",
+     "u": "/news/en-planetf1-ferrari-sf26-downforce/"
+    }
+   ],
    "see": [
     "floor-diffuser",
     "double-diffuser",
@@ -12666,10 +12974,16 @@
      "name": "Motorsport.com",
      "title": "Banned: How F1 finally overcame blown floor trickery",
      "url": "https://au.motorsport.com/f1/news/banned-f1-tech-coanda-effect/4799883/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section C Technical（Issue 17, 2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20",
+   "rule": "技術規則 C3.9.2（排気管の出口の位置）、C5.8.2（排気はすべて排気管を通す）（2026年 Issue 17 で確認）"
   },
   {
    "id": "double-diffuser",
@@ -12693,14 +13007,17 @@
    "body": [
     "ディフューザーは、車の底の後ろ側で、空気をうまく流して出す部分だ。ダブルディフューザーは、これを2段構えにして、上の段にも空気を通す穴をあけ、後ろの出口で空気を速く流してダウンフォースを増やした。2009年の規則の、ディフューザーの決め方のすき間を使った工夫だった。",
     "2009年の開幕時に使ったのは、ブラウンGP、トヨタ、ウィリアムズの3チーム。フェラーリ、レッドブル、ルノーが規則違反だと訴えた。開幕戦オーストラリアGPのスチュワードは合法と判断し、FIAの国際控訴裁判所も2009年4月に合法と認めた。そのため、ほかのチームも追いかけて導入した。",
-    "2011年の規則で、ディフューザーの面が内側でつながっていることが必要になり、ダブルディフューザーは禁止された。この禁止は、チームとFIAの技術の会議（テクニカル・ワーキング・グループ）で合意された。"
+    "ブラウンGPはこの年、バトンのドライバーズタイトルとコンストラクターズタイトルの両方を取った。バトンは序盤の7戦で6勝した（Autosport）。",
+    "2011年の規則で、ディフューザーの面が内側でつながっていることが必要になり、ダブルディフューザーは禁止された。この禁止は、チームとFIAの技術の会議（テクニカル・ワーキング・グループ）で合意された。",
+    "ブラウンGPは1年だけで姿を変えた。2009年11月16日、メルセデスによる買収が発表され、12月24日までにメルセデスとアブダビの投資会社アーバーがチームの75.1%を持った（Autosport）。2026年のサンパウロGPでコンストラクターズ王座を決めたメルセデス（formula1.com）は、このときブラウンGPを引き継いだチームだ。"
    ],
    "examples": [],
    "see": [
     "floor-diffuser",
     "blown-diffuser",
     "ground-effect",
-    "technical-directive"
+    "technical-directive",
+    "international-court-of-appeal"
    ],
    "src": [
     {
@@ -12722,10 +13039,20 @@
      "name": "Motor Sport Magazine",
      "title": "Teams in double diffuser race",
      "url": "https://www.motorsportmagazine.com/archive/article/june-2009/10/teams-double-diffuser-race/"
+    },
+    {
+     "name": "Autosport",
+     "title": "How Brawn became Mercedes（2019年11月15日）",
+     "url": "https://www.autosport.com/f1/news/how-brawn-became-mercedes-5113070/5113070/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship（2026年11月8日）",
+     "url": "https://formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "f-duct",
@@ -12749,14 +13076,21 @@
    "body": [
     "Fダクトは、直線で空気抵抗を減らすためのダクト（空気の通り道）の仕組み。2010年にマクラーレンのMP4-25が使い始めた。コクピットに小さな穴があり、ドライバーが膝で（のちにひじで）ふさぐと、空気の流れがリアウイングへ回り、ウイングの空気の流れをわざと乱す。そのぶん空気抵抗が減る。",
     "効果が大きかったため、2010年のうちにザウバー、フェラーリ、メルセデス、レッドブル、フォースインディア、ウィリアムズ、ルノーが、それぞれ自分の形を作った。空気を取り入れる場所や、操作のしかたは、チームごとに少しずつ違った。",
-    "2010年のスペインGPでの会議で、費用と安全の面から、2011年に禁止することが決まった。かわりに2011年に入ったのが、ボタンで操作するDRSだ。DRSは2025年で終わり、2026年からはアクティブエアロに代わっている。"
+    "2010年のスペインGPでの会議で、費用と安全の面から、2011年に禁止することが決まった。かわりに2011年に入ったのが、ボタンで操作するDRSだ。DRSは2025年で終わり、2026年からはアクティブエアロに代わっている。",
+    "今の規則は、Fダクトのような仕組みをはっきり禁じている。2026年の技術規則 C3.2.2 は、ドライバーの体の動きで車の空力の性質を変える仕組み、装置、手順を認めていない。直線で空気抵抗を減らすこと自体は、2026年のアクティブエアロでも狙いの一つだが、翼を動かすのは決められた装置で、ドライバーの膝やひじで空気の流れを切り替えることはできない。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "FIAはメキシコGPのストレートモード区間を3カ所に設定し、第1区間は最終コーナーの後に置いた",
+     "u": "/news/en-planetf1-fia-mexico-straight-mode/"
+    }
+   ],
    "see": [
     "drs",
     "active-aero",
     "rear-wing",
-    "double-diffuser"
+    "double-diffuser",
+    "overtake-mode"
    ],
    "src": [
     {
@@ -12778,10 +13112,16 @@
      "name": "Formula 1",
      "title": "Everything you need to know about the new F1 rules for 2026",
      "url": "https://www.formula1.com/en/latest/article/everything-you-need-to-know-about-the-new-f1-rules-for-2026.48bv0VTxhIlhrQXmxercXk"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section C Technical（Issue 17, 2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20",
+   "rule": "技術規則 C3.2.2（ドライバーの体の動きで空力を変える仕組みの禁止）（2026年 Issue 17 で確認）"
   },
   {
    "id": "mass-damper",
@@ -12804,16 +13144,18 @@
    "short": "車体の揺れを抑える、バネつきのおもり。2006年に禁止された。",
    "body": [
     "マスダンパーは、バネにつないだおもりを筒の中に入れた装置。ノーズの中などに置く。路面のでこぼこや縁石で車体が上下に揺れるとき、おもりが逆に動いて揺れを抑える。車体が安定すると、空気の流れも安定する。",
-    "ルノーが2005年に使い始め、やがて多くのチームがまねした。2006年のドイツGPで、スチュワードは「使ってよい」と判断した。しかしFIAが自分のスチュワードの判断に控訴し、2006年8月に国際控訴裁判所が「可動空力装置にあたる」として禁止した。揺れを抑えるだけでなく、空力を大きく良くすることが主な目的になっているとみなされた。",
-    "ルノーは、2006年の車をマスダンパーを前提に設計していた。禁止はシーズンの途中に出されたため、論争にもなった。ルノーは、禁止で1周0.3秒を失ったと主張した。"
+    "ルノーが2005年に使い始め、やがて多くのチームがまねした。2006年のドイツGPで、スチュワードは使用を認めた。しかしFIAが自分のスチュワードの判断に控訴し、2006年8月22日に国際控訴裁判所が、その判断を取り消し、使用は技術規則 3.15 に違反すると裁定した。3.15 は、空力に影響する部品をばね上の部分にしっかり固定し、動かないようにすることを求めている。判決は、空力の効果が小さく、主な役目が揺れを抑えることだとしても、空力に影響する以上は 3.15 を当てはめる必要があるとし、動くおもりを持つこの装置は 3.15 に合わないと判断した。",
+    "ルノーは、2006年の車をマスダンパーを前提に設計していた。禁止はシーズンの途中に出されたため、論争にもなった。ルノーは、禁止で1周0.3秒を失ったと主張した。",
+    "今の規則も、はっきり禁じている。2026年の技術規則は、前後それぞれのサスペンションの状態が、2つのロッカーの角度と角速度で決まることを求めている。そのうえで、車体の加速度に反応するサスペンションの要素（イナーター、マスダンパー、加速度で働くダンパーの弁など）を認めず（C10.2.6 a）、マスダンパーそのものも禁止の項目に挙げている（C10.2.6 h）。"
    ],
-   "rule": "2006年技術規則 3.15（可動空力装置の禁止）",
+   "rule": "2006年技術規則 3.15（空力に影響する部品はばね上に固定し、動かないこと。2006年8月22日の国際控訴裁判所の判決で確認）、2026年技術規則 C10.2.6 a・h（加速度に反応するサスペンション要素とマスダンパーの禁止。Issue 17 で確認）",
    "examples": [],
    "see": [
     "fric",
     "porpoising",
     "technical-directive",
-    "stewards"
+    "stewards",
+    "international-court-of-appeal"
    ],
    "src": [
     {
@@ -12830,10 +13172,20 @@
      "name": "RaceFans",
      "title": "Banned: Tuned mass dampers",
      "url": "https://www.racefans.net/?p=3932"
+    },
+    {
+     "name": "FIA",
+     "title": "International Court of Appeal – Decision, Renault F1 mass damper（2006年8月22日）",
+     "url": "https://api.fia.com/sites/default/files/judgements/22-08-2006-ica-RenaultF1-a.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section C Technical（Issue 17, 2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "fric",
@@ -12984,18 +13336,24 @@
    "body": [
     "トラクションコントロールは、駆動輪（後輪）が空転しそうになると、コンピューターがエンジンの力を自動で下げる装置だ。ドライバーがアクセルを踏みすぎても、タイヤが空転しにくくなる。",
     "F1では、1994年に、アクティブサスペンションなどとあわせて禁止された。ただ、禁止を守らせる確認が難しく、2001年のシーズン途中にFIAが禁止を解いた。2008年に、再び禁止された。禁止されたのは、駆動輪の空転を防ぐ装置や、エンジンの力の出方やデフ（左右の後輪の回転差を調整する部品）を自動で変える仕組みだ。",
-    "2008年は、全チームが同じ電子制御ユニット（ECU）を使うことになった。ECUはマクラーレン系の会社がマイクロソフトと作った。同じ装置なら、不正があればすぐに分かる。FIAは、ドライバーの腕がより出ることをねらった。"
+    "2008年は、全チームが同じ電子制御ユニット（ECU）を使うことになった。ECUはマクラーレン系の会社がマイクロソフトと作った。同じ装置なら、不正があればすぐに分かる。FIAは、ドライバーの腕がより出ることをねらった。",
+    "2026年の技術規則も、駆動輪がパワーで空転するのを防いだり、ドライバーがアクセルを踏みすぎたのを補ったりする仕組みを禁じている。空転が始まったことをドライバーに知らせる仕組みも認められない（C9.1.2）。MGU-Kを含むERS-Kの電気の出力の上限が350kWに上がった今も（C5.2.7）、立ち上がりで後輪の空転を抑えるのはドライバーの右足だ。路面が冷たいラスベガスのようなコースでは、この難しさが話題になる。"
    ],
    "examples": [
     {
      "t": "1994年のシューマッハを描いたNetflix作品を評した記事は、当時のトラクションコントロール疑惑への踏み込みが浅いと指摘した。",
      "u": "/news/de-f1de-schumacher-94/"
+    },
+    {
+     "t": "ラスベガスの低温では、2026年規則の最大350kWの電気出力を立ち上がりで強く使うと、リアのグリップ不足でホイールスピンを招くとRacingNews365は分析した",
+     "u": "/news/nl-racingnews365-lasvegas-cold-tyres-new-rules/"
     }
    ],
    "see": [
     "active-suspension",
     "brake-by-wire",
-    "technical-directive"
+    "technical-directive",
+    "hybrid-era"
    ],
    "src": [
     {
@@ -13017,10 +13375,16 @@
      "name": "RaceFans",
      "title": "Williams FW15C: F1's high-tech pinnacle",
      "url": "https://www.racefans.net/?p=47893"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section C Technical（Issue 17, 2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-13"
+   "checked": "2026-11-20",
+   "rule": "技術規則 C9.1.2（空転を防ぐ装置と、空転を知らせる装置の禁止）（2026年 Issue 17 で確認）"
   },
   {
    "id": "grooved-tyres",
@@ -13045,7 +13409,9 @@
    "body": [
     "溝付きタイヤは、表面に縦の溝を入れたタイヤだ。溝があると、路面に接する面が減り、グリップが落ちる。F1では、コーナーの速度を抑えるため、1998年から使うことが義務になった。溝のない、表面がなめらかなタイヤは「スリックタイヤ」と呼ぶ。",
     "ブリヂストンが1997年にF1へ参戦してタイヤ競争が激しくなり、ラップタイムが大きく縮まった。当時のFIA会長モズレーが、速度を落とすためにスリックを禁止した。1998年は前輪に3本、後輪に4本の溝があり、翌年から前輪にも1本ふえた。1998年の開幕戦では、遅くなったのは0.7秒ほどにとどまった。",
-    "2009年に、スリックタイヤが戻った。同時に空力の規則も変わり、ダウンフォースが大きく減った。スリックタイヤは、ブリヂストンが供給した。"
+    "2009年に、スリックタイヤが戻った。同時に空力の規則も変わり、ダウンフォースが大きく減った。スリックタイヤは、ブリヂストンが供給した。",
+    "溝付きの時代は終わったが、今の規則もタイヤに手を加えることは認めない。2026年の技術規則は、タイヤはメーカーが供給したまま使うこととし、切る、溝を刻む、溶剤や軟化剤を塗るといった加工を禁じている。これはドライ、インターミディエイト、ウエットのすべてのタイヤに当てはまる（C10.8.1）。",
+    "2026年は、タイヤそのものも小さくなった。幅は前輪で25mm、後輪で30mm狭くなり、外径も小さくなった。ホイールの大きさは18インチのままだ（formula1.com）。"
    ],
    "examples": [],
    "see": [
@@ -13063,10 +13429,21 @@
      "name": "F1technical.net",
      "title": "From grooved tyres to slicks",
      "url": "https://www.f1technical.net/features/11168"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 Formula 1 Regulations Section C Technical（Issue 17, 2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "formula1.com",
+     "title": "F1's new 2026 tyres make track debut during first test session in Barcelona（2024年9月18日）",
+     "url": "https://www.formula1.com/en/latest/article/f1s-new-2026-tyres-make-track-debut-during-first-test-session-in-barcelona.7m1CJaDDL9tQkBemLYibOu"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20",
+   "rule": "技術規則 C10.8.1 a（タイヤの切削・溝入れ・溶剤や軟化剤の使用の禁止）（2026年 Issue 17 で確認）"
   },
   {
    "id": "tyre-war",
@@ -13242,7 +13619,8 @@
    "body": [
     "段付きノーズは、2012年の車に多く見られた、ノーズの途中に段差がある形のこと。この年の規則で、ノーズの先端の高さが、車の底（床）から550mm以下に制限された。横からぶつけられたときの安全のため、ノーズの先端を、サイドの保護板の高さにそろえるねらいだった。",
     "FIAは、車体をなだらかに低くすることを期待した。しかし、多くのチームは、高い車体の下に空気を流す設計をやめたくなかった。そこで、ノーズの先端から150mmの区間を、高さが変わる部分として認めた。この規則を使うと、車体の高い部分から先端へ急に下がる、段のある形になった。",
-    "見た目の評判は悪かった。FIAは2013年に、段差を隠すための、構造を持たない覆い（フェアリング）をつけることを認めた。マクラーレンは、もともと車体が低かったため、段が目立たなかった。"
+    "見た目の評判は悪かった。FIAは2013年に、段差を隠すための、構造を持たない覆い（フェアリング）をつけることを認めた。マクラーレンは、もともと車体が低かったため、段が目立たなかった。",
+    "見た目の問題は、2014年にも起きた。安全のためにノーズの規則が変わると、不格好なノーズが並んだ。FIAは、チームが規則の文言は守ったが、ねらいには沿っていないとみた。FIAのホワイティングは「危険でない限り、見た目は受け入れるしかない」と話した。そのうえで2015年に向けて、ノーズの左右対称を求め、幅の広い部分から先端へ急に形が変わることを禁じ、先端の面積の下限を大きくすることも考えるとした（GrandPrix.com、2014年2月）。"
    ],
    "examples": [],
    "see": [
@@ -13260,10 +13638,15 @@
      "name": "Crash.net",
      "title": "Teams allowed to hide stepped noses",
      "url": "https://www.crash.net/f1/news/184473/1/stepped-noses-hidden-double-drs-banned"
+    },
+    {
+     "name": "GrandPrix.com",
+     "title": "New rules will stop ugly noses for 2015, says Whiting（2014年2月12日）",
+     "url": "https://www.grandprix.com/news/new-rules-will-stop-ugly-noses-for-2015-says-whiting.html"
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "shark-fin",
@@ -13288,7 +13671,8 @@
    "body": [
     "シャークフィンは、エンジンカバーの上から、後ろのリアウイングへ向けて伸びる、背びれのような縦の板のこと。リアウイングへ流れる空気を整えて、まっすぐにそろえる。コーナーでは、車の後ろを安定させる働きもある。",
     "2008年ごろから広く使われた。2011年の規則で、後輪の軸の近くの車体の高さが制限され、リアウイングまでつながる大きなものは使えなくなった。2017年にリアウイングが低くなる規則の変更があり、大きなシャークフィンが復活した。",
-    "2018年に再び禁止された。2017年11月のストラテジーグループで、残すことに全チームの賛成が得られなかった。ファンの不評や、横風を受けて車が不安定になる心配、リアウイングのスポンサーの見栄えを損なうことが、理由に挙げられた。2026年は、空力の規則が新しくなり、より限られた形で、シャークフィンが戻った。"
+    "2018年に再び禁止された。2017年11月のストラテジーグループで、残すことに全チームの賛成が得られなかった。ファンの不評や、横風を受けて車が不安定になる心配、リアウイングのスポンサーの見栄えを損なうことが、理由に挙げられた。2026年は、空力の規則が新しくなり、より限られた形で、シャークフィンが戻った。",
+    "The Raceは、1月に写真が出たアウディのシェイクダウン（初走行）の車が、2026年の新しいシャークフィンの形を最初に見せたと書いた。フェラーリのSF-26は、エンジンカバーの上側がぎざぎざの縁になり、その後ろで長く伸びたシャークフィンにつながる。The Raceは、これを2026年の車どうしの数少ない目立つ見た目の違いの一つとした（2026年1月）。新車の発表やテストの写真では、エンジンカバーの後ろを横から見ると、チームごとの違いが分かりやすい。"
    ],
    "examples": [],
    "see": [
@@ -13330,7 +13714,7 @@
     }
    ],
    "cat": "サーキットと歴史",
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "points-history",
@@ -13517,7 +13901,8 @@
    "body": [
     "ロングランは、練習走行で、レースと同じように燃料を多めに積み、タイヤを替えずに何周も走ることだ。1周の速さではなく、走り続けたときのペースや、タイヤの落ち方（デグラデーション）を調べる。フェラーリは、2023年のシンガポールGPの金曜に「重い燃料とミディアムタイヤでレースシミュレーションをした」と伝えている。",
     "FP2では、前半に予選を想定した走りをして、最後の35〜40分で重い燃料を積んで走り、タイヤの摩耗のデータを集める、と説明される（オーストラリアGP公式サイト）。",
-    "ただし、数字をそのまま決勝の力とは言えない。2026年は、電力の使い方（エネルギー配分）の違いが大きな変数で、チームによってやり方が大きく違うとThe Raceは書いた。事故で走行が止まり、ロングランが十分に取れないこともある。今季のベルギーGPの金曜は、ガスリーのクラッシュで多くのドライバーのロングランが台なしになった。"
+    "ただし、数字をそのまま決勝の力とは言えない。2026年は、電力の使い方（エネルギー配分）の違いが大きな変数で、チームによってやり方が大きく違うとThe Raceは書いた。事故で走行が止まり、ロングランが十分に取れないこともある。今季のベルギーGPの金曜は、ガスリーのクラッシュで多くのドライバーのロングランが台なしになった。",
+    "スプリントの週末は、ロングランを取る時間がさらに短い。練習走行は1時間のFP1だけで、そのあとはスプリント予選からパルクフェルメに入る。2026年のスプリントは中国、マイアミ、カナダ、イギリス、オランダ、シンガポールの6大会だった（マクラーレン公式）。こうした週末は、決勝のペースを読む材料が少なく、工場でのシミュレーションの比重が大きくなる。"
    ],
    "examples": [
     {
@@ -13531,6 +13916,10 @@
     {
      "t": "フェルスタッペンはサンパウロのFP2を早く切り上げた。レッドブルは、ロングランのデータに不規則さが多く、続けても有益ではないと判断したと説明した。",
      "u": "/news/de-motorsporttotal-verstappen-fp2-early-end/"
+    },
+    {
+     "t": "ブラジルGPの金曜、フェラーリはロングランでも4番手相当にとどまり、ルクレールは「今季最悪に近い金曜」と表現した。",
+     "u": "/news/en-therace-ferrari-worst-friday/"
     }
    ],
    "see": [
@@ -13539,7 +13928,9 @@
     "degradation",
     "energy-management",
     "setup",
-    "tyre-compounds"
+    "tyre-compounds",
+    "sprint",
+    "parc-ferme"
    ],
    "src": [
     {
@@ -13561,9 +13952,14 @@
      "name": "Grande Prêmio",
      "title": "Bortoleto larga em 17º: o que o ritmo de corrida indica para a recuperação da Audi em Baku（2026年9月25日）",
      "url": "https://grandepremio.com/br/f1/bortoleto-larga-em-17o-o-que-ritmo-de-corrida-indica-para-recuperacao-da-audi-em-baku/"
+    },
+    {
+     "name": "McLaren 公式",
+     "title": "Guide to the F1 Sprint",
+     "url": "https://www.mclaren.com/racing/formula-1/2026/guide-to-the-f1-sprint/"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "quali-sim",
@@ -13812,9 +14208,10 @@
    "body": [
     "審議は、スチュワードが事故や違反の疑いを調べている状態だ。始まりは、レースディレクターが疑いのある出来事をスチュワードに報告するか、スチュワードが自分で気づくかのどちらかだ。調べるかどうかは、スチュワードが決める。調べることにしたら、どのドライバーが対象かを全チームに知らせるメッセージが出る。",
     "レース中に決着がつくこともあれば、「レース後に審議」になることもある。レース後の場合は、関係者がスチュワードの聴取に呼ばれ、そのあとで罰を出すかどうかが決まる。結果が出るまで、対象のドライバーの順位は変わる可能性がある。",
-    "調べた件のすべてに罰が出るわけではない。今季のバクー決勝後の審議では、ハジャーとサインツは、事情が考慮されて警告にとどまり、順位は守られた。ボルトレートは、黄旗区間でのペレスの追い越しで10秒加算となり、13位から15位に下がった。"
+    "調べた件のすべてに罰が出るわけではない。今季のバクー決勝後の審議では、ハジャーとサインツは、事情が考慮されて警告にとどまり、順位は守られた。ボルトレートは、黄旗区間でのペレスの追い越しで10秒加算となり、13位から15位に下がった。",
+    "スプリントや決勝のあと60分以内に審議のメッセージが出れば、対象のドライバーは、スチュワードの同意なしにサーキットを離れられない（B1.9.2）。また、ドライバーが事故の全部か大部分の責任を負うことがスチュワードにとって明らかでなければ、罰は出ない（B1.9.3）。審議する側も変わる。FIAは11月19日、2027年からF1で初めて専任のスチュワードを置くと発表した。まず少人数で始め、2028年から増やして、いずれは12〜15人にする。当面は非常勤のスチュワードと組み合わせる（The Race）。"
    ],
-   "rule": "スポーティングレギュレーション B1.9.1、B1.9.2（条文番号は Issue 07〈2026年6月25日版〉で確認）",
+   "rule": "スポーティングレギュレーション B1.9.1、B1.9.2、B1.9.3（Issue 09〈2026年10月1日版〉で確認）",
    "examples": [
     {
      "t": "バクー決勝後の審議で3件の裁定。ハジャーとサインツは警告、ボルトレートは10秒加算で13位から15位に降格。",
@@ -13870,9 +14267,19 @@
      "name": "FIA",
      "title": "2026 Formula 1 Regulations Section B Sporting（Issue 07、2026-06-25）",
      "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "The Race",
+     "title": "F1 to use full-time stewards from 2027（2026年11月19日）",
+     "url": "https://www.the-race.com/formula-1/f1-to-use-full-time-stewards-from-2027/"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "box-box",
@@ -13897,7 +14304,8 @@
    "body": [
     "「ボックス（box）」は、無線でチームがドライバーに「今周ピットに入れ」と伝える言葉だ。ふつうは「ボックス、ボックス」と2回続ける。メルセデスは、この言葉がF1で意味するのは1つだけ、ピットストップだと説明している。",
     "ボックスは、ピットレーンで各チームに割り当てられた作業スペース（ピットボックス）の呼び名でもある。F1公式の用語集は、チームのガレージの外にあるそのスペースを指すとしている。言葉はドイツ語の「Boxenstopp（ピットストップ）」から来ていて、無線では「ピット」より聞き取りやすいとされる。",
-    "コールを出すかどうかは、作戦の最終判断だ。今季のバクーでは、30周目付近でフェルスタッペンが早めのピットを望んだが、エンジニアのランビアーゼ氏が断った。その後、30周目にセーフティカーが出て、ピットでの損が小さい好機になった。もし入っていれば、この好機を逃していたとされる。"
+    "コールを出すかどうかは、作戦の最終判断だ。今季のバクーでは、30周目ごろにフェルスタッペンが早めにソフトへ替えたいと求めたが、レースエンジニアのランビアーゼが断った（GPFans）。その後、31周目にアルボンがクラッシュしてセーフティカーが出ると、レッドブルはその間に2台を続けてピットに入れた（The Race、F1公式）。求めたとおりに入っていれば、セーフティカーの2周前にピットを終えていたことになり、この好機を逃していたとオランダの中継の解説者は指摘した（GPFans）。",
+    "今季のサンパウロGPでは、このコールが結果を分けた。終盤に雨が戻った61周目、フェラーリのレースエンジニアのカルロ・サンティは「ボックス、ボックス」と繰り返し、インターミディエイトに替えるよう伝えた。ハミルトンは「雨が降っているとは言わなかった。走り続けられると思った」と返して、その周は入らなかった。そのあとピットに向かう周でスピンし、インターに替えたのは最後になって、周回遅れの9位に終わった（PlanetF1、F1公式）。このやりとりは中継では流れず、放送されなかった映像からあとで分かった（PlanetF1）。中継で聞こえる無線は、チームとドライバーのやりとりの一部にすぎない。"
    ],
    "examples": [
     {
@@ -13907,6 +14315,10 @@
     {
      "t": "シンガポールGPのVSCで、フェラーリはハミルトンにピットに入るよう指示したと主張したが、無線の不具合で彼の側の音声は届いていなかったという。",
      "u": "/news/en-therace-why-hamilton-singapore-imploded/"
+    },
+    {
+     "t": "サンパウロGPの61周目、ハミルトンはインターミディエイトへの交換を指示されたが、雨が降ると聞いていなかったとしてコースに残り、スピンして周回遅れの9位に終わった。",
+     "u": "/news/en-planetf1-hamilton-untelevised-radio-brazil/"
     }
    ],
    "see": [
@@ -13934,12 +14346,32 @@
      "url": "https://www.formula1.com/en/latest/article/a-beginners-guide-to-f1-slang.1Pg6tvGZ2y7u4KAnc8WXGl"
     },
     {
-     "name": "GPblog",
-     "title": "Verstappen wilde in Baku vroeg naar de pits maar Lambiase hield hem tegen（2026年9月）",
-     "url": "https://www.gpblog.com/nl/nieuws/verstappen-wilde-in-baku-vroeg-naar-de-pits-maar-lambiase-hield-hem-tegen-dan-was-de-race-weg-geweest"
+     "name": "PlanetF1",
+     "title": "'Are you guys listening?' – Untelevised Lewis Hamilton team radio after Brazilian GP",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-brazilian-grand-prix-2026-team-radio"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What the teams said – Race day at the 2026 Sao Paulo Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-at-the-2026-sao-paulo-grand-prix.6WRrgNQ7FDoFnwzxR9Vjw7"
+    },
+    {
+     "name": "GPFans",
+     "title": "Knoors prijst Lambiase voor P2 Verstappen: \"Dan was de race weggeweest\"",
+     "url": "https://www.gpfans.com/nl/f1-nieuws/1090790/knoors-prijst-lambiase-voor-p2-verstappen-dan-was-de-race-weggeweest/"
+    },
+    {
+     "name": "The Race",
+     "title": "Russell denies Verstappen in Azerbaijan GP punctuated by two safety cars",
+     "url": "https://www.the-race.com/formula-1/russell-denies-verstappen-f1-2026-azerbaijan-gp-two-safety-cars/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Russell narrowly holds off Verstappen to take victory over the line in chaotic Azerbaijan GP",
+     "url": "https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "plan-b",
@@ -13964,7 +14396,8 @@
    "body": [
     "レースの前に、チームはシミュレーションで最も良い作戦（プランA）を決める。何周目に止まり、どんなタイムで走るかも含まれる。プランBは、プランAが思いどおりにいかないときの、次に良い案だ。",
     "切り替えは、ふつう無線で伝わる。Autosportは、無線には「あらかじめ決めたプランAから、プランB、あるいはCへの切り替えが迫っている」ことが分かるものがあると書いた。きっかけは、セーフティカーや雨、相手の動きなどだ。",
-    "セーフティカーが出ると、ピットで失う時間が小さくなるので、作戦の前提が変わる。今季のバクーでは、レッドブルが2台の順番を変えず、セーフティカーが出たときにピアストリやラッセルを攻める可能性に賭けた。メキース代表は「ここでは、どこかでセーフティカーが出ることを当てにしないのは難しい」と話した（RacingNews365）。"
+    "セーフティカーが出ると、ピットで失う時間が小さくなるので、作戦の前提が変わる。今季のバクーでは、レッドブルが2台の順番を変えず、セーフティカーが出たときにピアストリやラッセルを攻める可能性に賭けた。メキース代表は「ここでは、どこかでセーフティカーが出ることを当てにしないのは難しい」と話した（RacingNews365）。",
+    "天気が読みにくいレースでは、作戦の前提が何度も変わる。今季のサンパウロGPでは、30周目ごろ、ドライバーたちに無線で10周ほどで雨が来るかもしれないと伝えられたが、38周目ごろには、予想された雨はコースをそれたようだった。57周目に小雨が降り始め、61周目の終わりにラッセルとアロンソが最初にインターミディエイトへ替えると、ほかの車も続いた（F1公式）。中継では、各チームが雨雲の動きをどう読んで、いつ切り替えるかが見どころになる。"
    ],
    "examples": [
     {
@@ -13982,6 +14415,10 @@
     {
      "t": "メキシコGPでレッドブルは、ルクレールに5秒加算が出ると当初のタイヤ計画から外れ、同じ周にフェルスタッペンをピットに入れた。",
      "u": "/news/de-motorsporttotal-redbull-key-decision-mexico/"
+    },
+    {
+     "t": "雨が降ったりやんだりするサンパウロGPを、ノリスが制した。21番手から追い上げたフェルスタッペンが2位に入った。",
+     "u": "/news/en-f1com-sao-paulo-norris-wins-mercedes-title/"
     }
    ],
    "see": [
@@ -13990,7 +14427,8 @@
     "overcut",
     "safety-car",
     "box-box",
-    "stay-out"
+    "stay-out",
+    "crossover-point"
    ],
    "src": [
     {
@@ -14007,9 +14445,14 @@
      "name": "RacingNews365",
      "title": "Red Bull explain Max Verstappen, Isack Hadjar Baku tactics after radio messages（2026年9月27日）",
      "url": "https://racingnews365.com/red-bull-explain-max-verstappen-isack-hadjar-baku-tactics-after-radio-messages"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+     "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "tyre-cliff",
@@ -14422,7 +14865,9 @@
    "short": "ファンの投票で選ばれる、そのレースのベストドライバー。優勝者とは限らない。",
    "body": [
     "ドライバー・オブ・ザ・デイは、ファンが投票で選ぶ、そのレースで最も良かったドライバーだ。2016年に始まり、各グランプリの最中に投票が行われ、レースの終わりに発表される。投票はF1公式サイトの投票ページから行う。最初に選ばれたのは、2016年のオーストラリアGPで、ハースのデビュー戦を6位で終えたグロージャンだ。",
-    "賞品などはなく、名誉だけの賞だ（Autosport）。選ばれるのは、優勝者でも表彰台のドライバーでもなくてよい。2025年のシンガポールGPでは、10番グリッドから7位に上がったアロンソが22.5%で選ばれた。今季のバクーでは、8番グリッドから2位に上がったフェルスタッペンが26.6%で選ばれた。続いて、3位のハジャーが15.1%、アントネッリが12.6%、優勝したラッセルが12.4%だった。"
+    "賞品などはなく、名誉だけの賞だ（Autosport）。選ばれるのは、優勝者でも表彰台のドライバーでもなくてよい。2025年のシンガポールGPでは、10番グリッドから7位に上がったアロンソが22.5%で選ばれた。今季のバクーでは、8番グリッドから2位に上がったフェルスタッペンが26.6%で選ばれた。続いて、3位のハジャーが15.1%、アントネッリが12.6%、優勝したラッセルが12.4%だった。",
+    "2026年の投票は、レースの終盤に始まり、レースが終わると締め切られる。GPFansの一覧によると、メキシコシティGPまでの今季19戦では、フェルスタッペンが9回選ばれた（オーストラリア、マイアミ、オーストリア、ハンガリー、スペイン、アゼルバイジャン、セパンで開かれたバーレーン、シンガポール、メキシコシティ）。",
+    "票には人気も表れる。2026年のメキシコシティGPでは、優勝したフェルスタッペンが20.6%で選ばれた。2番目は地元のペレスで18.6%、3番目はハミルトンで15.4%だった（formula1.com）。ペレスはこのレースを16位で終え、点は取れなかった（F1公式の結果）。結果の順位とは別の物差しとして見ると、ファンが何を評価したかが分かる。"
    ],
    "see": [
     "podium",
@@ -14459,10 +14904,25 @@
      "name": "formula1.com",
      "title": "DRIVER OF THE DAY: Alonso's battling Singapore drive gets your vote（2025年）",
      "url": "https://www.formula1.com/en/latest/article/driver-of-the-day-alonsos-battling-singapore-drive-gets-your-vote.6J5BvDriFNIUS1HqWZ54e"
+    },
+    {
+     "name": "GPFans",
+     "title": "F1 Driver of the Day: how to vote（Brazilian Grand Prix 2026、2026年11月）",
+     "url": "https://www.gpfans.com/en/f1-news/1092631/f1-driver-of-the-day-how-to-vote-brazilian-grand-prix-2026/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "DRIVER OF THE DAY: Verstappen claims his sixth win in Mexico City and gets your vote（2026年11月1日）",
+     "url": "https://www.formula1.com/en/latest/article/driver-of-the-day-verstappen-claims-his-sixth-win-in-mexico-city-and-gets-your-vote.dVgeTMPzsIX2IZlm95mfa"
+    },
+    {
+     "name": "formula1.com",
+     "title": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026 – Race Result（ペレス16位・0点）",
+     "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
     }
    ],
    "examples": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "team-orders",
@@ -16306,14 +16766,16 @@
     "初優勝は、そのドライバーにとって、F1の決勝で初めての優勝のこと。英語では「maiden win（メイデン・ウィン）」と書く。F1の長い歴史では、初優勝の年齢が記録になることが多い。",
     "最年少優勝は、2016年スペインGPのフェルスタッペンで、18歳7か月。2位は今季のアントネッリで、2026年3月の中国GPに19歳6か月で初優勝した。3位は、2008年イタリアGPのベッテル（21歳2か月）だ。",
     "アントネッリは、F1の116人目のグランプリ優勝者になった（2026年3月時点）。新しい優勝者が出たのは、2024年ハンガリーGPのピアストリ以来。イタリア人のグランプリ優勝は、2006年マレーシアGPのフィジケラ以来で、約20年ぶりだった。",
-    "2026年11月1日のメキシコシティGP終了時点で、今季の優勝者は、アントネッリのほかにラッセル、ノリス、ハミルトン、ルクレール、フェルスタッペン。ほかの5人は、すでに優勝経験があった。"
+    "2026年11月8日のサンパウロGP終了時点で、今季の優勝者は、アントネッリのほかにラッセル、ノリス、ハミルトン、ルクレール、フェルスタッペン。ほかの5人は、すでに優勝経験があった。",
+    "初優勝を待つドライバーもいる。レッドブルのハジャーは、サンパウロGPで3位に入ったが、まだ優勝はない（formula1.com）。今季は残りラスベガス、カタール、アブダビの3戦で、ここで新しい優勝者が出るかどうかも見どころだ。"
    ],
    "see": [
     "podium",
     "grand-prix",
     "winning-streak",
     "most-wins",
-    "rookie"
+    "rookie",
+    "youngest-records"
    ],
    "src": [
     {
@@ -16340,10 +16802,20 @@
      "name": "formula1.com",
      "title": "2026 Race Results",
      "url": "https://www.formula1.com/en/results/2026/races"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship（2026年11月8日）",
+     "url": "https://formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
     }
    ],
-   "examples": [],
-   "checked": "2026-11-04"
+   "examples": [
+    {
+     "t": "今季3度の表彰台を得たハジャーは、残る3戦で初優勝を狙い、ラスベガスに期待する",
+     "u": "/news/de-motorsportmagazin-hadjar-vegas-sieg/"
+    }
+   ],
+   "checked": "2026-11-20"
   },
   {
    "id": "winning-streak",
@@ -18467,7 +18939,8 @@
    "body": [
     "アップグレード（アップデート）は、すでに走っているマシンに、新しい部品や形を加えることだ。フロア、サイドポッド、エンジンカバー、ディフューザー、ウイングなど、空力に関わる部品が多い。まとめて「パッケージ」として投入することもある。",
     "時期も量もチームで違う。2026年のアゼルバイジャンGP（バクー）では、アウディが新しい前翼とノーズ、フロアなど14の部品を持ち込み、マクラーレンとレッドブルも空力の部品を変えた。一方、メルセデスとフェラーリは新しい部品を出さなかった。",
-    "新しい部品が、期待どおりに速くなるとは限らない。風洞やCFDの予想と、走ったデータが合わないことがあるからだ（→相関）。開発に使える風洞とCFDの量は、順位に応じた上限がある（→空力テストの制限（ATR））。パワーユニットの改良は別の仕組みで決まる（→開発の凍結、ADUO）。"
+    "新しい部品が、期待どおりに速くなるとは限らない。風洞やCFDの予想と、走ったデータが合わないことがあるからだ（→相関）。開発に使える風洞とCFDの量は、順位に応じた上限がある（→空力テストの制限（ATR））。パワーユニットの改良は別の仕組みで決まる（→開発の凍結、ADUO）。",
+    "2026年は、1回の改良の効き目が大きい。マクラーレンのステラ代表によると、前の規則の終わりごろは改良1回で100分の数秒だったが、今は「10分の2〜3秒」になる。一方でコストキャップ（2026年は2億1500万ドル）があり、改良をいつ入れるかはチームで分かれた。フェラーリは前半に、アストンマーティンとウィリアムズは後半に重点を置いた（The Race）。終盤のサンパウロGPで新しい部品を入れたのはマクラーレンだけで、フロントウイング、リアウイング、ビームウイング、フロアを変えた（PlanetF1）。"
    ],
    "examples": [
     {
@@ -18493,6 +18966,10 @@
     {
      "t": "マクラーレンはサンパウロGPに新しい前翼などを入れて勝ったが、ステラ代表は、勝因は改良より条件と車の相性だったと説明した。",
      "u": "/news/en-planetf1-mclaren-upgrades-flattered/"
+    },
+    {
+     "t": "サインツは、レッドブルとマクラーレンが1シーズンに7、8回もアップデートを投入できることが理解できないと語った",
+     "u": "/news/nl-f1maximaal-sainz-redbull-upgrades/"
     }
    ],
    "see": [
@@ -18503,7 +18980,9 @@
     "floor-diffuser",
     "sidepod",
     "development-freeze",
-    "aduo"
+    "aduo",
+    "cost-cap",
+    "front-wing"
    ],
    "src": [
     {
@@ -18522,11 +19001,6 @@
      "url": "https://www.grandprix247.com/formula-1-news/haas-formula-1-team-target-singapore-points-as-heat-and-energy-management-loom"
     },
     {
-     "name": "Coffee Corner Motorsport",
-     "title": "Singapore Grand Prix 2026 media day（ベアマン車に先に装着、オコンはオースティンの見込み）",
-     "url": "https://coffeecornermotorsport.com/singapore-grand-prix-2026-media-day/"
-    },
-    {
      "name": "The Race",
      "title": "Ferrari's last major 2026 F1 upgrade explained",
      "url": "https://www.the-race.com/formula-1/ferrari-last-major-2026-f1-upgrade-explained/"
@@ -18535,9 +19009,19 @@
      "name": "PlanetF1",
      "title": "Why Brazilian GP victory flattered McLaren upgrades",
      "url": "https://www.planetf1.com/brazilian-grand-prix/mclaren-brazilian-gp-f1-upgrades"
+    },
+    {
+     "name": "The Race",
+     "title": "Why F1's upgrade war is so unusual in 2026（2026年7月15日）",
+     "url": "https://www.the-race.com/formula-1/why-f1s-upgrade-war-is-so-unusual-in-2026/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "McLaren alone in bringing upgrades to F1 Brazilian GP（2026年11月6日）",
+     "url": "https://www.planetf1.com/news/mclaren-upgrades-f1-brazilian-gp"
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-20"
   },
   {
    "id": "development-freeze",
@@ -18631,7 +19115,8 @@
    "body": [
     "相関は、シミュレーションの結果と、実際に車から測ったデータが合っているかどうかだ。F1公式の技術解説で、ロブ・スメドレー氏は「車で測ったデータを、シミュレーターのデータに合わせようとする作業」と説明している。うまく合えば、風洞やCFDで試した改良を、安心して実車に使える。「100％合う風洞はない」とも述べている。",
     "ずれが大きいと、風洞で良かった部品が、実際には速くならず、開発の方向を誤ることがある。PlanetF1は、レッドブルが地面効果の時代、とくに2024年に相関で苦労し、RB20の開発が最初は間違った方向に進んだと伝えた。同チームの技術幹部ピエール・ワシェは、2026年は新規則で「得られるデータが大きく、リスクは小さい。リスクがないわけではない」と話した。",
-    "そのため、チームは、実車で測ったデータとシミュレーションを何度も突き合わせて、ずれの原因を探す。新しい部品を試す金曜の練習走行は、そのための大事な機会になる。"
+    "そのため、チームは、実車で測ったデータとシミュレーションを何度も突き合わせて、ずれの原因を探す。新しい部品を試す金曜の練習走行は、そのための大事な機会になる。",
+    "2026年は新規則の1年目で、相関の難しさがあらためて見えた。The Raceによると、マクラーレンとウィリアムズは、ともにシミュレーションが予想したほど速くならないフロントウイングの改良を持ち込んだ。ウィリアムズは終盤、2027年型のためのデータ集めに軸足を移した。サインツは、今年の数字の一部は予想と「正確に1対1では一致していない」と話し、地面効果の時代とは違うとしている。"
    ],
    "examples": [
     {
@@ -18645,6 +19130,10 @@
     {
      "t": "ピレリ、セパンのラップタイムがシミュレーションより4秒以上遅いと驚き",
      "u": "/news/de-motorsport-total-pirelli-sepang-4-5-seconds/"
+    },
+    {
+     "t": "ウィリアムズは今季終盤、2027年型車のための相関データ集めに軸足を移している",
+     "u": "/news/en-therace-williams-sainz-albon-test-drivers/"
     }
    ],
    "see": [
@@ -18653,7 +19142,8 @@
     "upgrade",
     "simulator",
     "atr",
-    "ground-effect"
+    "ground-effect",
+    "front-wing"
    ],
    "src": [
     {
@@ -18665,9 +19155,19 @@
      "name": "PlanetF1",
      "title": "Pierre Waché plays down Red Bull F1 2026 correlation concerns",
      "url": "https://www.planetf1.com/news/f1-2026-red-bull-correlation-issues-pierre-wache-wind-tunnel"
+    },
+    {
+     "name": "The Race",
+     "title": "Why F1's upgrade war is so unusual in 2026（2026年7月15日）",
+     "url": "https://www.the-race.com/formula-1/why-f1s-upgrade-war-is-so-unusual-in-2026/"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Williams has turned Sainz and Albon into test drivers（2026年11月）",
+     "url": "https://www.the-race.com/formula-1/why-williams-has-turned-sainz-and-albon-into-test-drivers/"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "pit-crew",
@@ -20428,7 +20928,7 @@
    "short": "1週末にドライバー1人が使えるタイヤのセット数。通常はドライ13セット、スプリント週末は12セット。",
    "body": [
     "F1では、週末に使えるタイヤの数が決まっている。F1公式サイトによると、通常の週末は、ドライバー1人にドライタイヤが13セット。今季のオーストラリアGPでは、ハード（C3）2セット、ミディアム（C4）3セット、ソフト（C5）8セットだった。",
-    "スプリントの週末は、ドライが12セットに減る。中国とオランダの例では、ハード2、ミディアム4、ソフト6で、ハードがC2、ミディアムがC3、ソフトがC4だった。同じ資料では、雨用はインターミディエイトが6セット、フルウェットが3セットだ。スプリントの分だけ走る機会が増えるのに、ドライのセットは1つ少なくなる。",
+    "スプリントの週末は、ドライが12セットに減る。中国とオランダの例では、ハード2、ミディアム4、ソフト6で、ハードがC2、ミディアムがC3、ソフトがC4だった。雨用は、スポーティングレギュレーションではインターミディエイトが6セット、フルウェットが2セットで、通常の週末（インター5、フルウェット2）よりインターが1セット多い（B6.2.4）。スプリントの分だけ走る機会が増えるのに、ドライのセットは1つ少なくなる。",
     "どの3種類を持ち込むかは、ピレリが会場ごとに決める。10月のセパンはC2、C3、C4で、バクーやシンガポールはC3、C4、C5のいちばん柔らかい3種類だ（RacingNews365）。チームは限られたセットを、練習・予選・決勝にどう振り分けるかを考える。",
     "モナコでは2025年、タイヤを3セット以上使う義務（2回以上のピットストップ）があり、フルウェットが1セット追加された。しかし、この決まりは2026年の規則からなくなった（PlanetF1、2026年2月）。ドライの決勝では2種類以上のコンパウンドを使う義務がある（「2種類のタイヤの使用義務」を見る）。"
    ],
@@ -20494,6 +20994,11 @@
      "name": "Motorionline",
      "title": "Formula 1 | Pirelli, gomme più morbide in Brasile rispetto al 2025",
      "url": "https://f1grandprix.motorionline.com/gp-san-paolo-2026-interlagos-pirelli-mescole-c3-c4-c5/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] Issue 09（2026-10-01）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
     }
    ],
    "checked": "2026-11-18"
@@ -24585,13 +25090,13 @@
     "後輪へ力を伝える",
     "トルクセンサー",
     "デフから後輪",
-    "カーボンシャフト",
     "ハーフシャフト"
    ],
    "short": "デフから左右の後輪へ力を伝える軸。FIAは2026〜2030年用のトルクセンサーを標準供給部品とする方針を示した。",
    "body": [
-    "ドライブシャフトは、ギアボックスとデフの力を、左右の後輪に伝える軸だ（ハーフシャフトとも呼ぶ）。デフとホイールをつなぐ、ただ1つの部品になる。デフとホイールの位置はサスペンションの動きで変わるので、軸の端には、角度の違いを許す継ぎ手がある。F1では、軽くて強いカーボン製が使われている（Formula 1 Dictionary）。",
+    "ドライブシャフトは、ギアボックスとデフの力を、左右の後輪に伝える軸だ（ハーフシャフトとも呼ぶ）。デフとホイールの位置はサスペンションの動きで変わるので、軸の端には、角度の違いを許す継ぎ手がある。2026年の技術規則では、ドライブシャフトは鋼（スチール）で作らなければならない。中の穴は、両端から150mmより内側では同じ太さでなければならない（C9.10）。",
     "エンジンとMGU-Kの力は、ギアボックスとデフを通り、ドライブシャフトで後輪へ届く。",
+    "技術規則は、ギアボックスの定義の中で、ドライブシャフトを、バネの上の部分（車体側）からバネの下の部分（車輪側）へ駆動のトルクを伝える部品と定めている（付録C1）。",
     "2026年の変化として、FIAは2023年の募集文書で、2026〜2030年のドライブシャフトのトルクセンサーを「規制用のセンサー」とし、標準供給部品（SSC）に指定した。供給するのはFIAが入札で選ぶ1社の予定で、チームは決められたとおりに取り付けて使い、手を加えてはならない。"
    ],
    "examples": [],
@@ -24606,18 +25111,19 @@
    ],
    "src": [
     {
-     "name": "Formula 1 Dictionary",
-     "title": "F1 transmission and drivetrain systems",
-     "url": "https://www.formula1-dictionary.net/f1-transmission-drivetrain-systems/"
-    },
-    {
      "name": "FIA",
      "title": "F1 Driveshaft Torque Sensor 2026-2030 Call for Expression of Interest",
      "url": "https://www.fia.com/sites/default/files/f1_driveshaft_torque_sensor_2026-2030_call_for_expression_of_interest_final_14.06.2023.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C Technical (Issue 17, 2026-04-28)",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
     }
    ],
    "cat": "マシンと空力",
-   "checked": "2026-11-13"
+   "checked": "2026-11-20",
+   "rule": "テクニカルレギュレーション C9.10、付録C1（Issue 17〈2026年4月28日版〉で確認）"
   },
   {
    "id": "fuel-cell",
@@ -26172,9 +26678,10 @@
     "規則は、F1カーを「不必要に遅く、不規則に、またはほかのドライバーや人にとって危険と見なされるやり方で」走らせてはならないと定めている。練習、予選、スプリント、決勝のすべてに当てはまる。",
     "ガイドラインでは、ほかの車に回避行動や急な進路変更をさせた場合などが危険な例だ。今季のバルセロナGPのフリー走行3回目では、前の車の前でブレーキを踏んで抜かせなかった走りが「不規則な運転」とされ、戒告になった。ドライバーは、いらだちからの行動だったと認めて謝った。",
     "罰の目安は、決勝やスプリントなら10秒加算だ。事情があれば5秒、重いときはドライブスルーや10秒のストップ＆ゴーになる。予選や練習は、戒告かグリッド降格だ。",
-    "ペナルティポイントは、2026年のガイドライン更新で、危険・無謀・明らかに故意の行為などに絞られた。以前は、不規則な運転にもポイントがつくことがあった（→ペナルティポイント）。"
+    "ペナルティポイントは、2026年のガイドライン更新で、危険・無謀・明らかに故意の行為などに絞られた。以前は、不規則な運転にもポイントがつくことがあった（→ペナルティポイント）。",
+    "同じ禁止は、セーフティカーやVSCの間にも書かれている。VSC中もSC中も、不必要に遅く、または不規則に走ってはならず、SC中はピット入口の道とピットレーンでも同じだ。SCがピットに戻る周は、SCのライトが消えてからSCがピット入口の道に入るまで、急な加速や急なブレーキをしてはならず、前の車と横に並んでもいけない（B5.12.2 a、B5.13.2 a、B5.13.6）。今季のセパンでノリスが戒告を受けた件も、SC中の走りだった。"
    ],
-   "rule": "スポーティングレギュレーション B1.8.5／国際スポーティングコード 付則L 第IV章 第2条 e）",
+   "rule": "スポーティングレギュレーション B1.8.5、B5.12.2 a)、B5.13.2 a)、B5.13.6（Issue 09〈2026年10月1日版〉で確認）／国際スポーティングコード 付則L 第IV章 第2条 e）",
    "examples": [
     {
      "t": "ノリスは、セパンのSC中の不規則な走行で審議され、戒告になった。素早く反応して接触を避けた点が考慮された。",
@@ -26188,9 +26695,11 @@
     "defending",
     "impeding",
     "causing-collision",
-    "sc-infringement"
+    "sc-infringement",
+    "vsc",
+    "safety-car-restart"
    ],
-   "checked": "2026-11-18",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -26216,6 +26725,11 @@
      "name": "PlanetF1",
      "title": "FIA confirms Lando Norris punishment after Bahrain GP investigation",
      "url": "https://www.planetf1.com/news/lando-norris-2026-bahrain-grand-prix-malaysia-fia-reprimand"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
     }
    ]
   },
@@ -27111,7 +27625,8 @@
    "body": [
     "F1の燃料は、チームが事前にFIAの承認を受けたものしか使えない。レースの週末には、FIAの技術委員が、何台かの車から燃料を少し抜き取る。それを調べて、承認された燃料と同じかどうかを確かめる。",
     "2026年の日本GPとオーストリアGPの公式文書では、どちらも決勝の前に3台、決勝のあとに1台から燃料を取っていた。結果は、どの燃料も事前に承認されたものと同じで、密度の変化も許される範囲だった。F1公式サイトによると、検査では燃料の「指紋」を、登録済みの基準と照らし合わせる。2026年は燃料が先進持続可能燃料になり、承認の手続きも複雑になった。",
-    "サンプルが取れないだけでも、失格になることがある。2021年のハンガリーGPでは、2位に入ったベッテル（アストンマーティン）が失格になった。当時の規則は、いつでも1リットルを抜けるようにしておくことを求めていたが、何度やっても0.3リットルしか抜けなかった。繰り上がって、ハミルトンが2位になった。"
+    "サンプルが取れないだけでも、失格になることがある。2021年のハンガリーGPでは、2位に入ったベッテル（アストンマーティン）が失格になった。当時の規則は、いつでも1リットルを抜けるようにしておくことを求めていたが、何度やっても0.3リットルしか抜けなかった。繰り上がって、ハミルトンが2位になった。",
+    "量が足りないことによる失格は、予選でも起きている。2022年のオーストラリアGPでは、ウィリアムズがアルボンの車から十分な量の燃料サンプル（1.0リットル）をFIAに出せず、アルボンは予選の結果から外された（F1公式）。"
    ],
    "rule": "テクニカルレギュレーション C16.5（レース会場での燃料サンプリングと検査）",
    "examples": [],
@@ -27119,9 +27634,10 @@
     "sustainable-fuel",
     "disqualification",
     "fuel-flow",
-    "parc-ferme"
+    "parc-ferme",
+    "scrutineering"
    ],
-   "checked": "2026-11-13",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "FIA",
@@ -27167,6 +27683,11 @@
      "name": "FIA",
      "title": "2026 Formula 1 Regulations Section C Technical（Issue 21、2026年10月19日。目次のC16.5「Fuel sampling and testing at a Competition」）",
      "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_21_-_2026-10-19.pdf"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "Albon disqualified from Australian GP qualifying over fuel irregularity（2022年4月9日）",
+     "url": "https://www.formula1.com/en/latest/article/albon-disqualified-from-australian-gp-qualifying-over-fuel-irregularity.PUsXr9QdhRWPRivVAgDWl"
     }
    ]
   },
@@ -28344,7 +28865,8 @@
    "body": [
     "ターボラグは、アクセルを踏んでから、ターボが十分に回って力が出るまでの遅れだ。ターボは排気ガスの勢いで回るので、エンジンの回転が低いときや、アクセルを戻していたあとは、すぐには回らない。",
     "2025年までは、ターボの軸につながったMGU-Hが、モーターとしてターボを回して遅れを消していた。2026年はMGU-Hがなくなり、ターボは排気ガスの力だけに頼る（F1公式）。とくにスタートで問題になり、ドライバーは発進の前にエンジンを回してターボを回しておく必要がある。The Raceのアンダーソン氏は、ターボの大きさにも悩みがあると書いた。小さいターボはスタートやモナコに向き、大きいターボはモンツァやバクーのような力の要るコースに向く。",
-    "メーカーは、ターボラグを小さくする改良を続けている。電気の力で補う方法もあるが、電気の量には限りがある（→ターボチャージャー）。"
+    "メーカーは、ターボラグを小さくする改良を続けている。電気の力で補う方法もあるが、電気の量には限りがある（→ターボチャージャー）。",
+    "技術規則は、ターボの回転数を毎分15万回転まで（C5.3.6）、ターボ全体の重さを12kg以上（C5.3.4）と決めている。空気の薄いコースでは、ターボラグの影響が大きくなる。標高2200メートルを超えるメキシコシティGPを前に、ラッセルは「ターボラグは今週末、多くのチームにとって大きな要因になる」と話し、ターボの小さいフェラーリはかなり有利だろうと見た。ルクレールは「本命かどうかは、完全には同意しない」と返した（Crash.net）。"
    ],
    "examples": [
     {
@@ -28370,6 +28892,10 @@
     {
      "t": "ラッセルは、標高2200メートルを超えるメキシコではターボラグが大きな要因になり、小型ターボのフェラーリがかなり有利だと見立てた。",
      "u": "/news/en-crash-russell-ferrari-turbo-mexico/"
+    },
+    {
+     "t": "アウディのヒュルケンベルグはスタートの難しさを認め、作動の許容範囲が狭く、小さなズレが大きな差になると語った。",
+     "u": "/news/de-motorsportmagazin-audi-start-huelkenberg/"
     }
    ],
    "see": [
@@ -28377,7 +28903,8 @@
     "mgu-h",
     "race-start",
     "clutch",
-    "energy-management"
+    "energy-management",
+    "boost-pressure"
    ],
    "src": [
     {
@@ -28389,9 +28916,20 @@
      "name": "The Race",
      "title": "Gary Anderson: Why F1 2026 starts are much more complicated",
      "url": "https://www.the-race.com/formula-1/gary-anderson-why-f1-2026-starts-much-more-complicated/"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C [Technical] Issue 17（2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+    },
+    {
+     "name": "Crash.net",
+     "title": "George Russell claims Ferrari has a major advantage at Mexico GP",
+     "url": "https://www.crash.net/f1/news/1108613/1/george-russell-claims-ferrari-has-major-advantage-mexico-gp"
     }
    ],
-   "checked": "2026-11-20"
+   "checked": "2026-11-20",
+   "rule": "技術規則 C5.3.4（ターボの最低重量）、C5.3.6（ターボの最高回転数）（Section C Issue 17〈2026年4月28日版〉で確認）"
   },
   {
    "id": "crossover-point",
@@ -28415,7 +28953,8 @@
    "body": [
     "クロスオーバーは、2種類のタイヤの速さが入れ替わる境目だ。雨が降り始めたり、路面が乾いてきたりすると、スリック（溝のないタイヤ）とインターミディエイトのどちらが速いかが変わる。チームは、その境目がいつ来るかを読んで、タイヤを替える。",
     "目安の一つは、ラップタイムだ。ピレリの2020年の説明では、乾いた路面のラップタイムを100%として、110〜112%まで遅くなったら、インターミディエイトに替える頃合いだ。1分30秒のコースなら、1分40秒くらいになったときだ。インターミディエイトとフルウェットの間にも、同じような割合の目安がある（ピレリ）。",
-    "実際の判断は難しい。どこに、どれだけ水があるかの情報をチームが伝えるが、最後はドライバーがどのタイヤが良いかを判断する（ピレリ）。早く替えすぎても、遅すぎても時間を失う。"
+    "実際の判断は難しい。どこに、どれだけ水があるかの情報をチームが伝えるが、最後はドライバーがどのタイヤが良いかを判断する（ピレリ）。早く替えすぎても、遅すぎても時間を失う。",
+    "今季のサンパウロGPは、インターミディエイトで始まり、路面が乾くにつれてスリックに替わった。9周目にはハミルトンが無線で「スリックまでそう遠くない」と話していた（PlanetF1）。最初に替えたのはそのハミルトンで、14周目の終わりにソフトを履いた。15周目にアルボン、16周目にノリス、ラッセル、ハジャーが続き、アントネッリとフェルスタッペンは17周目まで待った。23周目には、路面は完全に乾いたと判断された（F1公式）。境目を越えた直後は、新しいスリックがまだ温まっていない。首位のアントネッリは20周目の初めに1コーナーでスピンして首位を失い、メルセデスのロード副代表は、タイヤが適正な温度域を下回っていたようだと説明した（Motorsport.com スペイン語版）。"
    ],
    "examples": [
     {
@@ -28437,6 +28976,10 @@
     {
      "t": "ピアストリは、サンパウロ予選でフルウェットを引っ張りすぎ、インターミディエイトへの交換が遅れてQ2で敗退した。",
      "u": "/news/de-motorsporttotal-piastri-q2-wrong-tyre-call/"
+    },
+    {
+     "t": "メルセデスは、サンパウロGPでインターからスリックに替えた2周後にスピンしたアントネッリについて、タイヤが適正な温度域を下回りがちだったと説明した。",
+     "u": "/news/de-motorsporttotal-mercedes-explains-antonelli-spin/"
     }
    ],
    "see": [
@@ -28444,16 +28987,32 @@
     "full-wet",
     "pit-stop",
     "tyre-warm-up",
-    "pit-loss"
+    "pit-loss",
+    "drying-line"
    ],
    "src": [
     {
      "name": "Pirelli",
      "title": "When it's time to change from slick to wet tyres in Formula 1",
      "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/when-it-s-time-to-change-from-slick-to-wet-tyres-in-formula-1-52943/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Norris beats Verstappen in wet Sao Paulo GP thriller as Mercedes win Constructors' Championship",
+     "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
+    },
+    {
+     "name": "Motorsport.com（スペイン語版）",
+     "title": "Mercedes explica el problema de Antonelli en Brasil",
+     "url": "https://es.motorsport.com/f1/news/mercedes-explica-problema-antonelli-brasil/10873893/"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "'Are you guys listening?' – Untelevised Lewis Hamilton team radio after Brazilian GP",
+     "url": "https://www.planetf1.com/news/lewis-hamilton-brazilian-grand-prix-2026-team-radio"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "drying-line",
@@ -28477,7 +29036,8 @@
    "body": [
     "雨が上がると、コースは一度に乾くわけではない。多くの車が通る走行ラインから先に水がはけ、乾いた帯ができる。これを乾いたライン（ドライライン）と呼ぶ。乾いたラインが広がるほど、スリックで走れる場所が増え、雨用タイヤからスリックに替える時期が近づく（→クロスオーバー）。",
     "ただ、雨のときは逆のこともある。乾いた路面で走行ラインに乗ったゴム（ラバー）は、濡れると滑りやすく、「氷の上を走っているよう」に感じることがあると、Driver61は説明している。そのためドライバーは、雨のときはコースの幅を広く使い、ふだんのラインを外れた場所のグリップも試しながら、速いラインを探す。",
-    "路面の性質でも乾き方は変わる。今季のセパンでは、粗い舗装の細かな穴に予想以上の水が残り、スリックの温度がなかなか上がらなかったと伝えられた（下の実例）。"
+    "路面の性質でも乾き方は変わる。今季のセパンでは、粗い舗装の細かな穴に予想以上の水が残り、スリックの温度がなかなか上がらなかったと伝えられた（下の実例）。",
+    "乾いたラインができたあとでも、雨が戻ると、場所によって濡れ方が大きく違う。今季のサンパウロGPの終盤、スリックで走り続けたハミルトンは、セクター1で雨が強くなっていたことを聞いていなかったと話し、濡れた路面で順位を2つほど落とした（Crash.net）。中継では、オンボード映像で路面の色や水しぶきの違いを見ると、どこが乾いていてどこが濡れているかが分かりやすい。"
    ],
    "examples": [
     {
@@ -28491,13 +29051,18 @@
     {
      "t": "ピアストリは、サンパウロ予選で、ウェットで走ったラインがインターミディエイトでは通用しなかったと振り返った。",
      "u": "/news/de-motorsporttotal-piastri-q2-wrong-tyre-call/"
+    },
+    {
+     "t": "サンパウロGPでピットを出た直後にスリックでスピンしたラッセルについて、オランダの解説者は、ピットレーンがまだ濡れていたので理解できるミスだと述べた。",
+     "u": "/news/nl-f1maximaal-russell-pitlane-nos-analisten/"
     }
    ],
    "see": [
     "intermediate",
     "track-evolution",
     "tyre-warm-up",
-    "wet-race-declared"
+    "wet-race-declared",
+    "crossover-point"
    ],
    "src": [
     {
@@ -28509,9 +29074,14 @@
      "name": "Pirelli",
      "title": "When it's time to change from slick to wet tyres in Formula 1",
      "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/when-it-s-time-to-change-from-slick-to-wet-tyres-in-formula-1-52943/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Lewis Hamilton reveals Ferrari radio confusion behind costly Brazil GP mistake",
+     "url": "https://www.crash.net/f1/news/1110022/1/lewis-hamilton-reveals-ferrari-radio-confusion-behind-costly-brazil-gp-mistake"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "aquaplaning",
@@ -28602,12 +29172,13 @@
    "body": [
     "雨の日、F1の車は大量の水しぶきを巻き上げる。後ろの車からは前がほとんど見えなくなる。F1が大雨で走れない一番の理由は、この視界の悪さだ（Motor Sport Magazine）。",
     "水しぶきは、タイヤだけでなく、床下からも出る。グラウンドエフェクトの車は、床下を速い空気が流れ、路面の水滴を車の後ろまで運んで上に吹き上げる。2025年のイギリスGPでは、ハジャーが前のアントネッリの車が見えずに追突した。フェラーリは2024年にタイヤを覆うカバーを試したが、思うような効果は出ず、試したベアマンは「振り出しに戻った」と話した（同誌）。",
-    "2026年は、車とタイヤが細くなり、床下の効果も弱まったので、水しぶきが減ると期待されている。一方で、ピアストリは「雨のときのミスの余裕はずっと小さい」と話している（同誌）。スタートを遅らせるか、赤旗で止めるかの判断では、たまった水と並んで視界が大きな材料になる（→ローリングスタート）。"
+    "2026年は、車とタイヤが細くなり、床下の効果も弱まったので、水しぶきが減ると期待されている。一方で、ピアストリは「雨のときのミスの余裕はずっと小さい」と話している（同誌）。スタートを遅らせるか、赤旗で止めるかの判断では、たまった水と並んで視界が大きな材料になる（→ローリングスタート）。",
+    "規則にも、視界の悪さへの備えがある。SC中、後ろの車は前の車から車10台分以内で走るが、視界が悪いときは、レースディレクターがこれを20台分まで広げられる。そのときは「LOW VISIBILITY – MAXIMUM GAP TWENTY CAR LENGTHS」と表示される（スポーティングレギュレーション B5.13.2 b）。2026年のサンパウロGPの予選は、Q1が始まって数分で、アクアプレーニングの訴えが出て赤旗になり、Q1の開始から再開まで84分かかった。ラッセルは「4コーナーへの直線では視界がゼロだった」と話し、決勝であの条件なら「本当に、本当にひどい事故を見る可能性はとても、とても高い」と述べた（GPblog）。"
    ],
    "examples": [
     {
-     "t": "セパンを前に、ファン掲示板では、視界不良による赤旗のリスクを心配する声が出た（ファン投稿のまとめ）。",
-     "u": "/news/ja-f1are-sepang-weather-forecast/"
+     "t": "雨のサンパウロでは予選Q1が豪雨で長く赤旗中断となり、ラッセルはあの条件の決勝は大事故の危険が高かったと語った",
+     "u": "/news/de-motorsporttotal-wet-f1-2026-how-dangerous/"
     }
    ],
    "see": [
@@ -28615,7 +29186,8 @@
     "red-flag",
     "ground-effect",
     "floor-diffuser",
-    "wet-race-declared"
+    "wet-race-declared",
+    "safety-car"
    ],
    "src": [
     {
@@ -28627,9 +29199,20 @@
      "name": "PlanetF1",
      "title": "Standing start v rolling start as F1 forecast wet Dutch Grand Prix",
      "url": "https://www.planetf1.com/news/standing-start-v-rolling-start-as-f1-forecast-wet-dutch-grand-prix"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "GPblog",
+     "title": "Hadjar and Russell warn Brazilian GP cannot run in qualifying conditions: 'horrific incident' risk（2026年11月8日）",
+     "url": "https://www.gpblog.com/en/news/hadjar-and-russell-warn-brazilian-gp-cannot-run-in-qualifying-conditions-horrific-incident-risk"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20",
+   "rule": "スポーティングレギュレーション B5.13.2 b)（Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "red-flag-tyre-change",
@@ -29029,7 +29612,8 @@
    "body": [
     "グリッドは2列に並ぶので、同じ列でも左右でスタートの条件が違う。ふだんの走行ラインの上にある側は、ゴムが乗ってグリップが良い「きれいな側」だ。反対側は、ほこりや小さなごみが残り、滑りやすい「汚れた側」になる。",
     "差は小さくない。クビサは2010年の韓国GPで、練習スタートで「80mで20m以上の差」が出たと話し、汚れた側の8番手は11番手とほとんど同じだと嘆いた（Autosport）。2012年のアメリカGPでは、フェラーリがマッサの車のギアボックスの封印をわざと切って5グリッド降格にし、マッサとアロンソを、2人ともきれいな側に並ばせた。このときレッドブルのシミュレーションでは、汚れた側からだとターン1までにグリッド3列ぶんほど失うとされた（F1technical.net）。",
-    "ポールポジションをどちら側に置くかは、コースごとに決まっている。セパンでは右側が伝統の位置だ（RacingNews365）。"
+    "ポールポジションをどちら側に置くかは、コースごとに決まっている。セパンでは右側が伝統の位置だ（RacingNews365）。",
+    "1コーナーまでが長いコースでは、汚れた側の不利に、前に車がいない不利が重なる。2025年のメキシコシティGPで予選2番手だったルクレールは、「スタートは3番手がよかった。少なくとも少しはスリップストリームがある」と話した。前に車がいないうえ、汚れた側から出ることになるからだ。このコースは1コーナーまで約830mある（GPblog）。中継のグリッド紹介では、何番手かだけでなく、どちらの列に並ぶかも見ておくと、1コーナーまでの順位の変化が読みやすい。"
    ],
    "examples": [
     {
@@ -29042,7 +29626,9 @@
     "start-line",
     "track-evolution",
     "race-start",
-    "grid-penalty"
+    "grid-penalty",
+    "circuit-mexico",
+    "slipstream"
    ],
    "src": [
     {
@@ -29059,9 +29645,14 @@
      "name": "RacingNews365",
      "title": "FIA make late Sepang change after unusual circuit mistake",
      "url": "https://racingnews365.com/fia-make-late-sepang-change-after-unusual-circuit-mistake"
+    },
+    {
+     "name": "GPblog",
+     "title": "Leclerc eyes Hamilton's first lap advantage ahead of Mexico GP start（2025年10月26日）",
+     "url": "https://www.gpblog.com/en/news/leclerc-eyes-hamiltons-first-lap-advantage-ahead-of-mexico-gp-start"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "tyre-pressure",
@@ -29417,6 +30008,7 @@
    "body": [
     "湿度が高いと、汗が蒸発しにくく、体の熱が逃げない。同じ気温でも、乾いた暑さより体への負担がずっと大きい。シンガポールは湿度が90%近く、ドライバーは汗で2〜3kg、背の高い人は4kgほど体重が減る。心臓への負担も大きく、トレーナーは「ほかより10〜20%きつい」と話している（F1technical.net）。",
     "FIAが高温の警告（→ヒートハザード）を出すかどうかは、気温と湿度を合わせた「ヒートインデックス」が31度を超える見込みかどうかで決まる（GPFans、2026年）。この警告が初めて出たのは2025年のシンガポールGPだった（South China Morning Post）。",
+    "2026年10月のセパンでは、土曜の湿度が86%と予報された。気温の予報は最高31.5度だったが、気温と湿度を合わせたヒートインデックスは36.07度とされた。決勝の日も、最高気温31度に対し、ヒートインデックスは35度前後とみられた（formula1.com）。湿度が高いと、気温の数字より体に感じる暑さがずっと高くなる。",
     "湿度は車にも影響する。2003年、ルノーのタファン氏は、マレーシアを1年で最も厳しい暑さと湿度のコースとし、高い湿度はエンジンの出力にも影響すると話していた（Crash.net）。"
    ],
    "examples": [
@@ -29460,9 +30052,14 @@
      "name": "GPFans",
      "title": "FIA activates heat protocols ahead of scorching Austrian Grand Prix",
      "url": "https://www.gpfans.com/us/f1-news/1086630/f1-fia-austrian-gp-heat-hazard-2026-cooling-system-rules/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What is the weather forecast for the 2026 Bahrain Grand Prix in Malaysia?（2026年9月30日）",
+     "url": "https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-bahrain-grand-prix-in-malaysia.5OZ23exBdO608dxwkDLrad"
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-20"
   },
   {
    "id": "start-delay",
@@ -29887,8 +30484,10 @@
    "short": "コーナーで路面が横に傾いていること。内側が低いと曲がりやすく、外側が低い逆バンクは難しい。",
    "body": [
     "バンクは、コーナーの路面を横方向に傾けたものだ。内側が低く外側が高い傾きなら、車が路面に押しつけられ、速い速度で曲がりやすくなる。逆に外側へ下がる傾き（逆バンク、オフキャンバー）だと、車が外へ流れやすく、ブレーキや立ち上がりが難しくなる。",
-    "F1で目立つバンクは、オランダのザントフォールトだ。オランダGPのF1復帰に向けた改修（2020年に完成）で、ターン3（ハーゲンホルツ）に19度、最終コーナー（アリー・ルイエンダイク）に18度のバンクがつけられた。最終コーナーは、インディアナポリスの最終コーナーの約2倍の傾きだ。",
-    "2026年に9年ぶりにF1が戻ったセパンでは、最終コーナーの逆バンクにも注目が集まった。この角は2016年の再舗装で逆バンクに変えられ、当時のドライバーからは不評だった。サインツは2026年の復帰を前に、この変更を「ひどい間違いだ。むしろバンクをつけるべき角だ」と話した。"
+    "F1で目立つバンクは、オランダのザントフォールトだ。オランダGPのF1復帰に向けた改修（2020年に完成）で、ターン3と最終コーナー（アリー・ルイエンダイク）に、どちらも18度のバンクがつけられた。最終コーナーは、インディアナポリスの最終コーナーの約2倍の傾きだ。",
+    "2026年には、マドリングの12コーナー「ラ・モヌメンタル」が加わった。長さ550mで270度回るコーナーで、傾きは24%（約13.5度）を超えないよう造られた。ザントフォールトより傾きは小さいが、ザントフォールトのバンクが遅いコーナーのあとにあるのに対し、こちらは高速で抜ける（formula1.com）。",
+    "2026年に9年ぶりにF1が戻ったセパンでは、最終コーナーの逆バンクにも注目が集まった。この角は2016年の再舗装で逆バンクに変えられ、当時のドライバーからは不評だった。サインツは2026年の復帰を前に、この変更を「ひどい間違いだ。むしろバンクをつけるべき角だ」と話した。",
+    "バンクはタイヤに大きな負担をかける。2005年のアメリカGP（インディアナポリス）では、オーバルの1コーナーを逆向きに走るバンクのターン13で、ミシュランのタイヤに問題が出た。トヨタのラルフ・シューマッハーがこのコーナーで大きな事故を起こし、ミシュランを使う7チームがフォーメーションラップのあとに走るのをやめたため、決勝は6台だけで始まった（The Race）。"
    ],
    "examples": [
     {
@@ -29902,9 +30501,11 @@
     "resurfacing",
     "hairpin",
     "apex",
-    "high-speed-circuit"
+    "high-speed-circuit",
+    "circuit-madring",
+    "us-gp-history"
    ],
-   "checked": "2026-11-18",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "The Race",
@@ -29920,6 +30521,21 @@
      "name": "The Race",
      "title": "'Chaotic racing'? - What F1 drivers expect from Malaysia return",
      "url": "https://the-race.com/formula-1/chaotic-racing-what-f1-drivers-expect-from-malaysia-return"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Why Madrid's La Monumental corner lives up to its name（2026年6月20日）",
+     "url": "https://www.formula1.com/en/latest/article/why-madrids-la-monumental-corner-lives-up-to-its-name.2tbqkIagDDXxFRR48YH4Ih"
+    },
+    {
+     "name": "The Race",
+     "title": "The real reasons behind F1's Indy 2005 humiliation",
+     "url": "https://the-race.com/formula-1/the-real-reasons-behind-f1s-indy-2005-humiliation/"
+    },
+    {
+     "name": "Pirelli",
+     "title": "Five fast facts about the Dutch Grand Prix（ターン3と最終コーナーに18度のバンク）",
+     "url": "https://pirelli.com/global/en-ww/race/racingspot/formula-1/f1-gp-five-fast-facts-about-the-dutch-gp-93519"
     }
    ]
   },
@@ -29947,7 +30563,7 @@
    "body": [
     "チームメイトは同じチームの同じ車で走る。車の性能の差が小さいので、2人を比べると、ドライバーの速さの違いが見えやすい。そのため、予選や決勝で「どちらが前だったか」を数える比較がよく使われる。",
     "数え方は媒体によって違う。RacingNews365はGPの予選だけを数え、平均のタイム差も出す。片方がQ3でクラッシュしたときなどは、2人ともタイムを出した最後のセッションで比べる。Sky Sportsは予選、決勝、スプリント、ポイントなどに分けて数え、2人ともスタートできなかったり、2人ともリタイアしたレースは数えない。",
-    "2026年8月のRacingNews365の集計では、ルクレールがハミルトンに6勝5敗で、平均0.050秒差と、全ペアでいちばん接近していた。最も差が大きいのはアロンソで、ストロールに9勝2敗、平均0.375秒差だった。"
+    "終盤の数字も、数え方で変わる。F1公式サイトが11月2日（メキシコシティGPのあと）に出した集計では、予選はアロンソがストロールに17勝2敗、ガスリーがコラピントに16勝3敗で、ルクレールとハミルトンは10勝9敗だった。決勝ではアントネッリがラッセルに14勝5敗と大きく勝ち越した。この集計でも、2人ともスタートできなかったレースや2人ともリタイアしたレースには勝ち負けをつけていない。The Raceはスプリント予選も含めて数え、11月6日の記事では、ルクレールがハミルトンに13対12で平均0.040秒差、アロンソがストロールに21対3で平均0.351秒差だった。8月のRacingNews365の集計（ルクレールの6勝5敗、平均0.050秒差）から、フェラーリの2人は接近したままだ。"
    ],
    "examples": [
     {
@@ -29957,6 +30573,10 @@
     {
      "t": "2026年のチームメイト対決、GP予選24回とスプリント予選6回の最大30回で全チームを集計",
      "u": "/news/en-therace-teammate-qualifying-comparison-2026/"
+    },
+    {
+     "t": "ブラウンCEOは、ピアストリが今季ノリスに苦戦している理由を、新車がまだ合っていないためと語った",
+     "u": "/news/nl-gpblog-brown-piastri-klikt-nog-niet/"
     }
    ],
    "see": [
@@ -29964,9 +30584,10 @@
     "race-pace",
     "team-orders",
     "seat",
-    "qualifying-tiebreak"
+    "qualifying-tiebreak",
+    "sprint-qualifying"
    ],
-   "checked": "2026-11-18",
+   "checked": "2026-11-20",
    "src": [
     {
      "name": "RacingNews365",
@@ -29977,6 +30598,16 @@
      "name": "Sky Sports",
      "title": "F1 team-mate 2026 head-to-head: Qualifying, race, sprint latest scores",
      "url": "https://www.skysports.com/f1/news/12476/13516662/f1-team-mate-2026-head-to-head-qualifying-race-sprint-latest-scores-results-from-formula-1-season"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "IN NUMBERS: The Qualifying and race head-to-heads between team mates so far in 2026（2026年11月2日）",
+     "url": "https://www.formula1.com/en/latest/article/in-numbers-the-qualifying-and-race-head-to-heads-between-team-mates-so-far-in-2026.D8AYcVEPGOs8OjIiVisZw"
+    },
+    {
+     "name": "The Race",
+     "title": "How F1 2026 team-mates are comparing in qualifying（2026年11月6日更新）",
+     "url": "https://www.the-race.com/formula-1/how-f1-2026-team-mates-are-comparing-in-qualifying/"
     }
    ]
   },
@@ -31786,7 +32417,8 @@
    "body": [
     "ドライバーは、火に強い素材でできたレーシングスーツを着る。その下にも、耐火の長袖と長ズボンの下着、靴下、頭と首を覆うバラクラバ（目出し帽）を着ける。これらの防火服には、FIAの規格（8856-2018）があり、F1では2020年から義務になった（FIA）。",
     "FIAの資料によると、この規格では、熱を当てても内側の温度がすぐに上がらないことを確かめる。スーツは12秒以上、手袋は11秒以上（手のひらは8秒以上）、下着・靴下・バラクラバは5秒以上耐える必要がある。Motor Sport誌によると、スーツの基準は以前の11秒から上がり、全体で約20%守りが強くなった。",
-    "2020年のバーレーンGPでは、グロージャンの車が事故で燃え、グロージャンは約28秒、炎の中にいた。手にやけどを負ったが、自分で脱け出した（Motor Sport誌）。"
+    "2020年のバーレーンGPでは、グロージャンの車が事故で燃え、グロージャンは約28秒、炎の中にいた。手にやけどを負ったが、自分で脱け出した（Motor Sport誌）。",
+    "2026年の付則Lでも、F1のドライバーは、8856-2018の公認を受けたスーツ、長い下着、バラクラバ、靴下、靴、手袋を身に着けなければならない。手袋は2023年以降に公認されたものに限られる。スーツへの文字や模様のプリントは製品のメーカーが行い、耐火の性能を落としてはならない。決勝のあとの表彰式と取材の間、上位3人はスーツを首元まで閉めて着ていなければならず、腰まで開けてはいけない（スポーティングレギュレーション B10.2.2）。"
    ],
    "examples": [
     {
@@ -31803,7 +32435,9 @@
     "halo",
     "cooling-vest",
     "heat-hazard",
-    "livery"
+    "livery",
+    "international-sporting-code",
+    "podium"
    ],
    "checked": "2026-11-20",
    "src": [
@@ -31821,8 +32455,19 @@
      "name": "GPR Direct",
      "title": "The essential guide to FIA fireproof underwear",
      "url": "https://www.gprdirect.com/the-essential-guide-to-fia-fireproof-underwear/"
+    },
+    {
+     "name": "FIA",
+     "title": "International Sporting Code Appendix L 2026（2026年3月26日公表。第III章 1 ヘルメット、2 耐火服）",
+     "url": "https://www.fia.com/system/files/documents/appendix_l_2026_publie_le_26_mars_2026.pdf"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B Sporting (Issue 09, 2026-10-01)",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
     }
-   ]
+   ],
+   "rule": "国際スポーティングコード付則L（2026年版）第III章 2／スポーティングレギュレーション B10.2.2（Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "car-number",
@@ -32430,15 +33075,22 @@
    "body": [
     "パンクは、タイヤに穴があいたり傷んだりして、中の空気が抜けることだ。少しずつ抜けるものを「スローパンクチャー（スローパンク）」と呼ぶ。どちらでも、多くは予定にないピットストップでタイヤを替えることになり、作戦が狂う。",
     "原因には、コース上の破片（デブリ）や、タイヤの傷みがある。2020年のイギリスGPでは、終盤にボッタス、サインツ、ハミルトンの左前のタイヤが相次いで壊れた。ピレリは、2回目のセーフティカーで多くのチームが早めにタイヤを替え、最後の約40周を同じタイヤで走ったことと、車が速くなってタイヤにかかる力が過去最大になったことを原因に挙げた。ボッタスとサインツはピットに入って入賞を逃し、ハミルトンはそのまま走り切って優勝した。",
-    "今季のシンガポールGPでは、ピアストリが右前のタイヤのスローパンクチャーで、レース後半に予定外のピットストップをした（マクラーレン）。それでも終盤にハミルトンを抜き、5位でゴールした。"
+    "今季のシンガポールGPでは、ピアストリが右前のタイヤのスローパンクチャーで、レース後半に予定外のピットストップをした（マクラーレン）。それでも終盤にハミルトンを抜き、5位でゴールした。マクラーレンのステラ代表は「かなり珍しい出来事」と呼び、今季スローパンクチャーの話を聞いたのは初めてだと話した。原因は分からず、ピレリと調べるとした。ピアストリ本人は、皮肉にもこのパンクがハミルトンを抜く助けになったかもしれないと話している（PlanetF1）。",
+    "前ぶれなく一気に空気が抜けることもある。2021年のアゼルバイジャンGPでは、ストロールとフェルスタッペンの左後ろのタイヤが直線で壊れた。ピレリのマリオ・イゾラは、2人とも「前ぶれのない急な空気の抜け方」だったと話した（Motorsport.com）。"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "セパンの路面は研磨性が高かったが、ピレリはパンクなど安全上の問題はなく、課題はグリップの管理だと強調した。",
+     "u": "/news/es-motorsport-sepang-4-5-seconds-slower/"
+    }
+   ],
    "see": [
     "pit-stop",
     "plan-b",
     "tyre-compounds",
     "pirelli",
-    "flat-spot"
+    "flat-spot",
+    "tyre-pressure"
    ],
    "checked": "2026-11-20",
    "src": [
@@ -32456,6 +33108,16 @@
      "name": "formula1.com",
      "title": "Verstappen seals commanding Singapore Grand Prix victory from Leclerc and Antonelli（2026年10月11日）",
      "url": "https://www.formula1.com/en/latest/article/verstappen-seals-commanding-singapore-grand-prix-victory-from-leclerc-and-antonelli.49wDzysiVqi5cloGjle40A"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "McLaren launches review following 'unusual' Piastri puncture",
+     "url": "https://www.planetf1.com/news/oscar-piastri-mclaren-puncture-f1-2026-singapore-grand-prix"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Pirelli believes Baku tyre blowouts caused by debris",
+     "url": "https://www.motorsport.com/f1/news/pirelli-believes-baku-tyre-blowouts-caused-by-debris/6541833/"
     }
    ]
   },
@@ -32558,7 +33220,8 @@
    "body": [
     "決勝で最初に履くタイヤは、今は全員が自由に選べる。2014年から2021年までは、予選でQ3に進んだ上位10人が、Q2のベストタイムを出したタイヤでスタートしなければならなかった。11番手以下の車に、作戦で上回る機会を与えるための決まりだった。この決まりは2022年の規則でなくなった。",
     "どのタイヤで出るかは作戦しだいだ。柔らかいタイヤはグリップが大きく、スタートで順位を上げるのに使える（ピレリ、2025年のシンガポールGP）。硬めのタイヤなら、最初の区間（スティント）を長く走れる。",
-    "今季のシンガポールGPでは、グリッドがソフトとミディアムでほぼ半分に分かれた。ポールのフェルスタッペンはソフト、3番手のハミルトンはミディアムで出た。表彰台の3人は、いずれもソフトスタートだった。ハミルトンはミディアムの伸びが悪く、早めにソフトへ替えている。"
+    "今季のシンガポールGPでは、グリッドがソフトとミディアムでほぼ半分に分かれた。ポールのフェルスタッペンはソフト、3番手のハミルトンはミディアムで出た。表彰台の3人は、いずれもソフトスタートだった。ハミルトンはミディアムの伸びが悪く、早めにソフトへ替えている。",
+    "雨のレースでは、選べる幅が狭まる。今季のサンパウロGPでは、スタート前に雨が降り、ピレリはインターミディエイトが最初のスティントで「唯一の現実的な選択」だったと説明した（F1公式）。セーフティカーの後ろでスタートするときは、フルウェットが義務になる（B6.3.7）。中継では、スタート前のグリッドの映像で、サイドウォールの色から各車のタイヤが分かる。"
    ],
    "examples": [
     {
@@ -32568,6 +33231,10 @@
     {
      "t": "アメリカGPでは、フェラーリとレッドブルがハードのグリップ不足を恐れてソフトからの2ストップを選んだが、実際はハードが最良のタイヤだったと分析された。",
      "u": "/news/de-motorsportmagazin-austin-strategy-analysis/"
+    },
+    {
+     "t": "サンパウロはインターで始まり、スリックを挟んで再びインターに戻る展開だった。ピレリは2027年向けに雨用タイヤを見直す。",
+     "u": "/news/en-therace-wet-tyres-2027-what-needs-solving/"
     }
    ],
    "see": [
@@ -32575,7 +33242,9 @@
     "two-compound-rule",
     "qualifying",
     "race-start",
-    "tyre-warm-up"
+    "tyre-warm-up",
+    "full-wet",
+    "intermediate"
    ],
    "checked": "2026-11-20",
    "src": [
@@ -32603,8 +33272,19 @@
      "name": "PlanetF1",
      "title": "Max Verstappen finally conquers Singapore with dominant Grand Prix victory（2026年10月11日）",
      "url": "https://www.planetf1.com/news/singapore-grand-prix-2026-race-report"
+    },
+    {
+     "name": "formula1.com",
+     "title": "What the teams said – Race day at the 2026 Sao Paulo Grand Prix",
+     "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-at-the-2026-sao-paulo-grand-prix.6WRrgNQ7FDoFnwzxR9Vjw7"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section B [Sporting] Issue 09（2026-10-01）",
+     "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
     }
-   ]
+   ],
+   "rule": "スポーティングレギュレーション B6.3.7（セーフティカーの後ろのフォーメーションラップではフルウェット）（条文番号は Issue 09〈2026年10月1日版〉で確認）"
   },
   {
    "id": "cool-down-lap",
@@ -33207,7 +33887,8 @@
    "body": [
     "副代表は、チーム代表を支える役職だ。どのチームにも置かれるわけではなく、仕事の中身もチームによって違う。",
     "メルセデスは2026年3月20日、ブラッドリー・ロードを副代表にすぐ任命すると発表した。ロードはそれまで、チームの公式の代表者とコミュニケーション部門の責任者を務めていた。ウォルフ代表を支える立場で、ウォルフは、この形は実際にはしばらく前から動いていたと話し、「自分の役割と全体の責任は1ミリも変わらない」と述べた（F1公式）。ウォルフは2026年10月、ポッドキャストで、自分の仕事はいずれ「いま見極めている2人か3人」に分けることになると話した（Crash.net）。",
-    "フェラーリでは、ジェローム・ダンブロジオが2024年10月1日から副代表を務める。バスール代表に直接報告する。就任の発表では、フェラーリの育成プログラムの責任者も兼ねるとされた。元F1ドライバーで、それ以前はメルセデスで若手育成の責任者だった（F1公式）。"
+    "フェラーリでは、ジェローム・ダンブロジオが2024年10月1日から副代表を務める。バスール代表に直接報告する。就任の発表では、フェラーリの育成プログラムの責任者も兼ねるとされた。元F1ドライバーで、それ以前はメルセデスで若手育成の責任者だった（F1公式）。",
+    "副代表は、代表の代わりにチームの顔になることもある。今季のサンパウロGPでは、ロードがこの週末のメルセデスの責任者を務め、レースのあと、チームのSNSでアントネッリのスピンの分析を説明した（Motorsport.com スペイン語版）。"
    ],
    "examples": [
     {
@@ -33221,6 +33902,10 @@
     {
      "t": "ウォルフ代表は、後任を一人に絞らず職務を2〜3人に分ける考えを語った。すでにロードが副代表に就いている。",
      "u": "/news/fr-nextgen-wolff-succession-plan/"
+    },
+    {
+     "t": "ロード副代表は、ウォルフ代表の全社員向けメールをLinkedInで紹介し、ラッセルの今季を「キャリアで最も成功し、同時に最も困難で残念な年」と表現した。",
+     "u": "/news/en-planetf1-mercedes-russell-antonelli-success/"
     }
    ],
    "see": [
@@ -33245,6 +33930,11 @@
      "name": "Crash.net",
      "title": "Toto Wolff already “vetting” people for his Mercedes role as he lifts lid succession plans（2026年10月21日）",
      "url": "https://www.crash.net/f1/news/1107924/1/toto-wolff-already-vetting-people-his-mercedes-role-he-lifts-lid-succession-plans"
+    },
+    {
+     "name": "Motorsport.com（スペイン語版）",
+     "title": "Mercedes explica el problema de Antonelli en Brasil",
+     "url": "https://es.motorsport.com/f1/news/mercedes-explica-problema-antonelli-brasil/10873893/"
     }
    ]
   },
@@ -34069,10 +34759,16 @@
    "body": [
     "FIAは、国際スポーティングコードの付則Oで、サーキットを公認する手続きを決めている。公認には等級があり、F1の車はいちばん上のグレード1にあたる。重さと出力の比が1kg/馬力より小さい車のための等級だ。",
     "FIAのサーキットライセンスの有効期間は、最長3年だ。コースの形や安全設備を変えるときは、工事の前にFIAの承認を受けなければならない。受けずに変えると、ライセンスが無効になることがある。いくつかのレイアウトがあるコースでは、承認は検査を受けた形にだけ有効だ（FIA付則O）。",
-    "2026年10月、モナコ自動車クラブ（ACM）のボエリ会長は、多くの人の声とは違い、コースは変えないと話した。区間を取り除いたり動かしたりすれば、サーキットの新たな検査とFIAの新たな公認が自動的に必要になるからだという（仏ニース・マタンの取材として、GPblog、2026年10月12日）。"
+    "2026年10月、モナコ自動車クラブ（ACM）のボエリ会長は、多くの人の声とは違い、コースは変えないと話した。区間を取り除いたり動かしたりすれば、サーキットの新たな検査とFIAの新たな公認が自動的に必要になるからだという（仏ニース・マタンの取材として、GPblog、2026年10月12日）。",
+    "今季は、バーレーンGPの会場になったセパンで、検査の場面が表に出た。2017年以来のF1開催だったが、グリッドのポールの位置が、準備書類の誤りでいつもと逆の左側に描かれていた。水曜のトラックウォークでチームが気づき、FIAの検査でも確かめられて、木曜に塗り直された。直したポールの枠がスタートラインとの最小距離（1m）をわずかに割ったため、スタートラインも少し前に引き直された。サーキットは木曜の検査に大きな問題なく合格した（The Race）。"
    ],
    "rule": "国際スポーティングコード付則O（2025年版）3.2、3.5、5.2、6.1",
-   "examples": [],
+   "examples": [
+    {
+     "t": "セパンのグリッドはポールの位置が逆に描かれていたが、FIAの検査を経て塗り直され、サーキットは2017年以来のF1開催に向けた検査を通過した",
+     "u": "/news/en-therace-sepang-grid-repaint/"
+    }
+   ],
    "see": [
     "run-off",
     "street-circuit",
@@ -34089,6 +34785,11 @@
      "name": "GPblog",
      "title": "Monaco shuts the door on Leclerc's track idea ahead of its first F1 Sprint（2026年10月12日、Tobia Elia。ニース・マタンの取材として、コースは変えない、新たな検査とFIAの公認が必要）",
      "url": "https://www.gpblog.com/en/news/monaco-shuts-the-door-on-leclercs-track-idea-ahead-of-its-first-f1-sprint"
+    },
+    {
+     "name": "The Race",
+     "title": "Last-minute fix made to F1's Sepang starting grid（2026年10月1日）",
+     "url": "https://www.the-race.com/formula-1/last-minute-fix-made-to-f1s-sepang-starting-grid/"
     }
    ],
    "checked": "2026-11-20"
@@ -34705,18 +35406,24 @@
    "body": [
     "スーパーフォーミュラは、日本で開かれる単座のレースの最高峰だ。2023年からは、ダラーラのSF19を作り直したSF23という車を使う。エンジンはホンダとトヨタが供給し、タイヤは横浜ゴムだ（Autosport）。",
     "F1に出るためのスーパーライセンスの点は、2025年から王者に30点、2位に25点、3位に20点が与えられる。FIAは見直しの理由に、F1以外で最も速い単座のシリーズの一つになったことを挙げた（GPFans）。",
-    "ここからF1へ進んだ例もある。2017年のガスリーは、最終戦の鈴鹿が台風で中止になり、王者の石浦宏明に0.5点届かず2位だった（GrandPrix247）。2023年のローソンも2位で、この年の王者は宮田莉朋だった（Velocity News）。"
+    "ここからF1へ進んだ例もある。2017年のガスリーは、最終戦の鈴鹿が台風で中止になり、王者の石浦宏明に0.5点届かず2位だった（GrandPrix247）。2023年のローソンも2位で、この年の王者は宮田莉朋だった（Velocity News）。",
+    "2026年は、ウィリアムズのF1リザーブドライバーのルーク・ブラウニングが、KONDO RACINGからスーパーフォーミュラに初めて参戦した。ボウルズ代表は、走る経験を積み、ドライバーとして成長を続けられると理由を説明した（F1公式）。ブラウニングは、メキシコGPとブラジルGPのFP1でウィリアムズの車にも乗った（Motorsport.com スペイン語版）。"
    ],
    "examples": [
     {
      "t": "フェラーリのシミュレータードライバーになったフェネストラズ。2022年のスーパーフォーミュラはランキング2位",
      "u": "/news/it-f1it-ferrari-fenestraz-simulator/"
+    },
+    {
+     "t": "ウィリアムズはメキシコGPとブラジルGPのFP1にルーク・ブラウニングを起用する。ブラウニングは日本のスーパーフォーミュラにも参戦している。",
+     "u": "/news/es-motorsport-williams-browning-fp1/"
     }
    ],
    "see": [
     "super-licence",
     "academy-f2",
-    "indycar"
+    "indycar",
+    "rookie-fp1"
    ],
    "src": [
     {
@@ -34738,6 +35445,16 @@
      "name": "Autosport",
      "title": "Super Formula confirms updated car for 2023 season（SF19を見直したSF23、ホンダ9台・トヨタ11台、横浜ゴム）",
      "url": "https://autosport.motorsport.com/super-formula/news/2023-car-confirmed-dallara-sf23/10410834/"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Williams confirm Browning as reserve driver for 2026 F1 season",
+     "url": "https://www.formula1.com/en/latest/article/williams-confirm-browning-as-reserve-driver-for-2026-f1-season.6qyk1ZpS8qVgkXMkPQc4Ue"
+    },
+    {
+     "name": "Motorsport.com（スペイン語版）",
+     "title": "Albon y Sainz, sustituidos en los Libres 1 de México y Brasil",
+     "url": "https://es.motorsport.com/f1/news/albon-sainz-sustituidos-libres1-mexico-brasil/10868870/"
     }
    ],
    "checked": "2026-11-20"
@@ -34887,7 +35604,8 @@
    "body": [
     "F4（フォーミュラ4）は、カートからレースカーへ移る若手のための、最初の単座のカテゴリーだ。FIAが2014年に始めた。FIAは、カートの次の一歩として、世界の若手に、広く知られていて費用を抑えた機会を用意するためのものだと説明している。車は費用を抑えるように作られている（FIA）。",
     "F4は、国や地域ごとの選手権として開かれ、FIAが認定する。最初にFIAの認定を受けたのは、2014年に始まったイタリアのF4だ。当時のトッド会長は、F4を「今のカートとF3の間に欠けている段」と呼び、FIAはF1へ続くピラミッドの最初の段と位置づけた（FIA、2014年5月）。",
-    "今のFIAの説明では、F4はカートとフォーミュラ・リージョナルの間に置かれる。その上はF3、F2と続く（→F2・F3（F1の下のカテゴリー））。"
+    "今のFIAの説明では、F4はカートとフォーミュラ・リージョナルの間に置かれる。その上はF3、F2と続く（→F2・F3（F1の下のカテゴリー））。",
+    "今季の王者アントネッリも、F4を通ってきた。2022年、16歳でイタリアF4とADAC F4（ドイツ）の両方の王座を取り、2つのシリーズで合わせて22勝した。ADAC F4では、イタリア人として初めての王者だった。翌2023年はフォーミュラ・リージョナルの中東と欧州で王者になり、F3を飛ばして2024年にF2へ進んだ（GPblog、ADAC）。"
    ],
    "examples": [
     {
@@ -34914,6 +35632,16 @@
      "name": "FIA",
      "title": "Great start for FIA Formula 4（2014年5月27日、イタリアF4が最初の認定、トッド会長の発言）",
      "url": "https://api.fia.com/news/great-start-fia-formula-4"
+    },
+    {
+     "name": "ADAC Motorsport",
+     "title": "Mercedes F1 junior Andrea Kimi Antonelli: title is the first step towards...",
+     "url": "https://www.adac-motorsport.de/en/adac-formel-4/news/2022/mercedes-f1-junior-andrea-kimi-antonelli-title-is-the-first-step-towards/"
+    },
+    {
+     "name": "GPblog",
+     "title": "The remarkable rise of F1's new world champion, Kimi Antonelli",
+     "url": "https://www.gpblog.com/en/features/the-remarkable-rise-of-f1s-new-world-champion-kimi-antonelli"
     }
    ],
    "checked": "2026-11-20"
@@ -36732,12 +37460,18 @@
    "short": "モナコGP、インディ500、ル・マン24時間の3つすべてに勝つこと。達成したのはグラハム・ヒルだけだ。",
    "body": [
     "「モータースポーツの三冠」は、モナコGP、インディ500（インディアナポリス500マイル）、ル・マン24時間の3つのレースすべてに勝つことを指す。インディアナポリス・モーター・スピードウェイの記事（2017年）によると、3つ全部に勝ったドライバーはグラハム・ヒルただ1人だ。ヒルはモナコで5勝（1963〜65年、1968〜69年）し、1966年には初出場のインディ500で勝ち、1972年にル・マンで勝った。",
-    "この記録に挑んできたのがアロンソだ。モナコでは2006年と2007年に勝った。2017年はF1のモナコGPを休み、インディ500に出た（同じ記事）。2018年にはトヨタでル・マンに勝った。F1公式はそのとき、残るのはインディ500で、勝てばヒルに続く2人目の三冠になると書いた。"
+    "この記録に挑んできたのがアロンソだ。モナコでは2006年と2007年に勝った。2017年はF1のモナコGPを休み、インディ500に出た（同じ記事）。2018年にはトヨタでル・マンに勝った。F1公式はそのとき、残るのはインディ500で、勝てばヒルに続く2人目の三冠になると書いた。",
+    "ただ、残るインディ500は遠い。アロンソは2017年は好位置を走りながらリタイアし、2019年は予選を通れず、2020年は周回遅れの21位だった（Motorsport Week）。",
+    "モントーヤも三冠に近い。モナコとインディ500にはすでに勝っていて、残るのはル・マンだけだ（GrandPrix.com、2019年）。"
    ],
    "examples": [
     {
      "t": "アロンソ「今後数週間でサプライズがある」。WEC、ル・マン、インディ500、ダカールに挑んできた経歴にも触れる",
      "u": "/news/es-motorsport-alonso-surprises/"
+    },
+    {
+     "t": "インディカーが来年バルセロナで開かれる際に、アロンソを招く案がうわさされている。ボールズ会長は社内で議論済みと認めた",
+     "u": "/news/fr-nextgen-alonso-indycar-verstappen-ford-gt/"
     }
    ],
    "see": [
@@ -36756,9 +37490,19 @@
      "name": "Formula 1",
      "title": "Alonso wins Le Mans to edge closer to Triple Crown（2018年6月17日）",
      "url": "https://core-ecs-origin-article.core-dns.watchliveformula1.com/en/latest/article/alonso-wins-le-mans-to-edge-closer-to-triple-crown.33IOqVOdCoWyW2CKKMAGok"
+    },
+    {
+     "name": "Motorsport Week",
+     "title": "Alonso 'didn't have one kind lap' but reaches finish（2020年8月24日）",
+     "url": "https://www.motorsportweek.com/2020/08/24/alonso-didnt-have-one-kind-lap-but-reaches-finish"
+    },
+    {
+     "name": "GrandPrix.com",
+     "title": "Montoya unlikely to complete Triple Crown（2019年11月27日）",
+     "url": "https://www.grandprix.com/news/montoya-unlikely-to-complete-triple-crown.html"
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "dakar",
@@ -37163,22 +37907,29 @@
     "特別デザイン",
     "頭を守る"
    ],
-   "short": "ドライバーの頭を守る装備。2019年からFIAの基準「8860-2018」に合うものを使う。デザインは2020年から自由に変えられる。",
+   "short": "ドライバーの頭を守る装備。F1ではFIAの基準「8860-2018-ABP」に合うものを使う。デザインは2020年から自由に変えられる。",
    "body": [
     "F1のドライバーがかぶるヘルメットは、FIAの安全基準に合っていなければならない。F1公式によると、FIAは2018年6月に新しい基準「FIA 8860-2018」を発表し、2019年から義務にした。バイザーの前側の位置を10mm下げて、飛んでくる破片から守りやすくした。殻には進んだ複合材料を使う。225gの金属の弾を時速250kmで当てる試験もあり、そのときの減速のピークは275Gを超えてはならない。",
-    "色や模様の決まりは変わってきた。FIAは2015年シーズンの前に、シーズン中はほぼ同じ配色を使い続けるよう求めた。ホームレースや節目の大会など、1回限りの例外は認めた。この制限は世界モータースポーツ評議会（WMSC）の決定でなくなり、2020年のスポーティングレギュレーションから、レースごとに自由にデザインを変えられるようになった（Motorsport Week）。"
+    "色や模様の決まりは変わってきた。FIAは2015年シーズンの前に、シーズン中はほぼ同じ配色を使い続けるよう求めた。ホームレースや節目の大会など、1回限りの例外は認めた。この制限は世界モータースポーツ評議会（WMSC）の決定でなくなり、2020年のスポーティングレギュレーションから、レースごとに自由にデザインを変えられるようになった（Motorsport Week）。",
+    "2026年の国際スポーティングコード付則L（ドライバーの装備などを決めた付則）では、F1の欄に基準「8860-2018-ABP」が挙がっている。ヘルメットは、メーカーの指示による場合を除き、作られたときの仕様から変えてはならない。FIAが認めていないカメラやバイザーなどを付けると、ヘルメットの公認は無効になる。塗装も、塗料が殻の素材と反応して守る力を弱めることがあるとして、メーカーの指示どおりに行うよう求めている。"
    ],
    "examples": [
     {
      "t": "アントネッリ、サンパウロGPでセナ追悼の特別ヘルメット。「これまでで最高の出来の一つ」",
      "u": "/news/pt-grandepremio-antonelli-senna-helmet-interlagos/"
+    },
+    {
+     "t": "アントネッリはイタリアのマッタレッラ大統領と面会し、タイトル獲得シーズンのヘルメットを贈った",
+     "u": "/news/en-planetf1-antonelli-mattarella/"
     }
    ],
    "see": [
     "hans",
     "race-suit",
     "halo",
-    "tear-off"
+    "tear-off",
+    "international-sporting-code",
+    "podium"
    ],
    "src": [
     {
@@ -37190,9 +37941,15 @@
      "name": "Motorsport Week",
      "title": "Drivers given freedom over helmet liveries after FIA scraps rule（2020年3月6日）",
      "url": "https://www.motorsportweek.com/2020/03/06/drivers-given-freedom-over-helmet-liveries-after-fia-scraps-rule/"
+    },
+    {
+     "name": "FIA",
+     "title": "International Sporting Code Appendix L 2026（2026年3月26日公表。第III章 1 ヘルメット、2 耐火服）",
+     "url": "https://www.fia.com/system/files/documents/appendix_l_2026_publie_le_26_mars_2026.pdf"
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-20",
+   "rule": "国際スポーティングコード付則L（2026年版）第III章 1.1.1、1.4、1.6"
   },
   {
    "id": "oldest-records",
@@ -37215,7 +37972,9 @@
    "short": "年齢の高さで比べる記録。最年長の優勝は1951年のファジオーリで、53歳22日だった。",
    "body": [
     "最年長記録も、最年少記録と同じく、その出来事の日の年齢で比べる（→最年少記録）。F1公式によると、最年長の優勝は1951年フランスGPのルイジ・ファジオーリで、53歳22日だった。ファンジオと車を分け合っての勝利だ。最年長の世界王者はファンジオで46歳、最年長のポールポジションは1954年アルゼンチンGPのニーノ・ファリーナで47歳79日だ。F1公式は、最年長の出走として、1955年モナコGPの55歳292日のルイ・シロンを挙げている。",
-    "今の現役も話題になる。2026年メキシコシティGPの予選では、41歳のハミルトンがポールを取った。The Raceは、1982年の42歳のマリオ・アンドレッティ以来の最年長のポールだと書いた。2番手のラッセルとの差は0.009秒だった。"
+    "最年長の入賞は、1950年のイタリアGP（モンツァ）で5位に入ったフィリップ・エタンスランの53歳249日だ（formula1.com、2025年）。",
+    "今の現役も話題になる。2026年メキシコシティGPの予選では、41歳のハミルトンがポールを取った。The Raceは、1982年の42歳のマリオ・アンドレッティ以来の最年長のポールだと書いた。2番手のラッセルとの差は0.009秒だった。",
+    "アロンソも年齢の記録で話題になった。2026年8月のオランダGPで9位に入り、45歳で入賞したのは、1974年スウェーデンGPのグラハム・ヒル以来だった（Speedweek）。"
    ],
    "examples": [
     {
@@ -37231,7 +37990,8 @@
     "youngest-records",
     "pole-position",
     "race-starts",
-    "world-champion"
+    "world-champion",
+    "most-wins"
    ],
    "src": [
     {
@@ -37248,9 +38008,14 @@
      "name": "The Race",
      "title": "Hamilton takes his first grand prix pole for Ferrari in Mexico（2026年10月31日）",
      "url": "https://www.the-race.com/formula-1/hamilton-takes-first-ferrari-gp-pole-in-mexico/"
+    },
+    {
+     "name": "Speedweek",
+     "title": "Fernando Alonso (45): Oldest points scorer in 52 years – new contract?（2026年8月25日）",
+     "url": "https://www.speedweek.com/en/a/formula-1/fernando-alonso-45-oldest-points-scorer-in-52-years-new-contract"
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "toyota-gazoo-racing",
@@ -37272,7 +38037,8 @@
    "short": "トヨタ自動車のモータースポーツと研究開発の部門。2026年からハースのタイトルパートナーで、チーム名は「TGRハースF1チーム」。",
    "body": [
     "トヨタ・ガズー・レーシング（TGR）は、トヨタ自動車のモータースポーツの競技と研究開発を受け持つ部門だ。ハースの発表は、WRC（世界ラリー選手権）とWEC（世界耐久選手権）での王座を挙げている。ダカール・ラリーにも出ており、2020年にはアロンソがTGRのハイラックスで総合13位に入った（トヨタ・ガズー・レーシング）。",
-    "F1ではハースと組んでいる。ハースとトヨタは2024年10月に、複数年の技術提携を始めた。2025年12月4日、ハースは、TGRが2026年からタイトルパートナーになると発表し、チーム名は「TGRハースF1チーム」になった。発表で、トヨタ自動車の豊田章男会長は「トヨタは今、本当に動き出している」と話した。発表によると、平川亮はTGRとのつながりで、2025年に旧型車テスト（TPC）に加わった（ハース公式）。"
+    "F1ではハースと組んでいる。ハースとトヨタは2024年10月に、複数年の技術提携を始めた。2025年12月4日、ハースは、TGRが2026年からタイトルパートナーになると発表し、チーム名は「TGRハースF1チーム」になった。発表で、トヨタ自動車の豊田章男会長は「トヨタは今、本当に動き出している」と話した。発表によると、平川亮はTGRとのつながりで、2025年に旧型車テスト（TPC）に加わった（ハース公式）。",
+    "2027年のドライバー選びでも、TGRとの関係が注目された。トヨタは自社のドライバーをハースのレースシートに乗せたいと考えていたが、小松代表は契約の前に豊田会長と会い、「最も速いドライバーを選ぶ」と伝えた。豊田会長もこれを受け入れ、ハースは10月15日にカマラの起用を発表した（Crash.net）。一方、トヨタのWECドライバーでハースのリザーブの平川亮は、メキシコシティGPの週末の途中からオコンに代わって出場し、正式結果で10位に入った（F1公式）。"
    ],
    "examples": [
     {
@@ -37286,13 +38052,18 @@
     {
      "t": "オコン、F1を離れる可能性。トヨタとハースの技術提携を背景に、WEC転向案も浮上",
      "u": "/news/it-formula1-ocon-wec-hypothesis/"
+    },
+    {
+     "t": "ハースはラスベガスGPで3人を起用する。平川はメキシコで入賞圏のポイントを獲得し、トヨタの豊田会長が感謝の手紙を送ったという。",
+     "u": "/news/de-motorsportmagazin-haas-rotation-vegas/"
     }
    ],
    "see": [
     "title-sponsor",
     "wec",
     "testing-rules",
-    "dakar"
+    "dakar",
+    "reserve-driver"
    ],
    "src": [
     {
@@ -37304,9 +38075,24 @@
      "name": "TOYOTA GAZOO Racing",
      "title": "Dakar 2020 report（アロンソ総合13位）",
      "url": "https://toyotagazooracing.com/dakar/report/2020/03/"
+    },
+    {
+     "name": "Crash.net",
+     "title": "Haas boss reveals Toyota reaction to signing Ferrari junior for 2027",
+     "url": "https://www.crash.net/f1/news/1107723/1/haas-boss-reveals-toyota-reaction-signing-ferrari-junior-2027"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Komatsu explains why fast-tracking Camara into Haas seat was a 'tough decision' after Hirakawa performance",
+     "url": "https://www.formula1.com/en/latest/article/komatsu-explains-why-fast-tracking-camara-into-haas-seat-was-a-tough-decision-after-hirakawa-performance.6N8NbSuekc1oGCylHgVZ2g"
+    },
+    {
+     "name": "formula1.com",
+     "title": "Hirakawa to replace Ocon at Haas for remainder of Mexico City Grand Prix weekend",
+     "url": "https://www.formula1.com/en/latest/article/hirakawa-to-replace-ocon-at-haas-for-remainder-of-mexico-city-grand-prix-weekend.2cl5jN0g3rZ2pIYQvc00xM"
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-20"
   },
   {
    "id": "sandbagging",
@@ -37966,7 +38752,8 @@
    "body": [
     "ドライバーの報酬は、基本給と、成績に応じたボーナスからなる。金額はふつう公表されないので、報じられる数字は推定だ。米誌フォーブスは毎年、財務の資料、裁判の書類、報道、関係者への取材をもとに推定を出している（Crash.net）。",
     "フォーブスの2025年の推定では、1位がフェルスタッペンで7600万ドル、2位がハミルトンで7050万ドル、3位がノリスで5750万ドルだった。フェルスタッペンの基本給は約6500万ドルとみられ、残りは成績に応じたボーナスだという。この数字には、F1の外での収入は入らず、税も引いていない（Crash.net）。",
-    "ドライバーの報酬は、コストキャップ（予算上限）の計算に入らない（→コストキャップの対象外の費用）。契約の年数も話題になる。2026年10月には、ペレスがキャデラックとの契約を2029年まで延ばした（RACER）。"
+    "ドライバーの報酬は、コストキャップ（予算上限）の計算に入らない（→コストキャップの対象外の費用）。契約の年数も話題になる。2026年10月には、ペレスがキャデラックとの契約を2029年まで延ばした（RACER）。",
+    "推定は媒体によって大きく違う。2026年の王者アントネッリについて、PlanetF1は年約500万ドルで、それより少ないとする報道もあると伝え、The Nationalは基本給を200万ドルと見積もった。ウォルフ代表はドイツのビルト紙に「数字にはコメントしない」と話し、来季の契約はすでにあると述べた（PlanetF1）。また、選手権の賞金はドライバーではなく、チームに入る（The National）。"
    ],
    "examples": [
     {
@@ -37976,13 +38763,18 @@
     {
      "t": "ベアマンの年俸600万ユーロ要求説、ハースの小松代表が否定",
      "u": "/news/en-planetf1-komatsu-bearman-salary-nonsense/"
+    },
+    {
+     "t": "ウォルフ代表はビルト紙に、アントネッリの報酬について「財政面で心配する必要はない」と語り、金額の明言は避けた。",
+     "u": "/news/en-planetf1-wolff-antonelli-salary-bild/"
     }
    ],
    "see": [
     "cost-cap-exclusions",
     "driver-manager",
     "seat",
-    "contract-option"
+    "contract-option",
+    "prize-money"
    ],
    "src": [
     {
@@ -37999,9 +38791,19 @@
      "name": "RACER",
      "title": "Perez signs Cadillac extension through 2029（2026年10月28日）",
      "url": "https://racer.com/2026/10/28/perez-signs-cadillac-extension-through-2029"
+    },
+    {
+     "name": "PlanetF1",
+     "title": "'No one has to worry about him' – Toto Wolff responds to Kimi Antonelli salary question",
+     "url": "https://www.planetf1.com/news/kimi-antonelli-salary-toto-wolff-mercedes-world-champion-reward"
+    },
+    {
+     "name": "The National",
+     "title": "How much will Kimi Antonelli earn for winning 2026 F1 world title?",
+     "url": "https://www.thenationalnews.com/sport/f1/2026/11/02/how-much-will-kimi-antonelli-earn-for-winning-2026-f1-world-title/"
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-20"
   },
   {
    "id": "oil-sump",
@@ -38024,6 +38826,7 @@
    "body": [
     "エンジンの中では、オイルが部品の間を流れる。流れたオイルが下に集まる部分がサンプ（オイルパン）だ。「ウェットサンプ」という方式では、エンジンの下の受け皿にオイルをためておく。",
     "F1のエンジンは「ドライサンプ」だ。オイルをサンプにためず、クランクシャフトで回す1つ以上のスカベンジポンプ（回収ポンプ）で吸い出し、外に置いた別のオイルタンクに送る。サンプを小さく作れるので、エンジンの重心を下げられる。速いコーナーで横向きの力がかかると、オイルがサンプの片側に寄り、エンジンにオイルが届かなくなるおそれがあるが、その問題にも対処できる（F1Technical）。",
+    "技術規則は、車に積むオイルタンクを1つだけとし（C5.22.3）、タンクにオイルの量を測るセンサーを付けることを求めている（C5.22.4）。オイルタンクを置ける範囲や、オイルの通る部品を置ける範囲も、車の前後・左右の位置で決められている（C7.1、C7.2）。",
     "2026年のメキシコシティGPでは、アントネッリの車のサンプが割れていた。メルセデスのブラッドリー・ロード副代表によると、レースのあとにフロアを外すと、オイルまみれだった。ロードは「リタイアのぎりぎり手前だったが、持ちこたえた」と話した（F1公式サイト）。"
    ],
    "examples": [
@@ -38051,9 +38854,15 @@
      "name": "Formula 1",
      "title": "'Right on the edge of retirement' – Mercedes reveal how close Antonelli came to Mexico DNF（2026年11月5日、\"took the floor off the bottom – covered in oil!\"、\"Sump cracked\"）",
      "url": "https://formula1.com/en/latest/article/right-on-the-edge-of-retirement-mercedes-reveal-how-close-antonelli-came-to-mexico-dnf.7iIZJXxnzN5HEz7WbDb3tl"
+    },
+    {
+     "name": "FIA",
+     "title": "2026 F1 Regulations – Section C [Technical] Issue 17（2026-04-28）",
+     "url": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-20",
+   "rule": "技術規則 C5.22.3（オイルタンクは1つ）、C5.22.4（油量センサー）、C7.1（オイルタンクの位置）、C7.2（潤滑系の位置）（Section C Issue 17〈2026年4月28日版〉で確認）"
   },
   {
    "id": "flying-lap",
@@ -38077,7 +38886,8 @@
    "short": "予選や練習で、最速のタイムを出すために全力で走る周。前にアウトラップ、後ろにインラップがある。",
    "body": [
     "F1公式サイトの用語集は、フライングラップを、ドライバーができるだけ速く走り、パワーユニットを最大に上げて、最速のタイムを出す周と説明している。ふつうは、ピットを出る周（アウトラップ）と、ピットに戻る周（インラップ）の間に走る。プッシュラップやホットラップとも呼ばれる。予選では、アウトラップで車を温めてから、この周に入る（→インラップとアウトラップ）。",
-    "アタックラップの車を、ほかの車が邪魔してはいけない（→予選での走行妨害）。2026年のサンパウロGPのFP2では、ハースのカマラは、ルクレールが速い周で近づいていると何度も知らされていたのに、車を左右に振り、走行ラインに大きく入った。ルクレールは衝突を避けるため右へよけ、車の大部分がコースの外に出た。スチュワードは「明らかに危険」とし、練習走行でふつう出す警告より重い、戒告にした（PlanetF1）。"
+    "アタックラップの車を、ほかの車が邪魔してはいけない（→予選での走行妨害）。2026年のサンパウロGPのFP2では、ハースのカマラは、ルクレールが速い周で近づいていると何度も知らされていたのに、車を左右に振り、走行ラインに大きく入った。ルクレールは衝突を避けるため右へよけ、車の大部分がコースの外に出た。スチュワードは「明らかに危険」とし、練習走行でふつう出す警告より重い、戒告にした（PlanetF1）。",
+    "コースの外を走った周は、タイムが消される。今季のアメリカGPのFP1では、ウィリアムズのアルボンがミディアムで走った計測の周は、どれもトラックリミット違反で消された。この走行でウィリアムズは2027年型のためのデータ集めを優先し、ハードタイヤでアウトラップのあと最初の2区間だけを全開で走って、計測ラインの手前でピットに入る走りを繰り返した。2台がミディアムで1周通しのアタックラップを始めたのは、走行開始から約48分後だった（The Race）。"
    ],
    "examples": [
     {
@@ -38087,13 +38897,19 @@
     {
      "t": "ラッセルのQ3最後のアタック、アルボンに追いつき中断　ウォルフが判断を擁護",
      "u": "/news/nl-racingnews365-wolff-defends-russell-lap/"
+    },
+    {
+     "t": "カマラは地元サンパウロの予選Q2で、最速ラップがトラックリミット違反で取り消された",
+     "u": "/news/de-motorsportmagazin-camara-double-crash-haas-points/"
     }
    ],
    "see": [
     "in-out-lap",
     "impeding",
     "qualifying",
-    "cool-down-lap"
+    "cool-down-lap",
+    "track-limits",
+    "free-practice"
    ],
    "src": [
     {
@@ -38110,9 +38926,14 @@
      "name": "PlanetF1",
      "title": "FIA confirms Rafael Camara punishment after Charles Leclerc investigation（2026年11月6日、\"clearly dangerous\"、\"a reprimand is warranted\"）",
      "url": "https://www.planetf1.com/news/fia-rafael-camara-charles-leclerc-penalty"
+    },
+    {
+     "name": "The Race",
+     "title": "Why Williams has turned Sainz and Albon into test drivers（2026年11月）",
+     "url": "https://www.the-race.com/formula-1/why-williams-has-turned-sainz-and-albon-into-test-drivers/"
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-20"
   },
   {
    "id": "weather-forecast",
@@ -38691,9 +39512,10 @@
    "body": [
     "付則H（2026年版）では、白旗は振って示す旗で、その旗のポストが受け持つ区間に、ずっと遅い車がいることを知らせる。マクラーレンの用語集は、遅い車の例として、公式のメディカルカーを挙げている（→メディカルカー）。遅い車への注意を促す旗だ。",
     "付則Hによると、メディカルカーなどの医療の車がコースに入るのは、セーフティカー、VSC、赤旗などでコースが安全にされてからだ。マーシャルや車がコースの囲いの中に入るのにも、レースコントロールの許可がいる。",
+    "付則Hでは、どのマーシャルポストにも白旗を1本置き、振って示す白旗はライトで補ってもよい（2.4.3 b、2.5.3）。Motorsport.comの解説によると、遅い車には、レッカー車や救急車のほか、練習走行の終わりにスタートの練習をするF1の車も含まれる。ほかのシリーズには白旗を最終周の合図に使うものもあるが、F1ではその意味では使わない（同）。",
     "名前の似た旗に気をつけたい。白と黒が斜めに分かれた黒白旗は、特定のドライバーへの警告の旗で、たとえば決勝でトラックリミットの違反が3回目になった車に示される（→黒白旗）。白と黒の市松模様は、レースの終わりを示すチェッカーフラッグだ。白一色の白旗は、どちらとも意味が違う。"
    ],
-   "rule": "国際スポーティングコード付則H（2026年版）2.5.5 f)、2.7.1、2.8.4 f)",
+   "rule": "国際スポーティングコード付則H（2026年版）2.4.3 b)、2.5.3、2.5.5 f)、2.7.1、2.8.4 f)",
    "words": [
     "旗",
     "遅い車",
@@ -38718,6 +39540,11 @@
      "name": "McLaren",
      "title": "F1 Playbook（用語集）",
      "url": "https://www.mclaren.com/racing/formula-1/playbook/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Insider guide: F1 flag rules",
+     "url": "https://motorsport.com/f1/news/insider-guide-f1-flag-rules/7088025/"
     }
    ],
    "checked": "2026-11-20"
@@ -38738,9 +39565,10 @@
    "body": [
     "付則H（2026年版）では、黄色の地に赤い縞の入った旗は、振らずに止めたまま示す。旗の先の区間で、油や水のために路面のグリップが落ちていることをドライバーに知らせる。マクラーレンの用語集は、破片（デブリ）や、たまった水、土や砂利がコースに出たときなど、この先の路面の状態が変わったことを示す旗と説明している（→デブリ）。",
     "示す長さも決まっている。状況によるが、少なくとも4周は出し続ける。それより早く路面が元に戻れば、外してよい（付則H）。",
-    "黄旗とは役目が違う。黄旗は、コースの上やそばにある危険を知らせ、その区間では追い越しが禁じられる（→黄旗）。赤黄縞旗が知らせるのは、路面のグリップの変化だ。どちらも、コース脇のマーシャルポストで示される旗だ。付則Hの「マーシャルポストで使う合図」には、赤旗、黄旗、赤黄縞旗、青旗、白旗、緑旗などが並ぶ（→マーシャル）。"
+    "黄旗とは役目が違う。黄旗は、コースの上やそばにある危険を知らせ、その区間では追い越しが禁じられる（→黄旗）。赤黄縞旗が知らせるのは、路面のグリップの変化だ。どちらも、コース脇のマーシャルポストで示される旗だ。付則Hの「マーシャルポストで使う合図」には、赤旗、黄旗、赤黄縞旗、青旗、白旗、緑旗などが並ぶ（→マーシャル）。",
+    "旗の代わりに、ライトパネルで赤黄縞旗の絵を出してもよい。その場合は大会の特別規則に書いておく（付則H 2.5.3.4）。F1でも、コース脇に並ぶFIAのライトパネルが、VSCの表示などに使われている（スポーティングレギュレーション B5.12.1）。Motorsport.comの解説も、この旗が出るのはふつう、油か、特定の場所にたまった水のためだと説明している。"
    ],
-   "rule": "国際スポーティングコード付則H（2026年版）2.5.5 d)",
+   "rule": "国際スポーティングコード付則H（2026年版）2.5.5 d)、2.5.3.4",
    "words": [
     "旗",
     "オイル",
@@ -38765,6 +39593,11 @@
      "name": "McLaren",
      "title": "F1 Playbook（用語集）",
      "url": "https://www.mclaren.com/racing/formula-1/playbook/"
+    },
+    {
+     "name": "Motorsport.com",
+     "title": "Insider guide: F1 flag rules",
+     "url": "https://motorsport.com/f1/news/insider-guide-f1-flag-rules/7088025/"
     }
    ],
    "checked": "2026-11-20"
@@ -38836,10 +39669,11 @@
    "short": "決勝の前に、ドライバー全員がそろって出る30分間の行事。出席は規則で決まっている。",
    "body": [
     "規則では、ドライバー全員が、決勝のフォーメーションラップの予定時刻の2時間前から始まる、30分間の「ドライバーズパレード、またはプレゼンテーション」に出なければならない。中身には、集合写真、SNSのための活動、著名人との交流、コース脇でのファンとの交流などが含まれる。規則の言葉は「パレード、またはプレゼンテーション」で、車に乗ってコースを回る形に限られない。",
-    "パレードのあとも、決勝の前の決まりは続く。フォーメーションラップの予定時刻の16分前までに、ドライバー全員がグリッドの先頭にそろい、国歌の演奏に立ち会う。",
+    "パレードの中身は大会ごとに違う。2025年のサンパウロGPでは、チームごとにソープボックスと呼ぶ小さな車に乗ってコースを回った。ウィリアムズのサインツとアルボンは、近道をして最後方から3位でゴールしたと、チームが紹介している。",
+    "パレードのあとも、決勝の前の決まりは続く。メディア担当者の通知で求められた場合、ドライバーはフォーメーションラップの予定時刻の22分前までに集合場所に来なければならない。フォーメーションラップの予定時刻の16分前までに、ドライバー全員がグリッドの先頭にそろい、国歌の演奏に立ち会う。",
     "決勝の日のドライバーの仕事は、ほかにも規則で決まっている。レースの途中でリタイアしたドライバーは取材に応じなければならず、4位以下でゴールしたドライバーも、レースのあとに取材に出る。上位3人と勝ったコンストラクターの代表は表彰式に出て、そのあとテレビの取材と記者会見に応じる（→表彰台）。"
    ],
-   "rule": "スポーティングレギュレーション B10.1.4、B10.2.1（Issue 09 で確認）",
+   "rule": "スポーティングレギュレーション B10.1.4 a)・b)、B10.2.1（Issue 09 で確認）",
    "words": [
     "パレード",
     "ファン",
@@ -38859,6 +39693,11 @@
      "name": "FIA",
      "title": "2026 F1 Regulations - Section B [Sporting] - Issue 09（2026年10月1日）",
      "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_09_-_2026-10-01.pdf"
+    },
+    {
+     "name": "Williams Racing",
+     "title": "Carlos and Alex break down their viral São Paulo Drivers' Parade（2025年11月12日）",
+     "url": "https://www.williamsf1.com/articles/b30773ea-c456-436c-9943-fe5f93d9a83f/carlos-and-alex-viral-sao-paulo-drivers-parade"
     }
    ],
    "checked": "2026-11-20"
@@ -39233,7 +40072,9 @@
    "body": [
     "マクラーレンの用語集によると、F1のタイヤは使ううちに、丸まった小さなゴムのかけらを飛ばし、それがコースの脇にたまっていく。週末が進むと、走行ラインの外にたまったゴムの上はとても走りにくくなり、ラインを外れての追い抜きが難しくなる。",
     "ウィリアムズの用語集も、タイヤが古くなって劣化すると、小さなゴムがはがれて走行ラインの外に落ちると説明している。マーブルの上を走らされると、グリップが小さく、滑りやすい。抜こうとする車や、守ろうとしてラインを外れる車は、この影響を受けやすい。",
-    "似た言葉に、路面にラバーが乗る、というものがある。こちらは、走行ラインの上にタイヤのゴムが薄く広がって、グリップが上がることだ（→路面の変化）。ゴムが乗ってよくなるのはライン上で、マーブルがたまるのはラインの外だ。"
+    "F1公式の用語集は、マーブルの上を走ると、タイヤの表面が路面に十分に触れなくなるので危ないと説明している。",
+    "似た言葉に、路面にラバーが乗る、というものがある。こちらは、走行ラインの上にタイヤのゴムが薄く広がって、グリップが上がることだ（→路面の変化）。ゴムが乗ってよくなるのはライン上で、マーブルがたまるのはラインの外だ。",
+    "マーブルの量は、タイヤの作り方にも左右される。2011年のマレーシアGPのあと、アロンソはマーブルを心配だと話した。ピレリのポール・ヘンベリーは、マーブルは「劣化が大きくなったことの自然な結果」だと答えた（Autosport）。2013年の終わりには、柔らかいタイヤで多く出たマーブルが、ラインを外れての追い抜きを難しくしていたと認め、ゴムが裂けにくいコンパウンドを目指すと話した（Autosport）。"
    ],
    "words": [
     "ゴムのかけら",
@@ -39246,9 +40087,21 @@
     "track-evolution",
     "degradation",
     "dirty-air",
-    "overtaking-friendly"
+    "overtaking-friendly",
+    "lock-up",
+    "flat-spot",
+    "pirelli"
    ],
-   "examples": [],
+   "examples": [
+    {
+     "t": "メキシコGPの赤旗後の再スタートで、ルクレールは1コーナーでロックアップし、右側にゴムが溜まっていたため、タイヤはカーカスが見えるほど削れた。",
+     "u": "/news/de-motorsporttotal-leclerc-flatspot-restart/"
+    },
+    {
+     "t": "メキシコGPの再スタートでヒュルケンベルグに追突されてリタイアしたベアマンは、路外にゴムかすが多かったと語った。",
+     "u": "/news/de-motorsporttotal-mcnish-huelkenberg-defence/"
+    }
+   ],
    "src": [
     {
      "name": "McLaren",
@@ -39259,6 +40112,21 @@
      "name": "Williams Racing",
      "title": "A-Z Formula 1 Glossary",
      "url": "https://www.williamsf1.com/articles/994e34af-b0cb-40d8-814a-6b2d8cd01514/a-z-formula-1-glossary"
+    },
+    {
+     "name": "Formula1.com",
+     "title": "F1 glossary K–O",
+     "url": "https://www.formula1.com/en/latest/article/f1-glossary-k-o.6g2hrWHA2pyxbXoe8FT9Db"
+    },
+    {
+     "name": "Autosport",
+     "title": "Pirelli responds to marble concerns",
+     "url": "https://www.autosport.com/f1/news/pirelli-responds-to-marble-concerns-4445705/4445705/"
+    },
+    {
+     "name": "Autosport",
+     "title": "Pirelli determined to reduce tyre debris marbles in 2014 F1 season",
+     "url": "https://www.autosport.com/f1/news/pirelli-determined-to-reduce-tyre-debris-marbles-in-2014-f1-season-4469820/4469820/"
     }
    ],
    "checked": "2026-11-20"
