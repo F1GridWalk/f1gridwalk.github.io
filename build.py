@@ -422,10 +422,11 @@ def prerender_index(data, flag_of, flag_map_ref=None):
         if a:
             hero.append('<div class="chips"><span class="chip-feature">今日の一本</span></div>')
             hero.append(f'<h1 id="hero-title">{art(a, e(a["title"]))}</h1><p class="hero-sum">{e(a.get("summary", ""))}</p>')
-    news = sorted([a for a in arts if a.get('kind', 'news') == 'news'], key=when, reverse=True)[:10]
+    news = sorted([a for a in arts if a.get('kind', 'news') == 'news'], key=when, reverse=True)[:30]  # 10 → 30 in the HTML Google reads first (owner's OK, 20 Nov 2026)
     tech = sorted([a for a in arts if a.get('kind') == 'tech'], key=when, reverse=True)[:3]
     feed = ('<div class="grid">' + ''.join(static_card(a, flag_of) for a in news) + '</div>'
-            '<p class="pre-more"><a href="/news/">すべてのニュースの一覧 →</a>　<a href="/gp/" data-track="click/top/gp">GPごと</a>　<a href="/teams/" data-track="click/top/teams">チームごと</a></p>') if news else ''
+            '<p class="pre-more"><a href="/news/">すべてのニュースの一覧 →</a>　'
+            + (f'<a href="/news/daily/{when(news[0]).astimezone(JST).date().isoformat()}/" data-track="click/top/digest">今日のまとめ</a>　' if news else '') + '<a href="/gp/" data-track="click/top/gp">GPごと</a>　<a href="/teams/" data-track="click/top/teams">チームごと</a></p>') if news else ''
     techh = ('<div class="grid kgrid">' + ''.join(static_card(a, flag_of) for a in tech) + '</div>') if tech else ''
 
     p = os.path.join(ROOT, 'index.html')
@@ -3133,6 +3134,11 @@ def build_share_kit(days=7, req_days=4):
     for d, tops in byday.items():
         for a in sorted(tops.values(), key=lambda a: -tc[a['topic']])[:2]:
             items.append((when(a), 'ニュース', f'/news/{a["id"]}/', a['id'], a['title'], a.get('summary', '')))
+    for dd in sorted({when(a).astimezone(JST).date() for a in ALLARTS if when(a) >= since}):  # the day's digest page (20 Nov 2026)
+        if os.path.exists(os.path.join(ROOT, 'news', 'daily', dd.isoformat(), 'index.html')):
+            lab = f'{dd.month}月{dd.day}日（{"月火水木金土日"[dd.weekday()]}）'
+            items.append((datetime(dd.year, dd.month, dd.day, 23, 0, tzinfo=JST), 'まとめ', f'/news/daily/{dd.isoformat()}/', f'daily-{dd.isoformat()}',
+                          f'F1ニュースまとめ {lab}', f'{lab}に世界の媒体が報じたF1の主なニュースを、1ページにまとめました。'))
     items = sorted([i for i in items if i[0] >= since], key=lambda i: i[0], reverse=True)
 
     def box(label, text, x=False):
@@ -3855,10 +3861,12 @@ def build_daily_digest(allarts):
                 '<p class="ent-more"><a href="/news/">ニュース一覧</a><a href="/gp/">GPごとに読む</a><a href="/teams/">チームごとに読む</a></p>')
         url = f'{SITE}/news/daily/{d.isoformat()}/'
         top3 = '／'.join(a['title'] for a in picks[:3])
+        og_d = rules_og(f'daily-{d.isoformat()}', f'F1ニュースまとめ {lab}', 'DAILY NEWS', picks[0]['title'], f'主な{len(picks)}本',
+                        rel=f'news/daily/{d.isoformat()}/og.png', foot='世界のF1ニュースを、日本語で。') if i < 3 or os.path.exists(os.path.join(ROOT, 'news', 'daily', d.isoformat(), 'og.png')) else None
         write(f'news/daily/{d.isoformat()}/index.html', page(
             f'F1ニュースまとめ {d.year}年{lab}｜主なニュース{len(picks)}本｜F1グリッドウォーク',
             (f'{d.year}年{lab}のF1の主なニュース{len(picks)}本を日本語で。{top3}')[:150], url, body,
-            f'<style>{ENT_CSS}{DIGEST_CSS}</style>\n', og_type='article'))
+            f'<style>{ENT_CSS}{DIGEST_CSS}</style>\n', og_type='article', og_image=og_d))
         sm.append((url, max(when(a) for a in picks).isoformat(timespec='seconds'), None, '0.6'))
     return sm
 
