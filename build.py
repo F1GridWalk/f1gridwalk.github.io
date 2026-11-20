@@ -3889,16 +3889,12 @@ def build_storylines(arch, allarts):
              f'<p>{e(tinfo.get("summary") or newest.get("summary", ""))}</p></div>']
         # STORY that used these news: its 「共通して言えること」 and 「分からないこと」
         hubs = [H for H in hubs_newest() if ids & {o.get('id') for o in H.get('outlets') or []}]
-        if hubs:
-            H = hubs[0]
-            kn = [k for k in (H.get('common') or []) if isinstance(k, str)][:4]
-            un = [k for k in (H.get('unknownsLimits') or []) + (H.get('unknownsFillable') or []) if isinstance(k, str)][:4]
-            if kn:
-                b.append('<h2 class="sl-h">WHAT WE KNOW　分かっていること</h2><ul class="sl-kn">' + ''.join(f'<li>{e(k)}</li>' for k in kn) + '</ul>')
-            if un:
-                b.append('<h2 class="sl-h">WHAT WE DON\'T KNOW　まだ分からないこと</h2><ul class="sl-kn">' + ''.join(f'<li>{e(k)}</li>' for k in un) + '</ul>')
-            if kn or un:
-                b.append(f'<p class="sl-src">STORY「<a href="/topics/{e(H["slug"])}/">{e(H["title"])}</a>」（{e(H.get("checked", ""))}に確認）の整理から。</p>')
+        # WHAT WE KNOW / DON'T KNOW: only when written by hand in STORYLINES ('known', 'unknown'); a STORY's own
+        # notes are about its person, not always about the whole storyline (seen in the preview, 20 Nov 2026)
+        if x.get('known'):
+            b.append('<h2 class="sl-h">WHAT WE KNOW　分かっていること</h2><ul class="sl-kn">' + ''.join(f'<li>{e(k)}</li>' for k in x['known']) + '</ul>')
+        if x.get('unknown'):
+            b.append('<h2 class="sl-h">WHAT WE DON\'T KNOW　まだ分からないこと</h2><ul class="sl-kn">' + ''.join(f'<li>{e(k)}</li>' for k in x['unknown']) + '</ul>')
         days = {}
         for a in arts:
             days.setdefault(when(a).astimezone(JST).date(), []).append(a)
