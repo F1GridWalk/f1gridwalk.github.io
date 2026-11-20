@@ -26,4 +26,3 @@
 
 ## サイトの要約で気づいたこと
 - /news/en-crash-hadjar-warning-reality-show/、/news/en-planetf1-hadjar-fan-warning-verstappen/：題と要約が「戒告」ですが、スチュワードが科したのは正式な「警告」（ISC 12.2.1 l）です。
-- そのほか、確認の途中で「F1.de のキャデラックの採用」の要約など、外した例はありません。
