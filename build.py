@@ -2512,6 +2512,11 @@ if(on)x.classList.add('on');var k=on?x.dataset.k:'',v=on?x.dataset.v:'';li.forEa
 try{if(on&&window.goatcounter)goatcounter.count({path:'click/topics/filter/'+(v||k),event:true})}catch(e){}})})})();</script>"""
 
 
+def _dot(t):
+    c = t.get('c1', '#888')
+    return t.get('c2', '#888') if sum(int(c[i:i + 2], 16) for i in (1, 3, 5)) > 600 else c
+
+
 def story_filters(hs):
     """Team, 日本 and people chips over /topics/ (people with 3+ STORY)."""
     tc, pc, pn, jp = {}, {}, {}, 0
@@ -2523,7 +2528,7 @@ def story_filters(hs):
             pc[q['id']] = pc.get(q['id'], 0) + 1
             pn[q['id']] = q['name'].split('・')[-1]
         jp += 1 if tg['jp'] else 0
-    teams = ''.join(f'<button type="button" data-k="t" data-v="{e(k)}"><i style="background:{e(TEAMS_ALL[k].get("c1", "#888"))}"></i>{e(TEAMS_ALL[k]["name"])}<small>{n}</small></button>'
+    teams = ''.join(f'<button type="button" data-k="t" data-v="{e(k)}"><i style="background:{e(_dot(TEAMS_ALL[k]))}"></i>{e(TEAMS_ALL[k]["name"])}<small>{n}</small></button>'
                     for k, n in sorted(tc.items(), key=lambda x: -x[1]) if k in TEAMS_ALL)
     people = ''.join(f'<button type="button" data-k="p" data-v="{e(i)}">{e(pn[i])}<small>{n}</small></button>'
                      for i, n in sorted(pc.items(), key=lambda x: -x[1]) if n >= 3)
