@@ -3726,7 +3726,7 @@ NEWS_TOP = 100   # /news/ shows the newest articles; every month has its own pag
 
 DIGEST_DAYS = 21
 DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:dg}.dg-list li{counter-increment:dg;padding:14px 0 14px 40px;border-top:1px solid var(--line);position:relative}"
-              ".dg-list li::before{content:counter(dg);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center}"
+              ".dg-list li::before{content:counter(dg);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center}"
               ".dg-list h2{font-size:17px;line-height:1.5;margin:0}.dg-list h2 a{color:var(--ink);text-decoration:none}.dg-list p{margin:6px 0 0;font-size:14.5px;line-height:1.75}"
               ".dg-list small{display:block;margin-top:6px;font-size:12px;color:var(--muted)}.dg-nav{display:flex;justify-content:space-between;gap:12px;margin:24px 0 0;font-weight:700}")
 
@@ -3749,8 +3749,12 @@ def build_daily_digest(allarts):
     sm = []
     W = '月火水木金土日'
     for i, d in enumerate(keys):
+        dc = {}  # outlets that day on the same story
+        for a in days[d]:
+            if a.get('topic'):
+                dc[a['topic']] = dc.get(a['topic'], 0) + 1
         seen, picks = set(), []
-        for a in sorted(days[d], key=lambda a: (-tc.get(a.get('topic'), 1), -when(a).timestamp())):
+        for a in sorted(days[d], key=lambda a: (-dc.get(a.get('topic'), 1), -tc.get(a.get('topic'), 1), -when(a).timestamp())):
             k = a.get('topic') or a['id']
             if k in seen:
                 continue
@@ -3763,7 +3767,7 @@ def build_daily_digest(allarts):
         lab = f'{d.month}月{d.day}日（{W[d.weekday()]}）'
         rows = ''.join(
             f'<li><h2><a href="/news/{e(a["id"])}/" data-track="click/digest/{d.isoformat()}">{e(a["title"])}</a></h2>'
-            f'<p>{e(a.get("summary", ""))}</p><small>{e(a["source"])}' + (f' ほか {tc[a["topic"]] - 1} 媒体' if tc.get(a.get('topic'), 1) > 1 else '') + '</small></li>'
+            f'<p>{e(a.get("summary", ""))}</p><small>{e(a["source"])}' + (f'（この日、ほか {dc[a["topic"]] - 1} 本の報道）' if dc.get(a.get('topic'), 1) > 1 else '') + '</small></li>'
             for a in picks)
         nav = ['<span></span>', '<span></span>']
         if i + 1 < len(keys):
