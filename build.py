@@ -107,6 +107,13 @@ def _iso(s):
         return None
 
 
+def src_fixed(a):
+    """The outlet's own time, or None while it is still to come (a date-only article set to 12:00 outlet time),
+    so nothing built from it moves from one build to the next (20 Nov 2026)."""
+    d = _iso(a.get('published') or '')
+    return d if d and d <= RUN_NOW else None
+
+
 def when(a):
     """When this site put the article out (sitePublished in news/archive.json). It is set once and never moves:
     articles already here keep their outlet time, a new one gets the time the build first saw it
@@ -128,8 +135,9 @@ def jst_text(d):
 
 
 def shared_css():
-    """Flag colours and the logo, taken from index.html so both stay in step."""
-    src = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
+    """Flag colours and the logo, taken from the top page (index.html and its own assets/home.css, assets/home.js) so both stay in step."""
+    src = ''.join(open(os.path.join(ROOT, f), encoding='utf-8').read() for f in ('index.html', 'assets/home.css', 'assets/home.js')
+                  if os.path.exists(os.path.join(ROOT, f)))
     m = re.search(r'\n(\[data-c="jp"\]\{.*?\n:root\[data-theme="dark"\] \.srcbadge::before\{[^\n]*\})', src, re.S)
     flags = m.group(1) if m else ''
     fm = re.search(r'var FLAG = (\{.*?\});', src, re.S)
@@ -4359,7 +4367,24 @@ def person_news(p, allarts, n=8):
     return out
 
 
+def stamp_home_assets():
+    """The top page's styles and script live in assets/home.css and assets/home.js, so a returning reader's browser keeps
+    them instead of reading 180KB again (owner's OK, 20 Nov 2026). ?v= changes only when the file does."""
+    p = os.path.join(ROOT, 'index.html')
+    src = open(p, encoding='utf-8').read()
+    out = src
+    for f in ('home.css', 'home.js'):
+        fp = os.path.join(ROOT, 'assets', f)
+        if os.path.exists(fp):
+            v = hashlib.md5(open(fp, 'rb').read()).hexdigest()[:8]
+            out = re.sub(r'/assets/' + re.escape(f) + r'\?v=[0-9a-z]*', f'/assets/{f}?v={v}', out)
+    if out != src:
+        with open(p, 'w', encoding='utf-8') as fh:
+            fh.write(out)
+
+
 def main():
+    stamp_home_assets()
     global FLAGS, LOGO, BASE_CSS_V
     FLAGS, flag_map, LOGO = shared_css()
     BASE_CSS_V = hashlib.md5((CSS + FLAGS).encode('utf-8')).hexdigest()[:8]
@@ -4446,7 +4471,7 @@ def main():
                 + (f'<span>掲載：{e(a["source"])}　記事提供：{e(a["provider"])}</span>' if a.get('provider') else '')
                 + 
                 f'<time datetime="{when(a).isoformat(timespec="seconds")}">{e(jst_text(d))}</time>'
-                + (f'<span class="srct">原文：{e(jst_text(src_when(a)))}</span>' if abs((src_when(a) - d).total_seconds()) >= 1800 else '')
+                + (f'<span class="srct">原文：{e(jst_text(src_fixed(a)))}</span>' if src_fixed(a) and abs((src_fixed(a) - d).total_seconds()) >= 1800 else '')
                 + '</div>',
                 f'<h1>{e(a["title"])}</h1>']
         if a.get('orig') and a['orig'] != a['title']:
@@ -4559,7 +4584,7 @@ def main():
         art_ld = {'@context': 'https://schema.org', '@type': 'NewsArticle', 'headline': a['title'], 'description': desc,
                   'datePublished': when(a).isoformat(timespec='seconds'), 'dateModified': mod_when(a).isoformat(timespec='seconds'), 'inLanguage': 'ja',
                   'image': [og_url or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
-                  'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'], 'datePublished': src_when(a).isoformat(timespec='seconds'),
+                  'isBasedOn': {'@type': 'NewsArticle', 'url': a['url'], 'headline': a.get('orig') or a['title'], **({'datePublished': src_fixed(a).isoformat(timespec='seconds')} if src_fixed(a) else {}),
                                 'publisher': {'@type': 'Organization', 'name': a['source']}}}
         if nused:
             body.append(term_assets(nused))
