@@ -3836,6 +3836,113 @@ DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:
               ".dg-list small{display:block;margin-top:6px;font-size:12px;color:var(--muted)}.dg-nav{display:flex;justify-content:space-between;gap:12px;margin:24px 0 0;font-weight:700}")
 
 
+# STORYLINE (owner's OK to preview, 20 Nov 2026): one page per developing story, built from the news
+# already tagged with the same topic. Name and topics are chosen by the site author; everything else is automatic.
+STORYLINES = [
+    {'slug': 'ferrari-hamilton-leclerc', 'name': 'フェラーリ、ハミルトンとルクレールの溝',
+     'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift'],
+     'dek': 'メキシコGPの接触から始まった、フェラーリの2人の関係をめぐる報道を、最初から順に追います。'},
+    {'slug': 'lawson-2027-seat', 'name': 'ローソン、2027年のシート',
+     'topics': ['lawson-2027-seat'],
+     'dek': 'レーシングブルズに残るのか。ローソンの2027年をめぐる報道を、最初から順に追います。'},
+    {'slug': 'cadillac-2027-drivers', 'name': 'キャデラック、2027年のドライバー',
+     'topics': ['cadillac-2027-drivers-rumor'],
+     'dek': 'ボッタスとペレスの次は誰か。キャデラックの2027年のドライバーをめぐる報道を、最初から順に追います。'},
+    {'slug': 'piastri-mclaren-future', 'name': 'ピアストリとマクラーレンのこれから',
+     'topics': ['piastri-mclaren-future'],
+     'dek': 'マネジメント契約の終了と、ノリスとの差。ピアストリをめぐる報道を、最初から順に追います。'},
+]
+SL_BY_TOPIC = {t: x for x in STORYLINES for t in x['topics']}
+SL_CSS = (".sl-k{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--accent,#a0522d)}.sl-stat{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}"
+          ".sl-stat span{border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:13px;font-weight:700}"
+          ".sl-now{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--surface);margin:16px 0}.sl-now small{font-size:11px;letter-spacing:.12em;font-weight:800;color:var(--muted)}"
+          ".sl-now b{display:block;font-size:17px;line-height:1.5;margin:6px 0}.sl-now p{margin:0;font-size:14.5px;line-height:1.8}"
+          ".sl-h{font-size:12px;letter-spacing:.16em;font-weight:900;margin:28px 0 8px;padding-top:14px;border-top:2px solid var(--ink)}"
+          ".sl-tl{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid var(--line)}.sl-tl li{position:relative;padding:0 0 12px 12px}"
+          ".sl-tl li::before{content:'';position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--ink)}"
+          ".sl-tl .d{font-size:12px;font-weight:800;color:var(--muted)}.sl-tl a{display:block;color:var(--ink);font-weight:700;line-height:1.55;text-decoration:none}"
+          ".sl-tl small{font-size:12px;color:var(--muted)}.sl-kn li{margin:0 0 8px;line-height:1.75}.sl-src{font-size:12px;color:var(--muted)}"
+          ".sl-rel{list-style:none;margin:0;padding:0}.sl-rel li{border-top:1px solid var(--line);padding:10px 0}.sl-rel a{color:var(--ink);font-weight:700;text-decoration:none}"
+          ".sl-ppl{display:flex;flex-wrap:wrap;gap:6px}.sl-ppl a{border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:700;color:var(--ink);text-decoration:none}")
+
+
+def build_storylines(arch, allarts):
+    """storyline/<slug>/ and storyline/: TIMELINE of the topic's news, the newest state (the topic summary the
+    news run keeps), WHAT WE KNOW / DON'T KNOW only from a STORY that used the same news, related STORY,
+    columns and people."""
+    W = '月火水木金土日'
+    sm, cards = [], []
+    for x in STORYLINES:
+        arts = sorted([a for a in allarts if a.get('topic') in x['topics'] and a.get('kind', 'news') not in ('fan', 'voice')], key=when)
+        if len(arts) < 5:
+            continue
+        ids = {a['id'] for a in arts}
+        newest = arts[-1]
+        tinfo = (arch.get('topics') or {}).get(newest.get('topic'), {})
+        srcs = {a['source'] for a in arts}
+        d0, d1 = when(arts[0]).astimezone(JST), when(newest).astimezone(JST)
+        b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/storyline/">STORYLINE</a> › {e(x["name"])}</nav><div class="xp">'
+             f'<p class="sl-k">STORYLINE</p><h1>{e(x["name"])}</h1><p class="lead">{e(x["dek"])}</p>'
+             f'<div class="sl-stat"><span>報道 {len(arts)} 本</span><span>{len(srcs)} 媒体</span><span>{d0.month}/{d0.day} → {d1.month}/{d1.day}</span></div>'
+             f'<div class="sl-now"><small>いちばん新しい動き・{d1.month}月{d1.day}日（{W[d1.weekday()]}）</small>'
+             f'<b><a href="/news/{e(newest["id"])}/" data-track="click/storyline/{x["slug"]}/latest">{e(tinfo.get("title") or newest["title"])}</a></b>'
+             f'<p>{e(tinfo.get("summary") or newest.get("summary", ""))}</p></div>']
+        # STORY that used these news: its 「共通して言えること」 and 「分からないこと」
+        hubs = [H for H in hubs_newest() if ids & {o.get('id') for o in H.get('outlets') or []}]
+        if hubs:
+            H = hubs[0]
+            kn = [k for k in (H.get('common') or []) if isinstance(k, str)][:4]
+            un = [k for k in (H.get('unknownsLimits') or []) + (H.get('unknownsFillable') or []) if isinstance(k, str)][:4]
+            if kn:
+                b.append('<h2 class="sl-h">WHAT WE KNOW　分かっていること</h2><ul class="sl-kn">' + ''.join(f'<li>{e(k)}</li>' for k in kn) + '</ul>')
+            if un:
+                b.append('<h2 class="sl-h">WHAT WE DON\'T KNOW　まだ分からないこと</h2><ul class="sl-kn">' + ''.join(f'<li>{e(k)}</li>' for k in un) + '</ul>')
+            if kn or un:
+                b.append(f'<p class="sl-src">STORY「<a href="/topics/{e(H["slug"])}/">{e(H["title"])}</a>」（{e(H.get("checked", ""))}に確認）の整理から。</p>')
+        days = {}
+        for a in arts:
+            days.setdefault(when(a).astimezone(JST).date(), []).append(a)
+        tl = ''.join(f'<li><span class="d">{d.month}月{d.day}日（{W[d.weekday()]}）</span>'
+                     + ''.join(f'<a href="/news/{e(a["id"])}/" data-track="click/storyline/{x["slug"]}/tl">{e(a["title"])}</a><small>{e(a["source"])}</small>' for a in v) + '</li>'
+                     for d, v in sorted(days.items()))
+        b.append(f'<h2 class="sl-h">TIMELINE　始まりから今まで</h2><ol class="sl-tl">{tl}</ol>')
+        rel = [f'<li><a href="/topics/{e(H["slug"])}/" data-track="click/storyline/{x["slug"]}/story">STORY｜{e(H["title"])}</a></li>' for H in hubs[:3]]
+        for f in sorted(__import__('glob').glob(os.path.join(ROOT, 'lens', '*.json')), reverse=True):
+            L = load(os.path.relpath(f, ROOT)) or {}
+            if L.get('slug') and not L.get('draft') and set(L.get('topics') or [L.get('topic')]) & set(x['topics']):
+                rel.append(f'<li><a href="/lens/{e(L["slug"])}/" data-track="click/storyline/{x["slug"]}/lens">コラム｜{e(L.get("title", ""))}</a></li>')
+            if len(rel) >= 8:
+                break
+        if rel:
+            b.append('<h2 class="sl-h">RELATED　あわせて読む</h2><ul class="sl-rel">' + ''.join(rel) + '</ul>')
+        text = ' '.join(a['title'] for a in arts)
+        cnt = []
+        for q in PEOPLE:
+            n = sum(1 for a in arts if any(_kw_hit(nm, a['title']) for nm in [q['name']] + [al for al in (q.get('aliases') or []) if len(al) >= 3]))
+            if n:
+                cnt.append((n, q))
+        cnt.sort(key=lambda t: -t[0])
+        if cnt:
+            b.append('<h2 class="sl-h">PEOPLE　この話題の人</h2><div class="sl-ppl">' + ''.join(
+                f'<a href="{rb_url("person-" + q["id"])}" data-track="click/storyline/{x["slug"]}/person">{e(q["name"])}</a>' for n, q in cnt[:6]) + '</div>')
+        b.append('<p class="lead" style="margin-top:22px"><a href="/storyline/">← STORYLINE の一覧</a></p></div>')
+        url = f'{SITE}/storyline/{x["slug"]}/'
+        write(f'storyline/{x["slug"]}/index.html', page(f'{x["name"]}｜これまでの経緯と最新情報｜STORYLINE｜F1グリッドウォーク',
+              (x['dek'] + f' 報道{len(arts)}本、{len(srcs)}媒体。')[:150], url, '\n'.join(b), f'<style>{XP_CSS}{SL_CSS}</style>\n', og_type='article'))
+        sm.append((url, d1.isoformat(timespec='seconds'), 'daily', '0.7'))
+        cards.append((d1, f'<li><a href="/storyline/{x["slug"]}/" data-track="click/storyline/index"><b>{e(x["name"])}</b></a>'
+                          f'<small>報道 {len(arts)} 本 · 最新 {d1.month}/{d1.day}</small></li>'))
+    if cards:
+        body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › STORYLINE</nav><div class="xp"><p class="sl-k">STORYLINE</p><h1>STORYLINE</h1>'
+                '<p class="lead">続いている話題を、始まりから今まで1ページで追えるようにしました。新しく動いた順です。</p>'
+                '<ul class="sl-rel">' + ''.join(c for _, c in sorted(cards, key=lambda t: t[0], reverse=True)) + '</ul></div>')
+        write('storyline/index.html', page('STORYLINE｜続いているF1の話題を始まりから追う｜F1グリッドウォーク',
+              '続いているF1の話題を、始まりから今まで1ページで追えるようにしたページの一覧。', SITE + '/storyline/', body,
+              f'<style>{XP_CSS}{SL_CSS}</style>\n', og_type='website'))
+        sm.append((SITE + '/storyline/', max(d for d, _ in cards).isoformat(timespec='seconds'), 'daily', '0.6'))
+    return sm
+
+
 def build_daily_digest(allarts):
     """news/daily/YYYY-MM-DD/ — the day's main F1 news on one page (owner's OK, 20 Nov 2026).
     One summary each is thin; ten together make a page worth reading, finding and sharing.
@@ -4166,6 +4273,9 @@ def main():
                     f'<a href="https://b.hatena.ne.jp/add?mode=confirm&url={quote(url)}" target="_blank" rel="noopener" data-track="share/hatena">はてブ</a>'
                     '<button type="button" id="copy" data-track="share/copy">リンクをコピー</button></div>')
         body.append('</article>')
+        if a.get('topic') in SL_BY_TOPIC:  # the developing story this news belongs to (20 Nov 2026)
+            sl_ = SL_BY_TOPIC[a['topic']]
+            body.append(f'<p class="ent-more"><a href="/storyline/{sl_["slug"]}/" data-track="click/news/storyline">STORYLINE｜{e(sl_["name"])}を最初から追う →</a></p>')
         body.append(f'<!--related:/news/{a["id"]}/-->')  # 「次に読む」 on news pages too (owner, 11 Nov 2026)
 
         others = [x for x in by_topic.get(a.get('topic'), []) if x['id'] != a['id']]
@@ -4213,6 +4323,7 @@ def main():
     # the list pages: the newest articles on /news/, every month on its own page (14 Oct 2026)
     month_sm = build_news_lists(allarts, flag_of)
     month_sm += build_daily_digest(allarts)
+    month_sm += build_storylines(arch, allarts)
 
     # sitemap
     now = datetime.now(JST).isoformat(timespec='seconds')
