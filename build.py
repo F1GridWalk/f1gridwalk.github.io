@@ -829,7 +829,7 @@ def build_lenses(arch, flag_map):
         ogi = f'{SITE}/lens/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': L['title'], 'description': L['dek'],
                     'datePublished': L['published'], 'dateModified': L.get('updated') or L['published'], 'inLanguage': 'ja',
-                    'image': [ogi or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                    'image': [x for x in (hero_img(f'lens/{slug}', L['title'] + ' ' + L['dek'], TEAMS_ALL), ogi or OG_IMAGE) if x], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                     'articleSection': sec_name})
         head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
@@ -1280,7 +1280,7 @@ def build_deeps(arch, flag_map):
 
         head = MONO_FONT + f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}{RULES_ENTRY_CSS}{RULES_CSS if used else ""}</style>\n'
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': D['title'], 'description': D['dek'],
-                    'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [OG_IMAGE],
+                    'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [x for x in (hero_img(f'deep/{slug}', D['title'] + ' ' + D['dek'], TEAMS_ALL), OG_IMAGE) if x],
                     'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER, 'articleSection': 'DEEP GRID',
                     'keywords': D.get('themes', [])})
         head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
@@ -2008,6 +2008,56 @@ OG_NOEND = set('「『（【〔〈《([{')
 _OG = {}
 
 
+HERO_DEFAULT = ('#E8002D', '#F2F2F2', '#15151E')
+
+
+def hero_img(rel_dir, text, teams):
+    """Text-free 1200×675 image for Google (Discover asks for big images without text or logos; owner's OK, 20 Nov 2026).
+    Team colours of the first team named in the text; drawn once and kept (the shape varies with the folder name).
+    The og.png with the headline stays the image for X."""
+    path = os.path.join(ROOT, rel_dir, 'hero.jpg')
+    if not os.path.exists(path):
+        try:
+            from PIL import Image, ImageDraw
+        except Exception:
+            return None
+        hits = sorted((text.find(t[f]), k) for k, t in teams.items() for f in ('name', 'en') if t.get(f) and t[f] in text)
+        if not hits:  # no team named: the team of the first person named
+            byname = {t.get('name'): k for k, t in teams.items()}
+            hits = sorted((text.find(n), byname[q.get('org')]) for q in PEOPLE if q.get('org') in byname
+                          for n in [q['name']] + [a for a in q.get('aliases', []) if len(a) >= 3] if n in text)
+        t = teams.get(hits[0][1], {}) if hits else {}
+        c1, c2 = t.get('c1', HERO_DEFAULT[0]), t.get('c2', HERO_DEFAULT[1])
+        c3 = t.get('c3') or HERO_DEFAULT[2]
+        if sum(int(c3[i:i + 2], 16) for i in (1, 3, 5)) > 300:  # keep the ground dark, so the white line shows
+            c3 = HERO_DEFAULT[2]
+        h = int(hashlib.md5(rel_dir.encode()).hexdigest(), 16)
+        W, H = 1200, 675
+        im = Image.new('RGB', (W, H), c3)
+        d = ImageDraw.Draw(im, 'RGBA')
+        tilt = 160 + h % 220
+        off = (h >> 8) % 260
+        d.polygon([(0, H - off), (W, H - off - tilt), (W, H - off - tilt + 230), (0, H - off + 230)], fill=c1)
+        d.polygon([(0, H - off - 70), (W, H - off - tilt - 70), (W, H - off - tilt - 30), (0, H - off - 30)], fill=c2)
+        pts = []
+        for i in range(41):  # a racing line through the frame
+            x = W * i / 40
+            y = H * (0.30 + 0.18 * __import__('math').sin(i / 40 * 3.1 + (h % 7)) + 0.10 * (i / 40))
+            pts.append((x, y))
+        for wd, al in ((34, 60), (10, 150)):  # draw on its own layer, so the segments do not overlap into stripes
+            lay = Image.new('L', (W, H), 0)
+            ImageDraw.Draw(lay).line(pts, fill=al, width=wd, joint='curve')
+            im.paste(Image.new('RGB', (W, H), 'white'), (0, 0), lay)
+        sq, cols, rows = 26, 9, 5  # chequered corner
+        for r in range(rows):
+            for c in range(cols):
+                if (r + c) % 2 == 0:
+                    d.rectangle([W - (cols - c) * sq - 40, 40 + r * sq, W - (cols - c - 1) * sq - 40, 40 + (r + 1) * sq], fill=(255, 255, 255, 70))
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        im.save(path, 'JPEG', quality=82, optimize=True)
+    return f'{SITE}/{rel_dir}/hero.jpg'
+
+
 def _og_tools():
     if 'ok' not in _OG:
         try:
@@ -2707,6 +2757,7 @@ def build_hubs(arch, flag_of):
         S_ = H.get('story') or {}
         og_h = rules_og(slug, H['title'], 'STORY', S_.get('hook') or H.get('dek', ''), H.get('gp', '') or 'F1グリッドウォーク',
                         rel=f'topics/{slug}/og.png', foot='世界の報道から、ひとつの物語を。')
+        head = head.replace('"mainEntityOfPage"', json.dumps('image') + ': ' + json.dumps([x for x in (hero_img(f'topics/{slug}', H['title'] + ' ' + H.get('dek', ''), TEAMS_ALL), og_h) if x]) + ', "mainEntityOfPage"', 1)
         write(f'topics/{slug}/index.html', page((story_seo_title(H) if H.get('story') else f'{H["title"]}｜' + H.get('sub', '')) + '｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head, og_image=og_h))
         out.append((url, H.get('checked', '') + 'T09:00:00+09:00', None, '0.7'))
     hs = hubs_newest()
