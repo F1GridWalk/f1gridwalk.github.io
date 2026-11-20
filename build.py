@@ -3820,7 +3820,19 @@ def build_team_pages(allarts, flag_of, teams):
             b.append('<section id="tm-story"><h2>STORY</h2><ul class="yk-list">' + ''.join(hub_li(H, f'click/team/{k}/story') for H in hubs) + '</ul></section>')
         if cols:
             b.append('<section id="tm-cols"><h2>コラム</h2><ul class="col-list">' + ''.join(col_li(c, f'click/team/{k}/col') for c in cols[:20]) + '</ul></section>')
-        b.append(f'<section id="tm-news"><h2>ニュース（{len(arts)}本）</h2>' + _day_list(arts, flag_of) + '</section>')
+        # the newest 40 here, every one on teams/<k>/news/ (page weight, outside review, owner's OK, 20 Nov 2026)
+        TM_N = 40
+        b.append(f'<section id="tm-news"><h2>ニュース（{len(arts)}本）</h2>' + (f'<p class="lead">新しい{TM_N}本です。</p>' if len(arts) > TM_N else '') + _day_list(arts[:TM_N], flag_of)
+                 + (f'<p class="ent-more"><a href="/teams/{k}/news/" data-track="click/team/{k}/allnews">{e(name)}のニュースをすべて見る（{len(arts)}本）→</a></p>' if len(arts) > TM_N else '') + '</section>')
+        if len(arts) > TM_N:
+            u_all = f'{SITE}/teams/{k}/news/'
+            write(f'teams/{k}/news/index.html', page(f'{name}のF1ニュース一覧（{len(arts)}本）｜F1グリッドウォーク',
+                  f'{name}（{en}）に関する世界のF1ニュース{len(arts)}本を、新しい順に。', u_all,
+                  f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/teams/">チームごとに読む</a> › <a href="/teams/{k}/">{e(name)}</a> › ニュース一覧</nav>'
+                  f'<h1>{e(name)}のニュース（{len(arts)}本）</h1><p class="lead">新しい順です。見出しを押すと、日本語の要約と原文へのリンクがあります。</p>'
+                  + _day_list(arts, flag_of) + f'<p class="ent-more"><a href="/teams/{k}/">← {e(name)}のページへ</a></p>',
+                  f'<style>{ENT_CSS}</style>\n', og_type='website'))
+            sm.append((u_all, when(arts[0]).isoformat(timespec='seconds'), None, '0.4'))
         b.append('<p class="ent-more"><a href="/teams/">ほかのチームを見る</a><a href="/gp/">GPごとに読む</a><a href="/news/">ニュース一覧</a></p>')
         head = f'<style>{ENT_CSS}{YK_CSS}{ALLCOL_CSS}</style>\n' + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('チームごとに読む', SITE + '/teams/'), (name, url)])
         write(f'teams/{k}/index.html', page(f'{name}F1 {(load("season.json") or {}).get("season", 2026)}｜ドライバー・代表・ニュース（{en}）｜F1グリッドウォーク',
