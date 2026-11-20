@@ -1861,6 +1861,8 @@ def build_rules():
             opts = '<option value="0">なし・上限内</option><option value="10">初めて超えた（+10）</option><option value="5">2回目以降（+5）</option>'
             rows = ''.join(f'<label>{e(p)}<select aria-label="{e(p)}">{opts}</select></label>' for p in ['エンジン（ICE）', 'ターボ', 'MGU-K', 'バッテリー（ES）', '制御電子機器（CE）'])
             b += PU_TOOL.format(rows=rows) + PU_JS
+        if not tid.startswith('circuit-'):  # circuit names come up in many hooks for other reasons
+            b += rb_follow_box([x for x in _kw_names([t['term']] + t.get('aliases', [])) if len(x) >= 3], track=f'term/{tid}')
         b += rb_news_box(f'「{t["term"]}」が出てくる最新ニュース', term_news(t, ALLARTS), f'term/{tid}/news')
         if t.get('rule'):
             b += f'<div class="rb-h">規則</div><span class="rb-rule">FIA {e(t["rule"])}</span>'
@@ -1916,6 +1918,7 @@ def build_rules():
                       + ''.join(f'<a style="display:block;color:#fff;font-size:18px;font-weight:900;text-decoration:none;margin-top:4px" href="/deep/rules/person-{e(d["id"])}/" data-track="click/person/{e(p["id"])}/driver">{e(d["name"])}のページ（近況・うわさ）→</a>' for d in drv)
                       + '<a style="display:inline-block;margin-top:8px;color:#FFEE9A;font-size:12.5px;font-weight:700" href="/drivers/engineers/" data-track="click/person/engineers">レースエンジニア一覧 →</a></div>')
         is_drv = 'ドライバー' in p.get('role', '') and 'エンジニア' not in p.get('role', '')
+        b += rb_follow_box([p['name']] + [a for a in (p.get('aliases') or []) if len(a) >= 3], ppl_id=p['id'], track=f'person/{p["id"]}')
         if is_drv:
             b += driver_fan_block(p)  # fan page for drivers: news first, then the profile (owner, 27 Oct 2026)
         pn_ = [] if is_drv else [a for a in person_news(p, ALLARTS, n=20) if a.get('kind', 'news') in ('news', 'tech')][:5]
@@ -2632,6 +2635,7 @@ STORY_SCROLL_JS = """<script>
 
 # STORY subjects the slug does not spell out (ボノ = Peter Bonnington, Jos is not in the dictionary)
 STORY_SEO_NAMES = {'bono-leave-that-to-me': ['ボニントン', 'アントネッリ'],
+                   'bono-first-chapter': ['ボニントン', 'アントネッリ'],  # 20 Nov 2026: the dek names Hamilton first
                    'jos-verstappen-setup': ['ヨス・フェルスタッペン'],          # not Max
                    'haas-komatsu-fastest-driver': ['小松礼雄', '平川亮']}
 
@@ -3843,14 +3847,28 @@ STORYLINES = [
      'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift'],
      'dek': 'メキシコGPの接触から始まった、フェラーリの2人の関係をめぐる報道を、最初から順に追います。'},
     {'slug': 'lawson-2027-seat', 'name': 'ローソン、2027年のシート',
-     'topics': ['lawson-2027-seat'],
+     'topics': ['lawson-2027-seat', 'racingbulls-lawson-tsolov-2027', 'tsolov-reserve-2027'],
      'dek': 'レーシングブルズに残るのか。ローソンの2027年をめぐる報道を、最初から順に追います。'},
     {'slug': 'cadillac-2027-drivers', 'name': 'キャデラック、2027年のドライバー',
-     'topics': ['cadillac-2027-drivers-rumor'],
+     'topics': ['cadillac-2027-drivers-rumor', 'cadillac-2027-lineup', 'cadillac-ugochukwu-2027', 'cadillac-bottas-2027', 'herta-cadillac-seat-comment', 'cadillac-bottas-herta', 'perez-cadillac-2029'],
      'dek': 'ボッタスとペレスの次は誰か。キャデラックの2027年のドライバーをめぐる報道を、最初から順に追います。'},
     {'slug': 'piastri-mclaren-future', 'name': 'ピアストリとマクラーレンのこれから',
      'topics': ['piastri-mclaren-future'],
      'dek': 'マネジメント契約の終了と、ノリスとの差。ピアストリをめぐる報道を、最初から順に追います。'},
+    {'slug': 'haas-2027-drivers', 'name': 'ハース、2027年のドライバー',
+     'topics': ['haas-ocon-camara-brazil', 'ocon-haas-exit-official', 'bearman-haas-2027', 'haas-bearman-2027', 'haas-camara-vegas', 'haas-camara-2027',
+                'haas-2027-seat-doohan-camara', 'haas-komatsu-camara-choice', 'ocon-hirakawa-mexico'],
+     'dek': 'オコンが外れ、平川とカマラが走り、ベアマンの契約はまだ。ハースの2027年をめぐる報道を、最初から順に追います。'},
+    {'slug': 'aston-honda-2026', 'name': 'アストンマーティン・ホンダの苦戦',
+     'topics': ['honda-aston-pu-weakness', 'aston-martin-mexico-double-dnf', 'honda-stroll-battery-retirement', 'honda-alonso-engine-dispute', 'honda-aduo2-reveal',
+                'alonso-singapore-honda-drivability', 'honda-pu-struggle', 'newey-honda-progress-2027'],
+     'dek': 'パワー不足、リタイア、アロンソとの食い違い。アストンマーティン・ホンダの2026年をめぐる報道を、最初から順に追います。'},
+    {'slug': 'f1-v8-engine', 'name': 'F1のV8エンジン復活案',
+     'topics': ['f1-v8-engine-proposal', 'fia-v8-2030', 'f1-v8-engine-2030', 'f1-2030-v8-engine', 'f1-2031-v8-engine'],
+     'dek': 'いつから、どんなエンジンになるのか。F1のV8復活案をめぐる報道を、最初から順に追います。'},
+    {'slug': 'antonelli-title-2026', 'name': 'アントネッリ、王座への道',
+     'topics': ['antonelli-title-austin', 'antonelli-austin-title-chance', 'antonelli-austin-match-point', 'antonelli-title-mexico', 'antonelli-title-timeline', 'antonelli-champion-2026'],
+     'dek': 'オースティンで王手、メキシコで持ち越し、ブラジルで決定。アントネッリの2026年の王座までの報道を、順に追います。'},
 ]
 SL_BY_TOPIC = {t: x for x in STORYLINES for t in x['topics']}
 SL_CSS = (".sl-k{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--accent,#a0522d)}.sl-stat{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}"
@@ -4093,6 +4111,66 @@ def driver_fan_block(p):
                 + ''.join(f'<a href="{e(x["url"])}" target="_blank" rel="noopener" data-track="click/person/{e(p["id"])}/sns">{e(x["name"])} ↗</a>' for x in sns)
                 + '</div><p class="fan-note">本人の投稿がニュースになったときは、「近況」に要約を載せます。</p>')
     return out
+
+
+SL_ARTS = {}
+
+
+def _sl_arts():
+    if not SL_ARTS:
+        for x in STORYLINES:
+            SL_ARTS[x['slug']] = [a for a in ALLARTS if a.get('topic') in x['topics'] and a.get('kind', 'news') not in ('fan', 'voice')]
+    return SL_ARTS
+
+
+def story_main_person(H):
+    """The person a STORY is about: a word of the slug in their id (bortoleto-twenty-years → bortoleto), else STORY_SEO_NAMES,
+    else the first person named. The slug is the surest sign: a dek also names the people around them."""
+    for tok in H['slug'].split('-'):
+        hits = [q for q in PEOPLE if len(tok) >= 3 and tok in q['id'].split('-')]
+        if len(hits) == 1:
+            return hits[0]['id']
+    for nm in STORY_SEO_NAMES.get(H['slug'], []):
+        q = next((q for q in PEOPLE if nm in (q['name'], q['name'].split('・')[-1])), None)
+        if q:
+            return q['id']
+    tg = story_tags(H)
+    return tg['people'][0]['id'] if tg['people'] else None
+
+
+def rb_follow_box(names, ppl_id=None, track=''):
+    """「この話題を追う」 on person and term pages (owner's OK, 20 Nov 2026): the STORYLINE where the name comes up
+    in 2+ headlines, and the newest STORY about it (person: STORY whose main people include them; term: named in
+    the STORY's title, dek or hook). Nothing when there is nothing."""
+    names = [n for n in names if n and len(n) >= 2]
+    if not names:
+        return ''
+    sls = []
+    for x in STORYLINES:
+        arts = _sl_arts().get(x['slug']) or []
+        n = sum(1 for a in arts if any(_kw_hit(nm, a['title']) for nm in names))
+        if n >= 2 and len(arts) >= 5:
+            sls.append((n, x, len(arts)))
+    sls.sort(key=lambda t: -t[0])
+    sts = []
+    for H in hubs_newest():
+        if ppl_id:
+            hit = story_main_person(H) == ppl_id
+        else:
+            S_ = H.get('story') or {}
+            hit = any(_kw_hit(nm, ' '.join([H.get('title', ''), S_.get('hook', '')])) for nm in names)  # not the dek: it names the background too
+        if hit:
+            sts.append(H)
+        if len(sts) >= 2:
+            break
+    if not sls and not sts:
+        return ''
+    out = '<div class="rb-h">この話題を追う</div><ul class="rb-fl">'
+    out += ''.join(f'<li><a href="/storyline/{e(x["slug"])}/" data-track="click/{track}/storyline"><small>STORYLINE · 報道{k}本</small><b>{e(x["name"])}</b></a></li>' for _, x, k in sls[:2])
+    out += ''.join(f'<li><a href="/topics/{e(H["slug"])}/" data-track="click/{track}/story"><small>STORY · {e(H.get("checked", "").replace("-", "/"))}</small><b>{e(H["title"])}</b></a></li>' for H in sts)
+    return out + ('</ul><style>.rb-fl{list-style:none;margin:6px 0 0;padding:0}.rb-fl li{margin:0 0 8px}.rb-fl a{display:block;border:1px solid var(--line);border-radius:12px;'
+                  'padding:10px 13px;background:var(--surface);color:var(--ink);text-decoration:none}.rb-fl small{display:block;font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--muted)}'
+                  '.rb-fl b{display:block;font-size:15px;line-height:1.5;margin-top:2px}</style>')
 
 
 def rb_news_box(title, arts, track):
