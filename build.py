@@ -1846,9 +1846,9 @@ def build_rules():
     for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
         tid = t['id']
         keys = ' '.join(x['t'] for x in t.get('examples', []))
-        search[tid] = ' '.join(re.sub(r'^## ', '', x) for x in t.get('body', []))
+        search[tid] = ' '.join([re.sub(r'^## ', '', x) for x in t.get('body', [])] + [keys])  # example headlines moved here from data-k (page weight, 20 Nov 2026)
         al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[ぁ-ゟー]+', x)][:4])
-        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}" data-k="{e(keys)}">'
+        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}">'
                      f'<span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(t["short"])}</span></a>')
