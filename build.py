@@ -3884,7 +3884,7 @@ def build_storylines(arch, allarts):
         b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/storyline/">STORYLINE</a> › {e(x["name"])}</nav><div class="xp">'
              f'<p class="sl-k">STORYLINE</p><h1>{e(x["name"])}</h1><p class="lead">{e(x["dek"])}</p>'
              f'<div class="sl-stat"><span>報道 {len(arts)} 本</span><span>{len(srcs)} 媒体</span><span>{d0.month}/{d0.day} → {d1.month}/{d1.day}</span></div>'
-             f'<div class="sl-now"><small>いちばん新しい動き・{d1.month}月{d1.day}日（{W[d1.weekday()]}）</small>'
+             f'<div class="sl-now"><small>いまの状況・{d1.month}月{d1.day}日（{W[d1.weekday()]}）までの報道から</small>'
              f'<b><a href="/news/{e(newest["id"])}/" data-track="click/storyline/{x["slug"]}/latest">{e(tinfo.get("title") or newest["title"])}</a></b>'
              f'<p>{e(tinfo.get("summary") or newest.get("summary", ""))}</p></div>']
         # STORY that used these news: its 「共通して言えること」 and 「分からないこと」
