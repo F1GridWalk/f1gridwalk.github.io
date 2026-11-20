@@ -829,7 +829,7 @@ def build_lenses(arch, flag_map):
         ogi = f'{SITE}/lens/{slug}/og.png?v={hashlib.md5(open(ogp, "rb").read()).hexdigest()[:8]}' if os.path.exists(ogp) else None
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': L['title'], 'description': L['dek'],
                     'datePublished': L['published'], 'dateModified': L.get('updated') or L['published'], 'inLanguage': 'ja',
-                    'image': [ogi or OG_IMAGE], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
+                    'image': [x for x in (hero_img(f'lens/{slug}', L['title'] + ' ' + L['dek'], TEAMS_ALL), ogi or OG_IMAGE) if x], 'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER,
                     'articleSection': sec_name})
         head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'F1 Grid Walk', 'item': SITE + '/'},
@@ -1280,7 +1280,7 @@ def build_deeps(arch, flag_map):
 
         head = MONO_FONT + f'<meta property="article:published_time" content="{e(D["published"])}">\n<style>{DEEP_CSS}{RULES_ENTRY_CSS}{RULES_CSS if used else ""}</style>\n'
         head += ld({'@context': 'https://schema.org', '@type': 'Article', 'headline': D['title'], 'description': D['dek'],
-                    'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [OG_IMAGE],
+                    'datePublished': D['published'], 'dateModified': upd, 'inLanguage': 'ja', 'image': [x for x in (hero_img(f'deep/{slug}', D['title'] + ' ' + D['dek'], TEAMS_ALL), OG_IMAGE) if x],
                     'mainEntityOfPage': url, 'author': PUBLISHER, 'publisher': PUBLISHER, 'articleSection': 'DEEP GRID',
                     'keywords': D.get('themes', [])})
         head += ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
@@ -2008,6 +2008,56 @@ OG_NOEND = set('「『（【〔〈《([{')
 _OG = {}
 
 
+HERO_DEFAULT = ('#E8002D', '#F2F2F2', '#15151E')
+
+
+def hero_img(rel_dir, text, teams):
+    """Text-free 1200×675 image for Google (Discover asks for big images without text or logos; owner's OK, 20 Nov 2026).
+    Team colours of the first team named in the text; drawn once and kept (the shape varies with the folder name).
+    The og.png with the headline stays the image for X."""
+    path = os.path.join(ROOT, rel_dir, 'hero.jpg')
+    if not os.path.exists(path):
+        try:
+            from PIL import Image, ImageDraw
+        except Exception:
+            return None
+        hits = sorted((text.find(t[f]), k) for k, t in teams.items() for f in ('name', 'en') if t.get(f) and t[f] in text)
+        if not hits:  # no team named: the team of the first person named
+            byname = {t.get('name'): k for k, t in teams.items()}
+            hits = sorted((text.find(n), byname[q.get('org')]) for q in PEOPLE if q.get('org') in byname
+                          for n in [q['name']] + [a for a in q.get('aliases', []) if len(a) >= 3] if n in text)
+        t = teams.get(hits[0][1], {}) if hits else {}
+        c1, c2 = t.get('c1', HERO_DEFAULT[0]), t.get('c2', HERO_DEFAULT[1])
+        c3 = t.get('c3') or HERO_DEFAULT[2]
+        if sum(int(c3[i:i + 2], 16) for i in (1, 3, 5)) > 300:  # keep the ground dark, so the white line shows
+            c3 = HERO_DEFAULT[2]
+        h = int(hashlib.md5(rel_dir.encode()).hexdigest(), 16)
+        W, H = 1200, 675
+        im = Image.new('RGB', (W, H), c3)
+        d = ImageDraw.Draw(im, 'RGBA')
+        tilt = 160 + h % 220
+        off = (h >> 8) % 260
+        d.polygon([(0, H - off), (W, H - off - tilt), (W, H - off - tilt + 230), (0, H - off + 230)], fill=c1)
+        d.polygon([(0, H - off - 70), (W, H - off - tilt - 70), (W, H - off - tilt - 30), (0, H - off - 30)], fill=c2)
+        pts = []
+        for i in range(41):  # a racing line through the frame
+            x = W * i / 40
+            y = H * (0.30 + 0.18 * __import__('math').sin(i / 40 * 3.1 + (h % 7)) + 0.10 * (i / 40))
+            pts.append((x, y))
+        for wd, al in ((34, 60), (10, 150)):  # draw on its own layer, so the segments do not overlap into stripes
+            lay = Image.new('L', (W, H), 0)
+            ImageDraw.Draw(lay).line(pts, fill=al, width=wd, joint='curve')
+            im.paste(Image.new('RGB', (W, H), 'white'), (0, 0), lay)
+        sq, cols, rows = 26, 9, 5  # chequered corner
+        for r in range(rows):
+            for c in range(cols):
+                if (r + c) % 2 == 0:
+                    d.rectangle([W - (cols - c) * sq - 40, 40 + r * sq, W - (cols - c - 1) * sq - 40, 40 + (r + 1) * sq], fill=(255, 255, 255, 70))
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        im.save(path, 'JPEG', quality=82, optimize=True)
+    return f'{SITE}/{rel_dir}/hero.jpg'
+
+
 def _og_tools():
     if 'ok' not in _OG:
         try:
@@ -2707,6 +2757,7 @@ def build_hubs(arch, flag_of):
         S_ = H.get('story') or {}
         og_h = rules_og(slug, H['title'], 'STORY', S_.get('hook') or H.get('dek', ''), H.get('gp', '') or 'F1グリッドウォーク',
                         rel=f'topics/{slug}/og.png', foot='世界の報道から、ひとつの物語を。')
+        head = head.replace('"mainEntityOfPage"', json.dumps('image') + ': ' + json.dumps([x for x in (hero_img(f'topics/{slug}', H['title'] + ' ' + H.get('dek', ''), TEAMS_ALL), og_h) if x]) + ', "mainEntityOfPage"', 1)
         write(f'topics/{slug}/index.html', page((story_seo_title(H) if H.get('story') else f'{H["title"]}｜' + H.get('sub', '')) + '｜F1グリッドウォーク', H['dek'][:118] + '…', url, '\n'.join(b), head, og_image=og_h))
         out.append((url, H.get('checked', '') + 'T09:00:00+09:00', None, '0.7'))
     hs = hubs_newest()
@@ -3562,7 +3613,8 @@ def build_gp_pages(flag_of, circuits):
              f'<p class="lead">{e(x["gp"])}の週末を、F1 Grid Walk で読めるものすべてで振り返るページです。世界のニュースの要約、コラム、STORY を集めています。</p>',
              '<div class="ent-jump">' + ''.join(jump) + '</div>']
         wk = (load('season.json') or {}).get('weekend') or {}
-        if wk.get('sessions') and wk.get('round') == x.get('round') and _gp_base(wk.get('gp', '')) == _gp_base(x['gp']):
+        now_wk = bool(wk.get('sessions') and wk.get('round') == x.get('round') and _gp_base(wk.get('gp', '')) == _gp_base(x['gp']))
+        if now_wk:
             # this weekend's timetable in Japan time (owner's OK, 24 Oct 2026: GP pages as the weekend's entrance)
             def jst(t):
                 d = datetime.fromisoformat(t.replace('Z', '+00:00')).astimezone(JST)
@@ -3589,7 +3641,12 @@ def build_gp_pages(flag_of, circuits):
         head = (f'<style>{ENT_CSS}{YK_CSS}{ALLCOL_CSS}</style>\n'
                 + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('GPごとに読む', SITE + '/gp/'), (x['gp'], url)]))
         desc = f'{title}（第{x["round"]}戦）のニュース{len(x["arts"])}本の日本語要約と、コラム・STORY をまとめて。' if x.get('round') else f'{title}のニュースとコラムをまとめて。'
-        write(f'gp/{slug}/index.html', page(f'F1 {title}｜' + ('結果・' if x.get('winner') else '') + '日程・ニュースまとめ｜F1グリッドウォーク', desc, url, '\n'.join(b), head, og_type='website'))
+        if now_wk:  # the race week: people search 「〇〇GP 日本時間」 (owner's OK, 20 Nov 2026)
+            gtitle = f'F1 {title}｜日本時間のスケジュール・' + ('結果・' if x.get('winner') else '') + 'ニュース｜F1グリッドウォーク'
+            desc = f'{title}の日本時間のスケジュール（フリー走行・予選・決勝）と、' + desc
+        else:
+            gtitle = f'F1 {title}｜' + ('結果・' if x.get('winner') else '') + '日程・ニュースまとめ｜F1グリッドウォーク'
+        write(f'gp/{slug}/index.html', page(gtitle, desc, url, '\n'.join(b), head, og_type='website'))
         last = max([when(a) for a in x['arts']] + [c['dt'] for c in x['cols']])
         sm.append((url, last.isoformat(timespec='seconds'), None, '0.7'))
     items = ''.join(
@@ -3667,6 +3724,71 @@ ALLARTS = []
 NEWS_TOP = 100   # /news/ shows the newest articles; every month has its own page
 
 
+DIGEST_DAYS = 21
+DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:dg}.dg-list li{counter-increment:dg;padding:14px 0 14px 40px;border-top:1px solid var(--line);position:relative}"
+              ".dg-list li::before{content:counter(dg);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center}"
+              ".dg-list h2{font-size:17px;line-height:1.5;margin:0}.dg-list h2 a{color:var(--ink);text-decoration:none}.dg-list p{margin:6px 0 0;font-size:14.5px;line-height:1.75}"
+              ".dg-list small{display:block;margin-top:6px;font-size:12px;color:var(--muted)}.dg-nav{display:flex;justify-content:space-between;gap:12px;margin:24px 0 0;font-weight:700}")
+
+
+def build_daily_digest(allarts):
+    """news/daily/YYYY-MM-DD/ — the day's main F1 news on one page (owner's OK, 20 Nov 2026).
+    One summary each is thin; ten together make a page worth reading, finding and sharing.
+    The day's news is ranked by how many outlets covered the same story."""
+    tc = {}
+    for a in allarts:
+        if a.get('topic'):
+            tc[a['topic']] = tc.get(a['topic'], 0) + 1
+    days = {}
+    for a in allarts:
+        if a.get('kind', 'news') not in ('news', 'tech', 'rumor'):
+            continue
+        d = when(a).astimezone(JST).date()
+        days.setdefault(d, []).append(a)
+    keys = sorted(days, reverse=True)[:DIGEST_DAYS]
+    sm = []
+    W = '月火水木金土日'
+    for i, d in enumerate(keys):
+        dc = {}  # outlets that day on the same story
+        for a in days[d]:
+            if a.get('topic'):
+                dc[a['topic']] = dc.get(a['topic'], 0) + 1
+        seen, picks = set(), []
+        for a in sorted(days[d], key=lambda a: (-dc.get(a.get('topic'), 1), -tc.get(a.get('topic'), 1), -when(a).timestamp())):
+            k = a.get('topic') or a['id']
+            if k in seen:
+                continue
+            seen.add(k)
+            picks.append(a)
+            if len(picks) >= 10:
+                break
+        if len(picks) < 3:
+            continue
+        lab = f'{d.month}月{d.day}日（{W[d.weekday()]}）'
+        rows = ''.join(
+            f'<li><h2><a href="/news/{e(a["id"])}/" data-track="click/digest/{d.isoformat()}">{e(a["title"])}</a></h2>'
+            f'<p>{e(a.get("summary", ""))}</p><small>{e(a["source"])}' + (f'（この日、ほか {dc[a["topic"]] - 1} 本の報道）' if dc.get(a.get('topic'), 1) > 1 else '') + '</small></li>'
+            for a in picks)
+        nav = ['<span></span>', '<span></span>']
+        if i + 1 < len(keys):
+            nav[0] = f'<a href="/news/daily/{keys[i + 1].isoformat()}/" data-track="click/digest/prev">← {keys[i + 1].month}月{keys[i + 1].day}日</a>'
+        if i > 0:
+            nav[1] = f'<a href="/news/daily/{keys[i - 1].isoformat()}/" data-track="click/digest/next">{keys[i - 1].month}月{keys[i - 1].day}日 →</a>'
+        body = (f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/news/">ニュース一覧</a> › {lab}のまとめ</nav>'
+                f'<p class="ent-k">DAILY F1 NEWS</p><h1>{d.year}年{lab}のF1ニュースまとめ</h1>'
+                f'<p class="lead">この日に世界の媒体が報じたF1ニュースから、主な{len(picks)}本を選びました。多くの媒体が報じた話題ほど上にあります。見出しを押すと、要約と原文へのリンクがあるページに移ります。</p>'
+                f'<ol class="dg-list">{rows}</ol><div class="dg-nav">{nav[0]}{nav[1]}</div>'
+                '<p class="ent-more"><a href="/news/">ニュース一覧</a><a href="/gp/">GPごとに読む</a><a href="/teams/">チームごとに読む</a></p>')
+        url = f'{SITE}/news/daily/{d.isoformat()}/'
+        top3 = '／'.join(a['title'] for a in picks[:3])
+        write(f'news/daily/{d.isoformat()}/index.html', page(
+            f'F1ニュースまとめ {d.year}年{lab}｜主なニュース{len(picks)}本｜F1グリッドウォーク',
+            (f'{d.year}年{lab}のF1の主なニュース{len(picks)}本を日本語で。{top3}')[:150], url, body,
+            f'<style>{ENT_CSS}{DIGEST_CSS}</style>\n', og_type='article'))
+        sm.append((url, max(when(a) for a in picks).isoformat(timespec='seconds'), None, '0.6'))
+    return sm
+
+
 def build_news_lists(allarts, flag_of):
     months = {}
     for a in allarts:
@@ -3694,7 +3816,8 @@ def build_news_lists(allarts, flag_of):
     lst = ('<nav class="crumbs"><a href="/">トップ</a> › ニュース一覧</nav><h1>ニュース一覧</h1>'
            f'<p class="lead">これまでに紹介した世界のF1ニュースは {len(allarts)} 本。各国の記事の見出しを日本語にして、短い要約と原文へのリンクを付けています。'
            f'ここには新しい {len(top)} 本を並べています。それより前の記事は、月ごとの一覧からどうぞ。</p>'
-           + nav() + ways + '<h2 style="font-size:18px;margin:26px 0 0">新しい記事</h2>' + _day_list(top, flag_of)
+           + nav() + ways + (f'<p class="ent-more"><a href="/news/daily/{when(allarts[0]).astimezone(JST).date().isoformat()}/" data-track="click/news/digest">今日のF1ニュースまとめ →</a></p>' if allarts else '')
+           + '<h2 style="font-size:18px;margin:26px 0 0">新しい記事</h2>' + _day_list(top, flag_of)
            + '<section><h2>月ごとの一覧</h2>' + nav() + '</section>')
     write('news/index.html', page('ニュース一覧｜F1 Grid Walk（F1グリッドウォーク）', '世界のF1ニュースを日本語の見出しと要約で。これまでに紹介した記事の一覧です。',
                                   SITE + '/news/', lst, f'<style>{ENT_CSS}</style>\n', og_type='website'))
@@ -3982,6 +4105,7 @@ def main():
 
     # the list pages: the newest articles on /news/, every month on its own page (14 Oct 2026)
     month_sm = build_news_lists(allarts, flag_of)
+    month_sm += build_daily_digest(allarts)
 
     # sitemap
     now = datetime.now(JST).isoformat(timespec='seconds')
