@@ -3900,7 +3900,7 @@ SL_CSS = (".sl-k{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(-
           ".sl-tl li::before{content:'';position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--ink)}"
           ".sl-tl .d{font-size:12px;font-weight:800;color:var(--muted)}.sl-tl a{display:block;color:var(--ink);font-weight:700;line-height:1.55;text-decoration:none}"
           ".sl-tl small{font-size:12px;color:var(--muted)}.sl-kn li{margin:0 0 8px;line-height:1.75}.sl-src{font-size:12px;color:var(--muted)}"
-          ".sl-rel{list-style:none;margin:0;padding:0}.sl-rel li{border-top:1px solid var(--line);padding:10px 0}.sl-rel a{color:var(--ink);font-weight:700;text-decoration:none}"
+          ".sl-rel{list-style:none;margin:0;padding:0}.sl-rel li{border-top:1px solid var(--line);padding:10px 0}.sl-rel a{color:var(--ink);font-weight:700;text-decoration:none}.sl-rel small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}"
           ".sl-st.sl-on{background:#2F7A72;color:#fff;border-color:#2F7A72}.sl-st.sl-done{background:#1F2420;color:#fff;border-color:#1F2420}.sl-end{border-color:#1F2420}"
           ".sl-ppl{display:flex;flex-wrap:wrap;gap:6px}.sl-ppl a{border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:700;color:var(--ink);text-decoration:none}")
 
@@ -3924,7 +3924,7 @@ def build_storylines(arch, allarts):
              f'<p class="sl-k">STORYLINE</p><h1>{e(x["name"])}</h1><p class="lead">{e(x["dek"])}</p>'
              f'<div class="sl-stat"><span class="sl-st sl-{"done" if x.get("status") == "resolved" else "on"}">{"決着済み" if x.get("status") == "resolved" else "追いかけ中"}</span><span>報道 {len(arts)} 本</span><span>{len(srcs)} 媒体</span><span>{d0.month}/{d0.day} → {d1.month}/{d1.day}</span></div>'
              + (f'<div class="sl-now sl-end"><small>結論</small><p>{e(x["conclusion"])}</p></div>' if x.get('status') == 'resolved' and x.get('conclusion') else '')
-             + f'<div class="sl-now"><small>いまの状況・{d1.month}月{d1.day}日（{W[d1.weekday()]}）までの報道から</small>'
+             + f'<div class="sl-now"><small>{"最後の動き" if x.get("status") == "resolved" else "いまの状況"}・{d1.month}月{d1.day}日（{W[d1.weekday()]}）までの報道から</small>'
              f'<b><a href="/news/{e(newest["id"])}/" data-track="click/storyline/{x["slug"]}/latest">{e(tinfo.get("title") or newest["title"])}</a></b>'
              f'<p>{e(tinfo.get("summary") or newest.get("summary", ""))}</p></div>']
         # STORY that used these news: its 「共通して言えること」 and 「分からないこと」
