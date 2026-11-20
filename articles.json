@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T12:40:00+09:00",
+ "updatedAt": "2026-11-20T18:30:00+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -40,9 +40,165 @@
   "lasvegas-fp1-washout": {
    "title": "ラスベガスFP1は雨で全車タイムなし",
    "summary": "ラスベガスGPのFP1は雨とアクアプレーニングで流れ、22人全員がタイムを記録できなかった。走ったのは17人で、最初にコースに出たペレスが計時表の形式上1位に載った。ドライバーは「アイスバーンのよう」と語った。土日は乾く予報で、FP2は走れる見込みだ。"
+  },
+  "redbull-vegas-balance": {
+   "title": "レッドブル、ラスベガスで不調とフロント変更",
+   "summary": "ラスベガスGPのFP2でフェルスタッペンはパワー不足とバランスの悪さを訴え、僚友ハジャーは4番手だった。技術責任者のワシェは原因をエネルギーマネジメントとMGU-Kの配分によるバランスと説明した。チームはフロントウイング翼端のダイブプレーンを低く短くする変更を持ち込み、土曜朝に試す予定だ。"
   }
  },
  "articles": [
+  {
+   "id": "en-therace-vegas-fp2-wet",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes",
+    "alpine",
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "lasvegas-fp2-wet",
+   "title": "ラスベガスFP2、ラッセルがガスリー抑え最速　路面は乾ききらず",
+   "summary": "ラスベガスGPのフリー走行2回目は濡れた路面で行われ、メルセデスのラッセルが1分47秒272でトップに立った。アルピーヌのガスリーが0.071秒差の2番手で、大きなオーバーステアで最後の区間を失った。3番手はルクレール、4番手はレッドブルのハジャーで、ノリスは7番手、アントネッリは8番手だった。ノリスらが開始から3分の1ほどでインターミディエイトに替え、路面は改善したがスリックには至らなかった。フェルスタッペンは9周のみで13番手となり、パワー不足を訴えた。",
+   "orig": "What happened in wet Las Vegas Grand Prix FP2",
+   "url": "https://www.the-race.com/formula-1/george-russell-denies-pierre-gasly-wet-las-vegas-gp-fp2/",
+   "published": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-redbull-vegas-balance",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "circuit": "lasvegas",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "redbull-vegas-balance",
+   "title": "レッドブル、ラスベガスで勝機見えず　フェルスタッペンは「普通じゃない」",
+   "summary": "レッドブルはラスベガスのFP2でバランスに苦しみ、ハジャーが4番手に入った一方でフェルスタッペンは終盤までガレージにいた。出走後に無線でパワー不足を訴え、「普通じゃない」と語った。技術責任者のワシェは原因をパワーユニットではなく、エネルギーマネジメントとMGU-Kの出力配分によるバランスと説明した。グリップが低い中で調整に時間が要るという。ワシェは「楽観的になったことはない」と述べ、フロントウイング翼端の小変更は土曜朝に試す予定だ。",
+   "orig": "Keine Siegchance in Las Vegas? Red Bull steht vor großen Problemen",
+   "url": "https://www.motorsport-total.com/formel-1/news/keine-siegchance-in-las-vegas-red-bull-steht-vor-grossen-problemen-26112016",
+   "published": "2026-11-20T10:09:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-redbull-vegas-update",
+   "kind": "tech",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "テクニカル",
+   "circuit": "lasvegas",
+   "teams": [
+    "redbull",
+    "mercedes",
+    "mclaren",
+    "ferrari"
+   ],
+   "topic": "redbull-vegas-balance",
+   "title": "レッドブルがフロントウイングのダイブプレーンを変更　ラスベガスの各車アップデート",
+   "summary": "レッドブルはラスベガスGPでRB22のフロントウイング翼端にあるダイブプレーンを低く短くし、ウイング外側の流れを安定させる狙いだ。FIAには「ローカルロード」の変更として届けられ、ラスベガス専用ではない性能向上とみられる。メルセデスは最大規模の4項目で、リアウイングの小さな要素の除去や、低温に合わせたエンジンカバー開口の縮小などを施した。マクラーレンはフロアを刷新し、フェラーリはフロアで空気抵抗を減らした。残り3戦に向け、レッドブルはさらなる性能向上の余地を見ている。",
+   "orig": "Red Bull blijft doorontwikkelen voor Verstappen en komt met nieuwe ingreep in Las Vegas",
+   "url": "https://www.f1maximaal.nl/formule-1/red-bull-blijft-doorontwikkelen-voor-verstappen-en-komt-met-nieuwe-ingreep-in-las-vegas",
+   "published": "2026-11-20T04:00:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-hamilton-vegas-slow",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "チーム",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari",
+    "cadillac"
+   ],
+   "topic": "hamilton-vegas-fp2-ferrari",
+   "title": "ハミルトン、ラスベガスのFP2で6番手　「ストレートがかなり遅い」と懸念",
+   "summary": "フェラーリのハミルトンはラスベガスGPのFP2で6番手となり、1回目がほぼ流れたため本格的に走れたのはこのセッションだけだった。本人は直線の最高速が「かなり遅い」と述べ、土曜のFP3で状況を見極めるとした。フェラーリは金曜に強いと言われるが、2回目までにバランスが整わないのが通例だとも語った。セッション後の無線ではエンジニアがチェッカーを受けるべきだったと伝え、ハミルトンは「もっと早く聞きたかった」と返した。走行中にはボッタスのキャデラックと絡む場面もあった。",
+   "orig": "Hamilton slaat alarm bij Ferrari na vrijdag in Las Vegas: 'Behoorlijk langzaam'",
+   "url": "https://www.f1maximaal.nl/formule-1/hamilton-slaat-alarm-bij-ferrari-na-vrijdag-in-las-vegas-behoorlijk-langzaam",
+   "published": "2026-11-20T08:19:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-briatore-alpine",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "チーム",
+   "circuit": "lasvegas",
+   "teams": [
+    "alpine"
+   ],
+   "topic": "briatore-alpine-progress",
+   "title": "ブリアトーレ、アルピーヌは「就任時よりずっと良い」　2027年のグッチ提携にも言及",
+   "summary": "アルピーヌのエグゼクティブアドバイザー、ブリアトーレ（76）がラスベガスで今季を振り返り、満足度は「どちらとも言えない」と語った。チームはコンストラクターズ6位で、終盤に多くのポイントを失わなければ5位だったと主張している。2024年に6位、2025年に最下位の10位だった状況から「大きな一歩」を踏んだと強調した。上位に追いつけるかとの問いには「可能だ」と述べ、ベネトン、ルノー時代のタイトル獲得を例に挙げた。2027年にはマクラーレンから0.1〜0.3秒差まで迫れれば大成功だという。",
+   "orig": "Flavio Briatore: Alpine steht heute viel besser da als bei meinem Amtsantritt",
+   "url": "https://www.motorsport-total.com/formel-1/news/flavio-briatore-alpine-steht-heute-viel-besser-da-als-bei-meinem-amtsantritt-26112014",
+   "published": "2026-11-20T09:18:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-villeneuve-mercedes-2027",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "分析",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "villeneuve-mercedes-2027",
+   "title": "ヴィルヌーヴ「メルセデスは2027年に圧倒的ではない」　ラッセルには挽回を促す",
+   "summary": "元王者ヴィルヌーヴはスカイの取材で、メルセデスが2027年に再び圧倒的な存在になるとは見ていないと語った。今季は序盤に最大得点を重ねたが、開発に集中を欠いて数戦前から先頭を走れていないという。開幕戦メルボルンで勝ったラッセルは、その後アントネッリに主導権を渡し、期待外れのシーズンと評された。ヴィルヌーヴは2015年に最後の3戦を勝って翌年の王座につなげたロズベルグを例に、ラッセルが好結果で締めるべきだと述べた。ウィリアムズのチャドウィックは、現行車に合わないスタイルが一因で自信の回復が必要だと指摘した。",
+   "orig": "Jacques Villeneuve: Mercedes wird 2027 nicht das dominierende Team sein",
+   "url": "https://www.motorsport-total.com/formel-1/news/jacques-villeneuve-mercedes-wird-2027-nicht-das-dominierende-team-sein-26112012",
+   "published": "2026-11-20T08:06:00+01:00"
+  },
+  {
+   "id": "en-therace-perez-cadillac-operations",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "チーム",
+   "circuit": "lasvegas",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "perez-cadillac-operations",
+   "title": "ペレス、キャデラックの運営面に不満　「もっと鋭くあるべき」",
+   "summary": "キャデラックのペレスは、参戦初年度の終盤になっても運営面の弱さが残るとして、チームは「もっと鋭くあるべきだ」と語った。直近2回のトリプルヘッダーのピット作業は平均4.82秒で今季最悪の水準で、直近19回で3秒を切ったのは1回だけだった。ブラジルでは自身の最初のピットが9.68秒かかり、ボッタスは車輪ナットの不具合でスタートできなかった。ペレスは「ただ参加するためにF1へ戻ったのではない」と述べ、2027年を重要な年と位置づけた。ボッタスの残留は気が散る要素が減ると歓迎した。",
+   "orig": "The Cadillac 'weakness' still frustrating Perez",
+   "url": "https://www.the-race.com/formula-1/the-cadillac-weakness-still-frustrating-perez/",
+   "published": "2026-11-20T12:00:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-brown-norris-verstappen",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ドライバー",
+   "circuit": "lasvegas",
+   "teams": [
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "brown-norris-verstappen",
+   "title": "ブラウン「ノリスを誰とも替えない」　フェルスタッペンは「ミスをしない」と評価",
+   "summary": "マクラーレンのブラウンCEOはラスベガスで、ノリスが今季は過去最高の走りを見せており、グリッド上の誰とも替えないと語った。最大の変化は自信で、悪いセッションからの立ち直りも早いと評価している。ブラジルGPでノリスが挙げた通算14勝目の走りは「信じられない」と称賛した。一方でフェルスタッペンについては「ミスをしない」ドライバーで、難しい条件が向くとし、グリッド降格が多くても油断できないと述べた。フェルスタッペンはレッドブルと少なくとも2030年まで契約があると伝えられ、ノリスもマクラーレン残留を見込む。",
+   "orig": "Zak Brown: Ich würde Lando Norris gegen niemanden eintauschen!",
+   "url": "https://www.motorsport-total.com/formel-1/news/zak-brown-ich-wuerde-lando-norris-gegen-niemanden-eintauschen-26112013",
+   "published": "2026-11-20T08:30:00+01:00"
+  },
   {
    "id": "de-motorsporttotal-wurz-bottas-herta",
    "kind": "news",
@@ -1497,147 +1653,6 @@
    "orig": "Lewis Hamilton grilled on key Project 679 decision as Ferrari steps up F1 2027 plans",
    "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-project-679-decision",
    "published": "2026-11-17T07:01:00+00:00"
-  },
-  {
-   "id": "de-motorsportmagazin-vegas-aduo-turbo-antonelli",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "テクニカル",
-   "circuit": "lasvegas",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "mercedes-aduo-turbo-vegas",
-   "title": "メルセデス、ラスベガスにADUOのターボ更新　搭載はアントネッリのみ",
-   "summary": "メルセデスはラスベガスGPでターボの更新を投入するが、搭載するのはアントネッリだけでラッセルには載せない。ADUOは燃焼エンジンの出力がベンチマークのレッドブル・フォードより2%超劣るメーカーに認められる枠で、メルセデスは今季と来季に1回ずつ使える。ターボは年間4基までで、アントネッリは3基目までの使用、ラッセルはエンジントラブルで5基を使っており、新品を載せれば5グリッド降格になる。ウォルフ代表は、得られる性能向上は小さい見込みで、ラッセルのグリッドを守ることを優先すると説明した。",
-   "orig": "Mercedes bringt ADUO-Update: Neuer Formel-1-Turbo in Las Vegas - nur für Kimi Antonelli",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301260-mercedes-zieht-aduo-update-neuer-formel-1-turbo-in-las-vegas-nur-fuer-kimi-antonelli/",
-   "published": "2026-11-17T15:05:00+01:00"
-  },
-  {
-   "id": "nl-gpblog-brown-piastri-klikt-nog-niet",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-mclaren-future",
-   "title": "ブラウンCEO、ピアストリの苦戦を語る「新車がまだ合っていない」",
-   "summary": "マクラーレンのブラウンCEOは、スカイスポーツF1のポッドキャストで、ピアストリが今季ノリスに苦戦している理由を語った。新規則でグリッドの序列が入れ替わったと述べ、フェラーリやメルセデスのチームメート間の差を例に挙げた。ピアストリの強みだった高速コーナーは、新車ではアクセルを緩めてエネルギーを節約する場面が増え、運転スタイルに合いにくいという。ブラウンはノリスを「これほど良く走る姿は見たことがない」と評しつつ、2人の差は極端ではなく、チーム内の調和は心配していないと話した。",
-   "orig": "Brown verklaart waarom Piastri worstelt bij McLaren: 'Het klikt nog niet'",
-   "url": "https://www.gpblog.com/nl/nieuws/brown-verklaart-waarom-piastri-worstelt-bij-mclaren-het-klikt-nog-niet",
-   "published": "2026-11-17T12:01:00+01:00"
-  },
-  {
-   "id": "nl-gpblog-hinchcliffe-ferrari-priority-dilemma",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "分析",
-   "teams": [
-    "ferrari",
-    "mclaren",
-    "redbull"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "ヒンチクリフ「フェルスタッペンがマクラーレンに突きつけた難題、今はフェラーリに」",
-   "summary": "元インディカー・ドライバーのヒンチクリフは、ポッドキャスト「F1ネーション」で、フェラーリは2台の差が小さく優先順位を決めにくいと指摘した。昨季はフェルスタッペンが複数のレースで勢いを増し、マクラーレンは首位を走るピアストリを優先できなかったという見方だ。今季のレッドブルはフェルスタッペンとハジャーの序列がはっきりしているのに対し、フェラーリは違うと述べた。「シーズン途中で1人を優先するのは大きな賭け」で、非常に難しい状況だと見る。ハミルトンは261点、ルクレールは251点で並んでいる。",
-   "orig": "'Verstappen veroorzaakt indirect problemen tussen Hamilton en Leclerc'",
-   "url": "https://www.gpblog.com/nl/nieuws/verstappen-veroorzaakt-indirect-problemen-tussen-hamilton-en-leclerc",
-   "published": "2026-11-17T07:01:00+01:00"
-  },
-  {
-   "id": "en-planetf1-mercedes-ferrari-rubbish-race",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "決勝",
-   "circuit": "interlagos",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "mercedes-title-ferrari-race",
-   "title": "メルセデス陣営、フェラーリのブラジルGPを酷評　アリソン「脅威にならなかった」",
-   "summary": "メルセデスのアリソン技術責任者は、ブラジルGPのフェラーリは内容の悪いレースで、メルセデスが崩れても脅威には見えなかったと語った。ロード副代表も、常にフェラーリの前を走っておりタイトルは取れたと話した。メルセデスはアントネッリとラッセルがスピンして今季初めて表彰台を逃したが、コンストラクターズ王者を決めた。フェラーリは両車がエンジン交換ペナルティで後方から出て8位と9位の計6点にとどまり、ハミルトンは1周目に20番手から11台を抜いたがタイヤの過熱で後退した。",
-   "orig": "Ferrari under scrutiny for 'rubbish race' after Mercedes F1 title win",
-   "url": "https://www.planetf1.com/news/mercedes-ferrari-rubbish-race",
-   "published": "2026-11-17T15:06:00+00:00"
-  },
-  {
-   "id": "nl-gpblog-alonso-dakar-aston",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-dakar",
-   "title": "アロンソ、ダカール参戦をアストンマーティンが正式発表　「F1が最優先」",
-   "summary": "アストンマーティンは、アロンソが2027年1月のダカール・ラリーに出場すると17日に正式発表した。アロンソはF1でも2027年にアストンマーティンに残る。ローブとモラエスを加えた3人が、プロドライブが開発・運営する専用車「ドレッドノート」で走り、ブランドとして初のダカール挑戦になる。アロンソは45歳で、2020年のトヨタ時代以来2度目の出場となり、ナビゲーターはコーマが再び務める。本人は「F1が引き続き最優先」と述べた。大会は1月9日にポルトガルを出発し、23日にモロッコのマラケシュで終わる。",
-   "orig": "Alonso verrast met nieuw avontuur: Aston Martin bevestigt deelname aan Dakar Rally",
-   "url": "https://www.gpblog.com/nl/breaking-news/alonso-verrast-met-nieuw-avontuur-aston-martin-bevestigt-deelname-aan-dakar-rally",
-   "published": "2026-11-17T10:10:00+01:00"
-  },
-  {
-   "id": "en-planetf1-albon-williams-2027-fundamental",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
-   "teams": [
-    "williams"
-   ],
-   "topic": "williams-2027-development",
-   "title": "アルボン、ウィリアムズの2027年型は「根本的な問題」に対処と説明",
-   "summary": "アルボンは、ウィリアムズが今季の不振の原因となった根本的な問題を2027年型FW50で解決しようとしていると語った。バランスの問題や車重超過への工場の対応に良い兆しを感じており、開発の進み具合もドライバーに率直に共有されているという。「まだ早いが、見えているものは良い」と述べた。ウィリアムズは残り3戦で12点、アストンマーティンを5点上回るにとどまり、モナコGP以降で得た得点は1点だけだ。それでも、メキシコGPでの最速ピットストップを例に、スタッフの士気は高いと話した。",
-   "orig": "Williams targets 'fundamental' problems with F1 2027 car design",
-   "url": "https://www.planetf1.com/news/alex-albon-williams-problems",
-   "published": "2026-11-17T09:02:00+00:00"
-  },
-  {
-   "id": "en-therace-alonso-dakar-aston-2027",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-dakar",
-   "title": "アロンソが2027年1月のダカール・ラリーに参戦　アストンマーティンの新プロジェクトで",
-   "summary": "アロンソは2027年1月9日から23日のダカール・ラリーに、アストンマーティンの新プロジェクトから出場する。F1プレシーズンテストの約1カ月前にあたり、ラリーのルートは中東情勢のためサウジアラビアからポルトガルとモロッコに移された。チームメイトはWRC9回王者のローブと世界ラリーレイド王者のモラエスで、ナビゲーターは2020年と同じコーマが務める。10月には出場に消極的だったが、2027年もアストンマーティン残留を決めたことで両立を決めたという。2020年はトヨタで13位だった。",
-   "orig": "Alonso to contest 2027 Dakar Rally with new Aston Martin project",
-   "url": "https://www.the-race.com/formula-1/fernando-alonso-2027-dakar-rally-new-aston-martin-project/",
-   "published": "2026-11-17T09:00:00+00:00"
-  },
-  {
-   "id": "nl-gpblog-buxton-piastri-lost",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "ドライバー",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-mclaren-future",
-   "title": "ピアストリは「道を見失っている」　バクストン氏が不振に懸念",
-   "summary": "F1ジャーナリストのバクストン氏は、ポッドキャスト「Up To Speed」でピアストリの現状に懸念を示した。ピアストリは新世代のマシンへの適応に苦労していると認め、ブラジルGPではマシンに安心感があったと話した。バクストン氏は「シーズンが終わるのを待っているようだ」と述べ、「砂の上に基礎を築いている」とも例えた。背景として、ウェバー氏らとのマネジメント契約が終わったことにも触れている。ピアストリは今季ランキング7位の152点で、チームメートのノリスは6位の246点にいる。",
-   "orig": "F1-journalist maakt zich zorgen om Piastri: 'Hij lijkt de weg kwijt'",
-   "url": "https://www.gpblog.com/nl/nieuws/f1-journalist-maakt-zich-zorgen-om-piastri-hij-lijkt-de-weg-kwijt",
-   "published": "2026-11-17T09:03:00+01:00"
   }
  ]
 }
