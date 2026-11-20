@@ -208,7 +208,7 @@ def bottom_tabs(canonical):
     """Phone bottom tab bar on every page (owner's choice A, 11 Oct 2026)."""
     path = canonical.replace(SITE, '')
     cur = 'drv' if path.startswith(('/drivers/', '/deep/rules/person-')) else 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith(('/news/', '/gp/', '/teams/')) or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
-    items = [('news', '/#news', 'ニュース'), ('data', '/?v=data', 'データ'), ('col', '/columns/', 'コラム'), ('drv', '/drivers/', 'ドライバー'), ('rule', '/deep/rules/', '用語')]
+    items = [('news', '/#news', 'ニュース'), ('data', '/#data', 'データ'), ('col', '/columns/', 'コラム'), ('drv', '/drivers/', 'ドライバー'), ('rule', '/deep/rules/', '用語')]
     return ('<nav class="bt" aria-label="サイト内の移動">' + ''.join(
         f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
 
@@ -3857,6 +3857,18 @@ def build_team_pages(allarts, flag_of, teams):
 
 ARCH_IDS = {}
 ALLARTS = []
+DUP_OF = {}
+
+
+def norm_src_url(u):
+    """The original article's address, so the same article is recognised: https, no #, no tracking parameters, no trailing slash."""
+    u = (u or '').strip()
+    if not u:
+        return ''
+    u = re.sub(r'^http://', 'https://', u).split('#')[0]
+    u = re.sub(r'([?&])(utm_[a-z]+|fbclid|gclid|mc_cid|mc_eid|ref)=[^&]*', r'\1', u)
+    u = re.sub(r'[?&]+$', '', re.sub(r'\?&+', '?', u))
+    return u.rstrip('/').lower()
 NEWS_TOP = 100   # /news/ shows the newest articles; every month has its own page
 
 
@@ -3880,7 +3892,7 @@ STORYLINES = [
      'dek': '2027年もレーシングブルズに残ることが決まった。そこまでのローソンをめぐる報道を、最初から順に追います。'},
     {'slug': 'cadillac-2027-drivers', 'name': 'キャデラック、2027年のドライバー',
      'topics': ['cadillac-2027-drivers-rumor', 'cadillac-2027-lineup', 'cadillac-ugochukwu-2027', 'cadillac-bottas-2027', 'herta-cadillac-seat-comment', 'cadillac-bottas-herta', 'perez-cadillac-2029'],
-     'status': 'resolved',
+     'status': 'resolved', 'decided': '2026-11-18',
      'conclusion': 'キャデラックは2027年もボッタスを起用し、ハータの昇格は見送られた。',
      'dek': '2027年もボッタスが走ることになった。そこまでのキャデラックのドライバーをめぐる報道を、最初から順に追います。'},
     {'slug': 'piastri-mclaren-future', 'name': 'ピアストリとマクラーレンのこれから',
@@ -3914,7 +3926,7 @@ SL_CSS = (".sl-k{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(-
           ".sl-tl .d{font-size:12px;font-weight:800;color:var(--muted)}.sl-tl a{display:block;color:var(--ink);font-weight:700;line-height:1.55;text-decoration:none}"
           ".sl-tl small{font-size:12px;color:var(--muted)}.sl-kn li{margin:0 0 8px;line-height:1.75}.sl-src{font-size:12px;color:var(--muted)}"
           ".sl-rel{list-style:none;margin:0;padding:0}.sl-rel li{border-top:1px solid var(--line);padding:10px 0}.sl-rel a{color:var(--ink);font-weight:700;text-decoration:none}.sl-rel small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}"
-          ".sl-st.sl-on{background:#2F7A72;color:#fff;border-color:#2F7A72}.sl-st.sl-done{background:#1F2420;color:#fff;border-color:#1F2420}.sl-end{border-color:#1F2420}"
+          ".sl-st.sl-on{background:#2F7A72;color:#fff;border-color:#2F7A72}.sl-st.sl-done{background:#1F2420;color:#fff;border-color:#1F2420}.sl-end{border-color:#1F2420}.sl-dec{display:block;font-size:12px;font-weight:900;letter-spacing:.08em;color:#a0522d;margin:2px 0}"
           ".sl-ppl{display:flex;flex-wrap:wrap;gap:6px}.sl-ppl a{border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:700;color:var(--ink);text-decoration:none}")
 
 
@@ -3936,7 +3948,7 @@ def build_storylines(arch, allarts):
         b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/storyline/">STORYLINE</a> › {e(x["name"])}</nav><div class="xp">'
              f'<p class="sl-k">STORYLINE</p><h1>{e(x["name"])}</h1><p class="lead">{e(x["dek"])}</p>'
              f'<div class="sl-stat"><span class="sl-st sl-{"done" if x.get("status") == "resolved" else "on"}">{"決着済み" if x.get("status") == "resolved" else "追いかけ中"}</span><span>報道 {len(arts)} 本</span><span>{len(srcs)} 媒体</span><span>{d0.month}/{d0.day} → {d1.month}/{d1.day}</span></div>'
-             + (f'<div class="sl-now sl-end"><small>結論</small><p>{e(x["conclusion"])}</p></div>' if x.get('status') == 'resolved' and x.get('conclusion') else '')
+             + (f'<div class="sl-now sl-end"><small>結論' + (f'・{int(x["decided"][5:7])}月{int(x["decided"][8:10])}日に決着' if x.get('decided') else '') + f'</small><p>{e(x["conclusion"])}</p></div>' if x.get('status') == 'resolved' and x.get('conclusion') else '')
              + f'<div class="sl-now"><small>{"最後の動き" if x.get("status") == "resolved" else "いまの状況"}・{d1.month}月{d1.day}日（{W[d1.weekday()]}）までの報道から</small>'
              f'<b><a href="/news/{e(newest["id"])}/" data-track="click/storyline/{x["slug"]}/latest">{e(tinfo.get("title") or newest["title"])}</a></b>'
              f'<p>{e(tinfo.get("summary") or newest.get("summary", ""))}</p></div>']
@@ -3951,7 +3963,9 @@ def build_storylines(arch, allarts):
         days = {}
         for a in arts:
             days.setdefault(when(a).astimezone(JST).date(), []).append(a)
+        dec = x.get('decided') if x.get('status') == 'resolved' else None
         tl = ''.join(f'<li><span class="d">{d.month}月{d.day}日（{W[d.weekday()]}）</span>'
+                     + ('<span class="sl-dec">── ここで決着 ──</span>' if dec == d.isoformat() else '')
                      + ''.join(f'<a href="/news/{e(a["id"])}/" data-track="click/storyline/{x["slug"]}/tl">{e(a["title"])}</a><small>{e(a["source"])}</small>' for a in v) + '</li>'
                      for d, v in sorted(days.items()))
         b.append(f'<h2 class="sl-h">TIMELINE　始まりから今まで</h2><ol class="sl-tl">{tl}</ol>')
@@ -3981,14 +3995,14 @@ def build_storylines(arch, allarts):
               (x['dek'] + f' 報道{len(arts)}本、{len(srcs)}媒体。')[:150], url, '\n'.join(b), f'<style>{XP_CSS}{SL_CSS}</style>\n', og_type='article'))
         sm.append((url, d1.isoformat(timespec='seconds'), 'daily', '0.7'))
         cards.append((d1, f'<li><a href="/storyline/{x["slug"]}/" data-track="click/storyline/index"><b>{e(x["name"])}</b></a>'
-                          f'<small>報道 {len(arts)} 本 · 最新 {d1.month}/{d1.day}</small></li>', done))
+                          f'<small>' + (f'決着 {int(x["decided"][5:7])}/{int(x["decided"][8:10])} · ' if done and x.get('decided') else '') + f'報道 {len(arts)} 本 · 最終更新 {d1.month}/{d1.day}</small></li>', done))
     if cards:
         body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › STORYLINE</nav><div class="xp"><p class="sl-k">STORYLINE</p><h1>STORYLINE</h1>'
                 '<p class="lead">F1の話題を、始まりから今まで1ページで追えるようにしました。新しく動いた順です。</p>'
                 '<h2 class="sl-h">追いかけ中</h2><ul class="sl-rel">' + ''.join(c for _, c, dn in sorted(cards, key=lambda t: t[0], reverse=True) if not dn) + '</ul>'
                 + ('<h2 class="sl-h">決着済み</h2><ul class="sl-rel">' + ''.join(c for _, c, dn in sorted(cards, key=lambda t: t[0], reverse=True) if dn) + '</ul>' if any(dn for *_, dn in cards) else '') + '</div>')
-        write('storyline/index.html', page('STORYLINE｜続いているF1の話題を始まりから追う｜F1グリッドウォーク',
-              '続いているF1の話題を、始まりから今まで1ページで追えるようにしたページの一覧。', SITE + '/storyline/', body,
+        write('storyline/index.html', page('STORYLINE｜F1の話題を始まりから決着まで追う｜F1グリッドウォーク',
+              'F1の続いている話題と決着した話題を、最初の報道から最新の動き・決着まで時系列で追えるページの一覧。', SITE + '/storyline/', body,
               f'<style>{XP_CSS}{SL_CSS}</style>\n', og_type='website'))
         sm.append((SITE + '/storyline/', max(c[0] for c in cards).isoformat(timespec='seconds'), 'daily', '0.6'))
     return sm
@@ -4339,11 +4353,24 @@ def main():
         arch['topics'][slug] = {'title': t.get('title', ''), 'summary': t.get('summary', '')}
 
     allarts = sorted(arch['articles'].values(), key=when, reverse=True)
+    # the same original article taken in twice (outside review, owner's OK, 20 Nov 2026): the first one taken in is the
+    # page; the later one keeps its page (links to it still work) but points to the first and is left out of every list
+    first = {}
+    for a in sorted(allarts, key=lambda a: (when(a), a['id'])):
+        k_ = norm_src_url(a.get('url'))
+        if not k_:
+            continue
+        if k_ in first:
+            DUP_OF[a['id']] = first[k_]
+        else:
+            first[k_] = a['id']
+    allpages = allarts
+    allarts = [a for a in allarts if a['id'] not in DUP_OF]
     region_of = {}
-    for a in allarts:
+    for a in allpages:
         region_of.setdefault(a['source'], a.get('region'))
     flag_of = lambda a: flag_map.get(region_of.get(a['source']) or '', 'xx')
-    ARCH_IDS.update({a['id']: a for a in allarts})
+    ARCH_IDS.update({a['id']: a for a in allpages})
     ALLARTS[:] = allarts
     plan_gps(allarts, circuits)
     team_pages = {k for k in teams if sum(1 for a in allarts if k in (a.get('teams') or [])) >= GP_MIN}
@@ -4354,9 +4381,9 @@ def main():
             by_topic.setdefault(a['topic'], []).append(a)
 
     changed = 0
-    for i, a in enumerate(allarts):
+    for i, a in enumerate(allpages):
         k = kind_of(a)
-        url = f'{SITE}/news/{a["id"]}/'
+        url = f'{SITE}/news/{DUP_OF.get(a["id"], a["id"])}/'  # a duplicate's canonical is the first page
         d = when(a)
         lang = LANG.get(a.get('lang'), (a.get('lang') or '').upper())
         desc = re.sub(r'\s+', ' ', a.get('summary', ''))
@@ -4486,6 +4513,10 @@ def main():
             body.append(term_assets(nused))
         head = ((f'<style>{DEEP_CSS}</style>\n' if dg else '') + (f'<style>{RULES_CSS}</style>\n' if nused else '') + f'<meta property="article:published_time" content="{when(a).isoformat(timespec="seconds")}">\n'
                 f'<script type="application/ld+json">{crumbs_ld}</script>\n' + ld(art_ld))
+        if a['id'] in DUP_OF:
+            head = '<meta name="robots" content="noindex,follow">\n' + head
+            body.insert(0, f'<p class="lead" style="border:1px solid var(--line);border-radius:12px;padding:10px 14px">この記事は同じ原文を2度紹介していました。'
+                           f'<a href="/news/{e(DUP_OF[a["id"]])}/">はじめに紹介したページはこちら →</a></p>')
         if write(f'news/{a["id"]}/index.html',
                  page(f'{a["title"]}｜F1グリッドウォーク', desc, url, '\n'.join(body), head, og_image=og_url)):
             changed += 1
@@ -4497,7 +4528,8 @@ def main():
 
     # sitemap
     now = datetime.now(JST).isoformat(timespec='seconds')
-    urls = [(SITE + '/', now, 'hourly', '1.0'), (SITE + '/news/', now, 'hourly', '0.8')]
+    newest_ = when(allarts[0]).isoformat(timespec='seconds') if allarts else now  # when the content changed, not when we built (20 Nov 2026)
+    urls = [(SITE + '/', newest_, 'hourly', '1.0'), (SITE + '/news/', newest_, 'hourly', '0.8')]
     urls += [(f'{SITE}/news/{a["id"]}/', when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]
     urls += [u for u in build_lenses(arch, flag_map) if u[1]]
     urls += [u for u in build_deeps(arch, flag_map) if u[1]]

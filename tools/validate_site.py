@@ -63,10 +63,13 @@ for p in pages():
     if not re.search(r'<title>[^<]+</title>', h):
         err(f'{short}: no <title>')
     can = re.findall(r'<link rel="canonical" href="([^"]+)"', h)
+    noidx_ = bool(re.search(r'<meta name="robots" content="[^"]*noindex', h))
     if len(can) != 1:
         err(f'{short}: {len(can)} canonical links')
-    elif can[0] != u:
+    elif can[0] != u and not noidx_:  # a left-out duplicate points to the first page on purpose
         err(f'{short}: canonical is {can[0]}')
+    if re.search(r'href="/\?[^"]+"', h):
+        warn(f'{short}: internal link with a query (?...)')
     if '<h1' not in h:
         warn(f'{short}: no <h1>')
     ids = re.findall(r'\sid="([^"]+)"', h)
@@ -108,6 +111,23 @@ for p in pages():
     budget = 250_000 if short in ('/', '/deep/rules/') else 150_000 if re.match(r'/(teams/[a-z]+|news/\d{4}-\d\d)/$', short) else None
     if budget and size > budget:
         warn(f'{short}: {size // 1000}KB (budget {budget // 1000}KB)')
+
+# the same original article on two indexable news pages
+srcs = {}
+for p in pages():
+    short = url_of(p).replace(SITE, '')
+    if not re.match(r'/news/[a-z]{2}-[a-z0-9-]+/$', short):
+        continue
+    h = open(p, encoding='utf-8', errors='replace').read()
+    if re.search(r'<meta name="robots" content="[^"]*noindex', h):
+        continue
+    m = re.search(r'"isBasedOn": \{"@type": "NewsArticle", "url": "([^"]+)"', h)
+    if m:
+        k = re.sub(r'^http://', 'https://', m.group(1)).split('#')[0].rstrip('/').lower()
+        srcs.setdefault(k, []).append(short)
+for k, v in srcs.items():
+    if len(v) > 1:
+        err(f'duplicate source {k}: ' + ', '.join(v))
 
 # sitemap
 sm = open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read()
