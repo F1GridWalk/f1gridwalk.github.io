@@ -2471,11 +2471,80 @@ def hubs_newest():
     return sorted(HUBS.values(), key=key, reverse=True)
 
 
+STORY_TAGS = {}
+
+
+def story_tags(H):
+    """Who and which team a STORY is about (named in its title, dek or hook), for the filters on /topics/
+    and for 「ほかの STORY」 (STORY desk's proposal, owner's OK, 20 Nov 2026). Japanese = a name written in kanji."""
+    if H['slug'] in STORY_TAGS:
+        return STORY_TAGS[H['slug']]
+    S = H.get('story') or {}
+    text = ' '.join([H.get('title', ''), H.get('dek', ''), S.get('hook', '')])
+    byname = {t.get('name'): k for k, t in TEAMS_ALL.items()}
+    ppl = []
+    for q in PEOPLE:
+        nm = [a for a in [q['name']] + (q.get('aliases') or []) if len(a) >= 3 and not re.fullmatch(r'[A-Za-z .]+', a)]
+        pos = [text.find(a) for a in nm if _kw_hit(a, text)]
+        if pos:
+            ppl.append((min(pos), q))
+    ppl = [q for _, q in sorted(ppl, key=lambda x: x[0])]
+    teams = []
+    for q in ppl:
+        k = byname.get(q.get('org'))
+        if k and k not in teams:
+            teams.append(k)
+    for k, t in TEAMS_ALL.items():
+        if k not in teams and t.get('name') and t['name'] in text:
+            teams.append(k)
+    jp = any(re.search(r'[一-龯]', q['name']) for q in ppl)
+    STORY_TAGS[H['slug']] = r = {'people': ppl, 'teams': teams, 'jp': jp}
+    return r
+
+
+STORY_FILTER_CSS = (".st-f{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 4px}.st-f button{border:1px solid var(--line);background:var(--surface);color:var(--ink);"
+                    "border-radius:999px;padding:5px 11px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}.st-f button i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}"
+                    ".st-f button small{margin-left:4px;color:var(--muted);font-weight:600}.st-f button.on{background:var(--ink);color:#fff;border-color:var(--ink)}.st-f button.on small{color:#ddd}"
+                    ".st-fl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--muted);margin:14px 0 0}")
+STORY_FILTER_JS = """<script>(function(){var b=document.querySelectorAll('.st-f button'),li=document.querySelectorAll('#st-list li');
+b.forEach(function(x){x.addEventListener('click',function(){var on=!x.classList.contains('on');b.forEach(function(y){y.classList.remove('on')});
+if(on)x.classList.add('on');var k=on?x.dataset.k:'',v=on?x.dataset.v:'';li.forEach(function(l){var ok=!k||(k==='jp'?l.dataset.jp:((' '+(l.dataset[k]||'')+' ').indexOf(' '+v+' ')>=0));l.style.display=ok?'':'none'});
+try{if(on&&window.goatcounter)goatcounter.count({path:'click/topics/filter/'+(v||k),event:true})}catch(e){}})})})();</script>"""
+
+
+def _dot(t):
+    c = t.get('c1', '#888')
+    return t.get('c2', '#888') if sum(int(c[i:i + 2], 16) for i in (1, 3, 5)) > 600 else c
+
+
+def story_filters(hs):
+    """Team, 日本 and people chips over /topics/ (people with 3+ STORY)."""
+    tc, pc, pn, jp = {}, {}, {}, 0
+    for H in hs:
+        tg = story_tags(H)
+        for k in tg['teams']:
+            tc[k] = tc.get(k, 0) + 1
+        for q in tg['people']:
+            pc[q['id']] = pc.get(q['id'], 0) + 1
+            pn[q['id']] = q['name'].split('・')[-1]
+        jp += 1 if tg['jp'] else 0
+    teams = ''.join(f'<button type="button" data-k="t" data-v="{e(k)}"><i style="background:{e(_dot(TEAMS_ALL[k]))}"></i>{e(TEAMS_ALL[k]["name"])}<small>{n}</small></button>'
+                    for k, n in sorted(tc.items(), key=lambda x: -x[1]) if k in TEAMS_ALL)
+    people = ''.join(f'<button type="button" data-k="p" data-v="{e(i)}">{e(pn[i])}<small>{n}</small></button>'
+                     for i, n in sorted(pc.items(), key=lambda x: -x[1]) if n >= 3)
+    return (f'<style>{STORY_FILTER_CSS}</style><p class="st-fl">チームで絞る</p><div class="st-f">{teams}'
+            + (f'<button type="button" data-k="jp" data-v="jp">日本<small>{jp}</small></button>' if jp else '') + '</div>'
+            + (f'<p class="st-fl">人で絞る</p><div class="st-f">{people}</div>' if people else ''))
+
+
 def hub_li(H, track):
     S = H.get('story') or {}
     line = S.get('hook') or H.get('dek', '')
-    return (f'<li><a class="yk-i" href="/topics/{e(H["slug"])}/" data-track="{e(track)}">'
-            f'<small>{e(H.get("gp", ""))} · {e(H.get("checked", "").replace("-", "/"))}</small>'
+    tg = story_tags(H)
+    who = tg['people'][0]['name'].split('・')[-1] if tg['people'] else ''
+    return (f'<li data-p="{e(" ".join(q["id"] for q in tg["people"]))}" data-t="{e(" ".join(tg["teams"]))}"{" data-jp=1" if tg["jp"] else ""}>'
+            f'<a class="yk-i" href="/topics/{e(H["slug"])}/" data-track="{e(track)}">'
+            f'<small>{(e(who) + " · ") if who else ""}{e(H.get("gp", ""))} · {e(H.get("checked", "").replace("-", "/"))}</small>'
             f'<b>{e(H["title"])}</b><span>{e(line)}</span></a></li>')
 
 
@@ -2697,7 +2766,11 @@ def build_hubs(arch, flag_of):
                                     f'<span>決勝前、注目点に「{e(re.sub(r"^.{1,4}つ目：", "", pv["h2"]).replace("「", "『").replace("」", "』"))}」を挙げていました。当時の文章のまま読めます →</span></a>')
             if pv_links:
                 b.append('<h2><i>BEFORE</i>決勝前は、こう見ていた</h2>' + ''.join(pv_links))
-            others = [x for x in hubs_newest() if x['slug'] != slug][:5]
+            me = story_tags(H)  # same person first, then same team, then newest (STORY desk's proposal, 20 Nov 2026)
+            mp, mt = {q['id'] for q in me['people']}, set(me['teams'])
+            pool = [x for x in hubs_newest() if x['slug'] != slug]
+            rank = lambda x: (0 if mp & {q['id'] for q in story_tags(x)['people']} else (1 if mt & set(story_tags(x)['teams']) else 2))
+            others = sorted(pool, key=rank)[:5]  # sorted() is stable: newest first within each group
             if others:  # the next 読み解き to read, right after this one (owner, 12 Oct 2026)
                 b.append('<h2><i>MORE</i>ほかの STORY</h2><ul class="yk-list">' + ''.join(hub_li(x, f'click/hub-more/{x["slug"]}') for x in others) + '</ul>'
                          '<p><a class="yk-all" href="/topics/">すべての STORY →</a></p>')
@@ -2765,8 +2838,9 @@ def build_hubs(arch, flag_of):
         body = ('<nav class="crumbs"><a href="/">トップ</a> › STORY</nav><div class="hub">'
                 '<p class="hub-k"><b>F1 GRID WALK</b><span>レースの、もうひとつの物語。</span></p><h1>STORY</h1>'
                 '<p class="hub-dek">レースのいちばん心に残った場面を、世界の報道をもとに、F1 Grid Walk が自分の言葉で読み解きます。新しい順に並べています。</p>'
-                '<ul class="yk-list">' + ''.join(hub_li(H, f'click/topics/{H["slug"]}') for H in hs) + '</ul>'
-                '<p style="margin-top:26px"><a href="/columns/">コラムの一覧へ →</a></p></div>')
+                + story_filters(hs) +
+                '<ul class="yk-list" id="st-list">' + ''.join(hub_li(H, f'click/topics/{H["slug"]}') for H in hs) + '</ul>'
+                '<p style="margin-top:26px"><a href="/columns/">コラムの一覧へ →</a></p></div>' + STORY_FILTER_JS)
         write('topics/index.html', page('STORY｜レースの、もうひとつの物語｜F1グリッドウォーク独自の記事', 'レースのいちばん心に残った場面を、世界の報道をもとにF1グリッドウォークが読み解く独自記事の一覧です。',
                                         SITE + '/topics/', body, MONO_FONT + f'<style>{HUB_CSS}{YK_CSS}</style>\n', og_type='website'))
         out.append((SITE + '/topics/', hs[0].get('checked', '') + 'T09:00:00+09:00', 'weekly', '0.8'))
