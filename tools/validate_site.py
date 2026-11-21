@@ -15,7 +15,7 @@ Checks
              (pages with noindex, 404.html and /share/ are left out on purpose)
   storyline  a resolved STORYLINE page does not say 追いかけ中
   media      one outlet is not shown under two names (tools/source-names.json) -> WARN
-  size       pages over the site's own budget (home 250KB, rules index 250KB, team and month pages 150KB) -> WARN
+  size       pages over the site's own budget (home 250KB, rules index 450KB, team and month pages 150KB) -> WARN
 """
 import json, os, re, sys
 from datetime import datetime, timezone
@@ -109,7 +109,8 @@ for p in pages():
         err(f'{short}: resolved but says 追いかけ中')
     # size budget
     size = len(h.encode('utf-8'))
-    budget = 250_000 if short in ('/', '/deep/rules/') else 150_000 if re.match(r'/(teams/[a-z]+|news/\d{4}-\d\d)/$', short) else None
+    # the rules index keeps every entry on the page for readers and search engines; 450KB after the two-step search (21 Nov 2026)
+    budget = 250_000 if short == '/' else 450_000 if short == '/deep/rules/' else 150_000 if re.match(r'/(teams/[a-z]+|news/\d{4}-\d\d)/$', short) else None
     if budget and size > budget:
         warn(f'{short}: {size // 1000}KB (budget {budget // 1000}KB)')
 

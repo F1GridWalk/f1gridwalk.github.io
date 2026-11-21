@@ -1434,7 +1434,11 @@ RULES_JS = '''<script>
   var items=[].slice.call(document.querySelectorAll('.rb-list .rb')), cat='all';
   var cnt=document.getElementById('rb-count'), none=document.getElementById('rb-none'), maybe=document.getElementById('rb-maybe');
   var parent=items.length?items[0].parentNode:null, endMark=items.length?items[items.length-1].nextSibling:null;
-  items.forEach(function(d,i){ d._i=i; d._k=norm([d.getAttribute('data-k'),d.getAttribute('data-names'),d.getAttribute('data-w'),d.textContent].join(' ')); d._names=(d.getAttribute('data-names')||'').split('|').map(norm).filter(Boolean); d._n=d._names.join(' '); d._w=(d.getAttribute('data-w')||'').split('|').map(norm).filter(Boolean); });
+  /* what each entry is found by: first its visible text; the other names (kana, English, aliases) come from idx.json, and the
+     explanations from search.json only when the names find few entries (two-step search, owner's OK, 21 Nov 2026) */
+  function kk(d){ d._k=d._base+' '+(d._x||'')+' '+(d._f||''); }
+  items.forEach(function(d,i){ var b=d.querySelector('.rb-t b'); d._i=i; d._t=b?b.textContent:''; d._base=norm(d.textContent); d._names=[norm(d._t)]; d._w=[]; kk(d); });
+  var idx=false; function loadIdx(){ if(idx) return; idx=true; fetch('/deep/rules/idx.json').then(function(r){ return r.json(); }).then(function(m){ items.forEach(function(d){ var x=m[d.id]; if(!x) return; d._t=x[0]; d._names=x[1].split('|').map(norm).filter(Boolean); d._w=(x[2]||'').split('|').map(norm).filter(Boolean); d._x=norm([x[1],x[2],x[3]].join(' ')); kk(d); }); if(q.value) run(); }).catch(function(){}); }
   function score(d,j){ var s=0; d._names.forEach(function(nm){ if(nm===j) s=Math.max(s,3); else if(nm.indexOf(j)===0) s=Math.max(s,2); else if(nm.indexOf(j)>=0) s=Math.max(s,1); }); if(!s) d._w.forEach(function(w){ if(w.indexOf(j)>=0||j.indexOf(w)>=0) s=0.5; }); return s; }
   function run(){
     var ts=toks(q.value), j=ts.join(''), n=0;
@@ -1445,13 +1449,15 @@ RULES_JS = '''<script>
     var any=false;
     if(!n&&ts.length>1){ any=true; items.forEach(function(d){ var ok=(cat==='all'||d.getAttribute('data-c')===cat)&&ts.some(function(t){ return d._k.indexOf(t)>=0; }); d.hidden=!ok; if(ok) n++; d._s=0; ts.forEach(function(t){ d._s=Math.max(d._s,score(d,t)); }); }); }
     if(parent){ items.slice().sort(function(a,b){ return (a.hidden-b.hidden)||(b._s-a._s)||(a._i-b._i); }).forEach(function(d){ parent.insertBefore(d,endMark); }); }
+    if(ts.length&&n<5&&idx&&!full) loadFull();  /* few hits by name: look in the explanations too */
+    var db=document.getElementById('rb-deep'); if(db) db.hidden=!(ts.length&&!full);  /* or when the reader asks */
     cnt.textContent=(ts.length||cat!=='all')?n+' / '+items.length+' ENTRIES'+(any&&n?' · どれかの言葉を含む':''):items.length+' ENTRIES';
     none.style.display=n?'none':'block';
     if(!n&&maybe){
       var thr=Math.max(1,Math.floor(j.length/3)), c=[];
       items.forEach(function(d){ var b=99; d._names.forEach(function(nm){ b=Math.min(b,near(j,nm)); }); if(j&&b<=thr) c.push([b,d]); });
       c.sort(function(x,y){ return x[0]-y[0]; });
-      maybe.innerHTML=''; c.slice(0,3).forEach(function(x){ var bt=document.createElement('button'); bt.type='button'; bt.textContent=x[1].getAttribute('data-t'); bt.addEventListener('click',function(){ q.value=bt.textContent; q.dispatchEvent(new Event('input')); go(); }); maybe.appendChild(bt); });
+      maybe.innerHTML=''; c.slice(0,3).forEach(function(x){ var bt=document.createElement('button'); bt.type='button'; bt.textContent=x[1]._t; bt.addEventListener('click',function(){ q.value=bt.textContent; q.dispatchEvent(new Event('input')); go(); }); maybe.appendChild(bt); });
       maybe.parentNode.style.display=c.length?'block':'none';
     }
   }
@@ -1469,8 +1475,9 @@ RULES_JS = '''<script>
   function openHash(){ var id=location.hash.slice(1); var d=id&&document.getElementById(id); if(d&&d.classList.contains('rb')){ location.replace(d.getAttribute('href')); } }
   window.addEventListener('hashchange',openHash); openHash();
   /* full-text search: the explanations are loaded only when the reader starts searching */
-  var full=false; function loadFull(){ if(full) return; full=true; fetch('/deep/rules/search.json').then(function(r){ return r.json(); }).then(function(m){ items.forEach(function(d){ var x=m[d.id]; if(x) d._k+=norm(x); }); if(q.value) run(); }).catch(function(){}); }
-  q.addEventListener('focus',loadFull); q.addEventListener('input',loadFull);
+  var full=false; function loadFull(){ if(full) return; full=true; fetch('/deep/rules/search.json').then(function(r){ return r.json(); }).then(function(m){ items.forEach(function(d){ var x=m[d.id]; if(x){ d._f=norm(x); kk(d); } }); run(); }).catch(function(){}); }
+  q.addEventListener('focus',loadIdx); q.addEventListener('input',loadIdx);
+  var dbt=document.getElementById('rb-deep'); if(dbt) dbt.addEventListener('click',function(){ dbt.textContent='説明文の中を探しています…'; loadFull(); });
   try{ var sp=new URLSearchParams(location.search), p=sp.get('q'), c=sp.get('c'); if(p){ q.value=p; q.dispatchEvent(new Event('input')); } if(c){ setCat(c); } else if(p){ run(); } }catch(e){}
   /* grid penalty calculator */
   var t=document.getElementById('pu-tool');
@@ -1737,7 +1744,8 @@ def rules_entry(where, on_page=False):
     hd = f'<div class="rbx-hd"><b>RULES</b><span class="mono">{n} ENTRIES · 増えていきます</span></div><p class="rbx-lead">F1の用語・ルール・人物を、言葉で引く辞典。</p>'
     if on_page:
         return (f'<div class="rbx">{hd}<div class="rbx-f" role="search"><span class="rbx-in"><input id="rb-q" type="search" placeholder="例：降格、ハジャー" aria-label="用語とルールを検索" autocomplete="off"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span>'
-                f'<button type="button" class="go" id="rb-go">検索</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p></div>' + RBX_JS)
+                f'<button type="button" class="go" id="rb-go">検索</button></div><p class="rbx-cnt mono" id="rb-count">{n} ENTRIES</p>'
+                f'<button type="button" id="rb-deep" hidden style="font:inherit;font-size:13px;font-weight:700;margin:6px 0 0;padding:7px 12px;border:1px solid var(--line);border-radius:10px;background:none;color:var(--ink);cursor:pointer">説明文の中も探す</button></div>' + RBX_JS)
     return (f'<div class="rbx">{hd}<form action="/deep/rules/" method="get" role="search"><span class="rbx-in"><input type="search" name="q" placeholder="例：降格、ハジャー" aria-label="F1の用語・ルールを調べる"><button type="button" class="rbx-x" aria-label="入力を消す" hidden>×</button></span>'
             f'<button type="submit" class="go" data-track="click/rules-entry/{where}">検索</button></form>'
             f'<a class="rbx-all" href="/deep/rules/" data-track="click/rules-entry/{where}/all">すべての用語を見る →</a></div>' + RBX_JS)
@@ -1884,14 +1892,15 @@ def build_rules():
     for t in sorted(R['terms'], key=lambda t: t['term']):
         by_cat.setdefault(t['cat'], []).append(t)
     titles = _rb_titles()
-    items, search, sm = [], {}, []
+    items, search, sm, idx = [], {}, [], {}
     term_set = {'@type': 'DefinedTermSet', 'name': R['title'], 'url': url}
     for t in sorted(R['terms'], key=lambda t: (R['cats'].index(t['cat']), t['term'])):
         tid = t['id']
         keys = ' '.join(x['t'] for x in t.get('examples', []))
         search[tid] = ' '.join([re.sub(r'^## ', '', x) for x in t.get('body', [])] + [keys])  # example headlines moved here from data-k (page weight, 20 Nov 2026)
         al = '・'.join([x for x in t.get('aliases', []) if not re.fullmatch(r'[ぁ-ゟー]+', x)][:4])
-        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="{e(t["cat"])}" data-t="{e(t["term"])}" data-names="{e("|".join([t["term"]] + t.get("aliases", [])))}" data-w="{e("|".join(t.get("words", [])))}">'
+        idx[tid] = [t['term'], '|'.join([t['term']] + t.get('aliases', [])), '|'.join(t.get('words', [])), '']  # names in idx.json, not in the page (21 Nov 2026)
+        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="{e(t["cat"])}">'
                      f'<span class="rb-t"><b>{e(t["term"])}</b><small>{e(t["cat"])}</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(t["short"])}</span></a>')
@@ -1936,7 +1945,8 @@ def build_rules():
         tid = 'person-' + p['id']
         keys = ' '.join([p['role'], p['org']] + p.get('words', []))
         al = '・'.join([x for x in [p.get('en', '')] + p.get('aliases', []) if x][:3])
-        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="人物" data-t="{e(p["name"])}" data-names="{e("|".join([p["name"], p.get("en", ""), p.get("kana", "")] + p.get("aliases", [])))}" data-k="{e(keys)}">'
+        idx[tid] = [p['name'], '|'.join(x for x in [p['name'], p.get('en', ''), p.get('kana', '')] + p.get('aliases', []) if x), '', keys]
+        items.append(f'<a class="rb rbl" id="{e(tid)}" href="{rb_url(tid)}" data-c="人物">'
                      f'<span class="rb-t"><b>{e(p["name"])}</b><small>人物</small></span>'
                      + (f'<span class="rb-al">{e(al)}</span>' if al else '') +
                      f'<span class="rb-s">{e(p["short"])}</span></a>')
@@ -1995,6 +2005,7 @@ def build_rules():
             try: os.rmdir(os.path.join(rdir, d))
             except OSError: pass
     write('deep/rules/search.json', json.dumps(search, ensure_ascii=False, separators=(',', ':')) + '\n')
+    write('deep/rules/idx.json', json.dumps(idx, ensure_ascii=False, separators=(',', ':')) + '\n')
     # logo mini-game: daily rule quiz (owner's choice, 13 Oct 2026). Small file: id, name, cat, short.
     # Entries whose short text gives away the name (or an alias) are left out.
     quiz = []
