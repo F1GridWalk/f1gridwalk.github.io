@@ -6,7 +6,7 @@ name: Check site
 
 on:
   push:
-    branches: [main, preview-check]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
