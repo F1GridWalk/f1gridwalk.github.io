@@ -1,0 +1,45 @@
+# Checks the built site after every push to main (owner's OK, 21 Nov 2026).
+# It only reads the files already in the repository (it does not run build.py) and never stops publishing:
+# GitHub Pages still publishes from the branch. If the check finds an ERROR, this run turns red and GitHub
+# sends its usual "run failed" e-mail; the list of ERRORs and WARNs is on the run's summary page.
+name: Check site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-site
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check the built pages
+        run: |
+          set -o pipefail
+          python3 tools/validate_site.py | tee check.txt
+      - name: Write the summary
+        if: always()
+        run: |
+          {
+            echo '## サイトのチェック'
+            echo
+            tail -n 1 check.txt
+            echo
+            echo '```'
+            grep -E '^(ERROR|WARN)' check.txt | head -n 100 || echo 'ERROR / WARN なし'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
