@@ -77,6 +77,15 @@ def write(rel, text):
     return False
 
 
+OLD_LASTMOD = {}  # loc -> lastmod in the sitemap.xml from the last build (read in main)
+
+
+def lastmod_of(url, changed):
+    """A page's date for the sitemap: now if this build changed the page, else the date it had (owner's OK, 21 Nov 2026),
+    so a page that did not change does not look new to search engines."""
+    return RUN_NOW.astimezone(JST).isoformat(timespec='seconds') if changed or url not in OLD_LASTMOD else OLD_LASTMOD[url]
+
+
 def kind_of(a):
     k = a.get('kind') or 'news'
     if k == 'news' and (a.get('primary') or PRIMARY_SRC.match(a.get('source') or '')):
@@ -3487,11 +3496,10 @@ def build_drivers(by_term):
             + (f'<h2>最近の読み物の主役</h2><div class="drv-hot">{"".join(hot)}</div>' if hot else '')
             + '<h2>チームとドライバー</h2>' + ''.join(grid) + '</div>')
     url = SITE + '/drivers/'
-    write('drivers/index.html', page('F1ドライバー一覧 2026｜チームごとの22人と記事｜F1グリッドウォーク',
+    ch_ = write('drivers/index.html', page('F1ドライバー一覧 2026｜チームごとの22人と記事｜F1グリッドウォーク',
                                      f'{T.get("season", "2026")}年のF1ドライバー{len(drivers)}人をチームごとに。名前から、その人のSTORY・コラム・ニュースへ。', url, body,
                                      f'<style>{DRV_CSS}</style>\n', og_type='website'))
-    now_ = RUN_NOW.astimezone(JST).isoformat(timespec='seconds')
-    return [(url, now_, 'daily', '0.7')] + build_engineers(teams, order) + build_bosses(teams, order) + build_japan()
+    return [(url, lastmod_of(url, ch_), 'daily', '0.7')] + build_engineers(teams, order) + build_bosses(teams, order) + build_japan()
 
 
 JP_DRIVERS = ['yuki-tsunoda', 'ryo-hirakawa', 'ayumu-iwasa', 'ritomo-miyata', 'kakunoshin-ohta', 'taito-kato', 'hiyu-yamakoshi']
@@ -3534,10 +3542,10 @@ def build_engineers(teams, order):
             '<table><thead><tr><th>ドライバー</th><th>レースエンジニアなど</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table>'
             '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a>　<a href="/drivers/bosses/">チーム代表・首脳陣の一覧 →</a>　<a href="/deep/rules/">用語・人物の辞典 →</a></p></div>')
     url = SITE + '/drivers/engineers/'
-    write('drivers/engineers/index.html', page('F1レースエンジニア一覧 2026｜ドライバーと担当エンジニア｜F1グリッドウォーク',
+    ch_ = write('drivers/engineers/index.html', page('F1レースエンジニア一覧 2026｜ドライバーと担当エンジニア｜F1グリッドウォーク',
           f'2026年のF1、ドライバーごとの担当レースエンジニア（{n}人）。ボニントン、ランビアーゼなど、無線の声の主を一覧に。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
-    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
+    return [(url, lastmod_of(url, ch_), 'weekly', '0.6')]
 
 
 BOSS_GROUPS = [('チーム代表', ('チーム代表', '副代表')),
@@ -3571,10 +3579,10 @@ def build_bosses(teams, order):
             '<table><thead><tr><th>役割</th><th>名前と肩書き</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table>'
             '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a>　<a href="/drivers/engineers/">レースエンジニア一覧 →</a>　<a href="/deep/rules/">用語・人物の辞典 →</a></p></div>')
     url = SITE + '/drivers/bosses/'
-    write('drivers/bosses/index.html', page('F1チーム代表・首脳陣の一覧 2026｜ウォルフ、小松、バスールほか｜F1グリッドウォーク',
+    ch_ = write('drivers/bosses/index.html', page('F1チーム代表・首脳陣の一覧 2026｜ウォルフ、小松、バスールほか｜F1グリッドウォーク',
           f'2026年のF1、11チームのチーム代表・テクニカルディレクター・オーナーなど{n}人を、チームごとに一覧に。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
-    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
+    return [(url, lastmod_of(url, ch_), 'weekly', '0.6')]
 
 
 def build_about():
@@ -3607,10 +3615,10 @@ def build_about():
             + '<p class="lead" style="margin-top:18px"><a href="/">← トップへ</a></p></div>')
     url = SITE + '/about/'
     ld = {'@context': 'https://schema.org', '@type': 'AboutPage', 'name': '運営者情報・編集方針', 'url': url, 'publisher': PUBLISHER}
-    write('about/index.html', page('運営者情報・編集方針｜F1グリッドウォーク',
+    ch_ = write('about/index.html', page('運営者情報・編集方針｜F1グリッドウォーク',
           'F1 Grid Walk（F1グリッドウォーク）の運営者と、ニュース・コラム・用語辞典の作り方、AI の使い方、訂正の方針。', url, body,
           f'<style>{XP_CSS}</style>\n<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', og_type='website'))
-    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'monthly', '0.3')]
+    return [(url, lastmod_of(url, ch_), 'monthly', '0.3')]
 
 
 def build_japan():
@@ -3641,10 +3649,10 @@ def build_japan():
             + ('<h2>F1の日本人関係者</h2><div class="jp-p">' + ''.join(f'<a href="{rb_url("person-" + q["id"])}"><b>{e(q["name"])}</b>（{e(re.sub(r"（.*?）", "", q["org"]))}）</a>' for q in jp2) + '</div>' if jp2 else '')
             + '<p class="lead" style="margin-top:14px"><a href="/drivers/">← ドライバー一覧</a></p></div>')
     url = SITE + '/drivers/japan/'
-    write('drivers/japan/index.html', page('F1 日本人ドライバー 2026｜角田裕毅・平川亮・岩佐歩夢の近況とうわさ｜F1グリッドウォーク',
+    ch_ = write('drivers/japan/index.html', page('F1 日本人ドライバー 2026｜角田裕毅・平川亮・岩佐歩夢の近況とうわさ｜F1グリッドウォーク',
           'F1の日本人ドライバー（角田裕毅、平川亮、岩佐歩夢、宮田莉朋ほか）の最新ニュース、うわさ、コラムをまとめて。毎日更新。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
-    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
+    return [(url, lastmod_of(url, ch_), 'daily', '0.7')]
 
 
 def top_rail_slot():
@@ -3940,13 +3948,18 @@ DIGEST_DAYS = 100000  # every day stays, in the sitemap too (outside review, own
 DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:dg}.dg-list li{counter-increment:dg;padding:14px 0 14px 40px;border-top:1px solid var(--line);position:relative}"
               ".dg-list li::before{content:counter(dg);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:center}"
               ".dg-list h2{font-size:17px;line-height:1.5;margin:0}.dg-list h2 a{color:var(--ink);text-decoration:none}.dg-list p{margin:6px 0 0;font-size:14.5px;line-height:1.75}"
-              ".dg-list small{display:block;margin-top:6px;font-size:12px;color:var(--muted)}.dg-all{font-size:16px;margin:30px 0 4px;padding-top:12px;border-top:2px solid var(--ink)}.dg-nav{display:flex;justify-content:space-between;gap:12px;margin:24px 0 0;font-weight:700}")
+              ".dg-list small{display:block;margin-top:6px;font-size:12px;color:var(--muted)}.dg-all{font-size:16px;margin:30px 0 4px;padding-top:12px;border-top:2px solid var(--ink)}.dg-nav{display:flex;justify-content:space-between;gap:12px;margin:24px 0 0;font-weight:700}"
+              # TOP STORY: the day's first news stands out; the list stays the same (owner's OK, 21 Nov 2026)
+              ".dg-list li.dg-top{padding:16px 16px 16px 56px;border:2px solid var(--ink);border-radius:14px;margin-bottom:8px}.dg-list li.dg-top::before{left:16px;top:18px}"
+              ".dg-list li.dg-top h2{font-size:21px}.dg-list li.dg-top p{font-size:15.5px}.dg-k{display:block;font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--clay,#a0522d);margin-bottom:4px}"
+              ".dg-sub{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--muted);margin:14px 0 0}")
 
 
 # STORYLINE (owner's OK to preview, 20 Nov 2026): one page per developing story, built from the news
 # already tagged with the same topic. Name and topics are chosen by the site author; everything else is automatic.
 # 'published' is when the page first went out (its first commit), for its structured data: add it with a new entry.
-# 'status_box': news written before the decision shows the conclusion on top; 'status_skip': topics where it does not fit.
+# Once resolved (with 'decided' and 'conclusion'), news written before the decision shows the conclusion on top
+# (owner's OK, 21 Nov 2026); 'status_box': False turns it off, 'status_skip': topics where it does not fit.
 STORYLINES = [
     {'slug': 'ferrari-hamilton-leclerc', 'published': '2026-11-20T16:32:40+09:00', 'name': 'フェラーリ、ハミルトンとルクレールの溝',
      'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift'],
@@ -4223,9 +4236,10 @@ def build_daily_digest(allarts, flag_of=None):
             picks = []
         lab = f'{d.month}月{d.day}日（{W[d.weekday()]}）'
         rows = ''.join(
-            f'<li><h2><a href="/news/{e(a["id"])}/" data-track="click/digest/{d.isoformat()}">{e(a["title"])}</a></h2>'
+            ('<li class="dg-top"><span class="dg-k">TOP STORY</span>' if j_ == 0 else '<li>')
+            + f'<h2><a href="/news/{e(a["id"])}/" data-track="click/digest/{d.isoformat()}' + ('/top' if j_ == 0 else '') + f'">{e(a["title"])}</a></h2>'
             f'<p>{e(a.get("summary", ""))}</p><small>{e(a["source"])}' + (f'（この日、ほか {dc[a["topic"]] - 1} 本の報道）' if dc.get(a.get('topic'), 1) > 1 else '') + '</small></li>'
-            for a in picks)
+            for j_, a in enumerate(picks))
         nav = ['<span></span>', '<span></span>']
         if i + 1 < len(keys):
             nav[0] = f'<a href="/news/daily/{keys[i + 1].isoformat()}/" data-track="click/digest/prev">← {keys[i + 1].month}月{keys[i + 1].day}日</a>'
@@ -4510,6 +4524,9 @@ def stamp_home_assets():
 
 def main():
     stamp_home_assets()
+    if os.path.exists(os.path.join(ROOT, 'sitemap.xml')):
+        with open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8') as fh:
+            OLD_LASTMOD.update(re.findall(r'<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>', fh.read()))
     global FLAGS, LOGO, BASE_CSS_V
     FLAGS, flag_map, LOGO = shared_css()
     BASE_CSS_V = hashlib.md5((CSS + FLAGS).encode('utf-8')).hexdigest()[:8]
@@ -4605,7 +4622,7 @@ def main():
             body.append('<p class="warn">' + ('報道で出たうわさで、公式には確認されていない話です。' if k == 'rumor'
                         else ('レースやニュースへのファンの反応をまとめたものです。ファンの意見で、事実として確かめた話ではありません。' if k == 'voice' else 'ファン掲示板の話題をまとめた投稿です。未確認の話を含みます。')) + '</p>')
         sl_ = SL_BY_TOPIC.get(a.get('topic'))
-        if sl_ and sl_.get('status_box') and a.get('topic') not in sl_.get('status_skip', []) and sl_.get('status') == 'resolved' and sl_.get('conclusion') and sl_.get('decided') \
+        if sl_ and sl_.get('status_box', True) and a.get('topic') not in sl_.get('status_skip', []) and sl_.get('status') == 'resolved' and sl_.get('conclusion') and sl_.get('decided') \
                 and d.astimezone(JST).date().isoformat() < sl_['decided']:
             # what came of it, above a report written before the decision; the report itself is left as it was (owner's OK, 21 Nov 2026)
             body.append(f'<aside class="stup"><small>その後・{int(sl_["decided"][5:7])}月{int(sl_["decided"][8:10])}日に決着</small>'
