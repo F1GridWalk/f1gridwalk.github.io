@@ -10,7 +10,7 @@
  "big": "1",
  "title": "メルセデス、ADUOのターボはアントネッリ車に　降格なしの見通し",
  "titleHtml": "メルセデス、ADUOのターボはアントネッリ車に　<em>降格なしの見通し</em>",
- "dek": "メルセデスが、ADUOで認められた今季分の改良ターボをラスベガスGPに持ち込みます。載せるのはアントネッリの車だけの見込みで、オランダのGPblogは降格なしの見通しと報じました。ラッセルには、降格を避けるため載せない見込みです。",
+ "dek": "メルセデスが、ADUOで認められた今季分の改良ターボをラスベガスGPに持ち込みます。載せるのはアントネッリの車だけの見込みで、オランダのGPblogは降格なしの見通しと報じました。ラッセルには、降格を避けるため載せない見込みです。（11月21日追記：アントネッリはターボとは別に6基目のエンジンを入れ、5グリッド降格になりました）",
  "eyeHtml": "新ターボは<br><em>アントネッリ車</em>だけ",
  "eyeSub": "ラッセルはグリッドを守る",
  "noteTags": "#F1 #F1jp #メルセデス #アントネッリ #ラッセル #ウォルフ #ADUO #ラスベガスGP #F1こぼれ話 #OFFGRID",
@@ -22,6 +22,10 @@
   "sub": "ラッセルはグリッドを守る"
  },
  "body": [
+  [
+   "p",
+   "【11月21日 追記】アントネッリは、ラスベガスGPで5グリッド降格になりました。FIAのスチュワードの文書（現地11月19日）によると、理由は2回目のフリー走行で今季6基目のエンジン（ICE）を使ったことです。文書に挙がっている部品はICEだけで、ターボは入っていません。メルセデスのブラッドリー・ロード副代表は、2回目のフリー走行のあと「キミは割り当てにターボが1基残っていたので、ターボをただで入れられた」「ただ、新しい内燃エンジンも入れていて、それで5グリッド降格になる」と話しました（英PlanetF1）。GPblogは、FIAの文書が出る前の11月19日、独自の情報として、メルセデスがターボに加えてICEも替えると決めたため、状況が変わったと伝えていました。GPblogによると、アントネッリはイタリアGPで5基目のICEを入れて10グリッド降格を受けていて、同じ部品で上限を超えるのは2回目のため、今回は5グリッドです。F1公式によると、アントネッリは予選で最速でしたが、6番手からスタートする予定です。ポールは予選2番手のフェルスタッペンに移り、その隣のフロントローには予選3番手のラッセルが並びます。ロード副代表は、ラッセルは割り当てに予備のターボがないため、降格を重ねないよう新しいターボを使わずに走ると話しています（PlanetF1）。部品の数の上限と降格の決まりは https://f1gridwalk.github.io/deep/rules/pu-allocation/ にあります。"
+  ],
   [
    "p",
    "メルセデスが、ADUOで認められた今季分の改良を、ようやく使います。第21戦ラスベガスGPに持ち込むのは、改良したターボ。ただし載せるのは、すでにドライバーズの王座を決めたアンドレア・キミ・アントネッリの車だけの見込みです。イギリスのSky Sportsが11月17日、チームのレース前の展望に出たトト・ウォルフ代表の言葉として伝えました。"
@@ -99,6 +103,34 @@
    "lang": "en",
    "title": "2026年のカレンダー",
    "url": "https://www.formula1.com/en/racing/2026"
+  },
+  {
+   "source": "FIA",
+   "region": "フランス",
+   "lang": "en",
+   "title": "2026年ラスベガスGP　違反　12号車　PU部品の交換（文書17、スチュワード、2026年11月19日21時21分。6基目のICE、5グリッド降格）",
+   "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_12_-_changes_to_pu_element.pdf"
+  },
+  {
+   "source": "PlanetF1",
+   "region": "イギリス",
+   "lang": "en",
+   "title": "FIA、ラスベガスGPでのアントネッリの降格を確認（2026年11月20日。ロード副代表の発言）",
+   "url": "https://www.planetf1.com/news/fia-kimi-antonelli-las-vegas-grand-prix-2026-penalty"
+  },
+  {
+   "source": "GPblog",
+   "region": "オランダ",
+   "lang": "en",
+   "title": "アントネッリのラスベガスGPは波乱の出だし　グリッド降格が確定（2026年11月19日。新しいICEで5グリッド降格、イタリアGPに続く2回目）",
+   "url": "https://www.gpblog.com/en/breaking-news/antonellis-las-vegas-gp-hopes-take-early-hit-following-grid-penalty"
+  },
+  {
+   "source": "F1公式サイト",
+   "region": "イギリス",
+   "lang": "en",
+   "title": "ラスベガスGP予選　アントネッリが最速、フェルスタッペンがポールを受け継ぐ（2026年11月21日）",
+   "url": "https://www.formula1.com/en/latest/article/antonelli-quickest-in-las-vegas-gp-qualifying-as-verstappen-inherits-pole-position.6R7udh8iYMHunSOGI6zStK"
   }
  ]
 }
