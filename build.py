@@ -85,6 +85,8 @@ def kind_of(a):
 
 
 RUN_NOW = datetime.now(timezone.utc)
+if os.environ.get('BUILD_NOW'):  # a fixed "now" for tests: BUILD_NOW=2026-11-21T12:00:00+09:00 python3 build.py (21 Nov 2026)
+    RUN_NOW = datetime.fromisoformat(os.environ['BUILD_NOW']).astimezone(timezone.utc)
 
 
 SITE_PUB, SITE_MOD = {}, {}  # id -> the time this site first put the page out / last changed it (filled in main)
@@ -151,6 +153,11 @@ def shared_css():
 
 
 CSS = '''
+/* その後の結論 on news written before a STORYLINE was decided (owner's OK, 21 Nov 2026) */
+.stup{margin:14px 0;padding:12px 14px;border:1px solid var(--line);border-left:4px solid var(--ink);border-radius:10px;background:var(--paper)}
+.stup small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted)}
+.stup p{margin:4px 0 0;font-weight:700;line-height:1.7}.stup p.stup-n{font-weight:400;font-size:12px;color:var(--muted)}
+.stup a{display:inline-block;margin-top:6px;font-size:13px;font-weight:700}
 /* phone: bottom tab bar (owner's choice A, 11 Oct 2026) */
 .bt{display:none}
 @media (max-width:520px){
@@ -371,9 +378,9 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     """Write this week's story, the latest news and the latest tech pieces straight into index.html,
     so the top page can be read without JavaScript. The script replaces these blocks when it runs."""
     flag_map_ref = flag_map_ref or {}
-    arts = [a for a in data.get('articles', []) if ID_OK.match(a.get('id', ''))]
+    arts = [src_canon(a) for a in data.get('articles', []) if ID_OK.match(a.get('id', ''))]
     topics = data.get('topics') or {}
-    now = datetime.now(timezone.utc)
+    now = RUN_NOW
     groups = {}
     for a in arts:
         if a.get('topic') and (now - when(a)).days < 7:
@@ -472,6 +479,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     # the page script shows this site's times too, not the outlets' (owner's OK, 20 Nov 2026)
     st = {a['id']: SITE_PUB[a['id']] for a in arts if a['id'] in SITE_PUB}
     sth = ('<script type="application/json" id="sitetimes">' + json.dumps(st, separators=(',', ':')).replace('</', '<\\/') + '</script>') if st else ''
+    sth += '<script type="application/json" id="srcnames">' + json.dumps(SOURCE_NAMES, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'  # one outlet, one name (21 Nov 2026)
     for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth)):
         if not block:
             continue
@@ -2283,7 +2291,7 @@ def build_feed(allarts):
            '<title>F1 Grid Walk（F1グリッドウォーク）</title>', f'<link>{SITE}/</link>',
            '<description>世界のF1ニュースを、日本語の見出しと短い要約で。海外報道の読み比べや深掘りのコラムも。</description>',
            '<language>ja</language>', f'<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>',
-           f'<lastBuildDate>{rfc822(items[0][0]) if items else rfc822(datetime.now(JST))}</lastBuildDate>']
+           f'<lastBuildDate>{rfc822(items[0][0]) if items else rfc822(RUN_NOW.astimezone(JST))}</lastBuildDate>']
     for dt, title, link, desc, cat in items:
         out.append(f'<item><title>{e(title)}</title><link>{e(link)}</link><guid isPermaLink="true">{e(link)}</guid>'
                    f'<pubDate>{rfc822(dt)}</pubDate><category>{e(cat)}</category>'
@@ -3161,7 +3169,7 @@ def build_share_kit(days=7, req_days=4):
     utm_source / utm_campaign that GoatCounter already records (same rule as LENS.md / DEEP.md);
     then the newest pages to ask Search Console to index, one URL per box. Not secret (all links are public),
     but noindex, not in the sitemap and not linked from the site."""
-    now = datetime.now(JST)
+    now = RUN_NOW.astimezone(JST)
     since = now - timedelta(days=days)
     items = []
     for H in HUBS.values():
@@ -3471,7 +3479,7 @@ def build_drivers(by_term):
     write('drivers/index.html', page('F1ドライバー一覧 2026｜チームごとの22人と記事｜F1グリッドウォーク',
                                      f'{T.get("season", "2026")}年のF1ドライバー{len(drivers)}人をチームごとに。名前から、その人のSTORY・コラム・ニュースへ。', url, body,
                                      f'<style>{DRV_CSS}</style>\n', og_type='website'))
-    now_ = datetime.now(JST).isoformat(timespec='seconds')
+    now_ = RUN_NOW.astimezone(JST).isoformat(timespec='seconds')
     return [(url, now_, 'daily', '0.7')] + build_engineers(teams, order) + build_bosses(teams, order) + build_japan()
 
 
@@ -3518,7 +3526,7 @@ def build_engineers(teams, order):
     write('drivers/engineers/index.html', page('F1レースエンジニア一覧 2026｜ドライバーと担当エンジニア｜F1グリッドウォーク',
           f'2026年のF1、ドライバーごとの担当レースエンジニア（{n}人）。ボニントン、ランビアーゼなど、無線の声の主を一覧に。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
-    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
+    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
 
 
 BOSS_GROUPS = [('チーム代表', ('チーム代表', '副代表')),
@@ -3555,7 +3563,7 @@ def build_bosses(teams, order):
     write('drivers/bosses/index.html', page('F1チーム代表・首脳陣の一覧 2026｜ウォルフ、小松、バスールほか｜F1グリッドウォーク',
           f'2026年のF1、11チームのチーム代表・テクニカルディレクター・オーナーなど{n}人を、チームごとに一覧に。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
-    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
+    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'weekly', '0.6')]
 
 
 def build_about():
@@ -3591,7 +3599,7 @@ def build_about():
     write('about/index.html', page('運営者情報・編集方針｜F1グリッドウォーク',
           'F1 Grid Walk（F1グリッドウォーク）の運営者と、ニュース・コラム・用語辞典の作り方、AI の使い方、訂正の方針。', url, body,
           f'<style>{XP_CSS}</style>\n<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', og_type='website'))
-    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'monthly', '0.3')]
+    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'monthly', '0.3')]
 
 
 def build_japan():
@@ -3625,7 +3633,7 @@ def build_japan():
     write('drivers/japan/index.html', page('F1 日本人ドライバー 2026｜角田裕毅・平川亮・岩佐歩夢の近況とうわさ｜F1グリッドウォーク',
           'F1の日本人ドライバー（角田裕毅、平川亮、岩佐歩夢、宮田莉朋ほか）の最新ニュース、うわさ、コラムをまとめて。毎日更新。', url, body,
           f'<style>{XP_CSS}</style>\n', og_type='website'))
-    return [(url, datetime.now(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
+    return [(url, RUN_NOW.astimezone(JST).isoformat(timespec='seconds'), 'daily', '0.7')]
 
 
 def top_rail_slot():
@@ -3895,6 +3903,15 @@ ALLARTS = []
 DUP_OF = {}
 
 
+SOURCE_NAMES = (load('tools/source-names.json', {}) or {}).get('same', {})  # one outlet, one name (owner's OK, 21 Nov 2026)
+
+
+def src_canon(a):
+    """A copy of the article with the outlet's name as shown and counted (news/archive.json keeps what was written)."""
+    n = SOURCE_NAMES.get(a.get('source', ''))
+    return dict(a, source=n) if n else a
+
+
 def norm_src_url(u):
     """The original article's address, so the same article is recognised: https, no #, no tracking parameters, no trailing slash."""
     u = (u or '').strip()
@@ -3903,7 +3920,8 @@ def norm_src_url(u):
     u = re.sub(r'^http://', 'https://', u).split('#')[0]
     u = re.sub(r'([?&])(utm_[a-z]+|fbclid|gclid|mc_cid|mc_eid|ref)=[^&]*', r'\1', u)
     u = re.sub(r'[?&]+$', '', re.sub(r'\?&+', '?', u))
-    return u.rstrip('/').lower()
+    m = re.match(r'([a-z]+://[^/?#]+)(.*)$', u, re.I)  # only the scheme and host are case-blind; the path is kept as it is
+    return ((m.group(1).lower() + m.group(2)) if m else u).rstrip('/')
 NEWS_TOP = 100   # /news/ shows the newest articles; every month has its own page
 
 
@@ -3917,16 +3935,17 @@ DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:
 # STORYLINE (owner's OK to preview, 20 Nov 2026): one page per developing story, built from the news
 # already tagged with the same topic. Name and topics are chosen by the site author; everything else is automatic.
 # 'published' is when the page first went out (its first commit), for its structured data: add it with a new entry.
+# 'status_box': news written before the decision shows the conclusion on top; 'status_skip': topics where it does not fit.
 STORYLINES = [
     {'slug': 'ferrari-hamilton-leclerc', 'published': '2026-11-20T16:32:40+09:00', 'name': 'フェラーリ、ハミルトンとルクレールの溝',
      'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift'],
      'dek': 'メキシコGPの接触から始まった、フェラーリの2人の関係をめぐる報道を、最初から順に追います。'},
-    {'slug': 'lawson-2027-seat', 'published': '2026-11-20T16:32:40+09:00', 'name': 'ローソン、2027年のシート',
+    {'slug': 'lawson-2027-seat', 'status_box': True, 'published': '2026-11-20T16:32:40+09:00', 'name': 'ローソン、2027年のシート',
      'topics': ['lawson-2027-seat', 'racingbulls-lawson-tsolov-2027', 'tsolov-reserve-2027'],
      'status': 'resolved', 'decided': '2026-11-12',
      'conclusion': 'レーシングブルズは、2027年もローソンとリンドブラッドの2人で戦うと発表した。',
      'dek': '2027年もレーシングブルズに残ることが決まった。そこまでのローソンをめぐる報道を、最初から順に追います。'},
-    {'slug': 'cadillac-2027-drivers', 'published': '2026-11-20T16:32:40+09:00', 'name': 'キャデラック、2027年のドライバー',
+    {'slug': 'cadillac-2027-drivers', 'status_box': True, 'status_skip': ['perez-cadillac-2029', 'cadillac-ugochukwu-2027'], 'published': '2026-11-20T16:32:40+09:00', 'name': 'キャデラック、2027年のドライバー',
      'topics': ['cadillac-2027-drivers-rumor', 'cadillac-2027-lineup', 'cadillac-ugochukwu-2027', 'cadillac-bottas-2027', 'herta-cadillac-seat-comment', 'cadillac-bottas-herta', 'perez-cadillac-2029'],
      'status': 'resolved', 'decided': '2026-11-18',
      'conclusion': 'キャデラックは2027年もボッタスを起用し、ハータの昇格は見送られた。',
@@ -4522,7 +4541,7 @@ def main():
     for slug, t in (data.get('topics') or {}).items():
         arch['topics'][slug] = {'title': t.get('title', ''), 'summary': t.get('summary', '')}
 
-    allarts = sorted(arch['articles'].values(), key=when, reverse=True)
+    allarts = sorted((src_canon(a) for a in arch['articles'].values()), key=when, reverse=True)
     # the same original article taken in twice (outside review, owner's OK, 20 Nov 2026): the first one taken in is the
     # page; the later one keeps its page (links to it still work) but points to the first and is left out of every list
     first = {}
@@ -4574,6 +4593,13 @@ def main():
         if k in ('rumor', 'fan', 'voice'):
             body.append('<p class="warn">' + ('報道で出たうわさで、公式には確認されていない話です。' if k == 'rumor'
                         else ('レースやニュースへのファンの反応をまとめたものです。ファンの意見で、事実として確かめた話ではありません。' if k == 'voice' else 'ファン掲示板の話題をまとめた投稿です。未確認の話を含みます。')) + '</p>')
+        sl_ = SL_BY_TOPIC.get(a.get('topic'))
+        if sl_ and sl_.get('status_box') and a.get('topic') not in sl_.get('status_skip', []) and sl_.get('status') == 'resolved' and sl_.get('conclusion') and sl_.get('decided') \
+                and d.astimezone(JST).date().isoformat() < sl_['decided']:
+            # what came of it, above a report written before the decision; the report itself is left as it was (owner's OK, 21 Nov 2026)
+            body.append(f'<aside class="stup"><small>その後・{int(sl_["decided"][5:7])}月{int(sl_["decided"][8:10])}日に決着</small>'
+                        f'<p>{e(sl_["conclusion"])}</p><p class="stup-n">この記事は決着の前の報道です。</p>'
+                        f'<a href="/storyline/{sl_["slug"]}/" data-track="click/news/status">STORYLINEで最初から追う →</a></aside>')
         nused = set()
         body.append(f'<p class="summary">{link_terms(e(a.get("summary", "")), nused)}</p>')
         if a.get('voices'):
@@ -4700,7 +4726,7 @@ def main():
     build_search()
 
     # sitemap
-    now = datetime.now(JST).isoformat(timespec='seconds')
+    now = RUN_NOW.astimezone(JST).isoformat(timespec='seconds')
     newest_ = when(allarts[0]).isoformat(timespec='seconds') if allarts else now  # when the content changed, not when we built (20 Nov 2026)
     urls = [(SITE + '/', newest_, 'hourly', '1.0'), (SITE + '/news/', newest_, 'hourly', '0.8')]
     urls += [(f'{SITE}/news/{a["id"]}/', mod_when(a).isoformat(timespec='seconds'), None, '0.6') for a in allarts]

@@ -1,0 +1,11 @@
+{
+ "_note": "One outlet, one name (owner's OK, 21 Nov 2026). 'same': a name as written in articles.json -> the name shown and counted. 'distinct': names that look alike but are different outlets. build.py and tools/validate_site.py read this file.",
+ "same": {
+  "Motorsport-Total": "Motorsport-Total.com",
+  "F1-Insider": "F1-Insider.com",
+  "Motorsport-Magazin.com": "Motorsport-Magazin",
+  "GPFans.com": "GPFans",
+  "Automoto": "Automoto.it"
+ },
+ "distinct": [["Formula1.com", "Formula1.it"]]
+}

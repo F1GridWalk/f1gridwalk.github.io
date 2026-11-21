@@ -822,6 +822,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 [data-c="se"]{--c:#006AA7;--cs:#DCEAF5;--flag:linear-gradient(#FECC02,#FECC02) center/100% 22% no-repeat,linear-gradient(#FECC02,#FECC02) 32% 0/16% 100% no-repeat,#006AA7}
 [data-c="no"]{--c:#BA0C2F;--cs:#F5DFE4;--flag:linear-gradient(#00205B,#00205B) center/100% 14% no-repeat,linear-gradient(#00205B,#00205B) 32% 0/10% 100% no-repeat,linear-gradient(#FFF,#FFF) center/100% 30% no-repeat,linear-gradient(#FFF,#FFF) 32% 0/22% 100% no-repeat,#BA0C2F}
 [data-c="mc"]{--c:#CE1126;--cs:#F7E0E3;--flag:linear-gradient(#CE1126 0 50%,#FFFFFF 50%)}
+[data-c="id"]{--c:#CE1126;--cs:#F7E0E3;--flag:linear-gradient(#CE1126 0 50%,#FFFFFF 50%)}
 [data-c="cn"]{--c:#DE2910;--cs:#F8E1DD;--flag:radial-gradient(circle at 25% 32%,#FFDE00 0 12%,transparent 13%),#DE2910}
 [data-c="kr"]{--c:#003478;--cs:#DFE4F0;--flag:radial-gradient(circle,#C60C30 0 16%,#003478 17% 27%,#FFFFFF 29%)}
 [data-c="in"]{--c:#E0701A;--cs:#F8E8DA;--flag:linear-gradient(#FF9933 0 33.4%,#FFFFFF 33.4% 66.7%,#138808 66.7%)}
@@ -869,6 +870,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
   :root:not([data-theme="light"]) [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
   :root:not([data-theme="light"]) [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
   :root:not([data-theme="light"]) [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+  :root:not([data-theme="light"]) [data-c="id"]{--c:#FF8A96;--cs:#3A2227}
   :root:not([data-theme="light"]) [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
   :root:not([data-theme="light"]) [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
   :root:not([data-theme="light"]) [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
@@ -916,6 +918,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 :root[data-theme="dark"] [data-c="se"]{--c:#7FBCEB;--cs:#1B2A3A}
 :root[data-theme="dark"] [data-c="no"]{--c:#FF8A9E;--cs:#3A2228}
 :root[data-theme="dark"] [data-c="mc"]{--c:#FF8A96;--cs:#3A2227}
+:root[data-theme="dark"] [data-c="id"]{--c:#FF8A96;--cs:#3A2227}
 :root[data-theme="dark"] [data-c="cn"]{--c:#FF8C7A;--cs:#3A2420}
 :root[data-theme="dark"] [data-c="kr"]{--c:#8FA8E6;--cs:#1D2640}
 :root[data-theme="dark"] [data-c="in"]{--c:#FFB070;--cs:#3A2A1C}
