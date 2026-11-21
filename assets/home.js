@@ -32,7 +32,7 @@
     '日本':'jp','イギリス':'gb','アメリカ':'us','ドイツ':'de','イタリア':'it','スペイン':'es','フランス':'fr',
     'オランダ':'nl','ブラジル':'br','アルゼンチン':'ar','メキシコ':'mx','オーストラリア':'au','ベルギー':'be',
     'オーストリア':'at','スイス':'ch','ポルトガル':'pt','カナダ':'ca','ポーランド':'pl','フィンランド':'fi',
-    'デンマーク':'dk','スウェーデン':'se','ノルウェー':'no','モナコ':'mc','インドネシア':'mc','中国':'cn',
+    'デンマーク':'dk','スウェーデン':'se','ノルウェー':'no','モナコ':'mc','インドネシア':'id','中国':'cn',
     '韓国':'kr','インド':'in','ニュージーランド':'nz','アイルランド':'ie','ハンガリー':'hu','チェコ':'cz',
     'コロンビア':'co','チリ':'cl','タイ':'th','シンガポール':'sg','アラブ首長国連邦':'ae','サウジアラビア':'sa',
     'トルコ':'tr','ロシア':'ru','ウクライナ':'ua','ギリシャ':'gr','ルーマニア':'ro','南アフリカ':'za','台湾':'tw','香港':'hk','カタール':'qa'
@@ -1152,6 +1152,7 @@
     state.data = res[0];
     /* this site's own time for each article (sitePublished), the outlet's time kept as sourcePublished (owner's OK, 20 Nov 2026) */
     try { var stEl = document.getElementById('sitetimes'), stM = stEl ? JSON.parse(stEl.textContent) : {}; (state.data.articles || []).forEach(function(a){ if (stM[a.id]) { a.sourcePublished = a.published; a.published = stM[a.id]; } }); } catch (e) {}
+    try { var snEl = document.getElementById('srcnames'), snM = snEl ? JSON.parse(snEl.textContent) : {}; (state.data.articles || []).forEach(function(a){ if (snM[a.source]) a.source = snM[a.source]; }); } catch (e) {}
     /* never show a time still to come: a date-only article is set to 12:00 outlet time (owner's OK, 20 Nov 2026) */
     try { var nowIso = new Date().toISOString(); (state.data.articles || []).forEach(function(a){ if (a.published && new Date(a.published) > new Date()) a.published = nowIso; }); } catch (e) {}
     renderAll();

@@ -14,6 +14,7 @@ Checks
   sitemap    every URL in sitemap.xml exists; no duplicates; every indexable page is in it
              (pages with noindex, 404.html and /share/ are left out on purpose)
   storyline  a resolved STORYLINE page does not say 追いかけ中
+  media      one outlet is not shown under two names (tools/source-names.json) -> WARN
   size       pages over the site's own budget (home 250KB, rules index 250KB, team and month pages 150KB) -> WARN
 """
 import json, os, re, sys
@@ -128,6 +129,20 @@ for p in pages():
 for k, v in srcs.items():
     if len(v) > 1:
         err(f'duplicate source {k}: ' + ', '.join(v))
+
+# one outlet under two names (owner's OK, 21 Nov 2026): add the variant to tools/source-names.json
+try:
+    names = json.load(open(os.path.join(ROOT, 'tools', 'source-names.json'), encoding='utf-8'))
+    same, distinct = names.get('same', {}), {frozenset(x) for x in names.get('distinct', [])}
+    shown = {same.get(a.get('source', ''), a.get('source', '')) for a in json.load(open(os.path.join(ROOT, 'news', 'archive.json'), encoding='utf-8'))['articles'].values()}
+    keys = {}
+    for n_ in shown:
+        keys.setdefault(re.sub(r'\.(com|de|nl|it|net|co\.uk|fr|es|jp|com\.br)$', '', n_.lower().strip()), set()).add(n_)
+    for v in keys.values():
+        if len(v) > 1 and frozenset(v) not in distinct:
+            warn('media name variants (one outlet?): ' + ' / '.join(sorted(v)))
+except Exception as ex:
+    warn(f'media names not checked ({ex})')
 
 # sitemap
 sm = open(os.path.join(ROOT, 'sitemap.xml'), encoding='utf-8').read()
