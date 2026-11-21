@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T12:30:00+09:00",
+ "updatedAt": "2026-11-21T18:30:00+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -40,9 +40,144 @@
   "lasvegas-fp3-verstappen": {
    "title": "フェルスタッペン、ラスベガスFP3でラッセルらと絡み2件が審議に",
    "summary": "ラスベガスGPのFP3でフェルスタッペンは、冷えたタイヤを温める蛇行でコラピントを避けさせた件と、ラッセルとの攻防で接触したとみられる件の2件でスチュワードの調査を受けた。ラッセルはメルセデス1-2で最速、フェルスタッペンは6番手だった。元ドライバーのヴィルヌーヴは、ラッセルの動きは不要なリスクだったと指摘している。結論は報じられた時点で出ていない。"
+  },
+  "lasvegas-quali-antonelli-slipstream": {
+   "title": "最速アントネッリは降格で6番手　スリップ頼みの予選に驚き",
+   "summary": "ラスベガスGP予選は、最速のアントネッリがエンジン交換で5グリッド降格となり6番手から発進する。最終アタックはスリップストリームが想像以上に効き、メルセデスのウォルフ代表は35年で初めて見る光景と驚いた。降格によりフェルスタッペンとラッセルがフロントロウに並ぶ。アントネッリ本人も全員が一斉に走る展開をミニカートに例えた。"
+  },
+  "lasvegas-quali-ferrari-out": {
+   "title": "フェラーリ両車Q2敗退　直線の遅れと床の損傷が重なる",
+   "summary": "ルクレールとハミルトンはラスベガス予選でQ2敗退となり、11番手と12番手だった。ルクレールは直線で最大約1秒を失うと訴え、ハミルトンはQ1で床を損傷した。ヴァスール代表はQ1が3番手だっただけに、もっと良い結果を出せたと話している。タイヤ温度管理の難しさも課題として挙がった。"
   }
  },
  "articles": [
+  {
+   "id": "it-motorionline-antonelli-fastest-sixth",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "lasvegas-quali-antonelli-slipstream",
+   "title": "アントネッリ予選最速も6番手発進　「ミニカートの時代のよう」",
+   "summary": "ラスベガスGP予選でアントネッリ（メルセデス）が最速タイムを記録したが、6基目の内燃機関交換で5グリッド降格となり、決勝は6番手から始める。2番手だったフェルスタッペンに約0.25秒の差をつけた。最終アタックでは前の集団に詰まったように見え、いったん距離を取ってからタイムを稼いだ。本人は全員が一斉に走る展開を「ミニカートの時代のよう」と評し、タイヤが働かずフィーリングは「ゼロ」で、ブレーキペダルも長く感じたという。それでも決勝のペースは良いと見ており、優勝争いを狙うと話した。",
+   "orig": "F1 GP Las Vegas | Antonelli il più veloce, ma partirà 6°: \"Per me sono state qualifiche molto strane\"",
+   "url": "https://f1grandprix.motorionline.com/f1-gp-las-vegas-antonelli-il-piu-veloce-ma-partira-6-per-me-sono-state-qualifiche-molto-strane/",
+   "published": "2026-11-21T09:00:00+01:00",
+   "featured": true
+  },
+  {
+   "id": "nl-f1maximaal-wolff-never-seen-tow",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "lasvegas-quali-antonelli-slipstream",
+   "title": "ウォルフ「35年で見たことがない」　アントネッリ最速の最終ラップ",
+   "summary": "メルセデスのウォルフ代表は、ラスベガス予選でのアントネッリの最速タイムを「35年見てきて初めて」と驚きをもって受け止めた。最後のアタックは時間ぎりぎりでラインを越えたため、代表は当初そのラップは無効だと思ったという。前を走る車列のスリップストリームが約1.5秒の車間でも効いたことが驚きで、コーナーで失うと予想していたと話した。アントネッリは自ら最後に出る順番を選んだ。降格によりフェルスタッペンとラッセルがフロントロウに並び、代表は決勝を「ほとんど映画」と期待した。",
+   "orig": "Wolff met stomheid geslagen na kwalificatie: \"In 35 jaar nog nooit zoiets gezien\"",
+   "url": "https://www.f1maximaal.nl/formule-1/wolff-met-stomheid-geslagen-na-kwalificatie-in-35-jaar-nog-nooit-zoiets-gezien",
+   "published": "2026-11-21T06:56:00+01:00"
+  },
+  {
+   "id": "it-motorionline-ferrari-q2-vasseur",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "lasvegas-quali-ferrari-out",
+   "title": "フェラーリ両車Q2敗退　ヴァスール代表「もっとできた」",
+   "summary": "ラスベガスGP予選でフェラーリはルクレールとハミルトンがともにQ2で敗退した。ヴァスール代表はQ1で3番手だったとして「もっと良い仕事ができた」と述べたが、エンジンを言い訳にはしないと語った。ハミルトンの車はQ1で床を傷め、Q2までに直せなかった。ルクレールは直線で最大1秒を失うと訴えている。SF-26は低温でタイヤを温めにくい弱点も出た。フェラーリは残り3戦でコンストラクターズ2位を守る立場で、レッドブルに95点のリードを持つ。",
+   "orig": "F1 GP Las Vegas | Eliminazione umiliante della Ferrari in Q2, Vasseur: \"Potevamo fare molto meglio\"",
+   "url": "https://f1grandprix.motorionline.com/ferrari-las-vegas-vasseur-qualifiche-motore-gomme-q2/",
+   "published": "2026-11-21T08:00:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-leclerc-angry-q2",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "lasvegas-quali-ferrari-out",
+   "title": "ルクレール「今は非常に怒っている」　フェラーリ両車Q2敗退",
+   "summary": "ルクレールとハミルトンはQ2で敗退し、11番手と12番手に終わった。ルクレールは「今は非常に怒っている」と述べ、実質唯一の有効周回でのミスを悔やんだ。2台でのスリップストリーム連携がなく、タイヤ温度を優先した点をチームの弱点と指摘している。ハミルトンはQ1の早い段階でデブリにより床の一部を失い、ダウンフォースで3〜4/10秒、直線のデプロイメントで約6/10秒を失ったと見ている。当日朝にはGPSのトラブルもあり、ルクレールは原因がチーム内なら対処が必要だと話した。",
+   "orig": "Leclerc schimpft nach doppeltem Q2-Aus: \"Bin im Moment sehr wütend!\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/leclerc-schimpft-nach-doppeltem-q2-aus-bin-im-moment-sehr-wuetend-26112109",
+   "published": "2026-11-21T07:30:00+01:00"
+  },
+  {
+   "id": "nl-f1maximaal-red-bull-pole-mekies",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "F1Maximaal",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "lasvegas-quali-verstappen-pole",
+   "title": "フェルスタッペンは公式ポール　レッドブル代表は「ストップウォッチでは別」",
+   "summary": "ラスベガスGPの公式ポールはフェルスタッペンとなった。ポールは予選最速ではなく、最前列から発進する選手に与えられるためで、今季3回目だという。最速のアントネッリは新エンジンで5グリッド降格となり、最終セクターでスリップストリームにより9/10秒近く稼いでいた。レッドブルのメキース代表はタイム上は2番手と5番手だと語り、ストップウォッチで見る立場を示した。雨のため各チームが本格的なロングランをしていない点にも触れ、決勝は読みにくいとみている。",
+   "orig": "Red Bull twijfelt over poleposition van Verstappen: \"Zo kijken wij ernaar.\"",
+   "url": "https://www.f1maximaal.nl/formule-1/red-bull-twijfelt-over-poleposition-van-verstappen-zo-kijken-wij-ernaar",
+   "published": "2026-11-21T06:39:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-alonso-honda-demo-lap",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total",
+   "cat": "チーム",
+   "circuit": "lasvegas",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "aston-honda-vegas-straights",
+   "title": "アロンソ「ホンダ車の後ろでは皆が車間を空ける」　ベガスは「デモ走行」",
+   "summary": "アストンマーティンのアロンソはラスベガス予選で19番手となり、「予想通り」と述べた。モンツァとベガスは直線の長さから最も厳しく、直線で2.5〜3秒を失うと語る。Q1ではラッセルから2.736秒遅れ、直線ではメルセデスより最大20km/h遅かった。ホンダ車の後ろを走る他車は最初から車間を広げるとも話し、自分たちには「デモ走行に近い」と皮肉った。アントネッリとリンドブラッドのようなスリップ戦術にも加われなかった。カレンダーについても、アメリカ戦から続く遠征の末に欧州へ戻る日程に疑問を示した。",
+   "orig": "Fernando Alonso: Bei einem Honda-Motor nehmen alle anderen Sicherheitsabstand",
+   "url": "https://www.motorsport-total.com/formel-1/news/fernando-alonso-bei-einem-honda-motor-nehmen-alle-anderen-sicherheitsabstand-26112110",
+   "published": "2026-11-21T07:40:00+01:00"
+  },
+  {
+   "id": "de-motorsportmagazin-audi-fuel-q2",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "audi"
+   ],
+   "topic": "audi-vegas-fuel",
+   "title": "アウディ、ベガス予選でガス欠　ヒュルケンベルグ12番手、ボルトレート13番手",
+   "summary": "ラスベガス予選でアウディの2台は、Q2の再アタックを前に燃料が尽き、残り数分でピットに戻った。ヒュルケンベルグは序盤に1分35秒460を出して上位にいたが、スリップストリームがなく、遅いブレーキングのミスで2回目は伸びなかった。ボルトレートは直線の速度不足に苦しんだ。決勝はヒュルケンベルグ12番手、ボルトレート13番手からで、ライバルのエンジン交換ペナルティが助けになっている。アウディはコンストラクターズ7位確保に残り3戦で最低4点が必要。",
+   "orig": "Deshalb ging Audi im Formel-1-Qualifying von Las Vegas der Sprit aus",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301338-deshalb-ging-audi-im-formel-1-qualifying-von-las-vegas-der-sprit-aus/",
+   "published": "2026-11-21T08:48:00+01:00"
+  },
   {
    "id": "en-planetf1-verstappen-double-investigation",
    "kind": "news",
@@ -60,8 +195,7 @@
    "summary": "ラスベガスGPのFP3で、フェルスタッペンが2件の事案でスチュワードの審議対象となった。開始直後は冷えたタイヤを温めるため蛇行し、後ろのコラピントが急にインへ避ける形になり、不規則運転の疑いが出た。終盤にはラッセルとバックストレートで抜き合い、接触したように見える場面があり、本人は無線で「壁に押された」と訴えた。ラッセルは「面白かったね」と返した。両者と両チームは現地18時に聴取を受ける予定で、結論はまだ出ていない。",
    "orig": "Max Verstappen under double FIA investigation after Russell, Colapinto incidents",
    "url": "https://www.planetf1.com/news/max-verstappen-george-russell-las-vegas-grand-prix-2026-fia",
-   "published": "2026-11-21T02:27:00+00:00",
-   "featured": true
+   "published": "2026-11-21T02:27:00+00:00"
   },
   {
    "id": "de-motorsporttotal-ft3-las-vegas-russell-verstappen",
@@ -1451,195 +1585,6 @@
    "orig": "Lawson onthult meedogenloze aanpak van Marko: \"Hij was echt angstaanjagend\"",
    "url": "https://www.f1maximaal.nl/formule-1/lawson-onthult-meedogenloze-aanpak-van-marko-hij-was-echt-angstaanjagend",
    "published": "2026-11-18T15:41:00+01:00"
-  },
-  {
-   "id": "de-f1insider-felbermayr-audi-f1academy-2027",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider",
-   "cat": "ドライバー",
-   "teams": [
-    "audi"
-   ],
-   "topic": "audi-felbermayr-f1academy",
-   "title": "フェルバーマイアー、2027年もアウディでF1アカデミー参戦　異例の3年目",
-   "summary": "F1-Insiderは、オーストリアの19歳エマ・フェルバーマイアーが2027年もアウディからF1アカデミーに参戦すると伝えた。マシンはロディン・モータースポーツが走らせる。同シリーズは通常2年間だが、2025年の規則変更で有望な選手は3年目も可能になり、フェラーリ育成のアルバ・ラーセンに続く2人目だ。2025年にザウバーから参戦して初優勝を挙げ、今季も上海とシルバーストンで勝っている。ランキングは3位で、首位ニーナ・ゲイドマンとは6点差のまま、最終のラスベガス大会2戦に臨む。",
-   "orig": "Audi gibt Fahrer-Vertragsverlängerung bekannt",
-   "url": "https://f1-insider.com/formel-1-audi-fahrer-vertragsverlaengerung-84002/",
-   "published": "2026-11-18T10:32:00+01:00"
-  },
-  {
-   "id": "ja-voice-v8-2030-fia-direction",
-   "kind": "voice",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1 Grid Walk",
-   "cat": "ファンの声",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "f1-v8-engine-proposal",
-   "title": "『FIAが現在の方向性は失敗と気づいて良かった』　2030年V8復活案にファンの声",
-   "summary": "Yahoo!ニュースのコメント欄では、2030年からの2.1リッターV8ターボ復活で基本合意との報道に、現行規則の見直しを歓迎する声や、ホンダの参戦意思を気にする声が並んだ。電気の比率が下がることで、ドライバーの腕が出る競走に戻るのではという期待も目立った。",
-   "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-   "published": "2026-11-19T00:25:00+09:00",
-   "note": "歓迎する声が目立つ一方、規則の中身がまだ固まっていないため、期待も疑問も「走ってみないと分からない」という慎重さが混じっていた。読めたコメントは日本語のみで、海外の反応は確認できていない。",
-   "voices": [
-    {
-     "side": "日本",
-     "text": "FIAが現在の方向性は失敗と気づいて良かった",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "賛",
-     "quote": true,
-     "comment": "FIAとメーカーは11月16日の会合で、次世代エンジンについて基本合意したと発表した。V8は当初の2031年から2030年へ前倒しされる見通しだ。",
-     "big": true
-    },
-    {
-     "side": "日本",
-     "text": "エコ路線からスピードとサウンドに回帰したことになるのか？",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "驚",
-     "quote": true,
-     "comment": "新エンジンは2.1リッターのV8ターボで、電気の比率は大きく下がる。持続可能燃料の使用は続くため、完全な回帰かどうかは議論が分かれる。"
-    },
-    {
-     "side": "日本",
-     "text": "相変わらずズレてる。",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "否",
-     "quote": true,
-     "comment": "FIAは基本合意を発表した直後に声明を削除し、会長の投稿をめぐっても情報が錯綜した。最終的な枠組みは来月の世界モータースポーツ評議会で示される。"
-    },
-    {
-     "side": "日本",
-     "text": "ホンダが次の規則でも参戦するのか気になるという声",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "心配"
-    },
-    {
-     "side": "日本",
-     "text": "ホンダには有利な環境変化と見る人も",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "賛"
-    },
-    {
-     "side": "日本",
-     "text": "電気が減れば、今季より腕の差が出るはずという期待",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "賛"
-    },
-    {
-     "side": "日本",
-     "text": "2.1リッターで回転数はどうなるのかと疑問を挙げる人も",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "驚"
-    },
-    {
-     "side": "日本",
-     "text": "今のハイブリッドの方向性は失敗だったとの見方",
-     "src": "Yahoo!ニュース コメント欄（オートスポーツweb）",
-     "url": "https://news.yahoo.co.jp/articles/dc67fb1cd83334b3106d2361ae0ba531d4bff0be/comments",
-     "mood": "否"
-    }
-   ]
-  },
-  {
-   "id": "en-racingnews365-piastri-ice-penalty-vegas",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "チーム",
-   "circuit": "lasvegas",
-   "teams": [
-    "mclaren"
-   ],
-   "topic": "piastri-ice-penalty-vegas",
-   "title": "ピアストリ、ラスベガスで10グリッド降格へ　ICE交換が規定数を超過",
-   "summary": "RacingNews365は、マクラーレンのオスカー・ピアストリがラスベガスGPで新しい内燃機関（ICE）を投入し、10グリッド降格のペナルティを受けると伝えた。年間4基までは無罰で、最終3戦で5基目を使う扱いになる。超過1基目は10グリッド、以降は1基ごとに5グリッド加算される。予選でポールを取っても決勝は最高11番手からのスタートとなる。両ドライバーはメルセデスHPPの新ADUOターボも使うが、こちらは無罰でノリスに降格はない。",
-   "orig": "Oscar Piastri to take major F1 grid penalty at Las Vegas Grand Prix",
-   "url": "https://racingnews365.com/oscar-piastri-to-take-major-f1-grid-penalty-at-las-vegas-grand-prix",
-   "published": "2026-11-18T08:12:00+00:00"
-  },
-  {
-   "id": "en-racingnews365-ecclestone-hamilton-retire",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "エクレストン氏「ハミルトンは引退を考えるべき」　フェラーリでの不満に苦言",
-   "summary": "95歳のバーニー・エクレストン氏が、RTLとスカイ・スポーツの取材に対し、フェラーリのルイス・ハミルトンは引退を考えるべきだと述べたとRacingNews365が伝えた。同氏はハミルトンが最初のコーナーに着く前から不満を言っていると批判した。ルクレールは根っからのフェラーリの人間で、ハミルトンはチームのやり方を変えようとしたが遅すぎたとも語った。さらに、フェラーリには明確なナンバー1が必要だと主張している。記事にハミルトンやフェラーリ側の反応はない。",
-   "orig": "Lewis Hamilton told to consider retirement after Ferrari 'whining and complaining'",
-   "url": "https://racingnews365.com/lewis-hamilton-told-to-consider-retirement-after-ferrari-whining-and-complaining",
-   "published": "2026-11-18T09:00:00+00:00"
-  },
-  {
-   "id": "en-racingnews365-hinchcliffe-vegas-mercedes-redbull",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "RacingNews365",
-   "cat": "サーキット",
-   "circuit": "lasvegas",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "topic": "lasvegas-straight-favourites",
-   "title": "元インディカーのヒンチクリフ「ベガスはメルセデスとレッドブル有利」",
-   "summary": "元インディカー・ドライバーのジェームズ・ヒンチクリフが、ポッドキャスト「F1 Nation」で、ラスベガスGPはメルセデスとレッドブルが有力だとの見方を示したとRacingNews365が伝えた。市街地コースはフルスロットルが約1.9km続き、残りは低速の直角コーナーが中心で、最高速がラップタイムと追い抜きを左右するという。両陣営は最近モンツァとバクーで勝ち合っており、バクーはラッセルがフェルスタッペンに僅差で勝った。マクラーレンは効率面の課題が残り、フェラーリも直線での不利が懸念されると語った。これは予想で、結果の裏付けはない。",
-   "orig": "Mercedes and Red Bull backed for Sin City scrap as major strength offers advantage",
-   "url": "https://racingnews365.com/mercedes-and-red-bull-backed-for-sin-city-scrap-as-major-strength-offers-advantage",
-   "published": "2026-11-18T09:50:00+00:00"
-  },
-  {
-   "id": "it-automoto-racingbulls-lawson-tsolov-2027",
-   "kind": "rumor",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Automoto",
-   "cat": "うわさ",
-   "teams": [
-    "racingbulls",
-    "redbull"
-   ],
-   "topic": "racingbulls-lawson-tsolov-2027",
-   "title": "ローソン残留かツォロフ昇格か　レーシングブルズの2027年布陣に迷い",
-   "summary": "伊Automotoは、レーシングブルズが2027年に向けてリアム・ローソンの残留とニコライ・ツォロフの昇格のどちらを選ぶかで迷っていると報じた。ローソンはランキング9位で、ブラジルでは雨の予選3番手から8位に入った。ツォロフはF2で2位につけ、レッドブルは近くF1でテストさせたい意向だという。アラン・ペルマーネ代表は契約発表の日程は未定で、あらゆる選択肢があると述べた。ザ・レースを引用し、ローソンはラスベガスGP前に契約書を交わす見通しとも伝えている。いずれも未確認の情報である。",
-   "orig": "\"Lawson merita il posto, ma la Red Bull ha altre idee\": il retroscena Racing Bulls che scuote il mercato piloti",
-   "url": "https://www.automoto.it/formula1/f1-racing-bulls-nodo-piloti-2027-lawson-tsolov.html",
-   "published": "2026-11-10T12:00:00+01:00"
-  },
-  {
-   "id": "en-planetf1-leclerc-vegas-worried",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "circuit": "lasvegas",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "lasvegas-cold-tyres",
-   "title": "ルクレール、ラスベガスは「低温で難しい週末に」　フェラーリは今季未勝利が続く",
-   "summary": "ルクレールは、ラスベガスGPについて、気温の低さから「フェラーリにとって難しいものになるかもしれない」と見通しを語った。フェラーリは夏休み明け以降未勝利で、最後の勝利は7月の英国GPでのルクレールだ。ブラジルではルクレールが8位、ハミルトンが9位で、雨での速さは過去最高だったが理解すべき点は残るという。コンストラクターズではレッドブルに95点差をつけて2位を守る。中東での開催への考えを問われると、父になったばかりのルクレールは「答えないでおく」とした。",
-   "orig": "Charles Leclerc reveals worried Ferrari stance on Las Vegas GP prospects",
-   "url": "https://www.planetf1.com/news/charles-leclerc-ferrari-las-vegas-prospects-revealed",
-   "published": "2026-11-18T03:00:00+00:00"
   }
  ]
 }
