@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T00:45:00+09:00",
+ "updatedAt": "2026-11-22T06:30:00+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -47,6 +47,62 @@
   }
  },
  "articles": [
+  {
+   "id": "it-motorionline-hamilton-incubo-fondo",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "予選",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "lasvegas-quali-ferrari-out",
+   "title": "ハミルトン「悪夢だった」　床の損傷と電力配分の不具合でQ2敗退",
+   "summary": "ハミルトンはラスベガス予選で12番手に終わり、Q2で敗退した。Q1の1周目にリアの床が壊れ、ダウンフォースだけで3〜4/10秒を失ったと説明している。最後のアタックではエネルギー配分の不具合で約6/10秒を失い、「悪夢だった」と振り返った。ヴァスール代表によれば床はQ1とQ2の間に修復できず、チームはQ1を3番手で通過していただけに悔しさが残る。決勝はペナルティで9番グリッドと10番グリッドになり、コンストラクターズ2位の防衛が目標になる。",
+   "orig": "F1 GP Las Vegas | Entrambe le Ferrari fuori in Q2, Hamilton: \"Un incubo, avevo anche un danno al fondo\"",
+   "url": "https://f1grandprix.motorionline.com/hamilton-las-vegas-qualifiche-fondo-danneggiato-deployment/",
+   "published": "2026-11-21T20:00:00+01:00"
+  },
+  {
+   "id": "it-motorionline-russell-verstappen-dito-medio",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "ドライバー",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "topic": "russell-verstappen-vegas-clash",
+   "title": "ラッセルとフェルスタッペン、FP3で接触　戒告のみの裁定に「彼は誰にでもやる」",
+   "summary": "ラスベガスのFP3でフェルスタッペンがラッセルを抜いた直後に早めにブレーキをかけ、ラッセルが並びかけて接触した。フェルスタッペンは次のストレートでラッセルに中指を立てた。審議の結果、フェルスタッペンへの処分は戒告のみでグリッド降格はなかった。記事はメキシコで接触した別の2人が1グリッド降格を受けた例を挙げ、判断の一貫性に疑問を示している。ラッセルは予選後に「ラップを台無しにされるのは受け入れられない」と述べ、フェルスタッペンは「何も起きていない」と話した。",
+   "orig": "F1 GP Las Vegas | Russell e la lite con Verstappen: \"Fa sempre così con tutti\". E Max fa il dito medio!",
+   "url": "https://f1grandprix.motorionline.com/russell-verstappen-las-vegas-pl3-reprimenda-fia/",
+   "published": "2026-11-21T21:00:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-verstappen-ferrari-auspuffklappe",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total",
+   "cat": "テクニカル",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari",
+    "redbull"
+   ],
+   "topic": "ferrari-vegas-topspeed",
+   "title": "フェルスタッペンが指摘するフェラーリの弱点　排気フラップが最高速を削る",
+   "summary": "フェルスタッペンはラスベガスでのフェラーリの最高速不足について、小さなターボに加え、独特の排気フラップも不利に働いていると語った。排気の前にある部品が大きいほど出力を失い、ハースは直線での影響がずっと小さいという。記事によればFIAの計測でフェラーリの内燃機関はフィールド最良のレッドブルより2〜4%劣り、ADUOのトークンは2つ与えられている。ラスベガスの長い直線ではクリッピングが起き、内燃機関だけに頼る時間が生じる。フェルスタッペンは批判を避け、自チームの仕事に集中していると述べた。",
+   "orig": "Verstappen deckt Ferraris Schwachstelle auf: Ein Detail kostet Topspeed",
+   "url": "https://www.motorsport-total.com/formel-1/news/verstappen-deckt-ferraris-schwachstelle-auf-ein-detail-kostet-topspeed-26112115",
+   "published": "2026-11-21T11:40:00+01:00"
+  },
   {
    "id": "ja-voice-vegas-quali-honda-pp",
    "kind": "voice",
@@ -1602,56 +1658,6 @@
    "orig": "McLaren to sell 2027 F1 car before it races",
    "url": "https://www.the-race.com/business/mclaren-to-sell-2027-f1-car-before-it-races/",
    "published": "2026-11-18T12:00:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-monza-bremsen-2026",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total",
-   "cat": "テクニカル",
-   "circuit": "monza",
-   "topic": "brembo-brakes-2026",
-   "title": "モンツァはもう最も厳しいブレーキ負荷のコースではない　2026年規則の影響",
-   "summary": "ブレンボによると、2026年規則でMGU-Kの出力が120kWから350kWに上がり、減速の一部を回生が担うためモンツァのブレーキ負荷は大きく下がった。代わってシンガポールやオーストリアのように、回生と電力展開の余裕が少ないコースでは摩擦ブレーキの負担が重い。鈴鹿やシルバーストンは負荷が最も低く、カーボンの温度が上がりにくい。カーボンの適正温度は350〜550度で、開幕前は多くのチームでリアブレーキが過大だったという。2027年に回生出力が調整されれば、配分の変化でコースごとの負荷が大きく変わる可能性もある。",
-   "orig": "Warum Monza seit 2026 nicht mehr zu den härtesten Bremsenstrecken zählt",
-   "url": "https://www.motorsport-total.com/formel-1/news/warum-monza-seit-2026-nicht-mehr-zu-den-haertesten-bremsenstrecken-zaehlt-26111812",
-   "published": "2026-11-18T12:00:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-wolff-long-term",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "チーム",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "wolff-mercedes-future",
-   "title": "ウォルフ代表「近い将来とは10年先」　メルセデス残留の意向とBild紙に語る",
-   "summary": "F1Maximaalは、メルセデスのトト・ウォルフ代表がドイツのBild紙に、当面チームを離れる考えはないと語ったと伝えた。「私にとって『近い将来』は10年先を意味する」と述べ、2036年にもチームにいる可能性を否定しなかった。他チームから誘われているかとの問いには「全くない。驚きだろう」と答えている。健康で仕事が苦にならなければ長く続けたいとし、将来は役割を分けて会長に近い立場になる考えも明かした。",
-   "orig": "Toto Wolff geeft inkijkje in toekomstplannen: \"Ik denk heel erg op de lange termijn\"",
-   "url": "https://www.f1maximaal.nl/formule-1/wolff-laat-vertrek-bij-mercedes-niet-door-zijn-hoofd-spelen-ze-kunnen-me-toch-niet-weghalen",
-   "published": "2026-11-18T10:44:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-permane-lawson-2027",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total",
-   "cat": "チーム",
-   "teams": [
-    "racingbulls",
-    "redbull"
-   ],
-   "topic": "racingbulls-lawson-tsolov-2027",
-   "title": "レーシングブルズ代表、ローソン残留を説明「チーム自身の決断」　ツォロフは見送り",
-   "summary": "レーシングブルズのアラン・パーマン代表が、2027年もリアム・ローソンを残す理由を説明したとMotorsport-Totalが伝えた。レッドブル育成のニコラ・ツォロフも検討したが、判断はレッドブルではなくチーム自身のもので、ミンツラフ氏や株主と協議したという。決定に時間がかかったのは正しい選択をするためで、対立の表れではないと述べている。ローソンはチームの114点のうち75点を挙げ、今季は15回の入賞を記録した。チームは5位で、リンドブラッドの成長を促す物差しの役割にも期待しているとパーマン代表は話した。",
-   "orig": "\"Echte Offenbarung\": Teamchef erklärt Entscheidung für Liam Lawson",
-   "url": "https://www.motorsport-total.com/formel-1/news/echte-offenbarung-teamchef-erklaert-entscheidung-fuer-liam-lawson-26111804",
-   "published": "2026-11-18T09:21:00+01:00"
   }
  ]
 }
