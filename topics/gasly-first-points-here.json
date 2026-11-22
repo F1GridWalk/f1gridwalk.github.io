@@ -1,0 +1,395 @@
+{
+ "slug": "gasly-first-points-here",
+ "gp": "ラスベガスGP",
+ "title": "「ここで、初めての点を」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "「ラスベガスでQ3進出100パーセントの記録は守った。あとは明日、ここで初めての点を取りたい」。3年とも予選は良くて、3年とも0点だった街で、アルピーヌのピエール・ガスリーは5周目にノリスを抜き、10周目すぎに3番手。クルマを冷やしながら8番手まで下がって、最終ラップにアントネッリと0.353秒差の5位。コラピントが6位。「6レースで1点」のチームが、1レースで18点。",
+ "checked": "2026-11-22",
+ "checkedNote": "F1公式サイト、The Race、PlanetF1、Autosport の実況、Sky Sports、RaceFans の原文を11月22日（決勝の数時間後）に確認しました。英語の言葉は編集部が訳しました。レース後のガスリー本人、コラピント、ニールセンの言葉は、下書きの時点ではまだ出ていないため、本文の言葉は木曜日と予選後のものです。「冷却の問題」は公式記事の「抱えているようだ」と実況の「冷やすように言われた」までで、何が熱くなっていたかの説明はチームから出ていません。寒いレースで冷却が問題になる仕組みの段落は、一般的な説明を編集部が補ったもので、アルピーヌの説明ではありません。ラスベガス3年の予選（2023年、2024年、2025年）でいずれもQ3に残ったことは本人の「100パーセント」の言葉によるもので、年ごとの順位は確認していません。",
+ "common": [
+  "予選後「Q3進出100パーセントの記録は守った。明日、ここで初めての点を」「Q3はごちゃごちゃ」「レーシングブルズを抜く方法を」。FP2 2番手（0.071秒差）「とても難しい一日」「楽しい挑戦」「現実的」。ニールセン「6レースで1点」「ラスベガスは合うと願っている」「もらっておく」「5レースぶりに2台がQ3」。",
+  "決勝：8番グリッド。コラピントを抜き返し、5周目ノリス、10周目すぎリンドブラッドとハジャーで3番手、14周目ハジャー、17周目アントネッリに抜かれ、19周目SC（4番手）。再スタートでハジャーのウイング破損→3番手、31周目ノリス、冷却の指示、33〜35周目にアントネッリ、ピアストリ、ハミルトン、ルクレールに抜かれ8番手。38周目ルクレールの10秒で6番手。最終ラップにアントネッリを一度抜いてシケインで抜き返され、0.353秒差の5位（+2.927秒）。コラピント7番手→6位。",
+  "数字：今季最高位、アルピーヌの今季最高位。52点10位、コラピント35点。アルピーヌ87点6位、レーシングブルズと27点差（45点から）。モナコ3位→7位、メキシコ全点失う、モンツァ初ポール→7位「9年間」。30歳、2028年末まで、2027年もコラピント。"
+ ],
+ "outlets": [
+  {
+   "id": "en-therace-vegas-fp2-wet",
+   "angle": "FP2",
+   "adds": [
+    "2番手。"
+   ]
+  },
+  {
+   "id": "en-planetf1-colapinto-online-abuse",
+   "angle": "コラピント",
+   "adds": [
+    "6位。中傷の件は別の読み解きで。"
+   ]
+  },
+  {
+   "id": "en-planetf1-alpine-aron-released",
+   "angle": "アルピーヌ",
+   "adds": [
+    "本文では扱っていない。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「ここで初めての点を」「ごちゃごちゃ」",
+   "w": "F1公式サイト「What the teams said」（11月21日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「難しい一日」「楽しい挑戦」、ニールセン「6レースで1点」",
+   "w": "F1公式サイト（11月20日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「冷却の問題を抱えているようだ」",
+   "w": "F1公式サイトの決勝記事（11月22日、英語）の地の文。"
+  },
+  {
+   "t": "「9年間」",
+   "w": "F1公式サイト（9月5日、英語）を編集部が訳した。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "レース後の言葉",
+   "t": "下書きの時点で未公開。出たら追記する。"
+  },
+  {
+   "k": "冷却の中身",
+   "t": "何が熱くなっていたかは未発表。仕組みの説明は編集部の一般論。"
+  },
+  {
+   "k": "グリッド",
+   "t": "予選は9番手・10番手、ピアストリの降格で8番・9番グリッド。"
+  }
+ ],
+ "unknownsFillable": [
+  "ガスリー、コラピント、ニールセンのレース後の言葉。",
+  "冷却の問題の正体。"
+ ],
+ "unknownsLimits": [
+  "無線の原文。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "この5位は、どこが今までと違うか？",
+  "rows": [
+   {
+    "k": "取って、失わなかった",
+    "t": "モナコ、メキシコは取ったあとに消えた。今回はペナルティなし、2台とも残った。"
+   },
+   {
+    "k": "集団の中で",
+    "t": "3番手の30周は、後ろから拾った順位ではなく、ノリスやハジャーを抜いて走った順位。"
+   },
+   {
+    "k": "冷却",
+    "t": "下がった原因は速さではなく熱。原因がはっきりしているぶん、次に持ち越せる。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "ガスリーの「マルコを相手にしたあとなら」とは？",
+   "rules": [
+    "teammate-battle"
+   ],
+   "links": [
+    "/topics/gasly-anything-else-is-no-pressure/"
+   ]
+  },
+  {
+   "q": "コラピントが抱えてきた、コースの外の問題は？",
+   "rules": [
+    "stewards"
+   ],
+   "links": [
+    "/topics/colapinto-tricky-for-us-alone-to-fix/"
+   ]
+  },
+  {
+   "q": "ハジャーのフロントウイングと「守るな」の無線とは？",
+   "rules": [
+    "team-orders"
+   ],
+   "links": [
+    "/topics/hadjar-can-he-stop-defending/"
+   ]
+  },
+  {
+   "q": "なぜ寒いのに冷却が問題になる？",
+   "rules": [
+    "cooling"
+   ]
+  },
+  {
+   "q": "スリップストリームで先頭が損をするのはなぜ？",
+   "rules": [
+    "slipstream"
+   ]
+  }
+ ],
+ "todo": [
+  "レース後の言葉、冷却の正体を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-22T06:00:00+00:00",
+   "t": "ラスベガスGP決勝、5位"
+  },
+  {
+   "at": "2026-11-22T17:40:00+09:00",
+   "t": "原文を確認し、下書き"
+  }
+ ],
+ "answer": "アルピーヌのピエール・ガスリー（30）は、予選後に「ラスベガスでQ3進出100パーセントの記録は守った。明日、ここで初めての点を」と言い、翌日の決勝で5位に入った。8番グリッドから5周目にノリスを抜き、10周目すぎに3番手。セーフティカー後も3番手を守ったが、31周目ごろからクルマを冷やす指示を受けて8番手まで下がり、ルクレールのペナルティで6番手に戻って、最終ラップはアントネッリと0.353秒差の5位。コラピントが6位でアルピーヌはダブル入賞。今季の自己最高位で、チームの最高位でもある。専務のニールセンが「6レースで1点」と言っていたチームが18点を取り、5位レーシングブルズとの差は27点に縮まった。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "「ラスベガスでQ3進出100パーセントの記録は守った。あとは明日、ここで初めての点を取りたい」。3年とも予選は良くて、3年とも0点だった街で、アルピーヌのピエール・ガスリーは5周目にノリスを抜き、10周目すぎに3番手。クルマを冷やしながら8番手まで下がって、最終ラップにアントネッリと0.353秒差の5位。コラピントが6位。「6レースで1点」のチームが、1レースで18点。",
+  "body": [
+   [
+    "h",
+    "「ここで、初めての点を」"
+   ],
+   [
+    "p",
+    "予選のあと、アルピーヌのピエール・ガスリーは言った。「ラスベガスでのQ3進出100パーセントの記録は守った。あとは明日、ここで初めての点を取りたい」。"
+   ],
+   [
+    "p",
+    "ラスベガスは、2023年に始まった。ガスリーは3年とも予選でQ3に残り、3年とも、点を取れずに帰っている。"
+   ],
+   [
+    "p",
+    "チームの直前の6レースは、専務のニールセンの言葉を借りれば「かなりひどい」。6レースで1点。メキシコでは2台とも入賞しながら、レース後に全部の点を失った。サンパウロは14位と13位で、1周遅れだった。ニールセンは木曜日に、「ラスベガスは、僕たちに合うと思うし、そう願っているコースだ」。"
+   ],
+   [
+    "h",
+    "雨の2番手"
+   ],
+   [
+    "p",
+    "木曜日の夜、雨で誰もタイムを出せなかった1回目の走行で、アルピーヌは最後にピットレーンからコースへ出た数少ないチームだった。2回目は、乾きかけた路面でガスリーが2番手。トップのラッセルと0.071秒差。"
+   ],
+   [
+    "p",
+    "「ウェットで、かなり低い気温で、とても難しい一日だった」。「グリップがとても低いときにマシンをコントロールし続けるのは、いつも楽しい挑戦でもある」。「最後に路面が乾いてきて、2番手で終わった」。ただし、「僕たちは現実的で、明日は条件がまったく違うことを分かっている」。ニールセンも、「乾きかけの路面でどこまで読めるかは分からない。でも、もらっておく」。"
+   ],
+   [
+    "p",
+    "金曜日の予選は、9番手。コラピントが10番手で、5レースぶりに2台がQ3に残った。「予選はずっと、特にQ3はごちゃごちゃしていた。トウ（前のマシンの空気の穴）を探して、たくさんのマシンが固まっていた」。「明日はたくさんのコース上の争いがあるだろうし、前にいるレーシングブルズを抜く方法を見つけないといけない」。前のドライバーのペナルティで、8番グリッドと9番グリッドになった。"
+   ],
+   [
+    "h",
+    "3番手"
+   ],
+   [
+    "p",
+    "決勝は、先頭を走ると損をするレースだった。スリップストリームが大きすぎて、フェルスタッペンとラッセルが14コーナーのシケインで何度も先頭を入れ替えた。"
+   ],
+   [
+    "p",
+    "ガスリーは、その集団の中にいた。スタートで前に出たコラピントをインから抜き返し、5周目にノリスを抜いて4番手。10周目すぎにはリンドブラッドとハジャーを抜いて、3番手。14周目にハジャーに取り返され、17周目にアントネッリに抜かれた。"
+   ],
+   [
+    "p",
+    "19周目、ペレスとカマラの接触でセーフティカー。ガスリーは4番手、コラピントは9番手で、全部のマシンがピットに入った。"
+   ],
+   [
+    "p",
+    "再スタートの直後、前のハジャーのフロントウイングが突然壊れて、ガスリーは3番手に戻った。30周目、ノリスの攻撃をしのいだ。31周目、ノリスに抜かれた。そして、そのころから、無線でクルマを冷やすように言われ続けた。"
+   ],
+   [
+    "h",
+    "冷やしながら"
+   ],
+   [
+    "p",
+    "ラスベガスは今季でいちばん寒いレースで、気温は一桁になる。寒いときは、チームはクルマの冷却の開口部を最小まで閉じる。その状態で、前に何台もいる集団の中を長く走ると、熱い空気しか入ってこない。イギリスのメディアは、ガスリーが「冷却の問題を抱えているようだ」と書いた。何が熱くなっていたかは、チームはまだ説明していない。"
+   ],
+   [
+    "p",
+    "33周目、アントネッリに抜かれた。34周目、17番グリッドから上がってきたピアストリ。35周目、ハミルトンとルクレール。3番手だったガスリーは、8番手まで下がった。"
+   ],
+   [
+    "p",
+    "38周目、前でルクレールがハミルトンに当たり、ルクレールに10秒加算。ガスリーは6番手に戻り、ペースも戻った。48周目、2番手を争っていたラッセルが5コーナーで壁に当たった。"
+   ],
+   [
+    "p",
+    "最終ラップ。先頭集団の後ろで、アントネッリのクルマから力が抜けた。ノリスとピアストリが1コーナーで抜き、ガスリーも一度は4番手に上がった。しかしアントネッリは、シケインでガスリーを抜き返した。0.353秒差。"
+   ],
+   [
+    "p",
+    "5位。優勝のフェルスタッペンから2.927秒。コラピントは7番手でチェッカーを受け、ルクレールのペナルティで6位になった。"
+   ],
+   [
+    "h",
+    "初めての点"
+   ],
+   [
+    "p",
+    "ラスベガスで、初めての点。それも、今季のガスリーの最高位で、アルピーヌにとっても今年いちばんの順位だ。ガスリーは52点でランキング10位、コラピントは35点。アルピーヌは87点で6位のまま、5位のレーシングブルズが0点に終わったので、差は45点から27点に縮まった。"
+   ],
+   [
+    "p",
+    "今年のアルピーヌの話は、点を取ったあとに失う話が多かった。モナコの3位は、控訴の末に9月に7位になった。メキシコは、2台の入賞が黄旗で消えた。モンツァでは初めてのポールポジションから7位。「9年間、ポールを取るチャンスを追いかけてきた」と言った人の、今年の最高位は、ここまで6位だった。"
+   ],
+   [
+    "p",
+    "30歳。契約は2028年の終わりまである。来年もコラピントと2人で走ることは、8月に決まっている。「もう今年のマシンは開発していない」と、コラピントは言った。"
+   ],
+   [
+    "p",
+    "それでも、閉じた冷却の中で、3番手を走った30周があった。「ここで初めての点を」と言った翌日に、ラスベガスで初めての10点。残りはカタールとアブダビ。レーシングブルズとの27点は、まだ届く差ではないかもしれない。でも、6レースで1点だったチームが、1レースで18点を取った。それが、この週末のアルピーヌだ。"
+   ]
+  ],
+  "terms": [
+   [
+    "スリップストリーム",
+    "slipstream"
+   ],
+   [
+    "セーフティカー",
+    "safety-car"
+   ],
+   [
+    "冷却と開口部",
+    "cooling"
+   ],
+   [
+    "Q3",
+    "qualifying"
+   ],
+   [
+    "コンストラクターズ選手権",
+    "constructors-championship"
+   ],
+   [
+    "ポールポジション",
+    "pole-position"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "Formula1.com",
+    "title": "What the teams said – Qualifying in Las Vegas 2026",
+    "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-qualifying-in-las-vegas-2026.3nVBux5Arj5K1MNogvg9j9",
+    "note": "2026年11月21日。「ここで初めての点を」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Alpine feeling hopeful after Gasly earns P2 during second practice in Las Vegas",
+    "url": "https://www.formula1.com/en/latest/article/alpine-feeling-hopeful-after-gasly-earns-p2-during-second-practice-in-las-vegas.3Iac1ObpdCLCHGU5rWCNXO",
+    "note": "2026年11月20日。ニールセン「6レースで1点」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "FP2: Russell beats Gasly and Leclerc to top spot in wet Las Vegas GP practice",
+    "url": "https://www.formula1.com/en/latest/article/fp2-russell-beats-gasly-and-leclerc-to-top-spot-in-wet-las-vegas-gp-practice.62NwXdkf1krQs0esgViJtc",
+    "note": "2026年11月20日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "FP1: Wet conditions limit running in first practice at Las Vegas Grand Prix",
+    "url": "https://www.formula1.com/en/latest/article/fp1-wet-conditions-limit-running-in-first-practice-at-las-vegas-grand-prix.7H085JgIW1k8jM3ysejVqJ",
+    "note": "2026年11月20日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Official grid: who starts where in Las Vegas after multiple penalties",
+    "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+    "note": "2026年11月21日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Verstappen wins exhilarating Las Vegas Grand Prix from Norris and Piastri",
+    "url": "https://www.formula1.com/en/latest/article/verstappen-wins-exhilarating-las-vegas-grand-prix-from-norris-and-piastri.2eeBWqekZdir9mdDVK9YVX",
+    "note": "2026年11月22日。「冷却の問題を抱えているようだ」。"
+   },
+   {
+    "name": "The Race",
+    "title": "Verstappen wins breathless Las Vegas GP as Ferraris collide",
+    "url": "https://www.the-race.com/formula-1/f1-las-vegas-gp-max-verstappen-wins-ferrari-drivers-collide/",
+    "note": "2026年11月22日。今季最高位、18点。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "2026 Las Vegas Grand Prix race report",
+    "url": "https://www.planetf1.com/news/2026-las-vegas-grand-prix-race-report",
+    "note": "2026年11月22日。"
+   },
+   {
+    "name": "Autosport",
+    "title": "LIVE: F1 Las Vegas GP updates",
+    "url": "https://www.autosport.com/f1/live-text/f1-las-vegas-gp-follow-the-race-in-las-vegas-with-live-timing-/1128378/",
+    "note": "2026年11月22日。「冷やすように言われた」。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Las Vegas GP: Max Verstappen wins wild race as Ferraris collide again",
+    "url": "https://www.skysports.com/f1/news/13615083/las-vegas-gp-max-verstappen-wins-wild-race-as-ferraris-lewis-hamilton-and-charles-leclerc-collide-again",
+    "note": "2026年11月22日。差のタイム。"
+   },
+   {
+    "name": "RaceFans",
+    "title": "2026 Las Vegas Grand Prix race result and championship points",
+    "url": "https://www.racefans.net/2026/11/22/2026-las-vegas-grand-prix-race-result-and-championship-points/",
+    "note": "2026年11月22日。"
+   },
+   {
+    "name": "The Race",
+    "title": "Double penalty costs Alpine all its Mexican GP points",
+    "url": "https://www.the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points/",
+    "note": "2026年11月2日。"
+   },
+   {
+    "name": "The Race",
+    "title": "F1 2026 Brazilian Grand Prix race result",
+    "url": "https://www.the-race.com/formula-1/f1-2026-brazilian-grand-prix-race-result/",
+    "note": "2026年11月8日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Gasly loses Monaco podium as penalties reinstated following appeal",
+    "url": "https://www.formula1.com/en/latest/article/gasly-loses-monaco-podium-as-penalties-reinstated-following-mclaren-and-red-bull-appeal.2DvZIUbpmqhnBSGJuDNjlv",
+    "note": "2026年9月4日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Gasly charges to sensational maiden F1 pole at Monza",
+    "url": "https://www.formula1.com/en/latest/article/gasly-charges-to-sensational-maiden-f1-pole-at-monza-over-russell-and-piastri.4CKkkbvgmqL04ijMNBfuXF",
+    "note": "2026年9月5日。「9年間」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Pierre Gasly 2026 results",
+    "url": "https://formula1.com/en/results/2026/drivers/PIEGAS01/pierre-gasly",
+    "note": "今季の結果。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Alpine announce Colapinto contract extension",
+    "url": "https://formula1.com/en/latest/article/alpine-announce-colapinto-contract-extension-as-team-confirms-unchanged-2027-line-up.DL3dVyZLJm5cHryWcHyPq",
+    "note": "2026年8月27日。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Colapinto: Alpine no longer developing 2026 car",
+    "url": "https://www.planetf1.com/alpine/franco-colapinto-alpine-upgrades",
+    "note": "2026年11月17日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "What is the weather forecast for the 2026 Las Vegas Grand Prix",
+    "url": "https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-las-vegas-grand-prix.1ki78WcweOZ8vq2zQ1HOJX",
+    "note": "2026年11月。気温。"
+   }
+  ]
+ }
+}
