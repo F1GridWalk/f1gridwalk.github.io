@@ -1,52 +1,52 @@
 {
- "updatedAt": "2026-11-21T18:30:00+09:00",
+ "updatedAt": "2026-11-22T18:40:00+09:00",
  "season": 2026,
  "standingsAfter": {
-  "round": 20,
-  "gp": "サンパウロGP"
+  "round": 21,
+  "gp": "ラスベガスGP"
  },
  "drivers": [
   {
    "pos": 1,
    "name": "アントネッリ",
    "team": "mercedes",
-   "pts": 390
+   "pts": 402
   },
   {
    "pos": 2,
    "name": "フェルスタッペン",
    "team": "redbull",
-   "pts": 279
+   "pts": 304
   },
   {
    "pos": 3,
-   "name": "ラッセル",
-   "team": "mercedes",
-   "pts": 262
+   "name": "ハミルトン",
+   "team": "ferrari",
+   "pts": 267
   },
   {
    "pos": 4,
-   "name": "ハミルトン",
-   "team": "ferrari",
-   "pts": 261
+   "name": "ラッセル",
+   "team": "mercedes",
+   "pts": 264
   },
   {
    "pos": 5,
-   "name": "ルクレール",
-   "team": "ferrari",
-   "pts": 251
+   "name": "ノリス",
+   "team": "mclaren",
+   "pts": 264
   },
   {
    "pos": 6,
-   "name": "ノリス",
-   "team": "mclaren",
-   "pts": 246
+   "name": "ルクレール",
+   "team": "ferrari",
+   "pts": 250
   },
   {
    "pos": 7,
    "name": "ピアストリ",
    "team": "mclaren",
-   "pts": 152
+   "pts": 167
   },
   {
    "pos": 8,
@@ -58,45 +58,45 @@
    "pos": 9,
    "name": "ローソン",
    "team": "racingbulls",
-   "pts": 87
+   "pts": 89
   },
   {
    "pos": 10,
    "name": "ガスリー",
    "team": "alpine",
-   "pts": 42
+   "pts": 52
   }
  ],
  "constructors": [
   {
    "pos": 1,
    "team": "mercedes",
-   "pts": 652
+   "pts": 666
   },
   {
    "pos": 2,
    "team": "ferrari",
-   "pts": 512
+   "pts": 517
   },
   {
    "pos": 3,
    "team": "redbull",
-   "pts": 415
+   "pts": 440
   },
   {
    "pos": 4,
    "team": "mclaren",
-   "pts": 390
+   "pts": 431
   },
   {
    "pos": 5,
    "team": "racingbulls",
-   "pts": 112
+   "pts": 114
   },
   {
    "pos": 6,
    "team": "alpine",
-   "pts": 69
+   "pts": 87
   },
   {
    "pos": 7,
@@ -111,7 +111,7 @@
   {
    "pos": 9,
    "team": "williams",
-   "pts": 12
+   "pts": 16
   },
   {
    "pos": 10,
@@ -155,7 +155,8 @@
    {
     "name": "決勝",
     "start": "2026-11-22T04:00:00Z",
-    "end": "2026-11-22T06:00:00Z"
+    "end": "2026-11-22T06:00:00Z",
+    "result": "優勝: フェルスタッペン"
    }
   ]
  },
@@ -318,7 +319,8 @@
    "round": 21,
    "gp": "ラスベガスGP",
    "circuit": "lasvegas",
-   "date": "2026-11-21"
+   "date": "2026-11-21",
+   "winner": "フェルスタッペン"
   },
   {
    "round": 22,

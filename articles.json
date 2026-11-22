@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T12:30:00+09:00",
+ "updatedAt": "2026-11-22T18:40:00+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -44,9 +44,168 @@
   "lasvegas-quali-ferrari-out": {
    "title": "フェラーリ両車Q2敗退　直線の遅れと床の損傷が重なる",
    "summary": "ルクレールとハミルトンはラスベガス予選でQ2敗退となり、11番手と12番手だった。ルクレールは直線で最大約1秒を失うと訴え、ハミルトンはQ1で床を損傷した。ヴァスール代表はQ1が3番手だっただけに、もっと良い結果を出せたと話している。タイヤ温度管理の難しさも課題として挙がった。"
+  },
+  "lasvegas-race-antonelli-battery": {
+   "title": "アントネッリ、最終盤の電力切れで表彰台逃す　ラスベガスGP",
+   "summary": "アントネッリは終盤2位を走りながら4位に後退した。最終ラップ手前の14コーナーでフェルスタッペンを抜かないようアクセルを戻し、オーバーテイクモードを残そうとしたが、再加速で電力が回収されずシケインを残量ゼロで出て1秒以上を失った。そのままマクラーレン2台に抜かれた。本人は「おそらく自分のミスだった」と認め、ウォルフ代表は直線で抜けたはずだと見ている。"
+  },
+  "ferrari-vegas-collision": {
+   "title": "ルクレールがハミルトンに接触　ヴァッスール代表が激怒",
+   "summary": "ラスベガスGP38周目、ルクレールがハミルトンの後輪に接触してスピンさせ、10秒のペナルティを受けた。ハミルトンも別件で10秒の罰を受け、結果は7位と10位に終わった。ヴァッスール代表は「受け入れられない」と述べ、レース後にルクレールを呼び出した。スカイ解説者のグロックは、両者の主導権争いが原因とみている。メキシコGPでの衝突に続く出来事で、処分の内容は明らかになっていない。"
+  },
+  "russell-verstappen-vegas-clash": {
+   "title": "フェルスタッペンとラッセルの対立がラスベガスで再燃",
+   "summary": "ラスベガスの練習走行でフェルスタッペンとラッセルが接近し、フェルスタッペンは警告を受けた。決勝では首位争いを繰り返した末、残り3周でラッセルがターン5でタイヤバリアに突っ込み9位に終わった。フェルスタッペンは無線で笑い、「完璧なカルマ」「自分のレベルをはるかに下回る」と辛辣に語った。"
   }
  },
  "articles": [
+  {
+   "id": "en-formula1com-vegas-race-report",
+   "kind": "news",
+   "lang": "en",
+   "region": "国際",
+   "source": "Formula1.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "redbull",
+    "mclaren"
+   ],
+   "topic": "lasvegas-race-verstappen-win",
+   "title": "フェルスタッペンがラスベガスGPを制す　首位が何度も入れ替わる大混戦",
+   "summary": "フェルスタッペンがポールからスタートし、1時間27分39秒624でラスベガスGPを制した。2位ノリスは0.639秒差、3位ピアストリは1.529秒差で、マクラーレンが2台そろって表彰台に立った。首位は何度も入れ替わり、フェルスタッペンは「本当に現実離れしていた」と語っている。ペレスの事故でセーフティカーが入り、ラッセルは48周目にバリアへ接触して9位に終わった。フェラーリはハミルトンが7位、ルクレールが10位だった。",
+   "orig": "Verstappen wins exhilarating Las Vegas Grand Prix from Norris and Piastri",
+   "url": "https://www.formula1.com/en/latest/article/verstappen-wins-exhilarating-las-vegas-grand-prix-from-norris-and-piastri.2eeBWqekZdir9mdDVK9YVX",
+   "published": "2026-11-22T05:58:00+00:00",
+   "featured": true
+  },
+  {
+   "id": "de-motorsporttotal-antonelli-lupfer-vegas",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "lasvegas-race-antonelli-battery",
+   "title": "アントネッリが表彰台を逃した理由　最終盤のスロットルオフで電力が尽きる",
+   "summary": "アントネッリ（メルセデス）は4位でゴールし、終盤の2位から表彰台を逃した。最終ラップ手前の14コーナーでフェルスタッペンを抜かないよう一度アクセルを戻し、オーバーテイクモードを残そうとしたのが裏目に出た。再加速した際に電力が回収ではなく消費され、本人によればシケインを電池残量ゼロで出て、1秒以上を失ったという。ノリスとピアストリにも抜かれた。ウォルフ代表は直線で抜けたはずだと見ており、実行しなかった切り札があったとも明かしたが、中身は語っていない。",
+   "orig": "Lupfer im falschen Moment: Darum verpasste Antonelli den Las-Vegas-Sieg",
+   "url": "https://www.motorsport-total.com/formel-1/news/lupfer-im-falschen-moment-darum-verpasste-antonelli-den-las-vegas-sieg-26112204",
+   "published": "2026-11-22T08:10:00+01:00"
+  },
+  {
+   "id": "it-formula1it-antonelli-finale-vegas",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "lasvegas-race-antonelli-battery",
+   "title": "アントネッリ「正しいことをしたつもりだった」　終盤の判断を振り返る",
+   "summary": "アントネッリは6番手から2位まで上がりながら、終盤の失速で表彰台を逃して4位に終わった。14コーナーでフェルスタッペンに対しオーバーテイクモードを使えるよう、一度アクセルを戻して間合いを保とうとしたと説明している。ただ再びアクセルを踏むと電力の回収に響き、シケインでほぼ止まるほど減速して、1コーナーまでに1秒以上を失った。そのまま両方のマクラーレンに抜かれ、本人は「おそらく自分のミスだった」と認めた。ドライバーズ選手権では402点で首位を守り、2位フェルスタッペンとは98点差だ。",
+   "orig": "Antonelli fa chiarezza sul finale: «Pensavo di fare la cosa giusta»",
+   "url": "https://www.formula1.it/news/34152/1/antonelli-fa-chiarezza-sul-finale-pensavo-di-fare-la-cosa-giusta-",
+   "published": "2026-11-22T08:40:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-ferrari-kollision-vasseur",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-vegas-collision",
+   "title": "ヴァッスール代表「絶対に受け入れられない」　フェラーリ同士の接触に怒り",
+   "summary": "38周目のターン7でルクレールがハミルトンの左後輪に接触し、ハミルトンはスピンした。審議でルクレールに非があるとされ、10秒のペナルティが科された。ヴァッスール代表はスカイで「絶対に受け入れられない」と述べ、ルクレールには追い抜きをしないよう伝えていたと説明した。ルクレールは罰を受け入れ、今後ヴァッスールやハミルトンと話すとした。ハミルトンは詳細を語らず、判断はフェラーリに委ねると述べた。メキシコGPでの両者の衝突に続く出来事だ。",
+   "orig": "\"Absolut inakzeptabel\": Teamchef platzt nach Ferrari-Kollision der Kragen",
+   "url": "https://www.motorsport-total.com/formel-1/news/absolut-inakzeptabel-teamchef-platzt-nach-ferrari-kollision-der-kragen-26112205",
+   "published": "2026-11-22T08:30:00+01:00"
+  },
+  {
+   "id": "it-formula1it-vasseur-furioso-leclerc",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-vegas-collision",
+   "title": "ヴァッスール代表、ルクレールに激怒　「表彰台を争えた」と悔しさ",
+   "summary": "ラスベガスGPのフェラーリはハミルトンが7位、ルクレールが10位に終わった。終盤にルクレールが追い抜きを仕掛けて接触し、ハミルトンがスピンして順位を落とし、ルクレールに10秒のペナルティが出た。ヴァッスール代表はスカイ・スポーツF1で「起きたことは受け入れられない」と述べ、指示に従わなかったと見ていることをにじませた。「表彰台を争えたが、ドライバーはチームより相手のことを考えている」とも語り、処分は翌日に話し合うとした。低温でSF-26が苦しんだ週末でもあった。",
+   "orig": "Ferrari, Vasseur furioso: «Errore di Leclerc inaccettabile, ci saranno conseguenze»",
+   "url": "https://www.formula1.it/news/34150/1/ferrari-vasseur-furioso-errore-di-leclerc-inaccettabile-ci-saranno-conseguenze",
+   "published": "2026-11-22T07:25:00+01:00"
+  },
+  {
+   "id": "de-f1insider-vasseur-leclerc-rapport",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-vegas-collision",
+   "title": "ヴァッスール代表がルクレールを呼び出し　グロックは「主導権争い」と指摘",
+   "summary": "38周目にルクレールがハミルトンの後輪に触れてスピンさせ、ルクレールに10秒のペナルティが出た。結果はハミルトンが7位、ルクレールが10位。ヴァッスール代表はレース直後に無線でルクレールを自分のもとへ呼んだと伝えられている。スカイ解説者のグロックは、どちらがチームの主役かを示そうとする意識的な争いだと見て、ヴァッスールに明確な対応を求めた。ハミルトンは、マクラーレンと戦うつもりだったのにと不満を語った。この内輪もめは、コンストラクターズ2位争いにも響きかねないと記事は指摘する。",
+   "orig": "Ferrari-Zoff eskaliert! Vasseur bestellt Leclerc zum Rapport",
+   "url": "https://f1-insider.com/formel-1-ferrari-zoff-las-vegas-2026-84162/",
+   "published": "2026-11-22T07:36:00+01:00"
+  },
+  {
+   "id": "it-formula1it-piastri-podio-vegas",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "mclaren"
+   ],
+   "topic": "piastri-vegas-podium",
+   "title": "ピアストリ、17位から表彰台へ　スリップストリームが後押し",
+   "summary": "ピアストリ（マクラーレン）はラスベガスGPで17番手から3位まで巻き返し、久々の表彰台に立った。ダブルピットストップでチームメートのノリスの後ろに下がる場面があったが、結果への影響は小さかったとされる。本人は集団が大きくまとまり、スリップストリームと2026年型パワーユニットの特性で抜きつ抜かれつの展開になったと説明した。クーサードのインタビューでは「後方からだと何が起きるか分からなかったが、順位を素早く取り戻せた」と語り、表彰台に満足していると述べた。",
+   "orig": "Piastri risorge a Las Vegas: dal diciassettesimo posto al podio nel caos",
+   "url": "https://www.formula1.it/news/34148/1/piastri-risorge-a-las-vegas-dal-diciassettesimo-posto-al-podio-nel-caos",
+   "published": "2026-11-22T07:20:00+01:00"
+  },
+  {
+   "id": "de-motorsporttotal-verstappen-russell-karma",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "russell-verstappen-vegas-clash",
+   "title": "フェルスタッペン、ラッセルのクラッシュに「完璧なカルマ」　辛辣な発言続く",
+   "summary": "ラスベガスGPで優勝したフェルスタッペンは、残り3周でラッセルがターン5のタイヤバリアに突っ込んだ後、無線で笑って「よくやった」と皮肉った。レース後にはラッセルについて「自分のレベルをはるかに下回る」と述べ、相手にする意味がないと語った。ヴィアプレイには「完璧なカルマ」とも話している。ウォルフ代表は、フェルスタッペンはミスをせず勝利に値したと認めた。背景には、3回目の練習走行後にターン14での接近でフェルスタッペンが警告を受けた件がある。",
+   "orig": "Verstappen spottet nach Russell-Crash: \"Ist so weit unter meinem Niveau!\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/verstappen-spottet-nach-russell-crash-ist-so-weit-unter-meinem-niveau-26112206",
+   "published": "2026-11-22T09:00:00+01:00"
+  },
   {
    "id": "ja-f1jouhou2-russell-verstappen-criticism",
    "kind": "fan",
@@ -237,8 +396,7 @@
    "summary": "ラスベガスGP予選でアントネッリ（メルセデス）が最速タイムを記録したが、6基目の内燃機関交換で5グリッド降格となり、決勝は6番手から始める。2番手だったフェルスタッペンに約0.25秒の差をつけた。最終アタックでは前の集団に詰まったように見え、いったん距離を取ってからタイムを稼いだ。本人は全員が一斉に走る展開を「ミニカートの時代のよう」と評し、タイヤが働かずフィーリングは「ゼロ」で、ブレーキペダルも長く感じたという。それでも決勝のペースは良いと見ており、優勝争いを狙うと話した。",
    "orig": "F1 GP Las Vegas | Antonelli il più veloce, ma partirà 6°: \"Per me sono state qualifiche molto strane\"",
    "url": "https://f1grandprix.motorionline.com/f1-gp-las-vegas-antonelli-il-piu-veloce-ma-partira-6-per-me-sono-state-qualifiche-molto-strane/",
-   "published": "2026-11-21T09:00:00+01:00",
-   "featured": true
+   "published": "2026-11-21T09:00:00+01:00"
   },
   {
    "id": "de-motorsportmagazin-audi-fuel-q2",
@@ -1517,144 +1675,6 @@
    "orig": "Exklusiv: Wer ist Kimi Antonelli? Seine Vertrauten bei Mercedes verraten Details",
    "url": "https://www.motorsport-total.com/formel-1/news/exklusiv-wer-ist-kimi-antonelli-seine-vertrauten-bei-mercedes-verraten-details-26111813",
    "published": "2026-11-18T19:00:00+01:00"
-  },
-  {
-   "id": "de-motorsportmagazin-verstappen-antonelli-whatif",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "分析",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "topic": "verstappen-antonelli-whatif-2026",
-   "title": "開幕がカナダだったら？　アントネッリ対フェルスタッペン、幻の王座争いを検証",
-   "summary": "シーズンの開幕がカナダGPやモナコGPだったらタイトル争いはどうなっていたかを、Motorsport-Magazinが検証した。カナダ以降の獲得点はアントネッリ259点、フェルスタッペン236点で、アントネッリが先行するものの差は1勝分未満になる。モナコ以降ならフェルスタッペンが236点で並び、ラッセルやハミルトン、ルクレール、ノリスにも理論上の可能性が残る。フェルスタッペンはオランダGP以降8戦連続で表彰台に立ち、3勝を挙げた。同誌は序盤に最良のパッケージを持つメルセデスが得をし、レッドブルは出遅れで損をしたと結論づけた。",
-   "orig": "Verstappen vs. Antonelli: Diesen epischen WM-Kampf verwehrte uns die Formel-1-Saison 2026",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301280-verstappen-vs-antonelli-diesen-epischen-wm-kampf-verwehrte-uns-die-formel-1-saison-2026/",
-   "published": "2026-11-18T18:32:00+01:00"
-  },
-  {
-   "id": "nl-gpblog-ecclestone-vasseur-ferrari",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "チーム",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ecclestone-vasseur-ferrari",
-   "title": "エクレストン氏「バスールはフェラーリに力不足」　後任にホーナー氏を推す",
-   "summary": "元F1最高責任者のバーニー・エクレストン氏(96)が独スカイに語った内容を、GPblogが伝えた。同氏は今季フェラーリは王者になるべきだったと述べ、フランス人のバスール代表を「いい人だが単純に力不足」と評した。イタリア人が多すぎる組織で、朝から晩までチームのことを考える強い個性の指導者が必要だという。後任には友人のホーナー氏が適任と見るが、「フェラーリの言葉」を学ぶ必要があるとした。今季はルクレールとハミルトンの間の緊張や代表の去就を巡る不穏な空気もあった。あくまで同氏個人の見方である。",
-   "orig": "Ex-F1-baas fileert 'aardige' Vasseur: 'Niet goed genoeg voor Ferrari'",
-   "url": "https://www.gpblog.com/nl/nieuws/ex-f1-baas-fileert-aardige-vasseur-niet-goed-genoeg-voor-ferrari",
-   "published": "2026-11-18T17:29:00+01:00"
-  },
-  {
-   "id": "de-motorsportmagazin-mekies-horner-magie",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Magazin",
-   "cat": "チーム",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-horner-magic",
-   "title": "「レッドブルは魔法を失った」ホーナー発言にメキース代表が反論",
-   "summary": "レッドブルを2025年に去ったクリスチャン・ホーナー氏が、自著のプロモーションで「かつての魔法や存在感が失われた」と語り、後任のローラン・メキース代表が反論したとMotorsport-Magazinが伝えた。メキース代表は意見を持つ権利は尊重しつつ、チームの雰囲気については強く意見が異なるとし、団結力が最大の強みだと述べた。「勝っていれば前向きでいるのは簡単だ」とも話した。今季は序盤の不振で5月末まで表彰台がなかったが、コンストラクターズ3位まで巻き返している。",
-   "orig": "Red Bull ohne Magie? Formel-1-Teamchef widerspricht Christian Horner nach harter Kritik",
-   "url": "https://www.motorsport-magazin.com/formel1/news-301278-hat-red-bull-seine-magie-verloren-formel-1-teamchef-kontert-christian-horner/",
-   "published": "2026-11-18T17:00:00+01:00"
-  },
-  {
-   "id": "nl-f1maximaal-lawson-marko-frightening",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "F1Maximaal",
-   "cat": "カルチャー",
-   "teams": [
-    "racingbulls",
-    "redbull"
-   ],
-   "topic": "lawson-marko-junior",
-   "title": "ローソン、レッドブル育成時代のマルコ氏は「本当に恐ろしかった」と回想",
-   "summary": "F1Maximaalは、リアム・ローソンがポッドキャスト番組でレッドブル育成プログラム時代を振り返ったと伝えた。レッドブル入りは「究極の目標」で、他の誘いを断って目指したという。当時を率いたヘルムート・マルコ氏は、レース前に電話で最後通告を突きつける存在で、ローソンは「本当に恐ろしかった」と語った。育成1年目の終盤にクラッシュして王座を逃し、チーム責任者に怒りをぶつけて3日間の出場停止になったことも明かした。数週間後にはマルコ氏から「君は終わりだ」と告げられたが、謝罪して再び機会をもらったという。",
-   "orig": "Lawson onthult meedogenloze aanpak van Marko: \"Hij was echt angstaanjagend\"",
-   "url": "https://www.f1maximaal.nl/formule-1/lawson-onthult-meedogenloze-aanpak-van-marko-hij-was-echt-angstaanjagend",
-   "published": "2026-11-18T15:41:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-allison-w17-update18",
-   "kind": "tech",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total",
-   "cat": "テクニカル",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "mercedes-w17-update18",
-   "title": "メルセデスW17が失速した理由　アリソン技術責任者が「アップデート18」の副作用を説明",
-   "summary": "メルセデスのジェームズ・アリソン技術責任者が、ラジオ番組で今季終盤にW17が伸び悩んだ理由を語ったとMotorsport-Totalが伝えた。開幕6連勝でタイトルを決めたが、直近5戦の勝利はアントネッリの1勝だけだ。原因として挙げたのは、セパンで投入した「アップデート18」で、ダウンフォースは増えたが運転しにくさも招いたという。今季は最低重量が30kg減の768kgとなり、開幕時に唯一規定重量に達していたのがメルセデスだったとも述べた。アメリカ大陸戦で入れた新フロントウイングで、バランスの問題はおおむね解消されたと記事は伝えている。",
-   "orig": "Technikchef Allison erklärt, warum der Mercedes W17 plötzlich schwächelt",
-   "url": "https://www.motorsport-total.com/formel-1/news/technikchef-allison-erklaert-warum-der-mercedes-w17-ploetzlich-schwaechelt-26111809",
-   "published": "2026-11-18T14:14:00+01:00"
-  },
-  {
-   "id": "en-planetf1-palmer-hill-ferrari-number-one",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-hamilton-leclerc-rift",
-   "title": "パーマー、ヒルの「ハミルトン第1ドライバー」案に反対　フェラーリ2人は来季も争うと予想",
-   "summary": "元ルノー・ドライバーのジョリオン・パーマーが、ハミルトンをフェラーリの明確な第1ドライバーにすべきだというデイモン・ヒルの主張に異を唱えたとPlanetF1が伝えた。パーマーはF1 Nationで、2人はペースもポイントも性能もほぼ互角で、2027年はゼロからの勝負になると述べた。イタリアGPやメキシコGP1周目の接触に触れ、内輪の争いはチームにとって大きなハンディキャップだとも語った。現在はハミルトンが4位、ルクレールが5位で、差は12点、残りは3戦となっている。",
-   "orig": "Palmer rejects Damon Hill's Ferrari plan for Lewis Hamilton and Charles Leclerc",
-   "url": "https://www.planetf1.com/news/jolyon-palmer-damon-hill-ferrari-plan-lewis-hamilton-charles-leclerc",
-   "published": "2026-11-18T13:03:00+00:00"
-  },
-  {
-   "id": "en-therace-ford-redbull-engine-role",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "redbull-ford-engine-role",
-   "title": "レッドブル・フォードPU、フォードの本当の貢献とは",
-   "summary": "レッドブル・フォード・パワートレインズのエンジンは、FIAの評価で内燃機関のトップとされ、初年度に3勝を挙げているとThe Raceが分析した。協議は2022年9月に始まり、2023年2月に提携が発表されたが、フォードの役割は名義貸しにとどまらず、電動化から制御ソフト、キャリブレーションへと広がったという。ミルトンキーンズにはフォードの技術者が常駐し、ターボ試験用のガスタービン設備も提供した。2025年初めまでに金属や樹脂の3Dプリント部品を約1000点製造した点も挙げられている。エンジニアリング責任者のプルーは、少なくとも2件の開発が並行して進んでいると語った。",
-   "orig": "What Ford has really contributed to Red Bull's 'best' F1 engine",
-   "url": "https://www.the-race.com/formula-1/ford-real-role-in-building-f1-best-engine/",
-   "published": "2026-11-18T12:00:00+00:00"
-  },
-  {
-   "id": "en-therace-cadillac-bottas-2027",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "cadillac-bottas-2027",
-   "title": "キャデラック、2027年もボッタスを起用　ハーツ昇格のうわさは見送り",
-   "summary": "キャデラックが2027年もバルテリ・ボッタスと契約を続けると、The Raceが伝えた。IndyCarのコルトン・ハータが後任の最有力とみられ、ブラジルGPでスーパーライセンスの要件も満たしていた。10勝を挙げたボッタスについて、チームは経験と技術面での助言が開発を支えるとしている。ボッタスは「物語はまだ始まったばかり」と語った。初年度の予選はペレスが11勝8敗、決勝は13勝4敗でリードし、両者とも無得点に終わっている。",
-   "orig": "Cadillac keeps Bottas in F1 for 2027 despite Herta rumours",
-   "url": "https://www.the-race.com/formula-1/cadillac-keeps-bottas-in-f1-for-2027-despite-herta-rumours/",
-   "published": "2026-11-18T12:00:00+00:00"
   }
  ]
 }
