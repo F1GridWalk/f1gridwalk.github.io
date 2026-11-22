@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T00:30:00+09:00",
+ "updatedAt": "2026-11-23T06:13:22+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -59,6 +59,57 @@
   }
  },
  "articles": [
+  {
+   "id": "it-motorionline-antonelli-energia-vegas",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "lasvegas-race-antonelli-battery",
+   "title": "アントネッリ「最後に電力を失った」　勝利も表彰台も逃したベガス",
+   "summary": "アントネッリはグリッドペナルティで6番手から出走しながら、最終ラップまでフェルスタッペンと勝利を争った。最終ラップのストレートで一度アクセルを戻し、オーバーテイクモードを使える間合いを保とうとしたところ、バッテリーの出力が落ちてシケイン後にほとんど電力が残らなかったという。その隙にノリスとピアストリに抜かれ、勝利どころか表彰台も失って4位となった。本人は「奇妙だが楽しいレース」と振り返りつつ、高温下での改善余地を挙げ、残り2戦での勝利を狙うと話している。",
+   "orig": "F1 GP Las Vegas | Sfumano vittoria e podio per Antonelli: \"Ho perso energia alla fine, che fastidio!\"",
+   "url": "https://f1grandprix.motorionline.com/antonelli-quarto-las-vegas-calo-energia-mercedes-dichiarazioni/",
+   "published": "2026-11-22T12:00:00+01:00"
+  },
+  {
+   "id": "pt-gp-vegas-troca-posicoes-energia",
+   "kind": "tech",
+   "lang": "pt",
+   "region": "ブラジル",
+   "source": "Grande Prêmio",
+   "cat": "テクニカル",
+   "circuit": "lasvegas",
+   "topic": "lasvegas-energy-management",
+   "title": "ベガスで首位が入れ替わり続けた理由　鍵は電力の使いどころ",
+   "summary": "ラスベガスGPで首位や順位が絶えず入れ替わったのは、2026年規定でMGU-Kの電気出力が最大350kWと従来の約3倍になり、ストレートの速さが蓄電量と使うタイミングで決まるためだと解説している。長いストレートに対して強いブレーキングが少なく、充電しにくいコースで、追い抜いた側が電力を使い果たして逆襲を受けやすかった。ラッセルは1本のストレートでフェルスタッペンから約1.3秒稼いだと話し、フェルスタッペンは最終セクター前に電力を温存して勝った。ウォルフはこのレースをインディ500やNASCARになぞらえ、賛否が分かれていると記事は伝える。",
+   "orig": "Por que pilotos trocavam de posição sem parar no espetacular GP de Las Vegas?",
+   "url": "https://grandepremio.com/br/f1/por-que-pilotos-trocavam-de-posicao-sem-parar-no-espetacular-gp-de-las-vegas/",
+   "published": "2026-11-22T15:00:00-03:00"
+  },
+  {
+   "id": "pt-gp-camara-haas-catar-abudhabi",
+   "kind": "news",
+   "lang": "pt",
+   "region": "ブラジル",
+   "source": "Grande Prêmio",
+   "cat": "チーム",
+   "circuit": "lusail",
+   "teams": [
+    "haas"
+   ],
+   "topic": "camara-haas-final-two-races",
+   "title": "カマラ、F2のタイトル争いを離れハースでF1のカタール・アブダビ参戦へ",
+   "summary": "ハースは22日、ラファエル・カマラが最終2戦のカタールGPとアブダビGPでベアマンのチームメイトとして走ると確認した。カマラはF2でインビクタから参戦し、ツォロフに7点差でランキング首位に立っていたが、F2も同じ週末に開催されるため両立はできず、タイトル争いを手放す形になる。2027年のハースのレギュラー契約は結んでいたものの、機会は予定より早く訪れた。メキシコシティ週末のあとオコンが外れて平川が代役を務め、カマラは翌週のサンパウロでF1デビューを果たし、ラスベガスでは16位だった。",
+   "orig": "Câmara abre mão do título na F2 e disputa GPs do Catar e de Abu Dhabi com Haas na F1",
+   "url": "https://grandepremio.com/br/f1/camara-abre-mao-do-titulo-na-f2-e-disputa-gps-do-catar-e-de-abu-dhabi-com-haas-na-f1/",
+   "published": "2026-11-22T15:13:00-03:00"
+  },
   {
    "id": "ja-voice-vegas-race-leclerc-hamilton",
    "kind": "voice",
@@ -1747,59 +1798,6 @@
    "orig": "Ocon vindt nieuw F1-avontuur na Haas-vertrek",
    "url": "https://racingnews365.nl/ocon-vindt-nieuw-f1-avontuur-na-haas-vertrek",
    "published": "2026-11-19T08:07:00+01:00"
-  },
-  {
-   "id": "nl-racingnews365-ocon-aston-martin",
-   "kind": "rumor",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "うわさ",
-   "teams": [
-    "astonmartin",
-    "haas"
-   ],
-   "topic": "ocon-aston-reserve",
-   "title": "オコン、アストンマーティンの3rdドライバーに？　蘭メディアが報道",
-   "summary": "RacingNews365（オランダ語版）は、メキシコGP週末にハースを離れたエステバン・オコンが、アストンマーティンのサードドライバーとして合意したと関係筋の話として報じた。アブダビGP後にマシンをテストし、発表もそのタイミングになる可能性があるという。記事は確認を得られておらず、オコン側は肯定も否定もしていない。アストンマーティンの広報は、ドライバーから日常的に打診を受けるが、噂や憶測にはコメントしない方針だと述べた。ストロールも空いているものの、チームはオコンのフィードバックに価値を見ていると伝えている。",
-   "orig": "Ocon vindt nieuw F1-avontuur na Haas-vertrek",
-   "url": "https://racingnews365.nl/ocon-vindt-nieuw-f1-avontuur-na-haas-vertrek",
-   "published": "2026-11-19T08:07:00+01:00"
-  },
-  {
-   "id": "en-therace-bearman-contract-disappointed",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "bearman-2027-delay",
-   "title": "ベアマン「かなり残念」　2027年契約が未発表のまま",
-   "summary": "オリバー・ベアマンが、全23戦中21戦目になっても2027年の契約が決まっていないことを「かなり残念」と語ったと、The Raceが伝えた。本人はハースに残るつもりで、他チームで走る可能性は「0%」だという。発表が遅れている背景には、育成元フェラーリと本人のマネジメントによる長期契約交渉の停滞があるとされる。フェラーリにはハミルトンとルクレールが在籍しており、枠が限られる事情もある。同誌は最終3連戦中にフェラーリとの再契約とハース残留が同時に発表される展開を予想している。",
-   "orig": "Why 'disappointed' Bearman still doesn't have 2027 F1 deal",
-   "url": "https://www.the-race.com/formula-1/ollie-bearman-strange-ferrari-f1-contract-situation-2027/",
-   "published": "2026-11-19T07:00:00+00:00"
-  },
-  {
-   "id": "ja-f1jouhou2-aston-debt",
-   "kind": "fan",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1情報通",
-   "cat": "まとめ",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "aston-martin-debt",
-   "title": "アストンマーティンはパドックで最も負債が多い？　掲示板で話題",
-   "summary": "F1情報通は、アストンマーティンF1チームがパドックで最も負債の多いチームだとするXの投稿を紹介した。累計の負債は2021年以降で4億1000万ユーロ、年間の銀行利息は2028年まで約4000万ユーロとされるが、数字は確認されていない。掲示板では、金利の水準や売却の可能性、ホンダとの関係を巡って憶測が飛び交った。新規則に向けた工場投資が背景との見方もあり、数字の真偽を疑う声も出ている。ここでの数字や憶測はすべて投稿とコメントの主張であり、チームの公式発表ではない。",
-   "orig": "アストンマーチンF1チームはパドックで最も負債の多いチーム",
-   "url": "https://f1jouhou2.com/blog-entry-31963.html",
-   "published": "2026-11-19T12:00:00+09:00"
   }
  ]
 }
