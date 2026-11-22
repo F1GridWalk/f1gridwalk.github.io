@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T18:40:00+09:00",
+ "updatedAt": "2026-11-23T00:30:00+09:00",
  "topics": {
   "ferrari-hamilton-leclerc-rift": {
    "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -59,6 +59,197 @@
   }
  },
  "articles": [
+  {
+   "id": "ja-voice-vegas-race-leclerc-hamilton",
+   "kind": "voice",
+   "lang": "ja",
+   "region": "日本",
+   "source": "F1 Grid Walk",
+   "cat": "ファンの声",
+   "teams": [
+    "ferrari"
+   ],
+   "circuit": "lasvegas",
+   "topic": "ferrari-vegas-collision",
+   "title": "「またしてもルクレールに台無しにされた」　同士討ちに日本のファン",
+   "summary": "ラスベガスGP決勝でハミルトンとルクレールが38周目に接触し、ルクレールに10秒加算が出たことについて、Yahoo!ニュースのコメント欄ではルクレールの判断を厳しく見る声が目立った。海外の反応を集めた記事でも、ルクレールに非があるとする見方がほぼ一致していた。一方、決勝全体の攻防は面白かったと評価する声もあった。",
+   "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+   "published": "2026-11-23T00:30:00+09:00",
+   "note": "読めたコメントは各記事とも10件前後で、傾向を断定はできない。批判はルクレール個人への怒りと、同じ過ちを繰り返す点への失望に集中していた。一方でバスール代表の怒りを理解する声も多く、チーム全体の統制を問う視点はコメントでは少なかった。5chは読めず、Blueskyも403で読めなかった。",
+   "voices": [
+    {
+     "side": "日本",
+     "text": "またしてもルクレールに台無しにされた。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "否",
+     "quote": true,
+     "big": true,
+     "comment": "38周目のターン7で接触し、ハミルトンはスピンして後退した。ルクレールには10秒加算が出て、最終結果はハミルトン7位、ルクレール10位だった。"
+    },
+    {
+     "side": "日本",
+     "text": "ルクレールは流石に敵意ありすぎる。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "ヴァッスール代表は、ルクレールが「チームメイトを抜くな」という指示を守らなかったと指摘し、「受け入れられない」と怒りを示した。"
+    },
+    {
+     "side": "日本",
+     "text": "ルクレールはいくら叱責されても何も堪えてないだろ。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "否",
+     "quote": true,
+     "comment": "メキシコGPでも1周目に2人が接触し、代表が別々に面談する事態になっていた。それから数週間でのやり直しを嘆く声だ。"
+    },
+    {
+     "side": "日本",
+     "text": "チャンピオンを狙うなら引くところは引く事を覚えないと駄目ですよね。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "心配",
+     "quote": true,
+     "comment": "ルクレールは接触後、10秒のペナルティが出たなら自分のミスだと受け入れ、チームに申し訳ないと話した。引くべき場面での判断が問われている。"
+    },
+    {
+     "side": "日本",
+     "text": "ミスをしなかったフェルスタッペンが勝つべくして勝ちましたね。",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/3b28d493ebb31adab6e18f50cd68de6de55f07d4/comments",
+     "mood": "賛",
+     "quote": true,
+     "comment": "フェルスタッペンは50周で何度も首位を入れ替える接戦を制し、アントネッリに0.001秒差で先行された場面も凌いで今季4勝目を挙げた。"
+    },
+    {
+     "side": "日本",
+     "text": "マックスとアントネッリのヨーヨー対決",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/3b28d493ebb31adab6e18f50cd68de6de55f07d4/comments",
+     "quote": true,
+     "comment": "アントネッリは最終ラップで電力が尽き、2台のマクラーレンに抜かれて4位に落ちた。2人の決着が見られなかったことを惜しむ声だ。"
+    },
+    {
+     "side": "海外",
+     "text": "なんと愚かなことをするのか",
+     "orig": "What an idiotic thing to do",
+     "src": "GiveMeSport が紹介したSNSの投稿",
+     "url": "https://www.givemesport.com/f1-fans-agree-ferrari-driver-fault-las-vegas-gp-crash-charles-leclerc-lewis-hamilton/",
+     "mood": "否",
+     "quote": true,
+     "comment": "同記事は、ルクレールの車載映像を見たファンの反応がほぼ一致して「ルクレールに非がある」だったと伝えている。"
+    },
+    {
+     "side": "海外",
+     "text": "フェラーリは真剣さに欠けるが、ルクレールが次の王座に導く人物でないのは確かだ",
+     "orig": "Ferrari is unserious, but Leclerc is definitely not the guy that will take them to another championship.",
+     "src": "GiveMeSport が紹介したSNSの投稿",
+     "url": "https://www.givemesport.com/f1-fans-agree-ferrari-driver-fault-las-vegas-gp-crash-charles-leclerc-lewis-hamilton/",
+     "mood": "否",
+     "quote": true,
+     "comment": "メキシコGPに続くチームメイト間の接触で、ヴァッスール代表は状況を「受け入れられない」と述べた。"
+    },
+    {
+     "side": "日本",
+     "text": "ハミルトンはよく回避しているのに、と擁護しつつルクレールの敵意を指摘する声が多数",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "否"
+    },
+    {
+     "side": "日本",
+     "text": "ハミルトンの追い上げをまた潰した、と同情する人も",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "心配"
+    },
+    {
+     "side": "日本",
+     "text": "ヴァッスールが怒るのも当然、とチームの損失を重く見る声",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments",
+     "mood": "賛"
+    },
+    {
+     "side": "日本",
+     "text": "今年はラッセルもルクレールも引けない、と2人を並べる指摘も",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/fbc95642d2da150de41a3cea04bb2c30666b108a/comments"
+    },
+    {
+     "side": "日本",
+     "text": "とにかく面白いレースだった、と楽しんだ声も",
+     "src": "Yahoo!ニュース コメント欄",
+     "url": "https://news.yahoo.co.jp/articles/3b28d493ebb31adab6e18f50cd68de6de55f07d4/comments",
+     "mood": "笑"
+    },
+    {
+     "side": "海外",
+     "text": "ルクレール非難の声がほぼ一色だったという",
+     "src": "GiveMeSport",
+     "url": "https://www.givemesport.com/f1-fans-agree-ferrari-driver-fault-las-vegas-gp-crash-charles-leclerc-lewis-hamilton/",
+     "mood": "否",
+     "big": true
+    }
+   ]
+  },
+  {
+   "id": "it-ilfatto-ferrari-leclerc-hamilton-vegas",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Il Fatto Quotidiano",
+   "cat": "チーム",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-vegas-collision",
+   "title": "ハミルトンとルクレールの関係「後戻りできない地点」へ　伊紙が論評",
+   "summary": "イタリア紙イル・ファット・クオティディアーノは、ラスベガスGPで再び起きたフェラーリ同士の接触を、2人の関係が「後戻りできない地点」に来たと論評した。6番手争いで接触し、ハミルトンは7位、10秒加算のルクレールは10位だった。ヴァッスール代表はスカイで「受け入れられない」「接触の責任はルクレールにある」と述べ、翌日に処分を話し合うと語った。ルクレールは「10秒の罰が出たなら自分のせいだろう」、ハミルトンは「争う相手は互いではない」と話した。記事は2位は守れるが、来季に向け明確な指針が必要だと結ぶ。",
+   "orig": "Ferrari, è caos totale: a Las Vegas altre tensioni tra Leclerc ed Hamilton. Vasseur furioso: \"Charles, vieni subito da me. Inaccettabile\". Cosa è successo",
+   "url": "https://www.ilfattoquotidiano.it/2026/11/22/ferrari-leclerc-hamilton-scontro-caos-incidente-vasseur-furioso/8580201/",
+   "published": "2026-11-22T11:16:00+01:00"
+  },
+  {
+   "id": "es-mundiario-sainz-alonso-vegas",
+   "kind": "news",
+   "lang": "es",
+   "region": "スペイン",
+   "source": "Mundiario",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "williams",
+    "astonmartin"
+   ],
+   "topic": "lasvegas-sainz-alonso-spain",
+   "title": "サインツは20番手から8位、アロンソは19位　スペイン勢の明暗",
+   "summary": "スペインのムンディアリオは、ラスベガスGPでのサインツとアロンソの対照的な結果を比べた。サインツ（ウィリアムズ）はパワーユニット交換に絡む降格で20番手から出発し、12ポジションを上げて8位、4ポイントを得た。発進直後の数メートルで8つ順位を上げ、セーフティカーや他車のペナルティも生かしたと評価している。一方アロンソ（アストンマーティン）は優勝者より1周少ない49周で19位に終わり、原因は主にマシンのレースペース不足だとした。記事はサインツの結果を称え、アロンソの結果はマシンの技術的な限界を示すと結んでいる。",
+   "orig": "Sainz rescata a Williams en Las Vegas y Alonso vuelve a sufrir con Aston Martin",
+   "url": "https://www.mundiario.com/deportes/formula-1/sainz-rescata-williams-vegas-alonso-vuelve-sufrir-aston-martin/20261122065747454309.html",
+   "published": "2026-11-22T06:57:00+01:00"
+  },
+  {
+   "id": "fr-nextgen-antonelli-energie-vegas",
+   "kind": "news",
+   "lang": "fr",
+   "region": "フランス",
+   "source": "Nextgen-Auto.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "lasvegas-race-antonelli-battery",
+   "title": "アントネッリ「エネルギー戦略は惨事になった」　最終盤の電力切れを本人が説明",
+   "summary": "フランスのネクストジェン・オートは、ラスベガスGPで表彰台を逃したアントネッリ（メルセデス）の本人談を伝えた。終盤、オーバーテイクモードを残そうと14コーナー手前で一度アクセルを戻して踏み直したところ、バッテリーの回生が乱れたという。本人は「エネルギーの戦略は惨事になった」と述べ、最初のコーナーまでに1秒以上を失ったと語った。その結果フェルスタッペンに食らいつけず、2台のマクラーレンに抜かれて4位に終わった。「おそらく自分のミスだが、あの場面では非常に難しかった」としつつ、「何も無理はしていない」とも話している。",
+   "orig": "Antonelli voulait piéger Verstappen, mais 'ma stratégie sur l'énergie a tourné au désastre'",
+   "url": "https://motorsport.nextgen-auto.com/fr/formule-1/antonelli-voulait-pieger-verstappen-mais-ma-strategie-sur-l-energie-a-tourne-au,213642.html",
+   "published": "2026-11-22T08:09:00+01:00"
+  },
   {
    "id": "en-formula1com-vegas-race-report",
    "kind": "news",
@@ -1609,72 +1800,6 @@
    "orig": "アストンマーチンF1チームはパドックで最も負債の多いチーム",
    "url": "https://f1jouhou2.com/blog-entry-31963.html",
    "published": "2026-11-19T12:00:00+09:00"
-  },
-  {
-   "id": "de-motorsporttotal-v8-2030-hintergrund",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total",
-   "cat": "ビジネス",
-   "topic": "f1-v8-engine-proposal",
-   "title": "F1の2030年V8構想、FIA会長の「早すぎた発表」の裏側",
-   "summary": "FIAのベン・スレイエム会長が、メーカー会議後にV8エンジンが「まもなく来る」とSNSに投稿し、のちに削除したとMotorsport-Totalが伝えた。有力なのは電動部分を小さくした2.1リッターV8ターボで、通常時の電動出力は350kWから100kWに下がり、追い越し用に100kWが加わる案だという。フォードとキャデラックはターボなしも受け入れ得るが、アウディとホンダは自然吸気を拒むとされる。参加者の受け止め方にも差があり、最終枠組みは12月10日の世界モータースポーツ評議会に提示される予定だ。",
-   "orig": "F1-Motoren 2030: Was hinter der verfrühten V8-Ankündigung steckt",
-   "url": "https://www.motorsport-total.com/formel-1/news/f1-motoren-2030-was-hinter-der-verfruehten-v8-ankuendigung-steckt-26111901",
-   "published": "2026-11-19T03:04:00+01:00"
-  },
-  {
-   "id": "en-planetf1-ricciardo-verstappen-redbull-ford",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "ドライバー",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "ricciardo-redbull-ford-win",
-   "title": "リカルド、レッドブル・フォードの勝利に「理解が追いつかない」　フェルスタッペンは「驚異の才能」",
-   "summary": "フォードのアンバサダーを務めるダニエル・リカルドが、ポッドキャスト番組で、レッドブル・フォードの初年度の躍進に驚きを語ったとPlanetF1が伝えた。フェルスタッペンはマレーシアで同パワーユニット初の勝利を挙げ、その後シンガポールとメキシコでも勝っている。リカルドは「理解が追いつかない」としたうえで、フェルスタッペンを「驚異の才能」と呼び、「彼以上の適任者はいない」と話した。リカルドは2014〜18年にレッドブルでフェルスタッペンとチームメートだった。",
-   "orig": "Daniel Ricciardo lauds Max Verstappen after Red Bull Ford F1 landmark",
-   "url": "https://www.planetf1.com/news/daniel-ricciardo-max-verstappen-red-bull-ford-win",
-   "published": "2026-11-18T21:01:00+00:00"
-  },
-  {
-   "id": "nl-gpblog-lawson-verstappen-tranen",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "GPblog",
-   "cat": "素顔",
-   "teams": [
-    "racingbulls",
-    "redbull"
-   ],
-   "topic": "lawson-zandvoort-emotion",
-   "title": "ローソン、オランダ予選でフェルスタッペンに並び感極まった",
-   "summary": "リアム・ローソンが、本人が出演したポッドキャスト番組で語った内容をGPblogが伝えた。ローソンはハジャーの手首負傷でレッドブルに戻り、3戦でフェルスタッペンのチームメートを務めた。ザントフォールトの予選では8番手で、7番手のフェルスタッペンに0.1秒強の差まで迫った。2025年にレッドブルを外されて以来、力不足との批判に向き合ってきたが、この予選で「マックスに並べた」と感じ、区切りがついたという。他のドライバーから離れて一人で感情を整理したと本人が語った。",
-   "orig": "Verstappen zorgde onbedoeld voor tranen bij Lawson met bijzonder moment",
-   "url": "https://www.gpblog.com/nl/nieuws/verstappen-zorgde-onbedoeld-voor-tranen-bij-lawson-met-bijzonder-moment",
-   "published": "2026-11-18T22:00:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-antonelli-vertraute",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total",
-   "cat": "ドライバー",
-   "teams": [
-    "mercedes"
-   ],
-   "topic": "antonelli-insiders-portrait",
-   "title": "素顔のアントネッリ　メルセデスの側近たちが語る",
-   "summary": "Motorsport-Totalが、史上最年少王者アントネッリについてメルセデスのスタッフが語る連載の第2回を掲載した。フィジオのアビラは、休みの週末にもカートやMotoGPを見に行く姿を「サーキットが自然な居場所」と表現した。副チーム代表のロードは、本来2025年は学びの年の計画だったが、1年で通常3年分を学んだと述べた。ボニントンは彼がガレージに自然な楽しさを持ち込んだと話し、広報担当は取材枠を余裕を持って設定していると明かした。車内では「良い怪物」、外では「素晴らしい人物」という評価が並ぶ。",
-   "orig": "Exklusiv: Wer ist Kimi Antonelli? Seine Vertrauten bei Mercedes verraten Details",
-   "url": "https://www.motorsport-total.com/formel-1/news/exklusiv-wer-ist-kimi-antonelli-seine-vertrauten-bei-mercedes-verraten-details-26111813",
-   "published": "2026-11-18T19:00:00+01:00"
   }
  ]
 }
