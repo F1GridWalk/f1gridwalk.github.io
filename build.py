@@ -489,8 +489,8 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     st = {a['id']: SITE_PUB[a['id']] for a in arts if a['id'] in SITE_PUB}
     sth = ('<script type="application/json" id="sitetimes">' + json.dumps(st, separators=(',', ':')).replace('</', '<\\/') + '</script>') if st else ''
     sth += '<script type="application/json" id="srcnames">' + json.dumps(SOURCE_NAMES, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'  # one outlet, one name (21 Nov 2026)
-    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth)):
-        if not block:
+    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth), ('reactions', react_top())):
+        if not block and name != 'reactions':  # an empty 「いま各国が報じている話題」 is cleared, not left stale
             continue
         pat = re.compile(r'(<!--pre:' + name + r'-->).*?(<!--/pre:' + name + r'-->)', re.S)
         if not pat.search(out):
@@ -4152,6 +4152,104 @@ document.querySelectorAll('.sr-hint a').forEach(function(a){a.addEventListener('
 })();</script>"""
 
 
+REACT = {}  # topic -> its news, for topics reported by 3+ outlets in 2+ countries (filled in main)
+REACT_CSS = (".rx-k{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--clay,#a0522d);margin:0}"
+             ".rx-meta{color:var(--muted);font-size:13px;margin:6px 0 10px}.rx-regs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 14px;padding:0;list-style:none}"
+             ".rx-regs li{font-size:12.5px;font-weight:700;padding:4px 10px;border:1px solid var(--line);border-radius:999px}"
+             ".rx-sum{margin:12px 0 4px;padding:12px 14px;border-left:4px solid var(--ink);background:var(--paper);border-radius:8px;font-size:14.5px;line-height:1.8}"
+             ".rx-sum small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}"
+             ".rx-h{font-size:16px;margin:22px 0 4px;padding-top:10px;border-top:2px solid var(--ink)}.rx-note{color:var(--muted);font-size:12.5px;margin:4px 0 0}"
+             ".rx-idx{list-style:none;margin:14px 0 0;padding:0}.rx-idx li{padding:12px 0;border-top:1px solid var(--line)}.rx-idx a{font-weight:800;color:var(--ink);text-decoration:none;line-height:1.5}"
+             ".rx-idx small{display:block;color:var(--muted);font-size:12px;margin-top:3px}")
+
+
+def react_topics(arts):
+    """Topics that 3+ outlets in 2+ countries reported: one 「海外メディアの反応」 page each (owner's OK to preview, 23 Nov 2026)."""
+    by = {}
+    for a in arts:
+        if a.get('topic'):
+            by.setdefault(a['topic'], []).append(a)
+    return {k: sorted(v, key=when) for k, v in by.items()
+            if len({a['source'] for a in v}) >= 3 and len({a.get('region') for a in v}) >= 2}
+
+
+def react_line(k):
+    v = REACT.get(k) or []
+    return len({a['source'] for a in v}), len({a.get('region') for a in v})
+
+
+def build_reactions(arch, flag_of):
+    """/reaction/<topic>/: one news story as each country's media reported it, our Japanese headlines grouped by country,
+    each linking to its summary page (owner's OK to preview, 23 Nov 2026). /reaction/ lists them, newest first."""
+    sm, rows = [], []
+    for k, v in REACT.items():
+        t = (arch.get('topics') or {}).get(k) or {}
+        title = (t.get('title') or v[0]['title']).replace('　', ' ').strip()
+        n, r = react_line(k)
+        regs = {}
+        for a in v:
+            regs.setdefault(a.get('region') or 'その他', []).append(a)
+        order = sorted(regs, key=lambda g: (-len(regs[g]), g))
+        d0, d1 = when(v[0]).astimezone(JST), when(v[-1]).astimezone(JST)
+        span = f'{d0.month}月{d0.day}日' + ('' if d0.date() == d1.date() else f'〜{d1.month}月{d1.day}日')
+        url = f'{SITE}/reaction/{k}/'
+        sl_ = SL_BY_TOPIC.get(k)
+        body = (f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/reaction/">海外メディアの反応</a> › {e(_cut(title, 30))}</nav><div class="xp">'
+                f'<p class="rx-k">海外メディアの反応 · WORLD REACTION</p><h1>{e(title)}</h1>'
+                f'<p class="rx-meta">{n}媒体・{r}つの国と地域が報じました（{span}）。見出しを押すと、日本語の要約が読めます。</p>'
+                '<ul class="rx-regs">' + ''.join(f'<li>{e(g)} {len(regs[g])}</li>' for g in order) + '</ul>'
+                + (f'<div class="rx-sum"><small>この話題のあらまし</small>{e(t["summary"])}</div>' if t.get('summary') else '')
+                + (f'<p class="ent-more"><a href="/storyline/{sl_["slug"]}/" data-track="click/reaction/storyline">STORYLINE｜{e(sl_["name"])}を最初から追う →</a></p>' if sl_ else '')
+                + ''.join(f'<h2 class="rx-h">{e(g)}の' + ('ファンの声' if all(kind_of(a) in ('voice', 'fan') for a in regs[g]) else '報道') + f'（{len(regs[g])}）</h2><ul class="list">' + ''.join(item_li(a, flag_of) for a in regs[g]) + '</ul>' for g in order)
+                + '<p class="rx-note">見出しと要約は、F1グリッドウォークが原文を読んで日本語で書いたものです。各ページから原文へ進めます。</p>'
+                '<p class="ent-more"><a href="/reaction/">ほかの話題の反応を見る</a><a href="/news/">ニュース一覧</a></p></div>')
+        lds = (_crumbs_ld([('トップ', SITE + '/'), ('海外メディアの反応', SITE + '/reaction/'), (title, url)])
+               + ld({'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': title, 'url': url, 'inLanguage': 'ja', 'publisher': PUBLISHER,
+                     'dateModified': when(v[-1]).isoformat(timespec='seconds'),
+                     'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': f'{SITE}/news/{a["id"]}/', 'name': a['title']} for i, a in enumerate(v)]}}))
+        desc = f'{title}。{"・".join(order[:4])}など{n}媒体の報じ方を、日本語の見出しで比べられます。' + (t.get('summary') or '')
+        write(f'reaction/{k}/index.html', page(f'{title}｜海外メディアの反応（{n}媒体）｜F1グリッドウォーク', desc[:150], url, body,
+                                             f'<style>{XP_CSS}{REACT_CSS}</style>\n' + lds, og_type='article'))
+        sm.append((url, when(v[-1]).isoformat(timespec='seconds'), None, '0.6'))
+        rows.append((when(v[-1]), f'<li><a href="/reaction/{k}/" data-track="click/reaction/index">{e(title)}</a><small>{n}媒体・{r}つの国と地域 · {"・".join(order[:4])} · 最新 {d1.month}/{d1.day}</small></li>'))
+    rows.sort(key=lambda x: x[0], reverse=True)
+    body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › 海外メディアの反応</nav><div class="xp">'
+            '<p class="rx-k">WORLD REACTION</p><h1>海外メディアの反応</h1>'
+            f'<p class="lead">いくつもの国の媒体が報じた話題を、国ごとの見出しで比べられます。{len(rows)}の話題があります（新しい順）。</p>'
+            '<ul class="rx-idx">' + ''.join(r_ for _, r_ in rows) + '</ul></div>')
+    write('reaction/index.html', page('海外メディアの反応｜F1の話題を各国の報道で比べる｜F1グリッドウォーク',
+                                      'F1の話題を、イギリス・ドイツ・イタリア・オランダ・日本など各国の媒体がどう報じたか、日本語の見出しで比べられる一覧。', SITE + '/reaction/', body,
+                                      f'<style>{XP_CSS}{REACT_CSS}</style>\n' + _crumbs_ld([('トップ', SITE + '/'), ('海外メディアの反応', SITE + '/reaction/')]), og_type='website'))
+    sm.append((SITE + '/reaction/', max((x[0] for x in rows), default=RUN_NOW).isoformat(timespec='seconds'), None, '0.7'))
+    return sm
+
+
+def react_top():
+    """The top page's 「いま各国が報じている話題」: the 3 newest of the last 3 days."""
+    recent = sorted(((when(v[-1]), k) for k, v in REACT.items() if (RUN_NOW - when(v[-1])).days < 3), reverse=True)[:3]
+    if not recent:
+        return ''
+    out = []
+    for _, k in recent:
+        v = REACT[k]
+        n, r = react_line(k)
+        t = (ARCH_TOPICS.get(k) or {}).get('title') or v[0]['title']
+        regs = []
+        for a in v:
+            if a.get('region') and a['region'] not in regs:
+                regs.append(a['region'])
+        out.append(f'<li><a href="/reaction/{k}/" data-track="click/top/reaction"><b>{e(t.replace(chr(0x3000), " "))}</b><span>{n}媒体 · {"・".join(regs[:4])} →</span></a></li>')
+    return ('<style>.rx-top{margin:10px 0 14px;padding:12px 14px;border:2px solid var(--ink);border-radius:14px}.rx-top p{margin:0 0 6px;font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--clay,#a0522d)}'
+            '.rx-top ul{list-style:none;margin:0;padding:0}.rx-top li{border-top:1px solid var(--line)}.rx-top li:first-child{border-top:0}'
+            '.rx-top a{display:block;padding:8px 0;color:var(--ink);text-decoration:none}.rx-top b{display:block;font-size:15px;line-height:1.5}.rx-top span{font-size:12px;color:var(--muted)}'
+            '.rx-top .rx-all{display:inline-block;margin-top:6px;font-size:13px;font-weight:700}</style>'
+            '<section class="rx-top" aria-label="いま各国が報じている話題"><p>いま各国が報じている話題 · WORLD REACTION</p><ul>' + ''.join(out) + '</ul>'
+            '<a class="rx-all" href="/reaction/" data-track="click/top/reaction/all">海外メディアの反応をもっと見る →</a></section>')
+
+
+ARCH_TOPICS = {}
+
+
 def _cut(t, n):
     return t if len(t) <= n else t[:n - 1] + '…'
 
@@ -4589,6 +4687,8 @@ def main():
     flag_of = lambda a: flag_map.get(region_of.get(a['source']) or '', 'xx')
     ARCH_IDS.update({a['id']: a for a in allpages})
     ALLARTS[:] = allarts
+    REACT.update(react_topics(allarts))  # 海外メディアの反応 (23 Nov 2026)
+    ARCH_TOPICS.update(arch.get('topics') or {})
     plan_gps(allarts, circuits)
     team_pages = {k for k in teams if sum(1 for a in allarts if k in (a.get('teams') or [])) >= GP_MIN}
 
@@ -4630,6 +4730,9 @@ def main():
                         f'<a href="/storyline/{sl_["slug"]}/" data-track="click/news/status">STORYLINEで最初から追う →</a></aside>')
         nused = set()
         body.append(f'<p class="summary">{link_terms(e(a.get("summary", "")), nused)}</p>')
+        if a.get('topic') in REACT and a['id'] not in DUP_OF:
+            n_, r_ = react_line(a['topic'])
+            body.append(f'<p class="ent-more"><a href="/reaction/{a["topic"]}/" data-track="click/news/reaction">この話題を各国はどう報じたか（{n_}媒体・{r_}つの国と地域）→</a></p>')
         if a.get('voices'):
             # our own digest of fan reactions, laid out like a forum digest (owner, 3 Nov 2026):
             # numbered posts, side label, big type for the most common view — but every line is our paraphrase, no names
@@ -4751,6 +4854,7 @@ def main():
     month_sm = build_news_lists(allarts, flag_of)
     month_sm += build_daily_digest(allarts, flag_of)
     month_sm += build_storylines(arch, allarts)
+    month_sm += build_reactions(arch, flag_of)
     build_search()
 
     # sitemap
