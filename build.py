@@ -3982,7 +3982,7 @@ STORYLINES = [
      'status': 'resolved', 'decided': '2026-11-18',
      'conclusion': 'キャデラックは2027年もボッタスを起用し、ハータの昇格は見送られた。',
      'dek': '2027年もボッタスが走ることになった。そこまでのキャデラックのドライバーをめぐる報道を、最初から順に追います。'},
-    {'slug': 'audi-tsunoda-appeal', 'min': 3, 'published': '2026-11-23T19:40:00+09:00', 'name': '角田の1点をめぐるアウディの控訴',
+    {'slug': 'audi-tsunoda-appeal', 'min': 3, 'published': '2026-11-23T19:27:00+09:00', 'name': '角田の1点をめぐるアウディの控訴',
      'topics': ['audi-tsunoda-appeal', 'italy-gp-audi-protest'],
      'dek': 'イタリアGPで角田が得た10位の1点を、アウディが控訴で争っている。11月25日にパリで開かれるFIA国際控訴裁判所の審理まで、報道を順に追います。'},
     {'slug': 'piastri-mclaren-future', 'published': '2026-11-20T16:32:40+09:00', 'name': 'ピアストリとマクラーレンのこれから',
