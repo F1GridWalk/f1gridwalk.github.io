@@ -518,6 +518,13 @@ header.top .hd-finder input{min-height:38px}
 
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
+/* また来た人 (owner's OK, 23 Nov 2026): this browser keeps only the date of its last visit; a later day counts once, by the gap */
+(function(){try{var k='gw_last',t=new Date(),z=function(x){return(x<10?'0':'')+x},d=t.getFullYear()+'-'+z(t.getMonth()+1)+'-'+z(t.getDate()),p=localStorage.getItem(k);
+if(p===d)return;localStorage.setItem(k,d);if(!p||!/^\d{4}-\d\d-\d\d$/.test(p))return;
+var g=Math.round((Date.parse(d)-Date.parse(p))/864e5);if(!(g>0))return;var b=g<=1?'1d':g<=7?'7d':'older',n=0;
+(function c(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'return/'+b,title:'また来た人（前回から'+(b==='1d'?'1日':b==='7d'?'2〜7日':'8日以上')+'）',event:true})}catch(e){}return}if(++n<20)setTimeout(c,500)})();}catch(e){}})();
+</script>
+<script>
 /* links marked data-track are counted when followed, as on every other page */
 document.addEventListener('click',function(ev){
   var a=ev.target.closest&&ev.target.closest('a[data-track]'); if(!a) return;
