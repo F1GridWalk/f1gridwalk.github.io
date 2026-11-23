@@ -202,6 +202,13 @@ details[open].dg-deep .dg-open::after{content:"－ 閉じる"}
 <nav class="bt" aria-label="サイト内の移動"><a href="/#news" class="on" aria-current="page" data-track="click/bt/news"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ニュース</a><a href="/#data" data-track="click/bt/data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V11M12 20V4M19 20v-7"/></svg>データ</a><a href="/columns/" data-track="click/bt/col"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h8l4 4v12H6z"/><path d="M14 4v4h4M9 13h6M9 16.5h4"/></svg>コラム</a><a href="/drivers/" data-track="click/bt/drv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 8 0 0 1 16-1v3H4z"/><path d="M12 14h8M8 19h8"/></svg>ドライバー</a><a href="/deep/rules/" data-track="click/bt/rule"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>用語</a></nav>
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
+/* また来た人 (owner's OK, 23 Nov 2026): this browser keeps only the date of its last visit; a later day counts once, by the gap */
+(function(){try{var k='gw_last',t=new Date(),z=function(x){return(x<10?'0':'')+x},d=t.getFullYear()+'-'+z(t.getMonth()+1)+'-'+z(t.getDate()),p=localStorage.getItem(k);
+if(p===d)return;localStorage.setItem(k,d);if(!p||!/^\d{4}-\d\d-\d\d$/.test(p))return;
+var g=Math.round((Date.parse(d)-Date.parse(p))/864e5);if(!(g>0))return;var b=g<=1?'1d':g<=7?'7d':'older',n=0;
+(function c(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'return/'+b,title:'また来た人（前回から'+(b==='1d'?'1日':b==='7d'?'2〜7日':'8日以上')+'）',event:true})}catch(e){}return}if(++n<20)setTimeout(c,500)})();}catch(e){}})();
+</script>
+<script>
 document.addEventListener('click',function(ev){
   var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
   try{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:a.getAttribute('data-track'),title:a.getAttribute('data-title')||'',event:true}); }catch(e){}

@@ -280,6 +280,9 @@ PS_HTML = ('<aside class="ps"><p class="ps-k">GOOGLE</p>'
            '.ps-l a{color:var(--muted)}</style></aside>')
 
 
+RETURN_JS = "<script>\n/* また来た人 (owner's OK, 23 Nov 2026): this browser keeps only the date of its last visit; a later day counts once, by the gap */\n(function(){try{var k='gw_last',t=new Date(),z=function(x){return(x<10?'0':'')+x},d=t.getFullYear()+'-'+z(t.getMonth()+1)+'-'+z(t.getDate()),p=localStorage.getItem(k);\nif(p===d)return;localStorage.setItem(k,d);if(!p||!/^\\d{4}-\\d\\d-\\d\\d$/.test(p))return;\nvar g=Math.round((Date.parse(d)-Date.parse(p))/864e5);if(!(g>0))return;var b=g<=1?'1d':g<=7?'7d':'older',n=0;\n(function c(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'return/'+b,title:'また来た人（前回から'+(b==='1d'?'1日':b==='7d'?'2〜7日':'8日以上')+'）',event:true})}catch(e){}return}if(++n<20)setTimeout(c,500)})();}catch(e){}})();\n</script>"
+
+
 def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
     og = og_image or OG_IMAGE
     if PS_ON and PS_RE.match(canonical or '') and not re.search(r'/page\d+/$', canonical):
@@ -329,6 +332,7 @@ def page(title, desc, canonical, body, extra_head='', og_type='article', og_imag
 </div></footer>
 {bottom_tabs(canonical)}
 <script data-goatcounter="https://gridwalk.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{RETURN_JS}
 <script>
 document.addEventListener('click',function(ev){{
   var a=ev.target.closest&&ev.target.closest('[data-track]'); if(!a) return;
@@ -3608,7 +3612,8 @@ def build_about():
         ('間違いの訂正', [
             '間違いが分かったときは、はっきり訂正します。人物辞典の「確認した日」も、そのときに新しくします。']),
         ('アクセス解析', [
-            'ページがどれくらい読まれたかを知るために、GoatCounter を使っています。Cookie を使わず、個人を特定する情報は集めない仕組みです。']),
+            'ページがどれくらい読まれたかを知るために、GoatCounter を使っています。Cookie を使わず、個人を特定する情報は集めない仕組みです。',
+            'また来てくれた人の数を知るために、ブラウザに「最後に来た日付」だけを残しています（localStorage）。名前やメールなど、個人が分かる情報は残しません。ブラウザの履歴やサイトのデータを消すと、なくなります。']),
     ]
     body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › 運営者情報・編集方針</nav>' + '<div class="xp"><h1>運営者情報・編集方針</h1>'
             + ''.join(f'<h2 class="rbp-sh">{e(h)}</h2>' + ''.join(f'<p class="lead">{x}</p>' for x in ps) for h, ps in secs)
