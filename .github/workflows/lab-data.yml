@@ -1,0 +1,26 @@
+# Lab only (owner's OK, 23 Nov 2026): fetches race data for the private comparison prototype.
+# Runs on pushes to the "lab" branch; nothing here is published on the site (Pages serves main only).
+name: Lab data
+on:
+  push:
+    branches: [lab]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install fastf1
+      - run: python lab/fetch_race.py 2026 "Las Vegas" R 21
+      - name: Save the data on the lab branch
+        run: |
+          git config user.name "farpaz1888"
+          git config user.email "farpaz1888@users.noreply.github.com"
+          git add lab/data
+          git commit -m "Lab data: 2026 Las Vegas race" || echo "nothing new"
+          git push origin HEAD:lab
