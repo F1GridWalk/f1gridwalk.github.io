@@ -3000,8 +3000,11 @@ def plan_gps(allarts, circuits):
             x = min(cand, key=lambda x: abs((x['date'] - when(a)).total_seconds()))
             x['arts'].append(a)
     GPS.clear(); GP_OF.clear()
+    wk = season.get('weekend') or {}
     for x in races:
-        if len(x['arts']) >= GP_MIN:
+        # this weekend's race gets its page even before 5 news, for 「〇〇GP 日本時間」 early in the week (owner's OK, 23 Nov 2026)
+        this_wk = bool(wk.get('sessions')) and wk.get('round') == x.get('round') and wk.get('circuit') == x['circuit']
+        if len(x['arts']) >= GP_MIN or this_wk:
             GPS[x['slug']] = x
             for a in x['arts']:
                 GP_OF[a['id']] = x['slug']
@@ -3979,6 +3982,9 @@ STORYLINES = [
      'status': 'resolved', 'decided': '2026-11-18',
      'conclusion': 'キャデラックは2027年もボッタスを起用し、ハータの昇格は見送られた。',
      'dek': '2027年もボッタスが走ることになった。そこまでのキャデラックのドライバーをめぐる報道を、最初から順に追います。'},
+    {'slug': 'audi-tsunoda-appeal', 'min': 3, 'published': '2026-11-23T19:40:00+09:00', 'name': '角田の1点をめぐるアウディの控訴',
+     'topics': ['audi-tsunoda-appeal', 'italy-gp-audi-protest'],
+     'dek': 'イタリアGPで角田が得た10位の1点を、アウディが控訴で争っている。11月25日にパリで開かれるFIA国際控訴裁判所の審理まで、報道を順に追います。'},
     {'slug': 'piastri-mclaren-future', 'published': '2026-11-20T16:32:40+09:00', 'name': 'ピアストリとマクラーレンのこれから',
      'topics': ['piastri-mclaren-future'],
      'dek': 'マネジメント契約の終了と、ノリスとの差。ピアストリをめぐる報道を、最初から順に追います。'},
@@ -4022,7 +4028,7 @@ def build_storylines(arch, allarts):
     sm, cards = [], []
     for x in STORYLINES:
         arts = sorted([a for a in allarts if a.get('topic') in x['topics'] and a.get('kind', 'news') not in ('fan', 'voice')], key=when)
-        if len(arts) < 5:
+        if len(arts) < x.get('min', 5):  # 'min': a story set up before it grows (Tsunoda appeal, 23 Nov 2026)
             continue
         ids = {a['id'] for a in arts}
         newest = arts[-1]
