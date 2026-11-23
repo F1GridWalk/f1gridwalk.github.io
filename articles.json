@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T12:20:00+09:00",
+  "updatedAt": "2026-11-23T18:40:00+09:00",
   "topics": {
     "ferrari-hamilton-leclerc-rift": {
       "title": "ハミルトンとルクレールの確執、ブラジルでも収まらず",
@@ -56,9 +56,122 @@
     "russell-verstappen-vegas-clash": {
       "title": "フェルスタッペンとラッセルの対立がラスベガスで再燃",
       "summary": "ラスベガスの練習走行でフェルスタッペンとラッセルが接近し、フェルスタッペンは警告を受けた。決勝では首位争いを繰り返した末、残り3周でラッセルがターン5でタイヤバリアに突っ込み9位に終わった。フェルスタッペンは無線で笑い、「完璧なカルマ」「自分のレベルをはるかに下回る」と辛辣に語った。"
+    },
+    "f1-2030-customer-limit": {
+      "title": "2030年のエンジン供給は1社2チームまで？　未確認の案が浮上",
+      "summary": "ラスベガスのパドックで、2030年規則からエンジンメーカーが供給できる顧客チームを1つまでに制限する案が浮上していると、伊独メディアが英語圏の報道や情報筋を引いて伝えた。独メディアは6社が基本合意し、FIA世界評議会が来月上海で承認するか決まるとしている。メルセデスは現在マクラーレン、ウィリアムズ、アルピーヌに供給しており、実現すれば影響が大きい。いずれも正式発表はなく、未確認の情報である。"
     }
   },
   "articles": [
+    {
+      "id": "de-motorsporttotal-2030-zwei-teams-pro-hersteller",
+      "kind": "rumor",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "うわさ",
+      "topic": "f1-2030-customer-limit",
+      "teams": [
+        "mercedes",
+        "mclaren",
+        "williams"
+      ],
+      "title": "2030年のエンジン供給は「1社2チームまで」か　メルセデス勢に影響の可能性",
+      "summary": "モータースポーツ・トータルは、2030年から各エンジンメーカーが供給できるチームを自チームを含め2つまでとする案で、6社が基本合意したとモータースポーツ・コム筋の情報として報じた。正式発表はなく、FIA世界評議会が来月の上海での会議で承認するかが焦点という。現在3チームに供給するメルセデスは、マクラーレン、ウィリアムズ、アルピーヌのうち1チームしか残せなくなる。理由として、大手の政治的影響力の抑制と、赤字になりがちな顧客供給の整理が挙げられた。",
+      "orig": "Formel 1 plant Motoren-Hammer: 2030 nur noch ein Kundenteam erlaubt?",
+      "url": "https://www.motorsport-total.com/formel-1/news/formel-1-plant-motoren-hammer-2030-nur-noch-ein-kundenteam-erlaubt-26112304",
+      "published": "2026-11-23T08:00:00+01:00"
+    },
+    {
+      "id": "it-formula1it-fia-2030-un-team-cliente",
+      "kind": "rumor",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "うわさ",
+      "topic": "f1-2030-customer-limit",
+      "teams": [
+        "mercedes",
+        "mclaren",
+        "williams"
+      ],
+      "title": "エンジン供給は「1社に顧客1チームまで」案が浮上　2030年規則で",
+      "summary": "フォーミュラ1・イットは、2030年の新規則でメーカーが供給できる顧客チームを最大1つにする案が出ていると、レーシングニュース365の報道として伝えた。ラスベガスのパドックで出た話で、まだ協議はなく、多くのチームが反対票を投じるとの見方だ。供給は大きな収入源である一方、政治的・競技的な縛りにもなる。現在3チームに供給するメルセデスのウォルフ代表は強く反対するとみられ、マクラーレン、ウィリアムズ、アルピーヌが新たな供給元を探す場合はアウディ、ホンダ、GMが候補とされる。",
+      "orig": "La FIA prepara una stretta per i motoristi: l'indiscrezione sul 2030",
+      "url": "https://www.formula1.it/news/34182/1/la-fia-prepara-una-stretta-per-i-motoristi-l-indiscrezione-sul-2030",
+      "published": "2026-11-23T09:25:00+01:00"
+    },
+    {
+      "id": "de-motorsporttotal-alonso-honda-vegas-geparkt",
+      "kind": "news",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "Motorsport-Total.com",
+      "cat": "チーム",
+      "topic": "aston-honda-vegas-straights",
+      "teams": [
+        "astonmartin"
+      ],
+      "circuit": "lasvegas",
+      "title": "アロンソ、最終周を前にマシンをピットへ　「エンジンが力尽きた」",
+      "summary": "ラスベガスGPでアロンソは50周のうち49周を走り、最終周を前にAMR26をピットに止めた。本人はホンダ製エンジンが序盤から働かず「完全に力尽きた」と語り、ストレートで2〜3秒を失う一方コーナーでは約2秒稼いだと主張した。ただ計測データではストレートの遅れは明確だが、コーナーでの優位は確認できないと記事は指摘する。クラック代表は不具合を認めず、本人が出力の問題を感じて止めたと説明し、ストロールの17位は現状では最大限とした。ホンダの折原チーフエンジニアも信頼性にはさらなる前進が必要だと述べた。",
+      "orig": "Warum Fernando Alonso den Aston Martin vorzeitig abgestellt hat",
+      "url": "https://www.motorsport-total.com/formel-1/news/warum-fernando-alonso-den-aston-martin-vorzeitig-abgestellt-hat-26112306",
+      "published": "2026-11-23T09:18:00+01:00"
+    },
+    {
+      "id": "it-formula1it-briatore-vasseur-scelta",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "チーム",
+      "topic": "ferrari-hamilton-leclerc-rift",
+      "teams": [
+        "ferrari"
+      ],
+      "circuit": "lasvegas",
+      "title": "ブリアトーレ氏「序列を決めるべき」　フェラーリの2人のエース問題",
+      "summary": "アルピーヌ幹部のブリアトーレ氏が21日付ガゼッタ・デロ・スポルト紙で語った内容を、フォーミュラ1・イットがラスベガスGPの接触後に取り上げた。氏は2人のチャンピオンが勝利を争うのは自然で、問題は双方が自分をエースと考え、チームが対立で結果を損なうのを許すことだと述べた。解決策は一方を選んで序列を明確にすることで、行動規範で抑えるヴァッセール代表のやり方では足りないとの立場だ。記事は、決断を先送りすることが最も高くつく恐れがあると論じている。",
+      "orig": "Ferrari, Briatore aveva già avvertito Vasseur: ora serve una scelta",
+      "url": "https://www.formula1.it/news/34177/1/ferrari-briatore-aveva-gia-avvertito-vasseur-ora-serve-una-scelta",
+      "published": "2026-11-22T22:15:00+01:00"
+    },
+    {
+      "id": "nl-f1maximaal-mekies-verstappen-expres",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "F1Maximaal",
+      "cat": "ドライバー",
+      "topic": "lasvegas-verstappen-mekies",
+      "teams": [
+        "redbull"
+      ],
+      "circuit": "lasvegas",
+      "title": "メキース代表「フェルスタッペンは別の惑星から来た」　ベガスの勝因は読み",
+      "summary": "レッドブルのメキース代表は、ラスベガスGPを制したフェルスタッペンについて、速さと同じくらいレース中の洞察力が勝因だったと語った。ライバルに前を譲り、後で攻め返すために順位を意図的に落とした場面もあったとみている。フェルスタッペンは最終ラップの展開を事前に検討するようチームに求めたが、本人はすでに完全に把握していたという。代表はサンパウロでの走りも同様の例に挙げ、「彼は別の惑星から来た」と評した。今季4勝目で、約50周にわたり主にメルセデス勢を抑えた。",
+      "orig": "Mekies doet opvallende onthulling over Verstappen: \"Hij deed het waarschijnlijk expres\"",
+      "url": "https://www.f1maximaal.nl/formule-1/mekies-doet-opvallende-onthulling-over-verstappen-hij-deed-het-waarschijnlijk-expres",
+      "published": "2026-11-22T21:52:00+01:00"
+    },
+    {
+      "id": "ja-f1are-cadillac-bottas-tauriss",
+      "kind": "fan",
+      "lang": "ja",
+      "region": "日本",
+      "source": "F1のアレ",
+      "cat": "まとめ",
+      "topic": "cadillac-bottas-2027",
+      "teams": [
+        "cadillac"
+      ],
+      "title": "キャデラックCEO、ボッタスの差に「どうにもできない事情」　ファンの間で議論",
+      "summary": "F1のアレが、プラネットF1の報道を基にキャデラックのトウリスCEOの発言を取り上げた。CEOは、ボッタスが練習走行や予選ではペレスに並ぶ一方、決勝ではペースが落ちるとし、その差の一因に本人にはどうにもできない舞台裏の事情があると語った。チームはボッタスを評価したうえで来季も起用する。またコルトン・ハータにリザーブの役割を提示し、2028年のシートは空いていると説明した。掲示板ではパーツや待遇の差を推測する声が出ていた。",
+      "orig": "キャデラックF1トウリスCEO、ペレスとボッタスの差についてボッタスにはどうにもできない舞台裏の事情があると明かす",
+      "url": "https://f1are.com/blog-entry-4099.html",
+      "published": "2026-11-22T12:00:00+09:00"
+    },
     {
       "id": "en-therace-domenicali-v8-no-brainer",
       "kind": "news",
@@ -1685,112 +1798,6 @@
       "orig": "Nach Trennung von Mark Webber: Oscar Piastri weiter ohne neuen Formel-1-Manager",
       "url": "https://www.motorsport-magazin.com/formel1/news-301298-nach-trennung-von-mark-webber-oscar-piastri-weiter-ohne-neuen-formel-1-manager/",
       "published": "2026-11-19T13:18:00+01:00"
-    },
-    {
-      "id": "en-therace-fulltime-stewards-2027",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "ビジネス",
-      "topic": "fia-full-time-stewards-2027",
-      "title": "FIA、2027年からF1に専任スチュワードを導入　2028年に12〜15人へ拡大",
-      "summary": "FIAは2027年シーズンから、F1で初めて専任のスチュワードを起用すると発表した。まずは少人数を採用し、2028年に12〜15人へ増やす計画で、当面は専任と非常勤を併用する。現在は各戦の審議委員がFIA指名や地元団体の推薦、元ドライバー1人の持ち回りで決まる。FIAは判断の一貫性が高まるとし、他のFIAフォーミュラ選手権の審議も担えると説明した。2024年の米国GP後にはラッセルが持ち回り制の終了を求めていた。ベン・スレイエム会長は審判体制への大きな投資だと述べた。",
-      "orig": "Major F1 stewarding revamp coming for 2027",
-      "url": "https://www.the-race.com/formula-1/f1-to-use-full-time-stewards-from-2027/",
-      "published": "2026-11-19T12:00:00+00:00",
-      "primary": false
-    },
-    {
-      "id": "en-therace-lasvegas-day-one-learned",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "チーム",
-      "circuit": "lasvegas",
-      "teams": [
-        "redbull",
-        "cadillac",
-        "astonmartin"
-      ],
-      "topic": "lasvegas-thursday-roundup",
-      "title": "ラスベガスGP初日、V8復活やバイオデータで言葉が飛び交う",
-      "summary": "The Raceがラスベガスの木曜に分かった8点をまとめた。アロンソは2030〜31年のV8復活時には現役でいないと述べ、現行V6時代を「純粋なレースを16〜17年失った」と評した。F1は2027年から中継でドライバーの生体データを表示する計画で、フェルスタッペンは「プライバシーの問題だ」と反対した。ベアマンは2027年の契約が未決なことを「奇妙」で「かなり失望している」と語り、ペレスはキャデラックの運営面に厳しい注文をつけた。ホンダは電池関連のトラブルの原因が電池セルではなく構造的な収納部にあると説明した。",
-      "orig": "Everything we learned from day one at F1's Las Vegas GP",
-      "url": "https://www.the-race.com/formula-1/everything-we-learned-from-day-one-at-f1s-las-vegas-gp/",
-      "published": "2026-11-19T12:00:00+00:00"
-    },
-    {
-      "id": "nl-f1maximaal-sainz-redbull-upgrades",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "F1Maximaal",
-      "cat": "チーム",
-      "teams": [
-        "williams"
-      ],
-      "topic": "sainz-upgrades-budget-cap",
-      "title": "サインツ「レッドブルとマクラーレンのアップデート数が理解できない」　予算上限に苦しむウィリアムズ",
-      "summary": "ウィリアムズのサインツはスペイン紙マルカに、レッドブルとマクラーレンが1シーズンに7、8回もアップデートを投入できることが今も理解できないと語った。ウィリアムズは2回目のアップデートで予算上限に近づき、以降の開発余地は乏しいという。規則違反を疑うものではないとしつつ、トップチームとの設備面の差にも触れ、チーム施設向けのADUO案を支持した。今季のウィリアムズはレーシングブルズに約1秒及ばず、残り3戦は2027年に向けたデータ収集の場と位置づけている。",
-      "orig": "Sainz trekt wenkbrauwen op bij Red Bull: 'Ik begrijp niet hoe ze dit doen'",
-      "url": "https://www.f1maximaal.nl/formule-1/sainz-zet-vraagtekens-bij-red-bull-daar-begrijp-ik-helemaal-niets-van",
-      "published": "2026-11-19T12:50:00+01:00"
-    },
-    {
-      "id": "nl-f1maximaal-hadjar-verstappen-niveau",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "F1Maximaal",
-      "cat": "ドライバー",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "hadjar-verstappen-level",
-      "title": "ハジャー「今ならわかる」　フェルスタッペンの水準とローソン残留に言及",
-      "summary": "レッドブルのハジャーは、2027年のシートを確保したローソンについて、昨季レーシングブルズでチームメートだった立場から「驚きはない」と語った。競争力のあるマシンがあれば毎週ポイントを取れる完成度の高いドライバーだと評価している。自身はレッドブルでの初年度を通じ、フェルスタッペンが4度の王者である理由を一部の場面で理解できたと話した。下位カテゴリーの後続には脅威を感じておらず、残留する考えで、来季はさらに一歩進みたいという。",
-      "orig": "Hadjar spreekt zich uit over niveau van Verstappen: \"Ik begrijp het nu\"",
-      "url": "https://www.f1maximaal.nl/formule-1/hadjar-spreekt-zich-uit-over-niveau-van-verstappen-ik-begrijp-het-nu",
-      "published": "2026-11-19T12:15:00+01:00"
-    },
-    {
-      "id": "en-therace-whoop-biometric-verstappen",
-      "kind": "news",
-      "lang": "en",
-      "region": "イギリス",
-      "source": "The Race",
-      "cat": "ビジネス",
-      "teams": [
-        "redbull",
-        "ferrari",
-        "mercedes"
-      ],
-      "topic": "f1-biometric-whoop",
-      "title": "F1が生体データ放送へ　フェルスタッペンは参加せず",
-      "summary": "F1がウェアラブル企業ウーフと提携し、ドライバーの心拍などの生体データを中継で使う計画をThe Raceが伝えた。試験的にイギリスGPのルクレールとブラジルGPのローソンの心拍データが使われ、使用にはドライバー本人の同意が必要になる。フェルスタッペンは「追跡されるのは好きではない」としてプライバシーを理由に参加しない考えを示した。ラッセルは拒まないものの、年齢や体質で心拍は大きく違うため比較は誤解を生みかねないと疑問を呈した。一方、ウーフのアンバサダーでもあるルクレールは前向きだという。",
-      "orig": "Verstappen isn't a fan of F1's 2027 biometric data plan",
-      "url": "https://www.the-race.com/formula-1/f1-2027-biometric-data-plan-whoop-max-verstappen-not-a-fan/",
-      "published": "2026-11-19T11:00:00+00:00"
-    },
-    {
-      "id": "de-f1insider-beganovic-vegas-fp1",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "F1-Insider.com",
-      "cat": "チーム",
-      "circuit": "lasvegas",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-vegas-fp1-beganovic",
-      "title": "ハミルトン、ラスベガスFP1を欠場　フェラーリはベガノビッチを起用",
-      "summary": "F1-Insider.comによると、ルイス・ハミルトンはラスベガスGPのフリー走行1回目を欠場し、22歳のディノ・ベガノビッチがSF-26を1時間走らせる。出走数が2戦以下のドライバーに各車2回のFP1出走を求めるFIA規則があり、今回が今季4度目の起用でフェラーリの義務が完了する。ハミルトンはFP2から走行し、土曜の予選までに走れるのは実質2時間となる。ハミルトンは、コンストラクターズ2位の確保がチームの最大目標だと述べた。ヴァッスール代表は、低温と長いストレートの中でタイヤを適正な作動域に入れられるかが鍵になると語った。",
-      "orig": "Ferrari-Fahrertausch vor Rennwochenende in Las Vegas",
-      "url": "https://f1-insider.com/formel-1-ferrari-fahrertausch-las-vegas-84015/",
-      "published": "2026-11-19T11:02:00+01:00"
     }
   ]
 }
