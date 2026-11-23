@@ -56,7 +56,9 @@ if 'laps' not in out:
     lp = get(f'https://api.openf1.org/v1/laps?session_key={sk}')
     out['source'] = 'OpenF1'; out['stints'] = [{'d': ab.get(x['driver_number']), 'c': x.get('compound'), 's': x.get('stint_number'), 'a': x.get('lap_start'), 'b': x.get('lap_end'), 'age': x.get('tyre_age_at_start')} for x in st]
     out['pits'] = [{'d': ab.get(x['driver_number']), 'n': x.get('lap_number'), 'dur': x.get('pit_duration')} for x in pits]
-    out['laps'] = [{'d': ab.get(x['driver_number']), 'n': x.get('lap_number'), 't': x.get('lap_duration'), 'pout': bool(x.get('is_pit_out_lap')), 's1': x.get('duration_sector_1'), 's2': x.get('duration_sector_2'), 's3': x.get('duration_sector_3'), 'st': x.get('st_speed')} for x in lp]
+    out['laps'] = [{'d': ab.get(x['driver_number']), 'n': x.get('lap_number'), 't': x.get('lap_duration'), 'pout': bool(x.get('is_pit_out_lap')), 's1': x.get('duration_sector_1'), 's2': x.get('duration_sector_2'), 's3': x.get('duration_sector_3'), 'st': x.get('st_speed'), 'ds': x.get('date_start')} for x in lp]
+    rc = get(f'https://api.openf1.org/v1/race_control?session_key={sk}')
+    out['rc'] = [{'at': x.get('date'), 'n': x.get('lap_number'), 'cat': x.get('category'), 'flag': x.get('flag'), 'msg': x.get('message')} for x in rc]
     out['positions'] = [{'d': ab.get(x['driver_number']), 'at': x.get('date'), 'p': x.get('position')} for x in pos]
   except Exception as ex:
     print('OpenF1 failed:', repr(ex)[:300])
