@@ -33,11 +33,38 @@ try:
     out['laps'] = laps
 except Exception as ex:
     print('FastF1 failed:', repr(ex)[:300])
+    out = {'year': year, 'gp': gp, 'session': kind}
+def get(u, tries=3):
+    import time
+    for i in range(tries):
+        try:
+            return json.load(urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'f1gridwalk-lab'}), timeout=60))
+        except Exception as ex:
+            print('  retry', i + 1, u, repr(ex)[:120]); time.sleep(5)
+    raise RuntimeError('could not read ' + u)
+if 'laps' not in out:
+  try:  # OpenF1 (historical data is free)
+    ses = [x for x in get(f'https://api.openf1.org/v1/sessions?year={year}&session_name=Race') if gp.lower().replace(' ', '') in (x.get('location', '') + x.get('circuit_short_name', '') + x.get('country_name', '')).lower().replace(' ', '')]
+    print('OpenF1 sessions:', [(x.get('session_key'), x.get('location')) for x in ses])
+    sk = ses[-1]['session_key']
+    drv = get(f'https://api.openf1.org/v1/drivers?session_key={sk}')
+    out['drivers'] = [{'abbr': d['name_acronym'], 'num': str(d['driver_number']), 'name': d.get('full_name'), 'team': d.get('team_name'), 'color': '#' + (d.get('team_colour') or '888888')} for d in drv]
+    ab = {d['driver_number']: d['name_acronym'] for d in drv}
+    st = get(f'https://api.openf1.org/v1/stints?session_key={sk}')
+    pits = get(f'https://api.openf1.org/v1/pit?session_key={sk}')
+    pos = get(f'https://api.openf1.org/v1/position?session_key={sk}')
+    lp = get(f'https://api.openf1.org/v1/laps?session_key={sk}')
+    out['source'] = 'OpenF1'; out['stints'] = [{'d': ab.get(x['driver_number']), 'c': x.get('compound'), 's': x.get('stint_number'), 'a': x.get('lap_start'), 'b': x.get('lap_end'), 'age': x.get('tyre_age_at_start')} for x in st]
+    out['pits'] = [{'d': ab.get(x['driver_number']), 'n': x.get('lap_number'), 'dur': x.get('pit_duration')} for x in pits]
+    out['laps'] = [{'d': ab.get(x['driver_number']), 'n': x.get('lap_number'), 't': x.get('lap_duration'), 'pout': bool(x.get('is_pit_out_lap')), 's1': x.get('duration_sector_1'), 's2': x.get('duration_sector_2'), 's3': x.get('duration_sector_3'), 'st': x.get('st_speed')} for x in lp]
+    out['positions'] = [{'d': ab.get(x['driver_number']), 'at': x.get('date'), 'p': x.get('position')} for x in pos]
+  except Exception as ex:
+    print('OpenF1 failed:', repr(ex)[:300])
+if 'laps' not in out:
     rnd = int(sys.argv[4]) if len(sys.argv) > 4 else None
     if not rnd:
         raise
     base = f'https://api.jolpi.ca/ergast/f1/{year}/{rnd}'
-    get = lambda u: json.load(urllib.request.urlopen(u, timeout=30))
     laps, off = [], 0
     while True:
         j = get(f'{base}/laps.json?limit=100&offset={off}')
