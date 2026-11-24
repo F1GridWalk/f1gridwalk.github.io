@@ -3234,6 +3234,7 @@ def build_share_kit(days=7, req_days=4):
         items.append((dt_, 'データ', f'/gp/{gslug}/data/', f'{gslug}-data', f'{gname} 決勝を図で見る',
                       '全員の1周ごとの順位、トップとの差、ペース、タイヤを図にしました。名前を押すと、ドライバーどうしを比べられます。'))
     items = sorted([i for i in items if i[0] >= since], key=lambda i: i[0], reverse=True)
+    items.sort(key=lambda i: i[1] != 'データ')  # the race-analysis pages first (owner, 24 Nov 2026); the rest stays newest first
 
     def box(label, text, x=False):
         w = f'<span class="sk-w">X の文字数 {x_weight(text)}／280</span>' if x else ''
