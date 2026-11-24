@@ -493,7 +493,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     st = {a['id']: SITE_PUB[a['id']] for a in arts if a['id'] in SITE_PUB}
     sth = ('<script type="application/json" id="sitetimes">' + json.dumps(st, separators=(',', ':')).replace('</', '<\\/') + '</script>') if st else ''
     sth += '<script type="application/json" id="srcnames">' + json.dumps(SOURCE_NAMES, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'  # one outlet, one name (21 Nov 2026)
-    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth), ('reactions', gd_top() + react_top())):
+    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth), ('reactions', gd_top() + react_top()), ('gpdata', gd_box())):
         if not block and name != 'reactions':  # an empty 「いま各国が報じている話題」 is cleared, not left stale
             continue
         pat = re.compile(r'(<!--pre:' + name + r'-->).*?(<!--/pre:' + name + r'-->)', re.S)
@@ -3788,6 +3788,16 @@ def gd_top():
     if (RUN_NOW.astimezone(JST).date() - (d.date() if hasattr(d, 'date') else d)).days > 10:
         return ''
     return (f'<style>{GD_GO_CSS}</style><a class="gd-go" href="/gp/{slug}/data/" data-track="click/top/gpdata"><small>DATA · {e(gp)}の決勝を図で見る</small>'
+            '<b>1周ごとの順位、トップとの差、ペース、タイヤ</b><span>名前を押して、ドライバーどうしを比べられます →</span></a>')
+
+
+def gd_box():
+    """The newest race-analysis page at the top of the 「データ」 tab (owner's OK to preview, 24 Nov 2026)."""
+    if not GD_PAGES:
+        return ''
+    d, slug, gp = max(GD_PAGES)
+    return (f'<style>{GD_GO_CSS}#gpdata-box{{margin:0 0 10px;padding:0;border:0}}#gpdata-box .gd-go{{margin:0}}</style>'
+            f'<a class="gd-go" href="/gp/{slug}/data/" data-track="click/top/gpdata-tab"><small>DATA · {e(gp)}の決勝を図で見る</small>'
             '<b>1周ごとの順位、トップとの差、ペース、タイヤ</b><span>名前を押して、ドライバーどうしを比べられます →</span></a>')
 
 
