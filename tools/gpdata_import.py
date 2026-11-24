@@ -38,7 +38,7 @@ for rule in re.findall(r'([^{}]+)\{([^{}]*)\}', css):
 scoped = (':root{' + own + '}.gd{font-size:15px;line-height:1.65}'
           '@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){' + own_dark + '}}'
           ':root[data-theme="dark"]{' + own_dark + '}' + ''.join(out)
-          + '.gd .bar{top:0;margin-top:6px}.gd h1{margin-top:4px}.gd section{margin-top:26px;padding-top:16px}.gd .bar+section{border-top:0;padding-top:0}')
+          + '.gd .bar{top:0;margin-top:6px}.gd h1{margin-top:4px}.gd section{margin-top:26px;padding-top:16px}.gd .bar+section{border-top:0;padding-top:0}.gd .legend svg{width:26px;display:inline-block}')
 markup = re.sub(r'<span class="lab">.*?</span>\s*', '', markup, flags=re.S)
 markup = markup.replace('<div class="wrap">', '<div class="gdw">', 1)  # the site already has a .wrap
 markup = markup.replace('この試作は本サイトには載っていません。', 'ファンによる非営利の分析です。')
