@@ -44,7 +44,7 @@ def get(u, tries=3):
     raise RuntimeError('could not read ' + u)
 if 'laps' not in out:
   try:  # OpenF1 (historical data is free)
-    ses = [x for x in get(f'https://api.openf1.org/v1/sessions?year={year}&session_name=Race') if gp.lower().replace(' ', '') in (x.get('location', '') + x.get('circuit_short_name', '') + x.get('country_name', '')).lower().replace(' ', '')]
+    ses = [x for x in get(f'https://api.openf1.org/v1/sessions?year={year}&session_name=' + {'R': 'Race', 'Q': 'Qualifying', 'S': 'Sprint', 'SQ': 'Sprint Qualifying'}.get(kind, 'Race')) if gp.lower().replace(' ', '') in (x.get('location', '') + x.get('circuit_short_name', '') + x.get('country_name', '')).lower().replace(' ', '')]
     print('OpenF1 sessions:', [(x.get('session_key'), x.get('location')) for x in ses])
     sk = ses[-1]['session_key']
     drv = get(f'https://api.openf1.org/v1/drivers?session_key={sk}')
@@ -60,6 +60,10 @@ if 'laps' not in out:
     rc = get(f'https://api.openf1.org/v1/race_control?session_key={sk}')
     out['rc'] = [{'at': x.get('date'), 'n': x.get('lap_number'), 'cat': x.get('category'), 'flag': x.get('flag'), 'msg': x.get('message')} for x in rc]
     out['positions'] = [{'d': ab.get(x['driver_number']), 'at': x.get('date'), 'p': x.get('position')} for x in pos]
+    try:  # final classification; for qualifying, 'duration' holds the Q1/Q2/Q3 best times
+        out['result'] = [{'d': ab.get(x['driver_number']), 'p': x.get('position'), 'q': x.get('duration'), 'gap': x.get('gap_to_leader'), 'dnf': x.get('dnf'), 'dns': x.get('dns'), 'dsq': x.get('dsq')} for x in get(f'https://api.openf1.org/v1/session_result?session_key={sk}')]
+    except Exception as ex:
+        print('session_result failed:', repr(ex)[:200])
   except Exception as ex:
     print('OpenF1 failed:', repr(ex)[:300])
 if 'laps' not in out:
