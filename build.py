@@ -3229,6 +3229,10 @@ def build_share_kit(days=7, req_days=4):
             lab = f'{dd.month}月{dd.day}日（{"月火水木金土日"[dd.weekday()]}）'
             items.append((datetime(dd.year, dd.month, dd.day, 23, 0, tzinfo=JST), 'まとめ', f'/news/daily/{dd.isoformat()}/', f'daily-{dd.isoformat()}',
                           f'F1ニュースまとめ {lab}', f'{lab}に世界の媒体が報じたF1の主なニュースを、1ページにまとめました。'))
+    for d_, gslug, gname in GD_PAGES:  # the race-analysis page (owner, 24 Nov 2026)
+        dt_ = (d_ if d_.tzinfo else d_.replace(tzinfo=JST)) + timedelta(days=1)  # a day after the race, so it stays in the kit for a week
+        items.append((dt_, 'データ', f'/gp/{gslug}/data/', f'{gslug}-data', f'{gname} 決勝を図で見る',
+                      '全員の1周ごとの順位、トップとの差、ペース、タイヤを図にしました。名前を押すと、ドライバーどうしを比べられます。'))
     items = sorted([i for i in items if i[0] >= since], key=lambda i: i[0], reverse=True)
 
     def box(label, text, x=False):
@@ -3881,10 +3885,12 @@ def build_gp_pages(flag_of, circuits):
             dbody = (f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/gp/">GPごとに読む</a> › <a href="/gp/{slug}/">{e(x["gp"])}</a> › データ</nav>'
                      + frag + f'<p class="ent-more"><a href="/gp/{slug}/" data-track="click/gpdata/{slug}/gp">{e(x["gp"])}のニュースとコラム</a><a href="/gp/">ほかのGPを見る</a></p>')
             dhead = '<style>' + ENT_CSS + '</style>\n' + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('GPごとに読む', SITE + '/gp/'), (x['gp'], url), ('データ', durl)])
+            og_d = rules_og(f'{slug}-data', f'{x["gp"]} 決勝を図で見る', 'DATA', '1周ごとの順位、トップとの差、ペース、タイヤ。名前を押して、ドライバーどうしを比べられる。',
+                            f'{y} {x["gp"]}', rel=f'gp/{slug}/data/og.png', foot='レースを、数字と図で。')
             dch = write(f'gp/{slug}/data/index.html', page(
                 f'F1 {title} 決勝のデータ｜1周ごとの順位・ペース・タイヤ・ドライバー比較｜F1グリッドウォーク',
                 f'{title}の決勝を図で見るページ。全員の1周ごとの順位、トップとの差、ペース、タイヤの使い方と、選んだドライバーどうしの比較。データはOpenF1（F1のタイミングをもとにした非公式の公開データ）。',
-                durl, dbody, dhead, og_type='article'))
+                durl, dbody, dhead, og_type='article', og_image=og_d))
             sm.append((durl, lastmod_of(durl, dch), None, '0.6'))
             GD_PAGES.append((x['date'], slug, x['gp']))
         last = max([when(a) for a in x['arts']] + [c['dt'] for c in x['cols']])
