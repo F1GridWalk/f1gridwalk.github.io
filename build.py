@@ -3826,13 +3826,16 @@ GD_TRACK_JS = """<script>
 (function(){var r=document.querySelector('.gd');if(!r)return;var s=location.pathname.split('/')[2]||'',done={};
 function c(k,t){if(done[k])return;done[k]=1;var n=0;(function go(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'gpdata/'+s+'/'+k,title:'データページ '+t,event:true})}catch(e){}return}if(++n<20)setTimeout(go,500)})()}
 if(/[?&]drivers=/.test(location.search))c('open-drivers','選んだ人のリンクで来た');
+if(/[?&]lap=/.test(location.search))c('open-lap','周を選んだリンクで来た');
 r.addEventListener('click',function(ev){var t=ev.target;if(!t.closest)return;
-if(t.closest('.story'))c('story','DATA STORY');else if(t.closest('.pre button'))c('preset','組み合わせのボタン');
+if(t.closest('#lapPlay'))c('play','レースの再生');else if(t.closest('.evb'))c('event','できごとの▼');
+else if(t.closest('.lapctl')||t.closest('.lp')||(t.closest('#gPos,#gGap')&&!t.closest('.hit')))c('lap','周を選ぶ');
+else if(t.closest('summary'))c(/計算方法/.test(t.closest('summary').textContent)?'how':'table',/計算方法/.test(t.closest('summary').textContent)?'データと計算方法':'表で見る');
+else if(t.closest('.story'))c('story','DATA STORY');else if(t.closest('.pre button'))c('preset','組み合わせのボタン');
 else if(t.closest('.nav'))c('nav','ページ内ナビ');else if(t.closest('.hi button'))c('highlight','見どころ');
 else if(t.closest('.hit'))c('chart','図の名前');else if(t.closest('.tab'))c('tab','切り替え');
-else if(t.closest('button')&&/コピー/.test(t.closest('button').textContent))c('copy','リンクをコピー');
-else if(t.closest('summary'))c('how','データと計算方法');},true);
-r.addEventListener('change',function(ev){if(ev.target.tagName==='SELECT')c('select','比較の選択');},true);})();
+else if(t.closest('button')&&/コピー/.test(t.closest('button').textContent))c('copy','リンクをコピー');},true);
+r.addEventListener('change',function(ev){if(ev.target.tagName==='SELECT')c('select','比較の選択');else if(ev.target.id==='lapR')c('lap','周を選ぶ');},true);})();
 </script>"""
 
 
