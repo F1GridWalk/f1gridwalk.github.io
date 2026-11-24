@@ -167,7 +167,7 @@ header.top .status{display:none !important}
 body{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
 }
 @media all{
-body[data-v="news"] #raceweek,body[data-v="news"] #sec-standings,body[data-v="news"] #numbers,body[data-v="news"] #sec-calendar,body[data-v="news"] #teams-band{display:none !important}
+body[data-v="news"] #gpdata-box,body[data-v="news"] #raceweek,body[data-v="news"] #sec-standings,body[data-v="news"] #numbers,body[data-v="news"] #sec-calendar,body[data-v="news"] #teams-band{display:none !important}
 body[data-v="data"] .dash-main,body[data-v="data"] #sec-rules{display:none !important}
 body[data-v="data"] .dash-side{margin-top:6px}
 }
@@ -352,6 +352,7 @@ header.top .hd-finder input{min-height:38px}
 <main id="top">
   <div class="wrap dash">
     <aside class="dash-side" aria-label="レース情報">
+      <section id="gpdata-box" aria-label="レースのデータ"><!--pre:gpdata--><style>.gd-go{display:block;margin:14px 0 4px;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;color:var(--ink);text-decoration:none}.gd-go small{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--clay)}.gd-go b{display:block;font-size:16px;line-height:1.5}.gd-go span{font-size:13px;color:var(--muted)}#gpdata-box{margin:0 0 10px;padding:0;border:0}#gpdata-box .gd-go{margin:0}</style><a class="gd-go" href="/gp/lasvegas-2026/data/" data-track="click/top/gpdata-tab"><small>DATA · ラスベガスGPの決勝を図で見る</small><b>1周ごとの順位、トップとの差、ペース、タイヤ</b><span>名前を押して、ドライバーどうしを比べられます →</span></a><!--/pre:gpdata--></section>
       <div class="databar" role="group" aria-label="データを開く">
         <button type="button" data-panel="standings" aria-pressed="false">ランキング</button>
         <button type="button" data-panel="numbers" aria-pressed="false">数字</button>
@@ -636,7 +637,7 @@ j.addEventListener('focusin',function(){j.classList.remove('jm-hide')});})();
 (function(){
   var bar=document.querySelector('.bt'); if(!bar) return;
   var mq=window.matchMedia('all');
-  var DATA=['raceweek','sec-standings','numbers','sec-calendar','teams-band'];
+  var DATA=['gpdata-box','raceweek','sec-standings','numbers','sec-calendar','teams-band'];
   function set(v,top){ document.body.setAttribute('data-v',v);
     [].forEach.call(bar.querySelectorAll('button'),function(b){ var on=b.getAttribute('data-v')===v; b.classList.toggle('on',on); b.setAttribute('aria-pressed',on?'true':'false'); });
     if(top) window.scrollTo(0,0); }
