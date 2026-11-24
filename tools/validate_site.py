@@ -73,7 +73,7 @@ for p in pages():
         warn(f'{short}: internal link with a query (?...)')
     if '<h1' not in h:
         warn(f'{short}: no <h1>')
-    ids = re.findall(r'\sid="([^"]+)"', h)
+    ids = re.findall(r'\sid="([^"]+)"', re.sub(r'<script\b.*?</script>', '', h, flags=re.S))  # ids inside a script's strings are not in the page yet
     dup = {i for i in ids if ids.count(i) > 1} if len(ids) < 2000 else set()
     if dup:
         err(f'{short}: duplicate id {sorted(dup)[:5]}')
