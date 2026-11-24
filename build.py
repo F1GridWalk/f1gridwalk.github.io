@@ -3805,6 +3805,36 @@ def gd_box():
             '<b>1周ごとの順位、トップとの差、ペース、タイヤ</b><span>名前を押して、ドライバーどうしを比べられます →</span></a>')
 
 
+def gd_link(a):
+    """NEWS -> DATA: a race news page links to that race's analysis page, with the drivers of the story already picked
+    (owner's instruction list item 9; topics chosen by hand in gpdata/<slug>.links.json, 24 Nov 2026)."""
+    slug = GP_OF.get(a['id'])
+    if not slug or a['id'] in DUP_OF or not os.path.exists(os.path.join(ROOT, 'gpdata', f'{slug}.html')):
+        return ''
+    m = (load(f'gpdata/{slug}.links.json') or {}).get('topics') or {}
+    if a.get('topic') not in m:
+        return ''
+    codes, names = m[a['topic']]
+    q = f'?drivers={codes}' if codes else ''
+    lab = f'{names}をデータで見る' if names else 'このレースをデータで見る'
+    return (f'<p class="ent-more"><a href="/gp/{slug}/data/{q}" data-track="click/news/gpdata">{e(lab)}（順位・ペース・タイヤ）→</a></p>')
+
+
+# 操作の計測 (owner's instruction list item 16): which parts of the analysis page get used. Each kind counts once a page view.
+GD_TRACK_JS = """<script>
+(function(){var r=document.querySelector('.gd');if(!r)return;var s=location.pathname.split('/')[2]||'',done={};
+function c(k,t){if(done[k])return;done[k]=1;var n=0;(function go(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'gpdata/'+s+'/'+k,title:'データページ '+t,event:true})}catch(e){}return}if(++n<20)setTimeout(go,500)})()}
+if(/[?&]drivers=/.test(location.search))c('open-drivers','選んだ人のリンクで来た');
+r.addEventListener('click',function(ev){var t=ev.target;if(!t.closest)return;
+if(t.closest('.story'))c('story','DATA STORY');else if(t.closest('.pre button'))c('preset','組み合わせのボタン');
+else if(t.closest('.nav'))c('nav','ページ内ナビ');else if(t.closest('.hi button'))c('highlight','見どころ');
+else if(t.closest('.hit'))c('chart','図の名前');else if(t.closest('.tab'))c('tab','切り替え');
+else if(t.closest('button')&&/コピー/.test(t.closest('button').textContent))c('copy','リンクをコピー');
+else if(t.closest('summary'))c('how','データと計算方法');},true);
+r.addEventListener('change',function(ev){if(ev.target.tagName==='SELECT')c('select','比較の選択');},true);})();
+</script>"""
+
+
 def build_gp_pages(flag_of, circuits):
     if not GPS:
         return []
@@ -3883,8 +3913,17 @@ def build_gp_pages(flag_of, circuits):
             durl = f'{SITE}/gp/{slug}/data/'
             frag = open(gd_src, encoding='utf-8').read()
             dbody = (f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/gp/">GPごとに読む</a> › <a href="/gp/{slug}/">{e(x["gp"])}</a> › データ</nav>'
-                     + frag + f'<p class="ent-more"><a href="/gp/{slug}/" data-track="click/gpdata/{slug}/gp">{e(x["gp"])}のニュースとコラム</a><a href="/gp/">ほかのGPを見る</a></p>')
+                     + frag + GD_TRACK_JS + f'<p class="ent-more"><a href="/gp/{slug}/" data-track="click/gpdata/{slug}/gp">{e(x["gp"])}のニュースとコラム</a><a href="/gp/">ほかのGPを見る</a></p>')
             dhead = '<style>' + ENT_CSS + '</style>\n' + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('GPごとに読む', SITE + '/gp/'), (x['gp'], url), ('データ', durl)])
+            # Dataset (owner's instruction list item 15): what the page's numbers are and where they come from; no licence is claimed
+            dhead += ld({'@context': 'https://schema.org', '@type': 'Dataset', 'name': f'{title} 決勝のラップデータ（図で見る）',
+                         'description': f'{title}決勝の全ドライバーについて、1周ごとの順位、トップとの差、ラップタイム、タイヤのスティント、ピットレーン通過時間、レース中の最大計測速度をまとめ、図にしたもの。OpenF1（F1のタイミングをもとにした非公式の公開データ）から取得したファンの非営利の分析です。',
+                         'url': durl, 'inLanguage': 'ja', 'isAccessibleForFree': True,
+                         'temporalCoverage': x['date'].date().isoformat(),
+                         'keywords': ['F1', x['gp'], 'ラップタイム', '順位', 'タイヤ', 'ピットストップ'],
+                         'variableMeasured': ['周回ごとの順位', 'トップとの差（秒）', 'ラップタイム（秒）', 'タイヤの種類とスティント', 'ピットレーン通過時間（秒）', '最大計測速度（km/h）'],
+                         'creator': {'@type': 'Organization', 'name': 'F1 Grid Walk', 'url': SITE + '/'},
+                         'isBasedOn': {'@type': 'Dataset', 'name': 'OpenF1', 'url': 'https://openf1.org/'}})
             og_d = rules_og(f'{slug}-data', f'{x["gp"]} 決勝を図で見る', 'DATA', '1周ごとの順位、トップとの差、ペース、タイヤ。名前を押して、ドライバーどうしを比べられる。',
                             f'{y} {x["gp"]}', rel=f'gp/{slug}/data/og.png', foot='レースを、数字と図で。')
             dch = write(f'gp/{slug}/data/index.html', page(
@@ -4796,6 +4835,9 @@ def main():
         if a.get('topic') in REACT and a['id'] not in DUP_OF:
             n_, r_ = react_line(a['topic'])
             body.append(f'<p class="ent-more"><a href="/reaction/{a["topic"]}/" data-track="click/news/reaction">この話題を各国はどう報じたか（{n_}媒体・{r_}つの国と地域）→</a></p>')
+        gdl = gd_link(a)
+        if gdl:
+            body.append(gdl)
         if a.get('voices'):
             # our own digest of fan reactions, laid out like a forum digest (owner, 3 Nov 2026):
             # numbered posts, side label, big type for the most common view — but every line is our paraphrase, no names
