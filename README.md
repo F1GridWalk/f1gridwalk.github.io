@@ -29,6 +29,7 @@
 - `.github/workflows/validate.yml` … main に push するたびに上のチェックを GitHub でも実行。ERROR があると赤くなりメールが届く（公開は止めない）
 - `tools/source-names.json` … 同じ媒体の名前のゆれをまとめる表
 - `gpdata/<gp-slug>.html` … データ分析の係のレース分析ページ。build.py が /gp/<gp-slug>/data/ として出す。`tools/gpdata_import.py` で Artifact の HTML から作る
+- `gpdata/<gp-slug>.links.json` … そのレースのニュースから分析ページへのリンクを出す話題と、最初から選んでおくドライバー（手で選ぶ）
 - `tools/indexnow.py` … 更新したページを Bing などに知らせる
 - `tools/bluesky.py` … 新しいコラムと STORY を Bluesky に投稿する（設定したときだけ動く）
 

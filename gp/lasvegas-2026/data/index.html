@@ -60,6 +60,7 @@
 .mon-nav b{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "F1 Grid Walk", "item": "https://f1gridwalk.github.io/"}, {"@type": "ListItem", "position": 2, "name": "GPごとに読む", "item": "https://f1gridwalk.github.io/gp/"}, {"@type": "ListItem", "position": 3, "name": "ラスベガスGP", "item": "https://f1gridwalk.github.io/gp/lasvegas-2026/"}, {"@type": "ListItem", "position": 4, "name": "データ", "item": "https://f1gridwalk.github.io/gp/lasvegas-2026/data/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "2026 ラスベガスGP 決勝のラップデータ（図で見る）", "description": "2026 ラスベガスGP決勝の全ドライバーについて、1周ごとの順位、トップとの差、ラップタイム、タイヤのスティント、ピットレーン通過時間、レース中の最大計測速度をまとめ、図にしたもの。OpenF1（F1のタイミングをもとにした非公式の公開データ）から取得したファンの非営利の分析です。", "url": "https://f1gridwalk.github.io/gp/lasvegas-2026/data/", "inLanguage": "ja", "isAccessibleForFree": true, "temporalCoverage": "2026-11-21", "keywords": ["F1", "ラスベガスGP", "ラップタイム", "順位", "タイヤ", "ピットストップ"], "variableMeasured": ["周回ごとの順位", "トップとの差（秒）", "ラップタイム（秒）", "タイヤの種類とスティント", "ピットレーン通過時間（秒）", "最大計測速度（km/h）"], "creator": {"@type": "Organization", "name": "F1 Grid Walk", "url": "https://f1gridwalk.github.io/"}, "isBasedOn": {"@type": "Dataset", "name": "OpenF1", "url": "https://openf1.org/"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
@@ -308,7 +309,18 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw
 try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);}catch(e){}
 draw();
 </script>
-<p class="ent-more"><a href="/gp/lasvegas-2026/" data-track="click/gpdata/lasvegas-2026/gp">ラスベガスGPのニュースとコラム</a><a href="/gp/">ほかのGPを見る</a></p>
+<script>
+(function(){var r=document.querySelector('.gd');if(!r)return;var s=location.pathname.split('/')[2]||'',done={};
+function c(k,t){if(done[k])return;done[k]=1;var n=0;(function go(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'gpdata/'+s+'/'+k,title:'データページ '+t,event:true})}catch(e){}return}if(++n<20)setTimeout(go,500)})()}
+if(/[?&]drivers=/.test(location.search))c('open-drivers','選んだ人のリンクで来た');
+r.addEventListener('click',function(ev){var t=ev.target;if(!t.closest)return;
+if(t.closest('.story'))c('story','DATA STORY');else if(t.closest('.pre button'))c('preset','組み合わせのボタン');
+else if(t.closest('.nav'))c('nav','ページ内ナビ');else if(t.closest('.hi button'))c('highlight','見どころ');
+else if(t.closest('.hit'))c('chart','図の名前');else if(t.closest('.tab'))c('tab','切り替え');
+else if(t.closest('button')&&/コピー/.test(t.closest('button').textContent))c('copy','リンクをコピー');
+else if(t.closest('summary'))c('how','データと計算方法');},true);
+r.addEventListener('change',function(ev){if(ev.target.tagName==='SELECT')c('select','比較の選択');},true);})();
+</script><p class="ent-more"><a href="/gp/lasvegas-2026/" data-track="click/gpdata/lasvegas-2026/gp">ラスベガスGPのニュースとコラム</a><a href="/gp/">ほかのGPを見る</a></p>
 </main>
 <footer><div class="wrap">
   <p><a href="/">F1 Grid Walk</a> — 世界のF1ニュースを、日本語で。　<a href="/feed.xml">RSS</a>　<a href="/about/">運営者情報・編集方針</a></p>
