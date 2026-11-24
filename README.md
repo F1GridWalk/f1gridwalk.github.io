@@ -28,6 +28,7 @@
 - `tools/validate_site.py` … 作ったページの自動チェック（題名・正規URL・日時・リンク・サイトマップ）。公開前に実行
 - `.github/workflows/validate.yml` … main に push するたびに上のチェックを GitHub でも実行。ERROR があると赤くなりメールが届く（公開は止めない）
 - `tools/source-names.json` … 同じ媒体の名前のゆれをまとめる表
+- `gpdata/<gp-slug>.html` … データ分析の係のレース分析ページ。build.py が /gp/<gp-slug>/data/ として出す。`tools/gpdata_import.py` で Artifact の HTML から作る
 - `tools/indexnow.py` … 更新したページを Bing などに知らせる
 - `tools/bluesky.py` … 新しいコラムと STORY を Bluesky に投稿する（設定したときだけ動く）
 

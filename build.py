@@ -493,7 +493,7 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     st = {a['id']: SITE_PUB[a['id']] for a in arts if a['id'] in SITE_PUB}
     sth = ('<script type="application/json" id="sitetimes">' + json.dumps(st, separators=(',', ':')).replace('</', '<\\/') + '</script>') if st else ''
     sth += '<script type="application/json" id="srcnames">' + json.dumps(SOURCE_NAMES, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'  # one outlet, one name (21 Nov 2026)
-    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth), ('reactions', react_top())):
+    for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth), ('reactions', gd_top() + react_top())):
         if not block and name != 'reactions':  # an empty 「いま各国が報じている話題」 is cleared, not left stale
             continue
         pat = re.compile(r'(<!--pre:' + name + r'-->).*?(<!--/pre:' + name + r'-->)', re.S)
@@ -3774,6 +3774,23 @@ def top_people_slot():
         open(ip, 'w', encoding='utf-8').write(out)
 
 
+GD_PAGES = []  # (race date, gp slug, GP name) of the race-analysis pages, for the top page
+GD_GO_CSS = (".gd-go{display:block;margin:14px 0 4px;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;color:var(--ink);text-decoration:none}"
+             ".gd-go small{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--clay)}.gd-go b{display:block;font-size:16px;line-height:1.5}"
+             ".gd-go span{font-size:13px;color:var(--muted)}")
+
+
+def gd_top():
+    """The top page's link to the newest race-analysis page, for ten days after the race (owner's OK to preview, 24 Nov 2026)."""
+    if not GD_PAGES:
+        return ''
+    d, slug, gp = max(GD_PAGES)
+    if (RUN_NOW.astimezone(JST).date() - (d.date() if hasattr(d, 'date') else d)).days > 10:
+        return ''
+    return (f'<style>{GD_GO_CSS}</style><a class="gd-go" href="/gp/{slug}/data/" data-track="click/top/gpdata"><small>DATA · {e(gp)}の決勝を図で見る</small>'
+            '<b>1周ごとの順位、トップとの差、ペース、タイヤ</b><span>名前を押して、ドライバーどうしを比べられます →</span></a>')
+
+
 def build_gp_pages(flag_of, circuits):
     if not GPS:
         return []
@@ -3800,12 +3817,19 @@ def build_gp_pages(flag_of, circuits):
         if x['cols']:
             jump.append(f'<a href="#gp-cols">コラム（{len(x["cols"])}本）</a>')
         jump.append(f'<a href="#gp-news">ニュース（{len(x["arts"])}本）</a>')
+        gd_src = os.path.join(ROOT, 'gpdata', f'{slug}.html')  # the data desk's race analysis (owner's OK to preview, 24 Nov 2026)
+        has_gd = os.path.exists(gd_src)
+        if has_gd:
+            jump.insert(0, f'<a href="/gp/{slug}/data/" data-track="click/gp/{slug}/data-jump">データで見る</a>')
         b = [f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/gp/">GPごとに読む</a> › {e(x["gp"])}</nav>',
              _map_svg(circuits.get(x['circuit'])),
              f'<p class="ent-k">GRAND PRIX {y}</p><h1>{e(title)}</h1>',
              '<p class="ent-facts">' + ''.join(f'<span>{e(f)}</span>' for f in facts) + '</p>',
              f'<p class="lead">{e(x["gp"])}の週末を、F1 Grid Walk で読めるものすべてで振り返るページです。世界のニュースの要約、コラム、STORY を集めています。</p>',
              '<div class="ent-jump">' + ''.join(jump) + '</div>']
+        if has_gd:
+            b.append(f'<a class="gd-go" href="/gp/{slug}/data/" data-track="click/gp/{slug}/data"><small>DATA · 決勝を図で見る</small>'
+                     '<b>1周ごとの順位、トップとの差、ペース、タイヤ</b><span>名前を押して、ドライバーどうしを比べられます →</span></a>')
         wk = (load('season.json') or {}).get('weekend') or {}
         now_wk = bool(wk.get('sessions') and wk.get('round') == x.get('round') and _gp_base(wk.get('gp', '')) == _gp_base(x['gp']))
         if now_wk:
@@ -3840,7 +3864,19 @@ def build_gp_pages(flag_of, circuits):
             desc = f'{title}の日本時間のスケジュール（フリー走行・予選・決勝）と、' + desc
         else:
             gtitle = f'F1 {title}｜' + ('結果・' if x.get('winner') else '') + '日程・ニュースまとめ｜F1グリッドウォーク'
-        write(f'gp/{slug}/index.html', page(gtitle, desc, url, '\n'.join(b), head, og_type='website'))
+        write(f'gp/{slug}/index.html', page(gtitle, desc, url, '\n'.join(b), head.replace('</style>', GD_GO_CSS + '</style>', 1), og_type='website'))
+        if has_gd:
+            durl = f'{SITE}/gp/{slug}/data/'
+            frag = open(gd_src, encoding='utf-8').read()
+            dbody = (f'<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/gp/">GPごとに読む</a> › <a href="/gp/{slug}/">{e(x["gp"])}</a> › データ</nav>'
+                     + frag + f'<p class="ent-more"><a href="/gp/{slug}/" data-track="click/gpdata/{slug}/gp">{e(x["gp"])}のニュースとコラム</a><a href="/gp/">ほかのGPを見る</a></p>')
+            dhead = '<style>' + ENT_CSS + '</style>\n' + _crumbs_ld([('F1 Grid Walk', SITE + '/'), ('GPごとに読む', SITE + '/gp/'), (x['gp'], url), ('データ', durl)])
+            dch = write(f'gp/{slug}/data/index.html', page(
+                f'F1 {title} 決勝のデータ｜1周ごとの順位・ペース・タイヤ・ドライバー比較｜F1グリッドウォーク',
+                f'{title}の決勝を図で見るページ。全員の1周ごとの順位、トップとの差、ペース、タイヤの使い方と、選んだドライバーどうしの比較。データはOpenF1（F1のタイミングをもとにした非公式の公開データ）。',
+                durl, dbody, dhead, og_type='article'))
+            sm.append((durl, lastmod_of(durl, dch), None, '0.6'))
+            GD_PAGES.append((x['date'], slug, x['gp']))
         last = max([when(a) for a in x['arts']] + [c['dt'] for c in x['cols']])
         sm.append((url, last.isoformat(timespec='seconds'), None, '0.7'))
     items = ''.join(
