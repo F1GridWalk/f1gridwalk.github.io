@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>note用原稿：同じ予選で時速335→351km　ラスベガスのスリップを物理で解く</title>
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#F3EFE6;color:#1F2420;font-family:-apple-system,'Hiragino Sans','Noto Sans JP',sans-serif;line-height:1.8}
+.bar{position:sticky;top:0;z-index:5;background:#1F2420;color:#F3EFE6;padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar b{flex-basis:100%;font-size:13px;font-weight:600;opacity:.85}
+.bar button{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:999px;padding:8px 16px;background:#E8946C;color:#1F2420;cursor:pointer}
+.bar button.done{background:#7FC48C}
+.wrap{max-width:720px;margin:0 auto;padding:18px 16px 60px}
+.box{background:#FBF9F4;border:1px solid #DDD5C5;border-radius:14px;padding:14px 16px;margin-bottom:16px}
+.lbl{font-size:12px;font-weight:700;color:#9E4E2B;letter-spacing:.1em}
+#title{font-size:20px;font-weight:800;margin:4px 0 0}
+#tags{margin:4px 0 0}
+#body h2{font-size:20px;margin:30px 0 8px;border-left:4px solid #9E4E2B;padding-left:10px}
+#body p{margin:0 0 14px}
+#body blockquote{margin:0 0 14px;padding:4px 14px;border-left:3px solid #DDD5C5;color:#3A3E37}
+#body a{color:#1F5E8A;word-break:break-all}
+.how{font-size:13.5px}
+.how li{margin-bottom:4px}
+</style></head><body>
+<div class="bar"><b>ボタンを押してコピー → noteに貼り付け</b>
+<button data-copy="title">タイトル</button><button data-copy="body">本文</button><button data-copy="tags">ハッシュタグ</button></div>
+<div class="wrap">
+<div class="box how"><div class="lbl">使い方</div><ol>
+<li>noteで「投稿」→「テキスト」を開く</li>
+<li>見出し画像に「note_slipstream-physics-vegas-20261125_見出し画像.png」を設定</li>
+<li>上の「タイトル」を押して、noteのタイトル欄に貼り付け</li>
+<li>「本文」を押して、noteの本文に貼り付け（大見出し・太字・引用・リンクもそのまま入ります）</li>
+<li>公開設定でハッシュタグを貼り付けて公開</li>
+<li>公開したらURLをClaudeに教えてください（X紹介文を仕上げます）</li></ol>
+<p style="margin:0">※ 貼り付けたあと見出しが普通の文字になっていたら、その行を選んで「大見出し」にしてください。URLだけの行は、noteがリンクカードにしてくれます。</p></div>
+<div class="box"><div class="lbl">タイトル</div><div id="title">同じ予選で時速335→351km　ラスベガスのスリップを物理で解く</div></div>
+<div class="box"><div class="lbl">ハッシュタグ</div><div id="tags">#F1 #F1jp #ラスベガスGP #スリップストリーム #アントネッリ #F1技術 #F1こぼれ話 #OFFGRID #フォーミュラ1 #モータースポーツ #F1ニュース #海外F1 #F1好きと繋がりたい #F1GridWalk #WORLDGRID</div></div>
+<div class="box"><div class="lbl">本文</div><div id="body"><p>第21戦ラスベガスGPでは、前の車の後ろにつくだけで、直線の速さが大きく変わりました。その効き目を物理と数字で解いた記事を、イタリアのFormula1.itが11月24日に載せています。サイトの要約は https://f1gridwalk.github.io/news/it-formula1it-scia-fisica-las-vegas/ にあります。</p><p>数字を出した元の記事と、スリップストリームなど用語の解説へのリンクはサイトで → <a href="https://f1gridwalk.github.io/lens/slipstream-physics-vegas-20261125/?utm_source=note&amp;utm_campaign=slipstream-physics-vegas-20261125">https://f1gridwalk.github.io/lens/slipstream-physics-vegas-20261125/?utm_source=note&amp;utm_campaign=slipstream-physics-vegas-20261125</a></p><h2>抵抗は速さの2乗、要る力は3乗</h2><p>記事によると、空気の抵抗は速さの2乗で増え、それに打ち勝つための力は3乗で増えます。時速300kmから330kmへ1割上げるには、およそ33%多くの力が要ります。前の車は空気を後ろへ押し出すので、すぐ後ろの車には遅い空気が当たり、抵抗が減ります。これがスリップストリームです（用語は https://f1gridwalk.github.io/deep/rules/slipstream/ で）。</p><p>簡単なモデルでの目安もあります。抵抗に勝つのに500kWが要る速さで、抵抗が1割減れば50kW、2割減れば100kW（約136馬力）の節約になります。前に車がいないときの釣り合いの速さを時速320kmとすると、抵抗が2割減れば計算上は時速344.7km、2割5分減れば352.2kmです。コースの長さやギア比を入れない理論の数字で、コーナーで車を押さえつける力が減る代わりに、長い直線のラスベガスでは得になると記事は見ています。</p><h2>同じ予選の2回で、時速16kmの差</h2><p>例に挙がるのが、予選で最速だったメルセデスのアンドレア・キミ・アントネッリです（F1公式の結果）。記事によると、アントネッリはアービッド・リンドブラッドの約1.5秒後ろからアタックに入り、そのリンドブラッドもさらに前の車の後ろにいました。この1周と5グリッド降格のことは、コラム https://f1gridwalk.github.io/lens/wolff-tow-lap-never-seen-20261122/ で。</p><p>記事は、アントネッリのQ3の2回のアタックを比べています。ストリップ沿いの最高速は時速335kmと351km、5コーナーの手前は319kmと329km、最後の直線は311kmと327kmで、差は時速10〜16kmです。ただ、この比べ方では空力の効果と電気の効果を切り分けきれないとも書いています。決勝については、記事が紹介するテレメトリーの分析で、ストリップ沿いの最高速の中央値が前に車がいないとき時速326km、前の車との差が1〜2.5秒で335km、1秒未満で345kmでした。</p><h2>速さだけでなく、電気の貯金にも</h2><p>記事が強調するのは今年の電気の規則です。MGU-Kの出力は昨年の120kWから350kWに上がり、MGU-Hはなくなりました（ https://f1gridwalk.github.io/deep/rules/mgu-k/ ）。後ろについて抵抗が減れば、そのぶん電気を残して、あとで使えます。記事が引くFIAの資料では、オーバーテイクモードで、ふだん時速290kmを超えると落ちる350kWの出力を時速約337.5kmまで保て、1周に使える電気も8MJから8.5MJに増えます（ https://f1gridwalk.github.io/deep/rules/overtake-mode/ ）。</p><p>記事は、マクラーレンのアンドレア・ステラ代表が、今年はスリップの効果が大きく、周りの車が多いほど大きくなると見ていると伝えています。ジョージ・ラッセルは予選後のFIAの会見で、どこまでがストレートモードの設定の効果で、どこまでが電気を長く出せることの効果なのか分からないと認めたといいます（ https://f1gridwalk.github.io/deep/rules/straight-corner-mode/ ）。</p><p>一方で記事は、今年の後流が2025年より空力の面で強いとは、まだはっきり言えないとし、性能と作戦の面での値打ちは大きくなったと書いています。</p><p>編集部としては、ラスベガスで見えたのは、後ろにつくことが直線の速さだけでなく、電気をためる手段にもなったことだと見ています。記事自身が、後流そのものが強くなったとは言い切っていないからです。追い抜きの数はコラム https://f1gridwalk.github.io/lens/vegas-overtake-record-20261123/ で。次は11月27〜29日の第22戦カタールGPです。</p><p><strong>前の車について電気をため、あとで一気に使う。今年のこの抜き方を、あなたは面白いと思いますか？</strong></p><p>━━━━━━━━━━</p><p><strong>F1 Grid Walk では、世界のF1ニュースを毎日日本語でまとめています。</strong></p><p>海外の記事の要約を、毎日載せています。</p><p><a href="https://f1gridwalk.github.io/">https://f1gridwalk.github.io/</a></p><p>ほかの海外記事も読みたい方は、F1 Grid Walkへ。</p><p><a href="https://f1gridwalk.github.io/lens/slipstream-physics-vegas-20261125/">https://f1gridwalk.github.io/lens/slipstream-physics-vegas-20261125/</a></p><p>━━━━━━━━━━</p><p><a href="https://www.formula1.it/news/34198/1/f1-quanto-vale-davvero-una-scia-la-fisica-spiega-il-caos-di-las-vegas">出典：Formula1.it（イタリア）</a></p><p><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/qualifying">出典：F1公式サイト（イギリス）</a></p><p><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/starting-grid">出典：F1公式サイト（イギリス）</a></p><p><a href="https://www.formula1.com/en/racing/2026">出典：F1公式サイト（イギリス）</a></p></div></div>
+</div>
+<script>
+function copyEl(el, btn){
+  var ok=false;
+  try{ var r=document.createRange(); r.selectNodeContents(el); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); ok=document.execCommand('copy'); s.removeAllRanges(); }catch(e){}
+  if(!ok && navigator.clipboard){ navigator.clipboard.writeText(el.innerText); ok=true; }
+  var t=btn.textContent; btn.textContent=ok?'コピーしました':'長押しで選択してコピーしてください'; btn.classList.add('done');
+  setTimeout(function(){ btn.textContent=t; btn.classList.remove('done'); },1600);
+}
+document.querySelectorAll('[data-copy]').forEach(function(b){ b.addEventListener('click',function(){ copyEl(document.getElementById(b.getAttribute('data-copy')), b); }); });
+</script></body></html>
