@@ -1163,3 +1163,18 @@
     el('hero-title').textContent = '記事を読み込めませんでした。少し時間をおいて、ページを再読み込みしてください。';
   });
 })();
+
+/* 前回から新しい記事 (owner, 25 Nov 2026): this browser keeps only the time it last opened the top page;
+   on a later visit the top says how many articles came in since then. */
+(function(){try{
+  var k='gw_seen',now=Date.now(),seen=+localStorage.getItem(k)||0;localStorage.setItem(k,String(now));
+  if(!seen||now-seen<30*60*1000)return;
+  var el=document.getElementById('sitetimes'),news=document.getElementById('news');if(!el||!news)return;
+  var t=Object.values(JSON.parse(el.textContent)).map(function(x){return Date.parse(x)}).filter(function(x){return x>0});if(!t.length)return;
+  var n=t.filter(function(x){return x>seen}).length;if(!n)return;
+  var more=seen<Math.min.apply(null,t),d=new Date(seen),a=document.createElement('a');
+  a.className='gw-new';a.href='#news';a.setAttribute('data-track','click/top/new-since');
+  a.innerHTML='前回（'+(d.getMonth()+1)+'/'+d.getDate()+'）から、新しい記事が <b>'+n+(more?'本以上':'本')+'</b> 入りました ↓';
+  news.parentNode.insertBefore(a,news);
+  var c=0;(function g(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'return/new-since',title:'トップ：前回から新しい記事を表示',event:true})}catch(e){}return}if(++c<20)setTimeout(g,500)})();
+}catch(e){}})();
