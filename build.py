@@ -3964,7 +3964,7 @@ def build_gp_pages(flag_of, circuits):
                          'keywords': ['F1', x['gp'], 'ラップタイム', '順位', 'タイヤ', 'ピットストップ'],
                          'variableMeasured': ['周回ごとの順位', 'トップとの差（秒）', 'ラップタイム（秒）', 'タイヤの種類とスティント', 'ピットレーン通過時間（秒）', '最大計測速度（km/h）'],
                          'creator': {'@type': 'Organization', 'name': 'F1 Grid Walk', 'url': SITE + '/'},
-                         'isBasedOn': {'@type': 'Dataset', 'name': 'OpenF1', 'url': 'https://openf1.org/'}})
+                         'isBasedOn': {'@type': 'WebSite', 'name': 'OpenF1', 'url': 'https://openf1.org/'}})  # OpenF1 is a WebSite, not a nested Dataset: Google checked a nested one for a description (25 Nov 2026)
             og_d = rules_og(f'{slug}-data', f'{x["gp"]} 決勝を図で見る', 'DATA', '1周ごとの順位、トップとの差、ペース、タイヤ。名前を押して、ドライバーどうしを比べられる。',
                             f'{y} {x["gp"]}', rel=f'gp/{slug}/data/og.png', foot='レースを、数字と図で。')
             dch = write(f'gp/{slug}/data/index.html', page(
