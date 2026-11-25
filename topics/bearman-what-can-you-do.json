@@ -1,0 +1,406 @@
+{
+ "slug": "bearman-what-can-you-do",
+ "gp": "ラスベガスGP",
+ "title": "「ちょっと最悪だ。でも、どうしようもない」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "ラスベガスを最後尾から走ったハースのオリバー・ベアマンは、3点差で追ってくるアウディの邪魔をした。「僕たちだけでは、それができないから」「ぐるぐる回って、彼らが点を取らないように祈るだけ」「ちょっと最悪だ。でも、どうしようもない」。2027年の契約は、グリッドでただひとつ、まだ発表されていない。「言い訳のしようがない」。争点はお金だと、イタリアの記者は書いた。",
+ "checked": "2026-11-25",
+ "checkedNote": "PlanetF1、RacingNews365、Grande Prêmio、GPblog、F1公式サイト、RACER、Speedcafe、Autosport、The Race の原文を11月25日に確認しました。英語の言葉は編集部が訳しました。年俸が争点という話と、フェラーリが選択権を使ったという話は、Autosport のイタリア人記者の取材によるもので、ハースもフェラーリも認めていません。「アブダビの前に決着」も同じ記者の見込みで、ベアマン本人の要求ではありません（候補の段階では本人が期限を求めたように書きましたが、確認できませんでした）。アルピーヌとの接触は RacingNews365 の匿名情報で、両チームとも認めていません。木曜日の「第20戦だか」の言い回しは媒体で数字が違うため、本文では「この時期になっても」としました。11月19日の GPblog の「ハース、ベアマン残留を確認」という見出しは小松代表の言葉で、正式発表ではありません。800万ドルはイギリスのメディアの見積もりです。",
+ "common": [
+  "ラスベガス：35グリッド降格で22番、13位。「彼らの邪魔をしようとした」「サインツを先に行かせた」「僕たちだけではできない」「ぐるぐる回って祈るだけ」「ちょっと最悪だ。でも、どうしようもない」。アウディは11位と12位で0点、ハース31対アウディ28。",
+  "「シミュレーションではオーバーテイクの効果は小さい」「スリップストリームが信じられないくらい大きい」「1人になると時間を失う」「ゴーカートみたい」「ちょっとした冗談」。352回の追い抜き。",
+  "木曜日：「サインしないまま座っているのはかなり残念」「言い訳はない」「縁起を担いで言えば来年はハース」「残るに値する」「週末の終わりまでにいい知らせを」。小松「多くの関係者」「疑いはない。そうなる」「全員の考えはそろっている」。",
+  "Autosport（11/23）：年俸が争点、フェラーリは選択権を行使済みで障害ではない、アブダビ前の見込み、「残り2戦でまとまっていないのはいい気分じゃない」。RN365（11/21）：代理人とブリアトーレの接触（匿名、未確認）。本人「0%」。小松（10月）「まったくのナンセンス」。",
+  "21歳、2024年3月ジェッダ7位、7月ハースと複数年。23点13位、最高は中国5位。来年の相棒はカマラ。"
+ ],
+ "outlets": [
+  {
+   "id": "en-planetf1-bearman-slipstream-joke",
+   "angle": "ベアマン",
+   "adds": [
+    "「最悪だ」も同じ取材。"
+   ]
+  },
+  {
+   "id": "nl-rn365-bearman-haas-deadline",
+   "angle": "期限",
+   "adds": [
+    "「アブダビ前」は本人の要求として確認できず。Autosport の見込み。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-bearman-haas-gehalt",
+   "angle": "年俸",
+   "adds": [
+    "ハース、フェラーリは認めていない。"
+   ]
+  },
+  {
+   "id": "de-f1insider-bearman-haas-vertrag-geld",
+   "angle": "年俸",
+   "adds": [
+    "金額は不明。"
+   ]
+  },
+  {
+   "id": "pt-gp-bearman-haas-impasse-salarial",
+   "angle": "年俸",
+   "adds": [
+    "アルピーヌ移籍の「否定」は、本人の以前の「0%」。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-audi-haas-platz-sieben",
+   "angle": "7位争い",
+   "adds": [
+    "3点差。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "「最悪だ」「祈るだけ」「冗談」",
+   "w": "PlanetF1（11月24日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "「言い訳はない」「残るに値する」「いい知らせを」",
+   "w": "GPblog、F1公式サイト、RACER（11月19日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "小松「そうなる」",
+   "w": "GPblog、Speedcafe（11月19日、英語）を編集部が訳した。"
+  },
+  {
+   "t": "年俸とフェラーリの選択権",
+   "w": "Autosport（11月23日、英語）の記者の取材。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "「遅くともアブダビ前」",
+   "t": "本人の要求ではなく、Autosport の見込み。RN365 は「冬休みまでずれ込むかも」とも。"
+  },
+  {
+   "k": "アルピーヌ",
+   "t": "匿名情報で両チーム未確認。「否定」は本人の以前の「0%」。"
+  },
+  {
+   "k": "わざと後ろにいた",
+   "t": "本人は「前に居続けたわけじゃない」。邪魔をしてタイムを失わせた。"
+  }
+ ],
+ "unknownsFillable": [
+  "契約の発表。",
+  "カタールとアブダビのハースとアウディの7位争い。"
+ ],
+ "unknownsLimits": [
+  "年俸の金額と、両者の提示の差。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "「どうしようもない」は、何に向いているか？",
+  "rows": [
+   {
+    "k": "コースの上",
+    "t": "最後尾からでは、邪魔をすることしかできない。チームのために、それをやった。"
+   },
+   {
+    "k": "契約",
+    "t": "「僕の手を離れている」と言ってきた交渉。サインしない理由は、本人の口からは出ていない。"
+   },
+   {
+    "k": "レースの形",
+    "t": "スリップストリームが大きすぎて、1人で速く走る意味が薄い。「冗談」。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "ベアマンが「ゼロパーセント」と言った木曜日は？",
+   "rules": [
+    "contract-option"
+   ],
+   "links": [
+    "/topics/bearman-zero-per-cent/"
+   ]
+  },
+  {
+   "q": "来年の相棒カマラは、なぜF2を手放した？",
+   "rules": [
+    "academy-f2"
+   ],
+   "links": [
+    "/topics/camara-cycle-ends-sooner-than-expected/"
+   ]
+  },
+  {
+   "q": "ハースの小松代表の決め方は？",
+   "rules": [
+    "team-principal"
+   ],
+   "links": [
+    "/topics/komatsu-only-decision-i-could-make/"
+   ]
+  },
+  {
+   "q": "エンジンの基数とグリッド降格とは？",
+   "rules": [
+    "pu-allocation",
+    "grid-penalty"
+   ]
+  },
+  {
+   "q": "スリップストリームで1人だと損をするのはなぜ？",
+   "rules": [
+    "slipstream"
+   ]
+  }
+ ],
+ "todo": [
+  "契約の発表、7位争いの結果を追記"
+ ],
+ "updates": [
+  {
+   "at": "2026-11-24T12:00:00+00:00",
+   "t": "ベアマン「ちょっとした冗談だ」"
+  },
+  {
+   "at": "2026-11-25T15:18:00+09:00",
+   "t": "原文を確認し、STORYを公開"
+  }
+ ],
+ "answer": "ハースのオリバー・ベアマン（21）は、ラスベガスGPで35グリッド降格の最後尾から13位に入り、コンストラクターズ7位を3点差で争うアウディの邪魔をした。「僕たちだけではできない」「ぐるぐる回って、彼らが点を取らないように祈るだけ」「ちょっと最悪だ。でも、どうしようもない」。スリップストリーム頼みのレースは「ちょっとした冗談」。2027年の契約はグリッドで唯一未発表で、木曜日には「言い訳はない」「残るに値する」と話した。Autosport は争点が年俸で、フェラーリは障害ではないと伝えているが、両チームは認めていない。小松代表は「疑いはない。そうなる」。",
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "ラスベガスを最後尾から走ったハースのオリバー・ベアマンは、3点差で追ってくるアウディの邪魔をした。「僕たちだけでは、それができないから」「ぐるぐる回って、彼らが点を取らないように祈るだけ」「ちょっと最悪だ。でも、どうしようもない」。2027年の契約は、グリッドでただひとつ、まだ発表されていない。「言い訳のしようがない」。争点はお金だと、イタリアの記者は書いた。",
+  "body": [
+   [
+    "h",
+    "22番グリッドから"
+   ],
+   [
+    "p",
+    "ラスベガスで、フェラーリ育成からハースに来ているオリバー・ベアマンは最後尾の22番グリッドからスタートした。エンジン（内燃機関）、ターボ、排気系、MGU-K（減速の力を電気に変えて加速に使う装置）と、決められた数を超えて部品を替えたので、35グリッド降格。"
+   ],
+   [
+    "p",
+    "ハースはコンストラクターズ7位、31点。8位のアウディは28点で、3点差。7位と8位の違いは、F1から各チームに配られるお金で少なくとも800万ドルになる、とイギリスのメディアは書いている。"
+   ],
+   [
+    "p",
+    "最後尾のベアマンにできることは、限られていた。"
+   ],
+   [
+    "h",
+    "「ちょっと最悪だ」"
+   ],
+   [
+    "p",
+    "レースのあと、ベアマンはこう説明した。"
+   ],
+   [
+    "p",
+    "「とにかく、彼らの邪魔をしようとした。実際、そうした」。「彼らの前に居続けたわけじゃない。でも、少しタイムを失わせて、ウィリアムズのサインツを先に行かせることはできた。それが、僕たちがやるべきことだった」。"
+   ],
+   [
+    "p",
+    "「それが、僕にできる唯一のやり方だと思う。少し彼らの邪魔をすることが」。「僕たちだけでは、それができないから」。「だから、ぐるぐる回って、彼らが点を取らないように祈るだけ」。"
+   ],
+   [
+    "p",
+    "「ちょっと最悪だ。でも、どうしようもない」。"
+   ],
+   [
+    "p",
+    "ベアマンは13位。アウディのヒュルケンベルグとボルトレートは、その前の11位と12位。サインツが8位に入ったぶん、2台は入賞圏の外に押し出され、点は取れなかった。3点差のまま、残りはカタールとアブダビ。"
+   ],
+   [
+    "h",
+    "「ちょっとした冗談だ」"
+   ],
+   [
+    "p",
+    "レースそのものにも、ベアマンは厳しかった。352回の追い抜きがあった夜だ。"
+   ],
+   [
+    "p",
+    "「シミュレーションでは、オーバーテイクモード（追い抜き用の電気の上乗せ）の効果はとても小さい。でも、スリップストリームの効果が加わる。それが信じられないくらい大きい」。「正直に言うと、こういうレースをやっているのは少し残念だ。スリップストリームを失うと、毎周すごく時間を失うから、無駄になる。コースで1人になるだけで、たくさんのレースタイムを失う」。「予選でも見ただろう。みんなゴーカートみたいにいっせいにコースに出て、スリップストリームを取りに行く。ちょっとした冗談だよ、本当に」。"
+   ],
+   [
+    "h",
+    "「言い訳のしようがない」"
+   ],
+   [
+    "p",
+    "その2日前の木曜日、ベアマンは別のことでも、いらだちを隠さなかった。2027年の契約に、まだサインしていない。来年のグリッドで発表されていないのは、もう彼の席だけだ。"
+   ],
+   [
+    "p",
+    "「正直に言うと、この時期になっても来年の契約にサインしないままここに座っているのは、かなり残念だ」。「取り組んではいる。言えるのは、何も伝えられることがないままここに立っているのが、少し残念だということだけだ。言い訳のしようがないから」。「願いを込めて言えば、来年はハースで走るつもりだと伝えられる。それでも、正式じゃないのは、ただ寂しい」。「僕はハースに残るに値する。少なくとも、そう感じている」。「この週末の終わりまでに、いい知らせを伝えられるといい」。"
+   ],
+   [
+    "p",
+    "ハースの小松礼雄代表は、同じ日に言った。「もちろん、契約の状況には多くの関係者が関わっている」「彼が来季マシンに乗ることに、疑いはない。そうなる」「全員の考えはそろっている。オリー（ベアマン）はうちで走りたい。私たちはオリーに乗ってほしい」。"
+   ],
+   [
+    "p",
+    "週末が終わっても、いい知らせは来なかった。"
+   ],
+   [
+    "h",
+    "お金の話"
+   ],
+   [
+    "p",
+    "ラスベガスの翌日、イタリアの記者が伝えた。争点は、ハースが提示した年俸で、ベアマンの側はそれが期待を下回っていると見ている。フェラーリはすでに、ベアマンを自分の育成プログラムに残す選択権を使っていて、発表を止めているのはフェラーリではない。お金の折り合いは、アブダビの前につく見込み。いずれも、この記者の取材による話で、ハースとフェラーリは何も言っていない。"
+   ],
+   [
+    "p",
+    "同じ記事に、ベアマンのこんな言葉もある。「残り2戦になっても話がまとまっていないまま、ここに座っているのは、いい気分じゃない」。"
+   ],
+   [
+    "p",
+    "その2日前には、オランダのメディアが匿名の情報として、ベアマンの代理人がアルピーヌのアドバイザー、フラビオ・ブリアトーレと何度か会った、と報じている。どちらのチームも、認めていない。ベアマン本人は木曜日に、ハース以外で走る可能性を「ゼロ」と言っている。"
+   ],
+   [
+    "p",
+    "10月、年俸600万ユーロを求めているという報道に、小松代表は「まったくのナンセンス」と言った。"
+   ],
+   [
+    "h",
+    "ランキング13位、23点"
+   ],
+   [
+    "p",
+    "21歳。2024年3月、18歳でフェラーリの代役としてジェッダでデビューして7位。その年の7月にハースと複数年の契約を結んだ。今年は23点でランキング13位、最高は中国の5位。秋はオースティンで接触、メキシコで追突され、サンパウロでアンセーフリリース。ラスベガスでは最後尾から13位まで上がって、アウディの邪魔をした。"
+   ],
+   [
+    "p",
+    "来年のチームメイトは、ブラジル人のラファエル・カマラ。オコンが外れたあとの席で、F2の首位を手放してまで、ハースで残り2戦を走る21歳だ。"
+   ],
+   [
+    "p",
+    "「ちょっと最悪だ。でも、どうしようもない」。最後尾から、チームのためにできる唯一のことをした人が、自分の契約については、まだ「どうしようもない」側にいる。カタールの週末、アウディとの3点を守るのはチームの仕事だ。サインの日を決めるのは、本人だけではない。"
+   ]
+  ],
+  "terms": [
+   [
+    "パワーユニットの基数制限",
+    "pu-allocation"
+   ],
+   [
+    "グリッド降格",
+    "grid-penalty"
+   ],
+   [
+    "スリップストリーム",
+    "slipstream"
+   ],
+   [
+    "コンストラクターズ選手権",
+    "constructors-championship"
+   ],
+   [
+    "契約オプション",
+    "contract-option"
+   ],
+   [
+    "ドライバー市場",
+    "driver-market"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "PlanetF1",
+    "title": "Oliver Bearman: Las Vegas GP 'a bit of a joke', Haas situation",
+    "url": "https://www.planetf1.com/news/oliver-bearman-las-vegas-gp-joke-haas-situation",
+    "note": "2026年11月24日。「冗談」「最悪だ」。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Oliver Bearman names 'a bit sh*t' problem facing Haas in battle worth millions",
+    "url": "https://racingnews365.com/oliver-bearman-names-a-bit-sh-t-problem-facing-haas-in-battle-worth-millions",
+    "note": "2026年11月24日。アウディとの3点差。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "FIA Las Vegas Grand Prix 2026 penalty",
+    "url": "https://www.planetf1.com/news/fia-las-vegas-grand-prix-2026-penalty",
+    "note": "2026年11月20日。35グリッド降格。"
+   },
+   {
+    "name": "Grande Prêmio",
+    "title": "Las Vegas F1 starting grid 2026",
+    "url": "https://grandepremio.com/en/f1/las-vegas-f1-starting-grid-2026-full-22-driver-order-after-five-penalties/",
+    "note": "2026年11月21日。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Bearman loses patience over contract situation",
+    "url": "https://www.gpblog.com/en/news/bearman-loses-patience-over-contract-situation-as-haas-appears-poised-to-make-an-announcement",
+    "note": "2026年11月19日。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'There's no excuses for that' – Bearman frustrated by delay in confirming Haas future",
+    "url": "https://formula1.com/en/latest/article/theres-no-excuses-for-that-bearman-frustrated-by-delay-in-confirming-haas-future.3B6g2yqgJgf3g8UNtsYU5L",
+    "note": "2026年11月19日。"
+   },
+   {
+    "name": "RACER",
+    "title": "The missing piece in the F1 driver market puzzle",
+    "url": "https://racer.com/2026/11/19/the-missing-piece-in-the-f1-driver-market-puzzle",
+    "note": "2026年11月19日。「残るに値する」。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Haas confirms Bearman will stay for 2027",
+    "url": "https://www.gpblog.com/en/breaking-news/haas-confirms-bearman-will-stay-for-2027-as-camaras-teammate",
+    "note": "2026年11月19日。小松代表の言葉（発表ではない）。"
+   },
+   {
+    "name": "Speedcafe",
+    "title": "Oliver Bearman contract latest",
+    "url": "https://speedcafe.com/f1-news-2026-oliver-bearman-contract-latest-update-silly-season-reason-why-comments-future-ferrari-haas/",
+    "note": "2026年11月19日。"
+   },
+   {
+    "name": "Autosport",
+    "title": "Why Bearman's expected 2027 Haas F1 deal remains unsigned",
+    "url": "https://www.autosport.com/f1/news/why-bearmans-expected-2027-haas-f1-deal-remains-unsigned/10877066/",
+    "note": "2026年11月23日。年俸、フェラーリの選択権。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Oliver Bearman exploring shock move to F1 rival as Haas contract delay rumbles on",
+    "url": "https://racingnews365.com/oliver-bearman-exploring-shock-move-to-f1-rival-as-haas-contract-delay-rumbles-on",
+    "note": "2026年11月21日。アルピーヌとの接触（匿名情報）。"
+   },
+   {
+    "name": "The Race",
+    "title": "Ollie Bearman's strange Ferrari F1 contract situation",
+    "url": "https://www.the-race.com/formula-1/ollie-bearman-strange-ferrari-f1-contract-situation-2027/",
+    "note": "2026年11月19日。「0%」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'Absolute nonsense' – Komatsu refutes Bearman salary demand report",
+    "url": "https://www.formula1.com/en/latest/article/absolute-nonsense-komatsu-refutes-bearmans-salary-demand-is-the-reason-for-haas-contract-delay.68hjHnOBePhQXhTccJ5eJP",
+    "note": "2026年10月。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Bearman overjoyed by P5 finish in China",
+    "url": "https://www.formula1.com/en/latest/article/bearman-overjoyed-by-p5-finish-in-china-after-deer-in-the-headlights-scare.2Q5gywHm3hxtqzxWYJoskJ",
+    "note": "2026年3月。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Analysis: why Haas opted to sign Ollie Bearman",
+    "url": "https://www.formula1.com/en/latest/article/analysis-why-haas-opted-to-sign-ollie-bearman-and-who-will-partner-the.7BgSnxPNKxVzCRmGFSalJA",
+    "note": "2024年7月4日。"
+   }
+  ]
+ }
+}
