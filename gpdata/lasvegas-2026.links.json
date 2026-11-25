@@ -1,19 +1,64 @@
 {
-  "_note": "NEWS -> DATA (owner's instruction list, item 9): race news topics that get a link to the analysis page; drivers open already picked. Empty drivers = the page as it is.",
+  "_note": "NEWS -> DATA (owner's instruction list, item 9): race news topics that get a link to the analysis page; drivers open already picked. Empty drivers = the page as it is. A third item is the lap the story is about (from the news summaries); the page opens with that lap picked.",
   "topics": {
-    "lasvegas-race-verstappen-win": ["VER", "フェルスタッペン"],
-    "lasvegas-verstappen-mekies": ["VER", "フェルスタッペン"],
-    "mclaren-vegas-double-podium": ["NOR,PIA", "ノリスとピアストリ"],
-    "piastri-vegas-podium": ["PIA", "ピアストリ"],
-    "lasvegas-race-antonelli-battery": ["ANT", "アントネッリ"],
-    "russell-verstappen-vegas-clash": ["VER,RUS", "フェルスタッペンとラッセル"],
-    "ferrari-vegas-collision": ["HAM,LEC", "ハミルトンとルクレール"],
-    "ferrari-hamilton-leclerc-rift": ["HAM,LEC", "ハミルトンとルクレール"],
-    "ferrari-leclerc-internal-sanctions": ["LEC", "ルクレール"],
-    "alpine-vegas-gasly-heat": ["GAS", "ガスリー"],
-    "alpine-colapinto-season": ["COL", "コラピント"],
-    "lasvegas-sainz-alonso-spain": ["SAI,ALO", "サインツとアロンソ"],
-    "aston-honda-vegas-straights": ["ALO", "アロンソ"],
-    "lasvegas-energy-management": ["", ""]
+    "lasvegas-race-verstappen-win": [
+      "VER",
+      "フェルスタッペン"
+    ],
+    "lasvegas-verstappen-mekies": [
+      "VER",
+      "フェルスタッペン"
+    ],
+    "mclaren-vegas-double-podium": [
+      "NOR,PIA",
+      "ノリスとピアストリ",
+      43
+    ],
+    "piastri-vegas-podium": [
+      "PIA",
+      "ピアストリ"
+    ],
+    "lasvegas-race-antonelli-battery": [
+      "ANT",
+      "アントネッリ"
+    ],
+    "russell-verstappen-vegas-clash": [
+      "VER,RUS",
+      "フェルスタッペンとラッセル",
+      11
+    ],
+    "ferrari-vegas-collision": [
+      "HAM,LEC",
+      "ハミルトンとルクレール",
+      38
+    ],
+    "ferrari-hamilton-leclerc-rift": [
+      "HAM,LEC",
+      "ハミルトンとルクレール"
+    ],
+    "ferrari-leclerc-internal-sanctions": [
+      "LEC",
+      "ルクレール"
+    ],
+    "alpine-vegas-gasly-heat": [
+      "GAS",
+      "ガスリー"
+    ],
+    "alpine-colapinto-season": [
+      "COL",
+      "コラピント"
+    ],
+    "lasvegas-sainz-alonso-spain": [
+      "SAI,ALO",
+      "サインツとアロンソ"
+    ],
+    "aston-honda-vegas-straights": [
+      "ALO",
+      "アロンソ"
+    ],
+    "lasvegas-energy-management": [
+      "",
+      ""
+    ]
   }
 }

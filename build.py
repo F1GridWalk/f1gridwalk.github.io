@@ -1894,6 +1894,34 @@ def _rb_page(R, tid, kind, name, cat, al, short, inner, used, ld_term, desc_titl
     write(f'deep/rules/{tid}/index.html', page(desc_title, desc, url, body, head, og_image=og))
 
 
+GD_TERMS = {  # term pages that point to the newest race-analysis page, and what to look at there (owner, 25 Nov 2026)
+    **dict.fromkeys(['tyre-compounds', 'degradation', 'stint', 'tyre-cliff', 'pit-window', 'undercut', 'overcut', 'starting-tyre', 'used-tyres'], 'タイヤとスティント'),
+    **dict.fromkeys(['pit-stop', 'pit-lane', 'pit-loss', 'in-out-lap', 'sc-pit-stop'], 'ピットとタイヤ'),
+    **dict.fromkeys(['safety-car', 'safety-car-restart'], 'セーフティカーの前後の順位と差'),
+    **dict.fromkeys(['gap-interval', 'lapped-car'], 'トップとの差'),
+    **dict.fromkeys(['fastest-lap', 'flying-lap'], 'ラップタイム'),
+    'speed-trap': '最大計測速度', 'time-penalty': 'ペナルティのあった周',
+}
+
+
+def latest_gd(max_days=14):
+    """The newest race-analysis page within two weeks of its race: (slug, GP name, {katakana surname: code})."""
+    best = None
+    for slug, x in GPS.items():
+        f = os.path.join(ROOT, 'gpdata', f'{slug}.html')
+        if os.path.exists(f) and (best is None or x['date'] > best[1]['date']):
+            best = (slug, x, f)
+    if not best or (RUN_NOW - best[1]['date']).days > max_days:
+        return None
+    codes = dict((n, a) for a, n in re.findall(r'"a":"([A-Z]{3})","n":"([^"]+)"', open(best[2], encoding='utf-8').read()))
+    return best[0], best[1]['gp'], codes
+
+
+def gd_go(href, small, big, track):
+    return (f'<style>{GD_GO_CSS}</style><a class="gd-go" href="{href}" data-track="{track}"><small>{e(small)}</small>'
+            f'<b>{e(big)}</b><span>1周ごとの順位、トップとの差、ペース、タイヤ →</span></a>')
+
+
 def build_rules():
     if not RULES:
         return []
@@ -1927,6 +1955,9 @@ def build_rules():
             b += PU_TOOL.format(rows=rows) + PU_JS
         if not tid.startswith('circuit-'):  # circuit names come up in many hooks for other reasons
             b += rb_follow_box([x for x in _kw_names([t['term']] + t.get('aliases', [])) if len(x) >= 3], track=f'term/{tid}')
+        lg = latest_gd() if tid in GD_TERMS else None
+        if lg:
+            b += gd_go(f'/gp/{lg[0]}/data/', f'DATA · {lg[1]}の決勝で見る', f'{GD_TERMS[tid]}を図で見る', f'click/term/{tid}/gpdata')
         b += rb_news_box(f'「{t["term"]}」が出てくる最新ニュース', term_news(t, ALLARTS), f'term/{tid}/news')
         if t.get('rule'):
             b += f'<div class="rb-h">規則</div><span class="rb-rule">FIA {e(t["rule"])}</span>'
@@ -1984,6 +2015,10 @@ def build_rules():
                       + '<a style="display:inline-block;margin-top:8px;color:#FFEE9A;font-size:12.5px;font-weight:700" href="/drivers/engineers/" data-track="click/person/engineers">レースエンジニア一覧 →</a></div>')
         is_drv = 'ドライバー' in p.get('role', '') and 'エンジニア' not in p.get('role', '')
         b += rb_follow_box([p['name']] + [a for a in (p.get('aliases') or []) if len(a) >= 3], ppl_id=p['id'], track=f'person/{p["id"]}')
+        lg = latest_gd() if is_drv else None
+        code = next((c for n, c in (lg[2].items() if lg else []) if p['name'].endswith(n)), None)
+        if code:
+            b += gd_go(f'/gp/{lg[0]}/data/?drivers={code}', f'DATA · {lg[1]}の決勝', f'{p["name"]}のレースを図で見る', f'click/person/{p["id"]}/gpdata')
         if is_drv:
             b += driver_fan_block(p)  # fan page for drivers: news first, then the profile (owner, 27 Oct 2026)
         pn_ = [] if is_drv else [a for a in person_news(p, ALLARTS, n=20) if a.get('kind', 'news') in ('news', 'tech')][:5]
@@ -3815,9 +3850,11 @@ def gd_link(a):
     m = (load(f'gpdata/{slug}.links.json') or {}).get('topics') or {}
     if a.get('topic') not in m:
         return ''
-    codes, names = m[a['topic']]
-    q = f'?drivers={codes}' if codes else ''
-    lab = f'{names}をデータで見る' if names else 'このレースをデータで見る'
+    codes, names, *rest = m[a['topic']]
+    lap = rest[0] if rest else None  # the lap the story is about, so the page opens there (owner, 25 Nov 2026)
+    q = '&'.join(x for x in [f'drivers={codes}' if codes else '', f'lap={lap}' if lap else ''] if x)
+    q = '?' + q if q else ''
+    lab = f'{names}の{lap}周目をデータで見る' if names and lap else f'{names}をデータで見る' if names else 'このレースをデータで見る'
     return (f'<p class="ent-more"><a href="/gp/{slug}/data/{q}" data-track="click/news/gpdata">{e(lab)}（順位・ペース・タイヤ）→</a></p>')
 
 

@@ -1465,3 +1465,6 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .hubtop-all{align-self:flex-start;font-size:13.5px;font-weight:700;color:var(--clay);text-decoration:none;margin-top:2px}
 .hubtop-all:hover{text-decoration:underline}
 @media all{.hubtop-hook{font-size:14px;line-height:1.8}.hubtop{gap:8px}.hubtop-sub{font-size:12.5px}.hubtop-ans{font-size:13px;line-height:1.75}.hubtop-go{padding:9px 12px}.hubtop-go span{font-size:14px}}
+/* 前回から新しい記事 (owner, 25 Nov 2026) */
+.gw-new{display:block;margin:10px 0 12px;padding:11px 14px;border-radius:12px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:700;text-decoration:none}
+.gw-new b{font-size:17px;color:#FFEE9A}
