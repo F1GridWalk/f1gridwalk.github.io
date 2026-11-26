@@ -7,7 +7,7 @@ The race file (lab/page/races/<id>.json) holds only what a person chooses:
   name      "カタールGP"
   slug      "lusail-2026"            (the site's GP page: /gp/<slug>/)
   tz        3                        (local time offset from UTC, hours)
-  news      {"climb": [title, path], "pace": [...], "sc": [...]}   (DATA STORY links; leave out if none)
+  news      {"climb": [title, path], "drop": [...], "sc": [...], "grid": [...]}   (DATA STORY and qualifying links; leave out if none)
   ev        [[lap, "text"], ...]     (marks on the charts; the script prints candidates from race control)
   presets   [["チームメイト", [["HAM","LEC"], ...]], ["注目の対決", [...]]]   (optional: made from the result if left out)
   status    {"ALB": "dns"}           (optional: overrides; DNF/DNS/DSQ come from the OpenF1 result)
@@ -111,6 +111,19 @@ def main(data_path, race_path, out_path):
         if len(ok) >= 5:
             sec[a] = [round(st.median(l[k] for l in ok), 3) for k in ('s1', 's2', 's3')]
 
+    # qualifying (optional): <id>-Q.json beside the race file. [position, deciding time, 'Q3'|'Q2'|'Q1', gap to the best in that part]
+    qpath = data_path.replace('-R.json', '-Q.json')
+    Q = None
+    if qpath != data_path and os.path.exists(qpath):
+        Q = {}
+        for r in json.load(open(qpath)).get('result') or []:
+            q = r.get('q') if isinstance(r.get('q'), list) else [r.get('q')]
+            gp = r.get('gap') if isinstance(r.get('gap'), list) else [r.get('gap')]
+            k = max((i for i, v in enumerate(q) if v), default=None)
+            if r['d'] in abbrs:
+                g = gp[k] if k is not None and k < len(gp) else None
+                Q[r['d']] = [r.get('p'), q[k] if k is not None else None, f'Q{k + 1}' if k is not None else None, g if isinstance(g, (int, float)) else None]
+        print('qualifying:', qpath, len(Q), 'drivers')
     D = {'ev': f"{d['year']} {R['name']} 決勝", 'N': N, 'drivers': drivers,
          'lap': {a: [laps.get(a, {}).get(n, {}).get('t') for n in range(1, N + 1)] for a in abbrs},
          'pout': {a: [n for n, l in laps.get(a, {}).items() if l.get('pout')] for a in abbrs},
@@ -118,6 +131,8 @@ def main(data_path, race_path, out_path):
          'st': {a: [[s['c'], s['a'], s['b']] for s in d['stints'] if s['d'] == a] for a in abbrs},
          'sp': {a: [laps.get(a, {}).get(n, {}).get('st') for n in range(1, N + 1)] for a in abbrs},
          'sc': sc_main, 'scs': scs, 'G': G, 'sec': sec, 'X': X}
+    if Q:
+        D['Q'] = Q
 
     # status from the result; a person can override
     status = {}
