@@ -28,12 +28,29 @@ css = re.sub(r':root\{.*?\}', '', css, count=1, flags=re.S)
 css = re.sub(r'@media \(prefers-color-scheme:dark\)\{:root:not\(\[data-theme="light"\]\)\{.*?\}\}', '', css, flags=re.S)
 css = re.sub(r':root\[data-theme="dark"\]\{.*?\}', '', css, flags=re.S)
 css = re.sub(r'(^|\})\s*body(::before)?\{[^}]*\}', r'\1', css)
-out = []
-for rule in re.findall(r'([^{}]+)\{([^{}]*)\}', css):
-    sel, decl = rule[0].strip(), rule[1].strip()
-    if not sel:
-        continue
-    out.append(','.join('.gd ' + s.strip().replace('.wrap', '.gdw') for s in sel.split(',')) + '{' + decl + '}')
+def scope(block):
+    """Scope plain rules under .gd; keep @media / @keyframes blocks, scoping the rules inside @media (V14 brought these)."""
+    res, k = [], 0
+    while True:
+        o = block.find('{', k)
+        if o < 0:
+            return res
+        sel = block[k:o].strip()
+        depth, m = 1, o + 1
+        while depth:
+            depth += {'{': 1, '}': -1}.get(block[m], 0)
+            m += 1
+        body = block[o + 1:m - 1]
+        if sel.startswith('@media'):
+            res.append(sel + '{' + ''.join(scope(body)) + '}')
+        elif sel.startswith('@'):
+            res.append(sel + '{' + body + '}')
+        elif sel:
+            res.append(','.join('.gd ' + x.strip().replace('.wrap', '.gdw') for x in sel.split(',')) + '{' + body.strip() + '}')
+        k = m
+
+
+out = scope(css)
 # the page's own colours live on :root, because its script reads them from the root element (this style is on this page only)
 scoped = (':root{' + own + '}.gd{font-size:15px;line-height:1.65}'
           '@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){' + own_dark + '}}'
