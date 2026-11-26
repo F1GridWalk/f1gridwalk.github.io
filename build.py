@@ -3865,7 +3865,7 @@ function c(k,t){if(done[k])return;done[k]=1;var n=0;(function go(){if(window.goa
 if(/[?&]drivers=/.test(location.search))c('open-drivers','選んだ人のリンクで来た');
 if(/[?&]lap=/.test(location.search))c('open-lap','周を選んだリンクで来た');
 r.addEventListener('click',function(ev){var t=ev.target;if(!t.closest)return;
-if(t.closest('#lapPlay'))c('play','レースの再生');else if(t.closest('.evb'))c('event','できごとの▼');
+if(t.closest('#gapTabs'))c('gapzoom','差の拡大');else if(t.closest('#gQual'))c('qual','予選・グリッド・決勝の図');else if(t.closest('#lapPlay'))c('play','レースの再生');else if(t.closest('.evb'))c('event','できごとの▼');
 else if(t.closest('.lapctl')||t.closest('.lp')||(t.closest('#gPos,#gGap')&&!t.closest('.hit')))c('lap','周を選ぶ');
 else if(t.closest('summary'))c(/計算方法/.test(t.closest('summary').textContent)?'how':'table',/計算方法/.test(t.closest('summary').textContent)?'データと計算方法':'表で見る');
 else if(t.closest('.story'))c('story','DATA STORY');else if(t.closest('.pre button'))c('preset','組み合わせのボタン');
