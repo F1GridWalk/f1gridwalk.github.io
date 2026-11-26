@@ -10,6 +10,7 @@ The race file (lab/page/races/<id>.json) holds only what a person chooses:
   news      {"climb": [title, path], "drop": [...], "sc": [...], "grid": [...]}   (DATA STORY and qualifying links; leave out if none)
   ev        [[lap, "text"], ...]     (marks on the charts; the script prints candidates from race control)
   presets   [["チームメイト", [["HAM","LEC"], ...]], ["注目の対決", [...]]]   (optional: made from the result if left out)
+  story     [[title, text, "RUS", "gPos", "drop"], ...]   (optional: replaces the automatic DATA STORY cards)
   status    {"ALB": "dns"}           (optional: overrides; DNF/DNS/DSQ come from the OpenF1 result)
   updated   "2026-11-24T12:00:00+09:00"  (optional: only for data files fetched before the fetch time was saved)
 Everything else comes from the data. The page has the same shape as before
@@ -154,6 +155,8 @@ def main(data_path, race_path, out_path):
                 pairs.append(p)
         presets = [['チームメイト', pairs], ['注目の対決', [[drivers[0]['a'], drivers[1]['a']]]]]
     race = {'gp': f"/gp/{R['slug']}/", 'news': R.get('news') or {}, 'status': status, 'ev': R.get('ev') or [], 'presets': presets}
+    if R.get('story'):  # a person's DATA STORY in place of the automatic cards: [[title, text, abbr or '', chart id, news key], ...]
+        race['story'] = R['story']
 
     # dates: lap 2 starts about when the leader finished lap 1
     start = laps[win].get(2, laps[win].get(1, {})).get('ds') or d['positions'][0]['at']
