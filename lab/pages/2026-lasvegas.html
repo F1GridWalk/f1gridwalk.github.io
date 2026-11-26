@@ -65,13 +65,6 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 @keyframes flash{from{box-shadow:0 0 0 3px var(--clay)}to{box-shadow:0 0 0 0 transparent}}.lapbox.flash{animation:flash 1.2s ease-out}
 .lapw{margin:6px 0 2px}
 .tbl{overflow-x:auto}
-@media (max-width:420px){
- .sels{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}
- .sels select,.pre button,.tab,.evb,.story a,.story button,.how summary,.lapctl button{min-height:44px}
- .lapctl{gap:6px}.lapctl button{width:44px}.lapctl #lapPlay{min-width:56px}
- .tbl table{font-size:12.5px}.tbl th,.tbl td{padding:5px 4px}
-}
-@media (max-width:359px){.hi{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
 .kick{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--clay)}
 .story{display:grid;gap:8px;counter-reset:s;margin-top:6px}
 .story>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px 10px 42px;position:relative}
@@ -80,6 +73,13 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .story a,.story button{display:inline-block;font:inherit;font-size:12.5px;font-weight:700;color:var(--clay);background:none;border:0;padding:0;margin:6px 14px 0 0;cursor:pointer;text-decoration:underline}
 .sels{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px}.sels select{font:inherit;font-size:16px;width:100%;min-width:0;padding:8px 6px;border:2px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
 .pre{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:12px;color:var(--muted)}.pre button{font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer}
+@media (max-width:420px){
+ .sels{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}
+ .sels select,.pre button,.tab,.evb,.story a,.story button,.how summary,.lapctl button{min-height:44px}
+ .lapctl{gap:6px}.lapctl button{width:44px}.lapctl #lapPlay{min-width:56px}
+ .tbl table{font-size:12.5px}.tbl th,.tbl td{padding:5px 4px}
+}
+@media (max-width:359px){.hi{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
 </style>
 <div class="wrap">
 <span class="lab">LAB · 非公開の試作</span>
@@ -125,8 +125,8 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 
 <section><h2>スティント中のラップタイム変化</h2><p class="q">いちばん長く使ったタイヤで、10周あたりタイムがどう変わったか。棒が左に長いほど、周を重ねて速くなった。</p>
 <div class="box"><svg id="gDeg" role="img" aria-label="全員のタイムの変わり方"></svg></div>
-<p class="tip">色はタイヤの種類。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は、計算に使った周。※は12周より少ない参考値。</p>
-<details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>タイヤ</th><th>10周あたり</th><th>使った周</th></tr></thead><tbody id="degTb"></tbody></table></details></section>
+<p class="tip">色はタイヤの種類。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は計算に使った周。その右の「小・中」は、線のまわりでタイムがどれだけ散らばったか（ばらつき。小：±0.25秒未満、中：±0.5秒未満）。使った周が12周より少ないか、ばらつきが大きいものは「参考」として下にまとめ、薄く描いています。</p>
+<details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>タイヤ</th><th>10周あたり</th><th>使った周</th><th>ばらつき</th></tr></thead><tbody id="degTb"></tbody></table></details></section>
 
 <section id="qualSec" hidden><h2>予選・グリッド・決勝</h2><p class="q">左から予選の順位、スタートの位置（グリッド）、決勝の順位。</p>
 <div class="box"><svg id="gQual" role="img" aria-label="全員の予選・グリッド・決勝の順位"></svg></div>
@@ -144,7 +144,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 <li>スティント中のラップタイム変化：いちばん長いスティントで、上と同じ条件の周に直線をあてはめた傾き（10周あたり）。8周以上あるスティントだけ。</li>
 <li>ピットレーン通過時間：ピットレーンに入ってから出るまでの時間。</li>
 <li>最大計測速度：スピードトラップの計測値のうち、レース中の最大。</li>
-<li>レース中のできごと（▼）：レースコントロールの記録から。</li>
+<li>主なレース中のできごと（▼）：レースコントロールの記録などから、このページで大事なものを選んで載せています。全部ではありません。</li>
 </ul></details>
 <p class="foot">データ：OpenF1（F1 のタイミングをもとにした非公式の公開データ）から自動で取得。順位の流れは、各周でコントロールラインを通った順番（タイミングの記録から計算）。「→◯位」はタイミングの最終値で、正式結果と違うことがあります。ピットの時間はピットレーンを通った時間。この試作は本サイトには載っていません。</p>
 </div>
@@ -159,15 +159,22 @@ const css=k=>getComputedStyle(document.documentElement).getPropertyValue(k).trim
 const by={};D.drivers.forEach(d=>by[d.a]=d);
 const fmt=s=>{if(s==null||!isFinite(s))return'—';const m=Math.floor(s/60),r=(s-m*60).toFixed(3);return m?`${m}:${r.padStart(6,'0')}`:r;};
 const median=a=>{const b=a.slice().sort((x,y)=>x-y),n=b.length;return n?(n%2?b[(n-1)/2]:(b[n/2-1]+b[n/2])/2):null;};
-function clean(a){const L=D.lap[a],pin=new Set(D.pit[a].map(p=>p[0])),po=new Set(D.pout[a]);
-  const raw=L.map((t,i)=>(i===0||t==null||pin.has(i+1)||po.has(i+1)||inSC(i+1,1))?null:t),m=median(raw.filter(x=>x!=null));
-  return raw.map(t=>t!=null&&m&&t>m*1.05?null:t);}
+// laps that can be compared at all: not lap 1, not a pit in/out lap, not under (or just after) a safety car, not missing
+function baseClean(a){const L=D.lap[a],pin=new Set(D.pit[a].map(p=>p[0])),po=new Set(D.pout[a]);
+  return L.map((t,i)=>(i===0||t==null||pin.has(i+1)||po.has(i+1)||inSC(i+1,1))?null:t);}
+const tyreAt=(a,n)=>{const q=D.st[a].find(q=>q[1]<=n&&n<=q[2]);return q?q[0]:null;};
+// slow laps (traffic, a mistake) are judged against the same tyre's laps: median + 3 x robust spread, at least 1 s
+function paceClean(a,c){const b=baseClean(a),grp={};b.forEach((t,i)=>{if(t==null)return;const k=tyreAt(a,i+1)||'?';(grp[k]=grp[k]||[]).push(t);});
+  const lim={};for(const k in grp){const m=median(grp[k]),mad=median(grp[k].map(t=>Math.abs(t-m)));lim[k]=m+Math.max(1,3*1.4826*mad);}
+  return b.map((t,i)=>{if(t==null)return null;const k=tyreAt(a,i+1)||'?';if(c&&c!=='ALL'&&k!==c)return null;return t>lim[k]?null:t;});}
+// within one stint, a lap is dropped only if it is far from the stint's own trend, so a real slowdown stays in
+function stintClean(a,s0,s1){const b=baseClean(a),xs=[],ys=[];for(let n=s0;n<=s1;n++){const t=b[n-1];if(t!=null){xs.push(n);ys.push(t);}}
+  const fit=(X,Y)=>{const mx=X.reduce((p,q)=>p+q,0)/X.length,my=Y.reduce((p,q)=>p+q,0)/Y.length;let u=0,v=0;X.forEach((x,i)=>{u+=(x-mx)*(Y[i]-my);v+=(x-mx)*(x-mx);});const k=v?u/v:0;return {k,c:my-k*mx};};
+  if(xs.length<3)return {xs,ys};const f=fit(xs,ys),r=ys.map((y,i)=>y-(f.c+f.k*xs[i])),mr=median(r.map(Math.abs)),cut=Math.max(1,3*1.4826*mr);
+  const X=[],Y=[];xs.forEach((x,i)=>{if(Math.abs(r[i])<=cut){X.push(x);Y.push(ys[i]);}});return {xs:X,ys:Y,fit};}
+const clean=a=>paceClean(a,'ALL');
 const S={};D.drivers.forEach(d=>{const c=clean(d.a).filter(v=>v!=null),sp=D.sp[d.a].filter(v=>v!=null),done=D.lap[d.a].filter(v=>v!=null).length;
   S[d.a]={med:median(c),best:Math.min(...D.lap[d.a].filter((v,i)=>v!=null&&i>0)),top:sp.length?Math.max(...sp):null,laps:done,out:!d.f||done<D.N-1};});
-// lap-by-lap order from each driver's running total (a missing lap time takes that lap's middle time of the field); retired drivers stop at their last lap
-const PL={};{const fill=[...Array(D.N)].map((_,i)=>median(D.drivers.map(d=>D.lap[d.a][i]).filter(v=>v!=null)));
-  const tot={};D.drivers.forEach(d=>{let s=0;tot[d.a]=[];const last=S[d.a].laps;for(let i=0;i<D.N;i++){if(S[d.a].out&&i>=last)break;s+=D.lap[d.a][i]??fill[i];tot[d.a].push(s);}PL[d.a]=[];});
-  for(let i=0;i<D.N;i++){D.drivers.filter(d=>tot[d.a].length>i).sort((x,y)=>tot[x.a][i]-tot[y.a][i]).forEach((d,k)=>PL[d.a][i]=k+1);}}
 // teammates: the second of a team gets a dashed line
 const dash={};{const seen={};D.drivers.forEach(d=>{dash[d.a]=!!seen[d.t];seen[d.t]=1;});}
 let sel=[],posMode='slope';try{sel=(new URLSearchParams(location.search).get('drivers')||'').split(',').filter((a,i,l)=>D.drivers.some(d=>d.a===a)&&l.indexOf(a)===i).slice(0,3);}catch(e){}
@@ -177,14 +184,17 @@ function setLap(n){LAP=n==null?null:Math.max(1,Math.min(D.N,Math.round(n)));upda
 // each chart keeps one cursor line; updateLap() only moves it
 function lapMark(svg,xf,y0,y1){svg._lap={xf,ln:el('line',{y1:y0,y2:y1,stroke:css('--ink'),'stroke-width':1.5,'pointer-events':'none',class:'lapcur'},svg)};moveCur(svg);}
 function moveCur(svg){const o=svg._lap;if(!o||!o.ln.isConnected)return;if(LAP==null){o.ln.setAttribute('visibility','hidden');return;}const v=o.xf(LAP);o.ln.setAttribute('x1',v);o.ln.setAttribute('x2',v);o.ln.setAttribute('visibility','visible');}
-function updateLap(){syncUrl();drawBar();barLap();drawLap();document.querySelectorAll('svg').forEach(moveCur);}
+function updateLap(){if(!PT)syncUrl();const bl=document.getElementById('bLap');if(LAP!=null&&bl)bl.textContent=`L${LAP} ×`;else{drawBar();barLap();}
+  drawLap();document.querySelectorAll('svg').forEach(moveCur);}
+function stopPlay(){if(!PT)return;clearInterval(PT);PT=null;updateLap();}
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlay();});
 [['gPos',24,126,0],['gGap',34,100,1]].forEach(([id,L,R,one])=>{const svg=document.getElementById(id);svg.addEventListener('click',ev=>{const r=svg.getBoundingClientRect(),w=W(id),px=(ev.clientX-r.left)/r.width*w;if(px<L-4||px>w-R+2)return;
   if(ev.target.closest('.hit')){skipPick=true;setTimeout(()=>{skipPick=false;},0);}setLap(one?1+(px-L)/(w-L-R)*(D.N-1):(px-L)/(w-L-R)*D.N);},true);});
 {const r=document.getElementById('lapR');r.max=D.N;r.addEventListener('input',()=>setLap(+r.value));document.getElementById('lapPrev').onclick=()=>setLap((LAP==null?2:LAP)-1);document.getElementById('lapNext').onclick=()=>setLap((LAP==null?0:LAP)+1);}
 let PT=null,lapAll=false;const DS=['','6 4','2 3'];
-document.getElementById('lapPlay').onclick=()=>{if(PT){clearInterval(PT);PT=null;updateLap();return;}if(LAP==null||LAP>=D.N)LAP=0;PT=setInterval(()=>{if(LAP>=D.N){clearInterval(PT);PT=null;updateLap();return;}setLap(LAP+1);},450);setLap(LAP+1);};
+document.getElementById('lapPlay').onclick=()=>{if(PT){stopPlay();return;}if(LAP==null||LAP>=D.N)LAP=0;PT=setInterval(()=>{if(LAP>=D.N){stopPlay();return;}setLap(LAP+1);},450);setLap(LAP+1);};
 function drawResTbl(){document.getElementById('resTb').innerHTML=D.drivers.map(d=>{const st=stOf(d.a),cl=d.f&&!S[d.a].out;return `<tr><td>${cl?d.f+(st==='dnf'?'（DNF）':''):stTag(d.a)}</td><td>${d.n}</td><td>${d.t}</td><td>${d.g}</td><td>${cl?(d.g-d.f>0?'+':'')+(d.g-d.f):'—'}</td></tr>`;}).join('');}
-function drawDegTbl(){const jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};document.getElementById('degTb').innerHTML=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort((p,q)=>p.g.v-q.g.v).map((o,i)=>`<tr><td>${i+1}</td><td>${o.d.n}</td><td>${jp[o.g.cp]||o.g.cp}</td><td>${(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)}秒</td><td>${o.g.n}周${o.g.n<12?'※':''}</td></tr>`).join('');}
+function drawDegTbl(){const jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};document.getElementById('degTb').innerHTML=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort).map((o,i)=>`<tr><td>${o.g.ref?'参考':i+1}</td><td>${o.d.n}</td><td>${jp[o.g.cp]||o.g.cp}</td><td>${(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)}秒</td><td>${o.g.n}周</td><td>${o.g.spread}（±${o.g.sd.toFixed(2)}秒）</td></tr>`).join('');}
 let gapMax=80;
 function drawTabs(){const at=[10,20,30,40,D.N].filter((v,i,l)=>v<=D.N&&l.indexOf(v)===i);
   const head=`<thead><tr><th></th><th>ドライバー</th>${at.map(n=>`<th>${n}周</th>`).join('')}</tr></thead>`;
@@ -262,7 +272,7 @@ function drawLapPos(){const svg=document.getElementById('gPos');svg.innerHTML=''
     g.addEventListener('click',()=>pick(a));});}
 let paceC='ALL';
 // median of the clean laps, all of them or only on one tyre; a tyre needs 5 clean laps
-function paceMap(){const out={};D.drivers.forEach(d=>{const a=d.a;if(paceC==='ALL'){if(S[a].med!=null&&S[a].laps>=25)out[a]={v:S[a].med,n:clean(a).filter(v=>v!=null).length};return;}
+function paceMap(){const out={};D.drivers.forEach(d=>{const a=d.a;if(paceC==='ALL'){const n=clean(a).filter(v=>v!=null).length;if(S[a].med!=null&&n>=15)out[a]={v:S[a].med,n};return;}
   const c=clean(a),xs=[];D.st[a].forEach(([cp,s0,s1])=>{if(cp!==paceC)return;for(let n=s0;n<=s1;n++)if(c[n-1]!=null)xs.push(c[n-1]);});if(xs.length>=5)out[a]={v:median(xs),n:xs.length};});return out;}
 function paceTabs(){const jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'},used=['SOFT','MEDIUM','HARD','INTERMEDIATE','WET'].filter(c=>D.drivers.some(d=>D.st[d.a].some(q=>q[0]===c)));
   const t=document.getElementById('paceTabs');t.innerHTML=[['ALL','全体']].concat(used.map(c=>[c,jp[c]])).map(([c,l])=>`<button type="button" class="tab" aria-pressed="${paceC===c}" data-c="${c}">${l}</button>`).join('');t.querySelectorAll('button').forEach(b=>b.onclick=()=>{paceC=b.dataset.c;drawPace();drawPaceTbl();});}
@@ -274,9 +284,9 @@ function drawPace(){paceTabs();const svg=document.getElementById('gPace');svg.in
     el('rect',{x:0,y:yy,width:w,height:rowH,fill:'transparent'},g);
     const t=el('text',{x:L-6,y:yy+15,'text-anchor':'end','font-size':12,'font-weight':sel.includes(a)?700:500,fill:css('--ink')},g);t.textContent=d.n;
     el('rect',{x:L,y:yy+5,width:Math.max(4,bx(PM[a].v)-L),height:12,rx:3,fill:d.c},g);
-    const v=el('text',{x:Math.max(L+4,bx(PM[a].v))+6,y:yy+15,'font-size':11.5,fill:css('--muted')},g);v.textContent=(i?'+'+(PM[a].v-best).toFixed(2)+'秒':fmt(best)+' 最速')+(paceC==='ALL'?'':` ${PM[a].n}周`);
+    const v=el('text',{x:Math.max(L+4,bx(PM[a].v))+6,y:yy+15,'font-size':11.5,fill:css('--muted')},g);v.textContent=(i?'+'+(PM[a].v-best).toFixed(2)+'秒':fmt(best)+' 最速')+(paceC==='ALL'?'':` ${PM[a].n}周`+(PM[a].n<8?'・参考':''));
     g.addEventListener('click',()=>pick(a));});
-  const t=el('text',{x:L,y:h-4,'font-size':10,fill:css('--muted')},svg);t.textContent=paceC==='ALL'?`${ds.length}人（25周以上走った人）`:`${ds.length}人（このタイヤで5周以上）`;}
+  const t=el('text',{x:L,y:h-4,'font-size':10,fill:css('--muted')},svg);t.textContent=paceC==='ALL'?`${ds.length}人（計算に使えた周が15周以上の人）`:`${ds.length}人（このタイヤで5周以上。8周より少ない人は参考）`;}
 function drawTyre(){const svg=document.getElementById('gTyre');svg.innerHTML='';const col={SOFT:css('--soft'),MEDIUM:css('--medium'),HARD:css('--hard'),INTERMEDIATE:css('--inter'),WET:css('--wet')};
   const w=W('gTyre'),L=112,R=10,T=4,rowH=19,n=D.drivers.length,h=T+rowH*n+20,x=i=>L+(w-L-R)*i/D.N;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
   (D.scs||[]).forEach(([s0,s1,k])=>el('rect',{x:x(s0-1),y:0,width:x(s1)-x(s0-1),height:h-18,fill:css('--sc'),opacity:k==='VSC'?.25:.45},svg));lapMark(svg,n=>x(n-.5),0,h-18);
@@ -290,7 +300,7 @@ function drawTyre(){const svg=document.getElementById('gTyre');svg.innerHTML='';
 function drawCmp(){const box=document.getElementById('cmp');
   if(sel.length<1){box.innerHTML='<div class="empty">上の図で名前を押すと、ここで比べられます（3人まで）。<br><button type="button" id="ex">例：'+exName()+'を比べる</button></div>';document.getElementById('ex').onclick=()=>{sel=exPair();draw();};return;}
   const a=sel[0],b=sel[1];const card=(k,v,s)=>`<div class="card"><small>${k}</small><b>${v}</b><span>${s||''}</span></div>`;
-  let h='<div class="cards">'+sel.map(x=>card(by[x].n,(by[x].f&&!S[x].out?by[x].f+'位'+(stOf(x)==='dnf'?'（DNF）':''):stName(x)),`${by[x].g}番手から<br>代表ペース ${fmt(S[x].med)}<br>最大計測速度 ${S[x].top??'—'} km/h<br>最速ラップ ${fmt(S[x].best)}<br>ピット ${D.pit[x].length}回・最長スティント ${D.st[x].length?Math.max(...D.st[x].map(s=>s[2]-s[1]+1)):0}周`)).join('')+'</div>';
+  let h='<div class="cards">'+sel.map(x=>card(by[x].n,(by[x].f&&!S[x].out?by[x].f+'位'+(stOf(x)==='dnf'?'（DNF）':''):stName(x)),`${by[x].g}番手から<br>全体の代表ペース ${fmt(S[x].med)}<br>最大計測速度 ${S[x].top??'—'} km/h<br>最速ラップ ${fmt(S[x].best)}<br>ピット ${D.pit[x].length}回・最長スティント ${D.st[x].length?Math.max(...D.st[x].map(s=>s[2]-s[1]+1)):0}周`)).join('')+'</div>';
   if(b){const dm=S[b].med-S[a].med;h+=`<p class="q" style="margin-top:10px">代表ペースは<b style="color:var(--ink)">${dm>0?by[a].n:by[b].n}が${Math.abs(dm).toFixed(2)}秒速い</b>。</p>`;}
   h+='<div class="box" style="margin-top:8px"><svg id="gLap" role="img" aria-label="選んだ人のラップタイム"></svg></div><div class="legend" id="lapLeg"></div><p class="tip">1周ごとのタイム。上にいくほど速い。黄色はセーフティカー。線が切れている周は、ピットの出入りなどで外した周。</p>';
   box.innerHTML=h;document.getElementById('lapLeg').innerHTML=sel.map(s=>{const dd=DS[sel.indexOf(s)];return `<span><svg width="26" height="10" style="display:inline;vertical-align:0"><line x1="1" y1="5" x2="25" y2="5" stroke="${by[s].c}" stroke-width="3" ${dd?`stroke-dasharray="${dd}"`:''}/></svg> ${by[s].n}</span>`;}).join('');const svg=document.getElementById('gLap'),w=W('gLap'),L=50,R=10,T=10,B=24,hh=230;svg.setAttribute('viewBox',`0 0 ${w} ${hh}`);
@@ -304,7 +314,7 @@ function drawCmp(){const box=document.getElementById('cmp');
     c.forEach((v,i)=>{if(v!=null)el('circle',{cx:x(i+1),cy:y(v),r:2,fill:by[s].c},svg);});});}
 const stOf=a=>(RACE.status||{})[a]||(S[a].out?'dnf':'fin'),stTag=a=>({dnf:'DNF',dns:'DNS',dsq:'DSQ',nc:'NC'})[stOf(a)]||'×',stName=a=>({dnf:'DNF（リタイア）',dns:'DNS（出走せず）',dsq:'DSQ（失格）',nc:'NC（完走扱いなし）'})[stOf(a)]||'—';
 function drawPaceTbl(){const PM=paceMap(),ds=D.drivers.filter(d=>PM[d.a]).sort((a,b)=>PM[a.a].v-PM[b.a].v),best=ds.length?PM[ds[0].a].v:0;
-  document.getElementById('paceTb').innerHTML=ds.map((d,i)=>`<tr><td>${i+1}</td><td>${d.n}</td><td>${fmt(PM[d.a].v)}</td><td>${i?'+'+(PM[d.a].v-best).toFixed(3):'—'}</td><td>${PM[d.a].n}周</td></tr>`).join('');}
+  document.getElementById('paceTb').innerHTML=ds.map((d,i)=>`<tr><td>${i+1}</td><td>${d.n}</td><td>${fmt(PM[d.a].v)}</td><td>${i?'+'+(PM[d.a].v-best).toFixed(3):'—'}</td><td>${PM[d.a].n}周${paceC!=='ALL'&&PM[d.a].n<8?'（参考）':''}</td></tr>`).join('');}
 function drawBar(){const b=document.getElementById('bar');b.innerHTML=sel.map(a=>`<button type="button" class="chip" style="border-color:${by[a].c}" data-a="${a}" aria-label="${by[a].n}を外す">${a}</button>`).join('')+(sel.length?'<span class="sep"></span>':'')+[['順位','gPos'],['差','gGap'],['ペース','gPace'],['タイヤ','gTyre'],['比較','cmpSec']].map(([t,g])=>`<button type="button" class="nav" data-g="${g}">${t}</button>`).join('')+(sel.length?'<span class="sep"></span><button type="button" class="clear" id="cpy">リンクをコピー</button><button type="button" class="clear" id="clr">全員に戻す</button>':'');
   b.querySelectorAll('.nav').forEach(n=>n.onclick=()=>document.getElementById(n.dataset.g).scrollIntoView({behavior:'smooth',block:n.dataset.g==='cmpSec'?'start':'center'}));
   const cy=document.getElementById('cpy');if(cy)cy.onclick=()=>{try{navigator.clipboard.writeText(location.href).then(()=>{cy.textContent='コピーしました';}).catch(()=>{});}catch(e){}};
@@ -363,17 +373,21 @@ function drawGap(){const svg=document.getElementById('gGap');svg.innerHTML='';co
     else if(e.v<=MAX){el('circle',{cx:x(e.li+1),cy:y(e.v),r:3,fill:d.c,opacity:op},g);const t=el('text',{x:x(e.li+1)+5,y:y(e.v)-5,'font-size':10.5,fill:css('--ink'),opacity:op},g);t.textContent=d.n+' '+stTag(a);}
     const f0=D.G[a].findIndex(v=>v!=null);if(MAX>=80&&f0>=0&&D.G[a][f0]>MAX){const k=D.G[a].findIndex(v=>v!=null&&v<=MAX);if(k>0){const t=el('text',{x:x(k+1)+4,y:h-B-5,'font-size':10,'font-weight':on?700:500,fill:css('--ink'),opacity:op},g);t.textContent='↑'+d.n+'（ここまで図の外）';}}
     g.addEventListener('click',()=>pick(a));});}
-function degOf(a){const c=clean(a);let best=null;D.st[a].forEach(([cp,s0,s1])=>{const xs=[],ys=[];for(let n=s0;n<=s1;n++){const t=c[n-1];if(t!=null){xs.push(n);ys.push(t);}}
-    if(xs.length>=8&&(!best||xs.length>best.n)){const mx=xs.reduce((p,q)=>p+q)/xs.length,my=ys.reduce((p,q)=>p+q)/ys.length;let u=0,v=0;xs.forEach((X,i)=>{u+=(X-mx)*(ys[i]-my);v+=(X-mx)*(X-mx);});best={n:xs.length,cp,len:s1-s0+1,v:u/v*10};}});return best;}
+// slope per 10 laps on the longest stint, with how much the laps scatter around the line (residual spread)
+function degOf(a){let best=null;D.st[a].forEach(([cp,s0,s1])=>{const {xs,ys}=stintClean(a,s0,s1);
+    if(xs.length>=8&&(!best||xs.length>best.n)){const mx=xs.reduce((p,q)=>p+q)/xs.length,my=ys.reduce((p,q)=>p+q)/ys.length;let u=0,v=0;xs.forEach((X,i)=>{u+=(X-mx)*(ys[i]-my);v+=(X-mx)*(X-mx);});const k=u/v,c0=my-k*mx;
+      const sd=1.4826*median(ys.map((y,i)=>Math.abs(y-(c0+k*xs[i])))),spread=sd<.25?'小':sd<.5?'中':'大';best={n:xs.length,cp,len:s1-s0+1,v:k*10,sd,spread,ref:xs.length<12||spread==='大'};}});return best;}
+const degSort=(p,q)=>(p.g.ref-q.g.ref)||(p.g.v-q.g.v);
 function drawDeg(){const svg=document.getElementById('gDeg');svg.innerHTML='';const col={SOFT:css('--soft'),MEDIUM:css('--medium'),HARD:css('--hard'),INTERMEDIATE:css('--inter'),WET:css('--wet')},jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};
-  const ds=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort((p,q)=>p.g.v-q.g.v);const w=W('gDeg'),L=112,R=134,T=18,rowH=22,h=T+rowH*ds.length+4;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+  const ds=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort);const w=W('gDeg'),L=112,R=150,T=18,rowH=22,h=T+rowH*ds.length+4;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
   const lo=Math.min(0,...ds.map(o=>o.g.v)),hi=Math.max(0,...ds.map(o=>o.g.v)),bx=v=>L+4+(w-L-R-8)*(v-lo)/Math.max(.2,hi-lo);
   const hd=el('text',{x:bx(0),y:11,'text-anchor':hi>0?'middle':'end','font-size':10,fill:css('--muted')},svg);hd.textContent='← 速くなった　0';
   el('line',{x1:bx(0),x2:bx(0),y1:T-2,y2:h-2,stroke:css('--muted'),'stroke-width':1},svg);
-  ds.forEach((o,i)=>{const d=o.d,a=d.a,yy=T+i*rowH,op=dim(a)?.25:1,g=el('g',{class:'hit',opacity:op},svg);
+  const r0=ds.findIndex(o=>o.g.ref);if(r0>0)el('line',{x1:0,x2:w,y1:T+r0*rowH-1,y2:T+r0*rowH-1,stroke:css('--line'),'stroke-dasharray':'3 3'},svg);
+  ds.forEach((o,i)=>{const d=o.d,a=d.a,yy=T+i*rowH,op=(dim(a)?.25:1)*(o.g.ref?.55:1),g=el('g',{class:'hit',opacity:op},svg);
     el('rect',{x:0,y:yy,width:w,height:rowH,fill:'transparent'},g);const t=el('text',{x:L-6,y:yy+15,'text-anchor':'end','font-size':12,'font-weight':sel.includes(a)?700:500,fill:css('--ink')},g);t.textContent=d.n;
     const x0=Math.min(bx(0),bx(o.g.v)),bw=Math.max(3,Math.abs(bx(o.g.v)-bx(0)));el('rect',{x:x0,y:yy+5,width:bw,height:12,rx:3,fill:col[o.g.cp]||css('--muted')},g);
-    const v=el('text',{x:w-R+8,y:yy+15,'font-size':11,fill:css('--muted')},g);v.textContent=(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)+'秒 '+(jp[o.g.cp]||o.g.cp)+o.g.n+'周'+(o.g.n<12?'※':'');
+    const v=el('text',{x:w-R+6,y:yy+15,'font-size':10.5,fill:css('--muted')},g);v.textContent=(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)+'秒 '+(jp[o.g.cp]||o.g.cp)+o.g.n+'周 '+(o.g.ref?'参考':o.g.spread);
     g.addEventListener('click',()=>pick(a));});}
 function drawDuel(){const box=document.getElementById('duel');if(sel.length<2){box.innerHTML='';return;}const a=sel[0],b=sel[1],A=by[a],B=by[b],ca=A.c,cb=A.c===B.c?css('--muted'):B.c;
   const c1=clean(a),c2=clean(b);let wa=0,wb=0;for(let i=0;i<D.N;i++){if(c1[i]!=null&&c2[i]!=null){if(c1[i]<c2[i])wa++;else if(c2[i]<c1[i])wb++;}}
