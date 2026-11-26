@@ -47,6 +47,7 @@ if 'laps' not in out:
     ses = [x for x in get(f'https://api.openf1.org/v1/sessions?year={year}&session_name=' + {'R': 'Race', 'Q': 'Qualifying', 'S': 'Sprint', 'SQ': 'Sprint Qualifying'}.get(kind, 'Race')) if gp.lower().replace(' ', '') in (x.get('location', '') + x.get('circuit_short_name', '') + x.get('country_name', '')).lower().replace(' ', '')]
     print('OpenF1 sessions:', [(x.get('session_key'), x.get('location')) for x in ses])
     sk = ses[-1]['session_key']
+    out['session_key'] = sk
     drv = get(f'https://api.openf1.org/v1/drivers?session_key={sk}')
     out['drivers'] = [{'abbr': d['name_acronym'], 'num': str(d['driver_number']), 'name': d.get('full_name'), 'team': d.get('team_name'), 'color': '#' + (d.get('team_colour') or '888888')} for d in drv]
     ab = {d['driver_number']: d['name_acronym'] for d in drv}
@@ -87,5 +88,7 @@ if 'laps' not in out:
     out['source'] = 'Jolpica'
     out['laps'] = laps
 fn = f'lab/data/{year}-{gp.lower().replace(" ", "")}-{kind}.json'
+import datetime as _dt
+out['fetched'] = _dt.datetime.now(_dt.timezone.utc).isoformat(timespec='seconds')
 json.dump(out, open(fn, 'w'), ensure_ascii=False, separators=(',', ':'))
 print('wrote', fn, len(out['laps']), 'laps', out['source'])

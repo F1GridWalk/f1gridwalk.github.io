@@ -1,0 +1,6 @@
+# One race per line: year, GP name as OpenF1 knows it, session (R / Q / S / SQ), round.
+# A push to the lab branch fetches every line, then builds lab/pages/<year>-<slug>.html
+# for each race file in lab/page/races/ whose data is there.
+2026 "Las Vegas" R 21
+2026 "Las Vegas" Q 21
+# 2026 "Qatar" R 22   <- 決勝のあと、行頭の # を外して push（round はフォールバックの Jolpica だけで使う）

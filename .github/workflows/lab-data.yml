@@ -1,27 +1,41 @@
 # Lab only (owner's OK, 23 Nov 2026): fetches race data for the private comparison prototype.
-# Runs on pushes to the "lab" branch; nothing here is published on the site (Pages serves main only).
+# Runs on pushes to the "lab" branch (or by hand); nothing here is published on the site (Pages serves main only).
+# Which races: lab/fetch.txt. Pages: lab/page/make_page.py builds lab/pages/<id>.html from lab/page/races/<id>.json.
 name: Lab data
 on:
   push:
     branches: [lab]
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install fastf1
-      - run: python lab/fetch_race.py 2026 "Las Vegas" R 21
-      - run: python lab/fetch_race.py 2026 "Las Vegas" Q 21
-      - name: Save the data on the lab branch
+      - name: Fetch the races in lab/fetch.txt
+        run: |
+          grep -v '^\s*#' lab/fetch.txt | grep -v '^\s*$' | while read -r line; do
+            eval "set -- $line"
+            python lab/fetch_race.py "$@" || echo "FAILED: $line"
+          done
+      - name: Build the pages
+        run: |
+          mkdir -p lab/pages
+          for r in lab/page/races/*.json; do
+            id=$(basename "$r" .json)
+            data="lab/data/${id}-R.json"
+            if [ -f "$data" ]; then python lab/page/make_page.py "$data" "$r" "lab/pages/${id}.html" || echo "FAILED page: $id"; fi
+          done
+      - name: Save on the lab branch
         run: |
           git config user.name "farpaz1888"
           git config user.email "farpaz1888@users.noreply.github.com"
-          git add lab/data
-          git commit -m "Lab data: 2026 Las Vegas race and qualifying" || echo "nothing new"
+          git add lab/data lab/pages
+          git commit -m "Lab data and pages" || echo "nothing new"
           git push origin HEAD:lab
