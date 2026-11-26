@@ -73,6 +73,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .det dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:10px 0 0;font-size:13.5px}.det dt{color:var(--muted)}.det dd{margin:0;font-variant-numeric:tabular-nums}
 .det h4{margin:14px 0 2px;font-size:14.5px}.det .mini{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px 4px 2px;margin-top:4px}.det .lg{display:flex;gap:10px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:4px 2px 0}.det .lg i{display:inline-block;width:14px;height:3px;vertical-align:3px;margin-right:4px}
 .det .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.det .acts button{font:inherit;font-size:13px;font-weight:700;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer}
+.qa ul{list-style:none;margin:0;padding:0;font-size:13px}.qa li{display:grid;grid-template-columns:20px 1fr;gap:4px;padding:5px 0;border-bottom:1px solid var(--line)}.qa li b{font-weight:700}.qa li span{color:var(--muted)}.qa .i{font-weight:700;text-align:center}.qa .ok .i{color:#2E7D4F}.qa .warn .i,.qa .err .i{color:#B3402A}.qa .info .i{color:var(--muted)}
 .kick{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--clay)}
 .story{display:grid;gap:8px;counter-reset:s;margin-top:6px}
 .story>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px 10px 42px;position:relative}
@@ -109,7 +110,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 <div class="lapbox tbl" id="lapBox" aria-live="polite" aria-atomic="true"></div>
 <p class="tip">走行順位について：この図は各周のタイミングから計算しています。レース後のペナルティなどを反映した正式結果とは違うことがあります。</p>
 <details class="how tbl"><summary>10周ごとの順位を表で見る</summary><table id="posTb"></table></details>
-<details class="how tbl"><summary>結果を表で見る</summary><table><thead><tr><th>順位</th><th>ドライバー</th><th>チーム</th><th>グリッド</th><th>増減</th></tr></thead><tbody id="resTb"></tbody></table></details></section>
+<details class="how tbl"><summary>結果を表で見る</summary><table><thead><tr><th>順位</th><th>ドライバー</th><th>チーム</th><th>グリッド</th><th>増減</th><th>公式の差</th></tr></thead><tbody id="resTb"></tbody></table></details></section>
 
 <section><h2>トップとの差</h2><p class="q">各周の終わりに、先頭から何秒うしろにいたか。線が上がると、先頭に近づいている。</p>
 <div class="tabs zoom" id="gapTabs"></div>
@@ -133,8 +134,8 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 
 <section><h2>スティント中のラップタイム変化</h2><p class="q">いちばん長く使ったタイヤで、10周あたりタイムがどう変わったか。棒が左に長いほど、周を重ねて速くなった。</p>
 <div class="box"><svg id="gDeg" role="img" aria-label="全員のタイムの変わり方"></svg></div>
-<p class="tip">色はタイヤの種類。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は計算に使った周。その右の「小・中」は、線のまわりでタイムがどれだけ散らばったか（ばらつき。小：±0.25秒未満、中：±0.5秒未満）。使った周が12周より少ないか、ばらつきが大きいものは「参考」として下にまとめ、薄く描いています。</p>
-<details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>タイヤ</th><th>10周あたり</th><th>使った周</th><th>ばらつき</th></tr></thead><tbody id="degTb"></tbody></table></details></section>
+<p class="tip">色はタイヤの種類。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は計算に使った周。「傾向」は、周を重ねるとタイムが一方向に変わっていく様子が、どれだけはっきりしているか（R² が0.6以上で「はっきり」、0.25以上で「弱い」）。使った周が12周より少ないか、傾向が見えない（R² が0.25未満）ものは「参考」として下にまとめ、薄く描いています。表には、線のまわりの散らばり（ばらつき）も出しています。</p>
+<details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>タイヤ</th><th>10周あたり</th><th>使った周</th><th>傾向（R²）</th><th>ばらつき</th></tr></thead><tbody id="degTb"></tbody></table></details></section>
 
 <section id="qualSec" hidden><h2>予選・グリッド・決勝</h2><p class="q">左から予選の順位、スタートの位置（グリッド）、決勝の順位。</p>
 <div class="box"><svg id="gQual" role="img" aria-label="全員の予選・グリッド・決勝の順位"></svg></div>
@@ -146,12 +147,15 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 
 <section><span class="kick">DATA STORY</span><h2>数字で分かった、このレースの3つ</h2><div class="story" id="story"></div></section>
 
+<section class="qa" id="qaSec" hidden><span class="kick">DATA QUALITY</span><h2 style="font-size:16px">データの点検</h2><p class="q">OpenF1 のデータを、もう一つの出どころ（Jolpica の公式結果）と自動で照らし合わせた結果です。</p><ul id="qaList"></ul></section>
+
 <details class="how"><summary>データと計算方法</summary><ul>
 <li>データ：<a href="https://openf1.org/">OpenF1</a>（F1 のタイミングをもとにした非公式の公開データ）__SESSION__</li>
 <li>順位の流れ：各周でコントロールラインを通った時刻の順。グリッドはタイミングの最初の順位、最終順位は OpenF1 の結果。</li>
 <li>トップとの差：同じ時刻から計算。最後の周は OpenF1 の結果の差（ペナルティのあった車は、線を通ったときの差）。</li>
 <li>代表ペース：次の周を除いたラップタイムの中央値。1周目、ピットに入った周と出た周、セーフティカー（バーチャルを含む）の周とその次の周、記録のない周。さらに、同じタイヤで走った周の中央値より大きく遅い周（中央値＋ばらつきの3倍、最低でも1秒）も、前の車に詰まった周などとして除く。全体の図に入るのは、計算に使えた周が15周以上の人。タイヤ別は5周以上で、8周より少ない人は参考。</li>
-<li>スティント中のラップタイム変化：いちばん長いスティントで、1周目・ピット・セーフティカーなどの周を除き、直線をあてはめた傾き（10周あたり）。その線から大きく外れた周（ばらつきの3倍、最低でも1秒）だけを除いて、もう一度あてはめる。タイムがだんだん落ちていく周は除かない。使える周が8周以上あるスティントだけ。「ばらつき」は線のまわりの散らばり（小：±0.25秒未満、中：±0.5秒未満、それ以上は大）。使った周が12周より少ないか、ばらつきが大きいものは参考。</li>
+<li>スティント中のラップタイム変化：いちばん長いスティントで、1周目・ピット・セーフティカーなどの周を除き、直線をあてはめた傾き（10周あたり）。その線から大きく外れた周（ばらつきの3倍、最低でも1秒）だけを除いて、もう一度あてはめる。タイムがだんだん落ちていく周は除かない。使える周が8周以上あるスティントだけ。「ばらつき」は線のまわりの散らばり（小：±0.25秒未満、中：±0.5秒未満、それ以上は大）。R²（当てはまりの良さ）が0.6以上で傾向「はっきり」、0.25以上で「弱い」、それ未満は「なし」。使った周が12周より少ないか、R² が0.25未満のものは参考。</li>
+<li>データの点検：OpenF1 のデータを Jolpica（Ergast 形式の公式結果）と照らし合わせています。グリッドと予選の順位が食い違うときは公式結果に合わせ、点検の欄に書いています。</li>
 <li>ピットレーン通過時間：ピットレーンに入ってから出るまでの時間。</li>
 <li>最大計測速度：スピードトラップの計測値のうち、レース中の最大。</li>
 <li>主なレース中のできごと（▼）：レースコントロールの記録などから、このページで大事なものを選んで載せています。全部ではありません。</li>
@@ -184,7 +188,7 @@ function stintClean(a,s0,s1){const b=baseClean(a),xs=[],ys=[];for(let n=s0;n<=s1
   const X=[],Y=[];xs.forEach((x,i)=>{if(Math.abs(r[i])<=cut){X.push(x);Y.push(ys[i]);}});return {xs:X,ys:Y,fit};}
 const clean=a=>paceClean(a,'ALL');
 const S={};D.drivers.forEach(d=>{const c=clean(d.a).filter(v=>v!=null),sp=D.sp[d.a].filter(v=>v!=null),done=D.lap[d.a].filter(v=>v!=null).length;
-  S[d.a]={med:median(c),best:Math.min(...D.lap[d.a].filter((v,i)=>v!=null&&i>0)),top:sp.length?Math.max(...sp):null,laps:done,out:!d.f||done<D.N-1};});
+  S[d.a]={med:median(c),best:Math.min(...D.lap[d.a].filter((v,i)=>v!=null&&i>0)),top:sp.length?Math.max(...sp):null,top5:sp.length?median(sp.slice().sort((x,y)=>y-x).slice(0,5)):null,laps:done,out:!d.f||done<D.N-1};});
 // teammates: the second of a team gets a dashed line
 const dash={};{const seen={};D.drivers.forEach(d=>{dash[d.a]=!!seen[d.t];seen[d.t]=1;});}
 let sel=[],posMode='slope';try{sel=(new URLSearchParams(location.search).get('drivers')||'').split(',').filter((a,i,l)=>D.drivers.some(d=>d.a===a)&&l.indexOf(a)===i).slice(0,3);}catch(e){}
@@ -203,8 +207,11 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlay();
 {const r=document.getElementById('lapR');r.max=D.N;r.addEventListener('input',()=>setLap(+r.value));document.getElementById('lapPrev').onclick=()=>setLap((LAP==null?2:LAP)-1);document.getElementById('lapNext').onclick=()=>setLap((LAP==null?0:LAP)+1);}
 let PT=null,lapAll=false;const DS=['','6 4','2 3'];
 document.getElementById('lapPlay').onclick=()=>{if(PT){stopPlay();return;}if(LAP==null||LAP>=D.N)LAP=0;PT=setInterval(()=>{if(LAP>=D.N){stopPlay();return;}setLap(LAP+1);},450);setLap(LAP+1);};
-function drawResTbl(){document.getElementById('resTb').innerHTML=D.drivers.map(d=>{const st=stOf(d.a),cl=d.f&&!S[d.a].out;return `<tr><td>${cl?d.f+(st==='dnf'?'（DNF）':''):stTag(d.a)}</td><td>${d.n}</td><td>${d.t}</td><td>${d.g}</td><td>${cl?(d.g-d.f>0?'+':'')+(d.g-d.f):'—'}</td></tr>`;}).join('');}
-function drawDegTbl(){const jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};document.getElementById('degTb').innerHTML=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort).map((o,i)=>`<tr><td>${o.g.ref?'参考':i+1}</td><td>${o.d.n}</td><td>${jp[o.g.cp]||o.g.cp}</td><td>${(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)}秒</td><td>${o.g.n}周</td><td>${o.g.spread}（±${o.g.sd.toFixed(2)}秒）</td></tr>`).join('');}
+function drawQA(){const sec=document.getElementById('qaSec');if(!D.qa||!D.qa.length){sec.hidden=true;return;}sec.hidden=false;
+  const ic={ok:'✓',warn:'⚠',err:'✕',info:'i'};document.getElementById('qaList').innerHTML=D.qa.map(([k,st,m])=>`<li class="${st}"><span class="i" aria-label="${{ok:'問題なし',warn:'注意',err:'食い違い',info:'お知らせ'}[st]}">${ic[st]}</span><div><b>${k}</b>　<span>${m}</span></div></li>`).join('');}
+const OF=a=>(D.off||{})[a]||{};
+function drawResTbl(){document.getElementById('resTb').innerHTML=D.drivers.map(d=>{const st=stOf(d.a),cl=d.f&&!S[d.a].out;return `<tr><td>${cl?d.f+(st==='dnf'?'（DNF）':''):stTag(d.a)}</td><td>${d.n}</td><td>${d.t}</td><td>${OF(d.a).pitlane?'ピットレーン':d.g}</td><td>${cl&&!OF(d.a).pitlane?(d.g-d.f>0?'+':'')+(d.g-d.f):'—'}</td><td>${OF(d.a).gap!=null?(OF(d.a).gap?'+'+OF(d.a).gap.toFixed(3):'—'):OF(d.a).lapped?'+'+OF(d.a).lapped+'周':'—'}</td></tr>`;}).join('');}
+function drawDegTbl(){const jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};document.getElementById('degTb').innerHTML=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort).map((o,i)=>`<tr><td>${o.g.ref?'参考':i+1}</td><td>${o.d.n}</td><td>${jp[o.g.cp]||o.g.cp}</td><td>${(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)}秒</td><td>${o.g.n}周</td><td>${o.g.trend}（${o.g.r2.toFixed(2)}）</td><td>${o.g.spread}（±${o.g.sd.toFixed(2)}秒）</td></tr>`).join('');}
 let gapMax=80;
 function drawTabs(){const at=[10,20,30,40,D.N].filter((v,i,l)=>v<=D.N&&l.indexOf(v)===i);
   const head=`<thead><tr><th></th><th>ドライバー</th>${at.map(n=>`<th>${n}周</th>`).join('')}</tr></thead>`;
@@ -224,11 +231,11 @@ function drawQual(){const sec=document.getElementById('qualSec');if(!D.Q){sec.hi
     const g=el('g',{class:'hit'},svg),c=ht?d.c:css('--muted');
     el('polyline',{points:cx.map((x,i)=>x+','+ys[i]).join(' '),fill:'none',stroke:c,'stroke-width':on?3.4:ht?2.4:1.2,opacity:ht?1:.35},g);
     cx.forEach((x,i)=>el('circle',{cx:x,cy:ys[i],r:on?4:3,fill:i===0&&!qp(a)?'none':c,stroke:c,opacity:ht?1:.5},g));
-    const l=el('text',{x:cx[0]-8,y:ys[0]+4,'text-anchor':'end','font-size':11,'font-weight':on?700:500,fill:css('--ink'),opacity:ht?1:.65},g);l.textContent=(qp(a)?qp(a)+' ':'データなし ')+d.n;
+    const l=el('text',{x:cx[0]-8,y:ys[0]+4,'text-anchor':'end','font-size':11,'font-weight':on?700:500,fill:css('--ink'),opacity:ht?1:.65},g);l.textContent=(qp(a)?qp(a)+' ':'データなし ')+d.n+((D.Q[a]||[])[4]==='official'?' *':'');
     const r=el('text',{x:cx[2]+8,y:ys[2]+4,'font-size':11,'font-weight':on?700:500,fill:css('--ink'),opacity:ht?1:.65},g);r.textContent=(d.f&&!S[a].out?d.f+' ':stTag(a)+' ')+d.n;
     g.addEventListener('click',()=>pick(a));});
   const back=D.drivers.filter(d=>qp(d.a)&&d.g&&d.g>qp(d.a)).sort((p,q)=>qp(p.a)-qp(q.a)),nl=RACE.news&&RACE.news.grid;
-  document.getElementById('qualNote').innerHTML=(back.length?`予選の順位より後ろからスタートした人：${back.map(d=>`${d.n}（${qp(d.a)}→${d.g}）`).join('、')}。理由はこの図では分かりません。`:'予選の順位どおりにスタートしました。')+(nl?` <a href="${SITE+nl[1]}">関連ニュース：${nl[0]}</a>`:'')+(qs.length?`　予選の順位がデータにない人（${qs.map(a=>by[a].n).join('、')}）は、予選の列のいちばん下に白丸で置いています。予選の最下位という意味ではありません。`:'');
+  document.getElementById('qualNote').innerHTML=(back.length?`予選の順位より後ろからスタートした人：${back.map(d=>`${d.n}（${qp(d.a)}→${d.g}）`).join('、')}。理由はこの図では分かりません。`:'予選の順位どおりにスタートしました。')+(nl?` <a href="${SITE+nl[1]}">関連ニュース：${nl[0]}</a>`:'')+(qs.length?`　予選の順位がデータにない人（${qs.map(a=>by[a].n).join('、')}）は、予選の列のいちばん下に白丸で置いています。予選の最下位という意味ではありません。`:'')+(D.drivers.some(d=>(D.Q[d.a]||[])[4]==='official')?'　* は、OpenF1 に順位がなく、公式結果の順位を使った人。':'');
   document.getElementById('qualTb').innerHTML=D.drivers.slice().sort((a,b)=>qpos[a.a]-qpos[b.a]).map(d=>{const q=D.Q[d.a]||[];return `<tr><td>${q[0]??'データなし'}</td><td>${d.n}</td><td>${q[1]?fmt(q[1])+' <small>'+q[2]+'</small>':'—'}</td><td>${q[3]==null?'—':q[3]===0?'最速':'+'+q[3].toFixed(3)}</td><td>${d.g??'—'}</td><td>${d.f&&!S[d.a].out?d.f:stTag(d.a)}</td></tr>`;}).join('');}
 function drawLap(){const pb=document.getElementById('lapPlay');pb.textContent=PT?'停止':'再生';pb.setAttribute('aria-pressed',PT?'true':'false');const box=document.getElementById('lapBox'),jp={SOFT:'S',MEDIUM:'M',HARD:'H',INTERMEDIATE:'I',WET:'W'},cv={SOFT:'--soft',MEDIUM:'--medium',HARD:'--hard',INTERMEDIATE:'--inter',WET:'--wet'};
   box.setAttribute('aria-live',PT?'off':'polite');if(LAP==null){box.innerHTML='<p>つまみを動かすか、図の中を押すと、その周の順位・差・タイヤ・タイムが数字で出ます。</p>';return;}
@@ -410,7 +417,7 @@ function verdict(a){const d=by[a],good=[],bad=[],add=(l,w,t)=>l.push([w,t]),cl=d
   const tn=majC(a)&&majC(a)!==fieldC?`（多くの人と違い、${jp[majC(a)]||majC(a)}で走った周が中心）`:'',mn=x=>majC(a)!==majC(x)?'（2人の中心のタイヤが違います）':'';
   if(cl&&d.f===1)add(good,12,d.g===1?'ポールポジションから優勝しました。':`${d.g}番手から優勝しました。`);else if(cl&&d.f<=3)add(good,8,`${d.f}位で表彰台に上がりました。`);
   // result against the grid
-  if(cl&&d.g){const k=d.g-d.f;if(k>=3)add(good,k,`${d.g}番手から${d.f}位へ、${k}ポジション上げました。`);if(k<=-3)add(bad,-k,`${d.g}番手から${d.f}位へ、${-k}ポジション下げました。`);}
+  if(cl&&d.g&&!OF(a).pitlane){const k=d.g-d.f;if(k>=3)add(good,k,`${d.g}番手から${d.f}位へ、${k}ポジション上げました。`);if(k<=-3)add(bad,-k,`${d.g}番手から${d.f}位へ、${-k}ポジション下げました。`);}
   if(st==='dnf')add(bad,9,`${D.X[a].filter(v=>v!=null).length}周でレースを終えました（DNF）。`);
   // penalties etc.: crossed the line in one place, classified in another
   const lp=D.X[a][D.N-1];if(cl&&lp&&lp!==d.f&&d.f>lp)add(bad,d.f-lp+1,`線を通った順は${lp}番目でしたが、正式結果は${d.f}位でした。`);
@@ -438,16 +445,17 @@ function drawDet(){const box=document.getElementById('drvBox');if(!detA||!by[det
   const row=(k,v)=>`<dt>${k}</dt><dd>${v}</dd>`;
   let h=`<h3><i style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${d.c};margin-right:6px"></i>${d.n}<small>${d.t}</small></h3><dl>`;
   h+=row('結果',cl?`${d.f}位${st==='dnf'?'（DNF）':''}`:stName(a));
-  if(D.Q)h+=row('予選',q&&q[0]?`${q[0]}位${q[1]?'（'+fmt(q[1])+' '+q[2]+'）':''}`:'データなし');
-  h+=row('グリッド',d.g!=null?`${d.g}番手`:'—');
-  if(cl&&d.g)h+=row('順位の増減',d.g>d.f?`${d.g-d.f}ポジション上げた`:d.g<d.f?`${d.f-d.g}ポジション下げた`:'変わらず');
+  if(D.Q)h+=row('予選',q&&q[0]?`${q[0]}位${q[1]?'（'+fmt(q[1])+' '+q[2]+'）':''}${q[4]==='official'?'<br><small>順位は公式結果から（OpenF1 には順位なし）</small>':''}`:'データなし');
+  h+=row('スタート',OF(a).pitlane?'ピットレーンから':d.g!=null?`${d.g}番手`:'—');
+  if(cl&&OF(a).gap!=null&&OF(a).gap)h+=row('優勝者との差（公式）','+'+OF(a).gap.toFixed(3)+'秒');else if(cl&&OF(a).lapped)h+=row('優勝者との差（公式）',OF(a).lapped+'周遅れ');
+  if(cl&&d.g&&!OF(a).pitlane)h+=row('順位の増減',d.g>d.f?`${d.g-d.f}ポジション上げた`:d.g<d.f?`${d.f-d.g}ポジション下げた`:'変わらず');
   h+=row('走った周',`${D.X[a].filter(v=>v!=null).length} / ${D.N}周`);
   h+=row('全体の代表ペース',PMall[a]?`${fmt(PMall[a].v)}（${pr.indexOf(a)+1}番目 / ${pr.length}人）`:'計算に使える周が足りない');
   h+=row('最速ラップ',isFinite(S[a].best)?`${fmt(S[a].best)}${bi>=0?'（'+(bi+1)+'周目）':''}`:'—');
-  h+=row('最大計測速度',S[a].top!=null?S[a].top+' km/h':'—');
-  h+=row('タイヤ',st==='dns'?'—':D.st[a].map(([c,s0,s1])=>`${jp[c]||c} ${s0}〜${s1}周`).join('<br>')||'—');
+  h+=row('最大計測速度',S[a].top!=null?`${S[a].top} km/h（上位5回の中央値 ${S[a].top5} km/h）`:'—');
+  h+=row('タイヤ',(st==='dns'?'—':D.st[a].map(([c,s0,s1])=>`${jp[c]||c} ${s0}〜${s1}周`).join('<br>')||'—')+(OF(a).fitted?`<br><small>ピットで${jp[OF(a).fitted]||OF(a).fitted}を付けたあと、1周も走っていない</small>`:''));
   h+=row('ピット',D.pit[a].length?D.pit[a].map(p=>`${p[0]}周目${p[1]!=null?'（ピットレーン '+p[1].toFixed(1)+'秒）':''}`).join('<br>'):'なし');
-  if(dg)h+=row('スティント中の変化',`${(dg.v>0?'+':'−')+Math.abs(dg.v).toFixed(2)}秒 / 10周（${jp[dg.cp]||dg.cp}、${dg.n}周から${dg.ref?'・参考':'、ばらつき'+dg.spread}）`);
+  if(dg)h+=row('スティント中の変化',`${(dg.v>0?'+':'−')+Math.abs(dg.v).toFixed(2)}秒 / 10周（${jp[dg.cp]||dg.cp}、${dg.n}周から${dg.ref?'・参考':'、傾向'+dg.trend}）`);
   h+='</dl>';
   h+=`<h4>レースペース</h4><div class="mini"><svg id="dPace" role="img" aria-label="${d.n}の1周ごとのタイム"></svg></div><div class="lg" id="dPaceLg"></div><p class="tip">ふつうに走れた周だけを、タイヤの色で。点線は${d.n}の全体の代表ペース、灰色の線はいちばん速い人の代表ペース。上にいくほど速い。Pはピットに入った周。</p>`;
   h+=`<h4>前後の車との差</h4><div class="mini"><svg id="dGap" role="img" aria-label="${d.n}と前後の車との差"></svg></div><div class="lg"><span><i style="background:#2E7D4F"></i>後ろの車との差（上）</span><span><i style="background:#B3402A"></i>前の車との差（下）</span></div><p class="tip">各周の終わりに、すぐ前・すぐ後ろを走っていた車との秒差（線を通った時刻から）。10秒より離れたところは10秒で止めています。黄色はセーフティカー。</p>`;
@@ -474,7 +482,8 @@ function drawGap(){const svg=document.getElementById('gGap');svg.innerHTML='';co
 // slope per 10 laps on the longest stint, with how much the laps scatter around the line (residual spread)
 function degOf(a){let best=null;D.st[a].forEach(([cp,s0,s1])=>{const {xs,ys}=stintClean(a,s0,s1);
     if(xs.length>=8&&(!best||xs.length>best.n)){const mx=xs.reduce((p,q)=>p+q)/xs.length,my=ys.reduce((p,q)=>p+q)/ys.length;let u=0,v=0;xs.forEach((X,i)=>{u+=(X-mx)*(ys[i]-my);v+=(X-mx)*(X-mx);});const k=u/v,c0=my-k*mx;
-      const sd=1.4826*median(ys.map((y,i)=>Math.abs(y-(c0+k*xs[i])))),spread=sd<.25?'小':sd<.5?'中':'大';best={n:xs.length,cp,len:s1-s0+1,v:k*10,sd,spread,ref:xs.length<12||spread==='大'};}});return best;}
+      const sd=1.4826*median(ys.map((y,i)=>Math.abs(y-(c0+k*xs[i])))),spread=sd<.25?'小':sd<.5?'中':'大';let ss=0,st=0;ys.forEach((y,i)=>{ss+=(y-(c0+k*xs[i]))**2;st+=(y-my)**2;});const r2=st?1-ss/st:0,trend=r2>=.6?'はっきり':r2>=.25?'弱い':'なし';
+      best={n:xs.length,cp,len:s1-s0+1,v:k*10,sd,spread,r2,trend,ref:xs.length<12||r2<.25};}});return best;}
 const degSort=(p,q)=>(p.g.ref-q.g.ref)||(p.g.v-q.g.v);
 function drawDeg(){const svg=document.getElementById('gDeg');svg.innerHTML='';const col={SOFT:css('--soft'),MEDIUM:css('--medium'),HARD:css('--hard'),INTERMEDIATE:css('--inter'),WET:css('--wet')},jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};
   const ds=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort);const w=W('gDeg'),L=112,R=150,T=18,rowH=22,h=T+rowH*ds.length+4;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
@@ -485,7 +494,7 @@ function drawDeg(){const svg=document.getElementById('gDeg');svg.innerHTML='';co
   ds.forEach((o,i)=>{const d=o.d,a=d.a,yy=T+i*rowH,op=(dim(a)?.25:1)*(o.g.ref?.55:1),g=el('g',{class:'hit',opacity:op},svg);
     el('rect',{x:0,y:yy,width:w,height:rowH,fill:'transparent'},g);const t=el('text',{x:L-6,y:yy+15,'text-anchor':'end','font-size':12,'font-weight':sel.includes(a)?700:500,fill:css('--ink')},g);t.textContent=d.n;
     const x0=Math.min(bx(0),bx(o.g.v)),bw=Math.max(3,Math.abs(bx(o.g.v)-bx(0)));el('rect',{x:x0,y:yy+5,width:bw,height:12,rx:3,fill:col[o.g.cp]||css('--muted')},g);
-    const v=el('text',{x:w-R+6,y:yy+15,'font-size':10.5,fill:css('--muted')},g);v.textContent=(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)+'秒 '+(jp[o.g.cp]||o.g.cp)+o.g.n+'周 '+(o.g.ref?'参考':o.g.spread);
+    const v=el('text',{x:w-R+6,y:yy+15,'font-size':10.5,fill:css('--muted')},g);v.textContent=(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)+'秒 '+(jp[o.g.cp]||o.g.cp)+o.g.n+'周 '+(o.g.ref?'参考':'傾向'+o.g.trend);
     g.addEventListener('click',()=>pick(a));});}
 function drawDuel(){const box=document.getElementById('duel');if(sel.length<2){box.innerHTML='';return;}const a=sel[0],b=sel[1],A=by[a],B=by[b],ca=A.c,cb=A.c===B.c?css('--muted'):B.c;
   const c1=clean(a),c2=clean(b);let wa=0,wb=0;for(let i=0;i<D.N;i++){if(c1[i]!=null&&c2[i]!=null){if(c1[i]<c2[i])wa++;else if(c2[i]<c1[i])wb++;}}
@@ -503,7 +512,7 @@ function drawDuel(){const box=document.getElementById('duel');if(sel.length<2){b
   [M,0,-M].forEach(v=>{el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),stroke:v?css('--grid'):css('--muted')},svg);const t=el('text',{x:L-4,y:y(v)+3.5,'text-anchor':'end','font-size':10,fill:css('--muted')},svg);t.textContent=v?Math.round(M)+'秒':'0';});
   df.forEach((v,i)=>{if(v==null)return;const yy=y(v);el('rect',{x:x(i+1)-bw/2,y:Math.min(mid,yy),width:bw,height:Math.max(1,Math.abs(yy-mid)),fill:v>=0?ca:cb},svg);});
   [1,10,20,30,40,50].forEach(i=>{const t=el('text',{x:x(i),y:hh-6,'text-anchor':'middle','font-size':10,fill:css('--muted')},svg);t.textContent=i===1?'1周':i;});}
-function draw(){if(detA&&!sel.includes(detA))detA=null;syncUrl();document.querySelectorAll('.evt').forEach(p=>{p.innerHTML=(RACE.ev||[]).map(([n,t])=>`<button type="button" class="evb" data-n="${n}">▼${n}周目 ${t}</button>`).join('');p.querySelectorAll('button').forEach(b=>b.onclick=()=>{setLap(+b.dataset.n);const lb=document.getElementById('lapBox');lb.scrollIntoView({behavior:'smooth',block:'center'});lb.classList.remove('flash');void lb.offsetWidth;lb.classList.add('flash');});});drawBar();barLap();drawLap();drawTabs();drawQual();drawDet();drawResTbl();drawDegTbl();drawPaceTbl();drawStory();drawPick();drawHi();drawPos();drawGap();drawPace();drawTyre();drawDeg();drawCmp();drawDuel();}
+function draw(){if(detA&&!sel.includes(detA))detA=null;syncUrl();document.querySelectorAll('.evt').forEach(p=>{p.innerHTML=(RACE.ev||[]).map(([n,t])=>`<button type="button" class="evb" data-n="${n}">▼${n}周目 ${t}</button>`).join('');p.querySelectorAll('button').forEach(b=>b.onclick=()=>{setLap(+b.dataset.n);const lb=document.getElementById('lapBox');lb.scrollIntoView({behavior:'smooth',block:'center'});lb.classList.remove('flash');void lb.offsetWidth;lb.classList.add('flash');});});drawBar();barLap();drawLap();drawTabs();drawQual();drawDet();drawResTbl();drawQA();drawDegTbl();drawPaceTbl();drawStory();drawPick();drawHi();drawPos();drawGap();drawPace();drawTyre();drawDeg();drawCmp();drawDuel();}
 let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw,150);});
 try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);}catch(e){}
 draw();
