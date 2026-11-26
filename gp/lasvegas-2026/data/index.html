@@ -80,10 +80,10 @@
 <p class="sub">DATA UPDATE：2026年11月26日</p>
 <div class="bar" id="bar"></div>
 
-<section><span class="kick">QUICK STATS</span><h2>このレースの数字</h2><p class="q">名前を押すと、その人のくわしい数字がここに開きます。図の中でも、その人が目立ちます。</p>
+<section><span class="kick">QUICK STATS</span><h2>このレースの数字</h2><p class="q">名前を押すと、その人のくわしい数字が開き、そこへ移ります。図の中でも、その人が目立ちます。</p>
 <div class="hi" id="hi"></div>
 <p class="q" style="margin:12px 0 6px">ドライバーを選んで、くわしく見る（決勝の順）</p><div class="dlist" id="dlist"></div>
-<div class="det" id="drvBox" hidden></div></section>
+<div class="det" id="drvBox" hidden tabindex="-1"></div></section>
 
 <section><h2>順位の流れ</h2><p class="q" id="posQ"></p>
 <div class="tabs" id="colTabs"></div>
@@ -350,9 +350,11 @@ function drawHi(){const box=document.getElementById('hi'),it=[];
   it.push(['周の終わりに先頭だった人',null,who.length+'人',who.join('、')]);
   box.innerHTML=it.map(([k,a,v,s])=>a?`<button type="button" data-a="${a}"><small>${k}</small><b><i style="background:${by[a].c}"></i>${by[a].n}</b><span>${v}</span></button>`:`<div><small>${k}</small><b>${v}</b><span>${s}</span></div>`).join('');
   box.querySelectorAll('button').forEach(b=>{b.setAttribute('aria-controls','drvBox');b.setAttribute('aria-expanded',detA===b.dataset.a?'true':'false');
-    b.onclick=()=>{const a=b.dataset.a;detA=detA===a?null:a;if(detA&&!sel.includes(a))pick(a);else draw();};});
+    b.onclick=()=>openDet(b.dataset.a);});
   const dl=document.getElementById('dlist');dl.innerHTML=D.drivers.map(d=>`<button type="button" data-a="${d.a}" aria-controls="drvBox" aria-expanded="${detA===d.a}" style="border-left-color:${d.c}"><small>${d.f&&!S[d.a].out?d.f:stTag(d.a)}</small>${d.n}</button>`).join('');
-  dl.querySelectorAll('button').forEach(b=>b.onclick=()=>{const a=b.dataset.a;detA=detA===a?null:a;if(detA&&!sel.includes(a))pick(a);else draw();if(detA)document.getElementById('drvBox').scrollIntoView({behavior:'smooth',block:'start'});});}
+  dl.querySelectorAll('button').forEach(b=>b.onclick=()=>openDet(b.dataset.a));}
+// open (or close) one driver's details and jump to them, below the sticky bar
+function openDet(a){detA=detA===a?null:a;if(detA&&!sel.includes(a))pick(a);else draw();if(detA)requestAnimationFrame(()=>{const bx=document.getElementById('drvBox'),bar=document.getElementById('bar');bx.style.scrollMarginTop=(bar?bar.getBoundingClientRect().height:0)+12+'px';bx.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});bx.focus({preventScroll:true});});}
 // the details of one driver, opened from "this race in numbers"
 let detA=null;
 // one driver's lap times on clean laps, coloured by tyre; pit laps marked
