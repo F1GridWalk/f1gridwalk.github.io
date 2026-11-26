@@ -69,6 +69,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .det{margin-top:8px;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:12px 14px}
 .det h3{margin:0;font-size:18px;line-height:1.4}.det h3 small{font-size:12.5px;font-weight:400;color:var(--muted);margin-left:6px}
 .det dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:10px 0 0;font-size:13.5px}.det dt{color:var(--muted)}.det dd{margin:0;font-variant-numeric:tabular-nums}
+.det h4{margin:14px 0 2px;font-size:14.5px}.det .mini{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px 4px 2px;margin-top:4px}.det .lg{display:flex;gap:10px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:4px 2px 0}.det .lg i{display:inline-block;width:14px;height:3px;vertical-align:3px;margin-right:4px}
 .det .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.det .acts button{font:inherit;font-size:13px;font-weight:700;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer}
 .kick{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--clay)}
 .story{display:grid;gap:8px;counter-reset:s;margin-top:6px}
@@ -365,6 +366,33 @@ function drawHi(){const box=document.getElementById('hi'),it=[];
     b.onclick=()=>{const a=b.dataset.a;detA=detA===a?null:a;if(detA&&!sel.includes(a))pick(a);else draw();};});}
 // the details of one driver, opened from "this race in numbers"
 let detA=null;
+// one driver's lap times on clean laps, coloured by tyre; pit laps marked
+function detPace(a){const svg=document.getElementById('dPace');if(!svg)return;const w=W('dPace'),L=46,R=8,T=10,B=22,hh=190;svg.setAttribute('viewBox',`0 0 ${w} ${hh}`);
+  const col={SOFT:css('--soft'),MEDIUM:css('--medium'),HARD:css('--hard'),INTERMEDIATE:css('--inter'),WET:css('--wet')},jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};
+  const c=clean(a),v=c.filter(t=>t!=null);if(v.length<3){const t=el('text',{x:10,y:24,'font-size':12,fill:css('--muted')},svg);t.textContent='ふつうに走れた周が少ないため、表示していません。';svg.setAttribute('viewBox',`0 0 ${w} 40`);return;}
+  const all=D.drivers.map(d=>S[d.a].med).filter(m=>m!=null),fast=Math.min(...all),lo=Math.min(...v,fast)-.3,hi=Math.max(...v)+.3,x=n=>L+(w-L-R)*(n-1)/(D.N-1),y=t=>T+(hh-T-B)*(t-lo)/(hi-lo);
+  (D.scs||[]).forEach(([s0,s1,k])=>el('rect',{x:x(s0),y:T,width:Math.max(2,x(s1)-x(s0)),height:hh-T-B,fill:css('--sc'),opacity:k==='VSC'?.25:.45},svg));
+  const st=(hi-lo)>3?1:.5;for(let t=Math.ceil(lo/st)*st;t<=hi;t+=st){el('line',{x1:L,x2:w-R,y1:y(t),y2:y(t),stroke:css('--grid')},svg);const e=el('text',{x:L-4,y:y(t)+3.5,'text-anchor':'end','font-size':10,fill:css('--muted')},svg);e.textContent=fmt(t).replace(/\.\d+$/,m=>m.slice(0,2));}
+  [1,10,20,30,40,50].filter(n=>n<=D.N).forEach(n=>{const e=el('text',{x:x(n),y:hh-6,'text-anchor':'middle','font-size':10,fill:css('--muted')},svg);e.textContent=n===1?'1周':n;});
+  el('line',{x1:L,x2:w-R,y1:y(fast),y2:y(fast),stroke:css('--muted'),'stroke-width':1},svg);
+  if(S[a].med!=null)el('line',{x1:L,x2:w-R,y1:y(S[a].med),y2:y(S[a].med),stroke:by[a].c,'stroke-width':1.5,'stroke-dasharray':'4 3'},svg);
+  const used=[];D.st[a].forEach(([cp,s0,s1])=>{let d='',pen=false;for(let n=s0;n<=s1;n++){const t=c[n-1];if(t==null){pen=false;continue;}d+=(pen?'L':'M')+x(n).toFixed(1)+' '+y(t).toFixed(1);pen=true;el('circle',{cx:x(n),cy:y(t),r:2.2,fill:col[cp]||css('--muted')},svg);}
+    if(d){el('path',{d,fill:'none',stroke:col[cp]||css('--muted'),'stroke-width':2,'stroke-linejoin':'round'},svg);if(!used.includes(cp))used.push(cp);}});
+  D.pit[a].forEach(([n])=>{el('line',{x1:x(n),x2:x(n),y1:T,y2:hh-B,stroke:css('--ink'),'stroke-width':1,'stroke-dasharray':'2 3'},svg);const e=el('text',{x:x(n),y:T+8,'text-anchor':'middle','font-size':10,'font-weight':700,fill:css('--ink')},svg);e.textContent='P';});
+  lapMark(svg,n=>x(n),T,hh-B);
+  document.getElementById('dPaceLg').innerHTML=used.map(cp=>`<span><i style="background:${col[cp]}"></i>${jp[cp]||cp}</span>`).join('');}
+// gap to the car just ahead (down) and just behind (up), from the line-crossing order of each lap
+function detGap(a){const svg=document.getElementById('dGap');if(!svg)return;const w=W('dGap'),L=34,R=8,T=10,B=22,hh=180,M=10,mid=T+(hh-T-B)/2;svg.setAttribute('viewBox',`0 0 ${w} ${hh}`);
+  const x=n=>L+(w-L-R)*(n-1)/(D.N-1),y=v=>mid-(hh-T-B)/2*Math.max(-1,Math.min(1,v/M));
+  (D.scs||[]).forEach(([s0,s1,k])=>el('rect',{x:x(s0),y:T,width:Math.max(2,x(s1)-x(s0)),height:hh-T-B,fill:css('--sc'),opacity:k==='VSC'?.25:.45},svg));
+  [M,M/2,0,-M/2,-M].forEach(v=>{el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),stroke:v?css('--grid'):css('--muted')},svg);const e=el('text',{x:L-4,y:y(v)+3.5,'text-anchor':'end','font-size':10,fill:css('--muted')},svg);e.textContent=v?Math.abs(v)+'秒':'0';});
+  [1,10,20,30,40,50].filter(n=>n<=D.N).forEach(n=>{const e=el('text',{x:x(n),y:hh-6,'text-anchor':'middle','font-size':10,fill:css('--muted')},svg);e.textContent=n===1?'1周':n;});
+  const at=(p,i)=>D.drivers.find(d=>D.X[d.a][i]===p),up=[],dn=[];
+  for(let i=0;i<D.N;i++){const p=D.X[a][i],g=D.G[a][i];if(p==null||g==null){up.push(null);dn.push(null);continue;}
+    const f=at(p-1,i),b=at(p+1,i);dn.push(f&&D.G[f.a][i]!=null?-(g-D.G[f.a][i]):null);up.push(b&&D.G[b.a][i]!=null?D.G[b.a][i]-g:null);}
+  [[up,'#2E7D4F'],[dn,'#B3402A']].forEach(([arr,c])=>{let d='',pen=false;arr.forEach((v,i)=>{if(v==null){pen=false;return;}d+=(pen?'L':'M')+x(i+1).toFixed(1)+' '+y(v).toFixed(1);pen=true;});if(d)el('path',{d,fill:'none',stroke:c,'stroke-width':2,'stroke-linejoin':'round'},svg);});
+  const t1=el('text',{x:w-R-2,y:T+11,'text-anchor':'end','font-size':10,fill:'#2E7D4F'},svg);t1.textContent='↑ 後ろの車';const t2=el('text',{x:w-R-2,y:hh-B-4,'text-anchor':'end','font-size':10,fill:'#B3402A'},svg);t2.textContent='↓ 前の車';
+  lapMark(svg,n=>x(n),T,hh-B);}
 function drawDet(){const box=document.getElementById('drvBox');if(!detA||!by[detA]){box.hidden=true;box.innerHTML='';return;}box.hidden=false;
   const a=detA,d=by[a],jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'},cl=d.f&&!S[a].out,st=stOf(a);
   const PMall=(()=>{const keep=paceC;paceC='ALL';const m=paceMap();paceC=keep;return m;})(),pr=Object.keys(PMall).sort((p,q)=>PMall[p].v-PMall[q].v);
@@ -382,8 +410,11 @@ function drawDet(){const box=document.getElementById('drvBox');if(!detA||!by[det
   h+=row('タイヤ',st==='dns'?'—':D.st[a].map(([c,s0,s1])=>`${jp[c]||c} ${s0}〜${s1}周`).join('<br>')||'—');
   h+=row('ピット',D.pit[a].length?D.pit[a].map(p=>`${p[0]}周目${p[1]!=null?'（ピットレーン '+p[1].toFixed(1)+'秒）':''}`).join('<br>'):'なし');
   if(dg)h+=row('スティント中の変化',`${(dg.v>0?'+':'−')+Math.abs(dg.v).toFixed(2)}秒 / 10周（${jp[dg.cp]||dg.cp}、${dg.n}周から${dg.ref?'・参考':'、ばらつき'+dg.spread}）`);
-  h+='</dl><div class="acts"><button type="button" data-g="gPos">順位の流れで見る</button><button type="button" data-g="cmpSec">ほかの人と比べる</button><button type="button" data-x="1">閉じる</button></div>';
-  box.innerHTML=h;box.querySelectorAll('.acts button').forEach(b=>b.onclick=()=>{if(b.dataset.x){detA=null;drawHi();drawDet();return;}document.getElementById(b.dataset.g).scrollIntoView({behavior:'smooth',block:b.dataset.g==='cmpSec'?'start':'center'});});}
+  h+='</dl>';
+  h+=`<h4>レースペース</h4><div class="mini"><svg id="dPace" role="img" aria-label="${d.n}の1周ごとのタイム"></svg></div><div class="lg" id="dPaceLg"></div><p class="tip">ふつうに走れた周だけを、タイヤの色で。点線は${d.n}の全体の代表ペース、灰色の線はいちばん速い人の代表ペース。上にいくほど速い。Pはピットに入った周。</p>`;
+  h+=`<h4>前後の車との差</h4><div class="mini"><svg id="dGap" role="img" aria-label="${d.n}と前後の車との差"></svg></div><div class="lg"><span><i style="background:#2E7D4F"></i>後ろの車との差（上）</span><span><i style="background:#B3402A"></i>前の車との差（下）</span></div><p class="tip">各周の終わりに、すぐ前・すぐ後ろを走っていた車との秒差（線を通った時刻から）。10秒より離れたところは10秒で止めています。黄色はセーフティカー。</p>`;
+  h+='<div class="acts"><button type="button" data-g="gPos">順位の流れで見る</button><button type="button" data-g="cmpSec">ほかの人と比べる</button><button type="button" data-x="1">閉じる</button></div>';
+  box.innerHTML=h;detPace(a);detGap(a);box.querySelectorAll('.acts button').forEach(b=>b.onclick=()=>{if(b.dataset.x){detA=null;drawHi();drawDet();return;}document.getElementById(b.dataset.g).scrollIntoView({behavior:'smooth',block:b.dataset.g==='cmpSec'?'start':'center'});});}
 function drawGap(){const svg=document.getElementById('gGap');svg.innerHTML='';const w=W('gGap'),L=34,R=100,T=10,B=24,h=420,MAX=gapMax;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
   const x=i=>L+(w-L-R)*(i-1)/(D.N-1),y=v=>T+(h-T-B)*v/MAX;
   (D.scs||[]).forEach(([s0,s1,k])=>el('rect',{x:x(s0),y:T,width:Math.max(2,x(s1)-x(s0)),height:h-T-B,fill:css('--sc'),opacity:k==='VSC'?.3:.5},svg));
