@@ -55,7 +55,8 @@ out = scope(css)
 scoped = (':root{' + own + '}.gd{font-size:15px;line-height:1.65}'
           '@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){' + own_dark + '}}'
           ':root[data-theme="dark"]{' + own_dark + '}' + ''.join(out)
-          + '.gd .bar{top:0;margin-top:6px}.gd h1{margin-top:4px}.gd section{margin-top:26px;padding-top:16px}.gd .bar+section{border-top:0;padding-top:0}.gd .legend svg{width:26px;display:inline-block}')
+          + '.gd .bar{top:0;margin-top:6px}.gd h1{margin-top:4px}.gd section{margin-top:26px;padding-top:16px}.gd .bar+section{border-top:0;padding-top:0}.gd .legend svg{width:26px;display:inline-block}'
+          '.gd .qa li{border:0;border-bottom:1px solid var(--line);border-radius:0;margin:0;padding:5px 0;font-size:13px;color:var(--ink)}')  # the site's own .warn box would wrap the data-quality rows (26 Nov 2026)
 markup = re.sub(r'<span class="lab">.*?</span>\s*', '', markup, flags=re.S)
 markup = markup.replace('<div class="wrap">', '<div class="gdw">', 1)  # the site already has a .wrap
 markup = markup.replace('この試作は本サイトには載っていません。', 'ファンによる非営利の分析です。')
