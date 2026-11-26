@@ -60,7 +60,6 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .lapctl #lapPlay{width:auto;padding:0 10px;font-size:13px;font-weight:700}
 .gd-big,.chip,.nav,.clear,.tab,.lp,.pre button,.evb,.story a,.story button{min-height:36px;display:inline-flex;align-items:center}
 .story a,.story button{margin-right:16px}
-.box svg text{paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round}
 .zoom{margin:0 0 8px}
 .tip a{color:var(--clay);font-weight:700}
 .kick{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--clay)}
@@ -264,7 +263,7 @@ function drawTyre(){const svg=document.getElementById('gTyre');svg.innerHTML='';
     el('rect',{x:0,y:yy,width:w,height:rowH,fill:'transparent'},g);
     const t=el('text',{x:L-6,y:yy+13,'text-anchor':'end','font-size':11.5,'font-weight':sel.includes(a)?700:500,fill:css('--ink')},g);t.textContent=(d.f?d.f+' ':'')+d.n;
     if(stOf(a)!=='dns')D.st[a].forEach(([c,s0,s1])=>{el('rect',{x:x(s0-1)+.5,y:yy+3,width:Math.max(1,x(s1)-x(s0-1)-1.5),height:12,rx:2,fill:col[c]||css('--muted')},g);});
-    D.pit[a].forEach((p,k,ps)=>{if(!sel.includes(a)||p[1]==null||(ps[k+1]&&ps[k+1][0]-p[0]<5))return;const t=el('text',{x:x(p[0])+3,y:yy+12.5,'font-size':10,'font-weight':700,fill:'#1F2420',style:'stroke:rgba(255,255,255,.75);stroke-width:2px'},g);t.textContent=p[1].toFixed(1);});
+    D.pit[a].forEach((p,k,ps)=>{if(!sel.includes(a)||p[1]==null||(ps[k+1]&&ps[k+1][0]-p[0]<5))return;const t=el('text',{x:x(p[0])+3,y:yy+12.5,'font-size':10,'font-weight':700,fill:'#1F2420'},g);t.textContent=p[1].toFixed(1);});
     g.addEventListener('click',()=>pick(a));});
   [1,10,20,30,40,50].forEach(i=>{const t=el('text',{x:x(i),y:h-4,'text-anchor':'middle','font-size':10,fill:css('--muted')},svg);t.textContent=i===1?'1周':i;});}
 function drawCmp(){const box=document.getElementById('cmp');
