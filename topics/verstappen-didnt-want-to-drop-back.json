@@ -1,0 +1,378 @@
+{
+ "slug": "verstappen-didnt-want-to-drop-back",
+ "gp": "ラスベガスGP",
+ "title": "「集団の中に、下がりたくなかった」",
+ "sub": "F1 Grid Walk の読み解き",
+ "dek": "ラスベガスの49周目、レッドブルのレースエンジニア、トム・ハートが無線で言った。「検知ポイントで先頭のマシンでいたいかどうか、考えてみて、マックス」。先頭を譲れば、最終ラップに追加の電気がもらえる。マックス・フェルスタッペンは先頭のまま通った。後ろで待ったアントネッリは、電気をなくした。「集団の中に下がりたくなかった」。ハートにとって初めての優勝。",
+ "checked": "2026-11-26",
+ "checkedNote": "RaceFans、F1公式サイト、FIAの会見の書き起こし、PlanetF1、Sky Sports、RacingNews365、GPblog、grandprix.com、Red Bull、Grande Prêmio の原文を11月26日に確認しました。英語の言葉は編集部が訳しました。無線は RaceFans の書き起こしによります。49周目のハートの問いへのフェルスタッペンの返事は、どの記事にも出ていません（50周目の本人の言葉は「聞き取れない」）。フェルスタッペンが「考えて」先頭で通ることを選んだという部分は、結果と本人のレース後の説明からの読みで、本人がその無線に答えた言葉ではありません。元F1ドライバーの解説者の称賛は、出典が避けている媒体だけだったため使っていません。先頭の入れ替わりは媒体で34回と35回があり、多い記事に合わせました。ラッセルへの言葉（「カルマ」など）は、この記事では扱っていません。",
+ "common": [
+  "無線（RaceFans）：「検知ポイントはどこだっけ」→ハート「16の出口」。39周目「最終ラップの計画を見てくれ」→「話し合っている」。46周目ハート「いまの戦略よりいいものはない」。48周目ラッセルが5コーナーで壁、「よくやったよ。なんてこった」。49周目ハート「アントネッリ1.2秒、ピアストリ1.9秒。検知ポイントで先頭のマシンでいたいか考えてみて」。50周目ハート「後ろはノリス」「14コーナーの出口ではどちらにしてもブーストを使える」。",
+  "レース後：「配分は最初から正しくできていた」「後ろに下がりたくなかった。遅くブレーキを踏んで先頭にとどまろうと決めていた」「集団の中に下がりたくなかった。抜き返せる電気を確かめていた」「先頭に戻れなかったことがあったから、あの質問をした」「キミの側で何かが」「非現実的」「マリオカート」「レーサーの心で見たい」。",
+  "ハート：2012年研修、シミュレーター、2020年からパフォーマンスエンジニア。ランビアーゼと交代でオースティン（3位）、サンパウロ（2位）、ラスベガス（優勝＝レースエンジニアとして初）。フェルスタッペン75勝目、今季4勝目、ラスベガス3勝目（2023、2025、2026）、304点2位。0.639秒差、35回の入れ替わり。"
+ ],
+ "outlets": [
+  {
+   "id": "de-motorsporttotal-redbull-funk-vegas-letzte-runde",
+   "angle": "無線",
+   "adds": [
+    "書き起こしは RaceFans。返事は不明。"
+   ]
+  },
+  {
+   "id": "de-motorsporttotal-palmer-verstappen-vegas",
+   "angle": "解説",
+   "adds": [
+    "本文では扱っていない。"
+   ]
+  },
+  {
+   "id": "it-motorionline-verstappen-mario-kart",
+   "angle": "マリオカート",
+   "adds": [
+    "「言わないほうがいいんだろうけど」。"
+   ]
+  }
+ ],
+ "sourceItems": [
+  {
+   "t": "無線の言葉",
+   "w": "RaceFans（11月23日、英語）の書き起こしを編集部が訳した。"
+  },
+  {
+   "t": "「下がりたくなかった」「あの質問をした」",
+   "w": "FIAの書き起こし、PlanetF1、F1公式サイト（英語）を編集部が訳した。"
+  },
+  {
+   "t": "ハートの経歴と初優勝",
+   "w": "F1公式サイト（11月24日、英語）。"
+  }
+ ],
+ "diffs": [
+  {
+   "k": "無線の言い回し",
+   "t": "「考えて（think about）」ではなく「考えてみて（just consider）」。"
+  },
+  {
+   "k": "返事",
+   "t": "フェルスタッペンの返事は記事に出ていない。"
+  },
+  {
+   "k": "ラッセルの事故",
+   "t": "49周目ではなく48周目。"
+  }
+ ],
+ "unknownsFillable": [
+  "無線の全文（チームの公開や放送の記録）。"
+ ],
+ "unknownsLimits": [
+  "49周目にフェルスタッペンがどう考えたか（本人は語っていない）。"
+ ],
+ "decision": {
+  "label": "編集部の整理（仮説です）",
+  "q": "先頭で通るか、後ろで待つか。何が分けたか？",
+  "rows": [
+   {
+    "k": "フェルスタッペン",
+    "t": "「抜き返せる電気がある限り先頭」。レースの間ずっと同じ考えで走った。"
+   },
+   {
+    "k": "アントネッリ",
+    "t": "「後ろで待って最後に使う」。待つ間の操作でバッテリーを失った。"
+   },
+   {
+    "k": "エンジニア",
+    "t": "ハートは選択肢を出し、46周目に「いまの戦略がいちばん」とも伝えていた。決めたのはドライバー。"
+   }
+  ]
+ },
+ "next": [
+  {
+   "q": "アントネッリの側から見た最終ラップは？",
+   "rules": [
+    "overtake-mode"
+   ],
+   "links": [
+    "/topics/antonelli-thought-i-was-doing-something-right/"
+   ]
+  },
+  {
+   "q": "ランビアーゼは、なぜ離れる？",
+   "rules": [
+    "race-engineer"
+   ],
+   "links": [
+    "/topics/lambiase-another-ten-fifteen-years/"
+   ]
+  },
+  {
+   "q": "サンパウロの21番グリッドから2位とは？",
+   "rules": [
+    "grid-penalty"
+   ],
+   "links": [
+    "/topics/verstappen-not-in-this-way/"
+   ]
+  },
+  {
+   "q": "ハジャーの「守るのをやめてくれないか」とは？",
+   "rules": [
+    "team-orders"
+   ],
+   "links": [
+    "/topics/hadjar-can-he-stop-defending/"
+   ]
+  },
+  {
+   "q": "オーバーテイクモードの条件とは？",
+   "rules": [
+    "overtake-mode",
+    "energy-management"
+   ]
+  }
+ ],
+ "todo": [],
+ "updates": [
+  {
+   "at": "2026-11-23T10:00:00+00:00",
+   "t": "RaceFans、49周目の無線を公開"
+  },
+  {
+   "at": "2026-11-26T13:10:00+09:00",
+   "t": "原文を確認し、下書き"
+  }
+ ],
+ "answer": "レッドブルのマックス・フェルスタッペンは、ラスベガスGPの49周目にレースエンジニアのトム・ハートから「検知ポイントで先頭のマシンでいたいかどうか、考えてみて」と無線で問われた。検知ポイントを2番手で通れば最終ラップに追加の電気が使えるが、フェルスタッペンは先頭のまま通り、後ろで待ったアントネッリはバッテリーを失って後退、0.639秒差で勝った。レース後は「集団の中に下がりたくなかった」「抜き返せる電気があるか、いつも確かめていた」。ハートにとってはレースエンジニアとして初の優勝で、フェルスタッペンは通算75勝目、今季4勝目。",
+ "draft": true,
+ "story": {
+  "title": "F1 Grid Walk の読み解き",
+  "by": "F1 Grid Walk 編集部",
+  "hook": "ラスベガスの49周目、レッドブルのレースエンジニア、トム・ハートが無線で言った。「検知ポイントで先頭のマシンでいたいかどうか、考えてみて、マックス」。先頭を譲れば、最終ラップに追加の電気がもらえる。マックス・フェルスタッペンは先頭のまま通った。後ろで待ったアントネッリは、電気をなくした。「集団の中に下がりたくなかった」。ハートにとって初めての優勝。",
+  "body": [
+   [
+    "h",
+    "49周目の、ひとこと"
+   ],
+   [
+    "p",
+    "ラスベガスの49周目。最後から2周目に入ったところで、レッドブルのレースエンジニア、トム・ハートが無線で言った。"
+   ],
+   [
+    "p",
+    "「注意、破片、5コーナーの出口。ラッセルがバリアに当たった」。「アントネッリ1.2秒、ピアストリ1.9秒。検知ポイントで先頭のマシンでいたいかどうか、考えてみて、マックス」。「これが最後から2周目だ」。"
+   ],
+   [
+    "p",
+    "先頭を譲る、という選択肢を、ハートは出していた。"
+   ],
+   [
+    "h",
+    "検知ポイント"
+   ],
+   [
+    "p",
+    "2026年のマシンには「オーバーテイクモード」がある。検知ポイントで前のマシンの1秒以内にいれば、次の周に追加の電気を使える。ラスベガスの検知ポイントは16コーナーの出口。そこを先頭で通れば、最終ラップに追加の電気はない。2番手で通れば、ある。"
+   ],
+   [
+    "p",
+    "この夜は、スリップストリームが大きすぎて、先頭がストリップの長い直線で抜かれる、という場面が何十回も続いた。先頭の入れ替わりは35回。"
+   ],
+   [
+    "p",
+    "フェルスタッペンは、早くから気づいていた。レースの途中で、こう聞いている。「オーバーテイクモードの検知ポイントは、どこだっけ？」。ハート「16の出口だよ、マックス」。"
+   ],
+   [
+    "p",
+    "39周目には、自分から求めた。「最終ラップの計画を見てくれ。彼らは、まだラインで（先頭を取れると）分かっているから」。「だから、最終ラップだけ、何をしないといけないか見る必要がある」。ハート「了解、マックス。いま話し合っている」。"
+   ],
+   [
+    "p",
+    "46周目、ハートの答え。「電気の配分で言えば、いまやっている戦略よりいいものはない」。「だから最終ラップも、もういちばんいい戦略を使っている」。"
+   ],
+   [
+    "h",
+    "後ろにいた人"
+   ],
+   [
+    "p",
+    "48周目、5コーナーで、3番手のラッセルが2番手のアントネッリを抜こうとして壁に当たった。フェルスタッペンの無線は、「よくやったよ。なんてこった」。"
+   ],
+   [
+    "p",
+    "そして49周目の、ハートのひとこと。2番手のメルセデスのアントネッリは、1.2秒後ろ。最後の周の追加の電気を取るために、検知ポイントでわざと後ろにいる。アントネッリは、その道を選んだ。"
+   ],
+   [
+    "p",
+    "フェルスタッペンは、先頭のまま16コーナーの出口を通った。"
+   ],
+   [
+    "p",
+    "アントネッリは14コーナーの手前でアクセルを戻し、少し踏み直したところでバッテリーが空になった。最終ラップの1コーナーまでに、2台のマクラーレンに抜かれた。フェルスタッペンの後ろについたのはノリス。ハートが最終ラップに伝えた。「後ろはノリス。ノリス1.2秒、ピアストリ2.4秒。14コーナーの出口では、どちらにしてもブーストを使える」。"
+   ],
+   [
+    "p",
+    "0.639秒差で、フェルスタッペンが勝った。"
+   ],
+   [
+    "h",
+    "「集団の中に下がりたくなかった」"
+   ],
+   [
+    "p",
+    "レース後の会見で、フェルスタッペンは自分の走り方を説明した。"
+   ],
+   [
+    "p",
+    "「最初から配分はすぐに正しくできていたと思う。でも、もちろん、みんな学んでいく」。"
+   ],
+   [
+    "p",
+    "「後ろに下がりたくなかった。だから、いつも遅くブレーキを踏むとか何とかして、先頭にとどまろうと決めていた」。"
+   ],
+   [
+    "p",
+    "「あの集団の中に下がりたくなかった。だから誰かが動きを仕掛けるたびに、また抜き返せるだけの電気があるか、インでもアウトでも送り返せるか、いつも確かめていた」。"
+   ],
+   [
+    "p",
+    "「一度、コントロールラインの前に先頭に戻れなかったことがあった。だから、あの質問をした」。"
+   ],
+   [
+    "p",
+    "アントネッリの最終ラップについては、「頭の中にたくさんのシナリオを置いていた。残念ながらキミの側で何かがおかしくなった。ラインまでの戦いになっていたと、僕は確信している」。"
+   ],
+   [
+    "p",
+    "このレースそのものについては、「本当に、本当に非現実的で、F1で自分では見たことがないものだった」。そして、「言わないほうがいいんだろうけど。マリオカートで、こんなふうに勝ったのを覚えている」。「ショーとして見れば、そう（面白い）。でも、僕はレーサーの心で見たい」。"
+   ],
+   [
+    "h",
+    "ハートの、最初の勝利"
+   ],
+   [
+    "p",
+    "トム・ハートは2012年に研修でレッドブルに入り、シミュレーターのエンジニアを経て、2020年からフェルスタッペンのパフォーマンスエンジニアを務めてきた。"
+   ],
+   [
+    "p",
+    "10年組んだジャンピエロ・ランビアーゼが、遅くとも2028年までにマクラーレンへ移る。今年の終盤、ランビアーゼとハートは交代で無線についた。ハートの担当は、オースティン、サンパウロ、ラスベガス。オースティンは3位、サンパウロは21番グリッドから2位。そしてラスベガスで、ハートにとってレースエンジニアとして初めての優勝になった。"
+   ],
+   [
+    "p",
+    "フェルスタッペンにとっては、通算75勝目で、今年4勝目。ラスベガスは3勝目。304点でランキング2位。"
+   ],
+   [
+    "h",
+    "先頭で、通ること"
+   ],
+   [
+    "p",
+    "「考えてみて」と言われて、考えた。抜き返せる電気がある限り、先頭で通る。そういう走り方を、レースの間ずっと続けて、最後もそうした。後ろで待った人は、待っている間に電気をなくした。"
+   ],
+   [
+    "p",
+    "残りはカタールとアブダビ。無線には、ランビアーゼが戻る。ハートの3戦は、3位、2位、優勝で終わった。"
+   ]
+  ],
+  "terms": [
+   [
+    "オーバーテイクモード",
+    "overtake-mode"
+   ],
+   [
+    "エネルギーマネジメント",
+    "energy-management"
+   ],
+   [
+    "スリップストリーム",
+    "slipstream"
+   ],
+   [
+    "レースエンジニア",
+    "race-engineer"
+   ],
+   [
+    "チームラジオ",
+    "team-radio"
+   ],
+   [
+    "ポールポジション",
+    "pole-position"
+   ]
+  ],
+  "sources": [
+   {
+    "name": "RaceFans",
+    "title": "Red Bull told Verstappen to consider letting Antonelli pass him for the final lap",
+    "url": "https://www.racefans.net/2026/11/23/red-bull-told-verstappen-to-consider-letting-antonelli-pass-him-for-the-final-lap/",
+    "note": "2026年11月23日。無線の書き起こし。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "'Something that I've never seen before in F1' – Verstappen reflects on Las Vegas GP win",
+    "url": "https://www.formula1.com/en/latest/article/something-that-ive-never-seen-before-in-f1-verstappen-reflects-on-las-vegas-gp-win-after-slipstream-thriller.11R5Iz64C6PLpqrGDJU5OK",
+    "note": "2026年11月22日。"
+   },
+   {
+    "name": "FIA",
+    "title": "F1 – 2026 Las Vegas Grand Prix – Post-race press conference transcript",
+    "url": "https://www.fia.com/news/f1-2026-las-vegas-grand-prix-post-race-press-conference-transcript",
+    "note": "2026年11月21日。"
+   },
+   {
+    "name": "PlanetF1",
+    "title": "Max Verstappen compares Vegas mayhem to Mario Kart",
+    "url": "https://www.planetf1.com/news/max-verstappen-compares-vegas-mayhem-to-mario-kart",
+    "note": "2026年11月23日。"
+   },
+   {
+    "name": "Sky Sports",
+    "title": "Verstappen says Russell 'so far below his level'",
+    "url": "https://www.skysports.com/f1/news/13615084/max-verstappen-says-george-russell-so-far-below-his-level-after-poking-fun-at-rival-for-major-error-during-las-vegas-gp",
+    "note": "2026年11月22日。「先頭にとどまりたかった」「キミの側で何かが」。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Who is Tom Hart? Meet the man set to replace GP as Verstappen's race engineer",
+    "url": "https://www.formula1.com/en/latest/article/who-is-tom-hart-meet-the-man-set-to-replace-gp-as-max-verstappens-race-engineer-at-red-bull.4U1Zq3JUB2gujP5OoTMW1Z",
+    "note": "2026年11月24日。経歴、初優勝。"
+   },
+   {
+    "name": "RacingNews365",
+    "title": "Who is Tom Hart, Max Verstappen's new race engineer",
+    "url": "https://racingnews365.com/who-is-tom-hart-max-verstappen-new-race-engineer",
+    "note": "2026年10月20日。"
+   },
+   {
+    "name": "GPblog",
+    "title": "Verstappen to miss Lambiase for three Grands Prix",
+    "url": "https://www.gpblog.com/en/features/verstappen-to-miss-lambiase-for-three-grands-prix-after-emotional-singapore-win",
+    "note": "2026年10月13日。交代の割り振り。"
+   },
+   {
+    "name": "Formula1.com",
+    "title": "Verstappen wins exhilarating Las Vegas Grand Prix from Norris and Piastri",
+    "url": "https://www.formula1.com/en/latest/article/verstappen-wins-exhilarating-las-vegas-grand-prix-from-norris-and-piastri.2eeBWqekZdir9mdDVK9YVX",
+    "note": "2026年11月22日。"
+   },
+   {
+    "name": "grandprix.com",
+    "title": "Las Vegas GP 2026 race notes",
+    "url": "https://www.grandprix.com/races/las-vegas-gp-2026-race-notes.html",
+    "note": "2026年11月22日。75勝目、4勝目。"
+   },
+   {
+    "name": "Red Bull Racing",
+    "title": "Race report: Las Vegas Grand Prix 2026",
+    "url": "https://www.redbullracing.com/int-en/races/las-vegas-grand-prix-2026/race-report-las-vegas-grand-prix-2026",
+    "note": "2026年11月22日。"
+   },
+   {
+    "name": "Grande Prêmio",
+    "title": "F1 2026 standings after Las Vegas",
+    "url": "https://grandepremio.com/en/f1/f1-2026-standings-after-las-vegas-verstappen-wins-as-hamilton-overtakes-russell-for-third/",
+    "note": "2026年11月22日。"
+   }
+  ]
+ }
+}
