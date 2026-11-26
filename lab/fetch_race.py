@@ -88,6 +88,26 @@ if 'laps' not in out:
     out['source'] = 'Jolpica'
     out['laps'] = laps
 fn = f'lab/data/{year}-{gp.lower().replace(" ", "")}-{kind}.json'
+# Second source for checking (DATA VALIDATOR): the official classification and qualifying from Jolpica (Ergast format).
+# grid 0 means a pit-lane start; positionText R/D/W/N/E/F = retired/disqualified/withdrawn/not classified/excluded/failed to qualify.
+if kind in ('R', 'Q') and len(sys.argv) > 4:
+    try:
+        rnd = sys.argv[4]
+        j = get(f'https://api.jolpi.ca/ergast/f1/{year}/{rnd}/results.json')['MRData']['RaceTable']['Races']
+        q = get(f'https://api.jolpi.ca/ergast/f1/{year}/{rnd}/qualifying.json')['MRData']['RaceTable']['Races']
+        off = {'source': 'Jolpica', 'round': rnd, 'race': (j or q or [{}])[0].get('raceName'), 'results': [], 'qualifying': []}
+        for r in (j[0]['Results'] if j else []):
+            fl = r.get('FastestLap') or {}
+            off['results'].append({'d': r['Driver'].get('code'), 'pos': int(r['position']), 'pt': r.get('positionText'), 'grid': int(r.get('grid') or 0),
+                                   'laps': int(r.get('laps') or 0), 'status': r.get('status'), 'ms': int(r['Time']['millis']) if r.get('Time') else None,
+                                   'fl_rank': int(fl['rank']) if fl.get('rank') else None, 'fl_lap': int(fl['lap']) if fl.get('lap') else None,
+                                   'fl_time': (fl.get('Time') or {}).get('time')})
+        for r in (q[0]['QualifyingResults'] if q else []):
+            off['qualifying'].append({'d': r['Driver'].get('code'), 'pos': int(r['position']), 'q1': r.get('Q1'), 'q2': r.get('Q2'), 'q3': r.get('Q3')})
+        out['official'] = off
+        print('official:', off['race'], len(off['results']), 'results,', len(off['qualifying']), 'qualifying')
+    except Exception as ex:
+        print('official (Jolpica) failed:', repr(ex)[:200])
 import datetime as _dt
 out['fetched'] = _dt.datetime.now(_dt.timezone.utc).isoformat(timespec='seconds')
 json.dump(out, open(fn, 'w'), ensure_ascii=False, separators=(',', ':'))
