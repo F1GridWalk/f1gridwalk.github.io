@@ -39,7 +39,7 @@ LANG = {'en': '英語', 'it': 'イタリア語', 'de': 'ドイツ語', 'es': '�
         'sv': 'スウェーデン語', 'da': 'デンマーク語', 'hu': 'ハンガリー語', 'zh': '中国語',
         'ko': '韓国語', 'ja': '日本語'}
 KEEP = ('id', 'kind', 'primary', 'lang', 'region', 'source', 'provider', 'cat', 'circuit', 'teams', 'topic',
-        'title', 'summary', 'orig', 'url', 'published', 'voices', 'note')
+        'title', 'summary', 'orig', 'url', 'published', 'voices', 'note', 'new', 'before')
 ID_OK = re.compile(r'^[a-z0-9][a-z0-9-]{0,120}$')
 
 e = lambda s: html.escape(str(s if s is not None else ''), quote=True)
@@ -205,6 +205,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 h1{font-size:clamp(24px,5.4vw,34px);line-height:1.45;margin:14px 0 10px;font-weight:700;letter-spacing:.01em}
 .orig{font-size:13.5px;color:var(--muted);margin:0 0 20px}
 .summary{font-size:17px;line-height:1.95;margin:0 0 22px}
+.newk{margin:0 0 18px;padding:12px 14px;border:1px solid var(--line);border-left:4px solid var(--ink);border-radius:10px}.newk small{display:block;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}.newk p{margin:4px 0 0;font-size:15.5px;line-height:1.8;font-weight:700}.newk b{display:inline-block;font-size:11.5px;font-weight:800;margin-right:8px;padding:1px 8px;border:1px solid var(--line);border-radius:999px;vertical-align:2px}
 .warn{font-size:13.5px;border:1px dashed var(--clay);color:var(--ink-2);padding:10px 14px;border-radius:10px;margin:0 0 22px}
 .cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 8px;min-height:56px;padding:12px 22px;border-radius:999px;background:var(--ink);color:var(--on-ink);font-weight:700;font-size:16px;text-decoration:none;text-align:center}
 .cta:hover{color:var(--on-ink);opacity:.9}
@@ -280,7 +281,7 @@ PS_HTML = ('<aside class="ps"><p class="ps-k">GOOGLE</p>'
            '.ps-l a{color:var(--muted)}</style></aside>')
 
 
-RETURN_JS = "<script>\n/* また来た人 (owner's OK, 23 Nov 2026): this browser keeps only the date of its last visit; a later day counts once, by the gap */\n(function(){try{var k='gw_last',t=new Date(),z=function(x){return(x<10?'0':'')+x},d=t.getFullYear()+'-'+z(t.getMonth()+1)+'-'+z(t.getDate()),p=localStorage.getItem(k);\nif(p===d)return;localStorage.setItem(k,d);if(!p||!/^\\d{4}-\\d\\d-\\d\\d$/.test(p))return;\nvar g=Math.round((Date.parse(d)-Date.parse(p))/864e5);if(!(g>0))return;var b=g<=1?'1d':g<=7?'7d':'older',n=0;\n(function c(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'return/'+b,title:'また来た人（前回から'+(b==='1d'?'1日':b==='7d'?'2〜7日':'8日以上')+'）',event:true})}catch(e){}return}if(++n<20)setTimeout(c,500)})();}catch(e){}})();\n</script>"
+RETURN_JS = "<script>\n/* また来た人 (owner's OK, 23 Nov 2026): this browser keeps only the date of its last visit; a later day counts once, by the gap */\n(function(){try{var k='gw_last',t=new Date(),z=function(x){return(x<10?'0':'')+x},d=t.getFullYear()+'-'+z(t.getMonth()+1)+'-'+z(t.getDate()),p=localStorage.getItem(k);\nif(p===d)return;localStorage.setItem(k,d);if(!p||!/^\\d{4}-\\d\\d-\\d\\d$/.test(p))return;\nvar g=Math.round((Date.parse(d)-Date.parse(p))/864e5);if(!(g>0))return;var b=g<=1?'1d':g<=7?'7d':'older',n=0;\n(function c(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'return/'+b,title:'また来た人（前回から'+(b==='1d'?'1日':b==='7d'?'2〜7日':'8日以上')+'）',event:true})}catch(e){}return}if(++n<20)setTimeout(c,500)})();}catch(e){}})();\n</script><script>\n/* 1回の訪問で何本読んだか (outside review, owner's OK pending, 27 Nov 2026): this tab keeps only the list of reading pages opened in it (sessionStorage); the 1st, 2nd and 3rd count once each */\n(function(){try{var P=location.pathname;if(!/^\\/news\\/(?!daily\\/)[^/]+|^\\/(lens|topics|reaction|storyline|offgrid)\\/[^/]+|^\\/deep\\/(?!rules\\/)[^/]+|^\\/gp\\/[^/]+\\/data\\//.test(P))return;var k='gw_reads',L=JSON.parse(sessionStorage.getItem(k)||'[]');if(L.indexOf(P)>=0)return;L.push(P);sessionStorage.setItem(k,JSON.stringify(L.slice(-30)));var m=L.length;if(m>3)return;var n=0;\n(function c(){if(window.goatcounter&&window.goatcounter.count){try{window.goatcounter.count({path:'read/'+m,title:'1回の訪問で'+m+'本目を読んだ',event:true})}catch(e){}return}if(++n<20)setTimeout(c,500)})();}catch(e){}})();\n</script>"
 
 
 def page(title, desc, canonical, body, extra_head='', og_type='article', og_image=None, og_size=(1200, 630)):
@@ -3677,7 +3678,8 @@ def build_about():
             'これまでの訂正は、<a href="/corrections/">訂正の記録</a>にまとめています。']),
         ('アクセス解析', [
             'ページがどれくらい読まれたかを知るために、GoatCounter を使っています。Cookie を使わず、個人を特定する情報は集めない仕組みです。',
-            'また来てくれた人の数を知るために、ブラウザに「最後に来た日付」だけを残しています（localStorage）。名前やメールなど、個人が分かる情報は残しません。ブラウザの履歴やサイトのデータを消すと、なくなります。']),
+            'また来てくれた人の数を知るために、ブラウザに「最後に来た日付」だけを残しています（localStorage）。名前やメールなど、個人が分かる情報は残しません。ブラウザの履歴やサイトのデータを消すと、なくなります。',
+            '1回の訪問で何本の記事を読んだかを知るために、開いた記事のページの場所だけを、そのタブを閉じるまでブラウザに残しています（sessionStorage）。']),
     ]
     body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › 運営者情報・編集方針</nav>' + '<div class="xp"><h1>運営者情報・編集方針</h1>'
             + ''.join(f'<h2 class="rbp-sh">{e(h)}</h2>' + ''.join(f'<p class="lead">{x}</p>' for x in ps) for h, ps in secs)
@@ -4955,6 +4957,11 @@ def main():
             body.append(f'<aside class="stup"><small>その後・{int(sl_["decided"][5:7])}月{int(sl_["decided"][8:10])}日に決着</small>'
                         f'<p>{e(sl_["conclusion"])}</p><p class="stup-n">この記事は決着の前の報道です。</p>'
                         f'<a href="/storyline/{sl_["slug"]}/" data-track="click/news/status">STORYLINEで最初から追う →</a></aside>')
+        if a.get('new'):
+            # 今回新しく分かったこと: what this report adds to the earlier ones on the same topic (outside review, 27 Nov 2026)
+            body.append('<aside class="newk"><small>今回新しく分かったこと</small>'
+                        + (f'<p><b>前回まで</b>{e(a["before"])}</p><p><b>今回</b>{e(a["new"])}</p>' if a.get('before') else f'<p>{e(a["new"])}</p>')
+                        + '</aside>')
         nused = set()
         body.append(f'<p class="summary">{link_terms(e(a.get("summary", "")), nused)}</p>')
         if a.get('topic') in REACT and a['id'] not in DUP_OF:
