@@ -66,7 +66,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .lapw{margin:6px 0 2px}
 .tbl{overflow-x:auto}
 .hi button[aria-expanded="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
-.dlist{display:flex;flex-wrap:wrap;gap:6px}.dlist button{font:inherit;font-size:13px;min-height:40px;padding:0 10px;border:1px solid var(--line);border-left-width:4px;border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer}.dlist button small{color:var(--muted);margin-right:4px}.dlist button[aria-expanded="true"]{border-color:var(--ink);font-weight:700}
+.dlist{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}.dlist::-webkit-scrollbar{display:none}.dlist button{flex:none}.dlist button{font:inherit;font-size:13px;min-height:40px;padding:0 10px;border:1px solid var(--line);border-left-width:4px;border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer}.dlist button small{color:var(--muted);margin-right:4px}.dlist button[aria-expanded="true"]{border-color:var(--ink);font-weight:700}
 .verdict{display:grid;gap:8px;margin-top:6px}.verdict div{border-radius:10px;padding:8px 10px;font-size:13.5px;line-height:1.6}.verdict b{display:block;font-size:13px}.verdict ul{margin:2px 0 0;padding-left:1.2em}.verdict .good{background:rgba(46,125,79,.12)}.verdict .good b{color:#2E7D4F}.verdict .bad{background:rgba(179,64,42,.12)}.verdict .bad b{color:#B3402A}
 .det{margin-top:8px;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:12px 14px}
 .det h3{margin:0;font-size:18px;line-height:1.4}.det h3 small{font-size:12.5px;font-weight:400;color:var(--muted);margin-left:6px}
@@ -74,6 +74,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .det h4{margin:14px 0 2px;font-size:14.5px}.det .mini{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px 4px 2px;margin-top:4px}.det .lg{display:flex;gap:10px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:4px 2px 0}.det .lg i{display:inline-block;width:14px;height:3px;vertical-align:3px;margin-right:4px}
 .det .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.det .acts button{font:inherit;font-size:13px;font-weight:700;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer}
 .qa ul{list-style:none;margin:0;padding:0;font-size:13px}.qa li{display:grid;grid-template-columns:20px 1fr;gap:4px;padding:5px 0;border-bottom:1px solid var(--line)}.qa li b{font-weight:700}.qa li span{color:var(--muted)}.qa .i{font-weight:700;text-align:center}.qa .ok .i{color:#2E7D4F}.qa .warn .i,.qa .err .i{color:#B3402A}.qa .info .i{color:var(--muted)}
+.howto{margin:6px 2px 0;font-size:12px;color:var(--muted)}.howto summary{cursor:pointer;font-weight:700;min-height:32px;display:flex;align-items:center}.howto .tip{margin-top:2px}
 .kick{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--clay)}
 .story{display:grid;gap:8px;counter-reset:s;margin-top:6px}
 .story>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px 10px 42px;position:relative}
@@ -99,7 +100,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 
 <section><span class="kick">QUICK STATS</span><h2>このレースの数字</h2><p class="q">名前を押すと、その人のくわしい数字が開き、そこへ移ります。図の中でも、その人が目立ちます。</p>
 <div class="hi" id="hi"></div>
-<p class="q" style="margin:12px 0 6px">ドライバーを選んで、くわしく見る（決勝の順）</p><div class="dlist" id="dlist"></div>
+<p class="q" style="margin:12px 0 6px">ドライバーを選んで、くわしく見る（決勝の順。横にスクロールできます）</p><div class="dlist" id="dlist"></div>
 <div class="det" id="drvBox" hidden tabindex="-1"></div></section>
 
 <section><h2>順位の流れ</h2><p class="q" id="posQ"></p>
@@ -108,33 +109,33 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 <p class="tip evt"></p>
 <div class="lapctl"><button type="button" id="lapPrev" aria-label="前の周">◀</button><input type="range" id="lapR" min="1" max="50" step="1" value="1" aria-label="周を選ぶ"><button type="button" id="lapNext" aria-label="次の周">▶</button><button type="button" id="lapPlay" aria-pressed="false">再生</button></div>
 <div class="lapbox tbl" id="lapBox" aria-live="polite" aria-atomic="true"></div>
-<p class="tip">走行順位について：この図は各周のタイミングから計算しています。レース後のペナルティなどを反映した正式結果とは違うことがあります。</p>
+<details class="howto"><summary>この図の見方</summary><p class="tip"><span id="posHow"></span> 走行順位について：この図は各周のタイミングから計算しています。レース後のペナルティなどを反映した正式結果とは違うことがあります。</p></details>
 <details class="how tbl"><summary>10周ごとの順位を表で見る</summary><table id="posTb"></table></details>
 <details class="how tbl"><summary>結果を表で見る</summary><table><thead><tr><th>順位</th><th>ドライバー</th><th>チーム</th><th>グリッド</th><th>増減</th><th>公式の差</th></tr></thead><tbody id="resTb"></tbody></table></details></section>
 
-<section><h2>トップとの差</h2><p class="q">各周の終わりに、先頭から何秒うしろにいたか。線が上がると、先頭に近づいている。</p>
+<section><h2>トップとの差</h2><p class="q">各周の終わりに、先頭から何秒うしろにいたか。</p>
 <div class="tabs zoom" id="gapTabs"></div>
 <div class="box"><svg id="gGap" role="img" aria-label="全員のトップとの差"></svg></div>
-<p class="tip">黄色はセーフティカー。<span id="gapOut">80</span>秒より後ろは図の外。DNF はリタイア、DNS は出走せず。線の色は「順位の流れ」の切り替えと同じ。</p>
+<details class="howto"><summary>この図の見方</summary><p class="tip">黄色はセーフティカー。<span id="gapOut">80</span>秒より後ろは図の外。DNF はリタイア、DNS は出走せず。線の色は「順位の流れ」の切り替えと同じ。</p></details>
 <p class="tip evt"></p>
 <details class="how tbl"><summary>10周ごとの差を表で見る</summary><table id="gapTb"></table></details></section>
 
 <section><h2>レース中の代表ペース</h2><p class="q">ふつうに走れた周のタイムの中央値を、いちばん速い人との差で。短いほど速い。</p>
 <div class="tabs" id="paceTabs"></div>
 <div class="box"><svg id="gPace" role="img" aria-label="全員のペース"></svg></div>
-<p class="tip">代表ペース＝1周目、ピットの出入り、セーフティカーなどの遅い周を除いた周の中央値。タイヤのタブを選ぶと、そのタイヤで走った周だけで比べます。それでも燃料の量、前の車との距離などの条件はそろえていないため、車そのものの速さを直接比べる数字ではありません。</p>
+<details class="howto"><summary>この図の見方</summary><p class="tip">代表ペース＝1周目、ピットの出入り、セーフティカーなどの遅い周を除いた周の中央値。タイヤのタブを選ぶと、そのタイヤで走った周だけで比べます。それでも燃料の量、前の車との距離などの条件はそろえていないため、車そのものの速さを直接比べる数字ではありません。</p></details>
 <details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>代表ペース</th><th>差</th><th>使った周</th></tr></thead><tbody id="paceTb"></tbody></table></details></section>
 
 <section><h2>タイヤ</h2><p class="q">どのタイヤで、何周目まで走ったか（ゴール順）。</p>
 <div class="box"><svg id="gTyre" role="img" aria-label="全員のタイヤ"></svg></div>
 <div class="legend"><span><i style="background:var(--soft)"></i>ソフト</span><span><i style="background:var(--medium)"></i>ミディアム</span><span><i style="background:var(--hard)"></i>ハード</span><span><i style="background:var(--inter)"></i>インター</span><span><i style="background:var(--wet)"></i>ウェット</span></div>
 <p class="tip" id="tyreWarn"></p>
-<p class="tip">人を選ぶと、その人がピットレーンを通過した時間（秒）が棒の上に出ます。タイヤ交換の作業時間ではありません。</p>
+<details class="howto"><summary>この図の見方</summary><p class="tip">人を選ぶと、その人がピットレーンを通過した時間（秒）が棒の上に出ます。タイヤ交換の作業時間ではありません。</p></details>
 <details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順位</th><th>ドライバー</th><th>タイヤ（周）</th><th>ピット（秒）</th></tr></thead><tbody id="tyreTb"></tbody></table></details></section>
 
 <section><h2>スティント中のラップタイム変化</h2><p class="q">いちばん長く使ったタイヤで、10周あたりタイムがどう変わったか。棒が左に長いほど、周を重ねて速くなった。</p>
 <div class="box"><svg id="gDeg" role="img" aria-label="全員のタイムの変わり方"></svg></div>
-<p class="tip">色はタイヤの種類。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は計算に使った周。「傾向」は、周を重ねるとタイムが一方向に変わっていく様子が、どれだけはっきりしているか（R² が0.6以上で「はっきり」、0.25以上で「弱い」）。使った周が12周より少ないか、傾向が見えない（R² が0.25未満）ものは「参考」として下にまとめ、薄く描いています。表には、線のまわりの散らばり（ばらつき）も出しています。</p>
+<details class="howto"><summary>この図の見方</summary><p class="tip">棒の色はタイヤの種類。右は、10周あたりの変化、計算に使った周、傾向。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は計算に使った周。「傾向」は、周を重ねるとタイムが一方向に変わっていく様子が、どれだけはっきりしているか（R² が0.6以上で「はっきり」、0.25以上で「弱い」）。使った周が12周より少ないか、傾向が見えない（R² が0.25未満）ものは「参考」として下にまとめ、薄く描いています。表には、線のまわりの散らばり（ばらつき）も出しています。</p></details>
 <details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>タイヤ</th><th>10周あたり</th><th>使った周</th><th>傾向（R²）</th><th>ばらつき</th></tr></thead><tbody id="degTb"></tbody></table></details></section>
 
 <section id="qualSec" hidden><h2>予選・グリッド・決勝</h2><p class="q">左から予選の順位、スタートの位置（グリッド）、決勝の順位。</p>
@@ -212,7 +213,7 @@ function drawQA(){const sec=document.getElementById('qaSec');if(!D.qa||!D.qa.len
 const OF=a=>(D.off||{})[a]||{};
 function drawResTbl(){document.getElementById('resTb').innerHTML=D.drivers.map(d=>{const st=stOf(d.a),cl=d.f&&!S[d.a].out;return `<tr><td>${cl?d.f+(st==='dnf'?'（DNF）':''):stTag(d.a)}</td><td>${d.n}</td><td>${d.t}</td><td>${OF(d.a).pitlane?'ピットレーン':d.g}</td><td>${cl&&!OF(d.a).pitlane?(d.g-d.f>0?'+':'')+(d.g-d.f):'—'}</td><td>${OF(d.a).gap!=null?(OF(d.a).gap?'+'+OF(d.a).gap.toFixed(3):'—'):OF(d.a).lapped?'+'+OF(d.a).lapped+'周':'—'}</td></tr>`;}).join('');}
 function drawDegTbl(){const jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};document.getElementById('degTb').innerHTML=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort).map((o,i)=>`<tr><td>${o.g.ref?'参考':i+1}</td><td>${o.d.n}</td><td>${jp[o.g.cp]||o.g.cp}</td><td>${(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)}秒</td><td>${o.g.n}周</td><td>${o.g.trend}（${o.g.r2.toFixed(2)}）</td><td>${o.g.spread}（±${o.g.sd.toFixed(2)}秒）</td></tr>`).join('');}
-let gapMax=80;
+let gapMax=10;
 function drawTabs(){const at=[10,20,30,40,D.N].filter((v,i,l)=>v<=D.N&&l.indexOf(v)===i);
   const head=`<thead><tr><th></th><th>ドライバー</th>${at.map(n=>`<th>${n}周</th>`).join('')}</tr></thead>`;
   const rows=f=>D.drivers.map((d,i)=>`<tr><td>${d.f&&!S[d.a].out?d.f:stTag(d.a)}</td><td>${d.n}</td>${at.map(n=>`<td>${f(d.a,n-1)}</td>`).join('')}</tr>`).join('');
@@ -337,7 +338,7 @@ function drawBar(){const b=document.getElementById('bar');b.innerHTML=sel.map(a=
   const cy=document.getElementById('cpy');if(cy)cy.onclick=()=>{try{navigator.clipboard.writeText(location.href).then(()=>{cy.textContent='コピーしました';}).catch(()=>{});}catch(e){}};
   b.querySelectorAll('.chip').forEach(c=>c.onclick=()=>pick(c.dataset.a));const c=document.getElementById('clr');if(c)c.onclick=()=>{sel=[];draw();};}
 function drawPos(){
-  document.getElementById('posQ').textContent='1周ごとに、コントロールラインを通った順番。'+scText()+'「→10位」は、レース後のペナルティなどで最終順位が変わった人。';
+  document.getElementById('posQ').textContent='1周ごとの順位。黄色はセーフティカー。';document.getElementById('posHow').textContent='各周でコントロールラインを通った順番。'+scText()+'「→10位」は、レース後のペナルティなどで最終順位が変わった人。';
   drawLapPos();}
 // per-race settings: related news for the three stories, and the comparison presets
 const SITE='https://f1gridwalk.github.io',RACE=__RACE__;
@@ -466,7 +467,7 @@ function drawGap(){const svg=document.getElementById('gGap');svg.innerHTML='';co
   const x=i=>L+(w-L-R)*(i-1)/(D.N-1),y=v=>T+(h-T-B)*v/MAX;
   (D.scs||[]).forEach(([s0,s1,k])=>el('rect',{x:x(s0),y:T,width:Math.max(2,x(s1)-x(s0)),height:h-T-B,fill:css('--sc'),opacity:k==='VSC'?.3:.5},svg));
   for(let v=0;v<=MAX;v+=MAX/4){el('line',{x1:L,x2:w-R,y1:y(v),y2:y(v),stroke:css('--grid')},svg);const t=el('text',{x:L-4,y:y(v)+3.5,'text-anchor':'end','font-size':10,fill:css('--muted')},svg);t.textContent=v?'+'+v:'先頭';}
-  document.getElementById('gapOut').textContent=MAX;const gt=document.getElementById('gapTabs');gt.innerHTML=[[80,'全体（80秒まで）'],[10,'上位（10秒まで）']].map(([v,t])=>`<button type="button" class="tab" aria-pressed="${gapMax===v}" data-v="${v}">${t}</button>`).join('');gt.querySelectorAll('button').forEach(b=>b.onclick=()=>{gapMax=+b.dataset.v;draw();});
+  document.getElementById('gapOut').textContent=MAX;const gt=document.getElementById('gapTabs');gt.innerHTML=[[10,'上位（10秒まで）'],[80,'全体（80秒まで）']].map(([v,t])=>`<button type="button" class="tab" aria-pressed="${gapMax===v}" data-v="${v}">${t}</button>`).join('');gt.querySelectorAll('button').forEach(b=>b.onclick=()=>{gapMax=+b.dataset.v;draw();});
   [1,10,20,30,40,50].forEach(i=>{const t=el('text',{x:x(i),y:h-6,'text-anchor':'middle','font-size':10,fill:css('--muted')},svg);t.textContent=i===1?'1周':i;});
   evMarks(svg,x,T-8,h-B);lapMark(svg,n=>x(n),T,h-B);const cp=el('clipPath',{id:'gapClip'},svg);el('rect',{x:L,y:T-2,width:w-L-R+6,height:h-T-B+4},cp);
   const ends=[];D.drivers.forEach(d=>{const g=D.G[d.a];let li=-1;g.forEach((v,i)=>{if(v!=null)li=i;});if(li>=0)ends.push({d,li,v:g[li],fin:li>=D.N-2&&g[li]<=MAX});});
@@ -486,7 +487,7 @@ function degOf(a){let best=null;D.st[a].forEach(([cp,s0,s1])=>{const {xs,ys}=sti
       best={n:xs.length,cp,len:s1-s0+1,v:k*10,sd,spread,r2,trend,ref:xs.length<12||r2<.25};}});return best;}
 const degSort=(p,q)=>(p.g.ref-q.g.ref)||(p.g.v-q.g.v);
 function drawDeg(){const svg=document.getElementById('gDeg');svg.innerHTML='';const col={SOFT:css('--soft'),MEDIUM:css('--medium'),HARD:css('--hard'),INTERMEDIATE:css('--inter'),WET:css('--wet')},jp={SOFT:'ソフト',MEDIUM:'ミディアム',HARD:'ハード',INTERMEDIATE:'インター',WET:'ウェット'};
-  const ds=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort);const w=W('gDeg'),L=112,R=150,T=18,rowH=22,h=T+rowH*ds.length+4;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+  const ds=D.drivers.map(d=>({d,g:degOf(d.a)})).filter(o=>o.g).sort(degSort);const w=W('gDeg'),L=104,R=124,T=18,rowH=22,h=T+rowH*ds.length+4;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
   const lo=Math.min(0,...ds.map(o=>o.g.v)),hi=Math.max(0,...ds.map(o=>o.g.v)),bx=v=>L+4+(w-L-R-8)*(v-lo)/Math.max(.2,hi-lo);
   const hd=el('text',{x:bx(0),y:11,'text-anchor':hi>0?'middle':'end','font-size':10,fill:css('--muted')},svg);hd.textContent='← 速くなった　0';
   el('line',{x1:bx(0),x2:bx(0),y1:T-2,y2:h-2,stroke:css('--muted'),'stroke-width':1},svg);
@@ -494,7 +495,7 @@ function drawDeg(){const svg=document.getElementById('gDeg');svg.innerHTML='';co
   ds.forEach((o,i)=>{const d=o.d,a=d.a,yy=T+i*rowH,op=(dim(a)?.25:1)*(o.g.ref?.55:1),g=el('g',{class:'hit',opacity:op},svg);
     el('rect',{x:0,y:yy,width:w,height:rowH,fill:'transparent'},g);const t=el('text',{x:L-6,y:yy+15,'text-anchor':'end','font-size':12,'font-weight':sel.includes(a)?700:500,fill:css('--ink')},g);t.textContent=d.n;
     const x0=Math.min(bx(0),bx(o.g.v)),bw=Math.max(3,Math.abs(bx(o.g.v)-bx(0)));el('rect',{x:x0,y:yy+5,width:bw,height:12,rx:3,fill:col[o.g.cp]||css('--muted')},g);
-    const v=el('text',{x:w-R+6,y:yy+15,'font-size':10.5,fill:css('--muted')},g);v.textContent=(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)+'秒 '+(jp[o.g.cp]||o.g.cp)+o.g.n+'周 '+(o.g.ref?'参考':'傾向'+o.g.trend);
+    const v=el('text',{x:w-R+6,y:yy+15,'font-size':10.5,fill:css('--muted')},g);v.textContent=(o.g.v>0?'+':'−')+Math.abs(o.g.v).toFixed(2)+'秒 '+o.g.n+'周 '+(o.g.ref?'参考':o.g.trend);
     g.addEventListener('click',()=>pick(a));});}
 function drawDuel(){const box=document.getElementById('duel');if(sel.length<2){box.innerHTML='';return;}const a=sel[0],b=sel[1],A=by[a],B=by[b],ca=A.c,cb=A.c===B.c?css('--muted'):B.c;
   const c1=clean(a),c2=clean(b);let wa=0,wb=0;for(let i=0;i<D.N;i++){if(c1[i]!=null&&c2[i]!=null){if(c1[i]<c2[i])wa++;else if(c2[i]<c1[i])wb++;}}
