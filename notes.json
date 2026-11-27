@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-11-28T00:40:00+09:00",
+  "updatedAt": "2026-11-28T06:30:00+09:00",
   "notes": [
+    {
+      "id": "note-formula1report-qatar-fp2",
+      "platform": "note",
+      "site": "Formula1 Report",
+      "lang": "ja",
+      "paid": false,
+      "cat": "分析",
+      "author": "Yoshito",
+      "title": "【FP2】アントネッリ再び最速。荒れたFP2、セッションは2度の赤旗&VSCを経て13分間の延長。フェラーリは苦しいセッションに【カタールGP】",
+      "summary": "カタールGPのFP2を時系列で追い、アントネッリがミディアムで1分23秒077の最速だったと整理した。多くのチームがFP1より車の後ろの安定を削ってフロントの向きを優先し、リアが神経質になったのは今季の低ダウンフォース規則のせいだとの見立て。FP3が予選調整の鍵になると見る。",
+      "url": "https://note.com/formula1report/n/nb0d67f88c4a7",
+      "published": "2026-11-28T01:19:37+09:00",
+      "teams": [
+        "mercedes",
+        "ferrari"
+      ],
+      "circuit": "lusail"
+    },
     {
       "id": "note-formula1report-qatar-fp1",
       "platform": "note",
@@ -20,19 +38,19 @@
       "circuit": "lusail"
     },
     {
-      "id": "substack-somersf1-qatar-document-cache",
-      "cat": "テクニカル",
-      "title": "2026年カタールGPの資料キャッシュとテクニカル・ジャーナル",
-      "orig": "2026 Qatar Grand Prix document cache and tech journal",
-      "summary": "ストレートモードのゾーンは4か所、オーバーテイク検知は最終コーナー後といったFIA資料の内容を整理している。ピレリは1スティント27周が上限で、ピット損失は約26.5秒と紹介。決勝の回生は8MJ、オーバーテイク使用時は8.5MJという数字も示し、週末中に更新するという。",
-      "url": "https://somersf1.substack.com/p/2026-qatar-grand-prix-document-cache",
-      "published": "2026-11-26T12:00:00+00:00",
-      "circuit": "lusail",
+      "id": "substack-f1iq-qatar-preview",
       "platform": "substack",
-      "site": "Somers F1",
+      "site": "F1 IQ",
       "lang": "en",
       "paid": false,
-      "author": "Somers F1"
+      "cat": "分析",
+      "author": "Flip Jacobsen",
+      "title": "カタールGPプレビュー",
+      "orig": "Qatar Grand Prix Preview",
+      "summary": "ロサイルはC1が最も硬いタイヤでも持つか分からず、1スティント27周の上限が戦略を左右するとの見立て。過去4回の開催で優勝の50%がポールから、75%がフロントローから出ており、リタイア率は13.8%と平均より高いと数字で示す。ベアマンの周回数の少なさなど選手別の記録も並べている。",
+      "url": "https://f1iq.substack.com/p/qatar-grand-prix-preview",
+      "published": "2026-11-26T21:24:43+00:00",
+      "circuit": "lusail"
     },
     {
       "id": "note-formula1report-qatar-thursday",
@@ -49,6 +67,36 @@
       "author": "Formula1report"
     },
     {
+      "id": "substack-gpexplained-week48-qatar",
+      "platform": "substack",
+      "site": "GP Explained",
+      "lang": "en",
+      "paid": false,
+      "cat": "戦略",
+      "author": "GP Explained",
+      "title": "第48週｜カタールGP：必須の2回ピット、決着のつかない戦い、F1究極のタイヤテスト",
+      "orig": "Week 48 | Qatar GP: Two Mandatory Pit Stops, Unfinished Battles and F1's Ultimate Tyre Test",
+      "summary": "ピレリの1セット27周の上限で全車が最低2回タイヤを替えることになり、勝負は停止のタイミングだと論じる。ミディアム→ハード→ハードなど2ストップの例を示し、早い段階でセーフティカーが出ると後の選択肢が狭まると指摘。ウィリアムズのコスト上限超過にも触れている。",
+      "url": "https://gpexplained.substack.com/p/week-48-qatar-gp-two-mandatory-pit",
+      "published": "2026-11-26T13:03:10+00:00",
+      "circuit": "lusail"
+    },
+    {
+      "id": "substack-somersf1-qatar-document-cache",
+      "cat": "テクニカル",
+      "title": "2026年カタールGPの資料キャッシュとテクニカル・ジャーナル",
+      "orig": "2026 Qatar Grand Prix document cache and tech journal",
+      "summary": "ストレートモードのゾーンは4か所、オーバーテイク検知は最終コーナー後といったFIA資料の内容を整理している。ピレリは1スティント27周が上限で、ピット損失は約26.5秒と紹介。決勝の回生は8MJ、オーバーテイク使用時は8.5MJという数字も示し、週末中に更新するという。",
+      "url": "https://somersf1.substack.com/p/2026-qatar-grand-prix-document-cache",
+      "published": "2026-11-26T12:00:00+00:00",
+      "circuit": "lusail",
+      "platform": "substack",
+      "site": "Somers F1",
+      "lang": "en",
+      "paid": false,
+      "author": "Somers F1"
+    },
+    {
       "id": "substack-f1iq-pitstops-2026",
       "platform": "substack",
       "site": "F1iQ",
@@ -63,35 +111,6 @@
       "published": "2026-11-26T04:58:20+09:00"
     },
     {
-      "id": "substack-f1guydan-qatar-statpack",
-      "platform": "substack",
-      "site": "The DRS Zone by F1GuyDan",
-      "lang": "en",
-      "paid": false,
-      "cat": "分析",
-      "author": "Daniel Valente",
-      "title": "2026年カタールGP スタットパック",
-      "orig": "2026 Qatar F1 Stat Pack",
-      "summary": "カタールGPを前に、ルサイルの基本データと過去の記録、ドライバーごとの連続記録や予選対決の数字をまとめた記事。コースレコードはノリスの1分22秒384、トラックレコードはピアストリの1分19秒387で、フェルスタッペンが同地最多の3勝という。ピアストリ、ノリス、アントネッリ、ルクレール、ハミルトンなど約16人の個別データも並べている。",
-      "url": "https://f1guydan.substack.com/p/2026-qatar-f1-stat-pack",
-      "published": "2026-11-24T21:04:51+09:00",
-      "circuit": "lusail"
-    },
-    {
-      "id": "note-formula1report-qatar-tyre-allocation",
-      "cat": "戦略",
-      "title": "【分析】C1〜C3の最も硬いタイヤアロケーションを採用。高速コーナーによるタイヤ負荷と最大27周の使用制限が決勝戦略の鍵に【カタールGP】",
-      "summary": "カタールGPで最も硬いC1〜C3が持ち込まれる点を整理し、高速コーナーの連続によるタイヤ負荷と最大27周の使用制限が決勝の戦略を左右するという見立てを示している。ルサイルの特徴とコースレコードにも触れて分析している。",
-      "url": "https://note.com/formula1report/n/nae3e5996ef12",
-      "published": "2026-11-26T01:07:29+09:00",
-      "circuit": "lusail",
-      "platform": "note",
-      "site": "Formula1report",
-      "lang": "ja",
-      "paid": false,
-      "author": "Formula1report"
-    },
-    {
       "id": "note-formula1report-costcap-2025-result",
       "cat": "チーム",
       "title": "FIA、2025年コストキャップ審査結果を発表。ウィリアムズに軽微な超過違反、罰金と開発テスト量1.5％削減。アルピーヌにも手続き違反が認定",
@@ -102,6 +121,20 @@
         "williams",
         "alpine"
       ],
+      "platform": "note",
+      "site": "Formula1report",
+      "lang": "ja",
+      "paid": false,
+      "author": "Formula1report"
+    },
+    {
+      "id": "note-formula1report-qatar-tyre-allocation",
+      "cat": "戦略",
+      "title": "【分析】C1〜C3の最も硬いタイヤアロケーションを採用。高速コーナーによるタイヤ負荷と最大27周の使用制限が決勝戦略の鍵に【カタールGP】",
+      "summary": "カタールGPで最も硬いC1〜C3が持ち込まれる点を整理し、高速コーナーの連続によるタイヤ負荷と最大27周の使用制限が決勝の戦略を左右するという見立てを示している。ルサイルの特徴とコースレコードにも触れて分析している。",
+      "url": "https://note.com/formula1report/n/nae3e5996ef12",
+      "published": "2026-11-26T01:07:29+09:00",
+      "circuit": "lusail",
       "platform": "note",
       "site": "Formula1report",
       "lang": "ja",
@@ -126,6 +159,36 @@
       "circuit": "lusail"
     },
     {
+      "id": "substack-f1iq-different-vegas-spectacle",
+      "platform": "substack",
+      "site": "F1iQ",
+      "lang": "en",
+      "paid": false,
+      "cat": "分析",
+      "author": "Flip Jacobsen",
+      "title": "もう一つのラスベガスの見世物",
+      "orig": "A Different Vegas Spectacle",
+      "summary": "初日が流れて事実上のスプリント週末となり、低温でハードタイヤが使えなかったラスベガスGPを振り返る。フェルスタッペンのバッテリー配分を軸にした勝利やフェラーリの接触を取り上げ、規則の明確化の必要性とデータが示すものを論じている。",
+      "url": "https://f1iq.substack.com/p/a-different-vegas-spectacle",
+      "published": "2026-11-25T01:58:03+09:00",
+      "circuit": "lasvegas"
+    },
+    {
+      "id": "substack-f1guydan-qatar-statpack",
+      "platform": "substack",
+      "site": "The DRS Zone by F1GuyDan",
+      "lang": "en",
+      "paid": false,
+      "cat": "分析",
+      "author": "Daniel Valente",
+      "title": "2026年カタールGP スタットパック",
+      "orig": "2026 Qatar F1 Stat Pack",
+      "summary": "カタールGPを前に、ルサイルの基本データと過去の記録、ドライバーごとの連続記録や予選対決の数字をまとめた記事。コースレコードはノリスの1分22秒384、トラックレコードはピアストリの1分19秒387で、フェルスタッペンが同地最多の3勝という。ピアストリ、ノリス、アントネッリ、ルクレール、ハミルトンなど約16人の個別データも並べている。",
+      "url": "https://f1guydan.substack.com/p/2026-qatar-f1-stat-pack",
+      "published": "2026-11-24T21:04:51+09:00",
+      "circuit": "lusail"
+    },
+    {
       "id": "note-sentaroh-vegas-verstappen-race",
       "platform": "note",
       "site": "仙太郎",
@@ -140,21 +203,6 @@
       "teams": [
         "redbull"
       ],
-      "circuit": "lasvegas"
-    },
-    {
-      "id": "substack-f1iq-different-vegas-spectacle",
-      "platform": "substack",
-      "site": "F1iQ",
-      "lang": "en",
-      "paid": false,
-      "cat": "分析",
-      "author": "Flip Jacobsen",
-      "title": "もう一つのラスベガスの見世物",
-      "orig": "A Different Vegas Spectacle",
-      "summary": "初日が流れて事実上のスプリント週末となり、低温でハードタイヤが使えなかったラスベガスGPを振り返る。フェルスタッペンのバッテリー配分を軸にした勝利やフェラーリの接触を取り上げ、規則の明確化の必要性とデータが示すものを論じている。",
-      "url": "https://f1iq.substack.com/p/a-different-vegas-spectacle",
-      "published": "2026-11-25T01:58:03+09:00",
       "circuit": "lasvegas"
     },
     {
@@ -713,57 +761,6 @@
       "url": "https://note.com/formula1report/n/nb08e0bd6f5ba",
       "published": "2026-11-08T12:12:08+09:00",
       "circuit": "interlagos"
-    },
-    {
-      "id": "blog-f1laptime-mexico-race-pace",
-      "platform": "blog",
-      "site": "F1ラップタイム研究室",
-      "lang": "ja",
-      "paid": false,
-      "cat": "分析",
-      "author": "Takumi",
-      "title": "2026年メキシコGP レースペース分析",
-      "summary": "メキシコGPの純粋なレースペースを推定した分析。フェルスタッペンとルクレールをほぼ同等の基準とし、アントネッリ、ハミルトン、ノリスが0.2秒前後、ラッセルが0.3秒差、ピアストリが0.5秒差と整理する。タイヤ種別や燃料の影響を補正した推定値で、信頼度も併記している。",
-      "url": "https://f1-lap-time.com/?page_id=17733",
-      "published": "2026-11-08T12:00:00+09:00",
-      "circuit": "mexico"
-    },
-    {
-      "id": "note-formula1report-saopaulo-quali-report",
-      "platform": "note",
-      "site": "F1レポート",
-      "lang": "ja",
-      "paid": false,
-      "cat": "予選",
-      "author": "formula1report",
-      "title": "【予選】ノリスが3年連続インテルラゴスでポール獲得。大雨による長時間中断と刻々と変わる路面、ラッセルは最後のアタックを逃す【サンパウロGP】",
-      "summary": "サンパウロGP予選の経過をたどるレポート。ノリスはQ3の1分27秒470でポールを獲得し、2番手ラッセルとは0.204秒差だったとまとめる。大雨による赤旗で再開まで約1.5時間かかり、路面が刻々と変わる中でグリッド降格を受けた中団勢にも好機があったと見る。",
-      "url": "https://note.com/formula1report/n/nc8c27a123e4b",
-      "published": "2026-11-08T05:42:10+09:00",
-      "circuit": "interlagos",
-      "teams": [
-        "mclaren",
-        "mercedes"
-      ]
-    },
-    {
-      "id": "note-formula1report-brazil-fp3",
-      "platform": "note",
-      "site": "F1レポート",
-      "lang": "ja",
-      "paid": false,
-      "cat": "分析",
-      "author": "formula1report",
-      "title": "【FP3】フェルスタッペン最速、ハミルトン&ストロールはトラブルで走行機会を喪失。セッション直後には雨が到来、予選に向けて不穏な空模様に【サンパウロGP】",
-      "summary": "サンパウロGPのFP3を振り返るレポート。フェルスタッペンが最速で、ハミルトンとストロールはマシントラブルで走行機会を失ったと整理する。パワーユニット規定超過でグリッド降格となるドライバーが多く、雨が降れば中団勢にも好機が生まれるという見立てで締めている。",
-      "url": "https://note.com/formula1report/n/n0ce15ab051e3",
-      "published": "2026-11-08T00:41:00+09:00",
-      "circuit": "interlagos",
-      "teams": [
-        "redbull",
-        "ferrari",
-        "astonmartin"
-      ]
     }
   ]
 }
