@@ -898,6 +898,10 @@ def build_lenses(arch, flag_map):
         B.append(f'<section class="lens-sec sdesk"><h2>SOURCE DESK</h2><p class="lens-lead">この記事のもとになった{len(desk)}本の記事（{n_src}媒体）。すべて原文に飛びます。</p><ul>{rows}</ul></section>')
         if L.get('noteUrl'):
             B.append(f'<p class="lens-note" style="margin-top:22px">この回の読みものはnoteでも公開しています → <a href="{e(L["noteUrl"])}" target="_blank" rel="noopener" data-track="click/lens/{e(slug)}/note">noteで読む ↗</a></p>')
+        cd_ = sorted({(int(m.group(1)), int(m.group(2))) for t in re.findall(r'【[^】]*訂正】', json.dumps(L, ensure_ascii=False)) for m in [CORR_RE.match(t + 'x')] if m})
+        if cd_:  # corrected columns say so at the end and link the corrections page (outside review, 27 Nov 2026)
+            B.append('<p class="lens-note" style="margin-top:22px">更新履歴：' + '、'.join(f'{mo}月{d}日に訂正' for mo, d in cd_)
+                     + '（<a href="/corrections/" data-track="click/lens/' + e(slug) + '/corrections">訂正の記録</a>）</p>')
         B.append('<p class="credit" style="text-align:left;margin-top:22px">要約と比較は F1 Grid Walk が各記事をもとに独自にまとめたものです。記事の著作権は各媒体に帰属します。</p>')
 
         title = f'{L["title"]}｜F1グリッドウォーク'
@@ -5132,7 +5136,9 @@ def main():
         if a.get('kind', 'news') in ('fan',):
             continue
         d_ = when(a).astimezone(JST)
-        si.append({'t': a['title'], 'u': f'/news/{a["id"]}/', 'g': a.get('source', ''), 'd': f'{d_.year % 100}/{d_.month}/{d_.day}', 'k': a.get('topic', '')})
+        # the teams' Japanese names too, so ハース finds a news whose title only says ベアマン (outside review, 27 Nov 2026)
+        tj = ' '.join(TEAMS_ALL[k]['name'] for k in (a.get('teams') or []) if k in TEAMS_ALL and TEAMS_ALL[k].get('name'))
+        si.append({'t': a['title'], 'u': f'/news/{a["id"]}/', 'g': a.get('source', ''), 'd': f'{d_.year % 100}/{d_.month}/{d_.day}', 'k': (a.get('topic', '') + ' ' + tj).strip()})
     write('search-index.json', json.dumps(si, ensure_ascii=False, separators=(',', ':')))
 
     # robots.txt: everything may be crawled; say where the sitemap is
