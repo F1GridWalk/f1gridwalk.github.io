@@ -112,6 +112,8 @@ Optional field: primary (true) — set it on a news article only when the outlet
 
 Topics: "topic" is a short English slug for the underlying story. Articles from different outlets about the same story MUST share the slug; reuse existing slugs. For every topic with articles from 2+ outlets keep an entry in the top-level "topics" object: {"title": "<Japanese headline for the whole story, ~30–45 chars>", "summary": "<own 3–5 sentence summary, ~200–300 chars, combining facts confirmed across the outlets; for rumour topics say it is unconfirmed>"}. Update when new facts arrive; remove topics whose articles are gone. When you rewrite a topic, keep each article's "provider" field. Leftover "lens" fields (step 4b, stopped) may stay or be removed.
 
+What is new (owner's OK, 27 Nov 2026): when a new article joins a topic that already has articles from earlier days (in articles.json or news/archive.json), add "new": one plain Japanese sentence (at most 60 characters) saying the fact that first appears in THIS article. If you can, also add "before": one sentence (at most 60 characters) on how things stood until then. Write both only from this article and the earlier articles' summaries; never guess. If nothing is clearly new, leave both out. The site shows them at the top of the article page as 「今回新しく分かったこと」 (前回まで／今回).
+
 New articles.json: {"updatedAt": "<now, +09:00>", "topics": {...}, "articles": [new..., existing from the last 7 days...]}, max 80, newest first, never drop the featured one (but move "featured" to a newer, more important article when one exists); remove articles that went behind a paywall.
 
 ## 4b. World media lens — STOPPED (owner's decision, 12 Oct 2026)
