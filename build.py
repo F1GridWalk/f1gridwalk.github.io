@@ -1122,11 +1122,12 @@ def deep_no(D):
 
 
 def deep_for_article(a):
-    """The newest DEEP GRID issue that goes deeper into this news article (same circuit, team or topic)."""
+    """The newest DEEP GRID issue on this news article's own topic. A shared team or circuit alone is too loose
+    (a Qatar tyre news got the steering issue), so nothing is shown then (outside review, 27 Nov 2026)."""
+    if not a.get('topic'):
+        return None
     for D in DEEPS:
-        if (D.get('circuit') and a.get('circuit') == D['circuit']) or \
-           (set(D.get('teams') or []) & set(a.get('teams') or [])) or \
-           (a.get('topic') and a['topic'] in (D.get('topics') or [])):
+        if a['topic'] in (D.get('topics') or []):
             return D
     return None
 
@@ -3653,7 +3654,8 @@ def build_about():
             '<tr><th>訂正するかどうか</th><td>F1 Grid Walk 編集部が決める</td></tr></table>'
             '<style>.ab-t{width:100%;border-collapse:collapse;font-size:14px;margin-top:4px}.ab-t th,.ab-t td{border-top:1px solid var(--line);padding:9px 6px;text-align:left;vertical-align:top}.ab-t th{width:38%;font-weight:800}</style>']),
         ('間違いの訂正', [
-            '間違いが分かったときは、はっきり訂正します。人物辞典の「確認した日」も、そのときに新しくします。']),
+            '間違いが分かったときは、はっきり訂正します。人物辞典の「確認した日」も、そのときに新しくします。',
+            'これまでの訂正は、<a href="/corrections/">訂正の記録</a>にまとめています。']),
         ('アクセス解析', [
             'ページがどれくらい読まれたかを知るために、GoatCounter を使っています。Cookie を使わず、個人を特定する情報は集めない仕組みです。',
             'また来てくれた人の数を知るために、ブラウザに「最後に来た日付」だけを残しています（localStorage）。名前やメールなど、個人が分かる情報は残しません。ブラウザの履歴やサイトのデータを消すと、なくなります。']),
@@ -3667,6 +3669,61 @@ def build_about():
           'F1 Grid Walk（F1グリッドウォーク）の運営者と、ニュース・コラム・用語辞典の作り方、AI の使い方、訂正の方針。', url, body,
           f'<style>{XP_CSS}</style>\n<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n', og_type='website'))
     return [(url, lastmod_of(url, ch_), 'monthly', '0.3')]
+
+
+CORR_RE = re.compile(r'【(\d{1,2})月(\d{1,2})日\s*訂正】([^【]+)')
+
+
+def build_corrections():
+    """corrections/ — every correction the site has marked in a published text as 【M月D日 訂正】, newest first
+    (outside review, owner's OK pending, 27 Nov 2026). Built from the texts themselves, so a new marked correction shows up by itself."""
+    def strings(x):
+        if isinstance(x, str):
+            yield x
+        elif isinstance(x, dict):
+            for v in x.values():
+                yield from strings(v)
+        elif isinstance(x, list):
+            for v in x:
+                yield from strings(v)
+    found = {}
+    srcs = [('lens', '/lens/{}/'), ('deep', '/deep/{}/'), ('topics', '/topics/{}/')]
+    for d, pat in srcs:
+        if not os.path.isdir(d):
+            continue
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith('.json'):
+                continue
+            try:
+                J = json.load(open(os.path.join(d, fn), encoding='utf-8'))
+            except Exception:
+                continue
+            if not isinstance(J, dict) or not J.get('title'):
+                continue
+            slug = J.get('slug') or fn[:-5]
+            year = str(J.get('published') or '')[:4] or '2026'
+            for t in strings(J):
+                for m in CORR_RE.finditer(t):
+                    key = (slug, m.group(3).strip())
+                    found[key] = {'dt': f'{year}-{int(m.group(1)):02d}-{int(m.group(2)):02d}', 'u': pat.format(slug),
+                                  'title': re.sub(r'<[^>]+>', '', J['title']), 'txt': m.group(3).strip()}
+    items = sorted(found.values(), key=lambda x: (x['dt'], x['u']), reverse=True)
+    li = ''.join(f'<li><time datetime="{x["dt"]}">{int(x["dt"][5:7])}月{int(x["dt"][8:10])}日</time>'
+                 f'<a href="{e(x["u"])}" data-track="click/corrections/item">{e(x["title"])}</a><p>{e(x["txt"])}</p></li>' for x in items)
+    body = ('<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a> › <a href="/about/">運営者情報・編集方針</a> › 訂正の記録</nav>'
+            '<div class="xp"><h1>訂正の記録</h1>'
+            '<p class="lead">F1 Grid Walk が公開したあとに、事実の間違いを直した記録です。新しい順に並べています。</p>'
+            '<p class="lead">直した記事には、本文の中にも「【○月○日 訂正】」と書いて、何をどう直したかを残しています。黙って直すことはしません。</p>'
+            + (f'<ul class="corr">{li}</ul>' if items else '<p class="lead">いまのところ、訂正はありません。</p>')
+            + '<p class="lead" style="margin-top:18px"><a href="/about/">← 運営者情報・編集方針へ</a></p></div>')
+    css = ('.corr{list-style:none;padding:0;margin:14px 0}.corr li{border-top:1px solid var(--line);padding:12px 0}'
+           '.corr time{display:block;font-size:12.5px;font-weight:800;color:var(--muted)}.corr a{font-weight:800;line-height:1.6}'
+           '.corr p{margin:6px 0 0;font-size:14px;line-height:1.8}')
+    url = SITE + '/corrections/'
+    ch_ = write('corrections/index.html', page('訂正の記録｜F1グリッドウォーク',
+          'F1 Grid Walk（F1グリッドウォーク）が公開後に事実の間違いを直した記録。どの記事を、いつ、どう直したか。', url, body,
+          f'<style>{XP_CSS}{css}</style>\n', og_type='website'))
+    return [(url, lastmod_of(url, ch_), 'weekly', '0.3')]
 
 
 def build_japan():
@@ -4251,7 +4308,10 @@ def build_storylines(arch, allarts):
     return sm
 
 
-SEARCH_CSS = (".sr-f{display:flex;gap:8px;margin:14px 0 6px}.sr-f input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}"
+SEARCH_CSS = (".sr-best{display:block;margin:10px 0 14px;padding:14px 16px;border:1px solid var(--line);border-left:4px solid var(--ink);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none}"
+              ".sr-best small{display:block;font-size:11.5px;font-weight:800;color:var(--muted)}.sr-best b{display:block;font-size:19px;margin:2px 0 4px}"
+              ".sr-best span{display:block;font-size:13.5px;line-height:1.7;color:var(--muted)}.sr-best em{display:block;font-style:normal;font-weight:800;font-size:14px;margin-top:6px}"
+              ".sr-f{display:flex;gap:8px;margin:14px 0 6px}.sr-f input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}"
               ".sr-f button{font:inherit;font-weight:700;padding:0 18px;border:0;border-radius:12px;background:var(--ink);color:var(--paper);cursor:pointer}"
               ".sr-n{color:var(--muted);font-size:13px;margin:6px 0 14px}.sr-g{margin:22px 0 0}.sr-g h2{font-size:15px;margin:0 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line)}"
               ".sr-g ul{list-style:none;margin:0;padding:0}.sr-g li{padding:10px 0;border-bottom:1px solid var(--line)}.sr-g li:last-child{border-bottom:0}.sr-g h2{border-bottom:0}.sr-g li a{font-weight:700;color:var(--ink);text-decoration:none;line-height:1.5}"
@@ -4274,10 +4334,15 @@ function render(v){
   var hit=function(x){return ws.every(function(w){return x._n.indexOf(w)>=0})};
   var names=(D.names||[]).filter(hit),news=(D.news||[]).filter(hit),cols=(D.cols||[]).filter(hit);
   /* a name that is the word itself comes first */
-  var w0=norm(v.trim());names.sort(function(a,b){return (norm(b.t).indexOf(w0)===0)-(norm(a.t).indexOf(w0)===0)});
+  /* the closest name first: the name itself, then a listed other name, then a name that starts or ends with the word (a surname); people before terms on a tie */
+  var w0=norm(v.trim());names.forEach(function(x){var t=norm(x.t),ks=String(x.k||'').split(/\s+/).map(norm);
+    x._s=(t===w0?4:ks.indexOf(w0)>=0?3:(t.indexOf(w0)===0||t.slice(-w0.length)===w0)?2:0);if(x._s&&/^人物/.test(x.g))x._s+=.5;});
+  names.sort(function(a,b){return b._s-a._s});
+  var best=names[0]&&names[0]._s>=2&&!(names[1]&&names[1]._s===names[0]._s)?names[0]:null;
   var R={names:names,line:news.filter(function(x){return x.g==='STORYLINE'}),cols:cols,news:news.filter(function(x){return x.g!=='STORYLINE'})};
   var total=names.length+news.length+cols.length;
   var h='<p class="sr-n">「'+esc(v.trim())+'」の検索結果：'+total+' 件</p>';
+  if(best)h+='<a class="sr-best" href="'+esc(best.u)+'" data-track="click/search/best"><small>'+esc(best.g)+'</small><b>'+esc(best.t)+'</b>'+(best.s?'<span>'+esc(best.s)+'</span>':'')+'<em>'+(/^人物/.test(best.g)?'人物ページ':'用語のページ')+' →</em></a>';
   if(!total)h+='<p>見つかりませんでした。言葉を短くするか、カタカナ・ひらがなを変えて試してください。</p>';
   G.forEach(function(g){var L=R[g[0]];if(!L.length)return;
     h+='<div class="sr-g" data-g="'+g[0]+'"><h2>'+g[1]+'（'+L.length+'）</h2><ul>'+L.map(function(x,i){
@@ -5016,6 +5081,7 @@ def main():
     by_term = add_term_reads()
     urls += build_drivers(by_term)
     urls += build_about()
+    urls += build_corrections()
     top_people_slot()
     top_rail_slot()
     add_related()
