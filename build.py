@@ -492,6 +492,21 @@ def prerender_index(data, flag_of, flag_map_ref=None):
     # the page script shows this site's times too, not the outlets' (owner's OK, 20 Nov 2026)
     st = {a['id']: SITE_PUB[a['id']] for a in arts if a['id'] in SITE_PUB}
     sth = ('<script type="application/json" id="sitetimes">' + json.dumps(st, separators=(',', ':')).replace('</', '<\\/') + '</script>') if st else ''
+    # topic -> its 海外メディアの反応 page and STORYLINE, for the top page's one-topic-one-card (27 Nov 2026)
+    sl_of = {k: L['slug'] for L in STORYLINES for k in L.get('topics', [])}
+    tmeta = {}
+    for a in sorted(arts, key=when, reverse=True)[:150]:
+        k = a.get('topic')
+        if not k or k in tmeta:
+            continue
+        m = {}
+        if k in REACT:
+            m['r'] = 1
+        if k in sl_of:
+            m['s'] = sl_of[k]
+        if m:
+            tmeta[k] = m
+    sth += '<script type="application/json" id="topicmeta">' + json.dumps(tmeta, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'
     sth += '<script type="application/json" id="srcnames">' + json.dumps(SOURCE_NAMES, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'  # one outlet, one name (21 Nov 2026)
     for name, block in (('hero', '\n'.join(hero)), ('feed', feed), ('tech', techh), ('sitetimes', sth), ('reactions', gd_top() + react_top()), ('gpdata', gd_box())):
         if not block and name != 'reactions':  # an empty 「いま各国が報じている話題」 is cleared, not left stale

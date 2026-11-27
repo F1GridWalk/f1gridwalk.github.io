@@ -1439,6 +1439,10 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hl:rgba(230,200,70,.36)}}
 :root[data-theme="dark"]{--hl:rgba(230,200,70,.36)}
 .cmp{margin:8px 0 2px}
+.tg-k{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.06em;line-height:1.4;padding:1px 7px;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none}
+html body #news .card .tg-box{display:block !important}
+html body #news .card .tg-go a{font-size:13px !important;font-weight:700 !important}
+.tg-go{display:flex;flex-wrap:wrap;gap:4px 14px;margin:6px 0 0;font-size:13px;font-weight:700}.tg-go a{color:var(--ink)}
 .cmp-btn{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:2px 0;border:0;background:none;font:inherit;font-size:12.5px;font-weight:700;color:var(--clay);cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
 .cmp-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:4px}
 .cmp-ar{font-size:11px;text-decoration:none}

@@ -369,6 +369,34 @@
     box.appendChild(btn); box.appendChild(ul);
     return box;
   }
+  var TM = null;
+  function topicMeta(){ if (TM) return TM; try { var t = document.getElementById('topicmeta'); TM = t ? JSON.parse(t.textContent) : {}; } catch(e){ TM = {}; } return TM; }
+  /* the grouped card's box: every other news of the topic (all outlets, newest first), and the topic's own pages */
+  function groupBox(a, L){
+    var others = L.slice(1), box = mk('div','cmp tg-box'), id = 'cmp-' + (++cmpSeq), tm = topicMeta()[a.topic] || {};
+    var btn = mk('button','cmp-btn'); btn.type = 'button'; btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-controls', id);
+    var ns = {}; L.forEach(function(x){ ns[x.source] = 1; });
+    btn.appendChild(mk('span','tg-k','同じ話題')); btn.appendChild(mk('span', null, Object.keys(ns).length + '媒体・' + L.length + '本の記事'));
+    var ar = mk('span','cmp-ar','▾'); ar.setAttribute('aria-hidden','true'); btn.appendChild(ar);
+    var ul = mk('ul','cmp-list'); ul.id = id; ul.hidden = true;
+    others.forEach(function(x){
+      var li = mk('li'), l = mk('a'); l.href = '/news/' + x.id + '/';
+      l.appendChild(badge(x.source)); l.appendChild(mk('span','cmp-t', x.title));
+      l.addEventListener('click', function(){ cmpEv('topicgroup/go/' + a.topic); });
+      li.appendChild(l); ul.appendChild(li);
+    });
+    box.appendChild(btn); box.appendChild(ul);
+    var links = [];
+    if (tm.r) links.push(['/reaction/' + a.topic + '/', '各国の報じ方をくらべる', 'reaction']);
+    if (tm.s) links.push(['/storyline/' + tm.s + '/', 'これまでの流れ（STORYLINE）', 'storyline']);
+    if (links.length){ var lp = mk('p','tg-go'); links.forEach(function(x){ var l = mk('a', null, x[1] + ' →'); l.href = x[0]; l.addEventListener('click', function(){ cmpEv('topicgroup/' + x[2] + '/' + a.topic); }); lp.appendChild(l); }); box.appendChild(lp); }
+    btn.addEventListener('click', function(){
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', String(open)); ul.hidden = !open; ar.textContent = open ? '▴' : '▾';
+      if (open) cmpEv('topicgroup/open/' + a.topic);
+    });
+    return box;
+  }
   function card(a){
     var it = mk('article','card');
     it.setAttribute('data-c', colorOf(a.source));
@@ -394,7 +422,7 @@
     var h = mk('h3'); h.appendChild(artLink(a, a.title)); it.appendChild(h);
     it.appendChild(mk('p', null, a.summary));
     if (a.orig) it.appendChild(mk('span','orig','“' + unq(a.orig) + '”'));
-    { var cmp = compareBox(a); if (cmp) it.appendChild(cmp); }
+    { var grp = state.inFeed && state.group && state.group[a.id]; var cmp = grp ? groupBox(a, grp) : compareBox(a); if (cmp) it.appendChild(cmp); }
     if (a.isNote){ var host = ''; try { host = new URL(a.url).hostname.replace(/^www\./, ''); } catch(e){} var dst = mk('p','note-dest'); dst.appendChild(document.createTextNode('個人の見解です · リンク先 ')); dst.appendChild(extLink(a.url, host + ' ↗')); it.appendChild(dst); }
     var tt = tagsFor(a); if (tt) it.appendChild(tt);
     var foot = mk('div','card-foot');
@@ -590,11 +618,20 @@
     if (state.view === 'latest'){
       el('count').textContent = shown.length + (deskSplit ? '本のニュース · 新しい順 · うわさ・掲示板・テックは下の章に' : '本の記事 · 新しい順');
       var g = mk('div','grid');
+      /* one topic, one card (outside review, 27 Nov 2026): when 3+ news on the same topic are in the list, the newest
+         stays as the card and the others go inside it. Nothing is removed: they open from the card and stay in 一覧. */
+      state.group = {};
+      if (state.src === 'all'){
+        var tcnt = {}, gone = {};
+        shown.forEach(function(a){ if (a.isNote || a.kind === 'fan' || a.kind === 'voice' || !a.topic) return; (tcnt[a.topic] = tcnt[a.topic] || []).push(a); });
+        Object.keys(tcnt).forEach(function(k){ var L = tcnt[k]; if (L.length < 3) return; state.group[L[0].id] = L; L.slice(1).forEach(function(x){ gone[x.id] = 1; }); });
+        shown = shown.filter(function(a){ return !gone[a.id]; });
+      }
       var lead = -1; for (var li = 0; li < shown.length; li++){ var kk = shown[li].kind || 'news'; if (kk === 'news' || kk === 'tech'){ lead = li; break; } }
       var ordered = lead > 0 ? [shown[lead]].concat(shown.slice(0, lead), shown.slice(lead + 1)) : shown;
       // first rows: desktop 8 (3 full rows with the wide lead card), phones 9; then 15 / 14 more per tap so rows stay full
       var PAGE = 30; if (!state.newsShown) state.newsShown = wide.matches ? 8 : 30;  // phones: 30 first, 30 more per tap (owner, 25 Oct 2026)
-      ordered.forEach(function(a, i){ var c = card(a); if (i >= state.newsShown) c.classList.add('cut'); g.appendChild(c); });
+      state.inFeed = true; ordered.forEach(function(a, i){ var c = card(a); if (i >= state.newsShown) c.classList.add('cut'); g.appendChild(c); }); state.inFeed = false;
       feed.appendChild(g);
       if (ordered.length > state.newsShown){
         var mb = mk('button','feed-more'); mb.type = 'button';
