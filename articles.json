@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T06:30:00+09:00",
+ "updatedAt": "2026-11-27T12:40:00+09:00",
  "topics": {
   "cadillac-bottas-2027": {
    "title": "キャデラック、2027年もボッタス起用　ハータ昇格は見送り",
@@ -48,46 +48,19 @@
   "vettel-ferrari-culture": {
    "title": "ベッテルのフェラーリ批判にハミルトンが反論「それは感じない」",
    "summary": "ベッテルが関わる新しいドキュメンタリーは、在籍当時のフェラーリでは重圧のため現場が仕事を楽しめなかったと主張している。ハミルトンは「それは自分が感じることではない」と述べ、ガレージの雰囲気は良く前向きだと語った。今季は昨年より楽しく、フェラーリは2位を争っているとも話している。"
+  },
+  "camara-haas-final-two-races": {
+   "title": "ハースのカマラ、F2タイトルを離れ最終2戦でF1出走",
+   "summary": "ハースは21歳のラファエル・カマラをカタールとアブダビでもベアマンの相棒として走らせる。F2ではポイント首位にいたが、同時参戦できないため最終2戦を欠場し、タイトルは他の選手に移る公算が大きい。カマラ本人は「少し悲しい」としつつ、F1の経験が来季の準備になると説明している。"
+  },
+  "qatar-middle-east-safety": {
+   "title": "中東情勢の中でカタールGP開催　避難計画も共有",
+   "summary": "イランと米国の緊張が続く中、FIAとF1は治安当局と連携し、カタールGPとアブダビGPを予定通り開催する方針だ。フェルスタッペンは「家にいる方がいい」と本音を漏らしつつ安全の保証は信頼するとし、サインツは最悪の場合に備えた避難計画が各チームに伝えられたことを冗談交じりに明かした。"
   }
  },
  "articles": [
   {
-   "id": "de-f1insider-alonso-virus-qatar-media-day",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "ドライバー",
-   "circuit": "lusail",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-crawford-qatar-fp1",
-   "title": "アロンソがカタールのメディアデーを欠席　ラスベガスで感染したウイルスが原因",
-   "summary": "アストンマーティンのフェルナンド・アロンソが、カタールGP前の木曜の公式メディア対応を欠席した。チームの声明によると、ラスベガスGPの週末終盤にウイルスへ感染したという。回復は進んでおり、金曜にパドックへ戻る予定で、日曜の決勝出場は危ぶまれていないとされる。金曜のフリー走行1は、以前からの決定どおり若手のジャク・クロフォードが担当し、フリー走行2から自ら走る見通しだ。クロフォードは大雨で前回の走行がほぼ流れており、カタールで再び機会を得る。",
-   "orig": "Kranker Formel-1-Weltmeister muss in Katar aussetzen",
-   "url": "https://f1-insider.com/formel-1-weltmeister-setzt-in-katar-aus-84246/",
-   "published": "2026-11-26T18:27:00+01:00"
-  },
-  {
-   "id": "de-f1insider-hamilton-contract-option-2028",
-   "kind": "rumor",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "うわさ",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "hamilton-contract-option-2028",
-   "title": "ハミルトンに2028年までの一方的な契約オプションか　英解説者の指摘と独サイト",
-   "summary": "独F1-Insiderは、スカイの解説者マーティン・ブランドルがハミルトン周辺の情報として語った内容を伝えた。ハミルトンにはフェラーリの意向と関係なく、契約を2028年末まで延ばせる一方的なオプションがあるという話だ。この条項は公式には確認されておらず、同サイトは契約時の交渉材料として現実的だとみている。ハミルトンは2027年末まで契約があり、ラスベガスでは延長はまだ考えていないと述べていた。ルクレールは2028年末まで契約を延長済みで、ハミルトンは来年1月に42歳になる。",
-   "orig": "Hamilton hat im Ferrari-Streit offenbar einen Vertrags-Trumpf",
-   "url": "https://f1-insider.com/formel-1-hamilton-ferrari-vertrag-trumpf-84242/",
-   "published": "2026-11-26T15:15:00+01:00"
-  },
-  {
-   "id": "it-formula1it-leclerc-takes-blame-engagement-rules",
+   "id": "it-formula1it-norris-red-bull-qatar-strong",
    "kind": "news",
    "lang": "it",
    "region": "イタリア",
@@ -95,14 +68,70 @@
    "cat": "チーム",
    "circuit": "lusail",
    "teams": [
+    "mclaren",
+    "redbull"
+   ],
+   "topic": "mclaren-qatar-outlook",
+   "title": "ノリス「レッドブルはここで常に速い」　マクラーレンは慎重姿勢でカタールへ",
+   "summary": "ノリスはカタールGPを前に、ラスベガスGPでのマクラーレンのダブル表彰台は事前の予想を上回る週末で、レッドブルより多くのポイントを稼げたと振り返った。一方で、チームは目指す位置にまだ届いておらず、狙ったペースも出せていないと認めた。ルサイルではライバルが毎年速いとして、決勝の予想は立てないと話している。決勝は最大周回数の制限で2ストップが必須だが、タイヤの摩耗が少ないため、状況次第では不要になるかもしれないとも語った。気温が低くマシンも以前ほど速くないので、体への負担は例年より軽いとみている。",
+   "orig": "Norris avverte la McLaren: «La Red Bull qui è sempre stata forte»",
+   "url": "https://www.formula1.it/news/34255/1/norris-avverte-la-mclaren-la-red-bull-qui-e-sempre-stata-forte",
+   "published": "2026-11-26T23:45:00+01:00"
+  },
+  {
+   "id": "it-formula1it-antonelli-humility-verstappen-lesson",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "circuit": "lusail",
+   "teams": [
+    "mercedes",
+    "redbull"
+   ],
+   "topic": "antonelli-verstappen-learning",
+   "title": "アントネッリ「フェルスタッペンから学ぶ」　タイトル後も保つ謙虚さをイタリア紙が評価",
+   "summary": "フォーミュラ1ドットイットは、フェルスタッペンとラッセルが激しい言葉を交わす中でも、20歳で初のタイトルを手にしたアントネッリは学ぶ姿勢を失っていないと評した。カタールGPのメディアデーで同選手は、フェルスタッペンとルクレールのホイール・トゥ・ホイールの攻防を見ることはまだ多くの学びがあると話した。特に防御や攻撃のときのマシンの置き方が「見ていて魅力的」だと語っている。記事は、策略家が多いと描くパドックの中で、謙虚さの手本だとした。",
+   "orig": "Tra veleni e polemiche, Antonelli offre una lezione di umiltà alla F1",
+   "url": "https://www.formula1.it/news/34253/1/tra-veleni-e-polemiche-antonelli-offre-una-lezione-di-umilta-alla-f1",
+   "published": "2026-11-26T23:02:00+01:00"
+  },
+  {
+   "id": "nl-gpblog-leclerc-contract-clause-denial",
+   "kind": "rumor",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "GPblog",
+   "cat": "うわさ",
+   "circuit": "lusail",
+   "teams": [
     "ferrari"
    ],
-   "topic": "ferrari-leclerc-internal-sanctions",
-   "title": "ルクレール「ラスベガスの接触は自分の責任」　フェラーリが「交戦規則」を導入へ",
-   "summary": "カタールGPの会見でルクレールは、ラスベガスGPでのハミルトンとの接触について責任は自分にあると認め、受け入れられない行為だと理解していると語った。ヴァスール代表はレース後に改めて話し合いを持ち、メキシコGPのあとより厳しい姿勢で臨んだという。解決策の詳細は明かさなかったが、「交戦規則」と呼び、来季タイトルを争うならなおさら重要になると述べた。ハミルトンとコース外の関係は良好だが、今は雰囲気が最良ではなく、抜け出すのは二人次第だと話した。",
-   "orig": "La Ferrari imporrà regole di ingaggio, Leclerc china la testa",
-   "url": "https://www.formula1.it/news/34244/1/la-ferrari-imporra-regole-di-ingaggio-leclerc-china-la-testa-",
-   "published": "2026-11-26T16:40:00+01:00"
+   "topic": "leclerc-number-one-clause",
+   "title": "ルクレール、ナンバー1条項のうわさを否定　「忠誠心を疑われるのが一番つらい」",
+   "summary": "GPブログは、ルクレールのフェラーリ契約にハミルトンより優先される「ナンバー1」条項があるのではないかというSNS上の臆測を、本人が否定したと伝えた。うわさに情報源は示されていない。ルクレールはカタールで同サイトなどに「そのような条項は契約に絶対にない」と話した。さらに、フェラーリへの忠誠心を問われることが何よりもつらいとし、チームを再び頂点に戻すためにあらゆることをすると語った。うわさとして広まった話を、本人の発言で打ち消す内容だ。",
+   "orig": "Leclerc persoonlijk geraakt door Ferrari-geruchten: \"Het doet me pijn\"",
+   "url": "https://www.gpblog.com/nl/nieuws/leclerc-persoonlijk-geraakt-door-ferrari-geruchten-het-doet-me-pijn",
+   "published": "2026-11-26T22:15:00+01:00"
+  },
+  {
+   "id": "nl-rn365-sainz-qatar-evacuation-plan-joke",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "カルチャー",
+   "circuit": "lusail",
+   "teams": [
+    "williams"
+   ],
+   "topic": "qatar-middle-east-safety",
+   "title": "サインツ、カタールGPの避難計画に冗談「できるだけ多く連れていく」",
+   "summary": "レーシングニュース365によると、カタールGPはイランと米国の緊張が続く中でも開催される。FIAとF1は治安当局と連携し、現時点では渡航できる安全性があると判断した。情勢が流動的なため、最悪の場合に備えた避難計画がチームに伝えられたという。ウィリアムズのサインツは、記者にも同じ説明がされたと思っていたと話し、そうでないと知ると「仲間になっていてほしかった」と笑いを誘った。記者がトンネルまでついていくと冗談を言うと、「できるだけ多く連れていく」と返した。",
+   "orig": "Sainz grapt over evacuatieplan GP Qatar: \"Neem zoveel mogelijk van jullie mee\"",
+   "url": "https://racingnews365.nl/sainz-grapt-over-evacuatieplan-gp-qatar-neem-zoveel-mogelijk-van-jullie-mee",
+   "published": "2026-11-26T22:00:00+01:00"
   },
   {
    "id": "it-formula1it-hadjar-front-wing-collapse",
@@ -123,21 +152,77 @@
    "published": "2026-11-26T19:35:00+01:00"
   },
   {
-   "id": "en-the-race-antonelli-post-title-hangover",
+   "id": "en-planetf1-perez-fia-qatar-press-conference-summons",
    "kind": "news",
    "lang": "en",
    "region": "イギリス",
-   "source": "The Race",
-   "cat": "ドライバー",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "lusail",
    "teams": [
-    "mercedes"
+    "cadillac"
    ],
-   "topic": "antonelli-post-title-slump",
-   "title": "アントネッリ「慢心していた」　メキシコGPでの戴冠後に続く不調",
-   "summary": "キミ・アントネッリはメキシコGPで2026年の王座を決めて以降の2戦で表彰台がなく、自身を「慢心していた」と認めた。タイトル決定で集中力と強度が落ち、ブラジルGPでノリスに迫られてスピンしたミスも、争いが続いていれば避けられたと考えている。ラスベガスでは2度のリフトで強い回生がかかり、直線で電力が尽きて、フェルスタッペンとの争いに敗れ4位だった。記事は2015年のハミルトンや2004年のシューマッハーも終盤に乱れたと例に挙げ、メルセデスは安全機能を追加したと報じられている。",
-   "orig": "'I was overconfident' - Antonelli battling post-title hangover",
-   "url": "https://www.the-race.com/formula-1/i-was-overconfident-antonelli-battling-post-title-hangover/",
-   "published": "2026-11-26T12:00:00+00:00"
+   "topic": "perez-qatar-press-conference",
+   "title": "ペレス、カタールGPの会見に出席せず　FIAが調査へ",
+   "summary": "PlanetF1によると、キャデラックのペレスが、カタールGP木曜の記者会見に姿を見せなかったとして、FIAスチュワードの調査を受ける。ルクレールとピアストリとの第2セッションに出席予定だったが、二人が退席するまで現れなかった。飛行機の到着が遅れたためと同サイトは把握している。本人とチーム代表は金曜、2回目の練習走行の30分後にあたる現地18時30分に出頭を求められた。6月のモナコでは遅刻のルクレールとノリスに執行猶予付き罰金5000ユーロが科されたが、今回は欠席のため重くなる可能性もある。",
+   "orig": "FIA launches Sergio Perez investigation over Qatar GP press conference breach",
+   "url": "https://www.planetf1.com/news/fia-sergio-perez-qatar-grand-prix-2026-investigation",
+   "published": "2026-11-26T18:06:00+00:00"
+  },
+  {
+   "id": "de-motorsportmagazin-bearman-ferrari-dream-options",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Magazin",
+   "cat": "ドライバー",
+   "circuit": "lusail",
+   "teams": [
+    "haas",
+    "ferrari"
+   ],
+   "topic": "bearman-haas-contract-2027",
+   "title": "ベアマン、ハース残留でも「夢はフェラーリ」　選択肢には「オープン」",
+   "summary": "モータースポーツ・マガジンは、ハースと2027年の契約を延長したベアマンが、フェラーリでの走行が夢であり続けると語ったと伝えた。フェラーリ育成の一員だが、無期限に待つつもりはなく、「すべてではないが選択肢には開かれている」と話した。ハミルトンが数年残る意向のため、2028年のフェラーリ入りは難しいとみられる。オコンが抜け、ハースで最も経験豊富になるベアマンは、1年前なら準備ができていなかったと語り、リーダー役を引き受ける。ハースは現在コンストラクターズ7位だ。",
+   "orig": "Oliver Bearman nach Haas-Vertrag: Ferrari bleibt Formel-1-Traum, aber \"offen für Optionen\"",
+   "url": "https://www.motorsport-magazin.com/formel1/news-301412-formel-1-oliver-bearman-haelt-sich-alternativen-zu-ferrari-offen/",
+   "published": "2026-11-26T18:30:00+01:00"
+  },
+  {
+   "id": "de-f1insider-alonso-virus-qatar-media-day",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ドライバー",
+   "circuit": "lusail",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-crawford-qatar-fp1",
+   "title": "アロンソがカタールのメディアデーを欠席　ラスベガスで感染したウイルスが原因",
+   "summary": "アストンマーティンのフェルナンド・アロンソが、カタールGP前の木曜の公式メディア対応を欠席した。チームの声明によると、ラスベガスGPの週末終盤にウイルスへ感染したという。回復は進んでおり、金曜にパドックへ戻る予定で、日曜の決勝出場は危ぶまれていないとされる。金曜のフリー走行1は、以前からの決定どおり若手のジャク・クロフォードが担当し、フリー走行2から自ら走る見通しだ。クロフォードは大雨で前回の走行がほぼ流れており、カタールで再び機会を得る。",
+   "orig": "Kranker Formel-1-Weltmeister muss in Katar aussetzen",
+   "url": "https://f1-insider.com/formel-1-weltmeister-setzt-in-katar-aus-84246/",
+   "published": "2026-11-26T18:27:00+01:00"
+  },
+  {
+   "id": "it-formula1it-leclerc-takes-blame-engagement-rules",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "circuit": "lusail",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-leclerc-internal-sanctions",
+   "title": "ルクレール「ラスベガスの接触は自分の責任」　フェラーリが「交戦規則」を導入へ",
+   "summary": "カタールGPの会見でルクレールは、ラスベガスGPでのハミルトンとの接触について責任は自分にあると認め、受け入れられない行為だと理解していると語った。ヴァスール代表はレース後に改めて話し合いを持ち、メキシコGPのあとより厳しい姿勢で臨んだという。解決策の詳細は明かさなかったが、「交戦規則」と呼び、来季タイトルを争うならなおさら重要になると述べた。ハミルトンとコース外の関係は良好だが、今は雰囲気が最良ではなく、抜け出すのは二人次第だと話した。",
+   "orig": "La Ferrari imporrà regole di ingaggio, Leclerc china la testa",
+   "url": "https://www.formula1.it/news/34244/1/la-ferrari-imporra-regole-di-ingaggio-leclerc-china-la-testa-",
+   "published": "2026-11-26T16:40:00+01:00"
   },
   {
    "id": "ja-voice-alonso-honda-complaint",
@@ -243,39 +328,74 @@
    ]
   },
   {
-   "id": "it-formula1it-hamilton-vettel-toxic-label",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
+   "id": "de-f1insider-hamilton-contract-option-2028",
+   "kind": "rumor",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "うわさ",
    "teams": [
     "ferrari"
    ],
-   "topic": "vettel-ferrari-culture",
-   "title": "「フェラーリは有害」の声にハミルトンが異論　今年は去年より楽しいと語る",
-   "summary": "ベッテルはドイツARDのドキュメンタリーで、在籍当時のフェラーリには楽しさが欠けていたと語った。ガレージで整備士が音楽を聴けるようオーディオを買ったが、首脳陣は当初それに反対したという。これに対しハミルトンは「そうは見ていない」と述べ、集中力や勝ちたい気持ちは前のチームと変わらないと話した。「今年は確実にずっと楽しんでいる」とも語り、隣のレッドブルのガレージにあるようなステレオがないことを冗談にした。筆者は、ベッテルの記憶は別の顔ぶれの時代のもので、今のフェラーリは変わった可能性があると論じている。",
-   "orig": "Ferrari, tutti a sparare sulla Rossa. Ma Hamilton non ci sta",
-   "url": "https://www.formula1.it/news/34240/1/ferrari-tutti-a-sparare-sulla-rossa-ma-hamilton-non-ci-sta",
-   "published": "2026-11-26T12:00:00+01:00"
+   "topic": "hamilton-contract-option-2028",
+   "title": "ハミルトンに2028年までの一方的な契約オプションか　英解説者の指摘と独サイト",
+   "summary": "独F1-Insiderは、スカイの解説者マーティン・ブランドルがハミルトン周辺の情報として語った内容を伝えた。ハミルトンにはフェラーリの意向と関係なく、契約を2028年末まで延ばせる一方的なオプションがあるという話だ。この条項は公式には確認されておらず、同サイトは契約時の交渉材料として現実的だとみている。ハミルトンは2027年末まで契約があり、ラスベガスでは延長はまだ考えていないと述べていた。ルクレールは2028年末まで契約を延長済みで、ハミルトンは来年1月に42歳になる。",
+   "orig": "Hamilton hat im Ferrari-Streit offenbar einen Vertrags-Trumpf",
+   "url": "https://f1-insider.com/formel-1-hamilton-ferrari-vertrag-trumpf-84242/",
+   "published": "2026-11-26T15:15:00+01:00"
   },
   {
-   "id": "it-formula1it-alonso-worst-race-honda",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ドライバー",
-   "circuit": "lasvegas",
+   "id": "de-motorsport-total-mclaren-qatar-strategy-trap",
+   "kind": "tech",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "テクニカル",
+   "circuit": "lusail",
    "teams": [
-    "astonmartin"
+    "mclaren"
    ],
-   "topic": "aston-honda-vegas-straights",
-   "title": "アロンソ「今年で最悪のレース」　ラスベガスでホンダ製PUの限界を訴える",
-   "summary": "アストンマーティンのアロンソは、ラスベガスGPの最終盤の2周を残してエンジンが完全に力尽き、リタイアした。今季8度目のリタイアで、本人は「エンジンはレース序盤から苦しかった」と振り返っている。直線で2〜3秒を失い、コーナーで取り戻す展開だったため「戦えていなかった」と話し、今年で恐らく最悪のレースだったと評した。ハンガリーで投入したB仕様のシャシーはコーナリング面を高く評価し、弱点はホンダ製PUだと記事は指摘する。シーズンは残り2戦で、ホンダの競争力と信頼性の不足がチームの最大の課題だ。",
-   "orig": "Alonso non ne può più della Honda: «È stata la gara peggiore dell'anno»",
-   "url": "https://www.formula1.it/news/34238/1/alonso-non-ne-puo-piu-della-honda-e-stata-la-gara-peggiore-dell-anno",
-   "published": "2026-11-26T10:50:00+01:00"
+   "topic": "qatar-tyre-limit-27-laps",
+   "title": "マクラーレン技術者が語るカタールの罠　早すぎるピットで3ストップの恐れ",
+   "summary": "マクラーレンのレースエンジニア、エイドリアン・グッドウィンは、27周のタイヤ使用上限が決勝戦略の鍵になると説明した。57周を2ストップで走るには、1回目を第3周以降に済ませ、しかも新品2セットが要る。早く入りすぎると3ストップを強いられるため、それを避けるのが最大の注意点だという。今年はスプリントがなく各車13セットのスリックを持ち、チームは少なくとも4回のピットストップが生じると見ている。昨年は7周目のセーフティカーでノリスとピアストリが待機を選び、勝利をフェルスタッペンに奪われた。",
+   "orig": "McLaren-Ingenieur erklärt Strategie-Falle in Katar: Welcher Fehler jetzt teuer wird",
+   "url": "https://www.motorsport-total.com/formel-1/news/mclaren-ingenieur-erklaert-strategie-falle-in-katar-welcher-fehler-jetzt-teuer-wird-26112610",
+   "published": "2026-11-26T13:59:00+01:00"
+  },
+  {
+   "id": "de-f1insider-ferrari-overtaking-ban-debate",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "チーム",
+   "circuit": "lusail",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-overtaking-ban-debate",
+   "title": "ハミルトンとルクレールに「追い抜き禁止」か　ヴァスールは明文化に慎重",
+   "summary": "F1インサイダーは、ラスベガスGP37周目のフェラーリ同士の接触を受け、追い抜き禁止の是非が焦点になっていると伝えた。ハミルトンがスピンし、ルクレールが10秒ペナルティを受け、フェラーリは7位と10位だった。ヴァスール代表は事前にルクレールへ「抜かない」よう伝えていたとし、「紙には書けない」と述べて、ルールではなく敬意の問題だと説明した。ベルガーはチームオーダーに絶対反対だと話す。ヴァスールはカタールGPの前にさらに話し合う予定だと報じられている。",
+   "orig": "Ferrari-Zoff! Droht Hamilton und Leclerc ein Überholverbot?",
+   "url": "https://f1-insider.com/formel-1-ferrari-zoff-droht-ueberholverbot-84236/",
+   "published": "2026-11-26T13:01:00+01:00"
+  },
+  {
+   "id": "en-the-race-antonelli-post-title-hangover",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes"
+   ],
+   "topic": "antonelli-post-title-slump",
+   "title": "アントネッリ「慢心していた」　メキシコGPでの戴冠後に続く不調",
+   "summary": "キミ・アントネッリはメキシコGPで2026年の王座を決めて以降の2戦で表彰台がなく、自身を「慢心していた」と認めた。タイトル決定で集中力と強度が落ち、ブラジルGPでノリスに迫られてスピンしたミスも、争いが続いていれば避けられたと考えている。ラスベガスでは2度のリフトで強い回生がかかり、直線で電力が尽きて、フェルスタッペンとの争いに敗れ4位だった。記事は2015年のハミルトンや2004年のシューマッハーも終盤に乱れたと例に挙げ、メルセデスは安全機能を追加したと報じられている。",
+   "orig": "'I was overconfident' - Antonelli battling post-title hangover",
+   "url": "https://www.the-race.com/formula-1/i-was-overconfident-antonelli-battling-post-title-hangover/",
+   "published": "2026-11-26T12:00:00+00:00"
   },
   {
    "id": "de-motorsport-total-ferrari-two-roosters",
@@ -296,39 +416,92 @@
    "published": "2026-11-26T12:03:00+01:00"
   },
   {
-   "id": "de-motorsport-total-redbull-nael-junior",
+   "id": "de-motorsporttotal-lindblad-vegas-spin-not-over",
    "kind": "news",
    "lang": "de",
    "region": "ドイツ",
    "source": "Motorsport-Total.com",
    "cat": "ドライバー",
+   "circuit": "lusail",
    "teams": [
-    "redbull"
+    "racingbulls"
    ],
-   "topic": "redbull-junior-nael-2027",
-   "title": "レッドブルがテオフィル・ナエルと契約　ツォロフの後任として2027年F2へ",
-   "summary": "レッドブルは19歳のフランス人、テオフィル・ナエルをジュニアプログラムに加え、2027年はカンポスからF2に参戦させる。ナエルは2023年にスペインF4王者、2025年にマカオGPを制し、今季のF3は3勝で総合5位だった。F2ではカンポスの同僚がF3王者のウーゴ・ウゴチュクウになる。後任に回るニコラ・ツォロフは、レーシングブルズの席をローソンに奪われ、2027年はレッドブルとレーシングブルズのテスト兼リザーブを務める見込みだ。ツォロフは現在F2首位のカマラに7点差で、カタールとアブダビでタイトル獲得を狙う。",
-   "orig": "Tsolov-Nachfolger gefunden: Das ist Red Bulls neuer Juniorfahrer",
-   "url": "https://www.motorsport-total.com/formel-1/news/tsolov-nachfolger-gefunden-das-ist-red-bulls-neuer-juniorfahrer-26112603",
-   "published": "2026-11-26T09:02:00+01:00"
+   "topic": "lindblad-vegas-spin",
+   "title": "リンドブラッド「まだ消化できていない」　ベガスSC中のスピンを語る",
+   "summary": "モータースポーツ・トータルによると、レーシングブルズの19歳ルーキー、リンドブラッドはラスベガスGPで唯一のセーフティカー中にタイヤを温めている最中にスピンし、貴重な入賞のチャンスを逃した。バックに入れられずマシンは危険な位置で止まった。チームは通常の動きだったとみる一方、本人は異なる見方で、電気パワーの出方に疑問を示し、チームが再び検証している。「手放そうとしたが、まだ消化できていない」と話した。カタールでは9番手争いを見込んでいる。",
+   "orig": "\"Ich bin noch nicht darüber hinweg\": Lindblad spricht über Las-Vegas-Patzer",
+   "url": "https://www.motorsport-total.com/formel-1/news/ich-bin-noch-nicht-darueber-hinweg-lindblad-spricht-ueber-las-vegas-patzer-26112620",
+   "published": "2026-11-26T12:00:00+01:00"
   },
   {
-   "id": "de-motorsport-total-mclaren-qatar-strategy-trap",
-   "kind": "tech",
+   "id": "de-motorsporttotal-camara-f2-title-sad",
+   "kind": "news",
    "lang": "de",
    "region": "ドイツ",
    "source": "Motorsport-Total.com",
-   "cat": "テクニカル",
+   "cat": "ドライバー",
    "circuit": "lusail",
    "teams": [
-    "mclaren"
+    "haas"
    ],
-   "topic": "qatar-tyre-limit-27-laps",
-   "title": "マクラーレン技術者が語るカタールの罠　早すぎるピットで3ストップの恐れ",
-   "summary": "マクラーレンのレースエンジニア、エイドリアン・グッドウィンは、27周のタイヤ使用上限が決勝戦略の鍵になると説明した。57周を2ストップで走るには、1回目を第3周以降に済ませ、しかも新品2セットが要る。早く入りすぎると3ストップを強いられるため、それを避けるのが最大の注意点だという。今年はスプリントがなく各車13セットのスリックを持ち、チームは少なくとも4回のピットストップが生じると見ている。昨年は7周目のセーフティカーでノリスとピアストリが待機を選び、勝利をフェルスタッペンに奪われた。",
-   "orig": "McLaren-Ingenieur erklärt Strategie-Falle in Katar: Welcher Fehler jetzt teuer wird",
-   "url": "https://www.motorsport-total.com/formel-1/news/mclaren-ingenieur-erklaert-strategie-falle-in-katar-welcher-fehler-jetzt-teuer-wird-26112610",
-   "published": "2026-11-26T13:59:00+01:00"
+   "topic": "camara-haas-final-two-races",
+   "title": "F2タイトルよりF1を選んだカマラ「少し悲しい」　最終2戦はハースで走行",
+   "summary": "モータースポーツ・トータルは、ハースのラファエル・カマラが、カタールとアブダビのF2最終戦を欠場してF1で走ることを選んだと伝えた。F2のルール上、同時に両方には出られない。ポイント差はツォロフが7点、ダンが16点で、タイトルは二人のどちらかに行く公算が大きい。カマラは「1年かけて目指してきたのに最後の2戦を走れないのは少し悲しい」と語った。F1ではメディア対応の多さ、高いG、パワステの扱いが負担だが、週を重ねるごとに楽になっていると話す。",
+   "orig": "Formel 1 statt Formel-2-Titel: Rafael Camara ist \"ein bisschen traurig\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/formel-1-statt-formel-2-titel-rafael-camara-ist-ein-bisschen-traurig-26112621",
+   "published": "2026-11-26T12:00:00+01:00"
+  },
+  {
+   "id": "it-formula1it-hamilton-vettel-toxic-label",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "チーム",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "vettel-ferrari-culture",
+   "title": "「フェラーリは有害」の声にハミルトンが異論　今年は去年より楽しいと語る",
+   "summary": "ベッテルはドイツARDのドキュメンタリーで、在籍当時のフェラーリには楽しさが欠けていたと語った。ガレージで整備士が音楽を聴けるようオーディオを買ったが、首脳陣は当初それに反対したという。これに対しハミルトンは「そうは見ていない」と述べ、集中力や勝ちたい気持ちは前のチームと変わらないと話した。「今年は確実にずっと楽しんでいる」とも語り、隣のレッドブルのガレージにあるようなステレオがないことを冗談にした。筆者は、ベッテルの記憶は別の顔ぶれの時代のもので、今のフェラーリは変わった可能性があると論じている。",
+   "orig": "Ferrari, tutti a sparare sulla Rossa. Ma Hamilton non ci sta",
+   "url": "https://www.formula1.it/news/34240/1/ferrari-tutti-a-sparare-sulla-rossa-ma-hamilton-non-ci-sta",
+   "published": "2026-11-26T12:00:00+01:00"
+  },
+  {
+   "id": "it-motorionline-vigna-leclerc-hamilton-pace",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "チーム",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-vigna-vasseur-friction",
+   "title": "フェラーリのヴィーニャCEO「2人は仲直りした」　ルクレールとハミルトンの接触を受け",
+   "summary": "フェラーリのベネデット・ヴィーニャCEOは、ラスベガスGPで起きたルクレールとハミルトンの接触について、2人は仲直りしたと語った。自動車誌クアトロルオーテによると、書籍の発表イベントでの発言で、ヴァッスール代表が2人と話したことを「それだけで十分すぎる」と見ている。接触ではハミルトンがスピンし、ルクレールは10秒加算のペナルティを受けた。ヴァッスール代表はこの件を「容認できない」と批判していた。ヴィーニャは、速いマシン、正しい戦略、適切なチームを正しく組み合わせる必要があるとし、改善の余地があることも認めた。",
+   "orig": "F1 | Ferrari, Vigna sulle tensioni tra Leclerc e Hamilton: \"I due piloti hanno fatto pace\"",
+   "url": "https://f1grandprix.motorionline.com/f1-ferrari-vigna-tensioni-leclerc-hamilton-due-piloti-hanno-fatto-pace/",
+   "published": "2026-11-26T12:00:00+01:00"
+  },
+  {
+   "id": "it-formula1it-alonso-worst-race-honda",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
+   "circuit": "lasvegas",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "aston-honda-vegas-straights",
+   "title": "アロンソ「今年で最悪のレース」　ラスベガスでホンダ製PUの限界を訴える",
+   "summary": "アストンマーティンのアロンソは、ラスベガスGPの最終盤の2周を残してエンジンが完全に力尽き、リタイアした。今季8度目のリタイアで、本人は「エンジンはレース序盤から苦しかった」と振り返っている。直線で2〜3秒を失い、コーナーで取り戻す展開だったため「戦えていなかった」と話し、今年で恐らく最悪のレースだったと評した。ハンガリーで投入したB仕様のシャシーはコーナリング面を高く評価し、弱点はホンダ製PUだと記事は指摘する。シーズンは残り2戦で、ホンダの競争力と信頼性の不足がチームの最大の課題だ。",
+   "orig": "Alonso non ne può più della Honda: «È stata la gara peggiore dell'anno»",
+   "url": "https://www.formula1.it/news/34238/1/alonso-non-ne-puo-piu-della-honda-e-stata-la-gara-peggiore-dell-anno",
+   "published": "2026-11-26T10:50:00+01:00"
   },
   {
    "id": "pt-gp-haas-bearman-camara-2027",
@@ -382,38 +555,21 @@
    "published": "2026-11-26T09:30:00+01:00"
   },
   {
-   "id": "nl-rn365-bourdais-verstappen-attitude",
+   "id": "de-motorsport-total-redbull-nael-junior",
    "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
    "cat": "ドライバー",
    "teams": [
     "redbull"
    ],
-   "topic": "russell-verstappen-vegas-clash",
-   "title": "元F1ドライバーのブルデー、フェルスタッペンの姿勢を批判「好きになれない」",
-   "summary": "元F1ドライバーのセバスチャン・ブルデーが、仏ポッドキャスト「Les Fous Du Volant」でフェルスタッペンの姿勢を批判した。ラスベガスの練習走行でのラッセルとの接触と言い合いを念頭に、攻撃的に振る舞いあらゆる手を使いながら、他人には優しさを求めるのは筋が通らないと述べ、その点に嫌悪感を覚えるとまで語った。一方でラスベガスの勝利は評価し、他車が争う間にレース展開を読んでいたと認めた。ただ、ドライバーごとにエネルギー展開が違うため、ライバルが応戦していても通用したかは分からず、フェルスタッペンは「ただ耐えた」面もあるという。",
-   "orig": "Verstappen krijgt opmerkelijke veeg uit de pan: \"Daar walg ik van\"",
-   "url": "https://racingnews365.nl/verstappen-krijgt-opmerkelijke-veeg-uit-de-pan-daar-walg-ik-van",
-   "published": "2026-11-26T08:45:00+01:00"
-  },
-  {
-   "id": "it-motorionline-vigna-leclerc-hamilton-pace",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorionline",
-   "cat": "チーム",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-vigna-vasseur-friction",
-   "title": "フェラーリのヴィーニャCEO「2人は仲直りした」　ルクレールとハミルトンの接触を受け",
-   "summary": "フェラーリのベネデット・ヴィーニャCEOは、ラスベガスGPで起きたルクレールとハミルトンの接触について、2人は仲直りしたと語った。自動車誌クアトロルオーテによると、書籍の発表イベントでの発言で、ヴァッスール代表が2人と話したことを「それだけで十分すぎる」と見ている。接触ではハミルトンがスピンし、ルクレールは10秒加算のペナルティを受けた。ヴァッスール代表はこの件を「容認できない」と批判していた。ヴィーニャは、速いマシン、正しい戦略、適切なチームを正しく組み合わせる必要があるとし、改善の余地があることも認めた。",
-   "orig": "F1 | Ferrari, Vigna sulle tensioni tra Leclerc e Hamilton: \"I due piloti hanno fatto pace\"",
-   "url": "https://f1grandprix.motorionline.com/f1-ferrari-vigna-tensioni-leclerc-hamilton-due-piloti-hanno-fatto-pace/",
-   "published": "2026-11-26T12:00:00+01:00"
+   "topic": "redbull-junior-nael-2027",
+   "title": "レッドブルがテオフィル・ナエルと契約　ツォロフの後任として2027年F2へ",
+   "summary": "レッドブルは19歳のフランス人、テオフィル・ナエルをジュニアプログラムに加え、2027年はカンポスからF2に参戦させる。ナエルは2023年にスペインF4王者、2025年にマカオGPを制し、今季のF3は3勝で総合5位だった。F2ではカンポスの同僚がF3王者のウーゴ・ウゴチュクウになる。後任に回るニコラ・ツォロフは、レーシングブルズの席をローソンに奪われ、2027年はレッドブルとレーシングブルズのテスト兼リザーブを務める見込みだ。ツォロフは現在F2首位のカマラに7点差で、カタールとアブダビでタイトル獲得を狙う。",
+   "orig": "Tsolov-Nachfolger gefunden: Das ist Red Bulls neuer Juniorfahrer",
+   "url": "https://www.motorsport-total.com/formel-1/news/tsolov-nachfolger-gefunden-das-ist-red-bulls-neuer-juniorfahrer-26112603",
+   "published": "2026-11-26T09:02:00+01:00"
   },
   {
    "id": "en-planetf1-alonso-honda-long-way-behind",
@@ -431,6 +587,23 @@
    "orig": "Fernando Alonso makes blunt 'very long way behind' Honda claim",
    "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-honda-engine-deficit",
    "published": "2026-11-26T07:53:00+00:00"
+  },
+  {
+   "id": "nl-rn365-bourdais-verstappen-attitude",
+   "kind": "news",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull"
+   ],
+   "topic": "russell-verstappen-vegas-clash",
+   "title": "元F1ドライバーのブルデー、フェルスタッペンの姿勢を批判「好きになれない」",
+   "summary": "元F1ドライバーのセバスチャン・ブルデーが、仏ポッドキャスト「Les Fous Du Volant」でフェルスタッペンの姿勢を批判した。ラスベガスの練習走行でのラッセルとの接触と言い合いを念頭に、攻撃的に振る舞いあらゆる手を使いながら、他人には優しさを求めるのは筋が通らないと述べ、その点に嫌悪感を覚えるとまで語った。一方でラスベガスの勝利は評価し、他車が争う間にレース展開を読んでいたと認めた。ただ、ドライバーごとにエネルギー展開が違うため、ライバルが応戦していても通用したかは分からず、フェルスタッペンは「ただ耐えた」面もあるという。",
+   "orig": "Verstappen krijgt opmerkelijke veeg uit de pan: \"Daar walg ik van\"",
+   "url": "https://racingnews365.nl/verstappen-krijgt-opmerkelijke-veeg-uit-de-pan-daar-walg-ik-van",
+   "published": "2026-11-26T08:45:00+01:00"
   },
   {
    "id": "en-planetf1-qatar-straight-mode-zones",
@@ -481,148 +654,6 @@
    "orig": "英メディア：フェラーリ、F1カタールGPとアブダビGPでチームメイト同士でのオーバーテイク禁止へ",
    "url": "https://f1jouhou2.com/blog-entry-32024.html",
    "published": "2026-11-26T12:00:00+09:00"
-  },
-  {
-   "id": "en-therace-engine-freeze-return",
-   "kind": "tech",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "テクニカル",
-   "teams": [
-    "astonmartin",
-    "cadillac"
-   ],
-   "topic": "engine-freeze-2028",
-   "title": "2030年V8導入を前に、エンジン開発凍結が復活か　鍵はキャデラックの動き",
-   "summary": "The Raceは、F1が2030年から新エンジン規則へ移る前に、現行パワーユニットの開発凍結が再び導入される可能性が高いと分析した。GMは2029年に予定していた自前V6の計画を棚上げし、V8に注力するとされ、既存メーカーはその間に有利になることを警戒している。2030年規則の最終決定は2027年半ば以降の見通しで、凍結は2028年半ばから2029年末までになりうるという。遅れているメーカー、特にホンダは追い上げに約1年半しか持てなくなる。コスト抑制や二重のコストキャップ回避という利点もあるが、信頼性対応を名目にした開発は続くと同誌は見る。",
-   "orig": "The unusual reason F1's engine freeze could return",
-   "url": "https://www.the-race.com/formula-1/unusual-reason-f1-engine-freeze-could-return/",
-   "published": "2026-11-25T12:00:00+00:00"
-  },
-  {
-   "id": "it-motorionline-engine-freeze-2028",
-   "kind": "tech",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorionline",
-   "cat": "テクニカル",
-   "teams": [
-    "cadillac"
-   ],
-   "topic": "engine-freeze-2028",
-   "title": "F1とFIA、2028年のパワーユニット開発凍結を検討　GMの方針転換が引き金に",
-   "summary": "Motorionlineは、FIAとF1が現行V6パワーユニットの開発を2028年半ばから凍結する案を検討していると伝えた。The Raceの報道を引いたもので、2030年規則の最終案は2027年半ばより前には固まらない見通しだ。計画中の新V8は排気量2.1リッターのターボで、200kWの電動部分を持つ。GMはキャデラック向けの自前V6計画を断念し、フェラーリからの供給を2029年まで延ばした。同記事は、凍結で遅れを取るホンダが追い上げに約1年半しかなくなる点と、凍結後も信頼性対応の抜け道で開発は止まらない点を指摘している。",
-   "orig": "Formula 1 e FIA valutano il congelamento delle power unit nel 2028",
-   "url": "https://f1grandprix.motorionline.com/formula-1-v8-2030-congelamento-motori-cadillac-general-motors/",
-   "published": "2026-11-25T12:00:00+01:00"
-  },
-  {
-   "id": "it-motorionline-rosberg-hamilton-amicizia",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorionline",
-   "cat": "ドライバー",
-   "teams": [
-    "mercedes",
-    "ferrari"
-   ],
-   "topic": "rosberg-hamilton-friendship",
-   "title": "ロズベルグ「もう友人には戻れない」　ハミルトンとの関係を振り返る",
-   "summary": "2016年王者ニコ・ロズベルグが、ドイツ通信社dpaのインタビューでハミルトンとの友情の終わりを後悔していると語った。現在の関係は「中立」で、会えば話すが、二度と友人には戻らないだろうという。かつては「親友だった」と認め、昔話を一緒にできれば楽しいが実現しないと見る。2016年アブダビ最終戦については、ミスを恐れた最大級の重圧の状況だったと振り返った。記事はこの発言を、ラスベガスGPでの接触で揺れるフェラーリのハミルトンとルクレールの関係と結びつけている。",
-   "orig": "F1 | Rosberg confessa: “Rimpiango di aver perso l’amicizia con Hamilton”",
-   "url": "https://f1grandprix.motorionline.com/rosberg-hamilton-amicizia-rimpianto/",
-   "published": "2026-11-25T12:00:00+01:00"
-  },
-  {
-   "id": "it-motorionline-marko-verstappen-antonelli-2027",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorionline",
-   "cat": "ドライバー",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "marko-verstappen-antonelli-2027",
-   "title": "マルコ「2027年はフェルスタッペンがアントネッリに勝てる」",
-   "summary": "元レッドブル顧問のヘルムート・マルコが、オーストリア紙クローネン・ツァイトゥングで、2027年にフェルスタッペンが新王者アントネッリと戦えると語った。シーズン終盤の好調が今季序盤の問題を覆い隠したとし、フェルスタッペンは苦しい時期に不満を口にしていたと明かした。契約更新がチームを「完全に正しい航路に戻した」と評価し、規則が変わらない来季もレッドブルは同水準でいられると見る。両者の差は車の差だとも述べ、フェルスタッペンは若い頃にタイトルを狙える車がなかったと指摘した。最後に「キミ対マックは次元が違う」と期待を示した。",
-   "orig": "F1 | Marko non ha dubbi: “Nel 2027 Verstappen può battere Antonelli”",
-   "url": "https://f1grandprix.motorionline.com/verstappen-antonelli-2027-marko/",
-   "published": "2026-11-25T12:00:00+01:00"
-  },
-  {
-   "id": "it-formula1it-williams-qatar-lusail",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "サーキット",
-   "circuit": "lusail",
-   "teams": [
-    "williams"
-   ],
-   "topic": "qatar-tyre-limit-27-laps",
-   "title": "ラスベガスの追い抜きは忘れよ　ウィリアムズが語るカタール攻略の要点",
-   "summary": "Formula1.itは、ラスベガスで8位に入ったサインツの勢いで臨むウィリアムズが、ルサイルの特徴を説明した内容を伝えた。約1kmの本ストレートが1本あるだけで追い抜きは難しく、最大のチャンスは1コーナーとされる。ピラミッド型の縁石はマシンやタイヤを傷める恐れがあり、5、12、13、15コーナーではトラックリミットが再び問題になりうる。ストレートモードのゾーンは4か所で、第3ゾーンはドライ時のみ有効だ。タイヤはC1〜C3で、1セット最大27周の制限により57周のレースは2ストップが必須になる。",
-   "orig": "Dimenticatevi i sorpassi di Las Vegas, Williams sulle criticità del Qatar",
-   "url": "https://www.formula1.it/news/34227/1/dimenticatevi-i-sorpassi-di-las-vegas-williams-sulle-criticita-del-qatar",
-   "published": "2026-11-25T18:15:00+01:00"
-  },
-  {
-   "id": "it-motorionline-ferrari-qatar-reagire-squadra",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Motorionline",
-   "cat": "チーム",
-   "circuit": "lusail",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-qatar-reaction",
-   "title": "フェラーリ、カタールへ「チームとして反応する」　ヴァッスール代表が決意",
-   "summary": "Motorionlineは、ラスベガスで接触したフェラーリがカタールGPに向けてどう立て直すかを伝えた。ヴァッスール代表は「チームとして反応する」と述べ、2台そろっての堅実な結果を目標に掲げた。ルクレールは10秒ペナルティを受け、ヴァッスールはレース後に事実上その責任を問うており、チームは現在コンストラクターズ2位だ。ピレリはタイヤ1セットの上限を27周とし、57周のレースは最低2回のピットストップが必要になる。中東での攻撃を受け、不安のあるスタッフは欧州に残れるようにしたとも記している。",
-   "orig": "Formula 1 | Ferrari, Vasseur: “Obiettivo? Un buon risultato con entrambe le macchine”",
-   "url": "https://f1grandprix.motorionline.com/ferrari-qatar-losail-gomme-27-giri-vasseur-reazione/",
-   "published": "2026-11-25T12:00:00+01:00"
-  },
-  {
-   "id": "de-f1insider-ralf-schumacher-hamilton-absicht",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-vegas-collision",
-   "title": "ラルフ・シューマッハ「ハミルトンは意図的だった」　ルクレールとの接触を巡り主張",
-   "summary": "F1-Insider.comは、元F1ドライバーのラルフ・シューマッハがスカイのポッドキャストで、ラスベガスでのフェラーリ同士の接触についてハミルトンを批判したと伝えた。7コーナーでインから仕掛けたルクレールがミスをしたとしつつ、ハミルトンは避けられたのに譲らなかったと見る。「意図的だったと思う」「ルクレールを精神的に追い込もうとしている」とも述べ、解決できなければ「どちらかが去ることになる」と語った。2016年のハミルトンとロズベルグの確執に例えている。同サイトは意図の証拠はなく、審査委員はルクレールの責任としたと断り、この見方は推測にすぎないとしている。",
-   "orig": "Ralf Schumacher erhebt brisanten Vorwurf gegen Hamilton",
-   "url": "https://f1-insider.com/formel-1-schuamcher-vorwuerfe-hamilton-84224/",
-   "published": "2026-11-25T13:24:00+01:00"
-  },
-  {
-   "id": "en-therace-mclaren-lessons-ferrari",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "The Race",
-   "cat": "分析",
-   "teams": [
-    "ferrari",
-    "mclaren"
-   ],
-   "topic": "ferrari-vegas-collision",
-   "title": "マクラーレンの手法に学べ　ヴァッスールはルクレールとハミルトンをどう御すか",
-   "summary": "The Raceは、ラスベガスの接触を受け、ヴァッスール代表はマクラーレンの選手管理を手本にすべきだと論じた。ヴァッスールは細かな走行ルールには否定的で、「ルールの問題ではない」と述べ、ドライバーにチームへの敬意を求めている。マクラーレンは無線でノリスとピアストリに接触を避けるよう繰り返し促し、ラスベガスでも終盤にノリスへ強い言葉で伝えた。ステラ代表は、ドライバー自身が境界線の確認を望んだと説明している。同誌は、無線で煩わしがられても衝突されるよりはましだとし、フェラーリはメキシコやモンツァでの前例からも介入が遅いと指摘した。",
-   "orig": "McLaren's driver management lessons for Ferrari",
-   "url": "https://www.the-race.com/formula-1/mclarens-driver-management-lessons-for-ferrari/",
-   "published": "2026-11-25T12:00:00+00:00"
   },
   {
    "id": "ja-voice-ferrari-team-orders-reaction",
@@ -753,6 +784,41 @@
    "published": "2026-11-25T20:45:00+01:00"
   },
   {
+   "id": "en-planetf1-lawson-2028-racing-bulls",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "ドライバー",
+   "teams": [
+    "racingbulls"
+   ],
+   "topic": "lawson-racing-bulls-future",
+   "title": "ローソン、2028年の展望を問われ「いずれ他チームへ進むのが自然な流れ」",
+   "summary": "PlanetF1は、2027年のレーシングブルズ残留が決まったローソンが早くも2028年について質問されたと伝えた。ローソンはレッドブルの姉妹チームが若手を育てて送り出す役割を担っていると認めた。記事はサインツやガスリーがレッドブル傘下を離れた後に優勝した例を挙げている。ローソンは「いずれどこかに移るのが自然な流れ」としつつ、「VCARBでキャリアを終えるつもりはない」と述べた。今季はコンストラクターズ5位を重視しており、来季はツォロフが両チームのリザーブになる。",
+   "orig": "Liam Lawson quizzed on F1 2028 prospects with 'natural progression' hint",
+   "url": "https://www.planetf1.com/news/liam-lawson-f1-2028-natural-progression-racing-bulls",
+   "published": "2026-11-25T19:08:00+00:00"
+  },
+  {
+   "id": "it-formula1it-williams-qatar-lusail",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "サーキット",
+   "circuit": "lusail",
+   "teams": [
+    "williams"
+   ],
+   "topic": "qatar-tyre-limit-27-laps",
+   "title": "ラスベガスの追い抜きは忘れよ　ウィリアムズが語るカタール攻略の要点",
+   "summary": "Formula1.itは、ラスベガスで8位に入ったサインツの勢いで臨むウィリアムズが、ルサイルの特徴を説明した内容を伝えた。約1kmの本ストレートが1本あるだけで追い抜きは難しく、最大のチャンスは1コーナーとされる。ピラミッド型の縁石はマシンやタイヤを傷める恐れがあり、5、12、13、15コーナーではトラックリミットが再び問題になりうる。ストレートモードのゾーンは4か所で、第3ゾーンはドライ時のみ有効だ。タイヤはC1〜C3で、1セット最大27周の制限により57周のレースは2ストップが必須になる。",
+   "orig": "Dimenticatevi i sorpassi di Las Vegas, Williams sulle criticità del Qatar",
+   "url": "https://www.formula1.it/news/34227/1/dimenticatevi-i-sorpassi-di-las-vegas-williams-sulle-criticita-del-qatar",
+   "published": "2026-11-25T18:15:00+01:00"
+  },
+  {
    "id": "it-formula1it-budget-cap-williams-alpine",
    "kind": "news",
    "lang": "it",
@@ -772,23 +838,6 @@
    "featured": true
   },
   {
-   "id": "de-f1insider-vettel-ferrari-kultur",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "ドライバー",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "vettel-ferrari-culture",
-   "title": "ベッテル、フェラーリで届かなかった理由を語る「変化への勇気が少し足りなかった」",
-   "summary": "F1-Insider.comは、ベルリンのカンファレンスに登壇したベッテル（39）の発言を伝えた。2015〜2020年のフェラーリ時代、努力が足りなかったのではなく、変化を難しくする組織文化が問題だったと語ったという。プレッシャーがかかると仕事の時間を増やす方向に進み、プロセスを見直さなかったため、チームは疲弊して効率が落ちたと振り返った。メルセデスは作業のやり方そのものを問い直す姿勢があったと比較し、フェラーリは「あまりにも張り詰めていた」と述べた。同サイトは、現首脳陣への批判ではなく本人の経験談だと断っている。",
-   "orig": "Vettel enthüllt, woran Ferrari wirklich gescheitert ist",
-   "url": "https://f1-insider.com/formel-1-vettel-daran-ferrari-gescheitert-84230/",
-   "published": "2026-11-25T17:07:00+01:00"
-  },
-  {
    "id": "de-motorsporttotal-horner-verstappen-balance",
    "kind": "tech",
    "lang": "de",
@@ -806,21 +855,21 @@
    "published": "2026-11-25T17:47:00+01:00"
   },
   {
-   "id": "en-planetf1-lawson-2028-racing-bulls",
+   "id": "de-f1insider-vettel-ferrari-kultur",
    "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
    "cat": "ドライバー",
    "teams": [
-    "racingbulls"
+    "ferrari"
    ],
-   "topic": "lawson-racing-bulls-future",
-   "title": "ローソン、2028年の展望を問われ「いずれ他チームへ進むのが自然な流れ」",
-   "summary": "PlanetF1は、2027年のレーシングブルズ残留が決まったローソンが早くも2028年について質問されたと伝えた。ローソンはレッドブルの姉妹チームが若手を育てて送り出す役割を担っていると認めた。記事はサインツやガスリーがレッドブル傘下を離れた後に優勝した例を挙げている。ローソンは「いずれどこかに移るのが自然な流れ」としつつ、「VCARBでキャリアを終えるつもりはない」と述べた。今季はコンストラクターズ5位を重視しており、来季はツォロフが両チームのリザーブになる。",
-   "orig": "Liam Lawson quizzed on F1 2028 prospects with 'natural progression' hint",
-   "url": "https://www.planetf1.com/news/liam-lawson-f1-2028-natural-progression-racing-bulls",
-   "published": "2026-11-25T19:08:00+00:00"
+   "topic": "vettel-ferrari-culture",
+   "title": "ベッテル、フェラーリで届かなかった理由を語る「変化への勇気が少し足りなかった」",
+   "summary": "F1-Insider.comは、ベルリンのカンファレンスに登壇したベッテル（39）の発言を伝えた。2015〜2020年のフェラーリ時代、努力が足りなかったのではなく、変化を難しくする組織文化が問題だったと語ったという。プレッシャーがかかると仕事の時間を増やす方向に進み、プロセスを見直さなかったため、チームは疲弊して効率が落ちたと振り返った。メルセデスは作業のやり方そのものを問い直す姿勢があったと比較し、フェラーリは「あまりにも張り詰めていた」と述べた。同サイトは、現首脳陣への批判ではなく本人の経験談だと断っている。",
+   "orig": "Vettel enthüllt, woran Ferrari wirklich gescheitert ist",
+   "url": "https://f1-insider.com/formel-1-vettel-daran-ferrari-gescheitert-84230/",
+   "published": "2026-11-25T17:07:00+01:00"
   },
   {
    "id": "de-motorsporttotal-alonso-frage-der-zeit",
@@ -838,6 +887,181 @@
    "orig": "\"Nur eine Frage der Zeit\": Warum Alonso zuversichtlich ist für Aston Martin",
    "url": "https://www.motorsport-total.com/formel-1/news/nur-eine-frage-der-zeit-warum-alonso-zuversichtlich-ist-fuer-aston-martin-26112507",
    "published": "2026-11-25T15:02:00+01:00"
+  },
+  {
+   "id": "en-planetf1-alonso-crawford-qatar-fp1",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "PlanetF1",
+   "cat": "チーム",
+   "circuit": "lusail",
+   "teams": [
+    "astonmartin"
+   ],
+   "topic": "alonso-crawford-qatar-fp1",
+   "title": "アロンソ、カタールGPのFP1を欠場　アストンマーティンはリザーブのクロフォードを起用",
+   "summary": "PlanetF1は、アストンマーティンがカタールGPのFP1でアロンソに代えてリザーブのジャック・クロフォードを走らせると報じた。クロフォードの今季FP1出走は6回目で、日本、オーストリア、ベルギー、メキシコシティ、ラスベガスに続く。メキシコシティではマシントラブルで早く止まり、ラスベガスは大雨で走行できなかった。ルーキー（出走2戦以下）を年4回のFP1で走らせる規定があり、チームはルサイルで改めて走行機会を得る。カタールは中東2連戦の初戦で、最終戦アブダビが続く。",
+   "orig": "Fernando Alonso to miss Qatar Grand Prix FP1 as Aston Martin reserve steps in",
+   "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-qatar-grand-prix-2026-fp1",
+   "published": "2026-11-25T13:38:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-palmer-verstappen-vegas",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "決勝",
+   "circuit": "lasvegas",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "verstappen-vegas-win-palmer",
+   "title": "パーマー「あの形で首位を取り戻せたのはフェルスタッペンだけ」　ラスベガスの攻防を絶賛",
+   "summary": "Motorsport-Total.comは、元F1ドライバーのパーマーがラスベガスGPのフェルスタッペンを称えた発言を伝えた。パーマーはF1 TVで「他のドライバーなら、マックのようには首位を奪い返せなかっただろう」と語った。セーフティカー再開後の25周目以降、ラッセルは28周目と31周目にターン1で先頭に立ち、37周目にもターン17で仕掛けた。しかし48周目にチームメイトのアントネッリを攻める際にロックアップし、ターン5でバリアに接触して9位まで後退した。フェルスタッペンは直近6戦で4勝目を挙げ、2位争いのラッセルとの差を40点に広げた。",
+   "orig": "Palmer schwärmt von Verstappen: \"Kein anderer Fahrer hätte das geschafft\"",
+   "url": "https://www.motorsport-total.com/formel-1/news/palmer-schwaermt-von-verstappen-kein-anderer-fahrer-haette-das-geschafft-26112506",
+   "published": "2026-11-25T13:33:00+01:00"
+  },
+  {
+   "id": "de-f1insider-ralf-schumacher-hamilton-absicht",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ドライバー",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-vegas-collision",
+   "title": "ラルフ・シューマッハ「ハミルトンは意図的だった」　ルクレールとの接触を巡り主張",
+   "summary": "F1-Insider.comは、元F1ドライバーのラルフ・シューマッハがスカイのポッドキャストで、ラスベガスでのフェラーリ同士の接触についてハミルトンを批判したと伝えた。7コーナーでインから仕掛けたルクレールがミスをしたとしつつ、ハミルトンは避けられたのに譲らなかったと見る。「意図的だったと思う」「ルクレールを精神的に追い込もうとしている」とも述べ、解決できなければ「どちらかが去ることになる」と語った。2016年のハミルトンとロズベルグの確執に例えている。同サイトは意図の証拠はなく、審査委員はルクレールの責任としたと断り、この見方は推測にすぎないとしている。",
+   "orig": "Ralf Schumacher erhebt brisanten Vorwurf gegen Hamilton",
+   "url": "https://f1-insider.com/formel-1-schuamcher-vorwuerfe-hamilton-84224/",
+   "published": "2026-11-25T13:24:00+01:00"
+  },
+  {
+   "id": "en-therace-engine-freeze-return",
+   "kind": "tech",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "テクニカル",
+   "teams": [
+    "astonmartin",
+    "cadillac"
+   ],
+   "topic": "engine-freeze-2028",
+   "title": "2030年V8導入を前に、エンジン開発凍結が復活か　鍵はキャデラックの動き",
+   "summary": "The Raceは、F1が2030年から新エンジン規則へ移る前に、現行パワーユニットの開発凍結が再び導入される可能性が高いと分析した。GMは2029年に予定していた自前V6の計画を棚上げし、V8に注力するとされ、既存メーカーはその間に有利になることを警戒している。2030年規則の最終決定は2027年半ば以降の見通しで、凍結は2028年半ばから2029年末までになりうるという。遅れているメーカー、特にホンダは追い上げに約1年半しか持てなくなる。コスト抑制や二重のコストキャップ回避という利点もあるが、信頼性対応を名目にした開発は続くと同誌は見る。",
+   "orig": "The unusual reason F1's engine freeze could return",
+   "url": "https://www.the-race.com/formula-1/unusual-reason-f1-engine-freeze-could-return/",
+   "published": "2026-11-25T12:00:00+00:00"
+  },
+  {
+   "id": "en-therace-mclaren-lessons-ferrari",
+   "kind": "news",
+   "lang": "en",
+   "region": "イギリス",
+   "source": "The Race",
+   "cat": "分析",
+   "teams": [
+    "ferrari",
+    "mclaren"
+   ],
+   "topic": "ferrari-vegas-collision",
+   "title": "マクラーレンの手法に学べ　ヴァッスールはルクレールとハミルトンをどう御すか",
+   "summary": "The Raceは、ラスベガスの接触を受け、ヴァッスール代表はマクラーレンの選手管理を手本にすべきだと論じた。ヴァッスールは細かな走行ルールには否定的で、「ルールの問題ではない」と述べ、ドライバーにチームへの敬意を求めている。マクラーレンは無線でノリスとピアストリに接触を避けるよう繰り返し促し、ラスベガスでも終盤にノリスへ強い言葉で伝えた。ステラ代表は、ドライバー自身が境界線の確認を望んだと説明している。同誌は、無線で煩わしがられても衝突されるよりはましだとし、フェラーリはメキシコやモンツァでの前例からも介入が遅いと指摘した。",
+   "orig": "McLaren's driver management lessons for Ferrari",
+   "url": "https://www.the-race.com/formula-1/mclarens-driver-management-lessons-for-ferrari/",
+   "published": "2026-11-25T12:00:00+00:00"
+  },
+  {
+   "id": "de-motorsporttotal-forbes-teamwerte-2026",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "Motorsport-Total.com",
+   "cat": "ビジネス",
+   "topic": "f1-team-valuations-forbes",
+   "title": "F1の11チームの価値は合計574億ドル　フォーブス試算でフェラーリが首位、キャデラックはハースを上回る",
+   "summary": "Motorsport-Total.comは、フォーブス誌が試算した2026年のF1全11チームの企業価値を伝えた。合計は約574億ドル（約524億ユーロ）で、1チーム平均は約48億ユーロとなる。首位はフェラーリの86.7億ユーロ、次いでメルセデス83.9億ユーロ、マクラーレン69.3億ユーロ、レッドブル60.2億ユーロ、アストンマーティン43.3億ユーロだった。今季参戦のキャデラックは27.4億ユーロで、最下位のハース（25.5億ユーロ）を上回った。2025年の収入はメルセデスが約7.25億ユーロで首位とされるが、同誌も実際の取引価格ではない推計だと断っている。",
+   "orig": "Formel 1 als Milliardenbusiness: Was die elf Teams 2026 wert sind",
+   "url": "https://www.motorsport-total.com/formel-1/news/formel-1-als-milliardenbusiness-was-die-elf-teams-2026-wert-sind-26112505",
+   "published": "2026-11-25T12:14:00+01:00"
+  },
+  {
+   "id": "it-motorionline-engine-freeze-2028",
+   "kind": "tech",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "テクニカル",
+   "teams": [
+    "cadillac"
+   ],
+   "topic": "engine-freeze-2028",
+   "title": "F1とFIA、2028年のパワーユニット開発凍結を検討　GMの方針転換が引き金に",
+   "summary": "Motorionlineは、FIAとF1が現行V6パワーユニットの開発を2028年半ばから凍結する案を検討していると伝えた。The Raceの報道を引いたもので、2030年規則の最終案は2027年半ばより前には固まらない見通しだ。計画中の新V8は排気量2.1リッターのターボで、200kWの電動部分を持つ。GMはキャデラック向けの自前V6計画を断念し、フェラーリからの供給を2029年まで延ばした。同記事は、凍結で遅れを取るホンダが追い上げに約1年半しかなくなる点と、凍結後も信頼性対応の抜け道で開発は止まらない点を指摘している。",
+   "orig": "Formula 1 e FIA valutano il congelamento delle power unit nel 2028",
+   "url": "https://f1grandprix.motorionline.com/formula-1-v8-2030-congelamento-motori-cadillac-general-motors/",
+   "published": "2026-11-25T12:00:00+01:00"
+  },
+  {
+   "id": "it-motorionline-rosberg-hamilton-amicizia",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "ドライバー",
+   "teams": [
+    "mercedes",
+    "ferrari"
+   ],
+   "topic": "rosberg-hamilton-friendship",
+   "title": "ロズベルグ「もう友人には戻れない」　ハミルトンとの関係を振り返る",
+   "summary": "2016年王者ニコ・ロズベルグが、ドイツ通信社dpaのインタビューでハミルトンとの友情の終わりを後悔していると語った。現在の関係は「中立」で、会えば話すが、二度と友人には戻らないだろうという。かつては「親友だった」と認め、昔話を一緒にできれば楽しいが実現しないと見る。2016年アブダビ最終戦については、ミスを恐れた最大級の重圧の状況だったと振り返った。記事はこの発言を、ラスベガスGPでの接触で揺れるフェラーリのハミルトンとルクレールの関係と結びつけている。",
+   "orig": "F1 | Rosberg confessa: “Rimpiango di aver perso l’amicizia con Hamilton”",
+   "url": "https://f1grandprix.motorionline.com/rosberg-hamilton-amicizia-rimpianto/",
+   "published": "2026-11-25T12:00:00+01:00"
+  },
+  {
+   "id": "it-motorionline-marko-verstappen-antonelli-2027",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "ドライバー",
+   "teams": [
+    "redbull",
+    "mercedes"
+   ],
+   "topic": "marko-verstappen-antonelli-2027",
+   "title": "マルコ「2027年はフェルスタッペンがアントネッリに勝てる」",
+   "summary": "元レッドブル顧問のヘルムート・マルコが、オーストリア紙クローネン・ツァイトゥングで、2027年にフェルスタッペンが新王者アントネッリと戦えると語った。シーズン終盤の好調が今季序盤の問題を覆い隠したとし、フェルスタッペンは苦しい時期に不満を口にしていたと明かした。契約更新がチームを「完全に正しい航路に戻した」と評価し、規則が変わらない来季もレッドブルは同水準でいられると見る。両者の差は車の差だとも述べ、フェルスタッペンは若い頃にタイトルを狙える車がなかったと指摘した。最後に「キミ対マックは次元が違う」と期待を示した。",
+   "orig": "F1 | Marko non ha dubbi: “Nel 2027 Verstappen può battere Antonelli”",
+   "url": "https://f1grandprix.motorionline.com/verstappen-antonelli-2027-marko/",
+   "published": "2026-11-25T12:00:00+01:00"
+  },
+  {
+   "id": "it-motorionline-ferrari-qatar-reagire-squadra",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Motorionline",
+   "cat": "チーム",
+   "circuit": "lusail",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "ferrari-qatar-reaction",
+   "title": "フェラーリ、カタールへ「チームとして反応する」　ヴァッスール代表が決意",
+   "summary": "Motorionlineは、ラスベガスで接触したフェラーリがカタールGPに向けてどう立て直すかを伝えた。ヴァッスール代表は「チームとして反応する」と述べ、2台そろっての堅実な結果を目標に掲げた。ルクレールは10秒ペナルティを受け、ヴァッスールはレース後に事実上その責任を問うており、チームは現在コンストラクターズ2位だ。ピレリはタイヤ1セットの上限を27周とし、57周のレースは最低2回のピットストップが必要になる。中東での攻撃を受け、不安のあるスタッフは欧州に残れるようにしたとも記している。",
+   "orig": "Formula 1 | Ferrari, Vasseur: “Obiettivo? Un buon risultato con entrambe le macchine”",
+   "url": "https://f1grandprix.motorionline.com/ferrari-qatar-losail-gomme-27-giri-vasseur-reazione/",
+   "published": "2026-11-25T12:00:00+01:00"
   },
   {
    "id": "de-motorsporttotal-herta-cadillac-reserve-2028",
@@ -875,55 +1099,21 @@
    "published": "2026-11-25T10:43:00+00:00"
   },
   {
-   "id": "en-planetf1-alonso-crawford-qatar-fp1",
+   "id": "it-formula1it-alonso-pensione-batterli-tutti",
    "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "チーム",
-   "circuit": "lusail",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ドライバー",
    "teams": [
     "astonmartin"
    ],
-   "topic": "alonso-crawford-qatar-fp1",
-   "title": "アロンソ、カタールGPのFP1を欠場　アストンマーティンはリザーブのクロフォードを起用",
-   "summary": "PlanetF1は、アストンマーティンがカタールGPのFP1でアロンソに代えてリザーブのジャック・クロフォードを走らせると報じた。クロフォードの今季FP1出走は6回目で、日本、オーストリア、ベルギー、メキシコシティ、ラスベガスに続く。メキシコシティではマシントラブルで早く止まり、ラスベガスは大雨で走行できなかった。ルーキー（出走2戦以下）を年4回のFP1で走らせる規定があり、チームはルサイルで改めて走行機会を得る。カタールは中東2連戦の初戦で、最終戦アブダビが続く。",
-   "orig": "Fernando Alonso to miss Qatar Grand Prix FP1 as Aston Martin reserve steps in",
-   "url": "https://www.planetf1.com/news/fernando-alonso-aston-martin-qatar-grand-prix-2026-fp1",
-   "published": "2026-11-25T13:38:00+00:00"
-  },
-  {
-   "id": "de-motorsporttotal-forbes-teamwerte-2026",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "ビジネス",
-   "topic": "f1-team-valuations-forbes",
-   "title": "F1の11チームの価値は合計574億ドル　フォーブス試算でフェラーリが首位、キャデラックはハースを上回る",
-   "summary": "Motorsport-Total.comは、フォーブス誌が試算した2026年のF1全11チームの企業価値を伝えた。合計は約574億ドル（約524億ユーロ）で、1チーム平均は約48億ユーロとなる。首位はフェラーリの86.7億ユーロ、次いでメルセデス83.9億ユーロ、マクラーレン69.3億ユーロ、レッドブル60.2億ユーロ、アストンマーティン43.3億ユーロだった。今季参戦のキャデラックは27.4億ユーロで、最下位のハース（25.5億ユーロ）を上回った。2025年の収入はメルセデスが約7.25億ユーロで首位とされるが、同誌も実際の取引価格ではない推計だと断っている。",
-   "orig": "Formel 1 als Milliardenbusiness: Was die elf Teams 2026 wert sind",
-   "url": "https://www.motorsport-total.com/formel-1/news/formel-1-als-milliardenbusiness-was-die-elf-teams-2026-wert-sind-26112505",
-   "published": "2026-11-25T12:14:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-palmer-verstappen-vegas",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "決勝",
-   "circuit": "lasvegas",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "verstappen-vegas-win-palmer",
-   "title": "パーマー「あの形で首位を取り戻せたのはフェルスタッペンだけ」　ラスベガスの攻防を絶賛",
-   "summary": "Motorsport-Total.comは、元F1ドライバーのパーマーがラスベガスGPのフェルスタッペンを称えた発言を伝えた。パーマーはF1 TVで「他のドライバーなら、マックのようには首位を奪い返せなかっただろう」と語った。セーフティカー再開後の25周目以降、ラッセルは28周目と31周目にターン1で先頭に立ち、37周目にもターン17で仕掛けた。しかし48周目にチームメイトのアントネッリを攻める際にロックアップし、ターン5でバリアに接触して9位まで後退した。フェルスタッペンは直近6戦で4勝目を挙げ、2位争いのラッセルとの差を40点に広げた。",
-   "orig": "Palmer schwärmt von Verstappen: \"Kein anderer Fahrer hätte das geschafft\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/palmer-schwaermt-von-verstappen-kein-anderer-fahrer-haette-das-geschafft-26112506",
-   "published": "2026-11-25T13:33:00+01:00"
+   "topic": "alonso-retirement-answer",
+   "title": "アロンソ、引退論に反論「遅いと感じたら辞める」　45歳が示す2027年への意欲",
+   "summary": "Formula1.itは、アストンマーティンの公式サイトに24日掲載された長いインタビューでのアロンソの発言を伝えた。45歳のアロンソは「遅いと感じたら引退する」と述べ、スピードも反射神経も意欲も失っていないと語った。ラルフ・シューマッハーがスカイ・ドイツでアロンソとハミルトンに席を譲るよう促したことへの反応とされるが、名指しはしていない。前方で戦える車があれば、通常の状況なら今も彼らに勝てると思うとも述べた。2027年は通年でF1に参戦し、ダカール・ラリーにも挑む計画で、ニューウェイとホンダの車に期待を寄せる。",
+   "orig": "Alonso risponde a chi lo vuole in pensione: «Posso ancora batterli tutti»",
+   "url": "https://www.formula1.it/news/34219/1/alonso-risponde-a-chi-lo-vuole-in-pensione-posso-ancora-batterli-tutti",
+   "published": "2026-11-25T09:57:00+01:00"
   },
   {
    "id": "de-motorsporttotal-redbull-funk-vegas-letzte-runde",
@@ -943,6 +1133,24 @@
    "orig": "Verstappen-Sieg in Las Vegas: Was die Red-Bull-Funksprüche offenbaren",
    "url": "https://www.motorsport-total.com/formel-1/news/verstappen-sieg-in-las-vegas-was-die-red-bull-funksprueche-offenbaren-26112502",
    "published": "2026-11-25T08:35:00+01:00"
+  },
+  {
+   "id": "it-formula1it-haas-audi-settimo-posto-9-milioni",
+   "kind": "news",
+   "lang": "it",
+   "region": "イタリア",
+   "source": "Formula1.it",
+   "cat": "ビジネス",
+   "teams": [
+    "haas",
+    "audi"
+   ],
+   "topic": "audi-haas-seventh-place",
+   "title": "3点差で賞金9百万ドルの差　ハースとアウディ、コンストラクターズ7位争い",
+   "summary": "Formula1.itは、両選手権が決着済みでもコンストラクターズ7位争いには大きな金銭的意味があると伝えた。ハースは31点、アウディは28点で、7位と8位の賞金は約8700万ドルと7800万ドルと推定され、差は約900万ドルになる。シーズン前半6戦ではハースが21対2とリードしたが、後半はアウディが16点、ハースが10点と逆転傾向にある。ハースのマクニッシュ代表はカタールのタイヤ管理が重要と述べ、ベアマンは「ポイントが取れるのは他が不運だったから」と語った。同点ならハースが中国での5位で優位だが、アウディは4位以内に入れば覆せる。",
+   "orig": "Tre punti per 9 milioni: per Haas e Audi il settimo posto è un tesoretto",
+   "url": "https://www.formula1.it/news/34218/1/tre-punti-per-9-milioni-per-haas-e-audi-il-settimo-posto-e-un-tesoretto",
+   "published": "2026-11-25T08:00:00+01:00"
   },
   {
    "id": "de-motorsporttotal-v8-2030-kundenteams",
@@ -966,57 +1174,22 @@
    "published": "2026-11-25T06:22:00+01:00"
   },
   {
-   "id": "it-formula1it-haas-audi-settimo-posto-9-milioni",
+   "id": "nl-rn365-bearman-haas-deadline",
    "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ビジネス",
+   "lang": "nl",
+   "region": "オランダ",
+   "source": "RacingNews365",
+   "cat": "移籍",
    "teams": [
     "haas",
-    "audi"
-   ],
-   "topic": "audi-haas-seventh-place",
-   "title": "3点差で賞金9百万ドルの差　ハースとアウディ、コンストラクターズ7位争い",
-   "summary": "Formula1.itは、両選手権が決着済みでもコンストラクターズ7位争いには大きな金銭的意味があると伝えた。ハースは31点、アウディは28点で、7位と8位の賞金は約8700万ドルと7800万ドルと推定され、差は約900万ドルになる。シーズン前半6戦ではハースが21対2とリードしたが、後半はアウディが16点、ハースが10点と逆転傾向にある。ハースのマクニッシュ代表はカタールのタイヤ管理が重要と述べ、ベアマンは「ポイントが取れるのは他が不運だったから」と語った。同点ならハースが中国での5位で優位だが、アウディは4位以内に入れば覆せる。",
-   "orig": "Tre punti per 9 milioni: per Haas e Audi il settimo posto è un tesoretto",
-   "url": "https://www.formula1.it/news/34218/1/tre-punti-per-9-milioni-per-haas-e-audi-il-settimo-posto-e-un-tesoretto",
-   "published": "2026-11-25T08:00:00+01:00"
-  },
-  {
-   "id": "it-formula1it-alonso-pensione-batterli-tutti",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "ドライバー",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "alonso-retirement-answer",
-   "title": "アロンソ、引退論に反論「遅いと感じたら辞める」　45歳が示す2027年への意欲",
-   "summary": "Formula1.itは、アストンマーティンの公式サイトに24日掲載された長いインタビューでのアロンソの発言を伝えた。45歳のアロンソは「遅いと感じたら引退する」と述べ、スピードも反射神経も意欲も失っていないと語った。ラルフ・シューマッハーがスカイ・ドイツでアロンソとハミルトンに席を譲るよう促したことへの反応とされるが、名指しはしていない。前方で戦える車があれば、通常の状況なら今も彼らに勝てると思うとも述べた。2027年は通年でF1に参戦し、ダカール・ラリーにも挑む計画で、ニューウェイとホンダの車に期待を寄せる。",
-   "orig": "Alonso risponde a chi lo vuole in pensione: «Posso ancora batterli tutti»",
-   "url": "https://www.formula1.it/news/34219/1/alonso-risponde-a-chi-lo-vuole-in-pensione-posso-ancora-batterli-tutti",
-   "published": "2026-11-25T09:57:00+01:00"
-  },
-  {
-   "id": "de-f1insider-hamilton-vorwuerfe-ferrari-vegas",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "ドライバー",
-   "circuit": "lasvegas",
-   "teams": [
     "ferrari"
    ],
-   "topic": "hamilton-speaks-out-alone",
-   "title": "ハミルトン「ナンバー1を求めたことはない」　ラスベガス後、フェラーリの支援不足に言及",
-   "summary": "F1-Insider.comは、ラスベガスGP後にハミルトンがフェラーリの支援が足りなかったと示唆したと伝えた。ハミルトンは「ナンバー1を求めたことは一度もない」と述べ、ラスベガスでルクレールと接触すべきではなかったと語った。チームの対応については、フェラーリに聞いてほしいとの姿勢だ。接触は38周目で、ルクレールがハミルトンの後輪に接触してスピンさせ、10秒ペナルティを受けた。同誌は、ハミルトンが一時はルクレールに40点差をつけていたが、現在は3位で首位と大きく離れたと振り返っている。",
-   "orig": "Hamilton erhebt schwere Vorwürfe gegen Ferrari nach Las Vegas",
-   "url": "https://f1-insider.com/formel-1-hamilton-ferrari-schwere-vorwuerfe-84209/",
-   "published": "2026-11-24T09:37:00+01:00"
+   "topic": "bearman-haas-contract-2027",
+   "title": "ベアマン、ハースに契約の期限　来週末まで、遅くともアブダビ前に決着を",
+   "summary": "RacingNews365は、ベアマンが2027年の契約をめぐり、遅くともアブダビGPまでの決着を望んでいると伝えた。2027年の22席のうち21席はすでに埋まっており、ローソンとボッタスが契約を延長し、ハースにはラファエル・カマラの加入も決まっている。ベアマンはフェラーリの育成ドライバーでもあるため、フェラーリも交渉の当事者となり、話が複雑になっているという。ベアマンはラスベガスGPの前に、第20戦の時点で契約がないのは奇妙だと述べていた。予選後には新しい情報はないとしたうえで、「来週末の前に」決まることを期待していると語った。",
+   "orig": "Bearman geeft Haas deadline voor nieuw F1-contract",
+   "url": "https://racingnews365.nl/bearman-geeft-haas-deadline-voor-nieuw-f1-contract",
+   "published": "2026-11-24T20:15:00+01:00"
   },
   {
    "id": "de-motorsporttotal-hinchcliffe-bearman-ferrari-ersatz",
@@ -1035,24 +1208,6 @@
    "orig": "Ferrari unter Druck: F1-Experte bringt Oliver Bearman als Ersatz ins Spiel",
    "url": "https://www.motorsport-total.com/formel-1/news/ferrari-unter-druck-f1-experte-bringt-oliver-bearman-als-ersatz-ins-spiel-26112412",
    "published": "2026-11-24T20:00:00+01:00"
-  },
-  {
-   "id": "nl-rn365-bearman-haas-deadline",
-   "kind": "news",
-   "lang": "nl",
-   "region": "オランダ",
-   "source": "RacingNews365",
-   "cat": "移籍",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "bearman-haas-contract-2027",
-   "title": "ベアマン、ハースに契約の期限　来週末まで、遅くともアブダビ前に決着を",
-   "summary": "RacingNews365は、ベアマンが2027年の契約をめぐり、遅くともアブダビGPまでの決着を望んでいると伝えた。2027年の22席のうち21席はすでに埋まっており、ローソンとボッタスが契約を延長し、ハースにはラファエル・カマラの加入も決まっている。ベアマンはフェラーリの育成ドライバーでもあるため、フェラーリも交渉の当事者となり、話が複雑になっているという。ベアマンはラスベガスGPの前に、第20戦の時点で契約がないのは奇妙だと述べていた。予選後には新しい情報はないとしたうえで、「来週末の前に」決まることを期待していると語った。",
-   "orig": "Bearman geeft Haas deadline voor nieuw F1-contract",
-   "url": "https://racingnews365.nl/bearman-geeft-haas-deadline-voor-nieuw-f1-contract",
-   "published": "2026-11-24T20:15:00+01:00"
   },
   {
    "id": "it-formula1it-mercedes-aduo-reale",
@@ -1431,6 +1586,24 @@
    "published": "2026-11-24T10:15:00+01:00"
   },
   {
+   "id": "de-f1insider-hamilton-vorwuerfe-ferrari-vegas",
+   "kind": "news",
+   "lang": "de",
+   "region": "ドイツ",
+   "source": "F1-Insider.com",
+   "cat": "ドライバー",
+   "circuit": "lasvegas",
+   "teams": [
+    "ferrari"
+   ],
+   "topic": "hamilton-speaks-out-alone",
+   "title": "ハミルトン「ナンバー1を求めたことはない」　ラスベガス後、フェラーリの支援不足に言及",
+   "summary": "F1-Insider.comは、ラスベガスGP後にハミルトンがフェラーリの支援が足りなかったと示唆したと伝えた。ハミルトンは「ナンバー1を求めたことは一度もない」と述べ、ラスベガスでルクレールと接触すべきではなかったと語った。チームの対応については、フェラーリに聞いてほしいとの姿勢だ。接触は38周目で、ルクレールがハミルトンの後輪に接触してスピンさせ、10秒ペナルティを受けた。同誌は、ハミルトンが一時はルクレールに40点差をつけていたが、現在は3位で首位と大きく離れたと振り返っている。",
+   "orig": "Hamilton erhebt schwere Vorwürfe gegen Ferrari nach Las Vegas",
+   "url": "https://f1-insider.com/formel-1-hamilton-ferrari-schwere-vorwuerfe-84209/",
+   "published": "2026-11-24T09:37:00+01:00"
+  },
+  {
    "id": "en-planetf1-stroll-honda-two-seconds",
    "kind": "news",
    "lang": "en",
@@ -1549,262 +1722,6 @@
    "orig": "Ugochukwu anticipa il debutto in F2: correrà i GP del Qatar e Abu Dhabi",
    "url": "https://www.formula1.it/news/34193/1/ugochukwu-anticipa-il-debutto-in-f2-correra-i-gp-del-qatar-e-abu-dhabi",
    "published": "2026-11-23T19:05:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-verstappen-katar-lieber-zuhause",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "カレンダー",
-   "circuit": "lusail",
-   "teams": [
-    "redbull"
-   ],
-   "topic": "qatar-middle-east-safety",
-   "title": "フェルスタッペン、カタール前に本音「家にいたい」　中東情勢でも安全保証は信頼",
-   "summary": "モータースポーツ・トータルは、フェルスタッペンが中東情勢を踏まえたカタールとアブダビの開催について「家にいる方がいい」と語ったと伝えた。F1とFIAが示す安全の保証は信頼しており、「すべてがうまくいくよう願う」とも話したという。F1は中東で今季を締めくくる計画を維持し、代替開催地としてイモラを使う必要はないとされる。MotoGPのカタール戦が予定通り行われたことが、残る2戦も開催できる根拠として挙げられた。レッドブルはコンストラクターズ3位を争っており、これも現地へ向かう理由のひとつだという。",
-   "orig": "Max Verstappen mit deutlicher Ansage vor Katar: \"Ich wäre lieber zu Hause\"",
-   "url": "https://www.motorsport-total.com/formel-1/news/max-verstappen-mit-deutlicher-ansage-vor-katar-ich-waere-lieber-zu-hause-26112319",
-   "published": "2026-11-23T19:04:00+01:00"
-  },
-  {
-   "id": "de-f1insider-camara-haas-konsequenzen",
-   "kind": "news",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "F1-Insider.com",
-   "cat": "チーム",
-   "circuit": "lusail",
-   "teams": [
-    "haas"
-   ],
-   "topic": "camara-haas-final-two-races",
-   "title": "ハース、カマラを最終2戦も起用　F2王者争いより「F1の経験」を優先",
-   "summary": "F1-Insider.comは、ハースが21歳のブラジル人ラファエル・カマラをカタールとアブダビの最終2戦でもベアマンの相棒として走らせると伝えた。当初は2027年にフル参戦する予定で、オコン離脱を受けてスポット起用が前倒しされていた。小松礼雄代表は姿勢と成長を評価し、短い冬休みを考えると来季の準備にもなると述べた。カマラはF2で207ポイントの首位に立つが、残り4戦を欠場するため事実上タイトル争いを離れる。ハースはその損失を受け入れ、経験の積み上げを最優先にするという。",
-   "orig": "Formel-1-Team zieht nach Las Vegas Fahrer-Konsequenzen",
-   "url": "https://f1-insider.com/formel-1-team-fahrer-konsequenzen-las-vegas-84205/",
-   "published": "2026-11-23T18:18:00+01:00"
-  },
-  {
-   "id": "it-formula1it-turrini-leclerc-hamilton-convivere",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "チーム",
-   "circuit": "lasvegas",
-   "teams": [
-    "ferrari"
-   ],
-   "topic": "ferrari-vegas-collision",
-   "title": "「2人は共存できるのか」　ルクレールとハミルトンの接触にトゥッリーニ氏が問題提起",
-   "summary": "フォーミュラ・ウーノ・イットは、ラスベガスGPでのルクレールとハミルトンの接触を受け、ジャーナリストのレオ・トゥッリーニ氏が2人の共存に疑問を投げかけたと伝えた。同氏は両者の関係が最小限にまで冷え込んでいると指摘し、メキシコ後に示されたはずの「共通の目標」が守られなかったと見る。フェラーリが今季タイトルを争っていなくても、車が速くなれば同じ対立が火種になるという主張だ。批判の矛先はヴァッスール代表やエルカン会長にも向けられ、責任の所在を問うている。記事の成績表では、ハミルトンは7位だった。",
-   "orig": "Leclerc-Hamilton, Turrini lancia la provocazione: «Possono convivere?»",
-   "url": "https://www.formula1.it/news/34192/1/leclerc-hamilton-turrini-lancia-la-provocazione-possono-convivere",
-   "published": "2026-11-23T16:55:00+01:00"
-  },
-  {
-   "id": "ja-voice-vegas-verstappen-russell-gasly",
-   "kind": "voice",
-   "lang": "ja",
-   "region": "日本",
-   "source": "F1 Grid Walk",
-   "cat": "ファンの声",
-   "circuit": "lasvegas",
-   "teams": [
-    "redbull",
-    "mercedes"
-   ],
-   "topic": "russell-verstappen-vegas-clash",
-   "title": "「皮肉グランプリもマックスの圧勝」　ラッセル酷評に割れるファンの声",
-   "summary": "ラスベガスGP後にフェルスタッペンがラッセルを酷評したことについて、Yahoo!ニュースのコメント欄ではフェルスタッペンの物言いに苦笑する声と、姿勢を疑問視する声に分かれた。ラッセルはメルセデスの支援不足を指摘された一方、決勝を盛り上げたガスリーとアルピーヌには称賛が集まった。",
-   "url": "https://news.yahoo.co.jp/articles/c2f2175ae14289fb849a1cc08ca2a1a97fcecfa9/comments",
-   "published": "2026-11-24T00:20:00+09:00",
-   "note": "読めたコメントは各記事とも10件前後で、傾向を断定はできない。ラッセル批判と擁護が拮抗する中、フェルスタッペンの発言は「痛快」と「大人げない」で割れ、ガスリーにはほぼ一方的に好意的な声が集まった。海外の反応は読める記事が見つからなかった。5chは読めず、Blueskyも403で読めなかった。",
-   "voices": [
-    {
-     "side": "日本",
-     "text": "まぁ皮肉グランプリもマックスの圧勝という事で(笑)。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/c2f2175ae14289fb849a1cc08ca2a1a97fcecfa9/comments",
-     "mood": "笑",
-     "big": true,
-     "quote": true,
-     "comment": "フェルスタッペンは優勝後、ラッセルについて「コース外では口達者だが、自分のレベルには全然及ばない」と語った。ラッセルは終盤にバリアへ当たり9位だった。"
-    },
-    {
-     "side": "日本",
-     "text": "多くの人がアントネッリの「謙虚さ」を褒めていたが、マックスには程遠い分野だろう。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/c2f2175ae14289fb849a1cc08ca2a1a97fcecfa9/comments",
-     "mood": "否",
-     "big": true,
-     "quote": true,
-     "comment": "フェルスタッペンはラッセルのクラッシュを見て楽しかったとも語った。シーズン序盤に車への不満を口にしていた点を挙げ、物言いを疑問視する声だ。"
-    },
-    {
-     "side": "日本",
-     "text": "そもそもラッセル自身がトップを走れなきゃ支援しようがないよね。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/97c08bc4d695bd821815527d00bf4feb868a0bdf/comments",
-     "mood": "否",
-     "quote": true,
-     "comment": "ビルヌーブはメルセデスがラッセルを支援しなかったと批判し、ウォルフ代表が反論した。ラッセルは決勝でアントネッリを抜こうとして壁に当たった。"
-    },
-    {
-     "side": "日本",
-     "text": "今回のレースを面白くした立役者になりましたね、アルピーヌ。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/d58ec30345ff410471c93b6baf9d8cda98a6af43/comments",
-     "mood": "賛",
-     "quote": true,
-     "comment": "ガスリーが5位、コラピントが6位で、アルピーヌは2台そろってトップ6に入った。今季最高クラスの結果で、中団争いにも大きな2台分の得点になった。"
-    },
-    {
-     "side": "日本",
-     "text": "もう1回トップチームで見たいドライバーなんだけどな⋯",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/d58ec30345ff410471c93b6baf9d8cda98a6af43/comments",
-     "mood": "賛",
-     "quote": true,
-     "comment": "ガスリーはパワーユニットの温度問題を約45周抑えながら走り、最終ラップにはアントネッリを抜いた。「優勝を争えるペースがあった」と本人も語っている。"
-    },
-    {
-     "side": "日本",
-     "text": "時折チームのポテンシャルを遥かに上回る結果を持ち帰るよねガスリーは。",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/d58ec30345ff410471c93b6baf9d8cda98a6af43/comments",
-     "mood": "賛",
-     "quote": true,
-     "comment": "今季はモンツァでのポールなど、アルピーヌの序列を超える結果を残してきた。ラスベガスでも上位集団の中で戦い続けたことが驚きを呼んだ。"
-    },
-    {
-     "side": "日本",
-     "text": "ラッセルは強いが感情的すぎるという指摘",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/c2f2175ae14289fb849a1cc08ca2a1a97fcecfa9/comments",
-     "mood": "否"
-    },
-    {
-     "side": "日本",
-     "text": "フェルスタッペンは英国メディアが嫌いなのでは、との見方も",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/c2f2175ae14289fb849a1cc08ca2a1a97fcecfa9/comments"
-    },
-    {
-     "side": "日本",
-     "text": "ラッセルはGPDA理事として苦言は当然、と擁護する声も",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/c2f2175ae14289fb849a1cc08ca2a1a97fcecfa9/comments",
-     "mood": "賛"
-    },
-    {
-     "side": "日本",
-     "text": "メルセデスはラッセルを支援しなかったと疑う声が目立つ",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/97c08bc4d695bd821815527d00bf4feb868a0bdf/comments",
-     "mood": "否"
-    },
-    {
-     "side": "日本",
-     "text": "ガスリーの不運なエンジン不調に同情する声が多数",
-     "src": "Yahoo!ニュース コメント欄",
-     "url": "https://news.yahoo.co.jp/articles/d58ec30345ff410471c93b6baf9d8cda98a6af43/comments",
-     "mood": "心配"
-    }
-   ]
-  },
-  {
-   "id": "pt-gp-bearman-haas-impasse-salarial",
-   "kind": "rumor",
-   "lang": "pt",
-   "region": "ブラジル",
-   "source": "Grande Prêmio",
-   "cat": "うわさ",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "bearman-haas-contract-2027",
-   "title": "ベアマンとハースの契約交渉、給与で行き詰まりと伝わる　アルピーヌ移籍説は否定",
-   "summary": "ブラジルのグランデ・プレミオは、モータースポーツ・コム伊語版を引用し、ベアマンの2027年のハース契約がまだ決まっていないと伝えた。最大の障害は給与で、ベアマン側はハースの提示額が十分でないとみているという。フェラーリは育成枠に残す選択肢をすでに行使しており、交渉には関わっていないとされる。双方とも来季の代替案がなく、合意が必要だという認識は共有していると報じた。ベアマンはラスベガスで「奇妙な状況だが、まとまりつつある」と述べ、アルピーヌ移籍の話は「ゼロ」と否定した。",
-   "orig": "Bearman vive impasse salarial com Haas em negociação por novo contrato na F1",
-   "url": "https://grandepremio.com/br/f1/bearman-vive-impasse-salarial-com-haas-em-negociacao-por-novo-contrato-na-f1/",
-   "published": "2026-11-23T12:00:00-03:00"
-  },
-  {
-   "id": "it-formula1it-gasly-motore-surriscaldamento",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "決勝",
-   "circuit": "lasvegas",
-   "teams": [
-    "alpine"
-   ],
-   "topic": "alpine-vegas-gasly-heat",
-   "title": "ガスリー、パワーユニットの温度問題を抱えて5位　「勝てるペースがあった」",
-   "summary": "フォーミュラ・ウーノ・イットは、ラスベガスGPで5位に入ったガスリーが、レース中に無線でパワーユニットの温度上昇を知らされ、直ちに出力を落とすよう指示されていたと伝えた。約45周にわたり慎重なエンジンマップで過熱を抑え、性能の一部を犠牲にしたという。今季屈指の寒さの中での不調は、本人もチームも想定していなかった。最終ラップにアントネッリを抜いたが抜き返され、ガスリーは「優勝を争えるペースがあった」「表彰台に値した」と話した。アルピーヌはコラピントの6位と合わせて2台がトップ6に入った。",
-   "orig": "Un problema al motore ha frenato Gasly: il retroscena della gara",
-   "url": "https://www.formula1.it/news/34191/1/un-problema-al-motore-ha-frenato-gasly-il-retroscena-della-gara",
-   "published": "2026-11-23T15:20:00+01:00"
-  },
-  {
-   "id": "de-motorsporttotal-bearman-haas-gehalt",
-   "kind": "rumor",
-   "lang": "de",
-   "region": "ドイツ",
-   "source": "Motorsport-Total.com",
-   "cat": "うわさ",
-   "teams": [
-    "haas",
-    "ferrari"
-   ],
-   "topic": "bearman-haas-contract-2027",
-   "title": "ベアマンのハース残留、給与で交渉難航と報道　フェラーリは育成枠の権利を行使済み",
-   "summary": "モータースポーツ・トータルは、モータースポーツ・コム伊語版の情報として、来季の契約が未署名の唯一のドライバーであるベアマンとハースの交渉が、給与をめぐり難航していると報じた。ベアマン側は提示額が低すぎると考えているという。フェラーリは21歳の同選手を育成枠に残す権利をすでに行使しており、交渉の障害ではないとされる。ベアマンはラスベガス前に「かなり落胆している」と話し、他チームへの移籍は「可能性ゼロ」と否定した。アブダビ前に金銭面の妥協で決着する見通しとも伝えている。",
-   "orig": "Ferrari hat Option gezogen: Gehaltsstreit bremst Bearman-Deal bei Haas",
-   "url": "https://www.motorsport-total.com/formel-1/news/ferrari-hat-option-gezogen-gehaltsstreit-bremst-bearman-deal-bei-haas-26112315",
-   "published": "2026-11-23T15:00:00+01:00"
-  },
-  {
-   "id": "en-planetf1-alonso-las-vegas-calendar",
-   "kind": "news",
-   "lang": "en",
-   "region": "イギリス",
-   "source": "PlanetF1",
-   "cat": "カレンダー",
-   "circuit": "lasvegas",
-   "teams": [
-    "astonmartin"
-   ],
-   "topic": "lasvegas-triple-header-alonso",
-   "title": "アロンソ、ラスベガスの日程に疑問「意味が通らない」　中東2連戦へ移動",
-   "summary": "PlanetF1は、アロンソがラスベガスGPがカレンダーのこの位置にあることを「意味が通らない」と批判したと伝えた。アストンマーティンはオースティン、メキシコ、ブラジルを回って欧州に戻り、ラスベガスに72時間だけ滞在してカタールへ向かう。ラスベガスからカタールへの移動は日付変更線をまたぎ、人員は丸1日を失うという。アロンソはホンダPUの出力不足で長いストレートで1周約3秒を失うと述べ、周回を「デモラン」と表現した。感謝祭と年末の事情から日程は変わりにくく、3連戦は続く見通しだ。",
-   "orig": "'It doesn't make sense' – Fernando Alonso questions Las Vegas logic in F1 calendar",
-   "url": "https://www.planetf1.com/news/fernando-alonso-las-vegas-grand-prix-f1-calendar",
-   "published": "2026-11-23T13:46:00+00:00"
-  },
-  {
-   "id": "it-formula1it-russell-offre-collaborazione",
-   "kind": "news",
-   "lang": "it",
-   "region": "イタリア",
-   "source": "Formula1.it",
-   "cat": "決勝",
-   "circuit": "lasvegas",
-   "teams": [
-    "mercedes",
-    "redbull"
-   ],
-   "topic": "russell-verstappen-vegas-clash",
-   "title": "ラッセル、無線でフェルスタッペンに「協力」を提案　序盤の首位争いで",
-   "summary": "フォーミュラ・ウーノ・イットは、ラスベガスGP序盤の11周目にラッセルが無線でフェルスタッペンとの協力を持ちかけていたと伝えた。1、2番手を走る2人が3番手のハジャーを引き離すため、守り合わずに先頭を交代し合う案で、一緒に走って集団から抜け出せるなら歓迎という趣旨だった。ただしラッセル側のエンジニアもフェルスタッペン側のエンジニアも反応しなかったという。レースはフェルスタッペンが制し、ラッセルはアントネッリを抜こうとして壁に当たり9位に終わった。金曜の練習走行の接触で警告を受けたフェルスタッペンは、決勝後にラッセルの失敗を皮肉っている。",
-   "orig": "Russell spiazza tutti e propone un patto a Verstappen: «Collaboriamo»",
-   "url": "https://www.formula1.it/news/34190/1/russell-spiazza-tutti-e-propone-un-patto-a-verstappen-collaboriamo",
-   "published": "2026-11-23T14:00:00+01:00"
   }
  ]
 }
