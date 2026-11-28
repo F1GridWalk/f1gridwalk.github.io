@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T06:30:00+09:00",
+  "updatedAt": "2026-11-28T12:30:00+09:00",
   "topics": {
     "ferrari-vegas-collision": {
       "title": "ルクレールがハミルトンに接触　ヴァッスール代表が激怒",
@@ -22,8 +22,8 @@
       "summary": "ラスベガスGPでのルクレールとハミルトンの接触を受け、ヴィーニャCEOは書籍イベントで2人は仲直りしたと語り、ヴァッスール代表が2人と話したことで十分だとした。一方で、独伊蘭の媒体は同CEOとヴァッスール代表の関係や後任候補の名前に触れており、後任を巡る部分は未確認の報道である。"
     },
     "engine-freeze-2028": {
-      "title": "2030年V8導入前に現行エンジンの開発凍結か　2028年半ばからの案",
-      "summary": "The Raceとモーターオンラインは、FIAとF1が現行V6パワーユニットの開発を2028年半ばから2029年末まで凍結する案を検討していると伝えた。2030年規則の最終案が2027年半ばまで固まらないことに加え、GMがキャデラック向けの自前V6計画を棚上げしV8に集中するとされ、既存メーカーが不利を警戒している。凍結はコスト抑制になる一方、追い上げ中のホンダには時間が限られる。信頼性対応を名目にした開発は続くとみられ、いずれも正式決定ではない。"
+      "title": "現行V6は2028年13戦目から開発凍結へ　V8は2030年導入",
+      "summary": "The RaceとMotorionlineは、現行V6パワーユニットの開発を2028年半ばから凍結する案を伝えていた。その後Formula1.itは、FIAのトンバジス氏の説明として、凍結が2028年の第13戦から始まり、V8は2030年、単気筒試験は2027年10月からと報じた。レッドブルのメキエス代表は、ほぼ全員が一致していると話した。遅れたメーカーを助けるADUOの見直しが課題で、正式承認は12月の評議会の見通しだ。"
     },
     "qatar-tyre-limit-27-laps": {
       "title": "カタールGPはタイヤ上限27周　57周で2ストップが必須に",
@@ -48,9 +48,68 @@
     "qatar-fp2-mercedes": {
       "title": "カタールFP2もアントネッリ最速、メルセデスのロングランが圧倒",
       "summary": "カタールGPのFP2はアントネッリが1分23秒077で最速となり、ラッセルが2番手に続いた。セッションは赤旗で13分延長され、ルクレールのスピンやハミルトンのパワーユニット不調、ガスリーのグラベル停止が相次いだ。補正後のロングランでは、メルセデスがレッドブルやマクラーレンに平均で1秒近い差をつけたと分析されている。フェラーリは1周のペースでも1秒以上遅れた。"
+    },
+    "ferrari-qatar-friday-struggle": {
+      "title": "カタール金曜のフェラーリ不振　ルクレール「何か異常がある」",
+      "summary": "カタールGPの金曜、フェラーリはルクレールが7番手、ハミルトンが8番手と苦戦し、メルセデス、マクラーレン、レッドブルに次ぐ4番手の速さにとどまった。ルクレールはFP2でスピンしてフロアを傷めたが、損傷は遅さの本当の理由ではないと述べ、「何か異常なことが起きている」と原因をつかめていない。ハミルトンはFP2終盤にパワーユニットが壊れて止まった。フェラーリは夜のうちに原因を探る。"
     }
   },
   "articles": [
+    {
+      "id": "it-formula1it-aston-martin-qatar-black-friday",
+      "kind": "news",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "チーム",
+      "circuit": "lusail",
+      "teams": [
+        "astonmartin"
+      ],
+      "topic": "aston-martin-qatar-friday",
+      "title": "アストンマーティン、カタール金曜は2台修理と約3秒差　伊サイト",
+      "summary": "フォーミュラ1・イットは、アストンマーティンがカタールGPの金曜に苦しみ、2台の修理が必要になり、トップから約3秒離れたと伝えた。FP1は体調不良のアロンソに代わってクロフォードが走り、トップから3.089秒差の19番手だった。FP2に復帰したアロンソも19番手で、2.969秒差、ストロールは20番手で3.571秒差だった。クラック代表は高速コーナーと縁石が厳しく、多くの車がコースを外れたと説明し、夜通しで作業を進めるとした。アロンソは週末の残りも走る予定だという。",
+      "orig": "Aston Martin, venerdì nero in Qatar: due auto da riparare e un gap di 3 secondi",
+      "url": "https://www.formula1.it/news/34276/1/aston-martin-venerdi-nero-in-qatar-due-auto-da-riparare-e-un-gap-di-3-secondi",
+      "published": "2026-11-27T23:28:00+01:00"
+    },
+    {
+      "id": "nl-f1maximaal-leclerc-ferrari-qatar-something-unusual",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "F1Maximaal",
+      "cat": "チーム",
+      "circuit": "lusail",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "ferrari-qatar-friday-struggle",
+      "title": "ルクレール「何か異常がある」　カタール金曜のフェラーリ不振、原因つかめず　蘭サイト",
+      "summary": "オランダのF1マキシマールは、カタールGPのFP2でルクレールがフェラーリの不振に戸惑っていると伝えた。ルクレールはローソンを抜く際にスピンしてグラベルへ入り、フロアを傷めた。ただ本人は、フロアの損傷が遅さの本当の理由ではなく、午前の1周目から最後まで「とても遅かった」と話した。燃料が重い状態でも弱かった点を最も心配し、「何か異常なことが起きていて、突き止める必要がある」と語った。ハミルトンのパワーユニット故障は週末に影響しないとみて、夜のうちに原因が見つかることを望んでいる。",
+      "orig": "Leclerc tast in het duister over problemen Ferrari in Qatar: \"We hadden dit niet verwacht\"",
+      "url": "https://www.f1maximaal.nl/formule-1/leclerc-tast-in-het-duister-over-problemen-ferrari-in-qatar-we-hadden-dit-niet-verwacht",
+      "published": "2026-11-27T22:48:00+01:00",
+      "new": "ルクレールが遅さの原因はフロア損傷ではなく別にあると語った。",
+      "before": "ルクレールのスピンとハミルトンのPU不調が主に伝えられていた。"
+    },
+    {
+      "id": "nl-f1maximaal-mekies-verstappen-amplifier-comeback",
+      "kind": "news",
+      "lang": "nl",
+      "region": "オランダ",
+      "source": "F1Maximaal",
+      "cat": "チーム",
+      "teams": [
+        "redbull"
+      ],
+      "topic": "redbull-mekies-comeback-2027",
+      "title": "レッドブルのメキエス代表「フェルスタッペンは問題の増幅器」　巻き返しと来季を語る　蘭サイト",
+      "summary": "オランダのF1マキシマールは、レッドブルのメキエス代表がシーズン序盤に最大1.5秒あったメルセデスとの差を、数千の小さな改良で縮めたと語ったと伝えた。代表は「来年への保証は全くない」と述べ、上位は4チームで、アウディやアストンマーティンも加わり5〜6チームになりうるとみた。2027年は車体と新パワーユニットで同じように攻め、今季より早く競争力を出したいという。フェルスタッペンは最高のセンサーで、問題を「増幅」して見せるため原因を絞りやすいと評した。解決策を出すのが次の成長段階だと冗談も交えた。",
+      "orig": "Mekies ziet verklaring voor trend bij Red Bull: \"Verstappen is een versterker van het probleem\"",
+      "url": "https://www.f1maximaal.nl/formule-1/mekies-glundert-bij-vraag-over-verstappen-volgende-stap-in-zijn-transformatie",
+      "published": "2026-11-27T22:26:00+01:00"
+    },
     {
       "id": "de-motorsporttotal-qatar-longruns-antonelli-one-second",
       "kind": "tech",
@@ -71,6 +130,26 @@
       "orig": "Fast eine Sekunde Vorsprung: Antonelli dominiert die Katar-Longruns",
       "url": "https://www.motorsport-total.com/formel-1/news/fast-eine-sekunde-vorsprung-antonelli-dominiert-die-katar-longruns-26112723",
       "published": "2026-11-27T21:45:00+01:00"
+    },
+    {
+      "id": "it-formula1it-v8-freeze-timetable-tombazis",
+      "kind": "tech",
+      "lang": "it",
+      "region": "イタリア",
+      "source": "Formula1.it",
+      "cat": "テクニカル",
+      "teams": [
+        "cadillac",
+        "redbull"
+      ],
+      "topic": "engine-freeze-2028",
+      "title": "現行V6は2028年13戦目から開発凍結　FIAトンバジスが日程を明言、V8は2030年",
+      "summary": "フォーミュラ1・イットは、FIAのトンバジス氏がオートスポーツ誌に語った内容として、現行のV6ハイブリッドは2028年の第13戦から性能開発を凍結し、信頼性の改良だけを認めると伝えた。凍結は2029年末まで続き、2.1リッターV8は2030年に導入される。V8の単気筒試験は2027年10月から、全エンジンの台上試験は2028年7月から始まる。レッドブルのメキエス代表はカタールの会見で、ここ数年では珍しく全員がほぼ一致したと話した。遅れたメーカーを助けるADUO制度の見直しが残り、正式承認は12月の世界モータースポーツ評議会の見通しだ。",
+      "orig": "F1, stop allo sviluppo dei V6 nel 2028: ecco il piano dettagliato per il ritorno dei V8",
+      "url": "https://www.formula1.it/news/34269/1/f1-stop-allo-sviluppo-dei-v6-nel-2028-ecco-il-piano-dettagliato-per-il-ritorno-dei-v8",
+      "published": "2026-11-27T20:19:00+01:00",
+      "new": "FIAが凍結開始を2028年の第13戦と明言し、V8の試験日程も判明した。",
+      "before": "凍結は2028年半ばからの案として検討中と報じられていた。"
     },
     {
       "id": "it-formula1it-qatar-fp2-antonelli-implacabile",
@@ -110,6 +189,24 @@
       "url": "https://www.planetf1.com/news/2026-qatar-grand-prix-fp2-report",
       "published": "2026-11-27T18:17:00+00:00",
       "featured": true
+    },
+    {
+      "id": "en-planetf1-audi-tsunoda-monza-appeal-rejected",
+      "kind": "news",
+      "lang": "en",
+      "region": "イギリス",
+      "source": "PlanetF1",
+      "cat": "ビジネス",
+      "teams": [
+        "audi",
+        "racingbulls"
+      ],
+      "topic": "audi-tsunoda-monza-appeal",
+      "title": "アウディの訴え退けられる　イタリアGPの角田の10位は確定、FIA控訴院",
+      "summary": "プラネットF1は、FIAの国際控訴院がアウディの申し立てを退け、イタリアGPでの角田裕毅の10位が確定したと伝えた。角田は14番グリッドのところ、反対側の15番手に並び、レースディレクターは追加のフォーメーションラップを命じた。スチュワードは角田に処分を科さず、アウディは9月9日にストップ&ゴーの罰則が必要だったとして控訴した。パリでの審理の末、控訴院は申し立てを受理した上で、内容は認めなかった。アウディのボルトレートは11位、ヒュルケンベルグは12位で、同チームは「深く驚いた」とし、判決文を精査するとしている。",
+      "orig": "FIA confirms final decision as Audi F1 team loses Yuki Tsunoda appeal",
+      "url": "https://www.planetf1.com/news/fia-audi-yuki-tsunoda-appeal",
+      "published": "2026-11-27T17:42:00+00:00"
     },
     {
       "id": "ja-voice-ferrari-leclerc-hamilton-solution",
@@ -292,6 +389,23 @@
       "orig": "Audi goes it alone with F1 upgrade as 10 rivals bring nothing to Qatar",
       "url": "https://www.planetf1.com/news/fia-upgrades-2026-qatar-grand-prix",
       "published": "2026-11-27T11:35:00+00:00"
+    },
+    {
+      "id": "de-f1insider-leclerc-no-number-one-clause",
+      "kind": "rumor",
+      "lang": "de",
+      "region": "ドイツ",
+      "source": "F1-Insider.com",
+      "cat": "うわさ",
+      "teams": [
+        "ferrari"
+      ],
+      "topic": "leclerc-number-one-clause",
+      "title": "ルクレール契約に「第1ドライバー条項」のうわさ、本人は否定　独サイトが報道",
+      "summary": "独F1インサイダーは、ラスベガスGPでルクレールとハミルトンが再び接触した後、ルクレールの契約に第1ドライバーの地位を保証する条項があるとのうわさが流れたと伝えた。ルクレールはカタールGPの前に「そのような条項はまったくない」と否定し、ハミルトンより優遇されることには関心がなかったと話した。接触はルクレールが追い抜きの際にハミルトンの後輪に当たってスピンさせたもので、10秒のペナルティを受けた。本人は責任を認め、チームの雰囲気は今あまり明るくないとも述べ、フェラーリ離脱のうわさも新契約を理由に退けた。",
+      "orig": "Spezialklausel im Leclerc-Vertrag? Ferrari-Star wird deutlich",
+      "url": "https://f1-insider.com/formel-1-spezialklausel-leclerc-vertrag-84252/",
+      "published": "2026-11-27T12:11:00+01:00"
     },
     {
       "id": "it-motorionline-ferrari-qatar-friday-struggle",
@@ -1638,189 +1752,6 @@
       "orig": "Mercedes: il vantaggio ADUO è reale, anche senza la conferma di Wolff",
       "url": "https://www.formula1.it/news/34209/1/mercedes-il-vantaggio-aduo-e-reale-anche-senza-la-conferma-di-wolff",
       "published": "2026-11-24T19:15:00+01:00"
-    },
-    {
-      "id": "de-f1insider-vigna-vasseur-ferrari",
-      "kind": "rumor",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "F1-Insider.com",
-      "cat": "うわさ",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-vigna-vasseur-friction",
-      "title": "フェラーリのヴィーニャCEO、ヴァスールと距離か　伊紙報道を独誌が紹介",
-      "summary": "F1-Insider.comは、フェラーリのヴィーニャCEOが近しい人々に「こうした問題はマネージャーが対処すべきだ」と語ったとのコリエーレ・デラ・セラの報道を紹介した。名指しはないが、伊メディアはヴァスール代表への当てこすりと受け止めている。ラスベガスGPの38周目にハミルトンとルクレールが接触し、ルクレールは10秒ペナルティを受けた。ヴァスールはこの件を受け入れられないと述べ、スカイ・イタリアには「2人の関係はもう制御できない」と語ったとされる。コリエーレ・デロ・スポルトは体制変更や2人の分離の可能性に触れ、いずれも未確認だ。",
-      "orig": "Ferrari-Boss distanziert sich wohl von Vasseur",
-      "url": "https://f1-insider.com/formel-1-ferrari-boss-distanziert-vasseur-84218/",
-      "published": "2026-11-24T18:48:00+01:00"
-    },
-    {
-      "id": "nl-rn365-ferrari-politiek-team",
-      "kind": "news",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "RacingNews365",
-      "cat": "チーム",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-vegas-collision",
-      "title": "フェラーリは「レースチームより政治的なチーム」　蘭解説者がヴァスールを擁護",
-      "summary": "RacingNews365はラスベガスGPでの接触を受け、フェラーリ内部の問題を同国の解説者2人の議論として伝えた。ティム・コロネルはヴァスール代表を擁護し、問題は上層部の力学にあるとして、フェラーリを「レースチームより政治的なチーム」と評した。ルート・ディメルスは同格の2人を起用したこと自体が混乱の原因で、2人の立場は「ナンバー1.5」だと指摘した。コロネルは約15年前に上層部がルクレールを選んだことが現在の板挟みの背景だと述べ、代表に裁量があればルクレールへの叱責はもっと重かったとの見方も示した。",
-      "orig": "Felle kritiek op Ferrari-top: \"Meer een politiek team dan een raceteam\"",
-      "url": "https://racingnews365.nl/felle-kritiek-op-ferrari-top-meer-een-politiek-team-dan-een-raceteam",
-      "published": "2026-11-24T18:45:00+01:00"
-    },
-    {
-      "id": "de-f1insider-verstappen-daytona-2027",
-      "kind": "rumor",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "F1-Insider.com",
-      "cat": "うわさ",
-      "teams": [
-        "redbull"
-      ],
-      "topic": "verstappen-daytona-2027",
-      "title": "フェルスタッペン、来年1月のデイトナ24時間参戦を模索か　独誌が報道",
-      "summary": "F1-Insider.comは、フェルスタッペンが2027年1月のデイトナ24時間への参戦を検討していると報じた。同誌によれば、ニュルブルクリンクで乗ったのと同じメルセデスAMG GT3で走る構想で、米国のチームを探しているが、正式な合意はまだない。本人はラスベガスGPでMotorsport.comに、出場が可能かどうかを確認していると話し、デイトナを「ぜひ走りたいレースの一つ」と呼んだ。より速いGTPのプロトタイプよりGT3を好むとされ、その場合はGTDプロ級が有力だという。開催は1月下旬で、F1のオフ期間に当たるため、新シーズンへの準備との兼ね合いも課題になる。",
-      "orig": "Verstappen plant Daytona-Coup mit Mercedes",
-      "url": "https://f1-insider.com/formel-1-verstappen-plant-daytona-mercedes-84215/",
-      "published": "2026-11-24T18:01:00+01:00"
-    },
-    {
-      "id": "ja-voice-ferrari-leclerc-contract-blame",
-      "kind": "voice",
-      "lang": "ja",
-      "region": "日本",
-      "source": "F1 Grid Walk",
-      "cat": "ファンの声",
-      "circuit": "lasvegas",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-vegas-collision",
-      "title": "ルクレールに厳しい声が大勢　長期契約への疑問も噴出",
-      "summary": "ラスベガスGPでのルクレールとハミルトンの接触後、ヴァスール代表が命令無視を批判したことを受け、Yahoo!ニュースのコメント欄ではルクレールに厳しい声が目立った。長期契約でチームが甘やかしたのではという見方や、来季の処遇を案じる声が多かった。",
-      "url": "https://news.yahoo.co.jp/articles/c979421050f3db25bbb69c84a5215ea7f8edf495/comments",
-      "published": "2026-11-25T00:25:00+09:00",
-      "note": "読めたコメントは各記事とも上位10件ほどで、ルクレール批判にかなり偏っていた。「契約」と「甘やかし」を挙げる声が多く、擁護はほとんど見当たらない。海外の反応は読める記事が見つからず、5chは404、Blueskyは403で読めなかった。",
-      "voices": [
-        {
-          "side": "日本",
-          "text": "ルクレールは目の前の勝負にこだわりすぎて大局を見失ってるね",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/c979421050f3db25bbb69c84a5215ea7f8edf495/comments",
-          "mood": "否",
-          "quote": true,
-          "comment": "ヴァスール代表はルクレールに「追い越すな」と伝えていたと明かし、命令無視を「受け入れられない」と批判した。接触は38周目の第7コーナーで起きた。",
-          "big": true
-        },
-        {
-          "side": "日本",
-          "text": "フェラーリはルクレールの教育を間違えたと思う。",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/c979421050f3db25bbb69c84a5215ea7f8edf495/comments",
-          "mood": "否",
-          "quote": true,
-          "comment": "代表は来季に向け「いくつかのことを考える時期」と述べた。ルクレールが長期契約を結んでいる点を挙げ、チームの育て方を問う声だ。",
-          "big": true
-        },
-        {
-          "side": "日本",
-          "text": "ルクレールは契約更新が成ったから、来季クビになるとか極端な事にはならないだろう。",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/c979421050f3db25bbb69c84a5215ea7f8edf495/comments",
-          "mood": "心配",
-          "quote": true,
-          "comment": "代表は2027年に向けた見直しを示唆したが、ルクレールには長期契約がある。大きな処分は難しいとみる見方だ。"
-        },
-        {
-          "side": "日本",
-          "text": "そろそろフェラーリもルクレールを甘やかすのを止め強烈な釘を刺さないと駄目だろ？",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/63593ac291646c91c5d7357ce0595dafc6152bab/comments",
-          "mood": "否",
-          "quote": true,
-          "comment": "ルクレールは「自分のミス」と謝罪し、10秒加算ペナルティも受け入れた。それでもチームの対応が甘いと感じるファンは多い。"
-        },
-        {
-          "side": "日本",
-          "text": "ルクレールはルイスに前にいかれると焦るからね 今期はずっとそう。",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/5cf7484ca22be020b11083a411c441a5985a4763/comments",
-          "mood": "否",
-          "quote": true,
-          "comment": "ルクレールは「ハミルトンに見られていないと思う」と話した。今季はモンツァ、メキシコシティに続く3度目の接触との指摘が出ている。"
-        },
-        {
-          "side": "日本",
-          "text": "ルクレールは確かにスター性はあるが、自分でそれを無駄にしてしまっている。",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/5cf7484ca22be020b11083a411c441a5985a4763/comments",
-          "mood": "否",
-          "quote": true,
-          "comment": "ハミルトンは直接の批判を避け、判断をヴァスール代表とチームに委ねた。その落ち着きとの対比を指摘する声も目立った。"
-        },
-        {
-          "side": "日本",
-          "text": "ハミルトンの冷静な対応を評価する声が多数",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/5cf7484ca22be020b11083a411c441a5985a4763/comments",
-          "mood": "賛"
-        },
-        {
-          "side": "日本",
-          "text": "ベアマンの昇格を推す声も一部に",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/c979421050f3db25bbb69c84a5215ea7f8edf495/comments"
-        },
-        {
-          "side": "日本",
-          "text": "ヴァスール代表の手腕を疑う人も",
-          "src": "Yahoo!ニュース コメント欄",
-          "url": "https://news.yahoo.co.jp/articles/5cf7484ca22be020b11083a411c441a5985a4763/comments",
-          "mood": "否"
-        }
-      ]
-    },
-    {
-      "id": "nl-gpblog-vasseur-opvolgers",
-      "kind": "rumor",
-      "lang": "nl",
-      "region": "オランダ",
-      "source": "GPblog",
-      "cat": "うわさ",
-      "circuit": "lasvegas",
-      "teams": [
-        "ferrari"
-      ],
-      "topic": "ferrari-vigna-vasseur-friction",
-      "title": "ヴァッスールの後任に4人の名前　ホーナー氏、コレッタ氏、ダンブロシオ氏、ステラ氏",
-      "summary": "GPblogのコラムは、ヴァッスール代表の後任候補として4人の名前を挙げた。ヴィーニャCEOは信頼は変わらないと公に述べ、契約は2027年末までだが、来季も指揮を執る保証はないという。候補は元レッドブル代表のクリスチャン・ホーナー氏、耐久部門のアントネッロ・コレッタ氏、副代表のジェローム・ダンブロシオ氏、マクラーレンのアンドレア・ステラ代表だ。伊紙コリエーレ・デッラ・セーラは、コレッタ氏が説得を受けたもののF1の指揮経験がなく慎重だったと報じたとされる。いずれもフェラーリは確認しておらず、コラム筆者の見立てである。",
-      "orig": "Vier opvolgers voor Vasseur bij Ferrari, maar geen voor de hand liggende keuze",
-      "url": "https://www.gpblog.com/nl/column/vier-opvolgers-voor-vasseur-bij-ferrari-maar-geen-voor-de-hand-liggende-keuze",
-      "published": "2026-11-24T16:00:00+01:00"
-    },
-    {
-      "id": "de-motorsporttotal-mclaren-vegas-besser-als-auto",
-      "kind": "news",
-      "lang": "de",
-      "region": "ドイツ",
-      "source": "Motorsport-Total.com",
-      "cat": "チーム",
-      "circuit": "lasvegas",
-      "teams": [
-        "mclaren"
-      ],
-      "topic": "mclaren-vegas-podium",
-      "title": "マクラーレン、車より速かったラスベガス　ステラ代表が「最高のレースの一つ」",
-      "summary": "Motorsport-Total.comは、ラスベガスGPでノリスが2位、ピアストリが3位に入ったマクラーレンについて、アンドレア・ステラ代表が「彼らの最高のレースの一つ」と評したと伝えた。同チームはこの週末、全チーム最多の33ポイントを獲得した。予選ではピアストリが7番手でトップから1.006秒差、ノリスは4番手で0.351秒差と、MCL40の最高速の不足が響いていた。ドライバーはスリップストリーム内から抜けないと判断し、後ろにつく走りを選んだという。ステラ代表は「やるべきことは難しい」と述べ、結果を当然視すべきではないと戒めた。",
-      "orig": "Warum McLaren in Las Vegas besser war als sein Auto",
-      "url": "https://www.motorsport-total.com/formel-1/news/warum-mclaren-in-las-vegas-besser-war-als-sein-auto-26112409",
-      "published": "2026-11-24T15:33:00+01:00"
     }
   ]
 }
