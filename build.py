@@ -4181,7 +4181,7 @@ DIGEST_CSS = (".dg-list{list-style:none;margin:18px 0 0;padding:0;counter-reset:
 # (owner's OK, 21 Nov 2026); 'status_box': False turns it off, 'status_skip': topics where it does not fit.
 STORYLINES = [
     {'slug': 'ferrari-hamilton-leclerc', 'published': '2026-11-20T16:32:40+09:00', 'name': 'フェラーリ、ハミルトンとルクレールの溝',
-     'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift'],
+     'topics': ['ferrari-hamilton-leclerc-mexico', 'ferrari-hamilton-leclerc-rift', 'ferrari-vegas-collision', 'ferrari-leclerc-internal-sanctions'],
      'dek': 'メキシコGPの接触から始まった、フェラーリの2人の関係をめぐる報道を、最初から順に追います。'},
     {'slug': 'lawson-2027-seat', 'status_box': True, 'published': '2026-11-20T16:32:40+09:00', 'name': 'ローソン、2027年のシート',
      'topics': ['lawson-2027-seat', 'racingbulls-lawson-tsolov-2027', 'tsolov-reserve-2027'],
@@ -4193,19 +4193,25 @@ STORYLINES = [
      'status': 'resolved', 'decided': '2026-11-18',
      'conclusion': 'キャデラックは2027年もボッタスを起用し、ハータの昇格は見送られた。',
      'dek': '2027年もボッタスが走ることになった。そこまでのキャデラックのドライバーをめぐる報道を、最初から順に追います。'},
-    {'slug': 'audi-tsunoda-appeal', 'min': 3, 'published': '2026-11-23T19:27:00+09:00', 'name': '角田の1点をめぐるアウディの控訴',
-     'topics': ['audi-tsunoda-appeal', 'italy-gp-audi-protest'],
-     'dek': 'イタリアGPで角田が得た10位の1点を、アウディが控訴で争っている。11月25日にパリで開かれるFIA国際控訴裁判所の審理まで、報道を順に追います。'},
+    {'slug': 'audi-tsunoda-appeal', 'min': 3, 'status_box': True, 'published': '2026-11-23T19:27:00+09:00', 'name': '角田の1点をめぐるアウディの控訴',
+     'topics': ['audi-tsunoda-appeal', 'italy-gp-audi-protest', 'audi-tsunoda-monza-appeal'],
+     'status': 'resolved', 'decided': '2026-11-27',
+     'conclusion': 'FIA国際控訴裁判所はアウディの控訴を退け、イタリアGPでの角田の10位と1点は確定した。',
+     'dek': 'アウディの控訴は退けられ、イタリアGPでの角田の10位は確定した。そこまでの報道を、最初から順に追います。'},
     {'slug': 'piastri-mclaren-future', 'published': '2026-11-20T16:32:40+09:00', 'name': 'ピアストリとマクラーレンのこれから',
      'topics': ['piastri-mclaren-future'],
      'dek': 'マネジメント契約の終了と、ノリスとの差。ピアストリをめぐる報道を、最初から順に追います。'},
     {'slug': 'haas-2027-drivers', 'published': '2026-11-20T16:56:41+09:00', 'name': 'ハース、2027年のドライバー',
      'topics': ['haas-ocon-camara-brazil', 'ocon-haas-exit-official', 'bearman-haas-2027', 'haas-bearman-2027', 'haas-camara-vegas', 'haas-camara-2027',
-                'haas-2027-seat-doohan-camara', 'haas-komatsu-camara-choice', 'ocon-hirakawa-mexico'],
-     'dek': 'オコンが外れ、平川とカマラが走り、ベアマンの契約はまだ。ハースの2027年をめぐる報道を、最初から順に追います。'},
+                'haas-2027-seat-doohan-camara', 'haas-komatsu-camara-choice', 'ocon-hirakawa-mexico',
+                'haas-bearman-guarantee', 'bearman-2027-delay', 'bearman-haas-contract-2027'],
+     'status_box': True, 'status_skip': ['ocon-hirakawa-mexico', 'haas-camara-vegas'],
+     'status': 'resolved', 'decided': '2026-11-26',
+     'conclusion': 'ハースは2027年、ベアマンとカマラの2人で戦う。ベアマンの残留は11月26日に発表された。',
+     'dek': 'オコンが外れてカマラが決まり、最後にベアマンの残留が発表された。ハースの2027年をめぐる報道を、最初から順に追います。'},
     {'slug': 'aston-honda-2026', 'published': '2026-11-20T16:56:41+09:00', 'name': 'アストンマーティン・ホンダの苦戦',
      'topics': ['honda-aston-pu-weakness', 'aston-martin-mexico-double-dnf', 'honda-stroll-battery-retirement', 'honda-alonso-engine-dispute', 'honda-aduo2-reveal',
-                'alonso-singapore-honda-drivability', 'honda-pu-struggle', 'newey-honda-progress-2027'],
+                'alonso-singapore-honda-drivability', 'honda-pu-struggle', 'newey-honda-progress-2027', 'aston-honda-vegas-straights', 'stroll-honda-power-vegas'],
      'dek': 'パワー不足、リタイア、アロンソとの食い違い。アストンマーティン・ホンダの2026年をめぐる報道を、最初から順に追います。'},
     {'slug': 'f1-v8-engine', 'published': '2026-11-20T16:56:41+09:00', 'name': 'F1のV8エンジン復活案',
      'topics': ['f1-v8-engine-proposal', 'fia-v8-2030', 'f1-v8-engine-2030', 'f1-2030-v8-engine', 'f1-2031-v8-engine'],
@@ -4229,6 +4235,48 @@ SL_CSS = (".sl-k{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(-
           ".sl-rel{list-style:none;margin:0;padding:0}.sl-rel li{border-top:1px solid var(--line);padding:10px 0}.sl-rel a{color:var(--ink);font-weight:700;text-decoration:none}.sl-rel small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}"
           ".sl-st.sl-on{background:#2F7A72;color:#fff;border-color:#2F7A72}.sl-st.sl-done{background:#1F2420;color:#fff;border-color:#1F2420}.sl-end{border-color:#1F2420}.sl-dec{display:block;font-size:12px;font-weight:900;letter-spacing:.08em;color:#a0522d;margin:2px 0}"
           ".sl-ppl{display:flex;flex-wrap:wrap;gap:6px}.sl-ppl a{border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:700;color:var(--ink);text-decoration:none}")
+
+
+SL_GENERIC = {'f1', 'gp', '2026', '2027', '2028', '2030', '2031', 'vegas', 'lasvegas', 'qatar', 'mexico', 'brazil', 'race', 'team', 'new', 'seat', 'future'}
+
+
+def storyline_checks(allarts):
+    """Keeps STORYLINES fresh (outside review, 28 Nov 2026). Prints only, for whoever runs the build:
+    A) a story still followed with no news for 7 days, B) a recent topic whose name shares 2+ words with a story
+    but is not in it (3+ words, or 2 words and 2+ news; only for stories still followed), C) a date in the story's dek that has passed while the story is still followed."""
+    now = datetime.now(JST)
+    used = {t for x in STORYLINES for t in x['topics']}
+    recent = {}
+    for a in allarts:
+        k = a.get('topic')
+        if k and k not in used and (now - when(a)).days <= 14:
+            recent.setdefault(k, []).append(a)
+    out = []
+    for x in STORYLINES:
+        tp = set(x['topics'])
+        arts = [a for a in allarts if a.get('topic') in tp]
+        last = max((when(a) for a in arts), default=None)
+        if x.get('status') != 'resolved':
+            if last and (now - last).days >= 7:
+                out.append(f"{x['slug']}: 追いかけ中なのに、最後の記事が{(now - last).days}日前（{last:%m/%d}）")
+            for mo, d in re.findall(r'(\d{1,2})月(\d{1,2})日', x.get('dek', '')):
+                try:
+                    dt = datetime(now.year, int(mo), int(d), tzinfo=JST)
+                except ValueError:
+                    continue
+                if dt.date() < now.date():
+                    out.append(f"{x['slug']}: 紹介文の「{mo}月{d}日」が過ぎています")
+        if x.get('status') == 'resolved':
+            continue
+        words = {w for t in tp for w in t.split('-')} - SL_GENERIC
+        for k, L in recent.items():
+            common = (set(k.split('-')) - SL_GENERIC) & words
+            if len(common) >= 3 or (len(common) == 2 and len(L) >= 2):
+                out.append(f"{x['slug']}: 入っていない似た話題 {k}（{len(L)}本、共通 {'/'.join(sorted(common))}）")
+    out = list(dict.fromkeys(out))
+    for o in out:
+        print('STORYLINE CHECK:', o)
+    return out
 
 
 def build_storylines(arch, allarts):
@@ -5092,6 +5140,7 @@ def main():
     month_sm = build_news_lists(allarts, flag_of)
     month_sm += build_daily_digest(allarts, flag_of)
     month_sm += build_storylines(arch, allarts)
+    storyline_checks(allarts)
     month_sm += build_reactions(arch, flag_of)
     build_search()
 
