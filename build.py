@@ -256,7 +256,10 @@ BT_ICON = {'drv': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 
 def bottom_tabs(canonical):
     """Phone bottom tab bar on every page (owner's choice A, 11 Oct 2026)."""
     path = canonical.replace(SITE, '')
-    cur = 'drv' if path.startswith(('/drivers/', '/deep/rules/person-')) else 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith(('/news/', '/gp/', '/teams/')) or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
+    if re.match(r'^/gp/[^/]+/data/', path):  # a race's data page lights データ (data desk's request, 28 Nov 2026)
+        cur = 'data'
+    else:
+      cur = 'drv' if path.startswith(('/drivers/', '/deep/rules/person-')) else 'rule' if path.startswith('/deep/rules/') else ('news' if path.startswith(('/news/', '/gp/', '/teams/')) or path == '/' else ('col' if path.startswith(('/lens/', '/deep/', '/offgrid/', '/columns/')) else ''))
     items = [('news', '/#news', 'ニュース'), ('data', '/#data', 'データ'), ('col', '/columns/', 'コラム'), ('drv', '/drivers/', 'ドライバー'), ('rule', '/deep/rules/', '用語')]
     return ('<nav class="bt" aria-label="サイト内の移動">' + ''.join(
         f'<a href="{u}"' + (' class="on" aria-current="page"' if k == cur else '') + f' data-track="click/bt/{k}">{BT_ICON[k]}{t}</a>' for k, u, t in items) + '</nav>')
