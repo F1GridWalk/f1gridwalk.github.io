@@ -75,6 +75,7 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 .det .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.det .acts button{font:inherit;font-size:13px;font-weight:700;min-height:40px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer}
 .qa ul{list-style:none;margin:0;padding:0;font-size:13px}.qa li{display:grid;grid-template-columns:20px 1fr;gap:4px;padding:5px 0;border-bottom:1px solid var(--line)}.qa li b{font-weight:700}.qa li span{color:var(--muted)}.qa .i{font-weight:700;text-align:center}.qa .ok .i{color:#2E7D4F}.qa .warn .i,.qa .err .i{color:#B3402A}.qa .info .i{color:var(--muted)}
 .howto{margin:6px 2px 0;font-size:12px;color:var(--muted)}.howto summary{cursor:pointer;font-weight:700;display:block;list-style:none;line-height:32px}.howto summary::-webkit-details-marker{display:none}.howto summary::before{content:'▶';display:inline-block;width:1.3em;font-size:.85em}.howto[open] summary::before{content:'▼'}.howto .tip{margin-top:2px}
+.lvl{display:flex;align-items:baseline;gap:8px;margin:30px 0 -8px;padding-top:10px;border-top:2px solid var(--ink)}.lvl b{font-size:12.5px;letter-spacing:.08em}.lvl span{font-size:11.5px;color:var(--muted)}
 .kick{font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--clay)}
 .story{display:grid;gap:8px;counter-reset:s;margin-top:6px}
 .story>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px 10px 42px;position:relative}
@@ -96,13 +97,16 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 <span class="lab">LAB · 非公開の試作</span>
 <h1>ラスベガスGP 決勝を、図で見る</h1>
 <p class="sub">決勝：2026年11月22日（日本時間。現地は21日の夜） · 50周 · 優勝 フェルスタッペン</p>
-<p class="sub">DATA UPDATE：2026年11月27日</p>
+<p class="sub">DATA UPDATE：2026年11月28日</p>
 <div class="bar" id="bar"></div>
 
+<div class="lvl"><b>レースを知る</b><span>まずここから</span></div>
 <section><span class="kick">QUICK STATS</span><h2>このレースの数字</h2><p class="q">名前を押すと、その人のくわしい数字が開き、そこへ移ります。図の中でも、その人が目立ちます。</p>
 <div class="hi" id="hi"></div>
 <p class="q" style="margin:12px 0 6px">ドライバーを選んで、くわしく見る（決勝の順。横にスクロールできます）</p><div class="dlist" id="dlist"></div>
 <div class="det" id="drvBox" hidden tabindex="-1"></div></section>
+
+<section><span class="kick">DATA STORY</span><h2>数字で分かった、このレースの3つ</h2><div class="story" id="story"></div></section>
 
 <section><h2>順位の流れ</h2><p class="q" id="posQ"></p>
 <div class="tabs" id="colTabs"></div>
@@ -114,6 +118,12 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 <details class="how tbl"><summary>10周ごとの順位を表で見る</summary><table id="posTb"></table></details>
 <details class="how tbl"><summary>結果を表で見る</summary><table><thead><tr><th>順位</th><th>ドライバー</th><th>チーム</th><th>グリッド</th><th>増減</th><th>公式の差</th></tr></thead><tbody id="resTb"></tbody></table></details></section>
 
+<section id="qualSec" hidden><h2>予選・グリッド・決勝</h2><p class="q">左から予選の順位、スタートの位置（グリッド）、決勝の順位。</p>
+<div class="box"><svg id="gQual" role="img" aria-label="全員の予選・グリッド・決勝の順位"></svg></div>
+<p class="tip" id="qualNote"></p>
+<details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>予選</th><th>ドライバー</th><th>タイム</th><th>その区間の最速との差</th><th>グリッド</th><th>決勝</th></tr></thead><tbody id="qualTb"></tbody></table></details></section>
+
+<div class="lvl"><b>もっと分析する</b><span>差・ペース・タイヤ</span></div>
 <section><h2>トップとの差</h2><p class="q">各周の終わりに、先頭から何秒うしろにいたか。</p>
 <div class="tabs zoom" id="gapTabs"></div>
 <div class="box"><svg id="gGap" role="img" aria-label="全員のトップとの差"></svg></div>
@@ -139,20 +149,14 @@ button:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
 <details class="howto"><summary>この図の見方</summary><p class="tip">棒の色はタイヤの種類。右は、10周あたりの変化、計算に使った周、傾向。ふつうに走れた周だけで計算。タイヤの摩耗だけを測った数字ではありません。燃料の量、路面、前の車との距離などの影響も含みます。右の周の数は計算に使った周。「傾向」は、周を重ねるとタイムが一方向に変わっていく様子が、どれだけはっきりしているか（R² が0.6以上で「はっきり」、0.25以上で「弱い」）。使った周が12周より少ないか、傾向が見えない（R² が0.25未満）ものは「参考」として下にまとめ、薄く描いています。表には、線のまわりの散らばり（ばらつき）も出しています。</p></details>
 <details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>順</th><th>ドライバー</th><th>タイヤ</th><th>10周あたり</th><th>使った周</th><th>傾向（R²）</th><th>ばらつき</th></tr></thead><tbody id="degTb"></tbody></table></details></section>
 
-<section id="qualSec" hidden><h2>予選・グリッド・決勝</h2><p class="q">左から予選の順位、スタートの位置（グリッド）、決勝の順位。</p>
-<div class="box"><svg id="gQual" role="img" aria-label="全員の予選・グリッド・決勝の順位"></svg></div>
-<p class="tip" id="qualNote"></p>
-<details class="how tbl"><summary>表で見る</summary><table><thead><tr><th>予選</th><th>ドライバー</th><th>タイム</th><th>その区間の最速との差</th><th>グリッド</th><th>決勝</th></tr></thead><tbody id="qualTb"></tbody></table></details></section>
-
+<div class="lvl"><b>調べる</b><span>比較・データの点検</span></div>
 <section id="cmpSec"><h2>選んだ人を比べる</h2><p class="q">3人まで選べます。図の中の名前を押しても選べます。</p>
 <div class="sels" id="sels"></div><div id="presets"></div><div id="cmp" style="margin-top:12px"></div><div id="duel" class="duel"></div></section>
-
-<section><span class="kick">DATA STORY</span><h2>数字で分かった、このレースの3つ</h2><div class="story" id="story"></div></section>
 
 <section class="qa" id="qaSec" hidden><span class="kick">DATA QUALITY</span><h2 style="font-size:16px">データの点検</h2><p class="q">OpenF1 のデータを、もう一つの出どころ（Jolpica の公式結果）と自動で照らし合わせた結果です。</p><ul id="qaList"></ul></section>
 
 <details class="how"><summary>データと計算方法</summary><ul>
-<li>データ：<a href="https://openf1.org/">OpenF1</a>（F1 のタイミングをもとにした非公式の公開データ）の決勝セッション（session_key 11420）。2026年11月27日に取得。</li>
+<li>データ：<a href="https://openf1.org/">OpenF1</a>（F1 のタイミングをもとにした非公式の公開データ）の決勝セッション（session_key 11420）。2026年11月28日に取得。</li>
 <li>順位の流れ：各周でコントロールラインを通った時刻の順。グリッドはタイミングの最初の順位、最終順位は OpenF1 の結果。</li>
 <li>トップとの差：同じ時刻から計算。最後の周は OpenF1 の結果の差（ペナルティのあった車は、線を通ったときの差）。</li>
 <li>代表ペース：次の周を除いたラップタイムの中央値。1周目、ピットに入った周と出た周、セーフティカー（バーチャルを含む）の周とその次の周、記録のない周。さらに、同じタイヤで走った周の中央値より大きく遅い周（中央値＋ばらつきの3倍、最低でも1秒）も、前の車に詰まった周などとして除く。全体の図に入るのは、計算に使えた周が15周以上の人。タイヤ別は5周以上で、8周より少ない人は参考。</li>
