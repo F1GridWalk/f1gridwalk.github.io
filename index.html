@@ -53,7 +53,8 @@ html body #news .card h3{font-size:14px !important;line-height:1.4 !important;di
 #news .seg .ph-x{display:none}
 #news .seg button{flex:1 0 auto !important;min-width:auto !important;padding:0 6px !important;font-size:12.5px !important;letter-spacing:0 !important}
 /* first screen, preview (owner, 25 Oct 2026): header in one row, smaller STORY button */
-header.top .hd-intro .hi-t{display:none !important}
+/* the h1 stays out of sight but is still read by screen readers and search (outside review, 28 Nov 2026) */
+header.top .hd-intro .hi-t{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0,0,0,0) !important;clip-path:inset(50%) !important;white-space:nowrap !important;border:0 !important}
 header.top .brand-desk{display:none !important}
 header.top .brand svg{width:44px !important;height:44px !important}
 header.top{padding-top:6px !important;padding-bottom:6px !important}
